@@ -1,0 +1,5871 @@
+{
+  "hierarchy": [
+    {
+      "name": "Cirurgia",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Avaliação Pré-Operatória",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Risco Cirúrgico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Avaliação Cardiovascular",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Profilaxia do Tromboembolismo Venoso",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Manejo Perioperatório do Paciente com Diabetes Mellitus",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Manejo do Paciente em uso de Corticoides",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Avaliação Pré-operarória em Pneumologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Prevenção de Infecção da Ferida Operatória / Infecção do Sítio Cirúrgico (ISC)",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Princípios da Anestesiologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Farmacologia Básica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Agentes Anestésicos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Bloqueadores Neuromusculares",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anestésicos Locais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anestesia do Neuroeixo",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Bloqueio de Nervos Periféricos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Monitorização Anestésica",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Monitorização da Pressão Arterial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Eletrocardiografia (ECG)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Monitorização Ventilatória",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Monitorização da Temperatura",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Monitorização do Bloqueio Neuromuscular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Monitorização do Sistema Nervoso Central (SNC)",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Avaliação Anestésica Pré-operatória",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cuidados Pós-anestésicos",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Náuseas e Vômitos Pós-operatórios (NVPO)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipotermia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dor e Analgesia",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Resposta Endócrino-Metabólica-Inflamatória ao Trauma (REMIT)",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Fases da Resposta ao Trauma",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Resposta Neuroendócrina",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Resposta Inflamatória",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Resposta Metabólica",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Nutrição em Cirurgia e Recuperação Pós-Operatória",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Avaliação Nutricional",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Avaliação das Necessidades Energéticas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Suporte Nutricional Perioperatório",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Suporte Nutricional Enteral",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Suporte Nutricional Parenteral",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome de Realimentação",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Complicações Pós-Operatórias",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Cicatrização de Feridas",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Temas Gerais em Cirurgia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Preceitos Básicos em Técnica Operatória",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tipos de Sutura e Suas Principais Características",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fios de Sutura",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Instrumental Cirúrgico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Conceitos Básicos e Complicações em Cirurgia Laparoscópica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Procedimentos à Beira Leito",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Segurança do Paciente",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Princípios da Cirurgia Oncológica",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Hérnias da Parede Abdominal",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Trauma",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Avaliação Inicial: Vias aéreas, Ventilação e Choque",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Avaliação Inicial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Medidas Auxiliares na Avaliação Primária",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Avaliação Secundária",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vias Aéreas e Proteção da Coluna Cervical",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Via Aérea Definitiva",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vias Aéreas Alternativas (Não Definitivas)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Respiração e Ventilação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Trauma Torácico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Ferimentos da Transição Toracoabdominal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Lesão Traumática do Esôfago",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Indicações de Toracotomia de Emergência",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Parada Cardiorrespiratória Traumática e Toracotomia de Reanimação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Atendimento e Triagem em Cenários de Catástrofe",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Choque",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Trauma Abdominal e Pélvico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trauma Cervical",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trauma de Face",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trauma Músculo-Esquelético",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trauma Vascular de Extremidades",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trauma em Populações Especiais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Traumatismo Cranioencefálico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Politrauma Ortopédico",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Queimaduras e Trauma Elétrico",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Classificação de Profundidade das Queimaduras",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Resposta Metabólica de Queimaduras",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Atendimento Inicial às Vítimas de Queimadura",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tratamento Definitivo das Áreas Queimadas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Nutrição em Pacientes Queimados",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Queimaduras Elétricas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Complicações de Queimaduras",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Urgências Abdominais",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Urgências Abdominais - Abdome Agudo",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução ao Abdome Agudo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Embriologia do Intestino Primitivo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Base Neurológica da Dor Abddominal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Causas de Abdome Agudo",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Abdome Agudo Cirúrgico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Abdome Agudo Não Cirúrgico",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Avaliação da Dor Abdominal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exames Complementares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Causas de Dor Abdominal de Acordo com a Localização",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Causas Extra-abdominais de Dor Abdominal Aguda",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Abdome Agudo em Populações Especiais",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Abdome Agudo Inflamatório",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Apendicite Aguda",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Colecistite Aguda",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Colangite Aguda",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diverticulite Aguda",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Abdome Agudo Perfurativo",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Úlcera péptica Perfurada",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Outras Causas de Abdome Agudo Perfurativo",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Abdome Agudo Obstrutivo",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abdome Agudo Vascular",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abdome Agudo Hemorrágico",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Cirurgia Bariátrica e Metabólica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Vesícula e Vias Biliares",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Anatomia e Fisiologia da Via Biliar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Colelitíase",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Coledocolitíase",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Colecistectomia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Lesão da Via Biliar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pólipos da Vesícula Biliar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cistos da Via Biliar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome de Mirizzi",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer da Vesícula Biliar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Colangiocarcinoma",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Ostomias Intestinais",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Megacólon Adquirido",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Proctologia",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Cirurgia Infantil",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Cirurgia Vascular",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Urologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Hiperplasia Prostática Benigna (HPB)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer de Próstata",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Fatores de Risco e Fatores de Proteção",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Apresentação Clínica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exames Complementares e Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Estadiamento e Estratificação de Risco",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento da Doença Localizada",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Rastreamento do Câncer de Próstata",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Neoplasias Urológicas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Câncer de Bexiga",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neoplasias e Cistos Renais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neoplasias Testiculares",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Afecções Penianas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Priaprismo",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Afecções Testiculares Benignas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Anatomia Testicular e do Cordão Espermático",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hidrocele",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cirurgia Plástica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Cirurgia Torácica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Cirurgia de Cabeça e Pescoço",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Clínica Médica",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Cardiologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Hipertensão Arterial Sistêmica (HAS)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Conceituação e epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico e classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Avaliação clínica e exames complementares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Estratificação de risco cardiovascular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento da Hipertensão arterial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipertensão arterial complicada",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Insuficiência Cardíaca",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Etiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manifestações clínicas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exames Complementares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prevenção da insuficiência cardíaca",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento da Insuficiência cardíaca",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Insuficiência Cardíaca Aguda",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Aterosclerose e Doença Arterial Coronariana",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Abordagem das dislipidemias e estratificação de risco cardiovascular",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Metabolismo lipídico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fisiopatologia da aterosclerose",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Avaliação laboratorial do perfil lipídico",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Valores de referência do lipidograma",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Análise do perfil lipídico e das apolipoproteínas",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Biomarcadores inflamatórios",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Classificação das dislipidemias",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Classificação etiológica",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Classificação laboratorial",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Classificação fenotípica",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Estratificação do risco cardiovascular global e metas terapêuticas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento não medicamentoso das dislipidemias",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento medicamentoso das dislipidemias",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dislipidemias genéticas",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Hipercolesterolemia familiar",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Síndrome Coronariana Crônica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síndrome Coronariana Aguda sem Supradesnível do Segmento ST (SCASSST)",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Introdução",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Nova definição universal de infarto",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Epidemiologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fisiopatologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Avaliação inicial",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Condutas iniciais",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Indicações de cateterismo de urgência",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Oxigenioterapia",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Analgesia e sedação",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Controle glicêmico",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Terapia anti-isquêmica",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Terapia anti-trombótica",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Bloqueadores de canais de cálcio",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Inibidores do sistema renina-angiotensina-aldosterona",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Estatinas",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Indicações de cateterismo",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Orientações de alta",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Infarto Agudo do miocárdio com supra de ST (IAMCSST)",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Valvopatias",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Semiologia cardiaca",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Valvopatias",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Arritmias Cardíacas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Fibrilação Atrial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Outras taquiarritmias",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Definição",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Mecanismo das taquiarritmias",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Automatismo anormal",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Reentrada",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Atividade deflagrada (pós-potencial)",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Abordagem inicial",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tipos específicos de taquiarritmias",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Bradiarritmias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Abordagem do paciente em parada cardiorrespiratória (PCR)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síncope",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Flutter atrial",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Epidemiologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fatores clínicos predisponentes",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Classificação clínica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Prevenção de tromboembolismo",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Fisiologia Cardíaca e Eletrocardiograma",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Fisiologia Cardíaca",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Eletrocardiograma",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Síndromes aórticas agudas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação e fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dissecção aórtica aguda",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hematoma intra-mural",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Úlcera aórtica penetrante",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pseudo-aneurisma aórtico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Ruptura contida de aneurisma aórtico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dissecção aórtica iatrogênica",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Doenças do pericárdio",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Choque",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cardiomiopatias",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação das cardiomiopatias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiopatia dilatada",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença de Chagas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiopatia hipertrófica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Não compactação ventricular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiopatias restritivas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Miocardite",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiomiopatia hipertrófica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiomiopatia de Takotsubo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cardiomiopatia periparto",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Displasia arritmogênica do VD",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Taquicardiomiopatia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tumores cardíacos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dermatologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Anatomia e fisiologia da pele",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Lesões elementares",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dermatoses papuloescamosas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dermatoses eczematosas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dermatoses vesicobolhosas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hanseníase",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dermatoses infecciosas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Farmacodermias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer de pele",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Miscelânea",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "R+ e Prova de Título",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Título de especialista em Dermatologia",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Anatomia, fisiologia e embriologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Imunologia da pele",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Conceitos de dermatopatologia e imunohistoquímica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Semiologia e lesões elementares",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoscopia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Exames de imagem em dermatologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses papuloescamosas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Eritrodermia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses liquenoides",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses eczematosas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Urticária e angioedema",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Eritemas figurados",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses papulopruriginosas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Vasculites",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Vasculopatias",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Púrpuras",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses eosinofílicas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses neutrofílicas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses gestacionais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses vesicobolhosas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Doenças anexiais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatologia reumatológica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Doenças metabólicas e sistêmicas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Genodermatoses",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios pigmentares",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Alopecias",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Hipertricose e hirsutismo",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios ungueais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Doenças das mucosas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Reações adversas às drogas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Infecções",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios em função dos agentes físicos",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Dermatoses do período neonatal",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios das células de Langerhans e dos macrófagos",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Atrofias e distúrbios dos tecidos conjuntivos dérmicos",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios da gordura subcutânea",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Distúrbios vasculares",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Neoplasias cutâneas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Terapia clínica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Modalidades de tratamento físico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Cirurgia dermatológica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Cosmiatria",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Endocrinologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Diabetes",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Fisiologia do pâncreas endócrino",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Introdução ao Diabetes Mellitus",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diabetes Mellitus tipo 2 (DM 2)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diabetes Mellitus tipo 1 (DM 1)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Outros tipos de Diabetes Mellitus",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Insulinoterapia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cirurgia metabólica no tratamento do diabetes mellitus",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações agudas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações crônicas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hiperglicemia no Paciente Hospitalizado",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Tireoide",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução e semiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipotireoidismo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tireotoxicose",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manejo dos Nódulos Tireoidianos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Câncer de Tireoide",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Etiologia e Epidemiologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Sintomas e Características Gerais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Carcinoma Papilífero",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Carcinoma Folicular",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Carcinoma Medular",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Carcinoma Anaplásico",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Tireoidectomia",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Metabolismo Ósseo e Mineral",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Adrenal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Obesidade e síndrome metabólica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hipófise",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Neoplasias endócrinas múltiplas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Gênero",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Terminologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Desenvolvimento do gênero na criança",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Apresentação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Suporte terapêutico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações em adolescentes transgêneros ou com divergência de gênero",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Disfunção sexual masculina",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiologia da função sexual masculina",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Redução da libido",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Disfunção erétil",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios da ejaculação",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Tireotoxicose",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hipoglicemia em indivíduos não diabéticos",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Gastroenterologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Esôfago",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Disfagia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anatomia e Alterações Estruturais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiologia e Distúrbios da Motilidade",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença do Refluxo Gastroesofágico - DRGE",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Esofagites Não Pépticas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Ingestão de Corpo Estranho",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Estômago",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Anatomia e Fisiologia Gastroduodenal",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Divisão Anatômica e Funcional do Estômago",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fase Cefálica da Digestão",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fase Gástrica da Digestão",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fase Duodenal da Digestão",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Mecanismo de Proteção da Mucosa Gástrica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "A Motilidade Gástrica",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Gastrites",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síndrome Dispéptica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Helicobacter Pylori",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Os Inibidores da Bomba de Prótons - IBP",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença Ulcerosa Péptica (DUP)",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Pâncreas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Intestinos",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Anatomia e Fisiologia do Intestino Delgado e Grosso",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diarreia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios Disabsortivos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síndrome do Intestino Irritável",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença Inflamatória Intestinal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença Diverticular",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Hemorragia Digestiva (HD)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Hemorragia Digestiva Alta Não Varicosa - HDA Nâo Varicosa",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hemorragia Digestiva Alta Varicosa - HDA Varicosa",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Epidemiologia do Sangramento Varicoso",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Efeitos dos Sangramento no Paciente Cirrótico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Condução Clínica",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento Cirúrgico Da Hipertensão Portal",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Hemorragia Digestiva Baixa - HDB",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Neoplasias do Sistema Digestivo",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Neoplasias do Esôfago",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neoplasias do Estômago",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neoplasias do Pâncreas",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Lesões Císticas do Pâncreas",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Pseudocisto",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Neoplasias Císticas do Pâncreas",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Conduta",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Seguimento",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Tratamento",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Neoplasia Maligna Sólida do Pâncreas",
+                      "level": 4,
+                      "children": [],
+                      "detalhes": [
+                        {
+                          "name": "Epidemiologia",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Fatores de Risco",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Patogêntese do Câncer Esporádico",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Manifestações Clínicas",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Diagnóstico",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Diagnóstico Diferencial",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Estadiamento",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "name": "Tratamento",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Neoplasia dos Intestinos",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Pólipos Intestinais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Síndromes de Câncer Colorretal Hereditário",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Câncer Colorretal",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Neoplasias do Apêndice Cecal",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Neoplasias do intestino delgado",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Tumores Neuroendócrinos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Procedimentos endoscópicos",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Hepatologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Introdução à Hepatologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Icterícia não Obstrutiva",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hepatites Virais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cirrose",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Outras Hepatopatias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Complicações da Insuficiência Hepática",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tumores Hepáticos",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Tumores Hepáticos Benignos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tumores Hepáticos Malignos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Transplante Hepático e Hepatectomia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hepatite Fulminante (Insuficiência Hepática Aguda)",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Hematologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Produção das células sanguíneas (hematopoiese) e sua relação com os órgãos hematopoiéticos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Introdução ao Estudo das Anemias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anemias microcíticas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hemoglobinopatias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anemias macrocíticas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anemias hemolíticas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução à hemólise",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anemias hemolíticas por defeitos de membrana",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anemias hemolíticas por deficiências enzimáticas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anemias hemolíticas autoimunes (AHAI)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anemias Microangiopáticas",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Anemias e condições não hematológicas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Porfirias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fundamentos de oncohematologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Leucemias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Mielodisplasias e mieloproliferações: outras alterações da medula óssea",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Linfomas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Linfomas de células T/NK",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Gamopatias monoclonais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hemostasia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Medicina transfusional",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Infectologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Microbiologia e Antimicrobianos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tuberculose (TB)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndromes febris",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Malária",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Características gerais",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Fisiopatologia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Manifestações clínicas",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Diagnóstico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Febre maculosa brasileira e doença de lyme-símile",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Leptospirose",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hantavirus",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Febres hemorrágicas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Febre tifoide",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neutropenia febril",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Febre e Febre de origem indeterminada (FOI)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Citomegalovírus",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Brucelose",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Toxoplasmose aguda",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "HIV/Aids",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecções bacterianas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Difteria",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Infecções do trato urinário",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Endocardite",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Definição",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Etiologia e fatores de risco",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Quadro clínico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Diagnóstico",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Tratamento",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Prevenção",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Mediastinite",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Infecção de pele e partes moles (Piodermites)",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Arboviroses",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Dengue",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Chikungunya",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Zika",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Febre amarela",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Outras arboviroses",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Pneumonia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Animais peçonhentos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecções relacionadas à assistência à saúde (IRAS)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Infecção de corrente sanguínea (ICS)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Infecção por C. difficile",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prevenção",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Sepse",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia e alterações inflamatórias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Quadro clínico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Critérios de SIRS",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "quick SOFA",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "SOFA score",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manejo inicial e pacotes",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Choque séptico",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Infecções fúngicas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Vacinas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecções do Sistema Nervoso Central",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Outras doenças infecciosas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Doença de Chagas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Leishmaniose tegumentar",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença de Whipple",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Hepatoesplenomegalias crônicas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Influenza",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Características Gerais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manifestações Clínicas De Influenza",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Influenza Em Gestantes",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Influenza e Controle De Infecção Relacionada À Assistência À Saúde",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Herpes simples e Herpes zoster",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Imunossuprimidos não-HIV",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecções sexualmente transmissíveis",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Parasitoses",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "COVID 19",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "DST",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Nefrologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Doença Renal Crônica",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Filtração glomerular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Alterações estruturais renais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia da Doença Renal Crônica (DRC)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Etiologia da Doença Renal Crônica (DRC)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações da DRC",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manejo da DRC",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Terapia renal substitutiva",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Como diferenciar Doença renal crônica e Lesão renal aguda",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Lesão renal aguda (LRA)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Túbulo-Interstício",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecção do trato urinário (ITU)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Bacteriúria assintomática",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cistite",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pielonefrite",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Situações especiais",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "ITU hospitalar",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "ITU no portador de sonda vesical de demora (SVD)",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "ITU pós-cirurgia",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "ITU e litíase renal",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Complicações associadas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "ITU recorrente",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Infecção urinária na gestação",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Controle da água corporal total",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hiponatremia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hipernatremia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios do potássio",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios do equilíbrio acidobásico (DHE)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Nefrolitíase",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução a nefrolitíase",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia da nefrolitíase",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tipos de cálculos renais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de risco para formção do cálculo renal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Apresentação clínica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Investigação diagnóstica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Avaliação metabólica da urina",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento Intervencionista",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pielonefrite Obstrutiva",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Glomerulopatias",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução às doenças glomerulares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "As grandes síndromes glomerulares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Nefrite lúpica",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neurologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Anatomia, Fisiologia e Semiologia Neurológica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Coma e Alterações da Consciência",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cefaleias",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anamnese",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exame Físico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Sinais de Alarme",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cefaleias Primárias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cefaleias Secundárias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Neuralgia Trigeminal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Demências",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Epilepsias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios do Movimento",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doenças Neuromusculares",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Neuropatias Periféricas",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Miopatias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doenças da Junção Neuromuscular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença do Neurônio Motor",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Acidentes Vasculares Cerebrais (AVC)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios do Sono",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Mielopatias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doenças Imunológicas do Sistema Nervoso Central",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tumores do Sistema Nervoso Central",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Traumatismo Craniencefálico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Neurologia Vestibular",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Pneumologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Derrame Pleural",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pneumologia Intensiva",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doença Pulmonar Obstrutiva Crônica (DPOC)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Asma",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tromboembolismo Pulmonar (TEP)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Introdução à Pneumologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer de Pulmão",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pneumopatias Intersticiais, Hipertensão Pulmonar, Bronquiectasias e Pneumotórax Espontâneo",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Reumatologia",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Ginecologia",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Ginecologia básica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Anatomia  do trato genital feminino",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Orgãos genitais femininos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vascularização pélvica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anatomia da parede abdominal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Embriologia do trato genital feminino",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Desenvolvimento gonadal",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Desenvolvimento dos ductos genitais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Desenvolvimento da genitália externa",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Ação hormonal na diferenciação sexual",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Ciclo menstrual",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Conceitos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fases do ciclo menstrual",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Endocrinologia reprodutiva",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiologia do ciclo menstrual",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Ações do estrogênio e progesterona em outros órgãos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ginecologia geral",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Miomatose uterina",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Adenomiose",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pólipos uterinos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Endometriose",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abdome agudo em ginecologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dismenorreia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Dor pélvica crônica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Atendimento à vítima de violência sexual",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Ginecologia endócrina",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Sangramento uterino anormal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Amenorreias",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome dos ovários policísticos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Planejamento familiar",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Conceitos iniciais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anticoncepção em condições especiais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Métodos comportamentais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Métodos de barreira",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Métodos hormonais combinados",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Anticoncepção hormonal apenas com progesterona",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dispositivos intrauterinos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Contracepção de emergência",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Métodos contraceptivos irreversíveis",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tabela dos critérios de elegibilidade OMS",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Climatério",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infertilidade conjugal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome pré-menstrual",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Infecções em ginecologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Cervicites",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doença Inflamatória Pélvica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Úlceras genitais",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução e conceito",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação e etiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Úlceras infecciosas de causa sexualmente transmissível",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Sífilis",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Cancro mole",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Herpes genital",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Donovanose",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Linfogranuloma venéreo",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Úlceras infecciosas de causa não-sexualmente transmissível",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Úlceras não-infecciosas",
+                  "level": 3,
+                  "children": [],
+                  "subtopicos": [
+                    {
+                      "name": "Úlcera de Lipschutz's",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Úlcera da Doença de Crohn",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "name": "Doença de Behçet",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Abordagem da paciente com queixa de úlcera genital",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Vulvovaginites",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Oncologia ginecológica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Rastreamento do câncer de colo do útero",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer de colo do útero",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Tumores anexiais e câncer de ovário",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doenças de vulva e vagina",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hiperplasia Endometrial / Câncer de endométrio e outros tumores do corpo do útero",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Mastologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Introdução e doenças benignas da mama",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Rastreamento do câncer de mama",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Câncer de mama",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Histologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de risco",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de proteção",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prevenção",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Quadro clínico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exames complementares",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico diferencial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Disseminação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Imunoistoquímica e classificação molecular",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Estadiamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento cirúrgico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento adjuvante",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento neoadjuvante",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hormonioterapia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Radioterapia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Imunoterapia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Seguimento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prognóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Câncer de mama na gestante",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Câncer de mama no homem",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Uroginecologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Incontinência urinária",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome da bexiga dolorosa",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Prolapsos de órgãos pélvicos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fístulas genito-urinárias",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Sexualidade",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Conceitos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fisiologia da resposta sexual",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Classificação",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Desejo sexual hipoativo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Transtorno do orgasmo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vaginismo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dispareunia",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Tratamento",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Medicina Preventiva",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Sistema Único de Saúde (SUS)",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "História do Sistema Único de Saúde (SUS)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Sistemas de Saúde e Modelos Assistenciais de Saúde",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Assistência à Saúde no Brasil no Período Pré-Constitucional",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Princípios e Diretrizes do Sistema Único de Saúde (SUS)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Principais marcos legais do SUS",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Financiamento em Saúde",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Processos de Descentralização e Regionalização do SUS",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Descentralização do SUS",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Regionalização do SUS",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Atenção Primária à Saúde (APS) no Brasil",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Políticas de Saúde do Sistema Único de Saúde",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Medicina de Família e Comunidade",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Princípios da Medicina de Família e Comunidade",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Método Clínico Centrado na Pessoa",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Projeto Terapêutico Singular",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abordagem Familiar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abordagem Comunitária",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Relação Médico-Paciente",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Grupos Balint",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Saúde do Idoso (geriatria)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Violência",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Epidemiologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Introdução à Epidemiologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Processo saúde-doença",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Medidas de saúde coletiva",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transição Demográfica e Epidemiológica",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Processos Endêmicos e Epidêmico (Endemias e Epidemias)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Padrões de Distribuição das Doença (Tempo, Pessoa, Espaço ou Lugar)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Endemias e Epidemias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Investigação de Surtos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Aspectos Epidemiológicos das Doenças Transmissíveis",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Vigilância em Saúde",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Vigilância Epidemiológica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vigilância Sanitária",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vigilância Ambiental",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Vigilância em Saúde do Trabalhador",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Outras Vigilâncias em Saúde",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Sistemas de Informação em Saúde (SIS) e Bases de dados do SUS",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Princípios de Estatística (Bioestatística ou Estatística Médica)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Causalidade",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Postulados de Henle-Koch",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Canônes de Mill",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Critérios de Bradford-Hill",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Método de Rothman",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Associações espúrias",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Estudos Epidemiológicos",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Tipos de Desfecho",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação dos Estudos Epidemiológicos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tipos de Estudos Epidemiológicos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Validade dos Estudos Epidemiológicos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pesquisa Clínica",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Medidas de Associação e Medidas de Impacto",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Testes Diagnósticos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Medicina Baseada em Evidências",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Ética Médica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Bioética",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Código de Ética Médica (CEM)",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Saúde do Trabalhador",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Acidente de trabalho",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Bases legais de Saúde do Trabalhador",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pessoas com Deficiência (PCD)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Política Nacional de Saúde do Trabalhador e da Trabalhadora (PNSTT)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doenças relacionadas ao trabalho",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Toxicologia ocupacional",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumoconioses",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Dermatoses Ocupacionais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doenças osteomusculares relacionadas ao trabalho (DORT) / Lesão por esforços repetitivos (LER)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Perda Auditiva induzida por Ruído (PAIR) ou Perda Auditiva induzida por níveis de Pressão Sonora Elevados (PAINPSE)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipoacusia Ototóxica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbio de Voz Relacionado ao Trabalho (DVRT)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Transtorno mental relacionado ao trabalho",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Asma ocupacional x asma relacionada ao trabalho",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Obstetrícia",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Obstetrícia fisiológica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Modificações fisiológicas da gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Imunologia na gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Desenvolvimento e fisiologia fetal",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Pré-natal",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Parto",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Bacia obstétrica e pelvimetria",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Estática fetal",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição dos principais conceitos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Avaliação da estática fetal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Mecanismo de parto",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fases clínicas do parto",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Períodos do trabalho de parto",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Distocia – funcional, de objeto, de trajeto",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Partograma",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição e função",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Componentes do partograma",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico de distocias no partograma",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Assistência ao parto normal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Assistencia ao parto pélvico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Indução de parto",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Parto vaginal operatório",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Parto cesárea",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Puerpério",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Puerpério fisiológico",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hemorragias pós parto (HPP) e rotura uterina",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecção puerperal / endometrite puerperal",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Intercorrências obstétricas /obstetrícia patológica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Sangramento primeira metade",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Abortamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Gestação ectópica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença trofoblástica gestacional",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Sangramento segunda metade da gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trabalho de parto prematuro (TPP)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Rotura prematura de membranas ovulares (RPM)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Abortamento habitual (Abortamento de repetição) e insuficiência istmocervical",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição de abortamento habitual",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Etiologia do abortamento habitual",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de risco para abortamento habitual",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Investigação diagnóstica e tratamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Insuficiência istmocervical",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Gestação múltipla ( gestação gemelar)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pós-datismo",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Conceito",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Incidência",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Etiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Conduta",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doenças associadas à gestação",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Distúrbios hipertensivos na gestação (DHEG)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Incidência",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Etiologia e fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Predição e prevenção",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipertensão gestacional",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pré-Eclâmpsia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Eclâmpsia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síndrome HELLP",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Conduta",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Diabetes na gestação (DMG)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Repercussões do diabetes na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Conduta",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Doenças infecciosas na gestação – HIV, sífilis, hepatites, herpes",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Sifilis na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "HIV na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hepatites na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Herpes na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "COVID na gestação",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Colagenoses na gestação- Lupus eritematoso Sistêmico (LES)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trombofilia na gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Trombose na gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Cardiopatias na gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anemias na gestação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecção Urinária e Bacteriúria Assintomática na gestação (ITU)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Covid na gestação",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Medicina fetal",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Ultrassom em obstetrícia - (USG)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Avaliação da vitalidade fetal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Alteração do volume de líquido amniótico (ILA)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Restrição de crescimento fetal (RCF)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Infecções congênitas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "As principais infecções congênitas: TORCHS",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Toxoplasmose na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Citomegalovirus na gestação (CMV)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Rubéola na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Parvovirus B19 na gestação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Zika vírus na gestação",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Doença hemolítica perinatal ( DHPN)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Morte fetal / Óbito fetal (OF)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Procedimentos invasivos em medicina fetal",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pediatria",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Puericultura",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Imunizações/Vacinação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Amamentação/ Aleitamento Materno",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Crescimento",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Avaliação do Crescimento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Curvas de Crescimento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Alvo Genético",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Maturação Esquelética",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores que influenciam o crescimento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Crescimento  Anormal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Puberdade",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Diagnóstico Nutricional",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Gráficos OMS - Classificação nutricional",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Obesidade",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Desnutrição",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "DNPM (Desenvolvimento Neuro-Psico-Motor)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Alimentação Infantil",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Vitaminas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hebiatria",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Puericultura Geral",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Profilaxias Ferro, Vitaminas D e A",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Profilaxia Ferro",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Profilaxia Vitamina D",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Profilaxia Vitamina A",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Consultas em Pediatria",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Orientações gerais de puericultura / Sinais de alerta",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hábito intestinal normal do lactente",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Higiene oral",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Segurança das crianças e adolescentes",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Segurança das crianças e adolescentes",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Pneumologia Pediátrica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Pneumonias/Broncopneumonias (BCP) na Infância",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Agentes etiológicos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia afebril do lactente",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia “típica”",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia Atípica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Complicações",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento Geral",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento Complicações",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonias de repetição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia aspirativa",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia de origem parasitária",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Pneumonia hospitalar em pediatria",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Imagem radiológica do timo",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Bronquiolite",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Agentes etiológicos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Aspectos Clínicos / Quadro clínico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnósticos diferenciais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Coqueluche",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Asma",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Síndrome do Lactente Sibilante (Bebê chiador)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Quadro Clínico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico diferencial",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação do controle clínico da asma",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento de Manutenção",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação e Tratamento da Crise",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de gravidade na crise de asma",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prevenção",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Fibrose Cística",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Infectologia Pediátrica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Doenças exantemáticas",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Exantema Súbito",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Eritema Infeccioso",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Sarampo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Rubéola",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Herpangina (Doença Mão-Pé-Boca)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Varicela",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Mononucleose",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Escarlatina",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Tuberculose",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Febre sem sinais localizatórios (FSSL)",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Definição",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Abordagem Diagnóstica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Manejo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Conclusão",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Parotidite (Caxumba)",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Cardiologia Pediátrica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Gastrologia Pediátrica",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Diarreia Aguda",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Constipação",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Alergia alimentar",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Refluxo Gastroesofágico (RGE)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Doença Celíaca",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Hematologia Pediátrica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Nefrologia Pediátrica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Neuropediatria",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Reumatologia Pediátrica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Endocrinologia pediátrica",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Emergências Pediátricas",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Emergências Pediátricas: Parada Cardiorrespiratória (PCR) e Arritmias na Emergência",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Suporte Básico de Vida",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Desfibrilador Externo Automático (DEA)",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Atualizações",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Avaliação da Criança Gravemente Enferma",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Suporte Avançado de Vida",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Causas de PCR",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Cuidados pós-PCR",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Arritmias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Bradiarritimias",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Taquiarritmias",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Choque em Pediatria",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Convulsão febril",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Urticária",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Anafilaxia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Corpo Estranho/Engasgo",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Síndrome da Morte Súbita do Lactente",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "ALTE/BRUE",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Neonatologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Cuidados neonatais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Reanimação neonatal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios respiratórios do período neonatal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Distúrbios metabólicos do período neonatal",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Fatores de risco",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios da glicose",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios do Cálcio",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios do sódio",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios do potássio",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios do Magnésio",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Distúrbios do fosfato",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Doença metabólica óssea",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Infecções congênitas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Icterícia nenonatal e distúrbios hematológicos no RN",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Sepse neonatal",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Definição e classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fatores de risco",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Quadro clínico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Situações especiais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Prevenção de sepse neonatal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Principais síndromes genéticas e neonatais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "O Recém-nascido pré-termo",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Particularidades do recém nascido pré-termo",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "O Recém-nascido pré-termo tardio",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Erros inatos do metabolismo",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Maus tratos à crianças e adolescentes",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Outros",
+      "level": 0,
+      "children": [],
+      "subespecialidades": [
+        {
+          "name": "Oftalmologia",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Ortopedia",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Otorrinolaringologia",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Infecções das Vias Aéreas Superiores",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Faringites",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Otites",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Laringites",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Rinossinusites",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Abscesso Cervical",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Linfadenites Cervicais",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Rinite Alérgica",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Epidemiologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Fisiopatologia",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Apresentação Clínica",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Classificação",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Diagnóstico",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tratamento",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Semiologia Nasal",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Rinites Não-Alérgicas e Nâo Infecciosas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Corpo Estranho Nasal",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Epistaxe",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Vertigens",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Audiologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Laringologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Hipertrofia de Adenoide e Síndrome do Respirador Oral",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Apneia Obstrutiva do Sono na Infância",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Psiquiatria",
+          "level": 1,
+          "children": [],
+          "subgrupos": [
+            {
+              "name": "Dependência Química",
+              "level": 2,
+              "children": [],
+              "topicos": [
+                {
+                  "name": "Introdução e Conceitos Fundamentais",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Álcool",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Hipnossedativos",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Opioides",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Estimulantes",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Tabaco",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Maconha",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "name": "Alucinógenos",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Transtornos do Humor",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtornos Ansiosos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtorno Psicóticos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Intoxicações Exógenas",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Psiquiatria Infantil",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtorno Alimentares",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtornos de Personalidade",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Psicofarmacologia",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtorno Obsessivo-Compulsivo (TOC)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Transtornos Somáticos",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Psicopatologia e Exame do Estado Mental (EEM)",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Reforma Psiquiátrica e Psiquiatria Social",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Medicina Legal",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Ciclo Básico",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Língua Portuguesa (Português)",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Matemática",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Raciocínio Lógico",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Direito",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Informática",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Atualidades",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Inglês",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Formação Geral - ENADE",
+          "level": 1,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "nivel_0": 7,
+    "nivel_1": 80,
+    "nivel_2": 375,
+    "nivel_3": 497,
+    "nivel_4": 114,
+    "nivel_5": 34,
+    "total": 1107
+  },
+  "source": "filters_novo_html",
+  "levels": 6,
+  "extraction_method": "sequential_padding_based"
+}

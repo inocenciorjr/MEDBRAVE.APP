@@ -1,0 +1,24 @@
+// Schemas de validação para Conteúdo (Artigos)
+// Implementação inicial - esqueleto
+import { z } from 'zod';
+
+export const createContentSchema = z.object({
+  title: z.string().min(3),
+  content: z.string().min(10),
+  authorId: z.string(),
+  tags: z.array(z.string()).optional(),
+  categoryId: z.string().optional(),
+  status: z.enum(['DRAFT', 'PUBLISHED', 'ARCHIVED']).optional(),
+  summary: z.string().optional(),
+  isPublic: z.boolean().optional(),
+});
+
+export const updateContentSchema = z.object({
+  title: z.string().min(3).optional(),
+  content: z.string().min(10).optional(),
+  tags: z.array(z.string()).optional(),
+  categoryId: z.string().optional(),
+  status: z.enum(['DRAFT', 'PUBLISHED', 'ARCHIVED']).optional(),
+  summary: z.string().optional(),
+  isPublic: z.boolean().optional(),
+});

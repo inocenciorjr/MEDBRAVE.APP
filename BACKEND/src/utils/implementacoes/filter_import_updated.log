@@ -1,0 +1,37 @@
+2025-05-27 17:33:40,269 - INFO - === Starting MedPulse Enhanced Filter Import (Merged Data) ===
+2025-05-27 17:33:40,269 - INFO - API Base URL: http://localhost:3333
+2025-05-27 17:33:40,269 - INFO - JSON File: merged_filters.json
+2025-05-27 17:33:40,270 - INFO - Authenticating with admin credentials...
+2025-05-27 17:33:44,383 - ERROR - Authentication failed: HTTPConnectionPool(host='localhost', port=3333): Max retries exceeded with url: /auth/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F415D9ACB0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2025-05-27 17:33:44,384 - ERROR - Authentication failed - cannot proceed
+2025-05-27 17:34:15,952 - INFO - === Starting MedPulse Enhanced Filter Import (Merged Data) ===
+2025-05-27 17:34:15,953 - INFO - API Base URL: http://localhost:5000
+2025-05-27 17:34:15,953 - INFO - JSON File: merged_filters.json
+2025-05-27 17:34:15,954 - INFO - Authenticating with admin credentials...
+2025-05-27 17:34:15,984 - ERROR - Authentication failed: 404 Client Error: Not Found for url: http://localhost:5000/auth/login
+2025-05-27 17:34:15,985 - ERROR - Auth Error Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /auth/login</pre>
+</body>
+</html>
+
+2025-05-27 17:34:15,985 - ERROR - Authentication failed - cannot proceed
+2025-05-27 17:35:41,344 - INFO - === Starting MedPulse Enhanced Filter Import (Merged Data) ===
+2025-05-27 17:35:41,345 - INFO - API Base URL: http://localhost:5000
+2025-05-27 17:35:41,345 - INFO - JSON File: merged_filters.json
+2025-05-27 17:35:41,345 - INFO - Authenticating with admin credentials...
+2025-05-27 17:35:42,283 - ERROR - Authentication failed: 401 Client Error: Unauthorized for url: http://localhost:5000/api/auth/login
+2025-05-27 17:35:42,283 - ERROR - Auth Error Details: {'error': '//console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes. Raw server response: "{"error":{"code":403,"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","errors":[{"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","domain":"global","reason":"forbidden"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"service":"identitytoolkit.googleapis.com","containerInfo":"medforum-488ec","consumer":"projects/medforum-488ec"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec"}]}]}}"'}
+2025-05-27 17:35:42,284 - ERROR - Authentication failed - cannot proceed
+2025-05-27 17:55:31,132 - INFO - === Starting MedPulse Enhanced Filter Import (Merged Data) ===
+2025-05-27 17:55:31,133 - INFO - API Base URL: http://localhost:5000
+2025-05-27 17:55:31,133 - INFO - JSON File: merged_filters.json
+2025-05-27 17:55:31,133 - INFO - Authenticating with admin credentials...
+2025-05-27 17:55:32,093 - ERROR - Authentication failed: 401 Client Error: Unauthorized for url: http://localhost:5000/api/auth/login
+2025-05-27 17:55:32,094 - ERROR - Auth Error Details: {'error': '//console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes. Raw server response: "{"error":{"code":403,"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","errors":[{"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","domain":"global","reason":"forbidden"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"service":"identitytoolkit.googleapis.com","consumer":"projects/medforum-488ec","containerInfo":"medforum-488ec"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec"}]}]}}"'}
+2025-05-27 17:55:32,094 - ERROR - Authentication failed - cannot proceed

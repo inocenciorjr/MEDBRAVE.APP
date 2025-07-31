@@ -1,0 +1,33 @@
+2025-06-03 03:15:21,506 - INFO - API Base URL: http://localhost:5000
+2025-06-03 03:15:21,507 - INFO - JSON File: merged_filters.json
+2025-06-03 03:15:21,507 - INFO - Authenticating with admin credentials...
+2025-06-03 03:15:21,519 - ERROR - Authentication failed: 404 Client Error: Not Found for url: http://localhost:5000/auth/login
+2025-06-03 03:15:21,519 - ERROR - Authentication failed - cannot proceed
+2025-06-03 03:17:32,853 - INFO - API Base URL: http://localhost:5000
+2025-06-03 03:17:32,853 - INFO - JSON File: merged_filters.json
+2025-06-03 03:17:32,854 - INFO - Authenticating with admin credentials...
+2025-06-03 03:17:32,882 - ERROR - Authentication failed: 404 Client Error: Not Found for url: http://localhost:5000/auth/login
+2025-06-03 03:17:32,883 - ERROR - Authentication failed - cannot proceed
+2025-06-03 03:18:45,685 - INFO - === MedPulse Hierarchy Fix Tool ===
+2025-06-03 03:18:45,686 - INFO - API Base URL: http://localhost:5000
+2025-06-03 03:18:45,686 - INFO - JSON File: merged_filters.json
+2025-06-03 03:18:45,686 - INFO - Authenticating with admin credentials...
+2025-06-03 03:18:47,607 - INFO - Loaded 7 especialidades from JSON file
+2025-06-03 03:18:47,608 - INFO - Fetching all filters...
+2025-06-03 03:18:47,641 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:18:48,654 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:18:50,677 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:18:54,689 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:18:54,689 - ERROR - No filters found in database
+2025-06-03 03:19:30,158 - INFO - === MedPulse Hierarchy Fix Tool ===
+2025-06-03 03:19:30,158 - INFO - API Base URL: http://localhost:5000
+2025-06-03 03:19:30,159 - INFO - JSON File: merged_filters.json
+2025-06-03 03:19:30,159 - INFO - Authenticating with admin credentials...
+2025-06-03 03:19:30,802 - INFO - Authentication successful!
+2025-06-03 03:19:30,804 - INFO - Loaded 7 especialidades from JSON file
+2025-06-03 03:19:30,804 - INFO - Fetching all filters...
+2025-06-03 03:19:30,824 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:19:31,856 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:19:33,891 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:19:37,910 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-06-03 03:19:37,910 - ERROR - No filters found in database

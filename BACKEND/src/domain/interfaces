@@ -1,0 +1,186 @@
+import { Timestamp } from "firebase-admin/firestore";
+
+/**
+ * Tipos de eventos para analytics
+ */
+export enum EventType {
+  PAGE_VIEW = "page_view",
+  CONTENT_VIEW = "content_view",
+  SEARCH = "search",
+  CLICK = "click",
+  FORM_SUBMIT = "form_submit",
+  SIGN_UP = "sign_up",
+  LOGIN = "login",
+  PURCHASE = "purchase",
+  SUBSCRIPTION = "subscription",
+  EXAM_START = "exam_start",
+  EXAM_COMPLETE = "exam_complete",
+  VIDEO_START = "video_start",
+  VIDEO_COMPLETE = "video_complete",
+  DOWNLOAD = "download",
+  SHARE = "share",
+  CUSTOM = "custom"
+}
+
+/**
+ * Interface para eventos de analytics
+ */
+export interface AnalyticsEvent {
+  id: string;
+  userId?: string | null;
+  sessionId?: string | null;
+  type: EventType;
+  name: string;
+  properties?: Record<string, any> | null;
+  url?: string | null;
+  referrer?: string | null;
+  userAgent?: string | null;
+  ipAddress?: string | null;
+  deviceInfo?: Record<string, any> | null;
+  geoInfo?: {
+    country?: string;
+    region?: string;
+    city?: string;
+    latitude?: number;
+    longitude?: number;
+  } | null;
+  timestamp: Timestamp;
+}
+
+/**
+ * Interface para sessões de usuário
+ */
+export interface UserSession {
+  id: string;
+  userId?: string | null;
+  startTime: Timestamp;
+  endTime?: Timestamp | null;
+  duration?: number | null; // em segundos
+  deviceInfo?: Record<string, any> | null;
+  userAgent?: string | null;
+  ipAddress?: string | null;
+  referrer?: string | null;
+  landingPage?: string | null;
+  exitPage?: string | null;
+  pageViews?: number | null;
+  isActive: boolean;
+  geoInfo?: {
+    country?: string;
+    region?: string;
+    city?: string;
+  } | null;
+}
+
+/**
+ * Interface para estatísticas diárias
+ */
+export interface AnalyticsDailyStats {
+  id: string;
+  date: string; // formato: YYYY-MM-DD
+  uniqueUsers: number;
+  newUsers: number;
+  totalSessions: number;
+  totalPageViews: number;
+  totalEvents: number;
+  avgSessionDuration: number; // em segundos
+  bounceRate: number; // porcentagem
+  topPages: Array<{ url: string; views: number }>;
+  topReferrers: Array<{ referrer: string; count: number }>;
+  topCountries: Array<{ country: string; count: number }>;
+  topDevices: Array<{ device: string; count: number }>;
+  topBrowsers: Array<{ browser: string; count: number }>;
+  updatedAt: Timestamp;
+}
+
+/**
+ * Interface para o serviço de analytics
+ */
+export interface IAnalyticsService {
+  /**
+   * Registra um evento de analytics
+   */
+  trackEvent(eventData: Omit<AnalyticsEvent, "id" | "timestamp">): Promise<AnalyticsEvent>;
+
+  /**
+   * Registra um evento de visualização de página
+   */
+  trackPageView(
+    url: string,
+    userId?: string,
+    sessionId?: string,
+    referrer?: string,
+    userAgent?: string,
+    ipAddress?: string,
+    deviceInfo?: Record<string, any>,
+    geoInfo?: AnalyticsEvent["geoInfo"]
+  ): Promise<AnalyticsEvent>;
+
+  /**
+   * Inicia uma nova sessão de usuário
+   */
+  startUserSession(
+    sessionData: Omit<UserSession, "id" | "startTime" | "isActive">
+  ): Promise<UserSession>;
+
+  /**
+   * Finaliza uma sessão de usuário
+   */
+  endUserSession(
+    sessionId: string,
+    exitPage?: string,
+    pageViews?: number
+  ): Promise<UserSession | null>;
+
+  /**
+   * Atualiza uma sessão de usuário existente
+   */
+  updateUserSession(
+    sessionId: string,
+    updates: Partial<Omit<UserSession, "id" | "startTime">>
+  ): Promise<UserSession | null>;
+
+  /**
+   * Incrementa o contador de visualizações de página de uma sessão
+   */
+  incrementSessionPageViews(sessionId: string): Promise<number>;
+
+  /**
+   * Obtém eventos de analytics com base em filtros
+   */
+  getAnalyticsEvents(options?: {
+    userId?: string;
+    sessionId?: string;
+    type?: EventType;
+    startDate?: Date;
+    endDate?: Date;
+    limit?: number;
+    offset?: number;
+  }): Promise<{ events: AnalyticsEvent[]; total: number }>;
+
+  /**
+   * Obtém sessões de usuário com base em filtros
+   */
+  getUserSessions(options?: {
+    userId?: string;
+    isActive?: boolean;
+    startDate?: Date;
+    endDate?: Date;
+    limit?: number;
+    offset?: number;
+  }): Promise<{ sessions: UserSession[]; total: number }>;
+
+  /**
+   * Gera estatísticas diárias para uma data específica
+   */
+  generateDailyStats(date: Date): Promise<AnalyticsDailyStats>;
+
+  /**
+   * Obtém estatísticas diárias para um intervalo de datas
+   */
+  getDailyStats(startDate: string, endDate: string): Promise<AnalyticsDailyStats[]>;
+
+  /**
+   * Remove eventos de analytics antigos
+   */
+  cleanupOldAnalyticsEvents(olderThan: Date): Promise<number>;
+} 

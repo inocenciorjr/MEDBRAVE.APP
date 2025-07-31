@@ -1,0 +1,164 @@
+2025-05-26 17:32:48,025 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:32:48,026 - INFO - API Base URL: http://localhost:5000
+2025-05-26 17:32:48,026 - INFO - JSON File: estrategia_filters_extracted.json
+2025-05-26 17:32:48,026 - INFO - Loaded 7 especialidades from JSON file
+2025-05-26 17:32:48,026 - INFO - JSON structure validation passed
+2025-05-26 17:32:48,026 - INFO - Fetching existing filters...
+2025-05-26 17:32:48,035 - WARNING - Attempt 1 failed, retrying in 1.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:49,053 - WARNING - Attempt 2 failed, retrying in 2.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:51,082 - WARNING - Attempt 3 failed, retrying in 4.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:55,113 - ERROR - Failed after 4 attempts: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:55,113 - ERROR - API Error Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /filters</pre>
+</body>
+</html>
+
+2025-05-26 17:32:55,113 - WARNING - Could not fetch existing filters, proceeding without duplicate checks
+2025-05-26 17:32:55,113 - INFO - Creating filter: Cirurgia
+2025-05-26 17:32:55,160 - WARNING - Attempt 1 failed, retrying in 1.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:56,179 - WARNING - Attempt 2 failed, retrying in 2.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:32:58,213 - WARNING - Attempt 3 failed, retrying in 4.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:02,233 - ERROR - Failed after 4 attempts: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:02,234 - ERROR - API Error Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /filters</pre>
+</body>
+</html>
+
+2025-05-26 17:33:02,341 - ERROR - Failed to create filter 'Cirurgia', skipping subfilters
+2025-05-26 17:33:02,341 - INFO - Creating filter: Clínica Médica
+2025-05-26 17:33:02,359 - WARNING - Attempt 1 failed, retrying in 1.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:03,367 - WARNING - Attempt 2 failed, retrying in 2.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:05,395 - WARNING - Attempt 3 failed, retrying in 4.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:09,418 - ERROR - Failed after 4 attempts: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:09,419 - ERROR - API Error Response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /filters</pre>
+</body>
+</html>
+
+2025-05-26 17:33:09,523 - ERROR - Failed to create filter 'Clínica Médica', skipping subfilters
+2025-05-26 17:33:09,523 - INFO - Creating filter: Ginecologia
+2025-05-26 17:33:09,542 - WARNING - Attempt 1 failed, retrying in 1.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:10,573 - WARNING - Attempt 2 failed, retrying in 2.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:33:12,595 - WARNING - Attempt 3 failed, retrying in 4.0s: 404 Client Error: Not Found for url: http://localhost:5000/filters
+2025-05-26 17:34:03,820 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:34:03,820 - INFO - API Base URL: http://localhost:5000/api
+2025-05-26 17:34:03,820 - INFO - JSON File: /home/ubuntu/estrategia_filters_extracted.json
+2025-05-26 17:34:03,820 - ERROR - JSON file not found: /home/ubuntu/estrategia_filters_extracted.json
+2025-05-26 17:34:13,428 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:34:13,428 - INFO - API Base URL: http://localhost:5000/api
+2025-05-26 17:34:13,429 - INFO - JSON File: estrategia_filters_extracted.json
+2025-05-26 17:34:13,429 - INFO - Loaded 7 especialidades from JSON file
+2025-05-26 17:34:13,429 - INFO - JSON structure validation passed
+2025-05-26 17:34:13,430 - INFO - Fetching existing filters...
+2025-05-26 17:34:13,472 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:14,483 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:16,516 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:20,535 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:20,535 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:20,536 - WARNING - Could not fetch existing filters, proceeding without duplicate checks
+2025-05-26 17:34:20,536 - INFO - Creating filter: Cirurgia
+2025-05-26 17:34:20,564 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:21,595 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:23,627 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:27,661 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:27,662 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:27,765 - ERROR - Failed to create filter 'Cirurgia', skipping subfilters
+2025-05-26 17:34:27,766 - INFO - Creating filter: Clínica Médica
+2025-05-26 17:34:27,784 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:28,816 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:30,840 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:34,847 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:34,848 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:34,949 - ERROR - Failed to create filter 'Clínica Médica', skipping subfilters
+2025-05-26 17:34:34,949 - INFO - Creating filter: Ginecologia
+2025-05-26 17:34:34,955 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:35,984 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:38,013 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:42,045 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:42,045 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:42,151 - ERROR - Failed to create filter 'Ginecologia', skipping subfilters
+2025-05-26 17:34:42,151 - INFO - Creating filter: Medicina Preventiva
+2025-05-26 17:34:42,157 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:43,177 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:45,201 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:49,232 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:49,233 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:49,337 - ERROR - Failed to create filter 'Medicina Preventiva', skipping subfilters
+2025-05-26 17:34:49,337 - INFO - Creating filter: Obstetrícia
+2025-05-26 17:34:49,358 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:50,380 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:52,411 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:56,429 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:56,430 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:34:56,535 - ERROR - Failed to create filter 'Obstetrícia', skipping subfilters
+2025-05-26 17:34:56,536 - INFO - Creating filter: Pediatria
+2025-05-26 17:34:56,553 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:57,565 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:34:59,599 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:03,621 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:03,622 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:35:03,725 - ERROR - Failed to create filter 'Pediatria', skipping subfilters
+2025-05-26 17:35:03,726 - INFO - Creating filter: Outros
+2025-05-26 17:35:03,745 - WARNING - Attempt 1 failed, retrying in 1.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:04,766 - WARNING - Attempt 2 failed, retrying in 2.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:06,786 - WARNING - Attempt 3 failed, retrying in 4.0s: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:10,810 - ERROR - Failed after 4 attempts: 401 Client Error: Unauthorized for url: http://localhost:5000/api/filters
+2025-05-26 17:35:10,811 - ERROR - API Error Details: {'error': 'Token de autenticação não fornecido', 'code': 'AppError'}
+2025-05-26 17:35:10,917 - ERROR - Failed to create filter 'Outros', skipping subfilters
+2025-05-26 17:35:10,917 - INFO - 
+==================================================
+2025-05-26 17:35:10,917 - INFO - IMPORT SUMMARY
+2025-05-26 17:35:10,917 - INFO - ==================================================
+2025-05-26 17:35:10,918 - INFO - Especialidades Processed: 7
+2025-05-26 17:35:10,918 - INFO - Especialidades Created: 0
+2025-05-26 17:35:10,918 - INFO - Especialidades Skipped (existing): 0
+2025-05-26 17:35:10,918 - INFO - Subfiltros Created: 0
+2025-05-26 17:35:10,918 - INFO - Subfiltros Skipped (existing): 0
+2025-05-26 17:35:10,918 - INFO - Subfiltros Skipped (invalid): 0
+2025-05-26 17:35:10,918 - INFO - Subfiltros Failed: 0
+2025-05-26 17:35:10,919 - INFO - ==================================================
+2025-05-26 17:35:10,919 - INFO - Success Rate: 100.0%
+2025-05-26 17:35:10,919 - INFO - Import completed successfully!
+2025-05-26 17:37:09,776 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:37:09,776 - INFO - API Base URL: http://localhost:5000/api
+2025-05-26 17:37:09,776 - INFO - JSON File: estrategia_filters_extracted.json
+2025-05-26 17:37:09,776 - INFO - Authenticating with admin credentials...
+2025-05-26 17:37:10,737 - ERROR - Authentication failed: 401 Client Error: Unauthorized for url: http://localhost:5000/api/auth/login
+2025-05-26 17:37:10,737 - ERROR - Auth Error Details: {'error': '//console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes. Raw server response: "{"error":{"code":403,"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","errors":[{"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","domain":"global","reason":"forbidden"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"containerInfo":"medforum-488ec","consumer":"projects/medforum-488ec","service":"identitytoolkit.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec"}]}]}}"'}
+2025-05-26 17:37:10,738 - ERROR - Authentication failed - cannot proceed
+2025-05-26 17:37:53,395 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:37:53,395 - INFO - API Base URL: http://localhost:3333/api
+2025-05-26 17:37:53,395 - INFO - JSON File: estrategia_filters_extracted.json
+2025-05-26 17:37:53,395 - INFO - Authenticating with admin credentials...
+2025-05-26 17:38:33,205 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:38:33,206 - INFO - API Base URL: http://localhost:5000/api
+2025-05-26 17:38:33,206 - INFO - JSON File: /home/ubuntu/estrategia_filters_extracted.json
+2025-05-26 17:38:33,206 - INFO - Authenticating with admin credentials...
+2025-05-26 17:38:37,649 - ERROR - Authentication failed: 401 Client Error: Unauthorized for url: http://localhost:5000/api/auth/login
+2025-05-26 17:38:37,650 - ERROR - Auth Error Details: {'error': '//console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes. Raw server response: "{"error":{"code":403,"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","errors":[{"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","domain":"global","reason":"forbidden"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"service":"identitytoolkit.googleapis.com","consumer":"projects/medforum-488ec","containerInfo":"medforum-488ec"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec"}]}]}}"'}
+2025-05-26 17:38:37,650 - ERROR - Authentication failed - cannot proceed
+2025-05-26 17:53:07,595 - INFO - === Starting MedPulse Hierarchical Filter Import ===
+2025-05-26 17:53:07,595 - INFO - API Base URL: http://localhost:5000/api
+2025-05-26 17:53:07,596 - INFO - JSON File: estrategia_filters_extracted.json
+2025-05-26 17:53:07,596 - INFO - Authenticating with admin credentials...
+2025-05-26 17:53:08,132 - ERROR - Authentication failed: 401 Client Error: Unauthorized for url: http://localhost:5000/api/auth/login
+2025-05-26 17:53:08,132 - ERROR - Auth Error Details: {'error': '//console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes. Raw server response: "{"error":{"code":403,"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","errors":[{"message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes.","domain":"global","reason":"forbidden"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"consumer":"projects/medforum-488ec","containerInfo":"medforum-488ec","service":"identitytoolkit.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project medforum-488ec. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam/project?project=medforum-488ec"}]}]}}"'}
+2025-05-26 17:53:08,133 - ERROR - Authentication failed - cannot proceed

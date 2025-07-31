@@ -1,0 +1,111 @@
+/* Estilos customizados para modais - Correção de largura e espaçamento */
+
+/* Solução para modais - apenas quando necessário */
+
+/* Detectar se a página tem scroll antes de aplicar correções */
+body:has([data-state="open"]) {
+  /* Só aplicar correções se a página realmente tem scroll */
+  overflow: hidden;
+}
+
+/* Só aplicar padding se houver scroll na página */
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Fallback: só aplicar padding se a página tiver scroll */
+@supports not (scrollbar-gutter: stable) {
+  body:has([data-state="open"]) {
+    /* Verificar se há scroll antes de aplicar padding */
+    padding-right: 0px; /* Não aplicar padding por padrão */
+  }
+  
+  /* Aplicar padding apenas se a página tiver scroll */
+  body[data-has-scroll="true"]:has([data-state="open"]) {
+    padding-right: var(--scrollbar-width, 15px);
+  }
+}
+
+/* Estilos básicos dos modais */
+[data-slot="dialog-content"] {
+  max-width: min(90vw, 600px) !important;
+  max-height: 85vh !important;
+  margin: 2rem !important;
+  overflow-y: auto !important;
+}
+
+.questoes-modal-content {
+  max-width: min(90vw, 1000px) !important;
+  max-height: 90vh !important;
+}
+
+.lista-modal-content {
+  max-width: min(90vw, 1200px) !important;
+  max-height: 75vh !important;
+  overflow-y: auto !important;
+}
+
+.simulado-modal-content {
+  max-width: min(85vw, 800px) !important;
+  max-height: 90vh !important;
+}
+
+/* Overlay do modal */
+[data-slot="dialog-overlay"] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 50 !important;
+}
+
+/* Scrollarea dos modais */
+.modal-scroll-area {
+  max-height: calc(90vh - 8rem);
+  overflow-y: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  [data-slot="dialog-content"],
+  .questoes-modal-content,
+  .lista-modal-content,
+  .simulado-modal-content {
+    max-width: calc(100vw - 1rem) !important;
+    margin: 0.5rem !important;
+  }
+}
+
+/* Ajustes para o DialogContent */
+[data-slot="dialog-content"] {
+  /* Garantir espaçamento adequado das bordas */
+  max-width: min(90vw, 600px) !important;
+  margin: 2rem !important;
+  
+  /* Para modais maiores, usar larguras específicas */
+  &.modal-large {
+    max-width: min(95vw, 1000px) !important;
+  }
+  
+  &.modal-extra-large {
+    max-width: min(98vw, 1200px) !important;
+  }
+  
+  /* Garantir que não encoste nas bordas em telas pequenas */
+  @media (max-width: 640px) {
+    max-width: calc(100vw - 2rem) !important;
+    margin: 1rem !important;
+  }
+}
+
+/* Ajustes para temas escuros */
+.dark [data-slot="dialog-content"] {
+  border-color: rgb(55 65 81) !important;
+  background-color: rgb(17 24 39) !important;
+}
+
+/* Classe utilitária para aplicar nos modais */
+.modal-no-body-scroll {
+  /* Esta classe será aplicada via JavaScript quando necessário */
+}
+

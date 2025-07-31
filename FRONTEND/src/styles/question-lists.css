@@ -1,0 +1,534 @@
+/* Estilos específicos para a página de Listas de Questões */
+
+/* Container principal da página */
+.question-lists-page {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Cards de pastas */
+.folder-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.folder-card:hover {
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+
+}
+
+/* Tema escuro para folder cards */
+.dark .folder-card {
+  background: var(--bg-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark .folder-card:hover {
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.25);
+}
+
+/* Cards de listas de questões */
+.question-list-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.question-list-card:hover {
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.12);
+  transform: translateY(-1px);
+}
+
+.question-list-card.in-folder {
+  background: rgba(139, 92, 246, 0.03);
+  border-color: rgba(139, 92, 246, 0.1);
+}
+
+/* Tema escuro para question list cards */
+.dark .question-list-card {
+  background: var(--bg-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark .question-list-card:hover {
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.2);
+}
+
+.dark .question-list-card.in-folder {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Ícones de pasta com cores customizadas */
+.folder-icon {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  min-width: 2rem;
+  min-height: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Badges para contadores */
+.count-badge {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-color);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  font-weight: 500;
+}
+
+.dark .count-badge {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* Tags de listas */
+.list-tag {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.list-tag:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-color);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.dark .list-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .list-tag:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* Estado vazio */
+.empty-state {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.empty-state-icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+  background: var(--bg-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.dark .empty-state-icon {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Animações de entrada */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Grid responsivo */
+.lists-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lists-grid.grid-view {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.lists-grid.list-view {
+  grid-template-columns: 1fr;
+}
+
+.folders-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* Botões de ação */
+.action-button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.action-button.secondary {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.action-button.secondary:hover {
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark .action-button.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .action-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown menus */
+.dropdown-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-item:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-color);
+}
+
+.dropdown-item.danger {
+  color: #EF4444;
+}
+
+.dropdown-item.danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #DC2626;
+}
+
+/* Skeleton loading */
+.skeleton {
+  background: linear-gradient(90deg, 
+    var(--bg-secondary) 25%, 
+    rgba(139, 92, 246, 0.1) 50%, 
+    var(--bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .folders-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lists-grid.grid-view {
+    grid-template-columns: 1fr;
+  }
+  
+  .question-lists-page {
+    padding: 1rem;
+  }
+}
+
+/* Preview da pasta no modal */
+.folder-preview {
+  background: var(--bg-secondary);
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.folder-preview:hover {
+  border-color: var(--accent-color);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.dark .folder-preview {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .folder-preview:hover {
+  border-color: var(--accent-color);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+/* Toggle para visibilidade */
+.visibility-toggle {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.visibility-toggle:hover {
+  border-color: var(--accent-color);
+  background: rgba(139, 92, 246, 0.02);
+}
+
+.dark .visibility-toggle {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .visibility-toggle:hover {
+  border-color: var(--accent-color);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* Cores dos ícones de pasta */
+.folder-color-blue { background-color: #3B82F6; }
+.folder-color-green { background-color: #10B981; }
+.folder-color-purple { background-color: #8B5CF6; }
+.folder-color-pink { background-color: #EC4899; }
+.folder-color-orange { background-color: #F59E0B; }
+.folder-color-red { background-color: #EF4444; }
+.folder-color-indigo { background-color: #6366F1; }
+.folder-color-teal { background-color: #14B8A6; }
+
+/* Layout em Lista - Estilo Windows Explorer */
+.folder-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.folder-item:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.1);
+}
+
+.dark .folder-item {
+  background: var(--bg-primary);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .folder-item:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+}
+
+.folder-row {
+  user-select: none;
+  cursor: pointer;
+}
+
+.folder-row:hover {
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.dark .folder-row:hover {
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.folder-content {
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid var(--border-color);
+}
+
+.dark .folder-content {
+  background: rgba(255, 255, 255, 0.02);
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+.list-row {
+  user-select: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.list-row:hover {
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.dark .list-row:hover {
+  background: rgba(139, 92, 246, 0.15);
+}
+
+/* Ajustes para ícones menores no layout lista */
+.folder-item .folder-icon {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação suave para expansão */
+.folder-content {
+  animation: expandContent 0.2s ease-out;
+}
+
+/* Correções para estabilidade dos dropdowns */
+.dropdown-menu-content {
+  position: fixed !important;
+  z-index: 9999 !important;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+}
+
+/* Correções para modais */
+[data-radix-dialog-content] {
+  max-width: 90vw !important;
+  max-height: 85vh !important;
+  overflow-y: auto;
+  margin: auto;
+}
+
+/* Garantir que o modal não ultrapasse a tela */
+.dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: min(800px, 90vw);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Forçar contenção completa para evitar scroll horizontal */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+/* Ajustar grids para não ultrapassar os limites */
+.grid {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Correção específica para dashboard grid */
+.grid.grid-cols-12 {
+  max-width: calc(100vw - 8rem);
+}
+
+.dark .dropdown-menu-content {
+  background: var(--bg-card);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Prevenir problemas de overflow com modais */
+body:has(.modal-open) {
+  overflow: hidden;
+}
+
+/* Correções para botões de ação */
+.folder-row .group-hover\:opacity-100 {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.list-row .group-hover\:opacity-100 {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Estabilizar posição dos dropdowns */
+[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+}
+
+/* Correções para clique em listas */
+.question-list-card button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.question-list-card button:focus {
+  outline: 2px solid var(--color-purple-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Melhorar hover states */
+.folder-row:hover .opacity-0 {
+  opacity: 1;
+}
+
+.list-row:hover .opacity-0 {
+  opacity: 1;
+}
+
+.question-list-card:hover .opacity-0 {
+  opacity: 1;
+}
+
+@keyframes expandContent {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}

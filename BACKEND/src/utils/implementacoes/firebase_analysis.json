@@ -1,0 +1,26 @@
+{
+  "timestamp": "Sentinel: Value used to set a document field to the server timestamp.",
+  "total_filters": 10,
+  "total_subfilters": 1329,
+  "levels": {
+    "N/A": 5,
+    "4": 114,
+    "1": 80,
+    "2": 599,
+    "3": 497,
+    "5": 34
+  },
+  "expected_levels": {
+    "0": 7,
+    "1": 80,
+    "2": 599,
+    "3": 497,
+    "4": 114,
+    "5": 34
+  },
+  "missing_count": -8,
+  "subfilters_without_parent": 5,
+  "custom_ids": 1309,
+  "random_ids": 20,
+  "broken_filter_refs": 0
+}

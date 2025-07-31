@@ -1,0 +1,12 @@
+import * as admin from 'firebase-admin';
+import { getFirestore } from 'firebase-admin/firestore';
+import { getAuth } from 'firebase-admin/auth';
+
+// Inicializar o app do Firebase Admin
+const app = admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+});
+
+// Exportar instâncias do Firestore e Auth
+export const db = getFirestore(app);
+export const auth = getAuth(app); 

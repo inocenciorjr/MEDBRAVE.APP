@@ -1,0 +1,221 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Funções auxiliares
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && 
+        resource != null &&
+        resource.data != null &&
+        resource.data.role == 'admin';
+    }
+
+    function isModerator() {
+      return isAuthenticated() && 
+        resource != null &&
+        resource.data != null &&
+        resource.data.role == 'moderator';
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Regras para coleção de usuários - CORRIGIDAS
+    match /users/{userId} {
+      // Qualquer usuário autenticado pode ler qualquer documento de usuário
+      allow read: if isAuthenticated();
+      
+      // Usuário pode criar seu próprio documento OU admin pode criar qualquer documento
+      allow create: if isAuthenticated() && (isOwner(userId) || 
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'));
+      
+      // Usuário pode atualizar seu próprio documento OU admin pode atualizar qualquer documento
+      allow update: if isAuthenticated() && (isOwner(userId) || 
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'));
+      
+      // Apenas admin pode deletar
+      allow delete: if isAuthenticated() && 
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Função auxiliar para verificar se usuário é admin (para outras coleções)
+    function isUserAdmin() {
+      return isAuthenticated() && 
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function isUserModerator() {
+      return isAuthenticated() && 
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'moderator';
+    }
+
+    // REGRAS PARA QUESTÕES - ADICIONADAS
+    match /questions/{questionId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // REGRAS PARA FILTROS - ADICIONADAS  
+    match /filters/{filterId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    match /subFilters/{subFilterId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // REGRAS PARA SIMULADOS - ADICIONADAS
+    match /simulados/{simuladoId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // REGRAS PARA LISTAS - ADICIONADAS
+    match /listas/{listaId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // REGRAS PARA FLASHCARDS - ADICIONADAS
+    match /flashcards/{flashcardId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    match /flashcardDecks/{deckId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+    }
+
+    // REGRAS PARA RESULTADOS - ADICIONADAS
+    match /results/{resultId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+      allow write: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+    }
+
+    // REGRAS PARA NOTIFICAÇÕES - ADICIONADAS
+    match /notifications/{notificationId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para ações administrativas
+    match /adminActions/{actionId} {
+      allow read: if isUserAdmin() || isUserModerator();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para tarefas administrativas
+    match /adminTasks/{taskId} {
+      allow read: if isUserAdmin() || isUserModerator();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para estatísticas administrativas
+    match /adminStats/{statsId} {
+      allow read: if isUserAdmin() || isUserModerator();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para logs de auditoria
+    match /auditLogs/{logId} {
+      allow read: if isUserAdmin();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para permissões administrativas
+    match /adminPermissions/{permissionId} {
+      allow read: if isUserAdmin();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para papéis administrativos
+    match /adminRoles/{roleId} {
+      allow read: if isUserAdmin();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para configurações do sistema
+    match /systemConfig/{configId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para feature flags
+    match /featureFlags/{flagId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para notificações administrativas
+    match /adminNotifications/{notificationId} {
+      allow read: if isUserAdmin() || isUserModerator();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para backups
+    match /backups/{backupId} {
+      allow read: if isUserAdmin();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para métricas de performance
+    match /performanceMetrics/{metricId} {
+      allow read: if isUserAdmin() || isUserModerator();
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para logs de erro
+    match /errorLogs/{logId} {
+      allow read: if isUserAdmin();
+      allow write: if true; // Permitir escrita para logging de erros
+    }
+
+    // Regras para sessões de usuário
+    match /userSessions/{sessionId} {
+      allow read: if isUserAdmin() || isOwner(resource.data.userId);
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para preferências de usuário
+    match /userPreferences/{userId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(userId));
+      allow write: if isAuthenticated() && (isUserAdmin() || isOwner(userId));
+    }
+
+    // Regras para estatísticas de usuário
+    match /userStats/{userId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(userId));
+      allow write: if isUserAdmin();
+    }
+
+    // Regras para conquistas de usuário
+    match /userAchievements/{achievementId} {
+      allow read: if isAuthenticated();
+      allow write: if isUserAdmin();
+    }
+
+    // REGRAS PARA PASTAS DE LISTAS DE QUESTÕES - ADICIONADAS
+    match /questionListFolders/{folderId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+      allow write: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+    }
+
+    // REGRAS PARA LISTAS DE QUESTÕES - ADICIONADAS
+    match /questionLists/{listId} {
+      allow read: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+      allow write: if isAuthenticated() && (isUserAdmin() || isOwner(resource.data.userId));
+    }
+  }
+} 

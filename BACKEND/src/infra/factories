@@ -1,0 +1,37 @@
+import { firestore as db } from 'firebase-admin';
+import { FirebaseNotificationService } from '../services/FirebaseNotificationService';
+import { FirebasePaymentNotificationService } from '../services/FirebasePaymentNotificationService';
+import { NotificationController } from '../controllers/NotificationController';
+import { PaymentNotificationController } from '../controllers/PaymentNotificationController';
+import { createNotificationRoutes } from '../routes/notificationRoutes';
+import { createPaymentNotificationRoutes } from '../routes/paymentNotificationRoutes';
+import { Router } from 'express';
+
+/**
+ * Cria os serviços e controladores de notificações
+ */
+export const createNotificationModule = (): {
+  notificationRoutes: Router;
+  paymentNotificationRoutes: Router;
+  notificationService: FirebaseNotificationService;
+  paymentNotificationService: FirebasePaymentNotificationService;
+} => {
+  // Criar serviços
+  const notificationService = new FirebaseNotificationService(db());
+  const paymentNotificationService = new FirebasePaymentNotificationService(db());
+
+  // Criar controladores
+  const notificationController = new NotificationController(notificationService);
+  const paymentNotificationController = new PaymentNotificationController(paymentNotificationService);
+
+  // Criar rotas
+  const notificationRoutes = createNotificationRoutes(notificationController);
+  const paymentNotificationRoutes = createPaymentNotificationRoutes(paymentNotificationController);
+
+  return {
+    notificationRoutes,
+    paymentNotificationRoutes,
+    notificationService,
+    paymentNotificationService,
+  };
+}; 

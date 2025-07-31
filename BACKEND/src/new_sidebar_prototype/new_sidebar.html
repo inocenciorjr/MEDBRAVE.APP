@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Protótipo de Sidebar</title>
+    <link rel="stylesheet" href="css/new_sidebar_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/medbrave_logo_light.svg" alt="MedBrave Logo" class="logo">
+            <span class="logo-text">MedBrave</span>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i data-feather="chevron-left"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item active">
+                    <a href="#">
+                        <i data-feather="home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i data-feather="bar-chart-2"></i>
+                        <span>Estatísticas</span>
+                    </a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#">
+                        <i data-feather="award"></i>
+                        <span>Conquistas</span>
+                        <i data-feather="chevron-down" class="submenu-arrow"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i data-feather="cpu"></i>
+                        <span>Simulados</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i data-feather="file-text"></i>
+                        <span>Provas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="nav-item">
+                 <a href="#">
+                    <i data-feather="settings"></i>
+                    <span>Configurações</span>
+                </a>
+            </div>
+            <div class="user-profile">
+                <img src="assets/avatar_placeholder.svg" alt="User Avatar" class="avatar">
+                <div class="user-info">
+                    <span class="user-name">Dr. Usuário</span>
+                    <span class="user-role">Médico</span>
+                </div>
+                <i data-feather="log-out" class="logout-icon"></i>
+            </div>
+            <div class="theme-switcher">
+                <button id="themeToggleBtn">
+                    <i data-feather="moon" id="themeIcon"></i>
+                    <span>Alternar Tema</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content">
+        <h1>Conteúdo Principal</h1>
+        <p>Este é um exemplo de como o conteúdo principal apareceria ao lado da nova sidebar.</p>
+    </main>
+    <script src="js/new_sidebar_main.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
