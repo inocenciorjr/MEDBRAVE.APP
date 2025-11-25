@@ -1,128 +1,24 @@
 /**
- * Configuração do cliente Supabase
+ * Configuração do cliente Supabase (DEPRECATED)
  * 
- * Este módulo configura e exporta uma instância única do cliente Supabase
- * para ser utilizada em toda a aplicação. A configuração inclui:
- * - Auto-refresh automático de tokens
- * - Persistência de sessão no localStorage
- * - Detecção de sessão em URLs (para OAuth callbacks)
+ * ⚠️ Este arquivo é mantido apenas para compatibilidade com código legado.
+ * Para novos códigos, use:
+ * - Client Components: import { createClient } from '@/lib/supabase/client'
+ * - Server Components: import { createClient } from '@/lib/supabase/server'
+ * - Middleware: import { createClient } from '@/lib/supabase/middleware'
  * 
+ * @deprecated Use @/lib/supabase/client para Client Components
  * @module config/supabase
  */
 
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import { createClient as createBrowserClient } from '@supabase/ssr';
 
 /**
- * URL do projeto Supabase
- * Deve ser definida na variável de ambiente NEXT_PUBLIC_SUPABASE_URL
- */
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-
-/**
- * Chave anônima (pública) do Supabase
- * Deve ser definida na variável de ambiente NEXT_PUBLIC_SUPABASE_ANON_KEY
- */
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBsYWNlaG9sZGVyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTI4MDAsImV4cCI6MTk2MDc2ODgwMH0.placeholder';
-
-/**
- * Validação de variáveis de ambiente obrigatórias
- * Exibe aviso no console se alguma variável estiver faltando
- */
-if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-  console.warn(
-    '⚠️ [Supabase Config] Variáveis de ambiente faltando. ' +
-    'Verifique se NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY estão definidas.'
-  );
-}
-
-/**
- * Cliente Supabase configurado e pronto para uso
+ * Cliente Supabase para uso em Client Components
  * 
- * Configurações:
- * - persistSession: true - Mantém a sessão no localStorage
- * - autoRefreshToken: true - Renova tokens automaticamente antes de expirar
- * - detectSessionInUrl: true - Detecta sessão em URLs de callback OAuth
- * 
- * @example
- * ```typescript
- * import { supabase } from '@/config/supabase';
- * 
- * // Obter usuário atual
- * const { data: { user } } = await supabase.auth.getUser();
- * 
- * // Fazer query no banco
- * const { data, error } = await supabase
- *   .from('users')
- *   .select('*');
- * ```
+ * @deprecated Use createClient() from '@/lib/supabase/client' instead
  */
-/**
- * Storage híbrido que salva tanto em localStorage quanto em cookies
- * Necessário para SSR funcionar corretamente
- */
-const hybridStorage = {
-  getItem: (key: string) => {
-    if (typeof window === 'undefined') return null;
-    return window.localStorage.getItem(key);
-  },
-  setItem: (key: string, value: string) => {
-    if (typeof window === 'undefined') return;
-    
-    // Salvar no localStorage
-    window.localStorage.setItem(key, value);
-    
-    // TAMBÉM salvar nos cookies para SSR
-    try {
-      const data = JSON.parse(value);
-      if (data.access_token) {
-        document.cookie = `sb-access-token=${data.access_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
-        
-        if (data.refresh_token) {
-          document.cookie = `sb-refresh-token=${data.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
-        }
-      }
-    } catch (e) {
-      // Ignorar erros de parse
-    }
-  },
-  removeItem: (key: string) => {
-    if (typeof window === 'undefined') return;
-    
-    window.localStorage.removeItem(key);
-    
-    document.cookie = 'sb-access-token=; path=/; max-age=0';
-    document.cookie = 'sb-refresh-token=; path=/; max-age=0';
-  },
-};
-
-// Criar cliente apenas no browser
-let _supabaseClient: SupabaseClient | null = null;
-
-function getSupabaseClient(): SupabaseClient {
-  if (typeof window === 'undefined') {
-    // No servidor, retornar um cliente com valores placeholder
-    return createClient(supabaseUrl, supabaseAnonKey, {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false,
-        detectSessionInUrl: false,
-      },
-    });
-  }
-
-  if (!_supabaseClient) {
-    _supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
-      auth: {
-        persistSession: true,
-        autoRefreshToken: true,
-        detectSessionInUrl: true,
-        storageKey: 'supabase.auth.token',
-        storage: hybridStorage,
-      },
-    });
-  }
-
-  return _supabaseClient;
-}
-
-export const supabase: SupabaseClient = getSupabaseClient();
+export const supabase = createBrowserClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
