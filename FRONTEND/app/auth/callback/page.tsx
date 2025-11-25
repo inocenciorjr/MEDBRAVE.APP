@@ -20,6 +20,17 @@ function AuthCallbackContent() {
           const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
 
           if (exchangeError) {
+            console.error('[Auth Callback] Erro ao trocar código:', exchangeError);
+            
+            // Verificar se já está logado (código pode ter sido usado)
+            const { data: sessionData } = await supabase.auth.getSession();
+            
+            if (sessionData?.session) {
+              console.log('[Auth Callback] Usuário já está logado, redirecionando...');
+              router.push(redirect);
+              return;
+            }
+            
             setError('Erro ao autenticar. Tente novamente.');
             return;
           }
