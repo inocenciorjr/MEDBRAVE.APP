@@ -23,6 +23,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MEDBRAVE Dashboard",
   description: "Dashboard para plataforma de estudos médicos MEDBRAVE",
+  icons: {
+    icon: '/logo_transparente.png',
+    apple: '/logo_transparente.png',
+  },
 };
 
 export default function RootLayout({
