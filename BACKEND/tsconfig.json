@@ -42,14 +42,7 @@
     ]
   },
   "include": [
-    "src/**/*",
-    "services/**/*",
-    "validators/**/*",
-    "errors/**/*",
-    "types/**/*",
-    "config/**/*",
-    "tests/**/*",
-    "index.ts"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
