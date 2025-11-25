@@ -10,9 +10,21 @@
  * @module lib/services/supabaseAuthService
  */
 
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import type { User, AuthResult, BackendUserData } from '@/lib/types/auth';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
+
+// Cliente Supabase singleton
+let supabaseClient: ReturnType<typeof createClient> | null = null;
+
+function getSupabase() {
+  if (!supabaseClient) {
+    supabaseClient = createClient();
+  }
+  return supabaseClient;
+}
+
+const supabase = getSupabase();
 
 /**
  * Duração do cache de tokens em milissegundos (50 minutos)
@@ -125,10 +137,19 @@ class SupabaseAuthService {
    */
   async loginWithGoogle(userId?: string): Promise<void> {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      // Garantir que estamos no browser
+      if (typeof window === 'undefined') {
+        throw new Error('Login com Google só pode ser feito no browser');
+      }
+
+      const redirectUrl = `${window.location.origin}/auth/callback`;
+      console.log('[Auth Service] Iniciando login com Google, redirect:', redirectUrl);
+
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: process.env.NEXT_PUBLIC_REDIRECT_URL || `${window.location.origin}/auth/callback`,
+          redirectTo: redirectUrl,
+          skipBrowserRedirect: false,
           ...(userId && {
             queryParams: { user_id: userId }
           })
@@ -136,9 +157,13 @@ class SupabaseAuthService {
       });
 
       if (error) {
+        console.error('[Auth Service] Erro no OAuth:', error);
         throw new Error(this.getSupabaseErrorMessage(error.message));
       }
+
+      console.log('[Auth Service] OAuth iniciado com sucesso, URL:', data.url);
     } catch (error) {
+      console.error('[Auth Service] Erro ao iniciar login com Google:', error);
       throw error;
     }
   }
