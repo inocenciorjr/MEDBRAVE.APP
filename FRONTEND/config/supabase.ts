@@ -11,7 +11,7 @@
  * @module config/supabase
  */
 
-import { createClient as createBrowserClient } from '@supabase/ssr';
+import { createBrowserClient } from '@supabase/ssr';
 
 /**
  * Cliente Supabase para uso em Client Components
