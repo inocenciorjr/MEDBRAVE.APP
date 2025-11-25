@@ -1,0 +1,1440 @@
+{
+  "metadata": {
+    "examName": "UFSC2020R3CM2 (UFSC 2020)",
+    "examYear": 2020,
+    "url": "source://1151",
+    "totalQuestions": 40,
+    "categorizedQuestions": 40,
+    "rewrittenComments": 39,
+    "processedAt": "2025-11-11T16:46:19.833Z",
+    "jobId": "batch-1762861546523-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "fee66c04-9df7-4597-afc5-d7cf9726e34b"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Considere um paciente masculino, 51 anos, com diagnóstico prévio de cardiopatia com fração de eje- ção do ventrículo esquerdo de 36%. Foi admitido na unidade de terapia intensiva há 2 dias por quadro de sepse de foco cutâneo devido a celulite em membro inferior direito, com necessidade de intubação oro- traqueal e ventilação mecânica invasiva. O paciente evoluiu com melhora progressiva dos parâmetros laboratoriais e hemodinâmicos, atingindo critérios de estabilidade clínica. Na manhã de hoje apresentou bom despertar e concluiu 30 minutos de teste de respiração espontânea com pressão de suporte de 5c mH2O e pressão expiratória final de 5 cmH2O, sem apresentar sinais de intolerância. O paciente foi então extubado e recebeu oxigênio suplementar em cateter a 2 L/min. Aproximadamente 30 minutos após a extubação, o paciente evoluiu com queixa de dispneia intensa e ao exame apresentava frequência respiratória de 38 irpm, esforço respiratório moderado, saturação de oxigênio de 83%, aumento da frequên- cia cardíaca para 145 bpm e hipertensão arterial de 165/86mmHg. A ausculta pulmonar que era normal antes da extubação apresenta agora estertores finos e roncos difusos bilateralmente. Assinale a alternativa correta com relação ao caso.",
+      "alternativas": [
+        "A retirada da ventilação por pressão positiva causa aumento da pós-carga do ventrículo direito e consequente edema pulmonar agudo.",
+        "A retirada da ventilação por pressão positiva aumenta a pré e a pós-carga do ventrículo esquerdo, podendo desencadear edema pulmonar agudo.",
+        "A retirada da ventilação por pressão positiva causa regurgitação mitral aguda, podendo desencadear edema pulmonar agudo.",
+        "A retirada da ventilação por pressão positiva e a obstrução laríngea apresentada causam negativação excessiva da pressão intratorácica, podendo desencadear edema pulmonar agudo.",
+        "A retirada da ventilação por pressão positiva ocasiona o fechamento das médias vias aéreas, com aumento do componente resistivo do trabalho respiratório e consequente desconforto respiratório."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFSC avalia seu conhecimento sobre as consequências hemodinâmicas da retirada da ventilação mecânica em pacientes com disfunção cardíaca.</strong></p><p><strong>Competência avaliada:</strong> Compreensão dos efeitos cardiovasculares da pressão positiva intermitente e os riscos da extubação em cardiopatas.</p><p><strong>O caso clínico apresenta:</strong> Paciente de 51 anos com cardiopatia (FEVE 36%), melhoria de sepse, extubação bem-sucedida inicial, mas evolução dramática 30 minutos após com dispneia intensa, hipoxemia severa (83%), taquicardia (145 bpm), hipertensão arterial e estertores pulmonares bilaterais.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> A ventilação por pressão positiva realmente reduz a pós-carga do ventrículo direito, mas o edema pulmonar pós-extubação neste contexto está mais relacionado ao efeito sobre o ventrículo ESQUERDO.</p><p><strong>B) CORRETA:</strong> A pressão positiva intermitente funciona como \"bombinha\" para o coração esquerdo: durante a inspiração, aumenta a pressão intratorácica, reduzindo a diferença entre a pressão da aorta e o ventrículo esquerdo (pós-carga), e aumentando o retorno venoso ao átrio direito (pré-carga). Com FEVE de 36%, o coração esquerdo está comprometido e não consegue manter o débito adequado quando essa \"ajuda\" é removida.</p><p><strong>C) INCORRETA:</strong> Não há mecanismo direto que explique regurgitação mitral aguda pela retirada da pressão positiva. Os estertores e a hipoxemia são sugestivos de edema pulmonar, não de regurgitação.</p><p><strong>D) INCORRETA:</strong> Embora possa haver alguma contribuição da esforço inspiratório na negativação da pressão intratorácica, o mecanismo principal não é obstrução laríngea (que não foi mencionada).</p><p><strong>E) INCORRETA:</strong> Embora possa haver algum aumento no trabalho respiratório, o quadro é muito mais compatível com edema pulmonar agudo do que com desconforto respiratório simples.</p><p><strong>Veredito final:</strong> <strong>Resposta correta é B.</strong> A retirada da pressão positiva Remove a \"bombinha\" cardiovascular que estava sustendo o débito cardíaco comprometido, precipitando edema pulmonar agudo por falência ventricular esquerda em paciente já predisposto.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "As artérias e arteríolas intracranianas apresentam um mecanismo de autorregulação para manter um fluxo sanguíneo cerebral constantemente adequado às suas demandas metabólicas. Em situações fisiológicas, o fluxo sanguíneo é mantido relativamente constante com variações da pressão arterial média dentro de certos limiares. Dessa maneira, uma queda súbita da pressão arterial média pode ocasionar baixo fluxo cerebral e uma elevação pressórica de instalação aguda pode acarretar edema cerebral, se ultrapassarem esses limiares. Entretanto, os limiares pressóricos de autorregulação do fluxo sanguíneo cerebral estão aumentados em pacientes cronicamente hipertensos. Com base nas informações do enunciado, assinale a alternativa correta.",
+      "alternativas": [
+        "É segura a normalização dos níveis pressóricos em paciente com pressão arterial de 210/95 mmHg se ele estiver assintomático.",
+        "A pressão arterial deve ser normalizada em todas as emergências hipertensivas.",
+        "O enunciado explica a importância do tratamento anti-hipertensivo na prevenção de eventos cardiovasculares.",
+        "São necessários níveis pressóricos que ultrapassem o limiar de autorregulação do fluxo sanguíneo cerebral para que se caracterize uma emergência hipertensiva.",
+        "A redução excessiva dos níveis pressóricos em pacientes com emergências hipertensivas traz o risco de sintomas ou injúria neurológica por baixo fluxo sanguíneo cerebral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da UFSC avalia seu conhecimento sobre autorregulação cerebral e manejo de emergências hipertensivas.</strong></p><p><strong>Competência avaliada:</strong> Compreensão do conceito de limiares de autorregulação cerebral e a necessidade de cautela no tratamento da hipertensão arterial em pacientes cronicamente hipertensos.</p><p><strong>O enunciado estabelece dois pontos fundamentais:</strong> (1) Existe um sistema de autorregulação que mantém fluxo cerebral constante dentro de certos limiares pressóricos; (2) Em hipertensos crônicos, esses limiares estão DESLOCADOS PARA CIMA.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Normalização agressiva em hipertenso crônico assintomático é perigosa. O limiar inferior de autorregulação está mais alto, então níveis \"normais\" podem representar HIPOPERFUSÃO cerebral.</p><p><strong>B) INCORRETA:</strong> O tratamento deve ser GRADUAL e CAUTELOSO, não \"normalização imediata\" em todas as emergências hipertensivas.</p><p><strong>C) INCORRETA:</strong> O enunciado não fala sobre prevenção cardiovascular em longo prazo, mas sobre mecanismos fisiológicos de autorregulação.</p><p><strong>D) INCORRETA:</strong> Emergência hipertensiva se caracteriza pela PRESENÇA de lesão em órgãos-alvo, não pelo fato de ultrapassar limiares de autorregulação.</p><p><strong>E) CORRETA:</strong> Esta é a aplicação clínica crucial do conceito de autorregulação: em hipertensos crônicos, o cérebro está adaptado a pressões mais altas. Reduzir demasiado a pressão pode causar hipoperfusão cerebral, traduzindo-se em sintomas neurológicos ou injúria.</p><p><strong>Veredito final:</strong> <strong>Resposta correta é E.</strong> O conceito de \"curva de autorregulação deslocada\" é fundamental no manejo da hipertensão: o que é \"pressão normal\" para uma pessoa pode ser \"hipotensão cerebral\" para um hipertenso crônico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Pacientes intoxicados frequentemente necessitam de manejo das vias aéreas. Assinale a alternativa com a(s) substância(s) que acarreta(m) o maior risco de hipoxemia durante a intubação orotraqueal.",
+      "alternativas": [
+        "Lítio",
+        "Tricíclicos",
+        "Antiepilépticos",
+        "Organofosforados",
+        "Benzodiazepínicos"
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFSC avalia seu conhecimento sobre riscos respiratórios específicos durante intubação em intoxicações.</strong></p><p><strong>Competência avaliada:</strong> Identificação de substâncias que causam maior risco de hipoxemia durante a intubação orotraqueal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Lítio - INCORRETA:</strong> Risco principal é neurotoxicidade (tremores, confusão, convulsões), mas não predispõe especificamente a hipoxemia durante intubação.</p><p><strong>B) Tricíclicos - INCORRETA:</strong> Causam arritmias e hipotensão, mas o risco respiratório não é o principal durante intubação.</p><p><strong>C) Antiepilépticos - INCORRETA:</strong> Podem causar depressão do SNC, mas não há risco específico de hipoxemia durante o procedimento de intubação.</p><p><strong>D) Organofosforados - CORRETA:</strong> Causam SÍNDROME COLINÉRGICA com broncoconstrição, hipersecreção brônquica, fasciculações musculares e fadiga muscular respiratória. Durante a intubação, a hipersecreção + broncoconstrição + possível fadiga diafragmática criam um cenário de ALTO RISCO para hipoxemia severa.</p><p><strong>E) Benzodiazepínicos - INCORRETA:</strong> Causam depressão do SNC, mas sem mecanismo específico que predispõe a hipoxemia DURANTE a intubação (que é um procedimento de minutos).</p><p><strong>Veredito final:</strong> <strong>Resposta correta é D.</strong> Os organofosforados são únicos por causarem simultaneamente broncoconstrição, hipersecreção e fraqueza muscular respiratória, criando o cenário de maior risco para hipoxemia durante a intubação.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente masculino, 55 anos, previamente hipertenso, foi há 5 dias submetido a apendicectomia complicada pela presença de coleção purulenta local. Na enfermaria iniciou há 2 dias com dispneia progressiva. No momento da avaliação o paciente relata dispneia em repouso e ortopneia, mas nega tosse, expectoração e febre. Ao exame apresenta frequência respiratória de 38 irpm, tiragens intercostais e uso discreto de musculatura respiratória acessória, saturação de oxigênio de 95% com oferta de oxigênio suplementar em máscara a 8 L/min, frequência cardíaca de 98bpm e pressão arterial de 143/82 mmHg e sem edema em membros inferiores. A ausculta cardíaca não apresentava alterações e a ausculta pulmonar apresentava estertores finos bilaterais. Pela demora na realização do RX de tórax, você realiza uma ultrassonografia à beira do leito. O ultrassom pulmonar mostra a presença de deslizamento pleural e de múltiplas linhas B bilateralmente nas regiões torácicas anteriores e laterais, além de derrame pleural bilateral de pequeno volume. Na ecocardiografia à beira do leito, o ventrículo esquerdo apresenta-se visualmente com uma função sistólica preservada e a fração de ejeção foi estimada em 68%; não foram visualizadas anormalidades valvares. Quanto a outros achados na ecografia e Doppler cardíacos que ajudem no diagnóstico diferencial, assinale a alternativa correta.",
+      "alternativas": [
+        "Tanto uma relação entre os picos de velocidade das ondas E e A abaixo de 1,0, como uma veia cava inferior com diâmetro acima de 2,0 cm são indica- tivos de aumento pressórico na diástole do ventrículo esquerdo e sugerem que o edema pulmonar seja cardiogênico.",
+        "Tanto uma veia cava inferior com diâmetro de 1,5 cm como uma relação entre os picos de velocidades das ondas E e A acima de 2,0 são indicativos de pressão normal na diástole do ventrículo esquerdo e sugerem síndrome do desconforto respiratório agudo como causa do edema pulmonar.",
+        "Tanto uma relação entre os picos de velocidades das ondas E e A acima de 2,0, como uma relação entre o pico de velocidade das ondas E e E' acima de 15,0 são indicativos de aumento pressórico na diástole do ventrículo esquerdo e sugerem que o edema pulmonar seja cardiogênico.",
+        "Um ventrículo esquerdo com fração de ejeção normal é o suficiente para excluir edema pulmonar cardiogênico e é forte indicativo de síndrome do desconforto respiratório agudo.",
+        "Tanto uma veia cava inferior com diâmetro acima de 2,0 cm, como uma pressão sistólica da artéria pulmonar estimada em 45 mmHg excluem síndrome do desconforto respiratório agudo e indicam edema pulmonar cardiogênico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFSC avalia seu conhecimento sobre uso de ultrassom e ecocardiografia para diferenciar edema pulmonar cardiogênico de SDRA.</strong></p><p><strong>Competência avaliada:</strong> Interpretação de parâmetros ecocardiográficos para diagnóstico diferencial de síndromes de dispneia aguda.</p><p><strong>Contexto clínico:</strong> Paciente de 55 anos, pós-apendicectomia, evoluindo com dispneia progressiva, estertores finos bilaterais, ultrassom mostrando linhas B (sugestivo de edema alveolar), mas FEVE preservada (68%).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> E/A < 1,0 sugere disfunção diastólica (coração rígido), mas veia cava inferior > 2,0 cm sugere congestão venosa. A combinação é CONFUSÃO diagnóstica - não é dupla indicação de aumento de pressão diastólica do VE.</p><p><strong>B) INCORRETA:</strong> Veia cava de 1,5 cm + E/A > 2,0: primeira indica pressão diastólica NORMAL, segunda indica pressão diastólica ELEVADA. Contradição interna.</p><p><strong>C) CORRETA:</strong> E/A > 2,0 (velocidade do fluxo mitral) + E/e' > 15,0 (velocidade do tecido miocárdico) são PARÂMETROS CONSOLIDADOS para hipertensão diastólica do ventrículo esquerdo. FEVE preservada não exclui edema cardiogênico!</p><p><strong>D) INCORRETA:</strong> Equívoco fundamental! FEVE preservada NÃO exclui edema pulmonar cardiogênico. Em muitos casos, o problema é a DIASTÓLICA (relaxamento comprometido), mantendo a função sistólica.</p><p><strong>E) INCORRETA:</strong> PSAP de 45 mmHg pode indicar hipertensão pulmonar primária, que pode ser resposta a SDRA, não exclusão dela. Veia cava > 2,0 cm sozinha não exclui SDRA.</p><p><strong>Veredito final:</strong> <strong>Resposta correta é C.</strong> A combinação E/A > 2,0 e E/e' > 15,0 são indicadores fortes de disfunção diastólica com pressão diastólica elevada, explicando o edema pulmonar mesmo com FEVE preservada.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Considere um paciente masculino, 26 anos, motociclista, vítima de acidente moto versus carro com fratura exposta de fêmur direito. Trazido à emergência pela equipe do SAMU, encontra-se consciente e queixa-se de dor intensa em coxa direita, região direita da bacia e abdome. Ao exame apresenta pressão arterial de 75/48 mmHg, frequência cardíaca de 138 bpm, frequência respiratória de 25 irpm com saturação de oxigênio de 95% em ar ambiente. Ausculta cardiotorácica sem particularidades. Abdome doloroso à palpação, com contração voluntária à dor. Os pulsos distais em membros inferiores estavam palpáveis. Logo após o exame clínico, você realiza a ultrassonografia à beira do leito com o protocolo estendido do FAST (Focused Assessment with Sonography in Trauma). O exame mostra a presença de deslizamento pleural nas regiões anteriores do tórax, ausência de coleções pleurais nas regiões póstero-basais do tórax, ausência de coleções pericárdicas na janela cardíaca subcostal e presença de imagem anecoicas entre o baço e o rim esquerdo e também entre o fígado e o rim direito. Com relação às informações do enunciado 1, assinale a alternativa CORRETA.",
+      "alternativas": [
+        "A manutenção de uma hipotensão permissiva tolerando uma pressão arterial média de 60 mmHg é adequada até que seja realizado o tratamento hemostático das injúrias.",
+        "Deve-se realizar reposição volêmica agressiva para corrigir qualquer nível de hipotensão antes de realizar a laparotomia exploradora.",
+        "A administração do ácido tranexâmico está contraindicada nesse paciente pelo alto risco de complicações trombóticas.",
+        "O paciente deve ser submetido imediatamente à laparotomia exploradora com correção completa de todas as injúrias e também realizar a redução e fixação definitiva da fratura.",
+        "A hipotensão é uma indicação de drenagem torácica bilateral nesse paciente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFSC avalia seu conhecimento sobre manejo de choque hemorrágico e conceito de hipotensão permissiva.</strong></p><p><strong>Competência avaliada:</strong> Aplicação do conceito de \"damage control surgery\" e hipotensão permissiva no trauma hemorrágico.</p><p><strong>Análise do caso:</strong> Motociclista jovem, politraumatizado, hipotenso (75/48), taquicárdico (138 bpm), FAST positivo para hemoperitoneo (líquido livre peri-hepático e periesplênico).</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> Hipotensão permissiva significa manter PAM de 60-65 mmHg até o controle de hemorragia. Objetivos: (1) Preservar perfusão renal e cerebral; (2) Evitar coagulopatia dilucional; (3) Evitar \"lavar\" o coágulo formado.</p><p><strong>B) INCORRETA:</strong> Reposição volêmica agressiva pode: (1) Aumentar pressão hidrostática e \"lavar\" coágulos; (2) Causar hemodiluição e coagulopatia; (3) Interferir na formação de coágulos estáveis. É a famosa \"página virada\" da medicina de emergência.</p><p><strong>C) INCORRETA:</strong> Ácido tranexâmico é INDICADO em trauma com hemorragia, desde que administrado nas primeiras 3 horas. Contraindicação seria risco trombótico muito alto, não presença de hemorragia.</p><p><strong>D) INCORRETA:</strong> O princípio de \"damage control\" é exatamente o contrário: fazer apenas o essencial (controle de hemorragia) e adiar procedimentos definitivos para segunda operação quando o paciente estiver mais estável.</p><p><strong>E) INCORRETA:</strong> Hipotensão sozinha não indica drenagem torácica. Estabilização da volemia e controle da hemorragia devem vir primeiro.</p><p><strong>Veredito final:</strong> <strong>Resposta correta é A.</strong> A hipotensão permissiva é um pilar fundamental do manejo moderno do trauma hemorrágico: não tente \"normalizar\" a pressão até que a hemorragia esteja controlada.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoSecundaria",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Considere um paciente masculino, 26 anos, motociclista, vítima de acidente moto versus carro com fratura exposta de fêmur direito. Trazido à emergência pela equipe do SAMU, encontra-se consciente e queixa-se de dor intensa em coxa direita, região direita da bacia e abdômen. Ao exame apresenta pressão arterial de 75/48 mmHg, frequência cardíaca de 138 bpm, frequência respiratória de 25 irpm com saturação de oxigênio de 95% em ar ambiente. Ausculta cardiotorácica sem particularidades. Abdômen doloroso à palpação, com contração voluntária à dor. Os pulsos distais em membros inferiores estavam palpáveis. Logo após o exame clínico, você realiza a ultrassonografia à beira do leito com o protocolo estendido do FAST (Focused Assessment with Sonography in Trauma). O exame mostra a presença de deslizamento pleural nas regiões anteriores do tórax, ausência de coleções pleurais nas regiões póstero-basais do tórax, ausência de coleções pericárdicas na janela cardíaca subcostal e presença de imagem anecoicas entre o baço e o rim esquerdo e também entre o fígado e o rim direito. Assinale a alternativa correta com os achados esperados na ecocardiografia à beira do leito desse paciente do enunciado 1.",
+      "alternativas": [
+        "Ventrículo esquerdo com contratilidade normal e veia cava inferior com diâmetro de 1,8 cm.",
+        "Ventrículo esquerdo hipocinético e veia cava inferior com diâmetro de 2,2 cm.",
+        "Ventrículo esquerdo hipercinético e veia cava inferior com diâmetro de 2,2 cm.",
+        "Ventrículo esquerdo com contratilidade normal e dilatação do ventrículo direito.",
+        "Ventrículo esquerdo hipercinético e veia cava inferior com diâmetro menor do que 1 cm e colapso inspiratório total."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFSC 2020 avalia sua capacidade de integrar achados do protocolo FAST com a avaliação ecocardiográfica em pacientes com choque hipovolêmico.</p><p><strong>O paciente apresenta quadro clínico de choque hipovolêmico grave:</strong> fratura exposta de fêmur, PA de 75/48 mmHg, FC de 138 bpm, respiração compensatória (25 irpm). O FAST demonstrou líquido livre peri-splênico e peri-hepático, confirmando hemorragia intra-abdominal.</p><p>No choque hipovolêmico, ocorre <strong>compensação cardiovascular inicial:</strong></p><p>• O ventrículo esquerdo становится hipercinético devido à ativação simpática<br>• A veia cava inferior (VCI) torna-se colapsada devido à hipovolemia</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) VE normal + VCI 1,8cm:</strong> VCI não colapsada sugere hipovolemia ausente ou já corrigida.</p><p><strong>B) VE hipocinético + VCI 2,2cm:</strong> Padrão de IC esquerda ou choque cardiogênico, não compatível com hipovolemia.</p><p><strong>C) VE hipercinético + VCI 2,2cm:</strong> VCI dilatada indica excesso de volume, incompatível com choque hipovolêmico.</p><p><strong>D) VE normal + dilatação VD:</strong> Padrão de sobrecarga de VD, não encontrado em hipovolemia pura.</p><p><strong>E) VE hipercinético + VCI &lt;1cm com colapso inspiratório:</strong> <strong>CORRETO.</strong> Hipercinetismo ventricular esquerdo compensatório e VCI colapsada são achados patognomônicos de choque hipovolêmico.</p><p><strong>A resposta correta é E.</strong> Este padrão ecocardiográfico é clássico no choque hipovolêmico inicial, indicando necessidade urgente de ressuscitação volêmica agressiva.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent_1",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_AvaliacaoCardiovascular",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia_Choque_ChoqueEtiologiaDoChoque"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Considere uma paciente feminina, 16 anos, previamente hígida, há aproximadamente 1 mês passou a apresentar poliúria, polidipsia, aumento do apetite e perda de peso de aproximadamente 5 kg. Há 1 dia iniciou com mal-estar intenso, dispneia e confusão mental. Ao exame físico apresenta-se consciente, sem rigidez de nuca, temperatura axilar de 36,9°C, frequência respiratória = 28 irpm, saturação de oxigênio de 97% em ar ambiente, frequência cardíaca de 132 bpm, pressão arterial de 80/52 mmHg em posição ortostática e de 101/62 mmHg em posição supina. Ausculta cardiopulmonar sem anormalidades e abdômen sem dor a palpação. Entre os exames laboratoriais com resultado imediato, a glicemia capilar era de 445 mg/ dL, o lactato arterial era de 1,1 mMol/dL e a gasometria apresentava os seguintes parâmetros: pH = 7,02; PCO2 = 15 mmHg; PO2 = 108 mmHg; SatO2 = 97%; bicarbonato = 6 mMol/dL e excesso de base = -22. Assinale a alternativa correta com relação ao caso.",
+      "alternativas": [
+        "O exame clínico permite inferir que a hipotensão arterial é causada por hipovolemia.",
+        "A presença de um débito urinário adequado exclui a necessidade de reposição volêmica nessa paciente.",
+        "A ecocardiografia à beira do leito é essencial para o diagnóstico de hipovolemia nessa paciente.",
+        "É necessário a avaliação hemodinâmica com cateter de artéria pulmonar para o diagnóstico de hipovolemia nessa paciente.",
+        "A hipovolemia dessa paciente deve-se principalmente à baixa ingesta de líquidos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia sua capacidade de reconhecer as bases fisiopatológicas da cetoacidose diabética (CAD) e suas repercussões hemodinâmicas.</p><p><strong>O quadro clínico é característico de CAD:</strong></p><p>• História de polidipsia, poliúria, perda de peso e aumento do apetite<br>• Glicemia 445 mg/dL<br>• Acidose metabólica grave: pH 7,02, HCO3 6 mEq/L, PCO2 15 mmHg<br>• Compensação respiratória adequada (Kussmaul)</p><p><strong>A hipotensão arterial tem causa hipovolêmica:</strong> A hiperglicemia causa diurese osmótica maciça, levando a <strong>desidratação intracelular e extracelular</strong>. O lactato normal (1,1 mMol/L) exclui hipoperfusão tecidual significativa.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Hipotensão causada por hipovolemia:</strong> <strong>CORRETO.</strong> Mecanismo fundamental na CAD - diurese osmótica severa.</p><p><strong>B) Débito urinário adequado exclui reposição volêmica:</strong> <strong>INCORRETO.</strong> Embora haja diurese, é inadequada (perda excessiva de água e eletrólitos).</p><p><strong>C) Ecocardiografia essencial para diagnóstico de hipovolemia:</strong> <strong>INCORRETO.</strong> O diagnóstico é clínico-laboratorial (hipotensão, taquicardia, mucosas secas).</p><p><strong>D) Cateter de artéria pulmonar necessário:</strong> <strong>INCORRETO.</strong> Hipovolemia é diagnosticada clinicamente sem necessidade de métodos invasivos.</p><p><strong>E) Hipovolemia por baixa ingesta:</strong> <strong>INCORRETO.</strong> O mecanismo principal é a diurese osmótica, não restrição hídrica.</p><p><strong>A resposta correta é A.</strong> A hipovolemia na CAD é predominantemente causada pela diurese osmótica, não por baixa ingestão de líquidos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo1Dm1",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica_DiabetesFisiopatogenia",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica_DiabetesComplicacoesDaCetoacid"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Assinale a alternativa correta com relação às hemorragias digestivas altas.",
+      "alternativas": [
+        "Todos os pacientes devem ser submetidos à endoscopia digestiva alta de urgência.",
+        "Em pacientes cirróticos são sempre causada por varizes esofágicas ou gástricas.",
+        "É possível identificar pacientes com baixa mortalidade e sem indicação de intervenção médica como transfusão sanguínea, endoscopia ou cirurgia.",
+        "O tratamento com balão esofágico está indicado na presença de sinais de hepatopatia crônica.",
+        "Os vasoconstrictores esplâncnicos estão recomendados inclusive nas hemorragias não varicosas."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFSC 2020 testa seu conhecimento sobre estratégias de triagem e estratificação de risco nas hemorragias digestivas altas (HDA).</p><p><strong>O manejo atual das HDA baseia-se em:</strong></p><p>• Estratificação de risco baseada em critérios clínico-laboratoriais<br>• Identificação de pacientes que podem ser manejados ambulatorialmente<br>• Protocolos de urgency tailoring</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Todos devem fazer endoscopia urgente:</strong> <strong>INCORRETO.</strong> Apenas pacientes com alto risco de sangramento ativo, instabilidade hemodinâmica ou comorbidades graves necessitam endoscopia urgente.</p><p><strong>B) Sempre por varizes em cirróticos:</strong> <strong>INCORRETO.</strong> Úlceras pépticas, gastrites, síndrome de Mallory-Weiss também são causas comuns em cirróticos.</p><p><strong>C) Identificar pacientes de baixa mortalidade sem intervenção:</strong> <strong>CORRETO.</strong> Escore de Rockall e scores similares permitem identificar pacientes estáveis que podem evitar internação ou procedimentos invasivos.</p><p><strong>D) Balão esofágico com sinais de hepatopatia:</strong> <strong>INCORRETO.</strong> Balões (Sengstaken-Blakemore) são para HDA varicosas refratárias, não baseados na presença de hepatopatia.</p><p><strong>E) Vasoconstrictores em HDA não varicosa:</strong> <strong>INCORRETO.</strong> Somente indicados em HDA varicosas. Em não varicosas, apenas PPI.</p><p><strong>A resposta correta é C.</strong> A estratificação de risco é fundamental para otimizar recursos e identificar pacientes que podem ser manejados conservadoramente sem procedimentos invasivos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos_ConducaoClinica"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Assinale a alternativa correta quanto à profilaxia do tromboembolismo venoso.",
+      "alternativas": [
+        "Heparina não fracionada ou de baixo peso molecular deve ser administrada em todo paciente internado que não tenha contraindicação.",
+        "Heparina não fracionada em dose profilática está contraindicada em pós-operatório de cirurgia vascular.",
+        "Heparina não fracionada em dose profilática está contraindicada nos dias em que o paciente realiza hemodiálise.",
+        "Heparina não fracionada ou de baixo peso molecular deve ser administrada em todo pós-operatório de cirurgia de quadril na ausência de contraindicação.",
+        "Tanto a heparina não fracionada como a de baixo peso molecular estão contraindicadas em pacientes acima de 70 anos."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia seu conhecimento sobre profilaxia de tromboembolismo venoso (TEV) e indicações específicas por tipo de procedimento cirúrgico.</p><p><strong>Diretrizes atuais (ACCP 2024):</strong> A profilaxia de TEV deve ser individualizada baseado no risco tromboembólico versus risco hemorrágico de cada procedimento.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Todos os pacientes internos sem contraindicação:</strong> <strong>INCORRETO.</strong> Apenas aqueles com risco tromboembólico moderado a alto. Pacientes de baixo risco podem não necessitar profilaxia farmacológica.</p><p><strong>B) Contraindicado pós-cirurgia vascular:</strong> <strong>INCORRETO.</strong> Na verdade, pacientes vasculares têm risco tromboembólico elevado e frequentemente necessitam profilaxia.</p><p><strong>C) Contraindicado durante hemodiálise:</strong> <strong>INCORRETO.</strong> Heparina profilática pode ser usada em pacientes renais crônicos, desde que monitorando função renal e risco hemorrágico.</p><p><strong>D) Cirurgia de quadril sem contraindicação:</strong> <strong>CORRETO.</strong> Cirurgia de quadril/pelve tem risco tromboembólico muito alto (até 80% sem profilaxia) e há forte evidência para profilaxia routine.</p><p><strong>E) Contraindicado acima de 70 anos:</strong> <strong>INCORRETO.</strong> Idade avançada é fator de risco adicional que justifica profilaxia, não contraindicação.</p><p><strong>A resposta correta é D.</strong> A artroplastia de quadril é procedimento de altíssimo risco tromboembólico e recomenda-se profilaxia rotineira com heparina, desde que não haja contraindicação hemorrágica específica.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ProfilaxiaDoTromboembolismoVen",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ManejoPerioperatorioDoPaciente",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Com relação à abordagem do paciente em coma, é correto afirmar:",
+      "alternativas": [
+        "A ausência de assimetria no exame neurológico descarta a possibilidade de lesão intracraniana.",
+        "Na presença de assimetria do exame neurológico, está indicada a realização de tomografia computadorizada de crânio.",
+        "Uma lesão encefálica supratentorial localizada pode ser causa de coma mesmo na ausência de hipertensão intracraniana ou status convulsivo.",
+        "A instalação súbita do coma fala a favor de uma causa tóxico-metabólica.",
+        "O rebaixamento gradual do nível de consciência é característico do coma causado por lesão cérebro vascular."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFSC 2020 testa seus conhecimentos sobre a abordagem diagnóstica do paciente em coma e o papel da neuroimagem no trauma craneoencefálico.</p><p><strong>A avaliação do coma deve ser sistemática:</strong></p><p>• Nível de consciência (Glasgow)<br>• Padrão respiratório<br>• Pupilas e função craniana<br>• Exame motor e reflexes<br>• Sinais de irritação meníngea</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Ausência de assimetria descarta lesão intracraniana:</strong> <strong>INCORRETO.</strong> Lesões difusas (hipoxemia, encefalopatia) podem causar coma sem assimetrias focais.</p><p><strong>B) Tomografia com assimetria neurológica:</strong> <strong>CORRETO.</strong> Assimetria indica possível lesão estrutural que requer TC urgente para definir conduta.</p><p><strong>C) Lesão supratentorial sem aumento de PIC pode causar coma:</strong> <strong>CORRETO.</strong> Lesões focais extensas podem causar coma por compressão do sistema de ativação reticular sem necessariamente elevar PIC.</p><p><strong>D) Instalação súbita fala por causa tóxico-metabólica:</strong> <strong>INCORRETO.</strong> Causas vasculares (AVC, hemorragia) tendem a ter instalação súbita. Causas tóxicas podem ter início gradual.</p><p><strong>E) Rebaixamento gradual é de causa vascular:</strong> <strong>INCORRETO.</strong> AVC típicos têm instalação súbita. Rebaixamento gradual sugere tumor, abscesso ou causas metabólicas.</p><p><strong>As respostas B e C estão corretas.</strong> No entanto, considerando que a banca escondeu gabarito C, mas a resposta oficial marcada é B, ambas são técnicamente corretas segundo diretrizes. A questão busca testar seu entendimento que assimetria neurológica indica necessidade de TC urgente para avaliar lesão estrutural.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia_AnatomiaFisiologiaESemiologiaN",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_1"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "No traumatismo cranioencefálico, uma das principais causas de dano neurológico secundário é a hipertensão intracraniana. Assinale a alternativa correta, em relação ao assunto.",
+      "alternativas": [
+        "O diâmetro da bainha do nervo óptico, aferido por ultrassonografia, acima de 0.58 cm, está associado com hipertensão intracraniana.",
+        "Está indicada a monitorização de pressão intracraniana nos pacientes com escala de coma de Glasgow < 12 e presença de lesão encefálica na tomografia de crânio.",
+        "A hiperventilação é terapia de primeira linha no tratamento da hipertensão intracraniana.",
+        "A hipotermia terapêutica deve ser realizada em todos os pacientes com traumatismo cranioencefálico grave e hipertensão intracraniana para neuroproteção.",
+        "A drenagem de líquor através de derivação ventricular externa está indicada apenas na hipertensão intracraniana refratária pelo elevado risco de ventriculite."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC 2020 aborda aspectos fundamentais do manejo da hipertensão intracraniana no traumatismo cranioencefálico.</strong> O objetivo é testar seu conhecimento sobre critérios diagnósticos e terapêuticos padronizados.</p><p><strong>A resposta correta é a alternativa A.</strong> O diâmetro da bainha do nervo óptico > 0,58 cm é um marcador validado para hipertensão intracraniana, com boa sensibilidade e especificidade diagnóstica.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa B:</strong> INCORRETA. A monitorização de pressão intracraniana está indicada em pacientes com TCE grave e tomografia anormal, MAS também em outros cenários como TCE grave com tomografia normal mas com fatores de risco (idade >40 anos, hipotensão arterial, descerebração). A indicação não se resume apenas ao GCS < 12.</p><p><strong>Alternativa C:</strong> INCORRETA. A hiperventilação é uma medida de emergência para reduzir PIC de forma aguda, mas NÃO é terapia de primeira linha. É uma medida temporária até implementação de terapias definitivas (cirurgia, hiperosmoterapia, sedoanalgesia).</p><p><strong>Alternativa D:</strong> INCORRETA. A hipotermia terapêutica NÃO é indicada em todos os pacientes com TCE grave. Seu uso é controverso e deve ser individualizado. Diretrizes atuais recomendam normotermia como padrão.</p><p><strong>Alternativa E:</strong> INCORRETA. A drenagem de líquor através de derivação ventricular externa está indicada para controle da PIC em casos refratários, mas não apenas nesses casos. Pode ser usada profilaticamente ou precocemente em pacientes de alto risco.</p><p><strong>Conclusão:</strong> A questão avalia conhecimento sobre métodos diagnósticos validados para HIC, sendo a ultrassonografia do nervo óptico uma ferramenta prática e confiável para identificação precoce desta complicação vital no TCE.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Paciente feminina, 48 anos, apresenta quadro de cefaleia de início súbito, há 3 horas, de forte intensidade, associada a perda transitória do nível de consciência e sem déficit focal ao exame neurológico. Considerando o quadro clínico descrito, assinale a alternativa correta.",
+      "alternativas": [
+        "Ausência de sangramento na tomografia computadorizada de crânio descarta a possibilidade de hemorragia subaracnóidea.",
+        "Sendo confirmado o diagnóstico de hemorragia subaracnóidea, a principal complicação nas primeiras 48 horas é vasoespasmo.",
+        "Devemos manter uma pressão arterial sistólica acima de 180 mmHg para preservar a pressão de perfusão e o fluxo sanguíneo cerebral.",
+        "Na ausência de hemoventrículo, a presença de sangue nas cisternas da base é fator de baixo risco para vasoespasmo.",
+        "Na ausência de sangue à tomografia computadorizada de crânio, persistindo a suspeição, devemos realizar punção lombar para descartar ou confirmar o diagnóstico de hemorragia subaracnóidea."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>O quadro clínico descrito caracteriza a clássica apresentação da hemorragia subaracnóidea: cefaleia súbita em raio de choque, loss of consciousness transitória e ausência de déficit focal.</strong> Esta questão da banca UFSC 2020 explora o protocolo diagnóstico e complicações precoces.</p><p><strong>A resposta correta é a alternativa E.</strong> Na suspeita de HSA com TC inicial normal, a punção lombar é fundamental para completar a investigação diagnóstica, pois pode detectar sangramento mínimo não visualizado na TC.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> INCORRETA. TC de crânio normal NÃO descarta HSA, especialmente nas primeiras 6-12 horas. O sangramento pode ser mínimo ou a TC pode serfalse negativo em casos de pequena quantidade de sangue.</p><p><strong>Alternativa B:</strong> INCORRETA. A principal complicação nas primeiras 48 horas da HSA é a recorrência do sangramento (rebleed), não o vasoespasmo. O vasoespasmo tipicamente ocorre entre dias 3-14.</p><p><strong>Alternativa C:</strong> INCORRETA. Após HSA confirmada, a pressão arterial sistólica deve ser mantida < 160 mmHg (alguns protocolos < 140) para prevenir rebleed. Pressão muito alta aumenta o risco de novo sangramento.</p><p><strong>Alternativa D:</strong> INCORRETA. Sangue nas cisternas da base (Fisher grade 1-2) ainda representa risco significativo para vasoespasmo. Na verdade, menores quantidades de sangue podem paradoxalmente indicar maior risco de vasoespasmo.</p><p><strong>Conclusão:</strong> O diagnóstico de HSA requer alta suspeição clínica e confirmação diagnóstica rigorosa. TC normal não exclui o diagnóstico - a punção lombar é essencial quando a suspeita clínica persiste.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "A monitorização neurológica multimodal é fundamental na abordagem do paciente neurocrítico. Assim, é CORRETO afirmar que:",
+      "alternativas": [
+        "Saturação de oxigênio do bulbo da jugular < 55% está associada com hiperemia cerebral.",
+        "Na monitorização, a presença do componente P1 > P2 na curva de pressão intracraniana indica redução da complacência encefálica.",
+        "Na presença de hipertensão intracraniana, o Doppler transcraniano evidencia uma redução do pico de velocidade sistólica e aumento da velocidade diastólica final.",
+        "No Doppler Transcraniano, a insonação da artéria cerebral média, evidenciando velocidade média < 30 cm/segundo, associado a velocidade diastólica final < 20 cm/seg e índice de pulsatilidade > 1.4, demonstra um padrão de hipoperfusão cerebral.",
+        "Desvio de linha média > 5 mm e/ou apagamento de cisternas da base na tomografia de crânio demonstra alteração moderada da complacência intracraniana."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão foca na monitorização neurológica multimodal, aspecto crucial na medicina intensiva neurológica moderna.</strong> A banca UFSC 2020 evalua conhecimento sobre interpretação de dados de monitorização para tomada de decisões terapêuticas.</p><p><strong>A resposta correta é a alternativa D.</strong> O padrão descrito no Doppler transcraniano caracteriza hipoperfusão cerebral: velocidades baixas (< 30 cm/s), fluxo diastólico reduzido (< 20 cm/s) e índice de pulsatilidade elevado (> 1,4).</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A:</strong> INCORRETA. Saturação jugular < 55% indica isquemia/hypoperfusão cerebral, não hiperemia. Hiperemia é associada com saturação > 75%.</p><p><strong>Alternativa B:</strong> INCORRETA. Componente P1 > P2 indica aumento da complacência, não redução. Na redução da complacência, observa-se P2 > P1 (trajeto descendente empinado).</p><p><strong>Alternativa C:</strong> INCORRETA. Na HIC, o Doppler mostra velocidades elevadas (especialmente diastólicas) indicando vasoespasmo. Não redução do pico sistólico e aumento diastólico - seria o oposto do padrão de vasoespasmo.</p><p><strong>Alternativa E:</strong> INCORRETA. Desvio de linha média > 5 mm e apagamento de cisternas indica alteração SEVERA da complacência, não moderada. Moderada seria quando ainda há preservação parcial das cisternas.</p><p><strong>Conclusão:</strong> A monitorização multimodal requer interpretação correta dos padrões fisiológicos. O diagnóstico de hipoperfusão cerebral através do Doppler transcraniano é fundamental para otimização da perfusão cerebral no neurocrítico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Assinale a alternativa CORRETA em relação ao diagnóstico de morte encefálica.",
+      "alternativas": [
+        "No Brasil, é necessária a realização de 2 exames clínicos e 1 teste de apneia.",
+        "No Brasil, é necessária a realização de 2 exames clínicos e 2 testes de apneia.",
+        "No Brasil, 1 dos exames clínicos deve obrigatoriamente ser realizado por um médico neurologista.",
+        "A presença de anisocoria exclui o diagnóstico de morte encefálica, pois denota ainda a presença de função encefálica.",
+        "Na ausência de 1 globo ocular estamos impossibilitados de realizar o diagnóstico de morte encefálica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>O diagnóstico de morte encefálica é um procedimento médico e legal rigoroso no Brasil.</strong> Esta questão da banca UFSC 2020 avalia conhecimento sobre os critérios técnicos estabelecidos pelo Conselho Federal de Medicina.</p><p><strong>A resposta correta é a alternativa A.</strong> Conforme a Resolução CFM nº 2.173/2017, são necessários 2 exames clínicos realizados por médicos diferentes e 1 teste de apneia.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa B:</strong> INCORRETA. A regulamentação atual exige 1 teste de apneia, não 2. A mudança da Resolução 1.346/91 para a Resolução 2.173/17 reduziu de 2 para 1 teste de apneia.</p><p><strong>Alternativa C:</strong> INCORRETA. NÃO é obrigatório que 1 exame seja realizado por neurologista. Pode ser qualquer médico com formação adequada, não necessariamente neurologista.</p><p><strong>Alternativa D:</strong> INCORRETA. Anisocoria pode estar presente na morte encefálica. O diagnóstico de morte encefálica não é excluído pela presença de anisocoria, pois os reflexos do tronco encefálico podem não estar totalmente ausentes na fase inicial.</p><p><strong>Alternativa E:</strong> INCORRETA. A ausência de globo ocular (enucleação, globo ocular cálculo) NÃO impede o diagnóstico de morte encefálica. Outros achados clínicos (ausência de reflexos de tronco, apneia) são suficientes para estabelecer o diagnóstico.</p><p><strong>Conclusão:</strong> O diagnóstico de morte encefálica no Brasil segue protocolos padronizados e rigorosos, sendo essencial conhecer os critérios exatos para aplicação correta na prática clínica e para autorização de doação de órgãos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "A parada cardíaca é uma das principais causas de perda de potencial doador. Desta forma é fundamental o manejo do potencial doador na unidade de terapia intensiva. Assinale a alternativa correta, em relação ao assunto.",
+      "alternativas": [
+        "Após infusão inicial de 30 ml/kg de cristaloide, uma variação de pressão de pulso > 5% indica necessidade de expansão volêmica.",
+        "Está indicado o uso de vasopressina sempre que o potencial doador necessitar de noradrenalina para estabilidade hemodinâmica.",
+        "A estratégia ventilatória recomendada consiste de utilização de volume corrente de 6 ml/kg de peso real e PEEP de 5 cmH20.",
+        "Deve-se instituir hipotermia terapêutica afim de melhorar o aproveitamento de órgãos como coração, pulmão e fígado.",
+        "A desmopressina não deve ser utilizada para controle da poliúria no diabetes insípido caso o potencial doador esteja recebendo vasopressina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>O manejo do potencial doador em UTI é fundamental para maximizar a captação de órgãos viáveis.</strong> Esta questão da banca UFSC 2020 aborda as estratégias específicas para otimização do potencial doador de múltiplos órgãos.</p><p><strong>A resposta correta é a alternativa B.</strong> A vasopressina deve ser sempre considerada no potencial doador que necessita de suporte vasopressor com noradrenalina, devido aos benefícios sobre a função cardíaca e preservação dos órgãos-alvo.</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A:</strong> INCORRETA. Variação de pressão de pulso > 10% (não 5%) indica necessidade de expansão volêmica. Variações de 5% não são consideradas significativas para decisão de fluidoterapia.</p><p><strong>Alternativa C:</strong> INCORRETA. A ventilação protetora para potencial doador utiliza volume corrente de 8 ml/kg (não 6 ml/kg) para otimização pulmonar. PEEP de 5 cmH2O está correta, mas o VC está errado.</p><p><strong>Alternativa D:</strong> INCORRETA. A hipotermia terapêutica NÃO é recomendada para melhorar aproveitamento de órgãos. O potencial doador deve ser mantido em normotermia (36-37°C) para melhor função orgânica.</p><p><strong>Alternativa E:</strong> INCORRETA. A desmopressina PODE ser usada junto com vasopressina para controle de poliúria. A combinação é frequentemente necessária em casos de diabetes insípido no doador.</p><p><strong>Conclusão:</strong> O manejo adequado do potencial doador requer estratégias específicas que diferem do manejo padrão do paciente crítico. A vasopressina é fundamental na hemodynamic optimization para preservação orgânica e viabilização de múltiplos órgãos para transplante.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Com relação às indicações e às estratégias para a transfusão de concentrados de hemácias em pacientes com hemorragia digestiva alta, assinale a alternativa correta.",
+      "alternativas": [
+        "A transfusão de concentrado de hemácias está indicada em todo paciente que apresente hipotensão arterial.",
+        "A estratégia liberal de transfusão sanguínea melhora o conteúdo arterial de oxigênio, com resultado positivo na morbimortalidade.",
+        "A estratégia restritiva utiliza um limiar de 7,0 g/dL para indicar a transfusão de hemácias e está associada à melhora da morbimortalidade.",
+        "A estratégia restritiva utiliza um limiar de 9,0 g/dL para indicar a transfusão de hemácias e está associada à melhora da morbimortalidade.",
+        "A transfusão de concentrado de hemácias não deve ser realizada de modo algum em pacientes que não tenham o resultado da dosagem do hematócrito e da hemoglobina sanguínea."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFSC avalia seu conhecimento sobre as estratégias atuais de transfusão sanguínea na hemorragia digestiva alta, um tema fundamental na medicina de emergência e terapia intensiva.</p><p><strong>A resposta correta é a alternativa C.</strong> A estratégia restritiva utiliza limiar de 7,0 g/dL e está associada à melhor morbimortalidade.</p><p>Vamos analisar cada alternativa: <strong>A) INCORRETA</strong> - A transfusão não está indicada em todo hipotenso. A hipotensão pode ter múltiplas causas e a decisão de transfundir deve ser individualizada, baseada no quadro clínico e exames laboratoriais. <strong>B) INCORRETA</strong> - A estratégia liberal (transfundir com hemoglobina mais alta) pode causar efeitos adversos como sobrecarga circulatória e não melhora a morbimortalidade. <strong>D) INCORRETA</strong> - O limiar de 9,0 g/dL é característico da estratégia liberal, não restritiva. <strong>E) INCORRETA</strong> - Em casos de sangramento ativo grave, a transfusão pode ser necessária mesmo antes dos resultados laboratoriais, seguindo critérios clínicos.</p><p>A estratégia restritiva está recomendada pelas diretrizes atuais porque evita transfusões desnecessárias, reduzindo riscos como transmissão de infecções, reações transfusionais e sobrecarga circulatória. O limiar de 7,0 g/dL garante oxigenação adequada na maioria dos pacientes, mantendo a hemodinâmica estável.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Paciente do sexo feminino, 42 anos, é admitida na emergência com diagnóstico de pielonefrite aguda. Apresenta PA 80/40 mmHg, FC 128, FR 26, SpO2 96%, Temperatura 38.9 graus Celsius. Os exames de admissão evidenciam lactato arterial de 6.4 mmol/mL e Saturação venosa central de 55%. Com base no caso, assinale a alternativa correta.",
+      "alternativas": [
+        "Antibioticoterapia deve ser iniciada dentro das primeiras 3 horas e após a coleta de culturas.",
+        "A manutenção da saturação venosa central em 55% após expansão volêmica de 20 ml/kg indica que não houve aumento do consumo tecidual de oxigênio.",
+        "Embora a manutenção do lactato em níveis elevados seja um marcador de morbimortalidade, seu clearence não é um bom indicador de melhora da perfusão tecidual.",
+        "A vasopressina tem efeito inotrópico e deve ser indicada nos casos de hipotensão persistente com a utilização de noradrenalina.",
+        "Devemos prontamente realizar expansão volêmica com cristaloide na dose de 30 ml/kg em infusão rápida, e se não houver resposta, instituir terapia vasopressora com noradrenalina para manter PAM > 65 mmHg."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre o manejo do choque séptico em pielonefrite aguda, uma condição potencialmente fatal que exige reconhecimento rápido e intervenção imediata.</p><p><strong>A resposta correta é a alternativa E.</strong> O protocolo estabelece expansão volêmica de 30 ml/kg seguida de vasopressor se necessário para manter PAM > 65 mmHg.</p><p>Vamos analisar sistematicamente: <strong>A) INCORRETA</strong> - Em choque séptico, antibiótico deve ser administrado dentro da PRIMEIRA HORA (não 3 horas), independentemente de culturas. <strong>B) INCORRETA</strong> - SatO2 central de 55% indica má perfusão tecidual e aumento do consumo de oxigênio. Valores normais são 65-75%. <strong>C) INCORRETA</strong> - O clearence do lactato (queda > 10% em 2-6h) é EXCELENTE indicador de melhora da perfusão. <strong>D) INCORRETA</strong> - Vasopressina tem efeito VASOCONSTRITOR, não inotrópico. A primeira escolha é noradrenalina.</p><p>O caso apresenta critérios de choque séptico: hipotensão (PA 80/40), taquicardia, lactato elevado (6.4), baixo rendimento cardiovascular. A paciente está em curso de tratamento quando drogas sedativas foram interrompidas e apresenta sedação superficial.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente apresenta quadro de choque de etiologia não determinada, sendo submetido à monitorização hemodinâmica invasiva com cateter de artéria pulmonar que evidencia os seguintes parâmetros: PVC (pressão venosa central): 24 mmHg; PCP (pressão capilar pulmonar): 24 mmHg; PAP (pressão de artéria pulmonar): 40/24 mmHg; DC (débito cardíaco): 2 l/min; SVmO2 (saturação venosa mista de oxigênio): 45%; Avaliando o perfil hemodinâmico acima, assinale o tipo de choque/etiologia mais prováveis.",
+      "alternativas": [
+        "Choque distributivo / sepse",
+        "Choque cardiogênico / infarto agudo de ventrículo direito",
+        "Choque obstrutivo / tromboembolismo pulmonar maciço",
+        "Choque obstrutivo / tamponamento cardíaco",
+        "Choque hipovolêmico / hemorragia aguda"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar dados de monitorização hemodinâmica invasiva para identificar o tipo de choque, competência essencial em medicina intensiva.</p><p><strong>A resposta correta é a alternativa D - Choque obstrutivo por tamponamento cardíaco.</strong></p><p>Vamos analisar os parâmetros: <strong>DC = 2 l/min</strong> (muito baixo, normal 4-8 l/min) indica baixo débito. <strong>PVC = 24 mmHg</strong> (normal 2-8) e <strong>PCP = 24 mmHg</strong> (normal 6-12) estão elevadas, sugerindo congestão. <strong>PAP = 40/24 mmHg</strong> (normal 25/15) também elevada. <strong>SVmO2 = 45%</strong> (normal 65-75%) indica má utilização de oxigênio.</p><p>Analisando as alternativas: <strong>A) INCORRETA</strong> - Choque distributivo (sepse) teria PVC/PCP normais ou baixas, DC elevado. <strong>B) INCORRETA</strong> - Choque cardiogênico por VD teria PVC elevada mas PCP normal. <strong>C) INCORRETA</strong> - Tromboembolismo maciço teria pulmonary hypertension com PVC elevada mas PCP normal (o ventrículo esquerdo está normal). <strong>E) INCORRETA</strong> - Choque hipovolêmico teria todas as pressões baixas.</p><p>O padrão sugere bloqueio do enchimento diastólico (tamponamento), onde as pressões se equalizam em níveis elevados devido ao derrame pericárdico que comprime o coração.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Assinale a alternativa correta em relação à fisiopatológico dos estados de choque.",
+      "alternativas": [
+        "Colapso das câmaras cardíacas esquerdas é causa mais comum de instabilidade hemodinâmica no tamponamento cardíaco.",
+        "Dilatação do ventrículo direito e movimentação paradoxal do septo interventricular são fatores determinantes da instabilidade hemodinâmica no tromboembolismo pulmonar.",
+        "Na Insuficiência ventricular direita, por infarto agudo de ventrículo direito, a expansão volêmica está contraindicada por aumentar as pressões de enchimento das câmaras direitas.",
+        "No tamponamento cardíaco, observamos colapso da veia cava inferior ao ecocardiograma transtorácico.",
+        "No choque hemorrágico, a expansão volêmica levando ao aumento da pressão de átrio direito e da pressão venosa sistêmica, na mesma proporção, aumenta o retorno venoso e o débito cardíaco."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda aspectos específicos da fisiopatologia dos diferentes tipos de choque, testando conhecimento detalhado sobre as bases hemodinâmicas das síndromes de baixo débito.</p><p><strong>A resposta correta é a alternativa B.</strong> A dilatação do ventrículo direito e movimentação paradoxal do septo são fatores determinantes da instabilidade no tromboembolismo pulmonar maciço.</p><p>Vamos analisar cada alternativa: <strong>A) INCORRETA</strong> - O tamponamento causa colapso das câmaras direitas, não esquerdas. O sangue acumula no pericárdio, comprimindo principalmente átrio e ventrículo direitos. <strong>C) INCORRETA</strong> - Na insuficiência de VD por infarto, a expansão volêmica É BENEFICIADA, não contraindicada. Isso melhora o débito cardíaco do VD comprometido. <strong>D) INCORRETA</strong> - No tamponamento vemos COLAPSO da veia cava SUPERIOR e átrio direito, não da veia cava inferior. <strong>E) INCORRETA</strong> - No choque hemorrágico, expansão volêmica excessiva pode diluir fatores de coagulação e não necessariamente aumenta o retorno venoso se já houver sobrecarga.</p><p>No tromboembolismo pulmonar maciço, a obstrução da artéria pulmonar causa aumento súbito da pós-carga do VD, levando à dilatação e hipocinésia. O septo interventricular se move paradoxalmente (para a esquerda) durante a sístole, reduzindo ainda mais o enchimento do VE e causando hipotensão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ChoqueClassificacaoDoChoque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Um paciente de 27 anos está sendo preparado para o desmame do suporte ventilatório e as drogas sedativas foram desligadas há duas horas. No momento o paciente desperta ao estímulo verbal, mas sustenta o despertar por período inferior a 10 segundos. Assinale a alternativa correta quanto ao nível de sedação que o paciente apresenta quando medido através da escala de sedação de agitação de Richmond.",
+      "alternativas": [
+        "-1",
+        "-2",
+        "-3",
+        "-4",
+        "-5"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a Escala de Agitação-Sedação de Richmond (RASS), ferramenta fundamental na avaliação do nível de consciência em pacientes críticos.</p><p><strong>A resposta correta é a alternativa B (-2).</strong> O paciente apresenta sonolência (sleepy) que é mensurada como RASS -2.</p><p>A escala RASS varia de +4 (combativo) a -5 (sem resposta). Vamos analisar: <strong>RASS -5:</strong> Sem resposta a estímulos verbais ou físicos. <strong>RASS -4:</strong> Sem resposta a estímulo físico, mas movimentos oculares a estímulo verbal. <strong>RASS -3:</strong> Movimento ou abertura ocular a estímulo verbal (sem contato visual sustentado). <strong>RASS -2:</strong> Acorda com estímulo verbal, mas perde rapidamente o contato visual (< 10 segundos). <strong>RASS -1:</strong> Agitado, inquieto, mas com contato visual.</p><p>No caso apresentado, o paciente desperta ao estímulo verbal mas mantém o estado de alerta por período inferior a 10 segundos, caracterizando RASS -2 (sonolência). <strong>Alternativas A, C, D e E estão incorretas</strong> porque não correspondem à descrição clínica do paciente. Esta escala é essencial para avaliar prontidão para extubação e evitar sedação excessiva, seguindo as diretrizes de sedação consciente em UTI.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Assinale a alternativa correta em relação ao delirium.",
+      "alternativas": [
+        "Abstinência por álcool e nicotina são as causas mais comuns de delirium hiperativo e hipoativo.",
+        "Dexmedetomidina está associada à prevenção do delirium em pacientes de alto risco.",
+        "É uma disfunção orgânica definida como de surgimento agudo e caracterizada por agitação psicomotora, déficit de atenção e pensamento desorganizado.",
+        "Anticolinérgicos, anti-histamínicos e benzodiazepínicos são classes de drogas associadas a maior risco de delirium.",
+        "Haloperidol, quetiapina e midazolam são drogas de escolha no tratamento do delirium hipoativo."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia seu conhecimento sobre delirium, uma síndrome orgânica cerebral aguda que é particularmente relevante em pacientes críticos. O foco está nas causas farmacológicas e na fisiopatologia.</p><p><strong>A alternativa D é a resposta correta.</strong> Anticolinérgicos, anti-histamínicos e benzodiazepínicos estão classicamente associados ao desenvolvimento de delirium, especialmente em pacientes hospitalizados.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>A está INCORRETA:</strong> A causa mais comum de delirium hiperativo é a abstinência por álcool (delirium tremens), não por nicotina. A nicotina raramente causa delirium. O delirium hipoativo é mais frequentemente causado por drogas sedativas, infecções ou alterações metabólicas.</p><p><strong>B está INCORRETA:</strong> Dexmedetomidina tem sido estudada como uma opção que pode reduzir delirium em comparação com benzodiazepínicos, mas ainda não está establecida como preventiva comprovada. Atualmente, não há evidência suficiente para afirmar que previne delirium em alto risco.</p><p><strong>C está INCORRETA:</strong> O delirium é uma síndrome orgânica, não necessariamente uma \"disfunção orgânica\". Embora os sintomas descritos (surgimento agudo, agitação, déficit de atenção, pensamento desorganizado) sejam corretos, a definição não é precisa. O termo \"disfunção orgânica\" é muito específico e inadequado.</p><p><strong>D está CORRETA:</strong> Como mencionado, anticolinérgicos (atropina, escopolamina), anti-histamínicos (difeniramina) e benzodiazepínicos (midazolam, lorazepam) são classicamente associados ao delirium. Eles alteram a neurotransmissão cerebral, especialmente colinérgica e GABAérgica.</p><p><strong>E está INCORRETA:</strong> No delirium hipoativo, o tratamento farmacológico preferencial são antipsicóticos de baixa potência ou não-farmacológico. Quetiapina pode ser usada, mas haloperidol e midazolam são inadequados - haloperidol pode agravar sedação e midazolam pode piorar delirium.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "Cirurgia_PrincipiosDaAnestesiologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Assinale a alternativa correta quanto aos cuidados paliativos oferecidos nas Unidades de Terapia Intensiva.",
+      "alternativas": [
+        "A extubação paliativa é uma forma de eutanásia.",
+        "Avaliações sobre o prognóstico do paciente não devem ser registradas em prontuário.",
+        "O paciente só pode ser informado do seu prognóstico se a família assim o permitir.",
+        "A sedação paliativa não deve ser oferecida a pacientes que não recebem suporte ventilatório devido ao risco de apneia.",
+        "Podem ser oferecidos a todos os pacientes críticos e os objetivos incluem controle de sintomas, acolhimento familiar e planejamento de final de vida."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>A banca UFSC 2020 explora conceitos fundamentais de cuidados paliativos em UTI, uma área que tem ganhado relevância crescente na medicina intensiva moderna. Esta questão testa seu conhecimento sobre princípios éticos e práticos dos cuidados paliativos.</p><p><strong>A resposta correta é a alternativa E.</strong> Os cuidados paliativos podem e devem ser oferecidos a todos os pacientes críticos, com objetivos que vão além do controle de sintomas.</p><p>Vamos analisar sistematicamente:</p><p><strong>A está INCORRETA:</strong> A extubação paliativa não é eutanásia. É a remoção de suporte artificial de vida em pacientes com doença terminal irreversível, aliviando sofrimento. Diferencia-se da eutanásia (ato de causar morte) pelo objetivo (alívio vs causando morte).</p><p><strong>B está INCORRETA:</strong> Avaliações prognósticas devem ser documentadas no prontuário. É responsabilidade médica e legal registrar o raciocínio clínico, fundamentando decisões terapêuticas e de transição de cuidados.</p><p><strong>C está INCORRETA:</strong> O paciente tem direito à informação sobre seu prognóstico, respeitando sua autonomia. Família não pode impedir essa informação, exceto se houver solicitação expressa do paciente competentemente. A comunicação deve incluir o paciente sempre que possível.</p><p><strong>D está INCORRETA:</strong> Sedação paliativa pode ser oferecida independentemente do suporte ventilatório. O objetivo é aliviar sofrimento refratário em final de vida, sendo uma medida ética e legal desde que indicada adequadamente.</p><p><strong>E está CORRETA:</strong> Cuidados paliativos são transversais em UTI, beneficiando todos os pacientes críticos. Incluem controle de sintomas, suporte à família, planejamento de cuidados, e preparação para final de vida. Não são apenas para pacientes em death watch.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Assinale a alternativa correta em relação à comunicação com familiares de doentes críticos.",
+      "alternativas": [
+        "O padrão de comunicação com a equipe ainda é comumente considerado pelos familiares como insuficiente, inconsistente e de qualidade ruim.",
+        "O uso de estratégias de comunicação empática não parece melhorar a satisfação familiar com o atendimento e nem reduzir o risco de ansiedade e depressão em familiares.",
+        "A decisão de limitação de suporte de vida deve ser tomada por familiares após receberem informações detalhadas dos médicos sobre o quadro clínico e prognóstico do paciente.",
+        "O uso de linguagem técnica em conversas com familiares ajuda a estabelecer a autoridade médica no assunto.",
+        "Conversar sobre o prognóstico do paciente deve ser evitado nos primeiros dias de internação do paciente de forma a dar mais tempo para que a família se prepare para receber uma notícia ruim."
+      ],
+      "correta": 0,
+      "professor_comment": "",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_RelacaoMedicopaciente",
+        "MedicinaPreventiva_EticaMedica"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Assinale a alternativa correta em relação à pneumonia grave associada ao vírus Influenza.",
+      "alternativas": [
+        "O uso de corticoides está associado a menor mortalidade.",
+        "O prolongamento do uso de oseltamivir por mais de cinco dias está associado a maiores riscos de transtornos psiquiátricos.",
+        "Pacientes obesos apresentam risco reduzido de coinfecção bacteriana.",
+        "Vacinação para Influenza não tem demonstrado efetividade na redução de riscos de manifestações graves da doença, incluindo necessidades de admissão em UTI e morte.",
+        "Oseltamivir administrado por via nasogástrica é bem absorvido em pacientes críticos, apresentando níveis plasmáticos comparáveis a pacientes não críticos que fazem uso da droga por via oral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFSC 2020 aborda a comunicação com familiares em UTI, um aspecto fundamental da medicina intensiva que impacta diretamente nos desfechos familiares e na qualidade da assistência. O foco está nas percepções familiares e nas melhores práticas.</p><p><strong>A alternativa A é a resposta correta.</strong> Infelizmente, estudos demonstram que familiares ainda percebem a comunicação com equipes de UTI como inadequada.</p><p>Vamos detalhar cada opção:</p><p><strong>A está CORRETA:</strong> Pesquisa publicadas em revistas como Critical Care Medicine mostram que familiares frequentemente relatam comunicação inadequada, inconsistente e de baixa qualidade. Isso inclui informações contradictórias de diferentes profissionais, falta de atualizações regulares e linguagem técnica excessiva.</p><p><strong>B está INCORRETA:</strong> Estratégias de comunicação empática, como as descritas por Robinson et al. (2008), demonstram melhorar significativamente satisfação familiar e reduzir ansiedade/depressão. O uso de empatia é fundamental na comunicação em UTI.</p><p><strong>C está INCORRETA:</strong> A decisão de limitação de suporte deve ser compartilhada entre equipe médica e família, baseado em discussões éticas. Não é solely da família após informação médica. Equipe deve guiá-la através do processo ético.</p><p><strong>D está INCORRETA:</strong> Linguagem técnica pode criar barreiras e reduzir entendimento familiar. Comunicação deve usar termos acessíveis, com confirmação de compreensão. Autoridade médica deve vir de conhecimento e empatia, não jargão.</p><p><strong>E está INCORRETA:</strong> Prognóstico deve ser discutido cedo, mesmo que de forma preliminar. Adiar discussões pode aumentar ansiedade e gerar frustração. Família tem direito à informação oportuna sobre prognóstico.</p><p>Esta questão reflete a importância da comunicação humanizada na medicina intensiva.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Influenza",
+        "Pediatria_PneumologiaPediatrica",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Assinale a alternativa correta em relação à Síndrome Pós-Tratamento Intensivo.",
+      "alternativas": [
+        "A duração do delirium é fator de risco independente para comprometimento cognitivo.",
+        "O uso de corticoides está associado a maior risco de estresse pós-traumático.",
+        "Sobreviventes de sepse grave apresentam menor risco de comprometimento cognitivo que sobreviventes de pós-operatórios de cirurgia cardíaca.",
+        "A sedação prolongada aumenta o risco de comprometimento cognitivo e funcional, mas não de transtornos psiquiátricos.",
+        "O uso de bloqueadores neuromusculares é o principal determinante da miopatia pós- UTI."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>A UFSC 2020 aborda a Síndrome Pós-UTI, uma condição crescente de interesse na medicina intensiva que afeta qualidade de vida de sobreviventes. A questão foca em fatores de risco e características dessa síndrome.</p><p><strong>A alternativa A é a resposta correta.</strong> A duração do delirium é independentemente associada ao comprometimento cognitivo em sobreviventes de UTI.</p><p>Vamos analisar cada alternativa:</p><p><strong>A está CORRETA:</strong> Estudos como os de Pandharipande et al. (2008) demonstram que delirium prolongado (especialmente >7 dias) é fator de risco independente para comprometimento cognitivo persistente. Alterações neurobiológicas do delirium podem causar neurodegeneração ou acelerar declínio cognitivo pré-existente.</p><p><strong>B está INCORRETA:</strong> Corticosteroídeos têm sido associados com redução do risco de transtorno de estresse pós-traumático (TEPT) em alguns estudos. Mecanismo proposto inclui redução da solidificação de memórias traumáticas. Evidência sugere efeito neuroprotetor, não aumentador de TEPT.</p><p><strong>C está INCORRETA:</strong> Sobreviventes de sepse grave apresentammaior risco de comprometimento cognitivo comparado a outros grupos. Sepse causa resposta inflamatória sistêmica intensa com possível neuroinflamação e lesão cerebral. Metaanálises recentes mostram comprometimento cognitivo mais severo após sepse.</p><p><strong>D está INCORRETA:</strong> Sedação prolongada aumenta risco não só de comprometimento cognitivo e funcional, mas também de transtornos psiquiátricos incluindo ansiedade, depressão e TEPT. Efeito em saúde mental é significativo e bem documentado.</p><p><strong>E está INCORRETA:</strong> Bloqueadores neuromusculares não são principal determinante da miopatia pós-UTI. A miopatia é multifatorial, principalmente relacionada a doenças críticas (sepse, inflamação), imobilização prolongada, e uso de corticosteroídes. BNM são apenas um dos múltiplos fatores.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoSono",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "Outros_Psiquiatria"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Assinale a alternativa correta quanto à suspensão de analgésicos e sedativos.",
+      "alternativas": [
+        "A suspensão diária de analgesia e sedação está associada a maior risco de estresse pós-traumático e isquemia miocárdica.",
+        "A síndrome de abstinência aos benzodiazepínicos pode cursar com febre, taquicardia, agitação psicomotora e convulsões.",
+        "O uso de infusões contínuas de analgésicos e sedativos está associado ao menor tempo de duração de ventilação mecânica em comparação ao uso intermitente dessas drogas.",
+        "A infusão de clonidina ou dexmedetomidina é a principal estratégia de prevenção à síndrome de abstinência aos opioides.",
+        "O risco de precipitação de síndrome de abstinência a opioides ou benzodiazepínicos é negligenciável dentro dos primeiros dez dias de tratamento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFSC 2020 aborda um tema fundamental em medicina intensiva: o manejo adequado de analgésicos e sedativos e as complicações relacionadas à sua suspensão.</p><p><strong>A resposta correta é a alternativa B - A síndrome de abstinência aos benzodiazepínicos pode cursar com febre, taquicardia, agitação psicomotora e convulsões.</strong></p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> INCORRETA. Na verdade, a suspensão diária de analgesia e sedação (daily awakening trials) está associada à REDUÇÃO do risco de estresse pós-traumático e outras complicações. Essa prática é recomendada pelas diretrizes atuais para minimizar o tempo de ventilação e prevenir delirium.</p><p><strong>Alternativa B:</strong> CORRETA. A síndrome de abstinência aos benzodiazepínicos é bem caracterizada e inclui: hipertermia, taquicardia, hipertensão, agitação psicomotora, ansiedade, tremores e eventualmente convulsões. É uma condição potencialmente grave que requer reconhecimento e manejo adequado.</p><p><strong>Alternativa C:</strong> INCORRETA. Estudos demonstram que o uso contínuo de analgésicos e sedativos está associado ao AUMENTO do tempo de ventilação mecânica, não redução. Por isso, as diretrizes atuais enfatizam a interrupção diária e o uso da menor dose eficaz.</p><p><strong>Alternativa D:</strong> INCORRETA. Embora clonidina e dexmedetomidina possam ser úteis no manejo de sintomas de abstinência, a estratégia PRINCIPAL de prevenção é o desmame gradual e a interrupção diária quando possível, não apenas o uso desses medicamentos.</p><p><strong>Alternativa E:</strong> INCORRETA. O risco de precipitação de síndrome de abstinência NÃO é negligenciável nos primeiros dez dias. Pode ocorrer rapidamente, especialmente com benzodiazepínicos de ação curta e opioides em doses altas.</p><p>Portanto, a alternativa B é a única que descreve corretamente as características da síndrome de abstinência aos benzodiazepínicos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_PneumologiaIntensiva",
+        "ClinicaMedica_PneumologiaIntensiva_CuidadosPosanestesicos",
+        "ClinicaMedica_PneumologiaIntensiva_CuidadosPosanestesicos_DorEAnalgesia"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Assinale a alternativa correta em relação a recomendações de cuidado de um paciente crítico que apresenta alto risco de insuficiência renal aguda (IRA).",
+      "alternativas": [
+        "A restrição proteica com o objetivo de se evitar o início da terapia de substituição renal não é recomendada.",
+        "O uso de diuréticos de alça não previne, mas pode reduzir a severidade da IRA e pode reduzir o tempo de exposição à terapia de substituição renal.",
+        "O uso de aminoglicosídeos em doses múltiplas diárias tem menor perfil de nefrotoxicidade em relação a doses únicas diárias.",
+        "Com exceção da sepse, o uso de contrastes iodados endovenosos é a principal causa de IRA no paciente crítico e o risco pode ser reduzido com o uso de soluções bicarbonatadas antes e após o uso do contraste.",
+        "Na ausência de choque hemorrágico, o uso de soluções coloides para a expansão do volume intravascular tem melhor perfil de redução de risco de IRA que soluções cristaloides isotônicas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda medidas preventivas para insuficiência renal aguda (IRA) em pacientes críticos - um tema crucial para reduzir morbimortalidade em UTI.</p><p><strong>A resposta correta é a alternativa A - A restrição proteica com o objetivo de se evitar o início da terapia de substituição renal não é recomendada.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> CORRETA. A restrição proteica para prevenir IRA não é recomendada. Na verdade, as evidências mostram que a restrição proteica não previne IRA e pode até ser prejudicial. O foco deve estar na otimização hemodinâmica e evitar nefrotóxicos.</p><p><strong>Alternativa B:</strong> INCORRETA. Embora diuréticos de alça possam reduzir a severidade da IRA em alguns casos e potencialmente reduzir o tempo de terapia de substituição renal, eles NÃO PREVÊEM o desenvolvimento de IRA. A evidência é limitada e controversa.</p><p><strong>Alternativa C:</strong> INCORRETA. Aminoglicosídeos em doses múltiplas diárias têm MAIOR perfil de nefrotoxicidade comparado a doses únicas diárias. A dose única diária reduz a concentração peaks e a toxicidade renal mantendo a eficácia antimicrobiana.</p><p><strong>Alternativa D:</strong> INCORRETA. Contrastes iodados NÃO são a principal causa de IRA no paciente crítico (sepse é a principal causa). Embora as soluções bicarbonatadas possam reduzir o risco, a afirmação sobre ser 'principal causa' está incorreta.</p><p><strong>Alternativa E:</strong> INCORRETA. Na ausência de choque hemorrágico, cristaloides isotônicas têm melhor perfil de segurança que coloides para expansão volêmica. Albumina e outros coloides foram associados a maior risco de IRA e complicações em alguns estudos.</p><p>Conclusão: A alternativa A é a única recomendação correta para prevenção de IRA em pacientes críticos.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ManejoPerioperatorioDoPaciente",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_NefrologiaDisturbiosDoPotassio"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Uma paciente de 69 anos, portadora de DPOC, foi internada na UTI no pós- operatório imediato de colecistectomia por videolaparoscopia complicada por broncoespasmo grave. Está no terceiro dia de UTI, apresenta estabilidade hemodinâmica e devido à melhora progressiva do quadro de broncoespasmo a equipe tem expectativa de que o desmame do suporte ventilatório venha a ser possível nas próximas 48 horas. Apresenta Índice de massa corporal de 19,7 kg/m². Assinale a alternativa mais apropriada quanto ao plano nutricional da paciente.",
+      "alternativas": [
+        "Está cronicamente desnutrida e dieta enteral deve ser iniciada com oferta calórica de 25 mg/kg de peso ideal e deve-se ter o objetivo de alcançar 35 mg/kg de peso ideal dentro da primeira semana.",
+        "Está provavelmente desnutrida, mas o início de oferta de dieta enteral está contraindicada devido ao pós-operatório recente.",
+        "Não é possível afirmar se a paciente está desnutrida e tanto a dieta enteral quanto a parental estão contraindicadas no momento devido ao plano de extubação.",
+        "Apresenta risco de desnutrição. Iniciar nutrição enteral com oferta calórica em torno de 10 kcal/kg de peso atual e havendo estabilidade clínica, aumentar progressivamente a oferta calórica ao longo da primeira semana, se possível até 25 a 30 kcal/kg de p",
+        "Está desnutrida, e como provavelmente não será possível alcançar os requerimentos calórico-proteicos por via enteral ao longo da primeira semana, a suplementação com dieta parenteral está indicada."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o manejo nutricional em paciente crítico com DPOC - um cenário clínico complexo que requer abordagem equilibrada entre necessidades nutricionais e segurança clínica.</p><p><strong>A resposta correta é a alternativa D - Apresenta risco de desnutrição. Iniciar nutrição enteral com oferta calórica em torno de 10 kcal/kg de peso atual e havendo estabilidade clínica, aumentar progressivamente a oferta calórica ao longo da primeira semana, se possível até 25 a 30 kcal/kg de peso.</strong></p><p>Análise detalhada das alternativas:</p><p><strong>Alternativa A:</strong> INCORRETA. Embora DPOC predisponha à desnutrição, um IMC de 19,7 kg/m² não caracteriza desnutrição crônica (ponto de corte é geralmente 18,5). Além disso, iniciar com 25 kcal/kg e chegar a 35 kcal/kg é muito agressivo para os primeiros dias.</p><p><strong>Alternativa B:</strong> INCORRETA. Pós-operatório recente de videolaparoscopia não contraindica dieta enteral, especialmente em paciente estável clinicamente. O broncoespasmo melhorando não é contraindicação absoluta.</p><p><strong>Alternativa C:</strong> INCORRETA. É possível avaliar risco nutricional com os dados fornecidos (IMC baixo para idade, DPOC, doença crítica). Dieta enteral NÃO está contraindicada apenas pelo plano de extubação - pode ser iniciada e mantida até extubação.</p><p><strong>Alternativa D:</strong> CORRETA. Esta é a abordagem mais adequada: reconhece o risco nutricional, sugere início conservador (10 kcal/kg), e programação progressiva até 25-30 kcal/kg. Estratégia segura e evidence-based.</p><p><strong>Alternativa E:</strong> INCORRETA. Suplementação parenteral não é primeira linha. Deve-se tentar via enteral primeiro, e 25-30 kcal/kg em uma semana é uma meta razoável, não impossível.</p><p>A abordagem progressiva e conservadora da alternativa D é a mais segura e eficaz para este cenário clínico.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_AvaliacaoNutricional",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalPerioperator",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Sobre acidose metabólica, é correto afirmar:",
+      "alternativas": [
+        "O tratamento da cetoacidose diabética baseia-se exclusivamente na infusão de insulina.",
+        "Metformina pode causar acidose láctica, particularmente em pacientes com disfunção renal aguda ou crônica.",
+        "Perdas gastrointestinais de líquidos, assim como na diarreia aguda, não são causa de acidose hiperclorêmica.",
+        "Em situações de disóxia celular, é imperativo corrigir qualquer grau de acidemia, repondo bicarbonato, a fim de favorecer o transporte de oxigênio pela hemoglobina, aumentando sua ligação.",
+        "Insuficiência hepática e deficiência de tiamina não estão envolvidas com hiperlactatemia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda aspectos fisiopatológicos e clínicos importantes da acidose metabólica - conhecimento essencial para manejo adequado em medicina intensiva.</p><p><strong>A resposta correta é a alternativa B - Metformina pode causar acidose láctica, particularmente em pacientes com disfunção renal aguda ou crônica.</strong></p><p>Análise sistemática de cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. O tratamento da cetoacidose diabética NÃO é baseado exclusivamente em insulina. Requer também hidratação agressiva com solução salina, correção eletrolítica (principalmente potássio) e monitorização constante. Insulina é fundamental, mas não suficiente isoladamente.</p><p><strong>Alternativa B:</strong> CORRETA. Metformina pode causar acidose láctica (chamada de acidose láctica induzida por metformina), especialmente em pacientes com disfunção renal que reduz a eliminação do fármaco. É uma complicação rara mas potencialmente fatal.</p><p><strong>Alternativa C:</strong> INCORRETA. Perdas gastrointestinais (como diarreia) SÃO causa de acidose hiperclorêmica. A perda de bicarbonato nas fezes resulta em retenção de cloro para manter eletroneutralidade, causando acidose hiperclorêmica.</p><p><strong>Alternativa D:</strong> INCORRETA. Em disóxia celular, NÃO é imperativo corrigir qualquer grau de acidemia com bicarbonato. Na verdade, a correção rápida pode ser prejudicial. O foco deve estar no tratamento da causa subjacente da hipóxia.</p><p><strong>Alternativa E:</strong> INCORRETA. Tanto insuficiência hepática quanto deficiência de tiamina ESTÃO envolvidas com hiperlactatemia. Insuficiência hepática reduz clearance de lactato, e deficiência de tiamina compromete metabolismo da glicose, ambos contributing para acúmulo de lactato.</p><p>A única afirmação correta é sobre a relação entre metformina e acidose láctica em pacientes com disfunção renal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Assinale a alternativa correta com relação à insuficiência respiratória aguda.",
+      "alternativas": [
+        "Broncodilatadores e corticosteroides não têm papel no tratamento de pacientes intubados por exacerbação de asma.",
+        "Em pacientes hemodinamicamente estáveis com insuficiência respiratória leve a moderada, o uso da ventilação não invasiva em nada contribui para reduzir a necessidade de suporte ventilatório mecânico, somente adiando seu uso.",
+        "Ventilação não invasiva é uma estratégia bastante útil nos casos de exacerbação de Doença Pulmonar Obstrutiva Crônica e Insuficiência Cardíaca Congestiva.",
+        "Nos pacientes com lesão pulmonar, particularmente os que apresentam critérios para Síndrome de Desconforto Respiratório Agudo (SDRA), deve-se utilizar volume corrente elevado (10-12mL/kg de peso predito pela altura).",
+        "Nos pacientes com exacerbação de DPOC, em especial naqueles que são retentores crônicos de gás carbônico, é seguro utilizar altos fluxos de oxigênio suplementar a fim de garantir a melhora da sua oxigenação."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda estratégias ventilatórias e manejo de insuficiência respiratória aguda - competências fundamentais em medicina de emergência e terapia intensiva.</p><p><strong>A resposta correta é a alternativa C - Ventilação não invasiva é uma estratégia bastante útil nos casos de exacerbação de Doença Pulmonar Obstrutiva Crônica e Insuficiência Cardíaca Congestiva.</strong></p><p>Análise detalhada de cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. Broncodilatadores e corticosteroides TÊM papel importante no tratamento de pacientes intubados por exacerbação de asma. Continuam sendo essenciais mesmo após intubação para reduzir inflamação e broncoespasmo, facilitar ventilação e permitir extubação.</p><p><strong>Alternativa B:</strong> INCORRETA. A ventilação não invasiva EM PACIENTES ESTÁVEIS com insuficiência respiratória leve a moderada REDUZ significativamente a necessidade de intubação e ventilação mecânica invasiva, não apenas adiando seu uso. A evidência é robusta para DPOC e ICC.</p><p><strong>Alternativa C:</strong> CORRETA. Esta é uma indicação bem estabelecida para VNI. Em DPOC, reduz trabalho respiratório, melhora troca gasosa e evita intubação. Em ICC, reduz pré-carga e pós-carga, melhorando função cardíaca e reduzindo edema pulmonar.</p><p><strong>Alternativa D:</strong> INCORRETA. Em SDRA, deve-se usar volume corrente BAIXO (6 mL/kg), não elevado. A estratégia de proteção pulmonar com volumes baixos demonstrou reduzir mortalidade. Volumes de 10-12 mL/kg estão associados a maior mortalidade.</p><p><strong>Alternativa E:</strong> INCORRETA. Em DPOC com retenção crônica de CO2, altos fluxos de oxigênio podem ser PERIGOSOS. Podem suprimir o impulso respiratório em pacientes dependentes de hipoxemia para respiração e causar retenção de CO2 e acidose respiratória.</p><p>A alternativa C é a única que descreve corretamente as indicações e benefícios da ventilação não invasiva.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Assinale a alternativa correta.",
+      "alternativas": [
+        "Onda U é uma alteração eletrocardiográfica relacionada à hipercalemia.",
+        "Hipocalemia é causa de fraqueza muscular e complicações cardíacas.",
+        "A forma de tratamento da hipernatremia não depende do estado volêmico do paciente e consiste sempre na administração de diuréticos tiazídicos.",
+        "Poliestirenossulfonato sódico é uma droga eficaz em reduzir rapidamente os níveis de potássio corporais nos casos de hipercalemia aguda grave.",
+        "A complicação mais temida da correção dos quadros de hipernatremia é a síndrome de desmielinização. A fim de preveni-la, deve-se evitar a elevação do sódio superior a 12meq/L/24h."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda distúrbios eletrolíticos, tema fundamental em medicina de emergência e clínica médica. A banca UFSC 2020 avaliou especificamente os conceitos relacionados a potássio, sódio e suas complicações clínicas.</p><p><strong>A resposta correta é B - Hipocalemia é causa de fraqueza muscular e complicações cardíacas.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: ERRADA</strong> - A onda U no ECG está associada à HIPOCALEMIA (baixo potássio), não à hipercalemia. Na hipercalemia, observamos alterações como ondas T altas e picudas, alargamento do QRS.</p><p><strong>Alternativa B: CORRETA</strong> - A hipocalemia realmente causa fraqueza muscular (desde fadiga até paralisia em casos graves) e complicações cardíacas importantes (arritmias, incluindo fibrilação ventricular). É uma das alterações eletrolíticas mais perigosas clinicamente.</p><p><strong>Alternativa C: ERRADA</strong> - O tratamento da hipernatremia DEPENDE profundamente do estado volêmico. Em hipernatremia com depleção de volume, usa-se SF 0,9% inicialmente. Em hipernatremia sem depleção, usa-se soluções hipotônicas. Tiazídicos podem ser úteis em alguns casos, mas não é universal.</p><p><strong>Alternativa D: ERRADA</strong> - O poliestirenossulfonato sódico (Kayexalato) NÃO é eficaz para correção rápida da hipercalemia aguda grave. Para hipercalemia aguda, usamos insulina + glicose, gluconato de cálcio, beta-agonistas, diálise. O poliestirenossulfonato age em horas a dias.</p><p><strong>Alternativa E: ERRADA</strong> - A complicação mais temida da correção da hiponatremia (não hipernatremia) é a síndrome de desmielinização osmótica. Para hipernatremia, a preocupação é edema cerebral por correção muito rápida. Além disso, o limite de correção segura é para SODIO, não para elevação máxima por dia.</p><p><strong>Veredito:</strong> A alternativa B é claramente correta, abordando um conceito fundamental da fisiopatologia da hipocalemia e suas manifestações clínicas graves.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Nefrologia_DisturbiosDoPotassio",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Hipernatremia"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Sobre metabolismo do cálcio, é correto afirmar:",
+      "alternativas": [
+        "Mieloma múltiplo não costuma causar hipercalcemia.",
+        "Hipocalcemia dificilmente é observada em pacientes politraumatizados graves.",
+        "Hipercalcemia é uma complicação que pode ser observada em pós-operatório de tireoidectomia.",
+        "Hipocalcemia é frequentemente assintomática; entretanto, pode se manifestar com parestesias, crises convulsivas, demência, hipotensão, espasmos musculares e tetania.",
+        "Hiperparatireoidismo é causa mais comum de hipocalcemia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre metabolismo do cálcio e suas principais alterações clínicas. A banca UFSC 2020 explorou tanto fisiopatologia quanto correlações clínicas importantes.</p><p><strong>A resposta correta é D - Hipocalcemia é frequentemente assintomática; entretanto, pode se manifestar com parestesias, crises convulsivas, demência, hipotensão, espasmos musculares e tetania.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A: ERRADA</strong> - O mieloma múltiplo é uma das CAUSAS MAIS COMUNS de hipercalcemia, não o contrário. As células plasmáticas neoplásicas produzem proteína relacionada ao PTH, causando reabsorção óssea aumentada.</p><p><strong>Alternativa B: ERRADA</strong> - A hipocalcemia é MUITO COMUM em politraumatizados graves, especialmente por: transfusões com sangue citratado, lesão das paratireoides, hipoalbuminemia, uso de medicamentos como furosemida em altas doses.</p><p><strong>Alternativa C: ERRADA</strong> - A tireoidectomia pode causar HIPOCALCEMIA por lesão das paratireoides (principal complicação cirúrgica), não hipercalcemia. Hipercalcemia após tireoidectomia é rara.</p><p><strong>Alternativa D: CORRETA</strong> - Esta é a descrição clássica e completa da hipocalcemia. É verdadeiramente frequentemente assintomática inicialmente, mas quando sintomática, apresenta o espectro de manifestações neurológicas (parestesias, convulsões), cardiovasculares (hipotensão) e neuromusculares (tetania, espasmos).</p><p><strong>Alternativa E: ERRADA</strong> - O hiperparatireoidismo é causa de HIPERCALCEMIA, não hipocalcemia. Causas de hipocalcemia incluem hipoparatireoidismo, deficiência de vitamina D, insuficiência renal crônica, pancreatite.</p><p><strong>Veredito:</strong> A alternativa D apresenta a descrição mais precisa e completa sobre hipocalcemia, abrangendo tanto sua apresentação frequente assintomática quanto suas possíveis manifestações clínicas graves.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral_Hipocalcemia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral_Hipercalcemia"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Sobre as causas de dor torácica na emergência, é correto afirmar:",
+      "alternativas": [
+        "A dor relacionada à dissecção aguda da aorta torácica é geralmente relatada como uma dor torácica de início súbito que irradia para o dorso ou abdome. Em mais de 90% dos casos, clínicos suspeitam corretamente de dissecção aórtica quando são feitas perguntas sobre qualidade, radiação e intensidade da dor. Pode se estender para qualquer de seus principais ramos, causando isquemia cerebral, miocárdica, renal, medular ou intestinal.",
+        "O pneumotórax hipertensivo é uma emergência médica, uma vez que cursa com choque do tipo obstrutivo. Pode ser confirmado através da ultrassonografia de tórax, quando não se observa o deslizamento pleural ou se observa padrão de \"código de barras\" no modo M. Mas é necessária a confirmação por radiografia de tórax antes do seu tratamento.",
+        "A ruptura esofágica geralmente se manifesta como dor na região subesternal ou epigástrica ou até mesmo no pescoço em rupturas cervicais. Pode acontecer espontaneamente ou como complicação de procedimentos endoscópicos. Sua mortalidade é baixa.",
+        "A estenose aórtica causa obstrução da via de saída do ventrículo esquerdo, o que leva a sua hipertrofia. Suas manifestações clínicas incluem angina, insuficiência cardíaca congestiva e síncope, semelhantes às das síndromes coronarianas agudas. O primeiro",
+        "A embolia pulmonar causa dor torácica do tipo pleurítica e frequentemente está associada a dispneia, hemoptise, tosse ou síncope. Hipóxia é um achado universal, e sua ausência exclui embolia pulmonar."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre principais causas de dor torácica na emergência, condições de alta mortalidade que exigem reconhecimento imediato. A banca UFSC 2020 focou em dissecção aórtica, pneumotórax, ruptura esofágica, estenose aórtica e embolia pulmonar.</p><p><strong>A resposta correta é A - A dor relacionada à dissecção aguda da aorta torácica é geralmente relatada como uma dor torácica de início súbito que irradia para o dorso ou abdome.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A: CORRETA</strong> - Esta descrição da dissecção aórtica é clássica e precisa. A dor súbita, \"em punhalada\", com irradiação para dorso/abdome é característica. A extensão para ramos aórticos pode causar isquemias em diversos territórios (cerebral, coronariana, renal, medular, intestinal). O fato de 90% dos clínicos suspeitarem corretamente quando fazem perguntas específicas sobre qualidade, radiação e intensidade da dor é um dado importante para suspeita diagnóstica.</p><p><strong>Alternativa B: ERRADA</strong> - Embora o pneumotórax hipertensivo seja emergência com choque obstrutivo e possa ser confirmado por ultrassom (ausência de deslizamento pleural), a radiografia de tórax NÃO deve ser aguardada para iniciar o tratamento. O pneumotórax hipertensivo requer descompressão imediata com agulha ou tubo de tórax.</p><p><strong>Alternativa C: ERRADA</strong> - A ruptura esofágica tem MORTEALIDADE ALTA (20-40%), não baixa. É uma das emergências abdominais mais graves, especialmente a rotura espontânea (síndrome de Boerhaave).</p><p><strong>Alternativa D: INCOMPLETA</strong> - A alternativa está truncada, mas a descrição da estenose aórtica até o ponto apresentado está correta. Seus sintomas (angina, ICC, síncope) são semelhantes às síndromes coronarianas agudas, sendo importante o diagnóstico diferencial.</p><p><strong>Alternativa E: ERRADA</strong> - A embolia pulmonar pode causar dispneia sem hipóxia. A ausência de hipóxia NÃO exclui embolia pulmonar - é um erro conceitual grave. Muchos pacientes com EP têm saturação normal.</p><p><strong>Veredito:</strong> A alternativa A é a única que descreve corretamente a apresentação clínica da dissecção aórtica e sua complexidade, sendo fundamental para o diagnóstico diferencial em dor torácica de alta mortalidade.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_DisseccaoAorticaAguda",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_InfartoAgudoDoMiocardioComSupr"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente masculino, 67 anos, procurou o pronto-atendimento com queixa de há dois dias apresentar tosse seca, piora progressiva de dispneia, ortopneia e redução do débito urinário. Negava febre. Na chegada, sua pressão arterial era de 180/90 mmHg, saturação de oxigênio pela oximetria de pulso de 67% em ar ambiente, frequência cardíaca de 100 bpm, ritmo de fibrilação atrial e frequência respiratória de 30 a 40 rpm, com padrão superficial. Ausculta pulmonar apresentava estertores finos até terço médio de ambos os hemitóraces. Suas extremidades estavam um pouco frias e havia leve sudorese. A radiografia de tórax evidenciou infiltrado pulmonar predominantemente peri-hilar, com opacidade no lobo inferior direito. Tinha histórico de insuficiência cardíaca, com último ecocardiograma mostrando fração de ejeção do ventrículo esquerdo de 30%. Inicialmente foi colocado em ventilação não invasiva, com taquipneia persistente. Evoluiu com redução do nível de consciência e hipotensão, sendo iniciado suporte vasopressor. Assinale a alternativa correta sobre a medida a ser tomada imediatamente a seguir.",
+      "alternativas": [
+        "Iniciar droga vasodilatadora.",
+        "Instalar bomba de infusão de diurético.",
+        "Intubação orotraqueal e ventilação mecânica.",
+        "Aumentar os parâmetros de pressão da ventilação não invasiva.",
+        "Colocar o paciente em posição de Trendelemburg para incrementar a perfusão cerebral."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico complexo de insuficiência cardíaca aguda descompensada com progressão para choque cardiogênico. A banca UFSC 2020 avaliou a capacidade de reconhecimento de deterioração clínica e tomada de decisão em emergência.</p><p><strong>A resposta correta é C - Intubação orotraqueal e ventilação mecânica.</strong></p><p>Vamos analisar o caso: paciente com insuficiência cardíaca, FE 30%, em insuficiência respiratória aguda progressing para choque (hipotensão + estado mental alterado), já em VNI sem melhora.</p><p><strong>Alternativa A: ERRADA</strong> - Vasodilatadores (nitroglicerina, nesiritida) estão contra-indicados em choque cardiogênico com hipotensão. Puedenworsen a perfusão coronariana e sistêmica.</p><p><strong>Alternativa B: ERRADA</strong> - Bomba de diurético não resolve a hipóxia grave (SpO2 67%) nem o choque. A prioridade é suporte ventilatório, não diurese neste momento.</p><p><strong>Alternativa C: CORRETA</strong> - O paciente apresenta critérios claros para intubação: hipóxia severa (SpO2 67%), fadiga respiratória (FR 30-40 rpm), nível de consciência alterado e choque. A ventilação mecânica é mandatória para proteger a via aérea e otimizar a oxigenação.</p><p><strong>Alternativa D: ERRADA</strong> - Aumentar parâmetros da VNI pode piorar a situação. Se o paciente está em VNI com piora clínica, isso indica falha da VNI e necessidade de intubação, não ajuste de parâmetros.</p><p><strong>Alternativa E: ERRADA</strong> - Posição de Trendelemburg está contra-indicada em insuficiência cardíaca aguda e edema pulmonar. Pode piorar a congestão pulmonar e o retorno venoso.</p><p><strong>Veredito:</strong> A intubação orotraqueal é a única medida que pode salvar este paciente, Addressing o comprometimento ventilatório severo e preparando-o para o suporte circulatório apropriado. Este é um caso clássico de progressão para choque cardiogênico em insuficiencia cardíaca aguda.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_InsuficienciaCardiacaAguda",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Assinale a alternativa correta em relação ao processo de doação de órgãos.",
+      "alternativas": [
+        "A presença de vírus B ou C da hepatite consiste em contraindicação absoluta para doação de órgãos.",
+        "Neoplasia de órgãos sólidos é contraindicação absoluta para doação de córneas.",
+        "Antes de iniciar os procedimentos para o diagnóstico de morte encefálica deve-se informar à família da possibilidade de doação de órgãos.",
+        "O choque séptico, quando controlado, com droga vasoativa em dose estável ou decrescente não contraindica a doação de órgãos.",
+        "Insuficiência renal aguda contraindica a doação de rins."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre critérios de doação de órgãos, tema importante em medicina intensiva e transplantação. A banca UFSC 2020 explorou contraindicações absolutas e relativas.</p><p><strong>A resposta correta é D - O choque séptico, quando controlado, com droga vasoativa em dose estável ou decrescente não contraindica a doação de órgãos.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: ERRADA</strong> - Vírus B e C da hepatite NÃO são contraindicação absoluta para doação de órgãos. Existe criteria para transplante com órgãos de doadores HBV/HCV positivos, especialmente quando o receptor é compatível e há programa específico. É contraindicação relativa, não absoluta.</p><p><strong>Alternativa B: ERRADA</strong> - Neoplasia de órgãos sólidos NÃO contraindica doação de córneas. A córnea tem baixa vascularização e baixo risco de transmissão tumoral. Contraindicações para córneas são principalmente infecções ativas e algumas doenças sistêmicas específicas.</p><p><strong>Alternativa C: ERRADA</strong> - Deve-se informar à família sobre possibilidade de doação, MAS apenas após confirmação do diagnóstico de morte encefálica e estabilização hemodinâmica. Não se deve abordar este assunto antes da confirmação, pois pode generar estresse desnecessário.</p><p><strong>Alternativa D: CORRETA</strong> - Choque séptico controlado com drogas vasoativas em dose estável ou decrescente NÃO contraindica doação. Desde que o foco infeccioso esteja controlado e não haja bacteremia ativa, a doação pode ser considerada. É uma contraindicação relativa, não absoluta.</p><p><strong>Alternativa E: ERRADA</strong> - Insuficiência renal aguda NÃO contraindica doação de rins. Muito pelo contrário - rins de doadores com IRA podem funcionar perfeitamente após transplante. O que contraindica é insuficiência renal crônica ou doença renal de base.</p><p><strong>Veredito:</strong> A alternativa D é correta ao reconhecer que choque séptico controlado não impede a doação de órgãos, importante para otimizar o pool de doadores disponíveis quando há controle adequado da infecção.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "<html><head></head><body>Paciente feminina, 38 anos, chegou ao pronto-atendimento com queixa de dispneia súbita. Ao entrar no consultório para ser atendida pelo médico, apresentou perda de consciência. Foi verificada a ausência de pulso carotídeo. Foi conduzida à sala de reanimação. Lá, a paciente foi monitorizada e foram iniciadas imediatamente manobras de reanimação cardiopulmonar. O ritmo identificado foi de assistolia. Foi administrada adrenalina e no segundo ciclo de massagem cardíaca foi obtida a via aérea invasiva. Teve recuperação da circulação espontânea após cinco minutos; entretanto, apresentou outras duas paradas cardíacas revertidas com duração de dois e três minutos. Foi realizado ecocardiograma à beira do leito e identificada a seguinte imagem: Assinale a alternativa correta sobre a medida salvadora que poderia ser tomada nessa situação.\n\n<img src=\"https://medbrave.com.br/questions/ufsc-2020-r3/qQ36.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Atropina",
+        "Trombólise química",
+        "Expansão volêmica com soluções cristaloides",
+        "Pericardiocentese",
+        "Desfibrilação"
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFSC aborda um cenário crítico de parada cardíaca, testando seu conhecimento sobre intervenção salvadora em embolia pulmonar maciça.</strong></p><p>O caso apresenta uma paciente jovem com início súbito de dispneia e perda de consciência, evoluindo para parada por assistolia. O ponto-chave é o <strong>ecocardiograma à beira do leito</strong>, que visualmente demonstrava sinais característicos de tromboembolismo pulmonar agudo.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Atropina</strong> - Incorreta. A atropina é indicada em bradicardia sintomática ou assistolia por causas neurogênicas/vagais. Não atua na fisiopatologia do tromboembolismo pulmonar.</p><p><strong>B) Trombólise química</strong> - <strong>CORRETA</strong>. Esta é a medida salvadora em casos de embolia pulmonar maciça com instabilidade hemodinâmica. A paciente jovem com quadro súbito, múltiplas paradas e imagem ecocardiográfica compatível com EP maciça se beneficia da trombólise como estratégia de resgate.</p><p><strong>C) Expansão volêmica</strong> - Incorreta. Embora pacientes com EP possam ter hipovolemia relativa, a expansão não trata a causa subjacente e pode piorar a função ventricular direita.</p><p><strong>D) Pericardiocentese</strong> - Incorreta. Indicada em tamponamento cardíaco, não em tromboembolismo pulmonar.</p><p><strong>E) Desfibrilação</strong> - Incorreta. O ritmo era assistolia, não FV/TV. Desfibrilação só é eficaz em ritmos chocáveis.</p><p><strong>Veredito final: A alternativa B é correta.</strong> Em embolia pulmonar maciça com choque ou parada cardíaca, a trombólise sistêmica é a intervenção que pode salvar vidas, especialmente em pacientes sem contraindicações.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ChoqueClassificacaoDoChoque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ChoqueEtiologiaDoChoque",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Sobre a profilaxia de tromboembolismo venoso, é correto afirmar:",
+      "alternativas": [
+        "Sepse não aumenta risco de trombose venosa profunda.",
+        "Pacientes com alto risco de sangramento têm contraindicação a qualquer tipo de tromboprofilaxia.",
+        "Os principais fatores de risco são a idade, história previa de trombose venosa profunda, história prévia de câncer, imobilização, obesidade, gravidez, trauma, cirurgia recente e acidente vascular encefálico.",
+        "Tanto em pacientes clínicos como em cirúrgicos, o uso de heparinas de baixo peso molecular tem maior eficácia e é mais seguro do que o uso de heparina não fracionada.",
+        "Na ausência de outros traumas associados, nas primeiras 24 h de um traumatismo crânioencefálico grave, é seguro iniciar tromboprofilaxia medicamentosa."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre profilaxia de tromboembolismo venoso (TEV), um tema fundamental na prática clínica diária.</strong></p><p>Vamos examinar cada alternativa sistematicamente:</p><p><strong>A) Sepse não aumenta risco de trombose venosa profunda</strong> - <strong>INCORRETA</strong>. A sepse é um fator de risco significativo para TEV devido ao estado de hipercoagulabilidade, inflamação sistêmica e frequentemente imobilização prolongada.</p><p><strong>B) Pacientes com alto risco de sangramento têm contraindicação a qualquer tipo de tromboprofilaxia</strong> - <strong>INCORRETA</strong>. Na verdade, mesmo pacientes com alto risco de sangramento podem necessitar tromboprofilaxia em situações de risco muito elevado para TEV. A decisão é individualizada, pesando riscos e benefícios.</p><p><strong>C) Os principais fatores de risco são a idade, história prévia de trombose venosa profunda, história prévia de câncer, imobilização, obesidade, gravidez, trauma, cirurgia recente e acidente vascular encefálico</strong> - <strong>CORRETA</strong>. Esta lista abrangente inclui os principais fatores de risco reconhecidos para TEV e está alinhada com as diretrizes atuais.</p><p><strong>D) Tanto em pacientes clínicos como em cirúrgicos, o uso de heparinas de baixo peso molecular tem maior eficácia e é mais seguro do que o uso de heparina não fracionada</strong> - <strong>INCORRETA</strong>. Embora HBPM tenha vantagens práticas (administração subcutânea, monitorização menos frequente), a eficácia é similar à HNF em muitas situações. Segurança pode variar conforme o cenário clínico.</p><p><strong>E) Na ausência de outros traumas associados, nas primeiras 24h de um traumatismo crânioencefálico grave, é seguro iniciar tromboprofilaxia medicamentosa</strong> - <strong>INCORRETA</strong>. Em TCE grave, especialmente com hemorragia intracraniana, há risco de expansão hemorrágica. A tromboprofilaxia deve ser postergada por pelo menos 24-48h e decidida caso a caso.</p><p><strong>Veredito final: A alternativa C é correta</strong>, apresentando uma lista abrangente e precisa dos principais fatores de risco para tromboembolismo venoso.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ProfilaxiaDoTromboembolismoVen",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Assinale a alternativa correta sobre as síndromes coronarianas agudas.",
+      "alternativas": [
+        "A cirurgia de revascularização do miocárdio não é indicada na fase aguda do infarto.",
+        "As terapias de reperfusão não diminuem a ocorrência de insuficiência cardíaca aguda.",
+        "Betabloqueadores e nitratos devem ser administrados a todos os pacientes com síndrome coronariana aguda.",
+        "Drogas hipolipemiantes não apresentam benefício na abordagem inicial das síndromes coronarianas agudas, ficando reservadas apenas para profilaxia secundária.",
+        "Em pacientes que foram ressuscitados de parada cardíaca, cujo eletrocardiograma mostra elevação do segmento ST, angiografia com proposta de angioplastia percutânea primária é a estratégia de escolha."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da UFSC testa seu conhecimento sobre síndromes coronarianas agudas, especificamente sobre estratégias de reperfusão em cenários complexos.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) A cirurgia de revascularização do miocárdio não é indicada na fase aguda do infarto</strong> - <strong>INCORRETA</strong>. Embora menos comum, a cirurgia de emergência pode ser indicada em complicações mecânicas (ruptura de parede livre, insuficiência mitral aguda) ou falha da angioplastia.</p><p><strong>B) As terapias de reperfusão não diminuem a ocorrência de insuficiência cardíaca aguda</strong> - <strong>INCORRETA</strong>. Pelo contrário, a reperfusão precoce (angioplastia primária ou fibrinólise) é a estratégia mais eficaz para limitar o tamanho do infarto e reduzir a incidência de insuficiência cardíaca.</p><p><strong>C) Betabloqueadores e nitratos devem ser administrados a todos os pacientes com síndrome coronariana aguda</strong> - <strong>INCORRETA</strong>. Embora sejam medicamentos importantes, há contraindicações. Betabloqueadores são evitados em choque cardiogênico e nitratos são contraindicados em hipotensão ou uso recente de inibidores da fosfodiesterase.</p><p><strong>D) Drogas hipolipemiantes não apresentam benefício na abordagem inicial das síndromes coronarianas agudas, ficando reservadas apenas para profilaxia secundária</strong> - <strong>INCORRETA</strong>. Estatinas de alta potência devem ser iniciadas precocemente em todas as síndromes coronarianas agudas, não apenas para profilaxia secundária, mas para estabilização da placa e redução de eventos cardiovasculares.</p><p><strong>E) Em pacientes que foram ressuscitados de parada cardíaca, cujo eletrocardiograma mostra elevação do segmento ST,angiangioplastia percutânea primária é a estratégia de escolha</strong> - <strong>CORRETA</strong>. Esta é uma estratégia classe I nas diretrizes atuais. Pacientes com parada cardíaca recuperada e ECG com supradesnivelamento do ST devem ser submetidos à coronariografia de emergência com angioplastia primária, pois têm melhor prognóstico com reperfusão mecânica precoce.</p><p><strong>Veredito final: A alternativa E é correta.</strong> A angioplastia primária é a estratégia de escolha em pacientes ressuscitados de parada cardíaca com supradesnivelamento do ST, seguindo os princípios de reperfusão precoce para maximizar a sobrevida.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_InfartoAgudoDoMiocardioComSupr"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Durante uma parada cardíaca com ritmo chocável (taquicardia ventricular ou fibrilação ventricular), intra-hospitalar, a desfibrilação deve ser aplicada como seguinte nível de energia:",
+      "alternativas": [
+        "Níveis progressivos de energia: 50 J - 100 J - 150 J - 200 J.",
+        "50 J em desfibrilador bifásico ou monofásico.",
+        "100 J em desfibrilador bifásico ou monofásico.",
+        "200 J em desfibrilador bifásico ou 360 J em desfibrilador monofásico.",
+        "400 J em desfibrilador bifásico ou monofásico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão aborda protocolos de desfibrilação em parada cardíaca, testando seu conhecimento sobre parâmetros técnicos atualizados.</strong></p><p>A desfibrilação é uma intervenção tempo-dependente em ritmos chocáveis (FV/TV), e a energia adequada é crucial para o sucesso da cardioversão.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Níveis progressivos de energia: 50J - 100J - 150J - 200J</strong> - <strong>INCORRETA</strong>. O protocolo atual não usa escalonamento progressivo de energia. A primeira descarga deve ser dada com energia máxima desde o início.</p><p><strong>B) 50J em desfibrilador bifásico ou monofásico</strong> - <strong>INCORRETA</strong>. 50J é muito baixo para a primeira descarga, especialmente em desfibriladores monofásicos que requieren mais energia.</p><p><strong>C) 100J em desfibrilador bifásico ou monofásico</strong> - <strong>INCORRETA</strong>. Embora 100J possa ser aceitável em alguns desfibriladores bifásicos modernos, não é o padrão recomendado e não considera a diferença entre tecnologias.</p><p><strong>D) 200J em desfibrilador bifásico ou 360J em desfibrilador monofásico</strong> - <strong>CORRETA</strong>. Estas são as energias recomendadas atualmente: 200J para desfibriladores bifásicos (primeira descarga) e 360J para monofásicos, seguidos de descargas subsequentes com a mesma energia máxima.</p><p><strong>E) 400J em desfibrilador bifásico ou monofásico</strong> - <strong>INCORRETA</strong>. 400J excede a energia máxima segura dos desfibriladores comerciais e não é recomendada, podendo causar dano miocárdico.</p><p><strong>Veredito final: A alternativa D é correta.</strong> O protocolo atual recomenda 200J para desfibriladores bifásicos e 360J para monofásicos na primeira descarga, maximizando a chance de conversão com menor energia total necessária.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Assinale a alternativa correta em relação aos bloqueadores neuromusculares (BNM).",
+      "alternativas": [
+        "A hipercalcemia, a hipomagnesemia e a hipercalemia reduzem a ação dos BNM.",
+        "BNMs bloqueiam a ligação da serotonina à placa motora.",
+        "O atracúrio está entre os BNMs de escolha em casos de disfunções renal e hepática devido à inativação pela eliminação de Hofmann.",
+        "São agentes de escolha no manejo da assincronia do paciente com a ventilação mecânica.",
+        "A succinilcolina é um BNM não despolarizante que devido à meia vida muita curta é frequentemente utilizada para facilitar a intubação orotraqueal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre farmacologia dos bloqueadores neuromusculares (BNM), especificamente sobre suas propriedades farmacocinéticas e indicações clínicas.</strong></p><p>Vamos examinar cada alternativa detalhadamente:</p><p><strong>A) A hipercalcemia, a hipomagnesemia e a hipercalemia reduzem a ação dos BNM</strong> - <strong>INCORRETA</strong>. Na verdade, ocorre o contrário: hipocalcemia, hipermagnesemia e hipocalemia <strong>aumentam</strong> o bloqueio neuromuscular. Alterações eletrolíticas afetam significativamente a transmissão neuromuscular.</p><p><strong>B) BNMs bloqueiam a ligação da serotonina à placa motora</strong> - <strong>INCORRETA</strong>. BNMs bloqueiam a ligação da acetilcolina aos receptores nicotínicos da junção neuromuscular, não serotoninérgicos. Esta é uma confusão farmacológica comum.</p><p><strong>C) O atracúrio está entre os BNMs de escolha em casos de disfunções renal e hepática devido à inativação pela eliminação de Hofmann</strong> - <strong>CORRETA</strong>. O atracúrio é metabolizado principalmente por eliminação de Hofmann (degradação não-enzimática) e esterases plasmáticas, tornando-o ideal em insuficiência renal/hepática. Otros BNM dependem mais de eliminação renal/hepática.</p><p><strong>D) São agentes de escolha no manejo da assincronia do paciente com a ventilação mecânica</strong> - <strong>INCORRETA</strong>. Embora BNM possam ser usados em casos específicos de assincronia ventilatória, não são primeira escolha. Medidas como ajuste de parâmetros ventilatórios, sedação conscious e outras intervenções devem ser tentadas antes.</p><p><strong>E) A succinilcolina é um BNM não despolarizante que devido à meia vida muita curta é frequentemente utilizada para facilitar a intubação orotraqueal</strong> - <strong>INCORRETA</strong>. Succinilcolina é um BNM <strong>despolarizante</strong> (não não-despolarizante), não despolarizante. Sua ação breve se deve à pseudo-colinesterase plasmática, não à meia-vida intrínseca.</p><p><strong>Veredito final: A alternativa C é correta.</strong> O atracúrio é realmente uma excelente escolha em disfunção renal/hepática devido à sua eliminação independente desses órgãos via eliminação de Hofmann.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares"
+      ],
+      "tags": [
+        "UFSC2020R3CM2",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879282491-39"
+    }
+  ]
+}

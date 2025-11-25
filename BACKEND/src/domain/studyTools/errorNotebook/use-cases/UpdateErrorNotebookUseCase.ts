@@ -37,17 +37,21 @@ export class UpdateErrorNotebookUseCase {
     }
 
     // Verificar se o caderno de erros pertence ao usuário
-    if (existingNotebook.userId !== userId) {
+    if (existingNotebook.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook', 403);
     }
 
     // Atualizar caderno de erros
-    const updatedNotebook = await this.errorNotebookRepository.update(id, userId, {
-      title: data.title?.trim(),
-      description: data.description?.trim(),
-      isPublic: data.isPublic,
-      tags: data.tags,
-    });
+      const updatedNotebook = await this.errorNotebookRepository.update(
+        id,
+        userId,
+        {
+          title: data.title?.trim(),
+          description: data.description?.trim(),
+          is_public: data.is_public,
+          tags: data.tags,
+        },
+      );
 
     if (!updatedNotebook) {
       throw new AppError('Failed to update error notebook', 500);

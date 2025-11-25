@@ -1,8 +1,8 @@
 import express, { Router } from 'express';
-import { FirebaseAuthRepository } from '../repositories/FirebaseAuthRepository';
+import { SupabaseAuthRepository } from '../repositories/SupabaseAuthRepository';
 import { AuthController } from '../controllers/AuthController';
 import { AuthService } from '../services/AuthService';
-import { authMiddleware } from '../middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../middleware/supabaseAuth.middleware';
 
 /**
  * Cria e configura as rotas de autenticação
@@ -10,9 +10,9 @@ import { authMiddleware } from '../middleware/auth.middleware';
  */
 export const createAuthRoutes = (): Router => {
   const router = express.Router();
-  
+
   // Inicializar repositórios, serviços e controladores
-  const authRepository = new FirebaseAuthRepository();
+  const authRepository = new SupabaseAuthRepository();
   const authService = new AuthService(authRepository);
   const authController = new AuthController(authService);
 
@@ -23,7 +23,7 @@ export const createAuthRoutes = (): Router => {
   router.post('/forgot-password', authController.forgotPassword);
   router.post('/reset-password', authController.resetPassword);
   router.post('/verify-email', authController.verifyEmail);
-  
+
   // Rotas protegidas (requerem autenticação)
   router.use(authMiddleware);
   router.post('/sync-user', authController.syncUser);
@@ -32,8 +32,8 @@ export const createAuthRoutes = (): Router => {
   router.post('/mfa/setup', authController.setupMfa);
   router.post('/mfa/verify', authController.verifyMfa);
   router.post('/mfa/disable', authController.disableMfa);
-  
+
   return router;
 };
 
-export default createAuthRoutes; 
+export default createAuthRoutes;

@@ -1,10 +1,11 @@
 import { FlashcardController } from '../../../domain/studyTools/flashcards/controllers/flashcardController';
 import { createFlashcardRoutes } from '../../../domain/studyTools/flashcards/routes/flashcardRoutes';
-import { FirebaseFlashcardRepository } from '../../repositories/firebase/FirebaseFlashcardRepository';
+import { SupabaseFlashcardRepository } from '../../studyTools/supabase/SupabaseFlashcardRepository';
+import { supabase } from '../../../config/supabase';
 
 export const createFlashcardModule = () => {
-  // Criar repositório
-  const flashcardRepository = new FirebaseFlashcardRepository();
+  // Criar repositório Supabase (recomendado)
+  const flashcardRepository = new SupabaseFlashcardRepository(supabase);
 
   // Criar controlador
   const flashcardController = new FlashcardController(flashcardRepository);
@@ -18,3 +19,5 @@ export const createFlashcardModule = () => {
     flashcardController,
   };
 };
+
+ 

@@ -1,14 +1,15 @@
 import { Router } from 'express';
 import { SimulatedExamController } from '../controllers/SimulatedExamController';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
-// import { firestore } from 'firebase-admin';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 
 /**
  * Configura as rotas para o módulo de simulados
  * @param controller Instância do SimulatedExamController
  * @returns Router configurado
  */
-export function createSimulatedExamRoutes(controller: SimulatedExamController): Router {
+export function simulatedExamRoutes(
+  controller: SimulatedExamController,
+): Router {
   const router = Router();
 
   // Rotas para usuários autenticados
@@ -16,56 +17,82 @@ export function createSimulatedExamRoutes(controller: SimulatedExamController): 
   router.post(
     '/',
     authMiddleware,
-    controller.createSimulatedExam.bind(controller)
+    controller.createSimulatedExam.bind(controller),
   );
   router.put(
     '/:id',
     authMiddleware,
-    controller.updateSimulatedExam.bind(controller)
+    controller.updateSimulatedExam.bind(controller),
   );
   router.delete(
     '/:id',
     authMiddleware,
-    controller.deleteSimulatedExam.bind(controller)
+    controller.deleteSimulatedExam.bind(controller),
   );
 
-  // Rotas para usuários
-  // Busca e listagem de simulados
-  router.get('/', authMiddleware, controller.listUserSimulatedExams.bind(controller));
-  router.get('/:id', authMiddleware, controller.getSimulatedExamById.bind(controller));
-
-  // Funcionalidade de realização de simulado
-  router.post('/:id/start', authMiddleware, controller.startSimulatedExam.bind(controller));
-  router.post('/answer', authMiddleware, controller.submitAnswer.bind(controller));
-  router.post('/finish', authMiddleware, controller.finishSimulatedExam.bind(controller));
+  // Rotas específicas DEVEM vir ANTES das rotas com parâmetros dinâmicos
+  // Rotas sem userId no path (usa o usuário autenticado)
+  router.get(
+    '/my',
+    authMiddleware,
+    controller.listUserSimulatedExams.bind(controller),
+  );
+  router.get(
+    '/my/results',
+    authMiddleware,
+    controller.listUserSimulatedExamResults.bind(controller),
+  );
+  router.get(
+    '/my/statistics',
+    authMiddleware,
+    controller.getUserSimulatedExamStatistics.bind(controller),
+  );
 
   // Resultados e estatísticas
   router.get(
     '/results/:id',
     authMiddleware,
-    controller.getSimulatedExamResult.bind(controller)
+    controller.getSimulatedExamResult.bind(controller),
   );
   router.get(
     '/user/:userId/results',
     authMiddleware,
-    controller.listUserSimulatedExamResults.bind(controller)
+    controller.listUserSimulatedExamResults.bind(controller),
   );
   router.get(
     '/user/:userId/statistics',
     authMiddleware,
-    controller.getUserSimulatedExamStatistics.bind(controller)
+    controller.getUserSimulatedExamStatistics.bind(controller),
   );
 
-  // Rotas sem userId no path (usa o usuário autenticado)
-  router.get(
-    '/my/results',
+  // Funcionalidade de realização de simulado
+  router.post(
+    '/:id/start',
     authMiddleware,
-    controller.listUserSimulatedExamResults.bind(controller)
+    controller.startSimulatedExam.bind(controller),
   );
-  router.get(
-    '/my/statistics',
+  router.post(
+    '/answer',
     authMiddleware,
-    controller.getUserSimulatedExamStatistics.bind(controller)
+    controller.submitAnswer.bind(controller),
+  );
+  router.patch(
+    '/results/:id/answers',
+    authMiddleware,
+    controller.updateSimulatedExamAnswer.bind(controller),
+  );
+  router.post(
+    '/finish',
+    authMiddleware,
+    controller.finishSimulatedExam.bind(controller),
+  );
+
+  // Rotas para usuários
+  // Busca e listagem de simulados (DEVE vir por último)
+  router.get(
+    '/:id',
+    authMiddleware,
+    controller.getSimulatedExamById.bind(controller),
   );
 
   return router;

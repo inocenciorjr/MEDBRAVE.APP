@@ -80,11 +80,6 @@ export enum ErrorCodes {
   DATABASE_ERROR = 'DATABASE_ERROR',
   EXTERNAL_SERVICE_ERROR = 'EXTERNAL_SERVICE_ERROR',
 
-  // Erros do Firebase
-  FIREBASE_AUTH_ERROR = 'FIREBASE_AUTH_ERROR',
-  FIREBASE_FIRESTORE_ERROR = 'FIREBASE_FIRESTORE_ERROR',
-  FIREBASE_STORAGE_ERROR = 'FIREBASE_STORAGE_ERROR',
-
   // Erros de limite e throttling (429)
   RATE_LIMIT_EXCEEDED = 'RATE_LIMIT_EXCEEDED',
   QUOTA_EXCEEDED = 'QUOTA_EXCEEDED',
@@ -119,19 +114,25 @@ export enum ErrorCodes {
 export const ErrorMessages: Record<string, string> = {
   // Autenticação
   [ErrorCodes.UNAUTHORIZED]: 'Não autorizado. Faça login para continuar.',
-  [ErrorCodes.INVALID_CREDENTIALS]: 'Credenciais inválidas. Verifique e tente novamente.',
+  [ErrorCodes.INVALID_CREDENTIALS]:
+    'Credenciais inválidas. Verifique e tente novamente.',
   [ErrorCodes.EXPIRED_TOKEN]: 'Sessão expirada. Faça login novamente.',
   [ErrorCodes.MFA_REQUIRED]: 'Autenticação de dois fatores necessária.',
   [ErrorCodes.MFA_INVALID]: 'Código de autenticação inválido. Tente novamente.',
 
   // Autorização
-  [ErrorCodes.FORBIDDEN]: 'Acesso negado. Você não tem permissão para acessar este recurso.',
-  [ErrorCodes.INSUFFICIENT_PERMISSIONS]: 'Permissões insuficientes para realizar esta ação.',
-  [ErrorCodes.SUBSCRIPTION_REQUIRED]: 'Esta funcionalidade requer uma assinatura ativa.',
+  [ErrorCodes.FORBIDDEN]:
+    'Acesso negado. Você não tem permissão para acessar este recurso.',
+  [ErrorCodes.INSUFFICIENT_PERMISSIONS]:
+    'Permissões insuficientes para realizar esta ação.',
+  [ErrorCodes.SUBSCRIPTION_REQUIRED]:
+    'Esta funcionalidade requer uma assinatura ativa.',
 
   // Validação
-  [ErrorCodes.VALIDATION_ERROR]: 'Erro de validação. Verifique os dados enviados.',
-  [ErrorCodes.INVALID_INPUT]: 'Entrada inválida. Verifique os dados e tente novamente.',
+  [ErrorCodes.VALIDATION_ERROR]:
+    'Erro de validação. Verifique os dados enviados.',
+  [ErrorCodes.INVALID_INPUT]:
+    'Entrada inválida. Verifique os dados e tente novamente.',
   [ErrorCodes.MISSING_FIELDS]: 'Campos obrigatórios não preenchidos.',
   [ErrorCodes.INVALID_FORMAT]: 'Formato inválido. Verifique a documentação.',
 
@@ -148,26 +149,30 @@ export const ErrorMessages: Record<string, string> = {
     'O recurso foi modificado por outra operação. Tente novamente.',
 
   // Servidor
-  [ErrorCodes.INTERNAL_SERVER_ERROR]: 'Erro interno do servidor. Tente novamente mais tarde.',
-  [ErrorCodes.DATABASE_ERROR]: 'Erro de banco de dados. Tente novamente mais tarde.',
-  [ErrorCodes.EXTERNAL_SERVICE_ERROR]: 'Erro em serviço externo. Tente novamente mais tarde.',
+  [ErrorCodes.INTERNAL_SERVER_ERROR]:
+    'Erro interno do servidor. Tente novamente mais tarde.',
+  [ErrorCodes.DATABASE_ERROR]:
+    'Erro de banco de dados. Tente novamente mais tarde.',
+  [ErrorCodes.EXTERNAL_SERVICE_ERROR]:
+    'Erro em serviço externo. Tente novamente mais tarde.',
 
-  // Firebase
-  [ErrorCodes.FIREBASE_AUTH_ERROR]: 'Erro de autenticação do Firebase.',
-  [ErrorCodes.FIREBASE_FIRESTORE_ERROR]: 'Erro do Firestore.',
-  [ErrorCodes.FIREBASE_STORAGE_ERROR]: 'Erro de armazenamento do Firebase.',
 
   // Limite e throttling
-  [ErrorCodes.RATE_LIMIT_EXCEEDED]: 'Limite de requisições excedido. Tente novamente mais tarde.',
+  [ErrorCodes.RATE_LIMIT_EXCEEDED]:
+    'Limite de requisições excedido. Tente novamente mais tarde.',
   [ErrorCodes.QUOTA_EXCEEDED]: 'Quota de uso excedida. Contate o suporte.',
 
   // Pagamento
-  [ErrorCodes.PAYMENT_REQUIRED]: 'Pagamento necessário para acessar este recurso.',
-  [ErrorCodes.PAYMENT_FAILED]: 'Falha no processamento do pagamento. Verifique seus dados.',
-  [ErrorCodes.SUBSCRIPTION_EXPIRED]: 'Sua assinatura expirou. Renove para continuar.',
+  [ErrorCodes.PAYMENT_REQUIRED]:
+    'Pagamento necessário para acessar este recurso.',
+  [ErrorCodes.PAYMENT_FAILED]:
+    'Falha no processamento do pagamento. Verifique seus dados.',
+  [ErrorCodes.SUBSCRIPTION_EXPIRED]:
+    'Sua assinatura expirou. Renove para continuar.',
 
   // Conteúdo
-  [ErrorCodes.UNPROCESSABLE_CONTENT]: 'Não foi possível processar o conteúdo enviado.',
+  [ErrorCodes.UNPROCESSABLE_CONTENT]:
+    'Não foi possível processar o conteúdo enviado.',
   [ErrorCodes.INVALID_MEDIA_TYPE]: 'Tipo de mídia não suportado.',
   [ErrorCodes.CONTENT_TOO_LARGE]: 'Conteúdo muito grande. Limite excedido.',
 
@@ -180,7 +185,8 @@ export const ErrorMessages: Record<string, string> = {
   [ErrorCodes.HEALTH_CHECK_FAILED]: 'Verificação de saúde falhou.',
   [ErrorCodes.METRIC_COLLECTION_FAILED]: 'Falha na coleta de métricas.',
   [ErrorCodes.ALERT_TRIGGER]: 'Alerta disparado pelo sistema de monitoramento.',
-  [ErrorCodes.SERVICE_DEGRADATION]: 'Serviço apresentando degradação de performance.',
+  [ErrorCodes.SERVICE_DEGRADATION]:
+    'Serviço apresentando degradação de performance.',
 };
 
 /**
@@ -259,7 +265,8 @@ export const createError = (
   const statusCode = ErrorStatusCodes[code] || 500;
 
   // Usa a mensagem personalizada ou a mensagem padrão do código
-  const message = customMessage || ErrorMessages[code] || 'Erro não especificado';
+  const message =
+    customMessage || ErrorMessages[code] || 'Erro não especificado';
 
   return new AppError(statusCode, message, code, true, context);
 };

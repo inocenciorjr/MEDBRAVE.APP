@@ -1,0 +1,908 @@
+'use client';
+
+import { use, useState, useMemo, useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useCreateList } from '../CreateListContext';
+import FolderSelector from '@/components/banco-questoes/FolderSelector';
+import SubjectSelector from '@/components/banco-questoes/SubjectSelector';
+import YearSelector from '@/components/banco-questoes/YearSelector';
+import YearGridSelector from '@/components/banco-questoes/YearGridSelector';
+import InstitutionSelector from '@/components/banco-questoes/InstitutionSelector';
+import ExamTypeSelector from '@/components/banco-questoes/ExamTypeSelector';
+import SummaryPanel from '@/components/banco-questoes/SummaryPanel';
+import QuestionPreviewModal from '@/components/banco-questoes/QuestionPreviewModal';
+import { useFilterHierarchy, useAvailableYears, useInstitutionHierarchy, useQuestionCount } from '@/hooks/useBancoQuestoes';
+import { hierarchyToSubjects } from '@/lib/adapters/bancoQuestoesAdapter';
+import api from '@/services/api';
+import TextInput from '@/components/ui/TextInput';
+import StepperProgress from '@/components/banco-questoes/StepperProgress';
+
+interface StepPageProps {
+  params: Promise<{
+    step: string;
+  }>;
+}
+
+export default function StepPage({ params }: StepPageProps) {
+  const { step } = use(params);
+
+  if (step === 'geral') {
+    return <GeralStep />;
+  }
+
+  if (step === 'assuntos') {
+    return <AssuntosStep />;
+  }
+
+  if (step === 'anos') {
+    return <AnosStep />;
+  }
+
+  if (step === 'instituicoes') {
+    return <InstituicoesStep />;
+  }
+
+  return null;
+}
+
+function GeralStep() {
+  const router = useRouter();
+  const { state, updateListName, updateFolderId, toggleSubject, toggleYear, toggleInstitution, clearFilters } = useCreateList();
+  const [error, setError] = useState('');
+
+  // Buscar dados reais do banco
+  const { hierarchy } = useFilterHierarchy();
+  const subjects = useMemo(() => hierarchyToSubjects(hierarchy), [hierarchy]);
+  const { hierarchy: institutionHierarchy } = useInstitutionHierarchy();
+
+  // Contar questões em tempo real
+  const { count: questionCount } = useQuestionCount({
+    filterIds: [
+      ...state.selectedSubjects.filter(id => !id.includes('_')),
+      ...(state.selectedExamTypes || [])
+    ],
+    subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
+    years: state.selectedYears,
+    institutions: state.selectedInstitutions,
+  });
+
+  const handleNext = () => {
+    // Não validar nome aqui - permitir avançar para configurar filtros
+    setError('');
+    router.push('/banco-questoes/criar/assuntos');
+  };
+
+  const handleEditStep = (stepId: string) => {
+    router.push(`/banco-questoes/criar/${stepId}`);
+  };
+
+  const selectedSubjects = useMemo(() =>
+    subjects.filter(s => state.selectedSubjects.includes(s.id)),
+    [subjects, state.selectedSubjects]
+  );
+
+  const selectedInstitutions = useMemo(() => {
+    const result: any[] = [];
+    institutionHierarchy.forEach((stateNode: any) => {
+      if (stateNode.children) {
+        stateNode.children.forEach((inst: any) => {
+          if (state.selectedInstitutions.includes(inst.id)) {
+            result.push({
+              id: inst.id,
+              name: inst.name,
+              state: stateNode.name,
+            });
+          }
+        });
+      }
+    });
+    return result;
+  }, [institutionHierarchy, state.selectedInstitutions]);
+
+  return (
+    <div className="space-y-6">
+      <StepperProgress currentStep="geral" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <div className="lg:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
+            <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200 mb-8">
+              Criar Lista de Questões
+            </h1>
+
+            <form onSubmit={(e) => { e.preventDefault(); handleNext(); }}>
+              <div className="mb-10">
+                <FolderSelector
+                  selectedFolder={state.folderId}
+                  onSelectFolder={updateFolderId}
+                  showLists={true}
+                  onSelectList={(listId) => console.log('Lista selecionada:', listId)}
+                />
+              </div>
+
+              <TextInput
+                id="list-name"
+                name="list-name"
+                value={state.listName}
+                onChange={(value) => {
+                  updateListName(value);
+                  setError('');
+                }}
+                placeholder="Nome da Lista de Questões"
+                error={error}
+                fullWidth
+              />
+
+              <div className="flex justify-end mt-10">
+                <button
+                  type="submit"
+                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                >
+                  <span>Próximo</span>
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+          <SummaryPanel
+            data={{
+              listName: state.listName,
+              selectedSubjects,
+              selectedYears: state.selectedYears,
+              selectedInstitutions,
+              selectedExamTypes: state.selectedExamTypes || [],
+              totalQuestions: questionCount,
+            }}
+            onEditStep={handleEditStep}
+            onRemoveSubject={toggleSubject}
+            onRemoveYear={toggleYear}
+            onRemoveInstitution={toggleInstitution}
+            onClearFilters={clearFilters}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AssuntosStep() {
+  const router = useRouter();
+  const { state, toggleSubject, toggleYear, toggleInstitution, clearFilters } = useCreateList();
+  const [searchTerm, setSearchTerm] = useState('');
+  const [error, setError] = useState('');
+
+  // Buscar dados reais do banco
+  const { hierarchy, loading: loadingSubjects } = useFilterHierarchy();
+
+  // Filtrar apenas filtros educacionais (assuntos médicos)
+  const educationalHierarchy = useMemo(() => {
+    const educationalFilters = [
+      'Cirurgia',
+      'Clínica Médica',
+      'Ginecologia',
+      'Medicina Preventiva',
+      'Obstetrícia',
+      'Pediatria',
+      'Outros'
+    ];
+
+    return hierarchy.filter(filter => educationalFilters.includes(filter.name));
+  }, [hierarchy]);
+
+  const subjects = useMemo(() => hierarchyToSubjects(educationalHierarchy), [educationalHierarchy]);
+
+  // Contar questões em tempo real
+  const { count: questionCount } = useQuestionCount({
+    filterIds: [
+      ...state.selectedSubjects.filter(id => !id.includes('_')),
+      ...(state.selectedExamTypes || [])
+    ],
+    subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
+    years: state.selectedYears,
+    institutions: state.selectedInstitutions,
+  });
+
+  const handleNext = () => {
+    // Não validar assuntos - permitir avançar sem selecionar
+    setError('');
+    router.push('/banco-questoes/criar/anos');
+  };
+
+  const handleBack = () => {
+    router.push('/banco-questoes/criar/geral');
+  };
+
+  const handleEditStep = (stepId: string) => {
+    router.push(`/banco-questoes/criar/${stepId}`);
+  };
+
+  const selectedSubjects = useMemo(() =>
+    subjects.filter(s => state.selectedSubjects.includes(s.id)),
+    [subjects, state.selectedSubjects]
+  );
+
+  const { hierarchy: institutionHierarchy } = useInstitutionHierarchy();
+  const selectedInstitutions = useMemo(() => {
+    const result: any[] = [];
+    institutionHierarchy.forEach((stateNode: any) => {
+      if (stateNode.children) {
+        stateNode.children.forEach((inst: any) => {
+          if (state.selectedInstitutions.includes(inst.id)) {
+            result.push({
+              id: inst.id,
+              name: inst.name,
+              state: stateNode.name,
+            });
+          }
+        });
+      }
+    });
+    return result;
+  }, [institutionHierarchy, state.selectedInstitutions]);
+
+  return (
+    <div className="space-y-6">
+      <StepperProgress currentStep="assuntos" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <div className="lg:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
+            <div className="flex items-center justify-between mb-6">
+              <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+                Assuntos
+              </h1>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={handleBack}
+                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                >
+                  <span className="material-symbols-outlined">arrow_back</span>
+                  <span>Voltar</span>
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                >
+                  <span>Próximo</span>
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            {loadingSubjects ? (
+              <div className="space-y-4">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div key={i} className="h-16 bg-slate-100 dark:bg-slate-800 rounded-lg animate-pulse" />
+                ))}
+              </div>
+            ) : (
+              <SubjectSelector
+                subjects={subjects}
+                selectedSubjects={state.selectedSubjects}
+                searchTerm={searchTerm}
+                onSearchChange={setSearchTerm}
+                onToggleSubject={(id) => {
+                  toggleSubject(id);
+                  setError('');
+                }}
+              />
+            )}
+
+            {error && (
+              <p className="mt-4 text-sm text-red-500">{error}</p>
+            )}
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+          <SummaryPanel
+            data={{
+              listName: state.listName,
+              selectedSubjects,
+              selectedYears: state.selectedYears,
+              selectedInstitutions,
+              selectedExamTypes: state.selectedExamTypes || [],
+              totalQuestions: questionCount,
+            }}
+            onEditStep={handleEditStep}
+            onRemoveSubject={toggleSubject}
+            onRemoveYear={toggleYear}
+            onRemoveInstitution={toggleInstitution}
+            onClearFilters={clearFilters}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AnosStep() {
+  const router = useRouter();
+  const { state, toggleYear, toggleAllYears, toggleSubject, toggleInstitution, clearFilters } = useCreateList();
+  const [error, setError] = useState('');
+
+  // Buscar dados reais do banco
+  const { years: yearsHierarchy, loading: loadingYears } = useAvailableYears();
+  const { hierarchy } = useFilterHierarchy();
+  const subjects = useMemo(() => hierarchyToSubjects(hierarchy), [hierarchy]);
+
+  // Contar questões em tempo real
+  const { count: questionCount } = useQuestionCount({
+    filterIds: [
+      ...state.selectedSubjects.filter(id => !id.includes('_')),
+      ...(state.selectedExamTypes || [])
+    ],
+    subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
+    years: state.selectedYears,
+    institutions: state.selectedInstitutions,
+  });
+
+  const handleNext = () => {
+    // Não validar anos - permitir avançar sem selecionar
+    setError('');
+    router.push('/banco-questoes/criar/instituicoes');
+  };
+
+  const handleBack = () => {
+    router.push('/banco-questoes/criar/assuntos');
+  };
+
+  const handleEditStep = (stepId: string) => {
+    router.push(`/banco-questoes/criar/${stepId}`);
+  };
+
+  const selectedSubjects = useMemo(() =>
+    subjects.filter(s => state.selectedSubjects.includes(s.id)),
+    [subjects, state.selectedSubjects]
+  );
+
+  const selectedInstitutions = useMemo(() =>
+    [] as any[], // TODO: Implementar quando tiver dados de instituições
+    []
+  );
+
+  return (
+    <div className="space-y-6">
+      <StepperProgress currentStep="anos" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <div className="lg:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
+            <div className="flex items-center justify-between mb-8">
+              <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+                Anos
+              </h1>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={handleBack}
+                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                >
+                  <span className="material-symbols-outlined">arrow_back</span>
+                  <span>Voltar</span>
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                >
+                  <span>Próximo</span>
+                  <span className="material-symbols-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            {loadingYears ? (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                  <div key={i} className="h-24 bg-slate-100 dark:bg-slate-800 rounded-lg animate-pulse" />
+                ))}
+              </div>
+            ) : (
+              <YearGridSelector
+                years={yearsHierarchy}
+                selectedYears={state.selectedYears.map(y => {
+                  // Se o ano tem decimal (2024.1, 2024.2), precisa adicionar o ano base também
+                  const yearStr = y.toString();
+                  if (yearStr.includes('.')) {
+                    const baseYear = Math.floor(y);
+                    return `Ano da Prova_${baseYear}_${yearStr}`;
+                  }
+                  return `Ano da Prova_${y}`;
+                })}
+                onToggleYear={(yearId) => {
+                  // Extrair o ano do ID (ex: "Ano da Prova_2025" -> 2025)
+                  const parts = yearId.split('_');
+                  const yearStr = parts[parts.length - 1];
+                  const yearValue = parseInt(yearStr);
+                  if (!isNaN(yearValue)) {
+                    toggleYear(yearValue);
+                    setError('');
+                  }
+                }}
+                onToggleMultipleYears={(yearIds, shouldSelect) => {
+                  // Extrair todos os anos dos IDs
+                  const years = yearIds
+                    .map(id => {
+                      const parts = id.split('_');
+                      const yearStr = parts[parts.length - 1];
+                      return parseFloat(yearStr);
+                    })
+                    .filter(y => !isNaN(y));
+
+                  // Adicionar ou remover todos os anos
+                  years.forEach(year => {
+                    const isSelected = state.selectedYears.includes(year);
+                    if (shouldSelect && !isSelected) {
+                      toggleYear(year);
+                    } else if (!shouldSelect && isSelected) {
+                      toggleYear(year);
+                    }
+                  });
+                  setError('');
+                }}
+              />
+            )}
+
+            {error && (
+              <p className="mt-4 text-sm text-red-500">{error}</p>
+            )}
+          </div>
+        </div>
+
+        <div className="lg:col-span-2">
+          <SummaryPanel
+            data={{
+              listName: state.listName,
+              selectedSubjects,
+              selectedYears: state.selectedYears,
+              selectedInstitutions,
+              selectedExamTypes: state.selectedExamTypes || [],
+              totalQuestions: questionCount,
+            }}
+            onEditStep={handleEditStep}
+            onRemoveSubject={toggleSubject}
+            onRemoveYear={toggleYear}
+            onRemoveInstitution={toggleInstitution}
+            onClearFilters={clearFilters}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function InstituicoesStep() {
+  const router = useRouter();
+  const { state, cachedQuestions, setCachedQuestions, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit } = useCreateList();
+  const [error, setError] = useState('');
+  const [isCreating, setIsCreating] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
+  
+  // Estados para segurar botão
+  const [isHoldingIncrement, setIsHoldingIncrement] = useState(false);
+  const [isHoldingDecrement, setIsHoldingDecrement] = useState(false);
+  const incrementIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const decrementIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const holdActivatedRef = useRef(false);
+
+  // Buscar dados reais do banco
+  const { hierarchy } = useFilterHierarchy();
+  const subjects = useMemo(() => hierarchyToSubjects(hierarchy), [hierarchy]);
+  const { hierarchy: institutionHierarchy } = useInstitutionHierarchy();
+
+  // Contar questões em tempo real - união de tipos de prova + instituições
+  const { count: questionCount } = useQuestionCount({
+    filterIds: [
+      ...state.selectedSubjects.filter(id => !id.includes('_')),
+      ...(state.selectedExamTypes || [])
+    ],
+    subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
+    years: state.selectedYears,
+    institutions: state.selectedInstitutions,
+  });
+
+  // Garantir que os estados de holding sejam resetados se o mouse for solto fora do botão
+  useEffect(() => {
+    const handleGlobalMouseUp = () => {
+      setIsHoldingIncrement(false);
+      setIsHoldingDecrement(false);
+    };
+
+    window.addEventListener('mouseup', handleGlobalMouseUp);
+    window.addEventListener('touchend', handleGlobalMouseUp);
+
+    return () => {
+      window.removeEventListener('mouseup', handleGlobalMouseUp);
+      window.removeEventListener('touchend', handleGlobalMouseUp);
+    };
+  }, []);
+  
+  // Efeito para incremento contínuo com aceleração progressiva
+  useEffect(() => {
+    if (isHoldingIncrement) {
+      let delay = 40; // Começa com 40ms (2x mais rápido)
+      let iterations = 0;
+      
+      const accelerate = () => {
+        const newValue = Math.min(questionCount, (state.questionLimit || 0) + 1);
+        updateQuestionLimit(newValue);
+        
+        iterations++;
+        
+        // Acelerar progressivamente - reduz o delay
+        if (iterations > 5) {
+          delay = 20; // Fica mais rápido
+        }
+        if (iterations > 8) {
+          delay = 10; // Ainda mais rápido
+        }
+        if (iterations > 15) {
+          delay = 5; // Super rápido
+        }
+        if (iterations > 25) {
+          delay = 2; // Velocidade máxima (2x mais rápido)
+        }
+        
+        incrementIntervalRef.current = setTimeout(accelerate, delay);
+      };
+      
+      // Primeiro incremento após 50ms
+      const timeout = setTimeout(() => {
+        holdActivatedRef.current = true;
+        accelerate();
+      }, 50);
+      
+      return () => {
+        clearTimeout(timeout);
+        if (incrementIntervalRef.current) {
+          clearTimeout(incrementIntervalRef.current);
+        }
+      };
+    }
+  }, [isHoldingIncrement, questionCount, state.questionLimit, updateQuestionLimit]);
+  
+  // Efeito para decremento contínuo com aceleração progressiva
+  useEffect(() => {
+    if (isHoldingDecrement) {
+      let delay = 40; // Começa com 40ms (2x mais rápido)
+      let iterations = 0;
+      
+      const accelerate = () => {
+        const newValue = Math.max(0, (state.questionLimit || 0) - 1);
+        updateQuestionLimit(newValue);
+        
+        iterations++;
+        
+        // Acelerar progressivamente - reduz o delay
+        if (iterations > 5) {
+          delay = 20; // Fica mais rápido
+        }
+        if (iterations > 8) {
+          delay = 10; // Ainda mais rápido
+        }
+        if (iterations > 15) {
+          delay = 5; // Super rápido
+        }
+        if (iterations > 25) {
+          delay = 2; // Velocidade máxima (2x mais rápido)
+        }
+        
+        decrementIntervalRef.current = setTimeout(accelerate, delay);
+      };
+      
+      // Primeiro decremento após 50ms
+      const timeout = setTimeout(() => {
+        holdActivatedRef.current = true;
+        accelerate();
+      }, 50);
+      
+      return () => {
+        clearTimeout(timeout);
+        if (decrementIntervalRef.current) {
+          clearTimeout(decrementIntervalRef.current);
+        }
+      };
+    }
+  }, [isHoldingDecrement, state.questionLimit, updateQuestionLimit]);
+
+  // Converter hierarquia de instituições para formato do componente
+  const institutions = useMemo(() => {
+    const result: any[] = [];
+    institutionHierarchy.forEach((state: any) => {
+      if (state.children) {
+        state.children.forEach((inst: any) => {
+          result.push({
+            id: inst.id,
+            name: inst.name,
+            state: state.name,
+            acronym: state.name, // Usar sigla do estado como acronym
+          });
+        });
+      }
+    });
+    return result;
+  }, [institutionHierarchy]);
+
+  const handleFinish = async () => {
+    // Validação 1: Nome obrigatório
+    if (!state.listName || state.listName.trim() === '') {
+      setError('Por favor, dê um nome para a lista antes de salvar');
+      return;
+    }
+
+    // Validação 2: Limite de questões
+    if (state.questionLimit === 0) {
+      setError('Por favor, defina a quantidade de questões desejada (mínimo 1)');
+      return;
+    }
+
+    if (state.questionLimit > 500) {
+      setError('O limite máximo é de 500 questões por lista. Que tal delimitar mais a sua busca removendo alguma universidade, ano de prova ou assunto? Você pode criar outra lista para as questões restantes!');
+      return;
+    }
+
+    setError('');
+    setIsCreating(true);
+
+    try {
+      // 1. Usar questões do cache se disponíveis, senão buscar
+      let questions = cachedQuestions;
+
+      if (!questions || questions.length === 0) {
+        const searchResponse = await api.post('/banco-questoes/questions/search', {
+          filterIds: [
+            ...state.selectedSubjects.filter(id => !id.includes('_')),
+            ...(state.selectedExamTypes || [])
+          ],
+          subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
+          years: state.selectedYears,
+          institutions: state.selectedInstitutions,
+          limit: 10000,
+        });
+
+        questions = searchResponse.data.data?.questions || [];
+      }
+
+      if (!questions || questions.length === 0) {
+        setError('Nenhuma questão encontrada com os filtros selecionados');
+        setIsCreating(false);
+        return;
+      }
+
+      // Limitar questões ao número especificado
+      const limitedQuestions = questions.slice(0, state.questionLimit);
+
+      // 2. Criar a lista no backend
+      const createListResponse = await api.post('/question-lists', {
+        name: state.listName,
+        title: state.listName,
+        description: `Lista criada com ${limitedQuestions.length} questões`,
+        folder_id: state.folderId || null,
+        is_public: false,
+        tags: [],
+        status: 'active',
+        question_count: limitedQuestions.length,
+        questions: limitedQuestions.map((q: any) => q.id), // Array de IDs das questões
+      });
+
+      const listData = createListResponse.data;
+      console.log('Lista criada com sucesso:', listData);
+
+      resetState();
+      router.push('/banco-questoes');
+    } catch (err: any) {
+      console.error('Erro ao criar lista:', err);
+      setError(err.message || 'Erro ao criar lista. Tente novamente.');
+      setIsCreating(false);
+    }
+  };
+
+  const handleBack = () => {
+    router.push('/banco-questoes/criar/anos');
+  };
+
+  const handleEditStep = (stepId: string) => {
+    router.push(`/banco-questoes/criar/${stepId}`);
+  };
+
+  const selectedSubjects = useMemo(() =>
+    subjects.filter(s => state.selectedSubjects.includes(s.id)),
+    [subjects, state.selectedSubjects]
+  );
+
+  const selectedInstitutions = useMemo(() =>
+    institutions.filter((i: any) => state.selectedInstitutions.includes(i.id)),
+    [institutions, state.selectedInstitutions]
+  );
+
+  return (
+    <>
+      <div className="space-y-6">
+        <StepperProgress currentStep="instituicoes" />
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+          <div className="lg:col-span-3">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
+              <div className="flex items-center justify-between mb-8">
+                <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+                  Instituições
+                </h1>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={handleBack}
+                    className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                  >
+                    <span className="material-symbols-outlined">arrow_back</span>
+                    <span>Voltar</span>
+                  </button>
+                  <button
+                    onClick={handleFinish}
+                    disabled={isCreating}
+                    className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isCreating ? (
+                      <span>Criando...</span>
+                    ) : (
+                      <>
+                        <span>Finalizar Lista</span>
+                        <span className="material-symbols-outlined">done_all</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              <ExamTypeSelector
+                selectedExamTypes={state.selectedExamTypes || []}
+                onToggleExamType={toggleExamType}
+              />
+
+              <InstitutionSelector
+                institutions={institutions}
+                selectedInstitutions={state.selectedInstitutions}
+                onToggleInstitution={(id) => {
+                  toggleInstitution(id);
+                  setError('');
+                }}
+              />
+
+              <div className="mt-8 p-6 bg-background-light dark:bg-background-dark rounded-lg border border-border-light dark:border-border-dark">
+                <div className="flex items-center justify-between mb-3">
+                  <label htmlFor="question-limit" className="text-sm font-medium text-slate-700 dark:text-slate-200">
+                    Quantidade de Questões
+                  </label>
+                  <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                    {questionCount > 0
+                      ? `${questionCount} disponíveis (máx: ${Math.min(questionCount, 500)})`
+                      : 'Selecione filtros'}
+                  </p>
+                </div>
+                <div className="relative flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!holdActivatedRef.current) {
+                        const newValue = Math.max(0, (state.questionLimit || 0) - 1);
+                        updateQuestionLimit(newValue);
+                        setError('');
+                      }
+                    }}
+                    onMouseDown={() => {
+                      holdActivatedRef.current = false;
+                      setIsHoldingDecrement(true);
+                    }}
+                    onMouseUp={() => setIsHoldingDecrement(false)}
+                    onMouseLeave={() => setIsHoldingDecrement(false)}
+                    onTouchStart={() => {
+                      holdActivatedRef.current = false;
+                      setIsHoldingDecrement(true);
+                    }}
+                    onTouchEnd={() => setIsHoldingDecrement(false)}
+                    disabled={(state.questionLimit ?? 0) <= 0}
+                    className="flex-shrink-0 w-12 h-12 flex items-center justify-center
+                             bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark
+                             rounded-lg hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
+                             transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg
+                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-border-light dark:disabled:hover:border-border-dark
+                             group"
+                  >
+                    <span className="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary group-hover:text-primary transition-colors">
+                      remove
+                    </span>
+                  </button>
+                  <input
+                    id="question-limit"
+                    type="number"
+                    min="0"
+                    max={questionCount}
+                    value={state.questionLimit || 0}
+                    onChange={(e) => {
+                      const value = parseInt(e.target.value) || 0;
+                      updateQuestionLimit(value);
+                      setError('');
+                    }}
+                    className="flex-1 px-4 py-3 bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark 
+                             rounded-lg text-text-light-primary dark:text-text-dark-primary text-center text-lg font-bold
+                             focus:ring-2 focus:ring-primary focus:border-primary shadow-md
+                             [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    placeholder="0"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!holdActivatedRef.current) {
+                        const newValue = Math.min(questionCount, (state.questionLimit || 0) + 1);
+                        updateQuestionLimit(newValue);
+                        setError('');
+                      }
+                    }}
+                    onMouseDown={() => {
+                      holdActivatedRef.current = false;
+                      setIsHoldingIncrement(true);
+                    }}
+                    onMouseUp={() => setIsHoldingIncrement(false)}
+                    onMouseLeave={() => setIsHoldingIncrement(false)}
+                    onTouchStart={() => {
+                      holdActivatedRef.current = false;
+                      setIsHoldingIncrement(true);
+                    }}
+                    onTouchEnd={() => setIsHoldingIncrement(false)}
+                    disabled={questionCount <= 0 || (state.questionLimit ?? 0) >= questionCount}
+                    className="flex-shrink-0 w-12 h-12 flex items-center justify-center
+                             bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark
+                             rounded-lg hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
+                             transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg
+                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-border-light dark:disabled:hover:border-border-dark
+                             group"
+                  >
+                    <span className="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary group-hover:text-primary transition-colors">
+                      add
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {error && (
+                <p className="mt-4 text-sm text-red-500">{error}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="lg:col-span-2">
+            <SummaryPanel
+              data={{
+                listName: state.listName,
+                selectedSubjects,
+                selectedYears: state.selectedYears,
+                selectedInstitutions,
+                selectedExamTypes: state.selectedExamTypes || [],
+                totalQuestions: questionCount,
+              }}
+              onEditStep={handleEditStep}
+              onRemoveSubject={toggleSubject}
+              onRemoveYear={toggleYear}
+              onRemoveInstitution={toggleInstitution}
+              onClearFilters={clearFilters}
+              onPreviewQuestions={() => setShowPreview(true)}
+            />
+          </div>
+        </div>
+      </div>
+
+      <QuestionPreviewModal
+        isOpen={showPreview}
+        onClose={() => setShowPreview(false)}
+        filterIds={[
+          ...state.selectedSubjects.filter(id => !id.includes('_')),
+          ...(state.selectedExamTypes || [])
+        ]}
+        subFilterIds={state.selectedSubjects.filter(id => id.includes('_'))}
+        years={state.selectedYears}
+        institutions={state.selectedInstitutions}
+        onQuestionsLoaded={setCachedQuestions}
+      />
+    </>
+  );
+}

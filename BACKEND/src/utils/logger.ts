@@ -1,4 +1,4 @@
-import winston from 'winston';
+import * as winston from 'winston';
 
 /**
  * Configuração do logger usando winston

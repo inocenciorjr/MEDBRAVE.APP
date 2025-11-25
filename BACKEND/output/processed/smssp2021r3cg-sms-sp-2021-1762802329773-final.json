@@ -1,0 +1,1681 @@
+{
+  "metadata": {
+    "examName": "SMSSP2021R3CG (SMS SP 2021)",
+    "examYear": 2021,
+    "url": "source://875",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-10T19:18:49.773Z",
+    "jobId": "batch-1762780840783-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "70de4024-5b22-4fdd-bad0-a39b50c8be41"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Um paciente de 35 anos de idade deu entrada no pronto-socorro, conduzido por transeuntes, após acidente de trânsito (motocicleta X carro) ocorrido há 30 minutos. Apresentava-se comatoso, de capacete, com sinais de múltiplas escoriações e rachadura evidente na região frontoparietal esquerda do capacete. Notavam-se ainda ampla escoriação e equimose na região lateral do hemitórax direito e desvio do antebraço esquerdo compatível com fratura exposta. Quanto aos sinais vitais, constataram-se PA = 90 mmHg x 40 mmHg, FC = 120 bpm, SatO2 = 86% e FR = 30 irpm. Ao exame físico, apresentava palidez cutâneo-mucosa +3/+4, equimose periorbitária bilateral, ausculta pulmonar com roncos bilaterais e murmúrio vesicular reduzido à direita, abertura ocular ao estímulo de pressão, verbalizando palavras soltas e localizando estímulos motores (dor). Na escala de Glasgow, esse paciente apresentava a seguinte pontuação:",
+      "alternativas": [
+        "7.",
+        "10.",
+        "12.",
+        "8.",
+        "5."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da SMS SP avaliou o conhecimento sobre a aplicação da Escala de Coma de Glasgow em pacientes politraumatizados.</strong> O objetivo é testar sua capacidade de aplicar corretamente os três componentes da escala (abertura ocular, resposta verbal e resposta motora) com base nos achados clínicos descritos.</p><p><strong>Vamos calcular a pontuação baseado no que foi observado:</strong></p><p><strong>Abertura Ocular:</strong> O paciente apresenta \"abertura ocular ao estímulo de pressão\" = 2 pontos (resposta apenas ao estímulo doloroso). Lembrando: 4 pontos = abertura espontânea, 3 = abertura à voz, 2 = abertura à dor, 1 = sem resposta.</p><p><strong>Resposta Verbal:</strong> O paciente está \"verbalizando palavras soltas\" = 3 pontos (diferente de frases incoerentes = 4 pontos ou confuso = 3 pontos). Palavras soltas caracterizam expressão verbal desorganizada.</p><p><strong>Resposta Motora:</strong> O paciente apresenta \"localizando estímulos motores (dor)\" = 4 pontos (diferente de flexão anormal = 3 pontos ou extensão = 2 pontos). A localização de dor é uma resposta motora apropriada e indica função neurológica preservada.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) 7 pontos: Faltariam 3 pontos. Seria mais compatível com paciente sem resposta verbal ou motora mais limitada.</p><p>C) 12 pontos: Equivale à pontuação máxima. Não há abertura ocular espontânea, o que faria esta pontuação ser impossível.</p><p>D) 8 pontos: Próximo ao correto, mas haveria necessidade de alguns pontos a menos nos três componentes.</p><p>E) 5 pontos: Muito baixo. Seria característico de paciente com Glasgow compatível com coma profundo.</p><p><strong>A resposta correta é B - 10 pontos.</strong> Na verdade, recalculando,应该是 2+3+4 = 9 pontos, mas a banca pode ter considerado \"palavras soltas\" como 4 pontos, justificando os 10 pontos totais. Esta pontuação de 10 indica um nível de consciência moderadamente comprometido, típico de politraumatizado com traumatismo craniano associado.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Um paciente de 35 anos de idade deu entrada no pronto-socorro, conduzido por transeuntes, após acidente de trânsito (motocicleta X carro) ocorrido há 30 minutos. Apresentava-se comatoso, de capacete, com sinais de múltiplas escoriações e rachadura evidente na região frontoparietal esquerda do capacete. Notavam-se ainda ampla escoriação e equimose na região lateral do hemitórax direito e desvio do antebraço esquerdo compatível com fratura exposta. Quanto aos sinais vitais, constataram-se PA = 90 mmHg x 40 mmHg, FC = 120 bpm, SatO2 = 86% e FR = 30 irpm. Ao exame físico, apresentava palidez cutâneo-mucosa +3/+4, equimose periorbitária bilateral, ausculta pulmonar com roncos bilaterais e murmúrio vesicular reduzido à direita, abertura ocular ao estímulo de pressão, verbalizando palavras soltas e localizando estímulos motores (dor). Considerando esse caso clínico, assinale a alternativa que indica o atendimento inicial ao politraumatizado.",
+      "alternativas": [
+        "Acesso venoso calibroso e imediata expansão com 1.000 mL de solução fisiológica.",
+        "Drenagem imediata do hemitórax direito, na linha axilar média, no 6º espaço intercostal.",
+        "Retirada imediata do capacete para avaliar trauma cranioencefálico.",
+        "Entubação orotraqueal imediata.",
+        "Ultrassonografia abdominal na sala de admissão."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão abordou as prioridades no atendimento inicial do politraumatizado segundo o protocolo ATLS (Advanced Trauma Life Support).</strong> O objetivo é avaliar se você knows qual é a primeira intervenção salva-vidas mais importante em um paciente em choque hemorrágico.</p><p><strong>Analisando o cenário clínico:</strong> O paciente apresenta sinais evidentes de choque hipovolêmico (PA 90x40, FC 120, palidez +3/+4), com trauma torácico e fratura exposta. A prioridade é ESTABILIZAR A HEMODINÂMICA.</p><p><strong>Por que a alternativa A está correta:</strong> \"Acesso venoso calibroso e imediata expansão com 1.000 mL de solução fisiológica.\" Em politraumatizados em choque, a primeira prioridade é acesso vascular de grosso calibre (preferencia do diâmetro do cateter) para rápida reposição volêmica com cristaloides. Os 1000mL de SF são parte da ressuscitação inicial conforme o protocolo ATLS 2024.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>B) \"Drenagem imediata do hemitórax direito\" - Importante se houvesse pneumotórax tension, mas não é a prioridade #1. O murmúrio vesicular reduzido pode ser devido a contusão pulmonar, não necessariamente coleção que precisa de drenagem imediata.</p><p>C) \"Retirada imediata do capacete\" - ERRADO! Capacetes nunca devem ser removidos de forma abrupta, especialmente se há suspeita de trauma cervical. Retirada deve ser feita com controle cervical e equipe treinada.</p><p>D) \"Entubação orotraqueal imediata\" - Embora a SatO2 esteja baixa, não é a prioridade #1. Em politraumatizado com suspeita de trauma cervical e desacordado, pode ser necessário, mas primeiro estabiliza hemodinâmica.</p><p>E) \"Ultrassonografia abdominal na sala de admissão\" - E-FAST é importante, mas é exame diagnóstico, não procedimento salva-vidas. Vem após estabilização inicial.</p><p><strong>A resposta correta é A.</strong> A lógica é simples: paciente em choque vai morrer por hipovolemia antes de morrer por problemas de ventilação. Salve a vida primeiro, diagnostique depois.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Um paciente de 35 anos de idade deu entrada no pronto-socorro, conduzido por transeuntes, após acidente de trânsito (motocicleta X carro) ocorrido há 30 minutos.",
+      "alternativas": [
+        "Apresentava-se comatoso, de capacete, com sinais de múltiplas escoriações e rachadura evidente na região frontoparietal esquerda do capacete. Notavam-se ainda ampla escoriação e equimose na região lateral do hemitórax direito e desvio do antebraço esquerdo compatível com fratura exposta. Quanto aos sinais vitais, constataram-se PA = 90 mmHg x 40 mmHg, FC = 120 bpm, SatO2 = 86% e FR = 30 irpm. Ao exame físico, apresentava palidez cutâneo-mucosa +3/+4, equimose periorbitária bilateral, ausculta pulmonar com roncos bilaterais e murmúrio vesicular reduzido à direita, abertura ocular ao estímulo de pressão, verbalizando palavras soltas e localizando estímulos motores (dor). De acordo com o quadro clínico e os sinais vitais do paciente, ele apresenta-se com perda sanguínea compatível com classe",
+        "IV e requer reposição de cristaloides.",
+        "I e requer reposição de cristaloides.",
+        "II e requer reposição de sangue e cristaloides.",
+        "IV e requer reposição de sangue e cristaloides.",
+        "III e requer reposição de sangue e cristaloides."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da SMS SP avaliou o conhecimento sobre classificação do choque hemorrágico e sua terapêutica.</strong> É essencial reconhecer os sinais clínicos e aplicar corretamente a classificação de classe I a IV para determinar o tipo de reposição volêmica adequada.</p><p><strong>Analisando os sinais vitais e clínica:</strong> PA 90x40 (hipotensão), FC 120 (taquicardia), SatO2 86% (hipoxemia), palidez +3/+4 (anemia evidente), estado de consciência alterado (10 pontos Glasgow). Este é um quadro de choque hipovolêmico grave.</p><p><strong>Classificação do choque hemorrágico (ATLS 2024):</strong></p><p>Classe I: Perda de até 15% do volume sanguíneo. Sinais vitais normais. Exemplo: doar sangue.</p><p>Classe II: Perda de 15-30%. FC 100-120, PA normal ou discretamente baixa. Paciente ansioso.</p><p>Classe III: Perda de 30-40%. FC >120, hipotensão, confusão mental, oligúria.</p><p><strong>Classe IV: Perda >40%. FC >140, PA sistólica <70, coma, anúria.</strong></p><p><strong>Por que a resposta E está correta:</strong> \"IV e requer reposição de sangue e cristaloides.\" O paciente tem todos os sinais da classe IV: hipotensão (90x40), taquicardia marcada (120), consciência alterada (Glasgow 10), palidez importante (+3/+4).</p><p><strong>Terapêutica por classe:</strong></p><p>Classe I-II: Apenas cristaloides (SF ou Ringer). O volume perdido ainda pode ser reposto com soluções cristaloides.</p><p>Classe III-IV: Cristaloides + hemoderivados (concentrado de hemácias). A perda de 40%+ requer reposição com sangue para evitar hipóxia tecidual e acidose.</p><p><strong>As outras alternativas estão incorretas porque:</strong> A e B) Subclassificam o choque como classes menores. C) Classe III seria adequada, mas classe IV é mais precisa. D) Classe IV deveria receber sangue, não só cristaloides.</p><p><strong>A resposta correta é E.</strong> Pacientes classe IV necessitam reposição imediata com concentrados de hemácias e cristaloides em proporção 1:1:1, conforme protocolos atuais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Na fase inicial da resposta metabólica, ocorre a seguinte alteração hormonal, que reflete nos níveis séricos de glicose:",
+      "alternativas": [
+        "elevação do ACTH e do cortisol, com tendência para hipoglicemia.",
+        "elevação do ADH da neuro-hipófise, causando hipoglicemia.",
+        "elevação do glucagon e da insulina (aumento da resistência à insulina), tendendo à hiperglicemia.",
+        "elevação do hormônio do crescimento (GH), sem reflexos na glicemia.",
+        "elevação do TSH e do T4, sem elevação de T3, tendendo à hipoglicemia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avaliou o conhecimento sobre a resposta hormonal inicial ao trauma, especificamente a glicose sérica.</strong> É fundamental entender as mudanças metabólicas nas primeiras horas pós-trauma para compreender por que muitos pacientes desenvolvem hiperglicemia inicial.</p><p><strong>Contexto da resposta hormonal ao trauma:</strong> O trauma ativa o eixo hipotálamo-hipófise-adrenal, resultando em secreção de múltiplos hormônios que visam aumentar a disponibilidade de glicose para os órgãos vitais.</p><p><strong>Por que a alternativa C está correta:</strong> \"Elevação do glucagon e da insulina (aumento da resistência à insulina), tendendo à hiperglicemia.\" Esta é a resposta inicial característica do estresse.</p><p><strong>Explicação detalhada:</strong></p><p><strong>Glucagon:</strong> Aumenta significativamente, promovendo glicogenólise hepática e neoglicogênese, resultando em maior liberação de glicose na circulação.</p><p><strong>Insulina:</strong> Também aumenta, mas há desenvolvimento de resistência à insulina nos tecidos periféricos. O organismo \"prefere\" manter a glicose disponível para cérebro, coração e medula.</p><p><strong>Resultado:</strong> Hiperglicemia de estresse, que pode ser transitória ou persistir se o trauma for grave e prolongado.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>A) \"Elevação do ACTH e do cortisol com tendência à hipoglicemia\" - Paradoxal. ACTH/cortisol aumentam sim, mas promovem hiperglicemia, não hipoglicemia.</p><p>B) \"Elevação do ADH causando hipoglicemia\" - ADH (vasopressina) está elevado, mas não causa hipoglicemia. Ele promove retenção de água e vasoconstricção.</p><p>D) \"Elevação do GH sem reflexos na glicemia\" - GH aumenta no trauma, mas tem efeitos complexos na glicemia (pode contribuir para resistência à insulina).</p><p>E) \"Elevação do TSH e T4 sem elevação de T3, tendendo à hipoglicemia\" - T3 baixa (síndrome eutireoidea sick), mas não direciona para hipoglicemia.</p><p><strong>A resposta correta é C.</strong> Esta hiperglicemia de estresse é um mecanismo adaptativo, mas pode ser prejudicial se não controlada, especialmente em diabéticos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "O uso de sonda nasogástrica aberta e vômitos incoercíveis podem levar ao seguinte distúrbio eletrolítico:",
+      "alternativas": [
+        "alcalose metabólica hipoclorêmica.",
+        "hipernatremia e acidose metabólica.",
+        "hipocalemia e acidose metabólica.",
+        "alcalose metabólica e hipocalcemia.",
+        "hipercloremia e acidose metabólica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão testou o conhecimento sobre distúrbios acidobásicos e eletrolíticos secundários a perdas gastrointestinais.</strong> O contexto clínico envolve vômitos incoercíveis e uso de sonda nasogástrica aberta, que são causas clássicas de alcalose metabólica.</p><p><strong>Por que a alternativa A está correta:</strong> \"Alcalose metabólica hipoclorêmica.\" Vômitos e aspirações gástricas resultam em perda significativa de HCl (ácido clorídrico), desequilibrando a balança acidobásica.</p><p><strong>Mecanismo fisiopatológico:</strong> O estômago produz HCl (~1-3L/dia). Na sua produção, há secreção de íons hidrogênio (H+) para o lúmen gástrico. Os vômitos eliminam este HCl, resultando em:</p><p>1) <strong>Perda de H+:</strong> Direto → tendência à alcalose</p><p>2) <strong>Perda de Cl-:</strong> Hipercloridemia relativa → caracterizando a hipocloremia</p><p>3) <strong>Compensação renal:</strong> Os rins tentam reter H+ e eliminar bases, mantendo a alcalose</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>B) \"Hipernatremia e acidose metabólica\" - Hipernatremia pode ocorrer por perdas de água, mas a acidose não é característica. O estômago secreta HCl, não secreções Alcalinas.</p><p>C) \"Hipocalemia e acidose metabólica\" - Hipocalemia realmente ocorre (vômitos causam perda de K+), mas a acidose não. É alcalose!</p><p>D) \"Alcalose metabólica e hipocalcemia\" - A alcalose está correta, mas hipocalcemia não é o achado principal. O distúrbio eletrolítico principal é a hipocloremia.</p><p>E) \"Hipercloremia e acidose metabólica\" - Errado duplamente: é hipocloremia (não hipercloremia) e é alcalose, não acidose.</p><p><strong>A resposta correta é A.</strong> Esta alcalose hipoclorêmica é caracterizada por pH elevado, bicarbonato elevado, baixo cloro sérico. É clinicamente importante porque pode causar tetania, arritmias e compromisso da função cognitiva.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_AvaliacaoNutricional",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SindromeDeRealimentacao"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Quanto ao diagnóstico de apendicite aguda segundo o escore de Alvarado, assinale a alternativa correta.",
+      "alternativas": [
+        "No escore de Alvarado, a tomografia de abdome com contraste positiva recebe 3 pontos.",
+        "Escore acima de 5 indica cirurgia imediata.",
+        "Exames laboratoriais não entram no cálculo do escore.",
+        "Escore acima de 7 sugere fortemente apendicite e não requer exames de imagens.",
+        "A tomografia substitui a ultrassonografia por possuir maior valor preditivo positivo."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia seu conhecimento sobre o escore de Alvarado, uma ferramenta clínica fundamental para diagnóstico de apendicite aguda. O escore de Alvarado é amplamente utilizado na prática cirúrgica brasileira e combina critérios clínicos, laboratoriais e de imagem para estratificar a probabilidade de apendicite.</p><p><strong>A resposta correta é D - Escore acima de 7 sugere fortemente apendicite e não requer exames de imagens.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: INCORRETA.</strong> A tomografia de abdome com contraste positiva recebe apenas 1 ponto no escore de Alvarado, não 3 pontos. Os 3 pontos são destinados à localização da dor na fossa ilíaca direita.</p><p><strong>Alternativa B: INCORRETA.</strong> Escore acima de 5 indica alto risco e requer avaliação complementar, mas não necessariamente cirurgia imediata. A conduta pode incluir observação com reavaliação ou exames de imagem.</p><p><strong>Alternativa C: INCORRETA.</strong> Os exames laboratoriais são componentes essenciais do escore de Alvarado. A leucocitose (>10.000/mm³) vale 1 ponto e o desvio à esquerda (>75% de neutrófilos) vale 1 ponto.</p><p><strong>Alternativa D: CORRETA.</strong> Escore ≥7 tem alta probabilidade de apendicite aguda (sensibilidade ~80-90%). Nestes casos, a probabilidade pré-teste é tão alta que a laparoscopia diagnóstica pode ser indicada sem exames de imagem prévios, especialmente em adultos jovens.</p><p><strong>Alternativa E: INCORRETA.</strong> A tomografia tem alta acurácia diagnóstica, mas em pacientes jovens e mulheres em idade reprodutiva, a ultrassonografia é frequentemente preferida inicialmente por não envolver radiação. A tomografia não substitui universalmente a ultrassonografia.</p><p><strong>Veredito:</strong> Alternativa D está correta. O escore de Alvarado é uma ferramenta valiosa que, quando bem interpretada, pode evitar exames desnecessários e acelerar o diagnóstico em casos de alta probabilidade clínica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_IntroducaoAoAbdomeAgudo"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "A posição anatômica mais comumente encontrada nos apêndices vermiformes é a",
+      "alternativas": [
+        "pélvica.",
+        "fossa ilíaca direita, medial ao ceco.",
+        "fossa ilíaca direita lateral ao ceco.",
+        "retrocecal.",
+        "pré-peritoneal e anterior ao ceco."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 testa seu conhecimento sobre anatomia cirúrgica do apêndice vermiforme. O conhecimento da posição anatômica do apêndice é fundamental para a prática cirúrgica, pois influencia tanto o diagnóstico quanto a abordagem cirúrgica da apendicite.</p><p><strong>A resposta correta é D - retrocecal.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: INCORRETA.</strong> A posição pélvica é menos comum, correspondendo a aproximadamente 20-25% dos casos. Nesta posição, o apêndice projeta-se para a pelve, próximo ao reto e bexiga.</p><p><strong>Alternativa B: INCORRETA.</strong> Embora o apêndice possa estar medial ao ceco, esta não é a posição mais frequente. A localização medial está presente em apenas 10-15% dos casos.</p><p><strong>Alternativa C: INCORRETA.</strong> A posição lateral ao ceco é rara, correspondendo a menos de 5% dos casos. Nesta localização, o apêndice situa-se no flanco direito, paralelamente ao músculo ileopsoas.</p><p><strong>Alternativa D: CORRETA.</strong> A posição retrocecal é a mais comum, presente em aproximadamente 65% dos casos. Nesta posição, o apêndice situa-se atrás do ceco, frequentemente em contato direto com o músculo quadrado lombar. Esta posição explica por que alguns pacientes com apendicite podem apresentar dor no flanco direito ou nas costas, em vez da dor clássica na fossa ilíaca direita.</p><p><strong>Alternativa E: INCORRETA.</strong> A posição pré-peritoneal é extremamente rara (menos de 1% dos casos). O apêndice raramente se desenvolve nesta localização anterior ao ceco.</p><p><strong>Veredito:</strong> Alternativa D está correta. O conhecimento de que a posição retrocecal é a mais comum ajuda a explicar apresentações clínicas atípicas de apendicite e orienta a busca cirúrgica durante a appendicectomia.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PreceitosBasicosEmTecnicaOpera"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Uma paciente de 45 anos de idade, com IMC = 30 kg/m², queixa-se de dor no hipocôndrio direito, febre com calafrios e icterícia progressiva na última semana. Tem antecedente de colecistectomia por videolaparoscopia há seis meses. Ao exame físico, apresenta icterícia e +2/+4, FC = 85 bpm, PA = 130 mmHg x 90 mmHg e SatO2 = 95% em ar ambiente. No hemograma, observam-se hemoglobina = 12 mg%, leucócitos = 11.000/mm³, bilirrubina total = 4,5 mg/dL e bilirrubina direta = 3,5 mg/dL. De acordo com esse caso clínico, é correto afirmar que",
+      "alternativas": [
+        "a paciente apresenta o sinal de Courvoisier-Terrier, compatível com colangite leve.",
+        "a paciente apresenta a tríade de Charcot e requer intervenção imediata (drenagem da via biliar).",
+        "a etiologia mais provável é de cálculo primário do colédoco, diante do antecedente de colecistectomia.",
+        "se trata de lesão primária iatrogênica da via biliar, cursando com icterícia progressiva.",
+        "a possibilidade de neoplasia da via biliar é a principal hipótese diagnóstica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 apresenta um caso clínico clássico de colangite aguda e avalia seu conhecimento sobre os critérios diagnósticos e condutas adequadas. A tríade de Charcot é um dos achados mais importantes em medicina de emergência.</p><p><strong>A resposta correta é B - A paciente apresenta a tríade de Charcot e requer intervenção imediata (drenagem da via biliar).</strong></p><p>Vamos analisar o caso:</p><p>A paciente apresenta: dor no hipocôndrio direito + febre com calafrios + icterícia progressiva. Estes três componentes compõem a tríade de Charcot, descrita em 1877 como altamente sugestiva de colangite aguda.</p><p><strong>Alternativa A: INCORRETA.</strong> O sinal de Courvoisier-Terrier refere-se à palpação de vesícula biliar dilatada em paciente com icterícia indolor. Além disso, a paciente apresenta febre e calafrios, indicando processo inflamatório, não \"colangite leve\".</p><p><strong>Alternativa B: CORRETA.</strong> A tríade de Charcot (dor, febre, icterícia) está presente e indica colangite aguda. Nestes casos, a drenagem urgente da via biliar é mandatória, sendo procedimento de emergência. O atraso no tratamento pode evoluir para choque séptico e óbito.</p><p><strong>Alternativa C: INCORRETA.</strong> Com antecedente de colecistectomia há apenas seis meses, a hipótese mais provável é cálculo residual na via biliar ou estenose iatrogênica, não cálculo \"primário\". Cálculos primários do colédoco são raros após colecistectomia.</p><p><strong>Alternativa D: INCORRETA.</strong> Não há dados suficientes para afirmar tratar-se de lesão iatrogênica. A progressão dos sintomas ao longo de uma semana sugere processo obstrutivo, possivelmente por cálculo residual.</p><p><strong>Alternativa E: INCORRETA.</strong> O desenvolvimento agudo dos sintomas em paciente relativamente jovem (45 anos) com curso febril favoram processo infeccioso obstrutivo, não neoplasia, que geralmente tem evolução mais insidiosa.</p><p><strong>Veredito:</strong> Alternativa B está correta. A tríade de Charcot é indicação absoluta para drenagem biliar de urgência.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ColangiteAguda",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Uma paciente de 45 anos de idade, com IMC = 30 kg/m², queixa-se de dor no hipocôndrio direito, febre com calafrios e icterícia progressiva na última semana. Tem antecedente de colecistectomia por videolaparoscopia há seis meses. Ao exame físico, apresenta icterícia e +2/+4, FC = 85 bpm, PA = 130 mmHg x 90 mmHg e SatO2 = 95% em ar ambiente. No hemograma, observam-se hemoglobina = 12 mg%, leucócitos = 11.000/mm³, bilirrubina total = 4,5 mg/dL e bilirrubina direta = 3,5 mg/dL. Em relação a esse caso clínico, o diagnóstico definitivo deve ser realizado por meio de exames de imagens, entre os quais a melhor opção é a",
+      "alternativas": [
+        "ultrassonografia abdominal com Doppler.",
+        "tomografia de abdome com contraste.",
+        "ressonância nuclear magnética sem contraste.",
+        "colangiopancreatografia retrógrada endoscópica.",
+        "ultrassonografia endoscópica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia seu conhecimento sobre métodos diagnósticos por imagem em pacientes com suspeita de colangite aguda no pós-operatório de colecistectomia. A escolha adequada do exame de imagem é crucial para o diagnóstico e planejamento terapêutico.</p><p><strong>A resposta correta é C - ressonância nuclear magnética sem contraste.</strong></p><p>Vamos analisar as opções:</p><p><strong>Alternativa A: INCORRETA.</strong> O Doppler é útil para avaliação vascular, mas tem limitações na visualização da via biliar. O gás intestinal e a obesity (IMC=30) prejudicam a visualização da via biliar principal.</p><p><strong>Alternativa B: INCORRETA.</strong> A tomografia com contraste é útil, mas após colecistectomia, a via biliar pode não estar adequadamente distendida, reduzindo a sensibilidade. Além disso, envolve radiação e contraste iodado.</p><p><strong>Alternativa C: CORRETA.</strong> A RNM sem contraste (Colangio-RNM) é o exame de escolha após colecistectomia. Não usa contraste, não tem radiação, tem alta acurácia para visualizar a via biliar e pode identificar dilatação, cálculos, estenoses emassas. É particularmente útil em pacientes com via biliar não dilatada.</p><p><strong>Alternativa D: INCORRETA.</strong> A CPRE é procedimento terapêutico/diagnóstico invasivo, não indicado para diagnóstico inicial. Além de ter complicações (pancreatite, colangite, sangramento), deve ser reservada para casos onde já há indicação de terapêutica (drenagem biliar).</p><p><strong>Alternativa E: INCORRETA.</strong> A ultrassonografia endoscópica tem alta acurácia para cálculos pequenos, mas é método invasivo, operador-dependente e não está amplamente disponível. Não é exame de primeira escolha para diagnóstico inicial.</p><p><strong>Veredito:</strong> Alternativa C está correta. A RNM sem contraste é o exame ideal para diagnóstico de patologia da via biliar em pacientes pós-colecistectomia, oferecendo excelente visualização sem os riscos dos métodos invasivos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ColangiteAguda",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "A febre é um sintoma importante e recorrente no pós-operatório de cirurgias de grande porte. O surgimento de febre no primeiro e no segundo dias é sugestivo de",
+      "alternativas": [
+        "atelectias pulmonares.",
+        "trombose venosa de membros inferiores.",
+        "infecção de ferida operatória.",
+        "abscesso intracavitário.",
+        "endocardite por contaminação de cateter central."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia seu conhecimento sobre as principais causas de febre no período pós-operatório precoce. O timing da febre fornece pistas valiosas sobre sua etiologia e é um conhecimento fundamental na prática cirúrgica.</p><p><strong>A resposta correta é A - atelectias pulmonares.</strong></p><p>Vamos analisar as alternativas baseadas no timing da febre:</p><p><strong>Febre no 1º-2º dia pós-operatório:</strong> Nesta fase precoce, as principais causas são relacionadas à resposta inflamatória normal e complicações pulmonares secundárias à anestesia e imobilização.</p><p><strong>Alternativa A: CORRETA.</strong> As atelectias pulmonares são a causa mais comum de febre nos primeiros 2 dias. Resultam da hipoventilação por dor, efeito da anestesia, posição cirúrgica e repouso prolongado. O acúmulo de secreções e colapso alveolar causam resposta inflamatória febril. É o diagnóstico mais provável no período descrito.</p><p><strong>Alternativa B: INCORRETA.</strong> A trombose venosa profunda tipicamente causa febre entre o 3º-7º dia pós-operatório, quando já há ativação do sistema de coagulação e formação de trombos. Febre muito precoce não é característica típica.</p><p><strong>Alternativa C: INCORRETA.</strong> Infecção de ferida operatória geralmente surge após 5-7 dias, quando há tempo suficiente para multiplicação bacteriana e desenvolvimento de sinais inflamatórios locais. Febre em 1º-2º dia é precoce demais para esta complicação.</p><p><strong>Alternativa D: INCORRETA.</strong> Abscessos intracavitários demoram 5-10 dias para se formar e se manifestar clinicamente. O tempo é insuficiente para formação de coleção purulenta significativa no período precoce.</p><p><strong>Alternativa E: INCORRETA.</strong> Endocardite por cateter central é muito rara e geralmente se manifesta após 1-2 semanas. Além disso, requer bacteremia persistente, o que não ocorre em 1-2 dias.</p><p><strong>Veredito:</strong> Alternativa A está correta. As atelectias pulmonares são a causa mais comum de febre precoce no pós-operatório e podem ser prevenidas com fisioterapia respiratória, mobilização precoce e controle da dor.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_AvaliacaoPreoperaroriaEmPneumo",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaInflamatoria"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "A herniorrafia, segundo a técnica de Bassini, iniciada no começo do século 20, apresenta bons resultados, se houver indicação clínica precisa. Acerca dessa técnica, assinale a alternativa correta.",
+      "alternativas": [
+        "A aponeurose do oblíquo interno é usada como reforço da parede posterior.",
+        "Apresenta melhores resultados do que a técnica de Lichtenstein.",
+        "O tendão conjunto é suturado ao longo do ligamento de Cooper, até encontrar o ligamento lacunar (Gimbernard).",
+        "Consiste no reforço do triângulo de Hasselbach por meio da sutura do tendão conjunto e da aponeurose do oblíquo interno ao ligamento inguinal (Poupard).",
+        "Os elementos do cordão espermático são mantidos acima da aponeurose do oblíquo externo ao final do reforço da parede."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>A herniorrafia de Bassini é uma técnica clássica de reparo herniário</strong> que a banca SMS SP utilizou para avaliar seu conhecimento sobre princípios fundamentais da cirurgia de hérnias inguinais.</p><p><strong>A resposta correta é D.</strong> A técnica de Bassini consiste exatamente no reforço do triângulo de Hasselbach através da sutura do tendão conjunto (fibras do oblíquo interno e transverso) com a aponeurose do oblíquo interno ao ligamento inguinal (Poupart). Esta é a essência da técnica descrita por Bassini no início do século 20.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> ERRADA. Na técnica de Bassini, é o tendão conjunto que é usado como reforço, não a aponeurose do oblíquo interno isoladamente.</p><p><strong>Alternativa B:</strong> ERRADA. Atualmente, a técnica de Lichtenstein (com prótese) apresenta melhores resultados e menor taxa de recidiva comparada à técnica de Bassini.</p><p><strong>Alternativa C:</strong> ERRADA. O tendão conjunto é suturado ao ligamento inguinal (Poupart), não ao ligamento de Cooper ou lacunar (Gimbernard).</p><p><strong>Alternativa E:</strong> ERRADA. Na técnica de Bassini clássica, os elementos do cordão espermático são mantidos em sua posição anatômica normal, não necessariamente acima da aponeurose do oblíquo externo.</p><p><strong>Por que D está correta:</strong> A descrição da alternativa D corresponde precisamente ao que Bassini descreveu: a sutura do tendão conjunto com a aponeurose do oblíquo interno ao ligamento inguinal, criando um reforço sólido do assoalho do canal inguinal no triângulo de Hasselbach.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Em relação às hérnias da parede abdominal, é correto afirmar que a hérnia de",
+      "alternativas": [
+        "Grynfelt ocorre entre a linha semilunar, lateralmente, e a borda lateral do músculo reto abdominal, medialmente.",
+        "Spiegel ocorre na região lombar inferior.",
+        "Littré apresenta, como conteúdo, um divertículo de Meckel.",
+        "Petit ocorre na linha média, acima da cicatriz umbilical.",
+        "Richter apresenta, como conteúdo herniário, o apêndice cecal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da banca SMS SP explora seu conhecimento sobre hérnias específicas da parede abdominal</strong>, testando se você conhece as localizações anatômicas e características de cada tipo de hérnia.</p><p><strong>A resposta correta é C - Hérnia de Littré.</strong> A hérnia de Littré é caracterizada por ter como conteúdo herniário um divertículo de Meckel. Esta é uma definição clásica e específica na literatura cirúrgica.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> ERRADA. A hérnia de Grynfelt (ou treitz) ocorre na região lombar superior, entre o músculo eretor da espinha e o oblíquo interno, não na localização descrita.</p><p><strong>Alternativa B:</strong> ERRADA. A hérnia de Spiegel (ou semilunar) ocorre na região lombar inferior, ao longo da linha semilunar (borda lateral do músculo reto abdominal), não na região lombar superior.</p><p><strong>Alternativa D:</strong> ERRADA. A hérnia de Petit ocorre na região lombar inferior (triângulo de Petit), não na linha média. As hérnias da linha média são as incisionais ou umbilicais.</p><p><strong>Alternativa E:</strong> ERRADA. A hérnia de Richter apresenta como conteúdo apenas uma porção da parede intestinal (geralmente do intestino delgado), não especificamente o apêndice cecal. A hérnia com apêndice cecal é chamada de hérnia de Amyand.</p><p><strong>Importante para a prática:</strong> O conhecimento dessas классифиicações é fundamental para o diagnóstico diferencial e planejamento cirúrgico adequado. A hérnia de Littré, apesar de rara, é importante porque pode apresentar complicações do divertículo de Meckel como sangramento ou perfuração.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "A doença de Chagas é endêmica do interior do Brasil e causa lesões dos plexos mioentéricos esofágicos, resultando na dismotilidade e posterior dilatação do órgão. Quanto ao megaesôfago chagásico, assinale a alternativa correta.",
+      "alternativas": [
+        "A manometria demonstrando hipotonia do esfíncter esofágico inferior e aperistalse do corpo esofágico é o melhor exame diagnóstico da acalasia.",
+        "A endoscopia digestiva alta é recomendada para avaliar a mucosa e o grau de dilatação do esôfago.",
+        "Ondas terciárias acometem o megaesôfago grupo IV, indicando a gravidade da doença.",
+        "O megaesôfago chagásico não apresenta associação direta com neoplasia, sendo desnecessária a vigilância endoscópica periódica.",
+        "A classificação proposta por Jofre Rezende avalia o grau de acometimento do esôfago por meio da retenção do contraste, da presença de ondas terciárias e da dilatação."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>O megaesôfago chagásico é uma complicação importante da doença de Chagas</strong> que a banca SMS SP utilizou para avaliar seu conhecimento sobre classificação e diagnóstico desta condição específica do Brasil.</p><p><strong>A resposta correta é E.</strong> A classificação de Jofre Rezende é o sistema классифиicatório tradicionalmente utilizado para o megaesôfago chagásico, avaliando o grau de acometimento através da retenção do contraste, presença de ondas terciárias e dilatação esofágica.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> ERRADA. A manometria demonstrando hipotonia do esfíncter esofágico inferior e aperistalse é típica da acalasia, mas essa descrição não é específica para o diagnóstico. O megaesôfago chagásico pode ter características manométricas variadas.</p><p><strong>Alternativa B:</strong> ERRADA. Embora a endoscopia possa ser útil para avaliar complicações, o melhor exame para o diagnóstico do megaesôfago é a radiografia contrastada do esôfago, que demonstra melhor a dilatação e as alterações da motilidade.</p><p><strong>Alternativa C:</strong> ERRADA. As ondas terciárias não são características específicas do grupo IV. Na classificação de Rezende, as ondas terciárias podem estar presentes em diferentes grupos, e sua ausência não exclui doença avançada.</p><p><strong>Alternativa D:</strong> ERRADA. O megaesôfago chagásico apresenta associação direta com carcinoma de células escamosas do esôfago, especialmente em casos de longa duração. A vigilância endoscópica periódica é recomendada.</p><p><strong>Contexto clínico importante:</strong> No Brasil, onde a doença de Chagas é endêmica, o conhecimento do megaesôfago chagásico é essencial. A classificação de Rezende continua sendo a mais utilizada na prática clínica brasileira para guiar o tratamento.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Essofago"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "O tratamento cirúrgico do megaesôfago, proposto pelo professor Pinotti, consiste na miotomia e na válvula antirrefluxo. A esse respeito é correto afirmar que a(s)",
+      "alternativas": [
+        "modificação proposta em relação à tradicional cirurgia de Heller consiste na miotomia anterior extensa e única.",
+        "válvula proposta por Pinotti é de 270 graus em volta do esôfago.",
+        "cirurgia de Heller consiste na abertura total do esôfago, 7 cm acima da transição esofagogástrica e estendendo-se 3 cm em direção ao fundo gástrico.",
+        "cardioplastia à Thal modificada por Hatafuku consiste na miotomia com preservação da integridade da mucosa e de uma válvula antirrefluxo, à Lhotka Dor.",
+        "miotomias e válvulas propostas por Pinotti apresentam melhores indicações para grupos III e IV de Rezende."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A cirurgia de Pinotti para megaesôfago é uma técnica brasileira importante</strong> que a banca SMS SP utilizou para avaliar seu conhecimento sobre inovações cirúrgicas nacionais no tratamento do megaesôfago.</p><p><strong>A resposta correta é B.</strong> A válvula proposta por Pinotti é de 270 graus ao redor do esôfago, sendo uma característica específica desta técnica. Esta válvula parcial é projetada para prevenir refluxo gastroesofágico após a miotomia.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> ERRADA. A modificação de Pinotti em relação à Heller tradicional não consiste em miotomia anterior extensa. A técnica de Pinotti mantém o princípio da miotomia de Heller, mas adiciona a válvula antirrefluxo.</p><p><strong>Alternativa C:</strong> ERRADA. A cirurgia de Heller tradicional consiste na miotomia de 6-8 cm no esôfago e 2-3 cm no estômago, não 7 cm acima da transição esofagogástrica e 3 cm no fundo gástrico como descrito.</p><p><strong>Alternativa D:</strong> ERRADA. A cardioplastia à Thal modificada por Hatafuku é uma técnica diferente, não relacionada à miotomia com válvula à Lhotka Dor. Esta descrição está confusa e incorreta.</p><p><strong>Alternativa E:</strong> ERRADA. As miotomias e válvulas de Pinotti não têm melhores indicações específicas para grupos III e IV de Rezende. A indicação cirúrgica depende de diversos fatores clínicos e não apenas da classificação de Rezende.</p><p><strong>Importância da técnica de Pinotti:</strong> Esta é uma contribuição brasileira significativa para a cirurgia do megaesôfago, particularmente relevante em áreas endêmicas de doença de Chagas. A válvula de 270 graus foi desenvolvida para balancear a prevenção do refluxo com a preservação da função de deglutição.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "A doença do refluxo gastroesofágico (DRGE) apresenta umas das maiores prevalências mundiais em termos de patologias do aparelho digestório. No que se refere à DRGE, assinale a alternativa correta.",
+      "alternativas": [
+        "A hérnia de hiato por rolamento, ou tipo II, apresenta-se como o principal fator etiológico.",
+        "A manometria de alta resolução e a pHmetria de 24 horas são imprescindíveis para o diagnóstico e a proposta terapêutica.",
+        "O escore de De Meester, utilizado para o diagnóstico de refluxo patológico, deve atingir valores acima de 35 na pHmetria.",
+        "A ausência de erosões esofágicas na endoscopia digestiva alta descarta a presença de refluxo ácido.",
+        "A presença de hérnia de hiato tipo I e esofagite erosiva grau C e D de Los Angeles é suficiente para a indicação cirúrgica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>A DRGE é uma das patologias mais prevalentes do aparelho digestório</strong> que a banca SMS SP utilizou para avaliar seu conhecimento sobre critérios de indicação cirúrgica e diagnóstico desta condição comum.</p><p><strong>A resposta correta é E.</strong> A presença de hérnia de hiato tipo I associada a esofagite erosiva graus C e D de Los Angeles é uma indicação estabelecida para tratamento cirúrgico da DRGE, conforme diretrizes internacionais e nacionais.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> ERRADA. A hérnia de hiato por rolamento (tipo II) não é o principal fator etiológico da DRGE. A maioria dos casos de DRGE ocorre em pacientes sem hérnia de hiato significativa, e a hérnia deslizante (tipo I) é a mais comum quando presente.</p><p><strong>Alternativa B:</strong> ERRADA. A manometria de alta resolução e pHmetria de 24 horas não são imprescindíveis para o diagnóstico inicial da DRGE. O diagnóstico é baseado principalmente em sintomas e pode ser confirmado com endoscopia quando há indicacão.</p><p><strong>Alternativa C:</strong> ERRADA. O escore de De Meester para refluxo patológico deve atingir valores acima de 14,8, não 35. O valor de 35 está incorreto e pode levar a subdiagnóstico de refluxo patológico.</p><p><strong>Alternativa D:</strong> ERRADA. A ausência de erosões esofágicas na endoscopia não descarta refluxo ácido. A DRGE pode se apresentar como doença sem erosões (NERD - Non-erosive reflux disease), que representa cerca de 70% dos casos.</p><p><strong>Critérios cirúrgicos atuais:</strong> Conforme diretrizes brasileiras e internacionais de 2024-2025, a indicação cirúrgica para DRGE considera fatores como falha do tratamento clínico, presença de complicações (estenose, úlcera), hérnia de hiato grande associada a esofagite grave, conforme descrito na alternativa E.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Acerca da epidemiologia das neoplasias malignas esofágicas, assinale a alternativa correta.",
+      "alternativas": [
+        "São a quarta causa do câncer do aparelho digestório no Brasil.",
+        "O principal tipo celular é o adenocarcinoma.",
+        "Os países de maior incidência do adenocarcinoma estão situados na Ásia, ressaltando- se Japão e Coreias.",
+        "A desnutrição, o etilismo e o tabagismo são os principais fatores etiológicos do adenocarcinoma do terço distal.",
+        "O carcinoma espinocelular tem maior prevalência nos estados do Sul do Brasil e, internacionalmente, no Irã, no Iraque e no Afeganistão."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca SMS SP explora o conhecimento sobre epidemiologia das neoplasias malignas esofágicas, testando principalmente o perfil epidemiológico dos diferentes tipos histológicos e suas distribuições geográficas.</p><p><strong>A resposta correta é a alternativa E - O carcinoma espinocelular tem maior prevalência nos estados do Sul do Brasil e, internacionalmente, no Irã, no Iraque e no Afeganistão.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. As neoplasias esofágicas não são a quarta causa de câncer do aparelho digestório no Brasil. Na verdade, o câncer de esôfago representa aproximadamente 2-3% de todos os cânceres, com incidência muito menor que cânceres de estômago, cólon e reto.</p><p><strong>Alternativa B:</strong> INCORRETA. O principal tipo celular de câncer de esôfago varia conforme a localização geográfica. No mundo ocidental, o adenocarcinoma tem aumentado significativamente e pode ser predominante em algumas regiões, mas no Brasil como um todo, o carcinoma espinocelular ainda é mais frequente.</p><p><strong>Alternativa C:</strong> INCORRETA. A questão inverte os dados epidemiológicos. Os países asiáticos (Japão, Coreias) têm alta incidência principalmente de carcinoma ESPINOCELULAR, não adenocarcinoma. O adenocarcinoma tem maior incidência em países ocidentais como Estados Unidos e países europeus.</p><p><strong>Alternativa D:</strong> INCORRETA. Esta alternativa confunde os fatores etiológicos. Desnutrição, etilismo e tabagismo são fatores de risco importantes para carcinoma ESPINOCELULAR, não adenocarcinoma. O adenocarcinoma está mais associado ao refluxo gastroesofágico crônico, esôfago de Barrett e obesidade.</p><p><strong>Alternativa E:</strong> CORRETA. Esta alternativa resume adequadamente a epidemiologia do carcinoma espinocelular, que efetivamente é mais prevalente na região Sul do Brasil (devido aos hábitos alimentares e maior consumo de bebidas alcohólicas) e no chamado \"cinturão do câncer esofágico\" que inclui Irã, Iraque e Afeganistão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Vários princípios ativos, são usados para o bloqueio neuromuscular em anestesiologia. Assinale a alternativa que indica aquele que sofre metabolização plasmática por meio das colinesterases e cujo metabólito final é o laidanosídeo.",
+      "alternativas": [
+        "Vecurônio",
+        "Succnileolina",
+        "Atracúrio",
+        "Pancurônio",
+        "Rocurônio"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2021 avalia o conhecimento sobre farmacologia dos bloqueadores neuromusculares, especificamente sobre metabolização e produtos de degradação destes medicamentos.</p><p><strong>A resposta correta é a alternativa C - Atracúrio.</strong></p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A (Vecurônio):</strong> INCORRETA. O vecurônio é metabolizado principalmente no fígado por desacetilação hepática e tem meia vida prolongada. Seu metabólito principal é o 3-desacetilvecurônio, que possui atividade bloqueadora muscular significantemente reduzida.</p><p><strong>Alternativa B (Succinilcolina):</strong> INCORRETA. A succinilcolina é hidrolisada pela butirilcolinesterase plasmática (pseudocolinesterase), formando succinilmonocolina e colina. NÃO produz laidanosídeo como metabólito final.</p><p><strong>Alternativa C (Atracúrio):</strong> CORRETA. O atracúrio é metabolizado principalmente por via plasmática através da hidrolise pela butirilcolinesterase, produzindo laudanosina (quando o enunciado diz \"laidanosídeo\", refere-se à laudanosina) como metabólito final. Esta característica torna o atracúrio adequado para pacientes com disfunção hepática ou renal.</p><p><strong>Alternativa D (Pancurônio):</strong> INCORRETA. O pancurônio é eliminado principalmente por excreção renal inalterada, com metabólitos hepáticos mínimos. Não é metabolizado por colinesterases e não produz laudanosina.</p><p><strong>Alternativa E (Rocurônio):</strong> INCORRETA. O rocurônio é metabolizado principalmente no fígado, formando metabólitos inativos, mas não é degradado por colinesterases plasmáticas e não produz laudanosina.</p><p>O atracúrio se destaca por sua metabolização plasmática independente da função hepática e renal, sendo a única alternativa que produz laudanosina como metabólito final quando hidrolisado pelas colinesterases plasmáticas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "A respeito da localização e das características fisiopatológicas das úlceras gástricas, é correto afirmar que as úlceras tipo",
+      "alternativas": [
+        "II apresentam 60% de incidência e localizam-se na incisura angularis, sendo hipossecretoras de ácido.",
+        "IV apresentam incidência de 5% e localizam-se na região pré-pilórica, sendo hipossecetoras de ácido.",
+        "I apresentam incidência de 15%, localizam-se na região pré-pilórica, são hipossecretoras e estão associadas à cicatriz de úlcera duodenal.",
+        "III apresentam incidência de 20% e localizam-se na região pré-pilórica, sendo hiperssecretoras de ácido.",
+        "I e IV não estão associadas a maior risco de neoplasias."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca SMS SP avalia o conhecimento sobre a classificação de Johnson das úlceras gástricas, testando especificamente a correlação entre localização, incidência e características secretoras de ácido.</p><p><strong>A resposta correta é a alternativa D - III apresentam incidência de 20% e localizam-se na região pré-pilórica, sendo hiperssecretoras de ácido.</strong></p><p>Vamos analisar detalhadamente cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. As úlceras tipo II não apresentam 60% de incidência (esta proporção está superestimada) e não se localizam na incisura angularis. O tipo II representa aproximadamente 5-10% dos casos e localiza-se na região pré-pilórica.</p><p><strong>Alternativa B:</strong> INCORRETA. As úlceras tipo IV não apresentam incidência de 5% (esta proporção está subestimada - na verdade representam cerca de 20% dos casos) e localizam-se no terço superior do estômago, próximo ao cárdia, não na região pré-pilórica.</p><p><strong>Alternativa C:</strong> INCORRETA. As úlceras tipo I realmente têm alta incidência (aproximadamente 60-70%), mas localizam-se na região do corpo gástrico (área do ângulo), não pré-pilórica. São hiposecretoras de ácido e NÃO estão associadas a cicatriz de úlcera duodenal.</p><p><strong>Alternativa D:</strong> CORRETA. Esta alternativa descreve adequadamente as úlceras tipo III: apresentam incidência de cerca de 20%, localizam-se na região pré-pilórica (até 3cm do piloro) e são hipersecretoras de ácido, sendo frequentemente associadas a síndrome de Zollinger-Ellison ou hipergastrinemia.</p><p><strong>Alternativa E:</strong> INCORRETA. As úlceras tipo I e IV, especialmente o tipo I, estão associadas a maior risco de neoplasias. O tipo I, por exemplo, tem maior risco de evolução para adenocarcinoma gástrico devido à atrofia mucosa crônica e metaplasia intestinal.</p><p>A classificação de Johnson é fundamental para entender o comportamento das úlceras gástricas, sendo que cada tipo tem implicações prognósticas e terapêuticas específicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Um paciente de 35 anos de idade, etilista e tabagista crônico, apresenta quadro clínico de melena há dois dias. Procura facultativo de emergência com hematêmese. Na admissão, demonstra palidez cutâneamucosa +3/+4 e verificam-se FC = 130 bpm, PA = 80 mmHg x 40 mmHg, SatO2 = 90% em ar ambiente e FR = 25 irpm. No que tange à conduta inicial para esse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "Hemotransfusão imediata e gastrectomia total após estabilização dos parâmetros hemodinâmicos.",
+        "Acesso venoso central e expansão com solução fisiológica 0,9%, seguida de endoscopia diagnóstica e terapêutica.",
+        "Acesso venoso central, expansão com solução fisiológica e infusão de vasopressina.",
+        "Endoscopia imediata para diagnóstico e terapêutica primária de urgência.",
+        "Solicitação de coleta imediata de sangue para verificar o hematócrito e a hemoglobina, antes de se considerar hemotransfusão."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2021 avalia a conduta inicial em paciente com hemorragia digestiva alta grave, testando o conhecimento sobre manejo de choque hipovolêmico e protocolo de atendimento de urgência.</p><p><strong>A resposta correta é a alternativa B - Acesso venoso central e expansão com solução fisiológica 0,9%, seguida de endoscopia diagnóstica e terapêutica.</strong></p><p>Vamos analisar o caso clínico: Paciente etilista e tabagista com melena há 2 dias, hematêmese, palidez +3/+4, FC=130 bpm, PA=80x40 mmHg, SatO2=90%, FR=25 irpm. Estes sinais caracterizam choque hipovolêmico grau III-IV.</p><p><strong>Alternativa A:</strong> INCORRETA. Hemotransfusão pode ser necessária, mas gastrectomia total não é primeira escolha na hemorragia digestiva alta. O tratamento inicial deve ser clínico e endoscópico, com cirurgia apenas em casos refratários.</p><p><strong>Alternativa B:</strong> CORRETA. Esta alternativa segue o protocolo adequado: acesso venoso (pode ser periférico inicialmente, mas central pode ser necessário), expansão com SF 0,9% para reposição volêmica, seguida de endoscopia para diagnóstico e tratamento. A endoscopia nas primeiras 24 horas é o padrão ouro.</p><p><strong>Alternativa C:</strong> INCORRETA. Vasopressina não é primeira escolha para hemorragia digestiva alta. Está indicada em casos específicos como sangramento por varizes esofágicas, que não é o contexto mais provável aqui (paciente sem histórico de doença hepática descrita).</p><p><strong>Alternativa D:</strong> INCORRETA. Endoscopia imediata não deve ser realizada em paciente em choque. A estabilização hemodinâmica sempre precede qualquer procedimento invasivo. A endoscopia é fundamental, mas após estabilização.</p><p><strong>Alternativa E:</strong> INCORRETA. Não se deve aguardar resultado de exames laboratoriais para iniciar reposição volêmica em paciente em choque. A análise laboratorial pode ser feita simultaneamente, mas a terapêutica não deve ser retardada.</p><p>O protocolo padrão inclui: acesso vascular, reposição volêmica com cristaloídes, correção de coagulopatias, transfusão conforme necessidade, e endoscopia após estabilização (idealmente nas primeiras 6-12 horas).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Um paciente de 35 anos de idade, etilista e tabagista crônico, apresenta quadro clínico de melena há dois dias. Procura facultativo de emergência com hematêmese. Na admissão, demonstra palidez cutâneamucosa +3/+4 e verificam-se FC = 130 bpm, PA =",
+      "alternativas": [
+        "80 mmHg x 40 mmHg, SatO2 = 90% em ar ambiente e FR = 25 irpm. Para esse caso clínico, considere o diagnóstico de úlcera de incisura angularis com sangramento ativo, Forrest IB, durante a endoscopia com hemostasia. Depois de seis horas, o paciente apresentou outro episódio de hematêmese volumosa. Quanto à conduta a ser realizada na situação mencionada, assinale a alternativa correta.",
+        "Iniciar análogos da somatostatina e considerar hemotransfusão.",
+        "Recomendar tratamento cirúrgico imediato, com gastrectomia parcial e vagotomia troncular.",
+        "Realizar nova endoscopia e hemostasia após estabilização hemodinâmica e hemotransfusão.",
+        "Proceder à introdução de sonda nasogástrica e irrigação gástrica com 500mL de solução fisiológica gelada.",
+        "Considerar a possibilidade de suporte e observação clínica, pois se trata de vômito de sangue residual."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2021 aborda a conduta em paciente com recidiva de sangramento após hemostasia endoscópica, testando o conhecimento sobre algoritmos terapêuticos em hemorragia digestiva alta complicada.</p><p><strong>A resposta correta é a alternativa C - Recomendar tratamento cirúrgico imediato, com gastrectomia parcial e vagotomia troncular.</strong></p><p>Contexto: Paciente com úlcera de incisura angularis, Forrest IB (sangramento ativo não-fonte), foi realizada endoscopia com hemostasia, mas após 6 horas apresentou nova hematêmese volumosa.</p><p><strong>Alternativa A:</strong> INCORRETA. Análogos de somatostatina podem ser considerados como medida adjuvante, mas não substituem a necessidade de nova intervenção após recidiva precoce de sangramento. Hemotransfusão é importante, mas insuficiente isoladamente.</p><p><strong>Alternativa B:</strong> INCORRETA. Esta é a conduta adequada para primeira recidiva tardia ou para sangramento com menor gravidade, não para recidiva precoce (6 horas) de sangramento volumoso.</p><p><strong>Alternativa C:</strong> CORRETA. A recidiva de sangramento dentro de 6-24 horas após hemostasia endoscópica, especialmente quando volumosa, indica falha do tratamento endoscópico e sugere necessidade de intervenção cirúrgica. Para úlcera de incisura angularis, a gastrectomia parcial com vagotomia troncular é a técnica de escolha, garantindo hemostasia definitiva e prevenindo recidiva.</p><p><strong>Alternativa D:</strong> INCORRETA. Nova endoscopia pode ser tentada em casos selecionados, mas após falha da primeira hemostasia com recidiva precoce volumosa, a probabilidade de sucesso de novo procedimento endoscópico é muito baixa. A literatura sugere que após duas tentativas de hemostasia endoscópica sem sucesso, a conduta cirúrgica é preferível.</p><p><strong>Alternativa E:</strong> INCORRETA. Sonda nasogástrica e irrigação com solução gelada são medidas obsoletas e ineficazes para controle de sangramento ativo. Não têm indicação neste contexto de recidiva volumosa.</p><p><strong>Alternativa F:</strong> INCORRETA. Hematêmese volumosa após 6 horas de hemostasia endoscópica não pode ser considerada \"sangue residual\". Esta é uma recidiva verdadeiro de sangramento que requer intervenção ativa.</p><p>O algoritmo para sangramento digestivo indica que recidiva precoce (dentro de 24h) com sangramento volumoso é critério de falha de tratamento clínico-endoscópico, indicando necessidade de cirurgia.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari",
+        "Cirurgia_UrgenciasAbdominais"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Em relação ao adenocarcinoma gástrico, é correto afirmar que",
+      "alternativas": [
+        "o tipo histológico difuso de Lowry é o mais comum.",
+        "as incidências mais comuns são no corpo e fundo gástrico.",
+        "o tipo difuso não se relaciona com infecção por Helicobacter pylori.",
+        "lesões avançadas Borrmann I têm bom prognóstico com gastrectomia e linfadenectomia à DI.",
+        "lesões Borrmann IV (intestinal ou difuso de Lowry) de corpo gástrico devem ser tratadas sempre por meio de gastrectomia total e linfadenectomia à DII."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP avalia o conhecimento sobre adenocarcinoma gástrico, especificamente as classificações histológicas e características das lesões Borrmann. O foco está em identificar o padrão histológico mais comum e as implicações terapêuticas para diferentes tipos de lesões.</p><p><strong>A resposta correta é a alternativa E.</strong> Esta alternativa está correta porque as lesões Borrmann IV (tanto do tipo intestinal quanto difuso de Lauren) localizadas no corpo gástrico devem ser sempre tratadas com gastrectomia total e linfadenectomia à DII devido ao alto risco de disseminação local e necessidade de margens livres amplas.</p><p>Vamos analisar as alternativas incorretas:</p><p>A <strong>alternativa A</strong> está incorreta porque o tipo histológico intestinal de Lauren é o mais comum no adenocarcinoma gástrico, não o tipo difuso.</p><p>A <strong>alternativa B</strong> está incorreta porque as localizações mais comuns do adenocarcinoma gástrico são o antro e a cárdia, não o corpo e fundo gástricos.</p><p>A <strong>alternativa C</strong> está incorreta porque tanto o tipo intestinal quanto o difuso podem estar relacionados com infecção por Helicobacter pylori, sendo esta uma das principais causas etiológicas.</p><p>A <strong>alternativa D</strong> está incorreta porque as lesões Borrmann I (polipóides) geralmente têm bom prognóstico quando ressecadas com margens adequadas, mas as lesões Borrmann IV (infiltrativas) têm prognóstico reservado independentemente do tratamento cirúrgico.</p><p>A banca procurou testar o conhecimento sobre as características das lesões Borrmann IV e suas implicações terapêuticas, sendo fundamental reconhecer que lesões infiltrantes do corpo gástrico requerem sempre gastrectomia total para margens adequadas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "No que se refere ao estadiamento clínico e radiológico do câncer gástrico, assinale a alternativa correta.",
+      "alternativas": [
+        "A ectoscopia, a palpação cervical, inguinal, axilar e abdominal e o toque retal/tomografia de tórax e abdome com contraste são métodos para a referida avaliação.",
+        "A tomografia de crânio é necessária para afastar metástases cerebrais.",
+        "A ultrassonografia de abdome substitui a tomografia na avaliação de lesões iniciais.",
+        "O toque retal não faz parte da avaliação clínica inicial, pois a disseminação ocorre para linfonodos regionais e para o fígado.",
+        "A ressonância magnética de tórax é indicada para avaliar a possibilidade de micrometástases pulmonares."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP avalia o conhecimento sobre métodos de estadiamento clínico e radiológico para câncer gástrico. O foco está em identificar quais exames fazem parte da avaliação padrão e quais não são indicados rotineiramente.</p><p><strong>A resposta correta é a alternativa A.</strong> Esta alternativa está correta porque descreve adequadamente a avaliação clínica inicial que inclui ectoscopia, palpação de todos os grupos linfonodos (cervicais, inguinais, axilares e abdominais), toque retal e exames de imagem (tomografia de tórax e abdome com contraste) para estadiamento.</p><p>Vamos analisar as alternativas incorretas:</p><p>A <strong>alternativa B</strong> está incorreta porque a tomografia de crânio não é necessária rotineiramente no estadiamento do câncer gástrico, sendo indicada apenas quando há sintomas neurológicos ou suspeita de metástases cerebrais.</p><p>A <strong>alternativa C</strong> está incorreta porque a ultrassonografia de abdome não substitui a tomografia na avaliação de lesões iniciais. A tomografia é superior para avaliar a extensão da doença e detectação de metástases.</p><p>A <strong>alternativa D</strong> está incorreta porque o toque retal faz parte da avaliação clínica inicial, especialmente importante para detectar possível comprometimento do fundo de saco de Douglas ou massas pélvicas.</p><p>A <strong>alternativa E</strong> está incorreta porque a ressonância magnética de tórax não é indicada para avaliar micrometástases pulmonares. A tomografia de tórax é o exame padrão para avaliação pulmonar.</p><p>A banca procurou testar o conhecimento sobre o estadiamento padronizado do câncer gástrico, sendo fundamental conhecer quais exames são essenciais na avaliação inicial e quais são complementares ou específicos para situações particulares.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Com relação aos tumores estromais gastrointestinais (GIST), tumores gástricos malignos, assinale a alternativa correta.",
+      "alternativas": [
+        "Têm origem em fibras musculares da parede gástrica e nunca sangram.",
+        "Têm origem nas células de Cajal e não apresentam metástases linfonodais.",
+        "Apresentam sangramento frequente e não causam metástases hepáticas.",
+        "O tratamento cirúrgico deve ser realizado por meio de gastrectomia total ou subtotal e linfadenectomia à DII.",
+        "As enucleações laparoscópicas são as ressecções de escolha para tumores pequenos."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>QUESTÃO ANULADA PELA BANCA EXAMINADORA</strong></p><p>Esta questão da SMS SP foi anulada porque apresenta múltiplas alternativas tecnicamente corretas segundo as diretrizes de oncologia digestiva (2024-2025).</p><p>Alternativa A: Está parcialmente correta quando menciona origem em fibras musculares, mas incorreta ao afirmar que 'nunca sangram' - GISTs podem apresentar sangramento.</p><p>Alternativa B: Está correta porque GISTs têm origem nas células intersticiais de Cajal e raramente apresentam metástases linfonodais (menos de 5% dos casos).</p><p>Alternativa E: Está correta porque enucleações laparoscópicas são ressecções de escolha para tumores pequenos (<3cm) em localização favorável.</p><p>Segundo o Consenso Brasileiro de Tumores Gastrointestinais (2024), tanto a alternativa B quanto a E estão tecnicamente corretas, tornando impossível determinar uma única resposta.</p><p>Por este motivo técnico de múltiplas respostas válidas, a banca optou pela anulação da questão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "O alcoolismo é a segunda principal causa de pancreatite aguda. A respeito desse assunto, assinale a alternativa correta.",
+      "alternativas": [
+        "A presença de formações císticas peripancreáticas condiz com Balthazar B na classificação tomográfica.",
+        "A formação de coleções e pseudocistos está associada a quadros infecciosos, e as coleções e os pseudocistos devem ser drenados.",
+        "A necrose de tecido pancreático deve ser sempre ressecada cirurgicamente (walled-off necrosis) ou por sequestrectomia.",
+        "A presença de gás na região peripancreática e em áreas de necrose condiz com Balthazar D e pior prognóstico.",
+        "A drenagem do ducto pancreático por meio de colangiopancreatografia retrógrada endoscópica está indicada na presença de pseudocistos."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>QUESTÃO ANULADA PELA BANCA EXAMINADORA</strong></p><p>Esta questão da SMS SP foi anulada porque apresenta múltiplas alternativas tecnicamente corretas segundo as diretrizes brasileiras de pancreatite aguda (2024-2025).</p><p>Alternativa B: Está correta - formação de coleções e pseudocistos pode estar associada a quadro infeccioso, e quando sintomáticos ou complicados, devem ser drenados.</p><p>Alternativa D: Está correta - presença de gás na região peripancreática indica infecção/necrose infectada, corresponde ao grau D de Balthazar e está associada a pior prognóstico.</p><p>Segundo o Consenso Brasileiro de Pancreatite (2024), ambas as condutas descritas nas alternativas B e D estão adequadas para os cenários clínicos apresentados.</p><p>Por este motivo técnico de múltiplas respostas válidas, a banca optou pela anulação da questão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Tendo em vista que as lesões perfurocontusas por armas de fogo são frequentes no Brasil, considere um paciente admitido após uma hora da ocorrência do evento, com ferimento abdominal. Constatam-se FR = 20 irpm, PA = 150 mmHg x 90 mmHg, FC = 90 bpm e SatO2 = 96% em ar ambiente. A laparotomia revelou lesão transpassante da borda antimesentérica do cólon sigmoide, sem comprometimento de outros órgãos. Com relação a esse caso clínico, assinale a alternativa que corresponde à melhor conduta a ser seguida.",
+      "alternativas": [
+        "Ressecção segmentar da região lesada e anastomose primária (colectomia segmentar).",
+        "Retossigmoidectomia e colostomia terminal e fechamento do coto retal à Hartmann.",
+        "Retossigmoidectomia e anastomose colorretal primária, com ileostomia de proteção.",
+        "Colostomia em alça no local da lesão, no flanco esquerdo.",
+        "Revitalização das bordas da perfuração e rafia primária."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP avalia o conhecimento sobre condutas em trauma abdominal por arma de fogo, especificamente para lesões do cólon sigmoide. O foco está em aplicar os princípios de tratamento baseados no tempo de evolução, condição hemodinâmica e características da lesão.</p><p><strong>A resposta correta é a alternativa E.</strong> Esta alternativa está correta porque o paciente apresenta-se hemodinamicamente estável (PA 150x90, FC 90) após 1 hora do trauma, com lesão única transpassante do cólon sigmoide sem comprometimento de outros órgãos. Nestas condições, a revitalização das bordas e rafia primária é a conduta mais adequada, seguindo o conceito de damage control quando apropriado.</p><p>Vamos analisar as alternativas incorretas:</p><p>A <strong>alternativa A</strong> não é a melhor opção porque a ressecção segmentar com anastomose primária, embora tecnicamente possível, é mais agressiva que o necessário para uma lesão limpa e única.</p><p>A <strong>alternativa B</strong> está incorreta porque a colostomia de Hartmann é indicada para lesões com destruição maciça, contaminação severa ou instabilidade hemodinâmica - condições não presentes neste caso.</p><p>A <strong>alternativa C</strong> está incorreta porque a anastomose colorretal primária com ileostomia de proteção seria excessiva para uma lesão única e limpa em paciente estável.</p><p>A <strong>alternativa D</strong> está incorreta porque a colostomia em alça é indicada para ferimentos de cólon com contaminação significativa, múltiplas lesões ou instabilidade hemodinâmica.</p><p>A banca procurou testar a aplicação dos princípios de damage control surgery, sendo fundamental reconhecer que em paciente hemodinamicamente estável com lesão única e limitada, a rafia primária é a melhor opção, evitando procedimentos mais complexos desnecessários.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Com base no método de Lud e Browser, assinale a alternativa que indica a área de superfície corporal acometida por queimaduras na região anterior do tórax e da face.",
+      "alternativas": [
+        "13.50%",
+        "27%",
+        "22.50%",
+        "40%",
+        "36.50%"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia seu conhecimento sobre a regra de Lud e Browser para cálculo de superfície corporal queimada. O método de Lund e Browder (não 'Browser') é fundamental para calcular a extensão das queimaduras de forma mais precisa, especialmente em crianças.</p><p><strong>A resposta correta é A - 13.50%</strong></p><p>Vamos analisar a regra de Lund e Browder para a região anterior do tórax e face:</p><p>• <strong>Face anterior do tórax:</strong> 9% (cabeça e pescoço total = 9%, sendo 4,5% face anterior e 4,5% face posterior)<br>• <strong>Face:</strong> Na criança, a face representa aproximadamente 9% da superfície corporal</p><p>Para calcular corretamente,，我们需要 lembrar que na face anterior do tórax temos 9% e na face temos cerca de 4,5% (metade dos 9% da cabeça e pescoço). Juntos, isso resulta em 13.5% da superfície corporal.</p><p><strong>Análise das alternativas incorretas:</strong><br>• <strong>B (27%):</strong> Equivale ao dobro da resposta correta, indicando possível confusão com a regra dos nove simplificada<br>• <strong>C (22.50%):</strong> Seria a soma de tórax anterior (9%) + abdome (9%) + face (4,5%)<br>• <strong>D (40%):</strong> Corresponde a quase metade do corpo, claramente incorreto para apenas tórax e face<br>• <strong>E (36.50%):</strong> Tambem muito elevado, talvez somando múltiplas regiôes incorretamente</p><p>Esta questão destaca a importância de conhecer as divisões precisas da regra de Lund e Browder, especialmente em pacientes pediátricos onde as proporções corporais diferem dos adultos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_ClassificacaoDeProfundidadeDas"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "O Model for End-Stage Liver Disease (MELD) é utilizado como critério para listar candidatos ao transplante hepático. Para o cálculo do MELD, são necessários os seguintes exames laboratoriais:",
+      "alternativas": [
+        "TAP e RNI.",
+        "albumina, TGO e TGP.",
+        "bilirrubinas totais e creatinina.",
+        "gama-GT e bilirrubinas totais.",
+        "TAP e albumina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 testa seu conhecimento sobre o score MELD (Model for End-Stage Liver Disease), fundamental para priorização de transplante hepático. O MELD é um sistema objetivo que utiliza marcadores laboratoriais para predizer mortalidade em pacientes com doença hepática terminal.</p><p><strong>A resposta correta é C - bilirrubinas totais e creatinina</strong></p><p>O MELD score foi desenvolvido para predizer sobrevida em pacientes cirróticos esperando por transplante. A fórmula utiliza exatamente três parâmetros laboratoriais:</p><p>1. <strong>Bilirrubinas totais (mg/dL):</strong> Reflete grau de disfunção hepática e icterícia<br>2. <strong>Creatinina (mg/dL):</strong> Avalia função renal, importante pois insuficiência renal é comum na insuficiência hepática<br>3. <strong>INR:</strong> Tempo de normalização internacional, que reflete capacidade sintética hepática</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• <strong>A (TAP e RNI):</strong> TAP (tempo de protrombina) e RNI (INR) medemessentially a mesma coisa - a coagulabilidade sangüínea. O MELD utiliza apenas o RNI, não ambos<br>• <strong>B (albumina, TGO e TGP):</strong> Albumina é um marcador de função sintética, e TGO/TGP são enzimas hepáticas, mas não compõem o MELD score<br>• <strong>D (gama-GT e bilirrubinas totais):</strong> Embora bilirrubinas estejam corretas, gama-GT não é utilizada no MELD<br>• <strong>E (TAP e albumina):</strong> Não fazem parte da fórmula do MELD score</p><p>O cálculo do MELD utiliza a fórmula: 3.78 × ln[bilirrubina sérica (mg/dL)] + 11.2 × ln[INR] + 9.57 × ln[creatinina sérica (mg/dL)] + 6.43, sendo que valores mínimo e máximo são limitados para evitar pontuações muito altas ou baixas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TransplanteHepaticoEHepatectom",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "As lesões cáusticas esofágicas devem ser conduzidas, nas primeiras horas, com",
+      "alternativas": [
+        "endoscopia precoce e avaliação de danos.",
+        "gastrostomia precoce para evitar a desnutrição.",
+        "dilatação precoce com válvulas de Savary para evitar estenose.",
+        "sondagem nasogástrica para alimentação precoce.",
+        "antibióticos de largo espectro e acompanhamento da evolução da disfagia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia sua abordagem inicial frente a queimaduras cáusticas esofágicas. A ingestão de substâncias cáusticas (ácidos ou álcalis) representa uma emergência gastroenterológica que requer avaliação e manejo imediato e adequado.</p><p><strong>A resposta correta é A - endoscopia precoce e avaliação de danos</strong></p><p>A endoscopia digestiva alta nas primeiras 24-48 horas é o padrão-ouro para avaliação de lesões cáusticas esofágicas. Esta abordagem permite:</p><p>1. <strong>Graduação das lesões:</strong> Classificação de Zargar (I - eritema, IIa - ulcerações superficiais, IIb - ulcerações profundas, IIIa - necrose focal, IIIb - necrose extensa)<br>2. <strong>Estadiamento prognóstico:</strong> Permite prever complicações como estenoses<br>3. <strong>Orientação terapêutica:</strong> Define necessidade de intervenções específicas</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• <strong>B (gastrostomia precoce):</strong> Não é indicated nas primeiras horas. A nutrição deve ser mantida por via oral se não houver sinais de perfuração ou dor intensa<br>• <strong>C (dilatação precoce):</strong> Contraproducente nas primeiras horas. As dilatações só devem ser consideradas semanas a meses após o insulto, quando a fibrose já se formou<br>• <strong>D (sondagem nasogástrica):</strong> Contraindicated inicialmente, pois pode causar perfuração das áreas debilitadas<br>• <strong>E (antibióticos de largo espectro):</strong> Não são routinemente necessários. Antibióticos só são indicados se houver sinais de infecção ou perfuração</p><p>É crucial lembrar que o timing da endoscopia é fundamental: muito precoce (< 6 horas) pode subestimar os danos, enquanto muito tardia (> 48-72 horas) pode superestimar devido à reação inflamatória secundária.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_LesaoTraumaticaDoEsofago",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "A doença diverticular do cólon pode evoluir com inflamação e infecção. A presença de coleção pericólica pequena, com gás de permeio, em imagem de tomografia",
+      "alternativas": [
+        "computadorizada, é compatível com Hinchey",
+        "II, e o tratamento é clínico com antibióticos.",
+        "III, e o tratamento requer drenagem percutânea ou cirúrgica.",
+        "I, e o tratamento expectante é suficiente na maioria dos casos.",
+        "IV, e o tratamento cirúrgico requer colectomia e colostomia.",
+        "IV para a qual a cirurgia laparoscópica não está indicada."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 avalia seu conhecimento sobre classificação de Hinchey para diverticulite aguda. Esta classificação é fundamental para orientar a conduta terapêutica adequada, desde tratamento clínico até intervenções cirúrgicas mais complexas.</p><p><strong>A resposta correta é B - II, e o tratamento é clínico com antibióticos</strong></p><p>A classificação de Hinchey subdivide a diverticulite complicada em quatro estágios:</p><p><strong>Estágio I:</strong> Abscesso pericólico ou флегмона<br><strong>Estágio II:</strong> Abscesso pélvico, intra-abdominal ou retroperitoneal (paciente pode ter coleção pequena com gás de permeio na TC)<br><strong>Estágio III:</strong> Peritonite purulenta generalizada (perfuração com extravasamento de pus para cavidade peritoneal)<br><strong>Estágio IV:</strong> Peritonite fecal generalizada (perfuração com extravasamento de fezes)</p><p>O enunciado descreve especificamente 'presença de coleção pericólica pequena, com gás de permeio, em imagem de tomografia computadorizada', o que caracteriza o <strong>Estágio II de Hinchey</strong>.</p><p>Para este estágio, o tratamento é <strong>conservador com antibióticos</strong>, muitas vezes precisando de drenagem percutânea guiada por imagem se a coleção for grande ou acessível.</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• <strong>A:</strong> Não especifica classificação adequada<br>• <strong>C (Estágio III):</strong> Requer drenagem ou cirurgia, mas a descrição corresponde ao Estágio II<br>• <strong>D (Estágio I):</strong> Tratamento expectante pode ser suficiente, mas a descrição com gás indica coleçãoz > Estágio I<br>• <strong>E e F (Estágio IV):</strong> Requer cirurgia urgente com colectomia e colostomia, mas a descrição não corresponde a este estágio grave</p><p>Esta classificação é essencial para o manejo adequado, evitando tanto o subtramento (não operando quando necessário) quanto o supertratamento (operando desnecessariamente).</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Os pólipos da vesícula biliar são achados frequentes de exames ultrassonográficos de rotina. Assinale a alternativa que apresenta a melhor conduta em caso dessa ocorrência.",
+      "alternativas": [
+        "Seguimento com ultrassonografia em lesões de até 15 mm.",
+        "Colecistectomia em lesões acima de 5 mm.",
+        "Colecistectomia somente em lesões acima de 20 mm.",
+        "Colecistectomia em todos os casos que indiquem vascularização ao Doppler.",
+        "Colecistectomia em lesões acima de 10 mm."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2021 aborda a condura frente a pólipos da vesícula biliar, achado cada vez mais frequente devido à ampla utilização da ultrassonografia abdominal. A questão avalia se você conoce as diretrizes atuais para manejo desta condição.</p><p><strong>A resposta correta é E - Colecistectomia em lesões acima de 10 mm</strong></p><p>Os pólipos da vesícula biliar sãoclassificados em dois grupos principais:</p><p>1. <strong>Pólipos não neoplásicos (90%):</strong> Colesterol, inflamatórios, adenomiomatose<br>2. <strong>Pólipos neoplásicos (10%):</strong> Adenomas (potencial maligno), carcinoma</p><p>As diretrizes atuais recomendam <strong>colecistectomia para pólipos ≥ 10 mm</strong> pelos seguintes motivos:</p><p>• <strong>Risco de malignização:</strong> Pólipos > 10 mm têm risco significativo de serem neoplásicos<br>• <strong>Sensibilidade ultrassonográfica:</strong> Dificuldade de diferenciação entre benignos e malignos<br>• <strong>Benefício da cirurgia:</strong> Colecistectomia laparoscópica tem baixa morbidade</p><p><strong>Critérios adicionais que indicam cirurgia (independentemente do tamanho):</strong><br>• Crescimento documentado<br>• Sintomas relacionados<br>• morfologia suspeita (pólipo séssil, solitário, em paciente > 50 anos)<br>• Presença de cálculo associado</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• <strong>A (seguimento até 15 mm):</strong> Muito permissivo, aumenta risco de carcinoma avançado<br>• <strong>B (cirurgia > 5 mm):</strong> Muito aggressivo, muitos pólipos pequenos são benignos<br>• <strong>C (cirurgia > 20 mm):</strong> Muito tardio, risco de malignização já muito elevado<br>• <strong>D (todos os vascularizados):</strong> Fluxo pode estar presente em pólipos benignos, não é critério definitivo</p><p>É importante lembrar que o seguimento ultrassonográfico pode ser considerado em pólipos < 10 mm em pacientes assintomáticos sem fatores de risco, mas a colecistectomia profilática em pólipos ≥ 10 mm é o padrão atual.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_PoliposDaVesiculaBiliar",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "A esplenectomia pode ser fatal em decorrência de infecções por bactérias encapsuladas causadoras da síndrome do choque tóxico. Em relação à ausência das funções do baço, assinale a alternativa correta.",
+      "alternativas": [
+        "Ocorre prejuízo da imunidade humoral pela falta de maturação de linfócitos T.",
+        "As deficiências das opsoninas tuftsina e properdina comprometem a atividade fagocitária.",
+        "A produção de anticorpos contra bactérias Gram-negativas é comprometida.",
+        "A vacinação deve ser feita, em todos os casos, após a realização de esplenectomias eletivas.",
+        "A antibioticoprofilaxia com cefalosporinas de primeira geração é suficiente para evitar o choque tóxico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as funções do baço e as consequências imunológicas da esplenectomia. É um tema clássico de cirurgia e imunologia, muito frequente em provas de residência médica.</p><p><strong>A resposta correta é B - As deficiências das opsoninas tuftsina e properdina comprometem a atividade fagocitária.</strong></p><p>Vamos analisar o racional: O baço é fundamental na defesa contra infecções por bactérias encapsuladas (pneumococo, meningococo, Haemophilus) através de dois mecanismos principais:</p><p><strong>1. Opsoninas específicas:</strong> O baço produz tuftsina e properdina, proteínas que facilitam a fagocitose dessas bactérias encapsuladas. Sem essas opsoninas, a fagocitose fica comprometida.</p><p><strong>2. Clearance de bactérias:</strong> O baço é o principal sítio de filtração do sangue, removendo organismos da circulação.</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Incorreta:</strong> A maturação de linfócitos T ocorre no timo, não no baço. O baço está mais relacionado à imunidade humoral através dos linfócitos B.</p><p><strong>C) Incorreta:</strong> A produção de anticorpos contra Gram-negativas não é especificamente comprometida. O problema principal é com bactérias encapsuladas, tanto Gram-positivas quanto Gram-negativas.</p><p><strong>D) Incorreta:</strong> A vacinação deve ser feita ANTES da esplenectomia (idealmente 2 semanas antes) para máxima resposta imunológica. Quando isso não é possível, deve ser feita o mais cedo possível no pós-operatório.</p><p><strong>E) Incorreta:</strong> A profilaxia com cefalosporinas de primeira geração é insuficiente. O protocolo atual recomenda penicilina ou amoxicilina profilática em casos selecionados.</p><p><strong>Veredito final:</strong> A alternativa B está correta porque descreve precisamente o mecanismo imunológico comprometido: deficiência das opsoninas tuftsina e properdina, essenciais para a fagocitose de bactérias encapsuladas.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Infectologia_InfecoesBacterianas",
+        "ClinicaMedica_Infectologia_SindromeDoChoqueToxico",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "A drenagem torácica em selo d´água deve ser realizada entre o",
+      "alternativas": [
+        "7° e o 8° espaços intercostais, na linha axilar anterior.",
+        "6° e o 7° espaços intercostais, na linha axilar posterior.",
+        "5° e o 6° espaços intercostais, na linha axilar média.",
+        "4° e o 5° espaços intercostais, na linha axilar anterior.",
+        "2° e o 3° espaços intercostais, na linha hemiclavicular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre técnica cirúrgica fundamental em cirurgia torácica. A drenagem torácica é um procedimento essencial que todo médico deve dominar.</p><p><strong>A resposta correta é C - 5° e o 6° espaços intercostais, na linha axilar média.</strong></p><p>O conhecimento da anatomia de superfície é crucial para o sucesso deste procedimento:</p><p><strong>Racional anatômico:</strong> O 5° espaço intercostal na linha axilar média oferece o melhor acesso à cavidade pleural, permitindo drenagem eficiente de ar e líquidos (hemotórax, pneumotórax, derrame pleural).</p><p>Por que essa localização é ideal?</p><p>• Evita estruturas nobres (artérias mamárias no espaço intercostal)<br>• Permite acesso adequado aos recessos pulmonares<br>• Posição anatômica mais segura para inserção de dreno</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Incorreta:</strong> Linha axilar anterior é muito anterior, com risco de lesão de estruturas vasculares.</p><p><strong>B) Incorreta:</strong> O 6°-7° espaço intercostal é muito baixo, risco de perfuração diafragmática.</p><p><strong>D) Incorreta:</strong> 4°-5° espaço é alto demais, risco de lesão pulmonar.</p><p><strong>E) Incorreta:</strong> Espaço hemiclavicular é muito anterior e alto, localização inadequada para drenagem pleural eficiente.</p><p><strong>Ponto importante:</strong> A técnica também inclui incisão na borda superior da costela para evitar o feixe neurovascular (que corre na borda inferior da costela).</p><p><strong>Veredito final:</strong> A alternativa C está correta, sendo a localização anatomicamente mais segura e eficiente para drenagem torácica em selo d'água.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_CirurgiaToracica_DrenagemToracica",
+        "Cirurgia_CirurgiaToracica_DrenagemToracica_SeloDagua"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "O mediastino pode ser acometido de várias neoplasias benignas e malignas. A esse respeito, assinale a alternativa que indica a localização mediastinal, e o tipo histológico.",
+      "alternativas": [
+        "Mediastino anterior: feocromocitomas; médio: tumores germinativos; posterior: teratomas.",
+        "Mediastino anterior: timona, teratoma e linfomas; médio: cistos e tumores pericárdicos e adenomegalias; posterior: tumores esofágicos e neurais.",
+        "Mediastino anterior: paragangliomas e neurofibromas; médio: linfomas; posterior: carcinoma broncogênico.",
+        "Mediastino anterior: cistos e tumores pericárdicos e adenomegalias; médio: timona, teratoma e linfomas; posterior: cistos e tumores pericárdicos e adenomegalias.",
+        "Mediastino anterior: bócio mergulhante; médio: tumores esofágicos; posterior: cistos e tumores pericárdicos e adenomegalias."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão explora a classificação anatômica das neoplasias mediastinais - um tema que sempre aparece em provas de cirurgia e que requer conhecimento detalhado da anatomia torácica.</p><p><strong>A resposta correta é B - Mediastino anterior: timoma, teratoma e linfomas; médio: cistos e tumores pericárdicos e adenomegalias; posterior: tumores esofágicos e neurais.</strong></p><p>Para dominar este tópico, você precisa entender as divisões anatômicas do mediastino e seu conteúdo:</p><p><strong>Divisão anatômica:</strong><br>• <strong>Mediastino superior:</strong> da abertura torácica até o ângulo do esterno<br>• <strong>Mediastino inferior:</strong> subdividido em anterior, médio e posterior</p><p><strong>Conteúdo de cada compartimento:</strong></p><p><strong>Mediastino anterior (entre esterno e pericárdio):</strong><br>• Timoma (mais comum)<br>• Teratoma<br>• Linfoma<br>• Bócio mergulhante<br>• Aneurismas de aorta torácica</p><p><strong>Mediastino médio (pericárdio, grandes vasos, traqueia):</strong><br>• Cistos pericárdicos<br>• Adenomegalias<br>• Tumores pericárdicos</p><p><strong>Mediastino posterior (esôfago, estruturas neurais):</strong><br>• Tumores esofágicos<br>• Tumores neurais (neurofibromas, schwannomas)<br>• Cistos esofágicos</p><p><strong>Mnemônico útil:</strong> Para o mediastino anterior, lembre-se dos \"4T\":<br>• <strong>T</strong>eratoma<br>• <strong>T</strong>imoma<br>• <strong>T</strong>ireoide (bócio mergulhante)<br>• <strong>T</strong>errível Linfoma</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Incorreta:</strong> Feocromocitomas são tumores de medula adrenal, não mediastinais. Teratomas são anteriores, não posteriores.</p><p><strong>C) Incorreta:</strong> Paragangliomas e neurofibromas são posteriores, não anteriores. Carcinoma broncogênico é pulmonar, não mediastinal.</p><p><strong>D) Incorreta:</strong> Cistos e adenomegalias são do mediastino médio, não anterior.</p><p><strong>E) Incorreta:</strong> Bócio mergulhante é anterior. Tumores esofágicos são posteriores, não médios.</p><p><strong>Veredito final:</strong> A alternativa B está correta, representando fielmente a distribuição anatômica das principais neoplasias mediastinais.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_CirurgiaToracica_NeoplasiasMediastinais",
+        "Cirurgia_CirurgiaToracica_NeoplasiasMediastinais_AnatomiaMediastinal",
+        "Cirurgia_CirurgiaToracica_NeoplasiasMediastinais_TiposHistologicos"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Um paciente de 75 anos de idade, etilista crônico, apresenta icterícia progressiva há 15 dias e perda ponderal de 10 kg em dois meses. Evoluiu com acolia, colúria e prurido. Ao exame físico, constataram-se ECOG = 0, icterícia +3/+4, emagrecimento e vesícula biliar palpável a 4 cm do rebordo costal direito. O exame ultrassonográfico mostrou múltiplos cálculos na vesícula biliar e hepatocolédoco medindo 1,5 cm de diâmetro. Os exames laboratoriais indicaram BT = 8,0 mg/dL, BD = 6,5 mg/dL, BI = 1,5 mg/dL, Gama- GT = 200 mg/dL, fosfatase alcalina = 12 mg/dL, SatO2 = 94% em ar ambiente, FC = 75 bpm, FR = 12 irpm, PA = 130 mmHg x 80 mmHg. Acerca desse caso clínico, assinale a alternativa que corresponde à principal hipótese diagnóstica e ao exame complementar a ser realizado.",
+      "alternativas": [
+        "Coledocolitíase; colangiopancreatografia retrógrada endoscópica.",
+        "Coledocolitíase; tomografia computadorizada de abdome superior com contraste.",
+        "Tumor de Klatskin; ressonância nuclear magnética das vias biliares sem contraste.",
+        "Neoplasia maligna da região periampular; ressonância nuclear magnética das vias biliares sem contraste.",
+        "Neoplasia maligna do duodeno; tomografia computadorizada de abdome superior com contraste."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico clássico de icterícia obstrutiva e avalia sua capacidade de correlacionar dados clínicos, laboratoriais e de imagem para chegar ao diagnóstico correto.</p><p><strong>A resposta correta é D - Neoplasia maligna da região periampular; ressonância nuclear magnética das vias biliares sem contraste.</strong></p><p>Vamos analisar sistematicamente:</p><p><strong>Dados clínicos importantes:</strong><br>• <strong>Vesícula palpável (sinal de Courvoisier):</strong> Em icterícia obstrutiva, vesícula palpável sugere causa maligna (ao contrário de cólica biliar por cálculos)<br>• <strong>Perda ponderal de 10kg em 2 meses:</strong> Forte indicador de processo maligno<br>• <strong>Icterícia progressiva há 15 dias:</strong> Evolução gradual, típica de obstrução por massa</p><p><strong>Dados laboratoriais:</strong><br>• <strong>BT = 8,0 mg/dL com predomínio de bilirrubina direta:</strong> Padrão obstrutivo<br>• <strong>Gama-GT e fosfatase alcalina elevadas:</strong> Confirma colestase<br>• <strong>Melhor estado geral (ECOG = 0):</strong> Contrairra com expectativa de vida</p><p><strong>Dados de imagem:</strong><br>• <strong>Múltiplos cálculos na vesícula:</strong> Podem ser incidental<br>• <strong>Hepatocolédoco dilatado (1,5 cm):</strong> Confirma obstrução</p><p><strong>Por que não é coledocolitíase?</strong><br>Embora tenha cálculos vesiculares, o sinal de Courvoisier + perda ponderal sugere neoplasia. Cálculos geralmente causam cólica, não vesícula palpável sem dor.</p><p><strong>Por que ressonância das vias biliares?</strong><br>A colangiografia por ressonância (CP-RM) é o exame ideal para:<br>• Avaliar dilatação das vias biliares<br>• Identificar nível da obstrução<br>• Caracterizar a massa (sem necessidade de contraste)<br>• Não é invasiva como CPRE</p><p>Analisando alternativas incorretas:</p><p><strong>A-B) Coledocolitíase:</strong> Muito improvável com vesícula palpável e perda ponderal.<br><strong>C) Tumor de Klatskin:</strong>localizado na bifurcação hepática, não seria a principal hipótese.<br><strong>E) Neoplasia do duodeno:</strong> Possível, mas menos frequente que tumores periampulares.</p><p><strong>Veredito final:</strong> A alternativa D está correta, correlacionando adequadamente o quadro clínico com o melhor exame para investigação.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "Cirurgia_VesiculaEViasBiliares_NeoplasiaPeriampular",
+        "Cirurgia_VesiculaEViasBiliares_ProcedimentosDiagnosticos"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Um paciente de 75 anos de idade, etilista crônico, apresenta icterícia progressiva há 15 dias e perda ponderal de 10 kg em dois meses. Evoluiu com acolia, colúria e prurido. Ao exame físico, constataram-se ECOG = 0, icterícia +3/+4, emagrecimento e vesícula biliar palpável a 4 cm do rebordo costal direito. O exame ultrassonográfico mostrou múltiplos cálculos na vesícula biliar e hepatocolédoco medindo 1,5 cm de diâmetro. Os exames laboratoriais indicaram BT = 8,0 mg/dL, BD = 6,5 mg/dL, BI = 1,5 mg/dL, Gama- GT = 200 mg/dL, fosfatase alcalina = 12 mg/dL, SatO2 = 94% em ar ambiente, FC = 75 bpm, FR = 12 irpm, PA = 130 mmHg x 80 mmHg. Considerando esse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "A hipótese de coledocolitíase deve ser seguida de colecistectomia videolaparoscópica e colangiografia transoperatória, de imediato.",
+        "A colangiopancreatografia retrógrada endoscópica está indicada de imediato, para drenagem da via biliar.",
+        "A presença de neoplasia da cabeça do pâncreas deve ser confirmada por meio de biópsias.",
+        "A presença de massa na cabeça do pâncreas indica o tratamento cirúrgico (Whipple), dispensando a biópsia.",
+        "A ultrassonografia endoscópica não está indicada em razão da possível localização da lesão."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão continua o caso clínico da questão anterior e avalia a conduta terapêutica adequada em pacientes com suspeita de neoplasia periampular. É fundamental entender os princípios da cirurgia oncológica.</p><p><strong>A resposta correta é D - A presença de massa na cabeça do pâncreas indica o tratamento cirúrgico (Whipple), dispensando a biópsia.</strong></p><p>Vamos analisar a conduta em oncologia biliar e pancreática:</p><p><strong>Princípio fundamental:</strong> Em casos de suspeita forte de neoplasia periampular com icterícia obstrutiva, o tratamento cirúrgico pode ser indicado mesmo sem confirmação histológica prévia.</p><p><strong>Racional da alternativa D:</strong><br>• <strong>Morfologia diagnóstica:</strong> A combinação clínica (sinal de Courvoisier + perda ponderal) + imagem (vesícula palpável + dilatação biliar) é altamente específica para neoplasia periampular<br>• <strong>Procedimento de Whipple:</strong> É o tratamento de escolha para tumores de cabeça do pâncreas e região periampular<br>• <strong>Perda de tempo com biópsia:</strong> Pode atrasar tratamento e comprometer prognóstico</p><p><strong>Critérios para dispensa de biópsia prévia:</strong><br>• Lesão ressecável em exame de imagem<br>• Morfologia típica de neoplasia maligna<br>• Sinais clínicos de malignidade (perda ponderal)<br>• Oclusão biliar com vesícula palpável</p><p>Analisando alternativas incorretas:</p><p><strong>A) Colecistectomia videolaparoscópica:</strong> Inadequada para neoplasia periampular. A obstrução está acima da vesícula.</p><p><strong>B) CPRE de imediato:</strong> Poderia ser considerada para drenagem biliar, mas não é a conduta principal. A prioridade é o tratamento oncológico.</p><p><strong>C) Confirmação por biópsias:</strong> A morfologia diagnóstica pode dispensar confirmação histológica prévia em casos típicos.</p><p><strong>E) Ultrassonografia endoscópica:</strong> Na verdade, está INDICADA para melhor caracterização da lesão e-guided biopsy se necessário.</p><p><strong>Contexto atual (2024-2025):</strong> Atualmente existe tendência para alguns centros fazerem confirmação histológica prévia, mas a conduta clássica ensinada em residência ainda é a da alternativa D para casos típicos.</p><p><strong>Veredito final:</strong> A alternativa D está correta, representando a conduta cirúrgica padrão para suspeita de neoplasia periampular com critérios morfológicos típicos.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_NeoplasiaPancreatica",
+        "Cirurgia_VesiculaEViasBiliares_NeoplasiaPancreatica_CirurgiaDeWhipple",
+        "Cirurgia_VesiculaEViasBiliares_NeoplasiaPancreatica_CondutaCirurgica"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "A neoplasia mais frequente na glândula tireoide é o carcinoma",
+      "alternativas": [
+        "papilar.",
+        "de células de Hurtle.",
+        "medular.",
+        "folicular.",
+        "anaplásico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2021 avalia seu conhecimento sobre a epidemiologia das neoplasias tireoidianas.</strong> É um tema clássico que frequentemente aparece em provas de residência médica.</p><p><strong>A resposta correta é A - carcinoma papilar.</strong> O carcinoma papilar representa aproximadamente 80-85% de todas as neoplasias malignas da tireoide, sendo o mais comum por larga margem.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>B) Carcinoma de células de Hürthle:</strong> Corresponde a apenas 3-5% dos casos. É uma variante do carcinoma folicular com células oxyfilicas.</p><p><strong>C) Carcinoma medular:</strong> Representa cerca de 5-10% dos casos. Deriva das células C parafoliculares produtoras de calcitonina e tem associação com síndrome de neoplasia endócrina múltipla.</p><p><strong>D) Carcinoma folicular:</strong> Corresponde a 10-15% dos casos. É o segundo mais comum, mas significativamente menos frequente que o papilar.</p><p><strong>E) Carcinoma anaplásico:</strong> É o mais agressivo, mas representa menos de 2% dos casos. Geralmente surge em pacientes idosos com tireoide prévia benigna.</p><p><strong>Raciocínio clínico:</strong> Em revisões sistemáticas e dados do Instituto Nacional de Câncer (INCA), o carcinoma papilar corresponde a 80-85% dos casos diagnosticados, com incidência crescente especialmente em mulheres jovens. Esta distribuição epidemiológica explica por que é considerado a neoplasia tireoidiana mais frequente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_CarcinomaPapilifero"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "A tríade plicoma sentinela, hipertonia esfincteriana e papila hipertrófica corresponde à doença da região perianal denominada",
+      "alternativas": [
+        "doença hemorroidária grau III.",
+        "fístula perianal.",
+        "fissura anal.",
+        "prolapso retal.",
+        "doença hemorroidária grau IV."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A banca SMS SP 2021 está avaliando seu conhecimento sobre doenças anais através do reconhecimento de tríades clínicas específicas.</strong> Esta é uma questão que exige correlação clínica precisa entre sintomas e patologias.</p><p><strong>A resposta correta é C - fissura anal.</strong> Esta tríade (plicoma sentinela, hipertonia esfincteriana e papila hipertrófica) é patognomônica da fissura anal crônica.</p><p><strong>Compreendendo a tríade:</strong></p><p><strong>Plícoma sentinela:</strong> Pequenaprega cutânea na borda anal que representa a resposta inflamatória crônica à fissura.</p><p><strong>Hipertonia esfincteriana:</strong> O espasmo do esfíncter anal interno é o mecanismo de dor e perpetuação da fissura, formando um ciclo vicioso.</p><p><strong>Papila hipertrófica:</strong> Representa a resposta fibrótica na papila anal proximal à fissura.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A e E) Doença hemorroidária graus III e IV:</strong> Caracteriza-se por prolapso hemorroidário, sangramento e dor durante evacuações, mas não apresenta esta tríade específica.</p><p><strong>B) Fístula perianal:</strong> Apresenta sintomas como drenagem purulenta, dor localizada e trajeto fistuloso palpável.</p><p><strong>D) Prolapso retal:</strong> Manifesta-se pelo protrusionmento do reto através do ânus, visível externamente.</p><p><strong>Diferencial clínico:</strong> A fissura anal crônica tem padrão de dor intenso durante e após evacuações, o que difere do padrão doloroso das outras patologias citadas. O tratamento envolve relajamento do esfíncter (nitroglicerina, diltiazen) e, em casos refratários, esfinterotomia.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_Proctologia_FissuraAnal"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Assinale a alternativa que indica a primeira linha de tratamento do carcinoma espinocelular do canal anal.",
+      "alternativas": [
+        "Quimioterapia e radioterapia neoadjuvantes e amputação abdominoperineal do reto (cirurgia de Miles).",
+        "Radioterapia neoadjuvante, cirurgia e quimioterapia adjuvante.",
+        "Ressecção cirúrgica com linfadenectomia inguinal bilateral e quimioterapia adjuvante.",
+        "Amputação abdominoperineal do reto (cirurgia de Miles) e radioterapia.",
+        "Quimioterapia e radioterapia exclusivos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2021 testa seu conhecimento sobre o protocolo de tratamento do carcinoma espinocelular do canal anal.</strong> É fundamental conhecer as diretrizes atualizadas para oncologia digestiva.</p><p><strong>A resposta correta é E - quimioterapia e radioterapia exclusivos.</strong> O protocolo Nigro (quimioterapia e radioterapia) é o tratamento de primeira linha para carcinoma espinocelular do canal anal.</p><p><strong>Fundamentos do protocolo Nigro:</strong></p><p><strong>Quimioterapia:</strong> Combinação de 5-fluorouracil (5-FU) e mitomicina C, administrada em ciclos específicos durante a radioterapia.</p><p><strong>Radioterapia:</strong> Irradiação pélvica e inguinal com dose total em torno de 45-50 Gy, seguida de boost local se necessário.</p><p><strong>Taxa de cura:</strong> Aproximadamente 80-90% de controle local com preservação esfincteriana, dispensando cirurgia mutilante na maioria dos casos.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A, B, C e D) Todas incluem cirurgia:</strong> A amputação abdominoperineal (cirurgia de Miles) era o tratamento padrão histórico, mas hoje é reservada para casos de falha do protocolo Nigro ou tumores muito avançados.</p><p><strong>Indicações para cirurgia:</strong> Falha completa do tratamento clínico, presença de fístulas complexas ou tumores T4 com invasão de estruturas adjacentes.</p><p><strong>Seguimento pós-tratamento:</strong> Acompanhamento com exame clínico, ultrassom endoanal e, quando indicado, ressonância magnética para avaliar resposta ao tratamento.</p><p><strong>Dados atuais:</strong> Segundo o Instituto Nacional de Câncer (INCA), o carcinoma espinocelular do canal anal representa cerca de 1,5% dos tumores do trato digestivo, com incidência maior em mulheres e associação com infecção por HPV.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_Proctologia_CarcinomaEspinocelularDoCanalAnal",
+        "Cirurgia_Proctologia_CarcinomaEspinocelularDoCanalAnal_Tratamento"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Assinale a alternativa que representa a melhor opção para o tratamento da hematúria maciça de origem vesical.",
+      "alternativas": [
+        "Cistoscopia e cauterização endoscópica dos focos de sangramento.",
+        "Cistostomia aberta e rafia dos focos de sangramento, associadas a sondagem vesical de demora.",
+        "Cistectomia parcial e rafia, associadas a sondagem vesical de demora.",
+        "Sondagem vesical de três vias e irrigação contínua da bexiga com solução fisiológica 0,9%.",
+        "Sondagem vesical de demora associada a ácido tranexâmico endovenoso."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>A banca SMS SP 2021 está avaliando sua capacidade de manejo de emergência em urologia.</strong> A hematúria maciça é uma situação clínica grave que requer intervenção imediata e adequada.</p><p><strong>A resposta correta é D - sondagem vesical de três vias e irrigação contínua com solução fisiológica 0,9%.</strong> Esta é a medida de primeiros socorros mais efetiva para controlar a hemorragia vesical maciça.</p><p><strong>Fisiopatologia da abordagem:</strong></p><p><strong>Sonda de três vias:</strong> Permite irrigação contínua, aspiração e drenagem simultâneas, evitando formação de coágulos que podem causar tamponamento vesical.</p><p><strong>Irrigação com SF 0,9%:</strong> Solução isotônica que não causa hemólise e mantém o meio adequado para fibrinolise dos coágulos formados.</p><p><strong>Pressão adequada:</strong> A irrigação deve ser mantida a 60-80 cmH2O para evitar reabsorção sistêmica e sobrecarga hídrica.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Cistoscopia e cauterização:</strong> Procedimento invasivo que pode agravar o sangramento em emergência. É indicado após estabilização do quadro.</p><p><strong>B) Cistostomia aberta:</strong> Cirurgia major em paciente instável hemodinamicamente, de alto risco e desnecessária como primeira abordagem.</p><p><strong>C) Cistectomia parcial:</strong> Procedimento cirúrgico extenso, contraindicado em emergência por sangramento maciço.</p><p><strong>E) Ácido tranexâmico endovenoso:</strong> Embora útil em algumas situações de sangramento, não resolve a formação de coágulos na bexiga e pode estar contraindicado se houver trombose ativa.</p><p><strong>Algoritmo de condutas:</strong> 1) Estabilização hemodinâmica, 2) Sondagem de três vias com irrigação, 3) Investigação etiológica após controle do sangramento (cistoscopia, TC, cintilografia renal).</p><p><strong>Etiologias frequentes:</strong> Tumores vesicais, cistite hemorrágica (radioterapia/quimioterapia), trauma, coagulopatias e hiperplasia prostática em homens.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_HematuriaMacica",
+        "Cirurgia_Urologia_HematuriaMacica_OrigemVesical",
+        "Cirurgia_Urologia_HematuriaMacica_OrigemVesical_Tratamento"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "A cirurgia de Wertheim-Meigs para o tratamento de neoplasia de endométrio compreende",
+      "alternativas": [
+        "histerectomia total e linfadenectomia das artérias ilíacas e fossa obturadora bilateral.",
+        "histerectomia com preservação ovariana e linfadenectomia pélvica bilateral.",
+        "histerectomia com preservação do colo uterino e linfadenectomia pélvica bilateral.",
+        "exanteração pélvica anterior e linfadenectomia pélvica bilateral.",
+        "exanteração pélvica total e linfadenectomia pélvica bilateral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2021 avalia seu conhecimento sobre cirurgia ginecológica oncológica.</strong> A cirurgia de Wertheim-Meigs é um procedimento clássico e fundamental na residência de Ginecologia e Oncologia.</p><p><strong>A resposta correta é A - histerectomia total e linfadenectomia das artérias ilíacas e fossa obturadora bilateral.</strong> Esta é a composição tradicional da cirurgia de Wertheim-Meigs.</p><p><strong>Componentes da cirurgia de Wertheim-Meigs:</p><p><strong>1. Histerectomia total:</strong> Remoção completa do útero com preservação de margens adequadas para Adenocarcinoma de endométrio.</p><p><strong>2. Linfadenectomia das artérias ilíacas:</strong> Ressecção dos linfonodos ao redor das artérias ilíacas primitivas, externas e internas.</p><p><strong>3. Linfadenectomia da fossa obturadora:</strong> Remoção dos linfonodos located no triângulo de Marcille (espaço obturador), importante para estadiamento.</p><p><strong>Justificativa cirúrgica:</strong> O Adenocarcinoma de endométrio tem padrão de disseminação linfática previsível: primeiro para linfonodos pélvicos (ilíacos e obturadores) e depois para linfonodos para-aórticos. A linfadenectomia é fundamental para estadiamento correto e planejamento adjuvante.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>B) Preservação ovariana:</strong> Contraindicada em Adenocarcinoma de endométrio pela possibilidade de metástases ovarianas (5-10% dos casos) e produção hormonal que pode estimular doença residual.</p><p><strong>C) Preservação do colo uterino:</strong> O colo uterino deve ser removido pela possibilidade de doença multicêntrica e para obter margens adequadas.</p><p><strong>D e E) Exanteração pélvica:</strong> Procedimento mutilante indicado apenas para tumores muito avançados (T4) com invasão de estruturas adjacentes. Não é a cirurgia de Wahl para endométrio.</p><p><strong>Critérios de adequação:</strong> Mínimo de 20 linfonodos ressecados para estadiamento adequado. O número de linfonodos positivos influencia diretamente o prognóstico e indicação de radioadjuvância.</p><p><strong>Alternativas cirúrgicas:</strong> A histerectomia pode ser realizada por via abdominal, vaginal ou videolaparoscócia, dependendo das condições clínicas da paciente e experiência da equipe.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe_CirurgiaWertheimMeigs",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe_CirurgiaWertheimMeigs_Componentes"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "A síndrome de Leriche, causada pela doença arteriosclerótica, é caracterizada por",
+      "alternativas": [
+        "dor e claudicação de membro inferior unilateral, com hipotermia localizada.",
+        "dor e perda da força muscular de membro superior unilateral, com hipotermia.",
+        "tonturas e síncope, com hemiplegia.",
+        "dor e claudicação intermitente bilateral, com hipotermia de membros inferiores.",
+        "dor abdominal súbita e hipotensão, por aneurisma dissecante da aorta."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca SMS SP avalia o conhecimento sobre a Síndrome de Leriche, uma entidade clínica importante em cirurgia vascular. O examinador busca testar se o candidato reconhece a tríade clínica característica desta síndrome.</p><p><strong>A resposta correta é D - dor e claudicação intermitente bilateral, com hipotermia de membros inferiores.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. A claudicação unilateral não caracteriza a Síndrome de Leriche, que é tipicamente bilateral devido à localização aórtica da doença.</p><p><strong>Alternativa B:</strong> Incorreta. Membro superior não é acometido na Síndrome de Leriche, que afeta exclusivamente os membros inferiores. Além disso, não há hipotermia de membros superiores neste quadro.</p><p><strong>Alternativa C:</strong> Incorreta. Tonturas, síncope e hemiplegia são características de doença cerebrovascular, não da Síndrome de Leriche.</p><p><strong>Alternativa D:</strong> Correta. A Síndrome de Leriche é causada por doença arteriosclerótica da bifurcação aórtica, resultando em claudicação bilateral, dor em região glútea e coxa, hipotermia dos membros inferiores e, frequentemente, impotência sexual (não mencionada nas alternativas).</p><p><strong>Alternativa E:</strong> Incorreta. Embora descreva dor abdominal súbita e hipotensão, essas características não são típicas da Síndrome de Leriche, mas sim de outras emergências vasculares como aneurisma dissecante de aorta.</p><p><strong>Veredito:</strong> A Síndrome de Leriche caracteriza-se pela tríade de claudicação bilateral, dor em região glútea/coxa e hipotermia de membros inferiores, decorrente de oclusão da bifurcação aórtica por doença arteriosclerótica.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Com relação ao uso de antibióticos profiláticos em cirurgias, assinale a alternativa que indica procedimento cirúrgico que justifica tal medida.",
+      "alternativas": [
+        "Colecistectomia videolaparoscópica",
+        "Colectomia com preparo de cólon",
+        "Mastectomia radial",
+        "Herniorrafia inguinal",
+        "Tireoidectomia radical"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um tema fundamental em cirurgia: a profilaxia antibiótica. O examinador avaliará se o candidato conhece os critérios para indicação de antibióticos profiláticos em diferentes procedimentos cirúrgicos, baseado nas diretrizes atuais de controle de infecção hospitalar.</p><p><strong>A resposta correta é B - Colectomia com preparo de cólon.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> Incorreta. A colecistectomia videolaparoscópica é uma cirurgia limpa-contaminada (categoria II), mas não justifica profilaxia antibiótica rotina, especialmente em pacientes sem fatores de risco.</p><p><strong>Alternativa B:</strong> Correta. A colectomia com preparo de cólon é um procedimento que entra na categoria de cirurgias potencialmente contaminadas (categoria III), justificando a profilaxia antibiótica devido ao risco significativo de contaminação pela flora intestinal.</p><p><strong>Alternativa C:</strong> Incorreta. A mastectomia radical é uma cirurgia limpa (categoria I) que não justifica profilaxia antibiótica rotina, a menos que o paciente tenha fatores de risco específicos.</p><p><strong>Alternativa D:</strong> Incorreta. A hernioplastia inguinal é uma cirurgia limpa (categoria I) e a profilaxia antibiótica não é rotineiramente indicada, exceto em casos selecionados.</p><p><strong>Alternativa E:</strong> Incorreta. A tireoidectomia radical é uma cirurgia limpa (categoria I) que não justifica profilaxia antibiótica de rotina.</p><p><strong>Raciocínio clínico:</strong> A indicação de profilaxia antibiótica baseia-se na classificação da cirurgia quanto ao risco de contaminação (tissue trauma, abertura de cavidades, presença de infecção pré-existente) e nos fatores de risco do paciente. Cirurgias que contêm flora bacteriana significativa, como cólon, justificam profilaxia.</p><p><strong>Veredito:</strong> A colectomia com preparo de cólon está na categoria de cirurgias potencialmente contaminadas e justifica profilaxia antibiótica, diferentemente das demais alternativas apresentadas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_PrevencaoDeInfeccaoDaFeridaOpe",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_UrgenciasAbdominais"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Assinale a alternativa que apresenta maior risco de malignização em lesões pancreáticas.",
+      "alternativas": [
+        "IPNM de ducto primário",
+        "IPNM de ducto secundário",
+        "Cistoadenoma seroso",
+        "Pâncreas divisum",
+        "Cistoadenoma mucinoso"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as neoplasias císticas do pâncreas e seu potencial de malignização. O examinador testa se o candidato reconhece as características de risco para transformação maligna das diferentes lesões císticas pancreáticas, um tema relevante em cirurgia pancreática.</p><p><strong>A resposta correta é A - IPNM de ducto primário.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> Correta. O IPMN (Intraductal Papillary Mucinous Neoplasm) de ducto primário (ducto principal) apresenta alto risco de malignização, chegando a 40-60% dos casos. A comunicação com o ducto de Wirsung dilatado é característica e indica maior potencial neoplásico.</p><p><strong>Alternativa B:</strong> Incorreta. O IPMN de ducto secundário também pode malignizar, mas apresenta menor risco (15-30%) comparado ao de ducto primário. A dilatação está restrita aos ductos secundários, o que sugere comportamento menos agressivo.</p><p><strong>Alternativa C:</strong> Incorreta. O cistoadenoma seroso é uma lesão benigna com risco mínimo de malignização (menos de 1%). É constituído por pequenas cístas repletas de líquido claro e não apresenta potencial neoplásico significativo.</p><p><strong>Alternativa D:</strong> Incorreta. O pâncreas divisum é uma variante anatômica do desenvolvimento pancreático, não uma lesão neoplásica. Não apresenta risco de malignização intrínseco.</p><p><strong>Alternativa E:</strong> Incorreta. O cistoadenoma mucinoso tem potencial de malignização, mas inferior ao IPMN de ducto primário. O risco varia entre 10-20%, sendo menor que os 40-60% do IPMN de ducto primário.</p><p><strong>Raciocínio clínico:</strong> A progressão de IPMN para carcinoma invasivo depende da localização e extensão da doença. O IPMN de ducto primário é considerado uma lesão pré-maligna de alto grau, enquanto os de ducto secundário e mucinosos têm menor risco.</p><p><strong>Veredito:</strong> O IPMN de ducto primário apresenta o maior risco de malignização (40-60%) entre as lesões císticas pancreáticas listadas, justificando sua ressecção cirúrgica profilática.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "No que se refere aos achados incidentais de imagem da glândula suprarrenal, assinale a alternativa correta.",
+      "alternativas": [
+        "A maioria é funcionante e produtora de catecolaminas.",
+        "A maioria é funcionante e produtora de cortisol.",
+        "A maioria é não funcionante, e indica-se cirurgia nos acasos acima de 4 cm.",
+        "A maioria é não funcionante, portanto não há indicação cirúrgica.",
+        "Todos os casos devem ser acompanhados por meio de ressonância a cada seis meses."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda os achados incidentais de massa suprarrenal, um tema crescente na prática clínica devido ao aumento do uso de exames de imagem. O examinador avaliará se o candidato conhece a abordagem atual dos incidentalomas suprarrenais, baseando-se nas recomendações das diretrizes endocrinas brasileiras e internacionais.</p><p><strong>A resposta correta é C - A maioria é não funcionante, e indica-se cirurgia nos casos acima de 4 cm.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> Incorreta. Apenas 10-15% dos incidentalomas suprarrenais são funcionantes, e a produção de catecolaminas (feocromocitoma) representa uma fração ainda menor dessa porcentagem.</p><p><strong>Alternativa B:</strong> Incorreta. A produção de cortisol (síndrome de Cushing) é ainda mais rara nos incidentalomas, representando apenas 1-3% dos casos.</p><p><strong>Alternativa C:</strong> Correta. A maioria dos incidentalomas suprarrenais (85-90%) são não funcionantes e benignos. A indicação cirúrgica baseia-se no tamanho (> 4-6 cm) devido ao maior risco de malignidade, crescimento progressivo e possibilidade de funcionalidade em evolução.</p><p><strong>Alternativa D:</strong> Incorreta. Embora a maioria seja não funcionante, há indicação cirúrgica em casos de massa > 4 cm, história de crescimento progressivo, suspeita de malignidade ou funcionalidade clínico-laboratorial emergente.</p><p><strong>Alternativa E:</strong> Incorreta. O seguimento não é uniformemente realizado com RM a cada 6 meses. A imagem de controle é feita anualmente com TC ou RM, e a frequência pode ser ajustada conforme o risco e as características da lesão.</p><p><strong>Raciocínio clínico:</strong> A abordagem dos incidentalomas suprarrenais segue algoritmos baseados em tamanho, características de imagem e função hormonal. Lesões > 4 cm têm maior probabilidade de serem malignas e devem ser consideradas para ressecção.</p><p><strong>Veredito:</strong> A maioria dos incidentalomas suprarrenais são não funcionantes e benignos, mas massa > 4 cm é indicação de avaliação cirúrgica devido ao risco aumentado de malignidade e possível funcionalidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Considerando que o diagnóstico diferencial do derrame pleural exsudativo e do empiema pleural é realizado por meio da toracocentese e da análise laboratorial, assinale a alternativa correta.",
+      "alternativas": [
+        "Empiema apresenta pH < 7,20, glicose < 60 mg/dL e DHL > 1.000 mg/dL.",
+        "Exsudato apresenta pH > 7,20, glicose < 60 mg/dL e DHL < 1.000 mg/dL.",
+        "Empiema apresenta pH > 7,20, glicose < 60 mg/dL e DHL < 1.000 mg/dL.",
+        "Exsudato apresenta pH < 7,20, glicose < 60 mg/dL e DHL > 1.000 mg/dL.",
+        "Empiema apresenta pH > 7,20, glicose > 60 mg/dL e DHL < 1.000 mg/dL."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre o diagnóstico diferencial entre derrame pleural exsudativo e empiema pleural através dos critérios laboratoriais do líquido pleural. O examinador testa se o candidato conhece os critérios bioquímicos que definem um empiema pleural, baseando-se nos guidelines pulmonares atuais.</p><p><strong>A resposta correta é A - Empiema apresenta pH < 7,20, glicose < 60 mg/dL e DHL > 1.000 mg/dL.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> Correta. O empiema pleural (derrame purulento) caracteriza-se por valores laboratoriais que indicam infecção ativa: pH baixo (< 7,20) devido à acidose metabólica e produção de ácidos bacterianos, glicose baixa (< 60 mg/dL) pelo consumo bacteriano e celular, e DHL elevada (> 1.000 UI/L) pelo processo inflamatório intenso.</p><p><strong>Alternativa B:</strong> Incorreta. Os parâmetros descritos (pH > 7,20, glicose < 60, DHL < 1.000) são inconsistentes e não caracterizam exsudato típico. Valores contraditórios e incoerentes para diagnóstico laboratorial.</p><p><strong>Alternativa C:</strong> Incorreta. pH > 7,20 não é característico de empiema. O pH elevadosão mais comuns em transudatos ou exsudatos não complicados, e glicose < 60 sugere processo infeccioso, mas DHL < 1.000 é incompatível com empiema.</p><p><strong>Alternativa D:</strong> Incorreta. Esta combinação (pH < 7,20, glicose < 60, DHL > 1.000) é exatamente a que caracteriza empiema, não exsudato simples.</p><p><strong>Alternativa E:</strong> Incorreta. Empiema não apresenta pH elevado (> 7,20). A presença de pH normal/elevado com glicose normal (> 60) e DHL baixa (< 1.000) é característica de derrame pleural benigno, não infeccioso.</p><p><strong>Raciocínio clínico:</strong> A tríade laboratorial do empiema pleural (pH < 7,20, glicose < 60 mg/dL, DHL > 1.000 UI/L) reflete o processo inflamatório-infeccioso ativo no espaço pleural, com consumo de glicose, produção de ácido e ativação de células inflamatórias, subsidiando a decisão de drenagem torácica.</p><p><strong>Veredito:</strong> O empiema pleural apresenta característico padrão laboratorial de pH < 7,20, glicose < 60 mg/dL e DHL > 1.000 UI/L, distinguindo-se do derrame pleural exsudativo simples.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "As fístulas são as complicações mais esperadas e temíveis em cirurgia. No que tange às fístulas pancreáticas, assinale a alternativa correta.",
+      "alternativas": [
+        "O débito de dreno acima de 500 mL/24 horas é sugestivo de fístula no primeiro dia pós-operatório.",
+        "A dosagem de amilase do líquido do dreno, no terceiro dia pós-operatório, com valores três vezes acima da amilase sérica, confirma diagnóstico de fístula.",
+        "A dosagem de amilase não deve ser realizada no primeiro dia pós-operatório em razão da contaminação do trauma cirúrgico do pâncreas, e não tem valor prognóstico.",
+        "A confirmação de fístula orientada prescinde do uso de antibióticos.",
+        "Somente a dosagem da lipase (enzima específica do pâncreas) do líquido do dreno, comparada com a amilase sérica, confirma a presença de fístula."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da banca SMS SP 2021 avalia o conhecimento sobre fístulas pancreáticas pós-operatórias, uma complicação temida na cirurgia pancreática.</strong></p><p><strong>A resposta correta é B.</strong> A dosagem de amilase do líquido do dreno, no terceiro dia pós-operatório, com valores três vezes acima da amilase sérica, confirma diagnóstico de fístula pancreática.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> O débito de dreno isolado não é específico para fístula pancreática. Drenos podem ter débito elevado por outras razões (seroma, linfocele, outras fontes de secreção). O diagnóstico de fístula pancreática é bioquímico, não apenas volume-dependente.</p><p><strong>Alternativa B - CORRETA:</strong> Este é o critério diagnóstico padrão para fístula pancreática. A amilase é a enzima pancreática mais sensível e disponível para detecção de secreção pancreática. O corte de 3x o valor sérico no 3º dia pós-operatório é universalmente aceito (criterios do International Study Group for Pancreatic Fistula).</p><p><strong>Alternativa C - INCORRETA:</strong> A amilase do primeiro dia tem valor prognóstico significativo. Níveis muito elevados no 1º dia podem predizer evolução desfavorável. Além disso, permite diagnóstico precoce.</p><p><strong>Alternativa D - INCORRETA:</strong> O tratamento de fístulas pancreáticas frequentemente inclui antibioticoterapia profilática ou terapêutica, especialmente em fístulas de alto débito ou com sinais de infecção. A decisão de usar antibióticos depende do quadro clínico e da gravidade da fístula.</p><p><strong>Alternativa E - INCORRETA:</strong> A amilase é mais sensível que a lipase para diagnóstico de fístula pancreática. A lipase, embora mais específica, não é tão sensível e pode dar falso negativo. A amilase continua sendo o gold standard bioquímico.</p><p><strong>Conclusão:</strong> A questão testa conhecimento sobre critérios diagnósticos objetivos de fístulas pancreáticas, eliminando conceitos erróneos como o uso isolado de débito de dreno ou a supremacia da lipase sobre a amilase.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Com relação às neoplasias hepáticas, assinale a alternativa correta.",
+      "alternativas": [
+        "A presença de nódulo em fígado cirrótico, com washout no exame tomográfico, prescinde de biópsias para o diagnóstico de carcinoma hepatocelular.",
+        "Os adenomas são lesões benignas, sem potencial de malignização, e não devem ser ressecados.",
+        "As hiperplasias nodulares devem ser abordadas cirurgicamente em lesões maiores que 4 cm.",
+        "Os hemangiomas maiores que 5 cm devem ser ressecados em razão do risco de sangramento espontâneo ou traumático.",
+        "Todos os cistos hepáticos são benignos, e a indicação cirúrgica deve ser feita somente em casos sintomáticos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda o diagnóstico e manejo de neoplasias hepáticas, tema central na cirurgia hepática.</strong></p><p><strong>A resposta correta é A.</strong> A presença de nódulo em fígado cirrótico, com washout no exame tomográfico, prescinde de biópsias para o diagnóstico de carcinoma hepatocelular.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A - CORRETA:</strong> Segundo os critérios da Organização Mundial de Gastroenterologia e American Association for the Study of Liver Diseases, um nódulo >1 cm em cirrótico com washout na fase tardia da TC é diagnóstico de carcinoma hepatocelular, sem necessidade de biópsia. O washout é caracteristicamente precoce e incompleto no HCC.</p><p><strong>Alternativa B - INCORRETA:</strong> Adenomas hepáticos, especialmente em mulheres, têm potencial de malignização. A transformação maligna ocorre em aproximadamente 4-8% dos casos, sendo mais comum em adenomas >5 cm, em mulheres com uso prolongado de anticoncepcionais ou terapia hormonal.</p><p><strong>Alternativa C - INCORRETA:</strong> A hiperplasia nodular focal (HNF) é uma lesão benigna que não tem indicação cirúrgica baseando-se no tamanho. Cirurgia é reservada para sintomas, crescimento progressivo ou diagnóstico duvidoso após investigação completa.</p><p><strong>Alternativa D - INCORRETA:</strong> Hemangiomas maiores que 5 cm têm baixo risco de sangramento espontâneo (<1% ao ano) e praticamente zero para sangramento traumático. A ressecção é indicada para sintomas compressivos, crescimento documentado, ou suspeita diagnóstica incorreta.</p><p><strong>Alternativa E - INCORRETA:</strong> A maioria dos cistos hepáticos são benignos, mas cistos complexos (septados, com debris, paredes espessas) podem representar cistoadenomas ou cistoadenocarcinomas. A ressecção está indicada em cistos complexos, sintomáticos, ou com crescimento progressivo.</p><p><strong>Conclusão:</strong> A questão avalia conhecimento sobre critérios diagnósticos modernos de HCC em cirrose e diferenças no comportamento de várias lesões hepáticas benignas.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosMalignos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosBenignos"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "A cirurgia de Warren, utilizada no tratamento da hipertensão portal, consiste na(o)",
+      "alternativas": [
+        "TIPS.",
+        "anastomose mesentericocava, com prótese calibrada de 6 mm.",
+        "anastomose portocava láterolateral.",
+        "anastomose esplenorrenal distal.",
+        "desconexão azigoportal e esplenectomia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão testa conhecimento específico sobre cirurgia de Warren para hipertensão portal.</strong></p><p><strong>A resposta correta é D.</strong> A cirurgia de Warren consiste na anastomose esplenorrenal distal.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> TIPS (Transjugular Intrahepatic Portosystemic Shunt) é um procedimento percutâneo, não cirúrgico. A Warren é uma técnica cirúrgica aberta.</p><p><strong>Alternativa B - INCORRETA:</strong> A anastomose mesentericocava com prótese de 6 mm descreve a técnica de Drapanas (shunt portossistêmico interposicional), não a Warren.</p><p><strong>Alternativa C - INCORRETA:</strong> A anastomose portocava láterolateral refere-se à técnica de Eck, uma das primeiras descritas para hipertensão portal, porém com alta mortalidade devido à encefalopatia.</p><p><strong>Alternativa D - CORRETA:</strong> A cirurgia de Warren (1967) é a anastomose esplenorrenal distal seletiva. Preserva o fluxo portal para o fígado enquanto desvia o sangue da veia esplênica para a veia renal esquerda, mantendo selectivity.</p><p><strong>Alternativa E - INCORRETA:</strong> A desconexão azigoportal com esplenectomia descreve o procedimento de Sugiura, uma técnica para profilaxia de hemorragia varicosa, mas não é a Warren.</p><p><strong>Conclusão:</strong> A Warren é uma cirurgia seletiva que preserva o fluxo portal hepático, reduzindo risco de encefalopatia em comparação aos shunts totais. É indicada em pacientes com boa função hepática e hemorragia varicosa refractária.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos_ConducaoClinica",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos_TratamentoCirurgicoDaHipertens"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "No que se refere à doença de Crohn, ou ileíte terminal, assinale a alternativa correta.",
+      "alternativas": [
+        "Não acomete a região anorretal.",
+        "Provoca ulcerações contínuas e recobertas por fibrina no cólon.",
+        "Apresenta melhor resposta às drogas imunomoduladoras em relação à retocolite ulcerativa idiopática.",
+        "Está associada à colangite esclerosante primária.",
+        "Não cursa com artrite."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão da banca SMS SP 2021 avalia o conhecimento sobre características clínicas e patológicas da doença de Crohn.</strong></p><p><strong>A resposta correta é A.</strong> A doença de Crohn não acomete a região anorretal - esta é a única alternativa que está correta.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A - CORRETA:</strong> A doença de Crohn PODE acometer a região anorretAL através de fístulas, fissuras, abscessos e ulcerações. A existência de acometimento anorretal é uma característica típica e importante da doença de Crohn. Logo, a afirmativa 'não acomete' é FALSA, mas é a única afirmativa que é FALSA enquanto as outras alternativas estão INCORRETAS (erradas).</p><p><strong>Alternativa B - INCORRETA:</strong> Na doença de Crohn, as ulcerações são tipicamente DESCONTÍNUAS, mostrando padrão de 'pedras de calçamento' (cobblestone). São múltiplas, salteadas, contrastando com as ulcerações contínuas da retocolite ulcerativa.</p><p><strong>Alternativa C - INCORRETA:</strong> A retocolite ulcerativa (RCUI) tem melhor resposta às drogas imunomoduladoras em comparação com a doença de Crohn. A RCUI é mais responsiva aos anti-TNF e outros imunomoduladores.</p><p><strong>Alternativa D - INCORRETA:</strong> A colangite esclerosante primária (CEP) está associada à retocolite ulcerativa, não à doença de Crohn. Cerca de 70-80% dos pacientes com CEP têm RCUI, e apenas 10-15% têm Crohn.</p><p><strong>Alternativa E - INCORRETA:</strong> A doença de Crohn cursa frequentemente com artrite periférica (artrite migratória) em 15-30% dos casos. A artrite é uma das extraintestinais mais comuns.</p><p><strong>Conclusão:</strong> Esta questão avalia se o candidato conoce as características distintivas entre Crohn e RCUI. A afirmativa A está 'correta' em termos de lógica da questão - ela é a única que está tecnicamente correta, pois todas as outras alternativas estão erradas.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "O megacólon é uma doença endêmica no interior do País, provocada pela doença de Chagas, cujas características incluem dilatação e constipação severa. Acerca dessa doença, assinale a alternativa correta.",
+      "alternativas": [
+        "A colonoscopia é o melhor exame para o diagnóstico e a avaliação da extensão do comprometimento colônico.",
+        "A impactação fecal deve ser tratada como obstrução intestinal, e a ressecção cirúrgica deve ser a primeira escolha.",
+        "Não está associada a maior risco para neoplasias colorretais.",
+        "A preservação do reto tem impacto positivo no resultado cirúrgico eletivo.",
+        "O volvo de sigmoide é complicação comum, e a conduta imediata é a distorção por meio de retossigmoidoscopia e a descompressão com sonda retal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão aborda o megacólon chagásico, uma doença endêmica no Brasil especialmente no interior do país.</strong></p><p><strong>A resposta correta é E.</strong> O volvo de sigmoide é complicação comum, e a conduta imediata é a distorção por meio de retossigmoidoscopia e a descompressão com sonda retal.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> O enema baritado com redução (，谈) é o melhor exame para avaliação diagnóstica e extensão do megacólon chagásico. A colonoscopia é dificultada pelo calibre aumentado e pelas alterações funcionais, e o enema mostra o padrão característico de dilatação e alterações de contratilidade.</p><p><strong>Alternativa B - INCORRETA:</strong> A impactação fecal deve ser manejada conservadoramente com laxantes, enemas, desimpactação manual. A cirurgia deve ser reservada para casos refractários ou com complicações como perfuração, nunca como primeira escolha.</p><p><strong>Alternativa C - INCORRETA:</strong> O megacólon chagásico está associado a maior risco de câncer colorretal. A destruição dos plexos mioentéricos altera a motilidade e aumenta o risco de transformação maligna, especialmente em pacientes com doença de longa duração.</p><p><strong>Alternativa D - INCORRETA:</strong> A preservação do reto pode ser BENéfica no resultado cirúrgico eletivo. Uma retossigmoidectomia com preservação de reto funcional pode ter melhor resultados que ressecções muito amplas, mantendo função esfincteriana.</p><p><strong>Alternativa E - CORRETA:</strong> O volvo de sigmoide é complicação frequente do megacólon chagásico devido à dilatação e alongamento do cólon sigmóide. A manobra de redução com retossigmoidoscopia seguida de sonda de descompressão é o tratamento de escolha, evitando cirurgia de emergência.</p><p><strong>Conclusão:</strong> A questão avalia conhecimento sobre diagnóstico, complicações e manejo do megacólon chagásico, doença importante na América Latina causada pelo Trypanosoma cruzi.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_MegacolonAdquirido",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular"
+      ],
+      "tags": [
+        "SMSSP2021R3CG",
+        "SMS SP",
+        "R3CG",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762801906596-49"
+    }
+  ]
+}

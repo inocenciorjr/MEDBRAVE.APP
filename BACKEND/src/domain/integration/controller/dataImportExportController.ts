@@ -1,5 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
-import { DataJobType, DataFormat, DataJobStatus } from '../../../infra/integration/types';
+import {
+  DataJobType,
+  DataFormat,
+  DataJobStatus,
+} from '../../../infra/integration/types';
 import { IDataImportExportService } from '../../../infra/integration/interfaces/IDataImportExportService';
 import { ErrorCodes, createError } from '../../../utils/errors';
 import logger from '../../../utils/logger';
@@ -12,7 +16,16 @@ export class DataImportExportController {
    */
   async createDataJob(req: Request, res: Response, next: NextFunction) {
     try {
-      const { type, name, description, collection, format, query, mappings, sourceUrl } = req.body;
+      const {
+        type,
+        name,
+        description,
+        collection,
+        format,
+        query,
+        mappings,
+        sourceUrl,
+      } = req.body;
       const userId = (req as any).user?.id;
 
       if (!userId) {
@@ -25,7 +38,10 @@ export class DataImportExportController {
       }
 
       if (!name) {
-        throw createError(ErrorCodes.INVALID_INPUT, 'Nome do job é obrigatório');
+        throw createError(
+          ErrorCodes.INVALID_INPUT,
+          'Nome do job é obrigatório',
+        );
       }
 
       if (!collection) {
@@ -60,13 +76,19 @@ export class DataImportExportController {
       if (type === DataJobType.IMPORT) {
         // Iniciar execução em segundo plano para não bloquear a resposta
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        this.dataImportExportService.executeImportJob(job.id).catch(error => {
-          logger.error(`Erro na execução de job de importação (ID: ${job.id}):`, error);
+        this.dataImportExportService.executeImportJob(job.id).catch((error) => {
+          logger.error(
+            `Erro na execução de job de importação (ID: ${job.id}):`,
+            error,
+          );
         });
       } else if (type === DataJobType.EXPORT) {
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        this.dataImportExportService.executeExportJob(job.id).catch(error => {
-          logger.error(`Erro na execução de job de exportação (ID: ${job.id}):`, error);
+        this.dataImportExportService.executeExportJob(job.id).catch((error) => {
+          logger.error(
+            `Erro na execução de job de exportação (ID: ${job.id}):`,
+            error,
+          );
         });
       }
 
@@ -124,8 +146,16 @@ export class DataImportExportController {
         throw createError(ErrorCodes.UNAUTHORIZED, 'Usuário não autenticado');
       }
 
-      const { type, status, collection, startDate, endDate, limit, offset, orderByCreatedAt } =
-        req.query;
+      const {
+        type,
+        status,
+        collection,
+        startDate,
+        endDate,
+        limit,
+        offset,
+        orderByCreatedAt,
+      } = req.query;
 
       const isAdmin = (req as any).user?.role === 'ADMIN';
 
@@ -180,10 +210,14 @@ export class DataImportExportController {
         throw createError(ErrorCodes.FORBIDDEN, 'Acesso negado ao job');
       }
 
-      const cancelledJob = await this.dataImportExportService.cancelDataJob(jobId);
+      const cancelledJob =
+        await this.dataImportExportService.cancelDataJob(jobId);
 
       if (!cancelledJob) {
-        throw createError(ErrorCodes.INTERNAL_SERVER_ERROR, 'Não foi possível cancelar o job');
+        throw createError(
+          ErrorCodes.INTERNAL_SERVER_ERROR,
+          'Não foi possível cancelar o job',
+        );
       }
 
       return res.status(200).json({
@@ -255,10 +289,16 @@ export class DataImportExportController {
       }
 
       if (job.type !== DataJobType.IMPORT) {
-        throw createError(ErrorCodes.INVALID_INPUT, 'Job não é do tipo importação');
+        throw createError(
+          ErrorCodes.INVALID_INPUT,
+          'Job não é do tipo importação',
+        );
       }
 
-      if (job.status !== DataJobStatus.PENDING && job.status !== DataJobStatus.FAILED) {
+      if (
+        job.status !== DataJobStatus.PENDING &&
+        job.status !== DataJobStatus.FAILED
+      ) {
         throw createError(
           ErrorCodes.INVALID_INPUT,
           `Job não pode ser executado no status atual (${job.status})`,
@@ -267,8 +307,11 @@ export class DataImportExportController {
 
       // Iniciar a execução em segundo plano
       // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      this.dataImportExportService.executeImportJob(jobId).catch(error => {
-        logger.error(`Erro na execução de job de importação (ID: ${jobId}):`, error);
+      this.dataImportExportService.executeImportJob(jobId).catch((error) => {
+        logger.error(
+          `Erro na execução de job de importação (ID: ${jobId}):`,
+          error,
+        );
       });
 
       return res.status(202).json({
@@ -305,10 +348,16 @@ export class DataImportExportController {
       }
 
       if (job.type !== DataJobType.EXPORT) {
-        throw createError(ErrorCodes.INVALID_INPUT, 'Job não é do tipo exportação');
+        throw createError(
+          ErrorCodes.INVALID_INPUT,
+          'Job não é do tipo exportação',
+        );
       }
 
-      if (job.status !== DataJobStatus.PENDING && job.status !== DataJobStatus.FAILED) {
+      if (
+        job.status !== DataJobStatus.PENDING &&
+        job.status !== DataJobStatus.FAILED
+      ) {
         throw createError(
           ErrorCodes.INVALID_INPUT,
           `Job não pode ser executado no status atual (${job.status})`,
@@ -317,8 +366,11 @@ export class DataImportExportController {
 
       // Iniciar a execução em segundo plano
       // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      this.dataImportExportService.executeExportJob(jobId).catch(error => {
-        logger.error(`Erro na execução de job de exportação (ID: ${jobId}):`, error);
+      this.dataImportExportService.executeExportJob(jobId).catch((error) => {
+        logger.error(
+          `Erro na execução de job de exportação (ID: ${jobId}):`,
+          error,
+        );
       });
 
       return res.status(202).json({

@@ -1,24 +1,20 @@
-import { NotificationController } from '../controllers/NotificationController';
-import { FirebaseNotificationService } from '../services/FirebaseNotificationService';
+import { NotificationControllerManual } from '../controllers/NotificationControllerManual';
+import { SupabaseNotificationService } from '../services';
 import { CreateNotificationUseCase } from '../use-cases/CreateNotificationUseCase';
 import { GetNotificationsUseCase } from '../use-cases/GetNotificationsUseCase';
 import { MarkNotificationAsReadUseCase } from '../use-cases/MarkNotificationAsReadUseCase';
 
 /**
- * Factory para criar o módulo de notificações
+ * Factory para criar o módulo de notificações sem tsyringe
  * @returns Objeto com rotas, serviços, repositórios e casos de uso do módulo
  */
 export function createNotificationsModule() {
-  // Inicializar o serviço
-  const notificationService = new FirebaseNotificationService();
-
-  // Inicializar os casos de uso com o service
+  // Criar instâncias diretamente (sem tsyringe)
+  const notificationService = new SupabaseNotificationService();
   const createNotificationUseCase = new CreateNotificationUseCase(notificationService);
   const getNotificationsUseCase = new GetNotificationsUseCase(notificationService);
   const markNotificationAsReadUseCase = new MarkNotificationAsReadUseCase(notificationService);
-
-  // Inicializar o controller com os use cases
-  const notificationController = new NotificationController(
+  const notificationController = new NotificationControllerManual(
     createNotificationUseCase,
     getNotificationsUseCase,
     markNotificationAsReadUseCase

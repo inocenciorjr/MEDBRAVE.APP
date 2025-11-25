@@ -1,0 +1,226 @@
+/* FullCalendar Custom Styles */
+/* Os estilos base do FullCalendar são importados automaticamente pelo componente React */
+
+/* Variáveis de cores */
+:root {
+  --fc-border-color: rgb(229 231 235 / 0.5);
+  --fc-today-bg-color: rgb(124 58 237 / 0.05);
+  --fc-neutral-bg-color: transparent;
+  --fc-page-bg-color: transparent;
+}
+
+.dark {
+  --fc-border-color: rgb(42 42 42 / 0.5);
+  --fc-today-bg-color: rgb(124 58 237 / 0.1);
+}
+
+/* Container principal */
+.fullcalendar-wrapper {
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+}
+
+/* Bordas */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: var(--fc-border-color);
+}
+
+/* Header dos dias */
+.fc-col-header-cell {
+  background: linear-gradient(to bottom, rgb(243 232 255), rgb(243 232 255 / 0.5));
+  border-bottom: 2px solid rgb(124 58 237 / 0.3) !important;
+  padding: 10px 0;
+}
+
+.dark .fc-col-header-cell {
+  background: linear-gradient(to bottom, rgb(88 28 135 / 0.4), rgb(88 28 135 / 0.2));
+}
+
+.fc-col-header-cell-cushion {
+  color: rgb(107 33 168);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+.dark .fc-col-header-cell-cushion {
+  color: rgb(216 180 254);
+}
+
+/* Labels de horário */
+.fc-timegrid-slot-label {
+  color: rgb(107 114 128);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: linear-gradient(to right, rgb(243 232 255 / 0.5), transparent);
+}
+
+.dark .fc-timegrid-slot-label {
+  color: rgb(156 163 175);
+  background: linear-gradient(to right, rgb(88 28 135 / 0.2), transparent);
+}
+
+/* Eventos */
+.fc-event {
+  border-radius: 0.75rem !important;
+  border-width: 2px !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.fc-event:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+  transform: scale(1.02);
+  z-index: 100;
+}
+
+.fc-event-main {
+  padding: 0 !important;
+}
+
+.fc-event-main-frame {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Espaçamento dos eventos */
+.fc-timegrid-event-harness {
+  margin: 0 4px !important;
+}
+
+.fc-direction-ltr .fc-timegrid-col-events {
+  margin: 0 !important;
+}
+
+/* Indicador de hora atual */
+.fc-timegrid-now-indicator-line {
+  border-color: rgb(239 68 68);
+  border-width: 2px;
+}
+
+.fc-timegrid-now-indicator-arrow {
+  border-color: rgb(239 68 68);
+  border-width: 8px;
+}
+
+/* Células do grid */
+.fc-timegrid-slot {
+  height: 48px !important;
+}
+
+.fc-timegrid-slot-minor {
+  border-top-style: dotted;
+}
+
+/* Hover nas células */
+.fc-timegrid-col:hover {
+  background-color: rgb(124 58 237 / 0.03);
+}
+
+.dark .fc-timegrid-col:hover {
+  background-color: rgb(124 58 237 / 0.05);
+}
+
+/* Scrollbar customizada */
+.fc-scroller {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(156 163 175) transparent;
+}
+
+.fc-scroller::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.fc-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.fc-scroller::-webkit-scrollbar-thumb {
+  background: rgb(156 163 175);
+  border-radius: 4px;
+}
+
+.fc-scroller::-webkit-scrollbar-thumb:hover {
+  background: rgb(107 114 128);
+}
+
+/* Dia de hoje */
+.fc-day-today {
+  background-color: var(--fc-today-bg-color) !important;
+}
+
+/* Quarta-feira com listras */
+.fc-day-wed {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(124, 58, 237, 0.05) 10px,
+    rgba(124, 58, 237, 0.05) 20px
+  );
+}
+
+.dark .fc-day-wed {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(124, 58, 237, 0.1) 10px,
+    rgba(124, 58, 237, 0.1) 20px
+  );
+}
+
+/* Resize handle */
+.fc-event-resizer {
+  height: 12px !important;
+  bottom: 0 !important;
+  cursor: ns-resize !important;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.fc-event:hover .fc-event-resizer {
+  opacity: 1;
+}
+
+.fc-event-resizer::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 4px;
+  background: currentColor;
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+/* Dragging */
+.fc-event-dragging {
+  opacity: 0.75;
+  z-index: 1000 !important;
+}
+
+/* Seleção de horário */
+.fc-highlight {
+  background-color: rgb(124 58 237 / 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .fc-col-header-cell-cushion {
+    font-size: 0.75rem;
+  }
+  
+  .fc-timegrid-slot-label {
+    font-size: 0.625rem;
+  }
+  
+  .fc-event {
+    font-size: 0.75rem;
+  }
+}

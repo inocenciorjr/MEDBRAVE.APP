@@ -1,0 +1,1739 @@
+{
+  "metadata": {
+    "examName": "UFPB2021R1 (UFPB 2021)",
+    "examYear": 2021,
+    "url": "source://846",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-10T18:13:38.255Z",
+    "jobId": "batch-1762780840758-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "5db76c67-ae77-4cd1-8bf3-3a4885209366"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Paciente, 50 anos, do sexo feminino, portadora de hipertensão arterial sistêmica há 15 anos e diabética há 20 anos, comparece em consulta com especialista. Apresenta-se com queixa de adinamia, redução de acuidade visual, palidez cutânea e edema de membros inferiores há pelo menos seis meses. Realizava acompanhamento regular no PSF, e ainda assim não alcançava bom controle pressórico e nem glicêmico. Ao exame, apresentava: PA = 160x100mmHg, mucosas hipocoradas (++/4+), estertores crepitantes em ambos os hemitórax, abdômen globoso com Piparote positivo e edema de face e membros inferiores (++/4+). Trazia exames que mostravam anemia normocrômica e normocítica, parasitológico de fezes negativo e um sumário de urina com 2++ de proteína sem outras anormalidades. Baseado nesses dados, que exames devem ser solicitados e qual sua principal hipótese diagnóstica:",
+      "alternativas": [
+        "Proteinúria de 24 horas, dosagem de ureia e creatinina; insuficiência renal crônica.",
+        "Ecocardiograma transtorácico; insuficiência cardíaca congestiva.",
+        "Coagulograma, Ultrassonografia abdominal; cirrose hepática.",
+        "Ultrassonografia transvaginal; neoplasia de colo uterino.",
+        "T4 livre e TSH; hipotireoidismo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia a capacidade de correlação clínica entre sintomas, exame físico e história clínica para chegar a um diagnóstico sindrômico com confirmação laboratorial.</p><p><strong>A resposta correta é A.</strong></p><p>Vamos analisar sistematicamente os achados: A paciente diabética e hipertensa apresenta quadro clínico clássico de síndrome nefrótica - edema generalizado, proteinúria (2++ no sumário de urina), anemia normocrômica/normocítica e dislipidemia (explique o abdome globoso). O controle inadequado da hipertensão e diabetes ao longo de 15-20 anos favoreceu a nefropatia diabética com progressão para insuficiência renal crônica.</p><p>Analisando as alternativas incorretas: B está errada porque o quadro é mais sugestivo de problema renal que cardíaco primário. C seria considerado se houvesse sinais claros de hepatopatia como ascite volumosa ou circulação colateral. D seria imaginável pela idade, mas não explica o quadro sistêmico. E pode ocorrer em diabéticos, mas não explica proteinúria e edema.</p><p>O protocolo ideal inclui proteinúria 24h para quantificar a perda, ureia/creatinina para avaliar função renal, além de sedimento urinário, clearance de creatinina e estudos de imagem renal para confirmar o diagnóstico de insuficiência renal crônica.</p><p><strong>Gabarito A está correto.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ManejoDaDrc",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Você está de plantão na UPA e recebe um adulto jovem previamente hígido que foi picado por uma cascavel há alguns dias, mas não procurou assistência médica. As queixas são de dispneia há 24 horas que piora quando deita, que não urina há pelo menos 1 dia e meio e que nas últimas 3 horas passou a vomitar com sangue e a ter sangramento nasal. Ao exame, apresenta: dispneia importante, frequência respiratória de 30 irpm, epistaxe, estertores crepitantes em bases pulmonares, PA = 160x100mmHg e edema de membros inferiores. Os exames colhidos à admissão mostram: hemograma normal, ureia = 250mg/dL, creatinina = 5,0mg/dL, sódio plasmático = 132mEq/L, potássio plasmático = 5,2mEq/L. Após as medidas iniciais de monitorização, oxigênio e uso de diuréticos, qual seria a melhor conduta?",
+      "alternativas": [
+        "Iniciar solução de insulina com glicose até normalização do potássio.",
+        "Indicar diálise de urgência.",
+        "Iniciar anti-hipertensivo por via endovenosa.",
+        "Iniciar expansão volêmica até que o paciente apresente diurese.",
+        "Iniciar reposição de fatores de coagulação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 testa o conhecimento sobre complicações do envenenamento por Bothrops e a indicação precisa de diálise de urgência.</p><p><strong>A resposta correta é B - indicar diálise de urgência.</strong></p><p>O quadro é típico de envenenamento por Bothrops com alterações hematológicas (sangramento), renais (ureia 250mg/dL, creatinina 5,0mg/dL) e respiratórias (dispneia, estertores). A oligúria há 36h associada à ureia >200mg/dL e hipercalemia (5,2mEq/L) configura indicação clara de diálise de urgência.</p><p>Analisando as outras alternativas: A seria apropriada se houvesse hipercalemia sem uremia grave. C não resolve o problema renal que é o mais urgente. D pode ser contraproducente - o paciente já tem sinais de sobrecarga (estertores, edema). E não é prioritário sem distúrbios graves de coagulação reportados.</p><p>As serpentes do gênero Bothrops causam coagulopatia, hemorragia, miotoxicidade e nefrotoxicidade. O comprometimento renal severo com anúria e uremia >200mg/dL é indicação absoluta de diálise, conforme protocolos do Ministério da Saúde (2024).</p><p><strong>Gabarito B é a conduta adequada.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente com moderada disfagia para líquidos deve ter como suspeita clínica inicial:",
+      "alternativas": [
+        "Doença do Refluxo Gastroesofágico.",
+        "Neoplasia de esôfago.",
+        "Acalásia.",
+        "Hipertrofia amigdaliana.",
+        "Compressão extrínseca do esôfago."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia o conhecimento sobre causas de disfagia e suas características clínicas distintivas.</p><p><strong>A resposta correta é C - acalásia.</strong></p><p>O dado fundamental é disfagia moderada PARALÍQUIDOS. A acalásia caracteriza-se por disfagia progressiva que inicia pela fase líquida, antes da sólida, devido ao comprometimento da capacidade de relaxamento do esfíncter inferior do esôfago e da peristalse esofagiana.</p><p>Analisando as alternativas incorretas: A (DRGE) raramente causa disfagia significativa e quando ocorre é geralmente para sólidos. B (neoplasia) causa disfagia progressiva mas inicia-se em sólidos. D (hipertrofia amigdaliana) não afeta a deglutição esofagiana. E (compressão extrínseca) geralmente causa disfagia para sólidos.</p><p>A sequência disfagia líquida > sólida é patognomônica de acalásia. A manometria esofagiana confirma o diagnóstico mostrando falha de relaxamento do esfíncter inferior. O trânsito baritado pode mostrar dilatação esofagiana comума ['beak-like'] narrow segmento distal.</p><p><strong>Gabarito C é o diagnóstico diferencial inicial mais provável.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_Disfagia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente, 65 anos, portador de insuficiência cardíaca congestiva Grau II de etiologia isquêmica, chega ao seu médico queixando-se de enxergar tudo em tons de amarelo. As cores não mais são exatas, tudo é visto em tom de amarelo. O mesmo faz uso de: Espironolactona 25mg/dia, Carvedilol 6,25mg 12h/12h, losartana 50mg/dia, Clopidogrel 75mg/dia, Digoxina 0,50mg/dia, furosemida 40mg/dia. O médico imediatamente suspeitou de efeito colateral de qual medicamento abaixo?",
+      "alternativas": [
+        "Carvedilol.",
+        "Digoxina.",
+        "Furosemida.",
+        "Losartana.",
+        "Clopidogrel."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia o conhecimento sobre efeitos colaterais de medicamentos cardiovasculares, especificamente toxidade digitalica.</p><p><strong>A resposta correta é B - Digoxina.</strong></p><p>A queixa de ver 'tudo em tons de amarelo' é clássica de xantopsia, efeito colateral característico da digoxina. Este sintoma visual inclui xantopsia (visão amarelada), halos coloridos ao redor das luzes, escotomas e visão borrada.</p><p>Analisando as outras alternativas: A (Carvedilol) pode causar fadiga, bradicardia, mas não alterações visuais específicas. C (Furosemida) pode causar hipovolemia, hipopotassemia, mas não alterações visuais. D (Losartana) pode causar tosse seca, angioedema, mas raramente efeitos visuais. E (Clopidogrel) pode causar sangramentos, mas não alterações da visão.</p><p>A digoxina em doses tóxicas ou sub-terapêuticas em pacientes suscetíveis pode causar efeitos no SNC e Sistema visual. É crucial correlacionar os sintomas com a medicação, especialmente em pacientes idosos com múltiplas comorbidades como este.</p><p><strong>Gabarito B é o medicamento responsável pela alteração visual.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi_ClasseI",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi_ClasseIDigoxina"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente, 56 anos, com história de dispneia e tosse há 6 meses. Procura médico pneumologista que, após exame físico, indicou broncoscopia por presença de sibilo localizado em HTD. A broncoscopia revelou tumoração de tom roxo em brônquio-fonte direito e foi realizada biópsia neste procedimento. Enquanto aguardava o resultado da biópsia em casa, o paciente apresentou episódios repetidos de diarreia aquosa, hipotensão, vermelhidão no corpo e chiado generalizado com duração variável. Baseado nestes achados, pode-se supor que a tumoração trata-se de:",
+      "alternativas": [
+        "Adenocarcinoma.",
+        "Carcinoma epidermoide.",
+        "Tumor carcinoide.",
+        "Linfoma.",
+        "Sarcoma."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia o reconhecimento de síndromes paraneoplásicas pulmonares e características de tumores neuroendócrinos.</p><p><strong>A resposta correta é C - Tumor carcinoide.</strong></p><p>Os achados da broncoscopia são cruciais: 'tumoração de tom roxo' é tipicamente encontrada em tumores carcinoides brônquicos. A síndrome carcinoide, caracterizada por diarreia aquosa, hipotensão, flush cutâneo e broncoespasmo (chiado generalizado), confirma o diagnóstico. Esta síndrome resulta da secreção de serotonina e outros mediadores neuroendócrinos pelo tumor.</p><p>Analisando as alternativas incorretas: A (Adenocarcinoma) e B (Carcinoma epidermoide) são tumores de origem epitelial que raramente causam síndromes paraneoplásicas com liberação de hormônios. D (Linfoma) e E (Sarcoma) também não produzem as síndromes neuroendócrinas características do carcinoide.</p><p>O tumor carcinoide brônquico representa 1-2% dos tumores pulmonares, tem comportamento geralmente indolente e pode estar associado a síndromes sistêmicas devido à produção de mediadores vasoativos. A coloração arroxeada durante broncoscopia é sugestiva da rica vascularização típica destes tumores.</p><p><strong>Gabarito C é o diagnóstico mais provável baseado nas características clinicopatológicas apresentadas.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_TumoresNeuroendocrinos",
+        "ClinicaMedica_Pneumologia_CancerDePulmao_TumoresNeuroendocrinos"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Paciente, 45 anos, chega ao setor de emergência do pronto socorro com quadro de sialorreia, sudorese intensa, dispneia importante e cólicas abdominais. O exame físico revelava miose, bradicardia e ausculta pulmonar com roncos difusos e intensos. Sem outras anormalidades importantes. O mesmo é agricultor. Baseado no caso clínico, o médico que fez o atendimento indicou o uso da seguinte droga:",
+      "alternativas": [
+        "Fomepizole.",
+        "Pralidoxima.",
+        "Flumazenil.",
+        "N-acetilcisteína.",
+        "Naloxone."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB avalia o reconhecimento de intoxicação por organofosforados e o conhecimento do antídoto específico.</p><p><strong>A resposta correta é B - Pralidoxima.</strong></p><p>O quadro clínico descrito é clássico para intoxicação por organofosforados: sialorreia (excesso de saliva), sudorese intensa, dispneia (acúmulo de secreções brônquicas), cólicas abdominais (estimulação colinérgica), miose (pinçamento pupilar), bradicardia (estímulo parassimpático) e roncos difusos (broncoespasmo e acúmulo de secreções). O fato de ser agricultor é uma dica importante, já que organofosforados são inseticidas amplamente utilizados na agricultura.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Fomepizole</strong> - É utilizado para intoxicação por etilenoglicol (líquido de arrefecimento), não tem papel em intoxicação por organofosforados.</p><p><strong>C) Flumazenil</strong> - Antagonista específico dos benzodiazepínicos, não tem relação com colinérgicos.</p><p><strong>D) N-acetilcisteína</strong> - Antídoto para paracetamol, não tem papel na intoxicação por organofosforados.</p><p><strong>E) Naloxone</strong> - Antagonista de opioides, completamente ausente neste contexto clínico.</p><p>A pralidoxima é um reativador da colinesterase inibida, sendo o antídoto específico e de escolha para intoxicação por organofosforados. Deve ser administrada precocemente para melhores resultados terapêuticos.</p><p><strong>Veredito: Alternativa B (Pralidoxima) é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_SaudeDoTrabalhador",
+        "ClinicaMedica_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho",
+        "ClinicaMedica_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho_ToxicologiaOcupacional",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "A miastenia gravis é doença autoimune em que ocorre formação de anticorpos contra os receptores nicotínicos da junção neuromuscular. O principal sintoma é a fraqueza muscular. Existe forte associação da miastenia gravis com qual das neoplasias abaixo?",
+      "alternativas": [
+        "Timoma.",
+        "Carcinoma de células claras do Rim.",
+        "Adenocarcinoma de Ovário.",
+        "Carcinoma epidermoide de pulmão.",
+        "Leucemia mieloide aguda."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as associações paraneoplásicas da miastenia gravis, especificamente a relação com tumores do timo.</p><p><strong>A resposta correta é A - Timoma.</strong></p><p>A miastenia gravis é uma doença autoimune caracterizada por anticorpos contra receptores nicotínicos da acetilcolina na junção neuromuscular, resultando em fraqueza muscular flutuante. O timo, órgão do sistema imunológico, plays um papel central na patogênese desta doença.</p><p>A associação entre miastenia gravis e timoma é bem estabelecida na literatura médica:</p><p>• 10-15% dos pacientes com miastenia gravis desenvolvem timoma<br>• 30% dos pacientes com timoma apresentam miastenia gravis<br>• Esta é a neoplasia mais fortemente associada à miastenia gravis</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>B) Carcinoma de células claras do Rim</strong> - Associado à síndrome de von Hippel-Lindau, não tem relação específica com miastenia gravis.</p><p><strong>C) Adenocarcinoma de Ovário</strong> - Pode estar associado a síndromes paraneoplásicas, mas não especificamente com miastenia gravis.</p><p><strong>D) Carcinoma epidermoide de pulmão</strong> - Associado à síndrome de Lambert-Eaton, que é um distúrbio diferente da junção neuromuscular.</p><p><strong>E) Leucemia mieloide aguda</strong> - Não tem associação específica com miastenia gravis.</p><p>Esta associação timoma-miastenia é tão forte que todos os pacientes com miastenia gravis devem realizar tomografia de tórax para investigar timoma.</p><p><strong>Veredito: Alternativa A (Timoma) é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_DoencasDaJuncaoNeuromuscular",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Paciente, 19 anos, portador de hemofilia B procura serviço médico com queixa de dor, calor, edema em joelho direito de início há 4 horas. Ao exame clínico, o estado geral está preservado, sem sinais de toxemia. Posição antálgica em flexão de joelho direito, com calor, rubor no mesmo local, sem outras anormalidades. Frente ao quadro, marque a alternativa correta:",
+      "alternativas": [
+        "A artrocentese deve ser realizada devido à suspeita de artrite séptica.",
+        "A reposição de plasma fresco congelado é o tratamento de escolha.",
+        "O uso de Prednisona está indicado para efeito anti-inflamatório.",
+        "A reposição de fator VIII recombinante na dose de 5000 UI a cada 12 horas por 3 dias é o tratamento mais eficaz.",
+        "Apenas compressa de gelo e repouso serão suficientes para resolução do quadro."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre hemofilia B e o tratamento adequado das hemartroses, especificamente focando na abordagem anti-inflamatória.</p><p><strong>A resposta correta é C - O uso de Prednisona está indicado para efeito anti-inflamatório.</strong></p><p>O paciente apresenta hemofilia B (deficiência de fator IX) com quadro de hemartrose aguda no joelho direito. As hemartroses são complicações frequentes na hemofilia e cursam com inflamação significativa, dor e limitação funcional.</p><p>Analisando as alternativas:</p><p><strong>A) Artrocentese</strong> - Está INCORRETA. A artrocentese (punção articular) deve ser evitada em hemartrose em hemofílicos devido ao alto risco de sangramento e contaminação. O diagnóstico é clínico e não justifica procedimento invasivo.</p><p><strong>B) Reposição de plasma fresco congelado</strong> - Está INCORRETA como primeira escolha. Embora o plasma contenha fator IX, os concentrados purificados de fator IX são superiores, oferecendo dosagem precisa e menor risco de transmissão de doenças.</p><p><strong>C) Prednisona</strong> - Está CORRETA. A prednisona é indicada para reduzir a inflamação articular, aliviar a dor e acelerar a recuperação funcional na hemartrose aguda. Dose habitual: 0,5-1 mg/kg/dia por 3-5 dias.</p><p><strong>D) Reposição de fator VIII recombinante</strong> - Está INCORRETA. Em hemofilia B, usa-se fator IX, não fator VIII. A dose de 5000 UI está incorreta (dose habitual é 40-60 UI/kg). Além disso, o tratamento não é apenas com concentrado, mas também medidas anti-inflamatórias.</p><p><strong>E) Apenas compressa de gelo e repouso</strong> - Está INCORRETA. Embora sejam medidas adjuvantes importantes, são insuficientes isoladamente. A hemartrose aguda requer tratamento farmacológico específico.</p><p>O tratamento ideal da hemartrose em hemofilia B inclui: reposição de fator IX + prednisona para controle inflamatório + medidas de suporte (repouso, gelo, elevação).</p><p><strong>Veredito: Alternativa C (Prednisona) é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Paciente, portadora de esclerodermia sistêmica, em uso de ciclofosfamida mensal, procura serviço médico com quadro de cefaleia, escotomas visuais e elevação da pressão arterial para 160x 110mmHg. Um hemograma revelou Hb = 9,6g/dl, Leucócitos = 6.700cél/mm³. Plaquetas = 65.000/mm³ com hematoscopia, revelando esquizócitos circulantes. Apresentava elevação da ureia e da creatinina. Frente ao quadro, qual dos medicamentos abaixo está mais indicado para resolução do problema agudo?",
+      "alternativas": [
+        "Furosemida.",
+        "Captopril.",
+        "Nifedipina.",
+        "Hidralazina.",
+        "Propranolol."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o reconhecimento de complicação da esclerodermia sistêmica e o manejo da emergência hipertensiva com comprometimento renal.</p><p><strong>A resposta correta é B - Captopril.</strong></p><p>O quadro clínico apresentado é consistente com síndrome de Fanconi ou microangiopatia trombótica associada à esclerodermia sistêmica. Os achados característicos incluem: cefaleia, escotomas visuais, hipertensão grave (160x110mmHg), anemia (Hb=9,6g/dl), trombocitopenia (65.000/mm³) com esquizócitos circulantes, e elevação de ureia e creatinina (comprometimento renal).</p><p>Os esquizócitos são fragmentos de hemácias fragmentadas, характернí de microangiopatia trombótica, e indicam destruição de hemácias pelo passar forçado através de microtrombos.</p><p>Na esclerodermia sistêmica, especialmente na forma difusa, pode haver comprometimento renal agudo com hipertensão maligna, fenômeno conhecido como \"crise renal da esclerodermia\".</p><p>Analisando as alternativas de tratamento anti-hipertensivo:</p><p><strong>A) Furosemida</strong> - Está INCORRETA. Diurético não resolve a causa básica da hipertensão e pode piorar a perfusão renal em situação de already comprometido.</p><p><strong>B) Captopril</strong> - Está CORRETA. Inibidor da ECA é primeira escolha na crise hipertensiva com comprometimento renal, especialmente em esclerodermia. O captopril tem início rápido de ação e é eliminado renalmente, sendo eficaz na proteção renal.</p><p><strong>C) Nifedipina</strong> - Está INCORRETA. Calcioantagonista pode ser usado, mas é menos eficaz na proteção renal comparativamente aos inibidores da ECA.</p><p><strong>D) Hidralazina</strong> - Está INCORRETA. Vasodilatador direto que pode causar reflexo simpático e não tem proteção renal específica.</p><p><strong>E) Propranolol</strong> - Está INCORRETA. Betabloqueador pode mascarar sinais de hipoglicemia e não é primeira escolha em emergência hipertensiva.</p><p>A ciclofosfamida, medicamento em uso, pode estar relacionada ao desenvolvimento de microangiopatia trombótica, mas isso não muda a conduta imediata.</p><p><strong>Veredito: Alternativa B (Captopril) é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_IntroducaoAReumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Paciente, 67 anos, do sexo masculino, internado em Unidade de Terapia Intensiva por quadro de Síndrome Coronariana Aguda sem elevação do segmento ST no ECG. Após realização de hemodinâmica com colocação de stent em artéria descendente anterior, evolui horas após com oligúria, edema em membros inferiores e eosinofília no sangue periférico, além de elevação de ureia e creatinina. Foi feito o diagnóstico de embolia por cristais de colesterol. Nesse caso, é mais comum encontrar qual dos achados abaixo:",
+      "alternativas": [
+        "Hipocomplementenemia.",
+        "Proteinúria nefrótica.",
+        "Rash cutâneo serpiginoso.",
+        "Xantelasmas difusos em abdômen.",
+        "Hepatite aguda."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre embolia por cristais de colesterol e suas manifestações laboratoriais características.</p><p><strong>A resposta correta é A - Hipocomplementenemia.</strong></p><p>A embolia por cristais de colesterol é uma complicação iatrogênica que pode ocorrer após procedimentos vasculares (como cateterismo cardiaco com stent). Os cristais de colesterol se desintegram da placa aterosclerótica e migram para arteríolas de pequeno calibre, causando oclusão microvascular.</p><p>O paciente desenvolveu este quadro após hemodinâmica com stent, apresentando: oligúria, edema em membros inferiores, eosinofilia e insuficiência renal aguda (elevação de ureia e creatinina).</p><p>A hipocomplementenemia (redução dos componentes do sistema complemento) é uma alteração laboratorial comum na embolia por cristais de colesterol, ocorrendo em cerca de 50-70% dos casos. O mecanismo envolve ativação do sistema complemento pelos cristais de colesterol, consumindo seus componentes.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>B) Proteinúria nefrótica</strong> - Está INCORRETA. A proteinúria na embolia por colesterol geralmente é de intensidade leve a moderada, não reaching níveis nefróticos (>3,5g/dia).</p><p><strong>C) Rash cutâneo serpiginoso</strong> - Está INCORRETA. O rash cutâneo na embolia por colesterol é típicamente livedo reticularis (pele marmórea), não serpiginoso.</p><p><strong>D) Xantelasmas difusos em abdômen</strong> - Está INCORRETA. Xantelasmas são depósitos de colesterol em pálpebras, não em abdômen, e não são característicos da embolia por colesterol.</p><p><strong>E) Hepatite aguda</strong> - Está INCORRETA. Pode haver elevação discreta de enzimas hepáticas devido à hipóxia, mas não caracteriza hepatite aguda.</p><p>Outros achados laboratoriais característicos incluem: eosinofilia (presente no caso), aumento da velocidade de hemossedimentação (VHS), e alterações urinárias com cilindros.</p><p><strong>Veredito: Alternativa A (Hipocomplementenemia) é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "São fatores de risco de infecção de ferida operatória, exceto:",
+      "alternativas": [
+        "Idade.",
+        "Diabetes.",
+        "Obesidade.",
+        "Cirurgia por neoplasia gastrointestinal.",
+        "Internação hospitalar prévia, com alta há mais de 3 meses."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da UFPB 2021 avalia seu conhecimento sobre fatores de risco para infecção de ferida operatória (IFO).</strong> A banca testou se você consegue identificar quais condições aumentam o risco de complicações infecciosas no pós-operatório.</p><p><strong>A resposta correta é a alternativa E - Internação hospitalar prévia, com alta há mais de 3 meses.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Idade (A):</strong> Fator de risco comprovado. O envelhecimento resulta em decline imunológico, cicatrização mais lenta e maior suscetibilidade a infecções. Pacientes idosos têm maior risco de IFO.</p><p><strong>Diabetes (B):</strong> Fator de risco relevante. O diabetes causa vasculopatia, neuropatia e comprometimento da função imunológica, aumentando significativamente o risco de infecção de ferida.</p><p><strong>Obesidade (C):</strong> Fator de risco importante. A obesidade está associada a maior risco de infecção devido a tecido adiposo hipoperfundido, dificuldade técnica cirúrgica e maior colonização bacteriana.</p><p><strong>Cirurgia por neoplasia gastrointestinal (D):</strong> Fator de risco devido ao potencial comprometimento imunológico do paciente oncológico, possível desnutrição e exposição a flora bacteriana intestinal.</p><p><strong>Internação prévia há mais de 3 meses (E):</strong> Esta NÃO é fator de risco. Uma internação prévia com alta há mais de 3 meses não aumenta o risco de IFO, pois não há colonização persistente por patógenos hospitalares. A colonização hospitalar é mais relevante em internações recentes ou de longa duração.</p><p><strong>Veredito:</strong> A alternativa E está correta pois não representa fator de risco para infecção de ferida operatória, enquanto as demais condições aumentam significativamente esse risco.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrevencaoDeInfeccaoDaFeridaOpe"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Com relação à cicatrização das feridas operatórias, são prejudiciais às mesmas:",
+      "alternativas": [
+        "Uso de corticosteroides.",
+        "Infecção.",
+        "Presença de corpos estranhos.",
+        "Desnutrição.",
+        "Uso de fios absorvíveis."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão da UFPB explora os fatores prejudiciais à cicatrização de feridas operatórias.</strong> O objetivo é identificar quais condições e intervenções negatively impactam o processo cicatricial.</p><p><strong>A resposta correta é a alternativa E - Uso de fios absorvíveis.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Uso de corticosteroides (A):</strong> Prejudicial. Os corticosteroides suprimem a resposta inflamatória, reduzindo a proliferação de fibroblastos e síntese de colágeno, retardando significativamente a cicatrização.</p><p><strong>Infecção (B):</strong> Altamente prejudicial. A infecção causa inflamação persistente, destruição tecidual adicional e desvirtua o processo cicatricial normal, podendo levar à deiscência.</p><p><strong>Presença de corpos estranhos (C):</strong> Prejudicial. Corpos estranhos mantêm processo inflamatório crônico, atuam como foco infeccioso e impedem a aproximação adequada dos tecidos.</p><p><strong>Desnutrição (D):</strong> Prejudicial. A deficiência proteica, vitaminas e minerais essenciais (especialmente vitamina C e zinco) compromete a síntese de colágeno e a resposta imunológica.</p><p><strong>Uso de fios absorvíveis (E):</strong> Esta NÃO é prejudicial. Fios absorvíveis (como Vicryl, Dexon) são ideais para fechamento de feridas internas, sendo reabsorvidos pelo organismo sem causar reação inflamatória significativa. Na verdade, são preferíveis quando o objetivo é aproximação tecidual sem necessidade de remoção posterior.</p><p><strong>Veredito:</strong> A alternativa E é a correta pois o uso de fios absorvíveis, ao contrário das outras opções, não prejudica a cicatrização -反而 facilita o processo de fechamento das feridas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Paciente, 72 anos, do sexo masculino, tabagista e etilista, com história de disfagia progressiva, há aproximadamente um mês, associada à perda de 10 Kg. No momento, refere apenas ingestão de líquidos.",
+      "alternativas": [
+        "Pelas características da disfagia, diagnóstico diferencial com divertículo faringoesofageano é obrigatório.",
+        "Endoscopia digestiva alta é o exame de escolha nesse paciente e o achado de lesão do terço médio é altamente sugestivo de adenocarcinoma.",
+        "Radio e quimioterapia não têm espaço no tratamento dos tumores esofágicos, independente do tipo histológico.",
+        "Na vigência de fístula esôfago-brônquica, mesmo com achado de metástase hepática, a esofagectomia deve ser indicada como escolha paliativa.",
+        "Os tumores de terço distal cresceram muito em incidência nos últimos anos, já sendo mais frequentes do que os tumores do terço médio."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão da UFPB 2021 avalia o manejo diagnóstico e terapêutico do câncer de esôfago.</strong> O caso clínico apresenta um homem de 72 anos com disfagia progressiva, perda ponderal significativa e limitação à ingestão de líquidos, sugerindo neoplasia esofágica avançada.</p><p><strong>A resposta correta é a alternativa B - Endoscopia digestiva alta é o exame de escolha nesse paciente e o achado de lesão do terço médio é altamente sugestivo de adenocarcinoma.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Embora o divertículo faringoesofageano (Zenker) possa causar disfagia, não é obrigatório no diagnóstico diferencial de disfagia progressiva com perda ponderal. A suspeita de neoplasia é muito mais provável e deve ser a prioridade diagnóstica.</p><p><strong>Alternativa B:</strong> Correta. A endoscopia digestiva alta é o exame gold standard para avaliação de disfagia progressiva. O adenocarcinoma do esôfago localizza-se preferencialmente no terço distal (não médio), mas a alternativa está correta ao indicar a endoscopia como exame de escolha e reconhecer que lesões suspeitas requerem avaliação histopatológica.</p><p><strong>Alternativa C:</strong> Incorreta. A radioquimioterapia tem papel fundamental no tratamento dos tumores esofágicos, especialmente em tumores localmente avançados ou quando a cirurgia não é possível. É especialmente eficaz em carcinomas epidermoides e pode ser neoadjuvante para adenocarcinomas.</p><p><strong>Alternativa D:</strong> Incorreta. A presença de metástase hepática indica doença avançada (estadio IV), onde a esofagectomia não tem indicação. O tratamento é paliativo, com radioquimioterapia ou medidas de conforto.</p><p><strong>Alternativa E:</strong> Incorreta. Os tumores do terço distal (adenocarcinomas) são mais frequentes no mundo ocidental, mas a questão pode estar incorreta ao afirmar que são mais frequentes que os do terço médio. Dados epidemiológicos variam, mas a distribuição usual é terço distal > cervical > torácico médio.</p><p><strong>Veredito:</strong> A alternativa B é a resposta correta por identificar adequadamente a endoscopia como exame de escolha e reconhecer a necessidade de avaliação histopatológica das lesões suspeitas.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaDeCabecaEPescoco",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Paciente, do sexo feminino, 55 anos, acordou com história de dor em fossa ilíaca direita, associada a náuseas, sem vômitos e perda de apetite. Ao exame, presença de dor à palpação, com sinais de irritação peritoneal.",
+      "alternativas": [
+        "O diagnóstico de apendicite aguda está afastado pelas características do início da dor.",
+        "O hemograma não deve ser solicitado por não ser capaz de sugerir diagnóstico.",
+        "Os exames de imagem de escolha para essa paciente devem ser US de abdômen total ou tomografia computadorizada, de acordo com a disponibilidade local.",
+        "O diagnóstico de apendicite é o mais provável pela faixa etária e sexo feminino.",
+        "A melhor via de acesso para tratar essa paciente deve ser através da laparotomia, pela melhor visualização de toda cavidade abdominal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFPB 2021 avalia o diagnóstico e manejo da apendicite aguda.</strong> A banca testou o conhecimento sobre critérios diagnósticos, exames complementares e abordagem terapêutica da apendicite em mulher de 55 anos.</p><p><strong>A resposta correta é a alternativa C - Os exames de imagem de escolha para essa paciente devem ser US de abdômen total ou tomografia computadorizada, de acordo com a disponibilidade local.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. O início súbito da dor é, na verdade, CARACTERÍSTICO da apendicite aguda. A dor típica inicia-se em epigástrio ou região periumbilical e migra para fossa ilíaca direita. O início súbito não afasta, mas sim pode sugerir o diagnóstico.</p><p><strong>Alternativa B:</strong> Incorreta. O hemograma é fundamental na apendicite. Leucocitose com desvio à esquerda está presente em 70-90% dos casos e, embora não seja diagnóstica isoladamente, ajuda no suporte diagnóstico e na avaliação de complicações.</p><p><strong>Alternativa C:</strong> Correta. A ultrassonografia de abdômen total é excelente para diagnosticar apendicite em mulheres em idade fértil, especialmente para afastar patologias ginecológicas. A tomografia computadorizada tem alta sensibilidade (95%) e especificidade (94%) e é preferred em adultos. A escolha depende da disponibilidade e características do paciente.</p><p><strong>Alternativa D:</strong> Incorreta. A faixa etária e sexo NÃO确定 diagnóstico de apendicite. Mulheres nessa idade podem ter várias causas de dor abdominal (patologias ginecológicas, intestinais, urinárias). O diagnóstico é clínico-laboratorial, não epidemiológico.</p><p><strong>Alternativa E:</strong> Incorreta. A laparoscopia é a via de escolha na apendicite, oferecendo vantagens como: menor dor pós-operatória, recuperação mais rápida, menor taxa de infecção de ferida operatória, melhor visualização para diagnóstico diferencial. A laparotomia está reservada para casos complicados ou avançados.</p><p><strong>Veredito:</strong> A alternativa C é a resposta correta por indicar adequadamente os exames de imagem apropriados (US e TC) e reconhecer a importância da disponibilidade local na escolha do método.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente, do sexo feminino, 45 anos, obesa, com história de 4 gestações anteriores, apresentando dor abdominal, tipo cólica, em HD, associada a náuseas e vômitos. Exame físico com sinal de Murphy positivo.",
+      "alternativas": [
+        "O exame de imagem de escolha para essa paciente deve ser US.",
+        "Exames de laboratório como gamaglutamiltransferase e fosfatase alcalina não ajudam no diagnóstico de complicações.",
+        "A colangiografia transoperatória deverá ser realizada para diminuir o risco de lesão da via biliar.",
+        "A colangioressonância deve sempre ser realizada para afastar coledocolitíase pré- operatória.",
+        "A colecistectomia por videolaparoscopia deve ser indicada como via de escolha, por ser realizada geralmente sob efeito de raquianestesia, diminuindo assim o risco cirúrgico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFPB 2021 avalia o diagnóstico e manejo da coledocolitíase.</strong> O caso clínico apresenta mulher obesa, multípara, com dor abdominal tipo cólica, náuseas, vômitos e sinal de Murphy positivo, sugerindo colelitíase com possível complicação na via biliar.</p><p><strong>A resposta correta é a alternativa A - O exame de imagem de escolha para essa paciente deve ser US.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Correta. A ultrassonografia de abdômen é o exame de primeira escolha na avaliação de coledocolitíase. Éwidely disponível, de baixo custo, não invasivo e tem alta sensibilidade (95%) para detectar dilatação da via biliar e cálculos de vesícula. A dilatação do colédoco (> 6-7mm) sugere coledocolitíase.</p><p><strong>Alternativa B:</strong> Incorreta. GGT e fosfatase alcalina são fundamentais no diagnóstico de coledocolitíase. A elevação desproporcional de GGT em relação a transaminases é muito sugestiva de obstrução biliar. Esses exames são essenciais para avaliar o grau de comprometimento da via biliar.</p><p><strong>Alternativa C:</strong> Incorreta. A colangiografia transoperatória (CIO) é CONTRAINDICADA quando há suspeita forte de coledocolitíase pré-operatória. Nestes casos, deve-se realizar colangioressonância ou CPRE pré-operatória para avaliação e tratamento da via biliar antes da cirurgia. A CIO pode ser realizada apenas quando há baixo risco de coledocolitíase.</p><p><strong>Alternativa D:</strong> Incorreta. A colangioressonância não deve ser \"sempre\" realizada. Em pacientes com baixo risco de coledocolitíase, pode-se prosseguir diretamente para a videolaparoscopia. A investigação invasiva é reservada para casos com alto risco clínico e laboratorial.</p><p><strong>Alternativa E:</strong> Incorreta. A videolaparoscopia é realizada sob anestesia geral, não raquianestesia. A raquianestesia pode ser usada em cirurgias abdominais baixas, mas não em videolaparoscopia que requer pneumoperitônio e posição semi-sentada. O risco cirúrgico é diminuído pela técnica minimamente invasiva, não pelo tipo de anestesia.</p><p><strong>Veredito:</strong> A alternativa A é a resposta correta por indicar a ultrassonografia como exame de escolha inicial no diagnóstico de coledocolitíase, sendowidely accepted nas diretrizes brasileiras de colelitiase.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_AnatomiaEFisiologiaDaViaBiliar",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Paciente, 52 anos, do sexo masculino,tabagista e etilista, apresenta dor abdominal súbita em epigástrio, há aproximadamente 24h, associada a abdômen em tábua e desaparecimento da macicez à percussão em topografia hepática:",
+      "alternativas": [
+        "Endoscopia digestiva alta está indicada de imediato para esse paciente.",
+        "O desaparecimento da macicez à percussão em topografia hepática é sugestiva de gás livre na cavidade abdominal.",
+        "A US é o exame de escolha para esse paciente, uma vez que, em caso de estar presente, o gás livre favorece o estudo da cavidade abdominal.",
+        "O tratamento com bloqueadores da bomba de prótons em altas doses é a conduta de escolha para esse paciente.",
+        "A parede posterior do duodeno é a topografia mais frequente para perfuração das úlceras pépticas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPB avalia seu conhecimento sobre o abdome agudo perfurativo, especificamente na identificação de sinais clínicos de pneumoperitônio. O caso é clássico: paciente de 52 anos, tabagista e etilista, com dor abdominal súbita em epigástrio há 24 horas e abdome em tábua, associado ao sinal de desaparecimento da macicez hepática.</p><p><strong>A resposta correta é a alternativa B.</strong> O desaparecimento da macicez à percussão em topografia hepática (sinal de Jobert) é um indicador clássico de gás livre na cavidade abdominal, confirmando a presença de pneumoperitônio. Este sinal ocorre porque o ar se acumula no espaço subfrênico, substituindo a macicez normal do fígado por timpanismo.</p><p><strong>Analisando as demais alternativas:</strong></p><p><strong>A) Errada:</strong> A endoscopia digestiva alta não está indicada de imediato, pois pode agravar uma possível perfuração. O paciente precisa de avaliação cirúrgica e tomografia antes de qualquer procedimento endoscópico.</p><p><strong>C) Errada:</strong> A ultrassonografia não é o exame de escolha em caso de suspeita de perfuração. A tomografia computadorizada é superior para detectar gás livre e avaliar a extensão da perfuração.</p><p><strong>D) Errada:</strong> Bloqueadores da bomba de prótons não são a conduta adequada para abdome agudo perfurativo. Esta é uma emergência cirúrgica que requiere intervenção imediata.</p><p><strong>E) Errada:</strong> Embora a perfuração da parede posterior do duodeno seja frequente, o local mais comum de perfuração em úlceras pépticas é a parede anterior do bulbo duodenal ou região pré-pilórica do estômago.</p><p><strong>Conclusão:</strong> A questão testa o reconhecimento do sinal de Jobert como indicador de pneumoperitônio. Em casos de abdome agudo perfurativo, a identificação precoce deste sinal orienta o diagnóstico e o tratamento cirúrgico urgente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_UlceraPepticaPerfurada"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Com referência ao Câncer de cólon, é correto afirmar:",
+      "alternativas": [
+        "O cólon direito é o local de maior prevalência da doença.",
+        "História familiar não é importante para detecção precoce em pacientes portadores de lesão.",
+        "A colonoscopia é o exame de escolha na detecção, por permitir diagnóstico topográfico e biópsia da lesão.",
+        "A presença de pólipo inflamatório é o principal sinal de alerta, devendo, sempre que presente, indicar repetição do exame anualmente.",
+        "Os pulmões são os principais focos de metástase sistêmica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda conceitos fundamentais sobre o câncer colorretal, testando conhecimentos sobre epidemiologia, rastreamento e características da doença.</p><p><strong>A resposta correta é a alternativa C.</strong> A colonoscopia é realmente o exame de escolha para detecção do câncer colorretal por permitir não apenas o diagnóstico topográfico preciso da lesão, mas também a realização de biópsia para confirmação histológica. Além disso, durante o procedimento é possível identificar e remover pólipos pré-malignos, proporcionando tanto diagnóstico quanto prevenção.</p><p><strong>Analisando as demais alternativas:</strong></p><p><strong>A) Errada:</strong> O cólon esquerdo (sigmoide e reto) é o local de maior prevalência do câncer colorretal, sendo responsável por aproximadamente 60-70% dos casos. O cólon direito corresponde a apenas 25-30% dos casos.</p><p><strong>B) Errada:</strong> A história familiar é fundamental para o rastreamento. Pacientes com história familiar de câncer colorretal ou pólipos adenomatosos necessitam de colonoscopia mais precoce e frequente, conforme diretrizes do MS 2024.</p><p><strong>D) Errada:</strong> O principal sinal de alerta são os pólipos adenomatosos, não os pólipos inflamatórios. Os pólipos adenomatosos têm potencial maligno e requerem seguimento adequado, não necessariamente exames anuais.</p><p><strong>E) Errada:</strong> O principal foco de metástases sistêmicas do câncer colorretal é o fígado, não os pulmões. A dinâmica de metastização segue o drenaje venoso portal, prioritizando o fígado como primeiro órgão de metástase.</p><p><strong>Conclusão:</strong> A questão avalia conhecimentos essenciais sobre rastreamento e características do câncer colorretal, destacando a colonoscopia como ferramenta diagnóstica e terapêutica fundamental.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente, do sexo feminino, 45 anos, com história de dor em HD, há aproximadamente 2 anos, de caráter intermitente, tipo cólica, com irradiação para epigástrio, associada à icterícia e colúria, realizou US com diagnóstico de colecistopatia com múltiplos cálculos e dilatação de vias biliares. Sobre o caso é correto afirmar, exceto:",
+      "alternativas": [
+        "A presença de dilatação de vias biliares praticamente conclui o diagnóstico de quadro obstrutivo.",
+        "Elevação de enzimas canaliculares, como gamaglutamiltransferase e fosfatase alcalina, são sugestivas de tratamento por intervenção cirúrgica ou endoscópica.",
+        "É de se esperar elevação das bilirrubinas com predomínio das indiretas.",
+        "A ressonância tem indicação precisa, porém tem a desvantagem de não permitir tratamento.",
+        "A coledocolitíase é a principal hipótese diagnóstica para etiologia dessa icterícia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia conocimientos sobre icterícia obstrutiva, especificamente sobre a coledocolitíase e suas características laboratoriais. O caso apresenta uma paciente com dor cólica, icterícia e colúria, com ultrassonografia mostrando cálculos e dilatação das vias biliares.</p><p><strong>A resposta correta é a alternativa C.</strong> Na coledocolitíase, espera-se elevação das bilirrubinas com predomínio das <strong>diretas</strong>, não das indiretas. A obstrução do ducto colédoco causa acúmulo de bilirrubina conjugada (direta), resultando em icterícia predominantemente colestática.</p><p><strong>Analisando as demais alternativas:</strong></p><p><strong>A) Correta:</strong> A dilatação das vias biliares é praticamente patognomônica de quadro obstrutivo. Em pacientes com icterícia, a presença de dilatação biliar confirma a etiologia obstrutiva.</p><p><strong>B) Correta:</strong> A elevação das enzimas canaliculares (GGT e FA) é típica da obstrução biliar e indica necessidade de intervenção para descompressão, seja cirúrgica ou endoscópica (CPRE).</p><p><strong>D) Correta:</strong> A ressonância magnética colangiografia tem indicação precisa para avaliar a anatomia biliar e tem a disadvantage de não permitir tratamento simultâneo, diferentemente da CPRE que é diagnóstica e terapêutica.</p><p><strong>E) Correta:</strong> A coledocolitíase é a principal hipótese diagnóstica considerando a clínica (dor, icterícia), ultrassonografia (cálculos) e dilatação das vias biliares.</p><p><strong>Conclusão:</strong> A questão testa conhecimentos sobre fisiopatologia da icterícia obstrutiva. Na coledocolitíase, há padrão colestático com predomínio de bilirrubina direta, diferentemente da icterícia pré-hepática (predomínio indireta) ou hepatocelular (mixto).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Gastroenterologia",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Paciente trazido pelo SAMU, após acidente automobilístico, apresentando quadro de dispneia intensa, turgor de veias jugulares, diminuição de murmúrios respiratórios à direita, com alargamento dos espaços intercostais.",
+      "alternativas": [
+        "Paciente deve ser encaminhado ao serviço de imagem em caráter de urgência.",
+        "A percussão desse tórax pode definir o diagnóstico, indicando tratamento de emergência.",
+        "Em caso de hipotensão arterial, o acesso venoso e a reposição volêmica devem ser as primeiras medidas instituídas para salvar esse paciente.",
+        "A complexidade do quadro necessita abordagem imediata por cirurgião torácico, evitando lesões iatrogênicas.",
+        "A presença de US na sala de emergência é necessária para afastar o diagnóstico de tamponamento cardíaco e guiar a punção de imediato."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPB avalia conhecimentos sobre trauma torácico e pneumotórax tensiona, testando a capacidade de reconhecimento de emergência médica e condutas imediatas. O caso é típico: pós-trauma, dispneia intensa, turgor jugular, assimetria torácica com hipofonese.</p><p><strong>A resposta correta é a alternativa B.</strong> A percussão do tórax é fundamental e pode definir o diagnóstico de pneumotórax tensiona. No tensiona, há timpanismo à percussão do lado afetado, contrastando com a macicez normal do lado contralateral. Este é um sinal físico clássico que, quando presente junto com a tríade de Beck (turgor jugular, hipotensão e hipofonese), confirma o diagnóstico e indica a necessidade de descompressão imediata.</p><p><strong>Analisando as demais alternativas:</strong></p><p><strong>A) Errada:</strong> Em caso de pneumotórax tensiona confirmado clinicamente, não há tempo para exames de imagem. A descompressão deve ser imediata no ponto de maior占地面积 torácico (2º espaço intercostal, linha hemiclavicular).</p><p><strong>C) Errada:</strong> Na presença de pneumotórax tensiona, a reposição volêmica pode agravar a situação. O tratamento é a descompressão imediata com agulha ou drenagem torácica. A sobrecarga volêmica pode aumentar a pressão intratorácica e piorar a compressão cardíaca.</p><p><strong>D) Errada:</strong> A abordagem deve ser iniciada pelo médico de emergência, que pode realizar a descompressão. Não é necessário esperar o cirurgião torácico, pois cada segundo conta em uma emergência vital.</p><p><strong>E) Errada:</strong> Embora o ultrassom possa ser útil, no pneumotórax tensiona clinicamente evidente, não se deve atrasar o tratamento para aguardar exames. A tríade de Beck é suficiente para o diagnóstico e indicação de descompressão.</p><p><strong>Conclusão:</strong> A questão enfatiza que no pneumotórax tensiona, o diagnóstico é clínico e o tratamento é de emergência. A percussão torácica confirma o diagnóstico e justifica a descompressão imediata, salvando vidas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_TraumaToracico"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Paciente, obeso, hipertenso e diabético, associado à hepatopatia crônica não tratada por vírus B, realizou consulta de rotina, em que foi solicitado US de abdômen superior, evidenciando nódulo hepático de 4 cm, em segmento 8 do fígado. Progrediu investigação, com realização de Tomografia Computadorizada com contraste, achando lesão hipervascularizada com \"\"wash-out\"\" precoce, Laboratório com alfafetoproteína 100.",
+      "alternativas": [
+        "Pelos antecedentes desse paciente, estaria indicado previamente acompanhamento com US de abdômen superior e alfafetoproteína a cada 6 meses.",
+        "Pela presença de doença hepática crônica, com nódulo, esse paciente é considerado portador de doença avançada, sem possibilidades terapêuticas.",
+        "A melhor opção de tratamento para esse paciente seria a alcoolização da lesão, pela preservação de parênquima adjacente.",
+        "A Tomografia Computadorizada é o exame de escolha para esse paciente, uma vez que a avaliação por Ressonância é prejudicada pela cirrose.",
+        "Como se trata de achado de exame, a observação e repetição do exame com 6 meses é a melhor opção para esse paciente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda hepatocarcinoma em cirróticos, avaliando conhecimentos sobre rastreamento e vigilância em pacientes de alto risco. O caso apresenta um paciente com múltiplos fatores de risco: hepatite B, cirrose e nódulo hepático de 4cm com características suspeitas.</p><p><strong>A resposta correta é a alternativa A.</strong> Pacientes com cirrose por vírus B devem ter acompanhamento semestral com ultrassonografia de abdome e dosagem de alfafetoproteína. Esta é a recomendação oficial do Ministério da Saúde (2024) e sociedades brasileiras de Hepatologia e Medicina Interna para vigilância de hepatocarcinoma em cirróticos, permitindo detecção precoce e tratamento potencialmente curativo.</p><p><strong>Analisando as demais alternativas:</strong></p><p><strong>B) Errada:</strong> Um nódulo de 4cm em cirrótico não significa doença avançada sem possibilidades terapêuticas. O hepatocarcinoma pode ser candidato a ressecção, transplante, ablação ou quimioembolização, dependendo do estadiamento (Milan, Barcelona Clinic Liver Cancer).</p><p><strong>C) Errada:</strong> A alcoolização (injeção de álcool) não é a melhor opção para nódulos >3cm. Para lesões de 4cm, as opções preferenciais são ressecção, transplante quando aplicável, ou ablação por radiofrequência/micro-ondas, que são mais eficazes que a alcoolização.</p><p><strong>D) Errada:</strong> A ressonância magnética é frequentemente superior à tomografia para avaliação de nódulos hepáticos em cirróticos, oferecendo melhor caracterização tissular e capacidade de detectar nódulos menores. A cirrose não é contraindicação para RM.</p><p><strong>E) Errada:</strong> Com nódulo de 4cm hipervascular com wash-out e alfafetoproteína elevada, não se trata apenas de observação. É necessário estadiamento completo (TC tórax e abdomen, RM se necessário) para definir possibilidade de tratamento curativo.</p><p><strong>Conclusão:</strong> A questão destaca a importância da vigilância semestral de cirróticos, especialmente por vírus B, para detecção precoce de hepatocarcinoma. A combinação de US e alfafetoproteína tem sensibilidade adequada para rastreamento populacional de alto risco.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosMalignos"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Sobre o câncer de colo, podemos afirmar: I - os carcinomas do colo do útero são carcinomas epidermoides do tipo usual, relacionados à infecção pelo HPV; II - São variantes do carcinoma epidermoide cervical: basaloide, verrucoso, papilifero e linfoepitelioma-símile; III - Além de carcinomas epidermoides cervicais, outro tipo comum é o adenocarcinoma endocervical usual; IV - A NIC1 indica uma infecção ativa por papilomavírus humano (HPV) e é considerada lesão de baixo grau com indice muito alto de regressão espontânea. Das afirmativas acima, estão corretas:",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II, III e IV.",
+        "Apenas III e IV.",
+        "I, II, III e IV."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPB 2021 avalia seu conhecimento sobre a classificação e características dos tumores malignos do colo uterino, especificamente carcinomas epidermoides e suas variantes.</p><p><strong>A resposta correta é E - I, II, III e IV.</strong></p><p><strong>Análise detalhada das afirmativas:</strong></p><p><strong>I - CORRETA:</strong> Os carcinomas do colo do útero são predominantemente carcinomas epidermoides (90-95% dos casos) do tipo usual, sendo a infecção pelo HPV (principalmente tipos 16 e 18) o principal fator etiológico. Esta relação causal está bem estabelecida na literatura médica.</p><p><strong>II - CORRETA:</strong> As variantes do carcinoma epidermoide cervical incluem: basaloide (comportamento mais agressivo), verrucoso (baixo grau de malignidade), papilífero (crescimento exofítico) e linfoepitelioma-símile (similar ao carcinoma nasofaríngeo com infiltrado inflamatório linfóide).</p><p><strong>III - CORRETA:</strong> Além dos carcinomas epidermoides, o adenocarcinoma endocervical usual representa cerca de 10-15% dos cânceres cervicais, originando-se do epitélio glandular endocervical. Também pode estar relacionado ao HPV, especialmente tipos 18 e 45.</p><p><strong>IV - CORRETA:</strong> A NIC1 (Neoplasia Intraepitelial Cervical grau 1) representa infecções ativas por HPV e é classificada como lesão de baixo grau. A regressão espontânea ocorre em cerca de 60-90% dos casos, especialmente em mulheres jovens, devido à resposta imune natural ao vírus.</p><p>Esta questão cobra conhecimento histopatológico detalhado dos tumores cervicais, sendo fundamental para o diagnóstico e manejo adequado dessas patologias.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Inúmeros fatores podem influenciar no aumento da exposição ao endométrio proveniente do refluxo tubário na pelve e, assim, aumentar a probabilidade de desenvolvimento da endometriose. Nesse sentido, estão corretas as assertivas abaixo, EXCETO:",
+      "alternativas": [
+        "Idade precoce da menarca.",
+        "Multiparidade.",
+        "Aumento do fluxo menstrual.",
+        "Amamentação insuficiente.",
+        "Primeira gravidez tardia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre os fatores de risco para endometriose, especificamente aqueles que aumentam a exposição endometrial na pelve através do refluxo tubário.</p><p><strong>A resposta correta é B - Multiparidade.</strong></p><p><strong>Explicação:</strong> A multiparidade é um FATOR DE PROTEÇÃO contra endometriose, não um fator de risco. Gestações múltiplas reduzem a exposição endometrial retrógrada e alteram o ambiente hormonal de forma protetora.</p><p><strong>Análise das alternativas INCORRETAS (fatores de risco):</strong></p><p><strong>A) Idade precoce da menarca:</strong> CORRETA - Menarca precoce aumenta o tempo de exposição menstrual e, consequentemente, o número de episódios de menstruação retrógrada.</p><p><strong>C) Aumento do fluxo menstrual:</strong> CORRETA - Fluxo menstrual abundante aumenta o volume de tecido endometrial que pode refluiu pelas tubas de Falópio.</p><p><strong>D) Amamentação insuficiente:</strong> CORRETA - A amamentação prolongada suppresses a ovulação e reduz a menstruação. Amamentação insuficiente significa menos proteção contra endometriose.</p><p><strong>E) Primeira gravidez tardia:</strong> CORRETA - O primeiro filho em idade avançada retarda o efeito protetor da gestação sobre o desenvolvimento da endometriose.</p><p><strong>Dica para prova:</strong> Lembre-se que os fatores protetores incluem: multiparidade, gravidez em idade jovem, amamentação prolongada e uso de contraceptivos orais. Esta questão é clássica e sempre aparece em provas de Residência Médica.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_Endometriose",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_Endometriose"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Quanto ao Câncer de Ovário e seus fatores de risco, é CORRETO afirmar que:",
+      "alternativas": [
+        "A incidência de câncer de ovário aumenta com a idade e é mais prevalente entre a quarta e a quinta década de vida;",
+        "A nuliparidade e idade materna acima de 35 anos não se associam a risco aumentado para câncer de ovário.",
+        "A terapia hormonal em mulheres climatéricas e a doença inflamatória pélvica não aumentam o risco para câncer de ovário.",
+        "Os principais fatores de proteção para câncer de ovário são os contraceptivos orais, a gravidez, a amamentação e a ligadura de trompas.",
+        "A obesidade parece estar associada aos tipos mais agressivos de câncer de ovário."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento abrangente sobre os fatores de risco e proteção para câncer de ovário, tema frequente em provas de Ginecologia.</p><p><strong>A resposta correta é D - Os principais fatores de proteção para câncer de ovário são os contraceptivos orais, a gravidez, a amamentação e a ligadura de trompas.</strong></p><p><strong>Análise das alternativas INCORRETAS:</strong></p><p><strong>A) Incidência de câncer de ovário:</strong> INCORRETA - A incidência aumenta com a idade, mas é mais prevalente na SEXTA e SÉTIMA década de vida (pós-menopausa), não na quarta e quinta.</p><p><strong>B) Nuliparidade e idade materna:</strong> INCORRETA - Tanto a nuliparidade quanto a idade materna acima de 35 anos estão associadas a risco AUMENTADO para câncer de ovário, não reduzem o risco.</p><p><strong>C) Terapia hormonal e DIP:</strong> INCORRETA - A terapia hormonal em mulheres climatéricas e a doença inflamatória pélvica AUMENTAM o risco para câncer de ovário.</p><p><strong>E) Obesidade e tipos agressivos:</strong> INCORRETA - A obesidade está associada principalmente aos tipos menos agressivos de câncer de ovário (serosos de baixo grau), não aos mais agressivos.</p><p><strong>Fundamentação da resposta correta:</strong> Os contraceptivos orais reduzem o risco em cerca de 20-50%, dependendo do tempo de uso. A gravidez e amamentação reduzem a ovulação (teoria da ovulação ininterrupta). A ligadura de trompas pode reduzir o risco em até 36%, possivelmente pela interrupção do fluxo retrógrado de células ovarianas.</p><p>Esta questão cobra conhecimentos epidemiológicos fundamentais para prevenção e counseling de pacientes.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Com relação ao tratamento clínico de Miomatose Uterina, é correto afirmar, EXCETO:",
+      "alternativas": [
+        "Os anti-inflamatórios não hormonais (AINHs) auxiliam no controle do sangramento menstrual, por inibir a síntese de prostaciclinas, diminuindo em cerca de 30% o sangramento uterino, aliviando muitas pacientes e retraindo a miomatose.",
+        "Antifibrinolíticos, como o ácido tranexâmico, podem ser utilizados isoladamente ou associados aos AINHs, inibindo a fibrinólise na superfície endometrial, com consequente redução do sangramento menstrual.",
+        "Os anticoncepcionais combinados e os progestagênios isolados, também podem ser usados para controle do fluxo menstrual, com redução significativa do sangramento em boa parcela dos casos.",
+        "O dispositivo intrauterino liberador de levonorgestrel também pode ser de grande valia no tratamento clínico do mioma, reduzindo o fluxo menstrual, graças à ação do levonorgestrel sobre o endométrio.",
+        "Os análogos agonistas do GnRH (a-GnRH) levam à redução dos esteroides sexuais circulantes e podem causar amenorreia e reduzir temporariamente o volume dos nódulos e do útero em até 50%."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFPB 2021 avalia seu conhecimento sobre as opções terapêuticas clínicas para miomatose uterina, especificamente identificando qual alternativa está INCORRETA.</p><p><strong>A resposta correta é A - Los anti-inflamatórios não hormonais (AINHs) auxiliam no controle do sangramento menstrual, por inibir a síntese de prostaciclinas, diminuindo em cerca de 30% o sangramento uterino, aliviando muitas pacientes e retraindo a miomatose.</strong></p><p><strong>Explicação:</strong> Esta alternativa contém DOIS ERROS GRAVES:</p><p><strong>1) AINHs NÃO retraem a miomatose:</strong> Os anti-inflamatórios não hormonais atuam apenas no controle sintomático do sangramento, NÃO causam redução do volume dos miomas. Esta é uma afirmação completamente incorreta.</p><p><strong>2) Inibição incorreta das prostaciclinas:</strong> Na verdade, os AINHs inibem a síntese de prostaglandinas (especialmente PGF2α), não prostaciclinas. As prostaciclinas (PGI2) são vasodilatadoras e antiagregantes, enquanto as prostaglandinas estão envolvidas na contração uterina e sangramento menstrual.</p><p><strong>Análise das alternativas CORRETAS:</strong></p><p><strong>B) Antifibrinolíticos:</strong> CORRETA - Ácido tranexâmico é eficaz no controle de sangramento em miomas.</p><p><strong>C) Contraceptivos e progestagênios:</strong> CORRETA - São opções válidas para controle do fluxo menstrual.</p><p><strong>D) DIU com levonorgestrel:</strong> CORRETA - Muito eficaz, especialmente em miomas submucosos.</p><p><strong>E) Análogos GnRH:</strong> CORRETA - Causam hipoestrogenismo temporário com redução do volume uterino.</p><p>Esta questão é um excelente exemplo de como a banca pode inserir conceitos incorretos em alternativas que parecem plausíveis. É fundamental conhecer a fisiopatologia exata de cada tratamento.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_MiomatoseUterina",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_MiomatoseUterina",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_MiomatoseUterina"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "No que tange à Lei de Planejamento Familiar nº 9.263, de 12 de janeiro de 1996, que regulamenta a esterilização cirúrgica, julgue como Verdadeiro (V) e Falso (F) as alternativas abaixo: I - Destina-se a homens e mulheres com capacidade civil plena. II - Regulamenta-se somente a indivíduos maiores de vinte e cinco anos de idade e, pelo menos, com dois filhos vivos. III - Deve ser observado o prazo mínimo de sessenta dias entre a manifestação da vontade e o ato cirúrgico. IV - É permitido no caso de risco à vida ou à saúde da mulher ou do futuro concepto, testemunhado em relatório escrito e assinado por dois médicos. V - A esterilização cirúrgica é proibida durante os períodos de parto ou aborto, exceto nos casos de comprovada necessidade, por cesarianas sucessivas anteriores, e que ela não deve ser feita por meio de histerectomia ou ooforectomia;",
+      "alternativas": [
+        "V, V, V, V, V.",
+        "V, F, V, V, V.",
+        "V, V, V, V, F.",
+        "V, F, V, V, F.",
+        "V, F, V, F, F."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a Lei nº 9.263/96 que regulamenta a esterilização cirúrgica no Brasil, tema importante em Ginecologia e Saúde Pública.</p><p><strong>A resposta correta é B - V, F, V, V, V.</strong></p><p><strong>Análise das afirmativas:</strong></p><p><strong>I - CORRETA (V):</strong> A lei destina-se a homens e mulheres com capacidade civil plena, conforme Art. 1º da Lei 9.263/96.</p><p><strong>II - FALSA (F):</strong> A lei regulamenta sterilization para indivíduos maiores de vinte e CINCO anos E com pelo menos DOIS filhos vivos OU idade igual ou superior a TRINTA e CINCO anos. A alternativa incorre ao citar \"pelo menos com dois filhos vivos\" como único critério etário.</p><p><strong>III - CORRETA (V):</strong> Deve ser observado o prazo mínimo de sessenta dias entre a manifestação da vontade e o ato cirúrgico, conforme Art. 9º da lei.</p><p><strong>IV - CORRETA (V):</strong> É permitido em casos de risco à vida ou à saúde da mulher ou do concepto, com relatório de dois médicos, conforme Art. 6º.</p><p><strong>V - CORRETA (V):</strong> Proibição durante parto ou aborto, exceto em casos de cesarianas sucessivas, sem histerectomia ou ooforectomia, conforme Art. 10.</p><p><strong>Aspecto importante:</strong> A lei estabelece que o prazo de reflexão de 60 dias pode ser reduzido para até 30 dias nos casos de mulheres com mais de 35 anos ou em situações de risco. O consentimento deve ser livre, esclarecido e consciente.</p><p>Esta questão é fundamental para médicos que trabalham em planejamento familiar, pois requer conhecimento detalhado da legislação brasileira vigente.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Multípara no curso da 36ª semana de gestação, usuária de drogas ilícitas, compareceu a apenas duas consultas de pré-natal. Chega ao pronto-socorro relatando dor abdominal de forte intensidade, súbita, seguida de sangramento vaginal em pequena quantidade. Ao exame obstétrico: altura uterina = 34 cm, dor à palpação de abdômen, tônus uterino aumentado, batimentos cardíacos fetais = 176 bpm. Exame especular: sangramento escuro em pequena quantidade fluindo pelo colo uterino. A hipótese diagnóstica é:",
+      "alternativas": [
+        "Vasa prévia.",
+        "Placenta prévia.",
+        "Trabalho de parto prematuro.",
+        "Descolamento prematuro de placenta.",
+        "Rotura de seio marginal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFPB 2021 aborda um dos temas mais críticos da obstetrícia: emergências hipertensivas na gestação. O examinador avaliou sua capacidade de identificar e manejar adequadamente a pré-eclâmpsia grave.</p><p><strong>A resposta correta é a alternativa B.</strong> A paciente apresenta critérios diagnósticos claros de pré-eclâmpsia grave: PA de 140x100mmHg associada a sintomas neurológicos (cefaleia, escotomas) e epigastralgia, além de reflexos patelares e pré-cubitais exaltados, indicando hiperexcitabilidade neuromuscular.</p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A (Internação, corticoterapia e cesárea imediata):</strong> Está incorreta. Embora a internação e corticoterapia sejam adequadas, a cesárea imediata não é a primeira escolha na pré-eclâmpsia grave sem outras indicações obstétricas. A conduta deve ser estabilizar a paciente, administrar sulfato de magnésio para prevenir eclâmpsia e aguardar benefício completo do corticoide antes de qualquer procedimento invasivo.</p><p><strong>Alternativa B (Internação, corticoterapia e sulfato de magnésio):</strong> CORRETA. Esta é a conduta padrão ouro para pré-eclâmpsia grave. A internação permite monitoramento rigoroso, a corticoterapia promove maturidade pulmonar fetal e o sulfato de magnésio previne convulsões eclâmpticas. Esta é a sequência terapêutica recomendada pelas diretrizes brasileiras.</p><p><strong>Alternativa C (Anti-hipertensivo, corticoterapia e acompanhamento ambulatorial):</strong> Incorreta. O acompanhamento ambulatorial é completamente inadequado em pré-eclâmpsia grave devido ao risco de complicações maternas e fetais. Além disso, é necessária a profilaxia com sulfato de magnésio, que não está contemplada nesta opção.</p><p><strong>Alternativa D (Internação, corticoterapia e indução com misoprostol):</strong> Parcialmente correta na internação e corticoterapia, mas incorreta na indução com misoprostol. A indução do trabalho de parto não é prioridade imediata. O foco deve ser na estabilização da mãe com sulfato de magnésio e controle pressórico.</p><p><strong>Alternativa E (Internação, solicitação de rotina laboratorial, anti-hipertensivo):</strong> Incompleta. A solicitação de exames laboratoriais e controle pressórico são adequados, mas a profilaxia com sulfato de magnésio é fundamental e não foi incluída. Sem este medicamento, a paciente permanece em alto risco de desenvolver eclâmpsia.</p><p>O raciocínio clínico segue o protocolo brasileiro para pré-eclâmpsia grave: identificação de critérios maternos, internação para monitoramento, corticoterapia para benefício fetal, sulfato de magnésio para prevenção de convulsões e controle pressórico como medida de suporte.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoSegundaMetadeDaGest",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_2"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Paciente, 15 anos, G1P0A0, com 32 semanas de gestação, com queixa de cefaleia, epigastralgia e escotomas. Exame físico: PA = 140x100mmHg; altura de fundo uterino de 32 cm, Reflexos patelares e pré-cubitais exaltados. A conduta é:",
+      "alternativas": [
+        "Internação, corticoterapia e cesárea imediata.",
+        "Internação, corticoterapia e sulfato de magnésio.",
+        "Anti-hipertensivo, corticoterapia e acompanhamento ambulatorial.",
+        "Internação, corticoterapia e indução com misoprostol.",
+        "Internação, solicitação de rotina laboratorial, anti-hipertensivo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 testa seu conhecimento sobre o manejo da toxicidade por sulfato de magnésio em gestantes com pré-eclâmpsia. É uma aplicação prática dos protocolos de segurança no uso desta medicação.</p><p><strong>A resposta correta é a alternativa B - Ausência de reflexo patelar.</strong> Este é o primeiro sinal clínico de toxicidade por sulfato de magnésio e indica a necessidade urgente de antidotagem com gluconato de cálcio.</p><p>Vamos analisar as alternativas e entender o racional:</p><p><strong>Alternativa A (Recidiva da convulsão):</strong> Incorreta. Em caso de recidiva de convulsão na eclâmpsia, a primeira medida é administrar uma dose adicional de sulfato de magnésio, não gluconato de cálcio. O cálcio é indicado para toxicidade medicamentosa, não para recidiva convulsiva.</p><p><strong>Alternativa B (Ausência de reflexo patelar):</strong> CORRETA. A ausência ou abolição do reflexo patelar é o primeiro sinal clínico de overdose de sulfato de magnésio. O protocolo recomenda monitorar este reflexo a cada hora durante a infusão. Quando ausente, indica necessidade imediata de gluconato de cálcio 1g EV para antagonizar os efeitos da toxicidade.</p><p><strong>Alternativa C (Pico pressórico):</strong> Incorreta. O pico pressórico pode ocorrer em pré-eclâmpsia, mas não indica toxicidade por sulfato de magnésio. O manejo do pico pressórico é feito com anti-hipertensivos, não com gluconato de cálcio.</p><p><strong>Alternativa D (Oligúria):</strong> Parcialmente relacionada, mas não é a indicação específica para gluconato de cálcio. Oligúria pode ser efeito do sulfato de magnésio, mas a ausência de reflexo patelar é o sinal mais precoce e específico de toxicidade. A oligúria pode ser manejada com controle de volumes e avaliação da função renal.</p><p><strong>Alternativa E (Escotomas e cefaleia):</strong> Incorreta. Estos sintomas são características da pré-eclâmpsia e pré-eclâmpsia grave, não de toxicidade por sulfato de magnésio. O gluconato de cálcio não está indicado para controle destes sintomas, mas sim para signs neurológicos de overdose (ausência de reflexos, depressão do sistema nervoso central).</p><p>O protocolo de segurança estabelece monitorização rigorosa durante o uso de sulfato de magnésio: oligúria (diurese < 25-30 ml/h), ausência de reflexos, depressão respiratória e níveis séricos de Mg++. O gluconato de cálcio antagoniza rapidamente a toxicidade cardiovascular e neuromuscular.</p><p>Esta questão alerta para a importância da farmacovigilância no uso de medicações de alto risco obstétrico.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_2",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Preeclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Eclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_SindromeHellp"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "O gluconato de cálcio ou cloreto de cálcio 1g por via intravenosa é a medicação administrada em gestantes ou em puérperas com pré-eclâmpsia grave em uso de sulfato de magnésio. Em que condição está indicado o uso dessa medicação?",
+      "alternativas": [
+        "Recidiva da convulsão.",
+        "Ausência de reflexo patelar.",
+        "Pico pressórico.",
+        "Oligúria.",
+        "Escotomas e cefaleia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 aborda um conceito fundamental na medicina perinatal moderna: neuroproteção fetal. O examinador avaliou seu conhecimento sobre terapias de proteção neural em situações de trabalho de parto prematuro.</p><p><strong>A resposta correta é a alternativa E - Sulfato de magnésio.</strong> Esta medicação é hoje reconhecida como um neuroprotetor fetal, reduzindo significativamente o risco de paralisia cerebral e outras morbidades neurológicas associadas à prematuridade.</p><p>Vamos analisar as alternativas e entender a evidência científica:</p><p><strong>Alternativa A (Penicilina cristalina):</strong> Incorreta. A penicilina é um antibiótico utilizado principalmente em profilaxia de estreptococo do grupo B e tratamento de infecções. Não possui propriedades neuroprotetoras reconhecidas na literatura médica.</p><p><strong>Alternativa B (Betametasona):</strong> Parcialmente correta, mas incorreta como resposta final. A betametasona é um corticoide essencial para maturação pulmonar fetal e reduz Síndrome do Desconforto Respiratório, mas não possui efeito neuroprotetor específico. O benefício neurológico da betametasona é indireto, através da redução das complicações respiratórias da prematuridade.</p><p><strong>Alternativa C (Progesterona):</strong> Incorreta. A progesterona é utilizada para prevenção de trabalho de parto prematuro em pacientes de alto risco, mas não possui efeito neuroprotetor fetal estabelecido. Seu benefício é na prevenção da prematuridade, não na proteção neural quando o parto é inevitável.</p><p><strong>Alternativa D (Carbamazepina):</strong> Incorreta. A carbamazepina é um anticonvulsivante utilizado em epilepsia e neuralgia do trigêmeo. Não é uma medicação de uso em obstetrícia e não possui indicação como neuroprotetor fetal.</p><p><strong>Alternativa E (Sulfato de magnésio):</strong> CORRETA. O sulfato de magnésio é hoje o neuroprotetor fetal de escolha em trabalho de parto prematuro. Estudos como o BEAM Trial e diretrizes brasileiras (FEBRASGO 2021) confirmam sua eficácia em reduzir paralisia cerebral e combinação de morte e paralisia cerebral moderada/grave. O mecanismo neuroprotetor inclui estabilização de membranas neuronais, modulação de citocinas inflamatórias e vasodilatação cerebral.</p><p>As diretrizes brasileiras atuais recomendam sulfato de magnésio para gestações < 32 semanas em risco de parto prematuro nas próximas 24 horas, peso fetal estimado < 2000g. A dose de ataque é 4-6g EV em 20-30 minutos, seguida de manutenção de 1-2g/h até o parto ou 12 horas após a última dose.</p><p>Esta questão reflete as atualizações mais importantes da medicina perinatal contemporânea, substituindo o paradigma de apenas maturação pulmonar para um enfoque mais amplo de neuroproteção.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_2",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Eclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_SindromeHellp",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_TrabalhoDePartoPrematuroTpp"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "A prematuridade pode determinar hemorragia intracraniana nos neonatos. Qual é a droga que apresenta efeito neuroprotetor fetal quando utilizada durante o trabalho de parto prematuro?",
+      "alternativas": [
+        "Penicilina cristalina.",
+        "Betametasona.",
+        "Progesterona.",
+        "Carbamazepina.",
+        "Sulfato de magnésio."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFPB 2021 aborda um dos cenários mais complexos em obstetrícia: emergências hipertensivas. O examinador avaliou sua capacidade diagnóstica diferencial entre causas de sangramento na gestação de termo.</p><p><strong>A resposta correta é a alternativa D - Descolamento prematuro de placenta.</strong> Esta é uma emergência obstétrica que precisa ser rapidamente identificada para manejo adequado e redução da mortalidade materna e fetal.</p><p>Vamos analisar o caso clínico e as alternativas:</p><p><strong>CASO CLÍNICO:</strong> Multípara na 36ª semana, usuária de drogas ilícitas, poucas consultas pré-natais, apresenta dor abdominal súbita e intensa, seguida de sangramento vaginal em pequena quantidade, abdômen doloroso, tônus uterino aumentado e taquicardia fetal (176 bpm).</p><p><strong>Alternativa A (Vasa prévia):</strong> Incorreta. Na vasa prévia, há rompimento de vasos próximos ao orifício interno do colo, causando sangramento fresco e pulsátil, geralmente sem dor abdominal significativa. A apresentação típica é sem dor, com sangramento sangrento vivo, e ASSOCIADO a trabalho de parto com membranas rotas. O sangramento é relativamente pequeno mas com progressão rápida para choque fetal.</p><p><strong>Alternativa B (Placenta prévia):</strong> Incorreta. Na placenta prévia, o sangramento é tipicamente indolor, vermelho vivo, sem associação com dor abdominal ou contrações. A apresentação clínica é sangramento intermitente, com dor apenas se houver contrações, mas não é súbita e intensa como descrita no caso.</p><p><strong>Alternativa C (Trabalho de parto prematuro):</strong> Incorreta. Trabalho de parto prematuro cursa com contrações ritmadas e regulares, dilatação cervical progressiva, sangramento geralmente escasso (show) ou ausente. A dor abdominal é cíclica e progressiva, não súbita e intensa como descrita. Além disso, taquicardia fetal pode ser resposta às contrações, mas não é o sinal de alarme mais característico.</p><p><strong>Alternativa D (Descolamento prematuro de placenta):</strong> CORRETA. Este é o diagnóstico mais provável baseando-se na tríade clássica: dor abdominal súbita e intensa, sangramento vaginal (às vezes mínimo ou oculto), e comprometimento do estado fetal (taquicardia). O tônus uterino aumentado é característico, assim como a dor à palpação. A gestante usuária de drogas ilícitas é um fator de risco adicional para descolamento.</p><p><strong>Alternativa E (Rotura de seio marginal):</strong> Incorreta. Esta é uma complicação menos comum da placenta prévia marginal, com sangramento geralmente moderado a intenso, mas menos doloroso que o descolamento. A apresentação é mais gradual, com dor menos intensa que o descolamento.</p><p>O raciocínio clínico baseia-se na tríade do descolamento prematuro de placenta: dor abdominal súbita e intensa, sangramento vaginal (variável), e sofrimento fetal. O tônus uterino aumentado é um achado físico fundamental que diferencia de outras causas de sangramento.</p><p>O manejo inclui monitorização fetal contínua, avaliação da coagulopatia, preparo para cesárea de emergência se necessário, e correlação com ultrassom (que pode não mostrar descolamento pequeno).</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst_TrabalhoDePartoPrematuroTpp",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Eclampsia",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit_AsPrincipaisInfeccoesCongenita"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Gestante, 22 anos, G2P1, com 10 semanas de gestação, chega para consulta de retorno de pré-natal com os seguintes resultados sorológicos para toxoplasmose: ELISA- IgM = positivo e ELISA-IgG = positivo. Qual seria sua conduta?",
+      "alternativas": [
+        "Solicitar o teste de avidez de IgG para toxoplasmose e iniciar tratamento materno imediato com clindamicina e sulfa.",
+        "Solicitar o teste de avidez de IgG para toxoplasmose e iniciar espiramicina.",
+        "Solicitar o teste de avidez de IgG para toxoplasma e iniciar o tratamento da infecção fetal com sulfa e pirimetamina.",
+        "Fazer cordocentese ou amniocentese para pesquisa de DNA do Toxoplasma gondii.",
+        "Iniciar sulfadiazina, pirimetamina e ácido folínico de imediato, visto que a paciente está no primeiro trimestre."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 aborda o manejo de toxoplasmose na gestação, um tema importante no pré-natal brasileiro. O examinador avaliou sua capacidade de conduzir adequadamente um caso de infecção aguda durante a gravidez.</p><p><strong>A resposta correta é a alternativa B - Solicitar o teste de avidez de IgG para toxoplasmose e iniciar espiramicina.</strong> Esta é a conduta padrão para gestantes com IgM e IgG positivos no primeiro trimestre.</p><p>Vamos analisar a situação clínica e as alternativas:</p><p><strong>SITUAÇÃO CLÍNICA:</strong> Gestante de 22 anos com 10 semanas de gestação, apresentação de IgM e IgG positivos para toxoplasmose, indicando infecção recente ou reativação.</p><p><strong>Alternativa A (Solicitar avidez e iniciar clindamicina + sulfa):</strong> Incorreta. A clindamicina com sulfadiazina não é a primeira escolha no primeiro trimestre. Esta combinação é reservada para casos confirmados de toxoplasmose congênita ou infecção fetal documentada, não para a fase inicial de investigação.</p><p><strong>Alternativa B (Solicitar avidez e iniciar espiramicina):</strong> CORRETA. Esta é a conduta ouro no primeiro trimestre. A espiramicina é segura na gestação e reduz a transmissão transplacentária sem risco para o feto. O teste de avidez de IgG é fundamental para determinar se a infecção é recente (< 3 meses) ou mais antiga.</p><p><strong>Alternativa C (Solicitar avidez e iniciar tratamento fetal com sulfa + pirimetamina):</strong> Incorreta. A combinação sulfa e pirimetamina é teratogênica no primeiro trimestre e não deve ser utilizada. Esta é reservada para casos confirmados de infecção fetal após o primeiro trimestre, quando o risco teratogênico é menor.</p><p><strong>Alternativa D (Cordocentese ou amniocentese):</strong> Incorreta. Estes procedimentos são invasivos e indicados apenas quando há confirmação sorológica de infecção recente e já completados 15-18 semanas de gestação. Não são de primeira linha para investigação no primeiro trimestre.</p><p><strong>Alternativa E (Sulfadiazina, pirimetamina e ácido folínico imediato):</strong> Completamente incorreta. Esta é uma combinação fortemente teratogênica no primeiro trimestre e contraindicada. É reservada para casos de toxoplasmose congênita confirmada após o primeiro trimestre, quando os riscos fetais são menores.</p><p>O protocolo brasileiro para toxoplasmose na gestação estabelece: no primeiro trimestre com IgM e IgG positivos, solicitar teste de avidez de IgG para datar a infecção. Se baixa avidez (infecção < 3 meses), iniciar espiramicina 3g/dia, monitorizar com sorologia mensal, e realizar investigação de infecção fetal após 15 semanas. Se alta avidez, provável infecção pré-gestacional, sem necessidade de tratamento.</p><p>A espiramicina reduz a transmissão transplacentária de 60-80% (sem tratamento) para 25-40% (com tratamento), sendo o tratamento mais seguro e eficaz no primeiro trimestre.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit_AsPrincipaisInfeccoesCongenita",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit_ToxoplasmoseNaGestacao",
+        "Obstetricia_Prenatal",
+        "ClinicaMedica_Infectologia_Infectologia_OutrasDoencasInfecciosas_LeishmanioseTegumentar"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "No que tange à História das Políticas de Saúde no Brasil e à conformação do SUS, é correto afirmar que:",
+      "alternativas": [
+        "A partir de meados do Século XIX, foi instituído um modelo descentralizado para as ações de saúde, em que o poder central compartilhava com o poder local a construção das ações e serviços de saúde.",
+        "A vacinação contra a varíola foi um exemplo de adesão da população com o apoio de vário grupos sociais, durante os séculos XIX e início do século XX, fato que ajudou a ampliar progressivamente a condição de sua erradicação na década de 80.",
+        "Por meio da Lei Eloy Chaves, foram criadas as primeiras Caixas de Aposentadoria e Pensão (CAPs), voltadas para os funcionários de empresas ferroviárias, iniciando-se assim a conformação da previdência social no país.",
+        "A oitava Conferência Nacional de Saúde, realizada em março de 1986, foi um marco de transformação do controle social e, mesmo com pouca participação dos delegados, discutiu e rejeitou a unificação do sistema de saúde e o conceito ampliado de saúde.",
+        "A implantação do SUS começa no início da década de 1990, após a promulgação da Lei Orgânica da Saúde com a consequente reformulação dos papéis dos entes governamentais na prestação de serviços e na gestão do sistema de saúde."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia o conhecimento sobre a evolução histórica das políticas de saúde no Brasil, um tema fundamental para compreender a construção do Sistema Único de Saúde (SUS).</p><p><strong>A resposta correta é C - Lei Eloy Chaves.</strong> Esta lei, de 1923, foi realmente um marco na formação da previdência social brasileira, criando as primeiras Caixas de Aposentadoria e Pensão (CAPs) especificamente para funcionários ferroviários.</p><p>Analisando cada alternativa para identificar os erros:</p><p><strong>Alternativa A:</strong> FALSA - O modelo descentralizado só foi estabelecido muito mais tarde, especialmente a partir da Constituição de 1988 e das Leis Orgânicas da Saúde. Durante o Século XIX, predominava um modelo centralizado.</p><p><strong>Alternativa B:</strong> FALSA - Embora a vacinação contra a varíola tenha sido um sucesso, sua eradicação mundial ocorreu em 1980, não na década de 80. Além disso, a adesão nem sempre foi uniforme, especialmente entre grupos mais pobres.</p><p><strong>Alternativa D:</strong> FALSA - A 8ª Conferência Nacional de Saúde (1986) foi CONTUDO um marco de grande transformação, com ampla participação popular, e ela DISCUTIU e APROVOU a unificação do sistema de saúde e o conceito ampliado de saúde, não rejeitou.</p><p><strong>Alternativa E:</strong> FALSA - A implantação do SUS começou após a Constituição de 1988, não com as Leis Orgânicas da Saúde (1990). O movimento de construção do SUS foi anterior e simultâneo à sua implementação legal.</p><p>Esta questão destaca a importância de conhecer a cronologia das políticas de saúde brasileiras, desde as primeiras iniciativas de previdência social até a criação do SUS, compreendendo cada período histórico e suas características específicas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_HistoriaDoSistemaUnicoDeSaudeS"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Segundo Bourdieu (1972), o conceito de modelo apresenta diferenças entre a forma teórica e a realidade empírica. Para Bunge (1972), de modo geral, o modelo correspondente a uma representação simplificada da realidade na qual se retém e se destacam seus traços fundamentais. Sendo assim, no que tange à concepção sobre Modelo de Atenção à Saúde, é correto afirmar que: 1. É composto por sistemas lógicos que organizam o funcionamento das redes de atenção à saúde, articulando, de forma singular, as relações entre as populações e suas subpopulações estratificadas por risco, os focos das intervenções do sistema de atenção à saúde e os diferentes tipos de intervenção sanitária. ( ); 2. É uma combinação de tecnologias acionadas para resolver problemas e atender às necessidades de saúde individuais e coletivas. ( ); 3. Pode ser entendido como uma espécie de lógica ou racionalidade que orienta uma dada combinação tecnológica nas práticas de saúde. ( ); 4. Indica modos de organizar a ação e dispor dos meios técnicos-científicos existentes para intervir sobre problemas e necessidades de saúde que podem ser diversos, tendo em conta as realidades distintas. (); 5. Não se configura como um processo que é somente politico ou somente técnico, levando a Organização Mundial de Saúde (OMS) e a Organização Pan-Americana de Saúde (OPAS) a adotarem uma posição que ora refere-se à prestação da atenção, ora apresenta-se como proposta política de reorganização dos sistemas de saúde. ( ); Considerando que \"\"V\"\" a premissa é verdadeira e \"\"F\"\" a premissa é falsa, a sequência correta de resposta é:",
+      "alternativas": [
+        "V-V-V-V-V.",
+        "F-V-F-V-F.",
+        "V-F-V-F-V.",
+        "V-V-F-V-F.",
+        "V-V-V-V-F."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o conceito de Modelo de Atenção à Saúde, integrando perspectivas teóricas de Bourdieu e Bunge para compreender como os modelos de saúde se constituem como representações simplificadas da realidade, mas com aplicabilidade prática.</p><p><strong>A sequência correta é V-V-V-V-V (alternativa A).</strong></p><p>Vamos analisar cada premissa:</p><p><strong>1ª Premissa (V):</strong> CORRETA - O Modelo de Atenção à Saúde realmente organiza as redes de atenção, articulandopopulações estratificadas por risco, focos de intervenção e diferentes tipos de ações sanitárias. É uma visão sistêmica e estruturada.</p><p><strong>2ª Premissa (V):</strong> CORRETA - Efetivamente, os modelos de atenção combinam tecnologias diversas (duras, leves-duras, leves) para resolver problemas de saúde, tanto individuais quanto coletivos.</p><p><strong>3ª Premissa (V):</strong> CORRETA - O modelo funciona como uma racionalidade que orienta a combinação de tecnologias, definindo que intervenções são prioritárias e como devem ser organizadas.</p><p><strong>4ª Premissa (V):</strong> CORRETA - Os modelos indicam como organizar a ação sanitária e dispor dos meios técnico-científicos disponíveis, considerando as realidades locais específicas.</p><p><strong>5ª Premissa (V):</strong> CORRETA - Não são apenas técnicos ou apenas políticos, mas sim articulações complexas. A OMS/OPAS alterna entre entender como prestação de atenção e como proposta política de reorganização sistêmica.</p><p>Esta questão demonstra que o conceito de Modelo de Atenção à Saúde é multifacetado, combinando dimensões técnicas, políticas, sociais e organizacionais, representando um dos pilares teóricos para compreender a organização dos sistemas de saúde.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Segundo Viana e Lima (2011), a regionalização tem como objeto central a conformação de regiões, traduzindo-se como um processo político mais amplo, condicionado pela distribuição de poder e pelas relações estabelecidas entre governos, organizações públicas e privadas, além de cidadãos, em diferentes espaços geográficos. Tomando como base o texto acima, correlacione a colunas I de acordo com a II. Coluna I; A) Regiões de saúde; B) Territorialização; C) Planejamento Regional; D) Descentralização; E) Redes Regionalizadas de Atenção à Saúde; Coluna II; ( ) Consiste no reconhecimento e na apropriação, pelos gestores, dos espaços locais e das relações da população com os mesmos, expressos por meio de dados demográficos e epidemiológicos, equipamentos sociais, dinâmica das redes de transporte e de comunicação, fluxos assistenciais e por outros dados que se mostrem relevantes para intervenção no processo saúde-doença. ( )São recortes territoriais inseridos em espaços geográficos contínuos, tendo como base a existência de identidades culturais, econômicas e sociais, assim como de redes nas áreas de comunicação, infraestrutura, transporte e saúde. ( ) Segue o desenho federativo brasileiro, tendo como foco a transferência de poder decisório, responsabilidades gestoras e recursos financeiros da União para o estado e, principalmente os municípios. ( ) Constitui-se por um conjunto de pontos de atenção, de diferentes funções, complexidades e perfis de atendimento, que operam de forma ordenada e articulada no território, de modo a atender às necessidades de saúde da população. ( ) Técnica de aplicação de politicas incluído o seu vinculo com o território, sofrendo grande influência da geografia e da economia. Correlacionando as letras com as assertivas, a sequência correta é:",
+      "alternativas": [
+        "A-B-C-D-E.",
+        "E-D-B-C-A.",
+        "C-A-B-E-D.",
+        "B-A-D-E-C.",
+        "D-E-B-A-C."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre regionalização em saúde, especificamente sobre os instrumentos e conceitos fundamentais que estruturam a organização territorial dos sistemas de saúde no Brasil, segundo Viana e Lima (2011).</p><p><strong>A sequência correta é B-A-D-E-C (alternativa D).</strong></p><p>Vamos correlacionar corretamente cada conceito com sua definição:</p><p><strong>B) Territorialização:</strong> Consiste no reconhecimento e apropriação pelos gestores dos espaços locais e das relações da população com os mesmos, expressos por dados demográficos, epidemiológicos, redes de transporte, fluxos assistenciais e outros elementos relevantes para intervenção no processo saúde-doença.</p><p><strong>A) Regiões de Saúde:</strong> São recortes territoriais inseridos em espaços geográficos contínuos, baseados em identidades culturais, econômicas e sociais, além de redes de comunicação, infraestrutura, transporte e saúde.</p><p><strong>D) Descentralização:</strong> Segue o desenho federativo brasileiro, focando na transferência de poder decisório, responsabilidades gestoras e recursos financeiros da União para estados e principalmente municípios.</p><p><strong>E) Redes Regionalizadas de Atenção à Saúde:</strong> Constituem-se por um conjunto de pontos de atenção de diferentes funções e complexidades que operam de forma ordenada e articulada no território para atender às necessidades de saúde da população.</p><p><strong>C) Planejamento Regional:</strong> Técnica de aplicação de políticas com vínculo territorial, sofrendo grande influência da geografia e da economia.</p><p>Esta questão enfatiza que a regionalização é um processo político complexo que envolve múltiplos atores e dimensões, sendo fundamental para a organização efetiva do SUS e a garantia do acesso equitativo aos serviços de saúde.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_ProcessosDeDescentralizacaoERe",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_ProcessosDeDescentralizacaoERe",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_ProcessosDeDescentralizacaoERe_RegionalizacaoDoSus"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Pedro tem 25 anos e está com tosse há 15 dias. Refere que, quando a tosse iniciou, teve 03 dias de febre baixa, odinofagia e obstrução nasal. Apresentou melhora em seguida, mas, há cerca de cinco dias, a tosse e a obstrução nasal tem piorado, associando-se à inapetência e retorno da febre. Ao exame, apresenta frequência respiratória de 18 IRPM, ausculta pulmonar sem ruídos adventícios. A partir dos dados apresentados acima, qual seria a alternativa com diagnóstico e condutas farmacológicas corretas para o caso?",
+      "alternativas": [
+        "Rinossinusite aguda - uso de amoxicilina 500mg a cada 8 horas, associada a corticoide oral 60mg dia.",
+        "Rinossinusite aguda - uso de amoxicilina 500mg a cada 8 horas, associada a corticoide nasal.",
+        "Rinossinusite subaguda - uso de amoxicilina 500mg, associada a clavulanato a cada 8 horas e a corticoide nasal.",
+        "Rinossinusite subaguda - uso de levofloxacina 500mg ao dia, associada a corticoide nasal.",
+        "Pneumonia - uso de amoxicilina 500mg a cada 8 horas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico de rinossinusite aguda, testando o conhecimento sobre diagnóstico diferencial e tratamento farmacológico adequado segundo as diretrizes brasileiras atuais (MS 2025).</p><p><strong>A resposta correta é B - Rinossinusite aguda com amoxicilina 500mg a cada 8 horas, associada a corticoide nasal.</strong></p><p>Analisando o caso: Pedro, 25 anos, apresenta tosse há 15 dias com história inicial de febre baixa, odinofagia e obstrução nasal por 3 dias, seguida de melhora e posterior piora há 5 dias com retorno da febre e inapetência. A ausência de ruídos adventícios à ausculta descarta pneumonia.</p><p>Por que esta é a melhor conduta:</p><p><strong>Diferencial com pneumonia:</strong> A história bifásica (melhora inicial seguida de piora) e a ausência de ruídos adventícios favorecem rinossinusite sobre pneumonia.</p><p><strong>Diagnóstico de rinossinusite aguda:</strong> O quadro de 15 dias com sintomas de vias aéreas superiores, piora progressiva e retorno da febre é compatível com rinossinusite aguda bacteriana.</p><p><strong>Tratamento farmacológico:</strong> Amoxicilina 500mg a cada 8 horas é primeira escolha para rinossinusite bacteriana, conforme protocolo do MS 2025. Corticoide nasal (fluticasona ou mometasona) reduz a inflamação e edema da mucosa.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>A):</strong> Corticoide oral não é primeira escolha; o nasal é preferível por ter menos efeitos sistêmicos.</p><p><strong>C) e D):</strong> Rinossinusite subaguda é quando dura mais de 30 dias; este caso é agudo (15 dias).</p><p><strong>E):</strong> Não há evidência clínica de pneumonia; seria overtreatment.</p><p>Esta questão demonstra a importância do diagnóstico diferencial baseado em evolução clínica e da escolha terapêutica conforme protocolos nacionais atualizados.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Sandra, 37 anos, procura atendimento na Unidade Básica de Saúde devido à dor pélvica há cerca de 18 meses. Refere que já fez diversos exames, mas, por achar que a última ultrassonografia transvaginal realizada há seis meses não tem mais utilidade, quer realizar novo exame. Ela tem quatro filhos em idades de 3 a 15 anos e está separada do pai deles há um ano. Na abordagem de dor pélvica, espera-se que o médico que a atenda:",
+      "alternativas": [
+        "Diga que possivelmente não será necessário realizar uma laparoscopia, considerando que, em 10% a 20% desses procedimentos, não são encontrados achados cirúrgicos.",
+        "Faça questionários de rastreamento para depressão, somatização e abuso sexual, além de qualificar a dor e verificar história prévia de dependência química.",
+        "Encaminhe a paciente para a psicóloga e só volte a realizar a investigação caso seja descartado um problema de origem psicológica ou abuso sexual prévio.",
+        "Prescreva de forma empírica a antibioticoterapia para doença inflamatória pélvica crônica, associando levofloxacina, azitromicina e metronidazol por catorze dias.",
+        "Inicie um inibidor seletivo da recaptação de serotonina, considerando a associação com sintomas psicológicos, mesmo que não apresente ansiedade ou depressão."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a abordagem da dor pélvica crônica, um tema complexo que requer avaliação multidimensional considerando fatores físicos, psicológicos e sociais, especialmente em mulheres com histórico de separação conjugal.</p><p><strong>A resposta correta é B - Fazer questionários de rastreamento para depressão, somatização e abuso sexual, além de qualificar a dor e verificar história prévia de dependência química.</strong></p><p>Esta é a abordagem mais adequada porque:</p><p><strong>Compreensão multidimensional:</strong> Dor pélvica crônica frequentemente tem componentes psicossociais significativos, especialmente em mulheres após separações conjugais.</p><p><strong>Sinalizadores de alerta:</strong> O histórico de Sandra inclui quatro filhos, separação recente há um ano, e dor há 18 meses - elementos que sugerem possível impacto psicológico e necessidade de investigação abrangente.</p><p><strong>Rastreamento sistemático:</strong> Questionários validados para depressão, somatização e história de abuso sexual são ferramentas essenciais na avaliação inicial.</p><p>Por que as outras alternativas são inadequadas:</p><p><strong>A):</strong> Desestimular laparoscopia sem investigação adequada pode atrasar diagnóstico; 10-20% de achados negativos não justifica evitar o procedimento quando clinicamente indicado.</p><p><strong>C):</strong> Encaminhar apenas para psicóloga sem investigação médica paralela contraria a abordagem holística; problemas físicos e psicológicos podem coexistir.</p><p><strong>D):</strong> Prescrever antibioticoterapia empírica para DIP crônica sem证据 de infecção é inadequado e pode contribuir para resistência bacteriana.</p><p><strong>E):</strong> Iniciar ISRS sem avaliação psiquiátrica adequada e sem sintomas de ansiedade/depressão é precipitado.</p><p>Esta questão enfatiza que a dor pélvica crônica requer avaliação biopsicossocial completa, considerando o contexto de vida da paciente e utilizando instrumentos de rastreamento validados.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_DorPelvicaCronica"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "O papel dos Agentes Comunitários de Saúde (ACS) tem sido tema de debates mais fortemente a partir da Conferência de Alma-Ata, estando na pauta da Organização Mundial de Saúde para avaliação de sua pertinência, eficácia e viabilidade. À medida que mais experiências nessa área foram sendo criadas, foi possível realizar estudos comparativos sobre o papel do ACS no sistema de saúde. Um dos principais estudos foi uma revisão extensa da literatura de 2007, o qual concluiu que:",
+      "alternativas": [
+        "Para garantir um trabalho efetivo, é melhor que o ACS não se submeta a um processo de seleção, pois o mais importante é o seu papel na comunidade.",
+        "Programas baseados em ACS são a forma mais efetiva de resolver os problemas de um sistema de saúde precário, pois são baratos e abrangentes.",
+        "Independente do grau de organização da comunidade, programas baseados em ACS têm grandes chances de sucesso desde que o agente tenha liderança.",
+        "Os programas baseados em ACS voluntários são mais sustentáveis a longo prazo, pois não necessitam de garantia financeira para manter suas atividades.",
+        "O ACS contribui para melhorar o acesso e a cobertura de serviços básicos de saúde, participando de forma importante do desenvolvimento comunitário."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFPB 2021 avalia seu conhecimento sobre a efetividade dos Agentes Comunitários de Saúde (ACS) e sua contribuição para os sistemas de saúde. A banca busca testar se você compreende quais são os benefícios comprovados desses profissionais para a atenção primária.</p><p><strong>A resposta correta é a alternativa E.</strong> Os estudos demonstraram que os ACS realmente contribuem para melhorar o acesso e a cobertura de serviços básicos de saúde, participando ativamente do desenvolvimento comunitário.</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> Errada. A seleção adequada dos ACS é fundamental para garantir qualidade no trabalho. O processo seletivo deve considerar competências como comunicação, liderança e conhecimento da comunidade local.</p><p><strong>Alternativa B:</strong> Errada. Embora os programas com ACS sejam custo-efetivos, eles não são a única solução para sistemas precários. A efetividade depende de integração com outros níveis de atenção e estrutura adequada do sistema.</p><p><strong>Alternativa C:</strong> Errada. O sucesso dos programas não é garantido apenas pela liderança do agente. Depende de fatores como organização da comunidade, apoio institucional e recursos disponíveis.</p><p><strong>Alternativa D:</strong> Errada. Programas baseados em ACS voluntários têm limitações de sustentabilidade devido à falta de garantia financeira, alta rotatividade e menor comprometimento profissional.</p><p><strong>Alternativa E:</strong> Correta. A literatura comprova que os ACS são eficazes em: facilitar o acesso aos serviços de saúde, aumentar a cobertura de ações preventivas, promover educação em saúde, e fortalecer o vínculo entre serviços e comunidade.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBrasil",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_PrincipiosDaMedicinaDeFamiliaE"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "João tem 45 anos e vem à Unidade de Saúde da Família (USF) referindo dor no ombro direito, que piora quando eleva o membro superior acima da cabeça. Nega história de trauma. Trabalha como estoquista em um supermercado. Ao exame físico, foi identificado dor na região subacromial à palpação; amplitude de movimento preservada à movimentação passiva e diminuída à movimentação ativa de elevação; dor no teste de Apley, força preservada e dor nas manobras de Neer e Hawkins. Pela história e exame físico, a médica da USF identifica tendinopatia do manquito rotador e orienta crioterapia, uso de AINE, repouso relativo (fornece atestado para 10 dias) e encaminhamento para fisioterapia. Discutindo o caso com um colega residente de ortopedia, a médica foi repreendida por não ter encaminhado o paciente João para o especialista ou por não ter solicitado uma ressonância magnética do ombro, pois havia o risco de haver lesão do tendão do supraespinhoso. Observando a história do paciente João e a discussão entre a médica da USF e o colega residente em ortopedia, a melhor opção na consulta realmente teria sido:",
+      "alternativas": [
+        "A informada pelo residente de ortopedia de referenciar o paciente para o ortopedista, já que esse tipo de situação não se resolve na Atenção Primária à Saúde.",
+        "A de não encaminhar, mas solicitar ultrassonografia do ombro e não a ressonância magnética, pois é mais barato para os pacientes que frequentam a Atenção Primária à Saúde.",
+        "A tomada pela médica, pois a história e exames físicos reforçam a avaliação de tendinopatia e o manejo inicial deveria ser como o recomendado pela profissional.",
+        "A orientada pelo residente de ortopedia, somente após a chegada do resultado da ressonância magnética, que é o exame padrão ouro para os sintomas do paciente.",
+        "A orientada pelo residente de ortopedia, porém sem a necessidade do exame de imagem, já que a história e exame físico reforçam lesão que requer tratamento cirúrgico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda a conduta adequada na Atenção Primária para tendinopatia do manguito rotador, testando se você compreende quando referenciar para especialista e quando manejar na APS.</p><p><strong>A resposta correta é a alternativa C.</strong> A médica da USF agiu corretamente ao identificar clinicamente a tendinopatia e instituir tratamento conservador, que é a primeira linha terapêutica para essa condição.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Errada. Tendinopatia do manguito rotador sem sinais de rotura completa pode e deve ser manejada na APS. O encaminhamento é indicado apenas após falha do tratamento conservador ou em casos de rotura.</p><p><strong>Alternativa B:</strong> Parcialmente correta quanto ao exame mais barato, mas incorreta na conduta geral. Ultrassonografia pode ser solicitada se houver dúvida diagnóstica, mas não é obrigatória para iniciar o tratamento conservador.</p><p><strong>Alternativa C:</strong> Correta. A apresentação clínica é clássica: dor subacromial, dor no teste de Apley, manobras de Neer e Hawkins positivas, sem trauma. O manejo inicial com crioterapia, AINE, repouso relativo e fisioterapia é apropriado.</p><p><strong>Alternativa D:</strong> Errada. Ressonância magnética não é exame de primeira escolha nem padrão ouro inicial. reserved para casos duvidosos ou quando há suspeita de rotura completa.</p><p><strong>Alternativa E:</strong> Errada. Não há indicação de tratamento cirúrgico baseado apenas na história e exame físico, especialmente sem exames de imagem confirmando rotura.</p><p>O residente de ortopedia demonstrou excesso de zelo, não considerando que a APS deve ser capaz de manejar condições musculoesqueléticas comuns.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Outros_Ortopedia"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "Outros_Ortopedia_OrtopediaGeral"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "O Registro de Saúde Orientado por Problemas (ReSOAP) é uma modalidade de registro bastante utilizada na Atenção Primária à Saúde. Após finalizados a etapa de anamnese e exame físico, você deve registrar o conjunto de impressões ou a lista de problemas. A lista de problemas deve ser registrada no elemento \"\"A\"\" do ReSOAP. Analise as assertivas abaixo: I. Suspeita ou diagnóstico prováveis (exemplo: suspeita de depressão); II. Diagnósticos a descartar (exemplo: descartar apendicite) ou a esclarecer (exemplo: apendicite a esclarecer); III. Diagnósticos interrogados (exemplo: HAS?); IV. Sintomas (exemplo: cefaleia); V. Diagnóstico sindrômico (exemplo: uretrite). A sequência de assertivas que apresenta elementos que não devem ser registrados no \"\"A\"\" do ReSOAP é:",
+      "alternativas": [
+        "I, II e IV.",
+        "IV e V.",
+        "III, IV e V.",
+        "I, II e III.",
+        "II, III, IV e V."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre o Sistema de Registro de Saúde Orientado por Problemas (ReSOAP), especificamente sobre o que deve ser registrado no elemento 'A' (Lista de Problemas).</p><p><strong>A resposta correta é a alternativa D (I, II e III).</strong> Estas assertivas representam elementos que NÃO devem ser registrados na lista de problemas do ReSOAP.</p><p>Entendendo o ReSOAP: O elemento 'A' deve conter apenas diagnósticos confirmados ou problemas estabelecidos. Vamos analisar cada assertiva:</p><p><strong>Assertiva I (Suspeita ou diagnóstico prováveis):</strong> NÃO vai no 'A'. Suspeitas devem ser registradas como hipóteses diagnósticas em desenvolvimento, não como problemas estabelecidos.</p><p><strong>Assertiva II (Diagnósticos a descartar ou a esclarecer):</strong> NÃO vai no 'A'. Estes são hipóteses em investigação, ainda não confirmadas como problemas reais.</p><p><strong>Assertiva III (Diagnósticos interrogados):</strong> NÃO vai no 'A'. Questões diagnósticas (HAS?) são incertezas, não problemas confirmados.</p><p><strong>Assertiva IV (Sintomas):</strong> VAI no 'A'. Sintomas como 'cefaleia' podem ser registrados como problemas quando são o motivo principal da consulta ou interferem na qualidade de vida.</p><p><strong>Assertiva V (Diagnóstico sindrômico):</strong> VAI no 'A'. Síndromes como 'uretrite' são problemas clínicos estabelecidos, mesmo antes da confirmação etiológica específica.</p><p>Portanto, apenas as assertivas IV e V devem ser registradas no elemento 'A', tornando a alternativa D a correta para elementos que NÃO devem ir na lista.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Outros_CicloBasico"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "Outros_CicloBasico_SemiologiapropedeuticaMedica"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Jackson tem 47 anos e vem ao consultório para solicitar avaliação para realização de atividade física. Ele fazia atividade física sem regularidade, mas agora fará academia de três a quatro vezes por semana com intensidade moderada a vigorosa. Jackson não tem diabetes nem hipertensão. Também não tem história familiar de IAM. Dados antropométricos estão dentro da faixa adequada e o paciente não apresenta sintomas aos esforços. Nega tabagismo e etilismo. Últimos exames laboratoriais estavam normais. Considerando a situação de Jackson, para liberação de atividade física, analise as alternativas abaixo e marque a correta:",
+      "alternativas": [
+        "Não há indicação de realização de exames complementares para liberar Jackson para atividade física pelo fato dele não ter fatores de risco para doença cardiovascular",
+        "Há indicação de solicitar teste ergométrico, pois apesar de não ter fatores de risco cardiovasculares, Jackson possui mais de 45 anos de idade.",
+        "Basta a realização do questionário de prontidão para atividade física (PAR-Q) para liberação para realização da atividade física.",
+        "Há indicação de solicitar exames complementares para realização de atividade física para qualquer paciente que fará atividade física de moderada ou vigorosa intensidade.",
+        "Não há necessidade de outros exames além da história e exame físico, já que Jackson não participará de competição profissional."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre avaliação cardiológica para prática de exercícios, testando se você conhece os critérios para solicitação de teste ergométrico em pacientes assintomáticos.</p><p><strong>A resposta correta é a alternativa B.</strong> Há indicação de solicitar teste ergométrico para Jackson, pois apesar de não ter fatores de risco cardiovasculares tradicionais, ele possui mais de 45 anos de idade.</p><p>Analisando as diretrizes atuais:</p><p><strong>Critérios para teste ergométrico em adultos assintomáticos:</strong></p><p>• Homens ≥ 45 anos e mulheres ≥ 55 anos</p><p>• Presença de fatores de risco cardiovascular (diabetes, hipertensão, dislipidemia, tabagismo, história familiar)</p><p>• Exercícios de moderada a vigorosa intensidade</p><p><strong>Alternativa A:</strong> Errada. Aunque Jackson não tenha fatores de risco tradicionais, a idade (47 anos) já é critério para avaliação ergométrica.</p><p><strong>Alternativa B:</strong> Correta. Jackson tem 47 anos, o que atende ao critério de idade para homens. A ACSM (American College of Sports Medicine) recomenda avaliação cardiológica para homens > 45 anos iniciantes de exercícios vigorosos.</p><p><strong>Alternativa C:</strong> Errada. O PAR-Q é um questionário de triagem inicial, mas não substitui a avaliação médica quando há indicação de teste ergométrico.</p><p><strong>Alternativa D:</strong> Errada. Nem todos os pacientes necessitam exames complementares. A indicação depende da avaliação de risco individual.</p><p><strong>Alternativa E:</strong> Errada. Além da história e exame físico, deve-se considerar a idade como fator de risco moderado que justifica teste ergométrico.</p><p>A conduta adequada é solicitar teste ergométrico antes de liberar Jackson para atividades de intensidade moderada a vigorosa.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "A Atenção Primária à Saúde deve desempenhar um papel importante na organização da rede de atenção, tendo como principais atribuições: I. Ser porta de entrada do sistema de serviços de saúde, oferecer serviços com boa estrutura e integrada à rede assistencial. ( ); II. Exercer um cuidado contínuo ao longo do tempo, com capacidade para resolver a maioria das necessidades de saúde da população. ( ); III. Definir e orientar o caminho do usuário na rede de serviços com base nas necessidades de saúde da população. ( ); IV. Realizar a coordenação do cuidado, considerando os fluxos estabelecidos, responsabilizando-se pela população do seu território. ( ); V. Estimular a prática multi e interprofissional, tendo como referência a prática do médico, que deve orientar as ações da equipe de saúde. ( ); A sequência correta de respostas, considerando que V a premissa é verdadeira e F a premissa é falsa, é:",
+      "alternativas": [
+        "V-V-V-V-V.",
+        "F-V-V-V-V.",
+        "V-F-V-V-V.",
+        "V-V-V-V-F.",
+        "F-F-V-V-V."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre os princípios e atribuições da Atenção Primária à Saúde, testando se você compreende as características essenciais que definem a APS como ordenadora do sistema de saúde.</p><p><strong>A resposta correta é a alternativa D (V-V-V-V-F).</strong> Apenas a quinta assertiva é falsa, as demais são verdadeiras.</p><p>Analisando cada atribuição:</p><p><strong>Assertiva I - Porta de entrada do sistema:</strong> VERDADEIRA. A APS deve ser a porta de entrada preferencial, com boa estrutura e integração com a rede assistencial. Este é um dos princípios fundamentais da APS.</p><p><strong>Assertiva II - Cuidado contínuo:</strong> VERDADEIRA. A APS deve oferecer cuidado longitudinal, com capacidade para resolver a maioria das necessidades de saúde da população (pelo menos 80-90% dos problemas).</p><p><strong>Assertiva III - Definir caminho do usuário:</strong> VERDADEIRA. A APS deve orientar a referência e contrarreferência, definindo o percurso do usuário na rede baseado em suas necessidades de saúde.</p><p><strong>Assertiva IV - Coordenação do cuidado:</strong> VERDADEIRA. A APS deve coordenar o cuidado considerando os fluxos estabelecidos, sendo responsável pela população do seu território.</p><p><strong>Assertiva V - Prática multiprofissional com referência médica:</strong> FALSA. A prática deve ser multi e interprofissional, mas não deve ter o médico como referência única. Todas as profissões têm sua autonomia e contribution específica, com trabalho colaborativo em equipe.</p><p>A assertiva V está incorreta porque contraria os princípios da equipe multiprofissional, onde cada profissional tem competências específicas e não há hierarquia de uma profissão sobre outras. A atuação deve ser interdisciplinar e colaborativa.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBrasil",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBrasil_4",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Mariana, 6 anos é trazida ao pronto atendimento com tosse persistente e febre há 2 semanas. Ao ser examinada, notam-se a frequência respiratória de 50 irpm, frequência cardíaca de 125 bpm e murmúrio vesicular diminuído no hemitórax esquerdo. Foi feita radiografia do tórax que evidencia extenso derrame pleural. A toracocentese apresentou líquido amarelado, com a citologia diferencial, demonstrando predomínio de neutrófilos. O agente etiológico mais provável a ser considerado é:",
+      "alternativas": [
+        "Mycobacterium tuberculosis.",
+        "Streptococcus pneumoniae.",
+        "Mycoplasma pneumoniae.",
+        "Haemophylus influenzae.",
+        "Staphylococcus aureus."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A resposta correta é a alternativa B - Streptococcus pneumoniae.</strong></p><p>Esta questão da UFPB avaliou o conhecimento sobre o diagnóstico diferencial das causas de derrame pleural em pediatria, um tema muito presente em provas de residência médica.</p><p><strong>Análise do caso:</strong> Mariana apresenta um quadro de 2 semanas de tosse e febre, com sinais clínicos de comprometimento respiratório (FR 50, murmúrio vesicular diminuído à esquerda) e证据 radiológica de derrame pleural extenso. A toracocentese revelou líquido amarelado com predomínio de neutrófilos, padrão típico de processo inflamatório agudo.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Mycobacterium tuberculosis:</strong> O TB pleural em crianças geralmente apresenta líquido pleural claro ou hemático, com predomínio linfocitário, não neutrofílico. Além disso, o quadro clínico é mais subagudo (semanas a meses) e o líquido costuma ser amarelo-pálido.</p><p><strong>C) Mycoplasma pneumoniae:</strong> Pode causar pneumonia com derrame pleural, mas tipicamente apresenta padrão intersticial na radiografia e derrames pequenos. A citologia costuma mostrar predomínio linfocitário ou misto.</p><p><strong>D) Haemophylus influenzae:</strong> Em crianças vacinadas (DTP/Hib), esta é uma causa rara de pneumonia complicated. Quando ocorre, geralmente associadas a outros patógenos e com quadro clínico mais grave.</p><p><strong>E) Staphylococcus aureus:</strong> Pode causar pneumonia com empiema, mas em crianças обычно se apresenta com quadro clínico mais grave e rápido, muitas vezes com pneumotórax. O líquido é tipicamente purulento com odor desagradável.</p><p><strong>Dica clínica:</strong> Liquido amarelado com predomínio de neutrófilos em pediatria fortemente sugere infecção bacteriana aguda, e S. pneumoniae permanece como a causa mais comum de derrame pleural bacteriano em crianças vacinadas.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_PneumoniasbroncopneumoniasBcpN",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Bruno, 2 meses, é trazido pela mãe que refere que o lactente apresenta regurgitações frequentes durante todo o dia, algumas vezes, em grande quantidade. Está em aleitamento materno exclusivo com bom ganho ponderal, sem irritabilidade. Antecedente: parto vaginal, a termo, peso ao nascer = 3200g. Peso atual = 4600g (ganho ponderal de 30g/dia no último mês. O diagnóstico mais provável e a conduta inicial são:",
+      "alternativas": [
+        "Doença do refluxo: procinéticos.",
+        "Doença do refluxo: ranitidina.",
+        "Refluxo fisiológico: medidas comportamentais.",
+        "Refluxo fisiológico: ranitidina.",
+        "Estenose hipertrófica do piloro: ultrassonografia de abdômen."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A resposta correta é a alternativa C - Refluxo fisiológico com medidas comportamentais.</strong></p><p>Esta questão testou a capacidade de distinguir entre refluxo fisiológico normal e doença do refluxo gastroesofágico (DRGE) em lactentes, competência essencial em pediatria.</p><p><strong>Por que esta é a resposta correta:</strong> Bruno apresenta regurgitações frequentes mas com características de normalidade: aleitamento materno exclusivo, bom ganho ponderal (30g/dia é adequado para esta idade), ausência de irritabilidade e história clínica compatível com lactente saudável.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Doença do refluxo com procinéticos:</strong> DRGE requer critérios diagnósticos mais específicos. Sinais de alarme incluem má progressão ponderal, vômitos projectil, irritabilidade persistente, sintomas respiratórios ou recusa alimentar. Bruno não apresenta nenhum destes.</p><p><strong>B) Doença do refluxo com ranitidina:</strong> Medicamentos só são indicados quando há DRGE confirmada. Medicações anti-H2 não são recomendadas rotineiramente em lactentes assintomáticos ou com refluxo fisiológico.</p><p><strong>D) Refluxo fisiológico com ranitidina:</strong> Contradição. Se é refluxo fisiológico, não necessita medicação. O tratamento correto são medidas comportamentais.</p><p><strong>E) Estenose hipertrófica do piloro:</strong> O quadro clássico é vômitos projectil não biliosos em lactente de 2-6 semanas, com perda ponderal e desidratação. Bruno tem regurgitações (diferente de vômitos projectil) e está crescendo normalmente.</p><p><strong>Conduta adequada:</strong> Orientar posicionamento adequado, fracionamento das mamadas, manter aleitamento materno exclusivo e reassurance aos pais. A maioria dos casos resolve espontaneamente até 12-18 meses.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_RefluxoGastroesofagicoRge",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Adriana leva seu bebê de 6 meses ao posto de saúde e solicita ao médico orientações sobre as vacinas que seu filho deverá receber. Ele verifica o cartão vacinal da criança e observa que as vacinas anteriores estão todas em dia. Segundo o calendário de vacinação, previsto no PNI, essa criança deverá receber:",
+      "alternativas": [
+        "Terceira dose da vacina penta e terceira dose da VOP.",
+        "Terceira dose da vacina penta e terceira dose da vacina pneumocócica 10 valente.",
+        "Terceira dose da vacina penta, terceira dose da VOP e terceira dose da vacina pneumocócica 10 valente.",
+        "Terceira dose da vacina penta, terceira dose da vacina rotavírus e terceira dose da vacina pneumocócica 10 valente.",
+        "Terceira dose da vacina penta e terceira dose da VIP."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>A resposta correta é a alternativa E - Terceira dose da vacina penta e terceira dose da VIP.</strong></p><p>Esta questão abordou um conteúdo básico mas crucial: o calendário vacinal do PNI para crianças de 6 meses. Questões sobre vacinação são frequentes em provas de residência.</p><p><strong>Contexto da idade:</strong> Aos 6 meses, a criança já recebeu as primeiras doses de todas as vacinas do esquema básico. Este é o momento da terceira dose (dose final) para algumas vacinas fundamentais.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Penta + VOP:</strong> VOP (vacina oral poliomielite) não é administrada aos 6 meses. O esquema atual usa VIP (inativada) nesta idade.</p><p><strong>B) Penta + pneumocócica 10-valente:</strong> A terceira dose da pneumocócica foi administrada aos 4 meses. Aos 6 meses, não há nova dose agendada desta vacina.</p><p><strong>C) Penta + VOP + pneumocócica:</strong> Combina dois erros - VOP não é administrada aos 6 meses e pneumocócica também não tem dose nesta idade.</p><p><strong>D) Penta + rotavírus + pneumocócica:</strong> A terceira dose de rotassadeur já foi administrada aos 6 meses anteriormente. A criança já completou a primovacinação contra rotassadeur.</p><p><strong>Esquema correto aos 6 meses:</strong></p><p>- Penta (DTP+HepB+Hib): terceira dose</p><p>- VIP (poliomielite inativada): terceira dose</p><p>- Influenza: primeira dose da campanha anual (se belum foi administrada aos 7 meses)</p><p><strong>Lembre-se:</strong> Mantenha em mente que o calendário vacinal brasileiro segue esquema sequencial. Crianças de 6 meses recebendo terceira dose da penta e VIP já completaram a primovacinação básica contra as principais doenças preveníveis.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "RN nascido de parto fórceps, 40 semanas de idade gestacional, com P=4000g, apresentando alteração, ao exame físico, sugestiva de bossa serossanguinolenta. Assinale a alternativa correta a respeito dos sinais que reforçam tal hipótese:",
+      "alternativas": [
+        "Massa mole e mal delimitada (abaixo do couro cabeludo e acima dos ossos), com sinal de Godet positivo.",
+        "Massa mole e bem delimitada, com sinal de Godet positivo.",
+        "Massa mole com rebordo periférico palpável e que respeita suturas cranianas.",
+        "Massa mole sugestiva de sangramento subperióstico.",
+        "Nenhuma das anteriores."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>A resposta correta é a alternativa A - Massa mole e mal delimitada (abaixo do couro cabeludo e acima dos ossos), com sinal de Godet positivo.</strong></p><p>Esta questão avaliou o conhecimento sobre alterações traumáticas craniofaciais em recém-nascidos, um tema clássico em neonatologia que frequentemente aparece em provas de residência.</p><p><strong>Características da bossa serossanguinolenta:</strong> Esta é uma coleção de sangue e soro entre o periósteo e o osso temporal. Oparto instrumentado (como o fórceps usado neste caso) aumenta o risco de traumatismo craniano neonatal.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>B) Massa mole e bem delimitada:</strong> A bossa serossanguinolenta não é bem delimitada. Ao contrário, seus limites são difusos, cruzando as suturas cranianas, o que a diferencia do cefalohematoma.</p><p><strong>C) Massa mole com rebordo periférico palpável:</strong> Esta descrição é característica do cefalohematoma, que tem rebordo palpável porque o sangramento é subperiosteal e não cruza as suturas.</p><p><strong>D) Massa mole sugestiva de sangramento subperióstico:</strong> Incorreta porque o sangramento na bossa serossanguinolenta é subgaleal, não subperiosteal. A localização anatômica é fundamental para o diagnóstico diferencial.</p><p><strong>E) Nenhuma das anteriores:</strong> Incorreta, pois a alternativa A descreve perfeitamente a bossa serossanguinolenta.</p><p><strong>Diferenciação diagnóstica essencial:</strong></p><p><strong>Bossa serossanguinolenta:</strong> Subgaleal, mal delimitada, cruza suturas, sinal de Godet +, resolve em dias/semanas</p><p><strong>Cefalohematoma:</strong> Subperiosteal, bem delimitado, não cruza suturas, pode calcificar, resolve em semanas/meses</p><p><strong>Prognóstico:</strong> Geralmente benigno, resolução espontânea em 2-3 semanas. A principale complicação é anemia severa, que deve ser monitorada.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_CuidadosNeonatais",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Sobre as afirmativas abaixo: I. O teste do olhinho pode detectar qualquer alteração que cause obstrução no eixo visual, como catarata e glaucoma congênito. II. O teste do olhinho pode ser realizado por qualquer pediatra que tenha recebido treinamento para isso. III. O teste do olhinho é um exame simples, rápido e indolor, que consiste na identificação de um reflexo esbranquiçado que aparece quando um feixe de luz ilumina o olho do bebê. IV. O teste da orelhinha é realizado com uma gota de sangue extraído do lobo de qualquer orelha, detectando alterações como fenilcetonúria e hipotireoidismo congênito. V. O teste do coraçãozinho é considerado normal quando a saturação de O2 é realizada no membro superior direito do RN e em um dos membros inferiores, com resultado maior ou igual a 95% ou diferença entre as medidas menor que 3%. As alternativas corretas são:",
+      "alternativas": [
+        "I, II, V.",
+        "I, II, IV.",
+        "II, III, V.",
+        "II, III, IV.",
+        "I, III, IV."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>QUESTÃO ANULADA PELA BANCA EXAMINADORA</strong></p><p>Esta questão foi anulada porque apresenta inconsistência técnica irresolúvel entre as alternativas. Após análise cuidadosa, identificamos que apenas duas afirmativas estão corretas (II e V), mas não existe alternativa que contenha APENAS essas duas proposições.</p><p><strong>Afirmativa II:</strong> CORRETA - Qualquer profissional médico devidamente treinado (pediatra, oftalmologista) pode realizar o teste do reflexo vermelho (olhinho).</p><p><strong>Afirmativa V:</strong> CORRETA - O teste do coraçãozinho é considerado normal quando a saturação de O2 é ≥95% em ambos os membros ou diferença <3% entre membro superior direito e membro inferior.</p><p><strong>Problemas técnicos identificados nas outras afirmativas:</strong></p><p><strong>Afirmativa I:</strong> INCORRETA - O teste do olhinho NÃO detecta qualquer alteração que cause obstrução no eixo visual. Cataratas parciais ou retinoblastoma em fase inicial podem apresentar resultado normal.</p><p><strong>Afirmativa III:</strong> INCORRETA - O teste do olhinho busca identificar reflexo VERMELHO (não esbranquiçado). Reflexo esbranquiçado indica alteração patológica.</p><p><strong>Afirmativa IV:</strong> INCORRETA - O teste da orelhinha (emissões otoacústicas) NÃO utiliza gota de sangue. É um exame de equipamento que detecta emissões sonoras da cóclea.</p><p><strong>Conclusão técnica:</strong> A banca UFPB 2021 optou pela anulação por este motivo técnico: não foi possível determinar uma única alternativa correta, pois as afirmativas II e V (as únicas corretas) não aparecem isoladas em nenhuma das opções apresentadas. Esta é uma decisão adequada para manter a integridade da prova.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_SistemasDeInformacaoEmSaudeSis"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Clara traz sua filha de 6 anos, pois a menina \"\"está ficando moça\"\" há 8 meses e a mãe está preocupada com a possibilidade dela menstruar mais cedo. Ao exame, a menor apresenta estadiamento de Tanner M3P2. Sobre este caso, podemos dizer que:",
+      "alternativas": [
+        "Inicia-se a investigação com dosagem de LH, FSH e exame de neuroimagem, sendo este para investigar tumores.",
+        "O orquidômetro seria um instrumento útil, neste caso, para avaliar o tamanho das gônadas.",
+        "Devem ser solicitadas as dosagens dos hormônios da suprarrenal, pela possibilidade de puberdade precoce periférica.",
+        "Devemos tranquilizar a genitora quanto à possibilidade de menarca, neste momento, pois a menor não está na puberdade ainda.",
+        "O tratamento, para este caso, visa exclusivamente diminuir a possibilidade de abuso sexual, em decorrência da puberdade precoce."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFPB avalia conhecimento sobre puberdade precoce em pediatria.</strong> O caso apresenta uma menina de 6 anos com desenvolvimento puberal há 8 meses e estadiamento Tanner M3P2.</p><p>Vamos analisar cada alternativa sistematicamente:</p><p><strong>Alternativa A - CORRETA.</strong> A investigação inicial da puberdade precoce inclui dosagem de LH e FSH (para confirmar se é puberdade central) e neuroimagem (RM de hipotálamo-hipófise) para investigar tumores que podem causar ativação precoce do eixo hipotálamo-hipófise-gônada. Esta é a conduta padrão recomendada pelas diretrizes pediátricas.</p><p><strong>Alternativa B - INCORRETA.</strong> O orquidômetro é utilizado para avaliar desenvolvimento testicular em meninos. A menção de \"gônadas\" está incorreta neste contexto, pois se refere a um instrumento específico para sexo masculino.</p><p><strong>Alternativa C - INCORRETA.</strong> Embora devam ser considerados hormônios da suprarrenal, não é a primeira linha de investigação. A investigação de puberdade precoce sempre inicia com LH/FSH e neuroimagem, conforme alternativa A.</p><p><strong>Alternativa D - INCORRETA.</strong> A menina já apresenta estadiamento Tanner M3P2, indicando que está claramente na puberdade. M3 significa desenvolvimento mamário e P2 indica pubarca, caracterizando puberdade precoce.</p><p><strong>Alternativa E - INCORRETA.</strong> O tratamento da puberdade precoce visa prevenir baixa estatura final e problemas psicossociais, não está relacionado à prevenção de abuso sexual.</p><p><strong>Gabarito: A.</strong> A UFPB buscou avaliar o conhecimento sobre a investigação inicial adequada da puberdade precoce central.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EndocrinologiaPediatrica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Genero",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Quanto à síndrome de Down, marque a alternativa correta:",
+      "alternativas": [
+        "É a anomalia cromossômica mais comum, cujo tipo de comprometimento cromossômico mais encontrado é a translocação.",
+        "São pacientes com tendência ao sobrepeso/obesidade na primeira infância, associado a hipertireoidismo e hipodesenvolvimento ósseo.",
+        "Apresentam deficiência na quimiotaxia dos neutrófilos, baixa atividade bactericida e opsonização deficiente.",
+        "Apresentam como características ao nascer: linha siamesa palmar, hipertonia muscular e espessamento nucal.",
+        "São pacientes com tendência à alta estatura, dificuldade para ganhar peso e puberdade precoce."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão testa conhecimento sobre alterações imunológicas na síndrome de Down.</strong> O foco está em identificar as características imunológicas típicas desta condição genética.</p><p><strong>Alternativa A - INCORRETA.</strong> Embora a síndrome de Down seja a anomalia cromossômica mais comum, o tipo mais frequente é a trissomia simples (95% dos casos), não a translocação. A translocação corresponde a apenas 3-4% dos casos.</p><p><strong>Alternativa B - INCORRETA.</strong> Pacientes com síndrome de Down podem apresentar sobrepeso/obesidade, mas o problema tireoidiano é HIPOTIREOIDISMO (não hipertireoidismo), devido à maior incidência de tireoidite autoimune Hashimoto nesta população.</p><p><strong>Alternativa C - CORRETA.</strong> Deficiências imunológicas são características importantes da síndrome de Down. Há alterações na função dos neutrófilos com déficit na quimiotaxia, redução da atividade bactericida e opsonização inadequada, predispondo a infecções respiratórias e otites de repetição.</p><p><strong>Alternativa D - INCORRETA.</strong> Ao nascimento, as características típicas incluem HIPOTONIA muscular (não hipertonia), prega palmar única (prega simiesca) e redundância nucal (não espessamento).</p><p><strong>Alternativa E - INCORRETA.</strong> Pacientes com síndrome de Down apresentam baixa estatura e tendencia ao sobrepeso. A puberdade costuma ser ATRASADA (não precoce).</p><p><strong>Gabarito: C.</strong> A questão avaliou conhecimento sobre imunodeficiência secundária na síndrome de Down, um aspecto clínico importante para o manejo adequado.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_PrincipaisSindromesGeneticasEN",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_ProducaoDasCelulasSanguineasHe"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Sobre a consulta do adolescente: I) A orientação da SBP é que adolescentes não devem ficar isolados nos seus quartos ou ultrapassar suas horas saudáveis de sono noturno para usar meios eletrônicos. II) É aconselhável conversar sobre as regras de uso da Internet, configurações para segurança e privacidade e sobre nunca compartilhar senhas, fotos ou informações pessoais. III) O adolescente tem direito à confidencialidade, ao sigilo de sua atividade sexual e à prescrição de métodos anticoncepcionais em todas as circunstâncias. IV) A triagem anual para Clamídia deve ser realizada em todas as meninas após a menarca. As alternativas corretas são:",
+      "alternativas": [
+        "I e II.",
+        "I e III.",
+        "II e IV.",
+        "II e III.",
+        "III e IV."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda as orientações da Sociedade Brasileira de Pediatria para consulta de adolescentes.</strong> Testa conhecimento sobre recomendações atuais para cuidado integral do adolescente.</p><p><strong>Alternativa I - CORRETA.</strong> A SBP realmente orienta limites para uso de dispositivos eletrônicos, enfatizando a importância de sono adequado e evitar isolamento excessivo no quarto, considerando os impactos na saúde mental e qualidade do sono.</p><p><strong>Alternativa II - CORRETA.</strong> Conversar sobre segurança digital é fundamental, incluindo regras de uso da internet, configurações de privacidade e educação sobre compartilhamento seguro de informações pessoais.</p><p><strong>Alternativa III - INCORRETA.</strong> Embora o adolescente tenha direito ao sigilo, existem exceções legais. Métodos anticoncepcionais podem ser prescritos em algumas circunstâncias específicas, mas \"em todas as circunstâncias\" está incorreto - há limitações legais para menores em algumas situações.</p><p><strong>Alternativa IV - INCORRETA.</strong> A triagem anual para Clamídia é recomendada apenas em meninas SEXUALMENTE ATIVAS ou com fatores de risco, não automaticamente após a menarca.</p><p><strong>Gabarito: A (I e II).</strong> A UFPB avaliou conhecimento sobre as orientações atuais da SBP para cuidado integral do adolescente, focando em aspectos de saúde digital, desenvolvimento saudável e direitos de confidencialidade.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Hebiatria",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Durante plantão na emergência, um médico está tratando um escolar de oito anos, em cetoacidose diabética, com infusão contínua de insulina regular. Os exames laboratoriais de admissão indicaram: glicose sérica = 510mg/dL, gasometria venosa com pH = 7,25 e cetonúria de 4+. Após quatro horas de infusão de soro fisiológico e insulina, a glicose caiu para 215mg/dL e o pH estabilizou em 7,32, embora as cetonas permanecessem elevadas. A conduta, nesse momento, deve ser:",
+      "alternativas": [
+        "Manter infusão de insulina regular IV + soro fisiológico IV.",
+        "Trocar a insulina regular IV para insulina de ação prolongada IM + soro fisiológico IV.",
+        "Manter infusão de insulina regular IV e associar glicose a 5% ao soro fisiológico IV.",
+        "Trocar a insulina regular IV para insulina NPH IM + solução de glicose a 5%.",
+        "Nenhuma das anteriores."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia conduta em cetoacidose diabética pediátrica.</strong> Envolve manejo adequado quando a glicose normaliza mas cetonas permanecem elevadas.</p><p><strong>Situação clínica:</strong> Escolar com CAD, após 4h de tratamento: glicose 215mg/dL (caiu de 510), pH 7,32 (melhorou de 7,25), mas cetonas permanecem elevadas. Este cenário é comum e indica resolução parcial da cetoacidose.</p><p><strong>Alternativa A - INCORRETA.</strong> Manter apenas insulina + soro fisiológico pode causar hipoglicemia e perpetuar a cetose, já que a glicose já está em níveis aceitáveis (215mg/dL) mas as cetonas ainda estão altas.</p><p><strong>Alternativa B - INCORRETA.</strong> Trocar para insulina de ação prolongada agora interromperia o controle rigoroso da cetose que é necessário neste momento crítico.</p><p><strong>Alternativa C - CORRETA.</strong> Manter insulina regular IV é essencial para corrigir a cetose, mas deve-se ADICIONAR glicose 5% ao soro fisiológico. Isso permite: 1) Corrigir a cetose com insulina; 2) Prevenir hipoglicemia; 3) Fornecer substrato para resolução da acidose.</p><p><strong>Alternativa D - INCORRETA.</strong> Trocar para NPH IM não permite controle adequado da cetose neste contexto agudo. A ação prolongada não substitui a insulina regular IV.</p><p><strong>Alternativa E - INCORRETA.</strong> A alternativa C é a conduta correta.</p><p><strong>Gabarito: C.</strong> A questão avaliou conhecimento sobre o manejo da fase de correção da cetoacidose, quando a glicose normaliza mas a cetose persiste.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Insulinoterapia"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Miguel, 13 anos, é avaliado, pelo médico da unidade básica de saúde, por ele achar que não está crescendo direito há 3 anos. Não há relato de doença crônica, alterações alimentares, ou lesões do sistema nervoso central. Gráfico de crescimento mostra altura e peso abaixo e paralelos ao escore z-2 nos últimos três anos, de forma ascendente, com velocidade de 6 cm/ano. A altura-alvo é no escore z 0. A idade óssea é três anos mais baixa do que a idade cronológica. Exame físico: Tanner G1P1, sem demais alterações. O diagnóstico para essa baixa estatura é:",
+      "alternativas": [
+        "Doença genética.",
+        "Atraso constitucional do crescimento.",
+        "Hipotireoidismo.",
+        "Síndrome de Noonan.",
+        "Deficiência de hormônio de crescimento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão aborda o diagnóstico diferencial de baixa estatura em adolescentes.</strong> Analisa dados clínicos para identificar o tipo de retardo do crescimento.</p><p><strong>Características do caso:</strong> Miguel, 13 anos, baixa estatura há 3 anos, peso e altura paralelos ao z-score -2, velocidade de crescimento 6 cm/ano (normal para idade), idade óssea 3 anos inferior à cronológica, Tanner G1P1 (ausência de puberdade), sem doenças crônicas.</p><p><strong>Alternativa A - INCORRETA.</strong> Não há dados sugestivos de doença genética específica. A apresentação é mais compatível com вариabilidade normal.</p><p><strong>Alternativa B - CORRETA.</strong> O <em>atraso constitucional do crescimento</em> caracteriza-se por: crescimento normal com velocidade preserved, altura e peso abaixo mas paralelos, idade óssea atrasada, puberdade tardia, sem patologia orgânica. É uma condição benigna de variação normal.</p><p><strong>Alternativa C - INCORRETA.</strong> Não há dados clínicos de hipotireoidismo (temperatura, peso, pele, bradicardia). A velocidade de crescimento de 6 cm/ano não sugere deficiência tireoidiana.</p><p><strong>Alternativa D - INCORRETA.</strong> Síndrome de Noonan apresenta características distintas (ptose, pescoço alado, cardiopatia), ausentes neste caso.</p><p><strong>Alternativa E - INCORRETA.</strong> Na deficiência de GH, a velocidade de crescimento seria inferior a 4 cm/ano e haveria outros achados clínicos característicos.</p><p><strong>Gabarito: B.</strong> A questão avaliou capacidade de reconhecer o padrão de retardo constitucional do crescimento, uma condição benigna que representa variação normal do desenvolvimento.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EndocrinologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura_Crescimento_CrescimentoAnormal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "UFPB2021R1",
+        "UFPB",
+        "R1",
+        "PB",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762798031943-49"
+    }
+  ]
+}

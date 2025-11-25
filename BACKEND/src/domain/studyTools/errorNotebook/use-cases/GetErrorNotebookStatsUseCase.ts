@@ -23,7 +23,7 @@ export class GetErrorNotebookStatsUseCase {
     }
 
     // Verificar se o caderno de erros pertence ao usuário ou é público
-    if (existingNotebook.userId !== userId && !existingNotebook.isPublic) {
+    if (existingNotebook.user_id !== userId && !existingNotebook.is_public) {
       throw new AppError('Unauthorized access to error notebook', 403);
     }
 

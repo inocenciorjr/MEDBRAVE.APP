@@ -22,7 +22,11 @@ export interface INotificationRepository {
   /**
    * Encontra notificações de um usuário
    */
-  findByUserId(userId: string, limit?: number, offset?: number): Promise<Notification[]>;
+  findByUserId(
+    userId: string,
+    limit?: number,
+    offset?: number,
+  ): Promise<Notification[]>;
 
   /**
    * Atualiza uma notificação

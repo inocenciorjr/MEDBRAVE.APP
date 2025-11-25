@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { deckController } from '../controllers/deckController';
-import { authMiddleware } from '../../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+// searchIndexMiddleware removed - now uses GIN index directly (auto-updated)
 
 const router = Router();
 
@@ -27,15 +28,33 @@ router.get('/favorites', deckController.getFavoriteDecks.bind(deckController));
 // ROTAS GENÉRICAS POR ÚLTIMO
 
 // Rotas de baralhos (CRUD básico)
-router.post('/', deckController.createDeck.bind(deckController));
+router.post(
+  '/',
+  deckController.createDeck.bind(deckController),
+);
 router.get('/', deckController.listDecks.bind(deckController));
 router.get('/:id', deckController.getDeckById.bind(deckController));
-router.put('/:id', deckController.updateDeck.bind(deckController));
-router.delete('/:id', deckController.deleteDeck.bind(deckController));
+router.put(
+  '/:id',
+  deckController.updateDeck.bind(deckController),
+);
+router.delete(
+  '/:id',
+  deckController.deleteDeck.bind(deckController),
+);
 
 // Rotas de ações específicas em decks
-router.post('/:id/favorite', deckController.toggleFavoriteDeck.bind(deckController));
-router.patch('/:id/favorite', deckController.toggleFavoriteDeck.bind(deckController)); // Alias para PATCH
-router.patch('/:id/visibility', deckController.toggleDeckVisibility.bind(deckController));
+router.post(
+  '/:id/favorite',
+  deckController.toggleFavoriteDeck.bind(deckController),
+);
+router.patch(
+  '/:id/favorite',
+  deckController.toggleFavoriteDeck.bind(deckController),
+); // Alias para PATCH
+router.patch(
+  '/:id/visibility',
+  deckController.toggleDeckVisibility.bind(deckController),
+);
 
 export default router;

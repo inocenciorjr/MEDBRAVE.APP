@@ -1,5 +1,3 @@
-import { Timestamp } from 'firebase-admin/firestore';
-
 /**
  * Enum para tipos de jobs de dados
  */
@@ -22,6 +20,7 @@ export enum DataFormat {
  */
 export enum DataJobStatus {
   PENDING = 'pending',
+  RUNNING = 'running',
   PROCESSING = 'processing',
   COMPLETED = 'completed',
   FAILED = 'failed',
@@ -44,14 +43,14 @@ export interface DataJob {
   progress?: number | null;
   totalRecords?: number | null;
   processedRecords?: number | null;
-  startedAt?: Timestamp | null;
-  completedAt?: Timestamp | null;
+  startedAt?: Date | null;
+  completedAt?: Date | null;
   sourceUrl?: string | null;
   resultUrl?: string | null;
   error?: string | null;
   createdBy: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
@@ -81,6 +80,7 @@ export interface UpdateDataJobStatusDTO {
   processedRecords?: number;
   resultUrl?: string;
   error?: string;
+  started_at?: Date;
 }
 
 /**

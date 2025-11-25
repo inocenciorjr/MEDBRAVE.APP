@@ -1,0 +1,1650 @@
+{
+  "metadata": {
+    "examName": "UFES2022R1 (UFES 2022)",
+    "examYear": 2022,
+    "url": "source://525",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 48,
+    "processedAt": "2025-11-09T09:39:20.398Z",
+    "jobId": "batch-1762661968342-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "512dda06-c9c5-42f7-a09a-7818c766cebb"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Homem de 54 anos, hipertenso e tabagista, procura atendimento em Pronto Socorro com quadro de febre há 5 dias, inicialmente associada a coriza e odinofagia e há 2 dias com mialgia, tosse não produtiva e dispnéia. Ao exame físico encontrava-se orientado, com pressão arterial de 142/85 mmHg, frequência cardíaca de 84 bpm, frequência respiratória de 18 irpm, saturação periférica de oxigênio em ar ambiente de 97%, estertores finos e roncos difusos à ausculta pulmonar. A propedêutica laboratorial revelou hemácias=4,9 milhões/ml3; hemoglobina=14,2 g/dL; hematócrito=43,2%; leucócitos=8.800/mm3; neutrófilos=6,650/mm3; linfócitos=1.300/mm3;plaquetas=198 milhões/mm3; AST=35 U/L; ALT=38 U/L; proteína C reativa= 17,2 mg/L; tomografia computadorizada de tórax: opacidades em vidro fosco periféricas, acometendo cerca de 15% dos pulmões sem focos de condensação. Assinale a alternativa correta sobre o manejo deste paciente.",
+      "alternativas": [
+        "Devem ser prescritos medicamentos sintomáticos, hidratação oral e o paciente deve ser mantido em isolamento domiciliar.",
+        "Devem ser prescritos nitazoxanida, prednisona e antitérmicos e o paciente deve ser mantido em isolamento domiciliar.",
+        "Devem ser prescritos dexametasona, azitromicina, ceftriaxona e enoxaparina e opaciente deve ser mantido hospitalizado em isolamento respiratório.",
+        "Devem ser prescritos ceftriaxone e claritomicina e o paciente deve permanecer hospitalizado em isolamento respiratório e oxigenioterapia em baixo fluxo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFES 2022 avalia seu conhecimento sobre manejo clínico de COVID-19 em tempos de pandemia, tema que dominou as bancas de residência durante 2020-2022.</p><p><strong>A resposta correta é a alternativa A</strong> - medicamentos sintomáticos, hidratação oral e isolamento domiciliar.</p><p>Vamos analisar o caso: paciente de 54 anos com síndrome gripal há 5 dias, incluindo sintomas respiratórios e tomografia mostrando opacidades em vidro fosco em 15% dos pulmões. Este é o padrão clássico de COVID-19 confirmado.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa B:</strong> A nitazoxanida chegou a ser estudada no início da pandemia, mas estudos posteriores demonstraram ausência de benefício clínico. Prednisona não está indicada em casos leves.</p><p><strong>Alternativa C:</strong> Dexametasona reduz mortalidade apenas em pacientes que necessitam oxigenoterapia suplementar. Com saturação de 97% em ar ambiente, não há indicação. A combinação com antibióticos é desnecessária sem evidência de superinfecção bacteriana.</p><p><strong>Alternativa D:</strong> Same problema - antibióticos não são routine em COVID-19 sem complicação bacteriana. O paciente não necessita hospitalização.</p><p>Dica importante: Em COVID-19, avalie sempre a necessidade de oxigênio suplementar antes de considerar corticosteroides. Casos leves com saturação >94% são manejados ambulatorialmente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_Pneumonia",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Homem de 22 anos apresenta quadro de fadiga e baixo rendimento físico há cerca de 6 meses. Nega outras doenças no período. Ao exame físico encontrava-se hipocorado, sem outras alterações relevantes. O hemograma evidenciou eritrócitos=2.210.000/ml; hemoglobina=8,1 g/dL; hematócrito=24,1%; VCM=82,5 fL; HCM=31pg; CHCM=38,2%; RDW=24,2%. O diagnóstico etiológico do caso pode ser confirmado por:",
+      "alternativas": [
+        "Eletroforese de hemoglobina.",
+        "Dosagem de vitamina B12 e ácido fólico.",
+        "Testes de Coombs e de fragilidade eritrocitária.",
+        "Dosagem de ferritina e índice de saturação da transferrina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre diagnóstico diferencial de anemias, especialmente quando os achados laboratoriais desafiam a classificação tradicional.</p><p><strong>A resposta correta é a alternativa C</strong> - testes de Coombs e de fragilidade eritrocitária.</p><p>O caso apresenta um homem jovem com anemia sintomática (Hb 8,1 g/dL) e fatigabilidade. Aqui está a pegadinha: olhar apenas VCM (82,5 fL) e HCM (31pg) sugere anemia normocítica normocrômica, mas o CHCM de 38,2% indica anemia hipercrômica!</p><p>Esta combinação (normocítica e hipercrômica) deve levantá-lo suspeita de esferocitose hereditária. Na esferocitose, os eritrócitos perdem a forma bicôncava normal, becoming esferas rígidas facilmente destruídas no baço.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> Eletroforese de hemoglobina é útil em talassemia e anemia falciforme, não em esferocitose.</p><p><strong>Alternativa B:</strong> B12 e ácido fólico estão indicados em anemias megaloblásticas, que seriam macrocíticas.</p><p><strong>Alternativa D:</strong> Ferritina e saturação de transferrina avaliam deficiência de ferro, que seria microcítica hipocrômica.</p><p>Dica de estudo: CHCM >36% + normocítica = esferocitose até prova contrária. O teste de Coombs descarta anemia hemolítica autoimune, que seria o principal diagnóstico diferencial.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasMicrociticas",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Mulher de 32 anos, apresenta quadro de náuseas, vômitos, dor abdominal e astenia há 4 semanas. Ao exame físico apresenta hipotensão ortostática, hiperpigmentação em região areolar, áreas de dobras cutâneas e gengival. Sem outras alterações ao exame do sistema cardiovascular, respiratório e palpação abdominal. Apresenta os seguintes exames laboratoriais: glicemia=65 mg/dL; sódio=138 mEq/L; potássio=6,4 mEq/L; magnésio=1,8 mg/dl; hemoglobina=12,8 g/dL; leucócitos=7.800 /mm3; hormônio tireoestimulante=1,35 Ul/mL. Na sequência da propedêutica laboratorial, espera-se encontrar:",
+      "alternativas": [
+        "Níveis séricos de cortisol baixo, de ACTH e renina aumentados.",
+        "Níveis séricos de cortisol e de renina baixos e de ACTH aumentado.",
+        "Níveis séricos de cortisol baixo, de renina aumentado e de ACTH normal.",
+        "Níveis séricos de cortisol, aldosterona e de ACTH baixos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFES avalia seu conhecimento sobre insuficiência adrenal, um tema clássico que sempre aparece em provas de clínica médica.</p><p><strong>A resposta correta é a alternativa A</strong> - níveis séricos de cortisol baixo, de ACTH e renina aumentados.</p><p>A paciente apresenta quadro clássico de insuficiência adrenal primária: náuseas, vômitos, dor abdominal, astenia, hipotensão ortostática e o sinal patognomônico - hiperpigmentação em areolas, dobras e gengivas.</p><p>O hipopotasemia (K+ 6,4 mEq/L) e hipoglicemia (65 mg/dL) completam o quadro. A hiperpigmentação é fundamental: indica aumento de ACTH, que estimula produção de MSH (hormônio estimulante de melanócito).</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa B:</strong> A renina estaría baixa se fosse insuficiência adrenal secundária, mas na forma primária ela está elevada devido à perda de aldosterona.</p><p><strong>Alternativa C:</strong> ACTH normal não explica a hiperpigmentação. Em insuficiência primária, ACTH está elevado por perda do feedback negativo.</p><p><strong>Alternativa D:</strong> Na insuficiência primária, ACTH está elevado, não baixo. Aldosterona baixa explica a hipercalemia e retenção de sódio.</p><p>Regra prática: Hiperpigmentação + hipotensão + alterações eletrolíticas = insuficiência adrenal primária com ACTH elevado.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente hipertenso, em uso de losartana 100 mg/dia, anlodipino 10 mg/dia e clortalidona 12,5 mg/dia, mantendo níveis pressóricos elevados e picos hipertensivos recorrentes, apresenta os seguintes resultados de exames laboratoriais: sódio=144 mmol/L, potássio=2,8 mmol/L, creatinina=0,9 mg/dL, atividade plasmática de renina 0,2 mg/mL/h, aldosterona plasmática= 22 ng/dl, ecocardiografia transtorácica: hipertrofia concêntrica de ventrículo esquerdo, fração de ejeção do ventrículo esquerdo=65%; doppler de artérias renais e tomografia computadorizada de abdome sem alterações. Assinale a alternativa que corresponde à melhor opção terapêutica para este paciente.",
+      "alternativas": [
+        "Atenolol.",
+        "Clonidina.",
+        "Hidralazina.",
+        "Espironolactona."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia sua compreensão sobre hipertensão resistente, um conceito crucial na prática clínica que sempre gera dúvidas entre candidatos.</p><p><strong>A resposta correta é a alternativa D</strong> - espironolactona.</p><p>O paciente apresenta hipertensão resistente: mantém níveis pressóricos elevados apesar de usar três classes anti-hipertensivas (IECA, BCC e tiazídico) em doses adequadas. Importante descartar causas secundárias, que foram excluídas pelos exames normais (doppler renal, TC abdominal, função renal preservada).</p><p>A hipocalemia significativa (K+ 2,8 mEq/L) associada à baixa atividade de renina (0,2 mg/mL/h) sugere hiperaldosteronismo relativo. Esta finding é comum em hipertensão resistente e indica o racional para usar espironolactona.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A (Atenolol):</strong> Beta-bloqueador pode piorar a função renal e não aborda o mecanismo de resistência.</p><p><strong>Alternativa B (Clonidina):</strong> Centrano de ação não é primeira escolha em hipertensão resistente e pode causar retenção de sal e água.</p><p><strong>Alternativa C (Hidralazina):</strong> Vasodilatador direto pode causar taquicardia reflexa e retenção de líquido, sendo mais apropriado como quarta ou quinta opção.</p><p>Evidência científica: Estudos como PATHWAY-2 demonstraram que espironolactona é o quarto anti-hipertensivo mais eficaz em pacientes com hipertensão resistente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "A artrite reativa em indivíduos com gene HLA-B27 pode ser desencadeada pelo seguinte quadro infeccioso:",
+      "alternativas": [
+        "Amidalite estreptocócica.",
+        "Uretrite gonocócica.",
+        "Candidíase.",
+        "Shigelose."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda artrite reativa, um tema importante de reumatologia que relaciona infecções extra-articulares com sintomas musculoesqueléticos.</p><p><strong>A resposta correta é a alternativa D</strong> - shigelose.</p><p>A artrite reativa é uma artrite estéril que se desenvolve 1-4 semanas após infecções geniturinárias ou gastrointestinais, sem isolamento do patógeno no líquido sinovial. O HLA-B27 atua como fator de risco genético, predispondo à resposta imune exagerada.</p><p>Os principais gatilhos infecciosos são:</p><p>- Trato GI: Shigella, Salmonella, Yersinia, Campylobacter</p><p>- Trato geniturinário: Chlamydia trachomatis</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> Amigdalite estreptocócica causa febre reumática, não artrite reativa.</p><p><strong>Alternativa B:</strong> Uretrite gonocócica causa artrite gonocócica séptica (com isolamento bacteriano), não artrite reativa estéril.</p><p><strong>Alternativa C:</strong> Candidíase não está associada a artrite reativa.</p><p>Mnemônico prático: <strong>S</strong>hilelose e <strong>C</strong>lamydia são os principais gatilhos da artrite reativa em pacientes HLA-B27 positivo.</p><p>Diagnóstico diferencial importante: Artrite reativa vs artrite séptica vs artrite gonocócica. O padrão temporal (1-4 semanas pós-infecção) e ausência de bacterioscopia ajudam no diagnóstico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatorias",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Homem, 65 anos, foi ao Pronto Atendimento devido dor na perna esquerda. Ao exame clínico apresentava edema, eritema bem delimitado, calor e dor na perna esquerda de evolução há três dias, além de linfadenopatia inguinal esquerda, mialgia, cefaleia e temperatura de 39°C. Sem outras alterações ao exame físico. Na história patológica pregressa fazia tratamento para diabetes melitus com antiglicêmico. Qual o diagnóstico clínico e melhor opção terapêutica?",
+      "alternativas": [
+        "Exantema medicamentoso. Conduta: analgésico, corticoide sistêmico, liberação paracasa.",
+        "Erisipela. Conduta: analgésico, antibiótico sistêmico (cefalexina), permanência no prontoatendimento para acompanhamento da evolução, exames laboratoriais.",
+        "Vasculite Conduta: analgésico, solicitação de exames laboratoriais e encaminhamentopara angiologista.",
+        "Celulite. Conduta: analgésico, antibiótico sistêmico (oxacilina), exames laboratoriais ecirurgia para desbridamento do local afetado."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES avalia o diagnóstico diferencial entre infeções cutâneas de membro inferior, um tema clássico em emergências médicas.</p><p><strong>Vamos analisar o caso:</strong> Paciente de 65 anos, diabético, com quadro de 3 dias caracterizado por dor, edema, eritema e calor em perna esquerda, associado a febre (39°C) e linfadenopatia inguinal. O sinal mais importante aqui é a descrição do eritema como <em>bem delimitado</em>.</p><p><strong>Por que erisipela é o diagnóstico correto?</strong> A erisipela é uma infecção que acomete a derme superficial e vasos linfáticos, caracterizando-se por eritema bem delimitado. No diabético, este quadro é particularmente comum devido à maior susceptibilidade a infecções por alterações vasculares e imunológicas.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p><strong>A) Exantema medicamentoso:</strong> Não causaria febre, linfadenopatia local e sintomas sistêmicos como mialgia e cefaleia. Além disso, não se limitaria a apenas um membro.</p><p><strong>C) Vasculite:</strong> O padrão típico seria púrpuras palpáveis simétricas nos membros inferiores, não um eritema delimitado com sinais inflamatórios agudos.</p><p><strong>D) Celulite:</strong> Ao contrário da erisipela, a celulite acomete planos mais profundos, apresentando eritema mal delimitado e difuso.</p><p><strong>Conduta terapêutica:</strong> O tratamento da erisipela inclui antibiótico sistêmico com cobertura para <em>Streptococcus pyogenes</em>, sendo a cefalexina uma excelente opção. A analgesia e observação clínica são fundamentais devido ao risco de complicações em diabéticos.</p><p><strong>Resposta: Letra B</strong> - Diagnóstico: Erisipela. Conduta: Analgésico, antibiótico sistêmico (cefalexina), permanência no PA para acompanhamento e exames laboratoriais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesInfecciosas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_InfeccaoDePeleEPartesMolesPiod"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Uma paciente de 45 anos, previamente hígida foi admitida por fraqueza de instalação aguda nos membros inferiores e dor ao longo da face interna de ambas as coxas e retenção urinária há 8 dias. Ao exame, observou-se paraparesia crural, hiperreflexia patelar e aquilina - demais reflexos estavam normativos, reflexo plantar em extensão bilateralmente hipoestesia tátil e hipopalestesia com nível em T10. Qual a hipótese diagnóstica para este caso?",
+      "alternativas": [
+        "Mielopatia longitudinalmente extensa.",
+        "Mielorradiculopatia esquistossomótica.",
+        "Mielopatia espondiótica.",
+        "Síndrome de Guillain-Barre."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o diagnóstico diferencial de mielopatias, um tema neurológico sofisticado que exige compreensão das síndromes medulares agudas.</p><p><strong>Análise do caso clínico:</strong> Mulher de 45 anos, previamente hígida, com quadro neurológico agudo de 8 dias caracterizado por:</p><ul><li>Paraparesia crural com hiperreflexia patelar</li><li>Retenção urinária</li><li>Nível sensitivo em T10</li><li>Sintomas progressivos em membros inferiores</li></ul><p><strong>Padrão neurológico observado:</strong> A presença de hiperreflexia em membros inferiores indica comprometimento do neurônio motor superior, o que exclui síndromes de neuropatia periférica como Síndrome de Guillain-Barré (que cursa com flacidez e hiporreflexia).</p><p><strong>Por que mielorradiculopatia esquistossomótica?</strong> Esta parasitose é endêmica em várias regiões do Brasil, especialmente em áreas com precárias condições sanitárias. A esquistossomose pode causar mielorradiculopatia através da migração ectópica de <em>Schistosoma mansoni</em> para o sistema nervoso central, com deposição de ovos e resposta inflamatória intensa que compromete a função medular.</p><p><strong>Diagnóstico diferencial discutido:</strong></p><p><strong>A) Mielopatia longitudinal extensa:</strong> Acomete ≥3 segmentos vertebrais e pode ser causada por doenças autoimunes, infecções ou medicamentos. É uma possibilidade diagnóstica, mas historicamente, a mielorradiculopatia esquistossomótica é mais contextualizada em exames brasileiros.</p><p><strong>C) Mielopatia espondiótica:</strong> Curso crônico, geralmente em pacientes mais velhos, relacionado a degeneração articular. O início agudo descarta este diagnóstico.</p><p><strong>D) Síndrome de Guillain-Barré:</strong> Apresenta padrão ascendente, flacidez muscular e hiporreflexia, incompatível com o quadro descrito.</p><p><strong>Resposta: Letra B</strong> - Mielorradiculopatia esquistossomótica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Sofia mulher, 39 anos, cabelereira, casada, G2A0P2, chega a Unidade Básica de Saúde para consulta de rotina. Relata perceber, há cerca de 3 meses, dores pelo corpo com sensação de fadiga e falta de energia para realizar, tarefas habituais. Percebeu aumento de irritabilidade, Insônia de manutenção e aumento da apetite com ganho ponderal de 6 kg, algo que a incomoda muito porque tem medo de engordar. Observa que esse quadro piorou nos últimos 20 dias e não tem conseguido realizar as atividades que antes gostava, como caminhar ou cozinhar, diz não ver mais graça. Não relaciona sua situação a nenhum fator ambiental. Informa episódio semelhante aos 30 anos mas, na época, não buscou ajuda. A hipótese diagnóstica mais provável e a conduta que deve ser sugerida são:",
+      "alternativas": [
+        "Transtorno do sintoma somático, com predomínio de dor; benzodiazepínicos e atividadefísica.",
+        "Transtorno depressivo maior; inibidor preferencial da recaptação de serotonina epsicoterapia.",
+        "Transtorno alimentar, provável compulsão alimentar periódica; inibidor preferencial darecaptação de serotonina",
+        "Transtorno depressivo persistente (distimia); antidepressivo tricíclico, benzodiazepínicopara insónia psicoterapia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão explora o diagnóstico de transtornos do humor, particularmente depressivos, sendo extremamente relevante na prática clínica geral.</p><p><strong>Elementos clínicos do caso:</strong> Mulher de 39 anos, cabelereira, apresentando:</p><ul><li>Sintomas depressivos há 3 meses com piora recente (20 dias)</li><li>Perda do interesse em atividades prazerosas (anedonia)</li><li>Alterações do sono (insônia de manutenção)</li><li>Aumento do apetite e ganho ponderal (6kg)</li><li>Episódio similar aos 30 anos (sugere padrão recorrente)</li></ul><p><strong>Critérios diagnósticos atingidos:</strong> Os sintomas persistem por mais de 2 semanas, causam sofrimento significativo e prejuízo funcional. Estabelece-se claramente o diagnóstico de Transtorno Depressivo Maior.</p><p><strong>Por que a opção B é correta?</strong> O tratamento de primeira linha para Transtorno Depressivo Maior envolve:</p><ul><li><strong>ISRS:</strong> Inibidores da recaptação de serotonina são considerados primeira linha, com perfil de segurança favorável e boa eficácia</li><li><strong>Psicoterapia:</strong> Fundamental para adesão medicamentosa, desenvolvimento de estratégias de enfrentamento e prevenção de recaídas</li></ul><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Transtorno de sintoma somático:</strong> Embora a paciente apresente sintomas físicos, estes não são o foco principal. No transtorno de sintomas somáticos, a preocupação com sintomas físicos seria predominante no discurso e comportamento.</p><p><strong>C) Transtorno alimentar:</strong> O aumento de peso e apetite podem ser sintomas depressivos, mas não constituem compulsão alimentar (que envolve episódios descontrolados de ingestão de grandes quantidades de alimento seguidos de culpa).</p><p><strong>D) Distimia:</strong> A distimia envolve sintomas depressivos leves a moderados, persistentes por mais de 2 anos, sem períodos asymptomaticamente. O quadro atual é mais compatível com episódio depressivo maior.</p><p><strong>Considerações especiais:</strong> O ganho de peso e aumento do apetite são frequentes em mulheres com depressão, diferindo do padrão típico masculino de perda de peso. O antecedente sugere curso recorrente, reforçando a importância do tratamento adequado e prevenção de recaídas.</p><p><strong>Resposta: Letra B</strong> - Transtorno depressivo maior com ISRS e psicoterapia.</p>",
+      "filterIds": [
+        "Outros",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_TranstornosDoHumor"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "São considerados pacientes de alto risco para endocardite infecciosa, exceto:",
+      "alternativas": [
+        "Portadores de prótese valvar biológica mitral.",
+        "Pacientes portadores de cardiopatias congênitas cianogênicas.",
+        "Pacientes com antecedente de endocardite infecciosa.",
+        "Pacientes portadores de marcapasso definitivo."
+      ],
+      "correta": 3,
+      "professor_comment": "Questão de nível moderado sobre pacientes de alto risco para endocardite infecciosa (EI). \n\nNão tem endocardite só quem quer.Tem endocardite quem pode! Pacientes imunocomprometidos, ou com alterações estruturais cardíacas, ou com alguma porta de entrada para os agentes são aqueles de maior risco. \nVamos listar aqueles casos que se encaixam como fatores de ALTO risco para endocardite: \n- Antecedente prévio de EI. O maior fator de risco para boa parte das doenças, obviamente, é já ter tido esta mesma doença antes. \n- Pacientes com prótese valvar\n- Pacientes com cardiopatia congênita cianogênica\n\nVamos analisar cada um dos itens:\n1) INCORRETA. A presença de prótese valvar, seja biológica ou metálica, se encaixa como fator de alto risco. \n2) INCORRETA. O antecedente de cardiopatia cianogênica (como tetralogia de fallot e transposição de grandes artérias) é fator de alto risco para EI. \n3) INCORRETA. O antecedente prévio de EI é sem dúvidas fator de alto risco para um novo quadro desta doença. \n4) CORRETA. A presença de marcapasso por si só não é fator de alto risco para EI, apesar de a infecção de dispositivos implantáveis se encaixar como fator de risco. \n\nSendo assim, alternativa correta - ITEM 4.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_Endocardite"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Mulher, de 26 anos, apresentou achado incidental de linfonodemegalia hilar bilateral, visualizada em radiografia de tórax, sem alterações no parênquima pulmonar. Encaminhada para ambulatório, recebeu diagnóstico de sarcoidose. Sobre a sarcoidose, pode-se afirmar:",
+      "alternativas": [
+        "Trata-se de doença granulomatosa caracterizada pela presença de granulomas caseososque podem acometer vários órgãos simultaneamente.",
+        "Os órgãos mais acometidos são: pulmão, fígado e coração.",
+        "Em pacientes com síndrome de Lofgren (adenopatia hilar bilateral, poliartrite e eritemanodoso, geralmente acompanhado de febre) a biópsia pode ser desnecessária.",
+        "O acometimento cardíaco e a principal causa de óbito."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda a sarcoidose, doença granulomatosa multissistêmica de relevante impacto na pneumologia e medicina interna.</p><p><strong>Contexto clínico:</strong> A paciente apresentou achado incidental de linfonodomegalia hilar bilateral em radiografia de tórax, sem alterações parenquimatosas. Este é um padrão radiológico clássico para sarcoidose, frequentemente assintomático na fase inicial.</p><p><strong>Por que a alternativa C é correta?</strong> A Síndrome de Löfgren é uma forma especial e bem caracterizada de sarcoidose que inclui:</p><ul><li>Adenopatia hilar bilateral</li><li>Poliartrite</li><li>Eritema nodoso</li><li>Geralmente acompanhada de febre</li></ul><p><strong>Características específicas da Síndrome de Löfgren:</strong></p><ul><li><strong>Alta especificidade diagnóstica:</strong> 95% de especificidade para sarcoidose</li><li><strong>Biópsia desnecessária:</strong> A tríade típica permite diagnóstico clínico sem procedimentos invasivos</li><li><strong>Prognóstico favorável:</strong> Frequentemente se resolve espontaneamente</li><li><strong>Manifestação aguda:</strong> Diferente da forma crônica típica da sarcoidose</li></ul><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Granulomas caseosos:</strong> INCORRETO - A sarcoidose caracteriza-se por granulomas <em>não caseosos</em> (sem necrose central). A presença de granulomas caseosos é típica de tuberculose e histoplasmose.</p><p><strong>B) Pulmão, fígado e coração:</strong> INCORRETO - Os órgãos mais acometidos na sarcoidose são: <strong>pulmão</strong> (sítio mais comum), <strong>linfonodos</strong> e <strong>pele</strong> (eritema nodoso). Fígado e coração podem ser acometidos, mas não estão entre os mais frequentes.</p><p><strong>D) Acometimento cardíaco como principal causa de óbito:</strong> INCORRETO - Embora a sarcoidose possa causar arritmias e insuficiência cardíaca, <strong>as complicações pulmonares (fibrose pulmonar e hipertensão pulmonar) são as principais causas de óbito</strong> relacionadas à doença.</p><p><strong>Contexto epidemiológico:</strong> A sarcoidose é mais comum em mulheres negras e pessoas de 20-40 anos. A apresentação assintomática com achado radiológico é frequente, tornando fundamental o conhecimento dos critérios diagnósticos e manejo conservador quando apropriado.</p><p><strong>Resposta: Letra C</strong> - Na Síndrome de Löfgren, a biópsia pode ser desnecessária devido à alta especificidade diagnóstica da tríade sintomática.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Sarcoidose",
+        "ClinicaMedica_Reumatologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Assinale a assertiva incorreta com relação à Doença de Crohn.",
+      "alternativas": [
+        "Considerando a avaliação macroscópica, as lesões podem afetar qualquer segmento dotrato gastrointestinal, com inflamação transmural e propensão a fenótipos penetrantes.",
+        "O intestino comprometido pela doença pode fistulizar para o intestino adjacente ou estruturas adjacentes normalmente não afetados pela doença.",
+        "Uma característica macroscópica observada nas abordagens cirúrgicas da doença é aserosite com envolvimento e invasão da serosa pela gordura mesentérica.",
+        "O clássico granuloma não caseoso é encontrado em menos de 15% das biopsias, sendo odiagnóstico baseado na soma de achados clínicos, endoscópicos e de imagens."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFES 2022 aborda características patológicas da Doença de Crohn, exigindo identificação da assertiva incorreta.</strong></p><p><strong>A resposta correta é D.</strong> A alternativa afirma incorretamente que \"o clássico granuloma não caseoso é encontrado em menos de 15% das biopsias\". Na verdade, este achado histopatológico característico é identificado em 15% das biópsias e em 50% das peças cirúrgicas ressecadas.</p><p>Vamos analisar as demais alternativas:</p><p><strong>Alternativa A:</strong> Correta. A Doença de Crohn pode acometer qualquer segmento do trato gastrointestinal, caracteriza-se por inflamação transmural e propensão a fenótipos penetrantes (fístulas, abscessos).</p><p><strong>Alternativa B:</strong> Correta. A inflamação transmural predispõe à formação de fístulas entre segmentos intestinais ou para estruturas adjacentes (bexiga, vagina, pele).</p><p><strong>Alternativa C:</strong> Correta. A serosite com invasão da gordura mesentérica é característica macroscópica observada em peças cirúrgicas.</p><p><strong>Dica clínica:</strong> O granuloma não caseoso é o hallmark histopatológico da Doença de Crohn, mas sua ausência não exclui o diagnóstico. A confirmação depende da correlação clínico-endoscópico-patológica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "A cirurgia metabólica foi reconhecida pelo Conselho Federal de Medicina (CFM) no ano de 2017 através da resolução CFM n° 2.172/2017. Esta cirurgia está indicada:",
+      "alternativas": [
+        "Para pacientes diabéticos tipo 2 com IMC (Índice de Massa Corporal) entre 30 e 34,9 kg/ m2.",
+        "Para paciente com menos de 2 anos de diabetes tipo 2",
+        "Para pacientes diabéticos tipo 2 com IMC normal",
+        "Para pacientes diabéticos tipo 1."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia conhecimento sobre critérios de elegibilidade para cirurgia metabólica, conforme Resolução CFM nº 2.172/2017.</strong></p><p><strong>A resposta correta é A.</strong> A cirurgia metabólica está indicada para pacientes diabéticos tipo 2 com IMC entre 30 e 34,9 kg/m², desde que atendidos outros critérios específicos.</p><p>Analisando as demais alternativas:</p><p><strong>Alternativa B:</strong> Incorreta. A indicação requer diagnóstico de diabetes tipo 2 com pelo menos 10 anos de evolução, não menos de 2 anos.</p><p><strong>Alternativa C:</strong> Incorreta. A cirurgia metabólica não é indicada para pacientes com IMC normal (18,5-24,9 kg/m²).</p><p><strong>Alternativa D:</strong> Incorreta. A cirurgia metabólica é específica para diabetes tipo 2, não sendo indicada para diabetes tipo 1.</p><p><strong>Critérios completos para indicação:</strong> Idade entre 30-70 anos, diagnóstico de DM2 há mais de 10 anos, refratariedade ao tratamento clínico otimizado e ausência de contraindicações psiquiátricas.</p><p><strong>Técnica cirúrgica de escolha:</strong> Derivação gastrojejunal em Y de Roux (DGYR), sendo a gastrectomia vertical (GV) alternativa.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "Cirurgia_CirurgiaBariatricaEMetabolica"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Homem de 27 anos e 72 kg. Vítima de acidente automobilístico, apresenta frequência cardíaca de 140 bpm, pressão arterial de 100/60 mmHg e frequência respiratória de 28 irpm. É levado à sala de cirurgia e após a abertura cirúrgica do abdome a pressão arterial diminui para 80/40 mmHg. A perda de sangue estimada é de cerca de 3.000 mL. Após administrar 2.500 ml de hidroxietilamido, o paciente apresenta sangramento difuso na ferida operatória. Qual o mecanismo provável para essa complicação?",
+      "alternativas": [
+        "Plaquetopenia.",
+        "Deficiência de proteína C.",
+        "Diluição de fatores da coagulação.",
+        "Coagulação intravascular disseminada."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão explora complicações da reposição volêmica agressiva em pacientes politraumatizados.</strong></p><p><strong>A resposta correta é C - Diluição de fatores da coagulação.</strong> O mecanismo fisiopatológico envolvido é a coagulopatia dilucional, processo que desenvolve-se quando grande volumes de fluidos cristaloides ou coloides são administrados rapidamente.</p><p>Vamos analisar a fisiopatologia:</p><p>O paciente politraumatizado com perda sangüínea de 3.000 mL recebeu 2.500 mL de hidroxietilamido, resultando em hemodiluição significativa. Esta diluição reduz a concentração de fatores de coagulação, fibrinogênio e plaquetas, comprometendo a hemostasia normal.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Plaquetopenia:</strong> Não há evidência de consumo plaquetário primário ou produção reduzida.</p><p><strong>B) Deficiência de proteína C:</strong> Transtorno constitucional não relacionado à reposição volêmica aguda.</p><p><strong>D) Coagulação intravascular disseminada:</strong> Não há evidência de ativação patológica da coagulação, consumo difuso de fatores ou fibrinólise.</p><p><strong>Fatores agravantes:</strong> Hipotermia (comum em politraumatizados) potencializa a disfunção plaquetária e interfere na atividade enzimática da cascata de coagulação.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Durante o atendimento à parada cardiorrespiratória, o acesso venoso profundo está contraindicado. A explicação que fundamenta tal recomendação é:",
+      "alternativas": [
+        "Piora do prognóstico neurológico por interrupção das compressões torácicas.",
+        "Maior risco de ocorrência de pneumotórax.",
+        "Dificuldade técnica no acesso venoso central.",
+        "Maior incidência de punção de vasos arteriais."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda принципи de suporte avançado de vida em parada cardiorrespiratória (PCR).</strong></p><p><strong>A resposta correta é A - Piora do prognóstico neurológico por interrupção das compressões torácicas.</strong></p><p>A fundamentação baseia-se no conceito de \"minimal interruptions\" durante a ressuscitação cardiopulmonar. Cada segundo de interrupção das compressões torácicas compromete критично a perfusão coronariana e cerebral.</p><p><strong>Justificativa fisiopatológica:</strong></p><p>As compressões torácicas geram fluxo sanguíneo coronariano e cerebral mínimo. Interrupções prolongadas resultam em:</p><p>• Diminuição da pressão de perfusão coronariana</p><p>• Redução do fluxo sanguíneo cerebral</p><p>• Aumento do risco de morte neuronal</p><p>• Piora significativa do prognóstico neurológico</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>B) Maior risco de pneumotórax:</strong> Embora seja uma complicação potencial do acesso venoso central, não é o fundamento principal da contraindicação durante PCR.</p><p><strong>C) Dificuldade técnica:</strong> A questão não é a dificuldade, mas sim o timing inadequado.</p><p><strong>D) Maior incidência de punção arterial:</strong> Complicação técnica não relacionada ao prognóstico neurológico.</p><p><strong>Princípio fundamental:</strong> Durante PCR, cada interrupção deve ser minimizada (máximo 10 segundos) para checagem de ritmo e pulso.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "Cirurgia_PrincipiosDaAnestesiologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente de 55 anos, em tratamento de câncer cerebral, apresenta aumento do volume da extremidade inferior esquerda, associado a discreto aumento da temperatura difusamente e moderada tonalidade cianótica dos pododáctilos. Tem aumento da tensão da panturrilha e dor à palpação profunda da região. O pé adotou uma posição em equino e a dorsoflexão é dolorosa. Qual a principal hipótese diagnóstica?",
+      "alternativas": [
+        "Dor ciática.",
+        "Obstrução arterial aguda.",
+        "Trombose venosa profunda aguda.",
+        "Linfangite aguda."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia capacidade diagnóstica para trombose venosa profunda (TVP) em paciente oncológico.</strong></p><p><strong>A resposta correta é C - Trombose venosa profunda aguda.</strong> O quadro clínico представля classic presentation de TVP em paciente com fator de risco (câncer cerebral).</p><p><strong>Análise dos achados clínicos:</strong></p><p>• Edema do membro inferior esquerdo → obstrução venosa</p><p>• Dor à dorsiflexão passiva (Sinal de Homans positivo) → clássico para TVP</p><p>• Cianose de pododáctilos → comprometimento venoso severo (Phlegmasia Cerúlea Dolens)</p><p>• Posição em equino → resposta antálgica</p><p>• Tensão da panturrilha → edema e inflamação</p><p><strong>Contextualização epidemiológica:</strong> Paciente oncológico apresenta estado de hipercoagulabilidade (Tríade de Virchow: hipercoagulabilidade + estase + lesão endotelial).</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Dor ciática:</strong> Acometimento neurológico com dor lombar referida, sem alterações vasculares.</p><p><strong>B) Obstrução arterial aguda:</strong> A cianose é de origem venosa, não arterial. Na obstrução arterial haveria palidez, frialdade e dor súbita.</p><p><strong>D) Linfangite aguda:</strong> Acometimento linfático com sinais inflamatórios locais, sem comprometimento venoso profundo.</p><p><strong>Conduta:</strong> Suspeita clínica + USG Doppler de membros inferiores. Tratamento: anticoagulação plena por mínimo 3 meses.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "Cirurgia_CirurgiaVascular",
+        "ClinicaMedica_Cardiologia_Choque"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Paciente, 58 anos, assintomático, em uma consulta de rotina, apresenta resultado de Antígeno Prostático Especifico (PSA) de 4,5ng/ml. Ao exame de toque retal foi constatado um nódulo endurecido no lobo esquerdo da próstata. Qual a conduta mais adequada para o esclarecimento do diagnóstico?",
+      "alternativas": [
+        "Biópsia da próstata.",
+        "Ultrassonografia transretal da próstata.",
+        "Repetir PSA e solicitar PSA livre.",
+        "Solicitar ressonância magnética da próstata."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFES 2022 avalia seu conhecimento sobre as indicações de biópsia prostática, um tema frequente em provas de residência médica.</p><p><strong>A resposta correta é A - Biópsia da próstata.</strong></p><p>O paciente apresenta DOIS critérios claros para biópsia: PSA elevado (4,5 ng/ml, que está acima do valor de corte de 4,0 ng/ml) e achado físico suspeito (nódulo endurecido no toque retal). A presença de qualquer um desses fatores já seria suficiente para indicar a biópsia.</p><p>Vamos analisar as outras alternativas:</p><p><strong>B) Ultrassonografia transretal:</strong> Este exame é importante para guiar a biópsia, mas não substitui o procedimento diagnóstico necessário. A ultrassonografia por si só não confirma malignidade.</p><p><strong>C) Repetir PSA e solicitar PSA livre:</strong> Embora a relação PSA livre/total seja útil em casos duvidososos, neste cenário clínico (PSA já elevado + nódulo palpable) a conduta deve ser direta - biópsia. Repetir exames apenas atrasaria o diagnóstico.</p><p><strong>D) Solicitar ressonância magnética:</strong> A RM pode ser útil em casos de estadiamento ou quando há suspeita de doença extraprostática, mas não é o primeiro passo diagnóstico em um paciente com achados clínicos positivos.</p><p><strong>Dica importante:</strong> Lembre-se da regra mnemônica \"PSA > 4,0 OU toque retal suspeito = biópsia\". Quanto antes o diagnóstico, melhor o prognóstico do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Urologia",
+        "ClinicaMedica_Urologia_CancerDeProstata",
+        "ClinicaMedica_Urologia_CancerDeProstata_ExamesComplementaresEDiagnosti"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "A equipe de socorro pré-hospitalar atende um homem, de 36 anos, vítima de queda de aproximadamente4 metros de altura. O Paciente encontrava-se em decúbito dorsal, irresponsivo e com a cabeça e cervical mantidas alinhadas por um vizinho. Ao exame apresentava respiração irregular, que aumentava em profundidade e depois diminuía e presença de sangue em narinas e orelhas. o Paciente aceitou a cânula orofaríngea e a via aérea está pérvia. Foi posicionado o dispositivo ventilatório máscara-bolsa e ventilado com frequência de 12 vezes/minuto. A pupila direita está midriática; frequência de pulso de 54 bpm, com pulso regular; saturação periférica de oxigênio de 96%; pele fria, seca e pálida; pontuação de Glasgow = 7 (abertura ocular 2; resposta verbal 1; melhor resposta motora 4). A avaliação secundária foi realizada a caminho do hospital. O paciente é coberto com cobertor quente, a pressão arterial é de 190/100 mmHg e o eletrocardiograma revela bradicardia sinusal, com contrações ventriculares isoladas. Sobre o caso acima, assinale a alternativa correta.",
+      "alternativas": [
+        "As lesões traumáticas cerebrais são extremamente complexas e o atendimento pré-hospitalar agrega pouco valor ao desfecho final, devendo o paciente chegar ao hospital o mais rápido possível.",
+        "A assistência especializada a esse paciente visa, principalmente, prevenir a lesão cerebral primária, já que não há meios de controlar a lesão cerebral secundária.",
+        "A descrição clínica do quadro do paciente aponta para uma importante gravidade, porém, não há critérios que apontem para um alto risco de herniação cerebral.",
+        "O padrão ventilatório descrito na avaliação inicial do paciente pela equipe de emergencistas aponta para um padrão ventilatório denominado respiração de Cheyne Stokes."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda um tema clássico de medicina de emergência: trauma craniencefálico e seus padrões respiratórios, um conhecimento fundamental para quem atua em Unidades de Terapia Intensiva e emergência.</p><p><strong>A resposta correta é D - O padrão ventilatório descrito é respiração de Cheyne Stokes.</strong></p><p>Analisando a descrição do paciente: \"respiração irregular, que aumentava em profundidade e depois diminuía\" - esta é a definição clássica da respiração de Cheyne Stokes, caracterizada por períodos de hiperpneia seguidos de apneia, formando um ciclo rítmico.</p><p>Este padrão respiratório, combinado com a tríade de Cushing (hipertensão arterial, bradicardia e alteração ventilatória), indica aumento significativo da pressão intracraniana, provavelmente por efeito de massa (hematoma) com risco de herniação cerebral.</p><p><strong>Vamos corrigir as alternativas incorretas:</strong></p><p><strong>A) Atendimento pré-hospitalar agrega pouco valor:</strong> FALSO. O atendimento pré-hospitalar é crucial, especialmente na ventilação adequada e prevenção de hipóxia, que são fundamentais para minimizar lesão cerebral secundária.</p><p><strong>B) Prevenir lesão primária:</strong> INCORRETO. A lesão primária (o trauma inicial) já ocorreu. O foco deve ser prevenir a lesão secundária (hipóxia, hipoperfusão, hipertensão intracraniana).</p><p><strong>C) Não há alto risco de herniação:</strong> INCORRETO. O Glasgow 7, anisocoria (pupila midriática) e tríade de Cushing indicam alta probabilidade de herniação cerebral iminente.</p><p><strong>Pegadinha clássica:</strong> Questões sobre padrões respiratórios sempre aparecem. A respiração de Cheyne Stokes é a mais cobrada, caracterizada pela alternância rítmica de amplitude respiratória.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoSecundaria"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Assinale a afirmativa correta sobre a estratégia de alimentação em cirurgias colorretais eletivas.",
+      "alternativas": [
+        "A dieta pós-operatória de início precoce deve ser baseada em maiores quantidades decarboidratos e pouco ou ausente conteúdo proteico.",
+        "A alimentação oral de início precoce em cirurgias eletivas colorretais apresenta reduçãoda mortalidade e das complicações graves.",
+        "A permeabilidade intestinal, a translocação bacteriana e as reações inflamatórias no pós operatório de cirurgias colorretais não se modificam com as diferentes estratégias de alimentação pós cirúrgica.",
+        "O estresse metabólico cirúrgico não traz consequências na síntese proteica ou imunidade, estando essa resposta fisiológica ligada à síntese lipídica e de carboidratos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão explora um tema de grande relevância clínica: estratégias de nutrição pós-operatória em cirurgia colorretal, um assunto que revolucionou a prática cirúrgica nas últimas décadas.</p><p><strong>A resposta correta é B - A alimentação oral de início precoce em cirurgias eletivas colorretais apresenta redução da mortalidade e das complicações graves.</strong></p><p>Esta alternativa está alinhada com as evidências científicas mais atuais e as diretrizes do Projeto ACERTO (Avaliação de Complicações e Enriquecimento de Resultados em Cirurgia), que demonstraram benefícios claros da realimentação precoce.</p><p><strong>Vamos analisar as alternativas incorretas:</strong></p><p><strong>A) Dieta baseada em carboidratos:</strong> INCORRETO. No pós-operatório precoce, a dieta deve ser equilibrada nutricionalmente, com蛋白质 adequadas para favorecer cicatrização. Restringir proteínas pode prejudicar a recuperação.</p><p><strong>C) Não há modificações na permeabilidade intestinal:</strong> FALSO. A dieta precoce reduz o tempo de íleo, preserva a integridade da barreira intestinal e diminui a translocação bacteriana, comparado ao jejum prolongado.</p><p><strong>D) Estresse cirúrgico não afeta síntese proteica:</strong> COMPLETAMENTE INCORRETO. O estresse cirúrgico causa resposta inflamatória sistêmica, catabolismo proteico e imunosupressão. A nutrição precoce ajuda a modular essa resposta.</p><p><strong>Evidência científica:</strong> Estudos mostram que a dieta oral iniciada nas primeiras 24-48 horas após cirurgia colorretal resulta em alta hospitalar mais precoce, menor incidência de complicações infecciosas e redução de custos hospitalares, sem aumentar o risco de deiscência anastomótica.</p><p><strong>Mensagem prática:</strong> A máxima \"nada pela boca\" no pós-operatório está sendo abandonada em favor da nutrição precoce direcionada.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalEnteral"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Após um jogo de futebol, um torcedor do Time A foi agredido por torcedor um torcedor do Time B, com perda de consciência. A vitima foi encaminhada ao Pronto Socorro, sendo admitido com cefaleia e vômitos, em Glasgow 15. Foi avaliado pelo médico plantonista e liberado para casa, sem acompanhante. Chegando em casa deitou-se para dormir. No dia seguinte sua mãe o encontrou morto. Diante desses fatos qual a principal hipótese diagnóstica para a causa mortis?",
+      "alternativas": [
+        "Hipertensão intracrania por hematorna extradural agudo.",
+        "Hipertensão Intracrania por tumor Cerebral.",
+        "Hipertensão Intracrania por síndrome do segundo impacto.",
+        "Hipertensão intracrania por inchaço cerebral (\"brain swelling\")."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão apresenta um cenário dramático mas didático sobre uma das condições mais traiçoeiras da neurocirurgia: o hematoma epidural com intervalo lúcido, um conhecimento fundamental para qualquer médico plantonista.</p><p><strong>A resposta correta é A - Hipertensão intracraniana por hematoma extradural agudo.</strong></p><p>O caso descrito é um exemplo clássico do \"intervalo lúcido\" - período em que o paciente parece estar bem após trauma craniano, mas desenvolve deterioração neurológica posteriormente. Esta é a apresentação típica do hematoma epidural.</p><p><strong>Fisiopatologia resumida:</strong> O trauma causa ruptura de artéria (geralmente meníngea média), resultando em acúmulo de sangue entre crânio e duramáter. Inicialmente, o paciente pode estar assintomático, mas conforme o hematoma cresce, comprime o tecido cerebral, elevando a pressão intracraniana.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>B) Tumor cerebral:</strong> Tumores não aparecem suddenly após trauma. Além disso, o paciente era jovem e sem história prévia.</p><p><strong>C) Síndrome do segundo impacto:</strong> Ocorre quando há novo trauma antes da recuperação completa do primeiro. Não se aplica a este caso.</p><p><strong>D) \"Brain swelling\":</strong> Embora possa ocorrer após trauma, o padrão de apresentação com intervalo lúcido é muito mais típico de hematoma.</p><p><strong>Alerta crítico:</strong> Todo paciente com TCE, mesmo com Glasgow 15, que apresentar vômitos deve ser observado por pelo menos 24-48 horas. A alta hospitalar sem observação adequada pode ser fatal, como aconteceu neste caso.</p><p><strong>Apredizagem:</strong> Cefaleia + vômitos pós-TCE = observação obrigatória!</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Mulher, 35 anos, assintomática do ponto de vista cervical, realizou ultrassonografia de mama e teve seu pescoço rastreado no exame. Encontrou-se nódulo sólido em lobo esquerdo de tireoide, isoecóico, com halo hipoecólico bem definido, 0,9 cm em seu maior diâmetro, TIRADS 3, sem outros achados suspeitos ou informações de risco. Dosagem de TSH de 1,2. A melhor conduta será:",
+      "alternativas": [
+        "Indicar PAAF, dirigida por ultrassom.",
+        "Indicar observação clínica e ultrassonográfica.",
+        "Indicar lobectomia esquerda e biópsia de congelação.",
+        "Indicar tireoidectómica total."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre a classificação TIRADS para nódulos tireoidianos, uma ferramenta fundamental na endocrinologia moderna para direcionar condutas diagnósticas.</p><p><strong>A resposta correta é B - Indicar observação clínica e ultrassonográfica.</strong></p><p>A paciente apresenta nódulo TIRADS 3 com 0,9 cm. De acordo com as diretrizes atuais, nódulos TIRADS 3 menores que 2,5 cm devem ser apenas acompanhados, sem necessidade de PAAF.</p><p><strong>Sistema TIRADS explicado:</strong></p><p>• TIRADS I-II: Não necessitam PAAF<br>• TIRADS 3: PAAF se ≥ 2,5 cm<br>• TIRADS 4: PAAF se ≥ 1,5 cm<br>• TIRADS 5: PAAF se ≥ 1,0 cm</p><p>No caso presented, o nódulo de 0,9 cm está bem abaixo do limite de 2,5 cm para TIRADS 3, justificando apenas observação.</p><p><strong>Por que as alternativas incorretas:</strong></p><p><strong>A) PAAF dirigida por ultrassom:</strong> Desnecessária para nódulo TIRADS 3 pequeno. Seria overtreatment.</p><p><strong>C) Lobectomia esquerda:</strong> Extremo demais para nódulo pequeno e sem características suspeitas. A lobectomia está indicada apenas se PAAF confirmar malignidade ou em casosselecionados de nódulos grandes.</p><p><strong>D) Tireoidectomia total:</strong> Absolutamente injustificada para nódulo benigno pequeno. Complicações definitivas sem benefício clínico.</p><p><strong>Contexto adicional:</strong> O TSH de 1,2 mUI/L está normal, confirmando que a função tireoidiana está preservada. O acompanhamento ultrassonográfico em 6-12 meses é adequado para monitorar crescimento ou mudanças morfológicas.</p><p><strong>Prática clínica:</strong> Cada vez mais evitamos procedimentos invasivos em nódulos de baixo risco, seguindo evidências de que a maioria são clinicamente insignificantes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Herpes genital é uma infecção causada pelo vírus do herpes simples. No que diz respeito a essa infecção, marque a resposta correta:",
+      "alternativas": [
+        "As manifestações clínicas dependem de fatores relacionados principalmente a imunidade do portador. A primeira manifestação clinica costuma ser mais exuberante pela imaturidade do sistema imunológico.",
+        "A maioria das infecções são sintomáticas, favorecendo ao diagnóstico clinico da doença",
+        "É uma infecção rara, acometendo mais frequentemente imunossuprimidos como os pacientes HIV positivos e gestantes.",
+        "O tratamento mais efetivo das lesões cutâneas e mucosas é feito com o uso de aciclovir de uso tópico, como cremes e pomadas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFES aborda aspectos fundamentais do herpes genital e avalia o entendimento do candidato sobre a fisiopatologia da infecção pelo vírus herpes simples.</p><p><strong>A resposta correta é A.</strong> A alternativa está correta porque descreve adequadamente a dependência das manifestações clínicas da imunidade do portador e destaca que a primeira infecção (primária) costuma ser mais exuberante devido à imaturidade da resposta imune.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - CORRETA:</strong> A primeira infecção por HSV é mais severa porque o sistema imunológico ainda não desenvolveu memória específica. Os sintomas incluem febre, mal-estar, linfadenopatia e múltiplas lesões vesiculares. A ausência de imunidade prévia explica a maior intensidade clínica.</p><p><strong>Alternativa B - INCORRETA:</strong> A maioria das infecções é ASSINTOMÁTICA. Estudos mostram que 20-25% dos soropositivos para HSV-1 têm história clínica de infecção, mas a transmissão pode ocorrer mesmo sem sintomas aparentes.</p><p><strong>Alternativa C - INCORRETA:</strong> O herpes é uma infecção MUITO COMUM, não rara. Embora seja mais frequente em imunossuprimidos, afeta amplamente a população geral, com alta taxa de infecção assintomática.</p><p><strong>Alternativa D - INCORRETA:</strong> O tratamento com aciclovir tópico é menos eficaz que o sistêmico. A via oral é preferida por maior biodisponibilidade e eficácia. As opções incluem aciclovir, famciclovir ou valaciclovir.</p><p><strong>Dica importante:</strong> Lembre-se que a infecção primária dura mais (7-18 dias) e a recorrente é mais breve e localizada.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexualmenteTransmissivel",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexualmenteTransmissivel_HerpesGenital",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Entre os tipos de cânceres que acomete a mulher, o terceiro mais frequente é o câncer de colo de útero, e o tipo mais comum é o carcinoma escamoso ou espinocelular. Qual a via de propagação mais frequente dessa neoplasia?",
+      "alternativas": [
+        "Linfática.",
+        "Por contiguidade.",
+        "Venosa.",
+        "Arterial."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES 2022 avalia o conhecimento sobre padrões de dissemininação do carcinoma escamoso do colo uterino, um tema recorrente em ginecologia oncológica.</p><p><strong>A resposta correta é B - Por contiguidade.</strong></p><p>O carcinoma do colo uterino possui padrão de crescimento local inicialmente, com invasão progressiva dos tecidos adjacentes. Vamos entender o motivo:</p><p><strong>Propagação por contiguidade (B) - CORRETA:</strong> A disseminação inicial ocorre para estruturas vizinhas em ordem: paramétrios → vagina → corpo uterino → bexiga → reto. Esta é a via predominante no início da doença, caracterizando crescimento infiltrativo local.</p><p><strong>Propagação linfática (A):</strong> Importante, mas ocorre após a invasão local. O padrão segue: grupos linfonodais parametriais → ilíacos → para-aórticos. Mais significativa em estágios avançados.</p><p><strong>Propagação venosa (C):</strong> Ocorre principalmente em estágios IV, com metástases pulmonares, hepáticas e ósseas. Menos comum que as outras vias.</p><p><strong>Propagação arterial (D):</strong> Raramente ocorre isoladamente, sendo mais típica de carcinomas de alto grau ou em fases muito avançadas.</p><p><strong>Conceito-chave:</strong> O carcinoma escamoso do colo uterino segue o padrão \"local primeiro, depois regional, por último sistêmico\". A contiguidade é a via mais frequente por representar a progressão natural da doença.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero_Classificacao"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Com relação aos sintomas de disfunção do trato urinário baixo em mulheres é incorreto afirmar:",
+      "alternativas": [
+        "Na inspeção dos órgãos genitais externos, a presença de dermatite amoniacal é um fator que indica gravidade na incontinência urinária de esforço.",
+        "Lesões neurológicas como trauma, acidente vascular cerebral, tumor cerebral e mielite transversa, podem causar bexiga neurogênica.",
+        "Na anamnese da incontinência urinária de esforço é importante caracterizar o tipo deperda urinária e os fatores que pioram ou desencadeiam a perda urinária. No entanto, é muito importante testes objetivos de propedêutica dessas pacientes.",
+        "A hiperatividade vesical ou bexiga hiperativa é definido como a presença de contrações voluntárias do músculo detrusor."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFES aborda um tema essencial em uroginecologia: as disfunções do trato urinário baixo feminino, avaliando conceitos fundamentais e armadilhas conceituais.</p><p><strong>A resposta correta é D - A hiperatividade vesical é definida como a presença de contrações voluntárias do músculo detrusor.</strong> Esta definição está INCORRETA e representa o gabarito da questão.</p><p>Vamos analisar cada alternativa para revisão completa:</p><p><strong>Alternativa A - CORRETA:</strong> A dermatite amoniacal indica gravidade na incontinência de esforço porque reflete perdas urinárias frequentes e persistentes, comprometendo a higiene local. É um sinal clínico importante na avaliação física.</p><p><strong>Alternativa B - CORRETA:</strong> As lesões neurológicas citadas podem causar bexiga neurogênica, manifesting-se como alterações da sensibilidade vesical, dissinergia vesicoesfincteriana ou incontinência. O traumatismo, AVC, tumores cerebrais e mielite transversa são causas reconhecidas.</p><p><strong>Alternativa C - CORRETA:</strong> A anamnese é fundamental para caracterizar o tipo de incontinência e fatores desencadeantes, mas testes objetivos (como estudo urodinâmico) são essenciais para confirmação diagnóstica e planejamento terapêutico adequado.</p><p><strong>Alternativa D - INCORRETA (gabarito):</strong> A bexiga hiperativa é caracterizada por contrações INVOLUNTÁRIAS do detrusor, não voluntárias. A palavra \"voluntárias\" torna a definição incorreta, pois contradiz o conceito de hiperatividade como fenômeno espontâneo e incontrolável.</p><p><strong>Definição correta:</strong> Bexiga hiperativa = contrações involuntárias e hiperativas do músculo detrusor na ausência de doença neurológica evidente.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia_IncontinenciaUrinaria"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "A lei nº 9263/1996. Lei do Planejamento Familiar, no capítulo I, artigo 10, fala sobre a permissão da esterilização voluntária da mulher. Sobre essa Lei é correto afirmar, exceto:",
+      "alternativas": [
+        "A esterilização voluntária da mulher e permitida em situação de risco à vida ou à saúde da mulher ou do futuro concepto, testemunhado em um relatório escrito e assinado por 2 médicos.",
+        "Na vigência de sociedade conjugal, a esterilização voluntária depende do consentimento expresso de ambos os cônjuges.",
+        "A esterilização cirúrgica em pessoa absolutamente incapaz somente poderá ocorrer mediante autorização da família da mulher.",
+        "É vedada a esterilização cirúrgica durante o período de parto, aborto ou até o 42ª dia do pós parto ou pós aborto, exceto nos casos de comprovada necessidade."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFES aborda aspectos legais da esterilização cirúrgica voluntária, um tema importante na prática médica, especialmente considerando atualizações recentes na legislação brasileira.</p><p><strong>A resposta correta é C - A esterilização cirúrgica em pessoa absolutamente incapaz somente poderá ocorrer mediante autorização da família da mulher.</strong></p><p>Esta alternativa está INCORRETA e representa o gabarito da questão. Vamos analisar cada alternativa:</p><p><strong>Alternativa A - CORRETA:</strong> A esterilização é permitida em situações de risco à vida ou saúde da mulher ou concepto, comprovado por relatório de 2 médicos. Este é um dos critérios legais estabelecidos.</p><p><strong>Alternativa B - CORRETA:</strong> Na vigência de sociedade conjugal, a esterilização depende do consentimento expresso de ambos os cônjuges. Esta era uma exigência da lei original.</p><p><strong>Alternativa C - INCORRETA (gabarito):</strong> A esterilização de pessoa absolutamente incapaz NÃO depende de autorização familiar, mas sim de autorização JUDICIAL, conforme regulamentação específica na Lei. A alternativa apresenta informação incorreta sobre o tipo de autorização necessária.</p><p><strong>Alternativa D - CORRETA:</strong> É vedada a esterilização durante parto, aborto ou até 42 dias pós-parto/aborto, exceto em casos de necessidade comprovada. Esta restrição visa proteger a autonomia da mulher em momento de vulnerabilidade.</p><p><strong>Atualização importante (Lei 14.443/2022):</strong> As regras mudaram em 2023: idade mínima diminuiu (21 anos ou 18+2 filhos), não é mais necessário consentimento do cônjuge, e o prazo mínimo de 60 dias deve ser respeitado.</p><p><strong>Conceito-chave:</strong> Para incapazes, a autorização é JUDICIAL, não familiar - esta é a distinzão que torna a alternativa C incorreta.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "A doença trofoblástica gestacional (DTG) pode ser definida como uma anomalia proliferativa que acomete as células que compõem o tecido trofoblástico placentário. No Brasil estima-se que ocorra 1 caso a cada 200 a 400 gestações. São manifestações clínicas da DTG, exceto:",
+      "alternativas": [
+        "Presença de cistos teca-luteínicos pela hiperestimulação ovariana.",
+        "Sinais de pré eclampsia antes da 20ª semana de gestação.",
+        "Náuseas e vômitos.",
+        "Útero pequeno para a idade gestacional."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFES aborda as manifestações clínicas da doença trofoblástica gestacional (DTG), tema fundamental em ginecologia com características distintivas importantes para o diagnóstico.</p><p><strong>A resposta correta é D - Útero pequeno para a idade gestacional.</strong> Esta alternativa está INCORRETA e representa o gabarito da questão.</p><p>A DTG apresenta características clínicas específicas devido aos níveis extremamente elevados de hCG. Vamos analisar cada alternativa:</p><p><strong>Alternativa A - CORRETA:</strong> Cistos teca-luteínicos são comuns devido à hiperestimulação ovariana pelo hCG elevado. Esses cistos podem atingir tamanhos significativos e são um dos sinais clínicos característicos da DTG.</p><p><strong>Alternativa B - CORRETA:</strong> Pré-eclâmpsia antes da 20ª semana é uma manifestação precoce e característica da DTG, sendo incomum em gestações normais nesse período. Também pode ocorrer hipertireoidismo pelo efeito tireotrófico do hCG em altas concentrações.</p><p><strong>Alternativa C - CORRETA:</strong> Náuseas e vômitos intensos (hiperêmese) são manifestações endócrinas do hCG elevado, mais intensas que na gestação normal. O efeito tireotrófico também pode contribuir para esses sintomas.</p><p><strong>Alternativa D - INCORRETA (gabarito):</strong> Na DTG, o útero normalmente apresenta VOLUME AUMENTADO para a idade gestacional, não diminuído. Esta é uma das características distintivas: útero maior que o esperado para a idade gestacional, muitas vezes com sensação de peso ou cólicas.</p><p><strong>Quadro clássico da DTG:</strong> Útero aumentado + hCG muito elevado + hiperêmese + pré-eclâmpsia precoce + cistos teca-luteínicos = triad característica que facilita o diagnóstico.</p><p><strong>Conceito-chave:</strong> A DTG causa hiperestimulação ovariana e placentária, resultando em útero aumentado, não pequeno.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_DoencaTrofoblasticaGestacional"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Na gravidez o organismo feminino sofre diversas modificações fisiológicas para adaptação. São consideradas manifestações fisiológicas da gravidez:",
+      "alternativas": [
+        "Redução da frequência cardíaca a partir da quarta semana de gestação.",
+        "Ocorrência de hipovolemia induzida pela gestação no sentido de suprir as necessidadesfetais e evitar perdas durante o parto.",
+        "Discreto aumento, de 5 a 10 mmHg, na pressão sanguínea arterial sistólica, por volta da20 semana com concomitante elevação do débito cardíaco.",
+        "Ocorrência de aumento do número de hemácias, leve aumento do número de leucócitose leve redução do número de plaquetas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFES avalia seu conhecimento sobre as adaptações cardiovasculares e hematológicas fisiológicas da gestação. Vamos entender cada alternativa e por que a resposta correta é a letra D.</p><p><strong>Resposta correta: D - Ocorrência de aumento do número de hemácias, leve aumento do número de leucócitos e leve redução do número de plaquetas.</strong></p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A (ERRADA):</strong> A frequência cardíaca <em>aumenta</em> no primeiro trimestre entre 10 a 30 bpm, mantendo-se até o final da gestação. O que reduz é a pressão arterial, não a frequência.</p><p><strong>Alternativa B (ERRADA):</strong> Ocorre exatamente o oposto: <em>hipervolemia</em> de aproximadamente 50% para suprir as necessidades fetais e ter reservas para o parto. A volemia aumenta, não diminui.</p><p><strong>Alternativa C (ERRADA):</strong> A pressão arterial <em>cai</em> no início da gestação devido à vasodilatação e à circulação útero-placentária de baixa resistência. Não há aumento da pressão sistólica.</p><p><strong>Alternativa D (CORRETA):</strong> As mudanças hematológicas incluem aumento das hemácias (embora proporcionalmente menor que o plasma, causando anemia dilucional), aumento dos leucócitos a partir do 2º mês e redução das plaquetas (trombocitopenia fisiológica da gestação).</p><p>💡 <strong>Dica importante:</strong> Em provas sobre gestação, sempre lembre: <em>Mais volume, menos pressão, mais células, menos plaquetas!</em></p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ModificacoesFisiologicasDaGest"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "O atendimento após a ocorrência de violência sexual é uma urgência, para a qual se deve garantir acesso e acolhimento reconhecendo as especificidades das populações prioritárias. Com relação ao atendimento às vitimas de violência sexual, marque a resposta correta:",
+      "alternativas": [
+        "A profilaxia pós exposição (PEP) não deve ser administrada em gestantes.",
+        "A PEP para o HIV consiste no uso de antirretroviral por um período de 7 dias e deve-seiniciar no máximo até 72 h após a exposição.",
+        "Os adolescentes somente têm direito a PEP na presença de um dos pais ou responsáveislegais.",
+        "Mulheres lactantes vítimas de violência sexual devem ser orientadas a interrupçãotemporária da amamentação, reintroduzir a amamentação na 12ª semana após o inicio da PEP se o seu resultado do anti-HIV for não reagente."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFES aborda um tema de extrema importância: o atendimento às vítimas de violência sexual, especificamente a profilaxia pós-exposição (PEP) em situações especiais. O foco está nas recomendações para lactantes.</p><p><strong>Resposta correta: D - Mulheres lactantes vítimas de violência sexual devem ser orientadas à interrupção temporária da amamentação, reintroduzir a amamentação na 12ª semana após o início da PEP se o seu resultado do anti-HIV for não reagente.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (ERRADA):</strong> Gestantes podem e devem receber PEP. O uso de antirretrovirais em gestantes é seguro e essencial para prevenir a transmissão vertical.</p><p><strong>Alternativa B (ERRADA):</strong> A PEP para HIV consiste em uso de antirretrovirais por <strong>4 semanas</strong>, não 7 dias, e deve ser iniciada em até 72 horas após a exposição.</p><p><strong>Alternativa C (ERRADA):</strong> Adolescentes têm direito à PEP mesmo na ausência de responsável legal, conforme a legislação brasileira de proteção integral.</p><p><strong>Alternativa D (CORRETA):</strong> Lactantes devem suspender a amamentação devido ao risco de transmissão do vírus pelo leite materno. A amamentação pode ser reintroduzida após 12 semanas se a sorologia for negativa.</p><p>⚠️ <strong>Alerta:</strong> Este é um tema clássico de prova! Sempre lembre: <em>PEP em lactante = suspende amamentação por 12 semanas</em>.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_AtendimentoAVitimaDeViolenciaS",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Faz parte da propedêutica da rotina pré-natal de risco habitual, exceto:",
+      "alternativas": [
+        "Teste rápido para sífilis ou VDRL.",
+        "Eletroforese de proteínas.",
+        "Teste de tolerância a glicose.",
+        "Eletroforese de hemoglobinas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES testa seu conhecimento sobre os exames obrigatórios no pré-natal de risco habitual. É um tema recorrente em provas de obstetricia e que exige memorização dos protocolos do Ministério da Saúde.</p><p><strong>Resposta correta: B - Eletroforese de proteínas.</strong></p><p>Vamos revisar o que <strong>É obrigatório</strong> no pré-natal de risco habitual:</p><p><strong>Exames da primeira consulta:</strong></p><p>• Hemograma completo<br>• Glicemia de jejum<br>• Urina 1 e urocultura<br>• Tipagem sanguínea e fator Rh<br>• Coombs indireto (se Rh negativo)<br>• Sorologias: sífilis, HIV, hepatite B e C, toxoplasmose<br>• Eletroforese de hemoglobina (para rastreamento de anemia falciforme)<br>• Parasitológico de fezes<br>• Colpocitologia oncótica</p><p><strong>Teste de tolerância a glicose:</strong> Realizado entre 24-28 semanas no segundo trimestre.</p><p><strong>Por que a eletroforese de proteínas NÃO é rotina?</strong> Este exame não está padronizado como exame de rotina no pré-natal de baixo risco. É solicitado apenas em situações específicas (sínromes nefróticas, proteinúria persistente, etc.).</p><p>🎯 <strong>Mnemônico para lembrar:</strong> <em>Hematos+Glucose+Urina+Tipos+Soros+Hemo+Fezes+Papa</em> (Hemograma, Glicemia, Urina 1, Tipagem, Sorologias, Hemoglobina, Fezes, Papanicolau)</p><p>💡 <strong>Dica:</strong> Eletroforese de <strong>hemoglobina</strong> sim, mas de proteínas não!</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Prenatal"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Nos dias atuais a osteoporose é considerada um problema importante de saúde pública. Entre os fatores maiores de risco para osteoporose não se encontra:",
+      "alternativas": [
+        "Historia pessoal de fratura na vida adulta.",
+        "História atual de tabagismo.",
+        "Uso de glicocorticoide.",
+        "Obesidade."
+      ],
+      "correta": 3,
+      "professor_comment": "São fatores de risco não modificáveis: idade avançada (> 60 anos), sexo feminino, história familiar de osteoporose fratura, etnia (caucasiano e asiáticos), menopausa.\nSão fatores de risco modificáveis: alcoolismo e tabagismo, IMC < 19, deficiência de vitamina D, sedentarismo e baixa ingesta de cálcio na dieta.\nDiversas condições também são associadas a osteoporose, sendo as principais: uso de glicocorticoides. menopausa (hipoestrogenismo), artrite reumatoide, diabetes mellitus, hiperparatiroidismo, síndrome de cushing, hipertiroidismo. \nLogo resposta da questão: Letra D, Obesidade",
+      "filterIds": [
+        "ClinicaMedica",
+        "Reumatologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Reumatologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "São considerados contraindicações absolutas para anticoncepcionais orais combinados (critério de elegibilidade 4 da OMS), exceto:",
+      "alternativas": [
+        "Trombofilia conhecida.",
+        "Lúpus eritematoso sistêmico com anticorpo antifosfolipide positivo.",
+        "História familiar de trombose venosa profunda.",
+        "Enxaqueca com aura."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFES aborda os critérios de elegibilidade da OMS para anticoncepcionais orais combinados. O foco está nas contraindicações absolutas (critério 4) do estrogênio.</p><p><strong>Resposta correta: C - História familiar de trombose venosa profunda.</strong></p><p>Vamos entender por que as outras alternativas SÃO contraindicações absolutas:</p><p><strong>Contraindicações absolutas (criterio 4 OMS):</strong></p><p>• <strong>Trombofilia conhecida (A):</strong> Aumenta significativamente o risco de tromboembolismo venoso com uso de estrogênio.</p><p>• <strong>Lúpus com anticorpo antifosfolipide positivo (B):</strong> Combinação extremamente perigosa, com alto risco de trombose arterial e venosa.</p><p>• <strong>Enxaqueca com aura (D):</strong> O estrogênio pode precipitar AVC em pacientes com enxaqueca com aura devido ao risco trombótico.</p><p>• <strong>C - História FAMILIAR (NÃO é contraindicação):</strong> Apenas história pessoal de trombose é contraindicação. História familiar sem trombofilia conhecida não impede o uso.</p><p>🔑 <strong>Regra de ouro:</strong> <em>Só história PESSOAL de trombose contraindica - família sozinha não!</em></p><p>📋 <strong>Principais contraindicações absolutas:</strong> Trombose pessoal, enxaqueca com aura, cardiopatia isquêmica, AVC, doença hepática ativa, câncer de mama atual, hipertensão não controlada (>160/100), tabagismo >35 anos.</p><p>⚠️ <strong>Alerta de prova:</strong> Esta é uma das pegadinhas mais comuns sobre anticoncepcionais. Sempre diferencie história pessoal vs. familiar!</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_MetodosHormonaisCombinados",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Neonato, sexo feminino, de 10 dias de vida comparece à primeira consulta de puericultura em aleitamento materno exclusivo. Mãe refere como queixa que as fezes são \"quase brancas\". História gestacional sem alterações. Nascimento sem intercorrências, 39 semanas, antropometria normal para idade gestacional. Mãe A+, filho A+. Ao exame clínico apresenta excelente estado geral, ganho de peso satisfatório, icterícia leve em pele e mucosas, abdome globoso, com fígado a 3 cm do rebordo costal direito, liso, borda fina. Durante a palpação abdominal, a neonata evacuou e ficou confirmado que as fezes são hipocólicas. Com base nestas informações, marque a alternativa correta:",
+      "alternativas": [
+        "Importante fazer o teste de retirada do leite materno por 72 h para exclusão da icteríciado leite materno e retorno à pigmentação das fezes.",
+        "Retirar o leite de vaca da mãe pois pode ser uma das raras manifestações de alergiaalimentar à proteína do leite de vaca com repercussão hepática e intestinal.",
+        "Avaliar a possibilidade de doença hepática obstrutiva tais como atresia de vias biliaresextra-hepáticas (AVBEH) ou cisto de colédoco, já que a correção cirúrgica imediata é imprescindível.",
+        "Avaliar o diagnóstico precoce de hepatite neonatal idiopática que cursa comhiperbilirrubinemia intensa, com aumento importante da bilirrubina indireta."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFES aborda um dos temas mais críticos da neonatologia: <strong>colestase neonatal</strong>. Vamos analisar os sinais de alerta presentes neste caso.</p><p><strong>Os achados clínicos são bastante sugestivos:</strong> fezes hipocólicas (quase brancas), icterícia, hepatomegalia e idade de 10 dias. Esta tríade clássica de <em>icterícia + fezes claras + hepatomegalia</em> em neonato é um <strong>red flag absoluto</strong> que nos faz pensar em obstrução das vias biliares.</p><p>Vamos avaliar cada alternativa:</p><p><strong>Alternativa A está INCORRETA:</strong> A icterícia do leite materno pode causar hiperbilirrubinemia, mas <em>não</em> provoca fezes hipocólicas. O mecanismo é diferente - há competição na conjugação hepática, mas o fluxo biliar permanece adequado.</p><p><strong>Alternativa B está INCORRETA:</strong> A alergia à proteína do leite de vaca pode causar enterocolite, mas raramente cursa com acolia fecal. Além disso, o aleitamento materno exclusivo no caso sugere que a mãe não está consumindo leite de vaca em quantidades significativas.</p><p><strong>Alternativa C está CORRETA:</strong> <strong>Atresia de vias biliares extra-hepáticas (AVBEH)</strong> e cisto de colédoco são as principais causas de colestase em lactente. O <em>procedimento de Kasai (portoenterostomia)</em> deve ser realizado preferencialmente até os 60 dias de vida para melhores resultados. Após essa janela, as chances de sucesso diminuem significativamente.</p><p><strong>Alternativa D está INCORRETA:</strong> Hepatite neonatal idiopática pode causar hiperbilirrubinemia, mas <em>não</em> é a principal preocupação aqui. A diferença crucial é que na atresia biliar há <strong>obstrução mecânica</strong> que requer intervenção cirúrgica urgente.</p><p><strong>Ponto-chave para provas:</strong> A tríade icterícia + fezes claras + hepatomegalia em neonato = investigação imediata para atresia biliar. Cada dia de atraso no diagnóstico piora o prognóstico.</p><p><em>Resposta: C</em></p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_IctericiaNenonatalEDisturbiosH",
+        "Cirurgia_CirurgiaInfantil"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Sabemos que a orientação dos pais e dos pacientes sobre o tema segurança deve ser enfatizada na consulta pediátrica. Diante do exposto, avalie as alternativas abaixo e marque a incorreta.",
+      "alternativas": [
+        "As crianças devem viajar no banco de trás do automóvel até a idade de 10 anos. A partir dai podem viajar no banco da frente com utilização correta do cinto de segurança independente da sua altura.",
+        "Metade das mortes acidentais ocorrida em menores de 15 anos acontecem em casa, e oslocais de maior risco são escadas, banheiro e cozinha.",
+        "Asfixia, afogamento e queda são as maiores causas externas de morbiletalidade em ambiente doméstico em crianças até a idade escolar.",
+        "O pediatra tem que conscientizar bem todo adolescente, assim como seus pais, acercado fato alarmante de que 2/3 das mortes nessa idade se devem as violências e ao trânsito, com grande participação do álcool."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFES avalia seu conhecimento sobre <strong>prevenção de acidentes pediátricos</strong>, um tema recorrente em provas de residência. Vamos analisar cada alternativa com cuidado.</p><p><strong>Alternativa A - A PRIMEIRA ARMADILHA:</strong></p><p>A alternativa afirma que \"<em>podem viajar no banco da frente com utilização correta do cinto de segurança independente da sua altura</em>\". <strong>Isso está INCORRETO!</strong> A regra atual é clara: <em>crianças devem usar o banco traseiro até 10 anos OU 1,45m de altura</em>, o que ocorrer primeiro. O cinto de segurança comum não é adequado para crianças menores, pois pode causar lesões em órgãos internos.</p><p>É necessária a utilização de <strong>dispositivos de retenção adequados</strong> (bebê-conforto, cadeirinha, Booster) dependendo do peso e altura da criança.</p><p><strong>Alternativa B - CORRETA:</strong> Dados epidemiológicos confirmam que aproximadamente <em>metade das mortes acidentais em menores de 15 anos</em> ocorre em casa. Os locais de maior risco são escadas (quedas), cozinha (queimaduras) e banheiro (afogamentos).</p><p><strong>Alternativa C - CORRETA:</strong> As três principais causas de morbimortalidade doméstica são: <strong>asfixia (principal causa até 1 ano), afogamento (principal de 1-4 anos) e quedas (maior causa de internações)</strong>. Estes dados são baseados em estatísticas nacionais do Ministério da Saúde.</p><p><strong>Alternativa D - CORRETA:</strong> A ingestão precoce de álcool é a <em>principal causa de morte de jovens de 15-24 anos</em>. Estudo do MS 2024 mostra que 2/3 das mortes nesta faixa etária envolvem álcool, principalmente relacionados a acidentes de trânsito e violência.</p><p><strong>Dica para a prova:</strong> Sempre desconfie de alternativas que super simplificam regras de segurança ou que parecem \"boas demais para ser verdade\". A legislação sobre transporte de crianças é bem específica e baseada em evidências.</p><p><em>Resposta: A (a incorreta)</em></p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_SegurancaDasCrianc"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Adolescente, sexo masculino, 12 anos, comparece a consulta solicitando atestado para prática de natação. Assintomático, sem história familiar de risco para doença cardiovascular. Exame físico: dados vitais e exame segmentar normais. Traz eletrocardiograma realizado há um ano para avaliação pré operatória de cirurgia ortopédica com laudo de arritmia sinusal. A conduta indicada neste caso é:",
+      "alternativas": [
+        "Liberar para prática de natação.",
+        "Indicar Tilt teste.",
+        "Realizar ecocardiograma.",
+        "Solicitar novo eletrocardiograma."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFES avalia seu conhecimento sobre <strong>eletrocardiograma na pediatria</strong> e quando se preocupar com alterações benignas. Vamos direto ao ponto prático.</p><p>O adolescente está <strong>assintomático</strong>, com <strong>história familiar negativa</strong> e <strong>exame físico normal</strong>. O achado no ECG de \"arritmia sinusal\" é completamente <em>normal e esperado</em> em crianças e adolescentes.</p><p><strong>O que é arritmia sinusal?</strong></p><p>É uma variação normal da frequência cardíaca que acompanha a respiração: <em>acelera na inspiração e desacelera na expiração</em>. É um sinal de <strong>autonomia do sistema nervoso parassimpático funcionando adequadamente</em>!</p><p>Por que o ECG mostra \"arritmia\" sendo normal?</p><p>O termo \"arritmia\" assusta, mas neste contexto significa apenas \"<em>variação rítmica</em>\". Não confundir com arritmias patológicas como extrassístoles ou bloqueios.</p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A - CORRETA:</strong> <strong>Liberação para natação</strong> é a conduta adequada. A arritmia sinusal não contraindica atividade física.</p><p><strong>Alternativa B - INCORRETA:</strong> Tilt teste é para síncope. Não há indicação aqui.</p><p><strong>Alternativa C - INCORRETA:</strong> Ecocardiograma só se há suspeita clínica ou ECG com alterações específicas. Não é caso.</p><p><strong>Alternativa D - INCORRETA:</strong> Repetir ECG é desnecessário. O achado é benigno e transitório.</p><p><strong>Mensagem prática:</strong> Como pediatra, você deve tranquilizar a família. A arritmia sinusal é como um \"sinal de vida\" - mostra que o sistema cardiovascular está funcionando normalmente!</p><p><em>Resposta: A</em></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Pré-escolar, três anos e nove meses, sexo feminino, vem apresentando dores ósseas difusas iniciadas há 3 meses, que não melhoram com o uso de analgésicos comuns, associadas a febre baixa intermitente, cefaleia, vômitos frequentes, anorexia, perda ponderal de quatro quilos e irritação com prejuízo do sono. A partir do resultado do hemograma, foi diagnosticada \"anemia discreta\" tendo sido prescrito sulfato ferroso por seis meses. Há um mês, a mãe notou palidez que vem se acentuando. Exame físico: irritabilidade, fácies de sofrimento, dificuldade para deambular pela dor, hipocorada +/4+, adenomegalias cervicais, axilares e inguinais móveis, fibroelásticas, não coalescentes, medindo de 0,5 a 1 cm de diâmetro, fígado palpável a 5 cm do rebordo costal direito, baço a 4 cm do rebordo costal esquerdo, petéquias em membros inferiores e sopro sistólico +/4+ pancardíaco, sem irradiação. A principal hipótese diagnóstica é:",
+      "alternativas": [
+        "Neuroblastoma.",
+        "Febre Reumática.",
+        "Artrite idiopática Juvenil.",
+        "Leucemia linfoide aguda."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFES apresenta um caso de <strong>leucemia linfoide aguda (LLA)</strong> - a neoplasia mais comum da infância. Vamos analisar sistematicamente os <strong>red flags</strong> presentes.</p><p><strong>SINAIS DE ALERTA MAJOR (todos presentes no caso):</strong></p><p>1. <strong>Dores ósseas que não melhoram com analgésicos comuns</strong> - Este é o <em>principal diferencial</em> para dores crescimento normais</p><p>2. <strong>Febre baixa intermitente + perda de peso</strong> - Sinais B (sintomas sistêmicos)</p><p>3. <strong>Hepatoesplenomegalia + adenomegalias</strong> - Infiltração hematológica</p><p>4. <strong>Anemia sintomática + petéquias</strong> - Citopenias (falha medular)</p><p>5. <strong>Irritabilidade e dificuldade para deambular</strong> - Impacto na qualidade de vida</p><p>Vamos aos diagnósticos diferenciais:</p><p><strong>Alternativa A - Neuroblastoma:</strong> <em>Não é a melhor hipótese</em>. Tumores neuroblásticos originam-se de gânglios simpáticos e geralmente se apresentam como <strong>massa abdominal palpável</strong>. Raramente causam citopenias difusas ou hepatoesplenomegalia significativa.</p><p><strong>Alternativa B - Febre Reumática:</strong> <em>Incompatível com o quadro</em>. A FR segue critérios de Jones e cursa com <strong>artrite migratória, cardite, coreia de Sydenham</strong>. Não explica as citopenias e hepatoesplenomegalia.</p><p><strong>Alternativa C - Artrite Idiopática Juvenil:</strong> <em>Não explica o quadro sistêmico</em>. A AIJ apresenta <strong>artrite crônica (>6 semanas)</strong> como manifestação central, mas não cursa com febre, perda de peso importante ou citopenias.</p><p><strong>Alternativa D - Leucemia Linfoide Aguda:</strong> <strong>PERFEITO MATCH!</strong> LLA explica todos os achados: dores ósseas (infiltração medular), febre (citocinas), hepatoesplenomegalia (infiltração), adenomegalias (hiperplasia), anemia e petéquias (falha medular).</p><p><strong>Fato interessante:</strong> LLA representa 25% de todas as neoplasias infantis. A idade de pico é entre 2-5 anos, exatamente como no caso (3 anos e 9 meses).</p><p><em>Resposta: D</em></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_HematologiaPediatrica",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Leucemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Existe uma ampla variação fisiológica em idade para o início da puberdade que depende do eixo hipotalâmico-hipofisário-gonodal. A situação que deve ser investigada é:",
+      "alternativas": [
+        "Menina que não apresenta telarca aos 14 anos.",
+        "Menino que não apresenta sinais de puberdade aos 12 anos.",
+        "Menina com adrenarca aos oito anos de idade e telarca aos dez anos.",
+        "Menino com aumento do volume testicular para 4 mm aos nove anos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFES testa seu conhecimento sobre <strong>desenvolvimento puberal normal</strong> e quando se preocupar com atrasos. Vamos esclarecer os marcos temporais essenciais.</p><p><strong>CONCEITOS FUNDAMENTAIS:</strong></p><p>• <strong>Telarca:</strong> desenvolvimento das mamas (estágios de Tanner M1-M5)<br>\n• <strong>Adrenarca:</strong> ativação do eixo hipotálamo-hipófise-adrenal → pelos pubianos/axilares, acne, odor<br>\n• <strong>Gonadarca:</strong> ativação do eixo hipotálamo-hipófise-gônadas → crescimento testicular, telarca</p><p><strong>CRONOLOGIA NORMAL (referência WHO 2024):</strong></p><p><strong>Meninas:</strong><br>\n• Início da puberdade: 8-13 anos (média 10,5 anos)<br>\n• Adrenarca: 8-10 anos<br>\n• Telarca (M2): 9-12 anos (média 11 anos)<br>\n• Menarca: 12-15 anos (média 13 anos)</p><p><strong>Meninos:</strong><br>\n• Início da puberdade: 9-14 anos (média 11,5 anos)<br>\n• Crescimento testicular (G2): 9-13 anos (média 11,5 anos)<br>\n• Volume testicular >4mL: 10-14 anos</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - INCORRETA como resposta:</strong> <em>Menina sem telarca aos 14 anos</em>. <strong>DEVE SER INVESTIGADA!</strong> A idade limite para início da puberdade feminina é 13 anos. Ausência de telarca aos 14 anos sugere <strong>hipogonadismo hipergonadotrófico</strong> (disginesia gonadal, síndrome de Turner) ou <strong>hipogonadotrófico</strong> (deficiência de GnRH). <em>Esta é a ALTERNATIVA CORRETA para investigar!</em></p><p><strong>Alternativa B - CORRETA como conduta:</strong> <em>Menino sem sinais aos 12 anos</em> ainda está na faixa normal (até 14 anos). <strong>Não investigar</strong> ainda.</p><p><strong>Alternativa C - CORRETA como conduta:</strong> <em>Adrenarca aos 8 anos + telarca aos 10 anos</em> é cronologia normal. A adrenarca pode preceder a telarca em 1-2 anos.</p><p><strong>Alternativa D - CORRETA como conduta:</strong> <em>Volume testicular >4mL aos 9 anos</em> está na faixa normal (início aos 9 anos).</p><p><strong>Lembrete clínico:</strong> O <strong>conceito chave</strong> é que atrasospubertários em meninas são mais preocupantes que em meninos, pois há menor variação na idade de início. Uma menina >13 anos sem telarca sempre merece investigação.</p><p><em>Resposta: A</em></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EndocrinologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Luana, lactente de 2 meses, e levada a consulta de Pronto Socorro com queixa de episódios de regurgitação várias vezes ao dia, choro frequente, especialmente no fim da tarde, que ocorre em média de 3 a 4 dias por semana. Está em aleitamento materno exclusivo, nasceu de parto normal, sem intercorrências, peso ao nascer 3030g. O peso atual é 4600g, o desenvolvimento neuropsicomotor é adequado e não há anormalidades no exame físico. Sobre o caso, podemos afirmar:",
+      "alternativas": [
+        "Trata-se de Doença de Refluxo Gastroesofágico (DRGE) e deve ser iniciado o tratamento com procinéticos e antagonistas anti H2",
+        "Trata-se de refluxo fisiológico. Orientar que a mãe mantenha a criança em posição elevada por mais tempo após as mamadas.",
+        "Trata-se de refluxo fisiológico e deve ser iniciado fórmula infantil espessada para melhorar os episódios de regurgitação.",
+        "Deve ser solicitado pHmetria e endoscopia digestiva alta para melhor elucidação do quadro."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES 2022 aborda um dilema diagnóstico frequente na pediatria: distinguir entre refluxo gastroesofágico fisiológico e doença do refluxo gastroesofágico (DRGE) em lactentes.</p><p><strong>A resposta correta é B - refluxo fisiológico com orientação para manter a criança em posição elevada após as mamadas.</strong></p><p>O caso da Luana apresenta características clássicas de refluxo fisiológico: ganho ponderal adequado (ganhando mais de 20g/dia, o que é excelente para a idade), desenvolvimento neuropsicomotor normal e exame físico sem alterações. A regurgitação several vezes ao dia, associada ao choro vespertino, é esperada em lactentes saudáveis.</p><p>Para diferenciar refluxo fisiológico de DRGE, debemos avaliar: presença de falhas de crescimento, desconforto significativo que interfere na qualidade de vida, ou complicações como pneumonias aspirativas, esofagite ou estricções. Nenhum desses fatores está presente neste caso.</p><p>As alternativas incorretas representam abordagens excessivas para este cenário:</p><p><strong>A)</strong> DRGE requer critérios mais rigorosos e tratamento medicamentoso tem indicações específicas.</p><p><strong>C)</strong> Fórmulas espessadas podem ser consideradas em DRGE, mas não no refluxo fisiológico.</p><p><strong>D)</strong> pHmetria e endoscopia são exames invasivos reservados para casos complicados de DRGE.</p><p>A conduta adequada é puramente educativa, orientando medidas posturais que melhoram o esvaziamento gástrico e reduzem a frequência dos episódios de regurgitação.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "ClinicaMedica_Gastroenterologia",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_RefluxoGastroesofagicoRge",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Felipe, 8 meses de idade, natural de Lauro de Freitas (BA), mudou-se para Vitoria há 1 mês e foi encaminhado para consulta de puericultura na Unidade Básica de Saúde de Maruípe pela agente comunitária. Durante consulta, ao avaliar o cartão de vacina, observa-se que estão confirmadas as seguintes vacinas; BCG (dose única ao nascimento), hepatite B (dose ao nascimento), pentavalente (1ª e 2ª doses), rotavírus (1ª e 2ª doses) pneumocócica 10 valente (1ª e 2ª doses), meningocócica C (1° dose), VIP: Poliomielite injetável (1ª e 2ª doses). Quais vacinas estão indicadas para Felipe no momento desta consulta, segundo o Programa Nacional de Imunizações atual?",
+      "alternativas": [
+        "Pneumocócica 10-valente, VIP, Meningocócica C, Influenza.",
+        "Meningocócica C e Influenza.",
+        "Pentavalente, VIP e Pneumocócica 10-valente.",
+        "Pentavalente, VIP, Meningocócica C, Influenza."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFES 2022 testa seu conhecimento sobre o calendário vacinal do Programa Nacional de Imunizações (PNI) brasileiro para o primeiro ano de vida.</p><p><strong>A resposta correta é D - Pentavalente, VIP, Meningocócica C e Influenza.</strong></p><p>Analisando o cartão de Felipe (8 meses), identificamos as seguintes vacinas já administradas: BCG, Hepatite B (ao nascimento), Pentavalente (1ª e 2ª doses), Rotavírus (1ª e 2ª doses), Pneumocócica 10-valente (1ª e 2ª doses), Meningocócica C (1ª dose) e VIP (1ª e 2ª doses).</p><p>De acordo com o calendário do PNI 2022, Felipe deveria receber aos 6 meses:</p><p>• <strong>Pentavalente</strong> (3ª dose) - protege contra difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae tipo b</p><p>• <strong>VIP</strong> (3ª dose) - terceira dose da vacina inativada contra poliomielite</p><p>• <strong>Meningocócica C</strong> (2ª dose) - segunda dose do esquema primário</p><p>• <strong>Influenza</strong> - primeira dose da campanha anual (importantíssima para prevenir síndromes gripais em pediatria)</p><p>As alternativas A, B e C estão incorretas por omitir as vacinas essenciais que Felipe deve receber. O fato de ele ter mudado de cidade e estar em acompanhamento de puericultura na UBS de Maruípe reforça a importância de atualizar o calendário vacinal.</p><p><strong>Dica de estudo:</strong> Para provas de pediatria, memorize que aos 6 meses sempre temos 4 vacinas: Penta, VIP, Men C e Influenza. É um dos pontos mais cobrados!</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "MedicinaPreventiva_EticaMedica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Paciente de três anos foi internado devido a tosse e febre alta, 3 a 4 vezes ao dia, de evolução há 5 dias, com condensação localizada em contorno cardíaco direito no RX de tórax. A hipótese diagnóstica na internação foi de pneumonia comunitária sendo prescrito penicilina cristalina. Com 24 horas de internação, a febre diminuiu de intensidade, houve melhora discreta do quadro geral de acordo com observação da mãe, e o Raio X que foi repetido, evidenciou um aumento da condensação pulmonar em relação ao Raio X de internação. Qual a melhor conduta?",
+      "alternativas": [
+        "Trocar o antibiótico para ceftriaxona.",
+        "Manter a penicilina.",
+        "Trocar para amoxicilina com clavulanato.",
+        "Associar garamicina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES 2022 avalia seu conhecimento sobre condutas em pneumonia comunitária pediátrica, especificamente sobre quando trocar o antibiótico em casos de aparente falha terapêutica.</p><p><strong>A resposta correta é B - Manter a penicilina.</strong></p><p>O princípio fundamental aqui é: <strong>\"A clínica é soberana\"</strong>. Após apenas 24 horas de antibiótico, não devemos avaliar resposta terapêutica por exames complementares como radiografia de tórax.</p><p>O paciente de 3 anos apresenta:</p><p>• <strong>Melhora clínica:</strong> Febre diminuiu de intensidade e houve melhora discreta do estado geral</p><p>• <strong>Alteração radiológica:</strong> Aumento da condensação pulmonar (que pode ser normal na evolução da pneumonia)</p><p>A penicilina cristalina é a medicação de escolha para pneumonia comunitária grave em crianças internadas. O tempo mínimo para avaliação de resposta antibiótica é de 48-72 horas.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Trocar para ceftriaxona:</strong> Prematuro, deve-se esperar 48-72h antes de considerar falha terapêutica.</p><p><strong>C) Amoxicilina com clavulanato:</strong> Usada em falhas do tratamento domiciliar com amoxicilina isolada, ou para agentes producers de betalactamase.</p><p><strong>D) Associar garamicina:</strong> Aminoglicosídeos são usados em casos específicos como suspeita de infecção estafilocócica neonatal, não em pneumonia comunitária pediátrica.</p><p><strong>Regra de ouro:</strong> Em pneumonia infantil, avalie resposta clínica antes de radiológica. Se não há piora clínica em 48-72h, mantenha o tratamento!</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "ClinicaMedica_Pneumologia",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_TratamentoGeral",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Escolar, oito anos, é levado à Unidade Básica de Saúde apresentando há uma semana prurido anal diário na madrugada, que o faz perder o sono. Seu irmão mais novo teve o mesmo sintoma, melhorando após uso de medicação. Exame físico sem alterações. Os medicamentos que podem ser utilizados no tratamento dessa doença são:",
+      "alternativas": [
+        "Levarizol e ivermectina.",
+        "Tiabendazol e mebendazol.",
+        "Pamoato de pirantel e secnidazol.",
+        "Albendazol e pamoato de pirvínio."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFES 2022 apresenta um quadro clínico clássico de oxiuríase (enterobíase), uma das parasitoses intestinais mais comuns em idade escolar.</p><p><strong>A resposta correta é D - Albendazol e pamoato de pirvínio.</strong></p><p>O diagnóstico clínico é quase inconfundível: prurido anal intenso, especialmente noturno, que interrompe o sono. O fato de o irmão mais novo ter apresentado quadro similar com melhora após medicação confirma a suspeita de enterobíase.</p><p>A <em>Enterobius vermicularis</em> (oxiúros) tem comportamento circadiano característico: as fêmeas migram para a região perianal principalmente à noite para desovar, causando o prurido intenso que é patognomônico.</p><p><strong>Opções terapêuticas corretas para oxiuríase:</strong></p><p>• <strong>Albendazol:</strong> 400mg dose única, repetir em 14-21 dias</p><p>• <strong>Pamoato de pirvínio:</strong> 5-10 mg/kg dose única, repetir em 14-21 dias</p><p>• Mebendazol e Nitazoxanida também são eficazes</p><p><strong>Por que as alternativas A, B e C estão incorretas:</strong></p><p><strong>A) Levarizol + ivermectina:</strong> Leivarizol é anti-helmíntico, mas não é primeira escolha para oxiuríase. Ivermectina é para outras parasitoses.</p><p><strong>B) Tiabendazol + mebendazol:</strong> Tiabendazol tem efeitos colaterais importantes e não é mais usado rotineiramente. Mebendazol está correto, mas associado ao errado.</p><p><strong>C) Pamoato de pirantel + secnidazol:</strong> Pamoato de pirantel é para outras parasitoses, não oxiuríase. Secnidazol é para amebíase e giardíase.</p><p><strong>Importante:</strong> O tratamento deve ser feito em toda a família para evitar reinfecção cruzada!</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "ClinicaMedica_Infectologia",
+        "Pediatria_GastrologiaPediatrica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "A mãe de um lactente de quatro meses em aleitamento materno exclusivo procura orientação porque vai trabalhar em 15 dias. A orientação adequada é que a mãe retire seu leite e armazene em frascos de vidro com tampa plástica:",
+      "alternativas": [
+        "Na geladeira por até 02 horas ou congelador/freezer por até 12 horas, oferecer preferencialmente no copinho.",
+        "Na geladeira por até 12 horas ou congelador/freezer por até duas semanas, oferecer preferencialmente por copinho.",
+        "Na geladeira por até 12 horas ou congelador/freezer por até duas semanas, oferecer preferencialmente por mamadeira.",
+        "Na geladeira por até 24 horas ou congelador/freezer por até quatro semanas, oferecer preferencialmente por mamadeira."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFES 2022 aborda a adequada orientação sobre armazenamento de leite materno, tema essencial para mães que retornam ao trabalho mas desejam manter o aleitamento materno exclusivo.</p><p><strong>A resposta correta é B - Na geladeira por até 12 horas ou congelador/freezer por até duas semanas, oferecer preferencialmente por copinho.</strong></p><p>A regra <strong>\"DDD da amamentação\"</strong> é fundamental para provas:</p><p>• <strong>D</strong>eixar o leite em <strong>D</strong>uas horas (temperatura ambiente)</p><p>• <strong>D</strong>esde <strong>D</strong>oze horas (geladeira)</p><p>• <strong>D</strong>urante <strong>D</strong>uas semanas (freezer/congelador)</p><p><strong>Aspectos técnicos importantes:</strong></p><p>• O frasco de vidro deve ser previamente fervido por 15 minutos</p><p>• Tampa deve ser de plástico (nunca de metal)</p><p>• O descongelamento deve ser preferencialmente em banho-maria</p><p>• A oferta preferencial é por copinho, não mamadeira (evita confusão bico)<br>      </p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) 2h na geladeira e 12h no congelador:</strong> Tempos incorretos (muito pouco para geladeira, muito pouco para congelador).</p><p><strong>C) Geladeira 12h + congelador 2 semanas, oferecer por mamadeira:</strong> O primeiro tempo está correto, mas a oferta por mamadeira não é preferencial (risco de confusão bico).</p><p><strong>D) 24h na geladeira e 4 semanas no congelador:</strong> Tempos incorretos (muito tempo para geladeira, muito tempo para congelador).</p><p><strong>Dica prática:</strong> Para финальная prova, memorize: 2h / 12h / 2 semanas / copinho!</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AmamentacaoAleitamentoMaterno",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "No dia 01/09/2021, o Brasil apresentava aproximadamente 20.800.000 de casos confirmados e 580.000 óbitos por COVID-19. Considerando uma população total de 210 milhões de pessoas, qual era a taxa de letalidade aproximada pela doença à época?",
+      "alternativas": [
+        "0.20%",
+        "2.80%",
+        "9.90%",
+        "35.80%"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um conceito fundamental de epidemiologia que frequentemente aparece em provas de residência: a <strong>diferença entre letalidade e mortalidade</strong>. Muitos candidatos confundem esses indicadores, mas a distinção é simples quando entendemos a base de cálculo de cada um.</p><p><strong>Letalidade</strong> mede a gravidade de uma doença entre aqueles que a contraíram. É calculada dividindo-se o número de óbitos pela doença pelo número total de casos confirmados da mesma doença, multiplicado por 100 para obter a porcentagem. Já a <strong>mortalidade</strong> (que não foi perguntada aqui) relaciona óbitos com a população total.</p><p>Aplicando os dados fornecidos:</p><p>Letalidade = (580.000 óbitos ÷ 20.800.000 casos confirmados) × 100<br>Letalidade = 0,0278 × 100<br>Letalidade = 2,78% (aproximadamente 2,80%)</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa A (0,20%):</strong> Este valor seria obtido se você dividisse os óbitos pela população total (580.000 ÷ 210.000.000), o que caracterizaria uma taxa de mortalidade, não letalidade. Este é um erro conceitual comum que a questão explora deliberadamente.</p><p><strong>Alternativa C (9,90%):</strong> Valor inconsistente com os dados apresentados. Pode representar um erro de cálculo ou confusão na ordem de grandeza dos números.</p><p><strong>Alternativa D (35,80%):</strong> Valor completamente fora da realidade epidemiológica da COVID-19. Uma letalidade dessa magnitude seria observada em doenças extremamente graves sem tratamento adequado.</p><p><strong>Resposta correta: Alternativa B (2,80%)</strong></p><p><strong>Dica importante:</strong> Sempre identifique qual é o denominador correto. Para letalidade, use casos confirmados; para mortalidade, use população total. Esta distinção é crucial para não cair em pegadinhas clássicas de epidemiologia.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeSaudeColetiva",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Considere o estudo resumido abaixo: O objetivo deste estudo é identificar os fatores associados ao diagnóstico de Linfoma não Hodgkin de células B (LNH) ou linfoma de Hodgkin em pacientes com artrite reumatoide (AR). Trata-se de um estudo multicêntrico realizado na França. Foram selecionados 54 pacientes que tiveram LNH de células B ou Linfoma de Hodgkin após o diagnóstico de AR. Foram incluídos também 108 pacientes com AR acompanhados por 10 anos nos serviços de saúde inseridos no estudo. Os dois grupos de pacientes foram pareados por idade e suas características foram comparadas para identificar parâmetros associados à ocorrência de linfoma. Na análise univariada, os fatores associados à ocorrência de linfoma foram sexo masculino (OR 3,3; IC 95% 1,7 a 6,7), anticorpos anti-proteínas citrulinadas positivo (OR 5,1; IC 95% 2,0 a 15,7), fator reumatoide positivo (OR 3,9; IC 95% 1,6 a 12,2), presença de erosões nas radiografias (OR 3,8; IC 95% 1,7 a 8,3) e nível de atividade da AR (OR 2,0, IC 95% 1,5 a 2,7). Na análise multivariável, a presença de erosões e o nível de atividade da AR permaneceram significativamente associados a um risco maior de surgimento de linfoma (adaptado de RMD Open 2021,7 e001698). Qual é o delineamento metodológico deste estudo?",
+      "alternativas": [
+        "Ensaio clinico.",
+        "Corte transversal.",
+        "Caso-controle.",
+        "Coorte."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Questão clássica de metodologia científica que avalia sua capacidade de identificar o tipo de estudo epidemiológico com base em suas características. O segredo está em reconhecer a <strong>direção temporal do estudo</strong> e o <strong>critério de seleção dos participantes</strong>.</p><p>Analisando as características do estudo apresentado:</p><p>1. Foram selecionados 54 pacientes que JÁ desenvolveram linfoma (grupo com o desfecho)<br>2. Foram selecionados 108 pacientes que NÃO desenvolveram linfoma (grupo controle)<br>3. Ambos os grupos tinham artrite reumatoide<br>4. Houve pareamento por idade<br>5. Buscou-se identificar fatores que se associaram ao desenvolvimento do linfoma (olhando para trás)</p><p>Estas características definem claramente um <strong>estudo caso-controle</strong>: partiu-se do desfecho (presença ou ausência de linfoma) para investigar retrospectivamente os fatores de exposição.</p><p><strong>Por que cada alternativa está incorreta ou correta:</strong></p><p><strong>Alternativa A (Ensaio clínico) - INCORRETA:</strong> Ensaios clínicos são estudos experimentais onde há uma intervenção ativa do pesquisador, com randomização dos participantes em grupos que receberão diferentes tratamentos. Neste estudo não houve qualquer intervenção - trata-se de um estudo puramente observacional. Os pesquisadores apenas analisaram dados já existentes.</p><p><strong>Alternativa B (Corte transversal) - INCORRETA:</strong> Estudos transversais capturam exposição e desfecho simultaneamente, em um único momento no tempo, como uma &quot;fotografia&quot;. Não há seguimento temporal nem pareamento por idade. Aqui, claramente há uma análise longitudinal retrospectiva, buscando exposições que antecederam o desfecho.</p><p><strong>Alternativa C (Caso-controle) - CORRETA:</strong> O estudo partiu da seleção de casos (pacientes com linfoma) e controles (pacientes sem linfoma), ambos com AR, e investigou retrospectivamente quais fatores estavam associados ao desenvolvimento da doença. O pareamento por idade reforça o desenho caso-controle. A medida de associação utilizada (Odds Ratio) também é típica deste tipo de estudo.</p><p><strong>Alternativa D (Coorte) - INCORRETA:</strong> Estudos de coorte partem da exposição para observar prospectivamente o desenvolvimento do desfecho. Selecionam-se indivíduos expostos e não expostos a um fator de risco e acompanha-se ao longo do tempo para ver quem desenvolve a doença. No estudo descrito, a seleção foi pelo desfecho (linfoma sim/não), não pela exposição, caracterizando a direção inversa típica do caso-controle.</p><p><strong>Dica prática:</strong> Pergunte-se sempre: &quot;Como os participantes foram selecionados?&quot; Se pela doença (desfecho) → caso-controle. Se pela exposição → coorte. Se por amostragem populacional sem critério específico → transversal. Se com intervenção do pesquisador → ensaio clínico.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Hematologia",
+        "Ginecologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_DermatologiaReumatologica"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Considere a seguinte afirmação: \"Mulheres com achado de disúria polaciúria, sem corrimento ou irritação vaginal, tem uma probabilidade de 90% de ter um quadro de infecção urinária\". Dentre as alternativas abaixo, qual conceito epidemiológico melhor se aplica à afirmação é:",
+      "alternativas": [
+        "Sensibilidade.",
+        "Valor preditivo positivo.",
+        "Especificidade.",
+        "Odds Ratio."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu domínio sobre os conceitos de validade de testes diagnósticos, especificamente a diferença entre <strong>parâmetros intrínsecos ao teste</strong> (sensibilidade e especificidade) e <strong>parâmetros dependentes da prevalência</strong> (valores preditivos).</p><p>A afirmação apresentada diz: &quot;Mulheres com disúria e polaciúria, sem corrimento ou irritação vaginal, têm 90% de probabilidade de ter ITU&quot;. Vamos traduzir: <strong>dado que o teste (sintomas) é positivo, qual a chance de a doença estar presente?</strong> Isso é exatamente a definição de Valor Preditivo Positivo.</p><p><strong>Conceitos fundamentais para resolver a questão:</strong></p><p><strong>Valor Preditivo Positivo (VPP):</strong> Responde à pergunta que o médico faz no dia a dia: &quot;Se meu paciente tem o teste positivo, qual a probabilidade de ele realmente ter a doença?&quot; É calculado como: verdadeiros positivos ÷ (verdadeiros positivos + falsos positivos). <strong>Depende da prevalência</strong>: quanto maior a prevalência da doença na população estudada, maior o VPP. No caso da questão, a alta prevalência de ITU em mulheres com esse perfil sintomático (disúria + polaciúria sem sinais de vaginite) faz com que o VPP desses sintomas seja elevado (90%).</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>Alternativa A (Sensibilidade) - INCORRETA:</strong> Sensibilidade responde: &quot;Entre todos os doentes, quantos o teste consegue identificar?&quot; É uma característica intrínseca do teste, independente da prevalência. Se a questão dissesse &quot;90% das mulheres com ITU apresentam disúria e polaciúria&quot;, aí sim seria sensibilidade. Mas não é isso que está sendo afirmado. A direção do raciocínio é inversa: partimos do sintoma (teste positivo) para a doença, não da doença para o sintoma.</p><p><strong>Alternativa C (Especificidade) - INCORRETA:</strong> Especificidade responde: &quot;Entre todos os não-doentes, quantos o teste consegue identificar como negativos?&quot; Também é uma característica intrínseca do teste. Se a questão afirmasse &quot;90% das mulheres sem ITU não apresentam disúria e polaciúria&quot;, seria especificidade. Novamente, não é o caso aqui.</p><p><strong>Alternativa D (Odds Ratio) - INCORRETA:</strong> Odds Ratio é uma medida de associação entre exposição e desfecho, comumente usada em estudos caso-controle. Representa quantas vezes a chance de ter a doença é maior entre expostos comparado aos não expostos. Não tem relação com a probabilidade pós-teste apresentada no enunciado. Seria aplicável se a questão comparasse, por exemplo, a chance de ITU entre mulheres com e sem disúria.</p><p><strong>Resposta correta: Alternativa B (Valor preditivo positivo)</strong></p><p><strong>Macete para memorizar:</strong> VPP e VPN dependem da prevalência e respondem à pergunta clínica (&quot;dado esse resultado, qual a chance de doença?&quot;). Sensibilidade e Especificidade são propriedades do teste e respondem à pergunta epidemiológica (&quot;entre doentes/não-doentes, quantos o teste acerta?&quot;). Na prática, você usa VPP/VPN; na validação de testes, você calcula Sensibilidade/Especificidade.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TestesDiagnosticos",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Um médico que atua na Atenção Primaria à Saúde percebeu, após conversar com alguns colegas, que tinha grande dificuldade de compartilhar algumas decisões terapêuticas com seus pacientes. Na visão dele, determinação da conduta a ser adotada nas consultas era uma ação exclusiva do médico. Ao perceber que essa sua dificuldade em estabelecer uma relação mais horizontal com as pessoas prejudicava o cuidado prestado a certos tipos de pacientes resolveu procurar ajuda profissional para lidar de outra forma com suas emoções. Em qual componente de Método Clínico Centrado na Pessoa a atitude do médico melhor se enquadra?",
+      "alternativas": [
+        "Explorando a saúde, a doença e a experiência da doença.",
+        "Entendendo a pessoa como um todo (individuo, família e contexto).",
+        "Elaborando um plano conjunto de manejo dos problemas.",
+        "Fortalecendo a relação entre a pessoa e o médico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Questão que exige atenção aos detalhes e conhecimento dos <strong>quatro componentes do Método Clínico Centrado na Pessoa (MCCP)</strong>, amplamente cobrado em provas de Medicina de Família e Comunidade. A pegadinha aqui está em distinguir entre o problema identificado e a atitude tomada pelo médico.</p><p><strong>Os 4 componentes do MCCP são:</strong></p><p>1. Explorando a saúde, a doença e a experiência da doença<br>2. Entendendo a pessoa como um todo (indivíduo, família e contexto)<br>3. Elaborando um plano conjunto de manejo dos problemas<br>4. Fortalecendo a relação médico-paciente</p><p><strong>Análise do caso clínico:</strong></p><p>O médico identificou que tinha dificuldade em compartilhar decisões terapêuticas com seus pacientes, adotando uma postura paternalista. Isso claramente prejudica o <strong>3º componente</strong> (plano conjunto). Porém, a questão pergunta sobre a <strong>&quot;atitude do médico&quot;</strong> ao buscar ajuda profissional para lidar com suas emoções. Esta é a pegadinha!</p><p>Ao reconhecer suas limitações emocionais e buscar desenvolvimento pessoal, o médico está trabalhando aspectos relacionais e de autoconhecimento que vão <strong>fortalecer sua capacidade de estabelecer vínculos terapêuticos mais efetivos</strong>. Isso se enquadra no <strong>4º componente</strong> do MCCP.</p><p><strong>Por que cada alternativa está incorreta ou correta:</strong></p><p><strong>Alternativa A (Explorando a doença e a experiência da doença) - INCORRETA:</strong> Este componente trata de compreender tanto a perspectiva biomédica da doença quanto a experiência subjetiva do paciente com seu adoecimento (sentimentos, medos, impacto na vida). Não está relacionado com o autodesenvolvimento do médico ou suas competências relacionais, mas sim com a abordagem da queixa do paciente.</p><p><strong>Alternativa B (Entendendo a pessoa como um todo) - INCORRETA:</strong> Este componente envolve contextualizar o paciente em sua dimensão biopsicossocial, considerando família, trabalho, comunidade, ciclo de vida. Embora o médico esteja buscando se entender melhor, a questão trata especificamente de fortalecer sua capacidade relacional com os pacientes, não de compreender o contexto do paciente.</p><p><strong>Alternativa C (Elaborando um plano conjunto) - INCORRETA, mas é a pegadinha:</strong> Embora a dificuldade identificada (não compartilhar decisões) esteja diretamente ligada a este componente, a questão pergunta sobre a ATITUDE de buscar ajuda profissional. O médico não está neste momento elaborando um plano conjunto; ele está se preparando para conseguir fazer isso no futuro, trabalhando suas próprias questões emocionais. É um passo anterior.</p><p><strong>Alternativa D (Fortalecendo a relação) - CORRETA:</strong> Este componente envolve o desenvolvimento de autoconsciência, uso terapêutico de si mesmo, manejo das próprias emoções e desenvolvimento de competências relacionais. Ao buscar ajuda para lidar com suas emoções que prejudicam o estabelecimento de relações horizontais, o médico está investindo diretamente neste componente. O fortalecimento da relação médico-paciente passa pelo autoconhecimento do profissional e sua capacidade de manejar seus próprios sentimentos.</p><p><strong>Conceito-chave:</strong> A relação médico-paciente requer que o profissional reconheça suas próprias vulnerabilidades, padrões emocionais e vieses. O médico centrado na pessoa desenvolve consciência de como suas características pessoais influenciam o cuidado. Esta questão valoriza essa dimensão do profissionalismo médico.</p><p><strong>Lição para a prova:</strong> Leia com atenção o que está sendo perguntado. Muitas vezes, o caso clínico apresenta múltiplos aspectos que se relacionam a diferentes componentes. Identifique especificamente qual aspecto a questão está explorando.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_RelacaoMedicopaciente",
+        "Ginecologia_GinecologiaBasica"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Sobre a Política Nacional de Atenção Básica, em sua versão mais recente publicada em 2017, considere as afirmações abaixo e assinale a alternativa correta: I. Os cuidados paliativos estão incluídos no conjunto das ações de saúde que definem a atenção básica. II. A Política Nacional de Atenção Básica dá grande ênfase na integração entre a Vigilância em Saúde e a Atenção Básica. III. A Política Nacional de Atenção Básica retira a obrigatoriedade de o Agente Comunitário de Saúde compor a Equipe de Saúde da Família.",
+      "alternativas": [
+        "Apenas II está correta.",
+        "Apenas I e II estão corretas.",
+        "Apenas II e III estão corretas.",
+        "I, II e III estão corretas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre a <strong>Política Nacional de Atenção Básica (PNAB) de 2017</strong>, que trouxe mudanças importantes em relação à versão anterior de 2011. Vamos analisar cada afirmativa com base no documento oficial.</p><p><strong>Afirmativa I: &quot;Os cuidados paliativos estão incluídos no conjunto das ações de saúde que definem a atenção básica.&quot;</strong></p><p><strong>CORRETA.</strong> A PNAB 2017 ampliou significativamente o escopo de ações da Atenção Básica. Segundo o documento, as ações devem contemplar: promoção e proteção da saúde, prevenção de agravos, diagnóstico, tratamento, reabilitação, redução de danos, <strong>cuidados paliativos</strong> e vigilância em saúde. Esta inclusão explícita dos cuidados paliativos representa um avanço no reconhecimento de que a Atenção Básica deve acompanhar as pessoas em todas as fases da vida, inclusive no processo de finitude. Na prática, isso significa que as equipes de Saúde da Família devem estar preparadas para oferecer cuidados paliativos domiciliares e ambulatoriais para pacientes com doenças ameaçadoras da vida.</p><p><strong>Afirmativa II: &quot;A Política Nacional de Atenção Básica dá grande ênfase na integração entre a Vigilância em Saúde e a Atenção Básica.&quot;</strong></p><p><strong>CORRETA.</strong> O Artigo 5º da PNAB 2017 estabelece claramente que a integração entre Vigilância em Saúde e Atenção Básica é condição essencial para alcançar resultados que atendam às necessidades de saúde da população. Esta integração visa estabelecer processos de trabalho que considerem os determinantes sociais, os riscos e danos à saúde, numa perspectiva de integralidade. Na prática, isso significa que as equipes de AB devem trabalhar de forma articulada com a vigilância epidemiológica, sanitária e ambiental, realizando ações como investigação de casos, monitoramento de indicadores de saúde do território, controle de vetores e vigilância nutricional.</p><p><strong>Afirmativa III: &quot;A Política Nacional de Atenção Básica retira a obrigatoriedade de o Agente Comunitário de Saúde compor a Equipe de Saúde da Família.&quot;</strong></p><p><strong>INCORRETA.</strong> Esta afirmativa contém um erro conceitual importante. A PNAB 2017 estabelece <strong>dois tipos de equipes</strong> na Atenção Básica:</p><p>1. <strong>Equipe de Saúde da Família (eSF):</strong> Composição mínima obrigatória: médico (preferencialmente MFC), enfermeiro, auxiliar/técnico de enfermagem e <strong>Agente Comunitário de Saúde (ACS)</strong>. Pode ser acrescida de cirurgião-dentista e auxiliar/técnico em saúde bucal. Esta é a modalidade prioritária e recomendada.</p><p>2. <strong>Equipe de Atenção Básica (eAB):</strong> Composição mínima obrigatória: médico, enfermeiro, auxiliar/técnico de enfermagem. Nesta modalidade, o ACS não é obrigatório. Pode ser acrescida de cirurgião-dentista e auxiliar/técnico em saúde bucal.</p><p>Portanto, o ACS continua sendo obrigatório na eSF (que é a equipe prioritária da PNAB). O que a política de 2017 fez foi criar uma modalidade alternativa (eAB) sem a obrigatoriedade do ACS, o que gerou críticas de entidades da área por potencialmente enfraquecer o vínculo com a comunidade. Mas isso NÃO significa que o ACS deixou de ser obrigatório na Equipe de Saúde da Família.</p><p><strong>Resposta correta: Alternativa B (apenas I e II estão corretas)</strong></p><p><strong>Ponto de atenção:</strong> A PNAB 2017 foi controversa justamente pela flexibilização que permitiu a criação das eAB sem ACS. Muitos consideram que isso enfraquece o modelo de Saúde da Família. Para a prova, é importante conhecer as diferenças entre eSF e eAB e saber que o ACS continua obrigatório na primeira.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "O Decreto nº 7.508, de 28 de junho de 2011, regulamenta a Lei Orgânica da Saúde e dispõe sobre a organização do Sistema Único de Saúde. Neste decreto, define-se que, para ser instituída, uma Região de Saúde deve conter obrigatoriamente as seguintes ações e serviços de saúde, exceto:",
+      "alternativas": [
+        "Atenção primária à saúde.",
+        "Urgência e emergência.",
+        "Atenção psicossocial.",
+        "Telemedicina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a organização territorial do Sistema Único de Saúde, especificamente sobre os requisitos para constituição de uma Região de Saúde.</p><p><strong>A resposta correta é D - Telemedicina.</strong></p><p>Segundo o Decreto nº 7.508/2011, que regulamenta a Lei Orgânica da Saúde, uma Região de Saúde deve conter obrigatoriamente cinco componentes básicos: atenção primária à saúde, urgência e emergência, atenção psicossocial, atenção ambulatorial especializada e hospitalar, e vigilância em saúde.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Atenção primária à saúde:</strong> Correto - é um dos cinco componentes obrigatórios. A APS é a porta de entrada do sistema e deve estar presente em todas as regiões.</p><p><strong>B) Urgência e emergência:</strong> Correto - também componente obrigatório. Serviços de urgência são essenciais para o funcionamento das redes de atenção.</p><p><strong>C) Atenção psicossocial:</strong> Correto - compõe a lista de obrigatoriedades. A saúde mental é reconhecida como prioridade no SUS.</p><p><strong>D) Telemedicina:</strong> <em>Incorreto</em> - não consta como requisito obrigatório no decreto. Embora seja uma ferramenta importante para ampliar o acesso, especialmente em áreas remotas, ainda não é mandatória para a constituição de uma Região de Saúde.</p><p><strong>💡 Dica de estudo:</strong> Memorize os 5 componentes obrigatórios: <strong>AP</strong>rimária, <strong>U</strong>rgência, <strong>A</strong>tenção <strong>P</strong>sicossocial, <strong>A</strong>tenção <strong>E</strong>specializada e <strong>V</strong>igilância. Use a sigla: <em>APUAEP</em></p><p><strong>Contexto atual:</strong> O decreto de 2011 ainda é a base legal para organização das Regiões de Saúde, sendo atualizado periodicamente pelo Ministério da Saúde conforme as necessidades do sistema.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_ProcessosDeDescentralizacaoERe"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Médica atende mulher de 25 anos com queixa de ansiedade, dificuldade para dormir e leve dor abdominal. História clínica e exame físico sem achados de relevância ou sinais de alerta para o caso. Ao realizar a abordagem familiar, descobre que a paciente se casou há poucos meses e está tendo dificuldade para as tarefas de cotidiano com seu parceiro, o que tem aumentado seu nível de estresse e prejudicado seu trabalho. Que ferramenta de abordagem familiar foi utilizada no caso?",
+      "alternativas": [
+        "Ciclo de Vida da Família.",
+        "Genograma.",
+        "Ecomapa.",
+        "PRACTICE."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão explora sua capacidade de identificar ferramentas de abordagem familiar utilizadas na clínica geral, um tema fundamental para a prática médica integral.</p><p><strong>A resposta correta é A - Ciclo de Vida da Família.</strong></p><p>Vamos entender o raciocínio por trás desta resposta. O caso apresenta uma mulher jovem de 25 anos, recém-casada, apresentando sintomas somáticos de ansiedade (dificuldade para dormir, dor abdominal leve) sem causa orgânica aparente. Através da abordagem familiar, descobriu-se que o estresse relaciona-se às dificuldades de adaptação à nova vida marital.</p><p>O <strong>Ciclo de Vida da Família</strong> é a ferramenta utilizada porque:</p><p>1. <strong>Contexto temporal:</strong> A paciente está em fase de transição (casamento recente) - uma das etapas críticas do ciclo familiar</p><p>2. <strong>Crise previsível:</strong> O casamento representa uma fase que exige reorganização de papéis e adaptação a novos padrões de vida</p><p>3. <strong>Sintomas de transição:</strong> A ansiedade e os sintomas somáticos são típicos de dificuldades na adaptação a essa nova fase</p><p>Vamos analisar as outras ferramentas:</p><p><strong>B) Genograma:</strong> Mapeia relações familiares ao longo de gerações. Não se aplica aqui, pois o foco está na fase atual, não no histórico familiar.</p><p><strong>C) Ecomapa:</strong> Visualiza relações da família com sistemas externos (trabalho, escola, etc.). Embora relevante, não é a ferramenta principal para este caso específico.</p><p><strong>D) PRACTICE:</strong> Estrutura de avaliação familiar abrangente. Mais detalhada que o necessário para este caso.</p><p><strong>📚 Dica de estudo:</strong> Lembre-se que as fases do ciclo familiar incluem: formação do casal, chegada do primeiro filho, família com filhos pequenos, família com filhos adolescentes, ninho vazio e aposentadoria. Cada fase tem seus próprios desafios e tarefas de desenvolvimento.</p><p><strong>🎯 Pontos-chave:</strong> Questões que mencionam transições de vida (casamento, nascimento, separação, luto) geralmente se referem ao Ciclo de Vida da Família.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_PrincipiosDaMedicinaDeFamiliaE",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "O Ministério da Saúde foi acionado por um grupo profissional que propõe a adoção de uma estratégia populacional de rastreamento de uma doença X. A doença X é rara e os testes diagnósticos disponíveis possuem baixa sensibilidade e especificidade. Além disso, os protocolos de tratamento ainda não estão definidos e algumas medicações promissoras ainda não foram aprovadas pela ANVISA para o tratamento da doença X. Nesse caso, qual deve ser a conduta do Ministério da Saúde?",
+      "alternativas": [
+        "Implementar a estratégia imediatamente no caso de haver recursos orçamentáriosdisponíveis.",
+        "Não implementar a estratégia, já que ela não atende aos critérios para a introdução deum programa de rastreamento.",
+        "Acelerar a aprovação das medicações na ANVISA e implementar a estratégia imediatamente.",
+        "Não implementar a estratégia por causa do evidente lobby do grupo profissional propositor, embora a estratégia atenda aos critérios para a introdução de um programa de rastreamento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia sua compreensão sobre os critérios científicos para implementação de programas populacionais de rastreamento, tema fundamental em Saúde Pública.</p><p><strong>A resposta correta é B - Não implementar a estratégia, já que ela não atende aos critérios para a introdução de um programa de rastreamento.</strong></p><p>Vamos analisar por que a implementação é inadequada neste caso. O Ministério da Saúde estabelece critérios rigorosos para programas de rastreamento populacional, e a doença X não atende aos requisitos fundamentais:</p><p><strong>Problemas identificados na doença X:</strong></p><p>1. <strong>Testes com baixa sensibilidade e especificidade:</strong> Implicam em alta taxa de falsos negativos e falsos positivos, tornando o rastreamento ineficiente</p><p>2. <strong>Doença rara:</strong> Não representa problema relevante de saúde pública para justificar investimento em rastreamento populacional</p><p>3. <strong>Protocolos de tratamento indefinidos:</strong> Mesmo que o rastreamento identifique casos, não há tratamento estabelecido</p><p>4. <strong>Medicamentos não aprovados pela ANVISA:</strong> Ausência de opções terapêuticas seguras e eficazes</p><p><strong>Critérios necessários para rastreamento (segundo MS):</strong></p><p>• Doença deve ser importante problema de saúde pública</p><p>• História natural bem conhecida</p><p>• Estágio pré-clínico identificável</p><p>• Benefício do tratamento precoce comprovado</p><p>• Testes com boa acurácia diagnóstica</p><p>• Custo-efetividade adequada</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Implementar com recursos disponíveis:</strong> Incorreto - disponibilidade orçamentária não supre as deficiências metodológicas</p><p><strong>C) Acelerar aprovação e implementar:</strong> Incorreto - o processo de aprovação da ANVISA segue protocolos rigorosos que não podem ser acelerados por pressão política</p><p><strong>D) Não implementar por lobby:</strong> Incorreto - embora o lobby seja um problema ético, a decisão deve basear-se em critérios técnicos</p><p><strong>💡 Lembrete:</strong> Programas de rastreamento.populacional requerem evidência científica robusta. A decisão de não rastrear pode ser tão importante quanto a decisão de rastrear.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaBaseadaEmEvidencias",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_IntroducaoAEpidemiologia",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessoSaudedoenca",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TestesDiagnosticos"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Médica atende um paciente de 30 anos com dor lombar inespecífica, sem ciatalgia ou sinais de alerta e fica em dúvida entre prescrever ibuprofeno ou ciclobenzaprina. Qual alternativa indica uma forma adequada de estruturar uma questão PICO para busca de evidências cientificas para embasar a tomada de decisão no caso?",
+      "alternativas": [
+        "P: adulto com dor lombar inespecífica sem ciatalgia, I: anti-inflamatórios não esteroides; C: relaxantes musculares; O: redução da dor.",
+        "P: adulto; I: dor lombar; C: tratamento medicamentoso; O: redução da dor.",
+        "P: dor lombar inespecífica; I: ibuprofeno; C: ciclobenzaprina; O: redução da mortalidade.",
+        "P: redução da dor; I: relaxantes musculares; C: anti-inflamatórios não esteroides; O: adulto com dor lombar inespecífica sem ciatalgia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa sua habilidade de estruturar perguntas de pesquisa clínica usando a metodologia PICO, ferramenta fundamental para a medicina baseada em evidências.</p><p><strong>A resposta correta é A - P: adulto com dor lombar inespecífica sem ciatalgia, I: anti-inflamatórios não esteroides; C: relaxantes musculares; O: redução da dor.</strong></p><p>Vamos entender a lógica da estrutura PICO:</p><p><strong>P (População/Paciente/Problema):</strong> Deve ser específica o suficiente para identificar o público-alvo, mas ampla o bastante para encontrar evidências relevantes. A descrição \"adulto com dor lombar inespecífica sem ciatalgia\" é adequada - inclui as características essenciais (dor lombar inespecífica) e exclui condições específicas (ciatalgia).</p><p><strong>I (Intervenção):</strong> No caso, os anti-inflamatórios não esteroides (AINEs). O uso de \"classe\" medicamentosa é inteligente, pois permite maior sensibilidade de busca.</p><p><strong>C (Comparador):</strong> Os relaxantes musculares (ciclobenzaprina). A comparação é direta e relevante clinicamente.</p><p><strong>O (Outcome/Desfecho):</strong> \"Redução da dor\" é o desfecho mais apropriado para esta condição. Mortalidade seria inadequada para dor lombar inespecífica.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>B) P: adulto; I: dor lombar; C: tratamento medicamentoso; O: redução da dor:</strong> P e C são muito amplos. \"Adulto\" abrange desde 18 até 80+ anos, e \"tratamento medicamentoso\" é genérico demais.</p><p><strong>C) P: dor lombar inespecífica; I: ibuprofeno; C: ciclobenzaprina; O: redução da mortalidade:</strong> Específico demais no I (um fármaco específico limita a busca) e desfecho inadequado (mortalidade não é relevante para dor lombar).</p><p><strong>D) P: redução da dor; I: relaxantes musculares; C: anti-inflamatórios não esteroides; O: adulto com dor lombar inespecífica sem ciatalgia:</strong> A estrutura está completamente invertida - o P virou O e vice-versa.</p><p><strong>🔍 Dica prática:</strong> Para formular PICO efetivo: seja específico o suficiente para encontrar a evidência certa, mas amplo o bastante para não ser muito restritivo. Use classes de medicamentos quando apropriado para aumentar a sensibilidade da busca.</p><p><strong>📚 Contexto atual:</strong> A busca estruturada PICO é fundamental para tomada de decisão clínica baseada em evidências, sendo amplamente utilizada em guidelines do Ministério da Saúde.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaBaseadaEmEvidencias",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_PesquisaClinica"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Analise as afirmativas abaixo e assinale a alternativa correta: I. A população indígena, em decorrência do alto grau de integração social e cultural observada nas últimas décadas, apresenta necessidades de saúde muito semelhantes a população geral do Brasil, não havendo qualquer justificativa para se estabelecer intervenções especificas para esta população. II. O Distrito Sanitário Especial Indígena (DSE) é a unidade gestora descentralizada do Subsistema de Atenção à Saúde Indígena, sendo que os DSEIs se limitam as fronteiras estaduais e são financiados e gerenciados de forma unipartite pelas Secretarias Estaduais de Saúde. III. Devido a suas particularidades, as populações indígenas não têm direito a participar dos dispositivos de controle social do SUS, como é o caso do Conselho Nacional de Saúde e dos Conselhos Estaduais e Municipais de Saúde.",
+      "alternativas": [
+        "Apenas as afirmativas I e II estão corretas.",
+        "Apenas as afirmativas II e III estão corretas.",
+        "Apenas as afirmativas I e III estão corretas.",
+        "Nenhuma está correta."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda a Política Nacional de Atenção à Saúde dos Povos Indígenas, tema de grande relevância social e que exige conhecimento específico sobre as particularidades desta população no contexto do SUS.</p><p><strong>A resposta correta é D - Nenhuma das afirmativas está correta.</strong></p><p>Vamos analisar cada afirmativa detalhadamente:</p><p><strong>AFIRMATIVA I:</strong> <em>INCORRETA</em></p><p>A afirmativa afirma que a população indígena \"apresenta necessidades de saúde muito semelhantes à população geral\". Isso está errado. As populações indígenas possuem:</p><p>• <strong>Particularidades socioculturais:</strong> Sistemas de saúde tradicionais, concepções próprias de doença e cura</p><p>• <strong>Diferenças epidemiológicas:</strong> Perfil de morbidade específico, incluindo doenças transmissíveis, desnutrição e problemas de saúde mental</p><p>• <strong>Barreiras geográficas:</strong> Localização em terras remotas com difícil acesso aos serviços</p><p>• <strong>Vulnerabilidades específicas:</strong> Alto índice de mortalidade materna e infantil</p><p>Por isso existe uma política específica para esta população, aprovada pelo MS em 2022.</p><p><strong>AFIRMATIVA II:</strong> <em>INCORRETA</em></p><p>A afirmativa sobre os DSEIs está equivocada em vários pontos:</p><p>• <strong>Não se limitam a fronteiras estaduais:</strong> A territorialidade considera perfil epidemiológico, disponibilidade de serviços e relações sociais</p><p>• <strong>Gestão não é unipartite:</strong> É compartilhada entre União, estados e municípios</p><p>• <strong>Financiamento diversificado:</strong> Vem de diferentes fontes, não apenas secretarias estaduais</p><p><strong>AFIRMATIVA III:</strong> <em>INCORRETA</em></p><p>Afirmar que indígenas \"não têm direito a participar dos dispositivos de controle social\" é incorreto. A política prevê participação ativa através de:</p><p>• Conselhos Distritais de Saúde Indígena</p><p>• Conferências de Saúde Indígena</p><p>• Participação nos Conselhos Nacionais, Estaduais e Municipais</p><p>• Fóruns específicos para saúde indígena</p><p><strong>🎯 Pontos-chave para prova:</strong> Lembre-se que a política de saúde indígena é baseada em três pilares: territorialidade específica, interculturalidade e controle social pela própria população.</p><p><strong>📖 Atualização:</strong> A Política Nacional de Atenção à Saúde dos Povos Indígenas foi revisada em 2022, fortalecendo a participação social e a articulação com sistemas tradicionais indígenas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_1",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_2"
+      ],
+      "tags": [
+        "UFES2022R1",
+        "UFES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762680681594-49"
+    }
+  ]
+}

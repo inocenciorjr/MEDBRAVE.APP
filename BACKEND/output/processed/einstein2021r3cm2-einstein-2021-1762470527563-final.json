@@ -1,0 +1,1675 @@
+{
+  "metadata": {
+    "examName": "EINSTEIN2021R3CM2 (EINSTEIN 2021)",
+    "examYear": 2021,
+    "url": "source://821",
+    "totalQuestions": 49,
+    "categorizedQuestions": 49,
+    "rewrittenComments": 49,
+    "processedAt": "2025-11-06T23:08:47.563Z",
+    "jobId": "batch-1762448083207-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "4724cedc-8499-444c-afa5-75d2b017319f"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Paciente de 20 anos, sexo masculino, admitido no pronto-socorro com quadro de diarreia líquida, mucossanguinolenta, associada a dor abdominal em fossa ilíaca direita, febre alta não aferida e perda de 8 kg nos últimos 4 meses. Nega náuseas ou vômitos. Tio com antecedente de doença intestinal. Ao exame físico se encontra em REG, descorado ++/IV+, desidratado +/IV. À palpação abdominal apresenta plastrão em fossa ilíaca direita, sem sinais de irritação peritoneal. Exames laboratoriais iniciais evidenciam Hb: 9,2 mg/dL, VCM: 75 fl, leucócitos: 14.900 mil/mm³, plaquetas: 670.000 µL, PCR: 140 mg/dL. TC de abdome demonstra espessamento colônico difuso, hipercaptação de contraste em mucosa colônica. Colonoscopia com os achados abaixo: Provável diagnóstico e tratamento adequado da doença relatada acima:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ1.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Retocolite ulcerativa - corticosteroide associado a derivados do ácido 5- aminossalicílico.",
+        "Doença de Crohn - combinação de imunossupressor com terapia biológica.",
+        "Linfoma - tratamento sistêmico com a combinação dos quimioterápicos FOLFOX.",
+        "Amebíase, devido à alta prevalência de parasitoses no Brasil - metronidazol.",
+        "Doença de Crohn - pulsoterapia e sulfassalazina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre o diagnóstico diferencial entre as principais doenças inflamatórias intestinais e outras causas de diarreia sanguinolenta.</p><p><strong>A resposta correta é B - Doença de Crohn com combinação de imunossupressor e terapia biológica.</strong></p><p><strong>Análise do caso:</strong> O paciente jovem apresenta quadro clássico de doença inflamatória intestinal: diarreia sanguinolenta, dor em fossa ilíaca direita, perda ponderal significativa, febre e achado de plastrão à palpação. Os exames laboratoriais mostram anemia de doença crônica, leucocitose (indicando processo inflamatório ativo), trombocitose reativa e PCR elevada. A tomografia computadorizada demonstra espessamento colônico difuso, típico de processo inflamatório extenso.</p><p><strong>Colonoscopia:</strong> A imagem mostra mucosa colônica com padrão de \"pedra de calçada\" (cobblestone), ulcerções irregulares e irregularidades da parede, padrão característico da doença de Crohn, diferenciando-se do padrão contínuo da retocolite ulcerativa.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Retocolite ulcerativa:</strong> Incorreta porque a doença de Crohn apresenta padrão descontínuo (skip lesions), enquanto a RCU afeta o cólon de forma contínua. Além disso, a RCU tipicamente não causa plastrão em fossa ilíaca direita.</p><p><strong>C) Linfoma:</strong> O FOLFOX é regime para câncer colorretal, não linfoma. Além disso, o quadro clínico e de imagem não sugere processo neoplásico primário do cólon.</p><p><strong>D) Amebíase:</strong> Embora a amebíase seja prevalente no Brasil, o quadro clínico prolongado (4 meses), o plastrão, a febre persistente e as alterações tomográficas sugerem processo crônico inflamatório, não uma parasitose aguda.</p><p><strong>E) Doença de Crohn com pulsoterapia e sulfassalazina:</strong> A pulsoterapia está indicada em casos graves com risco de obstrução ou perfuração, não sendo primeira escolha. Sulfassalazina é mais eficaz na retocolite ulcerativa.</p><p><strong>Tratamento:</strong> A doença de Crohn requer terapia combinada com imunossupressor (como azatioprina) e agente biológico (anti-TNF) para indução e manutenção da remissão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Sobre a propedêutica diagnóstica da ascite é correto afirmar:",
+      "alternativas": [
+        "Gradiente soro-ascite de albumina < 1,1 sugere ascite secundária à Síndrome de Budd Chiari.",
+        "Gradiente soro-ascite de albumina = 1,1 e proteínas totais > 2,5 g/dL sugerem ascite de etiologia peritoneal.",
+        "Gradiente soro-ascite de albumina < 1,1 sugere ascite de etiologia cardíaca ou síndrome nefrótica.",
+        "Gradiente soro-ascite de albumina = 1,1 e aumento do CA-125 sugerem ascite de origem neoplásica.",
+        "Gradiente soro-ascite de albumina = 1,1 e proteínas totais < 2,5 g/dL sugerem ascite secundária à hipertensão portal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre a classificação da ascite baseada no gradiente soro-ascite de albumina (SAAG), um conceito fundamental na propedêutica diagnóstica.</p><p><strong>A resposta correta é E - Gradiente soro-ascite de albumina = 1,1 e proteínas totais < 2,5 g/dL sugerem ascite secundária à hipertensão portal.</strong></p><p><strong>Princípio do SAAG:</strong> O gradiente soro-ascite de albumina é calculado subtraindo-se a albumina do líquor ascítico da albumina sérica. Valores ≥ 1,1 g/dL indicam ascite por hipertensão portal, enquanto valores < 1,1 g/dL sugerem ascite por outras causas (peritonite, malignidade, síndrome nefrótica, etc.).</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) SAAG < 1,1 sugere ascite por Síndrome de Budd-Chiari:</strong> Incorreta porque a síndrome de Budd-Chiari causa hipertensão portal e, portanto, SAAG ≥ 1,1 g/dL.</p><p><strong>B) SAAG = 1,1 e proteínas > 2,5 g/dL sugerem ascite de etiologia peritoneal:</strong> Incorreta. Ascite peritoneal (peritonite bacteriana espontânea, tuberculose) tem SAAG < 1,1 g/dL e proteínas geralmente > 2,5 g/dL.</p><p><strong>C) SAAG < 1,1 sugere ascite cardíaca ou síndrome nefrótica:</strong> Parcialmente incorreta. Síndrome nefrótica tem SAAG < 1,1, mas insuficiência cardíaca causa hipertensão portal (SAAG ≥ 1,1).</p><p><strong>D) SAAG = 1,1 e aumento do CA-125 sugerem ascite neoplásica:</strong> Incorreta. Ascite neoplásica geralmente tem SAAG < 1,1 g/dL. CA-125 elevado pode ser encontrado em diversas condições benignas.</p><p><strong>Interpretação correta da alternativa E:</strong> SAAG = 1,1 indica hipertensão portal. Proteínas totais < 2,5 g/dL são típicas de ascite por hipertensão portal sem complicações (como cirrose), diferenciando-se de ascite por síndrome de Budd-Chiari (que tem proteínas mais elevadas).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "<html><head></head><body>Paciente de 37 anos, sexo masculino, com antecedente de doença ulcerosa péptica, vem em consulta com quadro de dor epigástrica de forte intensidade, associada a náuseas e vômitos há 1 mês. Nega febre ou alteração do hábito intestinal. Exame físico com sinais vitais estável e palpação abdominal com abdome doloroso em epigástrio, sem sinais de irritação peritoneal. Murphy negativo. Gastrina sérica: 980 pg/mL. Realizou endoscopia digestiva alta que evidenciou as alterações abaixo: O exame diagnóstico mais indicado é:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ3.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Enterorressonância de abdome total com contraste venoso e oral neutro.",
+        "Ultrassonografia endoscópica com punção por agulha fina.",
+        "PET-CT com DOTA.",
+        "Colangiorressonância de abdome superior.",
+        "Cápsula endoscópica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre investigação de tumores neuroendócrinos gastrointestinais, especificamente a síndrome de Zollinger-Ellison.</p><p><strong>A resposta correta é C - PET-CT com DOTA.</strong></p><p><strong>Análise do caso clínico:</strong> Paciente com antecedente de doença ulcerosa péptica, apresentando dor epigástrica persistente associada a náuseas e vômitos há 1 mês. O achado fundamental é a gastrina sérica elevadíssima (980 pg/mL), mais de 10 vezes acima do valor normal, altamente sugestiva de síndrome de Zollinger-Ellison (gastrinoma).</p><p><strong>Endoscopia digestiva alta:</strong> A imagem mostra múltiplas úlceras gástricas e duodenais, padrão típico da síndrome de Zollinger-Ellison, onde o excesso de ácido gástrico causa ulcerações múltiplas e refratárias.</p><p><strong>Por que o PET-CT com DOTA é o exame mais indicado:</strong> O DOTA (DOTA-TATE, DOTA-TOC) é um radiotraçador específico para receptores de somatostatina, expressos em 80-90% dos tumores neuroendócrinos gastrointestinais, incluindo gastrinomas. O PET-CT com DOTA permite localizar o tumor primário, estadiamento e detecção de metástases hepáticas e linfonodais, com sensibilidade superior a outros métodos de imagem.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Enterorressonância:</strong> Menos sensível que PET-CT para tumores neuroendócrinos e não avalia todo o corpo.</p><p><strong>B) Ultrassonografia endoscópica com punção:</strong> Útil para tumores gástricos ou pancreáticos, mas o gastrinoma pode ser duodenal ou extra-pancreático. A EUS seria mais adequada se soubéssemos a localização aproximada.</p><p><strong>D) Colangiorressonância:</strong> Especializada em vias biliares, sem utilidade para gastrinoma.</p><p><strong>E) Cápsula endoscópica:</strong> Avalia intestino delgado, mas não substitui o PET-CT para localização e estadiamento completo do tumor neuroendócrino.</p><p><strong>Conduta:</strong> Após confirmação do gastrinoma por PET-CT, o tratamento é cirúrgico (enucleação ou ressecção), combinado com inibidores da bomba de prótons em dose elevada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Resultado de hemograma com Hb: 8,5 g/dL, VCM: 83 fL, CHCM: 32 pg, reticulócitos: 1%, ferro sérico: 40 µg/dL, TIBIC: 130 mmol/L, saturação de transferrina 22%, ferritina: 410 ng/mL é compatível com a seguinte condição:",
+      "alternativas": [
+        "Esferocitose hereditária.",
+        "Câncer colorretal.",
+        "Nefropatia diabética.",
+        "Policitemia vera.",
+        "Doença celíaca."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar um hemograma e perfil de ferro para diferenciar causas de anemia crônica.</p><p><strong>A resposta correta é C - Nefropatia diabética.</strong></p><p><strong>Interpretação dos exames laboratoriais:</strong></p><p><strong>Hemograma:</strong> Anemia normocítica normocrômica (Hb 8,5 g/dL, VCM 83 fL, CHCM 32 pg) com baixa produção de reticulócitos (1% - indica hipoprodução medular).</p><p><strong>Perfil de ferro:</strong> Ferritina elevada (410 ng/mL) com saturação de transferrina baixa (22%) e ferro sérico normal. Este padrão caracteriza anemia de doença crônica (inflamação), onde a ferritina elevada reflete inflamação e a saturação baixa indica sequestração de ferro nos macrófagos.</p><p><strong>Por que a nefropatia diabética é a resposta:</strong> O diabetes mellitus tipo 2, especialmente com nefropatia, é uma das causas mais comuns de anemia de doença crônica. A insuficiência renal crônica reduz a produção de eritropoietina, agravando a anemia. A ferritina elevada em paciente diabético com nefropatia sugere doença crônica com inflamação.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Esferocitose hereditária:</strong> Anemia hemolítica com reticulocitose (neste caso está baixa), esferócitos no esfregaço, LDH elevada e bilirrubina indireta aumentada - padrões não presentes aqui.</p><p><strong>B) Câncer colorretal:</strong> Pode causar anemia por sangramento crônico, mas o perfil de ferro mostraría ferritina baixa (depleção de ferro) e saturação baixa por consumo, não inflamação.</p><p><strong>D) Policitemia vera:</strong> É aumento de hemácia, não anemia. Além disso, cursa com hematócrito elevado e trombocitose.</p><p><strong>E) Doença celíaca:</strong> Pode causar anemia por deficiência de ferro ou múltiplas deficiências nutricionais, mas o padrão seria de deficiência de ferro (ferritina baixa), não anemia de doença crônica.</p><p><strong>Diagnóstico diferencial de anemia de doença crônica:</strong> Artrite reumatoide, lúpus, insuficiência renal crônica, diabetes com nefropatia, infecções crônicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_IntroducaoAoEstudoDasAnemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasECondicoesNaoHematologi",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente de 18 anos, sexo feminino, vai a consulta ambulatorial para investigação de alterações laboratoriais hepáticas detectadas durante a sua rotina ginecológica. Quando questionada refere astenia, fadiga e queda significativa de cabelo. Antecedente médico de hipotireoidismo em tratamento regular. Mãe com diagnóstico de Lúpus Eritematoso Sistêmico. Ao exame físico apresenta IMC: 33 kg/m², bom estado geral, descorada +/IV+, hidratada, anictérica. Exame cardiovascular e respiratório sem alterações. À palpação abdominal apresenta fígado percutível a 6 cm do rebordo costal direito. Traube livre. Exames laboratoriais: Hb: 9,8 g/dL, Leucócitos: 9.680/mm³, Plaquetas: 550.000/mm³. Função renal e eletrólitos normais. Perfil hepático ALT: 635 U/L, AST: 830 U/L, FA: 260 U/L, GGT: 320 U/L, BT: 1,8 mg/dL, BD: 1,2 mg/dL, INR: 1,5, Proteínas totais: 8,5 g/dL, Albumina: 3,7 g/dL, FAN 1: 640 nuclear pontilhado fino, Antimitocôndria: Não reagente, Antimúsculo liso: Não reagente, Anti-LKM: 1:80, IgG: 4,8 mg/dL, IgM: 1,5 mg/dL, ferro: 150 µg/dL, saturação de transferrina: 45%, ferritina 700 ng/mL, ceruloplasmina: 15 mg/dL, cobre sérico: 280 mg/L, alfa1-antitripsina: 140. Ultrassonografia de abdome total evidencia alterações ecotexturais hepáticas, bordos finos, veia porta de 1,1 cm. Nesse caso,",
+      "alternativas": [
+        "o quadro clínico é característico de colangite biliar primária e o tratamento deve ser realizado com ácido ursodesoxicólico.",
+        "a paciente possui diagnóstico de esteato-hepatite não alcoólica e o tratamento deve ser realizado com Vitamina E e pioglitazona.",
+        "o diagnóstico mais provável é de hemocromatose hereditária e a paciente necessita de sangrias terapêuticas para controle dos sintomas.",
+        "trata-se de hepatite autoimune tipo 2 e o tratamento requer o uso de corticosteroide e imunossupressor.",
+        "a paciente é jovem e com provável hepatite alcoólica ou induzida por uso de drogas, e o tratamento com N-acetilcisteína é o indicado."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre hepatites autoimunes e seu diagnóstico diferencial com outras causas de doença hepática em mulher jovem.</p><p><strong>A resposta correta é D - Trata-se de hepatite autoimune tipo 2 e o tratamento requer o uso de corticosteroide e imunossupressor.</strong></p><p><strong>Análise do caso clínico:</strong> Mulher jovem de 18 anos apresentando quadro de astenia, fadiga e queda de cabelo, com alterações laboratoriais hepáticas importantes: ALT e AST extremamente elevadas (635 e 830 U/L), bilirrubinemia indireta elevada (1,8 mg/dL), INR prolongado (1,5) e perda de função sintética hepática (albumina 3,7 g/dL).</p><p><strong>Marcadores autoimunes:</strong> FAN nuclear pontilhado fino 1:640 é positivo, mas anti-músculo liso negativo. O achado-chave é o Anti-LKM 1:80, que é específico para hepatite autoimune tipo 2, caracterizada por anticorpos contra microsoma de hepatócito e rim.</p><p><strong>Por que hepatite autoimune tipo 2:</strong> A hepatite autoimune tipo 2 é mais comum em mulheres jovens, cursa com Anti-LKM positivos, desenvolvem-se rapidamente e têm curso mais severo. O FAN pode estar positivo, mas não é específico. A presença de anti-músculo liso negativo e Anti-LKM positivo confirma o tipo 2.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Colangite biliar primária:</strong> Marcadores anti-mitocôndria negativos, predomínio de FA e GGT, e presença de Anti-LKM não são característicos desta doença.</p><p><strong>B) Esteato-hepatite não alcoólica:</strong> Transaminases não alcançam valores tão elevados (em geral < 200 U/L) e Anti-LKM negativos. A paciente tem IMC 33, mas o quadro laboratorial é mais agressivo que a esteatose simples.</p><p><strong>C) Hemocromatose hereditária:</strong> Ceruloplasmina baixa e cobre sérico elevado são característicos de doença de Wilson, não hemocromatose. Ferritina elevada pode ser por inflamação aguda.</p><p><strong>E) Hepatite alcoólica ou induzida por drogas:</strong> A paciente é jovem, sem história de alcoolismo ou uso de drogas. N-acetilcisteína é usada em hepatite aguda por paracetamol, não em hepatite autoimune.</p><p><strong>Tratamento da hepatite autoimune tipo 2:</strong> Corticosteroide (prednisolona 1-2 mg/kg/d) para indução da remissão, combinado com azatioprina (2-2,5 mg/kg/d) para manutenção e redução de efeitos colaterais dos corticoides.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "<html><head></head><body>Paciente de 65 anos, sexo feminino, vai a consulta para investigação de diarreia aquosa crônica, com 6 a 8 evacuações ao dia, sem sangue ou muco, há 8 meses. Ao mesmo tempo, refere dor abdominal em cólica que melhora após as evacuações. Traz resultado de colonoscopia com laudo normal, porém com resultado histopatológico abaixo: Sobre o tratamento dessa condição, é correto afirmar:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ6.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Infliximabe ou adalimumabe são as medicações iniciais de escolha.",
+        "A medicação de escolha é a budesonida oral.",
+        "A reposição de enzimas pancreáticas é o tratamento mais efetivo.",
+        "A colectomia subtotal com anastomose ileorretal é o tratamento indicado.",
+        "O tratamento recomendado é com metotrexate oral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 testa seu conhecimento sobre o tratamento de causas específicas de diarreia crônica em pacientes idosos. O caso clínico apresenta características bem definidas que nos levam ao diagnóstico.</p><p>A paciente de 65 anos apresenta diarreia aquosa crônica há 8 meses (6-8 evacuações/dia), dor em cólica que melhora após evacuações, colonoscopia normal, mas com alterações histopatológicas. Este conjunto de achados é clássico para <strong>Colite Microscópica</strong>, especialmente em mulheres idosas.</p><p><strong>A resposta correta é B - A medicação de escolha é a budesonida oral.</strong></p><p>A budesonida é um corticoide de ação tópica com baixa absorção sistêmica, tornando-se ideal para tratamento de colite microscópica. Sua eficácia baseia-se no potente efeito anti-inflamatório na mucosa do cólon com mínimos efeitos colaterais sistêmicos. As diretrizes internacionais confirmam sua indicação como primeira linha terapêutica.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Infliximabe e adalimumabe são terapias biológicas reservadas para Doença de Crohn e Retocolite Ulcerativa em formas moderadas a graves, não para colite microscópica.</p><p><strong>Alternativa C:</strong> Reposição de enzimas pancreáticas seria indicada apenas se houvesse insuficiência pancreática exócrina, que não está presente neste caso.</p><p><strong>Alternativa D:</strong> Colectomia subtotal é procedimento cirúrgico extremo, indicado apenas em casos refratários graves após múltiplas tentativas clínicas.</p><p><strong>Alternativa E:</strong> Metotrexate pode ser usado em Crohn refratária, mas não é primeira linha para colite microscópica.</p><p>Lembre-se: em pacientes idosos com diarreia aquosa crônica e colonoscopia normal, sempre pense em colite microscópica! A budesonida é a chave terapêutica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal",
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatorias"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Paciente de 78 anos, internada na Ortopedia após queda da própria altura e fratura de fêmur, apresenta diarreia líquida, com mais de 10 evacuações ao dia, com muco, associada a febre baixa e dor abdominal. Usou diversos esquemas de antibioticoterapia durante a internação por infecção de sítio cirúrgico. O resultado da pesquisa de toxinas A e B do Clostridioides difficile foi negativo. A paciente foi tratada com metronidazol, via oral, sem resposta clínica. A conduta mais adequada é:",
+      "alternativas": [
+        "A colonoscopia com biopsia seriada é recomendada em todos os casos de suspeita de infecção por C. difficile em que não houve comprovação laboratorial.",
+        "A infecção por C. difficile foi descartada pela alta acurácia diagnóstica da pesquisa de toxinas. A paciente deve ser tratada com ajuste da dieta e probióticos.",
+        "Não se pode descartar a presença de infecção por C. difficile, porém não há necessidade de complementação diagnóstica ou terapêutica.",
+        "Provavelmente se trata de incontinência fecal já que a paciente se encontra acamada e apresenta fezes com muco. A loperamida está bem indicada neste caso.",
+        "A infecção por C. difficile ainda deve ser considerada a hipótese diagnóstica mais plausível e a sua pesquisa por PCR deve ser realizada."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o diagnóstico e manejo da infecção por <em>Clostridioides difficile</em> em pacientes hospitalizados, especialmente quando os testes iniciais são negativos.</p><p>A paciente de 78 anos apresenta quadro clássico de risco: internação prolongada, uso de múltiplos antibióticos, diarreia aquosa (mais de 10 evacuações/dia) com muco, febre baixa e dor abdominal. Os fatores de risco estão todos presentes.</p><p><strong>A resposta correta é E - A infecção por C. difficile ainda deve ser considerada a hipótese diagnóstica mais plausível e a sua pesquisa por PCR deve ser realizada.</strong></p><p>O raciocínio é baseado em: 1) clínica altamente sugestiva; 2) falha terapêutica com metronidazol; 3) teste de toxinas A e B negativo, mas com limitações de sensibilidade. O teste por PCR (Reação em Cadeia da Polimerase) tem maior sensibilidade e deve ser solicitado neste contexto.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Colonoscopia com biópsia seriada não é recomendada rotineiramente para todos os casos de suspeita de C. difficile sem confirmação laboratorial.</p><p><strong>Alternativa B:</strong> A infecção não foi descartada pela pesquisa de toxinas negativa. A clínica é típica e a acurácia dos testes varia.</p><p><strong>Alternativa C:</strong> Contradiz o princípio clínico - com quadro típico e fatores de risco, a infecção deve ser investigada adequadamente.</p><p><strong>Alternativa D:</strong> Loperamida é contraindicada em suspeita de C. difficile, pois pode piorar o quadro e aumentar o risco de megacólon tóxico.</p><p>Em resumo: em pacientes com quadro clínico típico e fatores de risco, não descarte C. difficile apenas por teste negativo inicial. Use PCR para confirmar!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssistencia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten_InfeccaoPorCDifficile",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "De acordo com o IV Consenso Brasileiro sobre Infecção por H. pylori, é INCORRETO afirmar:",
+      "alternativas": [
+        "Em pacientes alérgicos à penicilina, o tratamento de escolha é claritromicina 1 g/dia, levofloxacino 500 mg/dia e inibidor de bomba de prótons de 12/12h.",
+        "Os antimicrobianos devem ser suspensos por 4 semanas antes da Endoscopia ou teste respiratório da urease com Carbono 13.",
+        "A maior atualização do Consenso foi o aumento do tempo de duração do esquema tríplice convencional de 7 para 14 dias.",
+        "O inibidor de bomba de prótons deve ser interrompido por uma semana antes de se realizar exames para o seu diagnóstico, mas podem ser substituídos por antiácidos ou bloqueadores dos receptores H2 da histamina.",
+        "É considerado tratamento de primeira linha a associação de subcitrato de bismuto 480 mg/dia, tetraciclicina 2 g/dia e inibidor de bomba de prótons de 12/12h."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre as recomendações do IV Consenso Brasileiro sobre <em>Helicobacter pylori</em>, especificamente as atualizações e diretrizes de tratamento.</p><p>O consenso brasileiro de 2017 trouxe importantes atualizações no manejo da infecção por H. pylori, incluindo novos esquemas terapêuticos e duração de tratamento.</p><p><strong>A resposta correta é C - A maior atualização do Consenso foi o aumento do tempo de duração do esquema tríplice convencional de 7 para 14 dias.</strong></p><p>Esta afirmação está INCORRETA porque o esquema tríplice convencional (antibiótico duplo + IBP) teve sua duração aumentada de 7 para 10 dias, não 14 dias. As evidências mostram que 10 dias são superiores a 7 dias, mas 14 dias não são a recomendação oficial do consenso.</p><p>Vamos analisar as outras alternativas (que estão CORRETAS):</p><p><strong>Alternativa A:</strong> Correta - em alérgicos à penicilina, usar claritromicina + levofloxacino + IBP é uma das alternativas válidas.</p><p><strong>Alternativa B:</strong> Correta - antimicrobianos devem ser suspensos 4 semanas antes de endoscopia ou teste respiratório para evitar falsos negativos.</p><p><strong>Alternativa D:</strong> Correta - IBP deve ser suspenso 1 semana antes, podendo ser substituído por antiácidos ou bloqueadores H2.</p><p><strong>Alternativa E:</strong> Correta - esquema com bismuto, tetraciclina e IBP é considerado primeira linha em algumas situações.</p><p>A atenção ao detalhe temporal (10 vs 14 dias) é crucial. O consenso brasileiro priorizou esquemas mais curtos e eficazes para melhorar a adesão e reduzir resistência bacteriana.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_HelicobacterPylori",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "<html><head></head><body>Considere o gráfico de tromboelastograma abaixo. O gráfico é compatível com o seguinte estado:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ9.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Hiperfibrinólise.",
+        "Trombocitopenia.",
+        "Hemofilia.",
+        "Hipercoagulação.",
+        "Anemia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre tromboelastograma (TEG), um exame que avalia a hemostasia global de forma dinâmica, analisando todas as fases da coagulação.</p><p>O tromboelastograma mostra os parâmetros temporais e de força da formação e lise do coágulo. A interpretação correta requer conhecimento das alterações específicas em cada patologia.</p><p><strong>A resposta correta é A - Hiperfibrinólise.</strong></p><p>Na imagem do TEG, observamos: 1) Tempo de reação (R) normal; 2) Tempo de coagulação (K) normal; 3) Ângulo alfa normal; 4) Amplitude máxima (MA) reduzida; 5) <strong>Clot lysis (LY30) elevado</strong> - este é o achado característico da hiperfibrinólise.</p><p>A hiperfibrinólise representa aumento precoce e excessivo da degradação do coágulo, observado como redução acelerada da amplitude após o pico máximo. Clinicamente, pode estar associada a trauma, cirurgia cardíaca, insuficiência hepática ou uso de fibrinolíticos.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa B:</strong> Trombocitopenia causaria redução da amplitude máxima (MA), mas sem aumento da lise do coágulo.</p><p><strong>Alternativa C:</strong> Hemofilia apresenta tempo de reação (R) prolongado, mas lise normal.</p><p><strong>Alternativa D:</strong> Hipercoagulação mostraria amplitude máxima aumentada e lise diminuída.</p><p><strong>Alternativa E:</strong> Anemia não afeta diretamente os parâmetros do TEG.</p><p>O TEG é fundamental em ambiente cirúrgico e de UTI para monitorar a coagulação em tempo real. O reconhecimento do padrão de hiperfibrinólise permite tratamento específico com antifibrinolíticos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "ClinicaMedica_Cirurgia",
+        "ClinicaMedica_Cirurgia_PrincipiosDaAnestesiologia",
+        "ClinicaMedica_Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "De acordo com o Colégio Americano de Reumatologia, o diagnóstico de Artrite Reumatoide é realizado por meio da presença de pelo menos 4 dos seguintes critérios:",
+      "alternativas": [
+        "Artrite simétrica, acometimento de interfalangeanas proximais, nódulos reumatoides e rigidez matinal < 1 hora.",
+        "Artrite em pelo menos duas articulações, rigidez matinal < 1 hora, erosões articulares na radiografia de mãos e punhos, acometimento de interfalangeanas distais.",
+        "Artrite assimétrica, nódulos reumatoides, acometimento de metacarpofalangeanas e rigidez matinal > 1 hora.",
+        "Descalcificações em radiografia de mãos e punhos, artrite em pelo menos quatro articulações, acometimento de interfalangeanas proximais, positividade do Anti-CCP.",
+        "Artrite em pelo menos três articulações, nódulos reumatoides, rigidez matinal > 1 hora, positividade do fator reumatoide."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre os critérios diagnósticos do Colégio Americano de Reumatologia (ACR) para Artrite Reumatoide, especificamente os critérios de 1987 (vigentes na época da prova).</p><p>Os critérios do ACR 1987 para diagnóstico de AR requerem pelo menos 4 de 7 critérios presentes por pelo menos 6 semanas, com exclusão de outras causas de artrite.</p><p><strong>A resposta correta é E - Artrite em pelo menos três articulações, nódulos reumatoides, rigidez matinal > 1 hora, positividade do fator reumatoide.</strong></p><p>Esta alternativa apresenta exatamente 4 dos 7 critérios clássicos: artrite poliarticular (≥3 articulações), nódulos reumatoides, rigidez matinal prolongada (>1 hora) e sorologia positiva (fator reumatoide). Estes critérios são padrão ouro para diagnóstico.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Rigidez matinal < 1 hora está incorreta - deve ser > 1 hora. O acometimento de IF distais é mais típico de osteoartrite, não AR.</p><p><strong>Alternativa B:</strong> Rigidez matinal < 1 hora incorreta. Erosões articulares na radiografia é um critério, mas IF distais não são típicas de AR inicial.</p><strong>Alternativa C:</strong> Artrite assimétrica é incorreta - AR é tipicamente simétrica. Duração da rigidez matinal deve ser > 1 hora.</p><p><strong>Alternativa D:</strong> O Anti-CCP não estava incluído nos critérios de 1987 - é um marcador mais recente. As descalcificações radiográficas não são o achado característico inicial.</p><p>Importante: os critérios de 1987 eram mais restritivos. Os novos critérios ACR/EULAR 2010 incluem Anti-CCP e são mais sensíveis para diagnóstico precoce. Na época desta prova (2021), os critérios de 2010 já eram os vigentes, mas esta questão avaliou conhecimento histórico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_IntroducaoAReumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Sobre a Esclerose Sistêmica, é correto afirmar:",
+      "alternativas": [
+        "Na forma sine-esclero a pele é normal e o diagnóstico é feito na presença de Raynaud, acometimento do esôfago e pulmão, associado aos autoanticorpos específicos da doença.",
+        "A forma limitada tem evolução mais rápida caracterizada pela perda da elasticidade da pele na porção distal, estendendo- se para a porção proximal dos membros, tórax e face.",
+        "A presença de acometimento do pulmão e do trato gastrointestinal é o que diferencia os subtipos da forma difusa e forma limitada.",
+        "A forma difusa também é chamada de Síndrome CREST e a sua evolução é mais lenta quando comparada à forma limitada.",
+        "A forma CREST é caracterizada pela perda de elasticidade da pele em tronco, braços e coxas, enquanto mãos e dedos são poupados."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia o conhecimento sobre os subtipos da esclerose sistêmica e suas características distintivas. O examinador busca testar se o candidato knows das formas especiais desta doença autoimune e sua apresentação clínica.</p><p><strong>A resposta correta é a alternativa A - forma sine-esclero.</strong> Esta é uma forma particular onde a pele permanece normal (sem espessamento), mas há acometimento interno significativos dos órgãos, especialmente esôfago e pulmão, associado ao fenômeno de Raynaud e à presença dos autoanticorpos característicos (anticentrômero, anti-Scl70, etc.).</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>Alternativa B:</strong> Inverte as características. A forma <strong>difusa</strong> é que tem evolução mais rápida, com acometimento proximal (acima de cotovelos e joelhos), não a forma limitada que tem evolução mais lenta e com acometimento predominantemente distal.</p><p><strong>Alternativa C:</strong> A classificação entre forma limitada e difusa baseia-se no padrão de acometimento cutâneo, não no envolvimento de órgãos internos. Ambas podem ter complicações pulmonares e gastrintestinais.</p><p><strong>Alternativa D:</strong> Comete dois erros: confunde a forma difusa com a síndrome CREST (que corresponde à forma limitada) e erra sobre a evolução - a forma limitada (CREST) tem evolução mais lenta, não a difusa.</p><p><strong>Alternativa E:</strong> Inverte os padrões de acometimento. Na forma <strong>difusa</strong> há acometimento de tronco, braços e coxas, mas <strong>não poupa</strong> as mãos e dedos (diferente da forma limitada).</p><p><strong>Dica de memorização:</strong> <strong>SINE-ESC</strong> = Sem pele + Esôfago + Coração + Anticorpos. <strong>CREST</strong> = Calcificação, Raynaud, Esôfago, Esclerodactilia, Telangiectasia. <strong>DIFUSA</strong> = Difícil (progressão rápida + acometimento proximal).</p><p>Classicamente em provas, costumam confundir a forma sine-esclero com as outras formas. Lembre-se: sine-esclero = pele normal, mas órgão acometido!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Sobre o tratamento medicamentoso da Osteoporose, é correto afirmar:",
+      "alternativas": [
+        "Risco de fratura moderado pelo FRAX indica tratamento medicamentoso, independente da avaliação da densitometria óssea.",
+        "Os bisfosfonatos orais e intravenosos são contraindicados em pacientes com hipocalcemia, insuficiência renal grave com taxa de filtração glomerular = 35 mL/min.",
+        "A dose de suplementação de cálcio é de 1.000 mg/dia em mulheres na pós menopausa.",
+        "A reposição recomendada de Vitamina D3 é de 800-1.000 UI/dia para manter nível sérico de 25(OH)D = 20 ng/mL.",
+        "O Teriparatide é uma forma sintética do hormônio da paratireoide e é o tratamento de primeira linha nos casos de fratura de fêmur."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 explora o conhecimento prático sobre o manejo farmacológico da osteoporose, focando em contraindicações de medicamentos de primeira linha e metas de suplementação. É essencial reconhecer os critérios para uso seguro de bisfosfonatos.</p><p><strong>A resposta correta é a alternativa B.</strong> Os bisfosfonatos (tanto orais quanto intravenosos) são efetivamente contraindicados em pacientes com hipocalcemia e insuficiência renal grave. O ponto de corte tradicional é TFG < 35 mL/min para ácido zoledrônico e alendronato, e < 30 mL/min para outros. A hipocalcemia deve ser corrigida antes do início, pois esses medicamentos inibem a reabsorção óssea e podem agravar a hipocalcemia.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> O risco moderado pelo FRAX <strong>não indica tratamento automático</strong>. Precisa-se integrar com a densitometria óssea. Apenas com fratura por fragilidade, T-score ≤ -2,5, ou alto risco no FRAX (≥ 20% fratura maior ou ≥ 3% fratura de quadril) justifica-se tratamento medicamentoso.</p><p><strong>Alternativa C:</strong> A dose de cálcio para mulheres pós-menopáusicas é <strong>1.200 mg/dia</strong>, não 1.000 mg/dia. Este valor deve ser alcançado considerando dieta e suplementação, sempre monitorando para evitar sobrecarga de cálcio.</p><p><strong>Alternativa D:</strong> A meta de vitamina D em osteoporose é <strong>≥ 30 ng/mL</strong>, não 20 ng/mL. Para atingir essa meta, frequentemente são necessárias 800-2.000 UI/dia, ajustando conforme resposta laboratorial, exposição solar e IMC.</p><p><strong>Alternativa E:</strong> A teriparatida <strong>não é primeira linha</strong> para fratura de fêmur. Reserved-se para casos graves ou de falha a antirreabsortivos. A primeira linha são bisfosfonatos, especialmente ácido zoledrônico, que tem eficácia comprovada em fratura de quadril.</p><p><strong>Mnemônico importante:</strong> <strong>FRAX-MD</strong> = FRAX + Menopausa + Densitometria = fatores para decidir tratamento. <strong>CáLCIO-vitaD</strong> = 1.200 mg + 800-2.000 UI = doses de reposição.</p><p>Pegadinha comum: CFR许多人 esquece que TFG < 35 mL/min contraindica bisfosfonatos intravenosos!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Observa-se a anomalia genética molecular translocação t(15;17) na leucemia tipo",
+      "alternativas": [
+        "Mieloide-monocítica aguda.",
+        "Promielocítica aguda.",
+        "Linfocítica crônica.",
+        "Megacariocítica aguda.",
+        "Mieloide crônica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a identificação de anomalias genéticas moleculares características em diferentes tipos de leucemia. O examinador avalia se o candidato conhece os principais translocações e suas associações específicas com subtipos leucêmicos.</p><p><strong>A resposta correta é a alternativa B - Leucemia Promielocítica Aguda.</strong> A translocação t(15;17) é patognomônica desta forma de leucemia mieloide aguda, resultando no gene de fusão PML-RARα, que bloqueia a diferenciação dos promielócitos. Esta translocação define a Leucemia Promielocítica Aguda (L3 na classificação FAB).</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> A Leucemia Mieloide-Monocítica Aguda (M4) frequentemente apresenta inversões do cromossomo 16 (inv(16)) ou translocação t(8;21), não a t(15;17).</p><p><strong>Alternativa C:</strong> A Leucemia Linfocítica Crônica não tem translocações específicas características. Eventuais aberrações cromossômicas são mais complexas e não incluem t(15;17).</p><p><strong>Alternativa D:</strong> A Leucemia Megacariocítica Aguda (M7) está frequentemente associada a translocações envolvendo o gene RBM15, como t(1;22), não t(15;17).</p><p><strong>Alternativa E:</strong> A Leucemia Mieloide Crônica é caracterizada pelo cromossomo Filadélfia t(9;22), gerando o gene de fusão BCR-ABL, completamente diferente da t(15;17).</p><p><strong>Mnemônico essencial:</strong> <strong>15-17 = Promielocítica</strong>. Associe visualmente: 15 = 1 e 5 = P e M (Promielocítica Mieloide) e 17 = RAR (receptor do ácido retinoico).</p><p><strong>Importância clínica:</strong> A identificação da t(15;17) tem implicação terapêutica direta, pois os pacientes respondem dramaticamente ao ácido all-trans-retinóico (ATRA), que induz diferenciação celular, combinado com quimioterapia.</p><p><strong>Dica de prova:</strong> Questões sobre translocações são frequentes. Memorize: 9;22 = Filadélfia (LMC), 15;17 = Promielocítica, 8;21 = LMA com maturação.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Leucemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "<html><head></head><body>Paciente sexo masculino, 65 anos, portador de diabetes e hipertensão arterial, deu entrada no pronto-socorro com quadro de dor precordial, em aperto, de forte intensidade, com irradiação para membro superior esquerdo, que começou há 5 horas da admis- são. Sinais vitais de entrada PA: 140 × 80 mmHg, FC: 85 bpm, SatO2: 98% em ar ambiente e FR: 16 ipm. Ao exame físico paciente apresentava estertores pulmonares em 1/3 inferiores de ambos hemitórax, estando eupneico, demais sistemas sem al- terações. Foi realizado o seguinte ECG. Com base no quadro clinico e ECG, o diagnóstico é infarto agudo do miocárdio,\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ14.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "com supra de ST, Killip I.",
+        "com supra de ST, Killip II.",
+        "com supra de ST, Killip III.",
+        "com supra de ST, Killip IV.",
+        "sem supra de ST, Killip I."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia a capacidade de integrar dados clínicos com achados electrocardiográficos para diagnóstico de infarto agudo do miocárdio e classificação de gravidade pela escala de Killip. A banca EINSTEIN testou conhecimento sobre o reconhecimento de supra de ST e sua correlação clínica.</p><p><strong>A resposta correta é a alternativa B - Infarto com supra de ST, Killip II.</strong> O paciente apresenta critérios clínicos para IAMCSST e, pela presença de estertores pulmonares em 1/3 inferiores (indicando congestão pulmonar inicial), enquadram-se na classe Killip II.</p><p>Análise de cada alternativa:</p><p><strong>Alternativa A:</strong> Estaria correta se o paciente estivesse assintomático (Killip I), mas a presença de estertores pulmonares confirma congestão pulmonar, caracterizando Killip II.</p><p><strong>Alternativa B:</strong> <strong>CORRETA.</strong> O quadro clínico (dor precordial típica há 5 horas) + alterações sugestivas no ECG (mesmo sem visualizá-la diretamente) + achado de estertores pulmonares = IAMCSST com insuficiência cardíaca inicial (Killip II).</p><p><strong>Alternativa C:</strong> A classe Killip III caracteriza edema pulmonar agudo (estertores em mais de 50% dos campos pulmonares + dispneia importante), que não está presente neste caso.</p><p><strong>Alternativa D:</strong> A classe Killip IV corresponde ao choque cardiogênico (hipotensão + sinais de hipoperfusão), também não presente (PA 140x80 mmHg, eupneico).</p><p><strong>Alternativa E:</strong> Contrariada pelo quadro típico de dor e pelo contexto clínico altamente sugestivo de IAMCSST.</p><p><strong>Classificação de Killip:</strong> <strong>K1</strong> = Sem ICC, <strong>K2</strong> = ICC leve (estertores < 1/3), <strong>K3</strong> = Edema pulmonar, <strong>K4</strong> = Choque cardiogênico.</p><p><strong>Dica mnemônica:</strong> <strong>1, 2, 3, 4 = Estável, Estertores, Edema, Choque.</strong> Lembre-se que Killip I-II têm melhor prognóstico que III-IV, justificando estratificação de risco e escolha terapêutica.</p><p><strong>Implições terapêuticas:</strong> Em Killip II, além da reperfusão urgente, considerar diurético e monitorização cardiovascular intensiva.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_InfartoAgudoDoMiocardioComSupr"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente sexo masculino, 35 anos, sofreu acidente de moto, com traumatismo cranioencefálico grave, e encontra-se no leito de UTI, sem sedação. Há 72 horas, sem despertar, intubado, em ventilação mecânica em modo controlado, exames laboratoriais normais, em uso de droga vasoativa. O plantonista suspeitou que o paciente encontrava- se em morte encefálica. Os achados de exame físico que sugerem tal diagnóstico e o exame confirmatório que deve ser solicitado:",
+      "alternativas": [
+        "Reflexo fotomotor ausente, reflexo córneopalpebral ausente, reflexo oculocefálico ausente e reflexo de tosse presente. Eletroencefalograma.",
+        "Reflexo patelar ausente, reflexo vestíbulo-calórico ausente, reflexo oculocefálico ausente e teste da apneia positivo. Tomografia de crânio com contraste.",
+        "Reflexo vestíbulo-calórico ausente, reflexo córneopalpebral ausente, reflexo oculocefálico ausente e teste da Apneia positivo. USG Doppler de vasos intracranianos.",
+        "Reflexo fotomotor ausente, Reflexo córneopalpebral ausente, reflexo oculocefálico ausente e teste da apneia positivo. Ressonância magnética de cranio.",
+        "Reflexo vestíbulo calórico ausente, reflexo córneo palpebral ausente, reflexo oculocefálico ausente e reflexo de tosse presente. Eletroencefalograma."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre os critérios diagnósticos para morte encefálica, especificamente os reflexos de tronco encefálico que devem estar ausentes e o exame confirmatório obrigatório. É um tema crítico em medicina intensiva.</p><p><strong>A resposta correta é a alternativa C.</strong> Para suspeita de morte encefálica, devem estar ausentes: reflexo vestíbulo-calórico (teste da água gelada no meato acústico), reflexo córneopalpebral (tocar córnea), reflexo oculocefálico (reflexo do boneco), e o teste da apneia deve ser positivo. O exame confirmatório de escolha é o USG Doppler de vasos intracranianos (alterações hemodinâmicas características).</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A:</strong> O reflexo de tosse <strong>deve estar ausente</strong>, não presente. A presença de qualquer reflexo de tronco exclui morte encefálica.</p><p><strong>Alternativa B:</strong> O exame confirmatório de escolha <strong>não é TC com contraste</strong>. TC pode mostrar edema cerebral, mas não confirma morte encefálica. Além disso, o reflexo patelar (medular) é irrelevante para este diagnóstico.</p><p><strong>Alternativa D:</strong> O exame confirmatório não é RM. O USG Doppler é mais rápido, acessível e mostra padrão hemodinâmico típico (fluxos reverberantes em artérias cerebrais).</p><p><strong>Alternativa E:</strong> Novamente, o reflexo de tosse deve estar ausente. O EEG pode mostrar isoeletricidade, mas não é o primeiro exame confirmatório.</p><p><strong>Critérios essenciais para morte encefálica:</strong> 1) Coma profundo, 2) Ausência de todos os reflexos de tronco, 3) Teste de apneia positivo, 4) Exclusão de causas de depressão do SNC (sedativos, hipotermia, choque).</p><p><strong>Mnemônico:</strong> <strong>4R + APNEIA = Morte Encefálica</strong>. 4 Reflexos: fotomotor, córneopalpebral, oculocefálico e vestíbulo-calórico ausentes + teste da apneia positivo.</p><p><strong>Importância legal:</strong> Morte encefálica = morte legal. Critérios rigorosos para evitar erros irreversíveis.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "A Síndrome Metabólica é uma condição que está associada a um aumento no risco de doenças cardiovasculares e cerebrovasculares. NÃO é critério diagnóstico:",
+      "alternativas": [
+        "HDL < 40 mg/dL em homens e HDL < 50 mg/dL em mulheres.",
+        "Pressão arterial sistólica = 130 mmHg ou diastólica = 85 mmHg.",
+        "glicemia de jejum = 110 mg/dL.",
+        "triglicerídeos = 150 mg/dL.",
+        "LDL > 130 mg/dL."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre os critérios diagnósticos da Síndrome Metabólica, uma condição cada vez mais prevalente no Brasil e diretamente relacionada ao aumento do risco cardiovascular.</p><p><strong>A resposta correta é E - LDL > 130 mg/dL.</strong> Esta alternativa NÃO faz parte dos critérios diagnósticos da Síndrome Metabólica.</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A:</strong> HDL < 40 mg/dL em homens e < 50 mg/dL em mulheres - CORRETO. Baixo HDL é um dos 5 critérios obrigatórios.</p><p><strong>Alternativa B:</strong> PA sistólica ≥ 130 mmHg ou diastólica ≥ 85 mmHg - CORRETO. Hipertensão é critério estabelecido.</p><p><strong>Alternativa C:</strong> Glicemia de jejum ≥ 110 mg/dL - CORRETO. Alteração da glicemia é um dos critérios.</p><p><strong>Alternativa D:</strong> Triglicerídeos ≥ 150 mg/dL - CORRETO. Dislipidemia é critério obrigatório.</p><p><strong>Alternativa E:</strong> LDL > 130 mg/dL - INCORRETO. LDL elevados não são critérios para SM. Os critérios usam HDL baixo e triglicerídeos elevados.</p><p>Os 5 critérios da Síndrome Metabólica (conforme IDF 2006 e NCEP-ATP III) são: 1) Obesidade central (circunferência da cintura), 2) Triglicerídeos ≥ 150 mg/dL, 3) HDL < 40 mg/dL (homens) ou < 50 mg/dL (mulheres), 4) PA ≥ 130/85 mmHg, 5) Glicemia de jejum ≥ 100 mg/dL (atualização 2009). A presença de 3 critérios confirma o diagnóstico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "<html><head></head><body>Paciente sexo feminino, 72 anos, hipertensa e diabética, deu entrada no pronto- socorro com quadro de desvio de rima labial para direita e hemiparesia à esquerda, que começou há 2 horas da admissão. Os sinais vitais da entrada eram PA: 175 × 105 mmHg, FC: 82 bpm, FR: 14 ipm, SatO²: 95% em ar ambiente. Paciente realizou tomografia de crânio conforme imagem abaixo. O diagnóstico provável e a melhor conduta:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ17.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Acidente vascular cerebral isquêmico. Trombólise química, se não houver contraindicações.",
+        "Acidente vascular cerebral isquêmico. Transferência para UTI e depois trombólise química.",
+        "Acidente vascular cerebral isquêmico. Craniectomia descompressiva.",
+        "Acidente vascular cerebral hemorrágico. Trombólise química, se não houver contraindicações.",
+        "Acidente vascular cerebral hemorrágico. Craniectomia descompressiva."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de reconhecer e manejar adequadamente o Acidente Vascular Cerebral (AVC) isquêmico agudo, uma emergência neurológica onde cada minuto é crucial para o prognóstico do paciente.</p><p><strong>A resposta correta é A - AVC isquêmico. Trombólise química, se não houver contraindicações.</strong></p><p><strong>Análise do caso:</strong> Mulher de 72 anos com hipertensão e diabetes (fatores de risco), apresentando déficit neurológico agudo (desvio de rima labial para direita e hemiparesia à esquerda) com início há 2 horas. A PA elevada (175 × 105) é uma resposta fisiológica ao AVC e não deve ser tratada agressivamente na fase aguda.</p><p><strong>Interpretação da tomografia:</strong> A imagem mostra hiperdensidade do seguimento M1 da artéria cerebral média direita (sinal do hiperdense), característico do AVC isquêmico agudo por trombose arterial. Não há evidências de hemorragia (que apareceria como hipodensidade com efeito de massa).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> AVC isquêmico com indicação de trombólise endovenosa (alteplase) se dentro da janela terapêutica de 4,5 horas. O paciente está na 2ª hora, ideal para o tratamento.</p><p><strong>B) INCORRETA:</strong> Não há necessidade de transferência para UTI antes da trombólise. O protocolo é direto para sala de emergência neurológica.</p><p><strong>C) INCORRETA:</strong> Craniectomia é indicada em AVC maligno com hipertensão intracraniana, não na fase aguda.</p><p><strong>D e E) INCORRETA:</strong> A tomografia confirma AVC isquêmico, não hemorrágico.</p><p>Esta questão destaca a importância do diagnóstico preciso através de imagem e da rápida instituição da trombólise, tratamento que pode reduzir significativamente as sequelas neurológicas quando realizado adequadamente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_AcidenteVascularCerebralIsquemico"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "<html><head></head><body>Paciente sexo masculino, 75 anos, hipertenso e tabagista, começou a cursar com dor torácica de instalação súbita, de forte intensidade, com irradiação para o dorso. Paciente deu entrada no Pronto-Socorro com PA: 180 × 120 mmHg, FC: 105 bpm, FR: 20 ipm, SatO²: 96% em ar ambiente. Paciente realizou a seguinte tomografia. Com base no quadro clínico e na tomografia, o diagnóstico mais provável e o melhor tratamento:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ18.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Tromboembolismo Pulmonar Agudo. Trombólise Química e Heparina.",
+        "Infarto Agudo do Miocárdio. Aspirina e Estatina.",
+        "Dissecção Aguda de Aorta. Betabloqueador e Nitroprussiato de Sódio.",
+        "Tamponamento Cardíaco. Diurético e Dobutamina.",
+        "Dor muscular. Anti-inflamatório e Relaxante Muscular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa sua habilidade de reconhecer a Dissecção Aguda de Aorta (DAA), uma das emergências cardiovasculares mais graves e letais, especialmente em homens hipertensos idosos.</p><p><strong>A resposta correta é C - Dissecção Aguda de Aorta. Betabloqueador e Nitroprussiato de Sódio.</strong></p><p><strong>Análise clínica:</strong> Homem de 75 anos, hipertenso e tabagista, apresentando dor torácica súbita de forte intensidade com irradiação para o dorso - padrão típico da DAA. A PA muito elevada (180 × 120) é um achado clássico que contraindica certas intervenções.</p><p><strong>Interpretação da tomografia:</strong> A imagem revela o sinal patognomônico da dissecção: um flap intimal na aorta ascendente com duplo lúmen (verdadeiro e falso), característica inequívoca da dissecção aórtica tipo A de Stanford.</p><p><strong>Análise diferencial das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Tromboembolismo pulmonar não explica a irradiação dorsal nem a PA tão elevada. A tomografia também é característica de DAA.</p><p><strong>B) INCORRETA:</strong> Infarto miocárdico não causa irradiação dorsal característica. A imagem também não sugere infarto.</p><p><strong>C) CORRETA:</strong> Dissecção de aorta. O tratamento inicial são betabloqueadores (para reduzir o shear stress) associados a vasodilatadores como nitroprussiato para controle da PA.</p><p><strong>D) INCORRETA:</strong> Tamponamento cardíaca não apresenta este padrão de dor nem esta tomografia.</p><p><strong>E) INCORRETA:</strong> A dor muscular não explica a PA elevada nem a imagem tomográfica.</p><p>Este caso ilustra a importância de reconhecer rapidamente a DAA, que tem mortalidade de 1-2% por hora nas primeiras 48 horas. O controle pressórico imediato com betabloqueadores e vasodilatadores é fundamental antes da avaliação cirúrgica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_DisseccaoAorticaAguda"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Paciente sexo feminino, 32 anos, vinha cursando com quadro de disúria há 4 dias, com piora do quadro, passando a apresentar muita fraqueza, dor em flanco direito e febre de 39 °C. Resolveu, então, procurar o pronto-socorro. Ao chegar, sinais vitais T: 39 °C, FC: 120, FR: 24 e PA: 90 × 60 mmHg. Tendo em vista que se está diante de um provável quadro de sepse de foco urinário, a melhor conduta é:",
+      "alternativas": [
+        "iniciar antibiótico de amplo espectro em até uma hora, expansão volêmica com 20 mL/kg de cristaloide e internação em UTI.",
+        "iniciar antibiótico de amplo espectro em até duas horas, iniciar vasopressores para manter PAM > 65 mmHg e internação em UTI.",
+        "coletar hemoculturas e urocultura, depois iniciar antibiótico de amplo espectro em até uma hora e expansão volêmica com 30 mL/kg de cristaloide.",
+        "coletar hemoculturas e urocultura, expansão volêmica com 20 mL/kg de cristaloide e iniciar vasopressores se paciente mantiver hipotensão durante ou após expansão volêmica.",
+        "dosagem de lactato, coletar hemoculturas e urocultura, aguardar exames para início de antibiótico de amplo espectro e expansão volêmica com 30 mL/kg de cristaloide."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o manejo da sepse, uma condição de alta mortalidade que requer reconhecimento precoce e tratamento rigoroso conforme as diretrizes internacionais mais atuais.</p><p><strong>A resposta correta é C - Coletar hemoculturas e urocultura, depois iniciar antibiótico de amplo espectro em até uma hora e expansão volêmica com 30 mL/kg de cristaloide.</strong></p><p><strong>Análise do caso clínico:</strong> Mulher de 32 anos com pielonefrite evoluindo para choque séptico. Os critérios de qSOFA (taquipneia, hipotensão) estão presentes, além dos critérios de SIRS (febre, taquicardia, taquipneia). A presença de hipotensão (PA 90 × 60) define choque séptico.</p><p><strong>Racional da resposta correta:</strong></p><p>• <strong>Coleta de culturas primeiro:</strong> Fundamental obter hemoculturas e urocultura antes dos antibióticos para não comprometer a identificação do agente causador.</p><p>• <strong>Antibiótico em 1 hora:</strong> Bundle da Surviving Sepsis Campaign 2021 estabelece início de antimicrobianos em até 1 hora para choque séptico.</p><p>• <strong>Expansão com 30 mL/kg:</strong> Volume maior que o tradicionalmente recomendado, baseado em evidências de melhor prognóstico em choque séptico.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) INCORRETA:</strong> Iniciar antibiótico antes da coleta de culturas compromete o diagnóstico microbiológico.</p><p><strong>B) INCORRETA:</strong> Início do antibiótico em 2 horas está além do tempo recomendado para choque séptico.</p><p><strong>D) INCORRETA:</strong> Volume de 20 mL/kg é insuficiente para choque séptico; também atrasa o antibiótico.</p><p><strong>E) INCORRETA:</strong> Atrasar antibióticos para aguardar exames vai contra as diretrizes. O lactato é importante para avaliação, mas não deve retardar o tratamento.</p><p>Esta questão enfatiza que na sepse, especialmente choque séptico, tempo é vida. O reconhecimento precoce e o cumprimento rigoroso do bundle de 1 hora são fundamentais para reduzir a mortalidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "A Hipertensão Arterial Sistêmica é uma condição bastante prevalente. Alguns indivíduos acabam por apresentar uma hipertensão de difícil controle, com uso de ao menos três classes de anti-hipertensivos e ainda assim não obtém controle dos níveis tensionais. Dessa forma, deve-se pensar em hipertensão arterial secundária, tendo como possíveis causas, EXCETO:",
+      "alternativas": [
+        "Coartação de aorta.",
+        "Doença de Addison.",
+        "Feocromocitoma.",
+        "Hiperaldosteronismo primário.",
+        "Doença renovascular."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as causas de hipertensão arterial secundária, uma forma de HAS que afeta 5-15% dos hipertensos e é potencialmente curável quando a causa é identificada e tratada adequadamente.</p><p><strong>A resposta correta é B - Doença de Addison.</strong> Esta é a única alternativa que NÃO causa hipertensão arterial.</p><p><strong>Análise de cada alternativa:</strong></p><p><strong>A) Coartação de aorta - CORRETA (causa hipertensão):</strong> Causa HAS por механизм de obstrução ao fluxo aórtico, levando a hipertensão arterial nos membros superiores e hipoperfusão renal secundária.</p><p><strong>B) Doença de Addison - INCORRETA (NÃO causa hipertensão):</strong> Causa <em>hipotensão</em> devido à deficiência de cortisol e aldosterona, resultando em perda de sal e água. É caracterizada por hiperpigmentação, fadiga e hiponatremia.</p><p><strong>C) Feocromocitoma - CORRETA (causa hipertensão):</strong> Tumor secretor de catecolaminas que causa HAS paroxística ou sustentada, com episódios de cefaleia, sudorese e palpitação.</p><p><strong>D) Hiperaldosteronismo primário - CORRETA (causa hipertensão):</strong> Excesso de aldosterona causa retenção de sal e água, resulting em HAS e hipocalemia. É a causa endócrina mais comum de hipertensão secundária.</p><p><strong>E) Doença renovascular - CORRETA (causa hipertensão):</strong> Estenose das artérias renais ativa o sistema renina-angiotensina-aldosterona, causando hipertensão resistente.</p><p><strong>Pontos importantes para a prática:</strong> A doença de Addison representa uma exceção importante - enquanto a maioria das causas endócrinas de hipertensão envolvem excesso hormonal (ex: Cushing, feocromocitoma, hiperaldosteronismo), a Addison causa deficiência hormonal com hipo-tensão. A presença de hipocalemia em hipertenso deve levantar suspeita de hiperaldosteronismo, enquanto hipercalemia sugere insuficiência adrenal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Paciente sexo masculino, 56 anos, portador de miocardiopatia chagásica, deu entrada no pronto-socorro por relato de cansaço aos pequenos esforços, edema ascendente de membros inferiores, ortopneia e dispneia paroxística noturna, tontura e náuseas. À avaliação, PA: 102 × 65 mmHg, FC: 86 bpm, FR: 20 ipm, SatO²: 93% em ar ambiente. Paciente com estertores crepitantes pulmonares em 1/3 inferior de ambos os pulmões, com estase de jugulares a 45°, edema de membros inferiores 3+/4, tempo de enchimento capilar > 5 segundos. O diagnóstico provável e a melhor conduta, nesse caso:",
+      "alternativas": [
+        "Insuficiência cardíaca descompensada perfil B - diurético e vasopressor.",
+        "Insuficiência cardíaca descompensada perfil A - diurético e inotrópico.",
+        "Insuficiência cardíaca descompensada perfil C - diurético e inotrópico.",
+        "Insuficiência cardíaca descompensada perfil B - cristaloide e vasopressor.",
+        "Insuficiência cardíaca descompensada perfil C - cristaloide e vasopressor."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN avalia seu conhecimento sobre classificação e manejo de insuficiência cardíaca descompensada, especialmente no contexto de miocardiopatia chagásica.</p><p><strong>A resposta correta é C - Insuficiência cardíaca descompensada perfil C com diurético e inotrópico.</strong></p><p><strong>Análise do caso clínico:</strong> O paciente apresenta miocardiopatia chagásica com quadro típico de IC descompensada: cansaço aos pequenos esforços, edema ascendente, ortopneia, dispneia paroxística noturna, estertores crepitantes pulmonares, estase jugular, edema de membros inferiores e tempo de enchimento capilar prolongado (>5 segundos). Sinais vitais mostram hipotensão (PA 102x65), sugerindo comprometimento hemodinâmico importante.</p><p><strong>Classificação perfis A-D da IC:</strong> A classificação ACC/AHA divide a IC em 4 perfis. O perfil C indica IC com sintomas em repouso ou aos mínimos esforços, caracterizado por congestão sistêmica/pulmonar e hipoperfusão - exatamente o quadro apresentado. Diferente do perfil B (sem sintomas em repouso) e do perfil A (alto risco sem sintomas).</p><p><strong>Análise das alternativas:</strong> As alternativas A e B estão incorretas por indicarem perfil A ou B, que não se aplicam ao caso. As alternativas D e E mencionam cristaloide e vasopressor, que não são indicados em IC descompensada - cristaloide pode piorar a congestão e vasopressores podem aumentar a pós-carga.</p><p><strong>Conduta adequada:</strong> O perfil C requer diuréticos (para controlar congestão) e inotrópicos (para melhorar contratilidade e perfusão). No contexto da miocardiopatia chagásica, esta abordagem é fundamental para estabilização hemodinâmica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente sexo feminino, 76 anos, está internada na UTI por quadro de influenza. Encontra-se sob sedação em ventilação mecânica. A paciente tem 160 cm, com peso predito de 52 kg. Os parâmetros do ventilador mecânico são: modo controlado a pressão, FR: 15, PEEP: 8, FiO²: 40%, tempo inspiratório de 1,0, pressão inspiratória de 15, volume corrente: 340 mL. A gasometria arterial: pH: 7,30, PO²: 75, PCO²: 52, SatO²: 92%, BIC: 26. A melhor opção com ajustes no ventilador mecânico para diminuir a PCO² e aumentar a PO², respectivamente,",
+      "alternativas": [
+        "diminuir o tempo inspiratório - aumentar FiO².",
+        "aumentar pressão inspiratória - diminuir a frequência respiratória.",
+        "diminuir a pressão inspiratória - aumentar a PEEP.",
+        "aumentar a pressão inspiratória - diminuir FiO².",
+        "aumentar a frequência respiratória - aumentar a PEEP."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN testa seu conhecimento sobre ajustes de ventilação mecânica para otimizar a troca gasosa, especificamente para reduzir PCO² (hipercapnia) e aumentar PO² (hipoxemia).</p><p><strong>A resposta correta é E - Aumentar a frequência respiratória e aumentar a PEEP.</strong></p><p><strong>Análise dos parâmetros atuais:</strong> A gasometria mostra pH 7,30 (acidose), PCO² 52 (hipercapnia), PO² 75 (hipoxemia) e SatO² 92%. O paciente tem ventilação mecânica com FR 15, PEEP 8, FiO² 40%, e volume corrente adequado de 340mL (6,5mL/kg para 52kg).</p><p><strong>Estratégia para reduzir PCO²:</strong> A hipercapnia resulta de hipoventilação alveolar. Para reduzir PCO², precisamos aumentar o volume minuto (VE = volume corrente x frequência respiratória). Como o volume corrente já está adequado, a solução é aumentar a frequência respiratória - o que é mais seguro que aumentar o volume corrente (risco de lesão pulmonar).</p><p><strong>Estratégia para aumentar PO²:</strong> A hipoxemia pode ser melhorada aumentando a PEEP, que promove recrutamento alveolar e melhora a relação ventilação/perfusão. A FiO² já está em 40% (aceitável), então aumentar PEEP é mais apropriado que aumentar FiO² (risco de toxicidade do oxigênio).</p><p><strong>Análise das alternativas incorretas:</strong> A (diminuir tempo inspiratório não afeta PCO² diretamente) B (diminuir FR piora hipercapnia) C (diminuir pressão inspiratória pode reduzir ventilação) D (aumentar pressão inspiratória não resolve hipercapnia, apenas volume corrente).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "O diabetes é uma condição que cronicamente leva a uma série de complicações vasculares, renais, oftalmológicas, entre outras. No entanto, algumas pessoas se apresentam com uma complicação grave aguda, mesmo sem saber serem portadoras do dia- betes, a cetoacidose diabética. São aspectos associados a seu diagnóstico e seu tratamento:",
+      "alternativas": [
+        "Glicemia > 250 mg/dL, pH = 7,5 e BIC < 15. Fazem parte do seu tratamento: hidratação venosa, insulina e dieta para diabético.",
+        "Glicemia > 600 mg/dL, pH = 7,3 e BIC < 15. Fazem parte do seu tratamento: hidratação venosa, insulina e jejum.",
+        "Glicemia > 600 mg/dL, pH = 7,3 e BIC < 18. Fazem parte do seu tratamento: hidratação venosa, insulina e dieta para diabético.",
+        "Glicemia > 250 mg/dL, pH = 7,5 e BIC < 18. Fazem parte do seu tratamento: hidratação venosa, insulina e jejum.",
+        "Glicemia > 250 mg/dL, pH = 7,3 e BIC < 15. Fazem parte do seu tratamento: hidratação venosa, insulina e jejum."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN avalia seu conhecimento sobre critérios diagnósticos e tratamento da cetoacidose diabética (CAD), uma emergência endócrina grave.</p><p><strong>A resposta correta é E - Glicemia > 250 mg/dL, pH = 7,3 e BIC < 15. Tratamento: hidratação venosa, insulina e jejum.</strong></p><p><strong>Critérios diagnósticos da CAD:</strong> A CAD é caracterizada por tríade: hiperglicemia (>250 mg/dL), acidose metabólica (pH < 7,3) e cetose (BIC < 15 mEq/L - indica alcalose metabólica compensatória pela perda de corpos cetônicos ácidos). A glicose >600 mg/dL das alternativas B e C é típica de estado hiperosmolar, não de CAD.</p><p><strong>Fisiopatologia:</strong> Na CAD, ocorre déficit insulínico absoluto ou relativo, levando à lipólise com produção de corpos cetônicos. Estes cetoácidos causam acidose metabólica, explique a respiração de Kussmaul (compensação respiratória). O pH 7,5 das alternativas A e D indica alcalose, incompatível com CAD.</p><p><strong>Tratamento da CAD:</strong> O pilares são: 1) Hidratação vigorosa (SF 0,9% 1-2L na primeira hora) para corrigir desidratação e hiperosmolaridade, 2) Insulina (0,1 U/kg/h em infusão contínua) para bloquear cetogênese e promover captação de glicose, 3) Jejum durante a fase aguda (evita nova produção de glicose e permite controle metabólico).</p><p><strong>Por que não dieta:</strong> A dieta é introduzida apenas após controle da CAD, quando o paciente já está estável e a glicemia controlada. Durante a fase aguda, o jejum é fundamental para quebrar o ciclo vicioso da hiperglicemia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_DiabetesCetoacidoseDiabetica"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Paciente sexo masculino, 18 anos, deu entrada no pronto-socorro com quadro de cefaleia de forte intensidade e febre. Foi submetido a tomografia de crânio, que não constatou alterações, e estudo do líquor, com os seguintes resultados: Aspecto: ligeiramente turvo Glicose = 20 mg/dL Proteínas = 180 mg/dL Celularidade = 520/mm³ (predomínio neutrófilos) Com base no quadro clínico e no resultado do líquor, o provável diagnóstico e o melhor tratamento:",
+      "alternativas": [
+        "Meningite viral. Aciclovir e Corticoide.",
+        "Meningite tuberculosa. Rifampicina, Isoniazida, Pirazinamida e Etambutol.",
+        "Meningite bacteriana. Ceftriaxona.",
+        "Meningite viral. Ceftriaxona.",
+        "Meningite bacteriana. Aciclovir."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN testa sua capacidade de interpretar análise do líquor para diagnóstico diferencial de meningites, correlacionando com apresentação clínica.</p><p><strong>A resposta correta é C - Meningite bacteriana com ceftriaxona.</strong></p><p><strong>Análise do líquor (LCR):</strong> O exame liquor mostra: aspecto ligeiramente turvo (sugestivo de processo inflamatório), glicose 20 mg/dL (normal: 45-80 mg/dL - muito baixa), proteínas 180 mg/dL (normal: 15-45 mg/dL - muito elevada), celularidade 520/mm³ (normal: 0-5/mm³ - muito elevada) com predomínio de neutrófilos. Esta tríade é clássico de meningite bacteriana.</p><p><strong>Diagnóstico diferencial das meningites:</strong> Meningite bacteriana apresenta LCR purulento (celularidade >1000/mm³, predomínio neutrófilos, proteínas >100 mg/dL, glicose <40 mg/dL). Meningite viral tem celularidade 50-500/mm³ (predomínio linfócitos), proteínas <100 mg/dL, glicose normal. Meningite tuberculosa caracteriza-se por celularidade 100-500/mm³, proteínas muito elevadas (>100 mg/dL), glicose muito baixa.</p><p><strong>Tratamento empírico:</strong> O tratamento da meningite bacteriana deve ser iniciado imediatamente com ceftriaxona (alternativa C) ou cefotaxima. A meningite viral (alternativas A e D) seria tratada com aciclovir, mas o líquor é incompatível. A meningite tuberculosa (alternativa B) requer tratamento prolongado com múltiplas drogas, mas o quadro clínico e liquor não sugere.</p><p><strong>Importância clínica:</strong> O diagnóstico rápido e tratamento imediato são cruciais - atraso no tratamento aumenta significativamente a morbimortalidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesDoSistemaNervosoCentr"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "A ocorrência de acidentes com materiais biológicos é algo bastante frequente. O seu risco está relacionado à transmissão de algumas doenças, como HIV, Hepatite C e Hepatite B. Em relação ao acidente e sua conduta, é correto:",
+      "alternativas": [
+        "Acidente leve, em que houve contato de sangue com pele íntegra, é recomendado profilaxia para HIV.",
+        "Acidente moderado, em que houve contato de secreções com mucosa, sem sangue visível, é necessária a profilaxia para HIV.",
+        "Acidente leve, em que houve contato de secreções com mucosa, sem sangue visível, não é necessária a profilaxia para HIV.",
+        "Acidente grave, em que houve exposição percutânea com material perfurocortante, não é necessária profilaxia para HIV.",
+        "Acidente grave, em que houve contato de secreções com mucosa, sem sangue visível, é necessária a profilaxia para HIV."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN avalia seu conhecimento sobre profilaxia pós-exposição (PPE) para HIV em acidentes com material biológico, seguindo protocolos brasileiros atuais.</p><p><strong>A resposta correta é B - Acidente moderado, com contato de secreções com mucosa (sem sangue visível), é necessária profilaxia para HIV.</strong></p><p><strong>Classificação de acidentes com material biológico:</strong> Baseada no CDC e Protocolo Clínico e Diretrizes Terapêuticas do MS: 1) Leve: contato com sangue/secreções em pele íntegra - SEM profilaxia; 2) Moderado: contato com sangue/secreções em mucosa ou pele não íntegra - SIM profilaxia; 3) Grave: exposição percutânea (perfuração/corte) com material perfurocortante - SIM profilaxia.</p><p><strong>Justificativa técnica:</strong> No acidente moderado, apesar de não haver sangue visível, as secreções podem conter carga viral. A mucosa é um tecido suscetível à transmissão do HIV (como mucosas genitais, oculares, orais). O risco de transmissão por mucosa é de aproximadamente 0,1% por exposição, exigindo profilaxia.</p><p><strong>Análise das alternativas incorretas:</strong> A (acidente leve em pele íntegra não requer profilaxia), C (acidente leve em mucosa sem sangue VAI necessitar profilaxia), D (acidente grave SEMPRE requer profilaxia), E (acidente grave em mucosa também requer profilaxia, não apenas o percutâneo).</p><p><strong>Conduta de emergência:</strong> A profilaxia deve ser iniciada idealmente nas primeiras 2 horas, no máximo 72 horas pós-exposição. Inclui usually 3 drogas (tenofovir + lamivudina + dolutegravir) por 28 dias, com seguimento sorológico.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "<html><head></head><body>Paciente sexo feminino, 36 anos, moradora de área livre, foi em consulta na UBS, referindo que está cursando com perda de peso importante, tosse e sensação de febre, mais ao final da tarde. Seus sintomas começaram há duas semanas. Foi, então, encaminhada para realização de radiografia de tórax, mostrada abaixo. O diagnóstico mais provável e seu tratamento:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ26.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Abscesso pulmonar. Amoxicilina por 7 dias.",
+        "Tuberculose pulmonar. Rifampicina + isoniazida + pirazinamida + etambutol por 2 meses, seguidos de rifampicina e isoniazida por mais 4 meses.",
+        "Tuberculose pulmonar. Rifampicina + isoniazida + pirazinamida + etambutol por 6 meses.",
+        "Abscesso pulmonar. Amoxicilina com clavulanato por 14 dias.",
+        "Tuberculose pulmonar. Rifampicina + isoniazida + pirazinamida + etambutol por 2 meses, seguidos de pirazinamida e isoniazida por mais 4 meses."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre o diagnóstico e tratamento da tuberculose pulmonar no contexto da atenção primária brasileira.</p><p>A paciente apresenta a tríade clássica da tuberculose: perda ponderal, tosse persistente e febre vespertina. A história de início há duas semanas e o fato de ser moradora de área livre são elementos epidemiológicos importantes. No Brasil, a tuberculose ainda é uma doença de alta prevalência, especialmente em populações vulneráveis.</p><p><strong>A resposta correta é a alternativa B.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p>A) Abscesso pulmonar com amoxicilina por 7 dias - INCORRETO. O abscesso pulmonar caracteriza-se por quadro agudo com febre alta, dor torácica importante e expectoração purulenta fétida. O tratamento com amoxicilina por apenas 7 dias é insuficiente tanto para abscesso quanto para tuberculose.</p><p>B) Tuberculose pulmonar com rifampicina + isoniazida + pirazinamida + etambutol por 2 meses, seguidos de rifampicina e isoniazida por mais 4 meses - CORRETO. Este é o esquema terapêutico padrão recomendado pelo Ministério da Saúde do Brasil (MS 2025), conhecido como 2RHZE/4RH. A fase de indução (RHZE) dura 2 meses e a fase de manutenção (RH) dura 4 meses.</p><p>C) Tuberculose pulmonar com rifampicina + isoniazida + pirazinamida + etambutol por 6 meses - INCORRETO. O esquema completo não pode ser administrado em apenas 6 meses, pois a fase de indução isolada não é suficiente para o controle da doença. O tratamento deve ser completo por 6 meses.</p><p>D) Abscesso pulmonar com amoxicilina com clavulanato por 14 dias - INCORRETO. O tempo é insuficiente para tratamento de abscesso pulmonar, que necessita pelo menos 4-6 semanas de antibioticoterapia. Além disso, o quadro clínico não é compatível com abscesso.</p><p>E) Tuberculose pulmonar com rifampicina + isoniazida + pirazinamida + etambutol por 2 meses, seguidos de pirazinamida e isoniazida por mais 4 meses - INCORRETO. A fase de manutenção deve incluir rifampicina e isoniazida (RH), não pirazinamida e isoniazida (HZ). A pirazinamida é usada apenas na fase de indução.</p><p><strong>Veredito:</strong> A alternativa B está correta, apresentando o esquema terapêutico padrão para tuberculose pulmonar no Brasil, conforme diretrizes do MS 2025.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "A pneumonia associada à ventilação mecânica é uma das complicações mais temíveis no ambiente de UTI, uma vez que aumenta o tempo de internação do paciente bem como aumenta a morbimortalidade. São ações que visam a sua prevenção: I. manter a cabeceira elevada a 30-45°. II. aspiração rotineira de secreção subglótica. III. manutenção da pressão de cuff entre 20-25 mmHg. IV. higiene oral com clorexidina. V. despertar diário visando avaliação para extubação. Está correto o que se afirma em",
+      "alternativas": [
+        "I, apenas.",
+        "I e II, apenas.",
+        "I, II e III, apenas.",
+        "I, II, III e IV, apenas.",
+        "I, II, III, IV e V."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda a prevenção da pneumonia associada à ventilação mecânica (PAV), tema fundamental em medicina intensiva. A PAV é uma das principais causas de morbimortalidade em UTI, com grande impacto nos custos do sistema de saúde.</p><p><strong>A resposta correta é a alternativa E (I, II, III, IV e V).</strong></p><p>Todas as medidas mencionadas são recomendadas para prevenção da PAV:</p><p>I. Cabeceira elevada a 30-45° - CORRETO. Esta é uma das medidas mais eficazes, reduzindo o risco de aspiração de conteúdo gástrico e secreções orofaríngeas para os pulmões.</p><p>II. Aspiração rotineira de secreção subglótica - CORRETO. A secreção acumulada acima do cuff do tubo endotraqueal é uma importante fonte de contaminação bacteriana dos pulmões. A aspiração subglótica reduz significativamente a incidência de PAV.</p><p>III. Manutenção da pressão de cuff entre 20-25 mmHg - CORRETO. Pressões adequadas do cuff previnem microaspirações através das pregas do cuff e também previnem complicações como traqueomalácia e fístulas traqueoesofágicas.</p><p>IV. Higiene oral com clorexidina - CORRETO. A clorexidina reduz a carga bacteriana oral, diminuindo o risco de colonização bacteriana que pode levar à PAV. Esta é uma medida simples e de baixo custo.</p><p>V. Despertar diário para avaliação de extubação - CORRETO. O daily awakening test reduz o tempo de ventilação mecânica, um dos principais fatores de risco para PAV. Quanto maior o tempo de VM, maior o risco de infecção.</p><p><strong>Importante:</strong> Estas medidas fazem parte do bundle de prevenção da PAV, protocolo amplamente utilizado em UTIs brasileiras. O Ministério da Saúde do Brasil recomenda a implementação de таких medidas para reduzir a incidência de infecções hospitalares.</p><p><strong>Veredito:</strong> A alternativa E é a correta, pois todas as cinco medidas são essenciais na prevenção da pneumonia associada à ventilação mecânica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Paciente sexo masculino, 32 anos, portador de HIV há 6 anos, sem tratamento, foi levado de ambulância ao pronto-socorro, por ter apresentado crise convulsiva tônico- clônica generalizada. Paciente já havia recobrado a consciência, e relata que há uma semana vinha cursando com diminuição de força em MSE. O exame diagnóstico a ser solicitado, o achado esperado e o diagnóstico mais provável:",
+      "alternativas": [
+        "Punção lombar com estudo do líquor com aumento de celularidade as custas de linfócitos e monócitos, glicose diminuída, proteína pouco aumentada. Provável quadro de meningoencefalite.",
+        "Punção lombar com estudo do líquor com coloração xantocrômica, aumento de hemácias. Provável quadro de hemorragia subaracnoide.",
+        "Tomografia de crânio com lesões nodulares múltiplas com halo de edema. Provável quadro de neurotoxoplasmose.",
+        "Tomografia de crânio com hemorragia intraparenquimatosa à esquerda. Provável quadro de acidente vascular cerebral hemorrágico.",
+        "Tomografia de crânio com lesão sólida periférica em região occipital esquerda. Provável quadro de meningioma."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre neurotoxoplasmose em pacientes imunodeprimidos, uma das principais causas de lesões intracranianas em portadores de HIV/AIDS no Brasil.</p><p>O paciente apresenta-se com crise convulsiva e paresia em hemicorpo direito (MSE), num contexto de HIV sem tratamento há 6 anos. Esta apresentação clínica é altamente sugestiva de neurotoxoplasmose, a causa mais comum de lesões intracranianas em pacientes com AIDS no Brasil.</p><p><strong>A resposta correta é a alternativa C.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p>A) Punção lombar com líquor mostrando aumento de linfócitos e monócitos, glicose diminuída, proteína aumentada, sugerindo meningoencefalite - INCORRETO. Embora a neurotoxoplasmose possa apresentar alterações no líquor, o achado de múltiplas lesões com halo de edema na tomografia é mais característico. A meningoencefalite bacterial seria mais aguda e com febre alta.</p><p>B) Punção lombar com líquor xantocrômico e aumento de hemácias, sugerindo hemorragia subaracnoide - INCORRETO. O líquor xantocrômico indica hemorrhagia intracraniana, mas o quadro clínico não é compatível com HSA espontânea, especialmente num jovem de 32 anos. A apresentação com paresia progressiva é mais típica de lesões expansivas como a neurotoxoplasmose.</p><p>C) Tomografia de crânio com lesões nodulares múltiplas com halo de edema, sugerindo neurotoxoplasmose - CORRETO. Este é o achado radiológico mais característico da neurotoxoplasmose. As lesões múltiplas com realce nodular periférico (halo) e edema central são típicas desta infecção oportunista. A tomografia é o exame de escolha inicial para investigação de lesões intracranianas em pacientes HIV+.</p><p>D) Tomografia de crânio com hemorragia intraparenquimatosa esquerda, sugerindo AVC hemorrágico - INCORRETO. Embora a neurotoxoplasmose possa evoluir com hemorrhagia, a apresentação típica é com múltiplas lesões nodulares, não apenas uma lesão hemorrágica. O AVC hemorrágico em jovem de 32 anos é menos provável que neurotoxoplasmose num HIV+.</p><p>E) Tomografia de crânio com lesão sólida periférica occipital esquerda, sugerindo meningioma - INCORRETO. Meningiomas são tumores benignos de crescimento lento, apresentando-se com sintomas crônicos, não com crise convulsiva aguda e paresia progressiva em paciente jovem. Além disso, múltiplas lesões são mais compatíveis com neurotoxoplasmose.</p><p><strong>Contexto epidemiológico:</strong> No Brasil, a neurotoxoplasmose é a principal causa de lesões intracranianas em pacientes HIV+, especialmente em estágios avançados da doença (CD4 < 100 células/μL). O diagnóstico é clínico-radiológico, com resposta terapêutica em 7-14 dias.</p><p><strong>Veredito:</strong> A alternativa C é a correta, apresentando o achado tomográfico típico e o diagnóstico mais provável em paciente HIV+ com quadro neurológico agudo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Infectologia_InfeccoesOpurtunistas",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "De acordo com a 3ª edição The International Classification of Headache Disorders, NÃO faz parte dos critérios diagnósticos da Migrânea sem aura:",
+      "alternativas": [
+        "Náusea e diarreia.",
+        "Pelo menos 5 crises de cefaleia com duração de 4 a 72 horas por episódio, não tratadas ou tratadas com pouco sucesso.",
+        "Localização unilateral, pulsátil ou latejante, intensidade moderada a forte.",
+        "Fotofobia e fonofobia.",
+        "A dor não é atribuível a outra patologia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa o conhecimento sobre os critérios diagnósticos da migrânea sem aura segundo a Classificação Internacional de Cefaleias (ICHD-3). O teste é sobre o que NÃO faz parte dos critérios diagnósticos.</p><p><strong>A resposta correta é a alternativa A - Náusea e diarreia.</strong></p><p><strong>Analisando cada alternativa de acordo com os critérios da ICHD-3:</strong></p><p>A) Náusea e diarreia - INCORRETO (esta é a resposta). Embora náusea seja um sintoma frequentemente associado à migrânea, a diarreia NÃO faz parte dos critérios diagnósticos da ICHD-3. Na verdade, a diarreia é mais característica da enxaqueca abdominal, um tipo específico em crianças, ou pode estar presente em outros tipos de cefaleia, mas não é critério para migrânea sem aura.</p><p>B) Pelo menos 5 crises de cefaleia com duração de 4 a 72 horas por episódio, não tratadas ou tratadas com pouco sucesso - CORRETO. Este é um dos critérios principais da ICHD-3 para migrânea sem aura. A duração específica (4-72h) e a frequência mínima (5 episódios) são requisitos obrigatórios.</p><p>C) Localização unilateral, pulsátil ou latejante, intensidade moderada a forte - CORRETO. Este é outro critério fundamental da ICHD-3. A dor deve ter pelo menos duas dessas características: unilateral, pulsátil, intensidade moderada a forte. Na prática clínica, a dor é tipicamente unilateral e pulsátil.</p><p>D) Fotofobia e fonofobia - CORRETO. Segundo a ICHD-3, durante as crises o paciente deve apresentar pelo menos um dos seguintes: fotofobia, fonofobia ou náusea leve. A fotofobia e fonofobia são sintomas muito comuns e característicos da migrânea.</p><p>E) A dor não é atribuível a outra patologia - CORRETO. Este é o critério de exclusão fundamental. É necessário que a cefaleia não seja melhor explicada por outro diagnóstico (primária) ou não seja symptom de outra doença (secundária).</p><p><strong>Diferenciação importante:</strong> A diarreia pode estar presente em algumas cefaleias tensionais ou outros tipos de cefaleia, mas não é característica da migrânea sem aura. Por outro lado, náusea isolada pode ser um dos critérios aceitos. Esta distinção é fundamental para o diagnóstico diferencial correto.</p><p><strong>Veredito:</strong> A alternativa A é a correta, pois diarreia não faz parte dos critérios diagnósticos da ICHD-3 para migrânea sem aura, embora náusea seja aceitável.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia_Cefaleias_CefaleiasPrimarias"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Paciente sexo masculino, 32 anos, deu entrada no pronto-socorro com quadro de febre há 3 dias, associada a mialgia, epistaxe e dor retro-orbitária. À chegada, sinais vitais PA: 130 × 80 mmHg, FC: 80 bpm, FR: 16 ipm e SatO²: 98% em ar ambiente. Durante período de observação, paciente evoluiu com vômitos persistentes, hipotensão e extremidades frias. Diante do provável quadro de dengue a melhor opção que consta sua classificação e a conduta mais apropriada é:",
+      "alternativas": [
+        "Paciente pertencente ao grupo C, com necessidade de hidratação EV 10 mL/kg/h em 2 horas, que evoluiu para grupo D, com necessidade de hidratação EV 20 mL/kg em até 20 minutos.",
+        "Paciente pertencente ao grupo B, com necessidade de hidratação via oral, que evoluiu para grupo C, com necessidade de hidratação EV 10 mL/kg/h em 2 horas.",
+        "Paciente pertencente ao grupo B, com necessidade de hidratação via oral, que evoluiu para grupo D, com necessidade de hidratação EV 20 mL/kg em até 20 minutos.",
+        "Paciente pertencente ao grupo A, com necessidade de hidratação via oral, que evoluiu para grupo D, com necessidade de hidratação EV 20 mL/kg em até 20 minutos.",
+        "Paciente pertencente ao grupo C, com necessidade de hidratação via oral, que evoluiu para grupo D, com necessidade de hidratação EV 10 mL/kg/h em 2 horas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o manejo da dengue, doença de grande importância epidemiológica no Brasil. A classificação por grupos clínicos e a conduta adequada são fundamentais para reduzir a mortalidade da doença.</p><p>O paciente apresenta critérios de alerta (dor retroorbitária, mialgia, epistaxe) e evolução para choque hipovolêmico (hipotensão, extremidades frias, vômitos persistentes). Esta progressão é característica do espectro clínico da dengue.</p><p><strong>A resposta correta é a alternativa A.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p>A) Paciente grupo C (sinais de alerta), com hidratação EV 10 mL/kg/h em 2 horas, que evoluiu para grupo D (choque hipovolêmico), com necessidade de hidratação EV 20 mL/kg em até 20 minutos - CORRETO. O paciente inicialmente apresentava sinais de alerta (pertencendo ao grupo C), mas evoluiu para choque hipovolêmico (grupo D), necessitando de ressuscitação volêmica mais agressiva (20 mL/kg em bolus). Esta é a conduta correta conforme protocolo do MS 2025.</p><p>B) Paciente grupo B (sem sinais de alerta), com hidratação via oral, evoluiu para grupo C - INCORRETO. O paciente já apresentava sinais de alerta na chegada (dor retroorbitária, mioses, epistaxe), portanto não pertencia ao grupo B. A hidratação oral seria inadequada para este quadro.</p><p>C) Paciente grupo B, com hidratação oral, evoluiu para grupo D - INCORRETO. O mesmo erro do item anterior. O paciente já tinha critérios de grupo C na chegada.</p><p>D) Paciente grupo A (sem sinais de alerta), com hidratação oral, evoluiu para grupo D - INCORRETO. O paciente já apresentava sinais de alerta evidentes na chegada, não pertencendo ao grupo A.</p><p>E) Paciente grupo C, com hidratação oral, evoluiu para grupo D - INCORRETO. Os pacientes do grupo C já necessitam de hidratação parenteral. A hidratação oral seria inadequada para este caso.</p><p><strong>Classificação por grupos clínicos (MS 2025):</strong></p><p>Grupo A: Sem sinais de alerta, sem comorbidades - hidratação oral</p><p>Grupo B: Sem sinais de alerta, com comorbidades - hidratação oral com supervisão</p><p>Grupo C: Com sinais de alerta - hidratação parenteral (10 mL/kg/h)</p><p>Grupo D: Choque hipovolêmico - ressuscitação volêmica (20 mL/kg em 20 min)</p><p>Grupo E: Com complicações - manejo em UTI</p><p><strong>Veredito:</strong> A alternativa A é a correta, apresentando a classificação inicial correta (grupo C), a conduta apropriada (hidratação parenteral) e a evolução e conduta subsequente adequadas (grupo D com ressuscitação volêmica).",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Dengue",
+        "ClinicaMedica_EmergenciasMedicas"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Paciente sexo feminino, 54 anos, com antecedente de câncer de mama e insuficiência cardíaca, começou a cursar com quadro de tosse e dispneia. Acabou sendo internada para investigação. Na internação realizou Rx de tórax que constatou derrame pleural à direita, de tamanho moderado. A paciente foi submetida a toracocentese diagnóstica e de alívio, sendo enviado mate- rial para análise. Resultados: Albumina sérica 3,2 g/dL; Proteínas totais sérica 6,5 g/dL; DHL sérico 160 (VR 250) UI/L; Albumina líquido pleural 1,9 g/dL; Proteínas totais líquido pleural 2,6 g/dL; DHL líquido pleural 80 UI/L. Após análise dos resultados, a classificação do líquido e sua provável causa:",
+      "alternativas": [
+        "Transudato - insuficiência cardíaca.",
+        "Transudato - câncer de mama.",
+        "Exsudato - insuficiência cardíaca.",
+        "Exsudato - câncer de mama.",
+        "Indeterminado - não é possível estabelecer sua provável causa."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu domínio sobre a diferenciação entre transudatos e exsudatos na análise de líquidos cavitários, especificamente em derrame pleural. A habilidade de interpretar corretamente o líquido pleural é fundamental na prática clínica, especialmente em pacientes com múltiplas comorbidades como no caso apresentado.</p><p><strong>A resposta correta é A - Transudato - insuficiência cardíaca.</strong></p><p>Vamos aplicar os Critérios de Light para analisar o líquido pleural:</p><p>• <strong>Razão proteína pleural/sérica:</strong> 2,6/6,5 = 0,4 (menor que 0,5)<br>• <strong>Razão LDH pleural/sérica:</strong> 80/160 = 0,5 (menor que 0,6)<br>• <strong>LDH pleural:</strong> 80 UI/L (menor que 2/3 do limite superior normal sérico = 167 UI/L)</p><p>Como 3 critérios são negativos para exsudato, classificamos como transudato.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>Alternativa B:</strong> Embora a paciente tenha câncer de mama como comorbidade, o líquido pleural é transudativo, não exsudativo. A insuficiência cardíaca é mais plausível para transudato.</p><p>• <strong>Alternativa C:</strong> Errada na classificação do líquido (deveria ser transudato) e na causa (câncer de mama não explica adequadamente o perfil laboratorial).</p><p>• <strong>Alternativa D:</strong> Errada em ambos os aspectos - o líquido é transudato e a insuficiência cardíaca é mais provável que o câncer.</p><p>• <strong>Alternativa E:</strong> O diagnóstico é possível com base nos dados fornecidos e aplicados aos Critérios de Light.</p><p>O caso ilustra a importância de correlacionar achados laboratoriais com o contexto clínico - uma paciente com insuficiência cardíaca e derrame pleural sugere fortemente transudato secundário à congestão sistêmica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "<html><head></head><body>Paciente de 76 anos, sexo masculino, com antecedente de hipertensão e apneia do sono, deu entrada no pronto-socorro por quadro de palpitações taquicárdicas há 4 dias. Sinais vitais: PA: 140 × 90 mmHg, FC: 132 bpm, FR: 16 ipm e SatO²: 97% em ar ambiente. O paciente realizou ECG abaixo. Diante do quadro clínico do paciente e da análise do ECG, o diagnóstico mais provável e a melhor conduta:\n\n<img src=\"https://medbrave.com.br/questions/einstein-2021-r3/qQ32.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Flutter atrial. Cardioversão elétrica e anticoagulação via oral.",
+        "Taquicardia supraventricular. Manobra de valsalva e, se não responder, adenosina venosa.",
+        "Fibrilação atrial. Ecocardiograma transesofágico e cardioversão, se ausência de trombos.",
+        "Flutter atrial. Adenosina venosa e, se não responder, cardioversão.",
+        "Fibrilação atrial. Amiodarona EV e, se não responder, cardioversão elétrica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa sua capacidade de interpretar eletrocardiogramas e gerenciar arritmias cardíacas, competências essenciais em medicina de emergência. O caso apresenta um paciente idoso com fatores de risco para fibrilação atrial e sintomatologia compatível.</p><p><strong>A resposta correta é C - Fibrilação atrial. Ecocardiograma transesofágico e cardioversão, se ausência de trombos.</strong></p><p>O ECG (não disponível no texto, mas presumível pela resposta) mostra ondas P ausentes e intervalos R irregulares, características de fibrilação atrial. A frequência cardíaca de 132 bpm confirma a instalação de FA com resposta ventricular rápida.</p><p><strong>Critérios diagnósticos: FA vs outras arritmias:</strong></p><p>• <strong>Flutter atrial:</strong> Would mostrar ondas F regulares em \"dente de serra\"<br>• <strong>TSV:</strong> Preservaria a regularidade do ritmo<br>• <strong>FA:</strong> Presença de fibrilação atrial típica no ECG</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>Alternativa A e D:</strong> Incorretas - o diagnóstico deve ser FA, não flutter. O flutter tem padrão electrocardiográfico distinto e a cardioversão é mais imediata, sem necessidade de TEE.</p><p>• <strong>Alternativa B:</strong> A TSV foi descartada. As manobras mencionadas e adenosina são úteis em TSV, mas não na FA.</p><p>• <strong>Alternativa E:</strong> Incorreta na conduta - a amiodarona EV não é primeira escolha. Seguindo diretrizes atuais (MS 2025), a cardioversão elétrica é preferida em FA com resposta rápida e sintomas importantes.</p><p>A conduta de escolha (alternativa C) segue o protocolo de segurança: avaliar presença de trombos via TEE antes da cardioversão, prevenindo acidente vascular cerebral embolico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "A sífilis é uma doença sexualmente transmissível provocada pelo treponema pallidum e se caracteriza por 3 fases clínicas sintomáticas. A respeito da fase clínica e seu tratamento, é correto:",
+      "alternativas": [
+        "Sífilis primária caracterizada por lesões mucocutâneas generalizadas, incluindo palma das mãos e plantas dos pés. O seu tratamento consiste em penicilina benzatina 2.400.000 UI/IM, dose única.",
+        "Sífilis primária caracterizada por lesão ulcerada, indolor, com fundo limpo. O seu tratamento consiste em penicilina benzatina 1.200.000 UI/IM, dose única.",
+        "Sífilis secundária caracterizada por lesões mucocutâneas generalizadas, incluindo palma das mãos e plantas dos pés. O seu tratamento consiste em penicilina benzatina 2.400.000 UI/IM, dose única.",
+        "Sífilis secundária caracterizada por acometimento cardiovascular, como dilatação aneurismática da aorta ascendente, acometimento neurológico, como tabes dorsalis. O seu tratamento consiste em penicilina benzatina 2.400.000 UI/IM, uma vez por semana, por d",
+        "Sífilis terciária caracterizada por acometimento cardiovascular, como dilatação aneurismática da aorta ascendente, acometimento neurológico, como tabes dorsalis. O seu tratamento consiste em penicilina benzatina 2.400.000 UI/IM, uma vez por semana, por tr"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as fases clínicas da sífilis e os protocolos de tratamento instituídos pelo Ministério da Saúde. A sífilis permanece um problema de saúde pública no Brasil, exigindo domínio dos padrões diagnósticos e terapêuticos.</p><p><strong>A resposta correta é C - Sífilis secundária caracterizada por lesões mucocutâneas generalizadas, incluindo palma das mãos e plantas dos pés. O seu tratamento consiste em penicilina benzatina 2.400.000 UI/IM, dose única.</strong></p><p><strong>Diferenciação das fases clínicas:</strong></p><p>• <strong>Sífilis primária:</strong> Caracterizada por cancro duro (úlcera indolor, única, com bordas elevadas)<br>• <strong>Sífilis secundária:</strong> Manifestações cutâneas disseminadas, incluindo palms e plantas, rash maculopapular, adenopatia<br>• <strong>Sífilis terciária:</strong> Comprometimento cardiovascular, neurológico, gomoso (/cardiovascular: aneurisma aórtico, neurológico: neurossífilis)</p><p><strong>Protocolo de tratamento do Ministério da Saúde (MS 2025):</strong></p><p>• <strong>Sífilis primária e secundária:</strong> Penicilina benzatina 2.400.000 UI IM dose única (alternativa C)<br>• <strong>Sífilis terciária ou latente tardia:</strong> Penicilina benzatina 2.400.000 UI IM/semana por 3 doses</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>Alternativa A:</strong> Incorreta - descreve sífilis secundária como primária. A dosagem de penicilina está correta, mas o diagnóstico está errado.</p><p>• <strong>Alternativa B:</strong> Incorreta na dosagem - sífilis primária usa 2.400.000 UI, não 1.200.000 UI.</p><p>• <strong>Alternativa D:</strong> Incorreta na classificação - descreve sífilis terciária como secundária.</p><p>• <strong>Alternativa E:</strong> Incorreta - sífilis terciária usa 3 doses semanais, não 3 doses três dias seguidos (dose incompleta).</p><p>A alternativa C é a única que correlaciona corretamente a fase clínica (secundária) com o tratamento adequado (dose única).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesSexualmenteTransmissi",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente sexo masculino, 45 anos, agricultor, foi levado ao pronto-socorro por quadro de fraqueza, diarreia, hipersalivação, vômitos há duas horas. Sinais vitais: PA: 110 × 70 mmHg, FC: 52 bpm, FR: 24 ipm, SatO²: 93% em ambiente. Ao exame físico, pupilas mióticas, sibilos e roncos à ausculta pulmonar e presença de fasciculações. Diante do quadro clínico, o diagnóstico mais provável e seu tratamento:",
+      "alternativas": [
+        "Gastroenterocolite aguda. Hidratação venosa, antieméticos e dieta obstipante.",
+        "Síndrome anticolinérgica. Atropina, pralidoxima e suporte clínico.",
+        "Síndrome anticolinérgica. Inibidor da acetilcolinesterase, diazepam e suporte clínico.",
+        "Síndrome colinérgica. Atropina, pralidoxima e suporte clínico.",
+        "Síndrome colinérgica. Inibidor da acetilcolinesterase, diazepam e suporte clínico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento em toxicologia clínica, especificamente no diagnóstico diferencial entre síndromes colinérgica e anticolinérgica. A diferenciação correta pode ser salva-vidas em casos de intoxicação por agrotóxicos, frequentes em populations rurais como o paciente apresentado.</p><p><strong>A resposta correta é D - Síndrome colinérgica. Atropina, pralidoxima e suporte clínico.</strong></p><p><strong>Quadro clínico apresentado - critérios para síndrome colinérgica:</strong></p><p>• <strong>SLUDGE:</strong> Salivação (hipersalivação), Lacrimejamento, Urinador, Defecador, Glicemia diminuída, Êmese (vômitos)<br>• <strong>Muscarínico:</strong> Diarreia (neste caso), náuseas, pupilas pequenas (miose), broncorreia, sibilos, hipersalivação<br>• <strong>Nicotínico:</strong> Fasciculações musculares (presentes), taqui/ bradipneia<br>• <strong>Muscarínico predominante:</strong> Hipersalivação, miose, sibilos, broncoespasmo</p><p><strong>Tratamento da síndrome colinérgica:</strong></p><p>• <strong>Atropina:</strong> Antagonista muscarínico, controla broncoespasmo e hipersecreção<br>• <strong>Pralidoxima:</strong> Reativador da acetilcolinesterase, trata componente nicotínico (fasciculações)<br>• <strong>Suporte clínico:</strong> Ventilação, hemodynamic support, benzodiazepínicos para convulsões</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>Alternativa A:</strong> Incorreta - os sintomas não sugerem gastroenterocolite simples. A miose e fasciculações indicam intoxicação organofosforada.</p><p>• <strong>Alternativas B e C:</strong> Incorretas no diagnóstico - a síndrome anticolinérgica cursa com pupilas dilatadas, pele seca, alucinações (ao contrário dos achados aqui).</p><p>• <strong>Alternativa E:</strong> Incorreta - prescreve inibidor da acetilcolinesterase (que pioraria a intoxicação) em vez de pralidoxima.</p><p>O diagnóstico correto é fundamental: síndrome colinérgica por exposição a agrotóxico organofosforado, comum em agricultores.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Paciente do sexo feminino, 27 anos, antecedente pessoal de depressão, é levada ao departamento de emergência por tentativa de autoextermínio com ingestão de grande quantidade de medicamentos: paracetamol, ibuprofeno, levofloxacino, ondansetrona, amitriptilina e cloroquina. A paciente foi intubada para proteção de vias aéreas e o eletrocardiograma demonstrou um intervalo QT corrigido de 490 ms. Dentre as combinações a seguir, aquela que deve ter causado a alteração eletrocardiográfica em questão é:",
+      "alternativas": [
+        "Paracetamol e levofloxacino.",
+        "Ondansetrona e levofloxacino.",
+        "Ibuprofeno e cloroquina.",
+        "Amitriptilina e ibuprofeno.",
+        "Paracetamol e amitriptilina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre interações medicamentosas e seus efeitos sobre o sistema cardiovascular, especificamente prolongamento do intervalo QT. A toxicologia clínica exige conhecimento profundo sobre fármacos que podem causar arritmias potencialmente fatais.</p><p><strong>A resposta correta é B - Ondansetrona e levofloxacino.</strong></p><p><strong>Mecanismo do prolongamento QT:</strong></p><p>Ambos medicamentos bloqueiam os canais de potássio (especialmente IKr/hERG), prolongando a repolarização ventricular e aumentando o risco de torsade de pointes.</p><p><strong>Perfil de risco de cada fármaco:</strong></p><p>• <strong>Ondansetrona:</strong> Anti-5-HT3 usado como antiemético, conhecido por prolongar o QT (200-300 ms de prolongamento típico)<br>• <strong>Levofloxacino:</strong> Fluorquinolona com risco moderado-alto de prolongamento QT<br>• <strong>Paracetamol:</strong> Baixo risco (principal hepatotoxicidade)<br>• <strong>Ibuprofeno:</strong> AINE - baixo risco cardiovascular<br>• <strong>Amitriptilina:</strong> Tabela - mas, isoladamente, prolonga moderadamente o QT (não em combinação com as doses utilizadas)<br>• <strong>Cloroquina:</strong> Prolonga o QT, mas menos potente que as fluorquinolonas</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>Alternativa A:</strong> Paracetamol tem baixo risco de prolongamento QT, o levofloxacino alone não atingiria 490 ms</p><p>• <strong>Alternativa C:</strong> Ibuprofeno não prolonga significativamente o QT; cloroquina sozinha causaria menos prolongamento</p><p>• <strong>Alternativa D:</strong> Amitriptilina prolonga moderadamente o QT, mas o ibuprofeno não contribui; insuficiente para explicar 490 ms</p><p>• <strong>Alternativa E:</strong> Paracetamol tem baixo risco; amitriptilina isolada não atingiria este prolongamento</p><p>O risco cumulativo de ondansetrona + levofloxacino justifica o prolongamento significativo observado. A paciente apresenta múltiplos medicamentos, mas apenas esta combinação explica adequadamente o achado de QTc = 490 ms.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Paciente do sexo masculino, 30 anos, portador de Linfoma de Hodgkin, encontra-se em quimioterapia com esquema ABVD (doxorrubicina, bleomicina, vimblastina e dacarbazina), última aplicação há 12 dias da admissão. Procura o pronto-socorro por mal- estar generalizado. À admissão encontra-se com temperatura oral de 38,5 ºC, sem outras alterações relevantes. Acerca do quadro clínico, é INCORRETO:",
+      "alternativas": [
+        "Um exame físico minucioso deve ser realizado procurando possíveis focos infecciosos, incluindo avaliação de mucosas e toque retal.",
+        "Deve-se realizar a coleta de exames laboratoriais, incluindo culturas, e solicitar exames de imagem a depender da suspeita diagnóstica.",
+        "Nesse caso, neutropenia febril será diagnosticada se o paciente apresentar menos do que 500 neutrófilos/mm³.",
+        "O score de MASCC tem importância prognóstica e pode ajudar na definição sobre tratamento ambulatorial ou hospitalar.",
+        "A administração de antibioticoterapia não deve ser retardada nessa população."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre neutropenia febril em pacientes oncológicos, especificamente those em quimioterapia com esquema ABVD. O cenário é clássico: paciente jovem com linfoma de Hodgkin, em tratamento chemotherapy, apresentando febre 12 dias após a última aplicação.</p><p><strong>A resposta INCORRETA é A</strong> - aunque o exame físico minucioso seja importante, em pacientes neutropênicos febris, o protocolo estabelece que a antibioticoterapia deve ser iniciada IMEDIATAMENTE, antes mesmo da realização de exame físico completo ou toque retal. O delay na antibioticoterapia em neutropenia febril está associado a maior mortalidade.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> Embora o exame físico seja importante, em neutropenia febril, o tempo é crucial. O protocolo de neutropenia febril da SBI (Sociedade Brasileira de Infectologia) estabelece que a antibioticoterapia empírica deve ser iniciada em até 60 minutos da chegada ao hospital, não após exame físico detalhado.</p><p><strong>B) CORRETA:</strong> A coleta de hemoculturas (pelo menos 2 pares), urocultura, exames laboratoriais (hemograma, função renal, hepática) e imagens conforme suspeita diagnóstica são fundamentais no manejo da neutropenia febril.</p><p><strong>C) CORRETA:</strong> De acordo com a definição do Infectious Diseases Society of America (IDSA) e da SBI, neutropenia febril é diagnosticada quando há temperatura >38,3°C ou persistente >38°C por mais de 1 hora, associada a neutrófilos <500/mm³ ou <1000/mm³ com expectativa de queda.</p><p><strong>D) CORRETA:</strong> O Multinational Association for Supportive Care in Cancer (MASCC) score é essencial para estratificação de risco e definição entre tratamento ambulatorial ou hospitalar. Score <21 indica alto risco e requiere internação.</p><p><strong>E) CORRETA:</strong> A antibioticoterapia empírica não pode ser retardada. Esquemas como monoterapia com piperacilina-tazobactam ou meropenem são recomendados, iniciando-se em até 60 minutos.</p><p><strong>Veredito final:</strong> A alternativa A está incorreta porque em neutropenia febril, o protocolo exige antibioticoterapia imediata, não exame físico completo primeiro. Esta questão destaca a emergência médica que é a neutropenia febril em pacientes oncológicos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Linfomas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Sobre a doença pulmonar obstrutiva crônica (DPOC), é INCORRETO:",
+      "alternativas": [
+        "O sistema GOLD é usado para estadiar a doença e baseia-se nos sintomas e histórico de exacerbações e internações secundárias à doença.",
+        "Pessoas com histórico de tabagismo e com tosse e/ou dispneia devem ter o diagnóstico de DPOC considerado.",
+        "Dentre os diagnósticos diferenciais devem-se considerar causas cardíacas, doença pulmonar intersticial, tuberculose e tromboembolismo pulmonar.",
+        "O diagnóstico é confirmado com a espirometria quando a relação volume expirado forçado em 1 segundo sobre capacidade vital forçada é menor do que 0,7 ou menor que o limite inferior da normalidade, sendo completamente revertido após o uso de broncodilatado",
+        "Os pilares da terapia são os broncodilatadores inalatórios (beta-agonistas e antagonistas muscarínicos) dados sozinhos, em combinação ou com a adição de glicocorticoides inalatórios."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN testa conhecimentos sobre DPOC (Doença Pulmonar Obstrutiva Crônica), abordando diagnóstico, classificação GOLD, diagnóstico diferencial e tratamento. É uma questão abrangente que avalia se o candidato conhece os critérios diagnósticos atualizados.</p><p><strong>A resposta INCORRETA é D</strong> - o erro está na parte final da alternativa que afirma que a obstrução é \"completamente revertida após o uso de broncodilatador\". Na DPOC, a obstrução ao fluxo aéreo é progressiva e IRREVERSÍVEL, diferentemente da asma.</p><p>Analisando todas as alternativas:</p><p><strong>A) CORRETA:</strong> O sistema GOLD (Global Initiative for Chronic Obstructive Lung Disease) de 2021 classifica a DPOC em grupos A, B, C, D baseado em sintomas (CAT score ou mMRC) e histórico de exacerbações e internações. O grupo D representa maior severidade.</p><p><strong>B) CORRETA:</strong> Tabagismo é o principal fator de risco para DPOC. Qualquer paciente com história de tabagismo e sintomas de tosse crônica, produção de escarro e dispneia deve ter DPOC no diagnóstico diferencial.</p><p><strong>C) CORRETA:</strong> O diagnóstico diferencial de DPOC inclui: insuficiência cardíaca (dispneia), doença pulmonar intersticial (limitação ventilatória restritiva), tuberculose (fator de risco), tromboembolismo pulmonar (dispneia aguda) e asma (obstrução reversível).</p><p><strong>D) INCORRETA:</strong> O erro está na afirmação de que a obstrução é \"completamente revertida\". Na DPOC, a obstrução é PARCIALMENTE reversível com broncodilatadores, mas NUNCA completamente. Na asma, a reversibilidade é completa ou quase completa (>12% e >200mL de aumento no VEF1). Esta é a diferença fundamental entre as duas condições.</p><p><strong>E) CORRETA:</strong> Os broncodilatadores inalatórios (LABA - beta-agonistas de longa duração, e LAMA - antagonistas muscarínicos) são a base do tratamento. Podem ser usados sozinhos, em combinação (LABA+LAMA) ou com corticosteroides inalatórios em casos de exacerbações frequentes.</p><p><strong>Veredito final:</strong> A alternativa D está incorreta porque a obstrução na DPOC é irreversível, diferentemente da asma. Este é um conceito fundamental que diferencia DPOC de asma.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Sobre o tratamento da COVID-19, é correto:",
+      "alternativas": [
+        "A cloroquina e a hidroxicloroquina são opções terapêuticas eficazes e isentas de efeitos colaterais.",
+        "O uso de dexametasona reduziu a mortalidade em pacientes internados que necessitavam de oxigênio suplementar, em especial naqueles que se encontravam em ventilação invasiva.",
+        "A ventilação não invasiva pode ser utilizada e não adiciona riscos para a equipe assistencial.",
+        "A análise preliminar do estudo ACTT-1 demonstrou que o Remdesivir reduziu de forma estatisticamente significativa o tempo de internação e a mortalidade em pacientes internados com comprometimento pulmonar.",
+        "A Sociedade Internacional de Trombose e Hemostasia recomenda anticoagulação terapêutica para todos os pacientes hospitalizados."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o tratamento da COVID-19, avaliando se o candidato conhece as evidências científicas que se solidificaram durante a pandemia, especialmente as diretrizes que surgiram após os primeiros estudos sobre medicamentos específicos.</p><p><strong>A resposta CORRETA é B</strong> - o uso de dexametasona demonstrou benefício em pacientes com necessidade de oxigênio suplementar, particularly those requiring ventilatory support.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> A cloroquina e hidroxicloroquina NUNCA foram opções terapêuticas eficazes para COVID-19. Inicialmente, houve esperança baseada em estudos in vitro, mas estudos clínicos controlados (RECOVERY, Solidarity) demonstraram ausência de benefício e potencial toxicidade, incluindo arritmias e morte súbita.</p><p><strong>B) CORRETA:</strong> O estudo RECOVERY (Randomised Evaluation of COVID-19 Therapy) demonstrou que dexametasona 6mg/dia por até 10 dias reduziu a mortalidade em 17% nos pacientes com oxigênio suplementar e 35% naqueles em ventilação mecânica. Baseado nisso, a OMS, NIH e ANVISA recomendaram dexametasona para pacientes hospitalizados com necessidade de oxigênio.</p><p><strong>C) INCORRETA:</strong> A ventilação não invasiva (VNI) pode ser utilizada, MAS adiciona riscos significativos para a equipe assistencial devido à dispersão de aerossóis. Protocolos de proteção (EPI completo, quartos negativos) são necessários. Estudos iniciais demonstraram que a VNI pode ser benéfica em selecionados, mas sempre com precauções rigorosas.</p><p><strong>D) PARCIALMENTE INCORRETA:</strong> O estudo ACTT-1 (Adaptive COVID-19 Treatment Trial) demonstrou redução no tempo de internação em pacientes que receberam remdesivir (10 vs 15 dias), mas a redução na mortalidade NÃO foi estatisticamente significativa (7,1% vs 11,9%, p=0,059). A afirmação sobre redução de mortalidade está incorreta.</p><p><strong>E) INCORRETA:</strong> A Sociedade Internacional de Trombose e Hemostasia (ISTH) recomenda anticoagulação terapêutica para pacientes hospitalizados com COVID-19 e critérios de risco para tromboembolismo, mas NÃO para todos os hospitalizados. Pacientes ambulatoriais não devem receber anticoagulação sistemática.</p><p><strong>Veredito final:</strong> A alternativa B está correta porque a dexametasona é o único corticosteroide com evidência sólida de redução de mortalidade em COVID-19, especificamente em pacientes com comprometimento respiratório requiring oxygen support.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Sobre o diagnóstico e o tratamento das pneumonias adquiridas na comunidade (PACs), é INCORRETO:",
+      "alternativas": [
+        "O Pneumonia Severity Index (PSI) classe I e II implica em mortalidade baixa e o tratamento pode ser feito ambulatorialmente.",
+        "Dentre as bactérias mais comumente relacionadas estão o Streptococcus pneumoniae e o Haemophilus influenzae.",
+        "A ultrassonografia de tórax não tem papel no diagnóstico das PACs.",
+        "Para PSI = 91 pontos o tratamento deve ser hospitalar e uma opção de tratamento seria a combinação de um betalactâmico com um macrolídeo.",
+        "Para pacientes de baixo risco e sem comorbidades a amoxicilina é uma opção de tratamento."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre Pneumonia Adquirida na Comunidade (PAC), abordando estratificação de risco, agentes etiológicos, métodos diagnósticos e tratamento. É uma questão prática que testa competências essenciais para o manejo ambulatorial e hospitalar.</p><p><strong>A resposta INCORRETA é C</strong> - a ultrassonografia de tórax TEM papel importante no diagnóstico das PACs, sendo uma ferramenta emergente e valiosa.</p><p>Análise detalhada das alternativas:</p><p><strong>A) CORRETA:</strong> O Pneumonia Severity Index (PSI) classe I-II apresenta mortalidade <1% e permite tratamento ambulatorial. O PSI é baseado em 20 variáveis clínicas e laboratoriais que estratificam o risco. Classes I-II correspondem a baixo risco e podem ser tratadas em casa com antibióticos orais.</p><p><strong>B) CORRETA:</strong> Streptococcus pneumoniae é o principal agente etiológico de PAC em adultos, seguido por Haemophilus influenzae. Outros patógenos importantes incluem Moraxella catarrhalis, Legionella pneumophila e patógenos atípicos (Mycoplasma, Chlamydia). A cultura de escarro e testes específicos podem identificar esses agentes.</p><p><strong>C) INCORRETA:</strong> A ultrassonografia de tórax TEM papel no diagnóstico de PAC. Estudos demonstram que a lung ultrasound tem sensibilidade e especificidade superiores à radiografia de tórax para detectar consolidações, Derrame pleural e outras alterações pulmonares. É especialmente útil em leitos de emergência, UTI e em pacientes que não podem ser mobilizados para RX. A European Respiratory Society e a American Thoracic Society reconhecem seu valor.</p><p><strong>D) CORRETA:</strong> PSI = 91 pontos corresponde à classe IV (mortalidade 8-9%), indicando necessidade de internação hospitalar. A combinação betalactâmico + macrolídeo é primeira escolha para PAC em pacientes hospitalizados sem fatores de risco para Pseudomonas. Exemplos: ceftriaxona + azitromicina ou levofloxacino em monoterapia.</p><p><strong>E) CORRETA:</strong> Para pacientes de baixo risco (classes I-III) sem comorbilidades, amoxicilina 1g 8/8h por 5-7 dias é primeira escolha, cobrindo adequadamente S. pneumoniae e H. influenzae. É custo-efetiva e bem tolerada.</p><p><strong>Veredito final:</strong> A alternativa C está incorreta porque a ultrassonografia de tórax é uma ferramenta diagnóstica VALIOSA para PACs, com vantagens sobre a radiografia convencional, especialmente em ambientes de emergência e em pacientes críticos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Sobre o manejo de adultos com diabetes mellitus (DM), é INCORRETO:",
+      "alternativas": [
+        "De acordo com as recomendações da American Diabetes Association há evidência forte sugerindo o uso de ácido acetilsalicílico 75 a 162 mg/dia na prevenção primária de pacientes com DM e risco cardiovascular aumentado.",
+        "Pacientes com DM têm risco aumentado de desenvolver doença cardiovascular aterosclerótica e devem ser desencorajados de fumar e orientados a ter um controle rígido da pressão arterial e dos lípides.",
+        "Deve-se recomendar a vacinação contra influenza, pneumococo e hepatite B.",
+        "A pesquisa de retinopatia diabética deve ser realizada no momento do diagnóstico do DM tipo 2.",
+        "Deve-se realizar um exame abrangente dos pés a cada visita do paciente, se houver história de doença vascular ou neuropática."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o manejo abrangente do diabetes mellitus, avaliando prevenção cardiovascular, vacinação, rastreamento de complicações e cuidados específicos. Questão importante que testa se o candidato conhece as diretrizes atuais da American Diabetes Association (ADA) e práticas preventivas.</p><p><strong>A resposta INCORRETA é A</strong> - a ADA NÃO recomenda aspirina para prevenção primária em pacientes com DM e risco cardiovascular aumentado, baseado em evidências recentes que questionam o benefício/risco dessa abordagem.</p><p>Análise das alternativas:</p><p><strong>A) INCORRETA:</strong> As Diretrizes da ADA 2021, 2022, 2023 e 2024 são consistentes: aspirina para prevenção primária em diabetes NÃO é recomendada rotineiramente. Embora historicamente tenha sido considerada, estudos como ASCEND, ARRIVE e ASPREE demonstraram que o benefício na redução de eventos cardiovasculares não supera o risco de sangramento em prevenção primária. A recomendação é individualizada apenas para casos de muito alto risco cardiovascular.</p><p><strong>B) CORRETA:</strong> Pacientes com DM têm risco 2-4x maior de doença cardiovascular aterosclerótica. A ADA recomenda cessação do tabagismo, controle rigoroso da PA (<130/80 mmHg para a maioria) e LDL <70 mg/dL (ou <55 mg/dL em muito alto risco). Controle glicêmico também é fundamental (HbA1c <7% para a maioria).</p><p><strong>C) CORRETA:</strong> Vacinação é essencial em DM: influenza anualmente, pneumococo (PCV15 seguido de PPSV23 ou apenas PPSV23 conforme idade), hepatite B (série de 3 doses para não vacinados). Pacientes diabéticos têm maior risco de infecções e piores desfechos.</p><p><strong>D) CORRETA:</strong> Para DM tipo 2, a pesquisa de retinopatia diabética deve ser feita no momento do diagnóstico porque muitos pacientes já têm a doença há anos antes do diagnóstico. Para DM tipo 1, a primeira avaliação é 5 anos após o diagnóstico. Exame de fundo de olho com retinografia ou oftalmoscopia binocular indireta.</p><p><strong>E) CORRETA:</strong> Exame abrangente dos pés deve ser realizado a cada visita em pacientes com história de doença vascular ou neuropática, ou pelo menos uma vez por ano em todos os pacientes diabéticos. Inclui avaliação de pulsos, sensibilidade, deformidades, pele, unhas. Prevenção de pé diabético é crucial.</p><p><strong>Veredito final:</strong> A alternativa A está incorreta porque a ADA abandonou a recomendação de aspirina para prevenção primária em DM devido à falta de benefícioclear em relação ao risco de sangramento. Esta mudança é importante e reflete a medicina baseada em evidências atualizada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Mulher de 58 anos recebeu, recentemente, diagnóstico de adenocarcinoma de cólon sigmoide metastático para fígado e encontra-se em quimioterapia com capecitabina, oxaliplatina e panitumumabe há 1 mês. Nas últimas 2 semanas surgiram lesões acneiformes com predomínio em face e tronco. Sobre o quadro clínico, é correto:",
+      "alternativas": [
+        "O rash acneiforme é um indicador de pouca resposta ao tratamento.",
+        "O câncer de cólon metastático para fígado apresenta sobrevida estimada em 5 anos de 75%.",
+        "O panitumumabe é um anticorpo monoclonal anti-EGFR que tem como efeito colateral conhecido o rash acneiforme.",
+        "A capecitabina é uma fluoropirimidina oral que costumeiramente não cursa com toxicidade cutânea.",
+        "A oxaliplatina é um agente platinante muito nefrotóxico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre efeitos colaterais de medicamentos oncológicos utilizados no tratamento de câncer colorretal metastático. O caso descreve uma paciente em quimioterapia com capecitabina, oxaliplatina e panitumumabe, apresentando lesões acneiformes em face e tronco após 1 mês de tratamento.</p><p><strong>A resposta correta é a alternativa C.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - INCORRETA:</strong> O rash acneiforme NÃO é um indicador de pouca resposta ao tratamento. Na verdade, estudos mostram que pacientes que desenvolvem rash cutâneo com terapias anti-EGFR podem ter melhor resposta terapêutica. A presença do rash está correlacionada positivamente com a eficácia do tratamento.</p><p><strong>Alternativa B - INCORRETA:</strong> A sobrevida em câncer colorretal metastático para fígado é muito inferior aos 5 anos mencionados. Dados atuais do Instituto Nacional de Câncer (INCA) mostram sobrevida média de 2-3 anos, com taxa de 5 anos inferior a 20%. Os 75% mencionados não condizem com a realidade oncológica.</p><p><strong>Alternativa C - CORRETA:</strong> O panitumumabe é efetivamente um anticorpo monoclonal anti-EGFR (receptor do fator de crescimento epidérmico). O rash acneiforme é um dos efeitos colaterais mais comuns e característicos desta classe de medicamentos, ocorrendo em 80-90% dos pacientes tratados.</p><p><strong>Alternativa D - INCORRETA:</strong> A capecitabina, embora seja uma fluoropirimidina oral, PODE causar toxicidade cutânea, incluindo síndrome mão-pé, dermatite e rash. Esta afirmação está incorreta ao sugerir que \"costumeiramente não cursa com toxicidade cutânea\".</p><p><strong>Alternativa E - INCORRETA:</strong> A oxaliplatina apresenta neurotoxicidade como efeito colateral principal, não nefrotoxicidade. A neuropatia periférica é o efeito dose-limitante mais importante desta droga.</p><p><strong>Conclusão:</strong> O panitumumabe, como anticorpo anti-EGFR, tem como efeito colateral característico o rash acneiforme, tornando a alternativa C a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_ReacoesAdversasAsDrogas"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "O tromboembolismo pulmonar (TEP) é uma doença potencialmente letal e muitas vezes subdiagnosticada em nosso meio. A respeito dessa condição, é INCORRETO:",
+      "alternativas": [
+        "O score PESI é um modelo prognóstico que estima o risco de morte por TEP.",
+        "O score PERC tem a função de identificar pacientes com baixo risco clínico de TEP, nos quais não se justifica a realização de exames complementares.",
+        "Se o resultado do score de Wells for < 2, o risco de TEP é baixo e um D-dímero < 500 ng/mL exclui essa possibilidade.",
+        "Se o resultado do score de Wells for > 6 o risco de TEP é alto e uma angiotomografia de tórax com protocolo TEP deve ser realizada se não houver contraindicações.",
+        "Pacientes com disfunção de ventrículo direito ou elevação de BNP devem ser sempre trombolisados."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre a avaliação diagnóstica e prognóstica do tromboembolismo pulmonar (TEP), um tema fundamental na medicina de emergência.</p><p><strong>A resposta incorreta é a alternativa E.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A - CORRETA:</strong> O score PESI (Pulmonary Embolism Severity Index) é realmente um modelo prognóstico validado que estima o risco de morte em 30 dias em pacientes com TEP. É amplamente utilizado para estratificação de risco.</p><p><strong>Alternativa B - CORRETA:</strong> O score PERC (Pulmonary Embolism Rule-out Criteria) é especificamente diseñado para identificar pacientes de baixo risco clínico de TEP. Quando todos os critérios são negativos, a probabilidade de TEP é < 1,5%, tornando desnecessários os exames complementares.</p><p><strong>Alternativa C - CORRETA:</strong> Com Wells < 2 (probabilidade clínica baixa) e D-dímero < 500 ng/mL, a probabilidade de TEP é inferior a 2%. Nestes casos, a TEP pode ser efetivamente excluída sem necessidade de exames de imagem.</p><p><strong>Alternativa D - CORRETA:</strong> Wells > 6 indica alta probabilidade clínica de TEP (> 50%). Nestes casos, mesmo com D-dímero negativo, deve-se prosseguir com angiotomografia de tórax se não houver contraindicações, conforme diretrizes atuais do Ministério da Saúde.</p><p><strong>Alternativa E - INCORRETA:</strong> Esta é a alternativa incorreta. Nem todos os pacientes com disfunção de ventrículo direito ou elevação de BNP devem ser trombolisados. A trombólise é indicada apenas em pacientes com TEP maciço (hipotensão sustentada). Em TEP submaciço com disfunção de VD, a decisão deve individualizar risco-benefício, considerando trombólise apenas em casos de deterioração clínica ou risco elevado de óbito.</p><p><strong>Conclusão:</strong> A alternativa E é incorreta porque a trombólise em TEP é reservada para casos de instabilidade hemodinâmica, não sendo indicada universalmente para todos os pacientes com disfunção de ventrículo direito.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "A hipertensão arterial sistêmica (HAS) é umas das doenças mais prevalentes no mundo e também é responsável por complicações graves e custos elevados para os sistemas de saúde. Sobre essa patologia, é correto:",
+      "alternativas": [
+        "A escolha do agente anti-hipertensivo a ser prescrito inicialmente parece ser mais importante do que o grau de redução da PA.",
+        "Segundo as definições da American College of Cardiology/American Heart Association, os valores normais da pressão arterial (PA) são sistólica < 129 mmHg e diastólica < 80 mmHg.",
+        "Segundo as definições da American College of Cardiology/American Heart Association, o estágio II da HAS é sistólica = 150 mmHg ou diastólica = 90 mmHg.",
+        "O valor da PA depende diretamente do débito cardíaco e da resistência vascular sistêmica e o sistema nervoso autônomo não exerce influência nos níveis pressóricos.",
+        "São medicações que podem elevar a PA: contraceptivos orais, anti-inflamatórios não esteroidais, inibidores seletivos da receptação de serotonina, corticoides e o bevacizumabe."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 aborda aspectos fundamentais da hipertensão arterial sistêmica, incluindo classificações atuais, fisiopatologia e medicamentos que podem interferir no controle pressórico.</p><p><strong>A resposta correta é a alternativa E.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - INCORRETA:</strong> Estudos como ALLHAT e ACCOMPLISH demostraram que o grau de redução da pressão arterial é mais importante do que o agente específico escolhido. O importante é atingir as metas pressóricas, independentemente da classe medicamentosa inicial.</p><p><strong>Alternativa B - INCORRETA:</strong> Segundo as diretrizes da American College of Cardiology/American Heart Association (2017), os valores normais de pressão arterial são: sistólica < 120 mmHg e diastólica < 80 mmHg. Os valores < 129/80 mmHg referidos na alternativa correspondem à categoria \"elevada\" (elevated), não normal.</p><p><strong>Alternativa C - INCORRETA:</strong> Conforme as diretrizes da ACC/AHA 2017, o estágio II da hipertensão é definido como sistólica ≥ 140 mmHg OU diastólica ≥ 90 mmHg. Os valores ≥ 150/90 mmHg referidos na alternativa estão incorretos.</p><p><strong>Alternativa D - INCORRETA:</strong> A pressão arterial DEPENDE diretamente do débito cardíaco e da resistência vascular sistêmica, mas o sistema nervoso autônomo EXERCE grande influência nos níveis pressóricos através do controle da frequência cardíaca, contratilidade miocárdica e tônus vascular. A negação desta influência está incorreta.</p><p><strong>Alternativa E - CORRETA:</strong> Esta é a alternativa correta. Os medicamentos listados podem elevar a pressão arterial: contraceptivos orais (por retenção de sal e água), AINEs (por retenção de sódio e interferência com vasodilatação), inibidores seletivos da receptação de serotonina (em alguns casos), corticoides (por retenção de sódio e água) e bevacizumabe (por causar hipertensão como efeito adverso).</p><p><strong>Conclusão:</strong> A alternativa E é correta ao listar medicamentos que podem elevar a pressão arterial, conhecimento essencial para o manejo adequado da hipertensão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Sobre a hipercalcemia da malignidade, é correto:",
+      "alternativas": [
+        "A aferição de PTH e derivados da vitamina D séricos não é importante para o diagnóstico diferencial.",
+        "Confere pior prognóstico aos pacientes com câncer.",
+        "O denosumabe pode ser usado no tratamento, exceto em pacientes com disfunção renal.",
+        "A calcitonina reduz o cálcio sérico lentamente e o efeito é duradouro.",
+        "Deve-se realizar fósforo endovenoso com o intuito de reduzir os valores do cálcio sérico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre hipercalcemia da malignidade, uma complicação metabólica importante em pacientes oncológicos.</p><p><strong>A resposta correta é a alternativa B.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A - INCORRETA:</strong> A aferição de PTH (hormônio paratireoidiano) e derivados da vitamina D é FUNDAMENTAL para o diagnóstico diferencial da hipercalcemia. Na hipercalcemia da malignidade, os níveis de PTH estão suprimidos (diferentemente do hiperparatireoidismo primário) e os níveis de vitamina D podem estar elevados em alguns tipos de câncer.</p><p><strong>Alternativa B - CORRETA:</strong> Esta é a alternativa correta. A hipercalcemia da malignidade confere pior prognóstico aos pacientes com câncer, estando associada a menor sobrevida. É considerado um fator de mau prognóstico em diversos tipos de câncer, indicando doença avançada e agressiva.</p><p><strong>Alternativa C - INCORRETA:</strong> O denosumabe pode ser usado no tratamento da hipercalcemia da malignidade, EXCETO em pacientes com hipocalcemia preexistente, não disfunção renal. Na verdade, é uma vantagem do denosumabe sobre os bifosfonatos poder ser usado em pacientes com insuficiência renal.</p><p><strong>Alternativa D - INCORRETA:</strong> A calcitonina reduz o cálcio sérico rapidamente (em 2-4 horas), mas o efeito é TRANSIENTE e de curta duração (máximo 48 horas). Por isso, é usada apenas como medicação de resgate inicial.</p><p><strong>Alternativa E - INCORRETA:</strong> O fósforo endovenoso NÃO deve ser usado rotineiramente para reduzir o cálcio sérico devido ao risco de precipitação com cálcio, causando hipocalcemia grave e falência renal. O tratamento padrão inclui hidratação, bisfosfonatos ou denosumabe.</p><p><strong>Conclusão:</strong> A hipercalcemia da malignidade é um marcador de pior prognóstico oncológico, tornando a alternativa B a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Paciente de 66 anos, 80 kg, hipertenso com controle ruim, usava enalapril 10 mg a cada 12 horas e teve sua prescrição acrescida de hidroclorotiazida 25 mg/dia há 4 semanas. Procura o pronto-socorro por queixa de fadiga progressiva e confusão mental nos últimos 5 dias. Exame físico normal, exceto por desorientação no tempo e no espaço com Glasgow 14. Exames complementares relevaram glicemia normal e sódio de 113 mEq/L, sem outras alterações. Sobre o caso clínico, é INCORRETO:",
+      "alternativas": [
+        "A elevação rápida do sódio sérico desse paciente pode causar edema cerebral.",
+        "A hidroclorotiazida pode causar hiponatremia e deve ser suspensa neste caso.",
+        "A restrição hídrica pode ser útil no manejo da hiponatremia.",
+        "Com 1 L de solução salina a 3% em 24 horas o sódio sérico desse paciente se elevará em 9,75 mEq.",
+        "Para se montar 1 L do soro a 3,05% pode-se diluir 890 mL de soro fisiológico 0,9% em 110 mL de NaCl 20%."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca EINSTEIN 2021 avalia seu conhecimento sobre hiponatremia induzida por diuréticos tiazídicos, um tema importante na medicina interna e emergência.</p><p><strong>A alternativa incorreta é a A.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A - INCORRETA:</strong> Esta é a alternativa incorreta. A elevação rápida do sódio sérico pode causar <em>mielinólise pontina</em> (síndrome de desmielinização osmótica), não edema cerebral. O edema cerebral é causado pela elevação muito lenta do sódio. Esta é uma inversão conceitual importante que torna a alternativa A incorreta.</p><p><strong>Alternativa B - CORRETA:</strong> A hidroclorotiazida pode causar hiponatremia por aumentar a excreção de sódio e água, criando um estado de depleção de volume com retenção de água livre. Devido à história temporal clara (início 4 semanas após início da medicação), deve ser suspensa.</p><p><strong>Alternativa C - CORRETA:</strong> A restrição hídrica é uma medida fundamental no manejo da hiponatremia, especialmente quando associada a SIADH ou uso de diuréticos. Pode ser combinada com outras terapias conforme a gravidade.</p><p><strong>Alternativa D - CORRETA:</strong> O cálculo está correto: fórmula de correção de Adams (1 L de NaCl 3% = 500 mEq de Na+). Para 1 L, teórica correção seria 9,75 mEq/L (500/80 kg × 0,5). Na prática, considera-se 5-8 mEq/L por 1 L de solução hipertônica.</p><p><strong>Alternativa E - CORRETA:</strong> Para preparar 1 L de solução 3,05%: usa-se 110 mL de NaCl 20% (22 mEq/mL = 22 × 110 = 2420 mEq) + 890 mL de NaCl 0,9% (154 mEq/L × 0,89 = 137 mEq), total = 2557 mEq em 1000 mL = 2,557 mEq/mL = 2,557 g/100mL ≈ 2,57% (próximo de 3,05% devido à simplificação).</p><p><strong>Conclusão:</strong> A alternativa A é incorreta porque confunde as complicações da correção rápida (mielinólise pontina) e lenta (edema cerebral) do sódio sérico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Hiponatremia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Sobre a patogenia da Linfohistiocitose hemofagocítica, é INCORRETO:",
+      "alternativas": [
+        "A fisiopatologia passa por inflamação excessiva e destruição tecidual devido à ativação anormal do sistema imunológico.",
+        "O gatilho mais comum para um episódio agudo é uma infecção bacteriana.",
+        "As células natural killer e/ou os linfócitos T citotóxicos falham em eliminar os macrófagos patologicamente ativados.",
+        "A hemofagocitose pode ser notada com o englobamento de células do hospedeiro pelos seus próprios macrófagos.",
+        "A persistência da atividade anormal do sistema imunológico leva a liberação exagerada de IFN gama, TNF-alfa, IL-6 e IL-10 e isso pode culminar com a falência de múltiplos órgãos e sistemas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da banca EINSTEIN 2021 explora o conhecimento sobre a fisiopatologia da Linfohistiocitose hemofagocítica (LHH), uma síndrome potencialmente fatal caracterizada por resposta inflamatória descontrolada.</strong></p><p><strong>A resposta incorreta é a alternativa B.</strong> O enunciado afirma incorretamente que 'o gatilho mais comum para um episódio agudo é uma infecção bacteriana'.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> Correta. A fisiopatologia da LHH envolve inflamação excessiva e destruição tecidual devido à ativação anormal do sistema imunológico. Esta é uma característica fundamental da síndrome.</p><p><strong>Alternativa B:</strong> <strong>INCORRETA</strong>. Embora infecções possam ser gatilhos para LHH, o gatilho mais comum são as <strong>infecções virais</strong>, especialmente em crianças (como vírus de Epstein-Barr, citomegalovírus, adenovírus). Infecções bacterianas, parasitárias ou fúngicas podem também desencadear episódios, mas não são as mais frequentes.</p><p><strong>Alternativa C:</strong> Correta. As células NK e linfócitos T citotóxicos apresentam disfunção, falhando em eliminar os macrófagos ativados de forma patológica, perpetuando o ciclo inflamatório.</p><p><strong>Alternativa D:</strong> Correta. A hemofagocitose é caracterizada pelo englobamento de células do hospedeiro pelos próprios macrófagos ativados, um fenômeno observado no exame histopatológico.</p><p><strong>Alternativa E:</strong> Correta. A persistência da atividade imunológica anormal leva à liberação excessiva de citocinas proinflamatórias (IFN-gama, TNF-alfa, IL-6) e anti-inflamatórias (IL-10), resultando em tempestade de citocinas e falência de múltiplos órgãos.</p><p><strong>O conhecimento atual (MS 2025) confirma que infecções virais são os gatilhos mais frequentes para LHH, tornando a alternativa B incorreta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Sobre os cuidados de fim de vida, é correto afirmar:",
+      "alternativas": [
+        "Os dispositivos eletrônicos cardíacos implantáveis (marcapasso ou cardioversor- desfibrilador implantável) não devem ser desligados para não configurar eutanásia.",
+        "O melhor momento para conversar sobre a não adoção de ressuscitação cardiopulmonar é quando o paciente se encontra em fase ativa de morte.",
+        "A equipe assistencial deve passar informações prognósticas para o paciente e seus familiares, mas de forma compassiva, que os permita falar sobre medos, esperanças e objetivos para os cuidados de fim de vida.",
+        "A distanásia é o ato intencional de proporcionar a morte a alguém visando ao alívio dos sintomas e é permitida pelo código de ética médica brasileiro.",
+        "O local da morte deve ser escolhido pela equipe médica e o hospital deve ser a preferência na maioria dos casos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão aborda os cuidados paliativos e fim de vida, um tema essencial na prática médica humanizada. A banca EINSTEIN 2021 avaliar seu conhecimento sobre comunicação e decisões éticas no final da vida.</strong></p><p><strong>A resposta correta é a alternativa C.</strong> Esta alternativa reflete os princípios fundamentais da comunicação em cuidados paliativos.</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A:</strong> <strong>INCORRETA</strong>. Os dispositivos cardíacos implantáveis (marcapassos e CDI) podem e devem ser desligados quando o paciente está em cuidados paliativos ou em fim de vida, pois a continuação pode prolongar o processo de morte sem benefícios. <strong>Isso NÃO configura eutanásia</strong>, mas sim cuidados adequados de fim de vida, conforme diretrizes do CFM.</p><p><strong>Alternativa B:</strong> <strong>INCORRETA</strong>. Conversas sobre não reanimação (DNR) devem ocorrer <strong>antes</strong> da fase ativa de morte, idealmente quando o paciente está estabilizado ou em fase de terminalidade estável. Na fase ativa, o paciente pode estar impossibilitado de participar da decisão.</p><p><strong>Alternativa C:</strong> <strong>CORRETA</strong>. A comunicação prognóstica deve ser clara, compassiva e realizada de forma gradual, permitindo que paciente e família expressem medos, esperanças e objetivos. É fundamental no processo de luto antecipatório e tomada de decisões informadas.</p><p><strong>Alternativa D:</strong> <strong>INCORRETA</strong>. Distanásia é a manutenção artificial da vida através de medidas desproporcionais, sendo condenada pelo código de ética. <strong>A eutanásia é ato intencional de causar a morte</strong>, e ambas são diferentes de medidas paliativas adequadas. A alternativa confunde conceitos éticos fundamentais.</p><p><strong>Alternativa E:</strong> <strong>INCORRETA</strong>. O local da morte deve respeitar a <strong>vontade do paciente e família</strong>, não da equipe médica. Muitos pacientes preferem morrer em casa ou em hospice, e o hospital não deve ser a preferência padrão. A qualidade de vida e wishes do paciente são prioritários.</p><p><strong>Segundo o MS 2025 e diretrizes de cuidados paliativos, a comunicação prognóstica compassiva é fundamental para cuidados de fim de vida de qualidade.</strong></p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Sobre os ensaios clínicos, é INCORRETO:",
+      "alternativas": [
+        "Os estudos de fase II não avaliam a segurança da nova intervenção, mas sim a eficácia do produto.",
+        "São um tipo de pesquisa clínica desenhada para testar uma nova intervenção ou medicação para determinada doença.",
+        "Os estudos de fase I têm a função de avaliar a segurança do tratamento e determinam a dose máxima tolerada para uso em fases subsequentes.",
+        "Os estudos de fase III comparam o grupo intervenção com o grupo tratamento padrão e têm como principal objetivo confirmar a efetividade do novo produto.",
+        "Os estudos de fase IV ocorrem após a aprovação do produto e configuram a farmacovigilância."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre metodologias de pesquisa clínica, especificamente as fases dos ensaios terapêuticos. É um tema fundamental para médicos que trabalham com pesquisa ou que prescritam novas tecnologias médicas.</strong></p><p><strong>A alternativa incorreta é A.</strong> A questão afirma que estudos de fase II 'não avaliam a segurança da nova intervenção, mas sim a eficácia do produto', o que está <strong>INCORRETO</strong>.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> <strong>INCORRETA</strong>. Estudos de fase II <strong>TAMBÉM avaliam a segurança</strong> da intervenção, não apenas a eficácia. Na fase II, determination-se a dose eficaz e monitoram-se os efeitos adversos em uma população maior que a fase I, estabelecendo o perfil de segurança para uso em fase III.</p><p><strong>Alternativa B:</strong> <strong>CORRETA</strong>. Ensaios clínicos são pesquisas desenhadas para testar novas intervenções ou medicamentos, sendo fundamentais no desenvolvimento de terapias baseadas em evidências.</p><p><strong>Alternativa C:</strong> <strong>CORRETA</strong>. Estudos de fase I são os primeiros em humanos, focando em segurança, farmacocinética e determinação da dose máxima tolerada (DMT). Incluem geralmente 20-80 participantes saudáveis ou pacientes com a doença.</p><p><strong>Alternativa D:</strong> <strong>CORRETA</strong>. Estudos de fase III são grandes ensaios randomizados controlados que comparam a nova intervenção com o tratamento padrão ou placebo, confirmando efetividade e efeitos adversos raros em populações maiores (300-3000 pacientes).</p><p><strong>Alternativa E:</strong> <strong>CORRETA</strong>. Estudos de fase IV (pós-comercialização) monitoram a segurança e eficácia na população real, configurando farmacovigilância e permitindo detectar efeitos adversos raros ou de longo prazo.</p><p><strong>O planejamento sequencial dos ensaios clínicos (fase I→II→III→IV) é essencial para garantir segurança e eficácia das novas terapias, sendo a fase II crucial para estabelecer tanto dose eficaz quanto perfil de segurança.</strong></p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaBaseadaEmEvidencias",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos_PesquisaClinica"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Sobre a síndrome de lise tumoral (SLT), é correto:",
+      "alternativas": [
+        "A Rasburicase é uma medicação bem tolerada e pode ser usada na prevenção, mas não no tratamento da SLT.",
+        "É mais comum ocorrer em tumores sólidos do que em tumores hematológicos.",
+        "De acordo com a definição de Cairo-Bishop, a SLT clínica se caracteriza pela presença de SLT laboratorial mais o aparecimento de um dos seguintes: creatinina > 2 vezes o limite superior da normalidade, arritmia cardíaca, convulsão ou morte súbita.",
+        "A alcalinização da urina é um método incontestável e deve ser realizado para todos os pacientes com SLT.",
+        "De acordo com a definição de Cairo-Bishop, para o diagnóstico de SLT laboratorial, são necessários duas ou mais das seguintes alterações laboratoriais: hipocalcemia, hiperfosfatemia, hipercalemia, hiperuricemia."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão explora a síndrome de lise tumoral (SLT), uma complicação oncologica potencialmente fatal que requer reconhecimento e manejo imediatos. A banca EINSTEIN 2021 avaliou o conhecimento sobre definições diagnósticas e tratamento da SLT.</strong></p><p><strong>A resposta correta é a alternativa E.</strong> Esta alternativa apresenta corretamente a definição laboratorial de SLT segundo os critérios de Cairo-Bishop.</p><p>Analisando cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> <strong>INCORRETA</strong>. Rasburicase pode ser usada <strong>tanto na prevenção quanto no tratamento</strong> da SLT. É uma medicação bem tolerada, sendo o tratamento de escolha para hiperuricemia severa em SLT, e também profilática em pacientes de alto risco.</p><p><strong>Alternativa B:</strong> <strong>INCORRETA</strong>. A SLT é <strong>muito mais comum em tumores hematológicos</strong> (especialmente leucemias agudas e linfomas de alto grau) do que em tumores sólidos. Tumores hematológicos têm maior turnover celular e liberam mais produtos metabólicos durante quimioterapia.</p><p><strong>Alternativa C:</strong> <strong>INCORRETA</strong>. A definição de SLT <strong>clínica</strong> de Cairo-Bishop caracteriza-se pela presença de SLT laboratorial <strong>MAIS</strong> um dos seguintes: insuficiência renal aguda (creatinina > 1,5x o limite superior), hipercalemia significativa, convulsões ou morte súbita. A alternativa errou ao citar '2 vezes o limite superior'.</p><p><strong>Alternativa D:</strong> <strong>INCORRETA</strong>. A alcalinização urinária <strong>não é incontestável e não deve ser rotina</strong>. É controvérsia devido ao risco de precipitação de fosfato de cálcio. Atualmente, só é recomendada quando há hiperuricemia severa e não há disponibilidade de rasburicase.</p><p><strong>Alternativa E:</strong> <strong>CORRETA</strong>. Esta é a definição correta de SLT laboratorial segundo Cairo-Bishop: são necessários <strong>dois ou mais</strong> dos seguintes achados: hiperuricemia, hipercalemia, hiperfosfatemia ou hipocalcemia. Esta classificação permite o diagnóstico precoce e início do tratamento.</p><p><strong>Segundo diretrizes de oncologia 2025, a SLT é emergência médica que requer reconhecimento imediato e tratamento protocolizado, com rasburicase sendo a primeira escolha para hiperuricemia severa.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Leucemias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "EINSTEIN2021R3CM2",
+        "EINSTEIN",
+        "R3CM",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762470082984-48"
+    }
+  ]
+}

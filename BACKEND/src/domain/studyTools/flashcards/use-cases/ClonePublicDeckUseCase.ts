@@ -6,16 +6,16 @@ import AppError from '../../../../utils/AppError';
 function mapRepoDeckToDomain(deck: any): Deck {
   return {
     id: deck.id,
-    userId: deck.userId,
+    user_id: deck.userId,
     name: deck.name || deck.title,
     description: deck.description ?? null,
-    isPublic: deck.isPublic,
+    is_public: deck.isPublic,
     tags: deck.tags,
-    coverImageUrl: deck.coverImageUrl || deck.imageUrl || null,
-    status: deck.status as any,
-    flashcardCount: deck.flashcardCount,
-    createdAt: deck.createdAt,
-    updatedAt: deck.updatedAt,
+    cover_image_url: deck.coverImageUrl || deck.imageUrl || null,
+    status: (deck.status as any) || 'ACTIVE',
+    flashcard_count: deck.flashcardCount,
+    created_at: deck.createdAt,
+    updated_at: deck.updatedAt,
   };
 }
 
@@ -40,7 +40,7 @@ export class ClonePublicDeckUseCase {
       title: sourceDeckDomain.name,
       description: sourceDeckDomain.description || '',
       tags: sourceDeckDomain.tags,
-      imageUrl: sourceDeckDomain.coverImageUrl || undefined,
+      imageUrl: sourceDeckDomain.cover_image_url || undefined,
       visibility: (sourceDeck as any).visibility,
       isPublic: false, // Deck clonado é privado por padrão
     });

@@ -1,12 +1,10 @@
 import { Router } from 'express';
+import { authenticate } from '../middlewares/authMiddleware';
 import { MentorshipMeetingController } from '../controllers/MentorshipMeetingController';
 import { MentorshipServiceFactory } from '../factories';
-import { authenticate } from '../middlewares/authMiddleware';
-import { getFirestore } from 'firebase-admin/firestore';
 
 const router = Router();
-const db = getFirestore();
-const factory = new MentorshipServiceFactory(db);
+const factory = new MentorshipServiceFactory();
 const controller = new MentorshipMeetingController(factory);
 
 /**
@@ -28,14 +26,22 @@ router.get('/:id', authenticate, controller.getMeeting);
  * @desc    Lista reuniões de uma mentoria
  * @access  Private (mentor/mentee da mentoria)
  */
-router.get('/mentorship/:mentorshipId', authenticate, controller.getMeetingsByMentorship);
+router.get(
+  '/mentorship/:mentorshipId',
+  authenticate,
+  controller.getMeetingsByMentorship,
+);
 
 /**
  * @route   GET /meetings/mentorship/:mentorshipId/upcoming
  * @desc    Lista próximas reuniões de uma mentoria
  * @access  Private (mentor/mentee da mentoria)
  */
-router.get('/mentorship/:mentorshipId/upcoming', authenticate, controller.getUpcomingMeetings);
+router.get(
+  '/mentorship/:mentorshipId/upcoming',
+  authenticate,
+  controller.getUpcomingMeetings,
+);
 
 /**
  * @route   PUT /meetings/:id/complete

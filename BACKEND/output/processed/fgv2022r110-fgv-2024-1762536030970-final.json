@@ -1,0 +1,1116 @@
+{
+  "metadata": {
+    "examName": "FGV2022R110 (FGV 2024)",
+    "examYear": 2024,
+    "url": "source://108",
+    "totalQuestions": 34,
+    "categorizedQuestions": 34,
+    "rewrittenComments": 33,
+    "processedAt": "2025-11-07T17:20:30.970Z",
+    "jobId": "batch-1762529452988-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "2b47eccc-42ba-4cba-a42a-5731403dd3db"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Paciente masculino, 75 anos, foi diagnosticado com hérnia inguinal unilateral sendo indicado o tratamento cirúrgico. Quando questionado sobre a sua história patológica pregressa negou diabetes e alergias medicamentosas, é portador de hipertensão arterial controlada com 50 mg diários de Losartana e foi submetido a colocação de Stent coronariano há 6 anos, fazendo uso de rosuvastatina e ácido acetil salicílico diariamente. Nega tabagismo e relata realizar atividades simples diariamente, tais como cuidar de sua própria higiene, limpar sua louça e caminha de um a dois quarteirões por dia. \n\nNa avaliação do seu risco cardiovascular, indique qual dos exames abaixo é imprescindível.",
+      "alternativas": [
+        "Cintigrafia miocárdica.",
+        "Prova de esforço em esteira.",
+        "Eletrocardiograma.",
+        "Ecodopplercardiograma."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da FGV 2024 avalia seu conhecimento sobre avaliação pré-operatória de risco cardiovascular, um tema frequente em provas de residência médica.</p><p><strong>A resposta correta é C - Eletrocardiograma.</strong></p><p>Vamos analisar o perfil do paciente: 75 anos, com doença coronariana conhecida (stent há 6 anos), hipertensão arterial e será submetido à herniorrafia inguinal - uma cirurgia de risco intermediário.</p><p>Segundo as diretrizes ACC/AHA, o ECG é imprescindível em pacientes com fatores de risco cardiovascular que serão submetidos a cirurgias de risco intermediário. A hérnia inguinal se enquadra nesse grupo.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A) Cintigrafia miocárdica:</strong> Indicada quando há suspeita de isquemia ativa, não como screening pré-operatório de rotina</p><p>• <strong>B) Prova de esforço:</strong> Comum em pacientes assintomáticos com história de doença coronariana, mas não é o exame básico imprescindible para risco cirúrgico</p><p>• <strong>D) Ecocardiograma:</strong> Importante para avaliar função ventricular em pacientes com cardiopatia conhecida, mas não é o primeiro exame para avaliação de risco pré-operatório</p><p>A chave aqui é reconhecer que o ECG é o exame básico, de baixo custo e alta disponibilidade, fundamental para qualquer paciente cardiolático que será operado.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_AvaliacaoCardiovascular",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Paciente vítima de ferida abdominal por arma de fogo foi submetida a estabilização com cristalóides e encaminhada para abordagem cirúrgica sendo obtido o controle do sangramento e submetida a transfusão na taxa de 1:1:1 de plasma fresco, concentrados de hemácias e plaquetas.\n\nDos cuidados abaixo elencados, indique o que é dispensável.",
+      "alternativas": [
+        "Aquecer o sangue transfundido.",
+        "Reposição de cálcio após a transfusão.",
+        "Utilizar acesso periférico calibroso ou venoso central.",
+        "Utilizar frasco colabável para o concentrado de hemácias."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda os cuidados durante transfusão maciça no trauma - um tema de alta complexidade e mortalidade que pode aparecer tanto em cirurgia quanto em terapia intensiva.</p><p><strong>A resposta correta é B - Reposição de cálcio após a transfusão.</strong></p><p>Embora a hipocalcemia seja uma preocupação real na transfusão maciça (1:1:1), a reposição sistemática de cálcio não é universalmente necessária. Vamos entender por quê:</p><p><strong>Mecanismo do problema:</strong> O citrato usado como anticoagulante nas bolsas de sangue liga-se ao cálcio livre, causando hipocalcemia transitória. Porém, o fígado metaboliza rapidamente o citrato (meia-vida curta), normalizando os níveis de cálcio.</p><p><strong>Por que a reposição é dispensável na maioria dos casos:</strong></p><p>• A hipocalcemia é frequentemente transitória</p><p>• A maioria dos pacientes não desenvolve sintomas</p><p>• O foco deve estar no monitoramento, não na reposição profilática</p><p>• Pacientes com função hepática normal metabolizam bem o citrato</p><p><strong>Por que as outras alternativas são obrigatórias:</strong></p><p>• <strong>A) Aquecer o sangue:</strong> Essencial para prevenir hipotermia e coagulopatia</p><p>• <strong>C) Acesso calibroso:</strong> Necessário para infusão rápida do volume requerido</p><p>• <strong>D) Frasco colabável:</strong> Facilita a infusão por gravidade e evita entrada de ar</p><p>Esta é uma pegadinha classic: você sabe que o cálcio é importante no &quot;diamante lethal&quot; (acidose, hipotermia, coagulopatia, hipocalcemia), mas a questão testa se você entende quando a reposição é realmente necessária.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente feminina, 42 anos é diagnosticada com adenocarcinoma gástrico com células em Anel de Sinete, na região de transição do corpo para o antro. Nega outras comorbidades. Relata que apesar de se alimentar bem observou emagrecimento de 7kg nos últimos\n6 meses, com peso estimado atual de 63 kg. O exame pré operatório indicou hemoglobina de 8,1 g/dl, albumina de 2,5 g/dl e hepatograma normal.\n\nAssinale a opção que indica a conduta mais apropriada.",
+      "alternativas": [
+        "Dieta oral e nutrição parenteral por 10 dias e operar.",
+        "Operar e nutrição pós-operatória por no mínimo 10 dias.",
+        "Transfundir 2 concentrados de hemácias e operar no dia seguinte.",
+        "Transfundir 2 concentrados, nutrição parenteral por 10 dias e operar."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da FGV aborda o manejo pré-operatório de pacientes oncológicos desnutridos - um tema que gaining importance nas provas, especialmente com as diretrizes do ACERTO (Avaliação Pré-operatória e Otimização Perioperatória).</p><p><strong>A resposta correta é A - Dieta oral e nutrição parenteral por 10 dias e operar.</strong></p><p>Vamos analisar o perfil da paciente: 42 anos, adenocarcinoma gástrico tipo células em anel de sinete (tipo histológico agressivo), perda de 7kg em 6 meses, hemoglobina 8,1 g/dL e albumina 2,5 g/dL (indicando desnutrição severa).</p><p><strong>Por que a opção A é a melhor:</strong></p><p>• Prioriza sempre a via oral/enteral quando possível (mais fisiológica)</p><p>• 10 dias de otimização nutricional pré-operatória é adequado para o estresse cirúrgico</p><p>• Permite que o paciente recupereAlbumina e estado geral antes da cirurgia</p><p>• Reduz complicações pós-operatórias e tempo de internação</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>B) Operar sem otimização prévia:</strong> Desnutrição severa aumenta risco cirúrgico significativamente</p><p>• <strong>C) Transfundir e operar no dia seguinte:</strong> A correção da anemia é importante, mas a desnutrição requer mais tempo para correção</p><p>• <strong>D) Não prioriza via oral:</strong> Sempre que possível, devemos tentar a via oral/enteral antes da parenteral</p><p><strong>Dica de estudo:</strong> Lembre-se da regra &quot;oral first, enteral second, parenteral last&quot; sempre que possível, seguindo a filosofia do ACERTO.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalPerioperator",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Um paciente jovem foi submetido a laparotomia mediana para tratamento de apendicite complicada com peritonite purulenta difusa.\n\nNo fechamento da cavidade peritoneal, qual o melhor fio cirúrgico para o fechamento da aponeurose entre os abaixo elencados:",
+      "alternativas": [
+        "Seda zero.",
+        "Náilon zero.",
+        "Polipropileno zero.",
+        "Ácido poliglicólico zero."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda um tema fundamental em cirurgia: a escolha do fio ideal para fechamento de aponeurose. A FGV 2024 quer testar seu conhecimento sobre propriedades dos materiais de sutura em ambiente potencialmente contaminado.</p><p><strong>A resposta correta é C - Polipropileno zero.</strong></p><p>Vamos entender as características ideais para essa situação:</p><p>• Sutura em paciente com peritonite purulenta (ambiente contaminado)</p><p>• Aponeurose mediana (região de alta tensão)</p><p>• Precisa de resistência prolongada para prevenir hérnia incisional</p><p><strong>Por que polipropileno é a melhor opção:</strong></p><p>• <strong>Monofilamentar sintético:</strong> Menor propensão a infecção comparado aos multifilamentares</p><p>• <strong>Inabsorvível:</strong> Mantém resistência por tempo indefinido</p><p>• <strong>Baixa reação tecidual:</strong> Menos granulomas e processos inflamatórios crônicos</p><p>• <strong>Excelente memória:</strong> Mantém a tensão da sutura mesmo após edema inicial</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A) Seda:</strong> Natural, multifilamentar, causa reação tecidual significativa e pode ser meio de cultura bacteriano</p><p>• <strong>B) Náilon:</strong> Inabsorvível mas multifilamentar, propenso a granulomas</p><p>• <strong>D) Ácido poliglicólico:</strong> Absorvível multifilamentar, perderá resistência rapidamente, inadequado para fechamento de aponeurose</p><p><strong>Atualização importante:</strong> Aunque algunos guidelines atuais recomendem PDS (polidioxanona) como primeira escolha, o polipropileno continua sendo uma opção válida e correta, especialmente em ambientes potencialmente contaminados.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_FiosDeSutura"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente de 82 anos, vítima de atropelamento por bicicleta apresenta fratura alinhadas dos sexto, sétimo e oitavo arcos costais esquerdos, sem hemo ou pneumoperitoneo e fratura de colo de fêmur esquerdo. Será submetida a tratamento cirúrgico - prótese total do quadril.\n\nEm relação à profilaxia do tromboembolismo, é correto afirmar que:",
+      "alternativas": [
+        "Heparina de baixo peso molecular iniciada 24 horas após a cirurgia e interrompida após 7 dias.",
+        "Heparina de baixo peso molecular iniciada 12 horas antes da cirurgia e interrompida após 7 dias.",
+        "Heparina de baixo peso molecular iniciada 24 horas após a cirurgia e interrompida após o início da deambulação.",
+        "Heparina de baixo peso molecular iniciada 12 horas antes da cirurgia, nova dose 12h após a cirurgia e iniciar anticoagulante oral e manter até 30 dias."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da FGV avalia conhecimento sobre profilaxia de tromboembolismo venoso (TEV) em pacientes de alto risco - tema essencial tanto em ortopedia quanto em cirurgia geral.</p><p><strong>A resposta correta é D - Heparina de baixo peso molecular iniciada 12 horas antes da cirurgia, nova dose 12h após a cirurgia e iniciar anticoagulante oral e manter até 30 dias.</strong></p><p>Vamos analisar o perfil de alto risco da paciente:</p><p>• 82 anos (idade avançada)</p><p>• Fratura de colo de fêmur (mobilidade reduzida)</p><p>• Trauma por atropelamento (estresse sistêmico)</p><p>• Cirurgia de prótese de quadril (procedimento de alto risco para TEV)</p><p><strong>Por que o protocolo D é o correto:</strong></p><p>• <strong>12h antes:</strong> Permite atingir níveis terapêuticos sem aumentar sangramento intraoperatório</p><p>• <strong>12h após:</strong> Retoma proteção quando o risco de sangramento cirúrgico diminui</p><p>• <strong>Anticoagulação oral até 30 dias:</strong> Confere proteção prolongada, já que o risco de TEV permanece alto no período pós-operatório</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A) Iniciar 24h após:</strong> Deixa período sem proteção durante e imediatamente após a cirurgia</p><p>• <strong>B) Não inclui anticoagulação oral:</strong> Proteção insuficiente após interrupção da HBPM</p><p>• <strong>C) Interromper na deambulação:</strong> O risco permanece alto mesmo após deambulação inicial</p><p><strong>Dica clínica:</strong> Lembre-se que a fratura de colo de fêmur em idosos tem mortalidade significativa relacionada a TEV - a profilaxia adequada pode ser life-saving!</p>",
+      "filterIds": [
+        "Outros",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Outros_Ortopedia",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoFraturasDoFemu",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ProfilaxiaDoTromboembolismoVen"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Paciente de 56 anos submetido a cirurgia gástrica por laparotomia mediana, para tratamento de GIST. No primeiro dia de pós-operatório o paciente apresenta febre baixa, muita dor relacionada a própria cirurgia, taquipneia, diminuição da saturação de oxigênio e uso da musculatura acessória. No exame físico, os sons respiratórios estão reduzidos na base do hemitórax esquerdo.\n\nDiante desse quadro, indique a melhor conduta.",
+      "alternativas": [
+        "Analgesia com opioide e nebulizar com soro fisiológico.",
+        "Analgesia com opioide, estimular a tosse, fisioterapia respiratória.",
+        "Analgesia com não opioide, antibiótico para Gran negativo e fisioterapia respiratória.",
+        "Analgesia com não opioide, antibiótico para Gran negativo e broncodilatador por inalação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da FGV aborda manejo de complicações respiratórias no pós-operatório imediato.</strong></p><p><strong>Gabarito: B</strong></p><p>O quadro clínico é típico de atelectasia pós-operatória. O paciente apresenta febre baixa, dor intensa, taquipneia, dessaturação e redução dos sons respiratórios - clássico para atelectasia da base pulmonar esquerda.</p><p>A atelectasia é a principal causa de febre nas primeiras 24h pós-cirurgia abdominal. O mecanismo central é a dor que impede respiração profunda, causando hipoventilação e colapso alveolar.</p><p><strong>Por que a alternativa B está correta:</strong></p><p>• <strong>Opioide para analgesia:</strong> Protocolos ERAS/ACERTO recomendam analgesia adequada com opioides no pós-operatório para permitir mobilização e respiração profunda</p><p>• <strong>Estimular tosse:</strong> Fundamental para reexpansão pulmonar e mobilização de secreções</p><p>• <strong>Fisioterapia respiratória:</strong> Essencial para prevenção e tratamento da atelectasia</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A:</strong> Falta estimular tosse e fisioterapia - tratamento incompleto</p><p><strong>C e D:</strong> Erradas por prescrever antibiótico indevidamente. Não há evidência de infecção (sem leucocitose, sem infiltrado), apenas processo inflamatório local da atelectasia</p><p><strong>Pegadinha comum:</strong> Muitos candidatos prescrevem antibiótico por ver febre, mas na atelectasia inicial não há infecção bacteriana.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "Cirurgia_ComplicacoesPosoperatorias_ComplicacoesRespiratorias"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "A rejeição a um órgão transplantado, é uma consequência de um sistema que se desenvolveu ao longo de milhares de anos para proteger contra a invasão de patógenos e prevenir doenças subsequentes. \n\nSobre a rejeição, assinale a afirmativa correta.",
+      "alternativas": [
+        "A rejeição pode ocorrer imediatamente após o transplante e é primariamente mediada principalmente pelas células T e por anticorpos pré-formados.",
+        "A rejeição aguda é um processo mediado frequentemente por uma resposta adquirida de anticorpos e geralmente ocorre nas primeiras semanas a meses após o transplante.",
+        "A rejeição crônica é uma causa comum de perda do enxerto a longo prazo e é decorrente de um processo fibrótico indolente que ocorre ao longo de meses a anos, secundária à lesão imunológica crônica de processos mediados por células T e B.",
+        "O momento mais crítico para a proteção imunológica são os primeiros dias. O enxerto é fresco e há um estado elevado de inflamação secundário à inevitável lesão do enxerto por isquemia-reperfusão. Por tal motivo, a imunossupressão deve ser progressivamente maior conforme o tempo decorrido do transplante."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão aborda fisiopatologia da rejeição em transplante de órgãos.</strong></p><p><strong>Gabarito: C</strong></p><p>A rejeição crônica é a causa mais importante de perda tardia do enxerto, ocorrendo meses a anos após o transplante.</p><p><strong>Características da rejeição crônica:</strong></p><p>• <strong>Processo fibrinoso indolente:</strong> Lesão imune crônica leva à fibrose progressiva do enxerto</p><p>• <strong>Mediada por linfócitos T e B:</strong> Resposta imune crônica com participação de ambas as células</p><p>• <strong>Perda gradual da função:</strong> Diferente da rejeição aguda, é um processo insidioso</p><p>• <strong>Imunossupressão limitada:</strong> Os medicamentos atuais têm pouca eficácia na rejeição crônica estabelecida</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A:</strong> Confunde rejeição hiperaguda (minutos-horas) com rejeição aguda (semanas-meses)</p><p><strong>B:</strong> A rejeição aguda é mediada principalmente por células T, não anticorpos</p><p><strong>D:</strong> A imunossupressão deve ser MAIOR inicialmente, não progressivamente maior</p><p><strong>Dica de estudo:</strong> Mnemônico para tipos de rejeição - <strong>HAC</strong> (Hiperaguda, Aguda, Crônica) com progressão temporal e gravidade crescentes.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TransplanteDeOrgaos",
+        "Cirurgia_TransplanteDeOrgaos_Rejeicao"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Paciente feminina, 42 anos, com histórico de Doença de Crohn chega ao pronto-socorro com rebaixamento do nível de consciência, com informante relatando quadro com início há uma semana de dor lombar com irradiação para região inguinal direita, claudicação, febre, anorexia. Nos últimos dois dias apresenta confusão mental e sonolência. Foi submetida a uma tomografia computadorizada de abdome e pelve que evidenciou na região para vertebral direita uma massa de baixa densidade no retroperitônio com inflamação circundante e pequenos focos de gás.\n\nDiante desse quadro, assinale a afirmativa correta.",
+      "alternativas": [
+        "Drenagem cirúrgica via extra peritoneal associada a linezolida.",
+        "Drenagem percutânea guiada por imagem associada a linezolida.",
+        "Drenagem cirúrgica via abdominal associada a piperacilina e tazobactam.",
+        "Drenagem percutânea guiada por imagem associada a piperacilina e tazobactam."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da FGV avalia manejo de complicações infecciosas em paciente imunocomprometida.</strong></p><p><strong>Gabarito: D</strong></p><p>Mulher de 42 anos com doença de Crohn evoluindo com abscesso paravertebral. O contexto de immunossupressão (doença de base + possível corticoterapia) aumenta risco de infecções graves.</p><p><strong>Apresentação clínica típica:</strong></p><p>• <strong>Sintomas sistêmicos:</strong> Febre, anorexia, rebaixamento do nível de consciência</p><p>• <strong>Localização:</strong> Dor lombar com irradiação inguinal (anatomia do espaço retroperitoneal)</p><p>• <strong>Imagem:</strong> Massa com gás (patognomônico para infecção bacteriana com formação de abscesso)</p><p><strong>Por que a alternativa D está correta:</strong></p><p>• <strong>Drenagem percutânea guiada por imagem:</strong> Primeira escolha para abscessos retroperitoneais - menos invasiva que cirurgia</p><p>• <strong>Piperacilina-tazobactam:</strong> Antibioticoterapia de amplo espectro adequada para flora mista (aeróbios + anaeróbios) do retroperitônio</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A e C:</strong> Cirurgia aberta é reservada para falha da drenagem percutânea</p><p><strong>B:</strong> Linezolida tem espectro limitado (Gram-positivos), inadequado para flora mista do retroperitônio</p><p><strong>Princípio terapêutico:</strong> Em pacientes imunocomprometidos, sempre considerar drenagem + antibiótico sistêmico para infecções abdominais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Paciente feminina de 36 anos alega tumoração dolorosa e redutível, abaixo da cicatriz umbilical, lateralmente a esquerda. O exame clínico foi inespecífico sendo complementado por uma ultrassonografia que evidenciou um abaulamento na parede abdominal, abaixo do músculo oblíquo externo, mais visível à manobra de Valsalva.\n\nDiante desse quadro, assinale a afirmativa que indica o diagnóstico e a melhor conduta.",
+      "alternativas": [
+        "Hérnia tipo III A de Nyhus; correção cirúrgica pela técnica de Stoppa.",
+        "Hérnia de Spiegel; correção cirúrgica com uso de prótese no espaço pré-peritoneal.",
+        "Hérnia de Spiegel; correção cirúrgica com uso de prótese no espaço supra aponeurótico do oblíquo externo.",
+        "Hérnia de Grynfelt; correção cirúrgica com uso de prótese no espaço entre os músculos oblíquo interno e externo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da FGV aborda hérnias raras da parede abdominal.</strong></p><p><strong>Gabarito: B</strong></p><p>A hérnia de Spiegel é uma hérnia rara que ocorre na linha semilunar, relacionada à fraqueza da aponeurose do músculo transverso abdominal.</p><p><strong>Características diagnósticas:</strong></p><p>• <strong>Localização:</strong> Região paraumbilical, na linha semilunar (lateral ao músculo reto abdominal)</p><p>• <strong>Exame físico:</strong> Tumoração redutível, dolorosa, abaulamento à manobra de Valsalva</p><p>• <strong>Imagem:</strong> Ultrassonografia confirma abaulamento subaponeurótico</p><p><strong>Por que a alternativa B está correta:</strong></p><p>• <strong>Diagnóstico correto:</strong> Hérnia de Spiegel pela localização na linha semilunar</p><p>• <strong>Técnica adequada:</strong> Prótese no espaço pré-peritoneal (sublay) - <strong>melhor local para reforço</strong> em hérnias da parede lateral</p><p><strong>Por que as outras alternativas estão erradas:</strong></p><p><strong>A:</strong> Classificação de Nyhus não se aplica a hérnias de Spiegel</p><p><strong>C:</strong> Prótese supra-aponeurótica (onlay) tem maior recidiva em hérnias de Spiegel</p><p><strong>D:</strong> Hérnia de Grynfelt é uma hérnia lombar superior, nãoinguinal</p><p><strong>Diferencial importante:</strong> Localização é chave - linha semilunar = Spiegel; região lombar = Grynfelt/Lumbar.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniaDeSpiegel",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniaDeSpiegel_Cirurgia"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Sobre as Hérnias da região inguinal é correto afirmar, exceto:",
+      "alternativas": [
+        "A presença de hérnia inguinal em homens com hérnia femoral é mais comum do que em mulheres com hérnia femoral.",
+        "Na hérnia inguinal indireta, o saco herniário está localizado profundamente ao músculo cremaster e anterior e superior às estruturas do cordão espermático.",
+        "A técnica de Shouldice consiste no reforço da parede posterior com quatro camadas de sutura contínua e colocação de tela abaixo da fáscia transversalis.",
+        "Na técnica de McVay sutura-se o arco aponeurótico do músculo transverso ao ligamento de Cooper até os vasos femorais. Daí até o anel inguinal interno sutura o músculo transverso ao ligamento de Thomsom."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da FGV testa conhecimento sobre técnicas cirúrgicas de herniorrafia inguinal.</strong></p><p><strong>Gabarito: C (alternativa INCORRETA)</strong></p><p>Esta é uma questão do tipo \"<em>exceto</em>\", onde devemos identificar a afirmativa FALSA.</p><p><strong>Análise da técnica de Shouldice:</strong></p><p>A técnica de Shouldice é uma herniorrafia tradicional <strong>sem uso de tela</strong>, baseada na imbricação em múltiplas camadas da parede posterior do canal inguinal.</p><p><strong>Características da técnica de Shouldice:</strong></p><p>• <strong>Três ou quatro planos de sutura contínua</strong></p><p>• <strong>Sem prótese:</strong> Utiliza apenas suturas do próprio tecido do paciente</p><p>• <strong>Imbricação em \"jaquetão\":</strong> Sobreposição das camadas da fáscia transversalis</p><p>• <strong>Alta taxa de recidiva quando mal executada</strong></p><<p>Por que a alternativa C está errada: <strong>\"colocação de tela abaixo da fáscia transversalis\"</strong> - a técnica de Shouldice NÃO utiliza tela!</p><p><strong>Por que as alternativas A, B e D estão corretas:</strong></p><p><strong>A:</strong> Correta - associação inguinal-femoral é mais comum em homens</p><p><strong>B:</strong> Correta - anatomia do saco herniário indireto</p><p><strong>D:</strong> Correta - descrição anatômica da técnica de McVay</p><p><strong>Dica de estudo:</strong> Mnemônico para lembrar a técnica de Shouldice - <strong>\"S</strong>em <strong>T</strong>ela, <strong>4</strong> camadas\" (S-T-4).</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniasInguinais",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniasInguinais_TecnicasCirurgicas"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Homem de 35 anos dá entrada no pronto socorro vítima de assalto apresentando lesão por arma branca. Encontra-se lúcido, eupneico, FC 102 bpm, PA 140 x 90 mmHg. No exame clínico observamos ferida corto contusa no flanco esquerdo, na altura da linha axilar posterior, de aproximadamente 2,0 cm, com sangramento ativo de pequeno volume. À palpação abdominal observamos certo grau de defesa, dor mais intensa em flanco esquerdo e sem sinais de irritação peritoneal. Na exploração digital da ferida observamos penetração na cavidade abdominal.\n\nDiante desse quadro, assinale a melhor conduta.",
+      "alternativas": [
+        "Lavado peritoneal diagnóstico.",
+        "Laparotomia exploradora imediata.",
+        "Ultrassonografia abdominal - FAST.",
+        "Tomografia computadorizada do abdome."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da FGV 2024 aborda um dos temas mais cobrados em provas de cirurgia de emergência: o manejo do trauma abdominal penetrante. O cenário é clássico - paciente jovem, ferimento por arma branca em região de flanco, com quadro estável.</p><p><strong>A resposta correta é D - Tomografia computadorizada do abdome.</strong></p><p>O segredo aqui está na aplicação do protocolo adequado para trauma abdominal penetrante. Quando lidamos com ferimentos por arma branca, o primeiro passo é sempre afastar as indicações de laparotomia de emergência: peritonite, evisceração, instabilidade hemodinâmica ou sangramento persistente.</p><p>Nossa paciente não apresenta nenhum desses critérios. Está lúcida, eupneica, com pressão arterial preservada (140x90), e embora haja defesa abdominal e dor no flanco, não há sinais de irritação peritoneal franca. A exploração digital revelou penetração abdominal, mas isso por si só não indica cirurgia imediata.</p><p>Como se trata de uma lesão em flanco esquerdo, estamos diante de uma região onde a exploração é menos confiável devido à musculatura mais espessa. Nestes casos, a tomografia computadorizada com contraste é o exame de escolha para avaliar a extensão das lesões e orientar a conduta.</p><p>Vamos analisar as alternativas incorretas:</p><p>A) Lavado peritoneal diagnóstico está em desuso e não seria indicado neste caso.</p><p>B) Laparotomia exploradora imediata não tem indicação, pois não há critérios de urgência cirúrgica presentes.</p><p>C) Ultrassonografia FAST é útil em trauma contuso, mas não tem o mesmo valor diagnóstico em ferimentos penetrantes abdominais.</p><p><strong>Conceito-chave:</strong> O protocolo para trauma penetrante abdominal por arma branca considera a localização da ferida. Regiões de flanco e dorso demandam investigação por imagem (TC), diferente das regiões anteriores onde a exploração digital pode ser suficiente em alguns casos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Paciente masculino de 48 anos é vítima de ferida por PAF no abdome. É atendido no pronto socorro, submetido à estabilização hemodinâmica na sala de trauma com 2000 ml de cristalóides e 3 unidades de concentrado de hemácias, e encaminhado ao centro cirúrgico onde foi submetido a laparotomia exploradora que evidenciou lesões transfixantes do estômago e cólon transverso. Foi realizado rafia das lesões gástrica e colônica. O paciente evoluiu com importante resposta inflamatória, permanecendo com doses altas de aminas e ventilação mecânica.\nDiante da não melhora clínica, no quinto dia de pós-operatório foi submetido a tomografia computadorizada que evidenciou grande quantidade de líquido livre na cavidade. Submetido a nova laparotomia que encontrou volumosa peritonite fecal difusa na cavidade abdominal por deiscência das rafias do cólon. Procedida ressecção do segmento intestinal englobando as áreas previamente suturadas, colostomia, fístula mucosa e lavagem abundante da cavidade com soro fisiológico. No 4º dia de pós- operatório ainda se apresentava inflamado com balanço hídrico positivo, PAM 87 mmHg com nora à 20 ml/h (0,30 mcg/Kg/min), pressão intra abdominal de 22 mmHg, oligúria nas últimas 12 horas, mal acoplado a prótese ventilatória, FR 27 ipm, SatO2 92%, FiO2 0,75, abdômen tenso e distendido, turgência jugular além de edema periférico.\n\nDiante desse quadro, indique a conduta correta.",
+      "alternativas": [
+        "Laparotomia exploradora, lavagem da cavidade e síntese com pontos captonados.",
+        "Laparotomia exploradora, lavagem da cavidade e peritoneostomia com bolsa de Bogotá.",
+        "Drenagem nasogástrica e retal, agentes procinéticos e a correção de distúrbios eletrolíticos; Sedação profunda e analgesia.",
+        "Laparotomia exploradora, lavagem da cavidade, gastrotomia, síntese da parede e manter o paciente com bloqueio neuro muscular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Este é um dos cenários mais desafiadores em cirurgia de emergência: o desenvolvimento de síndrome compartimental abdominal no pós-operatório. O caso descreve perfeitamente a evolução de um paciente que passou por duas laparotomias devido a trauma penetrante, com peritonite fecal na segunda intervenção.</p><p><strong>A resposta correta é C - Drenagem nasogástrica e retal, agentes procinéticos e correção de distúrbios eletrolíticos; Sedação profunda e analgesia.</strong></p><p>O diagnóstico de síndrome compartimental abdominal (SCA) está bem fundamentado no enunciado. O paciente apresenta PIA (Pressão Intra-abdominal) de 22 mmHg, que corresponde ao Grau III de hipertensão intra-abdominal, associada a disfunções orgânicas: oligúria, necessidade de altas doses de vasopressores, desconforto respiratório com ventilação mecânica inadequada e abdome distendido.</p><p>Os fatores de risco estão presentes: duas cirurgias abdominais extensas, reposição volêmica agressiva, peritonite fecal (que é uma causa de SCA secundária). A Síndrome Compartimental Abdominal se caracteriza pela elevação da pressão intra-abdominal associadа à disfunção orgânica.</p><p><strong>Conduta阶梯ar:</strong> O tratamento da SCA segue uma abordagem escalonada. Na presença de Grau III-IV com disfunção orgânica, as primeiras medidas devem ser clínicas e conservadoras: sedação e bloqueio neuromuscular, descompressão gástrica e intestinal com sonda nasogástrica e retal, posicionamento adequado, controle rigoroso de balanço hídrico e correção de distúrbios eletrolíticos.</p><p>Apenas quando há falha do tratamento clínico ou deterioração progressiva, indicada-se o tratamento cirúrgico com peritoneostomia (técnica da bolsa de Bogotá).</p><p>As alternativas cirúrgicas (A, B e D) não são apropriadas neste momento, pois o paciente não tem indicação clara de re-laparotomia para correção anatômica das estruturas internas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Paciente jovem foi vítima de bala perdida apresentando ferida na altura do mamilo, na linha hemiaxilar anterior direita. Agitado, referindo dor no hemitórax afetado, taquipneia, taquicardia, hipotensão severa, hipertimpanismo na percussão, veias cervicais ingurgitadas e murmúrio vesicular ausente no hemitórax direito.\n\nDiante desse quadro, assinale a opção que indica a melhor conduta.",
+      "alternativas": [
+        "Drenagem imediata do hemitórax direito.",
+        "Intubação orotraqueal seguida de drenagem.",
+        "Toracotomia direita ântero posterior imediata na sala vermelha.",
+        "Ventilação sob máscara de Hudson, estabilização e toracotomia exploradora."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda uma das emergências mais críticas em traumatologia: o pneumotórax hipertensivo. O caso apresenta todos os elementos necessários para o reconhecimento imediato desta condição que ameaça a vida.</p><p><strong>A resposta correta é A - Drenagem imediata do hemitórax direito.</strong></p><p>Vamos analisar os elementos diagnósticos presentes: ferimento por arma de fogo na região torácica, associado a um quadro clínico que inclui agitação (decorrente da hipóxia), taquipneia, taquicardia, hipotensão, hipertimpanismo à percussão e murmúrio vesicular ausente no lado acometido. A tríade klasik - hipotensão, hipotimpanismo e dispneia - está presente, confirmada pela turgência jugular, que indica comprometimento do retorno venoso.</p><p>O pneumotórax hipertensivo é uma emergência cirúrgica verdadeira. O ar acumulado sob pressão no espaço pleural comprime o pulmão, desloca o mediastino para o lado oposto, comprometer o retorno venoso e pode evoluir rapidamente para parada cardiorrespiratória.</p><p><strong>Conduta imediata:</strong> A drenagem torácica em sistema fechado é a medida salvadora. Idealmente, deveria-se realizar primeiro uma punção de alívio com agulha calibrosa no 5º espaço intercostal, seguida da drenagem definitiva. Como as alternativas não incluem a punção de alívio, a drenagem torácica imediata é a melhor opção disponível.</p><p>As outras alternativas apresentam problemas: B e D incluem intubação orotraqueal como primeira medida, mas em um paciente com pneumotórax hipertensivo, a prioridade é descompressão torácica. A toracotomia de emergência (C) é indicada em outros cenários, como ferimentos cardíacos ou sangramento maciço, não sendo a primeira escolha para pneumotórax hipertensivo.</p><p><strong>Conceito fundamental:</strong> Em todas as emergências torácicas que cursam com comprometimento respiratório e circulatório, a descompressão deve preceder qualquer outro procedimento.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_TraumaToracico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_IndicacoesDeToracotomiaDeEmerg"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Motociclista foi vítima de esgorjamento por linha com cerol. Levado por populares ao pronto socorro, apresenta ferida incisa na face anterior do pescoço, zona II, com sangramento de pequena monta e saída de ar em grande quantidade. \n\nDiante desse quadro, assinale a opção que indica a melhor conduta.",
+      "alternativas": [
+        "Tamponamento digital da lesão e realização de traqueostomia na sala vermelha.",
+        "Tamponamento digital da lesão elevar o paciente para o centro cirúrgico para entubação orotraqueal.",
+        "Inserir um tubo endotraqueal com cautela evitando aumentar a lesão, sob visualização direta, na sala vermelha.",
+        "Para evitar a exacerbação de uma lesão existente nas vias aéreas, proceder entubação oro traqueal na sala vermelha."
+      ],
+      "correta": 2,
+      "professor_comment": "Questão um pouco mais difícil sobre trauma cervical. Vamos revisar alguns conceitos antes de responder a questão. \n\nO trauma cervical possui alta morbimortalidade devido a grande quantidade de estruturas anatômicas importantes presentes na região cervical com pouca proteção como nas cavidades abdominais ou torácicas. Devemos lembrar que o paciente é uma vítima de trauma e devemos seguir o atendimento inicial com o ABCDE, com atenção a proteção das vias aéreas (hematoma cervical, rouquidão, estridor, dispneia, enfisema subcutâneo, hemoptise grande monta, bolhas na ferida). Após a estabilização clínica inicial do paciente e garantia de via áerea pérvia vamos analisar o ferimento cervical. Lesões cervicais (em sua maioria traumas penetrantes) que não ultrapassam a musculatura do platisma dificilmente lesam alguma estrutura anatômica e portanto acarretam pequena morbidade. Dividimos a região cervical em 3 zonas de possível acometimento das estruturas anatômicas: \n\nClassificação anatômica (Monson):\n-Zona I: manúbrio esternal até cartilagem cricóide. Vasos da base e estruturas aerodigestivas\n-Zona II: cartilagem cricóide e ângulo da mandíbula. Frequente lesão de artéria carótida interna\n-Zona III: acima do ângulo da mandíbula até a base do crânio. \n\nPara definição de conduta de lesões cervicais que penetram o platisma, conservadora (investigação com exames complementares) ou cirúrgica de urgência devemos avaliar a presença de hard signs (sinais de alarme) ou instabilidade hemodinâmica. Caso o paciente apresente alguma dessas condições deve-se inicialmente garantir a via aérea e indicar reparo cirúrgico (cervicotomia exploradora). Nos pacientes estáveis hemodinamicamente devemos optar inicialmente por angiotomografia, e a depender dos achados exames secundários podem ser utilizados (broncoscopia, endoscopia, angiotomografia direcionada), e em caso de lesão identificada está indicado correção cirúrgica. \nOs sinais de alarme que indicam abordagem cirúrgica, \"hard-signs\" são presença de instabilidade hemodinâmica, sangramento pulsátil ou hematoma em expansão, ferida borbulhando, comprometimento de vias aéreas, déficit neurológico, estridor, rouquidão, sopro audível ou frêmito, hemoptise maciça.\n\nVoltando a questão, o paciente apresenta um trauma cervical por linha de cerol em zona II (cartilagem cricóide e ângulo da mandíbula) com presença de saída de ar em grande quantidade (SINAL DE ALARME / HARD SIGNS) e isso indica garantir via aérea de imediato e indicar reparo cirúrgico. Vamos analisar as alternativas. \n\nA) Alternativa incorreta. Não devemos realizar tamponamento digital e devemos garantir via aérea de IMEDIATO. \nB) Alternativa incorreta. Não devemos realizar tamponamento digital e devemos garantir via aérea de IMEDIATO. \nC) Alternativa correta. Pessoal devemos inserir um TOT com cuidado sob visualização direta na via aérea como primeira tentativa de garantia de via aérea definitiva. \nD) Alternativa incorreta. Nesses casos devemos proceder com a inserção de um TOT sob visualização direta, uma vez que o paciente provavelmente apresentará via aérea difícil e pode realizar falso trajeto durante a tentativa de IOT. \n\nResposta: Alternativa C.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaCervical",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_ViasAereasEProtecaoDaColunaCer",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_ViaAereaDefinitiva"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente masculino, 48 anos, procura a emergência com quadro de dor abdominal, de moderada a forte intensidade, no quadrante inferior do abdome, de caráter progressivo, iniciada há 5 dias. Relata que nas últimas 24h vem apresentando febre de até 38,6oC, adinamia, náuseas e anorexia. Não tem queixas urinárias e não evacuou durante todo esse período.\nNo exame físico apresenta fácies álgica, desidratado, corado, FR 20 ipm, SatO2 97%, FC: 92 bpm e PA 138 x 76 mmHg. O exame abdominal demonstra distensão, dor a palpação no flanco e fossa ilíaca direita, onde se palpa massa firme e dolorosa, de limites imprecisos. De importante no laboratório, 17.750 leucócitos com 12 bastões e PCR de 14,2. Na tomografia computadorizada observamos grande massa de aspecto inflamatória na fossa ilíaca direita, de limites imprecisos, não sendo possível a dissociação do ceco e do íleo.\n\nDiante desse quadro, assinale a opção que indica a melhor conduta.",
+      "alternativas": [
+        "Apendicectomia por videolaparoscopia.",
+        "Antibioticoterapia e medidas clínicas de suporte.",
+        "Ileotiflectomia por incisão mediana trans umbilical.",
+        "Antibioticoterapia associada a punção percutânea."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um dos dilemas mais complexos em cirurgia abdominal: o manejo da apendicite aguda complicada com formação de abscesso. É um tema recorrente em provas e exige conhecimento do conceito de 'apendicectomia de intervalo'.</p><p><strong>A resposta correta é B - Antibioticoterapia e medidas clínicas de suporte.</strong></p><p>O quadro clínico é típico: dor em fossa ilíaca direita com 5 dias de evolução, associada a febre, anorexia, náuseas e massa palpável - o clássico 'plastrão apendicular'. A tomografia confirma o diagnóstico, evidenciando uma grande massa inflamatória com limites imprecisos, sem possibilidade de dissolução do ceco e do íleo, indicando processo inflamatório extenso com formação de abscesso.</p><p>No contexto da apendicite aguda, a evolução para abscesso é uma complicação da fase gangrenosa ou perfurativa, geralmente quando há alguma contenção do processo inflamatório pelo peritônio local. Nestes casos, a cirurgia de emergência (apendicectomia) pode ser tecnicamente mais difícil, com maior risco de complicações como contaminação da cavidade, lesões iatrogênicas e necessidade de colectomia.</p><p><strong>Estratégia de manejo:</strong> Para abscessos apendiculares de grande volume com limites imprecisos, a abordagem conservadora é preferível: antibioticoterapia em dose plena por 5-7 dias, medidas de suporte clínico, controle da dor e acompanhamento da evolução.</p><p>Após a resolução do processo inflamatório agudo (geralmente em 6-8 semanas), realiza-se a apendicectomia de intervalo, que é tecnicamente mais segura e com menor morbidade.</p><p><strong>Contraindicações à abordagem conservadora:</strong> Instabilidade hemodinâmica, evolução para peritonite difusa, ou abscessos pequenos e acessíveis para drenagem percutânea (< 4 cm).</p><p>A alternativa D (antibioticoterapia com punção percutânea) seria válida para abscessos menores e bem delimitados, mas o enunciado especifica uma 'grande massa de limites imprecisos', tornando a punção inadequada e arriscada.</p><p>As alternativas A e C propõem cirurgia imediata, que seria apenas indicada na presença de complicação imediata como perfuração livre ou peritonite generalizada.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_AvaliacaoDaDorAbdominal"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Paciente masculino, 78 anos, dá entrada no pronto socorro devido a forte dor abdominal de início súbito há aproximadamente 4 horas. Ao exame, agitado, hipocorado, hipohidratado, acianótico, taquicárdico e taquipneico, PA 148 x 97 mmHg. Abdome distendido, tenso muito doloroso, com descompressão dolorosa em todos os quadrantes. Foi realizado uma rotina radiológica de abdome agudo que evidenciou volumoso pneumoperitoneo. Após estabilização clínica foi submetido a laparotomia exploradora que evidenciou uma úlcera gástrica perfurada na pequena curvatura, na altura da incisura angularis.\n\nDas opções abaixo, assinale a melhor.",
+      "alternativas": [
+        "rafia + patch de epíplon + vagotomia + piloroplastia.",
+        "Antrectomia + vagotomia + reconstrução à Billroth I.",
+        "Ressecção dos bordos da úlcera + rafia + patch de epíplon + erradicação do H. pilori.",
+        "biópsia da úlcera associada a rafia + patch de epíplon + vagotomia + erradicação do H. pilori."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta é uma questão clássica de cirurgia que avalia o tratamento da úlcera péptica perfurada. O caso apresenta um paciente idoso com dor abdominal súbita, pneumoperitoneo na radiografia e confirmação cirúrgica de úlcera gástrica perfurada na incisura angularis.</p><p><strong>A resposta correta é a letra C.</strong> Esta opção representa o tratamento mais moderno e eficaz para úlceras perfuradas.</p><p>Vamos analisar o racional terapêutico:</p><p><strong>Ressecção dos bordos:</strong> Fundamental para remover tecido fibrótico e melhorar a cicatrização, especialmente importante em úlceras crônicas.</p><p><strong>Rafia + patch de epíplon (Graham patch):</strong> Técnica padrão ouro que oferece reforço mecânico e biológico à sutura, reduzindo risco de nova perfuração.</p><p><strong>Erradicação do H. pylori:</strong> Essencial para prevenir recorrência, sendo esta bactéria o principal agente etiológico das úlceras gástricas.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>A) rfia + patch + vagotomia + piloroplastia:</strong> A vagotomia é procedimentos desnecessários em casos de úlcera gástrica perfurada sem obstrução pilórica ou sangramento. Além disso, a piloroplastia não é indicada para úlceras gástricas.</p><p><strong>B) Antrectomia + vagotomia + Billroth I:</strong> Esta é uma cirurgia de ressecção gástrica muito mais agressiva, reservada para casos complicados (hemorragia, obstrução, malignidade) ou quando há falha do tratamento conservador.</p><p><strong>D) Biópsia + rafia + patch + vagotomia:</strong> A biópsia é importante para afastar malignidade, mas a vagotomia é desnecessária. O foco deve ser na rafia simples + patch + tratamento do H. pylori.</p><p><strong>Dica de estudo:</strong> Para úlceras perfuradas: <em>Rafia + Patch = Tratamento padrão; Erradicação do H. pylori = Prevenção de recorrência; Vagotomia = Só se houver outras complicações</em>.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_UlceraPepticaPerfurada"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Paciente feminina, 27 anos, puérpera de 4 meses, relata que vem apresentando intolerância para alimentos gordurosos, plenitude pós prandial e por vezes, náusea matinal. Relata que há 12 horas apresenta náuseas, vômitos e dor abdominal em hipocôndrio direito e epigástrio com irradiação dorsal. Nega febre ou calafrios. Foi submetida a exame de ultrassom abdominal que evidenciou vesícula túrgida, de paredes espessadas, chegando a 4 mm e cálculo de 1,7 cm localizado no infundíbulo da vesícula, imóvel.\nNo hemograma encontramos: hematócrito: 45% hemoglobina: 11,2 g/dL leucócitos: 9.270 sem formas jovens. Enzimas hepáticas e pancreáticas em níveis dentro da normalidade. Foi medicada com escopolamina + dipirona + cetoprofeno. Após uma hora sem apresentar melhora, foi medicada com tramadol com melhora parcial.\n\nAssinale a afirmativa que indica o diagnóstico mais provável:",
+      "alternativas": [
+        "hepatite viral aguda.",
+        "cólica biliar refratária.",
+        "colecistite aguda litiásica.",
+        "litíase da via biliar principal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as diferenças entre cólica biliar e colecistite aguda, um tema recorrente em provas de Residência Médica.</p><p><strong>A resposta correta é B - cólica biliar refratária.</strong></p><p>O raciocínio baseia-se nos <strong>Critérios de Tokyo para Colecistite Aguda</strong>, que exigem:</p><p><strong>Critérios Locais (A):</strong></p><p>1. Sinal de Murphy positivo<br>2. Massa/dor/hiperestesia no quadrante superior direito</p><p><strong>Critérios Sistêmicos (B):</strong></p><p>1. Febre (>38°C)<br>2. Leucocitose (>10.000)<br>3. Elevação de PCR</p><p><strong>Critérios de Imagem (C):</strong></p><p>Achados compatíveis na ultrassonografia</p><p><strong>Diagnóstico definitivo:</strong> 1 critério de A + 1 critério de B + C</p><p>Analisando nosso caso:</p><p><strong>CRITÉRIO A:</strong> Dor abdominal no QSD ✓<br><strong>CRITÉRIO B:</strong> Ausência de febre, leucócitos normais (9.270) ✗<br><strong>CRITÉRIO C:</strong> Espessamento de parede vesicular ✓</p><p>Como <strong>faltam os critérios sistêmicos de inflamação</strong>, não podemos diagnosticar colecistite aguda. A paciente apresenta <strong>cólica biliar refratária</strong> (persiste dor mesmo com analgesia).</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>A) Hepatite viral aguda:</strong> Não há elevação de transaminases, não há histórico epidemiológico suggestive e o exame de imagem é típico de patologia vesicular.</p><p><strong>C) Colecistite aguda litiásica:</strong> Como explicado, faltam critérios sistêmicos de inflamação (febre, leucocitose significativa).</p><p><strong>D) Litíase da via biliar principal:</strong> O cálculo está localizado no infundíbulo vesicular, e não há sinais laboratoriais de colestase (bilirrubina normal, enzimas canaliculares não elevadas).</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase_Tratamento"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente masculino, 72 anos, deu entrada no pronto socorro com quadro de febre com calafrios, icterícia e dor abdominal, contínua no andar superior, acompanhado de náuseas e vômitos. Relatou ter sido submetido há 1 ano a colecistectomia videolaparoscópica, com boa recuperação pós-operatória. É hipertenso controlado e nega diabetes ou outras patologias. Encontra-se ictérico, eupneico, taquicárdico, TAX 38.6ºC, PA 150 x 90 mmHg. O exame de tomografia demonstra dilatação das vias biliares intra-hepática. O hemograma evidencia 22.340 leucócitos com 12 bastões, Hgb 9,3, PCR 17,63, BT 7,9 BD 6,1, amilase e lipase no limite superior da normalidade.\nDiante desse quadro clínico, laboratorial e de imagem, assinale a melhor conduta.",
+      "alternativas": [
+        "Suporteclínico,antibióticos,papilotomiaendoscópica imediata.",
+        "Suporte clínico, antibióticos, drenagem cirúrgica da via biliar principal.",
+        "Suporte clínico, antibióticos, papilotomia endoscópica precoce em até 24h.",
+        "Suporte clínico, antibióticos, papilotomia endoscópica após resolução clínica do quadro."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta é uma questão fundamental sobre o manejo da <strong>colangite aguda obstrutiva</strong>, uma condição potencialmente fatal que requer abordagem multidisciplinar urgente.</p><p><strong>A resposta correta é C.</strong></p><p>O paciente apresenta a tríade clássica de Charcot: <strong>febre, icterícia e dor abdominal</strong>, associada à história de colecistectomia prévia e dilatação das vias biliares intra-hepáticas na TC. Os exames confirmam processo inflamatório/infeccioso (leucocitose com bastonetes, PCR elevada).</p><p><strong>TIMING DA PAPILOTOMIA:</strong></p><p>A decisão entre papilotomia <strong>imediata</strong> vs <strong>precoce (24-48h)</strong> vs <strong>após resolução clínica</strong> depende da gravidade:</p><p><strong>Papilotomia IMEDIATA (A):</strong> Reservada para casos de <strong>colangite grave com instabilidade hemodinâmica</strong> (complicação como choque séptico, insuficiência respiratória).</p><p><strong>Papilotomia PRECOSE 24-48h (C):</strong> Indicada para <strong>colangite moderada</strong> com resposta ao suporte clínico inicial, como neste caso (paciente consciente, PA 150x90, sem choque).</p><p><strong>Papilotomia APÓS Resolução (D):</strong> Para casos <strong>leves</strong> com rápida resposta ao tratamento clínico.</p><p>Nosso paciente tem colangite <strong>moderada</strong> - responsivo ao suporte inicial, mas com alterações laboratoriais significativas que justificam desobstrução <strong>precoce</strong>.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>A) Papilotomia IMEDIATA:</strong> Indica instabilidade hemodinâmica, não presente neste caso. A papilotomia urgente é reservada para casos graves com falha de suporte clínico.</p><p><strong>B) Drenagem cirúrgica:</strong> A CPRE é menos invasiva e mais eficaz para colangite. A cirurgia só é considerada quando falha o tratamento endoscópico ou em casos de obstrução mecânica não acessível por via endoscópica.</p><p><strong>D) Papilotomia APÓS resolução:</strong> Complicação grave como esta requer desobstrução <em>dentro das primeiras 24-48h</em> para prevenir progressão para choque séptico.</p><p><strong>Dica de estudo:</strong> <em>Colangite leve = Clínica; Colangite moderada = Clínica + CPRE 24-48h; Colangite grave = Clínica + CPRE urgente</em>.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColangiteAguda"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Paciente feminina, 83 anos, deu entrada no pronto socorro com quadro de dor abdominal intensa, de início súbito, há mais de 18 horas, de localização difusa, acompanhado de episódios de êmese e diarréia com sangue. Relata ter diabetes tipo II, ter fibrilação atrial crônica e ser ex tabagista. Em uso de Metiformina, Amiodarona e corticoide inalatório. Encontrava-se com PA 90 x 50 mmHg, FC 152 bpm, SatO2 87%, O exame de tomografia computadorizada, sem contraste venoso, evidenciou pneumatocele extensa em alças de delgado.\nDiante desse quadro, assinale a opção que indica a melhor conduta.",
+      "alternativas": [
+        "Medidas clínicas para estabilização, seguida de cardioversão e heparinização.",
+        "Realizar angiotomografia para elucidação diagnóstica e avaliação de extensão territorial.",
+        "Laparotomia exploradora e ressecção dos segmentos intestinais inviáveis e anastomose primária.",
+        "Medidas clínicas de estabilização, revascularização do segmento comprometido por via endovascular, heparinização plena."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta é uma questão crítica sobre <strong>embolia da artéria mesentérica superior (AMS)</strong>, uma emergência cirúrgica que exige reconhecimento e tratamento imediatos.</p><p><strong>A resposta correta é C.</strong></p><p>O caso apresenta todos os sinais típicos de embolia mesentérica:</p><p><strong>Fatores de Risco:</strong> Fibrilação atrial + ausência de anticoagulação (falha na prevenção de tromboembolismo)</p><p><strong>Clínica:</strong> Dor abdominal súbita e desproporcional (característica da isquemia mesentérica) + evacuação sanguinolenta (sinal de alarme para isquemia intestinal)</p><p><strong>Instabilidade Hemodinâmica:</strong> Hipotensão (90x50), taquicardia (152 bpm), hipoxemia (SatO2 87%)</p><p><strong>TC com pneumatocele:</strong> Achado patognomônico de isquemia/necrose intestinal (gás na parede intestinal)</p><p><strong>DECISÃO CIRÚRGICA:</strong></p><p>Este paciente requer <strong>laparotomia exploradora URGENTE</strong> por dois motivos:</p><p>1. <strong>Instabilidade hemodinâmica</strong> (hipotensão, taquicardia, hipoxemia)<br>2. <strong>Sinais de peritonite/deterioro</strong> (dor há >18h, pneumatocele = necrose intestinal)</p><p>Nas próximas 6h, we'll observe se his condition improves with surgical intervention.</p><p><strong>Por que as outras alternativas estão incorretas:</p><p><strong>A) Cardioversão + Heparinização:</strong> A cardioversão só é indicada em FA <em>hemodinamicamente instável com valência.</em> O problema principal é a isquemia intestinal, não a FA. A heparinização isolada é insuficiente para tratar necrose intestinal estabelecida.</p><p><strong>B) Angiotomografia:</strong> Desnecessária - já temos TC mostrando pneumatocele, que é diagnóstica. O tempo perdido pode ser fatal em caso de isquemia mesentérica.</p><p><strong>D) Revascularização endovascular:</strong> Embolectomia por cateter pode ser considerada em pacientes <em>estáveis</em> sem sinais de peritonite. Mas quando há pneumatocele (necrose intestinal), a ressecção cirúrgica é mandatória.</p><p><strong>Conceito-chave:</strong> Na embolia mesentérica, a decisão cirúrgica é <em>clínica</em>, não angiográfica. A presença de pneumatocele = necrose intestinal = indicação para laparotomia + ressecção.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Uma mulher jovem, de 28 anos, dá entrada no pronto-socorro com dor abdominal intensa, especialmente no epigástrio e no lado superior direito do abdômen, acompanhada de náuseas e vômitos. Ela menciona ter participado de uma festa há dois dias, onde consumiu uma quantidade excessiva de alimentos gordurosos e bebidas alcoólicas.\nOs exames laboratoriais revelam níveis elevados de amilase e lipase, e de enzimas hepáticas canaliculares, além de aumento das bilirrubinas à custa da conjugada. O ultrassom revelou vesícula de paredes espessadas com múltiplos microcálculos e dilatação da árvore biliar intra e extra-hepática; restante do exame ultrassonográfico sem alterações, sendo confirmado o diagnóstico de pancreatite aguda de provável etiologia biliar.\n\nComo você conduziria inicialmente essa paciente e qual seria sua abordagem quanto à etiologia.",
+      "alternativas": [
+        "Hidratação venosa, dieta oral zero; papilotomia endoscópica nas primeiras 24h.",
+        "Hidratação venosa, dieta parenteral; papilotomia endoscópica após resolução clínico laboratorial da pancreatite.",
+        "Hidratação venosa, dieta oral zero; colecistectomia com colangiografia por videolaparoscopia sessenta dias após resolução clínico laboratorial da pancreatite.",
+        "Hidratação venosa, dieta oral zero; colecistectomia com colangiografia por videolaparoscopia após resolução clínico laboratorial da pancreatite, na mesma internação."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o manejo da <strong>pancreatite aguda biliar</strong>, um tema essencial para residência médica. O timing da colecistectomia é frequentemente testado em provas.</p><p><strong>A resposta correta é D.</strong></p><p>O caso apresenta pancreatite aguda biliar típica: paciente jovem, sexo feminino, consumo de alimentos gordurosos/alcool, dor abdominal em QSD/epigástrio, elevações laboratoriais de amilase/lipase e enzimas canaliculares, bilirrubina conjugada elevada, vesícula com espessamento e microcálculos, dilatação biliar.</p><p><strong>ABORDAGEM TERAPÊUTICA:</p><p><strong>Tratamento inicial da Pancreatite:</strong></p><p>• <strong>Hidratação venosa agressiva:</strong> Reposição hidroeletrolítica e mantenimiento da perfusão pancreática<br>• <strong>Jejum/NPO:</strong> Pode ser mantido por 48-72h ou até tolerância oral demonstrada (ausência de dor, normalização de enzimas)</p><p><strong>TIMING DA COLECISTECTOMIA:</strong></p><p>Esta é a chave da questão. Historicamente, a colecistectomia era postergada para 6-8 semanas, mas estudos modernos mostram que <strong>na mesma internação (dentro de 30 dias)</strong> é superior.</p><p><strong>Benefícios da colecistectomia na mesma internação:</strong></p><p>1. <strong>Prevenção de recorrência:</strong> Risco de 25-30% de nova pancreatite antes da colecistectomia<br>2. <strong>Redução de custos:</strong> Evita reinternação<br>3. <strong>Segurança:</strong> Com resolução da pancreatite, a cirurgia é segura</p><p><strong>Por que as outras alternativas estão incorretas:</p><p><strong>A) Papilotomia precoce:</strong> Não indicada rotineiramente na pancreatite aguda biliar. A CPRE é reservada para <strong>colangite aguda</strong> (febre + icterícia + dor) ou <strong>icterícia progressiva</strong> - o que não é o caso aqui.</p><p><strong>B) Papilotomia após resolução:</strong> Não é tratamento para pancreatite biliar. A papilotomia é feita em casos de colangite ou cálculo impactado na via biliar, não para pancreatite isolada.</p><p><strong>C) Colecistectomia em 60 dias:</strong> Como explicado, a <em>mesma internação</em> é preferível para prevenir recorrência. A espera de 60 dias aumenta o risco de nova pancreatite.</p><p><strong>Princípio atual:</strong> <em>Resolução clínica + Colecistectomia na mesma internação = padrão ouro para pancreatite biliar</em>.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Paciente feminina, 67 anos, em viagem de turismo, dá entrada na emergência com quadro de dor e distensão abdominal e parada de eliminação de gases e fezes. No exame clínico encontramos uma paciente lúcida, orientada, febril, ansiosa. Abdome distendido, pouco tenso, doloroso na fossa ilíaca esquerda, sem sinais de irritação peritoneal. Não foi palpado massas nem visceromegalias.\nO hemograma apresenta 12.780 leucócitos com 7 bastões, PCR 12,76, bioquímica dentro dos parâmetros de normalidade. Foi submetida a tomografia computadorizada do abdome que evidenciou divertículos colônicos com espessamento parietal do sigmóide e densificação dos planos adiposos e peritoniais adjacentes, além de uma coleção de 3,3 x 2,2 cm com alguns focos gasosos e extensão ao retroperitônio.\n\nDiante desse quadro, assinale a afirmativa que apresenta o procedimento correto.",
+      "alternativas": [
+        "Cirurgia de Hartmann por laparotomia.",
+        "Antibioticoterapia e transversostomia em alça.",
+        "Antibioticoterapia e punção percutânea do abscesso.",
+        "Antibioticoterapia e drenagem por videolaparoscopia do abscesso."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda uma complicação importante da diverticulite aguda - o abscesso pericólico. O caso apresenta uma paciente idosa com quadro clássico de diverticulite, mas a tomografia computadorizada revela sinais de complicação: espessamento parietal do sigmóide, densificação dos planos adjacentes e uma coleção de 3,3 x 2,2 cm com focos gasosos, характерistíco de abscesso.</p><p><strong>A resposta correta é C - Antibioticoterapia e punção percutânea do abscesso.</strong> Esta conduta baseia-se na classificação de Hinchey, onde este achado corresponde ao <strong>Estágio II</strong>: abscesso intra-abdominal ou retroperitoneal.</p><p><strong>Vamos analisar as alternativas incorretas:</strong></p><p><strong>A) Cirurgia de Hartmann:</strong> Esta é uma cirurgia de grande porte reservada para casos mais graves (Hinchey III e IV - peritonite). Não é primeira escolha para abscesso localizado e pequeno.</p><p><strong>B) Antibioticoterapia e transversostomia:</strong> A transversostomia é uma derivação intestinal indicada em situações diferentes, não para tratar abscesso de sigmóide.</p><p><strong>D) Drenagem por videolaparoscopia:</strong> Embora seja uma técnica minimamente invasiva, a punção percutânea guiada por imagem é menos invasiva e mais eficaz para abscessos desta localização e tamanho.</p><p><strong>Na prática clínica:</strong> Pacientes com abscessos > 3 cm, como neste caso, têm melhor evolução com drenagem percutânea associada a antibiótico, seguida de sigmoidectomia eletiva após recuperação. O tamanho do abscesso (3,3 cm) é um fator limitante para tratamento apenas clínico.</p><br><p><strong>Importante:</strong> O conhecimento da classificação de Hinchey é fundamental para tomada de decisões em emergências abdominais, sendo conteúdo recorrente em provas de Residência Médica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente masculino, 48 anos, é atendido na emergência com quadro de dor abdominal de padrão progressivo, de início há mais de 48 horas, de caráter difuso, associada a náuseas e parada de eliminação de gases e fezes. Nega comorbidades exceto ter sido submetido a laparotomia exploradora devido a trauma abdominal contuso aos 30 anos de idade, com ressecção de segmento intestinal e boa evolução no pós-operatório.\nAo exame, paciente encontra-se algo desidratado, hemodinamicamente estável. O abdome apresenta-se distendido, tenso, difusamente doloroso, sem piora á descompressão, peristaltismo exacerbado, com timbre metálico e hipertimpanismo difuso. A tomografia evidencia distensão difusa das alças de delgado até a cavidade gástrica, com níveis hidroaéreos; destaca-se transição de calibre na projeção do mesogástrio associado a infiltração líquida e densificação da gordura mesentérica.\n\nDiante desse quadro clínico tomográfico, assinale a afirmativa que indica a melhor conduta.",
+      "alternativas": [
+        "Colonoscopia terapêutica com colocação de stent.",
+        "Laparotomia exploradora imediata para lise de aderências.",
+        "Cateter naso gástrico, hidratação venosa, dieta oral zero e repetir a tomografia com contraste oral em 48h.",
+        "Cateter naso gástrico, hidratação venosa, dieta oral zero. Se não houver melhora clínica em 48h, indicar laparotomia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta é uma questão clássica sobre manejo de obstrução intestinal em paciente com cirurgia prévia. O padrão da FGV explora uma situação frequente na prática cirúrgica: obstrução por aderências em paciente com história de laparotomia anterior.</p><p><strong>A resposta correta é C - Cateter nasogástrico, hidratação venosa, dieta oral zero e repetir tomografia com contraste oral em 48h.</strong></p><p><strong>Vamos analisar o raciocínio clínico:</strong></p><p>O paciente apresenta: (1) história de laparotomia por trauma aos 30 anos, (2) quadro obstrutivo há >48 horas sem sinais de peritonite, (3) estabilidade hemodinâmica, (4) peristaltismo exacerbado com timbre metálico, (5) transição de calibre no mesogástrio na TC.</p><p><strong>Por que não operar imediatamente?</strong></p><p>As <strong>primeiras 48-72 horas</strong> são cruciais no manejo de obstrução simples. Como não há sinais de complicação (perfuração, peritonite, sépsis), o tratamento clínico é a primeira abordagem. A literatura demonstra que 60-85% das obstruções por aderências resolvem com tratamento conservador.</p><p><strong>Alternativas incorretas analisadas:</strong></p><p><strong>A) Colonoscopia com stent:</strong> Indicated para obstrução maligna do cólon, não para obstrução do delgado por aderências.</p><p><strong>B) Laparotomia imediata:</strong> Só indicada se houver deterioração clínica, peritonite ou falha do tratamento conservador.</p><p><strong>D) Laparotomia se não melhorar em 48h:</strong> A reavaliação deve ser por imagem (TC com contraste oral), não por decisão cirúrgica direta.</p><br><p><strong>Dica de estudo:</strong> Lembre-se da <strong>regra dos 48-72 horas</strong> para obstrução intestinal simples. Sempre avalie por imagem antes de decidir por cirurgia!</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoObstrutivo",
+        "Cirurgia_Trauma"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente feminina, 28 anos, é levada ao serviço de emergência com quadro de dor abdominal de forte intensidade, com parada de eliminação de gases e fezes, queda do estado geral e febre de até 38.7ºC. Relata que na adolescência recebeu o diagnóstico de Doença de Crohn, com períodos de exacerbação apesar da aderência ao tratamento clínico. O hemograma mostra 16.500 leucócitos com 12 bastões, hemoglobina 8,3g/dl e albumina de 2,5g/dl. A tomografia de abdome mostra distensão difusa do cólon, com diâmetro máximo no transverso de 80mm.\n\nDiante desse quadro, assinale a conduta a ser tomada.",
+      "alternativas": [
+        "Cirurgia de Hartmann.",
+        "Proctocolectomia com ileostomia.",
+        "Dieta zero, corticóide venoso, antibioticoterapia.",
+        "Íleo tiflectomia com ileostomia e fístula mucosa."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda uma das complicações mais graves da Doença de Crohn: o <strong>megacólon tóxico</strong>. É fundamental reconhecer os critérios diagnósticos e a conduta adequada nesta situação crítica.</p><p><strong>A resposta correta é B - Proctocolectomia com ileostomia.</strong></p><p><strong>Vamos analisar os critérios para megacólon tóxico no caso apresentado:</strong></p><p>✓ <strong>Dilatação colônica:</strong> TC mostra diâmetro de 80mm no cólon transverso (>6cm) <br>✓ <strong>Febre >38°C:</strong> 38,7°C <br>✓ <strong>Leucocitose com desvio:</strong> 16.500 leucócitos com 12 bastões <br>✓ <strong>Anemia:</strong> Hb 8,3g/dL <br>✓ <strong>Hipoalbuminemia:</strong> 2,5g/dL <br>✓ <strong>Parada de eliminação:</strong> gasses e fezes</p><p><strong>Por que cirurgia imediata e não tratamento clínico?</strong></p><p>Na Doença de Crohn, o megacólon tóxico tem <strong>taxa de falência do tratamento clínico muito alta</strong> (70-80%), contrastando com a retocolite ulcerativa (30-50%). Além disso, a paciente apresenta <strong>múltiplos critérios de gravidade</strong> com deterioração do estado geral.</p><p><strong>Alternativas incorretas:</strong></p><p><strong>A) Cirurgia de Hartmann:</strong> Exclui o reto, mas o Crohn pode acometer áreas remanescentes. Não é ideal.</p><p><strong>C) Tratamento clínico:</strong> хотя que pode ser tentado em casos menos graves, nesta paciente com critérios múltiplos de gravidade e Chaco avançado, a falha é quase certa.</p><p><strong>D) Ileocolectomia:</strong> Procedimento muito limitado para megacólon tóxico, que acomete todo o cólon.</p><br><p><strong>Ponto crítico:</strong> Em pacientes com DII e megacólon tóxico, a colectomia total com ileostomia é a conduta gold standard quando há critérios de gravidade. O timing da cirurgia é crucial para reduzir morbimortalidade.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "A resposta do organismo frente a um trauma visa restabelecer o equilíbrio das funções do mesmo. \n\nDas assertivas abaixo, assinale a correta:",
+      "alternativas": [
+        "A imunidade inata é a primeira linha de defesa celular, além de ser um ativador chave do sistema imune adaptativo.",
+        "A via vagal eferente através do nervo esplênico aumenta os níveis sistêmicos de TNF e é protetora na resposta séptica.",
+        "As respostas inflamatórias tal como vasodilatação, liberação de citocinas e trombose são prejudiciais tanto local quanto sistêmicas.",
+        "A imunidade adaptativa humoral é dirigida por células T ativadas; Imunoglobulinas e citocinas realizam os efeitos finais do sistema imune humoral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão de fisiologia immunology aborda os mecanismos de resposta imune ao trauma, tema fundamental na Medicina de Emergência e Cirurgia. Vamos entender cada componente do sistema imune nesta situação.</p><p><strong>A resposta correta é A - A imunidade inata é a primeira linha de defesa celular, além de ser um ativador chave do sistema imune adaptativo.</strong></p><p><strong>Vamos analisar o papel da imunidade inata no trauma:</strong></p><p>A imunidade inata age <strong>imediatamente</strong> (minutos a horas) através de: macrófagos, neutrófilos, complemento, células NK. Estas células liberam citocinas (IL-1, TNF, IL-6) que ativam a resposta adaptativa.</p><p><strong>Por que a alternativa A está correta?</strong></p><p>✓ <strong>Primeira linha de defesa:</strong> Atua em minutos <br>✓ <strong>Celular:</strong> Envolve fagócitos, células apresentadoras de antígeno <br>✓ <strong>Ativador da imunidade adaptativa:</strong> As citocinas liberadas (especialmente IL-12, IFN-γ) determinam o perfil da resposta Th1/Th2</p><p><strong>Alternativas incorretas analisadas:</strong></p><p><strong>B) Via vagal eferente:</strong> O parassimpático tem efeito <strong>anti-inflamatório</strong> (via Colinérgica) e reduz TNF, não aumenta. É protetor na sepse, não nocivo.</p><p><strong>C) Respostas inflamatórias prejudiciais:</strong> A inflamação inicial é <strong>protetora</strong> - promove hemostase, defesa antimicrobiana e reparo tecidual. Só se torna prejudicial se excessiva ou persistente.</p><p><strong>D) Imunidade adaptativa humoral:</strong> A imunidade <strong>humoral é dirigida por células B</strong> (produção de anticorpos), enquanto a <strong>imunidade celular é dirigida por células T</strong>. A alternativa inverte os conceitos.</p><br><p><strong>Pontos-chave para provas:</strong> Lembre-se que a resposta imune ao trauma é uma cascata: inata → adaptativa. A comunicação entre sistemas ocorre principalmente via citocinas, sendo fundamentais para o direcionamento da resposta adaptativa.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaInflamatoria",
+        "ClinicaMedica_Imunologia"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Sobre o traumatismo raqui medular num paciente politraumatizado com instabilidade hemodinâmica, assinale a afirmativa correta.",
+      "alternativas": [
+        "No choque neurogênico a ressuscitação volêmica maciça é necessária devido à vasoplegia por perda do tônus vasomotor.",
+        "No trauma raquimedular a perda da inervação simpática acarreta choque espinhal com consequente taquicardia compensatória.",
+        "Se a coluna do paciente estiver protegida, a avaliação da coluna vertebral e a exclusão da lesão medular podem ser adiadas com segurança.",
+        "A ausência de déficit neurológico, dor ou sensibilidade ao longo da coluna vertebral em pacientes lúcidos é um indicador ruim para lesão raqui medular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda a abordagem inicial do trauma raquimedular em paciente politraumatizado instável. É um tema de alta relevância em Medicina de Emergência e Cirurgia do Trauma, com принципиы básicos que podem salvar vidas.</p><p><strong>A resposta correta é C - Se a coluna do paciente estiver protegida, a avaliação da coluna vertebral e a exclusão da lesão medular podem ser adiadas com segurança.</strong></p><p><strong>Esta é a resposta que segue o protocolo ATLS (Advanced Trauma Life Support).</strong></p><p><strong>Vamos analisar o raciocínio do ATLS:</strong></p><p>1. <strong>ABCDE sempre em primeiro lugar:</strong> Via aérea, respiração, circulação, deficiência neurológica, exposição/ambiente <br>2. <strong>Imobilização antes da avaliação detalhada:</strong> Colar cervical + cabeça + mobilização em bloco <br>3. <strong>Estabilidade hemodinâmica é prioridade:</strong> Trauma raquimedular é menos urgente que choque hipovolêmico <br>4. <strong>Avaliação neurológica detalhada após estabilização</strong></p><p><strong>Por que as outras alternativas estão erradas?</strong></p><p><strong>A) Choque neurogênico e ressuscitação massiva:</strong> O choque neurogênico (perda tônus simpático) causa vasoplegia, mas a ressuscitação deve ser <strong>judiciosa</strong> com drogas vasoativas (noradrenalina), não volume maciço que pode causar sobrecarga.</p><p><strong>B) Perda simpática com taquicardia:</strong> <strong>Errado!</strong> A perda simpática causa <strong>bradicardia</strong> paradoxal, não taquicardia. É a marca registrada do choque neurogênico.</p><p><strong>D) Ausência de déficit como indicador ruim:</strong> <strong>Invertido!</strong> A <strong>PRESENÇA</strong> de déficit neurológico é o indicador ruim. Pacientes lúcidos sem déficit têm menor probabilidade de lesão grave.</p><br><p><strong>Chaves para o exame:</strong> Sempre priorize ABCDE. Imobilize primeiro, avalie depois. Lesão medular pode esperar; choque hipovolêmico não. E lembre-se: bradicardia + hipotensão = choque neurogênico!</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaEmPopulacoesEspeciais"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Um paciente de 72 anos será submetido a colecistectomia por videolaparoscopia. Sobre as alterações fisiológicas que esse paciente poderá sofrer decorrente do pneumoperitoneo, assinale a afirmativa correta:",
+      "alternativas": [
+        "O CO2 tem baixa solubilidade no sangue, onde sofre tamponamento, e é rapidamente eliminado por meio dos pulmões.",
+        "O aumento da pressão intra-abdominal, resulta em aumento da complacência pulmonar, atelectasia, hipercarbia e hipóxia.",
+        "O aumento da pressão abdominal acima de 20 mmHg pode alterar o retorno venoso, causando diminuição do débito cardíaco e consequente hipertensão arterial.",
+        "As arritmias cardíacas são normalmente desencadeadas por acidose respiratória, estimulação simpática, reflexo vagal e hipóxia, sendo as principais as extrassístoles ventriculares."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da FGV avalia seu conhecimento sobre as complicações fisiológicas do pneumoperitônio durante a videolaparoscopia.</strong></p><p>O pneumoperitônio é essencial para a exposição adequada dos órgãos abdominais, mas gera alterações cardiopulmonares importantes que você deve conhecer.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - INCORRETA.</strong> O CO2 é ALTAMENTE solúvel no sangue e se distribui rapidamente pelos tecidos, causando hipercarbia. Por isso, a ventilação minuto precisa ser aumentada durante a cirurgia para eliminar o excesso de CO2 absorvido.</p><p><strong>Alternativa B - INCORRETA.</strong> O aumento da pressão intra-abdominal DIMINUI a complacência pulmonar (não aumenta), causa atelectasias basais, hipercarbia e pode levar à hipoxemia, não hipóxia como stated.</p><p><strong>Alternativa C - INCORRETA.</strong> A diminuição do retorno venoso caused by increased intra-abdominal pressure resulta em HIPOTENSÃO arterial, não hipertensão. O coração recebe menos pré-carga, diminuindo o débito cardíaco.</p><p><strong>Alternativa D - CORRETA.</strong> As arritmias durante laparoscopia são multifatoriais: acidose respiratória (hipercarbia), estimulação simpática (resposta ao estresse), reflexo vagal (estimulação peritoneal) e hipoxemia podem desencadear extrassístoles ventriculares, bradicardia e até fibrilação ventricular em casos graves.</p><p><strong>Dica importante:</strong> Em pacientes cardiopatas, o pneumoperitônio pode ser mal tolerado, necessitando de monitorização rigorosa e possivelmente conversão para laparotomia.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Paciente de 78 anos, masculino, sabidamente portador de deficiência de Alfa 1 anti-tripsina, foi submetido a endoscopia digestiva alta que evidenciou varizes gástricas - GOV 2 e gastropatia congestiva acentuada, e elastografia hepática pelo fibroscan que diagnosticou fibrose moderada a avançada. Foi classificado como Child-Pugh classe B, MELD 13. \n\nAssinale a afirmativa que indica a melhor conduta para esse caso.",
+      "alternativas": [
+        "Transplante hepático.",
+        "Bloqueio ß-adrenérgico não seletivo.",
+        "Shunt espleno renal distal por cirurgia.",
+        "Shunt portossistêmico intra-hepático transjugular (TIPS)."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão explora a conduta terapêutica em paciente cirrótico com varizes gástricas e classificação de Child-Pugh B.</strong> É um tema clássico que aparece frequentemente em provas de gastroenterologia e cirurgia.</p><p>Vamos contextualizar: o paciente apresenta deficiëncia de Alfa-1 anti-tripsina (causa genética de cirrose), fibrose moderada-avançada, Child-Pugh B e MELD 13, com varizes gástricas GOV 2.</p><p>Analisando as alternativas:</p><p><strong>Alternativa A - INCORRETA.</strong> Transplante hepático é indicado em cirrose descompensada, mas com MELD ≥ 15 ou complicações refratárias. MELD 13 indica boa sobrevida sem transplante imediato.</p><p><strong>Alternativa B - CORRETA.</strong> Betabloqueadores não seletivos são a primeira escolha para profilaxia primária de sangramento varicoso. Propranolol ou carvedilol reduzem a pressão portal através da vasoconstrição esplâncnica. É especialmente indicado em Child B/C e varizes de grosso calibre.</p><p><strong>Alternativa C - INCORRETA.</strong> Shunt esplenorrenal distal é cirurgia de grande porte, reservada para casos refratários quando outras opções falharam. Tem alto risco de encefalopatia hepática.</p><p><strong>Alternativa D - INCORRETA.</strong> TIPS é procedimiento de resgate em sangramento agudo refratário ou como ponte para transplante. Não é primeira linha para profilaxia primária.</p><p><strong>Pegadinha comum:</strong> Muitos candidatos optam por TIPS por ser menos invasivo que cirurgia, mas esquecem que TIPS tem indicações específicas e alto risco de encefalopatia.</p><p><strong>Mnemônico útil:</strong> Para profilaxia varicosa: \"BETÃO\" (Betabloqueadores, Endoscopia, TIPS apenas em resgate).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_ComplicacoesDeQueimaduras"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Paciente vítima de agressão sofreu queimaduras extensas por líquido inflamável, em parte da face anterior do abdome, 12% do membro inferior direito, principalmente face anterior e lateral, e 4,5% do membro inferior esquerdo, face medial. Relata muita dor na perna direita, principalmente ao estiramento passivo. No exame desse segmento, observa-se edema tenso, parestesia do pé homolateral e pulso pedioso presente.\n\nAssinale a afirmativa que indica a melhor conduta para esse caso.",
+      "alternativas": [
+        "Analgesia, reposição volêmica e elevação do membro afetado.",
+        "Indicar escarotomia longitudinal na pele íntegra da perna direita.",
+        "Indicar escarotomia com fasciotomia englobando toda a área afetada da perna direita.",
+        "Indicar escarotomia, que deve ser realizada no centro da área queimada da perna direita."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão testa seu reconhecimento e conduta frente à síndrome compartimental em paciente com queimaduras extensas.</strong> É um cenário crítico que exige intervenção imediata.</p><p>Vamos analisar os sinais clínicos preocupantes: queimadura circumferencial do membro inferior direito (12%), dor desproporcional ao estiramento passivo, edema tenso, parestesia do pé e pulso pedioso presente. Esses achados são clássicos para síndrome compartimental.</p><p><strong>Por que isso acontece?</strong> A queimadura de thickness total forma uma capa de necrose inelástica que actúa como um torniquete interno, impedindo a expansão dos tecidos. O edema muscular progressivo aumenta a pressão intracompartimental, comprimindo vasos e nervos.</p><p>Analisando as alternativas:</p><p><strong>Alternativa A - INCORRETA.</strong> Enquanto analgesia, reposição volêmica e elevação são importantes no manejo geral do queimado, NÃO resolvem a síndrome compartimental. Você precisa descomprimir imediatamente.</p><p><strong>Alternativa B - INCORRETA.</strong> Escarotomia em pele íntegra é desnecessária e pode causar sangramento. A pele queimada já está necrótica e anestésica.</p><p><strong>Alternativa C - INCORRETA.</strong> Fasciotomia é mais invasiva e indicada em queimaduras elétricas (lesão muscular subestimada) ou quando há sinais tardios de comprometimento muscular. Como temos dor precoce e parestesia, escarotomia é suficiente.</p><p><strong>Alternativa D - CORRETA.</strong> Escarotomia no centro da área queimada é a conduta de escolha. É indolor (pele necrótica), de rápida execução e effectively libera a pressão. Se houver evolução com sinais de comprometimento muscular, aí sim considera-se fasciotomia.</p><p><strong>Alerta crítico:</strong> \"Não espere a perda do pulso para fazer a descompressão!\" Este é o erro mais fatal em síndrome compartimental. Quando o pulso some, já pode ser tarde demais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_TratamentoDefinitivoDasAreasQu",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_ComplicacoesDeQueimaduras",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaVascularDeExtremidades"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Paciente de 28 anos de idade, sexo masculino, vítima de acidente automobilístico com capotamento e ejeção do veículo, é atendido no local por uma unidade avançada do SAMU. Está torporoso, não responsivo, hipocorado 3+/4+, PA 87x39 mmHg, FC 125 bpm, FR 22 irpm, SatO2 88%. À inspeção, há colapso jugular bilateral, além de grande equimose e crepitação sem enfisema subcutâneo em parede torácica esquerda. À percussão, macicez no hemitórax esquerdo.\n\nAssinale a afirmativa que indica a melhor conduta para esse caso.",
+      "alternativas": [
+        "Drenagem torácica no 5º EIC esquerdo.",
+        "Intubação orotraqueal com proteção cervical.",
+        "Ventilação por máscara com reservatório de O2 .",
+        "Toracocentese de alívio no 2º EIC esquerdo, linha hemi clavicular anterior."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da FGV avalia sua capacidade de aplicar o protocolo ABCDE no atendimento inicial ao trauma.</strong> É fundamental que você domine essa sequência, especialmente em casos complexos.</p><p>Vamos analisar o cenário: paciente jovem (28 anos) vítima de capotamento com ejeção (mecanismo de alta energia), atendido por unidade avançada do SAMU, em estado grave: torporoso, não responsivo, choque hipovolêmico (PA 87x39, FC 125), hipoxemia (SatO2 88%), colapso jugular, hemitórax esquerdo (crepitação + macicez).</p><p><strong>O que o colapso jugular significa aqui?</strong> NÃO é turgência jugular (que sugere tamponamento). É COLAPSO, indicando hipovolemia severa - sinal de choque hipovolêmico grau III/IV.</p><p>Vamos aplicar o protocolo ABCDE:</p><p><strong>A - Airway (vias aéreas):</strong> Paciente torporoso, não responsivo = Glasgow muito provavelmente <8 = indicação FORMAL de via aérea definitiva.</p><p><strong>Protegão cervical obrigatória:</strong> Mecanismo de alta energia com ejeção = alto risco de lesão cervical.</p><p><strong>Alternativa A - INCORRETA.</strong> Drenagem torácica é importante, mas NÃO é a primeira prioridade. Vias aéreas sempre vêm primeiro.</p><p><strong>Alternativa B - CORRETA.</strong> Intubação orotraqueal com proteção cervical é a conduta inicial adequada. Após isso, vamos para B (breathing) e C (circulation).</p><p><strong>Alternativa C - INCORRETA.</strong> Máscara com reservatório é insuficiente. Com Glasgow <8, você precisa proteger as vias aéreas contra aspiração.</p><p><strong>Alternativa D - INCORRETA.</strong> Toracocentese de alívio é para pneumotórax hipertensivo (emergência). Aqui temos macicez = provável hemotórax, que requer drenagem torácica, mas novamente: vias aéreas primeiro.</p><p><strong>Mnemônico essencial:</strong> \"ABCDE - Não pule etapas!\" (Airway Before Breathing Before Circulation...).</p><p><strong>Erro clássico:</strong> Muitos candidatos se distraem com a lesão torácica e esquecem que paciente com Glasgow <8 precisa de intubação inmediata.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_ViaAereaDefinitiva",
+        "Cirurgia_Trauma_TraumaToracico",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Paciente de 43 anos, feminina, dá entrada na emergência com quadro de hematêmese vultuosa, hipotensa e taquicárdica. Não tem história de doença péptica prévia.\nFoi submetida a endoscopia digestiva alta de urgência que evidenciou uma Lesão de Dieulafoy na pequena curvatura, à 5,0 cm da cárdia.\n\nAssinale a afirmativa que indica a melhor conduta para esse caso.",
+      "alternativas": [
+        "Gastrectomia subtotal alargada.",
+        "Embolização angiográfica com molas.",
+        "Gastrotomia cirúrgica com sutura da lesão.",
+        "Infiltração de sustância esclerosante por EDA."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão aborda o tratamento da lesão de Dieulafoy, uma causa rara mas potencialmente fatal de hemorragia digestiva alta.</strong> É importante você conhecer essa entidad, especialmente seu tratamento endoscópico.</p><p>Vamos entender a lesão: Dieulafoy é uma malformação vascular where um vaso arterial de grande calibre (normalmente da artéria gástrica esquerda) protrude através da mucosa gástrica sem ulceracão circundante. É like uma \"pólipo vascular\" que pode sangrar catastroficamente.</p><p>Características clássicas: paciente jovem sem história de úlcera, sangramento massivo (hematêmese vultuosa), vaso visível na endoscopia (como visto aqui: 5,0 cm da cárdia, pequena curvatura).</p><p>Analisando as alternativas de tratamento:</p><p><strong>Alternativa A - INCORRETA.</strong> Gastrectomia subtotal é procedimento de grande porte, reservado para casos quando métodos menos invasivos falharam ou há perfuração. Hoje, 95% dos casos são resolvidos endoscopicamente.</p><p><strong>Alternativa B - INCORRETA.</strong> Embolização angiográfica é segunda linha, quando endoscopia falha ou não está disponível. Tem risco de isquemia gástrica e é mais complexa que métodos endoscópicos.</p><p><strong>Alternativa C - INCORRETA.</strong> Gastrotomia cirúrgica com sutura é abordagem histórica, muito invasiva para uma lesão que pode ser tratada endoscopicamente. Indicada apenas em falência de todos os métodos menos invasivos.</p><p><strong>Alternativa D - CORRETA.</strong> Infiltração de substância esclerosante por EDA é primeira escolha tratamento. Outras opções endoscópicas incluem clipagem mecánica ou ligadura elástica. Escleroterapia é efetiva, rápida e menos invasiva que cirurgia.</p><p><strong>Dica importante:</strong> Lesão de Dieulafoy é mais comum em homens, região gástrica proximal, e pode recidivar se não tratada adequadamente. Endoscopia é gold standard diagnóstico e terapêutico.</p><p><strong>Pegadinha:</strong> Não confunda com úlcera péptica! O tratamento é completamente diferente - úlcera trata-se com IBP e posible H. pylori, Dieulafoy precisa de intervenção mecánica immediate.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Paciente masculino, 67 anos, em investigação de icterícia e dor abdominal, foi diagnosticado por colangioressonância com cisto biliar tipo I.\n\nDiante desse achado, qual a melhor indicação terapêutica?",
+      "alternativas": [
+        "Papilo esfincterotomia por endoscopia digestiva alta.",
+        "Colecistectomia e colédoco duodeno anastomose à Madenn.",
+        "Excisão cirúrgica completa, colecistectomia e hepaticojejunostomia em Y-de-Roux.",
+        "Colecistectomia associada a papilo esfincteroplastia por acesso cirúrgico transduodenal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da FGV avalia o conhecimento sobre cistos biliares e sua abordagem cirúrgica ideal. O caso descreve um homem de 67 anos com cisto biliar tipo I diagnosticado por colangioressonância.</p><p><strong>A resposta correta é C - Excisão cirúrgica completa, colecistectomia e hepaticojejunostomia em Y-de-Roux.</strong></p><p>Os cistos biliares tipo I, também chamados de cistos de colédoco clássico, apresentam dilatação dos ductos biliares extra-hepáticos e estão associados a maior risco de malignização ao longo da vida. Por isso, a conduta é sempre cirúrgica quando possível.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A</strong> - Papiloesfincterotomia endoscópica: Esta técnica é reservada para cistos tipo III (coledococele), não para tipo I. A endoscopia não resolve a dilatação ductal principal.</p><p><strong>Alternativa B</strong> - Colecistectomia com colédodo-duodeno anastomose (Madenn): Esta técnica não é adequada para cistos tipo I, pois pode manter o segmento dilated do ducto biliar, perpetuando o risco de complicações.</p><p><strong>Alternativa D</strong> - Colecistectomia com papiloesfincteroplastia: Esta abordagem é inadequada pois nãoRemove completamente o cisto, mantendo o risco de malignização e complicações.</p><p><strong>Dica de estudo:</strong> Para cistos biliares, memorize a regra: Tipo I e II = ressecção com Y-de-Roux; Tipo III = endoscopia; Tipo IVa = pode necessitar hepatectomia; Tipo V = transplante hepático nos casos severos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_CistosDaViaBiliar"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Uma paciente grávida apresenta colelitíase sintomática, com controle clínico insatisfatório.\n\nSobre a colecistectomia por videolaparoscopia na gestante, assinale a afirmativa correta.",
+      "alternativas": [
+        "A pressão de CO2 do pneumoperitoneo não deve ultrapassar 10 mmHg nas pacientes grávidas, em especial no terceiro trimestre.",
+        "Dispositivos de compressão pneumática devem ser utilizados e as pacientes grávidas devem ser posicionadas em decúbito lateral esquerdo.",
+        "O acesso abdominal deve ser realizado pela técnica aberta (Hasson) e o acesso por agulha de Veress ou trocarte óptico está contraindicado.",
+        "A intervenção operatória deve ser adiada até o segundo trimestre, quando o risco fetal é menor, pois não há segurança em realizar no primeiro trimestre da gravidez."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a colecistectomia videolaparoscópica em gestantes, um tema frequente em provas que exige conhecimento das particularidades da cirurgia em pacientes grávidas.</p><p><strong>A resposta correta é B - Dispositivos de compressão pneumática devem ser utilizados e as pacientes grávidas devem ser posicionadas em decúbito lateral esquerdo.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (incorreta):</strong> A pressão do pneumoperitoneu pode ser mantida entre 12-15 mmHg, conforme a tolerância da paciente. O limite de 10 mmHg é desnecessariamente restritivo e pode comprometer a exposição cirúrgica.</p><p><strong>Alternativa B (correta):</strong> O posicionamento em decúbito lateral esquerdo é fundamental para evitar compressão da veia cava inferior pelo útero gravídico. Compressão pneumática profilática é indicada devido ao risco aumentado de tromboembolismo venoso na gestação.</p><p><strong>Alternativa C (incorreta):</strong> A técnica de Hasson (aberta) pode ser utilizada, mas não é mandatória. Agulha de Veress e trocarte óptico podem ser usados com cautela em gestantes, desde que com técnica adequada.</p><p><strong>Alternativa D (incorreta):</strong> A cirugía pode ser realizada em qualquer trimestre quando há indicação. O primeiro trimestre tem maior risco de abortamento, mas não é contraindicado se necessário.</p><p><strong>Pegadinha clássica:</strong> A questão pode confundir sobre timing cirúrgico - na verdade, o segundo trimestre é o ideal, mas a cirugía não é adiada no primeiro trimestre se houver indicação urgente.</p><p><strong>Dica prática:</strong> Para gestante em videolaparoscopia, lembre-se da regra dos 3 P's: Pressão adequada (12-15 mmHg), Posicionamento correto (decúbito lateral esquerdo) e Profilaxia de TEV (compressão pneumática).</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Sobre as Diretivas Antecipadas de Vontade, de acordo com o CFM, assinale a afirmativa correta.",
+      "alternativas": [
+        "A moralidade requer que tratemos as pessoas como autônomas e que nos abstenhamos de prejudicá-las, e que também contribuamos para o seu bem-estar.",
+        "Os cuidados paliativos se centram na qualidade e na duração da vida, oferecendo assistência humanizada para as pessoas nas últimas fases de uma doença incurável.",
+        "A obstinação terapêutica tem sido considerada como Medicina Defensiva. Entende-se por esta prática uma decisão ou ação clínica do médico, motivada total ou parcialmente pela defesa do paciente.",
+        "A autonomia da pessoa será exercida plenamente mesmo que seu ato resulte em atentar contra a própria vida. Serão respeitadas as decisões benéficas dos responsáveis legais pelas crianças e incapazes."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da FGV aborda as Diretivas Antecipadas de Vontade, um tema cada vez mais presente em provas médicas e que reflete a evolução da relação médico-paciente no Brasil.</p><p><strong>A resposta correta é A - A moralidade requer que tratemos as pessoas como autônomas e que nos abstenhamos de prejudicá-las, e que também contribuamos para o seu bem-estar.</strong></p><p>Esta alternativa descreve os três princípios fundamentais da bioética: autonomia, não-maleficência e beneficência, que são a base para compreender as Diretivas Antecipadas de Vontade.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa B (incorreta):</strong> Embora os cuidados paliativos visem qualidade de vida, não se concentram especificamente na 'duração' da vida. Além disso, podem ser instituídos precocemente, não apenas nas últimas fases. O foco é no alívio do sofrimento, independentemente do prognóstico.</p><p><strong>Alternativa C (incorreta):</strong> A obstinação terapêutica não é considerada medicina defensiva. Medicina defensiva refere-se a condutas motivadas pelo receio de processo judicial, enquanto obstinação terapêutica é a manutenção de tratamentos desproporcionais que prolongam o sofrimento sem benefício real.</p><p><strong>Alternativa D (incorreta):</strong> A autonomia não é absoluta no Brasil. Decisões que atentem contra a própria vida, como eutanásia, não são permitidas, mesmo que seja a vontade do paciente. Para crianças e incapazes, as decisões dos responsáveis devem seguir o 'melhor interesse' da criança, não apenas a vontade expressa.</p><p><strong>Contexto importante:</strong> As Diretivas Antecipadas de Vontade, regulamentadas pelo CFM, permitem que o paciente determine cuidados futuros quando estiver incapacitado, mas o médico pode descumprí-las se contrariarem princípios éticos fundamentais ou a legislação brasileira.</p><p><strong>Mnemônico para lembrar:</strong> PAD - Princípios Autonomia, Dignidade, Do não causar danos</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente feminina, 53 anos, com comorbidades leves (Hipertensão arterial, gastrite de longa data e alergia a penicilina), foi atendida na emergência com quadro de dor abdominal de forte intensidade, de início súbito, sudorese intensa e hipotensão. Após ressuscitação volêmica foi submetida a rotina radiológica de abdome agudo, que evidenciou pneumoperitoneo. A paciente foi então encaminhada a cirurgia de urgência, que confirmou tratar-se de uma úlcera calosa, pré-pilórica, de 1,5 cm, na parede anterior, junto a pequena curvatura.\n\nAssinale a afirmativa que indica a melhor conduta para esse caso.",
+      "alternativas": [
+        "Sutura da úlcera + vagotomia super seletiva.",
+        "Sutura da úlcera associada a patch de epiplon.",
+        "Sutura da úlcera + piloroplastia + vagotomia troncular.",
+        "Sutura da úlcera + antrectomia à BII + vagotomia troncular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da FGV avalia o conhecimento sobre tratamento cirúrgico de úlcera péptica perfurada, especificamente em localização pré-pilórica. O caso descreve uma paciente com perfuração ulcerosa confirmada por pneumoperitoneu.</p><p><strong>A resposta correta é C - Sutura da úlcera + piloroplastia + vagotomia troncular.</strong></p><p>As úlceras pré-pilóricas são caracterizadas por hipercloridria, necessitando de abordagem que reduza a acidez gástrica. A vagotomia troncular é essencial para controlar essa hiperprodução ácida.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A (incorreta):</strong> A vagotomia superseletiva preserva o piloro e não é suficiente para úlceras pré-pilóricas, que requerem redução mais significativa da acidez. Além disso, não trata a possível disfunção pilórica pós-vagotomia.</p><p><strong>Alternativa B (incorreta):</strong> O patch de epiplon ( Graham patch) é adequado para perforações agudas em pacientes instáveis ou de alto risco, mas não resolve a causa subjacente da hipercloridria em úlceras pré-pilóricas.</p><p><strong>Alternativa D (incorreta):</strong> A antrectomia com Billroth II é uma técnica mais complexa, indicada para úlceras duodenais ou quando há Stenose pilórica. Para úlceras pré-pilóricas sem complicação adicional, a piloroplastia é suficiente.</p><p><strong>Contexto terapêutico atual:</strong> Com o uso generalizado de inibidores de bomba de prótons, a cirugía para úlcera péptica tornou-se menos comum. Entretanto, em casos de perfuração ou falha do tratamento clínico, ainda é necessária.</p><p><strong>Dica de decisão:</strong> Para perfuração de úlcera pré-pilórica: Sutura + vagotomia troncular + piloroplastia. Para úlcera duodenal: Sutura + vagotomia troncular + antrectomia (se houver estenose).</p><p><strong>Pegadinha comum:</strong> A questão pode testar se você confunde a localização (pré-pilórica vs duodenal) - a escolha cirúrgica é diferente!</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_UlceraPepticaPerfurada"
+      ],
+      "tags": [
+        "FGV2022R110",
+        "FGV",
+        "R1",
+        "SP",
+        "2024",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762535576530-33"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { FirebaseAdminService } from '../services/FirebaseAdminService';
-import { AdminDashboardService } from '../services/AdminDashboardService';
-import { FirebaseAuditLogService } from '../../audit/FirebaseAuditLogService';
+import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdminService';
+import { AdminDashboardService } from '../../../infra/admin/supabase/AdminDashboardService';
+import { SupabaseAuditLogService } from '../../../infra/audit/supabase/SupabaseAuditLogService';
 import { AdminStats } from '../types/AdminTypes';
 import { z } from 'zod';
 
@@ -9,14 +9,14 @@ import { z } from 'zod';
  * Controller responsável por lidar com as requisições relacionadas à administração
  */
 export class AdminController {
-  private adminService: FirebaseAdminService;
+  private adminService: SupabaseAdminService;
   private dashboardService: AdminDashboardService;
-  private auditService: FirebaseAuditLogService;
+  private auditService: SupabaseAuditLogService;
 
   constructor(
-    adminService: FirebaseAdminService,
+    adminService: SupabaseAdminService,
     dashboardService: AdminDashboardService,
-    auditService: FirebaseAuditLogService,
+    auditService: SupabaseAuditLogService,
   ) {
     this.adminService = adminService;
     this.dashboardService = dashboardService;
@@ -26,11 +26,17 @@ export class AdminController {
   /**
    * Obtém a lista de administradores
    */
-  async getAdmins(_req: Request, res: Response, next: NextFunction): Promise<void> {
+  async getAdmins(
+    _req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       // Não existe getAllAdmins, então buscar todos os admins manualmente
       // Supondo que o método getAllAdmins deveria buscar todos os documentos da coleção 'admins'
-      const snapshot = await (this.adminService as any).db.collection('admins').get();
+      const snapshot = await (this.adminService as any).db
+        .collection('admins')
+        .get();
       const admins = snapshot.docs.map((doc: any) => doc.data());
       res.status(200).json({ success: true, data: admins });
     } catch (error) {
@@ -41,15 +47,20 @@ export class AdminController {
   /**
    * Obtém um administrador pelo ID
    */
-  async getAdminById(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async getAdminById(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       const { id } = req.params;
       const admin = await this.adminService.getAdminById(id);
 
       if (!admin) {
-        res
-          .status(404)
-          .json({ success: false, error: { message: 'Administrador não encontrado' } });
+        res.status(404).json({
+          success: false,
+          error: { message: 'Administrador não encontrado' },
+        });
         return;
       }
 
@@ -62,7 +73,11 @@ export class AdminController {
   /**
    * Cria um novo administrador
    */
-  async createAdmin(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async createAdmin(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       const schema = z.object({
         userId: z.string().min(1, 'ID do usuário é obrigatório'),
@@ -75,7 +90,10 @@ export class AdminController {
       if (!validationResult.success) {
         res.status(400).json({
           success: false,
-          error: { message: 'Dados inválidos', details: validationResult.error.format() },
+          error: {
+            message: 'Dados inválidos',
+            details: validationResult.error.format(),
+          },
         });
         return;
       }
@@ -102,7 +120,11 @@ export class AdminController {
   /**
    * Atualiza um administrador existente
    */
-  async updateAdmin(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async updateAdmin(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       const { id } = req.params;
       const schema = z.object({
@@ -112,14 +134,20 @@ export class AdminController {
       if (!validationResult.success) {
         res.status(400).json({
           success: false,
-          error: { message: 'Dados inválidos', details: validationResult.error.format() },
+          error: {
+            message: 'Dados inválidos',
+            details: validationResult.error.format(),
+          },
         });
         return;
       }
       const data = validationResult.data;
       const admin = await this.adminService.getAdminById(id);
       if (!admin) {
-        res.status(404).json({ success: false, error: { message: 'Administrador não encontrado' } });
+        res.status(404).json({
+          success: false,
+          error: { message: 'Administrador não encontrado' },
+        });
         return;
       }
       if (data.permissions) {
@@ -142,15 +170,20 @@ export class AdminController {
   /**
    * Remove um administrador
    */
-  async deleteAdmin(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async deleteAdmin(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       const { id } = req.params;
       const admin = await this.adminService.getAdminById(id);
 
       if (!admin) {
-        res
-          .status(404)
-          .json({ success: false, error: { message: 'Administrador não encontrado' } });
+        res.status(404).json({
+          success: false,
+          error: { message: 'Administrador não encontrado' },
+        });
         return;
       }
 
@@ -165,9 +198,10 @@ export class AdminController {
         metadata: { adminId: id },
       });
 
-      res
-        .status(200)
-        .json({ success: true, data: { message: 'Administrador removido com sucesso' } });
+      res.status(200).json({
+        success: true,
+        data: { message: 'Administrador removido com sucesso' },
+      });
     } catch (error) {
       next(error);
     }
@@ -176,7 +210,11 @@ export class AdminController {
   /**
    * Obtém estatísticas do painel administrativo
    */
-  async getDashboardStats(_req: Request, res: Response, next: NextFunction): Promise<void> {
+  async getDashboardStats(
+    _req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       // O método correto é getDashboardStats
       const stats: AdminStats = await this.dashboardService.getDashboardStats();
@@ -189,7 +227,11 @@ export class AdminController {
   /**
    * Obtém o histórico de ações administrativas
    */
-  async getAuditLogs(req: Request, res: Response, next: NextFunction): Promise<void> {
+  async getAuditLogs(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
     try {
       // Parâmetros de paginação e filtros
       const limit = parseInt(req.query.limit as string) || 10;
@@ -200,7 +242,8 @@ export class AdminController {
       // const endDate = req.query.endDate ? new Date(req.query.endDate as string) : undefined;
 
       // Usar o método paginado correto
-      const { logs, total, hasMore } = await this.auditService.getPaginatedAuditLogs(page, limit);
+      const { logs, total, hasMore } =
+        await this.auditService.getPaginatedAuditLogs(page, limit);
 
       res.status(200).json({
         success: true,

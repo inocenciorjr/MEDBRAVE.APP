@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { FirebaseAdminService } from '../services/FirebaseAdminService';
+import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdminService';
 
 /**
  * Middleware para verificar se o usuário é um administrador
@@ -7,7 +7,11 @@ import { FirebaseAdminService } from '../services/FirebaseAdminService';
  * @param res Resposta Express
  * @param next Função de próximo middleware
  */
-export const adminMiddleware = async (req: Request, res: Response, next: NextFunction) => {
+export const adminMiddleware = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
     // Verificar se o usuário está autenticado
     if (!req.user || !req.user.id) {
@@ -21,7 +25,7 @@ export const adminMiddleware = async (req: Request, res: Response, next: NextFun
     }
 
     // Inicializar o serviço de administração
-    const adminService = FirebaseAdminService.getInstance();
+    const adminService = SupabaseAdminService.getInstance();
 
     // Verificar se o usuário é um administrador
     const adminUser = await adminService.getAdminByUserId(req.user.id);

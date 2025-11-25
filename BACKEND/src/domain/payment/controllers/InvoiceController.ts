@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { AuthenticatedRequest } from '../../auth/middleware/auth.middleware';
+import { AuthenticatedRequest } from '../../auth/middleware/supabaseAuth.middleware';
 import { IInvoiceService } from '../interfaces/IInvoiceService';
 import { AppError, ErrorCodes, ErrorStatusCodes } from '../../../utils/errors';
 
@@ -26,7 +26,11 @@ export class InvoiceController {
   private getAuthenticatedUserId(req: AuthenticatedRequest): string {
     const userId = req.user?.id;
     if (!userId) {
-      throw new AppError(ErrorStatusCodes[ErrorCodes.UNAUTHORIZED], 'Usuário não autenticado', ErrorCodes.UNAUTHORIZED);
+      throw new AppError(
+        ErrorStatusCodes[ErrorCodes.UNAUTHORIZED],
+        'Usuário não autenticado',
+        ErrorCodes.UNAUTHORIZED,
+      );
     }
     return userId;
   }
@@ -37,12 +41,12 @@ export class InvoiceController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: AuthenticatedRequest): void {
-    const role = req.user?.role;
-    if (role !== 'admin') {
+    const role = (req.user?.user_role || '').toUpperCase();
+    if (role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Acesso negado. Apenas administradores podem realizar esta operação.',
-        ErrorCodes.FORBIDDEN
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -53,21 +57,33 @@ export class InvoiceController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  getInvoiceById = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  getInvoiceById = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const invoiceId = req.params.invoiceId;
       const invoice = await this.invoiceService.getInvoiceById(invoiceId);
 
       if (!invoice) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Fatura não encontrada', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Fatura não encontrada',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem acessar
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
 
-      if (invoice.userId !== userId && role !== 'admin') {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.FORBIDDEN], 'Você não tem permissão para acessar esta fatura', ErrorCodes.FORBIDDEN);
+      if (invoice.userId !== userId && role !== 'ADMIN') {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.FORBIDDEN],
+          'Você não tem permissão para acessar esta fatura',
+          ErrorCodes.FORBIDDEN,
+        );
       }
 
       res.status(200).json({
@@ -92,18 +108,27 @@ export class InvoiceController {
   ): Promise<void> => {
     try {
       const paymentId = req.params.paymentId;
-      const invoice = await this.invoiceService.getInvoiceByPaymentId(paymentId);
+      const invoice =
+        await this.invoiceService.getInvoiceByPaymentId(paymentId);
 
       if (!invoice) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Fatura não encontrada para este pagamento', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Fatura não encontrada para este pagamento',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem acessar
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
 
-      if (invoice.userId !== userId && role !== 'admin') {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.FORBIDDEN], 'Você não tem permissão para acessar esta fatura', ErrorCodes.FORBIDDEN);
+      if (invoice.userId !== userId && role !== 'ADMIN') {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.FORBIDDEN],
+          'Você não tem permissão para acessar esta fatura',
+          ErrorCodes.FORBIDDEN,
+        );
       }
 
       res.status(200).json({
@@ -121,12 +146,16 @@ export class InvoiceController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listUserInvoices = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  listUserInvoices = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Permitir que um usuário veja apenas suas próprias faturas ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
 
       if (!userId) {
         userId = authenticatedUserId;
@@ -134,7 +163,7 @@ export class InvoiceController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar faturas de outros usuários',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -155,19 +184,24 @@ export class InvoiceController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  generateInvoice = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  generateInvoice = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Esta operação só pode ser feita por administradores ou pelo sistema
       this.ensureAdmin(req);
 
       const paymentId = req.params.paymentId;
-      const invoice = await this.invoiceService.generateOrRetrieveInvoice(paymentId);
+      const invoice =
+        await this.invoiceService.generateOrRetrieveInvoice(paymentId);
 
       if (!invoice) {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.INTERNAL_SERVER_ERROR],
           'Não foi possível gerar a fatura para este pagamento',
-          ErrorCodes.INTERNAL_SERVER_ERROR
+          ErrorCodes.INTERNAL_SERVER_ERROR,
         );
       }
 

@@ -3,7 +3,11 @@ import {
   cleanupTestData,
 } from '../../../../../tests/firebase-test-setup';
 import { FirebaseFlashcardRepository } from '../FirebaseFlashcardRepository';
-import { CreateFlashcardDTO, FlashcardStatus, ReviewQuality } from '../../types/flashcard.types';
+import {
+  CreateFlashcardDTO,
+  FlashcardStatus,
+  ReviewQuality,
+} from '../../types/flashcard.types';
 
 describe('FirebaseFlashcardRepository Integration Tests', () => {
   let repository: FirebaseFlashcardRepository;
@@ -19,7 +23,9 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     testUserId = generateUniqueId('testuser');
     testDeckId = generateUniqueId('testdeck');
 
-    console.log(`Running tests with testUserId: ${testUserId} and testDeckId: ${testDeckId}`);
+    console.log(
+      `Running tests with testUserId: ${testUserId} and testDeckId: ${testDeckId}`,
+    );
   });
 
   afterAll(async () => {
@@ -34,7 +40,8 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
       userId: testUserId,
       deckId: testDeckId,
       frontContent: 'O que é o coração?',
-      backContent: 'Um órgão muscular oco que bombeia sangue através do sistema circulatório',
+      backContent:
+        'Um órgão muscular oco que bombeia sangue através do sistema circulatório',
       personalNotes: 'Importante para a cardiologia',
       tags: ['anatomia', 'cardiologia'],
     };
@@ -53,7 +60,9 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     expect(createdFlashcard.frontContent).toBe(createDto.frontContent);
     expect(createdFlashcard.backContent).toBe(createDto.backContent);
     expect(createdFlashcard.personalNotes).toBe(createDto.personalNotes);
-    expect(createdFlashcard.tags).toEqual(expect.arrayContaining(createDto.tags ?? []));
+    expect(createdFlashcard.tags).toEqual(
+      expect.arrayContaining(createDto.tags ?? []),
+    );
     expect(createdFlashcard.status).toBe(FlashcardStatus.LEARNING);
     expect(createdFlashcard.searchableText).toContain('coração');
     expect(createdFlashcard.searchableText).toContain('órgão');
@@ -145,7 +154,7 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     expect(result.total).toBeGreaterThanOrEqual(2);
 
     // Verificar se todos os flashcards pertencem ao usuário de teste
-    result.items.forEach(flashcard => {
+    result.items.forEach((flashcard) => {
       expect(flashcard.userId).toBe(testUserId);
     });
   });
@@ -167,18 +176,24 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     // Atualizar flashcard
     const updateData = {
       frontContent: 'O que são os leucócitos?',
-      backContent: 'Células brancas do sangue responsáveis pela defesa imunológica do organismo',
+      backContent:
+        'Células brancas do sangue responsáveis pela defesa imunológica do organismo',
       tags: ['hematologia', 'imunologia', 'sangue'],
     };
 
-    const updatedFlashcard = await repository.update(createdFlashcard.id, updateData);
+    const updatedFlashcard = await repository.update(
+      createdFlashcard.id,
+      updateData,
+    );
 
     // Verificar resultado
     expect(updatedFlashcard).toBeDefined();
     expect(updatedFlashcard.id).toBe(createdFlashcard.id);
     expect(updatedFlashcard.frontContent).toBe(updateData.frontContent);
     expect(updatedFlashcard.backContent).toBe(updateData.backContent);
-    expect(updatedFlashcard.tags).toEqual(expect.arrayContaining(updateData.tags ?? []));
+    expect(updatedFlashcard.tags).toEqual(
+      expect.arrayContaining(updateData.tags ?? []),
+    );
     expect(updatedFlashcard.updatedAt).not.toEqual(createdFlashcard.updatedAt);
 
     // Verificar se o texto pesquisável foi atualizado
@@ -225,13 +240,17 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     expect(createdFlashcard.status).toBe(FlashcardStatus.LEARNING);
 
     // Arquivar flashcard
-    const archivedFlashcard = await repository.toggleArchive(createdFlashcard.id);
+    const archivedFlashcard = await repository.toggleArchive(
+      createdFlashcard.id,
+    );
 
     // Status deve ser alterado para ARCHIVED
     expect(archivedFlashcard.status).toBe(FlashcardStatus.ARCHIVED);
 
     // Desarquivar flashcard
-    const unarchivedFlashcard = await repository.toggleArchive(createdFlashcard.id);
+    const unarchivedFlashcard = await repository.toggleArchive(
+      createdFlashcard.id,
+    );
 
     // Status deve voltar para LEARNING
     expect(unarchivedFlashcard.status).toBe(FlashcardStatus.LEARNING);
@@ -280,7 +299,8 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
         userId: testUserId,
         deckId: testDeckId,
         frontContent: 'O que causa hipertensão?',
-        backContent: 'Fatores genéticos, estresse, dieta rica em sal, sedentarismo',
+        backContent:
+          'Fatores genéticos, estresse, dieta rica em sal, sedentarismo',
         tags: ['cardiologia', 'hipertensão'],
       },
     ];
@@ -291,13 +311,20 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     }
 
     // Buscar por termo específico
-    const searchResult = await repository.search('hipertensão', testUserId, { page: 1, limit: 10 });
+    const searchResult = await repository.search('hipertensão', testUserId, {
+      page: 1,
+      limit: 10,
+    });
 
     // Verificar resultado
     expect(searchResult).toBeDefined();
     expect(searchResult.items.length).toBeGreaterThanOrEqual(2);
-    expect(searchResult.items.some(f => f.frontContent.includes('sintomas'))).toBeTruthy();
-    expect(searchResult.items.some(f => f.frontContent.includes('causa'))).toBeTruthy();
+    expect(
+      searchResult.items.some((f) => f.frontContent.includes('sintomas')),
+    ).toBeTruthy();
+    expect(
+      searchResult.items.some((f) => f.frontContent.includes('causa')),
+    ).toBeTruthy();
   });
 
   // Teste de busca por tag
@@ -315,14 +342,20 @@ describe('FirebaseFlashcardRepository Integration Tests', () => {
     createdFlashcardIds.push(createdFlashcard.id);
 
     // Buscar por tag
-    const searchResult = await repository.search('eletrocardiografia', testUserId, { page: 1, limit: 10 });
+    const searchResult = await repository.search(
+      'eletrocardiografia',
+      testUserId,
+      { page: 1, limit: 10 },
+    );
 
     // Verificar resultado
     expect(searchResult).toBeDefined();
     expect(searchResult.items.length).toBeGreaterThanOrEqual(1);
     expect(
       searchResult.items.some(
-        f => f.tags.includes('eletrocardiografia') && f.frontContent.includes('eletrocardiograma'),
+        (f) =>
+          f.tags.includes('eletrocardiografia') &&
+          f.frontContent.includes('eletrocardiograma'),
       ),
     ).toBeTruthy();
   });

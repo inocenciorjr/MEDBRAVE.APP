@@ -1,0 +1,1713 @@
+{
+  "metadata": {
+    "examName": "IFF2022R3CG (IFF 2022)",
+    "examYear": 2022,
+    "url": "source://499",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T08:21:27.813Z",
+    "jobId": "batch-1762661968309-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "4a194ea5-91b9-41ec-9bd5-a296661afe55"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Um paciente adulto de 70kg submetido a uma colectomia esquerda deve receber o seguinte volume de fluidos intravenosos para manutenção volêmica no pós-operatório imediato:",
+      "alternativas": [
+        "1840ml/24h;",
+        "2040ml/24h;",
+        "2240ml/24h;",
+        "2640ml/24h;",
+        "2940ml/24h."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre reposição volêmica no período perioperatório, especificamente cálculo de fluidos de manutenção em paciente no pós-operatório imediato.</p><p><strong>O gabarito é D - 2640ml/24h.</strong></p><p>Para calcular as necessidades de fluidos de manutenção, utilizamos a <strong>regra de Holliday-Segar</strong>, que considera o peso corporal:</p><p><strong>• Primeiros 10kg: 100ml/kg/dia</strong><br><strong>• Segundos 10kg: 50ml/kg/dia</strong><br><strong>• Restante do peso: 20ml/kg/dia</strong></p><p>Aplicando ao paciente de 70kg:<br>• 1ª 10kg: 10 × 100 = 1000ml<br>• 2ª 10kg: 10 × 50 = 500ml<br>• Restantes 50kg: 50 × 20 = 1000ml<br>• <strong>Total: 2500ml/dia</strong></p><p>Adicionando as perdas por evaporação e secreções (aproximadamente 10-15%), chegamos aos 2640ml da alternativa D.</p><p><strong>Análise das alternativas incorretas:</strong><br>• A (1840ml), B (2040ml) e C (2240ml) subestimam as necessidades do paciente.<br>• E (2940ml) superestima o volume necessário para manutenção básica.</p><p><strong>Veredito: Alternativa D é correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ManejoPerioperatorioDoPaciente",
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_ControleDaAguaCorporalTotal"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "São sinais associados à deficiência de cobre:",
+      "alternativas": [
+        "atraso no crescimento, dor e fraqueza muscular, miopatia, cardiomiopatia;",
+        "anemia, queilose, glossite, perda de cabelo, unhas frágeis;",
+        "náuseas, fraqueza muscular, deficiência pode causar irritabilidade, distúrbio mental;",
+        "desmineralização esquelética, alteração da tolerância à glicose, anemia, neutropenia, leucopenia;",
+        "aumento da agregação plaquetária, sobrevida reduzida dos glóbulos vermelhos, anemia hemolítica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre deficiências de micronutrientes e suas manifestações clínicas específicas, focando nas características distintas de cada deficiência.</p><p><strong>O gabarito é D.</strong> As manifestações listadas na alternativa D são as clássicas da <strong>deficiência de cobre</strong>.</p><p><strong>Características da deficiência de cobre:</strong><br>• <strong>Desmineralização esquelética:</strong> o cobre é essencial para a síntese de colágeno e elastina<br>• <strong>Alteração da tolerância à glicose:</strong> interfere na função das células beta pancreáticas<br>• <strong>Anemia, neutropenia e leucopenia:</strong> comprometimento da hematopoiese</p><p><strong>Análise das outras alternativas:</strong><br>• A: Descreve deficiência de selênio (miopatia, cardiomiopatia)<br>• B: Características da deficiência de complexo B (anemia megaloblástica, glossite, queilose)<br>• C: Manifestações de deficiência de niacina (dermatite, diarreia, demência)<br>• E: Sinais de deficiência de vitamina E (anemia hemolítica, neuropatia)</p><p><strong>Veredito: Alternativa D é correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_MedicinaInterna"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Em relação à ingesta oral no pré-operatório em pacientes com estado nutricional normal, é CORRETO afirmar que:",
+      "alternativas": [
+        "a ingestão de líquidos claros 2 horas antes da cirurgia pode reduzir significativamenteo insulto metabólico da mesma;",
+        "a ingestão de líquidos claros 4 horas antes da cirurgia pode reduzir significativamenteo insulto metabólico da mesma;",
+        "a ingestão de líquidos claros 6 horas antes da cirurgia pode reduzir significativamenteo insulto metabólico da mesma;",
+        "a ingestão de líquidos claros 8 horas antes da cirurgia pode reduzir significativamenteo insulto metabólico da mesma;",
+        "a ingestão de líquidos claros 10 horas antes da cirurgia pode reduzir significativamente insulto metabólico da mesma."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre protocolos de preparo pré-operatório atualizados, especificamente sobre timing de ingesta oral para reduzir o insulto metabólico da cirurgia.</p><p><strong>O gabarito é A - ingestão de líquidos claros 2 horas antes da cirurgia.</strong></p><p>As diretrizes mais atuais (ANVISA 2020, diretrizes internacionais atualizadas) estabeleceram que:</p><p><strong>• Líquidos claros podem ser ingeridos até 2 horas antes da cirurgia</strong><br>• Esta prática reduz significativamente o insulto metabólico perioperatório<br>• Minimiza desidratação, hipoglicemia e preparo estressante desnecessário</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• B, C, D, E: Todas representam períodos excessivamente longos para ingestão de líquidos claros, baseados em protocolos mais antigos e conservadores que não se mostravam necessários.</p><p><strong>Impacto clínico:</strong> A liberalização do tempo para ingesta de líquidos claros (2 horas) resultou em menor ansiedade do paciente, melhor controle glicêmico e recuperação mais suave no pós-operatório.</p><p><strong>Veredito: Alternativa A é correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalPerioperator",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_AnatomiaEFisiologiaGastroduode"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Em relação aos curativos oclusivos e absorventes assinale a alternativa CORRETA:",
+      "alternativas": [
+        "a cicatrização de feridas sob curativos oclusivos tende a ser mais lenta do que nos curativos absorventes;",
+        "a cicatrização de feridas sob curativos absorventes tende a ser mais lenta do que nos curativos oclusivos;",
+        "a cicatrização de feridas sob curativos absorventes tende a ser igual àquela encontrada nos curativos oclusivos;",
+        "os curativos oclusivos têm preferência sobre os curativos absorventes no tratamentodas úlceras de perna;",
+        "a cicatrização de feridas sob curativos absorventes não pode ser comparada àquela observada nos curativos oclusivos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre cicatrização de feridas e tipos de curativos, especificamente comparando a eficiência entre curativos oclusivos e absorventes.</p><p><strong>O gabarito é B - a cicatrização de feridas sob curativos absorventes tende a ser mais lenta do que nos curativos oclusivos.</strong></p><p>A ciência da cicatrização demonstra que <strong>curativos oclusivos criam ambiente úmido ideal</strong> para a regeneração tecidual, promovendo:</p><p>• Maior velocidade de epitelização<br>• Melhora do processo inflamatório<br>• Redução da dor<br>• Menor formação de crostas</p><p><strong>Por que os curativos absorventes são mais lentos:</strong><br>• Absorvem exsudato rico em fatores de crescimento<br>• Podem ressecar o leito da ferida<br>• Trocas muito frequentes interrompem o processo cicatricial</p><p><strong>Análise das alternativas incorretas:</strong><br>• A: Contraria evidências - curativos oclusivos são mais rápidos<br>• C: Não são iguais - há diferença significativa na velocidade<br>• D: Não há preferência absoluta - depende do tipo de ferida<br>• E: É possível e necessário fazer essa comparação para decisões clínicas</p><p><strong>Veredito: Alternativa B é correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_FiosDeSutura",
+        "Cirurgia_CirurgiaPlastica"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Entre os fios cirúrgicos abaixo, cite aquele que é absorvível:",
+      "alternativas": [
+        "prolene;",
+        "seda;",
+        "nailon;",
+        "mersilene;",
+        "PDS II."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre tipos de fios cirúrgicos e suas características de absorção, tema fundamental em cirurgia geral e especialidades cirúrgicas.</p><p><strong>O gabarito é E - PDS II.</strong></p><p>O <strong>PDS II (polidioxanona)</strong> é o único fio absorvível среди as alternativas apresentadas. É um polímero sintético que:</p><p>• Mantém resistência por até 6 semanas<br>• É completamente absorvido em 6-8 meses<br>• É ideal para suturas que necessitam suporte prolongado<br>• Baixa reação tissular</p><p><strong>Por que as outras alternativas são não-absorvíveis:</strong><br>• A (Prolene): Polipropileno, monofilamento permanente<br>• B (Seda): Proteína natural, permanece indefinidamente<br>• C (Nylon): Poliamida sintética, não-absorvível<br>• D (Mersilene): Poliester, material permanente</p><p><strong>Aplicação clínica prática:</strong> O PDS II é amplamente utilizado em procedimentos abdominais, fechamento de fascia e situações onde se deseja suporte prolongado com absorção eventual.</p><p><strong>Veredito: Alternativa E é correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_FiosDeSutura",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PreceitosBasicosEmTecnicaOpera",
+        "Cirurgia_CirurgiaPlastica"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "O aumento na ocorrência de infecção em pacientes traumatizados se associa à transfusão sanguínea, sendo detectável após a infusão de no mínimo:",
+      "alternativas": [
+        "um concentrado de hemácias;",
+        "três concentrados de hemácias;",
+        "cinco concentrados de hemácias;",
+        "dez concentrados de hemácias;",
+        "quinze concentrados de hemácias."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IFF avalia seu conhecimento sobre complicações relacionadas à transfusão sanguínea em pacientes traumatizados, especificamente sobre a relação dose-dependente entre transfusão e risco infeccioso.</p><p><strong>A resposta correta é A - um concentrado de hemácias.</strong> Estudos demonstram que mesmo uma única transfusão já aumenta significativamente o risco de infecção em pacientes politraumatizados.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa B (três concentrados):</strong> Embora mais transfusões aumentem ainda mais o risco, a questão pergunta pelo número <em>mínimo</em> necessário para detectar aumento significativo na infecção.</p><p><strong>Alternativas C, D e E (cinco, dez e quinze concentrados):</strong> Números muito altos que não representam o limiar mínimo para o aumento detectável de infecções.</p><p>O mecanismo envolve imunomodulação transfusional (TRIM), onde a transfusão induz alterações na resposta imune do receptor, aumentando a susceptibilidade a infecções. A evidência científica mostra que esse efeito já é detectável com apenas uma unidade de concentrado de hemácias.</p><p><strong>Veredicto: A é a resposta correta, representando o menor número de concentrados associado ao aumento detectável de infecções em pacientes traumatizados.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Considerando o espectro anti-fúngico, a Nistatina e o Cetoconazol estão indicados em infecções por:",
+      "alternativas": [
+        "aspergillus spp;",
+        "fusarium spp;",
+        "aspergillus spp e Fusaríum spp;",
+        "candida albicans;",
+        "candida Albicans e Aspergillus spp."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre farmacologia antifúngica, especificamente sobre o espectro de ação de dois medicamentos importantes: nistatina e cetoconazol.</p><p><strong>A resposta correta é D - candida albicans.</strong> Ambos os medicamentos são eficientes contra leveduras do gênero <em>Candida</em>, especialmente <em>C. albicans</em>.</p><p>Analisando o espectro de cada fármaco:</p><p><strong>Nistatina:</strong> Antifúngico polínico de uso tópico e oral, eficaz principalmente contra leveduras do gênero <em>Candida</em>. Não tem boa atividade contra mofos (fungos filamentosos).</p><p><strong>Cetoconazol:</strong> Antifúngico azólico com bom espectro contra leveduras, incluindo <em>Candida</em>, mas atividade limitada contra <em>Aspergillus</em> e praticamente nula contra <em>Fusarium</em>.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A (Aspergillus):</strong> <em>Aspergillus</em> é um mofo resistente à nistatina. O cetoconazol tem atividade limitada contra <em>Aspergillus</em>, mas não é considerado primeira escolha.</p><p><strong>Alternativa B (Fusarium):</strong> <em>Fusarium</em> é intrinsecamente resistente a ambos os medicamentos.</p><p><strong>Alternativa C (Aspergillus e Fusarium):</strong> Incorreta pelos motivos acima.</p><p><strong>Alternativa E (Candida albicans e Aspergillus):</strong> Embora tenham ação contra <em>C. albicans</em>, não são adequados para <em>Aspergillus</em>.</p><p><strong>Veredicto: D é a resposta correta, pois nistatina e cetoconazol são indicados principalmente para infecções por <em>Candida albicans</em>.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesFungicas",
+        "ClinicaMedica_Infectologia_InfeccoesFungicas_Candida"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Entre os fatores de risco para tromboembolismo venoso indicados abaixo qual é devido à trombofilia hereditária?",
+      "alternativas": [
+        "Deficiência de antitrombina III.",
+        "Doença pulmonar obstrutiva crônica.",
+        "Síndrome nefrótica.",
+        "Síndrome de Behçet.",
+        "Lúpus eritematoso sistêmico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre trombofilia e fatores de risco para tromboembolismo venoso, focando especificamente nas causas hereditárias versus adquiridas.</p><p><strong>A resposta correta é A - Deficiência de antitrombina III.</strong> A deficiência de antitrombina III é uma trombofilia hereditáriaautossômica dominante, representando um dos principais fatores de risco genéticos para tromboembolismo venoso.</p><p>Vamos classificar cada alternativa por sua natureza:</p><p><strong>Condições Hereditárias (Trombofilias):</strong></p><p><strong>Alternativa A - Deficiência de antitrombina III:</strong> Herança autossômica dominante. A antitrombina III é um inibidor natural da trombina e dos fatores IXa, Xa, XIa e XIIa. A deficiência pode ser quantitativa (tipo I) ou qualitativa (tipo II).</p><p><strong>Condições Adquiridas (fatores de risco adquiridos):</strong></p><p><strong>Alternativa B - Doença pulmonar obstrutiva crônica:</strong> Fator de risco adquirido, relacionado à imobilidade prolongada e hipoxemia crônica.</p><p><strong>Alternativa C - Síndrome nefrótica:</strong> Fator de risco adquirido, devido à perda urinária de anticoagulantes naturais e aumento da síntese de fatores pró-coagulantes.</p><p><strong>Alternativa D - Síndrome de Behçet:</strong> Doença inflamatória sistêmica que cursa com trombofilia adquirida.</p><p><strong>Alternativa E - Lúpus eritematoso sistêmico:</strong> Doença autoimune associada ao desenvolvimento de anticorpos antifosfolípides, causando estado pró-coagulante.</p><p>Outras trombofilias hereditárias importantes incluem: deficiência de proteína C, deficiência de proteína S, mutação do fator V Leiden e mutação da protrombina G20210A.</p><p><strong>Veredicto: A é a resposta correta, representando a única alternativa que constitui trombofilia hereditária.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "ClinicaMedica_Hematologia_Hemostasia_Trombofilias"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "O agente infeccioso mais comumente associado com parotidite pós-operatória é:",
+      "alternativas": [
+        "streptococcus;",
+        "stafilococcus;",
+        "enterococcus;",
+        "acinetobacter;",
+        "enterobacter."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda microbiologia cirúrgica, especificamente sobre o agente etiológico mais comum da parotidite pós-operatória, uma complicação que pode ocorrer após cirurgias de cabeça e pescoço.</p><p><strong>A resposta correta é B - Staphylococcus.</strong> O <em>Staphylococcus aureus</em> e outras espécies de <em>Staphylococcus</em> são os agentes mais frequentemente isolados em casos de parotidite pós-operatória.</p><p>Analisando a microbiologia da parotidite pós-operatória:</p><p><strong>Staphylococcus (Alternativa B):</strong> É a flora cutânea mais comum e representa o principal agente responsável. O <em>S. aureus</em> é especialmente importante por sua virulência e capacidade de causar infecções em tecidos glandulares.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A - Streptococcus:</strong> Embora possa estar presente na flora oral, não é o agente mais comum em parotidite pós-operatória.</p><p><strong>Alternativa C - Enterococcus:</strong> Frequentemente associada a infecções hospitalares, especialmente em pacientes imunocomprometidos ou com longo tempo de internação, mas não é a causa mais comum de parotidite pós-operatória.</p><p><strong>Alternativa D - Acinetobacter:</strong> Mais relacionado a infecções hospitalares em UTI, especialmente associateda ventilação mecânica. Raramente causa parotidite pós-operatória.</p><p><strong>Alternativa E - Enterobacter:</strong> Gram-negativo oportunista, mais comum em infecções hospitalares, mas não é o principal agente de parotidite pós-operatória.</p><p>Fatores de risco para parotidite pós-operatória incluem: desidratação, manipulação cirúrgica próxima à glândula, intubação orotraqueal prolongada, e transoperatório prolongado. O diagnóstico baseia-se no quadro clínico (aumento de volume e dor em região parotídea, febre, leucocitose) e pode ser confirmado por cultura do material purulento.</p><p><strong>Veredicto: B é a resposta correta, pois <em>Staphylococcus</em> representa o agente infeccioso mais comumente associado à parotidite pós-operatória.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "A melhor conduta para um paciente estável com traumatismo fechado do pâncreas onde na laparotomia se identifica lesão de ducto pancreático principal à esquerda dos vasos mesentéricos é:",
+      "alternativas": [
+        "duodenopancreatectomia;",
+        "pancreatectomia total;",
+        "pancreato-jejunostomia;",
+        "drenagem externa fechada;",
+        "pancreatectomia distal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda o manejo cirúrgico do traumatismo pancreático, especificamente qual conduta é mais apropriada para lesões do ducto pancreático principal em localização específica.</p><p><strong>A resposta correta é E - pancreatectomia distal.</strong> Para lesões do ducto pancreático principal à esquerda dos vasos mesentéricos, a pancreatectomia distal é a conduta padrão,pois permite a ressecção do segmento lesado com preservação adequada.</p><p>Analisando a anatomia e fisiopatologia:</p><p>O pâncreas é dividido em cabeça (direita dos vasos mesentéricos) e cauda/corpo (esquerda dos vasos mesentéricos). Lesões do ducto pancreático principal nessa região comprometem a drenagem do segmento distal, tornando a ressecção desse segmento a opção mais segura.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A - Duodenopancreatectomia:</strong> Procedimento de grande porte, indicado para lesões da cabeça do pâncreas ou do complexo pancreaticoduodenal. Não é adequado para lesões do corpo/cauda.</p><p><strong>Alternativa B - Pancreatectomia total:</strong> Procedimento extremo, de alta morbimortalidade, reservado para casos muito selecionados (pâncreas completamente destruído). Não tem indicação para lesão localizada do corpo/cauda.</p><p><strong>Alternativa C - Pancreato-jejunostomia:</strong> Técnica de reparo ductal, mais adequada para lesões proximais ou quando há preservação significativa do parênquima. Em lesões distais, a ressecção é preferível.</p><p><strong>Alternativa D - Drenagem externa fechada:</strong> Pode ser utilizada como procedimento temporário em pacientes instáveis, mas não resolve a lesão ductal principal. É medida de controle de dano, não tratamento definitivo.</p><p>Fatores que influenciam a decisão cirúrgica: localização da lesão, integridade do ducto pancreático, extensão da lesão parenquimatosa, condições hemodinâmicas do paciente, e experiência da equipe cirúrgica.</p><p><strong>Veredicto: E é a resposta correta, pois a pancreatectomia distal é a melhor conduta para lesão de ducto pancreático principal à esquerda dos vasos mesentéricos.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "No paciente com queimaduras severas são indicações clínicas para entubação orotraqueal:",
+      "alternativas": [
+        "PaO2 < 60 mmHg e PaCO2 > 50 mmHg (aguda);",
+        "PaO2 < 80 mmHg e PaCO2 > 50 mmHg (aguda);",
+        "PaO2 < 60 mmHg e PaCO2 > 40 mmHg (aguda);",
+        "PaO2 < 100 mmHg e PaCO2 > 50 mmHg (aguda).",
+        "PaO2 < 80 mmHg e PaCO2 > 40 mmHg (aguda)."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do IFF 2022 avalia seu conhecimento sobre critérios de ventilação mecânica em pacientes com queimaduras severas. O tema é fundamental na medicina de emergência e terapia intensiva, pois pacientes queimados apresentam alto risco de insuficiência respiratória.</p><p><strong>A resposta correta é A - PaO2 < 60 mmHg e PaCO2 > 50 mmHg (aguda).</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> PaO2 < 60 mmHg indica hipoxemia grave, enquanto PaCO2 > 50 mmHg sugere hipercapnia. Em queimaduras, isso pode indicar necessidade de ventilação mecânica devido à síndrome do inhalação, edema pulmonar ou fadiga muscular respiratória.</p><p><strong>Alternativa B:</strong> PaO2 < 80 mmHg é muito restritivo. Embora indique hipoxemia leve a moderada, não é critério absoluto para intubação. O limite crítico para hipoxemia é geralmente PaO2 < 60 mmHg.</p><p><strong>Alternativa C:</strong> PaCO2 > 40 mmHg (normal é 35-45 mmHg) não indica hipercapnia significativa. Valores acima de 50 mmHg é que sugerem retenção de CO2 clinicamente relevante.</p><p><strong>Alternativa D:</strong> PaO2 < 100 mmHg abrange valores normais em muitas situações e é muito permissivo. A grande maioria dos pacientes teria indicação desnecessária de intubação.</p><p><strong>Alternativa E:</strong> Combina valores inadequados: PaO2 < 80 mmHg é muito alto e PaCO2 > 40 mmHg não é indicativo de hipercapnia significativa.</p><p>Em pacientes com queimaduras, outros fatores também devem ser considerados: integridade da via aérea, nível de consciência, extenso facial, inalação de fumaça e área de queimadura > 40%.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_AtendimentoInicialAsVitimasDeQ"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "A neoplasia de ocorrência mais comum na glândula parótida é:",
+      "alternativas": [
+        "tumor de Wharton;",
+        "hemangioma capilar;",
+        "adenoma plomórfico;",
+        "carcinoma de células acinares;",
+        "carcinoma mucoepidermoide."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 testa seu conhecimento sobre patologia das glândulas salivares, especificamente sobre tumores de parótida. É um tema importante em cirurgia de cabeça e pescoço.</p><p><strong>A resposta correta é C - adenoma plomórfico.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A:</strong> Tumor de Wharton é o tumor de Warthin (papiloma cístico adenomatoide). É o segundo tumor benigno mais comum da parótida, mas não o mais comum.</p><p><strong>Alternativa B:</strong> Hemangioma capilar é mais comum em crianças, mas é muito raro na parótida. A localização mais frequente é na face e couro cabeludo.</p><p><strong>Alternativa C (CORRETA):</strong> Adenoma plomórfico é realmente o tumor benigno mais comum da glândula parótida, correspondendo a cerca de 70-80% dos tumores benignos parotídeos. Apresenta componente epitelial e mesenquimal, de crescimento lento.</p><p><strong>Alternativa D:</strong> Carcinoma de células acinares é uma neoplasia maligna rara, correspondendo a apenas 2-3% dos tumores de parótida. É mais comum em mulheres e pode secretar amilase.</p><p><strong>Alternativa E:</strong> Carcinoma mucoepidermoide é o carcinoma maligno mais comum da parótida, mas não é a neoplasia geral mais comum (já que a maioria dos tumores parotídeos são benignos).</p><p>O adenoma plomórfico é importante pois tem potencial de malignização (cerca de 5-10%) se não tratado adequadamente por longo período.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaDeCabecaEPescoco"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "As células alfa, beta, D e G das ilhotas pancreáticas produzem respectivamente:",
+      "alternativas": [
+        "insulina, glucagon, somatostatina, gastrina;",
+        "glucagon, insulina, somatostatina, gastrina;",
+        "glucagon, insulina, gastrina, somatostatina;",
+        "somatostatina, insulina, glucagon e gastrina;",
+        "somatostatina, insulina, gastrina e glucagon;"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre a anatomia funcional das ilhotas pancreáticas (Ilhotas de Langerhans). É essencial para compreender a fisiologia endócrina pancreática.</p><p><strong>A resposta correta é B - glucagon, insulina, somatostatina, gastrina.</strong></p><p>Vamos analisar a função de cada tipo celular:</p><p><strong>Células Alfa (α):</strong> Localizadas na periferia das ilhotas, produzem <strong>glucagon</strong>. Este hormônio aumenta a glicemia através da gluconeogênese e glycogenólise, sendo antagonista da insulina.</p><p><strong>Células Beta (β):</strong> Localizadas no centro das ilhotas (70-80% das células), produzem <strong>insulina</strong>. Esta é fundamental para a captação de glicose pelas células e redução da glicemia.</p><p><strong>Células D (δ):</strong> Representam 5-10% das células, produzem <strong>somatostatina</strong>. Este hormônio inibe a secreção de insulina, glucagon e hormônio do crescimento.</p><p><strong>Células G:</strong> Localizadas na porção cefálica do pâncreas (duodeno próximo), produzem <strong>gastrina</strong>, hormônio que estimula a secreção ácida gástrica.</p><p><strong>Por que as outras alternativas estão incorretas:</strong> A questão testar a sequência correta. A única alternativa que apresenta glucagon (células α), insulina (células β), somatostatina (células D) e gastrina (células G) é a letra B.</p><p>Esta sequência é fundamental para entender distúrbios como diabetes mellitus (deficiência de insulina) e hipoglicemia (excesso de insulina ou deficiência de glucagon).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_FisiologiaDoPancreasEndocrino"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "A sensibilidade geral da Ressonância Magnética para a detecção de tumores neuroendócrinos do pâncreas é de 80% a 90%. No caso dos insulinomas, a sensibilidade se aproxima de 100% quando o tumor possui tamanho maior que:",
+      "alternativas": [
+        "0.5 cm;",
+        "1.0 cm;",
+        "2.0 cm;",
+        "3.0 cm;",
+        "4.0 cm."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre diagnóstico por imagem de tumores neuroendócrinos pancreáticos, especificamente a sensibilidade da ressonância magnética para insulinomas. É um tema relevante em radiologia e endocrinologia.</p><p><strong>A resposta correta é D - 3.0 cm.</strong></p><p>Vamos analisar a progressão da sensibilidade da ressonância magnética:</p><p><strong>A) 0.5 cm:</strong> Insulinomas muito pequenos (< 1 cm) podem não ser detectados, mesmo com RM de alta resolução. A sensibilidade é baixa devido ao tamanho.</p><p><strong>B) 1.0 cm:</strong> Com 1 cm, a detecção melhora, mas ainda não alcança os níveis próximos de 100%. Insulinomas de 1-2 cm têm sensibilidade intermediária.</p><p><strong>C) 2.0 cm:</strong> Com 2 cm, a sensibilidade aumenta significativamente, mas ainda não atinge a marca de 100% mencionada no enunciado.</p><p><strong>D) CORRETA - 3.0 cm:</strong> A partir de 3 cm, a sensibilidade da ressonância magnética para insulinomas se aproxima de 100%. Isso ocorre porque tumores maiores têm maior volume tecidual, facilitando a detecção pela ressonância magnética.</p><p><strong>E) 4.0 cm:</strong> Embora tumores de 4 cm também tenham alta sensibilidade, o ponto de inflexão para 100% de sensibilidade é em torno de 3 cm, não 4 cm.</p><p>É importante lembrar que insulinomas são geralmente pequenos (mediana de 1-2 cm), e 40-50% são menores que 1,5 cm. A técnica de RM com contraste hepato-específico e sequências de difusão podem aumentar a sensibilidade, especialmente para tumores pequenos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "A sétima edição do sistema de estadiamento do \"\"American Joint Commite on Cancer - AJCC\"\" classifica os tumores da junção esôfago-gástrica (JEG) como câncer esofágico desde que o epicentro do tumor esteja dentro de:",
+      "alternativas": [
+        "2,0 cm da JEG;",
+        "3,0 cm da JEG;",
+        "4,0 cm da JEG;",
+        "5,0 cm da JEG;",
+        "6,0 cm da JEG."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre o sistema de estadiamento do AJCC 7ª edição para tumores da junção esôfago-gástrica. É um tema fundamental em oncologia e cirurgia gastrointestinal.</p><p><strong>A resposta correta é D - 5,0 cm da JEG.</strong></p><p>Vamos analisar a classificação AJCC 7ª edição para tumores da junção esôfago-gástrica:</p><p><strong>Contexto da classificação:</strong> O AJCC 7ª edição define critérios específicos para determinar se um tumor da junção esôfago-gástrica deve ser classificado como câncer esofágico ou gástrico, pois isso influencia diretamente o tratamento e prognóstico.</p><p><strong>A) 2,0 cm da JEG:</strong> Este limite é muito restritivo. Classificaria como esofágico apenas tumores muito próximos à junção, o que não reflete a classificação oficial.</p><p><strong>B) 3,0 cm da JEG:</strong> Embora mais próximo, este limite ainda não corresponde à classificação oficial do AJCC 7ª edição.</p><p><strong>C) 4,0 cm da JEG:</strong> Este valor é inferior ao estabelecido pela classificação oficial.</p><p><strong>D) CORRETA - 5,0 cm da JEG:</strong> Segundo o AJCC 7ª edição, tumores da junção esôfago-gástrica são classificados como câncer esofágico quando o epicentro do tumor está dentro de 5,0 cm da junção esôfago-gástrica. Esta é a regra oficial estabelecida.</p><p><strong>E) 6,0 cm da JEG:</strong> Este limite é muito permissivo e não corresponde à classificação oficial.</p><p><strong>Importância clínica:</strong> Esta classificação é crucial pois define o estadiamento e conduta terapêutica. Tumores esofágicos podem necessitar de esofagectomia, enquanto gástricos podem ser tratados com gastrectomia. A decisão correta impacta diretamente o prognóstico do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "O estadiamento de um câncer do esôfago que se manifesta por uma lesão pequena e superficial será adequadamente realizado por:",
+      "alternativas": [
+        "ecoendoscopia;",
+        "ressecção endoscópica da mucosa;",
+        "ressonância magnética;",
+        "tomografia computadorizada;",
+        "PET-SCAN."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre métodos de estadiamento em câncer de esôfago, especificamente para lesões superficiais. A competência testada é crucial para a prática oncológica, pois o método correto de estadiamento determina a conduta terapêutica adequada.</p><p>Vamos analisar cada alternativa sistematicamente:</p><p><strong>A) Ecoendoscopia:</strong> Excelente para estadiamento de profundidade de invasion e avaliação de linfonodos, mas não permite análise histológica completa da lesão superficial. É mais indicada para tumores invasivos.</p><p><strong>B) Ressecção endoscópica da mucosa:</strong> Esta é a resposta correta! Para lesões pequenas e superficiais (como carcinoma in situ ou early gastric cancer), a ressecção endoscópica cumpre dupla função: permite o estadiamento definitivo pela análise histológica completa e já pode ser terapêutica. O espécime completo permite avaliar profundidade de invasion, margens e diferenciação celular.</p><p><strong>C) Ressonância magnética:</strong> Útil para avaliação de invasão local e metástases, mas não oferece detalhes histológicos necessários para estadiamento de lesões superficiais. Resolução insuficiente para avaliar profundidade de invasion em lesões iniciais.</p><p><strong>D) Tomografia computadorizada:</strong> Excelente para estadiamento de tumores avançados (metástases pulmonares, hepáticas), mas não avalia adequadamente lesões mucosas superficiais. Não permite análise histológica.</p><p><strong>E) PET-SCAN:</strong> Fundamental para detectar metástases à distância e avaliação metabólica tumoral, mas não é adequado para estadiamento de lesões superficiais onde a análise histológica é fundamental.</p><p><strong>Veredito:</strong> A resposta B é correta porque a ressecção endoscópica da mucosa (EMR ou ESD) é o gold standard para estadiamento e tratamento de cânceres esofágicos superficiais. Permite análise histopatológica completa do espécime, determinando com precisão o estadiamento final e a necessidade de tratamento adicional.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago_Estadiamento"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "A função do corpo esofágico e do esfíncter esofagiano inferior é avaliada de forma mais efetiva com o seguinte exame:",
+      "alternativas": [
+        "endoscopia digestiva alta;",
+        "ecoendoscopia;",
+        "pHmetria;",
+        "esofagomanometria;",
+        "esofagografia com bário."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão do IFF 2022 testa seu conhecimento sobre métodos diagnósticos para avaliação da motilidade esofágica. É uma competência fundamental em Gastroenterologia e Cirurgia do Aparelho Digestivo.</p><p>Vamos examinar cada alternativa detalhadamente:</p><p><strong>A) Endoscopia digestiva alta:</strong> Essencial para avaliação anatômica e detecção de lesões estruturais, mas avalia função motora de forma indireta. A motilidade é observada clinicamente durante o exame, mas não quantificada de forma objetiva.</p><p><strong>B) Ecoendoscopia:</strong> Excelente para avaliação de camadas da parede esofágica e detecção de alterações estruturais, incluindo tumores e achados inflamatórios. Não avalia motilidade - é um exame de imagem, não funcional.</p><p><strong>C) pHmetria:</strong> Gold standard para avaliação de refluxo gastroesofágico, medindo a exposição ácida do esôfago. Avalia a função do esfíncter inferior indiretamente através do controle do refluxo, mas não analisa a motilidade do corpo esofágico.</p><p><strong>D) Esofagomanometria:</strong> Esta é a resposta correta! A manometria esofágica de alta resolução (HRM) é o exame gold standard para avaliação da motilidade do corpo esofágico e função do esfíncter inferior. Mede pressões ao longo de todo o esôfago, permitindo diagnóstico preciso de alterações motoras como acalásia, esôfago em noz-moscada e outras discinesias.</p><p><strong>E) Esofagografia com bário:</strong> Útil para avaliação anatômica e funcional qualitativa, demonstrando alterações morfológicas e transitividade esofágica. Não quantifica pressões como a manometria e tem menor sensibilidade para disfunções motoras sutis.</p><p><strong>Veredito:</strong> A alternativa D é correta porque a esofagomanometria é especificamente desenvolvida para avaliar a função motora do esôfago. Fornece dados objetivos e quantitativos sobre a coordenação entre o corpo esofágico e o esfíncter inferior, sendo fundamental para diagnóstico de distúrbios motores.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid_AvaliacaoFuncional"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Na anatomia topográfica da parede abdominal a sequência de aparecimento das estruturas musculares laterais a partir da pele e tecido subcutâneo é:",
+      "alternativas": [
+        "oblíquo externo, oblíquo interno, transverso do abdome;",
+        "transverso do abdome, oblíquo interno, oblíquo externo;",
+        "transverso do abdome, oblíquo externo, oblíquo interno;",
+        "oblíquo externo, transverso do abdome e oblíquo interno;",
+        "oblíquo interno, oblíquo externo e transverso do abdome."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do IFF 2022 avalia conhecimento básico de anatomia da parede abdominal, especificamente a sequência das camadas musculares laterais. É fundamental para Cirurgia Geral e emergências cirúrgicas, pois essas camadas são frequentemente manipuladas em incisões cirúrgicas.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>A) Oblíquo externo, oblíquo interno, transverso do abdome:</strong> Esta é a resposta correta! A anatomia clásica da parede abdominal anterior lateral segue esta sequência da superficial para a profunda. O oblíquo externo é a camada mais superficial e facilmente identificável, seguido pelo oblíquo interno e, mais profundamente, o transverso do abdome.</p><p><strong>B) Transverso do abdome, oblíquo interno, oblíquo externo:</strong> Incorreta porque inverte completamente a sequência normal. O transverso do abdome é a camada mais profunda, não a mais superficial.</p><p><strong>C) Transverso do abdome, oblíquo externo, oblíquo interno:</strong> Incorreta porque coloca o transverso na posição mais superficial, quando na realidade é o mais profundo.</p><p><strong>D) Oblíquo externo, transverso do abdome e oblíquo interno:</strong> Incorreta porque inverte a posição do oblíquo interno e transverso. O oblíquo interno deve estar entre o externo e o transverso.</p><p><strong>E) Oblíquo interno, oblíquo externo e transverso do abdome:</strong> Incorreta porque coloca o oblíquo interno na posição mais superficial, quando deveria ser o oblíquo externo.</p><p><strong>Veredito:</strong> A alternativa A é correta porque segue a anatomia clássica estabelecida da parede abdominal. Esta sequência é fundamental para compreender a técnica cirúrgica, especialmente em incisões oblíquas e transversas, e para entender a propagação de infecções e coleção purulenta entre essas camadas.",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_CicloBasico",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Anatomia",
+        "Outros_CicloBasico_Anatomia_AnatomiaTopografica",
+        "Outros_CicloBasico_Anatomia_AnatomiaTopografica_ParedeAbdominal"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "No paciente portador de sarcoma retroperitonial com 4,0cm de diâmetro que envolve o colo esquerdo, a melhor conduta é:",
+      "alternativas": [
+        "ressecção em bloco do tumor, do colo esquerdo e linfadenectomia retroperitonialperiaórtica;",
+        "quimioterapia neoadjuvante e ressecção em bloco do tumor e do colo esquerdo;",
+        "quimioterapia neoadjuvante e ressecção do tumor em caso de regressão da invasão em colo esquerdo;",
+        "tratamento paliativo com quimioterapia e radioterapia;",
+        "ressecção em bloco do tumor e do colo esquerdo."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão do IFF 2022 avalia seu conhecimento sobre princípios terapêuticos em sarcomas retroperitoniais. A competência testada é crucial em Cirurgia Oncológica, pois a abordagem correta determina significativamente o prognóstico do paciente.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>A) Ressecção em bloco do tumor, do colo esquerdo e linfadenectomia retroperitonial-periaórtica:</strong> Incorreta porque a linfadenectomia sistemática não é indicada em sarcomas retroperitoniais. A cirurgia debe ser funcional, não radical, para preservar função sem ganho oncológico significativo.</p><p><strong>B) Quimioterapia neoadjuvante e ressecção em bloco do tumor e do colo esquerdo:</strong> Incorreta porque não há benefício comprovado de quimioterapia neoadjuvante em sarcomas retroperitoniais. A maioria dos sarcomas são resistentes à quimioterapia.</p><p><strong>C) Quimioterapia neoadjuvante e ressecção do tumor em caso de regressão da invasão em colo esquerdo:</strong> Incorreta pelos mesmos motivos da alternativa B, além de propor uma ressecção condicional que não é padrão ouro.</p><p><strong>D) Tratamento paliativo com quimioterapia e radioterapia:</strong> Completamente incorreta para um tumor de 4,0cm que é tecnicamente ressecável. Sarcomas localizados devem sempre ser ressecados quando tecnicamente possível.</p><p><strong>E) Ressecção em bloco do tumor e do colo esquerdo:</strong> Esta é a resposta correta! Para sarcomas retroperitoniais, especialmente aqueles que INVADEM estruturas adjacentes (como descrito no enunciado - envolve o colo esquerdo), a ressecção em bloco com as estruturas invadidas é o princípio fundamental. A remoção completa do tumor com margens adequadas é o único tratamento potencialmente curativo.</p><p><strong>Veredito:</strong> A alternativa E é correta porque a ressecção em bloco com estruturas invadidas é o standard de tratamento para sarcomas retroperitoniais ressecáveis. O conceito de \"cirurgia oncológica adequada\" em sarcomas é a ressecção completa com margens negativas, frequentemente necessitando de ressecção de órgãos adjacentes invadidos.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica_Sarcoma",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica_Sarcoma_Tratamento"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "No paciente com abdome agudo, o sinal de Kehr (pressão colocada no abdome superior esquerdo e dor no ombro esquerdo quando em decúbito dorsal) está especialmente associado a:",
+      "alternativas": [
+        "coleperitônio;",
+        "obstrução de ângulo esplênico do colo;",
+        "hemoperitônio de origem esplênica;",
+        "ruptura de víscera oca;",
+        "diverticulite de Meckel."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do IFF 2022 avalia seu conhecimento sobre semiotécnica em emergências cirúrgicas, especificamente o significado do sinal de Kehr. É fundamental para o diagnóstico de abdome agudo e para a tomada de decisões rápidas em situações críticas.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>A) Coleperitônio:</strong> Incorreta porque coleperitônio refere-se à presença de bile no peritônio, geralmente por perfuração de vesícula biliar. O sinal de Kehr não está especificamente associado a este quadro.</p><p><strong>B) Obstrução de ângulo esplênico do colo:</strong> Incorreta porque, embora possa causar desconforto no abdome superior esquerdo, a obstrução colônica não apresenta este sinal específico. A dor no ombro esquerdo sugere iritação diafragmática, não apenas obstrução.</p><p><strong>C) Hemoperitônio de origem esplênica:</strong> Esta é a resposta correta! O sinal de Kehr é clássico para hemoperitônio secundário a ruptura esplênica. A dor no ombro esquerdo ocorre por irritação do diafragma esquerdo pelo sangue acumulado, com reflexo através do nervo frênico. É um dos sinais mais importantes para suspeita de ruptura esplênica em trauma abdominal fechado.</p><p><strong>D) Ruptura de víscera oca:</strong> Incorreta porque a ruptura de víscera oca causa peritonite química por vazamento de conteúdo intestinal, não especificamente hemoperitônio. A dor seria mais difusa, não com irradiação típica para ombro.</p><p><strong>E) Diverticulite de Meckel:</strong> Incorreta porque diverticulite de Meckel geralmente apresenta dor em fossa ilíaca direita, não hemoperitônio com irradiação para ombro esquerdo.</p><p><strong>Veredito:</strong> A alternativa C é correta porque o sinal de Kehr é um achado patognomônico para hemoperitônio de origem esplênica. A localização da dor no ombro esquerdo é explicada pela inervação frênica do diafragma esquerdo, que se irrita com o sangue acumulado no espaço subdiafragmático.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico_Hemoperitonio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico_Hemoperitonio_OrigemEsplenica",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico_Hemoperitonio_OrigemEsplenica_SinaisClinicos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Durante a gestação o crescimento do útero modifica a posição do apêndice vermiforme de forma que a posição do mesmo ao nível da cicatriz umbilical se dá ao longo do:",
+      "alternativas": [
+        "terceiro mês de gestação;",
+        "quinto mês de gestação;",
+        "sétimo mês de gestação;",
+        "oitavo mês de gestação;",
+        "nono mês de gestação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF avalia conhecimentos de anatomia obstétrica, especificamente sobre as modificações anatômicas que ocorrem durante a gestação e suas implicações clínicas.</p><p><strong>A resposta correta é B - quinto mês de gestação.</strong> Durante o crescimento uterino, o apêndice vermiforme é gradualmente deslocado de sua posição habitual no quadrante inferior direito para uma posição mais superior e lateral.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Terceiro mês:</strong> Incorreto. No primeiro trimestre, o útero ainda está parcialmente dentro da pelve, não Having reached the level of the umbilicus yet. O crescimento uterino é insuficiente para produzir o deslocamento significativo do apêndice.</p><p><strong>B) Quinto mês:</strong> Correto. Por volta das 20 semanas (quinto mês), o fundo uterino atinge o nível da cicatriz umbilical, momento em que o apêndice é deslocado para uma posição superior ao nível da cicatriz umbilical. Esta é a fase crítica onde mudanças anatômicas se tornam clinicamente relevantes.</p><p><strong>C) Sétimo mês:</strong> Incorreto. Nesse período, o útero já ultrapassou há muito tempo o nível da umbilicus, estando próximo ao processo xifóide. O apêndice já estará em posição muito mais alta.</p><p><strong>D) Oitavo mês:</strong> Incorreto. O útero está no ponto mais alto da gestação, frequentemente no processo xifóide, muito acima do nível da umbilicus.</p><p><strong>E) Nono mês:</strong> Incorreto. Após o engajamento da cabeça fetal no final da gestação, o fundo uterino pode descer ligeiramente, mas ainda permanecerá acima da umbilicus.</p><p><strong>Veredito final:</strong> A banca buscou avaliar o conhecimento sobre cronologia do crescimento uterino e suas implicações anatômicas. O quinto mês marca o momento crucial quando o útero atinge a cicatriz umbilical, deslocando o apêndice para essa região - conhecimento fundamental para interpretação de quadros abdominais na gestante.",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_AnatomiaDoTratoGenitalFeminino"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente de 30 anos, sem comorbidades e estável da entrada na emergência com quadro de úlcera duodenal perfurada e evolução de 4 horas. Durante a laparotomia o cirurgião identifica úlcera perfurada na parede anterior da primeira porção duodenal com 2,5cm",
+      "alternativas": [
+        "ráfia primária + vagotomia seletiva.",
+        "ressecção das bordas + fechamento primário + vagotomia troncular + piloroplastia.",
+        "antrectomia + vagotomia troncular + reconstrução à Billroth I.",
+        "ráfia primária com patch de omento (Graham).",
+        "antrectomia + vagotomia troncular + reconstrução à Billroth II."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF aborda o manejo cirúrgico de úlcera duodenal perfurada, avaliando a capacidade de escolher o procedimento mais adequado baseado no perfil clínico do paciente.</p><p><strong>A resposta correta é D - ráfia primária com patch de omento (Graham).</strong> Este é o procedimento de escolha para úlceras perfuradas em pacientes jovens, sem comorbidades, com perfuração recente e úlcera de bom tamanho para fechamento.</p><p><strong>Vamos analisar as alternativas detalhadamente:</strong></p><p><strong>A) Ráfia primária + vagotomia seletiva:</strong> Incorreto. A vagotomia seletiva é técnica mais complexa e com maior morbidade. Para perfurações agudas em pacientes jovens, a vagotomia não é necessária se a perfuração for fechada adequadamente.</p><p><strong>B) Ressecção das bordas + fechamento primário + vagotomia troncular + piloroplastia:</strong> Incorreto. Este é um procedimento muito extenso para uma úlcera perfurada recente em paciente jovem. A ressecção das bordas não é necessária, e a vagotomia troncular + piloroplastia representa sobretratamento.</p><p><strong>C) Antrectomia + vagotomia troncular + reconstrução à Billroth I:</strong> Incorreto. A antrectomia é indicada em casos de úlceras crônicas refractárias, sangramento ou obstrução, não em perfuração aguda recente. Este procedimento tem morbidade muito maior.</p><p><strong>D) Ráfia primária com patch de omento (Graham):</strong> Correto. Perfeito para este caso: paciente jovem (30 anos), sem comorbidades, evolução de apenas 4 horas (perfuração aguda), e a úlcera tem 2,5cm, tamanho adequado para fechamento. O patch de omento adiciona vascularização e selamento mais seguro.</p><p><strong>E) Antrectomia + vagotomia troncular + reconstrução à Billroth II:</strong> Incorreto. Mais uma vez, antrectomia é excessiva para perfuração aguda. Billroth II seria considerado apenas se o duodeno não pudesse ser reconstruído em Billroth I, o que não é o caso aqui.</p><p><strong>Veredito final:</strong> A banca avaliou o raciocínio cirúrgico fundamental: o procedimento deve ser adequado ao perfil do paciente. Em jovens com perfuração aguda recente, a ráfia simples com patch é suficiente e segura, evitando procedimentos mais complexos desnecessariamente.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_UlceraPepticaPerfurada"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Na obstrução do intestino delgado após ressuscitação volêmica inicial, qual dos achados abaixo permite que o cirurgião tente o tratamento conservador (sem cirurgia)?",
+      "alternativas": [
+        "Febre.",
+        "Taquicardia.",
+        "Dor local resistente a analgésicos.",
+        "Leucocitose.",
+        "Distensão abdominal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca IFF avalia critérios clínicos para tomada de decisão entre tratamento conservador e cirúrgico na obstrução do intestino delgado, competência fundamental em cirurgia de urgência.</p><p><strong>A resposta correta é E - distensão abdominal.</strong> A distensão abdominal é um sinal físico que, isoladamente, não contraindica o tratamento conservador, ao contrário dos outros sinais que indicam processo inflamatório ou perfuração.</p><p><strong>Vamos analisar cada alternativa criteriosamente:</strong></p><p><strong>A) Febre:</strong> Incorreto. A presença de febre após ressuscitação volêmica sugere processo inflamatório ativo, possível peritonite ou isquemia intestinal - indicação forte para cirurgia urgente. Febre é sinal de alarme.</p><p><strong>B) Taquicardia:</strong> Incorreto. Taquicardia persistente após ressuscitação volêmica indica instabilidade hemodinâmica, possível choque séptico ou hipovolêmico. É forte indicador de necessidade de intervenção cirúrgica imediata.</p><p><strong>C) Dor local resistente a analgésicos:</strong> Incorreto. Dor intensa e refratária a analgésicos sugere peritonite, ischemia ou perfuração - situações que exigem cirurgia urgente. Controlar a dor é fundamental para avaliar outros sinais.</p><p><strong>D) Leucocitose:</strong> Incorreto. Leucocitose após ressuscitação volêmica indica resposta inflamatória sistêmica, frequentemente associada a complicações como peritonite ou infecção. É indicador de piora clínica.</p><p><strong>E) Distensão abdominal:</strong> Correto. A distensão abdominal é esperada na obstrução intestinal e, isoladamente, não contraindica o tratamento conservador. Pode estar presente tanto em obstruções funcion quanto mecânicas, desde que os outros sinais sejam favoráveis.</p><p><strong>Veredito final:</strong> A banca buscou avaliar a capacidade de distinguir entre sinais de alarme (que exigem cirurgia) versus manifestações esperadas da obstrução (que podem ser manejadas conservadoramente). Após adequada ressuscitação, apenas a distensão abdominal permite tentativa de tratamento conservador, enquanto febre, taquicardia, dor intensa e leucocitose são indicações cirúrgicas formais.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoObstrutivo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_IntroducaoAoAbdomeAgudo"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Paciente com tumor carcinoide do jejuno com 2,0cm de diâmetro foi levado à laparotomia onde se identificou nódulo metastático de 1,0cm no lobo esquerdo do fígado. O tratamento adequado é:",
+      "alternativas": [
+        "ressecção intestinal segmentar para evitar obstrução;",
+        "ressecção intestinal segmentar para evitar obstrução + quimioterapia;",
+        "ressecção intestinal segmentar para evitar obstrução + octreotide;",
+        "inibidor de somatostatina oral apenas;",
+        "ressecção intestinal segmentar ampla envolvendo o mesentério + metastasectomiacom margem de segurança."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca IFF avalia o manejo cirúrgico de tumores carcinoides com metástases hepáticas, testando conhecimento sobre oncologia cirúrgica e características específicas deste tipo de tumor.</p><p><strong>A resposta correta é E - ressecção intestinal segmentar ampla envolvendo o mesentério + metastasectomia com margem de segurança.</strong> Esta é a abordagem gold standard para tumores carcinoides com metástases ressecáveis, oferecendo melhor controle oncológico e sintomático.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Ressecção intestinal segmentar para evitar obstrução:</strong> Incorreto. Embora preventa obstrução, não aborda as metástases hepáticas que são a principal causa de morbimortalidade. Tumor carcinoide metastático requer abordagem mais agressiva.</p><p><strong>B) Ressecção intestinal segmentar para evitar obstrução + quimioterapia:</strong> Incorreto. A quimioterapia tem papel limitado em tumores carcinoides. Não substitui o controle cirúrgico das metástases hepáticas, que é fundamental para o prognóstico.</p><p><strong>C) Ressecção intestinal segmentar para evitar obstrução + octreotide:</strong> Incorreto. Octreotide é usado para controle sintomático da síndrome carcinoide, mas não substitui o tratamento cirúrgico das metástases. O objetivo deve ser ressecção completa sempre que possível.</p><p><strong>D) Inibidor de somatostatina oral apenas:</strong> Incorreto. Medidas apenas clínicas são insuficientes para tumor com metástases ressecáveis. A cirurgia oferece a melhor chance de cura ou controle de longo prazo.</p><p><strong>E) Ressecção intestinal segmentar ampla envolvendo o mesentério + metastasectomia com margem de segurança:</strong> Correto. Esta abordagem completa trata tanto o tumor primário quanto as metástases. A ressecção do mesentério é importante por ser via de disseminção linfática, e as metástases hepáticas ressecáveis devem ser removidas para controle oncológico otimizado.</p><p><strong>Veredito final:</strong> A banca avaliou o conhecimento sobre a biologia unique dos tumores carcinoides e sua abordagem cirúrgica. Diferente de outros tumores metastáticos, carcinoides com metástases hepáticas ressecáveis devem ser abordados com intenção curativa whenever possível, combinando ressecção do tumor primário e metástases com margens adequadas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_TumoresNeuroendocrinos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Depois do cólon, o local mais comum no tubo digestivo onde encontramos divertículo é o:",
+      "alternativas": [
+        "estômago;",
+        "duodeno;",
+        "jejuno proximal;",
+        "jejuno distal;",
+        "íleo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF avalia conhecimentos de anatomia digestiva, especificamente sobre a distribuição de divertículos no trato gastrointestinal, tema frequentemente explorado em provas de residência.</p><p><strong>A resposta correta é B - duodeno.</strong> Após o cólon, o duodeno é o local mais comum para divertículos no trato digestivo, representando a segunda localização mais frequente.</p><p><strong>Vamos analisar cada alternativa com base na epidemiologia:</strong></p><p><strong>A) Estômago:</strong> Incorreto. Divertículos gástricos são extremamente raros, representando menos de 0,1% dos casos. São geralmente adquiridas ou associadas a outras patologias. O estômago não é local de diverticulose significativa.</p><p><strong>B) Duodeno:</strong> Correto. O duodeno é realmente o segundo local mais comum para divertículos, especialmente na segunda e terceira porções. Divertículos duodenais são relativamente comuns e frequentemente assintomáticos, sendo achados incidentais em exames de imagem.</p><p><strong>C) Jejuno proximal:</strong> Incorreto. Divertículos jejunais são menos comuns que os duodenais. Quando presentes, costumam ser múltiplos e associados a distúrbios de motilidade intestinal. São menos frequentes que os divertículos duodenais.</p><p><strong>D) Jejuno distal:</strong> Incorreto. Ainda mais raros que os jejuno proximais. Divertículos no jejuno distal são incomuns e quando ocorrem, frequentemente indicam doença de base associada como distúrbios de motilidade.</p><p><strong>E) Íleo:</strong> Incorreto. Divertículos ileais são muito raros. O íleo terminal é mais conhecido por Doença de Crohn e outras patologias inflamatórias, não por diverticulose.</p><p><strong>Veredito final:</strong> A banca testou conhecimento epidemiológico sobre diverticulose. Enquanto divertículos cólicos são os mais comuns, o duodeno ocupa o segundo lugar em frequência, conhecimento fundamental para interpretação de imagens e compreensão de complicações diverticulares ao longo de todo o trato digestivo.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "As fístulas são complicações temidas nas cirurgias gastrointestinais e podem ser classificadas conforme o seu débito em 24h. Consideramos uma fístula gastrointestinal como de \"\"alto débito\"\" quando o volume em 24h é:",
+      "alternativas": [
+        "> 200ml em 24h;",
+        "> 300ml em 24h;",
+        "> 400ml em 24h;",
+        "> 500ml em 24h;",
+        "> 600ml em 24h."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia o conhecimento dos candidatos sobre classificação de fístulas gastrointestinais conforme débito, um conceito fundamental em cirurgia digestiva para prognóstico e manejo clínico.</p><p><strong>A resposta correta é D - > 500ml em 24h.</strong></p><p>A classificação das fístulas por débito é crucial para orientar a conduta terapêutica. Fístulas de baixo débito (< 200ml/24h) geralmente têm melhor prognóstico e podem ser manejadas conservadoramente. Fístulas de débito moderado (200-500ml/24h) necessitam de vigilância closer e possível intervenção. Já as fístulas de alto débito (> 500ml/24h) indicam perda significativa de fluidos e eletrólitos, aumentando o risco de desidratação, desequilíbrio eletrolítico e sépsis, requerendo abordagem mais agressiva com suporte nutricional e possível intervenção cirúrgica.</p><p>Analisando as alternativas incorretas: A) 200ml seria limite de baixo débito; B) 300ml e C) 400ml representam débitos moderados; E) 600ml seria ainda mais alto, mas o critério clássico de fístula de alto débito é estabelecido em 500ml/24h.</p><p>Esta classificação tem implicações diretas no manejo clínico, incluindo necessidade de reposição de fluidos, eletrólitos e proteínas, bem como timing para intervenção cirúrgica quando indicada.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Em relação à Síndrome do intestino curto, complete a sentença abaixo com a opção mais adequada. Apesar de haver uma considerável variação individual, a ressecção de até _______________ do intestino delgado pode ser bem tolerada se o íleo terminal e a válv",
+      "alternativas": [
+        "0.4",
+        "0.5",
+        "0.6",
+        "0.7",
+        "0.8"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>A questão aborda conhecimento fundamental sobre síndrome do intestino curto, tema essencial em cirurgia digestiva que avalia a capacidade adaptativa intestinal e limites de ressecção toleráveis.</p><p><strong>A resposta correta é D - 0.7 (70%).</strong></p><p>A síndrome do intestino curto resulta de ressecções extensas do intestino delgado, comprometendo a absorção de nutrientes, fluidos e eletrólitos. A capacidade de adaptação intestinal permite ressecções significativas quando a anatomia residual é preservada adequadamente.</p><p>O limite de 70% de ressecção tolerável está relacionado aos mecanismos compensatórios do intestino remanescente. O íleo terminal e a válvula ileocecal são estruturas críticas para esta adaptação, pois: o íleo terminal tem maior capacidade absortiva; a válvula ileocecal previne refluxo bacteriano e regula o tempo de trânsito; e juntos permitem hipertrofia e hiperplasia das vilosidades intestinais no intestino remanescente.</p><p>Analisando as alternativas: A) 40% e B) 50% são subestimativas Conservadoras; C) 60% ainda é otimista demais; E) 80% superestima a capacidade adaptativa e é associado a alto risco de síndrome severa.</p><p>Fatores adicionais que influenciam a tolerância incluem idade do paciente, segmento ressecado, função do cólon remanescente e presença de doença de base.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DisturbiosDisabsortivos",
+        "Cirurgia_TemasGeraisEmCirurgia"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Por ordem decrescente de frequência, as partes do intestino grosso que podem apresentar a condição patológica conhecida como VOLVO são:",
+      "alternativas": [
+        "sigmoide, ceco, colo transverso;",
+        "ceco, colo transverso, sigmoide;",
+        "colo transverso, sigmoide, ceco;",
+        "sigmoide, colo transverso, ceco;",
+        "colo transverso, ceco, sigmoide."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre volvo intestinal, uma emergência cirúrgica cuja localização varies conforme a anatomia e mobilidade de diferentes segmentos colônicos.</p><p><strong>A resposta correta é A - sigmoide, ceco, colo transverso.</strong></p><p>O volvo representa a torção de um segmento intestinal sobre seu eixo mesentérico, comprometendo a vascularização e causando obstrução. A frequência varia conforme o tamanho e mobilidade de cada segmento colônico.</p><p>O sigmoide é a localização mais comum devido à sua mobilidade intrínseca, meso longo e presença de fezes formadas que funcionam como ponto de torção. O ceco ocupa o segundo lugar por sua mobilidade e fixação apenas no íleo terminal, sendo especialmente vulnerável em casos de má rotação intestinal. O colo transverso, apesar de menos móvel, pode apresentar volvo em presença de mesocolon redundante ou aderências.</p><p>Analisando as alternativas incorretas: B) inverte a ordem correta; C, D e E) colocam o transverso como primeira opção, mas clinicamente é menos frequente que sigmoide e ceco.</p><p>Complicações incluem perfuração, peritonite e sépsis. O tratamento é cirúrgico urgente, podendo ser descompressão simples ou ressecção conforme viabilidade intestinal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "O modelo de desenvolvimento do adenocarcinoma de Fearon-Vogelstein para a neoplasia colorretal representa uma das formas mais conhecidas da carcinogênese. Normalmente, genes de supressão tumoral produzem proteínas que inibem a formação do tumor pela regul",
+      "alternativas": [
+        "K-RAS;",
+        "APC;",
+        "DCC;",
+        "P53;",
+        "MMR."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>A questão aborda o modelo clássico de Fearon-Vogelstein para carcinogênese colorretal, conhecimento fundamental em oncologia digestiva que descreve a progressão molecular da adenoma para carcinoma.</p><p><strong>A resposta correta é B - APC (Adenomatous Polyposis Coli).</strong></p><p>O modelo Fearon-Vogelstein descreve a sequência adenoma-carcinoma através de múltiplas mutações genéticas. A palavra-chave na questão é 'genes de supressão tumoral', que produzem proteínas inibidoras de tumor.</p><p>O APC é o primeiro gene de supressão tumoral na sequência, atuando como 'gatekeeper' na via Wnt/β-catenina. Sua inativação permite acumulação de β-catenina no núcleo, ativando oncogenes como c-myc e ciclina D1, promovendo proliferação celular descontrolada. A perda de APC é eventos precoce, presente em >80% dos carcinomas colorretais esporádicos e universal em polipose adenomatosa familiar.</p><p>Analisando as alternativas incorretas: A) K-RAS é um oncogene (proto-oncogene ativado); C) DCC é gene de supressão tumoral mas subsequent na sequência; D) P53 é supressor tumoral mas eventos tardio; E) MMR são genes de reparo de DNA (mismatch repair).</p><p>Este modelo fundamenta estratégias de prevenção e screening para câncer colorretal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "O modelo de desenvolvimento do adenocarcinoma de Fearon-Vogelstein para a neoplasia colorretal representa uma das formas mais conhecidas da carcinogênese. Normalmente, genes de supressão tumoral produzem proteínas que inibem a formação do tumor pela regul",
+      "alternativas": [
+        "APC;",
+        "K-RAS;",
+        "DCC;",
+        "P53;",
+        "MMR."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão complementa o conhecimento sobre o modelo Fearon-Vogelstein, focando nos genes de supressão tumoral que atuam nas fases mais avançadas da carcinogênese colorretal.</p><p><strong>A resposta correta é D - P53.</strong></p><p>O P53, conhecido como 'guardião do genoma', é um gene supressor tumoral que atua como brake master na progressão maligna. Sua proteína p53 induz parada do ciclo celular, reparo de DNA ou apoptose quando há danos genéticos, prevenindo expansão de células mutadas.</p><p>Na sequência Fearon-Vogelstein, P53 é inativado em fase tardia, geralmente após acumulo de outras mutações (APC, K-RAS, DCC). A perda de P53 remove a última barreira contra transformação maligna completa, permitindo que células com múltiplas aberrações genéticas sobrevivam e proliferem. Presente em 50-75% dos carcinomas colorretais.</p><p>Analisando as alternativas: A) APC é supressor tumoral mas eventos precoce; B) K-RAS é oncogene; C) DCC é supressor tumoral mas subsequent P53; E) MMR são genes de reparo, não clássicos supressores tumorais.</p><p>A compreensão desta sequência molecular é crucial para desenvolvimento de terapias dirigidas e biomarcadores prognósticos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "A extensão da ressecção de um adenocarcinoma do ceco deve envolver:",
+      "alternativas": [
+        "íleo terminal e ceco;",
+        "íleo terminal, ceco e colo ascendente;",
+        "íleo terminal, ceco, colo ascendente e ângulo hepático do colo;",
+        "íleo terminal, ceco, colo ascendente e colo transverso;",
+        "íleo terminal, ceco, colo ascendente, colo transverso e ângulo esplênico do colo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre os princípios oncológicos da ressecção de adenocarcinoma colorretal, especificamente sobre a extensão adequada da ressecção para tumores do ceco.</p><p><strong>A resposta correta é C - íleo terminal, ceco, colo ascendente e ângulo hepático do colo.</strong></p><p>Para compreender esta questão, é essencial entender que a ressecção oncológica de adenocarcinoma de ceco deve seguir os princípios da cirurgia oncológica, incluindo a remoção do tumor com margens adequadas e dos linfonodos de drenagem.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) íleo terminal e ceco:</strong> Insuficiente. Esta ressecção é típica de procedimentos como ileocecectomia para outras patologias, mas não atende aos critérios oncológicos para adenocarcinoma. Falta a ressecção do colo ascendente e não inclui os linfonodos de drenagem adequados.</p><p><strong>B) íleo terminal, ceco e colo ascendente:</strong> Melhor que a anterior, mas ainda insuficiente. Falta a ressecção do ângulo hepático do colo, que é importante para margens adequadas e para a drenagem linfática.</p><p><strong>C) íleo terminal, ceco, colo ascendente e ângulo hepático do colo:</strong> CORRETA. Esta é a ressecção adequada (hemicolectomia direita extendida) que garante margens suficientes, remove o tumor com sua drenagem linfática regional e é o procedimento padrão para adenocarcinoma de ceco.</p><p><strong>D) íleo terminal, ceco, colo ascendente e colo transverso:</strong> Exagerada. A ressecção do colo transverso em sua totalidade não é necessária para tumores de ceco, pois as margens do colo ascendente já são suficientes e a drenagem linfática não requer essa extensão.</p><p><strong>E) íleo terminal, ceco, colo ascendente, colo transverso e ângulo esplênico do colo:</strong> Muito extensa. A ressecção até o ângulo esplênico (hemicolectomia direita ampliada) não é indicada para adenocarcinoma de ceco, pois não agrega benefício oncológico e aumenta morbidade desnecessariamente.</p><p>O procedimento ideal para adenocarcinoma de ceco é a hemicolectomia direita extendida, que remove íleo terminal (20-30 cm), ceco, colo ascendente e ângulo hepático do colo, garantindo margens adequadas (pelo menos 5 cm distal ao tumor) e linfadenectomia completa.</p><p><strong>Veredito:</strong> A alternativa C é a única que descreve adequadamente a ressecção oncológica padrão para adenocarcinoma de ceco, respeitando os princípios de marginação e drenagem linfática adequados.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Entre os procedimentos abaixo, qual NÃO pode ser usado para tratamento da doença pilonidal?",
+      "alternativas": [
+        "Excisão completa da linha média e fechamento primário.",
+        "Excisão parcial e marsupialização.",
+        "Retalho de Bascon.",
+        "Retalho de Karidakis.",
+        "Plastia em Z."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre as técnicas cirúrgicas disponíveis para tratamento de doença pilonidal, exigindo que você identifique qual procedimento NÃO é apropriado para esta condição.</p><p><strong>A resposta correta é B - Excisão parcial e marsupialização.</strong></p><p>A doença pilonidal é uma condição caracterizada pela presença de cistos e tratos fistulosos na região sacrococcígea, sendo mais comum em homens jovens e relacionada à presença de pelos nesta região. O tratamento definitivo é cirúrgico, e existem várias técnicas disponíveis.</p><p><strong>Por que a marsupialização NÃO é apropriada:</strong></p><p>A marsupialização consiste na excisão parcial da lesão com criação de uma bolsa mucosa, mantendo o material fistuloso parcialmente na região. Para doença pilonidal, isso é inadequado porque: 1) não remove completamente os cistos e tratos fistulosos; 2) mantém o risco de recidiva alta; 3) pode ser difícil de ser epitelizada adequadamente; 4) não trata a causa fundamental (pelos e detritos na região).</p><p><strong>Análise das alternativas corretas:</strong></p><p><strong>A) Excisão completa da linha média e fechamento primário:</strong> Técnica padrão que remove completamente a doença pilonidal. Procedimento simples com boa taxa de cura quando realizado adequadamente.</p><p><strong>C) Retalho de Bascon:</strong> Técnica que utiliza retalhos advancement para fechamento da área sem tensão. Muito utilizada em casos complexos ou recidivantes.</p><p><strong>D) Retalho de Karidakis:</strong> Técnica de retalho com rotação que permite fechamento sem tensão. Alternativa válida para casos selecionados.</p><p><strong>E) Plastia em Z:</strong> Técnica que modifica a geometria da cicatriz, distribuição de tensão e direção dos pelos, reduzindo o risco de recidiva. Altamente eficaz em doença pilonidal.</p><p><strong>Princípios do tratamento:</strong></p><p>As técnicas corretas para doença pilonidal compartilham alguns princípios: 1) remoção completa dos cistos e tratos fistulosos; 2) criação de cicatrização por segunda intenção ou fechamento sem tensão; 3) eliminação de campos de retenção para pelos; 4) redução da profundidade da prega interglútea.</p><p><strong>Veredito:</strong> A excisão parcial com marsupialização (alternativa B) não é apropriada para doença pilonidal porque não remove completamente a doença e mantém alto risco de recidiva, sendo portanto a única alternativa incorreta.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Miscelanea"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "A pancreatojejunostomia látero-lateral é uma técnica útil no tratamento de pacientes portadores de:",
+      "alternativas": [
+        "pancreatite aguda;",
+        "pseudocisto pancreático;",
+        "necrose pancreática;",
+        "pancreatite autoimune;",
+        "pancreatite crônica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre técnicas de derivação pancreática e suas indicações específicas em diferentes patologias pancreáticas.</p><p><strong>A resposta correta é E - pancreatite crônica.</strong></p><p>A pancreatojejunostomia látero-lateral (técnica de Puestow-Gillesby) é uma técnica de derivação pancreática projetada especificamente para tratar a dor da pancreatite crônica, especialmente quando há dilatação do ducto pancreático.</p><p><strong>Compreendendo a técnica:</strong></p><p>A pancreatojejunostomia látero-lateral envolve a criação de uma anastomose entre o ducto pancreático dilatado e uma alça jejunal. Esta técnica é especialmente útil porque: 1) drena adequadamente o ducto pancreático dilatado; 2) reduz a pressão intraductal que contribui para a dor crônica; 3) preserva o tecido pancreático funcionante; 4) permite drenagem de todo o sistema ductal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) pancreatite aguda:</strong> Incorreta. A pancreatite aguda é uma condição inflamatória aguda onde técnicas de derivação não são indicadas. O tratamento é suporte e, em casos graves, pode ser necessária drenagem de coleções, mas não derivação pancreática.</p><p><strong>B) pseudocisto pancreático:</strong> Incorreta. Pseudocistos são tratados por drainagem endoscópica, percutânea ou cirúrgica (cystogastrostomia ou cystojejunostomia), não por pancreatojejunostomia látero-lateral.</p><p><strong>C) necrose pancreática:</strong> Incorreta. A necrose pancreática pode necessitar de necrosectomia e drenagem, mas não é uma indicação para pancreatojejunostomia látero-lateral. Esta técnica não trata adequadamente a necrose organizada.</p><p><strong>D) pancreatite autoimune:</strong> Incorreta. A pancreatite autoimune responde ao tratamento com corticosteroides e geralmente não requer intervenção cirúrgica. A derivação pancreática não é uma técnica apropriada para esta forma de pancreatite.</p><p><strong>E) pancreatite crônica:</strong> CORRETA. A pancreatojejunostomia látero-lateral é particularmente indicada em pancreatite crônica com ducto pancreático dilatado (>7mm), sendo uma das técnicas de escolha para alívio da dor crônica por hipertensão ductal.</p><p><strong>Indicações específicas:</strong></p><p>Esta técnica é indicada em: 1) pancreatite crônica com dilatação ductal significativa; 2) dor refratária ao tratamento clínico; 3) pacientes com ducto pancreático dominante; 4) ausência de áreas significativas de necrose ou fibrose regional que impeçam a técnica.</p><p><strong>Veredito:</strong> A pancreatojejunostomia látero-lateral é especificamente projetada para tratar a dor da pancreatite crônica, sendo portanto a única alternativa correta.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Em relação aos genes e síndromes associadas, em qual situação existe risco até 100 vezes maior de desenvolvimento de adenocarcinoma ductal do pâncreas?",
+      "alternativas": [
+        "STK11/ Síndrome de Peutz-Jeghers.",
+        "MLH1/Síndrome de Lynch.",
+        "CDKN2A/Nevo atípico familiar e síndrome do melanoma múltiplo.",
+        "CTFR / Fibrose cística.",
+        "BRCA2 / Câncer de mama e de ovário hereditário."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre síndromes genéticas e sua associação com tumores malignos, especificamente focando no risco relativo de desenvolvimento de adenocarcinoma ductal do pâncreas.</p><p><strong>A resposta correta é A - STK11/ Síndrome de Peutz-Jeghers.</strong></p><p>A Síndrome de Peutz-Jeghers, causada por mutações no gene STK11 (também conhecido como LKB1), apresenta a maior associação com adenocarcinoma ductal do pâncreas entre as síndromes listadas.</p><p><strong>Compreendendo a Síndrome de Peutz-Jeghers:</strong></p><p>Esta síndrome é caracterizada por: 1) pólipos hamartomatosos gastrointestinais; 2) melanose mucocutânea (manchas hiperpigmentadas em lábios, mucosa oral, mãos e pés); 3) risco aumentado para múltiplas neoplasias malignas. O risco de adenocarcinoma ductal do pâncreas é aumentado em até 100-150 vezes comparado à população geral.</p><p><strong>Análise comparativa das síndromes:</strong></p><p><strong>B) MLH1/Síndrome de Lynch:</strong> Associada principalmente com carcinoma colorretal, endometrial, gástrico e de ovário. Embora tenha um risco aumentado para câncer de pâncreas, é significativamente menor que a Síndrome de Peutz-Jeghers.</p><p><strong>C) CDKN2A/Nevo atípico familiar:</strong> Associada principalmente com melanoma múltiplo e risco aumentado para tumores epiteliais, mas não presenta o mesmo grau de risco para adenocarcinoma ductal do pâncreas.</p><p><strong>D) CFTR/Fibrose cística:</strong> Aumenta o risco de adenocarcinoma ductal do pâncreas devido a alterações na secreção pancreática, mas o aumento de risco é de magnitude muito menor comparado à Síndrome de Peutz-Jeghers.</p><p><strong>E) BRCA2/Câncer de mama e ovário hereditário:</strong> Associada com risco aumentado para câncer de mama, ovário, próstata e pâncreas, mas o aumento de risco para adenocarcinoma ductal do pâncreas é de magnitude menor que a Síndrome de Peutz-Jeghers.</p><p><strong>Razão da magnitude do risco:</strong></p><p>O gene STK11 atua como umsupressor tumoral, regulando vias de crescimento celular e metabolismo. Mutações nesse genepredisponem a múltiplas neoplasias, com o pâncreas sendo particularmente suscetível devido à resposta da Célula STK11 nas células ductais pancreáticas.</p><p><strong>Implicações clínicas:</strong></p><p>Em pacientes com Síndrome de Peutz-Jeghers, é recomendada vigilânciapancreática com ressonância magnética colangiopancreatográfica (MRCP) e/ou ecoendoscopia a cada 1-2 anos a partir da adolescência tardia ou na terceira década de vida.</p><p><strong>Veredito:</strong> A Síndrome de Peutz-Jeghers (mutação do gene STK11) apresenta o maior aumento de risco relativo para adenocarcinoma ductal do pâncreas, chegando a até 100-150 vezes, sendo portanto a alternativa correta.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancre",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancre_FatoresDeRisco"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Após a cirurgia de Whipple, a principal fonte de morbidade é:",
+      "alternativas": [
+        "fístula biliar;",
+        "fístula da gastro-jejunostomia;",
+        "fístula pancreática;",
+        "íleo paralítico;",
+        "evisceração."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre as complicações mais frequentes e significativas após o procedimento de Whipple (pancreaticoduodenectomia), sendo fundamental para compreender as principais causas de morbidade e mortalidade pós-operatória.</p><p><strong>A resposta correta é C - fístula pancreática.</strong></p><p>A fístula pancreática é a principal fonte de morbidade após a cirurgia de Whipple, ocorrendo em aproximadamente 10-25% dos casos e sendo responsável por complicações subsequentes significativas.</p><p><strong>Compreendendo a pancreaticoduodenectomia:</strong></p><p>O procedimento de Whipple é uma das cirurgias mais complexas da cirurgia abdominal, envolvendo a remoção da cabeça do pâncreas, duodeno, vesícula biliar, parte do estômago e parte do jejuno. A reconstrução inclui três anastomoses: 1) pancreaticojejunostomia; 2) hepaticojejunostomia; 3) gastrojejunostomia.</p><p><strong>Por que a fístula pancreática é a principal complicação:</strong></p><p>A pancreaticojejunostomia é a anastomose mais tecnicamente desafiadora e vulnerável a complicações porque: 1) o pâncreas é um órgão macio e fráge; 2) as características do fluido pancreático (rico em enzimas digestivas) podem digerir a anastomose; 3) múltiplos fatores (consistência pancreática, calibre do ducto, técnica cirúrgica) influenciam a cicatrização.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) fístula biliar:</strong> Complicação importante, mas menos frequente que a fístula pancreática. O risco é reduzido com técnicas de anastomose biliodigestiva bem estabelecidas e uso de drenos de rotina.</p><p><strong>B) fístula da gastro-jejunostomia:</strong> Relativamente rara e mais fácil de ser controlada, pois o estômago tem boa vascularização e as anastomoses gastrintestinais geralmente cicatrizam bem.</p><p><strong>C) fístula pancreática:</strong> CORRETA. A principal causa de morbidade, pode evoluir para peritonite, abscesso intra-abdominal, sepsis e outras complicações graves.</p><p><strong>D) íleo paralítico:</strong> Comum após qualquer cirurgia abdominal, mas é uma complicação transitória e autolimitada, não representando fonte significativa de morbidade na cirurgia de Whipple.</p><p><strong>E) evisceração:</strong> Raramente observada com técnicas modernas de fechamento abdominal e uso profilático de malhas quando necessário.</p><p><strong>Fatores de risco para fístula pancreática:</strong></p><p>1) textura macia do parênquima pancreático; 2) ducto pancreático pequeno (<3mm); 3) perda sanguínea perioperatória elevada; 4) tempo cirúrgico prolongado; 5) experiência do cirurgião.</p><p><strong>Prevenção e manejo:</strong></p><p>Estratégias incluem: 1) técnica cirúrgica meticulosa; 2) uso de drenos de sucção-lavagem; 3) profilaxia com análogos de somatostatina; 4) nutrição enteral precoce.</p><p><strong>Veredito:</strong> A fístula pancreática representa a principal fonte de morbidade após cirurgia de Whipple devido à complexidade técnica da pancreaticojejunostomia e ao potencial destrutivo das secreções pancreáticas, sendo portanto a alternativa correta.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancre",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancre_Diagnostico",
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Uma paciente de 25 anos, hígida, portadora de adenoma hepático de 4,0cm que parou o uso de anticoncepcional há 2 anos e pretende engravidar com a maior brevidade, tem como melhor conduta:",
+      "alternativas": [
+        "ressecção do adenoma após a gestação;",
+        "ressecção do adenoma antes da gestação;",
+        "observação do adenoma durante a gestação sem necessidade de ressecção após a mesma;",
+        "embolização da lesão antes da gestação;",
+        "embolização da lesão após a gestação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre o manejo de adenomas hepáticos em mulheres em idade reprodutiva, especificamente a decisão sobre timing cirúrgico em relação à gestação.</p><p>A paciente é jovem, 25 anos, com adenoma hepático de 4,0cm que suspendeu anticoncepcional há 2 anos. Este contexto é crucial porque adenomas hepáticos são tumores hormônio-dependentes, especialmente sensíveis aos estrogênios.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Aguardar o pós-parto para ressecção é perigoso. Durante a gestação, os níveis hormonais aumentam significativamente, podendo causar crescimento tumoral e sangramento. Adenomas >3cm têm risco aumentado de complicações na gravidez.</p><p>B) <strong>CERTA:</strong> A ressecção antes da gestação é a conduta ideal. Permite abordagem eletiva com menor risco cirúrgico, evita complicações durante a gravidez e elimina o risco de crescimento tumoral relacionado aos hormônios gestacionais.</p><p>C) <strong>ERRADA:</strong> Simples observação durante a gestação é inadequada. Adenomas podem crescer, sangrar ou até se romper, colocando em risco a vida da mãe e do feto.</p><p>D) <strong>ERRADA:</strong> Embolização não é primeira escolha para adenomas. Além de ser procedimento invasivo com complicações próprias, pode comprometer a viabilidade do parênquima hepático futuro.</p><p>E) <strong>ERRADA:</strong> Embolização após a gestação não resolve o problema principal - o risco durante a gravidez.</p><p><strong>Veredito final:</strong> A alternativa B é a correta. O tratamento cirúrgico eletivo antes da concepção é o padrão-ouro para adenomas hepáticos >3cm em mulheres que planejam gestação, segundo as diretrizes brasileiras de hepatologia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosBenignos"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "São contraindicações para hepatectomia como tratamento de metástases hepáticas de tumor colorretal:",
+      "alternativas": [
+        "incapacidade de ressecção completa;",
+        "duas ou mais metástases;",
+        "recidiva com menos de um ano da ressecção do tumor primário;",
+        "CEA superior a 200ng/ml;",
+        "metástase única com mais de 5,0cm."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>A resposta correta é A - incapacidade de ressecção completa.</strong></p><p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre critérios de elegibilidade para hepatectomia em metástases de câncer colorretal. A capacidade de ressecção completa (R0) é o fator prognóstico mais importante.</p><p><strong>Analisando cada alternativa:</strong></p><p>A) <strong>CORRETA:</strong> A impossibilidade de ressecção completa é a contraindicação absoluta principal. Se não é possível remover todas as metástases com margens adequadas, a cirurgia não oferece benefício oncológico e deve ser evitada.</p><p>B) <strong>ERRADA:</strong> O número de metástases não é contraindicação absoluta. Pacientes com múltiplas lesões podem se beneficiar da cirurgia se a ressecção completa for possível. Estudos mostram que até 7-8 metástases podem ser ressecadas com resultados oncológicos adequados.</p><p>C) <strong>ERRADA:</strong> Recidiva <1 ano não é contraindicação absoluta. É um fator de pior prognóstico, mas não impede a cirurgia se a ressecção completa for factível.</p><p>D) <strong>ERRADA:</strong> CEA elevado (>200ng/ml) é fator de pior prognóstico, mas não contraindica cirurgia isoladamente. Deve ser considerado no contexto global, mas ressecção R0 ainda pode ser beneficial.</p><p>E) <strong>ERRADA:</strong> Metástase única grande (>5cm) não é contraindicação. Tamanho isoladamente não impede ressecção, desde que técnica e oncologicamente adequada.</p><p><strong>Raciocínio clínico:</strong> A hepatectomia para metástases colorretais é indicada quando a ressecção completa (R0) é possível. Outros fatores como número, tamanho e tempo de recidiva influenciam prognóstico, mas não são contraindicações absolutas se a remoção completa for factível.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosMalignos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TransplanteHepaticoEHepatectom"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "A causa mais comum de hemobilia é:",
+      "alternativas": [
+        "tumores do fígado e das vias biliares;",
+        "infecção das vias biliares;",
+        "hemangioma das vias biliares;",
+        "trauma iatrogênico do fígado e da árvore biliar;",
+        "hemangioma hepático."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 aborda hemobilia, que é o sangramento para o interior da árvore biliar. O tema é específico e avalia conhecimento sobre etiologias dessas alterações vasculares biliares.</p><p>Hemobilia caracteriza-se por sangramento de origem hepatobiliar que penetra nos ductos biliares, causando tríade de Quincke: dor abdominal, icterícia e hemorragia digestiva alta. As causas são diversas e podem ser traumáticas ou não-traumáticas.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Tumores hepáticos e biliares podem causar hemobilia, mas não são a causa mais comum. Representam cerca de 10-20% dos casos.</p><p>B) <strong>ERRADA:</strong> Infecções biliares como colangite podem causar sangramento, mas são causas infrequentes de hemobilia significativa.</p><p>C) <strong>ERRADA:</strong> Hemangiomas das vias biliares são extremamente raros e não são causa frequente de hemobilia.</p><p>D) <strong>CORRETA:</strong> Trauma iatrogênico é realmente a causa mais comum de hemobilia. Inclui lesões durante biopsias hepáticas, cirurgias hepatobiliares, CPRE e procedimentos percutâneos. Com o aumento dessas intervenções, a frequência grew significativamente.</p><p>E) <strong>ERRADA:</strong> Hemangiomas hepáticos, embora possam sangrar, são tumores raros e não representam a causa mais frequente de hemobilia.</p><p><strong>Veredito final:</strong> A alternativa D é correta. Com a evolução dos procedimentos minimamente invasivos hepatobiliares, o trauma iatrogênico tornou-se a principal causa de hemobilia no mundo ocidental, superando causas traumáticas não-iatrogênicas e neoplásicas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "No ocidente, a maioria dos cálculos biliares é formada por:",
+      "alternativas": [
+        "colesterol exclusivamente;",
+        "cálcio exclusivamente;",
+        "pigmentos biliares;",
+        "lecitina;",
+        "colesterol e cálcio."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre composição de cálculos biliares, especificamente as diferenças epidemiológicas entre Oriente e Ocidente. A composição varia geograficamente por fatores dietéticos e metabólicos distintos.</p><p>No Brasil e países ocidentais, a prevalência de colelitíase é alta, estimada em 10-20% da população adulta. A composição dos cálculos reflete diretamente os padrões dietéticos e metabólicos regionais.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Cálculos exclusivamente de colesterol não são a regra no ocidente. Embora o colesterol seja o componente majoritário na maioria dos casos, outros elementos estão sempre presentes.</p><p>B) <strong>ERRADA:</strong> Cálculos exclusivamente de cálcio não são característicos do ocidente. São mais comuns em determinadas patologias específicas e regiões específicas.</p><p>C) <strong>ERRADA:</strong> Pigmentos biliares são mais frequentes no oriente devido a doenças parasitárias (como ascaridíase) e anemias hemolíticas mais prevalentes nessas regiões.</p><p>D) <strong>ERRADA:</strong> Lecitina não forma cálculos por si só. É um componente da bile que pode influenciar a solubilização do colesterol, mas não é material formador de cálculos.</p><p>E) <strong>CORRETA:</strong> A combinação colesterol e cálcio é característica dos cálculos ocidentais. Estes cálculos são principalmente de colesterol (80-90%), mas frequentemente têm núcleo de sais de cálcio e podem ter camadas de cálcio ao redor. A presença de cálcio é fundamental na formação e sustentação estrutural do cálculo.</p><p><strong>Veredito final:</strong> A alternativa E é correta. No ocidente, os cálculos biliares são formados predominantemente por colesterol com componente variável de cálcio, refletindo dietas ricas em gorduras e distúrbios metabólicos característicos dessas populações.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "A primeira opção para o tratamento de cálculos residuais em via biliar principal após colecistectomia videolaparoscópica é:",
+      "alternativas": [
+        "remoção percutânea via radiologia intervencionista;",
+        "remoção endoscópica via esfincterotomia;",
+        "remoção por cirurgia videolaparoscópica;",
+        "remoção por cirurgia aberta;",
+        "litotripsia extra-corpórea."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 aborda o manejo de complicações pós-colecistectomia videolaparoscópica, especificamente o tratamento de cálculos residuais na via biliar principal. É um cenário clínico comum que requer abordagem padronizada.</p><p>Após colecistectomia, cálculos residuais na via biliar principal (CBDP) ocorrem em 2-15% dos casos. O diagnóstico é confirmado por colangiografia e o tratamento deve ser mínimamente invasivo como primeira opção.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Remoção percutânea é procedimento invasivo, com riscos de sangramento, perfuração e.coleta de biloma. É reservado para casos quando a abordagem endoscópica falha.</p><p>B) <strong>CORRETA:</strong> A abordagem endoscópica com esfincterotomia e extração de cálculos é a primeira escolha. É menos invasiva, com alta taxa de sucesso (85-95%) e baixa morbidade. Permite remoção de cálculos até 1,5cm de forma segura.</p><p>C) <strong>ERRADA:</strong> Cirurgia videolaparoscópica para via biliar é mais invasiva que a abordagem endoscópica e reserva-se para casos de falha ou contraindicação da CPRE.</p><p>D) <strong>ERRADA:</strong> Cirurgia aberta tem indicação muito restrita atualmente, apenas quando abordagem endoscópica e laparoscópica falharam. Alta morbidade comparada às alternativas minimamente invasivas.</p><p>E) <strong>ERRADA:</strong> Litotripsia extracorpórea é procedimentos de segunda linha, usado quando cálculos são muito grandes (>1,5cm) e não podem ser extraídos após esfincterotomia. É menos eficiente e mais caro que extração endoscópica simples.</p><p><strong>Veredito final:</strong> A alternativa B é a correta. A extração endoscópica via esfincterotomia é o padrão-ouro para tratamento inicial de cálculos residuais da via biliar pós-colecistectomia, seguindo algoritmos de sociedades brasileiras de endoscopia digestiva e colangiopancreatografia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Em pacientes críticos e instáveis que desenvolvem colecistite alitiásica a melhor abordagem consiste em:",
+      "alternativas": [
+        "colecistostomia percutânea guiada por radiointervenção;",
+        "colecistectomia videolaparoscópica;",
+        "colecistectomia aberta;",
+        "antibioticoterapia venosa exclusiva;",
+        "colecisto-jejunostomia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IFF avalia o conhecimento sobre manejo de colecistite alitiásica em pacientes críticos, um cenário clínico desafiador que requer abordagem cirúrgica de baixo impacto.</p><p><strong>A resposta correta é A - colecistostomia percutânea guiada por radiointervenção.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> A colecistostomia percutânea é realmente a melhor opção para pacientes críticos e instáveis. Este procedimento é minimamente invasivo, realizado sob anestesia local, permite drenagem biliar descompressiva imediata, e tem baixa taxa de complicações. A radiointervenção garante posicionamento preciso e seguro do cateter de drenagem.</p><p><strong>Alternativa B:</strong> A colecistectomia videolaparoscópica, embora seja a técnica de escolha em pacientes estáveis, representa risco muito alto em pacientes críticos devido à necessidade de pneumoperitônio, manipulação visceral e anestesia geral prolongada. A mortalidade aumentaria significativamente.</p><p><strong>Alternativa C:</strong> A colecistectomia aberta é ainda mais agressiva que a videolaparoscópica, requer grande incisão, manipulação hepática significativa e tempo cirúrgico prolongado. Absolutamente contraindicada em pacientes instáveis.</p><p><strong>Alternativa D:</strong> A antibioticoterapia isolada é insuficiente na colecistite alitiásica, especialmente em pacientes críticos. Embora os antibióticos sejam importantes no controle da infecção, a descompressão da vesícula é fundamental para evitar complicação grave.</p><p><strong>Alternativa E:</strong> A colecisto-jejunostomia é um procedimento complexo indicado para malignidade ou obstrução distal não resolvível, não sendo adequado para colecistite alitiásica em paciente crítico.</p><p><strong>Veredito:</strong> Em pacientes críticos com colecistite alitiásica, a colecistostomia percutânea é o gold standard por ser segura, eficaz e menos invasiva, permitindo estabilização inicial com possibilidade de correção definitiva quando o paciente melhorar.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColecistiteAguda",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Na classificação de Todani, o cisto coledociano mais comum, que envolve apenas a árvore biliar extra hepática e que se apresenta como uma dilatação fusiforme é denominado:",
+      "alternativas": [
+        "Tipo I;",
+        "Tipo II;",
+        "Tipo III;",
+        "Tipo IV;",
+        "Tipo V."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão explora o conhecimento sobre a classificação de Todani para cistos de colédoco, um sistema fundamental para definir o tipo anatômico e orientar o tratamento adequado.</p><p><strong>A resposta correta é A - Tipo I.</strong></p><p>Vamos detalhar a classificação de Todani:</p><p><strong>Alternativa A:</strong> O Tipo I é realmente o mais comum e corresponde à dilatação fusiforme da árvore biliar extra-hepática. Caracteriza-se por dilatação sacular ou fusiforme envolvendo todo o ducto hepático comum ou colédoco, sem envolvimento de ductos intra-hepáticos. Esta é a apresentação clássica encontrada na maioria dos casos.</p><p><strong>Alternativa B:</strong> O Tipo II corresponde a um divertículo supraduodenal da árvore biliar extra-hepática, diferente de uma dilatação fusiforme. É muito mais raro que o Tipo I.</p><p><strong>Alternativa C:</strong> O Tipo III, também conhecido como cisto de Colédoco, corresponde a uma dilatação intraduodenal da porção terminal do colédoco, tendo formato esférico e localização intra-duodenal.</p><p><strong>Alternativa D:</strong> O Tipo IV é dividido em IVa (dilatação de ductos extra-hepáticos + intra-hepáticos) e IVb (múltiplas dilatações apenas extra-hepáticas). Não corresponde a uma dilatação fusiforme simples.</p><p><strong>Alternativa E:</strong> O Tipo V, ou doença de Caroli, é caracterizado por dilatação segmentar de ductos intra-hepáticos, podendo ser associada ou não à fibrose hepática. Não envolve a árvore biliar extra-hepática.</p><p><strong>Veredito:</strong> O Tipo I da classificação de Todani representa a dilatação fusiforme da árvore biliar extra-hepática, sendo o mais comum clinicamente e o que melhor se adequa à descrição da questão.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_CistosDaViaBiliar"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "A maioria dos carcinomas de vesícula tem origem na regiões anatômicas denominadas:",
+      "alternativas": [
+        "corpo e infundíbulo;",
+        "infundíbulo e ducto cístico;",
+        "ducto cístico e corpo;",
+        "fundo e corpo;",
+        "corpo e ducto cístico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre a anatomia patológica do carcinoma de vesícula biliar, especificamente sobre as regiões de maior frequência tumoral, dados importantes para compreensão da biologia tumoral e estratégias diagnósticas.</p><p><strong>A resposta correta é D - fundo e corpo.</strong></p><p>Vamos analisar as alternativas baseando-se na anatomia vesicular:</p><p><strong>Alternativa A:</strong> Corpo e infundíbulo não representam a região de maior incidência de carcinomas de vesícula. O infundíbulo é uma região menos frequente, correspondendo à porção que se comunica com o ducto cístico.</p><p><strong>Alternativa B:</strong> Infundíbulo e ducto cístico é uma combinação incomum para origem tumoral. O ducto cístico raramente é sede de carcinomas primários.</p><p><strong>Alternativa C:</strong> Ducto cístico e corpo é uma associação que não representa a topografia mais frequente de carcinomas vesiculares.</p><p><strong>Alternativa D:</strong> Fundo e corpo da vesícula correspondem à região anatômica mais comumente envolvida em carcinomas de vesícula biliar. O fundo (porção distal) e o corpo (porção intermediária) representam cerca de 75% dos casos. Esta região é mais suscetível devido a fatores como estase biliar, irritação crônica e exposição a carcinógenos biliares concentrados.</p><p><strong>Alternativa E:</strong> Corpo e ducto cístico não constitui a região de maior frequência tumoral. O ducto cístico é uma estrutura de menor calibre e menos exposta aos fatores de risco.</p><p><strong>Veredito:</strong> A maior parte dos carcinomas de vesícula origina-se na região do fundo e corpo, constituindo a base para exames de imagem focados nessas áreas e explica o prognóstico reservado devido à detecção tardia em região muitas vezes assintomática.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_CancerDaVesiculaBiliar",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Na pancreatite aguda severa, a principal complicação da necrose pancreática é:",
+      "alternativas": [
+        "infecção;",
+        "hemorragia;",
+        "fístula;",
+        "pseudocisto;",
+        "diabetes."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda complicações da pancreatite aguda severa, especificamente focando nas consequências da necrose pancreática, um conhecimento fundamental para manejo adequado desta condição grave.</p><p><strong>A resposta correta é A - infecção.</strong></p><p>Vamos analisar cada complicação listada:</p><p><strong>Alternativa A:</strong> A infecção é realmente a principal complicação da necrose pancreática e representa a principal causa de morte tardia na pancreatite aguda severa. A necrose pancreática Creates um ambiente propício para colonização bacteriana, especialmente por bactérias gram-negativas e anaeróbios. A infecção ocorre em aproximadamente 30-70% dos casos de necrose pancreática e aumenta significativamente a mortalidade.</p><p><strong>Alternativa B:</strong> A hemorragia, embora possa ocorrer na pancreatite severa, não é a principal complicação da necrose pancreática. Pode resultar da erosão vascular por enzimas pancreáticas, mas sua frequência é menor que a infecção.</p><p><strong>Alternativa C:</strong> Fístulas podem desenvolver-se como complicação da pancreatite severa, mas não são a principal complicação da necrose. Podem ser pancreáticas, entéricas ou bilio-digestivas.</p><p><strong>Alternativa D:</strong> Pseudocistos são complicações mais frequentes na pancreatite crônica ou na fase tardia da pancreatite aguda, mas não constituem a principal complicação da necrose pancreática aguda.</p><p><strong>Alternativa E:</strong> Diabetes mellitus pode desenvolver-se como complicação a longo prazo da pancreatite crônica, mas não é a principal complicação da necrose pancreática aguda.</p><p><strong>Veredito:</strong> A infecção da necrose pancreática representa a complicação mais grave e frequente, determinando prognóstico e necessitando de tratamento agressivo com antibiotics e, frequentemente, drenagem minimamente invasiva ou desbridamento.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Qual dos critérios abaixo é considerado como de ´´alto risco´´ para o desenvolvimento de adenocarcinoma em portadores de Neoplasia Papilar Mucinosa Intraductal do Pâncreas?",
+      "alternativas": [
+        "Nódulo mural que não fixa contraste.",
+        "Parede cística que fixa contraste, espessada.",
+        "Ducto principal > 1 cm.",
+        "Mudança abrupta de calibre do canal principal com atrofia a montante.",
+        "Cisto com três centímetros de diâmetro."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre critérios de risco para transformação maligna em Neoplasia Papilar Mucinosa Intraductal (IPMN) do pâncreas, um tema crucial para estratificação de risco e decisão terapêutica em pancreatologia.</p><p><strong>A resposta correta é C - ducto principal > 1 cm.</strong></p><p>Vamos analisar cada critério apresentado:</p><p><strong>Alternativa A:</strong> Nódulo mural que não fixa contraste não é considerado critério de alto risco. Na verdade, nódulos que fixam contraste (enhancement) são preocupantes. A ausência de realce pode indicar fibrose ou material mucoso, não necessariamente malignidade.</p><p><strong>Alternativa B:</strong> Parede cística que fixa contraste, espessada, embora possa ser sugestiva de malignidade, não é o principal critério de alto risco para adenocarcinoma. Espessamento de parede pode ser devido a inflamação ou muco espesso.</p><p><strong>Alternativa C:</strong> Ducto principal > 1 cm é realmente o principal critério de alto risco para adenocarcinoma em IPMN. Conforme as diretrizes internacionais, dilatação do ducto pancreático principal ≥ 10 mm indica alto risco de malignidade e geralmente indica necessidade de ressecção quirúrgica urgente.</p><p><strong>Alternativa D:</strong> Mudança abrupta de calibre do canal principal com atrofia a montante é critério de alto risco, mas não é o principal. É mais indicativo de obstrução do ducto por tumor do que de IPMN propriamente dito.</p><p><strong>Alternativa E:</strong> Cisto com três centímetros de diâmetro, por si só, não é critério de alto risco. Tamanho > 3 cm pode ser critério de alarme quando associado a outros fatores, mas isoladamente não indica alto risco de malignidade.</p><p><strong>Veredito:</strong> A dilatação do ducto pancreático principal > 1 cm representa o principal fator de alto risco para adenocarcinoma em IPMN, determinando a necessidade de ressecção cirúrgica devido ao alto risco de transformação maligna.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas_NeoplasiasCisticasDoPancreas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "No traumatismo pancreático o exame mais confiável para demonstrar a integridade do ducto pancreático principal é:",
+      "alternativas": [
+        "tomografia computadorizada;",
+        "CPRE;",
+        "ressonância magnética;",
+        "cintigrafia;",
+        "ccoendoscopia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 avalia seu conhecimento sobre o diagnóstico de lesões do ducto pancreático em contexto de traumatismo. O trauma pancreático representa um desafio diagnóstico devido à anatomia retroperitoneal do órgão e à possibilidade de lesões ductais que não são evidentes em exames iniciais.</p><p>O ducto pancreático principal (Wirsung) é a estrutura chave na integridade pancreática. Lesões ductais determinam a gravidade do trauma e orientam a conduta terapêutica. Por isso, a identificação precisa da integridade ductal é fundamental.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>Tomografia computadorizada</strong> - Embora seja o exame inicial preferido no trauma abdominal, apresenta limitações na avaliação ductal. Pode mostrar contusões ou hematomas, mas não avalia diretamente a integridade do ducto.</p><p>B) <strong>CPRE (Colangiopancreatografia Retrógrada Endoscópica)</strong> - É o exame mais confiável porque permite visualização direta do ducto pancreático, identificação de extravasamentos de contraste e, terapêuticamente, pode promover a drenagem ou stentagem ductal. É considerado padrão-ouro para avaliação ductal.</p><p>C) <strong>Ressonância magnética</strong> - Pode avaliar o ducto pancreático (MRCP), mas é menos sensível que a CPRE para identificação de pequenas lesões ductais e extravasamentos, especialmente em contexto agudo.</p><p>D) <strong>Cintigrafia</strong> - Não tem aplicação na avaliação do ducto pancreático. É útil para avaliar perfusão e função renal.</p><p>E) <strong>Echoendoscopia</strong> - Pode avaliar o ducto, mas é operador-dependente e menos disponível em emergências. Não é superior à CPRE para avaliação ductal.</p><p><strong>Resposta: B - CPRE.</strong> É o único método que combina avaliação diagnóstica precisa com possibilidade terapêutica imediata em casos de lesão ductal identificada.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Em relação aos abscessos esplênicos é CORRETO afirmar que:",
+      "alternativas": [
+        "coleções multiloculares podem ser tratadas por drenagem percutânea +antibioticoterapia;",
+        "coleções uni e multiloculares devem sempre ser tratadas por esplenectomia;",
+        "coleções multiloculares devem ser tratadas com antibioticoterapia exclusiva;",
+        "coleções uniloculares podem ser tratadas por drenagem percutânea + antibioticoterapia;",
+        "coleções uniloculares devem ser tratadas com antibioticoterapia exclusiva."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o tratamento de abscessos esplênicos. Os abscessos esplênicos são infecções raras que podem se apresentar como coleções uni ou multiloculares, e a escolha do tratamento depende das características morfológicas da coleção.</p><p>A diferenciação entre coleções uni e multiloculares é crucial, pois determina a abordagem terapêutica ideal. Coleções uniloculares tendem a ter melhor resposta à drenagem percutânea, enquanto as multiloculares apresentam maior complexidade e risco de falha terapêutica.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>Coleções multiloculares - drenagem percutânea + antibiótico</strong> - Incorreta. Coleções multiloculares não respondem adequadamente à drenagem percutânea devido à presença de septações que impedem a drenagem completa.</p><p>B) <strong>Coleções uni e multiloculares - sempre esplenectomia</strong> - Incorreta. A esplenectomia não é sempre necessária. Procedimentos menos invasivos podem ser eficazes em casos selecionados.</p><p>C) <strong>Coleções multiloculares - antibiótico exclusivo</strong> - Incorreta. Antibioticoterapia isolada é insuficiente para coleções multiloculares, que requerem drenagem cirúrgica.</p><p>D) <strong>Coleções uniloculares - drenagem percutânea + antibiótico</strong> - Correta. Coleções uniloculares respondem muito bem à drenagem percutânea guiada por imagem associada à antibioticoterapia. É uma abordagem minimamente invasiva e eficaz.</p><p>E) <strong>Coleções uniloculares - antibiótico exclusivo</strong> - Incorreta. Antibioticoterapia isolada tem altas taxas de falha, especialmente em coleções maiores que 3-5 cm.</p><p><strong>Resposta: D - Coleções uniloculares podem ser tratadas por drenagem percutânea + antibioticoterapia.</strong> Esta abordagem tem taxa de sucesso superior a 85% e preserva a função esplênica quando possível.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "A imunização profilática em pacientes esplenectomizados deve ter a seguinte abrangência de vacinas:",
+      "alternativas": [
+        "pneumocócica polivalente, H. Influenza e tipo b conjugada e meningocócicapolissacarídica;",
+        "pneumocócica polivalente e meningocócica polissacarídica;",
+        "pneumocócica polivalente, H. Influenza e tipo b conjugada;",
+        "H. Influenza e tipo b conjugada exclusivamente;",
+        "meningocócica polissacarídica exclusivamente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IFF 2022 aborda um tema fundamental na prevenção de infecções em pacientes esplenectomizados. A ausência do baço causa imunodeficiência específica contra bacterias capsuladas, aumentando significativamente o risco de infecções graves, especialmente pelo pneumococo.</p><p>O esquema vacinal pós-esplenectomia é parte essencial do manejo perioperatório. A vacinação deve ser idealmente realizada 2 semanas antes da esplenectomia, ou logo após a cirurgia, se não foi possível anteriormente.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>Pneumocócica polivalente, H. Influenza tipo b conjugada e meningocócica polissacarídica</strong> - Correta. Esta é a cobertura vacinal completa recomendada. O pneumococo é o patógeno mais comum em infecções pós-esplenectomia, o H. influenzae tipo b é uma bacteria capsulada importante, e a meningocócica confere proteção contra meningite e sepse meningocócica.</p><p>B) <strong>Pneumocócica polivalente e meningocócica polissacarídica</strong> - Incorreta. Faltando a vacina contra H. influenzae tipo b, que é essencial para prevenir infecções respiratórias graves.</p><p>C) <strong>Pneumocócica polivalente e H. Influenza tipo b conjugada</strong> - Incorreta. Falta a proteção contra meningocócica, importante para prevenção de meningite e sepse.</p><p>D) <strong>H. Influenza tipo b conjugada exclusivamente</strong> - Incorreta. Cobertura insuficiente. Faltam as vacinas pneumocócica e meningocócica, que são as mais importantes.</p><p>E) <strong>Meningocócica polissacarídica exclusivamente</strong> - Incorreta. Cobertura inadequada. É necessário o esquema completo com todas as três vacinas.</p><p><strong>Resposta: A - pneumocócica polivalente, H. Influenza tipo b conjugada e meningocócica polissacarídica.</strong> Este esquema completo é recomendado pelas sociedades médicas brasileiras e internacionais para todos os pacientes esplenectomizados.",
+      "filterIds": [
+        "Cirurgia",
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Vacinas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_ImunossuprimidosNaohiv"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Metástases pulmonares isoladas sem evidências de outro sítio de doença após ressecção do sítio primário, podem ser tratadas com sucesso por ressecção cirúrgica. O tipo histológico associado a melhor prognóstico é:",
+      "alternativas": [
+        "adenocarcinoma gástrico;",
+        "tumor neuroendócrino;",
+        "linfoma de células do manto;",
+        "adenocarcinoma do esôfago;",
+        "tumor de células germinativas."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre metástases pulmonares isoladas e prognóstico histológico. A ressecção cirúrgica de metástases pulmonares isoladas é uma estratégia terapêutica válida em casos selecionados, com o objetivo de controle local da doença e potencial de cura em alguns tumores.</p><p>O prognóstico após ressecção de metástases pulmonares varia significativamente conforme o tipo histológico do tumor primário. Alguns tumores têm comportamento biológico mais favorável com taxas de sobrevida superiores após ressecção metastática.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>Adenocarcinoma gástrico</strong> - Incorreta. Metástases pulmonares de adenocarcinoma gástrico geralmente indicam doença disseminada, com prognóstico reservado mesmo após ressecção.</p><p>B) <strong>Tumor neuroendócrino</strong> - Incorreta. Tumores neuroendócrinos podem apresentar metástases pulmonares, mas o comportamento é variável e o prognóstico não é o mais favorável entre as opções.</p><p>C) <strong>Linfoma de células do manto</strong> - Incorreta. Linfomas são tratados sistematicamente com quimioterapia, e metástases pulmonares indicam doença avançada com prognóstico reservado.</p><p>D) <strong>Adenocarcinoma do esôfago</strong> - Incorreta. Similar ao adenocarcinoma gástrico, apresenta comportamento agressivo com metástases pulmonares indicando doença disseminada.</p><p>E) <strong>Tumor de células germinativas</strong> - Correta. Tumores de células germinativas, especialmente seminomas e teratomas, têm comportamento biológico favorável. Mesmo com metástases pulmonares isoladas, apresentam excelente resposta à ressecção cirúrgica, com taxas de sobrevida em 5 anos superiores a 70% em casos selecionados.</p><p><strong>Resposta: E - tumor de células germinativas.</strong> Estes tumores têm crescimento relativamente lento, respondem bem ao tratamento cirúrgico e mantêm boa sobrevida quando as metástases são isoladas e ressecáveis.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Em relação aos aneurismas de aorta, qual dos fatores abaixo se relaciona simultaneamente com maior incidência de (1) desenvolvimento, (2) expansão e (3) ruptura:",
+      "alternativas": [
+        "tabagismo;",
+        "hipercolesterolemia;",
+        "pressão arterial média elevada;",
+        "gênero feminino;",
+        "gênero masculino."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda fatores de risco para aneurismas de aorta, especificamente aquele que se relaciona simultaneamente com desenvolvimento, expansão e ruptura. A compreensão desses fatores é fundamental para o manejo clínico e o timing de intervenção cirúrgica.</p><p>Aneurismas de aorta abdominal são condições multifatoriais onde fatores genéticos, ambientais e comportamentais contribuem para a patogênese. Alguns fatores exercem influência em múltiplas fases da progressão aneurismática.</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>Tabagismo</strong> - Correta. O tabaco é o fator de risco mais importante que atua em todas as fases: promueve o desenvolvimento através de inflamação crônica e degradação da matriz extracelular; acelera a expansão por causar estresse oxidativo contínuo; e aumenta o risco de ruptura através do enfraquecimento da parede aneurismática. Estudos demonstram dose-resposta clara entre consumo de tabaco e crescimento aneurismático.</p><p>B) <strong>Hipercolesterolemia</strong> - Incorreta. Embora contribua para aterosclerose, não tem relação direta com expansão aneurismática. A aterosclerose pode coexistir, mas não é o principal fator de progressão.</p><p>C) <strong>Pressão arterial média elevada</strong> - Incorreta. Hipertensão contribui para desenvolvimento e pode acelerar expansão, mas não é o principal fator associado aos três aspectos simultaneamente.</p><p>D) <strong>Gênero feminino</strong> - Incorreta. Na verdade, aneurismas de aorta são mais comuns em homens, e quando ocorrem em mulheres, têm maior risco de ruptura, mas não se relacionam com maior incidência de desenvolvimento.</p><p>E) <strong>Gênero masculino</strong> - Incorreta. Embora aneurismas sejam mais comuns em homens, o gênero por si só não influencia a velocidade de expansão ou o risco de ruptura de forma independente.</p><p><strong>Resposta: A - tabagismo.</strong> É o único fator que se correlaciona simultaneamente com maior incidência de desenvolvimento, maior velocidade de expansão e maior risco de ruptura aneurismática.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas"
+      ],
+      "tags": [
+        "IFF2022R3CG",
+        "IFF",
+        "R3CG",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762676139755-49"
+    }
+  ]
+}

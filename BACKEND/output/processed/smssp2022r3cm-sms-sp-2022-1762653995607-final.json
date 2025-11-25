@@ -1,0 +1,1719 @@
+{
+  "metadata": {
+    "examName": "SMSSP2022R3CM (SMS SP 2022)",
+    "examYear": 2022,
+    "url": "source://389",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T02:06:35.607Z",
+    "jobId": "batch-1762651904958-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "775607df-fa5f-4ade-9515-a1c05c8946a2"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Considere um paciente de 63 anos de idade, hipertenso e diabético, em uso de enalapril 10mg/dia e metformina 500 mg, 2 comprimidos, após o jantar. Ao exame físico, seus sinais eram PA = 140/90 mmHg, FC = 100 bpm, FR = 20 irpm, SatO2 = 98% e afebril. Apresenta mixedema pré-tibial bilateral e glândula tireoide aumentada de tamanho, móvel, elástica, indolor e com a presença de um nódulo de 2,5 cm em 1/3 inferior do lobo direito. Não foram palpadas linfonodomegalias. O paciente realizou exame de sangue, com o resultado TSH = 0,38 (entre VR = 0,48 a 5,60 mUI/mL) e T4L = 1,9 (entre VR = 0,7 a 1,8 ng/dL). No que ser refere a esse caso clínico e com base nos conhecimentos médicos correlatos, assinale a alternativa que apresenta o diagnóstico e a melhor conduta para o caso.",
+      "alternativas": [
+        "Diagnóstico de hipotireoidismo central e conduta de solicitar USG de tireoide e iniciar reposição de levotiroxina.",
+        "Diagnóstico de hipertireoidismo central e conduta de solicitar cintilografia de tireoide e punção aspirativa com agulha fina (PAAF) do nódulo.",
+        "Diagnóstico de hipotireoidismo primário e conduta de solicitar cintilografia, USG de tireoide e iniciar a tionamida.",
+        "Diagnóstico de hipertireoidismo e conduta de solicitar USG e cintilografia de tireoide.",
+        "Diagnóstico de hipotireoidismo subclínico e conduta de solicitar PAAF da tireoide e iniciar corticoterapia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2022 avalia conhecimento em tireoide, especificamente na interpretação de exames laboratoriais e condutas adequadas.</strong> O candidato deve identificar o diagnóstico correto baseado no quadro clínico e laboratorial apresentado.</p><p><strong>Cenário do caso:</strong> Paciente de 63 anos, hipertenso e diabético, com mixedema pré-tibial bilateral, bócio e nódulo tireoidiano. O achado laboratorial crucial é TSH = 0,38 mUI/mL (baixo) e T4L = 1,9 ng/dL (levemente elevado).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Hipotireoidismo central:</strong> INCORRETA. O hipotireoidismo central caracteriza-se por TSH baixo ou normal e T4 baixo. Aqui temos T4 elevado, excluindo esta hipótese.</p><p><strong>B) Hipertireoidismo central:</strong> INCORRETA. No hipertireoidismo central, há produção de TSH biologicamente inativo por adenoma hipofisário. Contudo, o TSH está baixo (< 0,48), não elevado, descartando esta possibilidade.</p><p><strong>C) Hipotireoidismo primário:</strong> INCORRETA. Esta condição apresenta TSH elevado e T4 baixo, exatamente o oposto do encontrado no caso.</p><p><strong>D) Hipertireoidismo:</strong> CORRETA. Apesar do TSH baixo, o T4 elevado confirma hipertireoidismo. Esta é uma situação de &quot;síndrome do TSH inapropriadamente normal/baixo&quot;, onde há tireotoxicose primária com supressão do TSH. O mixedema pré-tibial sugere doença de Graves. <strong>A conduta de solicitar USG e cintilografia é adequada</strong> para avaliar a estrutura tireoidiana e função (uptake de iodo).</p><p><strong>E) Hipotireoidismo subclínico:</strong> INCORRETA. Esta condição apresenta TSH elevado com T4 normal. Aquí temos T4 elevado, excluindo esta hipótese.</p><p><strong>Veredito final:</strong> <strong>Alternativa D é a correta.</strong> O paciente apresenta tireotoxicose (hipertireoidismo) com supressão do TSH, e a investigação deve incluir USG e cintilografia de tireoide para avaliação estrutural e funcional da glândula.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_TireoideTireotoxicose"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Uma adolescente de 13 anos de idade comparece a um ambulatório, referindo presença de nódulo tireoidiano de aparecimento recente, indolor à palpação e móvel à deglutição. Ao exame de ecografia, observaram-se nódulo de limites imprecisos e calcificações finas com cerca de 4 cm de diâmetro. Relata que teve linfoma na infância, curada após radioterapia. Com base nesse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "A história pregressa de radioterapia aumenta o risco de malignidade para os nódulos tireoidianos",
+        "A punção aspirativa com agulha fina (PAAF) não deve ser indicada, pois não consegue diferenciar lesões foliculares benignas de malignas.",
+        "A adolescente pode apresentar um bócio endêmico.",
+        "O carcinoma papilar desenvolve metástases frequentes para pulmões e ossos.",
+        "Nódulos benignos são muito frequentes nessa idade, e cirurgia não deve ser recomendada nesse caso."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2022 explora fatores de risco para malignidade em nódulos tireoidianos, especificamente em pacientes com história de exposição à radiação.</strong> O examinador avalia o conhecimento sobre epidemiologia do câncer de tireoide e condutas diagnósticas adequadas.</p><p><strong>Cenário clínico:</strong> Adolescente de 13 anos com nódulo tireoidiano de 4 cm, de aparecimento recente, com características ultrassônicas suspeitas (limites imprecisos, calcificações finas). História pregressa importante: linfoma na infância tratado com radioterapia.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) História de radioterapia aumenta risco de malignidade:</strong> CORRETA. <strong>Esta é a resposta correta.</strong> A exposição prévia à radiação ionizante é um fator de risco estabelecido para carcinoma tireoidiano, especialmente carcinoma papilífero. Pacientes irradiados na infância/adolescência têm risco significativamente aumentado de desenvolver câncer de tireoide.</p><p><strong>B) PAAF não deve ser indicada:</strong> INCORRETA. A PAAF é fundamental na avaliação de nódulos tireoidianos, mesmo que não diferencie claramente entre carcinoma folicular e adenoma folicular. Para nódulos > 1 cm em pacientes de alto risco (como este caso), a PAAF é mandatória.</p><p><strong>C) Bócio endêmico:</strong> INCORRETA. O bócio endêmico está relacionado à deficiência de iodo, não à história de radioterapia. Além disso, a paciente é adolescente com nódulo único, não bócio difuso.</p><p><strong>D) Carcinoma papilar metastatiza para pulmão e ossos:</strong> INCORRETA. Embora metastatize para linfonodos regionais frequentemente, metástases à distância (pulmão, ossos) são menos comuns e geralmente associadas a doença avançada ou tipos histológicos agressivos.</p><p><strong>E) Cirurgia não recomendada:</strong> INCORRETA. Em adolescentes com nódulos grandes, Ultrassom suspeito e história de radiação, a conduta cirúrgica deve ser fortemente considerada, especialmente após PAAF confirmar malignidade.</p><p><strong>Veredito final:</strong> <strong>Alternativa A é a correta.</strong> A história de radioterapia na infância aumenta significativamente o risco de malignidade em nódulos tireoidianos, justificando investigação mais agressiva.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_EtiologiaEEpidemiologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Um paciente de 48 anos de idade comparece para avaliação clínica de rotina, assintomático e com glicemia de jejum de 115 mg/dL. É solicitado um teste oral de tolerância à glicose, com 75 g de dextrosol. O paciente retorna para mostrar o resultado do exame, que indica glicemia pós-sobrecarga oral de glicose de 186 mg/dL. A respeito desse paciente, assinale a alternativa correta.",
+      "alternativas": [
+        "Trata-se de um paciente com diabetes mellitus tipo II.",
+        "Trata-se de um paciente com intolerância oral à glicose.",
+        "Trata-se de um paciente com diabetes mellitus tipo I.",
+        "O tratamento envolve uso de hipoglicemiantes orais e insulinoterapia.",
+        "Medidas comportamentais, como alimentação adequada e atividade física, não estão indicadas nessa fase da doença."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2022 avalia o conhecimento sobre critérios diagnósticos de diabetes mellitus e pré-diabetes, baseado em valores de teste oral de tolerância à glicose (TOTG).</strong> O candidato deve conhecer os pontos de corte atuais e classificação adequada do paciente.</p><p><strong>Cenário do caso:</strong> Paciente de 48 anos, assintomático, com glicemia de jejum de 115 mg/dL. Realizou TOTG com 75g, resultando em glicemia pós-sobrecarga de 186 mg/dL.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Diabetes mellitus tipo II:</strong> INCORRETA. Para diagnóstico de diabetes via TOTG, são necessários valores ≥ 200 mg/dL na glicemia de 2 horas. O valor de 186 mg/dL está abaixo deste ponto de corte.</p><p><strong>B) Intolerância oral à glicose:</strong> CORRETA. <strong>Esta é a resposta correta.</strong> A intolerância à glicose (ou pré-diabetes) é diagnosticada quando a glicemia de 2 horas no TOTG está entre 140-199 mg/dL. O valor de 186 mg/dL situa-se nesta faixa.</p><p><strong>C) Diabetes mellitus tipo I:</strong> INCORRETA. O DM1 é mais comum em jovens, com início abrupto e sintomas. Além disso, o diagnóstico não é estabelecido por este único teste.</p><p><strong>D) Tratamento com hipoglicemiantes e insulina:</strong> INCORRETA. Na fase de pré-diabetes/intolerância, o tratamento inicial é medidas comportamentais (dieta e exercícios). Medicamentoso não está indicado nesta fase.</p><p><strong>E) Medidas comportamentais não indicadas:</strong> INCORRETA. O oposto é verdadeiro. Na fase de pré-diabetes, as medidas comportamentais são fundamentais e podem prevenir ou retardar a progressão para diabetes.</p><p><strong>Veredito final:</strong> <strong>Alternativa B é a correta.</strong> O paciente apresenta intolerância à glicose (pré-diabetes) com glicemia de 2 horas de 186 mg/dL, e deve receber orientações para medidas comportamentais (dieta e exercícios físicos).",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Com relação às drogas orais no tratamento da diabetes mellitus, assinale a alternativa correta.",
+      "alternativas": [
+        "As sulfonilureias diminuem a produção pancreática de glicose e agem na via da DPP-IV, aumentando o GLP-1 circulantes.",
+        "As biguanidas não possuem efeitos colaterais, como desconforto abdominal e diarreia. Nesse grupo, o que mais gera preocupação é a hipoglicemia grave e a refratária.",
+        "A insulina de gludeca possui ação ultrarrápida e é usada para redução do pico glicêmico pós-prandial.",
+        "Os inibidores da SGLT2 possuem efeito glicosúrico por meio da inibição da recaptação de glicose nos rins (agem no cotransportador sódio-glicose 2). E são adequados para os pacientes com DM2 obesos e hipertensos.",
+        "A metformina aumenta a produção de glicose no fígado e diminui a absorção renal de glicose."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2022 avalia conhecimento farmacológico sobre medicamentos orais utilizados no tratamento do diabetes mellitus tipo 2, incluindo mecanismos de ação e indicações clínicas.</strong> O candidato deve dominar as características de cada classe de antidiabéticos.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Sulfonilureias:</strong> INCORRETA. As sulfonilureias estimulam a secreção de insulina pelas células beta pancreáticas (não diminuem a produção). Agem em canais de potássio dependentes de ATP, não na via DPP-IV. Os inibidores da DPP-IV (como sitagliptina) é que aumentam o GLP-1.</p><p><strong>B) Biguanidas:</strong> INCORRETA. As biguanidas (especialmente metformina) TÊM efeitos colaterais como desconforto abdominal e diarreia. A hipoglicemia grave é mais comum com sulfonilureias e insulina, não com metformina. Esta alternativa tem duas assertivas incorretas.</p><p><strong>C) Insulina gludeca:</strong> INCORRETA. A gludeca é uma insulina basal (ação prolongada), não ultrarrápida. Para ação ultrarrápida, temos as insulinas aspart, lispro ou glulisina.</p><p><strong>D) Inibidores SGLT2:</strong> CORRETA. <strong>Esta é a resposta correta.</strong> Os inibidores da SGLT2 (como dapagliflozina, empagliflozina) bloqueiam o cotransportador sódio-glicose 2 no túbulo proximal, causando glicosúria. São excelentes opções para DM2 em pacientes obesos e hipertensos, oferecendo benefícios cardiovasculares e renais.</p><p><strong>E) Metformina:</strong> INCORRETA. A metformina DIMINUI a produção hepática de glicose (gliconeogênese) e não aumenta. Pode causar aumentar a absorção renal de glicose de forma indireta, mas este não é seu mecanismo principal.</p><p><strong>Veredito final:</strong> <strong>Alternativa D é a correta.</strong> Os inibidores SGLT2 possuem mecanismo glicosúrico através da inibição do cotransportador sodio-glicose 2 e são particularmente indicados em pacientes DM2 obesos e hipertensos, oferecendo benefícios além do controle glicêmico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Assinale a alternativa correspondente ás indicações corretas de tratamento de bacteriúria assintomática.",
+      "alternativas": [
+        "Gestação e acima de 60 anos de idade.",
+        "Diabetes e gestação.",
+        "Gestação e antes de procedimentos cirúrgicos urológicos.",
+        "Diabetes e acima de 60 anos de idade.",
+        "Uso de imunossupressores e HIV positivo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da SMS SP 2022 avalia conhecimento sobre indicação de tratamento de bacteriúria assintomática, especificamente quais condições requerem intervenção antimicrobiana.</strong> O candidato deve conocer as diretrizes atuais sobre quando tratar vs. não tratar bacteriúria assintomática.</p><p><strong>Conceito fundamental:</strong> A bacteriúria assintomática (presença de bactéria na urina sem sintomas urinários) geralmente NÃO requer tratamento, exceto em situações específicas de alto risco.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Gestação e > 60 anos:</strong> INCORRETA. Gestação SIM requer tratamento, mas &quot;> 60 anos&quot; por si só não é indicação. Idosos assintomáticos não devem ser tratados.</p><p><strong>B) Diabetes e gestação:</strong> INCORRETA. Diabetes mellitus por si só NÃO é indicação para tratar bacteriúria assintomática. A gestação sim, mas a diabetes não.</p><p><strong>C) Gestação e procedimentos urológicos:</strong> CORRETA. <strong>Esta é a resposta correta.</strong> <strong>Gestação</strong> é indicação clássica para tratar bacteriúria assintomática devido ao risco de pielonefrite e complicações obstétricas. <strong>Procedimentos cirúrgicos urológicos com risco de sangramento</strong> (como ressecção transuretral da próstata, litotripsia) também requerem tratamento para prevenir infecção sistêmica.</p><p><strong>D) Diabetes e > 60 anos:</strong> INCORRETA. Nenhuma dessas condições isoladamente justifica tratamento de bacteriúria assintomática. Ambas as alternativas estão incorretas.</p><p><strong>E) Imunossupressores e HIV:</strong> INCORRETA. Pacientes imunocomprometidos (incluindo HIV positivo) geralmente NÃO requieren tratamento de bacteriúria assintomática, exceto em situações muito específicas como transplante renal ou neutropenia severa.</p><p><strong>Veredito final:</strong> <strong>Alternativa C é a correta.</strong> A gestação e procedimentos cirúrgicos urológicos são indicações estabelecidas para tratar bacteriúria assintomática, diferentemente das outras condições que, na maioria dos casos, não requerem intervenção antimicrobiana.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_BacteriuriaAssintomatica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_InfeccaoDoTratoUrinarioItuSitu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_InfeccaoDoTratoUrinarioItuSitu_InfeccaoUrinariaNaGestacao"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Um paciente de 12 anos de idade, trazido ao pronto-socorro pela mãe, apresenta quadro de hematúria há um dia, associado à redução do volume urinário, e edema de membros inferiores, com piora progressiva nas últimas 24 horas. Sem outras queixas. Ao exame físico, seus sinais vitais estavam PA = 160/90 mmHg, FC = 90 bpm, SatO2 = 98%, com edema facial e de membros inferiores +++/4, sem outras alterações. De acordo com esse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "O uso de inibidores da enzima conversora da angiotensina (IECA) é a droga de escolha para controle da pressão.",
+        "A ausência de sinais de faringite, no exame físico, afasta o diagnóstico de glomerulonefrite pós-infecciosa.",
+        "A persistência da hematúria por mais duas semanas é sugestiva de mau prognóstico, e deve ser realizada biópsia renal.",
+        "Caso paciente evolua com anúria súbita, piora acentuada da função renal, o tratamento imunossupressor empírico não deve ser iniciado.",
+        "Dosagem do complemento e Anti Estreptolisina -O (ASLO) devem ser solicitados."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP apresenta um caso clínico clássico de síndrome nefrítica em idade pediátrica, testando conhecimentos sobre glomerulonefrite pós-infecciosa e sua investigação diagnóstica adequada.</p><p><strong>O paciente de 12 anos apresenta quadriada típica da síndrome nefrítica:</strong> hematúria macroscópica, oligúria (redução do volume urinário), edema facial e de membros inferiores, e hipertensão arterial (PA = 160/90 mmHg). O quadro de início súbito, com piora progressiva em 24 horas, sugere processo inflamatório glomerular agudo.</p><p>Analisando as alternativas incorretas:<br><strong>A) INCORRETA.</strong> Em síndrome nefrítica aguda, especialmente em glomerulonefrite pós-infecciosa, IECA devem ser EVITADOS na fase aguda devido ao risco de hipercalemia e piora da função renal. O controle pressórico deve ser feito com anti-hipertensivos seguros como nifedipina ou labetalol.</p><p><strong>B) INCORRETA.</strong> A ausência de faringite no momento do exame não exclui glomerulonefrite pós-infecciosa, pois pode haver intervalo de 1-3 semanas entre a infecção estreptocócica e o aparecimento da síndrome nefrítica (período de latência). O título de ASLO elevado confirma infecção prévia.</p><p><strong>C) INCORRETA.</strong> A persistência da hematúria por mais de duas semanas é comum na glomerulonefrite pós-infecciosa e não indica necessariamente mau prognóstico. A biópsia renal é indicada em casos de insuficiência renal persistente por mais de 4-6 semanas ou síndrome nefrótica associada.</p><p><strong>D) INCORRETA.</strong> Na glomerulonefrite crescêntica (que pode se desenvolver secundariamente), o tratamento imunossupressor empírico DEVE ser iniciado em casos de anúria súbita e piora acentuada da função renal para preservar a função renal e evitar doença renal crônica terminal.</p><p><strong>E) CORRETA.</strong> A dosagem de complemento (especialmente C3) e ASLO são exames fundamentais na investigação de síndrome nefrítica em criança. Na glomerulonefrite pós-infecciosa, observa-se típicamente complemento baixo (C3) e ASLO elevado, confirmando o diagnóstico. A normalização do C3 em 6-8 semanas é um marcador prognóstico favorável.</p><p><strong>Veredito:</strong> A alternativa E é correta. A investigação etiológica da síndrome nefrítica deve incluir dosagem de complemento e ASLO para confirmar glomerulonefrite pós-infecciosa e orientar o prognóstico e seguimento clínico.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_NefrologiaPediatrica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Assinale a alternativa correspondente à melhor estratégia para o tratamento do distúrbio mineral ósseo da insuficiência renal crônica.",
+      "alternativas": [
+        "Introduzir quelante do fósforo (por exemplo: cloridrato de sevelâmer) até reduzir abaixo de 5,5 mg/ dL para associar calcitriol.",
+        "Liberar dieta rica em cálcio para correção da hipocalcemia.",
+        "Associar calcitriol e carbonato de cálcio.",
+        "Introduzir calcitriol em altas doses para reduzir o paratormônio (PTH).",
+        "Não se recomenda a utilização de calcitriol para tratamento do hiperparatireoidismo secundário."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP aborda o manejo complexo do distúrbio mineral ósseo na insuficiência renal crônica (DRC), testando conhecimento sobre a sequência terapêutica baseada nas diretrizes brasileiras mais atualizadas.</p><p><strong>Na insuficiência renal crônica, ocorre progressivamente:</strong> redução da produção de 1α-hidroxilase renal, hipocalcemia, hiperfosfatemia e hiperparatireoidismo secundário. O tratamento deve seguir uma sequência lógica para evitar complicações.</p><p>Analisando as alternativas incorretas:<br><strong>B) INCORRETA.</strong> A dieta rica em cálcio em pacientes com hiperfosfatemia pode levar a hipercalcemia e precipitação de fosfato de cálcio em tecidos moles. A correção da hipocalcemia deve ser feita primeiro controlando o fósforo e depois associando vitamina D ativada.</p><p><strong>C) INCORRETA.</strong> A associação precoce de calcitriol e carbonato de cálcio em pacientes com hiperfosfatemia aumenta significativamente o risco de hipercalcemia e calcificação vascular. O carbonato de cálcio como quelante deve ser usado apenas quando o fósforo estiver controlado.</p><p><strong>D) INCORRETA.</strong> Altas doses de calcitriol podem causar supressão excessiva do PTH, levando a adinamia óssea e hipercalcemia. O calcitriol deve ser introduzido em dose baixa e titulado progressivamente conforme resposta do PTH.</p><p><strong>E) INCORRETA.</strong> Segundo as diretrizes brasileiras atuais (SBN 2024), o calcitriol É RECOMENDADO para tratamento do hiperparatireoidismo secundário, especialmente quando há evidências de doença óssea ou níveis persistentemente elevados de PTH apesar do controle do fósforo.</p><p><strong>A) CORRETA.</strong> A sequência terapêutica adequada é: 1) primeiro controlar o hiperfosfatemia com quelantes de fósforo (sevelâmer é primeira escolha conforme diretrizes atuais), 2) manter fósforo < 5,5 mg/dL, 3) depois associar calcitriol para correção da hipocalcemia e supressão do PTH. Esta sequência evita hipercalcemia e otimiza o controle do mineralograma.</p><p><strong>Veredito:</strong> A alternativa A é correta. O tratamento do distúrbio mineral ósseo na DRC deve seguir abordagem escalonada, iniciando com controle do fósforo antes da introdução de vitamina D ativada para prevenir complicações metabólicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "O significado de um exame de microalbuminúria positivo (> 30 ug/min) em um paciente diabético, com mais de 10 anos de diagnóstico, indica",
+      "alternativas": [
+        "infecção urinária e necessidade de antibióticos.",
+        "um achado esperado e não tem significado prognóstico.",
+        "nefropatia diabética incipiente e necessidade de acompanhamento da função renal e uso de droga inibidora da angiotensina.",
+        "necessidade de iniciar insulinoterapia.",
+        "que esse paciente necessitará de diálise nos próximos dois anos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP avalia o conhecimento sobre as implicações clínicas da microalbuminúria em diabéticos, um marcador fundamental para detecção precoce de complicações renais e decisão terapêutica adequada.</p><p><strong>A microalbuminúria (>30 ug/min) representa:</strong> perda de albumina em níveis subclínicos, indicando o início da disfunção endotelial glomerular característica da nefropatia diabética. Em diabéticos com mais de 10 anos de diagnóstico, a presença de microalbuminúria sinaliza progressão para proteinúria franca se não tratada adequadamente.</p><p>Analisando as alternativas incorretas:<br><strong>A) INCORRETA.</strong> Microalbuminúria não indica infecção urinária. A presença de leucócitos, piúria ou sintomas urinários em diabético sugere infecção, mas a microalbuminúria isolada é marcador de disfunção glomerular, não infecciosa.</p><p><strong>B) INCORRETA.</strong> A microalbuminúria TEM significado prognóstico significativo. Estudos longitudinalmente demonstram que diabéticos com microalbuminúria apresentam risco 10-20 vezes maior de progressão para insuficiência renal terminal. É marker de progressão, não achado benigno.</p><p><strong>D) INCORRETA.</strong> A microalbuminúria não indica necessidade de insulinoterapia. A decisão de iniciar insulina baseia-se em controle glicêmico, tempo de diagnóstico, presença de cetose e falha de antidiabéticos orais, não em complicações renais. Inclusive, IECA podem ser mantidos mesmo se insulinoterapia for necessária.</p><p><strong>E) INCORRETA.</strong> Embora diabéticos com microalbuminúria tenham risco aumentado de progressão para insuficiência renal, a necessidade de diálise em 2 anos é evento крайне raro. Com tratamento adequado (controle pressórico, IECA, controle glicêmico), apenas 1-2% progridem para diálise em períodos tão curtos.</p><p><strong>C) CORRETA.</strong> A microalbuminúria em diabético com >10 anos de diagnóstico indica nefropatia diabética incipiente. O tratamento deve incluir: 1) acompanhamento rigoroso da função renal (creatinina, clearence), 2) uso de inibidores daECA ou BRAs (primeira linha), 3) controle pressórico (<130/80 mmHg), 4) otimização do controle glicêmico. Estas medidas podem reverter ou estabilizar a proteinúria.</p><p><strong>Veredito:</strong> A alternativa C é correta. A microalbuminúria em diabético representa marcador de alerta para nefropatia diabética incipiente, exigindo intervenção terapêutica imediata com IECA e acompanhamento rencloso da função renal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "As glomerulonefrites que mais comumente podem cursar com síndrome nefrítica aguda denominam-se",
+      "alternativas": [
+        "gomerulonefrite de lesões mínimas e glomerulonefrite mesangial.",
+        "nefropatia por IgA e Glomerulonefrite crescêntica.",
+        "glomerulonefrite membranosa e nefropatia por IgA.",
+        "glomeruloesclerose segmentar e focal (GESF) e glomerulopatia diabética.",
+        "glomerulonefrite lúpica e GESF."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP testa conhecimento específico sobre classificação das glomerulonefrites e suas apresentações clínicas, focando na correlação entre achados histológicos e síndrome nefrítica aguda.</p><p><strong>A síndrome nefrítica aguda caracteriza-se por:</strong> hematúria com dismorfismo eritrocitário, hipertensão arterial, edema e oligúria, resultantes de processo inflamatório glomerular que altera a permeabilidade da barreira de filtração.</p><p>Analisando as alternativas incorretas:<br><strong>A) INCORRETA.</strong> Glomerulonefrite de lesões mínimas e nefropatia por IgA NÃO cursam tipicamente com síndrome nefrítica aguda. Lesões mínimas causam síndrome nefrítica, e nefropatia por IgA cursa com síndrome nefrítica em exacerbações, mas glomerulonefrite mesangial pode ser assintomática ou causar proteinúria.</p><p><strong>C) INCORRETA.</strong> Glomerulonefrite membranosa tipicamente cursa com síndrome nefrótica (proteinúria maciça, hipoalbuminemia, edema), não síndrome nefrítica. Pode haver hematúria leve, mas não é a apresentação clássica.</p><p><strong>D) INCORRETA.</strong> Glomeruloesclerose segmentar e focal e glomerulopatia diabética cursam com síndrome nefrótica ou proteinúria persistente. São causas de insuficiência renal crônica progressiva, não síndrome nefrítica aguda.</p><p><strong>E) INCORRETA.</strong> Glomerulonefrite lúpica pode cursar com síndrome nefrítica, mas a correlação é variável dependente da classe histológica. GESF cursa com síndrome nefrótica. A associação não é a mais característica para síndrome nefrítica aguda.</p><p><strong>B) CORRETA.</strong> Nefropatia por IgA e glomerulonefrite crescêntica são as que MAIS COMUMENTE cursam com síndrome nefrítica aguda:<br>• <strong>Nefropatia por IgA:</strong> episodios de hematúria macroscópica associados a infecções de vias aéreas superiores, com dor lombar, hipertensão e oligúria. Exacerbação pode mimetizar glomerulonefrite pós-infecciosa.<br>• <strong>Glomerulonefrite crescêntica:</strong> caracterizada por formação de crescentes glomerulares >50% dos glomérulos, cursando com insuficiência renal rápida, hipertensão, edema e hematúria ativa. Pode ser primária (idiopática) ou secundária (VASculites, lupus, etc.).</p><p><strong>Veredito:</strong> A alternativa B é correta. A nefropatia por IgA e glomerulonefrite crescêntica são as glomerulonefrites que mais frequentemente se apresentam como síndrome nefrítica aguda, exigindo avaliação e conduta urgente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_AsGrandesSindromesGlomerulares"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "A pancreatite aguda é uma das principais causas de internação hospitalar, dentre as doenças do trato gastrointestinal, em razão da intensidade dos seus sintomas e do potencial de gravidade dessa enfermidade. Acerca desse tema, assinale a alternativa correta.",
+      "alternativas": [
+        "A dislipidemia por causa da hipercolesterolemia pode causar pancreatite.",
+        "A ultrassonografia de abdome é um exame essencial nos casos de pancreatite crônica.",
+        "A amilase sérica em níveis maiores de 10 vezes o normal é critério de mau prognóstico nos casos de pancreatite aguda.",
+        "A pancreatite biliar ocorre por obstrução do colédoco distal por cálculo biliar.",
+        "O tratamento de pancreatite envolve repouso alimentar e hidratação venosa vigorosa."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da SMS SP aborda conceitos fundamentais sobre pancreatite aguda, cobrindo aspectos etiológicos, diagnóstico e tratamento, com foco em critérios prognósticos e manejo clínico adequado.</p><p><strong>Pancreatite aguda é processo inflamatório do pâncreas</strong> que pode variar de forma edematosa leve a necrose hemorrágica grave, sendo a principal causa de internação gastroenterológica pelo potencial de mortalidade e complicações sistêmicas.</p><p>Analisando as alternativas incorretas:<br><strong>B) INCORRETA.</strong> A ultrassonografia de abdome é exame de BAIXA SENSIBILIDADE para pancreatite aguda, sendo mais útil para avaliar vesícula biliar e conducto biliar. Tomografia computadorizada com contraste é o exame de escolha para diagnóstico e estadiamento da pancreatite aguda.</p><p><strong>C) INCORRETA.</strong> Níveis de amilase >10 vezes o normal não são critério de mau prognóstico. Marcadores de gravidade incluem: escores clínicos (Ranson, APACHE II), presença de necrose na tomografia, falha de órgãos, idade >80 anos, história de cirrose. A amilase elevada apenas confirma o diagnóstico, não indica gravidade.</p><p><strong>D) INCORRETA.</strong> A pancreatite biliar decorre da obstrução da AMPOLA DE VATER (papila de Vater) por cálculo biliar, não do colédoco distal isolado. O cálculo impactado na papila impede a drenagem do ducto pancreático, ativando enzimas pancreáticas in situ.</p><p><strong>A) PARCIALMENTE CORRETA.</strong> Hipertrigliceridemia (>1000 mg/dL) pode causar pancreatite por geração de ácidos graxos livres tóxicos para o pâncreas. Hipercolesterolemia isoladamente RARAMENTE causa pancreatite.</p><p><strong>E) PARCIALMENTE CORRETA.</strong> O tratamento da pancreatite aguda inclui repouso alimentar e hidratação venosa, mas deve ser MODERADA. Hidratação excessiva pode aumentar risco de síndrome de perfuração alveolar. Hidratação em 24h iniciais: 250-500 mL/h, após reavaliação clínica. Jejum até resolução da dor e vômitos.</p><p>Para questão, <strong>D é mais completamente correta</strong> porque define precisamente a fisiopatologia da pancreatite biliar: obstrução da papila de Vater por cálculo impactado, impedindo drenagem biliar e pancreática simultaneamente.</p><p><strong>Veredito:</strong> A alternativa D é a mais precisa. A pancreatite biliar ocorre especificamente por obstrução da ampola de Vater por cálculo biliar, mecanismo fisiopatológico fundamental para compreensão e tratamento adequado.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Um paciente de 35 anos de idade procura atendimento médico achado de hepatite viral em screening de doação de sangue. No que se refere a esse caso clínico e com base nos conhecimentos médicos correlatos, julgue os itens a seguir.",
+      "alternativas": [
+        "A carga viral do vírus B - PCR VHB quantitativo é essencial para confirmação diagnóstica da hepatite B e da decisão terapêutica.",
+        "AgHBs positivo, anti-HBc total positivo e anti-HBe positivo indicam hepatite crônica por vírus B altamente replicante - vírus selvagem.",
+        "AgHBs negativo, anti-HBc total positivo, anti-HBs positivo indicam infecção passada por vírus B.",
+        "A biópsia hepática é o exame de escolha são indispensáveis para avaliação de fibrose hepática.",
+        "O tratamento de pacientes com carga viral > 2.000 cópias por mL está indicada em indivíduos maiores de 35 anos de idade, classificados como portadores inativos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 avalia seu conhecimento sobre a interpretação dos marcadores sorológicos da hepatite B. O caso apresenta um paciente jovem de 35 anos com hepatite viral identificada em screening de doação de sangue, exigindo que você domine a leitura dos diferentes perfis sorológicos do VHB.</p><p><strong>A resposta correta é C - AgHBs negativo, anti-HBc total positivo e anti-HBs positivo indicam infecção passada por vírus B.</strong></p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>Alternativa A - FALSA:</strong> A PCR VHB quantitativo é útil para monitorar carga viral em pacientes já diagnosticados, mas o diagnóstico inicial da hepatite B baseia-se nos marcadores sorológicos (HBsAg, anti-HBc, anti-HBs). A PCR não substitui a sorologia para confirmação diagnóstica inicial.</p><p><strong>Alternativa B - FALSA:</strong> Este perfil indica infecção crônica pelo VHB, mas o padrão descrito (AgHBs+, anti-HBc total+, anti-HBe+) é típico da fase de baixa replicação (portador inativo), não de vírus altamente replicante. Na fase de alta replicação, esperaríamos HBeAg positivo.</p><p><strong>Alternativa C - CORRETA:</strong> Este é o perfil clássico de cura da hepatite B. Após resolução da infecção, o HBsAg negativiza, mas permanecem anti-HBc (memória imunológica) e anti-HBs (proteção definitiva). Indica imunidade adquirida.</p><p><strong>Alternativa D - FALSA:</strong> A biópsia hepática NÃO é indispensável para avaliação de fibrose. Métodos não invasivos como elastografia hepática (Fibroscan), testes séricos (FIB-4, APRI) e marcadores de fibrose são atualmente primeira linha para avaliação de fibrose hepática, segundo protocolos do Ministério da Saúde 2025.</p><p><strong>Alternativa E - FALSA:</strong> O tratamento da hepatite B crônica não é baseado apenas na idade ou carga viral isoladamente. Indica-se tratamento quando há evidência de atividade (enzimas elevadas, histologia significativa) ou fatores de risco específicos, independentemente da idade. Além disso, o valor de corte atual é >20.000 UI/mL para HBeAg negativos.</p><p><strong>Veredito final:</strong> A banca testou conhecimento fundamental sobre interpretações sorológicas do VHB. A alternativa C representa o perfil de imunidade pós-infecção, fundamental para decisão diagnóstica em campanhas de doação de sangue.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_HepatitesVirais",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_IctericiaNaoObstrutiva"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Um paciente portador de doença do refluxo gastroesofágico de longa data realiza endoscopia digestiva alta que evidencia segmento de mucosa avermelhada - acima da transição esofagogástrica - sugestivo de esôfago de Barrett. Para que se confirme esse achado, é correto afirmar que o laudo da biópsia deve mostra",
+      "alternativas": [
+        "substituição do epitélio escamoso por epitélio displásico no esôfago distal.",
+        "substituição do epitélio colunar gástrico por epitélio metaplásico do tipo intestinal na transição esofagogástrica.",
+        "substituição do epitélio esofágico por mucosa gástrica ectópica no esôfago distal.",
+        "hiperplasia do epitélio escamoso estratificado esofágico na transição esofagogástrica.",
+        "substituição do epitélio escamoso por epitélio metaplásico do tipo intestinal no esôfago distal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 foca no conhecimento histopatológico fundamental para diagnóstico do esôfago de Barrett. O caso descreve achado endoscópico sugestivo, exigindo que você identifique as características histológicas definitivas desta condição.</p><p><strong>A resposta correta é E - substituição do epitélio escamoso por epitélio metaplásico do tipo intestinal no esôfago distal.</strong></p><p>Vamos analisar cada alternativa com rigor patológico:</p><p><strong>Alternativa A - FALSA:</strong> Displasia é alterações celulares neoplásicas pré-malignas, mas o Barrett é definido por metaplasia (transformação de um tipo de tecido em outro), não displasia. Displasia pode estar presente no Barrett, mas não define a condição.</p><p><strong>Alternativa B - FALSA:</strong> Esta alternativa confunde localização anatômica. O Barrett afeta o esôfago distal (órgão alvo), não apenas a transição esofagogástrica. Além disso, o epitélio metaplásico intestinal substitui o epitélio escamoso original do esôfago, não o gástrico.</p><p><strong>Alternativa C - FALSA:</strong> Mucosa gástrica ectópica no esôfago define o chamado \"estômago gástrico ectópico\" ou \"tipo de mucosa gástrica inborn\", que é condição diferente e benigna, sem potencial maligno do Barrett.</p><p><strong>Alternativa D - FALSA:</strong> Hiperplasia do epitélio escamoso define esofagite por refluxo, não Barrett. Hiperplasia é aumento de células no mesmo tipo de tecido, enquanto Barrett é metaplasia (mudança de tipo de tecido).</p><p><strong>Alternativa E - CORRETA:</strong> Esta é a definição histopatológica oficial do esôfago de Barrett. Caracteriza-se pela substituição do epitélio escamoso estratificado normal do esôfago por epitélio colunar do tipo intestinal (com células caliciformes), no esôfago distal. Esta metaplasia é resposta adaptativa à exposição crônica ao refluxo ácido.</p><p><strong>Veredito final:</strong> Esta questão avalia compreensão da fisiopatologia molecular do Barrett. A metaplasia intestinal no esôfago distal é o marco definidor, distinguindo de outras condições esofágicas. Este conhecimento é fundamental para gastrenterologistas e patologistas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "No decorrer do acompanhamento de um paciente com dispepsia, foi identificado uma úlcera duodenal na endoscopia. A pesquisa de H. pylori foi positiva e empregou-se um esquema terapêutico para erradicação dessa bactéria. Para controle do tratamento de H. pylori, um método não invasivo que poderia ser utilizado é o(a)",
+      "alternativas": [
+        "exame anatomopatológico.",
+        "teste respiratório para pesquisa de H. pylori.",
+        "teste da urease.",
+        "cultura do H. pylori.",
+        "pesquisa de imuno-histoquímica e reação em cadeia da polimerase (PCR) de H. pylori."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 avalia seu conhecimento sobre métodos de controle de tratamento para H. pylori. O caso apresenta paciente com úlcera duodenal e H. pylori positivo, exigindo que você conheça os métodos apropriados para confirmar erradiccação após tratamento.</p><p><strong>A resposta correta é B - teste respiratório para pesquisa de H. pylori.</strong></p><p>Vamos analisar cada método diagnósticos disponível:</p><p><strong>Alternativa A - FALSA:</strong> O exame anatomopatológico (biópsia) é método invasivo que exige nova endoscopia. Após tratamento para H. pylori, a confirmação de erradiccação deve ser feita preferencialmente por métodos não invasivos para evitar procedimentos desnecessários.</p><p><strong>Alternativa B - CORRETA:</strong> O teste respiratório com uréia marcada (13C-ureia) é o método não invasivo de primeira escolha para controle de tratamento. Detecta atividade bacteriana ativa através da metabolização da uréia marcada pela urease do H. pylori. É realizado 4-8 semanas após o final do tratamento, com alta sensibilidade (90-95%) e especificidade (90-95%).</p><p><strong>Alternativa C - FALSA:</strong> O teste da urease é método invasivo realizado em biópsias durante a endoscopia. Como não é adequado para controle pós-tratamento (exigiria nova endoscopia), não é considerado método não invasivo de controle.</p><p><strong>Alternativa D - FALSA:</strong> A cultura do H. pylori é método invasivo que também exige endoscopia e biópsias. Além de não ser método de controle, a cultura tem menor sensibilidade que outros métodos e é mais trabalhosa e demorada.</p><p><strong>Alternativa E - FALSA:</strong> A pesquisa de imuno-histoquímica e PCR são métodos moleculares que também exigem material tecidual (biópsia). Não são métodos não invasivos adequados para controle de tratamento e são mais caros e complexos que o teste respiratório.</p><p><strong>Veredito final:</strong> A questão testou conhecimento prático sobre algoritmos diagnósticos pós-tratamento. O teste respiratório é método não invasivo, preciso e econômico, tornando-se padrão ouro para confirmação de erradiccação do H. pylori, conforme diretrizes brasileiras atuais.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_HelicobacterPylori",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Um paciente de 30 anos de idade, previamente hígido, etilista social, deu entrada no ambulatório com queixa de icterícia, colúria e acolia fecal há duas semanas, mal-estar e prurido cutâneo generalizado, sem dor abdominal nem febre. Nos antecedentes, refere quadro gripal há três semanas, quando foi medicado com amoxacilina por sete dias, em razão de amigdalite bacteriana. Nega hepatites prévias ou quadros prévios de icterícia. Com base nesse caso clínico, assinale a alternativa que indica diagnóstico provável e exame a ser solicitado.",
+      "alternativas": [
+        "hepatite aguda medicamentosa e bioquímica hepática (TGO, TGP, FA, GGT, bilirrubinas).",
+        "hepatite por vírus B e sorologias virais.",
+        "colecistite aguda calculosa e ultrassonografia de abdome.",
+        "cirrose biliar primária e dosagem de anticorpo antimitocôndria.",
+        "síndrome de Dubin-Johnson (DJS) e colecistograma oral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 apresenta um caso clínico clássico de hepatite medicamentosa, exigindo que você correlacione história clínica, cronologia e quadro laboratorial para chegar ao diagnóstico correto.</p><p><strong>A resposta correta é A - hepatite aguda medicamentosa e bioquímica hepática (TGO, TGP, FA, GGT, bilirrubinas).</strong></p><p>Vamos analisar sistematicamente o caso:</p><p><strong>Dados clínicos importantes:</strong> Paciente jovem de 30 anos, previamente hígido, iniciou icterícia 2 semanas após quadro gripal tratado com amoxacilina por 7 dias. Ausência de dor abdominal e febre, presença de prurido, colúria e acolia fecal.</p><p><strong>Análise de cada alternativa:</strong></p><p><strong>Alternativa A - CORRETA:</strong> A cronologia é perfeita: uso de amoxacilina há 3 semanas, início de sintomas há 2 semanas. Hepatite medicamentosa por amoxacilina é bem descrita, geralmente iniciando 1-8 semanas após início do medicamento. A bioquímica hepática completa é fundamental para avaliar padrão de lesão (colestática, hepatocelular ou mista) e gravidade.</p><p><strong>Alternativa B - FALSA:</strong> Hepatite por vírus B aguda no jovem seria possível, mas a cronologia com amoxilicina é mais específica. Além disso, se fosse hepatite B aguda, aguardaríamos outros sintomas virais e a associação com antibioticoterapia seria coincidência pouco provável.</p><p><strong>Alternativa C - FALSA:</strong> Colecistite aguda calculosa cursa com dor abdominal, febre e sinais inflamatórios. O caso não apresenta dor abdominal nem febre, e a cronologia com uso de amoxicilina é mais sugestiva de hepatite medicamentosa.</p><p><strong>Alternativa D - FALSA:</strong> Cirrose biliar primária é doença crônica, autoimune, que afeta predominantemente mulheres de meia-idade. Não cursa com quadro agudo após antibioticoterapia e em homem jovem de 30 anos seria extremamente raro.</p><p><strong>Alternativa E - FALSA:</strong> Síndrome de Dubin-Johnson é distúrbio genético benigno do transporte de bilirrubina, com icterícia crônica intermitente. Não é induzida por medicamentos e não se correlaciona com a cronologia presentada no caso.</p><p><strong>Veredito final:</strong> Esta questão evaluou capacidade de correlação clínica-laboratorial. A cronologia típica (início de sintomas 1-8 semanas após exposição medicamentosa) e ausência de outras causas mais prováveis torna a hepatite medicamentosa a hipótese mais forte. O perfil laboratorial confirmação definirá padrão e gravidade da lesão.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_IctericiaNaoObstrutiva",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "O hemograma é o nome dado ao conjunto de avaliações das células do sangue que, reunido aos dados clínicos, permite conclusões diagnósticas e prognósticas de grande número de patologias. Acerca desse exame, assinale a alternativa correta.",
+      "alternativas": [
+        "Existem apenas dois tipos de leucocitose: leucocitose verdadeira (aumento da produção da medula óssea) em leucocitose falsa (migração dos neutrófilos da periferia para o sangue rapidamente).",
+        "A principal causa de anemia microcítica e hipocrômica é a deficiência de ferro, diagnosticada pela diminuição da concentração de ferritina e da capacidade de ligação total do ferro.",
+        "A presença de maior quantidade de bastonetes ou células mais jovens da série granulocítica (metamielocitos, mielocitos, promieclociotos e mieloblastos) é chamada de desvio à direita.",
+        "Define-se por anemia quando o eritrograma apresenta a concentração de hemoglobina no sangue menor que o valor padrão para a idade ou para homens e mulheres adultos.",
+        "O achado clássico da coagulação intravascular disseminada (CIVD) é a trombocitose."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 aborda conceitos fundamentais do hemograma, testando seu conhecimento sobre definições e interpretações laboratoriais básicas em hematologia.</p><p><strong>A resposta correta é D - Define-se por anemia quando o eritrograma apresenta a concentração de hemoglobina no sangue menor que o valor padrão para a idade ou para homens e mulheres adultos.</strong></p><p>Vamos analisar cada conceito apresentado:</p><p><strong>Alternativa A - FALSA:</strong> A classificação de leucocitose é mais complexa. Existem: leucocitose verdadeira (aumento real de produção medular) e leucocitose de distribuição (redistribuição de células do compartimento marginal para circulante). A definição apresentada está imprecisa e simplificada demais.</p><p><strong>Alternativa B - FALSA:</strong> Embora a deficiência de ferro seja a principal causa de anemia microcítica hipocrômica, o diagnóstico é feito pela redução de ferritina (marcador de reserva de ferro) associada a aumento da capacidade de ligação total do ferro (transferrina). A afirmativa inverteu os conceitos de ferritina e capacidade de ligação.</p><p><strong>Alternativa C - FALSA:</strong> Desvio à esquerda significa presença de formas jovens (bastonetes, metamielocitos, mielocitos) na circulação, indicando processo infeccioso ou inflamatório agudo. Desvio à direita é caracterizado por formas maduras e hiper-segmentação de neutrófilos, típica de deficiência de vitamina B12 ou folato.</p><p><strong>Alternativa D - CORRETA:</strong> Esta é a definição universalmente aceita de anemia. A Organização Mundial da Saúde e diretrizes brasileiras definem anemia por concentração de hemoglobina abaixo dos valores de referência para sexo e idade. Valores de corte: homens <13 g/dL, mulheres <12 g/dL, crianças menores de 12 anos variam por idade.</p><p><strong>Alternativa E - FALSA:</strong> A coagulação intravascular disseminada (CIVD) é caracterizada por trombocitopenia (redução de plaquetas), não trombocitose. A CIVD cursa com consumo de fatores de coagulação e plaquetas, resultando em sangramento e trombose simultâneos.</p><p><strong>Veredito final:</strong> Esta questão evaluou conhecimento básico em hematologia. A definição correta de anemia é fundamental para prática clínica diária. As demais alternativas continham conceitos incorretos que podrían levar a diagnósticos errôneos se mal interpretados. O hemograma continua sendo exame fundamental na propedêutica médica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_ProducaoDasCelulasSanguineasHe",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_IntroducaoAoEstudoDasAnemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "O EAS (URINA 1) é um exame essencial para a avaliação dos pacientes com patologias renais ou em outros órgãos. A respeito desse exame, assinale a alternativa correta.",
+      "alternativas": [
+        "O teste do nitrito negativo exclui a hipótese de infecção do trato urinário.",
+        "A glicosúria apenas ocorre quando a glicemia atinge valores superiores ao limiar de filtração renal (160 mg/dL -180 mg/dL).",
+        "A presença de cilindros céreos no EAS indica bom prognóstico.",
+        "Quanto mais importante for a poliúria, menor será a densidade urinária, inclusive em pacientes diabéticos.",
+        "Alterações na forma da hemácia podem indicar hematúria de origem renal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia conhecimentos fundamentais sobre o EAS (Exame de Urina I), especificamente aspectos diagnósticos e interpretativos. O candidato deve dominar tanto a semiologia quanto a fisiopatologia urinária para responder corretamente.</p><p><strong>A resposta correta é E - Alterações na forma da hemácia podem indicar hematúria de origem renal.</strong> Hemácias disformes (não uniformes) ou deformadas sugerem origem glomerular, enquanto hemácias uniformes geralmente indicam origem pós-glomerular. Esta é uma dica importante para diferenciação diagnóstica.</p><p>Vamos analisar as outras alternativas:</p><p><strong>A está INCORRETA:</strong> O teste de nitrito negativo NÃO exclui ITU. Many patógenos (como Enterococcus) não convertem nitrato, resultando em nitrito negativo mesmo na presença de infecção. A cultura de urina é padrão ouro para diagnóstico.</p><p><strong>B está INCORRETA:</strong> Glicosúria pode ocorrer com glicemia normal em condições como síndrome de Fanconi, osteomalacia e uso de certos medicamentos. O limiar renal de 180 mg/dL é aproximada, mas não absoluto.</p><p><strong>C está INCORRETA:</strong> Cilindros céreos indicam doença renal crônica avançada, com Mau prognóstico. Representam degeneração de cilindros hialinos e aparecem em estágios terminais das nefropatias.</p><p><strong>D está INCORRETA:</strong> Em diabéticos, poliúria por hiperglicemia aumenta excretão de solutos, potencialmente elevando densidade urinária. Além disso, diabéticos podem ter nefropatia com capacidade concentrada diminuída, tornando o padrão ainda mais variável.</p><p>O conhecimento do EAS é fundamental na prática médica e a correta interpretação pode direcionar significativamente o diagnóstico e tratamento.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_Cistite"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Um paciente com desconforto para respirar fez espirometria, na qual se observaram CVF = 2,6 L (85%); VEF¹ = 1,0 L (50%); índice VEF¹/CVF = 38% e CPT = 81%. Após uso de broncodilatador, houve aumento de 250 mL, correspondendo a 25% do VEF1 inicial. Com base nesse caso clínico, é correto afirmar que o paciente apresenta distúrbio ventilatório.",
+      "alternativas": [
+        "obstrutivo moderado, com resposta ao uso de broncodilatador.",
+        "obstrutivo acentuado, com resposta ao uso de broncodilatador.",
+        "misto acentuado, com resposta ao uso de broncodilatador.",
+        "obstrutivo moderado, sem resposta ao uso de broncodilatado.",
+        "obstrutivo acentuado, com resposta ao uso de broncodilatador. A CF encontra-se reduzida."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia interpretação de espirometria, classificação de distúrbios ventilatórios e resposta a broncodilatador. O candidato deve dominar os valores normais e critérios de classificação para DPOC e asma.</p><p><strong>A resposta correta é B - obstrutivo acentuado, com resposta ao uso de broncodilatador.</strong></p><p>Vamos interpretar os valores:</p><p><strong>Dados da espirometria pré-broncodilatador:</strong></p><p>• CVF = 2,6 L (85% do previsto) - normal ou levemente reduzida<br>• VEF1 = 1,0 L (50% do previsto) - acentuadamente reduzida<br>• VEF1/CVF = 38% (normal >70%) - confirmado padrão obstrutivo<br>• CPT = 81% (normal 80-120%) - dentro da normalidade</p><p><strong>Após broncodilatador:</strong> Aumento de 250 mL no VEF1 (25% do valor inicial) indica resposta significativa (≥12% e 200mL). Como VEF1 é 50% do previsto, classificamos como <strong>obstrutivo acentuado</strong>.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A, D e E estão INCORRETAS:</strong> Aumento de 25% do VEF1 inicial (250mL de 1.000mL) configura resposta significativa. O paciente não é moderado, pois VEF1 <50% caracteriza acentuado.</p><p><strong>C está INCORRETA:</strong> Não há padrão misto. A CVF está normal (85%) e a CPT dentro do normal (81%). O problema é exclusivamente obstrutivo, com capacidade pulmonar total preservada.</p><p>A resposta ao broncodilatador sugere componente asmático, mas a gravidade (VEF1 50%) define como acentuado, típico de DPOC moderado a grave.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_IntroducaoAPneumologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Um paciente com 35 anos de idade apresentou, há dois dias, quadro clínico constituído por febre de 38 oC associado à tosse contínua que elimina secreção amarelada. Nega fatores de piora ou melhora da sintomatologia. Não fuma e não faz uso de bebida alcoólica. Nega sudorese, calafrios e perda de peso. O exame físico mostra um paciente em regular estado geral, lúcido e orientado no tempo e no espaço. Seus sinais vitais eram PA = 120/80 mmHg, P = 72 bpm, FR = 20 irpm, Temperatura = 37,5o C e SatO2 =95%. No exame do aparelho respiratório, o paciente mostrou-se eupneico, com frêmito toracovocal aumentado, macicez e crepitações inspiratórias em região infraescapular direita. A respeito da realização dos exames complementares desse paciente, assinale a alternativa correta.",
+      "alternativas": [
+        "A solicitação de marcadores biológicos é fundamental para o diagnóstico.",
+        "A presença de trombocitose é sinal de um curso evolutivo menos grave.",
+        "A hemocultura não está indicada diante da não gravidade do quadro clínico.",
+        "A pesquisa de transaminases é importante para a seleção do tratamento.",
+        "A realização da radiografia do tórax não é relevante para o diagnóstico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia a conduta diante de pneumonia adquirida na comunidade (PAC), especificamente a indicação de exames complementares. O foco é na triagem e manejo adequado de pacientes estáveis.</p><p><strong>A resposta correta é C - A hemocultura não está indicada diante da não gravidade do quadro clínico.</strong></p><p>O paciente apresenta quadro clínico compatível com PAC:<br>• Febre + tosse produtiva (2 dias)<br>• Sinais locais: frêmito aumentado, macicez, crepitações (região infraescapular direita)<br>• Estado geral preservado, hemodinamicamente estável</p><p><strong>Pela classificação de risco (CURB-65 ou PSI):</strong><br>• Idade <65 anos<br>• Sem alterações mentais<br>• FR 20 (≤30)<br>• PA 120/80 (≥90 mmHg)<br>• Sem hipotensão ou taquicardia significativa</p><p>Paciente é classificado como baixo risco. Segundo diretrizes (SBPT 2025, IDSA 2025), hemoculturas são indicadas apenas em casos graves (internação UTI) ou quando há fatores de risco específicos.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A está INCORRETA:</strong> Marcadores biológicos (PCR, procalcitonina) podem auxiliar, mas não são fundamentais. O diagnóstico é clínico-radiológico. Se disponíveis, podem ajudar na estratificação de risco.</p><p><strong>B está INCORRETA:</strong> Trombocitose pode indicar processo inflamatório, mas não correlaciona necessariamente com menor gravidade. Na verdade, pode ser marcador de resposta inflamatória significativa.</p><p><strong>D está INCORRETA:</strong> Transaminases não são importantes para seleção de antibiótico. A escolha baseia-se no padrão local de sensibilidade bacteriana e severidade do caso.</p><p><strong>E está INCORRETA:</strong> Radiografia de tórax é fundamental para confirmar diagnóstico e avaliar extensão. É parte essencial da avaliação em PAC.</p><p>Em pacientes estáveis, a orientação é tratamento antibiótico empírico e avaliação clínica seriada, reservando exames invasivos para casos graves ou falha terapêutica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_IntroducaoAPneumologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "<html><head></head><body>Um paciente de 67 anos de idade é encaminhado pelo posto de saúde para tratamento e acompanhamento de possível doença pulmonar obstrutiva crônica, caracterizada por tosse crônica, produtiva, principalmente pela manhã, e dispneia progressiva, percebida nos últimos três anos. Atualmente, tendo que parar, após caminhar 100 m no plano. Relata ter vivido na área rural até os 30 anos de idade, em família de trabalhadores rurais de baixa renda. Teve diagnóstico de tuberculose aos 50 anos de idade e foi tratado por seis meses. É diabético não insulino necessitado e tabagista de 60 maços /ano. Seu pai e sua tia paterna haviam morrido em consequência de doença respiratória, provavelmente associada ao cigarro. Ao exame físico, não são observadas alterações significativas. SatO2 = 95%. No que se refere a esse caso clínico e com base nos conhecimentos correlatados, assinale a alternativa correta.\n\n<img src=\"https://medbrave.com.br/questions/smssp-2022-r3/qQ19.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "A diabetes mellitus é um fator que aumenta a chance de ter doença pulmonar obstrutiva crônica (DPOC).",
+        "São critérios diagnósticos para definir DPOC: a história compatível e a exposição a fator nocivo (tabagismo).",
+        "Considerando-se que o paciente é classificado como GOLD 2 B, há indicação de usar corticoide inalatório.",
+        "A vacinação para pneumococos está contraindicada nos casos de DPOC, pelo risco de reações à vacina com reações adversas graves.",
+        "A história prévia de tuberculose não é considerada fator predisponente à DPOC."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia critérios diagnósticos de DPOC (Doença Pulmonar Obstrutiva Crônica), combinando história clínica, exposição a fatores de risco e comorbidades. O caso típico apresenta múltiplos fatores de confusão para testar conhecimento dos critérios essenciais.</p><p><strong>A resposta correta é B - São critérios diagnósticos para definir DPOC: a história compatível e a exposição a fator nocivo (tabagismo).</strong></p><p>O paciente apresenta quadro clássico:<br>• Tosse crônica produtiva matinal (anos)<br>• Dispneia progressiva (3 anos, limitação de 100m)<br>• Tabagismo pesado: 60 maços/ano (alto risco)<br>• Exposição ocupacional rural (biomassa - fator adicional)<br>• História familiar positiva</p><p>Os critérios diagnósticos da GOLD 2025 e SBPT são:<br>1. Exposição a fatores de risco (tabagismo principalmente)<br>2. Sintomas respiratórios crônicos<br>3. Limitação persistente ao fluxo aéreo (VEF1/CVF <0,70)</p><p><strong>Análise das alternativas:</strong></p><p><strong>A está INCORRETA:</strong> Diabetes mellitus NÃO aumenta risco de DPOC. Na verdade, pode ser protective contra emphysema. Fatores de risco são tabagismo, exposição à biomassa, alfa-1 antitripsina, etc.</p><p><strong>C está INCORRETA:</strong> GOLD 2B indica VEF1 50-80% com exacerbação anual. Corticoide inalatório só está indicado se VEF1 <50% ou com eosinofilia persistente >300 cél/μL. Monoterapia com broncodilatador de ação prolongada é primeira linha.</p><p><strong>D está INCORRETA:</strong> Vacina pneumocócica PnV23 é indicada e recomendada em todos os pacientes com DPOC. Não há contraindicação específica. É preventiva e deve ser oferecida.</p><p><strong>E está INCORRETA:</strong> Tuberculose prévia pode deixar sequelas pulmonares e aumentar risco de DPOC. Cicatrizes, bronquiectasias e fibrose pós-TB são fatores predisponentes.</p><p>O diagnóstico de DPOC não requer confirmação de GOLD 2B para início do tratamento, mas sim reconhecimento clínico com confirmação por espirometria e estratificação posterior.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Uma paciente de 78 anos de idade, com história de hipertensão arterial com controle irregular, insuficiência cardíaca com função sistólica preservada, diabetes mellitus e síndrome da apneia obstrutiva do sono, com IMC de 36 Kg/m2 , chega ao pronto-socorro com queixa de dispneia intensa, com início há cerca de 6 horas, e tosse seca com rajas de sangue, associada a essa dispneia. Ao exame, seus sinais vitais eram FC = 120 bpm, SatO2 = 88% (em ar ambiente) e PA = 110/70 mmHg. Ausculta cardíaca e respiratória sem achados significantes. As extremidades estavam com boa perfusão e sem edema. Com base nesse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "A angiotomografia é o exame de escolha para definir o diagnóstico.",
+        "A paciente apresenta os seguintes fatores de risco para tromboembolismo pulmonar (TEP): idade, hipertensão arterial sistêmica e obesidade.",
+        "O dímero-D deve ser parte importante da investigação.",
+        "A paciente pode ser considerada de baixo risco de complicações, considerando-se que mantém pressão arterial sistólica superior a 120 mmHg.",
+        "Deve-se solicitar a dosagem de plaquetas e fibrinogênio."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia suspeita diagnóstica de TEP (Tromboembolismo Pulmonar), interpretando apresentação clínica em paciente de alto risco e determinando investigação diagnóstica adequada. O foco é na triagem e exames de imagem.</p><p><strong>A resposta correta é A - A angiotomografia é o exame de escolha para definir o diagnóstico.</strong></p><p>A paciente apresenta perfil de alto risco para TEP:<br>• Idade avançada (78 anos)<br>• Múltiplas comorbidades: HAS, IC, DM, SAOS<br>• IMC 36 (obesidade - fator importante)<br>• Apresentação aguda: dispneia há 6h + tosse com sangue<br>• Hipoxemia: SatO2 88% em ar ambiente</p><p><strong>Análise do caso:</strong> Segundo a regra de Wells, a paciente pontua alto (idade >65, imobilização potencial, taquicardia, dispneia). O algoritmo diagnóstico indica angiotomografia como primeiro exame de imagem (gold standard).</p><p><strong>Análise das alternativas:</strong></p><p><strong>B está INCORRETA:</strong> Falta factor de risco major: não há história de TEP/DVT, cirurgia recente, imobilização, anticoagulação ou câncer. HAS, idade e obesidade são importantes, mas faltam outros fatores que elevam a probabilidade pré-teste significativamente.</p><p><strong>C está INCORRETA:</strong> O dímero-D pode ser útil em pacientes de baixa probabilidade, mas aqui a probabilidade é alta. Em pacientes com alta probabilidade clínica, o dímero-D não descarta TEP - ir direto para imagem.</p><p><strong>D está INCORRETA:</strong> Com SatO2 88%, taquicardia (FC 120 bpm) e apresentação aguda, a paciente NÃO é de baixo risco. A classificação de risco (PESI) levaria a classe alta, indicando necessidade de avaliação rápida e possibly trombolise se hemodinamicamente instável.</p><p><strong>E está INCORRETA:</strong> Dosagem de plaquetas e fibrinogênio não tem papel no diagnóstico agudo de TEP. A investigação é hemodinâmica, gasométrica e de imagem (angiotomografia ou ecocardiograma se instável).</p><p>Em pacientes de alto risco, o tempo é fundamental. Angiotomografia é o exame de escolha para confirmação diagnóstica e planejamento terapêutico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Uma paciente de 42 anos de idade apresenta poliartrite há três meses. O quadro teve início após viagem para Boa Vista (RR), onde apresentou febre por dois dias. Os exames complementares revelam IgG positivo para chikungunya, anti-CCP positivo e fator reumatoide positivo. Acerca desse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "O fator reumatoide é um teste de alta sensibilidade na artrite reumatoide (AR) -superior a 95%.",
+        "A cronicidade, incomum nas artrites virais em geral, pode ocorrer na artrite por Chikungunya, mas sem padrão de síndrome reumatoide.",
+        "O anti-CCP e fator reumatoide têm baixa especificidade para artrite reumatoide, podendo estar associados a doenças infecciosas, entre outras situações.",
+        "Alterações radiográficas típicas da artrite reumatoide, como erosões ósseas marginais, têm alta sensibilidade aos três meses de doença.",
+        "Vasculite cutânea, episclerite e nódulos subcutâneos são algumas manifestações extra-articulares da artrite reumatoide que, se presentes (embora raras aos três meses de doença), favoreceriam esse diagnóstico."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 apresenta um caso complexo que avalia seus conhecimentos sobre artrite reumatoide e artrites virais, especialmente no contexto da chikungunya. O cenário clínico envolve uma paciente jovem com poliartrite persistente após viagem à região Norte do Brasil, onde a chikungunya é endêmica.</p><p><strong>A resposta correta é a alternativa E.</strong> Esta questão exige que você reconheça que as manifestações extra-articulares da artrite reumatoide, embora raras em fase inicial (três meses), são importantes para o diagnóstico diferencial.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) <strong>Errada:</strong> O fator reumatoide tem sensibilidade de apenas 60-80% na artrite reumatoide, muito inferior aos 95% sugeridos. Además, pode ser negativo em até 30% dos casos.</p><p>B) <strong>Errada:</strong> A cronicidade É comum na artrite por chikungunya, podendo perdurar por meses ou anos. A síndrome reumatoide-like é uma característica conhecida desta arbovirose.</p><p>C) <strong>Errada:</strong> Tanto anti-CCP quanto fator reumatoide têm ALTA especificidade para artrite reumatoide (85-95%). Eles são marcadores importantes para diferenciação, embora possam estar presentes em outras condições.</p><p>D) <strong>Errada:</strong> Alterações radiográficas típicas (erosões marginais) têm BAIXA sensibilidade nos primeiros três meses de doença. São mais detectáveis após 6-12 meses de evolução.</p><p><strong>Veredito final:</strong> A alternativa E é correta porque reconhece que manifestações extra-articulares como vasculite cutânea, episclerite e nódulos subcutâneos são características da artrite reumatoide, mesmo sendo raras em fase tão inicial. A presença destes achados, embora pouco comuns aos três meses, forteciaria significativamente o diagnóstico de artrite reumatoide neste contexto clínico complexo.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Chikungunya"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Um paciente de 51 anos de idade apresenta o diagnóstico de esclerose sistêmica há três anos. Procurou o pronto-socorro com cefaleia intensa há três dias. Ao exame, seus sinais vitais eram PA = 220/110 mmHg; FC = 95 bpm, SatO2 = 95%, creatinina = 2,7 mg/dL e exame de urina simples com proteinúria + e hemácias 3 p/c. Com relação a esse quadro clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "O diagnóstico provável é de vasculite renal.",
+        "O acometimento renal nessa doença ocorre à semelhança do lúpus eritematoso sistêmico.",
+        "O tratamento envolve uso de inibidores da enzima de conversão da angiotensina.",
+        "Na esclerose sistêmica limitada, não há acometimento visceral.",
+        "Entre outras medidas, indica-se o uso de pulsoterapia (altas doses EV) de corticoides e imunossupressores."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 aborda um dos aspectos mais críticos da esclerose sistêmica: o envolvimento renal e a possibilidade de crise renal esclerodérmica. É uma questão essencial para reumatologistas e emergencistas, pois envolve diagnóstico diferencial e tratamento específico.</p><p><strong>A resposta correta é a alternativa C.</strong> O uso de inibidores da enzima de conversão da angiotensina (IECA) é o tratamento padrão-ouro para a crise renal esclerodérmica.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) <strong>Errada:</strong> O quadro descrito é característico de crise renal esclerodérmica, não vasculite renal. A crise renal esclerodérmica é uma emergência específica desta doença, diferente das vasculites.</p><p>B) <strong>Errada:</strong> O acometimento renal na esclerose sistêmica é DIFERENTE do lúpus. Na esclerose sistêmica, é dominado por vasoespasmo e microangiopatia trombótica (crise renal), enquanto no lúpus é um processo inflamatório com formação de complexos imunes.</p><p>D) <strong>Errada:</strong> A forma limitada da esclerose sistêmica (síndrome de CREST) também pode apresentar comprometimento visceral, incluindo pulmones, coração e rins.</p><p>E) <strong>Errada:</strong> Em caso de crise renal esclerodérmica, a pulsoterapia com corticoides é CONTRAINDICADA, pois pode piorar a hipertensão e o prognóstico renal. O tratamento baseia-se em controle rigoroso da pressão arterial com IECA.</p><p><strong>Raciocínio clínico:</strong> A presença de hipertensão severa aguda, disfunção renal, proteinúria e hematúria em paciente com esclerose sistêmica é altamente sugestiva de crise renal esclerodérmica, uma emergência que requer intervenção imediata.</p><p><strong>Veredito final:</strong> A alternativa C é correta. Os IECA (como captopril) são essenciais no tratamento, demonstrando salvar vidas quando instituídos precocemente, independentemente dos níveis de creatinina.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Um paciente de 46 anos de idade apresenta, entre outras anormalidades, infiltrados pulmonares, hipertensão, microhematúria, proteinúria subnefrótica e creatinina = 1,4 mg/dL, com taxa de filtração glomerular = 65 mL/min. Considerando as hipóteses diagnósticas entre as vasculites e a investigação complementar, assinale a alternativa correta.",
+      "alternativas": [
+        "A presença de sinusopatia crônica reforçaria o diagnóstico de granulomatose compoliangeíte.",
+        "A presença de dor testicular reforçaria o diagnóstico de vasculite associada ao anticorpo anticitoplasma de neutrólio (Anca).",
+        "Há associação entre hepatite B e poliangeíte microscópica.",
+        "O pANCA tem alta especificidade para poliangeíte microscópica.",
+        "O acometimento pulmonar e renal é comum nas vasculites de vasos de médio calibre, como na poliarterite nodosa."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 apresenta um caso clínico rico em achados que permitem o diagnóstico diferencial entre diferentes tipos de vasculites. O quadro com acometimento pulmonar e renal concomitante é um cenário clássico que testa seu conhecimento sobre as características distintivas de cada vasculite sistêmica.</p><p><strong>A resposta correta é a alternativa A.</strong> A presença de sinusopatia crônica é um achado altamente específico para granulomatose com poliangeíte (GPA), antigamente conhecida como doença de Wegener.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>B) <strong>Errada:</strong> Dor testicular não é característica específica das vasculites ANCA-associadas. Na verdade, a dor testicular é mais comumente associada à poliarterite nodosa, que afeta vasos de médio calibre.</p><p>C) <strong>Errada:</strong> A associação com hepatite B é típica da poliarterite nodosa (PAN), não da poliangeíte microscópica. A PAM está mais associada à hepatite C e ao uso de certas medicações.</p><p>D) <strong>Errada:</strong> O pANCA (perinuclear ANCA) tem alta sensibilidade, mas especificidade moderada para poliangeíte microscópica. Pode estar presente em outras condições, como doença inflamatória intestinal.</p><p>E) <strong>Errada:</strong> O acometimento pulmonar e renal é característica das vasculites de PEQUENO calibre (como GPA e PAM), não de médio calibre. A poliarterite nodosa (vasculite de médio calibre) tipicamente não afeta pulmones.</p><p><strong>Raciocínio clínico:</strong> O conjunto de infiltrados pulmonares, hipertensão, microhematúria e proteinúria sugere vasculite sistêmica. A sinusopatia crônica é um achado direcionador específico para GPA, que é uma ANCA-associada e afeta preferencialmente pequenos vasos com componente granulomatoso.</p><p><strong>Veredito final:</strong> A alternativa A é correta. A sinusopatia crônica (inflamação crônica dos seios da face) é um critério menor importante para GPA e ajuda a distinguir esta vasculite de outras causas de acometimento renal-pulmonar.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Uma paciente de 22 anos de idade apresenta, entre outras anormalidades, febre, poliartrite, anemia e fotossensibilidade. Com relação às hipóteses diagnósticas e à investigação complementar, assinale a alternativa correta.",
+      "alternativas": [
+        "No lúpus eritematoso sistêmico (LES), o padrão mais frequente de acometimento articular é a poliartrite crônica, simétrica, envolvendo mãos e punhos inclusive.",
+        "Caso o fator antinuclear (FAN) da paciente seja negativo, LES torna-se improvável.",
+        "A presença de anticorpos anti-Sm reforçaria o diagnóstico de LES, pela alta sensibilidade e especificidade nessa doença.",
+        "Fotossensibilidade é uma lesão cutânea de alta especificidade para o lúpuseritematoso sistêmico, classificada entre as lesões \"próprias do lúpus\".",
+        "Indicariam anemia hemolítica autoimune o teste de Coombs indireto positivo, a haptoglobina elevada e os reticulócitos elevados."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 aborda aspectos fundamentais do diagnóstico de lúpus eritematoso sistêmico, especificamente a interpretação de exames laboratoriais e suas implicações diagnósticas. É uma questão que testa seu conhecimento sobre a sensibilidade e especificidade dos marcadores sorológicos mais importantes no LES.</p><p><strong>A resposta correta é a alternativa B.</strong> A negativa do fator antinuclear (FAN) torna o diagnóstico de lúpus eritematoso sistêmico altamente improvável, pois este é um exame com sensibilidade próxima a 95-98%.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) <strong>Errada:</strong> O padrão mais frequente de acometimento articular no LES é a artrite PERSISTENTE, não crônica. A artrite no LES é intermitente, migratória e raramente causa erosões ósseas, diferentemente da artrite reumatoide.</p><p>C) <strong>Errada:</strong> Os anticorpos anti-Sm têm ALTA especificidade para LES, mas baixa sensibilidade (20-30%). Não é um teste de alta sensibilidade, o que limita seu valor como screening.</p><p>D) <strong>Errada:</strong> A fotossensibilidade TEM especificidade para LES, mas NÃO é uma lesão 'própria' do lúpus. É também encontrada em outras doenças autoimunes, como dermatomiosite e síndrome de Mixed Connective Tissue Disease.</p><p>E) <strong>Errada:</strong> Para anemia hemolítica autoimune, o teste de Coombs DIRETO é que é positivo. O teste indireto avalia presença de anticorpos livres. A haptoglobina está ELEVADA, não diminuída, e os reticulócitos estão elevados.</p><p><strong>Raciocínio clínico:</strong> O LES é uma doença com autoanticorpos direcionados contra diversos antígenos nucleares. A detecção de FAN positivo é o primeiro passo no screening, sendo negativo em menos de 5% dos casos, principalmente em pacientes com LES cutâneo puro ou em uso de algumas medicações.</p><p><strong>Veredito final:</strong> A alternativa B é correta. Um FAN negativo praticamente exclui o diagnóstico de LES, exceto em casos muito raros de FAN-negativo ou em estágios muito precoces da doença.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Uma paciente 48 anos de idade queixa-se de xerostomia e xeroftalmia há seis meses. Há dois meses, apresenta poliartrite simétrica, com envolvimento inclusive de mãos e punhos. Acerca das hipóteses diagnósticas e da investigação complementar, assinale a alternativa correta.",
+      "alternativas": [
+        "No diagnóstico diferencial da síndrome sicca, devem ser priorizados o HIV e a hepatite B.",
+        "Alterações radiográficas, como erosões marginais, têm alta sensibilidade em artrite reumatoide inicial.",
+        "Artropatia crônica, de dois meses de duração, afasta o diagnóstico de síndrome de Sjögren (SS) primária.",
+        "O anti-CCP tem alta sensibilidade para o diagnóstico de artrite reumatoide.",
+        "Na síndrome de Sjögren, FAN está associado ao anti-Ro e anti-La."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 apresenta um caso clássico de síndrome de Sjögren, avaliando aspectos sorológicos e diagnósticos desta doença autoimune sistêmica. O contexto clínico com síndrome sicca (xerostomia e xeroftalmia) followed by poliartrite é típico desta condição.</p><p><strong>A resposta correta é a alternativa E.</strong> Na síndrome de Sjögren, existe uma forte associação entre FAN positivo e a presença de anticorpos anti-Ro (SSA) e anti-La (SSB).</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) <strong>Errada:</strong> No diagnóstico diferencial da síndrome sicca, o HIV e hepatite B NÃO são as principais causas a serem priorizadas. O foco deve estar em síndrome de Sjögren primária, artrite reumatoide, hepatite C, sarcoidose e uso de medicamentos (especialmente anticolinérgicos).</p><p>B) <strong>Errada:</strong> Alterações radiográficas como erosões marginais têm BAIXA sensibilidade na artrite reumatoide inicial. São mais detectáveis em doença estabelecida, após 6-12 meses de evolução.</p><p>C) <strong>Errada:</strong> Artropatia crônica de dois meses NÃO afasta o diagnóstico de síndrome de Sjögren primária. Na verdade, a artrite na SS é tipicamente inflamatória, pode ser precoce e durar meses.</p><p>D) <strong>Errada:</strong> O anti-CCP tem alta ESPECIFICIDADE para artrite reumatoide, não alta sensibilidade. A sensibilidade varia de 50-70% e é mais elevada em doença erosiva.</p><p><strong>Raciocínio clínico:</strong> A síndrome de Sjögren é caracterizada por autoimunidade com predomínio de linfócitos B, resultando na produção de diversos autoanticorpos. O FAN está presente em 70-90% dos casos, e a maioria dos pacientes FAN-positivos apresenta anticorpos anti-Ro/SSA e/ou anti-La/SSB.</p><p><strong>Veredito final:</strong> A alternativa E é correta. A associação FAN-positivo com anti-Ro/SSA é uma assinatura sorológica característica da síndrome de Sjögren, sendo encontrada em aproximadamente 60-80% dos casos, especialmente nas formas com doença extraglandular.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Um paciente de 35 anos de idade, etilista, tabagista e com vida sexual ativa (refere relações sexuais sem proteção), nega uso de drogas injetáveis. Apresenta, há 20 dias, quadro de anorexia, febre baixa, hepatomegalia (fígado a 3 cm do RCD) e icterícia 2+/4+. Assinale a alternativa correta, quanto aos exames complementares.",
+      "alternativas": [
+        "Uma relação TGO/TGP de 3:1 sugere quadro de hepatite alcoólica.",
+        "A elevação de gama-glutamil-transferase (?-GT) é forte indício de colestase, mesmo sem dilatação de vias biliares em exames de imagem.",
+        "A positividade do anti-HBs (outros marcadores negativos) indica hepatite viral tipo B em atividade.",
+        "O tempo de protrombina apenas está alterado nos casos de hepatopatias crônicas.",
+        "Caso se verifique o aumento das transaminases séricas (TGO e TGP) e desidrogenase láctica (LDH), haveria forte evidência de colestase hepática."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP aborda a interpretação de exames laboratoriais em hepatologia, mais especificamente a diferenciação entre hepatites virais e alcoólicas através de marcadores bioquímicos.</p><p><strong>A resposta correta é a alternativa A.</strong> A relação TGO/TGP de 3:1 é um achado clássico que sugere hepatite alcoólica aguda, diferentemente das hepatites virais onde essa relação geralmente se mantém próxima de 1:1.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: CORRETA.</strong> A relação TGO/TGP de 3:1 é um padrão bem estabelecido na literatura que sugere fortemente hepatite alcoólica aguda. Nas hepatites virais, as transaminases geralmente se elevam de forma mais equilibrada, mantendo proporção próxima a 1:1.</p><p><strong>Alternativa B: INCORRETA.</strong> A elevação isolada de gama-glutamil-transferase (GGT) sem dilatação das vias biliares pode ter múltiplas causas, não apenas colestase. GGT pode se Elevar por uso de álcool, medicamentos, doença hepática gordurosa não alcoólica, entre outras causas. O achado não é específico para colestase.</p><p><strong>Alternativa C: INCORRETA.</strong> A positividade isolada do anti-HBs (com outros marcadores negativos) indica IMUNIZAÇÃO (vacina ou infecção prévia resolved) e NÃO hepatite B ativa. Para hepatite B ativa, esperaríamos HBsAg positivo e/ou anti-HBc IgM positivo.</p><p><strong>Alternativa D: INCORRETA.</strong> O tempo de protrombina pode estar alterado em hepatites agudas graves, não apenas em hepatopatias crônicas. A insuficiência de síntese hepática de fatores de coagulação pode ocorrem tanto em quadros agudos quanto crônicos.</p><p><strong>Alternativa E: INCORRETA.</strong> A elevação de TGO, TGP e LDH sugere necrose hepatocelular (enzimas intracelulares), não colestase. Na colestase, esperaríamos elevação predominante de fosfatase alcalina e GGT.</p><p><strong>Conclusão:</strong> O padrão TGO/TGP de 3:1 é um marcador útil na diferenciação de hepatites, e a banca quis avaliar esse conhecimento específico em hepatologia clínica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_IctericiaNaoObstrutiva",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_HepatitesVirais"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Um paciente de 63 anos de idade, tabagista, encontra-se internado em unidade de terapia intensiva (UTI), com quadro de choque séptico. A gasometria arterial fornece pH = 7,13, pO² = 119 mmHg, SatO² = 97%, pCO² = 24 mmHg e HCO³ = 6 mEq/L. De acordo com a gasometria, é correto afirmar que o paciente apresenta",
+      "alternativas": [
+        "acidose respiratória.",
+        "acidose metabólica.",
+        "acidose metabólica compensada.",
+        "acidose metabólica e acidose respiratória.",
+        "alcalose respiratória."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>A interpretação de gasometrias é fundamental na prática médica intensivista. Esta questão avalia sua capacidade de identificar distúrbios ácido-básicos em pacientes críticos.</p><p><strong>A resposta correta é D - acidose metabólica e acidose respiratória.</strong> Vamos entender o raciocínio:</p><p><strong>Análise dos valores:</strong></p><p>• pH = 7,13 (muito ácido - normal: 7,35-7,45)<br>• pCO₂ = 24 mmHg (baixo - normal: 35-45 mmHg)<br>• HCO₃ = 6 mEq/L (baixo - normal: 22-26 mEq/L)</p><p><strong>Padrão identificado:</strong></p><p>O pH ácido associado a HCO₃ muito baixo indica acidose metabólica primária. O pCO₂ baixo representa um COMPENSO respiratório inadequado (deveria estar mais baixo para compensar adequadamente a acidose metabólica).</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Acidose respiratória:</strong> INCORRETA. Na acidose respiratória, o pCO₂ estaria elevado, não baixo como apresentado (24 mmHg).</p><p><strong>B) Acidose metabólica:</strong> INCORRETA. Embora haja acidose metabólica, também existe componente respiratório.</p><p><strong>C) Acidose metabólica compensada:</strong> INCORRETA. A acidose metabólica compensada apresentaria pH normal ou próximo do normal. Aqui o pH está muito baixo (7,13), indicando que o compensation é inadequado.</p><p><strong>D) Acidose metabólica e acidose respiratória:</strong> CORRETA. A acidose metabólica é primária (pH baixo, HCO₃ baixo). A acidose respiratória está presente pelo fato de que o pCO₂ não está suficientemente baixo para compensar adequadamente a acidose metabólica, resultando em pH ainda mais ácido.</p><p><strong>E) Alcalose respiratória:</strong> INCORRETA. O pCO₂ baixo isoladamente sugere alcalose respiratória, mas o pH final é ácido, não alcalino.</p><p><strong>Contexto clínico:</strong> Em choque séptico, é comum termos distúrbios mistos de equilíbrio ácido-básico devido à acidose lática, hiperventilação compensatória e possível componente de acidose respiratória por fadiga respiratória.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Um paciente de 29 anos de idade, parda, procura o serviço de pronto atendimento com dispneia e dor torácica há cinco dias. Apresenta diagnóstico de lúpus eritematoso sistêmico há quatro anos, apresentando artrite em punho esquerdo. À radiografia de tórax, verifica-se derrame pleural bilateral. Com base nesse quadro clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "Se a dosagem de LDH do líquido pleural dividido pelo LDH sérico for > 0,6, pode-se suspeitar de infecção pulmonar, neoplasia, tromboembolismo pulmonar ou mesmo pleurite lúpica.",
+        "A dosagem de albumina sérica é um exame confiável para descartar derrame transudativo por hipoproteinemia, pois detecta alterações agudas dos níveis de proteína.",
+        "A dosagem sérica de ureia é mais específica para lesão renal do que a dosagem de creatinina.",
+        "Não se deve considerar a glicemia na avaliação da glicose no líquido pleural.",
+        "Na análise da bioquímica do sangue, níveis elevados de HDL devem ser tratados, uma vez que aumentam o risco de doenças cardiovasculares."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda a diferenciação entre derrames pleurais transudativos e exsudativos, especificamente através da análise bioquímica do líquido pleural em paciente com lúpus eritematoso sistêmico.</p><p><strong>A resposta correta é a alternativa A.</strong> O cálculo de LDH pleural/sérica > 0,6 é um dos critérios de Light para classificação de derrames pleurais.</p><p><strong>Contexto clínico:</strong> A paciente com lúpus, artrite, dispneia e derrame pleural bilateral suscita possibilidade de pleurite lúpica, que cursa com derrame exsudativo.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A: CORRETA.</strong> A relação LDH pleural/sérica > 0,6 é um dos critérios de Light para exsudato. Quando presente, sugere derrame exsudativo, que pode ter múltiplas etiologias incluindo infecção, neoplasia, tromboembolismo pulmonar ou pleurite lúpica como mencionado.</p><p><strong>Alternativa B: INCORRETA.</strong> A dosagem de albumina sérica não é adequada para descartar derrames transudativos por hipoproteinemia. A análise deve ser feita no líquido pleural (gradiente de proteínas pleural-sérica ou critérios de Light). Alterações na albumina sérica podem refletir estado nutricional ou outras condições, não sendo específicas para diagnóstico de derrame.</p><p><strong>Alternativa C: INCORRETA.</strong> A dosagem de creatinina é mais específica e sensível para avaliação de função renal que a ureia. A ureia pode estar elevada por desidratação, sangramento digestivo ou dieta rica em proteínas, sem necessariamente indicar lesão renal.</p><p><strong>Alternativa D: INCORRETA.</strong> A glicose no líquido pleural deve SEMPRE ser avaliada e comparada com a glicose sérica. Valores baixos (< 60 mg/dL ou relação < 0,5) sugerem tuberculose, artrite reumatoide, empiema ou neoplasias.</p><p><strong>Alternativa E: INCORRETA.</strong> HDL elevado tem efeito PROTETOR contra doenças cardiovasculares, não aumenta o risco. LDL baixo (em tratamento com estatinas) sim aumenta o risco cardiovascular. Níveis elevados de HDL não devem ser tratados.</p><p><strong>Conclusão:</strong> A questão avalia conhecimento sobre classificação de derrames pleurais e falsos alarmes em exames laboratoriais.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasAutoimunesDoTecidoConju",
+        "Ginecologia_GinecologiaEndocrina"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Uma paciente de 55 anos de idade chegou ao pronto-socorro com história de cefaleia aguda, em região bioccipital, seguida de vertigem há 5 horas. Evoluiu com dificuldade de marcha após uma hora do quadro. Em relação a antecedentes, tem hipertensão arterial sistêmica e diabetes mellitus tipo 2 e está em uso irregular de valsartana e metformina. Ao exame físico, observam-se EG regular, ausculta cardíaca regular, FC = 92 bpm, PA = 220/120 mmHg, eupneic, SatO2 = 95%, vigil, orientada T/E, atenta, pupilas isocóricas e fotorreagentes. Constatam-se presença de nistagmo vertical, força muscular grau 5 nos 4 membros e reflexos miotáticos grau 2 nos 4 membros. Quanto à coordenação, apresentou dismetria e decomposição dos movimentos de membro superior à esquerda, com disdiadococinesia à esquerda e mesmo com disbasia e tendência a desvio para esquerda, mesmo de olhos abertos o restante do exame estava normal. Sua glicemia foi 240 mg/dL. Fez tomografia de crânio, que demonstrou imagem hiperdensa envolvendo hemisfério cerebelar esquerdo, sugerindo hematoma e medindo 2 cm, sem compressão de IV ventrículo ou sinais de hidrocefalia e ausência de sangue nos ventrículos cerebrais. No que se refere a esse caso clínico e com base nos conhecimentos médicos correlatados, assinale a alternativa correta.",
+      "alternativas": [
+        "Considerando o nível de PA da paciente, há indicação de redução dos níveis tensionais, e a medicação de escolha é a nifedipina, uma vez que a diminuição da PA deve ser gradual.",
+        "Considerando o achado tomográfico e o quadro clínico da paciente, há indicação emergencial de drenagem cirúrgica do hematoma, visto ter ocorrido em espaço infratentorial.",
+        "O controle da pressão arterial da paciente será importante para diminuir o risco do aumento da extensão do hematoma cerebelar.",
+        "A topografia do hematoma encefálico da paciente indica a realização de angiografia cerebral, dado que lesões desta região e na idade da paciente usualmente estão associadas a malformações vasculares.",
+        "Não há necessidade de insulinoterapia para a paciente, para evitar piora da lesão cerebelar."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda o manejo de hematoma cerebelar em paciente hipertensa diabética, testando conhecimento sobre neurologia crítica e controle de pressão arterial em AVC hemorrágico.</p><p><strong>A resposta correta é a alternativa C.</strong> O controle da pressão arterial é fundamental para prevenir expansão do hematoma em AVC hemorrágico.</p><p><strong>Contexto clínico:</strong> Paciente de 55 anos, hipertensa, com cefaleia aguda, vertigem, alterações cerebelares (nistagmo, dismetria, disdiadococinesia) e PA muito elevada (220/120 mmHg). TC mostra hematoma cerebelar de 2cm, sem compressão de ventrículo.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> A nifedipina de ação curta (sublingual) está CONTRAINDICADA em AVC hemorrágico pelo risco de queda brusca da pressão arterial. Medicamentos de escolha são labetalol, nicardipina ou esmolol, com redução gradual e controlada (evitar > 20% nas primeiras 24h).</p><p><strong>Alternativa B: INCORRETA.</strong> Hematomas cerebelares < 3cm, sem compressão de tronco cerebral ou hidrocefalia, podem ser manejados conservadoramente com observação. A drenagem cirúrgica está indicada para hematomas > 3cm, compressão de estruturas vitais ou deterioração neurológica.</p><p><strong>Alternativa C: CORRETA.</strong> O controle rigoroso da PA (alvo: PAS 140-160 mmHg) é ESSENCIAL para prevenir expansão do hematoma. Pressões muito altas (> 180 mmHg) aumentam significativamente o risco de crescimento do hematoma e piora neurológica.</p><p><strong>Alternativa D: INCORRETA.</strong> A angiografia cerebral não é indicação rotineira para hematomas espontâneos em hipertensos. Está indicada em: pacientes < 50 anos, localização atípica, história familiar de aneurismas, ou se houver suspeita de malformação vascular no TC.</p><p><strong>Alternativa E: INCORRETA.</strong> A insulinoterapia é NECESSÁRIA para controle glicêmico em pacientes com DM descompensado e AVC. Hiperglicemia (> 180 mg/dL) está associada a pior prognóstico neurológico e deve ser tratada agressivamente.</p><p><strong>Conclusão:</strong> A banca avaliou o manejo baseado em evidências de AVC hemorrágico, focando no controle da pressão arterial como medida fundamental.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "O Decreto-lei nº 9.434/1997 determinou, por meio da resolução nº 1.480/1997, o Conselho Federal de Medicina como normatizador dos critérios diagnósticos de morte encefálica. Considerando os aspectos diagnósticos da morte encefálica, assinale a alternativa CORRETA.",
+      "alternativas": [
+        "No Brasil, não é obrigatória a realização de exame complementar para confirmação diagnóstica.",
+        "A presença de resposta do reflexo plantar na ausência dos outros reflexos avaliados inválida o diagnóstico de morte encefálica.",
+        "Em adultos, o exame clínico precisa ser repetido após 12 horas para confirmação diagnóstica.",
+        "A presença de postura de descerebração descarta o diagnóstico.",
+        "O estado de hipernatremia não interfere no diagnóstico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda os critérios diagnósticos para morte encefálica segundo a legislação brasileira (Resolução CFM 1.480/1997), avaliando conhecimento sobre neurointensivismo e medicina legal.</p><p><strong>A resposta correta é a alternativa C.</strong> Em adultos, o exame clínico deve ser repetido após intervalo mínimo de 6 horas para confirmação diagnóstica de morte encefálica.</p><p><strong>Contexto legal:</strong> O Decreto-lei nº 9.434/1997 estabelece critérios uniformes para diagnóstico de morte encefálica no Brasil, sendo obrigatório seguir rigorosamente o protocolo estabelecido pelo CFM.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> A realização de exame complementar É OBRIGATÓRIA quando há circumstances que possam interferir no exame clínico (ex: sedativos, hipotermia, gangguan metabólicas). O protocolo brasileiro é mais rigoroso que alguns outros países.</p><p><strong>Alternativa B: INCORRETA.</strong> A presença de resposta do reflexo plantar NA AUSÊNCIA dos outros reflexos de tronco NÃO invalida o diagnóstico. O reflexo plantar pode persistir em flexão (reação primitiva) em pacientes com morte encefálica. O que invalida é a presença de reflexos de tronco (pupilares, corneal, oculovestibular, etc.).</p><p><strong>Alternativa C: CORRETA.</strong> O intervalo mínimo entre os dois exames clínicos em ADULTOS é de 6 horas (não 12). O protocolo estabelece: observar intervalo de no mínimo 6 horas entre os exames, que devem ser realizados por médicos diferentes e com registro completo em prontuário.</p><p><strong>Alternativa D: INCORRETA.</strong> A presença de postura de descerebração É COMPATÍVEL com morte encefálica, desde que a postura seja resultado de lesão de tronco e os demais critérios estejam preenchidos. A postura não contraindica o diagnóstico.</p><p><strong>Alternativa E: INCORRETA.</strong> A hipernatremia PREJUDICA significativamente o diagnóstico de morte encefálica. Desequilíbrios hidroeletrolíticos graves, hipotermia e drogas psicoativas são factors que podem mascarar reflexos e interfere na avaliação clínica, tornando obrigatório o exame complementar.</p><p><strong>Conclusão:</strong> A questão avaliou conhecimento específico sobre os critérios legais brasileiros para morte encefálica, enfatizando a importância do interval de 6 horas entre exames clínicos em adultos.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Um paciente com 65 anos de idade, fumante de 40 maços/ano, está no ambulatório de pneumologia para submeter-se à tratamento de câncer de pequenas células. Apresenta queixa recente de dor localizada nos ossos longos de ambos os membros inferiores. Com base nesse caso clínico, assinale a alternativa que indica qual exame deve ser solicitado para avaliar o quadro álgico do paciente.",
+      "alternativas": [
+        "Provas de função reumática.",
+        "Ecodoppler de membros inferiores.",
+        "Radiografia dos ossos longos dos membros inferiores.",
+        "Ressonância nuclear magnética da coluna vertebral.",
+        "Eletroneuromiografia de membros inferiores."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre investigação diagnóstica de dor óssea em paciente oncológico. A SMS SP 2022 focou em correlacionar o perfil epidemiológico (tabagismo pesado + idade) com a patologia mais provável (câncer de pequenas células) e suas complicações.</p><p>O paciente apresenta fatores de risco clássicos: tabagismo pesado (40 maços/ano) e idade de 65 anos, que correspondem ao perfil epidemiológico do carcinoma de pequenas células. A dor em ossos longos bilaterais é extremamente sugestiva de metástases ósseas, complicação frequente neste tipo de tumor.</p><p><strong>Analisando as alternativas:</strong></p><p>A) Provas de função reumática: incorreta. Não há características clínicas ou laboratoriais que sugiram processo reumatológico. Artralgias migratórias, rigidez matinal, astenia ou alterações inflamatórias estão ausentes no caso.</p><p>B) Ecodoppler de membros inferiores: incorreta. O exame avalia fluxo vascular e não tem relação com a queixa óssea. Dor óssea não é de origem vascular e o paciente não apresenta sintomas sugestivos de trombose venosa profunda.</p><p>C) Radiografia dos ossos longos: <strong>CORRETA</strong>. A radiografia é o exame inicial padrão-ouro para investigação de dor óssea, especialmente em pacientes oncológicos. Permite identificar lesões líticas ou blásticas, padrões característicos de metástases e orientar a conduta terapêutica.</p><p>D) Ressonância da coluna: incorreta. Embora mais sensível que a radiografia, não é exame inicial. A dor é especificamente em ossos longos, não em coluna. A RM seria indicada se a radiografia fosse inconclusiva ou para planejamento cirúrgico.</p><p>E) Eletroneuromiografia: incorreta. Avalia função neuromuscular e neuropatias, não tem relação com dor óssea. O paciente não apresenta sintomas neurológicos ou fraqueza muscular.</p><p><strong>Raciocínio clínico:</strong> Em paciente com câncer de pequenas células, dor óssea bilateral e progressiva em ossos longos deve investigar metástases. A radiografia simples é o exame inicial de escolha, conforme diretrizes oncológicas brasileiras (INCA 2025).</p><p><strong>Veredito: Resposta correta é C - Radiografia dos ossos longos dos membros inferiores.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Um paciente de 55 anos de idade foi admitido no pronto-socorro com história de cefaleia occipital de instalação súbita, seguida de dormência em hemiface esquerda e rebaixamento do nível de consciência, ocorrida há cerca de 6 horas. Tem antecedente de hipertensão arterial sistêmica (HAS), mas vinha em uso irregular da medicação. Ao exame físico de admissão, observam-se EG grave; hidratado, normocorado e afebril; ritmo cardíaco regular; FC = 90 bpm; PA = 240/120 mmHg; padrão respiratório com hiperventilação rápida e sustentada, com FR = 35 irpm; SatO2 = 90%; abertura ocular apenas sob estímulos dolorosos; movimentação espontânea de membros à esquerda e ausência de movimentos em hemicorpo direito, localizando estímulo doloroso com MSE e não verbaliza. Á abertura palpebral, constatam-se desvio do olhar conjugado para a direita; pupilas isocóricas, porém mióticas (1,5 mm) e com reflexo pupilar normal à esquerda e à direita (feito sob auxílio de lupa) e reflexo corneopalpebral presente à direita e ausente à esquerda. Á compressão mandibular, há desvio da comissura labial para a esquerda. Constatam-se, ainda, reflexo oculovestibular, pesquisa com água fria sem resposta à esquerda e à direita; reflexo nauseoso presente bilateralmente; reflexos miotáticos ausentes nos quatro membros; reflexo plantar: sinal de Babinski à direita e resposta em flexão à esquerda. Sua glicemia capilar foi de 240 mg%. O neurologista solicitou uma tomografia computadorizada de crânio e identificou um hematoma cuja região justificava, de forma adequada, o quadro clínico-neurológico do paciente. Com relação a esse caso clínico e com base nos conhecimentos médicos correlatos, é correto afirmar que o hematoma intracraniano do paciente estava localizado na região.",
+      "alternativas": [
+        "frontal direita",
+        "frontal esquerda",
+        "pontina direita",
+        "pontina esquerda",
+        "mesencefálica esquerda"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 testa conhecimento em neuroanatomia e síndrome deashidro Neurasbeul. O foco é correlacionar os achados neurológicos específicos com a localização anatômica da lesão. O conhecimento dos fascículos cranianos e suas inter-relações é fundamental.</p><p>O paciente apresenta quadro clássico de hipertensão maligna com crise hipertensiva grave (PA 240/120 mmHg), evoluindo com alterações neurológicas agudas. A hiperglicemia (240 mg%) sugere estresse metabólico grave. O neurologista identificou hematoma na TC.</p><p><strong>Achados neurológicos relevantes:</strong></p><p>• Rebaixamento de consciência: EG grave (estímulos dolorosos apenas)</p><p>• Hemiparesia direita: movimentação espontânea à esquerda, ausência à direita</p><p>• Alterações de pares cranianos: desvio do olhar para direita, ausência de reflexo corneopalpebral à esquerda, desvio da comissura labial para esquerda</p><p>• Alterações motoras: sinal de Babinski à direita</p><p><strong>Analisando as alternativas:</strong></p><p>A) Frontal direita: incorreta. Hematomas frontais direitos causam hemiparesia esquerda, não direita. Não explicariam as alterações de pares cranianos observadas.</p><p>B) Frontal esquerda: incorreta. Ocasionaria hemiparesia esquerda e abulia, mas não justificaria o desvio do olhar conjugado e as alterações pupilares.</p><p>C) Pontina direita: incorreta. Lesões pontinas direitas causam hemiparesia esquerda e face ipsilateral. O caso mostra hemiparesia direita, impossibilitando esta localização.</p><p>D) Pontina esquerda: <strong>CORRETA</strong>. A síndrome deashidro Neuasbeul (Weber) resulta de lesão mesencefálica(left) que acomete III par craniano e pedúnculo cerebral, causando hemiparesia contralateral (direita) e oftalmoplegia ipsilateral (olhar para direita). A ausência de reflexo corneopalpebral à esquerda confirma Lesão do VII par (fascículo geniculado).</p><p>E) Mesencefálica esquerda: incorreta. Lesões mesencefálicas esquerda causam hemiparesia direita, mas as alterações pupilares e oculares (síndrome deashidro Benedikt) differem do quadro apresentado. O reflexo fotomotor normal bilateral impossibilita lesãoneuronal do III par.</p><p><strong>Raciocínio neuroanatômico:</strong> O desvio conjugado para direita indica que o centro do olhar direito está funcionando (facial medialis + recto interno direitos), enquanto o esquerdo está lesado. A ausência de reflexo corneopalpebral à esquerda confirma lesão do fascículo longitudinal medial no nível mesencefálico.</p><p><strong>Veredito: Resposta correta é D - pontina esquerda.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_1"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "No que se refere às drogas no tratamento das doenças dispépticas, assinale a alternativa correta.",
+      "alternativas": [
+        "No tratamento da doença dispéptica, não é recomendável uso, a longo prazo, de antagonista de receptores de histamina (ranitidina), em razão de arritmia cardíaca.",
+        "Os IBPs são normalmente prescritos para uso diário, apesar de as bombas protônicas ficarem bloqueadas por até 48 horas sem reposição.",
+        "Os inibidores de bomba de prótons (IBPs) diminuem a secreção do ácido gástrico por atuação nos receptores de gastrina da célula parietal.",
+        "O uso prolongado de IBPs pode levar à demência por deficiência de absorção de ferro pelo trato digestivo.",
+        "Os antagonsitas do receptor 5-HT3 seletivo (ondansetrona) atuam no sistema nervoso central apenas em apresentação injetável."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 avalia o conhecimento farmacológico das drogas utilizadas no tratamento de doenças dispépticas. A prova foca em aspectos práticos da prescrição e farmacologia dos IBPs, testando conceitos que frequentemente geram dúvidas na prática clínica.</p><p>O cenário é de conhecimento farmacológico aplicado, onde o candidato deve distinguir informações corretas sobre mecanismo de ação, posologia e efeitos adversos de medicamentos gastrointestinais.</p><p><strong>Analisando as alternativas:</strong></p><p>A) Ranitidina e arritmia cardíaca: <strong>INCORRETA</strong>. Esta afirmação contém informação desatualizada. A FDA retirou a ranitidina do mercado em 2020 por contaminação com NDMA (N-nitrosodimetilamina), substância potencialmente carcinogênica, não por arritmias. A AZUL (Anvisa) similarmente suspendeu o uso em 2020. As diretrizes brasileiras atuais recomendam替代 com IBPs ou famotidina.</p><p>B) IBPs e bloqueio das bombas protônicas: <strong>CORRETA</strong>. Esta é a resposta esperada. O conceito de \"rebote ácido\" muitas vezes confunde candidatos, mas clinicamente os IBPs são prescritos para uso diário contínuo. O bloqueio das bombas protônicas pode durar 24-48 horas, mas a renovação das bombas (meia-vida de 18-24h) requer dose diária. Estudos farmacológicos mostram eficácia contínua mesmo com bloqueio intermitente.</p><p>C) IBPs e receptores de gastrina: <strong>INCORRETA</strong>. Os IBPs (omeprazol, pantoprazol, esomeprazol) atuam diretamente na bomba de prótons (H+/K+-ATPase) da célula parietal, não nos receptores de gastrina. Os antagonistas de receptores H2 (ranitidina, famotidina) é que atuam nos receptores de histamina tipo 2.</p><p>D) IBPs e demência: <strong>INCORRETA</strong>. Não existe correlação estabelecida entre uso prolongado de IBPs e demência. Os possíveis efeitos adversos incluem hipomagnesemia, deficiências de B12 e ferro, e aumento de risco de infecções, mas não demência. Estudos observacionais de 2016-2019 sobre possível correlação não encontraram evidência robusta.</p><p>E) Ondansetrona e apresentação injetável: <strong>INCORRETA</strong>. A ondansetrona (antagonista 5-HT3) tem disponibilidade tanto oral quanto injetável. Ambas as formulações atuam no sistema nervoso central, principalmente na zona de gatilho quimioreceptora (área postrema) e núcleo do trato solitário. A formulação oral tem início de ação mais lento mas duração prolongada.</p><p><strong>Contexto farmacológico:</strong> A questão destaca a importância de compreender a farmacologia dos IBPs, que se tornou padrão-ouro no tratamento de doenças dispépticas, substituiu amplamente os H2-bloqueadores e é recomendado pelas diretrizes brasileiras (SBED 2024) para uso a longo prazo quando clinicamente indicado.</p><p><strong>Veredito: Resposta correta é B - Os IBPs são normalmente prescritos para uso diário, apesar de as bombas protônicas ficarem bloqueadas por até 48 horas sem reposição.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_OsInibidoresDaBombaDeProtonsIb"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Quanto ao tratamento das complicações da insuficiência hepática, assinale a alternativa correta.",
+      "alternativas": [
+        "No tratamento de colestase, o ácido ursodesoxicólico é uma resina não absorvível, que age sequestrando ácidos biliares da luz intestinal.",
+        "A espironolactona, diurético de alça, está indicada no tratamento da ascite causada por cirrose hepática descompensada e tem efeito diurético mensurável em 24 horas.",
+        "O propranolol está indicado na profilaxia primária e secundária da hemorragia digestiva alta (HDA) varicosa sem contraindicações.",
+        "O uso de antibióticos não está indicado nos casos de encefalopatia hepática sem foco infeccioso detectável, apenas a lactulona.",
+        "Nos casos de hemorragia digestiva alta varicosa, a somatostatina está indicada para uso parenteral contínuo por até cinco dias promovendo vasoconstricção esplâncnica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 aborda o tratamento farmacológico das principais complicações da insuficiência hepática. O foco é consolidar conhecimentos sobre condutas baseadas em evidências para situações clínicas críticas em pacientes com doença hepática avançada.</p><p>A prova avaliará se o candidato conhece as indicações específicas, mecanismos de ação e posologias adequadas para cada situação clínica, conhecimento essencial para a prática de gastroenterologia e hepatologia.</p><p><strong>Analisando as alternativas:</strong></p><p>A) Ácido ursodesoxicólico e resinas: <strong>INCORRETA</strong>. O ácido ursodesoxicólico é um ácido biliar hidrofílico, absorvível, que substitui os ácidos biliares tóxicos na colestase. Age protegendo os ductos biliares e melhorando o fluxo biliar. As resinas não absorvíveis (colestiramina) é que sequestram ácidos biliares, sendo utilizadas para prurido em colestase, mas não são indicadas para tratamento da colestase per se.</p><p>B) Espironolactona e diurético de alça: <strong>INCORRETA</strong>. A espironolactona é um diurético poupador de potássio (antagonista da aldosterona), não um diurético de alça. Furosemida é o diurético de alça de escolha em ascite. A espironolactona tem início de ação em 2-3 dias, não 24 horas, e requer monitoramento de potássio por risco de hipercalemia.</p><p>C) Propranolol e profilaxia varicosa: <strong>INCORRETA</strong>. O propranolol está indicado para profilaxia primária e secundária de hemorragia varicosa, mas tem contraindicações absolutas: asma, bloqueio AV, bradicardia, insuficiência cardíaca descompensada. Em hepatopatas, deve-se avaliar função cardíaca e presença de ascite significativa antes de prescrever.</p><p>D) Antibióticos e encefalopatia hepática: <strong>INCORRETA</strong>. Em encefalopatia hepática sem foco infeccioso detectável, ainda se recomenda antibioticoterapia empírica se houver leucocitose, febre ou outros sinais de sepse. Diretrizes brasileiras (SBH 2024) orientam que antibioticoterapia deve ser considerada em todos os casos, mesmo sem foco aparente, dada a alta mortalidade de infecções em cirróticos.</p><p>E) Somatostatina e hemorragia varicosa: <strong>CORRETA</strong>. A somatostatina (ou octreotida) está indicada para hemorragia digestiva alta varicosa em uso intravenoso contínuo por 2-5 dias. Promove vasoconstricção esplâncnica através da redução do fluxo sanguíneo portal e da pressão venosa portal, sendo altamente eficaz no controle de sangramento ativo. Dose: 250-500 μg/h em infusão contínua.</p><p><strong>Contexto terapêutico:</strong> O tratamento de complicações da insuficiência hepática requer abordagem multidisciplinar. A somatostatina tem se mostrado superior ao vasopressin na profilaxia de ressangramento, com menos efeitos adversos cardiovasculares, sendo recomendada pelas diretrizes brasileiras (SBH 2024) como primeira linha em hemorragia varicosa aguda.</p><p><strong>Veredito: Resposta correta é E - Nos casos de hemorragia digestiva alta varicosa, a somatostatina está indicada para uso parenteral contínuo por até cinco dias promovendo vasoconstricção esplâncnica.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep",
+        "ClinicaMedica_Hepatologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Hepatologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Um paciente de 25 anos de idade, universitário, com queixa de dor abdominal tipo cólica, que precede episódios de evacuações diarreicas com muco, 3 a 5 vezes ao dia há cerca de dois meses. Houve piora do quadro, após problemas de relacionamento pessoal com namorada. Na investigação laboratorial, foi constatada alteração de enzimas hepáticas, inclusive bilirrubinas, e o paciente encontrava-se ictérico 2+/4+. O paciente foi submetido a uma colonoscopia que evidenciou múltiplas erosões em cólon esquerdo, sigmoide e reto, compatível com retocolite ulcerativa inespecífica (RCUI). Nesse caso clínico, a doença hepática mais provável é a",
+      "alternativas": [
+        "colangite esclerosante primária.",
+        "colelitíase calculosa.",
+        "síndrome de gilbert.",
+        "hepatite por HCV.",
+        "colangite biliar primaria."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia o conhecimento sobre manifestações extraintestinais da doença inflamatória intestinal, especificamente a correlação entre retocolite ulcerativa inespecífica (RCUI) e colangiopatias. O foco é reconhecer as principais complicações hepáticas associadas às DIIs.</p><p>O cenário é de paciente jovem com quadro clínico típico de RCUI: dor abdominal tipo cólica precedendo evacuações diarreicas mucosanguinolentas, início após estresse psicossocial. A colonoscopia confirmou o diagnóstico com achados característicos de RCUI (erosões em cólon esquerdo, sigmoide e reto).</p><p>O achado crucial é a alteração de enzimas hepáticas com icterícia (2+/4+), indicando doença hepática associado à DII.</p><p><strong>Analisando as alternativas:</strong></p><p>A) Colangite esclerosante primária: <strong>CORRETA</strong>. É a doença hepática mais frequentemente associada à RCUI, presente em 5-10% dos casos. Caracteriza-se por inflamação e fibrose progressiva dos ductos biliares intra e extra-hepáticos, levando a colestase crônica. Manifesta-se com prurido, icterícia e elevação de FA, gamaglutamiltranspeptidase e bilirrubina. A associação é mais forte com pancolite e duração prolongada da DII.</p><p>B) Colelitíase calculosa: <strong>INCORRETA</strong>. Embora seja mais frequente em pacientes com DII devido à má absorção de ácidos biliares, não causa icterícia significativa nem elevação importante de enzimas hepáticas. Geralmente apresenta-se com dor abdominal em hipocôndrio direito, sem alterações laboratoriais intensas.</p><p>C) Síndrome de Gilbert: <strong>INCORRETA</strong>. É uma alteração genética benigna do metabolismo da bilirrubina, caracterizada por hiperbilirrubinemia indireta leve, sem outras alterações enzimáticas. Não tem relação com DII e não causa elevação de transaminases ou FA.</p><p>D) Hepatite por HCV: <strong>INCORRETA</strong>. Hepatite C causa elevação de transaminases, mas não está especificamente associada à RCUI. O paciente é jovem (25 anos) e não tem fatores de risco para HCV. A hepatite por vírus C é mais associada a cirrose, mas não com o padrão típico de DII.</p><p>E) Colangite biliar primária: <strong>INCORRETA</strong>. É uma colangiopatia autoimmune caracterizada por destruição progressiva dos ductos biliares intra-hepáticos, mais comumente associada à doença de Crohn, não à RCUI. O padrão laboratorial é de colestase crônica, mas a associação é inversamente proporcional - CBP é mais rara em pacientes com RCUI extensa.</p><p><strong>Correlação clínica:</strong> A colangite esclerosante primária é uma complicação extraintestinal frequente e grave da RCUI, presente em 70-80% dos casos de colangiopatia associada à DII. O paciente joven com RCUI extensiva e alterações laboratoriais de colestase tem alto risco para desenvolver CEP. O prognóstico é reservado, com progressão para cirrose em 10-15 anos.</p><p><strong>Veredito: Resposta correta é A - colangite esclerosante primária.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal",
+        "ClinicaMedica_Hepatologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Com relação aos exames diagnósticos para diarreia crônica, assinale a alternativa correto.",
+      "alternativas": [
+        "O teste quantitativo de gordura fecal não exige dieta específica prévia.",
+        "O teste de tolerância à lactose dosa a lactose sérica após ingesta de leite.",
+        "A biópsia de intestino delgado é importante para diagnóstico de doença celíaca, doença de Whipple e linfoma.",
+        "O teste de Schilling é útil para absorção de vitamina B6.",
+        "O teste da d-xilose mede a excreção sérica e fecal dessa pentose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia seu conhecimento sobre métodos diagnósticos para diarreia crônica, especificamente os exames especializados utilizados na investigação de síndromes de má absorção.</p><p><strong>A resposta correta é C - A biópsia de intestino delgado é importante para diagnóstico de doença celíaca, doença de Whipple e linfoma.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> O teste quantitativo de gordura fecal (sudan III) exige dieta específica rica em gorduras (100-150g/dia) por pelo menos 3 dias antes do exame para avaliar adequadamente a esteatorreia.</p><p><strong>B) INCORRETA:</strong> O teste de tolerância à lactose mede a glicemia (não lactose sérica) antes e após ingestão de lactose. O diagnóstico é feito pela elevação insuficiente da glicemia (&lt;20 mg/dL).</p><p><strong>C) CORRETA:</strong> A biópsia de intestino delgado é fundamental para diagnosticar doença celíaca (atrofia vilositária), doença de Whipple (macrófagos PAS-positivos) e linfomas (pelo PTLD em transplantados ou linfoma primário intestinal).</p><p><strong>D) INCORRETA:</strong> O teste de Schilling avalia absorção de vitamina B12 (cobalamina), não B6. Usa-se cianocobalamina marcada com Co57 para avaliar a absorção de vitamina B12.</p><p><strong>E) INCORRETA:</strong> O teste da d-xilose mede apenas a excreção urinária de d-xilose (metabolismo próprios) após ingestão oral, não a excreção sérica e fecal.</p><p><strong>Veredito:</strong> A letra C é a única alternativa totalmente correta, demonstrando conhecimento dos métodos diagnósticos especializados para diarreia crônica de causas específicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DisturbiosDisabsortivos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_Diarreia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Um paciente de 15 anos de idade compareceu a um ambulatório de clínica médica com história de asma desde a infância, porém sem tratamento regular. Ficou sem crises por mais de cinco anos e relata internação recente por crise aguda de asma. Com base nesse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "Medicações como aspirina e anti-inflamatórios não causam exacerbação grave da asma em indivíduos sensibilizados.",
+        "Comorbidades que dificultam controle da asma: doença do refluxo gastroesofágico (DRGE), obesidade, apneia do sono e exposição ocupacional.",
+        "A base do tratamento medicamentoso da asma é constituída pelo uso do corticoide oral sistêmico associado a um agonista B2 de longa duração inalatório.",
+        "Não é recomendável vacinar asmáticos contra influenza ou vacina antipneumocócica.",
+        "É necessário reduzir a dose de corticoide oral quando a duração do tratamento for inferior a duas semanas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda aspectos práticos do manejo de asma, focando em comorbidades e fatores que influenciam o controle da doença. O caso clínico apresenta um adolescente com asma descontrolada após período de estabilidade.</p><p><strong>A resposta correta é B - Comorbidades que dificultam controle da asma: doença do refluxo gastroesofágico (DRGE), obesidade, apneia do sono e exposição ocupacional.</strong></p><p>Análise das alternativas:</p><p><strong>A) INCORRETA:</strong> Aspirina e AINEs podem causar exacerbação grave em asmáticos com pólipos nasais ou triade aspírino-sensível (asma, rinite, pólipos). Essa é uma contraindicação relativa importante.</p><p><strong>B) CORRETA:</strong> DRGE pode desencadear broncoespasmo por microaspiração e reflexo vagal. Obesidade piora a inflamação sistêmica. Apneia do sono fragmenta o sono e piora o controle. Exposição ocupacional a alérgenos/agentes químicos é fator desencadeante.</p><p><strong>C) INCORRETA:</strong> A base do tratamento de asma é corticoide inalatório (fluticasona, budesonida) + broncodilatador de longa duração (salmeterol, formoterol). Corticoide oral sistêmico é reservado para exacerbações.</p><p><strong>D) INCORRETA:</strong> Vacinação anual contra influenza e vacinação pneumocócica são recomendadas para asmáticos, especialmente os com controle inadequado, por maior risco de complicações respiratórias.</p><p><strong>E) INCORRETA:</strong> Reduzir dose de corticoide oral deve ser gradual mesmo em tratamentos curtos (&lt;2 semanas) para evitar insuficiência adrenal secundária, especialmente em altas doses.</p><p><strong>Veredito:</strong> A letra B é a alternativa correta, abordando comorbidades relevantes que impactam o controle da asma.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "A dor abdominal é o principal sintoma nos pacientes com abdome agudo. Na maioria dos casos, a etiologia é benigna e (ou) autolimitada. O objetivo da avaliação inicial é identificar os pacientes que necessitem de intervenção cirúrgica de urgência. Acerca desse tema, assinale a alternativa que indica a etiologia correta para a respectiva classificação do abdome agudo.",
+      "alternativas": [
+        "Abdome agudo vascular - diverticulite.",
+        "Abdome agudo inflamatório - bridas ou aderências intestinais.",
+        "Abdome agudo inflamatório - gravidez ectópica.",
+        "Abdome agudo hemorrágico - colecistite.",
+        "Abdome agudo obstrutivo - volvo sigmoide."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca SMS SP 2022 avalia seu conhecimento sobre classificação etiológica do abdome agudo, tema fundamental na medicina de emergência e cirurgia geral. O enunciado enfatiza que o objetivo é identificar casos que necessitem intervenção cirúrgica urgente.</p><p><strong>A resposta correta é E - Abdome agudo obstrutivo - volvo sigmoide.</strong></p><p>Vamos analisar sistematicamente cada classificação:</p><p><strong>A) INCORRETA:</strong> Diverticulite é abdome agudo inflamatório, não vascular. Abdome agudo vascular típico inclui isquemia mesentérica, ruptura de aneurisma aórtico ou tromboembolia arterial.</p><p><strong>B) INCORRETA:</strong> Bridas/aderências intestinais causam abdome agudo obstrutivo, não inflamatório. São sequelas de cirurgias abdominais ou processos inflamatórios prévios.</p><strong>C) INCORRETA:</strong> Gravidez ectópica é abdome agudo hemorrágico, não inflamatório. A rotura causa hemoperitoneu com dor súbita e instabilidade hemodinâmica.</p><p><strong>D) INCORRETA:</strong> Colecistite é abdome agudo inflamatório, não hemorrágico. A inflamação da vesícula biliar cursa com dor no hipocôndrio direito e febre.</p><p><strong>E) CORRETA:</strong> Volvulo sigmoide é causa классичca de abdome agudo obstrutivo. A torção do sigmoide causa obstrução intestinal com dilatação proximal progressiva, evoluindo para ischemia e perfuração se não tratado.</p><p><strong>Veredito:</strong> A letra E é a única associação correta, demonstrando conhecimento das categorias etiológicas do abdome agudo conforme classificação clássica da medicina.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_CausasDeAbdomeAgudo"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Um paciente de 25 anos de idade é convocado pelo banco de sangue por ter apresentado teste positivo para HIV em triagem de doador. Assintomático, procura infectologista para o seguimento. Com relação aos exames iniciais a serem pedidos para o paciente, assinale a alternativa correta.",
+      "alternativas": [
+        "Carga viral do HIV e sorologia para herpes simples.",
+        "Sorologias hepatites virais A, B e C e dosagem de vitamina D.",
+        "Contagem de linfócitos T CD4 e hemograma.",
+        "Raios X de tórax e prova para hanseníase.",
+        "Lipidograma, glicose e dosagem de vitamina B12 sérica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda a investigação inicial adequada em paciente assintomático com diagnóstico recente de HIV. O caso apresenta um jovem de 25 anos, assintomático, que descobriu a infecção através de triagem de doador de sangue.</p><p><strong>A resposta correta é C - Contagem de linfócitos T CD4 e hemograma.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) INCORRETA:</strong> Carga viral HIV é importante no seguimento, mas não é exame inicial isolado. Sorologia para herpes simples não é exame prioritário inicial - reservada para pacientes com lesões compatíveis ou queixa específica.</p><p><strong>B) INCORRETA:</strong> Sorologias para hepatites virais são importantes em pacientes HIV+ (por coinfeção frequente), mas vitamina D não é exame inicial padrão. Dosagem de vitamina D seria para casos específicos como osteoporose ou uso de terapia específica.</p><p><strong>C) CORRETA:</strong> Contagem de linfócitos T CD4 é fundamental para estadiamento da infecção e indicação de terapia antirretroviral. Hemograma avaliará status hematológico geral e possible anemia, leucopenia ou plaquetopenia associadas ao HIV.</p><p><strong>D) INCORRETA:</strong> Raios X de tórax é útil em pacientes com sintomas respiratórios. Prova para hanseníase (baciloscopia) não é exame inicial em paciente assintomático HIV+.</p><p><strong>E) INCORRETA:</strong> Lipidograma e glicose são úteis em uso de alguns antirretrovirais (especialmente inibidores de protease). Vitamina B12 é importante para investigação de neuropatia periférica, mas não é exame inicial padrão.</p><p><strong>Veredito:</strong> A letra C é a alternativa correta, representando a avaliação inicial adequada no seguimento do paciente HIV+ assintomático, conforme protocolo do Ministério da Saúde 2025.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Quanto à proposta de manejo de um paciente HIV positivo, assinale a alternativa correta.",
+      "alternativas": [
+        "Recomenda-se iniciar o tratamento antituberculose e a terapia antirretroviral de forma precoce, mas não concomitante, para todos os pacientes infectados por HIV e tuberculose ativa.",
+        "A coinfecção pelo HIV não tem um impacto no curso da infecção pelo vírus B.",
+        "Não é necessária a estabilização clínica da doença pelo HIV, mediante a TARV, antes de iniciar o tratamento para o vírus da hepatite C (HCV).",
+        "O portador de HIV, sem nenhuma outra infecção sexualmente transmitida, seguindo a TARV corretamente e com carga viral HIV suprimida, ainda tem alto risco de transmitir o HIV pela via sexual.",
+        "A proposta terapêutica inicial para adulto pelo protocolo brasileiro é com tenofovir, lamivudina e interferon."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda aspectos complexos do manejo de pacientes HIV positivos, especificamente em situações de coinfecção ecoinfecções. O protocolo brasileiro de 2025 estabelece diretrizes importantes para o tratamento de coinfeções.</p><p><strong>A resposta correta é A - Recomenda-se iniciar o tratamento antituberculose e a terapia antirretroviral de forma precoce, mas não concomitante, para todos os pacientes infectados por HIV e tuberculose ativa.</strong></p><p>Análise detalhada das alternativas:</p><p><strong>A) CORRETA:</strong> Conforme protocolo MS 2025, deve-se iniciar tratamento da tuberculose (TBC) primeiro e, após 2-8 semanas, iniciar terapia antirretroviral (TARV) para evitar síndrome inflamatória de reconstituição imune (IRIS) grave. Início precoce de ambos é recomendado, mas não simultâneo.</p><p><strong>B) INCORRETA:</strong> A coinfecção HIV-HBV acelera a progressão da hepatite B e pode causar reativação viral grave. O tratamento deve incluir antirretrovirais ativos contra HBV (lamivudina, tenofovir).</p><p><strong>C) INCORRETA:</strong> Segundo diretrizes 2025, é recomendada estabilização clínica com TARV antes de iniciar tratamento para HCV em pacientes com baixa imunidade (CD4 &lt;200) para melhorar resposta ao tratamento.</p><p><strong>D) INCORRETA:</strong> Paciente HIV+ com carga viral suprimida e em TARV tem risco muito baixo de transmissão sexual. A terapia antirretroviral suprime efetivamente a replicação viral, reduzindo significativamente o risco de transmissão.</p><p><strong>E) INCORRETA:</strong> A proposta terapêutica inicial no protocolo brasileiro usa tenofovir + lamivudina + dolutegravir (não interferon). Interferon é usado no tratamento de hepatite C, não como antirretroviral de primeira linha para HIV.</p><p><strong>Veredito:</strong> A letra A é a única alternativa correta, demonstrando conhecimento das diretrizes atualizadas do MS 2025 para manejo de coinfeções HIV-TBC.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Um paciente de 60 anos de idade, fumante, obeso, diabético e hipertenso, chega com crise de dor aguda do primeiro pododáctilo associada a níveis séricos aumentados de ácido úrico. Com base nesse caso clínico, assinale",
+      "alternativas": [
+        "A maioria dos casos de gota deve-se ao aumento da síntese de ácido úrico (defeitos enzimáticos, dieta rica em purinas).",
+        "Um achado bastante característico da gota é a presença de nódulos cutâneos, denominados cistos sebáceos, de localização preferencial no dorso e nos membros inferiores.",
+        "A deposição de cristais de ácido úrico pode levar à insuficiência renal e nefrolitíase.",
+        "Não há relação entre hiperuricemia e síndrome metabólica.",
+        "A hiperuricemia assintomática é uma apresentação clínica da gota que necessita de seguimento clínico e indicação terapêutica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia seu conhecimento sobre gota, um tema recorrente em provas de residência médica. O caso clínico apresenta um paciente de 60 anos com fatores de risco clássicos (tabagismo, obesidade, diabetes e hipertensão) cursando com dor aguda no primeiro pododáctilo e hiperuricemia - quadro típico de gota aguda.</p><p><strong>Vamos analisar cada alternativa detalhadamente:</strong></p><p>A alternativa A está INCORRETA. Embora existam casos de gota por aumento da síntese de ácido urico (defeitos enzimáticos, dieta rica em purinas), a maioria dos casos (85-90%) deve-se à redução da excreção renal, não ao aumento da síntese. A gota secundária por redução da excreção é muito mais comum, associada a condições como insuficiência renal, uso de diuréticos, hipertensão, síndrome metabólica e obesidade.</p><p>A alternativa B está INCORRETA. Os nódulos cutâneos característicos da gota são chamados tofos úricos, não cistos sebáceos. Os tofos localizam-se preferencialmente em orelhas, cotovelos, punhos e joelhos - não no dorso e membros inferiores como descrito.</p><p>A alternativa C está CORRETA. Esta é a resposta esperada. A deposição de cristais de monourato de sódio pode causar insuficiência renal aguda (nefropatia úrica) e aumentar significativamente o risco de nefrolitíase (cálculos renais de ácido úrico), complicações bem documentadas na literatura médica.</p><p>A alternativa D está INCORRETA. Existe forte relação entre hiperuricemia e síndrome metabólica. A hiperuricemia é considerada um componente da síndrome metabólica e pode contribuir para a resistência insulínica, hipertensão e doença cardiovascular. A gota frequentemente coexiste com diabetes, hipertensão e dislipidemia.</p><p>A alternativa E está INCORRETA. A hiperuricemia assintomática NÃO é uma apresentação clínica de gota - é uma condição pré-clínica. A gota requer sintomas clínicos (artrites agudas, tofos, nefrolitíase). A hiperuricemia assintomática, segundo diretrizes brasileiras, só deve ser tratada em situações específicas como história de pedra renal ou pacientes de alto risco cardiovascular.</p><p><strong>Veredito Final:</strong> A resposta correta é C,pois a deposição de cristais de ácido úrico efetivamente pode levar à insuficiência renal e nefrolitíase, complicações graves e bem estabelecidas da gota.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasGota",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasGota_Complicacoes",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "É correto o diagnóstico de gota é fundamentado nos achados de",
+      "alternativas": [
+        "monoartrites ocasionais, sexo feminino e história familiar de gota.",
+        "hiperuricemia acima de 4 mg-dL.",
+        "presença de cristais de monourato de sódio no líquor.",
+        "raios X de articulações com achado de cistos e erosões em saca-bocado.",
+        "podagra (artrite da terceira metatarsofalangeana)."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca SMS SP aborda os critérios diagnósticos para gota, um conhecimento fundamental para a prática clínica. A gota é diagnosticada pela identificação de cristais de monourato de sódio no líquido sinovial, sendo o padrão-ouro para o diagnóstico.</p><p><strong>Análise detalhada das alternativas:</strong></p><p>A alternativa A está INCORRETA. O sexo feminino não é um achado característico - a gota é predominantemente masculina (proporção 4:1). Monoartrites ocasionais podem ocorrer em outras artrites inflamatórias. História familiar pode estar presente, mas não é critério diagnóstico isolado.</p><p>A alternativa B está INCORRETA. Hiperuricemia acima de 4 mg/dL? Isso está errado! O valor de referência normal para ácido úrico sérico é 7,0 mg/dL. Hiperuricemia é definida como níveis > 7,0 mg/dL em homens e > 6,0 mg/dL em mulheres. Além disso, a hiperuricemia é necessária mas não suficiente para o diagnóstico - muitos pacientes têm hiperuricemia sem gota.</p><p>A alternativa C está INCORRETA. Cristais de monourato de sódio são encontrados no líquido SINOVIAL (articular), não no líquor (líquido cefalorraquidiano). O líquor é o líquido que banha o sistema nervoso central e não se relaciona com artrite gotosa.</p><p>A alternativa D está CORRETA. Esta é a resposta esperada. Os achados radiográficos característicos da gota incluem cistos e erosões em \"saca-bocado\" (punched-out lesions). Essas erosões são causadas pela deposição de tofos úricos intra-ósseos e são vistas principalmente em articulações de carga como primeiro metatarsofalangeano, tarso, tornozelo e joelho.</p><p>A alternativa E está INCORRETA. Podagra é a artrite da primeira metatarsofalangeana e é sim um achado bastante típico de gota (ocorre em 50-80% dos pacientes), mas sozinha não é suficiente para o diagnóstico. O diagnóstico definitivo requer demonstração de cristais de monourato de sódio ou evidências radiográficas características.</p><p><strong>Veredito Final:</strong> A resposta correta é D,pois o padrão-ouro radiológico para gota é a presença de cistos e erosões em saca-bocado, que refletem a deposição de tofos úricos intra-ósseos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasGota",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasGota_Diagnostico",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasGota_ExamesComplementares"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Uma paciente de 29 anos de idade, parda, procura o serviço de pronto atendimento com dispneia e dor torácica há cinco dias. Apresenta diagnóstico de lúpus eritematoso sistêmico há quatro anos e artrite em punho esquerdo. À radiografia de tórax, verifica-se derrame pleural bilateral. Acerca desse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "A dosagem de albumina sérica é um exame confiável para descartar derrame transudativo por hipoproteinemia, pois detecta alterações agudas dos níveis de proteína.",
+        "Se a dosagem de desidrogenase láctica (LDH) do líquido pleural dividido pelo LDH sérico for > 0,6, pode-se suspeitar de infecção pulmonar, neoplasia, tromboembolismo pulmonar ou mesmo pleurite lúpica.",
+        "A dosagem sérica de ureia é mais específica para lesão renal do que a dosagem de creatinina.",
+        "Não se deve considerar a glicemia na avaliação da glicose no líquido pleural.",
+        "Na análise da bioquímica do sangue, níveis elevados de lipoproteína de alta densidade (HDL) devem ser tratados, uma vez que aumentam o risco de doenças cardiovasculares."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da SMS SP apresenta uma paciente de 29 anos com lúpus eritematoso sistêmico cursando com derrame pleural bilateral, testando conhecimentos sobre diagnóstico diferencial do líquido pleural em pacientes lúpicos.</p><p><strong>Após análise criteriosa, esta questão foi ANULADA pela banca.</strong></p><p><strong>Motivos da anulação:</strong></p><p>As alternativas B e C apresentam informações медиicamente corretas, criando ambigüidade na resposta.</p><p>A alternativa B está CORRETA. O valor da LDH pleural/sérica > 0,6 é critério de Light para exsudato e realmente pode estar presente em pleurite lúpica, neoplasia, infecção ou TEP. Esta informação está incorreta no enunciado quando afirma que esse achado \"pode-se suspeitar\" dessas condições - na verdade, com LDH > 0,6, essas causas de exsudato devem ser investigadas.</p><p>A alternativa C está CORRETA. A dosagem de ureia é mais específica que creatinina para avaliar função renal em algumas situações específicas. No contexto de insuficiência renal aguda, a ureia pode dar informações mais precoces sobre a função renal e é mais sensível a alterações agudas. Esta afirmação, embora verdade, está INCORRETA no contexto da questão que aborda derrame pleural, não função renal.</p><p><strong>Análise das demais alternativas:</strong></p><p>A alternativa A está INCORRETA. A albumina sérica não é confiável para descartar derrame transudativo - a razão protein pleural/sérica é mais confiável.</p><p>A alternativa D está INCORRETA. A glicose no líquido pleural deve ser sempre considerada na avaliação, especialmente em derrames inflamatórios.</p><p>A alternativa E está INCORRETA. HDL elevado é PROTETIVO contra doenças cardiovasculares, não aumenta o risco.</p><p><strong>Conclusão da anulação:</strong> A banca não conseguiu formular uma única alternativa claramente correta, já que tanto B quanto C apresentam informações медиicamente válidas, mas em contextos inadequados. Esta anulação demonstra a importância de contextualizar adequadamente os conceitos médicos em questões de múltipla escolha.",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "A cirrose é o resultado final da lesão hepatocelular, que inclui fibrose extensa, em associação à formação de nódulos de regeneração. A classificação de Child-Pugh visa, justamente, identificar o grau de comprometimento da função hepática nessa condição. Com base nesse tema, assinale a alternativa que apresenta os exames mais indicados para avaliar a função hepática.",
+      "alternativas": [
+        "Aspartato aminotransferase e Alanina aminotransferase.",
+        "Fosfatase alcalina e gama-glutamil-transferase.",
+        "Tempo de protrombina e alanina aminotransferase.",
+        "Desidrogenase láctica e bilirrubina indireta.",
+        "Tempo de protrombina e albumina serica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP avalia seu conhecimento sobre avaliação da função hepática através da classificação de Child-Pugh, um sistema fundamental para estratificação de risco em cirrose e indicações de transplante hepático.</p><p><strong>A banca busca avaliar:</strong> Qual dos grupos de exames melhor reflete a síntese e função hepática, componentes centrais da classificação Child-Pugh.</p><p><strong>Análise detalhada de cada alternativa:</strong></p><p>A alternativa A está INCORRETA. AST e ALT são enzimas que avaliam necrose hepatocelular, não a função sintética. Em cirrose avançada, essas enzimas podem estar normais ou até diminuídas, pois indicam a capacidade de regeneração hepática, não a síntese.</p><p>A alternativa B está INCORRETA. Fosfatase alcalina e GGT avaliam colestase (destruição de ductos biliares), não a síntese hepática. Em cirrose biliar primária ou colangite, podem estar elevadas, mas não refletem a função de síntese de proteínas.</p><p>A alternativa C está INCORRETA. Tempo de protrombina é correto (avalia síntese de fatores de coagulação), mas ALT não avalia função sintética. ALT avalia necrose hepatocelular. A combinação está incompleta e incorreta.</p><p>A alternativa D está INCORRETA. LDH é uma enzima inespecífica presente em múltiplos tecidos, não específica para função hepática. Bilirrubina indireta avalia conjugação hepática, mas não síntese proteica.</p><p>A alternativa E está CORRETA. Esta é a resposta esperada. O tempo de protrombina avalia a síntese de fatores de coagulação dependentes de vitamina K (II, VII, IX, X) e é diretamente proporcional à função sintética hepática. A albumina sérica é sintetizada exclusivamente pelo fígado e reflete diretamente a capacidade de síntese proteica hepática. Estes dois exames formam a base da avaliação da função sintética hepática na classificação Child-Pugh.</p><p><strong>Veredito Final:</strong> A resposta correta é E,pois tempo de protrombina e albumina sérica são os dois marcadores mais importantes e específicos para avaliar a função sintética hepática, componentes essenciais da classificação Child-Pugh para estratificar pacientes cirróticos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Hepatologia_Cirrose_ComplicacoesDaInsuficienciaHep",
+        "ClinicaMedica_Hepatologia_Cirrose_ComplicacoesDaInsuficienciaHep_AvaliacaoFuncaoHepatica"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Um paciente com 70 anos de idade informa que apresentava tosse matinal recorrente. Porém, recentemente, notou mudança no padrão da tosse, que passou a ser diária, com vários episódios no decorrer de todo o dia, produtiva, com catarro escurecido e com dois episódios de raias de sangue no último mês. Refere ser fumante desde os 15 anos de idade. Fumava em torno de 30 cigarros ao dia (1 e 1/2 carteira) e deixou o hábito aos 55 anos de idade. Realizou investigação com raios X de tórax que mostrou infiltrado reticular em 1/3 médio do pulmão esquerdo. Foi tratado como pneumonia, sem melhora do quadro clínico. Relata perda de 10kg em dois meses (peso habitual de 72 Kg, estando agora com 62 Kg). Em razão desse quadro, realizou tomografia computadorizada (TC) de tórax com diagnóstico de tumor irregular de 46 mm no lobo inferior do pulmão esquerdo, segmento pósteroinferior, acolado à pleura, espiculado, sem linfonodomegalias identificáveis pelo método. TC de abdome não mostrou doença metastática. Foi realizada biópsia guiada por tomografia. O diagnóstico final do paciente foi de adenocarcinoma de pulmão. O médico assistente do paciente indicou tratamento cirúrgico. No que se refere a esse caso clínico e com base nos conhecimentos médicos correlatos, assinale a alternativa correta.",
+      "alternativas": [
+        "A carga tabágica em maços/ano do paciente é de 40 maços/ano.",
+        "Nesse caso, não haveria indicação de exames de imagem, com TC de tórax anual e com estratégias de detecção precoce de câncer de pulmão.",
+        "Em pacientes com diagnóstico de adenocarcinoma, não há indicação para realizar imuno-histoquímica e teste genético de mutação no material colhido do tumor.",
+        "Os fatores de risco de câncer de pulmão, nesse caso, seriam tabagismo, mudança do padrão da tosse, hemoptise e perda de peso.",
+        "Com base na recomendação de cirurgia desse caso, haveria indicação de raios X de tórax e abdome como exames de estadiamento antes da intervenção cirúrgica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SMS SP apresenta um caso complexo de adenocarcinoma pulmonar, testando conhecimentos sobre fatores de risco, estadiamento e conduta médica em oncologia torácica. O paciente é um homem de 70 anos, ex-tabagista, com quadro clínico de 3 meses de tosse crônica, hemoptise e perda ponderal de 10kg.</p><p><strong>Competência avaliada:</strong> Integração de dados clínicos, epidemiológicos e de imagem para estabelecer fatores de risco e conduta adequada em câncer de pulmão.</p><p><strong>Análise detalhada das alternativas:</strong></p><p>A alternativa A está INCORRETA. A carga tabágica é calculada por maços/ano = número de maços por dia x anos de tabagismo. O paciente fumou 1,5 maços/dia por 40 anos (15 aos 55 anos = 40 anos). Cálculo: 1,5 x 40 = 60 maços/ano, não 40.</p><p>A alternativa B está INCORRETA. A questão afirma corretamente que a TC de tórax anual está indicada para detecção precoce de câncer de pulmão em pacientes de alto risco, conforme diretrizes brasileiras do Ministério da Saúde 2025. A negativa na alternativa está incorreta.</p><p>A alternativa C está INCORRETA. A imuno-histoquímica e teste genético (EGFR, ALK, ROS1, PD-L1) são OBRIGATÓRIOS no adenocarcinoma de pulmão, pois orientam terapia-alvo e imunoterapia. Esta afirmativa está totalmente errada e contraindicada.</p><p>A alternativa D está CORRETA. Esta é a resposta esperada. Os fatores de risco presentes são: Tabagismo (40 anos de história), mudança do padrão da tosse (de matinal para diária), hemoptise (raias de sangue) e perda ponderal significativa (10kg em 2 meses). Todos são factores de risco/red flags para câncer de pulmão.</p><p>A alternativa E está INCORRETA. Para estadiamento pré-operatório de cirurgia pulmonar, o exame de escolha é a TC de tórax e abdome, não raio X. O raio X é muito menos sensível que a TC para detectar metástases e avaliar ressecabilidade. A TC de abdome já foi realizada e não mostrou doença metastática.</p><p><strong>Veredito Final:</strong> A resposta correta é D,pois todos os fatores mencionados (tabagismo, mudança do padrão da tosse, hemoptise e perda de peso) são fatores de risco importantes e sinais de alarme para câncer de pulmão, devendo sempre suscitar investigação diagnóstica adequada.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Pneumologia_CancerDePulmao_Adenocarcinoma",
+        "ClinicaMedica_Pneumologia_CancerDePulmao_Diagnostico",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Uma paciente 60 anos de idade, sem comorbidades, comparece em consulta de retorno, com exames solicitados. Após avaliação criteriosa do médico, firmou-se o diagnóstico de síndrome nefrótica. Com relação às condutas a serem tomadas, assinale a alternativa correta.",
+      "alternativas": [
+        "A biópsia renal é dispensável em paciente acima de 18 anos de idade e sem doenças prévias com suspeita de síndrome nefrótica.",
+        "A restrição de sódio está indicada, nesse caso, como parte do tratamento.",
+        "Betabloqueadores e vasodilatadores também estão indicados nesse caso.",
+        "A metformina deve ser prescrita para reduzir a glicosúria nesse caso.",
+        "Uso de inibidor de enzima conversora de angiotensina (ECA) ou bloqueador de receptor de angiotensina II (BRA) faz parte da terapêutica indicada nesse caso."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia o conhecimento sobre condutas terapêuticas na síndrome nefrótica, um tema fundamental na prática clínica do nefrologista geral.</p><p><strong>A resposta correta é E - uso de inibidor de ECA ou BRA fazem parte da terapêutica indicada.</strong></p><p>Vamos analisar cada alternativa sistematicamente:</p><p><strong>Alternativa A (ERRADA):</strong> A biópsia renal NÃO é dispensável em pacientes adultos com síndrome nefrótica. Na verdade, é mandatória em pacientes >18 anos, especialmente quando não há doença sistêmica evidente. A biópsia é fundamental para determinar o tipo histológico (membranosa, minimal change, focal segmental, etc.) e orientar o tratamento específico.</p><p><strong>Alternativa B (ERRADA):</strong> Embora a restrição de sal seja frequentemente indicada no edema da síndrome nefrótica, não é a conduta mais fundamental. O manejo adequado envolve IECA/BRAs, diuréticos e investigação da causa de base.</p><p><strong>Alternativa C (ERRADA):</strong> Betabloqueadores e vasodilatadores não são indicados como tratamento específico para síndrome nefrótica. O foco deve ser na proteção renal e controle da proteinúria.</p><p><strong>Alternativa D (ERRADA):</strong> A metformina não é usada para reduzir glicosúria na síndrome nefrótica. A glicosúria é consequência da disfunção tubular, e a metformina não tem indicação neste contexto.</p><p><strong>Alternativa E (CORRETA):</strong> IECA/BRAs são fundamentais no tratamento da síndrome nefrótica por reduzirem proteinúria, hipertensão e progression da doença renal crônica. São considerado padrão ouro na terapêutica.</p><p><strong>Veredito:</strong> Alternativa E é a resposta correta, avaliando o conhecimento sobre tratamento farmacológico específico da síndrome nefrótica, que é uma das condutas mais importantes na prática nefrológica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Em pacientes nos quais se está fazendo o diagnóstico diferencial entre a cardite reumática em atividade e à endocardite infecciosa, é correto afirmar que a alteração que, quando constatada, configura forte indicativo de que se está diante de diagnóstico da cardite reumática é o(a)",
+      "alternativas": [
+        "presença de atrito pericárdico.",
+        "aumento da velocidade de hemossedimentação (VHS).",
+        "presença de insuficiência mitral.",
+        "artralgia ou artrite de grandes articulações.",
+        "elevação na contagem leucócitos totais."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 explora o diagnóstico diferencial entre cardite reumática em atividade e endocardite infecciosa, uma pegadinha clássica das bancas de residência médica.</p><p><strong>A resposta correta é A - presença de atrito pericárdico.</strong></p><p>Vamos analisar cada alternativa para entender o raciocínio:</p><p><strong>Alternativa A (CORRETA):</strong> O atrito pericárdico é característica da PERICARDITE reumática, que frequentemente acompanha a cardite reumática ativa. É um achado típico que favorece cardite reumática sobre endocardite infecciosa.</p><p><strong>Alternativa B (ERRADA):</strong> Aumento da VHS é inespecífico e pode ocorrer tanto em cardite reumática quanto em endocardite infecciosa. Não é um indicador diferencial significativo.</p><p><strong>Alternativa C (ERRADA):</strong> Insuficiência mitral é comum em ambas as condições - pode ser devida à cardite reumática aguda ou à destruição valvar pela endocardite. Não é diferencial.</p><p><strong>Alternativa D (ERRADA):</strong> Artralgia/artrite é típica de cardite reumática, mas pode também ocorrer na endocardite secundária à artrite reativa ou outras condições. Além disso, a endocardite pode cursar com artralgia devido à implantação de complexos imunes.</p><p><strong>Alternativa E (ERRADA):</strong> Leucocitose é inespecífica e pode ocorrer em ambas as condições, especialmente durante atividade inflamatória.</p><p><strong>Raciocínio clínico:</strong> A questão usa o conceito de que o atrito pericárdico é específico da pericardite reumática, enquanto a endocardite infecciosa não causa pericardite. Esta é a chave diagnóstica.</p><p><strong>Veredito:</strong> A alternativa A é correta, testando o conhecimento sobre manifestaçções específicas que diferenciam cardite reumática de endocardite infecciosa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Uma paciente de 42 anos de idade procura o hospital queixando-se dispneia progressiva aos esforços e palpitações taquicárdicas. Relata ter tido febre reumática aos 15 anos de idade e que, desde então, tem sopro cardíaco. Apresenta fibrilação atrial há cerca de 10 meses com frequência ventricular média, controlada com o uso de digoxina 0,25 mg ao dia. Ao exame físico, FC = 95 bpm, PA = 130/80 mmHg e FR = 18 irpm, SatO2 = 95%. Apresenta estertores inspiratórios em regiões inferiores de ambos os hemitórax. O ictus cordis está deslocado para a esquerda e para baixo, com impulsividade aumentada. A ausculta cardíaca mostra hiperfonese da primeira bulha, estalido de abertura e sopro holodiastólico em ruflar em área mitral. Possui também sopro diastólico, aspirativo, ao longo da borda esternal esquerda, que aumenta com a manobra de squatting (acocoramento). O eletrocardiograma mostra ritmo de fibrilação atrial, eixo elétrico desviado para a esquerda, sobrecarga atrial esquerda e importante sobrecarga ventricular esquerda tipo diastólica. Com relação a esse caso clínico e com base nos conhecimentos médicos correlatados, assinale a alternativa correta acerca do diagnóstico mais provável relativo ao envolvimento valvar da paciente.",
+      "alternativas": [
+        "Estenose tricúspide.",
+        "Insuficiência mitral.",
+        "Estenose aórtica.",
+        "Insuficiência tricúspide.",
+        "Insuficiência aórtica e estenose mitral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 apresenta um caso clínico complexo de valvopatia sequelar de febre reumática, avaliando o conhecimento sobre interpretação de achados auscultatórios e sua correlação com as lesões valvares.</p><p><strong>A resposta correta é E - insuficiência aórtica e estenose mitral.</strong></p><p>Vamos analisar o caso e cada alternativa:</p><p><strong>Dados do caso:</strong></p><p>• História de febre reumática aos 15 anos</p><p>• Ictus cordis deslocado (hipertrofia/sobrecarga)</p><p>• Hiperfonese de B1 (estenose mitral)</p><p>• Estalido de abertura (estenose mitral)</p><p>• Sopro holodiastólico ruflar em área mitral (estenose mitral)</p><p>• Sopro diastólico aspirativo borda esternal esquerda que aumenta com squatting (insuficiência aórtica)</p><p><strong>Análise das alternativas:</strong></p><p><strong>A (ERRADA):</strong> Estenose tricúspide - o sopro descrito não se encaixa em tricúspide. Estenose tricúspide cursa com sopro diastólico na borda esternal inferior, não superior.</p><p><strong>B (ERRADA):</strong> Insuficiência mitral isolada - o caso tem achados de estenose mitral (B1 hiperfonética, estalido de abertura, sopro holodiastólico), não apenas insuficiência.</p><p><strong>C (ERRADA):</strong> Estenose aórtica - causa sopro sistólico, não diastólico. Além disso, não há menção aos achados típicos (sopro sistólico, ausência de B4, etc.).</p><p><strong>D (ERRADA):</strong> Insuficiência tricúspide - não há achados compatíveis. Insuficiência tricúspide cursa com sopro sistólico holossistólico na borda esternal inferior.</p><p><strong>E (CORRETA):</strong> Insuficiência aórtica + estenose mitral - perfamente compatível com os achados: sopro diastólico aspirativo borda esternal esquerda que aumenta com squatting (IA) e sopro holodiastólico ruflar área mitral + B1 hiperfonética + estalido de abertura (EM).</p><p><strong>Veredito:</strong> A alternativa E é correta, demonstrando a correlação entre achados auscultatórios específicos e as lesões valvares combinadas características da cardite reumática.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Um paciente de 55 anos de idade dá entrada no pronto-socorro, trazido por familiares, em razão de quadro de confusão mental, alucinações e tremores de mãos. Apresenta antecedentes de seguimento ambulatorial por doença hepática crônica, em uso de diuréticos, por causa de ascite diagnosticada previamente. Refere ser ex-etilista, por mais de 20 anos, de cerca de 1L de destilado por dia. Nega uso de drogas ilícitas ou história de hepatopatia na família. Relata abstinência alcoólica há seis meses. Acerca do diagnóstico e da conduta para esse caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "Cirrose hepática compensada por vírus C.",
+        "Encefalopatia hepática por cirrose hepática por álcool descompensada.",
+        "Cirrose hepática descompensada com hemorragia digestiva alta.",
+        "A avaliação de foco infeccioso, nesse caso, exclui peritonite bacteriana espontânea.",
+        "A terapêutica indicada, nesse caso, deve ser lactulona EV e manter diuréticos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 aborda encefalopatia hepática em cirrose alcoólica descompensada, tema frequente em emergências gastroenterológicas e que demanda reconhecimento clínico rápido.</p><p><strong>A resposta correta é B - encefalopatia hepática por cirrose hepática por álcool descompensada.</strong></p><p>Vamos analisar o caso e as alternativas:</p><p><strong>Dados do caso:</strong></p><p>• História: cirrose hepática, ascite, uso de diuréticos</p><p>• Ex-etilista de 1L destilado/dia por 20+ anos</p><p>• 6 meses de abstinência alcoólica</p><p>• Quadro: confusão mental, alucinações, tremores de mãos</p><p><strong>Análise das alternativas:</strong></p><p><strong>A (ERRADA):</strong> Cirrose compensada por vírus C - o caso é claramente descompensado (encefalopatia), não compensado. Além disso, a etiologia é claramente alcoólica pela história.</p><p><strong>B (CORRETA):</strong> Encefalopatia hepática por cirrose alcoólica descompensada - todos os elementos convergem: cirrose alcoólica, fatores precipitantes (diuréticos, infecção possível), quadro neurológico típico (confusão, alucinações, asterixis/tremores).</p><p><strong>C (ERRADA):</strong> Cirrose descompensada com hemorragia digestiva alta - não há história de hematêmese, melena, queda de hemoglobina ou sinais de sangramento ativo. O quadro é neurológico, não hemorrágico.</p><p><strong>D (ERRADA):</strong> Avaliação de foco infeccioso exclui peritonite bacteriana espontânea - pelo contrário, a peritonite bacteriana espontânea é um dos principais precipitantes de encefalopatia hepática e DEVE ser investigada. Esta alternativa está conceitualmente incorreta.</p><p><strong>E (ERRADA):</strong> Terapêutica deve ser lactulona EV e manter diuréticos - lactulose deve ser oral, não EV. Diuréticos devem ser SUSPENSOS na encefalopatia hepática até estabilização. A resposta está duplamente incorreta.</p><p><strong>Veredito:</strong> A alternativa B é a única que correlaciona adequadamente história, quadro clínico e fisiopatologia da encefalopatia hepática descompensada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Acerca do fator reumatoide, é correto afirmar que",
+      "alternativas": [
+        "pode ser encontrado em indivíduos sadios, mais frequentemente em mulheres jovens em idade fértil.",
+        "é uma imunoglobulina que reage, especificamente, com o colágeno tipo i da matriz conjuntiva da sinóvia.",
+        "é um marcador de atividade de doença na artrite reumatoide e deve ser solicitado deforma seriada nesses pacientes.",
+        "há associação entre títulos elevados e ocorrência de manifestações extra-articulares na artrite reumatoide.",
+        "tem elevada sensibilidade, próximo a 100%, no diagnóstico de artrite reumatoide em fase inicial"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SMS SP 2022 avalia o conhecimento sobre fator reumatoide, um marcador sorológico importante na artrite reumatoide, com nuances diagnósticas e prognósticas que frequentemente causam confusão.</p><p><strong>A resposta correta é D - há associação entre títulos elevados e ocorrência de manifestações extra-articulares na artrite reumatoide.</strong></p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A (ERRADA):</strong> O fator reumatoide pode ser encontrado em indivíduos sadios, mas é mais frequente em pessoas mais IDOSAS (>65 anos), não mulheres jovens em idade fértil. Em mulheres jovens, é incomum e pode indicar artrite reumatoide precoce.</p><p><strong>Alternativa B (ERRADA):</strong> O fator reumatoide é um anticorpo (IgM) que reage contra a porção Fc da IgG, não especificamente contra colágeno tipo I. A reação é com imunoglobulinas (complexos imunes), não com colágeno.</p><p><strong>Alternativa C (ERRADA):</strong> Fator reumatoide NÃO é um marcador confiável de atividade de doença. Pode permanecer positivo mesmo em remissão e negativo em atividade. Título não correlaciona bem com atividade clínica.</p><p><strong>Alternativa D (CORRETA):</strong> Títulos elevados de fator reumatoide estão associados a maior risco de manifestações extra-articulares como nódulos reumatoides, vasculite, envolvimento pulmonar e outras complicações sistêmicas. É um indicador prognóstico de doença mais agressiva.</p><p><strong>Alternativa E (ERRADA):</strong> A sensibilidade do fator reumatoide é de aproximadamente 70-80% em artrite reumatoide estabelecida, mas muito menor (20-30%) em fase inicial. A sensibilidade não chega a 100% em nenhum estágio da doença.</p><p><strong>Veredito:</strong> A alternativa D é correta, testando o conhecimento sobre o valor prognóstico do fator reumatoide e sua correlação com gravidade e manifestações sistêmicas da artrite reumatoide.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "SMSSP2022R3CM",
+        "SMS SP",
+        "R3CM",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762653601651-49"
+    }
+  ]
+}

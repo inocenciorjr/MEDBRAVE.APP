@@ -5,7 +5,13 @@ import {
 } from '../repositories/IErrorNotebookEntryRepository';
 import { IErrorNotebookRepository } from '../repositories/IErrorNotebookRepository';
 import { AppError } from '../../../../shared/errors/AppError';
-import { PaginationOptions } from '../../studySessions/types';
+// PaginationOptions moved to shared types
+export interface PaginationOptions {
+  page: number;
+  limit: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+}
 
 export class GetErrorEntriesByNotebookUseCase {
   constructor(
@@ -29,14 +35,15 @@ export class GetErrorEntriesByNotebookUseCase {
     }
 
     // Verificar se o caderno de erros existe
-    const errorNotebook = await this.errorNotebookRepository.findById(notebookId);
+    const errorNotebook =
+      await this.errorNotebookRepository.findById(notebookId);
 
     if (!errorNotebook) {
       throw new AppError('Error notebook not found', 404);
     }
 
     // Verificar se o caderno de erros pertence ao usuário ou é público
-    if (errorNotebook.userId !== userId && !errorNotebook.isPublic) {
+    if (errorNotebook.user_id !== userId && !errorNotebook.is_public) {
       throw new AppError('Unauthorized access to error notebook', 403);
     }
 
@@ -53,16 +60,17 @@ export class GetErrorEntriesByNotebookUseCase {
     }
 
     // Obter entradas do caderno de erros com filtros e paginação
-    const paginatedEntries = await this.errorNotebookEntryRepository.findByNotebook(
-      notebookId,
-      filters,
-      {
-        page,
-        limit,
-        sortBy: pagination.sortBy,
-        sortOrder: pagination.sortOrder,
-      },
-    );
+    const paginatedEntries =
+      await this.errorNotebookEntryRepository.findByNotebook(
+        notebookId,
+        filters,
+        {
+          page,
+          limit,
+          sortBy: pagination.sortBy,
+          sortOrder: pagination.sortOrder,
+        },
+      );
 
     return paginatedEntries;
   }

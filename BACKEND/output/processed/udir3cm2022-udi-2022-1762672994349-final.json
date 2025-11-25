@@ -1,0 +1,1675 @@
+{
+  "metadata": {
+    "examName": "UDIR3CM2022 (UDI 2022)",
+    "examYear": 2022,
+    "url": "source://481",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T07:23:14.349Z",
+    "jobId": "batch-1762661968284-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "cca1d3d5-0e5d-4f0e-9869-489ebcd7234f"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Num serviço de infectologia de hospital pediátrico, 25 crianças menores de 5 anos tiveram diagnóstico confirmado de meningite meningocócica por cultura do líquido cefalorraquidiano (líquor), entre janeiro e dezembro de 2019. Na bacterioscopia de líquor de 23 desses casos havia bacilos gramnegativos. Assinale a opção que aponta a sensibilidade da bacterioscopia com coloração gram para esse estudo.",
+      "alternativas": [
+        "0.82",
+        "0.8",
+        "0.77",
+        "0.9",
+        "0.92"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia conceitos fundamentais de epidemiologia diagnóstica, especificamente o cálculo de sensibilidade de um teste diagnóstico. A competência testada é a capacidade de aplicar fórmulas epidemiológicas em contextos clínicos reais.</p><p><strong>Análise do caso:</strong> Temos 25 crianças com meningite meningocócica confirmada por cultura (padrão-ouro). Destas, 23 apresentam bacilos gramnegativos na bacterioscopia. A sensibilidade representa a capacidade do teste em identificar corretamente os casos realmente positivos.</p><p><strong>Cálculo da sensibilidade:</strong> Sensibilidade = Verdadeiros Positivos / (Verdadeiros Positivos + Falsos Negativos) = 23 / 25 = 0,92 (92%).</p><p><strong>Análise das alternativas:</strong> A) 0,82 (82%) e B) 0,8 (80%) - valores inferiores ao real. C) 0,77 (77%) e D) 0,9 (90%) - também incorretos. E) 0,92 (92%) - corresponde exatamente ao cálculo realizado.</p><p><strong>Contexto clínico:</strong> A bacterioscopia com coloração de Gram é um exame importante no diagnóstico de meningite bacteriana, permitindo identificação rápida do agente etiológico. Em meningite meningocócica, a visualização de diplococos gramnegativos intracelulares é típica.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>E - 0,92</strong>, representando 92% de sensibilidade da bacterioscopia para detecção de meningite meningocócica neste estudo específico.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "A partir da coleta de dados secundários, um pesquisador identificou casos de hanseníase em crianças menores de 10 anos diagnosticados num serviço de referência de uma capital do nordeste, no período de janeiro de 2018 a dezembro de 2018. Na conclusão ele pontuou como fator predisponente para o adoecimento das crianças o fato de ter caso índice intradomiciliar com forma multibacilar contagiante. Trata-se de estudo do tipo:",
+      "alternativas": [
+        "coorte histórica",
+        "transversal",
+        "revisão sistemática de literatura",
+        "caso-controle",
+        "série de relato de casos"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UDI avalia o conhecimento sobre diferentes tipos de desenho de estudos epidemiológicos. A competência testada é a capacidade de identificar corretamente o desenho de pesquisa baseado nas características metodológicas descritas.</p><p><strong>Análise do estudo descrito:</strong> O pesquisador utilizou dados secundários de um serviço de referência, analisando casos de hanseníase em crianças durante 12 meses consecutivos (jan-dez 2018). O foco estava em identificar fatores predisponentes, especificamente a presença de caso índice intradomiciliar.</p><p><strong>Características do estudo:</strong> 1) Coleta de dados secundários; 2) Período definido (1 ano); 3) Análise de exposição e doença em um momento específico do tempo; 4) Objetivo de identificar fatores associados ao adoecimento.</p><p><strong>Por que é estudo transversal:</strong> Em estudos transversais, exposição e doença são avaliadas simultaneamente em um ponto no tempo. Neste caso, as crianças foram classificadas quanto à presença de caso índice intradomiciliar e quanto ao diagnóstico de hanseníase no mesmo período de observação.</p><p><strong>Análise das alternativas:</strong> A) Coorte histórica - seguiria indivíduos ao longo do tempo, não aplicável aqui. B) Transversal - CORRETO, como explicado. C) Revisão sistemática - analisa literatura prévia, não dados primários. D) Caso-controle - seleciona casos e controles, não aplicável. E) Série de casos - descreve casos isolados, sem análise comparativa.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>B - transversal</strong>, correspondendo exatamente às características metodológicas do estudo apresentado.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Dermatologia",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_ClassificacaoDosEstudosEpidemi"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Faça associação das colunas I e II e em seguida marque a opção correta: COLUNA I; 1-Odds ratio; 2- Risco Relativo; 3- Incidência; 4- Curva de Gauss; 5- Teste de associação; COLUNA II; A- Casos novos; B- Desvio padrão; C- Qui-quadrado; D- Estudo de casos e controles; E- Estudos de coorte",
+      "alternativas": [
+        "1-D; 2-C; 3-E; 4-B; 5-A",
+        "1-E; 2-D; 3-A; 4-B; 5-C",
+        "1-D; 2-E; 3-A; 4-C; 5-B",
+        "1-E; 2-D; 3-B; 4-C; 5-A",
+        "1-D; 2-E; 3-A; 4-B; 5-C"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão clássica da banca UDI testa o conhecimento sobre a relação entre medidas epidemiológicas e seus respectivos contextos de aplicação. A competência avaliada é a capacidade de associar corretamente conceitos epidemiológicos fundamentais.</p><p><strong>Estratégia para associação:</strong> Para resolver este tipo de questão, é essencial conhecer: 1) O que cada medida epidemiológica representa; 2) Em que tipo de estudo cada uma é mais utilizada; 3) Os testes estatísticos associados a cada medida.</p><p><strong>Associações corretas:</strong> 1-Odors Ratio (D- Estudo de casos e controles) - O OR é a medida de associação padrão em estudos caso-controle, onde se compara a exposição entre casos e controles. 2-Risco Relativo (E- Estudos de coorte) - O RR é a medida de escolha em estudos de coorte, calculando a razão entre incidência exposta e não exposta. 3-Incidência (A- Casos novos) - Incidência mede precisamente a ocorrência de casos novos em uma população. 4-Curva de Gauss (B- Desvio padrão) - A distribuição normal (Gauss) é caracterizada pelo desvio padrão. 5-Teste de associação (C- Qui-quadrado) - O qui-quadrado é o teste estatístico mais utilizado para testar associações entre variáveis categóricas.</p><p><strong>Por que a alternativa E está correta:</strong> A sequência 1-D; 2-E; 3-A; 4-B; 5-C representa as associações epidemiologicamente apropriadas entre as medidas e seus contextos de aplicação.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>E - 1-D; 2-E; 3-A; 4-B; 5-C</strong>, correspondendo às associações metodologicamente corretas.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_IntroducaoAEpidemiologia",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "A distorção presente na estimativa do efeito que está sendo estudado, quando as medidas de exposição ou doença estão sistematicamente erradas, sendo que os erros são provenientes de falhas no questionário, procedimento diagnóstico etc, chama-se:",
+      "alternativas": [
+        "viés aleatória",
+        "viés de seleção",
+        "viés de confusão",
+        "viés de aferição",
+        "erro sistemático"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre diferentes tipos de viés em estudos epidemiológicos. A competência testada é a capacidade de identificar e diferenciar os principais vieses que podem comprometer a validade de uma pesquisa.</p><p><strong>Análise do viés descrito:</strong> A questão caracteriza um viés resultante de erros sistemáticos nas medidas de exposição ou doença, especificamente decorrentes de falhas em questionários ou procedimentos diagnósticos. Este é um erro sistemático e consistente que afeta a acurácia das medições.</p><p><strong>Definição de viés de aferição:</strong> Também conhecido como viés de informação, ocorre quando há erro sistemático na classificação da exposição ou do desfecho. Pode resultar de instrumentos de medida inadequados, questionários mal estruturados, ou procedimentos diagnósticos imprecisos.</p><p><strong>Diferenciação entre os vieses:</strong> A) Viés aleatório - erro randômico, não sistemático. B) Viés de seleção - problemas na escolha dos participantes. C) Viés de confusão - variável terceiro fator não controlada. D) Viés de aferição - CORRETO, como caracterizado na questão. E) Erro sistemático - sinônimo de viés, mas menos específico.</p><p><strong>Contexto prático:</strong> Em estudos epidemiológicos, o viés de aferição pode resultar de questionários com perguntas confusas, instrumentos de medida descalibrados, ou critérios diagnósticos inconsistentes. É fundamental para garantir a qualidade metodológica da pesquisa.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>D - viés de aferição</strong>, caracterizando perfeitamente a distorção por erro sistemático nas medidas de exposição/doença.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_ValidadeDosEstudosEpidemiologi",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Assinale abaixo a opção que preenche corretamente a lacuna. Considerando vantagens e desvantagens dos estudos epidemiológicos temos que no estudo _______________ os principais vieses são os de seleção e de memória.",
+      "alternativas": [
+        "caso-controle",
+        "seccional",
+        "coorte",
+        "ecológico",
+        "ensaio clínico"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as limitações metodológicas específicas de diferentes tipos de estudos epidemiológicos. A competência testada é a capacidade de identificar quais vieses são mais prevalentes em cada desenho de pesquisa.</p><p><strong>Características dos estudos caso-controle:</strong> Nestes estudos, selecionam-se indivíduos com a doença (casos) e sem a doença (controles), e avalia-se retrospectivamente a exposição a fatores de risco. Esta abordagem torna o estudo particularmente vulnerável a certos tipos de viés.</p><p><strong>Viés de seleção em caso-controle:</strong> A seleção inadequada de casos e controles pode comprometer a representatividade da amostra. Casos podem ser selecionados de hospitais (mais graves), enquanto controles podem não representar adequadamente a população de origem dos casos.</p><p><strong>Viés de memória em caso-controle:</strong> A dependência da recordação dos participantes sobre exposições passadas é uma limitação inerente. Casos podem ter maior probabilidade de lembrar exposições (especialmente se acham que estão relacionadas à sua doença), enquanto controles podem subestimar exposições por não terem a motivação dos casos.</p><p><strong>Por que as outras alternativas estão incorretas:</strong> B) Estudo seccional - principais vieses são de seleção e informação. C) Estudo coorte - principais vieses são de perdas de seguimento e confundimento. D) Estudo ecológico - vício de agregação. E) Ensaio clínico - vícios de alocação e seguimento.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>A - caso-controle</strong>, correspondendo exatamente aos principais vieses característicos deste desenho de estudo.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_ValidadeDosEstudosEpidemiologi"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Sobre a evolução do sistema de saúde brasileiro, assinale a opção correta:",
+      "alternativas": [
+        "o grande marco na formação do sistema único de saúde - SUS foi a criação do INAMPS - Instituto Nacional de administração e assistência Médica da Previdência Social em 1970, que fez a inclusão dos trabalhadores rurais como beneficiários e a população passo",
+        "na década de 60, com a criação do Instituto Nacional de Previdência Social-INPS, todos os trabalhadores, sejam os formais ou informais passaram a ter direito aos benefícios, incluindo aposentadorias.",
+        "os institutos de aposentadorias e pensões - IAPs passaram a ter o controle administrativo do Estado na década de 1930 com aumento da participação financeira do Estado e diminuição da contribuição do trabalhador.",
+        "antes da constituição de 1988, o sistema de saúde era centralizado e a população não participava das discussões.",
+        "na década de 1920 o financiamento da saúde era tripartite e as Caixas de Aposentadorias e Pensões- CAPs garantiam assistência médica curativa, fornecimento de medicamentos, aposentadoria, pensão e auxílio funeral, realizado pelos municípios, empresas e Es"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UDI 2022 avalia seu conhecimento sobre a evolução histórica do sistema de saúde brasileiro, especialmente o período pré-Constituição de 1988.</p><p><strong>A resposta correta é D.</strong> Antes da Constituição de 1988, o sistema de saúde brasileiro era efetivamente centralizado e a população não participava das discussões sobre políticas de saúde. Esse era um dos principais problemas do modelo anterior ao SUS.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> O INAMPS foi criado em 1974, não em 1970. Além disso, não foi o marco da formação do SUS - foi apenas um dos órgãos predecessors. A inclusão dos trabalhadores rurais aconteceu de forma gradual e não foi o grande marco do SUS.</p><p><strong>B) INCORRETA:</strong> Na década de 60, com a criação do INPS, apenas trabalhadores formais tinham direito aos benefícios. Trabalhadores informais não eram contemplados nesse sistema.</p><p><strong>C) INCORRETA:</strong> Os IAPs perderam controle administrativo do Estado na década de 1960, não na década de 1930. Na década de 1930, eles ganharam mais autonomia.</p><p><strong>D) CORRETA:</strong> Exatamente. Antes de 1988, o sistema era centralizado no governo federal e não havia participação popular nas decisões sobre saúde.</p><p><strong>E) INCORRETA:</strong> Na década de 1920, o financiamento era bipartite (empresas e trabalhadores), não tripartite. As CAPs não ofereciam todos esses benefícios de forma universal.</p><p>Esta questão evidencia a importância da Constituição de 1988 na democratização e descentralização do sistema de saúde brasileiro.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_HistoriaDoSistemaUnicoDeSaudeS",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_HistoriaDoSistemaUnicoDeSaudeS_SistemasDeSaudeEModelosAssiste",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_HistoriaDoSistemaUnicoDeSaudeS_AssistenciaASaudeNoBrasilNoPer"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Sobre os princípios doutrinários e éticos do SUS, assinale a opção correta:",
+      "alternativas": [
+        "A descentralização define que os estados passam a receber repasses direto do governo federal para arcar integralmente com as despesas do SUS em nível estadual e municipal.",
+        "A equidade é baseada no fato de que as ações de promoção de saúde envolvem o ser humano como um todo, abrangendo todas as áreas e tratando as desigualdades com igualdade.",
+        "A universalidade garante que a saúde é um direito de todos, não mais apenas do trabalhador vinculado ao mercado formal.",
+        "A participação popular e o controle social foram firmados a partir da formação dos conselhos de saúde e tutelar.",
+        "A regionalização e a hierarquização estabelecem que a entrada no SUS deve acontecera partir do nível primário."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora os princípios doutrinários e éticos fundamentais do Sistema Único de Saúde brasileiro, sendo um tema central na compreensão do SUS.</p><p><strong>A resposta correta é C.</strong> A universalidade é exatamente isso: garante que a saúde é um direito de todos, não mais apenas dos trabalhadores vinculados ao mercado formal, como era no sistema anterior.</p><p>Analisando as alternativas uma a uma:</p><p><strong>A) INCORRETA:</strong> A descentralização não significa que estados recebem repasses diretos para arcar integralmente com as despesas. O SUS opera com responsabilidades compartilhadas e financiamento tripartite, não com repasse integral para estados.</p><p><strong>B) INCORRETA:</strong> A equidade significa tratar desigualmente os desiguais, oferecendo mais recursos para quem mais precisa. Não significa tratar desigualdades com igualdade - isso seria apenas igualdade formal.</p><p><strong>C) CORRETA:</strong> Perfeito! A universalidade superou o modelo anterior que atendia apenas trabalhadores formais, garantindo acesso a toda a população brasileira.</p><p><strong>D) INCORRETA:</strong> A participação popular e controle social foram firmados já na Constituição de 1988, não apenas com a formação dos conselhos. Os conselhos são instrumentos, mas o princípio está na Constituição.</p><p><strong>E) INCORRETA:</strong> Regionalização e hierarquização organizam o sistema em níveis de complexidade, mas não estabelecem que a entrada deve ser necessariamente pelo nível primário. A porta de entrada é o nível primário, mas há exceções.</p><p>Esta questão demonstra a importância de compreender os três princípios doutrinários: universalidade, equidade e integralidade.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_1",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_4"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Sobre a lei 8142, assinale a opção correta:",
+      "alternativas": [
+        "Foi criada em 28/12/1990 e dispõe sobre a participação da comunidade na gestão do sistema de saúde (SUS)",
+        "Essa lei criou o SUS e os principais itens dessa lei dispõem sobre as atribuições e competências das 3 esferas do governo.",
+        "Dispõe sobre a participação complementar da iniciativa privada na assistência à saúde.",
+        "Essa lei determina que a conferência de saúde deve reunir-se a cada 4 anos e será convocada exclusivamente pelo conselho de saúde.",
+        "Segundo a lei no 8142 as conferências de saúde podem reunir-se sempre que houver necessidade cabendo a convocação ao poder executivo ou conselho de saúde."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda a Lei 8142/1990, que é fundamental para compreender a participação da comunidade na gestão do SUS.</p><p><strong>A resposta correta é A.</strong> A Lei 8142 foi criada em 28/12/1990 e dispõe especificamente sobre a participação da comunidade na gestão do sistema de saúde (SUS).</p><p>Vamos examinar cada alternativa:</p><p><strong>A) CORRETA:</strong> Exato! A Lei 8142 de 28/12/1990 trata da participação da comunidade na gestão do SUS, estabelecendo as conferências de saúde e os conselhos de saúde.</p><p><strong>B) INCORRETA:</strong> O SUS foi criado pela Lei 8080/1990, não pela 8142. A Lei 8080 é que dispõe sobre as atribuições e competências das três esferas de governo para o funcionamento do SUS.</p><p><strong>C) INCORRETA:</strong> A participação complementar da iniciativa privada na assistência à saúde é tema da Lei 8080/1990, especificamente em seu artigo 24.</p><p><strong>D) INCORRETA:</strong> A Lei 8142 determina que a conferência de saúde deve reunir-se a cada 4 anos, mas a convocação pode ser feita pelo conselho de saúde, não exclusivamente. A lei é mais flexível que essa afirmação.</p><p><strong>E) INCORRETA:</strong> A Lei 8142 estabelece que as conferências devem se reunir a cada 4 anos, não \"sempre que houver necessidade\". Embora possam se reunir extraordinariamente, há uma periodicidade mínima estabelecida.</p><p>Esta lei é complementar à Lei 8080 e juntas formam a base legal do SUS. A 8142 garante a participação popular, enquanto a 8080 estrutura o sistema.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_2",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "O financiamento do Sistema Único de Saúde - SUS, segundo a constituição brasileira, deve ser composto por recursos:",
+      "alternativas": [
+        "próprios da União, Estados, Município e contribuição dos trabalhadores com carteira assinada.",
+        "da União, dos Estados e município.",
+        "pelos poderes executivo, judiciário e legislativo",
+        "da previdência social prioritariamente e pelas empresas privadas para complementar.",
+        "trabalhadores de carteira assinada, empresas privadas, União e Estados."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre o financiamento do SUS conforme a Constituição Federal, um tema essencial para compreender a sustentabilidade do sistema.</p><p><strong>A resposta correta é B.</strong> Segundo a Constituição brasileira, o financiamento do SUS deve ser composto por recursos da União, dos Estados e municípios - é o financiamento tripartite.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> A Constituição de 1988 não inclui contribuição dos trabalhadores com carteira assinada como fonte de financiamento do SUS. O financiamento é responsabilidade das esferas de governo, não dos trabalhadores.</p><p><strong>B) CORRETA:</strong> Perfeito! A Constituição Federal de 1988 estabelece que o SUS será financiado pela União, Estados e municípios, constituindo o financiamento tripartite. Este é um dos pilares do sistema.</p><p><strong>C) INCORRETA:</strong> O financiamento do SUS não envolve os poderes executivo, judiciário e legislativo. Esses são poderes do Estado, não fontes de financiamento do sistema de saúde.</p><p><strong>D) INCORRETA:</strong> A previdência social não financia prioritariamente o SUS, e empresas privadas não contribuem para o financiamento obrigatório do sistema. O financiamento é responsabilidade do setor público.</p><p><strong>E) INCORRETA:</strong> Trabalhadores de carteira assinada e empresas privadas não contribuem diretamente para o financiamento do SUS. A Constituição de 1988 é clara: o financiamento é responsabilidade da União, Estados e municípios.</p><p>É importante lembrar que há normas constitucionais sobre mínimos percentuais de aplicação de recursos, buscando garantir o financiamento adequado do sistema.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_FinanciamentoEmSaude",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_ProcessosDeDescentralizacaoERe"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Fazem parte da Assistência Primária à Saúde - APS:",
+      "alternativas": [
+        "Intervenção com predominância no profissional médico e ações independentes do perfil epidemiológico.",
+        "Articulação entre os diversos serviços e ações de saúde, de forma que estejam sincronizados e voltados ao alcance de um objetivo comum, independentemente do local onde sejam prestados.",
+        "Primeiro acesso aos serviços de saúde com limitação de não garantir o acesso aos diversos níveis de atenção.",
+        "Adaptar a comunidade às normas de saúde e até culturais definidas pela equipe e profissionais de saúde.",
+        "Regula a entrada de pacientes no sistema através de regras para o controle do número de consultas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o entendimento sobre a Atenção Primária à Saúde (APS), um dos pilares fundamentais do SUS e base do sistema de saúde brasileiro.</p><p><strong>A resposta correta é B.</strong> A APS envolve a articulação entre diversos serviços e ações de saúde, de forma sincronizada e voltada para objetivos comuns, independentemente do local onde sejam prestados.</p><p>Vamos analisar as alternativas:</p><p><strong>A) INCORRETA:</strong> A APS não tem predominância no profissional médico - é uma equipe multiprofissional. Além disso, as ações são baseadas no perfil epidemiológico da comunidade, não independentes dele.</p><p><strong>B) CORRETA:</strong> Excelente! A APS coordena e articula os diversos pontos da rede de atenção, garantindo continuidade do cuidado e integração dos serviços, não importa onde o cuidado seja ofertado.</p><p><strong>C) INCORRETA:</strong> A APS é o primeiro acesso aos serviços, mas ELA DEVE garantir o acesso aos diversos níveis de atenção. A continuidade do cuidado é fundamental na APS.</p><p><strong>D) INCORRETA:</strong> A APS não adapta a comunidade às normas da equipe. Pelo contrário, a equipe deve adaptar sua prática às necessidades e características culturais da comunidade.</p><p><strong>E) INCORRETA:</strong> A regulação é um instrumento importante, mas a APS não se limita a controlar o número de consultas. Seu papel é muito mais amplo na coordenação do cuidado.</p><p>A APS é a porta de entrada do sistema, a base da hierarquização e fundamental para a efetividade do SUS. A Estratégia Saúde da Família é a forma de organização da APS no Brasil.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Em que situações deve ser emitida obrigatoriamente a declaração de óbito?",
+      "alternativas": [
+        "Peças anatômicas amputadas.",
+        "No óbito fetal, com gestação de menos de 20 semanas, ou feto com peso menor que500g, ou estatura menor que 25 cm.",
+        "Criança que nasceu viva e morreu logo após o nascimento, independente da duração da gestação, do peso do recém-nascido e do tempo que tenha permanecido vivo.",
+        "Feto com menos de 20 semanas desde que o abortamento tenha sido espontâneo.",
+        "Todo óbito (natural ou violento), incluindo o óbito fetal independentemente da idade gestacional e peso."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UDI avalia o conhecimento sobre os critérios legais para emissão de declaração de óbito no Brasil.</strong></p><p>A competência testada é essencial na prática médica, especialmente para profissionais que podem se envolver com casos de óbito em diferentes contextos. O examinador busca identificar se o candidato conhece as situações em que a DO é obrigatória.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Peças anatômicas amputadas:</strong> INCORRETA. Peças anatômicas removidas cirúrgicamente (como amputar um membro gangrenado) não geram declaração de óbito, pois referem-se a tecido corporal que continua sendo de responsabilidade da unidade de saúde.</p><p><strong>B) Óbito fetal com menos de 20 semanas ou peso <500g:</strong> INCORRETA. De acordo com a Portaria nº 72/2012 do Ministério da Saúde, a DO para óbito fetal só é obrigatória quando a gestação tem 20 semanas ou mais.</p><p><strong>C) Criança nascida viva que morreu após o nascimento:</strong> CORRETA. Esta é a resposta gabarito. A lei considera que se houve vida fetal, mesmo que por segundos, torna-se uma pessoa e portanto necessita de DO. Independe de idade gestacional, peso ou tempo de vida.</p><p><strong>D) Feto com menos de 20 semanas (aborto espontâneo):</strong> INCORRETA. O aborto espontâneo antes de 20 semanas não requer DO, pois é considerado abortamento e não nascimento.</p><p><strong>E) Todo óbito incluindo óbito fetal independente da idade gestacional:</strong> INCORRETA. Estabelece critérios mais amplos que a lei atual, sendo que o óbito fetal só é obrigatório a partir de 20 semanas de gestação.</p><p><strong>Veredito:</strong> Alternativa C é a correta, pois representa a distinção fundamental entre natimorto (nascido vivo) e aborto (não nasceu vivo).</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Sobre o preenchimento da declaração de óbito (DO), assinale a opção correta.",
+      "alternativas": [
+        "Em caso de cadáver por morte natural, sem qualquer documentação ou identificação, que impossibilite a emissão da DO, deverá ser encaminhado ao serviço de verificação de óbito ou ao IML, se não houver SVO na localidade.",
+        "Em caso de cadáver por morte natural em domicílio, o médico da família deve emitir DO baseando-se nas comorbidades do paciente.",
+        "Para preencher adequadamente a DO, o médico deve declarar a causa básica do óbito em primeiro lugar, estabelecendo uma sequência de cima para baixo, até a causa terminal ou imediata.",
+        "O médico não deve declarar condições mórbidas pré-existentes caso estas não tenham relação direta com o óbito.",
+        "Em casos de suicídios o médico da família poderá emitir a DO desde que o cadáver esteja no domicílio."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão foi ANULADA pela banca UDI, conforme indicado pelo gabarito '@'.</strong></p><p><strong>Motivo da anulação:</strong> Existe ambiguidade entre as alternativas A e C, sendo possível sustentar argumentos válidos para ambas as opções.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Cadáver sem identificação:</strong> Procede em relação ao encaminhamento para IML/SVO, mas apresenta imprecisão técnica ao não mencionar a necessidade de investigação de causas violáveis.</p><p><strong>B) Morte natural em domicílio:</strong> INCORRETA. O médico da família não pode emitir DO baseando-se apenas em comorbidades - é necessária investigação médica para identificar a causa mortis.</p><p><strong>C) Causa básica do óbito:</strong> Esta alternativa apresenta procedimento correto para preenchimento da DO, mas também pode ser questionada por não abordar todos os aspectos técnicos do preenchimento.</p><p><strong>D) Condições pré-existentes:</strong> INCORRETA. Mesmo sem relação direta com o óbito, devem ser declaradas como comorbidades relevantes para compreensão do quadro clínico.</p><p><strong>E) Suicídios em domicílio:</strong> INCORRETA. Independente do local, suicídios sempre devem ser encaminhados ao IML para investigação de causas violentas.</p><p><strong>Conclusão:</strong> A questão foi anulada por apresentar múltiplas alternativas com elementos corretos, dificultando a escolha única. Esta é uma situação que exemplifica a importância de questões bem fundamentadas em provas de residência.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Assinale a opção que apresenta doenças de notificação compulsória com periodicidade de notificação imediata para ministério da saúde (MS):",
+      "alternativas": [
+        "botulismo, cólera, febre amarela e dengue",
+        "botulismo, cólera, febre amarela e hantavirose",
+        "zika, leptospirose, febre amarela e hepatite d",
+        "varíola, acidente de trabalho com exposição a material biológico, doença decreutzfeldt-jakob e toxoplasmose gestacional.",
+        "toxoplasmose congênita, peste, COVID-19 e febre tifoide."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A UDI avalia o conhecimento sobre notificação compulsória no Sistema Único de Saúde brasileiro.</strong></p><p>Esta questão testa se o candidato conhece as doenças que exigem notificação imediata ao Ministério da Saúde, um tema fundamental na vigilância epidemiológica.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Botulismo, cólera, febre amarela e dengue:</strong> INCORRETA. Embora botulismo, cólera e febre amarela sejam de notificação imediata, a dengue (chikungunya e zika também) passou a ser de notificação semanal, não imediata, desde 2016.</p><p><strong>B) Botulismo, cólera, febre amarela e hantavirose:</strong> CORRETA. <strong>Resposta gabarito.</strong> Todas estas doenças exigem notificação compulsória IMEDIATA. A hantavirose, identificada como Síndrome Pulmonar por Hantavirus, está classificada no grupo de doenças de alta gravidade e potencial de surto.</p><p><strong>C) Zika, leptospirose, febre amarela e hepatite D:</strong> INCORRETA. Zika e leptospirose são de notificação semanal, não imediata. Hepatite D é de notificação individual e em surto.</p><p><strong>D) Varíola, acidente com material biológico, doença de Creutzfeldt-Jakob e toxoplasmose gestacional:</strong> INCORRETA. Varíola está erradicada no Brasil, acidente com material biológico é de notificação em 24h, não imediata.</p><p><strong>E) Toxoplasmose congênita, peste, COVID-19 e febre tifoide:</strong> INCORRETA. Toxoplasmose congênita é de notificação em 24h, COVID-19 é de notificação semanal, febre tifoide é de notificação individual.</p><p><strong>Veredito:</strong> Alternativa B é a correta, compreendendo o entendimento das emergências epidemiológicas que exigem ação imediata do sistema de saúde.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Sobre as doenças ocupacionais é correto afirmar:",
+      "alternativas": [
+        "No saturnismo as principais vias de absorção do agente causal é a digestiva e inalatória e acomete principalmente trabalhadores de garimpos, indústria eletrônica e fabricação de agentes polímeros. Clinicamente o paciente pode apresentar irritação de pele",
+        "O paciente com bissinose ou asma ocupacional pode apresentar diminuição dos sintomas com a exposição de longo tempo. Nessas doenças os sintomas desaparecem nos finais de semana ou férias do trabalhador corroborando para o diagnóstico de doença relacionada",
+        "A perda auditiva por ruído pode ser reversível e a audiometria pode revelar um componente de assimetria.",
+        "A silicose pode acometer indivíduos que atuam em atividades com jateamento deareia, extração e beneficiamento de rochas, mineração e perfuração de poços. Faz parte das doenças do grupo I de Schilling já que o trabalho é causa estritamente necessária para",
+        "No hidrargirismo as linhas de Burton correspondem a acúmulo de chumbo na base dos dentes."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UDI aborda doenças ocupacionais no contexto da Medicina do Trabalho.</strong></p><p>O objetivo é avaliar se o candidato domina os critérios diagnósticos e classificatórios das principais doenças relacionadas ao trabalho, seguindo a classificação de Schilling.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Saturnismo:</strong> INCORRETA. O saturnismo (intoxicação por chumbo) é causado por chumbo metálico, e as vias de absorção são principalmente respiratória (inalação de vapores) e digestiva. O diagnóstico clínico inclui cólica saturnina, neuropatia, anemia. As linhas de Burton são de cor azulada na gengiva, não irritação de pele.</p><p><strong>B) Bissinose/asma ocupacional:</strong> INCORRETA. Estas doenças podem cursar com melhora quando o paciente se afasta do ambiente de trabalho (efeito \"Monday morning\"), mas não há desaparecimento completo dos sintomas. O diagnóstico ocupacional baseia-se na história de exposição e melhoria nos fins de semana.</p><p><strong>C) Perda auditiva por ruído:</strong> INCORRETA. A Perda Auditiva Induzida por Ruído (PAIR) é progressiva e IRREVERSÍVEL. A audiometria geralmente é simétrica, não assimétrica.</p><p><strong>D) Silicose:</strong> CORRETA. <strong>Resposta gabarito.</strong> É uma pneumoconiose causada por sílica cristalina, predominante em jateamento de areia, mineração, extração de rochas. Pertence ao Grupo I de Schilling (doenças onde o trabalho é causa estritamente necessária para desenvolvimento da doença).</p><p><strong>E) Hidrargirismo:</strong> INCORRETA. O hidrargirismo é intoxicação por mercúrio. As linhas de Burton (linhas azuis na gengiva) são típicas de INTOXICAÇÃO POR CHUMBO, não mercúrio.</p><p><strong>Veredito:</strong> Alternativa D é a correta, demonstrando conhecimento das pneumoconioses ocupacionais e sua classificação etiológica.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho_Pneumoconioses"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Na suspeita de intoxicação de tolueno deve-se avaliar se há aumento da excreção urinária de:",
+      "alternativas": [
+        "ácido delta-amino-levulínico.",
+        "meta-hemoglobina",
+        "carboxihemoglobina",
+        "glutamina",
+        "ácido hipúrico"
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão avalia conhecimento sobre toxicologia ocupacional e biomarcadores específicos.</strong></p><p>A UDI testou se o candidato conhece os metabólitos urinários característicos das principais intoxicações ocupacionais, um tema fundamental na Medicina do Trabalho.</p><p><strong>Contexto clínico:</strong> O tolueno é um solvente aromático amplamente utilizado na indústria de tintas, colas, vernizes e thinner. A exposição occupational é comum e pode levar a efeitos neurotóxicos e sistêmicos.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Ácido delta-amino-levulínico:</strong> INCORRETA. Este é o metabólito específico para INTOXICAÇÃO POR CHUMBO (saturação da via heme). No saturnismo, há aumento da excreção de ácido delta-aminolevulínico (ALA).</p><p><strong>B) Meta-hemoglobina:</strong> INCORRETA. Meta-hemoglobina elevada é típica de INTOXICAÇÃO POR BENZENO ou oxidantes como nitritos, nitrocompostos.</p><p><strong>C) Carboxihemoglobina:</strong> INCORRETA. Específica para INTOXICAÇÃO POR MONÓXIDO DE CARBONO (CO), gases de combustão incompletos, tabaco.</p><p><strong>D) Glutamina:</strong> INCORRETA. Glutamina é um aminoácidos, não está relacionado à intoxicação por tolueno.</p><p><strong>E) Ácido hipúrico:</strong> CORRETA. <strong>Resposta gabarito.</strong> O tolueno é metabolizado no fígado e transformado em ácido hipúrico, que é eliminado pela urina. A dosagem de ácido hipúrico urinário é o biomarcador gold standard para monitoramento de exposição ocupacional ao tolueno.</p><p><strong>Veredito:</strong> Alternativa E é a correta, representando o conhecimento dos metabólitos específicos que permitem o diagnóstico biológico de exposição toxicologica.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho_ToxicologiaOcupacional"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Paciente diabético, após infecção por COVID-19 evoluiu com insuficiência renal dialítica. Assinale abaixo a opção que dispõe sobre o medicamento recomendado para o controle glicêmico do paciente considerando uma taxa de filtração glomerular < 15 ml/min.",
+      "alternativas": [
+        "Empagliflozina",
+        "Arcabose",
+        "Linagliptina",
+        "Liraglutida",
+        "Metformina"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UDI aborda o controle glicêmico em pacientes diabéticos com insuficiência renal grave. A competência avaliada é o conhecimento sobre as restrições e indicações de medicamentos antidiabéticos em diferentes estágios de doença renal crônica.</p><p><strong>A resposta correta é C - Linagliptina.</strong></p><p>Vamos analisar cada alternativa considerando a função renal < 15 ml/min:</p><p><strong>Empagliflozina (A):</strong> Inibidor de SGLT-2 contraindicado em TFG < 30 ml/min. Embora tenha benefícios cardiovasculares, não pode ser usado em paciente dialítico.</p><p><strong>Arcabose (B):</strong> Inibidor de alfa-glucosidase. É eliminado principalmente por via fecal, mas pode causar efeitos gastrintestinais intensos em insuficiência renal e não é primeira escolha.</p><p><strong>Linagliptina (C):</strong> Inibidor de DPP-4. É a escolha ideal porque: 1) não requer ajuste de dose em qualquer grau de insuficiência renal, 2) é eliminada principalmente por via biliar, 3) tem perfil de segurança favorável em pacientes com TFG < 15 ml/min. <strong>Conforme o MS 2025, linagliptina é recomendada em pacientes com insuficiência renal grave.</strong></p><p><strong>Liraglutida (D):</strong> Análogo de GLP-1. Reduz clearance em insuficiência renal, necessitando ajuste de dose. Pode ser usada, mas não é a primeira escolha em diálise.</p><p><strong>Metformina (E):</strong> Contraindicada em TFG < 30 ml/min devido ao risco de acidose lática. Em paciente dialítico, seu uso é formal contraindicado.</p><p><strong>Veredito:</strong> A linagliptina é a opção mais segura e eficaz para controle glicêmico em paciente diabético com insuficiência renal dialítica, não requerendo ajustes e apresentando excelente perfil de segurança conforme diretrizes brasileiras de diabetes e insuficiência renal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_HiperglicemiaNoPacienteHospita"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Mulher de 47 anos dá entrada no serviço de pronto-atendimento relatando dor na garganta há 8 dias. Nos antecedentes refere infecção de vias aéreas superiores há 3 semanas. Ao exame observou-se orofaringe sem alterações e ausência de adenomegalias. Apresenta dor à palpação da tireoide e os exames laboratoriais revelaram leucocitose com aumento na velocidade de eritrossedimentação (VHS). Assinale a opção com provável diagnóstico da paciente.",
+      "alternativas": [
+        "Tireoidite subaguda de Quervain.",
+        "Tireoidite de Hashimoto.",
+        "Doença de Graves.",
+        "Faringite viral recidivante.",
+        "Tireoidite subaguda linfocítica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UDI avalia o conhecimento sobre tireoidites e suas características clínicas distintas. O examinador quer testar sua capacidade de correlacionar história clínica, exame físico e laboratorial para diferenciação diagnóstica.</p><p><strong>A resposta correta é A - Tireoidite subaguda de Quervain.</strong></p><p>Vamos analisar o caso detalhadamente:</p><p>Mulher de 47 anos, dor de garganta há 8 dias. Atenção: dor à palpação da tireoide - este é o achado-chave que aponta para tireoidite, não para faringite. A história pregressa de infecção de vias aéreas superiores há 3 semanas é típica do antecedente viral da tireoidite de Quervain.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Tireoidite subaguda de Quervain (CORRETA):</strong> Caracterizada por: dor à palpação da tireoide, história de infecção viral prévia (3 semanas antes), leukocitose com VHS elevada. É uma inflamação pós-viral da tireoide. <strong>Conforme diretrizes brasileiras de endocrinologia, Quervain é a tireoidite mais dolorosa e associada a VHS muito elevada.</strong></p><p><strong>B) Tireoidite de Hashimoto:</strong> Doença autoimune crônica. Normalmente não causa dor à palpação, e os sintomas são de hipotireoidismo gradual, não dor aguda de garganta.</p><p><strong>C) Doença de Graves:</strong> Hipertireoidismo autoimune. Caracterizada por bócio difuso, exoftalmia, tremor, taquicardia. Não apresenta dor à palpação nem VHS elevada.</p><p><strong>D) Faringite viral recidivante:</strong> O enunciado esclarece que orofaringe está sem alterações e há dor à palpação da tireoide, descartando faringite.</p><p><strong>E) Tireoidite subaguda linfocítica (tireoidite silenciosa):</strong> Forma indolor de tireoidite pós-parto ou pós-viral. Não apresenta dor à palpação, diferenciando-se do Quervain.</p><p><strong>Veredito:</strong> A combinação de dor à palpação da tireoide, história de infecção viral prévia e VHS elevada é patognomônica da tireoidite subaguda de Quervain, tornando a alternativa A a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Hipotireoidismo",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Sobre as arboviroses mais importantes no Brasil, assinale a opção correta:",
+      "alternativas": [
+        "O paciente com dengue confirmada e sem febre após o terceiro dia de doença pode receber alta do controle ambulatorial.",
+        "Na febre chikungunya o período de incubação varia entre 3-7 dias, existindo risco de transmissão vertical no momento do parto, com infecção neonatal grave.",
+        "O sinal de Faget está presente na febre amarela, Zika e na febre hemorrágica da dengue.",
+        "São doenças de notificação compulsória e somente devem ser notificados os casos confirmados laboratorialmente.",
+        "A infecção pelo Zika vírus tem evolução maligna na gestante devido sua correlação comprovada com a microcefalia e nos idosos pela correlação com a síndrome de GuillainBarré."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UDI aborda arboviroses importantes no Brasil, testando conhecimentos epidemiológicos, clínicos e de manejo conforme as diretrizes do Ministério da Saúde.</p><p><strong>A resposta correta é B - Na febre chikungunya o período de incubação varia entre 3-7 dias, existindo risco de transmissão vertical no momento do parto, com infecção neonatal grave.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Paciente com dengue sem febre após o terceiro dia pode receber alta:</strong> INCORRETA. Conforme <strong>MS 2025</strong>, na dengue é necessário manter vigilância até o 7º dia do início dos sintomas, mesmo após cessação da febre, devido ao risco de complicação na fase crítica (vasculopatia e choque).</p><p><strong>B) Febre chikungunya (RESPOSTA CORRETA):</strong> CORRETA. O período de incubação é realmente 3-7 dias. A transmissão vertical ocorre principalmente no momento do parto, com infecção neonatal grave caracterizada por febre, dor, rash e eventualmente meningoencefalite. <strong>As diretrizes brasileiras de arboviroses 2025 confirmam este risco.</strong></p><p><strong>C) Sinal de Faget presente em febre amarela, Zika e dengue hemorrágica:</strong> INCORRETA. O sinal de Faget (dissociação pulso-temperatura - temperatura elevada com bradicardia relativa) é típico da febre amarela. Zika e dengue hemorrágica não apresentam esta característica.</p><p><strong>D) Notificação compulsória apenas para casos confirmados:</strong> INCORRETA. Conforme <strong>Notificação Compulsória MS 2025</strong>, dengue, chikungunya e Zika são doenças de notificação compulsória, e a notificação deve ser feita para casos SUSPEITOS (clínicos e epidemiológicos), não apenas confirmados laboratorialmente.</p><p><strong>E) Zika com evolução maligna na gestante e idosos:</strong> INCORRETA. A Zika na gestante está associada à microcefalia fetal, mas não é universalmente 'maligna'. Em idosos, a Zika não tem associação específica com Guillain-Barré - esta associação é mais forte com chikungunya.</p><p><strong>Veredito:</strong> A alternativa B está correta conforme as diretrizes brasileiras de arboviroses, sendo a única informação factualmente precisa sobre epidemiologia, clínica e transmissão da febre chikungunya.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Chikungunya",
+        "MedicinaPreventiva"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Assinale a opção que apresenta agentes etiológicos de enteroparasitoses determinantes da síndrome de Loffler.",
+      "alternativas": [
+        "Ancylostoma duodenale, Cryptosporidium ssp e Ascaris lumbricoides.",
+        "Strongyloides stercoralis, Ascaris lumbricoides e Taenia solium.",
+        "Ascaris lumbricoides, Ancylostoma duodenale e Entamoeba histolytica.",
+        "Cryptosporidium ssp, Trichuris trichiura e Enterobius vermiculares.",
+        "Necator americanos, Ascaris lumbricoides e Ancylostoma duodenale."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UDI avalia conhecimento sobre parasitoses que cursam com síndrome de Löeffler. O examinador quer testar se você reconhece quais parasitas completam ciclo pulmonar, causando manifestações características.</p><p>A síndrome de Löeffler representa o conjunto de sintomas durante a passagem de larvas de parasitas pelos pulmões. Esses parasitas completam parte do ciclo no intestino e parte na circulação, passando pelos pulmões antes de retornar ao intestino.</p><p><strong>A resposta correta é E - Necator americanus, Ascaris lumbricoides e Ancylostoma duodenale.</strong></p><p>Vamos analisar cada alternativa, focando nos parasitas que fazem ciclo pulmonar:</p><p><strong>A) Ancylostoma, Cryptosporidium e Ascaris:</strong> INCORRETA. Ancylostoma e Ascaris fazem ciclo pulmonar, mas Cryptosporidium é um protozoário que permanece apenas no intestino, sem ciclo pulmonar.</p><p><strong>B) Strongyloides, Ascaris e Taenia:</strong> INCORRETA. Strongyloides e Ascaris fazem ciclo pulmonar, mas Taenia (solium) permanece apenas no intestino, sem fase pulmonar.</p><p><strong>C) Ascaris, Ancylostoma e Entamoeba:</strong> INCORRETA. Ascaris e Ancylostoma fazem ciclo pulmonar, mas Entamoeba histolytica é um protozoário que permanece apenas no intestino.</p><p><strong>D) Cryptosporidium, Trichuris e Enterobius:</strong> INCORRETA. Nenhum destes parasitas faz ciclo pulmonar. Trichuris e Enterobius são nematódeos que permanecem no intestino, e Cryptosporidium é protozoário.</p><p><strong>E) Necator, Ascaris e Ancylostoma (RESPOSTA CORRETA):</strong> CORRETA. Os três parasitas são nematódeos que fazem ciclo pulmonar. As larvas migram pela circulação, atravessam os alvéolos pulmonares (causando a síndrome de Löeffler: tosse, chiado, escarro hemoptoico, infiltrados pulmonares transitórios e eosinofilia), ascendem pela árvore brônquica, são deglutidas e completam o ciclo intestinal. <strong>Conforme parasitologia brasileira, estes são os três helmintos mais importantes causadores de síndrome de Löeffler.</strong></p><p><strong>Mnemônico para lembrar:</strong> Use <strong>'N-A-A' = Necator-Ancylostoma-Ascaris</strong> ou memorize que os principais causadores são os 'vermes que picam o intestino e voam pelos pulmões'.</p><p><strong>Veredito:</strong> A alternativa E apresenta corretamente os três parasitas mais importantes causadores da síndrome de Löeffler, todos realizando ciclo pulmonar característico antes de completar a maturação intestinal.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Parasitologia"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "A tuberculose pulmonar mantém ao longo dos anos alta prevalência no Maranhão. A respeito do seu manejo é correto afirmar:",
+      "alternativas": [
+        "A cultura deve ser realizada: em casos suspeitos de tuberculose pulmonar com baciloscopia negativa, suspeita de tuberculose resistente ao esquema padrão e na presença de formas extrapulmonares.",
+        "Na tuberculose pleural o exame de melhor sensibilidade é o BAAR de líquido pleural.",
+        "Deve-se tratar os contatos com teste tubeculínico positivo com rifampicina +etambutol + pirazinamida + isoniazida por 2 meses, seguidos por 4 meses de rifampicina + isoniazida conforme o peso.",
+        "É necessário coadministrar a vitamina B6 (piridoxina) com isoniazida no tratamento da Tuberculose porque a isoniazida provoca má absorção da vitamina B6.",
+        "Os efeitos colaterais mais comumente relacionados com o Etambutol são neuropatia periférica, hepatotoxicidade e hiperuricemia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UDI aborda o manejo da tuberculose pulmonar, especialmente no contexto do Maranhão onde a doença mantém alta prevalência. A competência avaliada é o conhecimento sobre diagnóstico, tratamento e controle da TB conforme as diretrizes nacionais.</p><p><strong>A resposta correta é A - A cultura deve ser realizada: em casos suspeitos de tuberculose pulmonar com baciloscopia negativa, suspeita de tuberculose resistente ao esquema padrão e na presença de formas extrapulmonares.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Indicações para cultura (RESPOSTA CORRETA):</strong> CORRETA. A cultura para Mycobacterium tuberculosis deve ser realizada: 1) Em casos com baciloscopia negativa mas alta suspeita clínica (a cultura tem maior sensibilidade que baciloscopia), 2) Para investigação de resistência bacteriana (fundamental para determinar esquema de tratamento), 3) Em formas extrapulmonares onde a baciloscopia é menos sensível. <strong>Conforme as diretrizes brasileiras de tuberculose MS 2025, a cultura é fundamental no diagnóstico em situações específicas.</strong></p><p><strong>B) TB pleural - BAAR de líquido pleural é o melhor exame:</strong> INCORRETA. Na tuberculose pleural, a baciloscopia do líquido pleural tem baixa sensibilidade (5-10%). O exame de melhor sensibilidade é a <strong>biopsia pleural com histopatologia e cultura</strong>, que pode atingir 80% de sensibilidade.</p><p><strong>C) Esquema para contatos com teste tuberculínico positivo:</strong> INCORRETA. O tratamento para infecção latente (contatos com TST positivo sem doença ativa) é feito com <strong>isoniazida por 6-9 meses</strong> ou esquemas alternativos, não com o esquema completo de TB ativa (que inclui rifampicina, etambutol e pirazinamida).</p><p><strong>D) Vitamina B6 com isoniazida por má absorção:</strong> INCORRETA. A piridoxina (B6) é administrada <strong>para prevenir neuropatia periférica causada pela isoniazida</strong>, não por má absorção. A isoniazida compete com B6, causando deficiência e neuropatia.</p><p><strong>E) Efeitos colaterais do etambutol:</strong> INCORRETA. Os efeitos colaterais mais comuns do etambutol são <strong>neurite óptica (diminuição da acuidade visual e discromatopsia) e hiperuricemia</strong>. A neuropatia periférica e hepatotoxicidade são efeitos da isoniazida e rifampicina, respectivamente.</p><p><strong>Veredito:</strong> A alternativa A está correta conforme as diretrizes brasileiras de tuberculose, sendo fundamental no diagnóstico em situações específicas, especialmente no Maranhão onde a TB é endêmica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Os anticorpos antinucleares são comumente encontradas em uma variedade de doença reumáticas, incluindo o lúpus eritematosos sistêmico-LES. Assinale a opção correta sobre o manejo diagnóstico das colagenoses.",
+      "alternativas": [
+        "FAN positivo com eritema em heliótropo é fortemente sugestivo de lúpus.",
+        "O Fator antinuclear (FAN) positivo tem especificidade de 98% para lúpus.",
+        "Trombocitopenia, derrame pleural, úlceras orais e FAN com titulação >1:160 sugere diagnóstico de lúpus.",
+        "A presença de anticorpos anti-Ro e Anti-La excluem o diagnóstico de lúpus.",
+        "A confirmação diagnóstica para LES inclui FAN positivo e complementos séricos diminuídos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UDI avalia o conhecimento do candidato sobre critérios diagnósticos do lúpus eritematoso sistêmico (LES), especificamente sobre a interpretação dos anticorpos antinucleares (FAN) e sua correlação com achados clínicos.</p><p><strong>A resposta correta é a alternativa C.</strong> Vamos analisar sistematicamente cada opção:</p><p><strong>Alternativa A:</strong> Incorreta. O eritema em heliótropo é característico da dermatomiosite, não do lúpus. No LES, o rash malar (asa de borboleta) é o mais típico, não o heliótropo.</p><p><strong>Alternativa B:</strong> Incorreta. A especificidade do FAN para lúpus é de aproximadamente 85-90%, não 98%. Muitos pacientes com outras doenças autoimunes também podem ter FAN positivo, e até 5% da população saudável pode apresentar FAN baixo positivo.</p><p><strong>Alternativa C:</strong> CORRETA. A combinação de trombocitopenia, derrame pleural, úlceras orais e FAN com titulação >1:160 é altamente sugestiva de LES. Estes são achados clássicos que fazem parte dos critérios classificatórios do ACR (American College of Rheumatology) para LES. A titulação >1:160 é considerada significativa clinicamente.</p><p><strong>Alternativa D:</strong> Incorreta. Os anticorpos anti-Ro e anti-La podem estar presentes no lúpus, especialmente em casos com atividade cutânea. Inclusive, anticorpos anti-Ro estão associados ao subgrupo de pacientes lúpicos com FAN negativo.</p><p><strong>Alternativa E:</strong> Incorreta. Embora FAN positivo e complemento diminuído sejam importantes para o diagnóstico de LES, eles não são suficientes isoladamente. O diagnóstico requer a presença de múltiplos critérios clínicos e laboratoriais, não apenas estes dois exames.</p><p>Importante lembrar que o diagnóstico de LES é clínico-laboratorial e deve seguir os critérios estabelecidos, considerando a apresentação sistêmica completa do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "A despeito do tratamento com poliquimioterapia da hanseníase, ainda em 2018, a Comissão Nacional de Incorporação de Tecnologias no SUS (Conitec) do Ministério da Saúde avaliou as evidências cientificas disponíveis e recomendou na Portaria SCTIE/MS no 71, de 11/12/2018 14,15 a ampliação do tratamento para os pacientes PB. Em nota técnica emitida em 2021 implantou o novo esquema a partir de 01 de julho de 2021. Sobre essa temática assinale a opção correta:",
+      "alternativas": [
+        "Segundo o novo esquema, o tempo de tratamento para os pacientes MB deve ser de no máximo 12 doses, abolindo-se em definitivo o esquema com 24 doses.",
+        "O novo esquema terapêutico implementou o tratamento da hanseníase incluindo aclofazimina para os casos paucibacilares-PB e a claritromicina para os casos multibacilares-MB.",
+        "Pacientes classificados como paucibacilares-PB devem utilizar o novo esquema terapêutico, o qual inclui a clofazimina nas doses autoadministradas, chamado PQT-U 6 doses (cartela adulto ou criança) com os mesmos critérios de alta por cura vigentes;",
+        "Em casos de intolerância à dapsona para os casos PB, deve-se substitui-la pela clofazimina na dose supervisionada e autoadministrada.",
+        "De acordo com a nota técnica o tratamento da hanseníase passa a ser único, abolindo-se a classificação operacional (PB e MB). Assim todo paciente com diagnóstico confirmado deve fazer o tratamento com PQT-U 12 doses."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda a atualização das diretrizes de tratamento da hanseníase no Brasil, especificamente as mudanças implementadas pela Conitec em 2018 e implantadas em 2021. A banca UDI avaliará seu conhecimento sobre a nova terapia para pacientes paucibacilares.</p><p><strong>A resposta correta é a alternativa C.</strong> Vamos examinar cada opção detalhadamente:</p><p><strong>Alternativa A:</strong> Incorreta. O novo esquema PQT-U (Poliquimioterapia da Organização Mundial da Saúde - Uniforme) para multibacilares é de 12 doses supervisionadas, mas isso não significa abolir definitivamente o esquema de 24 doses. O esquema clássico MB de 24 doses permanece válido.</p><p><strong>Alternativa B:</strong> Incorreta. O novo esquema implementou o uso de clofazimina em TODOS os casos (PB e MB), e a claritromicina não foi incorporada ao tratamento da hanseníase.</p><p><strong>Alternativa C:</strong> CORRETA. De acordo com a Portaria SCTIE/MS nº 71/2018 e a nota técnica de 2021, pacientes paucibacilares devem utilizar o novo esquema PQT-U com 6 doses que inclui clofazimina. A clofazimina é autoadministrada (pela primeira vez nos casos PB) e os critérios de alta por cura permanecem os mesmos (6 doses em 6 meses).</p><p><strong>Alternativa D:</strong> Incorreta. Em casos de intolerância à dapsona em pacientes PB, deve-se substituir por clofazimina na dose supervisionada, não autoadministrada como no esquema principal.</p><p><strong>Alternativa E:</strong> Incorreta. A classificação operacional (PB e MB) não foi abolida. Ela continua sendo fundamental para definir o esquema terapêutico e a duração do tratamento. O PQT-U de 12 doses é específico para casos MB.</p><p>Esta mudança representou um importante avanço no tratamento da hanseníase, padronizando mundialmente o esquema terapêutico e facilitando a implementação dos programas de controle.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Hanseniase"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Sobre a esclerodermia podemos afirmar:",
+      "alternativas": [
+        "Na síndrome CREST a hipertensão pulmonar é mais rara.",
+        "A corticoterapia sistêmica alivia queixas álgicas e rigidez articular, modifica a progressão da doença e seu uso está indicado na dose de 1mg/Kg dia.",
+        "O Fenômeno de Raynaud, claudicação intermitente e tromboflebite é tríade comum na esclerodermia.",
+        "Para as formas de esclerodermia localizada (morfeia) a corticoterapia tópica, análogos da vitamina D (calcipotriol, cacitriol) e o imiquimode 5% são empregados.",
+        "A lesão cutânea só estará presente na forma focal da doença e o fenômeno de Raynaud é achado sempre presente na esclerodermia sistêmica ou focal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UDI aborda o manejo terapêutico das diferentes formas de esclerodermia, exigindo conhecimento específico sobre as abordagens para a forma localizada (morfeia) versus a forma sistêmica.</p><p><strong>A resposta correta é a alternativa D.</strong> Analisemos cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Na síndrome CREST, a hipertensão arterial pulmonar é uma complicação FREQUENTE e grave, sendo uma das principais causas de morbimortalidade. Não é rara como sugerido.</p><p><strong>Alternativa B:</strong> Incorreta. A corticoterapia sistêmica pode aliviar sintomas como dor e rigidez articular, MAS não modifica a progressão da doença e seu uso deve ser cauteloso, especialmente em altas doses, devido aos efeitos adversos. A dose de 1mg/kg/dia é excessivamente alta para uso prolongado em esclerodermia.</p><p><strong>Alternativa C:</strong> Incorreta. A tríade mencionada (Raynaud, claudicação intermitente, tromboflebite) NÃO é comum na esclerodermia. Raynaud é comum, mas claudicação intermitente e tromboflebite não fazem parte do quadro típico da esclerodermia.</p><p><strong>Alternativa D:</strong> CORRETA. Para a morfeia (esclerodermia localizada), o tratamento tópico com corticosteroides, análogos da vitamina D (calcipotriol, tacalcitriol) e imiquimode 5% são efetivamente utilizados. Estes tratamentos são apropriados para lesões cutâneas limitadas.</p><p><strong>Alternativa E:</strong> Incorreta. A frase está incorreta em ambos os pontos: as lesões cutâneas estão presentes em ambas as formas (localizada e sistêmica), e o fenômeno de Raynaud NÃO é sempre presente na esclerodermia focal (localizada).</p><p>É fundamental distinguir o tratamento das formas localizadas (que podem responder a terapias tópicas) das formas sistêmicas (que requerem abordagens sistêmicas mais complexas).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Em relação à sífilis, assinale a opção correta:",
+      "alternativas": [
+        "Na investigação laboratorial o primeiro exame que deve ser solicitado na suspeita é o teste não treponêmico (VDRL) que será o primeiro a positivar. O FTA-abs positivará tardiamente e tem seu valor maior para controle de cura.",
+        "Somente os anticorpos treponêmicos detectados em altos níveis nas fases ativas da doença tem alta efetividade na proteção do hospedeiro.",
+        "Na sífilis adquirida podemos ter lesões palmoplantares e bolhosas disseminadas, sendo o condiloma plano de localização exclusiva na região perianal.",
+        "O fenômeno pró-zona é produzido por excesso de antígenos em relação à quantidade de anticorpos que são produzidos na sífilis secundária o que pode culminar com teste não treponêmico falso negativo.",
+        "A sífilis tardia sintomática surge após períodos variáveis de latência, desde 2 meses até30 anos, podendo manifestar-se com lesões cutâneas de prognose benigna até lesões neurológicas, cardiovasculares e viscerais."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UDI avalia o conhecimento sobre fisiopatologia e manifestações clínicas da sífilis, especificamente sobre o fenômeno pró-zona e sua relação com os testes diagnósticos.</p><p><strong>A resposta correta é a alternativa D.</strong> Vamos analisar cada opção:</p><p><strong>Alternativa A:</strong> Incorreta. O VDRL (teste não treponêmico) positivará antes do FTA-abs (teste treponêmico) na evolução natural da sífilis. O FTA-abs positivará mais precocemente que o VDRL e permanece positivo por toda a vida, tendo maior valor diagnóstico do que para controle de cura.</p><p><strong>Alternativa B:</strong> Incorreta. O nível de anticorpos treponêmicos não está diretamente correlacionado com proteção imunológica. A sífilis é uma infecção que permite reinfecções mesmo com anticorpos presentes, demonstrando que eles não conferem proteção eficaz.</p><p><strong>Alternativa C:</strong> Incorreta. O condiloma plano (condiloma lata) na sífilis secundária pode ser encontrado em múltiplas localizações, não apenas perianal. Pode ocorrer em genitais, cavidade oral, dobras cutâneas e outras áreas.</p><p><strong>Alternativa D:</strong> CORRETA. O fenômeno pró-zona ocorre quando há excesso de anticorpos em relação aos antígenos treponêmicos, comumente na sífilis secundária. Isso pode resultar em teste VDRL falso negativo, necessitando de diluição da amostra para diagnóstico correto.</p><p><strong>Alternativa E:</strong> Incorreta. A sífilis tardia sintomática surge tipicamente após 1-20 anos, não após 2 meses. Após 2 meses, ainda estaríamos na fase secundária da doença.</p><p>Compreender o fenômeno pró-zona é fundamental para evitar falsos negativos em pacientes com sífilis secundária que apresentam alta carga bacteriana.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesInfecciosas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Dst"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Marque a opção correta:",
+      "alternativas": [
+        "Na úlcera genital sifilítica (cancro duro), o tratamento das parcerias sexuais é recomendado mesmo quando assintomáticos com dose única de benzilpenicilina benzatina 2,4 milhões UI.",
+        "Na sífilis, a presença do sinal de Romberg na tabes dorsalis é pouco frequente.",
+        "O quadro clínico de orofaringite gonocócica pode variar de simples eritema até a presença de secreção purulenta, ulcerações com pseudomembrana e adenopatia cervical.",
+        "A artrite gonocócica supurativa se caracteriza por poliartralgia migratória, tenossinovites e pústulas dolorosas disseminadas devido a bacteremia.",
+        "O tratamento da sífilis só deve ser recomendado exclusivamente para os casos confirmados laboratorialmente através de teste treponêmico e não treponêmico reagentes."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca UDI aborda aspectos práticos do diagnóstico e tratamento de infecções sexualmente transmissíveis, incluindo sífilis e gonorreia, exigindo conhecimento sobre protocolos e manifestações clínicas.</p><p><strong>IMPORTANTE: Esta questão foi ANULADA pelo gabarito oficial (@).</strong> Vamos analisar por que:</p><p>Esta questão apresenta problemas graves que impedem a determinação de uma resposta correta única:</p><p><strong>Problemas identificados:</strong></p><p><strong>Alternativa A:</strong> Contém informação CORRETA sobre o tratamento das parcerias na sífilis (benzilpenicilina benzatina 2,4 milhões UI), mas apresenta ambiguidade ao mencionar dose única sem especificar se é IM ou se seria adequada para todos os cenários.</p><p><strong>Alternativa B:</strong> Está INCORRETA - o sinal de Romberg na tabes dorsalis é frequente, não pouco frequente.</p><p><strong>Alternativa C:</strong> Está CORRETA - descreve adequadamente a orofaringite gonocócica.</p><p><strong>Alternativa D:</strong> Está CORRETA - descreve adequadamente a artrite gonocócica disseminada.</p><p><strong>Alternativa E:</strong> Está INCORRETA - o tratamento da sífilis pode ser feito com base apenas no teste não treponêmico reagente em pacientes com quadro clínico típico, não sendo necessário obrigatoriamente o teste treponêmico.</p><p>As múltiplas alternativas corretas (A, C, D) e incorretas (B, E) demonstram que a questão não permite determinar uma resposta única, justificando a anulação pela banca UDI.</p><p>Para sua preparação: domine os protocolos de tratamento das parcerias, manifestações da gonorreia e os critérios para tratamento da sífilis no SUS brasileiro.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesInfecciosas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Dst"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Constitui-se medida de controle primordial na hanseníase, a vigilância de contatos. Recomenda-se:",
+      "alternativas": [
+        "Nunca realizar segunda dose de BCG, conforme orienta o plano nacional de imunização, independente das cicatrizes vacinais.",
+        "Examinar todos os contatos domiciliares e sociais através de avaliação dermatoneurológica minunciosa na vigência do tratamento do caso índice e manter vigilância por um período de 5 anos.",
+        "Administrar 01 dose de BCG em todos os contatos de hanseníase com avaliação dermatoneurológica normal independente de cicatrizes vacinais.",
+        "Informar na ficha de investigação do SINAM o número de contatos domiciliares e sociais de cada paciente.",
+        "Vacinar com BCG apenas os contatos domiciliares e manter vigilância clínica para os contatos sociais através de avaliações dermatoneurológicas anuais."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UDI avalia seus conhecimentos sobre as estratégias de controle e vigilância de contatos na hanseníase, uma doença de notificação compulsória no Brasil.</p><p><strong>A resposta correta é B.</strong> A vigilância de contatos é fundamental no controle da hanseníase, sendo uma das medidas mais eficazes para interrupção da cadeia de transmissão.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: ERRADA.</strong> A segunda dose de BCG é recomendada para contatos de hanseníase, especialmente aqueles sem cicatriz vacinal, conforme diretrizes do Ministério da Saúde. O objetivo é aumentar a proteção contra o desenvolvimento da doença.</p><p><strong>Alternativa B: CORRETA.</strong> Esta é a conduta padrão recomendada. Todos os contatos (domiciliares e sociais) devem ser examinados através de avaliação dermatoneurológica minuciosa durante o tratamento do caso índice e mantidos em vigilância por 5 anos, período que corresponde ao tempo de incubação máximo da hanseníase.</p><p><strong>Alternativa C: ERRADA.</strong> A administração de BCG deve ser individualizada. Recomenda-se para contatos sem cicatriz vacinal ou com cicatriz < 2mm. Para contatos com cicatriz adequada, não há necessidade de nova dose.</p><p><strong>Alternativa D: ERRADA.</strong> Embora a notificação seja importante, a questão aborda especificamente medidas de controle primordial, que vai além da simples informação no sistema.</p><p><strong>Alternativa E: ERRADA.</strong> A vigilância deve abranger todos os contatos, não apenas os domiciliares. Contatos sociais também merecem acompanhamento, especialmente em áreas de alta endemicidade.</p><p>Vale destacar que a vigilância de contatos é uma estratégia classicamente utilizada no controle de doenças transmissíveis, sendo a hanseníase um exemplo clássico onde esta abordagem tem se mostrado muito eficaz na redução da incidência.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Hanseniase",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Sobre a intradermorreação de Montenegro na leishmaniose tegumentar:",
+      "alternativas": [
+        "permite a confirmação diagnóstica, se positiva.",
+        "pode ser usada para controle do tratamento.",
+        "positiva-se com o tratamento.",
+        "pode permanecer positiva após o tratamento.",
+        "exclui o diagnóstico de leishmaniose se permanece negativa em paciente com mais de6 semanas com quadro clínico instalado."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UDI testa seus conhecimentos sobre a intradermorreação de Montenegro (IDRM) no diagnóstico da leishmaniose tegumentar americana, um teste cutâneo muito importante na abordagem diagnóstica.</p><p><strong>A resposta correta é D.</strong> A Montenegro pode permanecer positiva mesmo após o tratamento exitoso da leishmaniose, sendo esta uma característica importante do teste.</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A: ERRADA.</strong> A IDRM não permite confirmação diagnóstica isoladamente. Ela apenas indica exposição ao parasito e hipersensibilidade tipo IV. O diagnóstico definitivo requer correlação clínico-epidemiológica, exame direto (histopatologia ou PCR) ou cultura do material da lesão.</p><p><strong>Alternativa B: ERRADA.</strong> A IDRM não é utilizada para controle de tratamento. A positividade do teste não se correlaciona com atividade da doença ou resposta terapêutica. A avaliação da cura deve ser feita através da evolução clínica da lesão.</p><p><strong>Alternativa C: ERRADA.</strong> A positividade da IDRM não se modifica significativamente com o tratamento. Ela pode permanecer positiva mesmo após cura clínica, sendo um marcador de exposição pasada ao parasito.</p><p><strong>Alternativa D: CORRETA.</strong> Esta é a principal característica da Montenegro: a positividade pode persistir por anos ou até décadas após a cura. Isso ocorre porque o teste avalia a resposta imune celular (hipersensibilidade tardia), que pode permanecer ativada mesmo após eliminação do parasito.</p><p><strong>Alternativa E: ERRADA.</strong> Uma IDRM negativa não exclui o diagnóstico de leishmaniose, especialmente em fase inicial da doença (primeiras 6-8 semanas), quando a resposta imune ainda não se desenvolveu completamente. Falsos negativos podem ocorrer em casos de immunodepressão, desnutrição ou formas mucosas avançadas.</p><p>É importante lembrar que a Montenegro é um teste com alta especificidade, mas sensibilidade variável, sendo mais útil em áreas endêmicas como confirmação de casos suspeitos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas_LeishmanioseTegumentar"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Menor de 3 anos comparece à UBS da Cidade Olímpica em São Luís-Ma acompanhada da mãe com queixa de lesão hipocrômica em região glabelar há 1 ano. Há 3 meses a mãe observou crescimento progressivo da lesão. Nega prurido local e não há casos de hanseníase ou outras dermatoses na família. Ao exame observou-se placa hipocrômica com bordas elevadas e bem delimitadas. Na impossibilidade de teste de sensibilidade cutâneo solicitou-se baciloscopia do esfregaço intradérmico e biópsia incisional da borda da lesão. Sobre esse caso é correto afirmar:",
+      "alternativas": [
+        "Dispensa-se solicitação de baciloscopia para os casos suspeitos de formas não contagiantes.",
+        "Será confirmado como caso de hanseníase somente se o anatomopatológico identificar bacilo e a baciloscopia do esfregaço intradérmico for positiva.",
+        "Foi precipitada a suspeita diagnóstica de hanseníase nessa criança uma vez que a história epidemiológica é negativa e casos de hanseníase em menores de 3 anos é muito raro.",
+        "Se confirmado hanseníase através do anatomopatológico deve-se proceder com tratamento imediato com esquema ROM.",
+        "Anatomopatológico revelando infiltrado inflamatório perineural, ainda que a baciloscopia seja negativa, confirma caso de hanseníase."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UDI aborda um cenário clínico desafiador: suspeita de hanseníase em criança menor de 3 anos, avaliando seus conhecimentos sobre diagnóstico, critérios diagnósticos e manejo em pacientes pediátricos.</p><p><strong>A resposta correta é E.</strong> Em hanseníase, o achado anatomopatológico de infiltrado inflamatório perineural, mesmo com baciloscopia negativa, é suficiente para confirmação diagnóstica conforme os critérios operacionais do Ministério da Saúde.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: ERRADA.</strong> A solicitação de baciloscopia é recomendada em todos os casos suspeitos de hanseníase, independentemente da forma clínica, pois é um exame importante para classificação e definição do tratamento. Mesmo em formas não contagiantes (indeterminada e tuberculoide), a baciloscopia pode auxiliar no diagnóstico.</p><p><strong>Alternativa B: ERRADA.</strong> O diagnóstico de hanseníase não depende obrigatoriamente da positividade da baciloscopia. O critério anatomopatológico é suficiente para confirmação. A baciloscopia é importante, mas não mandatória para o diagnóstico definitivo.</p><p><strong>Alternativa C: ERRADA.</strong> Embora a hanseníase seja rara em menores de 3 anos, não é impossível. A história epidemiológica negativa não exclui o diagnóstico, pois o contágio pode ter ocorrido fora do ambiente familiar. A suspeita diagnóstica foi adequada considerando as características clínicas da lesão.</p><p><strong>Alternativa D: ERRADA.</strong> O esquema ROM (Rifampicina, Ofloxacina, Minociclina) é específico para formas paucibacilares em adultos e não está recomendado para uso em crianças. O tratamento padrão em pediatria é a poliquimioterapia (PQT) da OMS, com dosagem adequada ao peso.</p><p><strong>Alternativa E: CORRETA.</strong> Este é o critério-chave. O infiltrado inflamatório perineural é patognomônico de hanseníase. A presença deste achado histopatológico confirma o diagnóstico independentemente da baciloscopia, que pode ser negativa especialmente em formas paucibacilares.</p><p>Esta questão evidencia a importância de conhecer os critérios diagnósticos operacionais da hanseníase e a possibilidade de confirmação histopatológica mesmo em casos paucibacilares.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Hanseniase",
+        "Pediatria_Puericultura"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Paciente 33 anos comparece ao ambulatório relatando perda do movimento de dorsiflexão do pé direito há 30 dias. Nega traumas. Nos antecedentes: Nega uso de medicamentos e quadros infecciosos nos últimos 90 dias. Refere casos de hanseníase na família. Fez primeira dose de vacina AstraZeneca há 60 dias. Ao exame: Força Zero para dorsiflexão do pé direito e ausência de lesões dermatológicas. Nesse caso:",
+      "alternativas": [
+        "Deve-se proceder com avaliação dermatoneurológica minunciosa e se teste de sensibilidade cutânea ao longo nervo fibular direito for normal, deve-se solicitar eletroneuromiografia para investigar padrão e possível etiologia da neuropatia.",
+        "A principal hipótese nesse caso é neuropatia periférica reacional pelo uso da vacina independente do teste de sensibilidade cutânea, dispensando-se inclusive a propedêutica armada.",
+        "Deve-se solicitar baciloscopia do esfregaço intradérmico para descartar o diagnóstico de hanseníase.",
+        "Encaminhar de imediato para o neurologista seria a conduta mais acertada do médico da família por se tratar de um quadro compatível com neuropatia periférica sem lesões dermatológicas.",
+        "Ainda que o teste de sensibilidade cutâneo esteja normal ao longo do tegumento, o diagnóstico de hanseníase neural é o mais provável."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UDI explora um caso de neuropatia periférica com suspeita de hanseníase neural, avaliando sua capacidade de abordagem diagnóstica estruturada em paciente sem lesões cutâneas evidentes.</p><p><strong>A resposta correta é A.</strong> A conduta proposta segue a abordagem sistemática recomendada: avaliação dermatoneurológica completa primeiro, e se a sensibilidade estiver preservada, investigação complementar com eletroneuromiografia.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: CORRETA.</strong> Esta é a conduta mais apropriada. A avaliação dermatoneurológica deve ser sempre o primeiro passo em suspeita de hanseníase neural, incluindo teste de sensibilidade cutânea ao longo do trajeto dos nervos. Se a sensibilidade estiver normal, a eletroneuromiografia é indicada para caracterizar o padrão de neuropatia (axonal, mielinopatia, etc.) e orientar a investigação etiológica.</p><p><strong>Alternativa B: ERRADA.</strong> Embora exista a possibilidade de neuropatia reacional pós-vacinal, não deve ser considerada a principal hipótese sem investigação adequada. A hanseníase neural é muito mais provável, especialmente com história familiar positiva. A propedêutica não pode ser dispensada.</p><p><strong>Alternativa C: ERRADA.</strong> Em casos de suspeita de hanseníase neural sem lesões cutâneas, a baciloscopia não é o exame de escolha, pois os nervos superficiais não são facilmente доступíveis para coleta. A avaliação clínica neurológica e a eletroneuromiografia são mais relevantes nesta situação.</p><p><strong>Alternativa D: ERRADA.</strong> O encaminhamento imediato ao neurologista não é necessário nesta fase. A suspeita de hanseníase deve ser investigada pelo médico da família através da avaliação dermatoneurológica, que é uma competência da atenção primária. O encaminhamento só deve ocorrer após esta avaliação inicial.</p><p><strong>Alternativa E: ERRADA.</strong> A hanseníase neural é uma possibilidade diagnóstica importante, mas não deve ser considerada a mais provável apenas pela história familiar, especialmente quando o teste de sensibilidade está normal. Outras causas de neuropatia devem ser investigadas sistematicamente.</p><p>Esta questão destaca a importância de seguir a sequência diagnóstica adequada e não pular etapas na investigação de neuropatias periféricas, especialmente em áreas endêmicas de hanseníase.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Hanseniase",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Em relação à escabiose é correto afirmar:",
+      "alternativas": [
+        "A permetrina, em creme ou loção, na concentração de 1% é recomendada como tratamento tópico.",
+        "O ciclo de vida do ácaro dura cerca de 15 dias e as fêmeas podem gerar de 08 a 10ovos que necessitam de 03 dias para que os ácaros adultos possam emergir.",
+        "A infestação inicial permanece assintomática em até 6 semanas e a reinfecção produz uma reação imediata de hipersensibilidade.",
+        "Em lactentes, idosos e imunossuprimidos as lesões poupam couro cabeludo e face.",
+        "As infestações por escabiose efetivamente tratadas deixam se ser contagiosas ao final do 3º dia de tratamento ou até a abolição do prurido."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UDI avalia seus conhecimentos sobre escabiose, uma ectoparasitose muito comum na prática clínica, testando aspectos desde fisiopatologia até tratamento e características especiais em populações vulneráveis.</p><p><strong>A resposta correta é C.</strong> A infestação inicial por Sarcoptes scabiei permanece assintomática por até 6 semanas devido ao tempo necessário para sensibilização imunológica. Na reinfecção, ocorre resposta imediata de hipersensibilidade por memória imunológica.</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A: ERRADA.</strong> A concentração correta da permetrina é de 5%, não 1%. A permetrina a 5% é o tratamento de primeira linha recomendado pelo Ministério da Saúde para escabiose, aplicada da Região do pescoço para baixo em adultos e em todo o corpo em crianças.</p><p><strong>Alternativa B: ERRADA.</strong> O ciclo de vida do ácaro é de aproximadamente 10-14 dias (não 15). A fêmea deposita 2-3 ovos por dia, totalizando 40-50 ovos durante sua vida (não 8-10). Os ovos eclodem em 3-4 dias, e os ácaros adultos emergem após 7-10 dias (não 3 dias).</p><p><strong>Alternativa C: CORRETA.</strong> Esta é a fisiopatologia característica da escabiose. Na primoinfestação, há um período de incubação de 4-6 semanas antes do aparecimento dos sintomas, tempo necessário para sensibilização imunológica. Na reinfecção, devido à memória imunológica, a resposta de hipersensibilidade é imediata (24-48 horas).</p><p><strong>Alternativa D: ERRADA.</strong> Em lactentes, idosos e imunossuprimidos, as lesões de escabiose podem AFETAR couro cabeludo e face, diferentemente do padrão em adultos imunocompetentes. Esta é uma característica importante que pode levar a atraso diagnóstico nestas populações.</p><p><strong>Alternativa E: ERRADA.</strong> A escabiose permanece contagiosa até o fim do tratamento, não apenas até o 3º dia. Os pacientes deixam de ser contagiosos apenas após 24 horas da primeira aplicação do tratamento tópico e sempre que houver aplicação adequada por 3-4 dias consecutivos. O prurido pode persistir por semanas mesmo após a cura.</p><p>Esta questão demonstra a importância de conhecer os aspectos básicos da escabiose, especialmente as peculiaridades em populações especiais e o mecanismo de transmissão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesInfecciosas"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Mulher, 33 anos, solteira, procurou o serviço de ginecologia para realização de exame de papanicolau. Ao retornar para receber o resultado de seu exame, foi informada pela equipe assistencial que seu resultado era normal. Assim, de acordo com a recomendação do Ministério da Saúde para o rastreamento do câncer cérvico-uterino, o profissional da saúde orientou a paciente a realizar novo exame:",
+      "alternativas": [
+        "somente de três em três anos.",
+        "em três anos se já houver dois exames negativos em anos consecutivos.",
+        "em seis meses, se já houver dois exames negativos em anos consecutivos.",
+        "anualmente, independentemente de exames anteriores.",
+        "semestralmente, independentemente de exames anteriores."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UDI 2022 avalia seu conhecimento sobre as diretrizes brasileiras de rastreamento do câncer de colo uterino. A situação apresentada é a mais comum na prática clínica: uma paciente de 33 anos com resultado normal de citologia cervical.</p><p><strong>A resposta correta é a alternativa B - em três anos se já houver dois exames negativos em anos consecutivos.</strong></p><p>Vamos entender a lógica do programa de rastreamento: segundo as diretrizes do Ministério da Saúde, mulheres entre 25 e 64 anos devem realizar citologia cervical anual. Após dois exames normais consecutivos, o intervalo pode ser expandido para três anos. Isso mantém a eficácia do rastreamento enquanto reduz a sobrecarga do sistema de saúde.</p><p>Analisando as alternativas incorretas:</p><p>• <strong>A) somente de três em três anos</strong> - ERRADO. A frequência inicial deve ser anual, não trienal.</p><p>• <strong>C) em seis meses, se já houver dois exames negativos em anos consecutivos</strong> - ERRADO. Não existe recomendação de exames semestrais para pacientes imunocompetentes.</p><p>• <strong>D) anualmente, independentemente de exames anteriores</strong> - ERRADO. Após dois exames normais consecutivos, pode-se espaçar para trienal.</p><p>• <strong>E) semestralmente, independentemente de exames anteriores</strong> - ERRADO. Frequência semestral só é indicada para pacientes imunossuprimidos.</p><p><strong>Dica importante:</strong> Lembre-se da sequência lógica: anual → dois normais → trienal. É uma das pegadinhas mais comuns em provas de ginecologia.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "A qualidade de vida relacionada à saúde (QVRS) refere-se à percepção do indivíduo sobre a condição de sua vida frente a enfermidade, consequências e tratamentos referentes a ela, isto é, como a doença afeta sua condição de vida útil/produtiva. A avaliação da QVRS é, atualmente, importante índice na implementação da prática da saúde pública. Em relação a avaliação da QVRS, tem-se:",
+      "alternativas": [
+        "Os instrumentos da QVRS são específicos.",
+        "Os instrumentos da QVRS validados são precisos e exatos.",
+        "Os instrumentos da QVRS são facilmente traduzidos em diferentes idiomas.",
+        "Esforços devem ser empreendidos para utilizar o mesmo instrumento em estudos afim de permitir comparações.",
+        "O teste adaptativo computadorizado permite uma avaliação mais precisa da QVRS, ao mesmo tempo que reduz o número de perguntas realizadas."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão explora a avaliação da Qualidade de Vida Relacionada à Saúde (QVRS), tema crescente na saúde pública brasileira. O conceito apresentado é fundamental: QVRS reflete como a doença e seu tratamento impactam a funcionalidade e bem-estar do paciente.</p><p><strong>A alternativa correta é a E - O teste adaptativo computadorizado permite uma avaliação mais precisa da QVRS, ao mesmo tempo que reduz o número de perguntas realizadas.</strong></p><p>Vamos analisar cada alternativa:</p><p>• <strong>A) Os instrumentos da QVRS são específicos</strong> - ERRADO. Muitos instrumentos são genéricos (como SF-36) e podem ser aplicados em diferentes populações e condições de saúde.</p><p>• <strong>B) Os instrumentos da QVRS validados são precisos e exatos</strong> - ERRADO. A validação garante confiabilidade e validade, mas precisão e exatidão são propriedades dos instrumentos de medição, não necessariamente dos questionários de QVRS.</p><p>• <strong>C) Os instrumentos da QVRS são facilmente traduzidos em diferentes idiomas</strong> - ERRADO. A tradução de instrumentos de QVRS requer processo rigoroso de tradução reversa, validação cultural e linguística para garantir equivalência semântica e conceitual.</p><p>• <strong>D) Esforços devem ser empreendidos para utilizar o mesmo instrumento em estudos afim de permitir comparações</strong> - PARCIALMENTE CORRETO. Embora seja desejável para comparações, nem sempre é possível devido às especificidades culturais, linguísticas e de cada população estudada.</p><p>• <strong>E) O teste adaptativo computadorizado</strong> - CORRETO. Esta tecnologia representa uma evolução na avaliação da QVRS, permitindo que o sistema ajuste as perguntas com base nas respostas anteriores, otimizando a precisão com menos itens.</p><p><strong>Aplicação prática:</strong> No Brasil, a implementação de tecnologias adaptativas na avaliação da QVRS pode melhorar a eficiência dos estudos e reduzir o burden dos pacientes, especialmente importante em populações vulneráveis.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaBaseadaEmEvidencias"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Assinale, dentre as anormalidades bioquímicas abaixo, aquela que é considerada uma síndrome para neoplásica associada ao hepatocarcinoma e pode ser causada, também, por uma insuficiência hepática em estágio terminal.",
+      "alternativas": [
+        "hipercolesterolemia",
+        "eritrocitose",
+        "hipercalcemia",
+        "hipoglicemia",
+        "hiponatremia"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda as síndromes paraneoplásicas associadas ao hepatocarcinoma, tema importante na oncologia clínica. As síndromes paraneoplásicas são manifestações indiretas do câncer, mediadas por hormônios, peptídeos ou citocinas produzidos pelo tumor.</p><p><strong>A alternativa correta é D - hipoglicemia.</strong></p><p>Vamos entender a fisiopatologia: o hepatocarcinoma pode produzir fatores de crescimento insulin-like (IGF-2) ou causar destruição de hepatócitos, resultando em hipoglicemia. Esta é uma síndrome paraneoplásica clássica e, paradoxalmente, também pode ocorrer na insuficiência hepática terminal devido à perda da função de gliconeogênese.</p><p>Analisando as outras alternativas:</p><p>• <strong>A) hipercolesterolemia</strong> - ERRADO. O colesterol elevado não é síndrome paraneoplásica associada ao hepatocarcinoma. Na verdade, pode haver hipocolesterolemia devido à disfunção hepática.</p><p>• <strong>B) eritrocitose</strong> - ERRADO. A eritrocitose está mais associada a tumores renais (carcinoma de células renais) e cerebrais que produzem eritropoietina.</p><p>• <strong>C) hipercalcemia</strong> - ERRADO. A hipercalcemia paraneoplásica é mais comum em cânceres de pulmão, mama e próstata, através da produção de PTH-rP, não em hepatocarcinoma.</p><p>• <strong>E) hiponatremia</strong> - ERRADO. A hiponatremia pode ocorrer em diversas condições, mas não é considerada síndrome paraneoplásica específica do hepatocarcinoma. Síndrome de secreção inadequada de ADH é mais comum em tumores de pulmão.</p><p><strong>Mnemônico para síndromes paraneoplásicas de hepatocarcinoma:</strong> \"HipoGlicemia Para Hepato\" (HGP-H). Esta dica ajuda a lembrar que hipoglicemia é a síndrome paraneoplásica característica do câncer hepático.</p><p><strong>Dados epidemiológicos:</strong> A hipoglicemia paraneoplásica em hepatocarcinoma tem incidência de 5-10% dos casos e geralmente indica doença avançada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosMalignos",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "A infestação com qual dos parasitas listados abaixo é um fator de risco para o desenvolvimento de câncer de bexiga?",
+      "alternativas": [
+        "Trypanosoma cruzi",
+        "Clonorchissinensis",
+        "Opisthorchisviverrini",
+        "Schistosoma haematobium",
+        "Schistosoma mansoni"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre parasitoses associadas a neoplasias malignas. O conceito é fundamental: alguns parasitas são classificados como carcinógenos Certain (Grupo 1) pela IARC devido à sua capacidade de induzir câncer através de inflamação crônica e alterações genéticas.</p><p><strong>A alternativa correta é D - Schistosoma haematobium.</strong></p><p>Vamos entender a associação causal: o S. haematobium causa esquistossomose urinária, com ovos depositados na parede da bexiga. A inflamação crônica resultante leva a alterações epiteliais que podem evoluir para carcinoma de células escamosas da bexiga. Esta relação foi estabelecida através de estudos epidemiológicos em regiões endêmicas, especialmente no Oriente Médio e África.</p><p>Analisando as outras alternativas:</p><p>• <strong>A) Trypanosoma cruzi</strong> - ERRADO. Causa doença de Chagas, com tropismo por coração e sistema digestivo, não associado a câncer de bexiga.</p><p>• <strong>B) Clonorchis sinensis</strong> - ERRADO. Causa opistorquíase, parasito de aves e mamíferos que infecta ductos biliares. Associado a colangiocarcinoma (câncer de ductos biliares), não de bexiga.</p><p>• <strong>C) Opisthorchis viverrini</strong> - ERRADO. Similar ao C. sinensis, causa opistorquíase hepática e está associado a colangiocarcinoma, não a câncer vesical.</p><p>• <strong>E) Schistosoma mansoni</strong> - ERRADO. Causa esquistossomose intestinal (mansoni), com ovos depositados em plexos hemorroidários e bexiga em menor grau. Associates principalmente a carcinoma colorretal e hepatoesplenomegalia, não a câncer vesical primário.</p><p><strong>Mnemônico para parasitas oncogênicos:</strong> \"SCHISTO Haematobium = BEXIGA\" (SHB). Ajuda a lembrar que apenas este Schistosoma está associado especificamente ao câncer de bexiga.</p><p><strong>Dados epidemiológicos:</strong> Em áreas endêmicas para S. haematobium, o risco de câncer de bexiga pode aumentar em até 4-5 vezes comparado a áreas não endêmicas. Esta é a principal neoplasia maligna em homens em alguns países africanos.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Os cuidados paliativos são realizados quando o tratamento curativo não está mais atuando, ou seja, quando deixa de fazer o efeito esperado de cura ou redução do tumor (acesso em http://www.oncoguia.org.br/conteudo/cuidados-paliativos/137/50). Em relação a conduta ética nos cuidados paliativos, assinale a alternativa correta.",
+      "alternativas": [
+        "A conduta ética prioriza que, no momento do diagnóstico de uma doença incurável, o paciente deve saber, imediatamente, de tudo sobre o diagnóstico.",
+        "No caso de um diagnóstico de uma doença incurável, o médico deve oferecer ou providenciar apoio emocional, físico e espiritual e ser compassivo, tranquilo e franco.",
+        "Com o objetivo de curar o paciente portador de uma doença terminal, o médico pode utilizar-se de terapêuticas fúteis.",
+        "O diagnóstico de uma doença incurável finda a responsabilidade do profissional que fez o diagnóstico com os cuidados paliativos.",
+        "A espiritualidade/religiosidade é importante no contexto dos cuidados paliativos, contudo, não é fato essencial na conduta da terapia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um dos temas mais delicados da medicina: a conduta ética nos cuidados paliativos. O conceito apresentado é fundamental - cuidados paliativos são indicados quando o tratamento curativo deixa de ter efeito, focando no alívio do sofrimento e melhoria da qualidade de vida.</p><p><strong>A alternativa correta é B - No caso de um diagnóstico de uma doença incurável, o médico deve oferecer ou providenciar apoio emocional, físico e espiritual e ser compassivo, tranquilo e franco.</strong></p><p>Esta alternativa resume perfeitamente a essência da abordagem paliativa: uma visão holística do cuidado, incluindo não apenas aspectos físicos, mas também emocionais e espirituais. O médico deve ser compassivo (compreensivo e empático), tranquilo (transmitir serenidade ao paciente) e franco (comunicar com honestidade, sem omitir informações importantes, mas sempre com delicadeza).</p><p>Analisando as alternativas incorretas:</p><p>• <strong>A) A conduta ética prioriza que, no momento do diagnóstico de uma doença incurável, o paciente deve saber, imediatamente, de tudo sobre o diagnóstico</strong> - ERRADO. Embora a veracidade seja fundamental, a comunicação deve ser gradual, respeitando o ritmo emocional do paciente. Forçar informações completas imediata pode causar devastação psicológica.</p><p>• <strong>C) Com o objetivo de curar o paciente portador de uma doença terminal, o médico pode utilizar-se de terapêuticas fúteis</strong> - ERRADO. Terapêuticas fúteis (que não beneficiam o paciente e podem causar sofrimento) são eticamente inaceitáveis. A medicina paliativa foca em alívio de sintomas, não em tratamentos fúteis.</p><p>• <strong>D) O diagnóstico de uma doença incurável finda a responsabilidade do profissional que fez o diagnóstico com os cuidados paliativos</strong> - ERRADO. O médico que diagnostica permanece responsável pelo encaminhamento adequado e acompanhamento, assegurando que o paciente receba cuidados paliativos apropriados.</p><p>• <strong>E) A espiritualidade/religiosidade é importante no contexto dos cuidados paliativos, contudo, não é fato essencial na conduta da terapia</strong> - ERRADO. A espiritualidade é reconhecida como dimensão fundamental do cuidado paliativo, sendo essencial para o bem-estar holístico do paciente terminal.</p><p><strong>Princípio ético central:</strong> Os cuidados paliativos seguem os princípios bioéticos de beneficência (fazer o bem), não maleficência (não causar dano), autonomia (respeitar wishes do paciente) e justiça (distribuição justa de recursos).</p><p><strong>Dados brasileiros:</strong> No Brasil, a Resolução CFM nº 1.805/2006 regulamenta cuidados paliativos, e a lei 14.721/2023 reconhece a interesse público dos cuidados paliativos, fortalecendo a prática ética nesta área.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Paciente feminina, em tratamento para câncer de mama, deu entrada no pronto atendimento com queixa de disgeusia. Acerca dessa alteração clínica, tem-se:",
+      "alternativas": [
+        "Disgeusia é uma distorção persistente e permanente.",
+        "Taxanos são medicamentos que possuem uma das associações mais fracas com adisgeusia.",
+        "O zinco parece não ter efeito sobre a disgeusia doce.",
+        "Disgeusia não está associada a depressão.",
+        "Alimentos são mais tolerados quando são engolidos com pouca mastigação e débil produção de saliva."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UDI 2022 avalia seu conhecimento sobre disgeusia, um sintoma frequente em pacientes oncológicos. O objetivo é testar se você conhece as características desta alteração do paladar e suas correlações clínicas.</p><p><strong>A resposta correta é E - Alimentos são mais tolerados quando são engolidos com pouca mastigação e débil produção de saliva.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Disgeusia é uma distorção persistente e permanente.</strong> - INCORRETA. A disgeusia é geralmente transitória e pode ser reversível com o tratamento ou ajustes na terapia oncológica.</p><p><strong>B) Taxanos são medicamentos que possuem uma das associações mais fracas com a disgeusia.</strong> - INCORRETA. Os taxanos (como paclitaxel e docetaxel) estão entre os quimioterápicos com maior associação com disgeusia, sendo uma das classes mais problemáticas.</p><p><strong>C) O zinco parece não ter efeito sobre a disgeusia doce.</strong> - INCORRETA. Na verdade, o zinco tem mostrado efeito benéfico na disgeusia doce, podendo melhorar este sintoma específico.</p><p><strong>D) Disgeusia não está associada a depressão.</strong> - INCORRETA. A disgeusia tem forte associação com depressão e outros transtornos de humor em pacientes oncológicos, sendo importante abordar o aspecto psicológico.</p><p><strong>E) Alimentos são mais tolerados quando são engolidos com pouca mastigação e débil produção de saliva.</strong> - CORRETA. Esta é uma estratégia nutricional importante para pacientes com disgeusia, pois minimiza o contato prolongado com alimentos e reduz o desconforto.</p><p>A disgeusia é um sintoma complexo que afeta significativamente a qualidade de vida do paciente oncológico, sendo essencial conhecer suas características e manejo adequado.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Farmacodermias"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Paciente masculino, em tratamento oncológico sistêmico, adentra ao serviço de pronto atendimento referindo neuropatia periférica, resultando em ataxia sensorial e dor, sem fraqueza. Qual o medicamento quimioterápico, dos listados abaixo, está comumente associado as queixas do paciente acima referido?",
+      "alternativas": [
+        "metotrexato",
+        "alcaloides da vinca",
+        "taxanos",
+        "análogos da platina",
+        "modulador seletivo do receptor de estrogênio"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UDI 2022 testa seu conhecimento sobre neurotoxicidade periférica induzida por quimioterapia. O caso clínico descreve neuropatia sensorial com ataxia e dor, sem componente motor, sendo fundamental reconhecer qual classe de medicamentos mais commonly causa esse padrão.</p><p><strong>A resposta correta é D - análogos da platina.</strong></p><p>Vamos analisar cada alternativa de quimioterapia:</p><p><strong>A) metotrexato.</strong> - INCORRETA. O metotrexato pode causar neurotoxicidade central (leucoencefalopatia) e neuropatia craneal, mas raramente causa neuropatia periférica sensorial pura como descrita.</p><p><strong>B) alcaloides da vinca.</strong> - INCORRETA. Os alcaloides da vinca (vincristina, vinblastina) causam neuropatia periférica mista (sensorial e motora), sendo a vincristina mais associada a neuropatia motora significativa.</p><p><strong>C) taxanos.</strong> - INCORRETA. Os taxanos (paclitaxel, docetaxel) causam neuropatia periférica sensorial dose-dependente, mas é menos comumente associada ao padrão específico descrito e não é a resposta mais characteristic.</p><p><strong>D) análogos da platina.</strong> - CORRETA. Os análogos da platina (cisplatina, carboplatina, oxaliplatina) são conhecidos por causar neuropatia periférica sensorial pura, caracterizada por disestesias, dor neuropática, ataxia sensorial e Perda de reflexos, sem fraqueza motora significativa. A oxaliplatina tem particular tendência para neuropatia aguda transitória e crônica cumulativa.</p><p><strong>E) modulador seletivo do receptor de estrogênio.</strong> - INCORRETA. Tamoxifeno e similares não causam neuropatia periférica, sendo sua toxicidade principal relacionada a efeitos estrogênicos e antiestrogênicos.</p><p>O padrão de neuropatia sensorial pura com ataxia e dor é altamente sugestivo de análogos da platina, sendo este um efeito dose-limitante importante desta classe de medicamentos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Sabe-se que o tratamento da hipossalivação induzida pela radioterapia é paliativo e preventivo. Dentre os agentes listados abaixo, todos são indicados para o tratamento em questão, excetuando-se:",
+      "alternativas": [
+        "agentes anticolinérgicos",
+        "bromexina",
+        "pilocarpina",
+        "alimentos úmidos e macios",
+        "agente paras simpatomimético"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UDI 2022 avalia seu conhecimento sobre o manejo da hipossalivação (xerostomia) induzida por radioterapia em cabeça e pescoço. É importante entender quais são os tratamentos indicados versus contraindicados nesta condição.</p><p><strong>A resposta correta é A - agentes anticolinérgicos.</strong></p><p>O enunciado pede a alternativa que é EXCEÇÃO (ou seja, NÃO é indicada), e os anticolinérgicos são exatamente o oposto do que se deve usar para tratar hipossalivação.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) agentes anticolinérgicos.</strong> - CORRETA (como exceção). Os anticolinérgicos (como atropina, escopolamina) REDUZEM a produção salivar, sendo completamente contraindicaros na xerostomia radioterapia-induzida. Esta é a resposta correta por ser a exceção.</p><p><strong>B) bromexina.</strong> - INCORRETA (não é a exceção). A bromexina é um mucolítico que pode ser usado para tornar a saliva mais fluida e menos viscosa, sendo indicada no tratamento da hipossalivação.</p><p><strong>C) pilocarpina.</strong> - INCORRETA (não é a exceção). A pilocarpina é um agonista colinérgico que estimula a produção salivar, sendo uma das principais opções farmacológicas para xerostomia radioterapia-induzida.</p><p><strong>D) alimentos úmidos e macios.</strong> - INCORRETA (não é a exceção). Esta é uma medida dietética fundamental para pacientes com xerostomia, facilitando a deglutição e reduzindo o desconforto.</p><p><strong>E) agente parassimpatomimético.</strong> - INCORRETA (não é a exceção). Esta classe (como a pilocarpina) estimula o sistema parassimpático, aumentando a produção salivar, sendo indicada no tratamento.</p><p>O tratamento da xerostomia radioterapia-induzida visa estimular a produção salivar ou tornar a saliva mais tolerável, sendo os anticolinérgicos a única opção que piora o quadro.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_MedicinaPreventiva"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Em se tratando de lesões cutâneas, assinale a alternativa com a correspondência correta:",
+      "alternativas": [
+        "telangiectasia: vaso sanguíneo profundo dilatado",
+        "erosão: perda da epiderme concomitante a derme",
+        "escama: acúmulo excessivo de extrato córneo",
+        "mácula: lesão plana e colorida, maior do que 2 centímetros de diâmetro, sem elevação acima da superfície da pele circulante",
+        "patch: lesão plana, menor do que 2 centímetros de diâmetro, com cor símiles a pele circundante."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UDI 2022 testa seu conhecimento sobre terminologia dermatológica, especificamente as definições precisas de diferentes tipos de lesões cutâneas. É fundamental conhecer estas definições para o diagnóstico correto em dermatologia.</p><p><strong>A resposta correta é C - escama: acúmulo excessivo de extrato córneo.</strong></p><p>Vamos analisar cada alternativa com suas definições:</p><p><strong>A) telangiectasia: vaso sanguíneo profundo dilatado.</strong> - INCORRETA. Telangiectasia refere-se à dilatação de vasos superficiais (capilares, vênulas e arteríolas) da pele, não vasos profundos. São visualized como linhas finas vermelhas ou rosadas.</p><p><strong>B) erosão: perda da epiderme concomitante a derme.</strong> - INCORRETA. Erosão é a perda de epiderme APENAS, sem envolvimento dérmico. Quando há perda de epiderme e derme, chamamos de úlcera.</p><p><strong>C) escama: acúmulo excessivo de extrato córneo.</strong> - CORRETA. Escama é definida como o acúmulo visível de queratinócitos mortos (estrato córneo) que se destacam da superfície da pele. É característica de psoríase, dermatite seborreica, entre outras condições.</p><p><strong>D) mácula: lesão plana e colorida, maior do que 2 centímetros de diâmetro, sem elevação acima da superfície da pele circulante.</strong> - INCORRETA. A definição está incorreta. Mácula é qualquer alteração de cor na pele, SEM elevação, independente do tamanho. Lesões >1cm de diâmetro e planas são chamadas de manchas (patches).</p><p><strong>E) patch: lesão plana, menor do que 2 centímetros de diâmetro, com cor símiles a pele circundante.</strong> - INCORRETA. A definição está invertida. Patch é lesão plana >1cm de diâmetro, enquanto lesões planas <1cm são máculas. Além disso, patches têm cor diferente da pele normal.</p><p>O conhecimento preciso desta terminologia é essencial para comunicação médica adequada e diagnóstico dermatológico correto.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_LesoesElementares"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Dentre as complicações clínicas abaixo, assinale a que é uma possível complicação da administração de gadolínio em um paciente com doença renal crônica.",
+      "alternativas": [
+        "insuficiência renal aguda",
+        "esclerose sistêmica nefrogênica",
+        "hipertireoidismo",
+        "hipocalcemia",
+        "acidose lática"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UDI 2022 avalia seu conhecimento sobre complicações renais do uso de gadolínio em pacientes com doença renal crônica. É um tema importante na radiologia, pois envolve a segurança do contraste em pacientes com comprometimento renal.</p><p><strong>A resposta correta é B - esclerose sistêmica nefrogênica.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) insuficiência renal aguda.</strong> - INCORRETA. O gadolínio não causa insuficiência renal aguda diretamente. A preocupação é com piora da função renal já comprometida, mas o gadolínio em si não é nefrotóxico como contrastes iodoados.</p><p><strong>B) esclerose sistêmica nefrogênica.</strong> - CORRETA. A esclerose sistêmica nefrogênica (ESN) é uma complicação grave e específica do uso de gadolínio em pacientes com insuficiência renal. O gadolínio deposita-se na pele, ossos e outros tecidos, causando fibrose sistêmica. É uma condição potencialmente irreversível e grave.</p><p><strong>C) hipertireoidismo.</strong> - INCORRETA. O gadolínio não tem relação com função tireoidiana. Esta complicação não está associada ao uso de contrastes paramagnéticos.</p><p><strong>D) hipocalcemia.</strong> - INCORRETA. Não há relação causal entre gadolínio e alterações do metabolismo do cálcio. Hipocalcemia não é uma complicação reconhecida do gadolínio.</p><p><strong>E) acidose lática.</strong> - INCORRETA. Acidose lática não é uma complicação associada ao gadolínio. Esta alteração metabólica está relacionada a outras condições como sepse, hipóxia, ou alguns medicamentos específicos.</p><p>A esclerose sistêmica nefrogênica é uma complicação devastadora que pode levar à fibrose cutânea, contraturas articulares, e envolvimento de órgãos internos. Por isso, o uso de gadolínio em pacientes com doença renal crônica requer avaliação cuidadosa do risco-benefício.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "A despeito da doença de Alzheimer, tem-se como verdadeiro:",
+      "alternativas": [
+        "Patologicamente, as anormalidades mais expressivas são observadas nas regiões cerebelares",
+        "Delirium é raro",
+        "Manifesta-se com rápida perda de memória (<6 meses) significativa",
+        "Menos de 5%dos pacientes apresentam queixas não relacionadas a memória",
+        "Responde por mais da metade dos casos de perda significativa da memória em pacientes com mais de 70 anos"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UDI avalia seu conhecimento sobre as características epidemiológicas e clínicas da doença de Alzheimer, um tema fundamental na neurologia geriátrica.</p><p><strong>A resposta correta é E - Responde por mais da metade dos casos de perda significativa da memória em pacientes com mais de 70 anos.</strong> Esta alternativa está correta pois a doença de Alzheimer é responsável por aproximadamente 60-80% de todos os casos de demência em idosos, sendo a principal causa de comprometimento cognitivo significativo nesta faixa etária.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Patologicamente, as anormalidades mais expressivas são observadas nas regiões cerebelares</strong> - INCORRETA. A doença de Alzheimer afeta primariamente o córtex cerebral, especialmente as regiões temporais e parietais, com formação de placas senis e novelos neurofibrilares. O cerebelo geralmente é preservado.</p><p><strong>B) Delirium é raro</strong> - INCORRETA. Pacientes com Alzheimer são extremamente susceptíveis ao delirium, especialmente durante hospitalizações ou infecções, devido à reserva cognitiva diminuída.</p><p><strong>C) Manifesta-se com rápida perda de memória (<6 meses) significativa</strong> - INCORRETA. O Alzheimer tem evolução insidiosa e progressiva, geralmente ao longo de anos, não meses. Perda rápida de memória sugere outras etiologias como delirium ou demência迅速 progressiva.</p><p><strong>D) Menos de 5% dos pacientes apresentam queixas não relacionadas a memória</strong> - INCORRETA. Alterações comportamentais, afasia, apraxia e disfunção executiva são comuns e podem preceder ou acompanhar os sintomas de memória em até 30-40% dos casos.</p><p><strong>Veredito: A alternativa E é a única correta, consolidando o conhecimento sobre a importância epidemiológica do Alzheimer na população idosa brasileira.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Demencias",
+        "ClinicaMedica_Neurologia_Demencias_DoencaDeAlzheimer"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Mulher, sexagenária, deu entrada no pronto socorro referindo episódios aflitivos breves e intermitentes de dor lancinante em lábios, gengiva e bochecha. Afirma que mover a língua pode desencadear esses espasmos intensos de dor. Ao exame físico, sem alterações patológicas evidentes, assim como, ressonância de crânio normal. A causa mais provável da dor neste caso é:",
+      "alternativas": [
+        "esclerose lateral amiotrófica",
+        "neuroma acústico",
+        "neuralgia do trigêmeo",
+        "paralisia do nervo facial",
+        "meningioma"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UDI avalia sua capacidade de reconhecer uma neuropatia craniana clássica através de sua apresentação clínica característica.</p><p><strong>A resposta correta é C - neuralgia do trigêmeo.</strong> O quadro descrito é altamente sugestivo de neuralgia do trigêmeo, também conhecida como tic douloureux.</p><p><strong>Características do caso que suportam este diagnóstico:</strong></p><p>• Dor lancinante, súbita e de grande intensidade<br>• Localização em lábios, gengiva e bochecha (ramos do trigêmeo)<br>• Episódios breves e intermitentes<br>• Desencadeada por movimentos da língua ou estímulos táteis leves (trigger points)<br>• Exame físico e neuroimagem normais</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) esclerose lateral amiotrófica</strong> - INCORRETA. A ELA cursa com fraqueza muscular progressiva, fasciculações e sinais piramidais, sem dor lancinante facial característica.</p><p><strong>B) neuroma acústico</strong> - INCORRETA. Causa hipoacusia progressiva, zumbido e alterações do equilíbrio, mas não dor facial lancinante como apresentação principal.</p><p><strong>D) paralisia do nervo facial</strong> - INCORRETA. Caracteriza-se por paresia ou paralisia dos músculos faciais, diplopia e alterações da gustação, não dor lancinante.</p><p><strong>E) meningioma</strong> - INCORRETA. Geralmente assintomático ou causa cefaleia progressiva, convulsões e déficits neurológicos focais, dependendo da localização.</p><p><strong>Veredito: A neuralgia do trigêmeo é a única condição que se apresenta exatamente com estas características clínicas, sendo um diagnóstico clínico clássico que todo médico deve reconhecer.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia_Cefaleias_NeuralgiaTrigeminal"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Síndrome da Fadiga Crônica (SFC) é uma condição de diagnóstico clínico cujo principal sintoma é a presença de fadiga (cansaço) intensa que pode piorar com a atividade física ou mental, mas não melhora com o repouso (https://www.reumatologia.org.br/orientacoes-ao-paciente/sindrome-da-fadiga-cronica/). Qual das seguintes opções é um tratamento benéfico para a síndrome ora em tela?",
+      "alternativas": [
+        "terapia cognitivo comportamental",
+        "bupropiona",
+        "doxiciclina",
+        "fluoxetina",
+        "olanzapina"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UDI avalia seu conhecimento sobre as abordagens terapêuticas evidence-based para a Síndrome da Fadiga Crônica, uma condição complexa e desafiadora.</p><p><strong>A resposta correta é A - terapia cognitivo comportamental.</strong> A terapia cognitivo comportamental (TCC) é considerada uma das intervenções mais eficazes para SFC, com comprovação em múltiplos ensaios clínicos.</p><p><strong>Por que a TCC é benéfica na SFC:</strong></p><p>• Ajuda os pacientes a lidarem melhor com os sintomas<br>• Trabalha crenças desadaptativas sobre a doença<br>• Melhora estratégias de autocuidado e gestão de energia<br>• Reduz comportamentos de evitação e catastrofização<br>• Melhora a qualidade de vida global</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>B) bupropiona</strong> - INCORRETA. Embora seja um antidepressivo que pode ajudar em casos de depressão associada, não há evidência robusta de benefício específico para SFC como monoterapía.</p><p><strong>C) doxiciclina</strong> - INCORRETA. Antibiótico sem indicação na SFC, que não é uma infecção bacteriana. O uso inadequado pode causar resistência e efeitos adversos.</p><p><strong>D) fluoxetina</strong> - INCORRETA. Antidepressivo SSRI que pode até piorar os sintomas em alguns casos, especialmente se houver sensitividade a medicamentos.</p><p><strong>E) olanzapina</strong> - INCORRETA. Antipsicótico com perfil de efeitos adversos significativos (ganho de peso, sedação, alterações metabólicas) sem indicação específica para SFC.</p><p><strong>Veredito: A TCC representa a abordagem terapêutica mais respaldada pela literatura médica atual para SFC, focando na reabilitação funcional e melhoria da qualidade de vida.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_SindromesDolorosasCronicas",
+        "ClinicaMedica_Reumatologia_SindromesDolorosasCronicas_SindromeDaFadigaCronica"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Homem, 55 anos de idade, é examinado em razão de uma vasculite cutânea e neuropatia periférica. Fora submetido, também, a biópsia renal, devido à presença de disfunção renal associada, revelando presença de glomerulonefrite. As crioglobulinas são achadas em sangue periférico. Qual dos seguintes exames laboratoriais deve ser solicitado para estabelecer a etiologia?",
+      "alternativas": [
+        "anticorpo anti-hiv",
+        "ANCA citoplasmático",
+        "fator reumatoide",
+        "reação em cadeia da polimerase (PCR) para hepatite C",
+        "antígeno de superfície da hepatite B"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UDI avalia seu conhecimento sobre investigação etiológica em vasculites, especificamente quando há presença de crioglobulinas.</p><p><strong>A resposta correta é D - reação em cadeia da polimerase (PCR) para hepatite C.</strong> Esta é a investigação mais apropriada dado o contexto clínico apresentado.</p><p><strong>Contextualizando o caso:</strong></p><p>O paciente apresenta uma tríade clássica de crioglobulinemia mista: vasculite cutânea, neuropatia periférica e glomerulonefrite. A presença de crioglobulinas no sangue peripheral é um achado laboratorial característico.</p><p><strong>Por que investigar hepatite C?</strong></p><p>• Hepatite C é a causa mais comum de crioglobulinemia mista (80-90% dos casos)<br>• O vírus forma complexos imunes que se precipitam em temperaturas baixas<br>• Causa inflamação vascular sistêmica<br>• Sabe-se que no Brasil, a prevalência de HCV é significativa, estimada em 1-2% da população</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) anticorpo anti-hiv</strong> - INCORRETA. HIV pode causar vasculite, mas não é a causa mais comum de crioglobulinemia. É importante investigar, mas não é a primeira escolha neste contexto.</p><p><strong>B) ANCA citoplasmático</strong> - INCORRETA. Indicado para investigação de vasculites ANCA-associadas (granulomatose com poliangiite, etc.), não para crioglobulinemia.</p><p><strong>C) fator reumatoide</strong> - INCORRETA. Frequentemente positivo em crioglobulinemia, mas é um marcador inespecífico e não estabelece etiologia.</p><p><strong>E) antígeno de superfície da hepatite B</strong> - INCORRETA. HBV pode causar crioglobulinemia, mas muito menos frequentemente que HCV. Também não é detectado por HBsAg, mas por outros marcadores virais.</p><p><strong>Veredito: A PCR para hepatite C é a investigação etiológica mais custo-efetiva e adequada neste caso, considerando a alta prevalência desta infecção como causa de crioglobulinemia.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_Vasculites",
+        "ClinicaMedica_Reumatologia_Vasculites_VasculitePorCrioglobulinas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_HepatitesVirais",
+        "ClinicaMedica_Infectologia_HepatitesVirais_HepatiteC"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Hospital especializado em oncologia passa por um surto de casos de Aspergillus invasivo em pacientes internados no setor de transplante de medula óssea. Qual das alternativas abaixo aponta corretamente a fonte mais provável de infecção por Aspergillus?",
+      "alternativas": [
+        "fonte de água contaminada",
+        "fonte de ar contaminado",
+        "disseminação de interpacientes em salas de espera de consultórios",
+        "disseminação de profissional da saúde para paciente, devido a técnica inadequada de lavagem de mãos",
+        "disseminação de profissional da saúde para paciente, devido ao uso inadequado de desinfetante contendo álcool"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UDI avalia seu conhecimento sobre medidas de controle de infecção hospitalar, especificamente para infecções fúngicas por Aspergillus em pacientes imunocomprometidos.</p><p><strong>A resposta correta é B - fonte de ar contaminado.</strong> Aspergillus é transmitido principalmente através de esporos aerotransportados, tornando a contaminação do ar a fonte mais provável.</p><p><strong>Contextualizando o surto:</strong></p><p>O setor de transplante de medula óssea (TMO) hospeda pacientes extremamente imunocomprometidos, com neutropenia profunda e disfunção da imunidade celular. Nestes pacientes, a aspergilose invasiva é uma complicação grave e potencialmente fatal.</p><p><strong>Por que o ar é a fonte mais provável?</strong></p><p>• Aspergillus spp. produz conídios que permanecem suspensos no ar<br>• Esporos são resistentes e podem viajar longas distâncias<br>• A construção, renovação ou presença de material orgânico em decomposição são fontes comuns<br>• Sistemas de ventilação inadequados facilitam a dispersão<br>• Filtros HEPA são essenciais em setores de alto risco</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) fonte de água contaminada</strong> - INCORRETA. Aspergillus não se multiplica em água, e a transmissão hídrica é rara. Legionella seria a preocupação principal em contaminação aquosa.</p><p><strong>C) disseminação de interpacientes em salas de espera</strong> - INCORRETA. Não há transmissão interpessoal de Aspergillus. Pacientes com aspergilose não são contagiosos.</p><p><strong>D) disseminação profissional-paciente por lavagem inadequada</strong> - INCORRETA. Contacto direto não é o mecanismo de transmissão. As mãos são importantes para patógenos bacterianos, não fúngicos aerotransportados.</p><p><strong>E) uso inadequado de desinfetante com álcool</strong> - INCORRETA. Álcool é eficaz contra Aspergillus. O problema não seria o desinfectante, mas a falta de medidas de controle ambiental.</p><p><strong>Veredito: Em surtos de Aspergillus em setores de alto risco, a investigação deve focar prioritariamente no controle da qualidade do ar, incluindo sistema de ventilação, filtros e monitorização ambiental.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesFungicas",
+        "ClinicaMedica_Infectologia_InfeccoesFungicas_Aspergillus",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Em se tratando de sinais e sintomas do câncer, a tríade composta por dor ciática, edema de membros inferiores e hidronefrose, está, frequentemente, relacionada com tumor avançado de:",
+      "alternativas": [
+        "rim",
+        "cólon",
+        "intestino delgado",
+        "ovário",
+        "colo uterino"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UDI 2022 avalia seu conhecimento sobre apresentações clínicas típicas de diferentes tipos de câncer, especialmente aquelas relacionadas ao comprometimento de estruturas adjacentes.</p><p>A tríade apresentada - dor ciática, edema de membros inferiores e hidronefrose - indica compressão de estruturas neurovasculares e do sistema urinário. Vamos analisar cada alternativa:</p><p><strong>A) Rim:</strong> Tumores renais podem causar hidronefrose por compressão ureteral, mas dor ciática não é característica típica.</p><p><strong>B) Cólon:</strong> Pode causar obstrução intestinal e edema por hipoproteinemia, mas não justifica hidronefrose.</p><p><strong>C) Intestino delgado:</strong> Tumores desta localização causam sintomas obstrutivos intestinais, não a tríade específica.</p><p><strong>D) Ovário:</strong> Câncer de ovário pode causar edema por compressão venosa e hidronefrose por compressão ureteral, mas dor ciática é menos comum.</p><p><strong>E) Colo uterino:</strong> <strong>Resposta correta.</strong> Tumores avançados de colo uterino crescem infiltrando o parametrio e podem comprimir o ureter causando hidronefrose, comprimir vasos ilíacos causando edema de membros inferiores, e infiltrar plexos nervosos causando dor ciática.</p><p><strong>Veredito:</strong> A alternativa E é correta pois o câncer de colo uterino em estágio avançado é conhecido por causar essa tríade de sintomas devido ao crescimento local e compressão de estruturas adjacentes.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Qual dos marcadores tumorais está relacionado corretamente com o tipo celular de câncer e pode ser acompanhado durante tratamento, com o objetivo de avaliar terapêutica e carga de doença?",
+      "alternativas": [
+        "fosfatase ácida- câncer de próstata",
+        "calcitonina- câncer de pulmão",
+        "CA 125- câncer de colo uterino",
+        "CD30- Leucemia de células pilosas",
+        "catecolaminas-linfoma"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre marcadores tumorais e sua utilidade clínica no acompanhamento oncológico.</p><p><strong>A) Fosfatase ácida - câncer de próstata:</strong> <strong>Resposta correta.</strong> A fosfatase ácida prostática (PAP) é um marcador clássico para câncer de próstata, sendo utilizada tanto no diagnóstico quanto no monitoramento da resposta ao tratamento e detecção de recidivas.</p><p><strong>B) Calcitonina - câncer de pulmão:</strong> Incorreta. A calcitonina é um marcador específico para carcinoma medular de tireoide, não câncer de pulmão.</p><p><strong>C) CA 125 - câncer de colo uterino:</strong> Incorreta. O CA 125 é um marcador utilizado principalmente para monitoramento de câncer de ovário, não colo uterino. Para colo uterino, usa-se o SCC (antígeno de células escamosas).</p><p><strong>D) CD30 - Leucemia de células pilosas:</strong> Incorreta. CD30 é um marcador associado ao linfoma de Hodgkin e alguns linfomas de células T, não leucemia de células pilosas.</p><p><strong>E) Catecolaminas - linfoma:</strong> Incorreta. Catecolaminas são marcadores para feocromocitoma/paraganglioma, não linfoma.</p><p><strong>Competência avaliada:</strong> Conhecimento sobre marcadores tumorais específicos e sua correlação com tipos histológicos de câncer.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Urologia",
+        "ClinicaMedica_Urologia_CancerDeProstata",
+        "ClinicaMedica_Urologia_CancerDeProstata_ExamesComplementaresEDiagnosti"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Assinale, dentre as síndromes abaixo relacionadas, aquela que não está associada à obesidade",
+      "alternativas": [
+        "hipotireoidismo",
+        "acromegalia",
+        "insulinoma",
+        "síndrome de Prader-Willi",
+        "síndrome de Cushing"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda as relações entre síndromes endócrinas e alterações metabólicas, especificamente肥胖.</p><p><strong>A) Hipotireoidismo:</strong> Associado à obesidade devido ao metabolismo reduzido e ganho de peso.</p><p><strong>B) Acromegalia:</strong> <strong>Resposta correta.</strong> Embora o hormônio do crescimento (GH) tenha ação contrainsulínica, pacientes com acromegalia apresentam aumento da massa magra e tendência à redução da gordura corporal. O GH promove lipólise e síntese proteica, resultando em redistribuição de gordura, mas não obesidade franca.</p><p><strong>C) Insulinoma:</strong> Pode causar obesidade secundária devido às crises de hipoglicemia com subsequente hiperfagia.</p><p><strong>D) Síndrome de Prader-Willi:</strong> Caracterizada por肥胖 severa com hipotonias muscular e distúrbios alimentares.</p><p><strong>E) Síndrome de Cushing:</strong> clásico padrão de肥胖 central devido ao hipercortisolismo.</p><p><strong>Conceito-chave:</strong> A acromegalia é a única síndrome da lista que não está classicamente associada à肥胖, apesar do GH ter efeitos metabólicos complexos.</p><p><strong>Veredito:</strong> Letra B é a alternativa correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Paciente, masculino, 42 anos, é internado em leito da clínica médica com quadro de infecção de partes moles em membro inferior esquerdo. O mesmo é alcoolista, em situação de rua, que consome, aproximadamente, 500 mililitros de destilado diariamente. O médico rotineiro está deverasmente preocupado com o estado nutricional do paciente, visto que ele tem ingesta calórica limitada além do álcool. A par da situação de baixa ingesta alimentar e consumo excessivo de destilado, o paciente não corre risco de deficiência de (a):",
+      "alternativas": [
+        "ácido ascórbico",
+        "tiamina",
+        "folato",
+        "tocoferol",
+        "vitamina B12"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre deficiências nutricionais em alcohólatras, considerando as características metabólicas do álcool e sua interação com micronutrientes.</p><p><strong>A) Ácido ascórbico (Vitamina C):</strong> O álcool interfere na absorção e metabolismo da vitamina C. Alcoólatras apresentam alto risco de deficiência.</p><p><strong>B) Tiamina (Vitamina B1):</strong> Essencial para o metabolismo de carboidratos. O álcool interfere na absorção intestinal e armazenamento hepático. Alcoólatras têm alto risco de deficiência, podendo evoluir para encefalopatia de Wernicke.</p><p><strong>C) Folato:</strong> O álcool interfere no metabolismo do folato no fígado. É uma das deficiências mais comuns em alcoólatras.</p><p><strong>D) Tocoferol (Vitamina E):</strong> <strong>Resposta correta.</strong> A vitamina E é lipossolúvel e armazenada no tecido adiposo. Embora o álcool possa interferir no metabolismo de várias vitaminas, a vitamina E é menos afetada nos alcohólatras devido às grandes reservas corporais e menor interferência específica do álcool em seu metabolismo.</p><p><strong>E) Vitamina B12:</strong> O álcool interfere na absorção intestinal de B12. Alcoólatras têm risco aumentado de deficiência.</p><p><strong>Raciocínio clínico:</strong> Entre as vitaminas listadas, a vitamina E é a única que não apresenta risco significativo de deficiência em alcohólatras devido às suas características farmacológicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_AvaliacaoNutricional"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Mulher de 46 anos, realiza mamografia, onde se tem como resultado BI-RADS 0. Assinale a opção onde se destaca a interpretação e a conduta no caso supracitado.",
+      "alternativas": [
+        "relativa suspeição de malignidade: biópsia",
+        "baixa suspeição de malignidade: avaliação histológica.",
+        "malignidade confirmada, contudo, restrita a mama: mastectomia modificada.",
+        "alta suspeita de malignidade: tumorectomia.",
+        "mamografia incompleta necessitando de complementação."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre classificação BI-RADS e condutas correspondentes em mamografia.</p><p>O sistema BI-RADS (Breast Imaging Reporting and Data System) padroniza a classificação de achados mamográficos:</p><p><strong>BI-RADS 0:</strong> Mamografia incompleta, necessitando de complementação com outras modalidades de imagem (ultrassom, ressonância magnética, ou incidões adicionais).</p><p><strong>A) Relativa suspeição de malignidade - biópsia:</strong> Incorreta. Esta classificação corresponde ao BI-RADS 4, que requer biópsia.</p><p><strong>B) Baixa suspeição de malignidade - avaliação histológica:</strong> Incorreta. Esta classificação corresponde ao BI-RADS 3, que requer seguimento curto.</p><p><strong>C) Malignidade confirmada - mastectomia modificada:</strong> Incorreta. Esta classificação corresponde ao BI-RADS 6, após confirmação histológica de malignidade.</p><p><strong>D) Alta suspeição de malignidade - tumorectomia:</strong> Incorreta. Esta classificação corresponde ao BI-RADS 5, que requer confirmação histológica antes de qualquer procedimento.</p><p><strong>E) Mamografia incompleta necessitando de complementação:</strong> <strong>Resposta correta.</strong> BI-RADS 0 indica que a mamografia está incompleta ou inconclusa, necessitando de estudos complementares para adequada avaliação.</p><p><strong>Competência avaliada:</strong> Conhecimento sobre sistema de classificação BI-RADS e condutas apropriadas para cada categoria.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_RastreamentoDoCancerDeMama",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia_CancerDeMama_ExamesComplementar"
+      ],
+      "tags": [
+        "UDIR3CM2022",
+        "UDI",
+        "R3CM",
+        "MA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762672671767-49"
+    }
+  ]
+}

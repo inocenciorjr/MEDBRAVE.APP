@@ -24,7 +24,10 @@ export interface ICommentService {
    * @param data Dados para atualização
    * @returns Comentário atualizado ou null se não existir
    */
-  updateComment(id: string, data: UpdateCommentDTO): Promise<ContentComment | null>;
+  updateComment(
+    id: string,
+    data: UpdateCommentDTO,
+  ): Promise<ContentComment | null>;
 
   /**
    * Exclui um comentário (marcando como deletado)

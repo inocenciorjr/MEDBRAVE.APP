@@ -2,8 +2,7 @@ import { Router } from 'express';
 import { createFlashcardModule } from './createFlashcardModule';
 import { createStudySessionModule } from './createStudySessionModule';
 
-export const createStudyToolsModule = (
-): {
+export const createStudyToolsModule = (): {
   studyToolsRoutes: {
     flashcards: Router;
     decks: Router;
@@ -12,14 +11,14 @@ export const createStudyToolsModule = (
     unifiedReviews: Router;
   };
 } => {
-  // Criar submódulos
+  // Criar submódulos Supabase (recomendado)
   const flashcardModule = createFlashcardModule();
   const studySessionModule = createStudySessionModule();
 
   // Aqui seriam criados os outros submódulos do StudyTools
-  // const deckModule = createDeckModule({ firestoreDb: db });
-  // const errorNotebookModule = createErrorNotebookModule({ firestoreDb: db });
-  // const unifiedReviewModule = createUnifiedReviewModule({ firestoreDb: db });
+  // const deckModule = createDeckModule();
+  // const errorNotebookModule = createErrorNotebookModule();
+  // const unifiedReviewModule = createUnifiedReviewModule();
 
   // Retornar rotas de todos os submódulos
   return {

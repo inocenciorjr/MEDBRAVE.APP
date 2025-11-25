@@ -41,18 +41,18 @@ export const getDataJobsSchema = z.object({
   startDate: z
     .string()
     .optional()
-    .transform(val => (val ? new Date(val) : undefined)),
+    .transform((val) => (val ? new Date(val) : undefined)),
   endDate: z
     .string()
     .optional()
-    .transform(val => (val ? new Date(val) : undefined)),
+    .transform((val) => (val ? new Date(val) : undefined)),
   limit: z
     .string()
     .optional()
-    .transform(val => (val ? parseInt(val, 10) : undefined)),
+    .transform((val) => (val ? parseInt(val, 10) : undefined)),
   offset: z
     .string()
     .optional()
-    .transform(val => (val ? parseInt(val, 10) : undefined)),
+    .transform((val) => (val ? parseInt(val, 10) : undefined)),
   orderByCreatedAt: z.enum(['asc', 'desc']).optional(),
 });

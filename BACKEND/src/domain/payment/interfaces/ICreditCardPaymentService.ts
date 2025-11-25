@@ -1,4 +1,8 @@
-import { CreateCreditCardPaymentPayload, CreditCardPayment, PaymentProcessResult } from '../types';
+import {
+  CreateCreditCardPaymentPayload,
+  CreditCardPayment,
+  PaymentProcessResult,
+} from '../types';
 
 /**
  * Interface para o serviço de pagamentos com cartão de crédito
@@ -9,21 +13,27 @@ export interface ICreditCardPaymentService {
    * @param data Dados do pagamento com cartão
    * @returns Pagamento com cartão criado
    */
-  createCreditCardPayment(data: CreateCreditCardPaymentPayload): Promise<CreditCardPayment>;
+  createCreditCardPayment(
+    data: CreateCreditCardPaymentPayload,
+  ): Promise<CreditCardPayment>;
 
   /**
    * Obtém um pagamento com cartão pelo ID
    * @param creditCardPaymentId ID do pagamento com cartão
    * @returns Pagamento com cartão encontrado ou null
    */
-  getCreditCardPaymentById(creditCardPaymentId: string): Promise<CreditCardPayment | null>;
+  getCreditCardPaymentById(
+    creditCardPaymentId: string,
+  ): Promise<CreditCardPayment | null>;
 
   /**
    * Obtém um pagamento com cartão pelo ID do pagamento principal
    * @param paymentId ID do pagamento principal
    * @returns Pagamento com cartão encontrado ou null
    */
-  getCreditCardPaymentByPaymentId(paymentId: string): Promise<CreditCardPayment | null>;
+  getCreditCardPaymentByPaymentId(
+    paymentId: string,
+  ): Promise<CreditCardPayment | null>;
 
   /**
    * Autoriza um pagamento com cartão

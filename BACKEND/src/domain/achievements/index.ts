@@ -5,7 +5,7 @@ export * from './types';
 export * from './interfaces/IAchievementService';
 
 // === SERVICES ===
-export { FirebaseAchievementService } from './services/FirebaseAchievementService';
+export { SupabaseAchievementService } from '../../infra/achievements/supabase/SupabaseAchievementService';
 export { AchievementHelpers } from './services/AchievementHelpers';
 
 // === CONTROLLERS ===
@@ -29,7 +29,7 @@ export type {
   AchievementFilters,
   AchievementCondition,
   AchievementProgress,
-  AchievementReward
+  AchievementReward,
 } from './types';
 
 export {
@@ -37,5 +37,5 @@ export {
   AchievementTriggerType,
   AchievementRarity,
   AchievementStatus,
-  RewardType
-} from './types'; 
+  RewardType,
+} from './types';

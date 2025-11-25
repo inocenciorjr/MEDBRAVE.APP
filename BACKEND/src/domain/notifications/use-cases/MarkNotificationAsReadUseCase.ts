@@ -1,16 +1,11 @@
-import { inject, injectable } from 'tsyringe';
 import { INotificationService } from '../interfaces/INotificationService';
 import { Notification } from '../types';
 
 /**
- * Caso de uso para marcar notificações como lidas
+ * Caso de uso para marcar notificação como lida
  */
-@injectable()
 export class MarkNotificationAsReadUseCase {
-  constructor(
-    @inject('NotificationService')
-    private notificationService: INotificationService,
-  ) {}
+  constructor(private notificationService: INotificationService) {}
 
   /**
    * Marca uma notificação específica como lida

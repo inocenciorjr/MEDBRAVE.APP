@@ -1,0 +1,363 @@
+[
+  {
+    "id": "hardworq-304189",
+    "statement": "Analise o gráfico abaixo, considerando que a linha horizontal de base corresponda ao tempo de ação e a linha vertical do gráfico corresponda à concentração sérica. No caso de a função renal estar normal, pode-se afirmar que os antibióticos correspondentes ao representado pela linha contínua e ao representado pela linha pontilhada pode ser respectivamente.\n\n<img src=\"/api/temp-images/img-2c658043df80dd3cc45960c559a14f8c.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-304189-alt-0",
+        "text": "Amoxicilina e cefuroxima.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304189-alt-1",
+        "text": "Ciprofioxacino e meropenem.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304189-alt-2",
+        "text": "Oxacilina e amicacina.",
+        "isCorrect": true,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304189-alt-3",
+        "text": "Ampicilina e ciprofloxacino.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-304189-alt-2",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "AMRIGS2024R1",
+      "AMRIGS",
+      "R1",
+      "RS",
+      "2024"
+    ],
+    "source": "AMRIGS",
+    "year": 2024,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T23:35:15.745Z",
+    "updated_at": "2025-11-05T23:35:15.745Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-2c658043df80dd3cc45960c559a14f8c.png"
+    ],
+    "metadata": {
+      "hardworq_id": 304189,
+      "hardworq_codigo": "AMRIGS2024R1-1",
+      "prova_id": 2901,
+      "prova_codigo": "AMRIGS2024R1",
+      "estado": "RS",
+      "grupo": "R1",
+      "professor_comment": "Questão polêmica e passível de recurso. \n\nPessoal, aqui o examinador quer avaliar se o aluno se lembra dos mecanismos de farmacocinética dos antibióticos. De modo geral, podemos dividir os antibióticos em 3 grupos em relação à sua farmacocinética\n\n1. Antibióticos pico-dependentes: são antibióticos que dependem de uma concentração inicial elevada, mas que conseguem, dessa forma, manter-se na MIC (\"concentração inibitória mínimia\" - que é a concentração mínima do antibiótico que é capaz de impedir a replicação bacteriana) por mais tempo, sem necessitar de doses de repique. É isso que a linha pontilhada do gráfico representa. São exemplos desse grupo de antibióticos: os aminoglicosídeos (ex: gentamicina ou amicacina) e quinolonas (ex: ciprofloxacino, levofloxacino, norfloxacino). Veja que geralmente prescrevemos esses antibióticos de uma a duas vezes ao dia (aminoglicosídeos uma vez ao dia e quinolonas, a depender do tipo, de uma a duas vezes ao dia somente) \n\n2. Antibióticos tempo-dependentes: diferentes dos primeiros, esses antibióticos dependem da reaplicação de tempo em tempo para se manterem na MIC, de forma que, de modo geral, precisam de múltiplas doses ao longo do dia. São exemplos clássicos desse grupo os beta-lactâmicos. É o que a linha contínua mostra. Veja, a grande maioria dos beta-lactâmicos deixamos de 8 em 8 horas, por exemplo. \n\n3. Antibióticos \"área sob a curva\": que \"misturam\" o mecanismo pico-dependente com o tempo-dependente. São exemplos a vancomicina, linezolida e daptomicina. \n\nDessa forma, para a linha contínua procuraríamos beta-lactâmicos e para a linha pontilhada procuraríamos ou aminoglicosídeos ou quinolonas. \n\nVamos às alternativas:\n1) Incorreta. Os dois medicamentos pertencem à classe dos beta-lactâmicos, cujo mecanismo de ação farmacocinético é \"tempo-dependente\", ou seja, os dois estariam representados pela linha contínua\n2) Incorreta. Seria ao contrário! O ciprofloxacino é uma quinolona, cujo mecanismo é \"pico dependente\", ou seja, representado pela linha pontilhada. Já o meropenem é um beta-lactâmico, ou seja, representado pela linha contínua. \n3) Correta. Realmente a oxacilina, um beta-lactêmico, poderia corresponder à linha contínua e a amicacina, um aminocligosídeo, poderia corresponder à linha pontilhada\n4) Correta. Aqui também, a ampicilina (também um beta-lactâmico) poderia corresponder à linha contínua e o ciprofloxacino (uma quinolona) poderia corresponder à linha pontilhada. \n\nAssim, temos duas alternativas corretas (3 e 4), de modo que a questão é passível de recurso.",
+      "scraped_at": "2025-11-05T23:35:15.745Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-304190",
+    "statement": "Qual das seguintes situações clínicas apresentam um quadro mais provável de doença reumatológica de um paciente com artralgia.",
+    "alternatives": [
+      {
+        "id": "hardworq-304190-alt-0",
+        "text": "Paciente de 25 anos de idade, cefaleia recorrente, com resultado de Fator Antinuclear (FAN) 1160, padrão citoplasmático fibrilar linear em exame de rotina.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304190-alt-1",
+        "text": "Paciente de 60 anos de idade, com histórico de fadiga, com resultado de FAN. 1:640, padrão nuclear pontilhado grosso.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304190-alt-2",
+        "text": "Paciente de 30 anos de idade, em tratamento para acne com Isotretinoína, com mialgias e resultado de FAN 1320, padrão citoplasmático pontilhado polar.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304190-alt-3",
+        "text": "Paciente de 45 anos de idade, com histórico de infecção respiratória recente, resultado de FAN 1160, padrão citoplasmático fibrilar filamentar.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-304190-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "AMRIGS2024R1",
+      "AMRIGS",
+      "R1",
+      "RS",
+      "2024"
+    ],
+    "source": "AMRIGS",
+    "year": 2024,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T23:35:15.745Z",
+    "updated_at": "2025-11-05T23:35:15.745Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 304190,
+      "hardworq_codigo": "AMRIGS2024R1-2",
+      "prova_id": 2901,
+      "prova_codigo": "AMRIGS2024R1",
+      "estado": "RS",
+      "grupo": "R1",
+      "professor_comment": "Questão bem maldosa, difícil e específica, que basicamente cobra do aluno \"padrões de FAN\" (algo que ninguém que está prestando r1 deveria se preocupar em decorar...).\n\nMas vamos lá.. \n\nAqui o examinador que avaliar se o candidato sabe reconhecer padrões de FAN e associá-los ao diagnóstico clínico mais provável. Pessoal, a primeira mensagem aqui é: o FAN é um exame de TRIAGEM (rastreio) que só deve ser pedido frente a uma suspeita clínica. A ideia é que cada padrão de FAN está associado à positividade de um certo auto-anticorpo e este a um tipo de doença diferente. Outro ponto importante: sempre devemos nos atentar à titulação do FAN. Titulações baixas/moderadas e sem um quadro clínico sugestivo muito provavelmente se devem a um falso-positivo. \n\nQuando estamos falando de lúpus, por exemplo, as distribuições de FAN mais encontradas são:\n- Pontilhado grosso: muito associado ao anticorpo anti-Sm, que é o anticorpo mais específico para lúpus \n- Nuclear homogêneo: muito associado ao anticorpo anti-DNA (que é o segundo anticorpo mais associado ao lúpus) ou o o anti-histona (LES medicamentoso). \n- Pontilhado fino: muito associado ao anticorpo anti-Ro ou anti-La (pouco específicos para LES, mas que podem estar positivos na doença). Esses anticorpos são muito mais específicos de Sd. De Sjogren. \n\nObs: existe um padrão de FAN que costuma vir positivo em pessoas normais e saudáveis (e que, obviamente, não deveriam ter tido o FAN solicitado...) que é o padrão pontilhado fino denso (até 20% das pessoas hígidas podem apresentar esse padrão). \n\nDito isso, vamos avaliar as alternativas\n\n1) Incorreta. O porquê pediram FAN para um paciente jovem e com cefaleia de repetição não dá para saber... ainda mais de ROTINA!!De qualquer forma, o FAN padrão citoplasmático fibrilar linear é clássico da hepatite autoimune (que não tem nada a ver com o quadro clínico da questão). Além disso, veja a titulação 1:160, considerada moderada. Essa titulação + quadro clínico nada sugestivo afasta a possibilidade de um quadro autoimune para o caso em questão.\n2) Correta. Veja, temos um padrão clássico de FAN pontilhado grosso que, como vimos, geralmente está associado ao anticorpo Anti-Sm, que é o anticorpo mais específico para lúpus. Além disso, temos uma titulação alta (1:640) e um quadro clínico inespecífico (fadiga + artralgia). Se juntarmos as informações, essa é a situação clínica mais provável de um paciente com quadro reumatológico\n3) Incorreta. Mais uma vez um paciente jovem em tratamento de acne com isotretinoína (o famoso roacutan), que sabidamente tem, dentre os principais efeitos colaterais além do ressecamento dos olhos e das mucosas, a mialgia e a artalgia. O examinador provavelmente colocou essa alternativa por conta da possibilidade da associação do uso do roacutan com a espondilite anquilosante, especialmente em pacientes que fazem uso prolongado por doenças de pele graves. De qualquer forma, não temos um quadro clínico sugestivo, muito menos um padrão sugestivo dessa doença. Assim, mais um caso em que não haveria indicação nem de ter solicitado o FAN. Esse padrão citoplasmático pontilhado polar é bem inespecífico e quase nunca associado a algum quadro clínico. \n4) Incorreta. Também não saberemos porque foi solicitado FAN para uma paciente que teve uma infecção respiratória recente... O padrão citoplasmático fibrilar filamentar é super específico e pode se associar a doença hepática alcoólica, que não tem nada a ver com o quadro em questão, ainda mais com essa titulação baixa/moderada. \n\nAssim, alternativa correta: 2",
+      "scraped_at": "2025-11-05T23:35:15.745Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-304191",
+    "statement": "Analise as assertivas abaixo: I. A síndrome da secreção inadequada do hormônio antidiurético é uma causa de hipernatremia. II. Leucócitos superiores a 100.000 podem causar pseudo-hipercalemia. III. Hiperfosfatemia pode ser causada pela síndrome de realimentação. IV. Hipercalcemia é o distúrbio eletrolítico mais frequente nas síndromes paraneoplásicas. Quais estão corretas?",
+    "alternatives": [
+      {
+        "id": "hardworq-304191-alt-0",
+        "text": "Apenas I e III.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304191-alt-1",
+        "text": "Apenas II e IV.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304191-alt-2",
+        "text": "Apenas I, II e III.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304191-alt-3",
+        "text": "Apenas I, II e IV",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-304191-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "AMRIGS2024R1",
+      "AMRIGS",
+      "R1",
+      "RS",
+      "2024"
+    ],
+    "source": "AMRIGS",
+    "year": 2024,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T23:35:15.745Z",
+    "updated_at": "2025-11-05T23:35:15.745Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 304191,
+      "hardworq_codigo": "AMRIGS2024R1-3",
+      "prova_id": 2901,
+      "prova_codigo": "AMRIGS2024R1",
+      "estado": "RS",
+      "grupo": "R1",
+      "professor_comment": "Questão fácil que aborda um pouco do conhecimento sobre distúrbios hidroeletrolíticos.\n\nVamos avaliar as alternativas\n\nI) Incorreta. A SIADH (síndrome da secreção inapropriada de ADH) é uma causa de HIPONATREMIA (faz parte do subgrupo de hiponatremias euvolêmicas). Por algum motivo (medicamentoso, como uso de anticonvulsivantes, antidepressivos, antipsicóticos; doenças pulmonares, neoplasias ou doenças neurológicas) ocorre excesso na secreção de ADH, que age lá no ducto coletor promovendo aumento da produção de canais de aquaporina, responsáveis pela reabsorção de água livre (água sem sódio). Um excesso de água livre pode cursar com hiponatremia.Em relação à HIPERnatrmia, são causas possíveis o hiperaldosteronismo primário, a síndrome de cushing e o diabetes insipidus (deficiência na produção de ADH ou na sua ação em seu receptor), por exemplo. \nII) Correta. Pessoal, existem várias causas possíveis de hipercalemia (hiperpotassemia): medicamentosas, renais, hereditárias, metabólicas (ex: acidose metabólica). Existem também as causas de \"pseudo-hipercalemia\" (laboratorialmente o potássio está elevado, mas a concentração sérica do paciente é normal), cuja principal causa é a hemólise de eritrócitos, principalmente quando deixamos a amostra na bancada lá esperando por muito tempo... Outras causas de pseudo-hipercalemia são: aplicação prolongada de torniquete (levando indiretamente à hemólise), trobocitose e leucocitose importante (ex: pacientes com leucemia). Isso ocorre porque, na verdade, não é o potássio sérico real do paciente que está aumentado. Quando essas amostras são enviadas pelo laboratório, a concentração celular excessiva leva à hemólise no frasco (cisalhamento/hemólise) e, portanto, quando o potássio é avaliado laboratorialmente, ele aparenta estar elevado. \nIII) Incorreta. Na síndrome de realimentação ocorre o oposto: classicamente hipofosfatemia, hipocalemia e até hipomagnesemia. \nIV) Correta. A hipercalcemia é o distúrbio paraneoplásico mais comum, principalmente quando estamos falando de tumores sólidos ou síndrome de lise tumoral. \n\nAssim, alternativas corretas: II e IV (alternativa 2)",
+      "scraped_at": "2025-11-05T23:35:15.745Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-304192",
+    "statement": "Homem, 48 anos, procura emergência com desconforto torácico. Apresenta o eletrocardiograma abaixo: Considerando as informações apresentadas, o tratamento inicial para esse paciente é:\n\n<img src=\"/api/temp-images/img-4b928acbf4c1578f8c5546d4a6d7ba5b.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-304192-alt-0",
+        "text": "Anticoagulação pleno.",
+        "isCorrect": true,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304192-alt-1",
+        "text": "Dupla antiagregação plaqueatária.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304192-alt-2",
+        "text": "Angioplastia coronária.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304192-alt-3",
+        "text": "Trombólise",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-304192-alt-0",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "AMRIGS2024R1",
+      "AMRIGS",
+      "R1",
+      "RS",
+      "2024"
+    ],
+    "source": "AMRIGS",
+    "year": 2024,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T23:35:15.745Z",
+    "updated_at": "2025-11-05T23:35:15.745Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-4b928acbf4c1578f8c5546d4a6d7ba5b.png"
+    ],
+    "metadata": {
+      "hardworq_id": 304192,
+      "hardworq_codigo": "AMRIGS2024R1-4",
+      "prova_id": 2901,
+      "prova_codigo": "AMRIGS2024R1",
+      "estado": "RS",
+      "grupo": "R1",
+      "professor_comment": "Questão bem questionável e passível de recurso sobre manejo da dor torácica no pronto-socorro. \n\nPessoal, aqui não temos quase nada de informação. Sabemos que se trata de um paciente relativamente jovem e com dor torácica (que não foi nem caracterizada pelo enunciado). \n\nNo PS, frente a um paciente com dor torácica, temos que primeiro pensar nas principais causas ameaçadoras à vida:\n\n- SCA (síndrome coronariana aguda)\n- TEP\n- DAA (dissecção aórtica aguda)\n- Pneumotórax hipertensivo\n- Tamponamento cardíaco \n- Rotura esofágica \n\nPara conseguirmos limitar mais nossas hipóteses diagnósticas, o primeiro passo é realizar rapidamente um ECG. Isso tem como finalidade excluir ou não a possibilidade de IAMCSSST, uma emergência. Segundo, depois de termos o ECG em mãos, vamos parar para conversar com o paciente e caracterizar bem melhor a dor (para poder classifica-la como típica de angina ou atípica e, mais especificamente, como dor tipo A, B, C ou D), sintomas associados,e os fatores de risco do paciente. Isso nos ajuda a ir limitando nossas hipóteses. Além disso, quando há suspeita de SCA, existe um escore, chamado de \"HEART\" escore, que nos ajuda a classificar o risco do paciente ter SCA baseado em: história + ECG + fatores de risco + troponina. Bom, o enunciado não nos dá absolutamente nada de informações adicionais.. ou seja, nos sobra puramente uma análise de ECG (que NÃO é a vida real!). \n\nO que o ECG nos mostra? \n\n- Primeiro: não temos um supra de ST\n- Segundo, não temos outras alterações clássicas sugestivas de um IAM sem supra de ST (ex: infradesnivelamento do ST em várias derivações), apesar de termos uma inversão de onda T em câmaras precordiais, um pouco inespecífica\n- Todavia, temos um achado muito importante e que, para fins de prova, muitas vezes vem associada a uma das condições clínicas capazes de cursar com precordialgia: o padrão S1 (onda S profunda em DI) + Q3 (presença de onda Q em DIII) + T3 (inversão de onda T em DIII). Isso denota sobrecarga de câmaras direitas e aí sim temos que abrir o olho para a possibilidade de TEP. Essa alteração é ESPECÍFICA de TEP? Não! Como dito, ela denota SOBRECARGA DE CÂMARAS DIREITAS, que pode ser crônica (ex: DPOC grave avançado com cor pulmonale); mas no contexto de precordialgia aguda, não podemos menosprezar. Essa alteração é a mais COMUM do TEP no ECG? Também não! O mais comum é taquicardia sinusal. \n\nBom, com essas informações limitadas, a nossa principal hipótese aqui é TEP.. mas precisamos confirmar o diagnóstico antes de tomar qualquer conduta (ou seja, solicitar uma angiotomografia de tórax). Assim, fica impossível dar um tratamento inicial sem saber o que realmente está acontecendo..\n\nDe qualquer forma, se \"confirmássemos\" TEP, qual seria o tratamento inicial? DEPENDE! Depende se nosso paciente está instável (informação que não nos é fornecida), porque aí teria indicação de trombólise ou estável (porque aí pensaríamos somente em anticoagulação plena). \n\nResumindo: questão complicada, não temos uma resposta correta (se nossa suspeita de TEP se confirmasse precisaríamos de mais informações para decidir se só anticoagularíamos ou se haveria indicação de trombólise) e também precisaríamos de mais informações para classificar melhor a dor / fatores de risco do nosso paciente e entender se ele inclusive teria um risco elevado de SCA. \n\nAssim, questão passível de recurso!",
+      "scraped_at": "2025-11-05T23:35:15.745Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-304193",
+    "statement": "Analise a figura, na qual a imagem da esquerda representa o ambiente intracelular e da direita representa o ambiente extracelular. Considerando que os itens \"A\" e \"C\" tenham maiores concentrações intracelulares e que o item \"B\" tenha maior concentração extracelular, as letras A, B e C correspondem, respectivamente, aos eletrólitos:\n\n<img src=\"/api/temp-images/img-5ef6bd3921decb60f807765d3224c5c0.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-304193-alt-0",
+        "text": "Cloro, potássio e sódio.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304193-alt-1",
+        "text": "Potássio, sódio e magnésio.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304193-alt-2",
+        "text": "Fosfato, cloro e sódio.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-304193-alt-3",
+        "text": "Potássio, sódio e cloro.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-304193-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "AMRIGS2024R1",
+      "AMRIGS",
+      "R1",
+      "RS",
+      "2024"
+    ],
+    "source": "AMRIGS",
+    "year": 2024,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T23:35:15.745Z",
+    "updated_at": "2025-11-05T23:35:15.745Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-5ef6bd3921decb60f807765d3224c5c0.png"
+    ],
+    "metadata": {
+      "hardworq_id": 304193,
+      "hardworq_codigo": "AMRIGS2024R1-5",
+      "prova_id": 2901,
+      "prova_codigo": "AMRIGS2024R1",
+      "estado": "RS",
+      "grupo": "R1",
+      "professor_comment": "Questão fácil que aborda conceitos básicos de fisiologia celular. \n\nPessoal, aqui não tem muito o que fosforilar. O examinador quer avaliar se o aluno sabe quais eletrólitos têm sua concentração maior no Intracelular vs. Extracelular. Já é bem sabido que os eletrólitos: potássio, magnésio e fósforo têm uma concentração intracelular maior (e, por isso, quando dosamos esses eletrólitos a nível SÉRICO, ou seja, que diz respeito a o que está no extracelular, temos valores mais baixos de normalidade, como o K: 4,5-5,0; magnésio: 1,5-2,0 e fósforo: 2,5-4,5mg/dL). Já os eletrólitos sódio e cloro têm uma maior concentração no extracelular (e, por isso, quando dosamos, temos valores maiores de normalidade; por exemplo, o sódio: 135-145 e o cloro em torno de 100). \n\nDessa forma A e C: potássio e magnésio (maiores concentrações no intracelular) e B: sódio (maior concentração no extracelular). Alternativa correta: 2",
+      "scraped_at": "2025-11-05T23:35:15.745Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  }
+]

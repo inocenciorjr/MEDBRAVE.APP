@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase Timestamp import - using native Date instead
 
 /**
  * Tipos de notificações suportados
@@ -40,30 +40,30 @@ export enum NotificationChannel {
  */
 export interface Notification {
   id: string;
-  userId: string;
+  user_id: string;
   title: string;
   message: string;
   type: NotificationType;
   priority: NotificationPriority;
   read: boolean;
   data?: Record<string, any>;
-  readAt?: Date | null;
-  expiresAt?: Date | null;
-  createdAt: Date;
-  updatedAt: Date;
+  read_at?: Date | null;
+  expires_at?: Date | null;
+  created_at: Date;
+  updated_at: Date;
 }
 
 /**
  * Dados para criação de uma notificação
  */
 export interface CreateNotificationPayload {
-  userId: string;
+  user_id: string;
   title: string;
   message: string;
   type?: NotificationType;
   priority?: NotificationPriority;
   data?: Record<string, any>;
-  expiresAt?: Date | null;
+  expires_at?: Date | null;
 }
 
 /**
@@ -76,7 +76,7 @@ export interface UpdateNotificationPayload {
   priority?: NotificationPriority;
   read?: boolean;
   data?: Record<string, any>;
-  expiresAt?: Date | null;
+  expires_at?: Date | null;
 }
 
 /**
@@ -86,11 +86,11 @@ export interface ListNotificationsOptions {
   limit?: number;
   offset?: number;
   page?: number;
-  isRead?: boolean;
+  is_read?: boolean;
   type?: NotificationType;
   priority?: NotificationPriority;
-  orderByCreatedAt?: 'asc' | 'desc';
-  includeExpired?: boolean;
+  order_by_created_at?: 'asc' | 'desc';
+  include_expired?: boolean;
 }
 
 /**
@@ -101,7 +101,7 @@ export interface PaginatedNotificationsResult {
   total: number;
   page: number;
   limit: number;
-  totalPages: number;
+  total_pages: number;
 }
 
 /**
@@ -109,34 +109,34 @@ export interface PaginatedNotificationsResult {
  */
 export interface Device {
   id: string;
-  userId: string;
-  deviceType: 'ios' | 'android' | 'web' | 'desktop';
-  deviceModel?: string;
-  deviceName?: string;
-  osVersion?: string;
-  appVersion?: string;
-  pushToken?: string;
-  fcmToken?: string;
-  lastLoginAt: Timestamp;
-  lastActiveAt: Timestamp;
-  isActive: boolean;
+  user_id: string;
+  device_type: 'ios' | 'android' | 'web' | 'desktop';
+  device_model?: string;
+  device_name?: string;
+  os_version?: string;
+  app_version?: string;
+  push_token?: string;
+  fcm_token?: string;
+  last_login_at: Date;
+  last_active_at: Date;
+  is_active: boolean;
   metadata?: Record<string, any> | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  created_at: Date;
+  updated_at: Date;
 }
 
 /**
  * Payload para registro de dispositivo
  */
 export interface RegisterDevicePayload {
-  userId: string;
-  deviceType: Device['deviceType'];
-  deviceModel?: string;
-  deviceName?: string;
-  osVersion?: string;
-  appVersion?: string;
-  pushToken?: string;
-  fcmToken?: string;
+  user_id: string;
+  device_type: Device['device_type'];
+  device_model?: string;
+  device_name?: string;
+  os_version?: string;
+  app_version?: string;
+  push_token?: string;
+  fcm_token?: string;
   metadata?: Record<string, any>;
 }
 
@@ -144,13 +144,13 @@ export interface RegisterDevicePayload {
  * Opções para listagem de dispositivos
  */
 export interface ListDevicesOptions {
-  userId?: string;
-  deviceType?: Device['deviceType'];
-  isActive?: boolean;
-  hasPushToken?: boolean;
-  hasFcmToken?: boolean;
-  orderBy?: keyof Device;
-  orderDirection?: 'asc' | 'desc';
+  user_id?: string;
+  device_type?: Device['device_type'];
+  is_active?: boolean;
+  has_push_token?: boolean;
+  has_fcm_token?: boolean;
+  order_by?: keyof Device;
+  order_direction?: 'asc' | 'desc';
   limit?: number;
   page?: number;
   offset?: number;
@@ -164,7 +164,7 @@ export interface PaginatedDevicesResult {
   total: number;
   page: number;
   limit: number;
-  totalPages: number;
+  total_pages: number;
 }
 
 /**
@@ -172,14 +172,14 @@ export interface PaginatedDevicesResult {
  */
 export interface EmailVerificationToken {
   id: string;
-  userId: string;
+  user_id: string;
   email: string;
   token: string;
   type: 'verification' | 'password_reset' | 'email_change' | 'invitation';
-  expiresAt: Timestamp;
-  usedAt?: Timestamp | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  expires_at: Date;
+  used_at?: Date | null;
+  created_at: Date;
+  updated_at: Date;
   metadata?: Record<string, any> | null;
 }
 
@@ -187,10 +187,10 @@ export interface EmailVerificationToken {
  * Payload para criação de token de verificação de email
  */
 export interface CreateEmailVerificationTokenPayload {
-  userId: string;
+  user_id: string;
   email: string;
   type: EmailVerificationToken['type'];
-  expiresInMinutes?: number;
+  expires_in_minutes?: number;
   metadata?: Record<string, any>;
 }
 
@@ -198,12 +198,12 @@ export interface CreateEmailVerificationTokenPayload {
  * Opções para listagem de tokens de verificação de email
  */
 export interface ListEmailVerificationTokensOptions {
-  userId?: string;
+  user_id?: string;
   email?: string;
   type?: EmailVerificationToken['type'];
-  isActive?: boolean;
-  isExpired?: boolean;
-  isUsed?: boolean;
+  is_active?: boolean;
+  is_expired?: boolean;
+  is_used?: boolean;
   limit?: number;
   page?: number;
   offset?: number;
@@ -217,7 +217,7 @@ export interface PaginatedEmailVerificationTokensResult {
   total: number;
   page: number;
   limit: number;
-  totalPages: number;
+  total_pages: number;
 }
 
 /**
@@ -225,12 +225,12 @@ export interface PaginatedEmailVerificationTokensResult {
  */
 export interface NotificationPreferences {
   id: string;
-  userId: string;
+  user_id: string;
   channels: {
     email: boolean;
     push: boolean;
     sms: boolean;
-    inApp: boolean;
+    in_app: boolean;
   };
   types: {
     [key in NotificationType]?: {
@@ -239,16 +239,16 @@ export interface NotificationPreferences {
         email?: boolean;
         push?: boolean;
         sms?: boolean;
-        inApp?: boolean;
+        in_app?: boolean;
       };
     };
   };
-  doNotDisturb: {
+  do_not_disturb: {
     enabled: boolean;
-    startTime?: string; // Format: HH:MM
-    endTime?: string; // Format: HH:MM
+    start_time?: string; // Format: HH:MM
+    end_time?: string; // Format: HH:MM
     timezone?: string; // IANA timezone format
   };
-  createdAt: Date;
-  updatedAt: Date;
+  created_at: Date;
+  updated_at: Date;
 }

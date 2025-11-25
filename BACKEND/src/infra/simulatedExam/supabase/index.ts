@@ -1,0 +1,1 @@
+export { SupabaseSimulatedExamService } from './SupabaseSimulatedExamService';

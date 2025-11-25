@@ -13,7 +13,9 @@ export interface IMentorshipResourceService {
    * Cria um novo recurso de mentoria
    * @param resourceData Dados do recurso
    */
-  createResource(resourceData: CreateMentorshipResourcePayload): Promise<MentorshipResource>;
+  createResource(
+    resourceData: CreateMentorshipResourcePayload,
+  ): Promise<MentorshipResource>;
 
   /**
    * Obtém um recurso pelo ID
@@ -48,7 +50,10 @@ export interface IMentorshipResourceService {
    * @param mentorshipId ID da mentoria
    * @param type Tipo de recurso
    */
-  getResourcesByType(mentorshipId: string, type: ResourceType): Promise<MentorshipResource[]>;
+  getResourcesByType(
+    mentorshipId: string,
+    type: ResourceType,
+  ): Promise<MentorshipResource[]>;
 
   /**
    * Lista recursos adicionados por um usuário

@@ -1,0 +1,988 @@
+{
+  "metadata": {
+    "examName": "AMRIGS2023R3CM (AMRIGS 2023)",
+    "examYear": 2023,
+    "url": "source://361",
+    "totalQuestions": 30,
+    "categorizedQuestions": 30,
+    "rewrittenComments": 30,
+    "processedAt": "2025-11-08T23:00:37.053Z",
+    "jobId": "batch-1762613529706-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "98bf0ce1-7f9b-487d-9b97-a02dab832e79"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Homem de 45 anos é admitido na UTI após ressuscitação cardiopulmonar de parada cardíaca extra-hospitalar. Está internado na UTI há 72h, em ventilação mecânica invasiva e sem sedoanalgesia. No exame neurológico, apresenta GLASGOW 5 (abertura ocular 1, resposta verbal 1, resposta motora). Sobre o assunto, analise as assertivas abaixo: I. Ausência bilateral de potencial evocado somato-sensorial N20 cortical. II. Níveis séricos de enolase neurônio-específica inferiores a 40ug/L. III. Padrão surto-supressão no eletroencefalograma. IV. Ausência de reflexo foto-pupilar e corneano. Quais auxiliariam na definição de um prognóstico neurológico ruim para esse paciente?",
+      "alternativas": [
+        "Apenas II.",
+        "Apenas I e IV.",
+        "Apenas I, III e IV.",
+        "I, II, III e IV."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS avalia seu conhecimento sobre marcadores de prognóstico neurológico em pacientes pós-parada cardíaca. O cenário é clássico: paciente joven com parada extra-hospitalar, agora em coma com Glasgow 5 após 72 horas.</p><p><strong>Vamos analisar cada assertiva:</strong></p><p><strong>I. Ausência bilateral de PESS N20:</strong> Este é um dos marcadores mais confiáveis. O potencial N20 cortical representa a integridade das vias somato-sensoriais centrais. Sua ausência bilateral após 24-72h indica lesões extensas do córtex e tálamo, correlacionando-se fortemente com prognóstico neurologico desfavorável.</p><p><strong>II. Enolase < 40ug/L:</strong> Incorreta. A enolase neurônio-específica é uma proteína liberada por neurônios danificados. Valores < 40ug/L indicam mínima ou nenhuma lesão neuronal significativa. Para prognóstico ruim, esperamos valores > 33-50ug/L (dependendo do laboratório). Therefore, níveis baixos são fatores protetores, não de risco.</p><p><strong>III. Padrão surto-supressão:</strong> Este padrão electroencefalográfico caracteriza-se por bursts de atividade cerebral intercalados com períodos de supressão elétrica. É um marcador clássico de lesão cerebral grave e está associado a prognóstico neurologico desfavorável, especialmente se persistente após 24h.</p><p><strong>IV. Ausência de reflexos fotomotor e corneano:</strong> Os reflexos do tronco cerebral são fundamentais na avaliação prognóstica. A abolição bilateral destes reflexos indica disfunção do mesencéfalo e ponte, sendo um marcador de prognóstico neurologico pobre.</p><p><strong>Raciocínio clínico:</strong> Após parada cardíaca, usamos múltiplos marcadores para estratificar prognóstico. Os mais confiáveis são: ausência de PESS (alta especificidade), padrão EEG malignant (como surto-supressão) e ausência de reflexos de tronco. Biomarcadores elevados (como enolase alta) também são preditores negativos.</p><p><strong>Resposta correta: C (I, III e IV)</strong> - apenas a alternativa II não se aplica, pois níveis baixos de enolase são fatores protetores contra prognóstico ruim.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Entre 10-20% dos pacientes que internam na UTI já faziam uso de medicações psicotrópicas (antidepressivos, antipsicóticos ou gabapenoides) previamente à admissão. Qual a melhor conduta em relação ao manejo desses fármacos durante a internação para tratamento de uma doença crítica aguda grave?",
+      "alternativas": [
+        "Interromper no 1º dia os antidepressivos devido ao risco de desenvolvimento de delirium durante a internação na UTI.",
+        "Interromper no 3º dia os antipsicóticos devido ao risco de desenvolvimento de delirium durante a internação na UTI.",
+        "Preferencialmente manter os gabapenoides durante a internação na UTI.",
+        "A manutenção dos fármacos psicotrópicos aumenta o risco de eventos adversos (ex: QT longo, sintomas extrapiramidais), ao passo que a retirada dos fármacos pode aumentar o risco de delirium."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda um dilema clínico comum na UTI: o manejo de medicamentos psicotrópicos em pacientes críticos. A AMRIGS quer avaliar sua capacidade de equilibrar riscos e benefícios no contexto da medicina intensiva.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A. Interromper antidepressivos no 1º dia:</strong> Incorreta. A suspensão abrupta de antidepressivos pode precipitar síndrome de descontinuação (sintomas gripais, ansiedade, disforia) e aumentar risco de delirium, especialmente em歇期. A recomendação atual é manter e gradualizar conforme necessário.</p><p><strong>B. Interromper antipsicóticos no 3º dia:</strong> Incorreta. Antipsicóticos também não devem ser suspensos abruptamente. Além do risco de síndrome de descontinuação, pode precipitar recaída psicótica. Alguns antipsicóticos (como quetiapina) podem até ser úteis no manejo do delirium.</p><p><strong>C. Manter gabapenoides:</strong> Incorreta. Gabapentinoides (gabapentina, pregabalina) podem causar sedação excessiva, alterações cognitivas e interação com outros sedativos da UTI. O risco benefício frequentemente desfavorece sua manutenção em pacientes críticos.</p><p><strong>D. Análise dos riscos:</strong> Correta. Esta alternativa apresenta a visão mais abrangente: medicamentos psicotrópicos aumentam risco de eventos adversos (arritmias, sedação, prolongamento do QT, sintomas extrapiramidais), mas sua retirada também tem consequências - principalmente delirium por síndrome de abstinência. A decisão deve ser individualizada, considerando riscos e benefícios de cada classe.</p><p><strong>Raciocínio clínico:</strong> Em pacientes críticos, devemos considerar: (1) Risco de síndrome de descontinuação com suspensão abrupta, (2) Interações medicamentosas com sedativos e vasopressores, (3) Impacto na função cognitiva e respiratória, (4) Necessidade de manutenção para estabilidade psiquiatrica.</p><p><strong>Resposta correta: D</strong> - reconhece a complexidade do problema e a necessidade de avaliação individualizada dos riscos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "No estudo do drive respiratório e sedoanalgesia, assinale a alternativa correta.",
+      "alternativas": [
+        "Dexmedetomidine não interfere no esforço inspiratório (força inspiratória) ou na frequência respiratória do paciente.",
+        "Propofol interfere somente na frequência respiratória do paciente.",
+        "Midazolan interfere somente na frequência respiratória do paciente.",
+        "Fentanil reduz o esforço inspiratório e a frequência respiratória do paciente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre sedoanalgesia e seus efeitos no drive respiratório - tema fundamental em medicina intensiva. A AMRIGS quer avaliar se você compreende as diferenças farmacológicas entre os principais sedativos utilizados na UTI.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A. Dexmedetomidine e inspiração:</strong> Correta. A dexmedetomidine é um agonista α2 seletivo que promove sedação cooperativa sem deprimir significativamente o drive respiratório. Diferente de outros sedativos, ela age primariamente no locus coeruleus, promovendo sedação natural sem comprometer a ventilação. Isso permite que pacientes mantenham esforço inspiratório e frequência respiratória adequados - característica fundamental para extubação e prevenção de delirium.</p><p><strong>B. Propofol e frequência:</strong> Incorreta. O propofol depressa tanto frequência quanto volume corrente, actuando nos receptores GABA-A. Causa hipoventilação significativa e pode levar à apneia. Seus efeitos não se limitam apenas à frequência respiratória.</p><p><strong>C. Midazolam e frequência:</strong> Incorreta. Similar ao propofol, o midazolam (benzodiazepínico) actúa nos receptores GABA-A e deprime todo o drive respiratório, não apenas a frequência. Pode causar hipoventilação, apneia e compromisos significativos da ventilação.</p><p><strong>D. Fentanil e inspiração:</strong> Incorreta. Fentanil (opioide) reduz tanto esforço inspiratório quanto frequência respiratória através de acção nos receptores μ. Causa depressão respiratória dose-dependente, podendo levar à hipoventilação severa.</p><p><strong>Diferenças farmacológicas importantes:</strong> A dexmedetomidine se destaca por ser o único sedativo que não deprime o drive respiratório de forma significativa. Isso a torna ideal para sedação de pacientes em ventilação mecânica que necessitam ser extubados rapidamente, especialmente em casos de delirium hiperativo onde outros sedativos podem ser contraproducentes.</p><p><strong>Resposta correta: A</strong> - única alternativa que descreve corretamente as propriedades da dexmedetomidine.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Pacientes frequentemente fazem uso de fármacos antidepressivos previamente à internação na UTI. Em muitos casos, essas medicações precisam ser suspensas devido à interação com os fármacos necessários para o tratamento da doença crítica aguda (sedativos, analgésicos, antibióticos). São fatores de risco para síndrome da descontinuação e abstinência aos fármacos, EXCETO:",
+      "alternativas": [
+        "Uso prévio de elevadas doses do antidepressivo.",
+        "Uso prévio de antidepressivo de meia-vida longa (ex: fluoxetina, citalopram).",
+        "Suspensão de antidepressivos em pacientes jovens.",
+        "Suspensão de antidepressivos de alto risco de desenvolvimento de síndrome de retirada (ex: nortriptilina, venlafaxina e paroxetina)."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a problemática da suspensão de antidepressivos na UTI - uma situação cada vez mais comum. A AMRIGS quer avaliar se você conhece os fatores que aumentam o risco de síndrome de descontinuação.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A. Doses elevadas:</strong> Correta - o aumento da dose potencializa a tolerância e dependência física. Doses altas crean maior adaptação dos receptores, tornando a suspensão mais arriscada. Quanto maior a dose, maior o risco de sintomas de retirada quando a medicação é suspensa abruptamente.</p><p><strong>B. Antidepressivos de meia-vida longa:</strong> Incorreta. Medicamentos como fluoxetina e citalopram têm meia-vida longa (fluoxetina: 2-4 dias, metabólitos: 1-2 semanas). Isso significa que mesmo com suspensão, ainda há medicação ativa no organismo por dias, reduzindo o risco de síndrome de descontinuação aguda. São considerados de BAIXO risco para retirada.</p><p><strong>C. Pacientes jovens:</strong> Incorreta. A idade jovem é um fator PROTETOR contra síndrome de descontinuação. Pacientes mais velhos são mais vulneráveis devido a: (1) Maior sensibilidade dos receptores, (2) Metabolismo mais lento, (3) Maior probabilidade de comorbidades que influenciam a farmacocinética. A questão inverte os fatores de risco.</p><p><strong>D. Medicamentos de alto risco:</strong> Correta. Nortriptilina (tricíclico), venlafaxina e paroxetina (ISRS) têm alta afinidade de ligação e podem causar sintomas de retirada significativos se suspensos abruptamente. A paroxetina, especialmente, tem alta taxa de síndrome de descontinuação devido às suas características farmacológicas.</p><p><strong>Raciocínio clínico:</strong> A síndrome de descontinuação resulta da adaptação rápida dos receptores à medicação. Fatores de risco incluem: doses altas, medicamentos de curta ação, meia-vida curta, e situações clínicas que aumentam a vulnerabilidade (idade, comorbidades).</p><p><strong>Resposta correta: C</strong> - pacientes jovens NÃO são fator de risco, mas sim fator protetor contra síndrome de descontinuação.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "<html><head></head><body>Na análise das curvas ventilatórias apresentadas pela Figura 1 abaixo, qual o diagnóstico provável do paciente B?\n\n<img src=\"https://medbrave.com.br/questions/amrigs-2023-r3/qQ5.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Altos picos de pressão inspiratória.",
+        "Vazamento do circuito ventilatório.",
+        "Broncoespasmo.",
+        "Morte encefálica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS aborda interpretação de curvas ventilatórias - skill fundamental em medicina intensiva. Para resolver, você deve identificar qual curva está sendo mostrada e analisar seu comportamento patológico.</p><p><strong>Análise das curvas apresentadas:</strong></p><p>Observando a figura, identificamos duas curvas principais: a de volume (superior) e a de fluxo (inferior). A curva de fluxo é negativa (abaixo da linha de base), o que é característico do fluxo expiratório.</p><p><strong>Comportamento normal vs patológico:</strong></p><p>No primeiro ciclo respiratório, a curva de fluxo expira completamente - retorna à linha de base antes do próximo ciclo. Isso é fisiológico. No segundo ciclo, observamos que a curva de fluxo NÃO retorna à linha de base antes do próximo ciclo inspiratório, indicando aprisionamento aéreo (air trapping).</p><p><strong>Diagnóstico diferencial:</strong></p><p><strong>A. Altos picos de pressão:</strong> Os picos de pressão estão normais nas curvas. A figura mostra pressãorana normal, então não é essa a causa.</p><p><strong>B. Vazamento do circuito:</strong> O vazamento produziria perda de volume ou alteração na configuração das curvas de pressão, o que não é observado aqui.</p><p><strong>C. Broncoespasmo:</strong> Correta. O broncoespasmo causa limitação ao fluxo expiratório, levando ao aprisionamento aéreo. A curva de fluxo expiratório não consegue retornar à linha de base devido ao fechamento precoce das vias aéreas pequenas, caracterizando o padrão de air trapping visualizado.</p><p><strong>D. Morte encefálica:</strong> Isso produziria padrões de respiração atáxica ou apneia, não o padrão específico de limitação expiratória mostrado na curva.</p><p><strong>Pearl clínica:</strong> O broncoespasmo em ventilação mecânica manifesta-se tipicamente por: (1) Aumento da resistência das vias aéreas, (2) Aprisionamento aéreo, (3) Dificuldade de expiração completa, (4) Alterações características na curva de fluxo.</p><p><strong>Resposta correta: C (Broncoespasmo)</strong> - o padrão de air trapping na curva de fluxo é patognomônico de limitação expiratória por broncoconstrição.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Qual das estratégias abaixo NÃO tem comprovação de efetividade nos pacientes com Síndrome do Desconforto Respiratório Agudo (SDRA)?",
+      "alternativas": [
+        "Manter uma pressão de platô abaixo de 30 cmH²O durante a ventilação mecânica.",
+        "Manter um volume de ar corrente próximo a 6 ml/Kg de peso predito durante a ventilação mecânica.",
+        "Indicar posição prona para pacientes em ventilação mecânica com relação P/F (índice de oxigenação) abaixo de 150.",
+        "Iniciar corticoterapia nas primeiras 72h de ventilação mecânica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda as estratégias terapêuticas baseadas em evidências na Síndrome do Desconforto Respiratório Agudo (SDRA). O foco é identificar qual abordagem NÃO possui respaldo científico consolidado.</p><p><strong>A resposta correta é D - Iniciar corticoterapia nas primeiras 72h.</strong> Esta é a única alternativa sem comprovação de efetividade nos pacientes com SDRA.</p><p>Vamos analisar cada estratégia:</p><p><strong>Alternativa A (PRESSÃO DE PLATÔ < 30 cmH²O):</strong> CORRETA. A ventilação protetora com pressão de platô limitada é fundamental para evitar volutrauma. Estudos ARDS Network comprovaram redução significativa da mortalidade com essa estratégia.</p><p><strong>Alternativa B (VOLUME CORRENTE ~ 6 ml/Kg):</strong> CORRETA. O conceito de ventilação protetora com baixo volume corrente (6 ml/kg) é padrão ouro, reduzindo mortalidade em 22% comparado ao volume tradicional de 12 ml/kg.</p><p><strong>Alternativa C (POSIÇÃO PRONA):</strong> CORRETA. Especialmente em hipoxemia grave (P/F < 150), a pronação melhora a ventilação/perfusão e reduz mortalidade em casos graves de SDRA.</p><p><strong>Alternativa D (CORTICOIDE PRECOCE):</strong> INCORRETA. Embora exista racional fisiopatológico (inflamação intensa), estudos clínicos não demonstraram benefício claro com corticosteroides precoces na SDRA. Diretrizes atuais (ATS/ESICM 2023) não recomendam uso rotineiro.</p><p><strong>ALERTA CLÍNICO:</strong> Questão clássicos em provas! Decore as estratégias protetoras A, B e C. O corticoide na SDRA é sempre pegadinha - não tem evidência forte.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_SindromeDoDesconfortoRespiratorioAgudoSdra",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_TratamentoVentilatorioDaSra"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Quanto à administração de drogas inalatórias em um paciente em ventilação mecânica invasiva, assinale a alternativa INCORRETA.",
+      "alternativas": [
+        "Broncodilatadores podem ser oferecidos através de nebulímetros ou através de jatos dosemetrados (MDI).",
+        "Ajustes nos parâmetros ventilatórios são frequentemente necessários, visando maior disponibilidade pulmonar dos broncodilatadores.",
+        "Antibióticos não são efetivos quando administrados por via inalatória.",
+        "O filtro bacteriano presente na traqueia inspiratória do ventilador necessita ser retirado durante a oferta de drogas inalatórias, pois a maioria dos fármacos é retida no filtro."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre administração de medicamentos por via inalatória em pacientes sob ventilação mecânica invasiva. A chave está em reconhecer qual afirmação sobre efetividade está incorreta.</p><p><strong>A resposta incorreta é C - Antibióticos não são efetivos quando administrados por via inalatória.</strong></p><p>Vamos revisar as práticas corretas:</p><p><strong>Alternativa A - Broncodilatadores:</strong> CORRETA. MDI (jatos dosemetrados) e nebulizadores são ambas opções válidas. A via inalatória permite ação direta no parênquima pulmonar com menores efeitos sistêmicos.</p><p><strong>Alternativa B - Ajustes ventilatórios:</strong> CORRETA. Frequência respiratória e volume corrente frequentemente precisam ser aumentados durante a nebulização para compensar a resistência adicional e garantir ventilação adequada.</p><p><strong>Alternativa C - Antibióticos inalatórios:</strong> INCORRETA. A assertiva está completamente errada. A administração inalatória de antibióticos é ALTAMENTE EFETIVA em infecções pulmonares, especialmente em fibrose cística, bronquiectasias e pneumonias resistentes. Permite altas concentrações locais com toxicidade sistêmica mínima.</p><p><strong>Alternativa D - Filtro bacteriano:</strong> CORRETA. O filtro deve ser removido durante a nebulização para evitar retenção do fármaco e garantir administração adequada aos pulmões.</p><p><strong>PONTO IMPORTANTE:</strong> Antibióticos inalatórios são padrão em doenças pulmonares crônicas com colonização bacteriana. Nunca questione sua efetividade!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_DrogasInalatoriasNaVentilacaoMecanica",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_BroncodilatadoresNaVentilacaoMecanica",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_AntibioticosPorInalacao"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "<html><head></head><body>Paciente estava internado na UTI devido à intoxicação alcoólica quando apresenta parada cardiorrespiratória (PCR) no ritmo demonstrado pela Figura 2 abaixo. Qual o nome do ritmo cardíaco e qual a provável causa do evento?\n\n<img src=\"https://medbrave.com.br/questions/amrigs-2023-r3/qQ8.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Fibrilação ventricular - hipoventilação por encefalopatia hepática.",
+        "Taquicardia atrial monomórfica - hipomagnesemia.",
+        "Taquicardia atrial polimórfica - hipomagnesemia.",
+        "Taquicardia atrial multifocal - hipomagnesemia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 avalia sua capacidade de interpretar eletrocardiograma em contexto de parada cardiorrespiratória, especificamente relacionando o ritmo observado com a etiologia mais provável.</p><p><strong>A resposta correta é C - Taquicardia atrial polimórfica (Torsades de Pointes) por hipomagnesemia.</strong></p><p>Para chegar a essa conclusão, precisamos analisar a figura e correlacionar com o quadro clínico do paciente:</p><p><strong>ANÁLISE DA IMAGEM:</strong> A figura mostra um ritmo com complexos QRS que variam de amplitude e direção, característica clássica de torsades de pointes (taquicardia ventricular polimórfica). Os QRS 'torcem' ao redor da linha de base, sem padrão regular.</p><p><strong>CONTEXTO CLÍNICO:</strong> Paciente com intoxicação alcoólica internada em UTI. O álcool pode causar múltiplas alterações eletrolíticas, sendo hipomagnesemia particularmente relevante.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (Fibrilação ventricular):</strong> INCORRETA. FV apresenta atividade elétrica caótica sem padrões identificáveis, não a sequência torsional característica da imagem.</p><p><strong>Alternativa B (Taquicardia atrial monomórfica):</strong> INCORRETA. TA monomórfica mantém padrão regular de P e QRS, e não apresenta variação torsional.</p><p><strong>Alternativa C (Taquicardia atrial polimórfica):</strong> CORRETA. Torsades de pointes é a forma de TV polimórfica mais comum, frequentemente associada a hipomagnesemia, hipocalemia e medicamentos que prolongam o QT.</p><p><strong>Alternativa D (Taquicardia atrial multifocal):</strong> INCORRETA. TAM apresenta pelo menos 3 morfologias diferentes de onda P, mas ritmo ventricular geralmente regular.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> Em Intoxicação alcoólica, a hipomagnesemia é comum devido à dieta pobre, vômitos e diarreia. Hipomagnesemia predispõe a torsades por reduzir o limiar de disparo e prolongar repolarização.</p><p><strong>TRATAMENTO IMEDIATO:</strong> Sulfato de magnésio EV + cardioversão se instável.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias_TiposEspecificosDeTaquiarritmias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Pacientes críticos podem necessitar de suporte ventilatório invasivo secundário à fraqueza muscular. Qual das doenças neuromusculares abaixo pode cursar também com disfunção autonômica?",
+      "alternativas": [
+        "Esclerose lateral amiotrófica.",
+        "Síndrome de Guillain-Barré.",
+        "Polineuropatia da doença crítica.",
+        "Rabdomiólise."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre doenças neuromusculares em pacientes críticos, especificamente aquela que cursa com disfunção autonômica associada à fraqueza muscular.</p><p><strong>A resposta correta é B - Síndrome de Guillain-Barré.</strong> Esta é a única opção que combina consistentemente fraqueza muscular com comprometimento autonômico.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Esclerose Lateral Amiotrófica - ELA):</strong> INCORRETA. Embora cause fraqueza muscular progressiva e necessidade de ventilação, ELA não cursa com disfunção autonômica. A doença afeta exclusivamente neurônios motores superiores e inferiores, preservando o sistema nervoso autônomo.</p><p><strong>Alternativa B (Síndrome de Guillain-Barré - SGB):</strong> CORRETA. A SGB é uma polirradiculoneuropatia desmielinizante aguda que cursa com fraqueza flácida simétrica E disautonomia significativa. As manifestações autonômicas incluem: instabilidade hemodinâmica, arritmias (bradi/taquicardias), alterações de sudação, íleo paralítico e retenção urinária.</p><p><strong>Alternativa C (Polineuropatia da doença crítica):</strong> INCORRETA. Ocorre em pacientes sépticos com falência orgânica, causando fraqueza difusa e dificuldade no desmame. Disautonomia marcante NÃO é característica definidora - o problema central é a perda de força e condução nervosa motora.</p><p><strong>Alternativa D (Rabdomiólise):</strong> INCORRETA. É lesão muscular aguda com liberação de conteúdo intracelular, causando elevação de CK, mioglobinúria e risco de insuficiência renal. Não é neuropatia nem cursa com disautonomia.</p><p><strong>DICA CLÍNICA:</strong> Sempre que pensar em SGB, lembre-se do mnemônico FRATAS: Fraqueza Flácida, Reflexos Ausentes, Tração Sanguínea/Autoimune, Asscençede, Sinais autonômicos. A disautonomia é característica importante e diferencial!</p><p><strong>TRATAMENTO SGB:</strong> Imunoglobulina EV ou plasmaférese. Corticoides NÃO são eficazes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas_SindromeDeGuillainBarre",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas_PolineuropatiaDaDoencaCritica",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_DoencaDoNeuronioMotor"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "A monitorização da mecânica ventilatória é muito importante para facilitar a monitorização dos parâmetros ventilatórios e evitar possíveis danos aos pacientes. Quais manobras devem ser realizadas para a detecção da pressão de platô e da auto-PEEP (pressão positiva expiratória final), respectivamente?",
+      "alternativas": [
+        "Pausa inspiratória e pausa expiratória.",
+        "Pausa expiratória e pausa inspiratória.",
+        "Avaliação da complacência e avaliação da resistência.",
+        "Avaliação da resistência e avaliação da complacência."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda parâmetros fundamentais da mecânica ventilatória: como detectar pressão de platô e auto-PEEP através de manobras específicas.</p><p><strong>A resposta correta é A - Pausa inspiratória (pressão de platô) e pausa expiratória (auto-PEEP).</strong></p><p>Vamos entender a lógica por trás de cada manobra:</p><p><strong>PRESSÃO DE PLATÔ - PAUSA INSPIRATÓRIA:</strong></p><p>Para medir a pressão de platô, utilizamos uma pausa inspiratória de 3-5 segundos. Durante essa pausa, o fluxo inspiratório cessa e a pressão se equaliza em todo o sistema respiratório, refletindo a pressão alveolar máxima. Esta pressão deve ser mantida < 30 cmH²O para ventilação protetora.</p><p>Do valor da pressão de platô subtraímos a PEEP para obter a Driving Pressure (DP = Pplat - PEEP), que deve ser < 15 cmH²O.</p><p><strong>AUTO-PEEP - PAUSA EXPIRATÓRIA:</strong></p><p>A manobra de pausa expiratória (oclusão da válvula expiratória por 3-5 segundos) permite detectar auto-PEEP ou PEEP intrínseca. Se a PEEP total após a pausa é maior que a PEEP ajustada, existe auto-PEEP.</p><p>Exemplo: PEEP ajustada = 5 cmH²O, PEEP total na pausa = 15 cmH²O. Auto-PEEP = 15 - 5 = 10 cmH²O.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (Pausa inspiratória + pausa expiratória):</strong> CORRETA. É exatamente essa a sequência correta para pressão de platô e auto-PEEP respectivamente.</p><p><strong>Alternativa B (Pausa expiratória + pausa inspiratória):</strong> INCORRETA. Inverte as manobras, atribuindo cada uma ao parâmetro errado.</p><p><strong>Alternativa C (Complacência e resistência):</strong> INCORRETA. São cálculos, não manobras específicas para detectar os parâmetros solicitados.</p><p><strong>Alternativa D (Resistência e complacência):</strong> INCORRETA. Mesmo raciocínio da anterior, com ordem invertida.</p><p><strong>CONTEXTO CLÍNICO:</strong> Auto-PEEP é comum em DPOC e asma por aprisionamento aéreo. Pode causar hiperinsuflação, hipotensão e dificuldade no desmame ventilatório.</p><p><strong>REGRA DE OURO:</strong> Pausa inspiratória = pressão de platô / Pausa expiratória = auto-PEEP. Decore essa sequência!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_MonitorizacaoDaMecanicaVentilatoria",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_MonitorizacaoDaMecanicaVentilatoria_PressaoDePlatau",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_VentilacaoMecanica_MonitorizacaoDaMecanicaVentilatoria_AutoPpe"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Sobre o manejo da asma em adultos, analise as assertivas abaixo: I. Formoterol é usado tanto para terapia de controle no uso diário como para resgate quando há sintomas. II. Montelucaste é mais eficaz no controle dos sintomas que o corticoide inalatório para asma com crises recorrentes. III. Tiotrópio é tão efetivo quanto beta-2agonista de longa ação quando associado ao corticoide inalatório para a terapia de controle, e é uma alternativa aos pacientes que não toleram o formoterol. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 avalia seu conhecimento sobre o manejo farmacológico da asma em adultos, especificamente sobre o uso correto dos medicamentos disponíveis e suas indicações.</p><p><strong>A resposta correta é B - apenas I e III.</strong></p><p><strong>Análise das assertivas:</strong></p><p><strong>I. CORRETA:</strong> O formoterol é um beta-2 agonista de longa ação que tem a característica única de início de ação rápido (5-15 minutos) e duração prolongada (até 12 horas). Isso permite seu uso tanto na terapia de controle diária quanto como medicação de resgate, diferente de outros broncodilatadores de longa ação como o salmeterol. Esta propriedade dual do formoterol é importante no tratamento da asma persistente.</p><p><strong>II. INCORRETA:</strong> O montelucaste (antagonista dos leucotrienos) é uma medicação de controle importante, mas não é mais eficaz que os corticoides inalatórios para asma com crises recorrentes. Os corticoides inalatórios continuam sendo a primeira linha no controle da inflamação brônquica na asma persistente, sendo superiores aos antagonistas de leucotrienos na maioria dos casos. O montelucaste pode ser usado como terapia adicional ou em casos específicos, mas não substitui os corticoides inalatórios.</p><p><strong>III. CORRETA:</strong> O tiotrópio é um anticolinérgico de longa ação que, quando combinado com corticoide inalatório, tem eficácia comparável aos beta-2 agonistas de longa ação. É uma alternativa valiosa para pacientes que não toleram formoterol ou outros beta-2 agonistas. O tiotrópio pode ser usado tanto em asma quanto em DPOC, sendo particularmente útil em pacientes com contraindicações aos beta-2 agonistas.</p><p>Portanto, apenas as assertivas I e III estão corretas, justificando a alternativa B.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma_TerapiaDeManutencao"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Sobre as complicações da cirrose, assinale a alternativa INCORRETA.",
+      "alternativas": [
+        "A síndrome hepatopulmonar cursa com gradiente alvéolo-arterial de O² normal em ar ambiente.",
+        "O etilismo e a hemocromatose são causas de cirrose com maior risco de cardiomiopatia cirrótica.",
+        "A síndrome hepatorrenal inclui sedimento urinário benigno com excreção urinária de sódio reduzida e elevação da creatinina sérica.",
+        "O uso de betabloqueadores não seletivos aumenta a mortalidade em pacientes com ascite refratária ou peritonite bacteriana espontânea."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 aborda as complicações da cirrose hepática, um tema frequentemente explorado em provas de residência médica devido à sua relevância clínica e complexidade.</p><p><strong>A resposta incorreta é A - síndrome hepatopulmonar cursa com gradiente alvéolo-arterial de O² normal em ar ambiente.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> A síndrome hepatopulmonar caracteriza-se por vasodilatação pulmonar difusa que compromete as trocas gasosas. Nessas condições, o gradiente alvéolo-arterial de oxigênio fica AUMENTADO (valores > 15-20 mmHg), não normal. Este gradiente é um importante parâmetro diagnóstico, com alta acurácia para detectar a SHP. Os pacientes apresentam hipoxemia e redução da saturação de oxigênio, manifestando dispneia, platipneia (piora em ortostatismo) e ortodeóxia (queda da saturação em ortostatismo).</p><p><strong>B) CORRETA:</strong> O etilismo é uma das principais causas de cirrose no Brasil e pode causar cardiomiopatia cirrótica por efeito tóxico direto do álcool no miocárdio. A hemocromatose, por sua vez, causa sobrecarga férrica com deposição de ferro no coração, levando a insuficiência cardíaca e arritmias. Ambas as condições podem coexistir, aumentando ainda mais o risco cardiovascular.</p><p><strong>C) CORRETA:</strong> A síndrome hepatorrenal é uma das complicações mais graves da cirrose. Caracteriza-se por insuficiência renal aguda funcional, com sedimento urinário benigno (ausência de atividade inflamatória), excreção urinária de sódio reduzida (devido à ativação do sistema renina-angiotensina-aldosterona) e elevação progressiva da creatinina sérica. O mecanismo é principalmente isquêmico.</p><p><strong>D) CORRETA:</strong> Esta é uma diretriz bem estabelecida. Betabloqueadores não seletivos aumentam a mortalidade em pacientes com ascite refratária ou peritonite bacteriana espontânea, devendo ser evitados nessas situações específicas.</p><p>Portanto, a alternativa A é a incorreta, pois na síndrome hepatopulmonar o gradiente alvéolo-arterial está aumentado, não normal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Hepatologia_Cirrose_ComplicacoesDaInsuficienciaHep"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "As alterações eletrocardiográficas mais precoces na hipercalemia são:",
+      "alternativas": [
+        "Onda T apiculada e intervalo QT curto.",
+        "Desaparecimento da onda P e intervalo QT curto.",
+        "Prolongamento do intervalo PR e onda T apiculada.",
+        "Desaparecimento da onda P e prolongamento do intervalo PR."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as alterações electrocardiográficas na hipercalemia, um tema clássico de provas que exige conhecimento da progressão temporal das mudanças no ECG conforme os níveis de potássio aumentam.</p><p><strong>A resposta correta é A - onda T apiculada e intervalo QT curto.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> As alterações mais precoces na hipercalemia são justamente a onda T apiculada (pontiaguda) e o encurtamento do intervalo QT. Isso ocorre porque o potássio elevado acelera a repolarização ventricular, tornando a onda T mais alta e estreita (aspecto de \"tenda\" ou \"pico\") e reduzindo a duração da repolarização. Estas mudanças são tipicamente observadas com potássio sérico entre 5,5-6,5 mEq/L.</p><p><strong>B) INCORRETA:</strong> O desaparecimento da onda P não é uma alteração precoce. O desaparecimento da onda P (ausência de despolarização atrial) ocorre em estágios mais avançados da hipercalemia, geralmente com potássio muito elevado (> 7,0 mEq/L), e está associado a distúrbios graves de condução atrial.</p><p><strong>C) INCORRETA:</strong> O prolongamento do intervalo PR não é característico dos estágios precoces. Esta alteração aparece em estágios intermediários da hipercalemia e está associada a comprometimento da condução atrioventricular. Em estágios muito avançados, pode evoluir para bloqueio atrioventricular completo.</p><p><strong>D) INCORRETA:</strong> A combinação \"desaparecimento da onda P e prolongamento do intervalo PR\" representa alterações em estágios mais tardios da hipercalemia, quando já há comprometimento significativo da condução elétrica atrial e atrioventricular.</p><p><strong>Sequência típica das alterações na hipercalemia:</strong></p><p>1. Estágio inicial (K+ 5,5-6,5): Onda T apiculada, QT curto<br>2. Estágio intermediário (K+ 6,5-8,0): Prolongamento do PR, alargamento do QRS<br>3. Estágio avançado (K+ > 8,0): Desaparecimento da onda P, QRS muito alargado, pode evoluir para fibrilação ventricular ou asistolia</p><p>Portanto, a alternativa A representa corretamente as alterações mais precoces na hipercalemia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Homem de 60 anos com história de fratura de quadril por queda com baixo impacto e cálculos renais de repetição apresenta hipercalcemia, hipercalciúria, hiperfosfatúria e níveis elevados de paratormônio. É provável também encontrar:",
+      "alternativas": [
+        "Maior redução da densidade mineral óssea na coluna em relação ao fêmur.",
+        "Fração óssea da fosfatase alcalina reduzida.",
+        "Níveis elevados de 25-hidroxivitamina D.",
+        "Taxa de filtração glomerular abaixo de 60 ml/min/1,73m²."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 aborda o hiperparatireoidismo primário, focando nas manifestações clínicas e laboratoriais características, bem como nas complicações sistêmicas que podem acompanhar essa condição.</p><p><strong>A resposta correta é D - Taxa de filtração glomerular abaixo de 60 ml/min/1,73m².</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> No hiperparatireoidismo primário, a maior redução da densidade mineral óssea ocorre principalmente no fêmur, não na coluna. Isso é devido ao padrão de perda óssea característica, onde há maior acometimento do osso cortical (predominante no fêmur) comparado ao osso trabecular (predominante na coluna). Os pacientes desenvolvem osteopenia, osteoporose e, em casos avançados, osteíte fibrosa cística.</p><p><strong>B) INCORRETA:</strong> A fração óssea da fosfatase alcalina está AUMENTADA, não reduzida, no hiperparatireoidismo primário. Este aumento reflete a alta atividade de reabsorção óssea mediada pelo PTH. Outros marcadores ósseos como osteocalcina e cAMP urinário também estão elevados, indicando intensa remodelação óssea.</p><p><strong>C) INCORRETA:</strong> Os níveis de 25-hidroxivitamina D estão REDUZIDOS, não elevados, no hiperparatireoidismo. Isso ocorre porque há maior conversão da 25OH vitamina D em 1,25 dihidroxivitamina D (forma ativa), mediada pelo próprio PTH elevado. Esta redução pode contribuir para a perda óssea e deve ser considerada no manejo.</p><p><strong>D) CORRETA:</strong> Pacientes com hiperparatireoidismo primário frequentemente evoluem com comprometimento da função renal. O PTH elevado aumenta a reabsorção tubular de cálcio, mas também predispõe à formação de cálculos renais (nefrolitíase) e depósito de cálcio nos túbulos renais (nefrocalcinose), podendo evoluir para insuficiência renal crônica com TFG < 60 ml/min/1,73m².</p><p><strong>Contexto clínico:</strong> O caso apresenta homem de 60 anos com fratura de quadril por baixo impacto (indicando osteoporose) e cálculos renais recorrentes, clássicos para hiperparatireoidismo. O perfil laboratorial confirma: hipercalcemia, hipercalciúria, hiperfosfatúria e PTH elevado (autônomo e independente do cálcio).</p><p>Portanto, a alternativa D é a correta, refletindo uma das principais complicações renais do hiperparatireoidismo primário.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral_Adrenal"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Mulher de 35 anos, com bócio difuso e exoftalmia, apresenta tremores nas mãos e emagrecimento nos últimos 3 meses. Assinale a alternativa compatível com o caso:",
+      "alternativas": [
+        "Cintilografia com baixa captação de iodo radiativo.",
+        "TSH baixo, T4 livre baixo e T3 livre elevado.",
+        "Velocidade de hemossedimentação elevada.",
+        "Anti TPO e TRAB elevados."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 apresenta um caso clínico clássico de doença de Graves, avaliando seu conhecimento sobre o perfil laboratorial e imunológico típico desta condição tireoidiana.</p><p><strong>A resposta correta é D - Anti TPO e TRAB elevados.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Na doença de Graves, a cintilografia tireoidiana apresenta alta captação de iodo radiativo (glândula hipercaptante), não baixa captação. Isso reflete a atividade aumentada da glândula tireoide estimulada pelos anticorpos TRAB. A baixa captação é característica de tireotoxicose sem hipertireoidismo, como tireoidite subaguda ou tireotoxicose factícia (uso excessivo de hormônios tireoidianos).</p><p><strong>B) INCORRETA:</strong> Na doença de Graves (principal causa de hipertireoidismo), encontramos TSH baixo, T4 livre elevado E T3 livre elevado. Todos os hormônios tireoidianos estão aumentados devido à superestimulação da glândula. O padrão TSH baixo + T4 baixo + T3 elevado é incoerente e não corresponde ao perfil da doença de Graves ou qualquer outra condição tireoidiana.</p><p><strong>C) INCORRETA:</strong> A velocidade de hemossedimentação (VHS) elevada é característica da tireoidite subaguda granulomatosa (De Quervain), não da doença de Graves. Na tireoidite de De Quervain, há processo inflamatório viral na glândula, causando febre, dor tireoidiana, VHS elevado e tireotoxicose transitória. Na doença de Graves, o VHS permanece normal.</p><p><strong>D) CORRETA:</strong> A elevação do Anti-TPO e TRAB é típica da doença de Graves. O TRAB (anticorpo anti-receptor de TSH) está presente em 80-95% dos casos e é patognomônico da doença, estimulando o receptor de TSH e causando hipertireoidismo. O Anti-TPO (antitireoperoxidase) é positivo em 50-80% dos pacientes e representa o marcador de autoimunidade tireoidiana. Ambos os anticorpos são fundamentais para o diagnóstico.</p><p><strong>Contexto clínico:</strong> A paciente de 35 anos apresenta a tríade clássica da doença de Graves: bócio difuso, exoftalmia e sintomas de tireotoxicose (tremor, emagrecimento). O perfil imunológico com anticorpos positivos confirma o diagnóstico.</p><p>Portanto, a alternativa D representa corretamente o perfil laboratorial esperado na doença de Graves.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_TireoideTireotoxicose",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Mulher de 50 anos trazida por confusão mental tem história de parto domiciliar há 15 anos com sangramento volumoso e hipotensão arterial, necessitando de atendimento médico. Não amamentou o bebê na ocasião. Desde então em amenorreia. Também tem rarefação de pelos corporais, inclusive em supercílios. Apresenta-se pálida, com macroglossia e reflexos tendíneos lentificados. Sobre o caso, pode-se afirmar que:",
+      "alternativas": [
+        "Deve-se investigar hiponatremia secundária ao hipotireoidismo central.",
+        "A presença de hipercalemia sugere insuficiência adrenal primária.",
+        "A amenorreia está associada à hiperprolactinemia.",
+        "Macroglossia, madarose e reflexos tendíneos reduzidos sugerem acromegalia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 avalia seu conhecimento sobre síndromes endócrinas pós-parto, especificamente a síndrome de Sheehan. O caso apresentado é clássico e contém pistas diagnósticas importantes.</p><p><strong>A resposta correta é A - deve-se investigar hiponatremia secundária ao hipotireoidismo central.</strong></p><p>Vamos analisar o caso: mulher de 50 anos com história de hemorragia maciça no parto há 15 anos, seguida de amenorreia, agalactia e sinais de hipopituitarismo. O achado de macroglossia e reflexos tendíneos lentificados sugere comprometimento tireoidiano secundário.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>B) Insuficiência adrenal primária não se apresenta com esse quadro obstétrico característico. A síndrome de Sheehan cursa com insuficiência adrenal <em>secundária</em> (por déficit de ACTH hipofisário).</p><p>C) A amenorreia aqui é por déficit de FSH/LH hipofisários, não por hiperprolactinemia. Na verdade, a síndrome de Sheehan causa <em>hipoprolactinemia</em>, explicando a agalactia.</p><p>D) A macroglossia neste contexto é por mixedema tireoidiano, não acromegalia. A síndrome de Sheehan cursa com déficit de GH, não excesso.</p><p>Lembre-se: a síndrome de Sheehan é um hipopituitarismo pós-hemorrágico que pode cursar com deficiências múltiplas de hormônios hipofisários. O diagnóstico é clínico, baseado na história obstétrica característica e sinais de insuficiência hormonal.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia_Hipofise_HipoglicemiaEmIndividuosNaoDia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Sobre sepse, analise as assertivas abaixo: I. A sepse por patógenos nosocomiais tem maior mortalidade em comparação à sepse por patógenos da comunidade. II. A taxa de mortalidade na sepse urinária é semelhante de quando o foco infeccioso é respiratório. III. Início precoce de antibioticoterapia tem impacto expressivo na redução da mortalidade na sepse. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda conceitos fundamentais sobre epidemiologia e manejo da sepse, tema recorrente em provas de residência médica. A AMRIGS testou conhecimentos sobre mortalidade, foco infeccioso e tratamento.</p><p><strong>A resposta correta é B - apenas I e III estão corretas.</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>I. Verdadeira:</strong> A sepse por patógenos nosocomiais realmente apresenta maior mortalidade. Isso ocorre porque esses patógenos são frequentemente mais resistentes a antibióticos e mais virulentos, resultante da pressão seletiva do ambiente hospitalar.</p><p><strong>II. Falsa:</strong> A mortalidade varia significativamente conforme o foco infeccioso. A sepse respiratória geralmente tem mortalidade maior (20-40%) comparada à sepse urinária (10-20%), devido à maior facilidade de tratamento das infecções urinárias e sua melhor resposta à antibioticoterapia.</p><p><strong>III. Verdadeira:</strong> A antibioticoterapia precoce é crucial. Devemos administrar na primeira hora após suspeita diagnóstica - este é um dos pilares do manejo da sepse. Estudos mostram que cada hora de atraso aumenta a mortalidade em cerca de 7,6%.</p><p>A principal pegadinha aqui é a assertiva II, que assume equivalência entre focos infecciosos diferentes, quando na realidade existe grande variabilidade na mortalidade conforme a localização da infecção.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_FisiopatologiaEAlteracoesInfla",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Homem de 65 anos com diabetes mellitus tipo 2 há 20 anos traz exames com hemoglobina glicada de 9,7% e glicemia de jejum de 318 mg/dl. Apresenta poliúria, polidipsia e emagrecimento não intencional. Tem obesidade e hipertensão arterial, sem outras comorbidades. Função renal preservada. Está em uso de metformina 1 g duas vezes ao dia e glibenclamida 5 mg duas vezes ao dia. Além de intensificar cuidados nutricionais e exercício físico, qual é a melhor conduta em relação ao tratamento farmacológico?",
+      "alternativas": [
+        "Acrescentar empagliflozina e manter os demais medicamentos.",
+        "Iniciar insulina NPH 2 vezes ao dia e suspender os demais medicamentos.",
+        "Iniciar insulina NPH 2 vezes ao dia e manter apenas a metformina.",
+        "Iniciar insulina NPH 2 vezes ao dia e manter apenas a glibenclamida."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 avalia critérios para intensificação do tratamento em diabetes mellitus tipo 2. É um tema muito cobrado em provas de endocrinologia e medicina interna.</p><p><strong>A resposta correta é C - iniciar insulina NPH 2 vezes ao dia e manter apenas a metformina.</strong></p><p>O paciente apresenta critérios claros para insulinização: HbA1c >9%, glicemia >300 mg/dl e sintomas típicos (poliúria, polidipsia, perda ponderal). Estes são critérios estabelecidos pela Sociedade Brasileira de Endocrinologia e Metabologia.</p><p><strong>Análise das alternativas:</strong></p><p>A) Embora empagliflozina possa ser útil, não é a melhor conduta isolada neste caso de descompensação grave. O paciente precisa de insulinização imediata.</p><p>B) Suspender metformina está incorreto. Metformina melhora a sensibilidade periférica à insulina e permite usar doses menores de insulina, mantendo-a é fundamental.</p><p>C) <strong>Correta.</strong> NPH 2x/dia fornece cobertura basal-bolus simples para este caso. Metformina deve ser mantida por seus benefícios na resistência insulínica.</p><p>D) Manter apenas glibenclamida está incorreto. Sulfonilureias devem ser suspensas com o início da insulina devido ao risco de hipoglicemia e porque NÃO melhoram a resistência insulínica como a metformina.</p><p><strong>Princípio importante:</strong> Na insulinização do DM2, sempre mantenha metformina (se não houver contraindicação) e suspenda sulfonilureias. Use esquemas de insulina mais simples inicialmente, ajustando conforme resposta.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo2Dm2",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Insulinoterapia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Sobre o tabagismo com dispositivos eletrônicos, analise as assertivas abaixo: I. O uso de cigarros eletrônicos aumenta o risco de dependência à nicotina para quem nunca fumou cigarros convencionais. II. A exposição ao conteúdo líquido dos cigarros eletrônicos pode causar náuseas, vômitos, letargia e convulsões. III. O uso de cigarros eletrônicos parece estar aumentando em jovens e adolescentes, expondo ainda mais essa população aos riscos do tabagismo. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda um tema extremamente atual e relevante: o uso de cigarros eletrônicos. A AMRIGS avaliou riscos, padrões epidemiológicos e toxicologia desses dispositivos, tema que ganho importância nas políticas públicas de saúde.</p><p><strong>A resposta correta é D - todas as assertivas estão corretas.</strong></p><p>Vamos analisar cada uma:</p><p><strong>I. Verdadeira:</strong> Estudos mostram que o uso de cigarros eletrônicos pode servir como 'porta de entrada' para o tabagismo convencional. A nicotina presente nos dispositivos cria dependência, especialmente em jovens que nunca fumaram, aumentando o risco de progressão para cigarros tradicionais.</p><p><strong>II. Verdadeira:</strong> A exposição acidental ou intencional ao líquido dos cigarros eletrônicos pode causar toxicidade por nicotina. Os sintomas incluem náuseas, vômitos (os mais comuns), mas também letargia e convulsões em casos graves, especialmente em crianças que podem confundir o líquido com bebidas ou doces.</p><p><strong>III. Verdadeira:</strong> Dados epidemiológicos mostram aumento preocupante no uso entre jovens e adolescentes. Isso representa uma reversão dos avanços das políticas antitabagismo, expondo uma nova geração aos riscos da nicotina. No Brasil, o uso entre estudantes de ensino médio quadruplicou entre 2015 e 2019.</p><p>Esta questão alerta para a necessidade de regulamentação específica desses dispositivos e campanhas educativas, especialmente dirigidas aos jovens, para prevenir uma nova epidemia de dependência de nicotina.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_VigilanciaEmSaude"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Sobre o manejo da pancreatite aguda, analise as assertivas abaixo: I. A dieta via oral pode ser reintroduzida tão logo há sinais de peristaltismo, melhora dos marcadores inflamatórios e da dor abdominal. II. Na presença de hipercalcemia, prefere-se ressuscitação volêmica com solução salina, pois o ringer lactato contém cálcio. III. Antibioticoterapia profilática está indicada para pancreatite aguda grave necrotizante, independentemente de sinais de infecção. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 aborda aspectos fundamentais do manejo da pancreatite aguda, tema de grande relevância clínica e frequentemente cobrado em provas. A banca avaliou conhecimento sobre nutrição, ressuscitação volêmica e uso de antibióticos.</p><p><strong>A resposta correta é A - apenas I e II estão corretas.</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>I. Verdadeira:</strong> A reintrodução precoce da dieta oral está indicada assim que o paciente apresenta sinais de recuperação: peristaltismo presente, melhora da dor e dos marcadores inflamatórios. Issocontrasta com a prática antiga de manter jejum prolongado, que agora sabemos ser desnecessário e prejudicial.</p><p><strong>II. Verdadeira:</strong> Na presença de hipercalcemia, devemos evitar soluções contendo cálcio. O ringer lactato contém 3 mEq/L de cálcio, o que pode agravar a hipercalcemia. A solução salina 0,9% é mais adequada, não contendo cálcio e proporcionando boa ressuscitação volêmica.</p><p><strong>III. Falsa:</strong> A antibioticoterapia profilática em pancreatite necrotizante NÃO está indicada automaticamente. Atualmente, recomenda-se uso de antibióticos apenas quando há sinais de infecção (febre, piora do estado geral, leucocitose persistente). O uso profilático não reduz mortalidade e aumenta risco de resistência bacteriana e infecção fúngica.</p><p>A principal armadilha aqui é a assertiva III, que propõe uso profilático de antibióticos. As diretrizes atuais (Brazillian Association of Pancreatology 2023) recomendam antibioticoterapia apenas quando há evidência clínica ou radiológica de infecção. Esta é uma mudança importante em relação à prática de décadas anteriores.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Paciente chega ao pronto-socorro, após tentativa de suicídio por ingestão medicamentosa, com taquicardia, taquipneia, hipertermia, pele quente e seca, íleo paralítico e midríase. O provável medicamento utilizado é de qual grupo?",
+      "alternativas": [
+        "Antidepressivos tricíclicos.",
+        "Opioides.",
+        "Benzodiazepínicos.",
+        "Anfetaminas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2023 avalia seu conhecimento sobre síndromes tóxicas no departamento de emergência.</strong> APRESENTAM-SE os sinais clínicos típicos de uma intoxicção medicamentosa específica: taquicardia, taquipneia, hipertermia, pele quente e seca, íleo paralítico e midríase.</p><p><strong>A resposta correta é A - Antidepressivos tricíclicos.</strong> Estes medicamentos são conhecidos por causar a chamada \"síndrome anticolinérgica central e periférica\". O bloqueio dos receptores muscarínicos de acetilcolina resulta em manifestações que simulam estimulação simpática exagerada.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>B) Opioides:</strong> Causariam depressão do sistema nervoso central, com sonolência, miose, bradipneia e hipotermia - exatamente o oposto do quadro apresentado.</p><p><strong>C) Benzodiazepínicos:</strong> Provocam sedação, ataxia, confusão mental e depressão respiratória, também incompatíveis com a apresentação de hiperexcitação descrita.</p><p><strong>D) Anfetaminas:</strong> Embora causem taquicardia e hipertermia, diferenciam-se dos tricíclicos por produzirem pele úmida e sudorética, não seca como descrita na questão. Além disso, as anfetaminas não causam midríase acentuada nem íleo paralítico.</p><p>O sinal clínico mais característico que aponta para intoxicação por tricíclicos é a combinação de <strong>pele seca e quente com rubor facial</strong> - uma tríade que diferencia das síndromes simpaticomiméticas. O íleo paralítico e a midríase são outros sinais inconfundíveis desta intoxicação.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "O quadro clínico geralmente é de excesso de glicocorticoide isolado, sem a presença de hirsutismo em mulheres. Início gradual com hipercortisolismo leve a moderado. Androgênios plasmáticos geralmente em níveis baixos. A descrição se trata de provável Síndrome de Cushing por:",
+      "alternativas": [
+        "Adenoma hipofisário.",
+        "Adenoma adrenal.",
+        "Secreção ectópica de ACTH.",
+        "Carcinoma adrenal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão explora um conceito fundamental da endocrinologia: os diferentes tipos de síndrome de Cushing e suas características clínicas distintas.</strong> A descrição apresenta um padrão clínico específico: hipercortisolismo leve a moderado, início gradual, ausência de hirsutismo e androgênios baixos.</p><p><strong>A resposta correta é B - Adenoma adrenal.</strong> Os adenomas adrenais produtores de cortisol são classicamente associados a um quadro de hipercortisolismo mais \"silencioso\" comparado às outras etiologias.</p><p><strong>Característica do adenoma adrenal:</strong> Geralmente são tumores pequenos (menores que 3 cm), unilaterais e produzem apenas cortisol, sem estímulo à produção de androgênios. Isso explica por que os androgênios plasmáticos permanecem em níveis baixos e não há hirsutismo. A progressão é gradual e o hipercortisolismo tende a ser mais leve.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Adenoma hipofisário (doença de Cushing):</strong> Como produz ACTH em excesso, estimula não só a produção de cortisol mas também de androgênios adrenais. Portando, esperamos androgênios elevados e hirsutismo - características ausentes no caso.</p><p><strong>C) Secreção ectópica de ACTH:</strong> É a etiologia mais agressiva, com início abrupto e quadro clínico severo. Os níveis de androgênios costumam estar elevados devido ao estímulo intenso do ACTH ectópico.</p><p><strong>D) Carcinoma adrenal:</strong> Produz tanto cortisol quanto androgênios em excesso (hipersecreção mista), resultando em hirsutismo e androgênios elevados. Além disso, são tumores grandes (>6 cm) e têm evolução mais agressiva.</p><p><strong>Dica para prova:</strong> Quando a questão mencionar \"androgênios baixos\" ou \"ausência de hirsutismo\" em síndrome de Cushing, pense sempre em adenoma adrenal - a única causa que não estimula a produção androgênica!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente com Covid-19 grave, internado em UTI, pronado por SDRA, evolui com parada cardiorrespiratória em ritmo não chocável. Qual alternativa representa a forma correta de realizar a ressuscitação?",
+      "alternativas": [
+        "Supinar o paciente e iniciar manobras de ressuscitação.",
+        "Iniciar manobras de ressuscitação com o paciente pronado.",
+        "Iniciar com adrenalina e ventilação com bolsa-valva-máscara.",
+        "Supinar o paciente e avaliar se os eletrodos estão bem aderidos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão aborda um cenário clínico novo e desafiador que emergiu com a pandemia de COVID-19: parada cardiorrespiratória em pacientes em posição prona.</strong> O manejo adequado nestas situações pode ser a diferença entre a vida e a morte.</p><p><strong>A resposta correta é B - Iniciar manobras de ressuscitação com o paciente pronado.</strong> Esta é uma das principais mudanças protocolares durante a era da pandemia.</p><p><strong>Por que não supinar o paciente primeiro?</strong> A posição prona em pacientes com SDRA grave requer equipe especializada para reversão segura - geralmente 4-6 profissionais para fixar tubos, drenos e sondas, além de reposicionar adequadamente. Este processo pode levar 2-3 minutos cruciais de interrupção das compressões torácicas, agravando a hipóxia cerebral.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Supinar o paciente:</strong> Perde tempo valioso. A prioridade máxima é manter compressões torácicas contínuas sem interrupções desnecessárias.</p><p><strong>C) Iniciar com adrenalina:</strong> Independentemente do ritmo, as compressões devem ser iniciadas imediatamente. A medicação vem depois, não antes da circulação artificial.</p><p><strong>D) Supinar o paciente e verificar eletrodos:</strong> Mesmo problema da alternativa A - perda de tempo crucial para reposicionamento do paciente.</p><p><strong>Aspectos técnicos importantes:</strong> A desfibrilação pode ser realizada com o paciente pronado usando os eletrodos em posição anterior-posterior. As compressões torácicas são mais desafiadoras mas factíveis. A literatura emergente durante a pandemia mostrou que esta abordagem não é ideal, mas é superior à pausa prolongada necessária para reversão da posição.</p><p><strong>Relevância clínica:</strong> Esta questão reflete como a medicina se adapta a novos cenários. Profissionais de UTI devem estar familiarizados com protocolos atualizados para garantir melhores desfechos nestas situações críticas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Em relação à profilaxia para estrongiloides antes do tratamento com corticoides sistêmicos, é INCORRETO afirmar que:",
+      "alternativas": [
+        "A profilaxia deve ser realizada para todos os pacientes com plano de uso de dose equivalente de prednisona 20 mg/dia ou mais por pelo menos 2 semanas.",
+        "Teste sorológico (ELISA) negativo para estrongiloides dispensa o uso de profilaxia com ivermectina.",
+        "Caso seja necessário o início imediato do uso do corticoide, deve-se fazer o tratamento empírico com ivermectina.",
+        "A associação de ivermectina e albendazol se mostrou eficaz no tratamento empírico de estrongiloides em pacientes com vasculite de sistema nervoso central pré pulsoterapia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia conhecimento sobre profilaxia de estrongiloidíase antes de terapia com corticóides - um tema de crescente importância na prática clínica moderna.</strong> O uso de corticóides em pacientes com estrongiloidíase latente pode desencadear síndrome de hiperinfecção potencialmente fatal.</p><p><strong>A resposta incorreta (gabarito D) é a afirmação sobre a associação ivermectina + albendazol.</strong> Esta combinação não é recomendada e pode ser até prejudicial. A ivermectina isolada é o tratamento padrão, sendo extremamente eficaz contra Strongyloides stercoralis.</p><p><strong>Análise de cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> Pacientes planejados para uso de prednisona ≥20mg/dia por ≥2 semanas devem receber profilaxia. Esta é a recomendação atual baseada no risco significativo de síndrome de hiperinfecção em pacientes imunossuprimidos com estrongiloidíase latente.</p><p><strong>B) CORRETA:</strong> Teste sorológico ELISA negativo tem alta sensibilidade e especificidade. Um resultado negativo, na ausência de outros fatores de risco, dispensa profilaxia. Esta é uma abordagem custo-efetiva recomendada pelas diretrizes.</p><p><strong>C) CORRETA:</strong> Em emergências, quando não há tempo para investigação sorológica, o tratamento empírico com ivermectina é indicado. O benefício supera qualquer risco potencial do medicamento.</p><p><strong>D) INCORRETA:</strong> A associação ivermectina + albendazol não é recomendada. O albendazol tem atividade limitada contra Strongyloides e a associação não oferece vantagens, podendo aumentar toxicidade desnecessariamente. Além disso, em vasculite do sistema nervoso central, a simplicity do regime terapêutico é fundamental.</p><p><strong>Importância clínica:</strong> A estrongiloidíase é endêmica no Brasil e frequentemente assintomática. A identificação e tratamento antes da imunossupressão previne uma das complicações mais temidas da terapia com corticóides.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Qual dos pacientes abaixo tem indicação de receber profilaxia para úlcera de stress quando internado em UTI?",
+      "alternativas": [
+        "Paciente cirrótico internado na UTI por encefalopatia hepática grau II, ventilando espontaneamente, com RNI 1,4 e plaquetas 52.000.",
+        "Paciente em pós-operatório de colectomia eletiva, em ventilação mecânica há 12horas, em processo de extubação, sem coagulopatia.",
+        "Paciente com Covid-19, ventilando por máscara com reservatório, D-dímeros 1.250ng/mL, fibrinogênio normal, plaquetas, TP e TTPA normais.",
+        "Paciente em ventilação mecânica por sepse urinária há 48 horas, plaquetas 180.000,RNI e TP normais."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2023 avalia critérios para profilaxia de úlcera de stress em pacientes críticos - um tema essencial na medicina intensiva.</strong> A decisão sobre profilaxia deve balancear benefício versus riscos, especialmente sangramento gastrointestinal versus superinfecção.</p><p><strong>A resposta correta é D - Paciente em ventilação mecânica por sepse urinária há 48 horas.</strong> Este paciente apresenta múltiplos fatores de risco que justificam profilaxia.</p><p><strong>Critérios para profilaxia de úlcera de stress:</strong> As diretrizes atuais recomendam profilaxia para pacientes com pelo menos 2 dos seguintes fatores: ventilação mecânica >48h, coagulopatia, uso de corticóides, doença crítica grave, sepse.</p><p><strong>Análise de cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Paciente cirrótico com encefalopatia hepática grau II, ventilando espontaneamente. Embora seja um paciente grave, a ventilação espontânea e a ausência de outros fatores de risco significativos não indicam profilaxia. A coagulopatia leve (RNI 1.4, plaquetas 52.000) é esperada na cirrose.</p><p><strong>B) INCORRETA:</strong> Pós-operatório de colectomia eletiva, ventilação mecânica há 12h, em processo de extubação. A ventilação mecânica por período inferior a 48h e a ausência de coagulopatia não justificam profilaxia. A extubação iminente reduz o risco.</p><p><strong>C) INCORRETA:</strong> Paciente com COVID-19, ventilando por máscara com reservatório. A ventilação não é invasiva e os exames mostram coagulação normal. Apenas o aumento de D-dímeros é insuficiente para indicar profilaxia, sendo comum na COVID-19.</p><p><strong>D) CORRETA:</strong> Paciente em ventilação mecânica por sepse urinária há 48h apresenta dois fatores maiores: ventilação mecânica >48h e sepse. A coagulação normal é favorável, mas não necessária para a indicação. A combinação destes fatores justifica fortemente a profilaxia.</p><p><strong>Considerações importantes:</strong> A profilaxia deve ser individualizada, considerando tempo de UTI, comorbidades e risco específico de cada paciente. O uso indiscriminado pode aumentar risco de pneumonia associada à ventilização e infecções por Clostridioides difficile.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Assinale a alternativa correta em relação à dieta em pacientes internados.",
+      "alternativas": [
+        "A nutrição parenteral é preferível em relação à enteral em pacientes com pancreatite aguda e doença inflamatória intestinal.",
+        "Pacientes com mais de 30 dias de nutrição enteral são candidatos a gastrostomia ou jejunostomia.",
+        "Instabilidade hemodinâmica e hemorragia digestiva alta são contra indicaçõesabsolutas à dieta enteral.",
+        "Pacientes com síndrome do intestino curto têm benefício de usar nutrição enteral em comparação com a parenteral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 avalia seu conhecimento sobre nutrição clínica hospitalar, especificamente as diretrizes atuais para nutrição enteral versus parenteral em diferentes cenários clínicos.</p><p><strong>A resposta correta é B - Pacientes com mais de 30 dias de nutrição enteral são candidatos a gastrostomia ou jejunostomia.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. A nutrição enteral é PREFERENCIAL à parenteral em pacientes com pancreatite aguda e doença inflamatória intestinal, não o contrário. A nutrição enteral preserva a função intestinal, reduz complicações infecciosas e é mais fisiológica.</p><p><strong>Alternativa B:</strong> CORRETA. Pacientes que necessitam de nutrição enteral por período prolongado (>30 dias) realmente se beneficiam de acesso definitivo (gastrostomia/jejunostomia) para evitar complicações de sonda nasogástrica de longo prazo.</p><p><strong>Alternativa C:</strong> INCORRETA. Instabilidade hemodinâmica e hemorragia digestiva alta são contraindicações RELATIVAS à nutrição enteral, não absolutas. A decisão deve ser individualizada considerando o risco-benefício.</p><p><strong>Alternativa D:</strong> INCORRETA. Na síndrome do intestino curto, a nutrição parenteral é SUPERIOR à enteral quando a função intestinal residual é insuficiente para absorção adequada de nutrientes.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalPerioperator",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalEnteral"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Relacione a Coluna 1 à Coluna 2, associando os efeitos colaterais possíveis aos respectivos fluidos. Coluna 1; 1. Soro fisiológico 0,9%. 2. Ringer lactato. 3. Solução glicosada 5%. 4. Dextrano 40. Coluna 2; ( ) Insuficiência renal aguda. ( ) Acidose metabólica hiperclorêmica. ( ) Hipercalemia. ( ) Hiponatremia. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+      "alternativas": [
+        "2 - 4 - 3 - 1.",
+        "3 - 1 - 4 - 2.",
+        "4 - 1 - 2 - 3.",
+        "1 - 2 - 3 - 4."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre os efeitos adversos das soluções intravenosas mais comumente utilizadas na prática clínica.</p><p><strong>A resposta correta é C - 4 - 1 - 2 - 3</strong></p><p>Vamos analisar cada associação:</p><p><strong>Soro fisiológico 0,9%:</strong> Causa <strong>acidose metabólica hiperclorêmica</strong> devido ao excesso de cloreto. O Cl- em excesso ocupa o espaço de HCO3-, reduzindo a concentração efetiva de bicarbonato.</p><p><strong>Ringer lactato:</strong> Não está associado a <strong>hipercalemia</strong>. O lactato é convertido em bicarbonato, sendo protetor contra acidose. O potássio presente é mínimo.</p><p><strong>Solução glicosada 5%:</strong> Pode causar <strong>hiponatremia</strong> por diluição, especialmente se administrada em grandes volumes sem suplementação eletrolítica adequada.</p><p><strong>Dextrano 40:</strong> Está associado a <strong>insuficiência renal aguda</strong> por causar nefropatia osmótica, especialmente em pacientes desidratados ou com função renal comprometida.</p><p>A associação correta é: Dextrano 40 (4) - Soro fisiológico (1) - Ringer lactato (2) - Solução glicosada (3).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Nefrologia_DisturbiosDoPotassio",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Hiponatremia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Assinale a alternativa que apresenta corretamente o antibiótico com ação contra pseudomonas em uma sepse abdominal, não considerando o antibiograma da cultura, e sim considerando o seu mecanismo de ação.",
+      "alternativas": [
+        "Teicoplanina.",
+        "Tigeciclina.",
+        "Aztreonam.",
+        "Ertapenem."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS 2023 testa seu conhecimento sobre antibiótico-terapia baseada no espectro de ação, especificamente em sepse abdominal com foco em Pseudomonas aeruginosa.</p><p><strong>A resposta correta é C - Aztreonam.</strong></p><p>Para resolver essa questão, precisamos conhecer o espectro de cada antibiótico:</p><p><strong>Alternativa A - Teicoplanina:</strong> É um glicopeptídeo com ação primariamente contra <strong>gram-positivos</strong>, incluindo MRSA. Não tem ação significativa contra gram-negativos como Pseudomonas.</p><p><strong>Alternativa B - Tigeciclina:</strong> Pertence à classe das glicilciclinas, com espectro contra <strong>gram-positivos e alguns gram-negativos</strong>, mas com atividade limitada ou inexistente contra Pseudomonas aeruginosa.</p><p><strong>Alternativa C - Aztreonam:</strong> É uma <strong>monobactama</strong> com espectro restrito a <strong>gram-negativos</strong>, incluindo Pseudomonas aeruginosa. Atua inibindo a síntese da parede celular bacteriana através das proteínas de ligação à penicilina (PBP).</p><p><strong>Alternativa D - Ertapenem:</strong> É um carbapenêmico, mas com <strong>atividade limitada contra Pseudomonas</strong> quando comparado a meropenem ou imipenem. Ertapenem não é considerado adequado para infecções por Pseudomonas.</p><p>Na sepse abdominal, onde Pseudomonas é um patógeno preocupante, o Aztreonam representa uma excelente escolha por sua potência contra gram-negativos e perfil de segurança.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_MicrobiologiaEAntimicrobianos"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "É contraindicação relativa à trombólise em paciente com embolia pulmonar maciça:",
+      "alternativas": [
+        "Hemorragia gastrointestinal nas últimas 4 semanas.",
+        "Acidente Vascular Cerebral isquêmico há 6 meses.",
+        "Gravidez.",
+        "Meningioma."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as contraindicações à terapia trombolítica em pacientes com embolia pulmonar maciça, um tema crítico em medicina de emergência.</p><p><strong>A resposta correta é C - Gravidez.</strong></p><p>Vamos analisar cada alternativa segundo os critérios atuais de contraindicação:</p><p><strong>Contraindicações ABSOLUTAS à trombólise:</strong> AVC hemorrágico, AVC isquêmico nos últimos 6 meses, neoplasia do sistema nervoso central, trauma grave/cirurgia/trauma craniano nas últimas 3 semanas, diátese hemorrágica, sangramento ativo significativo.</p><p><strong>Contraindicações RELATIVAS:</strong> AVC isquêmico há mais de 6 meses, ataque isquêmico transitório há mais de 6 meses, anticoagulação oral, gravidez, punção não compressível, ressuscitação traumática, hipertensão refratária (PAS >180 mmHg), doença hepática avançada, endocardite infecciosa, úlcera péptica ativa.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Hemorragia GI nas últimas 4 semanas:</strong> Considerada contraindicação ABSOLUTA se ativa, ou relativa se recentes mas não ativas.</p><p><strong>B) AVC isquêmico há 6 meses:</strong> Este é o limite temporal. Com exatamente 6 meses, pode ser considerado relativo, mas questão marginal.</p><p><strong>C) Gravidez:</strong> Contraindicação RELATIVA clara, onde a decisão deve ponderar risco-benefício individual.</p><p><strong>D) Meningioma:</strong> Neoplasia do sistema nervoso central é contraindicação ABSOLUTA.</p><p>A gravidez é classicamente taught como contraindicação relativa, sendo a resposta mais segura.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Faz parte dos critérios maiores de Duke para o diagnóstico de endocardite infecciosa:",
+      "alternativas": [
+        "Uso de drogas injetáveis.",
+        "Aneurisma micótico.",
+        "Hemocultura positiva para Coxiella burnetii.",
+        "Lesões de Janeway."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu domínio dos critérios de Duke para diagnóstico de endocardite infecciosa, um tema fundamental em cardiologia clínica.</p><p><strong>A resposta correta é C - Hemocultura positiva para Coxiella burnetii.</strong></p><p>Os critérios de Duke consistem em critérios maiores e menores para o diagnóstico. Vamos analisar cada alternativa:</p><p><strong>CRITÉRIOS MAIORES:</strong></p><p><strong>1. Hemoculturas positivas para:</strong> - Microorganismo típico (Streptococcus viridans, grupo HACEK, Staphylococcus aureus) OU - Coxiella burnetii OU - Anticorpos fase I IgG > 1:800</p><p><strong>2. Evidência de envolvimento endocárdico:</strong> - Ecocardiograma positivo (vegetação, abscesso, dehiscência de prótese) OU - Nova valvulopatia</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Uso de drogas injetáveis:</strong> Fator de risco, não critério diagnóstico.</p><p><strong>B) Aneurisma micótico:</strong> Complicação vascular, não critério de Duke.</p><p><strong>C) Hemocultura positiva para Coxiella burnetii:</strong> É um dos <strong>critérios maiores</strong> de Duke! Coxiella burnetii (causador da febre Q) é reconhecidamente um microorganismo típico para endocardite.</p><p><strong>D) Lesões de Janeway:</strong> São manifestações cutâneas menores em endocardite, mas fazem parte dos <strong>critérios menores</strong>, não maiores.</p><p>A hemocultura positiva para Coxiella burnetii é um critério maior estabelecido dos critérios de Duke, sendo essencial para o diagnóstico em casos apropriados.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_Endocardite",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "AMRIGS2023R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762642640586-29"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "examName": "INEP2022REVALIDA2 (INEP REVALIDA 2022)",
+    "examYear": 2022,
+    "url": "source://461",
+    "totalQuestions": 10,
+    "categorizedQuestions": 10,
+    "rewrittenComments": 10,
+    "processedAt": "2025-11-06T03:32:08.486Z",
+    "jobId": "batch-1762399267611-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "9f377cae-9bf0-4966-bd7c-65170cecee36"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Um paciente de 64 anos foi levado por familiares à unidade de emergência logo após ter apresentado episódio de síncope. Segundo o paciente, ele já tinha apresentado 2 outros episódios nos últimos 3 meses, sempre precedidos por sensação de \"tonteiras\", e, eventualmente, tem sentido a impressão de fraqueza, \"escurecimento da visão\" e sensação de queda iminente. Não há dados relevantes de história patológica pregressa do paciente, que não faz uso de nenhum fármaco regularmente. No exame físico, o paciente apresentava-se bradicárdico (42 batimentos por minuto), normotenso, com ritmo cardíaco regular em 3 tempos (B4), sem sopros. Seu pulso venoso jugular revelou a presença de intermitentes ondas \"a em canhão\". Foi realizado um eletrocardiograma, que revelou padrão similar ao ilustrado na figura abaixo. \n\nO emergencista que atende esse paciente deverá explicar-lhe que será necessária a realização de\n\n<img src=\"/api/temp-images/img-3bf6f40e8380839ca5e2715ac6fda9e8.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "cardioversão elétrica.",
+        "ablação de via anômala.",
+        "implante de marca-passo definitivo.",
+        "isolamento elétrico das vias pulmonares."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Vamos analisar este caso fascinante de arritmia! Temos um paciente de 64 anos com episódios recorrentes de síncope precedidos por sintomas autonômicos (tonteira, fraqueza, escurecimento visual). No exame físico, observamos bradicardia acentuada (42 bpm), ritmo em 3 tempos (B4) e algo muito característico - ondas \"a em canhão\" no pulso jugular.</p><p>O traçado eletrocardiográfico revela o padrão clássico de dissociação atrioventricular completa: as ondas P (atividade atrial) estão completamente independentes dos complexos QRS (atividade ventricular), com frequência atrial maior que ventricular. Esta é a assinatura do bloqueio atrioventricular total (BAV de 3º grau).</p><p><strong>Por que não são as outras alternativas?</strong></p><p><strong>A) Cardioversão elétrica:</strong> Absolutamente contraindicada! Na cardioversão, aplicamoschoque sincronizado com a onda R para resetar o ritmo. Mas quando temos BAV total, não existe ritmo atrial organizado para sincronizar. O choque seria ineficaz e até perigoso.</p><p><strong>B) Ablação de via anômala:</strong> As vias anômalas estão relacionadas a taquicardias por reentrada (ex: Wolff-Parkinson-White). Não há indicação aqui - nosso problema é falta de condução, não excesso de vias.</p><p><strong>D) Isolamento das vias pulmonares:</strong> Este é um procedimento para fibrilação atrial, onde isolamos as veias pulmonares para impedir gatilhos ectópicos. Novamente, não se aplica ao nosso caso de bloqueio de condução.</p><p>A conduta definitiva é o <strong>implante de marca-passo definitivo (alternativa C)</strong>, que vai assumir o controle do ritmo ventricular e eliminar os sintomas de baixo débito cerebral.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_Bradiarritmias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Homem de 75 anos de idade, tabagista 1 maço/dia desde os 20 anos de idade, apresenta queixa de polaciúria, disúria e hematúria macroscópica. Relata diversos episódios de infecção do trato urinário no passado e hiperplasia prostática benigna tratada por ressecção transuretral, com melhora significativa dos sintomas obstrutivos urinários. No toque retal, percebe-se próstata de tamanho aumentado, com superfície regular. Exame de urina tipo I (EAS) evidencia hematúria maciça, com mais de 80% de hemácias isomórficas. \n\nNesse caso, a melhor conduta diagnóstica e o diagnóstico mais provável são, respectivamente",
+      "alternativas": [
+        "uretrocistoscopia; carcinoma invasor de bexiga.",
+        "urografia excretora; carcinoma de células renais.",
+        "ressonância magnética de abdome; cálculo coraliforme.",
+        "ultrassom transretal com biópsia de próstata; adenocarcinoma de próstata."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Este é um caso clássico que testa seu conhecimento sobre neoplasias urológicas! Vamos quebrar este cenário em partes importantes.</p><p>O paciente apresenta a tríade clássica do câncer de bexiga: hematúria macroscópica, disúria e polaciúria. Além disso, temos fatores de risco significativos: tabagismo pesado (1 maço/dia por 55 anos!) e história prévia de ITU recorrente.</p><p><strong>Por que o carcinoma invasor de bexiga é o diagnóstico mais provável?</strong></p><p>O câncer de bexiga representa cerca de 90% das neoplasias malignas do trato urinário. O tipo histológico predominante é o carcinoma urotelial (de células de transição), especialmente em fumantes. A hematúria indolor é a manifestação mais comum, mas sintomas irritativos (como neste caso) podem ser a primeira apresentação.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Uretrocistoscopia + carcinoma invasor de bexiga:</strong> CORRETA! A cistoscopia é o padrão ouro diagnóstico - permite visualização direta da mucosa vesical, biópsia de lesões suspeitas e determinação da extensão. No carcinoma invasor, há infiltração da camada muscular, necessitando estadiamento mais agressivo.</p><p><strong>B) Urografia excretora + carcinoma de células renais:</strong> Incorreta. A urografia pode sugerir lesões, mas não é específica. O carcinoma renal geralmente apresenta dor em flanco e massa palpável, não os sintomas irritativos vesicais observados.</p><p><strong>C) RM abdome + cálculo coraliforme:</strong> Incorreta. RM tem papel no estadiamento, mas não no diagnóstico inicial. Cálculos coraliformes causam dor cólica intensa e fragmentação na eliminação, não a tríade apresentada.</p><p><strong>D) US transretal + adenocarcinoma de próstata:</strong> Incorreta. Embora a próstata esteja aumentada, o US transretal é indicado para suspeita de câncer prostático, que cursa com sintomas obstrutivos (jato fraco, esvaziamento incompleto) e PSA elevado, não hematúria maciça.</p><p>Segundo as diretrizes do Ministério da Saúde 2025, a cistoscopia com biópsia é recomendada para todos os casos de hematúria persistente em fumantes, especialmente quando associada a sintomas irritativos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_CancerDeBexiga",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Lactente de 6 meses está sendo atendido na unidade básica de saúde para consulta de puericultura. A criança, nascida com 39 semanas, encontra-se em aleitamento materno exclusivo e com desenvolvimento neuropsicomotor adequado. Sua genitora solicita orientações para iniciar a alimentação complementar. \n\nAcerca da introdução alimentar nesse caso, assinale a opção correta.",
+      "alternativas": [
+        "A carne deve ser triturada e peneirada, para garantir oferta adequada de ferro, zinco e vitamina B12.",
+        "As frutas, in natura, raspadas, amassadas ou picadas devem ser introduzidas como fontes de fibras.",
+        "Os sucos devem ser introduzidos na rotina alimentar, uma vez ao dia, sendo importante fonte de vitaminas e fibras.",
+        "A gema do ovo, por ser uma importante fonte proteica, deve ser oferecida de imediato, ao passo que a clara, devido ao seu poder alergênico, deve ser oferecida somente após 12 meses de idade."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Que questão inteligente sobre introdução alimentar! Vamos desmistificar algumas crenças antigas e entender as recomendações atuais.</p><p>A Organização Mundial da Saúde e o Ministério da Saúde brasileiro recomendam aleitamento materno exclusivo até os 6 meses. Após esse período, é hora de começar a diversificação alimentar - não apenas por questões nutricionais, mas também para desenvolvimento de habilidades motoras e sensoriais.</p><p><strong>Vamos analisar cada alternativa detalhadamente:</strong></p><p><strong>A) Carne triturada e peneirada:</strong> COMPLETAMENTE INCORRETA! Esta era a recomendação antiga, mas hoje sabemos que a carne deve ser oferecida em pedaços maiores para estimular a mastigação e preservar o ferro heme. O processamento excessivo reduz a biodisponibilidade de nutrientes importantes.</p><p><strong>B) Frutas in natura (raspadas/amassadas/picadas):</strong> <strong>ABSOLUTAMENTE CORRETA!</strong> As frutas são excelentes fontes de fibras, vitaminas e minerais. Devem ser oferecidas sem adição de açúcar ou mel. O formato (raspada, amassada ou em pedaços para auto-alimentação) respeita o desenvolvimento motor da criança e estimula a autonomia alimentar.</p><p><strong>C) Sucos de frutas:</strong> INCORRETA! A recomendação atual é evitar sucos até 1 ano. Por quê? Os sucos têm menos fibras que a fruta in natura, podem contribuir para cáries (açúcar) e diarreia, e substituem o leite materno. A fruta oferece mais saciedade e estimula a mastigação.</p><p><strong>D) Gema imediata, clara após 12 meses:</strong> INCORRETA! Esta era a recomendação há 20 anos atrás. Estudos atuais demonstram que a \"janela imunológica\" (6-12 meses) é o momento ideal para introduzir alimentos potencialmente alergênicos. O contato precoce reduz o risco de alergias futuras. O recomendado é introduzir ovo completo (gema + clara) a partir dos 6 meses, monitorando possíveis reações.</p><p><strong>Dica de estudo:</strong> Memorize o conceito de \"janela imunológica\" - é um tema muito cobrado em provas recentes!</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AmamentacaoAleitamentoMaterno"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Adolescente de 14 anos de idade, primípara, em puerpério imediato de parto vaginal, apresenta sangramento vaginal abundante, sem morbidades associadas à gestação. No exame, ela apresentou: regular estado geral, frequência respiratória de 23 incursões por minuto; tempo de enchimento capilar de 6 segundos; frequência cardíaca de 128 batimentos por minuto; pressão arterial de 80 x 30 mmHg; abdome globoso, normotenso; útero contraído abaixo da cicatriz umbilical, sem lesões no canal de parto. \n\nDiante do quadro apresentado, assinale a opção que estabelece a conduta apropriada a ser adotada em conjunto com a reanimação.",
+      "alternativas": [
+        "Administração de 800 mcg de misoprostol via retal.",
+        "Indicação de laparotomia de urgência para histerectomia.",
+        "Conduta expectante, mantendo-se a monitorização clínica.",
+        "Exame da placenta e, caso estejam presentes escavações, indicação de curetagem uterina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Emergência obstétrica em ação! Esta questão testa seu conhecimento sobre hemorragia pós-parto (HPP), uma das principais causas de mortalidade materna no Brasil.</p><p>A paciente apresenta quadro clássico de choque hipovolêmico: taquicardia (128 bpm), hipotensão (80x30 mmHg), taquipneia (23 irpm) e enchimento capilar prolongado (6 segundos). O sangramento abundante pós-parto requer ação imediata!</p><p><strong>Vamos revisar a fisiopatologia da HPP usando o mnemônico \"4 T's\":</strong></p><p><strong>1. Tônus (atonia uterina) - 70% dos casos:</strong> O útero não contrai adequadamente. A alternativa A (misoprostol retal) seria correta SE fosse atonia, MAS o exame revela útero contraído abaixo da cicatriz umbilical. Logo, exclude esta causa.</p><p><strong>2. Trauma - 19% dos casos:</strong> Lacerações, hematomas, roturas uterinas. O enunciado exclui esta possibilidade ao mencionar \"sem lesões no canal de parto\".</p><p><strong>3. Tecido (retenção placentária) - 10% dos casos:</strong> Fetos ou cotilédones retidos que impedem contração uterina efetiva. Esta é nossa suspeitosa!</p><p><strong>4. Trombina (coagulopatias) - 1% dos casos:</strong> Alterações da coagulação.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Misoprostol retal:</strong> Incorreto para este caso. Usado na atonia uterina, mas o útero está contraído.</p><p><strong>B) Laparotomia/histerectomia:</strong> Extremamente invasiva! Só indicada se houver rotura uterina ou acretismo placentário. A retenção placentária parcial pode ser resolvida com curetagem.</p><p><strong>C) Conduta expectante:</strong> ABSURDA! Paciente em choque hipovolêmico requer intervenção ativa, não observação.</p><p><strong>D) Exame da placenta + curetagem:</strong> <strong>PERFEITA!</strong> Devemos examinar a placenta em busca de escavações (áreas sem cotilédones), indicando dequitação incompleta. Se confirmado, a curetagem remove os restos placentários, permitindo contração uterina efetiva.</p><p>Segundo o MS 2025, a HPP é emergência obstétrica que requer protocolo rigoroso de reanimação + identificação da causa específica para tratamento direcionado.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Puerperio",
+        "Obstetricia_Puerperio",
+        "Obstetricia_Puerperio_HemorragiasPosPartoHppERoturaU",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_AvaliacaoDaVitalidadeFetal"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Uma mulher de 34 anos com diagnóstico de depressão procurou a unidade de saúde da família (UBS) onde você trabalha. Com base no prontuário da paciente, você observou que ela faz acompanhamento na unidade há 10 meses com outro médico da unidade. A paciente consulta sozinha, mas chegou à unidade acompanhada da irmã, com quem ela mora e que está bastante preocupada. A paciente tem sintomas de humor deprimido, fatigabilidade e choro fácil; está em uso de 40 mg/dia de fluoxetina nos últimos 6 meses, tendo apresentado discreta melhora. Segundo a paciente, há 1 mês, aproximadamente, começou a ouvir vozes e ver alguns vultos, e tem pensado em se matar, mas sem plano.\n\n Nesse caso, qual é a conduta adequada?",
+      "alternativas": [
+        "Continuar o atendimento na UBS e trocar o tratamento.",
+        "Encaminhar a paciente para internação em hospital psiquiátrico.",
+        "Solicitar internação em hospital geral e otimizar o tratamento farmacológico.",
+        "Referenciar a paciente à equipe multiprofissional do Centro de Atenção Psicossocial."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão ilustra perfeitamente os limites da Atenção Básica em Saúde Mental e o fluxograma correto de referência e contrarreferência!</p><p>Vamos analisar a evolução do caso: a paciente tem 34 anos, diagnóstico de depressão em tratamento há 10 meses com fluoxetina 40mg/dia (dose adequada). Houve melhora discreta, mas agora surge um quadro novo e preocupante: alucinações auditivas e visuais + ideação suicida sem plano.</p><p><strong>Esta mudança no perfil clínico é FUNDAMENTAL!</strong> A presença de sintomas psicóticos (alucinações) muda completamente a gravidade e complexidade do caso. Por definição, não é mais apenas depressão - é um transtorno de humor com características psicóticas.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Continuar na UBS e trocar tratamento:</strong> INCORRETA! A Atenção Básica pode manejar depressão simples e ansiedade, mas sintomas psicóticos exigem avaliação especializada. Trocar medicação na APS sem avaliação psiquiátrica é perigoso.</p><p><strong>B) Internação psiquiátrica:</strong> INCORRETA! Embora os sintomas sejam graves, não há indicação de internação compulsória. A paciente não tem plano suicida definido, não está em risco iminente de auto/heteroagressão e pode ser tratada em regime ambulatorial especializado.</p><p><strong>C) Internação em hospital geral:</strong> INCORRETA! Não há indicação para internação hospitalar. O tratamento é ambulatorial, focado em estabilização medicamentosa e acompanhamento psicológico intensivo.</p><p><strong>D) Referência ao CAPS:</strong> <strong>CORRETA!</strong> O Centro de Atenção Psicossocial é o nível adequado de cuidado. Os CAPS possuem equipes multiprofissionais (psiquiatra, psicólogo, enfermeiro, terapeuta ocupacional) capazes de manejar transtornos mentais graves em regime ambulatorial intensivo. Inclusive há CAPS III que podem fazer observação do paciente se necessário.</p><p><strong>Conceito-chave:</strong> O CAPS deve ser o PRIMEIRO encaminhamento em casos de transtornos mentais graves na Atenção Básica, não o hospital psiquiátrico!</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar",
+        "ClinicaMedica_Reumatologia_SindromesDolorosasCronicas",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Uma paciente de 62 anos de idade foi encaminhada ao ambulatório de nefrologia de um hospital universitário para ajuste no tratamento anti-hipertensivo, em razão de suposta nefropatia hipertensiva estágio 3. A paciente tem hipertensão arterial sistêmica (HAS) há longa data e faz tratamento com hidroclorotiazida 25 mg/dia e anlodipino 10 mg duas vezes ao dia. Recentemente, seus exames de sangue revelaram pequena retenção de escórias nitrogenadas, sendo o cálculo estimado da taxa de filtração glomerular de 54 ml/min/1,73 m2. Exame urinário revelou a presença de microalbuminúria (120 mg/g de creatinina em amostra isolada de urina; valor de referência: até 30 mg/g de creatinina na urina). No exame físico, os níveis tensionais se encontravam em 150 x 90 mmHg no membro superior (MS) direito e em 148 x 92 mmHg no MS esquerdo. \n\nConsiderando-se o risco cardiovascular da paciente, os níveis tensionais observados na consulta e a presença de dano renal crônico em estágio 3 (da classificação KDIGO - do inglês Kidney Disease: Improving Global Outcomes), em relação ao esquema terapêutico em curso, a conduta correta seria",
+      "alternativas": [
+        "adicionar inibidor da enzima conversora ou bloqueador do receptor de angiotensina II.",
+        "trocar a hidroclorotiazida por diurético de alça e aumentar a dose do bloqueador de canal de cálcio.",
+        "iniciar espironolactona e carvedilol.",
+        "mantê-lo sem alterações e trabalhar a adesão ao tratamento."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o manejo da hipertensão arterial sistêmica em paciente com nefropatia hipertensiva estágio 3. Vamos analisar os dados importantes: mulher de 62 anos com TFG de 54 ml/min/1,73m² (estágio 3 da KDIGO), microalbuminúria de 120 mg/g e pressão arterial ainda elevada (150x90 mmHg) apesar do uso de hidroclorotiazida 25mg e anlodipino 10mg 2x/dia.</p><p><strong>A resposta correta é a letra A: adicionar IECA ou BRA.</strong> Por quê? Porque pacientes com nefropatia hipertensiva se beneficiam significativamente do bloqueio do sistema renina-angiotensina-aldosterona, que além de controlar a pressão, possui efeito nefroprotetor. A microalbuminúria presente indica dano renal ativo que pode ser reduzido com essas medicações.</p><p>Vamos analisar as outras alternativas:</p><p><strong>Letra B</strong> - Trocar tiazídico por diurético de alça: não está indicada neste caso, pois a paciente já está com controle parcial da pressão e o diurético de alça é mais usado em situações de insuficiência cardíaca ou insuficiência renal mais avançada. Aumentar o anlodipino pode causar edema periférico.</p><p><strong>Letra C</strong> - Iniciar espironolactona e carvedilol: a espironolactona pode ser útil na IC com FE reduzida, mas não é primeira escolha para nefropatia hipertensiva. O carvedilol pode ser adicionado como segunda opção, mas o IECA/BRA deve vir primeiro.</p><p><strong>Letra D</strong> - Manter tratamento atual: definitivamente incorreto, pois a pressão ainda está elevada (>140/90) e há evidência de dano renal (microalbuminúria + TFG reduzida).</p><p><strong>Dica importante:</strong> Em nefropatia diabética e não-diabética com proteinúria, IECA e BRA são sempre primeira escolha, independente da pressão arterial. O benefício nefroprotetor independe do efeito anti-hipertensivo!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ManejoDaDrc"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Homem de 55 anos de idade apresenta quadro de dor em fossa ilíaca esquerda. No exame físico, apresentava bom estado geral, frequência cardíaca de 90 batimentos por minuto, pressão arterial de 130 × 80 mmHg, frequência respiratória de 20 incursões respiratórias por minuto e temperatura axilar de 37,9 °C. O paciente realizou tomografia de abdome e pelve, que mostrou ausência de líquido livre e gás na cavidade peritoneal, discreta distensão de alças de delgado e cólons direito e transverso, espessamento de cólon descendente e abscesso pericolônico de 6 cm próximo à goteira parietocólica esquerda.\n\nNesse caso, qual é a melhor conduta imediata?",
+      "alternativas": [
+        "Internação e antibioticoterapia venosa exclusiva.",
+        "Antibioticoterapia venosa e drenagem do abscesso.",
+        "Alta hospitalar e antibioticoterapia oral ambulatorial.",
+        "Laparotomia exploradora e procedimento de Hartmann."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Vamos trabalhar este caso de dor em fossa ilíaca esquerda! Homem de 55 anos com dor, febre (37,9°C) e tomografia mostrando espessamento do cólon descendente com abscesso pericolônico de 6 cm próximo à goteira parietocólica esquerda.</p><p><strong>A resposta correta é B: antibioticoterapia venosa E drenagem do abscesso.</strong></p><p>Por que essa é a melhor conduta? Primeiro, o quadro clínico + achados tomográficos são típicos de <strong>diverticulite aguda complicada com abscessualização</strong>. A ausência de líquido livre e gás na cavidade descarta perfuração livre. O abscesso de 6 cm é um achado crítico!</p><p><strong>Regra importante para abscessos na diverticulite:</strong> abscessos ≥4cm devem ser drenados (percutaneamente guiado por imagem) sempre que possível. Abscessos menores podem ser manejados apenas com antibióticos endovenosos.</p><p>Vamos aos erros das outras alternativas:</p><p><strong>Letra A</strong> - Apenas internação e antibiótico: insuficiente para abscessos ≥4cm. Sem drenagem, o abscesso pode evoluir para ruptura ou formação de fístulas.</p><p><strong>Letra C</strong> - Alta e antibiótico oral: totalmente inadequada. Paciente com febre, abscesso de 6cm precisa de internação e tratamento endovenoso.</p><p><strong>Letra D</strong> - Laparotomia e Hartmann: desnecessária neste momento. A cirurgia está reservada para casos de falência do tratamento clínico, perfuração com peritonite difusa ou fístulas complexas.</p><p><strong>Sequência de manejo na diverticulite complicada:</strong> Antibiótico endovenoso → Drenagem percutânea do abscesso → Avaliação da resposta clínica → Considerar cirurgia eletiva após resolução do episódio agudo.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda_Complicacoes",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda_Complicacoes_Tratamento"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Adolescente de 11 anos, sexo masculino, em consulta de rotina com pediatra, refere ser um dos menores alunos da sua sala. O crescimento do paciente nos últimos 6 meses foi de 2,5 cm. A projeção de sua estatura vai ao encontro do canal familiar (pai mede 161 cm e mãe mede 150 cm). No gráfico estatura × idade, situa-se entre o escore-z -2 e -3. Exame físico sem alterações, sem características de doenças gênicas ou cromossômicas, estadiamento puberal de Tanner G2 P1. Conforme radiografia de mão e punho esquerdos, a idade óssea do paciente é de 11 anos. \n\nNesse caso, o paciente apresenta",
+      "alternativas": [
+        "puberdade atrasada.",
+        "baixa estatura familiar.",
+        "reduzida velocidade de crescimento.",
+        "idade óssea compatível com distúrbio constitucional de estatura."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão sobre baixa estatura exige que você domine a diferenciação entre variantes normais do crescimento! Vamos analisar o caso do adolescente de 11 anos.</p><p>Dados importantes: altura entre escore-z -2 e -3 (baixo do percentil 3), crescimento de 2,5cm em 6 meses (5cm/ano - normal para pré-púbere), pais baixos (161cm e 150cm), idade óssea = idade cronológica (11 anos).</p><p><strong>A resposta correta é B: baixa estatura familiar.</strong></p><p>Por quê? Vamos usar um roteiro sistemático para nunca errar:</p><p><strong>1º passo:</strong> Confirma-se baixa estatura? SIM - escore-z < -2.</p><p><strong>2º passo:</strong> Velocidade de crescimento normal? SIM - 5cm/ano é esperado para pré-púbere. Se estivesse baixa, pensaríamos em distúrbios endócrinos.</p><p><strong>3º passo:</strong> Dentro do alvo genético? SIM - está crescendo dentro do canal familiar.</p><p><strong>4º passo:</strong> Idade óssea vs cronológica - <strong>este é o diferenciador fundamental!</strong></p><p>• <strong>Baixa estatura familiar:</strong> idade óssea = idade cronológica ✓</p><p>• <strong>Retardo constitucional:</strong> idade óssea < idade cronológica</p><p>Análise das alternativas:</p><p><strong>A) Puberdade atrasada:</strong> INCORRETA - Tanner G2 P1 é adequado para 11 anos.</p><p><strong>C) Reduzida velocidade de crescimento:</strong> INCORRETA - 5cm/ano é normal.</p><p><strong>D) Distúrbio constitucional:</strong> INCORRETA - esperaria idade óssea < cronológica.</p><p><strong>Lembrete:</strong> Na baixa estatura familiar, a criança cresce paralelamente aos percentis baixos, mas mantém velocidade normal e idade óssea adequada!</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura_Crescimento_AvaliacaoDoCrescimento",
+        "Pediatria_EndocrinologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura_Crescimento_CrescimentoAnormal",
+        "Pediatria_EndocrinologiaPediatrica_DesordensDoDesenvolvimentoSexu"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Mulher de 23 anos de idade procurou o ambulatório de ginecologia, com queixa de aumento da intensidade e duração do fluxo menstrual há 8 meses. Nulípara, tem como antecedentes três abortos espontâneos, nos quais não precisou realizar curetagem uterina. No exame físico, não apresentou qualquer alteração. Apresentou os seguintes exames complementares recentes: \n\n?- Colpocitologia oncológica: alterações celulares benignas reativas ou reparativas. ? \n- Ultrassonografia: volume uterino de 88 cm3. Eco endometrial heterogêneo de 36 mm (normalidade considerada até 15 mm) com lesão hiperecoica de contornos regulares na cavidade uterina. Anexos sem alterações ultrassonográficas. Considerando a história clínica e os exames físico e complementar da paciente, assinale a opção que apresenta a hipótese diagnóstica e a conduta adequada, respectivamente.",
+      "alternativas": [
+        "Patologia cervical; colposcopia.",
+        "Gestação ectópica; laparotomia exploratória.",
+        "Miomatose uterina; laparoscopia diagnóstica.",
+        "Pólipo endometrial; histeroscopia diagnóstica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Vamos dominar sangramento uterino anormal com este caso! Paciente de 23 anos, 8 meses de sangramento aumentado, três abortos prévios, ultrassonografia mostrando eco endometrial heterogêneo de 36mm com lesão hiperecoica de contornos regulares na cavidade uterina.</p><p><strong>A resposta correta é D: pólipo endometrial + histeroscopia diagnóstica.</strong></p><p>Como chegar a essa conclusão? Sempre use o acrônimo <strong>PALM-COEIN</strong> para sistematizar sangramento uterino anormal:</p><p><strong>PALM (estruturais):</strong></p><p>• P = Pólipo</p><p>• A = Adenomiose</p><p>• L = Leiomioma (mioma)</p><p>• M = Malignidades</p><p><strong>COEIN (não-estruturais):</strong></p><p>• C = Coagulopatias</p><p>• O = Ovulatória</p><p>• E = Endometrial</p><p>• I = Iatrogênica</p><p>• N = Não classificada</p><p>A ultrassonografia é fundamental para avaliar causas estruturais (PALM). O achado de <strong>lesão hiperecoica de contornos regulares na cavidade uterina</strong> é típico de pólipo endometrial. Pólipos são hiperecogênicos, enquanto miomas são hipoecogênicos.</p><p>Análise das alternativas:</p><p><strong>A) Patologia cervical:</strong> INCORRETA - a colpocitologia estava normal, sem alterações sugestivas de patologia cervical.</p><p><strong>B) Gestação ectópica:</strong> INCORRETA - quadro é crônico (8 meses), imagem não sugere gestação, e é improvável ectópica com volume uterino aumentado.</p><p><strong>C) Miomatose uterina:</strong> INCORRETA - miomas são hipoecogênicos ao US, não hiperecoicos como descrito.</p><p><strong>Importante:</strong> A histeroscopia é o padrão ouro para diagnóstico de pólipos endometrais e pode ser terapêutica simultânea!</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaGeral_SangramentoUterinoAnormal",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_PoliposUterinos",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal",
+        "Ginecologia_GinecologiaGeral_SangramentoUterinoAnormalCausa"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Uma mulher de 43 anos compareceu a uma unidade de saúde da família, com queixas de estresse e ansiedade. Informa que iniciou, há 10 semanas, o tratamento com sertralina 50 mg/dia e que, nesse período, apresentou uma melhora discreta dos sintomas. Entretanto, nas últimas 4 semanas, tem tido ataques recorrentes de ansiedade intensa quando precisa sair de casa, o que tem limitado seu desempenho, inclusive para atividades do dia a dia, como ir ao supermercado e buscar os filhos no colégio. Conforme relato dela, no dia desta consulta, teve muita dificuldade para sair de casa.\n\nNesse caso, qual é a conduta adequada?",
+      "alternativas": [
+        "Prescrever um benzodiazepínico e encaminhar a paciente para a emergência de um hospital psiquiátrico.",
+        "Manter a sertralina na dose atual e monitorar a evolução da paciente.",
+        "Encaminhar a paciente para um serviço com psicoterapia estruturada e reavaliar a medicação em uso.",
+        "Substituir a sertralina por fluoxetina 20 mg, clonazepam 0,5 mg e clorpromazina 25 mg."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Vamos analisar este caso de ansiedade que está dificultando a vida da paciente! Mulher de 43 anos, 10 semanas de sertralina 50mg/dia com melhora discreta, mas nas últimas 4 semanas apresentando ataques intensos de ansiedade ao sair de casa (agorafobia), limitando atividades diárias.</p><p><strong>A resposta correta é C: encaminhar para psicoterapia estruturada e reavaliar medicação.</strong></p><p>Por que essa é a melhor conduta? Porque combinamos <strong>tratamento farmacológico + não farmacológico</strong>, que possui evidências superiores de efetividade comparado ao tratamento isolado.</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>A) Prescrever benzodiazepínico e encaminhar para emergência psiquiátrica:</strong> COMPLETAMENTE EXAGERADA. Situação não é emergência - a paciente consegue se comunicar, está em ambulatório. Benzodiazepínicos podem ser usados em crises, mas não como primeira escolha e não justificam encaminhamento para emergência.</p><p><strong>B) Manter sertralina atual e monitorar:</strong> PEGADINHA CLÁSSICA! Seria correto se estivéssemos com menos de 4-6 semanas de tratamento. Após 10 semanas, já se espera resposta mais robusta. A dose de 50mg pode ser insuficiente - deveria ser aumentada ou associada a psicoterapia.</p><p><strong>D) Substituir por fluoxetina + clonazepam + clorpromazina:</strong> EXCESSO MEDICAMENTOSO! Sair da monoterapia para polifarmácia não é adequado sem tentar otimizar o tratamento atual. Clorpromazina é antipsicótico, não indicado para ansiedade isolada.</p><p><strong>Princípios importantes:</strong></p><p>• Transtantédios ansiosos têm melhor resposta com terapia combinada</p><p>• Sertralina pode ser aumentada até 200mg/dia</p><p>• Psicoterapia estruturada (TCC) é fundamental para agorafobia</p><p>• Evitar polifarmácia desnecessária</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_RelacaoMedicopaciente",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoSono",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "INEP2022REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399825771-9"
+    }
+  ]
+}

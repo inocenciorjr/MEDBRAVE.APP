@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase dependency - using ISO string dates
 
 // =============================================================================
 // CORE QUESTION TYPES
@@ -12,7 +12,7 @@ export enum QuestionDifficulty {
   EASY = 'EASY',
   MEDIUM = 'MEDIUM',
   HARD = 'HARD',
-  VERY_HARD = 'VERY_HARD'
+  VERY_HARD = 'VERY_HARD',
 }
 
 /**
@@ -53,34 +53,37 @@ export interface Question {
   title?: string;
   statement: string;
   alternatives: QuestionAlternative[];
-  correctAlternativeId?: string;
+  correct_alternative_id?: string;
   explanation?: string | null;
+  professorComment?: string | null;
   difficulty: QuestionDifficulty;
-  difficultyLevel?: number;
-  filterIds: string[];
-  subFilterIds: string[];
+  difficulty_level?: number;
+  filter_ids: string[];
+  sub_filter_ids: string[];
   tags: string[];
   source?: string | null;
   year?: number | null;
   status: QuestionStatus;
-  isAnnulled: boolean;
-  isActive: boolean;
-  reviewCount: number;
-  averageRating: number;
-  createdBy: string;
-  updatedBy?: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  commentsAllowed?: boolean;
-  lastReviewedAt?: Timestamp | null;
-  reviewStatus?: ReviewStatus;
-  reviewerId?: string | null;
-  reviewNotes?: string | null;
+  is_annulled: boolean;
+  is_outdated: boolean;
+  is_active: boolean;
+  review_count: number;
+  average_rating: number;
+  rating: number;
+  created_by: string;
+  updated_by?: string;
+  created_at: string;
+  updated_at: string;
+  comments_allowed?: boolean;
+  last_reviewed_at?: string | null;
+  review_status?: ReviewStatus;
+  reviewer_id?: string | null;
+  review_notes?: string | null;
   version?: number;
-  relatedQuestionIds?: string[];
-  imageUrls?: string[];
-  videoUrls?: string[];
-  audioUrls?: string[];
+  related_question_ids?: string[];
+  image_urls?: string[];
+  video_urls?: string[];
+  audio_urls?: string[];
   metadata?: Record<string, any>;
 }
 
@@ -89,35 +92,42 @@ export interface Question {
  */
 export type CreateQuestionPayload = Omit<
   Question,
-  'id' | 'createdAt' | 'updatedAt' | 'reviewCount' | 'averageRating'
+  'id' | 'created_at' | 'updated_at' | 'review_count' | 'average_rating'
 >;
 
 /**
  * Payload para atualização de questão
  */
-export type UpdateQuestionPayload = Partial<Omit<Question, 'id' | 'createdAt' | 'updatedAt'>>;
+export type UpdateQuestionPayload = Partial<
+  Omit<Question, 'id' | 'created_at' | 'updated_at'>
+>;
 
 /**
  * Opções para listagem de questões
  */
 export interface ListQuestionsOptions {
   query?: string;
-  userId?: string;
+  user_id?: string;
   limit?: number;
   page?: number;
-  startAfter?: string;
+  start_after?: string;
   status?: QuestionStatus;
   difficulty?: QuestionDifficulty;
   tags?: string[];
-  filterIds?: string[];
-  subFilterIds?: string[];
-  isAnnulled?: boolean;
-  isActive?: boolean;
+  filter_ids?: string[];
+  sub_filter_ids?: string[];
+  is_annulled?: boolean;
+  is_active?: boolean;
   source?: string;
   year?: number;
-  orderBy?: string;
-  orderDirection?: 'asc' | 'desc';
-  excludeTags?: string[];
+  order_by?: string;
+  order_direction?: 'asc' | 'desc';
+  exclude_tags?: string[];
+  exclude_anuladas?: boolean;
+  exclude_desatualizadas?: boolean;
+  search?: string;
+  sort_by?: string;
+  sort_order?: 'asc' | 'desc';
 }
 
 /**
@@ -160,18 +170,18 @@ export enum QuestionListStatus {
  */
 export interface QuestionListItem {
   id: string;
-  questionListId: string;
-  questionId: string;
+  question_list_id: string;
+  question_id: string;
   order: number;
-  personalNotes: string | null;
+  personal_notes: string | null;
   status: QuestionListItemStatus;
-  isCompleted: boolean;
-  addedAt: Timestamp;
-  lastAttemptedAt: Timestamp | null;
-  correctAttempts: number;
-  incorrectAttempts: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  is_completed: boolean;
+  added_at: string;
+  last_attempted_at: string | null;
+  correct_attempts: number;
+  incorrect_attempts: number;
+  created_at: string;
+  updated_at: string;
 }
 
 /**
@@ -188,17 +198,17 @@ export enum QuestionListFolderStatus {
  */
 export interface QuestionListFolder {
   id: string;
-  userId: string;
+  user_id: string;
   name: string;
   description: string | null;
   color: string | null;
   icon: string | null;
-  parentFolderId: string | null;
-  listCount: number;
+  parent_folder_id: string | null;
+  list_count: number;
   status: QuestionListFolderStatus;
   order: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  created_at: string;
+  updated_at: string;
 }
 
 /**
@@ -217,11 +227,11 @@ export interface QuestionList {
   status: QuestionListStatus;
   viewCount: number;
   favoriteCount: number;
-  lastStudyDate: Timestamp | null;
+  lastStudyDate: string | null;
   completionPercentage: number;
-  lastAddedAt: Timestamp | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  lastAddedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
 }
 
 /**
@@ -231,7 +241,7 @@ export interface UserFavoriteQuestionList {
   id: string;
   userId: string;
   questionListId: string;
-  favoritedAt: Timestamp;
+  favoritedAt: string;
 }
 
 // =============================================================================
@@ -326,7 +336,7 @@ export interface UpdateQuestionListItemPayload {
   personalNotes?: string | null;
   status?: QuestionListItemStatus;
   isCompleted?: boolean;
-  lastAttemptedAt?: Timestamp;
+  lastAttemptedAt?: string;
   correctAttempts?: number;
   incorrectAttempts?: number;
 }
@@ -342,16 +352,7 @@ export interface PaginatedQuestionListItemsResult {
 // LEGACY RESPONSE TYPES (mantidos para compatibilidade)
 // =============================================================================
 
-/**
- * Enumeração de qualidade de revisão (FSRS - versão numérica legacy)
- * @deprecated Use ReviewQuality from enhanced.ts
- */
-export enum LegacyReviewQuality {
-  AGAIN = 0,
-  HARD = 1,
-  GOOD = 2,
-  EASY = 3,
-}
+
 
 /**
  * @deprecated Use EnhancedQuestionResponse ao invés de QuestionResponse
@@ -364,13 +365,11 @@ export interface QuestionResponse {
   selectedOptionId: string | null;
   selectedAlternativeId: string | null;
   isCorrectOnFirstAttempt: boolean;
-  answeredAt: Timestamp;
+  answeredAt: string;
   responseTimeSeconds: number;
-  isInReviewSystem: boolean;
-  fsrsCardId: string | null;
-  lastReviewQuality: LegacyReviewQuality;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+
+  createdAt: string;
+  updatedAt: string;
 }
 
 /**
@@ -383,7 +382,7 @@ export interface CreateQuestionResponsePayload {
   selectedOptionId?: string | null;
   selectedAlternativeId?: string | null;
   isCorrectOnFirstAttempt: boolean;
-  reviewQuality?: LegacyReviewQuality;
+
   responseTimeSeconds?: number;
 }
 
@@ -395,13 +394,13 @@ export interface UserQuestionHistory {
   userId: string;
   questionId: string;
   isCorrect: boolean;
-  answeredAt: Timestamp;
+  answeredAt: string;
   difficulty: string;
   topic: string;
   timeSpentMs: number;
   accuracy: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: string;
+  updatedAt: string;
 }
 
 // =============================================================================
@@ -433,7 +432,7 @@ export interface ListCompletionSummary {
   correctAnswers: number;
   accuracy: number;
   totalTimeMs: number;
-  completedAt: Timestamp;
+  completedAt: string;
 }
 
 export interface QuestionWithReviewStatus extends QuestionListItem {
@@ -458,17 +457,11 @@ export interface GranularReviewOptions {
 }
 
 // =============================================================================
-// NOVA ARQUITETURA DE DADOS - FASE 3 REFATORAÇÃO FSRS/SRS
+// NOVA ARQUITETURA DE DADOS - FASE 3 REFATORAÇÃO
 // =============================================================================
 
 // ===== ENUMS COMUNS =====
 export * from './common';
-
-// ===== ENHANCED QUESTION RESPONSE =====
-export * from './enhanced';
-
-// ===== SISTEMA DE RETENÇÃO =====
-export * from './retention';
 
 // ===== ESTATÍSTICAS DE LISTA =====
 export * from './statistics';

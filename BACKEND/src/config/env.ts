@@ -9,15 +9,24 @@ export const env = {
   PORT: parseInt(process.env.PORT || '5000', 10),
   API_URL: process.env.API_URL || 'http://localhost:5000',
 
-  // Configuração do Firebase
-  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || 'medforum-488ec',
-  FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET || 'medforum-488ec.appspot.com',
+  
+
+  // Supabase configuration
+  SUPABASE_URL: process.env.SUPABASE_URL || '',
+  SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY || '',
+  SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || '',
 
   // Configuração de monitoramento
   MONITORING_ENABLED: process.env.MONITORING_ENABLED === 'true',
-  HEALTH_CHECK_INTERVAL: parseInt(process.env.HEALTH_CHECK_INTERVAL || '60000', 10), // 1 minuto
+  HEALTH_CHECK_INTERVAL: parseInt(
+    process.env.HEALTH_CHECK_INTERVAL || '60000',
+    10,
+  ), // 1 minuto
   ALERT_THRESHOLD_CPU: parseInt(process.env.ALERT_THRESHOLD_CPU || '80', 10), // 80%
-  ALERT_THRESHOLD_MEMORY: parseInt(process.env.ALERT_THRESHOLD_MEMORY || '85', 10), // 85%
+  ALERT_THRESHOLD_MEMORY: parseInt(
+    process.env.ALERT_THRESHOLD_MEMORY || '85',
+    10,
+  ), // 85%
   ALERT_EMAIL: process.env.ALERT_EMAIL || '',
   METRICS_PORT: parseInt(process.env.METRICS_PORT || '9090', 10),
   LOG_LEVEL: process.env.LOG_LEVEL || 'info',
@@ -30,7 +39,8 @@ export const env = {
   // Configurações de segurança
   JWT_SECRET: process.env.JWT_SECRET || 'medforum-secret-key',
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '7d',
-  JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET || 'medforum-refresh-secret-key',
+  JWT_REFRESH_SECRET:
+    process.env.JWT_REFRESH_SECRET || 'medforum-refresh-secret-key',
   JWT_REFRESH_EXPIRES_IN: process.env.JWT_REFRESH_EXPIRES_IN || '30d',
   MFA_ISSUER: process.env.MFA_ISSUER || 'MedPulse Academy',
 
@@ -42,7 +52,8 @@ export const env = {
 
   // URLs do frontend
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:5173',
-  PASSWORD_RESET_URL: process.env.PASSWORD_RESET_URL || 'http://localhost:5173/reset-password',
+  PASSWORD_RESET_URL:
+    process.env.PASSWORD_RESET_URL || 'http://localhost:5173/reset-password',
   EMAIL_VERIFICATION_URL:
     process.env.EMAIL_VERIFICATION_URL || 'http://localhost:5173/verify-email',
 
@@ -55,9 +66,9 @@ export const env = {
   PULSE_AI_MAX_TOKENS: parseInt(process.env.PULSE_AI_MAX_TOKENS || '8192', 10),
   PULSE_AI_ENABLE_LOGGING: process.env.PULSE_AI_ENABLE_LOGGING === 'true',
   PULSE_AI_LOG_LEVEL: process.env.PULSE_AI_LOG_LEVEL || 'info',
-    
+
   // Função para verificar ambiente de produção
   isProd(): boolean {
     return this.NODE_ENV === 'production';
-  }
+  },
 };

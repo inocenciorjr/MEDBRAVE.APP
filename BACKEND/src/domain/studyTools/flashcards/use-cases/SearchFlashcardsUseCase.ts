@@ -39,8 +39,8 @@ export class SearchFlashcardsUseCase {
     const searchResults = await this.flashcardRepository.search(query, userId, {
       page,
       limit,
-      sortBy: pagination.sortBy,
-      sortOrder: pagination.sortOrder,
+      sort_by: pagination.sort_by,
+      sort_order: pagination.sort_order,
     });
 
     return searchResults;

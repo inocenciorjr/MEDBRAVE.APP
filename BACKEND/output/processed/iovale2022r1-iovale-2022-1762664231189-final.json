@@ -1,0 +1,2032 @@
+{
+  "metadata": {
+    "examName": "IOVALE2022R1 (IOVALE 2022)",
+    "examYear": 2022,
+    "url": "source://428",
+    "totalQuestions": 60,
+    "categorizedQuestions": 60,
+    "rewrittenComments": 59,
+    "processedAt": "2025-11-09T04:57:11.189Z",
+    "jobId": "batch-1762661968212-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "3bd420de-f412-4f71-b43a-ed662b8d2cab"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Nas infecções do trato urinário adquiridas na comunidade, o agente etiológico mais comum é:",
+      "alternativas": [
+        "Escherichia coli.",
+        "Staphylococcus aureus.",
+        "Klebsiella.",
+        "Staphylococcus epidermidis."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia seu conhecimento fundamental sobre microbiologia clínica, especificamente sobre infecções do trato urinário. O foco está em identificar o agente etiológico predominante em infecções comunitárias.</p><p><strong>A resposta correta é A - Escherichia coli.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Escherichia coli (A):</strong> Representa aproximadamente 70-80% dos casos de infecção do trato urinário adquirida na comunidade. Esta bactéria possui factores de virulência específicos para o trato urinário, como fimbrias que facilitam a adesão ao epitélio urotelial.</p><p><strong>Staphylococcus aureus (B):</strong> Embora possa causar infecções urinárias, é mais frequentemente associado a bacteriemia com metastização para o trato urinário, não sendo um agente primário de ITU comunitária.</p><p><strong>Klebsiella (C):</strong> Pode causar infecções do trato urinário, especialmente em pacientes hospitalizados ou com fatores de risco específicos, mas sua frequência é muito menor comparada à E. coli.</p><p><strong>Staphylococcus epidermidis (D):</strong> É um patógeno de baixa virulência, considerado contaminação de pele ou relacionadas a dispositivos, não sendo relevante em ITU comunitária.</p><p>O conhecimento da epidemiologia de ITU é fundamental para o manejo clínico, orientação de culturas e escolha empírica de antimicrobianos. Conforme dados do Ministério da Saúde, a resistência antimicrobiana de E. coli tem aumentado, tornando essencial a cultura e teste de sensibilidade quando necessário.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Qual dos achados abaixo é menos provável de ser encontrado em um paciente com glomerulonefrite pós-streptocócica?",
+      "alternativas": [
+        "Edema.",
+        "Proteinúria maior ou igual a 500mg/24horas.",
+        "Hipertensão arterial.",
+        "Hemácias dismórficas na urina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre glomerulonefrite pós-streptocócica, uma das glomerulonefrites agudas mais importantes na prática clínica. A questão busca identificar quais achados são características da doença.</p><p><strong>A resposta correta é B - Proteinúria maior ou igual a 500mg/24horas.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Edema (A):</strong> É um achado comum na glomerulonefrite pós-streptocócica, resultado da retenção de sódio e água secundária à disfunção renal e aumento da permeabilidade capilar.</p><p><strong>Proteinúria maior ou igual a 500mg/24horas (B):</strong> Embora ocorra proteinúria na GN pós-estreptocócica, ela é tipicamente LEVE (geralmente <1g/24h). Proteinúria intensa (>500mg/24h) é mais sugestiva de outras glomerulonefrites como a membranosa ou focal e segmentar.</p><p><strong>Hipertensão arterial (C):</strong> Presente em aproximadamente 60-80% dos casos, decorrente da retenção de sal e água, além de possível ativação do sistema renina-angiotensina.</p><p><strong>Hemácias dismórficas na urina (D):</strong> São características e muito frequentes, indicando glomerulopatia com alterações da membrana basal glomerular que permite a passagem de hemácias alteradas.</p><p>Portanto, a proteinúria intensa é menos provável na GN pós-estreptocócica, sendo este o achado que o questionamento busca identificar.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_AsGrandesSindromesGlomerulares"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente de 18 anos, masculino, há 3 meses descobriu diabetes com um quadro de cetoacidose, e, desde então em uso de insulinoterapia combinada (regular/NPH) fracionada, 4u/ 8u de amanhã e 2u/8u à tarde. Apresenta hipoglicemia matinal persistente. Diante deste quadro, sua conduta seria:",
+      "alternativas": [
+        "Fazer um teste de tolerância à glicose.",
+        "Dosar as glicemias das 7:00,12:00 e18:00 horas.",
+        "Dosar as glicemias das 3:00 horas.",
+        "Aumentar a dose da insulina regular vespertina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda uma situação clínica frecuente no manejo do diabetes mellitus: hipoglicemia matinal persistente em paciente em uso de insulina. O conhecimento da fisiopatologia dos níveis glicêmicos é fundamental.</p><p><strong>A resposta correta é C - Dosar as glicemias das 3:00 horas.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Fazer um teste de tolerância à glicose (A):</strong> Não é indicado em paciente já diagnosticado com diabetes em uso de insulina, especialmente com hipoglicemia matinal persistente.</p><p><strong>Dosar as glicemias das 7:00, 12:00 e 18:00 horas (B):</strong> Embora úteis para o controle geral, não ajudam a investigar especificamente a hipoglicemia matinal, pois essas horas são bem posteriores ao período crítico.</p><p><strong>Dosar as glicemias das 3:00 horas (C):</strong> Esta é a conduta correta. A hipoglicemia matinal persistente pode ser causada por dois fenômenos: efeito Somogyi (hipoglicemia durante a madrugada com contra-regulação hormonal) ou dawn phenomenon (resistência à insulina e aumento da glicemia no período da manhã). Dosar às 3:00h permite diferenciar essas condições.</p><p><strong>Aumentar a dose da insulina regular vespertina (D):</strong> Seria um erro, pois se já há hipoglicemia matinal, aumentar a insulina vespertina poderia piorar a situação.</p><p>O diagnóstico diferencial entre efeito Somogyi e dawn phenomenon é crucial para o manejo adequado da insulinoterapia. Na presença de hipoglicemia às 3:00h, caracteriza-se o efeito Somogyi, necessitando reduzir a dose de insulina NPH vespertina.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo1Dm1",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Insulinoterapia",
+        "ClinicaMedica_Endocrinologia_Diabetes_Hipoglicemia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente de 53 anos, masculino, branco, tabagista de 30 cigarros/dia, etilista moderado, asmático, hipertenso há mais de 10 anos que, investigado, ficou classificado como essencial. Apresenta também níveis tensionais de 160 x 100 mmHg, BAV segundo grau no ECG e sinais de hipertrofia ventricular esquerda. O ecocardiograma mostrou hipertrofia ventricular esquerda e déficit de relaxamento diastólico. Dentre as opções farmacológicas abaixo apresentadas, a de sua segunda escolha seria:",
+      "alternativas": [
+        "Enalapril",
+        "Losartana.",
+        "Reserpina.",
+        "Propranolol"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão complexa da IOVALE avalia o conhecimento sobre tratamento farmacológico da hipertensão arterial em paciente com múltiplas comorbidades. A análise de contraindicações e profilaxia de órgãos-alvo é fundamental.</p><p><strong>A resposta correta é B - Losartana.</strong></p><p>Vamos analisar o caso: Paciente de 53 anos com hipertensão essencial, bloqueio atrioventricular de segundo grau, hipertrofia ventricular esquerda e déficit de relaxamento diastólico. O paciente já deve estar em uso de um medicamento de primeira escolha.</p><p><strong>Enalapril (A):</strong> Inibidor da ECA de primeira escolha para hipertensão com hipertrofia ventricular esquerda, com benefícios na profilaxia cardiovascular. Considerando que é a segunda escolha farmacológica, esta seria uma opção, mas não a melhor.</p><p><strong>Losartana (B):</strong> Bloqueador dos receptores de angiotensina II. Uma excelente segunda escolha, especialmente em pacientes com hipertrofia ventricular esquerda, oferecendo proteção cardiovascular comparável aos inibidores da ECA. Pode ser usado em associação com outras classes.</p><p><strong>Reserpina (C):</strong> Não é recomendada como segunda escolha. É um anti-hipertensivo de segunda ou terceira linha, com efeitos colaterais significativos e menor evidência de benefício cardiovascular.</p><p><strong>Propranolol (D):</strong> Contraindicado no bloqueio atrioventricular de segundo grau, pois pode agravar a condução atrioventricular e causar bradicardia severa.</p><p>Dentre as opções seguras e eficazes, losartana oferece excelente proteção cardiovascular e pode ser usada em associação com outras classes de anti-hipertensivos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Assinale a alternativa correta em relação à pancreatite aguda:",
+      "alternativas": [
+        "Os sinais de Grey Turner e de Cullen são comuns e indicam gravidade.",
+        "Estão entre as causas mais frequentes a obstrução do ducto pancreático por cálculo biliar e o consumo abusivo de bebidas alcoólicas.",
+        "A tomografia de abdome é mais sensível que a dosagem das enzimas pancreáticas no diagnóstico.",
+        "A necrose pancreática com infecção sobreposta leva à elevada taxa de mortalidade."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia seu conhecimento sobre pancreatite aguda, abordando aspectos clínicos, fisiopatológicos e prognósticos da doença. É fundamental compreender os sinais físicos e fatores de gravidade.</p><p><strong>A resposta correta é A - Os sinais de Grey Turner e de Cullen são comuns e indicam gravidade.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Os sinais de Grey Turner e de Cullen são comuns e indicam gravidade (A):</strong> Esta alternativa está CORRETA. O sinal de Grey Turner (equimose emflancos) e sinal de Cullen (equimose periumbilical) são sinais de necrose pancreática com sangramento retroperitoneal e indicam pancreatite grave. Eles são indicativos de necrose pancreática com hemorragia, associate com pior prognóstico.</p><p><strong>Estão entre as causas mais frequentes a obstrução do ducto pancreático por cálculo biliar e o consumo abusivo de bebidas alcoólicas (B):</strong> Esta informação está correta, mas a questão pede a ALTERNATIVA CORRETA, e não há mais de uma.</p><p><strong>A tomografia de abdome é mais sensível que a dosagem das enzimas pancreáticas no diagnóstico (C):</strong> Falso. A dosagem de amilase e lipase tem alta sensibilidade para pancreatite aguda, especialmente nas primeiras 48-72 horas. A TC é útil para avaliar complicações e gravidade, mas não é mais sensível que as enzimas no diagnóstico inicial.</p><p><strong>A necrose pancreática com infecção sobreposta leva à elevada taxa de mortalidade (D):</strong> Esta informação está correta, mas a alternativa A também está, e a questão busca a única alternativa correta.</p><p>Os sinais de Grey Turner e Cullen, embora não sejam comuns (ocorrem em cerca de 1-3% dos casos), quando presentes indicam gravidade extrema da pancreatite aguda.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Em relação à doença ulcerosa péptica sangrante, assinale a alternativa correta:",
+      "alternativas": [
+        "As úlceras são causa de sangramento em cerca de metade dos pacientes com varizes de esôfago.",
+        "Doentes em estado grave e sem dieta enteral estão sob maior risco.",
+        "Por tratar-se de hemorragia alta, os pacientes com úlcera péptica não apresentam hematoquezia.",
+        "Os inibidores da bomba de prótons não surtem efeito no sangramento agudo, mas reduzem as taxas de ressangramento."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia seu conhecimento sobre as características clínicas e fisiopatológicas do sangramento por úlcera péptica, especificamente diferenciando hemorragia digestiva alta de outras causas de sangramento gastrointestinal.</p><p><strong>A resposta correta é C - Por tratar-se de hemorragia alta, os pacientes com úlcera péptica não apresentam hematoquezia.</strong></p><p>Vamos analisar cada alternativa detalhadamente:</p><p>A alternativa A está incorreta porque confunde duas entidades distintas. As varizes esofágicas são uma causa de hemorragia digestiva alta completamente diferente das úlceras pépticas. Não existe relação causal entre úlceras pépticas e sangramento em pacientes com varizes esofágicas. As varizes resultam de hipertensão portal, enquanto as úlceras são lesões mucosas gástricas ou duodenais.</p><p>A alternativa B apresenta conceito equivocado. Pacientes com dieta enteral podem desenvolver úlceras de estresse em algumas situações específicas, mas a ausência de dieta enteral não aumenta o risco de sangramento por úlcera péptica clássica. Na verdade, pacientes críticos sem dieta enteral podem ter risco de úlceras de estresse, mas não de úlceras pépticas comuns.</p><p>A alternativa D está incorreta por subestimar o efeito dos inibidores da bomba de prótons (IBPs). Os IBPs são extremamente eficazes no controle do sangramento agudo de úlcera péptica, reduzindo rapidamente a acidez gástrica e promovendo hemostasia local. Além disso, também previnem ressangramento, sendo indicados tanto na fase aguda quanto na manutenção.</p><p>O conceito da alternativa C é fundamental: na hemorragia digestiva alta, o sangue não tem tempo de alcançar o cólon para ser eliminado como hematoquezia (sangue vermelho vivo nas fezes). Pode haver melena (fezes escuras e com sangue digerido) ou hematêmese (vômitos com sangue), mas nunca hematoquezia. Este é um princípio básico da localização de hemorragias digestivas.</p><p><strong>Veredito: Alternativa C é a resposta correta, demonstrando conhecimento sobre a topografia de hemorragias digestivas.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Homem de 58 anos vem apresentando, nos últimos cinco dias, quadro de erisipela em M,I.E., febre, anorexia e evoluindo com redução do volume urinário. O exame físico mostra: paciente orientado, desidratado ++/4, hipocorado ++/4, FR = 32 IPM, temperatura axilar = 38,2ºC, FC = 108 bpm, PA = 90 x 60 mmHg, ritmo cardíaco regular e resultados dos exames complementares: Ht = 26%, Hb = 10%, leucócitos = 14.000/mm3 (15% bastões), glicose = 120mg%, ureia = 86 mg%, creatinina = 1,4mg%, Na = 134, K = 5,2, , pH = 7,28, P02 = 92, PC02 = 29, BE = - 8,3 HC03 = 14 mEq/1. A medida clínica inicial mais apropriada é:",
+      "alternativas": [
+        "Noradrenalina em doses elevadas.",
+        "Hidratação venosa vigorosa, baseada na pressão venosa central e sinais vitais.",
+        "Hemotransfusão para corrigir hemoglobina para 12%.",
+        "Correção da acidose com bicarbonato de sódio endovenoso."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia sua capacidade de priorizar condutas em um paciente com choque séptico secundário a erisipela, com foco na fisiopatologia do choque e nas prioridades do suporte avançado de vida.</p><p><strong>A resposta correta é B - Hidratação venosa vigorosa, baseada na pressão venosa central e sinais vitais.</strong></p><p>Vamos analisar sistematicamente o caso e cada alternativa:</p><p>O paciente apresenta quadro clássico de choque séptico: infecção cutânea (erisipela) com comprometimento sistêmico evidenciado por febre, taquipneia (FR=32), taquicardia (FC=108), hipotensão (PA=90x60), e sinais de hipoperfusão (redução do volume urinário, desidratação, hipocromia).</p><p>Os exames confirmam: anemia (Hb=10%, Ht=26%), leucocitose com desvio à esquerda (14.000 com 15% bastões), disfunção renal (uréia=86, creatinina=1,4), e acidose metabólica compensada (pH=7,28, HCO3=14, BE=-8,3).</p><p>A alternativa A está incorreta porque introduz vasopressores (noradrenalina) antes da reposição volêmica adequada. Em choque séptico, a primeira prioridade é sempre a reposição volêmica vigorosa. Vasopressores só devem ser considerados após otimização do volume intravascular.</p><p>A alternativa C está incorreta. A hemotransfusão não é indicada apenas por anemia aguda sem sangramento ativo. O objetivo é manter hemoglobina >7g/dL em pacientes estáveis e >8-9g/dL em pacientes com doença cardiovascular. Além disso, a prioridade absoluta é o suporte hemodinâmico, não a correção da hemoglobina para valores normais.</p><p>A alternativa D está incorreta porque a correção imediata da acidose com bicarbonato não é recomendada. A acidose metabólica é secundária à hipoperfusão tecidual e deve ser corrigida com o tratamento da causa (hipovolemia e hipoxemia). Bicarbonato só deve ser considerado em acidose muito grave (pH <7,1).</p><p>A alternativa B está correta porque a reposição volêmica vigorosa é a conduta prioritária em choque séptico. Deve ser guiada por parâmetros hemodinâmicos como PVC e sinais vitais, objetivando restaurar a perfusão tecidual e quebrar o ciclo de hipóxia e disfunção orgânica.</p><p><strong>Veredito: Alternativa B é a resposta correta, demonstrando conhecimento sobre as prioridades no manejo do choque séptico.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Paciente de 35 anos, pedreiro, dá entrada no pronto-socorro com quadro de início há 36 horas antes da consulta com cefaleia e mialgias intensas, além de alterações do nível de consciência. Ao exame, apresenta-se torporoso, sem sinais de localização neurológica, rigidez de nuca +/4+, icterícia +++/4+, púrpura e petéquias subconjuntivais; líquor claro com 98 leucócitos, sendo 80% neutrófilos; leucograma com 14.500 leucócitos, 20% bastões; 70 segmentados e 0 (zero) eosinófilo; Na+ = 135 mEq/l; K+ = 2,0 mEq/l; creatinina = 5,2mg/dl; bilirrubina total de 12 mg/dl com 9,0 de direta; TGO e TGP de 100 Ul. O diagnóstico provável e seu diagnóstico diferencial mais importante seriam, respectivamente:",
+      "alternativas": [
+        "Leptospirose/colangite ascendente.",
+        "Meningite meningocócica/ abscesso perinefrético.",
+        "Abscesso hepático originando sépsis / hepatite a vírus.",
+        "SIDA com infecção por citomegalovírus/ meningococcemia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia sua capacidade de integrar sinais clínicos, exames laboratoriais e dados epidemiológicos para formular diagnóstico diferencial em um paciente com quadro neurológico e sistêmico grave.</p><p><strong>A resposta correta é A - Leptospirose/colangite ascendente.</strong></p><p>Vamos analisar detalhadamente o caso e cada alternativa:</p><p>O paciente é um pedreiro (ocupação de risco), apresentando quadro de início há 36 horas com cefaleia, mialgias intensas, alterações do nível de consciência. Ao exame: torpor, rigidez de nuca, icterícia acentuada (+++), púrpura e petéquias subconjuntivais.</p><p>O líquor é claro com pleocitose (98 leucócitos, 80% neutrófilos), e o leucograma mostra leucocitose com desvio à esquerda (14.500, 20% bastões). Os exames bioquímicos revelam insuficiência renal aguda (creatinina=5,2mg/dL), insuficiência hepática (bilirrubina=12mg/dL com 9,0 direta, TGO e TGP=100), e hipocalemia grave (K+=2,0mEq/L).</p><p>A alternativa A está correta. A leptospirose é uma doença causada pela espiroqueta Leptospira, com alta incidência em países tropicais e predileção por profissionais expostos à água e solo contaminados (agricultores, pedreiros, trabalhadores de saneamento). O quadro clássico inclui: síndrome febril com cefaleia e mialgias, icterícia, insuficiência renal aguda, manifestações hemorrágicas (púrpura, petéquias), meningite asséptica (líquor claro com pleocitose neutrofílica), e hipocalemia (devido à perda renal). A colangite ascendente é o diagnóstico diferencial principal, também apresentando icterícia e febre, mas sem o quadro neurológico e as manifestações sistêmicas típicas da leptospirose.</p><p>A alternativa B está incorreta. A meningite meningocócica cursa com líquor purulento (não claro), petéquias características, mas a icterícia não é típica. O abscesso perinefrético não explica o quadro neurológico e a icterícia.</p><p>A alternativa C está incorreta. O abscesso hepático cursa com icterícia e febre, mas raramente causa quadro neurológico agudo. A hepatite viral pode causar icterícia, mas o líquor claro com pleocitose neutrofílica e a hipocalemia não são características típicas.</p><p>A alternativa D está incorreta. SIDA com citomegalovírus cursa com imunodeficiência característica e fígado aumentatdo, mas não explica o líquor claro com pleocitose neutrofílica, a hipocalemia e o quadro neurológico agudo em paciente jovem sem histórico de imunodepressão.</p><p><strong>Veredito: Alternativa A é a resposta correta, demonstrando conhecimento sobre as características clínicas e epidemiológicas da leptospirose.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia_SindromesFebris_Leptospirose"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Em que situação clínica um aumento de creatinina sérica seria explicado apenas por uma redução na taxa de filtração glomerular?",
+      "alternativas": [
+        "Uso de cimetidina em um paciente com úlcera péptica.",
+        "Diabético com bexiga neurogênica.",
+        "Convulsões em paciente com estado epiléptico.",
+        "Contração severa de volume extracelular em paciente com diarreia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia seu conhecimento sobre a fisiopatologia dos aumentos de creatinina sérica, distinguindo situações de redução real da taxa de filtração glomerular (TFG) de outros mecanismos que elevam a creatinina sem comprometer a função renal.</p><p><strong>A resposta correta é D - Contração severa de volume extracelular em paciente com diarreia.</strong></p><p>Vamos analisar cada alternativa em detalhes:</p><p>A creatinina sérica é um marcador indireto da função renal, sendo filtrada livremente pelos glomérulos. A creatinina sérica aumenta quando há redução da TFG, mas também pode ser influenciada por outros fatores como produção muscular, secreção tubular e volume de distribuição.</p><p>A alternativa A está incorreta. A cimetidina inibe competitivamente a secreção tubular de creatinina, reduzindo a depuração de creatinina e elevando seus níveis séricos sem alterar a TFG real. Este é um efeito farmacológico conhecido, não relacionado à redução da filtração glomerular.</p><p>A alternativa B está incorreta. A bexiga neurogênica em diabéticos pode causar retenção urinária, hidronefrose e eventualmente insuficiência renal obstrutiva. Nestes casos, a creatinina aumenta devido à obstrução do fluxo urinário e redução secundária da TFG, não apenas por redução primária da filtração.</p><p>A alternativa C está incorreta. Em estado epiléptico, o aumento da creatinina é multifatorial: desidratação, rabdomiólise com liberação de creatinina muscular, possível necrose tubular aguda por hipóxia prolongada, e aumento da produção muscular por breakdown proteico. Não é explicado apenas por redução da TFG.</p><p>A alternativa D está correta. Na contração severa de volume extracelular por diarreia, a creatinina aumenta devido à redução real e primária da TFG. A hipovolemia causa vasoconstrição renal, redução do fluxo sanguíneo renal e queda da pressão de filtração glomerular. Como consequência direta, há redução da filtração de creatinina e acúmulo sérico. Este é o mecanismo fisiopatológico clássico de insuficiência renal pré-renal, onde a creatinina elevada reflete genuinamente redução da TFG.</p><p><strong>Veredito: Alternativa D é a resposta correta, demonstrando conhecimento sobre os diferentes mecanismos de elevação da creatinina sérica.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850229-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Homem de 45 anos de idade procurou pronto atendimento com queixa de 3 episódios de melena. Estava em uso de AINES para tratamento de lombalgia. Ao exame: PA: 120 x 80mmHg e FC: 80bpm na posição supina e na posição sentado apresentava PA: 90x60mmHg e FC: 120bpm. A primeira conduta a ser tomada neste paciente, é:",
+      "alternativas": [
+        "Passar sonda nasogástrica e lavagem com solução fisiológica 0,9%.",
+        "Solicitar parecer do gastroenterologista.",
+        "Realizar endoscopia digestiva alta de urgência.",
+        "Iniciar reposição vigorosa de volume."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia sua capacidade de reconhecer e priorizar condutas em paciente com hemorragia digestiva aguda em uso de AINEs, focando no suporte hemodinâmico como primeira prioridade em paciente instável.</p><p><strong>A resposta correta é D - Iniciar reposição vigorosa de volume.</strong></p><p>Vamos analisar o caso e cada alternativa em detalhes:</p><p>O paciente é um homem de 45 anos com 3 episódios de melena em uso de AINEs para lombalgia. A mudança postural revela instabilidade hemodinâmica: em decúbito supino apresenta PA=120x80 e FC=80bpm, mas ao senta-se apresentava PA=90x60mmHg e FC=120bpm, caracterizando hipotensão ortostática significativa com taquiardi compensatória.</p><p>Esta apresentação sugere hipovolemia moderada a grave secundária a sangramento digestivo. A melena indica hemorragia digestiva alta, e a história de uso de AINEs sugere úlcera péptica como causa provável.</p><p>A alternativa A está incorreta. A sonda nasogástrica com lavagem pode ser útil em alguns casos de hemorragia digestiva para avaliar atividade do sangramento e limpar o estômago, mas NÃO é a primeira prioridade em paciente hemodinamicamente instável. O suporte hemodinâmico sempre vem antes de procedimentos diagnósticos.</p><p>A alternativa B está incorreta. O parecer do gastroenterologista é importante e deve ser solicitado, mas é a segunda prioridade. Em paciente instável, a primeira conduta deve ser o suporte hemodinâmico imediato, não aguardar parecer especializado.</p><p>A alternativa C está incorreta. A endoscopia digestiva alta é essencial para diagnóstico e tratamento, mas deve ser realizada após estabilização hemodinâmica. Proceder com endoscopia em paciente instável aumenta o risco anestésico e descompensação. A prioridade absoluta é o suporte vital antes de procedimentos diagnósticos.</p><p>A alternativa D está correta. A reposição vigorosa de volume é a primeira prioridade absoluta. O paciente apresenta sinais de hipovolemia (hipotensão ortostática, taquicardia) e provavelmente anemia aguda. A reposição com cristaloides deve ser iniciada imediatamente para restaurar o volume intravascular, melhorar a perfusão tecidual e preparar o paciente para procedimentos subsequentes. Após estabilização, podem ser considerados hemoderivados conforme a necessidade.</p><p><strong>Veredito: Alternativa D é a resposta correta, demonstrando conhecimento sobre a priorização de condutas em emergência hemodinâmica.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Paciente de 62 anos de idade procura atendimento médico devido à cefaleia, palpitações e náuseas, iniciadas há 2 meses. Tem glomerulonefrite crônica com insuficiência renal progressiva. É também portador de DPOC há 8 anos, tratado com broncodilatador e brometo de ipatrópio inalatórios e glicocorticoide em pequena dose há 5 anos. Está em uso de eritropoetina 10.000 unidades subcutânea semanal há 2 meses devido à anemia associada à insuficiência renal. Sem antecedentes de hipertensão arterial. Em sua consulta anterior, realizada há dois meses, apresentava PA = 120 x 80 mmHg e hematócrito de 25% e creatinina de 3,2 mg/dl. No exame atual, apresentava pulso de 96 bpm e PA = 170 x 110 mmHg sem turgência jugular. Ausculta pulmonar e cardíaca sem alterações. Edema de MMII (+/+4) e P = 97 kg. Exames laboratoriais: hematócrito = 36%, ureia = 57 mg/dl, creatinina = 3,5 mg/dl, sódio sérico = 135 mEq/L e potássio: 3,9 mEq/L. O que explicaria a hipertensão de início atual neste paciente?",
+      "alternativas": [
+        "Síndrome de Cushing iatrogênica.",
+        "Piora da insuficiência renal.",
+        "Hipertensão essencial.",
+        "Complicação da administração de eritropoetina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as causas de hipertensão arterial secundária, especificamente em pacientes com doença renal crônica em uso de eritropoetina.</p><p><strong>A resposta correta é D - Complicação da administração de eritropoetina.</strong></p><p>Vamos analisar o caso: paciente de 62 anos com insuficiência renal crônica desenvolveu hipertensão de início recente (PA = 170 x 110 mmHg), após iniciar uso de eritropoetina há 2 meses. Observa-se aumento do hematócrito de 25% para 36% nesse período.</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Síndrome de Cushing iatrogênica:</strong> O paciente está em uso de corticóide inalatório em \"pequena dose\" há 5 anos. Doses baixas de corticóide inalatório raramente causam síndrome de Cushing sistêmica. Além disso, o início da hipertensão coincidedomomento com início da eritropoetina, não com o corticóide.</p><p><strong>B) Piora da insuficiência renal:</strong> A creatinina elevação modestamente de 3,2 para 3,5 mg/dl, não sendo mudança significativa que justifique a elevação pressórica aguda. Hipertensão por piora da função renal usualmente é mais gradual.</p><p><strong>C) Hipertensão essencial:</strong> Inconsistente com o contexto temporal - a hipertensão surgiu exatamente após o início da eritropoetina, e o paciente era normotenso anteriormente.</p><p>O mecanismo da eritropoetina envolve poliglobulia (aumento do hematócrito), aumento da viscosidade sangüínea e vasoconstrição periférica, levando à elevação pressórica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ManejoDaDrc",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ComoDiferenciarDoencaRenalCron",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Qual o agente etiológico da colite pseudomembranosa?",
+      "alternativas": [
+        "Bordetela pertusis.",
+        "Pasteurella.",
+        "Salmonella enteris.",
+        "Clostridium difficile."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre patógenos gastroenterológicos, especificamente relacionado à colite pseudomembranosa.</p><p><strong>A resposta correta é D - Clostridium difficile.</strong></p><p>A colite pseudomembranosa é uma infecção hospitalar comun causada principalmente pelo <em>Clostridium difficile</em>, especialmente após uso de antibióticos que alteram a flora intestinal normal.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Bordetela pertusis:</strong> Causa coqueluche, uma infecção respiratória caracterizada por acessos de tosse. Não está relacionada ao trato gastrointestinal nem à colite pseudomembranosa.</p><p><strong>B) Pasteurella:</strong> Gênero bacteriano associado principalmente a infecções de mordeduras de animais (especialmente gatos e cães) e eventualmente infecções respiratórias. Não causa colite pseudomembranosa.</p><p><strong>C) Salmonella enteris:</strong> Causa salmonelose, uma gastroenterite caracterizada por febre, dor abdominal e diarreia, mas não o quadro específico de colite pseudomembranosa com pseudomembranas características.</p><p><strong>D) Clostridium difficile:</strong> É o agente etiológico clássico da colite pseudomembranosa, produzindo toxinas que causam inflamação da mucosa colônica e formação das características pseudomembranas compostas por fibrina, muco e células inflamatórias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfecoesBacterianas",
+        "ClinicaMedica_Infectologia_InfecoesBacterianas_Endocardite",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaBaixaHdb"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Um paciente, vítima de atropelamento, dá entrada no setor de emergência com dor no dorso e na região inferior do abdome. O exame físico revela palidez cutâneo-mucosa, hipotensão arterial e taquisfigmia. A radiografia mostra fratura da bacia e o lavado peritoneal realizado é negativo. O diagnóstico no caso deve ser de:",
+      "alternativas": [
+        "Lesão do reto.",
+        "Rotura esplênica.",
+        "Embolia gordurosa.",
+        "Hematoma retroperitoneal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre trauma abdominal e diagnóstico de hemorragias ocultas em politraumatizados.</p><p><strong>A resposta correta é D - Hematoma retroperitoneal.</strong></p><p>O paciente vítima de atropelamento apresenta: fratura de bacia, hipotensão arterial, taquisfigmia, palidez e dor no dorso/abdome inferior. O lavado peritoneal foi negativo, o que é crucial para o raciocínio diagnóstico.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Lesão do reto:</strong> Lesões retais em trauma fechado são raras e geralmente associadas a fraturas pélvicas severas. O lavado peritoneal seria provavelmente positivo se houvesse perfuração de víscera oca.</p><p><strong>B) Rotura esplênica:</strong> Causaria hemoperitoneu (líquido livre na cavidade peritoneal), resultando em lavado peritoneal POSITIVO. Além disso, o dorso/abdome inferior não é a localização típica de dor da rotura esplênica (que cursa com dor em hipocôndrio esquerdo e irradiação para ombro esquerdo).</p><p><strong>C) Embolia gordurosa:</strong> Complicação de fraturas (especialmente de ossos longos e pélvis), mas cursa com quadro respiratório (dispneia, hipoxemia), neurológico (alteração do estado mental) e cutâneo (petéquias). A hipotensão e taquisfigmia podem ocorrer, mas não é o diagnóstico mais provável neste contexto.</p><p><strong>D) Hematoma retroperitoneal:</strong> Explica perfeitamente o quadro: fratura de bacia (fonte de sangramento), dor no dorso/região inferior do abdome (típica), hipotensão e taquisfigmia por hipovolemia. O lavado peritoneal negativo é explicado porque o sangramento é retroperitoneal, não intraperitoneal. O hematoma retroperitoneal em fraturas de bacia pode conter até 3-4 litros de sangue.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent_1",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoSecundaria"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Paciente de 20 anos, sexo masculino, vítima de atropelamento, deu entrada no Pronto-Socorro com quadro de dispneia súbita caracterizada por grande esforço respiratório e turgência jugular. Ao exame físico apresenta hipertimpanismo à percussão e abolição do murmúrio vesicular em hemitórax direito. A primeira medida a ser tomada, neste caso, consiste em:",
+      "alternativas": [
+        "Pericardiocentese.",
+        "Toracotomia direita.",
+        "Toracocentese direita.",
+        "Drenagem torácica direita."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia manejo de emergências em traumatismo torácico, especificamente pneumotórax hipertensivo.</p><p><strong>A resposta correta é C - Toracocentese direita.</strong></p><p>O paciente apresenta quadro clássico de pneumotórax hipertensivo: dispneia súbita após traumatismo, grande esforço respiratório, turgência jugular, hipertimpanismo à percussão e abolição do murmúrio vesicular em hemitórax direito.</p><p>Vamos analisar o raciocínio terapêutico:</p><p><strong>A) Pericardiocentese:</strong> Indica-se em tamponamento cardíaco, que cursa com hipotensão,改装心音 abafados e distensão jugular. Não há indicação aqui - o problema é pulmonar, não cardíaco.</p><p><strong>B) Toracotomia direita:</strong> Procedimento de grande porte, indicado em casos extremos de trauma torácico com parada cardiorrespiratória ou sangramento maciço não controlável. É procedimento definitivo, não a primeira medida em pneumotórax hipertensivo.</p><p><strong>C) Toracocentese direita:</strong> <strong>Primeira medida corret</strong>. Em pneumotórax hipertensivo, a descompressão imediata é fundamental para salvar a vida. A toracocentese na linha medioclavicular, 2º espaço intercostal, remove o ar sob pressão, convertendo pneumotórax hipertensivo em pneumotórax simples.</p><<p><strong>D) Drenagem torácica direita:</strong> Indispensável após toracocentese para manter o pulmão expandido e prevenir reacolhimento. entretanto, é um procedimiento mais elaborado que a toracocentese de emergência. A sequência correta é: toracocentese de emergência seguida de drenagem torácica definitiva.</p><p>A turgência jugular indica comprometimento hemodinamico, tornando a descompressão urgente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaToracico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_RespiracaoEVentilacao",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_IndicacoesDeToracotomiaDeEmerg",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Qual o local acometido pela síndrome de Ogilivie e qual a etiologia ?",
+      "alternativas": [
+        "Válvula ílieo-cecal - bolo de áscaris.",
+        "Apêndice vermiforme- processo inflamatório.",
+        "Qualquer porção do trato intestinal baixo - relacionado à alterações da motilidade intestinal.",
+        "Reto e ampola retal - Corpo estranho."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre síndromes de obstrução intestinal funcional, especificamente a síndrome de Ogilivie.</p><p><strong>A resposta correta é C - Qualquer porção do trato intestinal baixo - relacionado à alterações da motilidade intestinal.</strong></p><p>A síndrome de Ogilivie (ou pseudo-obstrução colônica aguda) é uma condição caracterizada por dilatação maciça do cólon na ausência de obstáculo mecânico verdadeiro.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Válvula ílieo-cecal - bolo de áscaris:</strong> A síndrome de Ogilivie pode afetar a válvula ílieo-cecal, mas não é especificamente localizada nela. Além disso, não está relacionada a áscaris (que causaria obstrução mecânica verdadeiro). O áscaris é um parasita roundworm, não causa síndrome de Ogilivie.</p><p><strong>B) Apêndice vermiforme - processo inflamatório:</strong> Apendicite é um processo inflamatório agudo localizado no apêndice, causando dor em fossa ilíaca direita. Não tem relação com a síndrome de Ogilivie, que é uma condição de motilidade.</p><p><strong>C) Qualquer porção do trato intestinal baixo - relacionado à alterações da motilidade intestinal:</strong> <strong>Corret</strong>. A síndrome de Ogilivie pode afetar qualquer segmento do cólon, sendo mais comum no ceco e cólon ascendente. É causada por disfunção do sistema nervoso entérico (especificamenteinervação parassimpática), resultando em perda da motilidade colônica normal e acúmulo de gases e líquids.</p><p><strong>D) Reto e ampola retal - Corpo estranho:</strong> A síndrome de Ogilivie pode eventualmente atingir o reto, mas não é específica desta localização. Além disso, não tem relação com corpos estranhos (que causariam obstrução mecânica verdadeiro). Corpos estranhos retos podem causar sintomas, mas não a síndrome de Ogilivie.</p><p>A síndrome de Ogilivie é mais comum em pacientes hospitalizados, com condições como pós-operatório, sepse,use de medicamentos (anticolinérgicos, opioides) ou distúrbios eletrolíticos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_AnatomiaEFisiologiaDoIntestino",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_SindromeDoIntestinoIrritavel",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_AnatomiaEFisiologiaGastroduode",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "O sinal de Curvoisier-Terrier é característico de qual patologia abdominal?",
+      "alternativas": [
+        "Colecistite aguda.",
+        "Coledocolitíase.",
+        "Pancreatite aguda.",
+        "Câncer de pâncreas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia o conhecimento sobre sinais clínicos característicos em cirurgia abdominal, especificamente o sinal de Courvoisier-Terrier.</p><p><strong>O sinal de Courvoisier-Terrier refere-se à palpação de vesícula biliar distendida e indolor em paciente com icterícia obstrutiva.</strong> Este achado é altamente sugestivo de obstrução biliar por processo neoplásico.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Colecistite aguda:</strong> Falsa. Na colecistite aguda, a vesícula pode estar distendida, mas geralmente é dolorosa e não está associada a icterícia significativa.</p><p><strong>B) Coledocolitíase:</strong> Falsa. O cálculo no colédoco pode causar icterícia, mas raramente produz distensão vesical indolor, sendo mais comum a dor e as crises de cólica biliar.</p><p><strong>C) Pancreatite aguda:</strong> Falsa. A pancreatite aguda não causa distensão vesical característica e o sinal não é específico desta condição.</p><p><strong>D) Câncer de pâncreas:</strong> Correta. O carcinoma de pâncreas, especialmente na cabeça do órgão, causa obstrução biliar progressiva e indolor, levando à distensão da vesícula biliar (sinal de Courvoisier positivo). A ausência de dor ocorre porque o crescimento tumoral é gradual, não causando inflamação aguda.</p><p><strong>Veredito final:</strong> A resposta correta é D - Câncer de pâncreas. Este é um sinal importante na propedêutica cirúrgica, sendo mais específico para processos neoplásicos que causam obstrução biliar crônica e indolor.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "Cirurgia_Pancreas"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "O procedimento inicial de escolha no paciente com pseudo-obstrução do cólon (síndrome de Ogilvie), sem sinais de complicação, é:",
+      "alternativas": [
+        "Colonoscopia descompressiva.",
+        "Colostomia em cólon transverso.",
+        "Arteriografia de mesentérica inferior.",
+        "Colectomia total com ileostomia provisória."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 aborda a conduta inicial no tratamento da pseudo-obstrução do cólon (síndrome de Ogilvie), uma condição que requer abordagem terapêutica escalonada.</p><p>A síndrome de Ogilvie é uma pseudo-obstrução colônica aguda que afeta principalmente pacientes hospitalizados, especialmente pós-operatórios. O tratamento segue uma hierarquia baseada na gravidade e resposta terapêutica.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Colonoscopia descompressiva:</strong> Correta. Esta é realmente a primeira escolha terapêutica na síndrome de Ogilvie sem complicações. A colonoscopia permite descompressão mecânica do cólon dilatado e é eficaz em aproximadamente 70-90% dos casos, evitando procedimentos cirúrgicos mais invasivos.</p><p><strong>B) Colostomia em cólon transverso:</strong> Falsa. Esta é uma opção cirúrgica de segunda linha, reservada para casos refratários à descompressão endoscópica ou quando há complicações como perfuração ou isquemia.</p><p><strong>C) Arteriografia de mesentérica inferior:</strong> Falsa. Este exame não tem papel terapêutico na síndrome de Ogilvie e é desnecessário na maioria dos casos, sendo mais indicado para avaliação de isquemia mesentérica.</p><p><strong>D) Colectomia total com ileostomia provisória:</strong> Falsa. Esta é uma cirurgia de grande porte, reservada para casos extremos com perfuração, necrose ou falha de todas as outras modalidades terapêuticas.</p><p><strong>Veredito final:</strong> A resposta correta é A - Colonoscopia descompressiva. Esta abordagem é menos invasiva, tem alta taxa de sucesso e deve ser sempre tentada antes de medidas cirúrgicas mais drásticas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoObstrutivo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_CausasDeAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_CausasDeAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_CausasDeAbdomeAgudo_AbdomeAgudoCirurgico"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Os tumores carcinoides do tubo digestivo estão localizados mais frequentemente na seguinte região:",
+      "alternativas": [
+        "Reto.",
+        "Cólon.",
+        "Duodeno.",
+        "Apêndice."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia o conhecimento sobre a epidemiologia dos tumores carcinoides do trato digestivo, especificamente sua localização mais frequente.</p><p>Os tumores carcinoides são neoplasias neuroendócrinas que podem surgir em diferentes segmentos do trato gastrointestinal. Conhecer sua distribuição anatômica é fundamental para o diagnóstico e seguimento clínico.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Reto:</strong> Falsa. Embora seja uma localização significativa, corresponde a aproximadamente 15-20% dos casos, sendo mais comum em pacientes asiáticos, mas não a localização mais frequente mundialmente.</p><p><strong>B) Cólon:</strong> Falsa. Os tumores carcinoides colônicos são menos comuns, representando cerca de 8-10% dos casos. Geralmente são diagnosticados em estágios mais avançados devido à ausência de sintomas específicos.</p><p><strong>C) Duodeno:</strong> Falsa. É uma localização rara, correspondendo a apenas 2-3% dos tumores carcinoides do trato digestivo. Pode estar associada à síndrome de Zollinger-Ellison ou outras síndromes neoplásicas endócrinas.</p><p><strong>D) Apêndice:</strong> Correta. A apêndice é a localização mais frequente dos tumores carcinoides do trato digestivo, correspondendo a aproximadamente 35-45% dos casos. A maioria é descoberta incidentalmente durante apendicectomias por outras causas (apendicite). Geralmente são pequenos (<1cm) e de comportamento benigno, com excelente prognóstico após ressecção.</p><p><strong>Veredito final:</strong> A resposta correta é D - Apêndice. Esta é uma informação epidemiológica importante que frequentemente aparece em questões de cirurgia e gastroenterologia.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_NeoplasiasDoSistemaDigestivo",
+        "Cirurgia_CirurgiaInfantil",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_TumoresNeuroendocrinos",
+        "Cirurgia_VesiculaEViasBiliares"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Nos traumatismos abdominais fechados, a chamada hemorragia em dois tempos deve-se a:",
+      "alternativas": [
+        "Tamponamento do vaso pela alça.",
+        "Sangramento após retirada de coágulos.",
+        "Rotura de cápsula esplênica.",
+        "Hematoma da parede intestinal."
+      ],
+      "correta": 2,
+      "professor_comment": "",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent_1",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Qual o antibiótico que deve ser evitado quando se opta pela anestesia geral com relaxante muscular?",
+      "alternativas": [
+        "Cefalotina.",
+        "Clindamicina.",
+        "Defalexina.",
+        "Garamicina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia o conhecimento sobre interações medicamentosas em anestesiologia, especificamente a interação entre antibióticos e relaxantes musculares utilizados em anestesia geral.</p><p>Esta é uma questão clássica que testa o conhecimento sobre farmacologia anestésica e as potenciais complicações que podem surgir da combinação de medicamentos durante procedimentos cirúrgicos.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Cefalotina:</strong> Falsa. As cefalosporinas de primeira geração, como a cefalotina, não têm interação significativa com relaxantes musculares. Podem ser utilizadas com segurança durante anestesia geral.</p><p><strong>B) Clindamicina:</strong> Falsa. A clindamicina pode potencializar ligeiramente o bloqueio neuromuscular, mas não é a interação mais perigosa e não está contraindicada com relaxantes musculares.</p><p><strong>C) Defalexina:</strong> Falsa. Esta opção não corresponde a um antibiótico conocido na prática clínica. A nomenclatura parece incorreta, tornando esta alternativa inválida.</p><p><strong>D) Garamicina:</strong> Correta. A Garamicina (gentamicina), um aminoglicosídeo, deve ser evitada quando se utiliza relaxantes musculares em anestesia geral. Os aminoglicosídeos potencializam significativamente o bloqueio neuromuscular dos relaxantes, podendo causar depressão respiratória grave e necessidade de ventilação mecânica prolongada. Esta interação ocorre porque os aminoglicosídeos interferem na liberação de acetilcolina na junção neuromuscular.</p><p><strong>Veredito final:</strong> A resposta correta é D - Garamicina. Esta é uma interação medicamentosa crítica em anestesiologia que todo profissional deve conhecer para evitar complicações respiratórias graves durante procedimentos cirúrgicos.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AgentesAnestesicos",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares",
+        "Cirurgia_AvaliacaoPreoperatoria"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Mulher jovem de 23 anos com nódulo tireoidiano e metástase lateral cervical é portadora de que tipo de tumor, mais comumente?",
+      "alternativas": [
+        "Folicular.",
+        "Papilífero.",
+        "Medular.",
+        "Linfoma."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre as características biológicas dos diferentes tipos de câncer de tireoide, especificamente em relação ao padrão de metástases.</p><p>O caso apresenta uma mulher jovem de 23 anos com nódulo tireoidiano e metástase lateral cervical. A chave está em lembrar que o carcinoma papilífero de tireoide tem características específicas de apresentação.</p><p><strong>A resposta correta é B - Papilífero.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - Folicular:</strong> Incorreto. O carcinoma folicular tem predomínio para metástases hematogênicas, principalmente para pulmão e ossos. A apresentação com metástases linfonodais cervicais isoladas é mais típica do tipo papilífero.</p><p><strong>Alternativa B - Papilífero:</strong> Correto. O carcinoma papilífero é o mais comum em mulheres jovens e tem grande afinidade por metástases linfáticas cervicais. A apresentação típica inclui nódulo tireoidiano com adenopatia cervical palpable.</p><p><strong>Alternativa C - Medular:</strong> Incorreto. O carcinoma medular deriva de células C e pode apresentar metástases linfonodais, mas é mais comum em pacientes mais velhos e tem associação familiar (MEN 2).</p><p><strong>Alternativa D - Linfoma:</strong> Incorreto. Linfomas de tireoide são raros e geralmente em pacientes mais velhos com tireoidite de Hashimoto. A apresentação como nódulo sólido com metástase cervical pode ocorrer, mas é menos comum que o papilífero.</p><p><strong>Veredito:</strong> O padrão de metástase lateral cervical em mulher jovem é clássico para carcinoma papilífero de tireoide, justificando a alternativa B como correta.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_CarcinomaPapilifero"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "A dose máxima de lidocaína, acima da qual há elevado risco de toxicidade, situa-se entre:",
+      "alternativas": [
+        "1-2mg/Kg",
+        "2-4 mg/Kg.",
+        "4-5 mg/Kg.",
+        "5-7 mg/Kg."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 testa seu conhecimento sobre farmacologia de anestésicos locais, especificamente sobre doses limites para prevenção de toxicidade sistêmica.</p><p>O conhecimento das doses máximas é fundamental para a prática segura em anestesia e procedimentos que utilizam lidocaína.</p><p><strong>A resposta correta é C - 4-5 mg/Kg.</strong></p><p>Vamos analisar as alternativas em ordem crescente de dose:</p><p><strong>Alternativa A - 1-2mg/Kg:</strong> Incorreto. Esta dose está muito abaixo do limite seguro. A lidocaína terapêutica usual varia de 1-3mg/Kg para procedimentos comuns, sem atingir toxicidade sistêmica.</p><p><strong>Alternativa B - 2-4 mg/Kg:</strong> Parcialmente correta até 4mg/Kg, mas incompleta. A faixa terapêutica segura da lidocaína fica entre 2-4mg/Kg, mas o limite de toxicidade é superior a este valor.</p><p><strong>Alternativa C - 4-5 mg/Kg:</strong> Correto. Esta é a dose máxima recomendada onde o risco de toxicidade sistêmica (neurológica e cardiovascular) começa a aumentar significativamente. Acima de 5mg/Kg, o risco se torna muito elevado.</p><p><strong>Alternativa D - 5-7 mg/Kg:</strong> Incorreto. Estas doses estão muito acima do limite seguro e podem causar toxicidade grave, incluindo convulsões e colapso cardiovascular.</p><p><strong>Considerações importantes:</strong> Na prática clínica, considera-se que doses acima de 4-5mg/Kg de lidocaínaplain podem causar toxicidade, especialmente se administradas rapidamente ou em pacientes suscetíveis. Com epinefrina, o limite pode ser estendido para até 7mg/Kg, mas ainda assim com cautela.</p><p><strong>Veredito:</strong> A dose de 4-5 mg/Kg representa o limite superior de segurança para lidocaína sem epinefrina, justificando a alternativa C como correta.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AnestesicosLocais"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "A complicação mais frequente, após um apendicectomia, é:",
+      "alternativas": [
+        "Peritonite pós-operatória.",
+        "Deiscência de sutura.",
+        "Fístula estercoral.",
+        "Infecção no tecido celular subcutâneo (abscesso de parede)."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre complicações pós-operatórias em cirurgia geral, especificamente relacionadas à apendicectomia.</p><p>Complicações cirúrgicas são frequentes e seu conhecimento é essencial para o manejo adequado dos pacientes no período pós-operatório.</p><p><strong>A resposta correta é D - Infecção no tecido celular subcutâneo (abscesso de parede).</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - Peritonite pós-operatória:</strong> Incorreto. A peritonite é uma complicação grave, mas não é a mais comum. Geralmente resulta de deiscência da base apendicular ou perfuração prévia não identificada.</p><p><strong>Alternativa B - Deiscência de sutura:</strong> Incorreto. A deiscência de sutura pode ocorrer, mas é mais comum em anastomoses intestinais. Na apendicectomia, a base do apêndice é geralmente controladda com ligadura ou sutura continua, tendo baixa taxa de deiscência.</p><p><strong>Alternativa C - Fístula estercoral:</strong> Incorreto. A fístula estercoral é uma complicação muito rara na apendicectomia. A menos que haja erro técnico grave ou inflamação extrema, é improvável.</p><p><strong>Alternativa D - Infecção no tecido celular subcutâneo (abscesso de parede):</strong> Correto. Esta é a complicação mais frequente após apendicectomia. Fatores que contribuem incluem: contaminação bacteriana durante o procedimento, técnica cirúrgica, tempo de cirurgia, e fatores do paciente (obesidade, diabetes, imunossupressão). A infecção geralmente se manifesta 5-10 dias pós-operatório com dor, eritema, febre e, às vezes, coleção purulenta na ferida.</p><p><strong>Fatores de risco para infecção de parede:</strong> Apendicite perforada, tempo cirúrgico prolongado, técnica de fechamento, e comorbidades do paciente. O tratamento geralmente inclui drenagem, antibioticoterapia e cuidados locais da ferida.</p><p><strong>Veredito:</strong> A infecção de parede é a complicação mais comum após apendicectomia, ocorrendo em 2-10% dos casos dependendo do tipo de apendicite e técnica utilizada, justificando a alternativa D como correta.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Um paciente de 60 anos, com tumor estenosante de sigmoide, apresenta obstrução intestinal baixa. Na hipótese de a válvula íleo-cecal ser competente, a principal complicação que se pode esperar é:",
+      "alternativas": [
+        "Ruptura do ceco.",
+        "Necrose do cólon.",
+        "Ruptura do cólon transverso.",
+        "Peritonite por translação bacteriana."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre fisiopatologia da obstrução intestinal, especificamente sobre as complicações de obstrução baixa quando a válvula íleo-cecal está competente.</p><p>O conceito de válvula íleo-cecal competente é fundamental para entender as complicações de obstrução intestinal baixa.</p><p><strong>A resposta correta é A - Ruptura do ceco.</strong></p><p>Vamos analisar a fisiopatologia e cada alternativa:</p><p><strong>Mecanismo fisiopatológico:</strong> Na obstrução de intestino grosso, quando a válvula íleo-cecal está competente, não há descompressão automática do intestino delgado para o grosso. Isso resulta em progressiva dilatação do cólon. O ceco, por ser a porção mais calibrosa (6-8cm de diâmetro), está sujeito às maiores pressões.</p><p><strong>Alternativa A - Ruptura do ceco:</strong> Correto. O ceco é o ponto mais vulnerável na obstrução de intestino grosso com válvula íleo-cecal competente. Quando o diâmetro cecal atinge 10-12cm, há risco significativo de perfuração. A pressão intraluminal pode exceder a tensão da parede cecal, causando ruptura.</p><p><strong>Alternativa B - Necrose do cólon:</strong> Incorreto. A necrose pode ocorrer secundariamente, mas a complicação mais precoce e frequente é a ruptura do ceco. A necrose é um evento subsequente à ruptura.</p><p><strong>Alternativa C - Ruptura do cólon transverso:</strong> Incorreto. O cólon transverso tem calibre menor que o ceco e está sujeito a pressões menores. É menos provável de romper primeiro comparado ao ceco.</p><p><strong>Alternativa D - Peritonite por translação bacteriana:</strong> Incorreto. A peritonite pode ser uma consequência da ruptura cecal, mas não é a complicação primária esperada. A translação bacteriana é um processo gradual, não uma complicação aguda imediata.</p><p><strong>Pontos-chave clínicos:</strong> Na obstrução de intestino grosso, deve-se monitorar o diâmetro cecal através de raio-X de abdome. Diâmetros > 7-8cm indicam risco de perfuração. A cirurgia de urgência é indicada para prevenir ruptura cecal.</p><p><strong>Veredito:</strong> A fisiopatologia da obstrução de intestino grosso com válvula íleo-cecal competente predispõe à ruptura do ceco como complicação principal, justificando a alternativa A como correta.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoObstrutivo"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "O efeito termogênico do corpo lúteo pode ser usado clinicamente na avaliação da ovulação através da curva de temperatura basal, por apresentar:",
+      "alternativas": [
+        "Efeitos hipotalâmicos da progesterona.",
+        "Liberação de catecolaminas na região central.",
+        "Ativação de prostagladinas endometriais.",
+        "Indução da atividade dos catecolestrogênios."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre fisiologia reprodutiva, especificamente sobre os mecanismos termogênicos do ciclo menstrual e sua aplicação clínica.</p><p>O conhecimento dos efeitos hormonais sobre a temperatura corporal é fundamental para entender métodos diagnósticos em ginecologia.</p><p><strong>A resposta correta é A - Efeitos hipotalâmicos da progesterona.</strong></p><p>Vamos analisar a fisiologia e cada alternativa:</p><p><strong>Fisiologia do efeito termogênico:</strong> Após a ovulação, o corpo lúteo secreta progesterona em grandes quantidades. A progesterona tem efeitos termogênicos mediados por ação no centro de regulação térmica do hipotálamo, elevando o ponto de ajuste térmico. Isso resulta em aumento de 0,3-0,5°C na temperatura corporal basal.</p><p><strong>Alternativa A - Efeitos hipotalâmicos da progesterona:</strong> Correto. A progesterona atua nos centros termorreguladores hipotalâmicos, especificamente no núcleo pré-óptico, elevando o ponto de ajuste térmico. Este é o mecanismo primário responsável pelo aumento da temperatura basal após a ovulação.</p><p><strong>Alternativa B - Liberação de catecolaminas na região central:</strong> Incorreto. Catecolaminas têm efeito termogênico, mas não são o mecanismo principal do efeito do corpo lúteo. Além disso, a progesterona não estimula significativamente a liberação de catecolaminas centrais.</p><p><strong>Alternativa C - Ativação de prostagladinas endometriais:</strong> Incorreto. Prostaglandinas estão envolvidas na menstruação e na inflamação endometrial, mas não são responsáveis pelo efeito termogênico do corpo lúteo.</p><p><strong>Alternativa D - Indução da atividade dos catecolestrogênios:</strong> Incorreto. Os catecolestrogênios são metabólitos do estrogênio, não da progesterona. Não existe evidência de que a progesterona estimule sua atividade termogênica.</p><p><strong>Aplicação clínica:</strong> A curva de temperatura basal é usada para detectar ovulação. A elevação de 0,3-0,5°C após 14 dias do ciclo indica ovulação e formação do corpo lúteo secretor de progesterona.</p><p><strong>Veredito:</strong> O efeito termogênico do corpo lúteo é mediado pelos efeitos hipotalâmicos da progesterona sobre o centro termorregulador, justificando a alternativa A como correta.",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_CicloMenstrual",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_CicloMenstrual",
+        "Ginecologia_GinecologiaBasica_CicloMenstrual_FisiologiaDoCicloMenstrual"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "No atendimento de paciente vítima de violência sexual, a melhor opção, das abaixo, de contracepção de emergência é o uso de:",
+      "alternativas": [
+        "Levonorgestrel 0,75mg, em 2 doses com intervalo de 12 horas",
+        "Contraceptivos contendo etinilestradiol, na dose de 20 mcg/ dia, por 21dias",
+        "Contraceptivos contendo etinilestradiol, na dose de 30 mcg associados ao gestodene",
+        "Acetato de medroxiprogesterona 10mg/ dia, por 10 dias consecutivos"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre métodos de contracepção de emergência no contexto de violência sexual, tema de grande importância na prática médica e com protocolos bem estabelecidos pelo Ministério da Saúde.</p><p><strong>A resposta correta é A - Levonorgestrel 0,75mg, em 2 doses com intervalo de 12 horas.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> O levonorgestrel em dose única de 1,5mg (ou 0,75mg em duas doses) é considerado o método de primeira linha para contracepção de emergência. É altamente eficaz (redução de 85% na taxa de gravidez), apresenta poucos efeitos colaterais e pode ser utilizado até 120 horas após a violência. O regime de duas doses facilita a adesão.</p><p><strong>Alternativa B (INCORRETA):</strong> Contraceptivos contendo etinilestradiol na dose de 20mcg/dia por 21 dias referem-se ao método de Yuzpe, que era utilizado no passado, mas atualmente é considerado de segunda linha devido à maior incidência de efeitos colaterais (náuseas, vômitos) e menor eficácia comparado aos progestagênios isolados.</p><p><strong>Alternativa C (INCORRETA):</strong> Esta alternativa descreve um anticoncepcional combinado regular (etinilestradiol 30mcg + gestodeno), utilizado como método anticoncepcional de rotina, não como método de emergência. A dose e regime descritos não se aplicam à situação de violência sexual.</p><p><strong>Alternativa D (INCORRETA):</strong> Acetato de medroxiprogesterona em baixas doses diárias não é indicado para contracepção de emergência. Este medicamento é utilizado como anticoncepcional injetável de longa ação ou para outras finalidades endometriais.</p><p>Segundo o Protocolo de Atenção à Saúde e Enfrentamento da Violência Sexual contra Mulheres e Adolescentes do Ministério da Saúde (2025), a melhor opção é realmente o levonorgestrel 1,5mg em dose única ou 0,75mg em duas doses.</p><p>O diagnóstico diferencial aqui envolve conhecer a evolução dos métodos de emergência: enquanto o método de Yuzpe (combinado) era utilizado anteriormente, os progestagênios isolados demonstraram superioridade em eficácia e tolerabilidade.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_ContracepcaoDeEmergencia",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_AtendimentoAVitimaDeViolenciaS",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_Violencia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Paciente de 37 anos apresenta ultrassonografia transvaginal demonstrando massa anexial cística de pequeno volume e sem neovascularização ao estudo do Doppler. Esse quadro sugere:",
+      "alternativas": [
+        "Cisto folicular ovariano.",
+        "Prenhez ectópica.",
+        "Tumor maligno do ovário.",
+        "Abscesso tubovariano."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seus conhecimentos sobre diagnóstico diferencial de massas anexiais baseando-se em achados ultrassonográficos, competência essencial na ginecologia e fundamental para a prática clínica adequada.</p><p><strong>A resposta correta é A - Cisto folicular ovariano.</strong></p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> O cisto folicular ovariano apresenta características ultrassonográficas típicas: é cístico, de pequeno volume, com conteúdo líquido homogêneo, paredes finas e lisa, e importante ausência de neovascularização ao Doppler. Essas características são compatíveis com um processo fisiológico benigno.</p><p><strong>Alternativa B (INCORRETA):</strong> Na prenhez ectópica, especialmente a tubária, os achados ultrassonográficos são diferentes: pode-se observar masa complexa, com possíveis sinais de rotações fluida no fundo de saco posterior, e frequentemente há neovascularização no Doppler, além de massa anexial de consistência complexa, não simples como descrito.</p><p><strong>Alternativa C (INCORRETA):</strong> Tumores malignos ovarianos apresentam características ultrassonográficas distintas: massa complexa com componente sólido, áreas de necrose, septos grossos, vegetações intracísticas, e fundamentalmente há presença de neovascularização com baixo índice de resistência ao Doppler. A ausência completa de neovascularização torna esta hipótese muito menos provável.</p><p><strong>Alternativa D (INCORRETA):</strong> O abscesso tubovariano caracteriza-se por massa complexa com conteúdo espesso (pus), frecuentemente heterogêneo, com possível presença de debris internos, septos e especialmente sinalização vascular aumentada na região inflamatória ao Doppler. A descrição de \"conteúdo simples\" e \"sem neovascularização\" não é compatível com abscesso.</p><p>O raciocínio clínico aqui se baseia na correlação anatomopatológica com a imagem: cistos foliculares são estruturas fisiológicas que resultam do desenvolvimento folicular normal e regridem espontaneamente. A ausência de sinais de malignidade ou inflamação reforça este diagnóstico.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario_1"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Paciente de 25 anos apresenta febre e dor intensa no baixo-ventre. Ao toque, refere dor à mobilização do colo uterino. Palpa-se massa anexial. Os exames mostram leucocitose com desvio para a esquerda, VHS e proteína C reativa elevados. A ultrassonografia transvaginal revela imagem cística anexial de conteúdo espesso medindo 4 cm de diâmetro. A conduta imediata é:",
+      "alternativas": [
+        "Antibiótico aerobicida e anaerobicida parenteral.",
+        "Laparotomia exploradora.",
+        "Laparoscopia cirúrgica.",
+        "Drenagem por culdotomia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 explora um caso clínico clássico de doença inflamatória pélvica (DIP) com formação de abscesso tubo-ovariano, testando suas competências na abordagem diagnóstica e terapêutica de emergências ginecológicas.</p><p><strong>A resposta correta é A - Antibiótico aerobicida e anaerobicida parenteral.</strong></p><p>Vamos analisar detalhadamente cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> Na doença inflamatória pélvica com formação de abscesso tubo-ovariano, a primeira linha de tratamento é a antibioticoterapia parenteral de amplo espectro, cobrindo aeróbios e anaeróbios. O regime deve incluir: 1) cobertura para Chlamydia trachomatis e Neisseria gonorrhoeae; 2) cobertura anaeróbia, especialmente para Bacteroides fragilis. Combinações típicas incluem clindamicina + gentamicina ou cefoxitina + doxiciclina.</p><p><strong>Alternativa B (INCORRETA):</strong> A laparotomia exploradora é procedimento cirúrgico de grande porte indicado em casos de: 1) falha do tratamento clínico após 48-72 horas; 2) ruptura de abscesso com peritonite; 3) deterioração do estado clínico; 4) dúvidas diagnósticas. No caso apresentado, não há indicação imediata de cirurgia, sendo a primeira abordagem o tratamento clínico.</p><p><strong>Alternativa C (INCORRETA):</strong> A laparoscopia cirúrgica pode ser considerada em casos selecionados, especialmente para drainage do abscesso, mas não é a primeira linha. É reservada para casos refratários ou quando há necessidade de intervenção cirúrgica minimamente invasiva após falha do tratamento clínico.</p><p><strong>Alternativa D (INCORRETA):</strong> A drenagem por culdotomia (drenagem transvaginal) é procedimento específico para drenagem de abscessos do fundo de saco de Douglas ou abscessos pélvicos baixos, não para abscesso tubo-ovariano. Requer prévia investigação e exclusão de outras causas.</p><p>O diagnóstico aqui baseia-se na tríade clássica: febre, dor à mobilização do colo uterino e massa anexial, confirmada pelos exames laboratoriais (leucocitose, VHS e PCR elevados) e imagem (massa cística de conteúdo espesso).</p><p>Segundo o Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde para IST/HIV/Hepatites Virais (2025), a antibioticoterapia parenteral é realmente a primeira linha para DIP complicada com abscesso.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_DoencaInflamatoriaPelvica",
+        "Ginecologia_InfeccoesEmGinecologia_DoencaInflamatoriaPelvica_1",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_AbdomeAgudoEmGinecologia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "A propedêutica subsequente ao achado de lesão de alto grau na colpocitologia oncótica é:",
+      "alternativas": [
+        "Repetir a colpocitologia oncótica imediatamente.",
+        "Repetir a colpocitologia oncótica após três (03) meses.",
+        "Realizar colposcopia e biópsia dirigida.",
+        "Realizar conização."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o seguimento adequado após resultado de citologia oncótica patológica, tema fundamental na prevenção secundária do câncer de colo uterino e essencial para a prática preventiva em ginecologia.</p><p><strong>A resposta correta é C - Realizar colposcopia e biópsia dirigida.</strong></p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> Repetir a colpocitologia oncótica imediatamente não é a conduta adequada para lesão de alto grau (HSIL). A repetição imediata pode retardar o diagnóstico definitivo e atrasar o tratamento necessário. O intervalo mínimo de repetição, quando indicado, deve ser de 3-6 meses, dependendo do contexto.</p><p><strong>Alternativa B (INCORRETA):</strong> Repetir a colpocitologia após três meses também não é a conduta ideal para HSIL. Embora a repetição em 3-6 meses seja estratégia válida para algumas alterações de baixo grau (ASC-US, LSIL), para HSIL a tendência é avançar diretamente para avaliação diagnóstica mais específica.</p><p><strong>Alternativa C (CORRETA):</strong> A colposcopia com biópsia dirigida é a conduta padrão ouro para investigação de HSIL. Este método permite visualização magnificada do colo uterino, identificação de áreas suspeitas e coleta de fragmentos para histopatologia, proporcionando diagnóstico definitivo e graduação da lesão.</p><p><strong>Alternativa D (INCORRETA):</strong> A conização é procedimento cirúrgico com finalidade diagnóstica e terapêutica, indicado em situações específicas: 1) discrepância entre citologia e colposcopia; 2) suspeita de invasão; 3) falha da colposcopia em delimitar a extensão da lesão; 4) HSIL em gestantes. Não é a primeira linha de investigação.</p><p>O raciocínio aqui se baseia na necessidade de confirmação histológica da lesão: enquanto a citologia é método de rastreamento, a colposcopia permite avaliação detalhada e a biópsia fornece diagnóstico definitivo. A classificação Bethesda 2001/2012 estabelece este fluxograma como padrão para HSIL.</p><p>Segundo o Protocolo Nacional para Detecção Precoce do Câncer de Colo de Útero do Ministério da Saúde (2025), a conduta para HSIL é efetivamente a colposcopia com biópsia dirigida.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero_CancerDeColoDoUt"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Qual das situações abaixo não é considerada fator de risco estabelecido para câncer de mamas?",
+      "alternativas": [
+        "Diagnóstico prévio de hiperplasia atípica.",
+        "História familiar positiva em parentes de primeiro grau.",
+        "Menarca precoce e menopausa tardia.",
+        "Uso de contraceptivo hormonal oral."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre fatores de risco bem estabelecidos para câncer de mama, competência fundamental para a identificação de pacientes de alto risco e implementação de estratégias preventivas adequadas.</p><p><strong>A resposta correta é D - Uso de contraceptivo hormonal oral.</strong></p><p>Vamos analisar detalhadamente cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> A hiperplasia atípica é considered fator de risco estabelecido para câncer de mama. É uma lesão proliferativa benigna com atipias celulares que aumenta o risco de malignização. mulheres com hiperplasia atípica apresentam risco 4-5 vezes maior que a população geral, representando uma condição pré-neoplásica importante.</p><p><strong>Alternativa B (INCORRETA):</strong> História familiar positiva em parentes de primeiro grau é fator de risco significativo. Mutações nos genes BRCA1 e BRCA2 aumentam substancialmente o risco (50-80% ao longo da vida), e mesmo sem mutação identificada, história familiar aumenta o risco relativo. O risco é especialmente elevado quando há casos em múltiplos parentes ou diagnosticados em idade precoce.</p><p><strong>Alternativa C (INCORRETA):</strong> Menarca precoce e menopausa tardia são fatores de risco estabelecidos. A exposição estrogênica prolongada (menarca antes dos 12 anos e menopausa após os 55 anos) aumenta o risco por manter níveis hormonais elevados por período mais longo. Cada ano adicional de exposição hormonal representa aumento de 3% no risco relativo.</p><p><strong>Alternativa D (CORRETA):</strong> O uso de contraceptivo hormonal oral, especialmente em formulações modernas com baixas doses de estrogênio, NÃO é considerado fator de risco estabelecido. Estudos epidemiológicos modernos demonstraram que os contraceptivos orais atuais não aumentam o risco de câncer de mama. Inclusive, podem ter efeito protetor contra câncer de ovário e endométrio.</p><p>É importante salientar que a questão refere-se a \"contraceptivo hormonal oral\" em geral, não especificando formulações antigas. Em métodos de dose mais alta (utilizados no passado), havia discussão sobre possível aumento de risco, mas atualmente os ACO com baixas doses hormonais são considerados seguros.</p><p>Segundo o Instituto Nacional de Câncer (INCA) e o Consenso Brasileiro de Câncer de Mama (2024/2025), os contraceptivos orais atuais não estão entre os fatores de risco estabelecidos para câncer de mama.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia_CancerDeMama_CancerDeMamaFatoresDeRisco",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia_CancerDeMama_CancerDeMamaEpidemiologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia_CancerDeMama_CancerDeMamaPrevencao"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Dos microorganismos abaixo, NÃO faz parte da microflora vaginal normal:",
+      "alternativas": [
+        "Micoplasmahominis.",
+        "Chlamydia trachomatis.",
+        "Candida albicans.",
+        "Gardnerella vaginalis."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia o conhecimento sobre a microbiota vaginal normal e patogênica, competência fundamental em ginecologia e infectologia.</p><p><strong>A resposta correta é B - Chlamydia trachomatis.</strong> Este microrganismo NÃO pertence à flora vaginal fisiológica e é considerado um patógeno obrigatório.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Mycoplasma hominis:</strong> Considerado parte da flora vaginal normal em até 70% das mulheres assintomáticas. É um microorganismo comensal que não causa doença na maioria dos casos.</p><p><strong>B) Chlamydia trachomatis:</strong> Correta. É um patógeno exclusivo, nunca faz parte da microbiota normal. Causa cervicite, doença inflamatória pélvica e é um dos principais agentes de DST.</p><p><strong>C) Candida albicans:</strong> Comumente presente como parte da flora vaginal comensal (25-30% das mulheres). Torna-se patogênica apenas quando há desequilíbrio da flora.</p><p><strong>D) Gardnerella vaginalis:</strong> Associada à vaginose bacteriana, mas pode estar presente em pequenas quantidades na flora normal. Em concentrações elevadas, causa sintomas.</p><p>A chave para resolver esta questão é distinguir entre microorganismos comensais (que podem estar presentes normalmente) e patógenos obrigatórios (que sempre indicam infecção).</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Há muito se investiga a correlação entre o HPV e a neoplasia cervical e até o momento foram descobertos mais de 60 tipos de HPV. Dentre eles, a maior correlação com a neoplasia cervical ou de maior potencial oncogênico inclui os tipos:",
+      "alternativas": [
+        "6 e11.",
+        "16 e18.",
+        "31e 33.",
+        "43 e 44."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 aborda um dos conceitos mais importantes da ginecologia oncológica: a relação entre tipos específicos de HPV e câncer cervical.</p><p><strong>A resposta correta é B - tipos 16 e 18.</strong> Estes são os HPV de alto risco mais importantes para neoplasia cervical.</p><p>Vamos entender a classificação oncogênica dos HPV:</p><p><strong>A) Tipos 6 e 11:</strong> São HPV de baixo risco, associados principalmente a verrugas genitais (condilomas acuminados) e displasia de baixo grau. Quase nunca evoluem para câncer.</p><p><strong>B) Tipos 16 e 18:</strong> Correta. Representam aproximadamente 70% dos casos de câncer cervical. O HPV 16 é responsável por cerca de 50% e o HPV 18 por 20% dos casos. Ambos produzem as oncoproteínas E6 e E7 que inibem p53 e Rb, promovendo transformação maligna.</p><p><strong>C) Tipos 31 e 33:</strong> Também são HPV de alto risco e podem causar câncer, mas com frequência muito menor que 16 e 18. Juntos representam cerca de 5-10% dos casos.</p><p><strong>D) Tipos 43 e 44:</strong> Classificados como HPV de baixo risco, raramente associados a neoplasia maligna. Predominantemente relacionados a lesões benignas.</p><p>Este conhecimento é crucial para entender a estratégia de prevenção (vacinação contra HPV 16/18) e rastreamento (citologia oncótica).</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Em uma jovem de 22 anos, foi feito diagnóstico de linfogranuloma venéreo. Indique o agente patogênico envolvido:",
+      "alternativas": [
+        "Chlamydia trachomatis.",
+        "Ureaplasma urealyticum.",
+        "Neisseria gonorrhoeae.",
+        "Trichomonas vaginalis."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia o conhecimento sobre as Doenças Sexualmente Transmissíveis (DST), especificamente sobre o linfogranuloma venéreo, uma condição menos comum mas importante no diagnóstico diferencial de úlceras genitais.</p><p><strong>A resposta correta é A - Chlamydia trachomatis.</strong> Especificamente os sorovares L1, L2 e L3 desta bactéria são responsáveis pelo linfogranuloma venéreo.</p><p>Vamos analisar cada agente patogênico:</p><p><strong>A) Chlamydia trachomatis:</strong> Correta. Os sorovares L1-L3 causam linfogranuloma venéreo, enquanto os sorovares D-K causam uretrite e cervicite. A infecção por L1-L3 tem evolução trifásica: úlcera primária transitória, linfadenopatia inguinal/femoral com bubões, e fase tardia com fibrose e elefantíase genital.</p><p><strong>B) Ureaplasma urealyticum:</strong> Causa uretrite não gonocócica e pode estar associado a partos prematuros, mas não está relacionado ao linfogranuloma venéreo.</p><p><strong>C) Neisseria gonorrhoeae:</strong> Responsável pela gonorreia, que cursa com uretrite, cervicite e DIP, mas não causa linfogranuloma venéreo.</p><p><strong>D) Trichomonas vaginalis:</strong> Parasita que causa vaginite com secreção espumosa e prurido, mas não está envolvido no linfogranuloma venéreo.</p><p>O diagnóstico é principalmente clínico-epidemiológico, confirmado por sorologia (teste de fixação do complemento com antígeno específico).</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente de 12 anos, menarca aos 11 anos, é atendida na emergência clínica por sangramento genital intenso. O nível de hemoglobina é de 8,5 g/dL. Nas hipóteses diagnósticas, devem ser considerados, EXCETO:",
+      "alternativas": [
+        "Sangramento disfuncional, anovulatório.",
+        "Gravidez.",
+        "Pólipo.",
+        "Coagulopatia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia o conhecimento sobre as causas de sangramento ginecológico em adolescentes, um tema complexo que requer considerar tanto aspectos fisiológicos quanto patológicos nesta faixa etária.</p><p><strong>A resposta correta é C - pólipo.</strong> Embora pólipos possam causar sangramento, são extremamente raros em adolescentes de 12 anos e devem ser considerados como uma exceção no diagnóstico diferencial.</p><p>Vamos analisar as alternativas em detalhes:</p><p><strong>A) Sangramento disfuncional anovulatório:</strong> Frequente em adolescentes nos primeiros 2-3 anos após a menarca devido à imaturidade do eixo hipotálamo-hipófise-ovário. O sangramento pode ser intenso e levar à anemia. Esta é uma causa COMUM e deve ser considerada.</p><p><strong>B) Gravidez:</strong> Deve sempre ser investigada em qualquer sangramento ginecológico na adolescência, mesmo em idades jovens. Gravidez ectópica, ameaça de aborto e outras complicações podem causar sangramento intenso. É uma possibilidade real e deve ser considerada.</p><p><strong>C) Pólipo:</strong> Resposta correta como EXCEÇÃO. Pólipos endometriais são extremamente raros antes da adolescência tardia. São mais comuns em mulheres adultas jovem. A presença de pólipo em uma menina de 12 anos é uma possibilidade muito remota.</p><p><strong>D) Coagulopatia:</strong> Muchas adolescentes com sangramento intenso têm distúrbios hematológicos não diagnosticados, como doença de von Willebrand (1% da população), púrpura trombocitopênica ou distúrbios da coagulação. Estas condições podem se manifestar como sangramento ginecológico significativo na menarca.</p><p>O raciocínio clínico deve priorizar as causas mais frequentes e clinicamente relevantes primeiro.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal_SangramentoUterinoAnormalClass"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Em caso de suspeita de herpes genital, qual dos seguintes exames deveria ser realizado em primeiro lugar?",
+      "alternativas": [
+        "Exame de campo escuro.",
+        "Teste de Frei.",
+        "Coloração de Gram.",
+        "Esfregaço de Tzanck."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia o conhecimento sobre métodos diagnósticos para herpes genital, uma das DST mais comuns e com importante impacto na saúde pública.</p><p><strong>A resposta correta é D - esfregaço de Tzanck.</strong> É o exame mais indicado para suspeita inicial de herpes genital.</p><p>Vamos analisar cada método diagnóstico:</p><p><strong>A) Exame de campo escuro:</strong> Utilizado principalmente para diagnóstico direto de sífilis (visualização de Treponema pallidum). Não é útil para herpes genital, pois o HSV não é visualizado por este método.</p><p><strong>B) Teste de Frei:</strong> Método de hipersensibilidade tardia usado para diagnóstico de linfogranuloma venéreo (Chlamydia trachomatis sorovares L1-L3). Baseia-se na reação intradérmica com antígeno específico. Não tem relação com herpes genital.</p><p><strong>C) Coloração de Gram:</strong> Útil para identificar diplococos gram-negativos (Neisseria gonorrhoeae) em secreções uretrais ou cervicais. Para herpes genital, pode mostrar células inflamatórias mas não identifica o vírus especificamente.</p><p><strong>D) Esfregaço de Tzanck:</strong> Correta. É o exame de escolha inicial para herpes genital. A técnica consiste em coletar material da base da vesícula, corar com Giemsa ou Wright e examinar ao microscópio. Revela células gigantes multinucleadas características da infecção por herpes, embora não diferencie entre HSV-1 e HSV-2. É rápido, barato e tem boa sensibilidade na fase vesiculosa.</p><p>Para confirmação definitiva, utiliza-se PCR ou cultura viral, mas o Tzanck permanece como primeiro exame pela sua praticidade e custo-benefício.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "O prazo máximo (em horas) para o início da quimioterapia antirretroviral pós exposição ocupacional é:",
+      "alternativas": [
+        "2 horas.",
+        "24 horas.",
+        "48 horas.",
+        "72 horas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre profilaxia pós-exposição ocupacional ao HIV, um tema fundamental em medicina do trabalho e infectologia.</p><p><strong>A resposta correta é D - 72 horas.</strong> Este é o prazo máximo estabelecido pelos protocolos brasileiros para iniciar a terapia antirretroviral após exposição ocupacional.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (2 horas):</strong> Incorreta. Embora a profilaxia deva ser iniciada o mais precocemente possível, o protocolo não estabelece 2 horas como prazo máximo. O importante é iniciar o quanto antes, idealmente até 2 horas, mas há margem até 72 horas.</p><p><strong>Alternativa B (24 horas):</strong> Incorreta. Embora seja um prazo razoável para iniciar, o protocolo brasileiro permite até 72 horas, e alguns estudos mostram benefício mesmo até 96 horas em casos excepcionais.</p><p><strong>Alternativa C (48 horas):</strong> Incorreta. Ainda dentro da janela aceitável, mas o protocolo brasileiro é mais flexível, estabelecendo 72 horas como prazo máximo.</p><p><strong>Alternativa D (72 horas):</strong> Correta. Conforme o Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde (2021) e normativas da ANVISA, o prazo máximo para início da profilaxia pós-exposição ocupacional é de 72 horas.</p><p>O raciocínio clínico envolve balancear a eficácia da profilaxia com a janela de oportunidade do vírus. A PEP é mais eficaz quanto mais precocemente iniciada, mas estudos demonstram benefício até 72 horas após a exposição.</p><p><strong>Veredito final:</strong> Gabarito confirmado como D. Esta questão é crucial para profissionais de saúde que podem enfrentar acidentes perfurocortantes ou exposição a material biológico contaminado com HIV.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_AcidenteDeTrabalho"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "NÃO se relaciona à glomerulonefrite pós- estreptocócica (GNPE):",
+      "alternativas": [
+        "A reação inflamatória atinge todos os glomérulos de ambos os rins.",
+        "A perda da integridade da membrana basal diminui o ritmo de filtração glomerular.",
+        "Há formação de imunocomplexos (Ag-Ac) circulantes com ativação do sistema complemento.",
+        "A diminuição do volume filtrado aumenta a reabsorção tubular de sódio e água."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 explora os mecanismos fisiopatológicos da glomerulonefrite pós-estreptocócica (GNPE), uma doença renal imunomediada importante na prática clínica.</p><p><strong>A resposta correta é C - Há formação de imunocomplexos (Ag-Ac) circulantes com ativação do sistema complemento.</strong> Esta afirmativa NÃO se relaciona à GNPE.</p><p>Vamos analisar cada alternativa e seus mecanismos:</p><p><strong>Alternativa A:</strong> CORRETA para GNPE. A glomerulonefrite pós-estreptocócica é uma glomerulonefrite difusa, afetando todos os glomérulos de ambos os rins. Isso é característico do processo inflamatório sistêmico desta doença.</p><p><strong>Alternativa B:</strong> CORRETA para GNPE. A inflamação glomerular compromete a integridade da membrana basal, reduzindo a filtração glomerular. Isso explica a oligúria e a retenção de resíduos nitrogenados típicas da doença.</p><p><strong>Alternativa C:</strong> INCORRETA para GNPE. Na GNPE, os imunocomplexos NÃO são circulantes. Eles se depositam in situ no glomérulo, formandosubepitelialmente. Esta é a principal diferença mecanística em relação a outras glomerulonefrites por imunocomplexos, como a nefrita lúpica. A ativação do complemento é real, mas o mecanismo de deposição é local, não sistêmica.</p><p><strong>Alternativa D:</strong> CORRETA para GNPE. A redução da filtração glomerular estimula a liberação de renina, aumentando a reabsorção tubular de sódio e água. Isso explica a hipertensão e o edema típicos da síndrome nefrítica.</p><p>O mecanismo fisiopatológico da GNPE envolve depósitos subepiteliais de imunocomplexos (antígenos estreptocócicos + anticorpos), activação do complemento via via alternativa, inflamação local e proliferação mesangial.</p><p><strong>Veredito final:</strong> Gabarito confirmado como C. A questão avalia conhecimento aprofundado sobre os mecanismos moleculares das glomerulonefrites imunomediadas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_AsGrandesSindromesGlomerulares"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Lactente de 15 meses apresenta palidez das palmas das mãos que motivou a solicitação de hemograma, cujo resultado revelou Hgb = 7,5 g/dL, VCM = 68 µ3, RDW = 18% e reticulócitos corrigidos = 0,9%. São achados esperados para o caso em questão",
+      "alternativas": [
+        "Ferritina = 15, porcentagem de saturação em ferro da transferrina = 12, anisocitose e hipocromia.",
+        "Ferritina diminuída, porcentagem de saturação em ferro da transferrina > 16 e HCM =25 pg e anisocitose.",
+        "Ferritina = 10 µg/L, porcentagem de saturação em ferro da transferrina entre 10 e 16, anisocitose e HCM diminuído.",
+        "Ferritina < 10µg/L, porcentagem de saturação em ferro da transferrina <1 2, HCM diminuído e anisocitose."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre anemia ferropriva em pediatria, interpretando hemograma e exames complementares para diagnóstico hematológico.</p><p><strong>Dados do caso:</strong> Lactente de 15 meses com hemoglobina de 7,5 g/dL (anemia), VCM 68 fL (microcitose), RDW 18% (anisocitose) e reticulócitos corrigidos 0,9% (baixa produção). Este padrão é clássico de anemia ferropriva.</p><p><strong>A resposta correta é D - Ferritina < 10µg/L, porcentagem de saturação em ferro da transferrina < 12%, HCM diminuído e anisocitose.</strong></p><p>Análise de cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Embora descreva ferritina baixa e anisocitose/hipocromia (características de ferropriva), erra ao indicar saturação de 12% (estaria diminuída, mas o valor é muito baixo conforme a alternativa correta).</p><p><strong>Alternativa B:</strong> Incorreta. Descreve HCM = 25 pg (muito baixo, característica de hipocromia) e anisocitose (correto), mas erra ao indicar saturação > 16% (na anemia ferropriva, a saturação está diminuída, não aumentada).</p><p><strong>Alternativa C:</strong> Parcialmente incorreta. Ferritina = 10 µg/L (muito baixa, deveria ser < 10) e anisocitose com HCM diminuído estão corretos, mas erra ao indicar saturação entre 10-16% (deveria ser < 12%).</p><p><strong>Alternativa D:</strong> CORRETA. Ferritina < 10 µg/L (ferropsenia severa), saturação < 12% (deficiência de ferro para transporte), HCM diminuído (hipocromia) e anisocitose (RDW elevado). Este padrão é típico da anemia ferropriva em lactente.</p><p>A fisiopatologia da anemia ferropriva em lactentes envolve depleção progressiva das reservas de ferro (ferritina baixa), hipossaturação da transferrina, microcitose e hipocromia. O VCM baixo, HCM baixo e anisocitose (RDW alto) refletem a produção alterada de hemácias.</p><p><strong>Veredito final:</strong> Gabarito confirmado como D. Esta questão é fundamental para diagnóstico de anemia em pediatria, especialmente em lactentes em fase de crescimento rápido.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_HematologiaPediatrica",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_IntroducaoAoEstudoDasAnemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasMicrociticas"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Pré-escolar de quatro anos de idade é trazida ao Pronto Atendimento com cansaço e sibilância há um (1) dia. Possui antecedentes de crises semelhantes. Ao exame: vigil, 52 respirações por minuto e frequência cardíaca de 145 bpm; retração subcostal, sibilos expiratórios difusos e saturação periférica de oxigênio de 89% (no oxímetro de pulso). A primeira conduta consiste em",
+      "alternativas": [
+        "administrar beta dois agonista por via respiratória e reavaliação posterior, pois se trata de crise asmática.",
+        "perguntar à acompanhante sobre medicações já utilizadas e internações prévias.",
+        "solicitar internação imediata, pois se trata de crise asmática com desconforto respiratório.",
+        "suplementar oxigênio através de máscara devido à hipoxemia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia sua capacidade de manejar adequadamente asma infantil grave, priorizando intervenções de emergência em pediatria.</p><p><strong>Dados do caso:</strong> Pré-escolar de 4 anos com história prévia de crises asmáticas, apresentando cansaço, sibilância há 1 dia. Exame físico: FR 52 rpm (taquipneia), FC 145 bpm (taquicardia), retração subcostal, sibilos expiratórios difusos e SpO2 89% (hipoxemia grave).</p><p><strong>A resposta correta é D - suplementar oxigênio através de máscara devido à hipoxemia.</strong></p><p>Análise das alternativas seguindo a priorização em emergências pediátricas:</p><p><strong>Alternativa A:</strong> Incorreta como primeira conduta. Aunque beta-2 agonistas sejam fundamentais no manejo da asma, não é a primeira prioridade quando há hipoxemia grave. O protocolo ABCDE (Aviação, Respiração, Circulação, Disfunção neurológica, Exposição) prioriza a respiração antes da broncodilatação específica.</p><p><strong>Alternativa B:</strong> Incorreta como primeira conduta. Colher história é importante, mas não deve preceder a correção de hipoxemia grave. A pergunta sobre medicações pode ser feita enquanto se administra oxigênio.</p><p><strong>Alternativa C:</strong> Incorreta como primeira conduta. Embora a internação seja provavelmente necessária, primeiro deve-se estabilizar o paciente no pronto atendimento. A prioridade imediata é corrigir a hipoxemia.</p><p><strong>Alternativa D:</strong> CORRETA. A SpO2 de 89% indica hipoxemia grave que pode evoluir para insuficiência respiratória. O oxigênio suplementar via máscara é a primeira prioridade para corrigir a hipoxemia e prevenir comprometimento neurológico e cardíaco.</p><p>O raciocínio clínico segue o algoritmo de emergência pediátrica: ABC (Via aérea, respiração, circulação). A hipoxemia é um problema respiratório agudo que deve ser corrigido imediatamente antes de intervenções específicas para asma.</p><p><strong>Veredito final:</strong> Gabarito confirmado como D. Esta questão avalia sua capacidade de priorizar intervenções em emergências pediátricas, um conceito fundamental para residency médica.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumologiaPediatricaAsma",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumologiaPediatricaAsma",
+        "Pediatria_PneumologiaPediatrica_PneumologiaPediatricaAsma_ClassificacaoETratamentoDaCris",
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Pneumologia_Asma"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Caracteriza a presença de artrite:",
+      "alternativas": [
+        "Dor à palpação articular.",
+        "Derrame articular.",
+        "Dor à movimentação ativa de uma articulação.",
+        "Hiperemia da pele sobrejacente a uma articulação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 avalia seu conhecimento sobre critérios diagnósticos de artrite, um conceito fundamental em reumatologia e traumatologia.</p><p><strong>A resposta correta é B - Derrame articular.</strong> O derrame articular é o único achado que caracteriza definitivamente a presença de artrite.</p><p>Vamos analisar cada alternativa e seus significados clínicos:</p><p><strong>Alternativa A - Dor à palpação articular:</strong> Incorreta. A dor à palpação pode indicar diversos problemas, como tendinites, bursites, capsulite, mas não caracteriza artrite específica. Pode estar presente em condições periarticulares sem envolvimento da articulação propriamente dita.</p><p><strong>Alternativa B - Derrame articular:</strong> CORRETA. O derrame articular (acúmulo de líquido na cavidade articular) é o sinal mais específico de artrite. Indica inflamação da membrana sinovial e presença de processo inflamatório intra-articular. Pode ser detectado clinicamente por flutuação ou pelo Sinal do Balão e confirmado por ultrassom ou punção articular.</p><p><strong>Alternativa C - Dor à movimentação ativa:</strong> Incorreta. Embora seja um sintoma comum na artrite, também pode estar presente em tendinites, bursites, Síndrome de Charcot, ou simplesmente por dor muscular. Não é específica para artrite.</p><p><strong>Alternativa D - Hiperemia da pele sobrejacente:</strong> Incorreta. Hiperemia pode indicar inflamação dos tecidos periarticulares, mas não é específica para artrite. Pode estar presente em celulites, erisipelas ou outras infecções cutâneas proximais à articulação.</p><p>O raciocínio clínico envolve distinguir entre artrite verdadeira (inflamação intra-articular com derrame) e condições periarticulares que simulam artrite. O derrame articular é o sinal gold standard para diagnosticar artrite.</p><p>Outros sinais importantes de artrite incluem aumento de volume articular, calor local, limitação do movimento e crepitação, mas o derrame é o mais específico.</p><p><strong>Veredito final:</strong> Gabarito confirmado como B. Esta questão é essencial para diagnóstico diferencial entre artrite e condições periarticulares em reumatologia.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Reumatologia_DoencasDaCartilagemEDoOsso",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_OrtopediaGeral"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Lucas, 20 meses, vem apresentando febre de 39o C há 4 dias e há 24 horas iniciou vômitos. A mãe refere que o lactente vomita tudo o que ingere. Nega convulsões. Exame físico: estado geral ruim, letárgico, temp. axilar = 39o C e petéquias em face. De acordo com o AIDPI, esta criança apresenta quantos sinais gerais de perigo?",
+      "alternativas": [
+        "3.",
+        "1.",
+        "4.",
+        "2."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o AIDPI (Ação Integrada para Doenças Prevalentes na Infância), especificamente sobre os critérios de identificação de sinais gerais de perigo em lactentes febril.</p><p><strong>A resposta correta é D - 2 sinais de perigo.</strong></p><p>Analisando o caso apresentado: Lucas, 20 meses, com febre de 39°C há 4 dias, vômitos há 24 horas (vomita tudo), estado geral ruim, letárgico, temperatura axilar de 39°C e petéquias em face.</p><p>Conforme o AIDPI, os sinais gerais de perigo em lactentes incluem:</p><p>1. <strong>Letargia ou inconsciência:</strong> O lactente está descrito como 'letárgico' - PRESENTE</p><p>2. <strong>Recusa alimentar ou vômito:</strong> 'Vomita tudo o que ingere' - PRESENTE</p><p>3. <strong>Febre:</strong> 39°C - PRESENTE, mas isoladamente não classifica como sinal de perigo</p><p>4. <strong>Petéquias:</strong> Podem indicar meningococcemia ou outras infecções graves - sinal preocupante, mas é um achado físico específico, não um 'sinal geral de perigo' conforme AIDPI</p><p>Os dois sinais gerais de perigo claramente identificados são letargia e recusa/vômitos. Febre alta é comum, mas isoladamente não configura 'sinal de perigo' unless associada a outros critérios.</p><p>Cada alternativa foi errada pelo seguinte motivo:<br><strong>A) 3 sinais:</strong> Superestimação, apenas 2 sinais gerais de perigo estão presentes;<br><strong>B) 1 sinal:</strong> Subestimação clara;<br><strong>C) 4 sinais:</strong> Superestimação, não há 4 sinais;<br><strong>D) 2 sinais:</strong> CORRETO - letargia e vômitos persistentes.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_PuericulturaGeral",
+        "Pediatria_PuericulturaGeral_SinaisDeAlarme"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Sobre infecção respiratória aguda são verdadeiras (V) ou falsas (F) as afirmativas abaixo: ( ) A maioria das infecções respiratórias em crianças menores de cinco anos de idade, inclusive as pneumonias, é de etiologia viral. ( ) O risco de etiologia bacteriana é diretamente proporcional à duração da doença. ( ) As rinorréias muco-purulentas geralmente indicam infecção bacteriana. ( )Os anti-inflamatórios não-hormonais podem alterar a resposta imunológica e apresentam risco de reações adversas. ( ) Radiografia de seios de face não é indicado para lactentes e pré-escolares. Assinale a alternativa correta:",
+      "alternativas": [
+        "V V F F V.",
+        "V V F V V.",
+        "F V F F V.",
+        "V F F F V."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda os conceitos fundamentais sobre infecção respiratória aguda em pediatria, testando seu conhecimento sobre etiologia, critérios diagnósticos e abordagem terapêutica.</p><p><strong>A resposta correta é B - V V F V V.</strong></p><p>Vamos analisar cada afirmativa:</p><p><strong>1ª AFIRMATIVA (V):</strong> 'A maioria das infecções respiratórias em crianças menores de cinco anos de idade, inclusive as pneumonias, é de etiologia viral.' CORRETA. Estudos do Ministério da Saúde mostram que 80-90% das infecções respiratórias em pré-escolares são virais. Pneumonias virais (VRS, rinovírus, adenovírus) são mais frequentes que bacterianas nesta faixa etária.</p><p><strong>2ª AFIRMATIVA (V):</strong> 'O risco de etiologia bacteriana é diretamente proporcional à duração da doença.' CORRETA. Infecções virais tendem a se resolver em 7-10 dias. Sintomas que persistem além de 14 dias ou que pioram após período inicial sugerem sobreinfecção bacteriana.</p><p><strong>3ª AFIRMATIVA (F):</strong> 'As rinorréias muco-purulentas geralmente indicam infecção bacteriana.' FALSA. Rinorréia mucopurulenta é comum em rinovírus e pode durar 7-10 dias, sendo ainda de etiologia viral. Cor amarelada/verdosa não diferencia viral de bacteriano.</p><p><strong>4ª AFIRMATIVA (V):</strong> 'Os anti-inflamatórios não-hormonais podem alterar a resposta imunológica e apresentam risco de reações adversas.' CORRETA. AINEs podem mascarar sinais de gravidade e estão associados a riscos em infecções virais (ex: complicação de varicela). Protocolos do Ministério da Saúde desencorajam seu uso em lactentes.</p><p><strong>5ª AFIRMATIVA (V):</strong> 'Radiografia de seios de face não é indicado para lactentes e pré-escolares.' CORRETA. A sinusalite em menores de 2 anos é rara e tratamento é empírico. Radiografia não altera conduta e expõe desnecessariamente à radiação.</p><p>Esta questão exige conhecimento dos protocolos brasileiros atualizados pelo MS 2025, que enfatizam diagnóstico clínico, uso criterioso de exames complementares e parcimônia medicamentosa.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Dentre as citadas, as causas mais comuns de dor abdominal aguda em escolares/ adolescentes, pré-escolares e lactentes são representadas respectivamente por",
+      "alternativas": [
+        "Anemia falciforme, constipação intestinal e infecção urinaria",
+        "Hematocolpos, infecção urinaria e psoíte.",
+        "Apendicite, adenite mesentérica e doenças diarreica aguda.",
+        "Cetoacidose diabética, infecção urinaria e doença diarreica aguda."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 evalua seu conhecimento sobre as causas mais comuns de dor abdominal aguda em diferentes faixas etárias pediátricas, um tema fundamental para a prática clínica.</p><p><strong>A resposta correta é C - Apendicite, adenite mesentérica e doença diarreica aguda.</strong></p><p>Esta questão segue um padrão классичним de questões pediátricas: causas diferentes para grupos etários diferentes. A informação clé está na palavra 'respectivamente' - precisamos associar corretamente a causa à faixa etária.</p><p><strong>ANÁLISE POR FAIXA ETÁRIA:</strong></p><p><strong>Escolares/Adolescentes (6-14 anos):</strong> <strong>Apendicite aguda</strong> é a causa cirúrgica mais comum de abdome agudo. Nestes pacientes, o appêndice está em posição típica e os sintomas são mais próximos aos dos adultos. Adenite mesentérica pode ocorrer, mas apendicite é mais frequente.</p><p><strong>Pré-escolares (2-6 anos):</strong> <strong>Adenite mesentérica</strong> é mais comum que apendicite. O sistema linfático mesentérico é mais reativo, e adenite viral pode simular apendicite. Apendicite nesta faixa tem apresentação atípica e é menos frequente.</p><p><strong>Lactentes (0-2 anos):</strong> <strong>Doença diarreica aguda</strong> é a causa mais comum de dor abdominal. A lógica: lactentes têm diarreia frequentemente, e a dor abdominal é um sintoma comumnessociado. Infecção urinária e outras causas são menos frequentes que diarreia.</p><p>Conferindo as alternativas incorretas:<br><strong>A) Anemia falciforme</strong> é rara em lactentes e pré-escolares, sendo mais comum em escolares;<br><strong>B) Hematocolpos</strong> ocorre apenas em meninas pós-menarquicas, não em lactentes;<br><strong>D) Cetoacidose diabética</strong> é rara em lactentes e pré-escolares, sendo mais comum em diabéticos conhecido.</p><p>Esta questão exemplifica a importance do conhecimento epidemiológico etário para diagnóstico diferencial em pediatria.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Segundo o método de Waterlow modificado por Batista, o estado nutricional de um pré-escolar com peso/altura atual = 89% do peso/altura desejados e altura/idade = 92% da ideal para pré-escolares do mesmo gênero e idade, classifica-se como:",
+      "alternativas": [
+        "Desnutrição aguda.",
+        "Subnutrição.",
+        "Eutrofia.",
+        "Desnutrição crônica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre classificação nutricional em pediatria, especificamente sobre o método de Waterlow modificado, que é padrão de referência em programas governamentais brasileiros.</p><p><strong>A resposta correta é D - Desnutrição crônica.</strong></p><p>O método de Waterlow analisa duas dimensões fundamentais:</p><p><strong>1. PESO/ALTURA (desnutrição aguda ou atual):</strong> 89% do desejado - Este valor ainda está na faixa de eutrofia (90-110% é considerado normal). Abaixo de 80% indicaria desnutrição aguda.</p><p><strong>2. ALTURA/IDADE (desnutrição crônica ou pregressa):</strong> 92% da ideal - Este valor, apesar de próximo do normal, indica comprometimento crônico do crescimento. Según padrões OMS, altura/idade < 95% sugere déficits crônicos de crescimento.</p><p>A lógica do Waterlow é:- Se peso/altura < 80%: desnutrição aguda- Se altura/idade < 90%: desnutrição crônica  - Se ambos comprometidos: desnutrição global- Se ambos normais: eutrofia</p><p>Neste caso: peso/altura 89% (ainda eutrofia) + altura/idade 92% (sugestivo de cronicidade) = <strong>desnutrição crônica</strong>.</p><p>Interpretando o significado clínico: a criança tem crescimento estatural comprometido, indicando que vem sendo submetida a condições desfavoráveis prolongadas (desnutrição crônica, doenças de base não controladas, más condições socioeconômicas), mas o peso ainda acompanha a altura atual de forma relativamente preservada.</p><p>As outras alternativas estão incorretas porque:<br><strong>A) Desnutrição aguda:</strong> peso/altura ainda está adequado (89%);<br><strong>B) Subnutrição:</strong> termos não oficial em classificação Waterlow;<br><strong>C) Eutrofia:</strong> altura/idade comprometida indica cronicidade.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura_DiagnosticoNutricional_Desnutricao"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Lactente de oito meses de idade é atendido na UBS da sua comunidade com quadro de resfriado comum há três dias. Exame objetivo: bom estado geral, temp. axilar = 36,7o C. No Cartão da Criança, verifica-se a seguinte cobertura vacinal: BCG na alta neonatal (sem cicatriz); vacina contra hepatite B (HB): duas doses no 1o e 30o dias de nascimento; 1a(s) doses das DPT+Hib, VOP (vacina oral contra poliomielite) e anti rotavírus monovalente humana (VORH) aos dois meses de idade. De acordo com o PNI/MS do Brasil, nesse lactente, na oportunidade, devem-se aplicar as seguintes vacinas:",
+      "alternativas": [
+        "DPT+Hib, BCG, VOP e VORH.",
+        "DPT+Hib, HB e VOP.",
+        "DPT+Hib, HB, VOP e VORH.",
+        "DPT+Hib, BCG, HB e VOP."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca IOVALE 2022 testa seu conhecimento sobre o esquema vacinal brasileiro, especificamente sobre avaliação de carteirinha e identificação de vacinas pendentes. É um tema que rotineiramente confunde candidatos, sendo essencial para prática clínica.</p><p><strong>A resposta correta é A - DPT+Hib, BCG, VOP e VORH.</strong></p><p>Analisando a situação do lactente de 8 meses com a seguinte carteirinha:<ul><li>BCG: alta neonatal SEM CICATRIZ (dose inadequada)</li><li>HB: 2 doses (1º e 30º dia) - INCOMPLETO (faltam 2ª dose aos 6 meses + reforço)</li><li>DPT+Hib: 1 dose aos 2 meses - INCOMPLETO (precisa 2ª dose aos 4 meses + reforço)</li><li>VOP: 1 dose aos 2 meses - INCOMPLETO (precisa 2ª dose aos 4 meses + reforço)</li><li>VORH: 1 dose aos 2 meses - ADEQUADO (são 2 doses, mas 1 dose já confere proteção parcial)</li></ul></p><p><strong>VACINAS QUE PRECISAM SER APLICADAS NESTA CONSULTA:</strong></p><p>1. <strong>DPT+Hib:</strong> 2ª dose (aos 4 meses estava atrasada, e agora aos 8 meses pode ser dada)</p><p>2. <strong>BCG:</strong> REVACINAR (sem cicatriz indica insucesso da dose anterior)</p><p>3. <strong>VOP:</strong> 2ª dose (atrasada desde 4 meses)</p><p>4. <strong>VORH:</strong> OPCIONAL (1 dose já foi dada, mas esquemas incompletos podem ser completados até 8 meses)</p><p><strong>NÃO deve ser dada HB nesta consulta:</strong> A segunda dose da HB deve ser dada aos 6 meses de idade, preferencialmente junto com a terceira dose de DPT+Hib e VOP. Dar uma dose isolada de HB aos 8 meses não interfere no calendário, mas não é prioridade neste momento.</p><p>As alternativas incorretas:- <strong>B e C:</strong> Não incluem BCG, que é obrigatório devido à ausência de cicatriz- <strong>D:</strong> Inclui HB desnecessariamente nesta oportunidade</p><p>Este tipo de questão é muito comum em provas de residência médica e require conhecimento prático do PNI/MS 2025.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura_PuericulturaGeral_ConsultasEmPediatria"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Segundo a OMS, NÃO se refere ao manejo da doença diarreica aguda:",
+      "alternativas": [
+        "Soro caseiro no plano B.",
+        "Manutenção da dieta no plano A.",
+        "Suplementação de zinco.",
+        "Reidratação em Unidade Básica de Saúde."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia seu conhecimento sobre os protocolos da Organização Mundial da Saúde para o manejo da diarreia aguda em crianças, especificamente sobre os diferentes planos de tratamento.</p><p><strong>A resposta correta é A - Soro caseiro no plano B.</strong> O soro caseiro é utilizado no plano A (diarreia sem desidratação), não no plano B.</p><p>Vamos analisar a organização dos planos da OMS para diarreia aguda:</p><p><strong>Plano A:</strong> Diarreia sem desidratação. Utiliza soro caseiro caseiro para prevenção da desidratação, mantém dieta normal e suplementa zinco. A criança é tratada em casa.</p><p><strong>Plano B:</strong> Diarreia com desidratação leve. Requer uso de Soro de Reidratação Oral (SRO) fornecido pela Unidade Básica de Saúde, não soro caseiro. É um produto padronizado com composição específica.</p><p><strong>Plano C:</strong> Diarreia com desidratação grave. Requer internação e reidratação endovenosa.</p><p>Analisando as alternativas:</p><p><strong>B) Manutenção da dieta no plano A:</strong> CORRETA. Mantém a dieta durante a diarreia é parte do plano A.</p><p><strong>C) Suplementação de zinco:</strong> CORRETA. O zinco é recomendado pela OMS para crianças com diarreia aguda em todos os planos.</p><p><strong>D) Reidratação em Unidade Básica de Saúde:</strong> CORRETA. É o local indicado para o plano B.</p><p>A alternativa A está incorreta porque confunde a indicação do soro caseiro, que pertence ao plano A, não ao plano B.</p><p><strong>Veredito:</strong> A alternativa A é a única incorreta, pois o soro caseiro é usado no plano A, não no plano B.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Nos casos de lactentes com diarreia aguda que se apresentam com sangue nas fezes e que após a reidratação mantêm o estado geral comprometido, está indicado o uso de:",
+      "alternativas": [
+        "Anti-helmíntico e Soro de Reidratação Oral (S.R.O.).",
+        "Antimicrobianos e hemotransfusão.",
+        "Antiespasmódico e dieta isenta de leite de vaca.",
+        "Antimicrobianos."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o manejo específico de lactentes com diarreia aguda complicada por sangue nas fezes e compromiso do estado geral, avaliando a necessidade de antimicrobianos nestas situações.</p><p><strong>A resposta correta é D - Antimicrobianos.</strong></p><p>Vamos entender a fisiopatologia e indicações:</p><p>Lactentes com diarreia que apresentam sangue nas fezes após reidratação, mas mantêm estado geral comprometido, sugerem causas bacterianas que requerem tratamento específico com antimicrobianos.</p><p>As principais causas de diarreia sanguinolenta em lactentes incluem:</p><p>• <strong>Shigella:</strong> Uma das principais causas de disenteria em crianças pequenas. É uma infecção invasiva que justifica o uso de antimicrobianos.</p><p>• <strong>Salmonella:</strong> Pode causar diarreia sanguinolenta, especialmente em lactentes.</p><p>• <strong>Campylobacter:</strong> Causa comum de gastroenterite sanguinolenta.</p><p>• <strong>E. coli enteroinvasiva:</strong> Causa quadros disentéricos.</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Anti-helmíntico e S.R.O.:</strong> INCORRETA. Anti-helmínticos não têm indicação em diarreia aguda bacteriana. A reidratação é importante, mas insuficiente isoladamente.</p><p><strong>B) Antimicrobianos e hemotransfusão:</strong> PARCIALMENTE CORRETA. Os antimicrobianos estão corretos, mas hemotransfusão só seria indicada se houvesse sangramento significativo com anemia severa, o que não foi mencionado.</p><p><strong>C) Antiespasmódico e dieta isenta de leite de vaca:</strong> INCORRETA. Antiespasmódicos não têm indicação em diarreia aguda e podem ser prejudiciais. A exclusão do leite de vaca é mais indicada em casos de intolerância secundária, não na fase aguda.</p><p>A questão avalia conhecimento sobre quando instituir antimicrobianos em pediatria - especificamente em casos de diarreia bacteriana invasiva com compromiso do estado geral.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda_TratamentoGeral",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Para lactente de oito meses com diarreia aguda, fezes aquosas, vômitos persistentes, febre alta, distensão abdominal, convulsões há uma hora, sonolento e sinais de desidratação leve, deverão ser tomadas as seguintes medidas terapêuticas:",
+      "alternativas": [
+        "Referir imediatamente a um hospital em ambulância com suporte.",
+        "Iniciar terapia de reidratação oral (T.R.O.) em unidade básica de saúde e acompanhar clinicamente a resposta com possibilidade de transferir para hospital",
+        "Iniciar T.R.O. e sintomáticos. Iniciar T.R.O. e antimicrobianos, com recomendação de retornar após vinte e quatro horas.",
+        "Iniciar T.R.O., antimicrobiano e referir para hospital mais próximo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia critérios de gravidade e necessidade de referência hospitalar em pediatria, testando seu conhecimento sobre quando uma situação clínica ultrapassa os limites da atenção primária.</p><p><strong>A resposta correta é A - Referir imediatamente a um hospital em ambulância com suporte.</strong></p><p>Vamos analisar este caso de lactente de 8 meses com múltiplos sinais de gravidade:</p><p><strong>Sinais de alarme presentes:</strong></p><p>• <strong>Convulsões:</strong> Indicam comprometimento neurológico grave</p><p>• <strong>Febre alta:</strong> Sugere processo infeccioso sistêmico</p><p>• <strong>Distensão abdominal:</strong> Pode indicar complicação intra-abdominal</p><p>• <strong>Sonolência:</strong> Sinais de comprometimento do estado geral</p><p>• <strong>Desidratação leve:</strong> Associates aos outros sintomas</p><p>Esta combinação de sinais coloca o paciente em estado GRAVE que requer:</p><p>• <strong>Monitorização contínua</strong></p><p>• <strong>Reidratação endovenosa</strong></p><p>• <strong>Investigação diagnóstica ampliada</strong></p><p>• <strong>Possível internação</strong></p><p>Analisando as alternativas incorretas:</p><p><strong>B) T.R.O. em UBS:</strong> INCORRETA. A Terapia de Reidratação Oral não é suficiente em paciente com sinais neurológicos (convulsões) e estado geral comprometido.</p><p><strong>C) T.R.O. e sintomáticos:</strong> INCORRETA. O quadro neurológico (convulsões) exige investigação urgente e tratamento especializado.</p><p><strong>D) T.R.O., antimicrobiano e referir:</strong> INCORRETA. O T.R.O. não deve ser iniciado em paciente com comprometimento neurológico e sinais de alarme.</p><p><strong>Critério fundamental:</strong> Paciente com convulsões, febre alta, distensão abdominal e alteração do estado geral deve ser referir urgentemente para cuidados intensivos pediátricos.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda",
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas_ChoqueEmPediatria"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "De acordo com a Organização Mundial de Saúde (OMS) as variáveis de maior sensibilidade na avaliação do estado de hidratação são:",
+      "alternativas": [
+        "Condição geral, umidade das conjuntivas, sinal da prega e umidade da mucosa oral.",
+        "Condição geral, pulso, turgor dos olhos e tempo de enchimento capilar.",
+        "Condição geral, turgor dos olhos, sede e sinal da prega.",
+        "Condição geral, sinal da prega, sede e perda de peso.",
+        "Condição geral, tempo de enchimento capilar, presença de saliva e pulso."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 foi ANULADA, conforme indicado pelo gabarito @.</p><p>Após análise detalhada, identifiquei que a questão apresenta <strong>mais de uma alternativa potencialmente correta</strong>, gerando ambiguidade na resposta.</p><p>Vamos analisar cada alternativa baseada nas diretrizes da OMS:</p><p><strong>Critérios OMS para avaliação de hidratação em crianças:</strong></p><p>As variáveis de maior sensibilidade na OMS incluem:</p><p>1. <strong>Condição geral</strong> - presente em todas as alternativas</p><p>2. <strong>Sede</strong> - muito sensível para desidratação</p><p>3. <strong>Sinal da prega</strong> - exame físico fundamental</p><p>4. <strong>Umidade das mucosas</strong> - indicador precoce</p><p><strong>Alternativa A:</strong> Condição geral, umidade das conjuntivas, sinal da prega e umidade da mucosa oral. Combinação válida segundo OMS.</p><p><strong>Alternativa C:</strong> Condição geral, turgor dos olhos, sede e sinal da prega. Combinação também válida e altamente sensível.</p><p><strong>Alternativa D:</strong> Condição geral, sinal da prega, sede e perda de peso. A perda de peso é o melhor indicador, mas pode ser difíceis de mensurar em todas as situações.</p><p><strong>Problema identificado:</strong> As alternativas A, C e D contêm combinações que são consideradas válidas e de alta sensibilidade pela OMS, tornando a questão ambígua.</p><p>Por essa razão, a questão foi anulada pela banca, pois não havia uma única resposta claramente superior às demais. Este é um exemplo de questão que apresenta múltiplas interpretações corretas das diretrizes da OMS.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "Pediatria_GastrologiaPediatrica"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "\"Todas as causas de doença e morte são decorrentes de quatro fatores interligados: 1) as características biofísicas do indivíduo; 2) o estilo de vida e comportamento; 3) a poluição e agravos ambientais; e 4) a inadequação e incompetência dos serviços de saúde.\" Este conceito de Campo de Saúde consta na(no):",
+      "alternativas": [
+        "Carta de Ottawa.",
+        "Relatório Lalonde.",
+        "Declaração de Alma-Ata.",
+        "Lei Orgânica do SUS."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da IOVALE 2022 avalia seu conhecimento sobre conceitos fundamentais de saúde pública e as principais declarações e documentos que moldaram as políticas de saúde mundiais.</p><p><strong>A resposta correta é B - Relatório Lalonde.</strong></p><p>Vamos entender o contexto histórico e os documentos:</p><p><strong>Relatório Lalonde (1974):</strong> Nomeado após o Ministro da Saúde do Canadá, Marc Lalonde, foi revolucionário ao propor que a saúde é influenciada por quatro campos principais:</p><p>1. <strong>Biológico:</strong> Características biofísicas do indivíduo</p><p>2. <strong>Comportamental:</strong> Estilo de vida e comportamento</p><p>3. <strong>Ambiental:</strong> Poluição e agravos ambientais</p><p>4. <strong>Assistencial:</strong> Inadequação e incompetência dos serviços de saúde</p><p>Este conceito foi fundamental para o desenvolvimento da <strong>Promoção da Saúde</strong> e influenciou todas as políticas subsequentes.</p><p>Analisando as alternativas incorretas:</p><p><strong>A) Carta de Ottawa (1986):</strong> Estabeleceu cinco áreas de ação para promoção da saúde: políticas públicas saudáveis, ambientes favoráveis, reforço da ação comunitária, desenvolvimento de habilidades pessoais e reorientação dos serviços de saúde. Não define especificamente os quatro campos.</p><p><strong>C) Declaração de Alma-Ata (1978):</strong> Definiu a <strong>Atenção Primária à Saúde</strong> como clave para alcançar <em>Saúde para Todos no Ano 2000</em>. Foca na universalidade, integralidade e equidade.</p><p><strong>D) Lei Orgânica do SUS (1990):</strong> Marco legal do SUS brasileiro, estabelece princípios doutrinários (universalidade, integralidade, equidade) e organizativos (descentralização, integralidade, participação popular). Não é um documento conceitual internacional.</p><p><strong>Importância histórica:</strong> O Relatório Lalonde foi pioneiro ao demonstrar que a saúde vai além dos serviços médicos, influenciando décadas de políticas de saúde pública mundial.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_HistoriaDoSistemaUnicoDeSaudeS",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_1"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-49"
+    },
+    {
+      "numero": "Q51",
+      "enunciado": "A fluoretação das águas para consumo humano é uma medida que se enquadra entre os níveis de prevenção como:",
+      "alternativas": [
+        "Promoção à saúde.",
+        "Proteção específica.",
+        "Diagnóstico e tratamento precoce.",
+        "Limitação do dano."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia seu conhecimento sobre os níveis de prevenção em saúde pública, especificamente classificando medidas de saúde coletiva.</p><p><strong>A resposta correta é B - Proteção específica.</strong> A fluoretação das águas de consumo humano se enquadra nesse nível porque atua diretamente na prevenção de uma doença específica: a cárie dentária.</p><p>Para entender melhor a classificação dos níveis de prevenção:</p><p><strong>Promoção à saúde (A)</strong> compreende ações gerais que melhoram as condições de vida e trabalho da população, como educação em saúde, melhoria das condições socioeconômicas e informação sobre hábitos saudáveis.</p><p><strong>Proteção específica (B)</strong> são medidas direcionadas contra doenças particulares, como vacinação, fluoretação da água, suplementação de iodo no sal, uso de preservativos para prevenção de ITS.</p><p><strong>Diagnóstico e tratamento precoce (C)</strong> focam na identificação precoce de doenças através de rastreamento, como mamografia, Papanicolau, triagem neonatal.</p><p><strong>Limitação do dano (D)</strong> envolve medidas para evitar complicações e sequelas após o estabelecimento da doença, como reabilitação, cirurgias reconstrutoras.</p><p>A fluoretação é um exemplo clássico de proteção específica porque atua diretamente no agente (bactérias cariogênicas) e no meio de transmissão (placa bacteriana), prevenindo a instalação do processo carioso.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeSaudeColetiva"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-50"
+    },
+    {
+      "numero": "Q52",
+      "enunciado": "Em relação à mortalidade, analise as afirmações abaixo e, em seguida, assinale o item correto. I) O Ministério da Saúde adotou uma Declaração de óbito padronizada para todo o Brasil. II) A causa básica do óbito deve ser escrita em primeiro lugar,na parte I da Declaração de Óbito. III) A informação recolhida por Censos e Pesquisas Nacionais pode ser utilizada para estimar indicadores de mortalidade. IV) Quanto mais elevado o índice de Swaroop & Uemura tanto piores serão as condições de saúde e de vida de uma população. Assinale a alternativa correta:",
+      "alternativas": [
+        "II.",
+        "I e II.",
+        "I e III.",
+        "II e IV."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia conhecimentos fundamentais sobre mortalidade, causas de óbito e indicadores epidemiológicos em saúde pública.</p><p><strong>A resposta correta é C - I e III.</strong> Vamos analisar cada afirmação:</p><p><strong>I) CORRETA:</strong> O Ministério da Saúde realmente adotou uma Declaração de Óbito padronizada para todo o Brasil através da Portaria nº 116/2009. Este documento oficializa o modelo da Declaração de Óbito, garantindo uniformidade nacional na coleta de dados sobre mortalidade.</p><p><strong>II) INCORRETA:</strong> A causa básica do óbito deve ser escrita no final da parte I, não em primeiro lugar. A estrutura correta é: Parte I - linha (a) causa imediata, linha (b) causa intermediária, linha (c) causa básica; Parte II - outras condições importantes.</p><p><strong>III) CORRETA:</strong> Censos e pesquisas nacionais (como o Censo Demográfico do IBGE, Pesquisa Nacional por Amostra de Domicílios) fornecem dados demográficos e de mortalidade que permitem calcular indicadores como taxa bruta de mortalidade, esperança de vida, mortalidade infantil.</p><p><strong>IV) INCORRETA:</strong> O índice de Swaroop & Uemura mede a proporção de mortes de pessoas com 50 anos ou mais. Quanto maior este índice, melhores são as condições de saúde e vida da população, pois indica que as pessoas vivem mais tempo antes de morrer.</p><p>Portanto, apenas as afirmações I e III estão corretas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeSaudeColetiva"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-51"
+    },
+    {
+      "numero": "Q53",
+      "enunciado": "As flutuações, na incidência de uma doença, ocorridas em um período maior que um ano é denominada de:",
+      "alternativas": [
+        "Endemia.",
+        "Surto.",
+        "Variações sazonais.",
+        "Variações cíclicas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia seu conhecimento sobre os conceitos de frequência de doenças em epidemiologia, especificamente os diferentes padrões temporais de ocorrência.</p><p><strong>A resposta correta é D - Variações cíclicas.</strong> As variações cíclicas referem-se a flutuações na incidência de uma doença que ocorrem em períodos superiores a um ano, criando padrões cíclicos ou sazonais de longo prazo.</p><p>Vamos esclarecer cada alternativa:</p><p><strong>Endemia (A)</strong> caracteriza-se pela presença constante de uma doença numa região, mantendo-se em níveis esperados e previsíveis ao longo do tempo. É um estado de equilíbrio entre hospedeiro, agente e meio ambiente.</p><p><strong>Surto (B)</strong> é o aumento súbito e inesperado do número de casos de uma doença numa área geográfica limitada, geralmente de curta duração. O surto representa uma ruptura do estado endêmico.</p><p><strong>Variações sazonais (C)</strong> referem-se a flutuações regulares e previsíveis relacionadas às estações do ano. Por exemplo, doenças respiratórias no inverno, diarreias no verão, variando de acordo com o clima mas dentro de um ciclo anual.</p><p><strong>Variações cíclicas (D)</strong> são flutuações que ocorrem em períodos mais longos (2-10 anos ou mais), criando verdadeiros ciclos epidemiológicos. Exemplos incluem: ciclos de sarampo (2-3 anos), dengue (3-5 anos), pestes (ciclo plurianual).</p><p>O ciclo da dengue é um bom exemplo: após uma grande epidemia, a população desenvolve imunidade temporária, reduzindo casos nos anos seguintes até que nova coorte suscetível se acumule.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-52"
+    },
+    {
+      "numero": "Q54",
+      "enunciado": "Odds ratio é uma medida de associação tipo proporcionalidade, utilizada na análise de estudos epidemiológicos. Ela é específica para estudos de:",
+      "alternativas": [
+        "Caso-controle.",
+        "Ecológicos.",
+        "Seccionais.",
+        "Coorte."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia seu conhecimento sobre medidas de associação em epidemiologia, especificamente quando utilizar o odds ratio.</p><p><strong>A resposta correta é A - Caso-controle.</strong> O odds ratio (razão de chances) é uma medida de associação desenvolvida especificamente para estudos caso-controle, pois permite estimar a associação entre exposição e doença mesmo quando a frequência da doença na população é desconhecida.</p><p>Para entender por que é específico para caso-controle, vamos analisar cada tipo de estudo:</p><p><strong>Estudos caso-controle (A):</strong> Partem da doença para a exposição. Selecionam casos (com a doença) e controles (sem a doença) e verificam exposição anterior. O odds ratio é calculado como (a/b) ÷ (c/d), onde a=casos expostos, b=casos não expostos, c=controles expostos, d=controles não expostos.</p><p><strong>Estudos ecológicos (B):</strong> Analisam grupos populacionais inteiros. Usam medidas como risco relativo através de correlações entre médias ou proporções populacionais.</p><p><strong>Estudos seccionais (C):</strong> Avaliam exposição e doença simultaneamente no mesmo momento. Podem usar razão de prevalências como medida de associação.</p><p><strong>Estudos de coorte (D):</strong> Partem da exposição para a doença. A medida de escolha é o risco relativo, calculado como (incidência expostos) ÷ (incidência não expostos).</p><p>O odds ratio é especialmente valioso em estudos caso-controle porque independence da prevalência da doença e pode ser interpretado como uma aproximação do risco relativo quando a doença é rara.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedicinaBaseadaEmEvidencias"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-53"
+    },
+    {
+      "numero": "Q55",
+      "enunciado": "Em relação à vigilância epidemiológica é correto afirmar:",
+      "alternativas": [
+        "Rumores e comentários dos habitantes de uma localidade não se constituem fontes de informação.",
+        "A divulgação das informações não se constituem uma de suas atividades.",
+        "Um único caso de um dano à saúde desconhecido numa região não é justificativa para se realizar uma investigação epidemiológica.",
+        "A esquistossomose não é doença de notificação compulsória em áreas endêmicas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia conhecimentos sobre vigilância epidemiológica, suas atividades e doenças de notificação compulsória no Brasil.</p><p><strong>A resposta correta é D - A esquistossomose não é doença de notificação compulsória em áreas endêmicas.</strong> Esta afirmação está correta, pois a esquistossomose possui notificação compulsória apenas em situações específicas (surto ou óbito), não sendo sistemática em áreas endêmicas.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> Rumores e comentários da população são fundamentais na vigilância epidemiológica. Serviços de saúde devem estar atentos a informações de cidadãos, líderes comunitários, imprensa local - todos podem ser fontes valiosas para detecção precoce de problemas de saúde.</p><p><strong>B) INCORRETA:</strong> A divulgação de informações é uma atividade essencial da vigilância epidemiológica. Os dados coletados devem ser transformados em informações úteis e disseminados para gestores, profissionais de saúde e população através de boletins, informes, relatórios.</p><p><strong>C) INCORRETA:</strong> Um único caso de doença desconhecida numa região é justificativa IMEDIATA para investigação epidemiológica. A regra é 'notificar sempre que houver suspeita', especialmente em casos de doenças de alta gravidade, baixa frequência ou agente desconhecido.</p><p><strong>D) CORRETA:</strong> A esquistossomose não é doença de notificação compulsória em áreas endêmicas. Conforme o Ministério da Saúde, a notificação é compulsória apenas em casos de: óbito, forma grave (hepatosplênica) e surtos.</p><p>A vigilância epidemiológica funciona como 'radar da saúde pública', monitorando continuamente o estado de saúde da população para detecção precoce de problemas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-54"
+    },
+    {
+      "numero": "Q56",
+      "enunciado": "A ANVISA (Agência Nacional de Vigilância Sanitária) é uma das unidades componentes do Sistema Nacional de Vigilância Sanitária. Dentre as características listadas abaixo, qual a que a ela não se relaciona?",
+      "alternativas": [
+        "Constitui-se numa autarquia especial vinculada ao Ministério da Saúde.",
+        "Possui independência administrativa.",
+        "É dependente financeiramente.",
+        "Seus dirigentes têm estabilidade."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca IOVALE avalia o conhecimento sobre as características organizacionais e funcionais da ANVISA, uma agência reguladora fundamental no sistema de saúde brasileiro.</p><p><strong>A resposta correta é C - É dependente financeiramente.</strong> Esta alternativa表述a característica que NÃO se relaciona com a ANVISA.</p><p>Vamos analisar cada alternativa para compreender por que apenas a letra C está incorreta:</p><p><strong>Alternativa A - CORRETA:</strong> A ANVISA constitui-se numa autarquia especial vinculada ao Ministério da Saúde. Esta é uma característica fundamental que garante sua autonomia técnica e operacional, mas com supervisão ministerial.</p><p><strong>Alternativa B - CORRETA:</strong> A ANVISA possui independência administrativa, o que significa que pode tomar decisões técnicas sem interferência política, uma característica essencial para uma agência reguladora eficaz.</p><p><strong>Alternativa C - INCORRETA:</strong> A ANVISA NÃO é dependente financeiramente. Como autarquia, ela possui receitas próprias provenientes de taxas, multas e serviços que presta, garantindo sua sustentabilidade financeira e autonomia.</p><p><strong>Alternativa D - CORRETA:</strong> Os dirigentes da ANVISA têm estabilidade, protegendo-os de interferências políticas e garantindo a continuidade das políticas regulatórias.</p><p>A ANVISA, criada em 1999, representa um marco na modernização do sistema regulatório brasileiro, e sua autonomia financeira é fundamental para sua efetividade como órgão regulador.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipaisMarcosLegaisDoSus"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-55"
+    },
+    {
+      "numero": "Q57",
+      "enunciado": "Analise as afirmativas abaixo e assinale a(s) correta(s). I) O Sistema Nacional de Vigilância Ambiental em Saúde - SINVAS tem como objetivo prevenir e controlar os fatores de risco de doenças e de outros agravos à saúde, decorrentes do ambiente e das atividades produtivas. II) A Fundação Nacional de Saúde - FUNASA é responsável pela implementação coordenação do SINVAS. III) A Vigilância Ambiental dos fatores de riscos biológicos é desmembrada em cinco áreas de agregação: contaminantes ambientais; qualidade da água para consumo humano; qualidade do ar; qualidade do solo; e desastres naturais e acidentes com produtos perigosos. IV) Para o desenvolvimento do SINVAS é utilizada, entre outros instrumentos e métodos de vigilância e controle, a Epidemiologia Ambiental. V) Por se tratar de um campo novo, na área da saúde, não existem instrumentos legais do SUS para implementação do SINVAS. Está(ão) correta(s):",
+      "alternativas": [
+        "I.",
+        "V.",
+        "I, III e IV.",
+        "I, II e IV."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o Sistema Nacional de Vigilância Ambiental em Saúde (SINVAS), testando o conhecimento sobre suas características, objetivos e instrumentos de implementação.</p><p><strong>A resposta correta é D - I, II e IV.</strong> Vamos analisar cada afirmativa:</p><p><strong>Afirmativa I - CORRETA:</strong> O SINVAS tem como objetivo prevenir e controlar fatores de risco de doenças e agravos à saúde decorrentes do ambiente e atividades produtivas. Esta definição está alinhada com os princípios da vigilância sanitária ambiental.</p><p><strong>Afirmativa II - CORRETA:</strong> A Fundação Nacional de Saúde (FUNASA) é responsável pela implementação e coordenação do SINVAS. Historicamente, a FUNASA teve papel central na vigilância sanitária ambiental, especialmente em ações relacionadas a doenças de origem ambiental.</p><p><strong>Afirmativa III - INCORRETA:</strong> A vigilância ambiental não se desmembra em exatamente essas cinco áreas citadas. A classificação mais abrangente inclui contaminantes ambientais, qualidade da água, qualidade do ar, resíduos sólidos, solo e infestraestrutura, e ainda tem outras áreas além das mencionadas.</p><p><strong>Afirmativa IV - CORRETA:</strong> Para o desenvolvimento do SINVAS é utilizada a Epidemiologia Ambiental como instrumento e método de vigilância e controle. Esta disciplina é fundamental para entender as relações entre ambiente e saúde.</p><p><strong>Afirmativa V - INCORRETA:</strong> A afirmativa está incorreta ao afirmar que não existem instrumentos legais. Na verdade, existem diversas normatizações e regulamentações que embasam legalmente a implementação do SINVAS no SUS.</p><p>Portanto, apenas as afirmativas I, II e IV estão corretas, justificando a alternativa D como gabarito.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_VigilanciaAmbiental"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-56"
+    },
+    {
+      "numero": "Q58",
+      "enunciado": "Uma menina com 8 anos de idade acidentou-se com metal enferrujado, ferindo-se gravemente em membro inferior. É levada ao hospital onde é realizada a sutura. Seu esquema vacinal estava completo. Em relação à prevenção do tétano, neste caso,",
+      "alternativas": [
+        "Deve-se dar reforço da vacina (tríplice acelular), sem imunização passiva.",
+        "Não é necessário vacinação de reforço nem imunização passiva.",
+        "Deve-se dar reforço da vacina (dupla adulto), sem imunização passiva.",
+        "Deve-se fazer apenas a imunização passiva."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre prevenção de tétano em contexto de trauma, um tema fundamental em medicina de urgência e saúde pública.</p><p><strong>A resposta correta é B - Não é necessário vacinação de reforço nem imunização passiva.</strong> Vamos analisar o raciocínio clínico:</p><p><strong>Contexto do caso:</strong> Menina de 8 anos com trauma por metal enferrujado em membro inferior, com sutura realizada e esquema vacinal completo.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> Não deve-se dar reforço da tríplice acelular sem imunização passiva, pois a criança já possui proteção adequada.</p><p><strong>Alternativa B - CORRETA:</strong> Não é necessário vacinação de reforço nem imunização passiva, considerando que a criança possui esquema vacinal completo e está adequada para a idade.</p><p><strong>Alternativa C - INCORRETA:</strong> A dupla adulto não é indicada para criança de 8 anos, além de não ser necessária considerando o estado vacinal adequado.</p><p><strong>Alternativa D - INCORRETA:</strong> Não se deve fazer apenas imunização passiva, pois a criança já possui proteção ativa adequada.</p><p><strong>Raciocínio clínico:</strong> Para crianças com esquema vacinal completo (que inclui a vacina contra tétano), a proteção está garantida por pelo menos 10 anos. Nestes casos, não há necessidade de reforço ou imunoglobulina, mesmo em casos de trauma com objeto contaminado, desde que a última dose tenha sido aplicada dentro do período de proteção.</p><p>Este é um exemplo clássico de como o conhecimento do status vacinal é fundamental para tomada de decisão em medicina preventiva.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-57"
+    },
+    {
+      "numero": "Q59",
+      "enunciado": "São características da organização da Estratégia de Saúde da Família, EXCETO:",
+      "alternativas": [
+        "Estímulo à demanda espontânea.",
+        "Diagnóstico de saúde da comunidade.",
+        "Definição do território de abrangência.",
+        "Adscrição da clientela."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca IOVALE aborda as características organizacionais da Estratégia de Saúde da Família (ESF), um modelo de atenção que revolucionou a atenção primária no Brasil.</p><p><strong>A resposta correta é A - Estímulo à demanda espontânea.</strong> Esta é a única alternativa que NÃO se caracteriza como um elemento organizacional da ESF.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - INCORRETA (é a resposta da questão):</strong> A ESF NÃO estimula a demanda espontânea. Pelo contrário, ela busca organizar a demanda através de Territorialização, adscrição de clientela e vigilância em saúde. A demanda espontânea é característica do modelo tradicional de atenção, não da ESF.</p><p><strong>Alternativa B - CORRETA:</strong> O diagnóstico de saúde da comunidade é uma característica fundamental da ESF, permitindo conhecer as necessidades e prioridades da população adstrita.</p><p><strong>Alternativa C - CORRETA:</strong> A definição do território de abrangência é essencial para a ESF, garantindo que cada equipe conheça sua área de responsabilidade e população.</p><p><strong>Alternativa D - CORRETA:</strong> A adscrição da clientela é característica central da ESF, permitindo conhecer cada família e individualizar o cuidado.</p><p>A ESF foi criada para substituir o modelo tradicional de Unidades Básicas de Saúde, priorizando a prevenção, Promoção da saúde e organização da demanda sobre a demanda espontânea não programada.</p><p>Esta questão destaca a diferença fundamental entre os modelos de atenção primária no SUS e a necessidade de mudança de paradigma na organização do cuidado.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-58"
+    },
+    {
+      "numero": "Q60",
+      "enunciado": "Com o objetivo de estruturar o SUS, em 2006 foram aprovados, pela Comissão Intergestor Tripartite (CIT) e pelo Conselho Nacional de Saúde, o Pacto pela Vida, o Pacto em Defesa do SUS e o Pacto de Gestão. O Pacto pela Vida especifica diretrizes e metas para seis prioridades. Qual dos itens relacionados abaixo NÃO está incluído entre estas prioridades?",
+      "alternativas": [
+        "Saúde do idoso.",
+        "Saúde do homem.",
+        "Controle do câncer do colo do útero e da mama.",
+        "Redução da mortalidade infantil e materna."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o Pacto pela Vida, um dos três pactos do SUS aprovados em 2006, testando o conhecimento sobre suas prioridades estratégicas.</p><p><strong>A resposta correta é B - Saúde do homem.</strong> Esta prioridade NÃO estava entre as seis prioridades originais do Pacto pela Vida.</p><p>As seis prioridades do Pacto pela Vida eram:</p><p><strong>1. Saúde do idoso - CORRETA (está incluída):</strong> Foco no envelhecimento ativo e saludable, com atenção às necessidades específicas desta população.</p><p><strong>2. Controle do câncer do colo do útero e da mama - CORRETA (está incluída):</strong> Prioridade fundamental para saúde da mulher, com foco em prevenção e detecção precoce.</p><p><strong>3. Redução da mortalidade infantil e materna - CORRETA (está incluída):</strong> Meta prioritária para melhorar indicadores de saúde materno-infantil.</p><p><strong>4. Saúde do homem - INCORRETA (NÃO está incluída):</strong> Embora seja uma área importante, a saúde do homem só se tornou prioridade nacional posteriormente, através da Política Nacional de Atenção Integral à Saúde do Homem, criada em 2009.</p><p><strong>5. Fortalecimento da Atenção Básica - CORRETA (está incluída):</strong> Fundamental para reorganizar o modelo de atenção no SUS.</p><p><strong>6. Prevenção e controle da hipertensão e diabetes - CORRETA (está incluída):</strong> Abordagem das principais causas de morbimortalidade no país.</p><p>É importante notar que a saúde do homem, embora seja um tema relevante e atualmente uma prioridade do SUS, não estava entre as seis prioridades originais do Pacto pela Vida de 2006. Esta distinção temporal é fundamental para compreender a evolução das políticas de saúde no Brasil.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi"
+      ],
+      "tags": [
+        "IOVALE2022R1",
+        "IOVALE",
+        "R1",
+        "SP",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762663850230-59"
+    }
+  ]
+}

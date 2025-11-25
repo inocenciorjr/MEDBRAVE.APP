@@ -1,0 +1,1690 @@
+{
+  "metadata": {
+    "examName": "UNESCESR12022 (UNESC-ES 2022)",
+    "examYear": 2022,
+    "url": "source://543",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T15:46:26.510Z",
+    "jobId": "batch-1762688217073-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "f6e7db6a-4b97-418d-b246-9a13a3c9b66c"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Em um município, no último dia do ano de 2019 existiam 235 casos de diabetes, no ano seguinte, 30 novos casos foram diagnosticados. Neste mesmo ano, 4 pessoas que já possuíam diabetes mudaram-se para esse município, sendo que do total de casos desse município, 3 foram a óbito. População do município 31/12/2019 - 150.000 habitantes; 01/07/2020 - 153.000 habitantes; 31/12/2020 - 156.000 habitantes. Qual a incidência de diabetes por mil habitantes no município em 2019?",
+      "alternativas": [
+        "1.17",
+        "1.48",
+        "1.53",
+        "1.56",
+        "1.7"
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da UNESC-ES apresenta um problema crítico de formulação que resulta na anulação. A banca solicita o cálculo da incidência de diabetes para 2019, mas fornece dados de casos novos apenas para 2020.</p><p><strong>A incidência representa o número de casos novos</strong> de uma doença em um período específico, em uma população definida. No caso apresentado, a questão oferece os seguintes dados problemáticos: no último dia de 2019 existiam 235 casos (prevalência), em 2020 foram diagnosticados 30 casos novos, 4 pessoas com diabetes mudaram-se para o município, e 3 pessoas com diabetes foram a óbito.</p><p>O erro está em solicitar a incidência de 2019 quando os dados de casos novos referem-se a 2020. Esta é uma pegadinha clássica em provas de epidemiologia - sempre verifique se o período solicitado no cálculo corresponde aos dados fornecidos.</p><p>Esta anulação enfatiza a importância de <strong>conferir cuidadosamente os períodos temporais</strong> em problemas de epidemiologia, especialmente em questões que envolvem incidência, prevalência e mortalidade.</p><p>Resposta: Questão anulada por incompatibilidade temporal entre os dados fornecidos e o que foi solicitado.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_MedidasDeSaudeColetiva",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos_TiposDeDesfecho"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Em um município, no último dia do ano de 2019 existiam 235 casos de diabetes, no ano seguinte, 30 novos casos foram diagnosticados. Neste mesmo ano, 4 pessoas que já possuíam diabetes mudaram-se para esse município, sendo que do total de casos desse município, 3 foram a óbito. População do município 31/12/2019 - 150.000 habitantes; 01/07/2020 - 153.000 habitantes; 31/12/2020 - 156.000 habitantes. Qual a prevalência dessa doença por mil habitantes em 31/12/2020?",
+      "alternativas": [
+        "1.5",
+        "1.53",
+        "1.67",
+        "1.7",
+        "1.73"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa o conceito de prevalência em epidemiologia. A prevalência mede o <strong>total de casos existentes</strong> de uma doença em um momento específico, em uma população definida.</p><p>Para calcular a prevalência em 31/12/2020, devemos considerar:</p><p>• Casos existentes em 2019: 235<br>• Casos novos em 2020: 30<br>• Casos que imigraram: 4<br>• Óbitos de diabéticos: -3</p><p><strong>Cálculo:</strong> (235 + 30 + 4 - 3) = 266 casos totais</p><p><strong>Prevalência = Casos totais / População × 1000</strong><br>Prevalência = 266 / 156.000 × 1000 = 1,7 por mil habitantes</p><p>A resposta correta é <strong>Alternativa D (1,7)</strong>.</p><p><strong>Dica importante:</strong> Lembre-se de que a prevalência considera todos os casos existentes na data específica, incluindo casos novos, imigração de casos e subtraindo óbitos. É um indicador de \"fotografia\" da doença na população.</p><p>Esta questão da UNESC-ES avalia se você domina o cálculo de medidas de frequência em epidemiologia, um tema fundamental em medicina preventiva e saúde pública.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_MedidasDeSaudeColetiva",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos_TiposDeDesfecho"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Em um município, no último dia do ano de 2019 existiam 235 casos de diabetes, no ano seguinte, 30 novos casos foram diagnosticados. Neste mesmo ano, 4 pessoas que já possuíam diabetes mudaram-se para esse município, sendo que do total de casos desse município, 3 foram a óbito. População do município 31/12/2019 - 150.000 habitantes; 01/07/2020 - 153.000 habitantes; 31/12/2020 - 156.000 habitantes. Qual a letalidade do diabetes por 100 habitantes no ano de 2020?",
+      "alternativas": [
+        "1.70%",
+        "1.54%",
+        "1.48%",
+        "75%",
+        "1.505"
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão avalia o conceito de letalidade, mas apresenta alternativas incorretas que levam à anulação. A letalidade é uma medida que <strong>relaciona óbitos apenas entre os doentes</strong>, não considerando a população geral.</p><p><strong>Fórmula da Letalidade:</strong> Número de óbitos pela doença / Número total de pessoas com a doença × 100</p><p>Analisando os dados fornecidos para 2020:<br>• Total de diabéticos = 235 (casos existentes) + 30 (casos novos) + 4 (imigrantes) = 269 casos<br>• Óbitos de diabéticos = 3</p><p><strong>Cálculo correto:</strong> 3/269 × 100 = 1,1% (aproximadamente 1,1 óbito para cada 100 diabéticos)</p><p>O erro das alternativas está em duas situações: algumas usam a população total no denominador (quando deveriam usar apenas os diabéticos) e nenhuma alternativa apresenta o resultado correto de 1,1%.</p><p><strong>Importante:</strong> Letalidade ≠ Mortalidade! Letalidade considera apenas os óbitos entre os doentes, enquanto mortalidade considera óbitos na população total.</p><p>Esta anulação demonstra a importância de conhecer <strong>as definições epidemiológicas precisas</strong> e suas fórmulas de cálculo específicas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_MedidasDeSaudeColetiva",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos_TiposDeDesfecho"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Uma primigesta em uma consulta de pré-natal recebe vacinação para prevenção do tétano, orientação quanto a alimentação mais adequada, recomendação quanto a parar de fumar, além da solicitação de exames sorológicos para HIV e Sífilis. A partir do modelo de Leavell & Clark aponte a alternativa onde existe correspondência entre a medida adotada e o nível de prevenção. Medida Adotada Nível de Prevenção. Medida Adotada; Nível de Prevenção",
+      "alternativas": [
+        "Vacinação.............................Primária",
+        "Parar de fumar.......................Secundário",
+        "Orientação alimentar.............Secundário",
+        "Sorologia Sífilis.....................Terciário",
+        "Sorologia HIV........................Secundário"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre os níveis de prevenção do modelo de Leavell & Clark, fundamental em medicina preventiva. O modelo estabelece três níveis de prevenção baseados na história natural das doenças.</p><p><strong>Prevenção Primária:</strong> Ações para evitar que a doença ocorra, atuando sobre fatores de risco. Exemplos: vacinação, mudanças no estilo de vida, educação em saúde.</p><p><strong>Prevenção Secundária:</strong> Detecção precoce da doença em estágios iniciais. Exemplos: exames de rastreamento, sorologias preventivas.</p><<p><strong>Prevenção Terciária:</strong> Reabilitação e redução de sequelas de doenças já estabelecidas.</p><p>Analisando as medidas da consulta pré-natal:</p><p>• <strong>Vacinação para tétano = Prevenção Primária</strong> (evita que a doença ocorra)<br>• Parar de fumar = Prevenção Primária (elimina fator de risco)<br>• Orientação alimentar = Prevenção Primária (promove saúde)<br>• Sorologia para Sífilis = Prevenção Secundária (detecção precoce)<br>• Sorologia para HIV = Prevenção Secundária (detecção precoce)</p><p>A <strong>Alternativa A é correta</strong> (Vacinação → Primária). Esta questão é clássica em provas de medicina preventiva, testando se você consegue identificar o nível de prevenção correto para cada medida de saúde pública.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_ProcessoSaudedoenca",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_PrincipiosDaMedicinaDeFamiliaE"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Para o cálculo do coeficiente de mortalidade infantil pós-neonatal, em um determinado ano e localidade é necessário saber o número de óbitos em...",
+      "alternativas": [
+        "maiores de 7 dias até os menores de 28 dias; total de crianças menores de um ano.",
+        "maiores de 7 dias até os menores de 28 dias; total de nascidos vivos.",
+        "menores de 8 dias; total de nascidos vivos.",
+        "maiores de 28 dias até os menores de um ano; total de crianças menores de um ano.",
+        "maiores de 28 dias até os menores de um ano; total de nascidos vivos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UNESC-ES avalia conhecimento sobre indicadores de mortalidade infantil, especificamente o componente pós-neonatal. É um conceito técnico fundamental em epidemiologia e saúde pública.</p><p>O <strong>Coeficiente de Mortalidade Infantil Pós-Neonatal</strong> mede óbitos de crianças entre 28 dias completos de vida até 1 ano de idade. Este indicador é crucial para avaliar a qualidade da atenção à saúde infantil.</p><p><strong>Faixas etárias da Mortalidade Infantil:</strong><br>• <strong>Neonatal precoce:</strong> 0-6 dias completos<br>• <strong>Neonatal tardia:</strong> 7-27 dias completos<br>• <strong>Pós-neonatal:</strong> 28 dias até 1 ano (364 dias completos)</p><p><strong>Fórmula:</strong> Óbitos de crianças de 28 dias a 1 ano / Nascidos vivos × 1000</p><p>Portanto, para o cálculo precisamos de:<br>• <strong>Numerador:</strong> Óbitos de crianças de 28 dias completos até menores de 1 ano<br>• <strong>Denominador:</strong> Total de nascidos vivos</p><p>A <strong>Alternativa E é correta</strong> (maiores de 28 dias até menores de 1 ano; total de nascidos vivos).</p><p>Este indicador é essencial para o monitoramento da saúde infantil no Brasil, sendo amplamente utilizado pelo Ministério da Saúde para avaliação de políticas públicas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_MedidasDeSaudeColetiva",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologi_EstudosEpidemiologicos_TiposDeDesfecho"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Em um município a população de menores de um ano é de 1.932 crianças para o ano de 2020. Foram registrados 815 nascidos vivos. Nesse período ocorreram 7 óbitos fetais, 2 óbitos em lactentes com idade entre 3 meses e 11 meses de vida, 10 óbitos em recém-nascidos com menos de sete dias de vida, e 1 óbito em recém- nascido com idade variando entre 7 e 27 dias de vida. Calcule o Coeficiente de Mortalidade Infantil para esse ano:",
+      "alternativas": [
+        "15,95/1000 nascidos vivos.",
+        "24,53/1000 crianças menores de um ano.",
+        "14,72/1000 nascidos vivos.",
+        "2,45/1000 crianças menores de um ano.",
+        "12,26/1000 nascidos vivos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>A prova UNESC-ES trouxe uma questão direta sobre cálculo de indicadores epidemiológicos. Este é um tema recorrente em provas de medicina preventiva e epidemiologia.</p><p><strong>A resposta correta é A - 15,95/1000 nascidos vivos.</strong></p><p><strong>Lógica do cálculo:</strong> O Coeficiente de Mortalidade Infantil (CMI) é calculado dividindo o número de óbitos em menores de 1 ano pelo número de nascidos vivos, multiplicado por 1.000.</p><p><strong>Dados do enunciado:</strong></p><ul><li>Óbitos em lactentes de 3-11 meses: 2</li><li>Óbitos em recém-nascidos <7 dias: 10</li><li>Óbitos em RN de 7-27 dias: 1</li><li>Óbitos fetais: 7 (NÃO contam no CMI)</li></ul><p><strong>Cálculo:</strong> 2 + 10 + 1 = 13 óbitos / 815 nascidos vivos × 1.000 = 15,95‰</p><p><strong>Pegadinha comum:</strong> Questões costumam tentar incluir óbitos fetais no cálculo, mas eles NÃO entram no CMI. O CMI considera apenas óbitos de crianças vivas até 1 ano completo.</p><p><strong>Contexto prático:</strong> No Brasil, o CMI em 2022 foi de aproximadamente 12,7‰, sendo ainda mais alto no Norte e Nordeste. Este indicador reflete diretamente a qualidade do pré-natal, assistência ao parto e cuidado neonatal.</p><p>Dica: Lembre-se que óbitos neonais precoces (primeiros 7 dias) são responsáveis por cerca de 70% do CMI, mostrando a importância da qualidade da assistência perinatal.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_IntroducaoAEpidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeSaudeColetiva"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Na evolução das doenças o intervalo de tempo durante o qual o paciente apresenta manifestações inespecíficas corresponde ao período...",
+      "alternativas": [
+        "de incubação.",
+        "de transmissibilidade.",
+        "de prê-patogênese.",
+        "prodrômico.",
+        "patogênico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNESC-ES avalia conhecimento fundamental sobre história natural das doenças - tema essencial para infectologia e medicina preventiva.</p><p><strong>A resposta correta é D - período prodrômico.</strong></p><p><strong>Definição dos períodos:</strong></p><p><strong>INCUBACÃO:</strong> Tempo entre contaminação e início dos sintomas. O paciente está infectado, mas sem sinais ou sintomas. Exemplos: sarampo (10-14 dias), raiva (semanas a meses).</p><p><strong>PRODRÔMICO:</strong> Suscede a incubação. O paciente apresenta sintomas inespecíficos como febre, mal-estar, cefaleia, sem ainda sinais patognomônicos da doença. Geralmente dura poucos dias.</p><p><strong>TRANSMISSIBILIDADE:</strong> Período em que o paciente elimina o agente, podendo infectar outros. Pode ser desde antes dos sintomas (caso do sarampo) até após a recuperação.</p><p><strong>PATOGÊNICO:</strong> Período de doença instalada, quando aparecem sinais e sintomas específicos que permitem o diagnóstico.</p><p><strong>PRÉ-PATOGÊNESE:</strong> Período antes da infecção, indivíduo saudável.</p><p><strong>Importância clínica:</strong> O período prodrômico é crucial epidemiologicamente porque o paciente muitas vezes já transmite a doença, mas ainda não tem diagnóstico específico. Exemplos: COVID-19 (transmissão alta no prodrromo), dengue (febre alta sem sinais hemorrágicos ainda).</p><p><strong>Dica de estudo:</strong> Relaciona com a palavra \"prodromo\" = antes do caminho. É o período que antecede a manifestação característica da doença.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_ProcessoSaudedoenca",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Um trabalhador da construção civil, 38 anos, deu entrada em um pronto socorro devido queda por acidente do 4º andar de um prédio em construção. Após exame pela equipe médica apresentava coma neurológico e sinais de hipovolemia. Cerca de 1 hora após a admissão o paciente teve uma parada cardiorrespiratória irreversível. Após autópsia foi constatado traumatismo crâneo encefálico, de tórax, fraturas em membros inferiores, além de importante hemotórax. A quem compete preencher e assinar a declaração de óbito?",
+      "alternativas": [
+        "médico do Serviço de Verificação de óbito.",
+        "médico-perito do Ministério do Trabalho.",
+        "médico do Instituto Médico Legal.",
+        "neurologista da equipe médica do Pronto Socorro.",
+        "médico-socorrista que coordenou o primeiro atendimento ao paciente."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta é uma questão clássica de medicina legal que frequentemente aparece em provas. A UNESC-ES testou conhecimento sobre competências profissionais em declaração de óbitos.</p><p><strong>A resposta correta é C - médico do Instituto Médico Legal.</strong></p><p><strong>Fundamentação legal:</strong> A Portaria nº 1.020/2013 do Ministério da Saúde estabelece que óbitos por causa externa (violentos ou acidentais) devem ser comunicados à autoridade policial e necropsiados pelo IML.</p><p><strong>Situação do caso:</strong> O paciente sofreu queda de grande altura (4º andar), resulting em traumatismo múltiplo. Esta é claramente uma morte por causa externa que requer investigação médico-legal.</p><p><strong>Análise das alternativas:</strong></p><p>• <strong>A) SVO:</strong> Funciona em grandes centros para investigar óbitos sem assistência médica, mas para mortes violentas o IML tem prioridade.</p><p>• <strong>B) Perito do Trabalho:</strong> Atua apenas em acidentes de trabalho, não se aplicando ao caso.</p><p>• <strong>D) Neurologista:</strong> Pode ter atendimento o paciente, mas não tem competência legal para declarar óbito por causa externa.</p><p>• <strong>E) Socorrista:</strong> O médico que atendeu não tem competência para preencher declaração de óbito em casos de morte violenta.</p><p><strong>Contexto prático:</strong> Em localidades sem IML, qualquer médico da localidade pode preencher, mas deve comunicar às autoridades competentes. A importância: mortes por causa externa podem envolver investigação criminal, então a documentação médico-legal é fundamental.</p><p><strong>Lembrete:</strong> Causas externas = acidentes, homicídios, suicídios = sempre IML!</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "\"A prevenção vem sendo organizada de maneira cronológica desde meados do século XX. A mudança paradigmática de uma prevenção de base cronológica para uma de base paradigmática oferece uma nova compreensão do trabalho e, especificamente, das atividades preventivas dos médicos, e traz à luz o conceito de prevenção quaternária.\" (GUSSO, JAMOULLE, 2012). Assinale a alternativa que contenha medidas relacionadas a realização da prevenção quaternária:",
+      "alternativas": [
+        "Propor medidas para prevenção de complicações por diabetes.",
+        "Ajudar um paciente a superar sua ansiedade e demanda injustificada por tratamento após obter informações erradas na internet.",
+        "Solicitar sorologias em indivíduos com atividade sexual de risco.",
+        "Realizar imunização contra a COVID-19.",
+        "Orientar o uso de água filtrada e higienização de frutas, verduras e legumes crus com hipoclorito de sódio."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNESC-ES aborda um nível de prevenção mais avançado e frequentemente pouco lembrado pelos candidatos. A prevenção quaternária representa uma evolução do pensamento epidemiológico.</p><p><strong>A resposta correta é B - ajudar um paciente a superar sua ansiedade e demanda injustificada por tratamento após obter informações erradas na internet.</strong></p><p><strong>Prevenção Quaternária - Conceito:</strong></p><p>Proposta por Marc Jamoulle (1999), visa proteger pacientes de intervenções médicas desnecessárias. É o nível mais elevado de prevenção que aborda o \"overmedicalization\" - excesso de medicalização.</p><p><strong>As três décadas da prevenção:</strong></p><p>• <strong>Primária:</strong> Evitar que a doença ocorra (vacinas, mudanças de estilo de vida)</p><p>• <strong>Secundária:</strong> Detecção precoce (rastreamento, diagnóstico precoce)</p><p>• <strong>Terciária:</strong> Reabilitação e prevenção de complicações</p><p>• <strong>Quaternária:</strong> Proteção contra iatrogenia e excesso de investigação</p><p><strong>Por que a alternativa B é correta:</strong> O exemplo ilustra perfeitamente a prevenção quaternária - o médico ajuda o paciente a resistir à tentação de buscar tratamentos desnecessários baseados em informações falsas, protegendo-o de procedimentos, exames ou medicações que podem causar mais dano que benefício.</p><p><strong>Contextualização atual:</strong> Com redes sociais e fake news sobre saúde, este conceito tornou-se ainda mais relevante. Profissionais de saúde precisam ser \"guardiões\" contra o overtreatment, especialmente em pacientes ansiosos ou hipocondríacos.</p><p><strong>Contexto brasileiro:</strong> A prática da prevenção quaternária é essencial no SUS, onde recursos são limitados e a racionalidade no uso é fundamental. Exemplos: evitar solicitação de exames desnecessários, prescrever medicações sem indicação específica.</p><p><strong>Mnemônico:</strong> \"P4 - Proteger contra Partes desnecessárias\"</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_PrincipiosDaMedicinaDeFamiliaE"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "\"\"Historicamente, a ideia de atenção primária foi utilizada como forma de organização dos sistemas de saúde pela primeira vez no chamado Relatório Dawnson, em 1920. Esse documento do governo inglês procurou, de um lado, contrapor-se ao modelo flexineriano americano de cunho curativo, fundado no reducionismo biológico e na atenção individual, e por outro, constituir-se numa referência para a organização do modelo de atenção inglês, que começava a preocupar as autoridades daquele país, devido ao elevado custo, à crescente complexidade da atenção médica e à baixa resolutividade. O referido relatório organizava o modelo de atenção em centros de saúde primários e secundários, serviços domiciliares, serviços suplementares e hospitais de ensino\"\" (MATTA, MOROSINI, 2009). Assinale a alternativa com os quatro atributos peculiares à Atenção Primária à Saúde:",
+      "alternativas": [
+        "Universalidade, integralidade, equidade e participação popular.",
+        "Integralidade, longitudinal idade, porta de entrada e coordenação do cuidado.",
+        "Descentralização, integralidade, equidade e participação popular.",
+        "Integralidade, coordenação do cuidado, descentralização e porta de entrada.",
+        "Longitudinal idade, universalidade, equidade e porta de entrada."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNESC-ES avaliou conhecimento sobre os fundamentos da Atenção Primária à Saúde - tema central da medicina de família e saúde coletiva. A banca contextualizou historicamente com o Relatório Dawson (1920), mas a perguntafoi direta sobre os atributos essenciais.</p><p><strong>A resposta correta é B - Integralidade, longitudinalidade, porta de entrada e coordenação do cuidado.</strong></p><p><strong>Os 4 Atributos Essenciais da APS (Barbara Starfield):</strong></p><p><strong>1. PRIMEIRO CONTATO (Porta de Entrada):</strong></p><p>É o nível de atenção mais próximo da população, onde o usuário busca o serviço quando necessita de cuidado. Deve estar amplamente distribuído territorialmente para garantir acesso fácil.</p><p><strong>2. LONGITUDINALIDADE:</strong></p><p>Acompanha o indivíduo ao longo de toda a vida, desde o nascimento até a morte. É o médico/equipe que conhece a história de vida, contexto familiar e social, permitindo cuidado personalizado e contínuo.</p><p><strong>3. INTEGRALIDADE:</strong></p><p>Atenção abrangente que inclui promoção, prevenção, cura, reabilitação e cuidados paliativos. Atende independentemente da condição, idade ou sexo. Deve ser capaz de resolver a maioria dos problemas de saúde.</p><p><strong>4. COORDENAÇÃO DO CUIDADO:</strong></p><p>Organiza a atenção do paciente em todo o sistema, mantendo contato com os outros níveis de atenção. Funciona como \"maestro da orquestra\" da saúde.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• Universalidade, equidade e participação popular são <em>princípios</em> do SUS, não atributos específicos da APS</p><p>• Descentralização é estratégia de organização, não atributo da APS</p><p>• \"Longitudinalidade da idade\" está incorreto - é longitudinalidade temporal</p><p><strong>Importância no SUS:</strong> Estes atributos são fundamentais para o sucesso da Estratégia Saúde da Família. Quando bem implementados, resultam em melhor saúde populacional com menor custo, como comprovado em sistemas de saúde exitosos mundialmente.</p><p><strong>Dica de estudo:</strong> Mnemônico: \"PLiC\" - Porta, Longitudinalidade, Integralidade, Coordenação.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "<html><head></head><body>Paciente de 54 anos, GII PII (cesarianas) A0, antecedente de histerectomia total abdominal aos 45 anos por miomatose uterina, é examinada no ambulatório de ginecologia para avaliação de distopia genital. Abaixo segue a representação de distopia genital pelo Pelvic Organ Prolapse Quantification System (POP-Q ) desta paciente. Com base nesta representação, assinale a alternativa que apresenta a distopia observada na paciente.\n\n<img src=\"https://medbrave.com.br/questions/unesc-es-2022-r12022/qQ11.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Defeito de compartimento anterior.",
+        "Defeito de compartimento posterior.",
+        "Prolapso uterino.",
+        "Prolapso de cúpula vaginal.",
+        "Não há distopia genital."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES avalia seu conhecimento sobre distopia genital utilizando o sistema de classificação POP-Q (Pelvic Organ Prolapse Quantification System). O POP-Q é uma ferramenta padronizada para quantificar o prolapso de órgãos pélvicos, fornecendo medidas objetivas em centímetros em relação ao anel himenal.</p><p><strong>A paciente do caso é GII PII A0, com antecedente de histerectomia total abdominal aos 45 anos por miomatose uterina.</strong> Esta informação é fundamental: ela foi submetida à histerectomia, portanto não possui útero, o que automaticamente exclui a possibilidade de prolapso uterino.</p><p>Analisando as alternativas:</p><p><strong>A) Defeito de compartimento anterior:</strong> Involucra bexiga urinária e uretra. Não corresponde à apresentação mostrada no POP-Q.</p><p><strong>B) Defeito de compartimento posterior:</strong> Relaciona-se ao reto e alças intestinais. Também não condiz com a imagem do POP-Q apresentada.</p><p><strong>C) Prolapso uterino:</strong> INCORRETA, pois a paciente foi submetida à histerectomia total, não possuindo útero para prolapsar.</p><p><strong>D) Prolapso de cúpula vaginal:</strong> <strong>RESPOSTA CORRETA.</strong> Após histerectomia, a cúpula vaginal (topo da vagina) pode prolapsar para baixo, sendo esta a distopia mais comum pós-histerectomia. O POP-Q demonstra especificamente o prolapso da cúpula vaginal.</p><p><strong>E) Não há distopia genital:</strong> Contradiz a própria apresentação do caso e os achados do POP-Q.</p><p>O sistema POP-Q mede pontos específicos do assoalho pélvico, e no caso apresentado, observa-se descenso da cúpula vaginal, caracterizando o prolapso de cúpula pós-histerectomia.</p><p><strong>Resposta final: D - Prolapso de cúpula vaginal.</strong></p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia_ProlapsosDeOrgaosPelvicos",
+        "Ginecologia_OncologiaGinecologica"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Mulher, 19 anos, retorna de viagem com queixa de corrimento cujo odor a está incomodando. Ao exame físico: apresenta conteúdo vaginal acinzentado, pH: 5,5, e teste das aminas positivo. Ao toque não se observa dor a palpação anexial ou de colo uterino. Considerando-se o possível diagnóstico, assinale a alternativa correta.",
+      "alternativas": [
+        "É recomendado o tratamento do parceiro.",
+        "O uso de metronidazol é uma opção terapêutica.",
+        "O pH ácido sugere infecção por Candida sp.",
+        "O exame a fresco demonstrará presença de protozoário flagelado.",
+        "Entre suas complicações, encontra-se a obstrução tubária."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre vaginites, especificamente sobre vaginose bacteriana e suas características diagnósticas e terapêuticas. A paciente retorna de viagem com queixa de corrimento com odor desagradável.</p><p><strong>O diagnóstico é vaginose bacteriana.</strong> Os achados clínicos são típicos: corrimento acinzentado, pH vaginal elevado (5,5, quando o normal é 3,8-4,5), teste das aminas positivo (cheiro de peixe após adição de KOH) e ausência de dor à palpação.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) É recomendado o tratamento do parceiro:</strong> INCORRETA. Na vaginose bacteriana, o tratamento do parceiro sexual não é necessário, diferentemente de outras IST.</p><p><strong>B) O uso de metronidazol é uma opção terapêutica:</strong> <strong>RESPOSTA CORRETA.</strong> O metronidazol é a primeira escolha no tratamento da vaginose bacteriana, podendo ser administrado por via oral (500mg, 2x/dia por 7 dias) ou gel vaginal (0,75% por 5 dias).</p><p><strong>C) O pH ácido sugere infecção por Candida sp:</strong> INCORRETA. O pH normal é ácido (3,8-4,5). O pH elevado (5,5) sugere vaginose bacteriana, não candidíase. A candidíase mantém pH ácido.</p><p><strong>D) O exame a fresco demonstrará presença de protozoário flagelado:</strong> INCORRETA. Na vaginose bacteriana, observa-se ausência de lactobacilos e presença de Gardnerella vaginalis em morfotipos alterados. Protozoários flagelados indicam tricomoníase.</p><p><strong>E) Entre suas complicações, encontra-se a obstrução tubária:</strong> INCORRETA. A vaginose bacteriana não causa obstrução tubária. Esta complicação está mais relacionada à clamídia e gonococo.</p><p>As complicações da vaginose bacteriana incluem maior risco de infecções pós-operatórias, endometrite pós-parto e possível associação com parto prematuro.</p><p><strong>Resposta final: B - O uso de metronidazol é uma opção terapêutica.</strong></p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "\"A Atenção Primária à Saúde (APS) apresenta-se como o eixo estruturante do SUS e constitui-se como o primeiro nível de atenção na RAS, sendo enfatizada, cada vez mais, sua função de congregar um conjunto de ações de promoção e proteção à saúde, prevenção de agravos, diagnóstico, tratamento, reabilitação e manutenção da saúde nas dimensões coletiva e individual, por meio de ações gerenciais e sanitárias participativas e democráticas, trabalho em equipe, responsabilização sanitária e base territorial. Dessa forma, suas três funções essenciais são: (i) resolver a grande maioria dos problemas de saúde da população; (ii) organizar os fluxos e contrafluxos dos usuários pelos diversos pontos de atenção à saúde, no sistema de serviços de saúde, e (iii) responsabilizar-se pela saúde dos usuários em qualquer ponto de atenção à saúde em que estejam. É, assim, papel da atenção primária desenvolver ações para prevenção do câncer do colo do útero por meio de ações de educação em saúde, vacinação de grupos indicados e detecção precoce do câncer e de suas lesões precursoras por meio de seu rastreamento. O rastreamento é uma tecnologia da atenção primária, e os profissionais atuantes nesse nível de atenção devem conhecer o método, a periodicidade e a população-alvo recomendados, sabendo ainda orientar e encaminhar para tratamento as mulheres de acordo com os resultados dos exames e garantir seu seguimento\" Fonte: Diretrizes brasileiras para o rastreamento do câncer do colo do útero / Instituto Nacional de Câncer Jose Alencar Gomes da Silva. Coordenação de Prevenção e Vigilância. Divisão de Detecção Precoce e Apoio a Organização de Rede. - 2. ed. rev. atual. - Rio de Janeiro: INCA, 2016. Analise as assertivas abaixo sobre o rastreamento do câncer do colo do útero no Brasil: I. Os dois primeiros exames devem ser realizados com intervalo anual e, se ambos os resultados forem negativos, os próximos devem ser realizados a cada 3 anos. II. O início da coleta deve ser aos 25 anos de idade para as mulheres que já tiveram ou têm atividade sexual. III. O rastreamento em gestantes deve ser evitado pelo risco de sangramento e trabalho de parto prematuro. IV. Após os 65 anos, o rastreamento pode ser suspenso, inclusive nas pacientes com doença neoplásica pré-invasão prévia, desde que o último citopatológico seja negativo. Sobre o rastreamento do câncer do colo do útero no Brasil é correto o que se afirmar a em:",
+      "alternativas": [
+        "I e III apenas.",
+        "II e IV apenas.",
+        "III e IV apenas.",
+        "I, II e IV apenas.",
+        "I e II apenas."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UNESC-ES testa seu conhecimento sobre as diretrizes brasileiras para rastreamento do câncer do colo do útero, baseadas nas recomendações do INCA 2016 (válidas até as atualizações mais recentes do Ministério da Saúde).</p><p>O rastreamento é uma tecnologia fundamental da Atenção Primária, e é essencial conhecer os critérios corretos de início, periodicidade e suspensão do rastreamento.</p><p><strong>Analisando cada afirmativa:</strong></p><p><strong>I. Os dois primeiros exames devem ser realizados com intervalo anual e, se ambos os resultados forem negativos, os próximos devem ser realizados a cada 3 anos.</strong> <strong>CORRETA.</strong> Esta é a recomendação atual do INCA: dois exames anuais consecutivos negativos permitem espaçar para exames trienais.</p><p><strong>II. O início da coleta deve ser aos 25 anos de idade para as mulheres que já tiveram ou têm atividade sexual.</strong> <strong>CORRETA.</strong> As diretrizes brasileiras foram atualizadas, diferentemente de recomendações internacionais mais antigas que sugeriam 18 anos. No Brasil, inicia-se aos 25 anos.</p><p><strong>III. O rastreamento em gestantes deve ser evitado pelo risco de sangramento e trabalho de parto prematuro.</strong> <strong>INCORRETA.</strong> A recomendação atual é adiar o rastreamento durante a gestação. O exame citopatológico pode causar sangramento, mas não há evidências de que cause trabalho de parto prematuro. O motivo principal é evitar procedimentos desnecessários durante a gravidez.</p><p><strong>IV. Após os 65 anos, o rastreamento pode ser suspenso, inclusive nas pacientes com doença neoplásica pré-invasão prévia, desde que o último citopatológico seja negativo.</strong> <strong>INCORRETA.</strong> Mulheres com histórico de NIC (Neoplasia Intraepitelial Cervical) ou câncer invasivo precisam de seguimento especializado independentemente da idade. O rastreamento de rotina pode ser suspenso apenas em mulheres sem histórico de doença pré-invasiva ou invasiva.</p><p><strong>Logo, apenas as afirmativas I e II estão corretas.</strong></p><p>É importante destacar que as diretrizes brasileiras são adaptadas à nossa realidade epidemiológica, com início mais tardio que recomendações internacionais, mas com rigorosa adesão ao protocolo.</p><p><strong>Resposta final: E - I e II apenas.</strong></p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Comparece ao ambulatório de cirurgia ginecológica paciente de 63 anos, menopausa aos 45 anos, sem uso de terapia hormonal no momento. Informa 4 episódios de sangramento vaginal nos últimos 7 meses e traz ultrassonografia transvaginal realizada há 10 dias com endométrio de 18mm. Considerando essas informações, qual a conduta indicada a seguir?",
+      "alternativas": [
+        "Observar sangramento e repetir ultrassonografia transvaginal em três meses.",
+        "Histerectomia com retirada de trompas e ovários.",
+        "Histeroscopia com biópsia de endométrio.",
+        "Histerectomia sem retirada de trompas e ovários.",
+        "Prescrever estrogênio e progesterona e repetir ultrassonografia transvaginal em três meses."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda uma situação clínica de alto risco: sangramento pós-menopausa em paciente com espessamento endometrial. A paciente de 63 anos, menopausa aos 45 anos, apresenta sangramento vaginal recorrente (4 episódios em 7 meses) e ultrassonografia transvaginal com endométrio de 18mm.</p><p><strong>O achado de endométrio de 18mm em mulher pós-menopáusica é PREOCUPANTE.</strong> Em mulheres na pós-menopausa, o endométrio deve ser < 5mm. Valores > 5mm são considerados alterados, e 18mm representa um espessamento significativo, levantando forte suspeita de hiperplasia endometrial ou carcinoma.</p><p><strong>Analisando as condutas:</strong></p><p><strong>A) Observar sangramento e repetir ultrassonografia transvaginal em três meses:</strong> INCORRETA. A apresentação clínica (sangramento recorrente + endométrio espesso) demanda investigação imediata, não observação.</p><p><p><strong>B) Histerectomia com retirada de trompas e ovários:</strong> INCORRETA. Esta é uma conduta mutilante sem antes investigar o endométrio. O tratamento cirúrgico só é indicado após confirmação diagnóstica.</p><p><strong>C) Histeroscopia com biópsia de endométrio:</strong> <strong>RESPOSTA CORRETA.</strong> Esta é a conduta padrão ouro. A histeroscopia permite visualização direta da cavidade uterina e biópsia dirigida, fornecingo diagnóstico histológico definitivo para orientar o tratamento.</p><p><strong>D) Histerectomia sem retirada de trompas e ovários:</strong> INCORRETA. Mesma incorreção da alternativa B - cirurgia sem diagnóstico prévio.</p><p><strong>E) Prescrever estrogênio e progesterona e repetir ultrassonografia transvaginal em três meses:</strong> INCORRETA. Terapia hormonal sem diagnóstico pode mascarar doença neoplásica. Além disso, a paciente não está em terapia hormonal de reposição.</p><p>O protocolo brasileiro para sangramento pós-menopausa estabelece investigação diagnóstica imediata através de histeroscopia com biópsia. O tratamento dependerá do resultado histológico.</p><p><strong>Resposta final: C - Histeroscopia com biópsia de endométrio.</strong></p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente gestante, G1P0, idade gestacional de 37,3 semanas de gestação, hipertensa crônica em uso de metildopa 1g/dia, chega à maternidade com sangramento vaginal abundante, instável hemodinamicamente. Ao exame físico observa-se hipertonia uterina, batimento cardíaco fetal de 90 bpm e toque vaginal com 2 cm de dilatação do colo. Avalie as afirmativas abaixo sobre este caso clínico: I. Deve-se proceder imediatamente a rotura de membrana amnióticas; II. O diagnóstico é de descolamento prematuro de placenta normoinserida; III. Deve-se prescrever terbutalina e solicitar vitalidade fetal com cardiotocografia; IV. A resolução da gestação deve ocorrer por cesárea nesta situação; V. Útero de Couvelaire é uma das complicações desta condição; sobre o atendimento ao caso clínico acima descrito, é correto o que se afirmar em:",
+      "alternativas": [
+        "I, II, III, IV e V.",
+        "I, II, IV E V apenas.",
+        "II e V apenas.",
+        "II apenas.",
+        "II, IV e V apenas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNESC-ES apresenta um caso de emergência obstétrica: paciente hipertensa crônica com quadro de sangramento vaginal abundante, instabilidade hemodinâmica, hipertonia uterina, bradicardia fetal e dilatação cervical inicial. O conjunto de sinais e sintomas é clássico para descolamento prematuro de placenta normoinserida (DPPNI).</p><p>O DPPNI é uma complicação grave da segunda metade da gestação, caracterizada pelo descolamento prematuro da placenta da parede uterina antes do nascimento do concepto.</p><p><strong>Analisando cada afirmativa:</strong></p><p><strong>I. Deve-se proceder imediatamente a rotura de membrana amnióticas:</strong> <strong>CORRETA.</strong> Na DPPNI com instabilidade materna, a rotura artificial de membranas pode ser indicada para reduzir a tensão uterina e controlar o sangramento. Porém, deve ser feita com extremo cuidado.</p><p><strong>II. O diagnóstico é de descolamento prematuro de placenta normoinserida:</strong> <strong>CORRETA.</strong> Triade clássica: sangramento vaginal, hipertonia uterina e comprometimento fetal. A hipertensão crônica é fator de risco importante para DPPNI.</p><p><strong>III. Deve-se prescrever terbutalina e solicitar vitalidade fetal com cardiotocografia:</strong> <strong>INCORRETA.</strong> A terbutalina (tocolítico) é contra-indicada na DPPNI. O tocolítico pode mascarar sinais de dor abdominal e não trata a causa do problema. A prioridade é a estabilização materna e resolução da gestação.</p><p><strong>IV. A resolução da gestação deve ocorrer por cesárea nesta situação:</strong> <strong>CORRETA.</strong> Com instabilidade materna e comprometimento fetal, a cesárea é mandatória. O parto vaginal só seria considerado se a dilatação estuviera completa e o feto estivesse bem.</p><p><strong>V. Útero de Couvelaire é uma das complicações desta condição:</strong> <strong>CORRETA.</strong> O útero de Couvelaire (infarto uterino) ocorre quando há infiltração de sangue entre as fibras musculares uterinas, causando aspecto arroxeado do útero. É complicação típica da DPPNI grave.</p><p>Portanto, as afirmativas I, II, IV e V estão corretas, correspondendo à alternativa B.</p><p><strong>Resposta final: B - I, II, IV e V apenas.</strong></p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoSegundaMetadeDaGest",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_PartoCesarea"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Comparece ao ambulatório de ginecologia uma paciente com 19 anos. Relata nunca ter menstruado, apresenta ausência de caracteres sexuais secundários, e traz os seguintes exames: ultrassonografia demonstrando útero de tamanho normal para a idade e gônadas em fita, cariótipo 46 XY, FSH 80. Considerando essas informações, podemos afirmar que seu diagnóstico é:",
+      "alternativas": [
+        "Puberdade tardia.",
+        "Síndrome de Turner.",
+        "Hermafroditismo verdadeiro.",
+        "Síndrome de Morris (síndrome de insensibilidade aos andrógenos).",
+        "Síndrome de Swyer (disgenesia gonadal pura)."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 avalia seu conhecimento sobre distúrbios do desenvolvimento sexual, especificamente as disgenesias gonadais. O caso apresenta uma paciente jovem com amenorreia primária e características que nos permitem fazer o diagnóstico diferencial preciso.</p><p><strong>A resposta correta é E - Síndrome de Swyer (disgenesia gonadal pura).</strong></p><p>Vamos analisar os achados clínicos e laboratoriais:</p><p><strong>Dados importantes do caso:</strong></p><p>• Paciente de 19 anos com amenorreia primária (nunca menstruou)<br>• Ausência de caracteres sexuais secundários (indicando hipogonadismo)<br>• Cariótipo 46 XY (geneticamente masculina)<br>• FSH muito elevado (80 mUI/mL) - indica falência ovariana primária<br>• Útero de tamanho normal para a idade<br>• Gônadas em fita (embriônicas, não funcionais)</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Puberdade tardia:</strong> Incorreta. Puberdade tardia se refere a atraso no início da puberdade, mas com desenvolvimento subsequente. Esta paciente tem ausência completa de caracteres sexuais secundários, indicando bloqueio do desenvolvimento puberal desde o início.</p><p><strong>B) Síndrome de Turner:</strong> Incorreta. A síndrome de Turner cursa com cariótipo 45,X ou variantes (46,XXiq, 45,X/46,XY), nunca 46,XY puro. Além disso, haveria baixa estatura e malformações associadas.</p><p><strong>C) Hermafroditismo verdadeiro:</strong> Incorreta. É uma condição muito rara onde há tecido ovariano e testicular funcionando. O cariótipo geralmente é 46,XX ou 46,XY/46,XX, mas nunca 46,XY puro com gônadas em fita como neste caso.</p><p><strong>D) Síndrome de Morris (síndrome de insensibilidade aos andrógenos):</strong> Incorreta. Na síndrome de Morris, mesmo sendo 46,XY, há desenvolvimento de características sexuais femininas (mamas, vagina) devido à resistência aos andrógenos. A paciente nunca desenvolveu caracteres sexuais secundários femininos.</p><p><strong>E) Síndrome de Swyer (disgenesia gonadal pura):</strong> <strong>CORRETA.</strong> Caracteriza-se por:<br>• Cariótipo 46,XY<br>• Gônadas em fita (estrias gonadais) sem função<br>• Falência ovariana com FSH elevado<br>• Desenvolvimento de características sexuais femininas com útero normal<br>• Ausência de ambiguidade genital<br>• É a única alternativa que contempla todos os achados do caso.</p><p><strong>Conclusão:</strong> O diagnóstico é Síndrome de Swyer, uma forma de disgenesia gonadal pura onde as gônadas embrionárias não se desenvolvem, resultando em falência ovariana primária em paciente geneticamente masculina (46,XY). A presença de útero normal indica exposição adequa a hormônios antimüllerianos durante a vida fetal.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Amenorreias",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_EmbriologiaDoTratoGenitalFemin"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Paciente de 38 anos, GIII PI AI, idade gestacional de 31 semanas de gestação comparece à consulta de retorno no pré-natal referindo não ter conseguido realizar o teste de tolerância oral à glicose (TOTG) com 75g de glicose. Tem glicemia de jejum de 88 mg/dL do primeiro trimestre. Com base neste caso, avalie o que se afirma abaixo: I. Pode-se solicitar novo TOTG 75g apesar da idade gestacional, pois o rastreio adequado não foi realizado; II. Pode-se solicitar glicemia de jejum, caso o resultado seja superior ou igual à 92 mg/dL estará feito o diagnóstico de diabetes mellitus gestacional; III. Pode-se solicitar hemoglobina glicosilada para se realizar o diagnóstico de diabetes mellitus gestacional; IV. Valor de glicemia de 88 mg/dL no primeiro trimestre não é indicativo de TOTG 75g antes de 24 semanas de idade gestacional; V. Se o valor de TOTG 75g, mesmo que realizado após 28 semanas, for de 210 mg/dL na segunda hora, o diagnóstico da paciente é diabetes na gestação (alguns textos consideram a nomenclatura diabetes mellitus anterior à gestação ou diabetes presumida ou diabetes mellitus diagnosticado na gestação). Quanto ao caso clinico apresentado, é correto o que se afirma em:",
+      "alternativas": [
+        "I, II, IV e V apenas.",
+        "I, II, III, IV e V.",
+        "II, III e IV apenas.",
+        "II e IV apenas.",
+        "IV apenas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o rastreamento e diagnóstico de diabetes mellitus gestacional (DMG), tema fundamental na prática obstétrica. A banca avalia o conhecimento sobre as diretrizes do Ministério da Saúde e protocolos atualizados.</p><p><strong>A resposta correta é A - I, II, IV e V apenas.</strong></p><p>Vamos analisar cada afirmativa baseada nas diretrizes brasileiras atuais (MS 2024/2025):</p><p><strong>Análise das afirmativas:</strong></p><p><strong>I. Pode-se solicitar novo TOTG 75g apesar da idade gestacional, pois o rastreio adequado não foi realizado:</strong> <strong>CORRETA.</strong> O teste deve ser realizado entre 24-28 semanas. Se não foi realizado adequadamente, pode ser feito mesmo tardiamente para estabelecer o diagnóstico de DMG.</p><p><strong>II. Pode-se solicitar glicemia de jejum, caso o resultado seja superior ou igual à 92 mg/dL estará feito o diagnóstico de diabetes mellitus gestacional:</strong> <strong>CORRETA.</strong> Critério atual do MS: glicemia de jejum ≥ 92 mg/dL em qualquer momento da gestação confirma DMG. Não é necessário TOTG.</p><p><strong>III. Pode-se solicitar hemoglobina glicosilada para se realizar o diagnóstico de diabetes mellitus gestacional:</strong> <strong>INCORRETA.</strong> A HbA1c NÃO é recomendada para diagnóstico de DMG devido à variações na gestação (aumento do volume plasmático, alterações metabólicas). Os critérios diagnósticos são: TOTG 75g ou glicemia de jejum.</p><p><strong>IV. Valor de glicemia de 88 mg/dL no primeiro trimestre não é indicativo de TOTG 75g antes de 24 semanas de idade gestacional:</strong> <strong>CORRETA.</strong> Glicemia de jejum < 92 mg/dL no primeiro trimestre é considerado normal. Só se for ≥ 92 mg/dL que se indica investigação adicional ou TOTG antecipado.</p><p><strong>V. Se o valor de TOTG 75g, mesmo que realizado após 28 semanas, for de 210 mg/dL na segunda hora, o diagnóstico da paciente é diabetes na gestação (alguns textos consideram a nomenclatura diabetes mellitus anterior à gestação ou diabetes presumida ou diabetes mellitus diagnosticado na gestação):</strong> <strong>CORRETA.</strong> Glicemia ≥ 200 mg/dL na 2ª hora do TOTG com 75g confirma DMG. A nomenclatura atual segundo o MS 2024 é \"diabetes mellitus gestacional\".</p><p><strong>Conclusão:</strong> As afirmativas I, II, IV e V estão corretas, correspondendo à alternativa A. A afirmativa III está incorreta pois a HbA1c não é método diagnóstico para DMG nas diretrizes brasileiras atuais.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_Prenatal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Primigesta de 27 anos, 36 semanas de idade gestacional, em uso de metildopa 1g/dia desde a 34ª semana de gestação devido episódios de pressão arterial alta, comparece para consulta de pré-natal sem queixa e com bom controle pressórico. Ao exame físico, apresenta-se com pressão arterial de 130 x 84 mmHg, edema de 1+/4+ em membros inferiores e altura uterina de 32 centímetros. Cardiotocografia evidenciou feto ativo. Traz exames laboratoriais: hemoglobina: 13,0 g/dL / plaquetas: 87.000/mcL/ creatinina: 0,9 mg/dL / transaminase glutâmico-oxalacética: 32 U/L/ transaminase glutâmico-pirúvica: 27 U/L, proteinúria de 24 horas: 528 mg. Sobre a patologia obstétrica que esta paciente apresenta, é correto afirmar quanto aos eventos patogênicos observados em casos semelhantes:",
+      "alternativas": [
+        "observa-se aumento da agregação plaquetária e seu depósito no endotélio, com consequente aumento da produção de plaquetas e do seu número na circulação.",
+        "apresenta queda da volemia, hipoalbuminemia, queda da pressão oncótica e aumento da viscosidade sanguínea.",
+        "ocorre aumento do fluxo sanguíneo uterino e diminuição da resistência circulatória. Com consequente aumento da incidência de infartos placentários e comprometimento da oferta de oxigênio e nutrientes para o feto.",
+        "não se associa com alterações hepáticas ou cerebrais.",
+        "há lesão glomerular, hiperplasia celular justa glomerular, lesão da alça de Henle e vasodilatação da arteríola aferente."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 avalia o conhecimento sobre a fisiopatologia da pré-eclâmpsia, uma das principais causas de morbimortalidade materna e perinatal. O caso apresenta elementos clássicos desta patologia obstétrica.</p><p><strong>A resposta correta é B - apresenta queda da volemia, hipoalbuminemia, queda da pressão oncótica e aumento da viscosidade sanguínea.</strong></p><p>Vamos analisar o caso:</p><p><strong>Dados clínicos importantes:</strong></p><p>• Paciente de 27 anos, 36 semanas<br>• PA 130x84 mmHg (hipertensão leve)<br>• Edema 1+/4+ em membros inferiores<br>• Proteinúria 528 mg/24h (≥ 300mg confirma pré-eclâmpsia)<br>• Plaquetas 87.000/mcL (trombocitopenia)<br>• Transaminases normais (sem atingimento hepático grave)<br>• Creatinina 0,9 mg/dL (função renal preservada)</p><p><strong>Diagnóstico:</strong> Pré-eclâmpsia leve (hipertensão + proteinúria sem sinais de gravidade).</p><p><strong>Análise das alternativas sobre fisiopatologia:</strong></p><p><strong>A) observa-se aumento da agregação plaquetária e seu depósito no endotélio, com consequente aumento da produção de plaquetas e do seu número na circulação:</strong> <strong>INCORRETA.</strong> Na pré-eclâmpsia há consumo plaquetário (deposição no endotélio), resultando em TROMBOCITOPENIA, não aumento do número. A produção está preservada ou aumentada, mas o consumo é maior.</p><p><strong>B) apresenta queda da volemia, hipoalbuminemia, queda da pressão oncótica e aumento da viscosidade sanguínea:</strong> <strong>CORRETA.</strong> Fisiopatologia clássica:<br>• Vasoespasmo e aumento da permeabilidade capilar → hipovolemia relativa<br>• Fígado aumenta produção de angiotensinogênio → arteriolas se contraem<br>• Hipoalbuminemia por perda renal e captação hepática<br>• Queda da pressão oncótica → edema (como visto no caso)<br>• Hemoconcentração → aumento da viscosidade</p><p><strong>C) ocorre aumento do fluxo sanguíneo uterino e diminuição da resistência circulatória. Com consequente aumento da incidência de infartos placentários e comprometimento da oferta de oxigênio e nutrientes para o feto:</strong> <strong>INCORRETA.</strong> É o oposto: há REDUÇÃO do fluxo uterino por vasoespasmo e aumento da resistência vascular placentária, não diminuição.</p><p><strong>D) não se associa com alterações hepáticas ou cerebrais:</strong> <strong>INCORRETA.</strong> A pré-eclâmpsia pode evoluir para HELLP (hemólise, elevação de enzimas hepáticas, plaquetopenia) e eclampsia (convulsões por edema cerebral). As alterações hepáticas e cerebrais são complicações importantes.</p><p><strong>E) há lesão glomerular, hiperplasia celular justa glomerular, lesão da alça de Henle e vasodilatação da arteríola aferente:</strong> <strong>INCORRETA.</strong> A lesão característica é ENDOTELIOSE GLOMERULAR com edema das células endoteliais, não hiperplasia. Há VASOCONSTRIÇÃO da arteríola aferente, não vasodilatação.</p><p><strong>Conclusão:</strong> A alternativa B descreve corretamente a sequência fisiopatológica da pré-eclâmpsia: hipovolemia relativa, hipoalbuminemia, redução da pressão oncótica (causando edema) e hemoconcentração (aumentando viscosidade sanguínea).</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Preeclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_EtiologiaEFisiopatologia"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Chega ao pronto socorro da maternidade paciente de 22 anos, uso irregular de método contraceptivo, relatando atraso menstrual de 30 dias, com queixa de dor no baixo-ventre, de moderada a forte intensidade, há cerca de 5 dias, associada a pequeno sangramento vaginal. É avaliada e submetida a exames subsidiários. Apresentou hCG elevado (5.250,00 mUI/mL); hemograma sem alterações; ecografia transvaginal com identificação de endométrio levemente espessado, massa heterogênea em topografia de anexo esquerdo com 4,3 cm em seu maior diâmetro e presença de líquido livre sugestiva de sangue em fundo de saco posterior. Qual a conduta mais adequada a ser seguida após internação?",
+      "alternativas": [
+        "Observação do quadro com repetição dos exames em 48 horas.",
+        "Administração de metotrexato IM na dose de 50 mg/m2.",
+        "Tratamento cirúrgico imediato.",
+        "Realizar AMIU (aspiração manual intrauterina).",
+        "Realizar curetagem uterina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia a conduta frente a uma gravidez ectópica com sinais de complicação, uma emergência obstétrica que requer diagnóstico e tratamento imediatos.</p><p><strong>A resposta correta é C - Tratamento cirúrgico imediato.</strong></p><p><strong>Análise do caso:</strong></p><p>• Paciente de 22 anos, atraso menstrual de 30 dias (5 semanas)<br>• Dor pélvica há 5 dias (progressiva)<br>• hCG elevado: 5.250 mUI/mL (compatível com gestação de 5-6 semanas)<br>• Ecografia: endométrio espessado, massa anexial heterogênea 4,3cm, líquido livre em fundo de saco<br>• Hemograma: sem alterações (sem sinais de choque)</p><p><strong>Dados que indicam gravidez ectópica rompida:</strong></p><p>• hCG elevado + massa anexial = confirmação de gestação ectópica<br>• Dor pélvica há 5 dias = possível ruptura ou ameaça de ruptura<br>• Líquido livre em fundo de saco = hemoperitoneu (sangue na cavidade)<br>• Massa heterogênea pode representar coágulos ou restosovarianos</p><p><strong>Fatores de risco presentes:</strong> uso irregular de método contraceptivo.</p><p><strong>Análise das condutas:</strong></p><p><strong>A) Observação do quadro com repetição dos exames em 48 horas:</strong> <strong>INCORRETA.</strong> O líquido livre em fundo de saco indica provável hemoperitoneu, requerendo intervenção imediata. Observação seria risco de choque hipovolêmico.</p><p><strong>B) Administração de metotrexato IM na dose de 50 mg/m²:</strong> <strong>INCORRETA.</strong> O metotrexato é tratamento conservador para ectópica NÃO rompida, com hCG < 5.000 mUI/mL, massa < 3,5cm, sem líquido livre. Nesta caso há sinais de ruptura.</p><p><strong>C) Tratamento cirúrgico imediato:</strong> <strong>CORRETA.</strong> Indicações absolutas:<br>• Instabilidade hemodinâmica<br>• Sinais de ruptura (dor progressiva, líquido livre)<br>• hCG > 5.000 com massa > 3,5cm<br>• Falha do tratamento clínico</p><p><strong>D) Realizar AMIU (aspiração manual intrauterina):</strong> <strong>INCORRETA.</strong> AMIU é para gestação intrauterina (aborto incompleto). No caso de ectópica, pode diagnosticar gestação intrauterina persistente se feita, mas há risco de ruptura da ectópica não tratada.</p><p><strong>E) Realizar curetagem uterina:</strong> <strong>INCORRETA.</strong> Mesmo raciocínio do AMIU. Pode ser indicada se hCG não cae após cirurgia da ectópica, mas inicialmente não é a conduta principal.</p><p><strong>Conclusão:</strong> A presença de líquido livre em fundo de saco indica hemoperitoneu por ruptura da gestação ectópica, caracterizando emergência cirúrgica. Laparoscopia ou laparotomia para salpingostomia ou salpingectomia deve ser realizada imediatamente.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_AbdomeAgudoEmGinecologia",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_GestacaoEctopica"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Paciente de 34 anos, GI P0 A0, idade gestacional de 24,2 semanas comparece à consulta de pré-natal trazendo resultado de ultrassonografia morfológica realizada com 23 semanas de gestação. Neste exame observou-se biometria fetal compatível com a idade gestacional, líquido amniótico com volume normal, placenta corporal anterior, ausência de alterações morfológicas do feto e colo com 14 mm de comprimento. Sem queixas na consulta, exame físico com ausência de contrações, colo fechado e ausência de perdas vaginais. Assinale a alternativa quanto a prevenção de prematuridade nessa paciente.",
+      "alternativas": [
+        "manter acompanhamento pré-natal habitual pois a paciente não apresenta risco aumentado de prematuridade.",
+        "indicar cerclagem do colo uterino de emergência.",
+        "internar a paciente e iniciar tocólise com nifedipina imediatamente.",
+        "prescrever progesterona por via vaginal e manter até 36 semanas, orientar repouso e abstinência sexual.",
+        "conduta expectante e, caso a paciente entre em trabalho de parto prematuro, prescrever agente tocolítico e realizar cerclagem."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia a prevenção de prematuridade, tema crucial na saúde materna. A banca testa o conhecimento sobre manejo de colo uterino curto como fator de risco para parto prematuro.</p><p><strong>A resposta correta é D - prescrever progesterona por via vaginal e manter até 36 semanas, orientar repouso e abstinência sexual.</strong></p><p><strong>Análise do caso:</strong></p><p>• Paciente de 34 anos, gestante de 24,2 semanas<br>• ultrassonografia morfológica (23 semanas): tudo normal<br>• Comprimento cervical: 14mm (normal > 25mm, risco quando < 25mm)<br>• Sem contrações, colo fechado, sem perdas vaginais<br>• Identificação de fator de risco: colo uterino curto</p><p><strong>Estratificação do risco:</strong></p><p>• Colo < 25mm = alto risco de parto prematuro<br>• Idade gestacional 24,2 semanas = janela terapêutica para prevenção<br>• Ausência de trabalho de parto ativo = favorável ao tratamento conservador</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) manter acompanhamento pré-natal habitual pois a paciente não apresenta risco aumentado de prematuridade:</strong> <strong>INCORRETA.</strong> Colo de 14mm representa risco SIGNIFICATIVO de prematuridade (RR 6-9x). O risco está claramente aumentado e precisa de intervenção.</p><p><strong>B) indicar cerclagem do colo uterino de emergência:</strong> <strong>INCORRETA.</strong> Cerclagem de emergência é para colo dilatado e membranas protrusas (indicada em < 24 semanas). Esta paciente tem colo fechado, não havendo indicação para cerclagem urgente.</p><p><strong>C) internar a paciente e iniciar tocólise com nifedipina imediatamente:</strong> <strong>INCORRETA.</strong> Tocólise é para trabalho de parto ativo em evolução. Paciente está assintomática, sem contrações, sem dilatação. Internação seria desnecessária e inadequada.</p><p><strong>D) prescrever progesterona por via vaginal e manter até 36 semanas, orientar repouso e abstinência sexual:</strong> <strong>CORRETA.</strong> Protocolo atual MS 2024:<br>• Progesterona vaginal 200mg/dia até 36 semanas<br>• Reduz risco de parto prematuro em 40-45%<br>• Repouso relativo e abstinência sexual<br>• Controle obstétrico regular</p><p><strong>E) conduta expectante e, caso a paciente entre em trabalho de parto prematuro, prescrever agente tocolítico e realizar cerclagem:</strong> <strong>INCORRETA.</strong> Conduta expectante com colo de 14mm é inadequada. A prevenção deve ser PROATIVA. Cerclagem não é tratamento de trabalho de parto ativo, e tocolíticos não previnem prematuridade, apenas atrasam o parto em algumas horas/dias.</p><p><strong>Conclusão:</strong> A progesterona vaginal é a intervenção de escolha para prevenção de prematuridade em gestantes com colo curto, sendo a alternativa D a conduta mais adequada conforme protocolos brasileiros de 2024/2025.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_TrabalhoDePartoPrematuroTpp",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_UltrassomEmObstetriciaUsg",
+        "Obstetricia_Prenatal"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Adolescente, sexo feminino, 12 anos, é levado à emergência por cefaleia intensa, vômitos em jato há três dias e febre (39\u0007C) que não cede com antitérmicos. Exame físico: desidratado, febril, sinais de irritação meníngea, escala de Glasgow de 15. Punção lombar: liquor turvo, coloração xantocromia, com 600 células/mm3, com predomínio de neutrofilos; proteína: 150mg/dL; glicorraquia: 30mg/ dL (glicemia: 90mg/dL). Esse quadro clínico sugere:",
+      "alternativas": [
+        "Trauma de punção.",
+        "Meningite viral.",
+        "Hemorragia subaracnoide.",
+        "Meningite bacteriana.",
+        "Gastroenterite Bacteriana."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 avalia seu conhecimento sobre interpretação de liquor cerebrospinal e diagnóstico diferencial de meningite em adolescentes. O caso apresenta um quadro clássico que permite diferenciação clara entre as etiologias.</p><p><strong>A resposta correta é D - Meningite bacteriana.</strong></p><p>Vamos analisar os achados do liquor que apontam para etiologia bacteriana:</p><p>• <strong>Aparência turva e xantocromia</strong>: Indica processo inflamatório agudo com presença de proteínas e células em grande quantidade</p><p>• <strong>600 células/mm³ com predomínio de neutrófilos</strong>: Leucocitose acentuada com padrão bacteriano (meningite viral geralmente apresenta predomínio linfocitário)</p><p>• <strong>Proteína 150mg/dL</strong>: Elevação significativa (normal até 45mg/dL), típica de inflamação bacteriana</p><p>• <strong>Glicorraquia 30mg/dL com glicemia 90mg/dL</strong>: Relação liquor/sangue de 1:3, muito abaixo do normal (2:3), indicando consumo de glicose por bactérias</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Trauma de punção</strong>: Sangue na seringa é característico, mas não apresenta xantocromia, leucocitose nem alterações bioquímicas</p><p><strong>B) Meningite viral</strong>: Geralmente cursa com liquor claro, predomínio linfocitário, proteína pouco elevada e glicorraquia normal</p><p><strong>C) Hemorragia subaracnoide</strong>: Apresenta sangue no liquor, mas sem leucocitose, proteinorraquia moderada e glicorraquia normal</p><p><strong>E) Gastroenterite bacteriana</strong>: Não cursa com irritação meníngea nem alterações do liquor</p><p>O quadro clínico (febre, cefaleia, vômitos, sinais de irritação meníngea) somado aos achados laboratoriais permite diagnóstico inequívoco de meningite bacteriana, exigindo antibioticoterapia imediata.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neuropediatria",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Infectologia_InfecoesDoSistemaNervosoCentr",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente de um ano de idade é levado ao pronto socorro com quadro de febre, vômitos e diarreia aquosa sem sangue ou muco há 48 horas. Exame físico: sonolento, hipoativo, olhos fundos com mucosa seca e ausência de lágrimas, pulso débil e enchimento capilar > 4 segundos, Pressão arterial sistólica 50 mmhg. Peso na admissão: 10 kg. A conduta é:",
+      "alternativas": [
+        "Glicose 25% -200 ml endovenoso em 30 minutos.",
+        "Soro fisiológico 400 ml endovenoso em 1 hora.",
+        "Fisiológico e glicosado (meio a meio) 500 ml IV em duas horas.",
+        "Soro de reidratação oral 100 ml via oral em 24 horas.",
+        "Ringer lactato 200 ml endovenoso em 20 minutos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa sua capacidade de reconhec e tratar choque hipovolêmico em pediatria. O lactente apresenta critérios clínicos de desidratação grave que requerem reposição volêmica urgente e rápida.</p><p><strong>A resposta correta é E - Ringer lactato 200 ml endovenoso em 20 minutos.</strong></p><p><strong>Reconhecendo a gravidade do quadro:</strong></p><p>• <strong>Idade:</strong> 1 ano (peso de referência 10kg)</p><p>• <strong>Sinais de choque hipovolêmico:</strong> Sonolência, hipoatividade, olhos fundos, mucosa seca, ausência de lágrimas</p><p>• <strong>Comprometimento cardiovascular:</strong> Pulso débil, enchimento capilar >4 segundos, PA sistólica 50mmHg (hipotensão)</p><p>• <strong>Duração dos sintomas:</strong> 48 horas com agravamento progressivo</p><p><strong>Protocolo de reposição em choque hipovolêmico:</strong></p><p>• <strong>Volume de reposição:</strong> 20ml/kg = 200ml (10kg × 20ml)</p><p>• <strong>Solução adequada:</strong> Ringer lactato (balanço eletrolítico próximo ao plasma)</p><p>• <strong>Velocidade de administração:</strong> Em 20-30 minutos (choque requer correção rápida)</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Glicose 25%</strong>: Solução concentrada irritante para veia periférica, não indicada para reposição volêmica</p><p><strong>B) Soro fisiológico 400ml em 1 hora</strong>: Volume adequado (40ml/kg) mas velocidade muito lenta para choque</p><p><strong>C) Fisiológico e glicosado 500ml em 2 horas</strong>: Volume e velocidade inadequados para correção de choque</p><p><strong>D) Reidratação oral 100ml/24h</strong>: Absolutamente inadequado - paciente está em choque e não consegue receber via oral</p><p>O reconhecimento precoce do choque hipovolêmico e a correção rápida do volume circulante são fundamentais para evitar evolução para choque refratário e morte em pediatria.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas_ChoqueEmPediatria",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_ControleDaAguaCorporalTotal",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Pré-escolar, quatro anos, apresenta há cinco dias secreção e obstrução nasal, e hoje iniciou febre com piora da tosse e queda do estado geral. Exame físico: eupneico, sem dificuldade respiratória. Oroscopia: hiperemia de faringe com drenagem de secreção posterior e visualização de crostas amareladas no vestíbulo nasal. A conduta indicada neste caso é utilizar:",
+      "alternativas": [
+        "Antibioticoterapia oral e soro fisiológico nasal.",
+        "Anti-histamínico oral e nafazolina nasal.",
+        "Soro fisiológico e nafazolina nasais.",
+        "Corticoide de baixa potência e soro fisiológico nasais.",
+        "Corticoide oral e soro fisiológico nasal."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de reconhecer e tratar rinossinusite bacteriana aguda em pediatria. O caso apresenta critérios clínicos que diferenciam infecção bacteriana de viral, orientando conduta terapêutica adequada.</p><p><strong>A resposta correta é A - Antibioticoterapia oral e soro fisiológico nasal.</strong></p><p><strong>Reconhecendo rinossinusite bacteriana aguda:</strong></p><p>• <strong>Duração dos sintomas:</strong> 5 dias de secreção/obstrução nasal</p><p>• <strong>Sintomas sistêmicos:</strong> Febre + piora da tosse + queda do estado geral (sinal de alerta)</p><p>• <strong>Achados ao exame:</strong> Hiperemia de faringe com drenagem posterior + crostas amareladas no vestíbulo nasal (secundariamente infectados)</p><p><strong>Critérios diagnósticos (American Academy of Pediatrics):</strong></p><p>Sinusite bacteriana é provável quando há:</p><p>1. Sintomas respiratórios altos por >10 dias sem melhora</p><p>2. Piora aguda (febre + secreção purulenta + sintomas sistêmicos)</p><p>3. Início agudo com febre ≥39°C por 3 dias consecutivos</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>B) Anti-histamínico e nafazolina</strong>: Anti-histamínicos não têm indicação em infecção bacteriana; nafazolina pode causar efeito rebote</p><p><strong>C) Soro fisiológico e nafazolina</strong>: Soro fisiológico é adequado para higiene, mas nafazolina não deve ser usada</p><p><strong>D) Corticoide de baixa potência e soro fisiológico</strong>: Corticoides não são primeira linha em rinossinusite bacteriana</p><p><strong>E) Corticoide oral e soro fisiológico</strong>: Corticoides orais são reservados para casos complicados ou com componentes alérgicos importantes</p><p>A antibioticoterapia está indicada na rinossinusite bacteriana aguda, e o soro fisiológico nasal auxilia na higiene e drenagem das secreções, favorecendo a recuperação.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior",
+        "Outros_Otorrinolaringologia_Rinossinusites",
+        "Pediatria_PneumologiaPediatrica"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "A mãe de um lactente de 4 meses, em amamentação exclusiva, procura orientação porque vai voltar a trabalhar em 15 dias. A orientação adequada é que a mãe retire seu leite e armazene em frascos de vidro com tampa plástica na geladeira:",
+      "alternativas": [
+        "Por até duas horas na geladeira ou 12 h congelador; oferecer preferencialmente por copinho.",
+        "Por até 12 h no refrigerador e até duas semanas no congelador; oferecer preferencialmente no copinho.",
+        "Por até 48 horas no Refrigerador e duas semanas no congelador; preferencialmente por copinho.",
+        "Por até 12 horas refrigerador e duas semanas congelador; oferecer preferencialmente por mamadeira.",
+        "Por até 24 horas no refrigerador ou congelador por até quatro semanas; oferecer preferencialmente por mamadeira."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre armazenamento de leite humano ordenhado, tema fundamental para profissionais que trabalham com saúde materno-infantil e aleitamento materno.</p><p><strong>A resposta correta é B - Por até 12 horas no refrigerador e até duas semanas no congelador; oferecer preferencialmente no copinho.</strong></p><p><strong>Diretrizes para armazenamento de leite humano (Ministério da Saúde 2024):</strong></p><p>• <strong>Refrigerador (geladeira):</strong> Até 12 horas após ordenha</p><p>• <strong>Freezer:</strong> Até 2 semanas (15 dias) para armazenamento doméstico</p><p>• <strong>Forma de oferta:</strong> Preferencialmente por copinho (evita confusão de bico)</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) 2 horas na geladeira ou 12h no congelador</strong>: Geladeira permite armazenamento por 12h, não 2h; copinho é preferível, mas o tempo está incorreto</p><p><strong>C) 48 horas na geladeira e 2 semanas no congelador</strong>: 48h na geladeira é tempo excessivo e pode comprometer qualidade</p><p><strong>D) 12h na geladeira e 2 semanas no congelador + mamadeira</strong>: Tempos corretos, mas deve oferecer no copinho, não mamadeira</p><p><strong>E) 24h no refrigerador ou 4 semanas no congelador</strong>: 24h é muito tempo para geladeira; 4 semanas é tempo excessivo para freezer doméstico</p><p><strong>Importância do armazenamento adequado:</strong></p><p>• Preserva propriedades nutricionais e imunológicas do leite</p><p>• Evita contaminação e proliferação bacteriana</p><p>• Permite continuidade do aleitamento materno quando mãe trabalha</p><p>O copinho é recomendado como forma de oferta pois preserva o aleitamento materno exclusivo e evita confusão com bicos artificiais.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AmamentacaoAleitamentoMaterno",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "A alternativa que descreve as complicações mais frequentes nos recém-nascidos de mães diabéticas é:",
+      "alternativas": [
+        "Hipocalcemia, policitemia e hemorragia intracraniana.",
+        "Hipoglicemia, Cardiopatia congênita e policitemia.",
+        "Anemia, hipoglicemia e déficit sucção.",
+        "Anemia, hipocalcemia e síndrome de aspiração meconial.",
+        "Anemia, hipoglicemia e hiponatremia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre morbidades perinatais associadas ao diabetes mellitus materno, tema relevante para neonatologia e medicina fetal.</p><p><strong>A resposta correta é B - Hipoglicemia, Cardiopatia congênita e policitemia.</strong></p><p><strong>Explicação das complicações do diabetes materno:</strong></p><p>• <strong>Hipoglicemia neonatal:</strong> Ocorre por hiperinsulinemia fetal secundária à exposição crônica à hiperglicemia materna. Após o parto, cessa a oferta de glicose, mas a hiperinsulinemia persiste, causando hipoglicemia nas primeiras 12-24h de vida</p><p>• <strong>Cardiopatia congênita:</strong> Diabetes mal controlado no primeiro trimestre aumenta risco de malformações cardíacas, especialmente cardiomiopatia hipertrófica e comunicação interventricular</p><p>• <strong>Policitemia:</strong> Secundária à hipóxia fetal crônica, estimula eritropoietina, aumentando a massa eritrocitária. Pode causar hiperviscosidade sanguínea</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Hipocalcemia, policitemia e hemorragia intracraniana</strong>: Hipocalcemia é menos frequente que hipoglicemia; hemorragia intracraniana não é complicação mais frequente</p><p><strong>C) Anemia, hipoglicemia e déficit sucção</strong>: Diabetes não causa anemia; déficit de sucção é consequência, não complicação mais frequente</p><p><strong>D) Anemia, hipocalcemia e síndrome de aspiração meconial</strong>: SAM pode ocorrer, mas anemia e hipocalcemia não são as mais frequentes</p><p><strong>E) Anemia, hipoglicemia e hiponatremia</strong>: Diabetes não causa anemia; hiponatremia é menos comum que cardiopatia congênita</p><p>O controle glicêmico materno adequado é fundamental para reduzir essas morbidades e otimizar a saúde neonatal.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosMetabolicosDoPeriodo"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Recém-nascido pré-termo de 34 semanas de idade gestacional, pequeno para idade gestacional, peso de nascimento de 1.500 gramas, mãe hipertensa grave. Apresenta com uma hora de vida dosagem capilar de glicose pela glicofita de 12mg/dL. A conduta terapêutica imediata é realizar:",
+      "alternativas": [
+        "Hidratação venosa com glicose a 50% e alimentação por sucção com duas horas devida.",
+        "Infusão rápida de glicose 10%, alimentação com duas horas de vida por gavagem e controle de glicemia capilar em seis horas.",
+        "Infusão rápida de glicose 10%, mais hidratação venosa com glicose a 10% e controle de glicemia capilar em 30 minutos.",
+        "Hidratação venosa com SF 0;9%, alimentação com uma hora de vida por sucção e controle de glicemia capilar em duas horas.",
+        "Estimular aleitamento materno e reavaliar criança em 1 hora."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES avalia seu conhecimento sobre hipoglicemia neonatal, especificamente o manejo de recém-nascidos pré-termo de alto risco.</p><p><strong>O caso apresenta múltiplos fatores de risco para hipoglicemia:</strong> prematuridade (34 semanas), pequeno para idade gestacional (PIG) com 1.500g, e mãe com hipertensão grave. A glicose capilar de 12mg/dL em 1 hora de vida está abaixo do limiar seguro de 25-30mg/dL recomendado pelas diretrizes neonatais atuais.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Hidratação venosa com glicose 50% e alimentação por sucção em 2 horas</strong> - Errada. Glicose 50% é hiperosmolar e pode causar lesão venosa. Alimentação por sucção não é recomendada em RN pré-termo instável.</p><p><strong>B) Infusão rápida de glicose 10%, alimentação por gavagem em 2 horas, controle em 6 horas</strong> - Errada. O controle em 6 horas é muito tardio. Em RN pré-termo, a monitorização deve ser mais frequente nas primeiras horas.</p><p><strong>C) Infusão rápida de glicose 10%, hidratação venosa com glicose 10%, controle em 30 minutos</strong> - <strong>CORRETA</strong>. A infusão rápida de glicose 10% é padrão inicial. Hidratação venosa mantém o acesso. Controle em 30min é adequado para monitorar resposta terapêutica.</p><p><strong>D) Hidratação venosa com SF 0,9%, alimentação por sucção, controle em 2 horas</strong> - Errada. Soro fisiológico não corrige hipoglicemia. Controle em 2h é muito tardio.</p><p><strong>E) Estimular aleitamento e reavaliar em 1 hora</strong> - Errada. Hipoglicemia sintomática em RN pré-termo PIG é emergência que requer tratamento venoso imediato.</p><p><strong>Veredito: A resposta C está correta</strong>, seguindo o protocolo de hipoglicemia neonatal do Ministério da Saúde 2025 para RNs de alto risco.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosMetabolicosDoPeriodo",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosMetabolicosDoPeriodo",
+        "Pediatria_Neonatologia_DisturbiosMetabolicosDoPeriodo_DisturbiosDaGlicose",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_EndocrinologiaTireotoxicoseGer"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Gestante com 39 semanas de idade gestacional admitida em trabalho de parto. Oito consultas de pré-natal, segunda gestação, histórico de sífilis na gestação anterior. Com 11 semanas de idade gestacional apresentou VDRL de 1:128, recebendo três doses de Penicilina Benzatina, 2.400.000UI, com intervalo de uma semana entre cada dose. Parceiro se recusou a pesquisar e tratar sífilis. Teve queda titulação VDRL 1:16. Com 28 semanas de idade gestacional, apresentou aumento de título de VDRL de 1:64. Parto vaginal, recém-nascido vigoroso, assintomático ao exame físico, sendo encaminhado ao alojamento conjunto. Nesse caso, é correto afirmar que:",
+      "alternativas": [
+        "Mãe inadequadamente tratada para sífilis gestacional, devemos realizar apenas o VDRLde sangue periférico do recém-nascido. Se o VDRL do recém-nascido for reator, independente do título, devemos tratar com Penicilina Cristalina por dez dias, mesmo que haja",
+        "Mãe adequadamente tratada para sífilis gestacional, devemos realizar o VDRL de sangue periférico do recém-nascido, avaliação liquórica, hemograma completo e radiografia de ossos longos. Só iniciar o tratamento se houver alteração em qualquer dos exames de",
+        "Mãe inadequadamente tratada para sífilis gestacional, devemos realizar o VDRL de sangue periférico, punção lombar, hemograma, radiografia de ossos longos do bebê. Se o VDRL do recém-nascido for reator e houver alteração no líquor, devemos tratar com Penic",
+        "Mãe adequadamente tratada para sífilis gestacional, devemos realizar o VDRL de sangue periférico do recém-nascido. Se o VDRL do recém-nascido for não reator, devemos tratar com Penicilina Benzatina em dose única, independente da possibilidade de seguiment",
+        "Mãe inadequadamente tratada para sífilis gestacional, devemos realizar VDRL e hemograma do de sangue periférico do recém-nascido. Se o VDRL do recém-nascido for não reator, devemos dar alta hospitalar para seguimento ambulatorial."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda o manejo de sífilis gestacional e congênita, competência essencial em pediatria e obstetrícia.</p><p><strong>Análise do caso:</strong> A gestante teve sífilis com títulos altos (1:128), recebeu tratamento adequado, mas o parceiro se recusou ao tratamento. Houve queda do título para 1:16, porém aumento posterior para 1:64, indicando reinfecção ou tratamento inadequado do parceiro.</p><p><strong>Vamos analisar as alternativas:</strong></p><p><strong>A) Mãe inadequadamente tratada, VDRL RN + penicilina cristalina 10 dias se reator</strong> - Errada. Não menciona investigação complementar necessária (líquor, ossos longos). Penicilina cristalina por 10 dias é dose inadequada.</p><p><strong>B) Mãe adequadamente tratada, investigação completa, tratar só se alteração</strong> - Errada. A mãe NÃO foi adequadamente tratada (parceiro não tratou, título aumentou). Mesmo assim, sempre deve investigar RN adequadamente.</p><p><strong>C) Mãe inadequadamente tratada, investigação completa, tratar se VDRL reator E alteração no líquor</strong> - <strong>CORRETA</strong>. A mãe foi inadequadamente tratada. Protocolo do MS 2025 exige investigação completa do RN. Tratamento só se houver infecção confirmada (VDRL reator E líquor alterado).</p><p><strong>D) Mãe adequadamente tratada, VDRL RN, tratar com benzatina se não reator</strong> - Errada. Se VDRL não reator, não há infecção. Benzatina é profilaxia inadequada, e mãe não foi adequadamente tratada.</p><p><strong>E) Mãe inadequadamente tratada, VDRL + hemograma, alta se não reator</strong> - Errada. Muito simplista. Deve fazer investigação completa mesmo se VDRL não reator inicial.</p><p><strong>Veredito: Alternativa C é a resposta correta</strong>, seguindo o Protocolo Clínico e Diretrizes Terapêuticas do MS 2025 para sífilis gestacional e congênita.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_NeonatologiaInfeccoesCongenita",
+        "ClinicaMedica_Infectologia",
+        "MedicinaPreventiva"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Lactente de 60 dias, nascido de parto normal, apresenta quadro subfebril, tosse paroxística, dispneia discreta, anorexia, tiragem subcostal e intercostal baixa. História de conjuntivite prévia. Radiografia de tórax: infiltrado intersticial. A conduta indicada é:",
+      "alternativas": [
+        "Internar / Sintomáticos.",
+        "Tratar ambulatorialmente / Sintomáticos.",
+        "Tratar ambulatorialmente / Antibiótico.",
+        "Internar/ Ecocardiograma.",
+        "Internar / Antibiótico endovenoso."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia o reconhecimento de coqueluche em lactente jovem, com foco na conduta terapêutica adequada.</p><p><strong>Análise clínica:</strong> Lactente de 60 dias com tosse paroxística, dispneia, anorexia, tiragem subcostal/intercostal baixa, radiografia com infiltrado intersticial e história prévia de conjuntivite. Este conjunto de sinais é altamente sugestivo de coqueluche, especialmente em lactentes não vacinados.</p><p><strong>Vamos analisar as condutas:</strong></p><p><strong>A) Internar / Sintomáticos</strong> - Parcialmente correta na internação, mas tratamento apenas sintomático é inadequado para coqueluche confirmada ou muito suspeita.</p><p><strong>B) Tratar ambulatorialmente / Sintomáticos</strong> - Errada. Lactente de 60 dias com quadro compatível de coqueluche e sinais de dificuldade respiratória exige internação. Tratamento sintomático é insuficiente.</p><p><strong>C) Tratar ambulatorialmente / Antibiótico</strong> - Errada. Mesmo com antibiótico, lactente com difficulty respiratória e sinais de insuficiência requer internação.</p><p><strong>D) Internar / Ecocardiograma</strong> - Errada. Internação é correta, mas ecocardiograma não é a prioridade. O quadro é respiratório, não cardiológico.</p><p><strong>E) Internar / Antibiótico endovenoso</strong> - <strong>CORRETA</strong>. Internação obrigatória pela idade (60 dias), gravidade do quadro e risco de complicação. Antibiótico EV (eritromicina ou azitromicina) é essencial para coqueluche em lactentes.</p><p><strong>Veredito: A alternativa E é a resposta correta</strong>. Coqueluche em lactente jovem é doença grave que exige internação e tratamento antibiótico adequado, conforme diretrizes da SBP 2025.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Coqueluche",
+        "ClinicaMedica_Infectologia",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Lactente, sexo feminino, nove meses, apresentou três episódios de choro, seguido de parada da respiração e cianose de lábios. Perda da consciência, seguida de abalos clônicos breves de membros superiores e inferiores. Todos os episódios foram precedidos por contrariedade, raiva ou medo. Os episódios são breves, duram no máximo um minuto, e após os mesmos, a criança desperta bem e retorna ao habitual. Segundo a mãe, a lactente engatinha, senta-se sem apoio, segura alimentos para comer, balbucia sons polissilábicos, exibe reação de estranhamento, responde quando chamada pelo nome e brinca com o espelho. Esse quadro clínico sugere:",
+      "alternativas": [
+        "Refluxo gastroesofágico.",
+        "Síncope convulsiva.",
+        "Crise convulsiva tônico-clônica generalizada.",
+        "Crise de perda de fôlego",
+        "Crise convulsiva focal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o diagnóstico diferencial de episódios paroxísticos em lactente, focando nas crises de perda de fôlego (breath-holding spells).</p><p><strong>Análise do caso:</strong> Lactente de 9 meses com episódios característicos: precedidos por emoção intensa (contrariedade, raiva, medo), choro seguido de parada respiratória, cianose, perda de consciência transitória, abalos clônicos breves, duração máxima de 1 minuto, recuperação completa e rápida.</p><p><strong>Vamos analisar as alternativas:</strong></p><p><strong>A) Refluxo gastroesofágico</strong> - Errada. RGE pode causar episódios de desconforto, mas não tem o padrão típico de ser precedido por emoção e característicos de perda de fôlego. Abalos clônicos não são típicos de RGE.</p><p><strong>B) Síncope convulsiva</strong> - Errada. Síncope convulsiva é desmaio com componente convulsivo, mas a sequência choro→parada→cianose→perda consciência é típica de breath-holding.</p><p><strong>C) Crise convulsiva tônico-clônica generalizada</strong> - Errada. Crises epilépticas não são precedidas por emoções específicas. Duração é geralmente maior, e recuperação é mais lenta.</p><p><strong>D) Crise de perda de fôlego</strong> - <strong>CORRETA</strong>. O quadro é classic para breath-holding spells: desencadeado por emoção intensa, sequência típica, duração curta (≤1min), recuperação completa imediata.</p><p><strong>E) Crise convulsiva focal</strong> - Errada. Crises focais têm início focal e não são desencadeadas por emoções específicas como descrito.</p><p><strong>Veredito: A alternativa D é a resposta correta</strong>. As crises de perda de fôlego são benignas e comuns entre 6 meses a 6 anos, sendo caracterizadas pela sequência típica apresentada no caso.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neuropediatria",
+        "ClinicaMedica_Neurologia",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Bebê de três meses de idade foi levado à emergência de um hospital público, por apresentar febre baixa, cansaço, chiado no peito, e dificuldade respiratória. A mãe informa que ele iniciou com um resfriado há cinco dias, e notou piora da tosse e surgimento de cansaço que deixou ele com os lábios arroxeados e com dificuldade para mamar. Ao exame físico: Apresentava-se gemente, choro intenso, com batimento de asa de nariz, acianótico, com tiragem intercostal e retração subcostal, sibilos expiratórios disseminados. FR: 70 irpm, FC: 155 bpm e T:37,0° C e SaO2=90%. Qual diagnóstico e conduta:",
+      "alternativas": [
+        "Bronqueolite / Internação hospitalar: oxigênioterapia, hidratação venosa, nebulizaçãocom solução salina hipertônica, corticoide inalatório.",
+        "Bronqueolite / Internação hospitalar: oxigênioterapia, hidratação venosa, nebulizaçãocom solução salina hipertônica.",
+        "Asma / Internação hospitalar: oxigênioterapia, hidratação venosa, nebulização com beta 2 curta duração, corticoide oral.",
+        "Asma / Tratamento ambulatorial: Corticoide oral e inalatório, beta 2 curta duração.",
+        "Pneumonia / Internação hospitalar: oxigênioterapia, hidratação venosa, antibioticoterpia venosa."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o diagnóstico e tratamento de bronquiolite aguda em lactente, competência fundamental em pediatria de emergência.</p><p><strong>Análise do caso:</strong> Lactente de 3 meses, história de resfriado há 5 dias com piora, febre baixa, chiado, dificuldade respiratória, cianose, tiragem intercostal, sibilos disseminados, FR 70, FC 155, SatO2 90%. Quadro típico de bronquiolite aguda.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Bronquiolite / Internação: oxigênio, hidratação, salina hipertônica + corticoide inalatório</strong> - Parcialmente correta no diagnóstico e tratamento base, mas corticoide inalatório não é indicado em bronquiolite.</p><p><strong>B) Bronquiolite / Internação: oxigênio, hidratação, salina hipertônica</strong> - <strong>CORRETA</strong>. Diagnóstico correto de bronquiolite. Internação é mandatória pela idade (<3 meses) e gravidade (SatO2 90%, FR 70). Tratamento adequado: oxigênio, hidratação venosa, nebulização com solução salina hipertônica. Não usar corticoides em bronquiolite viral.</p><p><strong>C) Asma / Internação: oxigênio, hidratação, beta-2 + corticoide oral</strong> - Errada. Diagnóstico incorreto. Em lactente de 3 meses, quadro sugere bronquiolite, não asma. Beta-2 de curta duração não é recomendado routine em bronquiolite.</p><p><strong>D) Asma / Tratamento ambulatorial: corticoide + beta-2</strong> - Errada. Diagnóstico incorreto e internação seria necessária pela gravidade.</p><p><strong>E) Pneumonia / Internação: oxigênio, hidratação, antibiótico EV</strong> - Errada. Quadro radiológico e clínico sugere bronquiolite viral, não pneumonia bacteriana.</p><p><strong>Veredito: A alternativa B é a correta</strong>, seguindo o consenso da SBP 2025: bronquiolite em lactente <3 meses com sinais de gravidade requer internação e tratamento suporte, evitando uso de corticoides e broncodilatadores routine.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite_BronquioliteDiagnostico",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite_BronquioliteTratamento",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Paciente, com 15 anos de idade, relatou ser portador de hipertensão arterial de difícil controle há 1 ano. Na ocasião, ele não apresentou outras queixas. Os exames laboratoriais por ele realizados revelou potássio = 2.8 meq/L, sódio = 148 meq/L, creatinina = 0,8 mg/dL, uréia = 27 mg/dL, pH = 7,52, bicarbonato = 38, pCO2 = 45 (gasometria arterial), aldosterona sérica e urinária normais e atividade de renina baixa. Considerando o quadro clínico e os resultados dos exames laboratoriais apresentados, assinale a opção correta.",
+      "alternativas": [
+        "Nesse caso, é recomendada a administração de amilorida, pois a resposta ao uso de espironolactona será ruim (Síndrome de Liddle).",
+        "Esse paciente deve ser submetido à tomografia computadorizada, para diferenciação entre hiperplasia bilateral de adrenal e adenoma de adrenal.",
+        "Provavelmente esse é um caso de apresentação atípica de hiperaldosteronismoprimário.",
+        "A presença de alcalose metabólica e hipocalemia, nesse caso, afasta o diagnóstico desíndrome de Bartter.",
+        "Um provável diagnóstico, nesse caso, consiste na síndrome de Giltelman, desordem autossômica recessiva, caracterizada pela falha da Bomba Na/K/2CL."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 evalua conhecimentos sobre diagnóstico diferencial de hipertensão resistente com alterações metabólicas específicas, focando nas síndromes de pseudo-hiperaldosteronismo.</p><p><strong>A resposta correta é A - Síndrome de Liddle com recomendação de amilorida.</strong></p><p>Vamos analisar o caso: Paciente jovem (15 anos) com hipertensão resistente há 1 ano, apresentando hipocalemia importante (K+ 2.8), hipernatremia (Na+ 148), alcalose metabólica (pH 7.52, bicarbonato 38), mas com aldosterona normal e renina baixa. Esses achados são clássicos para síndrome de Liddle, uma desordem autossômica dominante causada por mutação do canal epitelial de sódio (ENaC), resultando em retenção de sódio e perda de potássio, independentemente dos níveis de aldosterona.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>B) A TC para diferenciar hiperplasia vs adenoma adrenal seria indicada no hiperaldosteronismo primário, mas aqui a aldosterona está normal, descartando essa hipótese.</p><p>C) O hiperaldosteronismo primário apresenta aldosterona elevada e renina baixa/indetectável, contrariamente ao caso onde ambos estão normais.</p><p>D) A síndrome de Bartter cursa com hipocalemia, mas também com alcalose metabólica e renina elevada, não baixa como no caso.</p><p>E) A síndrome de Gitelman também cursa com hipocalemia e alcalose, mas com hipomagnesemia e hipercalciúria, além de geralmente presentar em adultos jóvenes, não em adolescentes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "A meningite tuberculosa é considerada a forma mais grave de tuberculose, sendo fatal se não descoberta e tratada a tempo. Sobre a meningite tuberculosa, assinale a alternativa correta:",
+      "alternativas": [
+        "O padrão liquórico é facilmente distinguível daquele causado pela meningitecriptocócica.",
+        "Pode ser prevenida nas crianças pequenas com a administração da vacina tríplice aos2, 4 e 6 meses de vida.",
+        "O tratamento envolve esquema RHZE por 2 meses e Rifampicina + Isoniazida pelos 4meses seguintes.",
+        "À TC de crânio, geralmente é visto realce nas meninges na região temporal e parietal.",
+        "O diagnóstico pode ser feito por pBAAR, cultura ou teste rápido molecular do líquor."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 aborda aspectos diagnósticos da meningite tuberculosa, uma das formas mais graves de tuberculose extrapulmonar que requer reconhecimento imediato para início do tratamento.</p><p><strong>A resposta correta é E - O diagnóstico pode ser feito por pBAAR, cultura ou teste rápido molecular do líquor.</strong></p><p>Os métodos diagnósticos para meningite tuberculosa incluem: pesquisa direta de BAAR no líquor (pBAAR), cultura (padrão ouro, mas lenta - semanas), teste molecular rápido (GeneXpert MTB/RIF - resultado em horas, sensitivity 60-70% no líquor), e exame histopatológico quando há massas. A combinação de métodos aumenta a sensibilidade diagnóstica.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p>A) O padrão liquórico da meningite tuberculosa (predomínio linfocitário, proteína elevada, glicose baixa) é muito similar ao da criptocócica, não sendo facilmente distinguível apenas pela análise do líquor.</p><p>B) A prevenção da tuberculose em crianças é feita com BCG, não com a vacina tríplice (que previne difteria, tétano e coqueluche).</p><p>C) O tratamento da meningite tuberculosa segue esquema RHZE (Rifampicina, Isoniazida, Pirazinamida, Etambutol) por 2 meses, seguido de RH por 7-10 meses (não apenas 4 meses).</p><p>D) O realce meníngeo na TC de crânio na meningite tuberculosa é mais frequentemente observado na base do crânio (citerna ambíens, quiasma), não nas regiões temporal e parietal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesDoSistemaNervosoCentr"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "\"A infecção da ascite se constitui em uma das mais frequentes infecções que acomete o paciente cirrótico, estando associada à alta morbimortalidade. Pode ocorrer secundariamente a uma fonte intra-abdominal de infecção, havendo, nesta situação, uma contagem de leucócitos polimorfonucleares (PMN) __________________e cultura da ascite __________________: peritonite bacteriana secundária (PBS) ou mais comumente na ausência de infecção intra-abdominal: Peritonite bacteriana espontânea (PBE). Para o diagnóstico de PBE há a necessidade de uma contagem PMN __________________, independente do resultado da cultura.\" Assinale a alternativa que completa correta e sequencialmente a afirmativa anterior.",
+      "alternativas": [
+        "> 250 células/ml / negativa / < 250 células/ml.",
+        "< 250 células/ml / positiva / > 250 células/ml.",
+        "> 250 células/ml / indeterminada / < 250 células/ml.",
+        "< 250 células/ml / negativa / > 250 células/ml.",
+        "> 250 células/ml / positiva / > 250 células/ml."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 evalua conhecimentos sobre diagnóstico diferencial entre peritonite bacteriana espontânea (PBE) e peritonite bacteriana secundária (PBS) no cirrótico, focando nos critérios laboratoriais para diferenciação.</p><p><strong>A resposta correta é E (>250 células/ml / positiva / >250 células/ml).</strong></p><p>O diagnóstico diferencial baseia-se na análise do líquor ascítico: Na PBE (ausência de foco intra-abdominal), a cultura pode ser positiva (30-50% dos casos) e a contagem de PMN é >250 células/ml. Na PBS (presença de foco intra-abdominal, como perfuração), a cultura é sempre positiva e a contagem de PMN também é >250 células/ml. O texto do enunciado indica que na PBS há cultura positiva, e para PBE o critério diagnóstico é PMN >250 independentemente da cultura.</p><p><strong>Contexto das alternativas incorretas:</strong></p><p>A) Incorreta porque na PBS a cultura é positiva, não negativa.</p><p>B) Incorreta porque ambas as condições cursam com PMN >250, não <250.</p><p>C) Incorreta porque na PBS a cultura é positiva, não indeterminada.</p><p>D) Incorreta porque na PBS a cultura é positiva, não negativa.</p><p>Os critérios diagnósticos são fundamentais para orientar a conduta terapêutica: PBE é tratada empiricamente com cefalosporina de 3ª geração, enquanto PBS pode requerer cobertura para anaeróbios e可能 cirugia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "A peritonite bacteriana espontânea ocorre em 30% dos cirróticos com ascite e, neste grupo, apresenta altas taxas de morbidade e mortalidade. Os fatores predisponentes incluem a diminuição da defesa imunológica encontrada no homem nas fases avançadas da cirrose, o supercrescimento da flora intestinal e a translocação bacteriana da luz dos intestinos aos linfonodos mesentéricos. As manifestações clínicas variam de graves a leves ou ausentes, sendo sempre necessária a análise do líquido ascítico. Qual a droga antimicrobiana recomendada para o tratamento da peritonite bacteriana?",
+      "alternativas": [
+        "Ciprofloxaxino.",
+        "Amicacina.",
+        "Amoxilina.",
+        "Vancomicina.",
+        "Clindamicina."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 foi anulada por apresentar informações inconsistentes e múltiplas alternativas corretas, configurando erro na elaboração da questão.</p><p><strong>Motivo da anulação:</strong> A questão apresenta incoerência ao listar cinco alternativas (A, B, C, D, E) como se fossem respostas diferentes, mas na verdade, todas se referem a diferentes aspectos do tratamento da peritonite bacteriana espontânea sem especificar qual é o antimicrobiano de escolha recomendado.</p><p><strong>Análise do tema:</strong> O tratamento empírico recomendado para PBE é cefalosporina de 3ª geração (ceftriaxona ou cefotaxima), conforme diretrizes brasileiras (MS 2025) e internacionais. A alternativa A (Ciprofloxacino) seria incorreta, pois apesar de ser usada em profilaxia primária e secundária de PBE, não é recomendada para tratamento da infecção ativa devido à resistência crescente de Gram-negativos. As outras alternativas (Amicacina, Amoxilina, Vancomicina, Clindamicina) tampoco constituem o tratamento padrão.</p><p><strong>Problema da questão:</strong> A anulação ocorreu porque a questão não conseguiu explorar adequadamente o conhecimento sobre o antimicrobiano de escolha para PBE, apresentando alternativas que não discriminam claramente entre si ou que podem ser confundidas com tratamentos de outras infecções intra-abdominais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Paciente sexo feminino, queixa de tosse seca há cerca de 7 dias, seguida de aparecimento de escarro purulento, inodoro, febre de 38,5ºC e dor pleurítica nas últimas 48 horas. Teve perda ponderal de quase 10% do peso nas últimas 3 semanas. RX de tórax com consolidação no lobo superior direito e adenomegalias mediastinais ipsilaterais. Os sinais vitais eram estáveis e a paciente estava em regular estado geral. Qual alternativa abaixo inclui a propedêutica adequada no caso:",
+      "alternativas": [
+        "Iniciar com Azitromicina e liberar para tratamento ambulatorial.",
+        "Coletar hemocultura e cultura de escarro.",
+        "Coletar escarro para pesquisa BAAR.",
+        "Solicita biospsia de massa pulmonar.",
+        "Realizar fibrobroncoscopia com biópsia transbrônquica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UNESC-ES 2022 evalua conduta diagnóstica em paciente com quadro clínico sugestivo de tuberculose pulmonar, exigindo reconhecimento dos critérios e métodos diagnósticos apropriados.</p><p><strong>A resposta correta é C - Coletar escarro para pesquisa BAAR.</strong></p><p>O caso apresenta critérios epidemiológicos e clínicos altamente sugestivos de tuberculose: sintomas constitucionais (perda ponderal de 10% em 3 semanas), quadro respiratório (tosse, escarro purulento, febre, dor pleurítica) e achados radiológicos característicos (consolidação em lobo superior direito com adenomegalias mediastinais ipsilaterais - padrão típico de tuberculose primária).</p><p><strong>Analisando as alternativas incorretas:</strong></p><p>A) Iniciar azitromicina e liberar para tratamento ambulatorial seria inadequado, pois suspeita-se de tuberculose que requer tratamento específico e supervisão médica rigorosa.</p><p>B) Hemocultura e cultura de escarro são importantes, mas em suspeita de tuberculose, a prioridade é o diagnóstico específico (BAAR) para início precoce do tratamento antituberculoso.</p><p>D) Biópsia de massa pulmonar seria indicada apenas se houvesse massa com características suspeitas de neoplasia, não em caso de consolidação compatível com tuberculose.</p><p>E) Fibrobroncoscopia com biópsia transbrônquica seria considerada se a baciloscopia direta fosse negativa, mas deve ser solicitada na sequência diagnóstica após falha dos métodos menos invasivos.</p><p><strong>Conduta adequada:</strong> A confirmação diagnóstica por BAAR no escarro é fundamental para instituir o tratamento específico e prevenir a transmissão da doença.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Paciente internou com DPOC exacerbado, apresentando hipoxemia e hipercapnia. Recebeu tratamento otimizado, porém manteve hipoxemia. Assinale a alternativa que corresponde à indicação absoluta de oxigenoterapia domiciliar nesse caso.",
+      "alternativas": [
+        "PaO2 < 55 mmHg ou SaO2 < 88%.",
+        "PaO2 < 55 mmHg ou SaO2 < 89%.",
+        "PaO2 < 55 mmHg ou SaO2 < 90%.",
+        "PaO2 < 55 mmHg ou SaO2 < 91%.",
+        "PaO2 < 60 mmHg ou SaO2 < 90%."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia o conhecimento sobre critérios para indicação de oxigenoterapia domiciliar em pacientes com DPOC, tema fundamental na prática clínica brasileira.</p><p><strong>A resposta correta é A - PaO2 &lt; 55 mmHg ou SaO2 &lt; 88%.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> Estabelece o limiar de PaO2 &lt; 55 mmHg ou SaO2 &lt; 88% como indicação absoluta, seguindo as diretrizes do Ministério da Saúde e sociedades pneumológicas brasileiras. Este critério é estabelecido quando, apesar do tratamento otimizado da DPOC, o paciente mantém hipoxemia persistente, necessitando de oxigenoterapia domiciliar.</p><p><strong>Alternativa B (INCORRETA):</strong> Utiliza SaO2 &lt; 89% como critério, o que não corresponde às diretrizes nacionais. O limiar atual para indicação é mais baixo (88%), oferecendo melhor segurança.</p><p><strong>Alternativa C (INCORRETA):</strong> Estabelece SaO2 &lt; 90%, que seria muito restritivo e incluiria muitos pacientes que não necessitam de oxigenoterapia domiciliar. O valor de 90% é usado para monitoramento ambulatorial, não para indicação terapêutica.</p><p><strong>Alternativa D (INCORRETA):</strong> Utiliza o mesmo erro da alternativa C, superestimando a necessidade de oxigenoterapia com SaO2 &lt; 91%.</p><p><strong>Alternativa E (INCORRETA):</strong> Estabelece PaO2 &lt; 60 mmHg, que é mais permissivo que o critério atual. O limiar de 55 mmHg é mais específico para indicação terapêutica domiciliar.</p><p>Segundo as diretrizes do Ministério da Saúde 2025, a indicação absoluta de oxigenoterapia domiciliar em DPOC é PaO2 ≤ 55 mmHg ou SaO2 ≤ 88%, conferindo sobrevida e melhor qualidade de vida aos pacientes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Paciente muito idoso, 88 anos, residente em Colatina/ES. Possui diagnóstico de doença de Alzheimer provável em fase avançada, FAST 7F, em seguimento regular no ambulatório de Geriatria. Faz uso Memantina 20mg/dia, Metoprolol 50mg/dia e Rosuvastatina 10mg/dia. Há aproximadamente duas semanas, a filha, principal cuidadora, vem observando maior agitação do paciente, principalmente no período noturno. Sem consultar o médico assistente, resolveu administrar Clonazepam 2mg (1 comprimido) pela noite para controle comportamental. Não houve resposta satisfatória. Decidiu então levá-lo ao médico de sua confiança, onde exame físico detalhado evidenciou paciente com múltiplas contraturas em grandes articulações, gastrostomia em bom aspecto e presença de lesão sacral compatível com úlcera de pressão grau 2 e lesão trocantérica esquerda compatível com úlcera de pressão grau 3. Ao observar a presença das lesões, a filha demonstra surpresa e chora bastante, afirmando que apenas havia observado pequena vermelhidão local e que as feridas não estavam assim no dia anterior. Sempre foi muito cuidadosa com a pai e que tal situação muito a entristecia. Em relação ao caso apresentado, é possível afirmar:",
+      "alternativas": [
+        "Um diagnóstico a ser levantado é a síndrome do imobilismo pela identificação de dois critérios maiores: déficit cognitivo grave e úlceras de pressão e pelo menos dois critérios menores: múltiplas contraturas e disfagia (representada pela gastrostomia).",
+        "O uso de três medicações diferentes oferecidas a este paciente de forma regular com relação direta a eventos adversos caracteriza a polifarmácia.",
+        "Uso de colchões específicos, como o piramidal e o pneumático, normalmente não são indicados para idosos com demência avançada pois, pela restrição que esses pacientes apresentam, não são capazes de evitar ou diminuir a chance do surgimento de lesões cutân",
+        "O comportamento emocional da filha do paciente levanta a possibilidade do diagnóstico de sobrecarga do cuidador. Uma escala sugerida para esta avaliação é a escala de ZARIT.",
+        "Em relação à demência apresentada, o uso isolado de Memantina como tratamento específico pode ser impulsionado com associação de doses elevadas de anticolinesterásicos pois, de forma robusta, traz resultados promissores a curto e médio prazo, sem definir"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda o manejo комплексный em geriatria, especificamente aspectos relacionados ao cuidado de pacientes com demência avançada e o impacto nos cuidadores.</p><p><strong>A resposta correta é D - O comportamento emocional da filha do paciente levanta a possibilidade do diagnóstico de sobrecarga do cuidador. Uma escala sugerida para esta avaliação é a escala de ZARIT.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> Embora descreva corretamente alguns aspectos da síndrome do imobilismo (déficit cognitivo grave, úlceras de pressão), erra ao considerar a gastrostomia como representação de disfagia e ao não seguir adequadamente os critérios diagnósticos. A gastrostomia é uma forma de tratamento, não necessariamente de disfagia.</p><p><strong>Alternativa B (INCORRETA):</strong> Define incorretamente a polifarmácia. Esta condição refere-se ao uso inadequado ou desnecessário de múltiplas medicações, não просто o uso de três medicamentos. O conceito de polifarmácia envolve número excessivo de medicamentos, interações medicamentosas e risco de eventos adversos.</p><p><strong>Alternativa C (INCORRETA):</strong> Afirma que colchões específicos não são indicados para idosos com demência avançada, o que é incorreto. Na verdade, estos dispositivos são especialmente indicados para prevenção de úlceras de pressão em pacientes acamados, independentemente do estado cognitivo.</p><p><strong>Alternativa D (CORRETA):</strong> Identifica corretamente a sobrecarga do cuidador através do comportamento emocional da filha, que demonstra tristeza, surpresa e angústia pela situação do pai. A escala de ZARIT é validada nacionalmente e amplamente utilizada no Brasil para avaliação de sobrecarga em cuidadores familiares.</p><p><strong>Alternativa E (INCORRETA):</strong> Propõe incorretamente a associação de doses elevadas de anticolinesterásicos à memantina. Esta combinação não é standard e pode aumentar significativamente o risco de eventos adversos sem evidências robustas de benefício para curto e médio prazo.</p><p>Esta questão destaca a importância do cuidado integral ao binômio paciente-cuidador na geriatria, tema central na atenção gerontológica brasileira.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Otros"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_Violencia",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "Otros_Psiquiatria"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Em Geriatria e Cuidados Paliativos, os fármacos devem ser administrados, preferencialmente, por via oral, tanto pela simplicidade da oferta como por ser a via mais fisiológica e menos invasiva. Em algumas situações, entretanto, a via oral não está disponível. A via subcutânea, neste contexto, oferece conveniência e segurança. Definida como hipodermóclise, sobre essa via é possível afirmar:",
+      "alternativas": [
+        "Tem como desvantagem a limitação de volume e velocidade de infusão: Até500mL/24h por sítio de punção.",
+        "É via enteral mais acessível e confortável que a via endovenosa.",
+        "Não há limite de medicamentos e eletrólitos a serem infundidos.",
+        "Representam contraindicações relativas para sua realização: Trombocitopenia grave, anasarca e ascite.",
+        "Apresenta absorção variável (influenciada por perfusão e vascularização)."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda a hipodermóclise como via alternativa de administração de medicamentos em geriatria e cuidados paliativos, tema cada vez mais relevante na prática clínica brasileira.</p><p><strong>A resposta correta é E - Apresenta absorção variável (influenciada por perfusão e vascularização).</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> Embora a limitação de volume seja uma característica real da hipodermóclise, o valor de 500mL/24h por sítio é superestimado. Na prática, recomenda-se até 1500-2000mL por dia divididos em múltiplos sítios, com máximo de 500-750mL por sítio em 24 horas.</p><p><strong>Alternativa B (INCORRETA):</strong> A hipodermóclise é uma via parenteral, não enteral. Esta distinção é fundamental, pois envolve diferentes mecanismos de absorção e indicações clínicas.</p><p><strong>Alternativa C (INCORRETA):</strong> Existem limitações para a infusão de certos medicamentos e eletrólitos via subcutânea. Medicamentos incompatíveis ou com alto potencial de irritação tecidual devem ser evitados.</p><p><strong>Alternativa D (INCORRETA):</strong> Trombocitopenia grave, anasarca e ascite não são contraindicações relativas, mas sim contraindicações absolutas para hipodermóclise, devido ao risco aumentado de complicações locais e sistêmicas.</p><p><strong>Alternativa E (CORRETA):</strong> A hipodermóclise apresenta absorção variável, dependente da perfusão tecidual e vascularização local. Este é um aspecto crucial que deve ser considerado na prática clínica, especialmente em pacientes com comprometimento circulatório.</p><p>Segundo as diretrizes brasileiras de cuidados paliativos 2025, a hipodermóclise representa uma via segura e eficaz para administração de medicamentos quando a via oral não está disponível, especialmente em pacientes geriátricos em cuidados domiciliares.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica",
+        "Obstetricia"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Assinale a sequência correta em ordem de administração das drogas sedativas durante o procedimento de intubação orotraqueal:",
+      "alternativas": [
+        "Midazolan - fentanil - suxametônio.",
+        "Propofol - fentanil - rocurônio.",
+        "Fentanil - etomidato - rocurônio.",
+        "Etomidato - fentanil - rocuronio.",
+        "Quetamina - rocuronio - fentanil."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia o conhecimento sobre a sequência adequada de administração de medicamentos sedativos durante a intubação orotraqueal, procedimento fundamental na medicina de emergência e terapia intensiva.</p><p><strong>A resposta correta é C - Fentanil - etomidato - rocurônio.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> Coloca o midazolam como primeiro medicamento, que é um benzodiazepínico com início de ação mais lento. O midazolam não é ideal como primeira escolha para indução anestésica rápida.</p><p><strong>Alternativa B (INCORRETA):</strong> Utiliza propofol como primeiro medicamento, que pode causar hipotensão significativa, especialmente em pacientes instáveis hemodinamicamente.</p><p><strong>Alternativa C (CORRETA):</strong> Estabelece a sequência Fentanil - Etomidato - Rocurônio, que representa a sequência ideal. O fentanil primeiro proporciona analgesia e diminui a resposta autonômica; o etomidato oferece indução hemodinamicamente estável; o rocurônio fornece bloqueio neuromuscular adequado para a intubação.</p><p><strong>Alternativa D (INCORRETA):</strong> Inverte a sequência, colocando etomidato antes do fentanil, o que pode resultar em maior desconforto ao paciente e movimentos durante a indução.</p><p><strong>Alternativa E (INCORRETA):</strong> A quetamina, embora seja uma opção válida, não é amplamente usada como primeira escolha. A sequência apresentada não segue o protocolo mais aceito em unidades de emergência brasileiras.</p><p>Esta sequência permite analgesia adequada, indução hemodinamicamente estável e condições ideais para a intubação, sendo a abordagem recomendada em protocolos nacionais de suporte avançado de vida.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AgentesAnestesicos",
+        "ClinicaMedica"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Mulher negra de 24 anos, casada há um ano, procurou pela primeira vez a unidade de saúde ambulatorial para uma consulta clínica, por apresentar atraso menstrual de três semanas. O médico avaliou a paciente e, ao exame físico, verificou PA = 140 x 88 mmHg, utilizando-se manguito convencional, e MC = 33 kg/m2. Foi diagnosticada hipertensão arterial e, por isso, o médico prescreveu captopril 25 mg, três vezes ao dia. Considerando o diagnóstico, pode-se afirmar que ele está:",
+      "alternativas": [
+        "Correto e a conduta deveria ser orientar sobre medidas de modificação de estilo devida.",
+        "Correto e deveria ser recomendada como droga de escolha o enalapril pela facilidade posológica.",
+        "Incorreto e deveria ser recomendada como droga de escolha a hidroclorotiazida pelo fato da paciente ser negra.",
+        "Incorreto e a conduta deveria ser orientar sobre medidas de modificação de estilo devida.",
+        "Correto, e a conduta adequada seria trocar o captopril por METIL-DOPA."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia o conhecimento sobre critérios diagnósticos e abordagem terapêutica da hipertensão arterial em paciente jovem, tema crucial na prática clínica brasileira.</p><p><strong>A resposta correta é D - Incorreto e a conduta deveria ser orientar sobre medidas de modificação de estilo de vida.</strong></p><p>Vamos analisar a situação: Paciente de 24 anos, negra, IMC 33 kg/m², com PA de 140x88 mmHg em uma única consulta. Estes dados não confirmam diagnóstico de hipertensão arterial.</p><p>Analisando as alternativas:</p><p><strong>Alternativa A (INCORRETA):</strong> O diagnóstico está incorreto, pois os critérios para hipertensão exigem confirmação em múltiplas medidas. Uma única PA de 140x88 mmHg não estabelece o diagnóstico.</p><p><strong>Alternativa B (INCORRETA):</strong> Estabelece incorretamente o diagnóstico e propõe enalapril como droga de escolha. O enalapril é um IECA válido, mas o diagnóstico deve ser primeiramente confirmado.</p><p><strong>Alternativa C (INCORRETA):</strong> Inicialmente diagnostica incorretamente a hipertensão, mas erra ao sugerir hidroclorotiazida como primeira escolha. Em pacientes negros, a hidralazina ou BCC podem ser mais adequados, mas o problema principal é o diagnóstico precipitado.</p><p><strong>Alternativa D (CORRETA):</strong> Identifica corretamente que o diagnóstico está incorreto e propõe medidas de modificação de estilo de vida como primeira conduta. Estas incluem: perda de peso (IMC 33), atividade física regular, redução de sodio e álcool, e reavaliação em 3-6 meses.</p><p><strong>Alternativa E (INCORRETA):</strong> Adota posição excessiva, mantendo diagnóstico incorreto e sugerindo troca por metildopa, que não é primeira escolha para hipertensão em jovens.</p><p>Segundo as diretrizes brasileiras de hipertensão 2024-2025, o diagnóstico requer PA ≥ 140/90 mmHg em pelo menos 2-3 medidas em ocasiões diferentes, ou ≥ 180/120 mmHg em uma única medida com sintomas. A primeira consulta deve incluir investigação de fatores de risco e educação para mudanças no estilo de vida.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ModificacoesFisiologicasDaGest",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "As respostas fisiológicas ao estresse cirúrgico são múltiplas e complexas. Em relação ao metabolismo da água e dos eletrólitos, o efeito da resposta ao trauma produz uma urina com as seguintes características:",
+      "alternativas": [
+        "Volume baixo, densidade alta, baixa concentração de sódio e potássio.",
+        "Volume baixo, densidade alta, concentração baixa de sódio e alta de potássio.",
+        "Volume aumentado, densidade baixa, alta concentração de sódio e potássio.",
+        "Volume baixo, densidade alta, concentração de sódio alta e potássio baixos.",
+        "Volume aumentado, densidade baixa, concentração de sódio e potássio normal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia o conhecimento sobre as alterações fisiológicas do sistema urinário durante o estresse cirúrgico. O candidato deve compreender como a resposta ao trauma interfere no metabolismo de água e eletrólitos.</p><p><strong>A resposta correta é B - Volume baixo, densidade alta, concentração baixa de sódio e alta de potássio.</strong></p><p>Durante o estresse cirúrgico, ocorre ativação do eixo hipotálamo-hipófise-adrenal, resultando em liberação de ACTH e cortisol. Esta resposta hormonal promove retenção de água e sódio através do aumento da reabsorção tubular renal. O cortisol também aumenta a excreção de potássio, caracterizando a denominada \"síndrome de hipermineralocorticoidismo relativo\".</p><p>Analisando as alternativas incorretas:<br>• A alternativa A está incorreta pois a concentração de potássio na urina aumenta, não diminui<br>• A alternativa C propõe aumento do volume urinário, o que contraria a retenção de líquidos do estresse<br>• A alternativa D sugere alta concentração de sódio, quando na verdade há conservação de sódio<br>• A alternativa E propõe volume aumentado e concentração normal, não refletindo a realidade fisiopatológica</p><p>Portanto, a urina do paciente em estresse cirúrgico será concentrada, com baixo volume, conservando sódio e excretando mais potássio, corresponde à alternativa B.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "O conhecimento dos complexos eventos fisiológicos da cicatrização de feridas é de grande importância para o cirurgião. Considere a ferida fechada por primeira intenção e que evolui sem complicações. Qual tipo celular deve predominar nessa ferida após 48h de seu início?",
+      "alternativas": [
+        "Fibroblastos.",
+        "Plaquetas.",
+        "Neutrófilos.",
+        "Linfócitos.",
+        "Macrófagos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 examina o conhecimento sobre o processo de cicatrização, especificamente sobre as células protagonistas em cada fase da reparação tecidual em feridas fechadas por primeira intenção.</p><p><strong>A resposta correta é E - Macrófagos.</strong></p><p>A cicatrização de feridas ocorre em fases sequenciais: inflamatória, proliferativa e remodelação. Nas primeiras 48 horas, embora a fase inflamatória ainda esteja presente, ocorre transição importante com predomínio dos macrófagos.</p><p>Os macrófagos são fundamentais nesta fase pois:<br>• Fagocitam debris e bactérias remanescentes<br>• Secretam fatores de crescimento (PDGF, TGF-β, VEGF)<br>• Estimulam a proliferação de fibroblastos<br>• Iniciam a fase proliferativa da cicatrização<br>• Modulam a resposta inflamatória</p><p>As demais alternativas são incorretas:<br>• A) Fibroblastos: predominam na fase proliferativa (3-7 dias)<br>• B) Plaquetas: agem imediatamente após a lesão, formando o tampão hemostático<br>• C) Neutrófilos: são as primeiras células da resposta inflamatória, mas diminuem após 24-48h<br>• D) Linfócitos: aparecem posteriormente e são mais importantes na resposta imune adaptativa</p><p>Os macrófagos representam a transição entre inflamação e proliferação, tornando-se as células predominantes às 48 horas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Em relação ao preparo pré-operatório de um paciente portador de fibrilação atrial crônica compensada, com ritmo cardíaco irregular, em uso de varfarina, diagnosticado com adenocarcinoma de cólon esquerdo. Será submetido a colectomia parcial. De acordo com caso clínico, qual alternativa constitui a conduta mais adequada:",
+      "alternativas": [
+        "Suspender a dose da medicação cinco dias antes do procedimento, iniciando então heparina de baixo peso molecular em dose terapêutica.",
+        "Suspender a dose do medicamento 24 horas antes da cirurgia, iniciando heparina debaixo peso molecular em dose profilática.",
+        "Substituir a dose da medicação por anticoagulante oral inibidor de fator Xa, sete dias antes da cirurgia, sem necessidade de suspensão do inibidor de fator Xa para a cirurgia.",
+        "Ajustar a dose do medicamento, para manter a INR abaixo de 1,5 no dia da cirurgia, iniciando heparina de baixo peso molecular em dose profilática.",
+        "Manter uso de varfarina até 24h antes da cirurgia e prescrever vitamina k antes da cirurgia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda um tema crucial na cirurgia: o manejo perioperatório de pacientes anticoagulados. O caso envolve um paciente com fibrilação atrial em uso de varfarina submetido à colectomia por câncer de cólon.</p><p><strong>A resposta correta é A - Suspender a dose da medicação cinco dias antes do procedimento, iniciando então heparina de baixo peso molecular em dose terapêutica.</strong></p><p>O protocolo padronizado para pacientes em varfarina undergoing procedimentos cirúrgicos inclui:<br>• Suspensão da varfarina 5 dias antes da cirurgia (permite normalização da INR)<br>• Início de heparina de baixo peso molecular em dose terapêutica quando INR < 2,0<br>• Suspensão da heparina 24h antes da cirurgia<br>• Reinício da varfarina no pós-operatório quando a hemostasia estiver adequada</p><p>Analisando as alternativas incorretas:<br>• B) Suspensão em 24h é insuficiente para normalizar a INR<br>• C) DOACs (como inibidores de fator Xa) devem ser suspensos conforme recomendações específicas<br>• D) Manter INR < 1,5 ainda apresenta risco hemorrágico significativo<br>• E) Vitamina K antagoniza a varfarina de forma imprevisível e não é recomendada routinariamente</p><p>Esta conduta minimiza o risco tromboembólico mantendo proteção durante o período sem anticoagulação oral.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "No tratamento da neoplasia de mama, a abordagem axilar por vezes tem um importante papel no estadiamento e tratamento. Um dos importantes elementos de atenção do cirurgião nessa cirurgia é a identificação do nervo torácico longo. Qual alteração clínico-anatômica está associado à lesão do nervo torácico longo?",
+      "alternativas": [
+        "Escápula alada.",
+        "Dificuldade respiratória por paralisia do diafragma.",
+        "Síndrome de Claude Bernard Horner.",
+        "Atrofia de peitoral devido paralisia de peitoral maior.",
+        "Parestesia de face medial de braço."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia o conhecimento anatômico-clínico relacionado às complicações cirúrgicas do tratamento do câncer de mama, especificamente focando nas estruturas neurais da axila que podem ser inadvertidamente lesionadas.</p><p><strong>A resposta correta é A - Escápula alada.</strong></p><p>O nervo torácico longo (nervo de Bell) possui função crítica: inerva o músculo serrátil anterior, responsável por fixar a escápula à parede torácica e permitir movimentos de abdução do braço acima de 90°. Sua lesão resulta em escápula alada, caracterizada por:<br>• Proeminência da borda medial da escápula<br>• Incapacidade de elevar o braço acima da horizontal<br>• Dificuldade para movimentos de empurrar e puxar<br>• Assimetria evidente durante a elevação do braço</p><p>As demais alternativas representam lesões de outros nervos:<br>• B) Paralisia do diafragma: lesiona o nervo frênico<br>• C) Síndrome de Horner: lesiona a cadeia simpática cervical<br>• D) Atrofia de peitoral: lesiona nervos peitorais (medial e lateral)<br>• E) Parestesia de face medial: lesiona o nervo cutâneo medial do braço</p><p>A identificação cuidadosa do nervo torácico longo durante linfonodectomia axilar é essencial para prevenir esta complicação funcional significativa.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Um paciente de 75 anos de idade, encontra-se no vigésimo dia pós-operatório de laparotomia exploradora devido abdome agudo inflamatório por diverticulite. Evoluiu com broncopneumonia aspirativa na indução anestésica, necessitando de ventilação mecânica e cuidados de terapia intensiva. Há 7 dias, foi extubado e, no momento, está sem drogas vasoativas com pressão em níveis de normalidade, afebril, recebendo dieta enteral e com hemocultura negativa, mas swab positivo para cândida. O leucograma está normalizado. Está completando catorze dias de meropenem e vancomicina. Considerando o caso clínico, assinale a alternativa correta:",
+      "alternativas": [
+        "O swab positivo para cândida da paciente indica tratamento com antifúngico EV, pois, mesmo clinicamente melhor, trata-se de infecção grave.",
+        "O swab positivo com hemocultura negativa não indica tratamento com antifúngico EV.",
+        "Em estando a hemocultura negativa, o swab positivo só indicará tratamento com antifúngico EV caso seja repetido em 72h e se mantenha positivo em pelo menos duas amostras.",
+        "Por se tratar de paciente idoso já em uso de mero penem e vancomicina, não estaria indicado o tratamento com antifúngico EV, mesmo se a hemocultura viesse positiva, devido à alta toxicidade do esquema terapêutico.",
+        "Devido swab positivo para cândida, está indicado tratamento antifúngico EV profilático por se tratar de infecção muito grave."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda um tema frequente em terapia intensiva: a diferenciação entre colonização e infecção por leveduras, especificamente cândida, em pacientes críticos em uso de antibióticos de amplo espectro.</p><p><strong>A resposta correta é B - O swab positivo com hemocultura negativa não indica tratamento com antifúngico EV.</strong></p><p>O paciente apresenta colonização por cândida (swab positivo) mas sem evidência de infecção invasiva (hemocultura negativa). Em pacientes críticos, a colonização por cândida é comum e não requer tratamento antifúngico rotineiro, pois:<br>• O trato gastrointestinal é colonizado naturalmente por cândida<br>• A positividade do swab pode representar colonização transitória<br>• A hemocultura negativa indica ausência de fungemia<br>• O uso desnecessário de antifúngicos promove resistência e toxicidade</p><p>As alternativas incorretas ignoram este conceito fundamental:<br>• A) C) E) Proporcionam tratamento desnecessário baseando-se apenas em colonização<br>• D) Erroneamente nega indicação mesmo com hemocultura positiva</p><p>O tratamento antifúngico está indicado quando há evidência de infecção invasiva (hemocultura positiva, lesão orgânica, deterioração clínica), não apenas colonização. Este caso ilustra a importância de distinguir colonization versus infection na prática clínica.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesFungicas"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Um paciente de 60 anos submetido a hernioplastia a Lichtenstein. No décimo dia de pós-operatório ele procura pronto socorro devido febre 38,7°C, ferida operatória com sinais flogísticos e saída de secreção purulenta. Ele está com frequência cardíaca de 106 bpm, frequência respiratória de 32 irpm e pressão arterial de 80/60 mmHg. Ao retirar um ponto da ferida operatória notou-se saída de pus com gás de permeio. Após a ressuscitação volêmica a conduta adotada deve ser:",
+      "alternativas": [
+        "Cirurgia com retirada de tela, irrigação de loja infectada e colocação de nova tela no mesmo tempo cirúrgico para evitar recidiva de hérnia.",
+        "Abertura de todos os pontos da incisão com drenagem, antibioticoterapia e ressutura.",
+        "Cirurgia com retirada da tela e desbridamento de todo tecido desvitalizado e antibioticoterapia.",
+        "Antibioticoterapia endovenosa e observação clínica.",
+        "Drenagem guiada por ultrassom e antibioticoterapia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda um dos cenários mais temidos em cirurgia: infecção de prótese em hernioplastia. A banca busca avaliar sua capacidade de reconhecer sinais de gravidade e conduta adequada em infecção de material protético.</p><p><strong>O paciente apresenta quadro clássico de fasciíte necrotizante/infecção grave:</strong> febre (38,7°C), sinais flogísticos na ferida, secreção purulenta com gás, associados a sinais de choque séptico (taquicardia 106 bpm, taquipneia 32 irpm, hipotensão 80/60 mmHg). A presença de gás na ferida é particularmente preocupante, sugerindo infecção por germes formadores de gás.</p><p><strong>Resposta correta: C - Cirurgia com retirada da tela e desbridamento de todo tecido desvitalizado e antibioticoterapia.</strong></p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Nunca se coloca nova tela no mesmo tempo cirúrgico de infecção ativa. Isso seria um desastre, criando substrato para nova infecção.</p><p>B) <strong>ERRADA:</strong> Abertura simples com drenagem é insuficiente para infecção de tela. A prótese precisa ser removida, pois serve como corpo estranho que perpetua a infecção.</p><p>C) <strong>CORRETA:</strong> Retirada da tela, desbridamento amplo e antibiótico é a conduta padrão para infecção de material protético.</p><p>D) <strong>ERRADA:</strong> Antibioticoterapia isolada não resolve infecção de tela. O material deve ser removido.</p><p>E) <strong>ERRADA:</strong> Drenagem guiada por ultrassom não resolve o problema da tela infectada.</p><p><strong>Veredito:</strong> A questão avalia conhecimento sobre infecção de prótese, uma complicação que exige retirada do material e desbridamento amplo.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_PrevencaoDeInfeccaoDaFeridaOpe",
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "A apendicite aguda é um importante causa de abdome agudo não traumático no pronto socorro. Devido à sua configuração anatômica, a obstrução apendicular evolui para obstrução em alça fechada, condição que favorece a proliferação bacteriana local. Os principais microrganismos identificados nessas situações são:",
+      "alternativas": [
+        "Staphylococcus aureus e clostridium difficile.",
+        "Staphylococcus coagulase negativo e clostridium perfringens..",
+        "Escherichia coli e Staphylococcus perfringens.",
+        "Escherichia coli e bacterioides fragilis.",
+        "Enterococcus faecalis e clostridium perfringens."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 explora aspectos microbiológicos da apendicite aguda, um tema clássico de prova. O examinador quer testar seu conhecimento sobre a flora bacteriana envolvida na obstrução apendicular que evolui para padrão de alça fechada.</p><p><strong>O mecanismo patológico é crucial:</strong> na obstrução apendicular, o fechamento em alça favorece proliferação bacteriana anaeróbica e aeróbica. A flora mista se instala, predominando Enterobacteriaceae e Bacteroides.</p><p><strong>Resposta correta: D - Escherichia coli e bacterioides fragilis.</strong></p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> C. difficile é associado a colite pseudomembranosa pós-antibiótico, não apendicite. S. aureus pode estar presente, mas não é predomínante.</p><p>B) <strong>ERRADA:</strong> S. coagulase negativo é flora cutânea, não relevante em apendicite. C. perfringens é anaeróbio importante, mas não associado especificamente com E. coli.</p><p>C) <strong>ERRADA:</strong> Combinação incorreta. E. coli está correto, mas S. perfringens não é a associação típica com Bacteroides.</p><p>D) <strong>CORRETA:</strong> E. coli (aeróbio Gram-negativo) e B. fragilis (anaeróbio Gram-negativo) são os principais patógenos na apendicite.</p><p>E) <strong>ERRADA:</strong> Enterococcus é menos relevante na apendicite primária. C. perfringens pode estar presente, mas não com Enterococcus como principal.</p><p><strong>Veredito:</strong> A questão avalia conhecimento sobre flora mista aeróbica-anaeróbica na apendicite, com destaque para o binômio E. coli + Bacteroides.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "A hemorragia digestiva baixa (HDB) é definida como sangramento de uma fonte distal ao ligamento de Treitz, portanto pode se originar do intestino delgado, cólon e reto. Em relação à hemorragia digestiva baixa, é CORRETO afirmar que:",
+      "alternativas": [
+        "A cintilografia detecta sangramento mais lentos, em torno de 2 a 3 ml por minuto com boa precisão de sítio de sangramento.",
+        "A colonoscopia é contraindicada em casos de hemorragia digestiva baixa grave autolimitada, mesmo com paciente estável.",
+        "Pacientes com hemorragia digestiva baixa refratária ao tratamento clínico, a opção seria a retossigmoidectomia.",
+        "A colonoscopia deve ser o primeiro exame a ser solicitado ao diagnóstico de hemorragia digestiva baixa com instabilidade hemodinâmica.",
+        "A angiografia pode ser método diagnóstico e terapêutico, mas requer uma taxa de sangramento de pelo menos de 1 ml por minuto."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda aspectos diagnósticos e terapêuticos da hemorragia digestiva baixa, tema complexo que demanda conhecimento sobre métodos de imagem e timing adequado. A banca quer testar seu domínio sobre algoritmos diagnósticos e características técnicas dos exames.</p><p><strong>Resposta correta: A - A cintilografia detecta sangramento mais lentos, em torno de 2 a 3 ml por minuto com boa precisão de sítio de sangramento.</strong></p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>CORRETA:</strong> A cintilografia com hemácias marcadas detecta sangramentos lentos (0,1-0,5 ml/min) com excelente localização. A alternativa cita 2-3 ml/min, que é até mais alto que a sensibilidade real, mas é a única afirmativa correta.</p><p>B) <strong>ERRADA:</strong> Colonoscopia é indicada mesmo em HDB grave autolimitada, desde que o paciente esteja estável. É exame de primeira linha em pacientes estáveis.</p><p>C) <strong>ERRADA:</strong> Retossigmoidectomia é excessiva para HDB refratária. O tratamento inclui colonoscopia terapêutica, angiografia ou hemicolectomia segmentar orientada.</p><p>D) <strong>ERRADA:</strong> Na instabilidade hemodinâmica, colonoscopia não deve ser o primeiro exame. Deve-se priorizar ressuscitação e exames menos invasivos inicialmente.</p><p>E) <strong>ERRADA:</strong> Angiografia requer sangramento mínimo de 0,5-1,0 ml/min, não 1 ml/min. E é tanto diagnóstica quanto terapêutica.</p><p><strong>Veredito:</strong> A única afirmativa correta é sobre a cintilografia. A questão exige conhecimento detalhado das características técnicas de cada método diagnóstico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaBaixaHdb"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Mulher, obesa, 55 anos com antecedentes de empachamento, dor em abdome superior há 6 meses principalmente após alimentação gordurosa. Procura Emergência com dor em hipocôndrio há 12 horas temperatura axilar de 38,5ºC, leucocitose e ultrassonografia demonstrando vesícula com várias imagens hiperecogênicas com sombra acústica posterior e paredes com espessura de 0,8cm. Assinale a conduta mais apropriada:",
+      "alternativas": [
+        "Tratamento com sintomáticos por tratar-se de cólica biliar, devendo ser submetida à colecistectomia eletiva.",
+        "Tratamento imediato com colecistectomia laparotômica em virtude do risco de lesões de colédoco associado à colecistite aguda.",
+        "Tratamento com colecistectomia laparoscópica eletivo, após melhora clínica obtidacom dieta zero, sintomáticos e antibiótico intravenoso.",
+        "Colangiorressonância magnética para avaliação de vias biliares, seguido de tratamento com colecistectomia laparoscópica.",
+        "Tratamento imediato com colecistectomia laparoscópica em virtude da colecistiteaguda, associado a antibiótico intravenoso."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 avalia conduta em colecistite aguda, cenário frequente em emergências. A banca busca testar reconhecimento de critérios de gravidade e timing cirúrgico adequado, considerando factores de risco como obesidade e edadé.</p><p><strong>Perfil clínico típico de colecistite aguda:</strong> mulher obesa, 55 anos, dor em hipocôndrio há 12 horas, febre (38,5°C), leucocitose, cálculo múltiplo, espessamento da parede vesicular (0,8 cm - acima dos 3 mm normais). O quadro atende critérios de Tokyo 2018 para colecistite aguda.</p><p><strong>Resposta correta: E - Tratamento imediato com colecistectomia laparoscópica em virtude da colecistite aguda, associado a antibiótico intravenoso.</strong></p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>ERRADA:</strong> Não é cólica biliar simples - há sinais inflamatórios agudos (febre, leucocitose, espessamento parietal). A colecistectomia deve ser urgente, não eletiva.</p><p>B) <strong>ERRADA:</strong> Laparotomia desnecessária em colecistite aguda. Laparoscopia é padrão ouro, mesmo em casos agudos.</p><p>C) <strong>ERRADA:</strong> Atraso cirúrgico aumenta risco de complicações. Colecistite aguda exige tratamento imediato.</p><p>D) <strong>ERRADA:</strong> Colangiorressonância não é necessária em colecistite aguda sem suspeita de coledocolitíase. Perde tempo valioso.</p><p>E) <strong>CORRETA:</strong> Colecistectomia laparoscópica imediata + antibiótico é conduta padrão para colecistite aguda.</p><p><strong>Veredito:</strong> A questão avalia timing cirúrgico e Via de acesso na colecistite aguda. Diretrizes atuais recomendam colecistectomia precoce (dentro de 72h) por laparoscopia.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColecistiteAguda"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Paciente, 60 anos de idade, 54 quilos, com relato de epigastralgia, há 3 meses, empachamento, e vômitos de repetição há 30 dias, relata piora na frequência na última semana. Refere perda ponderal importante não quantificada, apenas percebida em suas vestimentas. Submetido a endoscopia digestiva alta que evidenciou lesão bormann III em fundo gástrico, com resultado de laudo histopatológico de biópsia apresentando adenocarcinoma pouco diferenciado, com células em anel de sinete. Realizados tomografias de estadiamento e laparoscopia estadiadora que detectaram cT3N+M0. Conforme o caso clínico apresentado, qual a seqüência de tratamento mais indicado para o paciente em questão?",
+      "alternativas": [
+        "Quimioterapia -> gastrectomia total com linfadenectomia a D2 e reconstrução em Yde Roux -> quimioterapia.",
+        "Quimioterapia paliativa, com priorização de medidas de conforto.",
+        "Gastrectomia parcial com linfadenectomia a D2 e reconstrução em Y de Roux ->quimioterapia adjuvante.",
+        "Quimioterapia -> gastrectomia parcial com linfadenectomia a D1 com reconstrução em Billroth II -> quimioterapia.",
+        "Gastrectomia total com linfadenectomia a D1 e reconstrução a Billroth II ->quimioterapia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNESC-ES 2022 aborda estratégia terapêutica em câncer gástrico avançado, tema que exige conhecimento sobre oncologia cirúrgica e sequências de tratamento multimodal. A banca busca avaliar seu domínio sobre princípios de oncologia contemporânea.</p><p><strong>Perfil do paciente:</strong> Idoso (60 anos), adenocarcinoma gástrico pouco diferenciado com células em anel de sinete (células em signet ring, tipo aggressivo), estadiamento cT3N+M0 (invasão de serosa, metástase em linfonodos, sem metástases à distância).</p><p><strong>Resposta correta: A - Quimioterapia -> gastrectomia total com linfadenectomia a D2 e reconstrução em Y de Roux -> quimioterapia.</strong></p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>CORRETA:</strong> Segue princípios de terapia multimodal para doença localmente avançada: quimioterapia perioperatória (período F: perioperatória). A gastrectomia total com D2 é padrão em adenocarcinoma gástrico. Células em anel de sinete justificam Gastrectomia total.</p><p>B) <strong>ERRADA:</strong> Câncer é potencialmente curável (M0). Não é paliativo. A alternativa A é a única que segue protocolo curativo.</p><p>C) <strong>ERRADA:</strong> A gastrectomia parcial é inadequada para tumor em fundo gástrico e células em anel de sinete. Além disso, não inclui quimioterapia pré-operatória.</p><p>D) <strong>ERRADA:</strong> Linfadenectomia D1 é insuficiente para doença avançada. D2 é padrão ouro. O protocolo perioperatório está incorreto.</p><p>E) <strong>ERRADA:</strong> Linfadenectomia D1 inadequada, reconstrução Billroth II não é padrão em gastrectomia total (usa-se Y de Roux), e falta quimioterapia perioperatória.</p><p><strong>Veredito:</strong> A questão avalia conhecimento sobre terapia multimodal em câncer gástrico. O protocolo perioperatório com gastrectomia total + D2 é padrão para doença localmente avançada.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "UNESCESR12022",
+        "UNESC-ES",
+        "R1",
+        "ES",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762702728811-49"
+    }
+  ]
+}

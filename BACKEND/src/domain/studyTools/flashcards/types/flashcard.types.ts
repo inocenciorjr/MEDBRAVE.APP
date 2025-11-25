@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase dependency - using ISO string dates
 
 export enum FlashcardStatus {
   NEW = 'NEW',
@@ -18,50 +18,28 @@ export enum ReviewQuality {
   EASY = 3,
 }
 
-export interface FlashcardSRSData {
-  interval: number;
-  easeFactor: number;
-  repetitions: number;
-  lapses: number;
-}
-
 export interface Flashcard {
   id: string;
-  userId: string;
-  deckId: string;
-  frontContent: string;
-  backContent: string;
-  personalNotes?: string;
+  deck_id: string;
+  front_content: string;
+  back_content: string;
   tags: string[];
   status: FlashcardStatus;
-  difficulty?: number;
-  srsData: FlashcardSRSData;
-  nextReviewAt: Timestamp;
-  lastReviewedAt: Timestamp | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  searchableText: string;
-  mediaUrls?: string[];
-  metadata?: Record<string, unknown>;
+  created_at: string;
+  updated_at: string;
+  searchable_text: string;
 }
 
 export interface CreateFlashcardDTO {
-  userId: string;
-  deckId: string;
-  frontContent: string;
-  backContent: string;
-  personalNotes?: string;
+  deck_id: string;
+  front_content: string;
+  back_content: string;
   tags?: string[];
-  mediaUrls?: string[];
-  metadata?: Record<string, unknown>;
 }
 
 export interface UpdateFlashcardDTO {
-  frontContent?: string;
-  backContent?: string;
-  personalNotes?: string;
+  front_content?: string;
+  back_content?: string;
   tags?: string[];
   status?: FlashcardStatus;
-  mediaUrls?: string[];
-  metadata?: Record<string, unknown>;
 }

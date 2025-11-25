@@ -73,5 +73,8 @@ export interface IContentService {
    * @param options Opções de consulta
    * @returns Resultado paginado com conteúdos
    */
-  searchContent(term: string, options?: ContentQueryOptions): Promise<PaginatedContentResult>;
+  searchContent(
+    term: string,
+    options?: ContentQueryOptions,
+  ): Promise<PaginatedContentResult>;
 }

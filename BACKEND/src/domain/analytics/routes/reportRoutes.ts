@@ -1,9 +1,12 @@
-import { Router } from 'express';
-import { firestore } from 'firebase-admin';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
-import { logger } from '../../../utils/logger';
+// Este arquivo foi migrado para a pasta infra
+// Use: import { createReportRoutes } from '../../../infra/analytics/reportRoutes';
+export { createReportRoutes } from '../../../infra/analytics/reportRoutes';
 
+/*
+// Código original migrado para infra/analytics/reportRoutes.ts
 export function createReportRoutes(db?: firestore.Firestore): Router {
+  // Código original comentado - migrado para infra/analytics/reportRoutes.ts
+  /*
   const router = Router();
   
   // Middleware para autenticação em todas as rotas
@@ -206,3 +209,4 @@ export function createReportRoutes(db?: firestore.Firestore): Router {
   
   return router;
 }
+*/

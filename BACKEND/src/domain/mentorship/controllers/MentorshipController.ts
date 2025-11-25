@@ -23,7 +23,11 @@ export class MentorshipController {
   /**
    * Cria uma nova mentoria
    */
-  createMentorship = async (req: Request, res: Response, next: NextFunction) => {
+  createMentorship = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const menteeId = req.user?.id;
       const {
@@ -63,7 +67,8 @@ export class MentorshipController {
         notes,
       };
 
-      const mentorship = await this.mentorshipService.createMentorship(mentorshipData);
+      const mentorship =
+        await this.mentorshipService.createMentorship(mentorshipData);
 
       return res.status(201).json({
         success: true,
@@ -95,7 +100,11 @@ export class MentorshipController {
 
       // Se o usuário não for mentor ou mentorado da mentoria, verificar acesso
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         // Verificar se o usuário tem permissão administrativa (implementação futura)
         throw new AppError('Acesso não autorizado a esta mentoria', 403);
       }
@@ -116,7 +125,14 @@ export class MentorshipController {
    */
   listMentorships = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { mentorId, menteeId, status, limit = 10, page = 1, startAfter } = req.query;
+      const {
+        mentorId,
+        menteeId,
+        status,
+        limit = 10,
+        page = 1,
+        startAfter,
+      } = req.query;
 
       // Converter status para array se necessário
       let statusArray: MentorshipStatus[] | undefined = undefined;
@@ -160,7 +176,11 @@ export class MentorshipController {
   /**
    * Lista mentorias onde o usuário é mentor
    */
-  listMentorshipsByMentor = async (req: Request, res: Response, next: NextFunction) => {
+  listMentorshipsByMentor = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const mentorId = req.params.mentorId || req.user?.id;
       const { status } = req.query;
@@ -205,7 +225,11 @@ export class MentorshipController {
   /**
    * Lista mentorias onde o usuário é mentorado
    */
-  listMentorshipsByMentee = async (req: Request, res: Response, next: NextFunction) => {
+  listMentorshipsByMentee = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const menteeId = req.params.menteeId || req.user?.id;
       const { status } = req.query;
@@ -250,7 +274,11 @@ export class MentorshipController {
   /**
    * Aceita uma mentoria pendente
    */
-  acceptMentorship = async (req: Request, res: Response, next: NextFunction) => {
+  acceptMentorship = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { id } = req.params;
 
@@ -270,7 +298,8 @@ export class MentorshipController {
         throw new AppError('Apenas o mentor pode aceitar a mentoria', 403);
       }
 
-      const updatedMentorship = await this.mentorshipService.acceptMentorship(id);
+      const updatedMentorship =
+        await this.mentorshipService.acceptMentorship(id);
 
       return res.status(200).json({
         success: true,
@@ -286,7 +315,11 @@ export class MentorshipController {
   /**
    * Cancela uma mentoria ativa ou pendente
    */
-  cancelMentorship = async (req: Request, res: Response, next: NextFunction) => {
+  cancelMentorship = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { id } = req.params;
       const { reason } = req.body;
@@ -303,11 +336,20 @@ export class MentorshipController {
       }
 
       const userId = req.user?.id;
-      if (!userId || (mentorship.mentorId !== userId && mentorship.menteeId !== userId)) {
-        throw new AppError('Apenas o mentor ou mentorado podem cancelar a mentoria', 403);
+      if (
+        !userId ||
+        (mentorship.mentorId !== userId && mentorship.menteeId !== userId)
+      ) {
+        throw new AppError(
+          'Apenas o mentor ou mentorado podem cancelar a mentoria',
+          403,
+        );
       }
 
-      const updatedMentorship = await this.mentorshipService.cancelMentorship(id, reason);
+      const updatedMentorship = await this.mentorshipService.cancelMentorship(
+        id,
+        reason,
+      );
 
       return res.status(200).json({
         success: true,
@@ -323,7 +365,11 @@ export class MentorshipController {
   /**
    * Completa uma mentoria ativa
    */
-  completeMentorship = async (req: Request, res: Response, next: NextFunction) => {
+  completeMentorship = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { id } = req.params;
       const { rating, feedback } = req.body;
@@ -340,8 +386,14 @@ export class MentorshipController {
       }
 
       const userId = req.user?.id;
-      if (!userId || (mentorship.mentorId !== userId && mentorship.menteeId !== userId)) {
-        throw new AppError('Apenas o mentor ou mentorado podem completar a mentoria', 403);
+      if (
+        !userId ||
+        (mentorship.mentorId !== userId && mentorship.menteeId !== userId)
+      ) {
+        throw new AppError(
+          'Apenas o mentor ou mentorado podem completar a mentoria',
+          403,
+        );
       }
 
       const updatedMentorship = await this.mentorshipService.completeMentorship(
@@ -364,7 +416,11 @@ export class MentorshipController {
   /**
    * Atualiza os objetivos de uma mentoria
    */
-  updateObjectives = async (req: Request, res: Response, next: NextFunction) => {
+  updateObjectives = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { id } = req.params;
       const { objectives } = req.body;
@@ -385,11 +441,20 @@ export class MentorshipController {
       }
 
       const userId = req.user?.id;
-      if (!userId || (mentorship.mentorId !== userId && mentorship.menteeId !== userId)) {
-        throw new AppError('Apenas o mentor ou mentorado podem atualizar os objetivos', 403);
+      if (
+        !userId ||
+        (mentorship.mentorId !== userId && mentorship.menteeId !== userId)
+      ) {
+        throw new AppError(
+          'Apenas o mentor ou mentorado podem atualizar os objetivos',
+          403,
+        );
       }
 
-      const updatedMentorship = await this.mentorshipService.updateObjectives(id, objectives);
+      const updatedMentorship = await this.mentorshipService.updateObjectives(
+        id,
+        objectives,
+      );
 
       return res.status(200).json({
         success: true,

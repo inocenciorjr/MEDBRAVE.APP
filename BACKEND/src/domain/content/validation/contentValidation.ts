@@ -14,10 +14,16 @@ export const createContentSchema = z.object({
   tags: z.array(z.string()).optional(),
   categoryId: z.string().optional(),
   status: z
-    .enum(['DRAFT', 'PUBLISHED', 'ARCHIVED'] as [ContentStatus, ...ContentStatus[]])
+    .enum(['DRAFT', 'PUBLISHED', 'ARCHIVED'] as [
+      ContentStatus,
+      ...ContentStatus[],
+    ])
     .optional()
     .default('DRAFT'),
-  summary: z.string().max(500, 'O resumo não deve exceder 500 caracteres').optional(),
+  summary: z
+    .string()
+    .max(500, 'O resumo não deve exceder 500 caracteres')
+    .optional(),
   isPublic: z.boolean().optional().default(false),
   imageUrl: z.string().url('A URL da imagem é inválida').optional(),
 });
@@ -25,7 +31,9 @@ export const createContentSchema = z.object({
 /**
  * Schema para validação na atualização de conteúdo
  */
-export const updateContentSchema = createContentSchema.partial().omit({ authorId: true });
+export const updateContentSchema = createContentSchema
+  .partial()
+  .omit({ authorId: true });
 
 /**
  * Schema para validação na criação de categoria
@@ -35,7 +43,10 @@ export const createCategorySchema = z.object({
     .string()
     .min(2, 'O nome deve ter pelo menos 2 caracteres')
     .max(50, 'O nome não deve exceder 50 caracteres'),
-  description: z.string().max(200, 'A descrição não deve exceder 200 caracteres').optional(),
+  description: z
+    .string()
+    .max(200, 'A descrição não deve exceder 200 caracteres')
+    .optional(),
   parentId: z.string().optional(),
   order: z.number().int().nonnegative().optional(),
   imageUrl: z.string().url('A URL da imagem é inválida').optional(),
@@ -85,22 +96,27 @@ export const createLikeSchema = z.object({
 export const contentQuerySchema = z.object({
   limit: z
     .string()
-    .transform(val => parseInt(val, 10))
+    .transform((val) => parseInt(val, 10))
     .optional(),
   page: z
     .string()
-    .transform(val => parseInt(val, 10))
+    .transform((val) => parseInt(val, 10))
     .optional(),
   status: z
-    .enum(['DRAFT', 'PUBLISHED', 'ARCHIVED'] as [ContentStatus, ...ContentStatus[]])
+    .enum(['DRAFT', 'PUBLISHED', 'ARCHIVED'] as [
+      ContentStatus,
+      ...ContentStatus[],
+    ])
     .optional(),
   categoryId: z.string().optional(),
   authorId: z.string().optional(),
   tags: z
     .union([z.string(), z.array(z.string())])
     .optional()
-    .transform(val => (typeof val === 'string' ? val.split(',') : val)),
+    .transform((val) => (typeof val === 'string' ? val.split(',') : val)),
   searchTerm: z.string().optional(),
-  sortBy: z.enum(['createdAt', 'updatedAt', 'viewCount', 'likeCount', 'commentCount']).optional(),
+  sortBy: z
+    .enum(['createdAt', 'updatedAt', 'viewCount', 'likeCount', 'commentCount'])
+    .optional(),
   sortOrder: z.enum(['asc', 'desc']).optional(),
 });

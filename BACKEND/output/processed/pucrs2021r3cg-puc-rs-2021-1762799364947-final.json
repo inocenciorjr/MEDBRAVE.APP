@@ -1,0 +1,1019 @@
+{
+  "metadata": {
+    "examName": "PUCRS2021R3CG (PUC-RS 2021)",
+    "examYear": 2021,
+    "url": "source://851",
+    "totalQuestions": 30,
+    "categorizedQuestions": 30,
+    "rewrittenComments": 30,
+    "processedAt": "2025-11-10T18:29:24.947Z",
+    "jobId": "batch-1762780840766-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "8fb9ddda-0954-4dc8-931a-a3ee4c7827b7"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Um estudo realizou uma simulação matemática para avaliar os possíveis fatores associados a complicações de um determinado procedimento cirúrgico. Os resultados sugeriram que os fatores \"\"tabagismo\"\", \"\"sexo masculino\"\" e a \"\"apneia do sono\"\", cada um, individualmente, quando acompanhado da exposição ao fator \"\"presença de doença cardiovascular\"\", pode causar complicações sem a presença dos outros dois fatores. A exposição ao fator \"\"presença de doença cardiovascular\"\", individualmente, não causa a complicação cirúrgica no determinado procedimento estudado. O fator tabagismo é a causa",
+      "alternativas": [
+        "suficiente e necessária.",
+        "suficiente, mas não necessária.",
+        "não suficiente, mas necessária.",
+        "não suficiente nem necessária."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>A resposta correta é D - não suficiente nem necessária.</strong></p><p>Esta questão da banca PUC-RS 2021 avalia seu entendimento sobre conceitos fundamentais de causalidade em epidemiologia e lógica médica. O examinador busca testar se você compreende a diferença entre fatores suficientes, necessários e suas combinações.</p><p>Vamos analisar a estrutura causal descrita:</p><p><strong>Dados do problema:</strong></p><ul><li>Fator A (tabagismo) + Fator B (doença cardiovascular) = complicações</li><li>Fator C (sexo masculino) + Fator B (doença cardiovascular) = complicações</li><li>Fator D (apneia do sono) + Fator B (doença cardiovascular) = complicações</li><li>Fator B (doença cardiovascular) isoladamente = NÃO causa complicações</li></ul><p><strong>Análise das alternativas:</strong></p><p>A) <strong>Suficiente e necessária</strong> - FALSA. Um fator necessário deve estar SEMPRE presente para que o efeito ocorra. Um fator suficiente deve, por si só, causar o efeito. O tabagismo não é necessário (outros fatores podem causar complicações) e não é suficiente (precisa da doença cardiovascular).</p><p>B) <strong>Suficiente, mas não necessária</strong> - FALSA. Para ser suficiente, o fator deveria causar complicações isoladamente, o que não acontece. O tabagismo só causa problemas quando combinado com doença cardiovascular.</p><p>C) <strong>Não suficiente, mas necessária</strong> - FALSA. Para ser necessária, o fator deveria estar presente em TODOS os casos de complicação. Mas a questão mostra que outras combinações (sexo masculino + DCV, apneia + DCV) também causam complicações sem envolvimento do tabagismo.</p><p>D) <strong>Não suficiente nem necessária</strong> - <strong>CORRETA</strong>. O tabagismo não é suficiente (precisa da DCV) e não é necessária (outros fatores podem causar complicações).</p><p><strong>Veredito:</strong> A banca testou conceitos básicos de causalidade. A resposta correta é D, pois o tabagismo atua como um fator de risco modificador, mas não é nem suficiente nem necessário para as complicações cirúrgicas.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_Causalidade",
+        "MedicinaPreventiva_Epidemiologia_Causalidade_CriteriosDeBradfordhill"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Homem, 56 anos, foi submetido à cirurgia de gastrectomia total por câncer gástrico. Está no primeiro dia de pós-operatório. A cirurgia ocorreu sem intercorrências e até o momento o paciente não apresentou nenhuma complicação. Em relação ao metabolismo desse paciente, neste momento espera-se",
+      "alternativas": [
+        "aumento da reserva de lipídios.",
+        "diminuição do cortisol plasmático.",
+        "liberação das reservas de glicose para a corrente sanguínea.",
+        "diminuição da secreção da interleucina-1 pelos macrófagos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A resposta correta é C - liberação das reservas de glicose para a corrente sanguínea.</strong></p><p>Esta questão da PUC-RS 2021 avalia seu conhecimento sobre a resposta metabólica ao estresse cirúrgico. O primeiro dia pós-operatório representa o período de maior catabolismo e demanda energética.</p><p><strong>Contexto fisiológico:</strong></p><p>Uma gastrectomia total é um procedimento de grande porte que desencadeia a resposta ao estresse. O organismo entra em estado hipermetabólico, ativando mecanismos compensatórios para garantir energia aos tecidos vitais.</p><p><strong>Análise das alternativas:</strong></p><p>A) <strong>Aumento da reserva de lipídios</strong> - FALSA. O período pós-operatório imediato é caracterizado por catabolismo, não anabolismo. O corpo mobiliza, não armazena lipídios.</p><p>B) <strong>Diminuição do cortisol plasmático</strong> - FALSA. O estresse cirúrgico aumenta a liberação de cortisol, hormônio essencial para a gluconeogênese e manutenção da glicemia. Esta é uma resposta adaptativa crucial.</p><p>C) <strong>Liberação das reservas de glicose para a corrente sanguínea</strong> - <strong>CORRETA</strong>. O corpo libera glicose do fígado (glicogenólise) e produz nova glicose (gluconeogênese) para atender à demanda energética aumentada pela cirurgia e processo de cicatrização.</p><p>D) <strong>Diminuição da secreção da interleucina-1</strong> - FALSA. A IL-1 está aumentada no pós-operatório, participando da resposta inflamatória e do catabolismo proteico necessários à cicatrização.</p><p><strong>Conclusão:</strong> O metabolismo pós-operatório visa fornecer energia rapidamente através da mobilização de reservas. A liberação de glicose é a resposta predominante e essencial para a homeostase.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Homem, 65 anos, procura atendimento por dor em cólica em flanco à direita. Ao exame físico, apresenta febre (38,5ºC) e hipotensão arterial. Realiza tomografia computadorizada de abdômen sem contraste que evidencia cálculo de 1 cm impactado no ureter proximal direito e sem evidência de abscesso renal. Além da prescrição de antibioticoterapia, qual é a conduta indicada nesse momento?",
+      "alternativas": [
+        "Litotripsia extracorpórea",
+        "Nefrolitotripsia percutânea",
+        "Drenagem da via urinária acometida",
+        "Alfa bloqueador e anti-inflamatório esteroidal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A resposta correta é C - drenagem da via urinária acometida.</strong></p><p>Esta questão da banca PUC-RS 2021 avalia seu conhecimento sobre o manejo de emergências urológicas, especificamente o cálculo infectado com obstrução. O cenário clínico apresenta uma situação de alto risco que requer intervenção imediata.</p><p><strong>Análise do caso clínico:</strong></p><p>O paciente apresenta триade clássica de urosepsia obstrutiva: febre (38,5°C), hipotensão e cálculo impactado no ureter proximal. A tomografia confirma cálculo de 1cm sem abscesso, mas isso não reduz a urgência do tratamento.</p><p><strong>Por que a drenagem é prioritária?</strong></p><p>Em casos de cálculo infectado com obstrução, a prioridade é desobstruir a via urinária. A presença de infecção atrás da obstrução cria um ambiente de alta pressão que pode evoluir para pielonefrite emphisematosa, sepse e choque séptico.</p><p><strong>Análise das alternativas:</strong></p><p>A) <strong>Litotripsia extracorpórea</strong> - FALSA. A litotripsia não resolve a urgência infecciosa e pode piorar a situação. O foco é a drenagem, não a fragmentação do cálculo.</p><p>B) <strong>Nefrolitotripsia percutânea</strong> - FALSA. Procedimento complexo e demorado, inadequado para paciente séptico. A urgência é a drenagem, não a remoção definitiva do cálculo.</p><p>C) <strong>Drenagem da via urinária acometida</strong> - <strong>CORRETA</strong>. Nefrostomia percutânea ou cateter duplo J são as opções para desobstruir rapidamente, controlando a infecção e estabilizando o paciente.</p><p>D) <strong>Alfa bloqueador e anti-inflamatório</strong> - FALSA. O tratamento clínico é inadequado para esta situação de emergência. Pode ser usado como coadjuvante após a drenagem, mas nunca como tratamento principal.</p><p><strong>Veredito:</strong> A drenagem é a prioridade absoluta em urosepsia obstrutiva. O paciente séptico com cálculo impactado requer abordagem agressiva e imediata.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_PielonefriteObstrutiva",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Homem, 44 anos, branco, trabalhador rural, vem à consulta com queixa de aparecimento de lesão no dorso há cerca de 2 meses. Ao exame físico, percebe-se que o paciente apresenta nevo congênito gigante no tronco e que a lesão descrita está localizada dentro dos limites do nevo. A lesão tem cerca de 5 cm no maior diâmetro. Com base nesses achados, assinale a alternativa que corresponde à hipótese diagnóstica mais provável e à conduta inicial mais adequada.",
+      "alternativas": [
+        "Sarcoma de partes moles - biópsia incisional diagnóstica na área de maior espessura da lesão.",
+        "Melanoma maligno - ressecção com margens de 2 cm e realização de linfonodo sentinela.",
+        "Melanoma maligno - biópsia incisional diagnóstica na área de maior espessura da lesão.",
+        "Sarcoma de partes moles - ressecção com margens livres e fechamento com retalhos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A resposta correta é C - Melanoma maligno - biópsia incisional diagnóstica na área de maior espessura da lesão.</strong></p><p>Esta questão da PUC-RS 2021 avalia seu conhecimento sobre o manejo de lesões suspeitas em nevos congênitos gigantes. O examinador quer testar se você reconhece os sinais de alarme e a conduta diagnóstica adequada.</p><p><strong>Por que suspeitar de melanoma?</strong></p><p>Nevos congênitos gigantes (NCG) (>20cm ou >5% da superfície corporal) possuem risco aumentado de transformação maligna, estimado em 5-10% ao longo da vida. Lesões que aparecem dentro dos limites do nevo, especialmente em adultos, devem ser investigadas para melanoma.</p><p><strong>Sinais de alarme presentes:</strong></p><ul><li>Lesão nova em nevo pré-existente (regra do \"patinho feio\")</li><li>Tamanho significativo (5cm no maior diâmetro)</li><li>Localização em tronc que facilita observação</li><li>Crescimento em paciente adulto (maior risco)</li></ul><p><strong>Análise das alternativas:</strong></p><p>A) <strong>Sarcoma - biópsia incisional</strong> - FALSA. Sarcomas são raros em NCG. A suspeita clínica favorece melanoma pela transformação maligna característica.</p><p>B) <strong>Melanoma - ressecção com margens + linfonodo sentinela</strong> - FALSA. A ressecção radical sem diagnóstico histológico prévio é inadequada. Sempre deve-se fazer biópsia primeiro.</p><p>C) <strong>Melanoma - biópsia incisional</strong> - <strong>CORRETA</strong>. Biópsia incisional na área de maior espessura permite diagnóstico histológico sem comprometer futuros tratamentos. Margens e linfonodo sentinela são decididos após confirmação diagnóstica.</p><p>D) <strong>Sarcoma - ressecção com margens</strong> - FALSA. Sarcoma é menos provável que melanoma, e ressecção sem biópsia é incorreta.</p><p><strong>Princípio fundamental:</strong> Em lesões suspeitas, sempre biopisar antes de mutilar. O diagnóstico histológico orienta o tratamento definitivo.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele",
+        "Cirurgia_CirurgiaPlastica",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Mulher, 26 anos, chega à unidade de pronto atendimento médico com história de ferimento por arma branca em região frontal com uma hora de evolução. Exame físico sem outras alterações. A paciente é encaminhada ao tratamento cirúrgico. Devido às dimensões da perda de substância, o cirurgião indica enxertia de pele. Em relação ao caso clínico, afirma-se: I. A sobrevivência do enxerto de pele no novo local requer um leito receptor de ferida vascularizado; II. A sensibilidade nunca retorna ao enxerto ao longo do tempo. III. Os enxertos de pele de espessura total incluem a epiderme e toda a derme. Estão corretas as afirmativas",
+      "alternativas": [
+        "I e II, apenas.",
+        "I e III, apenas.",
+        "II e III, apenas.",
+        "I, II e III."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A resposta correta é B - I e III, apenas.</strong></p><p>Esta questão da banca PUC-RS 2021 avalia seu conhecimento sobre enxertos de pele, um tema fundamental em cirurgia plástica e traumatologia. O examinador testou conceitos básicos de biologia dos enxertos e suas características.</p><p><strong>Contexto clínico:</strong></p><p>Enxertia de pele é técnica essencial para cobrir perdas de substância. O conhecimento sobre a biologia da enxertia é crucial para o sucesso do procedimento e orientação adequada ao paciente.</p><p><strong>Análise das afirmativas:</strong></p><p><strong>I. A sobrevivência do enxerto de pele no novo local requer um leito receptor de ferida vascularizado.</strong> - <strong>CORRETA</strong>. O enxerto depende da \"implantação\" vascular do leito receptor. Leitos avasculares (osso, cartilagem exposta) têm alto índice de falha. A vascularização permite nutrição por difusão initially e posterior anastomose vascular.</p><p><strong>II. A sensibilidade nunca retorna ao enxerto ao longo do tempo.</strong> - <strong>INCORRETA</strong>. Enxertos de pele podem recuperar sensibilidade parcial ao longo do tempo através de reinervação do leito receptor. Enxertos de espessura total têm maior potencial de recuperação sensorial que os de espessura parcial.</p><p><strong>III. Os enxertos de pele de espessura total incluem a epiderme e toda a derme.</strong> - <strong>CORRETA</strong>. Enxertos de espessura total (full thickness) incluem epiderme, derme papilar e reticular. São mais resistentes, mas têm maior taxa de falha por demandar melhor vascularização do leito.</p><p><strong>Análise das alternativas:</strong></p><p>A) <strong>I e II, apenas</strong> - FALSA. A afirmativa II está incorreta (sensibilidade pode retornar).</p><p>B) <strong>I e III, apenas</strong> - <strong>CORRETA</strong>. I e III são verdadeiras, II é falsa.</p><p>C) <strong>II e III, apenas</strong> - FALSA. A afirmativa II está incorreta.</p><p>D) <strong>I, II e III</strong> - FALSA. A afirmativa II está incorreta.</p><p><strong>Veredito:</strong> Questão conceitual sobre enxertos. I e III são corretas, II é incorreta pela possibilidade de reinervação parcial.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica",
+        "Cirurgia_CicatrizacaoDeFeridas",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_InstrumentalCirurgico",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Homem, 64 anos, há 3 meses apresenta perda de peso e anorexia. Há 2 semanas passa a apresentar prurido, icterícia e colúria. Performance status de I. Tomografia computadorizada de abdômen com contraste mostra massa tumoral sólida de 2,8 cm na topografia da cabeça do pâncreas, definida como borderline por suspeita de invasão parietal da veia porta. Entre as opções abaixo, a melhor conduta a ser realizada neste caso é",
+      "alternativas": [
+        "bypass bileodigestivo paliativo.",
+        "quimioterapia/radioterapia neoadjuvante.",
+        "duodenopancreatectomia com pretensão curativa.",
+        "gastroenteroanastomose para evitar quadro obstrutivo duodenal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia conhecimento sobre condutas em oncologia pâncrea, especificamente em casos de tumores borderline com invasão vascular.</p><p>O cenário clínico descreve um homem de 64 anos com perda de peso e sintomas obstrutivos biliares. A tomografia revela tumor de 2,8 cm na cabeça do pâncreas, classificado como <strong>borderline por suspeita de invasão da veia porta</strong>. Este dado é crucial para a decisão terapêutica.</p><p><strong>A resposta correta é B - quimioterapia/radioterapia neoadjuvante.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Bypass bileodigestivo paliativo</strong> - Incorreto. Embora seja uma opção para tumores com invasão vascular acentuada, não é a <em>melhor conduta</em> neste caso borderline. A medida adequada é sempre priorizar o tratamento oncológico sistêmico quando há possibilidade de downstaging.</p><p><strong>C) Duodenopancreatectomia com pretensão curativa</strong> - Incorreta. Com invasão vascular confirmada ou suspeita, a ressecção primária tem alta taxa de recidiva e complicações. Não é a conduta ideal para tumores borderlines.</p><p><strong>D) Gastroenteroanastomose para evitar quadro obstrutivo duodenal</strong> - Incorreta. Não há sinais de obstrução duodenal no caso. Além disso, esta seria uma medida apenas paliativa, ignorando a possibilidade terapêutica sistêmica.</p><p>O racional da resposta B baseia-se nas diretrizes atuais para tumores borderlines de pâncreas: <strong>tratamento neoadjuvante permite avaliar resposta tumoral, downstage a doença e selecionar pacientes com maior probabilidade de benefício da ressecção</strong>. Com a suspeita de invasão vascular, a abordagem multimodal é a mais adequada.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "Cirurgia_Trauma"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Mulher, 80 anos, consulta em uma unidade de emergência com história de enterorragia profusa, associada à tontura e a palpitações. Exame físico na admissão: PA 90/60 mmHg, FC 120 bpm. Ausculta respiratória sem alterações; ausculta cardíaca com sopro sistólico em área aórtica 2++/4; abdomên flácido, indolor à palpação, sem massas palpáveis; toque retal com sangue e coágulos na luz intestinal, sem lesões palpáveis. Com base na história clínica, a principal hipótese diagnóstica para a causa desse sangramento é:",
+      "alternativas": [
+        "angiodisplasia.",
+        "úlcera péptica.",
+        "colite isquêmica.",
+        "adenocarcinoma de cólon."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 testa capacidade de raciocínio diagnóstico em sangramento gastrointestinal em paciente idosa, avaliando conhecimento sobre causas mais comuns de hemorragia digestiva baixa.</p><p>Os achados clínicos são eloquentes: mulher de 80 anos com enterorragia profusa, sinais de choque hipovolêmico (PA 90/60, FC 120), tontura e palpitações. O sopro sistólico aórtico é um achado particularmente significativo.</p><p><strong>A resposta correta é A - angiodisplasia.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>B) Úlcera péptica</strong> - Incorreta. Causa sangramento gastrointestinal <em>alto</em>, com hematêmese e melena, não enterorragia. Além disso, a associação com sopro aórtico não é característica.</p><p><strong>C) Colite isquêmica</strong> - Incorreta. Embora possa causar enterorragia, geralmente está associada a fatores de risco específicos (hipotensão, doença vascular). O padrão de sangramento profuso com choque não é típico.</p><p><strong>D) Adenocarcinoma de cólon</strong> - Incorreta. Pode causar sangramento, mas geralmente é intermitente e não tão profuso. Além disso, não se associa a sopro aórtico.</p><p>A angiodisplasia é a hipótese mais provável por três razões: <strong>1) Correlação com estenose aórtica</strong> (sopro sistólico aórtico 2+/4), <strong>2) Perfil epidemiológico</strong> (mulher idosa), e <strong>3) Padrão de apresentação</strong> (enterorragia profusa com sinais de choque). A fisiopatologia envolve hipóxia da mucosa intestinal devido à disfunção do fluxo sanguíneo colateral.</p><p>A associação entre angiodisplasia e estenose aórtica é bem documentada, sendo classicamente chamada de <em>síndrome de Heyde</em>.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaBaixaHdb"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Homem, 29 anos, vítima de dois ferimentos por projétil de arma de fogo. Um deles com entrada em 8º espaço intercostal anterior à direita na linha hemiclavicular e saída em 7º espaço intercostal posterior também à direita. O outro em crânio, sem orifício de saída. Na avaliação inicial da chegada na emergência apresenta PA 80/50 mmHg, FC 115 bpm, FR 26 mrpm e Glasgow de 4. Saturação de O2 de 95%. Ao exame do tórax apresenta diminuição do murmúrio vesicular à direita e macicez à percussão na base do mesmo lado. Não apresenta dor à palpação abdominal. Em relação ao caso, afirma-se: I. A intubação endotraqueal não está indicada na avaliação inicial e reanimação, pois o paciente apresenta boa saturação e existe o risco de pneumotórax hipertensivo. II. A realização de toracocentese com agulha para descompressão torácica à direita é paciente apresenta boa saturação e existe o risco de pneumotórax hipertensivo. II. A realização de toracocentese com agulha para descompressão torácica à direita énecessária. III. A presença de choque pode ser decorrente de sangramento abdominal. Está/Estão correta(s) apenas a(s) afirmativa(s)",
+      "alternativas": [
+        "I",
+        "III",
+        "I e II",
+        "II e III"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia conhecimento em medicina de emergência e traumatologia, especificamente condutas em politraumatismo com suspeita de pneumotórax tensiona.</p><p>O caso apresenta trauma por arma de fogo com dois projéteis. Sinais vitais: choque (PA 80/50, FC 115, FR 26) e Glasgow 4. No exame físico: redução do murmúrio vesicular e macicez à direita.</p><p><strong>A resposta correta é B - apenas a III.</strong></p><p>Vamos analisar as afirmativas:</p><p><strong>I. A intubação endotraqueal não está indicada</strong> - <strong>INCORRETA</strong>. O paciente tem Glasgow 4, está em choque e com provável pneumotórax tensiona. A intubação é <strong>OBRIGATÓRIA</strong> para proteger via aérea e otimizar ventilação. A boa saturação (95%) não contraindica o procedimento.</p><p><strong>II. A realização de toracocentese com agulha é necessária</strong> - <strong>INCORRETA</strong>. Embora o paciente tenha sinais de pneumotórax (diminuição do murmúrio vesicular, macicez), a <em>toracocentese com agulha</em> em trauma é uma medida de emergência para pneumotórax tensiona. Entretanto, a <em>toracostomia com tubo</em> é a conduta definitiva. A afirmativa está imprecisa sobre o procedimento.</p><p><strong>III. A presença de choque pode ser decorrente de sangramento abdominal</strong> - <strong>CORRETA</strong>. O trauma abdominal pode causar hemorragia interna significativa. O ferimento em 8º espaço intercostal anterior pode acometer estruturas intra-abdominais, causando hemoperitônio. A ausência de dor abdominal não exclui sangramento em paciente em choque.</p><p>A lógica de escolha: análise sistemática das três afirmativas isoladamente, identificando que apenas a III apresenta conceito correto e aplicável ao caso.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_TraumaToracico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Homem, 20 anos, sofreu acidente de moto com trauma na perna esquerda. Ao exame físico apresenta uma fratura exposta tibial esquerda grau II (Giustillo e Anderson). Após atendimento inicial local chega ao hospital e o médico que o atende observa déficit motor da dorsiflexão do hallux esquerdo. Demais achados do exame são normais. Qual é o nervo lesado?",
+      "alternativas": [
+        "Fibular superficial",
+        "Fibular profundo",
+        "Sural",
+        "Tibial"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia conhecimento anatômico e neurológico em traumatologia ortopédica, especificamente sobre comprometimento nervoso em fraturas de tíbia.</p><p>O caso apresenta fratura exposta grau II de tíbia esquerda e déficit específico de <strong>dorsiflexão do hallux esquerdo</strong>. Este achado neurológico direciona diretamente o diagnóstico.</p><p><strong>A resposta correta é B - fibular profundo.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) Fibular superficial</strong> - Incorreta. Este nervo inerva principalmente os músculos peroneiros, responsáveis pela eversão do pé. A dorsiflexão do hallux não é sua função principal.</p><p><strong>C) Sural</strong> - Incorreta. É um nervo sensitivo que inerva a região lateral da perna e parte do pé. Não tem função motora relevante para dorsiflexão.</p><p><strong>D) Tibial</strong> - Incorreta. Inerva principalmente os músculos da face posterior da perna (flessores). A dorsiflexão é função oposta.</p><p><strong>Fibular profundo (B)</strong> - <strong>CORRETA</strong>. Este nervo é responsável pela inervação motora dos músculos <em>tibial anterior</em> e <em>extensor longo do hálux</em>, que são precisamente os músculos responsáveis pela <strong>dorsiflexão do hallux</strong>.</p><p>O racional anatômico: a fratura exposta grau II de tíbia pode causar lesão do nervo fibular profundo devido à sua localização superficial próxima à cabeça da fíbula. O padrão de déficit motor (dorsiflexão do hallux) é patognomônico para lesão do fibular profundo.</p><p>Esta lesão neurológica é um achado importante que deve ser documentado e pode ter implicações no prognóstico funcional.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedico",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoFraturaExposta",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoLesaoNervosa",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoTraumasDaPerna"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Homem, 72 anos, chega à emergência com dor abdominal, mais intensa em quadrantes esquerdos, e calafrios. Refere início da dor há aproximadamente uma semana, com intensidade progressiva e irradiando-se para o membro inferior esquerdo. Relata fadiga associada. Hábito intestinal alterado, com aumento das evacuações inicialmente, mas sem evacuar há 24 horas. Ao exame físico apresenta-se taquicárdico, hipotenso e com Tax 38,2ºC. Enfisema subcutâneo em região cervical. Abdômen pouco distendido, doloroso à palpação profunda à esquerda, com peritonismo. A tomografia computadorizada revela importante coleção retroperitoneal, mais volumosa à esquerda, em íntimo contato com o cólon descendente, onde apresenta espessamento da parede, pneumoperitônio e pneumomediastino. Em relação ao caso, assinale a alternativa que apresenta a conduta correta neste momento.",
+      "alternativas": [
+        "Tratamento conservador com antibioticoterapia.",
+        "Drenagem retroperitoneal guiada por ecografia.",
+        "Abordagem cirúrgica somente do retroperitônio.",
+        "Laparotomia com exploração da cavidade peritoneal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia conhecimento em cirurgia de emergência, especificamente condutas em abdome agudo com sinais de perfuração visceral e coleção retroperitoneal.</p><p>O caso apresenta um cenário clínico grave: homem de 72 anos com dor abdominal progressiva, sinais de choque, febre e achados tomográficos preocupantes (espessamento de parede intestinal, pneumoperitônio, pneumomediastino e enfisema subcutâneo).</p><p><strong>A resposta correta é D - laparotomia com exploração da cavidade peritoneal.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) Tratamento conservador com antibioticoterapia</strong> - <strong>INCORRETA</strong>. O caso apresenta quadro cirúrgico com pneumoperitônio (sinal de perfuração), peritonismo e coleção retroperitoneal volumosa. O tratamento conservador está contraindicado.</p><p><strong>B) Drenagem retroperitoneal guiada por ecografia</strong> - <strong>INCORRETA</strong>. Embora a coleção retroperitoneal seja volumosa, o pneumoperitônio indica perfuração visceral que precisa de abordagem cirúrgica de emergência. A drenagem isolada é insuficiente.</p><p><strong>C) Abordagem cirúrgica somente do retroperitônio</strong> - <strong>INCORRETA</strong>. O pneumoperitônio e a coleção volumosa indicam doença intra-abdominal que pode ter se estendido ao retroperitônio. A exploração completa é necessária.</p><p><strong>D) Laparotomia com exploração da cavidade</strong> - <strong>CORRETA</strong>. Os achados clínicos e tomográficos indicam: <strong>1) perfuração visceral (pneumoperitônio), 2) peritonismo, 3) coleção retroperitoneal volumosa, 4) sinais de choque e infeção</strong>. A laparotomia é a única abordagem que permite identificar e tratar adequadamente a fonte da perfuração.</p><p>O pneumomediastino e enfisema subcutâneo sugerem comunicação entre cavidades, reforçando a necessidade de exploração cirúrgica ampla.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_OutrasCausasDeAbdomeAgudoPerfu",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoHemorragico",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "<html><head></head><body>Homem, 44 anos, apresenta queixa de dor torácica, tosse, dispneia e febre há uma semana. É hipertenso, obeso, ex-tabagista. Radiografia de tórax realizada na chegada (imagem a seguir). Em relação à principal hipótese diagnóstica, afirma-se: I. O paciente encontra-se na fase I do derrame pleural parapneumônico. II. Na amostragem do líquido pleural espera-se encontrar lactato desidrogenase elevado e depósito de fibrina. III. Os germes mais frequentemente encontrados no líquido pleural são estreptococo e estafilococo. Está/Estão correta(s) apenas a(s) afirmativa(s):\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ11.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "I.",
+        "II.",
+        "I e III.",
+        "II e III."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Análise da Competência Avaliada:</strong> Esta questão da PUC-RS 2021 testa conhecimento específico sobre derrames pleurais parapneumônicos, classificação das fases evolutivas e características laboratoriais do líquido pleural.</p><p><strong>Contexto Clínico:</strong> Homem de 44 anos com sintomas clássicos de pneumonia (dor torácica, tosse, dispneia, febre) em contexto de comorbidades (hipertensão, obesidade, ex-tabagista). A radiografia de tórax confirma derrame pleural.</p><p><strong>Análise das Afirmativas:</strong></p><p><strong>I. Fase I do derrame pleural parapneumônico:</strong> INCORRETA. A classificação doderrame parapneumônico é: <strong>Fase 1 (exsudativa simples)</strong> - líquido livre com LDH baixa, <strong>Fase 2 (fibrinopurulenta)</strong> - com depósitos de fibrina e septação, <strong>Fase 3 (organizada)</strong> - combrispermatoginese e fibroso. Com uma semana de evolução e sintomatologia, aguardaríamos progressão para a <strong>Fase 2</strong>.</p><p><strong>II. Lactato desidrogenase elevado e depósito de fibrina:</strong> CORRETA. Na progressão do derrame parapneumônico, o líquido evolui de exsudato simples para fibrinopurulenta, caracterizado por LDH elevada e deposição de fibrina (responsável pela formação de septos).</p><p><strong>III. Germes mais frequentes (estreptococo e estafilococo):</strong> CORRETA. <em>Streptococcus pneumoniae</em> continua sendo o patógeno mais comum em pneumonias adquiridas na comunidade, seguido de <em>Staphylococcus aureus</em>, especialmente em casos complicados com derrame pleural.</p><p><strong>Raciocínio Decisório:</strong> As afirmativas II e III estão corretas, correspondendo à progressão esperada do derrame parapneumônico após uma semana de sintomas, com flora bacteriana típica.</p><p><strong>Veredito:</strong> <span style=\"color: #d73027; font-weight: bold;\">Resposta D - II e III</span>. Esta questão exige conhecimento dos mecanismos evolutivos do derrame parapneumônico e da microbioloagia respiratória.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "<html><head></head><body>Mulher, 35 anos, sofre acidente de motocicleta com traumatismo de crânio à esquerda. É conduzida desacordada ao hospital para avaliação. Na chegada, apresenta piora progressiva das funções neurológicas, evoluindo para estado de coma profundo com midríase à esquerda e déficit motor à direita. A tomografia de crânio revela a seguinte imagem: Este quadro caracteriza um hematoma traumático do tipo\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ12.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "epidural.",
+        "subdural.",
+        "subgaleal.",
+        "de contragolpe."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Competência Diagnosticada:</strong> Neurotraumatologia - identificação de tipos de hematomas intracranianos pós-traumáticos baseada na apresentação clínica e imagem radiológica.</p><p><strong>Síntese do Caso:</strong> Mulher jovem, politraumatizada (moto) com TCE. A evolução neurológica sugere processo expansivo intracraniano: deterioração progressiva → coma → midríase ipsilateral (esquerda) + déficit motor contralateral (direita). Esta topografia indica compressão do tronco cerebral e decussação piramidal, característico de lesões de grande volume.</p><p><strong>Análise dos Tipos de Hematoma:</strong></p><p><strong>A) Hematoma Epidural:</strong> Caracteristicamente biconvexo, entre diploe e duramater, mais comum em região temporal por fractura do osso temporal. Apresentação típica: lucidez inicial (intervalo lúcido) seguida de deterioração rápida. Raramente causa midríase fixa primária.</p><p><strong>B) Hematoma Subdural:</strong> Crescente/crescentemente côncavo, entre duramater e aracnoide, frequentemente em idosos ou alcoólatras por atrofia cerebral. Pode apresentar crescimento gradual, com a combinação de midríase ipsilateral + déficits contralaterais sendo típica para volume significativo.</p><p><strong>C) Hematoma Subgaleal:</strong> Infratemporal, limitado ao couro cabeludo, sem repercussões neurológicas centrais.</p><p><strong>D) Hematoma de Contragolpe:</strong> Lesão indireta em local oposto ao trauma, geralmente pequenos e múltiplos.</p><p><strong>Padrão Imagenológico Esperado:</strong> Hematoma subdural agudo geralmente aparece como coleção hiperdensa em forma de crescente, cruzando suturas, com efeito de massa significativo. A localização fronto-parietal-tempal é clássica para causar o padrão de déficit observado.</p><p><strong>Diagnóstico Diferencial:</strong> A progressão do quadro neurológico com midríase ipsilateral (sinal de compressão do III par) associada a déficits motor pelo lado oposto indica compressão do tronco cerebral. Embora hematoma epidural possa causar este quadro, a ausência de história de intervaló lúcido e a idade da paciente favorecem subdural.</p><p><strong>Veredito:</strong> <span style=\"color: #d73027; font-weight: bold;\">Resposta B - Hematoma Subdural</span>. Questão essencial para o reconhecimento de neurotraumas e suas apresentações características.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCraniencefalico",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Mulher, 71 anos, vem à consulta com ultrassonografia realizada que mostrou \"\"lesão cística de 2,2 cm x 1,7 cm no corpo pancreático, isodensa e sem determinar compressão/obstrução do ducto pancreático principal e ductos secundários\"\". A paciente é assintomática e, exceto a hipertensão arterial sistêmica controlada com medicamentos, não apresenta comorbidades. Analise as asserções a seguir e a relação proposta entre elas. I. Deve-se indicar a realização de tomografia computadorizada (TC) de abdômen com contraste endovenoso. PORQUE; II. Em virtude das características clínicas eecográficas, trata-se de lesão cística neoplásica intraductal papilífera e com indicação de enucleação cirúrgica se TC sem metástases. A respeito dessas asserções, assinale a opção correta.",
+      "alternativas": [
+        "As asserções I e II são proposições verdadeiras e a II é uma justificativa correta da I.",
+        "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+        "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+        "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Competência Investigada:</strong> Radiologia abdominal e oncologia pancreática - manejo de lesões císticas pancreáticas incidentalmente diagnosticadas.</p><p><strong>Análise Crítica da Sitiação:</strong> Lesão cística de 2,2cm x 1,7cm no corpo pancreático, sem compressão ductal, em paciente assintomática. Esta é uma situação cada vez mais comum com a expansão do uso de métodos de imagem.</p><p><strong>Primeira Afirmativa (I) - TC de abdômen com contraste:</strong> <strong style=\"color: #d73027;\">VERDADEIRA</strong>. Para caracterização de lesões císticas pancreáticas, a TC com contraste é fundamental para: (1) avaliar realce da parede e septos, (2) identificar componentes sólidos, (3) pesquisar dilatação ductal, (4) avaliar relação com estruturas vizinhas. Considerando o tamanho (2,2cm) e a possibilidade de neoplasia cística, o exame é indicado.</p><p><strong>Segunda Afirmativa (II) - IPMN com indicação cirúrgica:</strong> <strong style=\"color: #d73027;\">FALSA</strong>. Múltiplos erros conceituais: (1) <strong>Crenuloma neoplásica intraductal papilífera:</strong> IPMN é neoplasia ductal, não 'cística neoplásica'. A termologia correta seria 'neoplasia cística papilífera intraductal'. (2) <strong>Indicação de enucleação:</strong> IPMN de corpo pancreático em paciente assintomática, sem dilatação ductal e < 3cm, não é indicação cirúrgica. A conduta atual é <strong>follow-up</strong> com imagem, baseado no consenso internacional de 2017-2019. (3) <strong>Tamanho:</strong> Lesões < 3cm, assintomáticas, sem dilatação ductal, em cauda, podem ser observadas.</p><p><strong>Atualização Guideline 2023:</strong> A diretiva brasileira (SBH) e internacional (IAP) atuais recomendam para IPMN branch-duct: observação se < 3cm, sem sintomas, sem dilatação ductal. TC é inicialmente recomendada para caracterizaão.</p><p><strong>Correções Necessárias:</strong> A segunda afirmativa contém imprecisões terminológicas e indicações clínicas inadequadas para o caso presentado.</p><p><strong>Veredito:</strong> <span style=\"color: #d73027; font-weight: bold;\">Resposta C - Afirmativa I verdadeira e II falsa</span>. Questão que testou conhecimento sobre nomenclatura correta e indicações cirúrgicas de neoplasias císticas pancreáticas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas_Conduta"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Homem, 22 anos, previamente hígido, procura atendimento por apresentar diarreia mucosanguinolenta há três meses. Neste período, refere episódios de febrícula, emagrecimento de 7 kg e artralgias difusas. Ao exame físico, emagrecido, descorado, hemodinamicamente estável. Abdomên: ruídos hidroaéreos presentes, desconforto à palpação da fossa ilíaca esquerda, sem sinais de irritação peritoneal. Realizou-se colonoscopia, que evidenciou mucosa de aspecto granular, erosões contínuas no sigmoide e cólon descendente, com importante friabilidade da mucosa. Em relação à principal hipótese diagnóstica, qual dos achados a seguir também se espera encontrar no exame colônico?",
+      "alternativas": [
+        "Pseudopólipos",
+        "Granuloma",
+        "Estenose",
+        "Fístulas"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Competência Testada:</strong> Doenças inflamatórias intestinais - características endoscópicas e histológicas da Doença de Crohn versus Retocolite Ulcerativa.</p><p><strong>Perfil Clínico Típico:</strong> Homem jovem, 22 anos, com quadro de diarreia mucosanguinolenta crônica, associado a manifestações extraintestinais (febrícula, emagrecimento, artralgias). O achado endoscópico de lesões <strong>contínuas</strong> no cólon esquerdo (sigmoid e descendente) com 'aspecto granular e importante friabilidade' é altamente sugestivo de <strong>Doença de Crohn colorretal</strong>.</p><p><strong>Análise das Características Endoscópicas:</strong> O padrão de lesões contínuas poderia sugerir inicialmente Retocolite Ulcerativa. Entretanto, a distribuição doeniativa (colon descendente) e a ausência de retossigmoiditede padrão predominante favorecem Crohn. A 'friabilidade importante' é característica de atividade inflamatória moderada a intensa em Crohn.</p><p><strong>Esperado na Doença de Crohn:</strong> Na progressão da doença, são esperados: <strong>pseudopólipos</strong> (ácrescêntores residuais de mucosa entre úlceras), <strong>granulomas não-caseificantes</strong> (patognomônicos), <strong>estenose</strong> (por fibrose) e <strong>fístulas</strong> (entre alças ou para pele). Todos podem estar presentes, mas a questão solicita 'qual também se espera encontrar'.</p><p><strong>Correção das Alternativas:</strong></p><p><strong>A) Pseudopólipos:</strong> CORRETA. São os achados mais esperados e característicos de Crohn em atividade. O resultado da panía de inflamação com áreas de cura resulta em pólipos residuais (pseudopólipos). Aparecem como 'ilhas' de mucosa inflamada entre úlceras.</p><p><strong>B) Granuloma:</strong> Patognomônico, mas não obrigatório (presente em 50-60% dos casos). São não-caseificantes, múltiplos, e localizados na submucosa.</p><p><strong>C) Estenose:</strong> Comum em doença de longa duração, por fibrose transmural, mas não em fase inicial (3 meses de sintomas).</p><p><strong>D) Fístulas:</strong> Frequentes em Crohn, mas geralmente em fases mais avançadas, especialmente em doença fistulizante.</p><p><strong>Prevalência na Literatura:</strong> Pseudopólipos são o achado mais comum após granulomas. No contexto clínico de 3 meses de evolução com inflamação intensa, pseudopólipos são mais prováveis que estenoses ou fístulas.</p><p><strong>Veredito:</strong> <span style=\"color: #d73027; font-weight: bold;\">Resposta A - Pseudopólipos</span>. Questão que avaliou conhecimento das características evolutivas e anatopatológicas da Doença de Crohn.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "<html><head></head><body>Menina, nove anos, vítima de trauma por esmagamento do dedo anular. Ao exame físico, apresenta luxação da unha em região proximal, hematoma subungueal de toda superfície da unha. Ao exame radiológico, constata-se uma fratura com deslocamento da diáfise da falange distal do dedo anular. Qual é a conduta nesse caso?\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ15.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Curativo não aderente, tala gessada e revisão ambulatorial em sete dias.",
+        "Antibioticoterapia por via oral durante dez dias, curativo não aderente e tala gessada.",
+        "Hospitalização, antibioticoterapia endovenosa, curativo e drenagem do hematoma subungueal.",
+        "Cirurgia ambulatorial com redução da luxação da unha, drenagem do hematoma subungueal e fixação da fratura com fio de Kirschner."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Competência Cirúrgica Avaliada:</strong> Ortopedia - trauma de extremidades com comprometimento ungueal e fratura da falange distal.</p><p><strong>Contexto do Trauma:</strong> Menina de 9 anos com esmagamento do dedo anular direito. A descrição é típica de 'avulsão da unha': luxação proximal da placa ungueal + hematoma subungueal + fratura da falange distal com deslocamento. Este é um trauma de alta energia que requer abordagem específica.</p><p><strong>Análise Radiológica:</strong> A presença de fratura deslocada da diáfise da falange distal em criança é indicação absoluta para <strong>redução e fixação</strong>. Ossos de falange distal em crescimento não consolidam adequadamente se deslocadas, podendo evoluir com deformidade permanente.</p><p><strong>Justificativa da Conduta Cirúrgica:</strong></p><p><strong>A) Curativo + tala + revisão ambulatorial:</strong> INADEQUADO. Hematoma subungueal extenso e fratura deslocada requerem intervenção imediata. Deixar o hematoma pode causar dor intensa, infecção e Perda da unha.</p><p><strong>B) Antibiótico + curativo + tala:</strong> INCOMPLETO. A drenagem do hematoma é obrigatória para alívio da pressão e prevenção de infecção. A fratura continua sem fixação adequada.</p><p><strong>C) Hospitalização + antibiótico EV + drenagem:</strong> EXAGERADA. Trauma de falange distal em criança geralmente pode ser tratado ambulatorialmente. Não há indicação de internação ou antibiótico endovenoso profilático.</p><p><strong>D) Cirurgia ambulatorial com redução da unha, drenagem do hematoma e fixação:</strong> CONDUTA CORRETA. Combina todos os elementos necessários: (1) redução e fixação da unha (evita deformidade permanente), (2) drenagem do hematoma (alivia dor, previne infecção), (3) fixação da fratura com fio de Kirschner (promove consolidação adequada).</p><p><strong>Técnica Cirúrgica Indicada:</strong> A fixação com fio de Kirschner percutâneo é o método de escolha para fraturas de falange distal em crianças. É procedimento rápido, ambulatorial, com excelentes resultados funcionais e estéticos.</p><p><strong>Prognóstico:</strong> Com tratamento adequado, a prognóse é excelente. A recuperação da unha pode levar 6-12 meses, mas a função costuma ser preservada.</p><p><strong>Veredito:</strong> <span style=\"color: #d73027; font-weight: bold;\">Resposta D - Cirurgia ambulatorial com redução da luxação da unha, drenagem do hematoma subungueal e fixação da fratura com fio de Kirschner</span>. Questão essencial para ortopedistas e emergengistas no manejo de traumas de extremidades.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedico",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturasLuxaco",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturasLuxaco_2"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Homem, 67 anos, vem à consulta com história de disfagia progressiva e emagrecimento de 5 kg nos últimos quatro meses. Nega vômitos, febre, sudorese e segue sua rotina de trabalho normalmente, o exame físico é normal. Endoscopia digestiva alta revela uma lesão friável e ulcerada, localizada a 30 cm da arcada dentária superior e cuja biópsia revela um carcinoma escamoso pouco diferenciado. Tomografias computadorizadas de tórax e abdômen total não demonstram metástases sistêmicas, mas espessamento do esôfago médio e linfonodo peritumoral aumentado de tamanho. Fibrobroncoscopia sem invasão ou compressão da árvore traqueobrônquica. Paciente sem outras comorbidades. Em relação ao caso, a opção terapêutica correta é",
+      "alternativas": [
+        "esofagectomia exclusiva.",
+        "tratamento definitivo com radioterapia.",
+        "radioterapia seguida de esofagectomia.",
+        "quimioterapia concomitante à radioterapia seguida de esofagectomia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da banca PUC-RS avalia o conhecimento sobre o tratamento de carcinoma de esôfago localmente avançado.</strong> O caso apresenta um paciente com carcinoma escamoso pouco diferenciado, localizado no esôfago médio, sem metástases distantes, mas com linfonodo peritumoral aumentado.</p><p><strong>O tratamento correto é D - quimioterapia concomitante à radioterapia seguida de esofagectomia.</strong> Esta é a abordagem multimodal padrão para tumores T3-T4 ou N+ sem metástases.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Esofagectomia exclusiva:</strong> Incorreta. A cirurgia isolada tem taxa de recidiva muito alta em tumores localmente avançados. Não é suficiente para controlar doença microscópica adjacente.</p><p><strong>B) Radioterapia definitiva:</strong> Incorreta. Radioterapia isolada tem eficácia limitada em carcinoma escamoso de esôfago. Taxa de cura baixa quando usada sozinha.</p><p><strong>C) Radioterapia seguida de esofagectomia:</strong> Incorreta. Esta sequência era usada no passado, mas estudos mostraram que a adição de quimioterapia aumenta significativamente a sobrevida.</p><p><strong>D) Quimioterapia + radioterapia seguida de esofagectomia:</strong> Correta. Baseada no estudo CROSS, esta abordagem multimodal tem melhor resposta patológica completa e maior sobrevida global em comparação à cirurgia isolada.</p><p><strong>Veredito: A alternativa D representa o tratamento padrão atual para carcinoma de esôfago localmente avançado, seguindo as diretrizes do MS 2024.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago",
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "<html><head></head><body>Mulher, 60 anos, ex-tabagista e hipertensa, consultou com seu cardiologista para revisão. Assintomática e exame físico normal; entretanto, apresentou alteração em radiografia de tórax em terço médio anterossuperior. Na sequencia, foi submetida à tomografia de tórax sem contraste para melhor avaliar o achado ocasional (ver imagem). Sobre a principal hipótese diagnóstica, é correto afirmar que\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ17.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "doenças auto-imunes estão associadas.",
+        "o tratamento sistêmico está indicado neste estágio.",
+        "o prognóstico é reservado por se tratar de uma neoplasia agressiva.",
+        "a tomografia com contraste pouco acrescenta para avaliação de ressecabilidade da lesão."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre nódulos pulmonares e suas etiologias.</strong> A paciente de 60 anos, ex-tabagista, apresenta achado incidental em radiografia de tórax, sendo submetida à TC para melhor caracterização.</p><p><strong>A resposta correta é A - doenças auto-imunes estão associadas.</strong></p><p>Analisando a imagem da tomografia, observa-se um nódulo pulmonar que pode representar um processo inflamatório. Em ex-tabagistas, é fundamental considerar diferentes diagnósticos diferenciais.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Doenças auto-imunes estão associadas:</strong> Correta. Nódulos pulmonares podem estar associados a doenças auto-imunes como artrite reumatoide, granulomatose com poliangíite, sarcoidose, etc. Em ex-tabagistas, essa possibilidade deve ser sempre considerada.</p><p><strong>B) O tratamento sistêmico está indicado neste estágio:</strong> Incorreta. Sem características de malignidade na imagem e sem sintomas, o manejo é de observação e seguimiento. Não há indicação para tratamento sistêmico imediato.</p><p><strong>C) O prognóstico é reservado por se tratar de uma neoplasia agressiva:</strong> Incorreta. A questão não estabelece diagnóstico de neoplasia. Pode ser processo benigno/inflamatório. Não podemos assumir prognóstico reservado sem confirmação diagnóstica.</p><p><strong>D) A tomografia com contraste pouco acrescenta para avaliação de ressecabilidade:</strong> Incorreta. O contraste é fundamental para avaliar características do nódulo (vascularização, contornos, relação com estruturas adjacentes) e determinar ressecabilidade se necessário.</p><p><strong>Conclusão: A alternativa A é a correta, lembrando que nódulos pulmonares em ex-tabagistas requerem investigação cuidadosa, incluindo possibilidade de etiologia auto-imune.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "<html><head></head><body>Homem, 62 anos, hipertenso, vem à emergência trazido por familiares, com queixas de dores na região interescapular há cerca de 12 horas. Refere que a sensação de dor é do tipo \"\"rasgão\"\", parestesias e limitação de movimentos no pé direito. Ao exame físico, apresenta PA 180/110 mmHg, FC 100 bpm, pulso femoral direito não é palpável e apresenta diminuição da temperatura do membro inferior direito. Iniciada terapia analgésica e anti-hipertensiva, sendo instituída a proteção da extremidade com algodão laminado. Solicitada tomografia com contraste endovenoso de urgência, devido à persistência da dor torácica (Figura a seguir). De acordo com o quadro clínico do paciente e de posse da tomografia realizada, qual é o diagnóstico mais provável e a conduta mais adequada?\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ18.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Dissecção aórtica tipo A - manter tratamento clínico.",
+        "Dissecção aórtica tipo A - tratamento cirúrgico de urgência.",
+        "Dissecção aórtica tipo B complicada - manter tratamento clínico.",
+        "Dissecção aórtica tipo B complicada - fenestração aórtica com cateter de angioplastia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da PUC-RS avalia o conhecimento sobre dissecção aórtica e suas classificações.</strong> O paciente apresenta quadro clássico: dor tipo \"rasgão\" interescapular, hipertensão arterial (180/110), ausência de pulso femoral direito e diferença de temperatura em membro inferior.</p><p><strong>O diagnóstico correto é D - dissecção aórtica tipo B complicada, com fenestração aórtica por cateter.</strong></p><p>Analisando a tomografia, observa-se dissecção da aorta descendente com compromiso de ramos viscerais, configurando complicação do tipo B.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Dissecção tipo A - tratamento clínico:</strong> Incorreta. Dissecção tipo A (ascendente) requer cirurgia urgente. Além disso, o tipo A não explicaria a ausência de pulso femoral direito (tipicamente compromete aorta ascendente).</p><p><strong>B) Dissecção tipo A - cirurgia urgente:</strong> Incorreta. Embora dissecção tipo A necessite cirurgia, a tomografia mostra comprometimento da aorta descendente, caracterizando tipo B.</p><p><strong>C) Dissecção tipo B complicada - tratamento clínico:</strong> Incorreta. Embora alguns casos de tipo B possam ser manejados clinicamente, a presença de complicações (ausência de pulso femoral, diferença de temperatura) indica necessidade de intervenção.</p><p><strong>D) Dissecção tipo B complicada - fenestração aórtica:</strong> Correta. A fenestração aórtica por cateter de angioplastia é o tratamento de escolha para dissecção tipo B complicada com comprometimento de ramos, restabelecendo fluxo e resolvendo isquemia.</p><p><strong>Veredito: A alternativa D representa a abordagem terapêutica atual para dissecção tipo B complicada, seguindo diretrizes cardiovasculares 2024.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_DisseccaoAorticaAguda",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_HematomaIntramural",
+        "Cirurgia_CirurgiaVascular"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Homem, 55 anos, é submetido a uma herniorrafia inguinal aberta com uso de tela. Ele queixa-se de dor crônica na região operada, mesmo seis meses após a cirurgia, levando à suspeita de lesão de nervos durante o procedimento cirúrgico. Dentre as alternativas abaixo, qual é o nervo MENOS provável de ter sido lesado?",
+      "alternativas": [
+        "Ílio-inguinal",
+        "Ílio-hipogástrico",
+        "Cutâneo femoral lateral",
+        "Ramo genital do nervo gênito-femoral"
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia anatomia cirúrgica da região inguinal e os nervos susceptíveis a lesão durante herniorrafia.</strong> O paciente apresenta dor crônica pós-operatória, sugere lesão neural iatrogênica.</p><p><strong>A resposta correta é C - cutâneo femoral lateral.</strong></p><p>Este nervo é o menos provável de ser lesado na herniorrafia inguinal, pois sua localização anatômica está mais distante do sítio cirúrgico.</p><p><strong>Análise anatômica de cada nervo:</strong></p><p><strong>A) Ílio-inguinal:</strong> Altamente susceptível à lesão. Cruza o canal inguinal e está próximo ao local da cirurgia. Lesão causa dor na região inguinal e face interna da coxa.</p><p><strong>B) Ílio-hipogástrico:</strong> Susceptível à lesão. Localiza-se próximo ao canal inguinal, na região dos músculos abdominais. Pode ser lesado durante dissecção ou fixação da tela.</p><p><strong>C) Cutâneo femoral lateral:</strong> MENOS provável de ser lesado. Este nervo emerge mais lateralmente, atravessando a fáscia lata distal ao ligamento inguinal. Fica fora do campo cirúrgico da herniorrafia inguinal.</p><p><strong>D) Ramo genital do gênito-femoral:</strong> Susceptível à lesão. Este ramo inerva o funículo espermático e a pele da região inguinal. Está no campo cirúrgico e pode ser lesado durante a cirurgia.</p><p><strong>Conclusão: O cutâneo femoral lateral (C) é anatomicamente o mais distante do sítio cirúrgico, sendo portanto o MENOS provável de sofrer lesão durante a herniorrafia inguinal.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_InstrumentalCirurgico"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Na doença hemorroidária em que há prolapso, amelhor opção terapêutica é . As informações que completam corretamente as lacunas, na ordem em que encontram, estão contidas na alternativa:",
+      "alternativas": [
+        "mista - permanente - cirurgia",
+        "interna - temporário - escleroterapia",
+        "interna - permanente - ligadura elástica",
+        "externa - temporário - ligadura elástica"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da PUC-RS avalia o conhecimento sobre classificação e tratamento de hemorroidas.</strong> O enunciado pergunta sobre a melhor opção terapêutica para doença hemorroidária com prolapso.</p><p><strong>A resposta correta é A - mista, permanente, cirurgia.</strong></p><p>Vamos analisar a lógica: \"doença hemorroidária em que há prolapso\" + \"melhor opção terapêutica é\" = mista (combina hemorroidas internas e externas), permanente (o prolapso é uma condição que não regride espontaneamente) e cirurgia (tratamento definitivo para prolapso).</p><p><strong>Análise das lacunas e alternativas:</strong></p><p><strong>Primeira lacuna - Tipo:</strong> Prolapso de hemorroidas geralmente envolve hemorroidas internas (que se prolapsam) ± externas. hence \"mista\".</p><p><strong>Segunda lacuna - Duração:</strong> Prolapso é uma condição PERMANENTE, que não se resolve espontaneamente e requer intervenção.</p><p><strong>Terceira lacuna - Tratamento:</strong> Para prolapso, a CIRURGIA é o gold standard, oferecendo melhor resolução e menor taxa de recidiva.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>B) Interna - temporário - escleroterapia:</strong> Incorreta. Escleroterapia é para sangramento, não prolapso. \"Temporário\" também está errado, pois prolapso é permanente.</p><p><strong>C) Interna - permanente - ligadura elástica:</strong> Parcialmente correta (interna + permanente), mas ligadura elástica não é ideal para prolapso extenso.</p><p><strong>D) Externa - temporário - ligadura elástica:</strong> Incorreta. Hemorroidas externas não prolapsam (já são externas). \"Temporário\" também errado.</p><p><strong>Veredito: A alternativa A representa a classificação e tratamento corretos para hemorroidas com prolapso, seguindo protocolos proctológicos atualizados 2024.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PreceitosBasicosEmTecnicaOpera"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Homem, 45 anos, é vítima de atropelamento por caminhonete. Ao chegar à sala de emergência, apresenta instabilidade hemodinâmica. Não se evidenciam alterações de via aérea ou de ventilação e sua Escala de Coma de Glasgow é 13. Apresenta marcas do pneu do veículo em região pélvica, extensa solução de continuidade na região perineal com sangramento importante e laceração peniana com grande hematoma e sangramento de meato uretral. O exame de ecografia na sala de emergência (FAST) demonstrou líquido livre na cavidade abdominal. Radiografia de pelve demonstrou desarticulação sacroilíaca e grande abertura do anel pélvico. Após avaliação inicial e reanimação, o paciente permaneceu com instabilidade hemodinâmica e foi levado ao bloco cirúrgico. As condutas cirúrgicas para este caso são: I. Tamponamento da lesão perineal com compressas. II. Laparotomia exploradora. III. Fixação interna da bacia. Estão corretas as condutas",
+      "alternativas": [
+        "I e II, apenas.",
+        "I e III, apenas.",
+        "II e III, apenas.",
+        "I, II e III."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia o conhecimento sobre condutas em trauma pélvico grave com instabilidade hemodinâmica. O caso descreve um paciente vítima de atropelamento com múltiplas lesões graves.</p><p><strong>A resposta correta é A - I e II, apenas.</strong></p><p>Vamos analisar cada conduta proposta:</p><p><strong>I. Tamponamento da lesão perineal com compressas:</strong> CORRETO. Em casos de sangramento perineal importante, o tamponamento com compressas é uma medida de controle de hemorragia temporária essencial para estabilizar o paciente hemodinamicamente antes de procedimentos definitivos.</p><p><strong>II. Laparotomia exploradora:</strong> CORRETO. O FAST positivo (líquido livre abdominal) indica sangramento intra-abdominal, o que combinado com a instabilidade hemodinâmica justifica laparotomia exploradora para identificar e controlar a fonte de sangramento.</p><p><strong>III. Fixação interna da bacia:</strong> INCORRETO neste momento. A fixação da pelve é um procedimento eletivo, realizado após a estabilização do paciente. Em casos de instabilidade hemodinâmica, a prioridade é o controle do sangramento e a estabilização do paciente, não a fixação definitiva da bacia.</p><p>O protocolo de trauma (Advanced Trauma Life Support - ATLS) estabelece que, em pacientes instáveis com sinais de sangramento intra-abdominal, a laparotomia exploradora é obrigatória. O tamponamento perineal é medida temporária para controle de hemorragia externa.</p><p>A fixação da bacia está indicada após a estabilização hemodinâmica, geralmente em procedimentos eletivos ou semi-eletivos.</p><p><strong>Veredito: A) I e II, apenas é a resposta correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Mulher, 23 anos, procura atendimento queixando-se de dor retroesternal associada à alimentação, com a sensação de \"\"trancar\"\" tanto alimentos líquidos como sólidos há oito meses. Refere ter usado empiricamente inibidor de bomba de prótons nos últimos seis meses, sem melhora sintomática. História de rinite alérgica, aliviada com o uso eventual de corticoide tópico. Exame físico sem alterações. A endoscopia digestiva alta identifica esôfago com mucosa de aspecto granular e friável, exsudatos esbranquiçados e formações anelares em toda a extensão, dando um aspecto de traqueização. Realizada biópsia. Em relação à principal hipótese diagnóstica, o achado histopatológico esofágico mais provável a ser encontrado é o de",
+      "alternativas": [
+        "infiltrado linfocítico.",
+        "infiltrado eosinofílico.",
+        "inclusões intranucleares basofilicas.",
+        "metaplasia do tipo intestinal sem displasia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia o conhecimento sobre esofagite eosinofílica, uma condição cada vez mais reconhecida na prática clínica gastroenterológica.</p><p><strong>A resposta correta é B - infiltrado eosinofílico.</strong></p><p>Vamos analisar o caso detalhadamente:</p><p><strong>Dados clínicos importantes:</strong></p><p>- Paciente jovem (23 anos) com disfagia progressiva (8 meses) para alimentos sólidos e líquidos<br>- Falha ao tratamento com IBP (6 meses)<br>- Endoscopia: mucosa esofágica granular, friável, com exsudatos esbranquiçados e formação de anéis (aspecto de traqueização)</p><p><strong>Este conjunto de achados é clássico para esofagite eosinofílica (EEo).</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Infiltrado linfocítico:</strong> Associado à esofagite por refluxo ou outras causas inflamatórias, mas não características da EEo.</p><p><strong>B) Infiltrado eosinofílico:</strong> CORRETO. A EEo é diagnosticada por biópsia que demonstra ≥ 15 eosinófilos por campo de grande aumento (hpf) na mucosa esofágica. Este é o achado histopatológico patognomônico da doença.</p><p><strong>C) Inclusões intranucleares basofílicas:</strong> Característica de infecções virais (como citomegalovírus), não de EEo.</p><p><strong>D) Metaplasia intestinal sem displasia:</strong> Associada ao esôfago de Barrett, geralmente em pacientes com doença do refluxo gastroesofágico crônica, não em jovens com disfagia alimentar.</p><p>A EEo é uma doença inflamatória crônica mediada por IgE, associada a alergias alimentares. O padrão endoscópico de traqueização e a ausência de resposta aos IBP são características importantes.</p><p><strong>Veredito: B) Infiltrado eosinofílico é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_EsofagitesNaoPepticas"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Mulher, 68 anos, com história de múltiplas crises de dor abdominal em cólica após ingesta de alimentos gordurosos, realiza ecografia que demonstra a vesícula biliar repleta de cálculos. O cirurgião indica colecistectomia videolaparoscópica, a qual é realizada sem intercorrências. Na revisão operatória, o laudo anatomopatológico revela colecistite crônica e a presença de uma lesão neoplásica (adenocarcinoma) de 1 cm, que penetra a lâmina própria, sem invasão da camada muscular. Dentre as alternativas, qual é a melhor conduta nessa situação?",
+      "alternativas": [
+        "Acompanhamento clínico.",
+        "Indicação de quimioterapia e radioterapia adjuvante.",
+        "Ressecção cirúrgica do leito da vesícula biliar e linfadenectomia regional.",
+        "Realização de hepatectomia direita e linfadenectomia do pedículo hepático."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 aborda o manejo de adenocarcinoma incidental da vesícula biliar encontrado durante colecistectomia por doença benigna. É uma situação que desafia muitos cirurgiões na prática clínica.</p><p><strong>A resposta correta é A) Acompanhamento clínico.</strong></p><p>Vamos analisar o caso detalhadamente:</p><p><strong>Achado anatomopatológico:</strong></p><p>- Adenocarcinoma de 1 cm<br>- Penetração da lâmina própria (T1a)<br>- Sem invasão da camada muscular</p><p>Esta classificação corresponde ao adenocarcinoma in situ da vesícula biliar (T1a), que apresenta excelente prognóstico quando tratado com colecistectomia simples.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Acompanhamento clínico:</strong> CORRETO. Segundo a literatura médica atual, o adenocarcinoma T1a (invasão apenas da lâmina própria) tem taxa de sobrevida em 5 anos superior a 90% quando tratado apenas com colecistectomia. Não há benefício comprovado com terapia adjuvante ou ressecções mais extensas.</p><p><strong>B) Quimioterapia e radioterapia adjuvante:</strong> INCORRETO. Não há indicação de terapia adjuvante para tumores T1a, pois a taxa de recorrência é muito baixa e a sobrevida é excelente com o tratamento cirúrgico simples.</p><p><strong>C) Ressecção do leito da vesícula e linfadenectomia:</strong> INCORRETO. Procedimento excessivo para T1a, com morbidade desnecessária sem benefício oncológico comprovado.</p><p><strong>D) Hepatectomia direita e linfadenectomia:</strong> INCORRETO. Procedimento major com alta morbimortalidade, completamente desnecessário para tumores T1a.</p><p><strong>Dados de sobrevida para classificação TNM da vesícula biliar:</strong></p><p>- T1a: sobrevida em 5 anos > 90%<br>- T1b: sobrevida em 5 anos 80-85%<br>- T2: sobrevida em 5 anos 60-70%</p><p><strong>Veredito: A) Acompanhamento clínico é a resposta correta para adenocarcinoma T1a de vesícula biliar.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_CancerDaVesiculaBiliar"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Homem, 76 anos, é submetido à cirurgia abdominal para ressecção de adenocarcinoma de sigmoide. Apresenta evolução favorável até o 7º dia de pós- operatório quando surgem picos febris de 39ºC e dor abdominal. Na revisão do quadro, o paciente encontra-se em regular estado geral, com dor moderada à palpação da região do sítio cirúrgico e demais dados de exame físico normais. O hemograma apresenta leucocitose com presença de formas jovens. O médico que o avalia decide iniciar com meropenem e vancomicina, após coleta de hemoculturas. No 3º dia após início desse esquema, é identificada Klebsiella pneumoniae produtora de beta lactamase de espectro ampliado (ESBL) nas hemoculturas. A curva térmica apresenta discreta melhora, mas o paciente persiste com dor abdominal, além de distensão e presença de massa à palpação da região do sítio cirúrgico. Hemograma mantendo o mesmo padrão e função renal preservada. Em relação ao caso clínico, qual é a conduta?",
+      "alternativas": [
+        "Manter esquema antimicrobiano e solicitar tomografia de abdômen pela possibilidade de abscesso.",
+        "Revisar o esquema antimicrobiano uma vez que os carbapenêmicos costumam ser inativados por estas enzimas (ESBL).",
+        "Manter esquema antimicrobiano, pois foi descartada a infecção por Clostridium difficile, uma vez que não houve crescimento nas hemoculturas.",
+        "Suspender vancomicina, sem necessidade de substituição, pois há baixa probabilidade de presença de bactérias Gram positivas no atual contexto."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia o conhecimento sobre manejo de infecção pós-operatória complicated por bactéria multirresistente e possibilidade de coleção intra-abdominal.</p><p><strong>A resposta correta é A) Manter esquema antimicrobiano e solicitar tomografia de abdômen pela possibilidade de abscesso.</strong></p><p>Vamos analisar a situação clínica:</p><p><strong>Contexto clínico:</strong></p><p>- Pós-operatório de ressecção de adenocarcinoma de sigmoide (7º dia)<br>- Febre, dor abdominal, distensão<br>- Massa palpável no sítio cirúrgico<br>- Hemoculturas positivas para Klebsiella pneumoniae ESBL<br>- Melhora parcial com meropenem + vancomicina</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Manter esquema antimicrobiano e solicitar tomografia:</strong> CORRETO. A presença de massa palpável, dor e distensão sugere coleção intra-abdominal (abscesso). O meropenem é efetivo contra ESBL (bactamase de espectro ampliado). A tomografia é essencial para confirmar coleção e orientar drenagem.</p><p><strong>B) Revisar esquema antimicrobiano (ESBL inativa carbapenêmicos):</strong> INCORRETO. Esta informação está errada. Carbapenêmicos (como meropenem) SÃO efetivos contra ESBL, sendo uma das poucas opções terapêuticas disponíveis. São resistentes à inativação por ESBL.</p><p><strong>C) Descartar C. diff (sem crescimento em hemoculturas):</strong> INCORRETO. Hemoculturas negativas não excluem C. difficile, pois este patógeno raramente aparece em hemoculturas. A ausência de crescimento em hemoculturas não permite descartar essa infecção.</p><p><strong>D) Suspender vancomicina (baixa probabilidade de Gram+):</strong> INCORRETO. Vancomicina é essencial para cobertura de Gram-positivos, especialmente em ambiente hospitalar pós-operatório. Sua suspensão seria inadequada.</p><p><strong>Fisiopatologia importante:</strong></p><p>Bactérias ESBL são resistentes à maioria dos beta-lactâmicos, mas mantêm suscetibilidade aos carbapenêmicos. Em pacientes pós-operatórios com massa palpável e melhora apenas parcial, sempre devemos investigar coleção que pode necessitar drenagem.</p><p><strong>Veredito: A) Manter antimicrobianos e solicitar tomografia é a conduta adequada.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Mulher, 17 anos, com diagnóstico de bexiga neurogênica foi submetida à cirurgia de ampliação vesical, Relato prévio de cinco cirurgias sem complicações anestésicas relatadas na avaliação pré-operatória. O procedimento foi realizado sob anestesia geral balanceada: indução com propofol, manutenção com halogenado, infusão contínua de remifentanil e doses fracionadas de atracúrio. Após uma hora do início da cirurgia, apresentou hipotensão grave e abrupta, diminuição importante da PaO² , aumento da pressão intratraqueal de 15 para 50 mmH²O, aumento súbito e posteriormente diminuição da PaCO² para 23 mmH²O. Qual é a conduta correta para a intercorrência?",
+      "alternativas": [
+        "Administrar, como primeiro fármaco, a adrenalina por sua ação sobre os receptores a, ß1 e ß2.",
+        "Administrar, como fármacos de primeira linha, dopamina, corticoide e",
+        "broncodilatadores para minimizar a cascata inflamatória sobre os brônquios e correção dos níveis tensionais",
+        "Realizar aspiração do tubo endotraqueal para minimizar o aumento da pressão intratraqueal, que pode ser provocado por secreção no seu interior, e readequar as concentrações anestésicas para controle dos níveis tensionais.",
+        "Administrar dopamina, aminofilina e expansor plasmático para contornar a queda de pressão sanguínea e a elevação da pressão intratraqueal."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PUC-RS 2021 avalia o reconhecimento e manejo de reação anafilática durante anestesia geral, uma intercorrência crítica que exige atuação imediata e precisa.</p><p><strong>A resposta correta é A) Administrar, como primeiro fármaco, a adrenalina por sua ação sobre os receptores a, ß1 e ß2.</strong></p><p>Vamos analisar o quadro clínico apresentado:</p><p><strong>Sinais e sintomas característicos de anafilaxia:</strong></p><p>- Hipotensão grave e abrupta<br>- Diminuição da PaO2 (hipoxemia)<br>- Aumento importante da pressão intratraqueal (broncoespasmo)<br>- Queda da PaCO2 (hiperventilação compensatória inicial seguida de hipoventilação)</p><p><strong>Cronologia típica:</strong> 1 hora após início da cirurgia, com administração de halogenado e bloqueador neuromuscular (atracúrio pode ser gatilho para reação anafilática).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Adrenalina como primeira escolha:</strong> CORRETO. A adrenalina é o fármaco de escolha para anafilaxia por sua ação simultânea nos três receptores:</p><p>- Receptores α: vasoconstrição, aumentando a pressão arterial<br>- Receptores β1: aumento da contratilidade cardíaca<br>- Receptores β2: broncodilatação, revertendo o broncoespasmo</p><p><strong>B) Dopamina, corticoide e broncodilatadores:</strong> INCORRETO. Corticoides e broncodilatadores são adjuvantes, mas não primeira linha. A adrenalina deve ser administrada IMEDIATAMENTE.</p><p><strong>C) Aspiração do tubo e readequar anestésicos:</strong> INCORRETO. O broncoespasmo é causado por reação anafilática, não por secreção. Não é problema de posicionamento do tubo ou doses anestésicas.</p><p><strong>D) Dopamina, aminofilina e expansor:</strong> INCORRETO. Não trata o broncoespasmo adequadamente. A aminofilina é menos eficaz que a adrenalina e pode causar efeitos adversos.</p><p><strong>Protocolo de anafilaxia em anestesia (dados atualizados 2024):</strong></p><p>1. Parar administração de todos os fármacos<br>2. Adrenalina (0,1-0,5 mg IV ou 0,5-1 mg IM)<br>3. Expansão com cristaloide 20-30 ml/kg<br>4. Corticoide (hidrocortisona 200-400 mg IV)<br>5. Anti-histamínicos (difenhidramina 25-50 mg IV)<br>6. Suporte ventilatório se necessário</p><p><strong>Veredito: A) Adrenalina como primeira escolha é o tratamento padrão para anafilaxia em anestesia.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "<html><head></head><body>Mulher, 38 anos, vem à consulta por crises epilépticas de desconexão do ambiente. Relata que, aos 24 anos de idade, iniciou com quadro de sensações súbitas de já ter visto ou vivido situações do seu dia a dia. Aos poucos, esses episódios tornaram-se mais intensos, e os familiares relatam que ela ficava com olhar fixo, ´vidrado´ e fazia movimentos repetitivos de esfregar uma mão na outra e de passar um lábio sobre o outro, mesmo com o uso de fármacos antiepilépticos. Raramente apresentava movimentos tônico-clônicos generalizados. A história pregressa mostra que ela havia apresentado duas convulsões febris no 2º ano de vida. O eletroencefalograma (EEG) revela atividade epileptogênica focal. Considerando a história clínica, EEG e a imagem de ressonância magnética (a seguir), afirma-se: I. A localização da zona irritativa é no lobo temporal. II. O medicamento antiepiléptico mais indicado para este tipo de crise é a etossuximida. III. O tratamento cirúrgico da epilepsia nessa situação associa-se à alta probabilidade de controle das crises. Está/Estão correta(s) apenas a(s) afirmativa(s)\n\n<img src=\"https://medbrave.com.br/questions/puc-rs-2021-r3/qQ26.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "I.",
+        "II.",
+        "I e III.",
+        "II e III."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre epilepsia do lobo temporal e suas abordagens terapêuticas.</strong></p><p>A paciente apresenta sintomas clássicos de epilepsia do lobo temporal: auras com sensações de déjà-vu, olhar fixo, automatismos (esfregar mãos, passar lábios), e evolução para crises tônico-clônicas generalizadas. O EEG confirma atividade epileptogênica focal, e a história de convulsões febris na infância sugere esclerose mesial temporal, etiologia frequente nesta localização.</p><p><strong>Analisando cada afirmativa:</strong></p><p><strong>I. A localização da zona irritativa é no lobo temporal. - CORRETO.</strong> A descrição clínica (aura de déjà-vu, automatismos complexos, olhar fixo) é tipicamente temporal, especialmente mesial. A MRI должна mostrar alterações compatíveis com esclerose hipocampal.</p><p><strong>II. O medicamento antiepiléptico mais indicado para este tipo de crise é a etossuximida. - INCORRETO.</strong> A etossuximida é primeira linha para crises de ausência, não para epilepsia do lobo temporal. Para crises temporais, os medicamentos de escolha são carbamazepina, fenitoína, levetiracetam ou valproato.</p><p><strong>III. O tratamento cirúrgico da epilepsia nessa situação associa-se à alta probabilidade de controle das crises. - CORRETO.</strong> A epilepsia do lobo temporal devido a esclerose mesial tem excelente prognóstico cirúrgico, com 70-80% de liberdade de crises após lobectomia temporal anterior.</p><p><strong>Resposta: C - Apenas I e III estão corretas.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Homem, 58 anos, afrodescendente, tabagista 50 maços/ano, apresentou episódio de tosse com escarro hemoptoico. Nega perda de peso ou outros sintomas ou comorbidades. Consultou na UBS, que o encaminhou ao cirurgião torácico com uma TC de tórax sem contraste que evidenciou uma lesão espiculada de 6,4 cm em lobo superior direito e linfonodos mediastinais de tamanho normal. Estadiamento por imagem com tomografias sem evidência de metástase. Em relação à principal hipótese diagnostica, afirma-se: I. Está indicada avaliação mediastinal invasiva em linfonodos suspeitos ou de tamanho normal em alguns estágios. II. Os lobos superiores são os mais acometidos e a lobectomia pulmonar é a cirurgia padrão. III. O tratamento inicial é sistêmico devido ao tamanho da lesão. Está/Estão correta(s) apenas a(s) afirmativa(s)",
+      "alternativas": [
+        "I.",
+        "III.",
+        "I e II.",
+        "II e III."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão testa seu conhecimento sobre manejo do câncer de pulmão não pequenas células, especificamente肺癌 estadio II-III.</strong></p><p>O paciente apresenta lesión espiculada de 6,4 cm no lobo superior direito em tabagista de alto risco, compatível com suspeita de câncer pulmonar primário. A ausência de metástases e linfonodos normais sugere estadio clínico II-III.</p><p><strong>Analisando cada afirmativa:</strong></p><p><strong>I. Está indicada avaliação mediastinal invasiva em linfonodos suspeitos ou de tamanho normal em alguns estágios. - CORRETO.</strong> Segundo guidelines atuais, mesmo linfonodos de tamanho normal podem conter micrometástases. Para tumores > 3 cm ou localizado em lobo superior, deve-se realizar mediastinoscopia ou EBUS para estadiamento preciso antes da cirurgia.</p><p><strong>II. Os lobos superiores são os mais acometidos e a lobectomia pulmonar é a cirurgia padrão. - CORRETO.</strong> Os lobos superiores, especialmente o direito, são os mais frequentemente afetados por câncer de pulmão em tabagistas. A lobectomia com linfadenectomia é o procedimento padrão para tumores ressecáveis em estadios I-II.</p><p><strong>III. O tratamento inicial é sistêmico devido ao tamanho da lesão. - INCORRETO.</strong> Lesão de 6,4 cm sem metástases é potencialmente ressecável. O tratamento sistêmico (quimioterapia) é reservado para casos irressecáveis ou metástaticos. A abordagem inicial deve ser cirúrgica quando tecnicamente possível.</p><p><strong>Resposta: C - Apenas I e II estão corretas.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Mulher, 82 anos, apresenta quadro de dor abdominal, febre, ictericia e calafrios nos últimos 15 dias. Tem história de ter sido submetida à coledocoduodenoanastomose por coledocolitiase há 12 anos. Após manejo inicial do quadro com hidratação e antibioticoterapia endovenosa, apresenta melhora clínica. Colangiorressonância mostra a presença de cálculos e restos alimentares na porção distal do colédoco. Dentre as alternativas, qual é a melhor conduta nessa situação?",
+      "alternativas": [
+        "Manter o tratamento com antibiótico.",
+        "Indicar uma papilotomia endoscópica.",
+        "Associar ácido ursodesoxicólico ao tratamento.",
+        "Indicar uma hepaticojejunoanastomose em Y-de-Roux."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão aborda o manejo de complicações em pacientes com antecedente de anastomose biliar.</strong></p><p>A paciente apresenta quadro de colangite com história de coledocoduodenoanastomose (anastomose entre colédoco e duodeno) realizada há 12 anos. A colangiorressonância demonstra cálculos e restos alimentares na porção distal do colédoco.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Manter o tratamento com antibiótico. - INCORRETO.</strong> Embora a paciente tenha melhorado com antibióticos, a causa da colangite (obstrução por cálculos) não foi resolvida. O tratamento deve ser definitivo, não apenas sintomático.</p><p><strong>B) Indicar uma papilotomia endoscópica. - CORRETO.</strong> A papilotomia permite acesso à via biliar através da papila duodenal, possibilitando a remoção de cálculos e debris. Na coledocoduodenoanastomose, o endoscópio pode ser direcionado através da anastomose para alcançar o colédoco e realizar a limpeza da via biliar.</p><p><strong>C) Associar ácido ursodesoxicólico ao tratamento. - INCORRETO.</strong> O ácido ursodesoxicólico dissolve cálculos de colesterol, mas não tem efeito em cálculos já formados e em uma situação de colangite aguda com obstrução. A abordagem deve ser mecânica, não química.</p><p><strong>D) Indicar uma hepaticojejunoanastomose em Y-de-Roux. - INCORRETO.</strong> A reintervenção cirúrgica em paciente com prévia anastomose biliar tem morbidade significativa. A abordagem endoscópica é menos invasiva e adequada para o caso, não justificando cirurgia complexa inicial.</p><p><strong>Resposta: B - Papilotomia endoscópica.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Hepatologia"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Em relação à resposta neuroendócrina e metabólica ao trauma cirúrgico, afirma-se: I. A resposta catabólica ao trauma ocorre independente do estado nutricional do paciente. II. A resposta ao estresse é caracterizada pela rápida mobilização de reservas de gordura através da ativação de catecolaminas. III. A resposta ao estresse agudo é acompanhada por aumento da resistência à insulina com intolerância periférica à glicose egliconeogenese hepática. Estão corretas as afirmativas",
+      "alternativas": [
+        "I e II, apenas.",
+        "I e III, apenas.",
+        "II e III, apenas.",
+        "I, II e III."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre a resposta metabólica ao estresse cirúrgico.</strong></p><p>A resposta ao trauma cirúrgico é complexa e envolve sistemas neuroendócrinos e metabólicos coordenados para manter homeostase e cicatrização.</p><p><strong>Analisando cada afirmativa:</strong></p><p><strong>I. A resposta catabólica ao trauma ocorre independente do estado nutricional do paciente. - CORRETO.</strong> A resposta catabólica é mediada por catecolaminas, cortisol, glucagon e citocinas, independentemente do estado nutricional prévio. Mesmo pacientes bem nutridos desenvolvem resposta catabólica após trauma, caracterizada por proteólise e glicogenólise.</p><p><strong>II. A resposta ao estresse é caracterizada pela rápida mobilização de reservas de gordura através da ativação de catecolaminas. - CORRETO.</strong> A lipólise é rapidamente estimulada por catecolaminas (epinefrina e norepinefrina), liberando ácidos graxos e glicerol para uso energético. Esta mobilização fornece substratos essenciais para o metabolismo durante o período de jejum e estresse.</p><p><strong>III. A resposta ao estresse agudo é acompanhada por aumento da resistência à insulina com intolerância à glicose e gliconeogênese hepática. - CORRETO.</strong> A resposta ao estresse causa hiperglicemia através de múltiplos mecanismos: resistência periférica à insulina (redução da captação de glicose em músculo e tecido adiposo), aumento da gliconeogênese hepática, e redução da síntese de glicogênio. Esta hiperglicemia adaptativa garante suprimento de glicose para órgãos dependentes como cérebro e feridas em cicatrização.</p><p><strong>Resposta: D - I, II e III estão corretas.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_FasesDaRespostaAoTrauma",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaNeuroendocrina",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Mulher, 45 anos, foi submetida à apendicectomia videolaparoscópica por quadro clínico compatível com apendicite aguda. O resultado do exame anatomopatológico evidenciou tumor carcinoide de apêndice cecal de 3 cm, localizado no ápice do apêndice, sem invasão da base apendicular e somente invasão microscópica do mesoapêndice. O estadiamento não evidenciou presença de metástases ou de tumores sincrônicos. Qual deve ser a conduta recomendada neste caso?",
+      "alternativas": [
+        "Quimioterapia.",
+        "Reoperação com colectomia direita.",
+        "Observação e acompanhamento clínico.",
+        "Linfadenectomia da cadeia aortocava por videolaparoscopia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão aborda a conduta adequada para tumores carcinoides de apêndice conforme critérios de risco.</strong></p><p>A paciente foi submetida à apendicectomia e o anatomopatológico revelou tumor carcinoide de 3 cm no ápice do apêndice, com invasão microscópica do mesoapêndice mas sem invasão da base. Critérios prognósticos importantes incluem tamanho, localização e padrão de invasão.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Quimioterapia. - INCORRETO.</strong> Tumores carcinoides de apêndice < 2 cm com margens libres e sem metástases têm excelente prognóstico. Para lesões > 2 cm com fatores de risco, a quimioterapia sistêmica não é primeira opção, sendo reservada para doença metastática.</p><p><strong>B) Reoperação com colectomia direita. - CORRETO.</strong> Tumores carcinoides de apêndice > 2 cm ou com invasão do mesoapêndice apresentam risco aumentado de comprometimento linfonodal regional. A colectomia direita com linfadenectomia é indicada para remove complete o leito vascular e linfonodos potencialmente acometidos, reduzindo risco de recorrência.</p><p><strong>C) Observação e acompanhamento clínico. - INCORRETO.</strong> Embora tumores < 2 cm no ápice sem invasão permitam observação, este caso apresenta dois fatores de risco: tamanho > 2 cm (3 cm) e invasão do mesoapêndice, que indicam necessidade de tratamento cirúrgico adicional.</p><p><strong>D) Linfadenectomia da cadeia aortocava por videolaparoscopia. - INCORRETO.</strong> A linfadenectomia videolaparoscópica é excessiva para este caso. A abordagem padrão é colectomia direita por via aberta ou videolaparoscópica, que permite ressecção do cólon direito e linfonodos ileocólicos e mesentéricos inferiores, onde são mais prováveis metástases.</p><p><strong>Resposta: B - Reoperação com colectomia direita.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaInfantil",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda"
+      ],
+      "tags": [
+        "PUCRS2021R3CG",
+        "PUC-RS",
+        "R3CG",
+        "RS",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762799114609-29"
+    }
+  ]
+}

@@ -1,28 +1,40 @@
-import { firestore } from 'firebase-admin';
+import { SupabaseClient } from '@supabase/supabase-js';
+import { Router } from 'express';
+import { SupabaseSimulatedExamService } from '../../../infra/simulatedExam/supabase';
 import { SimulatedExamController } from '../controllers/SimulatedExamController';
-import { FirebaseSimulatedExamService } from '../services/FirebaseSimulatedExamService';
-import { createSimulatedExamRoutes } from '../routes/simulatedExamRoutes';
+import { simulatedExamRoutes } from '../routes/simulatedExamRoutes';
 
-export interface SimulatedExamModuleOptions {
-  firestoreDb?: firestore.Firestore;
+interface CreateSimulatedExamModuleOptions {
+  supabase?: SupabaseClient;
 }
 
-export const createSimulatedExamModule = (options?: SimulatedExamModuleOptions) => {
-  // Obter a instância do Firestore
-  const db = options?.firestoreDb || firestore();
+export const createSimulatedExamModule = (
+  options: CreateSimulatedExamModuleOptions,
+): Router => {
+  if (!options.supabase) {
+    throw new Error('Supabase client is required');
+  }
 
-  // Criar o serviço
-  const simulatedExamService = new FirebaseSimulatedExamService(db);
+  // Criar o serviço de simulados
+  const simulatedExamService = new SupabaseSimulatedExamService(
+    options.supabase,
+  );
 
-  // Criar o controlador
-  const simulatedExamController = new SimulatedExamController(simulatedExamService);
+  // Criar o serviço de questões
+  const { SupabaseQuestionService } = require('../../../infra/questions/supabase/SupabaseQuestionService');
+  const questionService = new SupabaseQuestionService(options.supabase);
+
+  // Criar o serviço de histórico de questões
+  const { QuestionHistoryService } = require('../../questions/services/QuestionHistoryService');
+  const questionHistoryService = new QuestionHistoryService(options.supabase);
+
+  // Criar o controlador com todos os serviços
+  const simulatedExamController = new SimulatedExamController(
+    simulatedExamService,
+    questionService,
+    questionHistoryService,
+  );
 
   // Criar as rotas
-  const simulatedExamRoutes = createSimulatedExamRoutes(simulatedExamController);
-
-  return {
-    simulatedExamRoutes,
-    simulatedExamService,
-    simulatedExamController,
-  };
+  return simulatedExamRoutes(simulatedExamController);
 };

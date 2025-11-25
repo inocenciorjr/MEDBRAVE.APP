@@ -23,5 +23,7 @@ export const AdminAuditLogSchema = z.object({
 });
 
 export const validateAdminUser = (data: unknown) => AdminUserSchema.parse(data);
-export const validateAdminAction = (data: unknown) => AdminActionSchema.parse(data);
-export const validateAdminAuditLog = (data: unknown) => AdminAuditLogSchema.parse(data);
+export const validateAdminAction = (data: unknown) =>
+  AdminActionSchema.parse(data);
+export const validateAdminAuditLog = (data: unknown) =>
+  AdminAuditLogSchema.parse(data);

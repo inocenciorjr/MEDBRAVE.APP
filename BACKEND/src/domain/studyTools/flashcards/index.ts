@@ -25,14 +25,11 @@ export { SearchFlashcardsUseCase } from './use-cases/SearchFlashcardsUseCase';
 export {
   FlashcardStatus,
   ReviewQuality,
-  type FlashcardSRSData,
   type Flashcard,
   type CreateFlashcardDTO,
   type UpdateFlashcardDTO,
 } from './types/flashcard.types';
-export {
-  type PaginatedFlashcardsResult,
-} from './types/index';
+export { type PaginatedFlashcardsResult } from './types/index';
 
 // Validation
 export { validate } from './validation/flashcardSchemas';

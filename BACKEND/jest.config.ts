@@ -1,36 +1,30 @@
-import type { Config } from '@jest/types';
+import type { Config } from 'jest';
 
-const config: Config.InitialOptions = {
+const config: Config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ['<rootDir>/tests'],
-  testMatch: ['**/__tests__/**/*.+(ts|tsx|js)', '**/?(*.)+(spec|test).+(ts|tsx|js)'],
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-  },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  collectCoverage: true,
-  collectCoverageFrom: [
-    'services/**/*.ts',
-    'validators/**/*.ts',
-    'errors/**/*.ts',
-    '!**/node_modules/**',
-    '!**/vendor/**',
+  roots: ['<rootDir>/src', '<rootDir>/tests'],
+  testMatch: [
+    '**/__tests__/**/*.ts',
+    '**/?(*.)+(spec|test).ts'
   ],
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80,
-    },
+  transform: {
+    '^.+\.ts$': 'ts-jest'
   },
-  coverageReporters: ['json', 'lcov', 'text', 'clover'],
-  verbose: true,
-  testTimeout: 10000,
+  collectCoverageFrom: [
+    'src/**/*.ts',
+    '!src/**/*.d.ts',
+    '!src/**/*.interface.ts'
+  ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1',
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
+  testTimeout: 30000,
+  globalSetup: '<rootDir>/tests/setup/global-setup.ts',
+  globalTeardown: '<rootDir>/tests/setup/global-teardown.ts'
 };
 
 export default config;

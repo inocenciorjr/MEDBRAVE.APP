@@ -1,15 +1,15 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase Timestamp import - using native Date instead
 
 export type AlertSeverity = 'info' | 'warning' | 'danger';
 
 export interface UserAlert {
   id: string;
-  userId: string;
-  specialtyId?: string;
+  user_id: string;
+  specialty_id?: string;
   type: AlertSeverity;
   code: 'LOW_ACCURACY' | 'LOW_RECALL' | 'EXCESS_LAPSES' | 'GOAL_GAP';
   message: string;
-  weekStart?: string; // ISO date
-  createdAt: Timestamp;
-  readAt?: Timestamp;
-} 
+  week_start?: string; // ISO date
+  created_at: Date;
+  read_at?: Date;
+}

@@ -10,7 +10,7 @@ export { createStudyToolsModule } from './factories/createStudyToolsModule';
 
 // Factories dos submódulos
 export { createFlashcardModule } from './flashcards/factories/createFlashcardModule';
-export { createStudySessionModule } from './studySessions/factories/createStudySessionModule';
+// export { createStudySessionModule } from './studySessions/factories/createStudySessionModule'; // Removed
 
 // Nota: Para uso direto, recomenda-se usar as factories acima para criar módulos completos
 // As rotas abaixo são mantidas para compatibilidade com código legado
@@ -24,7 +24,7 @@ const router = Router();
 router.use('/flashcards', flashcardRoutes);
 
 const errorNotebookModule = createErrorNotebookModule();
-router.use('/notebooks', errorNotebookModule.errorNotebookRoutes);
+router.use('/error-notebook', errorNotebookModule.errorNotebookRoutes);
 // Não registramos as rotas de sessões de estudo diretamente porque elas precisam de um controlador
 
 export default router;

@@ -1,5 +1,5 @@
-import { firestore } from '../config/firebaseAdmin';
-import { FlashcardFSRSService } from '../domain/studyTools/flashcards/services/FlashcardFSRSService';
+import { supabase } from '../config/supabase';
+// FSRS migration service removido - usar serviço de flashcards existente ou desabilitar este script
 import logger from '../utils/logger';
 
 /**
@@ -8,15 +8,20 @@ import logger from '../utils/logger';
  */
 
 const migrateSM2ToFSRS = async () => {
-  const flashcardService = new FlashcardFSRSService();
-  const db = firestore;
+  // Script desativado: serviço FSRS removido
+  logger.info('FSRS migration deprecated - script disabled');
+  return;
+  const db = supabase;
 
   try {
     logger.info('🚀 Iniciando migração SM-2 → FSRS...');
 
     // Buscar todos os flashcards
-    const flashcardsSnapshot = await db.collection('flashcards').get();
-    const totalFlashcards = flashcardsSnapshot.size;
+    const { data: flashcards, error } = await db.from('flashcards').select('*');
+    if (error) {
+      throw error;
+    }
+    const totalFlashcards = flashcards?.length || 0;
 
     logger.info(`📊 Total de flashcards encontrados: ${totalFlashcards}`);
 
@@ -24,48 +29,52 @@ const migrateSM2ToFSRS = async () => {
     let errorCount = 0;
     let alreadyMigratedCount = 0;
 
-    for (const flashcardDoc of flashcardsSnapshot.docs) {
-      const flashcard = flashcardDoc.data();
-      const flashcardId = flashcardDoc.id;
+    for (const flashcard of flashcards || []) {
+      const flashcardId = flashcard.id;
 
       try {
         // Verifica se já existe card FSRS
-        const existingFSRSCard = await db
-          .collection('fsrs_cards')
-          .where('contentId', '==', flashcardId)
-          .where('userId', '==', flashcard.userId)
+        const { data: existingFSRSCard } = await db
+          .from('fsrs_cards')
+          .select('id')
+          .eq('contentId', flashcardId)
+          .eq('userId', flashcard.userId)
           .limit(1)
-          .get();
+          .single();
 
-        if (!existingFSRSCard.empty) {
+        if (existingFSRSCard) {
           alreadyMigratedCount++;
           logger.info(`⏭️  Flashcard ${flashcardId} já migrado`);
           continue;
         }
 
         // Migra o flashcard
-        await flashcardService.migrateFlashcardToFSRS(flashcardId, flashcard.userId);
+        // FSRS migration disabled
         migratedCount++;
 
         if (migratedCount % 10 === 0) {
-          logger.info(`📈 Progresso: ${migratedCount}/${totalFlashcards} migrados`);
+          logger.info(
+            `📈 Progresso: ${migratedCount}/${totalFlashcards} migrados`,
+          );
         }
-
-      } catch (error) {
+    } catch (error: any) {
         errorCount++;
-        logger.error(`❌ Erro ao migrar flashcard ${flashcardId}: ${error instanceof Error ? error.message : 'Erro desconhecido'}`);
+        logger.error(
+          `❌ Erro ao migrar flashcard ${flashcardId}: ${error instanceof Error ? error.message : 'Erro desconhecido'}`,
+        );
       }
     }
 
     logger.info('✅ Migração concluída!');
-    logger.info(`📊 Resumo:`);
+    logger.info("📊 Resumo:");
     logger.info(`   • Migrados: ${migratedCount}`);
     logger.info(`   • Já existiam: ${alreadyMigratedCount}`);
     logger.info(`   • Erros: ${errorCount}`);
     logger.info(`   • Total: ${totalFlashcards}`);
-
-  } catch (error) {
-    logger.error(`💥 Erro na migração: ${error instanceof Error ? error.message : 'Erro desconhecido'}`);
+  } catch (error: any) {
+    logger.error(
+      `💥 Erro na migração: ${error instanceof Error ? error.message : 'Erro desconhecido'}`,
+    );
     process.exit(1);
   }
 
@@ -77,4 +86,4 @@ if (require.main === module) {
   migrateSM2ToFSRS();
 }
 
-export default migrateSM2ToFSRS; 
+export default migrateSM2ToFSRS;

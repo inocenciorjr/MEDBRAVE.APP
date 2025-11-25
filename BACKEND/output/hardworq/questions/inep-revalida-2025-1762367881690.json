@@ -1,0 +1,361 @@
+[
+  {
+    "id": "hardworq-320729",
+    "statement": "Homem de 62 anos vai a uma unidade de pronto atendimento (UPA) referindo cansaço e tontura ao se levantar há 2 semanas. Nega outras queixas, comorbidades ou cirurgias prévias, assim como o uso de medicamentos. Ao exame físico, apresenta-se corado, hidratado, lúcido e orientado em tempo e espaço; pressão, arterial de 120 x 70 mmHg; frequência cardíaca de 45 bpm saturação de O2 de 96% em ar ambiente; ritmo cardíaco regular, sem turgência jugular; murmúrio vesicular fisiológico, sem ruídos acessórios; e enchimento capilar de 2 segundos.\nDiante disso, o médico solicita um eletrocardiograma de 12 derivações: (IMAGEM)\n\nA partir desse quadro clínico e da interpretação do eletrocardiograma, a conduta adequada consiste em:\n\n<img src=\"/api/temp-images/img-9e3e693bbb026e2db156f25708fa94d1.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-320729-alt-0",
+        "text": "conceder alta médica e encaminhar o paciente ao ambulatório especializado de cardiologia.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320729-alt-1",
+        "text": "monitorizar o paciente, solicitar marca-passo transcutâneo e aguardar avaliação do cardiologista.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320729-alt-2",
+        "text": "monitorizar o paciente, administrar atropina 1 mg (IV) e implantar marca-passo transcutâneo.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320729-alt-3",
+        "text": "monitorizar o paciente, administrar atropina 1 mg (IV) e iniciar uso de dopamina 5 mcg/kg/min.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-320729-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "INEP2025REVALIDA",
+      "INEP REVALIDA",
+      "REVALIDA",
+      "DF",
+      "2025"
+    ],
+    "source": "INEP REVALIDA",
+    "year": 2025,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T18:38:01.175Z",
+    "updated_at": "2025-11-05T18:38:01.175Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-9e3e693bbb026e2db156f25708fa94d1.png"
+    ],
+    "metadata": {
+      "hardworq_id": 320729,
+      "hardworq_codigo": "INEP2025REVALIDA-1",
+      "prova_id": 3182,
+      "prova_codigo": "INEP2025REVALIDA",
+      "estado": "DF",
+      "grupo": "REVALIDA",
+      "professor_comment": "O examinador pretende verificar se há reconhecimento do bloqueio atrioventricular total no eletrocardiograma, com ênfase na leitura do DII longo mostrando dissociação AV, e se se domina a conduta imediata nas bradiarritmias infra-hissianas, nas quais a atropina costuma ser pouco útil e a priorização de estimulação elétrica deve ser precoce.\n\nO caso descreve homem de 62 anos com duas semanas de cansaço e tontura ao ortostatismo, hemodinamicamente estável, porém com bradicardia sustentada de 45 bpm e ritmo regular. A ausência de fármacos cronotrópicos negativos e comorbidades conhecidas sugere etiologia intrínseca do sistema de condução, com quadro não transitório.\n\nNo traçado, o DII longo evidencia claramente bloqueio atrioventricular total, caracterizado por dissociação completa entre atividade atrial e ventricular. Observam-se mais ondas P do que complexos QRS, intervalos P-P regulares indicando ritmo sinusal atrial, intervalos R-R regulares compatíveis com ritmo de escape e ausência de relação fixa entre P e QRS. A frequência ventricular em torno de 45 bpm sugere escape juncional, o que não elimina o risco de deterioração súbita, uma vez que escapes podem ser instáveis e podem falhar. Trata-se de bradiarritmia tipicamente infra-hissiana, cuja resposta à atropina é imprevisível ou ausente. A medida com maior probabilidade de reverter a bradicardia sintomática e prevenir progressão para assistolia é a estimulação elétrica. Nesse contexto, deve-se manter monitorização contínua, providenciar prontamente o marca-passo transcutâneo como ponte para marcapasso transvenoso e avaliação para implante de marcapasso definitivo, com acionamento imediato da equipe de cardiologia.\n\nDiante do ECG com BAVT e da sintomatologia, a conduta adequada é monitorizar o paciente, solicitar marca-passo transcutâneo e aguardar avaliação do cardiologista. Essa estratégia prioriza a disponibilidade de estimulação elétrica e evita depender de vagolíticos de baixa efetividade nesse cenário. Agentes adrenérgicos como dopamina ou adrenalina podem ser considerados apenas como ponte quando a estimulação elétrica não está prontamente acessível, não substituindo a necessidade de marcapasso.\n\nConceder alta com encaminhamento ambulatorial é inadequado, pois BAVT sintomático requer internação, monitorização e disponibilidade imediata de estimulação, além de avaliação hospitalar para marcapasso definitivo, pelo risco de deterioração abrupta.\n\nMonitorizar, administrar atropina e implantar marca-passo transcutâneo inclui um passo farmacológico de benefício limitado em bloqueio infra-hissiano e pode postergar a intervenção mais efetiva, que é a estimulação elétrica.\n\nMonitorizar, administrar atropina e iniciar dopamina desloca o foco para drogas em um cenário em que a conduta central é a estimulação elétrica. Vasopressores e cronotrópicos podem ser úteis apenas quando o marca-passo não está disponível de imediato e não suprimem a indicação de estimulação no BAVT.",
+      "scraped_at": "2025-11-05T18:38:01.175Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-320730",
+    "statement": "Homem de 42 anos, em uso crônico de anti-inflamatório não esteroide por doença reumática, da entrada no pronto-socorro com 6 horas de evolução de dor epigástrica de forte intensidade. Sinais vitais: (IMAGEM)\n\nAo exame físico, abdome tenso, com descompressão brusca dolorosa nos quatro quadrantes. O hemograma apresenta valores dentro da normalidade e a tomografia de abdome evidencia líquido livre intraperitoneal com ar no recesso hepatofrênico. Nesse caso, assinale a alternativa que apresenta a principal hipótese diagnóstica.\n\n<img src=\"/api/temp-images/img-1d60ad8c787cf657185acf05f4dfb260.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-320730-alt-0",
+        "text": "Úlcera gástrica perfurada.",
+        "isCorrect": true,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320730-alt-1",
+        "text": "Pancreatite aguda.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320730-alt-2",
+        "text": "Colecistite aguda.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320730-alt-3",
+        "text": "Diverticulite aguda.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-320730-alt-0",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "INEP2025REVALIDA",
+      "INEP REVALIDA",
+      "REVALIDA",
+      "DF",
+      "2025"
+    ],
+    "source": "INEP REVALIDA",
+    "year": 2025,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T18:38:01.175Z",
+    "updated_at": "2025-11-05T18:38:01.175Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-1d60ad8c787cf657185acf05f4dfb260.png"
+    ],
+    "metadata": {
+      "hardworq_id": 320730,
+      "hardworq_codigo": "INEP2025REVALIDA-2",
+      "prova_id": 3182,
+      "prova_codigo": "INEP2025REVALIDA",
+      "estado": "DF",
+      "grupo": "REVALIDA",
+      "professor_comment": "A questão aborda o tema abdome agudo perfurativo, em particular a capacidade de reconhecimento do quadro clínico típico e da associação etiológica frequente com o uso de anti-inflamatórios não esteroidais (AINEs), assim como a interpretação adequada dos exames complementares, sobretudo os achados tomográficos relacionados à perfuração gastrointestinal.\n\nNo enunciado, temos um paciente masculino, com dor epigástrica intensa súbita em contexto de uso crônico de anti-inflamatório por doença reumática. A característica da dor abdominal súbita e de forte intensidade, acompanhada de descompressão brusca dolorosa generalizada, ou seja,irritação peritoneal, sugere um abdome agudo inflamatório decorrente da perfuração gastrointestinal. Os achados da tomografia computadorizada de abdome: ar livre no recesso hepatofrênico, acompanhado de líquido livre, reafirmam a suspeita diagnóstica, indicando perfuração gastrointestinal com pneumoperitônio secundário.\n\nNeste caso, a úlcera gástrica perfurada é a hipótese diagnóstica mais coerente com o quadro. O uso crônico de anti-inflamatórios não esteroidais está fortemente associado ao desenvolvimento de gastrite erosiva e úlceras gástricas e duodenais. Essas lesões, quando profundas ou não tratadas, podem complicar com perfuração.\n\nA pancreatite aguda pode cursar com dor epigástrica intensa, mas a ausência típica de pneumoperitônio e sinais mais sugestivos como aumento importante das enzimas pancreáticas (principalmente amilase e lipase) afasta esta possibilidade.\n\nA colecistite aguda costuma se apresentar com dor abdominal localizada em quadrante superior direito, frequentemente associada a febre, náuseas, vômitos e alterações no exame físico com o sinal de Murphy. Além disso, a colecistite não tem achado de pneumoperitônio.\n\nQuanto à diverticulite aguda, geralmente ocorre em pacientes mais velhos com dor preferencialmente em quadrante inferior esquerdo (associada ao sigmoide), podendo apresentar defesa local no exame físico ou peritonite em casos avançados, porém o quadro clínico inicial é brando e não agudo. \n\nDessa forma, a alternativa correta é \"Úlcera gástrica perfurada\", devido à associação clínica clara (uso crônico de anti-inflamatório, dor abdominal súbita e difusa com sinais peritoneais exacerbados, pneumo e líquido livre intraperitoneal). As demais alternativas são afastadas por não se enquadrarem nas apresentações clínicas e radiológicas descritas.",
+      "scraped_at": "2025-11-05T18:38:01.175Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-320731",
+    "statement": "Menina de 7 anos e 6 meses é encaminhada ao ambulatório de pediatria porque sua família percebeu surgimento de broto mamário há cerca de 3 meses. O exame físico revela que seu estadiamento puberal é M2P1 e sua estatura está próxima ao escore Z +2 para a idade, com peso em escore Z 0. Um exame de radiografia simples de punho, solicitado pelo médico da atenção primária, mostra idade óssea compatível com 9 anos e 6 meses.\n\nConsiderando essa situação, assinale a alternativa que apresenta a principal hipótese diagnóstica, seguida de sua justificativa.",
+    "alternatives": [
+      {
+        "id": "hardworq-320731-alt-0",
+        "text": "Puberdade precoce central, pois o crescimento das mamas está associado a avanço da idade óssea.",
+        "isCorrect": true,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320731-alt-1",
+        "text": "Telarca isolada precoce, pois a diferença entre a idade óssea e a idade cronológica não é significativa.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320731-alt-2",
+        "text": "Telarca isolada precoce, pois o crescimento das mamas foi um achado isolado na investigação da paciente.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320731-alt-3",
+        "text": "Puberdade precoce central, pois, além da telarca, há também sinais de pubarca, o que sugere ativação do eixo hormonal.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-320731-alt-0",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "INEP2025REVALIDA",
+      "INEP REVALIDA",
+      "REVALIDA",
+      "DF",
+      "2025"
+    ],
+    "source": "INEP REVALIDA",
+    "year": 2025,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T18:38:01.175Z",
+    "updated_at": "2025-11-05T18:38:01.175Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 320731,
+      "hardworq_codigo": "INEP2025REVALIDA-3",
+      "prova_id": 3182,
+      "prova_codigo": "INEP2025REVALIDA",
+      "estado": "DF",
+      "grupo": "REVALIDA",
+      "professor_comment": "Essa questão busca avaliar o entendimento sobre os principais sinais clínicos e laboratoriais que permitem diferenciar puberdade precoce central da telarca isolada precoce. O examinador testa a capacidade de estabelecer associações clínicas coerentes e compreender a importância da idade óssea como um discriminador na avaliação dessas manifestações puberais.\n\nNo enunciado, temos o caso de uma menina com 7 anos e 6 meses que apresenta broto mamário há cerca de 3 meses. Ao exame físico, nota-se um desenvolvimento mamário estágio 2 (M2), sem presença de pelos pubianos (P1). Sua altura encontra-se perto do escore Z +2, indicando que seu crescimento está acima da média para sua idade cronológica. A radiografia realizada revela uma idade óssea avançada de 9 anos e 6 meses, ou seja, uma aceleração significativa, com dois anos de avanço em relação à idade cronológica real.\n\nDiante desse quadro clínico, devemos considerar o aspecto mais importante para diferenciar uma puberdade precoce central (PPC) de uma telarca isolada precoce: na PPC existe ativação precoce do eixo hipotálamo-hipófise-gônadas (eixo gonadotrófico), levando à produção aumentada de esteroides sexuais e causando não apenas desenvolvimento das mamas, mas também aceleração do crescimento com consequente avanço da idade óssea. Já na telarca isolada precoce, que ocorre por uma estimulação leve estrogênica sem ativação completa desse eixo hormonal, o achado de desenvolvimento das mamas é isolado e não costuma haver avanço significativo na idade óssea nem aumento na velocidade de crescimento. No presente caso, a aceleração da idade óssea é marcadamente relevante, o que sugere fortemente a existência de puberdade precoce central, mesmo sem caracteres sexuais secundários adicionais neste momento específico do exame (como pelos pubianos).\n\nA alternativa correta apresentada (\"Puberdade precoce central, pois o crescimento das mamas está associado a avanço da idade óssea\") encontra-se coerente com o raciocínio clínico exposto. A idade óssea adiantada é o critério determinante para considerar a ativação hormonal central do eixo hipotálamo-hipófise-gônadas, que não ocorre na telarca isolada.\n\nA primeira alternativa incorreta (segunda da questão: \"Telarca isolada precoce, pois a diferença entre a idade óssea e a idade cronológica não é significativa\") está errada, pois há evidente discrepância de 2 anos entre idade óssea e cronológica, considerada significativa e sugestiva de puberdade precoce central.\n\nA segunda alternativa incorreta (\"Telarca isolada precoce, pois o crescimento das mamas foi um achado isolado na investigação da paciente\") também está equivocada, já que o avanço da idade óssea observado exclui praticamente a possibilidade de telarca isolada precoce.\n\nA última alternativa incorreta (\"Puberdade precoce central, pois, além da telarca, há também sinais de pubarca, o que sugere ativação do eixo hormonal\") não é válida porque menciona presença simultânea de pubarca (P2 ou superior), o que não existe no relato clínico atual da paciente, cujo estadiamento puberal descrito na questão é P1 (ausência de pelos pubianos).",
+      "scraped_at": "2025-11-05T18:38:01.175Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-320732",
+    "statement": "Primigesta de 25 anos procura pronto atendimento de ginecologia e obstetrícia com história de atraso menstrual e resultado de beta-hCG quantitativo de 10.000 mlU/mL realizado há 2 dias. Não se recorda da data da última menstruação. Queixa-se de sangramento vaginal, em pequena quantidade, que já dura 3 dias. Ao exame especular, nota-se presença de sangramento vivo em pequena quantidade e, ao toque, percebe-se colo uterino fechado. Solicitado beta-hCG no dia da consulta, com resultado de 23.400 mlU/mL.\n\nA partir desses dados, assinale a alternativa que apresenta respectivamente o diagnóstico desse caso e a conduta adequada.",
+    "alternatives": [
+      {
+        "id": "hardworq-320732-alt-0",
+        "text": "Gestação ectópica; laparotomia.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320732-alt-1",
+        "text": "Ameaça de aborto; repouso relativo.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320732-alt-2",
+        "text": "Aborto incompleto; curetagem uterina.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320732-alt-3",
+        "text": "Aborto em evolução; acompanhamento clínico.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-320732-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "INEP2025REVALIDA",
+      "INEP REVALIDA",
+      "REVALIDA",
+      "DF",
+      "2025"
+    ],
+    "source": "INEP REVALIDA",
+    "year": 2025,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T18:38:01.175Z",
+    "updated_at": "2025-11-05T18:38:01.175Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 320732,
+      "hardworq_codigo": "INEP2025REVALIDA-4",
+      "prova_id": 3182,
+      "prova_codigo": "INEP2025REVALIDA",
+      "estado": "DF",
+      "grupo": "REVALIDA",
+      "professor_comment": "Questão clássica de hemorragia da primeira metade da gestação, sem grandes dificuldades!\n\nQuando há sangramento na primeira metade da gestação é essencial avaliar o beta-HCG quantitativo, ultrassonografia pélvica transvaginal e se o colo uterino está pérvio ou não, pois com esses dados é possível definir o diagnóstico. É possível estar diante de um quadro de abortamento, gestação ectópica ou moléstia trofoblástica gestacional. \n\nDiante de beta-HCG a partir de 1500-2000 mUI/mL é possível identificar imagem intrauterina de saco gestacional na ultrassonografia transvaginal, valor esse conhecido como valor discriminatório do beta-HCG. Diante de valores extremamente elevados, sangramento e eliminação de vesículas o raciocínio seria de moléstia trofoblástica gestacional. Além disso, em gestações evolutivas o hCG duplica a cada 48 horas. \n\nDiante da história de atraso menstrual e beta-hCG quantitativo de 10.000 mlU/mL com beta-hCG de 23.400 mUI/mL em 48 horas associado a sangramento vaginal e colo uterino fechado a hipótese diagnóstica é de ameaça de abortamento! A ultrassonografia irá confirmar a viabilidade da gestação. Diante de um quadro de abortamento, as principais alternativas diagnósticas são:\n\n- AMEAÇA DE ABORTAMENTO: dor e sangramento vaginal com colo impérvio ao toque vaginal. O tamanho uterino é compatível com a idade gestacional e ao realizar ultrassonografia podemos identificar saco gestacional a partir de 4 semanas (e níveis de hCG a partir de 1500-2000 mUI/mL), vesícula vitelina com 5 semanas e embrião com 6 semanas com batimentos a partir de 6-7 semanas. A conduta é expectante e sintomáticos (analgésicos). \n\n- COMPLETO: Ocorre eliminação completa do produto conceptual com redução ou parada do sangramento e das cólicas. A ecografia evidencia espessura endometrial <15-20mm dependendo da literatura. O colo uterino é impérvio e o útero de tamanho menor que o esperado. A conduta será expectante. \n\n- INCOMPLETO: Há expulsão parcial do produto conceptual, com manutenção do sangramento vaginal e redução do tamanho uterino em relação a idade gestacional. Ao exame clínico há dilatação cervical. A conduta é esvaziamento farmacológico ou mecânico, sendo realizado AMIU abaixo de 12 semanas e curetagem após eliminação do feto a partir de 12 semanas. \n\n- INEVITÁVEL: É um quadro incompatível com o prosseguimento da gestação. Ao exame clínico apresenta colo pérvio e sangramento vaginal. O tamanho uterino é compatível com a idade gestacional. A conduta será esvaziamento uterino, sendo que A PARTIR DE 12 SEMANAS é necessário misoprostol para esvaziamento e em seguida complementar com curetagem, e ABAIXO de 12 semanas proceder ao esvaziamento por AMIU.\n\n- RETIDO: É confirmado pela ultrassonografia com embrião sem batimento a partir de CCN 7mm e colo impérvio. A gestação anembrionada seria com saco gestacional a partir de 25mm sem embrião. O tratamento pode ser expectante por 2-4 semanas, podendo evoluir para abortamento completo. Pode ser ofertada conduta ativa com esvaziamento uterino de acordo com a idade gestacional. \n\nLogo, diante do quadro a melhor resposta é a alternativa (B).",
+      "scraped_at": "2025-11-05T18:38:01.175Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-320733",
+    "statement": "A médica de uma penitenciária avalia homem de 26 anos, com 98 kg, que relata compartilhar a cela com 12 pessoas (a qual comportaria no máximo 5). O paciente queixa-se de prurido cutâneo há 2 dias com piora no período noturno. Ao exame físico, a médica identifica pápulas eritematosas com escoriações em região de prega em braços e em região posterior de joelhos.\n\nCom relação a essa situação, assinale a alternativa que apresenta, respectivamente, a orientação médica e a prescrição medicamentosa adequadas.",
+    "alternatives": [
+      {
+        "id": "hardworq-320733-alt-0",
+        "text": "Restrição de visitas aos detentos e isolamento dos casos nas celas, sem permissão de saída; uso de ivermectina 6 mg. 01 comprimido via oral, repetindo em 15 dias, para todos da cela.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320733-alt-1",
+        "text": "Isolamento dos casos na enfermaria da unidade e lavagem frequente das roupas de cama, de banho e de vestuário com água quente (pelo menos a 30 °C); uso de sprays inseticidas e fumigantes.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320733-alt-2",
+        "text": "Realização de palestras educativas para os detentos sobre medidas preventivas e aumento do tempo de banho de sol; uso de fluconazol 150 mg por semana durante 1 mês, para todos da cela.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-320733-alt-3",
+        "text": "Incremento da frequência de limpeza geral da unidade e higienização adequada das roupas de uso pessoal, de cama e de banho; uso de ivermectina 6 mg. dose conforme o peso, repetindo em 15 dias, para todos da cela.",
+        "isCorrect": true,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-320733-alt-3",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "INEP2025REVALIDA",
+      "INEP REVALIDA",
+      "REVALIDA",
+      "DF",
+      "2025"
+    ],
+    "source": "INEP REVALIDA",
+    "year": 2025,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-05T18:38:01.175Z",
+    "updated_at": "2025-11-05T18:38:01.175Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 320733,
+      "hardworq_codigo": "INEP2025REVALIDA-5",
+      "prova_id": 3182,
+      "prova_codigo": "INEP2025REVALIDA",
+      "estado": "DF",
+      "grupo": "REVALIDA",
+      "professor_comment": "Nesta questão, o examinador objetiva avaliar o entendimento sobre diagnóstico, medidas gerais e medicamentos específicos indicados para o tratamento da escabiose em ambientes fechados e de convívio próximo, como é uma penitenciária. A escolha correta dependeria da precisão quanto às orientações não farmacológicas voltadas à higiene ambiental, controle de transmissão interpessoal e prescrição medicamentosa específica considerando critérios adequados de tratamento conforme o peso do paciente.\n\nO caso traz um homem jovem, preso em condições de confinamento inadequado (cela superlotada), apresentando há dois dias prurido cutâneo de piora noturna, associado a lesões cutâneas típicas descritas como pápulas eritematosas e escoriações localizadas predominantemente em pregas dos braços e na região posterior dos joelhos. Esse padrão de distribuição característico, juntamente com o quadro clínico descrito, sugere claramente o diagnóstico de escabiose.\n\nO raciocínio clínico que justifica a alternativa correta envolve reconhecer a escabiose como infestação causada pelo ácaro Sarcoptes scabiei, altamente infecciosa em ambientes de aglomeração. O tratamento adequado implica, além do uso de medicamentos antiparasitários específicos, medidas gerais essenciais, como incremento significativo da limpeza ambiental, higienização adequada e regular das roupas pessoais, roupas de cama e banho, visando reduzir a transmissão interpessoal e a re-infestação. Esses procedimentos são indispensáveis para resolução efetiva do quadro e evitar recidivas. A ivermectina oral, administrada com dose adequada ao peso do paciente (200 µg/kg), repetindo-se após intervalo de 7 a 15 dias para garantir erradicação completa, é considerada o tratamento medicamentoso adequado atualmente, particularmente em surtos institucionais em grupos fechados como presídios.\n\nAs outras alternativas estão inadequadas por diversos aspectos: a primeira opção sugere restrição de visitas e isolamento rigoroso em cela sem saída, medidas que não se justificam para a escabiose e não são práticas recomendadas - além disso, prescreve ivermectina em dose única fixa de um comprimido (6 mg), sem individualizar considerando peso corporal, tornando-a insuficiente para o tratamento adequado. A segunda alternativa propõe inadequadamente sprays inseticidas e fumigantes, que não têm indicação na escabiose e aumentam o risco de toxicidade, embora lavagem frequente das roupas com água quente seja parte correta do manejo. A terceira opção indica erroneamente fluconazol (um antifúngico sem ação alguma sobre o ácaro Sarcoptes scabiei) e sugere aumento do banho de sol, medida irrelevante para o tratamento desta parasitose.\n\nPortanto, a assertiva correta envolve o aumento rigoroso das medidas de higienização da unidade prisional e das roupas dos detentos, combinadas com tratamento medicamentoso adequado de ivermectina oral ajustada conforme o peso corporal, repetida adequadamente em 15 dias, para todos os indivíduos expostos.",
+      "scraped_at": "2025-11-05T18:38:01.175Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  }
+]

@@ -1,5 +1,3 @@
-import { UserRecord } from 'firebase-admin/auth';
-
 export enum MFAType {
   SMS = 'SMS',
   EMAIL = 'EMAIL',
@@ -26,15 +24,29 @@ export interface MFASettings {
       enabled: boolean;
       verified: boolean;
       lastVerified?: Date;
+      secret?: string;
+      backupCodes?: string[];
     };
   };
 }
 
-export interface AuthUser extends UserRecord {
-  mfaSettings?: MFASettings;
-  lastLogin?: Date;
-  failedLoginAttempts?: number;
-  lockedUntil?: Date;
+export interface AuthUser {
+  uid: string;
+  email?: string;
+  email_verified?: boolean;
+  disabled?: boolean;
+  mfa_settings?: MFASettings;
+  last_login?: Date;
+  failed_login_attempts?: number;
+  locked_until?: Date;
+  display_name?: string;
+  photo_url?: string;
+  phone_number?: string;
+  metadata?: {
+    creation_time?: string;
+    last_sign_in_time?: string;
+  };
+  toJSON(): any;
 }
 
 export interface LoginRequest {

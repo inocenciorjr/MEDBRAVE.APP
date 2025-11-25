@@ -12,7 +12,7 @@ export * from './types';
 export * from './interfaces/IAuditLogService';
 
 // Exportar implementações
-export { FirebaseAuditLogService } from './FirebaseAuditLogService';
+export { SupabaseAuditLogService } from '../../infra/audit/supabase/SupabaseAuditLogService';
 
 // Exportar controladores
 export { AuditLogController } from './controllers/AuditLogController';
@@ -27,7 +27,10 @@ export { createAuditLogModule } from './factory/createAuditLogModule';
 export * from './validators/auditLogValidators';
 
 // Exportar repositórios
-export { IAuditLogRepository, FirebaseAuditLogRepository } from './repositories/AuditLogRepository';
+export {
+  IAuditLogRepository,
+  FirebaseAuditLogRepository,
+} from './repositories/AuditLogRepository';
 
 // Exportar casos de uso
 export * from './use-cases';

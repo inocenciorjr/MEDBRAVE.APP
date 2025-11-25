@@ -1,7 +1,10 @@
 import { Request, Response } from 'express';
-import { Timestamp } from 'firebase-admin/firestore';
 import { IAchievementService } from '../interfaces/IAchievementService';
-import { AchievementCategory, AchievementRarity, AchievementStatus } from '../types';
+import {
+  AchievementCategory,
+  AchievementRarity,
+  AchievementStatus,
+} from '../types';
 import { logger } from '../../../utils/logger';
 
 /**
@@ -17,27 +20,33 @@ export class AchievementController {
   async getAllAchievements(req: Request, res: Response): Promise<void> {
     try {
       const { category, rarity, tags, search, limit, offset } = req.query;
-      
+
       const filters = {
         categories: category ? [category as AchievementCategory] : undefined,
         rarities: rarity ? [rarity as AchievementRarity] : undefined,
         tags: tags ? (tags as string).split(',') : undefined,
         searchQuery: search as string,
         limit: limit ? parseInt(limit as string) : undefined,
-        offset: offset ? parseInt(offset as string) : undefined
+        offset: offset ? parseInt(offset as string) : undefined,
       };
 
-      const achievements = await this.achievementService.getAllAchievements(filters);
-      
+      const achievements =
+        await this.achievementService.getAllAchievements(filters);
+
       res.status(200).json({
         success: true,
-        data: achievements
+        data: achievements,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getAllAchievements', 'Erro ao buscar conquistas', error);
+      logger.error(
+        'AchievementController',
+        'getAllAchievements',
+        'Erro ao buscar conquistas',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -49,26 +58,31 @@ export class AchievementController {
   async getAchievementById(req: Request, res: Response): Promise<void> {
     try {
       const { id } = req.params;
-      
+
       const achievement = await this.achievementService.getAchievementById(id);
-      
+
       if (!achievement) {
         res.status(404).json({
           success: false,
-          error: 'Conquista não encontrada'
+          error: 'Conquista não encontrada',
         });
         return;
       }
 
       res.status(200).json({
         success: true,
-        data: achievement
+        data: achievement,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getAchievementById', 'Erro ao buscar conquista', error);
+      logger.error(
+        'AchievementController',
+        'getAchievementById',
+        'Erro ao buscar conquista',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -81,24 +95,30 @@ export class AchievementController {
     try {
       const { userId } = req.params;
       const { status, category, rarity } = req.query;
-      
+
       const filters = {
         statuses: status ? [status as AchievementStatus] : undefined,
         categories: category ? [category as AchievementCategory] : undefined,
-        rarities: rarity ? [rarity as AchievementRarity] : undefined
+        rarities: rarity ? [rarity as AchievementRarity] : undefined,
       };
 
-      const userAchievements = await this.achievementService.getUserAchievements(userId, filters);
-      
+      const userAchievements =
+        await this.achievementService.getUserAchievements(userId, filters);
+
       res.status(200).json({
         success: true,
-        data: userAchievements
+        data: userAchievements,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getUserAchievements', 'Erro ao buscar conquistas do usuário', error);
+      logger.error(
+        'AchievementController',
+        'getUserAchievements',
+        'Erro ao buscar conquistas do usuário',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -110,18 +130,24 @@ export class AchievementController {
   async getUserAchievementStats(req: Request, res: Response): Promise<void> {
     try {
       const { userId } = req.params;
-      
-      const stats = await this.achievementService.getUserAchievementStats(userId);
-      
+
+      const stats =
+        await this.achievementService.getUserAchievementStats(userId);
+
       res.status(200).json({
         success: true,
-        data: stats
+        data: stats,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getUserAchievementStats', 'Erro ao buscar estatísticas', error);
+      logger.error(
+        'AchievementController',
+        'getUserAchievementStats',
+        'Erro ao buscar estatísticas',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -133,18 +159,26 @@ export class AchievementController {
   async collectRewards(req: Request, res: Response): Promise<void> {
     try {
       const { userId, achievementId } = req.params;
-      
-      const result = await this.achievementService.collectRewards(userId, achievementId);
-      
+
+      const result = await this.achievementService.collectRewards(
+        userId,
+        achievementId,
+      );
+
       res.status(200).json({
         success: true,
-        data: result
+        data: result,
       });
     } catch (error) {
-      logger.error('AchievementController', 'collectRewards', 'Erro ao coletar recompensas', error);
+      logger.error(
+        'AchievementController',
+        'collectRewards',
+        'Erro ao coletar recompensas',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -156,18 +190,24 @@ export class AchievementController {
   async getPendingRewards(req: Request, res: Response): Promise<void> {
     try {
       const { userId } = req.params;
-      
-      const pendingRewards = await this.achievementService.getPendingRewards(userId);
-      
+
+      const pendingRewards =
+        await this.achievementService.getPendingRewards(userId);
+
       res.status(200).json({
         success: true,
-        data: pendingRewards
+        data: pendingRewards,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getPendingRewards', 'Erro ao buscar recompensas pendentes', error);
+      logger.error(
+        'AchievementController',
+        'getPendingRewards',
+        'Erro ao buscar recompensas pendentes',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -179,20 +219,25 @@ export class AchievementController {
   async getGlobalLeaderboard(req: Request, res: Response): Promise<void> {
     try {
       const { limit } = req.query;
-      
+
       const leaderboard = await this.achievementService.getGlobalLeaderboard(
-        limit ? parseInt(limit as string) : 100
+        limit ? parseInt(limit as string) : 100,
       );
-      
+
       res.status(200).json({
         success: true,
-        data: leaderboard
+        data: leaderboard,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getGlobalLeaderboard', 'Erro ao buscar leaderboard', error);
+      logger.error(
+        'AchievementController',
+        'getGlobalLeaderboard',
+        'Erro ao buscar leaderboard',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -205,21 +250,26 @@ export class AchievementController {
     try {
       const { category } = req.params;
       const { limit } = req.query;
-      
+
       const leaderboard = await this.achievementService.getCategoryLeaderboard(
         category as AchievementCategory,
-        limit ? parseInt(limit as string) : 50
+        limit ? parseInt(limit as string) : 50,
       );
-      
+
       res.status(200).json({
         success: true,
-        data: leaderboard
+        data: leaderboard,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getCategoryLeaderboard', 'Erro ao buscar leaderboard da categoria', error);
+      logger.error(
+        'AchievementController',
+        'getCategoryLeaderboard',
+        'Erro ao buscar leaderboard da categoria',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -231,20 +281,25 @@ export class AchievementController {
   async getWeeklyLeaderboard(req: Request, res: Response): Promise<void> {
     try {
       const { limit } = req.query;
-      
+
       const leaderboard = await this.achievementService.getWeeklyLeaderboard(
-        limit ? parseInt(limit as string) : 50
+        limit ? parseInt(limit as string) : 50,
       );
-      
+
       res.status(200).json({
         success: true,
-        data: leaderboard
+        data: leaderboard,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getWeeklyLeaderboard', 'Erro ao buscar leaderboard semanal', error);
+      logger.error(
+        'AchievementController',
+        'getWeeklyLeaderboard',
+        'Erro ao buscar leaderboard semanal',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -256,18 +311,23 @@ export class AchievementController {
   async getUserRanking(req: Request, res: Response): Promise<void> {
     try {
       const { userId } = req.params;
-      
+
       const ranking = await this.achievementService.getUserRanking(userId);
-      
+
       res.status(200).json({
         success: true,
-        data: ranking
+        data: ranking,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getUserRanking', 'Erro ao buscar ranking do usuário', error);
+      logger.error(
+        'AchievementController',
+        'getUserRanking',
+        'Erro ao buscar ranking do usuário',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -280,21 +340,26 @@ export class AchievementController {
     try {
       const { userId } = req.params;
       const { includeRead } = req.query;
-      
+
       const notifications = await this.achievementService.getUserNotifications(
         userId,
-        includeRead === 'true'
+        includeRead === 'true',
       );
-      
+
       res.status(200).json({
         success: true,
-        data: notifications
+        data: notifications,
       });
     } catch (error) {
-      logger.error('AchievementController', 'getUserNotifications', 'Erro ao buscar notificações', error);
+      logger.error(
+        'AchievementController',
+        'getUserNotifications',
+        'Erro ao buscar notificações',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -306,18 +371,24 @@ export class AchievementController {
   async markNotificationAsRead(req: Request, res: Response): Promise<void> {
     try {
       const { notificationId } = req.params;
-      
-      const success = await this.achievementService.markNotificationAsRead(notificationId);
-      
+
+      const success =
+        await this.achievementService.markNotificationAsRead(notificationId);
+
       res.status(200).json({
         success,
-        data: { marked: success }
+        data: { marked: success },
       });
     } catch (error) {
-      logger.error('AchievementController', 'markNotificationAsRead', 'Erro ao marcar notificação', error);
+      logger.error(
+        'AchievementController',
+        'markNotificationAsRead',
+        'Erro ao marcar notificação',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -329,18 +400,24 @@ export class AchievementController {
   async markAllNotificationsAsRead(req: Request, res: Response): Promise<void> {
     try {
       const { userId } = req.params;
-      
-      const count = await this.achievementService.markAllNotificationsAsRead(userId);
-      
+
+      const count =
+        await this.achievementService.markAllNotificationsAsRead(userId);
+
       res.status(200).json({
         success: true,
-        data: { markedCount: count }
+        data: { markedCount: count },
       });
     } catch (error) {
-      logger.error('AchievementController', 'markAllNotificationsAsRead', 'Erro ao marcar todas as notificações', error);
+      logger.error(
+        'AchievementController',
+        'markAllNotificationsAsRead',
+        'Erro ao marcar todas as notificações',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -349,21 +426,30 @@ export class AchievementController {
    * GET /api/achievements/user/:userId/suggestions
    * Gera sugestões de conquistas para o usuário
    */
-  async generateAchievementSuggestions(req: Request, res: Response): Promise<void> {
+  async generateAchievementSuggestions(
+    req: Request,
+    res: Response,
+  ): Promise<void> {
     try {
       const { userId } = req.params;
-      
-      const suggestions = await this.achievementService.generateAchievementSuggestions(userId);
-      
+
+      const suggestions =
+        await this.achievementService.generateAchievementSuggestions(userId);
+
       res.status(200).json({
         success: true,
-        data: suggestions
+        data: suggestions,
       });
     } catch (error) {
-      logger.error('AchievementController', 'generateAchievementSuggestions', 'Erro ao gerar sugestões', error);
+      logger.error(
+        'AchievementController',
+        'generateAchievementSuggestions',
+        'Erro ao gerar sugestões',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -372,21 +458,30 @@ export class AchievementController {
    * GET /api/achievements/user/:userId/patterns
    * Analisa padrões de conquistas do usuário
    */
-  async analyzeUserAchievementPatterns(req: Request, res: Response): Promise<void> {
+  async analyzeUserAchievementPatterns(
+    req: Request,
+    res: Response,
+  ): Promise<void> {
     try {
       const { userId } = req.params;
-      
-      const patterns = await this.achievementService.analyzeUserAchievementPatterns(userId);
-      
+
+      const patterns =
+        await this.achievementService.analyzeUserAchievementPatterns(userId);
+
       res.status(200).json({
         success: true,
-        data: patterns
+        data: patterns,
       });
     } catch (error) {
-      logger.error('AchievementController', 'analyzeUserAchievementPatterns', 'Erro ao analisar padrões', error);
+      logger.error(
+        'AchievementController',
+        'analyzeUserAchievementPatterns',
+        'Erro ao analisar padrões',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -399,21 +494,26 @@ export class AchievementController {
     try {
       const { userId } = req.params;
       const { timeframe } = req.query;
-      
+
       const report = await this.achievementService.generateProgressReport(
         userId,
-        timeframe as string
+        timeframe as string,
       );
-      
+
       res.status(200).json({
         success: true,
-        data: report
+        data: report,
       });
     } catch (error) {
-      logger.error('AchievementController', 'generateProgressReport', 'Erro ao gerar relatório', error);
+      logger.error(
+        'AchievementController',
+        'generateProgressReport',
+        'Erro ao gerar relatório',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -425,11 +525,11 @@ export class AchievementController {
   async checkAchievements(req: Request, res: Response): Promise<void> {
     try {
       const { userId, eventType, eventData, triggerSource } = req.body;
-      
+
       if (!userId || !eventType) {
         res.status(400).json({
           success: false,
-          error: 'userId e eventType são obrigatórios'
+          error: 'userId e eventType são obrigatórios',
         });
         return;
       }
@@ -438,19 +538,24 @@ export class AchievementController {
         userId,
         eventType,
         eventData: eventData || {},
-        timestamp: Timestamp.now(),
-        triggerSource: triggerSource || 'manual'
+        timestamp: new Date().toISOString(),
+        triggerSource: triggerSource || 'manual',
       });
-      
+
       res.status(200).json({
         success: true,
-        data: result
+        data: result,
       });
     } catch (error) {
-      logger.error('AchievementController', 'checkAchievements', 'Erro ao verificar conquistas', error);
+      logger.error(
+        'AchievementController',
+        'checkAchievements',
+        'Erro ao verificar conquistas',
+        error,
+      );
       res.status(500).json({
         success: false,
-        error: 'Erro interno do servidor'
+        error: 'Erro interno do servidor',
       });
     }
   }
@@ -464,12 +569,12 @@ export class AchievementController {
       const config = await this.achievementService.getConfig();
       res.json({
         success: true,
-        data: config
+        data: config,
       });
     } catch (error) {
       res.status(500).json({
         success: false,
-        error: error instanceof Error ? error.message : 'Erro desconhecido'
+        error: error instanceof Error ? error.message : 'Erro desconhecido',
       });
     }
   }
@@ -483,13 +588,13 @@ export class AchievementController {
       const metrics = await this.achievementService.getAdminMetrics();
       res.json({
         success: true,
-        data: metrics
+        data: metrics,
       });
     } catch (error) {
       res.status(500).json({
         success: false,
-        error: error instanceof Error ? error.message : 'Erro desconhecido'
+        error: error instanceof Error ? error.message : 'Erro desconhecido',
       });
     }
   }
-} 
+}

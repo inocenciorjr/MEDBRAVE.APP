@@ -9,7 +9,11 @@ export class ErrorWithCode extends Error {
     Object.setPrototypeOf(this, ErrorWithCode.prototype);
   }
 
-  static fromError(error: Error, code: string, details?: Record<string, any>): ErrorWithCode {
+  static fromError(
+    error: Error,
+    code: string,
+    details?: Record<string, any>,
+  ): ErrorWithCode {
     const errorWithCode = new ErrorWithCode(code, error.message, details);
     errorWithCode.stack = error.stack;
     return errorWithCode;

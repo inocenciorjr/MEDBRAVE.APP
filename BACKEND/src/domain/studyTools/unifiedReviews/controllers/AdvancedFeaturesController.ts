@@ -1,8 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { DailyLimitsService } from '../services/DailyLimitsService';
-import { DayCompletionService, CompletionType } from '../services/DayCompletionService';
-import { ReviewRemovalService, RemovalReason } from '../services/ReviewRemovalService';
-import { UnifiedContentType } from '../types';
+import { DailyLimitsService } from '../services';
+import { DayCompletionService, CompletionType } from '../services';
+ 
 import AppError from '../../../../utils/AppError';
 
 /**
@@ -11,16 +10,13 @@ import AppError from '../../../../utils/AppError';
 export class AdvancedFeaturesController {
   private dailyLimitsService: DailyLimitsService;
   private dayCompletionService: DayCompletionService;
-  private reviewRemovalService: ReviewRemovalService;
 
   constructor(
     dailyLimitsService: DailyLimitsService,
     dayCompletionService: DayCompletionService,
-    reviewRemovalService: ReviewRemovalService
   ) {
     this.dailyLimitsService = dailyLimitsService;
     this.dayCompletionService = dayCompletionService;
-    this.reviewRemovalService = reviewRemovalService;
   }
 
   /**
@@ -28,7 +24,7 @@ export class AdvancedFeaturesController {
    */
   private getAuthenticatedUserId(req: Request): string {
     if (!req.user || !req.user.id) {
-      throw new AppError(401, 'Usuário não autenticado');
+      throw new AppError('Usuário não autenticado', 401);
     }
     return req.user.id;
   }
@@ -39,12 +35,16 @@ export class AdvancedFeaturesController {
    * GET /advanced/daily-limits
    * Obter limites diários do usuário
    */
-  getDailyLimits = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getDailyLimits = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      
-      const limits = await this.dailyLimitsService.getUserDailyLimits(userId);
-      
+
+      const limits = await this.dailyLimitsService.getDailyLimits(userId);
+
       res.status(200).json({
         data: limits,
       });
@@ -57,27 +57,43 @@ export class AdvancedFeaturesController {
    * PUT /advanced/daily-limits
    * Definir/atualizar limites diários
    */
-  setDailyLimits = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  setDailyLimits = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      const { maxQuestions, maxFlashcards, maxErrorNotebook, maxTotalItems, resetHour, timezone } = req.body;
+      const {
+        maxDailyReviews,
+        maxDailyNewItems,
+        maxDailyTimeMinutes,
+        enableAutoStop,
+        enableSmartLimits,
+      } = req.body;
 
-      // Validar dados
-      if (!maxQuestions || !maxFlashcards || !maxErrorNotebook || !maxTotalItems) {
-        throw new AppError('Todos os limites são obrigatórios', 400);
+      if (
+        maxDailyReviews === undefined ||
+        maxDailyNewItems === undefined ||
+        maxDailyTimeMinutes === undefined
+      ) {
+        throw new AppError('Limites diários são obrigatórios', 400);
       }
 
-      if (maxQuestions < 1 || maxFlashcards < 1 || maxErrorNotebook < 1 || maxTotalItems < 1) {
-        throw new AppError('Limites devem ser maiores que zero', 400);
+      if (
+        maxDailyReviews < 1 ||
+        maxDailyNewItems < 0 ||
+        maxDailyTimeMinutes < 1
+      ) {
+        throw new AppError('Valores inválidos para limites diários', 400);
       }
 
-      const limits = await this.dailyLimitsService.setUserDailyLimits(userId, {
-        maxQuestions,
-        maxFlashcards,
-        maxErrorNotebook,
-        maxTotalItems,
-        resetHour,
-        timezone,
+      const limits = await this.dailyLimitsService.setDailyLimits(userId, {
+        maxDailyReviews,
+        maxDailyNewItems,
+        maxDailyTimeMinutes,
+        enableAutoStop: !!enableAutoStop,
+        enableSmartLimits: !!enableSmartLimits,
       });
 
       res.status(200).json({
@@ -93,12 +109,17 @@ export class AdvancedFeaturesController {
    * GET /advanced/daily-limits/status
    * Obter status atual dos limites diários
    */
-  getDailyLimitStatus = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getDailyLimitStatus = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      
-      const status = await this.dailyLimitsService.checkDailyLimitStatus(userId);
-      
+
+      const status =
+        await this.dailyLimitsService.checkDailyLimitStatus(userId);
+
       res.status(200).json({
         data: status,
       });
@@ -111,12 +132,16 @@ export class AdvancedFeaturesController {
    * GET /advanced/daily-limits/progress
    * Obter progresso diário atual
    */
-  getTodayProgress = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getTodayProgress = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      
-      const progress = await this.dailyLimitsService.getTodayProgress(userId);
-      
+
+      const progress = await this.dailyLimitsService.getDailyProgress(userId);
+
       res.status(200).json({
         data: progress,
       });
@@ -131,23 +156,31 @@ export class AdvancedFeaturesController {
    * POST /advanced/day-completion/complete
    * Marcar dia como completo
    */
-  completeDayStudy = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  completeDayStudy = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      const { 
-        completionType, 
-        totalItemsReviewed, 
-        questionsReviewed, 
-        flashcardsReviewed, 
+      const {
+        completionType,
+        totalItemsReviewed,
+        questionsReviewed,
+        flashcardsReviewed,
         errorNotebookReviewed,
         totalTimeMinutes,
         averageResponseTimeSeconds,
         accuracyPercentage,
-        manualNotes
+        manualNotes,
       } = req.body;
 
       // Validar dados obrigatórios
-      if (!completionType || totalItemsReviewed === undefined || totalTimeMinutes === undefined) {
+      if (
+        !completionType ||
+        totalItemsReviewed === undefined ||
+        totalTimeMinutes === undefined
+      ) {
         throw new AppError('Dados de completação incompletos', 400);
       }
 
@@ -168,7 +201,7 @@ export class AdvancedFeaturesController {
           averageResponseTimeSeconds,
           accuracyPercentage,
         },
-        manualNotes
+        manualNotes,
       );
 
       res.status(201).json({
@@ -184,12 +217,17 @@ export class AdvancedFeaturesController {
    * GET /advanced/day-completion/today
    * Obter completação de hoje (se existir)
    */
-  getTodayCompletion = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getTodayCompletion = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      
-      const completion = await this.dayCompletionService.getTodayCompletion(userId);
-      
+
+      const completion =
+        await this.dayCompletionService.getTodayCompletion(userId);
+
       res.status(200).json({
         data: completion,
       });
@@ -202,12 +240,17 @@ export class AdvancedFeaturesController {
    * GET /advanced/day-completion/stats
    * Obter estatísticas de completação
    */
-  getCompletionStats = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getCompletionStats = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
-      
-      const stats = await this.dayCompletionService.getDayCompletionStats(userId);
-      
+
+      const stats =
+        await this.dayCompletionService.getDayCompletionStats(userId);
+
       res.status(200).json({
         data: stats,
       });
@@ -220,20 +263,31 @@ export class AdvancedFeaturesController {
    * POST /advanced/day-completion/suggest
    * Sugerir se o dia deve ser marcado como completo
    */
-  suggestDayCompletion = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  suggestDayCompletion = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
       const { itemsReviewed, timeSpent, accuracy } = req.body;
 
-      if (itemsReviewed === undefined || timeSpent === undefined || accuracy === undefined) {
+      if (
+        itemsReviewed === undefined ||
+        timeSpent === undefined ||
+        accuracy === undefined
+      ) {
         throw new AppError('Dados de estatísticas incompletos', 400);
       }
 
-      const suggestion = await this.dayCompletionService.suggestDayCompletion(userId, {
-        itemsReviewed,
-        timeSpent,
-        accuracy,
-      });
+      const suggestion = await this.dayCompletionService.suggestDayCompletion(
+        userId,
+        {
+          itemsReviewed,
+          timeSpent,
+          accuracy,
+        },
+      );
 
       res.status(200).json({
         data: suggestion,
@@ -247,7 +301,11 @@ export class AdvancedFeaturesController {
    * GET /advanced/day-completion/history
    * Obter histórico de completações
    */
-  getCompletionHistory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getCompletionHistory = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
       const { days } = req.query;
@@ -257,7 +315,10 @@ export class AdvancedFeaturesController {
         throw new AppError('Número de dias deve estar entre 1 e 365', 400);
       }
 
-      const history = await this.dayCompletionService.getCompletionHistory(userId, daysNumber);
+      const history = await this.dayCompletionService.getCompletionHistory(
+        userId,
+        daysNumber,
+      );
 
       res.status(200).json({
         data: history,
@@ -267,192 +328,17 @@ export class AdvancedFeaturesController {
     }
   };
 
-  // ===== REVIEW REMOVAL ENDPOINTS =====
 
-  /**
-   * DELETE /advanced/review-removal/:contentType/:contentId
-   * Remover item do sistema de revisões
-   */
-  removeFromReviewSystem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      const userId = this.getAuthenticatedUserId(req);
-      const { contentType, contentId } = req.params;
-      const { reason, notes } = req.body;
 
-      // Validar contentType
-      if (!Object.values(UnifiedContentType).includes(contentType as UnifiedContentType)) {
-        throw new AppError('Tipo de conteúdo inválido', 400);
-      }
 
-      // Validar reason
-      if (!reason || !Object.values(RemovalReason).includes(reason)) {
-        throw new AppError('Razão de remoção inválida', 400);
-      }
 
-      const removedItem = await this.reviewRemovalService.removeFromReviewSystem(
-        userId,
-        contentType as UnifiedContentType,
-        contentId,
-        reason as RemovalReason,
-        notes
-      );
 
-      res.status(200).json({
-        message: 'Item removido do sistema de revisões com sucesso',
-        data: removedItem,
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
 
-  /**
-   * POST /advanced/review-removal/bulk
-   * Remover múltiplos itens em lote
-   */
-  bulkRemoveFromReviewSystem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      const userId = this.getAuthenticatedUserId(req);
-      const { items } = req.body;
 
-      if (!Array.isArray(items) || items.length === 0) {
-        throw new AppError('Lista de itens é obrigatória', 400);
-      }
 
-      // Validar cada item
-      for (const item of items) {
-        if (!item.contentType || !item.contentId || !item.reason) {
-          throw new AppError('Dados incompletos para remoção em lote', 400);
-        }
-        
-        if (!Object.values(UnifiedContentType).includes(item.contentType)) {
-          throw new AppError(`Tipo de conteúdo inválido: ${item.contentType}`, 400);
-        }
-        
-        if (!Object.values(RemovalReason).includes(item.reason)) {
-          throw new AppError(`Razão de remoção inválida: ${item.reason}`, 400);
-        }
-      }
 
-      const result = await this.reviewRemovalService.bulkRemoveFromReviewSystem(userId, items);
-
-      res.status(200).json({
-        message: `Remoção em lote concluída: ${result.successfullyRemoved}/${result.totalRequested} itens removidos`,
-        data: result,
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /**
-   * POST /advanced/review-removal/restore/:removedItemId
-   * Restaurar item removido
-   */
-  restoreToReviewSystem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      const userId = this.getAuthenticatedUserId(req);
-      const { removedItemId } = req.params;
-
-      await this.reviewRemovalService.restoreToReviewSystem(userId, removedItemId);
-
-      res.status(200).json({
-        message: 'Item restaurado para o sistema de revisões com sucesso',
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /**
-   * GET /advanced/review-removal/removed
-   * Obter itens removidos
-   */
-  getRemovedItems = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      const userId = this.getAuthenticatedUserId(req);
-      const { contentType, reason, canRestoreOnly, limit, page } = req.query;
-
-      const options: any = {};
-      
-      if (contentType && Object.values(UnifiedContentType).includes(contentType as UnifiedContentType)) {
-        options.contentType = contentType as UnifiedContentType;
-      }
-      
-      if (reason && Object.values(RemovalReason).includes(reason as RemovalReason)) {
-        options.reason = reason as RemovalReason;
-      }
-      
-      if (canRestoreOnly === 'true') {
-        options.canRestoreOnly = true;
-      }
-      
-      if (limit) {
-        const limitNum = parseInt(limit as string);
-        if (!isNaN(limitNum) && limitNum > 0 && limitNum <= 100) {
-          options.limit = limitNum;
-        }
-      }
-      
-      if (page) {
-        const pageNum = parseInt(page as string);
-        if (!isNaN(pageNum) && pageNum > 0) {
-          options.page = pageNum;
-        }
-      }
-
-      const result = await this.reviewRemovalService.getRemovedItems(userId, options);
-
-      res.status(200).json({
-        data: result,
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
-
-  /**
-   * GET /advanced/review-removal/stats
-   * Obter estatísticas de remoção
-   */
-  getRemovalStats = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      const userId = this.getAuthenticatedUserId(req);
-      
-      const stats = await this.reviewRemovalService.getRemovalStats(userId);
-      
-      res.status(200).json({
-        data: stats,
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
 
   // ===== ADMIN ENDPOINTS =====
 
-  /**
-   * POST /advanced/admin/cleanup
-   * Limpeza automática de itens antigos (apenas para admins)
-   */
-  cleanupOldRemovedItems = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-      // TODO: Adicionar verificação de permissão de admin
-      const { daysOld } = req.body;
-      
-      const daysNumber = daysOld || 90;
-      if (daysNumber < 30) {
-        throw new AppError('Não é possível limpar itens com menos de 30 dias', 400);
-      }
 
-      const deletedCount = await this.reviewRemovalService.cleanupOldRemovedItems(daysNumber);
-
-      res.status(200).json({
-        message: `Limpeza concluída: ${deletedCount} itens removidos permanentemente`,
-        data: { deletedCount },
-      });
-    } catch (error) {
-      next(error);
-    }
-  };
 }

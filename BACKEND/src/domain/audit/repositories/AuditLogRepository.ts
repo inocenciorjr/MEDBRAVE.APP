@@ -1,4 +1,5 @@
-import { firestore } from 'firebase-admin';
+//
+import { SupabaseClient } from '@supabase/supabase-js';
 import { AdminAuditLog, AdminAction } from '../types';
 import {
   AuditLogFilterOptions,
@@ -24,81 +25,132 @@ export interface IAuditLogRepository {
  * Implementação do repositório de logs de auditoria usando Firebase
  */
 export class FirebaseAuditLogRepository implements IAuditLogRepository {
-  private db: firestore.Firestore;
-  private collection: string = 'audit_logs';
-
-  constructor(db: firestore.Firestore) {
-    this.db = db;
-  }
+  
+  constructor() {}
 
   /**
    * Registra uma ação no log de auditoria
    */
-  async logAction(action: AdminAction): Promise<void> {
-    const auditLog: AdminAuditLog = {
-      id: this.db.collection(this.collection).doc().id,
-      action,
-      createdAt: new Date(),
-    };
-
-    await this.db.collection(this.collection).doc(auditLog.id).set(auditLog);
+  async logAction(_action: AdminAction): Promise<void> {
+    throw new Error('FirebaseAuditLogRepository não suportado neste ambiente');
   }
 
   /**
    * Busca um log de auditoria pelo ID
    */
-  async getById(id: string): Promise<AdminAuditLog | null> {
-    const doc = await this.db.collection(this.collection).doc(id).get();
-
-    if (!doc.exists) {
-      return null;
-    }
-
-    return doc.data() as AdminAuditLog;
+  async getById(_id: string): Promise<AdminAuditLog | null> {
+    return null;
   }
 
   /**
    * Retorna logs de auditoria com filtros e paginação
    */
   async getAll(
+    _filter?: AuditLogFilterOptions,
+    pagination: AuditLogPaginationOptions = { page: 1, limit: 10 },
+  ): Promise<PaginatedAuditLogResult> {
+    return { logs: [], total: 0, page: pagination.page, limit: pagination.limit, hasMore: false };
+  }
+
+  /**
+   * Busca logs de auditoria por ID de usuário
+   */
+  async getByUserId(_userId: string): Promise<AdminAuditLog[]> {
+    return [];
+  }
+
+  /**
+   * Busca logs de auditoria por tipo de ação
+   */
+  async getByActionType(_actionType: string): Promise<AdminAuditLog[]> {
+    return [];
+  }
+}
+
+/**
+ * Implementação do repositório de logs de auditoria usando Supabase
+ */
+export class SupabaseAuditLogRepository implements IAuditLogRepository {
+  private client: SupabaseClient;
+  private tableName: string = 'audit_logs';
+
+  constructor(client: SupabaseClient) {
+    this.client = client;
+  }
+
+  async logAction(action: AdminAction): Promise<void> {
+    const auditLog: AdminAuditLog = {
+      id: crypto.randomUUID(),
+      action,
+      createdAt: new Date(),
+    };
+
+    const { error } = await this.client
+      .from(this.tableName)
+      .insert(auditLog);
+
+    if (error) {
+      throw new Error(`Erro ao registrar ação: ${error.message}`);
+    }
+  }
+
+  async getById(id: string): Promise<AdminAuditLog | null> {
+    const { data, error } = await this.client
+      .from(this.tableName)
+      .select('*')
+      .eq('id', id)
+      .single();
+
+    if (error) {
+      if (error.code === 'PGRST116') {
+        return null;
+      }
+      throw new Error(`Erro ao buscar log: ${error.message}`);
+    }
+
+    return data as AdminAuditLog;
+  }
+
+  async getAll(
     filter?: AuditLogFilterOptions,
     pagination: AuditLogPaginationOptions = { page: 1, limit: 10 },
   ): Promise<PaginatedAuditLogResult> {
-    let query = this.db.collection(this.collection).orderBy('createdAt', 'desc');
+    let query = this.client
+      .from(this.tableName)
+      .select('*', { count: 'exact' })
+      .order('createdAt', { ascending: false });
 
     // Aplicar filtros
     if (filter) {
       if (filter.actionType) {
-        query = query.where('action.type', '==', filter.actionType);
+        query = query.eq('action.type', filter.actionType);
       }
 
       if (filter.userId) {
-        query = query.where('action.performedBy', '==', filter.userId);
+        query = query.eq('action.performedBy', filter.userId);
       }
 
       if (filter.startDate) {
-        query = query.where('createdAt', '>=', filter.startDate);
+        query = query.gte('createdAt', filter.startDate.toISOString());
       }
 
       if (filter.endDate) {
-        query = query.where('createdAt', '<=', filter.endDate);
+        query = query.lte('createdAt', filter.endDate.toISOString());
       }
-
-      // Filtros de texto precisam ser feitos no cliente
-      // ou usando uma ferramenta de pesquisa mais avançada
     }
-
-    // Obter contagem total
-    const countSnapshot = await query.count().get();
-    const total = countSnapshot.data().count;
 
     // Aplicar paginação
     const offset = (pagination.page - 1) * pagination.limit;
-    query = query.limit(pagination.limit).offset(offset);
+    query = query.range(offset, offset + pagination.limit - 1);
 
-    // Executar consulta
-    const snapshot = await query.get();
-    const logs = snapshot.docs.map(doc => doc.data() as AdminAuditLog);
+    const { data, error, count } = await query;
+
+    if (error) {
+      throw new Error(`Erro ao buscar logs: ${error.message}`);
+    }
+
+    const total = count || 0;
+    const logs = data as AdminAuditLog[];
 
     return {
       logs,
@@ -109,29 +161,31 @@ export class FirebaseAuditLogRepository implements IAuditLogRepository {
     };
   }
 
-  /**
-   * Busca logs de auditoria por ID de usuário
-   */
   async getByUserId(userId: string): Promise<AdminAuditLog[]> {
-    const snapshot = await this.db
-      .collection(this.collection)
-      .where('action.performedBy', '==', userId)
-      .orderBy('createdAt', 'desc')
-      .get();
+    const { data, error } = await this.client
+      .from(this.tableName)
+      .select('*')
+      .eq('action.performedBy', userId)
+      .order('createdAt', { ascending: false });
 
-    return snapshot.docs.map(doc => doc.data() as AdminAuditLog);
+    if (error) {
+      throw new Error(`Erro ao buscar logs por usuário: ${error.message}`);
+    }
+
+    return data as AdminAuditLog[];
   }
 
-  /**
-   * Busca logs de auditoria por tipo de ação
-   */
   async getByActionType(actionType: string): Promise<AdminAuditLog[]> {
-    const snapshot = await this.db
-      .collection(this.collection)
-      .where('action.type', '==', actionType)
-      .orderBy('createdAt', 'desc')
-      .get();
+    const { data, error } = await this.client
+      .from(this.tableName)
+      .select('*')
+      .eq('action.type', actionType)
+      .order('createdAt', { ascending: false });
 
-    return snapshot.docs.map(doc => doc.data() as AdminAuditLog);
+    if (error) {
+      throw new Error(`Erro ao buscar logs por tipo: ${error.message}`);
+    }
+
+    return data as AdminAuditLog[];
   }
 }

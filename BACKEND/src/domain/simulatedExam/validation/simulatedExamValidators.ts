@@ -4,9 +4,13 @@ import { SimulatedExamDifficulty, SimulatedExamStatus } from '../types';
 // Schema para validar a criação de Simulado
 export const createSimulatedExamSchema = z.object({
   title: z.string().min(3, 'O título deve ter pelo menos 3 caracteres'),
-  description: z.string().min(10, 'A descrição deve ter pelo menos 10 caracteres'),
+  description: z
+    .string()
+    .min(10, 'A descrição deve ter pelo menos 10 caracteres'),
   instructions: z.string().optional(),
-  timeLimit: z.number().min(1, 'O tempo limite deve ser de pelo menos 1 minuto'),
+  timeLimit: z
+    .number()
+    .min(1, 'O tempo limite deve ser de pelo menos 1 minuto'),
   questions: z
     .array(
       z.object({
@@ -25,7 +29,11 @@ export const createSimulatedExamSchema = z.object({
   filterIds: z.array(z.string()).optional(),
   subFilterIds: z.array(z.string()).optional(),
   status: z
-    .enum([SimulatedExamStatus.DRAFT, SimulatedExamStatus.PUBLISHED, SimulatedExamStatus.ARCHIVED])
+    .enum([
+      SimulatedExamStatus.DRAFT,
+      SimulatedExamStatus.PUBLISHED,
+      SimulatedExamStatus.ARCHIVED,
+    ])
     .optional(),
   isPublic: z.boolean().optional(),
   tags: z.array(z.string()).optional(),
@@ -59,14 +67,18 @@ export const finishSimulatedExamSchema = z.object({
 export const listSimulatedExamsSchema = z.object({
   limit: z
     .string()
-    .transform(val => parseInt(val))
+    .transform((val) => parseInt(val))
     .optional(),
   page: z
     .string()
-    .transform(val => parseInt(val))
+    .transform((val) => parseInt(val))
     .optional(),
   status: z
-    .enum([SimulatedExamStatus.DRAFT, SimulatedExamStatus.PUBLISHED, SimulatedExamStatus.ARCHIVED])
+    .enum([
+      SimulatedExamStatus.DRAFT,
+      SimulatedExamStatus.PUBLISHED,
+      SimulatedExamStatus.ARCHIVED,
+    ])
     .optional(),
   difficulty: z
     .enum([
@@ -82,7 +94,7 @@ export const listSimulatedExamsSchema = z.object({
   tags: z.union([z.string(), z.array(z.string())]).optional(),
   isPublic: z
     .enum(['true', 'false'])
-    .transform(val => val === 'true')
+    .transform((val) => val === 'true')
     .optional(),
   query: z.string().optional(),
   startAfter: z.string().optional(),

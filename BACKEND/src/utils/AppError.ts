@@ -40,32 +40,62 @@ export default class AppError extends Error {
   }
 
   // Método estático para criar erros de validação (400)
-  static badRequest(message: string, code?: string, context?: Record<string, unknown>): AppError {
+  static badRequest(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
     return new AppError(message, 400, code || 'BAD_REQUEST', true, context);
   }
 
   // Método estático para criar erros de autenticação (401)
-  static unauthorized(message: string, code?: string, context?: Record<string, unknown>): AppError {
+  static unauthorized(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
     return new AppError(message, 401, code || 'UNAUTHORIZED', true, context);
   }
 
   // Método estático para criar erros de permissão (403)
-  static forbidden(message: string, code?: string, context?: Record<string, unknown>): AppError {
+  static forbidden(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
     return new AppError(message, 403, code || 'FORBIDDEN', true, context);
   }
 
   // Método estático para criar erros de recurso não encontrado (404)
-  static notFound(message: string, code?: string, context?: Record<string, unknown>): AppError {
+  static notFound(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
     return new AppError(message, 404, code || 'NOT_FOUND', true, context);
   }
 
   // Método estático para criar erros de conflito (409)
-  static conflict(message: string, code?: string, context?: Record<string, unknown>): AppError {
+  static conflict(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
     return new AppError(message, 409, code || 'CONFLICT', true, context);
   }
 
   // Método estático para criar erros internos (500)
-  static internal(message: string, code?: string, context?: Record<string, unknown>): AppError {
-    return new AppError(message, 500, code || 'INTERNAL_SERVER_ERROR', true, context);
+  static internal(
+    message: string,
+    code?: string,
+    context?: Record<string, unknown>,
+  ): AppError {
+    return new AppError(
+      message,
+      500,
+      code || 'INTERNAL_SERVER_ERROR',
+      true,
+      context,
+    );
   }
 }

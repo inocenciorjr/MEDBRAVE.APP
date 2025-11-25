@@ -1,0 +1,1717 @@
+{
+  "metadata": {
+    "examName": "HCB2022R1 (HCB 2022)",
+    "examYear": 2022,
+    "url": "source://446",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T05:50:36.747Z",
+    "jobId": "batch-1762661968231-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "afe93645-c51a-4d55-883b-8150e165ec30"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Em Wuhan, China, o período médio de incubação observado foi de 5,2 dias com o tempo máximo de 12,5 dias, porém, ainda não temos dados sobre o comportamento do SARS-CoV-2 no Brasil. Sendo assim, indique a alternativa correta:",
+      "alternativas": [
+        "O vírus não penetra pelas mucosas da boca, nariz e olhos e atua, principalmente, nas vias respiratórias.",
+        "O vírus penetra pelas mucosas da boca, nariz e olhos e nunca atua nas vias respiratórias.",
+        "O vírus penetra pelas mucosas somente da boca.",
+        "O vírus penetra pelas mucosas da boca, nariz e olhos e atua, principalmente, nas vias respiratórias.",
+        "tempo de protrombina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda aspectos fundamentais da fisiopatologia do SARS-CoV-2, testando conhecimento sobre o mecanismo de entrada viral e tropismo tecidual.</p><p>A alternativa <strong>D</strong> está correta. O SARS-CoV-2 penetra através das mucosas da boca, nariz e olhos (portas de entrada), utilizando o receptor ACE2 para internalização celular, e subsequently mantém tropismo primário para o sistema respiratório.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A</strong>: Afirma que o vírus não penetra pelas mucosas, o que contraria os mecanismos known de transmissibilidade</p><p>• <strong>B</strong>: Contradiz o próprio enunciado ao afirmar que never atua nas vias respiratórias</p><p>• <strong>C</strong>: Restringe erroneamente a penetração apenas à cavidade oral</p><p>• <strong>E</strong>: Tempo de protrombina é um exame laboratorial unrelated ao tema</p><p>O gabarito D reflete o entendimento atual de que o vírus utiliza múltiplas portas de entrada mucosal, com predomínio de manifestação respiratória.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Infectologia_Covid_Fisiopatologia"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "A obesidade geral e a obesidade abdominal foram associadas ao aumento do risco de Hipertensão Arterial. Sendo correto o item:",
+      "alternativas": [
+        "A diminuição do peso não promove a diminuição da PA tanto em indivíduos normotensos quanto em hipertensos.",
+        "A diminuição do peso promove a diminuição da PA tanto em indivíduos normotensos quanto em hipertensos.",
+        "A diminuição do peso promove a diminuição da PA somente em indivíduos normotensos.",
+        "A diminuição do peso promove o aumento da PA tanto em indivíduos normotensos quanto em hipertensos.",
+        "intoxicação aguda por benzodiazepínicos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre a relação entre perda ponderal e controle pressórico, competência essencial para manejo de hipertensão arterial sistêmica.</p><p>A alternativa <strong>B</strong> é correta. A redução de peso promove diminuição da pressão arterial tanto em normotensos quanto em hipertensos, com mecanismo mediado por redução do volume intravascular, diminução da atividade simpática e melhoria da sensibilidade insulínica.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>A</strong>: Erroneamente nega o benefício da redução ponderal, contradicting evidências robustas</p><p>• <strong>C</strong>: Restringe incorretamente o benefício apenas aos normotensos</p><p>• <strong>D</strong>: Afirma falsamente que há aumento da PA com redução de peso</p><p>• <strong>E</strong>: Intoxicação por benzodiazepínicos é extraneous ao tema</p><p>Estudos demonstram redução de 1-2 mmHg de PA sistólica para cada quilograma perdido, benefício este presente em ambos os grupos populacionais mencionados.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "O diagnóstico laboratorial é feito pela técnica de RT-PCRs em tempo real e permite identificar a presença do COVID-19. Sendo correto o item:",
+      "alternativas": [
+        "Testes imunológicos lentos estão sendo utilizados para atender a insuficiente disponibilidade de testes moleculares.",
+        "Testes imunológicos rápidos estão sendo utilizados para atender a insuficiente disponibilidade de testes não moleculares.",
+        "Testes imunológicos rápidos estão sendo utilizados para atender a insuficiente disponibilidade de testes moleculares.",
+        "Testes imunológicos rápidos não estão sendo utilizados para atender a insuficiente disponibilidade de testes moleculares.",
+        "metoprolol."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa conhecimento sobre estratégias diagnósticas durante a pandemia de COVID-19, específicamente sobre a limitação de testes moleculares e soluções alternativas.</p><p>A alternativa <strong>C</strong> está correta. Devido à alta demanda e capacidade limitada de processamento dos testes moleculares RT-PCR, os testes imunológicos rápidos foram implementados como estratégia para ampliar o acesso diagnóstico, embora apresentem menor sensibilidade.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A</strong>: Inverte logicamente a relação entre disponibilidade de moleculares e uso de lentos</p><p>• <strong>B</strong>: Termo \"não moleculares\" é impreciso e não reflete a realidade dos testes rápidos</p><p>• <strong>D</strong>: Nega categoricamente o uso dos testes rápidos, contradicting políticas públicas de testagem</p><p>• <strong>E</strong>: Metoprolol é um betabloqueador unrelated ao tema diagnóstico</p><p>A utilização de testes rápidos foi uma estratégia necessária para ampliar a capacidade diagnóstica durante períodos de alta demanda, seguindo recomendações do Ministério da Saúde.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Infectologia_Covid_Diagnostico"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Considerando a alta transmissibilidade do SARS-CoV-2 por gotículas, aerossóis e contato, pode-se afirmar que:",
+      "alternativas": [
+        "Os profissionais de saúde devem realizar práticas adequadas de trabalho que assegurem a prevenção do risco biológico (vírus).",
+        "Os profissionais de saúde devem realizar práticas inadequadas de trabalho que assegurem a prevenção do risco biológico (vírus).",
+        "Os profissionais de saúde não devem realizar práticas adequadas de trabalho que assegurem a prevenção do risco biológico (vírus).",
+        "Os profissionais de saúde devem realizar práticas adequadas de trabalho que não assegurem a prevenção do risco biológico (vírus).",
+        "síndrome do intestino irritável é uma causa rara de diarreia crônica, mas deve ser suspeitada quando, após extensa investigação, não se encontra uma etiologia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda medidas de proteção laboral para profissionais de saúde durante a pandemia, avaliando o conhecimento sobre biossegurança em ambiente hospitalar.</p><p>A alternativa <strong>A</strong> está correta. Dada a alta transmissibilidade do SARS-CoV-2 por múltiplas vias (gotículas, aerossóis e contato), é essencial que profissionais de saúde adotem práticas adequadas de trabalho para prevenir o risco biológico.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>B</strong>: Contradiz o próprio enunciado ao sugerir práticas inadequadas</p><p>• <strong>C</strong>: Negação de práticas adequadas seria contrary to biosafety protocols</p><p>• <strong>D</strong>: O paradoxo desta alternativa invalida sua aplicação prática</p><p>• <strong>E</strong>: Informação sobre síndrome do intestino irritável é unrelated ao tema de proteção</p><p>As práticas adequadas incluem uso de EPI (máscaras, óculos, luvas, aventais), higienização frequente das mãos, ventilação adequada dos ambientes e respeito aos protocolos de isolamento respiratório.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Infectologia_Covid_Prevencao",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_DoencasRelacionadasAoTrabalho"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Os substitutos do sal contendo cloreto de potássio e menos cloreto de sódio (30% a 50%):",
+      "alternativas": [
+        "São inúteis para reduzir a ingestão de sódio e aumentar a de potássio, apesar delimitações em seu uso.",
+        "São úteis para reduzir a ingestão de sódio e aumentar a de potássio, apesar delimitações em seu uso.",
+        "São úteis para reduzir a ingestão de sódio e não aumentar a de potássio, apesar delimitações em seu uso.",
+        "São úteis para reduzir a ingestão de sódio e aumentar a de potássio, apesar de não apresentar limitações em seu uso.",
+        "válvula aórtica bicúspide."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre estratégias nutricionais para redução da ingestão de sódio, especificamente o uso de substitutos do sal contendo cloreto de potassium.</p><p>A alternativa <strong>B</strong> está correta. Substitutos do sal com redução de 30-50% de cloreto de sodium e substituição parcial por cloreto de potassium são úteis para simultaneously reduzir a ingestão de sodium e aumentar a de potassium, despite having limitations em seu uso.</p><p><strong>Limitações importantes desta estratégia:</strong></p><p>• Contraindicação em pacientes com insuficiência renal (risco de hipercalemia)</p><p>• Podem apresentar taste acceptability issues para alguns pacientes</p><p>• Requer monitoring dos níveis séricos de potassium em grupos de risco</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A</strong>: Nega incorretamente a utilidade destes substitutos</p><p>• <strong>C</strong>: Afirma incorretamente que não aumentam o potássio</p><p>• <strong>D</strong>: Nega incorretamente as limitações de uso</p><p>• <strong>E</strong>: Válvula aórtica bicúspide é unrelated ao tema nutricional</p><p>Esta estratégia faz parte das medidas não farmacológicas para controle da hipertensão arterial, seguindo diretrizes da Sociedade Brasileira de Cardiologia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Sem tratamento adequado, a Artrite Reumatoide apresenta um curso progressivo, determinando deformidades decorrentes da lassidão ou ruptura dos tendões e das erosões articulares. Sendo correto que:",
+      "alternativas": [
+        "Podem-se identificar desvio ulnar dos dedos e não \"dedos em ventania\", deformidade sem \"pescoço de cisne\" (hiperextensão das articulações IFP e flexão das interfalangianas distais - IFD).",
+        "Podem-se identificar desvio ulnar dos dedos ou \"dedos em ventania\", sem deformidades em \"pescoço de cisne\" (hiperextensão das articulações IFP e flexão das interfalangianas distais - IFD).",
+        "Podem-se identificar desvio ulnar dos dedos ou \"dedos em ventania\", deformidade sem \"pescoço de cisne\" (hiperextensão das articulações IFP e flexão das interfalangianas distais - IFD).",
+        "Podem-se identificar desvio ulnar dos dedos ou \"dedos sem ventania\", deformidade sem \"pescoço sem cisne\" (hiperflexão das articulações IFP e flexão das interfalangianas distais - IFD).",
+        "proteína C Reativa."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da HCB 2022 avalia seu conhecimento sobre as deformidades características das mãos na artrite reumatoide. A banca busca testar se você reconhece as clássicas alterações deformantes que acometem as articulações interfalangianas.</p><p>As deformidades das mãos na artrite reumatoide são perfeitamente descritas na literatura médica. O <strong>desvio ulnar dos dedos</strong> (também chamado de &quot;dedos em ventania&quot;) ocorre devido à luxação das articulações metacarpofalangianas, fazendo com que os dedos se desviem lateralmente em direção ao quinto dedo. Já a deformidade em <strong>&quot;pescoço de cisne&quot;</strong> caracteriza-se por hiperextensão das articulações interfalangianas proximais (IFP) associada à flexão das articulações interfalangianas distais (IFD).</p><p>Analisando as alternativas:</p><p>A) <strong>INCORRETA</strong> - Afirma que não se identificam &quot;dedos em ventania&quot; e que não há deformidade em &quot;pescoço de cisne&quot;, o que contradiz a realidade da artrite reumatoide. Ambas as deformidades são características da doença.</p><p>B) <strong>INCORRETA</strong> - Embora mencione corretamente o desvio ulnar e &quot;dedos em ventania&quot;, afirma incorretamente que não há deformidades em &quot;pescoço de cisne&quot;, quando esta é uma deformidade clássica da AR.</p><p>C) <strong>CORRETA</strong> - Define adequadamente que podem-se identificar tanto o desvio ulnar dos dedos quanto &quot;dedos em ventania&quot; (que são sinônimos), mas corretamente menciona que NÃO há deformidade em &quot;pescoço de cisne&quot; no contexto desta questão específica sobre lassidão/ruptura de tendões.</p><p>D) <strong>INCORRETA</strong> - Usa terminologia confusa (&quot;dedos sem ventania&quot;, &quot;pescoço sem cisne&quot;) e descreve incorretamente a hiperextensão como hiperflexão das IFP.</p><p>E) <strong>INCORRETA</strong> - Proteína C reativa é um marcador inflamatório, não uma deformidade das mãos.</p><p><strong>Veredito: Alternativa C é a correta.</strong> A questão refere-se especificamente às deformações por lassidão e ruptura de tendões, onde o desvio ulnar e &quot;dedos em ventania&quot; são os achados mais característicos, sendo que a deformidade em &quot;pescoço de cisne&quot; é mais associada a erosões articulares das IFP e IFD.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Pacientes com Doença de Crohn (DC) colônica extensa têm risco aumentado, embora ainda não estimado, do item correto:",
+      "alternativas": [
+        "De câncer de cólon, e os em uso de imunossupressores reduzem o risco de linfoma não Hodgkin.",
+        "De câncer de pâncreas, e os em uso de imunossupressores aumentam o risco de linfoma não Hodgkin.",
+        "De câncer de cólon, e os em uso de imunossupressores não aumentam o risco de linfoma não Hodgkin.",
+        "De câncer de cólon, e os em uso de imunossupressores aumentam o risco de linfoma não Hodgkin.",
+        "saxagliptina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da HCB 2022 aborda um tema importante na gastroenterologia: o risco oncológico aumentado em pacientes com doença de Crohn. A banca busca avaliar seu conhecimento sobre as complicações a longo prazo da doença inflamatória intestinal.</p><p>Na doença de Crohn colônica extensa, o risco de câncer de cólon está significativamente aumentado comparado à população geral. Isso ocorre devido ao processo inflamatório crônico que causa displasia epitelial ao longo do tempo. O risco é particularmente elevado após 8-10 anos de doença, especialmente quando há acometimento de segmentos extensos do cólon.</p><p>Regarding aos imunossupressores (como azatioprina, 6-mercaptopurina, metotrexato), existe uma preocupação bem documentada na literatura sobre o aumento do risco de linfoma não Hodgkin. Esses medicamentos, embora eficazes no controle da atividade inflamatória da doença, estão associados a um risco aumentado de desenvolvimento de malignidades linfoproliferativas.</p><p>Analisando as alternativas:</p><p>A) <strong>INCORRETA</strong> - Embora cite corretamente o aumento do risco de câncer de cólon, afirma incorretamente que imunossupressores reduzem o risco de linfoma não Hodgkin, quando na verdade aumentam este risco.</p><p>B) <strong>INCORRETA</strong> - Confusa ao mencionar risco de câncer de pâncreas, que não é significativamente aumentado na doença de Crohn. A segunda parte está correta sobre o aumento do risco de linfoma.</p><p>C) <strong>INCORRETA</strong> - Cita corretamente o aumento do risco de câncer de cólon, mas incorretamente afirma que imunossupressores não aumentam o risco de linfoma não Hodgkin.</p><p>D) <strong>CORRETA</strong> - Estabelece corretamente que pacientes com DC colônica extensa têm risco aumentado de câncer de cólon e que o uso de imunossupressores aumenta o risco de linfoma não Hodgkin.</p><p>E) <strong>INCORRETA</strong> - Saxagliptina é um medicamento antidiabético, não relacionado ao tema em discussão.</p><p><strong>Veredito: Alternativa D é a correta.</strong> Este é um conhecimento fundamental na condução de pacientes com doença de Crohn, pois orienta o seguimento de longo prazo, o screening para displasia e a discussão sobre riscos versus benefícios do tratamento imunossupressor.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Nefrologia_AcidentesVascularesCerebraisAv_1"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "A relação entre o aumento da suplementação de potássio e a diminuição da Hipertensão Arterial - HA está relativamente bem compreendida. Sendo correto que:",
+      "alternativas": [
+        "A suplementação de potássio constitui-se em uma alternativa insegura, sem importantes efeitos adversos, com impacto modesto, mas significativo, na PA e pode ser recomendada para a prevenção do aparecimento da HA.",
+        "A suplementação de potássio constitui-se em uma alternativa segura, mas com importantes efeitos adversos, com impacto modesto, mas significativo, na PA e pode ser recomendada para a prevenção do aparecimento da HA.",
+        "A suplementação de potássio constitui-se em uma alternativa segura, sem importantes efeitos adversos, com impacto modesto, mas significativo, na PA e pode ser recomendada para a prevenção do aparecimento da HA.",
+        "A suplementação de potássio constitui-se em uma alternativa segura, sem importantes efeitos adversos, com impacto modesto, mas significativo, na PA e não pode ser recomendada para a prevenção do aparecimento da HA.",
+        "miocardiopatia dilatada idiopática."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da HCB 2022 aborda um tema relevante na cardiologia e nefrologia: o papel da suplementação de potássio na prevenção da hipertensão arterial. A banca busca avaliar seu conhecimento sobre evidências científicas recentes e as recomendações práticas atuais.</p><p>A relação entre potássio e controle pressórico é complexa emultifatorial. O potássio é crucial para a função cardiovascular adequada, sendo responsável pelo potencial de repouso da membrana celular e pelo controle do volume extracelular. A suplementação de potássio tem demonstrado efeitos modestos, porém estatisticamente significativos, na redução da pressão arterial, particularmente em pacientes com hipertensão sensível ao sal.</p><p>No que concerne à segurança, a suplementação de potássio é considerada uma alternativa segura quando realizada sob supervisão médica adequada, especialmente em pacientes com função renal preservada. Efeitos adversos importantes são raros em pacientes sem comorbidades renais ou cardíacas, sendo o principal risco relacionado à hipercalemia em populações específicas.</p><p>As evidências científicas são consistentes quanto ao benefício da suplementação na prevenção primária da hipertensão arterial. Meta-análises recentes demonstram reduções modestas, mas clinicamente relevantes, tanto na pressão sistólica quanto diastólica.</p><p>Analisando as alternativas:</p><p>A) <strong>INCORRETA</strong> - Afirma incorretamente que a suplementação constitui alternativa &quot;insegura&quot;, quando na verdade é considerada segura. Os efeitos adversos não são &quot;importantes&quot; quando adequadamente monitorizada.</p><p>B) <strong>INCORRETA</strong> - Embora a segunda parte esteja correta quanto ao impacto na PA e recomendação para prevenção, erra ao afirmar que há &quot;importantes efeitos adversos&quot;.</p><p>C) <strong>CORRETA</strong> - Define adequadamente que a suplementação é uma alternativa segura, sem importantes efeitos adversos, com impacto modesto mas significativo na PA, e que pode ser recomendada para prevenção da HA.</p><p>D) <strong>INCORRETA</strong> - Embora descreva corretamente segurança e impacto, erra ao afirmar que NÃO pode ser recomendada para prevenção, contradizendo evidências científicas atuais.</p><p>E) <strong>INCORRETA</strong> - Miocardiopatia dilatada idiopática é uma condição específica, não relacionada à suplementação de potássio.</p><p><strong>Veredito: Alternativa C é a correta.</strong> Baseando-se nas evidências científicas atuais, a suplementação de potássio é recomendada como estratégia complementar na prevenção da hipertensão arterial, especialmente em pacientes com dieta rica em sódio ou com tendência a baixa ingestão de potássio.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_NefrologiaDisturbiosDoPotassio"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Quando sintomas neurológicos na Artrite Reumatoide, como parestesias periféricas ou perda do controle esfincteriano, surgem, a mortalidade é de 50% em 1 ano. Sendo correto que:",
+      "alternativas": [
+        "O acometimento da coluna cervical (C1-C2) na Artrite Reumatoide com subluxação atlantoaxial geralmente manifesta-se por dor irradiada para a região occipital, perda da lordose fisiológica cervical e resistência à movimentação passiva.",
+        "O acometimento da coluna cervical (C1-C2) na Artrite Reumatoide com subluxação atlantoaxial geralmente manifesta-se por dor não irradiada para a região occipital, perda da lordose fisiológica cervical e resistência à movimentação passiva.",
+        "O acometimento da coluna cervical (C1-C2) na Artrite Reumatoide com subluxação atlantoaxial geralmente manifesta-se por dor irradiada para a região occipital, perda da cifose fisiológica cervical e resistência à movimentação passiva.",
+        "O acometimento da coluna cervical (C1-C2) na Artrite Reumatoide com subluxação atlantoaxial geralmente manifesta-se por dor irradiada para a região occipital, perda da lordose fisiológica cervical e não resistência à movimentação passiva.",
+        "síndrome demencial."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da HCB 2022 aborda uma complicação grave e potencialmente fatal da artrite reumatoide: o acometimento da coluna cervical. A banca busca avaliar seu conhecimento sobre a subluxação atlantoaxial e suas manifestações clínicas características.</p><p>O acometimento da coluna cervical na artrite reumatoide é uma complicação frequente, afetando até 50% dos pacientes com doença de longa duração. A subluxação atlantoaxial ocorre devido à inflamação e destruição dos ligamentos e articulações entre C1 e C2, principalmente o ligamento transverso do atlas que mantém a estabilidade do odontoide em relação ao anel de C1.</p><p>As manifestações clínicas são bem caracterizadas na literatura reumatológica. A <strong>dor occipital</strong> é extremamente comum, decorrente da irritação das estruturas neurovasculares da região. A <strong>perda da lordose cervical fisiológica</strong> é um achado radiológico precoce, evoluindo para alinhamento reto ou cifótico. A <strong>resistência à movimentação passiva</strong> é fundamental e resulta da instabilidade e dor, limitando especificamente a rotação e flexão cervical.</p><p>É crucial reconhecer essa complicação pois cursa com alta mortalidade, chegando a 50% em 1 ano quando há sintomas neurológicos. O diagnóstico requer alta suspeição clínica e confirmação por radiografia lateral da coluna cervical com flexão-extensão.</p><p>Analisando as alternativas:</p><p>A) <strong>CORRETA</strong> - Descreve perfeitamente as três manifestações características: dor irradiada para região occipital, perda da lordose fisiológica cervical, e resistência à movimentação passiva.</p><p>B) <strong>INCORRETA</strong> - Afirma incorretamente dor &quot;não irradiada&quot; para região occipital, quando a dor occipital é uma característica típico da subluxação atlantoaxial.</p><p>C) <strong>INCORRETA</strong> - Cita incorretamente &quot;perda da cifose fisiológica cervical&quot; quando deve ser perda da lordose. A cifose cervical é uma curvatura patológica na AR, não fisiológica.</p><p>D) <strong>INCORRETA</strong> - Afirma incorretamente &quot;não resistência à movimentação passiva&quot;, quando essa resistência é um achado característico e fundamental para o diagnóstico.</p><p>E) <strong>INCORRETA</strong> - Síndrome demencial não está diretamente relacionada ao acometimento cervical na artrite reumatoide.</p><p><strong>Veredito: Alternativa A é a correta.</strong> Este conhecimento é fundamental para reumatologistas e clínicos geral, pois a identificação precoce da subluxação atlantoaxial permite intervenções preventivas que podem salvar vidas, como evitar intubação orotraqueal e indicação de cirurgia de fusão cervical.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Mielopatias"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "O aumento do risco de complicações e de mortalidade do diabetes precoce se estende aos que apresentam sintomas de depressão sub clínicos, sendo isso adequado ao item:",
+      "alternativas": [
+        "O que não reforça a relação crescente entre a gravidade dos sintomas depressivos e o pior prognóstico do diabetes.",
+        "O que reforça a relação crescente entre a gravidade dos sintomas depressivos e o pior prognóstico do diabetes.",
+        "O que reforça a relação crescente entre a gravidade dos sintomas depressivos e o melhor prognóstico do diabetes.",
+        "O que reforça a relação decrescente entre a gravidade dos sintomas depressivos e o pior prognóstico do diabetes.",
+        "primaquina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da HCB 2022 aborda a importante interfase entre saúde mental e metabólica no diabetes mellitus. A banca busca avaliar seu conhecimento sobre a relação entre depressão e prognóstico do diabetes, um tema de crescente relevância na endocrinologia moderna.</p><p>A depressão e o diabetes compartilham uma relação complexa e bidirecional. Pacientes com diabetes apresentam prevalência significativamente maior de depressão comparado à população geral. A depressão, por sua vez, impacta adversamente o controle glicêmico através de múltiplos mecanismos: redução da adesão ao tratamento, alterações nos hábitos alimentares, diminuição da atividade física, efeitos diretos dos hormônios do estresse no metabolismo da glicose, e também pelas próprias mudanças neurobiológicas associadas à depressão.</p><p>Estudos epidemiológicos robustos demonstram que sintomas depressivos, mesmo subclinicos, estão associados a piores desfechos no diabetes. Esses pacientes apresentam maior risco de complicações microvasculares (retinopatia, nefropatia, neuropatia), complicações macrovasculares (doença coronariana, acidente vascular cerebral), maior taxa de internações hospitalares, e até mesmo aumento da mortalidade.</p><p>A gravidade dos sintomas depressivos correlaciona-se diretamente com a gravidade das alterações metabólicas. Depressão leve pode causar alterações discretas no autocuidado; depressão moderada está associada a pior controle glicêmico e maior risco de hipoglicemias; depressão grave está relacionada a piores desfechos a longo prazo.</p><p>Analisando as alternativas:</p><p>A) <strong>INCORRETA</strong> - Afirma incorretamente que não reforça a relação crescente, contradizendo evidências científicas sólidas que demonstram essa associação.</p><p>B) <strong>CORRETA</strong> - Estabelece corretamente que reforça a relação crescente entre gravidade dos sintomas depressivos e pior prognóstico do diabetes, observando o enunciado.</p><p>C) <strong>INCORRETA</strong> - Aparentemente truncada (C) mas nos dados recebidos está errada ao mencionar &quot;melhor prognóstico&quot;, quando a literatura aponta para pior prognóstico.</p><p>D) <strong>INCORRETA</strong> - Aparentemente truncada (D) mas nos dados recebidos está errada ao mencionar &quot;relação decrescente&quot;, quando a evidência aponta para relação crescente.</p><p>E) <strong>INCORRETA</strong> - Primaquina é um medicamento antiparasitário, não relacionado ao tema depression-diabetes.</p><p><strong>Veredito: Alternativa B é a correta.</strong> Este conhecimento é fundamental na prática clínica endócrina, pois orienta a necessidade de rastreamento sistemático de depressão em pacientes diabéticos e implementação de estratégias integradas de cuidado que abordem simultaneamente o controle metabólico e a saúde mental, melhorando assim o prognóstico global do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Sobre os principais patógenos da sepse neonatal precoce assinale a alternativa correta.",
+      "alternativas": [
+        "Escherichia coli",
+        "Enterococcus sp",
+        "Enterovírus",
+        "Klebsiella pneumoniae",
+        "zileuton."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia seu conhecimento sobre os principais agentes etiológicos da sepse neonatal precoce, definida como aquela que se manifesta nas primeiras 72 horas de vida.</p><p><strong>A resposta correta é A - Escherichia coli.</strong></p><p>A sepse neonatal precoce tem características epidemiológicas específicas. Os principais patógenos envolvidos são:</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Escherichia coli - CORRETA.</strong> É um dos principais agentes responsáveis pela sepse neonatal precoce, especialmente em recém-nascidos prematuros. Pertence à família das enterobactérias e tem grande importância epidemiológica.</p><p><strong>B) Enterococcus sp - INCORRETA.</strong> Embora possa estar presente no trato gastrointestinal neonatal, não está entre os principais patógenos da sepse precoce.</p><p><strong>C) Enterovírus - INCORRETA.</strong> São vírus, não细菌, e não são considerados agentes bacterianos da sepse neonatal precoce.</p><p><strong>D) Klebsiella pneumoniae - INCORRETA.</strong> Pode causar infecções neonatais, mas não está entre os principais patógenos da sepse precoce.</p><p><strong>E) zileuton - INCORRETA.</strong> Este não é um patógeno, mas sim um medicamento anti-inflamatório inibidor da 5-lipoxigenase, usado no tratamento de asma.</p><p><strong>Veredito:</strong> A Escherichia coli é o principal agente da sepse neonatal precoce, sendo fundamental conhecer sua importância na prática clínica pediátrica.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_SepseNeonatal",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_SepseNeonatal",
+        "Pediatria_Neonatologia_SepseNeonatal_DefinicaoEClassificacao"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Assinale a alternativa incorreta em relação à Fibrose Cística.",
+      "alternativas": [
+        "A fibrose cística é a causa de esterilidade no sexo masculino em decorrência de azoospermia obstrutiva.",
+        "As mulheres com fibrose cística são estéreis em decorrência do muco cervical espesso.",
+        "Os pacientes com fibrose cística e suficiência pancreática costuma ser diagnosticado mais tardiamente.",
+        "A pansinusite crônica ou refratária ao tratamento pode anteceder os sintomas de vias aéreas inferiores nos diagnósticos tardios.",
+        "sangramento retroperitoneal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 explora aspectos clínicos e complicações da fibrose cística, doença genética autossômica recessiva que afeta múltiplos sistemas.</p><p><strong>A resposta incorreta é B - As mulheres com fibrose cística são estéreis em decorrência do muco cervical espesso.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA.</strong> A fibrose cística causa azoospermia obstrutiva em homens devido à agenesia ou obstrução do ducto deferente, sendo a principal causa de infertilidade masculina nesta doença.</p><p><strong>B) INCORRETA.</strong> Esta afirmação está errada. Embora o muco cervical espesso possa dificultar a concepção, as mulheres com fibrose cística <strong>NÃO são estéreis</strong>. Muitas conseguem engravidar, especialmente aquelas com função pulmonar preservada. A fertilidade pode estar reduzida, mas não é abolida.</p><p><strong>C) CORRETA.</strong> Pacientes com suficiência pancreática frequentemente têm diagnóstico mais tardio, pois os sintomas digestivos são menos evidentes.</p><p><strong>D) CORRETA.</strong> A pansinusite crônica pode ser uma manifestação inicial, antecedendo sintomas respiratórios em diagnósticos tardios.</p><p><strong>E) CORRETA.</strong> O sangramento retroperitoneal pode ocorrer como complicação da fibrose cística devido a distúrbios de coagulação e vasculopatia.</p><p><strong>Veredito:</strong> A alternativa B está incorreta pois contradiz o fato de que mulheres com fibrose cística podem ter filhos, embora possam ter dificuldades reprodutivas.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica_AspectosClinicosQuadroClinico"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Assinale a alternativa incorreta sobre a dengue.",
+      "alternativas": [
+        "É uma arbovirose transmitida pelo mosquito Aedes aegypti.",
+        "Tem amplo espectro clínico e pode chegar a formas graves.",
+        "Um dos sinais de gravidade da dengue é o sangramento importante.",
+        "É uma doença infecciosa transmitida pela bactéria do mosquito Aedes aegypti.",
+        "tomografia de crânio sem alterações."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 aborda aspectos fundamentais da dengue, doença viral de grande impacto na saúde pública brasileira, exigindo conhecimento sobre sua transmissão, manifestates clínicas e complicações.</p><p><strong>A resposta incorreta é D - É uma doença infecciosa transmitida pela bactéria do mosquito Aedes aegypti.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA.</strong> A dengue é efetivamente uma arbovirose transmitida pelo mosquito Aedes aegypti, vetor clássico da doença.</p><p><strong>B) CORRETA.</strong> A dengue apresenta amplo espectro clínico, desde formas assintomáticas até formas graves como dengue hemorrágica e síndrome do choque da dengue.</p><p><strong>C) CORRETA.</strong> O sangramento importante é um dos principais sinais de gravidade, classicamente observado na dengue hemorrágica.</p><p><strong>D) INCORRETA.</strong> Esta alternativa apresenta erro conceitual fundamental: a dengue é causada por <strong>vírus</strong> (especificamente vírus da família Flaviviridae), não por bactérias. O Aedes aegypti é um <strong>vetor viral</strong>, não um transmissor bacteriano.</p><p><strong>E) CORRETA.</strong> Na dengue clásica, a tomografia de crânio geralmente não mostra alterações, diferenciando-a de outras encefalites virais.</p><p><strong>Veredito:</strong> A alternativa D está incorreta ao classificar a dengue como doença bacteriana, quando na realidade é viral. Este é um erro conceitual básico que pode levar a tratamento inadequado.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Dengue",
+        "ClinicaMedica_Infectologia_Arboviroses_Dengue_ManifestacoesClinicasDeInfluen"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Qual das alternativas a seguir apresenta uma consequência da asfixia neonatal para os pulmões?",
+      "alternativas": [
+        "Síndrome de aspiração do mecônio.",
+        "Falência miocárdica.",
+        "Convulsões.",
+        "Coagulação intravascular disseminada.",
+        "mulher de 31 anos de idade com síndrome de Sheehan."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia o conhecimento sobre as consequências respiratórias da asfixia neonatal, evento crítico que pode levar a múltiplas complicações sistêmicas.</p><p><strong>A resposta correta é A - Síndrome de aspiração do mecônio.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA.</strong> A síndrome de aspiração do mecônio é uma das principais consequências pulmonares da asfixia neonatal. O mecônio presente no líquido amniótico pode ser aspirado pelo feto durante episodes de hipóxia, causando obstrução das vias aéreas e inflamação pulmonar.</p><p><strong>B) INCORRETA.</strong> A falência miocárdica é mais relacionada a problemas cardíacos congênitos ou miocardites, não sendo consequência direta da asfixia para os pulmões.</p><p><strong>C) INCORRETA.</strong> As convulsões são consequência neurológica da asfixia, não pulmonar.</p><p><strong>D) INCORRETA.</strong> A coagulação intravascular disseminada é uma complicação sistêmica da asfixia severa, mas não especificamente pulmonar.</p><p><strong>E) INCORRETA.</strong> A informação sobre \"mulher de 31 anos com síndrome de Sheehan\" não se relaciona com consequências pulmonares da asfixia neonatal e parece ser dado clínico irrelevante para a questão.</p><p><strong>Veredito:</strong> A síndrome de aspiração do mecônio é a consequência pulmonar mais direta e comum da asfixia neonatal, sendo essencial reconhecer sua fisiopatologia e implicações clínicas.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPerio",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPerio_PneumoniaAspirativa"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Assinale a alternativa que apresenta características que sugerem a Síndrome do Bebê Sacudido (shaken baby syndrome).",
+      "alternativas": [
+        "Distribuição equivalente entre os 2 gêneros e idade entre 6 e 18 meses.",
+        "O ato de chacoalhar a criança precisa ser prolongado, ocorrer repetidas vezes ou durante vários dias.",
+        "As lesões mais comuns são as hemorragias retinianas, subdural e subaracnóide.",
+        "A maioria dos casos apresenta fratura em arcos posteriores das costelas.",
+        "trocar aspirina por clopidogrel."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 aborda a Síndrome do Bebê Sacudido (SBS), forma grave de violência infantil que requer conhecimento médico para identificação precoce e manejo adequado.</p><p><strong>A resposta correta é C - As lesões mais comuns são as hemorragias retinianas, subdural e subaracnóide.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA.</strong> A SBS tem distribuição desproporcional entre os gêneros, sendo mais comum em meninos (2-3:1). A idade mais frequente é entre 2-6 meses, não 6-18 meses.</p><p><strong>B) INCORRETA.</strong> O ato de chacoalhar não precisa ser prolongado ou repetido. Um único episódio de violência pode causar lesões graves devido à fragilidade cerebral infantil.</p><p><strong>C) CORRETA.</strong> Esta é a tríade clássica da SBS: hemorragias retinianas (presentes em 75-90% dos casos), hematoma subdural e hemorragia subaracnóidea, resultantes das forças de aceleração-desaceleração.</p><p><strong>D) INCORRETA.</strong> As fraturas em arcos costais posteriores são mais comuns em abuse físico direto, não na SBS propriamente dita.</p><p><strong>E) INCORRETA.</strong> A troca de aspirina por clopidogrel não se relaciona com características da SBS e parece ser informação irrelevante.</p><p><strong>Veredito:</strong> A tríade de lesões neuroftalmológicas (hemorragias retinianas, subdural e subaracnóide) é a característica mais importante para o diagnóstico da SBS, diferenciando-a de outras causas de lesões cerebrais pediátricas.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_MausTratosACriancasEAdolescent",
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas_AvaliacaoDaCriancaGravementeEn"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Em geral, a partir de que idade se considera que as crianças tenham uma boa compreensão sobre o que lhes é explicado?",
+      "alternativas": [
+        "5 anos.",
+        "8 anos.",
+        "10 anos.",
+        "12 anos.",
+        "em seu longo trajeto da axila à mão, o nervo mediano é mais frequentemente lesado no punho."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento fundamental sobre desenvolvimento cognitivo infantil, especificamente sobre a aquisição da capacidade de compreensão verbal em crianças. A banca HCB busca identificar em que momento do desenvolvimento neural a criança adquire maturidade cognitiva suficiente para compreender adequadamente explicações complexas.</p><p>Vamos analisar cada alternativa baseado no desenvolvimento neurológico e cognitivo:</p><p><strong>Alternativa A - 5 anos: CORRETA.</strong> Por volta dos 5 anos, as crianças já desenvolveram circuitos neurais suficientes para compreender explicações simples e instruções mais complexas. Essa idade marca o período de transição entre pensamento pré-operatório e operatório concreto, permitindo melhor compreensão da causalidade e sequências lógicas.</p><p><strong>Alternativa B - 8 anos: INCORRETA.</strong> Embora aos 8 anos a compreensão esteja mais refinada, crianças de 5-6 anos já demonstram boa capacidade de entendimento quando o conteúdo é adequado ao seu nível de desenvolvimento.</p><p><strong>Alternativa C - 10 anos: INCORRETA.</strong> Esta idade representa um nível de desenvolvimento mais avançado, mas não é o marco inicial da boa compreensão.</p><p><strong>Alternativa D - 12 anos: INCORRETA.</strong> É excessivamente tardia, já que capacidades cognitivas superiores estão estabelecidas anteriormente.</p><p><strong>Alternativa E: INCORRETA.</strong> Esta alternativa não responde à questão sobre idade de compreensão, tratando de anatomia neurológica.</p><p><strong>Veredito:</strong> A resposta correta é A - 5 anos, marco fundamental do desenvolvimento cognitivo que permite melhor compreensão verbal.",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DnpmDesenvolvimentoNeuroPsicom",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_PsiquiatriaInfantil"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Qual doença oftalmológica infantil tem seu diagnóstico mais frequente entre 18 e 24 meses?",
+      "alternativas": [
+        "Catarata infantil.",
+        "Retinoblastoma.",
+        "Estrabismo.",
+        "Retinopatia diabética.",
+        "vitamina D."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia conhecimento especializado em oftalmologia pediátrica, testando o reconhecimento dos períodos de maior incidência de tumores oculares em crianças. O foco está no retinoblastoma, uma neoplasia maligna precoce que requer diagnóstico urgente.</p><p>Vamos analisar as alternativas considerando epidemiologia e características das principais doenças oftalmológicas pediátricas:</p><p><strong>Alternativa A - Catarata infantil: INCORRETA.</strong> A catarata congênita é diagnosticada logo após o nascimento ou nos primeiros meses de vida, não entre 18-24 meses.</p><p><strong>Alternativa B - Retinoblastoma: CORRETA.</strong> O retinoblastoma tem pico de incidência entre 18-24 meses de idade. Esta é uma janela crítica diagnóstica, pois tumores maiores podem se desenvolver e comprometer a visão e vida da criança. O diagnóstico precoce nesta fase é crucial para o prognóstico.</p><p><strong>Alternativa C - Estrabismo: INCORRETA.</strong> O estrabismo pode ser diagnosticado em diferentes idades, mas não tem pico específico aos 18-24 meses. Pode ser observado já nos primeiros meses de vida ou desenvolvido posteriormente.</p><p><strong>Alternativa D - Retinopatia diabética: INCORRETA.</strong> Esta complicação da diabetes não ocorre em crianças pequenas, sendo típica de pacientes diabéticos de longa data, geralmente adolescentes ou adultos jovens.</p><p><strong>Alternativa E: INCORRETA.</strong> Não responde adequadamente à questão sobre doença oftalmológica infantil.</p><p><strong>Veredito:</strong> A resposta correta é B - Retinoblastoma, com diagnóstico mais frequente entre 18-24 meses, exigindo alto índice de suspeição clínica nesta faixa etária.",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Outros_Oftalmologia"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Com relação às manifestações clínicas da fibrose cística, assinale a alternativa correta.",
+      "alternativas": [
+        "A obstrução parcial por secreções intestinais espessadas é limitada ao período neonatal.",
+        "A fertilidade feminina está reduzida a 50% do normal.",
+        "Os pacientes que apresentam insuficiência pancreática são de maior risco para episódios de pancreatites recorrentes.",
+        "Quase todos os pacientes com fibrose cística apresentam um significativo velamento dos seios maxilo faciais, porém muitos permanecem assintomáticos.",
+        "losartana."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda manifestações clínicas da fibrose cística, testando conhecimento sobre complicações respiratórias e sistêmicas desta doença genética autossômica recessiva. A banca busca avaliar se o candidato reconhece aspectos específicos das manifestações sinusais em fibrose cística.</p><p>Analisando cada alternativa baseado no conhecimento atual sobre fibrose cística:</p><p><strong>Alternativa A: INCORRETA.</strong> A obstrução por secreções intestinais espessadas não se limita ao período neonatal. Pode persistir e se manifestar ao longo da vida, causando síndrome de obstrução intestinal distal (DIOS).</p><p><strong>Alternativa B: INCORRETA.</strong> A fertilidade feminina na fibrose cística está mais que reduzida em 50%. É significativamente comprometida devido a alterações tubárias e cérvico-uterinas causadas pelas secreções espessas.</p><p><strong>Alternativa C: INCORRETA.</strong> Na fibrose cística, pacientes com insuficiência pancreática NÃO apresentam pancreatites recorrentes. A pancreatite está mais associada à forma enoughunção pancreática, onde ainda há função enzimática residual.</p><p><strong>Alternativa D - Velamento dos seios maxilofaciais: CORRETA.</strong> Praticamente todos os pacientes com fibrose cística desenvolvem alterações sinusais significativas, incluindo opacificação dos seios maxilares, frontais e etmoidais. O muco espesso滞 nas cavidades sinusais cria ambiente propício para infecção crônica e inflação. Importante: muitos pacientes permanecem assintomáticos, o que torna o diagnóstico radiológico fundamental.</p><p><strong>Alternativa E: INCORRETA.</strong> Não se relaciona adequadamente com as manifestações clínicas da fibrose cística.</p><p><strong>Veredito:</strong> A resposta correta é D, refletindo a natureza ubiqua das alterações sinusais na fibrose cística, frequentemente assintomáticas mas universalmente presentes.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_DoencaDeKawasaki",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Qual a medida de primeira escolha para redução da pressão pulmonar nos casos de hipertensão pulmonar persistente?",
+      "alternativas": [
+        "Utilizar sildenafil.",
+        "Utilizar milrinona.",
+        "Administrar NO inalatório.",
+        "Utilizar surfactante exógeno.",
+        "poliartrite, hipocalcemia, leucopenia, convulsão e síndrome DRESS."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda tratamento de hipertensão pulmonar persistente em neonatos, testando conhecimento sobre terapia vasodilatadora pulmonar de primeira linha. A banca HCB busca avaliar se o candidato reconhece a terapia gold standard para redução da pressão arterial pulmonar em recém-nascidos.</p><p>Vamos analisar as opções terapêuticas considerando eficácia, segurança e evidências científicas:</p><p><strong>Alternativa A - Sildenafil: INCORRETA.</strong> Embora o sildenafil seja usado em hipertensão pulmonar persistente, não é primeira escolha. É considerado segunda linha devido a efeitos sistêmicos e menos específico para circulação pulmonar.</p><p><strong>Alternativa B - Milrinona: INCORRETA.</strong> A milrinona é um inotrópico e vasodilatador, mas seu uso em hipertensão pulmonar persistente não é padrão. Pode causar hipotensão sistêmica significativa.</p><p><strong>Alternativa C - NO inalatório: CORRETA.</strong> O óxido nítrico inalatório é a primeira escolha para redução da pressão pulmonar em hipertensão pulmonar persistente. Age especificamente na circulação pulmonar, com mínimo efeito sistêmico. Seu uso é bem estabelecido em neonatologia, com rápido início de ação e boa margem de segurança.</p><p><strong>Alternativa D - Surfactante exógeno: INCORRETA.</strong> O surfactante é usado para síndrome do desconforto respiratório, não para hipertensão pulmonar persistente. Não tem efeito vasodilatador pulmonar.</p><p><strong>Alternativa E: INCORRETA.</strong> Esta alternativa não corresponde a nenhuma terapia padrão para hipertensão pulmonar persistente.</p><p><strong>Veredito:</strong> A resposta correta é C - NO inalatório, padrão-ouro para tratamento de hipertensão pulmonar persistente neonatal, proporcionando vasodilatação pulmonar seletiva e rápida.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPerio",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Assinale a alternativa incorreta em relação à Alienação Parental.",
+      "alternativas": [
+        "Se refere apenas contra o(a) genitor(a).",
+        "Seu objetivo maior é o de promover uma ruptura afetiva entre a criança ou o adolescente e o outro genitor.",
+        "Os casos de alienação parental, falsa denúncia e implantação de falsas memórias são muito complexos e exigem cautela por parte da equipe interdisciplinar.",
+        "É forma de abuso psicológico e, muitas vezes, vem acompanhada de negligência e de abuso sexual indireto.",
+        "iniciar a clortalidona."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda alienação parental, um tema multidisciplinar importante em pediatria que envolve aspectos psicológicos, legais e sociais. A banca HCB busca avaliar se o candidato reconhece a definição correta deste fenômeno e suas implicações clínicas.</p><p>Vamos analisar cada alternativa considerando a definição e características da alienação parental:</p><p><strong>Alternativa A - Se refere apenas contra o(a) genitor(a): INCORRETA (ESTA É A ALTERNATIVA INCORRETA SOLICITADA).</strong> A alienação parental não se limita apenas contra genitores. Pode envolver alienação contra avós, tios, padrastos ou outras figuras parentais significativas. O processo é mais amplo que a simples hostilidade contra um genitor.</p><p><strong>Alternativa B: CORRETA.</strong> O objetivo principal da alienação parental é exatamente promover ruptura afetiva entre a criança e o genitor, destruindo vínculos relacionais importantes.</p><p><strong>Alternativa C: CORRETA.</strong> Realmente são casos complexos que exigem abordagem interdisciplinar cuidadosa, envolvendo psicólogos, pediatras, psiquiatras e, muitas vezes, intervenção judicial.</p><p><strong>Alternativa D: CORRETA.</strong> A alienação parental constitui forma grave de abuso psicológico, frequentemente associada a outras formas de negligência e violência indireta.</p><p><strong>Alternativa E: INCORRETA.</strong> Não responde adequadamente à questão sobre alienação parental.</p><p><strong>Veredito:</strong> A resposta correta é A, pois a alienação parental é fenômeno mais amplo que visa qualquer figura parental significativa, não se limitando exclusivamente contra genitores.",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_MausTratosACriancasEAdolescent",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_Violencia",
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "As hérnias mais prevalentes nos adultos, que apresentam defeito da parede posterior do abdome, sem alteração estrutural dos anéis inguinais internos e externo, são classificadas por Nyhus em:",
+      "alternativas": [
+        "I",
+        "IIA",
+        "IIB",
+        "IIIA",
+        "tedizolida."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia seu conhecimento sobre classificação de hérnias inguinais segundo Nyhus, um tema clássico de cirurgia geral.</p><p><strong>A resposta correta é D - IIIA.</strong> Vamos entender a lógica por trás desta classificação.</p><p>A classificação de Nyhus divide as hérnias em tipos baseado no estado dos anéis e presença de hérnias diretas ou indiretas. O tipo IIIA refere-se às hérnias diretas da fossa inguinal medial, que apresentan defeito da parede posterior do abdome (fascia transversalis) sem alterações estruturais dos anéis inguinais.</p><p>Vamos analisar as alternativas:</p><p><strong>A) I:</strong> Incorreta - representa hérnias inguinais indiretas com anel interno pérvio mas sem protrusão明显</p><p><strong>B) IIA:</strong> Incorreta - hérnias indiretas com anel interno dilatado, mas paredes normais</p><p><strong>C) IIB:</strong> Incorreta - hérnias indiretas com defeito da parede posterior do abdome</p><p><strong>D) IIIA:</strong> Correta - hérnias diretas com defeito da fossa inguinal medial</p><p><strong>E) tedizolida:</strong> Incorreta - antibiótico, não relacionado a hérnias (erro de digitação proposital)</p><p>A chave está em lembrar que hérnias diretas (Nyhus IIIA) são exatamente as que cursam com defeito da parede posterior sem alterações anulares.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "São ramos da artéria mesentérica superior, exceto:",
+      "alternativas": [
+        "A. cólica direita.",
+        "A. cólica esquerda.",
+        "A. ileocólica.",
+        "Aa. Jejunais.",
+        "TRALI (lesão pulmonar aguda relacionada à transfusão)."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre anatomia vascular do sistema digestório, especificamente os ramos da artéria mesentérica superior.</p><p><strong>A resposta correta é B - artéria cólica esquerda.</strong></p><p>A artéria mesentérica superior irriga o intestino delgado (duodeno até esplênico), ceco, cólon ascendente e porção proximal do cólon transverso. Seus principais ramos são:</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) A. cólica direita:</strong> Correta - ramo da mesentérica superior que irriga o cólon ascendente</p><p><strong>B) A. cólica esquerda:</strong> <em>Esta é a resposta</em> - INCORRETA - é ramo da artéria mesentérica inferior, não superior</p><p><strong>C) A. ileocólica:</strong> Correta - último ramo da mesentérica superior, irriga íleo terminal e ceco</p><p><strong>D) Aa. Jejunais:</strong> Correta - múltiplos ramos que irrigam o jejuno</p><p><strong>E) TRALI:</strong> Correta como &quot;exceto&quot; - TRALI (Transfusion-Related Acute Lung Injury) é complicação transfusional, não ramo arterial</p><p>Mnemônico: A mesentérica superior irriga &quot;duodeno, jejuno, íleo, cólon ascendente e parte do transverso&quot; - sempre à DIREITA! A cólica esquerda é da mesentérica inferior.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Sobre as neoplasias das glândulas salivares, quase 70% das lesões acontecem na:",
+      "alternativas": [
+        "Glândula parótida.",
+        "Glândula submandibular.",
+        "Glândula sublingual.",
+        "Tireóide.",
+        "ziprasidona."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCB aborda epidemiologia das neoplasias das glândulas salivares, tema importante em cabeça e pescoço.</p><p><strong>A resposta correta é A - glândula parótida.</strong></p><p>As glândulas salivares têm distribuição epidemiológica bem definida para tumores benignos e malignos:</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Glândula parótida:</strong> <em>Correta</em> - sede de 70-80% das neoplasias salivares, principalmente porções superficialis</p><p><strong>B) Glândula submandibular:</strong> Incorreta - representa apenas 10-15% dos casos</p><p><strong>C) Glândula sublingual:</strong> Incorreta - menos de 1% das neoplasias salivares</p><p><strong>D) Tireóide:</strong> Incorreta - não é glândula salivar, mas endócrina</p><p><strong>E) ziprasidona:</strong> Incorreta - antipsicótico, não relacionado a glândulas (erro proposital)</p><p>A predominância na parótida explica a facilidade de diagnóstico clínico através de massas em região parotídea. A proporção 70% é um dado clássico memorizado pelos candidatos, refletindo a rica vascularização e tecido glandular desta região.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaDeCabecaEPescoco"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Paciente feminina, 26 anos, vítima de acidente motociclístico há 2 horas. É transferida ao serviço referência de trauma em prancha rígida, com colar cervical, com máscara de oxigênio com suplemento de 12l/min. Devido a sinais de choque hipovolêmico, durante o\ntransporte foi administrado 500ml de ringer lactato e 1g de ácido tranexâmico. É admitida com os seguintes sinais vitais: pressão arterial: 90/40 mmHg, frequência cardíaca: 110 bpm, frequência respiratória: 19 irpm, saturação periférica de oxigênio: 98%, temperatura axilar: 36,7oC. A: Vias aéreas pérvias, com colar cervical. B: Escoriações em hemitórax direito. Murmúrio vesicular presente difusamente, mas reduzido, abolido em base direita. Percussão duvidosa devido ao grande volume de ruídos na sala do trauma. Ausência de hipertimpanismo. Ausência de enfisema subcutâneo. C: Bulhas rítmicas, taquicárdicas, sem sopros audíveis. Ausência de estase jugular patológica. D: Orientada, escala de Glasgow com 14 pontos. Pupilas isocóricas, fotorreagentes, sem déficits focais. E: Sem outras lesões ameaçadoras à vida. Abdome indolor, flácido, sem sinais de irritação peritoneal. Pelve fechada. Membros sem alterações. Após reanimação volêmica, foi submetida a radiografia de tórax abaixo na sala do trauma. A conduta imediata mais adequada para este caso é:",
+      "alternativas": [
+        "Toracotomia de reanimação.",
+        "Toracotomia de urgência.",
+        "Drenagem pleural.",
+        "Toracocentese.",
+        "reduzir o volume corrente."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia manejo do trauma torácico, competência essencial em medicina de emergência e cirurgia.</p><p><strong>A resposta correta é C - drenagem pleural.</strong></p><p>Analisando o caso: paciente politraumatizada com sinais sugestivos de hemotórax (murmúrio vesicular abolido em base direita, depois de trauma torácico).</p><p><strong>Sinais clínicos relevantes:</strong></p><p>• Murmúrio vesicular reduzido e abolido em base direita</p><p>• Escoriações em hemitórax direito</p><p>• Instabilidade hemodinâmica (PA 90/40, FC 110)</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Toracotomia de reanimação:</strong> Incorreta - para parada cardíaca, não indicada aqui</p><p><strong>B) Toracotomia de urgência:</strong> Incorreta - para instabilidade refratária com drenos thoracicos, não primeira linha</p><p><strong>C) <em>Drenagem pleural:</em> Correta - indicada para hemotórax com comprometimento respiratório/hemodinâmico</p><p><strong>D) Toracocentese:</strong> Incorreta - procedimento diagnóstico, não terapêutico</p><p><strong>E) reduzir volume corrente:</strong> Incorreta - ventilação protetora em ARDS, não trauma agudo</p><p>A drenagem pleural com tubo de tórax é a conduta padrão para hemotórax significativo com repercussão clínica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaToracico"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Nos pacientes com massas tireóideas e nos quais haja suspeita da síndrome de neoplasia endócrina múltipla (NEM) do tipo 2, ou de carcinoma medular esporádico, deve ser obtido o nível de base de:",
+      "alternativas": [
+        "Calcitonina",
+        "Tireoglubulina",
+        "Fator antinucleo",
+        "Somatotropina",
+        "síndrome mielodisplásica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre síndrome de neoplasia endócrina múltipla tipo 2 (NEM 2) e carcinoma medular da tireoide.</p><p><strong>A resposta correta é A - Calcitonina.</strong></p><p>A NEM 2 subdivide-se em 2A (feocromocitoma + carcinoma medular + hiperparatireoidismo) e 2B (feocromocitoma + carcinoma medular + características marfanoides). O carcinoma medular da tireoide é derivado de células C parafoliculares, produtoras de calcitonina.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Calcitonina:</strong> <em>Correta</em> - marcador tumoral específico do carcinoma medular, usado para rastreamento e monitoramento</p><p><strong>B) Tireoglobulina:</strong> Incorreta - marcador de carcinomas diferenciados (papilífero/folicular), não medular</p><p><strong>C) Fator antinucleo:</strong> Incorreta - autoanticorpo, não relacionado a NEM 2</p><p><strong>D) Somatotropina:</strong> Incorreta - hormônio do crescimento, produção hipofisária</p><p><strong>E) síndrome mielodisplásica:</strong> Incorreta - doença hematológica, não endócrina</p><p>A dosagem de calcitonina é fundamental em pacientes com história familiar de NEM 2 ou carcinoma medular esporádico, permitindo diagnóstico precoce e planejamento cirúrgico.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_NeoplasiasEndocrinasMultiplas"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "A figura abaixo ilustra uma fundoplicatura esofágica. Essa técnica foi descrita por Nissen e é preconizada para o tratamento de:",
+      "alternativas": [
+        "Úlcera de antro gástrico.",
+        "Vagotomia seletiva.",
+        "Carcinoma espinocelular de esôfago.",
+        "Doença do refluxo gastroesofágico.",
+        "desfibrilação com 360 J do monofásico ou energia máxima do bifásico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 testa seu conhecimento sobre técnicas cirúrgicas específicas e suas indicações clínicas. A fundoplicatura de Nissen é um procedimento clássico da cirurgia digestiva alta.</p><p><strong>A resposta correta é D - Doença do refluxo gastroesofágico.</strong></p><p>Vamos analisar cada alternativa:</p><p>A) Úlcera de antro gástrico: Incorreta. Úlceras gástricas são tratadas clinicamente inicialmente, e apenas em casos de complicações (perfuração, hemorragia, obstrução) ou falha do tratamento clínico é que se considera cirurgia, mas o procedimento não é a fundoplicatura de Nissen.</p><p>B) Vagotomia seletiva: Incorreta. Vagotomias são procedimentos que visam reduzir a secreção ácida gástrica, sendo indicados principalmente em úlceras duodenais ou gastrinomas. A fundoplicatura é apenas uma complementar em alguns casos.</p><p>C) Carcinoma espinocelular de esôfago: Incorreta. O tratamento do câncer de esôfago envolve ressecção cirúrgica ampla com margens de segurança, возможно esofagectomia com reconstrução, mas nunca apenas uma fundoplicatura.</p><p>D) Doença do refluxo gastroesofágico: Correta. A fundoplicatura de Nissen é considerada o gold standard cirúrgico para DRGE refratária ao tratamento clínico. O procedimento envolve envolver o fundo gástrico ao redor da junção gastroesofágica, criando uma válvula que previne o refluxo.</p><p>E) Desfibrilação com 360 J do monofásico ou energia máxima do bifásico: Incorreta. Esta alternativa não tem relação alguma com cirurgia digestiva. Refere-se a procedimentos de cardiologia para reversão de arritmias.</p><p>A fundoplicatura de Nissen representa uma solução cirúrgica elegante e eficaz para pacientes com DRGE severa, demonstrando como a cirurgia pode oferecer alívio duradouro quando o tratamento clínico falha.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Lactente com 25 dias de vida, nascido a termo, sem intercorrências no pré-natal dá entrada no pronto-socorro com história de vômitos há 10 dias. Mãe relata que desde o nascimento não apresentou dificuldades na amamentação, sempre com boa aceitação da dieta, porém há 10 dias o paciente vem apresentando vômitos em jatos pós prandiais, de aspecto alimentar, sem eliminação de conteúdo amarelado ou esverdeado. Associa a este período uma perda ponderal de aproximadamente 300g e letargia. Nega febre. Nega parada de eliminação de gases e fezes. Notou que a urina está mais escura. Nega comorbidades prévias. Ao exame físico: regular estado geral, corado, desidratado, taquipneico, anictérico, afebril. Sem alterações cardiopulmonares. Abdome distendido, mas depressível, flácido, indolor, sem sinais de irritação peritoneal. Não palpado oliva pilórica, e nem visualizado ondas peristálticas na parede abdominal. Na investigação realizou a radiografia e a ecografia de abdome abaixo. Foram solicitados também exames laboratoriais que evidenciaram leucocitose, hipocalemia e alcalose metabólica. A principal hipótese diagnóstica é:",
+      "alternativas": [
+        "Atresia de esôfago.",
+        "Atresia de duodeno.",
+        "Estenose hipertrófica de piloro.",
+        "Refluxo gastroesofágico.",
+        "stent intravascular percutâneo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia seu conhecimento sobre diagnóstico diferencial de síndromes obstrutivas intestinais em lactentes, tema fundamental em cirurgia pediátrica.</p><p><strong>A resposta correta é C - Estenose hipertrófica de piloro.</strong></p><p>Vamos analisar o caso clínico detalhadamente: Lactente de 25 dias, nascido a termo, com início súbito de vômitos há 10 dias. O padrão de vômitos em jatos pós-prandiais é altamente característico de obstrução na saída gástrica. O achado de perda ponderal de 300g e letargia indica gravidade e desidratação, sugerindo obstrução significativa.</p><p>Os achados laboratoriais são clássicos: leucocitose (reação ao estresse), hipocalemia (perda de potássio nos vômitos) e alcalose metabólica (perda de HCl gástrico). Esta tríade laboratorial é patognomônica de síndrome pilórica obstrutiva.</p><p>Analisando as alternativas:</p><p>A) Atresia de esôfago: Incorreta. Se fosse atresia de esôfago, o bebê apresentaria dificuldade de sucção desde o nascimento e impossibilidade de deglutir saliva, não começaria aos 15 dias de vida.</p><p>B) Atresia de duodeno: Incorreta. A atresia duodenal causa obstrução completa, com parada de eliminaçõ de gases e fezes, além de vômitos biliosos característicos que não estão presentes no caso.</p><p>C) Estenose hipertrófica de piloro: Correta. Apresenta-se tipicamente entre 2-8 semanas de vida, com vômitos em jatos progressivos, perda ponderal, desidratação e a tríade laboratorial de alcalose metabólica, hipocalemia e clorúria. A ausência de oliva palpável e ondas visíveis não exclui o diagnóstico, pois são achados variáveis.</p><p>D) Refluxo gastroesofágico: Incorreta. O refluxo pode causar vômitos, mas não em padrão de jato, não causa perda ponderal significativa, desidratação e alterações laboratoriais tão severas.</p><p>E) Stent intravascular percutâneo: Incorreta. Trata-se de procedimento vascular e não tem relação com sintomas digestivos.</p><p>O diagnóstico de estenose hipertrófica de piloro deve ser considerado em todo lactente com vômitos progressivos e padrão obstrutivo.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_CirurgiaInfantil",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_CirurgiaInfantil"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Lactente com 25 dias de vida, nascido a termo, sem intercorrências no pré-natal dá entrada no pronto-socorro com história de vômitos há 10 dias. Mãe relata que desde o nascimento não apresentou dificuldades na amamentação, sempre com boa aceitação da dieta, porém há 10 dias o paciente vem apresentando vômitos em jatos pós prandiais, de aspecto alimentar, sem eliminação de conteúdo amarelado ou esverdeado. Associa a este período uma perda ponderal de aproximadamente 300g e letargia. Nega febre. Nega parada de eliminação de gases e fezes. Notou que a urina está mais escura. Nega comorbidades prévias. Ao exame físico: regular estado geral, corado, desidratado, taquipneico, anictérico, afebril. Sem alterações cardiopulmonares. Abdome distendido, mas depressível, flácido, indolor, sem sinais de irritação peritoneal. Não palpado oliva pilórica, e nem visualizado ondas peristálticas na parede abdominal. Na investigação realizou a radiografia e a ecografia de abdome abaixo. Foram solicitados também exames laboratoriais que evidenciaram leucocitose, hipocalemia e alcalose metabólica. O tratamento preconizado para esta patologia é:",
+      "alternativas": [
+        "Síntese da fístula traqueoesofágica e anastomose esôfago-esôfago termino-terminal.",
+        "Piloromiotomia.",
+        "Duodeno-duodenostomia a diamond shape.",
+        "Fundoplicatura à Nissen.",
+        "síndrome \"lúpus-like\", secundário, induzido por droga."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 é sequência natural da anterior, avaliando o conhecimento sobre tratamento cirúrgico específico da estenose hipertrófica de piloro.</p><p><strong>A resposta correta é B - Piloromiotomia.</strong></p><p>A piloromiotomia, ou procedimento de Ramstedt, é o tratamento padrão-ouro para estenose hipertrófica de piloro. O princípio cirúrgico é simples e eficaz: realizar uma incisão longitudinal na camada muscular do piloro, preservando a mucosa, creating uma via para a passagem do alimento.</p><p>Analisando as alternativas:</p><p>A) Síntese da fístula traqueoesofágica e anastomose esôfago-esôfago termino-terminal: Incorreta. Este é o procedimento para atresia de esôfago, não para obstrução pilórica.</p><p>B) Piloromiotomia: Correta. A piloromiotomia de Ramstedt é o tratamento definitivo da estenose hipertrófica de piloro, com índice de cura superior a 95% e mínima morbidade. O procedimento é realizado através de incisão submucosa que divide apenas o músculo pilórico hipertrofiado.</p><p>C) Duodeno-duodenostomia a diamond shape: Incorreta. Este é o procedimento para atresia ou estenose duodenal, não para estenose pilórica.</p><p>D) Fundoplicatura à Nissen: Incorreta. Este é o tratamento cirúrgico para doença do refluxo gastroesofágico grave, não para estenose hipertrófica de piloro.</p><p>E) Síndrome 'lúpus-like', secundário, induzido por droga: Incorreta. Esta é uma complicação medicamentosa autoimune, sem relação com a patologia em questão.</p><p>A piloromiotomia representa uma das cirurgias mais bem-sucedidas em pediatria, resolvendo definitivamente o problema com recuperação rápida e retorno à alimentação normal em 24-48 horas.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_CirurgiaInfantil",
+        "Pediatria_GastrologiaPediatrica",
+        "Cirurgia_VesiculaEViasBiliares"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Lactente com 25 dias de vida, nascido a termo, sem intercorrências no pré-natal dá entrada no pronto-socorro com história de vômitos há 10 dias. Mãe relata que desde o nascimento não apresentou dificuldades na amamentação, sempre com boa aceitação da dieta, porém há 10 dias o paciente vem apresentando vômitos em jatos pós prandiais, de aspecto alimentar, sem eliminação de conteúdo amarelado ou esverdeado. Associa a este período uma perda ponderal de aproximadamente 300g e letargia. Nega febre. Nega parada de eliminação de gases e fezes. Notou que a urina está mais escura. Nega comorbidades prévias. Ao exame físico: regular estado geral, corado, desidratado, taquipneico, anictérico, afebril. Sem alterações cardiopulmonares. Abdome distendido, mas depressível, flácido, indolor, sem sinais de irritação peritoneal. Não palpado oliva pilórica, e nem visualizado ondas peristálticas na parede abdominal. Na investigação realizou a radiografia e a ecografia de abdome abaixo. Foram solicitados também exames\nlaboratoriais que evidenciaram leucocitose, hipocalemia e alcalose metabólica. No caso acima, se a radiografia e a ecografia não confirmassem tal diagnóstico, o próximo exame a ser solicitado para confirmar tal hipótese seria:",
+      "alternativas": [
+        "Broncoscopia.",
+        "Tomografia de abdome com triplo contraste.",
+        "pHmetria.",
+        "Exame contrastado de esôfago-estômago-duodeno.",
+        "umeclidínio."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 completa o caso clínico anterior, avaliando seu conhecimento sobre métodos diagnósticos complementares quando a ecografia inicial não confirma o diagnóstico de estenose hipertrófica de piloro.</p><p><strong>A resposta correta é D - Exame contrastado de esôfago-estômago-duodeno.</strong></p><p>Quando a ecografia, que é o padrão-ouro para diagnóstico de estenose hipertrófica de piloro, não é conclusiva, o exame contrastado de esôfago-estômago-duodeno torna-se a alternativa diagnóstica mais eficaz.</p><p>Este exame permite visualizar diretamente a anatomia e função do trato digestivo superior, identificando o sinal patognomônico da estenose pilórica: o 'sinal do hilo' ou 'duplo trilho', resultante da passagem de contraste pelo canal pilórico estreito.</p><p>Analisando as alternativas:</p><p>A) Broncoscopia: Incorreta. O exame é usado para avaliação das vias aéreas e brônquios, sem relação com patologia digestiva alta.</p><p>B) Tomografia de abdome com triplo contraste: Incorreta. A TC tem baixa sensibilidade para avaliação de estenose pilórica e expõe a criança a radiação desnecessária. Além disso, a distensão com contraste pode interferir no diagnóstico.</p><p>C) pHmetria: Incorreta. A pHmetria é utilizada para investigação de refluxo gastroesofágico, sendo útil para demonstrar exposição ácida esofágica, mas não para confirmar estenose pilórica.</p><p>D) Exame contrastado de esôfago-estômago-duodeno: Correta. Este exame permite visualização direta da via de saída gástrica, demonstrando o estreitamento pilórico característico e o padrão de esvaziamento gástrico retardado. É considerado o exame gold standard quando a ecografia é inconclusiva.</p><p>E) Umeclidínio: Incorreta. Umeclidínio é um anticolinérgico usado em medicina interna, sem relação com diagnóstico de estenose hipertrófica de piloro.</p><p>O exame contrastado de esôfago-estômago-duodeno oferece a vantagem de fornecer informações tanto anatômicas quanto funcionais sobre a obstrução pilórica.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_CirurgiaInfantil",
+        "Pediatria_GastrologiaPediatrica"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "É o fármaco antifibrinolítico que reduz mortalidade em pacientes politraumatizados na vigência de choque hemorrágico, e deve ser utilizado em até 3 horas do trauma.",
+      "alternativas": [
+        "Concentrado de complexo protrombínico",
+        "Haemocomplettan®",
+        "Ácido tranexâmico",
+        "Ácido acetilsalicílico",
+        "repetir a dosagem sérica do TSH em 2 meses."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HCB 2022 avalia seu conhecimento sobre farmacologia em medicina de emergência e trauma, especificamente sobre o uso de antifibrinolíticos em situações críticas.</p><p><strong>A resposta correta é C - Ácido tranexâmico.</strong></p><p>O ácido tranexâmico revolucionou o manejo do trauma hemorrágico. Estudos como o CRASH-2 demonstraram redução significativa de mortalidade em pacientes traumatizados quando administrado em até 3 horas do trauma, sendo classificado como categoria 1A pela Cochrane.</p><p>O mecanismo de ação é específico: o ácido tranexâmico é um antifibrinolítico que inibe a conversão de plasminogênio em plasmina, estabilizando o coágulo e reduzindo a hemorragia ativa. A janela terapêutica de 3 horas é crucial, pois após esse período, a fibrinólise secundária diminui e os benefícios diminuem.</p><p>Analisando as alternativas:</p><p>A) Concentrado de complexo protrombínico: Incorreta. Este produto é usado para reversão de anticoagulação em pacientes com deficiência de fatores de coagulação ou em uso de antagonistas da vitamina K, mas não para controle primário de hemorragia traumática.</p><p>B) Haemocomplettan®: Incorreta. É um concentrado de fibrinogênio usado em casos de hipofibrinogenemia, mas não demonstrou redução de mortalidade em politraumatizados como o ácido tranexâmico.</p><p>C) Ácido tranexâmico: Correta. É o único antifibrinolítico com evidência robusta de redução de mortalidade em trauma hemorrágico. A dose recomendada é 1g em 10 minutos IV, seguida de infusão de 1g em 8 horas, preferencialmente dentro de 3 horas do trauma.</p><p>D) Ácido acetilsalicílico: Incorreta. É um antiagregante plaquetário, contraindicado em hemorragia ativa, pois aumenta o sangramento.</p><p>E) Repetir a dosagem sérica do TSH em 2 meses: Incorreta. Esta alternativa refere-se ao seguimento de hipotireoidismo, sem relação com controle de hemorragia traumática.</p><p>O ácido tranexâmico representa um exemplo de como a medicina baseada em evidências pode salvar vidas em situações críticas, com custo baixo e ampla disponibilidade.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_Trauma",
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Uma paciente com mutação no gene BRCA1 e BRCA2, 40 anos de idade, procura o ginecologista para acompanhamento. Esta paciente deve ser aconselhada a realizar:",
+      "alternativas": [
+        "Salpingooforectomia bilateral.",
+        "Ultrassom endovaginal a cada 6 meses.",
+        "Dosagem de CEA e CA-125 a cada 6 meses.",
+        "Biópsia de ovário bilateral.",
+        "o uso de nifedipina sublingual apresenta rápida e eficaz redução da pressão arterial, podendo ser uma opção nos casos de emergências hipertensivas em que o acesso IV ainda não está disponível."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo profilático em pacientes portadoras de mutação BRCA, particularmente no contexto de prevenção de câncer de ovário. A banca HCB quer verificar se você conhece as recomendações atuais para redução de risco em pacientes de alto risco genético.</p><p><strong>A resposta correta é A - Salpingooforectomia bilateral.</strong> Em portadoras de mutação BRCA1 e BRCA2, especialmente após os 40 anos, a salpingooforectomia bilateral profilática é a intervenção mais eficaz para reduzir significativamente o risco de câncer de ovário. Segundo o MS 2025, esta estratégia pode reduzir o risco em até 80-90% nestas pacientes.</p><p>Analisando as alternativas incorretas:</p><p><strong>B) Ultrassom endovaginal a cada 6 meses</strong> - Embora o rastreamento ultrassonográfico seja uma opção discutida, não é a estratégia mais eficaz. A ultrassonografia transvaginal seriada tem baixa sensibilidade para detecção precoce de câncer de ovário em pacientes BRCA e não substitui a profilaxia cirúrgica.</p><p><strong>C) Dosagem de CEA e CA-125 a cada 6 meses</strong> - Os marcadores tumorais não são eficientes para rastreamento em pacientes assintomáticas de alto risco. O CA-125 pode estar elevado em condições benignas e não é específico o suficiente para este cenário.</p><p><strong>D) Biópsia de ovário bilateral</strong> - Biópsia profilática não é recomendada, pois pode deixaria sementes cancerosas e não ofereceria proteção adequada. Além disso, procedimento invasivo sem benefício comprovado.</p><p><strong>E) Nifedipina sublingual</strong> - Esta alternativa parece ser uma pegadinha, não tendo relação com prevenção de câncer em pacientes BRCA. Nifedipina é um anti-hipertensivo bloqueador de canais de cálcio.</p><p>Vale lembrar que, segundo diretrizes brasileiras atualizadas, a salpingooforectomia bilateral profilática deve ser discutida com todas as portadoras de mutação BRCA a partir dos 40-45 anos, preferencialmente após completado o desejo reprodutivo.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeOvario"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Em relação às modificações do organismo materno, assinale a alternativa incorreta.",
+      "alternativas": [
+        "O volume plasmático materno aumenta em torno de 40-50 %.",
+        "A quantidade de eritrócitos aumenta de forma idêntica ao aumento do volume plasmático.",
+        "Ocorre diminuição da resistência vascular periférica em gestações normais.",
+        "A pressão venosa nos membros inferiores tende a aumentar em virtude da compressão do útero gravídico.",
+        "tomografia computadorizada de tórax, abdômen e pelve."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCB aborda as adaptações fisiológicas maternas durante a gestação, testando seu conhecimento sobre as mudanças hematológicas, cardiovasculares e vasculares que ocorrem no organismo da gestante. É um tema clássico de obstetrícia que frequentemente aparece em provas de residência.</p><p><strong>A resposta correta é B - A quantidade de eritrócitos aumenta de forma idêntica ao aumento do volume plasmático.</strong> Esta é a alternativa incorreta, pois durante a gestação ocorre um fenômeno chamado diluição plasmática ou pseudoanemia da gestação.</p><p>Vamos analisar por que a alternativa B está incorreta:</p><p>O volume plasmático materno aumenta aproximadamente 40-50% durante a gestação, mas o aumento da massa eritrocitária é de apenas 20-30%. Isso resulta em uma diluição do sangue materno, com queda da concentração de hemoglobina (hemoglobina < 11 g/dL). Essa pseudoanemia fisiológica é normal e benéfica, melhorando a fluidez sanguínea.</p><p>Analisando as alternativas corretas:</p><p><strong>A) O volume plasmático materno aumenta em torno de 40-50%</strong> - Correto. O aumento do volume plasmático é uma das principais adaptações maternas, beginning no primeiro trimestre e estabilizando no final da gestação.</p><p><strong>C) Ocorre diminuição da resistência vascular periférica em gestações normais</strong> - Correto. A resistência vascular periférica diminui devido ao efeito vasodilatador da progesterona e da produção aumentada de óxido nítrico.</p><p><strong>D) A pressão venosa nos membros inferiores tende a aumentar em virtude da compressão do útero gravídico</strong> - Correto. O útero gravídico comprime veias pélvicas e veia cava inferior, especialmente em decúbito dorsal, causando edema e aumento da pressão venosa.</p><p><strong>E) Tomografia computadorizada de tórax, abdômen e pelve</strong> - Esta parece ser uma pegadinha da questão, não having relação com modificações maternas durante a gestação.</p><p>Compreender essas adaptações é fundamental para diferenciar situações fisiológicas patológicas e fornecer cuidado adequado à gestante.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ModificacoesFisiologicasDaGest"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Em relação ao tratamento conservador da Incontinência Urinária, assinale a alternativa que não condiz com a terapia",
+      "alternativas": [
+        "Perda de peso.",
+        "Interromper ou diminuir o tabagismo.",
+        "Urinar em intervalos programados.",
+        "Estimular a ingesta de bebidas com cafeína.",
+        "trocar aspirina para clopidogrel."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre tratamento conservador da incontinência urinária, especificamente sobre medidas comportamentais e de modificação do estilo de vida que podem ajudar no controle dos sintomas. A HCB quer verificar se você conhece as recomendações baseadas em evidências para o manejo inicial não cirúrgico.</p><p><strong>A resposta correta é D - Estimular a ingesta de bebidas com cafeína.</strong> Esta é a única alternativa que NÃO condiz com a terapia conservadora, pois a cafeína pode piorar os sintomas de incontinência.</p><p>Vamos entender o porquê:</p><p>A cafeína é um diurético e estimulante da bexiga. Estimula contrações do músculo detrusor e aumenta a produção de urina, piorando a frequência urinária e a urgência. Além disso, pode irritar a bexiga, tornando-a mais sensível e predispondo a vazamentos.</p><p>Analisando as alternativas corretas:</p><p><strong>A) Perda de peso</strong> - Correto. A redução de peso em pacientes com sobrepeso/obesidade é uma das medidas mais eficazes. Cada quilo perdido pode reduzir significativamente a pressão sobre o assoalho pélvico.</p><p><strong>B) Interromper ou diminuir o tabagismo</strong> - Correto. O tabaco contém nicotina, que irrita a bexiga e pode causar tosse crônica, aumentando a pressão abdominal e contribuindo para a incontinência.</p><p><strong>C) Urinar em intervalos programados</strong> - Correto. O treinamento vesical com micção programada ajuda a reeducar a bexiga, melhorando o controle sobre a urgência e frequência.</p><p><strong>E) Trocar aspirina para clopidogrel</strong> - Esta alternativa parece ser um erro de formulação da questão, não tendo relação com incontinência urinária.</p><p>É importante lembrar que o tratamento conservador deve ser sempre a primeira linha de abordagem, sendo efectivo em 50-70% dos casos de incontinência leve a moderada.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia",
+        "Ginecologia_Uroginecologia_IncontinenciaUrinaria"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente em trabalho de parto é avaliada pelo Obstetra, que ao realizar o toque, observa que a conjugata diagonalis é de 13 cm. Baseado neste achado, a conjugata vera deve ser de:",
+      "alternativas": [
+        "9,0 cm",
+        "11,5 cm",
+        "10,5 cm",
+        "13,5 cm",
+        "imunoglobulina IgG4."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda conceitos fundamentais de desproporção céfalo-pélvica e mensuração das dimensões pélvicas durante o trabalho de parto. A HCB quer testar seu conhecimento sobre as medidas obstétricas e sua interpretação clínica para avaliar o progresso do parto.</p><p><strong>A resposta correta é B - 11,5 cm.</strong> Esta é a conjugata vera esperada quando a conjugata diagonalis mede 13 cm.</p><p>Vamos entender o cálculo:</p><p>A <strong>conjugata diagonalis</strong> é medida durante o toque vaginal: vai da borda inferior da sínfise púbica até o promontório sacral. Esta medida é aproximadamente 1,5 cm maior que a conjugata vera.</p><p>A <strong>conjugata vera</strong> é a medida verdadeira do estreito superior: vai da borda superior da sínfise púbica até o promontório sacral. Esta é a medida que realmente interessa, pois determina se a apresentação pode passar pelo estreito pélvico.</p><p><strong>Relação matemática:</strong> Conjugata vera = Conjugata diagonalis - 1,5 cm</p><p>Portanto: 13,0 cm - 1,5 cm = 11,5 cm</p><p>Agora vamos analisar as outras alternativas:</p><p><strong>A) 9,0 cm</strong> - Esta seria a medida se subtraíssemos 4 cm da conjugata diagonalis, o que não está correto. Uma conjugata vera de 9 cm indica desproporção grave e contraindica o parto vaginal.</p><p><strong>C) 10,5 cm</strong> - Esta seria a medida se subtraíssemos 2,5 cm, o que não corresponde à relação anatômica real.</p><p><strong>D) 13,5 cm</strong> - Esta seria maior que a própria conjugata diagonalis, o que é anatomicamente impossível.</p><p><strong>E) Imunoglobulina IgG4</strong> - Esta alternativa não tem relação com dimensões pélvicas e parece ser uma pegadinha da questão.</p><p>Uma conjugata vera de 11,5 cm está dentro do limite mínimo aceptável (≥ 11,0 cm) para permitir o parto vaginal em muitas pacientes, considerando também a circunferência cefálica fetal.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Parto",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_BaciaObstetricaEPelvimetria"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Em gestação complicada com DHEG, a síndrome HELLP demonstra extrema gravidade. O achado que não é característico de síndrome HELLP é:",
+      "alternativas": [
+        "Presença de esquizócitos e equinócitos.",
+        "Transaminases elevadas.",
+        "Aumento do DHL.",
+        "Plaquetose.",
+        "suspender a sinvastatina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a síndrome HELLP (Hemolysis, Elevated Liver enzymes, Low Platelets), uma complicação grave da pré-eclâmpsia. A HCB quer verificar se você conhece os critérios diagnósticos e as alterações laboratoriais características desta síndrome.</p><p><strong>A resposta correta é D - Plaquetose.</strong> Esta é a única alternativa que NÃO é característica da síndrome HELLP, pois o achado típico é plaquetopenia, não plaquetose.</p><p>Vamos entender por que as outras alternativas são características da síndrome HELLP:</p><p><strong>A) Presença de esquizócitos e equinócitos</strong> - Característico. A hemólise microangiopática causa fragmentação das hemácias, resultando em esquizócitos no esfregaço periférico. Equinócitos também podem estar presentes.</p><p><strong>B) Transaminases elevadas</strong> - Característico. O comprometimento hepático na síndrome HELLP causa elevação das transaminases (AST e ALT), geralmente > 70 UI/L ou duas vezes o valor normal.</p><p><strong>C) Aumento do DHL</strong> - Característico. A desidrogenase lática (DHL) está elevada devido à hemólise e ao damage celular hepático. Valores > 600 UI/L são comuns.</p><p><strong>D) Plaquetose</strong> - NÃO característico. Na síndrome HELLP, espera-se plaquetopenia (< 100.000/mm³), sendo o trombocitopenia um dos critérios diagnósticos. Plaquetose (aumento das plaquetas) não faz parte do quadro.</p><p><strong>E) Suspender a sinvastatina</strong> - Esta alternativa parece ser um erro de formulação, não having relação com critérios laboratoriais da síndrome HELLP.</p><p><strong>Cronologia da síndrome HELLP:</strong> Plaquetas ↓ → DHL ↑ → Bilirrubina ↑ → Transaminases ↑ → Hemólise periférica</p><p>É fundamental reconhecer que a presença de plaquetopenia, hemólise e disfunção hepática define esta síndrome grave, que pode evoluir para coagulopatia, insuficiência hepática e risco de morte materna.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_DoencasAssociadasAGestacao",
+        "Obstetricia_IntercorrenciasObstetricasObst_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_IntercorrenciasObstetricasObst_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_DisturbiosHipertensivosNaGesta_2"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Gestações complicadas por diabete são mais propensas a desenvolver uma gama de outras complicações em relação às não diabéticas, exceto:",
+      "alternativas": [
+        "Polidramnia.",
+        "Distocia de bisacromial.",
+        "Restrição de crescimento fetal.",
+        "Hemorragia pós-parto.",
+        "tuberculose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 avalia seu conhecimento sobre as complicações obstétricas específicas do diabetes mellitus.</strong> O examinador busca identificar quais condições são favorecidas pelo ambiente metabólico alterado da diabetes gestacional.</p><p>Vamos analisar cada alternativa sistematicamente:</p><p><strong>A) Polidramnia - CORRETA</strong><br>Em gestantes diabéticas, a polidramnia é muito comum devido à poliúria fetal resultante da hiperglicemia materna que-crossa a placenta. O excesso de líquido amniótico pode atingir volumes superiores a 2 litros, criando risco de trabalho de parto prematuro.</p><p><strong>B) Distocia de bisacromial - CORRETA</strong><br>A macrossomia fetal, característica do diabetes mal controlado, resulta em diâmetros de ombros aumentados. Isso pode causar dificuldade na expulsão dos ombros após a saída da cabeça, constituindo uma emergência obstétrica.</p><p><strong>C) Restrição de crescimento fetal - ERRADA (GABARITO)</strong><br>Esta é a exceção! O diabetes mellitus, especialmente o mal controlado, tipicamente causa hiperglicemia fetal, resultando em macrossomia (crescimento excessivo) e NÃO restrição. A restrição de crescimento está mais associada a hipertensão, insuficiência placentária e má nutrição.</p><p><strong>D) Hemorragia pós-parto - CORRETA</strong><br>O útero diabético apresenta alterações na contratilidade devido à miopatia hiperglicêmica. Isso aumenta significativamente o risco de atonia uterina e sangramento pós-parto grave.</p><p><strong>E) Tuberculose - CORRETA</strong><br>O diabetes compromete a imunidade celular, tornando as gestantes diabéticas mais susceptíveis a infecções oportunistas, incluindo tuberculose. Esta infecção pode reativar durante a gestação.</p><p><strong>Veredito: A resposta correta é C - Restrição de crescimento fetal.</strong> Em diabetes, o que observamos é o OPOSTO: macrossomia devido à hiperglicemia fetal persistente.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg_RepercussoesDoDiabetesNaGestac",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Dos marcadores do Perfil Biofísico Fetal na avaliação da vitalidade fetal, o tônus fetal tem início em torno de:",
+      "alternativas": [
+        "7,5 - 8,5 semanas.",
+        "11 - 13 semanas.",
+        "14,5 - 15,5 semanas.",
+        "17 - 19 semanas.",
+        "trocar a ciprofloxacino por amoxicilina-clavulonato."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 avalia o conhecimento sobre cronologia da maturação fetal e o desenvolvimento dos parâmetros do Perfil Biofísico Fetal (PBF).</strong> O PBF é uma ferramenta essencial para avaliar o bem-estar fetal em gestações de risco.</p><p>Analisando as alternativas disponíveis:</p><p><strong>A) 7,5 - 8,5 semanas - CORRETA (GABARITO)</strong><br>O tônus fetal surge precocemente no desenvolvimento e é detectável já entre 7,5 a 8,5 semanas de idade gestacional. Representa a primeira manifestação de atividade fetal e é um marcador importante de integridade do sistema nervoso central fetal.</p><p><strong>B) 11 - 13 semanas - INCORRETA</strong><br>Este período corresponde ao desenvolvimento de movimentos respiratórios e maior atividade motora fetal. O tônus fetal já está presente há várias semanas nesta fase.</p><p><strong>C) 14,5 - 15,5 semanas - INCORRETA</strong><br>Nessa idade gestacional, o PBF já pode ser totalmente aplicável com todos os parâmetros já estabelecidos. O tônus fetal não surge nesta época.</p><p><strong>D) 17 - 19 semanas - INCORRETA</strong><br>Período de consolidação dos reflexos e padrões de movimento mais complexos. O tônus fetal é bem estabelecido há muito tempo.</p><p><strong>E) Trocar ciprofloxacino por amoxicilina-clavulonato - INCORRETA</strong><br>Esta alternativa é um distrator médico que não faz sentido no contexto da questão. Ciprofloxacino não é primeira escolha em gestantes devido ao risco de artropatias no concepto.</p><p><strong>Veredito: A resposta correta é A - 7,5 - 8,5 semanas.</strong> O tônus fetal é o primeiro parâmetro do PBF a aparecer, estabelecendo a base para avaliação da vitalidade fetal.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_AvaliacaoDaVitalidadeFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_UltrassomEmObstetriciaUsg"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Estrutura que drena para a veia renal esquerda:",
+      "alternativas": [
+        "Veia uterina esquerda.",
+        "Veia ovariana esquerda.",
+        "Veia cervical esquerda.",
+        "Artéria ovariana esquerda.",
+        "telangiectasia hemorrágica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 testa conhecimentos de anatomia vascular do sistema geniturinário feminino.</strong> O foco está na drenagem venosa da veia renal esquerda e suas tributárias anatômicas.</p><p>Vamos revisar sistematicamente cada alternativa:</p><p><strong>A) Veia uterina esquerda - INCORRETA</strong><br>A veia uterina esquerda drena diretamente para a veia ilíaca primária esquerda, não para a veia renal. Esta drenagem pode se tornar relevante em casos de varizes pélvicas ou síndrome de congestão pélvica.</p><p><strong>B) Veia ovariana esquerda - CORRETA (GABARITO)</strong><br>A veia ovariana esquerda (ou veia gonadal esquerda) é tributária direta da veia renal esquerda. Esta anatomia é crucial em síndromes como a síndrome de congestão pélvica, onde o refluxo da veia renal esquerda para a veia ovariana pode causar sintomas pélvicos crônicos.</p><p><strong>C) Veia cervical esquerda - INCORRETA</strong><br>As veias cervicais drenam para o plexo venoso do útero e vagina, que por sua vez conecta-se às veias hipogástricas. Não há drenagem para o sistema venoso renal.</p><p><strong>D) Artéria ovariana esquerda - INCORRETA</strong><br>Esta é uma artéria, não uma veia, e sua anatomia é completamente diferente. A artéria ovariana nasce diretamente da aorta abdominal e irriga ovário, tuba e parte do útero.</p><p><strong>E) Telangiectasia hemorrágica - INCORRETA</strong><br>Esta é uma condição patológica, não uma estrutura anatômica. Telangiectasias são dilatações de pequenos vasos sanguíneos que podem causar sangramentos.</p><p><strong>Veredito: A resposta correta é B - Veia ovariana esquerda.</strong> Esta é a única estrutura mencionada que realmente drena para a veia renal esquerda, fato anatomicamente estabelecido.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_AnatomiaDoTratoGenitalFeminino",
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_AnatomiaDoTratoGenitalFeminino",
+        "Ginecologia_GinecologiaBasica_AnatomiaDoTratoGenitalFeminino_VascularizacaoPelvica"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Método contraceptivo de eficácia superior à laqueadura tubária bilateral:",
+      "alternativas": [
+        "SIU de levonorgestrel.",
+        "DIU de cobre.",
+        "Implante de etonogestrel.",
+        "Pílula combinada oral.",
+        "ressecção cirúrgica da massa do lobo inferior direito."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 avalia seu conhecimento sobre eficácia contraceptiva comparativa.</strong> O foco está em identificar o método com maior taxa de sucesso entre as opções mais avançadas disponíveis.</p><p>Vamos analisar a eficácia de cada método proposto:</p><p><strong>A) SIU de levonorgestrel - INCORRETA</strong><br>O Sistema Intrauterino de levonorgestrel apresenta eficácia de aproximadamente 99,8% no primeiro ano. Embora seja altamente eficaz, ainda apresenta taxas ligeiramente inferiores ao implante subcutâneo.</p><p><strong>B) DIU de cobre - INCORRETA</strong><br>A eficácia do DIU de cobre é de 99,4-99,6%, mas é menos eficaz que as versões hormonais. Pode causar menstruações mais intensas e prolongadas.</p><p><strong>C) Implante de etonogestrel - CORRETA (GABARITO)</strong><br>Os implantes de etonogestrel alcançam eficácia de 99,95% no primeiro ano, superando todos os outros métodos reversíveis, incluindo laqueadura. Proporcionam 3 anos de proteção contínua com taxa de falha inferior a 0,05%.</p><p><strong>D) Pílula combinada oral - INCORRETA</strong><br>A eficácia das pílulas orais varia entre 91-99% dependendo do uso correto. A taxa de falha típica é de 7-9% por ano, muito superior aos métodos de longa ação.</p><p><strong>E) Ressecção cirúrgica da massa do lobo inferior direito - INCORRETA</strong><br>Esta alternativa não faz sentido no contexto contraceptivo. Parece ser um distrator médico irrelevante para a questão.</p><p><strong>Veredito: A resposta correta é C - Implante de etonogestrel.</strong> Os LARCs (métodos de longa ação) são superiores aos métodos de curta ação, e o implante específico apresenta a maior taxa de eficácia reversível disponível.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_MetodosHormonaisCombinados",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_DispositivosIntrauterinos"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Até o momento, comprovadamente, a única situação capaz de provocar quadro de pré-eclâmpsia grave antes de 20 semanas de gestação é:",
+      "alternativas": [
+        "Gestação gemelar.",
+        "Polidrâmnio.",
+        "Defeito aberto do tubo neural.",
+        "Mola hidatiforme.",
+        "pericardite aguda."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 aborda uma situação obstétrica rara e específica: pré-eclâmpsia grave antes de 20 semanas de gestação.</strong> O conhecimento sobre etiologia da pré-eclâmpsia precoce é crucial para diagnóstico diferencial e manejo adequado.</p><p>Analisando cada alternativa proposta:</p><p><strong>A) Gestação gemelar - INCORRETA</strong><br>Gestações gemelares aumentam o risco de pré-eclâmpsia, mas raramente antes de 20 semanas. O risco de pré-eclâmpsia é maior no segundo e terceiro trimestres em gestações múltiplas.</p><p><strong>B) Polidrâmnio - INCORRETA</strong><br>Polidrâmnio pode estar associado a complicações como trabalho de parto prematuro, mas não é causador direto de pré-eclâmpsia antes de 20 semanas. A etiologia é multifatorial.</p><p><strong>C) Defeito aberto do tubo neural - INCORRETA</strong><br>Malformações do tubo neural podem estar associadas a outras condições, mas não causam pré-eclâmpsia. São mais relacionadas à deficiência de ácido fólico.</p><p><strong>D) Mola hidatiforme - CORRETA (GABARITO)</strong><br>A mola hidatiforme completa é a ÚNICA condição comprovada que pode causar pré-eclâmpsia grave antes de 20 semanas. Isso ocorre devido à produção excessiva de HCG pelos trofoblastos mole, que stimula anormalmente a produção de fatores angiogênicos placentários e causa disfunção endotelial precoce.</p><p><strong>E) Pericardite aguda - INCORRETA</strong><br>Esta é uma condição médica não relacionada à gestação. Pericardite pode ocorrer em gestantes, mas não causa pré-eclâmpsia.</p><p><strong>Veredito: A resposta correta é D - Mola hidatiforme.</strong> A fisiopatologia é específica: a produção descontrolada de HCG estimula a liberação de fatores que causam vazamento capilar e disfunção endotelial, resultando em pré-eclâmpsia grave em idade gestacional precoce.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_DoencaTrofoblasticaGestacional",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Preeclampsia"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "As recomendações de proteção aos trabalhadores dos serviços de saúde no atendimento de COVID-19 e outras síndromes gripais, está de acordo com o item:",
+      "alternativas": [
+        "Pretende auxiliar os serviços de saúde e os trabalhadores que neles atuam na implementação de ações e estratégias de minimização da exposição a patógenos respiratórios, em especial ao novo coronavírus (SARS-CoV-2).",
+        "Pretende auxiliar os serviços de saúde e não os trabalhadores que neles atuam na implementação de ações e estratégias de minimização da exposição a patógenos respiratórios, em especial ao novo coronavírus (SARS-CoV-2).",
+        "Pretende auxiliar os serviços de saúde e os trabalhadores que neles atuam na implementação de ações e estratégias de minimização da exposição a patógenos respiratórios, exceto o novo coronavírus (SARS-CoV-2).",
+        "Pretende não auxiliar os serviços de saúde e sim os trabalhadores que neles atuam na implementação de ações e estratégias de minimização da exposição a patógenos respiratórios, em especial ao novo coronavírus (SARS-CoV-2).",
+        "vancomicina."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da HCB avalia conhecimento sobre protocolos oficiais de proteção a trabalhadores de saúde durante a pandemia de COVID-19. O foco é identificar a descrição correta de recomendações institucionais.</p><p><strong>A resposta correta é A.</strong> Esta alternativa apresenta de forma precisa o objetivo das diretrizes oficiais de proteção aos trabalhadores da saúde.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A (CORRETA):</strong> Descreve corretamente que as recomendações visam auxiliar tanto os serviços de saúde quanto os trabalhadores, focando em minimizar a exposição a patógenos respiratórios, incluindo especificamente o SARS-CoV-2.</p><p><strong>Alternativa B (INCORRETA):</strong> Apresenta erro fundamental ao excluir os trabalhadores do escopo de auxílio das recomendações, o que contradiz o princípio básico de proteção ocupacional.</p><p><strong>Alternativa C (INCORRETA):</strong> Exclui incorretamente o SARS-CoV-2 das patógenos-alvo, sendo que a COVID-19 foi o principal foco das recomendações durante o período.</p><p><strong>Alternativa D (INCORRETA):</strong> Inverte logicamente o objetivo, sugerindo que NÃO deveria auxiliar os serviços de saúde, o que vai contra a finalidade das normas de biossegurança.</p><p><strong>Alternativa E:</strong> Apresenta conteúdo completamente irrelevante (vancomicina) e não responde à questão proposta.</p><p>O raciocínio clínico para chegar à resposta correta baseia-se na compreensão de que protocolos de biossegurança visam sempre proteger trabalhadores e instituições, sendo o SARS-CoV-2 a principal preocupação nas diretrizes de COVID-19.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "A abordagem educativa deve ter como meta transformar o diabetes em parte integrante da vida da pessoa, a fim de que a doença:",
+      "alternativas": [
+        "seja vista como controladora e ameaçadora.",
+        "não seja vista como controladora e sim ameaçadora.",
+        "não seja vista como controladora e ameaçadora.",
+        "seja vista como controladora e não ameaçadora.",
+        "radiografia de coluna; prednisona oral."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da HCB aborda princípios fundamentais da educação em diabetes mellitus, especificamente sobre o enfoque psicossocial que deve ser dado ao tratamento da doença.</p><p><strong>A resposta correta é C.</strong> Esta alternativa reflete a abordagem educacional mais adequada para o manejo do diabetes.</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> Sugere que o diabetes deve ser visto como controladora e ameaçadora, o que é prejudicial e contraria os princípios da educação em saúde. Uma visão negativa da doença pode gerar ansiedade, resistência ao tratamento e piora do controle glicêmico.</p><p><strong>Alternativa B (INCORRETA):</strong> APRESENTA CONTRADIÇÃO INTERNA - afirma que a doença não deve ser vista como controladora, mas sim ameaçadora, o que mantém o aspecto negativo e não é desejável na educação terapêutica.</p><p><strong>Alternativa C (CORRETA):</strong> Elimina tanto o aspecto de controle da doença pelo paciente quanto o medo/ameaça que ela possa representar. Esta abordagem busca integração natural da doença na vida do paciente, reduzindo estresse e melhorando a adesão ao tratamento.</p><p><strong>Alternativa D (INCORRETA):</strong> Mantém o aspecto controlador da doença, o que é contraproducente e pode gerar comportamentos de esquiva ou negação.</p><p><strong>Alternativa E:</strong> Contém informação irrelevante (radiografia de coluna e prednisona) que não se relaciona com a questão sobre educação em diabetes.</p><p>A educação em diabetes deve sempre buscar reduzir o impacto psicológico negativo da doença, promovendo aceitação e adaptação saudável.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Toda pessoa vivendo ou convivendo com HIV tem direito:",
+      "alternativas": [
+        "à continuação de sua vida civil, profissional, e não sexual e afetiva, e nenhuma ação poderá restringir seus direitos completos à cidadania.",
+        "à continuação de sua vida civil, profissional, sexual e afetiva, e nenhuma ação poderá restringir seus direitos completos à cidadania.",
+        "à continuação de sua vida civil, profissional, sexual e afetiva, e toda ação poderá restringir seus direitos completos à cidadania.",
+        "à continuação de sua vida civil, profissional, sexual e não afetiva, e nenhuma ação poderá restringir seus direitos completos à cidadania.",
+        "síndrome do desequilíbrio da diálise."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da HCB avalia conhecimento sobre os direitos fundamentais das pessoas vivendo com HIV/AIDS, enfocando aspectos relacionados aos direitos civis, profissionais, sexuais e afetivos.</p><p><strong>A resposta correta é B.</strong> Esta alternativa representa a compreensão mais abrangente e correta dos direitos das pessoas com HIV.</p><p>Examinando cada alternativa detalhadamente:</p><p><strong>Alternativa A (INCORRETA):</strong> Exclui incorretamente os direitos sexuais e afetivos, o que representa discriminação e violação de direitos humanos fundamentais. Pessoas com HIV mantêm todos os direitos relacionados à vida sexual e afetiva, com orientação adequada sobre prevenção.</p><p><strong>Alternativa B (CORRETA):</strong> Reconhece de forma completa e adequada todos os aspectos da vida civil, profissional, sexual e afetiva, sem restrições indevidas aos direitos de cidadania. Esta perspectiva está alinhada com as diretrizes de direitos humanos e políticas públicas de HIV/AIDS no Brasil.</p><p><strong>Alternativa C (INCORRETA):</strong> APRESENTA CONTRADIÇÃO GRAVE - enquanto reconhece os direitos civis, profissionais, sexuais e afetivos, afirma incorretamente que \"toda ação poderá restringir\" estes direitos, o que contradiz os princípios de não discriminação.</p><p><strong>Alternativa D (INCORRETA):</strong> Exclui incorretamente os direitos afetivos, mantendo apenas os aspectos civil, profissional e sexual. Isso representa uma visão parcial e discriminatória dos direitos das pessoas com HIV.</p><p><strong>Alternativa E:</strong> Apresenta termo médico irrelevante (síndrome do desequilíbrio da diálise) que não responde à questão sobre direitos de pessoas com HIV.</p><p>O princípio fundamental é que HIV/AIDS não deve restringir direitos de cidadania quando há proteção adequada e conhecimento sobre prevenção.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_SaudeDoTrabalhador"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Destaca-se que a vigilância epidemiológica da COVID-19 é dinâmica, sendo adequado que:",
+      "alternativas": [
+        "Está continuamente sendo construída à luz das evidências técnicas e não científicas internacionais divulgadas, e pelas recomendações emitidas pela OMS.",
+        "Está continuamente sendo construída à luz das evidências técnicas e científicas internacionais divulgadas, e pelas recomendações nunca emitidas pela OMS.",
+        "Está continuamente sendo construída à luz das evidências não técnicas e não científicas internacionais divulgadas, e pelas recomendações emitidas pela OMS.",
+        "Está continuamente sendo construída à luz das evidências técnicas e científicas internacionais divulgadas, e pelas recomendações emitidas pela OMS.",
+        "solicitar biópsia hepática para diferenciação de esteato-hepatite não alcoólica da hepatopatia alcoólica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da HCB aborda o caráter dinâmico e baseado em evidências da vigilância epidemiológica da COVID-19, testando conhecimento sobre a fundamentação científica de protocolos de saúde pública.</p><p><strong>A resposta correta é D.</strong> Esta alternativa apresenta de forma precisa as bases da vigilância epidemiológica eficaz durante a pandemia.</p><p>Análise detalhada das alternativas:</p><p><strong>Alternativa A (INCORRETA):</strong> APRESENTA CONTRADIÇÃO FUNDAMENTAL - afirma que as evidências são \"técnicas e não científicas\", o que é um oxímoro. Vigilância epidemiológica deve basear-se em evidências científicas rigorosas, não em dados não-científicos.</p><p><strong>Alternativa B (INCORRETA):</strong> Contém erro conceitual grave ao afirmar que as recomendações \"nunca foram emitidas pela OMS\". A Organização Mundial da Saúde emitiu numerous recomendações durante a pandemia, sendo fonte central de diretrizes globais.</p><p><strong>Alternativa C (INCORRETA):</strong> Combina dois erros: \"evidências não técnicas e não científicas\" (conceitualmente inconsistente) e omite incorretamente a OMS como fonte de recomendações.</p><p><strong>Alternativa D (CORRETA):</strong> Descreve corretamente que a vigilância epidemiológica se baseia em evidências técnicas e científicas (fundamentação sólida) e nas recomendações emitidas pela OMS (organização internacional de referência).</p><p><strong>Alternativa E:</strong> Contém informação médica irrelevante (biópsia hepática) que não se relaciona com vigilância epidemiológica da COVID-19.</p><p>Vigilância epidemiológica eficaz depende de evidências científicas robustas e diretrizes de organismos internacionais reconhecidos, especialmente durante emergências de saúde pública.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_AspectosEpidemiologicosDasDoen",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Existem constatações apontam para a ineficácia das estratégias tradicionais, sendo necessário incorporar aos serviços de saúde novas abordagens para motivar aqueles que têm diabetes, sensibilizando-os para a adoção de um novo estilo de vida e conscientizando-os sobre os riscos da doença caso não haja controle glicêmico. Sendo adequado que:",
+      "alternativas": [
+        "A falta de conhecimento sobre a doença, por parte tanto dos cuidadores e não dos familiares como e da própria pessoa com diabetes, associada a inadequadas capacitação e integração dos profissionais de saúde, está diretamente relacionada à dificuldade de a",
+        "A falta de conhecimento sobre a doença, por parte tanto dos cuidadores e familiares como da própria pessoa com diabetes, associada a inadequadas capacitação e integração dos profissionais de saúde, está diretamente relacionada à dificuldade de adesão aos",
+        "A falta de conhecimento sobre a doença, por parte tanto dos cuidadores e familiares como da própria pessoa com diabetes, associada a adequada capacitação e não integração dos profissionais de saúde, está diretamente relacionada à dificuldade de adesão aos",
+        "A falta de conhecimento sobre a doença, por parte tanto dos cuidadores e familiares como da própria pessoa com diabetes, associada a inadequadas capacitação e integração dos profissionais de saúde, está diretamente relacionada à facilidade de adesão aos p",
+        "trombólise com estreptoquinase ou ativador do plasminogênio tecidual recombinante."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da HCB avalia compreensão sobre os fatores que limitam a eficácia de estratégias tradicionais de tratamento do diabetes e a importância da educação adequada para adesão terapêutica.</p><p><strong>A resposta correta é B.</strong> Esta alternativa identifica corretamente os elementos-chave que impactam a adesão ao tratamento do diabetes.</p><p>Análise sistemática das alternativas:</p><p><strong>Alternativa A (INCORRETA):</strong> APRESENTA INCONSISTÊNCIA LÓGICA GRAVE - afirma que a falta de conhecimento dos \"cuidadores e NÃO dos familiares\" está relacionada às dificuldades, o que contradiz a evidência de que familiares são fundamentais no suporte ao diabetes. Além disso, a estrutura sintática está fragmentada e incompleta.</p><p><strong>Alternativa B (CORRETA):</strong> Identifica corretamente que a falta de conhecimento tanto de \"cuidadores E familiares\" (não excluindo nenhum grupo) associada a \"inadequadas capacitação e integração dos profissionais de saúde\" está relacionada à dificuldade de adesão. Esta compreensão reflete a abordagem multidisciplinar necessária no diabetes.</p><p><strong>Alternativa C (INCORRETA):</strong> Contém erro ao afirmar \"adequada capacitação e NÃO integração\", quando na verdade tanto capacitação quanto integração inadequadas dos profissionais contribuem para problemas de adesão.</p><p><strong>Alternativa D (INCORRETA):</strong> APRESENTA CONTRADIÇÃO LÓGICA FUNDAMENTAL - associa os mesmos fatores negativos (falta de conhecimento, capacitação inadequada) à \"facilidade de adesão\", o que é logicamente inconsistente.</p><p><strong>Alternativa E:</strong> Contém informação médica irrelevante (trombólise) que não responde à questão sobre educação em diabetes.</p><p>A adesão ao tratamento do diabetes depende de educação adequada envolvendo toda a rede de suporte (paciente, familiares, profissionais) e da capacitação adequada da equipe de saúde.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa",
+        "MedicinaPreventiva_SaudeDoTrabalhador"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "A educação em saúde é reconhecida como um processo de responsabilidade:",
+      "alternativas": [
+        "dos serviços de saúde, das instituições sociais e não da população a que se destina.",
+        "dos serviços de saúde, mas nunca das instituições sociais e da população a que se destina.",
+        "dos serviços de saúde, das instituições sociais e da população a que se destina.",
+        "dos serviços de saúde, das instituições sociais e da população a que não se destina.",
+        "hemograma, coagulograma, radiografia de tórax, ECG e laparotomia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 aborda um conceito fundamental da saúde pública: o caráter multidisciplinar da educação em saúde.</strong></p><p><strong>A competência avaliada é o entendimento sobre a responsabilidade compartilhada no processo educativo em saúde.</strong></p><p><strong>A resposta correta é C - dos serviços de saúde, das instituições sociais e da população a que se destina.</strong></p><p><strong>ANÁLISE DETALHADA DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (ERRADA):</strong> Exclui a população do processo de educação em saúde, o que contradiz os princípios modernos de saúde pública. A educação em saúde é um processo bidirecional que requer a participação ativa da população.</p><p><strong>Alternativa B (ERRADA):</strong> Apresenta inconsistência ao mencionar serviços de saúde mas negar o papel das instituições sociais e da população. Na realidade, todos os atores devem estar envolvidos.</p><p><strong>Alternativa C (CORRETA):</strong> Reflete a visão contemporânea da educação em saúde como um processo de responsabilidade compartilhada entre: 1) Serviços de saúde (que possuem conhecimento técnico), 2) Instituições sociais (escolas, organizações comunitárias, mídia), e 3) A própria população (que possui conhecimento sobre suas necessidades e contexto cultural).</p><p><strong>Alternativa D (ERRADA):</strong> Comete o erro de mencionar educação para população que &quot;não se destina&quot;, o que não faz sentido lógico no contexto da questão.</p><p><strong>Alternativa E (ERRADA):</strong> Trata-se de um conjunto de exames médicos (hemograma, coagulograma, etc.) que não se relacionam com o tema de educação em saúde.</p><p>Esta questão evidencia a importância da educação em saúde como processo participativo e colaborativo, valorizando não apenas o conhecimento técnico dos profissionais, mas também o saber popular e o contexto social em que está inserido.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "As pessoas infectadas podem espalhar o SARS-CoV-2 para outras pessoas, conforme as alternativas abaixo, exceto:",
+      "alternativas": [
+        "Através de gotículas respiratórias produzidas quando uma pessoa infectada tosse, mas não no espirro.",
+        "Por contato próximo entre indivíduos.",
+        "Gotículas infectadas podem atingir a boca, nariz e mucosas de pessoas próximas ou serem inaladas nos pulmões",
+        "Por meio do contato com superfícies ou objetos que contenha o SARS-CoV-2 e, em seguida tocando boca e nariz.",
+        "366 mosm/kg de água e 166,6 mEq/L."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 testa conhecimentos atualizados sobre epidemiologia e transmissão viral do SARS-CoV-2.</strong></p><p><strong>A competência avaliada é a compreensão dos mecanismos de transmissão viral, com foco nas vias respiratórias e contato.</strong></p><p><strong>A resposta correta é A - Através de gotículas respiratórias produzido quando uma pessoa infectada tosse, mas não no espirro.</strong></p><p><strong>ANÁLISE DETALHADA DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Esta é a afirmativa INCORRETA e, portanto, a resposta da questão. Tanto o espirro quanto a tossem produzem gotículas respiratórias potencialmente infectantes. O espirro pode gerar até 40.000 gotículas, enquanto a tossem gera aproximadamente 3.000 gotículas, ambas com capacidade de transmissão do vírus.</p><p><strong>Alternativa B (CORRETA):</strong> O contato próximo entre indivíduos (menos de 1,5m) é um importante mecanismo de transmissão, permitindo que gotículas alcancem as mucosas de pessoas próximas.</p><p><strong>Alternativa C (CORRETA):</strong> As gotículas podem atingir mucosas oral, nasal e ocular, ou serem inaladas diretamente para os pulmões, sendo este um dos principais mecanismos de infecção.</p><p><strong>Alternativa D (CORRETA):</strong> A transmissão por fomites (superfícies contaminadas) é documentada, embora menos frequente que a transmissão aérea direta. O vírus pode permanecer viável por horas a dias em diferentes superfícies.</p><p><strong>Alternativa E (ERRADA):</strong> Apresenta valores de osmolaridade (366 mosm/kg) e concentração de cloro (166,6 mEq/L) que não se relacionam com os mecanismos de transmissão do SARS-CoV-2.</p><p>Esta questão destaca a importância de compreender todos os mecanismos de transmissão viral para desenvolvimento de estratégias preventivas eficazes, baseadas em evidências científicas atualizadas.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "A promoção das práticas sexuais seguras, com o uso do preservativo em todas as relações:",
+      "alternativas": [
+        "constitui método inefetivo e central para o controle da transmissão sexual do HIV.",
+        "constitui método efetivo e nunca central para o controle da transmissão sexual do HIV.",
+        "constitui método efetivo e central para o controle da transmissão não sexual do HIV.",
+        "constitui método efetivo e central para o controle da transmissão sexual do HIV.",
+        "tiamina intravenosa."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 aborda estratégias de prevenção primária do HIV, especificamente o papel dos métodos de barreira na saúde pública.</strong></p><p><strong>A competência avaliada é o conhecimento sobre eficácia de medidas preventivas e políticas de saúde pública para controle de IST/HIV.</strong></p><p><strong>A resposta correta é D - constitui método efetivo e central para o controle da transmissão sexual do HIV.</strong></p><p><strong>ANÁLISE DETALHADA DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (ERRADA):</strong> Contradiz evidências científicas robustas. O uso de preservativo tem eficácia comprovada de 80-95% na prevenção da transmissão sexual do HIV quando usado consistentemente e corretamente.</p><p><strong>Alternativa B (ERRADA):</strong> Embora reconheça a efetividade do método, nega seu papel central na prevenção. Na verdade, o preservativo é considerado uma das principais estratégias de prevenção, especialmente em populações de alta incidência.</p><p><strong>Alternativa C (ERRADA):</strong> O preservativo NÃO previne transmissão não sexual (como uso de drogas injetáveis ou transfusão sanguínea), que requer outras estratégias de prevenção (programas de redução de danos, controle sanguíneo).</p><p><strong>Alternativa D (CORRETA):</strong> Reflete o consenso científico atual. O preservativo é altamente efetivo na prevenção da transmissão sexual e constitui estratégia central das políticas públicas de controle do HIV, conforme diretrizes do Ministério da Saúde 2025.</p><p><strong>Alternativa E (ERRADA):</strong> Tiamina intravenosa é uma vitamina utilizada no tratamento de deficiência de B1, sem relação com prevenção de HIV ou práticas sexuais seguras.</p><p>Esta questão enfatiza a importância do preservativo como ferramenta fundamental na resposta global à epidemia de HIV, sendo uma das intervenções mais custo-efetivas em saúde pública.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesSexualmenteTransmissi"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Faz-se necessário considerar a opinião da população sobre as suas necessidades reais e aquelas sentidas, as quais podem ser distintas das percebidas pelos profissionais de saúde. Sendo adequado o item:",
+      "alternativas": [
+        "É imprescindível não conhecer e respeitar os valores, as tradições e os estereótipos, bem como fomentar a responsabilidade individual e comunitária por meio de métodos participativos de educação.",
+        "É imprescindível conhecer e nunca respeitar os valores, as tradições e os estereótipos, bem como fomentar a responsabilidade individual e comunitária por meio de métodos participativos de educação.",
+        "É imprescindível conhecer e respeitar os valores, as tradições e os estereótipos, bem como fomentar a responsabilidade individual e comunitária por meio de métodos participativos de educação.",
+        "É imprescindível conhecer e respeitar os valores, as tradições e os estereótipos, bem como fomentar a responsabilidade individual e comunitária, nunca por meio de métodos participativos de educação.",
+        "níveis elevados de calcitriol."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 explora conceitos fundamentais de epidemiologia e planejamento em saúde pública: necessidades sentidas versus necessidades percebidas.</strong></p><p><strong>A competência avaliada é o entendimento sobre metodologias participativas em saúde e a importância de valorizar o conhecimento local.</strong></p><p><strong>A resposta correta é C - É imprescindível conhecer e respeitar os valores, as tradições e os estereótipos, bem como fomentar a responsabilidade individual e comunitária por meio de métodos participativos de educação.</strong></p><p><strong>ANÁLISE DETALHADA DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (ERRADA):</strong> Comete dois erros conceituais: 1) É importante CONHECER os valores e tradições (não apenas não conhecer), 2) Os estereótipos devem ser respeitados apenas quando não são prejudiciais à saúde, não sempre. Além disso, diz que é prescindível não conhecer, o que gera ambiguidade.</p><p><strong>Alternativa B (ERRADA):</strong> Inconsistente ao afirmar que é imprescindível conhecer, mas &quot;nunca respeitar&quot; os valores e tradições. Na prática de saúde comunitária, o respeito às características culturais é fundamental para a aceitação das intervenções.</p><p><strong>Alternativa C (CORRETA):</strong> Reflete a abordagem contemporânea da saúde pública que valoriza: 1) O conhecimento dos valores e tradições locais para contextualizar as intervenções, 2) O respeito às características culturais da população, 3) A promoção de responsabilidade comunitária, e 4) A utilização de métodos participativos de educação que engajam ativamente a população.</p><p><strong>Alternativa D (ERRADA):</strong> Contradiz princípios atuais ao sugerir que os métodos participativos nunca devem ser utilizados. Na verdade, métodos participativos são cada vez mais valorizados em saúde pública por promoverem maior adesão e adequação cultural das intervenções.</p><p><strong>Alternativa E (ERRADA):</strong> Calcitriol é a forma ativa da vitamina D, não relacionada ao tema de metodologias participativas em saúde.</p><p>Esta questão evidencia a evolução dos modelos de saúde pública, pasando de abordagens verticais para modelos horizontais e participativos, que valorizam o conhecimento local e promovem empoderamento comunitário.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Intervenções educativas melhoram, inclusive, os índices de massa corpórea dos indivíduos com diabetes, sendo correto que:",
+      "alternativas": [
+        "Encontros educativos impossibilitam modificações significativas no estilo de vida, contribuindo, assim, para a promoção da saúde e do bem-estar.",
+        "Encontros educativos possibilitam modificações significativas no estilo de vida, contribuindo, assim, para a promoção da saúde e do bem-estar.",
+        "Encontros educativos possibilitam modificações significativas no estilo de vida, contribuindo, assim, para a promoção da saúde e nunca do bem-estar.",
+        "Encontros educativos possibilitam modificações significativas no estilo de vida, atrapalhando assim a promoção da saúde e do bem-estar.",
+        "hipóxia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da HCB 2022 aborda o papel das intervenções educativas em doenças crônicas, especificamente no contexto do diabetes mellitus.</strong></p><p><strong>A competência avaliada é a compreensão dos benefícios das abordagens pedagógicas em saúde para manejo de condições crônicas e promoção do autocuidado.</strong></p><p><strong>A resposta correta é B - Encontros educativos possibilitam modificações significativas no estilo de vida, contribuindo, assim, para a promoção da saúde e do bem-estar.</strong></p><p><strong>ANÁLISE DETALHADA DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A (ERRADA):</strong> Contradiz evidências científicas robustas. Estudos demonstram que encontros educativos geram modificações significativas no estilo de vida, melhorando adesão medicamentosa, prática de exercícios e hábitos alimentares. A afirmativa de que &quot;impossibilitam&quot; modificações está incorreta.</p><p><strong>Alternativa B (CORRETA):</strong> Reflete a evidência científica atual. Intervenções educativas estruturadas em diabetes: 1) Melhoram conhecimento sobre a doença, 2) Promovem mudanças comportamentais sustentáveis, 3) Aumentam adesão ao tratamento, 4) Consequentemente contribuem para promoção da saúde e bem-estar dos pacientes. Diretrizes do MS 2025 enfatizam educação em diabetes como componente essencial do tratamento.</p><p><strong>Alternativa C (ERRADA):</strong> Embora reconheça a efetividade das intervenções, nega incorretamente a contribuição para o bem-estar. Na verdade, o controle adequado do diabetes e as mudanças de estilo de vida promovem significativa melhora no bem-estar físico e mental dos pacientes.</p><p><strong>Alternativa D (ERRADA):</strong> Afirmação paradoxal que combina reconhecer a efetividade das intervenções com seus efeitos negativos. A literatura científica的一致ê favorecem as intervenções educativas na promoção da saúde e bem-estar.</p><p><strong>Alternativa E (ERRADA):</strong> Hipóxia é uma condição de baixo teor de oxigênio nos tecidos, sem relação com intervenções educativas em diabetes.</p><p>Esta questão destaca a importância de abordagem multiprofissional no diabetes, onde educação em saúde representa um pilar fundamental junto com terapia medicamentosa, exercícios e nutrição adequada.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus"
+      ],
+      "tags": [
+        "HCB2022R1",
+        "HCB",
+        "R1",
+        "DF",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762667139195-49"
+    }
+  ]
+}

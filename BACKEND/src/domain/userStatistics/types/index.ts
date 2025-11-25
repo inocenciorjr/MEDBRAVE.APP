@@ -1,282 +1,209 @@
-import { Timestamp } from 'firebase-admin/firestore';
+/**
+ * TIPOS LIMPOS E SIMPLIFICADOS PARA ESTATÍSTICAS DE USUÁRIO
+ * Apenas métricas acionáveis e úteis
+ */
+
+export type Timestamp = string;
 
 /**
- * Tipos de dificuldade para análise de performance
+ * Estatísticas por especialidade
  */
-export enum DifficultyLevel {
-  BEGINNER = 'beginner',
-  INTERMEDIATE = 'intermediate', 
-  ADVANCED = 'advanced',
-  EXPERT = 'expert'
-}
-
-/**
- * Tipos de padrões de estudo identificados
- */
-export enum StudyPattern {
-  MORNING_BIRD = 'morning_bird',
-  NIGHT_OWL = 'night_owl',
-  SPRINT_LEARNER = 'sprint_learner',
-  MARATHON_LEARNER = 'marathon_learner',
-  WEEKEND_WARRIOR = 'weekend_warrior',
-  CONSISTENT_DAILY = 'consistent_daily'
-}
-
-/**
- * Níveis de retenção de conhecimento
- */
-export enum RetentionLevel {
-  POOR = 'poor',           // < 50%
-  AVERAGE = 'average',     // 50-70%
-  GOOD = 'good',          // 70-85%
-  EXCELLENT = 'excellent'  // > 85%
-}
-
-/**
- * Métricas detalhadas por filtro/tópico
- */
-export interface FilterStatistics {
-  filterId: string;
-  filterName: string;
+export interface SpecialtyStatistics {
+  specialtyId: string;
+  specialtyName: string;
   totalQuestions: number;
   correctAnswers: number;
-  accuracy: number | null;
-  averageTimePerQuestion: number | null; // em segundos
-  difficultyDistribution: Record<DifficultyLevel, number>;
-  lastStudied: Timestamp | null;
-  masteryLevel: number | null; // 0-100
-  retentionRate: number | null; // Taxa de retenção ao longo do tempo
-  improvementTrend: number | null; // Tendência de melhoria (-1 a 1)
-  predictedPerformance: number | null; // Performance prevista (0-100)
+  accuracy: number;
+  firstTimeSuccessRate: number; // % de acertos na primeira tentativa
+  questionsByMonth: Record<string, number>; // YYYY-MM -> count
+  accuracyByMonth: Record<string, number>; // YYYY-MM -> accuracy
 }
 
 /**
- * Análise de padrões temporais de estudo
+ * Estatísticas por universidade/banca
  */
-export interface StudyTimeAnalysis {
-  totalMinutesStudied: number;
-  sessionsCount: number;
-  averageSessionDuration: number | null;
-  longestSession: number | null;
-  shortestSession: number | null;
-  preferredTimeSlots: Array<{
-    hour: number;
-    frequency: number;
-    averagePerformance: number;
-  }>;
-  weeklyDistribution: Record<string, number>; // day -> minutes
-  monthlyTrend: Array<{
-    month: string;
-    minutes: number;
-    performance: number;
-  }>;
-  studyPattern: StudyPattern | null;
-  consistencyScore: number | null; // 0-100
+export interface UniversityStatistics {
+  universityId: string;
+  universityName: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  accuracy: number;
 }
 
 /**
- * Métricas de performance e aprendizado
+ * Distribuição temporal de estudo
  */
-export interface LearningMetrics {
-  totalXP: number;
-  currentLevel: number;
-  xpToNextLevel: number;
-  accuracyTrend: Array<{
-    date: Timestamp;
-    accuracy: number;
-    questionsAnswered: number;
-  }>;
-  learningVelocity: number | null; // Velocidade de aprendizado
-  retentionCurve: Array<{
-    timeInterval: string; // '1d', '7d', '30d', etc.
-    retentionRate: number;
-  }>;
-  knowledgeGaps: Array<{
-    filterId: string;
-    severity: number; // 0-100
-    lastReview: Timestamp;
-    recommendedReview: Timestamp;
-  }>;
-  strengths: string[]; // IDs dos filtros onde o usuário é forte
-  weaknesses: string[]; // IDs dos filtros onde o usuário precisa melhorar
+export interface StudyTimeDistribution {
+  byHour: Record<number, number>; // hora (0-23) -> minutos
+  byDay: Record<string, number>; // YYYY-MM-DD -> minutos
+  byWeek: Record<string, number>; // YYYY-WW -> minutos
+  byMonth: Record<string, number>; // YYYY-MM -> minutos
 }
 
 /**
- * Sistema de streaks avançado
+ * Dados de streak
  */
-export interface AdvancedStreakData {
+export interface StreakData {
   currentStreak: number;
   longestStreak: number;
-  totalDaysStudied: number;
-  streakType: 'daily' | 'weekly' | 'custom';
-  streakGoal: number;
-  freezeCards: number; // Cartas para "congelar" streak em dias perdidos
-  perfectDays: number; // Dias com 100% de acertos
-  challengeDays: number; // Dias com meta de estudo atingida
-  streakMultiplier: number; // Multiplicador de XP baseado no streak
-  lastActivityDate: Timestamp | null; // Data da última atividade
-  streakMilestones: Array<{
-    milestone: number;
-    achievedAt: Timestamp | null;
-    reward: string;
-  }>;
+  lastActivityDate: Timestamp | null;
 }
 
 /**
- * Métricas de simulados avançadas
+ * Revisões por tipo
  */
-export interface ExamMetrics {
-  totalExamsTaken: number;
-  averageScore: number | null;
-  bestScore: number | null;
-  worstScore: number | null;
-  improvementRate: number | null; // Taxa de melhoria ao longo do tempo
-  examsBySpecialty: Record<string, {
-    count: number;
-    averageScore: number;
-    lastTaken: Timestamp;
-    trend: number;
-  }>;
-  timeManagement: {
-    averageTimePerQuestion: number | null;
-    timeEfficiencyScore: number | null; // 0-100
-    rushRate: number | null; // % de questões respondidas com pressa
-  };
-  confidenceMetrics: {
-    accuracyWhenConfident: number | null;
-    accuracyWhenUnsure: number | null;
-    overconfidenceRate: number | null;
-  };
+export interface ReviewsByType {
+  questions: number;
+  flashcards: number;
+  errorNotebook: number;
+  total: number;
 }
 
 /**
- * Dados de comparação com peers
+ * Snapshot de estatísticas para comparação temporal
  */
-export interface PeerComparison {
-  userPercentile: number; // Percentil do usuário (0-100)
-  averagePeerAccuracy: number;
-  userAccuracy: number;
-  averagePeerStudyTime: number;
-  userStudyTime: number;
-  strongerThanPeersIn: string[]; // Áreas onde supera os peers
-  weakerThanPeersIn: string[]; // Áreas onde está abaixo dos peers
-  similarUsers: Array<{
-    userId: string;
-    similarityScore: number;
-    commonStrengths: string[];
-    commonWeaknesses: string[];
-  }>;
+export interface StatisticsSnapshot {
+  accuracy: number;
+  questionsAnswered: number;
+  averageSessionDuration: number;
+  timestamp: Timestamp;
 }
 
 /**
- * Sistema de recomendações inteligentes
+ * Dados de calendário de calor
  */
-export interface SmartRecommendations {
-  nextTopicsToStudy: Array<{
-    filterId: string;
-    priority: number; // 0-100
-    reason: string;
-    estimatedStudyTime: number;
-    difficultyLevel: DifficultyLevel;
-  }>;
-  reviewSchedule: Array<{
-    filterId: string;
-    scheduledFor: Timestamp;
-    urgencyLevel: 'low' | 'medium' | 'high' | 'critical';
-  }>;
-  studyGoals: Array<{
-    type: 'accuracy' | 'time' | 'coverage' | 'retention';
-    current: number;
-    target: number;
-    timeframe: string;
-    achievable: boolean;
-  }>;
-  personalizedInsights: Array<{
-    type: 'warning' | 'suggestion' | 'congratulation' | 'insight';
-    message: string;
-    actionable: boolean;
-    priority: number;
-  }>;
+export interface HeatmapData {
+  date: string; // YYYY-MM-DD
+  minutesStudied: number;
+  questionsAnswered: number;
+  accuracy: number;
 }
 
 /**
- * Estatísticas principais do usuário com recursos avançados
+ * Estatísticas principais do usuário (SIMPLIFICADAS)
  */
 export interface UserStatistics {
   id: string;
   userId: string;
-  
-  // Métricas básicas
+
+  // === MÉTRICAS BÁSICAS ===
   totalQuestionsAnswered: number;
   correctAnswers: number;
-  overallAccuracy: number | null;
-  
-  // Análise temporal avançada
-  studyTimeAnalysis: StudyTimeAnalysis;
-  
-  // Métricas de aprendizado
-  learningMetrics: LearningMetrics;
-  
-  // Sistema de streaks avançado
-  streakData: AdvancedStreakData;
-  
-  // Métricas de simulados
-  examMetrics: ExamMetrics;
-  
-  // Estatísticas por filtro/tópico
-  filterStatistics: Record<string, FilterStatistics>;
-  
-  // Comparação com peers
-  peerComparison: PeerComparison | null;
-  
-  // Recomendações inteligentes
-  recommendations: SmartRecommendations | null;
-  
-  // Dados de sessão atual
-  currentSession: {
-    startTime: Timestamp | null;
-    questionsAnswered: number;
-    currentAccuracy: number;
-    timeSpent: number;
-    focusScore: number; // 0-100 baseado em padrões de resposta
-  } | null;
-  
-  // Metadados
+  overallAccuracy: number;
+  firstTimeSuccessRate: number; // % de questões acertadas na primeira tentativa
+
+  // === TEMPO DE ESTUDO ===
+  totalMinutesStudied: number;
+  sessionsCount: number;
+  averageSessionDuration: number;
+  studyTimeDistribution: StudyTimeDistribution;
+  averageDailyStudyTime: number; // minutos/dia (últimos 30 dias)
+
+  // === ENGAJAMENTO ===
+  streakData: StreakData;
+  daysStudiedThisMonth: number;
+  daysStudiedByMonth: Record<string, number>; // YYYY-MM -> count
+
+  // === FLASHCARDS E REVISÕES ===
+  totalFlashcardsStudied: number;
+  totalReviews: number;
+  reviewsByType: ReviewsByType;
+
+  // === POR ESPECIALIDADE ===
+  statsBySpecialty: Record<string, SpecialtyStatistics>;
+
+  // === POR UNIVERSIDADE ===
+  statsByUniversity: Record<string, UniversityStatistics>;
+
+  // === EVOLUÇÃO TEMPORAL ===
+  questionsByMonth: Record<string, number>; // YYYY-MM -> count
+  accuracyByMonth: Record<string, number>; // YYYY-MM -> accuracy %
+  heatmapData: HeatmapData[]; // últimos 90 dias
+
+  // === COMPARAÇÃO TEMPORAL (Você vs Você) ===
+  stats30DaysAgo: StatisticsSnapshot | null;
+  stats60DaysAgo: StatisticsSnapshot | null;
+  stats90DaysAgo: StatisticsSnapshot | null;
+
+  // === METADADOS ===
   lastCalculated: Timestamp;
-  version: string; // Para versionamento de algoritmos
-  createdAt: Timestamp;
   updatedAt: Timestamp;
+  createdAt: Timestamp;
 }
 
 /**
- * Payload para atualizações de estatísticas
+ * Ranking de usuário
+ */
+export interface UserRanking {
+  userId: string;
+  userName: string;
+  userAvatar?: string;
+  position: number;
+  value: number;
+  percentile: number; // 0-100
+}
+
+/**
+ * Dados de ranking completo
+ */
+export interface RankingData {
+  type: 'accuracy_general' | 'accuracy_specialty' | 'questions_total';
+  specialty?: string;
+  top20: UserRanking[];
+  currentUser: UserRanking;
+  totalUsers: number;
+}
+
+/**
+ * Dados de comparação com outros usuários
+ */
+export interface ComparisonData {
+  metric: string;
+  userValue: number;
+  averageValue: number;
+  medianValue: number;
+  percentile: number; // 0-100 (ex: 75 = melhor que 75% dos usuários)
+  totalUsers: number;
+}
+
+/**
+ * Payload para atualização de estatísticas
  */
 export interface StatisticsUpdatePayload {
+  // Resposta de questão
   questionAnswered?: {
+    questionId: string;
     isCorrect: boolean;
-    filterId: string;
-    difficulty: DifficultyLevel;
-    timeSpent: number;
-    confidenceLevel?: number; // 1-5
+    isFirstAttempt: boolean;
+    specialtyId: string;
+    universityId?: string;
+    timeSpent: number; // segundos
   };
+
+  // Tempo de estudo
   studyTimeAdded?: {
     minutes: number;
-    sessionType: 'questions' | 'flashcards' | 'reading' | 'video';
+    date: string; // YYYY-MM-DD
   };
-  examCompleted?: {
-    score: number;
-    totalQuestions: number;
-    timeSpent: number;
-    specialty: string;
-    examType: string;
-  };
-  sessionStarted?: {
-    startTime: Timestamp;
-  };
-  sessionEnded?: {
-    endTime: Timestamp;
+
+  // Sessão de estudo
+  sessionCompleted?: {
+    duration: number; // minutos
     questionsAnswered: number;
-    focusEvents: number; // Número de vezes que saiu de foco
+    date: string; // YYYY-MM-DD
+  };
+
+  // Flashcard estudado
+  flashcardStudied?: {
+    flashcardId: string;
+    date: string; // YYYY-MM-DD
+  };
+
+  // Revisão realizada
+  reviewCompleted?: {
+    type: 'questions' | 'flashcards' | 'errorNotebook';
+    itemsReviewed: number;
+    date: string; // YYYY-MM-DD
   };
 }
 
@@ -284,37 +211,38 @@ export interface StatisticsUpdatePayload {
  * Opções para consulta de estatísticas
  */
 export interface StatisticsQueryOptions {
-  includeFilterStats?: boolean;
-  includePeerComparison?: boolean;
-  includeRecommendations?: boolean;
-  forceRecalculate?: boolean;
+  includeSpecialtyStats?: boolean;
+  includeUniversityStats?: boolean;
+  includeHeatmap?: boolean;
+  includeComparison?: boolean;
   timeRange?: {
     start: Date;
     end: Date;
   };
-  filterIds?: string[];
 }
 
 /**
- * Resultado de análise preditiva
+ * Resposta de estatísticas com comparação
  */
-export interface PredictiveAnalysis {
-  userId: string;
-  predictions: {
-    nextWeekPerformance: number;
-    examReadiness: Record<string, number>; // specialty -> readiness %
-    timeToMastery: Record<string, number>; // filterId -> days
-    riskOfBurnout: number; // 0-100
-    optimalStudySchedule: Array<{
-      date: Date;
-      duration: number;
-      topics: string[];
-      priority: number;
-    }>;
+export interface StatisticsWithComparison {
+  statistics: UserStatistics;
+  comparison?: {
+    accuracy: ComparisonData;
+    questionsAnswered: ComparisonData;
+    studyTime: ComparisonData;
+    flashcardsStudied: ComparisonData;
+    reviewsCompleted: ComparisonData;
+    bySpecialty?: Record<string, ComparisonData>;
   };
-  confidence: number; // Confiança nas predições (0-100)
-  basedOnDataPoints: number;
-  lastAnalysis: Timestamp;
 }
 
-export default UserStatistics; 
+/**
+ * Filtros para rankings
+ */
+export interface RankingFilters {
+  type: 'accuracy_general' | 'accuracy_specialty' | 'questions_total';
+  specialty?: string;
+  timeRange?: 'all_time' | 'last_30_days' | 'last_90_days' | 'this_year';
+}
+
+export default UserStatistics;

@@ -1,8 +1,10 @@
 import { Router } from 'express';
 import { UnifiedReviewController } from '../controllers/UnifiedReviewController';
-import { authMiddleware } from '../../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
 
-export const createUnifiedReviewRoutes = (controller: UnifiedReviewController): Router => {
+export const createUnifiedReviewRoutes = (
+  controller: UnifiedReviewController,
+): Router => {
   const router = Router();
 
   /**
@@ -283,6 +285,63 @@ export const createUnifiedReviewRoutes = (controller: UnifiedReviewController): 
 
   /**
    * @swagger
+   * /api/unified-reviews/history/{contentId}:
+   *   get:
+   *     summary: Obter histórico de revisões de um item específico
+   *     tags: [Unified Reviews]
+   *     security:
+   *       - bearerAuth: []
+   *     parameters:
+   *       - in: path
+   *         name: contentId
+   *         required: true
+   *         schema:
+   *           type: string
+   *         description: ID do conteúdo para buscar o histórico
+   *     responses:
+   *       200:
+   *         description: Histórico de revisões carregado com sucesso
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               properties:
+   *                 success:
+   *                   type: boolean
+   *                 message:
+   *                   type: string
+   *                 data:
+   *                   type: object
+   *                   properties:
+   *                     history:
+   *                       type: array
+   *                       items:
+   *                         type: object
+   *                         properties:
+   *                           grade:
+   *                             type: integer
+   *                           review_time_ms:
+   *                             type: integer
+   *                           stability:
+   *                             type: number
+   *                           difficulty:
+   *                             type: number
+   *                           state:
+   *                             type: integer
+   *                           reps:
+   *                             type: integer
+   *                           lapses:
+   *                             type: integer
+   *                           reviewed_at:
+   *                             type: string
+   *                             format: date-time
+   *                     total:
+   *                       type: integer
+   */
+  router.get('/history/:contentId', authMiddleware, controller.getReviewHistory);
+
+  /**
+   * @swagger
    * /api/unified-reviews/create:
    *   post:
    *     summary: Criar novo item de revisão
@@ -314,6 +373,70 @@ export const createUnifiedReviewRoutes = (controller: UnifiedReviewController): 
    *         description: Dados inválidos
    */
   router.post('/create', authMiddleware, controller.createReviewItem);
+
+  // Novas rotas - Sprint 3
+  router.get('/due-prioritized', authMiddleware, controller.getDueReviewsPrioritized);
+  router.get('/due-balanced', authMiddleware, controller.getDueReviewsBalanced);
+
+  /**
+   * GET /api/unified-reviews/planner
+   * Endpoint específico para o planner - retorna revisões agrupadas por data e tipo
+   * Inclui tanto revisões pendentes quanto completadas
+   */
+  router.get('/planner', authMiddleware, controller.getPlannerReviews);
+
+  return router;
+};
+
+// Rota de preview (separada para não depender do controller principal)
+import { ReviewPreviewController } from '../controllers/ReviewPreviewController';
+
+export const createReviewPreviewRoutes = (): Router => {
+  const router = Router();
+  const previewController = new ReviewPreviewController();
+
+  /**
+   * GET /api/unified-reviews/preview/:contentType/:contentId
+   * Retorna estimativas de próxima revisão para cada grade (0-3)
+   */
+  router.get(
+    '/preview/:contentType/:contentId',
+    authMiddleware,
+    previewController.getReviewPreview.bind(previewController)
+  );
+
+  return router;
+};
+
+// Rotas adicionais para gerenciamento de revisões
+import { SupabaseUnifiedReviewService } from '../../../../infra/studyTools/supabase/SupabaseUnifiedReviewService';
+import { supabase } from '../../../../config/supabase';
+
+export const createReviewManagementRoutes = (): Router => {
+  const router = Router();
+  const reviewService = new SupabaseUnifiedReviewService(supabase);
+  const timezoneService = (reviewService as any).timezoneService;
+  const reviewController = new UnifiedReviewController(reviewService, timezoneService, supabase);
+
+  /**
+   * GET /api/unified-reviews/check-sequence/:contentType/:contentId
+   * Verificar se há sequência de 3x GOOD ou EASY seguidas
+   */
+  router.get(
+    '/check-sequence/:contentType/:contentId',
+    authMiddleware,
+    reviewController.checkConsecutiveGoodResponses
+  );
+
+  /**
+   * DELETE /api/unified-reviews/:contentType/:contentId
+   * Excluir card FSRS (remover item das revisões)
+   */
+  router.delete(
+    '/:contentType/:contentId',
+    authMiddleware,
+    reviewController.deleteReview
+  );
 
   return router;
 };

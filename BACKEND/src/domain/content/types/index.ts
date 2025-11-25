@@ -29,15 +29,15 @@ export interface Content {
  * DTO para criação de conteúdo
  */
 export interface CreateContentDTO {
-  title: string;
-  content: string;
-  authorId: string;
+  title?: string;
+  content?: string;
+  author_id: string;
   tags?: string[];
-  categoryId?: string;
+  category_id?: string;
   status?: ContentStatus;
   summary?: string;
-  isPublic?: boolean;
-  imageUrl?: string;
+  is_public?: boolean;
+  image_url?: string;
 }
 
 /**
@@ -47,11 +47,11 @@ export interface UpdateContentDTO {
   title?: string;
   content?: string;
   tags?: string[];
-  categoryId?: string;
+  category_id?: string;
   status?: ContentStatus;
   summary?: string;
-  isPublic?: boolean;
-  imageUrl?: string;
+  is_public?: boolean;
+  image_url?: string;
 }
 
 /**
@@ -149,12 +149,17 @@ export interface ContentQueryOptions {
   limit?: number;
   page?: number;
   status?: ContentStatus;
-  categoryId?: string;
-  authorId?: string;
+  category_id?: string;
+  author_id?: string;
   tags?: string[];
-  searchTerm?: string;
-  sortBy?: 'createdAt' | 'updatedAt' | 'viewCount' | 'likeCount' | 'commentCount';
-  sortOrder?: 'asc' | 'desc';
+  search_term?: string;
+  sort_by?:
+    | 'createdAt'
+    | 'updatedAt'
+    | 'viewCount'
+    | 'likeCount'
+    | 'commentCount';
+  sort_order?: 'asc' | 'desc';
 }
 
 /**

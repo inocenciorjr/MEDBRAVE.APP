@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { CouponController } from '../controllers/CouponController';
 import { couponValidators } from '../validators/couponValidators';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 
 /**
  * Cria as rotas de cupons
@@ -69,7 +69,11 @@ export const createCouponRoutes = (controller: CouponController): Router => {
 };
 
 // Middleware para tratar erros de validação do express-validator
-function validateRequest(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
+function validateRequest(
+  req: import('express').Request,
+  res: import('express').Response,
+  next: import('express').NextFunction,
+) {
   const { validationResult } = require('express-validator');
   const errors = validationResult(req);
   if (!errors.isEmpty()) {

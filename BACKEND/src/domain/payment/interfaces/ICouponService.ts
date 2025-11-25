@@ -1,4 +1,9 @@
-import { CreateCouponPayload, Coupon, CouponListOptions, CouponValidationResult } from '../types';
+import {
+  CreateCouponPayload,
+  Coupon,
+  CouponListOptions,
+  CouponValidationResult,
+} from '../types';
 
 /**
  * Interface para o serviço de cupons
@@ -38,7 +43,10 @@ export interface ICouponService {
    * @param updates Atualizações a serem aplicadas
    * @returns Cupom atualizado ou null se não encontrado
    */
-  updateCoupon(couponId: string, updates: Partial<Coupon>): Promise<Coupon | null>;
+  updateCoupon(
+    couponId: string,
+    updates: Partial<Coupon>,
+  ): Promise<Coupon | null>;
 
   /**
    * Remove um cupom
@@ -53,7 +61,10 @@ export interface ICouponService {
    * @param planId ID do plano (opcional)
    * @returns Resultado da validação
    */
-  validateCoupon(code: string, planId?: string): Promise<CouponValidationResult>;
+  validateCoupon(
+    code: string,
+    planId?: string,
+  ): Promise<CouponValidationResult>;
 
   /**
    * Incrementa o contador de usos de um cupom

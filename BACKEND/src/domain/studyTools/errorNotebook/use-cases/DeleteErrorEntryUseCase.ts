@@ -24,7 +24,7 @@ export class DeleteErrorEntryUseCase {
     }
 
     // Verificar se a entrada pertence ao usuário
-    if (existingEntry.userId !== userId) {
+    if (existingEntry.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook entry', 403);
     }
 

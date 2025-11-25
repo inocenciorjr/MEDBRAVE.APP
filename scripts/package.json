@@ -1,0 +1,18 @@
+{
+  "name": "medbrave-migration-tools",
+  "version": "1.0.0",
+  "description": "Ferramentas de migração para MEDBRAVE - camelCase para snake_case",
+  "main": "migrate-camel-to-snake.js",
+  "scripts": {
+    "migrate:camel-to-snake": "node migrate-camel-to-snake.js",
+    "validate:tables": "node validate-supabase-schema.js",
+    "rollback:snake-to-camel": "node rollback-snake-to-camel.js"
+  },
+  "keywords": ["migration", "supabase", "camelcase", "snakecase"],
+  "author": "MEDBRAVE Team",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "*",
+    "path": "*"
+  }
+}

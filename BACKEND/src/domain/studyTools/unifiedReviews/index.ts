@@ -2,14 +2,13 @@
 export * from './types';
 
 // Services
-export { UnifiedReviewService } from './services/UnifiedReviewService';
+export { UnifiedReviewService } from './services';
 
 // Controllers
 export { UnifiedReviewController } from './controllers/UnifiedReviewController';
 
 // Routes
 export { createUnifiedReviewRoutes } from './routes/unifiedReviewRoutes';
+export { createFsrsCardsRoutes } from './routes/fsrsCardsRoutes';
 
-// Re-export FSRS related types and services for convenience
-export { FSRSGrade, FSRSState } from '../../srs/services/FSRSService';
-export type { FSRSCard } from '../../srs/services/FSRSService'; 
+// FSRS exports removidos (não utilizados)

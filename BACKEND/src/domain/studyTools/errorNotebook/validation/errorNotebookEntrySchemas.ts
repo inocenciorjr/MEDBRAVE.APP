@@ -21,10 +21,7 @@ export const createErrorEntrySchema = Joi.object({
     .trim()
     .allow(null)
     .when('sourceType', {
-      is: Joi.valid(
-        ErrorSourceType.QUESTION,
-        ErrorSourceType.FLASHCARD,
-      ),
+      is: Joi.valid(ErrorSourceType.QUESTION, ErrorSourceType.FLASHCARD),
       then: Joi.required(),
       otherwise: Joi.optional(),
     })
@@ -38,18 +35,30 @@ export const createErrorEntrySchema = Joi.object({
     'string.min': 'Descrição do erro deve ter pelo menos {#limit} caracteres',
     'string.max': 'Descrição do erro não pode ter mais de {#limit} caracteres',
   }),
-  errorCategory: Joi.string().trim().max(100).allow(null).default(null).messages({
-    'string.base': 'Categoria do erro deve ser uma string',
-    'string.max': 'Categoria do erro não pode ter mais de {#limit} caracteres',
-  }),
+  errorCategory: Joi.string()
+    .trim()
+    .max(100)
+    .allow(null)
+    .default(null)
+    .messages({
+      'string.base': 'Categoria do erro deve ser uma string',
+      'string.max':
+        'Categoria do erro não pode ter mais de {#limit} caracteres',
+    }),
   userAnswer: Joi.string().trim().max(1000).allow(null).default(null).messages({
     'string.base': 'Resposta do usuário deve ser uma string',
-    'string.max': 'Resposta do usuário não pode ter mais de {#limit} caracteres',
+    'string.max':
+      'Resposta do usuário não pode ter mais de {#limit} caracteres',
   }),
-  correctAnswer: Joi.string().trim().max(1000).allow(null).default(null).messages({
-    'string.base': 'Resposta correta deve ser uma string',
-    'string.max': 'Resposta correta não pode ter mais de {#limit} caracteres',
-  }),
+  correctAnswer: Joi.string()
+    .trim()
+    .max(1000)
+    .allow(null)
+    .default(null)
+    .messages({
+      'string.base': 'Resposta correta deve ser uma string',
+      'string.max': 'Resposta correta não pode ter mais de {#limit} caracteres',
+    }),
   personalNotes: Joi.string().trim().max(2000).default('').messages({
     'string.base': 'Notas pessoais deve ser uma string',
     'string.max': 'Notas pessoais não pode ter mais de {#limit} caracteres',
@@ -76,7 +85,8 @@ export const updateErrorEntrySchema = Joi.object({
   }),
   userAnswer: Joi.string().trim().max(1000).allow(null).messages({
     'string.base': 'Resposta do usuário deve ser uma string',
-    'string.max': 'Resposta do usuário não pode ter mais de {#limit} caracteres',
+    'string.max':
+      'Resposta do usuário não pode ter mais de {#limit} caracteres',
   }),
   correctAnswer: Joi.string().trim().max(1000).allow(null).messages({
     'string.base': 'Resposta correta deve ser uma string',
@@ -121,7 +131,13 @@ export const listErrorEntriesSchema = Joi.object({
     'array.base': 'Tags deve ser um array de strings',
   }),
   sortBy: Joi.string()
-    .valid('createdAt', 'updatedAt', 'errorCategory', 'isResolved', 'nextReviewAt')
+    .valid(
+      'createdAt',
+      'updatedAt',
+      'errorCategory',
+      'isResolved',
+      'nextReviewAt',
+    )
     .default('createdAt')
     .messages({
       'string.base': 'Campo de ordenação deve ser uma string',
@@ -136,7 +152,7 @@ export const listErrorEntriesSchema = Joi.object({
 
 // Esquema para registrar revisão de uma entrada
 export const recordEntryReviewSchema = Joi.object({
-  grade: Joi.number().integer().valid(1,2,3,4).required().messages({
+  grade: Joi.number().integer().valid(1, 2, 3, 4).required().messages({
     'number.base': 'Nota da revisão deve ser um número',
     'number.integer': 'Nota da revisão deve ser um número inteiro',
     'any.only': 'Nota deve ser 1 (AGAIN), 2 (HARD), 3 (GOOD) ou 4 (EASY)',
@@ -166,7 +182,8 @@ export const importFromSourceSchema = Joi.object({
   additionalData: Joi.object({
     errorCategory: Joi.string().trim().max(100).allow(null).messages({
       'string.base': 'Categoria do erro deve ser uma string',
-      'string.max': 'Categoria do erro não pode ter mais de {#limit} caracteres',
+      'string.max':
+        'Categoria do erro não pode ter mais de {#limit} caracteres',
     }),
     personalNotes: Joi.string().trim().max(2000).allow('').messages({
       'string.base': 'Notas pessoais deve ser uma string',
@@ -184,5 +201,6 @@ export const importFromSourceSchema = Joi.object({
 })
   .xor('responseId', 'interactionId')
   .messages({
-    'object.xor': 'Deve fornecer ou um ID de resposta ou um ID de interação, mas não ambos',
+    'object.xor':
+      'Deve fornecer ou um ID de resposta ou um ID de interação, mas não ambos',
   });

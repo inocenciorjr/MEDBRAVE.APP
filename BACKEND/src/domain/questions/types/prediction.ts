@@ -1,22 +1,22 @@
-import { Timestamp } from 'firebase/firestore';
+// Removed Firebase dependency - using ISO string dates
 import { TimeEfficiencyPattern } from './common';
 
 /**
  * Níveis de confiança para predições
  */
 export enum PredictionConfidence {
-  HIGH = 'HIGH',       // 90%+ certeza
-  MEDIUM = 'MEDIUM',   // 70-89% certeza
-  LOW = 'LOW'          // 50-69% certeza
+  HIGH = 'HIGH', // 90%+ certeza
+  MEDIUM = 'MEDIUM', // 70-89% certeza
+  LOW = 'LOW', // 50-69% certeza
 }
 
 /**
  * Tendências de performance ao longo do tempo
  */
 export enum TrendDirection {
-  IMPROVING = 'IMPROVING',     // Melhorando
-  STABLE = 'STABLE',           // Estável
-  DECLINING = 'DECLINING'      // Piorando
+  IMPROVING = 'IMPROVING', // Melhorando
+  STABLE = 'STABLE', // Estável
+  DECLINING = 'DECLINING', // Piorando
 }
 
 // PerformanceTrend movido para common.ts
@@ -25,11 +25,11 @@ export enum TrendDirection {
  * Tipos de recomendação de foco
  */
 export enum FocusRecommendationType {
-  REVIEW = 'REVIEW',                   // Revisar conceitos
-  PRACTICE = 'PRACTICE',               // Praticar mais
+  REVIEW = 'REVIEW', // Revisar conceitos
+  PRACTICE = 'PRACTICE', // Praticar mais
   TIME_MANAGEMENT = 'TIME_MANAGEMENT', // Melhorar gestão de tempo
-  FSRS_ADD = 'FSRS_ADD',              // Adicionar ao FSRS
-  BREAK = 'BREAK'                      // Fazer pausa
+
+  BREAK = 'BREAK', // Fazer pausa
 }
 
 /**
@@ -176,26 +176,26 @@ export interface TimeManagementAdvice {
 export interface PerformancePrediction {
   // Predição baseada em histórico real
   nextListAccuracy: AccuracyPrediction;
-  
+
   // Tendências identificadas (não metas)
   trends: TrendAnalysis;
-  
+
   // Tempo ótimo baseado em SEUS dados históricos
   optimalStudyTime: OptimalStudyTime;
-  
+
   // Áreas de foco baseadas em dados
   focusRecommendations: FocusRecommendation[];
-  
+
   // Análises avançadas
   learningVelocity: LearningVelocityAnalysis;
   forgettingCurve: PersonalForgettingCurve;
   optimalIntervals: OptimalIntervalRecommendations;
   strengthsWeaknesses: StrengthWeaknessAnalysis;
   timeManagement: TimeManagementAdvice;
-  
+
   // Metadados da predição
-  generatedAt: Timestamp;
-  validUntil: Timestamp;
+  generatedAt: string;
+  validUntil: string;
   basedOnSessions: number;
   confidence: PredictionConfidence;
 }
@@ -219,8 +219,8 @@ export interface PredictionValidation {
   actualAccuracy: number;
   accuracyError: number; // Diferença absoluta
   confidenceLevel: PredictionConfidence;
-  predictionDate: Timestamp;
-  validationDate: Timestamp;
+  predictionDate: string;
+  validationDate: string;
   wasAccurate: boolean; // Se ficou dentro da margem
 }
 
@@ -242,7 +242,7 @@ export interface PredictionSettings {
 export interface PredictionQualityMetrics {
   userId: string;
   period: 'LAST_MONTH' | 'LAST_3_MONTHS' | 'ALL_TIME';
-  
+
   totalPredictions: number;
   accuratePredictions: number; // Dentro da margem de erro
   averageError: number;
@@ -251,10 +251,10 @@ export interface PredictionQualityMetrics {
     medium: { predicted: number; actual: number };
     low: { predicted: number; actual: number };
   };
-  
+
   modelPerformance: {
     meanAbsoluteError: number;
     rootMeanSquareError: number;
     r2Score: number; // Coeficiente de determinação
   };
-} 
+}

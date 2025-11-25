@@ -89,7 +89,10 @@ export interface IUserPlanService {
    * @param metadata Novos metadados
    * @returns Plano de usuário atualizado
    */
-  updateUserPlanMetadata(userPlanId: string, metadata: Record<string, any>): Promise<UserPlan>;
+  updateUserPlanMetadata(
+    userPlanId: string,
+    metadata: Record<string, any>,
+  ): Promise<UserPlan>;
 
   /**
    * Verifica e atualiza o status de planos expirados

@@ -15,7 +15,9 @@ export class CreateUserUseCase {
   async execute(data: CreateUserDTO): Promise<Result<User>> {
     try {
       // Verificar se já existe usuário com este email
-      const existingUserResult = await this.userRepository.findByEmail(data.email);
+      const existingUserResult = await this.userRepository.findByEmail(
+        data.email,
+      );
 
       if (existingUserResult.isSuccess && existingUserResult.getValue()) {
         return Failure(new Error('Email já está em uso'));
@@ -23,10 +25,14 @@ export class CreateUserUseCase {
 
       // Criar nova entidade de usuário
       const userResult = User.create({
-        id: crypto.randomUUID(), // Será substituído pelo ID do Firebase
+        id: crypto.randomUUID(),
         email: data.email,
-        name: data.name,
-        role: data.role || UserRole.STUDENT,
+        display_name: data.name,
+        username_slug: data.name
+          .toLowerCase()
+          .replace(/\s+/g, '-')
+          .replace(/[^a-z0-9-]/g, ''),
+        user_role: data.role || UserRole.STUDENT,
       });
 
       if (userResult.isFailure) {
@@ -36,7 +42,10 @@ export class CreateUserUseCase {
       const user = userResult.getValue();
 
       // Persistir no repositório
-      const createResult = await this.userRepository.create(user, data.password);
+      const createResult = await this.userRepository.create(
+        user,
+        data.password,
+      );
 
       if (createResult.isFailure) {
         return Failure(new Error('Erro ao criar usuário no repositório'));
@@ -44,7 +53,11 @@ export class CreateUserUseCase {
 
       return createResult;
     } catch (error) {
-      return Failure(error instanceof Error ? error : new Error('Erro desconhecido ao criar usuário'));
+      return Failure(
+        error instanceof Error
+          ? error
+          : new Error('Erro desconhecido ao criar usuário'),
+      );
     }
   }
 }

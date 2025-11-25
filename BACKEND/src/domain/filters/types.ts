@@ -20,50 +20,63 @@ export interface Filter {
   name: string;
   description?: string;
   category: FilterCategory;
-  isGlobal: boolean;
-  filterType: FilterType;
+  is_global: boolean;
+  filter_type: FilterType;
   status: FilterStatus;
-  createdAt: Date;
-  updatedAt: Date;
+  created_at: Date;
+  updated_at: Date;
 }
 
 export interface SubFilter {
   id: string;
-  filterId: string;
+  filter_id: string;
   name: string;
   description?: string;
   order?: number;
-  isActive?: boolean;
-  parentId?: string;
+  is_active?: boolean;
+  parent_id?: string;
   status: FilterStatus;
-  createdAt: Date;
-  updatedAt: Date;
+  created_at: Date;
+  updated_at: Date;
 }
 
-export type FilterCreatePayload = Omit<Filter, "id" | "createdAt" | "updatedAt">;
-export type FilterUpdatePayload = Partial<Omit<Filter, "id" | "createdAt" | "updatedAt" | "category">>;
+export type FilterCreatePayload = Omit<
+  Filter,
+  'id' | 'created_at' | 'updated_at'
+>;
+export type FilterUpdatePayload = Partial<
+  Omit<Filter, 'id' | 'created_at' | 'updated_at' | 'category'>
+>;
 
-export type SubFilterCreatePayload = Omit<SubFilter, "id" | "createdAt" | "updatedAt">;
-export type SubFilterUpdatePayload = Partial<Omit<SubFilter, "id" | "createdAt" | "updatedAt" | "filterId">>;
+export type SubFilterCreatePayload = Omit<
+  SubFilter,
+  'id' | 'created_at' | 'updated_at'
+>;
+export type SubFilterUpdatePayload = Partial<
+  Omit<SubFilter, 'id' | 'created_at' | 'updated_at' | 'filter_id'>
+>;
 
 export interface FilterListOptions {
   category?: FilterCategory;
-  isGlobal?: boolean;
+  is_global?: boolean;
   status?: FilterStatus;
+  filter_type?: FilterType;
   limit?: number;
-  orderBy?: keyof Filter;
-  orderDirection?: "asc" | "desc";
+  offset?: number;
+  order_by?: keyof Filter;
+  order_direction?: "asc" | "desc";
 }
 
 export interface SubFilterListOptions {
-  isActive?: boolean;
-  sortBy?: keyof SubFilter;
-  sortDirection?: "asc" | "desc";
+  is_active?: boolean;
+  sort_by?: keyof SubFilter;
+  sort_direction?: "asc" | "desc";
   limit?: number;
-  startAfter?: SubFilter;
+  offset?: number;
+  start_after?: SubFilter;
 }
 
 export interface SubFilterListResult {
-  subFilters: SubFilter[];
-  nextPageStartAfter?: SubFilter;
-} 
+  sub_filters: SubFilter[];
+  next_page_start_after?: SubFilter;
+}

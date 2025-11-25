@@ -33,7 +33,10 @@ export type SchemaType = keyof typeof schemas;
  * @param data The data to validate
  * @returns The validation result with error and valid data
  */
-export const validateSchema = (schemaName: SchemaType, data: unknown): Joi.ValidationResult => {
+export const validateSchema = (
+  schemaName: SchemaType,
+  data: unknown,
+): Joi.ValidationResult => {
   const schema = schemas[schemaName];
   return schema.validate(data, { abortEarly: false });
 };

@@ -1,28 +1,32 @@
-import { FirebaseMentorshipMeetingService } from '../services';
+import { SupabaseMentorshipMeetingService } from '../services';
 // import { MentorshipServiceFactory } from '../factories';
 import { MeetingStatus, MentorshipStatus, MeetingType } from '../types';
-import { Timestamp } from 'firebase-admin/firestore';
 
-// Mock do Firebase
-jest.mock('firebase-admin/firestore', () => {
-  const mockTimestamp = {
-    now: jest.fn().mockReturnValue({
-      toMillis: () => Date.now(),
-      toDate: () => new Date(),
-    }),
-    fromMillis: jest.fn().mockImplementation(ms => ({
-      toMillis: () => ms,
-      toDate: () => new Date(ms),
-    })),
-  };
+// Mock do Supabase
+jest.mock('@supabase/supabase-js', () => ({
+  createClient: jest.fn().mockReturnValue({
+    from: jest.fn().mockReturnThis(),
+    select: jest.fn().mockReturnThis(),
+    insert: jest.fn().mockReturnThis(),
+    update: jest.fn().mockReturnThis(),
+    delete: jest.fn().mockReturnThis(),
+    eq: jest.fn().mockReturnThis(),
+    neq: jest.fn().mockReturnThis(),
+    gte: jest.fn().mockReturnThis(),
+    lte: jest.fn().mockReturnThis(),
+    order: jest.fn().mockReturnThis(),
+    limit: jest.fn().mockReturnThis(),
+    range: jest.fn().mockReturnThis(),
+    single: jest.fn(),
+    or: jest.fn().mockReturnThis(),
+    ilike: jest.fn().mockReturnThis(),
+    in: jest.fn().mockReturnThis(),
+  }),
+}));
 
-  return {
-    Timestamp: mockTimestamp,
-    FieldValue: {
-      increment: jest.fn().mockImplementation(num => num),
-    },
-  };
-});
+// Configuração das variáveis de ambiente para o Supabase
+process.env.SUPABASE_URL = 'https://test.supabase.co';
+process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-key';
 
 // Mock do UUID
 jest.mock('uuid', () => ({
@@ -30,78 +34,35 @@ jest.mock('uuid', () => ({
 }));
 
 describe('MentorshipMeetingService', () => {
-  let service: FirebaseMentorshipMeetingService;
-  let mockFirestore: any;
+  let service: SupabaseMentorshipMeetingService;
+  let mockSupabase: any;
   let mockMentorshipService: any;
-  let mockCollection: jest.Mock;
-  let mockDoc: jest.Mock;
-  let mockGet: jest.Mock;
-  let mockSet: jest.Mock;
-  let mockUpdate: jest.Mock;
-  let mockDelete: jest.Mock;
-  let mockWhere: jest.Mock;
-  let mockOrderBy: jest.Mock;
-  let mockLimit: jest.Mock;
 
   // Configuração inicial para os testes
   beforeEach(() => {
-    // Reset dos mocks
-    mockGet = jest.fn();
-    mockSet = jest.fn();
-    mockUpdate = jest.fn();
-    mockDelete = jest.fn();
-    mockWhere = jest.fn();
-    mockOrderBy = jest.fn();
-    mockLimit = jest.fn();
-
-    // Configuração do mock do documento
-    mockDoc = jest.fn().mockReturnValue({
-      get: mockGet,
-      set: mockSet,
-      update: mockUpdate,
-      delete: mockDelete,
-    });
-
-    // Configuração do mock da collection
-    mockCollection = jest.fn().mockReturnValue({
-      doc: mockDoc,
-      where: mockWhere,
-      orderBy: mockOrderBy,
-      limit: mockLimit,
-      get: jest.fn().mockResolvedValue({
-        docs: [],
-        empty: true,
-        size: 0,
-      }),
-    });
-
-    // Configuração do where e orderBy para criar consultas encadeadas
-    mockWhere.mockReturnValue({
-      where: mockWhere,
-      orderBy: mockOrderBy,
-      limit: mockLimit,
-      get: jest.fn().mockResolvedValue({
-        docs: [],
-        empty: true,
-        size: 0,
-      }),
-    });
-
-    mockOrderBy.mockReturnValue({
-      where: mockWhere,
-      orderBy: mockOrderBy,
-      limit: mockLimit,
-      get: jest.fn().mockResolvedValue({
-        docs: [],
-        empty: true,
-        size: 0,
-      }),
-    });
-
-    // Configuração do mock do Firestore
-    mockFirestore = {
-      collection: mockCollection,
+    // Configuração do mock do Supabase
+    mockSupabase = {
+      from: jest.fn().mockReturnThis(),
+      select: jest.fn().mockReturnThis(),
+      insert: jest.fn().mockReturnThis(),
+      update: jest.fn().mockReturnThis(),
+      delete: jest.fn().mockReturnThis(),
+      eq: jest.fn().mockReturnThis(),
+      neq: jest.fn().mockReturnThis(),
+      gte: jest.fn().mockReturnThis(),
+      lte: jest.fn().mockReturnThis(),
+      order: jest.fn().mockReturnThis(),
+      limit: jest.fn().mockReturnThis(),
+      range: jest.fn().mockReturnThis(),
+      single: jest.fn(),
+      or: jest.fn().mockReturnThis(),
+      ilike: jest.fn().mockReturnThis(),
+      in: jest.fn().mockReturnThis(),
     };
+
+    // Injetar o mock no serviço
+    service = new SupabaseMentorshipMeetingService();
+    (service as any).supabase = mockSupabase;
 
     // Mock do serviço de mentoria
     mockMentorshipService = {
@@ -110,7 +71,8 @@ describe('MentorshipMeetingService', () => {
     };
 
     // Injetar os mocks no serviço
-    service = new FirebaseMentorshipMeetingService(mockFirestore, mockMentorshipService);
+    // Injetar o mock do serviço de mentoria
+    (service as any).mentorshipService = mockMentorshipService;
   });
 
   describe('createMeeting', () => {
@@ -179,7 +141,7 @@ describe('MentorshipMeetingService', () => {
         id: 'meeting123',
         mentorshipId: 'mentorship123',
         status: MeetingStatus.SCHEDULED,
-        scheduledDate: Timestamp.now(),
+        scheduledDate: new Date(),
         notes: 'Reunião inicial',
       };
 
@@ -232,7 +194,9 @@ describe('MentorshipMeetingService', () => {
       });
 
       // Act & Assert
-      await expect(service.completeMeeting('meeting123', new Date(), 60)).rejects.toThrow(
+      await expect(
+        service.completeMeeting('meeting123', new Date(), 60),
+      ).rejects.toThrow(
         'Reuniões canceladas ou completadas não podem ser atualizadas',
       );
     });
@@ -245,7 +209,7 @@ describe('MentorshipMeetingService', () => {
         id: 'meeting123',
         mentorshipId: 'mentorship123',
         status: MeetingStatus.SCHEDULED,
-        scheduledDate: Timestamp.now(),
+        scheduledDate: new Date(),
       };
 
       mockGet.mockResolvedValue({
@@ -254,7 +218,10 @@ describe('MentorshipMeetingService', () => {
       });
 
       // Act
-      const result = await service.cancelMeeting('meeting123', 'Conflito de agenda');
+      const result = await service.cancelMeeting(
+        'meeting123',
+        'Conflito de agenda',
+      );
 
       // Assert
       expect(mockUpdate).toHaveBeenCalled();
@@ -273,19 +240,19 @@ describe('MentorshipMeetingService', () => {
           id: 'meeting1',
           mentorshipId: 'mentorship123',
           status: MeetingStatus.COMPLETED,
-          scheduledDate: Timestamp.now(),
+          scheduledDate: new Date(),
         },
         {
           id: 'meeting2',
           mentorshipId: 'mentorship123',
           status: MeetingStatus.SCHEDULED,
-          scheduledDate: Timestamp.now(),
+          scheduledDate: new Date(),
         },
       ];
 
       mockWhere.mockReturnValue({
         get: jest.fn().mockResolvedValue({
-          docs: mockMeetings.map(meeting => ({
+          docs: mockMeetings.map((meeting) => ({
             id: meeting.id,
             data: () => meeting,
           })),
@@ -299,7 +266,11 @@ describe('MentorshipMeetingService', () => {
 
       // Assert
       expect(mockCollection).toHaveBeenCalledWith('mentorship_meetings');
-      expect(mockWhere).toHaveBeenCalledWith('mentorshipId', '==', 'mentorship123');
+      expect(mockWhere).toHaveBeenCalledWith(
+        'mentorshipId',
+        '==',
+        'mentorship123',
+      );
       expect(result).toHaveLength(2);
       expect(result[0].id).toBe('meeting1');
       expect(result[1].id).toBe('meeting2');

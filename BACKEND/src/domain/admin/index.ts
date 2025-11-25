@@ -9,14 +9,15 @@
 export * from './types/AdminTypes';
 
 // Exportar serviços
-export { FirebaseAdminService } from './services/FirebaseAdminService';
-export { AdminDashboardService } from './services/AdminDashboardService';
+export { SupabaseAdminService } from '../../infra/admin/supabase/SupabaseAdminService';
+export { AdminDashboardService } from '../../infra/admin/supabase/AdminDashboardService';
 
 // Exportar repositórios
-export { IAdminRepository, FirebaseAdminRepository } from './repositories/AdminRepository';
+export { IAdminRepository } from './repositories/AdminRepository';
+export { SupabaseAdminRepository } from '../../infra/admin/supabase/SupabaseAdminRepository';
 
 // Exportar middlewares
-export { adminMiddleware } from './middlewares/adminMiddleware';
+// adminMiddleware removido em favor de requireAdmin em src/middleware/adminAuth
 
 // Exportar controllers
 export { AdminController } from './controllers/AdminController';
@@ -32,4 +33,4 @@ export * from './validators/adminValidators';
 
 // Exportar factories
 export { AdminFactory } from './factories/AdminFactory';
-export { FirebaseAdminServiceFactory } from './factories/FirebaseAdminServiceFactory';
+export { SupabaseAdminServiceFactory } from './factories/SupabaseAdminServiceFactory';

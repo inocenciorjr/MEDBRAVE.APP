@@ -1,5 +1,3 @@
-import { Timestamp } from 'firebase-admin/firestore';
-
 export enum GoalType {
   WEEKLY_QUESTIONS = 'WEEKLY_QUESTIONS',
   MONTHLY_QUESTIONS = 'MONTHLY_QUESTIONS',
@@ -22,8 +20,8 @@ export interface CutoffScoreConfig {
   totalQuestions: number;
   specialtyWeights?: Record<string, number>; // peso por especialidade (default 1)
   isActive: boolean;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface UserGoal {
@@ -34,11 +32,11 @@ export interface UserGoal {
   targetValue: number;
   currentValue: number;
   timeframe: 'DAILY' | 'WEEKLY' | 'MONTHLY' | 'CUSTOM';
-  startDate: Timestamp;
-  endDate?: Timestamp;
+  startDate: Date;
+  endDate?: Date;
   isActive: boolean;
   isAchieved: boolean;
-  achievedAt?: Timestamp;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-} 
+  achievedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
+}

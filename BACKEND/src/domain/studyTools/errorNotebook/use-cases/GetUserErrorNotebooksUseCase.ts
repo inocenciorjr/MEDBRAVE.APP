@@ -4,7 +4,13 @@ import {
   PaginatedErrorNotebooks,
 } from '../repositories/IErrorNotebookRepository';
 import { AppError } from '../../../../shared/errors/AppError';
-import { PaginationOptions } from '../../studySessions/types';
+// PaginationOptions moved to shared types
+export interface PaginationOptions {
+  page: number;
+  limit: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+}
 
 export class GetUserErrorNotebooksUseCase {
   constructor(private errorNotebookRepository: IErrorNotebookRepository) {}
@@ -32,12 +38,16 @@ export class GetUserErrorNotebooksUseCase {
     }
 
     // Obter cadernos de erros do usuário com filtros e paginação
-    const paginatedNotebooks = await this.errorNotebookRepository.findByUser(userId, filters, {
-      page,
-      limit,
-      sortBy: pagination.sortBy,
-      sortOrder: pagination.sortOrder,
-    });
+    const paginatedNotebooks = await this.errorNotebookRepository.findByUser(
+      userId,
+      filters,
+      {
+        page,
+        limit,
+        sortBy: pagination.sortBy,
+        sortOrder: pagination.sortOrder,
+      },
+    );
 
     return paginatedNotebooks;
   }

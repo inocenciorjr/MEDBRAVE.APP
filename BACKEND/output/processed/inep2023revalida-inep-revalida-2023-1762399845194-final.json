@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "examName": "INEP2023REVALIDA (INEP REVALIDA 2023)",
+    "examYear": 2023,
+    "url": "source://311",
+    "totalQuestions": 10,
+    "categorizedQuestions": 10,
+    "rewrittenComments": 5,
+    "processedAt": "2025-11-06T03:30:45.194Z",
+    "jobId": "batch-1762399267607-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "ac34fb38-58e0-4a24-8c56-f35b4d87dd3d"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Um paciente de 54 anos, em acompanhamento há 4 meses em função de cardiopatia isquêmica dilatada, foi admitido na unidade de emergência com queixas de súbitas palpitações e dispneia a cerca de 3 horas. O paciente nega dor precordial, informando ser portador, de longa data, de hipertensão arterial sistêmica e diabetes melito, em uso de carvedilol, enalapril, furosemida, espironolactona, dapagliflozina e insulina NHP (dose apenas noturna). Ao exame físico, o paciente se encontra em moderado desconforto respiratório, sudorese presente, pressão arterial de 80x62 mmHg, frequência cardíaca de 120 batimentos por minuto, com ritmo cardíaco irregular e com estertoração bolhosa bibasal. É realizado um Eletrocardiograma (ECG) que evidencia padrão irregular, com existência de ondas f, sendo caracterizada fibrilação atrial paroxística com elevada resposta ventricular; fora a presença de ondas Q patológicas na parede anterior, não há distúrbios de ST-T no ECG. A médica que o atende opta por realizar um procedimento que exige prévia aplicação de sedação e analgesia ao paciente, passando a explicar-lhe o que será realizado em seguida. \nDiante da situação apresentada, o procedimento que será realizado no paciente.",
+      "alternativas": [
+        "Cineangiocoronariografia com angioplastia coronária.",
+        "Cateterismo cardíaco com estudo eletrofisiológico.",
+        "Implante de marca-passo provisório transvenoso.",
+        "Aplicação de cardioversão elétrica."
+      ],
+      "correta": 3,
+      "professor_comment": "Trata-se de um paciente de 54 anos que dá entrada no serviço por queixa de palpitações e dispneia há 3 horas. O ECG evidencia uma fibrilação atrial de alta resposta ventricular. Qual a conduta? \n\nA primeira pergunta que temos que fazer frente a qualquer taquiarritmia no pronto-socorro é se o paciente está estável ou instável. E não só isso, mas se estiver instável, se a causa da instabilidade é a taquiarritmia ou outra condição que a precipitou (ex: paciente com sepse, instável pela sepse, mas que pela infecção abre um quadro de FA). \n\nTemos algumas informações chaves do enunciado: paciente com desconforto respiratório moderado e estertoração bibasal, sudoreico e hipotenso (80x62), ou seja, instável e sem qualquer outra condição que sugira ser a causa da instabilidade, a não ser pela própria FA. \n\nQual a principal conduta em uma taquiarritmia INSTÁVEL? Cardioversão elétrica sincronizada (independente do tempo de estabelecimento de sintomas). \n\nVamos lembrar dos 5 D´s da instabilidade das taquiarritmias: Diminuição da PA, Desmaio, Diminuição do nível de consciência, Dor torácica anginosa e Dispneia. Se o paciente com taquiarritmia apresentar qualquer um desses sinais/sintomas, considera-se uma taquiarritmia instável e a conduta é cardioversão.\n\nE se fosse uma fibrilação atrial ESTÁVEL? Aí a conduta varia um pouco de acordo com o tempo de estabelecimento de sintomas. Podemos optar por controle de ritmo ou frequência, mas o controle de ritmo vai depender do tempo de estabelecimento dos sintomas (FA <48h - autorizados a controle de ritmo com cardioversão elétrica ou química vs. FA > 48h - precisamos excluir a possibilidade de trombo, então ou fazemos um ecocardiograma transesofágico na hora ou anticoagulamos o paciente por 3 semanas e fazemos o controle de ritmo após).\n\nAssim, alternativa correta: D.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Cardiomiopatias"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Um homem com 62 anos comparece, acompanhado de sua filha, a uma unidade básica de saúde, após terem sido alertados pelos vizinhos sobre a campanha de detecção de câncer de próstata, denominada Novembro azul. O paciente não mantém contato com o restante da família, portanto desconhece se há história familiar de câncer. Está completamente assintomático. Relata que seu pai faleceu aos 65 anos de idade e que não sabe a causa da morte. \nNesse caso, do ponto de vista da prevenção, a conduta do médico deve ser",
+      "alternativas": [
+        "Orientar o rastreio, indicado para homens de 50 a 70 anos de idade e esclarecer a filha que será solicitado o PSA (antígeno prostático específico), método com grande sensibilidade e especificidade para diagnóstico de estágio precoce da doença.",
+        "Iniciar o rastreio indicado para homens de 50 a 70 anos de idade, como indicado pelo Ministério da Saúde, que prevê, nessa faixa etária, a realização do toque retal e a ultrassonografia de próstata, após concordância expressa no consentimento informado.",
+        "Avaliar a necessidade de rastreio indicado para homens de 50 a 70 anos de idade, esclarecendo a filha que serão solicitados um exame de toque retal, a coleta do PSA e a Ultrassonografia da próstata, após concordância, expressa no consentimento informado.",
+        "Discutir o rastreio do câncer com o paciente e sua filha, dado que ele está assintomático, e que, nesse caso, há muitos dados que mostram que possíveis danos relacionados a testes diagnósticos, e tratamentos excessivos superam respectivos benefícios."
+      ],
+      "correta": 3,
+      "professor_comment": "Questão interessante porque discute sobre o rastreamento de pacientes assintomáticos para neoplasia. Nesse caso, mais especificamente, o câncer de próstata.\n\nVamos relembrar a recomendação do Ministério da Saúde e do INCA para estes casos. Segundo o documento, cada vez mais diretrizes internacionais recomendam que, para realizar o rastreamento, é necessário que haja prévio debate sobre suas consequências e que a decisão seja individualizada e compartilhada, em função de importantes danos ocasionados pelo tratamento de cânceres indolentes. Os malefícios associados a esses tratamentos incluem comprometimento de qualidade de vida do homem em decorrência da disfunção sexual erétil, incontinência urinária, além do aspecto psicológico de um diagnóstico de câncer. Fica bem claro que os riscos e benefícios devem ser avaliados em conjunto com a família para tomada de decisão.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia_CancerDeProstata_RastreamentoDoCancerDeProstata",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaBaseadaEmEvidencias",
+        "MedicinaPreventiva_EticaMedica"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Uma lactente de 6 meses, nascida a termo, sem doenças prévias, encontra-se em outra consulta médica de puericultura. A mãe refere o uso de leite de cabra in natura exclusivo na alimentação da criança desde o nascimento. Ao exame físico, a criança apresenta palidez cutâneo-mucosa importante e língua lisa. Foi solicitado hemograma, que apresentou anemia macrocítica, neutropenia com hipersegmentação de neutrófilos e plaquetopenias. Ampliada a investigação, o mielograma apresentou-se normal.\nConsiderando-se a hipótese diagnóstica mais provada além de educação dietética, o tratamento medicamentoso indicado para reverter uma situação é a administração de",
+      "alternativas": [
+        "Vitamina E e Iodo.",
+        "Vitamina B12 e folato.",
+        "Zinco e ácido ascórbico.",
+        "Sais de ferro e Vitamina A."
+      ],
+      "correta": 1,
+      "professor_comment": "Trata-se de um lactente que, ao passar em consulta de rotina, no exame físico foram notadas: palidez e \"língua lisa\". Em investigação complementar, um hemograma com anemia macrocítica, plaquetopenia e hiperssegmentação neutrofílica.\n\nQue tipo de anemia cursa com macrocitose, hiperssegmentação neutrofílica e, em alguns casos, inclusive com citopenias? A anemia megaloblástica!\n\nA anemia megaloblástica pode ocorrer por deficiência de ácido fólico e/ou de vitamina B12, que fazem parte do processo de eritropoiese e síntese de ácidos nucleicos e aminoácidos. Assim, a deficiência dessas substâncias cursa com déficit não só na síntese de eritroblastos (justficando a anemia), mas também de outras células, como plaquetas e leucócitos, justificando o quadro de pancitopenia. Achados clássicos no hemograma são:\n\n- Anemia\n- Aumento de VCM e HCM\n- Neutrófilos hipersegmentados\n- Pancitopenia\n- Reticulócitos baixos\n\nOs pacientes podem se apresentar com palidez, glossite (por isso a informação da \"língua lisa\") e manifestações neurológicas (classicamente parestesias simétricas, principalmente em MMII, mas também fraqueza progressiva e até ataxia).\n\nAssim, nesse caso, além de educação dietética, o tratamento medicamentoso seria reposição de vitamina B12 e folato (alternativa B).",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil",
+        "Pediatria_HematologiaPediatrica",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasMacrociticas",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Vitaminas"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Uma paciente de 21 anos, nuligesta, Comparece a consulta em um centro de saúde com queixa de amenorreia há 6 meses, acne com pústulas, aumento de pelos, principalmente na face e nos membros inferiores. Relata dificuldade em perder peso e ciclos menstruais irregulares e longos desde a menarca. Afirma ser sexualmente ativa. É realizado, durante o atendimento, teste rápido para gravidez, com resultado negativo. Ao exame físico apresenta índice de massa corpórea de 30 kg/m2, pressão arterial de 120x70 mmHg. \nConsiderando-se o quadro clínico da paciente, qual a conduta inicial mais adequada no momento desse atendimento?",
+      "alternativas": [
+        "Dosar TSH, T4 livre, prolactina e 17 hidroxiprogesterona, para descartar patologias sistêmicas.",
+        "Dosar cortisol livre, dehidroepiandrosterona e perfil metabólico, para confirmar perfil androgênico.",
+        "Prescrever etinilestradiol 10 mg 1 vez ao dia, por 10 dias, para descartar causas uterinas de amenorreia.",
+        "Iniciar espironolactona 50 mg 2 vezes ao dia e solicitar ultrassonografia, para confirmar o diagnóstico de síndrome dos ovários policísticos."
+      ],
+      "correta": 0,
+      "professor_comment": "Diante de um quadro de amenorreia secundária, associada a queixa de irregularidade menstrual, acne e aumento de pelos (sugerindo um quadro de hirsutismo) é importante que a hipótese diagnóstica de Síndrome dos Ovários Policísiticos seja pensada. A partir dessa suspeita, a conduta para sua investigação deve ser realizada. \n\nLembre-se que segundo os critérios de Roterdam, faz-se o diagnóstico de Síndrome dos Ovários Policísiticos quando dois dos seus três critérios estão presentes, sendo eles:\n\n- Disfunção ovulatória (presente no caso clínico da questão)\n\n- Hiperandrogenismo laboratorial ou clínico (sugerido no caso apresentado no enunciado)\n\n- Alterações ultrassonográficas compatíveis com ovários policísticos \n\nE excluídas outras causas para anovulação crônica e hiperandrogenismo, sendo por isso importante solicitar testes como prolactina, testosterona total, TSH, T4 livre, 17-hidroxiprogesterona e beta HCG para mulheres sexualmente ativas.\n\nDessa forma, a alternativa A é a que responde corretamente essa questão.",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Amenorreias",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SindromeDosOvariosPolicisticos",
+        "ClinicaMedica_Endocrinologia",
+        "Ginecologia_Mastologia"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Sindemia é um conjunto de problemas de saúde intimamente interligados e que aumentam mutuamente, que afetam significativamente o estado geral da saúde de uma população no contexto de persistência de condições adversas. ( SINGER, M. A dose of drugs, a touch of violence, a case of AIDS: conceptualizing the SAVA syndemic. Free Inquiry in Creative Sociology. Okhlahoma, Estados Unidos, v. 24, n. 2, p. 99-110, 1996.)\n\nA sindemia não constitui simplesmente um sistema de comorbidade; ao contrário, significa um sistema de transmorbidade. Implica, ademais, entender essa sindemia como determinada socialmente e, por consequência, compreender que ela não será solucionada somente com modelos de intervenção provenientes exclusivamente do campo biomédico. (VILAÇA MENDES, E. O lado oculto de uma pandemia: a terceira onda da covid-19 ou o paciente invisível. CONASS. 2020.)\n\nAcerca da perspectiva sindêmica da Covid-19, assinale a opção correta.",
+      "alternativas": [
+        "A distribuição das taxas de morbidade e mortalidade da Covid-19 entre os diferentes segmentos sociais reflete as desigualdades estruturais e os determinantes sociais de saúde.",
+        "A suspenção dos atendimentos de pessoas com doenças crônicas foi medida acertada diante da emergência sanitária, dada a necessidade de priorizar o atendimento e acompanhamento dos casos de Covid-19.",
+        "A interação entre epidemias resulta na redução considerável da taxa de incidência das doenças, assim como da severidade dos casos e das repercussões para as comunidades, prevalecendo uma epidemia em detrimento das demais.",
+        "A teoria sindêmica da Covid-19 reforça a importância de investimentos em política de natureza curativa, sobretudo na estruturação e ampliação dos leitos clínicos e de terapia intensiva direcionados aos casos graves, que requerem acompanhamento hospitalar."
+      ],
+      "correta": 0,
+      "professor_comment": "Segundo Mendenhall, o conceito de sindemia possui três principais características: envolve o agrupamento de duas ou mais doenças em uma população; é decorrente da interação entre fatores biológicos, sociais e psicológicos; os fatores sociais, na maior parte dos casos, constituem-se na maior força para o desenvolvimento das doenças. Assim, uma sindemia ocorre a partir da interação entre doenças e condições de saúde e tem maior probabilidade de surgir em situações de desigualdade social causadas por pobreza, estigmatização, estresse ou violência estrutural.\n\nVamos analisar cada alternativa:\n\nA) CORRETA: Os indicadores de saúde relacionados à COVID 19 são piores em determinados seguimentos sociais como por exemplo entre a população negra e população de baixa renda, o que reforça a teoria da sindemia e as interações com desigualdade social.\n\nB) ERRADA: A COVID-19 e as DCNT compartilham um conjunto comum de fatores de risco subjacentes, incluindo privação, obesidade, idade avançada e etnia. Embora estes condicionantes envolvam fatores biológicos, o maior peso na determinação destas doenças, sobretudo nas complicações e óbitos, recai sobre as condições de vida e o acesso aos serviços de saúde. As condições crônicas durante a pandemia se agravaram de forma considerável devido a perda de continuidade do cuidado destes pacientes, gerando um impacto \"indireto\" ainda maior decorrente da pandemia.\n\nC) ERRADA: Não, como a definição de sindemia sugere, duas ou mais doenças interagem de forma a potencializar os riscos e danos para a população, associados a outros fatores psicológicos e sociais.\n\nD) ERRADA: Não, deve-se priorizar políticas a ações de saúde voltadas para a prevenção (como vacinação, uso de equipamentos de proteção, rastreamento populacional com isolamento de casos suspeitos e outros) e para a promoção da saúde, evitando maiores danos a população como um todo e diminuindo indicadores de morbidade e mortalidade.\n\nReferência:\n\nMendenhall E. Syndemics: a new path for global health research. Lancet 2017; 389:889-91.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessoSaudedoenca",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Um paciente de 65 anos, faz acompanhamento na unidade básica de saúde devido a doença de Parkinson e evolui com quadro de sonolência diurna excessiva, anosmia, fadiga e apatia. Os familiares referem que o paciente faz uso regular dos seguintes medicamentos: levodopa, dipirona, losartana e ácido acetilsalicílico. Ele é, então, encaminhado para internação hospitalar para investigação diagnóstica do quadro relatado. O exame físico revela presença de rigidez muscular importante com sinal de roda dentadapresente e tremores nas extremidades. O paciente apresenta-se muito sonolento, respondendo às solicitações, com perda de olfato, cansaço importante e apatia. Foram realizados exames laboratoriais que se mostraram dentro dos parâmetros da normalidade. Nesse caso, a provável evolução do quadro clínico do paciente está relacionada a",
+      "alternativas": [
+        "Quadro infeccioso com exames laboratoriais dentro dos parâmetros da normalidade.",
+        "Distúrbios neurodegenerativos não relacionados à doença de Parkinson.",
+        "Manifestação neuropsiquiátrica e não motora da doença de Parkinson.",
+        "Parkinsonismo secundário associado a medicamentos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Vamos analisar esta questão sobre doença de Parkinson! Você tem um paciente de 65 anos já diagnosticado com Parkinson que desenvolvulos novos sintomas neurológicos. A questão pede para você identificar se estes novos sintomas representam progressão natural da doença ou algo mais grave.</p><p><strong>Os sintomas apresentados são: sonolência excessiva, fadiga, apatia, anosmia</strong>. Estes não são os sintomas motores clássicos da doença, mas sim sintomas neuropsiquiátricos não motores que podem ocorrer na evolução do Parkinson. É fundamental lembrar que a doença afeta não só o sistema extrapiramidal, mas também outras estruturas cerebrais.</p><p>A primeira etapa sempre deve ser afastar causas secundárias para qualquer nova sintomatologia. Por isso o paciente foi internado para investigação. No entanto, os exames laboratoriais estavam normais e não havia sinais de infecção ou outros distúrbios sistêmicos.</p><p><strong>Vamos revisar cada alternativa:</strong></p><p>A) Quadro infeccioso: Os exames normais e ausência de febre ou outros sinais clássicos tornam esta opção incorreta.</p><p>B) Distúrbios neurodegenerativos: A sintomatologia é típica da progressão do Parkinson, não de outras demências.</p><p>C) Manifestação neuropsiquiátrica do Parkinson: <strong>Esta é a resposta correta!</strong> Os sintomas não motores fazem parte do espectro clínico da doença.</p><p>D) Parkinsonismo medicamentoso: Nenhuma das medicações usadas (levodopa, dipirona, losartana, AAS) causam parkinsonismo secundário.</p><p>Lembre-se: na doença de Parkinson, os sintomas não motores frequentemente precedem os sintomas motores por anos!",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento_DoencaDeParkinson",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento_DoencaDeParkinson_ManifestacoesNaoMotoras"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Um paciente de 55 anos; obeso, tabagista, foi internado no serviço de urologia. Apresentava hematúria franca, tem sido submetido a cistoscopia com resseção transuretral de lesões. O laudo anatomopatológico revelou a ressecção de 3 lesões tumorais superficiais, limitadas ao revestimento da bexiga, compatíveis com carcinoma de células transicionais de alto grau, além de ausência de invasão muscular. A pesquisa realizada por meio de ultrassonografia não demonstrou acometimento de linfonodos locais.\nNessa situação, qual conduta deve ser adotada para o caso?",
+      "alternativas": [
+        "Solicitar cistectomia total.",
+        "Indicar tratamento intravesical com BCG.",
+        "Indicar tratamento com dose única de mitomicina.",
+        "Solicitar cistoscopia com nova ressecção trimestral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o manejo do carcinoma de células transicionais da bexiga em estágio inicial! O paciente de 55 anos, tabagista (fator de risco importante), apresenta tumor superficial limitado à mucosa.</p><p><strong>O diagnóstico anatomopatológico é fundamental:</strong> carcinoma de células transicionais de alto grau, sem invasão da camada muscular (TaN0M0), e os linfonodos também estão livres de acometimento. Esta é a classificação T1N0M0 - tumor limitado ao revestimento da bexiga.</p><p>O tratamento padrão ouro é a ressecção transuretral (RTU), que já foi realizada. O próximo passo é a terapia adjuvante para prevenir recidivas, que é onde está o foco da questão.</p><p><strong>Vamos analisar as opções:</strong></p><p>A) Cistectomia total: Exagerada para tumor superficial sem invasão muscular.</p><p>B) BCG intravesical: <strong>Esta é a resposta correta!</strong> Para tumores de alto grau como este, a BCG é recomendada para reduzir risco de recidiva.</p><p>C) Mitomicina em dose única: Opção para tumores de baixo grau, não para alto grau como apresentado.</p><p>D) Nova ressecção trimestral: Não é o padrão para este caso; a RTU inicial já foi adequada.</p><p>A escolha entre BCG e quimioterápicos intravesicais depende do grau tumoral. BCG é preferida para tumores de alto grau pela maior eficácia, enquanto mitomicina é indicada para tumores de baixo risco. Esta é uma questão clássica sobre cancerologia urológica!",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_CancerDeBexiga",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_CancerDeBexiga_CarcinomaDeCelulasTransicionais",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_CancerDeBexiga_CarcinomaDeCelulasTransicionais_TratamentoNaoCirurgico"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Um recém-nascido a termo recebeu alta com orientações gerais, mas retornou a avaliação após 72 horas. A mãe relata que, embora ele estivesse bem, estava preocupada, pois achava que o \"amarelão\" estava ficando cada vez mais acentuado. Na avaliação médica, observou-se icterícia (3+/4+); Zona 4 de Kramer. A criança foi internada e foram solicitados exames laboratoriais. A bilirrubina total era 25,6 mg/dL às custas da fração bilirrubina indireta. Não havia histórico de incompatibilidade ABO ou Rh. \nConsiderando o caso clínico, assinale a opção que apresenta, corretamente, a causa de hiperbilirrubinemia indireta neonatal associada à sua fisiopatologia, a avaliação complementar de diagnóstico e a conduta imediata, respectivamente.",
+      "alternativas": [
+        "Alfatalassemia (doença hemolítica); teste do pezinho; fototerapia.",
+        "Hipotireoidismo (policitemia); dosagem de hormônio tireoidiano; exsanguíneo transfusão.",
+        "Síndrome de Crigler Najjar (doença hemolítica); teste do pezinho; exsanguíneo transfusão.",
+        "Estenose hipertrófica de piloro (coleção sanguínea extravascular); ultrassonografia abdominal; fototerapia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Vamos decifrar esta questão de neonatologia sobre icterícia! O caso apresenta um recém-nascido que retornou após 72 horas com icterícia muito acentuada (zona 4 de Kramer) e bilirrubina total de 25,6 mg/dL - valores dangerously elevados!</p><p><strong>Esta é uma emergência neonatológica!</strong> Estes níveis de bilirrubina indireta estão próximos ao limite para exsanguineotransfusão. A zona 4 de Kramer indica icterícia grave. O primeiro passo seria fototerapia de alta intensidade imediata.</p><p>Considerando que não há incompatibilidade ABO ou Rh (que seria a causa mais comum), precisamos pensar em outras causas de hemólise. A questão apresenta três causas distintas.</p><p><strong>Análise das alternativas:</strong></p><p>A) Alfatalassemia + teste do pezinho + fototerapia: <strong>Correta!</strong> A alfatalassemia pode causar hemólise no período neonatal e é detectável no teste do pezinho. A fototerapia é a conduta imediata.</p><p>B) Hipotireoidismo: Incorreto - não causa policitemia e o VDRL seria o primeiro exame para hepatite.</p><p>C) Síndrome de Crigler-Najjar: Não é detectada no teste do pezinho.</p><p>D) Estenose hipertrófica do piloro: Apresentaria vômitos e outras manifestações distintas.</p><p><strong>Dica importante:</strong> Curve de Buthani para níveis de bilirrubina e fototerapia emergêncial!",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_IctericiaNenonatalEDisturbiosH",
+        "Pediatria_Neonatologia_IctericiaNenonatalEDisturbiosH_HiperbilirrubinemiaNeonatal",
+        "Pediatria_Neonatologia_IctericiaNenonatalEDisturbiosH_HiperbilirrubinemiaNeonatal_DiagnosticoDiferencial"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "A vulvovaginite constitui uma das doenças mais comuns que motivam as mulheres a procurar o/a ginecologista.\nNesse contexto considerando a importância do diagnóstico etiológico, assinale a opção correta.",
+      "alternativas": [
+        "Na infecção por clamídea, o corrimento apresenta-se em moderada quantidade com intensa reação inflamatória nas paredes vaginais.",
+        "Na tricomoníase, o corrimento é escasso, e o diagnóstico é realizado com base no resultado da bacterioscopia e da cultura do meio vaginal.",
+        "Na candidíase vaginal, o corrimento no exame direto apresenta aspecto branco, habitualmente espesso ou grumoso, aderido ao colo e às paredes vaginais.",
+        "Na vaginite citolítica, o PH da vagina é maior que 4,5, o corrimento tem aspecto homogênio, e a bacterioscopia mostra a presença de germes Gram negativos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre as características clínicas das vulvovaginites! É fundamental conhecer os padrões de apresentação de cada infecção para fazer o diagnóstico diferencial correto.</p><p><strong>Vamos analisar cada alternativa com suas características típicas:</strong></p><p>A) Clamídia (Chlamydia trachomatis): <strong>Incorreta!</strong> A cervicite por clamídia é frequentemente ASSINTOMÁTICA, sendo chamada de 'silenciosa'. Quando presentes, os sintomas são sutis - corrimento discreto, sem inflamação intensa.</p><p>B) Tricomoníase: <strong>Incorreta!</strong> O corrimento é PROFUSO e amarelado, não escasso! Pode causar o característico 'colo em framboesa' por pequenos pontos hemorrágicos.</p><p>C) Candidíase vaginal: <strong>Esta é a resposta correta!</strong> O corrimento tem aspecto branco, espesso e grumoso, aderente ao colo e paredes vaginais. É acompanhada de prurido e hiperemia vulvar intensas.</p><p>D) Vaginose citolítica: <strong>Incorreta!</strong> O pH é DIMINUÍDO (< 4,5), não aumentado. O corrimento é abundante e esbranquiçado, com aumento de lactobacilos na bacterioscopia.</p><p><strong>Lembrete importante:</strong> Na prática clínica, muitas vezes podemos reconhecer o padrão típico antes mesmo dos exames complementares. O diagnóstico correto orienta o tratamento específico!",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites_CandidaseVaginal",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites_CandidaseVaginal_DiagnosticoLaboratorial"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Uma mulher com 26 anos, foi atendida pela equipe de triagem de uma unidade de saúde da família localizada na área rural de um município de pequeno porte. Em razão de queixa de atraso de alguns dias da menstruação, a paciente realizou um teste rápido de gravidez, que se revelou positivo. O médico que a atende, após anamnese completa e exame clínico, classifica-a como gestante de baixo risco e solicita testes rápidos para hepatite B, sífilis (teste treponêmico) e HIV. Os resultados de todos os exames, exceto o de sífilis, são negativos. A paciente relata que não tem alergia a medicamentos, que nunca teve sífilis nem realizou tratamento medicamentoso para essa doença. O médico solicita que ela compareça com seu parceiro à próxima consulta, para que ele também realize os testes rápidos e decide, então, iniciar, para a paciente, o tratamento para sífilis tardia. \nApós solicitar todos os exames laboratoriais para o pré-natal de baixo risco e o exame VDRL confirmar a doença, o médico prescreve que seja administrado à paciente, na unidade de saúde, benzilpenicilina benzatina de 1.200.000 UI (intramuscular), em",
+      "alternativas": [
+        "1 dose por semana, durante 3 semanas; o VDRL deverá ser monitorado mensalmente; o indicador de cura é que o VDRL reduza pelo menos 1 diluição em relação ao VDRL constatado no momento do diagnóstico.",
+        "2 doses por semana, durante 3 semanas; o VDRL deverá ser monitorado mensalmente; o indicador de cura é que o VDRL reduza pelo menos 2 diluições em relação ao VDRL constatado no momento do diagnóstico.",
+        "2 doses por semana, durante 2 semanas; o VDRL deverá ser monitorado no 3º, 9º e 12º mês após o diagnóstico; o indicador de cura é o que o VDRL reduza pelo menos 1 diluição em relação ao VDRL verificado no momento do diagnóstico.",
+        "1 dose por semana, durante 2 semanas; o VDRL deverá ser monitorado no 3º, 9º e 12º mês após o diagnóstico; o indicador de cura é que o VDRL reduza pelo menos 2 diluições em relação ao VDRL verificado no momento do diagnóstico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o tratamento da sífilis na gestação - tema crucial do pré-natal! Você tem uma gestante de baixo risco com diagnóstico de sífilis, sem sintomas (forma latente), e precisa decidir o protocolo correto.</p><p><strong>Princípios fundamentais do tratamento na gestação:</strong></p><p>1) A antibioticoterapia deve ser iniciada imediatamente após o primeiro teste positivo</p><p>2) Não aguardar confirmação com segundo exame para começar tratamento</p><p>3) Gestantes são sempre consideradas como tendo sífilis de duração indeterminada (tardia)</p><p>Como a paciente é gestante e foi diagnosticada durante o pré-natal sem sintomas, enquadra-se como sífilis latente de duração ignorada. O tratamento para sífilis tardia na gestação é sempre mais longo.</p><p><strong>Análise das alternativas:</strong></p><p>A) 1 dose por semana por 3 semanas: <strong>Incorreta</strong> - para sífilis tardia são 3 doses, mas a redução esperada é de 2 diluições.</p><p>B) 2 doses por semana por 3 semanas: <strong>Esta é a resposta correta!</strong> Protocolo completo para sífilis tardia na gestação, com redução esperada de 2 diluições do VDRL.</p><p>C) 2 doses por semana por 2 semanas: <strong>Incorreta</strong> - duração insuficiente para sífilis tardia.</p><p>D) 1 dose por semana por 2 semanas: <strong>Incorreta</strong> - tanto dose quanto duração inadequadas.</p><p><strong>Dica crucial:</strong> Na gestação, o seguimiento é mensal e deve haver redução de 2 diluições em 12 meses para considerar cura adequada!",
+      "filterIds": [
+        "Obstetricia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao_Tratamento",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao_Tratamento_PenicilinaBenzatina",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "INEP2023REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399752386-9"
+    }
+  ]
+}

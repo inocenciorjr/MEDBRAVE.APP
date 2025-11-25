@@ -1,17 +1,17 @@
 import { Router } from 'express';
-import { firestore } from 'firebase-admin';
+import { SupabaseClient } from '@supabase/supabase-js';
 import { IAuditLogService } from '../interfaces/IAuditLogService';
-import { FirebaseAuditLogService } from '../FirebaseAuditLogService';
+import { SupabaseAuditLogService } from '../../../infra/audit/supabase/SupabaseAuditLogService';
 import { AuditLogController } from '../controllers/AuditLogController';
 import { createAuditLogRoutes } from '../routes/auditLogRoutes';
 import {
-  FirebaseAuditLogRepository,
+  SupabaseAuditLogRepository,
   IAuditLogRepository,
 } from '../repositories/AuditLogRepository';
 import { LogActionUseCase, GetAuditLogsUseCase } from '../use-cases';
 
 export interface AuditLogModuleOptions {
-  firestoreDb?: firestore.Firestore;
+  supabaseClient?: SupabaseClient;
 }
 
 /**
@@ -29,18 +29,21 @@ export function createAuditLogModule(options?: AuditLogModuleOptions): {
     getAuditLogsUseCase: GetAuditLogsUseCase;
   };
 } {
-  // Obter instância do Firestore
-  const db = options?.firestoreDb || firestore();
+  // Obter instância do Supabase
+  const supabase = options?.supabaseClient;
+  if (!supabase) {
+    throw new Error('SupabaseClient é obrigatório para createAuditLogModule');
+  }
 
   // Criar repositório
-  const auditLogRepository = new FirebaseAuditLogRepository(db);
+  const auditLogRepository = new SupabaseAuditLogRepository(supabase);
 
   // Criar casos de uso
   const logActionUseCase = new LogActionUseCase(auditLogRepository);
   const getAuditLogsUseCase = new GetAuditLogsUseCase(auditLogRepository);
 
   // Obter instância singleton do serviço
-  const auditLogService = FirebaseAuditLogService.getInstance();
+  const auditLogService = SupabaseAuditLogService.getInstance();
 
   // Criar controlador
   const auditLogController = new AuditLogController(auditLogService);

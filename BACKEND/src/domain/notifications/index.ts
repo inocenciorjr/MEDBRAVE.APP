@@ -12,8 +12,9 @@ export * from './interfaces/INotificationService';
 export * from './interfaces/IDeviceService';
 
 // Exportar serviços
-export * from './services/FirebaseNotificationService';
-export * from './services/FirebaseDeviceService';
+// Firebase services removed - using Supabase services from infra layer
+// export * from './services/FirebaseNotificationService';
+// export * from './services/FirebaseDeviceService';
 
 // Exportar controladores
 export * from './controllers/NotificationController';
@@ -24,7 +25,7 @@ export * from './validators/notificationValidators';
 export * from './validators/deviceValidators';
 
 // Exportar repositórios
-export * from './repositories/NotificationRepository';
+// Repositórios migrados para camada infra (Supabase)
 
 // Exportar casos de uso
 export * from './use-cases';

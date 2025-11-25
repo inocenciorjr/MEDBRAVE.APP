@@ -1,0 +1,1703 @@
+{
+  "metadata": {
+    "examName": "CESUPA2023R1 (CESUPA 2023)",
+    "examYear": 2023,
+    "url": "source://217",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-08T07:00:38.159Z",
+    "jobId": "batch-1762572226942-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "02ecb21e-41fa-4a7d-9d4b-4006a73cd92d"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "A Vigilância Epidemiológica das Paralisias Flácidas Agudas é de fundamental importância para a detecção da circulação de pólio vírus na população brasileira. Recentemente, no Pará, houve uma notificação de caso de PFA associada à vacinação pela VOP, 48 horas antes. Em relação às medidas de prevenção da poliomielite na população brasileira, pode-se afirmar:",
+      "alternativas": [
+        "Notificação imediata de casos de Paralisia Flácida Aguda em menores de 15 anos e investigação em até 48 horas, além da notificação negativa semanal.",
+        "Vacinação com a VIP (Vacina inativada) ao nascimento e duas doses de reforço com a VOP (Vacina oral atenuada), para prevenção da pólio vacinal.",
+        "Vacinação com a VIP (Vacina Inativada) aos 2, 4 e 6 meses, sem necessidade da VOP (Vacina oral atenuada), para prevenção de pólio vacinal.",
+        "Notificação imediata de casos de Paralisia Flácida aguda de qualquer faixa etária com história de viagem a países com circulação de poliovírus nos últimos 30 dias e coleta oportuna de duas amostras de fezes (até 60 dias após o início dos sintomas), para identificação viral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre vigilância epidemiológica de Paralisia Flácida Aguda (PFA), tema fundamental para controle da poliomielite no Brasil.</p><p><strong>A resposta correta é A.</strong> Vamos entender por quê:</p><p><strong>Por que a alternativa A está correta?</strong></p><p>A PFA em menores de 15 anos é doença de notificação compulsória IMEDIATA. A investigação deve ser iniciada em até 48 horas para rápida implementação de medidas de controle. A notificação negativa semanal é essencial para monitorar a ausência de casos e detectar mudanças no padrão epidemiológico.</p><p><strong>Por que as demais estão incorretas?</strong></p><p><strong>Alternativa B:</strong> Incorreta porque a VOP (vacina oral) não é mais utilizada como rotina. A dose de reforço atual é a VOP aos 15 meses e 4 anos, mas as três doses primárias são com VIP.</p><p><strong>Alternativa C:</strong> Incorreta. O esquema atual inclui a VOP como dose de reforço (aos 15 meses e 4 anos). Além disso, em situação de surto, pode ser indicada dose adicional de VOP para interrupção da transmissão.</p><p><strong>Alternativa D:</strong> Incorreta quanto à faixa etária. A notificação de PFA é obrigatória em menores de 15 anos, não em qualquer faixa etária com viagem recente. A coleta de fezes deve ser realizada em até 14 dias do início dos sintomas (não 60 dias).</p><p><strong>Dica de estudo:</strong> Lembre-se da \"regra das 48 horas\" para investigação de PFA. A notificação negativa semanal é fundamental para o sistema de vigilância sensível detectar precocemente a reintrodução do poliovírus.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>A OMS define Covid-19 longa como uma síndrome \"caracterizada como tal três meses após o início da Covid-19, com sintomas que duram, a partir daí, pelo menos dois meses e não podem ser explicados por um diagnóstico alternativo\". Miranda, DAP, et al. (Transactions of The Royal Society of Tropical Medicine and Hygiene, 2022) publicaram um estudo de corte recente em que acompanharam 646 pacientes durante 14 meses com covid-19, confirmada por RT-PCR. A tabela abaixo mostra a associação entre o sexo o risco de Covid longa. A medida que melhor expressa o excesso de casos de Covid longa atribuível ao sexo Feminino (F) é:\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ2.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Risco Relativo de 2,15.",
+        "Risco atribuível de 18,98%.",
+        "Odds-Ratio (Razão de chances) de 1,47.",
+        "Risco atribuível de 20,38%."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda medidas de associação em epidemiologia, tema recorrente em provas. O enunciado apresenta um estudo sobre fatores de risco para COVID longa e solicita a medida que expressa o excesso de casos atribuíveis ao sexo feminino.</p><p><strong>A resposta correta é B - Risco atribuível de 18,98%.</strong></p><p><strong>Entendendo o risco atribuível:</strong></p><p>O risco atribuível representa o \"excesso\" de casos de doença que podem ser diretamente atribuídos a um fator de risco específico. Em nosso exemplo, quantos casos extras de COVID longa ocorrem nas mulheres devido ao fato de serem mulheres.</p><p><strong>Cálculo prático:</strong></p><p>• Incidência de COVID longa em mulheres: 205/348 = 58,9%<br>• Incidência de COVID longa em homens: 119/298 = 39,9%<br>• Risco Atribuível = 58,9% - 39,9% = 18,9% ≈ 18,98%</p><p><strong>Interpretação:</strong> 18,98% dos casos de COVID longa podem ser atribuídos ao sexo feminino, ou seja, quase 1 em cada 5 casos extras de COVID longa ocurre devido a esta característica.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p><strong>A) Risco Relativo de 2,15:</strong> Seria a razão entre as incidências (58,9%/39,9% = 1,47), mas o RR expressa \"quantas vezes mais provável\" e não o excesso de casos.</p><p><strong>C) Odds-Ratio de 1,47:</strong> Esta seria a medida correta, mas não expressa o \"excesso\" de casos atribuível - apenas a força de associação.</p><p><strong>D) Risco atribuível de 20,38%:</strong> Valor incorreto, pois nosso cálculo resultou em 18,98%.</p><p><strong>Lembrete:</strong> O risco atribuível é sempre expresso em percentual e representa a proporção de casos que podrían ser prevenidos se o fator de risco fosse eliminado.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_PesquisaClinica",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeAssociacaoEMedidasDeI",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "<html><head></head><body>No estado do Amazonas em 2018, houve um processo epidêmico de sarampo, conforme Boletim Epidemiológico do MS, 2018. Abaixo, é mostrado um gráfico com a distribuição por faixa etária dos casos de sarampo no estado do AM em 2018: A partir desses dados, o MS instituiu a vacinação contra o sarampo a partir dos 6 meses de idade (dose 0), em situação de epidemia, e, depois a vacinação recomendada aos 12 e 15 meses. Que explicação epidemiológica você daria para os casos de sarampo abaixo de 1 ano?\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ3.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O surgimento de uma cepa importada que afetaria crianças lactentes (abaixo de 1 ano).",
+        "Um efeito coorte, pois a faixa etária mais afetada, entre 20 e 29 anos, seria composta por mães não vacinadas na infância.",
+        "Maior suscetibilidade de crianças menores de 1 ano devido a baixas condições socioeconômicas.",
+        "Seria somente um efeito de maior notificação de casos mais sintomáticos em crianças menores de 1 ano."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um surto de sarampo no Amazonas e seus padrões epidemiológicos. O gráfico mostra um pico em adultos jovens (15-29 anos) e, curiosamente, casos em crianças menores de 1 ano. A questão quer saber por que essas crianças pequenas contraíram sarampo durante a epidemia.</p><p><strong>A resposta correta é B - Um efeito coorte, pois a faixa etária mais afetada, entre 20 e 29 anos, seria composta por mães não vacinadas na infância.</strong></p><p><strong>Entendendo o efeito coorte:</strong></p><p>Um coorte é um grupo de pessoas que compartilharam uma experiência comum. Neste caso, as pessoas de 20-29 anos em 2018 nasceram entre 1989-1998. Se recordarmos a história da vacinação no Brasil, a segunda dose da tríplice viral só foi incorporada ao calendário nacional em 1996-1997, deixando várias crianças susceptíveis.</p><p><strong>Mecanismo epidemiológico:</strong></p><p>Quando as mães pertencem a um coorte não vacinado adequadamente, elas não desarrollan anticorpos protetores e, consequently, não transmitem imunidade passiva (materna) aos recém-nascidos. Com 6 meses, os anticorpos maternos diminuem, deixando essas crianças completamente susceptíveis à infecção.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p><strong>A) Cepa importada:</strong> Não há indicação no enunciado sobre cepas importadas, e todos os genótipos de measles virus podem afetar qualquer faixa etária.</p><p><strong>C) Condições socioeconômicas:</strong> Embora a condição socioeconômica influencie na cobertura vacinal, não explicaria especificamente o acometimento de lactentes, que depende da situação vacinal da mãe.</p><p><strong>D) Efeito de notificação:</strong> A maior sintomaticidade em lactentes não explicaria por que estão adoecendo - apenas por que seriam notificados mais facilmente.</p><p><strong>Contexto importante:</strong> Este padrão se repetiu em vários surtos recentes no Brasil, reforçando a importância da alta cobertura vacinal para proteger não apenas o indivíduo vacinado, mas também os suscetíveis próximos, como lactentes.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn_EndemiasEEpidemias",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn_InvestigacaoDeSurtos",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn_PadroesDeDistribuicaoDasDoenca",
+        "ClinicaMedica_Infectologia_DoencasExantematicas",
+        "ClinicaMedica_Infectologia_DoencasExantematicas_Sarampo"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Um teste rápido para Doença de Chagas está sendo testado em dois municípios do estado do PA. É utilizado da mesma forma e pela mesma equipe nos dois municípios, mas a quantidade de resultados falso-positivos entre aqueles que testam positivo no município A é maior do que entre aqueles que testam positivo na população B, considerando-se o teste de Elisa pelo IEC como padrão ouro. Que explicação você considera a mais provável para este achado?",
+      "alternativas": [
+        "A especificidade do teste é menor na população A.",
+        "A prevalência da doença é menor na população A.",
+        "A prevalência da doença é maior na população A.",
+        "A especificidade do teste é maior na população A."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia conceitos fundamentais de epidemiologia diagnóstica, especialmente a relação entre prevalência, especificidade e valores preditivos de testes diagnósticos.</p><p><strong>A resposta correta é B - A prevalência da doença é menor na população A.</strong></p><p><strong>Conceito-chave: baixa prevalência aumenta falso-positivos</strong></p><p>Vamos entender usando uma analogia simples: imagine um detector de metal que soa alarme em 10% das pessoas. Em um aeroporto (alta prevalência de pessoas com objetos metálicos), quando o alarme toca, provavelmente a pessoa tem algo metálico. Em um shopping (baixa prevalência), o alarme pode tocar várias vezes em pessoas sem nada metálico.</p><p><strong>Explicação matemática:</strong></p><p>A especificidade é uma característica FIXA do teste. Independente da população, um teste de 90% de especificidade sempre terá 90% dos não-doentes com resultado negativo.</p><p>Quando a prevalência é BAIXA:</p><p>• Há muitos mais não-doentes na população<br>• 10% desses não-doentes darão falso-positivo<br>• Entre os poucos que testam positivo, muitos são falso-positivos</p><p>Quando a prevalência é ALTA:</p><p>• Há mais doentes na população<br>• Entre os que testam positivo, muitos são verdadeiros positivos<br>• A proporção de falso-positivos diminui</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p><strong>A) Especificidade menor na população A:</strong> A especificidade é uma característica do teste, não da população.</p><p><strong>C) Prevalência maior na população A:</strong> Se a prevalência fosse maior, haveria MENOS falso-positivos, não mais.</p><p><strong>D) Especificidade maior na população A:</strong> Novamente, a especificidade é fixa e não explicaria o aumento de falso-positivos.</p><p><strong>Aplicação prática:</strong> Este conceito é crucial em triagem populacional. Em populações de baixa prevalência, mesmo testes com alta especificidade podem gerar muitos falso-positivos, exigindo testes confirmatórios.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TestesDiagnosticos",
+        "MedicinaPreventiva_Epidemiologia_ProcessoSaudedoenca",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_OutrasDoencasInfecciosas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Em um estudo de coorte de diarreia em menores de 1 ano, encontrou-se a taxa de incidência na população de estudo (n=-100) igual a 25%. Considerando-se que, entre as 50 crianças que tiveram desmame precoce, 15 apresentaram diarreia e 5, entre os não expostos. Qual é a fração de casos com a doença nessa população atribuível à exposição?",
+      "alternativas": [
+        "30%.",
+        "10%.",
+        "20%.",
+        "50%."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão foi ANULADA (@).</strong></p><p><strong>Motivo da anulação:</strong> Inconsistência nos dados fornecidos e gabarito que não contempla o cálculo correto.</p><p><strong>Problemas identificados:</strong></p><p><strong>1. Inconsistência matemática:</strong> O enunciado menciona taxa de incidência geral de 25% em 100 crianças, o que would result in 25 casos de diarreia. However, os dados estratificados mostram apenas 20 casos (15 expostos + 5 não expostos).</p><p><strong>2. Cálculo do risco atribuível:</strong> O risco atribuível fração seria:<br>• Incidência em expostos: 15/50 = 30%<br>• Incidência em não expostos: 5/50 = 10%<br>• Risco Atribuível = (30% - 10%) / 30% = 67%<br>• Nenhuma alternativa contempla essa resposta (opções vão de 10% a 50%)</p><p><strong>Análise das alternativas disponíveis:</strong></p><p><strong>A) 30%:</strong> Seria a incidência entre expostos, não o risco atribuível</p><p><strong>B) 10%:</strong> Seria a diferença absoluta de incidências, não a fração</p><p><strong>C) 20%:</strong> Não corresponde a nenhum cálculo baseado nos dados</p><p><strong>D) 50%:</strong> Tampoco corresponde ao cálculo correto</p><p><strong>Conceito correto (para fins educacionais):</strong></p><p>O risco atribuível fração mede a proporção de casos entre os expostos que podem ser atribuídos à exposição. Represents quanto da doença nos expostos seria eliminado se a exposição fosse removida.</p><p><strong>Conclusão:</strong> Questão anulada por erro conceitual e falta de concordância entre os dados apresentados e o gabarito proposto. Este tipo de inconsistência prejudica a avaliação justa do conhecimento do candidato.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeAssociacaoEMedidasDeI",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_DiarreiaAguda",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_Diarreia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "\"...Muitas doenças são complexas e multifatoriais, exigindo uma abordagem diferente da lógica linear e da tecnologia que podem funcionar tão bem em doenças com uma etiologia específica. Experiências de doença como dor crônica, transtornos alimentares, depressão e adição têm uma dimensão existencial que precisa ser levada em conta para que sejam entendidas. Devemos prestar atenção ao sofrimento das pessoas, às suas emoções, crenças e relacionamentos, não apenas por razões humanitárias, mas também porque têm um importante papel na origem das doenças (Foss, 2002).\" Sobre o Método Clínico Centrado na Pessoa, pode-se afirmar:",
+      "alternativas": [
+        "Em seu Componente 1, entendendo a pessoa como um todo, é mais importante explorar as informações objetivas e tecnicamente relevantes ao diagnóstico diferencial, para, depois, no componente 3, elaborar um projeto comum de manejo de problemas, entender as ideias, sentimentos e expectativas dessa pessoa com relação a sua doença.",
+        "No Componente 3, elaborando um projeto comum de manejo de problemas, o médico deve estabelecer sozinho, quais são as metas e as prioridades a serem alcançadas com o manejo de cada problema que foi priorizado no momento da consulta.",
+        "No componente 04, intensificando o relacionamento entre a pessoa e o profissional de saúde, o médico deve estar atento à transferência: processo pelo qual a pessoa, de forma consciente, projeta, nas outras pessoas que atualmente fazem parte da sua vida - incluindo o médico - pensamentos, comportamentos e reações emocionais originados em outros relacionamentos significativos que ocorreram desde a sua infância.",
+        "Para explorar as 4 dimensões da experiência com a doença, do componente 01, pode-se utilizar o Acróstico SIFE, com as seguintes perguntas durante a entrevista clínica: como você se sente com essa doença, o que você acha que significa essa doença? Como essa doença pode interferir em seu dia a dia? Como você acha que eu poderia ajudá-lo?"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca CESUPA avalia seu conhecimento sobre o Método Clínico Centrado na Pessoa (MCCP), especificamente sobre o primeiro componente e as ferramentas de entrevista clínica.</p><p><strong>A resposta correta é D - sobre o uso do acróstico SIFE no componente 1.</strong></p><p>O método clínico centrado na pessoa possui 4 componentes fundamentais. O primeiro componente, \"Explorando a Saúde, a Doença e a Experiência da Doença\", é crucial para entender a percepção subjetiva do paciente sobre sua condição. A ferramenta SIFE (Sentimentos, Ideias, Funcionamento, Expectativa) é essencial neste momento.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A:</strong> Incorreta. A prioridade no componente 1 não são as informações objetivas, mas sim a experiência subjetiva da doença. A sequência descrita está invertida - as ideias, sentimentos e expectativas devem ser exploradas desde o início, não apenas no componente 3.</p><p><strong>Alternativa B:</strong> Incorreta. No terceiro componente (Plano Conjunto), o plano deve ser estabelecido em conjunto com a pessoa, não unilateralmente pelo médico. A palavra \"sozinho\" torna esta alternativa claramente incorreta.</p><p><strong>Alternativa C:</strong> Incorreta. O conceito de transferência descrito está confuso. Transferência é um processo inconsciente, não consciente como descrito. Além disso, a transferência não se refere apenas a relacionamentos da infância, mas a padrões relacionais que se repetem.</p><p><strong>Alternativa D:</strong> Correta. O acróstico SIFE é realmente utilizado no componente 1, e as perguntas descritas correspondem perfeitamente a cada dimensão: Sentimentos (\"como você se sente\"), Ideias (\"o que acha que significa\"), Funcionamento (\"como interfere no dia a dia\") e Expectativa (\"como posso ajudá-lo\").</p><p>Esta questão evidencia a importância de valorizar a experiência subjetiva do paciente, não apenas dados objetivos. O SIFE é uma ferramenta prática que facilita a abordagem humanizada da consulta.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa_Componentes"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Jovem de 22 anos, chega à UBS com quadro de diagnóstico de depressão há 4 anos, apresentando quadro atual mais intenso sem sintomas psicóticos. Esse ao ser indagado, relata desesperança com sua vida e que pensa em \"acabar com tudo isso, mas ainda não teve coragem\". Com relação à ideação suicida, qual a conduta a ser tomada?",
+      "alternativas": [
+        "O sexo do paciente não deve ser levado em consideração, visto que as estatísticas mostram que o sexo feminino é o mais afetado em casos de suicídio.",
+        "O profissional da saúde deve evitar falar sobre suicídio, para não estimular que essa ideação seja concretizada.",
+        "São objeto de notificação no SINAN apenas AUTOAGRESSÃO e TENTATIVA DE SUICÍDIO, não se notifica IDEAÇÃO.",
+        "Neste caso, o paciente deve ser acompanhado somente pela equipe da UBS, não havendo necessidade de referenciar a outros pontos da Rede de Atenção Psicossocial."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda um tema extremamente relevante na prática clínica: o manejo da ideação suicida e as obrigações legais de notificação.</p><p><strong>A resposta correta é C - sobre notificação no SINAN.</strong></p><p>O caso apresenta um jovem de 22 anos com depressão crônica agravada, expressando ideação suicida sem planejamento. Esta é uma situação que exige manejo cuidadoso, mas com fundamentação técnica adequada sobre as notificações obrigatórias.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Incorreta. Embora as tentativas de suicídio sejam mais frequentes no sexo feminino, os homens apresentam maior letalidade em suas tentativas. Ignorar fatores de risco como o sexo masculino pode impactar negativamente a avaliação do risco.</p><p><strong>Alternativa B:</strong> Incorreta. Evitar falar sobre suicídio é contraproducente. A abordagem adequada do tema, com técnicas apropriadas, é fundamental para o manejo clínico. Profissionais devem ser treinados para essa abordagem, não evitá-la.</p><p><strong>Alternativa C:</strong> Correta. Segundo as normas do SINAN, apenas autoagressão e tentativa de suicídio são de notificação obrigatória. A ideação suicida, embora requer manejo clínico adequado, não é objeto de notificação no sistema.</p><p><strong>Alternativa D:</strong> Incorreta. Quadros depressivos com ideação suicida, mesmo sem planejamento, requerem avaliação especializada. A simples acompanhamento na UBS pode ser inadequado - é necessário considerar referência para a Rede de Atenção Psicossocial (RAPS).</p><p>Esta questão destaca a importância de compreender as diretrizes legais de notificação, diferenciando claramente entre ideação, tentativa e autoagressão consumada. O conhecimento dessas nuances é fundamental para a prática clínica responsável.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_SistemasDeInformacaoEmSaudeSis",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_TranstornosDoHumor"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Mulher, 47 anos, hipertensa, tabagista e sedentária, vem à consulta na UBS com desejo de iniciar atividade física, pois seu irmão, de 52 anos, infartou e está com receio de infartar também. Relatou leve dor no peito de forma ocasional, nos últimos 6 meses, mas acredita que seja de origem muscular. Pai morreu de IAM, aos 43 anos de idade. Relata que se matriculou na aula de dança, porém precisa de atestado. A última consulta dela foi há 13 meses, quando realizou todos os rastreamentos oportunos para idade e condições de saúde, estando todos normais. Que procedimentos o médico deve realizar para liberar a paciente para a atividade física?",
+      "alternativas": [
+        "Realizar rastreamento oportunístico com citologia vaginal, mamografia, exame de sangue do protocolo de hipertensão arterial e eletrocardiograma simples.",
+        "Realizar atestado entendendo que os exames anteriores, realizados há menos de 13 meses, estavam todos normais.",
+        "Contraindicar de forma definitiva a atividade proposta, uma vez que agora a paciente é considerada de alto risco e não deve fazer atividade física.",
+        "Realizar rastreamento oportunístico com exames de sangue do protocolo de hipertensão arterial e teste ergométrico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da CESUPA aborda um cenário clínico muito comum na atenção primária: paciente com fatores de risco solicitando liberação para atividade física.</p><p><strong>A resposta correta é D - realizar rastreamento oportunístico com exames de hipertensão e teste ergométrico.</strong></p><p>A paciente apresenta múltiplos fatores de risco cardiovascular: hipertensão, tabagismo, sedentarismo, história familiar de IAM precoce (pai aos 43 anos, irmão aos 52 anos), dor torácica ocasional e idade de 47 anos. A combinação desses fatores justifica uma avaliação mais detalhada antes de liberar a atividade física.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Incorreta. Embora os exames de rastreamento ginecológico sejam importantes, eles não são prioridade neste contexto. A citologia vaginal e mamografia são exames de rastreamento específicos, mas não avaliação cardiovascular. A última consulta foi há 13 meses com todos os rastreamentos normais, sugerindo que esses exames não são urgentes.</p><p><strong>Alternativa B:</strong> Incorreta. A liberação direta sem avaliação é inadequada considerando os múltiplos fatores de risco presentes. Os exames de 13 meses atrás podem não refletir o quadro atual, especialmente com o aparecimento de dor torácica e história familiar de eventos cardiovasculares.</p><p><strong>Alternativa C:</strong> Incorreta. A contraindicação definitiva é exagerada. A paciente pode se beneficiar da atividade física, mas com avaliação e acompanhamento adequados. A atividade física é fundamental no controle da hipertensão e redução do risco cardiovascular.</p><p><strong>Alternativa D:</strong> Correta. A avaliação cardiovascular é prioritária. Os exames do protocolo de hipertensão (glicemia, creatinina, lipidograma) são fundamentais, e o teste ergométrico é especialmente importante considerando os fatores de risco e a dor torácica referida.</p><p>Esta questão exemplifica a importância da avaliação de risco-benefício na medicina preventiva. A atividade física é benéfica, mas deve ser orientada de forma segura, especialmente em pacientes com múltiplos fatores de risco.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_AvaliacaoClinicaEExamesComplem"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Sobre o tratamento da Infecção Latente pelo Mycobacterium tuberculosis (ILTB), podemos afirmar:",
+      "alternativas": [
+        "Em adultos (> 14 anos = 30kg), a dose do esquema Isoniazida + Rifapentina é: Isoniazida 900mg/semana + Rifapentina 900mg/semana.",
+        "Deve ser realizado, preferencialmente Isoniazida, de forma isolada, por 3 meses (3H) ou 6 meses (6H), sendo preconizado no máximo 6 meses pela maior eficácia.",
+        "A rifampicina está contraindicada para pacientes hepatopatas (cirrose ou doença hepática em atividade, como hepatite viral ou alcoólica).",
+        "O esquema Isoniazida + Rifapentina pode ser utilizado com segurança em grávidas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o tratamento da Infecção Latente pelo Mycobacterium tuberculosis (ILTB), um tema relevante na prevenção da tuberculose ativa.</p><p><strong>A resposta correta é A - sobre as doses do esquema Isoniazida + Rifapentina.</strong></p><p>O tratamento da ILTB é uma estratégia fundamental para prevenir o desenvolvimento de tuberculose ativa em pessoas infectadas, mas sem doença manifesta.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Correta. O esquema atual preferido para adultos (>14 anos ou >30kg) é realmente Isoniazida 900mg + Rifapentina 900mg, administrados semanalmente por 12 semanas. Este esquema é conhecido como 3HP (Isoniazida + Rifapentina por 3 meses com administração semanal).</p><p><strong>Alternativa B:</strong> Incorreta. A isoniazida isolada não é mais o esquema preferencial - é apenas alternativa. Além disso, o tempo correto é 6-9 meses (preferindo 9 meses), não máximo 6 meses. O esquema preferido atual é o 3HP.</p><p><strong>Alternativa C:</strong> Incorreta. Contrariamente ao descrito, a rifampicina é indicada para hepatopatas como alternativa à isoniazida. O esquema é rifampicina 10mg/kg (máximo 600mg) diária por 4 meses, indicado especialmente para >50 anos ou hepatopatia.</p><p><strong>Alternativa D:</strong> Incorreta. Em gestantes, o tratamento da ILTB deve ser postergado para após o parto. Em gestantes com HIV, pode-se considerar tratamento após o primeiro trimestre, mas apenas com isoniazida (evitando rifampicina).</p><p>Esta questão destaca a importância de conhecer as atualizações no tratamento da ILTB, especialmente o esquema 3HP que oferece melhor adesão comparado aos esquemas prolongados com isoniazida isolada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Infectologia_TuberculoseTb_Tratamento",
+        "ClinicaMedica_Infectologia_TuberculoseTb_Tratamento_EsquemasAlternativos"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Os atributos da APS são fortalecidos pelo Pagamento por Desempenho do Programa Previne Brasil, o que induz o aprimoramento dos processos de trabalho e à qualificação dos resultados em saúde, além de otimizar aspectos como periodicidade e método da avaliação. Exemplo disso é que, por meio do monitoramento desses indicadores, podem ser avaliados os acessos à qualidade e à resolutividade dos serviços prestados pelas eSF/eAP, fornecendo subsídios para medidas de aprimoramento das ações e dando mais transparência aos investimentos na área da saúde para a sociedade. FONTE: Ministério da Saúde/SAPS. Para 2022, temos como indicador avaliado para essas equipes:",
+      "alternativas": [
+        "Proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1ª (primeira) até a 20ª (vigésima) semana de gestação.",
+        "Proporção de crianças de 1 (um) ano de idade vacinadas na APS contra Difteria, Tétano, Coqueluche, Hepatite B, infecções causadas por haemophilus influenzae tipo b e Poliomielite inativada.",
+        "Proporção de pessoas com hipertensão arterial, com consulta e pressão arterial aferida a cada bimestre, seja com o médico ou enfermeiro.",
+        "Proporção de pessoas com diabetes, com consulta e hemoglobina glicada solicitada e realizada a cada ano."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre os indicadores do Programa Previne Brasil, modelo de financiamento da atenção primária implementado no Brasil.</p><p><strong>A resposta correta é B - sobre vacinação de crianças de 1 ano.</strong></p><p>O Previne Brasil, instituído em 2019 e implantado em 2020, utiliza 3 critérios de financiamento: capitação ponderada, incentivo a ações estratégicas e pagamento por desempenho baseado em 7 indicadores específicos.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Incorreta. O indicador do pré-natal no Previne Brasil especifica pelo menos 6 consultas, mas a primeira deve ser até a 12ª semana, não até a 20ª. A alternativa altera um parâmetro crucial do indicador oficial.</p><p><strong>Alternativa B:</strong> Correta. Este é o Indicador 5 do Previne Brasil: \"Proporção de crianças de 1 ano de idade vacinadas na APS contra difteria, tétano, coqueluche, hepatite B, infecções causadas por Haemophilus influenzae tipo B e poliomielite inativada\". A descrição está precisa.</p><p><strong>Alternativa C:</strong> Incorreta. O indicador correto para hipertensão é \"Proporção de pessoas com hipertensão, com consulta e pressão arterial aferida no semestre\" - a periodicidade é semestral, não bimestral.</p><p><strong>Alternativa D:</strong> Incorreta. Para diabetes, o indicador é \"Proporção de pessoas com diabetes, com consulta e hemoglobina glicada solicitada no semestre\" - novamente, periodicidade semestral, não anual, e o indicador inclui solicitação da hemoglobina glicada, não necessariamente sua realização.</p><p>Esta questão evidencia a importância de conhecer os detalhes específicos dos indicadores do Previne Brasil. Pequenas alterações nos parâmetros podem tornar uma alternativa incorreta, demonstrando a necessidade de memorização precisa desses indicadores na prática da atenção primária.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Menino, 4 anos, procedente da zona rural, apresenta há 5 semanas, lesões no couro cabeludo que iniciaram com prurido, descamação e área de alopecia. Uma das lesões apresentou crescimento rápido evoluindo com característica inflamatória exuberante com formação de pústulas, micro abscessos e adenomegalia retroauricular direita. O tratamento adequado para o caso é:",
+      "alternativas": [
+        "cetoconazol oral.",
+        "griseofulvina oral.",
+        "cetoconazol xampu.",
+        "cefalexina oral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia o conhecimento em dermatologia pediátrica, especificamente sobre micoses do couro cabeludo em crianças. O quadro clínico é típico de tinea capitis com complicação - cerion.</p><p>O menino de 4 anos, procedente da zona rural, apresenta as características clássicas da tinea capitis: lesões no couro cabeludo com prurido, descamação e alopecia. A evolução para cerion é evidente pela presença de inflamação exuberante, pústulas, microabscessos e adenomegalia retroauricular.</p><p><strong>LETRA B - GRISEOFULVINA ORAL</strong> é o tratamento de escolha. A griseofulvina é um antifúngico sistêmico que reaches ofolículo piloso, sendo essencial para tratar tinea capitis, especialmente em formas inflamatórias como o cerion.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Cetoconazol oral:</strong> Embora seja antifúngico, não é primeira escolha para tinea capitis em crianças. Menor eficácia comparada à griseofulvina e potencial de efeitos hepatotóxicos.</p><p><strong>B) Griseofulvina oral:</strong> <strong>CORRETA.</strong> Primeira escolha para tinea capitis em crianças. Duração prolongada (6-8 semanas) é necessária devido ao crescimento lento do cabelo.</p><p><strong>C) Cetoconazol xampu:</strong> Usado apenas como coadjuvante. Não penetra adequadamente nofolículo piloso para tratar cerion, necessitando sempre de tratamento sistêmico.</p><p><strong>D) Cefalexina oral:</strong> É antibiótico, não antifúngico. Sem indicação no tratamento de micoses.</p><p><strong>VEREDITO:</strong> A griseofulvina oral (B) é o tratamento padrão para tinea capitis com cerion em crianças, proporcionando cura completa das lesões e crescimento capilar adequado.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Menino, 2 anos, procedente da zona rural, é trazido à UBS por apresentar \"tumoração\" na região anal há duas semanas, além de dor abdominal recorrente, diminuição do apetite e vômitos ocasionais. Ao exame físico, o médico constata tratar-se de prolapso retal, com a presença de pequenos vermes aderidos à mucosa. Assinale a parasitose intestinal nesse caso:",
+      "alternativas": [
+        "enterobíase.",
+        "ascaridíase.",
+        "trichiuríase.",
+        "oxiuríase."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 explora o conhecimento sobre parasitoses intestinais em pediatria, com foco no diagnóstico através das manifestações clínicas e do achado parasitológico específico.</p><p>O menino de 2 anos, procedente da zona rural, apresenta prolapso retal com pequenos vermes aderidos à mucosa. Este achado é fundamental para o diagnóstico diferencial das parasitoses.</p><p><strong>LETRA C - TRICHIURÍASE</strong> é a parasitose correta. O Trichuris trichiura caracteriza-se por:<br>- Localização preferencial no ceco e reto (explica o prolapso)<br>- Vermes filiformes pequenos (3-5cm) que se aderem à mucosa intestinal<br>- Geofagia comum em crianças de zona rural<br>- Sintomas: dor abdominal, alteração do apetite, vômitos</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Enterobíase (Enterobius vermicularis):</strong> Oxiúros brancos pequenos (2-12mm) que emergem principalmente à noite pelo ânus, causando prurido anal noturno. Não causa prolapso retal.</p><p><strong>B) Ascaridíase (Ascaris lumbricoides):</strong> Vermes grandes (20-35cm) de coloração rosada. Não se aderem à mucosa, causam obstrução intestinal, pneumonite ascarisica. Rara possibilidade de prolapso.</p><p><strong>C) Trichiuríase (Trichuris trichiura):</strong> <strong>CORRETA.</strong> Vermes filiformes pequenos aderidos à mucosa retocólica, causando processos inflamatórios que predispõem ao prolapso.</p><p><strong>D) Oxiuríase:</strong> É o mesmo que enterobíase (alternativa A), denominação popular incorreta. Oxiúro é Enterobius, não Trichuris.</p><p><strong>VEREDITO:</strong> A trichiuríase (C) é a parasitose que melhor se correlaciona com o prolapso retal e os vermes aderidos à mucosa descritos no caso.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "A poliomielite é uma doença altamente contagiosa, causada pelo poliovírus selvagem e que afeta principalmente as crianças menores de 5 anos de idade. O principal fator de risco, para que as crianças menores de 5 anos adquiram a doença, é a baixa cobertura vacinal. As vacinas utilizadas no momento são a VOP (vacina oral contra a poliomielite) e VIP (vacina inativada contra a poliomielite). No Brasil, o Ministério da Saúde estabelece o seguinte esquema vacinal contra a doença:",
+      "alternativas": [
+        "três doses de VIP e dois reforços de VOP.",
+        "três doses de VIP e dois reforços de VIP.",
+        "duas doses de VIP, uma dose de VOP e dois reforços de VOP.",
+        "três doses de VOP e dois reforços de VOP."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia o conhecimento sobre o esquema vacinal da poliomielite no Brasil, tema fundamental para pediatras e profissionais da atenção primária.</p><p>A questão estabelece o contexto: poliomielite é doença altamente contagiosa, principalmente em crianças menores de 5 anos, com risco aumentado em condições de baixa cobertura vacinal. As duas vacinas disponíveis são VOP (oral, vírus vivo) e VIP (injetável, vírus inativado).</p><p><strong>LETRA A - três doses de VIP e dois reforços de VOP</strong> era o esquema recomendado no momento da prova em 2023.</p><p><strong>DETALHAMENTO DO ESQUEMA 2023:</strong><br>- <strong>VIP (2, 4 e 6 meses):</strong> Doses primárias com vírus inativado trivalente (tipos 1, 2 e 3)<br>- <strong>VOP (15 meses e 4 anos):</strong> Reforços com vírus vivo bivalente (tipos 1 e 3)</p><p><strong>ATUALIZAÇÃO IMPORTANTE (2024):</strong> O Ministério da Saúde implementou mudanças no calendário vacinal. A partir de 2024, o esquema passou a ser: 3 doses de VIP (2, 4 e 6 meses) + 1 reforço com VIP aos 15 meses. Esta mudança visa eliminar o risco, embora raro, de poliomielite vacinal associada à VOP.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) três doses de VIP e dois reforços de VOP:</strong> <strong>CORRETA para 2023.</strong> Esquema vigente no momento da prova.</p><p><strong>B) três doses de VIP e dois reforços de VIP:</strong> Não existia esquema com reforços de VIP em 2023.</p><p><strong>C) duas doses de VIP, uma dose de VOP e dois reforços de VOP:</strong> Esquema incompleto e não recomendado.</p><p><strong>D) três doses de VOP e dois reforços de VOP:</strong> Esquema antigo, não mais utilizado desde a introdução da VIP.</p><p><strong>VEREDITO:</strong> A alternativa A era o esquema correto em 2023, sendo atualmente atualizada para 3 doses de VIP + 1 reforço de VIP conforme diretrizes do MS 2024.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Menina, 1 ano e 4 meses, apresenta febre elevada, mal-estar, prostração e coriza há 4 dias. Mãe refere surgimento de exantema maculopapular na região retroauricular que se estendeu de forma craniocaudal, com manutenção da febre e acentuação dos sintomas gerais com rinorreia purulenta, olhos avermelhados e com secreção. Criança profundamente toxemiada. Calendário vacinal incompleto (menor não realizou as vacinas de 1 ano e nem as de 15 meses). A complicação bacteriana mais frequente nessa patologia é:",
+      "alternativas": [
+        "otite.",
+        "sinusite.",
+        "piodermite.",
+        "pneumonia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia o conhecimento sobre complicações bacterianas do sarampo, especialmente em crianças não vacinadas e com quadro clínico grave.</p><p>A menina de 1 ano e 4 meses apresenta o quadro clássico de sarampo: febre alta, mal-estar, prostração, coriza com posterior exantema que iniciou na região retroauricular e se estendeu craniocaudalmente. O quadro progride com rinorreia purulenta, olhos avermelhados com secreção e toxemia importante. O calendário vacinal incompleto (sem vacinas de 1 ano e 15 meses) é fator de risco fundamental.</p><p><strong>LETRA A - OTITE</strong> é a complicação bacteriana mais frequente do sarampo. A fisiopatologia envolve:<br>- Quadro catarral abundante inicial afecta o ouvido médio<br>- Obstrução da tuba auditiva<br>- Colonização bacteriana secundária<br>- Consequente otite média aguda</p><p><strong>COMPLICAÇÕES DO SARAMPO EM ORDEM DE FREQUÊNCIA:</strong><br>1. <strong>Otite média</strong> - mais comum (5-15% dos casos)<br>2. <strong>Pneumonia</strong> - causa mais comum de morte<br>3. <strong>Encefalite</strong> - complicação neurológica mais grave</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Otite:</strong> <strong>CORRETA.</strong> Complicação mais frequente devido ao comprometimento da mucosa respiratória superior.</p><p><strong>B) Sinusite:</strong> Pode ocorrer, mas é menos frequente que otite no contexto do sarampo.</p><p><strong>C) Piodermite:</strong> Infecção de pele não é complicação característica do sarampo.</p><p><strong>D) Pneumonia:</strong> Complicação mais grave e causa principal de óbito, mas não a mais frequente em termos de incidência.</p><p><strong>ALERTA CLÍNICO:</strong> Crianças com deficiência de vitamina A têm maior risco de complicações graves. A suplementação de vitamina A é recomendada em todos os casos de sarampo.</p><p><strong>VEREDITO:</strong> A otite (A) é a complicação bacteriana mais comum do sarampo, ocorrendo em até 15% dos casos, especialmente em crianças desnutridas ou com deficiência de vitamina A.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Um recém-nascido de 37 semanas e 2 dias, peso de 2.480 gramas e comprimento de 47 centímetros ao nascimento, vem à primeira consulta de rotina, agora com 9 dias de vida. Está sendo alimentado com leite materno exclusivo e a mãe refere boa pega e mamadas eficientes. Até o momento ainda não iniciou nenhuma suplementação vitamínica. Ao exame físico, o peso atual é de 2.310 gramas e a estatura de 48 centímetros. Nenhuma outra alteração ao exame físico. Qual seria a sua conduta neste caso?",
+      "alternativas": [
+        "Complementação das mamadas com fórmula infantil, além de iniciar imediatamente vitamina D na dose de 400 UI diárias e ferro na dose de 2mg/kg/dia após 3 meses de vida.",
+        "Manter em aleitamento exclusivo, iniciar imediatamente a suplementação de vitamina D na dose de 400 UI diárias e ferro na dose de 2mg/kg/dia após 30 dias de vida.",
+        "Complementação com fórmula infantil, além de iniciar imediatamente vitamina D na dose de 600 UI diárias e ferro na dose de 1mg/kg/dia após 30 dias de vida.",
+        "Manter em aleitamento exclusivo, iniciar imediatamente a suplementação de vitamina D na dose de 400 UI diárias e ferro na dose de 1mg/kg/dia após 6 meses de vida."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 aborda as recomendações de suplementação vitamínica e mineral em recém-nascidos, tema fundamental na puericultura e pediatria ambulatorial.</p><p>O caso apresenta RN de 37+2 semanas, peso de nascimento 2.480g (IGRN - inadequacy fetal growth), em aleitamento materno exclusivo com boa técnica. Perda ponderal de 170g (6,8%) em 9 dias de vida - dentro do limite aceitável de até 10% nas primeiras semanas.</p><p><strong>LETRA B - manter aleitamento exclusivo, iniciar vitamina D 400 UI/dia e ferro 2mg/kg/dia após 30 dias</strong> é a conduta correta para este RN.</p><p><strong>JUSTIFICATIVA PARA A CORRETA:</strong></p><p><strong>VITAMINA D:</strong> <br>- Todos os RN em aleitamento materno devem receber 400 UI/dia desde o nascimento<br>- Independente do peso de nascimento ou idade gestacional<br>- Prevenção de raquitismo e deficiência de vitamina D</p><p><strong>FERRO:</strong> <br>- IGRN (peso 2.480g) requer suplementação de 2mg/kg/dia<br>- Início aos 30 dias de vida (não aos 15 dias, como prematuros menores)<br>- Duração durante todo o primeiro ano de vida</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Complementar com fórmula + iniciar ferro aos 3 meses:</strong> Fórmulanão necessária (aleitamento exclusivo está bem estabelecido). Ferro deveria iniciar aos 30 dias, não aos 3 meses.</p><p><strong>B) Manter aleitamento + iniciar vitamina D imediatamente + ferro aos 30 dias (2mg/kg/dia):</strong> <strong>CORRETA.</strong> Conduta ideal para este caso.</p><p><strong>C) Complementar com fórmula + vitamina D 600 UI + ferro 1mg/kg/dia aos 30 dias:</strong> Fórmulanão necessária. Dose de ferro incorreta (deveria ser 2mg/kg/dia para IGRN). Vitamina D 600 UI só após 1 ano.</p><p><strong>D) Manter aleitamento + iniciar vitamina D + ferro aos 6 meses (1mg/kg/dia):</strong> Ferro deveria iniciar aos 30 dias, não aos 6 meses. Dose incorreta para IGRN.</p><p><strong>PROGRAMAÇÃO DE FERRO POR PESO:</strong><br>- >2500g: 1mg/kg/dia a partir de 6 meses (3 meses se fatores de risco)<br>- 2500-1500g: 2mg/kg/dia a partir de 30 dias<br>- 1500-1000g: 3mg/kg/dia a partir de 15-30 dias<br>- <1000g: 4mg/kg/dia a partir de 15-30 dias</p><p><strong>VEREDITO:</strong> A alternativa B representa a conduta adequada para IGRN em aleitamento materno exclusivo, com suplementação profilática adequada de vitamina D e ferro conforme recomendações da SBP 2024.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura_PuericulturaGeral_ProfilaxiaFerro",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura_PuericulturaGeral_ProfilaxiaVitaminaD"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Lactente de 5 meses de vida vem à consulta de rotina acompanhado de sua mãe, que pede que você a oriente sobre a alimentação de seu filho a partir desse momento, pois ela irá retornar ao trabalho e passará o dia todo fora de casa. A criança nasceu de 39 semanas, parto vaginal, pesando 3.450 gramas e medindo 50cm, sem intercorrências. Até o presente momento, foi alimentado exclusivamente de leite materno em livre demanda. De acordo com as informações acima e baseado no guia alimentar para menores de 2 anos do Ministério da Saúde, assinale as afirmativas corretas: I - A introdução alimentar deverá ser iniciada nesse momento com papa de frutas 2 vezes ao dia, além de manter leite materno ordenhado em livre demanda. A papa principal deve ser iniciado após os 6 meses. II - Leite materno ordenhado exclusivamente é a melhor opção para alimentação desse lactente. Na impossibilidade da ordenha, fórmula infantil de partida é o mais indicado até os 6 meses. III - Fórmula infantil deve ser a primeira opção nesse caso, pois o volume de leite materno ordenhado não será suficiente para alimentar a criança no período em que a mãe não estiver presente. IV - A introdução alimentar deverá iniciar aos 6 meses de vida, com papas de frutas 2 vezes ao dia, seguido de papa principal no almoço e jantar. V - A papa principal deve ser composta por 50% de verduras e legumes, 25% de proteína animal, 12,5% de leguminosas e 12,5% de carboidrato.",
+      "alternativas": [
+        "I, II e III estão corretas.",
+        "II, IV e V estão corretas.",
+        "II e IV estão corretas.",
+        "II e V estão corretas."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CESUPA aborda a alimentação infantil e os protocolos do Ministério da Saúde para lactentes, testando o conhecimento sobre introdução alimentar e manejo do aleitamento materno.</p><p><strong>A resposta correta é C - II e IV estão corretas.</strong></p><p>Analisando cada afirmativa:</p><p><strong>Afirmativa I (FALSA):</strong> Erroneamente sugere iniciar papa de frutas aos 5 meses, quando o <strong>Guia Alimentar do MS 2025</strong> determina que a introdução alimentar deve ocorrer exclusivamente aos 6 meses. A papa de frutas nesse momento seria precoce e desnecessária.</p><p><strong>Afirmativa II (VERDADEIRA):</strong> Perfeitamente correta. O leite materno ordenhado permanece como a melhor opção até os 6 meses. Na impossibilidade da ordenha, a fórmula infantil de partida (1ª idade) é indicada. Isso está alinhado com as recomendações oficiais de aleitamento materno.</p><p><strong>Afirmativa III (FALSA):</strong> Contradiz as diretrizes do MS. A fórmula infantil não é primeira opção, sendo sempre priorizada a ordenha do leite materno para manutenção do aleitamento exclusivo.</p><p><strong>Afirmativa IV (VERDADEIRA):</strong> Segue corretamente o protocolo: introdução alimentar aos 6 meses, iniciando com papas de frutas 2 vezes ao dia, evoluindo para papa principal (almoço e jantar) conforme adaptação da criança.</p><p><strong>Afirmativa V (FALSA):</strong> As proporções alimentares mencionadas não correspondem às recomendações do guia. O foco deve estar na diversidade alimentar gradual, não em porcentagens rígidas.</p><p>A questão demonstra a importância de seguir as diretrizes oficiais para alimentação infantil, garantindo crescimento e desenvolvimento adequados.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AmamentacaoAleitamentoMaterno"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Recém-nascida do sexo feminino, 36 semanas e 6 dias, parto cesárea, apresenta no primeiro minuto de vida APGAR de 4. De acordo com as Diretrizes de 2022 da Sociedade Brasileira de Pediatria sobre reanimação do recém- nascido =34 semanas em sala de parto, é correto afirmar:",
+      "alternativas": [
+        "Quando a FC permanece < 100 bpm, mesmo com ventilação efetiva por cânula traqueal com O2 a 100% e acompanhada de massagem cardíaca adequada e sincronizada à ventilação por no mínimo 60 segundos, o uso de adrenalina está indicado.",
+        "No RN =34 semanas, a VPP deve ser iniciada com O2 a 100%. Uma vez iniciada a VPP, a oximetria de pulso é necessária para monitorar a SatO2 pré-ductal e decidir quanto à manutenção ou suspensão do O2 suplementar.",
+        "A VPP está indicada na presença de FC < 60 bpm e/ou apneia ou respiração irregular, após os passos iniciais de estabilização do recém-nascido.",
+        "Como a massagem cardíaca diminui a eficácia da VPP e a ventilação é a ação mais efetiva da reanimação neonatal, as compressões só devem ser iniciadas quando a expansão e a ventilação pulmonares estiverem bem estabelecidas, com a via aérea assegurada."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia o conhecimento sobre reanimação neonatal conforme as diretrizes da Sociedade Brasileira de Pediatria 2022, especificamente para recém-nascidos ≥34 semanas.</p><p><strong>A resposta correta é D.</strong></p><p>Vamos analisar cada alternativa baseado nas <strong>Diretrizes SBP 2022</strong>:</p><p><strong>Alternativa A (INCORRETA):</strong> O uso de adrenalina não está indicado apenas pela FC <100 bpm persistindo após VPP com O2 100% e massagem adequada. A adrenalina tem indicações específicas e não é a primeira opção nessa situação.</p><p><strong>Alternativa B (INCORRETA):</strong> Contradiz as diretrizes atuais. Para RN ≥34 semanas, a VPP deve ser iniciada com <strong>O2 a 21% (ar ambiente)</strong>, não 100%. A oximetria pré-ductal é importante, mas a concentração inicial de O2 é menor.</p><p><strong>Alternativa C (INCORRETA):</strong> Estabelece critérios imprecisos. A VPP está indicada principalmente quando a FC <100 bpm após os passos iniciais, ou na presença de apneia/insuficiência respiratória grave com sinais de esforço respiratório.</p><p><strong>Alternativa D (CORRETA):</strong> Exato. A ventilação é realmente a ação mais efetiva na reanimação neonatal. As compressões devem ser iniciadas apenas quando a ventilação e expansão pulmonar estiverem bem estabelecidas, com a via aérea assegurada. <strong>PRINCÍPIO FUNDAMENTAL: Ventilação > Compressões</strong>.</p><p>Esta questão reforça que a reanimação neonatal tem passos hierárquicos claros: passos iniciais → VPP → massagem cardíaca → medicamentos. A ventilação é sempre priorizada.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_ReanimacaoNeonatal"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Menino, de 3 anos e 7 meses, há 3 dias com quadro de febre alta não aferida, tosse produtiva, congestão nasal intensa com rinorreia abundante amarelo-esverdeada, diminuição do apetite, mas aceita bem água e sucos. A genitora nega vômitos, diarreia ou convulsões. Ao exame físico: consciente, hipoativo, hidratado, taquipneico, perfusão capilar 2 segundos. FR 40 irpm, ausência de tiragem subcostal. Ausculta pulmonar: estertores crepitantes em bases bilateralmente. Ausculta cardíaca: Bulhas normofonéticas, ausência de sopros. Abdome: flácido, sem visceromegalias. Vacinação atualizada. De acordo com o quadro clínico acima, assinale a alternativa correta:",
+      "alternativas": [
+        "Pneumonia, tratamento ambulatorial, Amoxicilina, reavaliar em 48 horas.",
+        "Pneumonia complicada, internação, USG de tórax, RX de tórax e antibiótico.",
+        "Pneumonia atípica, tratamento ambulatorial, Azitromicina por 5 dias.",
+        "Pneumonia grave, internação hospitalar, Raio X de tórax e antibiótico IV."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CESUPA aborda o diagnóstico e manejo da pneumonia adquirida na comunidade (PAC) em pediatria, um tema clássico em provas de residência.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Diagnóstico clínico:</strong> O menino de 3 anos apresenta quadro típico de PAC: febre alta, tosse produtiva, taquipneia (FR 40 irpm - normal até 4 anos é 20-40), estertores crepitantes bilaterais. O diagnóstico é <strong>eminentemente clínico</strong>, não necessitando de raio X de rotina.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Pneumonia em criança com sinais vitais estáveis, sem sinais de gravidade. O tratamento ambulatorial com <strong>Amoxicilina 50mg/kg/dia por 7 dias</strong> é padrão-ouro, com reavaliação em 48-72h.</p><p><strong>Alternativa B (INCORRETA):</strong> Não há critérios de gravidade para internação. Ausência de tiragem, saturação adequada, niño eupneico e hidratado. USG de tórax não é indicada em casos simples.</p><p><strong>Alternativa C (INCORRETA):</strong> quadro sugestivo de etiologia bacteriana (febre alta, secreção purulenta, taquipneia). Azitromicina é reservada para pneumonias atípicas ou quando há falha terapêutica.</p><p><strong>Alternativa D (INCORRETA):</strong> Sem critérios de pneumonia grave. A FR está no limite superior da normalidade (40 irpm é normal até 4 anos), não há hipoxemia ou esforço respiratório significativo.</p><p><strong>Critérios de internação em PAC:</strong>FR >50 (2-12 meses) ou >40 (1-4 anos) <strong>com</strong> tiragem, saturação <92%, letargia, recusa hídrica ou sinais de Toxic System Syndrome (TSS).</p><p>Este caso exemplifica que a maioria das PAC em crianças é ambulatorial e responde bem à amoxicilina oral.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_PneumoniaTipica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_TratamentoGeral"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Mulher, 19 anos, G1P0A0, sem pré-natal, procedente da zona rural em trabalho de parto é referenciada à maternidade. Após anamnese, a gestante foi submetida à coleta de exames: Teste rápido (TR) para HIV: NÃO REAGENTE, TR para sífilis: REAGENTE, TR para hepatite B e C: NÃO REAGENTES, VDRL 1/16. Mãe nega tratamento anterior para sífilis. RN nasceu de parto normal, Apgar 9/9, peso 2600, Capurro 39 semanas. Foi colocado junto à mãe para sugar o seio materno. Efetuado os demais cuidados de rotina sendo encaminhado para o alojamento conjunto acompanhando sua mãe. Exame físico sem alterações. Exames do RN: VDRL 1/2, punção liquórica sem alterações com VDRL NÃO REAGENTE, escore hematológico de RODWELL:2, Raio X de ossos longos normal. De acordo com o quadro clínico e laboratorial, assinale a alternativa CORRETA:",
+      "alternativas": [
+        "De acordo com os resultados dos exames do binômio, tratar o RN com Penicilina Cristalina ou procaína por 10 dias.",
+        "Pelo protocolo do Ministério da Saúde, o médico deve tratar o RN com Penicilina Benzatina dose única.",
+        "Encaminhar o RN para a UBS, solicitar o VDRL com um mês de vida, se houve relevação dos títulos a criança deverá ser tratada.",
+        "O recém-nascido, neste caso, é considerado exposto à sífilis sem necessidade de tratamento."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA avalia o conhecimento sobre sífilis congênita e seu manejo, tema recorrente em provas de residência devido à sua relevância em saúde pública brasileira.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Contexto clínico:</strong> Gestante sem pré-natal, VDRL 1:16, sem tratamento prévio. RN com VDRL 1:2, exame físico normal, investigação completa (líquor, radiografia, hemograma) sem alterações.</p><p><strong>Princípio fundamental:</strong> A mãe foi <strong>inadequadamente tratada</strong> (sem pré-natal, VDRL 1:16 sem tratamento). Portanto, considera-se <strong>caso de sífilis congênita</strong>, mesmo com RN assintomático.</p><p><strong>Fluxograma de decisão (Protocolo MS 2023):</strong></p><p>Para RN exposto com mãe inadequadamente tratada:</p><ul><li>Realizar VDRL, radiografia ossos longos, hemograma, líquor ✓ (feito)</li><li>Se todos exames normais e líquor normal: <strong>Penicilina Benzatina dose única</strong></li><li>Se líquor normal e algum exame alterado: <strong>Penicilina Procaína ou Cristalina por 10 dias</strong></li><li>Se líquor alterado: <strong>Penicilina Cristalina por 10 dias</strong></li></ul><p><strong>Análise das alternativas:</strong></p><p><strong>A (CORRETA):</strong> Liquor normal, mas VDRL positivo (1:2). Indica tratamento com Penicilina por 10 dias (Procaína IM ou Cristalina IV).</p><p><strong>B (INCORRETA):</strong> Benzatina dose única é reservada para casos com investigação normal completa e VDRL negativo.</p><p><strong>C (INCORRETA):</strong> Não é questão de acompanhamento. VDRL positivo no RN indica infecção, necessitando tratamento.</p><p><strong>D (INCORRETA):</strong> RN não é apenas exposto - é caso confirmado de sífilis congênita pela situação clínica.</p><p>A decisão baseia-se no risco/neuroimaging e na necessidade de adequada antibioticoterapia para prevenir complicações.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Menina, 3 anos, frequenta creche. há 3 dias com congestão nasal, rinorreia hialina, espirros frequentes, odinofagia, tosse seca e otalgia intensa. Hoje iniciou quadro de febre alta não aferida e os olhos amanheceram com muita secreção purulenta. Mãe nega vômitos, diarreia, alergias e uso de antibióticos nos últimos 3 meses. Vacinação atualizada. Pai é asmático. Mãe tem diabetes. Ao exame físico: consciente, fácies de dor, eupneica. Olhos com abundante secreção amarela de consistência espessa. Frequência respiratória 25 irpm. Ausculta pulmonar: murmúrio vesicular fisiológico, ausência de estertores. Orofaringe: hipertrofia de tonsilas grau 2/3 com hiperemia. Otoscopia: abaulamento da membrana timpânica bilateralmente. Ausculta cardíaca: bulhas normofonéticas, ausência de sopros. Abdome flácido, sem visceromegalias. De acordo com o quadro clínico acima, assinale a alternativa correta:",
+      "alternativas": [
+        "Conjuntivite bacteriana e Otite Média Aguda. Iniciar antibioticoterapia oral imediatamente com Amoxicilina associada ao inibidor de betalactamase e reavaliar em 48 horas.",
+        "Conjuntivite bacteriana e Otite Média Aguda com sinais de gravidade, deve ser iniciado Amoxicilina oral imediatamente e reavaliar após 48 horas de tratamento.",
+        "Conjuntivite bacteriana e Otite Média Aguda de causa viral, utilizar colírio com antibiótico e analgésico. Se não houver melhora da otalgia em 48 horas, iniciar Amoxicilina.",
+        "Conjuntivite bacteriana e Otite Média Aguda com efusão, necessita timpanocentese de alívio e cultura das secreções oculares e das orelhas médias."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 aborda o diagnóstico diferencial de infecções respiratórias altas em pediatria, especificamente a associação entre conjuntivite bacteriana e otite média aguda.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Diagnóstico clínico:</strong> Menina de 3 anos com quadro de 6 dias de congestão, seguido de febre alta e secreção ocular purulenta espessa. Exame físico revela otoscopia com abaulamento timpânico bilateral, confirmando otite média aguda.</p><p><strong>Características diagnósticas:</strong></p><p><strong>Conjuntivite bacteriana:</strong> Secreção amarela, espessa, abundante - típico de etiologia bacteriana (vs viral com secreção hialina).</p><p><strong>Otite média aguda:</strong> Otalgia intensa, abaulamento timpânico bilateral, hiperemia faríngea - quadro clássico em criança de 3 anos em creche.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Diagnóstico correto (conjuntivite bacteriana + OMA). Tratamento com <strong>Amoxicilina + clavulanato</strong> é primeira linha, considerando o ambiente de creche e secreção purulenta. Reavaliação em 48h é protocolo padrão.</p><p><strong>Alternativa B (INCORRETA):</strong> Amoxicilina simples é inadequada pela presença de secreção purulenta e ambiente de creche (risco de microorganisms beta-lactamase producers).</p><p><strong>Alternativa C (INCORRETA):</strong> Colírio com antibiótico é inadequado para otite (nenhuma eficácia sistêmica). O quadro clínico é claramente bacteriano, não viral.</p><p><strong>Alternativa D (INCORRETA):</strong> Timpanocentese é reservada para casos de falha terapêutica ou complicações. Não há indicação inicial com apenas abaulamento timpânico.</p><p><strong>Princípio terapêutico:</strong> Em crianças com fatores de risco (creche, secreção purulenta), usar amoxicilina + clavulanato para cobertura ampliada de H. influenzae e M. catarrhalis.</p><p>Esta questão exemplifica a importância de reconhecer padrões clínicos e aplicar terapia empírica adequada.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior",
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior",
+        "Outros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior_Otites"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "A condição clínica, conhecida por \"Abdome agudo\", pode se apresentar de diversas maneiras dependendo de sua etiologia. A abordagem inicial adequada é imprescindível para o melhore desfecho. Portanto, analise as alternativas abaixo e marque a que contenha afirmativas verdadeiras sobre o tema em questão:",
+      "alternativas": [
+        "Atualmente, recomenda-se a realização da tomografia com contraste em 95% dos casos para diagnóstico e definição de conduta.",
+        "O diagnóstico sindrômico precoce está diretamente relacionado às melhores conduções e respostas ao tratamento.",
+        "Raras são as indicações de Laparotomias diagnósticas, exceto nas etiologias inflamatórias.",
+        "Na suspeita de abdome agudo obstrutivo, a realização do exame radiológico deve ser considerada prioridade máxima, superior até mesmo às medidas clínicas iniciais de estabilização clínica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 aborda um tema clássico e fundamental na cirurgia geral: o abdome agudo. O examinador busca avaliar seu conhecimento sobre a abordagem diagnóstica e terapêutica adequada desta condição.</p><p><strong>A resposta correta é B - O diagnóstico sindrômico precoce está diretamente relacionado às melhores conduções e respostas ao tratamento.</strong></p><p>Vamos analisar cada alternativa:</p><p>A) INCORRETA - A tomografia com contraste não é recomendada rotineiramente em 95% dos casos. A indicação depende da apresentação clínica e do contexto. A tomografia é útil em casos duvidosos, mas a avaliação clínica e outros exames laboratoriais são fundamentais para a decisão.</p><p>B) CORRETA - O diagnóstico sindrômico precoce é crucial no abdome agudo. Quanto mais rápido o reconhecimento do padrão sindrômico (peritonítico, obstrutivo, vascular, inflamatório), melhor o prognóstico e menor a morbimortalidade.</p><p>C) INCORRETA - As laparotomias diagnósticas não são raras apenas nas etiologias inflamatórias. Na verdade, são frequentemente indicadas em casos de peritonite difusa, instabilidade hemodinâmica ou quando há dúvida diagnóstica com risco de falha terapêutica.</p><p>D) INCORRETA - No abdome agudo obstrutivo, as medidas de estabilização clínica inicial são sempre prioridade. A radiografia pode complementar, mas nunca deve retardar a reanimação adequada do paciente.</p><p>A pegadinha aqui está na alternativa A, que tenta induzir ao uso excessivo de tomografia, e na C, que subestima o papel das laparotomias diagnósticas em emergências abdominais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo",
+        "Cirurgia_UrgenciasAbdominais_UrgenciasAbdominaisAbdomeAgudo_IntroducaoAoAbdomeAgudo"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Criança de 10 anos, masculino, subfebril, anorético há 24h com dor epigástrica inicialmente que migrou para FID onde persiste mantendo dor no local. No exame laboratorial (Hmg) identifica-se leucocitose discreta com desvio à esquerda, assim como, descompressão brusca positiva em FID. Levando em consideração os critérios clínicos de ALVARADO para diagnóstico de apendicite aguda, qual alternativa estaria mais adequada ao interpretarmos os dados clínicos acima?",
+      "alternativas": [
+        "4 pontos, com estimativa de 50% de chance de apendicite aguda independente do sexo.",
+        "3 pontos, com estimativa de 75% de chance para homens e 25% para as mulheres.",
+        "9 pontos, com estimativa de 93% de chance para homens e 78% das mulheres.",
+        "15 Pontos, com estimativa de 98% de chance para homens e 75% das mulheres."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o escore de Alvarado, uma ferramenta fundamental para o diagnóstico de apendicite aguda em pediatria. A banca CESUPA apresenta um caso clínico clássico e solicita a aplicação prática deste escore.</p><p><strong>A resposta correta é C - 9 pontos, com estimativa de 93% de chance para homens e 78% das mulheres.</strong></p><p>Vamos aplicar o escore de Alvarado aos dados apresentados:</p><p><strong>Escala de Alvarado (módificação pediátrica):</strong></p><p>• Dor migratória para FID: 1 ponto → <em>PRESENTE no caso</em></p><p>• Anorexia: 1 ponto → <em>PRESENTE (anoréxico)</em></p><p>• Náuseas/vômitos: 1 ponto → <em>PRESENTE (náuseas)</em></p><p>• Dor em FID: 2 pontos → <em>PRESENTE</em></p><p>• Febre >37,3°C: 1 ponto → <em>PRESENTE (subfebril)</em></p><p>• Descompressão brusca positiva: 2 pontos → <em>PRESENTE</em></p><p>• Leucocitose: 1 ponto → <em>PRESENTE (leucocitose discreta)</em></p><p>• Desvio à esquerda: 1 ponto → <em>PRESENTE</em></p><p><strong>Total: 9 pontos</strong></p><p>Interpretando as alternativas:</p><p>A) INCORRETA - 4 pontos é muito baixo para o caso apresentado e não reflete a gravidade dos sinais clínicos.</p><p>B) INCORRETA - 3 pontos não condiz com a apresentação clínica de alta probabilidade diagnóstica.</p><p>C) CORRETA - 9 pontos com as probabilidades mencionadas. O escore de Alvarado é uma ferramenta validadada com alta sensibilidade para apendicite aguda.</p><p>D) INCORRETA - 15 pontos é um valor inexistente na escala de Alvarado (o máximo é 10 pontos).</p><p><strong>Dica importante:</strong> O escore de Alvarado na pediatria tem algumas modificações em relação ao adulto, mas os princípios básicos permanecem os mesmos. Pacientes com 7 pontos ou mais têm alta probabilidade de apendicite aguda.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente mulher 26 anos, chega ao PS com dor lombar D, tipo cólica, de forte intensidade e início súbito. Náuseas e vômitos presentes, irradiação para grandes lábios e parede vaginal ipsilateral. BEG, algo taquicárdica, pouco sudoreica, sem febre, com abdome plano pouco doloroso, sem sinais de peritonismo e com sinal de Giordano positivo à direita. Marque a alternativa correta em relação à principal hipótese diagnóstica e condutas iniciais recomendadas.",
+      "alternativas": [
+        "Trata-se de caso clássico de pielonefrite aguda, o tratamento recomendado é analgesia, internação e antibioticoterapia.",
+        "Lombociatalgia com comprometimento radicular, deve ser administrado analgesia +Corticoides e realização de RNM de coluna lombo-sacral.",
+        "ITU baixa causada por provável infecção ginecológica, recomenda-se analgesia e coleta de material ginecológico (PCCU).",
+        "Cólica nefrética, realização de analgesia, coleta laboratorial e investigação por imagem."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico típico de uma emergência urológica e avalia sua capacidade de diagnóstico diferencial e condutas iniciais adequadas. A banca CESUPA privilegia aspectos práticos da medicina de emergência.</p><p><strong>A resposta correta é D - Cólica nefrética, realização de analgesia, coleta laboratorial e investigação por imagem.</strong></p><p>Vamos analisar o caso clínico:</p><p>Paciente feminina, 26 anos, apresenta:</p><p>• Dor lombar direita em cólica</p><p>• Início súbito e forte intensidade</p><p>• Irradiação para genitália (grandes lábios e parede vaginal)</p><p>• Sinais autonômicos: náuseas, vômitos</p><p>• Sinais vitais: taquicardia, sem febre</p><p>• Exame abdominal: sem peritonismo</p><p>• Sinal de Giordano positivo à direita</p><p>Este é um quadro clássico de cólica nefrítica, não de pielonefrite.</p><p><strong>Análise das alternativas:</strong></p><p>A) INCORRETA - Pielonefrite aguda cursa com febre, dor lombar contínua e não costumam apresentar irradiação característica para genitália. Além disso, o sinal de Giordano positivo sugere processo na via excretora, não no parênquima renal.</p><p>B) INCORRETA - Lombociatalgia radicular não causa dor em cólica nem irradiação para genitália. O sinal de Giordano é específico para comprometimento renal/ureteral.</p><p>C) INCORRETA - ITU baixa cursa com disúria, polaciúria, urgência urinária - sintomas ausentes no caso. Além disso, não justifica o sinal de Giordano positivo.</p><p>D) CORRETA - Cólica nefrética é o diagnóstico mais provável. A abordagem inicial deve incluir analgesia efetiva, exames laboratoriais (urina tipo I, hemograma, função renal) e investigação por imagem (USG ou TC de abdome).</p><p><strong>Pegadinha:</strong> A alternativa A tenta confundir com pielonefrite, mas a ausência de febre e a dor em cólica orientam para cólica nefrética.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_NefrolitiaseApresentacaoClinic"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Na condução da doença diverticular aguda pela classificação de Hinchey, qual a alternativa que melhor identifica o tratamento mais correto:",
+      "alternativas": [
+        "Hinchey III ou IV o tratamento cirúrgico apresenta melhores resultados.",
+        "Abscesso de 5cm, controle tomográfico com intervalo de 48h.",
+        "Hinchey I e II, ressecção seguida de anastomose primária.",
+        "Laparoscopia com lavagem e drenagem no Hinchey IV tem obtido melhores resultados."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA aborda a classificação de Hinchey para doença diverticular complicada, tema essencial em cirurgia. O examinador testa seu conhecimento sobre a correlação entre classificação e conduta terapêutica.</p><p><strong>A resposta correta é A - Hinchey III ou IV o tratamento cirúrgico apresenta melhores resultados.</strong></p><p>Vamos revisar a classificação de Hinchey:</p><p><strong>Hinchey I:</strong> Abscesso pericólico pequeno (<5cm)</p><p><strong>Hinchey II:</strong> Abscesso pélvico ou retroperitoneal (≥5cm)</p><p><strong>Hinchey III:</strong> Peritonite purulenta generalizada</p><p><strong>Hinchey IV:</strong> Peritonite fecal generalizada</p><p><strong>Análise das alternativas:</strong></p><p>A) CORRETA - Nos estágios III e IV de Hinchey, a abordagem cirúrgica de emergência é mandatória. A peritonite difusa requer limpeza adequada da cavidade e controle da fonte de contaminação, com melhores resultados em relação ao tratamento clínico isolado.</p><p>B) INCORRETA - Abscessos de 5cm ou maiores (Hinchey II) devem ser drenados percutaneamente ou cirurgicamente, com controle por imagem em 24-48h, não 48h. Abscessos menores podem ser manejados clinicamente.</p><p>C) INCORRETA - Nos estágios I e II, o tratamento inicial pode ser clínico com antibióticos e drenagem percutânea dos abscessos. A ressecção com anastomose primária é reservada para casos estáveis após resolução do processo inflamatório.</p><p>D) INCORRETA - No Hinchey IV, a laparoscopia não é a melhor opção devido à gravidade da contaminação fecal. A laparotomia com lavagem abundante, ressecção e possível colostomia de proteção é mais segura.</p><p><strong>Conceito-chave:</strong> A gravidade da peritonite (Hinchey III/IV) determina a necessidade de abordagem cirúrgica urgente, enquanto os estágios iniciais podem ser manejados conservadoramente inicialmente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Paciente de 45 anos, submetida à colecistectomia VLP há 8 meses, procura atendimento médico por dor abdominal em andar superior do abdome com início há 1 semana, náuseas e vômitos pós-prandiais, astenia e picos febris intermitentes presentes. Ao exame físico, prostrada, icterícia cutaneomucosa ++/++++, subfebril, levemente taquicárdica e taquipneica, com abdome plano, porém doloroso em HD e epigástrio. Em posse dessas informações clínicas, em qual alternativa podemos encontrar a melhor interpretação clínica e sequência para investigação diagnóstica?",
+      "alternativas": [
+        "O quadro clínico citado condiciona o raciocínio para provável complicação pós-operatória tardia das vias biliares (Fístula bilio-pancreática), a coleta de exames laboratoriais como Hemograma, PCR, função renal e hepática deverá ser suficiente para elucidação diagnóstica definitiva.",
+        "Provavelmente estamos diante de quadro agudo de obstrução das vias biliares com infecção em curso. Além da coleta laboratorial, será necessário realizar métodos de imagens para estudo diagnóstico e ou terapêutico, pois a desobstrução da via biliar é prior",
+        "A possibilidade de neoplasia de via biliar principal, assim como compressão extrínseca dessa via, está completamente descartada.",
+        "A principal hipótese a ser levantada é a pancreatite aguda em sua forma moderada e o tratamento deverá ser feito com suporte clínico e antibióticos de amplo espectro."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda complicações pós-colecistectomia, tema relevante em cirurgia. A banca CESUPA apresenta um caso de alta suspeição clínica e avalia sua capacidade de reconhecimento e investigação diagnóstica adequada.</p><p><strong>A resposta correta é B - Provavelmente estamos diante de quadro agudo de obstrução das vias biliares com infecção em curso. Além da coleta laboratorial, será necessário realizar métodos de imagens para estudo diagnóstico e ou terapêutico, pois a desobstrução da via biliar é prior</strong></p><p>Vamos analisar o caso clínico:</p><p>Paciente de 45 anos, 8 meses após colecistectomia VLP, apresenta:</p><p>• Dor em andar superior do abdome há 1 semana</p><p>• Sintomas sistêmicos: náuseas, vômitos, astenia</p><p>• Picos febris intermitentes (sugestão de colangite)</p><p>• Sinais vitais: taquicardia, taquipneica</p><p>• Icterícia ++/++++ (obstrução biliar)</p><p>• Dor em hipocôndrio direito e epigástrio</p><p><strong>Análise das alternativas:</strong></p><p>A) INCORRETA - Fístula bilio-pancreática não explica a icterícia significativa. Além disso, exames laboratoriais isolados não são suficientes para elucidação diagnóstica - é necessária investigação por imagem.</p><p>B) CORRETA - O quadro sugere obstrução biliar com infecção (colangite). A icterícia, febre e dor compõem a tríade de Charcot. É necessário ressonância magnética colangiopancreatográfica (MRCP) ou colangiografia para confirmar diagnóstico e possível terapêutica (CPRE).</p><p>C) INCORRETA - Neoplasia de via biliar e compressão extrínseca são hipóteses que NÃO podem ser descartadas, especialmente em paciente com quadro obstrutivo. Na verdade, são diagnósticos diferenciais importantes.</p><p>D) INCORRETA - Pancreatite aguda não justifica icterícia importante. O quadro é mais sugestivo de obstrução biliar com colangite do que de pancreatite.</p><p><strong>Conceito importante:</strong> Icterícia pós-colecistectomia deve sempre levantar suspeita de cálculo residual, estenose biliar ou outras complicações. A abordagem deve ser escalonada, começando com exames laboratoriais e evoluindo para métodos de imagem conforme necessidade.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_LesaoDaViaBiliar"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "O tratamento definitivo de todas as hérnias independente de origem ou tipo, é o reparo cirúrgico. Em torno de 20 milhões de hérnias inguinais ou femorais são tratadas cirurgicamente por ano em todo o mundo. Em se tratando das técnicas de reparo, em qual alternativas identificamos a descrição correta?",
+      "alternativas": [
+        "Técnica de Lichtenstein, consiste em reparo livre de tensão com colocação da prótese (tela), em formato de cone ou Plug ocluindo parcialmente o anel inguinal interno, assim como reforçando o assoalho inguinal (parede posterior).",
+        "Podemos citar como exemplo de técnicas para reparos cirúrgicos primários abertos com colocação de prótese: Bassini, Shouldice e Mc Vay.",
+        "Em relação às modalidades de reparo cirúrgico das hérnias inguinais ou crurais por técnicas minimamente invasivas, independente do acesso pré-peritoneal transabdominal ou pela via extraperitoneal total, a prótese (tela) é sempre colocada no plano pré-peritoneal.",
+        "Na hérnia oblíqua interna, a protusão ocorre medialmente aos vasos epigástricos por comprometimento do triângulo de Hesselbach."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 avalia seu conhecimento sobre técnicas cirúrgicas para reparo de hérnias, um tema fundamental na cirurgia geral. O examinador busca verificar se você conhece as características específicas de cada técnica e suas indicações corretas.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. A técnica de Lichtenstein é caracterizada pelo reparo com prótese placement em formato plano sobre o assoalho inguinal, não em formato de cone ou plug. O plug é característico da técnica de Rutkow-Robbins, não de Lichtenstein.</p><p><strong>Alternativa B:</strong> Incorreta. Bassini, Shouldice e McVay são técnicas de reparo sem prótese (sem tela), são hernioplastias sem materiais protésicos. A alternativa erroneamente as classifica como técnicas com prótese.</p><p><strong>Alternativa C:</strong> CORRETA. Nas técnicas minimamente invasivas (laparoscópicas) para hérnias inguinais, seja por via transabdominal pré-peritoneal (TAPP) ou totally extraperitoneal (TEP), a prótese é sempre colocada no espaço pré-peritoneal. Este é um princípio fundamental dessas técnicas.</p><p><strong>Alternativa D:</strong> Incorreta. Na hérnia oblíqua interna (indireta), a protusão ocorre lateralmente aos vasos epigástricos, passando pelo anel inguinal profundo. A protusão medial aos vasos epigástricos caracteriza a hérnia direta (do triângulo de Hesselbach).</p><p><strong>Veredito:</strong> A resposta correta é <strong>C</strong>, que descreve corretamente o princípio da placement de prótese nas técnicas minimamente invasivas para hérnias inguinais.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Paciente de 60 anos, operado em caráter de emergência por quadro suboclusivo intestinal (Tumor de ceco), tendo sido realizada colectomia D com ileostomia terminal. No quinto dia de pós-operatório encontrava-se estável, já em programação de alta hospitalar quando houve piora clínica, apresentando náuseas, vômitos, distensão abdominal e câimbras. O paciente estava em REG, afebril, hipocorado +/3 e desidratado ++/4. Abdome moderadamente distendido, timpânico, sem sinais de peritonismo, estoma bem perfundido, funcional, porém com volume diminuído em relação às últimas 48h, chamando atenção para os RHA (ruídos hidroaéreos) hipoativos. Considerando o quadro decorrente de íleo paralítico como hipótese, e que o principal eletrólito alterado no controle laboratorial foi o potássio, com níveis séricos de 2,3 mEq/L, podemos considerar das alternativas abaixo, qual a correta?",
+      "alternativas": [
+        "Por tratar-se de hipopotassemia leve, a correção do distúrbio em questão deve ser realizada por via oral, considerando a necessidade diária basal de 5-a 10 mEq/Kg/dia com reposição oral média recomendada de 100 mEq/dia.",
+        "A concentração máxima de K+ administrada não deve ultrapassar 40mEq/L em veias periféricas e 60mEq/L em acesso central.",
+        "A velocidade de infusão durante a reposição, independente de via periférica ou central, não deve ultrapassar 60mEq/h, como também ser mantido para não interferir nas metas calculadas para o nível plasmático.",
+        "Em situações de hipopotassemia ref - deve ser verificado, pois ele interfere como cofator da Na+-k+-ATPase."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o manejo da hipopotassemia no contexto pós-operatório, avaliando conhecimentos sobre reposição de potássio em pacientes cirúrgicos. O cenário clínico sugere íleo paralítico com hipopotassemia grave (2,3 mEq/L), uma complicação comum no pós-operatório de cirurgias abdominais.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Com potássio de 2,3 mEq/L, trata-se de hipopotassemia grave, não leve. A reposição deve ser intravenosa, não oral. A necessidade diária basal é de 1-2 mEq/kg/dia, não 5-10 mEq/kg/dia. A reposição oral de 100 mEq/dia está incorreta para este contexto.</p><p><strong>Alternativa B:</strong> CORRETA. Esta é a concentração máxima segura para reposição de potássio: 40 mEq/L em veias periféricas e 60 mEq/L em acesso central. Concentrações maiores podem causar flebite e complicações cardíacas.</p><p><strong>Alternativa C:</strong> Incorreta. A velocidade de infusão não deve ultrapassar 20 mEq/h em veias periféricas e 40 mEq/h em acesso central, não 60 mEq/h. Velocidades maiores aumentam o risco de arritmias cardíacas.</p><p><strong>Alternativa D:</strong> Incorreta. O potássio sérico baixo deve ser corrigido, não apenas verificado. Ele atua como cofator da Na+-K+-ATPase, e sua correção é fundamental para restabelecer a função muscular e cardíaca normal.</p><p><strong>Veredito:</strong> A resposta correta é <strong>B</strong>, que estabelece as concentrações máximas seguras para reposição de potássio, fundamental para evitar complicações na correção da hipopotassemia.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_ComplicacoesPosoperatorias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoPotassio"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "A Pancreatite aguda, de acordo com a classificação de ATLANTA, encontra-se dividida em dois grandes grupos: pancreatite aguda edematosa intersticial e pancreatite aguda necrotizante. Em relação aos aspectos de gravidade, qual alternativa se encontra correta?",
+      "alternativas": [
+        "Na pancreatite aguda moderada, disfunção orgânica pode estar presente assim como complicações locais, desde que não persistam por mais de 72h.",
+        "Somente em 10% dos casos podemos encontrar o sinal de Cullen nas formas leves das pancreatites agudas.",
+        "A persistência de falência orgânica única ou de múltiplos órgãos acima de 48h, costumam traduzir formas graves da doença.",
+        "Falência orgânica transitória (inferior à 72h), caracterizam as formas moderadas de gravidade."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a classificação de Atlanta revisada para pancreatite aguda, especificamente os critérios de gravidade baseados na presença e duração da falência orgânica. A classificação de Atlanta é fundamental para estratificar o prognóstico e guiar o tratamento.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Na pancreatite aguda moderada, pode haver disfunção orgânica transitória (resolvida em até 48h) e complicações locais, mas a duração de 72h é incorreta. O limite paramoderada é 48h de disfunção orgânica.</p><p><strong>Alternativa B:</strong> Incorreta. O sinal de Cullen (equimose periumbilical) é raro, presente em menos de 1% dos casos de pancreatite aguda, não em 10%. Além disso, pode aparecer em qualquer gravidade, não apenas nas formas leves.</p><p><strong>Alternativa C:</strong> CORRETA. A persistência de falência orgânica única ou múltipla por mais de 48h caracteriza a forma grave da pancreatite aguda. Este é um dos critérios principais da classificação de Atlanta para definir gravidade.</p><p><strong>Alternativa D:</strong> Incorreta. Falência orgânica transitória inferior a 48h caracteriza forma leve/moderada, não moderada especificamente. A duração de 72h não define a classificação correta.</p><p><strong>Veredito:</strong> A resposta correta é <strong>C</strong>, que estabelece corretamente o limite temporal de 48h para definição de formas graves de pancreatite aguda baseado na persistência da falência orgânica.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Paciente de 48 anos sabidamente portador de hipertensão portal em investigação etiológica, contudo já apresentando varizes esofágicas de médio e grosso calibres, ao ser atendido no PS por ter apresentado sangramento importante (3 episódios de hematêmese nas últimas 4h). Dentre as medidas gerais de tratamento para estabilização clínica listadas abaixo, podemos considerar adequada:",
+      "alternativas": [
+        "2 L de ringer lactato por acesso venoso calibrosso, para manter PAM em torno de 80mmhg.",
+        "Terlipressina 2mg em bolus e 1mg 4/4h por 3 a 5 dias.",
+        "Evitar uso de IBP nas primeiras 24h.",
+        "Evitar IOT por risco de vômitos com aumento do sangramento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o manejo inicial de pacientes com hipertensão portal e sangramento por varizes esofágicas, uma emergência gastroenterológica que requer reconhecimento e tratamento imediato. O cenário clínico apresenta sangramento ativo com instabilidade hemodinâmica.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Para sangramento varicoso com instabilidade, a reposição volumétrica deve ser mais agressiva, visando PAM > 65-70 mmHg, não 80 mmHg.此外, 2L de Ringer lactato pode ser insuficiente para um sangramento ativo significativo.</p><p><strong>Alternativa B:</strong> CORRETA. A terlipressina em bolus de 2mg seguido de 1mg a cada 4 horas por 3-5 dias é o vasoconstritor de escolha no sangramento por varizes esofágicas. Ela reduz a pressão portal e controla o sangramento em aproximadamente 80% dos casos.</p><p><strong>Alternativa C:</strong> Incorreta. IBP (inibidor da bomba de prótons) deve ser usado nas primeiras 24h, especialmente se houver suspeita de úlcera pepticodescional associada ou para proteção gástrica. A suspensão não é recomendada.</p><p><strong>Alternativa D:</strong> Incorreta. Em caso de sangramento ativo significativo com instabilidade hemodinâmica e risco de aspiração, a IOT (intubação orotraqueal) é indicada para proteger as vias aéreas. O risco de vômitos com aumento do sangramento não contraindica o procedimento quando necessário.</p><p><strong>Veredito:</strong> A resposta correta é <strong>B</strong>, que apresenta a dosagem adequada de terlipressina para controle de sangramento varicoso, tratamento farmacológico de primeira linha recomendado pelas diretrizes internacionais.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Thomson, em 1975, descreveu as hemorroidas como sendo coxins vasculares compostos por arteríolas, sinusoides e vênulas sustentados por tecido fibromuscular. Em torno de 5% da população geral apresenta sintomas relacionados à doença hemorroidária, sendo que na maioria das vezes, o tratamento conservador com medidas locais e dietéticas é preferível. Contudo as indicações de tratamento cirúrgico na doença hemorroidária encontram-se mais adequadamente representada na alternativa:",
+      "alternativas": [
+        "Nas tromboses hemorroidárias agudas.",
+        "Nas protusões hemorroidários Grau II.",
+        "Na classificação Graus III e IV de doença interna, assim como na doença externa severa sintomática.",
+        "Após o primeiro episódio de sangramento, independentemente de ser interna ou externa."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia as indicações cirúrgicas para doença hemorroidária com base na classificação de grados, um tema prático e frequente na cirurgia geral. O conhecimento das indicações é fundamental para indicar o tratamento adequado e evitar tanto subtratamento quanto overtreatment.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. A trombose hemorroidária aguda é geralmente tratada conservadoramente nos primeiros dias, com analgésicos, anti-inflamatórios e medidas locais. A cirurgia não é a primeira escolha no evento agudo.</p><p><strong>Alternativa B:</strong> Incorreta. Protusões grau II (que reduzem espontaneamente) são geralmente tratadas conservadoramente ou com técnicas minimamente invasivas (ligadura elástica, escleroterapia). Cirurgia não é indicada rotineiramente.</p><p><strong>Alternativa C:</strong> CORRETA. Esta é a indicação cirúrgica clássica: graus III (prolapsos que necessitam redução manual) e IV (prolapsos irreduzíveis) de doença interna, assim como doença externa severa sintomática (tromboses recorrentes, skin tags symptomatics). Nestes casos, o tratamento conservador é insuficiente.</p><p><strong>Alternativa D:</strong> Incorreta. O primeiro episódio de sangramento, isoladamente, não é indicação para cirurgia. O tratamento inicial deve ser conservador com medidas dietéticas, higiene local e medicamentos. Cirurgia é reservada para casos refratários ou com indicações claras.</p><p><strong>Veredito:</strong> A resposta correta é <strong>C</strong>, que estabelece adequadamente as indicações cirúrgicas baseadas na classificação de graus e severidade dos sintomas, seguindo os princípios estabelecidos na literatura médica.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "S.C.V, 18 anos de idade, G1 P0 A1, soropositiva para o vírus da imunodeficiência humana e em tratamento antirretroviral, vem à consulta médica com resultado de contagem de linfócitos CD4+ abaixo no valor de 180 células/mm3. A paciente refere preocupação quanto ao risco de câncer de colo do útero. Diante do caso clínico, a conduta correta de acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero é:",
+      "alternativas": [
+        "Realizar imediatamente o exame citopatológico para rastreamento do câncer do colo do útero com intervalos semestrais no primeiro ano de seguimento.",
+        "Não realizar o exame citopatológico para rastreamento do câncer do colo do útero. Indicar o início à coleta apenas aos 25 anos de idade.",
+        "Realizar o exame citopatológico para rastreamento do câncer do colo do útero com intervalo de 12 meses. Se dois exames consecutivos forem normais, a mulher deverá retornar à rotina de rastreamento citológico trienal.",
+        "Indicar o início da coleta do exame citopatológico para rastreamento do câncer do colo do útero quando a paciente completar 20 anos de idade, com intervalos anuais."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 aborda um tema fundamental em ginecologia: as diretrizes brasileiras para rastreamento do câncer do colo do útero em pacientes imunodeprimidas pelo HIV.</p><p><strong>A resposta correta é a alternativa A.</strong></p><p>A paciente apresenta CD4+ < 180 células/mm³, indicando imunodepressão avançada. Nestas pacientes, as diretrizes brasileiras recomendam rastreamento mais intensivo devido ao maior risco de progressão rápida de lesões precursoras e maior agressividade das neoplasias cervicais.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> Para mulheres HIV+ com CD4+ < 200 células/mm³, as diretrizes brasileiras preconizam exame citopatológico semestral no primeiro ano, seguido de annual se normalizar. O CD4+ < 180 justifica este protocolo mais agressivo.</p><p><strong>B) INCORRETA:</strong> Não adiar o rastreamento para os 25 anos. Em imunodeprimidas, deve-se iniciar tão logo sejam diagnosticadas, independente da idade.</p><p><strong>C) INCORRETA:</strong> O intervalo trienal após dois exames normais é para população geral. Para HIV+, o seguimento é mais frequente.</p><p><strong>D) INCORRETA:</strong> O início não deve ser aos 20 anos, mas sim assim que a paciente for diagnosticada com HIV. O CD4+ < 180 determina rastreamento semestral, não anual.</p><p><strong>Dica importante:</strong> Em HIV+ com CD4+ < 200, o protocolo é mais agressivo: semestral no primeiro ano, depois anual se estável.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Infectologia_Hivaids_DoencasInfecciosasNaGestacaoHi"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Paciente de 49 anos de idade, refere fogachos diários que iniciaram há 1 ano. Nega outras queixas. A data da última menstruação foi há 9 meses. Apresenta de antecedentes mórbidos pessoais porfiria e hipertensão arterial sistêmica controlados. Mamografia recente com laudo BIRADS 1, colpocitologia oncótica negativa para malignidade e ultrassonografia transvaginal sem alterações patológicas. Quanto a terapia de reposição hormonal para esta paciente a conduta mais adequada é:",
+      "alternativas": [
+        "A terapia de reposição hormonal sistêmica está indicada para alívio dos sintomas vasomotores, independente das comorbidades apresentadas.",
+        "A terapia de reposição hormonal tem contraindicação absoluta para a paciente, pois associada à hipertensão arterial sistêmica aumenta de forma grave o risco tromboembólico.",
+        "Deve ser indicada a terapia de reposição hormonal transdérmica, pois aumenta aglobulina carreadora dos hormônios sexuais (SHBG).",
+        "A terapia de reposição hormonal tem contraindicação absoluta para a paciente, pois pode desencadear as manifestações da porfiria."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 avalia seu conhecimento sobre contraindicações absolutas para terapia de reposição hormonal na menopausa.</p><p><strong>A resposta correta é a alternativa D.</strong></p><p>A paciente de 49 anos com fogachos e amenorreia há 9 meses está claramente na menopausa e teria indicação de TH para alívio dos sintomas vasomotores. Porém, possui duas comorbidades importantes: porfiria e hipertensão arterial.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Embora os fogachos sejam indicação para TH, não é independente das comorbidades. É preciso avaliar contraindicações.</p><p><strong>B) INCORRETA:</strong> A HAS não é contraindicação absoluta para TH. Na verdade, dependendo do tipo de progestagênio usado, pode até ser benéfica. A porfiria sim é contraindicação absoluta.</p><p><strong>C) INCORRETA:</strong> A via transdérmica não é indicada para elevar SHBG. Na verdade, eleva menos a SHBG que a via oral, o que seria desejável em alguns casos.</p><p><strong>D) CORRETA:</strong> A porfiria é contraindicação absoluta para TH. Os estrogênios podem desencadear crises agudas de porfiria, potencialmente fatais.</p><p><strong>Contradições importantes para lembrar:</strong></p><p>• HAS: pode usar TH com cautela (via transdérmica preferível)</p><p>• Porfiria: CONTRAINDICAÇÃO ABSOLUTA (além de ACV, trombose, câncer hormônio-dependente, doença hepática grave)</p><p><strong>Lembrete clínico:</strong> Quando houver múltiplas contraindicações, use apenas a mais grave para orientar a decisão terapêutica.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Climaterio",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "<html><head></head><body>Uma mulher de 24 anos de idade, G2P0A1, no decorrer de 41 semanas de gestação, encontra-se em fase ativa do trabalho de parto, está fazendo força, mas sem progresso. O desenvolvimento do trabalho de parto está caracterizado no partograma abaixo. A análise adequada do caso clínico é:\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ33.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O partograma demonstra período pélvico prolongado, pois a descida da apresentação é progressiva, mas excessivamente lenta.",
+        "A evolução do trabalho de parto é normal, pois a paciente foi submetida à analgesia peridural.",
+        "O partograma evidencia evolução anormal do trabalho de parto. A causa mais frequente desse tipo de distocia é a desproporção céfalopélvica.",
+        "Houve uma parada secundária da dilatação e deverá ser aplicado um fórcipe de Simpson para ultimação do parto."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 avalia sua capacidade de interpretar partogramas e diagnosticar distocias durante o trabalho de parto.</p><p><strong>A resposta correta é a alternativa C.</strong></p><p>Analisando o partograma da paciente de 24 anos, G2P0A1, em trabalho de parto há 41 semanas, vemos que ela está na fase ativa mas sem progressão adequada da dilatação.</p><p><strong>Interpretação do partograma:</strong></p><p>O partograma mostra que após atingir aproximadamente 6-7 cm de dilatação, não há progresso significativo ao longo de várias horas, caracterizando distocia funcional.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Não é período pélvico prolongado, pois não há progressão da descida. O problema é na dilatação cervical, não na descida.</p><p><strong>B) INCORRETA:</strong> Não é evolução normal. Há claramente estancamento na dilatação cervical após a fase ativa ter sido atingida.</p><p><strong>C) CORRETA:</strong> A distocia mais frequente na fase ativa é a desproporção céfalo-pélvica, especialmente em primíparas ou em fetos grandes.</p><p><strong>D) INCORRETA:</strong> Não é parada secundária, pois não houve progressão significativa. Além disso, fórcipe de Simpson não é primeira escolha para distocia - deve-se avaliar via de parto e considerar cesárea.</p><p><strong>Conceito fundamental:</strong> Distocia na fase ativa (6-10 cm) com ausência de progressão por > 2 horas sugere desproporção céfalo-pélvica, especialmente se associada a outros sinais como edema cervical, falta de descida da apresentação.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Parto",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_Partograma",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_Partograma",
+        "Obstetricia_Parto_Partograma_DiagnosticoDeDistociasNoPartog",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_PartoVaginalOperatorio",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_DistociaFuncionalDeObjetoDeTra"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "L.A.N, 22 anos de idade, apresenta ciclos menstruais irregulares há cerca de 14 meses, com períodos de amenorreia. Quando indagada, negou uso de medicações de uso contínuo e está sem vida sexual ativa há 2 anos. Exame físico geral e ginecológico sem alterações. A dosagem de prolactina está elevada (180 ng/dl) com TSH e T4 livre normais. A ressonância magnética de sela túrcica revelou um adenoma hipofisário de 17mm de diâmetro. A melhor conduta para o caso é:",
+      "alternativas": [
+        "Indicar cirurgia transesfenoidal imediatamente.",
+        "Indicar o uso de agonistas da dopamina.",
+        "Indicar o uso de radioterapia adjuvante.",
+        "Indicar o uso de anticoncepcional oral combinado."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 avalia seu conhecimento sobre o manejo de prolactinomas em pacientes jovens.</p><p><strong>A resposta correta é a alternativa B.</strong></p><p>A paciente de 22 anos apresenta cuadro típico de hiperprolactinemia: amenorreia, ciclos irregulares há 14 meses, e prolactina significativamente elevada (180 ng/dl). A RM confirmou adenoma hipofisário de 17mm (macroadenoma).</p><p><strong>Estratégia de investigação já realizada:</strong></p><p>TSH/T4 normais descartaram hipotireoidismo como causa secundária. A ausência de gestação e uso de medicações elimina outras causas comuns de hiperprolactinemia.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Cirurgia transesfenoidal não é primeira escolha. É reservada para casos refratários à terapia clínica ou macroadenomas compressivos.</p><p><strong>B) CORRETA:</strong> Agonistas dopaminérgicos (cabergolina ou bromocriptina) são sempre a primeira linha de tratamento para prolactinomas, independente do tamanho.</p><p><strong>C) INCORRETA:</strong> Radioterapia é de exceção, indicada apenas quando há contraindicação para cirurgia ou falha da terapia medicamentosa.</p><p><strong>D) INCORRETA:</strong> ACO combinado não trata a causa da hiperprolactinemia. Pode até mascarar o problema sem resolvê-lo.</p><p><strong>Princípio terapêutico fundamental:</strong> Todos os prolactinomas (micro ou macro) devem ser iniciados com agonistas dopaminérgicos. A normalização da prolactina geralmente restaura a fertilidade e resolve os sintomas.</p><p><strong>Seguimento:</strong> Após controle da prolactina, repetir RM em 6-12 meses para avaliar resposta tumoral.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_NeoplasiasEndocrinasMultiplas"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Paciente de 26 anos de idade, estudante, vem à consulta com queixa de mastalgia há 02 semanas. Refere ciclos menstruais a cada 29 dias e que a sua queixa piora próximo a menstruação e melhora durante a primeira fase do ciclo. Faz uso de anel vaginal segundo informações. Nega traumas ou afecções mamárias prévias, relata histórico de câncer de mama em prima de 20 grau. Ao exame físico: mamas em número de 02, simétricas, sem lesões palpáveis, dor a palpação em quadrante superior lateral bilateralmente, ausência de descarga papilar bilateralmente, axilas livres. A conduta para o caso é:",
+      "alternativas": [
+        "Solicitar ressonância magnética de mamas.",
+        "Solicitar mamografia digital bilateral.",
+        "Orientar suspensão imediata de anticoncepcional.",
+        "Não há necessidade de exames complementares."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 aborda uma queixa muito comum na prática ginecologica: a mastalgia cíclica.</p><p><strong>A resposta correta é a alternativa D.</strong></p><p>A paciente de 26 anos apresenta quadro típico de mastalgia cíclica: dor bilateral que piora próximo à menstruação e melhora na primeira fase do ciclo (ciclo de 29 dias), com uso de anel vaginal.</p><p><strong>Características do caso que orientam o diagnóstico:</strong></p><p>• Idade jovem (26 anos)</p><p>• Dor cíclica relacionada ao ciclo menstrual</p><p>• Exame físico normal (sem massas, descarga ou linfonodos)</p><p>• História familiar de câncer de mama em prima de 2º grau (não aumenta significativamente o risco individual)</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> RM de mamas não é indicada em mulher jovem com exame físico normal e dor cíclica. Excesso de exame complementar.</p><p><strong>B) INCORRETA:</strong> Mamografia não é recomendada antes dos 40 anos como rastreamento de rotina, exceto em casos específicos (alto risco, sintomas alarma). Não há indicação aqui.</p><p><strong>C) INCORRETA:</strong> Não suspender anticoncepcional. O anel vaginal é método hormonal que pode até melhorar os sintomas cíclicos, não causar a mastalgia.</p><p><strong>D) CORRETA:</strong> Em mastalgia cíclica com exame físico normal, não há necessidade de exames complementares. Orientação e seguimento clínico são suficientes.</p><p><strong>Conduta prática:</strong> Analgésicos durante crises, orientação sobre normalidade do quadro, e retorno se mudança no padrão da dor ou aparecimento de massas palpáveis.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_IntroducaoEDoencasBenignasDaMa",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_RastreamentoDoCancerDeMama"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Gestante com Sífilis Primária, 17 semanas de gravidez, com resultado de laboratório, VDRL 1:16. Sabemos que a transmissão vertical é possível, qual a medida terapêutica de escolha para este caso?",
+      "alternativas": [
+        "Penicilina G Cristalina 3.000.000 UI EV por 10 dias.",
+        "Penicilina G Benzatina 2.400.000 UI IM uma vez por semana por 3 semanas.",
+        "Penicilina G Benzatina 2.400.000 UI IM em dose única.",
+        "Penicilina G Cristalina 4.000.000 UI EV em dose única."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia seu conhecimento sobre o protocolo de tratamento da sífilis em gestantes, um tema fundamental em obstetrícia e saúde pública. O cenário apresenta uma gestante com 17 semanas, diagnóstico de sífilis primária confirmado e VDRL 1:16, que é um título considerado positivo e significativo.</p><p><strong>A resposta correta é C - Penicilina G Benzatina 2.400.000 UI IM em dose única.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A (Penicilina G Cristalina EV):</strong> Esta é a forma cristalina para uso endovenoso, reservada para casos graves como sífilis neurológica ou cardiovascular. Para sífilis primária em gestante, não é o protocolo recomendado.</p><p><strong>Alternativa B (Penicilina G Benzatina IM semanal por 3 semanas):</strong> Esta é a dose para sífilis tardia (secundária, latente com mais de 1 ano). Para sífilis primária, é desnecessariamente prolongada.</p><p><strong>Alternativa C (Penicilina G Benzatina IM em dose única):</strong> CORRETA. Para sífilis primária em qualquer paciente, incluindo gestantes, o tratamento é dose única de 2.400.000 UI IM. As gestantes seguem o mesmo protocolo que pacientes não grávidas para sífilis primária.</p><p><strong>Alternativa D (Penicilina G Cristalina EV em dose única):</strong> Incorreta. A forma cristalina EV não é utilizada para sífilis primária, e mesmo se fosse, o esquema seria prolongado, não dose única.</p><p>O VDRL 1:16 confirma a infecção ativa, e a gestante está no segundo trimestre (17 semanas), período ideal para tratamento completo. É fundamental iniciar o tratamento imediatamente para reduzir a transmissão vertical, que pode ser de 70-100% em casos não tratados.</p><p><strong>Veredito:</strong> A banca testou o conhecimento sobre o protocolo específico de sífilis primária em gestantes, e a resposta correta é a C.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_SifilisNaGestacao",
+        "ClinicaMedica_Infectologia_InfecoesSexualmenteTransmissiveis",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua_Sifilis",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "As modificações hormonais no período gravídico - puerperal são determinadas por que fatores?",
+      "alternativas": [
+        "Glândulas endócrinas fetais e placentárias.",
+        "Glândulas endócrinas maternas, fetais e placentárias.",
+        "Glândulas endócrinas maternas e placentárias.",
+        "Glândulas endócrinas maternas e fetais."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 explora a fisiologia hormonal do período gravídico-puerperal, especificamente sobre as fontes das modificações endócrinas que ocorrem durante a gestação. É um tema teórico fundamental para compreender os mecanismos hormonais da gravidez.</p><p><strong>A resposta correta é B - Glândulas endócrinas maternas, fetais e placentárias.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A (apenas fetais e placentárias):</strong> Incorreta. Embora fetus e placenta produzam hormônios importantes, as glândulas maternas também contribuem significativamente para as modificações hormonais.</p><p><strong>Alternativa B (maternas, fetais e placentárias):</strong> CORRETA. As modificações hormonais resultam da contribuição integrada de três sistemas: as glândulas maternas (hipófise, tireoide, suprarrenais), o sistema fetoplacentário (que produz hormônios como HCG, HPL, estriol), e especificamente a placenta (que produz progesterona, estrogênios, entre outros).</p><p><strong>Alternativa C (apenas maternas e placentárias):</strong> Incorreta. O sistema fetal também contribui para as modificações hormonais, produzindo hormônios que influenciam o metabolismo materno.</p><p><strong>Alternativa D (apenas maternas e fetais):</strong> Incorreta. A placenta é um órgão endócrino ativo que produz hormônios essenciais para a manutenção da gestação.</p><p>As modificações hormonais na gestação envolvem uma complexa interação entre estes três sistemas, cada um contribuindo com hormônios específicos que promovem as mudanças fisiológicas necessárias para o desenvolvimento fetal e a adaptação materna.</p><p><strong>Veredito:</strong> A questão testou a compreensão da organização endócrina da gestação, sendo a resposta B a que melhor representa esta integração.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ModificacoesFisiologicasDaGest",
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ImunologiaNaGestacao",
+        "Obstetricia_ObstetriciaFisiologica"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Grávida de 34 semanas, chega à Triagem da Santa Casa, referindo cefaleia frontal, epigastralgias, escotomas visuais, edema acentuado de membros inferiores, face e oliguria. AO Exame: PA 190 X 120 mmHg AU: 30 cm BCF: 152 bpm DU: ausente. Toque vaginal não realizado. Diante do quadro apresentado acima, qual a hipótese diagnóstica e qual a conduta de imediato?",
+      "alternativas": [
+        "Eclampsia, administrar MgSO4 e Hidralazina via oral.",
+        "Pré-eclâmpsia grave, controle ambulatorial.",
+        "Iminência de Eclampsia, administrar MgSO4 e Hidralazina EV.",
+        "Pré-eclâmpsia leve, Metildopa 2.000 mg dia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia a capacidade de reconhecimento e manejo de complicações hipertensivas na gestação - especificamente a diferenciação entre pré-eclâmpsia e eclampsia, e a escolha da conduta adequada em situação de risco.</p><p><strong>A resposta correta é C - Iminência de Eclampsia, administrar MgSO4 e Hidralazina EV.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A (Eclampsia, MgSO4 e Hidralazina via oral):</strong> Incorreta. O caso não apresenta convulsões (requisito para eclampsia). Além disso, a hidralazina via oral é inadequada para urgência hipertensiva - deve ser EV.</p><p><strong>Alternativa B (Pré-eclâmpsia grave, controle ambulatorial):</strong> Incorreta. O caso apresenta múltiplos critérios de pré-eclâmpsia grave e sinais prodrômicos de eclampsia (cefaleia, escotomas), necessitando hospitalização e tratamento imediato.</p><p><strong>Alternativa C (Iminência de Eclampsia, MgSO4 e Hidralazina EV):</strong> CORRETA. A gestante apresenta critérios de pré-eclâmpsia grave: PA > 160/110, sintomas neurológicos (cefaleia, escotomas visuais), epigastralgias, oliguria. Os sintomas neurológicos e epigastricos caracterizam a 'iminência de eclampsia', que é uma emergência obstétrica.</p><p><strong>Alternativa D (Pré-eclâmpsia leve, Metildopa 2.000 mg/dia):</strong> Incorreta. Não se trata de pré-eclâmpsia leve (PA é > 160/110), e metildopa é para uso ambulatorial, não para emergências.</p><p>A PA 190/120 mmHg, associada aos sintomas prodrômicos (cefaleia, escotomas, epigastralgias), configura iminência de eclampsia. O manejo deve ser imediato com sulfato de magnésio para prevenção de convulsões e hidralazina EV para controle da pressão arterial.</p><p><strong>Veredito:</strong> A questão testou o reconhecimento de iminência de eclampsia e as diretrizes de manejo, sendo a resposta C correta.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Preeclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Eclampsia",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_SindromeHellp",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Paciente GII PI N AI, obesa, deu entrada na UPA do Guamá, referindo dor no baixo ventre, semelhante à cólica menstrual e sangramento vaginal aumentado, após 4 meses de amenorreia. Refere que engordou 30 kg na sua gravidez e não conseguiu emagrecer desde então, atualmente com IMC de 40. Ao exame: Abdome globoso, com massa palpável em região hipogástrica. Toque bimanual: Colo congesto, impérvio, útero aumentado de volume, no limite da sínfise púbica, sangramento moderado vermelho vivo. O que fazer neste caso?",
+      "alternativas": [
+        "Solicitar um BHCG para afastar a possibilidade de uma ameaça de abortamento.",
+        "Realizar conduta ativa para SUA -O.",
+        "Encaminhar para o centro obstétrico para fazer Curetagem uterina.",
+        "Solicitar uma ultrassonografia abdominal."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 aborda o diagnóstico diferencial em ginecologia, especificamente situações que cursam com amenorreia secundária, massas pélvicas e história de ganho ponderal significativo. É essencial para o raciocínio clínico em emergências gineco-obstétricas.</p><p><strong>A resposta correta é A - Solicitar um BHCG para afastar a possibilidade de uma ameaça de abortamento.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A (Solicitar BHCG):</strong> CORRETA. O quadro clínico sugere fortemente o diagnóstico de mola hidatiforme, que cursa com amenorreia, ganho ponderal acentuado (30 kg), sangramento vaginal e massa pélvica palpável. O primeiro passo é confirmar a gestação com BHCG, que estará extremamente elevado no caso de mola.</p><p><strong>Alternativa B (Conduta ativa para SUA-O):</strong> Incorreta. SUA (Separação Prematura da Placenta) é complicação de gestação com placenta localizada, o que não é o caso aqui. Além disso, a 'conduta ativa' seria precipitada sem confirmação diagnóstica.</p><p><strong>Alternativa C (Encaminhar para Curetagem uterina):</strong> Incorreta. A curetagem pode ser necessária, mas deve ser precedida do diagnóstico. Diretamente para centro obstétrico para curetagem sem investigação adequada seria precipitado.</p><p><strong>Alternativa D (Solicitar ultrassonografia abdominal):</strong> Incorreta. A ultrassonografia seria fundamental, mas o primeiro passo diagnóstico é confirmar a gestação com BHCG. A ultrassonografia específica seria transvaginal, não abdominal.</p><p>O quadro clínico é sugestivo de mola hidatiforme: amenorreia, ganho ponderal acentuado, sangramento, massa pélvica. O BHCG estará acentuadamente elevado, confirmando o diagnóstico antes de partir para procedimentos invasivos.</p><p><strong>Veredito:</strong> A questão testou a abordagem diagnóstica sistemática em casos de amenorreia com massa pélvica, sendo A a resposta correta.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_AbdomeAgudoEmGinecologia",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_Abortamento",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Amenorreias"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Paciente primigesta admitida em trabalho de parto, período expulsivo, foi submetida à Manobra de Gunn - Zavanelli-O´Leary para finalmente nascer o seu bebê. Em que consiste essa manobra?",
+      "alternativas": [
+        "É o nome dado à manobra de 4 apoios na distocia de ombros.",
+        "É o nome dado à flexão das coxas sobre o abdome.",
+        "É o nome da manobra do desprendimento do braço posterior.",
+        "É a recolocação da cabeça fetal na pelve materna, dentro do útero após a exteriorização na vulva e realizar a cesárea."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da CESUPA 2023 avalia o conhecimento sobre manobras obstétricas de emergência, especificamente em casos de distocia de ombros que requerem procedimentos avançados quando as manobras convencionais falharam.</p><p><strong>A resposta correta é D - É a recolocação da cabeça fetal na pelve materna, dentro do útero após a exteriorização na vulva e realizar a cesárea.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>Alternativa A (Manobra de 4 apoios na distocia de ombros):</strong> Incorreta. A manobra de 4 apoios (McRoberts modificado) é uma manobra simples para distocia de ombros, não a Manobra de Gunn-Zavanelli-O'Leary.</p><p><strong>Alternativa B (Flexão das coxas sobre o abdome):</strong> Incorreta. Esta é a manobra de McRoberts, utilizada em distocia de ombros para aumentar o diâmetro pélvico.</p><p><strong>Alternativa C (Manobra do desprendimento do braço posterior):</strong> Incorreta. Esta é a manobra de Woods, outra manobra para distocia de ombros, não a Zavanelli.</p><p><strong>Alternativa D (Recolocação da cabeça fetal na pelve):</strong> CORRETA. A Manobra de Gunn-Zavanelli-O'Leary é uma técnica de emergência em que a cabeça fetal que foi exteriorizada durante a tentativa de parto é reintroduzida na pelve materna (dentro do útero) e o parto é finalizado por cesárea. É a última opção quando todas as outras manobras para distocia de ombros falharam.</p><p>Esta manobra é reservada para casos extremos onde há 'cabeça born' (cabeça fetal quejdou comprimida no períneo) ou falha das manobras convencionais. É uma manobra complexa que requer experiência e não é primeira escolha.</p><p><strong>Veredito:</strong> A questão testou o conhecimento sobre manobras obstétricas avançadas, sendo D a resposta correta que define adequadamente a Manobra de Gunn-Zavanelli-O'Leary.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_AssistenciaAoPartoNormal",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_PartoVaginalOperatorio",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_MecanismoDeParto",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_DistociaFuncionalDeObjetoDeTra"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Mulher, 24 anos, vai ao consultório referindo que há 4 meses apresenta cefaleia unilateral, latejante, com fotofobia e náuseas. Melhora com uso de dipirona e piora ao subir escadas. Tem tido 2 episódios/semana, que chegam a durar cerca de 6 horas e já atrapalham suas atividades de trabalho. Tem histórico de alguns episódios de broncoespasmo em vigência de quadros gripais e já fez cirurgia de apendicectomia. Menstruação regular. Ao exame: IMC (índice de massa corpórea): 27kg / m2; PA: 130x80; nuca livre, sem sinais neurológicos focais. Analise as assertivas a seguir e marque a alternativa com hipótese diagnostica e tratamento mais adequados ao caso:",
+      "alternativas": [
+        "Migrânea, sendo indicado propranolol como profilaxia e triptano quando dor intensa.",
+        "Cefaleia tensional, sendo indicado amitriptilina como profilaxia e ciclobenzaprina nas crises álgicas.",
+        "Migrânea, com uso de Topiramato como profilaxia e naproxeno em crises esporádicas.",
+        "Cefaleia tensional, podendo ser utilizada fluoxetina para profilaxia e dipirona nas crises de dor."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CESUPA explora um tema clássico na neurologia: o diagnóstico diferencial entre migrânea e cefaleia tensional, além do manejo terapêutico adequado.</p><p><strong>A resposta correta é C - Migrânea, com uso de Topiramato como profilaxia e naproxeno em crises esporádicas.</strong></p><p>Vamos analisar os elementos clínicos fundamentais que direcionam para o diagnóstico de migrânea:</p><p>1. <strong>Características da dor:</strong> Unilateral, latejante e incapacitante são sintomas altamente sugestivos de migrânea, diferentemente da cefaleia tensional que usually é bilateral, opressiva e de intensidade leve a moderada.</p><p>2. <strong>Sintomas acompanhantes:</strong> A presença simultânea de fotofobia e náuseas é um marcador poderoso de migrânea. Na cefaleia tensional, esses sintomas estão ausentes ou são muito discretos.</p><p>3. <strong>Precipitação por esforço:</strong> A exacerbação ao subir escadas é característica da migrânea, explicada pela teoria vascular. A cefaleia tensional não piora com atividade física.</p><p>4. <strong>Padrão de frequência:</strong> Duas crises por semana, durando 6 horas cada, caracteriza cefaleia crônica que requer profilaxia.</p><p>O histórico de broncoespasmo com gripes é crucial para a escolha terapêutica. Esta paciente provavelmente possui asma, o que contraindica o uso de betabloqueadores como profilaxia (alternativa A incorreta). Por isso, o Topiramato é uma excelente escolha.</p><p>Sobre as alternativas incorretas:</p><p>- A: <strong>Propranolol é contraindicação absoluta</strong> em asmáticos, podendo desencadear broncoespasmo grave</p><p>- B: As características clínicas não sugerem cefaleia tensional</p><p>- D: Fluoxetina seria opção apenas se houvesse componente depressivo ou de ansiedade</p><p>Para crises esporádicas, naproxeno é uma escolha apropriada, sendo mais seletivo que dipirona para cefaleias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia_Cefaleias_CefaleiasPrimarias"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Paciente idoso, apresentando episódios de vertigem subjetiva, de menos de 1 minuto, quando muda a cabeça em certas posições, associados a náuseas e nistagmo. Algumas vezes teve desequilíbrio e já caiu uma vez. Nega zumbido e hipoacusia. Já fez Ressonância de crânio que foi normal para a idade. Sobre este caso, marque a alternativa CORRETA:",
+      "alternativas": [
+        "A manobra de Dix-Hallpike, realizada no consultório, poderá desencadear nistagmo e aparecimento dos sintomas.",
+        "Tratamento medicamentoso com antagonistas de canal de cálcio seletivos é a primeira escolha.",
+        "Terapia com manobras de reposicionamento dos canais semicirculares costuma ser pouco eficaz nesses casos.",
+        "Se não tratada, essa doença costuma progredir com perda auditiva, sobretudo para as faixas mais agudas de som."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda um tema frequente em otorrinolaringologia e neurologia: a diferenciação entre vertigens centrais e periféricas, especificamente a vertigem posicional paroxística benigna (VPPB).</p><p><strong>A resposta correta é A - A manobra de Dix-Hallpike, realizada no consultório, poderá desencadear nistagmo e aparecimento dos sintomas.</strong></p><p>Vamos analisar a apresentação clínica que aponta para VPPB:</p><p>1. <strong>Características temporais:</strong> Episódios de menos de 1 minuto são típicos de VPPB, diferentemente de neurite vestibular (duração de dias) ou Causes centrais (podem ser contínuas).</p><p>2. <strong>Desencadeamento posicional:</strong> A vertigem occurs especificamente com mudanças de posição cefálica, hallmark da VPPB.</p><p>3. <strong>Ausência de sintomas cocleares:</strong> Nega zumbido e hipoacusia, descartando síndrome de Ménière ou outras patologias do ouvido interno.</p><p>4. <strong>Exame complementar normal:</strong> RMN de crânio normal para a idade exclui causas centrais.</p><p>Para sistematizar a avaliação de vertigem, lembre-se do mnemônico <strong>HINTS</strong> (Head impulse, Nistagmo, Test de Skew), que ajuda a distinguir origem periférica de central.</p><p>Na VPPB, a manobra de Dix-Hallpike é tanto diagnóstica quanto terapêutica. Durante o procedimento, o paciente apresenta nistagmo tardio (latência de segundos) e reversível, seguido de reprodução dos sintomas.</p><p>Sobre as alternativas incorretas:</p><p>- B: <strong>Antagonistas de cálcio não são primeira escolha</strong> para VPPB; o tratamento é mecânico (manobras de Epley)</p><p>- C: <strong>Manobras de reposicionamento são altamente eficazes</strong> (taxa de sucesso >80%)</p><p>- D: VPPB <strong>não causa perda auditiva</strong>; é puramente vestibular</p><p>O diagnóstico preciso permite tratamento efetivo e evita uso desnecessário de medicamentos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_NeurologiaVestibular"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Mulher com 57 anos e trabalha como faxineira. Procura atendimento devido queixa de dor articular em mãos e joelhos. Relata rigidez matinal que melhora em menos de 20 minutos com as atividades da manhã. Ao exame das mãos observa-se deformidade nas articulações interfalangianas, sem sinais de sinovite. Joelho direito com leve edema e calor, com crepitação à movimentação. Joelho esquerdo sem alterações. A condução mais adequada para o caso é:",
+      "alternativas": [
+        "Solicitar VHS, PCR e iniciar prednisona.",
+        "Fazer um AINE por no máximo 7 dias, analgesia simples e fisioterapia.",
+        "Solicitar RX de mãos, joelhos, provas inflamatórias e Fator reumatóide.",
+        "Fazer uma dose de corticoide intramuscular e solicitar RX das articulações."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca CESUPA avalia a capacidade do candidato de diferenciar artrose de artrite reumatoide, além de demonstrar conhecimento sobre o manejo adequado de cada condição.</p><p><strong>A resposta correta é B - Fazer um AINE por no máximo 7 dias, analgesia simples e fisioterapia.</strong></p><p>Vamos analisar os elementos clínicos que apontam para artrose:</p><p>1. <strong>Perfil demográfico e ocupacional:</strong> Mulher de 57 anos, faxineira (atividade com repetição de movimentos e sobrecarga articular)</p><p>2. <strong>Rigidez matinal:</strong> Duração inferior a 20 minutos é característica de artrose, enquanto artrite reumatoide apresenta rigidez prolongada (>1 hora)</p><p>3. <strong>Melhora com atividade:</strong> O alívio dos sintomas com movimento é típico de artrose, diferenciando-se da artrite inflamatória</p><p>4. <strong>Achados exame físico:</strong> Deformidade das interfalangianas sem sinovite sugere osteoartrite nodular, enquanto edema quente e crepitação no joelho direito indicam processo degenerativo</p><p>5. <strong>Padrão articular:</strong> Envolvimento assimétrico e preferencial de articulações de carga (joelhos) e interfalangianas distais é típico de artrose</p><p>A ausência de sinovite, rigidez prolongada ou manifestações sistêmicas torna artrite reumatoide muito menos provável.</p><p>Sobre as alternativas incorretas:</p><p>- A: <strong>Prednisona não é indicada</strong> em artrose sem componente inflamatório agudo significativo</p><p>- C: <strong>Solicitação excessiva de exames</strong> (VHS, PCR, FR) não é necessária com quadro típico de artrose</p><p>- D: <strong>Corticoide intramuscular é desnecessário</strong> e potencialmente prejudicial</p><p>O tratamento da artrose é conservador: AINE por período curto, analgésicos simples e fisioterapia para fortalecimento muscular e manutenção da mobilidade articular. A abordagem escalonada segue guidelines nacionais (SBOT 2025).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasDaInfancia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Paciente com 62 anos, hipertensa em uso de losartana e hidroclorotiazida em dose plena e diabética em uso do Glifage XR® 2g/dia. Nos últimos meses, vinha se sentindo cansada aos esforços. Seu médico assistente resolveu solicitar um ecocardiograma que mostrou uma fração de ejeção de 42%. Ao exame físico apresentava PA de 140x90mmHg, FC:88bpm, FR:16irpm, ausculta cardiopulmonar normal, sem edema de membros inferiores. HBA1C: 7,6%, Cr:1,0mg/dL, K:4,5mg/dL, ClCr:60ml//min/1.73m2 microalbuminuria de 100mg/g. Assinale a alternativa que contêm a melhor conduta para a paciente seria acrescentar:",
+      "alternativas": [
+        "dapaglifozina, carvedilol e epironolactona.",
+        "carvedilol, espironolactona e glibenclamida.",
+        "carvedilol, espironolactona e suspender hidroclorotiazida.",
+        "dapaglifozina e carvedilol e trocar hidroclorotiazida por furosemida."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CESUPA aborda um tema complexo e contemporâneo: o manejo da insuficiência cardíaca com fração de ejeção levemente reduzida (HFmrEF) em pacientes com comorbidades múltiplas.</p><p><strong>A resposta correta é A - dapaglifozina, carvedilol e espironolactona.</strong></p><p>Vamos analisar o perfil clínico da paciente:</p><p>1. <strong>Classificação da IC:</strong> Fração de ejeção 42% caracteriza insuficiência cardíaca com fração levemente reduzida (HFmrEF, previously called 'mid-range' EF)</p><p>2. <strong>Status funcional:</strong> NYHA II, baseada na dispneia aos esforços (cansada), necessitando terapia dirigida</p><p>3. <strong>Comorbidades:</strong> Hipertensão e diabetes mellitus, com controle glicêmico inadequado (HbA1c 7,6%) e presença de complicações (microalbuminúria 100mg/g)</p><p>4. <strong>Função renal:</strong> Clearance de creatinina 60 mL/min/1,73m² (Doença renal crônica estágio 3a)</p><p>As guidelines internacionais mais recentes (ESC 2021, ACC/AHA/HFSA 2022) recomendam para HFmrEF sintomática: SGLT2i (dapaglifozina), betabloqueador (carvedilol) e ARM (espironolactona), constituindo a <strong>terapia tripla guiada por evidências</strong>.</p><p>Sobre as alternativas incorretas:</p><p>- B: <strong>Glibenclamida é inadequada</strong> (risco de hipoglicemia, efeitos cardiovasculares desfavoráveis); metformina está sendo usada com boa tolerância</p><p>- C: <strong>Suspensão da hidroclorotiazida não é necessária</strong> (paciente não apresenta sinais de congestão; HCTZ ajuda no controle pressórico)</p><p>- D: <strong>Furosemida é desnecessária</strong> sem sinais de sobrecarga volumétrica; trocas medicamentosas desnecessárias</p><p>O raciocínio fisiopatológico baseia-se na redução da mortalidade cardiovascular e hospitalizations com essa combinação, independente da etiologia da IC.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Mulher, 62 anos, comparece à consulta queixando de plenitude pós-prandial e saciedade precoce há 3 meses. Nega perda de peso, vômitos, dor epigástrica ou alteração na cor ou consistência das fezes. Exame físico sem alterações. A conduta mais adequada para este paciente é:",
+      "alternativas": [
+        "Iniciar inibidor da bomba de prótons para tratar síndrome dispéptica.",
+        "Prescrever procinético para tratar síndrome dispéptica.",
+        "Iniciar IBP e procinético e solicitar endoscopia digestiva alta.",
+        "Solicitar endoscopia digestiva alta e prescrever procinético."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca CESUPA avalia a conduta diagnóstica e terapêutica em dispepsia funcional, um tema frequente na prática clínica e com múltiplas nuances para a decisão médica adequada.</p><p><strong>A resposta correta é D - Solicitar endoscopia digestiva alta e prescrever procinético.</strong></p><p>Vamos analisar o perfil clínico da paciente:</p><p>1. <strong>Perfil demográfico:</strong> Mulher de 62 anos, faixa etária de maior prevalência de patologias orgânicas (câncer gástrico, úlceras)</p><p>2. <strong>Sintomas principais:</strong> Plenitude pós-prandial e saciedade precoce, classicamente associados a dismotilidade gástrica</p><p>3. <strong>Duração:</strong> Sintomas por 3 meses (faz parte da definição de dispepsia funcional)</p><p>4. <strong>Sinais de alarme ausentes:</strong> Nega perda de peso, vômitos, dor epigástrica ou alterações nas fezes</p><p>5. <strong>Exame físico normal:</strong> Sem alterações à palpação ou outros achados relevantes</p><p>Para pacientes >60 anos com dispepsia, a <strong>endoscopia digestiva alta é recomendada</strong> (protocolos nacionais SOBECCAN 2024, SBDE 2023) para exclusão de patologias orgânicas, especialmente considerando a idade e duração dos sintomas.</p><p>Simultaneamente, o uso de procinético é apropriado para sintomas de dismotilidade, focando no tratamento sintomático enquanto se aguarda o resultado do exame.</p><p>Sobre as alternativas incorretas:</p><p>- A: <strong>IBP isolado</strong> não aborda adequadamente dispepsia funcional; pode ser considerado se houvesse sintomas típicos de DRGE</p><p>- B: <strong>Procinético isolado</strong> é insuficiente sem investigação diagnóstica na faixa etária</p><p>- C: <strong>Associação IBP + procinético</strong> sem endoscopia falha na abordagem adequada; IBP não é primeira escolha</p><p>A conduta balanceia investigação oportuna e manejo sintomático, seguindo princípios de medicina baseada em evidências e guidelines nacionais atualizados.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_SindromeDispeptica"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "<html><head></head><body>Mulher, 65 anos, hipertensa em uso de anlodipino 10mg/dia e losartana 50mg 12/12hs, refere episódios de palpitações com início há quatro meses, por vezes acompanhados de leve dispneia. Não relata relação com esforços ou outros fatores desencadeantes. Nega angina, síncope, ortopneia ou dispneia aos esforços. Nega etilismo ou tabagismo. Exame físico: bom estado geral, consciente, eupneica, bulhas cardíacas com ritmo irregular, FC: 52 bpm e PA: 140x80 mmHg, com restante do exame sem alterações. Eletrocardiograma vide figura abaixo. A melhor estratégia terapêutica para este paciente é:\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ46.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Ajustar dose dos anti-hipertensivos em uso e iniciar o AAS.",
+        "Avaliar o CHA2DS2-VASc e o HAS-BLED para anticoagulação.",
+        "Encaminhar para instalar marcapasso.",
+        "Manter o esquema medicamentoso atual."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca CESUPA 2023 avalia conhecimentos fundamentais sobre manejo de fibrilação atrial, um dos temas mais frequentes em provas de residência médica. O caso apresenta uma paciente idosa com fatores de risco cardiovascular, sintomas sugestivos de arritmia e eletrocardiograma demonstrando irregularidades no ritmo.</p><p>A paciente é hipertensa em uso de medicações apropriadas (anlodipino e losartana) e refere palpitações há 4 meses, por vezes acompanhadas de leve dispneia. O exame físico revela bulhas com ritmo irregular e frequência cardíaca de 52 bpm, indicando bradicardia relativa. Considerando a idade de 65 anos, hipertensão arterial e possível fibrilação atrial, o risco tromboembólico deve ser avaliado.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A - Ajustar dose dos anti-hipertensivos e iniciar AAS:</strong> Incorreta. Ajustar a dose dos anti-hipertensivos não resolve o problema da arritmia. O AAS, apesar de ter alguma proteção antiplaquetária, é inferior à anticoagulação oral para prevenção de AVC em fibrilação atrial, especialmente em pacientes com alto risco tromboembólico.</p><p><strong>Alternativa B - Avaliar o CHA2DS2-VASc e o HAS-BLED para anticoagulação:</strong> Correta. Esta é a abordagem padrão recomendada pelas diretrizes brasileiras da SBC. O escore CHA2DS2-VASc é fundamental para determinar o risco tromboembólico (C: Insuficiência Cardíaca, H: Hipertensão, A: Idade ≥75 anos, D: Diabetes, S: AVC/TE, V: Doença Vascular, A: Idade 65-74 anos, S: Sexo feminino). O HAS-BLED avalia risco hemorrágico para balencear benefícios e riscos da anticoagulação.</p><p><strong>Alternativa C - Encaminhar para instalar marcapasso:</strong> Incorreta. Não há indicação para marcapasso neste caso. A frequência cardíaca de 52 bpm não é bradicardia sintomática que necessite estimulação. O problema principal é a arritmia, não a condução.</p><p><strong>Alternativa D - Manter o esquema medicamentoso atual:</strong> Incorreta. As medicações em uso controlam a hipertensão, mas não abordam adequadamente a fibrilação atrial, especialmente considerando o risco tromboembólico.</p><p><strong>Veredito: A resposta correta é B.</strong> O manejo atual da fibrilação atrial prioriza a estratificação de risco tromboembólico com o CHA2DS2-VASc, seguida de anticoagulação apropriada quando indicado, além do controle da frequência e ritmo conforme necessário. Esta questão reforça a importância do conhecimento das diretrizes brasileiras atualizadas para manejo de arritmias.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias_AbordagemInicial"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Homem, 46 anos de idade evolui há 4 dias com febre (38,9ºC), tosse produtiva com expectoração purulenta, o quadro iniciou há 6 dias com rinorreia e mal-estar geral. Estava em uso apenas de dipirona para febre. Não procurou auxílio médico até a data de hoje. Nega doenças prévias, uso de antibióticos ou internações recentes. Ao exame físico: Consciente e orientado, hidratado, acianótico, anictérico. AC: ritmo cardíaco regular em 2 tempos sem sopros FC: 98 bpm PA: 110 x 70mmHg Ausculta pulmonar limpa FR: 18 ipm sem outras alterações no exame físico. O aparelho de RX está quebrado. Sobre o caso é correto afirmar:",
+      "alternativas": [
+        "Trata-se de IVAS, pode ser tratado utilizando Amoxacilina+Clavulanato VO 12/12hassociado a lavagem nasal com soro fisiológico.",
+        "Está indicado uso de ceftriaxone com azitromicina EV em ambiente hospitalar e coleta de hemograma, ureia, creatinina, Na e K.",
+        "Deverá aguardar o RX de tórax para definir o esquema antimicrobiano, além de realizar hemograma e hemocultura.",
+        "O diagnóstico é de PAC e por apresentar CRB-65 (Escore simplificado de gravidade da PAC da British Thoracic Society) de 1, não necessita internação."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda a diferenciação entre IVAS viral e sinusite bacteriana aguda, tema clássico em infectologia e medicina de família. O examinador avalia a capacidade de reconhecer critérios clínicos para antibioticoterapia e seleção adequada de antimicrobianos.</p><p>O paciente evolui com quadro progressivo: began com rinorreia e mal-estar geral (IVAS viral típico) e evoluiu após 6 dias para febre, tosse produtiva com expectoração purulenta. Esta progressão é característica da evolução para sinusite bacteriana aguda. O diagnóstico é eminentemente clínico, baseado na apresentação e evolução temporal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A - Amoxicilina+Clavulanato VO com lavagem nasal:</strong> Correta. Este é o tratamento de primeira linha recomendado para sinusite bacteriana aguda, cobrindo pneumococo, Haemophilus influenzae e Moraxella catarrhalis. A amoxicilina sozinha tem alta taxa de resistência do pneumococo, hence a associação com clavulanato. A lavagem nasal com soro fisiológico é adjuvante importante para limpeza das vias aéreas e alívio sintomático.</p><p><strong>Alternativa B - Ceftriaxone + Azitromicina EV em hospital:</strong> Incorreta. Não há indicação de tratamento hospitalar neste paciente jovem, sem comorbidades, com sinais vitais estáveis. O tratamento oral ambulatorial é suficiente. A combinação EV seria indicada em casos mais graves ou complicados.</p><p><strong>Alternativa C - Aguardar RX para definir antimicrobiano:</strong> Incorreta. A radiografia de seios da face não é necessária para diagnóstico de sinusite bacteriana aguda - o diagnóstico é clínico. Atrasar o tratamento com base em exame complementar não está indicado.</p><p><strong>Alternativa D - Diagnóstico de PAC com CRB-65 de 1:</strong> Incorreta. Não há sinais de pneumonia (ausculta pulmonar limpa, sem alteração de murmúrio vesicular). O quadro sugere sinusite bacteriana, não pneumonia. Portanto, não se aplica escore CRB-65.</p><p><strong>Veredito: A resposta correta é A.</strong> Esta questão destaca a importância do diagnóstico clínico em infectologia e da seleção adequada de antimicrobianos baseada em epidemiologia local e diretrizes brasileiras de infectologia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "<html><head></head><body>Homem 48 anos, assintomático, mas com sobrepeso, Circunferência abdominal de 105cm e história familiar de diabetes. Tem tentado mudanças de estilo de vida (MEV) desde a última consulta há 6 meses: caminhando 5x na semana 50 minutos e acompanhando com nutricionista. Trouxe exames: A conduta mais indicada para a paciente é:\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ48.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Repetir os exames em 6 meses, mas manter exercício.",
+        "Iniciar tratamento para diabetes e manter caminhadas.",
+        "Orientar que se encontra pré-diabético e intensificar MEV.",
+        "Tranquilizar o paciente, pois não tem diabetes."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre diabetes mellitus, pré-diabetes e estratégias de intervenção no diabetes tipo 2, tema central na endocrinologia e medicina preventiva. O caso apresenta um paciente com fatores de risco e resultados laboratoriais importantes.</p><p>O paciente é homem de 48 anos com sobrepeso (circunferência abdominal de 105cm - critério de síndrome metabólica), história familiar de diabetes e já tem implementado mudanças de estilo de vida há 6 meses (exercício regular e acompanhamento nutricional). O laboratório é fundamental para estratificação do risco.</p><p><strong>Interpretando os exames laboratoriais:</strong></p><p>• Glicemia de jejum: 100 mg/dL (elevada - normal até 99 mg/dL)<br>• HbA1c: 5,8% (pré-diabetes - normal até 5,6%, diabetes ≥ 6,5%)<br>• Glicemia pós-prandial: 145 mg/dL (elevada - normal até 139 mg/dL)</p><p>Estes valores caracterizam pré-diabetes, estado de risco aumentado para diabetes mellitus tipo 2 e complicações cardiovasculares.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A - Repetir exames em 6 meses mantendo exercício:</strong> Incorreta. Com valores já alterados, especialmente HbA1c de 5,8%, há indicação de intervenção mais ativa, não apenas observação.</p><p><strong>Alternativa B - Iniciar tratamento para diabetes e manter caminhadas:</strong> Incorreta. O paciente não tem diabetes estabelecido (HbA1c 5,8% < 6,5%), mas sim pré-diabetes. Iniciar metformina seria uma opção apenas se tivesse alto risco ou se MEV falhasse.</p><p><strong>Alternativa C - Orientar que se encontra pré-diabético e intensificar MEV:</strong> Correta. Esta é a conduta apropriada baseada em evidências. O pré-diabetes requer intervenção intensificada no estilo de vida, com foco em perda de peso, atividade física regular e educação nutricional. O exercício já em andamento deve ser intensificado, não mantido no mesmo nível.</p><p><strong>Alternativa D - Tranquilizar pois não tem diabetes:</strong> Incorreta. Os valores laboratoriais já mostram disfunção metabólica importante. Tranquilizar seria negligenciar o risco cardiovascular e de progressão para diabetes.</p><p><strong>Veredito: A resposta correta é C.</strong> A questão reforça a importância da prevenção primária no diabetes e da interpretação adequada dos critérios diagnósticos atuais (ADA/IDF), destacando que o pré-diabetes requer intervenção ativa, não apenas observação.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "<html><head></head><body>Mulher, 28 anos, chega ao pronto-socorro referindo que o coração está acelerado, gerando uma leve dispneia. Conta que iniciou enquanto varria a casa. Relata que não é a primeira vez que acontece, mas é a primeira vez que o quadro permanece por mais de 10 minutos. Ao Exame físico: Glasgow15, FR:22irpm, FC:180bpm, PA:120x70mmHg, SatO2:94%, glicemia capilar:95. Ausculta pulmonar normal. Sem outras alterações no exame físico. ECG realizado durante o atendimento a seguir: A conduta inicial indicada pela American Heart Asssociation para esta paciente é:\n\n<img src=\"https://medbrave.com.br/questions/cesupa-2023-r1/qQ49.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Proceder manobra vagal modificada, soprando a seringa e elevando MMII.",
+        "Iniciar anticoagulação com heparina e iniciar amiodarona endovenosa.",
+        "Sedar a paciente e proceder cardioversão sincronizada imediatamente.",
+        "Tranquilizar a paciente e prescrever beta-bloquador via oral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa conhecimento sobre abordagem inicial de taquicardia supraventricular, tema crítico em cardiologia e medicina de emergência. A banca CESUPA avalia a capacidade de reconhecimento do tipo de arritmia e aplicação de protocolos baseados em evidências.</p><p>A paciente jovem (28 anos) apresenta episódio de taquicardia iniciada durante esforço físico, com 180 bpm, leve dispneia, primeira vez que persiste por mais de 10 minutos. Os sinais vitais mostram taquicardia regular, pressão arterial mantida e saturação adequada. O ECG durante o atendimento é fundamental para diagnóstico.</p><p>Considerando a idade, apresentação clínica e frequência cardíaca, o diagnóstico mais provável é taquicardia supraventricular (TSV), especificamenteflutter atrial ou taquiartatrial. Nestes casos, as manobras vagais são primeira linha de tratamento.</p><p><strong>Analisando as alternativas conforme diretrizes da American Heart Association:</strong></p><p><strong>Alternativa A - Manobra vagal modificada (manobra de Valsalva modificada):</strong> Correta. A manobra de Valsalva modificada é o primeiro passo recomendado para TSV. Consiste em solicitar ao paciente que sopre em uma seringa de 20ml por 10-15 segundos, aumentando a pressão intratorácica, seguido de elevação dos membros inferiores. Esta manobra tem alta taxa de sucesso (19-54%) e deve ser tentada antes de qualquer medicação.</p><p><strong>Alternativa B - Anticoagulação com heparina e amiodarona EV:</strong> Incorreta. Não há indicação de anticoagulação nesta arritmia aguda em paciente jovem sem fibrilação atrial. A amiodarona seria segunda linha se manobras falharem, mas não é primeira opção.</p><p><strong>Alternativa C - Sedação e cardioversão sincronizada:</strong> Incorreta. A cardioversão é reservada para casos com instabilidade hemodinâmica (hipotensão, dor torácica, síncope), o que não é o caso aqui. Sedação também não é necessária para manobras vagais.</p><p><strong>Alternativa D - Tranquilizar e prescrever beta-bloqueador VO:</strong> Incorreta. O quadro agudo requer intervenção imediata no PS, não apenas tranquilização. Beta-bloqueadores orais não são adequados para episódio agudo de TSV.</p><p><strong>Veredito: A resposta correta é A.</strong> Esta questão destaca a importância do seguimento rigoroso dos protocolos de emergência cardiovascular e a priorização de intervenções simples e eficazes antes de medidas mais invasivas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias_AbordagemInicial"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Mulher, 58 anos, diabética, foi ao PS devido quadro de cefaleia, mal-estar geral e febre há 2 dias. A hipótese diagnóstica feita pelo médico foi de dengue. A paciente realizou sintomáticos no PS e foi liberada. Após 5 dias, a paciente evoluiu com persistência da febre, tosse seca, sonolência e desorientação. Retornou ao PS e, ao exame físico, apresentava regular estado geral, febril ao toque, ausculta cardíaca normal, PA 80/40mmHg, FC 130bpm, ausculta pulmonar com murmúrio vesicular diminuído em base esquerda, FR 32irpm, abdome inocente e extremidades frias. Sobre este caso é correto afirmar:",
+      "alternativas": [
+        "Para fechar diagnóstico de sepse, é necessário a presença de leucocitose ou leucopenia.",
+        "Faz parte da conduta imediata a infusão de solução salina 30ml/Kg na primeira hora.",
+        "O antibiótico deve iniciar na primeira hora após chegada dos exames laboratoriais.",
+        "O volume de hidratação da paciente deve ser guiado pelo clearence de lactato."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda manejo inicial de choque séptico, tema central na medicina de emergência e infectologia. A banca CESUPA avalia conhecimento sobre bundles de sepse e sequenciamento adequado de intervenções tempo-dependentes.</p><p>A paciente evolui inicialmente com quadro viral (cefaleia, mal-estar, febre) tratado sintomaticamente. Após 5 dias, desenvolve sintomas de piora: febre persistente, tosse seca, sonolência, desorientação. O exame físico revela sinais de choque: pressão arterial 80x40 mmHg (hipotensão), taquicardia 130 bpm, extremidades frias, além de comprometimento pulmonar (murmúrio vesicular diminuído em base esquerda). Este é um quadro clássico de evolução viral para bacteriana, com desenvolvimento de choque séptico.</p><p><strong>Critérios de Sepse-3 (Sepsis-3):</strong><br>O diagnóstico de sepse é baseado em: suspeita ou confirmação de infecção + SOFA score ≥ 2. Para choque séptico: necessidade de vasopressores para manter PAM ≥ 65 mmHg + lactato > 2 mmol/L após fluidoterapia adequada.</p><p><strong>Análise das alternativas conforme Surviving Sepsis Campaign e diretrizes brasileiras:</strong></p><p><strong>Alternativa A - Necessidade de leucocitose/leucopenia para fechar diagnóstico:</strong> Incorreta. Os critérios de Sepsis-3 eliminaram a necessidade de resposta leucocitária como mandatory. Leucocitose ou leucopenia podem estar presentes, mas não são obrigatórias para o diagnóstico. A avaliação é clínica + laboratorial (lactato).</p><p><strong>Alternativa B - Infusão de solução salina 30ml/kg na primeira hora:</strong> Correta. Este é o primeiro bundle da Surviving Sepsis Campaign: fluidoterapia imediata e agressiva nas primeiras 3 horas (não apenas primeira hora, mas começar imediatamente). 30ml/kg é a recomendação para choque séptico, deve ser administrada rapidamente.</p><p><strong>Alternativa C - Iniciar antibiótico após resultados laboratoriais:</strong> Incorreta. O antibiótico deve ser administrado na primeira hora após reconhecimento do choque sépticose não houver necessidade de investigação complementar extensa. Atraso no antibiótico aumenta mortalidade significativamente.</p><p><strong>Alternativa D - Volume guiado pelo clearance de lactato:</strong> Incorreta. O clearance de lactato é usado para monitorizar resposta ao tratamento, não para guiar a fluidoterapia inicial. O volume inicial deve ser baseado em pressão arterial e parâmetros clínicos, não no lactato.</p><p><strong>Veredito: A resposta correta é B.</strong> Esta questão reforça a importância do reconhecimento precoce do choque séptico e da implementação imediata dos bundles de sepse, destacando que o tempo é crucial na sobrevida destes pacientes.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Influenza",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Influenza",
+        "ClinicaMedica_Infectologia_Influenza_InfluenzaCaracteristicasGerais"
+      ],
+      "tags": [
+        "CESUPA2023R1",
+        "CESUPA",
+        "R1",
+        "PA",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762584840790-49"
+    }
+  ]
+}

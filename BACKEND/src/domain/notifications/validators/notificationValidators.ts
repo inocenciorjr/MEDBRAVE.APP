@@ -19,15 +19,23 @@ export const createNotificationSchema = z.object({
   relatedId: z.string().optional().nullable(),
   relatedType: z.string().optional().nullable(),
   metadata: z.record(z.any()).optional().nullable(),
-  expiresAt: z.string().datetime('Data de expiração inválida').optional().nullable(),
+  expiresAt: z
+    .string()
+    .datetime('Data de expiração inválida')
+    .optional()
+    .nullable(),
 });
 
 // Schema para validação de atualização de notificação
-export const updateNotificationSchema = createNotificationSchema.partial().omit({ userId: true });
+export const updateNotificationSchema = createNotificationSchema
+  .partial()
+  .omit({ userId: true });
 
 // Schema para validação de envio em massa
 export const bulkSendNotificationSchema = z.object({
-  userIds: z.array(z.string().min(1)).min(1, 'É necessário fornecer pelo menos um usuário'),
+  userIds: z
+    .array(z.string().min(1))
+    .min(1, 'É necessário fornecer pelo menos um usuário'),
   type: z.nativeEnum(NotificationType, {
     errorMap: () => ({ message: 'Tipo de notificação inválido' }),
   }),
@@ -43,7 +51,11 @@ export const bulkSendNotificationSchema = z.object({
   relatedId: z.string().optional().nullable(),
   relatedType: z.string().optional().nullable(),
   metadata: z.record(z.any()).optional().nullable(),
-  expiresAt: z.string().datetime('Data de expiração inválida').optional().nullable(),
+  expiresAt: z
+    .string()
+    .datetime('Data de expiração inválida')
+    .optional()
+    .nullable(),
 });
 
 /**
@@ -61,7 +73,7 @@ export function validateCreateNotification(data: any): {
     if (error instanceof z.ZodError) {
       const validationErrors: Record<string, string[]> = {};
 
-      error.errors.forEach(err => {
+      error.errors.forEach((err) => {
         const path = err.path.join('.');
         if (!validationErrors[path]) {
           validationErrors[path] = [];
@@ -98,7 +110,7 @@ export function validateBulkSendNotification(data: any): {
     if (error instanceof z.ZodError) {
       const validationErrors: Record<string, string[]> = {};
 
-      error.errors.forEach(err => {
+      error.errors.forEach((err) => {
         const path = err.path.join('.');
         if (!validationErrors[path]) {
           validationErrors[path] = [];

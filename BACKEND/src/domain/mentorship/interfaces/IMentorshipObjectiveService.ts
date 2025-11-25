@@ -13,7 +13,9 @@ export interface IMentorshipObjectiveService {
    * Cria um novo objetivo de mentoria
    * @param objectiveData Dados do objetivo
    */
-  createObjective(objectiveData: CreateMentorshipObjectivePayload): Promise<MentorshipObjective>;
+  createObjective(
+    objectiveData: CreateMentorshipObjectivePayload,
+  ): Promise<MentorshipObjective>;
 
   /**
    * Obtém um objetivo pelo ID
@@ -41,7 +43,9 @@ export interface IMentorshipObjectiveService {
    * Lista objetivos de uma mentoria
    * @param mentorshipId ID da mentoria
    */
-  getObjectivesByMentorship(mentorshipId: string): Promise<MentorshipObjective[]>;
+  getObjectivesByMentorship(
+    mentorshipId: string,
+  ): Promise<MentorshipObjective[]>;
 
   /**
    * Lista objetivos de uma mentoria com status específico
@@ -58,7 +62,10 @@ export interface IMentorshipObjectiveService {
    * @param id ID do objetivo
    * @param progress Novo progresso (0-100)
    */
-  updateProgress(id: string, progress: number): Promise<MentorshipObjective | null>;
+  updateProgress(
+    id: string,
+    progress: number,
+  ): Promise<MentorshipObjective | null>;
 
   /**
    * Marca um objetivo como completado

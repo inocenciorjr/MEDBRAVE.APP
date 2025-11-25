@@ -1,6 +1,6 @@
 /**
  * 🔍 ROTAS DE MONITORAMENTO
- * 
+ *
  * Rotas para acessar dados de monitoramento de requisições:
  * - GET /api/monitoring/stats - Estatísticas gerais
  * - GET /api/monitoring/dashboard - Dados para dashboard
@@ -15,7 +15,7 @@
 
 import { Router } from 'express';
 import { monitoringController } from '../controllers/MonitoringController';
-import { authMiddleware } from '../domain/auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
 import { adminMiddleware } from '../domain/auth/middleware/admin.middleware';
 
 const router = Router();
@@ -24,8 +24,8 @@ const router = Router();
 router.post('/frontend-data', monitoringController.receiveFrontendData);
 
 // Middleware de autenticação e admin para as demais rotas
-router.use(authMiddleware);
-router.use(adminMiddleware);
+router.use(authMiddleware as any);
+router.use(adminMiddleware as any);
 
 /**
  * @swagger

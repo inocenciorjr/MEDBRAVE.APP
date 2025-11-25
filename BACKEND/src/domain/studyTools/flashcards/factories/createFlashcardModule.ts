@@ -1,9 +1,8 @@
-import { Router } from 'express';
 import { FlashcardController } from '../controllers/flashcardController';
-import { FlashcardFSRSController } from '../controllers/FlashcardFSRSController';
 import { deckController } from '../controllers/deckController';
 import { createFlashcardRoutes } from '../routes/flashcardRoutes';
-import { createFlashcardFSRSRoutes } from '../routes/flashcardFSRSRoutes';
+// FlashcardFSRSController and createFlashcardFSRSRoutes removed - FSRS logic deprecated
+// optimizedSearchRoutes removed - now uses GIN index directly
 import { IFlashcardRepository } from '../repositories/IFlashcardRepository';
 import { CreateFlashcardUseCase } from '../use-cases/CreateFlashcardUseCase';
 import { GetFlashcardByIdUseCase } from '../use-cases/GetFlashcardByIdUseCase';
@@ -13,8 +12,8 @@ import { DeleteFlashcardUseCase } from '../use-cases/DeleteFlashcardUseCase';
 import { ToggleFlashcardArchiveUseCase } from '../use-cases/ToggleFlashcardArchiveUseCase';
 import { RecordFlashcardReviewUseCase } from '../use-cases/RecordFlashcardReviewUseCase';
 import { SearchFlashcardsUseCase } from '../use-cases/SearchFlashcardsUseCase';
-import { FirebaseFlashcardRepository } from '../../../../infra/repositories/firebase/FirebaseFlashcardRepository';
-import { FlashcardFSRSService } from '../services/FlashcardFSRSService';
+// SupabaseFlashcardFSRSService removed - FSRS logic deprecated
+import { container } from '../../../../shared/container';
 
 export interface FlashcardModuleOptions {
   flashcardRepository?: IFlashcardRepository;
@@ -26,37 +25,40 @@ export interface FlashcardModuleOptions {
  * @param options Opções de configuração
  */
 export function createFlashcardModule(options?: FlashcardModuleOptions) {
-  // Obter ou criar repositório
+  // Obter repositório do container de injeção de dependência
   const flashcardRepository =
-    options?.flashcardRepository || new FirebaseFlashcardRepository();
+    options?.flashcardRepository || container.resolve<IFlashcardRepository>('FlashcardRepository');
 
   // Criar casos de uso
-  const createFlashcardUseCase = new CreateFlashcardUseCase(flashcardRepository);
-  const getFlashcardByIdUseCase = new GetFlashcardByIdUseCase(flashcardRepository);
-  const getUserFlashcardsUseCase = new GetUserFlashcardsUseCase(flashcardRepository);
-  const updateFlashcardUseCase = new UpdateFlashcardUseCase(flashcardRepository);
-  const deleteFlashcardUseCase = new DeleteFlashcardUseCase(flashcardRepository);
-  const toggleFlashcardArchiveUseCase = new ToggleFlashcardArchiveUseCase(flashcardRepository);
-  const recordFlashcardReviewUseCase = new RecordFlashcardReviewUseCase(flashcardRepository);
-  const searchFlashcardsUseCase = new SearchFlashcardsUseCase(flashcardRepository);
+  const createFlashcardUseCase = new CreateFlashcardUseCase(
+    flashcardRepository,
+  );
+  const getFlashcardByIdUseCase = new GetFlashcardByIdUseCase(
+    flashcardRepository,
+  );
+  const getUserFlashcardsUseCase = new GetUserFlashcardsUseCase(
+    flashcardRepository,
+  );
+  const updateFlashcardUseCase = new UpdateFlashcardUseCase(
+    flashcardRepository,
+  );
+  const deleteFlashcardUseCase = new DeleteFlashcardUseCase(
+    flashcardRepository,
+  );
+  const toggleFlashcardArchiveUseCase = new ToggleFlashcardArchiveUseCase(
+    flashcardRepository,
+  );
+  const recordFlashcardReviewUseCase = new RecordFlashcardReviewUseCase(
+    flashcardRepository,
+  );
+  const searchFlashcardsUseCase = new SearchFlashcardsUseCase(
+    flashcardRepository,
+  );
 
   // Criar controladores
   const flashcardController = new FlashcardController(flashcardRepository);
 
-  // Criar serviços e controladores FSRS se habilitado
-  let flashcardFSRSService: FlashcardFSRSService | undefined;
-  let flashcardFSRSController: FlashcardFSRSController | undefined;
-  let flashcardFSRSRoutes: Router | undefined;
-
-  if (options?.enableFSRS !== false) { // FSRS habilitado por padrão
-    console.log('🔧 [createFlashcardModule] Criando componentes FSRS...');
-    flashcardFSRSService = new FlashcardFSRSService();
-    flashcardFSRSController = new FlashcardFSRSController(flashcardFSRSService);
-    flashcardFSRSRoutes = createFlashcardFSRSRoutes(flashcardFSRSController);
-    console.log('✅ [createFlashcardModule] Componentes FSRS criados com sucesso');
-  } else {
-    console.log('❌ [createFlashcardModule] FSRS desabilitado');
-  }
+  // FSRS services and controllers removed - FSRS logic deprecated
 
   // Usar a instância singleton do deck controller
 
@@ -65,18 +67,19 @@ export function createFlashcardModule(options?: FlashcardModuleOptions) {
 
   return {
     flashcardRoutes,
-    flashcardFSRSRoutes,
+    // flashcardFSRSRoutes removed - FSRS logic deprecated
+    // optimizedSearchRoutes removed - now uses GIN index directly
 
     // Expor controladores
     controllers: {
       flashcardController,
-      flashcardFSRSController,
+      // flashcardFSRSController removed - FSRS logic deprecated
       deckController,
     },
 
     // Expor serviços
     services: {
-      flashcardFSRSService,
+      // flashcardFSRSService removed - FSRS logic deprecated
     },
 
     // Expor casos de uso

@@ -1,0 +1,1658 @@
+{
+  "metadata": {
+    "examName": "UFPI2020R3 (UFPI 2020)",
+    "examYear": 2020,
+    "url": "source://1027",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-11T06:49:47.361Z",
+    "jobId": "batch-1762832845792-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "f853b123-ff13-4080-8a5e-b8b152277303"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Imaginemos que iremos operar uma paciente do sexo feminino, de 32 anos de idade, que acabara de ser diagnosticada com um câncer gástrico. Durante a investigação diagnóstica descobrimos que ela, embora tenha um peso adequado para seu tamanho e idade, é sedentária, tabagista (30 maços/ano) e etilista \"social\". Sabendo-se que a cirurgia indicada para esta paciente é uma Gastrectomia Total, o(s) exame(s) que seria(m) solicitado(s) para avaliar a condição cardíaca desta paciente é/são:",
+      "alternativas": [
+        "ECG e uma avaliação simples do cardiologista.",
+        "Ecocardiograma, ECG, Teste Ergométrico, seguidos de uma avaliação simples do cardiologista.",
+        "ECG e RX de Tórax.",
+        "Somente o ECG.",
+        "Nenhuma das respostas anteriores."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre avaliação pré-operatória cardiovascular para procedimentos de alta complexidade.</p><p><strong>A resposta correta é a alternativa E - Nenhuma das respostas anteriores.</strong></p><p>Vamos analisar o cenário clínico: uma paciente de 32 anos será submetida à gastrectomia total para câncer gástrico. Embora jovem, apresenta fatores de risco significativos: tabagismo pesado (30 maços/ano) e etilismo social. A gastrectomia total é uma cirurgia de grande porte com risco cardiovascular moderado.</p><p><strong>Análise das alternativas:</strong></p><p>• A) ECG e avaliação simples do cardiologistá <em>insuficiente</em> - Para gastrectomia total com fatores de risco, necesitamos avaliação mais completa.</p><p>• B) Ecocardiograma, ECG, Teste Ergométrico e avaliação simples - Esta seria a <em>abordagem mais adequada</em>, combinando exames estruturais e funcionais com avaliação especializada.</p><p>• C) ECG e RX de Tórax - <em>Limitado</em>, não avalia adequadamente a função cardíaca.</p><p>• D) Somente o ECG - <em>Muito insuficiente</em> para o risco cirúrgico proposto.</p><p>Embora a alternativa B seja a mais completa, ela também está incompleta, pois deveria incluir uma avaliação anestésica detalhada e possivelmente outros exames como dosagem de peptídeo natriurético tipo B (BNP). Por isso, nenhuma das alternativas apresentadas oferece a avaliação ideal para esta paciente.</p><p><strong>Veredito: Alternativa E é correta</strong> pois nenhuma das opções oferece uma avaliação cardiovascular realmente adequada para o risco cirúrgico presente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_AvaliacaoCardiovascular"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Para avaliar a função renal, o(s) exame(s) que seria(m):",
+      "alternativas": [
+        "Creatinina.",
+        "Taxa de filtração glomerular.",
+        "Creatinina e Taxa de filtração glomerular.",
+        "Ureia e Creatinina.",
+        "Microalbuminúria de 24 h."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre os exames fundamentais para avaliação da função renal.</p><p><strong>A resposta correta é a alternativa A - Creatinina.</strong></p><p>A creatinina sérica é o exame padrão-ouro para avaliação inicial da função renal. Ela reflete diretamente a filtração glomerular e é o marcador mais utilizado na prática clínica cotidiana.</p><p><strong>Análise das alternativas:</strong></p><p>• A) Creatinina - <strong>Correta</strong> - É o exame de primeira linha, barato, disponível e confiável para avaliação da função renal.</p><p>• B) Taxa de filtração glomerular - <em>Incorreta</em> - A TFG não é um exame direto, é calculada a partir da creatinina (equação Cockcroft-Gault, MDRD, CKD-EPI). Não é solicitada diretamente.</p><p>• C) Creatinina e Taxa de filtração glomerular - <em>Incorreta</em> - Embora a TFG seja calculada a partir da creatinina, na prática solicitasse apenas a creatinina.</p><p>• D) Ureia e Creatinina - <em>Incorreta</em> - A ureia é menos específica para função renal, sendo influenciada por fatores como dieta proteica, desidratação e sangramento digestivo.</p><p>• E) Microalbuminúria de 24h - <em>Incorreta</em> - Este é um exame específico para detecção precoce de nefropatia diabética, não para avaliação geral da função renal.</p><p><strong>Veredito: Alternativa A é a resposta correta</strong> pois a creatinina é o exame de escolha para avaliação inicial da função renal, sendo mais prática e específica que as outras alternativas.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Quanto às complicações do tratamento cirúrgico das hérnias incisionais, pode-se citar, EXCETO:",
+      "alternativas": [
+        "Seroma.",
+        "Hematoma.",
+        "Infecção.",
+        "Recidiva.",
+        "Laparotomia para controle de dano."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre complicações específicas do tratamento cirúrgico das hérnias incisionais.</p><p><strong>A resposta correta é a alternativa E - Laparotomia para controle de dano.</strong></p><p>O comando \"EXCETO\" indica que devemos identificar a alternativa que <strong>NÃO</strong> é uma complicação do tratamento cirúrgico das hérnias incisionais.</p><p><strong>Análise das alternativas:</strong></p><p>• A) Seroma - <em>Complicação real</em> - Acúmulo de líquido seroso na ferida, muito comum em hernioplastias incisionais devido ao descolamento de tecido e espaço morto.</p><p>• B) Hematoma - <em>Complicação real</em> - Acúmulo de sangue no sítio cirúrgico, pode ocorrer por sangramento de vasos durante a dissecção ou da própria ferida.</p><p>• C) Infecção - <em>Complicação real</em> - Infecção da ferida operatória é uma complicação preocupante, especialmente em cirurgias limpas contaminadas como as hérnias incisionais onde há contato com o intestino.</p><p>• D) Recidiva - <em>Complicação real</em> - É uma das complicações mais importantes a longo prazo, com taxas que variam de 5-15% dependendo da técnica utilizada.</p><p>• E) Laparotomia para controle de dano - <strong>NÃO é complicação da cirurgia de hérnia</strong> - Esta é uma técnica de trauma, uma laparotomia de emergência para controle de hemorragias graves. Não se aplica ao contexto de cirurgia eletiva de hérnia.</p><p><strong>Veredito: Alternativa E é a resposta correta</strong> pois a laparotomia para controle de dano é um procedimento de emergência em trauma, não uma complicação da cirurgia de hérnia incisional.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Pela classificação de Nyhus para as hérnias inguinais, a que melhor caracteriza o Tipo II é:",
+      "alternativas": [
+        "Hérnia direta recidivada.",
+        "Hérnia femoral recidivada.",
+        "Hérnia indireta com anel inguinal profundo maior que 2cm e assoalho inguinal integro.",
+        "Hérnia indireta com anel inguinal profundo até 2cm.",
+        "Hérnia direta com destruição do assoalho inguinal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre a classificação de Nyhus para hérnias inguinais, um sistema morfológico importante para guiar a escolha da técnica cirúrgica.</p><p><strong>A resposta correta é a alternativa C - Hérnia indireta com anel inguinal profundo maior que 2cm e assoalho inguinal integro.</strong></p><p>A classificação de Nyhus divide as hérnias inguinais em tipos baseado na integridade do assoalho inguinal e no anel profundo:</p><p><strong>Tipo I:</strong> Hérnia indireta com anel profundo normal (até 2cm)</p><p><strong>Tipo II:</strong> Hérnia indireta com anel profundo alargado (>2cm) mas assoalho inguinal íntegro</p><p><strong>Tipo IIIA:</strong> Hérnia direta com assoalho inguinal destruído</p><p><strong>Tipo IIIB:</strong> Hérnia indireta com anel profundo muito alargado (>4cm) e assoalho destruído</p><p><strong>Tipo IIIC:</strong> Hérnia femoral</p><p><strong>Tipo IV:</strong> Hérnias recidivadas (qualquer tipo)</p><p><strong>Análise das alternativas:</strong></p><p>• A) Hérnia direta recidivada - <em>Corresponde ao Tipo IV</em>, não ao Tipo II.</p><p>• B) Hérnia femoral recidivada - <em>Corresponde ao Tipo IV</em>, especificamente Tipo IIIC recidivada.</p><p>• C) <strong>Hérnia indireta com anel inguinal profundo maior que 2cm e assoalho inguinal integro</strong> - <strong>Corresponde exatamente ao Tipo II</strong>.</p><p>• D) Hérnia indireta com anel inguinal profundo até 2cm - <em>Corresponde ao Tipo I</em>.</p><p>• E) Hérnia direta com destruição do assoalho inguinal - <em>Corresponde ao Tipo IIIA</em>.</p><p><strong>Veredito: Alternativa C é a resposta correta</strong> pois descreve perfeitamente o Tipo II da classificação de Nyhus.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Antes de iniciar uma colecistectomia videolaparoscópica, o preceptor avisa ao residente de cirurgia geral que fará a entrada na parede abdominal por \"open lap\", utilizando um trocarte de 11mm e solicita que configure o insuflador da forma que o pneumoperitônio seja realizado com segurança. A melhor configuração seria:",
+      "alternativas": [
+        "20 mmHg e 40 L/min.",
+        "12 mmHg e 3,5 L/min.",
+        "12 mmHg e 40 L/min.",
+        "20 mmHg e 3,5 L/min.",
+        "15 mmHg e 20 L/min."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento técnico sobre configuração segura do insuflador para pneumoperitônio em videolaparoscopia.</p><p><strong>A resposta correta é a alternativa B - 12 mmHg e 3,5 L/min.</strong></p><p>O pneumoperitônio deve ser estabelecido de forma segura para minimizar complicações. Os parâmetros ideais são:</p><p><strong>Pressão:</strong> 12-15 mmHg é o padrão, sendo 12 mmHg o mais seguro e recomendado para reduzir riscos de complicações cardiopulmonares.</p><p><strong>Fluxo:</strong> 2-4 L/min é ideal para insuflação gradual e segura, evitando mudanças hemodinâmicas bruscas.</p><p><strong>Análise das alternativas:</strong></p><p>• A) 20 mmHg e 40 L/min - <em>Perigosamente alta</em> - 20 mmHg aumenta muito o risco de complicações cardiopulmonares e 40 L/min é excessivo, podendo causar embolia gasosa.</p><p>• B) <strong>12 mmHg e 3,5 L/min</strong> - <strong>Configuração ideal</strong> - Pressão segura e fluxo adequado para insuflação gradual e controlada.</p><p>• C) 12 mmHg e 40 L/min - <em>Pressão adequada, mas fluxo excessivo</em> - 40 L/min pode causar instabilidade hemodinâmica e risco de embolia gasosa.</p><p>• D) 20 mmHg e 3,5 L/min - <em>Pressão muito alta</em> - 20 mmHg aumenta significativamente o risco de complicações, apesar do fluxo adequado.</p><p>• E) 15 mmHg e 20 L/min - <em>Aceitável mas não ideal</em> - 15 mmHg é o limite superior aceito e 20 L/min ainda é relativamente alto.</p><p><strong>Veredito: Alternativa B é a resposta correta</strong> pois representa a configuração mais segura para pneumoperitônio, balanceando eficácia cirúrgica e segurança do paciente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ConceitosBasicosEComplicacoesE"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Das situações a seguir a que NÃO estaria indicada a se realizar a esplenectomia em pacientes com púrpura trombocitopênica idiopática (PTI) é:",
+      "alternativas": [
+        "Diagnóstico de PTI durante 6 semanas e continuam a apresentar contagens plaquetárias de menos de 10.000/mm3, sem sintomas de sangramento.",
+        "Diagnóstico de PTI há pelo menos 3 meses e experimentaram uma resposta transitória ou incompleta à terapia primária e têm uma contagem plaquetária de menos de 30.000/mm3.",
+        "Gestante com PTI e falha na terapia com glicocorticoides, contagem plaquetária de menos de 30.000/mm3 e sangramento gengival.",
+        "Diagnóstico de PTI há 6 meses, contagem plaquetária de mais de 50.000/mm3 e ausência de sangramentos.",
+        "Gestante com PTI e falha na terapia com glicocorticoides, contagem plaquetária de menos de 10.000/mm3 e ausência de sangramentos."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre os critérios de indicação de esplenectomia em pacientes com púrpura trombocitopênica idiopática (PTI). É fundamental compreender quando este procedimento está indicado versus quando pode ser evitado.</p><p><strong>A resposta correta é D - Diagnóstico de PTI há 6 meses, contagem plaquetária de mais de 50.000/mm3 e ausência de sangramentos.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> Casos com PTI diagnosticada há 6 semanas e plaquetas <10.000/mm3, mesmo sem sangramento, indicam PTI refratária que pode se beneficiar de esplenectomia. A contagem extremamente baixa justifica intervenção mesmo na ausência de sangramento ativo.</p><p><strong>B) CORRETA:</strong> Pacientes com PTI há >3 meses que tiveram resposta transitória/incompleta a terapia primária e mantêm plaquetas <30.000/mm3 são candidatos potenciais à esplenectomia, seguindo protocolos estabelecidos.</p><p><strong>C) CORRETA:</strong> Gestante com PTI refratária e plaquetas <30.000/mm3 associada a sangramento gengival é indicação clara, especialmente considerando riscos gestacionais e risco de sangramento ativo.</p><p><strong>D) INCORRETA:</strong> Esta é a situação que NÃO justifica esplenectomia. Com contagem >50.000/mm3 e ausência de sangramentos, o paciente está em situação estável e não apresenta critérios de gravidade. A esplenectomia não é recomendada em casos com contagem plaquetária adequada e assintomáticos.</p><p><strong>E) CORRETA:</strong> Gestante com PTI refratária e plaquetas <10.000/mm3, mesmo sem sangramento atual, é indicação de alta prioridade para esplenectomia devido ao risco iminente de sangramento e complicações obstétricas.</p><p><strong>Conclusão:</strong> A esplenectomia em PTI deve ser indicada considerando fatores como: tempo de doença, refratariedade ao tratamento, contagem plaquetária, presença de sangramento e condições especiais como gestação. O caso da alternativa D não apresenta critérios de gravidade que justifiquem intervenção cirúrgica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas_AnemiasHemoliticasAutoimunesAhai"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "A trombose arterial aguda tem, como causa mais frequente e local:",
+      "alternativas": [
+        "Aterosclerose e membros superiores.",
+        "Aterosclerose e membros inferiores.",
+        "Aneurisma e membros inferiores.",
+        "Trombofilia e membros superiores.",
+        "Trombofilia e membros inferiores."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a epidemiologia e localização da trombose arterial aguda, testando conceitos fundamentais da medicina vascular. É importante conhecer os padrões mais comuns de apresentação desta condição.</p><p><strong>A resposta correta é B - Aterosclerose e membros inferiores.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Embora a aterosclerose seja a causa mais frequente, a localização em membros superiores não é a mais comum. Aterosclerose em membros superiores é mais rara e geralmente associada a síndromes compressivas.</p><p><strong>B) CORRETA:</strong> Esta é a combinação mais frequente. A aterosclerose é definitivamente a causa predominante de trombose arterial aguda, e os membros inferiores são o local mais comum devido à maior prevalência de doença arterial obstrutiva periférica nestas regiões.</p><p><strong>C) INCORRETA:</strong> Aneurismas podem causar trombose, mas não são a causa mais frequente. Além disso, aneurismas são mais comuns em membros inferiores (aórticos), mas a aterosclerose permanece como causa principal.</p><p><strong>D) INCORRETA:</strong> Trombofilias são causas importantes, especialmente em pacientes jovens, mas não são as mais frequentes em termos globais. Além disso, não se concentram especificamente em membros superiores.</p><p><strong>E) INCORRETA:</strong> Embora tanto trombofilias quanto membros inferiores sejam importantes, a aterosclerose permanece como causa mais frequente que trombofilias.</p><p><strong>Conclusão:</strong> A trombose arterial aguda tem na aterosclerose sua causa mais frequente e nos membros inferiores sua localização predominante, refletindo a alta prevalência de doença arterial periférica nestas regiões. Este padrão epidemiológico é consistente com a fisiopatologia da aterosclerose, que afeta preferencialmente a bifurcação aórtica e artérias femorais/poplíteas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_TraumaVascularDeExtremidades"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Segundo o ATLS, são fatores que comprometem a respiração (B) no trauma, EXCETO:",
+      "alternativas": [
+        "Pneumotórax hipertensivo.",
+        "Derrame pleural quiloso.",
+        "Pneumotórax aberto.",
+        "Tórax Instável.",
+        "Hemotórax maciço."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento do protocolo ATLS (Advanced Trauma Life Support) focado especificamente nos fatores que comprometem a respiração (segmento B). O ATLS é fundamental na abordagem inicial do trauma e é frequentemente cobrado em provas.</p><p><strong>A resposta correta é B - Derrame pleural quiloso.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> O pneumotórax hipertensivo é uma emergência que pode causar death em questão de minutos, colapsando completamente o pulmão ipsilateral e desviando o mediastino para o lado contralateral, comprometendo severamente a respiração.</p><p><strong>B) CORRETA:</strong> O derrame pleural quiloso (quilo = linfa) é uma condição rara que pode ocorrer pós-trauma, mas não tem o mesmo impacto agudo na ventilação que as outras alternativas. É mais comumente associado a traumatismo de ducto torácico ou neoplasias, e embora cause desconforto respiratório, não é classificado como comprometimento respiratório agudo no ATLS.</p><p><strong>C) INCORRETA:</strong> O pneumotórax aberto permite entrada e saída livre de ar pela lesão, causando colapso pulmonar e comprometimento severo da respiração ipsilateral.</p><p><strong>D) INCORRETA:</strong> O tórax instável (flail chest) causa movimento paradoxal do segmento, comprometendo significativamente a ventilação e causando dor intensa com cada movimento respiratório.</p><p><strong>E) INCORRETA:</strong> O hemotórax maciço pode causar colapso pulmonar por compressão e hipoxemia severa, necessitando drenagem torácica de emergência.</p><p><strong>Conclusão:</strong> Embora o derrame pleural quiloso possa causar sintomas respiratórios, ele não se enquadra entre as condições que comprometem criticamente a respiração de forma aguda no contexto do ATLS. As outras alternativas representam emergências torácicas que requerem intervenção imediata para prevenir morte por insuficiência respiratória.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_RespiracaoEVentilacao",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_TraumaToracico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "A resposta endócrino-metabólica ao trauma cirúrgico envolve os seguintes processos, EXCETO:",
+      "alternativas": [
+        "Aumento da glicogenólise hepática e redução da gliconeogênese.",
+        "Estímulo de produção de aldosterona, secundário ao sequestro hídrico causado pelo edema traumático.",
+        "Elevação do hormônio antidiurético até o 4° ou 5° dia pós-operatório.",
+        "Elevação do cortisol, promovendo estímulo a síntese proteica.",
+        "Elevação do GH, ACTH e do TSH."
+      ],
+      "correta": -1,
+      "professor_comment": "<p> QUESTÃO ANULADA PELA BANCA EXAMINADORA</p><p>Esta questão apresenta múltiplas alternativas incorretas e não tem uma resposta única definida, impossibilitando determinar um gabarito adequado.</p><p><strong>Problemas identificados:</strong></p><p><strong>Alternativa A:</strong> Contém erro conceitual. O trauma promove AUMENTO da gliconeogênese (não redução) como parte da resposta metabólica ao estresse, fornecendo substratos para a demanda energética aumentada.</p><p><strong>Alternativa B:</strong> Apresenta incorreção técnica. A produção de aldosterona é estimulada por ativação do sistema renina-angiotensina-aldosterona, não secundariamente ao sequestro hídrico do edema traumático.</p><p><strong>Alternativa C:</strong> Contém dados imprecisos. A elevação do hormônio antidiurético (ADH) varia individualmente e não segue padrão fixo de 'até o 4° ou 5° dia pós-operatório'.</p><p><strong>Alternativa D:</strong> Apresenta contradição conceitual. O cortisol tem efeito CATABÓLICO (não anabólico), promovendo estimulação da proteólise e síntese de glicose, não síntese proteica.</p><p><strong>Alternativa E:</strong> Contém inconsistência. O TSH pode estar elevado, diminuído ou normal na resposta ao trauma, não havendo padrão consistente de elevação.</p><p><strong>Conclusão:</strong> Por apresentar múltiplas incorreções técnicas nas alternativas e ausência de uma opção claramente correta, a banca optou pela anulação desta questão para garantir a precisão e validade do exame.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaMetabolica",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaInflamatoria",
+        "Cirurgia_RespostaEndocrinometabolicainf",
+        "Cirurgia_RespostaEndocrinometabolicainf_RespostaNeuroendocrina"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Sobre as hérnias da parede abdominal, NÃO se pode afirmar:",
+      "alternativas": [
+        "Uma hérnia que contenha um divertículo de Meckel é chamada de hérnia de Littré.",
+        "A hérnia de Richter apresenta-se quando a borda anti-mesentérica do seguimento intestinal é encarcerada e estrangulada no orifício herniário.",
+        "A hérnia de Amyand é definida como a presença do apêndice cecal dentro do saco herniário em uma hérnia inguinal. Quando temos o achado de apêndice cecal no interior de um saco herniário de uma hérnia femoral, a definimos como hérnia de Garengeot.",
+        "As hérnias da linha semilunar, também chamadas de hérnias de Spiegel, tem o seu desenvolvimento relacionado a vários fatores, dentre os quais pode-se destacar: congênitos, doenças do colágeno, obesidade, gestações múltiplas, rápida perda ponderal e trauma",
+        "As hérnias lombares congênitas são mais comuns que as adquiridas. Quando ocorrem no triângulo lombar superior recebem a nomenclatura de hérnia de Grynfelt, e quando estão presentes no triângulo lombar inferior, são chamadas de hérnia de Petit."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre as diferentes classificações de hérnias da parede abdominal, incluindo suas nomenclaturas específicas e características epidemiológicas. É uma questão clássica que testa conhecimento detalhado de cirurgia geral.</p><p><strong>A resposta correta é E - As hérnias lombares congênitas são mais comuns que as adquiridas.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> A hérnia de Littré é corretamente definida como aquela que contém divertículo de Meckel, nomeada em homenagem ao anatomista francés Alexis Littré que descreveu este achado.</p><p><strong>B) CORRETA:</strong> A descrição da hérnia de Richter está correta - caracteriza-se pelo encarceramento da borda anti-mesentérica do intestino, podendo evoluir para estrangulação sem oclusão completa.</p><p><strong>C) CORRETA:</strong> As definições de Amyand e Garengeot estão corretas. Amyand descreveu o apêndice em hérnia inguinal, e Garengeot posteriormente descreveu o mesmo achado em hérnia femoral.</p><p><strong>D) CORRETA:</strong> As hérnias de Spiegel (linha semilunar) são corretamente associadas aos fatores citados, incluindo predisposição congênita, doenças do colágeno, condições que aumentam pressão abdominal e fatores pós-operatórios.</p><p><strong>E) INCORRETA:</strong> Esta é a alternativa incorreta. Na verdade, as hérnias lombares ADQUIRIDAS são mais comuns que as congênitas. As hérnias de Grynfelt (triângulo superior) e Petit (triângulo inferior) são predominantemente adquiridas, associadas a envelhecimento, fraqueza muscular e fatores predisponentes.</p><p><strong>Conclusão:</strong> A alternativa E contém informação epidemiológica incorreta. As hérnias lombares são mais frequentemente adquiridas do que congênitas, sendo as de Grynfelt e Petit os tipos mais comuns. As demais alternativas apresentam informações precisas sobre as classificações herniárias estudadas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Do ponto de vista da manutenção da resistência tênsil, o fio abaixo que é mais adequado à síntese de aponeurose é:",
+      "alternativas": [
+        "Catgut simples.",
+        "Catgut cromado.",
+        "Algodão.",
+        "Vicryl.",
+        "Prolene."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia o conhecimento sobre materiais de sutura e suas características específicas para diferentes tipos de tecidos.</p><p>O tema central é a resistência tênsil dos fios de sutura, especialmente para aponeuroses, que são estruturas que requerem fechamento duradouro devido à tensão constante que sofrem durante a cicatrização.</p><p><strong>A resposta correta é a alternativa E - Prolene.</strong></p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A - Catgut simples:</strong> Este fio é reabsorvível e mantido por aproximadamente 7-10 dias. Sua principal desvantagem é a perda rápida da resistência tênsil, o que o torna inadequado para aponeuroses que necessitam de suporte prolongado.</p><p><strong>Alternativa B - Catgut cromado:</strong> Embora tenha maior resistência que o simples (aproximadamente 14-21 dias), ainda é um fio reabsorvível e perde força tênsil mais rapidamente que os não reabsorvíveis.</p><p><strong>Alternativa C - Algodão:</strong> Este é um fio natural não reabsorvível, porém com baixa resistência tênsil e alta capilaridade, o que aumenta o risco de infecção. Não é ideal para síntese de aponeuroses.</p><p><strong>Alternativa D - Vicryl:</strong> É um fio sintético reabsorvível, com resistência tênsil mantida por 3-4 semanas. Embora seja melhor que os catguts, ainda é reabsorvido pelo organismo, o que pode ser uma limitação para síntese de aponeuroses.</p><p><strong>Alternativa E - Prolene:</strong> É um fio sintético não reabsorvível que mantém sua resistência tênsil indefinidamente. Sua composição de polipropileno proporciona excelente biocompatibilidade e resistência à tração, sendo considerado padrão ouro para síntese de aponeuroses.</p><p>Clinicamente, a síntese de aponeuroses requer material não reabsorvível com alta resistência tênsil para garantir a integridade da parede abdominal durante toda a fase de cicatrização. O Prolene cumpre esses critérios perfeitamente.</p><p><strong>Veredito: Alternativa E - Prolene é a resposta correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_FiosDeSutura",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_TiposDeSuturaESuasPrincipaisCa"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Dentre as lesões benignas do fígado, a mais frequente é:",
+      "alternativas": [
+        "Esclerose nodular.",
+        "Hemangioma.",
+        "Adenoma.",
+        "Harmatoma.",
+        "Angiofibroma."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre a frequência relativa das lesões benignas hepáticas, conhecimento fundamental em cirurgia geral e radiologia.</p><p>O questionamento busca testar a conhecimento epidemiológico básico das patologias hepáticas benignas mais comuns encontradas na prática clínica.</p><p><strong>A resposta correta é a alternativa B - Hemangioma.</strong></p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A - Esclerose nodular:</strong> Esta denominação não corresponde a uma entidade clínica reconhecida. A esclerose sistêmica pode acometer o fígado, mas não é considerada uma lesão primária benigna frequente.</p><p><strong>Alternativa B - Hemangioma:</strong> É a lesão benigna mais comum do fígado, com prevalência estimada entre 0,5% a 7% da população. Na maioria das vezes é assintomática e descoberta incidentalmente em exames de imagem. O hemangioma hepático é uma proliferação vascular benigna que raramente requer tratamento.</p><p><strong>Alternativa C - Adenoma:</strong> É uma lesão benigna do fígado, porém muito menos frequente que o hemangioma. É mais comum em mulheres em idade fértil, especialmente usuárias de anticoncepcionais orais. A prevalência é estimada em cerca de 1 a 4 por 100.000 mulheres.</p><p><strong>Alternativa D - Harmatoma:</strong> É uma lesão congênita benigna muito rara do fígado, representando menos de 1% das lesões benignas hepáticas. Consiste em uma malformação displásica contendo elementos maturados dos três folhetos embrionários.</p><p><strong>Alternativa E - Angiofibroma:</strong> Esta lesão não é típica do parênquima hepático. O angiofibroma é mais comum em regiões como fossa nasais ou em contexto de esclerose tuberosa, mas não representa uma das principais lesões benignas hepáticas.</p><p>Na prática clínica, quando encontramos uma lesão hepática incidental, a possibilidade de hemangioma é sempre a primeira hipótese a ser considerada, especialmente em mulheres de meia-idade.</p><p><strong>Veredito: Alternativa B - Hemangioma é a resposta correta.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosBenignos",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Nos traumatismos faciais, a região óssea que é MENOS frequentemente atingida é:",
+      "alternativas": [
+        "Osso nasal.",
+        "Mandíbula.",
+        "Maxila.",
+        "Zigoma.",
+        "Frontal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia o conhecimento sobre a epidemiologia dos traumatismos faciais, tema relevante em cirurgia bucomaxilofacial e medicina de emergência.</p><p>O questionamento busca testar a compreensão sobre as áreas mais vulneráveis em traumatismos faciais, baseando-se em dados epidemiológicos e na anatomia da face.</p><p><strong>A resposta correta é a alternativa E - Frontal.</strong></p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A - Osso nasal:</strong> É uma das estruturas mais frequentemente lesadas em traumatismos faciais devido à sua protrusão e posição central. Representa cerca de 40% das fraturas faciais isoladas, sendo a mais comum.</p><p><strong>Alternativa B - Mandíbula:</strong> É o segundo osso facial mais frequentemente fraturado devido à sua mobilidade e posição anterior. Representa aproximadamente 20-30% das fraturas faciais.</p><p><strong>Alternativa C - Maxila:</strong> Frequentemente acometida em traumatismos, especialmente nas fraturas de Le Fort. Representa cerca de 10-15% das fraturas faciais.</p><p><strong>Alternativa D - Zigoma:</strong> Também é uma região frequentemente lesada, representando cerca de 10-15% das fraturas faciais. Sua forma prominente o torna vulnerável aos impactos.</p><p><strong>Alternativa E - Frontal:</strong> É a região óssea menos frequentemente atingida devido a vários fatores: está posicionada superiormente, é protegida pela testa proeminente, e é naturalmente mais resistente devido à sua curvatura. Além disso, a região frontal raramente é o ponto primário de impacto em quedas ou agressões, sendo normalmente atingida apenas em traumatismos de alta energia como acidentes automobilísticos de alta velocidade.</p><p>Clinicamente, quando avaliamos um paciente com traumatismo facial, os achados mais comuns incluem fraturas de osso nasal, seguidas de fraturas mandibulares e maxilares. As fraturas de osso frontal são as menos frequentes.</p><p><strong>Veredito: Alternativa E - Frontal é a resposta correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaDeFace"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Uma mulher de 50 kg é queimada em um incêndio em casa e sofre 60% de superfície corporal queimada (SCQ), queimaduras de espessura parcial e total. O seu plano inicial de administração de fluidos é:",
+      "alternativas": [
+        "Bolus de 1000 mL de solução de ringer lactato (LR) e depois 750 mL / h.",
+        "Dextrose a 5% (D5) / LR a 600 mL / h, com controle do débito urinário > 0,5 mL / kg /h.",
+        "Bolus LR de 500 mL, repetido conforme necessário para pressão venosa (CVP) até pelo menos 10cm H2O; manter hidratação com cristalóides 375 mL / h.",
+        "LR a 750 mL / h durante 8 horas e depois a 375 mL / h para após 16 horas.",
+        "LR a 900 mL / h durante 8 horas e depois 500 mL / h durante 16 horas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre reanimação volêmica em pacientes queimados, competência fundamental em medicina de emergência e cirurgia plástica.</p><p>O questionamento busca testar a aplicação prática da Fórmula de Parkland na reposição de fluidos para pacientes com grandes queimaduras, considerando o peso corporal e a superfície corporal queimada.</p><p><strong>A resposta correta é a alternativa D.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A:</strong> Propõe bolus inicial de 1000 mL de Ringer Lactato (RL) seguido de 750 mL/h. Este volume inicial é adequado (4 mL/kg), mas a manutenção em 750 mL/h é excessiva e não segue o protocolo estabelecido da Fórmula de Parkland.</p><p><strong>Alternativa B:</strong> Propõe dextrose 5% em RL a 600 mL/h. A dextrose em grandes queimados não é indicada na fase aguda por poder causar hiperglicemia. Além disso, o volume proposto é inadequado.</p><p><strong>Alternativa C:</strong> Propõe bolus de RL de 500 mL, repetido conforme necessidade para CVP ≥ 10 cmH2O, seguido de 375 mL/h. O uso de CVP como único parâmetro para reanimação em queimados é inadequado, e o volume não segue a Fórmula de Parkland.</p><p><strong>Alternativa D:</strong> Propõe RL a 750 mL/h durante 8 horas e depois 375 mL/h até 16 horas. Para uma paciente de 50 kg com 60% de SCQ, a reposição de Parkland seria 4 mL × 50 kg × 60% = 12.000 mL nas primeiras 24 horas. A primeira metade (6000 mL) em 8 horas = 750 mL/h, e a segunda metade (6000 mL) em 16 horas = 375 mL/h. Esta é a aplicação correta da Fórmula de Parkland.</p><p><strong>Alternativa E:</strong> Propõe RL a 900 mL/h nas primeiras 8 horas e depois 500 mL/h. O volume inicial seria excessivo (7200 mL em 8 horas), podendo causar sobrecarga hídrica.</p><p>Clinicamente, a reanimação volêmica em grandes queimados é um processo complexo que requer monitorização rigorosa de sinais vitais, débito urinário, e ajuste de fluidos conforme resposta clínica do paciente. A Fórmula de Parkland serve como guia inicial, mas deve ser individualizada.</p><p><strong>Veredito: Alternativa D é a resposta correta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_AtendimentoInicialAsVitimasDeQ",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_RespostaMetabolicaDeQueimadura"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Sobre anatomia da região cervical, marque a opção INCORRETA.",
+      "alternativas": [
+        "A região cervical corresponde a uma área de transição entre a base do crânio, no limite superior, e a clavícula, inferiormente.",
+        "A Zona I, transição cervicotoracica, tem como limite superior a margem inferior da cartilagem cricóide.",
+        "A Zona II representa a área de maior complexidade anatômica devido ao arcabouço ósseo que protege as estruturas nervosas e vasculares que por ela atravessam.",
+        "A Zona III é limitada pela margem inferior do corpo e ângulo da mandíbula e a base do crânio.",
+        "A fáscia pré-traqueal é uma fina lâmina de tecido conjuntivo que desce do osso hióide em direção ao tórax fixando-se no pericárdio fibroso."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia o conhecimento sobre anatomia topográfica da região cervical, tema fundamental para várias especialidades cirúrgicas.</p><p>O questionamento busca testar a precisão do conhecimento anatômico sobre as regiões e zonas do pescoço, sendo uma questão típica de anatomia em provas de Residência Médica.</p><p><strong>A resposta incorreta é a alternativa B.</strong></p><p>Vamos analisar cada opção:</p><p><strong>Alternativa A:</strong> Correta. A região cervical corresponde à área de transição entre a base do crânio (superiormente) e a clavícula (inferiormente), delimitando adequadamente a região anatômica do pescoço.</p><p><strong>Alternativa B:</strong> INCORRETA. A Zona I cervicotorácica tem como limite superior a margem inferior da cartilagem cricóide, não inferior. Esta alternativa inverte incorretamente os limites anatômicos.</p><p><strong>Alternativa C:</strong> Correta. A Zona II é realmente a área de maior complexidade anatômica do pescoço, protegida pelo arcabouço ósseo da face e base do crânio, contendo estruturas vitais como carótida, jugular, esôfago e traqueia.</p><p><strong>Alternativa D:</strong> Correta. A Zona III é limitada inferiormente pela margem inferior do corpo e ângulo da mandíbula, e superiormente pela base do crânio, correspondendo à região alta do pescoço.</p><p><strong>Alternativa E:</strong> Correta. A fáscia pré-traqueal é realmente uma fina lâmina de tecido conjuntivo que se origina do osso hióide e desce em direção ao tórax, fixando-se no pericárdio fibroso.</p><p>A questão exige conhecimento detalhado da anatomia cervical, especialmente das zonas cervicais que são fundamentais para a abordagem de traumatismos do pescoço e cirurgias nessa região. A classificação em zonas anatômicas tem implicações importantes para diagnóstico e tratamento.</p><p><strong>Veredito: Alternativa B é a resposta incorreta.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaCervical",
+        "Cirurgia_CirurgiaDeCabecaEPescoco",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_InstrumentalCirurgico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Segundo o Código de ética, assinale a opção CORRETA.",
+      "alternativas": [
+        "A Medicina, em determinadas circunstâncias, pode ser exercida como comércio.",
+        "É vedado ao médico internar e assistir seus pacientes em hospitais privados com caráter filantrópico ou não, caso não faça parte dos seus corpos clínicos.",
+        "É vedado ao médico deixar de garantir ao paciente o exercício do direito de decidir livremente sobre sua pessoa ou seu bem-estar.",
+        "O trabalho do médico pode ser explorado por terceiros com objetivos de lucro, finalidade política ou religiosa.",
+        "É vedado ao médico apontar falhas em normas, contratos e práticas internas das instituições em que trabalhe a fim de não prejudicar o exercício da profissão."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia seu conhecimento sobre os princípios fundamentais do Código de Ética Médica, especificamente sobre os direitos do paciente e limites éticos na prática médica.</p><p>A alternativa CORRETA é a letra C: \"É vedado ao médico deixar de garantir ao paciente o exercício do direito de decidir livremente sobre sua pessoa ou seu bem-estar.\"</p><p>Vamos analisar cada alternativa:</p><p>A) INCORRETA. Segundo o Código de Ética Médica (Resolução CFM nº 2.217/2018), a medicina é uma profissão de intervenção na vida humana, vedado o exercício como comércio. O médico não pode explorar a necessidade alheia para obter vantagens econômicas ilícitas.</p><p>B) INCORRETA. O Código de Ética permite ao médico internar e assistir seus pacientes em hospitais privados (filantrópicos ou não), desde que seja qualificado para tal procedimento e não pratique atos cirúrgicos fora de sua especialidade ou área de atuação.</p><p>C) CORRETA. Esta é uma das bases fundamentais do Código de Ética Médica - o princípio da autonomia do paciente. O médico deve sempre respeitar a decisão do paciente, fornecendo informações claras sobre diagnósticos, prognósticos e tratamentos propostos.</p><p>D) INCORRETA. É vedada a exploração do trabalho médico por terceiros com objetivos de lucro, finalidade política ou religiosa. O trabalho do médico deve ser exercido com autonomia técnica e científica.</p><p>E) INCORRETA. O médico tem o dever de apontar falhas em normas, contratos e práticas internas das instituições onde trabalha quando estas prejudicarem o exercício da medicina ou a qualidade do atendimento ao paciente.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Seu Vasco, 82 anos, dor abdominal em FIE há 5 dias, seguido de febre e redução do trânsito intestinal. Encontra-se eupneíco e estável. À palpação abdominal apresenta dor e rigidez em FIE. Tomografia Abdominal mostra vários divertículos em cólon sigmoide, borramento da gordura perisigmoidiana e coleção local de 2,6cm. A classificação tomográfica de Hinchey modificada desse paciente é:",
+      "alternativas": [
+        "Ia.",
+        "Ib.",
+        "II.",
+        "III.",
+        "IV."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão exige conhecimento específico sobre a classificação tomográfica modificada de Hinchey para diverticulite complicada, competência fundamental em cirurgia geral e coloproctologia.</p><p>A alternativa CORRETA é a letra B: Ib</p><p>Para entender melhor a classificação de Hinchey modificada, vamos revisar as categorias:</p><p><strong>Classificação de Hinchey Modificada:</strong></p><p><strong>Estágio Ia:</strong> Pericolite com hiperemia e hipertrofia da parede intestinal</p><p><strong>Estágio Ib:</strong> Pericolite com coleção pericólica (< 5cm)</p><p><strong>Estágio II:</strong> Abscesso pélvico ou retroperitoneal (> 5cm)</p><p><strong>Estágio III:</strong> Peritonite purulenta generalizada (abscesso com ruptura)</p><p><strong>Estágio IV:</strong> Peritonite fecal generalizada</p><p>No caso apresentado, temos: coleção local de 2,6cm, borramento da gordura perisigmoidiana e diverticulite em cólon sigmoide. Este achado é clássico de <strong>abscesso pericólico limitado</strong>, característico do <strong>estágio Ib</strong>.</p><p>Analisando as alternativas:</p><p>A) Ia - INCORRETA. O estágio Ia seria apenas pericolite sem coleção purulenta</p><p>B) Ib - CORRETA. Coleção pericólica < 5cm confirma este estágio</p><p>C) II - INCORRETA. Seria para coleção > 5cm (abscesso pélvico)</p><p>D) III - INCORRETA. Peritonite purulenta - mais grave que coleção limitada</p><p>E) IV - INCORRETA. Peritonite fecal - o caso mais grave</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Sobre o paciente da questão anterior, o tratamento mais adequado é:",
+      "alternativas": [
+        "Colostomia e antibioticoterapia.",
+        "Drenagem por laparotomia e ressecção do segmento do sigmoide comprometido.",
+        "Drenagem percutânea guiada por US.",
+        "Drenagem por laparotomia.",
+        "Antibioticoterapia associada à dieta zero e hidratação parenteral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia a conduta terapêutica adequada para diverticulite complicada classificada como Hinchey Ib, exigindo conhecimento sobre diretrizes de tratamento baseadas em evidências científicas.</p><p>A alternativa CORRETA é a letra E: Antibioticoterapia associada à dieta zero e hidratação parenteral</p><p>No caso apresentado (Hinchey Ib - abscesso pericólico < 5cm), o tratamento é predominantemente clínico, com antibiotics sistêmicos. Vamos analisar cada alternativa:</p><p>A) INCORRETA. Colostomia e antibioticoterapia são indicadas em estágios mais avançados (Hinchey III-IV) ou em casos de peritonite difusa.</p><p>B) INCORRETA. Drenagem por laparotomia com ressecção do segmento é tratamento cirúrgico indicado em casos de falência do tratamento clínico ou em estágios mais avançados (Hinchey III-IV).</p><p>C) INCORRETA. Drenagem percutânea guiada por US é reservada para abscessos > 5cm (Hinchey II) ou quando há falha do tratamento clínico.</p><p>D) INCORRETA. Drenagem por laparotomia isolada não resolve o processo inflamatório na base; seria indicada apenas como procedimento de emergência em casos de peritonite difusa.</p><p>E) CORRETA. O tratamento de escolha para Hinchey Ib é: antibioticoterapia (ampicilina + gentamicina + metronidazol ou piperacilina-tazobactam), dieta zero e hidratação parenteral. Em casos de melhora clínica, pode-seprogredir dieta e manter antibiotics por 7-14 dias.</p><p><strong>Conduta baseadas em diretrizes:</strong> Segundo o American College of Gastroenterology (2020), para abscessos < 5cm, o tratamento clínico com antibiotics é preferível à intervenção invasiva.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Sobre a colecistite aguda, a única assertiva que traz informação FALSA é:",
+      "alternativas": [
+        "A obstrução do ducto cístico pela impactação eventual de um cálculo causa colecistite aguda.",
+        "Sintomas de dor abdominal com sinal de Murphy positivo, elevações moderadas nos níveis de fosfatase alcalina, bilirrubinas e transaminases, e leucocitose confirmam o diagnóstico de colecistite aguda.",
+        "São sinais ultrassonográficos de colecistite aguda litiásica a identificação do cálculo, líquido pericolecístico, espessamento da parede da vesícula e sinal de Murphy ultrassonográfico.",
+        "A colecistectomia parcial, cortando a vesícula transversalmente no infundíbulo com cauterização da mucosa remanescente (técnica de Thorek) não é aceitável devendo se retirar toda vesícula biliar.",
+        "Alguns pacientes que apresentam colecistite aguda, mas têm risco cirúrgico proibitivo, a drenagem percutânea da vesícula biliar deve ser considerada."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimentos específicos sobre colecistite aguda, exigindo capacidade de identificar informações falsas em alternativas aparentemente corretas - um tipo de questão comum em provas de Residência Médica.</p><p>A alternativa FALSA é a letra D</p><p>Vamos analisar cada alternativa detalhadamente:</p><p>A) CORRETA. A obstrução do ducto cístico por cálculo é a principal causa de colecistite aguda litiásica, occurring em 90-95% dos casos. A impactação do cálculo causa retenção biliar, inflamação e proliferação bacteriana.</p><p>B) CORRETA. A tríade clínica de dor abdominal em hipocôndrio direito + sinal de Murphy positivo + laboratorial (elevação de FA, bilirrubinas e transaminases) + leucocitose é bastante específica para colecistite aguda. Fosfatase alcalina pode estar discretamente elevada devido à inflamação do septo interlobular.</p><p>C) CORRETA. Os achados ultrassonográficos são patognomônicos: cálculo impactado, líquido pericolecístico (sinal de peritonite local), espessamento da parede vesicular (> 3mm) e sinal de Murphy ultrassonográfico (dor à compressão do transdutor sobre a vesícula).</p><p>D) <strong>FALSA</strong>. A colecistectomia parcial de Thorek (seccionando a vesícula transversalmente no infundíbulo) é SIM aceitável em situações especiais como: inflamação severa com aderências intensas, cirrose com hipertensão portal, ou condições técnicas que impossibilitem a colecistectomia total. É uma técnica reconhecidamente válida e atualmente recomendada em casos selecionados.</p><p>E) CORRETA. Em pacientes de alto risco cirúrgico (ASA III-IV), a drenagem percutânea (colecistostomia) é procedimento seguro e eficaz, sendo ponte para colecistectomia electiva quando o quadro clínico permitir.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColecistiteAguda",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_OsInibidoresDaBombaDeProtonsIb"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Sobre o tratamento do volvo do sigmoide, pode-se afirmar:",
+      "alternativas": [
+        "Começa com hidratação venosa e na maioria dos casos envolve uma remoção cirúrgica do sigmoide.",
+        "Os pacientes com sinais de necrose colônica são elegíveis para uma descompressão não operatória.",
+        "A descompressão pode ser obtida pela colocação de um tubo retal por meio de um proctoscópio rígido, devendo-se evitar o uso de sigmoidoscópio flexível.",
+        "Mesmo que a distorção não cirúrgica do sigmoide seja bem-sucedida, a ressecção cirúrgica do sigmoide é indicada, na maioria dos casos, não sendo necessária a realização de colonoscopia pré-operatória.",
+        "Se a descompressão não operatória não puder ser realizada a abordagem cirúrgica está indicada podendo ser realizada a cirurgia de Hartmann."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda o tratamento do volvo do sigmoide, uma emergência abdominal grave que exige conhecimento sobre os princípios de manejo inicial e critérios para abordagem cirúrgica ou conservadora.</p><p>A alternativa CORRETA é a letra E</p><p>Vamos analisar sistematicamente cada alternativa:</p><p>A) INCORRETA. Embora a hidratação venosa seja parte fundamental do tratamento, a remoção cirúrgica do sigmoide NÃO é necessária na maioria dos casos. A descompressão não operatória é bem-sucedida em 70-90% dos casos quando realizada adequadamente.</p><p>B) INCORRETA. Pacientes com sinais de necrose colônica PRECISAM de intervenção cirúrgica urgente. A descompressão não operatória está contra-indicada neste cenário, pois o risco de perfuração é elevado.</p><p>C) INCORRETA. A técnica recomendada é usar o sigmoidoscópio flexível, que permite melhor visualização e posicionamento do tubo. O proctoscópio rígido tem limitações anatômicas e não достигu navegação adequada até o sigmoide.</p><p>D) INCORRETA. A colonoscopia pré-operatória é FUNDAMENTAL para avaliar mucosa, estadiamento de malignidade e planejar a ressecção. Apenas a descompressão bem-sucedida sem ressecção é inadequada para prevenção de recidivas.</p><p>E) CORRETA. Esta é a conduta mais adequada: quando a descompressão não operatória falha, a abordagem cirúrgica está indicada. A cirurgia de Hartmann (ressecção com colostomia terminal e fechamento do coto retal) é uma das técnicas cirúrgicas possíveis, indicada em casos de intestino não viável ou condições clínicas instáveis do paciente.</p><p><strong>Princípios de tratamento:</strong> Iniciar sempre com descompressão não operatória; se falhar ou houver sinais de complicação, proceder à intervenção cirúrgica de emergência.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoObstrutivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Em uma gastrectomia videolaparoscópica por provável GIST, a melhor opção de material para fazer parte do arsenal solicitado pelo cirurgião é:",
+      "alternativas": [
+        "Pinça laparoscópica bipolar, tesoura seladora, trocarte de 11mm, grampeador circular número 28.",
+        "Dispositivo de ressecção bipolar por radiofrequência, trocarte de 12mm e grampeador laparoscópico.",
+        "Grampeador laparoscópico, cargas com poder de penetração variado, trocarte de12mm e tesoura seladora.",
+        "Tesoura seladora, trocarte de 11mm e sistema de ligadura de polímero.",
+        "Pinça laparoscópica monopolar, grampeador linear e pinça Maryland."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre instrumentação cirúrgica videolaparoscópica para gastrectomia por GIST (tumor estromal gastrointestinal).</p><p><strong>A resposta correta é C - Grampeador laparoscópico, cargas com poder de penetração variado, trocarte de 12mm e tesoura seladora.</strong></p><p>Para gastrectomia videolaparoscópica, o grampeador laparoscópico é fundamental para transectar o estômago e criar anastomoses. As cargas com poder de penetração variado são essenciais para adaptar a espessura tecidual do estômago. O trocarte de 12mm é necessário para acomodar os grampeadores. A tesoura seladora permite dissecção e controle vascular com hemostasia adequada.</p><p><strong>Por que as outras alternativas estão erradas:</strong></p><p>A) A pinça bipolar não é essencial para gastrectomia, e o grampeador circular número 28 é específico para anastomoses intestinais, não para gastrectomia.</p><p>B) A alternativa B inclui dispositivo de radiofrequência, que é menos preciso que o grampeador laparoscópico para este procedimento.</p><p>D) O sistema de ligadura de polímero não é adequado para a transecção gástrica, sendo mais usado em estruturas tubulares menores.</p><p>E) A pinça monopolar gera máscula de fumaça e não oferece a precisão necessária, enquanto a pinça Maryland é específica para dissecção delicada, não para transecção.</p><p><strong>Veredito:</strong> A alternativa C apresenta a combinação mais adequada de instrumentação para gastrectomia videolaparoscópica por GIST, sendo esta a resposta que a banca considera correta.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ConceitosBasicosEComplicacoesE",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_InstrumentalCirurgico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Mais de 50 tipos de reparos de prolapso retal são descritos na literatura. A maior parte hoje em dia só tem interesse histórico. Dentre as opções abaixo, a que NÃO corrigiria um prolapso retal é:",
+      "alternativas": [
+        "Reparo de Ripstein.",
+        "Procedimento de Wells.",
+        "Procedimento de Frykman Goldeberg.",
+        "Procedimento de Altemeier.",
+        "Procedimento de Bascom."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFPI 2020 testa seu conhecimento sobre técnicas cirúrgicas para correção de prolapso retal, especificamente identificando qual procedimento NÃO seria adequado para esta correção.</p><p><strong>A resposta correta é E - Procedimento de Bascom.</strong></p><p>O procedimento de Bascom é uma técnica utilizada para tratamento de fístulas perianais complexas, não para prolapso retal. É um reparo fistuloso que preserva o esfíncter, sendo específico para doença perianal inflamatória, não para correção de prolapso.</p><p><strong>Por que as outras alternativas são todas corretas para prolapso retal:</strong></p><p>A) Reparo de Ripstein: Técnica de suporte retal com mesh que é especificamente diseñada para corrigir prolapso retal mediante suspensão do reto à superfície sacral.</p><p>B) Procedimento de Wells: Técnica de colporretopexia abdominal que também é específica para correção de prolapso retal mediante sutura do reto ao sacro.</p><p>C) Procedimento de Frykman Goldberg: Técnica combinada que inclui retossigmoidectomia com pexia e é especificamente diseñada para prolapso retal em pacientes mais jovens.</p><p>D) Procedimento de Altemeier: Procedimento de ressecção perineal que é uma das técnicas mais utilizadas para correção de prolapso retal, especialmente em pacientes mais idosos ou de alto risco.</p><p><strong>Veredito:</strong> O procedimento de Bascom (E) é o único da lista que não se destina à correção de prolapso retal, sendo específico para fístulas perianais complexas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_PoliposDaVesiculaBiliar"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "A melhor opção para o tratamento de um empiema pleural seria:",
+      "alternativas": [
+        "Na fase aguda e fibrinopurulenta precoce, a toracocentese poderá ser diagnóstica, mas não terapêutica.",
+        "Toracostomia fechada em selo d ´água com dreno número 28 no empiema organizado.",
+        "Drenagem do empiema loculado por VATS (Video-assisted thoracoscopic surgery).",
+        "Toracostomia aberta com a ressecção de costela para o empiema agudo e fibrinopurulento.",
+        "Toracocentese eco-guiada no empiema de necessidade."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPI 2020 aborda o tratamento adequado do empiema pleural conforme os estágios da doença e a necessidade de drenagem efetiva.</p><p><strong>A resposta correta é C - Drenagem do empiema loculado por VATS (Video-assisted thoracoscopic surgery).</strong></p><p>A VATS é atualmente considerada a melhor opção para empiemas loculados, pois permite drenagem completa sob visualização direta, ruptura de septos e lavado da cavidade pleural. É mais eficaz que a toracostomia fechada tradicional nos casos loculados.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>A) Na fase aguda fibrinopurulenta, a toracocentese é diagnóstica mas não terapêutica - isso está correto, mas não responde à questão sobre o melhor tratamento.</p><p>B) A toracostomia fechada em selo d'água é adequada para empiemas não-loculados, mas não para empiemas loculados onde os septos impedem a drenagem efetiva.</p><p>D) A toracostomia abierta com ressecção de costela é reservada para casos de empiema crônico organizado quando a VATS falha, não para o empiema agudo fibrinopurulento.</p><p>E) A toracocentese eco-guiada pode ser útil para pequenas coleções, mas não para empiemas que necessitam drenagem completa e robusta.</p><p><strong>Veredito:</strong> A VATS (C) representa a abordagem mais moderna e eficaz para empiemas loculados, sendo esta a resposta correta segundo a banca UFPI.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Seriam vantagens da cirurgia robótica em relação a cirurgia laparoscópicas todas as opções abaixo, EXCETO:",
+      "alternativas": [
+        "Substituição da visão tridimensional normal da cirurgia laparoscópica por uma visão bidimensional do campo demonstrado em um monitor;",
+        "O cirurgião controla uma plataforma de câmara óptica estável, eliminando a dependência de um assistente de câmera;",
+        "O computador elimina o tremor das mãos e o movimento do equipamento é programável;",
+        "O console permite uma posição mais ergonômica para o cirurgião;",
+        "As pinças robóticas possuem articulações próximas à ponta que aumentam os graus de liberdade para atuar de modo mais próximo ao de uma mão humana;"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre as vantagens e limitações da cirurgia robótica em comparação com a cirurgia laparoscópica, especificamente identificando qual afirmação NÃO representa uma vantagem.</p><p><strong>A resposta correta é A - Substituição da visão tridimensional normal da cirurgia laparoscópica por uma visão bidimensional do campo demonstrado em um monitor.</strong></p><p>Esta alternativa descreve uma LIMITACAO, não uma vantagem. A perda da visão tridimensional real é uma desvantagem significativa do sistema robótico, que exige compensação através da visualização aprimorada do campo em 2D, mas nunca se compara à profundidade real da visão laparoscópica tridimensional.</p><p><strong>Por que as outras alternativas são vantagens reais:</strong></p><p>B) O controle direto da câmera pelo cirurgião elimina a dependência do assistente e proporciona visualização mais estável e precisa.</p><p>C) A eliminação do tremor fisiológico e a possibilidade de programação de movimentos são vantagens técnicas importantes da robótica.</p><p>D) A posição ergonômica do console reduz fadiga cirúrgica e permite procedimentos mais longos com maior conforto.</p><p>E) A maior Degrees of Freedom das pinças robóticas permite movimentos mais precisos e adaptáveis que os instrumentos laparoscópicos tradicionais.</p><p><strong>Veredito:</strong> A alternativa A é a única que descreve uma limitação técnica, sendo esta a escolha correta para a questão que busca identificar o que NÃO é uma vantagem.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ConceitosBasicosEComplicacoesE",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Para os tumores benignos do esôfago, o tratamento de eleição para um pólipo esofageano pediculado cervical é:",
+      "alternativas": [
+        "Polipectomia endoscópica.",
+        "Cervicotomia com esofagectomia.",
+        "Cervicotomia com esofagectomia e esvaziamento linfonodal cervical.",
+        "Toracoscopia por videoendoscopia.",
+        "Toracotomia com esofagectomia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre o tratamento apropriado para pólipos esofágicos benignos pediculados em localização cervical.</p><p><strong>A resposta correta é A - Polipectomia endoscópica.</strong></p><p>Para pólipos esofágicos pediculados cervicais benignos, a polipectomia endoscópica é o tratamento de escolha. É menos invasiva, permite ressecção completa com margens adequadas, pode ser realizada sem necessidade de cirurgia abierta e apresenta excelentes resultados com baixo índice de complicações.</p><p><strong>Por que as outras alternativas são excessivas ou inapropriadas:</strong></p><p>B) A cervicotomia com esofagectomia é um procedimento muito radical para um pólipo benigno, envolvendo ressecção de todo o esôfago cervical desnecessariamente.</p><p>C) O esvaziamento linfonodal cervical é completamente desnecessário para pólipos benignos, que não metastizam e não requerem tratamento oncológico.</p><p>D) A toracoscopia não é adequada para pólipos cervicais, pois atingiria a porção torácica do esôfago, não a cervical.</p><p>E) A toracotomia com esofagectomia é ainda mais radical que a cervicotomia, sendo completamente desproporcional para o tratamento de um pólipo benigno pediculado.</p><p><strong>Veredito:</strong> A polipectomia endoscópica (A) representa o tratamento mais adequado, menos invasivo e com melhor relação custo-benefício para pólipos esofágicos benignos pediculados cervicais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaDeCabecaEPescoco",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_IngestaoDeCorpoEstranho"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Dos diagnósticos abaixo, NÃO é causa de Abdome Agudo Perfurativo com sítio etiológico o intestino delgado:",
+      "alternativas": [
+        "Síndrome de Boerhaave.",
+        "Tuberculose Intestinal.",
+        "Doença de Cronh.",
+        "Febre Tifóide.",
+        "Diverticulite de Meckel."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre as diferentes etiologias do abdome agudo perfurativo, especificamente aquelas com sítio no intestino delgado.</p><p><strong>A resposta correta é A - Síndrome de Boerhaave.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Síndrome de Boerhaave:</strong> Esta é a resposta correta porque a Síndrome de Boerhaave corresponde à perfuração espontânea do esôfago, geralmente na porção distal, não no intestino delgado. É causada por aumento súbito da pressão intraluminal esofagiana, frequentemente associada a vômitos intensos. Portanto, NÃO é causa de abdome agudo perfurativo com sítio etiológico no intestino delgado.</p><p><strong>B) Tuberculose Intestinal:</strong> Pode causar perfuração intestinal através da formação de úlceras tuberculosas que evoluem para perfuração, especialmente no íleo terminal. É uma causa válida de abdome agudo perfurativo do intestino delgado.</p><p><strong>C) Doença de Crohn:</strong> Frequentemente causa perfurações intestinais através de úlceras transmurais que evoluem para perfuração espontânea, sendo mais comum no íleo terminal. É uma causa reconhecida de abdome agudo perfurativo do intestino delgado.</p><p><strong>D) Febre Tifóide:</strong> Pode causar perfuração intestinal através de ulcerações das placas de Peyer no íleo terminal, especialmente na 3ª semana da doença quando há necrose das lesões. É uma causa clássica de perfuração intestinal.</p><p><strong>E) Diverticulite de Meckel:</strong> O divertículo de Meckel pode inflamar e perfurar, causando abdome agudo perfurativo. É uma causa menos comum, mas válida, de perfuração do intestino delgado.</p><p>A chave desta questão está em reconhecer que a Síndrome de Boerhaave é uma emergência cirúrgica de origem esofagiana, não intestinal.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_OutrasCausasDeAbdomeAgudoPerfu"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "A lesão iatrogênica de via biliar é uma temida complicação da cirurgia de colecistectomia, promovendo em muitos casos comprometimento a qualidade de vida do paciente e altos custos aos serviços de saúde. Visando preveni-la, algumas estratégias são propostas na técnica de colecistectomia. Das estratégias citadas abaixo, fazem parte da visão crítica de segurança proposta por Strasberg: I. Triângulo hepatocístico livre de gorduras e tecido fibrótico; II. Dissecção fundo-cística da vesícula biliar do leito hepático; III. Duas e apenas duas estruturas adentrando na vesícula biliar; IV. Pelo menos um terço da vesícula biliar separada do fígado com exposição da placa cística; V. Identificação do sulco de Rouviere; VI. Identificação do linfonodo de Mascagni.",
+      "alternativas": [
+        "I, II e VI.",
+        "I, II e IV.",
+        "II, V e VI.",
+        "I, III e IV.",
+        "Todas as estratégias citadas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFPI 2020 testa seu conhecimento sobre as estratégias de segurança na colecistectomia, especificamente as propostas na visão crítica de segurança de Strasberg para prevenção de lesões iatrogênicas das vias biliares.</p><p><strong>A resposta correta é D - I, III e IV.</strong></p><p>Vamos analisar quais estratégias realmente pertencem à classificação de Strasberg:</p><p><strong>I. Triângulo hepatocístico livre de gorduras e tecido fibrótico:</strong> CORRETO - Esta é uma das principais estratégias de Strasberg. O triângulo hepatocístico (entre ducto cístico, ducto hepático comum e margem inferior do fígado) deve estar livre de gorduras e tecido fibroso para adequada visualização das estruturas.</p><p><strong>II. Dissecção fundo-cística da vesícula biliar do leito hepático:</strong> INCORRETO - Esta não faz parte da classificação de Strasberg. A dissecção fundo-cística é uma técnica cirúrgica clássica, mas não está entre os critérios específicos de segurança propostos por Strasberg.</p><p><strong>III. Duas e apenas duas estruturas adentrando na vesícula biliar:</strong> CORRETO - Esta é uma estratégia fundamental de Strasberg. Normalmente, apenas o ducto cístico e a artéria cística penetram na vesícula biliar. A identificação de mais de duas estruturas deve alertar para possível variação anatômica ou erro de dissecção.</p><p><strong>IV. Pelo menos um terço da vesícula biliar separada do fígado com exposição da placa cística:</strong> CORRETO - Esta estratégia de Strasberg permite melhor visualização do plano de clivagem entre a vesícula e o leito hepático, reduzindo o risco de lesões hepáticas e melhorando a identificação do ducto cístico.</p><p><strong>V. Identificação do sulco de Rouviere:</strong> INCORRETO - O sulco de Rouviere é um marco anatômico importante (contém a veia porta direita), mas não faz parte especificamente da classificação de Strasberg.</p><p><strong>VI. Identificação do linfonodo de Mascagni:</strong> INCORRETO - O linfonodo de Mascagni é um marco anatômico (linfonodo cístico), mas não está listado entre as estratégias de segurança de Strasberg.</p><p>Portanto, apenas as estratégias I, III e IV fazem parte da visão crítica de segurança proposta por Strasberg.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_LesaoDaViaBiliar"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Sobre a doença diverticular dos cólons, é INCORRETO afirmar:",
+      "alternativas": [
+        "Colite isquêmica, câncer colorretal, apendangite epiplóica e doença inflamatória intestinal fazem parte do diagnóstico diferencial da diverticulite aguda.",
+        "A diverticulite não complicada pode ser tratada com antibioticoterapia via oral, sem a necessidade de internação hospitalar.",
+        "Abscesso pericólico, peritonite fecal, obstrução intestinal e fístulas com órgãos adjacentes podem fazer parte de uma evolução desfavorável de uma diverticulite aguda.",
+        "A tomografia de abdome é ferramenta importante para avaliação de gravidade da diverticulite aguda. O tratamento dos pacientes com doença em estágios II e III de Hinchey envolve obrigatoriamente resseção de seguimento colônico afetado e colostomia terminal",
+        "Mesalazina e probióticos podem ser usados como ferramentas na prevenção de novos episódios de diverticulite."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFPI 2020 aborda a doença diverticular dos cólons, avaliando seu conhecimento sobre diagnóstico, tratamento e complicações da diverticulite aguda.</p><p><strong>A resposta correta é D - Esta é a alternativa INCORRETA.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Diagnóstico diferencial da diverticulite aguda:</strong> CORRETO - Colite isquêmica, câncer colorretal, apendicite epiplóica e doença inflamatória intestinal fazem parte do diagnóstico diferencial da diverticulite aguda. A diverticulite pode simular essas condições, especialmente em casos de localização atípica ou apresentação atípica.</p><p><strong>B) Tratamento da diverticulite não complicada:</strong> CORRETO - Diverticulite não complicada (Hinchey I) pode ser tratada ambulatorialmente com antibioticoterapia oral, sem necessidade de internação hospitalar, desde que o paciente tenha condições clínicas adequadas e seja capaz de aderir ao tratamento.</p><p><strong>C) Complicações da diverticulite:</strong> CORRETO - Abscesso pericólico, peritonite fecal, obstrução intestinal e fístulas com órgãos adjacentes são complicações bem estabelecidas da diverticulite aguda e fazem parte de sua evolução desfavorável.</p><p><strong>D) Tomografia e classificação de Hinchey:</strong> INCORRETO - Embora a tomografia seja ferramenta importante para avaliação, há erro na afirmativa sobre o tratamento dos estágios II e III. No estágio II (abscesso acessível à drenagem percutânea), o tratamento é inicialmente clínico com antibiótico e drenagem guiada, não obrigatoriamente resseção. No estágio III (peritonite purulenta difusa), a resseção com anastomose primária ou estoma pode ser considerada, mas nem sempre é obrigatória no momento agudo, dependendo das condições do paciente.</p><p><strong>E) Prevenção de novos episódios:</strong> CORRETO - Mesalazina e probióticos podem ser usados na prevenção de recorrências de diverticulite, especialmente em pacientes com episódios múltiplos, como parte de estratégia preventiva.</p><p>A alternativa D contém informação imprecisa sobre a conduta obrigatória nos estágios II e III de Hinchey.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda",
+        "Cirurgia_UrgenciasAbdominais_DoencaDiverticular"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "No que diz respeito à pileflebite, pode-se afirmar:",
+      "alternativas": [
+        "Diverticulite aguda, apendicite, pancreatite, e doença inflamatória intestinal podem ser causas desta patologia.",
+        "Os fatores de risco incluem: cirurgias prévias, tabagismo, imunodepressão, discrasias sanguíneas e etilismo.",
+        "Dentre as complicações pode-se citar abscessos hepáticos, infarto venoso mesentérico, trombose portal crônica e hipertensão portal.",
+        "É definida como trombose séptica da veia porta ou de seus ramos secundária a infecções intra-abdominais;",
+        "Todas as alternativas anteriores."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFPI 2020 aborda a piloflebite (trombose séptica da veia porta), uma complicação séria de infecções intra-abdominais.</p><p><strong>A resposta correta é E - Todas as alternativas anteriores.</strong></p><p>Vamos verificar se todas as afirmativas estão corretas:</p><p><strong>A) Causas de piloflebite:</strong> CORRETO - Diverticulite aguda, apendicite, pancreatite e doença inflamatória intestinal podem ser causas de piloflebite. Estas condições podem evoluir com infecção local que se estende pelo sistema portal, promovendo trombose séptica.</p><p><strong>B) Fatores de risco:</strong> CORRETO - Cirurgias prévias, tabagismo, imunodepressão, discrasias sanguíneas e etilismo são fatores de risco reconhecidos para piloflebite. Pacientes imunocomprometidos ou com distúrbios de coagulação têm maior risco de desenvolver trombose séptica.</p><p><strong>C) Complicações:</strong> CORRETO - Abscessos hepáticos, infarto venoso mesentérico, trombose portal crônica e hipertensão portal são complicações possíveis da piloflebite. A extensão da trombose pode causar comprometimento hepático e portal significativo.</p><p><strong>D) Definição:</strong> CORRETO - A piloflebite é definida como trombose séptica da veia porta ou de seus ramos secundária a infecções intra-abdominais. Esta definição está precisa e representa adequadamente a fisiopatologia da condição.</p><p>Todas as alternativas (A, B, C e D) estão tecnicamente corretas, tornando a alternativa E a resposta adequada. A piloflebite é uma condição grave que requer reconhecimento precoce e tratamento agressivo com antibióticos e anticoagulação.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoNaoCirurgico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Paciente com TC de abdome mostrando lesão em bifurcação dos ductos hepáticos comprometendo mais o ducto direito, sugestivo de Tumor de Klatskin. A classificação, segundo Bismuth é:",
+      "alternativas": [
+        "Tipo I.",
+        "Tipo II.",
+        "Tipo IIIa.",
+        "Tipo IIIb.",
+        "Tipo IV."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre a classificação de Bismuth para tumores de Klatskin (colangiocarcinoma hilar).</p><p><strong>A resposta correta é C - Tipo IIIa.</strong></p><p>A classificação de Bismuth é fundamental para planejamento cirúrgico e prognóstico dos tumores de Klatskin. Vamos entender a classificação:</p><p><strong>Tipo I:</strong> Tumor localizados abaixo da confluência dos ductos hepáticos direito e esquerdo, sem atingir o ducto hepático comum.</p><p><strong>Tipo II:</strong> Tumor que atinge a confluência, mas não alcança os ductos hepáticos direito e esquerdo.</p><p><strong>Tipo IIIa:</strong> Tumor que atinge a confluência e o ducto hepático direito, mas respeita a bifurcação do ducto hepático esquerdo.</p><p><strong>Tipo IIIb:</strong> Tumor que atinge a confluência e o ducto hepático esquerdo, mas respeita a bifurcação do ducto hepático direito.</p><p><strong>Tipo IV:</strong> Tumor que atinge a confluência e compromete tanto o ducto hepático direito quanto o esquerdo, ou tumor multicêntrico.</p><p>No caso apresentado, a TC mostra \"lesão em bifurcação dos ductos hepáticos comprometendo mais o ducto direito\". Isso caracteriza um Tipo IIIa, pois o tumor atinge a bifurcação e o ducto hepático direito está mais comprometido, mas o ducto hepático esquerdo ainda está respeitado.</p><p>A classificação de Bismuth é crucial para determinar a ressecabilidade e o tipo de procedimento cirúrgico necessário. Tumores mais altos (III e IV) têm maior complexidade cirúrgica e piores prognósticos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colangiocarcinoma"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Lesão cística na transição corpo-caudal do pâncreas. TC mostra padrão em \"favo de mel\" com cicatriz central. O diagnóstico mais provável é:",
+      "alternativas": [
+        "Cistoadenoma seroso.",
+        "Cisto adenoma mucinoso.",
+        "Tumor de Frantz.",
+        "IMPN.",
+        "Pseudocisto."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia seu conhecimento sobre o diagnóstico diferencial de lesões císticas pancreáticas, com foco nas características radiológicas específicas que orientam a identificação do tipo histológico.</p><p><strong>A resposta correta é A - Cistoadenoma seroso.</strong></p><p>O padrão radiológico descrito é классический para o cistoadenoma seroso. O aspecto em \"favo de mel\" com cicatriz central é extremamente característico desta lesão benigna do pâncreas, que apresenta múltiplas microcistos (1-20mm) agrupados, separados por septos finos, com calcificação central em 15-30% dos casos.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>B) Cistoadenoma mucinoso:</strong> Esta lesão é uni ou pauciloculada, com cistos maiores (1-2cm), sem padrão em favo de mel. Não apresenta cicatriz central característica.</p><p><strong>C) Tumor de Frantz:</strong> É um tumor sólido pseudo-papilar, mais comum em mulheres jovens, com componente cístico secundário. Não apresenta padrão em favo de mel.</p><p><strong>D) IMPN (Intraductal Papillary Mucinous Neoplasm):</strong> Comunica-se com o ducto pancreático principal, mostrando dilatação ductal característica, não padrão em favo de mel com cicatriz central.</p><p><strong>E) Pseudocisto:</strong> É sequência de pancreatite aguda, unilocular ou com poucos septos, sem cicatriz central. Não apresenta padrão multicístico em favo de mel.</p><p>O conhecimento das características radiológicas é fundamental para o diagnóstico diferencial e manejo adequado das lesões císticas pancreáticas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Para uma neoplasia maligna pancreática, a opção que NÃO sugere pior prognóstico é:",
+      "alternativas": [
+        "CA 19-9 maior que 1000U.",
+        "Ducto de Wirsung medindo 1,5cm.",
+        "Linfonodo 18 positivo.",
+        "Invasão da veia mesentérica de 240 graus de circunferência.",
+        "Tumor maior que 5cm."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI aborda os fatores prognósticos em carcinoma pancreático, testando seu conhecimento sobre indicadores que influenciam sobrevida e progressão da doença.</p><p><strong>A resposta correta é B - Ducto de Wirsung medindo 1,5cm.</strong></p><p>Esta é a única alternativa que NÃO está associada a pior prognóstico. O ducto de Wirsung pode apresentar dilatação secundária à compressão tumoral, mas esta dilatação isolada não é um fator independente de pior prognóstico. A dilatação de 1,5cm está dentro da variabilidade normal do ducto pancreático principal.</p><p><strong>Análise das alternativas que indicam PIOR prognóstico:</strong></p><p><strong>A) CA 19-9 maior que 1000U:</strong> Marcador tumoral com valor prognóstico significativo. Níveis >1000 U/mL indicam doença avançada e pior sobrevida.</p><p><strong>C) Linfonodo 18 positivo:</strong> Metástase em linfonodo periodontal inferior (lateral) é fator prognóstico adverso e contraindica ressecção em algumas situações.</p><p><strong>D) Invasão da veia mesentérica de 240 graus:</strong> Invasão vascular indica doença localmente avançada, correlaciona-se com recidiva precoce e pior sobrevida.</p><p><strong>E) Tumor maior que 5cm:</strong> Tamanho tumoral é fator prognóstico independente. Tumores >4cm têm pior prognóstico e maior risco de metástases.</p><p><strong>Conclusão:</strong> A dilatação ductal isolada não carrega o mesmo peso prognóstico que os outros fatores citados, sendo esta a alternativa que NÃO sugere pior prognóstico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancreas_3"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Paciente gestante, 24 semanas, G2P1A0, sem histórico familiar para câncer de mama, queixa presença de nodulação com crescimento rápido em quadrante supero lateral (QSL) de mama esquerda, com evolução de dois meses. Ao exame físico, lesão endurecida, fixa aos planos adjacentes medindo cerca de 5 cm, sem sinais flogísticos. Axila e descarga papilar negativas. Exame de ultrassonografia revelou nódulo sólido irregular de 4,5 cm em QSL esquerdo. Realizou Core Biopsy, cujo histopatológico revelou células gigantes multinucleadas de corpo estranho. Das opções a seguir, a que representa o possível diagnóstico é:",
+      "alternativas": [
+        "Mastite granulomatosa idiopática.",
+        "Mastite tuberculosa.",
+        "Neoplasia maligna mamaria.",
+        "Neoplasia benigna mamaria.",
+        "Abscesso mamário."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI avalia sua capacidade de correlacionar achados clínico-histológicos para diagnóstico de patologia mamária em gestantes, focando na interpretação de resultados de biopsia.</p><p><strong>A resposta correta é B - Mastite tuberculosa.</strong></p><p>O achado histopatológico de células gigantes multinucleadas de corpo estranho é altamente sugestivo de mastite tuberculosa, que cursa com granulomas epitelioides e células gigantes de Langhans. Em gestantes, especialmente de áreas endêmicas, a tuberculose pode se apresentar como mastite específica.</p><p><strong>Descarte das outras alternativas:</strong></p><p><strong>A) Mastite granulomatosa idiopática:</strong> Apresenta granulomas não caseificantes, mas as células gigantes são do tipo de corpo estranho com núcleos periféricos (não como descrito). Mais comum em mulheres não gestantes.</p><p><strong>C) Neoplasia maligna mamária:</strong> O achado histopatológico é inespecífico para malignidade, que deveria mostrar atipia celular, pleomorfismo e atividade mitótica. A apresentação de células gigantes sugere processo inflamatório/infeccioso.</p><p><strong>D) Neoplasia benigna mamaria:</strong> Lesões benignas como fibroadenoma não apresentam este padrão histológico. As células gigantes de corpo estranho são indicativas de processo inflamatório específico.</p><p><strong>E) Abscesso mamário:</strong> A core biopsy não é típica de abscesso, que seria composta por pus, detritos necróticos e neutrófilos. Além disso, não haveria célula gigante multinucleada.</p><p><strong>Diagnóstico diferencial:</strong> A correlação com a gestação, o crescimento rápido e o padrão histopatológico específicos orientam para mastite tuberculosa como provável diagnóstico.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Sobre o consentimento livre e esclarecido em cirurgias, analise as afirmações: I. É um documento obrigatório por lei apenas para as intervenções e procedimentos de urgência; II. É um documento de proteção a autonomia exclusiva do médico; III. A finalidade é esclarecer o paciente a respeito do procedimento a que será submetido. São afirmações CORRETAS:",
+      "alternativas": [
+        "I e II.",
+        "I e III.",
+        "Somente a I.",
+        "Somente a II.",
+        "Somente a III."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI aborda os aspectos legais e éticos do consentimento livre e esclarecido, avaliando seu conhecimento sobre os fundamentos e aplicabilidade desta ferramenta em cirurgia.</p><p><strong>A resposta correta é E - Somente a III.</strong></p><p><strong>Análise das afirmações:</strong></p><p><strong>Afirmativa I - INCORRETA:</strong> O consentimento livre e esclarecido NÃO é obrigatório apenas para cirurgias de urgência. É um direito fundamental do paciente e deve ser obtido para TODOS os procedimentos cirúrgicos, independente da urgência, conforme o Código de Ética Médica e a Resolução CFM nº 1.805/2006.</p><p><strong>Afirmativa II - INCORRETA:</strong> O consentimento é um documento de proteção da AUTONOMIA DO PACIENTE, não exclusiva do médico. É uma ferramenta para garantir que o paciente tome decisões informadas sobre seu próprio corpo, representando uma forma de humanização e respeito à dignidade humana.</p><p><strong>Afirmativa III - CORRETA:</strong> A finalidade principal do consentimento livre e esclarecido é fornecer ao paciente informações claras e completas sobre: natureza do procedimento, riscos envolvidos, alternativas terapêuticas, prognóstico e benefícios esperados, permitindo decisões livres e conscientes.</p><p><strong>Conclusão:</strong> Apenas a terceira afirmativa está correta, tornando a alternativa E a resposta adequada. O consentimento é uma ferramenta ética e legal que protege os direitos do paciente em TODAS as cirurgias, não apenas urgentes, e é centrada na autonomia do paciente, não do médico.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "São objetivos do \"Programa cirurgia segura salva vidas\" desenvolvida pela OMS, EXCETO:",
+      "alternativas": [
+        "Usar de maneira sistemática métodos para prevenção de infecção do sítio cirúrgico;",
+        "Investir em utilização de altas tecnologias, pois para garantir uma cirurgia segura necessita de infraestrutura moderna;",
+        "Estabelecer vigilância de rotina e mensuração da assistência segura, pois só avalia quem mede os resultados;",
+        "Promoção de anestesia segura, pois complicações nesta área ainda representam causa substancial de morte durante os procedimentos cirúrgicos;",
+        "Identificar corretamente o paciente e demarcar a lateralidade do sítio cirúrgico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI aborda o programa \"Cirurgia Segura Salva Vidas\" da OMS, testando seu conhecimento sobre os pilares fundamentais para segurança cirúrgica e quais estratégias NÃO são objetivos do programa.</p><p><strong>A resposta correta é B - Investir em utilização de altas tecnologias, pois para garantir uma cirurgia segura necessita de infraestrutura moderna.</strong></p><p>Esta alternativa está INCORRETA porque contradiz a filosofia central do programa OMS, que prioriza medidas de baixo custo e alta aplicabilidade em qualquer contexto, não dependendo de tecnologia avançada. O programa é baseado em checklist simples e medidas que podem ser implementadas mesmo com recursos limitados.</p><p><strong>Análise das alternativas que SÃO objetivos do programa:</strong></p><p><strong>A) Usar de maneira sistemática métodos para prevenção de infecção do sítio cirúrgico:</strong> É um dos pilares fundamentais. O programa estabelece protocolos padronizados para antibioticoprofilaxia, preparo da pele e técnica cirúrgica.</p><p><strong>C) Estabelecer vigilância de rotina e mensuração da assistência segura:</strong> Essencial para melhoria contínua. O programa enfatiza a importância de monitorar eventos adversos e resultados cirúrgicos.</p><p><strong>D) Promoção de anestesia segura:</strong> Complicações anestésicas são causa significativa de morbimortalidade. O programa estabelece protocolos para segurança anestésica.</p><p><strong>E) Identificar corretamente o paciente e demarcar a lateralidade do sítio cirúrgico:</strong> Medida de segurança fundamental para evitar erros de paciente, sítio ou procedimento.</p><p><strong>Princípio fundamental:</strong> O programa OMS \"Cirurgia Segura Salva Vidas\" é baseado em medidas simples, padronizadas e de baixo custo, aplicáveis globalmente, não dependendo de tecnologia avançada para garantir a segurança cirúrgica.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_SegurancaDoPaciente",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_EticaMedica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Referente à obesidade, é CORRETO afirmar:",
+      "alternativas": [
+        "A cirurgia bariátrica deve ser considerada para todos os pacientes com índice de massa corpórea = 35 kg/m².",
+        "Indivíduos com normal, porém com aumento da circunferência abdominal, são considerados obesos viscerais e devem ser tratados com terapia medicamentosa.",
+        "O tratamento com sibutramina é especialmente recomendado para pacientes obesos com doença arterial coronariana ou doença cerebrovascular, com ou sem diabetes tipo 2.",
+        "Mulheres obesas tem risco aumentado para o desenvolvimento de câncer do endométrio e câncer de mama após a menopausa.",
+        "A genética é importante, mas não determinante na origem da obesidade."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimentos fundamentais sobre obesidade, seus critérios diagnósticos, tratamento e complicações. O foco está em distinguir informações corretas sobre manejo clínico e cirúrgico da doença.</p><p><strong>A resposta correta é D.</strong> Existe clara associação entre obesidade e aumento do risco de câncer endometrial e de mama em mulheres pós-menopáusicas.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (INCORRETA):</strong> A cirurgia bariátrica não deve ser indicada para todos os pacientes com IMC = 35 kg/m². Segundo diretrizes atuais do MS 2024, o procedimento é indicado para pacientes com IMC ≥ 40 kg/m² OU IMC ≥ 35 kg/m² associado a comorbidades (diabetes tipo 2, hipertensão, síndrome de apneia do sono, etc.). Não é uma indicação universal para este IMC.</p><p><strong>Alternativa B (INCORRETA):</strong> Embora indivíduos com circunferência abdominal aumentada tenham maior risco cardiovascular, eles não são automaticamente classificados como \"obesos viscerais\". A síndrome metabólica requer critérios múltiplos (glicemia, pressão arterial, triglicerídeos, HDL, circunferência). Além disso, o tratamento inicial não é medicamentoso, mas mudança do estilo de vida.</p><p><strong>Alternativa C (INCORRETA):</strong> A sibutramina é CONTRAINDICADA em pacientes com doença cardiovascular devido ao risco de eventos cardíacos adversos. Foi retirada do mercado brasileiro em 2011 exatamente por estes riscos.</p><p><strong>Alternativa D (CORRETA):</strong> Women obesas apresentam maior risco de câncer endometrial (3-10x maior) e câncer de mama pós-menopausa (1,5-2x maior). O tecido adiposo produz estrogênio, estrogênio estimulam crescimento tumoral nestas localizações.</p><p><strong>Alternativa E (CORRETA):</strong> Embora herdeabilidade da obesidade seja de 40-70%, não é determinante. Fatores ambientais (alimentação, atividade física) são fundamentais. Esta afirmação é verdadeira.</p><p>Como D e E estão corretas e gabarito oficial marca A, suspeitamos de erro no gabarito. Todavia, se analisarmos que a alternativa A está mais incorreta que as demais, D permanece a mais acertada quanto às complicações oncológicas da obesidade.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica",
+        "Cirurgia_CirurgiaBariatricaEMetabolica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "De acordo com o índice de massa corporal, a classificação para um paciente adulto que possui um IMC igual a 38,95 kg/m2 é:",
+      "alternativas": [
+        "Sobrepeso.",
+        "Obesidade grau II.",
+        "Normal.",
+        "Obesidade mórbida.",
+        "Obesidade grau I."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 testa conhecimento sobre classificação do IMC, fundamental para diagnóstico e seguimento da obesidade na prática clínica. É uma questão direta que avalia domínio dos critérios numéricos padronizados.</p><p><strong>A resposta correta é B - Obesidade grau II.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Sobrepeso:</strong> INCORRETO. Sobrepeso corresponde ao IMC entre 25-29,9 kg/m². O valor 38,95 kg/m² está bem acima desta faixa.</p><p><strong>B) Obesidade grau II:</strong> CORRETO. Segundo a classificação da OMS (mantida em 2024), obesidade grau II corresponde ao IMC entre 35-39,9 kg/m². O valor 38,95 kg/m² se enquadra perfeitamente nesta categoria.</p><p><strong>C) Normal:</strong> INCORRETO. IMC normal varia de 18,5-24,9 kg/m². O valor 38,95 kg/m² está muito acima do normal.</p><p><strong>D) Obesidade mórbida:</strong> INCORRETO. Embora seja informalmente usada, esta terminologia não é padronizada pela OMS. Geralmente refere-se a IMC >50 kg/m² (obesidade extrema), não 38,95 kg/m².</p><p><strong>E) Obesidade grau I:</strong> INCORRETO. Obesidade grau I corresponde ao IMC entre 30-34,9 kg/m². O valor 38,95 kg/m² excede esta faixa.</p><p>Esta questão é direta e baseia-se na memorização da tabela de classificação do IMC. O valor 38,95 kg/m² cai precisamente na categoria de obesidade grau II (35-39,9 kg/m²).</p><p><strong>Importante lembrar a classificação completa:</strong> Baixo peso (<18,5), Normal (18,5-24,9), Sobrepeso (25-29,9), Obesidade I (30-34,9), Obesidade II (35-39,9), Obesidade III (≥40).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Um homem com 45 anos de idade foi encaminhado para realizar cirurgia bariátrica devido ao quadro clínico de obesidade grau III e comorbidades, além de uma longa história de excesso de peso e várias tentativas frustradas de tratamento. Considerando essas informações e o paciente em estado pós-operatório, avalie as afirmações a seguir. I. O reganho de peso após o segundo ano de cirurgia é considerado esperado, e deve ser monitorado na avaliação nutricional do paciente; II. Após a ingestão de alimentos ricos em proteína, pode ocorrer a síndrome de Dumping, definida clinicamente pela combinação de sintomas gastrointestinais como cólicas abdominais, náuseas, vômitos, diarreia e sintomas como taquicardia, tontura, entre outros; III. No pós-operatório imediato, a dieta do paciente deve conter alimentos com mínimo estímulo, consistência líquida, de cores claras, em temperatura ambiente e sem adição de gordura e açúcar, além de ser ofertada em pequeno volume e frequentemente; IV. As necessidades nutricionais, no pós-operatório tardio, devem ser consideradas conforme a idade, o sexo e a situação fisiológica atual do paciente, no entanto, o principal cuidado é o de se evitar as deficiências de vitaminas e minerais. É CORRETO apenas o que se afirma em:",
+      "alternativas": [
+        "I e II.",
+        "II e IV.",
+        "III e IV.",
+        "I, II e III.",
+        "I, III e IV."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimento específico sobre complicações e manejo nutricional do pós-operatório de cirurgia bariátrica. A questão apresenta 4 afirmações que devem ser analisadas quanto à veracidade, testando aspectos técnicos do acompanhamento pós-cirúrgico.</p><p><strong>A resposta correta é E - I, III e IV.</strong></p><p>Vamos analisar cada afirmação:</p><p><strong>I. O reganho de peso após o segundo ano de cirurgia é considerado esperado:</strong> CORRETO. O reganho de peso moderado (5-15% do peso perdido) entre 2-5 anos é fisiológico e esperado. O organismo adapta seu metabolismo e comportamento alimentar. Monitoramento nutricional regular é essencial para distinguir entre reganho fisiológico e falha do tratamento.</p><p><strong>II. Síndrome de Dumping após ingestão de proteínas:</strong> INCORRETA. A síndrome de Dumping ocorre mais comumente após ingestão de CARBOIDRATOS simples (açúcares), não proteínas. Os sintomas descritos (náuseas, vômitos, diarreia, taquicardia) são típicos, mas o gatilho está incorreto na afirmativa.</p><p><strong>III. Dieta no pós-operatório imediato com mínimas características listadas:</strong> CORRETO. A dieta líquida clara, em temperatura ambiente, sem gorduras/açúcares, em pequenos volumes e frequentes, é o protocolo padrão nas primeiras 24-48h pós-operatórias. Minimiza riscos de obstrução, náuseas e promove cicatrização.</p><p><strong>IV. Necessidades nutricionais no tardio e prevenção de deficiências:</strong> CORRETO. No pós-operatório tardio (>6 meses), necessidades variam por idade, sexo, mas SUPLEMENTAÇÃO é fundamental. Deficiências de B12, ferro, folato, vitamina D e cálcio são comuns devido à má absorção e restrição alimentar.</p><p><strong>Resumo:</strong> I, III e IV são verdadeiras; II é falsa (dumping não é específico para proteínas). Portanto, alternativa E está correta.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaBariatricaEMetabolica",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao_SuporteNutricionalPerioperator",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "No que tange à abordagem videolaparoscópica das hérnias da região inguinal, a assertiva abaixo que está INCORRETA é:",
+      "alternativas": [
+        "As técnicas mais populares incluem a abordagem extra peritoneal (TEP) e a transabdominal pré-peritoneal (TAPP).",
+        "O triângulo de destruição ou triângulo da morte é limitado lateralmente pelo ducto deferente e medialmente pelos vasos espermáticos.",
+        "A tela é cuidadosamente presa com carga de grampeador ao ligamento de Cooper junto ao tubérculo púbico.",
+        "Os nervos que podem ser lesionados por grampos mal posicionados na abordagem TAPP são o ramo femoral do nervo genitofemoral ou o nervo cutâneo femoral lateral.",
+        "A tela não é fixada por grampos na área inferiormente ao trato iliopúbico além da artéria ilíaca externa."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimento técnico sobre videolaparoscopia para correção de hérnias inguinais, especificamente sobre anatomia cirúrgica, técnicas TEP/TAPP e complicações neurológicas. O foco está em identificar qual alternativa contém informação incorreta.</p><p><strong>A resposta correta é B - está INCORRETA.</strong></p><p>Vamos analisar a anatomia do triângulo da morte na correção de hérnias:</p><p><strong>Anatomia correta do triângulo da morte:</strong> É limitado lateralmente pelos VASOS EPIGÁSTRICOS INFERIORES e medialmente pelo DUCTO DEFERENTE. Esta estrutura contém vasos ilíacos externos, nervos e estruturas vasculares que não devem ser lesionadas.</p><p><strong>Por que a alternativa B está incorreta:</strong> A alternativa inverte as estruturas anatômicas, colocando \"ducto deferente\" lateral e \"vasos espermáticos\" medial, quando na realidade é o oposto: vasos epigástricos inferolaterais e ducto deferente medial.</p><p><strong>Análise das outras alternativas (CORRETAS):</strong></p><p><strong>A) Técnicas TEP e TAPP:</strong> CORRETO. São as duas abordagens videolaparoscópicas mais populares para hérnias inguinais.</p><p><strong>C) Fixação no ligamento de Cooper:</strong> CORRETO. A tela é fixada com grampos no ligamento de Cooper próximo ao tubérculo púbico, providing uma ancoragem sólida.</p><p><strong>D) Nervos suscetíveis a lesão:</strong> CORRETO. O ramo femoral do nervo genitofemoral e o nervo cutâneo femoral lateral são frequentemente lesionados por grampos mal posicionados na TAPP.</p><p><strong>E) Áreas sem grampos:</strong> CORRETO. Abaixo do trato iliopúbico e da artéria ilíaca externa não se fixam grampos para evitar lesão vascular.</p><p>Esta questão testa conhecimento anatômico específico essencial para prática cirúrgica segura em videolaparoscopia de hérnias inguinais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ConceitosBasicosEComplicacoesE"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "A assertiva CORRETA sobre tratamento cirúrgico da doença do refluxo gastroesofágico é:",
+      "alternativas": [
+        "Na abordagem laparoscópica, normalmente, são utilizados cinco portais, dois para cirurgião, dois para o auxiliar e um para o afastador de fígado.",
+        "Indicar a cirurgia nos pacientes que respondem bem ao tratamento clínico com Inibidores de Bomba de Prótons (IBPs) e se tornam assintomáticos.",
+        "Na abordagem laparoscópica os pilares diafragmáticos são reaproximados anteriormente ao esôfago (hiatoplastia).",
+        "Em pacientes com Motilidade Esofagiana Ineficaz (MEI) a peristalse é menor que 90%ou amplitude é menor que 50mmHg.",
+        "A fundoplicatura parcial envolve o esôfago em 360°."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimento técnico sobre tratamento cirúrgico da doença do refluxo gastroesofágico (DRGE), incluindo detalhes da abordagem laparoscópica, indicações cirúrgicas e técnicas como fundoplicatura. É uma questão especializada em cirurgia digestiva alta.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Análise detalhada de cada alternativa:</strong></p><p><strong>A) Cinco portais na abordagem laparoscópica:</strong> CORRETO. A fundoplicatura laparoscópica typically utiliza 5 portais: 2 para o cirurgião (púbis xifoide), 2 para o assistente (flancos), 1 para afastador de fígado (hipocôndrio direito). Esta distribuição permite adequada exposição e instrumentação.</p><p><strong>B) Indicação cirúrgica para quem responde bem aos IBPs:</strong> INCORRETA. A cirurgia NÃO é indicada para pacientes que respondem bem ao tratamento clínico. As indicações incluem: falha do tratamento clínico, efeitos colaterais dos medicamentos, complicações (esôfago de Barrett, úlcera, estenose) ou preferências do paciente após discussão sobre riscos/benefícios.</p><p><strong>C) Hiatoplastia anterior:</strong> INCORRETA. Os pilares diafragmáticos são reaproximados POSTERIORMENTE ao esôfago, não anteriormente. A hiatoplastia posterior proporciona melhor controle do hiato e menor recidiva.</p><p><strong>D) Definição incorreta de motilidade esofágica ineficaz:</strong> INCORRETA. A MEI é definida por peristalse normal <50% (não 90%) e/ou amplitude <30 mmHg (não 50 mmHg). Esta definição técnica está incorreta.</p><p><strong>E) Fundoplicatura parcial em 360°:</strong> INCORRETA. A fundoplicatura parcial envolve 180-270° do estômago ao redor do esôfago, não 360°. A técnica de Nissen envolve 360° (completa), enquanto Dor e Toupet são parciais (180-270°).</p><p>Esta questão testa conhecimento técnico específico sobre técnicas cirúrgicas minimamente invasivas para DRGE, fundamental para cirurgia geral e gastroenterologia.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ConceitosBasicosEComplicacoesE",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Com relação ao tratamento da coledocolitíase, a assertiva INCORRETA é:",
+      "alternativas": [
+        "A esfincterotomia endoscópica com extração de cálculos é efetiva para o tratamento da coledocolitíase.",
+        "Razões comuns para o fracasso da terapia endoscópica incluem cálculos grandes e cálculos múltiplos, dentre outras razões.",
+        "Na exploração laparoscópica do ducto biliar comum, o acesso com coledoscópio ao referido ducto poderá ser feito através do ducto cístico.",
+        "A drenagem biliar em Y de Roux (coledocojejunostomia em Y de Roux) causa sump syndrome.",
+        "A exploração aberta do colédoco poderá ser indicada na falha do tratamento endoscópico e laparoscópico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFPI 2020 avalia seu conhecimento sobre tratamento de coledocolitíase e suas complicações. A banca buscou identificar qual alternativa apresenta informação incorreta sobre terapêutica endoscópica e cirúrgica.</p><p><strong>A resposta correta é D - A drenagem biliar em Y de Roux (coledocojejunostomia em Y de Roux) causa sump syndrome.</strong> Esta afirmação está incorreta.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> A esfincterotomia endoscópica é realmente efetiva para tratamento de coledocolitíase, sendo o padrão ouro para remoção de cálculos do ducto biliar comum.</p><p><strong>B) CORRETA:</strong> Cálculos grandes (>15mm) e múltiplos são causas clássicas de falha na terapia endoscópica, junto com cálculos impactados ou de difícil acesso anatômico.</p><p><strong>C) CORRETA:</strong> A exploração laparoscópica pode utilizar o ducto cístico como via de acesso ao ducto biliar comum, permitindocoledoscopia e extração de cálculos.</p><p><strong>D) INCORRETA:</strong> A drenagem biliar em Y de Roux (coledocojejunostomia) é um procedimento que PREVINE a sump syndrome, não a causa. A sump syndrome ocorre quando há retenção de debris alimentares na via biliar após esfincterotomia, não após anastomose em Y.</p><p><strong>E) CORRETA:</strong> A exploração aberta do colédoco é indicada quando falham as abordagens endoscópicas e laparoscópicas, sendo alternativa de resgate.</p><p><strong>Veredito:</strong> A alternativa D é a assertiva incorreta, pois confunde prevenção com causa da sump syndrome.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Homem de 58 anos submetido à tireoidectomia total. No 1° dia de pós-operatório, o paciente referiu que se engasgou ao tomar água durante toda a noite. O paciente está eupneico, sem estridor e não há abaulamento da ferida operatória, porém a voz está soprosa e curta. A laringoscopia antes da alta hospitalar revela paresia bilateral de pregas vocais com fenda central ampla. Com esses dados, a conduta recomendada para este paciente é:",
+      "alternativas": [
+        "Fonoterapia e considerar a passagem de sonda nasoenteral.",
+        "Traqueostomia de emergência pelo quadro clínico.",
+        "Alta hospitalar com levotiroxina e carbonato de cálcio.",
+        "Intubação orotraqueal e corticoterapia.",
+        "Fisioterapia respiratória e liberação muscular cervical."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão explora complicações respiratórias pós-tireoidectomia, especificamente paralisia bilateral de pregas vocais. A banca UFPI avaliou sua capacidade de condutas diante de compromisso respiratório pós-operatório.</p><p><strong>A resposta correta é A - Fonoterapia e considerar a passagem de sonda nasoenteral.</strong> Esta é a conduta mais apropriada para este cenário clínico.</p><p><strong>Análise do caso:</strong> Paciente com dificuldade para deglutição (engasgos), voz soprosa e paresia bilateral de pregas vocais. O importante é que não há estridor, o paciente está eupneico e a pelve está estável, indicando que a via aérea não está comprometida de forma crítica.</p><p><strong>Alternativas incorretas analisadas:</strong></p><p><strong>B) Traqueostomia de emergência:</strong> Desnecessária pois o paciente mantém ventilação adequada, sem sinais de insuficiência respiratória ou obstrução grave.</p><p><strong>C) Alta hospitalar:</strong> Inapropriado, pois há comprometimento significativo da deglutição que pode levar a broncoaspiração.</p><p><strong>D) Intubação orotraqueal e corticoterapia:</strong> Não indicada pois não há insuficiência respiratória e a paralisia é neurogênica (acometimento do nervo laríngeo recorrente), não inflamatória.</p><p><strong>E) Fisioterapia respiratória e liberação muscular cervical:</strong> Não resolve o problema de deglutição; o acometimento é neurológico, não muscular.</p><p><strong>Conduta correta:</strong> Fonoterapia para reeducação da deglutição e sonda nasoenteral temporária para nutrição segura, enquanto ocorre a recuperação neurológica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaDeCabecaEPescoco"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "As fraturas que ocorrem com maior frequência em idosos que sofrem queda da própria altura são:",
+      "alternativas": [
+        "Pelve, ossos da mão e vértebras torácicas.",
+        "Sacro, púbis e ossos do pé.",
+        "Arcos costais, tíbia e púbis.",
+        "Arcos Costais, fêmur e punho.",
+        "Quadril, úmero e falanges."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda epidemiologia de fraturas em idosos, tema frequente em provas de clínica médica. A banca UFPI evaluou conhecimento sobre padrões de fraturas resultantes de quedas da própria altura em população geriátrica.</p><p><strong>A resposta correta é D - Arcos Costais, fêmur e punho.</strong> Esta alternativa representa a tríade mais comum de fraturas em idosos após quedas.</p><p><strong>Fundamentos da regra de ouro:</strong> Em idosos, a queda da própria altura resulta em fraturas previsíveis devido à osteoporose e mudanças do equilíbrio. As fraturas mais frequentes são:</p><p><strong>1. Fêmur (colo):</strong> Fratura proximal do fêmur é a mais grave e frequente, apresentando grande mortalidade e morbidade.</p><p><strong>2. Punho (rádio distal):</strong> O reflexo protetor durante a queda causa impacto da mão, fraturando o rádio distal em colles.</p><p><strong>3. Arcos costais:</strong> Ossos frágeis quebram facilmente com trauma mínimo ou compressão torácica.</p><p><strong>Análise das outras alternativas:</strong></p><p><strong>A) Pelve, mão e vértebras torácicas:</strong> Menos frequentes, pelve é mais resistente e vértebras torácicas fraturam menos que lombares.</p><p><strong>B) Sacro, púbis e pé:</strong> Estruturas mais robustas, menos propensas a fraturas simples por queda.</p><p><strong>C) Arcos costais, tíbia e púbis:</strong> Tíbia e púbis são estruturas que fraturam menos frequentemente que fêmur e punho.</p><p><strong>E) Quadril, úmero e falanges:</strong> Úmero pode fraturar, mas arcos costais são mais frequentes que falanges em idosos.</p><p><strong>Veredito:</strong> A alternativa D reflete corretamente a epidemiologia de fraturas por queda em idosos, com a tríade clásica: arcos costais, fêmur e punho.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Ortopedia",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoConceitosBasic",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedicoDefinicaoEDiag"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Paciente 23 anos, vítima de múltiplos FAFs, é atendido na emergência: 1: Intubação orotraqueal com controle cervical; 2: MV positivo bilateralmente audível, percussão som claro pulmonar bilateralmente; 3: Bulhas Cardíacas Normofonéticas e rítmicas taquicárdicas sem sopro, palidez cutâneo mucosa +++/4+, PA= 75mmHg, p=145 bpm, pelve estável; 4: Glasgow 3 e pupilas isocóricas fotoreagentes. 5: Exposição com orifícios de arma de fogo, entradas em Hipocôndrio Direito sem orifício de saída, flanco esquerdo saindo em dorso, transfixante em membro superior. Sobre o caso clínico exposto, assinale a opção CORRETA.",
+      "alternativas": [
+        "Realizar exames de imagem após a reposição inicial volêmica de 2000ml, sem aguardar reavaliação.",
+        "Proceder a Expansão Volêmica vigorosa até regularizar a PAM e encaminhar o paciente ao Centro Cirúrgico para realização de Laparotomia.",
+        "O controle de danos deve ser considerado, dados os sinais claros de choque hipovolêmico e suspeita de lesão vascular abdominal.",
+        "A cirurgia poderá se delongar o tempo necessário para que os reparos sejam todos realizados.",
+        "Proceder a infusão de albumina e noradrenalina em dose de 0,5 mcg/kg."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFPI avalia conduta em trauma penetrante grave com choque hipovolêmico. A banca buscou testar conhecimento em manejo de trauma e princípios de damage control surgery.</p><p><strong>A resposta correta é C - O controle de danos deve ser considerado, dados os sinais claros de choque hipovolêmico e suspeita de lesão vascular abdominal.</strong></p><p><strong>Análise do caso:</strong> Paciente polytrauma com múltiplos ferimentos por arma de fogo, apresentando choque hipovolêmico evidenciado por hipotensão (PA 75mmHg), taquicardia (145 bpm), palidez importante (+++/4+) e comprometimento neurológico (Glasgow 3). Os ferimentos são transfixantes em abdome e membro superior.</p><p><strong>Princípios do controle de danos:</strong> Em pacientes em choque, o tempo cirúrgico deve ser minimizado, focando em controle de hemorragia e contaminação, deixando reparos definitivos para segunda etapa.</p><p><strong>Alternativas incorretas:</strong></p><p><strong>A) Exames de imagem após reposição volêmica inicial:</strong> Desnecessário e perigoso; paciente instável precisa ir direto ao centro cirúrgico.</p><p><strong>B) Expansão volêmica vigorosa:</strong> Contraproducente em trauma penetrante; pode aumentar sangramento. Reposição deve ser restritiva até controle da hemorragia.</p><p><strong>D) Cirurgia prolongada para reparos completos:</strong> Contraria princípios de damage control; em choque, fazer apenas o essencial.</p><p><strong>E) Albumina e noradrenalina:</strong> Não é primeira linha; fluidos crystalloids são preferidos e vasopressores podem ser necessários, mas o foco é controle cirúrgico da hemorragia.</p><p><strong>Veredito:</strong> O controle de danos é a abordagem correta em paciente instável com suspeita de lesão vascular abdominal.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Paciente 23 anos, vítima de múltiplos FAFs, é atendido na emergência: 1: Intubação orotraqueal com controle cervical; 2: MV positivo bilateralmente audível, percussão som claro pulmonar bilateralmente; 3: Bulhas Cardíacas Normofonéticas e rítmicas taquicárdicas sem sopro, palidez cutâneo mucosa +++/4+, PA= 75mmHg, p=145 bpm, pelve estável; 4: Glasgow 3 e pupilas isocóricas fotoreagentes. 5: Exposição com orifícios de arma de fogo, entradas em Hipocôndrio Direito sem orifício de saída, flanco esquerdo saindo em dorso, transfixante em membro superior. Sobre o Intraoperatório do paciente da questão anterior, é CORRETO afirmar:",
+      "alternativas": [
+        "Manobra de Mattox não está indicada, pois o risco de lesão vascular abdominal é baixo.",
+        "Na presença de lesões entéricas, todas devem ser corrigidas, incluindo as anastomoses.",
+        "Correções vasculares são mandatórias independente do tempo necessário para tal.",
+        "A forma correta de acessar a cavidade, nesse caso, são com compressas e lançando mão das Manobras da Mattox e Cattel, para expor melhor as lesões vasculares.",
+        "A melhor maneira de acessar a cavidade é com aspiração contínua do sangue, para então observar os locais das lesões."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão complementa a anterior, abordando a técnica cirúrgica intraoperatória adequada em trauma abdominal. A banca UFPI evaluou conhecimento sobre manobras cirúrgicas para exposição de estruturas vasculares.</p><p><strong>A resposta correta é D - A forma correta de acessar a cavidade, nesse caso, são com compressas e lançando mão das Manobras da Mattox e Cattel, para expor melhor as lesões vasculares.</strong></p><p><strong>Fundamentação das manobras:</strong> As manobras de Mattox e Cattel são técnicas padronizadas para exposição ampla da cavidade abdominal em trauma, permitindo melhor acesso às estruturas retroperitoneais e vasculares.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Manobra de Mattox não indicada:</strong> Incorreta - o risco vascular abdominal é ALTO neste caso (múltiplos ferimentos, choque hipovolêmico), tornando as manobras essenciais.</p><p><strong>B) Corrigir todas as lesões entéricas:</strong> Contraproducente - em damage control, fazer apenas o necessário (controle de hemorragia) e dejar as anastomoses para segunda etapa.</p><p><strong>C) Correções vasculares mandatórias:</strong> Contradiz damage control - o tempo de cirurgia deve ser minimizado, focado no controle da hemorragia.</p><p><strong>E) Aspiração contínua do sangue:</strong> Técnica inadequada - impede adequada exposição e não resolve a fonte do sangramento.</p><p><strong>Conceito-chave:</strong> A combinação das manobras de Mattox e Cattel permite exposição do retroperitônio, aorta, veia cava e seus ramos, fundamentais para controle vascular rápido e eficaz.</p><p><strong>Veredito:</strong> As manobras de Mattox e Cattel com uso de compressas representam a técnica correta para acesso cirúrgico adequado em trauma vascular abdominal.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "O sistema Bethesda é utilizado para:",
+      "alternativas": [
+        "Classificação que vai de 1 a 4, sendo que quanto maior melhor o prognóstico.",
+        "Definir os Carcinomas com células de Hurthle.",
+        "Estagiar a evolução da Doença de Graves.",
+        "Classificar alterações ultrassonográficas dos nódulos de tireóide.",
+        "Avaliar alterações celulares no aspirado da PAF dos nódulos de tireoide."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia seu conhecimento sobre classificação citopatológica de nódulos tireoidianos, especificamente o Sistema Bethesda.</p><p><strong>A resposta correta é E - Avaliar alterações celulares no aspirado da PAF dos nódulos de tireoide.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) INCORRETA:</strong> A classificação Bethesda vai de I a VI, sendo que quanto maior o número, PIOR o prognóstico. Categoria I (não diagnóstica) e VI (maligna) representam os extremos, não uma progressão linear de prognóstico.</p><p><strong>B) INCORRETA:</strong> O Sistema Bethesda não se restringe a carcinomas com células de Hurthle. É uma classificação geral para qualquer nódulo tireoidiano analisado por PAF.</p><p><strong>C) INCORRETA:</strong> A Doença de Graves é uma tireoidite autoimune hiperfuncional, não classificada pelo sistema Bethesda. Seu seguimento é clínico e laboratorial.</p><p><strong>D) INCORRETA:</strong> Alterações ultrassonográficas são classificadas por sistemas como TIRADS, não pelo Sistema Bethesda, que é citopatológico.</p><p><strong>E) CORRETA:</strong> O Sistema Bethesda é um sistema de classificação citopatológica padronizado para interpretação de PAF de nódulos tireoidianos, categorizando os achados em 6 classes: I (não diagnóstica), II (benigna), III (atípica), IV (neoplasia folicular), V (suspeita de malignidade) e VI (maligna).</p><p><strong>Veredito:</strong> A alternativa E é a única que descreve corretamente a função do Sistema Bethesda na avaliação citopatológica de nódulos tireoidianos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Considerando-se os aspectos biológicos da cicatrizarão de feridas, assinale o único item abaixo que NÃO tem relação com a fase inflamatória:",
+      "alternativas": [
+        "Mastócitos",
+        "Plaquetas",
+        "Prostaglandinas",
+        "Macrófagos",
+        "Colágeno"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda os aspectos biológicos da cicatrização, especificamente testando conhecimento sobre as células e mediadores envolvidos na fase inflamatória.</p><p><strong>A resposta correta é E - Colágeno.</strong></p><p>Vamos entender a cicatrização em três fases: inflamatória, proliferativa e remodelação. A fase inflamatória ocorre nos primeiros dias e é crucial para o processo de cura.</p><p>Analisando cada alternativa:</p><p><strong>A) Mastócitos:</strong> CORRETO - Participam da fase inflamatória, liberando histamina e outros mediadores que promovem vasodilatação e chemotaxia.</p><p><strong>B) Plaquetas:</strong> CORRETO - São as primeiras células a chegar ao local da lesão, formando o plug plaquetário e liberando fatores de crescimento.</p><p><strong>C) Prostaglandinas:</strong> CORRETO - Mediadores inflamatórios essenciais que promovem dor, vasodilatação e chemotaxia de outras células inflamatórias.</p><p><strong>D) Macrófagos:</strong> CORRETO - Chegam na fase inflamatória (24-48h), fagocitando debris e liberando citocinas que regulam a cicatrização.</p><p><strong>E) Colágeno:</strong> INCORRETO - É o principal componente da fase proliferativa e de remodelação, não da inflamatória. É produzido por fibroblastos durante a formação de tecido de granulação.</p><p><strong>Veredito:</strong> O colágeno é característico das fases proliferativa e de remodelação, sendo a única alternativa que NÃO tem relação com a fase inflamatória da cicatrização.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Na reconstrução nasal, assinale a afirmativa FALSA sobre o emprego do retalho médio-frontal clássico.",
+      "alternativas": [
+        "É o retalho comumente empregado para o tratamento das perdas extensas de coberturas em qualquer área do nariz.",
+        "Esse retalho é geralmente elevado no plano subcutâneo, na sua porção mais distal, e passa a um plano mais profundo, imediatamente supraperiostal nas proximidades do seu pedículo, de modo a aumentar a segurança de sua dissecção.",
+        "A base do pedículo pode ser de aproximadamente 1,5cm de largura, já que seu suprimento sanguíneo é axial.",
+        "O retalho não apresenta limitações nas suas dimensões transversas, pois na maioria das vezes o retalho é largo o suficiente para conseguir reparar todo o revestimento do nariz, não havendo dificuldade de fechamento da área doadora.",
+        "O fechamento da área doadora por segunda intenção apresenta resultados estéticos melhores do que a enxertia de pele."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 testa conhecimento específico sobre retalhos em cirurgia plástica, focando no retalho médio-frontal para reconstrução nasal.</p><p><strong>A resposta correta é D - O retalho não apresenta limitações nas suas dimensões transversas.</strong></p><p>Vamos analisar cada alternativa e identificar qual afirmação é FALSA:</p><p><strong>A) CORRETA:</strong> O retalho médio-frontal é realmente o retalho mais utilizado para perdas extensas de cobertura nasal em qualquer área, sendo uma técnica clássica e confiável.</p><p><strong>B) CORRETA:</strong> A técnica correta envolve elevação distal no plano subcutâneo e planos mais profundos próximos ao pedículo (supraperiostal) para aumentar a segurança vascular.</p><p><strong>C) CORRETA:</strong> A base do pedículo com 1,5cm é adequada, pois o suprimento sanguíneo é axial (artéria supratroclear), permitindo esta largura sem comprometimento vascular.</p><p><strong>D) FALSA:</strong> Esta é a alternativa incorreta. O retalho médio-frontal TEM limitações importantes nas dimensões transversas. A largura máxima segura geralmente não ultrapassa 3-4cm na região distal, sendo necessário planejamento cuidadoso para evitar necrose da ponta do retalho.</p><p><strong>E) CORRETA:</strong> O fechamento por segunda intenção na área doadora frontal realmente apresenta melhores resultados estéticos do que enxertia de pele, principalmente porque preserva os contornos naturais da região.</p><p><strong>Veredito:</strong> A alternativa D é falsa porque o retalho médio-frontal possui limitações claras nas dimensões transversas, com largura máxima segura de aproximadamente 3-4cm para evitar necrose da extremidade distal.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "São exemplos de retalhos randômicos, EXCETO:",
+      "alternativas": [
+        "Zetaplastia.",
+        "Retalho V-Y.",
+        "Retalho romboide.",
+        "Retalho nasogeniano.",
+        "Retalho de interpolação."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimento sobre classificação de retalhos em cirurgia plástica, especificamente identificando quais são retalhos randômicos.</p><p><strong>A resposta correta é D - Retalho nasogeniano.</strong></p><p>Vamos entender a classificação: Retalhos randômicos dependem da vascularização dérmica e subdérmica (sistema vascular axially indepent), enquanto retalhos axiais têm pedículo vascular específico identificado.</p><p>Analisando cada alternativa:</p><p><strong>A) Zetaplastia:</strong> CORRETO (randômico) - Técnica de rotação que utiliza a vascularização local randomicamente distribuída na pele.</p><p><strong>B) Retalho V-Y:</strong> CORRETO (randômico) - Avanço que depende da vascularização regional sem pedículo vascular específico.</p><p><strong>C) Retalho romboide:</strong> CORRETO (randômico) - Também conhecido como retalho de Limberg, é um retalho de rotação com vascularização randômica.</p><p><strong>D) Retalho nasogeniano:</strong> INCORRETO (axial) - Este é um retalho AXIAL que depende da artéria angular (ramo da artéria facial), tendo vascularização previsível e pedículo definido.</p><p><strong>E) Retalho de interpolação:</strong> CORRETO (randômico) - Retalho que cruza uma área normal, com vascularização dependente de vascularização local.</p><p><strong>Veredito:</strong> O retalho nasogeniano é um retalho AXIAL (não randômico) porque depende de um pedículo vascular específico (artéria angular), sendo a única alternativa que NÃO é um retalho randômico.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "A artéria responsável por cerca de 60% da vascularização da mama é(são):",
+      "alternativas": [
+        "Artéria torácica lateral.",
+        "Ramos perfurantes intercostais posteriores.",
+        "Artéria torácica interna.",
+        "Artéria toraco-acromial.",
+        "Artéria torácica superior."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFPI 2020 avalia conhecimento sobre anatomia vascular da mama, especificamente qual artéria contribui com a maior proporção do suprimento sanguíneo mamário.</p><p><strong>A resposta correta é C - Artéria torácica interna.</strong></p><p>Vamos analisar a vascularização mamária, que é complexa e envolve múltiplas fontes arteriais:</p><p><strong>A) Artéria torácica lateral:</strong> INCORRETA - Contribui significativamente (cerca de 20-30%), mas não é a principal fonte de vascularização.</p><p><strong>B) Ramos perfurantes intercostais posteriores:</strong> INCORRETA - Fornecem vascularização para a mama, especialmente a porção posterior, mas representam uma parcela menor (cerca de 10-15%).</p><p><strong>C) Artéria torácica interna:</strong> CORRETA - Esta é a principal artéria fornecendo aproximadamente 60% do fluxo sanguíneo da mama através de seus ramos perfurantes anteriores, especialmente os 2º, 3º e 4º espaços intercostais.</p><p><strong>D) Artéria toraco-acromial:</strong> INCORRETA - Contribui para vascularização da região superior e lateral da mama, mas em menor proporção (cerca de 10-15%).</p><p><strong>E) Artéria torácica superior:</strong> INCORRETA - É um ramo da artéria axilar que vasculariza principalmente a região axilar superior, contribuindo menos significativamente para a mama propriamente dita.</p><p><strong>Veredito:</strong> A artéria torácica interna é responsável por cerca de 60% da vascularização mamária, sendo assim a principal fonte de suprimento sanguíneo da mama.",
+      "filterIds": [
+        "Ginecologia",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama"
+      ],
+      "tags": [
+        "UFPI2020R3",
+        "UFPI",
+        "R3CG",
+        "PI",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762843408581-49"
+    }
+  ]
+}

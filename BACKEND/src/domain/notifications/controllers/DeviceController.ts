@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { IDeviceService } from '../interfaces/IDeviceService';
 import { ListDevicesOptions, RegisterDevicePayload } from '../types';
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase Timestamp import - using native Date instead
 
 export class DeviceController {
   constructor(private deviceService: IDeviceService) {}
@@ -26,7 +26,10 @@ export class DeviceController {
         data: device,
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao registrar dispositivo';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao registrar dispositivo';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -55,7 +58,7 @@ export class DeviceController {
 
       // Somente o proprietário do dispositivo ou um administrador pode atualizar
       // @ts-ignore - req.user é adicionado pelo middleware de autenticação
-      if (device.userId !== userId && req.user.role !== 'ADMIN') {
+      if (device.userId !== userId && (req.user.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {
@@ -72,7 +75,10 @@ export class DeviceController {
         data: updatedDevice,
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao atualizar dispositivo';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao atualizar dispositivo';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -97,7 +103,7 @@ export class DeviceController {
 
       // Somente o proprietário do dispositivo ou um administrador pode visualizar
       // @ts-ignore - req.user é adicionado pelo middleware de autenticação
-      if (device.userId !== req.user.id && req.user.role !== 'ADMIN') {
+      if (device.userId !== req.user.id && (req.user.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {
@@ -112,7 +118,8 @@ export class DeviceController {
         data: device,
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao buscar dispositivo';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao buscar dispositivo';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -128,7 +135,7 @@ export class DeviceController {
       const {
         deviceType,
         isActive,
-        hasPushToken,
+        has_push_token: hasPushToken,
         hasFcmToken,
         limit,
         page,
@@ -138,16 +145,18 @@ export class DeviceController {
       } = req.query;
 
       const options: ListDevicesOptions = {
-        userId,
-        deviceType: deviceType as any,
-        isActive: isActive !== undefined ? isActive === 'true' : undefined,
-        hasPushToken: hasPushToken !== undefined ? hasPushToken === 'true' : undefined,
-        hasFcmToken: hasFcmToken !== undefined ? hasFcmToken === 'true' : undefined,
+        user_id: userId,
+        device_type: deviceType as any,
+        is_active: isActive !== undefined ? isActive === 'true' : undefined,
+        has_push_token:
+          hasPushToken !== undefined ? hasPushToken === 'true' : undefined,
+        has_fcm_token:
+          hasFcmToken !== undefined ? hasFcmToken === 'true' : undefined,
         limit: limit ? parseInt(limit as string, 10) : undefined,
         page: page ? parseInt(page as string, 10) : undefined,
         offset: offset ? parseInt(offset as string, 10) : undefined,
-        orderBy: orderBy as any,
-        orderDirection: orderDirection as 'asc' | 'desc',
+        order_by: orderBy as any,
+        order_direction: orderDirection as 'asc' | 'desc',
       };
 
       const result = await this.deviceService.getDevices(options);
@@ -159,11 +168,12 @@ export class DeviceController {
           total: result.total,
           page: result.page,
           limit: result.limit,
-          totalPages: result.totalPages,
+          totalPages: (result as any).total_pages,
         },
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao listar dispositivos';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao listar dispositivos';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -175,12 +185,13 @@ export class DeviceController {
     try {
       // Verificar se o usuário é admin
       // @ts-ignore - req.user é adicionado pelo middleware de autenticação
-      if (req.user.role !== 'ADMIN') {
+      if ((req.user.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {
             code: 'FORBIDDEN',
-            message: 'Apenas administradores podem listar todos os dispositivos',
+            message:
+              'Apenas administradores podem listar todos os dispositivos',
           },
         });
       }
@@ -189,7 +200,7 @@ export class DeviceController {
         userId,
         deviceType,
         isActive,
-        hasPushToken,
+        has_push_token: hasPushToken,
         hasFcmToken,
         limit,
         page,
@@ -199,16 +210,18 @@ export class DeviceController {
       } = req.query;
 
       const options: ListDevicesOptions = {
-        userId: userId as string,
-        deviceType: deviceType as any,
-        isActive: isActive !== undefined ? isActive === 'true' : undefined,
-        hasPushToken: hasPushToken !== undefined ? hasPushToken === 'true' : undefined,
-        hasFcmToken: hasFcmToken !== undefined ? hasFcmToken === 'true' : undefined,
+        user_id: userId as string,
+        device_type: deviceType as any,
+        is_active: isActive !== undefined ? isActive === 'true' : undefined,
+        has_push_token:
+          hasPushToken !== undefined ? hasPushToken === 'true' : undefined,
+        has_fcm_token:
+          hasFcmToken !== undefined ? hasFcmToken === 'true' : undefined,
         limit: limit ? parseInt(limit as string, 10) : undefined,
         page: page ? parseInt(page as string, 10) : undefined,
         offset: offset ? parseInt(offset as string, 10) : undefined,
-        orderBy: orderBy as any,
-        orderDirection: orderDirection as 'asc' | 'desc',
+        order_by: orderBy as any,
+        order_direction: orderDirection as 'asc' | 'desc',
       };
 
       const result = await this.deviceService.getDevices(options);
@@ -220,11 +233,14 @@ export class DeviceController {
           total: result.total,
           page: result.page,
           limit: result.limit,
-          totalPages: result.totalPages,
+          totalPages: (result as any).total_pages,
         },
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao listar todos os dispositivos';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao listar todos os dispositivos';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -253,7 +269,7 @@ export class DeviceController {
 
       // Somente o proprietário do dispositivo ou um administrador pode excluir
       // @ts-ignore - req.user é adicionado pelo middleware de autenticação
-      if (device.userId !== userId && req.user.role !== 'ADMIN') {
+      if (device.userId !== userId && (req.user.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {
@@ -272,7 +288,8 @@ export class DeviceController {
         },
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao excluir dispositivo';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao excluir dispositivo';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -303,7 +320,7 @@ export class DeviceController {
 
       // Somente o proprietário do dispositivo ou um administrador pode atualizar
       // @ts-ignore - req.user é adicionado pelo middleware de autenticação
-      if (device.userId !== userId && req.user.role !== 'ADMIN') {
+      if (device.userId !== userId && (req.user.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {
@@ -325,9 +342,9 @@ export class DeviceController {
       }
 
       const updatedDevice = await this.deviceService.updateDevice(id, {
-        fcmToken,
-        pushToken,
-        lastActiveAt: Timestamp.fromDate(new Date()),
+        fcm_token: fcmToken,
+        push_token: pushToken,
+        last_active_at: new Date(),
       });
 
       return res.json({
@@ -335,7 +352,10 @@ export class DeviceController {
         data: updatedDevice,
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao atualizar token do dispositivo';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao atualizar token do dispositivo';
       return res.status(500).json({ error: errorMessage });
     }
   }

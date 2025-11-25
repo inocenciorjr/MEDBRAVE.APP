@@ -24,7 +24,8 @@ export const handleServiceError = (error: unknown, res: Response): void => {
   }
 
   // Erro não tratado
-  const message = error instanceof Error ? error.message : 'Erro interno do servidor';
+  const message =
+    error instanceof Error ? error.message : 'Erro interno do servidor';
   logger.error('Erro não tratado: ', { error, message });
 
   res.status(500).json({

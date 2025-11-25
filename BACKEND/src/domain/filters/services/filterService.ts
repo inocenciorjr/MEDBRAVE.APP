@@ -1,269 +1,589 @@
-import * as admin from 'firebase-admin';
-import { Timestamp } from "firebase-admin/firestore";
-import { v4 as uuidv4 } from 'uuid';
-import { Filter, FilterCategory, FilterCreatePayload, FilterListOptions, FilterStatus, FilterType, FilterUpdatePayload } from "../types";
+import { supabase } from '../../../config/supabaseAdmin';
 import logger from '../../../utils/logger';
-import AppError from '../../../utils/AppError';
 
-export const COLLECTION_NAME = "filters";
-const SUBFILTERS_COLLECTION = "subFilters";
+export interface Filter {
+  id: string;
+  name: string;
+  level: number;
+  is_active: boolean;
+  order?: number;
+}
 
-/**
- * Serviço para gerenciar filtros no Firestore
- */
+export interface SubFilter {
+  id: string;
+  name: string;
+  filter_id: string;
+  parent_id: string | null;
+  level: number;
+  is_active: boolean;
+  order?: number;
+}
+
+export interface FilterHierarchy extends Filter {
+  children?: SubFilter[];
+}
+
+export interface SearchQuestionsParams {
+  filterIds?: string[];
+  subFilterIds?: string[];
+  years?: number[];
+  institutions?: string[];
+  page?: number;
+  limit?: number;
+}
+
 export class FilterService {
-  private db: admin.firestore.Firestore;
-
-  constructor(db: admin.firestore.Firestore = admin.firestore()) {
-    this.db = db;
-  }
-
   /**
-   * Cria um novo filtro
-   * @param data Dados do filtro
-   * @returns Filtro criado
+   * Busca filtros de especialidades médicas (MEDICAL_SPECIALTY)
+   * Estes são os filtros que aparecem no step de "Assuntos"
    */
-  async createFilter(data: FilterCreatePayload): Promise<Filter> {
+  async getMedicalSpecialtyFilters(): Promise<Filter[]> {
     try {
-      if (data.category && !Object.values(FilterCategory).includes(data.category)) {
-        throw new AppError(
-          `Valor inválido para category: ${data.category}. Valores permitidos são: ${Object.values(FilterCategory).join(", ")}.`,
-          400
-        );
+      const { data, error } = await supabase
+        .from('filters')
+        .select('id, name, level, is_active, order')
+        .eq('category', 'MEDICAL_SPECIALTY')
+        .eq('level', 0)
+        .eq('is_active', true)
+        .order('order', { ascending: true });
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar filtros de especialidades:', error);
+        throw new Error('Erro ao buscar filtros de especialidades');
       }
 
-      const now = Timestamp.now();
-      const id = uuidv4();
-      
-      const newFilter: Filter = {
-        id,
-        ...data,
-        isGlobal: typeof data.isGlobal === 'boolean' ? data.isGlobal : false,
-        filterType: data.filterType || FilterType.CONTENT,
-        status: data.status || FilterStatus.ACTIVE,
-        createdAt: now.toDate(),
-        updatedAt: now.toDate(),
-      };
-      
-      // Convertemos as datas para Timestamp antes de salvar no Firestore
-      await this.db.collection(COLLECTION_NAME).doc(id).set({
-        ...newFilter,
-        createdAt: now,
-        updatedAt: now
-      });
-      
-      logger.info(`Filtro criado com sucesso: ${id}`, {
-        category: data.category,
-        filterType: newFilter.filterType,
-      });
-      
-      return newFilter;
+      return data || [];
     } catch (error) {
-      logger.error('Erro ao criar filtro:', error);
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new AppError('Erro ao criar filtro', 500);
+      logger.error('[FilterService] Erro ao buscar filtros de especialidades:', error);
+      throw error;
     }
   }
 
   /**
-   * Obtém um filtro pelo ID
-   * @param filterId ID do filtro
-   * @returns Filtro encontrado ou null se não existir
+   * Busca todos os filtros raiz (level = 0) - mantido para compatibilidade
    */
-  async getFilterById(filterId: string): Promise<Filter | null> {
+  async getRootFilters(): Promise<Filter[]> {
     try {
-      if (!filterId) {
-        throw new AppError('ID do filtro é obrigatório', 400);
+      const { data, error } = await supabase
+        .from('filters')
+        .select('id, name, level, is_active, order, category')
+        .eq('level', 0)
+        .eq('is_active', true)
+        .order('order', { ascending: true });
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar filtros raiz:', error);
+        throw new Error('Erro ao buscar filtros raiz');
       }
-      
-      const docRef = this.db.collection(COLLECTION_NAME).doc(filterId);
-      const docSnap = await docRef.get();
-      
-      if (!docSnap.exists) {
-        logger.warn(`Filtro com ID "${filterId}" não encontrado`);
-        return null;
-      }
-      
-      const data = docSnap.data();
-      
-      // Convertemos as timestamps do Firestore para datas JavaScript
-      return {
-        ...data,
-        id: docSnap.id,
-        createdAt: data?.createdAt instanceof Timestamp ? data.createdAt.toDate() : data?.createdAt,
-        updatedAt: data?.updatedAt instanceof Timestamp ? data.updatedAt.toDate() : data?.updatedAt,
-      } as Filter;
+
+      // logger.info(`[FilterService] getRootFilters retornou ${data?.length || 0} filtros: ${data?.map(f => f.name).join(', ')}`);
+
+      return data || [];
     } catch (error) {
-      logger.error('Erro ao buscar filtro:', error);
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new AppError('Erro ao buscar filtro', 500);
+      logger.error('[FilterService] Erro ao buscar filtros raiz:', error);
+      throw error;
     }
   }
 
   /**
-   * Lista filtros com filtros e ordenação
-   * @param options Opções de listagem e filtros
-   * @returns Lista de filtros
+   * Busca subfiltros de um filtro específico
    */
-  async listFilters(options?: FilterListOptions): Promise<Filter[]> {
+  async getSubfiltersByFilter(
+    filterId: string,
+    level?: number,
+  ): Promise<SubFilter[]> {
     try {
-      let query: FirebaseFirestore.Query<FirebaseFirestore.DocumentData> = this.db.collection(COLLECTION_NAME);
+      let query = supabase
+        .from('sub_filters')
+        .select('id, name, filter_id, parent_id, level, is_active, order')
+        .eq('filter_id', filterId)
+        .eq('is_active', true);
 
-      if (options?.category) {
-        query = query.where("category", "==", options.category);
-      }
-      
-      if (typeof options?.isGlobal === 'boolean') {
-        query = query.where("isGlobal", "==", options.isGlobal);
-      }
-      
-      if (options?.status) {
-        query = query.where("status", "==", options.status);
-      }
-      
-      if (options?.orderBy && options?.orderDirection) {
-        query = query.orderBy(options.orderBy.toString(), options.orderDirection);
-      } else {
-        query = query.orderBy("createdAt", "desc");
-      }
-      
-      if (options?.limit) {
-        query = query.limit(options.limit);
+      if (level !== undefined) {
+        query = query.eq('level', level);
       }
 
-      const snapshot = await query.get();
-      
-      if (snapshot.empty) {
+      query = query.order('order', { ascending: true });
+
+      const { data, error } = await query;
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar subfiltros:', error);
+        throw new Error('Erro ao buscar subfiltros');
+      }
+
+      return data || [];
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar subfiltros:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca hierarquia completa de filtros com todos os subfiltros (recursivo)
+   */
+  async getFilterHierarchy(): Promise<FilterHierarchy[]> {
+    try {
+      // Buscar filtros raiz
+      const filters = await this.getRootFilters();
+
+      // logger.info(`[FilterService] getFilterHierarchy - Processando ${filters.length} filtros raiz`);
+
+      // Buscar todos os subfiltros para cada filtro (recursivamente)
+      const hierarchy = await Promise.all(
+        filters.map(async (filter) => {
+          const children = await this.buildSubfilterHierarchy(filter.id);
+          // logger.info(`[FilterService] Filtro "${filter.name}" tem ${children.length} subfiltros de nível 1`);
+          return {
+            ...filter,
+            children,
+          };
+        }),
+      );
+
+      // logger.info(`[FilterService] getFilterHierarchy retornou hierarquia com ${hierarchy.length} filtros`);
+      return hierarchy;
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar hierarquia:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Constrói hierarquia recursiva de subfiltros
+   * Nota: Não filtra por is_active para mostrar toda a hierarquia
+   */
+  private async buildSubfilterHierarchy(filterId: string, parentId: string | null = null): Promise<any[]> {
+    try {
+      // Buscar TODOS os subfiltros deste filtro de uma vez
+      const { data, error } = await supabase
+        .from('sub_filters')
+        .select('id, name, filter_id, parent_id, level, is_active, order')
+        .eq('filter_id', filterId)
+        // Removido filtro is_active para mostrar toda a hierarquia
+        .order('order', { ascending: true });
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar subfiltros recursivos:', error);
         return [];
       }
-      
-      // Convertemos as timestamps do Firestore para datas JavaScript
-      return snapshot.docs.map(doc => {
-        const data = doc.data();
-        return {
-          ...data,
-          id: doc.id,
-          createdAt: data.createdAt instanceof Timestamp ? data.createdAt.toDate() : data.createdAt,
-          updatedAt: data.updatedAt instanceof Timestamp ? data.updatedAt.toDate() : data.updatedAt,
-        } as Filter;
-      });
-    } catch (error) {
-      logger.error('Erro ao listar filtros:', error);
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new AppError('Erro ao listar filtros', 500);
-    }
-  }
 
-  /**
-   * Atualiza um filtro existente
-   * @param filterId ID do filtro
-   * @param updateDataInput Dados para atualização
-   * @returns Filtro atualizado ou null se não existir
-   */
-  async updateFilter(filterId: string, updateDataInput: FilterUpdatePayload): Promise<Filter | null> {
-    try {
-      if (!filterId) {
-        throw new AppError('ID do filtro é obrigatório', 400);
-      }
-      
-      const filterRef = this.db.collection(COLLECTION_NAME).doc(filterId);
-      const docSnap = await filterRef.get();
+      if (!data || data.length === 0) return [];
 
-      if (!docSnap.exists) {
-        logger.warn(`Filtro com ID "${filterId}" não encontrado para atualização`);
-        return null;
-      }
+      // No primeiro nível, buscar subfiltros cujo parent_id é o próprio filterId
+      const targetParentId = parentId === null ? filterId : parentId;
 
-      // Cria uma cópia do objeto de entrada para evitar mutação do original
-      const updatePayload = { ...updateDataInput };
-      
-      // Remove explicitamente a propriedade 'category' do payload de atualização,
-      // caso ela tenha sido passada (apesar da tipagem que a proíbe).
-      // Isso garante que a categoria do filtro não seja alterada.
-      delete (updatePayload as any).category;
+      // Filtrar apenas os subfiltros do nível atual
+      const currentLevelSubfilters = data.filter(sf => sf.parent_id === targetParentId);
 
-      const now = Timestamp.now();
-      const finalUpdateData = {
-        ...updatePayload,
-        updatedAt: now
+      // Função recursiva interna para construir a árvore
+      const buildChildren = (subfilters: any[], allData: any[]): any[] => {
+        return subfilters.map(subfilter => {
+          // Buscar filhos deste subfiltro
+          const children = allData.filter(sf => sf.parent_id === subfilter.id);
+
+          return {
+            ...subfilter,
+            children: children.length > 0 ? buildChildren(children, allData) : undefined,
+          };
+        });
       };
 
-      await filterRef.update(finalUpdateData);
-      
-      logger.info(`Filtro atualizado com sucesso: ${filterId}`);
-      
-      const updatedDoc = await filterRef.get();
-      
-      if (!updatedDoc.exists) {
-        return null;
-      }
-      
-      const data = updatedDoc.data();
-      
-      // Convertemos as timestamps do Firestore para datas JavaScript
-      return {
-        ...data,
-        id: updatedDoc.id,
-        createdAt: data?.createdAt instanceof Timestamp ? data.createdAt.toDate() : data?.createdAt,
-        updatedAt: data?.updatedAt instanceof Timestamp ? data.updatedAt.toDate() : data?.updatedAt,
-      } as Filter;
+      return buildChildren(currentLevelSubfilters, data);
     } catch (error) {
-      logger.error('Erro ao atualizar filtro:', error);
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new AppError('Erro ao atualizar filtro', 500);
+      logger.error('[FilterService] Erro ao construir hierarquia recursiva:', error);
+      return [];
     }
   }
 
   /**
-   * Exclui um filtro e seus subfiltros relacionados
-   * @param filterId ID do filtro
-   * @returns void
+   * Conta questões por filtro
    */
-  async deleteFilter(filterId: string): Promise<void> {
+  async countQuestionsByFilter(filterId: string): Promise<number> {
     try {
-      if (!filterId) {
-        throw new AppError('ID do filtro é obrigatório', 400);
-      }
-      
-      const filterRef = this.db.collection(COLLECTION_NAME).doc(filterId);
-      const docSnap = await filterRef.get();
+      const { count, error } = await supabase
+        .from('questions')
+        .select('*', { count: 'exact', head: true })
+        .contains('filter_ids', [filterId])
+        .eq('status', 'published');
 
-      if (!docSnap.exists) {
-        throw new AppError(`Filtro com ID "${filterId}" não encontrado para exclusão.`, 404);
-      }
-
-      // Deletar subfiltros relacionados em cascata
-      const subFiltersSnapshot = await this.db.collection(SUBFILTERS_COLLECTION)
-        .where("filterId", "==", filterId)
-        .get();
-        
-      if (!subFiltersSnapshot.empty) {
-        const batch = this.db.batch();
-        subFiltersSnapshot.docs.forEach((doc: admin.firestore.QueryDocumentSnapshot) => {
-          batch.delete(doc.ref);
-        });
-        await batch.commit();
-        logger.info(`${subFiltersSnapshot.size} subfiltros associados ao filtro ${filterId} foram deletados.`);
+      if (error) {
+        logger.error('[FilterService] Erro ao contar questões:', error);
+        throw new Error('Erro ao contar questões');
       }
 
-      await filterRef.delete();
-      logger.info(`Filtro ${filterId} deletado com sucesso.`);
+      return count || 0;
     } catch (error) {
-      logger.error('Erro ao deletar filtro:', error);
-      if (error instanceof AppError) {
-        throw error;
+      logger.error('[FilterService] Erro ao contar questões:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca anos disponíveis com hierarquia (subfiltros de "Ano da Prova")
+   * Retorna anos principais e seus subanos (ex: 2025 -> 2025.1, 2025.2)
+   * Nota: Não filtra por is_active para mostrar todos os anos disponíveis
+   */
+  async getAvailableYears(): Promise<any[]> {
+    try {
+      const { data, error } = await supabase
+        .from('sub_filters')
+        .select('id, name, parent_id')
+        .eq('filter_id', 'Ano da Prova')
+        // Removido filtro is_active para mostrar todos os anos
+        .order('name', { ascending: false });
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar anos:', error);
+        throw new Error('Erro ao buscar anos');
       }
-      throw new AppError('Erro ao deletar filtro', 500);
+
+      if (!data) return [];
+
+      // Separar anos principais (parent_id = 'Ano da Prova') e subanos
+      const mainYears = data.filter(item => item.parent_id === 'Ano da Prova');
+      const subYears = data.filter(item => item.parent_id !== 'Ano da Prova');
+
+      // Construir hierarquia
+      const hierarchy = mainYears.map(year => {
+        const children = subYears
+          .filter(sub => sub.parent_id === year.id)
+          .map(sub => ({
+            id: sub.id,
+            name: sub.name,
+          }));
+
+        return {
+          id: year.id,
+          name: year.name,
+          children: children.length > 0 ? children : undefined,
+        };
+      });
+
+      return hierarchy;
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar anos:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca hierarquia de instituições (estados e universidades)
+   * Retorna estados como nível 1 e universidades como filhos
+   */
+  async getInstitutionHierarchy(): Promise<Array<{
+    id: string;
+    name: string;
+    type: 'state' | 'institution';
+    children?: Array<{
+      id: string;
+      name: string;
+      type: 'institution';
+    }>;
+  }>> {
+    try {
+      // Buscar todos os subfiltros de Universidade
+      const { data, error } = await supabase
+        .from('sub_filters')
+        .select('id, name, parent_id')
+        .eq('filter_id', 'Universidade')
+        // Removido filtro is_active para mostrar todas as instituições
+        .order('name', { ascending: true });
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar instituições:', error);
+        throw new Error('Erro ao buscar instituições');
+      }
+
+      // Separar estados (parent_id = 'Universidade') e universidades
+      const states = (data || []).filter(item => item.parent_id === 'Universidade');
+      const institutions = (data || []).filter(item => item.parent_id !== 'Universidade');
+
+      // Construir hierarquia
+      return states.map(state => ({
+        id: state.id,
+        name: state.name,
+        type: 'state' as const,
+        children: institutions
+          .filter(inst => inst.parent_id === state.id)
+          .map(inst => ({
+            id: inst.id,
+            name: inst.name,
+            type: 'institution' as const,
+          })),
+      }));
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar hierarquia de instituições:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Conta questões baseado nos filtros selecionados
+   * Lógica:
+   * - Dentro de cada grupo: OR (união)
+   * - Entre grupos: AND (interseção)
+   * - Exceção: Tipos de prova + Instituições são OR entre si (soma)
+   * 
+   * Grupos:
+   * 1. Assuntos (filterIds + subFilterIds): OR dentro, AND com outros grupos
+   * 2. Anos: OR dentro, AND com outros grupos
+   * 3. Tipos de Prova + Instituições: OR entre todos (soma)
+   * 
+   * Exemplo 1: Cardiologia + Trauma + 2025 + 2024
+   * = (Cardiologia OR Trauma) AND (2025 OR 2024)
+   * 
+   * Exemplo 2: Cardiologia + 2025 + Revalida + USP
+   * = Cardiologia AND 2025 AND (Revalida OR USP)
+   */
+  async countQuestionsByFilters(params: SearchQuestionsParams): Promise<number> {
+    try {
+      const {
+        filterIds = [],
+        subFilterIds = [],
+        years = [],
+        institutions = [],
+      } = params;
+
+      // Se não tem nenhum filtro, retorna 0
+      if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
+        return 0;
+      }
+
+      // Preparar IDs de anos
+      const yearIds = years.map(year => {
+        const yearStr = year.toString();
+        if (yearStr.includes('.')) {
+          const baseYear = Math.floor(year);
+          return `Ano da Prova_${baseYear}_${yearStr}`;
+        }
+        return `Ano da Prova_${year}`;
+      });
+
+      // Separar tipos de prova (filtros especiais) de especialidades
+      const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
+      const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
+      const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
+
+      // Construir condições SQL usando operador ? para JSONB
+      const andConditions: string[] = ["status = 'published'"];
+
+      // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro do grupo
+      const subjectConditions: string[] = [];
+      if (selectedSpecialties.length > 0) {
+        selectedSpecialties.forEach(id => {
+          subjectConditions.push(`filter_ids ? '${id}'`);
+        });
+      }
+      if (subFilterIds.length > 0) {
+        subFilterIds.forEach(id => {
+          subjectConditions.push(`sub_filter_ids ? '${id}'`);
+        });
+      }
+      if (subjectConditions.length > 0) {
+        andConditions.push(`(${subjectConditions.join(' OR ')})`);
+      }
+
+      // Grupo 2: Anos - OR dentro do grupo
+      if (yearIds.length > 0) {
+        const safeYearIds = yearIds.map((id) => String(id).replace(/[^a-zA-Z0-9_\- ]/g, '')).filter(Boolean);
+        const yearConditions = safeYearIds.map(id => `sub_filter_ids ? '${id}'`).join(' OR ');
+        andConditions.push(`(${yearConditions})`);
+      }
+
+      // Grupo 3: Tipos de Prova + Instituições - OR entre todos (soma)
+      const examAndInstConditions: string[] = [];
+      if (selectedExamTypes.length > 0) {
+        selectedExamTypes.forEach(id => {
+          const safe = String(id).replace(/[^a-zA-Z0-9_\- ]/g, '');
+          if (safe) examAndInstConditions.push(`filter_ids ? '${safe}'`);
+        });
+      }
+      if (institutions.length > 0) {
+        institutions.forEach(id => {
+          const safe = String(id).replace(/[^a-zA-Z0-9_\- ]/g, '');
+          if (safe) examAndInstConditions.push(`sub_filter_ids ? '${safe}'`);
+        });
+      }
+      if (examAndInstConditions.length > 0) {
+        andConditions.push(`(${examAndInstConditions.join(' OR ')})`);
+      }
+
+      const sqlQuery = `
+        SELECT COUNT(*) as total
+        FROM questions
+        WHERE ${andConditions.join(' AND ')};
+      `;
+
+      // Usar RPC para executar a query
+      const { data, error } = await supabase.rpc('get_question_count', { query_text: sqlQuery });
+
+      if (!error && data && data.length > 0) {
+        return Number(data[0]?.total) || 0;
+      }
+
+      logger.warn('[FilterService] RPC falhou, usando fallback. Erro:', error?.message);
+
+      const { data: questions, error: fetchError } = await supabase
+        .from('questions')
+        .select('filter_ids, sub_filter_ids')
+        .eq('status', 'published')
+        .range(0, 999999); // Range máximo
+
+      if (fetchError) {
+        throw new Error(`Erro ao buscar questões: ${fetchError.message}`);
+      }
+
+      const filtered = questions.filter((q: any) => {
+        const qFilterIds = q.filter_ids || [];
+        const qSubFilterIds = q.sub_filter_ids || [];
+
+        // Separar tipos de prova de especialidades
+        const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
+        const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
+        const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
+
+        // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro, AND com outros
+        if (selectedSpecialties.length > 0 || subFilterIds.length > 0) {
+          const hasSpecialty = selectedSpecialties.length === 0 || selectedSpecialties.some(id => qFilterIds.includes(id));
+          const hasSubFilter = subFilterIds.length === 0 || subFilterIds.some(id => qSubFilterIds.includes(id));
+          if (!hasSpecialty && !hasSubFilter) return false;
+        }
+
+        // Grupo 2: Anos - OR dentro, AND com outros
+        if (yearIds.length > 0) {
+          const hasYear = yearIds.some(id => qSubFilterIds.includes(id));
+          if (!hasYear) return false;
+        }
+
+        // Grupo 3: Tipos de Prova + Instituições - OR entre todos
+        if (selectedExamTypes.length > 0 || institutions.length > 0) {
+          const hasExamType = selectedExamTypes.length > 0 && selectedExamTypes.some(id => qFilterIds.includes(id));
+          const hasInst = institutions.length > 0 && institutions.some(id => qSubFilterIds.includes(id));
+          if (!hasExamType && !hasInst) return false;
+        }
+
+        return true;
+      });
+
+      return filtered.length;
+    } catch (error: any) {
+      logger.error('[FilterService] Erro ao contar questões:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões por filtros e subfiltros
+   */
+  async searchQuestions(params: SearchQuestionsParams) {
+    try {
+      const {
+        filterIds = [],
+        subFilterIds = [],
+        years = [],
+        institutions = [],
+        page = 1,
+        limit = 20,
+      } = params;
+
+      // Preparar IDs de anos
+      const yearIds = years.map(year => {
+        const yearStr = year.toString();
+        if (yearStr.includes('.')) {
+          const baseYear = Math.floor(year);
+          return `Ano da Prova_${baseYear}_${yearStr}`;
+        }
+        return `Ano da Prova_${year}`;
+      });
+
+      // Buscar todas as questões publicadas
+      const { data: allQuestions, error } = await supabase
+        .from('questions')
+        .select('*')
+        .eq('status', 'published')
+        .limit(10000); // Limite alto para buscar todas
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar questões:', error);
+        throw new Error('Erro ao buscar questões');
+      }
+
+      // Filtrar no código com lógica AND entre grupos, OR dentro de cada grupo
+      const filtered = (allQuestions || []).filter((q: any) => {
+        const qFilterIds = q.filter_ids || [];
+        const qSubFilterIds = q.sub_filter_ids || [];
+
+        // Separar tipos de prova de especialidades
+        const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
+        const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
+        const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
+
+        // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro, AND com outros
+        if (selectedSpecialties.length > 0 || subFilterIds.length > 0) {
+          const hasSpecialty = selectedSpecialties.length === 0 || selectedSpecialties.some(id => qFilterIds.includes(id));
+          const hasSubFilter = subFilterIds.length === 0 || subFilterIds.some(id => qSubFilterIds.includes(id));
+          if (!hasSpecialty && !hasSubFilter) return false;
+        }
+
+        // Grupo 2: Anos - OR dentro, AND com outros
+        if (yearIds.length > 0) {
+          const hasYear = yearIds.some(id => qSubFilterIds.includes(id));
+          if (!hasYear) return false;
+        }
+
+        // Grupo 3: Tipos de Prova + Instituições - OR entre todos
+        if (selectedExamTypes.length > 0 || institutions.length > 0) {
+          const hasExamType = selectedExamTypes.length > 0 && selectedExamTypes.some(id => qFilterIds.includes(id));
+          const hasInst = institutions.length > 0 && institutions.some(id => qSubFilterIds.includes(id));
+          if (!hasExamType && !hasInst) return false;
+        }
+
+        return true;
+      });
+
+      // Paginar
+      const total = filtered.length;
+      const offset = (page - 1) * limit;
+      const paginatedQuestions = filtered.slice(offset, offset + limit);
+
+      return {
+        questions: paginatedQuestions,
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      };
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar questões:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões por lista de IDs
+   */
+  async getQuestionsByIds(questionIds: string[]): Promise<any[]> {
+    try {
+      const { data, error } = await supabase
+        .from('questions')
+        .select('*')
+        .in('id', questionIds);
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar questões por IDs:', error);
+        throw new Error('Erro ao buscar questões por IDs');
+      }
+
+      // Manter a ordem dos IDs fornecidos
+      const orderedQuestions = questionIds
+        .map(id => data?.find(q => q.id === id))
+        .filter(q => q !== undefined);
+
+      return orderedQuestions;
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar questões por IDs:', error);
+      throw error;
     }
   }
 }
-
-export {}; 

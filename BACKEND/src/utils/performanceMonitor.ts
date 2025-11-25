@@ -17,11 +17,11 @@ class PerformanceMonitor {
    */
   start(operation: string, metadata?: Record<string, any>): string {
     const id = `${operation}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    
+
     this.metrics.set(id, {
       operation,
       startTime: performance.now(),
-      metadata
+      metadata,
     });
 
     return id;
@@ -32,7 +32,7 @@ class PerformanceMonitor {
    */
   end(id: string): PerformanceMetric | null {
     const metric = this.metrics.get(id);
-    
+
     if (!metric) {
       logger.warn(`Performance metric not found: ${id}`);
       return null;
@@ -43,16 +43,16 @@ class PerformanceMonitor {
 
     // Log se a operação foi lenta
     if (metric.duration > this.slowThreshold) {
-      logger.warn(`Slow operation detected`, {
+      logger.warn("Slow operation detected", {
         operation: metric.operation,
         duration: `${metric.duration.toFixed(2)}ms`,
-        metadata: metric.metadata
+        metadata: metric.metadata,
       });
     } else {
-      logger.info(`Operation completed`, {
+      logger.info("Operation completed", {
         operation: metric.operation,
         duration: `${metric.duration.toFixed(2)}ms`,
-        metadata: metric.metadata
+        metadata: metric.metadata,
       });
     }
 
@@ -66,12 +66,12 @@ class PerformanceMonitor {
    * Monitora uma função async automaticamente
    */
   async monitor<T>(
-    operation: string, 
-    fn: () => Promise<T>, 
-    metadata?: Record<string, any>
+    operation: string,
+    fn: () => Promise<T>,
+    metadata?: Record<string, any>,
   ): Promise<T> {
     const id = this.start(operation, metadata);
-    
+
     try {
       const result = await fn();
       this.end(id);
@@ -81,15 +81,15 @@ class PerformanceMonitor {
       if (metric) {
         metric.endTime = performance.now();
         metric.duration = metric.endTime - metric.startTime;
-        
-        logger.error(`Operation failed`, {
+
+        logger.error("Operation failed", {
           operation: metric.operation,
           duration: `${metric.duration.toFixed(2)}ms`,
           error: error instanceof Error ? error.message : 'Unknown error',
-          metadata: metric.metadata
+          metadata: metric.metadata,
         });
       }
-      
+
       this.metrics.delete(id);
       throw error;
     }
@@ -107,16 +107,16 @@ class PerformanceMonitor {
       metadata?: Record<string, any>;
     }>;
   } {
-    const operations = Array.from(this.metrics.values()).map(metric => ({
+    const operations = Array.from(this.metrics.values()).map((metric) => ({
       operation: metric.operation,
       startTime: metric.startTime,
       duration: metric.endTime ? metric.endTime - metric.startTime : undefined,
-      metadata: metric.metadata
+      metadata: metric.metadata,
     }));
 
     return {
       activeOperations: this.metrics.size,
-      operations
+      operations,
     };
   }
 
@@ -139,16 +139,16 @@ export const performanceMiddleware = (operationName?: string) => {
       method: req.method,
       path: req.path,
       userAgent: req.get('User-Agent'),
-      ip: req.ip
+      ip: req.ip,
     });
 
     // Interceptar o final da resposta
     const originalSend = res.send;
-    res.send = function(data: any) {
+    res.send = function (data: any) {
       performanceMonitor.end(id);
       return originalSend.call(this, data);
     };
 
     next();
   };
-}; 
+};

@@ -3,7 +3,9 @@ import { ErrorNotebookEntry } from '../types';
 import { AppError } from '../../../../shared/errors/AppError';
 
 export class ToggleEntryResolvedUseCase {
-  constructor(private errorNotebookEntryRepository: IErrorNotebookEntryRepository) {}
+  constructor(
+    private errorNotebookEntryRepository: IErrorNotebookEntryRepository,
+  ) {}
 
   async execute(id: string, userId: string): Promise<ErrorNotebookEntry> {
     // Validar parâmetros
@@ -23,12 +25,15 @@ export class ToggleEntryResolvedUseCase {
     }
 
     // Verificar se a entrada pertence ao usuário
-    if (existingEntry.userId !== userId) {
+    if (existingEntry.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook entry', 403);
     }
 
     // Alternar status de resolução
-    const updatedEntry = await this.errorNotebookEntryRepository.toggleResolved(id, userId);
+    const updatedEntry = await this.errorNotebookEntryRepository.toggleResolved(
+      id,
+      userId,
+    );
 
     if (!updatedEntry) {
       throw new AppError('Failed to toggle entry resolved status', 500);

@@ -15,7 +15,9 @@ export interface IMentorshipService {
    * Cria uma nova mentoria
    * @param mentorshipData Dados da mentoria
    */
-  createMentorship(mentorshipData: CreateMentorshipPayload): Promise<Mentorship>;
+  createMentorship(
+    mentorshipData: CreateMentorshipPayload,
+  ): Promise<Mentorship>;
 
   /**
    * Obtém uma mentoria pelo ID
@@ -28,7 +30,10 @@ export interface IMentorshipService {
    * @param id ID da mentoria
    * @param updateData Dados para atualização
    */
-  updateMentorship(id: string, updateData: UpdateMentorshipPayload): Promise<Mentorship | null>;
+  updateMentorship(
+    id: string,
+    updateData: UpdateMentorshipPayload,
+  ): Promise<Mentorship | null>;
 
   /**
    * Exclui uma mentoria
@@ -40,7 +45,9 @@ export interface IMentorshipService {
    * Lista mentorias com filtros e paginação
    * @param options Opções de listagem e filtros
    */
-  listMentorships(options?: ListMentorshipsOptions): Promise<PaginatedMentorshipsResult>;
+  listMentorships(
+    options?: ListMentorshipsOptions,
+  ): Promise<PaginatedMentorshipsResult>;
 
   /**
    * Lista mentorias onde o usuário é mentor
@@ -98,7 +105,10 @@ export interface IMentorshipService {
    * @param id ID da mentoria
    * @param objectives Lista de objetivos
    */
-  updateObjectives(id: string, objectives: string[]): Promise<Mentorship | null>;
+  updateObjectives(
+    id: string,
+    objectives: string[],
+  ): Promise<Mentorship | null>;
 
   /**
    * Atualiza a frequência de reuniões de uma mentoria
@@ -129,5 +139,8 @@ export interface IMentorshipService {
    * @param mentorId ID do mentor
    * @param menteeId ID do mentorado
    */
-  existsActiveMentorshipBetweenUsers(mentorId: string, menteeId: string): Promise<boolean>;
+  existsActiveMentorshipBetweenUsers(
+    mentorId: string,
+    menteeId: string,
+  ): Promise<boolean>;
 }

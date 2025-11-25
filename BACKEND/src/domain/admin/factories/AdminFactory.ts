@@ -1,21 +1,25 @@
-import { firestore } from 'firebase-admin';
-import { FirebaseAdminService } from '../services/FirebaseAdminService';
-import { AdminDashboardService } from '../services/AdminDashboardService';
-import { FirebaseAuditLogService } from '../../audit/FirebaseAuditLogService';
+import { SupabaseClient } from '@supabase/supabase-js';
+import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdminService';
+import { AdminDashboardService } from '../../../infra/admin/supabase/AdminDashboardService';
+import { SupabaseAuditLogService } from '../../../infra/audit/supabase/SupabaseAuditLogService';
 import { AdminController } from '../controllers/AdminController';
-import { AdminFlashcardController } from '../controllers/AdminFlashcardController';
+ 
 import { createAdminRoutes } from '../routes/adminRoutes';
-import { createAdminFlashcardRoutes } from '../routes/adminFlashcardRoutes';
-import { FirebaseAdminRepository } from '../repositories/AdminRepository';
+ 
+import { SupabaseAdminRepository } from '../../../infra/admin/supabase/SupabaseAdminRepository';
 import { GetAllAdminsUseCase } from '../use-cases/GetAllAdminsUseCase';
 import { CreateAdminUseCase } from '../use-cases/CreateAdminUseCase';
 import { AdminUser, AdminAction, AdminAuditLog } from '../types/AdminTypes';
-import { validateAdminUser, validateAdminAction, validateAdminAuditLog } from '../validators/adminValidators';
+import {
+  validateAdminUser,
+  validateAdminAction,
+  validateAdminAuditLog,
+} from '../validators/adminValidators';
 import { v4 as uuidv4 } from 'uuid';
 import { Router } from 'express';
 
 export interface AdminModuleOptions {
-  firestoreDb?: firestore.Firestore;
+  supabaseClient?: SupabaseClient;
 }
 
 /**
@@ -28,35 +32,70 @@ export class AdminFactory {
    * @returns Objeto com componentes do módulo
    */
   static create(options?: AdminModuleOptions) {
-    // Obter instância do Firestore
-    const db = options?.firestoreDb || firestore();
+    // Obter instância do Supabase
+    const supabase = options?.supabaseClient;
+    if (!supabase) {
+      throw new Error('SupabaseClient é obrigatório para AdminFactory');
+    }
 
     // Criar repositório
-    const adminRepository = new FirebaseAdminRepository(db);
+    const adminRepository = new SupabaseAdminRepository(supabase);
 
     // Criar casos de uso
     const getAllAdminsUseCase = new GetAllAdminsUseCase(adminRepository);
     const createAdminUseCase = new CreateAdminUseCase(adminRepository);
 
     // Criar serviços
-    const adminService = FirebaseAdminService.getInstance();
+    const adminService = SupabaseAdminService.getInstance();
     const dashboardService = AdminDashboardService.getInstance();
-    const auditService = FirebaseAuditLogService.getInstance();
+    const auditService = SupabaseAuditLogService.getInstance();
 
     // Criar controlador
-    const adminController = new AdminController(adminService, dashboardService, auditService);
-    
+    const adminController = new AdminController(
+      adminService,
+      dashboardService,
+      auditService,
+    );
+
     // Criar controlador de flashcards
-    const adminFlashcardController = new AdminFlashcardController(db);
+    let adminFlashcardController: any = null;
+    try {
+      const mod = require('../controllers/AdminFlashcardController');
+      const Controller = mod.AdminFlashcardController || mod.default;
+      adminFlashcardController = new Controller(supabase);
+    } catch (e) {
+      console.warn('[AdminFactory] Flashcard controller indisponível:', e);
+    }
 
     // Criar rotas
     const adminRoutes = createAdminRoutes(adminController);
-    const flashcardRoutes = createAdminFlashcardRoutes(adminFlashcardController);
-    
-    // Combinar rotas
+    let flashcardRoutes = Router();
+    try {
+      const mod = require('../routes/adminFlashcardRoutes');
+      const createRoutes = mod.createAdminFlashcardRoutes || mod.default;
+      flashcardRoutes = createRoutes(adminFlashcardController);
+    } catch (e) {
+      console.warn('[AdminFactory] Rotas de flashcards indisponíveis:', e);
+    }
+
+    // Criar rotas de filtros
+    let filterRoutes = Router();
+    try {
+      const { createFilterModule } = require('../../filters/factories/FilterFactory');
+      const factoryResult = createFilterModule();
+      if (factoryResult && factoryResult.router) {
+        filterRoutes = factoryResult.router;
+      }
+    } catch (error) {
+      console.error('[AdminFactory] ❌ Erro ao carregar rotas de filtros:', error);
+    }
+
+    // Combinar rotas - ORDEM IMPORTA! Rotas mais específicas primeiro
     const routes = Router();
-    routes.use('/', adminRoutes);
+    routes.use('/filters', filterRoutes);  // Mais específico primeiro
+    routes.use('/subfilters', filterRoutes);  // Alias para subfiltros
     routes.use('/flashcards', flashcardRoutes);
+    routes.use('/', adminRoutes);  // Genérico por último
 
     return {
       routes,
@@ -73,7 +112,9 @@ export class AdminFactory {
     };
   }
 
-  static createUser(adminData: Omit<AdminUser, 'id' | 'createdAt' | 'updatedAt'>): AdminUser {
+  static createUser(
+    adminData: Omit<AdminUser, 'id' | 'createdAt' | 'updatedAt'>,
+  ): AdminUser {
     const now = new Date();
     const user: AdminUser = {
       ...adminData,

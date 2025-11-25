@@ -8,8 +8,8 @@
  */
 export enum PerformanceTrend {
   IMPROVED = 'IMPROVED',
-  MAINTAINED = 'MAINTAINED', 
-  REGRESSED = 'REGRESSED'
+  MAINTAINED = 'MAINTAINED',
+  REGRESSED = 'REGRESSED',
 }
 
 /**
@@ -18,7 +18,7 @@ export enum PerformanceTrend {
 export enum Priority {
   HIGH = 'HIGH',
   MEDIUM = 'MEDIUM',
-  LOW = 'LOW'
+  LOW = 'LOW',
 }
 
 /**
@@ -26,16 +26,16 @@ export enum Priority {
  */
 export enum TimeEfficiencyPattern {
   OVERTHINKING_INCORRECT = 'OVERTHINKING_INCORRECT', // Muito tempo nas erradas
-  RUSHING_CORRECT = 'RUSHING_CORRECT',               // Pouco tempo nas certas
-  BALANCED = 'BALANCED'                              // Tempo equilibrado
+  RUSHING_CORRECT = 'RUSHING_CORRECT', // Pouco tempo nas certas
+  BALANCED = 'BALANCED', // Tempo equilibrado
 }
 
 /**
  * Níveis de efeito de fadiga
  */
 export enum FatigueEffect {
-  NONE = 'NONE',           // Sem fadiga detectada
-  MILD = 'MILD',           // Fadiga leve
-  MODERATE = 'MODERATE',   // Fadiga moderada
-  SEVERE = 'SEVERE'        // Fadiga severa
-} 
+  NONE = 'NONE', // Sem fadiga detectada
+  MILD = 'MILD', // Fadiga leve
+  MODERATE = 'MODERATE', // Fadiga moderada
+  SEVERE = 'SEVERE', // Fadiga severa
+}

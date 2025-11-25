@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste WebSocket Frontend</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .status.connected {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status.disconnected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status.connecting {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .events {
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background: #f9f9f9;
+        }
+
+        .event {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+            background: white;
+        }
+
+        .event.extraction {
+            border-left-color: #17a2b8;
+        }
+
+        .event.categorization {
+            border-left-color: #6f42c1;
+        }
+
+        .event.rewrite {
+            border-left-color: #fd7e14;
+        }
+
+        .event.complete {
+            border-left-color: #28a745;
+        }
+
+        .event.error {
+            border-left-color: #dc3545;
+        }
+
+        .event-type {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .event-message {
+            margin-top: 5px;
+        }
+
+        .event-progress {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        .info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🧪 Teste WebSocket - Progresso de Jobs</h1>
+
+        <div class="info">
+            <strong>📋 Como testar:</strong><br>
+            1. Certifique-se que o backend está rodando (porta 5000)<br>
+            2. Clique em "Conectar WebSocket"<br>
+            3. Clique em "Simular Job de Teste"<br>
+            4. Veja os eventos chegando em tempo real!
+        </div>
+
+        <div id="status" class="status disconnected">
+            ❌ Desconectado
+        </div>
+
+        <div class="input-group">
+            <label>Backend URL:</label><br>
+            <input type="text" id="backendUrl" value="http://localhost:5000" />
+        </div>
+
+        <div>
+            <button id="connectBtn" onclick="connect()">Conectar WebSocket</button>
+            <button id="disconnectBtn" onclick="disconnect()" disabled>Desconectar</button>
+            <button id="testBtn" onclick="simulateJob()" disabled>Simular Job de Teste</button>
+            <button onclick="clearEvents()">Limpar Eventos</button>
+        </div>
+
+        <div class="events" id="events">
+            <p style="color: #999;">Nenhum evento ainda...</p>
+        </div>
+    </div>
+
+    <script>
+        let socket = null;
+        let currentJobId = null;
+
+        function updateStatus(status, message) {
+            const statusEl = document.getElementById('status');
+            statusEl.className = `status ${status}`;
+            statusEl.textContent = message;
+        }
+
+        function addEvent(event) {
+            const eventsEl = document.getElementById('events');
+
+            // Remover mensagem inicial
+            if (eventsEl.querySelector('p')) {
+                eventsEl.innerHTML = '';
+            }
+
+            const eventEl = document.createElement('div');
+            eventEl.className = `event ${event.type}`;
+
+            let html = `
+                <div class="event-type">${getEventIcon(event.type)} ${event.type.toUpperCase()}</div>
+                <div class="event-message">${event.message}</div>
+            `;
+
+            if (event.progress) {
+                html += `
+                    <div class="event-progress">
+                        ${event.progress.current} / ${event.progress.total} (${event.progress.percentage}%)
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${event.progress.percentage}%"></div>
+                    </div>
+                `;
+            }
+
+            eventEl.innerHTML = html;
+            eventsEl.insertBefore(eventEl, eventsEl.firstChild);
+        }
+
+        function getEventIcon(type) {
+            const icons = {
+                extraction: '🔍',
+                categorization: '🏷️',
+                rewrite: '✍️',
+                draft: '📝',
+                complete: '✅',
+                error: '❌'
+            };
+            return icons[type] || '📌';
+        }
+
+        function connect() {
+            const backendUrl = document.getElementById('backendUrl').value;
+
+            updateStatus('connecting', '🔄 Conectando...');
+
+            socket = io(backendUrl, {
+                path: '/socket.io',
+                transports: ['websocket', 'polling'],
+                reconnection: true,
+                reconnectionDelay: 1000,
+                reconnectionAttempts: 5,
+            });
+
+            socket.on('connect', () => {
+                console.log('✅ Socket.IO conectado');
+                updateStatus('connected', '✅ Conectado');
+                document.getElementById('connectBtn').disabled = true;
+                document.getElementById('disconnectBtn').disabled = false;
+                document.getElementById('testBtn').disabled = false;
+            });
+
+            socket.on('disconnect', () => {
+                console.log('❌ Socket.IO desconectado');
+                updateStatus('disconnected', '❌ Desconectado');
+                document.getElementById('connectBtn').disabled = false;
+                document.getElementById('disconnectBtn').disabled = true;
+                document.getElementById('testBtn').disabled = true;
+            });
+
+            socket.on('connect_error', (error) => {
+                console.error('❌ Erro de conexão:', error);
+                updateStatus('disconnected', `❌ Erro: ${error.message}`);
+            });
+
+            socket.on('subscribed', (data) => {
+                console.log('🔔 Inscrito no job:', data.jobId);
+                addEvent({
+                    type: 'info',
+                    message: `Inscrito no job: ${data.jobId}`
+                });
+            });
+
+            socket.on('job:progress', (event) => {
+                console.log('📥 Progresso recebido:', event);
+                addEvent(event);
+            });
+        }
+
+        function disconnect() {
+            if (socket) {
+                socket.disconnect();
+                socket = null;
+            }
+        }
+
+        function simulateJob() {
+            currentJobId = 'test-job-' + Date.now();
+
+            console.log('🧪 Simulando job:', currentJobId);
+
+            // Inscrever no job
+            socket.emit('subscribe:job', currentJobId);
+
+            // Chamar endpoint HTTP para emitir eventos
+            fetch(`${document.getElementById('backendUrl').value}/api/test/websocket/emit`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ jobId: currentJobId }),
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log('✅ Eventos simulados:', data);
+                })
+                .catch(error => {
+                    console.error('❌ Erro ao simular:', error);
+                    alert('Erro ao simular job. Verifique se o backend está rodando.');
+                });
+        }
+
+        function clearEvents() {
+            document.getElementById('events').innerHTML = '<p style="color: #999;">Nenhum evento ainda...</p>';
+        }
+    </script>
+</body>
+
+</html>

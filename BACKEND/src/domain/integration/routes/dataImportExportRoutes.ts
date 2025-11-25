@@ -1,14 +1,16 @@
 import { Router } from 'express';
 import { DataImportExportController } from '../controller/dataImportExportController';
-import { FirebaseDataImportExportService } from '../../../infra/integration/firebase/FirebaseDataImportExportService';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { SupabaseDataImportExportService } from '../../../infra/integration/supabase/SupabaseDataImportExportService';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 import { roleMiddleware } from '../../auth/middleware/role.middleware';
 import { UserRole } from '../../user/types';
 import { rateLimit } from '../middleware/rateLimit.middleware';
 
 // Inicializar o controlador com o serviço
-const dataImportExportService = new FirebaseDataImportExportService();
-const dataImportExportController = new DataImportExportController(dataImportExportService);
+const dataImportExportService = new SupabaseDataImportExportService();
+const dataImportExportController = new DataImportExportController(
+  dataImportExportService,
+);
 
 const router = Router();
 

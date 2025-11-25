@@ -26,22 +26,33 @@ export const userPlanValidators = {
       .withMessage(
         `Método de pagamento inválido. Valores permitidos: ${Object.values(PaymentMethod).join(', ')}`,
       ),
-    body('autoRenew').optional().isBoolean().withMessage('autoRenew deve ser um valor booleano'),
+    body('autoRenew')
+      .optional()
+      .isBoolean()
+      .withMessage('autoRenew deve ser um valor booleano'),
   ],
 
   /**
    * Validador para obter plano de usuário por ID
    */
   getUserPlanById: [
-    param('userPlanId').notEmpty().withMessage('ID do plano de usuário é obrigatório'),
+    param('userPlanId')
+      .notEmpty()
+      .withMessage('ID do plano de usuário é obrigatório'),
   ],
 
   /**
    * Validador para listar planos de usuário
    */
   listUserPlans: [
-    query('userId').optional().isString().withMessage('ID do usuário deve ser uma string'),
-    query('planId').optional().isString().withMessage('ID do plano deve ser uma string'),
+    query('userId')
+      .optional()
+      .isString()
+      .withMessage('ID do usuário deve ser uma string'),
+    query('planId')
+      .optional()
+      .isString()
+      .withMessage('ID do plano deve ser uma string'),
     query('status')
       .optional()
       .isIn(Object.values(UserPlanStatus))
@@ -62,7 +73,9 @@ export const userPlanValidators = {
    * Validador para cancelar plano de usuário
    */
   cancelUserPlan: [
-    param('userPlanId').notEmpty().withMessage('ID do plano de usuário é obrigatório'),
+    param('userPlanId')
+      .notEmpty()
+      .withMessage('ID do plano de usuário é obrigatório'),
     body('reason')
       .optional()
       .isLength({ max: 500 })
@@ -73,11 +86,16 @@ export const userPlanValidators = {
    * Validador para renovar plano de usuário
    */
   renewUserPlan: [
-    param('userPlanId').notEmpty().withMessage('ID do plano de usuário é obrigatório'),
+    param('userPlanId')
+      .notEmpty()
+      .withMessage('ID do plano de usuário é obrigatório'),
     body('durationDays')
       .isInt({ min: 1 })
       .withMessage('Duração em dias deve ser um número inteiro maior que zero'),
-    body('paymentId').optional().isString().withMessage('ID do pagamento deve ser uma string'),
+    body('paymentId')
+      .optional()
+      .isString()
+      .withMessage('ID do pagamento deve ser uma string'),
     body('paymentMethod')
       .optional()
       .isIn(Object.values(PaymentMethod))
@@ -90,7 +108,9 @@ export const userPlanValidators = {
    * Validador para atualizar status de plano de usuário
    */
   updateUserPlanStatus: [
-    param('userPlanId').notEmpty().withMessage('ID do plano de usuário é obrigatório'),
+    param('userPlanId')
+      .notEmpty()
+      .withMessage('ID do plano de usuário é obrigatório'),
     body('status')
       .notEmpty()
       .withMessage('Status é obrigatório')
@@ -108,7 +128,9 @@ export const userPlanValidators = {
    * Validador para atualizar metadados de plano de usuário
    */
   updateUserPlanMetadata: [
-    param('userPlanId').notEmpty().withMessage('ID do plano de usuário é obrigatório'),
+    param('userPlanId')
+      .notEmpty()
+      .withMessage('ID do plano de usuário é obrigatório'),
     body('metadata')
       .notEmpty()
       .withMessage('Metadados são obrigatórios')

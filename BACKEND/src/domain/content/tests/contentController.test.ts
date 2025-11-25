@@ -3,7 +3,7 @@
 import request from 'supertest';
 import express from 'express';
 import contentRoutes from '../routes/contentRoutes';
-import { firestore } from '../../../config/firebaseAdmin';
+import { supabase } from '../../../config/supabase';
 
 const app = express();
 app.use(express.json());
@@ -26,7 +26,7 @@ describe('ContentController (real)', () => {
   afterAll(async () => {
     // Limpa o artigo criado
     if (createdId) {
-      await firestore.collection('articles').doc(createdId).delete();
+      await supabase.from('articles').delete().eq('id', createdId);
     }
   });
 
@@ -45,7 +45,9 @@ describe('ContentController (real)', () => {
   });
 
   it('deve atualizar o artigo', async () => {
-    const res = await request(app).put(`/content/${createdId}`).send({ title: 'Novo Título' });
+    const res = await request(app)
+      .put(`/content/${createdId}`)
+      .send({ title: 'Novo Título' });
     expect(res.status).toBe(200);
     expect(res.body.title).toBe('Novo Título');
   });

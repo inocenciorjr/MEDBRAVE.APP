@@ -1,6 +1,7 @@
 import express from 'express';
 import { r2Service } from '../services/r2Service';
 import { logger } from '../utils/logger';
+import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
 
 const router = express.Router();
 
@@ -9,12 +10,19 @@ router.get('/debug', async (_req, res) => {
   try {
     const config = {
       bucket: process.env.R2_BUCKET_NAME || 'medbrave',
-      endpoint: process.env.R2_ENDPOINT || 'https://16fc5a72ff7734d925e9e5a1b0136737.r2.cloudflarestorage.com',
-      hasAccessKey: !!(process.env.R2_ACCESS_KEY_ID || '41c779389c2f6cd8039d2537cced5a69'),
-      hasSecretKey: !!(process.env.R2_SECRET_ACCESS_KEY || 'f99e3b6cc38730d0a8ccb266a8adedb9a677ed5308a8a39b18edd8b43dbb2a78'),
+      endpoint:
+        process.env.R2_ENDPOINT ||
+        'https://16fc5a72ff7734d925e9e5a1b0136737.r2.cloudflarestorage.com',
+      hasAccessKey: !!(
+        process.env.R2_ACCESS_KEY_ID || '41c779389c2f6cd8039d2537cced5a69'
+      ),
+      hasSecretKey: !!(
+        process.env.R2_SECRET_ACCESS_KEY ||
+        'f99e3b6cc38730d0a8ccb266a8adedb9a677ed5308a8a39b18edd8b43dbb2a78'
+      ),
       publicUrl: process.env.R2_PUBLIC_URL || 'https://medbrave.com.br',
       nodeEnv: process.env.NODE_ENV,
-      tlsReject: process.env.NODE_TLS_REJECT_UNAUTHORIZED
+      tlsReject: process.env.NODE_TLS_REJECT_UNAUTHORIZED,
     };
 
     logger.info('🔧 Debug R2 Configuration', config);
@@ -23,28 +31,31 @@ router.get('/debug', async (_req, res) => {
       success: true,
       message: 'R2 Debug Info',
       config,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error: any) {
     logger.error('Erro no debug R2', { error });
     res.status(500).json({
       success: false,
       error: error.message,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 });
+
+// Proteger todas as rotas
+router.use(authMiddleware as any);
 
 // Health check
 router.get('/health', async (_req, res) => {
   try {
     const bucketInfo = await r2Service.getBucketInfo();
-    
+
     res.json({
       success: true,
       message: 'R2 Service está funcionando',
       ...bucketInfo,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   } catch (error: any) {
     logger.error('Erro no health check R2', { error });
@@ -52,7 +63,7 @@ router.get('/health', async (_req, res) => {
       success: false,
       error: error.message,
       details: error.stack,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 });
@@ -66,14 +77,14 @@ router.post('/presigned-upload', async (req, res) => {
     if (!filename) {
       return res.status(400).json({
         success: false,
-        error: 'Filename é obrigatório'
+        error: 'Filename é obrigatório',
       });
     }
 
     if (!contentType) {
       return res.status(400).json({
         success: false,
-        error: 'Content-Type é obrigatório'
+        error: 'Content-Type é obrigatório',
       });
     }
 
@@ -83,38 +94,47 @@ router.post('/presigned-upload', async (req, res) => {
         success: false,
         error: 'Tipo de arquivo não permitido',
         allowedTypes: [
-          'image/jpeg', 'image/png', 'image/gif', 'image/webp',
-          'application/pdf', 'text/plain'
-        ]
+          'image/jpeg',
+          'image/png',
+          'image/gif',
+          'image/webp',
+          'application/pdf',
+          'text/plain',
+        ],
       });
     }
 
+    // Sanitizar inputs
+    const safeFolder = String(folder).replace(/[^a-zA-Z0-9_\-/]/g, '');
+    const safeFilename = String(filename).replace(/[^a-zA-Z0-9_\-.]/g, '');
+    if (!safeFilename) {
+      return res.status(400).json({ success: false, error: 'Filename inválido' });
+    }
     // Gerar presigned URL
     const result = await r2Service.generatePresignedUploadUrl(
-      filename,
+      safeFilename,
       contentType,
-      folder,
-      3600, // 1 hora
-      metadata
+      safeFolder,
+      3600,
+      metadata,
     );
 
     logger.info('Presigned upload URL gerada via API', {
       filename,
       folder,
       contentType,
-      fileKey: result.fileKey
+      fileKey: result.fileKey,
     });
 
     return res.json({
       success: true,
-      ...result
+      ...result,
     });
-
   } catch (error: any) {
     logger.error('Erro ao gerar presigned upload URL via API', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -123,40 +143,49 @@ router.post('/presigned-upload', async (req, res) => {
 router.post('/download-url', async (req, res) => {
   try {
     const { fileKey, expiresIn = 3600 } = req.body;
+    const safeFileKey = String(fileKey);
+    if (!/^[a-zA-Z0-9_\-/\.]+$/.test(safeFileKey) || safeFileKey.includes('..')) {
+      return res.status(400).json({ success: false, error: 'fileKey inválido' });
+    }
 
     if (!fileKey) {
       return res.status(400).json({
         success: false,
-        error: 'fileKey é obrigatório'
+        error: 'fileKey é obrigatório',
       });
     }
 
     // Verificar se arquivo existe
-    const exists = await r2Service.fileExists(fileKey);
+    const exists = await r2Service.fileExists(safeFileKey);
     if (!exists) {
       return res.status(404).json({
         success: false,
-        error: 'Arquivo não encontrado'
+        error: 'Arquivo não encontrado',
       });
     }
 
     // Gerar presigned URL para download
-    const downloadUrl = await r2Service.generatePresignedDownloadUrl(fileKey, expiresIn);
+    const downloadUrl = await r2Service.generatePresignedDownloadUrl(
+      safeFileKey,
+      expiresIn,
+    );
 
-    logger.info('Presigned download URL gerada via API', { fileKey, expiresIn });
+    logger.info('Presigned download URL gerada via API', {
+      fileKey: safeFileKey,
+      expiresIn,
+    });
 
     return res.json({
       success: true,
       downloadUrl,
       expiresIn,
-      fileKey
+      fileKey,
     });
-
   } catch (error: any) {
     logger.error('Erro ao gerar presigned download URL via API', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -164,12 +193,13 @@ router.post('/download-url', async (req, res) => {
 // Listar arquivos
 router.get('/files', async (req, res) => {
   try {
-    logger.info('🔍 Iniciando listagem de arquivos R2', { 
+    logger.info('🔍 Iniciando listagem de arquivos R2', {
       query: req.query,
-      headers: req.headers['user-agent']
+      headers: req.headers['user-agent'],
     });
 
     const { folder = '', limit = 50 } = req.query;
+    const safeFolder = String(folder).replace(/[^a-zA-Z0-9_\-/]/g, '');
     const maxKeys = Math.min(parseInt(limit as string) || 50, 100);
 
     logger.info('📁 Parâmetros processados', { folder, maxKeys });
@@ -179,40 +209,39 @@ router.get('/files', async (req, res) => {
       await r2Service.getBucketInfo();
       logger.info('✅ Conexão com R2 verificada');
     } catch (connectionError: any) {
-      logger.error('❌ Falha na conexão com R2', { 
+      logger.error('❌ Falha na conexão com R2', {
         error: connectionError.message,
-        stack: connectionError.stack
+        stack: connectionError.stack,
       });
       throw new Error(`Falha na conexão R2: ${connectionError.message}`);
     }
 
-    const files = await r2Service.listFiles(folder as string, maxKeys);
+    const files = await r2Service.listFiles(safeFolder, maxKeys);
 
-    logger.info('Arquivos listados via API', { 
-      folder, 
+    logger.info('Arquivos listados via API', {
+      folder: safeFolder,
       count: files.length,
-      maxKeys 
+      maxKeys,
     });
 
     return res.json({
       success: true,
       files,
       count: files.length,
-      folder,
-      limit: maxKeys
+      folder: safeFolder,
+      limit: maxKeys,
     });
-
   } catch (error: any) {
-    logger.error('❌ Erro ao listar arquivos via API', { 
+    logger.error('❌ Erro ao listar arquivos via API', {
       error: error.message,
       stack: error.stack,
-      query: req.query
+      query: req.query,
     });
     return res.status(500).json({
       success: false,
       error: error.message,
       details: process.env.NODE_ENV === 'development' ? error.stack : undefined,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
   }
 });
@@ -221,11 +250,14 @@ router.get('/files', async (req, res) => {
 router.delete('/files/:fileKey(*)', async (req, res) => {
   try {
     const fileKey = req.params.fileKey;
+    if (!/^[a-zA-Z0-9_\-/\.]+$/.test(fileKey) || fileKey.includes('..')) {
+      return res.status(400).json({ success: false, error: 'fileKey inválido' });
+    }
 
     if (!fileKey) {
       return res.status(400).json({
         success: false,
-        error: 'fileKey é obrigatório'
+        error: 'fileKey é obrigatório',
       });
     }
 
@@ -234,7 +266,7 @@ router.delete('/files/:fileKey(*)', async (req, res) => {
     if (!exists) {
       return res.status(404).json({
         success: false,
-        error: 'Arquivo não encontrado'
+        error: 'Arquivo não encontrado',
       });
     }
 
@@ -246,14 +278,16 @@ router.delete('/files/:fileKey(*)', async (req, res) => {
     return res.json({
       success: true,
       message: 'Arquivo deletado com sucesso',
-      fileKey
+      fileKey,
     });
-
   } catch (error: any) {
-    logger.error('Erro ao deletar arquivo via API', { error, fileKey: req.params.fileKey });
+    logger.error('Erro ao deletar arquivo via API', {
+      error,
+      fileKey: req.params.fileKey,
+    });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -266,27 +300,26 @@ router.post('/upload-complete', async (req, res) => {
     if (!fileKey) {
       return res.status(400).json({
         success: false,
-        error: 'fileKey é obrigatório'
+        error: 'fileKey é obrigatório',
       });
     }
 
-    logger.info('Upload concluído notificado via API', { 
-      fileKey, 
-      metadata 
+    logger.info('Upload concluído notificado via API', {
+      fileKey,
+      metadata,
     });
 
     return res.json({
       success: true,
       message: 'Upload registrado com sucesso',
       fileKey,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
-
   } catch (error: any) {
     logger.error('Erro ao processar notificação de upload completo', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -299,41 +332,44 @@ router.post('/image-upload-urls', async (req, res) => {
     if (!filename) {
       return res.status(400).json({
         success: false,
-        error: 'Filename é obrigatório'
+        error: 'Filename é obrigatório',
       });
     }
 
     // Verificar se é uma imagem
-    const contentType = filename.toLowerCase().includes('.') 
+    const contentType = filename.toLowerCase().includes('.')
       ? getContentTypeFromFilename(filename)
       : 'image/jpeg';
 
     if (!contentType.startsWith('image/')) {
       return res.status(400).json({
         success: false,
-        error: 'Apenas imagens são suportadas neste endpoint'
+        error: 'Apenas imagens são suportadas neste endpoint',
       });
     }
 
     // Gerar URLs para diferentes versões
-    const urls = await r2Service.generateImageUploadUrls(filename, folder, metadata);
+    const urls = await r2Service.generateImageUploadUrls(
+      filename,
+      folder,
+      metadata,
+    );
 
     logger.info('URLs de upload de imagem geradas via API', {
       filename,
       folder,
-      versionsGenerated: Object.keys(urls).length
+      versionsGenerated: Object.keys(urls).length,
     });
 
     return res.json({
       success: true,
-      ...urls
+      ...urls,
     });
-
   } catch (error: any) {
     logger.error('Erro ao gerar URLs de upload de imagem via API', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -346,7 +382,7 @@ router.get('/files/:fileKey(*)/exists', async (req, res) => {
     if (!fileKey) {
       return res.status(400).json({
         success: false,
-        error: 'fileKey é obrigatório'
+        error: 'fileKey é obrigatório',
       });
     }
 
@@ -355,14 +391,13 @@ router.get('/files/:fileKey(*)/exists', async (req, res) => {
     return res.json({
       success: true,
       exists,
-      fileKey
+      fileKey,
     });
-
   } catch (error: any) {
     logger.error('Erro ao verificar existência de arquivo via API', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -374,14 +409,13 @@ router.get('/bucket-info', async (_req, res) => {
 
     return res.json({
       success: true,
-      ...bucketInfo
+      ...bucketInfo,
     });
-
   } catch (error: any) {
     logger.error('Erro ao obter informações do bucket via API', { error });
     return res.status(500).json({
       success: false,
-      error: error.message
+      error: error.message,
     });
   }
 });
@@ -389,18 +423,18 @@ router.get('/bucket-info', async (_req, res) => {
 // Helper function
 function getContentTypeFromFilename(filename: string): string {
   const extension = filename.toLowerCase().split('.').pop();
-  
+
   const mimeTypes: Record<string, string> = {
-    'jpg': 'image/jpeg',
-    'jpeg': 'image/jpeg',
-    'png': 'image/png',
-    'gif': 'image/gif',
-    'webp': 'image/webp',
-    'pdf': 'application/pdf',
-    'txt': 'text/plain'
+    jpg: 'image/jpeg',
+    jpeg: 'image/jpeg',
+    png: 'image/png',
+    gif: 'image/gif',
+    webp: 'image/webp',
+    pdf: 'application/pdf',
+    txt: 'text/plain',
   };
 
   return mimeTypes[extension || ''] || 'application/octet-stream';
 }
 
-export default router; 
+export default router;

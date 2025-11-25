@@ -3,12 +3,16 @@ import { Result, Success, Failure } from '../../../shared/types/Result';
 export interface UserProps {
   id: string;
   email: string;
-  name: string;
-  createdAt: Date;
-  updatedAt: Date;
-  isActive: boolean;
-  role: UserRole;
-  profileId?: string;
+  display_name: string;
+  username_slug: string;
+  created_at: Date;
+  updated_at: Date;
+  user_role: UserRole;
+  mastered_flashcards?: number;
+  total_decks?: number;
+  total_flashcards?: number;
+  active_flashcards?: number;
+  last_login?: Date;
 }
 
 export enum UserRole {
@@ -25,14 +29,13 @@ export class User {
   }
 
   public static create(
-    props: Omit<UserProps, 'createdAt' | 'updatedAt' | 'isActive'>,
+    props: Omit<UserProps, 'created_at' | 'updated_at'>,
   ): Result<User> {
     try {
       const user = new User({
         ...props,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-        isActive: true,
+        created_at: new Date(),
+        updated_at: new Date(),
       });
 
       return Success(user);
@@ -50,46 +53,61 @@ export class User {
     return this.props.email;
   }
 
-  get name(): string {
-    return this.props.name;
+  get display_name(): string {
+    return this.props.display_name;
   }
 
-  get role(): UserRole {
-    return this.props.role;
+  get username_slug(): string {
+    return this.props.username_slug;
   }
 
-  get isActive(): boolean {
-    return this.props.isActive;
+  get user_role(): UserRole {
+    return this.props.user_role;
   }
 
-  get createdAt(): Date {
-    return this.props.createdAt;
+
+
+  get mastered_flashcards(): number | undefined {
+    return this.props.mastered_flashcards;
   }
 
-  get updatedAt(): Date {
-    return this.props.updatedAt;
+  get total_decks(): number | undefined {
+    return this.props.total_decks;
   }
 
-  get profileId(): string | undefined {
-    return this.props.profileId;
+  get total_flashcards(): number | undefined {
+    return this.props.total_flashcards;
   }
+
+  get active_flashcards(): number | undefined {
+    return this.props.active_flashcards;
+  }
+
+  get last_login(): Date | undefined {
+    return this.props.last_login;
+  }
+
+  get created_at(): Date {
+    return this.props.created_at;
+  }
+
+  get updated_at(): Date {
+    return this.props.updated_at;
+  }
+
+
 
   // Methods
-  public deactivate(): void {
-    this.props.isActive = false;
-    this.props.updatedAt = new Date();
+  public updateLastLogin(): void {
+    this.props.last_login = new Date();
+    this.props.updated_at = new Date();
   }
 
-  public activate(): void {
-    this.props.isActive = true;
-    this.props.updatedAt = new Date();
-  }
-
-  public update(props: Partial<Omit<UserProps, 'id' | 'createdAt'>>): void {
+  public update(props: Partial<Omit<UserProps, 'id' | 'created_at'>>): void {
     this.props = {
       ...this.props,
       ...props,
-      updatedAt: new Date(),
+      updated_at: new Date(),
     };
   }
 

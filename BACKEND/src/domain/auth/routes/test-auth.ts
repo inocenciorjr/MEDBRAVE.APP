@@ -9,19 +9,19 @@ router.get('/generate-test-token', (_req, res) => {
   try {
     // Gerar um ID de usuário aleatório para teste
     const userId = uuidv4();
-    
+
     // Criar payload do token
     const payload = {
       id: userId,
       email: `test-${userId.substring(0, 8)}@example.com`,
       role: 'user',
-      iat: Math.floor(Date.now() / 1000)
+      iat: Math.floor(Date.now() / 1000),
     };
-    
+
     // Assinar o token com uma chave secreta
     const secretKey = process.env.JWT_SECRET || 'test-secret-key';
     const token = jwt.sign(payload, secretKey);
-    
+
     // Retornar o token e informações do usuário
     res.status(200).json({
       success: true,
@@ -29,16 +29,16 @@ router.get('/generate-test-token', (_req, res) => {
       user: {
         id: payload.id,
         email: payload.email,
-        role: payload.role
-      }
+        role: payload.role,
+      },
     });
   } catch (error) {
     console.error('Erro ao gerar token de teste:', error);
-    res.status(500).json({ 
-      success: false, 
-      error: 'Erro ao gerar token de teste' 
+    res.status(500).json({
+      success: false,
+      error: 'Erro ao gerar token de teste',
     });
   }
 });
 
-export default router; 
+export default router;

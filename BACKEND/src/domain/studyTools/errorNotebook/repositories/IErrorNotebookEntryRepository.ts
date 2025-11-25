@@ -1,5 +1,11 @@
 import { ErrorNotebookEntry } from '../types';
-import { PaginationOptions } from '../../studySessions/types';
+// PaginationOptions moved to shared types
+export interface PaginationOptions {
+  page: number;
+  limit: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+}
 import { ReviewQuality } from '../../flashcards/types';
 
 export interface ErrorNotebookEntryFilters {
@@ -58,7 +64,10 @@ export interface IErrorNotebookEntryRepository {
     quality: ReviewQuality,
     notes?: string | null,
   ): Promise<ErrorNotebookEntry | null>;
-  toggleResolved(id: string, userId: string): Promise<ErrorNotebookEntry | null>;
+  toggleResolved(
+    id: string,
+    userId: string,
+  ): Promise<ErrorNotebookEntry | null>;
   getBySource(
     notebookId: string,
     userId: string,

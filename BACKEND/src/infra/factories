@@ -1,6 +1,6 @@
-import { firestore as db } from 'firebase-admin';
-import { FirebaseNotificationService } from '../services/FirebaseNotificationService';
-import { FirebasePaymentNotificationService } from '../services/FirebasePaymentNotificationService';
+ 
+import { SupabaseNotificationService } from '../notifications/supabase/SupabaseNotificationService';
+import { SupabasePaymentNotificationService } from '../notifications/supabase/SupabasePaymentNotificationService';
 import { NotificationController } from '../controllers/NotificationController';
 import { PaymentNotificationController } from '../controllers/PaymentNotificationController';
 import { createNotificationRoutes } from '../routes/notificationRoutes';
@@ -8,17 +8,17 @@ import { createPaymentNotificationRoutes } from '../routes/paymentNotificationRo
 import { Router } from 'express';
 
 /**
- * Cria os serviços e controladores de notificações
+ * Cria os serviços e controladores de notificações usando Supabase (recomendado)
  */
 export const createNotificationModule = (): {
   notificationRoutes: Router;
   paymentNotificationRoutes: Router;
-  notificationService: FirebaseNotificationService;
-  paymentNotificationService: FirebasePaymentNotificationService;
+  notificationService: SupabaseNotificationService;
+  paymentNotificationService: SupabasePaymentNotificationService;
 } => {
-  // Criar serviços
-  const notificationService = new FirebaseNotificationService(db());
-  const paymentNotificationService = new FirebasePaymentNotificationService(db());
+  // Criar serviços Supabase
+  const notificationService = new SupabaseNotificationService();
+  const paymentNotificationService = new SupabasePaymentNotificationService();
 
   // Criar controladores
   const notificationController = new NotificationController(notificationService);
@@ -34,4 +34,7 @@ export const createNotificationModule = (): {
     notificationService,
     paymentNotificationService,
   };
-}; 
+};
+
+ 
+// Use createNotificationModule() for Supabase implementation

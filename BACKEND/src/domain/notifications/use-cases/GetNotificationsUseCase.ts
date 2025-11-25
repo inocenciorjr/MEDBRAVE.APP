@@ -1,13 +1,11 @@
-import { inject, injectable } from 'tsyringe';
 import { INotificationService } from '../interfaces/INotificationService';
-import { ListNotificationsOptions, PaginatedNotificationsResult } from '../types';
+import {
+  ListNotificationsOptions,
+  PaginatedNotificationsResult,
+} from '../types';
 
-@injectable()
 export class GetNotificationsUseCase {
-  constructor(
-    @inject('NotificationService')
-    private notificationService: INotificationService,
-  ) {}
+  constructor(private notificationService: INotificationService) {}
 
   async execute(
     userId: string,

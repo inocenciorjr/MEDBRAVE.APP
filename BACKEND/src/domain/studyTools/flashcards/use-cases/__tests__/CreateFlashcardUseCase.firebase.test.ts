@@ -23,7 +23,9 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
     testUserId = generateUniqueId('testuser');
     testDeckId = generateUniqueId('testdeck');
 
-    console.log(`Running tests with testUserId: ${testUserId} and testDeckId: ${testDeckId}`);
+    console.log(
+      `Running tests with testUserId: ${testUserId} and testDeckId: ${testDeckId}`,
+    );
   });
 
   afterAll(async () => {
@@ -56,7 +58,9 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
     expect(flashcard.frontContent).toBe(createDto.frontContent);
     expect(flashcard.backContent).toBe(createDto.backContent);
     expect(flashcard.personalNotes).toBe(createDto.personalNotes);
-    expect(flashcard.tags).toEqual(expect.arrayContaining(createDto.tags ?? []));
+    expect(flashcard.tags).toEqual(
+      expect.arrayContaining(createDto.tags ?? []),
+    );
 
     // Verificar texto pesquisável
     expect(flashcard.searchableText).toContain('anticorpos');
@@ -74,7 +78,9 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
     };
 
     // Verificar se lança erro
-    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(AppError);
+    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(
+      AppError,
+    );
   });
 
   it('should throw an error if deckId is not provided', async () => {
@@ -88,7 +94,9 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
     };
 
     // Verificar se lança erro
-    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(AppError);
+    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(
+      AppError,
+    );
   });
 
   it('should throw an error if frontContent is not provided', async () => {
@@ -97,12 +105,15 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
       userId: testUserId,
       deckId: testDeckId,
       frontContent: '', // Inválido
-      backContent: 'Conjunto de sintomas neurológicos causados por deficiência de oxigênio',
+      backContent:
+        'Conjunto de sintomas neurológicos causados por deficiência de oxigênio',
       tags: ['neurologia', 'emergência'],
     };
 
     // Verificar se lança erro
-    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(AppError);
+    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(
+      AppError,
+    );
   });
 
   it('should throw an error if backContent is not provided', async () => {
@@ -116,7 +127,9 @@ describe('CreateFlashcardUseCase Firebase Integration Tests', () => {
     };
 
     // Verificar se lança erro
-    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(AppError);
+    await expect(createFlashcardUseCase.execute(invalidDto)).rejects.toThrow(
+      AppError,
+    );
   });
 
   it('should use empty array for tags if not provided', async () => {

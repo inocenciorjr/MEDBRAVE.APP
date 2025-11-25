@@ -1,4 +1,9 @@
-import { Filter, FilterCreatePayload, FilterListOptions, FilterUpdatePayload } from "../types";
+import {
+  Filter,
+  FilterCreatePayload,
+  FilterListOptions,
+  FilterUpdatePayload,
+} from "../types";
 
 export interface IFilterRepository {
   create(data: FilterCreatePayload): Promise<Filter>;
@@ -6,4 +11,4 @@ export interface IFilterRepository {
   list(options?: FilterListOptions): Promise<Filter[]>;
   update(id: string, data: FilterUpdatePayload): Promise<Filter | null>;
   delete(id: string): Promise<void>;
-} 
+}

@@ -5,7 +5,8 @@ export * from './types';
 export * from './interfaces/IUserStatisticsService';
 
 // Services
-export * from './services/FirebaseUserStatisticsService';
+// Firebase services removed - using Supabase services from infra layer
+// export * from './services/FirebaseUserStatisticsService';
 
 // Controllers
 export * from './controllers/UserStatisticsController';
@@ -14,4 +15,4 @@ export * from './controllers/UserStatisticsController';
 export * from './factory/UserStatisticsFactory';
 
 // Routes
-export { default as userStatisticsRoutes } from './routes/userStatisticsRoutes'; 
+export { default as userStatisticsRoutes } from './routes/userStatisticsRoutes';

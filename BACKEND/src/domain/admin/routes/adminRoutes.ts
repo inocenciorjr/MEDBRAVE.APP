@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { AdminController } from '../controllers/AdminController';
 import { adminMiddleware } from '../../auth/middleware/admin.middleware';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 // import { firestore } from 'firebase-admin';
 // import { authMiddleware } from '../../../shared/middlewares/authMiddleware';
 // import { adminMiddleware } from '../../../shared/middlewares/adminMiddleware';
@@ -11,27 +11,37 @@ export function createAdminRoutes(controller: AdminController): Router {
 
   // Middleware de autenticação (deve vir ANTES do adminMiddleware)
   router.use(authMiddleware);
-  
+
   // Middleware para garantir que apenas administradores acessem essas rotas
   router.use(adminMiddleware);
 
+  // Rotas de dashboard (DEVEM VIR ANTES DAS ROTAS COM :id)
+  router.get('/dashboard/stats', controller.getDashboardStats.bind(controller));
+
+  // Rotas de auditoria (DEVEM VIR ANTES DAS ROTAS COM :id)
+  router.get('/audit/logs', controller.getAuditLogs.bind(controller));
+
   // Rotas de administradores
   router.get('/', controller.getAdmins.bind(controller));
-  router.get('/:id', controller.getAdminById.bind(controller));
+  router.get('/:id', (req, res, next) => {
+    // Validar se o ID é um UUID válido
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    if (!uuidRegex.test(req.params.id)) {
+      return res.status(404).json({ error: 'Recurso não encontrado' });
+    }
+    return controller.getAdminById(req, res, next);
+  });
   router.post('/', controller.createAdmin.bind(controller));
   router.put('/:id', controller.updateAdmin.bind(controller));
   router.delete('/:id', controller.deleteAdmin.bind(controller));
 
-  // Rotas de dashboard
-  router.get('/dashboard/stats', controller.getDashboardStats.bind(controller));
-
-  // Rotas de auditoria
-  router.get('/audit/logs', controller.getAuditLogs.bind(controller));
-
   // Rotas de alteração de role (apenas admin pode alterar role de outros usuários)
   router.put('/:id/role', (req, res) => {
     if (req.user?.role !== 'admin') {
-      return res.status(403).json({ error: 'Apenas administradores podem alterar a role de outros usuários.' });
+      return res.status(403).json({
+        error:
+          'Apenas administradores podem alterar a role de outros usuários.',
+      });
     }
     const { role } = req.body;
     if (!role) {
@@ -43,8 +53,8 @@ export function createAdminRoutes(controller: AdminController): Router {
       message: 'Role atualizada com sucesso',
       user: {
         id: req.params.id,
-        role
-      }
+        role,
+      },
     });
   });
 

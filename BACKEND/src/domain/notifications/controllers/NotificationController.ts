@@ -45,24 +45,30 @@ export class NotificationController {
       const notificationData: CreateNotificationPayload = req.body;
 
       // Se não for um administrador, o usuário só pode criar notificações para si mesmo
-      if (!req.user || req.user.role !== 'ADMIN' && notificationData.userId !== req.user?.id) {
+      if (
+        !req.user ||
+        ((req.user.user_role || '').toUpperCase() !== 'ADMIN' && (notificationData as any).user_id !== req.user?.id)
+      ) {
         return res.status(403).json({
           success: false,
           error: {
             code: 'FORBIDDEN',
-            message: 'Você não tem permissão para criar notificações para outros usuários',
+            message:
+              'Você não tem permissão para criar notificações para outros usuários',
           },
         });
       }
 
-      const notification = await this.createNotificationUseCase.execute(notificationData);
+      const notification =
+        await this.createNotificationUseCase.execute(notificationData);
 
       return res.status(201).json({
         success: true,
         data: notification,
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao criar notificação';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao criar notificação';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -72,16 +78,21 @@ export class NotificationController {
    */
   async getNotificationById(req: Request, res: Response) {
     try {
-      if (!req.user?.id || !req.user?.role) {
+      if (!req.user?.id) {
         return res.status(401).json({ error: 'Usuário não autenticado' });
       }
       // const { id } = req.params; // id is not used
       // Aqui deveria chamar um use case/service específico para buscar por ID
       // Exemplo: const notification = await this.getNotificationByIdUseCase.execute(id);
       // Por enquanto, retorna erro
-      return res.status(501).json({ error: 'Não implementado: buscar notificação por ID' });
+      return res
+        .status(501)
+        .json({ error: 'Não implementado: buscar notificação por ID' });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao buscar notificação por ID';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao buscar notificação por ID';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -94,19 +105,30 @@ export class NotificationController {
       if (!req.user?.id) {
         return res.status(401).json({ error: 'Usuário não autenticado' });
       }
-      const { isRead, type, priority, limit, page, offset, orderByCreatedAt, includeExpired } =
-        req.query;
+      const {
+        isRead,
+        type,
+        priority,
+        limit,
+        page,
+        offset,
+        orderByCreatedAt,
+        includeExpired,
+      } = req.query;
       const options: ListNotificationsOptions = {
-        isRead: isRead !== undefined ? isRead === 'true' : undefined,
+        is_read: isRead !== undefined ? isRead === 'true' : undefined,
         type: type as NotificationType,
         priority: priority as NotificationPriority,
         limit: limit ? parseInt(limit as string, 10) : undefined,
         page: page ? parseInt(page as string, 10) : undefined,
         offset: offset ? parseInt(offset as string, 10) : undefined,
-        orderByCreatedAt: orderByCreatedAt as 'asc' | 'desc',
-        includeExpired: includeExpired === 'true',
+        order_by_created_at: orderByCreatedAt as 'asc' | 'desc',
+        include_expired: includeExpired === 'true',
       };
-      const result = await this.getNotificationsUseCase.execute(req.user.id, options);
+      const result = await this.getNotificationsUseCase.execute(
+        req.user.id,
+        options,
+      );
       return res.json({
         success: true,
         data: result.notifications,
@@ -114,11 +136,12 @@ export class NotificationController {
           total: result.total,
           page: result.page,
           limit: result.limit,
-          totalPages: result.totalPages,
+          totalPages: (result as any).total_pages,
         },
       });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao buscar notificações';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao buscar notificações';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -137,7 +160,9 @@ export class NotificationController {
       const { id } = req.params;
 
       if (!id) {
-        return res.status(400).json({ error: 'ID da notificação não fornecido' });
+        return res
+          .status(400)
+          .json({ error: 'ID da notificação não fornecido' });
       }
 
       const notification = await this.markNotificationAsReadUseCase.execute(id);
@@ -147,14 +172,16 @@ export class NotificationController {
       }
 
       // Verificar se a notificação pertence ao usuário autenticado
-      if (!req.user || notification.userId !== userId) {
+      if (!req.user || (notification as any).user_id !== userId) {
         return res.status(403).json({ error: 'Acesso negado' });
       }
 
       return res.status(200).json(notification);
     } catch (error) {
       const errorMessage =
-        error instanceof Error ? error.message : 'Erro ao marcar notificação como lida';
+        error instanceof Error
+          ? error.message
+          : 'Erro ao marcar notificação como lida';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -171,9 +198,15 @@ export class NotificationController {
       // Aqui deveria chamar um use case/service para marcar todas como lidas
       // Exemplo: const count = await this.markAllNotificationsAsReadUseCase.execute(userId);
       // Por enquanto, retorna 0
-      return res.json({ success: true, data: { count: 0, message: 'Notificações marcadas como lidas' } });
+      return res.json({
+        success: true,
+        data: { count: 0, message: 'Notificações marcadas como lidas' },
+      });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao marcar todas como lidas';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao marcar todas como lidas';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -183,15 +216,19 @@ export class NotificationController {
    */
   async deleteNotification(req: Request, res: Response) {
     try {
-      if (!req.user?.id || !req.user?.role) {
+      if (!req.user?.id) {
         return res.status(401).json({ error: 'Usuário não autenticado' });
       }
       // const { id } = req.params; // id is not used
       // Aqui deveria chamar um use case/service para deletar a notificação
       // Exemplo: await this.deleteNotificationUseCase.execute(id, req.user.id, req.user.role);
-      return res.json({ success: true, data: { message: 'Notificação excluída com sucesso' } });
+      return res.json({
+        success: true,
+        data: { message: 'Notificação excluída com sucesso' },
+      });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao excluir notificação';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro ao excluir notificação';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -207,9 +244,15 @@ export class NotificationController {
       }
       // Aqui deveria chamar um use case/service para deletar todas as notificações do usuário
       // Exemplo: const count = await this.deleteAllUserNotificationsUseCase.execute(userId);
-      return res.json({ success: true, data: { count: 0, message: 'Notificações excluídas com sucesso' } });
+      return res.json({
+        success: true,
+        data: { count: 0, message: 'Notificações excluídas com sucesso' },
+      });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao excluir todas as notificações';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao excluir todas as notificações';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -227,7 +270,10 @@ export class NotificationController {
       // Exemplo: const count = await this.countUnreadNotificationsUseCase.execute(userId);
       return res.json({ success: true, data: { count: 0 } });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao contar notificações não lidas';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao contar notificações não lidas';
       return res.status(500).json({ error: errorMessage });
     }
   }
@@ -240,21 +286,34 @@ export class NotificationController {
       if (!req.user?.role || req.user.role !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: { code: 'FORBIDDEN', message: 'Apenas administradores podem enviar notificações em massa' },
+          error: {
+            code: 'FORBIDDEN',
+            message:
+              'Apenas administradores podem enviar notificações em massa',
+          },
         });
       }
       const { userIds } = req.body;
       if (!userIds || !Array.isArray(userIds) || userIds.length === 0) {
         return res.status(400).json({
           success: false,
-          error: { code: 'INVALID_INPUT', message: 'É necessário fornecer uma lista de usuários' },
+          error: {
+            code: 'INVALID_INPUT',
+            message: 'É necessário fornecer uma lista de usuários',
+          },
         });
       }
       // Aqui deveria chamar um use case/service para enviar notificações em massa
       // Exemplo: const count = await this.sendNotificationToMultipleUsersUseCase.execute(userIds, notificationData);
-      return res.json({ success: true, data: { count: 0, message: 'Notificação enviada para 0 usuários' } });
+      return res.json({
+        success: true,
+        data: { count: 0, message: 'Notificação enviada para 0 usuários' },
+      });
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro ao enviar notificações em massa';
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'Erro ao enviar notificações em massa';
       return res.status(500).json({ error: errorMessage });
     }
   }

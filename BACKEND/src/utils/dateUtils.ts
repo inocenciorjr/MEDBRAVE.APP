@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+ 
 
 /**
  * Utilitário centralizado para tratamento de datas no backend
@@ -16,26 +16,22 @@ export class DateUtils {
     }
 
     try {
-      // Timestamp do Firestore
-      if (dateValue instanceof Timestamp) {
-        return dateValue.toDate();
-      }
-      
+
       // Timestamp com método toDate()
       if (dateValue.toDate && typeof dateValue.toDate === 'function') {
         return dateValue.toDate();
       }
-      
+
       // Timestamp com propriedade seconds
       if (dateValue.seconds && typeof dateValue.seconds === 'number') {
         return new Date(dateValue.seconds * 1000);
       }
-      
+
       // Timestamp com propriedade _seconds
       if (dateValue._seconds && typeof dateValue._seconds === 'number') {
         return new Date(dateValue._seconds * 1000);
       }
-      
+
       // Objeto Date já válido
       if (dateValue instanceof Date) {
         if (isNaN(dateValue.getTime())) {
@@ -43,7 +39,7 @@ export class DateUtils {
         }
         return dateValue;
       }
-      
+
       // String de data
       if (typeof dateValue === 'string') {
         const parsed = new Date(dateValue);
@@ -52,18 +48,19 @@ export class DateUtils {
         }
         return parsed;
       }
-      
+
       // Timestamp numérico
       if (typeof dateValue === 'number') {
         // Se for timestamp em segundos, converter para milissegundos
-        const timestamp = dateValue > 1000000000000 ? dateValue : dateValue * 1000;
+        const timestamp =
+          dateValue > 1000000000000 ? dateValue : dateValue * 1000;
         const parsed = new Date(timestamp);
         if (isNaN(parsed.getTime())) {
           return null;
         }
         return parsed;
       }
-      
+
       return null;
     } catch (error) {
       console.warn('Erro ao processar data:', error, dateValue);
@@ -119,8 +116,10 @@ export class DateUtils {
    */
   static isToday(dateValue: any): boolean {
     const date = this.parseDate(dateValue);
-    if (!date) return false;
-    
+    if (!date) {
+      return false;
+    }
+
     const today = new Date();
     return date.toDateString() === today.toDateString();
   }
@@ -132,10 +131,16 @@ export class DateUtils {
    * @param endDate - Data de fim do intervalo
    * @returns true se a data está no intervalo
    */
-  static isDateInRange(dateValue: any, startDate: Date, endDate: Date): boolean {
+  static isDateInRange(
+    dateValue: any,
+    startDate: Date,
+    endDate: Date,
+  ): boolean {
     const date = this.parseDate(dateValue);
-    if (!date) return false;
-    
+    if (!date) {
+      return false;
+    }
+
     return date >= startDate && date <= endDate;
   }
 
@@ -171,11 +176,11 @@ export class DateUtils {
   static formatForDebug(dateValue: any, label: string = ''): string {
     const date = this.parseDate(dateValue);
     const prefix = label ? `${label}: ` : '';
-    
+
     if (!date) {
       return `${prefix}INVALID (raw: ${JSON.stringify(dateValue)})`;
     }
-    
+
     return `${prefix}${date.toISOString()}`;
   }
 }

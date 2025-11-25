@@ -1,5 +1,8 @@
-import { INotificationRepository } from '../repositories/NotificationRepository';
-import { ListNotificationsOptions, PaginatedNotificationsResult } from '../types';
+import { INotificationRepository } from '../interfaces/INotificationRepository';
+import {
+  ListNotificationsOptions,
+  PaginatedNotificationsResult,
+} from '../types';
 
 /**
  * Caso de uso para obter notificações de um usuário
@@ -25,7 +28,21 @@ export class GetUserNotificationsUseCase {
       throw new Error('O ID do usuário é obrigatório');
     }
 
-    return await this.notificationRepository.getByUserId(userId, options);
+    const limit = options?.limit ?? 10;
+    const page = options?.page ?? 1;
+    const offset = options?.offset ?? (page - 1) * limit;
+    const notifications = await this.notificationRepository.findByUserId(
+      userId,
+      limit,
+      offset,
+    );
+    return {
+      notifications,
+      total: notifications.length,
+      page,
+      limit,
+      total_pages: 1,
+    };
   }
 
   /**
@@ -40,7 +57,7 @@ export class GetUserNotificationsUseCase {
   ): Promise<PaginatedNotificationsResult> {
     const optionsWithUnread: ListNotificationsOptions = {
       ...options,
-      isRead: false,
+      is_read: false,
     };
 
     return await this.execute(userId, optionsWithUnread);

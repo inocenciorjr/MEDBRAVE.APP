@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "examName": "INEP2023REVALIDA2 (INEP REVALIDA 2023)",
+    "examYear": 2023,
+    "url": "source://305",
+    "totalQuestions": 10,
+    "categorizedQuestions": 10,
+    "rewrittenComments": 10,
+    "processedAt": "2025-11-06T03:28:53.415Z",
+    "jobId": "batch-1762399267603-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "e9e8c5a7-40c7-4348-a4ea-94671bfe8ce3"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Uma mulher de 60 anos, hipertensa, em uso irregular de medicamentos, é levada pelo filho ao pronto-socorro com história de ter começado a sentir, há 8 horas, cefaleia holocraniana intensa, aresentando náuseas e vômitos. Ela passou a ter confusão mental e, na última hora, está mais sonolenta. Ao exame físico, apresenta pressão arterial de 220 x 140mmHg em ambos os membros superiores; está sonolenta, mas é responsiva ao chamado verbal. Percebe-se, também, que está desorientada no tempo e no espaço. Além disso, suas pupilas estão isocóricas e fotorreativas e ela não apresenta déficit motor ou sensitivo.\n\nDiante da hipótese diagnóstica mais provável, a conduta adequada é realizar uma",
+      "alternativas": [
+        "punção liquórica e prescrever betabloqueadores.",
+        "tomografia de crânio e infundir nitroprussiato de sódio.",
+        "tomografia de crânio imediata e administrar furosemida endovenosa.",
+        "ressonância magnética de crânio imediata e administrar ácido acetilsalicílico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta é uma emergência neurológica clássica que exige decisão rápida! Vamos analisar os sinais de alerta desta paciente de 60 anos.</p><p>O quadro clínico é preocupante: cefaleia súbita e intensa, náuseas, vômitos, rebaixamento do nível de consciência e uma pressão arterial explosive de 220x140mmHg. Estes são exatamente os \"red flags\" que devemos reconhecer para evitar erros graves na emergência.</p><p>Em pacientes hipertensos com cefaleia súbita e alterações neurológicas, sempre devemos descartar acidente vascular cerebral hemorrágico primeiro. A paciente apresenta pelo menos dois critérios importantes: idade superior a 50 anos e sintomas neurológicos (confusão mental e sonolência).</p><p>Qual é a conduta definitiva? <strong>A tomografia de crânio sem contraste é OBRIGATÓRIA</strong> para excluir hemorragia cerebral. Simultaneamente, o controle agressivo da pressão arterial é mandatório. O nitroprussiato de sódio é o fármaco ideal para titulação precisa, buscando uma PAS inicial menor que 160mmHg.</p><p>Por que as outras alternativas estão incorretas? A) Punção liquórica nunca deve ser feita antes da TC em suspeita de AVC hemorrágico - pode causar herniação. C) Furosemida não é adequada para controle agudo da PA em emergências hipertensivas. D) RM é lenta e não muda a conduta inicial em AVC hemorrágico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Um paciente de 48 anos é internado devido a uma Fratura de fêmur fechada, a qual ocorreu há 12 horas. Durante a internação, o paciente mantém-se estável; não há intercorrências. Ele não apresenta comorbidades e não faz uso de medicações. Ao avaliar o caso, a equipe de ortopedia indica fixação definitiva da fratura. Visando à segurança do paciente, de acordo com as práticas recomendadas para realização de cirurgia segura, é importante verificar uma listagem de itens durante a etapa de identificação, antes da indução anestésica para o procedimento cirúrgico.\n\nCom base nessas informações, o que deve ser realizado pela equipe médica durante a etapa de identificação do paciente, visando a sua segurança?",
+      "alternativas": [
+        "Apresentação de cada membro da equipe pelo nome e função; e confirmação de vaga em unidade de terapia intensiva para o pós-operatório imediato.",
+        "Confirmação da explicação do procedimento e seus riscos para os familiares do paciente; e verificação da existência de equipe de acolhimento hospitalar.",
+        "Contagem de materiais a serem utilizados, como pinças e compressas; e checagem do funcionamento adequado de aparelhagem radiológica e anestésica.",
+        "Demarcação da lateralidade (direita ou esquerda) do procedimento, avaliação de alergias conhecidas; e checagem da existência do termo de consentimento para o procedimento."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Você conhece o protocolo de Cirurgia Segura? É fundamental para prevenir erros evitáveis! Esta questão avalia exatamente a etapa de identificação do paciente, momentos críticos antes da anestesia.</p><p>O protocolo tem três fases: identificação, pausa cirúrgica e fechamento. Na identificação, além da confirmação da identidade do paciente, devemos focar em três elementos cruciais para a segurança.</p><p><strong>Demarcação da lateralidade</strong> é obrigatória em qualquer procedimento cirúrgico para evitar cirurgia em sítio errado - uma das never events mais temíveis na cirurgia. <strong>Verificação de alergias</strong> pode salvar vidas, prevenindo reações adversas medicamentosas. <strong>Consentimento informado</strong> é um direito fundamental do paciente e requisito legal para qualquer procedimento.</p><p>Por que as outras alternativas estão erradas? A) Apresentação da equipe e reserva de leito fazem parte de outras etapas, não da identificação. B) Explicação para familiares e acolhimento hospitalar são procedimentos administrativos, não parte da segurança cirúrgica imediata. C) Contagem de materiais e verificação de equipamentos integram a pausa cirúrgica, não a identificação do paciente.</p><p>Esta questão destaca a importância do checklist cirúrgico da OMS, obrigatório no Brasil desde 2013!</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_SegurancaDoPaciente",
+        "Cirurgia_AvaliacaoPreoperatoria"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Um menino de 9 anos, com peso de 29kg e altura de 1,36m, recém-adotado, comparece à primeira consulta de rotina com a família atual. Seus pais questionam o médico sobre a forma mais segura de transportal o filho na parte central do banco traseiro do automóvel, a fim de zelar por sua integridade física em caso de acidente.\n\nEm resposta ao questionamento dos pais, o médico deve orientar que a forma mais segura de transportar a criança é de frente para o painel do veículo,",
+      "alternativas": [
+        "no banco, utilizando cinto de segurança de três pontos do veículo.",
+        "na cadeirinha, utilizando o cinto de segurança da própria cadeirinha.",
+        "na cadeirinha, utilizando o cinto de segurança de três pontos do veículo.",
+        "no assento de elevação, utilizando o cinto de segurança de três pontos do veículo."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Transporte seguro infantil - um tema que salva vidas! Você sabe qual dispositivo usar em cada situação? Esta questão testa seu conhecimento sobre as diretrizes da Sociedade Brasileira de Pediatria.</p><p>A criança de 9 anos, 29kg e 1,36m está numa faixa intermediária crítica. Vamos analisar as opções conforme as recomendações atuais:</p><p>O <strong>assento de elevação (booster)</strong> é indicado quando a criança excede os limites de peso/altura da cadeirinha, mas ainda não atende os requisitos para usar apenas o cinto de segurança do veículo. O objetivo é posicionar corretamente o cinto de três pontos: porção subabdominal na pelve e porção do ombro no meio do ombro/tórax.</p><p>Por que as outras alternativas estão incorretas? A) Cinto de segurança direto só é seguro quando a criança tem 1,35m (padrão europeu) ou 1,45m (padrão americano) - nossa criança tem 1,36m, ainda abaixo do padrão americano. B e C) Cadeirinha voltada para frente é para crianças até 18-22kg, limite já superado por esta criança.</p><p>Dica importante: mesmo usando booster, a criança deve permanecer no banco traseiro até os 13 anos. A regra de ouro é simples: a criança só usa cinto direto quando consegue encostar as costas no banco, dobrar os joelhos confortavelmente e tocar o chão com os pés!</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_SegurancaDasCriancasEAdolescentes",
+        "MedicinaPreventiva",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Uma mulher de 49 anos comparece à unidade básica de saúde para consulta de rotina. Ela relata ao médico que ficou muito preocupada depois de ler uma matéria na internet sobre os riscos da osteoporose após a menopausa. Sua última menstruação ocorreu há 15 meses. A paciente afirma não praticar atividade física regularmente, mas relata alimentação balanceada e sem restrições. Ela nega doenças crônicas, uso de medicações contínuas, etilismo ou tabagismo. Na história familiar, relata que sua mãe, de 67 anos de idade, possui diagnóstico de hipertensão arterial e de hipotireoidismo. Ao exame, a paciente apresenta pressão arterial de 126x78 mmHg, índice de massa corporal 27 kg/m². Sua tireoide é normal à palpação. Os exames das mamas, do aparelho cardiovascular e do abdome apresentam-se dentro dos limites da normalidade.\n\nNesse caso, para prevenção primária da osteoporose, o médico deve",
+      "alternativas": [
+        "suplementar com carbonato de cálcio e com vitamina D, além de iniciar rastreio com a densitometria óssea aos 55 anos de idade.",
+        "manter uma dieta rica em cálcio e em vitamina D, com exposição solar adequada e exercícios físicos regulares para fortalecimento muscular e ósseo.",
+        "realizar densitometria óssea e, caso seja confirmada osteopenia, suplementar com carbonato de cálcio e com vitamina D e usar alendronato de sódio ou raloxifeno.",
+        "realizar dosagem sérica do hormônio folículo estimulante e do estradiol e, caso seja confirmada a menopausa, fazer uso da terapia hormonal com estrógenos conjugados."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Prevenção de osteoporose é um tema cada vez mais relevante! Esta mulher de 49 anos, recém-menopáusica, representa um perfil típico de consultório. Vamos entender a abordagem adequada.</p><p>Primeiro: quando rastrear osteoporose? A densitometria óssea é indicada para mulheres ≥65 anos ou mulheres na pós-menopausa com risco intermediário/alto calculado pelo FRAX. Nossa paciente tem apenas 49 anos - ainda não é hora de rastrear!</p><p>O foco aqui é <strong>prevenção primária</strong>: manter massa óssea e prevenir perdas futuras. Os pilares são simples mas poderosos: dieta rica em cálcio (pelo menos 1000mg/dia) e vitamina D, exposição solar adequada e exercícios regulares, especialmente de resistência e impacto.</p><p>Por que as outras alternativas estão incorretas? A) Suplementação profilática não é indicada - ela deve manter dieta adequada. Suplementação só quando há deficiência comprovada. C) Densitometria não é rastreio nesta idade - e osteopenia não indica tratamento, apenas monitoramento. D) Menopausa é diagnóstico clínico, não laboratorial. Reposição hormonal só quando há sintomas vasomotores significativos.</p><p>Lembre-se: prevenção sempre primeiro, depois rastreio direcionado!</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Climaterio",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Em um território com população em situação de vulnerabilidade, uma unidade básica de saúde possui duas equipes que atendem 9.000 pessoas cadastradas. Estima-se que as demandas por atendimento médico se tornarão ainda maiores, já que a população local está em rápida expansão, pois há ocupações em áreas próximas a um córrego que corta a extremidade do território de abrangência. Devido à sobrecarga dessas duas equipes e do potencial crescimento populacional, o gestor, portanto, decide implantar uma nova equipe de saúde da família.\n\nNesse contexto, qual é a melhor estratégia para a nova equipe de saúde da família organizar o processo de territorialização?",
+      "alternativas": [
+        "Dividir o território a partir da escala de risco familiar, a fim de distribuir as famílias vulneráveis de forma igualitária entre os agentes comunitários, evitando, assim, a sobrecarga de trabalho desses profissionais.",
+        "Dividir o território em micro áreas, mesmo que de forma assimétrica geograficamente, garantindo maior semelhança das necessidades dos grupos nele contidos, a fim de facilitar o direcionamento das ações sociais e sanitárias.",
+        "Utilizar mapas esquemáticos ou mapas-base impressos para a representação do territóriode abrangência e para a divisão do território em micro áreas, pois eles permitem melhor análise dos dados em relação ao geoprocessamento.",
+        "Utilizar dados primários para a divisão do território em micro áreas, como bancos de dados do DATASUS e do IBGE, pois eles oferecem informações em níveis de desagregação suficientes para ajudar a estabelecer o diagnóstico situacional local."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Estratégia de Saúde da Família e territorialização - um tema bastante específico de saúde pública! Esta questão avalia conceitos operacionais da APS que podem ser pouco familiares.</p><p>A territorialização na ESF visa organizar o cuidado em saúde por área geográfica definida. O grande desafio é como dividir eficientemente essa área para otimizar o trabalho das equipes.</p><p>Por que dividir por <strong>semelhança de necessidades</strong>? É mais eficiente agrupar famílias com perfis similares (risco social, problemas de saúde prevalentes, características demográficas) do que por distribuição geográfica rígida. Facilita o planejamento de ações preventivas e promocionais direcionadas.</p><p>Por que as outras alternativas estão incorretas? A) Distribuir igualmente famílias vulneráveis parece justo, mas na prática elas costumam estar concentradas geograficamente (como próximo ao córrego mencionado). C) Mapas esquemáticos são úteis, mas geoprocessamento oferece ferramentas mais atualizadas e práticas para análise territorial. D) Dados do DATASUS/IBGE são <strong>dados secundários</strong> (coletados por outras entidades), não primários (coletados pela equipe).</p><p>Ainda que a questão seja específica, understanding these concepts helps you understand how the SUS organizes healthcare delivery at the community level.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemComunitaria",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Um homem de 20 anos, previamente hígido e sem uso crônico de medicação, procura um médico da unidade básica de saúde relatando que, há 2 dias, iniciou o uso de nimesulidade para alívio de dor causada por uma entorse de tornozelo. No entanto, há 24 horas, afirma ter começado a apresentar prurido e pápulas vermelhas de tamanhos variados, distribuídas de forma irregular em tronco e em membros superiores. O paciente nega dispneia, palpitações ou alterações gastrointestinais.\n\nAlém de suspender o uso da nimesulida, a conduta do médico da atenção primária deve ser",
+      "alternativas": [
+        "iniciar medicamento anti-histamínico e hidratação da pele.",
+        "fazer uma dose de epinefrina subcutânea e iniciar anti-histamínico oral.",
+        "encaminhar o paciente para observação em pronto-socorro devido ao risco de insuficiência respiratória aguda.",
+        "administrar corticoide tópico e oral e, caso persistam os sintomas por mais de 24 horas, iniciar corticoide endovenoso."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Vamos desvendar este caso de farmacodermia! Temos um jovem de 20 anos que desenvolveu lesões de pele após usar nimesulida para dor no tornozelo. As lesões apareceram 24 horas após o início da medicação - pápulas vermelhas de tamanhos variados, com prurido, distribuídas pelo tronco e membros superiores.</p><p><strong>Por que esta é uma reação cutânea simples e não anafilaxia?</strong></p><p>O examinador está testando sua capacidade de diferenciar reações medicamentosas. Note que o paciente NEGA dispneia, palpitações ou alterações gastrointestinais. Essa negativa é fundamental! Para anafilaxia, precisaríamos envolvimento sistêmico com sintomas respiratórios, cardiovasculares ou gastrointestinais.</p><p>Segundo a reclassificação da WAO (2020), anafilaxia requer:</p><p>1. Envolvimento cutâneo-mucoso + pelo menos um sistema (respiratório, cardiovascular ou gastrointestinal)<br>OU<br>2. Hipotensão/broncoespasmo após exposição a agente conhecido, mesmo sem envolvimento cutâneo</p><p>Nenhum desses critérios está presente aqui!</p><p><strong>Analisando as alternativas:</strong></p><p>A) <strong>CORRETA:</strong> Anti-histamínico para coceira e hidratação da pele. É exatamente isso que fazemos em farmacodermias sem componente sistêmico.</p><p>B) <strong>ERRADA:</strong> Epinefrina subcutânea não tem lugar aqui! Para anafilaxia usamos epinefrina IM, e nem temos anafilaxia.</p><p>C) <strong>ERRADA:</strong> Encaminhamento para PS só seria necessário se houvesse sinais de gravidade sistêmica, o que não é o caso.</p><p>D) <strong>ERRADA:</strong> Corticoides tópico e oral não são rotina em farmacodermias. A literatura não sustenta essa abordagem.</p><p><strong>Dica de estudo:</strong> Memorize os critérios de anafilaxia - questões frequentemente apresentam sintomas cutâneos isolados para tentar te confundir!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Farmacodermias",
+        "ClinicaMedica_Reumatologia"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Os plantonistas do serviço de atendimento pré-hospitalar socorrem um rapaz de 18 anos, que foi atropelado por carro ao atravessar uma rodovia, e o levam até emergência hospitalar para continuidade do atendimento. Após estabilização hemodinâmica e realização de exames complementares, é diagnosticada fratura de pelve anterior e posterior e, no exame físico, observa-se hematoma perineal e sangue no óstio externo da uretra.\n\nNesse caso, para confirmar o diagnóstico de lesão uretral total associada, é indicado realizar",
+      "alternativas": [
+        "uretrocistografia retrógrada.",
+        "cateterização suprapúbica.",
+        "caterização uretral.",
+        "tomografia pélvica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Este é um clássico caso de trauma urológico que todo estudante de medicina deve dominar! Jovem atropelado, fratura de pelve anterior e posterior, hematoma perineal e sangue no óstio uretral - clássicos sinais de lesão uretral.</p><p><strong>Qual o exame padrão ouro para diagnosticar lesão uretral?</strong></p><p>A uretrocistografia retrógrada é o procedimento ideal. Como funciona? Injeta-se contraste pela uretra distal e fazem-se radiografias. Esse exame permite visualizar exatamente onde está a lesão e sua extensão.</p><p><strong>Por que as outras alternativas estão erradas?</strong></p><p>B) Cateterização suprapúbica: É muito invasiva para diagnóstico! É um procedimento cirúrgico que fazemos para desviar a urina quando já sabemos da lesão, não para diagnosticá-la.</p><p>C) Cateterização uretral: <strong>CONTRAINDICADA!</strong> A tentativa de colocar sonda pode criar um \"falso trajeto\" e piorar o trauma existente.</p><p>D) Tomografia pélvica: Excelente para rins e vias urinárias altas, mas não evaluasi adequadamente a uretra.</p><p><strong>Pegadinha clássica:</strong> Muitos candidatos escolhem tomografia por ser \"mais moderna\", mas em trauma uretral, a uretrocistografia ainda é padrão ouro.</p><p><strong>Sequência no trauma urológico:</strong> 1) Suspeitar pela clínica, 2) Confirmar com uretrocistografia, 3) Proceder conforme achado (cateterização suprapúbica para desvio se necessário).</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Urologia"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Um adolescente de 18 anos encontra-se internado após cirurgia bariátrica (derivação gástrica em Y-de-Roux) realizada há 3 meses. Ele refere que, ocasionalmente, apresenta náuseas, diarreia, dor abdominal, sudorese, sensação de desmaio iminente e fraqueza cerca de 2 a 3 horas após a ingestação de carboidratos simples, os quais consome com frequência. Seu exame físico apresenta-se sem alterações no momento. Exames de bioquímica, de imagem e endoscopia digestiva alta também apresentam-se sem alterações.\n\nDiante desse quadro, qual é a hipótese diagnóstica mais provável?",
+      "alternativas": [
+        "Fístula gastro-gástrica.",
+        "Síndrome de dumping.",
+        "Peritonite bacteriana secundária.",
+        "Deficiência de ferro e de vitaminas do complexo B."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Reconhecendo as complicações da cirurgia bariátrica! Este jovem operou há 3 meses e está desenvolvendo sintomas característicos 2-3 horas após comer carboidratos simples - um padrão muito clássico que você precisa reconhecer.</p><p><strong>O que é a Síndrome de Dumping?</strong></p><p>É uma das principais complicações do bypass gástrico. O mecanismo envolve três fatores:</p><p>1. Esvaziamento gástrico rápido<br>2. Chegada de alimento hiperosmolar ao intestino delgado<br>3. Secreção aumentada de insulina</p><p><strong>Os sintomas seguem um padrão temporal:</strong></p><p><strong>Fase precoce (minutos a 1h30):</strong> Bradicinina, serotonina e enteroglucagon causam sintomas vasomotores - palpitações, hipotensão, taquicardia, cólicas, sudorese, diarreia, náuseas e vômitos.</p><p><strong>Fase tardia (1h30-3h):</strong> Hipoglicemia reativa causa fraqueza, tontura, taquicardia.</p><p><strong>Por que as outras alternativas estão erradas?</strong></p><p>A) Fístula gastro-gástrica: Causaria reganho de peso, não sintomas de dumping/hipoglicemia.</p><p>C) Peritonite bacteriana: É aguda e grave, não intermitente como descrito.</p><p>D) Deficiência de ferro/B12: Causa anemia e fadiga crônica, não sintomas pós-prandiais.</p><p><strong>Tratamento na ponta:</strong> Ajustes dietéticos - evitar carboidratos simples e derivados do leite, fracionar as refeições. Muitos casos melhoram só com essas medidas!</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaBariatricaEMetabolica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Uma criança de 9 anos e 4 meses é levada à consulta pela sua mãe, que está muito preocupada porque sua filha está apresentando desenvolvimento mamário há 2 meses. A mãe nega que a paciente tenha doenças crônicas ou que faça uso de medicações contínuas. Relata que a menina possui boa alimentação e que faz atividade física regular. Na história familiar, a irmã da criança apresentou menarca aos 13 anos. Ao exame físico: curvas de crescimento e peso dentro da normalidade, mamas em fase de botão (Tanner M2), pelos pubianos longos, ligeidamento pigmentados ao longo dos grandes lábios (Tanner P2), e genitária externa de aspecto normal.\n\nDiante desse quadro, a conduta médica adequeada é informar à mãe e paciente que se trata de um caso sugestivo de",
+      "alternativas": [
+        "puberdade precoce central e encaminhar para endocrinopediatria.",
+        "hiperplasia congênita da suprarrenal e solicitar exames hormonais.",
+        "puberdade precoce por tumor de hipófise e encaminhar para neuropediatria.",
+        "desenvolvimento puberal normal e que não há necessidade de exames complementares no momento."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Developo puberal normal ou patológico? Eis a questão! Mãe preocupada porque filha de 9 anos e 4 meses começou a desenvolver mamas há 2 meses. Vamos analisar juntos os marcos puberais.</p><p><strong>Telarca normal: quando esperar?</strong></p><p>Nas meninas, o desenvolvimento mamário (telarca) normalmente inicia entre 8 e 13 anos. Portanto, aos 9 anos e 4 meses, isso é completamente normal! Faz parte do desenvolvimento puberal esperado.</p><p><strong>Exame físico compatível:</strong></p><p>Mamas em fase de botão (Tanner M2), pelos pubianos longos e ligeiramente pigmentados (Tanner P2). Tudo dentro do esperado para o desenvolvimento puberal inicial.</p><p><strong>Definições importantes:</strong></p><p>• <strong>Puberdade precoce:</strong> Antes dos 8 anos (meninas) ou 9 anos (meninos)<br>• <strong>Puberdade atrasada:</strong> Após os 13 anos (meninas) ou 14 anos (meninos)</p><p><strong>Por que a resposta D é correta?</strong></p><p>Esta é uma adolescente desenvolvendo puberdade no tempo adequado. Não há critérios para puberdade precoce, não precisa investigar patologias endócrinas, nem encaminhar para especialistas. Simplemente tranquilizar família e acompanhar o desenvolvimento normal.</p><p><strong>Alerta para questões:</strong> A puberdade precoce é mais comum em meninas e exige investigação endócrina completa. Mas neste caso, a idade está dentro da normalidade!</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade",
+        "Pediatria_EndocrinologiaPediatrica"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Uma criança de 1 ano e 3 meses é trazida pela mãe à unidade básica de saúde. A mãe refere que a criança vem apresentando febre há 48 horas, que varia entre 38,5 e 39 °C, associada à prostração, à inapetência, à sonolência e a um episódio de vômito na madrugada anterior.\n\nAo exame físico, a criança se encontra em regular estado geral, corada, desidratada +/4+. acianótica, anictérica, eupneica e sonolenta. À otoscopia, nota-se opacificação da membrana timpânica à direita, que está abaulada, sem saída de secreção, associada a alteração da região retroauricular, apresentando hiperemia e dor. Restante do exame físico sem alterações.\n\nPor estar em período de epidemia de dengue, o médico de família e comunidade solicita a prova do laço, a qual não identifica petéquia.\n\nNesse caso, a conduta médica deve ser",
+      "alternativas": [
+        "notificar suspeita de dengue, solicitar sorologia, iniciar ceftriaxone intravenoso e encaminhar a paciente para internação hospitalar.",
+        "descartar suspeita de dengue, iniciar ceftriaxone intravenoso, associar analgésico em caso de dor e encaminhar e paciente para internação hospitalar.",
+        "notificar suspeita de dengue, solicitar sorologia, prescrever amoxicilina-clavulanato por 7 dias, associar analgésico em caso de dor e reavaliar e paciente em 2 dias.",
+        "descartar suspeita de dengue, prescrever amoxicilina-clavulanato por 8 dias, associar analgésico em caso de dor, orientar sobre os sinais de alerta e reavaliar a paciente em 2 dias."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Diferenciando infecção grave de arbovirose! Bebê de 1 ano e 3 meses com febre há 48h, prostração e vômito. O cenário parece preocupante, mas vamos analisar com cuidado.</p><p><strong>Sinais de alerta no exame físico:</strong></p><p>O otoscopia revela o diagnóstico! Membrana timpânica abaulada e opacificada à direita - sinal de alta especificidade para otite média aguda. E mais importante: alteração retroauricular com hiperemia e dor - estamos diante de uma mastoidite!</p><p><strong>Por que descartar dengue?</strong></p><p>Porque temos um foco infeccioso claro e localizado. A prova do laço sem petéquias reforça, mas o achado da mastoidite é definitivo. Não é dengue quando encontramos infecção bacteriana evidente.</p><p><strong>Mastoidite exige hospitalização!</strong></p><p>Esta é uma infecção grave que necessita antibioticoterapia endovenosa. O ceftriaxone é a primeira escolha, e o paciente deve ser internado para observação e tratamento adequado.</p><p><strong>Analisando as alternativas:</strong></p><<p>A) <strong>ERRADA:</strong> Não notifica dengue quando temos foco infeccioso evidente.</p><p>B) <strong>CORRETA:</strong> Descarta dengue, inicia ceftriaxone IV e interna - conduta ideal para mastoidite.</p><p>C) <strong>ERRADA:</strong> Amoxicilina oral é insuficiente para mastoidite, que exige endovenoso.</p><p>D) <strong>ERRADA:</strong> Também opta por tratamento oral, inadequado para esta gravidade.</p><p><strong>Dica importante:</strong> Em períodos de epidemia, sempre considere arboviroses, mas também mantenha senso clínico para outras condições. A prova do laço ajuda, mas o exame físico manda!</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Infectologia",
+        "Pediatria_PneumologiaPediatrica",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi"
+      ],
+      "tags": [
+        "INEP2023REVALIDA2",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762399655574-9"
+    }
+  ]
+}

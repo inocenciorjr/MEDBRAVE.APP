@@ -22,7 +22,7 @@ const updateFlashcardSchema = Joi.object({
 });
 
 const reviewFlashcardSchema = Joi.object({
-  reviewQuality: Joi.number().integer().min(0).max(3).required(),
+  review_quality: Joi.number().integer().min(0).max(3).required(),
 });
 
 const schemas = {

@@ -1,6 +1,4 @@
-import {
-  FlashcardUserInteraction,
-} from '../types';
+import { FlashcardUserInteraction } from '../types';
 import { Flashcard } from '../types';
 
 export interface IUserFlashcardInteractionRepository {
@@ -16,6 +14,13 @@ export interface IUserFlashcardInteractionRepository {
     reviewData: any,
   ): Promise<FlashcardUserInteraction>;
   resetProgress(data: any): Promise<FlashcardUserInteraction>;
-  getStats(userId: string, flashcardId: string): Promise<FlashcardUserInteraction | null>;
-  getDueFlashcards(userId: string, deckId?: string, limit?: number): Promise<Flashcard[]>;
+  getStats(
+    userId: string,
+    flashcardId: string,
+  ): Promise<FlashcardUserInteraction | null>;
+  getDueFlashcards(
+    userId: string,
+    deckId?: string,
+    limit?: number,
+  ): Promise<Flashcard[]>;
 }

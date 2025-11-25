@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "examName": "INEP2025REVALIDA (INEP REVALIDA 2025)",
+    "examYear": 2025,
+    "url": "source://16",
+    "totalQuestions": 10,
+    "categorizedQuestions": 10,
+    "rewrittenComments": 9,
+    "processedAt": "2025-11-06T03:58:02.659Z",
+    "jobId": "batch-1762401243823-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "1a84c800-d0a1-4dca-9b33-b34c742198d8"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Homem de 62 anos vai a uma unidade de pronto atendimento (UPA) referindo cansaço e tontura ao se levantar há 2 semanas. Nega outras queixas, comorbidades ou cirurgias prévias, assim como o uso de medicamentos. Ao exame físico, apresenta-se corado, hidratado, lúcido e orientado em tempo e espaço; pressão, arterial de 120 x 70 mmHg; frequência cardíaca de 45 bpm saturação de O2 de 96% em ar ambiente; ritmo cardíaco regular, sem turgência jugular; murmúrio vesicular fisiológico, sem ruídos acessórios; e enchimento capilar de 2 segundos.\nDiante disso, o médico solicita um eletrocardiograma de 12 derivações: (IMAGEM)\n\nA partir desse quadro clínico e da interpretação do eletrocardiograma, a conduta adequada consiste em:\n\n<img src=\"https://medbrave.com.br/questions/ineprevalida-2025/qQ1.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "conceder alta médica e encaminhar o paciente ao ambulatório especializado de cardiologia.",
+        "monitorizar o paciente, solicitar marca-passo transcutâneo e aguardar avaliação do cardiologista.",
+        "monitorizar o paciente, administrar atropina 1 mg (IV) e implantar marca-passo transcutâneo.",
+        "monitorizar o paciente, administrar atropina 1 mg (IV) e iniciar uso de dopamina 5 mcg/kg/min."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia sua habilidade em reconhecer e manejar bradiarritmias graves! Vamos entender o que está acontecendo com este paciente.</p><p>O homem de 62 anos apresenta cansaço e tontura há 2 semanas - isso não é sintomas transitórios. Com 45 bpm de FC e hemodinamicamente estável, já temos um quadro preocupante. O ECG mostra bloqueio atrioventricular total (BAVT), caracterizado por dissociação entre atividade atrial e ventricular. No DII longo, vemos mais ondas P do que complexos QRS, indicando que o átrio e ventrículo estão funcionando independentemente.</p><p><strong>Por que a alternativa B está correta?</strong></p><p>Quando temos BAVT com ritmo de escape, a prioridade é ter estimulação elétrica disponível. A bradicardia de 45 bpm com sintomas justifica internação e monitorização. O marca-passo transcutâneo serve como ponte até a avaliação cardiológica para implante definitivo.</p><p><strong>Por que as outras estão erradas?</strong></p><p>A) Dar alta ambulatorial é extremamente perigoso - BAVT sintomático pode evoluir para assistolia subitamente.</p><p>C) A atropina é inútil no BAVT infra-hissiano, pois o bloqueio está abaixo do nó AV onde age o vago.</p><p>D) Dopamina também é ineficaz no BAVT completo e pode mascarar a necessidade real de estimulação.</p><p><strong>Dica importante:</strong> Em BAVT, sempre pense: estimulação elétrica primeiro, medicamentos depois (se necessários).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_Bradiarritmias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Homem de 42 anos, em uso crônico de anti-inflamatório não esteroide por doença reumática, da entrada no pronto-socorro com 6 horas de evolução de dor epigástrica de forte intensidade. Sinais vitais: (IMAGEM)\n\nAo exame físico, abdome tenso, com descompressão brusca dolorosa nos quatro quadrantes. O hemograma apresenta valores dentro da normalidade e a tomografia de abdome evidencia líquido livre intraperitoneal com ar no recesso hepatofrênico. Nesse caso, assinale a alternativa que apresenta a principal hipótese diagnóstica.\n\n<img src=\"https://medbrave.com.br/questions/ineprevalida-2025/qQ2.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Úlcera gástrica perfurada.",
+        "Pancreatite aguda.",
+        "Colecistite aguda.",
+        "Diverticulite aguda."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Vamos analisar este caso de abdome agudo perfurativo! O padrão aqui é clássico: usuário crônico de anti-inflamatórios + dor súbita + pneumoperitônio.</p><p>O paciente tem 42 anos com dor epigástrica intensa de 6 horas de evolução. Usa AINE por doença reumática há tempo - fator de risco crucial. O abdome tenso com descompressão brusca dolorosa indica irritação peritoneal difusa. A TC mostra ar livre no recesso hepatofrênico + líquido livre = pneumoperitônio.</p><p><strong>Por que é úlcera gástrica perfurada?</strong></p><p>Os AINEs são os grandesvilões das úlceras gástricas. Eles inibem a síntese de prostaglandinas protetoras da mucosa, facilitando a formação de úlceras que podem perfurar. A localização epigástrica da dor confirma o diagnóstico.</p><p><strong>Vamos excluir as outras opções:</strong></p><p>B) Pancreatite: causaria elevação importante de amilase/lipase (não mencionadas) e não gera pneumoperitônio.</p><p>C) Colecistite aguda: dor no quadrante superior direito, sinal de Murphy positivo, sem pneumoperitônio.</p><p>D) Diverticulite: geralmente em idosos, dor no quadrante inferior esquerdo, evolução mais insidiosa.</p><p><strong>Dica de prova:</strong> Pneumoperitônio na TC = perfuração de víscera oca até prova em contrário!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo_UlceraPepticaPerfurada"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Menina de 7 anos e 6 meses é encaminhada ao ambulatório de pediatria porque sua família percebeu surgimento de broto mamário há cerca de 3 meses. O exame físico revela que seu estadiamento puberal é M2P1 e sua estatura está próxima ao escore Z +2 para a idade, com peso em escore Z 0. Um exame de radiografia simples de punho, solicitado pelo médico da atenção primária, mostra idade óssea compatível com 9 anos e 6 meses.\n\nConsiderando essa situação, assinale a alternativa que apresenta a principal hipótese diagnóstica, seguida de sua justificativa.",
+      "alternativas": [
+        "Puberdade precoce central, pois o crescimento das mamas está associado a avanço da idade óssea.",
+        "Telarca isolada precoce, pois a diferença entre a idade óssea e a idade cronológica não é significativa.",
+        "Telarca isolada precoce, pois o crescimento das mamas foi um achado isolado na investigação da paciente.",
+        "Puberdade precoce central, pois, além da telarca, há também sinais de pubarca, o que sugere ativação do eixo hormonal."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Questão fundamental sobre diferenciação entre puberdade precoce e telarca isolada! Vamos desvendar os critérios diagnósticos.</p><p>A menina de 7 anos e 6 meses desenvolveu broto mamário (M2) há 3 meses. O dado decisivo está na radiografia de punho: idade óssea de 9 anos e 6 meses! Isso representa avanço de 2 anos - significativo!</p><p><strong>O que diferencia PPC de telarca isolada?</strong></p><p>Na puberdade precoce central há ativação completa do eixo hipotálamo-hipófise-gônadas. Resultado? Produção de hormônios sexuais que aceleram crescimento e maturam ossos. Na telarca isolada precoce, apenas estímulos estrogênicos leves atuam nas mamas, sem ativação hormonal global.</p><p><strong>Por que a alternativa A está correta?</strong></p><p>O avançar significativo da idade óssea (2 anos) indica ativação hormonal sistêmica, característica da PPC. É o marcador que diferencia de telarca isolada.</p><p><strong>Erros das outras alternativas:</strong></p><p>B) Errada: a diferença de 2 anos É significativa!</p><p>C) Errada: não é achado isolado devido ao avanço ósseo.</p><p>D) Errada: não há pubarca (está P1, sem pelos pubianos).</p><p><strong>Mnemônico:</strong> PPC = Pelos + Crescimento + Pubarca. Telarca isolada = só mamas, sem crescimento óssea acelerado.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EndocrinologiaPediatrica",
+        "ClinicaMedica_Endocrinologia",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Genero"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Primigesta de 25 anos procura pronto atendimento de ginecologia e obstetrícia com história de atraso menstrual e resultado de beta-hCG quantitativo de 10.000 mlU/mL realizado há 2 dias. Não se recorda da data da última menstruação. Queixa-se de sangramento vaginal, em pequena quantidade, que já dura 3 dias. Ao exame especular, nota-se presença de sangramento vivo em pequena quantidade e, ao toque, percebe-se colo uterino fechado. Solicitado beta-hCG no dia da consulta, com resultado de 23.400 mlU/mL.\n\nA partir desses dados, assinale a alternativa que apresenta respectivamente o diagnóstico desse caso e a conduta adequada.",
+      "alternativas": [
+        "Gestação ectópica; laparotomia.",
+        "Ameaça de aborto; repouso relativo.",
+        "Aborto incompleto; curetagem uterina.",
+        "Aborto em evolução; acompanhamento clínico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Hemorragia na primeira metade da gestação é tema clássico! Vamos aplicar a abordagem sistemática passo a passo.</p><p>A paciente tem 10.000 mUI/mL há 2 dias e agora 23.400 mUI/mL - isso representa dobragem em 48h (normal para gestação evolutiva). O colo uterino está fechado, não há dinâmica abortiva.</p><p><strong>Conceito fundamental:</strong> Valor discriminatório de beta-hCG é 1500-2000 mUI/mL para visualizar saco gestacional em US transvaginal. Aqui temos 10.000 → certeza de imagem intrauterina se gestação for evolutiva.</p><p><strong>Por que ameaça de aborto (B)?</strong></p><p>Beta-hCG em ascensão + colo fechado + sangramento mínimo = ameaça de abortamento. A gestação provavelmente é viável!</p><p><strong>Por que as outras estão erradas:</strong></p><p>A) Gestação ectópica: contra graduada pelo beta-hCG em dobragem e colo fechado.</p><p>C) Aborto incompleto: haveria colo pérvio e possível eliminação de tecido.</p><p>D) Aborto em evolução: prazo para evolução é menor que 48h de dobragem.</p><p><strong>Tratamento:</strong> Repouso relativo, sintomáticos e reavaliação ultrassonográfica.</p><p><strong>Dica:</strong> Beta-hCG em dobragem = boa notícia! Doubling time normal descarta gestação ectópica com alta probabilidade.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_Abortamento"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "A médica de uma penitenciária avalia homem de 26 anos, com 98 kg, que relata compartilhar a cela com 12 pessoas (a qual comportaria no máximo 5). O paciente queixa-se de prurido cutâneo há 2 dias com piora no período noturno. Ao exame físico, a médica identifica pápulas eritematosas com escoriações em região de prega em braços e em região posterior de joelhos.\n\nCom relação a essa situação, assinale a alternativa que apresenta, respectivamente, a orientação médica e a prescrição medicamentosa adequadas.",
+      "alternativas": [
+        "Restrição de visitas aos detentos e isolamento dos casos nas celas, sem permissão de saída; uso de ivermectina 6 mg. 01 comprimido via oral, repetindo em 15 dias, para todos da cela.",
+        "Isolamento dos casos na enfermaria da unidade e lavagem frequente das roupas de cama, de banho e de vestuário com água quente (pelo menos a 30 °C); uso de sprays inseticidas e fumigantes.",
+        "Realização de palestras educativas para os detentos sobre medidas preventivas e aumento do tempo de banho de sol; uso de fluconazol 150 mg por semana durante 1 mês, para todos da cela.",
+        "Incremento da frequência de limpeza geral da unidade e higienização adequada das roupas de uso pessoal, de cama e de banho; uso de ivermectina 6 mg. dose conforme o peso, repetindo em 15 dias, para todos da cela."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Escabiose em ambiente prisional - situação típica de surto em local fechado! Vamos entender a abordagem correta.</p><p>O detento apresenta prurido noturno há 2 dias com lesões em pregas (axilas, joelhos) - padrão clássico da escabiose. A cela superlotada (12 pessoas para 5) facilita a transmissão do Sarcoptes scabiei.</p><p><strong>Tratamento adequado envolve duas frentes:</strong></p><p>1) Medidas ambientais: limpeza geral incrementada + higienização rigorosa de roupas de cama, banho e pessoais em água quente. Essencial para cortar a cadeia de transmissão!</p><p>2) Tratamento farmacológico: Ivermectina 200 mcg/kg VO, repetindo em 15 dias. Dose ajustada ao peso (98 kg = aproximadamente 200 mcg × 98 = 20 mg ≈ 3,3 comprimidos de 6mg).</p><p><strong>Por que a alternativa D está correta?</strong></p><p>Combina adequadamente medidas ambientais + ivermectina com dose peso-ajustada para TODA a cela (surtos exigem tratamento de contato).</p><p><strong>Por que as outras estão erradas:</strong></p><p>A) Isolamento rigoroso desnecessário para escabiose + dose fixa inadequada.</p><p>B) Sprays/fumigantes são tóxicos e não indicados.</p><p>C) Fluconazol não trata escabiose (é antifúngico!) + banhos de sol não ajudam.</p><p><strong>Princípio:</strong> Em surtos comunitários, trate TODOS os contatos simultaneamente!</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesInfecciosas",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessosEndemicosEEpidemicoEn"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Mulher de 38 anos, com deficiência congênita de IgA, é atendida em ambulatório de clínica médica devido a insucesso terapêutico no tratamento de infecção por Helicobacter pylori. Apresentava diagnóstico de úlcera duodenal, tendo sido prescrito omeprazol, amoxicilina e claritromicina. Apesar da melhora clínica, observou-se persistência da infecção em teste respiratório com C¹³. Atribuiu-se o insucesso terapêutico ao uso recorrente de macrolideos e fluoroquinolonas.\n\nNesse caso, deve-se prescrever",
+      "alternativas": [
+        "pantoprazol, amoxicilina e levofloxacino por 7 dias.",
+        "omeprazol, claritromicina e levofloxacino por 14 dias.",
+        "omeprazol, subcitrato de bismuto coloidal, doxiciclina e metronidazol por 14 dias.",
+        "pantoprazol, subcitrato de bismuto coloidal, furazolidona e levofloxacino por 10 dias."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda um cenário clínico frequente na prática médica: tratamento de H. pylori com resistência bacteriana. Vamos analisar o caso!</p><p>A paciente apresenta falha no tratamento inicial da úlcera duodenal com esquema tríplice clássico (omeprazol + amoxicilina + claritromicina). O insucesso foi atribuído ao uso recorrente de macrolídeos e fluoroquinolonas, indicando resistência bacteriana adquirida.</p><p><strong>A resposta correta é a alternativa C.</strong> Após falha terapêutica, as diretrizes brasileiras recomendam terapia quádrupla com bismuto: inibidor da bomba de prótons + subcitrato de bismuto + tetraciclina/doxiciclina + metronidazol por 14 dias. Esta combinação é especialmente eficaz por contornar resistências previas.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• Alternativa A: Usa levofloxacino (fluoroquinolona) - classe associada à resistência previa, além de apenas 7 dias de tratamento (duração insuficiente)</p><p>• Alternativa B: Combina claritromicina (macrolídeo) + levofloxacino (fluoroquinolona) - ambas as classes relacionadas à falha terapêutica anterior</p><p>• Alternativa D: Inclui levofloxacino novamente e reduz duração para 10 dias - não ideal para contornar resistência</p><p><strong>Dica de estudo:</strong> Em casos de falha do tratamento tríplice, sempre opte por esquemas com bismuto que incluem medicamentos de classes diferentes dos anteriormente utilizados. A duração de 14 dias é padrão para garantir eficácia.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_HelicobacterPylori",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Homem de 28 anos foi admitido em hospital após 30 minutos de acidente motociclístico. Apresentava múltiplas graves lesões em face, mandíbula e cavidade oral, sem lesões cervicais. Exame físico do tórax e do abdome e ultrassonografia focada no abdome no trauma (FAST) sem alterações. Sinais vitais: frequência cardíaca 92 bpm; pressão arterial 130 x 80 mmHg; saturação periférica de oxigênio 100% em ar ambiente.\nO paciente evoluiu rapidamente com dispneia, taquipneia, estridor inspiratório e expiratório, cornagem e rebaixamento do nível de consciência. Saturação periférica de oxigênio passou para 88% mesmo com a oferta de oxigênio suplementar. Após alguns minutos, evoluiu com saturação periférica de oxigênio de 59% e frequência cardíaca de 48 bpm. \n\nNesse momento, qual é a conduta imediata adequada para esse paciente?",
+      "alternativas": [
+        "Traqueostomia.",
+        "Cricotireoidotomia.",
+        "Intubação oratraqueal.",
+        "Intubação nasotraqueal."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta é uma questão clássica de medicina de emergência que avalia seu conhecimento sobre via aérea em trauma. Vamos analisar este cenário dramático!</p><p>O paciente politraumatizado com fraturas faciais, mandibulares e de cavidade oral evoluiu rapidamente com sinais de obstrução de via aérea superior: estridor, cornagem, hipoxemia progressiva e rebaixamento do nível de consciência. Esses achados indicam falha iminente da via aérea.</p><p><strong>A resposta correta é a cricotireoidotomia (alternativa B).</strong></p><p>Em trauma, a IOT é sempre a primeira opção, mas neste caso específico, o extenso trauma facial impede a visualização das cordas vocais e torna a intubação impraticável. Nessas circunstâncias críticas, necessitamos de uma via aérea cirúrgica de emergência.</p><p><strong>Por que cricotireoidotomia é superior à traqueostomia em urgência?</strong></p><p>• É mais rápida de realizar (2-3 minutos vs 15-20 minutos)</p><p>• Técnica mais simples</p><p>• Menor risco de sangramento</p><p>• Acesso anatômico mais superficial</p><p>• Permite ventilação com proteção completa da via aérea</p><p><strong>As outras alternativas estão incorretas por:</strong></p><p>• Traqueostomia (A): Demora excessiva e maior complexidade técnica</p><p>• IOT (C): Impraticável devido ao trauma facial extenso</p><p>• Intubação nasotraqueal (D): Contraindicada em trauma facial pela possibilidade de fratura de base de crânio</p><p><strong>Mnemônico útil:</strong> LEMBRE-se - <strong>L</strong>aríngeo - <strong>E</strong>mergência - <strong>M</strong>anto - <strong>E</strong>ntre - <strong>R</strong>essuscitar - <strong>E</strong>scola - <strong>S</strong>e (cricotireoidotomia em trauma facial)</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_ViaAereaDefinitiva",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaDeFace"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Adolescente de 12 anos é levado à unidade de pronto atendimento (UPA) devido a um quadro de dor abdominal iniciada há 1 dia. A dor era mais difusa inicialmente, mas, após algumas horas de evolução, passou a concentrar-se na fossa ilíaca direita, tornando-se mais intensa. Além disso, o jovem apresentou vômitos de conteúdo bilioso e inapetência. Ao exame físico abdominal, apresenta defesa à palpação e descompressão brusca dolorosa.\n\nA partir desse caso, assinale a alternativa que apresenta indicação para que este adolescente seja avaliado por uma equipe cirúrgica.",
+      "alternativas": [
+        "Dor abdominal difusa.",
+        "Descompressão brusca dolorosa.",
+        "Dor abdominal associada a vômitos.",
+        "Massa palpável em fossa ilíaca direita."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão evalua conhecimento fundamental sobre semiológica cirúrgica, especificamente o diagnóstico de apendicite aguda! Vamos destrinchar este caso típico.</p><p>O adolescente apresenta evolução clássica: dor inicialmente difusa (visceral), migração para fossa ilíaca direita (parietal), associada a náuseas, vômitos biliosos e inapetência. Ao exame: defesa e descompressão brusca dolorosa - o famoso sinal de Blumberg!</p><p><strong>A resposta correta é a descompressão brusca dolorosa (alternativa B).</strong> Este sinal representa irritação peritoneal e indica peritonite, configurando indicação cirúrgica imediata sem necessidade de exames complementares em casos típicos.</p><p><strong>Por que o sinal de Blumberg é tão importante?</strong></p><p>• É um marcador confiável de irritação peritoneal</p><p>• No escore de Alvarado vale 2 pontos (máximo para um único achado)</p><p>• Sua presença sustenta indicação cirúrgica mesmo sem outros exames</p><p>• Indica inflamação do peritônio parietal</p><p><strong>As outras alternativas não garantem indicação cirúrgica:</strong></p><p>• Dor abdominal difusa (A): Inespecífica, comum no início da apendicite e muitas outras condições</p><p>• Dor com vômitos (C): Manifestações iniciais inespecíficas sem sinais de irritação peritoneal</p><p>• Massa palpável (D): Sugere plastrão apendicular - estágio avançado que pode ser manejado inicialmente com antibióticos e drenagem, deixando a cirurgia para segundo tempo</p><p><strong>Dica de estudo:</strong> Em apendicite aguda, procure os 3 pilares: dor migratória, náuseas/vômitos e sinais de irritação peritoneal. A presença de qualquer sinal peritoneal forte como o Blumberg positivo indica cirurgia!</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_ApendiciteAguda",
+        "Pediatria_EndocrinologiaPediatrica"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Gestante de 39 anos, G4P3, 12 semanas de gestação, comparece à primeira consulta de pré-natal na atenção primária. A paciente é hipertensa crônica há 2 anos, faz uso de losartana e apresenta índice de massa corporal (IMC) de 35 kg/m², encontra-se assintomática.\nConsiderando esse contexto, assinale a conduta inicial e a avaliação a ser realizada.",
+      "alternativas": [
+        "Suspender losartana e iniciar metildopa e AAS; realizar pesquisa de lesão de órgãos-alvo.",
+        "Manter losartana e iniciar AAS; solicitar exames para avaliar a função hepática.",
+        "Suspender losartana; indicar avaliação cardiológica detalhada.",
+        "Manter losartana; realizar pesquisa de hipertensão secundária."
+      ],
+      "correta": 0,
+      "professor_comment": "Questão sobre manejo de medicamentos anti-hipertensivos na asssitência pré-natal. Simples de resolver!\n\nQuartigesta de 12 semanas de gestação, obesa e hipertensa crônica há 2 anos, faz uso de losartana. Qual a conduta?\n\nA hipertensão arterial crônica é definida por hipertensão, ou seja, pressão arterial sistólica a partir de 140mmHg e/ou diastólica a partir de 90mmHg em duas aferições com intervalo de 4 horas a 7 dias antes de 20 semanas da gestação. O objetivo é monitorar a pressão devido ao risco de evolução para pré-eclâmpsia superajuntada, quando suspeito diante de descontrole pressórico, disfunção de órgãos alvo ou piora da proteinúria a partir de 20 semanas de gestação. O uso de aspirina em baixa dose iniciado até 16 semanas e mantido até as 36 semanas diante de hipertensão crônica visa evitar essa complicação. \n\nA conduta deve incluir orientações para redução da ingesta de sal iodado em sua dieta, realização de atividades físicas e terapia anti-hipertensiva quando os valores de PA permanecem em mais de 50% das medidas acima de 140 e/ou 90 mmHg (alvo PAD média 85mmHg). Podem ser utilizados como anti-hipertensivos na gestação: \n- Alfametildopa: primeira escolha no Brasil, doses de 750 mg à 2.000 mg ao dia. Efeitos adversos são sedação, depressão e tonteira;\n- Bloqueadores de canais de cálcio: anlodipina ou da nifedipina de liberação. Efeitos colaterais: taquicardia, cefaleia e edema perimaleolar. \n- Betabloqueadores (metoprolol e carvedilol): segunda ou terceira opção para hipertensão. Contraindicações: asma, cardiopatia, insuficiência cardíaca e bloqueio cardíaco. Atenção: betabloqueadores como propranolol e atenolol estão associados a restrição do crescimento intrauterino e oligodramnia, portanto não são recomendados para uso durante a gestação como terapêutica para hipertensão arterial crônica. \n- Vasodilatadores periféricos: hidralazina por via oral \nAtenção: os inibidores da enzima conversora de angiotensina (IECA) e os bloqueadores do receptor da angiotensina (BRA) são contraindicados durante a gestação devido ao risco de oligodramnia, anomalias renais fetais, insuficiência renal neonatal, hipoplasia pulmonar, retardo mental e morte. Além disso, os diuréticos devem ser evitados devido a depleção do volume intravascular levando a restrição do crescimento intrauterino. Todavia, os diuréticos tiazídicos não se associaram a esta complicação (hidroclorotiazida) e podem ser utilizados como segunda/terceira linha de tratamento. \n\nLogo, a melhor recomendação é suspender a losartana (B e D incorretas) e iniciar metildopa com AAS além de pesquisar lesões de órgão-alvo com avaliação da função renal (creatinina e proteinúria), fundo de olho, eletrocardiograma e ecocardiograma.\n\nGabarito alternativa (A).",
+      "filterIds": [
+        "Obstetricia",
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Prenatal",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Mulher de 34 anos, com 4 filhos, desempregada, comparece a uma unidade básica de saúde (UBS) com queixa de atraso menstrual de um mês. Durante a consulta, a paciente relata que está muito aflita, por ter realizado um teste de gravidez cujo resultado foi positivo. Afirma que compareceu à consulta porque não deseja essa gravidez. Quando questionada, a paciente nega qualquer situação de violência sexual.\n\nNesse caso, além de acolher e acalmar a paciente, a melhor abordagem a ser realizada pelo médico deve ser",
+      "alternativas": [
+        "iniciar o pré-natal regular, mencionando a possIbilidade de entrega voluntária da criança para adoção após seu nascimento.",
+        "desencorajar a realização de um aborto, apesar da paciente ter direito, enfatizando os riscos à saúde advindos do procedimento de abortamento, como hemorragia, infecção, perfuração uterina, infertilidade e morte.",
+        "assegurar a direito às informações clínicas e legais adequadas, garantir o sigilo e informar sobre sintomas que justifiquem a busca de atendimento médico em caso de realização de um aborto inseguro.",
+        "questionar abertamente sobre a intenção de abortar, sem julgamento, e informá-la que tem obrigação ética de fazer um boletim de ocorrência caso o aborto venha a ser realizado."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda aspectos fundamentais da ética médica em ginecologia e obstetrícia. Vamos analisar este cenário delicado!</p><p>Uma mulher com gestação indesejada procura atendimento médico, demonstrando angústia e incerteza sobre sua situação. Nossa responsabilidade profissional é oferecer cuidado completo, respeitando a autonomia da paciente.</p><p><strong>A resposta correta é a alternativa C.</strong></p><p>Devemos assegurar o acesso a informações clínicas e legais corretas, garantir sigilo absoluto e orientar sobre sinais de alerta caso ela realize um aborto inseguro. Esta é a abordagem correta segundo os princípios bioéticos e as normas do CFM.</p><p><strong>Por que esta é a conduta adequada?</strong></p><p>• <strong>Respeito à autonomia:</strong> Oferecemos informações sem julgamento ou coerção</p><p>• <strong>Beneficência e não maleficência:</strong> Minimizamos riscos potenciais informando sobre complicações de abortos inseguros</p><p>• <strong>Justiça:</strong> Garantimos acesso igualitário às informações de qualidade</p><p>• <strong>Sigilo profissional:</strong> Proteção absoluta das informações confidenciais</p><p>• <strong>Redução de danos:</strong> Orientamos sobre sinais de alerta para buscar atendimento precoce</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>Alternativa A:</strong> Iniciar pré-natal sem discutir opções respeita parcialmente a autonomia, mas impõe uma decisão precipitada</p><p>• <strong>Alternativa B:</strong> Tom coercitivo e moralizador desrespeita autonomia. Devemos informar riscos sem desencorajar</p><p>• <strong>Alternativa D:</strong> Afirmação falsa sobre obrigação de boletim de ocorrência. O sigilo médico é protegido por lei</p><p><strong>Base legal:</strong> Código de Ética Médica (Resolução CFM 2.217/2018) e Constituição Federal garantem autonomia reprodutiva e sigilo médico. Em casos de violência sexual, a notificação é obrigatória - mas este não é o caso aqui.</p><p><strong>Princípio fundamental:</strong> Nossa função é cuidar e informar, não julgar ou decidir pela paciente.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "INEP2025REVALIDA",
+        "INEP REVALIDA",
+        "REVALIDA",
+        "DF",
+        "2025",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762401391097-9"
+    }
+  ]
+}

@@ -8,19 +8,19 @@ export class UpdateSubFilterUseCase {
     if (!id) {
       throw new Error("O ID do subfiltro é obrigatório");
     }
-    
+
     const subFilter = await this.subFilterRepository.getById(id);
-    
+
     if (!subFilter) {
       throw new Error(`Subfiltro com ID ${id} não encontrado`);
     }
-    
+
     const updatedSubFilter = await this.subFilterRepository.update(id, data);
-    
+
     if (!updatedSubFilter) {
       throw new Error(`Erro ao atualizar subfiltro com ID ${id}`);
     }
-    
+
     return updatedSubFilter;
   }
-} 
+}

@@ -8,13 +8,13 @@ export class GetSubFilterByIdUseCase {
     if (!id) {
       throw new Error("O ID do subfiltro é obrigatório");
     }
-    
+
     const subFilter = await this.subFilterRepository.getById(id);
-    
+
     if (!subFilter) {
       throw new Error(`Subfiltro com ID ${id} não encontrado`);
     }
-    
+
     return subFilter;
   }
-} 
+}

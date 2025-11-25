@@ -1,15 +1,15 @@
-import { 
-  PaymentStatus, 
-  PaymentMethod, 
+import {
+  PaymentStatus,
+  PaymentMethod,
   PaymentNotificationType,
   UserPlanStatus,
-  InvoiceStatus 
+  InvoiceStatus,
 } from './types';
 
-export { 
-  PaymentStatus, 
-  PaymentMethod, 
+export {
+  PaymentStatus,
+  PaymentMethod,
   PaymentNotificationType,
   UserPlanStatus,
-  InvoiceStatus 
-}; 
+  InvoiceStatus,
+};

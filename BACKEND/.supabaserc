@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "yqlfgazngdymiprsrwvf",
+    "development": "yqlfgazngdymiprsrwvf",
+    "staging": "your-staging-project-id",
+    "production": "your-prod-project-id"
+  },
+  "settings": {
+    "api": {
+      "port": 54321
+    },
+    "db": {
+      "port": 54322
+    },
+    "studio": {
+      "port": 54323
+    }
+  }
+}

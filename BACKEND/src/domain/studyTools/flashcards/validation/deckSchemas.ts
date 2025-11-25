@@ -5,7 +5,7 @@ import { DeckStatus } from '../types';
  * Esquema para validação de criação de baralho
  */
 export const createDeckSchema = Joi.object({
-  userId: Joi.string().required().messages({
+  user_id: Joi.string().required().messages({
     'string.empty': 'O ID do usuário é obrigatório',
     'any.required': 'O ID do usuário é obrigatório',
   }),
@@ -14,14 +14,17 @@ export const createDeckSchema = Joi.object({
     'string.max': 'O nome do baralho deve ter no máximo {#limit} caracteres',
     'any.required': 'O nome do baralho é obrigatório',
   }),
+  collection_id: Joi.string().allow(null, '').messages({
+    'string.empty': 'O ID da coleção não pode ser vazio',
+  }),
   description: Joi.string().allow(null, '').max(500).messages({
     'string.max': 'A descrição deve ter no máximo {#limit} caracteres',
   }),
-  isPublic: Joi.boolean().default(false),
+  is_public: Joi.boolean().default(false),
   tags: Joi.array().items(Joi.string().max(30)).default([]).messages({
     'string.max': 'Cada tag deve ter no máximo {#limit} caracteres',
   }),
-  coverImageUrl: Joi.string().uri().allow(null, '').messages({
+  cover_image_url: Joi.string().uri().allow(null, '').messages({
     'string.uri': 'A URL da imagem de capa deve ser válida',
   }),
   status: Joi.string()
@@ -43,11 +46,11 @@ export const updateDeckSchema = Joi.object({
   description: Joi.string().allow(null, '').max(500).messages({
     'string.max': 'A descrição deve ter no máximo {#limit} caracteres',
   }),
-  isPublic: Joi.boolean(),
+  is_public: Joi.boolean(),
   tags: Joi.array().items(Joi.string().max(30)).messages({
     'string.max': 'Cada tag deve ter no máximo {#limit} caracteres',
   }),
-  coverImageUrl: Joi.string().uri().allow(null, '').messages({
+  cover_image_url: Joi.string().uri().allow(null, '').messages({
     'string.uri': 'A URL da imagem de capa deve ser válida',
   }),
   status: Joi.string()
@@ -64,9 +67,14 @@ export const listDecksSchema = Joi.object({
   status: Joi.string().valid(...Object.values(DeckStatus)),
   tags: Joi.array().items(Joi.string()),
   search: Joi.string().max(100),
-  sortBy: Joi.string().valid('name', 'createdAt', 'updatedAt', 'flashcardCount'),
-  sortOrder: Joi.string().valid('ASC', 'DESC'),
+  sort_by: Joi.string().valid(
+    'name',
+    'created_at',
+    'updated_at',
+    'flashcard_count',
+  ),
+  sort_order: Joi.string().valid('ASC', 'DESC'),
   limit: Joi.number().integer().min(1).max(100).default(10),
   page: Joi.number().integer().min(1).default(1),
-  lastDocId: Joi.string(),
+  last_doc_id: Joi.string(),
 });

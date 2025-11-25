@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "examName": "UFRB2023R1 (UFRB 2023)",
+    "examYear": 2023,
+    "url": "source://253",
+    "totalQuestions": 20,
+    "categorizedQuestions": 20,
+    "rewrittenComments": 20,
+    "processedAt": "2025-11-08T10:38:54.709Z",
+    "jobId": "batch-1762572226987-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "0c2d8403-fbb7-493e-b176-8b53f3b5e786"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Pamela retorna após 14 dias para consulta de pré-natal, com 27 semanas, queixando- se de dor de cabeça. No último atendimento, a medida de pressão arterial chamou a atenção do médico. No momento estava 130 X 90 mmHg, porém durante todo o acompanhamento a paciente apresentou média de pressão arterial de 110/70 mmHg. Por esse motivo solicitou o monitoramento da pressão que está descrito a seguir: 140x90, 140x100, 140x90, 140x90, 130x90, 140x80, 140x90, 150x80, 150x90, 140x90, 120x90, 150x100, 140x90, 140x90. Além de solicitar hemograma com plaquetas, proteinúria de 24 horas, ácido úrico, creatinina, transaminases hepáticas, albumina sérica, desidrogenase láctica, tempo de protrombina e tempo de tromboplastina parcial ativada, qual alternativa traz as condutas mais adequadas e qual o diagnóstico correto:",
+      "alternativas": [
+        "Trata-se de hipertensão crônica na gestação, o tratamento medicamentoso de escolha é enalapril 20 mg a cada 12 horas, não havendo necessidade de exame de imagem.",
+        "Trata-se de hipertensão gestacional, o tratamento medicamentoso de escolha é metildopa 250 mg a cada 12 horas, havendo necessidade de solicitar ultrassonografia obstétrica agora e mensalmente após a 32ª semana.",
+        "Trata-se de hipertensão gestacional, o tratamento medicamentoso de escolha é metildopa 250 mg a cada 12 horas, havendo necessidade de solicitar ultrassonografia obstétrica com doppler de artéria",
+        "Trata-se de hipertensão crônica na gestação, o tratamento medicamentoso de escolha é enalapril 20 mg a cada 12 horas, havendo necessidade de solicitar ultrassonografia obstétrica com doppler de artéria umbilical mensalmente.",
+        "Trata-se de hipertensão gestacional, o tratamento medicamentoso de escolha é enalapril 10 mg a cada 12 horas, havendo necessidade de solicitar ultrassonografia obstétrica com doppler de artéria"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFRB 2023 avalia seu conhecimento sobre hipertensão na gestação, diferenciando hipertensão gestacional de hipertensão crônica, além de testar conhecimento sobre medicamentos seguros na gravidez e condutas complementares.</p><p><strong>A resposta correta é B - hipertensão gestacional com metildopa e ultrassonografia obstétrica.</strong></p><p>Vamos analisar o caso: Pamela tem 27 semanas, média prévia de PA 110/70 mmHg, mas agora apresenta PA persistentemente elevadas (muitas leituras >140x90 mmHg). A hipertensão apareceu após 20 semanas de gestação, o que define hipertensão gestacional, não hipertensão crônica (que seria preexistente).</p><p>Analisando cada alternativa:</p><p>A) INCORRETA - Hipertensão gestacional (não crônica) e enalapril é категорично contraindicado na gestação (categoria D, pode causar oligodramnia e morte fetal).</p><p>B) CORRETA - Metildopa é o fármaco de primeira linha na gestação, segura para mãe e bebê. Ultrassonografia obstétrica é indicada para avaliar bem-estar fetal e crescimento.</p><p>C) INCORRETA - O Doppler de artéria umbilical não é rotineiramente indicado em hipertensão gestacional sem outras complicações (como restrição de crescimento fetal ou pré-eclâmpsia).</p><p>D) INCORRETA - Enalapril continua contraindicado e é hipertensão gestacional, não crônica.</p><p>E) INCORRETA - Enalapril contraindicado e Doppler de artéria umbilical não é indicação de rotina.</p><p>A metildopa 250 mg 12/12h é dose inicial adequada, e o acompanhamento com ultrassonografia permite monitoramento do bem-estar fetal.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Prenatal",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_HipertensaoGestacional",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Milene, 17 anos, veio à unidade de saúde do bairro Estrelinha, acompanhada de sua filha, dona Albertina, 65 anos, para consulta agendada com sua médica de família, doutora Juliana. Dona Albertina relata que trouxe a filha \"para fazer preventivo (citopatológico)\", pois ela se envolveu com um rapaz. Dona Albertina, por vergonha, nunca fez exame citopatológico. Milene também queixa de fluxo vaginal branco com prurido e nega história prévia de doenças ou comorbidades. Seguindo as recomendações de rastreamento do câncer de colo uterino, assinale qual conduta da doutora Juliana está correta.",
+      "alternativas": [
+        "Orientar sobre a prevenção de infecções sexualmente transmissíveis, realizar coleta de citopatológico e avaliar a queixa clínica da Milene.",
+        "Informar que as recomendações atuais de rastreamento do câncer de colo uterino são a partir de 25 anos de idade e avaliar a queixa da paciente.",
+        "Aproveitar que a paciente Milene tem queixa de fluxo vaginal e agendar para coleta de exame citopatológico com enfermeira na próxima semana.",
+        "Informar à dona Albertina que ela não precisa fazer exame colpocitológico, pois a recomendação de rastreamento é até 64 anos.",
+        "Questionar dona Albertina a veracidade dos fatos, pois Milene é muito jovem."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as diretrizes atuais de rastreamento de câncer de colo uterino, focando na idade de início e manejo de pacientes adolescentes.</p><p><strong>A resposta correta é B - informar que o rastreamento inicia aos 25 anos e avaliar a queixa clínica.</strong></p><p>Vamos analisar: Milene tem 17 anos e é sexualmente ativa. Dona Albertina acredita que ela precisa fazer preventivo, mas as diretrizes brasileiras (INCA 2023) mudaramrecentemente.</p><p>Analisando cada alternativa:</p><p>A) INCORRETA - Não realizar citopatológico em menores de 25 anos, mesmo com atividade sexual. Foco deve ser na queixa de fluxo vaginal.</p><p>B) CORRETA - As recomendações atuais do INCA (2023) são: iniciar rastreamento aos 25 anos, triennial até 64 anos. Como Milene tem 17 anos, deve ser informada sobre a idade adequada e ter sua queixa de corrimento avaliada.</p><p>C) INCORRETA - Agendar citopatológico para menor de 25 anos vai contra as diretrizes atuais.</p><p>D) INCORRETA - Até 64 anos são 9 anos, e Albertina com 65 anos ainda deveria fazer o preventivo (até 64 completos, incluindo 64 anos e 11 meses).</p><p>E) INCORRETA - A questão não é de veracidade, mas de seguir diretrizes corretas. A conduta deve ser educativa, não questionadora.</p><p>O flux vaginal com prurido sugere candidíase, que deve ser investigada e tratada adequadamente, sem misturar com rastreamento de câncer.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TestesDiagnosticos"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Rebeca, 37 anos, médica de família e comunidade, hoje se deparou com cinco atendimentos em que julgou necessário ou foi questionada quanto a orientações nutricionais. A seguir segue a descrição breve de cada atendimento e a orientação que foi dada. Assinale qual alternativa indica a orientação nutricional mais adequada.",
+      "alternativas": [
+        "Reinaldo, 1 ano e 1 mês: consulta de rotina, puericultura sem queixas ou alterações no exame físico para estimular consumo de suco de frutas entre as refeições.",
+        "Gabriela, 27 anos: consulta de rotina, puerpério de 38 dias sem queixas, em aleitamento materno exclusivo - evitar uso de leite de vaca, visando prevenção de alergia à proteína do leite de vaca",
+        "Flávio, 30 anos: refere fazer uma única refeição ao dia por desejar emagrecer - orientar o consumo de sopa low carb para o momento da refeição",
+        "Marília, 3 anos e 2 meses: trazida por queixa de \"\"não querer comer\"\", embora sem outras queixas e com bom ganho pondero-estatural - incentivar recompensas, como direito a tela, se comer bem.",
+        "Roberto, 25 anos: saudável, mas preocupado, pois pai teve diagnóstico de hipertensão arterial sistêmica aos 53 anos - privilegiar o consumo de alimentos in natura ou minimamente processados."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre nutrição em diferentes faixas etárias e situações clínicas, testando práticas baseadas em evidências científicas.</p><p><strong>A resposta correta é E - privilegiar alimentos in natura para prevenção cardiovascular em paciente jovem.</strong></p><p>Vamos analisar cada caso:</p><p>A) INCORRETA - Suco de frutas é rico em açúcar e deve ser evitado em crianças. Sucos devem ser limitados e preferencialmente dados em copo pequeno, entre as refeições, mas a orientação atual é priorizar frutas inteiras.</p><p>B) INCORRETA - Mãe em aleitamento materno exclusivo NÃO deve evitar leite de vaca. Esta restrição não tem base científica para prevenir alergia em lactentes, e pode prejudicar a nutrição materna.</p><p>C) INCORRETA - Refeição única diária é eating disorder. Sopa low carb não resolve o problema psicológico. Necessita abordagem multiprofissional e plano alimentar adequado.</p><p>D) INCORRETA - Recompensas por comer (como \"tela\") criam associação negativa com alimentação e podem gerar transtornos alimentares. A criança de 3 anos com bom desenvolvimento pondero-estatural provavelmente está fisiologicamente reduzindo o apetite.</p><p>E) CORRETA - Paciente jovem com história familiar de hipertensão deve adotar dieta rica em alimentos in natura/minimamente processados, conforme guia alimentar brasileiro (Ministério da Saúde 2023). Esta é uma medida preventiva valiosa baseada em evidências.</p><p>As orientações nutricionais devem ser sempre baseadas em evidências científicas atualizadas e considerar as características individuais de cada paciente.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura_DiagnosticoNutricional_Desnutricao",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura_DiagnosticoNutricional_Obesidade",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Jessica tem 32 anos. Vive com o companheiro e 2 filhos. Recentemente foi presa por estar em ponto de venda de drogas no momento de batida policial. Ficou 20 dias longe de casa até ser liberada por ser mãe e não ter ficha policial. Quando retornou à casa foi agredida pelo companheiro. A agressão foi de conhecimento geral da vizinhança. Jessica procurou ajuda da equipe de saúde da família, pois a mesma está com muito medo de sofrer outra agressão, além de estar com ferimentos e medo de procurar a urgência não se tratava do primeiro episódio de agressão). Você se organiza e no mesmo dia consegue acolhê-la. Após cuidar de seus ferimentos físicos, você aborda com a paciente a possibilidade de rompimento do ciclo de violência doméstica. A paciente se recusa a procurar a delegacia de proteção à mulher, neste caso, qual seria a melhor conduta?",
+      "alternativas": [
+        "Notificar o caso de violência ao Conselho Tutelar pois há uma obrigação legal e agendar nova consulta com toco em encorajá-la a denunciar o marido.",
+        "Acionar a polícia imediatamente e não permitir que a mulher retorne à casa até a prisão do marido.",
+        "Acionar o núcleo de defesa dos direitos da mulher da Defensoria Pública e encaminhar a paciente para o serviço de saúde especializado.",
+        "Notificar o caso de violência, oferecer encaminhamento para o serviço especializado e agendar nova consulta para acompanhar o caso",
+        "Entregar informações sobre os serviços de proteção à mulher e colocar a equipe à disposição para quando a paciente decidir agir."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFRB avalia seu conhecimento sobre o manejo de casos de violência doméstica na atenção primária, focando na abordagem ética e legal adequada.</p><p><strong>A resposta correta é D - notificar a violência, oferecer encaminhamento especializado e agendar nova consulta para acompanhamento.</strong></p><p>Vamos analisar a situação: Jessica é vítima de violência doméstica recorrente, tiene miedo de novas agressões, e se recusa a procurar a delegacia. A equipe acolheu adequadamente, mas agora precisa decidir a conduta.</p><p>Analisando cada alternativa:</p><p>A) INCORRETA - Conselho Tutelar é para menores de 18 anos. Jessica é adulta. Também não é adequado \"tocarlo\" (sic) - seria coação indevida. Notificação é obrigatória, mas agendar para \"encurajá-la\" não é a melhor abordagem.</p><p>B) INCORRETA - Acionar polícia imediatamente e impedir retorno à casa fere autonomia da vítima. Violência doméstica requer abordagem gradual, respeitando a decisão da mulher.</p><p>C) INCORRETA - A defensoria pública e serviço especializado podem ser opções, mas a alternativa não menciona notificação obrigatória e não garante acompanhamento pela equipe.</p><p>D) CORRETA - Segue protocolo adequado: notificação obrigatória (Lei 13.979/2020), oferece encaminhamento especializado (Centro de Referência), e agenda acompanhamento para garantir continuidade do cuidado. Respeita autonomia da vítima enquanto garante proteção.</p><p>E) INCORRETA - Apenas entregar informações é insuficiente para profissional de saúde em caso de violência. Deve ser mais ativo, oferecendo acompanhamento.</p><p>A abordagem de violência doméstica deve ser humanizada, ética, e seguir o protocolo de notificação obrigatória, sempre respeitando a autonomia da vítima.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_Violencia",
+        "Pediatria_MausTratosACriancasEAdolescent",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente com queixa de incômodo em ouvido há uma semana, nega dor ou outros sintomas. Na otoscopia, o médico encontra um inseto. A melhor conduta para este caso é:",
+      "alternativas": [
+        "o encaminhamento do paciente para serviço de urgência com referência em otorrinolaringologia.",
+        "a retirada com pinça kocher na própria unidade.",
+        "a realização de lavagem otológica na própria unidade.",
+        "a utilização de técnica de aspiração com sugador odontológico se disponível na unidade.",
+        "o encaminhamento do paciente para agendamento de consulta em otorrinolaringologia ambulatorial."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo de corpos estranhos no ouvido em atenção primária, testando se você reconhece procedimentos adequados para dispensar encaminhamentos desnecessários.</p><p><strong>A resposta correta é C - realizar lavagem otológica na própria unidade.</strong></p><p>Vamos analisar o caso: Paciente com incômodo em ouvido há uma semana, sem dor ou outros sintomas. Otoscopia confirma inseto vivo no canal auditivo externo. O manejo adequado deve ser imediato, seguro e realizável em atenção básica.</p><p>Analisando cada alternativa:</p><p>A) INCORRETA - Encaminhar para urgência em ORL é desnecessário quando o manejo adequado pode ser realizado na própria unidade, especialmente considerando que o sintomas são apenas incômodo há uma semana.</p><p>B) INCORRETA - Pinça Kocher é contraindicated para corpo estranho vivo no ouvido. Pode traumatizar canal auditivo e membrana timpânica, especialmente se o inseto estiver próximo dessas estruturas.</p><p>C) CORRETA - Lavagem otológica com soro morno em temperatura corporal é a técnica de escolha. O soro lavará suavemente o inseto sem causar trauma. É segura, disponível em qualquer unidade básica e dispensa encaminhamentos desnecessários.</p><p>D) INCORRETA - Aspirador odontológico não é adequado. Não está adaptado para canal auditivo, pode causar trauma e geralmente não está disponível para uso otológico.</p><p>E) INCORRETA - Encaminhar para agendamento ambulatorial é desnecessário quando o problema pode ser resolvido na própria unidade de forma segura e imediata.</p><p>Importante: o inseto vivo deve ser removido com técnicas suaves para evitar que o movimento cause lesão no canal auditivo. A lavagem é o método mais seguro e eficaz.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia",
+        "Outros_Otorrinolaringologia_CorpoEstranhoNasal"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Sobre problemas cirúrgicos mais prevalentes na infância, assinale a alternativa correta:",
+      "alternativas": [
+        "Todos os casos suspeitos de hérnia inguinal demandam realização de ultrassonografia da região para confirmar o diagnóstico e, caso haja confirmação, o encaminhamento imediato para tratamento cirúrgico.",
+        "A hérnia umbilical raramente provoca dor ou desconforto e nesses casos a criança deve ser observada até pelo menos 2 anos de idade, podendo a observação seguir até o sétimo ou oitavo ano de vida se houver fechamento gradual do anel umbilical.",
+        "Crianças com criptorquidia unilateral devem, após confirmação da presença do testículo na cavidade abdominal por exames de imagem, receber tratamento hormonal até o final do primeiro ano de vida, estando o tratamento cirúrgico reservado para os casos de insucesso na terapia inicial.",
+        "A presença de fimose em meninos com mais de 5 anos de idade sugere a necessidade de tratamento cirúrgico, pelo risco aumentado de desenvolvimento de infecções do trato urinário (ITU) nesses casos.",
+        "A diástase dos músculos retos abdominais é um fator predisponente para a hérnia epigástrica e por isso demanda tratamento cirúrgico se não apresentar resolução espontânea até o final do primeiro ano de vida."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFRB 2023 avalia seu conhecimento sobre condutas em problemas cirúrgicos pediátricos comuns. É um tema clássico de pediatria e cirurgia infantil que sempre aparece em provas.</p><p><strong>A resposta correta é a alternativa B - hérnia umbilical</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Hérnia inguinal):</strong> Incorreta. O diagnóstico de hérnia inguinal é essencialmente clínico, baseado no histórico e exame físico. O ultrassom não é rotineiro e não há indicação de encaminhamento imediato em todos os casos. A hernia inguinal em crianças tem conduta diferente da população adulta.</p><p><strong>Alternativa B (Hérnia umbilical):</strong> Correta. Esta é a conduta padrão atual. A maioria das hérnias umbilicais infantis fecha espontaneamente até os 2-4 anos de idade. Não causam dor, apenas aspecto cosmético. A observação conservadora até essa idade é o tratamento de escolha.</p><p><strong>Alternativa C (Criptorquidia):</strong> Incorreta. O tratamento hormonal com hCG ou GnRH para criptorquidia não é primeira linha. A recomendação atual é orquidopexia entre 6-12 meses de idade para reduzir risco de infertilidade e neoplasia. O tratamento hormonal tem baixa eficácia e não é standard.</p><p><strong>Alternativa D (Fimose):</strong> Incorreta. A idade por si só (5 anos) não indica cirurgia. Fimose fisiológica é normal até 2-3 anos. Apenas fimose patológica (que causa balanopostite recorrente, dificuldade miccional) justifica circuncisão. É importante não confundir fimose fisiológica com patológica.</p><p><strong>Alternativa E (Diástase dos retos):</strong> Incorreta. A diástase dos músculos retos abdominais é hallazgo normal em lactentes e crianças pequenas, especialmente em rn pré-termo. Não é fator de risco para hérnia epigástrica e NÃO exige tratamento. É benigno e resolve espontaneamente.</p><p><strong>Veredito:</strong> A alternativa B está correta, seguindo as diretrizes da SBP (Sociedade Brasileira de Pediatria) para manejo conservador da hérnia umbilical infantil.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_CirurgiaInfantil",
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniaUmbilical"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Isabela, 29 anos, e Carlos, 32 anos, vêm a consulta de puericultura com sua filha Amanda, de 2 meses e 15 dias. É sua primeira filha e a gestação foi planejada. Gravidez e parto ocorreram sem intercorrências. Amanda está em amamentação exclusiva. Entretanto, na última consulta há duas semanas, estava com ganho de peso insuficiente, regurgitação e vômitos. Os pais foram tranquilizados quanto a evolução e caráter autolimitado na maioria das crianças e orientados a diminuir o tempo de oferta, mas aumentar a frequência da amamentação, evitar a manipulação excessiva da filha e ambientes agitados durante e após a alimentação e deixá-la em pé para arrotar depois de comer. Os pais relataram que estavam seguindo as orientações, mas Amanda persistia com vômitos e passou a ficar mais irritada e chorosa. A avaliação da pega e sucção estava adequada. O ganho de peso continuou insuficiente e o restante do exame físico estava normal, sem febre. Assinale a alternativa que apresenta a conduta para esse caso:",
+      "alternativas": [
+        "Deve-se iniciar tratamento empírico com ranitidina ou omeprazol e agendar retorno em 15 dias para reavaliação.",
+        "Pode-se encaminhar para especialista para descartar doença do refluxo gastroesofágico por meio de exame de pHmetria e/ou endoscopia digestiva alta.",
+        "Entre possíveis exames complementares, pode-se solicitar radiografia de esôfago, estômago e duodeno com bário para diagnóstico de doença do refluxo gastroesofágico.",
+        "Realizar tratamento empírico para infecção urinária, já que é a causa infecciosa mais comum",
+        "Solicitar internamento imediato da menor pelo alto risco de desnutrição."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o manejo do refluxo gastroesofágico em lactentes, um problema muito comum na prática do médico de família e pediatra.</p><p><strong>A resposta correta é a alternativa A - iniciar tratamento empírico</strong></p><p>Amanda é uma lactente de 2 meses com quadro clássico de DRGE: vômitos, irritabilidade, ganho de peso insuficiente. As medidas não-farmacológicas já foram orientadas sem sucesso, indicando a necessidade de tratamento.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Iniciar ranitidina ou omeprazol:</strong> Correta. Seguindo protocolos atuais (incluindo diretriz da SBP), o tratamento empírico com inibidores da bomba de prótons (omeprazol) ou bloqueadores H2 (ranitidina) é a primeira abordagem em lactentes sintomáticos. O omeprazol tem melhor perfil de eficácia.</p><p><strong>B) Encaminhar para especialista para pHmetria/endoscopia:</strong> Incorreta. Exames invasivos não são indicados na primeira fase do tratamento. A pHmetria e endoscopia são reservadas para casos refratários ou quando há dúvida diagnóstica importante.</p><p><strong>C) Radiografia de esôfago, estômago e duodeno:</strong> Incorreta. A radiografia com bário não tem valor no diagnóstico de DRGE. Pode até ser prejudicial por radioexposição desnecessária.</p><p><strong>D) Tratar empiricamente infecção urinária:</strong> Incorreta. Não há dados clínicos de ITU (febre, dor abdominal específica, alterações laboratoriais). O foco é o DRGE, não há justificativa para tratamento empírico de ITU.</p><p><strong>E) Internamento imediato:</strong> Incorreta. O caso é estável, sem sinais de alarme graves. O ganho insuficiente de peso justifica tratamento, mas não internamento. Reavaliação em 15 dias é adequada para acompanhar resposta terapêutica.</p><p><strong>Veredito:</strong> A condicionalizada correta é iniciar IBP (omeprazol) como tratamento empírico, seguindo guidelines atuais para DRGE em lactentes.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica_RefluxoGastroesofagicoRge",
+        "Pediatria_Puericultura"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "J.J, 2 anos, sexo feminino, é levada pela mãe ao médico de família, apresentando lesões verrucosas em região perineal e corrimento purulento. A criança vive com os pais. Durante as manhãs fica sob os cuidados da avó materna. A conduta neste caso é:",
+      "alternativas": [
+        "realizar a notificação de caso suspeito de violência.",
+        "aguardar resultado de exame pericial confirmatório para realizar a notificação.",
+        "realizar coleta de biópsia para confirmação diagnóstica e, posteriormente, realizar a notificação.",
+        "encaminhar a criança para atenção secundária para nesse nível ser realizada a notificação.",
+        "acionar o conselho tutelar para que o representante realize a notificação"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta é uma questão crítica da UFRB 2023 que avalia sua conduta diante de suspeita de violência sexual infantil. É um tema obrigatório na formação médica e sempre muito valorizado em provas.</p><p><strong>A resposta correta é a alternativa A - notificação imediata</strong></p><p>Vamos analisar o cenário: J.J, 2 anos, lesões verrucosas (compatíveis com HPV) na região perineal + corrimento purulento. Esta apresentação é altamente suspeita de violência sexual, especialmente considerando a localização e a idade da criança.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Notificação imediata:</strong> Correta. Qualquer suspeita de violência contra criança/adolescente deve ser notificada IMEDIATAMENTE à autoridade competente. A Resolução CFM 1.958/10 torna a notificação obrigatória e urgente.</p><p><strong>B) Aguardar resultado de exame pericial:</strong> Incorreta. Não é necessário aguardar exames para notificar. O artigo 13 do ECA determina que profissionais obrigados à notificação devem comunicar fatos suspeitos independente de confirmação diagnóstica.</p><p><strong>C) Fazer biópsia antes de notificar:</strong> Incorreta. A coleta de material para exame (incluindo perícia) NÃO pode retardar a notificação. Esta conduta pode até constituir omissão de comunicação de maus-tratos.</p><p><strong>D) Encaminhar para atenção secundária para notificar:</strong> Incorreta. A notificação deve ser feita no local de identificação da suspeita, não encaminhando. A responsabilização é do profissional que atendeu o caso.</p><p><strong>E) Acionar conselho tutelar para notificar:</strong> Incorreta. Embora o Conselho Tutelar deva ser acionado, a notificação deve ser feita pelo próprio profissional através do sistema oficial (e-SUS Violence ou Boletim de Ocorrência).</p><p><strong>Diretrizes importantes:</strong> O ECA (Estatuto da Criança e do Adolescente) é categórico: notificação de suspeita de violência é OBRIGATÓRIA e URGENTE. Formulários, laudos, perícia etc. são complementares, mas não substituem a comunicação.</p><p><strong>Veredito:</strong> A notificação imediata é a conduta correta e obrigatória diante de qualquer suspeita de violência contra criança.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Dermatologia",
+        "Pediatria_MausTratosACriancasEAdolescent",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_Violencia"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Janaína traz o filho, Ivan, de 8 anos, para consulta. Há uns dois meses, ele tem tido crises de dor abdominal em toda a barriga que duram de 10 a 15 minutos e passam espontaneamente. Não apresenta outros sintomas, sempre foi saudável e tem desenvolvimento adequado. A mãe diz que a alimentação é a mesma, apesar de terem mudado de cidade recentemente. Ao exame físico, Ivan não apresenta dor, nem outro achado relevante. Como conduta, o médico solicita exames (hemograma completo, parasitológico de fezes e exame de urina - elementos e sedimentos anormais) e orienta manter a dipirona para as crises de dor. Faltou na conduta do médico:",
+      "alternativas": [
+        "aprofundar mais a investigação de doenças graves, como apendicite e obstrução intestinal.",
+        "solicitar a glicemia de jejum porque o diabetes tipo I é a causa mais frequente de dor abdominal nessa idade.",
+        "explorar mais as ideias e sentimentos do paciente em relação à dor e o contexto em que ela surgiu.",
+        "dada a gravidade do caso, encaminhar diretamente para o gastroenterologista ou emergência hospitalar para investigação.",
+        "além dos exames laboratoriais, seria recomendado solicitar uma radiografia simples do abdome nessa primeira consulta."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFRB 2023 avalia aspectos psicossociais em pediatria - um tema fundamental na formação do médico de família. O foco está no entendimento de que sintomas físicos podem ter origem psicogênica, especialmente em crianças.</p><p><strong>A resposta correta é a alternativa C - explorar ideias e sentimentos</strong></p><p>Ivan, 8 anos, apresenta dor abdominal recorrente há 2 meses. A história é muito sugestiva de causa funcional: dor em cólicas, sem outros sintomas, exame físico normal, mudança de cidade recente. O contexto psicossocial é crucial.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Aprofundar investigação de doenças graves:</strong> Incorreta. Não há sinais de alarme (perda de peso, sangramento, febre, vômitos persistentes). A investigação excessiva pode ser prejudicial e iatrogênica em casos de dor funcional.</p><p><strong>B) Solicitar glicemia para diabetes tipo I:</strong> Incorreta. Diabetes tipo 1 NÃO é causa frequente de dor abdominal nesta apresentação. Dor abdominal é mais comum em cetoacidose diabética, que teria outros sinais óbvios (poliúria, polidipsia, perda de peso).</p><p><strong>C) Explorar ideias e sentimentos do paciente:</strong> Correta. A mudança de cidade é evento estressante significativo. É fundamental abordar o contexto psicossocial, validar os sintomas da criança e entender como ela vive essa experiência. A abordagem centrada na pessoa é essencial.</p><p><strong>D) Encaminhar para gastroenterologista/emergência:</strong> Incorreta. Não há critérios para encaminhamento urgente. Exames inicialmente solicitados pelo médico já são adequados. O encaminhamento deve ser considerado apenas se os exames apontarem para organicidade ou se sintomas persistirem.</p><p><strong>E) Solicitar radiografia simples do abdome:</strong> Incorreta. A radiografia simples tem baixa sensibilidade para o diagnóstico de dor abdominal funcional e não é indicada na primeira consulta. A radiografia de abdome tem valor limitado no diagnóstico de dor abdominal crônica.</p><p><strong>Diretrizes importantes:</strong> Dor abdominal funcional em crianças é muito comum. Mudanças de vida (mudança de cidade, escola, nascimento de irmãos) são gatilhos importantes. A abordagem humanizada e o entendimento do contexto são fundamentais.</p><p><strong>Veredito:</strong> A conduta que faltou foi explorar o contexto psicossocial, validando a experiência da criança e considerando que a mudança de cidade pode ser um fator desencadeante.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_GastrologiaPediatrica",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "O residente de MFC Rodrigo teve recentemente uma aula sobre Medicina Centrada na Pessoa e está tentando incorporar seu aprendizado às suas consultas. Ele está preocupado pois tem dificuldades em manejar o tempo de consulta e acredita que se praticar a Medicina Centrada na Pessoa suas consultas durarão muito mais tempo. Rodrigo pede ajuda para um MFC mais experiente. Sobre a preocupação de Rodrigo, assinale a alternativa correta.",
+      "alternativas": [
+        "Um tempo de consulta reduzido não é compatível com a Medicina Centrada na Pessoa, por isso o ideal é ao menos 30 minutos por consulta para que se possa perguntar sobre os sentimentos, ideias e expectativas do paciente.",
+        "Um Método Centrado na Pessoa não leva necessariamente a consultas mais longas e a Atenção Primária tem como ponto forte a possibilidade de usar diversas consultas ao longo do tempo para aprofundar as questões subjetivas mais complexas.",
+        "A organização do tempo de consulta tende a ser melhor se o médico escolher somente um problema por consulta e então fazer perguntas sobre as ideias, preocupações e expectativas do paciente sobre o problema.",
+        "O paciente tem maior satisfação se o tempo de consulta é maior, independentemente de usar ou não técnicas de abordagem centrada na pessoa.",
+        "A Medicina Centrada na Pessoa é útil e viável em consultas programadas como consultas de pré-natal e puericultura. Em consultas de demanda espontânea é recomendada a abordagem centrada no problema."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFRB 2023 aborda a Medicina Centrada na Pessoa (MCP), um modelo de atenção fundamental na Atenção Primária. O tema é especialmente relevante para médicos de família, que devem integrar este modelo na prática.</p><p><strong>A resposta correta é a alternativa B - não leva necessariamente a consultas mais longas</strong></p><p>Rodrigo teme que a MCP aumente o tempo das consultas. Sua preocupação é legítima, mas a MCP pode ser integrada de forma eficiente na prática, usando o conceito de 'consultas ao longo do tempo'.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Tempo reduzido incompatível com MCP:</strong> Incorreta. A MCP é compatível com diferentes tempos de consulta. O importante é QUALIDADE da interação, não a quantidade de tempo. Pode ser aplicada em consultas de 15-20 minutos.</p><p><strong>B) MCP não leva a consultas mais longas:</strong> Correta. A beleza da Atenção Primária é a longitudinalidade. Problemas complexos podem ser abordados em múltiplas consultas, cada uma focando em aspectos específicos. A MCP é flexível e adaptável ao tempo disponível.</p><p><strong>C) Um problema por consulta:</strong> Incorreta. Esta é uma abordagem centrada no problema, não na pessoa. A MCP recomenda abordar múltiplos aspectos do mesmo problema (biopsicossocial) em uma única consulta, desde que bem estruturado.</p><p><strong>D) Maior satisfação só com mais tempo:</strong> Incorreta. Estudos mostram que satisfação está mais relacionada à qualidade da comunicação e escuta ativa do que à duração. Um paciente sente-se bem atendido mesmo com consulta curta se o médico demonstrar empatia e interesse.</p><p><strong>E) MCP útil apenas em consultas programadas:</strong> Incorreta. A MCP pode e deve ser aplicada em qualquer tipo de consulta, inclusive de demanda espontânea. O modelo pode ser adaptado à situação, mantendo os princípios de centramento na pessoa.</p><p><strong>Conceitos-chave da MCP:</strong> I) Explorar experiência da doença, II) Entender pessoa como um todo, III) Construir relacionamento terapêutico, IV) Encontrar terreno comum, V) Intensificar relacionamento. Todos podem ser aplicados em diferentes tempos de consulta.</p><p><strong>Veredito:</strong> A MCP é um modelo flexível que se adapta ao tempo de consulta disponível, sendo a longitudinalidade da APS uma ferramenta fundamental para abordar questões complexas sem necessariamente 'esticar' as consultas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Dona Florinda, 77 anos, viúva, aposentada, vive em um sobrado de dois quartos com seus dois filhos, uma nora e dois netos. Apresenta hipertensão arterial sistêmica e está em uso diário de losartana 100 mg, atenolol 100 mg, hidroclorotiazida 25 mg e sinvastatina 40 mg. É portadora também de perda auditiva de 70% no ouvido esquerdo, e refere zumbido persistente e episódios de tontura, além de dor muscular com piora nos últimos dias. Há dois dias, ao tentar levantar de sua cama de manhã, apresentou síncope e permaneceu desacordada por alguns instantes. Ao acordar, tinha muita dor e edema no antebraço direito e foi levada ao serviço de emergência clínica por um de seus filhos, onde foi constatada fratura no punho direito. Foram realizadas analgesia e imobilização locais, assim como relatório de alta, que foi direcionado para a Unidade de Atenção Primária onde a paciente é acompanhada. O agente comunitário de saúde (ACS) mostra o relatório de alta do serviço de emergência ao médico e avisa que a paciente em questão está na Unidade, solicitando avaliação médica. A conduta correta a ser proposta pelo médico é:",
+      "alternativas": [
+        "considerando que não há espaço em sua agenda para atendimento nos próximos dias, referenciar a paciente para especialistas em cardiologia e geriatria, uma vez que é uma paciente complexa e necessita de atenção especial.",
+        "recomendar aos filhos por meio de um bilhete que restrinjam as atividades da paciente por conta de suas limitações físicas e não a deixem sair desacompanhada e solicitar exames complementares para investigar possível causa da queda.",
+        "avaliar a paciente no mesmo dia. Prescrever anti-inflamatórios para dor caso necessário e reagendar uma consulta para reavaliação da hipertensão em seis meses.",
+        "avaliar a paciente no mesmo dia. Suspender atenolol e sinvastatina, visando a diminuir o risco de queda. Reagendar consulta nos próximos dias para que a paciente retorne acompanhada de um de seus filhos visando a pactuar intervenções conjuntas com a famíl",
+        "Encaixar uma consulta para Dona Florinda para uma breve avaliação, manter os medicamentos anti-hipertensivos e referenciá-la para otorrinolaringologista para que esse profissional investigue possíveis causas de queda e solicitar que ela vá à consulta acom"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFRB avalia sua capacidade de manejo clínico de pacientes idosos complexos, especialmente em situações de risco de queda. O caso apresenta Dona Florinda, uma senhora de 77 anos com múltiplas comorbidades que desenvolveu síncope com queda e fratura.</p><p><strong>A resposta correta é D.</strong> Vamos analisar o raciocínio clínico por trás desta escolha.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Referenciar imediatamente para especialistasignifica fragmentar o cuidado e não assumir a responsabilidade do médico de família. Pacientes complexas necessitam de coordenação do cuidado, não de simples encaminhamentos.</p><p><strong>B) INCORRETA:</strong> Entregar um bilhete para os filhos é uma comunicação inadequada e não profissional. Além disso, restricting atividades sem avaliação adequada pode ser prejudicial à autonomia da paciente.</p><p><strong>C) INCORRETA:</strong> Reagendar consulta para 6 mesesignifica não abordar adequadamente o episódio agudo de síncope e queda. A avaliação deve ser urgente.</p><p><strong>D) CORRETA:</strong> Avaliar no mesmo dia é essencial given o episódio de síncope recente. Suspender atenolol e sinvastatina é adequado - betabloqueadores podem causar bradicardia e hipotensão, e estatinas podem contribuir para fraqueza muscular, ambos aumentando risco de queda. Reagendar para acompanhamento com familiar permite elaboração de plano de cuidado conjunto.</p><p><strong>E) INCORRETA:</strong> Embora inclua avaliação, manter todos os medicamentos sem considerar a relação com o episódio de quedaignora um fator de risco importante.</p><p><strong>Veredito:</strong> A alternativa D representa a conduta mais segura e abrangente, priorizando a avaliação urgente, ajustando medicamentos potencialmente relacionados ao evento e garantindo seguimento com suporte familiar.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria",
+        "ClinicaMedica_Neurologia"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Cláudia é médica de família em um município no interior de Minas Gerais. Uma das pacientes cuidadas por Cláudia teve diagnosticado câncer de mama e faleceu aos 37 anos. Essa situação teve grande repercussão no bairro. Porém, neste mesmo mês a Força Tarefa Americana lançou uma revisão importante orientando que o rastreio com mamografia tem grau de recomendação B para mulheres entre 50 e 74 anos e grau de recomendação C antes dos 50 anos. A melhor conduta para Cláudia com suas pacientes é:",
+      "alternativas": [
+        "realizar uma prática clínica orientada para a comunidade na qual está inserida e solicitar mamografia anual para todas as mulheres a partir dos 35 anos.",
+        "solicitar mamografia a cada dois anos para as mulheres a partir dos 30 anos e anual após os 50 anos.",
+        "solicitar mamografia a cada dois anos para as mulheres a partir dos 40 anos e anual após os 50 anos.",
+        "realizar um seminário com a comunidade e orientar que só a partir dos 40 anos é recomendado o rastreio e que esse foi um caso isolado na comunidade.",
+        "ouvir os medos individuais, explicar o que é o processo de rastreamento e sugerir mamografia dos 50 a 74 anos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda a conduta médica frente a diretrizes internacionais de rastreamento, particularmente em oncologia. O cenário é uma médica de família lidando com repercussão comunitária de um caso de câncer de mama em mulher jovem.</p><p><strong>A resposta correta é E.</strong> Vamos entender o racional por trás desta escolha.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Iniciar rastreamento aos 35 anos contradiz as evidências atuais que não demonstram benefício suficiente em mulheres tão jovens. A Força Tarefa Americana recomenda grau C antes dos 50 anos, indicando benefício limitado.</p><p><strong>B) INCORRETA:</strong> Iniciar aos 30 anos é ainda mais precoce e sem respaldo científico adequado. A recomendação atual para rastreamento preventivo é mais conservadora.</p><p><strong>C) INCORRETA:</strong> Although many guidelines historically recommended 40 anos, a revisão atual da Força Tarefa Americana reduziu essa recomendação, tornando-a grau C (benefício limitado).</p><p><strong>D) INCORRETA:</strong> Realizar seminário para explicar que se trata de caso isoladoignora o papel do médico de família de abordar medos individuais e necessidades específicas de cada paciente.</p><p><strong>E) CORRETA:</strong> Esta abordagem personaliza o cuidado médico, ouvindo medos individuais e explicando adequadamente o processo de rastreamento. Seguir as evidências atuais (mamografia 50-74 anos) é a conduta mais recomendada, grau B (benefício moderado).</p><p><strong>Veredito:</strong> A alternativa E equilibra a necessidade de cuidado individualizado com a adesão às evidências científicas atuais, representando a melhor prática clínica em medicina de família.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_RastreamentoDoCancerDeMama",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_MetodoClinicoCentradoNaPessoa",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_MedicinaBaseadaEmEvidencias"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Um senhor de 71 anos procura o Médico de Família e Comunidade na unidade de saúde onde é cadastrado, porque apresentou palpitação de início súbito na noite anterior, sem precordialgia. A ausculta cardíaca revela um ritmo irregular e uma frequência de 120 batimentos por minuto, compatível com fibrilação atrial. O paciente é hipertenso e vinha apresentando um controle adequado da pressão arterial com o uso de hidroclorotiazida 25 mg uma vez ao dia e captopril 25 mg duas vezes ao dia. Entre as alternativas abaixo, assinale a que apresenta a melhor conduta para este caso.",
+      "alternativas": [
+        "Substituir captopril por propranolol.",
+        "Prescrever varfarina.",
+        "Encaminhar o paciente para a emergência a fim de que se avalie a possibilidade de cardioversão.",
+        "Prescrever digoxina.",
+        "Adotar conduta expectante, reavaliando o paciente em 7 dias."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua conduta frente a um caso de fibrilação atrial aguda em ambiente de atenção primária. O paciente é hipertenso, com controle pressórico adequado, e apresenta palpitação súbita com FA confirmada no exame físico.</p><p><strong>A resposta correta é C.</strong> Vamos analisar o raciocínio clínico.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Substituir captopril por propranololignora a natureza aguda do quadro. FA de início recente requer avaliação especializada para cardioversão, não apenas ajuste de medicação antihipertensiva.</p><p><strong>B) INCORRETA:</strong> Prescrever varfarina diretamente na APS é inadequado. A anticoagulação requer avaliação do risco tromboembólico, início de medicação em ambiente controlado, e monitoramento especializado. A FA é de início recente, requerendo primeiro controle do ritmo.</p><p><strong>C) CORRETA:</strong> Encaminhar para emergência para avaliação de cardioversão é a conduta apropriada. FA de início recente (< 48 horas) pode ser cardiovertida com segurança. A emergência tem recursos para avaliação cardiológica especializada, cardioversão elétrica ou farmacológica, e manejo adequado.</p><p><strong>D) INCORRETA:</strong> Prescrever digoxina diretamente na APS ignora a necessidade de avaliação especializada. Digoxina pode ser usada no controle de frequência, mas o caso sugere início recente que pode ser cardiovertido.</p><p><strong>E) INCORRETA:</strong> Conduta expectante em FA aguda de início recente é inadequada. O paciente está sintomático (palpitação) e FA pode evoluir para complicação tromboembólica ou agravamento clínico.</p><p><strong>Veredito:</strong> A alternativa C representa a conduta mais segura e baseada em evidências, garantindo ao paciente acesso a tratamento especializado oportuno para cardioversão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Homem de 32 anos, trabalhador da construção civil, sofreu um corte na mão, durante a sua jornada de trabalho numa construção de uma grande empreiteira local. Procura a Unidade Básica de Saúde próxima da obra. Ao avaliar o ferimento, o Médico decide realizar a sutura da lesão e indica afastamento do trabalho. A Comunicação de Acidente de Trabalho (CAT), nessa situação, poderia ser emitida pelos seguintes profissionais: I.Médico da Unidade Básica de Saúde. II. Médico da empresa. III. Médico de serviço privado. É correto o que se apresenta em:",
+      "alternativas": [
+        "I, apenas.",
+        "II, apenas.",
+        "III, apenas.",
+        "I e II, apenas.",
+        "I, II e III."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre legislação trabalhista em saúde ocupacional, especificamente sobre a emissão de Comunicação de Acidente de Trabalho (CAT). O cenário é um acidente de trabalho em construção civil atendido na atenção primária.</p><p><strong>A resposta correta é E.</strong> Vamos analisar a questão do ponto de vista legal.</p><p><strong>Contexto Legal:</strong> A CAT é um documento obrigatório para acidentes de trabalho. A legislação brasileira permite que diferentes categorias de médicos emitam este documento.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Afirmar que apenas o médico da UBS pode emitir CATignora as outras possibilidades legais.</p><p><strong>B) INCORRETA:</strong> Limitar a emissão ao médico da empresaé restritivo e não condiz com a legislação.</p><p><strong>C) INCORRETA:</strong> Afirmar que apenas médico de serviço privado pode emitir CATdesconsidera outras possibilidades.</p><p><strong>D) INCORRETA:</strong> A combinação de I e II apenasainda não contempla todas as possibilidades legais.</p><p><strong>E) CORRETA:</strong> I, II e III estão corretos. A legislação permite emissão de CAT por:</p><p>- I. Médico da UBS: Atende o trabalhador e pode emitir CAT para garantir direitos trabalhistas<br>- II. Médico da empresa: Responsável direto pela saúde ocupacional do funcionário<br>- III. Médico de serviço privado: Profissional habilitado para emite documentos médicos legais</p><p><strong>Veredito:</strong> A alternativa E representa corretamente as três categorias profissionais autorizadas por lei para emissão de CAT, garantindo que o trabalhador tenha acesso ao documento independente de onde busque atendimento.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_AcidenteDeTrabalho",
+        "MedicinaPreventiva_SaudeDoTrabalhador",
+        "MedicinaPreventiva_SaudeDoTrabalhador_BasesLegaisDeSaudeDoTrabalhado"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Luciana é uma senhora de 82 anos, hipertensa e diabética, viúva há 5 anos. Vem à consulta trazida por sua filha mais velha, que relata que a mãe vem apresentando há 3 anos quadro progressivo de perda de memória e agressividade com os filhos. Até 1 mês atrás, morava sozinha em outra cidade, mas teve que se mudar para a casa da filha após quase ter incendiado a casa ao deixar a panela no fogo e ter ido dormir. Em relação a esse caso clínico, assinale a alternativa correta:",
+      "alternativas": [
+        "O diagnóstico de depressão é improvável, pois geralmente não se cursa com perda de memória.",
+        "A possibilidade de demência vascular deve ser considerada mesmo na ausência de história de acidente vascular cerebral.",
+        "O mini-exame do estado mental, o teste do relógio e testes de fluência verbal são úteis para rastreamento, mas têm valor limitado na avaliação e no acompanhamento clínico de pacientes com demência.",
+        "Benzodiazepínicos devem ser usados para conter a agressividade, de preferência o diazepam.",
+        "O diagnóstico de delirium deve ser fortemente considerado devido ao curso progressivo do quadro."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre demência em idosos, especialmente demência vascular e instrumentos de avaliação cognitiva. O caso apresenta Luciana, uma senhora de 82 anos com quadro progressivo de perda de memória e alterações comportamentais.</p><p><strong>A resposta correta é B.</strong> Vamos analisar o raciocínio diagnóstico.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> Afirmar que depressão geralmente não cursa com perda de memória está errado. Depressão em idosos pode apresentar sintomas cognitivos significativos, incluindo déficit de memória, configurando pseudodemência depressiva.</p><p><strong>B) CORRETA:</strong> Demência vascular deve ser considerada mesmo sem história de AVC. A demência vascular pode se apresentar de forma gradual com pequenos eventos cerebrovasculares silenciosos, microinfartos, ou doença de pequenos vasos cerebrais. Fatores de risco como hipertensão e diabetes aumentam a probabilidade.</p><p><strong>C) INCORRETA:</strong> Afirmar que instrumentos como Mini-Exame, teste do relógio e fluência verbal têm valor limitado para acompanhamentoestá incorreto. Estes instrumentos são úteis tanto para rastreamento quanto para monitorização da progressão demencial e resposta ao tratamento.</p><p><strong>D) INCORRETA:</strong> Benzodiazepínicos, especialmente diazepam, não são primeira escolha para agressividade em demência. Podem causar sedação excessiva, quedas, confusão e paradoxical agitation. Antipsicóticos em dose baixa e medidas não-farmacológicas são preferíveis.</p><p><strong>E) INCORRETA:</strong> Delirium se caracteriza por início agudo e curso flutuante, não progressivo. O quadro descrito é de 3 anos de evolução, característico de demência, não delirium.</p><p><strong>Veredito:</strong> A alternativa B demonstra conhecimento adequado sobre demência vascular, que deve ser sempre considerada em pacientes idosos com fatores de risco cerebrovascular, mesmo sem história manifesta de AVC.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Demencias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "<html><head></head><body>Sobre os determinantes sociais da saúde e o processo saúde-doença, veja a figura abaixo e leia as assertivas e marque a alternativa correta: I- Não se pode afirmar que o racismo impactou no processo saúde-doença no contexto da pandemia de COVID-19 no Brasil, considerando o cenário epidemiológico brasileiro e os determinantes sociais da saúde. II- Pode-se afirmar que prevenção e promoção em saúde ocorrem somente no nível da Atenção Primária à Saúde (APS). III- Não se pode afirmar que a prevenção quaternária tenha relação com os determinantes sociais da saúde e o processo saúde- doença, considerando o contexto da pandemia de COVID-19 no Brasil. IV- Pode-se afirmar que a prática de cuidado em saúde do Médico de Família e Comunidade é voltada somente para a prevenção primária no processo saúde-doença ao considerar os determinantes sociais da saúde. A alternativa correta é:\n\n<img src=\"https://medbrave.com.br/questions/ufrb-2023-r1/qQ16.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Apenas as assertivas I, II e III estão corretas.",
+        "Apenas as assertivas II e IV estão corretas.",
+        "Apenas a assertiva III está correta.",
+        "Apenas assertivas III e IV estão corretas.",
+        "Nenhuma das assertivas estão corretas."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFRB aborda determinantes sociais da saúde e o processo saúde-doença, avaliando a compreensão do candidato sobre racismo, níveis de prevenção e a prática do Médico de Família e Comunidade.</p><p><strong>A resposta correta é E - Nenhuma das assertivas estão corretas.</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>Assertiva I:</strong> INCORRETA. O racismo impactou significativamente o processo saúde-doença durante a pandemia de COVID-19 no Brasil. Estudos epidemiológicos demonstraram maior mortalidade e internação entre populações negras e indígenas, devido a determinantes sociais como acesso limitado à saúde, condições precárias de habitação e trabalho, e comorbidades relacionadas à vulnerabilidade social.</p><p><strong>Assertiva II:</strong> INCORRETA. A prevenção e promoção em saúde ocorrem em todos os níveis de atenção, não apenas na APS. A prevenção primária, secundária e terciária happens em todos os níveis do sistema, embora a APS tenha papel fundamental na promoção e prevenção primária.</p><p><strong>Assertiva III:</strong> INCORRETA. A prevenção quaternária (evitar danos causados por intervenções médicas desnecessárias) tem relação direta com determinantes sociais. Durante a COVID-19, questões como supermedicalização, uso inadequado de medicamentos sem eficácia comprovada, e intervenções desnecessárias em populações vulneráveis exemplificam essa relação.</p><p><strong>Assertiva IV:</strong> INCORRETA. A prática do Médico de Família e Comunidade vai além da prevenção primária, englobando prevenção secundária (diagnóstico precoce), terciária (reabilitação) e promoção da saúde, considerando integralmente os determinantes sociais.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessoSaudedoenca"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "A Política Nacional de Educação Popular em Saúde no âmbito do Sistema Único de Saúde (PNEPS-SUS) tem como princípios o diálogo, amorosidade; problematização; construção compartilhada do conhecimento; emancipação; e compromisso com a construção do projeto democrático e popular. A PNEPS-SUS fundamenta-se, principalmente, em aportes teóricos do educador Paulo Freire, assim, assinale a alternativa que melhor define a educação popular:",
+      "alternativas": [
+        "uma concepção prático/teórica e uma metodologia de educação bancária que articula diferentes saberes e práticas valorizando as dimensões da soberania cultural, assim como o compromisso com o autoritarismo e protagonismo das classes populares nas transform",
+        "pode ser considerada um movimento contra-hegemônico aos processos de colonização e silenciamento de vozes historicamente oprimidas: seja pela resistência às formas coloniais de dominação cultural, política e econômica; pela produção de um pensamento que r",
+        "a educação popular se caracterizou, ao longo dos anos, como uma alternativa às pedagogias e práticas liberais a serviço da manutenção das estruturas de poder político, favorecendo o poder médico e da ciência.",
+        "o uso das práticas integrativas e complementares nas unidades de saúde é uma ação de educação popular;",
+        "todas as alternativas anteriores estão incorretas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia a compreensão sobre Educação Popular em Saúde no contexto do SUS, especificamente seus fundamentos teóricos em Paulo Freire e sua natureza contra-hegemônica.</p><p><strong>A resposta correta é B.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> INCORRETA. Contradiz-se ao mencionar \"educação bancária\" (conceito crítico de Freire) e \"autoritarismo\", que são opostos aos princípios da educação popular que prega diálogo horizontal e libertação, não autoritarismo.</p><p><strong>Alternativa B:</strong> CORRETA. Define educação popular como movimento contra-hegemônico que questiona estruturas coloniais de dominação, valoriza saberes populares e promove emancipação. Esta definição align com os princípios da PNEPS-SUS e com o pensamento freireano, que vê a educação como prática da liberdade e ferramenta de transformação social.</p><p><p><strong>Alternativa C:</strong> INCORRETA. Embora critique práticas liberais, a afirmação de que a educação popular \"favorece o poder médico e da ciência\" é incorreta. Na verdade, a educação popular questiona essa relação hierárquica e busca horizontalizar conhecimentos.</p><p><strong>Alternativa D:</strong> INCORRETA. As práticas integrativas e complementares são estratégias de cuidado, mas não definem educação popular, que é muito mais ampla, relacionada à metodologia e filosofia de ensino.</p><p><strong>Alternativa E:</strong> INCORRETA, pois a alternativa B está correta.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_AbordagemFamiliar"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Através da Portaria no 2.979/GM/MS, de 12 de novembro de 2019, o Ministério da Saúde institui o Programa Previne Brasil, e estabelece novo modelo de financiamento de custeio da Atenção Primária à Saúde no âmbito do Sistema Único de Saúde. Os indicadores do pagamento por desempenho para 2022, no âmbito do Programa Previne Brasil (Portaria GM/MS n° 102/2022) são:",
+      "alternativas": [
+        "proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1a (primeira) até a 12a (décima segunda) semana de gestação; proporção de gestantes com realização de exames para sífilis e HIV; proporção de gestantes com atendimento",
+        "proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1a (primeira) até a 12a (décima segunda) semana de gestação; proporção de gestantes com realização de exames para sífilis e HIV; proporção de gestantes com atendimento",
+        "proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1a (primeira) até a 12a (décima segunda) semana de gestação; proporção de gestantes com realização de exames para sífilis e HIV; proporção de homens com exame PSA realizado; proporção de mulheres com coleta de citopatológico na APS; proporção de crianças de 1 (um) ano de idade vacinadas na APS contra Difteria, Tétano, Coqueluche, Hepatite B, infecções causadas por haemophilus influenzae tipo b e Poliomielite inativada; proporção de pessoas com hipertensão, com consulta e pressão arterial aferida no semestre; e proporção de pessoas com diabetes, com consulta e hemoglobina glicada solicitada no semestre.",
+        "proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1a (primeira) até a 12a (décima segunda) semana de gestação; proporção de gestantes com realização de USG por mês; proporção de gestantes com atendimento odontológico r",
+        "proporção de gestantes com pelo menos 6 (seis) consultas pré-natal realizadas, sendo a 1a (primeira) até a 12a (décima segunda) semana de gestação; proporção de gestantes com realização de USG por mês; proporção de gestantes com atendimento odontológico r"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa o conhecimento sobre os indicadores de pagamento por desempenho do Programa Previne Brasil para 2022, especificamente relacionados ao pré-natal conforme a Portaria GM/MS nº 102/2022.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> CORRETA. Contém os três indicadores de pré-natal definidos para 2022: 1) proporção de gestantes com pelo menos 6 consultas pré-natal (1ª até 12ª semana); 2) proporção de gestantes com exames para sífilis e HIV; 3) proporção de gestantes com atendimento odontológico. Estes indicadores focam na qualidade e precocidade do pré-natal.</p><p><strong>Alternativas B, C, D e E:</strong> INCORRETAS. Estas alternativas incluem indicadores que NÃO fazem parte do Previne Brasil 2022. A Portaria GM/MS nº 102/2022 definiu especificamente os três indicadores de pré-natal mencionados na alternativa A. Outros indicadores citados nas alternativas incorretas (USG mensal, PSA, citopatológico, vacinação infantil, hipertensão e diabetes) fazem parte de outros programas ou não estavam incluídos no pagamento por desempenho 2022.</p><p>A banca avaliou se o candidato conhece a especificidade dos indicadores do Previne Brasil, que priorizou o pré-natal como principal foco dos indicadores de 2022, buscando reduzir a mortalidade materna e perinatal.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_FinanciamentoEmSaude",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "Obstetricia_PreNal",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "O Transtorno do Espectro Autista (TEA) pode ser compreendido como uma síndrome comportamental complexa que possui etiologias múltiplas, fatores maternos, genéticos, complicações no parto, período neonatal e riscos ambientais (RUTTER, 2011). Rutter M. Progress in understanding autism: 2007 -2010. Journal of Autism and Developmental Disorders. 41, 395 -404 [Internet]. 2011 [cited 2018 Dec 01]. Além das pessoas que convivem com TEA, diversas outras convivem em territórios existenciais próprios que necessitam de cuidado pela equipe de saúde da família. Nesse sentido, os movimentos sociais em favor das pessoas com deficiência e estudiosas, como a antropóloga Débora Diniz (2007), defendem o conceito de deficiência social, logo, sobre o modelo de deficiência social é correto afirmar: DINIZ, D. O que é deficiência São Paulo: Editora Brasiliense. 2007.",
+      "alternativas": [
+        "Trata-se da experiência de opressão em um contexto corponormativo pouco sensível à variação corporal humana;",
+        "Diz respeito a produção social a partir de interações discriminatórias e preconceituosas;",
+        "A deficiência deixa de ser um problema médico para ser uma questão econômica, social, de direitos humanos, cultural etc.",
+        "A deficiência é uma experiência opressiva em um ambiente que viola direitos e exclui aqueles que possuem algum tipo de impedimento sensorial, físico ou intelectual.",
+        "Todas as alternativas anteriores estão corretas."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia a compreensão sobre o modelo de deficiência social aplicado ao Transtorno do Espectro Autista (TEA), conceito desenvolvido por estudiosas como Débora Diniz e defendidos por movimentos sociais.</p><p><strong>A resposta correta é E - Todas as alternativas anteriores estão corretas.</strong></p><p>Todos os conceitos apresentados sobre deficiência social estão corretos e complementares:</p><p><strong>Alternativa A:</strong> CORRETA. Aborda a experiência de opressão em contextos corponormativos, onde corpos diferentes são marginalizados, o que se aplica ao TEA, onde comportamentos atípicos são frequentemente patologizados.</p><p><strong>Alternativa B:</strong> CORRETA. Destaca a produção social da deficiência através de interações discriminatórias, aspecto central do modelo social que desloca a \"deficiência\" do indivíduo para a sociedade que não accommodationa a diversidade.</p><p><strong>Alternativa C:</strong> CORRETA. Transforma a deficiência de questão médica para questão de direitos humanos, social e econômica, o que é fundamental para políticas de inclusão de pessoas com TEA.</p><p><strong>Alternativa D:</strong> CORRETA. Complementa os aspectos anteriores, enfatizando que a experiência opressiva decorre de ambientes que violam direitos e excluem pessoas com impedimentos diversos, incluindo TEA.</p><p>O modelo social da deficiência é fundamental na abordagem contemporânea do TEA, pois questiona a medicalização excessiva e promueve inclusão social e respeito à neurodiversidade.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Pediatria",
+        "Outros_Psiquiatria"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "Pediatria_Neuropediatria",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_PsiquiatriaInfantil",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_PsiquiatriaInfantil",
+        "Outros_Psiquiatria_PsiquiatriaInfantilTranstornoD",
+        "MedicinaPreventiva_SaudeDoTrabalhador"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Em 21 de setembro de 2017, o Ministério da Saúde publica a Portaria n. 2.436 que aprova a Política Nacional de Atenção Básica (PNAB), estabelecendo a revisão de diretrizes para a organização da Atenção Básica, no âmbito do Sistema Único de Saúde (SUS). Entre as principais alterações trazidas pela nova PNAB (2017) estão:",
+      "alternativas": [
+        "financiamento federal de equipes de saúde da família e equipes de atenção básica (eAB); presença facultativa dos agentes comunitários de saúde (ACS) nas eAB; inserção do gerente de unidade básica nas equipes; organização das ações e serviços em essenciais e ampliados; criação do Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB).",
+        "financiamento federal de equipes de saúde da família e equipes de atenção básica (eAB); presença facultativa dos agentes comunitários de saúde (ACS) nas eAB; integração da equipe de saúde bucal à equipe mínima de Saúde da Família; inserção do gerente de unidade básica nas equipes; organização das ações e serviços em essenciais e ampliados.",
+        "financiamento federal de equipes de saúde da família e equipes de atenção básica (eAB); presença facultativa dos agentes comunitários de saúde (ACS) nas eAB; inserção do gerente de unidade básica nas equipes; criação do Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB), mas suspensão do repasse federal para esse tipo de equipe.",
+        "financiamento federal de equipes de saúde da família e equipes de atenção básica (eAB); presença facultativa dos agentes comunitários de saúde (ACS) nas eAB; estabelecimento do PREVINE BRASIL como nova forma de financiamento da atenção básica; organização",
+        "financiamento federal de equipes de saúde da família e equipes de atenção básica (eAB); presença facultativa dos agentes comunitários de saúde (ACS) nas eAB; inserção do gerente de unidade básica nas equipes; organização das ações e serviços em essenciais e ampliados; criação do Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB); obrigatoriedade de prontuário eletrônico do cidadão."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as principais alterações da Política Nacional de Atenção Básica (PNAB) de 2017, especificamente mudanças organizacionais e estruturais da APS no SUS.</p><p><strong>A resposta correta é A.</strong></p><p><strong>Análise das alterações da PNAB 2017:</strong></p><p><strong>Alternativa A:</strong> CORRETA. Contém todas as principais alterações: 1) financiamento federal de eSF e eAB (nova classificação); 2) presença facultativa dos ACS (mudança importante do modelo anterior); 3) gerente de unidade básica; 4) organização em ações essenciais e ampliados; 5) criação do NASF-AB (mantido e reorganizado).</p><p><strong>Alternativa B:</strong> INCORRETA. Menciona integração da equipe de saúde bucal à equipe mínima, o que não aconteceu na PNAB 2017. A saúde bucal mantuvo estrutura própria.</p><p><strong>Alternativa C:</strong> INCORRETA. Cita suspensão do repasse federal para NASF-AB, o que não ocorreu. O NASF-AB foi mantido e reorganizado na PNAB 2017.</p><p><strong>Alternativa D:</strong> INCORRETA. O PREVINE BRASIL (2019) é posterior à PNAB 2017 e não foi estabelecido nesta portaria.</p><p><strong>Alternativa E:</strong> INCORRETA. A obrigatoriedade de prontuário eletrônico não foi estabelecida na PNAB 2017.</p><p>A PNAB 2017 representou flexibilização do modelo eSF-only, permitindo eAB e tornando ACS facultativos, buscando maior flexibilidade operacional na APS.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFRB2023R1",
+        "UFRB",
+        "R1",
+        "AC",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762598204249-19"
+    }
+  ]
+}

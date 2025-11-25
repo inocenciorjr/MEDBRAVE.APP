@@ -1,7 +1,12 @@
 import { Request, Response } from 'express';
 import { AuthService } from '../services/AuthService';
-import { LoginRequest, MFAType, MFAVerifyRequest, RefreshTokenRequest } from '../types/auth.types';
-import { AuthenticatedRequest } from '../middleware/auth.middleware';
+import {
+  LoginRequest,
+  MFAType,
+  MFAVerifyRequest,
+  RefreshTokenRequest,
+} from '../types/auth.types';
+import { AuthenticatedRequest } from '../middleware/supabaseAuth.middleware';
 import { logger } from '../../../utils/logger';
 
 /**
@@ -27,7 +32,9 @@ export class AuthController {
       res.status(201).json({ user });
     } catch (error: any) {
       logger.error('Erro no registro:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro interno' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro interno' });
     }
   };
 
@@ -50,7 +57,7 @@ export class AuthController {
         res.status(200).json({
           mfaRequired: true,
           mfaType: result.mfaType,
-          user: { id: result.user.uid, email: result.user.email }
+          user: { id: result.user.uid, email: result.user.email },
         });
         return;
       }
@@ -58,11 +65,13 @@ export class AuthController {
       res.status(200).json({
         user: { id: result.user.uid, email: result.user.email },
         token: result.token,
-        refreshToken: result.refreshToken
+        refreshToken: result.refreshToken,
       });
     } catch (error: any) {
       logger.error('Erro no login:', error);
-      res.status(error.status || 401).json({ error: error.message || 'Credenciais inválidas' });
+      res
+        .status(error.status || 401)
+        .json({ error: error.message || 'Credenciais inválidas' });
     }
   };
 
@@ -80,7 +89,7 @@ export class AuthController {
       }
 
       const verified = await this.authService.verifyMfa(verifyData);
-      
+
       if (!verified) {
         res.status(401).json({ error: 'Código inválido' });
         return;
@@ -88,15 +97,17 @@ export class AuthController {
 
       // Gerar tokens após verificação bem-sucedida
       const token = await this.authService.refreshTokens({ refreshToken: '' });
-      
+
       res.status(200).json({
         verified: true,
         token: token.token,
-        refreshToken: token.refreshToken
+        refreshToken: token.refreshToken,
       });
     } catch (error: any) {
       logger.error('Erro na verificação MFA:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro na verificação' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro na verificação' });
     }
   };
 
@@ -113,16 +124,21 @@ export class AuthController {
         return;
       }
 
-      const result = await this.authService.setupMfa(userId, mfaType as MFAType);
-      
+      const result = await this.authService.setupMfa(
+        userId,
+        mfaType as MFAType,
+      );
+
       res.status(200).json({
         secret: result.secret,
         qrCode: result.qrCode,
-        setup: true
+        setup: true,
       });
     } catch (error: any) {
       logger.error('Erro na configuração do MFA:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro na configuração' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro na configuração' });
     }
   };
 
@@ -139,12 +155,17 @@ export class AuthController {
         return;
       }
 
-      const result = await this.authService.disableMfa(userId, mfaType as MFAType);
-      
+      const result = await this.authService.disableMfa(
+        userId,
+        mfaType as MFAType,
+      );
+
       res.status(200).json({ disabled: result });
     } catch (error: any) {
       logger.error('Erro ao desabilitar MFA:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro ao desabilitar' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro ao desabilitar' });
     }
   };
 
@@ -161,12 +182,18 @@ export class AuthController {
         return;
       }
 
-      const result = await this.authService.changePassword(userId, currentPassword, newPassword);
-      
+      const result = await this.authService.changePassword(
+        userId,
+        currentPassword,
+        newPassword,
+      );
+
       res.status(200).json({ changed: result });
     } catch (error: any) {
       logger.error('Erro na alteração de senha:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro na alteração' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro na alteração' });
     }
   };
 
@@ -184,14 +211,16 @@ export class AuthController {
       }
 
       const tokens = await this.authService.refreshTokens(refreshData);
-      
+
       res.status(200).json({
         token: tokens.token,
-        refreshToken: tokens.refreshToken
+        refreshToken: tokens.refreshToken,
       });
     } catch (error: any) {
       logger.error('Erro na atualização de tokens:', error);
-      res.status(error.status || 401).json({ error: error.message || 'Token inválido' });
+      res
+        .status(error.status || 401)
+        .json({ error: error.message || 'Token inválido' });
     }
   };
 
@@ -209,13 +238,17 @@ export class AuthController {
       }
 
       await this.authService.forgotPassword(email);
-      
+
       // Sempre retorna sucesso para não revelar existência de contas
-      res.status(200).json({ message: 'Se o email existir, um link de recuperação será enviado' });
+      res.status(200).json({
+        message: 'Se o email existir, um link de recuperação será enviado',
+      });
     } catch (error: any) {
       logger.error('Erro na solicitação de redefinição de senha:', error);
       // Sempre retorna sucesso para não revelar existência de contas
-      res.status(200).json({ message: 'Se o email existir, um link de recuperação será enviado' });
+      res.status(200).json({
+        message: 'Se o email existir, um link de recuperação será enviado',
+      });
     }
   };
 
@@ -233,11 +266,13 @@ export class AuthController {
       }
 
       const result = await this.authService.resetPassword(token, newPassword);
-      
+
       res.status(200).json({ reset: result });
     } catch (error: any) {
       logger.error('Erro na redefinição de senha:', error);
-      res.status(error.status || 400).json({ error: error.message || 'Erro na redefinição' });
+      res
+        .status(error.status || 400)
+        .json({ error: error.message || 'Erro na redefinição' });
     }
   };
 
@@ -255,11 +290,13 @@ export class AuthController {
       }
 
       const result = await this.authService.verifyEmail(token);
-      
+
       res.status(200).json({ verified: result });
     } catch (error: any) {
       logger.error('Erro na verificação de email:', error);
-      res.status(error.status || 400).json({ error: error.message || 'Erro na verificação' });
+      res
+        .status(error.status || 400)
+        .json({ error: error.message || 'Erro na verificação' });
     }
   };
 
@@ -276,18 +313,23 @@ export class AuthController {
       }
 
       await this.authService.logout(userId);
-      
+
       res.status(200).json({ logout: true });
     } catch (error: any) {
       logger.error('Erro no logout:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro no logout' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro no logout' });
     }
   };
 
   /**
    * Sincroniza usuário com backend (criação/atualização segura)
    */
-  syncUser = async (req: AuthenticatedRequest, res: Response): Promise<void> => {
+  syncUser = async (
+    req: AuthenticatedRequest,
+    res: Response,
+  ): Promise<void> => {
     try {
       const user = req.user; // Usuário do middleware de autenticação
 
@@ -299,15 +341,17 @@ export class AuthController {
       // Usar o auth middleware que já cria o usuário com slug
       // O middleware já fez todo o trabalho, só precisamos confirmar
       const result = await this.authService.syncUser(user.id, user);
-      
-      res.status(200).json({ 
+
+      res.status(200).json({
         synced: true,
         user: result,
-        message: 'Usuário sincronizado com sucesso'
+        message: 'Usuário sincronizado com sucesso',
       });
     } catch (error: any) {
       logger.error('Erro na sincronização do usuário:', error);
-      res.status(error.status || 500).json({ error: error.message || 'Erro na sincronização' });
+      res
+        .status(error.status || 500)
+        .json({ error: error.message || 'Erro na sincronização' });
     }
   };
 }

@@ -29,7 +29,9 @@ export interface IDataImportExportService {
    * @param options Opções de filtro e paginação
    * @returns Lista de jobs e total
    */
-  getDataJobs(options?: GetDataJobsOptions): Promise<{ jobs: DataJob[]; total: number }>;
+  getDataJobs(
+    options?: GetDataJobsOptions,
+  ): Promise<{ jobs: DataJob[]; total: number }>;
 
   /**
    * Atualiza o status de um job

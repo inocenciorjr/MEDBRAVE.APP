@@ -1,6 +1,6 @@
 // Testes unitários para ContentService
 // Implementação inicial - esqueleto
-import { ContentService } from '../services/contentService';
+import { ContentService } from '../../../infra/content/supabase/contentService';
 
 describe('ContentService', () => {
   let service: ContentService;

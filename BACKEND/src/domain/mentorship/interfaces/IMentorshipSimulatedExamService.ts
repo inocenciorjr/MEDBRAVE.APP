@@ -42,24 +42,33 @@ export interface IMentorshipSimulatedExamService {
    * Lista simulados de uma mentoria
    * @param mentorshipId ID da mentoria
    */
-  getSimulatedExamsByMentorship(mentorshipId: string): Promise<MentorshipSimulatedExam[]>;
+  getSimulatedExamsByMentorship(
+    mentorshipId: string,
+  ): Promise<MentorshipSimulatedExam[]>;
 
   /**
    * Lista simulados atribuídos por um usuário
    * @param userId ID do usuário
    */
-  getSimulatedExamsAssignedByUser(userId: string): Promise<MentorshipSimulatedExam[]>;
+  getSimulatedExamsAssignedByUser(
+    userId: string,
+  ): Promise<MentorshipSimulatedExam[]>;
 
   /**
    * Lista simulados pendentes de uma mentoria
    * @param mentorshipId ID da mentoria
    */
-  getPendingSimulatedExams(mentorshipId: string): Promise<MentorshipSimulatedExam[]>;
+  getPendingSimulatedExams(
+    mentorshipId: string,
+  ): Promise<MentorshipSimulatedExam[]>;
 
   /**
    * Marca um simulado como concluído
    * @param id ID do simulado
    * @param score Pontuação (0-100)
    */
-  completeSimulatedExam(id: string, score: number): Promise<MentorshipSimulatedExam | null>;
+  completeSimulatedExam(
+    id: string,
+    score: number,
+  ): Promise<MentorshipSimulatedExam | null>;
 }

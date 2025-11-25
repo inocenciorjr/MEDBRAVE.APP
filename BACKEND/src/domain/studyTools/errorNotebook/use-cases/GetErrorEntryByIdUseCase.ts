@@ -3,7 +3,9 @@ import { ErrorNotebookEntry } from '../types';
 import { AppError } from '../../../../shared/errors/AppError';
 
 export class GetErrorEntryByIdUseCase {
-  constructor(private errorNotebookEntryRepository: IErrorNotebookEntryRepository) {}
+  constructor(
+    private errorNotebookEntryRepository: IErrorNotebookEntryRepository,
+  ) {}
 
   async execute(id: string, userId: string): Promise<ErrorNotebookEntry> {
     // Validar parâmetros
@@ -24,7 +26,7 @@ export class GetErrorEntryByIdUseCase {
     }
 
     // Verificar se a entrada pertence ao usuário
-    if (entry.userId !== userId) {
+    if (entry.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook entry', 403);
     }
 

@@ -1,19 +1,20 @@
 import { Request, Response } from 'express';
+import { SupabaseClient } from '@supabase/supabase-js';
 import { AppError } from '../../../../shared/errors/AppError';
 import { logger } from '../../../../utils/logger';
-import { ErrorNotebookService } from '../services/errorNotebookService';
-import { 
+import { ErrorNotebookService } from '../services';
+import {
   CreateErrorNoteDTO,
   UpdateErrorNoteDTO,
   GetUserErrorNotesOptions,
-  ErrorNoteDifficulty 
+  ErrorNoteDifficulty,
 } from '../types';
-import { FSRSGrade } from '../../../srs/services/FSRSService';
+// FSRSGrade import removed - FSRS logic deprecated
 
 /**
  * FASE 3: Controller do Sistema de Caderno de Erros
  * Implementação conforme TODO.md
- * 
+ *
  * ENDPOINTS:
  * - POST /error-notebook/create - Criar anotação
  * - GET /error-notebook/user - Listar anotações do usuário
@@ -25,16 +26,15 @@ import { FSRSGrade } from '../../../srs/services/FSRSService';
 export class ErrorNotebookController {
   private errorNotebookService: ErrorNotebookService;
 
-  constructor() {
-    this.errorNotebookService = new ErrorNotebookService();
+  constructor(supabase: SupabaseClient) {
+    this.errorNotebookService = new ErrorNotebookService(supabase);
   }
 
   /**
    * Injetar dependências para evitar circular dependency
    */
-  setServices(unifiedReviewService: any, questionService: any): void {
+  setServices(unifiedReviewService: any): void {
     this.errorNotebookService.setUnifiedReviewService(unifiedReviewService);
-    this.errorNotebookService.setQuestionService(questionService);
   }
 
   /**
@@ -43,9 +43,9 @@ export class ErrorNotebookController {
    */
   async createErrorNote(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Criar anotação de erro', { 
-        userId: req.user?.id,
-        body: req.body 
+      logger.info('Controller: Criar anotação de erro', {
+        user_id: req.user?.id,
+        body: req.body,
       });
 
       // Validar autenticação
@@ -54,14 +54,16 @@ export class ErrorNotebookController {
       }
 
       // Validar dados obrigatórios
-      const { 
-        questionId, 
-        userNote, 
-        userExplanation, 
-        keyPoints, 
-        tags, 
-        difficulty, 
-        confidence 
+      const {
+        question_id: questionId,
+        user_note: userNote,
+        user_explanation: userExplanation,
+        key_points: keyPoints,
+        tags,
+        difficulty,
+        confidence,
+        folder_id: folderId,
+        alternative_comments: alternativeComments,
       } = req.body;
 
       if (!questionId) {
@@ -75,7 +77,10 @@ export class ErrorNotebookController {
       }
 
       // Validar difficulty se fornecida
-      if (difficulty && !Object.values(ErrorNoteDifficulty).includes(difficulty)) {
+      if (
+        difficulty &&
+        !Object.values(ErrorNoteDifficulty).includes(difficulty)
+      ) {
         throw AppError.badRequest('difficulty inválida');
       }
 
@@ -86,14 +91,16 @@ export class ErrorNotebookController {
 
       // Preparar DTO
       const createDTO: CreateErrorNoteDTO = {
-        userId: req.user.id,
-        questionId,
-        userNote: userNote.trim(),
-        userExplanation: userExplanation.trim(),
-        keyPoints: keyPoints || [],
+        user_id: req.user.id,
+        question_id: questionId,
+        user_note: userNote.trim(),
+        user_explanation: userExplanation.trim(),
+        key_points: keyPoints || [],
         tags: tags || [],
         difficulty: difficulty || ErrorNoteDifficulty.MEDIUM,
-        confidence: confidence || 3
+        confidence: confidence || 3,
+        folder_id: folderId || undefined,
+        alternative_comments: alternativeComments || undefined,
       };
 
       // Criar anotação
@@ -101,31 +108,31 @@ export class ErrorNotebookController {
 
       logger.info('Anotação de erro criada com sucesso', {
         entryId: result.entry.id,
-        userId: req.user.id,
-        addedToReview: result.addedToReview
+        user_id: req.user.id,
+        addedToReview: result.addedToReview,
       });
 
       res.status(201).json({
         success: true,
-        message: result.addedToReview 
+        message: result.addedToReview
           ? 'Anotação criada e adicionada às revisões com sucesso'
           : 'Anotação criada com sucesso (não foi possível adicionar às revisões)',
         data: {
           entry: result.entry,
-          addedToReview: result.addedToReview
-        }
+          addedToReview: result.addedToReview,
+        },
       });
     } catch (error) {
       logger.error('Erro no controller ao criar anotação:', error);
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
         });
       }
     }
@@ -137,9 +144,9 @@ export class ErrorNotebookController {
    */
   async getUserErrorNotes(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Listar anotações do usuário', { 
-        userId: req.user?.id,
-        query: req.query 
+      logger.info('Controller: Listar anotações do usuário', {
+        user_id: req.user?.id,
+        query: req.query,
       });
 
       // Validar autenticação
@@ -148,13 +155,7 @@ export class ErrorNotebookController {
       }
 
       // Extrair parâmetros de query
-      const {
-        limit,
-        page,
-        tags,
-        difficulty,
-        isInReviewSystem
-      } = req.query;
+      const { limit, page, tags, difficulty, is_in_review_system: isInReviewSystem } = req.query;
 
       // Preparar opções
       const options: GetUserErrorNotesOptions = {};
@@ -177,45 +178,53 @@ export class ErrorNotebookController {
 
       if (tags) {
         if (typeof tags === 'string') {
-          options.tags = tags.split(',').map(tag => tag.trim());
+          options.tags = tags.split(',').map((tag) => tag.trim());
         } else if (Array.isArray(tags)) {
-          options.tags = tags.map(tag => String(tag).trim());
+          options.tags = tags.map((tag) => String(tag).trim());
         }
       }
 
-      if (difficulty && Object.values(ErrorNoteDifficulty).includes(difficulty as ErrorNoteDifficulty)) {
+      if (
+        difficulty &&
+        Object.values(ErrorNoteDifficulty).includes(
+          difficulty as ErrorNoteDifficulty,
+        )
+      ) {
         options.difficulty = difficulty as ErrorNoteDifficulty;
       }
 
       if (isInReviewSystem !== undefined) {
-        options.isInReviewSystem = isInReviewSystem === 'true';
+          options.is_in_review_system = isInReviewSystem === 'true';
       }
 
       // Buscar anotações
-      const result = await this.errorNotebookService.getUserErrorNotes(req.user.id, options);
+      const result = await this.errorNotebookService.getUserErrorNotes(
+        req.user.id,
+        options,
+      );
 
       logger.info('Anotações listadas com sucesso', {
-        userId: req.user.id,
+        user_id: req.user.id,
         totalFound: result.entries.length,
-        total: result.total
+        total: result.total,
       });
 
       res.json({
         success: true,
         message: 'Anotações listadas com sucesso',
-        data: result
+        data: result,
       });
     } catch (error) {
       logger.error('Erro no controller ao listar anotações:', error);
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
         });
       }
     }
@@ -227,9 +236,9 @@ export class ErrorNotebookController {
    */
   async prepareErrorNoteForReview(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Preparar anotação para revisão', { 
-        userId: req.user?.id,
-        entryId: req.params.id 
+      logger.info('Controller: Preparar anotação para revisão', {
+        user_id: req.user?.id,
+        entryId: req.params.id,
       });
 
       // Validar autenticação
@@ -243,32 +252,36 @@ export class ErrorNotebookController {
       }
 
       // Preparar para revisão
-      const reviewData = await this.errorNotebookService.prepareErrorNoteForReview(
-        entryId, 
-        req.user.id
-      );
+      const reviewData =
+        await this.errorNotebookService.prepareErrorNoteForReview(
+          entryId,
+          req.user.id,
+        );
 
       logger.info('Anotação preparada para revisão', {
         entryId,
-        userId: req.user.id
+        user_id: req.user.id,
       });
 
       res.json({
         success: true,
         message: 'Anotação preparada para revisão',
-        data: reviewData
+        data: reviewData,
       });
     } catch (error) {
-      logger.error('Erro no controller ao preparar anotação para revisão:', error);
+      logger.error(
+        'Erro no controller ao preparar anotação para revisão:',
+        error,
+      );
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
         });
       }
     }
@@ -280,10 +293,10 @@ export class ErrorNotebookController {
    */
   async recordErrorNoteReview(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Registrar revisão de anotação', { 
-        userId: req.user?.id,
+      logger.info('Controller: Registrar revisão de anotação', {
+        user_id: req.user?.id,
         entryId: req.params.id,
-        body: req.body
+        body: req.body,
       });
 
       // Validar autenticação
@@ -298,16 +311,9 @@ export class ErrorNotebookController {
 
       const { selfAssessment, reviewTimeMs } = req.body;
 
-      // Validar self assessment
-      if (!selfAssessment || !Object.values(FSRSGrade).includes(selfAssessment)) {
-        throw AppError.badRequest(
-          'selfAssessment é obrigatório e deve ser um valor válido (1-4)'
-        );
-      }
-
-      // Validar reviewTimeMs se fornecido
-      if (reviewTimeMs !== undefined && (typeof reviewTimeMs !== 'number' || reviewTimeMs < 0)) {
-        throw AppError.badRequest('reviewTimeMs deve ser um número positivo');
+      // Validação básica - unifiedreview fará validações detalhadas
+      if (selfAssessment === undefined || selfAssessment === null) {
+        throw AppError.badRequest('selfAssessment é obrigatório');
       }
 
       // Registrar revisão
@@ -315,13 +321,13 @@ export class ErrorNotebookController {
         entryId,
         req.user.id,
         selfAssessment,
-        reviewTimeMs
+        reviewTimeMs,
       );
 
       logger.info('Revisão de anotação registrada com sucesso', {
         entryId,
-        userId: req.user.id,
-        selfAssessment
+        user_id: req.user.id,
+        selfAssessment,
       });
 
       res.json({
@@ -330,20 +336,20 @@ export class ErrorNotebookController {
         data: {
           entryId,
           grade: selfAssessment,
-          reviewTimeMs
-        }
+          reviewTimeMs,
+        },
       });
     } catch (error) {
       logger.error('Erro no controller ao registrar revisão:', error);
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
         });
       }
     }
@@ -355,10 +361,10 @@ export class ErrorNotebookController {
    */
   async updateErrorNote(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Atualizar anotação de erro', { 
-        userId: req.user?.id,
+      logger.info('Controller: Atualizar anotação de erro', {
+        user_id: req.user?.id,
         entryId: req.params.id,
-        body: req.body
+        body: req.body,
       });
 
       // Validar autenticação
@@ -371,17 +377,21 @@ export class ErrorNotebookController {
         throw AppError.badRequest('ID da anotação é obrigatório');
       }
 
-      const { 
-        userNote, 
-        userExplanation, 
-        keyPoints, 
-        tags, 
-        difficulty, 
-        confidence 
+      const {
+        user_note: userNote,
+        user_explanation: userExplanation,
+        key_points: keyPoints,
+        tags,
+        difficulty,
+        confidence,
+        alternative_comments: alternativeComments,
       } = req.body;
 
       // Validar difficulty se fornecida
-      if (difficulty && !Object.values(ErrorNoteDifficulty).includes(difficulty)) {
+      if (
+        difficulty &&
+        !Object.values(ErrorNoteDifficulty).includes(difficulty)
+      ) {
         throw AppError.badRequest('difficulty inválida');
       }
 
@@ -394,13 +404,13 @@ export class ErrorNotebookController {
       const updateDTO: UpdateErrorNoteDTO = {};
 
       if (userNote !== undefined) {
-        updateDTO.userNote = userNote.trim();
+        updateDTO.user_note = userNote.trim();
       }
       if (userExplanation !== undefined) {
-        updateDTO.userExplanation = userExplanation.trim();
+        updateDTO.user_explanation = userExplanation.trim();
       }
       if (keyPoints !== undefined) {
-        updateDTO.keyPoints = keyPoints;
+        updateDTO.key_points = keyPoints;
       }
       if (tags !== undefined) {
         updateDTO.tags = tags;
@@ -411,35 +421,38 @@ export class ErrorNotebookController {
       if (confidence !== undefined) {
         updateDTO.confidence = confidence;
       }
+      if (alternativeComments !== undefined) {
+        updateDTO.alternative_comments = alternativeComments;
+      }
 
       // Atualizar anotação
       const updatedEntry = await this.errorNotebookService.updateErrorNote(
         entryId,
         req.user.id,
-        updateDTO
+        updateDTO,
       );
 
       logger.info('Anotação atualizada com sucesso', {
         entryId,
-        userId: req.user.id
+        user_id: req.user.id,
       });
 
       res.json({
         success: true,
         message: 'Anotação atualizada com sucesso',
-        data: updatedEntry
+        data: updatedEntry,
       });
     } catch (error) {
       logger.error('Erro no controller ao atualizar anotação:', error);
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
         });
       }
     }
@@ -451,8 +464,8 @@ export class ErrorNotebookController {
    */
   async getUserErrorNotesStats(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Obter estatísticas de anotações', { 
-        userId: req.user?.id 
+      logger.info('Controller: Obter estatísticas de anotações', {
+        userId: req.user?.id,
       });
 
       // Validar autenticação
@@ -461,29 +474,77 @@ export class ErrorNotebookController {
       }
 
       // Buscar estatísticas
-      const stats = await this.errorNotebookService.getUserErrorNotesStats(req.user.id);
+      const stats = await this.errorNotebookService.getUserErrorNotesStats(
+        req.user.id,
+      );
 
       logger.info('Estatísticas obtidas com sucesso', {
-        userId: req.user.id,
-        totalEntries: stats.totalEntries
+        user_id: req.user.id,
+        total_entries: stats.total_entries,
       });
 
       res.json({
         success: true,
         message: 'Estatísticas obtidas com sucesso',
-        data: stats
+        data: stats,
       });
     } catch (error) {
       logger.error('Erro no controller ao obter estatísticas:', error);
       if (error instanceof AppError) {
         res.status(error.statusCode).json({
           success: false,
-          message: error.message
+          message: error.message,
         });
       } else {
         res.status(500).json({
           success: false,
-          message: 'Erro interno do servidor'
+          message: 'Erro interno do servidor',
+        });
+      }
+    }
+  }
+
+  /**
+   * DELETE /error-notebook/:id
+   * Deletar anotação de erro
+   */
+  async deleteErrorNote(req: Request, res: Response): Promise<void> {
+    try {
+      logger.info('Controller: Deletar anotação de erro', {
+        user_id: req.user?.id,
+        entryId: req.params.id,
+      });
+
+      // Validar autenticação
+      if (!req.user?.id) {
+        throw AppError.unauthorized('Usuário não autenticado');
+      }
+
+      const entryId = req.params.id;
+      if (!entryId) {
+        throw AppError.badRequest('ID da anotação é obrigatório');
+      }
+
+      // Deletar anotação
+      await this.errorNotebookService.deleteErrorNote(entryId, req.user.id);
+
+      logger.info('Anotação deletada com sucesso', {
+        entryId,
+        user_id: req.user.id,
+      });
+
+      res.status(204).send();
+    } catch (error) {
+      logger.error('Erro no controller ao deletar anotação:', error);
+      if (error instanceof AppError) {
+        res.status(error.statusCode).json({
+          success: false,
+          message: error.message,
+        });
+      } else {
+        res.status(500).json({
+          success: false,
+          message: 'Erro interno do servidor',
         });
       }
     }

@@ -27,7 +27,7 @@ O módulo utiliza as seguintes interfaces e tipos principais:
 ### Serviços
 
 - `IDataImportExportService`: Interface que define o contrato para serviços de importação/exportação
-- `FirebaseDataImportExportService`: Implementação do serviço utilizando Firebase
+- `SupabaseDataImportExportService`: Implementação do serviço utilizando Supabase
 
 ### Controladores
 
@@ -120,4 +120,4 @@ DELETE /api/data-jobs/123456
 - Tamanho máximo de arquivo: 50MB
 - Formatos suportados: JSON, CSV, Excel
 - Limite de 10 jobs por hora para criação
-- Limite de 5 execuções por hora para importação/exportação 
+- Limite de 5 execuções por hora para importação/exportação

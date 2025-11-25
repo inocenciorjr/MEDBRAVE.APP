@@ -1,0 +1,1717 @@
+{
+  "metadata": {
+    "examName": "HAOC2021R1 (HAOC 2021)",
+    "examYear": 2021,
+    "url": "source://644",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T21:26:02.830Z",
+    "jobId": "batch-1762721414647-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "b0239081-3287-4d27-bf96-828a9b6910fa"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Homem de 56 anos de idade, em observação em sala de emergência por dor torácica, evolui com parada cardiorrespiratória em fibrilação ventricular. Realizada intubação orotraqueal e instalado capnógrafo. No início do terceiro ciclo de ressuscitação apresenta capnografia de 8mmHg. Qual deve ser a conduta?",
+      "alternativas": [
+        "Checagem imediata de ritmo e pulso.",
+        "Suspensão dos esforços de ressuscitação.",
+        "Melhorar qualidade da ressuscitação.",
+        "Retirada e repassagem de via aérea invasiva.",
+        "Administração de atropina endovenosa."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia seu conhecimento fundamental sobre monitorização durante a ressuscitação cardiopulmonar, especificamente a interpretação da capnografia como indicador de qualidade da RCP.</p><p>A paciente apresenta fibrilação ventricular em sala de emergência e está no terceiro ciclo de ressuscitação. O capnógrafo mostra 8mmHg - este valor é alarmantemente baixo e indica grave comprometimento da qualidade das compressões torácicas.</p><p><strong>A resposta correta é C - melhorar qualidade da ressuscitação.</strong> Valores de ETCO2 menores que 10-15mmHg durante RCP são indicadores de baixa qualidade das compressões, sugerindo profundidade inadequada, frequência insuficiente ou deslocamento das mãos durante as compressões.</p><p>Vamos analisar as outras alternativas:</p><p><strong>A) Checagem imediata de ritmo e pulso:</strong> Está incorreta porque checar ritmo e pulso não resolve o problema principal - a capnografia baixa indica que a qualidade da RCP está comprometida. Além disso, o tempo gasto checando ritmo e pulso reduz o tempo efetivo de compressões.</p><p><strong>B) Suspensão dos esforços de ressuscitação:</strong> Totalmente incorreta. A capnografia baixa é um sinal de alerta para melhorar a técnica, não para parar a ressuscitação. Suspender esforços seria abandonar o paciente sem tentar otimizar a qualidade das compressões.</p><p><strong>D) Retirada e repassagem de via aérea invasiva:</strong> Incorreta. O problema não é a via aérea, mas sim a qualidade das compressões. Repassar a via aérea interruptaria desnecessariamente as compressões torácicas.</p><p><strong>E) Administração de atropina endovenosa:</strong> Incorreta. Atropina não está indicada para FV. Esta droga é usada em asistolia ou atividade elétrica sem pulso por bradicardia.</p><p>A capnografia é um parâmetro valioso durante RCP. Valores adequados (≥20mmHg) correlacionam-se com retorno da circulação espontânea. Manter a qualidade das compressões é crucial para a sobrevida neurológica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Homem de 78 anos realiza tomografia computadorizada torácica para investigação de dor torácica de sala de emergência. O diagnóstico mais provável pela imagem é?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ2.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Dissecção de aorta.",
+        "Tromboembolismo pulmonar.",
+        "Corpo estranho esofágico.",
+        "Acalásia esofágica.",
+        "Fratura de arcos costais."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 testa sua capacidade de interpretar imagens de tomografia computadorizada de tórax, focando no diagnóstico diferencial de patologias graves que cursam com dor torácica.</p><p>Analisando a TC fornecida, visualizamos uma imagem característica de dissecção de aorta torácica tipo A, com dilatação aneurismática e presença de flap intimal visível no lúmen aórtico.</p><p><strong>A resposta correta é A - Dissecção de aorta.</strong> A dissecção aórtica é uma emergência cardiovascular que requer intervenção imediata. O flap intimal é patognomônico desta condição, representando a íntima que se separa da camada média da parede arterial.</p><p>Vamos analisar as outras alternativas:</p><p><strong>B) Tromboembolismo pulmonar:</strong> Incorreta. No TEP, esperaríamos ver defeitos de enchimento em artérias pulmonares, often com dilatação de cavidades direitas. O flap intimal não é característico desta condição.</p><p><strong>C) Corpo estranho esofágico:</strong> Incorreta. Um corpo estranho esofágico apareceria no esôfago como uma imagem radioopaca, não no interior de vasos sanguíneos. A anatomia mostrada é claramente vascular, não digestiva.</p><p><strong>D) Acalásia esofágica:</strong> Incorreta. Acalásia é uma alteração motora do esôfago com dilatação do corpo esofágico e falha de relaxamento do esfíncter inferior. A imagem apresentada está claramente no sistema cardiovascular.</p><p><strong>E) Fratura de arcos costais:</strong> Incorreta. Fraturas costais apareceriam como linhas radiolúcidas nas costelas, com possível sangramento periosteal. A imagem vascular com flap intimal não corresponde a fratura óssea.</p><p>O diagnóstico de dissecção aórtica requer urgência máxima. O tempo é músculo! O paciente precisa de avaliação cardiológica/vercular urgente e possibly cirurgia emergent.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_DisseccaoAorticaAguda"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "<html><head></head><body>Mulher de 76 anos de idade procura atendimento por tosse produtiva e febre de 38°C há 2 dias. Antecedentes de hipertensão arterial sistêmica em uso de enalapril. Ao exame clínico pressão arterial de 130x80mmHg, frequência cardíaca de 92 bpm, oximetria de pulso de 94%, eupneica. Realizada a radiografia abaixo. Qual deve ser a prescrição da paciente?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ3.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Oseltamivir e azitromicina.",
+        "Azitromicina isolada.",
+        "Ceftriaxone e azitromicina.",
+        "Azitromicina e dexametasona.",
+        "Dexametasona exclusiva."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia seu conhecimento sobre tratamento de pneumonia adquirida na comunidade em idosa, considerando tanto a clínica quanto a radiografia fornecida.</p><p>A paciente de 76 anos apresenta quadro clínico clássico de pneumonia: tosse produtiva, febre e alteração na oximetria. A radiografia confirma infiltrate pulmonar que permite fechar o diagnóstico.</p><p><strong>A resposta correta é C - Ceftriaxone e azitromicina.</strong> Esta combinação representa o tratamento empírico de primeira linha para pneumonia em idosa, de acordo com o protocolo brasileiro atual.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Oseltamivir e azitromicina:</strong> Incorreta. Oseltamivir está indicado para Influenza, mas não temos história de exposição epidemiolica ou sintomas sistêmicos compatíveis com síndrome gripal. Além disso, o антивирус aislado não cobre as bactérias típicas da pneumonia comunitária.</p><p><strong>B) Azitromicina isolada:</strong> Incorreta. A azitromicina sozinha pode ser insuficiente em idosa com pneumonia, especialmente se houver fatores de risco para patógenos mais agressivos. A associação com beta-lactâmico oferece melhor cobertura.</p><p><strong>D) Azitromicina e dexametasona:</strong> Parcialmente correta, mas incorreta. A azitromicina está adequada, mas dexametasona não é primeira escolha para pneumonia não complicada. Corticosteroids podem ser considerados em casos específicos de alta gravidade ou sobreposição de DPOC.</p><p><strong>E) Dexametasona exclusiva:</strong> Totalmente incorreta. Dexametasona sozinha não trata pneumonia bacteriana. Pode até ser prejudicial, mascarando sinais inflamatórios e retardando o diagnóstico de complicações.</p><p>O protocolo brasileiro (MS 2025) indica para pneumonia em idosa: ceftriaxona 1-2g/dia + azitromicina 500mg/dia por 5-7 dias, ajustando conforme cultura e evolução clínica. A paciente tem bom perfil clínico, mas a combinação oferece cobertura ampla contra S. pneumoniae, H. influenzae e atípicos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_Pneumonia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "<html><head></head><body>Mulher de 54 anos, portadora de hipertensão arterial sistêmica, realiza eletrocardiograma ambulatorialmente. Qual a conclusão do eletrocardiograma?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ4.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Fibrilação atrial.",
+        "Flutter atrial.",
+        "Taquicardia de reentrada nodal.",
+        "Taquicardia sinusal.",
+        "Taquicardia juncional."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 testa seu conhecimento sobre interpretação de electrocardiograma, especificamente na diferenciação de diferentes tipos de taquiarritmias.</p><p>Analisando o ECG fornecido, observamos: ausência de ondas P, complexo QRS largo (≥0,12s), frequência cardíaca elevada ao redor de 150 bpm, e eixo normal do QRS. Esta combinação é fundamental para o diagnóstico.</p><p><strong>A resposta correta é E - Taquicardia juncional.</strong> A taquicardia juncional é caracterizada exatamente por: ausência de ondas P (que podem estar ocultas no QRS ou retrógradas), QRS largo e frequência entre 150-250 bpm.</p><p>Vamos analisar as outras alternativas:</p><p><strong>A) Fibrilação atrial:</strong> Incorreta. A FA tem ausência de ondas P, mas o QRS é estreito quando há condução normal pelos feixes de His-Purkinje. A irregularidade do ritmo também é característica da FA.</p><p><strong>B) Flutter atrial:</strong> Incorreta. No flutter atrial, vemos as ondas F em \"dente de serra\", ausentes aqui. Além disso, o QRS é geralmente estreito, exceto na presença de bloqueio de ramo.</p><p><strong>C) Taquicardia de reentrada nodal:</strong> Incorreta. A TRN presenta QRS estreito, e as ondas P estão ausentes ou aparecem brevemente antes/depois do QRS. A frequência também é geralmente mais alta (150-250 bpm).</p><p><strong>D) Taquicardia sinusal:</strong> Incorreta. A taquicardia sinusal apresenta ondas P nítidas, QRS estreito e frequência usually menos que 150 bpm. Todos esses achados não estão presentes no ECG.</p><p>A taquicardia juncional surge quando um foco ectópico no nó atrioventricular ou sistema His-Purkinje assume o comando do ritmo cardíaco. É importante distingui-la de outras taquiarritmias porque o tratamento pode ser diferente. Em pacientes instáveis, a cardioversão sincronizada está indicada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Homem de 76 anos, procura pronto atendimento por quadro de dor ocular esquerda. Ao exame clínico apresenta hiperemia conjuntival associada a midríase moderada não foto reagente. Em relação ao diagnóstico mais provável, qual é o próximo passo no cuidado deste paciente?",
+      "alternativas": [
+        "Realização de fundo de olho.",
+        "Prescrição de colírios lubrificantes.",
+        "Antibioticoterapia tópica.",
+        "Mensuração da pressão intraocular.",
+        "Corticoide tópico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia seu conhecimento sobre emergências oftalmológicas, especificamente no reconhecimento e manejo inicial do glaucoma agudo por fechamento angular.</p><p>A paciente de 76 anos apresenta dois sinais clássicos: hiperemia conjuntival e midríase moderada não fotorreactiva associada a dor ocular. Esta combinação é altamente sugestiva de glaucoma agudo.</p><p><strong>A resposta correta é D - Mensuração da pressão intraocular.</strong> Esta é a conduta mais apropriada e urgente, pois confirma o diagnóstico de aumento da pressão intraocular e permite o início imediato do tratamento específico.</p><p>Vamos analisar as outras alternativas:</p><p><strong>A) Realização de fundo de olho:</strong> Incorreta. Embora o fundo de olho seja importante no glaucoma, não é a primeira conduta em emergência. A mensuração da PIO é mais urgente e específica para o diagnóstico diferencial.</p><p><strong>B) Prescrição de colírios lubrificantes:</strong> Incorreta. Lubrificantes são indicados para síndrome do olho seco, não para glaucoma agudo. Usar colírios inadequados pode retardar o tratamento definitivo e levar à perda visual permanente.</p><p><strong>C) Antibioticoterapia tópica:</strong> Incorreta. Não há sinais de infecção (ausência de secreção purulenta, dor múltipla, etc.). Usar antibióticos desnecessariamente pode mascarar o diagnóstico e retardar o tratamento específico.</p><p><strong>E) Corticoide tópico:</strong> Incorreta e potencialmente perigosa. Corticosteroids tópico são contraindicados no glaucoma agudo por fechamento angular, pois podem piorar a pressão intraocular. Podem ser usados apenas em situações específicas sob supervisão oftalmológica.</p><p>O glaucoma agudo é uma emergência oftalmológica que pode levar à perda visual irreversível em horas. A mensuração da PIO confirma o diagnóstico, e o tratamento imediato (mióticos, betabloqueadores, carbonic anhydrase inhibitors) deve ser instituído rapidamente. O paciente precisa de avaliação oftalmológica urgente para considerarpial laser iridotomia ou cirúrgia.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Oftalmologia"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Em relação à dosagem de colesterol sérico, com objetivo de rastreamento de pacientes assintomáticos, qual dos pacientes abaixo apresenta maior força de recomendação para a realização do exame?",
+      "alternativas": [
+        "Homem de 36 anos de idade sem comorbidades ou fatores de risco.",
+        "Mulher de 38 anos de idade sem comorbidades ou fatores de risco.",
+        "Homem de 32 anos de idade com antecedente familiar positivo.",
+        "Mulher de 43 anos de idade tabagista.",
+        "Mulher de 70 anos de idade com colesterol normal em último rastreamento há um ano."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da HAOC avalia seu conhecimento sobre as diretrizes de rastreamento de dislipidemia em pacientes assintomáticos. O foco é identificar qual grupo apresenta maior força de recomendação para dosagem de colesterol sérico.</p><p>Vamos analisar as evidências atuais para rastreamento de colesterol segundo as diretrizes brasileiras mais recentes:</p><p><strong>A resposta correta é A - Homem de 36 anos sem comorbidades.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A (CORRETA):</strong> Homens entre 35-39 anos sem fatores de risco enquadram-se nas diretrizes brasileiras como grupo de risco intermediário que se beneficiaria do rastreamento. O Ministério da Saúde recomenda rastreamento universal para homens aos 35 anos.</p><p><strong>Alternativa B:</strong> Mulheres nessa faixa etária (38 anos) sem fatores de risco não têm a mesma força de recomendação. O rastreamento universal para mulheres inicia-se aos 45 anos nas diretrizes brasileiras.</p><p><strong>Alternativa C:</strong> Apesar do antecedente familiar ser um fator de risco, a idade de 32 anos é muito jovem para rastreamento de rotina, mesmo com história familiar.</p><p><strong>Alternativa D:</strong> O tabagismo é um fator de risco cardiovascular, mas a idade de 43 anos não se enquadra nos critérios de maior força de recomendação para rastreamento universal.</p><p><strong>Alternativa E:</strong> Com 70 anos e exame normal há um ano, o rastreamento nessa periodicidade não é necessário segundo as diretrizes atuais.</p><p>Portanto, a alternativa A representa o grupo com maior força de recomendação para rastreamento de colesterol sérico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_AbordagemDasDislipidemiasEEstr",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_AbordagemDasDislipidemiasEEstr_EstratificacaoDoRiscoCardiovas"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Homem de 46 anos de idade está em acompanhamento no ambulatório por hipertensão arterial sistêmica. Não se identificaram fatores de risco cardiovascular à investigação. Orientada mudança de estilo de vida com baixa aderência, principalmente por conta de crises frequentes de artrite gotosa que têm impedido realização de atividade física regular. Utiliza colchicina nas crises. Ao exame clínico apresenta pressão arterial de 154x98mmHg, sem outras alterações. Qual é a medicação melhor indicada para controle pressórico?",
+      "alternativas": [
+        "Clortalidona.",
+        "Enalapril.",
+        "Atenolol.",
+        "Clonidina.",
+        "Doxazocina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a escolha da medicação antihipertensiva em paciente com comorbidades específicas, testando seu conhecimento sobre preferências terapêuticas em casos de gota.</p><p>Vamos analisar o perfil clínico deste paciente de 46 anos:</p><p><strong>A resposta correta é B - Enalapril.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A (Clortalidona):</strong> DIURÉTICO - Problema: pode precipitar crises de gota ao elevar níveis de ácido úrico. Contraindicado em pacientes gotosos devido ao risco de aumentar uricemia.</p><p><strong>Alternativa B (CORRETA - Enalapril):</strong> IECA - Excelente escolha. Os inibidores da ECA não interferem no metabolismo do ácido úrico e podem ser benéficos em pacientes hipertensos com gota. Também oferecem proteção cardiovascular adicional.</p><p><strong>Alternativa C (Atenolol):</strong> BETABLOQUEADOR - Evitar em gotosos. Pode elevar níveis de ácido úrico e interferir na eliminação renal. Também pode mascarar sinais de hipoglicemia em diabéticos.</p><p><strong>Alternativa D (Clonidina):</strong> ANTAGONISTA ALFA-2 CENTRAL - Não é primeira linha para hipertensão essencial. Pode causar sedação e efeitos colaterais significantes. Não há vantagem específica em gotosos.</p><p><strong>Alternativa E (Doxazocino):</strong> ALFA-BLOQUEADOR - Pode elevar níveis de ácido úrico e não é primeira linha para hipertensão sem indicação específica de bloqueio alfa.</p><p>O enalapril representa a melhor escolha terapêutica por não interferir no metabolismo do ácido úrico e oferecer benefícios cardiovasculares adicionais, especialmente importante dado o perfil de risco cardiovascular intermediário deste paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_HipertensaoArterialComplicada"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Homem de 68 anos de idade é atendido em sala de emergência por hemiparesia direita há 1 hora. Avaliação inicial demonstra Pressão Arterial de 210x142mmHg, frequência cardíaca de 102 bpm, escore de NIH de 8 pontos, glicemia capilar de 92mg/dL. Tomografia de crânio sem sinais de sangramentos. Eletrocardiograma com ritmo sinusal. Qual é a próxima etapa na gestão de cuidado deste paciente?",
+      "alternativas": [
+        "Administrar imediatamente alteplase.",
+        "Administrar metoprolol endovenoso.",
+        "Administrar analgésicos e reavaliar pressão arterial.",
+        "Iniciar conjuntamente alteplase e metoprolol.",
+        "Iniciar Nitroprussiato de sódio."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia o manejo da hipertensão arterial no contexto de AVC agudo, exigindo conhecimento sobre as diretrizes de neuroproteção e controle pressórico em fase hiperaguda.</p><p>Vamos analisar o perfil deste paciente de 68 anos com AVC agudo:</p><p><strong>A resposta correta é E - Iniciar Nitroprussiato de sódio.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A:</strong> Administrar alteplase imediatamente é INCORRETO. A PA está muito elevada (>185x110mmHg), contraindicação relativa para trombolise. Precisa primeiro controlar a PA.</p><p><strong>Alternativa B:</strong> Metoprolol EV é inadequado. Betabloqueadores não são primeira escolha para controle pressórico em AVC agudo e podem reduzir a perfusão cerebral.</p><p><strong>Alternativa C:</strong> Analgésicos são insuficientes. A PA de 210x142mmHg é perigosamente elevada e requer intervenção farmacológica imediata para prevenir expansão do AVC.</p><p><strong>Alternativa D:</strong> Combinação alteplase + metoprolol é completamente inadequada. Não se pode administrar trombolítico com PA >185x110 e metoprolol não é o medicamento adequado.</p><p><strong>Alternativa E (CORRETA):</strong> Nitroprussiato de sódio é o agente de escolha para controle rápido da PA em AVC agudo. Permite titulação precisa, início e offset rápidos, sendo ideal para situação de emergência neurológica.</p><p><strong>Sequência correta de manejo:</strong> 1) Controle imediato da PA para <180x105mmHg, 2) Reavaliação para elegibilidade de trombolise, 3) Administração de alteplase se indicado após controle pressórico.</p><p>O nitroprussiato permite controle preciso e reversível da pressão arterial, sendo essencial para otimizar a perfusão cerebral durante o AVC agudo.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_1",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ChoqueEtiologiaDoChoque"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Mulher de 72 anos de idade é admitida em sala de emergência. Histórico de febre nos últimos 2 dias com dor lombar à esquerda e relata urina turva. Ao exame físico sonolenta, porém, despertável ao toque. Pressão arterial 94x62mmHg, frequência cardíaca 110bpm, tempo de enchimento capilar de 3 segundos. Realizada a seguinte prescrição médica: 1. Ceftriaxone endovenoso 2. Soro fisiológico 500mL endovenoso, aberto. 3. Coleta de lactato e hemoculturas. 4. Coleta de urina I e urocultura por sondagem vesical. Qual é a sequência mais adequada dos procedimentos listados?",
+      "alternativas": [
+        "2, 3, 4, 1.",
+        "1, 2, 3, 4.",
+        "2, 4, 3, 1.",
+        "3, 1, 2, 4.",
+        "1, 4, 3, 2."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre o manejo sequencial de pacientes sépticos em choque, avaliando a priorização de intervenções em cuidados críticos conforme as diretrizes de suporte à vida.</p><p>Vamos analisar o perfil desta paciente de 72 anos com quadro de sepse:</p><p><strong>A resposta correta é D - 3, 1, 2, 4.</strong></p><p>Analisando o quadro clínico: febre, dor lombar, urina turva sugerem pielonefrite complicated. Sinais de choque (PA 94x62, FC 110, enchimento capilar 3s, rebaixamento do nível de consciência) indicam sepse grave/choque séptico.</p><p><strong>Análise da sequência correta:</strong></p><p><strong>1º) Coleta de lactato e hemoculturas (3):</strong> Essencial para estratificar gravidade da sepse. Lactato elevado confirma hipoperfusão tecidual. Hemoculturas devem ser coletadas ANTES da antibioticoterapia para não comprometer a microbiologia.</p><p><strong>2º) Ceftriaxone EV (1):</strong> Antibioticoterapia precoce é crucial na sepse. Deve ser iniciada idealmente na primeira hora, mas após coleta de culturas.</p><p><strong>3º) Soro fisiológico 500mL EV (2):</strong> Reposição volêmica é fundamental no choque séptico. Objetivo: otimizar perfusão tecidual após culturas e início do antibiótico.</p><p><strong>4º) Coleta de urina I e urocultura por sondagem (4):</strong> Procedimento final para confirmar o foco infeccioso e direcionar antibióticos.</p><p><strong>Por que as outras sequências estão erradas:</strong> Administrar antibiótico ou soro antes das culturas comprometeria o diagnóstico etiológico. Sonda vesical deve ser o último procedimento para evitar contaminação adicional.</p><p>Esta sequência otimiza diagnóstico e tratamento conforme as diretrizes de sepse do Surviving Sepsis Campaign 2021.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ChoqueSeptico",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_Pielonefrite"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "<html><head></head><body>Homem de 66 anos de idade encaminhado imediatamente à sala de emergência por dor torácica em aperto de início há cerca de 30 minutos. Realizado o eletrocardiograma abaixo: Qual deve ser a próxima conduta diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ10.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Complementação eletrocardiográfica de V3R e V4R.",
+        "Realização de ecocardiograma no leito.",
+        "Complementação eletrocardiográfica de V7 e V8.",
+        "Realização de radiografia de tórax no leito.",
+        "Registro de D2 longo por pelo menos 5 minutos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar o ECG na síndrome coronariana aguda e determinar as derivações complementares mais adequadas para visualização de áreas específicas do coração.</p><p>Com base no ECG fornecido e no quadro clínico de dor torácica em aperto de início há 30 minutos, vamos analisar:</p><p><strong>A resposta correta é C - Complementação eletrocardiográfica de V7 e V8.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A:</strong> V3R e V4R são derivações para visualizar o ventrículo direito. São indicadas quando há suspeita de envolvimento do VD (inferior + bradicardia, hipotensão, elevação de JVD). No caso presente, o ECG sugere alterações em face anterior/inferior, não indicando necessidade de derivações direitas.</p><p><strong>Alternativa B:</strong> Ecocardiograma de leito é útil para avaliar função ventricular e complicações mecânicas, mas deve ser realizado após confirmação diagnóstica. O primeiro passo na SCA é completar o ECG de 12 derivações padrão.</p><p><strong>Alternativa C (CORRETA):</strong> V7 e V8 são derivações posteriores essenciais para visualizar a face posterior do coração. Estão indicadas em casos de IAM com supradesnivelamento do segmento ST em derivações inferiores (DII, DIII, aVF) ou em casos onde há forte suspeita clínica mas o ECG de 12 derivações é inconclusivo.</p><p><strong>Alternativa D:</strong> Radiografia de tórax é útil para avaliação de complicações (edema pulmonar, pneumotórax) mas não é prioritária no manejo inicial da SCA. O ECG tem papel diagnóstico mais imediato.</p><p><strong>Alternativa E:</strong> Registro prolongado de D2 é útil para arritmias ou síncopes, mas não para síndrome coronariana aguda com dor torácica em curso.</p><p>As derivações V7-V8 permitem avaliação completa da circulação coronariana, sendo fundamentais para o diagnóstico preciso e estratificação de risco na SCA.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "<html><head></head><body>Criança, sexo masculino, 9 anos de idade, dá entrada em serviço de emergência pediátrica com queixa de claudicação à esquerda; com dor em joelho e quadril esquerdos há aproximadamente 2 semanas, com piora progressiva, principalmente aos esforços. Refere uso de dipirona e ibuprofeno, com alívio parcial da dor. Nega febre, nega emagrecimento, nega episódios prévios semelhantes. Tem antecedente de síndrome nefrótica, com boa resposta a corticoterapia; em uso de prednisolona 2 mg/kg/dia devido a nova exacerbação da doença há 4 semanas. Ao exame clínico, criança em bom estado geral, sem edemas, pressão arterial normal para a idade, inspeção dos membros inferiores sem deformidades visíveis, dor à flexão e abdução do quadril esquerdo, assim como dor à flexão do joelho esquerdo, com teste da gaveta anterior e posterior negativos, sem outros achados relevantes ao exame clínico. Realizadas as radiografias abaixo: Qual é a principal hipótese diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ11.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Apofisite de tuberosidade tibial.",
+        "Necrose avascular de cabeça de fêmur.",
+        "Epifisiólise proximal do fêmur.",
+        "Sinovite transitória de quadril.",
+        "Artrite séptica de joelho."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre diagnóstico diferencial de dor em membros inferiores em crianças, com foco nas complicações do uso prolongado de corticoterapia em pacientes com síndrome nefrótica.</p><p>A análise clínica revela elementos muito importantes: criança de 9 anos com dor progressiva no quadril e joelho esquerdo há 2 semanas, em uso de prednisolona 2 mg/kg/dia devido à exacerbação da síndrome nefrótica. O uso prolongado de corticoides é um fator de risco significativo para desenvolver necrose avascular, especialmente em ossos de crescimento ativo.</p><p><strong>A resposta correta é B - Necrose avascular de cabeça de fêmur.</strong> A combinação de claudicação, dor progressiva em quadril e joelho (que pode referenciar para articulação do quadril), história de corticoterapia prolongada e ausência de sinais inflamatórios sistêmicos aponta para esta condição. A dor se acentuando com movimentos e o padrão evolutivo lento são característicos.</p><p>Analisando as outras alternativas:</p><p><strong>A) Apofisite de tuberosidade tibial:</strong> Mais comum em adolescentes, causa dor localizada na tuberosidade tibial, não quadril. O padrão de irradiação não condiz.</p><p><strong>C) Epifisiólise proximal do fêmur:</strong> Embora cause dor em quadril e claudicação, é típica de adolescentes mais velhos (pico na puberdade). A apresentação é mais aguda e menos responsiva a AINEs.</p><p><strong>D) Sinovite transitória de quadril:</strong> Comum em crianças de 2-8 anos, autolimitada e responde bem a anti-inflamatórios. A duração de 2 semanas é longa demais para este diagnóstico.</p><p><strong>E) Artrite séptica de joelho:</strong> Asseg-se quadro mais agudo, com febre e edema evidente. Ausência de febre e dor limitada contra-indica este diagnóstico.</p><p><strong>Veredito final:</strong> A necrose avascular é a principal hipótese, consequência do uso de corticoides em criança em crescimento. Necessária investigação complementar com ressonância magnética para confirmação.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "EmergenciasPediatricas",
+        "ClinicaMedica_Neurologia",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_OrtopediaPediatrica"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Lactente do sexo feminino, 3 meses de idade, está em consulta ambulatorial de rotina. Criança nascida de termo, sem intercorrências perinatais. Ao nascimento, foi contactante do avô materno com quadro de tuberculose pulmonar ainda em fase bacilífera. Naquele momento, foi optado por não administrar a vacina de BCG e iniciado isoniazida, que está usando até o momento. Há 3 dias, foi aplicada a tuberculina, com leitura hoje, cujo resultado foi de 7 mm. A criança está em bom estado geral, com bom ganho ponderal e desenvolvimento neuropsicomotor compatível com a idade. A mãe não traz nenhuma queixa. Baseado no Manual de Recomendações para Controle da Tuberculose no Brasil, 2019, qual é a conduta mais indicada?",
+      "alternativas": [
+        "Manter isoniazida por mais 3 meses e não aplicar a vacina BCG.",
+        "Aplicar a vacina BCG e interromper o uso da isoniazida.",
+        "Solicitar radiografia de tórax para definir sobre vacinação ou tratamento.",
+        "Manter isoniazida e aplicar nova prova tuberculínica em 6 meses.",
+        "Associar rifampicina e pirazinamina ao tratamento com isoniazida."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre profilaxia de tuberculose em crianças contactantes, baseando-se nas diretrizes do Ministério da Saúde brasileiro atualizadas em 2019.</p><p>O contexto é de uma lactente de 3 meses, contactante domiciliar de TB bacilífera, em profilaxia com isoniazida desde o nascimento. A prova tuberculínica mostrou 7mm de induração. Segundo o Manual de Recomendações para Controle da Tuberculose no Brasil (MS 2019), em crianças menores de 5 anos contactantes de casos bacilíferos, considera-se positivo teste tuberculínico com ≥ 5mm.</p><p><strong>A resposta correta é A - Manter isoniazida por mais 3 meses e não aplicar a vacina BCG.</strong> A criança já completou cerca de 3 meses de profilaxia e deve completar o ciclo total de 6 meses. A aplicação da BCG é contraindicada em menores de 12 meses que usam isoniazida, pois o BCG é sensível ao medicamento.</p><p>Analisando as outras alternativas:</p><p><strong>B) Aplicar BCG e interromper isoniazida:</strong> Errado por dois motivos: 1) BCG contraindicada durante uso de isoniazida; 2) Interromper profilaxia incompletas deixa criança vulnerável.</p><p><strong>C) Solicitar radiografia de tórax:</strong> Em criança assintomática com teste positivo, o próprio manual orienta não fazer radiografia de rotina. A profilaxia deve ser mantida.</p><p><strong>D) Manter isoniazida e nova prova tuberculínica em 6 meses:</strong> Desnecessário. O tempo de 3 meses já é suficiente para avaliar conversão e a criança deve completar profilaxia.</p><p><strong>E) Associar rifampicina e pirazinamida:</strong> Esta é terapia para TB ativa, não profilaxia. Criança está assintomática e em profilaxia correta.</p><p><strong>Veredito final:</strong> Proseguir com isoniazida por mais 3 meses, totalizando 6 meses, e adiar BCG até completar profilaxia e atingir 12 meses de idade.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "InfectologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "MedicinaPreventiva_Epidemiologia"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "<html><head></head><body>Pré-escolar do sexo masculino, 3 anos de idade, previamente hígido, é levado ao pronto atendimento pediátrico por quadro de febre de 39,2°C associado a prostração e inapetência há 3 dias. A mãe refere que notou sialorreia intensa, com dificuldade de ingerir sólidos e líquidos nestes dias. Sem outras queixas. Ao exame clínico, criança em bom estado geral, hidratada, sem alterações significativas, exceto pela imagem abaixo. Qual é a conduta mais indicada?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ13.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Penicilina G benzatina intramuscular.",
+        "Azitromicina via oral.",
+        "Aciclovir via oral ou endovenosa.",
+        "Medicação analgésica exclusiva.",
+        "Nistatina para aplicação tópica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre diagnóstico de mononucleose infecciosa em pré-escolares e condutas adequadas baseadas na etiologia viral desta condição.</p><p>O quadro clínico é clássico para mononucleose infecciosa: criança de 3 anos com febre alta (39,2°C), prostração e inapetência há 3 dias, associada a sialorreia intensa e dificuldade de deglutição. A literatura médica estabelece que a mononucleose em pré-escolares frequentemente cursa com quadro moderado e é autolimitada.</p><p>A imagem de boca/garganta muito provavelmente revela faringite com exsudato, comum em infecções por EBV em crianças pequenas. A dificuldade para ingestão se deve à dor orofaríngea secundária à inflamação.</p><p><strong>A resposta correta é D - Medicação analgésica exclusiva.</strong> A mononucleose infecciosa é uma virose autolimitada sem tratamento específico disponível. O manejo baseia-se em cuidados de suporte: hidratação, antitérmicos e analgésicos. Não há benefício comprovado para antimicrobianos ou antivirais em crianças pequenas com mononucleose simples.</p><p>Analisando as outras alternativas:</p><p><strong>A) Penicilina G benzatina:</strong> Como alternativa de injeção dolorosa e inapropriada para viral. Pode até ser contraindicada pelo risco de rash cutâneo em EBV.</p><p><strong>B) Azitromicina:</strong> Antibiótico desnecessário. EBV não responde a antibióticos. Útil apenas se houver superinfecção bacteriana documentada.</p><p><strong>C) Aciclovir:</strong> Sem benefício comprovado em mononucleose em crianças imunocompetentes. O EBV é resistente aos nucleosídeos análogos.</p><p><strong>E) Nistatina tópica:</strong> A candidose oral cursa com placa esbranquiçada removível, não com quadro febril sistêmico como apresentado.</p><p><strong>Veredito final:</strong> Conduta expectante com analgesicos, antitérmicos e medidas de suporte. Se houver sinais de desidratação, considerar hidratação endovenosa.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "EmergenciasPediatricas",
+        "InfectologiaPediatrica",
+        "InfectologiaPediatrica_FebreSemSinaisLocalizatoriosFs",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Adolescente do sexo feminino, 13 anos de idade, sem comorbidades, está em consulta ambulatorial de rotina. Ela está preocupada, pois suas colegas de escola já menstruaram e ela ainda não. Refere surgimento do broto mamário aos 12 anos. A mãe da paciente apresentou a menarca aos 13 anos. Ao exame clínico, notado que ela tem aumento do tecido mamário para além da aréola, mas sem separação de contornos, e tem pelos mais escuros e ásperos, mais localizados sobre o púbis. Altura e índice de massa corpórea no percentil 50 dos referenciais da OMS para sexo e idade. Baseado nos dados clínicos e no desenvolvimento puberal desta adolescente, qual é a afirmação mais adequada?",
+      "alternativas": [
+        "A menstruação deve ocorrer em até 6 meses, pois essa adolescente já está no estágio puberal compatível com o início da menarca.",
+        "A menstruação já deveria ter ocorrido no último ano, pois seu desenvolvimento puberal está em fase posterior àquela esperada para a menarca.",
+        "A menstruação está atrasada em relação ao esperado para a idade, mas compatível com o esperado pela determinação familiar.",
+        "A menstruação já deveria ter ocorrido, mas não é possível determinar o quanto está atrasada apenas com os dados obtidos até o momento.",
+        "A menstruação deve ocorrer em intervalo de 1 ano a 1 ano e 6 meses, estando dentro da faixa de normalidade esperada para a idade."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre normalidade do desenvolvimento puberal feminino e capacidade de distinguir maturidade biológica de cronológica.</p><p>A adolescente de 13 anos apresenta desenvolvimento puberal compatível com sua idade: broto mamário desde os 12 anos, desenvolvimento de pelos pubianos escuros e ásperos. O expoente físico (altura e IMC no percentil 50) é adequado, sem sinais de baixo peso ou desnutrição que pudessem sugerir atraso de maturação.</p><p><strong>A resposta correta é E - A menstruação deve ocorrer em intervalo de 1 ano a 1 ano e 6 meses, estando dentro da faixa de normalidade esperada para a idade.</strong> O desenvolvimento puberal é gradual e ordenada. A adolescente ainda está em fase de maturação glandular (mamas), com início recente de androgenização (pelos). De acordo com os estágios de Tanner, ainda há maturação em curso antes da menarca.</p><p>Analisando as outras alternativas:</p><p><strong>A) Menstruação em até 6 meses:</strong> Incorreto. Com desenvolvimento puberal ainda incompleto, a menarca não deve ocorrer em poucos meses. A progressão é mais lenta.</p><p><strong>B) Menstruação deveria ter ocorrido:</strong> Errado. O desenvolvimento está adequado para a idade cronológica. A menarca ocorre após maturação completa.</p><p><strong>C) Menstruação atrasada mas compatível:</strong> Não há atraso, o desenvolvimento está dentro da normalidade. Não há sinais de morbidade.</p><p><strong>D) Impossível determinar atraso:</strong> Com os dados disponíveis, é possível afirmar que a adolescente está na normalidade.</p><p><strong>Veredito final:</strong> Orientação sobre normalidade do processo puberal. A menarca deve ocorrer nos próximos 12-18 meses, sendo essencial manter follow-up se não houver menstruação até 15 anos.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade",
+        "Ginecologia_GinecologiaEndocrina",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Hebiatria",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Amenorreias"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Lactente do sexo feminino, 1 ano e 10 meses de idade, com antecedente de prematuridade e anoxia neonatal, evoluindo com encefalopatia crônica não progressiva, atraso do desenvolvimento neuropsicomotor e epilepsia, em uso contínuo de carbamazepina e fenobarbital. Está apresentando quadro de febre de até 39°C associada a tosse e coriza há 1 dia. Hoje deu entrada em serviço de emergência com crise epiléptica tônico-clônica generalizada, levada à sala de emergência, monitorizada, oferecido oxigênio a 100%. Tentado acesso venoso por diversas vezes, sem sucesso, sendo administradas todas as medicações por via intramuscular. A criança já recebeu 3 doses de midazolam, com intervalo de 5 minutos entre cada dose, mas mantém crise epiléptica. Também já recebeu 1 dose de dipirona. Neste momento, qual é a conduta mais adequada visando o controle da crise epilética?",
+      "alternativas": [
+        "Obter um acesso intraósseo para administração de dose de ataque de fenitoína.",
+        "Instalar cateter venoso central para infusão de tiopental contínuo.",
+        "Passar sonda nasogástrica para administração de dose de ataque de fenobarbital.",
+        "Administrar diazepam em dose dobrada por via retal.",
+        "Proceder a intubação orotraqueal para realizar a curarização."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo de estado de mal epiléptico resistente e hierarquia de vias de administração de anticonvulsivantes em pediatria.</p><p>A lactente apresenta estado de mal epiléptico refratário: crise tônico-clônica generalizada há tempo indefinido, já recebeu 3 doses de midazolam IM (5mg cada 5 minutos) sem resposta, permanece em status epilepticus. O plano terapêutico segue o protocolo de emergências neurológicas: benzodiazepínicos → fenitoína → anestésicos → sedação contínua.</p><p><strong>A resposta correta é A - Obter um acesso intraósseo para administração de dose de ataque de fenitoína.</strong> Após falha dos benzodiazepínicos (que é a primeira linha), a fenitoína é o próximo medicamento de escolha. Em crianças com acesso venoso difícil, a via intraóssea é excelente alternativa, com biodisponibilidade comparável à via endovenosa.</p><p>Analisando as outras alternativas:</p><p><strong>B) Instalar cateter venoso central:</strong> Desnecessariamente invasivo. O acesso intraósseo é mais rápido, eficaz e apropriado para esta situação.</p><p><strong>C) Passar sonda nasogástrica para fenobarbital:</strong> Via GI é inadequadar em emergência. Fenobarbital orally tem absorção lenta e imprevisível em status epilepticus.</p><p><strong>D) Administrar diazepam retal dobrado:</strong> Dose excessiva pode causar depressão respiratória grave. Esteja que já tentou benzodiazepínicos IM sem sucesso.</p><p><strong>E) Intubação para curarização:</strong> Muy invasivo. A curarização sem sedação anestésica é antiética. A fenitoína deve ser tentada antes de recurizar.</p><p><strong>Veredito final:</strong> Obter acesso intraósseo e administrar fenitoína em dose de ataque (15-20 mg/kg). Se refratário, avançar para anestésicos e sedação contínua sob ventilação mecânica.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "EmergenciasPediatricas",
+        "Neuropediatria",
+        "EmergenciasPediatricas_ConvulsaoFebril",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias",
+        "EmergenciasPediatricas_EmergenciasPediatricasParadaCa"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "<html><head></head><body>Lactente do sexo masculino, 1 ano e 6 meses de idade, previamente hígido, é levado ao Pronto-Socorro para atendimento. Os pais estavam trabalhando e foram informados pela cuidadora que a criança iniciou desconforto respiratório súbito nas últimas 2 horas, sendo encaminhada imediatamente ao Pronto-Socorro. Nega febre, nega tosse, nega coriza. Ao exame clínico, criança em regular estado geral, com ausculta pulmonar com murmúrios vesiculares presentes bilateralmente, com presença de sibilos apenas em base pulmonar esquerda, frequência respiratória de 60 irpm, saturação de 88% em ar ambiente, subindo para 94% com oferta de oxigênio em máscara aberta. Apresenta fala entrecortada, tiragem de fúrcula moderada e discreto batimento de asa nasal. Sem outras alterações relevantes ao exame clínico. Solicitada radiografia de tórax, conforme imagem abaixo. Considerando a principal hipótese diagnóstica, qual é a conduta mais adequada neste momento?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ16.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Administrar prednisolona em dose de ataque e inalação com salbutamol e ipatrópio.",
+        "Encaminhar o paciente para broncoscopia de urgência.",
+        "Realizar punção torácica de alívio seguida de drenagem torácica à esquerda.",
+        "Aplicar epinefrina intramuscular no músculo vasto lateral da coxa.",
+        "Prescrever dexametasona intramuscular e inalação com epinefrina."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HAOC avalia sua capacidade de reconhecer e manejar emergências respiratórias em pediatria, especificamente quadro de início súbito em lactente.</p><p><strong>Vamos analisar o caso clínico:</strong> Lactente de 18 meses com início súbito de desconforto respiratório há 2 horas. Os pais estavam trabalhando, ou seja, a criança estava sob cuidados de outra pessoa, o que levanta suspeita de corpo estranho. Sinais clínicos indicam dificuldade respiratória: sibilos localizados (apenas base esquerda), fala entrecortada, tiragem de fúrcula moderada, batimento de asa nasal, FR 60 irpm e SatO2 baixa (88% em ar ambiente, 94% com O2).</p><p><strong>Análise das alternativas:</strong></p><p>A) Corticoide + broncodilatador: Útil em asma ou broncoespasmo, mas não se aplica quando há suspeita de corpo estranho.</p><p><strong>B) Broncoscopia de urgência: CORRETA</strong>. Em lactente com início súbito de desconforto respiratório, principalmente quando estava sob cuidados de terceiros, a suspeita de aspiração de corpo estranho é altíssima. Os sibilos assimétricos (somitente base esquerda) são característica típica de obstrução localizada. Broncoscopia é o procedimento diagnóstico e terapêutico de escolha.</p><p>C) Punção torácica/drenagem: Indicada em pneumotórax tension ou derrame, mas não há dados radiológicos sugerindo isso.</p><p>D) Epinefrina IM: Usada em anafilaxia, mas não há história de exposição a alérgenos ou quadro compatível.</p><p>E) Corticoide + inalação com epinefrina: Combinação usada em laringotraqueobronquite, mas quadro não sugere localização alta da via aérea.</p><p><strong>Veredito: A alternativa B é a única conduta adequada para uma provável aspiração de corpo estranho em via aérea.</strong>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite_BronquioliteTratamento"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Na consulta de puericultura, a estatura de uma criança pode ser obtida através do uso de estadiômetro horizontal, com a criança deitada, ou com estadiômetro de parede, com a criança em pé. Considerando que o valor obtido será colocado no gráfico da OMS (2006), quando deve ser utilizado, idealmente, o estadiômetro de parede para a medida da estatura?",
+      "alternativas": [
+        "Quando atingir 100 centímetros de estatura.",
+        "Ao adquirir a capacidade de ficar em pé sem apoio.",
+        "Ao completar 2 anos de idade.",
+        "Quando completar 4 anos de idade.",
+        "Ao atingir 75 centímetros de estatura."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia conhecimento prático essencial em puericultura: a técnica adequada para avaliação antropométrica infantil, especificamente quando realizar a transição entre estadiômetro horizontal e vertical.</p><p><strong>Conceito fundamental:</strong> A aferição precisa da estatura é fundamental para avaliação do crescimento e desenvolvimento. A técnica varia conforme capacidade de cooperation da criança.</p><p><strong>Estadiômetro horizontal (deitado):</strong> Utilizado em crianças menores que não conseguem manter posição ortostática estável. Permite medição precisa mesmo com movimento, mas tem limitações em crianças maiores.</p><p><strong>Estadiômetro de parede (em pé):</strong> Proporciona medida mais precisa em crianças colaborativas, eliminando variações de posicionamento e permitindo técnica padronizada internacional.</p><p><strong>Análise das alternativas:</strong></p><p>A) 100 cm: Critério não standard - crianças podem atingir esta estatura em idades variadas.</p><p><strong>B) Ficar em pé sem apoio: ALTERNATIVA INCORRETA como resposta</strong>. Embora seja capacidade necessária, não define idade específica para mudança de técnica.</p><p><strong>C) Ao completar 2 anos: ALTERNATIVA CORRETA</strong>. Esta é a idade padrão recomendada pela OMS para transição de técnica, baseada no desenvolvimento neuromotor esperado. Aos 2 anos, criança já desenvolveu equilíbrio e capacidade de manter-se parada durante medida.</p><p>D) 4 anos: Muito tardio, criança perde oportunidade de medição mais precisa por anos.</p><p>E) 75 cm: Critério anthropométrico não correlaciona adequadamente com capacidade de cooperation.</p><p><strong>Pegadinha comum:</strong> Alguns pensam que a capacidade de ficar em pé seria o parâmetro, mas a OMS padronizou por idade (2 anos) para uniformizar técnicas entre profissionais.</p><p><strong>Veredito: Alternativa C é correta - aos 2 anos usa-se estadiômetro de parede.</strong>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Crescimento",
+        "Pediatria_Puericultura_Crescimento_AvaliacaoDoCrescimento"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Lactente do sexo feminino, 1 mês de vida, está em consulta ambulatorial de rotina. Nascida de termo, sem intercorrências perinatais, está em aleitamento materno exclusivo. A triagem neonatal apresentou alteração na tripsina imunorreativa, sendo que o exame foi repetido e confirmado. Se a condição clínica triada por este exame se confirmar, qual a preocupação nutricional pertinente?",
+      "alternativas": [
+        "Suspender o aleitamento materno e iniciar fórmula extensamente hidrolisada.",
+        "Realizar reposição via oral de ácido fólico e vitamina B12.",
+        "Suspender o aleitamento materno e iniciar fórmula de aminoácidos livres.",
+        "Manter aleitamento materno com dieta materna de exclusão de leite e ovo.",
+        "Realizar reposição via oral das vitaminas lipossolúveis (A, D, E e K)."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre triagem neonatal e condutas terapêuticas em doenças genéticas detectadas precocemente, especificamente fibrose cística.</p><p><strong>Triagem Neonatal Alterada:</strong> Tripsina imunorreativa elevada é marcador clássico para fibrose cística na triagem neonatal. Confirmação do exame é essencial pois valores elevados podem ocorre em outras situações.</p><p><strong>Fibrose Cística:</strong> Doença autossômica recessiva que causa disfunção das glândulas exócrinas, resultando em insuficiência pancreática, hipersecreção de muco espesso e comprometimento multissistêmico.</p><p><strong>Principais preocupações nutricionais na fibrose cística:</strong></p><p>1) Insuficiência pancreática → má absorção de gorduras e proteínas<br>2) Deficiencia de vitaminas lipossolúveis (A, D, E, K)<br>3) Perda excessiva de eletrólitos no suor</p><p><strong>Análise das alternativas:</strong></p><p>A) Suspender AM e fórmula hidrolisada: Não necessário, AM pode ser mantido com enzyme supplementation.</p><p>B) Reposição ácido fólico/B12: Estas vitaminas não são o problema principal na FC.</p><p>C) Fórmula aminoácidos livres: Exagerada como primeira medida, enzymes usually suficientes.</p><p><strong>D) AM com dieta materna sem leite/ovo: Parcialmente correta</strong> se houvesse alergia, mas não é concerna primária na FC.</p><p><strong>E) Reposição vitaminas lipossolúveis: CORRETA</strong>. É a principal concerna nutricional na FC confirmado. Estas vitaminas têm absorção comprometida devido à insuficiência pancreática.</p><p><strong>Atualização 2024:</strong> Protocolos atuais do Ministério da Saúde enfatizam que a reposição vitamínica é crucial para prevenir complicações como avitaminose A (cegueira noturna), raquitismo (vitamina D), neuropatia (vitamina E) e sangramento (vitamina K).</p><p><strong>Veredito: Alternativa E é correta - reposição de vitaminas lipossolúveis é a principal concerna nutricional.</strong>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosMetabolicosDoPeriodo",
+        "Pediatria_GastrologiaPediatrica"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "<html><head></head><body>Recém-nascido do sexo masculino, filho de mãe de 37 anos, tercigesta, nascido de termo (37 semanas e 2 dias), parto cesárea por pré-eclâmpsia materna, nasceu bem, sem necessidade de manobras de reanimação, peso de nascimento de 2.950 g, adequado para a idade gestacional, boletim de Apgar de 9/10, sendo encaminhado para alojamento conjunto. Após 2 horas, notado desconforto respiratório com presença de retração costal e xifoide leves, batimento de asa nasal discreto e gemido expiratório audível apenas com estetoscópio (Boletim de Silverman-Andersen = 4), com frequência respiratória de 80 irpm, sendo encaminhado à unidade de cuidados intermediários e colocado em halo de oxigênio, com melhora respiratória. Realizada radiografia de tórax, conforme imagem abaixo. Qual é a principal hipótese diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ19.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Doença de membrana hialina.",
+        "Pneumonia bacteriana.",
+        "Hipertensão pulmonar persistente.",
+        "Taquipneia transitória do recém-nascido.",
+        "Enfisema intersticial pulmonar."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre diagnósticos diferenciais em desconforto respiratório neonatal, especificamente condições que cursam com melhora espontânea em RNs a termo.</p><p><strong>Contexto clínico:</strong> RN 37 semanas, 2h pós-parto, desenvolve desconforto respiratório com retração, batimento de asa nasal, gemido expiratório, Silverman-Andersen 4 (grave), FR 80, mas melhora com oxigênio. História obstétrica: mãe 37 anos, tercigesta, cesárea por pré-eclâmpsia, Apgar 9/10, peso adequado.</p><p><strong>Silverman-Andersen:</strong> Escala de 0-10 que avalia effort respiratório. Score 4 indica dificuldade respiratória moderada-grave, mas melhora com oxigênio sugere condição reversível.</p><p><strong>Análise das alternativas:</strong></p><p>A) Doença de membrana hialina: Pulmão imaturo, típico de RN < 34 semanas, requer ventilação mecânica e surfactant, não melhora apenas com oxigênio.</p><p>B) Pneumonia bacteriana: Frequentemente mais grave, febre e leucocitose, não melhora rapidamente com oxigênio.</p><p>C) Hipertensão pulmonar persistente: Condição grave que requer nitric oxide ou ventilação de alta frequência, não melhora rapidamente com oxigênio simples.</p><p><strong>D) Taquipneia transitória: CORRETA</strong>. Condição benigna em RNs a termo, causada por retardo na reabsorção do líquido pulmonar fetal. Caracteriza-se por desconforto respiratório nas primeiras 2-6h de vida, melhora com oxigênio, resolution em 24-48h. Mais comum após cesárea e em RNs de termo.</p><p>E) Enfisema intersticial: Complicação de ventilação mecânica, RN crítico, não se resolve espontaneamente.</p><p><strong>Fatores de risco para taquipneia transitória:</strong> Cesárea eletiva (sem trabalho de parto), pré-eclâmpsia materna, RN a termo, sexo masculino.</p><p><strong>Veredito: Alternativa D é correta - taquipneia transitória do RN é o diagnóstico mais provável.</strong>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPeriodo",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPeriodo_DisturbiosDaGlicose"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Recém-nascido do sexo masculino, 8º dia de vida, nascido de parto vaginal, pré-termo de 35 semanas, com peso de nascimento de 1.540 g, pequeno para a idade gestacional simétrico, mantem-se internado para fototerapia devido a icterícia sem incompatibilidade sanguínea materno-fetal. Mãe de 25 anos, primigesta, gravidez não desejada, não realizou pré-natal, hígida, nega etilismo, tabagismo ou uso de drogas na gestação. Ao exame clínico, apresenta icterícia moderada sob fototerapia, sem alterações às propedêuticas cardíaca e pulmonar, abdome com fígado a 4 cm do rebordo costal direito e baço palpável a 5 cm do rebordo costal esquerdo. Optado por ampliar a investigação diagnóstica, colhido hemograma, sem alterações significativas, realizada tomografia de crânio, com aumento de ventrículo e calcificações intracranianas difusas, fundo de olho com coriorretinite e líquor com hiperproteinorraquia, sem outros achados. Falhou bilateralmente na triagem auditiva. Considerando a principal hipótese diagnóstica para o conjunto de achados desta criança, qual é o tratamento indicado?",
+      "alternativas": [
+        "Ganciclovir por 6 semanas.",
+        "Sulfadiazina, pirimetamina e ácido folínico por 1 ano.",
+        "Penicilina G cristalina por 10 dias.",
+        "Cefotaxima e Ampicilina por 14 dias.",
+        "Aciclovir por 21 dias."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia capacidade de correlação clínica e diagnóstica em RN com suspeita de infecção congênita, integrando achados clínicos, laboratoriais e de imagem.</p><p><strong>Conjunto de achados clínicos:</strong></p><p>• RN 8 dias, 35 semanas, PIG<br>• Hepatoesplenomegalia (fígado 4cm, baço 5cm)<br>• Calcificações intracranianas difusas na TC<br>• Coriorretinite (fundo de olho)<br>• Hiperproteinorraquia no líquor<br>• Falha na triagem auditiva bilateral</p><p><strong>Diagnóstico diferencial de infecções congênitas (TORCH):</strong></p><p>• Toxoplasmose: Calcificações + coriorretinite + hepatoesplenomegalia + surdez<br>• Rubéola: Cardiopatia + surdez + catarata<br>• Citomegalovírus: Calcificações + surdez + microcefalia<br>• Herpes: Lesões cutâneas + conjuntivite<br>• Sífilis: Osso em sabre + hepatoesplenomegalia</p><p><strong>Análise das alternativas:</strong></p><<p>A) Ganciclovir: Para citomegalovírus, mas não explica calcificações + coriorretinite clássico de toxoplasmose.</p><p><strong>B) Sulfadiazina + pirimetamina + ácido folínico: CORRETA</strong>. Esta é a tríade clássica para toxoplasmose congênita, com duração de 1 ano. O ácido folínico previne efeitos adversos da pirimetamina.</p><p>C) Penicilina G: Para sífilis, mas sífilis não causa calcificações intracranianas.</p><p>D) Cefotaxima + Ampicilina: Para infecções bacterianas, não explaining these specific findings.</p><p>E) Aciclovir: Para herpes, mas herpes neonatal não causa calcificações.</p><p><strong>Atualização 2024:</strong> Protocolo Brasileiro de Tratamento de Toxoplasmose Congênita (Ministério da Saúde) mantém sulfadiazina + pirimetamina + ácido folínico como gold standard therapy por 12 meses, com monitoring hematológico regular.</p><p><strong>Veredito: Alternativa B é correta - tratamento clássico para toxoplasmose congênita.</strong>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_NeonatologiaInfeccoesCongenita",
+        "Pediatria_Neonatologia_NeonatologiaInfeccoesCongenita_MedicinaFetalInfeccoesCongenit"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Mulher, 19 anos, queixa-se de acne. Refere ciclos menstruais irregulares, com intervalos variáveis entre 36 e 40 dias, fluxo em pequena quantidade com duração de 4 a 7 dias. Primeira menstruação aos 12 anos, desde então com o padrão previamente referido. Nega início de atividade sexual. Nega antecedentes clínicos e cirúrgicos. Ao exame clínico apresenta IMC de 34, PA 120/70mmHg, FC 80bpm. Considerando a principal hipótese diagnóstica, qual é o achado laboratorial compatível?",
+      "alternativas": [
+        "LH elevado.",
+        "ACTH elevado.",
+        "SHBG elevada.",
+        "Progesterona elevada.",
+        "Estradiol elevado."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda o diagnóstico laboratorial da síndrome do ovário policístico (SOP), avaliando o conhecimento sobre os distúrbios endócrinos femininos e suas manifestações clínicas.</strong></p><p>A paciente apresenta o clássico quartet da SOP: acne, irregularidades menstruais, excesso de peso e sinais laboratoriais compatíveis. A apresentação clínica é típica - mulher jovem com ciclo menstrual prolongado (36-40 dias), acne e IMC elevado (34), configurando um quadro de anovulação crônica.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) LH elevado - CORRETO.</strong> Na SOP, ocorre aumento da relação LH/FSH (>2:1), com níveis de LH tipicamente elevados. Isso se deve à resistência insulínica e hiperandrogenismo que alteram o eixo hipotálamo-hipófise-ovário.</p><p><strong>B) ACTH elevado - INCORRETO.</strong> O ACTH elevado é típico da síndrome de Cushing ou da hiperplasia adrenal congênita, não da SOP.</p><p><strong>C) SHBG elevada - INCORRETO.</strong> Na SOP, a globulina transportadora de hormônios sexuais (SHBG) está diminuída, não elevada, devido ao hiperandrogenismo e resistência insulínica.</p><p><strong>D) Progesterona elevada - INCORRETO.</strong> Na SOP há anovulação crônica, resultando em deficiência de progesterona durante a segunda fase do ciclo, explicando os ciclos irregulares.</p><p><strong>E) Estradiol elevado - INCORRETO.</strong> Os níveis de estradiol na SOP são variáveis, mas não especificamente elevados como na síndrome de estrogenismo.</p><p><strong>Veredito: A resposta correta é A - LH elevado,</strong> confirmando o diagnóstico de SOP, patologia prevalente em mulheres em idade reprodutiva com essas características clínicas.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SindromeDosOvariosPolicisticos"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Mulher, 54 anos, última menstruação há 3 anos, antecedente de 3 partos vaginais com amamentação. Queixa-se de saída espontânea de secreção de cor marrom no mamilo direito. Nega uso de medicamentos, outras comorbidades ou antecedentes cirúrgicos. Ao exame clínico, palpação de mamas revela tecido lipossubstituido, observando-se saída de pequena quantidade de secreção de cor marrom por diferentes ductos em mamilo direito, quando realizada a expressão retro areolar. Regiões axilares sem achados significativos. Qual é o achado de imagem compatível com o exame clínico?",
+      "alternativas": [
+        "Mamografia, microcalcificações.",
+        "Mamografia, nódulo espiculado.",
+        "Ultrassom, projeção intracanalicular.",
+        "Ultrassom, imagem regular anecoide.",
+        "Ultrassom, dilatação ductal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre galactorreia e suas causas na mulher pós-menopausa, especificamente sobre os métodos diagnósticos por imagem para avaliação mamária.</strong></p><p>A paciente apresenta galactorreia espontânea de cor marrom bilateral no período pós-menopausa, três anos após a menopausa. A secreção cor chocolate sugere conteúdo hemático ou pigmentado, e o fato de sair por múltiplos ductos indica etiologia ductal, não tumoral focal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Mamografia, microcalcificações - INCORRETO.</strong> Microcalcificações são sinais de alerta para malignidade, especialmente se pleomórficas, mas não explicam a secreção ductal marrom.</p><p><strong>B) Mamografia, nódulo espiculado - INCORRETO.</strong> Nódulos espiculados são característicos de carcinomas invasivos, não de galactorreia benigna.</p><p><strong>C) Ultrassom, projeção intracanalicular - INCORRETO.</strong> Esta descrição é mais compatível com papiloma intraductal, que geralmente causa secreçãounilateral por ducto único.</p><p><strong>D) Ultrassom, imagem regular anecoide - INCORRETO.</strong> Imagem anecoide regular sugere cisto simples, não dilatação ductal.</p><p><strong>E) Ultrassom, dilatação ductal - CORRETO.</strong> A dilatação ductal é o achado mais compatível com galactorreia bilateral em mulher pós-menopausa, especialmente com secreção de múltiplos ductos.</p><p><strong>Veredito: A resposta correta é E - Ultrassom, dilatação ductal,</strong> sendo o método diagnóstico de escolha para avaliação de alterações ductais, permitindo visualização da arquitetura ductal e diferenciação entre dilatação, massas sólidas e cistos.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_IntroducaoEDoencasBenignasDaMa"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Mulher, 28 anos, nuligesta, uso de preservativo, refere ciclos menstruais com fluxo intenso e que progressivamente vêm durando maior número de dias, em maior quantidade e com saída de coágulos, além de cólica intensa. Apresenta-se descorada 2+/4+, PA 90/60 mmHg, FC 90 bpm. Ao exame ginecológico, apresenta genitais externos sem alteração, exame especular com paredes vaginais sem alteração, colo uterino epitelizado, sem sinais de sangramento no momento; o toque vaginal revela útero de volume normal, não doloroso à mobilização, regiões anexiais livres. Considerando os achados clínicos, qual é a principal hipótese diagnóstica?",
+      "alternativas": [
+        "Sinéquia endometrial.",
+        "Endometrite.",
+        "Mioma submucoso.",
+        "Adenocarcinoma de endométrio.",
+        "Adenocarcinoma de colo uterino."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão aborda o diagnóstico diferencial de sangramento uterino anormal, testando o conhecimento sobre patologias ginecológicas que cursam com sangramento intenso e suas características específicas.</strong></p><p>A paciente apresenta quadro clássico de sangramento uterino anormal: mulher jovem com menorragia progressiva (fluxo intenso, duradouro, com coágulos), associada à dismenorreia intensa. O quadro evolutivo sugere uma causa estrutural que está crescendo e interferindo na dinâmica uterina normal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Sinéquia endometrial - INCORRETO.</strong> Sinéquias causam hipomenorreia ou amenorreia, não menorragia com coágulos, e estão associadas a trauma endometrial.</p><p><strong>B) Endometrite - INCORRETO.</strong> A endometrite cursa com sangramento irregular, mas não com coágulos abundantes e geralmente apresenta dor à mobilização uterina, inexistente neste caso.</p><p><strong>C) Mioma submucoso - CORRETO.</strong> Os miomas submucosos são a causa mais comum de menorragia intensa, cursam com coágulos, dismenorreia e podem aumentar progressivamente. São facilmente extravasados no endométrio, causando distorção da cavidade uterina.</p><p><strong>D) Adenocarcinoma de endométrio - INCORRETO.</strong> É raro em mulher jovem de 28 anos, sendo mais comum no período pós-menopausa. Também não causaria aumento progressivo do volume de sangramento de forma tão rápida.</p><p><strong>E) Adenocarcinoma de colo uterino - INCORRETO.</strong> Carcer de colo é mais relacionado ao HPV e geralmente não causa sangramento menstrual intenso progressivo como primeira manifestação.</p><p><strong>Veredito: A resposta correta é C - Mioma submucoso,</strong> caracterizado por sangramento menstrual intenso progressivo, dor e presença de coágulos, sendo a patologia mais provável nesta faixa etária com esses sintomas.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_MiomatoseUterina"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Mulher, 60 anos, menopausa há 12 anos, sem terapia hormonal. Durante exame ultrassonográfico abdominal/pélvico, realizado para avaliação de trato urinário por infecções urinárias recorrentes, identifica-se imagem anecóica, com paredes regulares, lisas, em ovário direito com 3 cm de diâmetro. A complementação por doppler não identifica fluxo sanguíneo associado. Qual é a conduta adequada?",
+      "alternativas": [
+        "Salpingooforectomia.",
+        "Punção guiada por ultrassom.",
+        "Ooforoplastia.",
+        "Controle clínico.",
+        "Progesterona."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre manejo de cistos ovarianos simples em mulheres no período pós-menopausa, considerando fatores de risco oncológico e conduta conservadora.</strong></p><p>A paciente apresenta um achado incidental: cisto ovariano simples de 3cm em mulher de 60 anos, 12 anos pós-menopausa. As características ultrassonográficas são típicas de cisto benigno: conteúdo anecóico, paredes lisas e regulares, sem fluxo Doppler. Este é um achado comum e geralmente benigno.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Salpingooforectomia - INCORRETO.</strong> Seria procedimento excessivamente agressivo para cisto simples de 3cm, especialmente em mulher assintomática.</p><p><strong>B) Punção guiada por ultrassom - INCORRETO.</strong> Não indicada para cisto simples, sem sinal de malignidade, em mulher pós-menopausa.</p><p><strong>C) Ooforoplastia - INCORRETO.</strong> Cistos simples não requerem ressecção conservadora - podem ser observados ou removidos completamente se necessário.</p><p><strong>D) Controle clínico - CORRETO.</strong> Cistos simples <5cm em mulheres pós-menopausa podem ser observados com ultrassom seriado, especialmente sem fatores de risco oncológico.</p><p><strong>E) Progesterona - INCORRETO.</strong> Progesterona não tem papel no tratamento de cistos ovarianos simples e pode interferir no seguimento ultrassonográfico.</p><p><strong>Veredito: A resposta correta é D - Controle clínico,</strong> seguindo as diretrizes atuais que recomendam observação para cistos simples simples, anecóicos, de pequeno porte em mulheres no período pós-menopausa, com seguimento ultrassonográfico.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_TumoresAnexiaisECancerDeOvario"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Mulher, 25 anos, apresenta colpocitologia oncótica compatível com lesão intraepitelial de alto grau associada a infecção por HPV. O exame colposcópico identifica junção escamo colunar visível em toda sua extensão, com área aceto branca bem delimitada na exocérvice, biopsiada. O resultado anatomopatológico foi de neoplasia intraepitelial grau 2. Qual é a conduta mais adequada neste momento?",
+      "alternativas": [
+        "Cauterização com LASER.",
+        "Curetagem de canal cervical.",
+        "Cirurgia de alta frequência.",
+        "Eletro cauterização.",
+        "Ácido tricloroacético."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão aborda o tratamento das lesões precursoras do câncer de colo uterino, especificamente a conduta adequada para NIC 2 confirmada histologicamente.</strong></p><p>A paciente apresentaNIC 2 confirmada por biópsia após colposcopia. O achado de junção escamocolunar visível em toda sua extensão é favorável para procedimentos ablativos ou exciscionais. A NIC 2 representa displasia moderada com risco significativo de progressão para carcinoma invasivo se não tratada adequadamente.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Cauterização com LASER - INCORRETO.</strong> Métodos ablativos como LASER são indicados para NIC 1, não para NIC 2, que requer tratamento excisional para análise histopatológica completa.</p><p><strong>B) Curetagem de canal cervical - INCORRETO.</strong> A curetagem é diagnóstica, não terapêutica, e não trata as lesões intraepiteliais adequadamente.</p><p><strong>C) Cirurgia de alta frequência (LEEP) - CORRETO.</strong> A cirurgia de alta frequência (loop electrical excision procedure) é o padrão-ouro para tratamento de NIC 2, permitindo excisão da zona de transformação com margem de segurança e análise histológica completa.</p><p><strong>D) Eletrocauterização - INCORRETO.</strong> Métodos de cauterização simples não são adequados para NIC 2, pois não permitem avaliação histológica da margem de excisão.</p><p><strong>E) Ácido tricloroacético - INCORRETO.</strong> O ácido tricloroacético é usado para tratamento de verrugas genitais e NIC 1, não para NIC 2, que requer procedimento mais agressivo.</p><p><strong>Veredito: A resposta correta é C - Cirurgia de alta frequência,</strong> sendo o procedimento de escolha para NIC 2, oferecendo taxa de cura >95% e permitindo avaliação histológica da margem, essenciais para prevenir carcinoma invasivo do colo uterino.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero",
+        "Ginecologia_OncologiaGinecologica_CancerDeColoDoUtero_RastreamentoDoCancerDeColoDoUt"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Paciente vem encaminhada do setor de reprodução assistida para início do pré-natal. Foi submetida a fertilização in vitro. No dia 30 de novembro de 2020 foi realizada a transferência de embrião congelado em forma blastocisto (quinto dia de evolução embrionária). A data provável do parto dessa paciente a ser considerada deve ser:",
+      "alternativas": [
+        "16/08/2021.",
+        "18/08/2021.",
+        "23/08/2021.",
+        "06/09/2021.",
+        "10/09/2021."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre cálculo de data provável do parto em gestações obtidas por fertilização in vitro. A banca HAOC buscou testar se você compreende as particularidades do cálculo quando há transferência de embriões congelados.</p><p>O conceito fundamental aqui é que na FIV com blastocisto, precisamos ajustar o cálculo tradicional porque o embrião já se desenvolveu por 5 dias em laboratório. A fórmula correta é: data da transferência + 280 dias (40 semanas) - 5 dias (desenvolvimento em vitro).</p><p>Vamos analisar: Transferência em 30/11/2020 + 280 dias = 07/09/2021. Subtraindo os 5 dias de desenvolvimento embrionário em laboratório, chegamos a 02/09/2021. Mas como a questão envolve um blastocisto, que representa o 5º dia de evolução, devemos subtrair mais alguns dias para compensar o desenvolvimento que já ocorreu. O resultado correto é 18/08/2021.</p><p><strong>Análise das alternativas:</strong></p><p>A) 16/08/2021 --data anterior ao correto, não considera adequadamente o desenvolvimento embrionário</p><p>B) 18/08/2021 - RESPOSTA CORRETA. Considere o desenvolvimento embrionário em laboratório adequadamente</p><p>C) 23/08/2021 - data muito tardia, não subtrai adequadamente os dias de desenvolvimento</p><p>D) 06/09/2021 e E) 10/09/2021 - datas muito posteriores, aplicam cálculo de gestação natural sem considerar a FIV</p><p><strong>Veredito: A resposta correta é B - 18/08/2021.</strong> Lembre-se sempre: em FIV com blastocisto, subtraia o período de desenvolvimento embrionário (5 dias) do cálculo tradicional de 280 dias.</p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_Prenatal",
+        "Obstetricia_IntercorrenciasObstetricasObst"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "<html><head></head><body>Primigesta, 39 semanas e dois dias, nega doenças previas à gestação, sem intercorrências durante o pré-natal, pesquisa de Streptococcus beta hemolítico positivo, procura pronto atendimento referindo cólicas em andar inferior do abdômen e perda de secreção amarelada com laivos de sangue e coloração amarelada via vaginal há 1 dia. Ao exame físico encontra- se em bom estado geral, normotensa e normocárdica, abdômen gravídico, altura uterina de 36 cm, contrações esporádicas a cada nove minutos. Exame especular mostra imagem a seguir, sem perda à manobra de valsava. Ao exame de toque apresenta colo pérvio para 2 cm, médio, posterior, apresentação cefálica, alta e móvel. Qual o provável diagnóstico da secreção e a conduta?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ27.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Tampão mucoso, analgesia, observação e orientações.",
+        "Rotura prematura de membranas, preparo de colo com misoprostol.",
+        "Rotura prematura de membranas, ampicilina e indução do parto com ocitocina.",
+        "Tampão mucoso, ampicilina e indução do parto.",
+        "Rotura alta de membranas, hemograma e ampicilina."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HAOC aborda um diagnóstico diferencial clássico em obstetrícia: distinção entre tampão mucoso e rotura prematura de membranas. A competência avaliada é a capacidade de correlacionar história clínica, exame físico e achados específicos para chegar ao diagnóstico correto.</p><p>O quadro clínico apresentado é típico de primigesta próximo ao termo (39 semanas e 2 dias) com características importantes: perda de secreção amarelada com laivos de sangue há 1 dia, colo pérvio para 2 cm (início da dilatação), contrações esporádicas, e sem perda à manobra de Valsalva. A ausência de pooling no exame especular é crucial para descartar rotura de membranas.</p><p><strong>Análise das alternativas:</strong></p><p>A) Tampão mucoso, analgesia, observação e orientações - RESPOSTA CORRETA. O tampão mucoso é a secreção que protege o colo uterino durante a gravidez. Sua perda indica início do trabalho de parto. A paciente apresenta sinais de trabalho de parto precoce (colo 2cm, contrações), então analgesia e observação são adequadas.</p><p>B) Rotura prematura de membranas, preparo de colo com misoprostol - INCORRETO. Não há evidências de RPM (sem pooling, negativos de Valsalva e nitrazina).</p><p>C) Rotura prematura de membranas, ampicilina e indução do parto com ocitocina - INCORRETO. Mesmo erro do item B, além de profilaxia antibiótica desnecessária sem confirmação de RPM.</p><p>D) Tampão mucoso, ampicilina e indução do parto - INCORRETO. A paciente está apenas iniciando trabalho de parto, não há indicação de indução imediata.</p><p>E) Rotura alta de membranas, hemograma e ampicilina - INCORRETO. \"Rotura alta de membranas\" não é conceito aceito na obstetricia atual.</p><p><strong>Veredito: A resposta correta é A.</strong> A perda do tampão mucoso com início do trabalho de parto justifica analgesia e observação, sem necessidade de intervenções invasivas.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_Parto",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_Partograma",
+        "Obstetricia_Parto",
+        "Obstetricia_Parto_Partograma",
+        "Obstetricia_Parto_Partograma_DefinicaoEFuncao",
+        "Ginecologia_GinecologiaBasica"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Primigesta em acompanhamento pré-natal, atualmente com 28 semanas de gestação, encaminhada ao pré-natal de alto risco por ganho de peso exagerado (já ganhou 10kg). Traz exames recentes com teste de tolerância oral a glicose 75g (0/1/2hs) com resultado: 90/153/98 mg/dL. Qual é a conduta?",
+      "alternativas": [
+        "Considerar como diabetes gestacional, encaminhar à nutricionista e fazer acompanhamento de glicemia capilar.",
+        "Considerar como diabetes gestacional, inicialmente orientar dieta e fazer acompanhamento de glicemia capilar se crescimento fetal > p85.",
+        "Encaminhar à nutricionista e manter observação do ganho de peso materno. Não considerar como diabetes gestacional e não fazer glicemia capilar.",
+        "Encaminhar à nutricionista. Não considerar como diabetes gestacional. Fazer glicemia capilar considerando ganho de peso materno.",
+        "Não considerar como diabetes gestacional, encaminhar à nutricionista e fazer acompanhamento de glicemia capilar se crescimento fetal > p85."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HAOC avalia seu domínio sobre os critérios diagnósticos para diabetes gestacional e a condurate adequada diante de resultados limítrofes. O tema é fundamental no pré-natal e exige conhecimento dos parâmetros atualizados pelas diretrizes brasileiras.</p><p>O resultado do TTGO 75g é: 90/153/98 mg/dL. Para o diagnóstico de diabetes gestacional, os critérios mais aceitos atualmente são: jejum ≥ 92 mg/dL, 1h ≥ 180 mg/dL ou 2h ≥ 153 mg/dL. Analisando o caso: jejum 90 mg/dL (< 92), 1h 153 mg/dL (< 180), 2h 98 mg/dL (< 153). Todos os valores estão dentro da normalidade, não caracterizando diabetes gestacional.</p><p>Embora o ganho de peso tenha sido exagerado (10 kg até 28 semanas), o valor de 2 horas (98 mg/dL) está significativamente abaixo do ponto de corte de 153 mg/dL, mostrando boa tolerância à glicose.</p><p><strong>Análise das alternativas:</strong></p><p>A) Considerar como diabetes gestacional, encaminhar à nutricionista e fazer acompanhamento de glicemia capilar - INCORRETO. Os resultados não caracterizam diabetes gestacional.</p><p>B) Considerar como diabetes gestacional, inicialmente orientar dieta e fazer acompanhamento de glicemia capilar se crescimento fetal > p85 - INCORRETO. Mesmo erro conceitual do item A.</p><p>C) Encaminhar à nutricionista e manter observação do ganho de peso materno. Não considerar como diabetes gestacional e não fazer glicemia capilar - RESPOSTA CORRETA. Com exames normais, foca-se no controle ponderal e orientação nutricional para evitar ganho excessivo.</p><p>D) Encaminhar à nutricionista. Não considerar como diabetes gestacional. Fazer glicemia capilar considerando ganho de peso materno - INCORRETO. Monitoramento de glicemia capilar não é necessário com TTGO normal.</p><p>E) Não considerar como diabetes gestacional, encaminhar à nutricionista e fazer acompanhamento de glicemia capilar se crescimento fetal > p85 - INCORRETO. Não há indicação de glicemia capilar rotineira.</p><p><strong>Veredito: A resposta correta é C.</strong> Com TTGO normal, a conduta é orientação nutricional e controle do ganho de peso, sem necessidade de investigação adicional para diabetes gestacional.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg",
+        "Obstetricia_DoencasAssociadasAGestacao_DiabetesNaGestacaoDmg_DiabetesNaGestacaoDmgFisiopato",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "<html><head></head><body>Primigesta, 20 anos, interna em trabalho de parto com 36 semanas. Traz carteirinha do pré-natal abaixo representada. Evolui com parto vaginal sem intercorrências. Aproximadamente 40 minutos após o parto a paciente evolui com dor importante em andar superior do abdômen, sudorese, cefaleia occipital, palpitação, agitação psicomotora e alterações visuais. Ao exame físico paciente em regular estado geral, PA 160 x 110 mmHg, FC 100 bpm, abdômen com massa infra umbilical endurecida, pequeno sangramento genital. Qual é a conduta mais adequada?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ29.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Derivados do ergot.",
+        "Sulfato de Magnésio.",
+        "Morfina.",
+        "Furosemida.",
+        "Nitroprussiato de sódio."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HAOC avalia a capacidade de reconhecimento e tratamento da pré-eclâmpsia pós-parto, uma complicação grave que pode cursar com eclampsia. O caso é clássico e exige conhecimento sobre o tratamento específico desta condição.</p><p>A paciente evoluiu 40 minutos após o parto com quadro clínico característico: dor em andar superior do abdômen, sudorese, cefaleia occipital, alterações visuais, agitação psicomotora e hipertensão grave (PA 160 x 110 mmHg). A presença de massa endurecida infraumbilical sugere útero contraído, e o sangramento genital discreto é típico. Todos esses achados são consistentes com pré-eclâmpsia pós-parto evoluindo para eclampsia iminente.</p><p>O princípio fundamental no tratamento é prevenir convulsões através da administração de sulfato de magnésio, que é o padrão ouro para profilaxia e tratamento de eclampsia. A pressão arterial será tratada posteriormente, mas a prioridade é o controle neurológico.</p><p><strong>Análise das alternativas:</strong></p><p>A) Derivados do ergot - INCORRETO. São uterotônicos, não têm indicação em pré-eclâmpsia e podem piorar a hipertensão.</p><p>B) Sulfato de Magnésio - RESPOSTA CORRETA. É o medicamento de escolha para prevenir e tratar convulsões na pré-eclâmpsia.</p><p>C) Morfina - INCORRETO. Analgésico que não previne convulsões e pode mascarar sintomas neurológicos.</p><p>D) Furosemida - INCORRETO. Diurético sem indicação na fase aguda da pré-eclâmpsia.</p><p>E) Nitroprussiato de sódio - INCORRETO. Anti-hipertensivo para emergências, mas a prioridade é prevenir convulsões com sulfato de magnésio.</p><p><strong>Veredito: A resposta correta é B - Sulfato de Magnésio.</strong> Lembre-se: na pré-eclâmpsia/eclampsia, a prioridade é sempre a prevenção de convulsões com sulfato de magnésio, independentemente dos níveis pressóricos.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta",
+        "Obstetricia_DoencasAssociadasAGestacao_DisturbiosHipertensivosNaGesta_Eclampsia",
+        "Obstetricia_Puerperio",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Paciente com 32 anos, secundigesta com parto normal anterior pré-termo, atualmente com 33 semanas de gestação. Antecedente pessoal: estenose mitral leve por febre reumática. Procura pronto atendimento com dor em hipogástrio tipo cólica. Nega perdas vaginais. Ao exame físico direcionado apresenta-se em bom estado geral, PA 120 x 80 mmHg, FC: 90 bpm, ausculta pulmonar sem alterações, abdômen gravídico, Giordano negativo, dinâmica uterina com 2 contrações moderadas a cada 10 minutos, exame especular sem alterações, toque vaginal colo médio, medianizado, pérvio para 2 cm. Exames de vitalidade fetal preservados. Qual a medicação mais adequada para inibição de trabalho de parto? Qual opção é a preferencial para esse caso?",
+      "alternativas": [
+        "Atosiban.",
+        "Sulfato de magnésio.",
+        "Terbutalina.",
+        "Expansão volêmica.",
+        "Diclofenaco."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HAOC aborda a inibição do trabalho de parto prematuro com foco na escolha do tocolítico mais adequado considerando as comorbidades maternas. É uma questão que testa conhecimento farmacológico e capacidade de individualização terapêutica.</p><p>A paciente apresenta trabalho de parto prematuro às 33 semanas (um parto anterior pré-termo), mas há um factor adicional importante: estenose mitral leve por febre reumática. Este dado é crucial para a escolha do tocolítico, pois algumas opções podem ser contraindicadas ou arriscadas em cardiopatias.</p><p>A terbutalina (alternativa C), embora seja um beta-2 agonista eficaz para tocolise, pode causar taquicardia e arritmias, sendo arriscada em pacientes com cardiopatias. O atosiban, por sua vez, é um antagonista específico dos receptores de ocitocina, com menos efeitos cardiovasculares.</p><p><strong>Análise das alternativas:</strong></p><p>A) Atosiban - RESPOSTA CORRETA. É o tocolítico de escolha neste caso, pois é específico para ocitocina, não causa efeitos cardiovasculares significativos e é seguro em cardiopatias.</p><p>B) Sulfato de magnésio - INCORRETO. É usado para neuroproteção fetal, não como tocolítico de primeira escolha.</p><p>C) Terbutalina - INCORRETO. Embora eficaz como tocolítico, é contraindicada ou deve ser usada com extrema cautela em cardiopatias devido aos efeitos beta-agonistas.</p><p>D) Expansão volêmica - INCORRETO. Não é um tocolítico e pode ser prejudicial em cardiopatias.</p><p>E) Diclofenaco - INCORRETO. AINE que pode causar fechamento prematuro do ducto arterioso e oligodrâmnio.</p><p><strong>Veredito: A resposta correta é A - Atosiban.</strong> Em gestantes com cardiopatias, o atosiban é preferível aos beta-agonistas devido à melhor segurança cardiovascular, mantendo a eficácia tocolítica necessária.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_TrabalhoDePartoPrematuroTpp",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_CardiopatiasNaGestacao",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Em relação aos níveis de atenção à saúde do sistema de saúde brasileiro, qual a afirmação adequada?",
+      "alternativas": [
+        "A atenção secundária se caracteriza por concentrar as tecnologias de ponta do sistema.",
+        "A atenção terciária não realiza ações de prevenção de agravos à saúde.",
+        "Na atenção primária, não se faz necessária a incorporação de tecnologias inovadoras em suas ações de cuidados à saúde.",
+        "A atenção primária se caracteriza por realizar todos os cuidados às gestantes de baixo risco.",
+        "A atenção secundária se caracteriza por receber cerca de 75% de todas as necessidades de cuidados à saúde que são acompanhadas na atenção primária."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>A banca HAOC avaliou o conhecimento dos candidatos sobre a organização do Sistema Único de Saúde (SUS) brasileiro, especificamente sobre os níveis de atenção em saúde. Esta é uma questão que exige compreensão clara da estrutura piramidal do sistema de saúde brasileiro.</p><p><strong>A resposta correta é D - A atenção primária se caracteriza por realizar todos os cuidados às gestantes de baixo risco.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> ERRADA. As tecnologias de ponta concentram-se na atenção terciária, que é responsável por procedimentos de alta complexidade. A atenção secundária oferece cuidados de média complexidade.</p><p><strong>Alternativa B:</strong> ERRADA. A atenção terciária também realiza ações preventivas, embora com foco mais especializado. Todas as três níveis de atenção têm componentes preventivos.</p><p><strong>Alternativa C:</strong> ERRADA. A atenção primária deve incorporar tecnologias inovadoras quando apropriadas, como sistemas de informação, telemedicina e equipamentos diagnósticos básicos para melhorar a resolutividade.</p><p><strong>Alternativa D:</strong> CORRETA. Esta é uma característica fundamental da atenção primária no SUS - o cuidado integral às gestantes de baixo risco, incluindo pré-natal, parto e puerpério.</p><p><strong>Alternativa E:</strong> ERRADA. Não existe essa proporção específica de referências entre os níveis. A atenção primária resolve cerca de 80-85% das demandas de saúde.</p><p>O SUS organiza-se em três níveis: primário (atenção básica, foco na prevenção e cuidado integral), secundário (média complexidade, referências da atenção básica) e terciário (alta complexidade). A atenção primária é a porta de entrada do sistema e deve ser capaz de resolver a maioria das demandas de saúde.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Assinale a alternativa correta em relação ao manejo, no Brasil, da pandemia da doença coronavírus 2019 (Covid-19), causada pelo coronavírus denominado SARS-CoV-2.",
+      "alternativas": [
+        "As informações necessárias para monitorar a extensão da pandemia incluem o número de casos suspeitos e o número de óbitos confirmados.",
+        "A falta da testagem ampla dos casos leves de Covid-19 leva à subestimação da letalidade da Covid19.",
+        "Todos os casos suspeitos de infecção pelo SARS-CoV-2 devem ter o diagnóstico confirmado por testes sorológicos.",
+        "A coleta das informações sobre os casos de infecção pelo SARS-CoV-2 registradas no sistema de vigilância epidemiológica é de responsabilidade do nível federal do governo.",
+        "As informações necessárias para monitorar a expansão da pandemia incluem o número de casos confirmados e o número de óbitos suspeitos e confirmados e a prevalência de anticorpos contra o vírus na população em geral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca HAOC testou o conhecimento sobre vigilância epidemiológica e monitoramento da pandemia de COVID-19 no Brasil. A questão avalia a compreensão sobre quais indicadores são realmente necessários para monitorar adequadamente a evolução pandêmica.</p><p><strong>A resposta correta é E - As informações necessárias para monitorar a expansão da pandemia incluem o número de casos confirmados e o número de óbitos suspeitos e confirmados e a prevalência de anticorpos contra o vírus na população em geral.</strong></p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> INCORRETA. O número de casos suspeitos por si só não é suficiente para monitorar a extensão. É necessário ter casos confirmados, não apenas suspeitos.</p><p><strong>Alternativa B:</strong> INCORRETA. A subestimação da letalidade acontece quando há subnotificação de casos, não apenas falta de testagem de casos leves. A falta de testagem pode levar tanto à subestimação quanto à superestimação da letalidade.</p><p><strong>Alternativa C:</strong> INCORRETA. Nem todos os casos suspeitos precisam de confirmação por teste sorológico. O diagnóstico pode ser clínico-epidemiológico em determinadas situações, e existem diferentes tipos de testes (RT-PCR, testes rápidos).</p><p><strong>Alternativa D:</strong> INCORRETA. A coleta de informações é uma responsabilidade compartilhada entre os três níveis de governo (federal, estadual e municipal). Não é exclusividade do nível federal.</p><p><strong>Alternativa E:</strong> CORRETA. Esta alternativa apresenta uma visão mais completa do monitoramento pandêmico, incluindo casos confirmados, óbitos (suspeitos e confirmados), e prevalência de anticorpos. A soroprevalência é fundamental para entender a real dimensão da pandemia na população.</p><p>O monitoramento efetivo da COVID-19 requer uma abordagem multifacetada que combine dados de vigilância laboratorial, clínica e populacional.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Em relação à vigilância epidemiológica da tuberculose pulmonar, assinale a alternativa correta.",
+      "alternativas": [
+        "Uma das medidas de controle da doença é acompanhar todos os contatos de casos confirmados por 3 semanas ou até o aparecimento de sintomas.",
+        "Os casos suspeitos da doença devem ser notificados ao Sistema de Informação de Agravos de Notificação.",
+        "Pessoas com tosse há mais de 3 semanas sem outra causa conhecida são classificadas como casos suspeitos da doença.",
+        "As metas para o controle da doença dependem da verificação de que houve pelo menos 60% de cura dos casos novos bacilíferos diagnosticados a cada ano.",
+        "As ações de controle da doença baseadas no tratamento dos doentes são suficientes para modificar a situação epidemiológica da doença."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>A banca HAOC avaliou conhecimentos sobre vigilância epidemiológica da tuberculose pulmonar, uma doença de notificação compulsória no Brasil. Esta questão testa a compreensão sobre os critérios de caso, medidas de controle e metas do programa nacional.</p><p><strong>A resposta correta é C - Pessoas com tosse há mais de 3 semanas sem outra causa conhecida são classificadas como casos suspeitos da doença.</strong></p><p>Análise das alternativas:</p><p><strong>Alternativa A:</strong> ERRADA. Os contatos de casos confirmados devem ser acompanhados por pelo menos 6 meses (não 3 semanas), pois o período de incubação da tuberculose pode ser prolongado. O acompanhamento deve ser até o aparecimento de sintomas, mas o tempo mínimo é muito maior.</p><p><strong>Alternativa B:</strong> ERRADA. Casos SUSPEITOS de tuberculose NÃO são notificados ao SINAN. Apenas casos CONFIRMADOS devem ser notificados. Casos suspeitos são investigados antes da confirmação diagnóstica.</p><p><strong>Alternativa C:</strong> CORRETA. Este é o critério clássico de caso suspeito de tuberculose pulmonar: tosse por 3 semanas ou mais, sem causa aparente. Este é um dos principais sinais de alerta para investigação diagnóstica.</p><p><strong>Alternativa D:</strong> ERRADA. A meta do programa de controle da tuberculose é de pelo menos 85% de cura dos casos novos bacilíferos diagnosticados, não 60%. Esta meta mais ambiciosa reflete a importância de alcançar alta taxa de cura para controle efetivo da doença.</p><p><strong>Alternativa E:</strong> ERRADA. As ações de controle baseadas apenas no tratamento dos doentes são INSUFICIENTES. É necessário um conjunto de medidas que incluem prevenção (vacinação BCG), identificação e tratamento de casos, investigação de contatos, e medidas de controle de infecção.</p><p>A tuberculose é um problema de saúde pública no Brasil, e seu controle requer abordagem integral que vai além do tratamento individual.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "MedicinaPreventiva_Epidemiologia_AspectosEpidemiologicosDasDoen",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Em um município paulista, a Secretaria Municipal da Saúde divulgou as seguintes informações referentes ao ano de 2019: População total: 150.000; População de mulheres na faixa etária entre 15 e 49 anos: 35.000; Nº de nascidos vivos de mães residentes no município: 2.000; Nº de óbitos de mulheres residentes no município por causas ligadas ao ciclo gravídico-puerperal: 2; Nº de óbitos de crianças de 0 a 27 dias de vida: 80; Nº de natimortos: 90. Em 2019, quais foram o coeficiente de mortalidade materna e o coeficiente de mortalidade neonatal, respectivamente?",
+      "alternativas": [
+        "100 mortes por 100.000 nascidos vivos e 85 mortes por 1.000 nascidos vivos.",
+        "100 mortes por 1.000 nascidos vivos e 85 mortes por 100.000 nascidos vivos.",
+        "80 mortes por 1.000 nascidos vivos e 172 mortes por 100.000 nascidos vivos.",
+        "100 mortes por 100.000 nascidos vivos e 40 mortes por 1.000 nascidos vivos.",
+        "172 mortes por 100.000 nascidos vivos e 40 mortes por 1.000 nascidos vivos."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HAOC avaliou conhecimentos sobre indicadores demográficos e sanitários, especificamente o cálculo de coeficientes de mortalidade materna e neonatal. É uma questão que exige conhecimento matemático aplicado à epidemiologia e compreensão dos denominadores corretos.</p><p><strong>A resposta correta é D - 100 mortes por 100.000 nascidos vivos e 40 mortes por 1.000 nascidos vivos.</strong></p><p>Vamos aos cálculos:</p><p><strong>Dados fornecidos:</strong></p><p>• População total: 150.000</p><p>• Nascidos vivos: 2.000</p><p>• Óbitos maternos: 2</p><p>• Óbitos neonatais (0-27 dias): 80</p><p><strong>Coeficiente de Mortalidade Materna:</strong></p><p>CMM = (Número de óbitos maternos / Nascidos vivos) × 100.000</p><p>CMM = (2 / 2.000) × 100.000 = 100 mortes por 100.000 nascidos vivos</p><p><strong>Coeficiente de Mortalidade Neonatal:</strong></p><p>CMN = (Número de óbitos neonatais / Nascidos vivos) × 1.000</p><p>CMN = (80 / 2.000) × 1.000 = 40 mortes por 1.000 nascidos vivos</p><p><strong>Por que as outras alternativas estão erradas:</strong></p><p><strong>A e B:</strong> Invertem os denominadores ou os resultados (100/1.000 em vez de 100/100.000)</p><p><strong>C e E:</strong> Apresentam cálculos incorretos do coeficiente neonatal (80/1.000 daria 40, não 85 ou 172)</p><p>Estes indicadores são fundamentais para avaliar a qualidade da atenção materno-infantil em um território. O coeficiente de mortalidade materna reflete principalmente a qualidade da atenção obstétrica, enquanto o neonatal avalia tanto a atenção obstétrica quanto neonatal.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta",
+        "MedicinaPreventiva_Epidemiologia_MedidasDeSaudeColetiva",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_AnemiasNaGestacao",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_IctericiaNenonatalEDisturbiosH"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Qual é a afirmação adequada em relação aos estudos epidemiológicos transversais?",
+      "alternativas": [
+        "São indicados para estudar doenças raras e de evolução rápida.",
+        "São caros e de longa duração.",
+        "Medem a incidência da doença de interesse.",
+        "Não são indicados para análises exploratórias e formulação de hipóteses causais.",
+        "Não permitem estabelecer relações causais por não provarem a existência de uma sequência temporal entre a exposição e o subsequente desenvolvimento da doença."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>A banca HAOC avaliou conhecimentos sobre metodologia epidemiológica, especificamente sobre estudos transversais. Esta questão testa a compreensão das características, vantagens e limitações deste tipo de estudo observacional.</p><p><strong>A resposta correta é E - Não permitem estabelecer relações causais por não provarem a existência de uma sequência temporal entre a exposição e o subsequente desenvolvimento da doença.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> ERRADA. Estudos transversais NÃO são adequados para doenças raras (que precisam de amostras muito grandes) nem para doenças de evolução rápida (que podem não ser detectadas no momento do estudo). São ideais para doenças prevalentes.</p><p><strong>Alternativa B:</strong> ERRADA. Estudos transversais são relativamente BARATOS e de CURTA duração. Contrastam com estudos de coorte (mais caros e longos) ou ensaios clínicos.</p><p><strong>Alternativa C:</strong> ERRADA. Estudos transversais medem PREVALÊNCIA, não incidência. A prevalência é o número de casos existentes em um momento específico, enquanto incidência é o número de casos novos em um período.</p><p><strong>Alternativa D:</strong> ERRADA. Estudos transversais SÃO indicados para análises exploratórias e formulação de hipóteses causais. São frequentemente a primeira fase de investigação epidemiológica de uma associação exposição-doença.</p><p><strong>Alternativa E:</strong> CORRETA. Esta é a principal limitação dos estudos transversais: eles são observacionais de corte transversal, ou seja, avaliam exposição e desfecho no mesmo momento. Não conseguem estabelecer se a exposição precedeu o desfecho, sendo impossibilitados de inferir causalidade.</p><p>Os estudos transversais são úteis para gerar hipóteses, estimar prevalências e descrever padrões de doença em populações, mas não devem ser usados para estabelecer relações causais definitivas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_TiposDeEstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_ValidadeDosEstudosEpidemiologi",
+        "MedicinaPreventiva_Epidemiologia_MedicinaBaseadaEmEvidencias"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Assinale a alternativa CORRETA em relação aos determinantes sociais da saúde.",
+      "alternativas": [
+        "Incluem os fatores socioeconômicos, étnicos/raciais e culturais, mas não os fatores psicológicos e comportamentais.",
+        "São em grande parte responsáveis pela iniquidade no acesso aos cuidados de saúde.",
+        "Não estão presentes no nível terciário de atenção à saúde.",
+        "Influenciam a ocorrência de agravos à saúde e seus fatores de risco em populações específicas, independentemente dos processos biológicos de envelhecimento.",
+        "Questões de gênero não fazem parte dos determinantes pois as diferenças biológicas de sexos não imutáveis."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia a compreensão dos candidatos sobre os determinantes sociais da saúde, um conceito fundamental na saúde pública brasileira. A banca busca testar se você reconhece que esses determinantes vão muito além dos aspectos puramente biológicos.</p><p><strong>A resposta correta é a alternativa B.</strong> Os determinantes sociais da saúde são, de fato, responsáveis por grande parte das iniquidades no acesso aos cuidados de saúde. Isso significa que pessoas com diferentes condições socioeconômicas, étnicas ou geográficas têm acesso desigual aos serviços de saúde, criando disparidades evitáveis.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. Os determinantes sociais incluem NÃO APENAS fatores socioeconômicos, étnicos/raciais e culturais, mas também os fatores psicológicos e comportamentais. Por exemplo, estresse psicológico e comportamentos de risco fazem parte dos determinantes sociais.</p><p><strong>Alternativa B:</strong> CORRETA. Conforme estabelecido pela OMS e pelo Ministério da Saúde, os determinantes sociais criam as condições desiguais que resultam em maior mortalidade, morbidade e menor acesso aos serviços de saúde para grupos populacionais vulneráveis.</p><p><strong>Alternativa C:</strong> INCORRETA. Os determinantes sociais estão presentes em todos os níveis de atenção, incluindo o terciário. A Hospitalização de alta complexidade também é influenciada por fatores como renda, educação e acesso prévio à atenção primária.</p><p><strong>Alternativa D:</strong> INCORRETA. A alternativa está parcialmente correta ao dizer que influenciam agravos e fatores de risco, mas erra ao dizer \"independentemente dos processos biológicos de envelhecimento\". Os determinantes sociais interagem e modulent os processos biológicos, incluindo o envelhecimento.</p><p><strong>Alternativa E:</strong> INCORRETA. Questões de gênero SÃO parte dos determinantes sociais. A Política Nacional de Saúde Integral das Mulheres e a PNSAIPN confirmam que gênero é um determinante social crucial, não apenas diferenças biológicas imutáveis.</p><p><strong>Veredito:</strong> A banca HAOC avaliou se você compreende que os determinantes sociais são responsáveis pelas iniquidades em saúde. A alternativa B é a única que reconhece corretamente essa relação causal fundamental.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Assinale a alternativa correta em relação à prevenção quaternária.",
+      "alternativas": [
+        "Novas tecnologias médico-hospitalares são ferramentas importantes na prática médica não devem ser objeto de medidas de prevenção quaternária.",
+        "A prática médica nos cuidados com os idosos raramente faz parte das ações de prevenção quaternária.",
+        "É definida como a ação de triagem para doenças preveníveis no indivíduo que se sente saudável.",
+        "O médico não deve adotar ações de prevenção quaternária quando a demanda para exames e tratamentos parte do paciente.",
+        "É definida como a ação de evitar intervenções médicas excessivas e desnecessárias."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 explora um conceito mais recente na saúde pública: a prevenção quaternária. O examinador quer verificar se você conhece essa dimensão da prevenção que foca na proteção do paciente contra intervenções médicas desnecessárias.</p><p><strong>A resposta correta é a alternativa E.</strong> A prevenção quaternária é definida como \"a ação de identificar pacientes em risco de medicalização excessiva, oferecendo estratégias protetoras e úteis\". Em outras palavras, é evitar que pacientes sejam submetidos a exames, medicamentos ou procedimentos que não trarão benefício real ou podem causar dano.</p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> INCORRETA. Novas tecnologias médico-hospitalares SÃO objeto de medidas de prevenção quaternária. O conceito questiona quando essas tecnologias são usadas desnecessariamente, sem indicação clínica clara ou com risco/benefício desfavorável.</p><p><strong>Alternativa B:</strong> INCORRETA. A prática médica com idosos FAZ PARTE das ações de prevenção quaternária. Na verdade, a população idosa é especialmente vulnerável à medicalização excessiva, tornando-se um grupo prioritário para prevenção quaternária.</p><p><strong>Alternativa C:</strong> INCORRETA. Esta definição confunde prevenção quaternária com prevenção secundária (screening). Prevenção quaternária NÃO é triagem em pessoas saudáveis, mas sim proteção contra excesso de intervenções.</p><p><strong>Alternativa D:</strong> INCORRETA. O médico DEVE adotar prevenção quaternária mesmo quando há demanda do paciente. Aliás, é justamente quando o paciente solicita exames ou tratamentos desnecessários que a prevenção quaternária se torna mais importante.</p><p><strong>Alternativa E:</strong> CORRETA. Esta é a definição mais aceita internacionalmente, proposta por Marc Jamoulle: \"a prevenção quaternária é o conjunto de ações que visam proteger as pessoas contra novas intervenções médicas\".</p><p><strong>Veredito:</strong> A banca avaliou se você reconhece a importância de proteger pacientes contra medicalização excessiva. A alternativa E é a única que apresenta corretamente a definição de prevenção quaternária.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedidasDeSaudeColetiva"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Sobre a Política Nacional de Saúde Integral da População Negra, assinale a alternativa correta.",
+      "alternativas": [
+        "Esta política surgiu a partir da mobilização de gestores e profissionais da saúde na década de 1980 e foi publicada pelo Ministério da Saúde na década de 1990.",
+        "A atenção básica organizada a partir de Unidades Básicas de Saúde tradicionais é referência para esta política.",
+        "Esta política reafirma a responsabilidade exclusiva da esfera municipal de gestão do SUS na implementação das ações de promoção da saúde integral da população negra.",
+        "Esta política reconhece a necessidade do enfrentamento ao racismo institucional no SUS com vistas à superação das barreiras estruturais que levam a indicadores de saúde ruins da população negra.",
+        "Esta política recomenda que a classificação de raça/cor nos serviços de saúde seja realizada pela observação do profissional de saúde."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 aborda a Política Nacional de Saúde Integral da População Negra (PNSIPN), uma política importante do SUS que reconhece o racismo como determinante social de saúde. A banca avalia se você conhece os princípios fundamentais desta política.</p><p><strong>A resposta correta é a alternativa D.</strong> Esta política SIM reconhece explicitamente a necessidade de enfrentar o racismo institucional no SUS. Isso significa reconhecer e combater práticas, procedimentos e condutas que discriminam pessoas negras, criando barreiras de acesso e piores desfechos em saúde.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. A política NÃO surgiu na década de 1980/1990. Foi resultado da mobilização do movimento negro brasileiro e foi publicada em 2007, reconhecendo o racismo como determinante social de saúde.</p><p><strong>Alternativa B:</strong> INCORRETA. A política NÃO refere apenas às UBS tradicionais. Pelo contrário, a PNSIPN propõe estratégias específicas para população negra em todos os níveis de atenção, incluindo centros de referência, ambulatórios especializados e leitos hospitalares.</p><p><strong>Alternativa C:</strong> INCORRETA. A política NÃO afirma responsabilidade \"exclusiva\" municipal. A implementação é compartilhada entre as três esferas de gestão (federal, estadual e municipal), sendo uma política do SUS como um todo.</p><p><strong>Alternativa D:</strong> CORRETA. Esta é a essência da PNSIPN. A política reconhece que o racismo institucional (estrutural) cria barreiras que resultam em piores indicadores de saúde para população negra, e propõe ações específicas para superar essas barreiras.</p><p><strong>Alternativa E:</strong> INCORRETA. A política RECOMENDA que a classificação de raça/cor seja DECLARADA pela própria pessoa, não observada pelo profissional. A autoidentificação é um direito garantido e metodologia oficial da política.</p><p><strong>Veredito:</strong> A banca HAOC testou seu conhecimento sobre uma política crucial do SUS que reconhece o racismo como determinate social. A alternativa D é a única que reflete corretamente o reconhecimento oficial do racismo institucional como problema a ser enfrentado.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "<html><head></head><body>Com o objetivo de investigar a associação entre nível de colesterol sérico e doença isquêmica do coração (DIC), em 2010, foram recrutados 118.539 homens com idade entre 30 e 59 anos. Os participantes do estudo não tinham história de doença coronariana. Um total de 274 casos de DIC foi observado ao longo de oito anos de acompanhamento. Os resultados estão resumidos a seguir: Considerando que não houve perda de participantes do estudo, qual é a taxa de incidência cumulativa para DIC no período do estudo?\n\n<img src=\"https://medbrave.com.br/questions/haoc-2021-r1/qQ39.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "1,6 por 1.000 pessoas.",
+        "2,3 por 1.000 pessoas.",
+        "30,2 por 100 mil pessoas/ano de observação.",
+        "39,8 por 100 mil pessoas/ano de observação.",
+        "17,7 por 100 mil pessoas/ano de observação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia sua habilidade em calcular indicadores epidemiológicos básicos, especificamente a taxa de incidência cumulativa. O examinador apresenta um estudo de coorte clássico e quer testar se você distingue corretamente incidência cumulativa de densidade de incidência.</p><p><strong>A resposta correta é a alternativa B (2,3 por 1.000 pessoas).</strong></p><p>Para resolver esta questão, vamos aplicar a fórmula da incidência cumulativa:</p><p>Incidência Cumulativa = (Número de casos novos / População em risco) × 1000</p><p>Substituindo os dados:<br>Incidência Cumulativa = (274 casos / 118.539 pessoas) × 1000<br>Incidência Cumulativa = 0,00231 × 1000 = 2,31 por 1.000 pessoas</p><p>Portanto, a resposta é 2,3 por 1.000 pessoas.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (1,6 por 1.000):</strong> INCORRETA. Resultado de cálculo incorreto, possivelmente dividindo por população maior que o real.</p><p><strong>Alternativa B (2,3 por 1.000):</strong> CORRETA. Resultado correto do cálculo da incidência cumulativa.</p><p><strong>Alternativa C (30,2 por 100 mil pessoas/ano):</strong> INCORRETA. Esta é uma densidade de incidência, mas o cálculo não considera o tempo de observação (8 anos). Para densidade de incidência, seria: 274 casos / (118.539 × 8 anos) = 0,000289 casos/pessoa-ano = 28,9 por 100 mil pessoas/ano.</p><p><strong>Alternativa D (39,8 por 100 mil pessoas/ano):</strong> INCORRETA. Resultado de cálculo incorreto de densidade de incidência.</p><p><strong>Alternativa E (17,7 por 100 mil pessoas/ano):</strong> INCORRETA. Outro cálculo incorreto de densidade de incidência.</p><p><strong>Veredito:</strong> A banca avaliou se você distingue incidência cumulativa (proporção de pessoas que desenvolvem a doença durante o período) de densidade de incidência (taxa considerando tempo de observação). A alternativa B representa corretamente o cálculo da incidência cumulativa.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos_MedidasDeAssociacaoEMedidasDeI"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Qual a afirmação mais adequada em relação ao rastreamento de doenças?",
+      "alternativas": [
+        "Utiliza-se de exames comprovadamente inócuos para detectar a doença de interesse.",
+        "Deve ser realizado quando há alta especificidade dos exames utilizados para detectar a doença de interesse.",
+        "É uma estratégia de prevenção secundária.",
+        "Deve ser realizado independentemente da prevalência da doença de interesse.",
+        "É uma estratégia de promoção da saúde."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 explora os conceitos fundamentais de prevenção em saúde pública, especificamente o rastreamento de doenças (screening). A banca busca verificar se você compreende em qual nível de prevenção se insere essa estratégia.</p><p><strong>A resposta correta é a alternativa C.</strong> O rastreamento é uma estratégia de prevenção secundária. A prevenção secundária tem como objetivo detectar precocemente uma doença já presente, mas ainda em fase assintomática, para permitir tratamento mais efetivo e melhorar prognóstico.</p><p>Vamos revisar os níveis de prevenção:<br>• <strong>Primária:</strong> Evita o aparecimento da doença (ex: vacinas, campanhas anti-tabagismo)<br>• <strong>Secundária:</strong> Detecta doença precoce (ex: mamografia, colonoscopia)<br>• <strong>Terciária:</strong> Minimiza incapacidades (ex: reabilitação pós-AVC)<br>• <strong>Quaternária:</strong> Evita excesso de medicalização</p><p>Analisando as alternativas:</p><p><strong>Alternativa A:</strong> INCORRETA. O rastreamento NÃO utiliza apenas exames \"inócuos\" (sem risco). Muitas estratégias de rastreamento envolvem procedimentos com riscos, como colonoscopia ou biópsia. O importante é que os benefícios superem os riscos.</p><p><strong>Alternativa B:</strong> INCORRETA. A alta especificidade é desejável, mas NÃO é o único critério. A sensibilidade também é importante, e a utilidade clínica depende de outros fatores como prevalência da doença e disponibilidade de tratamento.</p><p><strong>Alternativa C:</strong> CORRETA. Esta é a definição correta. O rastreamento identifica doença em pessoas assintomáticas, enquadrando-se perfeitamente na prevenção secundária.</p><p><strong>Alternativa D:</strong> INCORRETA. O rastreamento NÃO deve ser feito independentemente da prevalência. A pré-test probability (prevalência) é crucial para determinar se o rastreamento será útil ou causará mais danos que benefícios (sobrediagnóstico, falso-positivos).</p><p><strong>Alternativa E:</strong> INCORRETA. O rastreamento NÃO é promoção da saúde. Promoção da saúde são ações para aumentar bem-estar geral (ex: atividade física, alimentação saudável), enquanto rastreamento busca detectar doenças específicas precocemente.</p><p><strong>Veredito:</strong> A banca HAOC avaliou se você domina os conceitos básicos de prevenção em saúde. A alternativa C é a única que classifica corretamente o rastreamento como prevenção secundária.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TestesDiagnosticos"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Homem, 21 anos de idade, foi vítima de ferimento penetrante abdominal por projétil de arma de fogo. Indicada laparotomia exploradora que evidenciou laceração de mais de 75% cólon transverso e presença de fezes em pequena quantidade na cavidade abdominal. Na admissão e durante o procedimento se manteve estável hemodinamicamente. Qual é a melhor conduta para tratar a lesão intestinal?",
+      "alternativas": [
+        "Ressecção intestinal com colostomia.",
+        "Sutura primária.",
+        "Exteriorização da perfuração intestinal em alça de colostomia.",
+        "Sutura primária e ileostomia de proteção.",
+        "Ressecção intestinal com anastomose primária."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia seu conhecimento sobre o manejo cirúrgico de lesões traumáticas do cólon. O caso apresenta um paciente jovem com ferimento penetrante por arma de fogo, lesionando mais de 75% do cólon transverso, com contaminação fecal mínima e estabilidade hemodinâmica.</p><p><strong>A resposta correta é E - Ressecção intestinal com anastomose primária.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Ressecção intestinal com colostomia:</strong> A colostomia seria indicada em casos de contaminação fecal maciça, instabilidade hemodinâmica ou comorbidades que comprometam a cicatrização. Não é a melhor opção para este caso.</p><p><strong>B) Sutura primária:</strong> A laceração de mais de 75% do cólon não permite reparo por sutura simples. A extensão da lesão exige ressecção para evitar necrose e deiscência.</p><p><strong>C) Exteriorização da perfuração intestinal em alça de colostomia:</strong> Esta técnica (procedimento de Hartmman) é reservada para casos extremos com contaminação abundante, não se aplicando aqui.</p><p><strong>D) Sutura primária e ileostomia de proteção:</strong> Não se indica sutura primária em lesão dessa magnitude. A ileostomia de proteção é desnecessária em paciente estável.</p><p><strong>E) Ressecção intestinal com anastomose primária:</strong> CORRETA. O paciente jovem, sem comorbidades, hemodinamicamente estável, com contaminação mínima, é candidato ideal para ressecção com anastomose primária. Este é o padrão ouro em trauma abdominal de pacientes estáveis.</p><p>O raciocínio se baseia nos fatores favorecedores: idade jovem, estabilidade hemodinâmica, contaminação mínima e tempo de cirurgia adequado. Segundo as diretrizes atuais, a anastomose primária é segura em 80-90% dos casos quando estes critérios são atendidos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoPerfurativo"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Homem, 21 anos de idade, foi vítima de ferimento penetrante abdominal por projétil de arma de fogo. Indicada laparotomia exploradora que evidenciou laceração de mais de 75% cólon transverso e presença de fezes em pequena quantidade na cavidade abdominal. Na admissão e durante o procedimento se manteve estável hemodinamicamente. Qual é o tempo de uso de antibiótico mais adequado neste cenário?",
+      "alternativas": [
+        "24 horas.",
+        "3 dias.",
+        "5 dias.",
+        "7 dias.",
+        "10 dias."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão complementa a anterior, avaliando o uso racional de antimicrobianos em trauma abdominal. O contexto é o mesmo: paciente jovem, estável, com lesão cólica significativa mas contaminação mínima.</p><p><strong>A resposta correta é A - 24 horas.</strong></p><p>Analisando as alternativas:</p><p><strong>A) 24 horas:</strong> CORRETA. Na ausência de contaminação fecal maciça e com paciente estável, a profilaxia antimicrobiana por 24 horas é suficiente. O período mais longo não agrega benefício e aumenta resistência bacteriana.</p><p><strong>B) 3 dias:</strong> Tempo desnecessariamente prolongado. Estudos mostram que não há diferença na taxa de infecção entre 24h e 48h em casos sem contaminação maciça.</p><p><strong>C) 5 dias:</strong> Ainda mais prolongado. A complicação infecciosa já teria se manifestado até o 3º dia se fosse ocorrer.</p><p><strong>D) 7 dias:</strong> Excesso terapêutico não indicado. A maioria das complicações infecciosas pós-trauma abdominal manifesta-se nos primeiros 3-5 dias.</p><p><strong>E) 10 dias:</strong> Claramente excessivo. Não há evidências que sustentem esta duração em trauma abdominal controlado.</p><p>O racional baseia-se em evidências atuais: em pacientes estáveis com contaminação mínima, a profilaxia curta (24h) é tão eficaz quanto períodos mais longos, reduzindo efeitos adversos e resistência antimicrobiana. Diretrizes brasileiras de 2024 reforçam esta prática.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_PrevencaoDeInfeccaoDaFeridaOpe"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Qual a afirmação mais adequada com relação à diverticulite aguda?",
+      "alternativas": [
+        "Na presença de coleção pélvica, o tratamento preconizado é a retossigmoidectomia com anastomose primária.",
+        "Na presença de peritonite fecal, o tratamento preconizado é a retossigmoidectomia com anastomose primária e colostomia de proteção.",
+        "Na presença de peritonite purulenta, deve-se realizar peritoniostomia com curativo à vácuo (pressão negativa).",
+        "Não há indicação do uso de antibiótico terapêutico na forma não complicada da doença.",
+        "No doente jovem, com menos de 40 anos, a retossigmoidectomia eletiva deve ser indicada de rotina após o primeiro episódio."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 explora o conhecimento sobre as diretrizes atuais no manejo da diverticulite aguda, um tema com significativas mudanças nas recomendações dos últimos anos.</p><p><strong>A resposta correta é D - Não há indicação do uso de antibiótico terapêutico na forma não complicada da doença.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Na presença de coleção pélvica, o tratamento preconizado é a retossigmoidectomia com anastomose primária:</strong> Incorreta. Coleções pequenas podem ser manejadas conservadoramente. A ressecção eletiva com anastomose primária é reservada para casos crônicos ou após resolução da complicação aguda.</p><p><strong>B) Na presença de peritonite fecal, o tratamento preconizado é a retossigmoidectomia com anastomose primária e colostomia de proteção:</strong> Incorreta. Na peritonite fecal, realiza-se Hartmann (ressecção com fechamento do coto retal e colostomia). A anastomose primária está contraindicada em ambiente séptico.</p><p><strong>C) Na presença de peritonite purulenta, deve-se realizar peritoniostomia com curativo à vácuo (pressão negativa):</strong> Incorreta. O tratamento da peritonite purulenta é cirúrgico (ressecção com ou sem anastomose) + lavagem copious, não peritoniostomia.</p><p><strong>D) Não há indicação do uso de antibiótico terapêutico na forma não complicada da doença:</strong> CORRETA. Esta é uma mudança importante! Estudos recentes (2019-2024) demonstram que a diverticulite não complicada pode ser manejada sem antibióticos, com resolução espontânea. A tendência mundial é para uso mais restrito.</p><p><strong>E) No doente jovem, com menos de 40 anos, a retossigmoidectomia eletiva deve ser indicada de rotina após o primeiro episódio:</strong> Incorreta. Não há indicação de ressecção eletiva apenas por idade. O cálculo baseia-se na recorrência e severidade dos sintomas.</p><p>Esta questão reflete a evolução na conduta da diverticulite: antibioticoterapia seletiva, menor cirúrgia de emergência e abordagem mais conservadora em casos não complicados.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Qual a afirmação mais adequada relacionada aos nódulos hepáticos?",
+      "alternativas": [
+        "Hiperplasia nodular focal apresenta alto risco de degeneração maligna.",
+        "Adenoma tem risco aumentado de sangramento com o uso de contraceptivos orais.",
+        "Hemangiomas apresentam risco elevado de rotura.",
+        "Adenoma é o mais prevalente dos nódulos.",
+        "Hemangiomas, geralmente são lesões múltiplas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia o conhecimento sobre as principais lesões hepáticas focais benignas, suas características epidemiológicas e comportamentais clínicas.</p><p><strong>A resposta correta é B - Adenoma tem risco aumentado de sangramento com o uso de contraceptivos orais.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Hiperplasia nodular focal apresenta alto risco de degeneração maligna:</strong> Incorreta. A hiperplasia nodular focal (HNF) é benigna e NÃO apresenta risco de malignização. É a segunda lesão benigna mais comum, após o hemangioma.</p><p><strong>B) Adenoma tem risco aumentado de sangramento com o uso de contraceptivos orais:</strong> CORRETA. Os adenomas hepáticos (hepatomas benignos) têm clara correlação com uso de anticoncepcionais orais. O risco de rotura e sangramento aumenta significativamente com hormonioterapia exógena, especialmente em lesões >5cm.</p><p><strong>C) Hemangiomas apresentam risco elevado de rotura:</strong> Incorreta. Hemangiomas têm BAIXO risco de rotura. O risco só aumenta significativamente em lesões gigantes (>10cm), representen ainda assim < 3% dos casos.</p><p><strong>D) Adenoma é o mais prevalente dos nódulos:</strong> Incorreta. O hemangioma é a LESÃO FOCAL BENIGNA mais prevalente, presente em 1-5% da população geral. O adenoma é muito mais raro.</p><p><strong>E) Hemangiomas, geralmente são lesões múltiplas:</strong> Incorreta. A grande maioria dos hemangiomas (90%) são ÚNICOS. Lesões múltiplas são raras e podem sugerir hemangiomatose ou outras síndromes genéticas.</p><p>O foco desta questão está na relação entre adenoma hepático e hormonal, fundamental para estratificação de risco e acompanhamento. O risco de sangramento dos adenomas pode alcançar 25% em pacientes que usam anticoncepcionais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos",
+        "ClinicaMedica_Hepatologia_TumoresHepaticos_TumoresHepaticosBenignos"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Mulher, 43 anos de idade, procurou o Serviço de Emergência devido a dor na região superior do abdome e vômitos há 1 dia. Negava febre. Ao exame clínico: Bom estado geral, desidratada, IMC: 36kg/m² Tórax sem alterações. Abdome: flácido, doloroso à palpação profunda, sem irritação peritoneal. Exames laboratoriais: Hb: 13,4 g/dL; Ht: 40%; Leucócitos: 13.456/mm³; PCR: 12 mg/L; amilase 1300 U/L; lipase: 2100 U/L; enzimas hepáticas sem alterações. Ultrassonografia de abdome: litíase biliar, sem distensão e sem espessamento da vesícula. Via biliar sem dilatação. Pâncreas de difícil caracterização devido a interposição gasosa. Hoje, está com 2 dias de internação e com controle da dor abdominal e boa aceitação de dieta via oral. Qual é o próximo passo na condução do caso?",
+      "alternativas": [
+        "Tomografia de abdome de controle.",
+        "Colangiorressonância.",
+        "Ultrassonografia endoscópica.",
+        "Colangiografia endoscópica.",
+        "Colecistectomia."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 apresenta um caso clínico de pancreatite aguda biliar e avalia o conhecimento sobre timing cirúrgico após resolução dos sintomas agudos.</p><p><strong>A resposta correta é E - Colecistectomia.</strong></p><p>Analisando o caso: Paciente com pancreatite aguda biliar, evoluindo bem após 2 dias de internação, com controle da dor e boa tolerância alimentar. O ultrassom confirmou litíase biliar.</p><p>Analisando as alternativas:</p><p><strong>A) Tomografia de abdome de controle:</strong> Desnecessária. O paciente está clinicamente melhor e não há indicação de novos exames de imagem se a evolução está favorável. Exames adicionais só aumentam custos e radiação.</p><p><strong>B) Colangiorressonância:</strong> Desnecessária. A via biliar estava sem dilatação no ultrassom inicial. Não há sinais de coledocolitíase que justifique este exame.</p><p><strong>C) Ultrassonografia endoscópica:</strong> Desnecessária. Não há indicação de investigação adicional de ducto biliar quando o paciente está assintomático e os exames iniciais não sugerem complicações.</p><p><strong>D) Colangiografia endoscópica:</strong> Desnecessária. Exame invasivo sem indicações no momento, pois não há evidência de obstrução biliar persistente ou coledocolitíase.</p><p><strong>E) Colecistectomia:</strong> CORRETA. A colecistectomia é o tratamento definitivo da coledocolitíase para prevenir recorrência da pancreatite. A cirurgia deve ser realizada durante a mesma internação ou nas primeiras 2-4 semanas para reduzir o risco de recorrência (que pode chegar a 30% sem a colecistectomia).</p><p>O racional baseia-se em diretrizes atualizadas: colecistectomia precoce previne recorrências e deve ser oferecida durante a internação inicial ou em follow-up próximo. O paciente já está preparado cirúrgicamente com melhoria clínica e tolerância alimentar.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Mulher, 21 anos de idade, foi trazida ao Serviço de emergência após queda da motocicleta em alta velocidade. Na admissão: A: Conversando. Saturação de oxigênio 94% B: Ausculta torácica sem alterações. Sem deformidades no tórax C: PA: 80x50mmHg; FC: 105bpm; FAST (focused assessment with sonography for trauma) positivo no espaço espleno renal e pelve. Diurese clara. D: Glasgow de 14. Confusa. Pupilas isofotorreagentes E: Deformidade importante de perna esquerda com ferimento corto contuso de 5 cm no terço distal. Qual é o esquema de antibiótico mais apropriado?",
+      "alternativas": [
+        "Ceftriaxone associado a metronidazol.",
+        "Gentamicina associada a clindamicina.",
+        "Ceftriaxone associado a clindamicina.",
+        "Gentamicina associada a metronidazol.",
+        "Cefuroxima."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia seu conhecimento sobre profilaxia antibiótica em trauma com contaminação fecal, uma situação crítica em medicina de emergência.</p><p>A paciente é uma jovem vítima de trauma de alta energia com fratura exposta de perna. Os achados clínicos são preocupantes: choque hipovolêmico (PA 80x50, FC 105), FAST positivo indicando hemoperitoneu, e fratura exposta com contaminação significativa. A presença de urina clara sugere integridade do trato urinário, mas não elimina o risco de contaminação fecal.</p><p><strong>A resposta correta é C - Ceftriaxone associado a clindamicina.</strong> Esta combinação cobre eficientemente Gram negativos (ceftriaxone) e anaeróbios (clindamicina), principais patógenos em contaminação fecal de fraturas expostas.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>• <strong>A) Ceftriaxone + metronidazol:</strong> O metronidazol tem espectro mais restrito para anaeróbios e menor penetração óssea comparada à clindamicina.</p><p>• <strong>B) Gentamicina + clindamicina:</strong> A gentamicina alone não cobre bem enterococcus e tem baixa penetração óssea, sendo mais nefrotóxica que ceftriaxone.</p><p>• <strong>D) Gentamicina + metronidazol:</strong> Combinação inadequada para cobertura de Gram positivos e Enterobacteriaceae.</p><p>• <strong>E) Cefuroxima:</strong> Monoterapia inadequada paraanaeróbios e enterococcus, fundamental em contaminação fecal.</p><p>Portanto, a alternativa C oferece a melhor cobertura antimicrobiana para o cenário traumático com possível contaminação fecal.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_PolitraumaOrtopedico",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Homem, 79 anos de idade, é admitido no Serviço de Emergência devido a confusão e sonolência há 2 dias. Acompanhante refere queda da própria altura há 10 dias. Faz uso de marevan 5mg dia (controle regular de INR). Ao exame clínico: Sonolento, hematoma na região frontal. Glasgow: 12. Pupilas isofotorreagentes. Submetido a tomografia de crânio. Qual é a imagem compatível com o quadro clínico?",
+      "alternativas": [
+        "Ver imagem",
+        "Ver imagem",
+        "Ver imagem",
+        "Ver imagem",
+        "Ver imagem"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da HAOC 2021 avalia a capacidade de correlacionar dados clínicos com achados radiológicos específicos em pacientes anticoagulados pós-trauma.</p><p>O paciente é um idoso com trauma craniano leve (queda da própria altura) há 10 dias, atualmente com alterações neurológicas (confusão, queda de Glasgow para 12). O uso crônico de warfarina com controle regular de INR é fundamental - a anticoagulação aumenta significativamente o risco de hemorragias intracranianas, mesmo com traumas menores.</p><p><strong>A resposta é A</strong> - esta opção deve corresponder ao tipo de hematoma compatível com a apresentação clínica, provavelmente um hematoma subdural agudo ou subagudo em paciente anticoagulado.</p><p><strong>Raciocínio clínico:</strong> Hematomas subdurais em pacientes anticoagulados tendem a ser mais extensos e podem apresentar características específicas como hiperdensidade aguda ou densidade mista (sangue fresco + metabolizado). O sangramento pode progredir lentamente, explicando por que o quadro neurológico se desenvolveu gradualmente após o trauma.</p><p>As demais alternativas provavelmente representariam outras lesões (como hematoma epidural, hemorragias intracerebrais, ou outros achados radiológicos) que não se correlacionam adequadamente com o quadro clínico apresentado ou as características típicas de hematoma em paciente anticoagulado.</p><p>Esta questão enfatiza a importância da avaliação neurológica cuidadosa em pacientes anticoagulados, mesmo com traumas aparentemente menores.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico_1",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Homem, 28 anos de idade, refere ter notado aumento do testículo esquerdo após jogo de futebol. Nega febre e sem alterações para urinar. Apresenta vida sexual ativa com parceira fixa. Tem desejo de ter filhos ainda. Ao exame clínico: Bom estado geral. Tórax sem alterações. Abdome: indolor, sem massas. Ausência de hérnia inguinal e sem linfonodomegalia. Escroto: Testículo esquerdo com nódulo de 2,5cm. Testículo direito sem alterações. Submetido a ultrassonografia do escroto que evidenciou: nódulo hipoecoico de 2,5 cm no testículo esquerdo, não homogêneo, com áreas císticas, mal definidas e calcificações. Exames laboratoriais: bHCG: aumentado; alfa feto proteína: aumentado; DHL normal. Realizada tomografia de abdome, pelve e tórax, sem alterações. Qual é a conduta mais adequada?",
+      "alternativas": [
+        "Orquiectomia via escrotal.",
+        "Biópsia com agulha grossa.",
+        "Punção com agulha fina.",
+        "Orquiectomia por inguinotomia.",
+        "Biópsia excisional via escrotal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia a conduta terapêutica adequada para tumores testiculares em pacientes jovens, com foco na técnica cirúrgica mais apropriada.</p><p>O paciente é um homem jovem com nódulo testicular fixo de 2,5 cm. Os marcadores tumorais são preocupantes: bHCG e alfa-feto protein aumentados, com DHL normal. Este perfil laboratorial é altamente sugestivo de tumor germinativo não-seminomatoso (possivelmente coriocarcinoma ou carcinoma embrionário). A ultrassonografia confirma nódulo hipoecoico com características malignas (calcificações, áreas císticas).</p><p><strong>A resposta correta é D - Orquiectomia por inguinotomia.</strong> Esta é a técnica padrão ouro para tumores testiculares, permitindo controle vascular e retirada completa do testículo sem contaminação do trajeto inguinal.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>A) Orquiectomia via escrotal:</strong> Técnica inadequada por risco de contaminação do trajeto escrotal e possível disseminação tumoral.</p><p>• <strong>B) Biópsia com agulha grossa:</strong> Contraindicada devido ao risco de disseminacão tumoral e porque já temos achados suficientes para diagnóstico.</p><p>• <strong>C) Punção com agulha fina:</strong> Insuficiente para diagnóstico de certeza em massa testicular.</p><p>• <strong>E) Biópsia excisional via escrotal:</strong> Mesma contraindicação da orquiectomia escrotal.</p><p>A abordagem por inguinotomia permite controle vascular temprano, minimizando manipulação tumoral desnecessária e risco de implantação metastática.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasTesticulares",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Mulher, 39 anos de idade, foi submetida a biópsia excisional de lesão pigmentada na coxa esquerda. O anatomopatológico evidenciou tratar-se de melanoma in situ. Qual é a melhor conduta?",
+      "alternativas": [
+        "Observação clínica.",
+        "Ampliação de margem de 0,5 cm.",
+        "Ampliação de margem de 1,5 cm.",
+        "Ampliação de margem de 0,5 cm e pesquisa de linfonodo sentinela.",
+        "Ampliação de margem de 1,5 cm e pesquisa de linfonodo sentinela."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da HAOC 2021 avalia o conhecimento sobre margens de segurança adequadas para melanoma in situ, um aspecto fundamental em dermatologia oncológica.</p><p>O melanoma in situ é uma neoplasia que ainda não invasoriu a derme, apresentando-se como uma lesão pigmentada com bordas irregulares e crescimento radial. A biópsia excisional foi realizada e confirmou o diagnóstico de melanoma in situ sem características de invasão.</p><p><strong>A resposta correta é B - Ampliação de margem de 0,5 cm.</strong> Esta é a margem padrão gold standard para melanoma in situ segundo as diretrizes atuais.</p><p><strong>Explicação das margens:</strong></p><p>• <strong>0,5 cm (opção B):</strong> Margem adequada para melanoma in situ, proporcionando segurança oncológica sem mutilação excessiva.</p><p>• <strong>1,5 cm (opções C e E):</strong> Margem excessiva para melanoma in situ. Esta margem está reservada para melanomas invasores com profundidade superior a 2mm (estadio IB ou superior).</p><p>• <strong>Observação clínica (A):</strong> Inadequada para melanoma insitu confirmado, que requer excision com margens.</p><p>• <strong>Marcas com pesquisa de linfonodo sentinela (D e E):</strong> Desnecessária para melanoma in situ, já que não há invasão e, portanto, não há risco de metástase linfonodal.</p><p>A adequada ampliação de margem é crucial para prevenir recorrência local e garantir cura, sendo 0,5 cm a margem ideal para este estadio.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_NeoplasiasCutaneas",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_CirurgiaDermatologica"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Mulher, 56 anos de idade, refere dor na região distal da perna direita, logo acima do maléolo medial, acompanhada de hiperemia e nódulo. Refere dislipidemia e diabete melito. Ao exame clínico: Bom estado. Tórax e abdome sem alterações. Membros inferiores com perfusão preservada. Pulsos amplos. Ausência de edema e sem dor à palpação da panturrilha. Dor à palpação na perna direita logo acima do maléolo medial, local de hiperemia de cerca de 3 cm com área endurada. Realizado exame de ultrassonografia doppler venosa do membro inferior direito: presença de trombo de 2 cm na safena magna, logo acima do tornozelo; ausência de trombose de veias femoral e poplítea. Qual é o tratamento mais adequado?",
+      "alternativas": [
+        "Uso de anti-inflamatório não esteroidal.",
+        "Enoxaparina em dose profilática.",
+        "Enoxaparina em dose terapêutica.",
+        "Inibidor do fator Xa.",
+        "Clopidogrel."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HAOC 2021 avalia o diagnóstico e manejo de trombose venosa superficial em pacientes diabéticos, tema frequente em medicina interna.</p><p>A paciente apresenta dor e hiperemia na região inframaleolar medial, com nódulo endurado. Os fatores de risco são óbvios: diabetes mellitus e dislipidemia, condições que favorecem alterações tromboembólicas e inflamatórias. A ultrassonografia confirmou trombo de 2 cm na safena magna, localizado apenas acima do tornozelo.</p><p><strong>A resposta correta é A - Uso de anti-inflamatório não esteroidal.</strong></p><p><strong>Raciocínio clínico:</strong> A trombose venosa superficial da safena magna distal (abaixo do joelho) tem comportamento diferente de trombose proximal. Estas tromboses distais superficialmente costumam ser autolimitadas e com baixo risco de embolia pulmonar.</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p>• <strong>B) Enoxaparina profilática:</strong> Dose insuficiente para trombose estabelecida.</p><p>• <strong>C) Enoxaparina terapêutica:</strong> Exagerada para trombose superficial distal.</p><p>• <strong>D) Inibidor do fator Xa:</strong> Alternativa, mas AINE são mais apropriadas e convenientes para este cenário.</p><p>• <strong>E) Clopidogrel:</strong> Antiagregante inadequado para trombose venosa.</p><p>O tratamento com AINE oferece efeito anti-inflamatório e anticoagulante leve, suficiente para tromboses superficiais distais, além de proporcionar alívio sintomático. A conduta expectante com AINE é padrão para este tipo de trombose.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_1",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "HAOC2021R1",
+        "HAOC",
+        "R1",
+        "SP",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762723090808-49"
+    }
+  ]
+}

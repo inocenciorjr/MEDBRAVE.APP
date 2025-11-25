@@ -1,7 +1,6 @@
 // Testes unitários para MediaService
-// Implementação inicial - esqueleto
+// Implementação com Supabase
 import { MediaService } from '../services/mediaService';
-import { firestore } from '../../../config/firebaseAdmin';
 import { MediaType, MediaStatus } from '../types';
 
 const service = new MediaService();
@@ -28,12 +27,11 @@ describe('MediaService (real)', () => {
   let folderId: string;
 
   afterAll(async () => {
+    // Cleanup será feito pelo SupabaseMediaService
     if (fileId) {
-      await firestore.collection('mediaFiles').doc(fileId).delete();
+      await service.deleteMedia(fileId);
     }
-    if (folderId) {
-      await firestore.collection('mediaFolders').doc(folderId).delete();
-    }
+    // Folders cleanup seria implementado se necessário
   });
 
   it('deve criar uma pasta de mídia', async () => {
@@ -46,7 +44,7 @@ describe('MediaService (real)', () => {
   it('deve listar pastas de mídia', async () => {
     const folders = await service.listMediaFolders({ userId: TEST_USER });
     expect(Array.isArray(folders)).toBe(true);
-    expect(folders.find(f => f.id === folderId)).toBeTruthy();
+    expect(folders.find((f) => f.id === folderId)).toBeTruthy();
   });
 
   it('deve fazer upload de mídia', async () => {
@@ -64,7 +62,9 @@ describe('MediaService (real)', () => {
   });
 
   it('deve atualizar mídia', async () => {
-    const updated = await service.updateMedia(fileId, { caption: 'Nova legenda' });
+    const updated = await service.updateMedia(fileId, {
+      caption: 'Nova legenda',
+    });
     expect(updated).not.toBeNull();
     expect(updated!.caption).toBe('Nova legenda');
   });
@@ -72,7 +72,7 @@ describe('MediaService (real)', () => {
   it('deve listar mídias', async () => {
     const files = await service.listMedia({ userId: TEST_USER });
     expect(Array.isArray(files)).toBe(true);
-    expect(files.find(f => f.id === fileId)).toBeTruthy();
+    expect(files.find((f) => f.id === fileId)).toBeTruthy();
   });
 
   it('deve deletar mídia', async () => {

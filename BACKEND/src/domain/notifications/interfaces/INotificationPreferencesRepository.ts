@@ -7,12 +7,16 @@ export interface INotificationPreferencesRepository {
   /**
    * Cria ou atualiza as preferências de um usuário
    */
-  savePreferences(preferences: NotificationPreferences): Promise<NotificationPreferences>;
+  savePreferences(
+    preferences: NotificationPreferences,
+  ): Promise<NotificationPreferences>;
 
   /**
    * Obtém as preferências de um usuário
    */
-  getPreferencesByUserId(userId: string): Promise<NotificationPreferences | null>;
+  getPreferencesByUserId(
+    userId: string,
+  ): Promise<NotificationPreferences | null>;
 
   /**
    * Exclui as preferências de um usuário

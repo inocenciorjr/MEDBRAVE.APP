@@ -6,50 +6,53 @@ import { GetUserFlashcardsUseCase } from '../../../domain/studyTools/flashcards/
 
 export class FlashcardController {
   async create(request: Request, response: Response): Promise<Response> {
-    const { userId } = request;
-    const { deckId, frontContent, backContent, personalNotes, tags, mediaUrls, metadata } =
-      request.body;
+    
+    const { deckId, frontContent, backContent, tags } = request.body;
 
     const createFlashcard = container.resolve(CreateFlashcardUseCase);
     const flashcard = await createFlashcard.execute({
-      userId,
-      deckId,
-      frontContent,
-      backContent,
-      personalNotes,
+      deck_id: deckId,
+      front_content: frontContent,
+      back_content: backContent,
       tags,
-      mediaUrls,
-      metadata,
     });
 
     return response.status(201).json(flashcard);
   }
 
   async review(request: Request, response: Response): Promise<Response> {
-    const { userId } = request;
+    
     const { flashcardId } = request.params;
     const { reviewQuality } = request.body;
 
     const reviewFlashcard = container.resolve(RecordFlashcardReviewUseCase);
-    const flashcard = await reviewFlashcard.execute(flashcardId, userId, reviewQuality);
+    const flashcard = await reviewFlashcard.execute(
+      flashcardId,
+      request.userId,
+      reviewQuality,
+    );
 
     return response.json(flashcard);
   }
 
   async getForReview(request: Request, response: Response): Promise<Response> {
-    const { userId } = request;
+    
     const { deckId, page = 1, limit = 10 } = request.query;
 
     const getUserFlashcards = container.resolve(GetUserFlashcardsUseCase);
     const filters = {
-      deckId: deckId as string | undefined,
-      readyForReview: true,
+      deck_id: deckId as string | undefined,
+      ready_for_review: true,
     };
     const pagination = {
       page: Number(page),
       limit: Number(limit),
     };
-    const flashcards = await getUserFlashcards.execute(userId, filters, pagination);
+    const flashcards = await getUserFlashcards.execute(
+      request.userId,
+      filters,
+      pagination,
+    );
 
     return response.json(flashcards);
   }

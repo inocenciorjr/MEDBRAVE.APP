@@ -23,10 +23,13 @@ export class PlanController {
    * @param req Objeto de requisição
    * @throws {AppError} Erro se o usuário não for administrador
    */
-  private ensureAdmin(req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }): void {
-    const role = req.user?.role;
+  private ensureAdmin(req: Request): void {
+    const role = (req.user?.user_role || '').toUpperCase();
     if (role !== 'ADMIN') {
-      throw new AppError(403, 'Acesso negado. Apenas administradores podem acessar este recurso.');
+      throw new AppError(
+        403,
+        'Acesso negado. Apenas administradores podem acessar este recurso.',
+      );
     }
   }
 
@@ -36,7 +39,11 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  createPlan = async (req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }, res: Response, next: NextFunction): Promise<void> => {
+  createPlan = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -53,7 +60,10 @@ export class PlanController {
         metadata: req.body.metadata,
       };
 
-      const newPlan = await this.planService.createPlan(planData, req.body.planId);
+      const newPlan = await this.planService.createPlan(
+        planData,
+        req.body.planId,
+      );
 
       res.status(201).json({
         success: true,
@@ -70,7 +80,11 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  getPlanById = async (req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }, res: Response, next: NextFunction): Promise<void> => {
+  getPlanById = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const planId = req.params.planId;
       const plan = await this.planService.getPlanById(planId);
@@ -102,7 +116,11 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listPublicPlans = async (_req: Request, res: Response, next: NextFunction): Promise<void> => {
+  listPublicPlans = async (
+    _req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const plans = await this.planService.getActivePublicPlans();
 
@@ -121,7 +139,11 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listAllPlans = async (req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }, res: Response, next: NextFunction): Promise<void> => {
+  listAllPlans = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -155,7 +177,11 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  updatePlan = async (req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }, res: Response, next: NextFunction): Promise<void> => {
+  updatePlan = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -188,9 +214,13 @@ export class PlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  deletePlan = async (req: Request & { user?: { id: string; role: string; email: string; emailVerified: boolean } }, res: Response, next: NextFunction): Promise<void> => {
+  deletePlan = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
-      this.ensureAdmin(req);
+      this.ensureAdmin(req as any);
 
       const planId = req.params.planId;
       await this.planService.deletePlan(planId);

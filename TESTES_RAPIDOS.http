@@ -1,0 +1,174 @@
+### TESTES DE DESENVOLVIMENTO - Sistema de Revisões
+### ⚠️ Substitua {{token}} pelo seu token de autenticação
+### ⚠️ Funciona apenas em desenvolvimento (NODE_ENV !== 'production')
+
+@baseUrl = http://localhost:5000/api/unified-reviews/dev
+@token = SEU_TOKEN_AQUI
+
+### ========================================
+### CENÁRIO 1: Setup Básico
+### ========================================
+
+### 1.1 - Criar 50 cards de teste
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 50
+}
+
+### 1.2 - Simular 45 dias de atraso
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 45,
+  "count": 50
+}
+
+### ========================================
+### CENÁRIO 2: Testar BacklogStatusCard
+### ========================================
+
+### 2.1 - Criar 150 cards (backlog severo)
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 150
+}
+
+### 2.2 - Simular 30 dias de atraso
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 30,
+  "count": 150
+}
+
+### Agora:
+### 1. Configure modo Smart (limite 50/dia) no wizard
+### 2. Acesse /revisoes
+### 3. Veja BacklogStatusCard com status SEVERE
+
+### ========================================
+### CENÁRIO 3: Testar Modal de Reativação
+### ========================================
+
+### 3.1 - Criar 70 cards
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 70
+}
+
+### 3.2 - Simular 60 dias de atraso
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 60,
+  "count": 70
+}
+
+### Agora:
+### 1. Desative o sistema no wizard
+### 2. Reative o sistema
+### 3. Veja OverdueReviewsModal aparecer
+
+### ========================================
+### CENÁRIO 4: Diferentes Níveis de Backlog
+### ========================================
+
+### 4.1 - WARNING (ratio 1.5)
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 75
+}
+
+###
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 15,
+  "count": 75
+}
+
+### 4.2 - CRITICAL (ratio 2.5)
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 125
+}
+
+###
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 25,
+  "count": 125
+}
+
+### 4.3 - SEVERE (ratio 4.0)
+POST {{baseUrl}}/create-test-cards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "count": 200
+}
+
+###
+POST {{baseUrl}}/simulate-overdue
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "days_overdue": 40,
+  "count": 200
+}
+
+### ========================================
+### LIMPEZA
+### ========================================
+
+### Resetar datas para hoje
+POST {{baseUrl}}/reset-dates
+Authorization: Bearer {{token}}
+
+### Deletar todos os cards de teste
+DELETE {{baseUrl}}/delete-test-cards
+Authorization: Bearer {{token}}
+
+### ========================================
+### VERIFICAÇÃO
+### ========================================
+
+### Ver estatísticas de revisões atrasadas
+GET http://localhost:5000/api/unified-reviews/bulk/overdue-stats
+Authorization: Bearer {{token}}
+
+### Ver status do backlog (modo smart)
+GET http://localhost:5000/api/unified-reviews/backlog-status
+Authorization: Bearer {{token}}
+
+### Ver revisões pendentes
+GET http://localhost:5000/api/unified-reviews/due?limit=100
+Authorization: Bearer {{token}}

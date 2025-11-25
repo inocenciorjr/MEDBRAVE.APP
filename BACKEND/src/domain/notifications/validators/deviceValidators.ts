@@ -23,7 +23,7 @@ export const updateDeviceTokenSchema = z
     fcmToken: z.string().optional(),
     pushToken: z.string().optional(),
   })
-  .refine(data => data.fcmToken || data.pushToken, {
+  .refine((data) => data.fcmToken || data.pushToken, {
     message: 'Pelo menos um token (FCM ou Push) deve ser fornecido',
     path: ['token'],
   });
@@ -43,7 +43,7 @@ export function validateRegisterDevice(data: any): {
     if (error instanceof z.ZodError) {
       const validationErrors: Record<string, string[]> = {};
 
-      error.errors.forEach(err => {
+      error.errors.forEach((err) => {
         const path = err.path.join('.');
         if (!validationErrors[path]) {
           validationErrors[path] = [];
@@ -80,7 +80,7 @@ export function validateUpdateDevice(data: any): {
     if (error instanceof z.ZodError) {
       const validationErrors: Record<string, string[]> = {};
 
-      error.errors.forEach(err => {
+      error.errors.forEach((err) => {
         const path = err.path.join('.');
         if (!validationErrors[path]) {
           validationErrors[path] = [];
@@ -117,7 +117,7 @@ export function validateUpdateDeviceToken(data: any): {
     if (error instanceof z.ZodError) {
       const validationErrors: Record<string, string[]> = {};
 
-      error.errors.forEach(err => {
+      error.errors.forEach((err) => {
         const path = err.path.join('.');
         if (!validationErrors[path]) {
           validationErrors[path] = [];

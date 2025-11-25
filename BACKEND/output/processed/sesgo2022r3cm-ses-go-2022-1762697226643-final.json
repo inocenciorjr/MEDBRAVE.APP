@@ -1,0 +1,1609 @@
+{
+  "metadata": {
+    "examName": "SESGO2022R3CM (SES-GO 2022)",
+    "examYear": 2022,
+    "url": "source://573",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T14:07:06.644Z",
+    "jobId": "batch-1762686305853-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "60120515-34c2-45e3-ab57-51fa8d629533"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Qual deve ser a prescrição para prevenir fenômenos tromboembólicos em um homem de 90 anos com fibrilação atrial permanente, 75 kg de peso e creatinina sérica de 1.4 mg/dl?",
+      "alternativas": [
+        "Apixabana 5 mg duas vezes ao dia.",
+        "Dabigatrana 150 mg duas vezes ao dia.",
+        "Rivaroxabana 20 mg uma vez ao dia.",
+        "Edoxabana 60 mg uma vez ao dia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre anticoagulação em pacientes com fibrilação atrial, especificamente nos critérios para seleção de dose e ajuste renal dos novos anticoagulantes orais (NOACs).</p><p><strong>A resposta correta é A - Apixabana 5 mg duas vezes ao dia.</strong></p><p>Vamos analisar os critérios de ajuste para cada NOAC:</p><p><strong>Apixabana:</strong> Dose padrão é 5mg 2x/dia, mas deve ser reduzida para 2,5mg 2x/dia se houver pelo menos 2 dos seguintes critérios: idade ≥80 anos, peso ≤60kg ou creatinina ≥1,5mg/dl. Nosso paciente tem 90 anos e creatinina 1,4mg/dl. Apenas 1 critério presente (idade), portanto pode usar dose plena.</p><p><strong>Dabigatrana:</strong> Dose de 150mg 2x/dia deve ser reduzida para 75mg 2x/dia se clearance de creatinina 15-30ml/min. Precisamos calcular: homens, 75kg, 90 anos, creatinina 1,4. Clearance estimado: (140-90) × 75 / (72 × 1,4) = 2,5ml/min (muito baixo para dose plena). Errada.</p><p><strong>Rivaroxabana:</strong> 20mg/dia deve ser reduzida para 15mg/dia se clearance 15-50ml/min. Nossa estimativa mostra clearance incompatível com dose plena. Errada.</p><p><strong>Edoxabana:</strong> 60mg/dia (ou 30mg se clearance 15-50ml/min). Mesmo problema de clearance baixo. Errada.</p><p>A apixabana é a única que permite dose plena com as características deste paciente, fazendo dela a escolha mais apropriada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "A ressincronização cardíaca em pacientes sintomáticos e com tratamento otimizado para insuficiência cardíaca com fração de ejeção reduzida tem melhor indicação em qual das situações?",
+      "alternativas": [
+        "Bloqueio de ramo direito com QRS > 120 mms.",
+        "Bloqueio de ramo direito com QRS > 130 mms.",
+        "Bloqueio de ramo esquerdo com QRS > 120 mms.",
+        "Bloqueio de ramo esquerdo com QRS > 150 mms."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 aborda as indicações precisas para terapia de ressincronização cardíaca (TRC) em pacientes com insuficiência cardíaca, focando nos critérios eletrocardiográficos específicos.</p><p><strong>A resposta correta é D - Bloqueio de ramo esquerdo com QRS > 150 mms.</strong></p><p>Vamos analisar as diretrizes atuais para TRC:</p><p><strong>Critérios fundamentais:</strong> A TRC é mais eficaz em pacientes com bloqueio de ramo esquerdo (BRE) comparado ao bloqueio de ramo direito (BRD), devido ao padrão de ativação mais desfavorable no BRE.</p><p><strong>Para BRE:</strong> O benefício é maior quando QRS ≥150ms. Estudos como MADIT-CRT e RAFT demonstraram que apenas no subgrupo com QRS ≥150ms houve redução significativa de mortalidade. Para QRS 120-149ms, o benefício é incerto ou ausente.</p><p><strong>Para BRD:</strong> Mesmo com QRS prolongado, o benefício da TRC é limitado. As diretrizes atuais recomendam TRC apenas em casos muito específicos de BRD com QRS muito prolongado (>150ms), e ainda assim com benefício incerto.</p><p>Analisando as alternativas:</p><p>A) BRD >120ms: QRS insuficiente, tipo de bloqueio ineficiente para TRC.</p><p>B) BRD >130ms: Tipo de bloqueio inadequado.</p><p>C) BRE >120ms: Duração insuficiente para benefício consistente.</p><p>D) BRE >150ms: Combinação ideal - tipo de bloqueio responsivo + duração adequada.</p><p>A TRC requer tanto a morfologia adequada (BRE) quanto a duração suficiente (≥150ms) para otimizar a ressincronização ventricular.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Qual é a arritmia cardíaca sustentada mais comum?",
+      "alternativas": [
+        "Taquicardia por reentrada nodal.",
+        "Taquicardia ventricular sustentada.",
+        "Fibrilação atrial.",
+        "Fibrilação ventricular."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 testa seu conhecimento sobre a epidemiologia das arritmias sustentadas, pedindo a identificação da arritmia sustentada mais comum na população geral.</p><p><strong>A resposta correta é C - Fibrilação atrial.</strong></p><p>Vamos analisar a frequência de cada arritmia sustentada:</p><p><strong>Fibrilação atrial (FA):</strong> É a arritmia sustentada mais comum, com prevalência de 1-2% na população geral, aumentando para 10-15% após os 80 anos. A FA é responsáveis por aproximadamente 30% de todas as hospitalizações por arritmias.</p><p><strong>Taquicardia por reentrada nodal (TRN):</strong> É a taquicardia supraventricular sustentada mais comum, mas sua prevalência é muito menor que a FA (cerca de 0,1-0,3% da população). Geralmente aparece em adultos jovens, sem cardiopatia estrutural.</p><p><strong>Taquicardia ventricular sustentada (TVS):</strong> Muito menos comum na população geral. Ocorre principalmente em pacientes com cardiopatia estrutural (post-infarto, miocardiopatia). Na ausência de doença cardíaca, é rara.</p><p><strong>Fibrilação ventricular (FV):</strong> A arritmia mais grave, mas também a menos comum como apresentação crônica. É classicamente uma complicação aguda do infarto agudo do miocárdio, não uma arritmia sustentada crônica.</p><p>A diferença de prevalência é impressionante: enquanto a FA afeta milhões de brasileiros (cerca de 1,5 milhão de pessoas), a TVS e FV ocorrem em ordens de magnitude menores na população geral. Esta questão é frequentemente cobrado em provas por testar a epidemiologia básica das arritmias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Leia o caso clínico a seguir. Paciente octogenário e portador de doença renal crônica, pós-operatório tardio de troca de valva mitral e com atual estenose aórtica importante e sintomática. Nesse caso, qual a conduta mais apropriada?",
+      "alternativas": [
+        "Troca valvar aórtica por cateter.",
+        "Troca valvar aórtica por prótese biológica.",
+        "Tratamento clínico.",
+        "Troca valvar aórtica por prótese metálica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 apresenta um caso complexo que testa sua capacidade de indicação de procedimentos em pacientes de alto risco cirúrgico, especificamente para estenose aórtica severa sintomática.</p><p><strong>A resposta correta é A - Troca valvar aórtica por cateter (TAVI).</strong></p><p>Vamos analisar o perfil de risco deste paciente:</p><p><strong>Fatores de risco identificados:</strong> Idade avançada (octogenário), DRC (risco renal), cirurgia cardíaca prévia (troca valvar mitral), múltiplas comorbidades. O escore STS (Society of Thoracic Surgeons) para mortalidade estimada seria provavelmente >8%, colocando-o em risco cirúrgico proibitivo.</p><p><strong>TAVI vs Cirurgia convencional:</strong></p><p>A) TAVI: Procedimento minimamente invasivo, sem necessidade de circulação extracorpórea, menor trauma cirúrgico, recuperação mais rápida. Ideal para alto risco cirúrgico.</p><p>B) Prótese biológica convencional: Requer esternotomia, circulação extracorpórea, tempo de recuperação prolongado. Inadequado para este perfil de risco.</p><p>C) Tratamento clínico: Estenose aórtica severa sintomática tem mortalidade de 50% em 2 anos sem intervenção. É uma indicação classe I para correção.</p><p>D) Prótese metálica: Além do alto risco cirúrgico, exigiria anticoagulação, aumentando o risco de sangramento em octogenário.</p><p>As diretrizes da ESC 2021 e ACC/AHA 2020 são claras: TAVI é indicado em pacientes com risco cirúrgico alto ou proibitivo, especialmente em >75 anos. Este paciente preencheria todos os critérios para TAVI. A medicina baseada em evidências favorece claramente a intervenção percutânea neste cenário.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Leia o caso clínico a seguir. Paciente jovem com quadro de dor precordial 14 dias após infecção pelo coronavírus apresenta-se na emergência com supradesnivelamento difuso do segmento st, ritmo cardíaco regular com FC = 125 bpm e PA = 100x70 mmHg. Nesse caso, qual a hipótese diagnóstica e tratamento mais apropriado?",
+      "alternativas": [
+        "Infarto agudo do miocárdio com supra de ST - cateterismo cardíaco.",
+        "Miocardite - anti-inflamatórios não hormonais.",
+        "Pericardite - corticoide endovenoso.",
+        "Tromboembolismo pulmonar com comprometimento cardíaco - anticoagulação plena."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 aborda o diagnóstico diferencial crucial entre síndrome coronariana aguda e miocardite no contexto da pandemia de COVID-19, testando seu conhecimento sobre as apresentações atípicas pós-infecciosas.</p><p><strong>A resposta correta é B - Miocardite com tratamento por anti-inflamatórios não hormonais.</strong></p><p>Vamos analisar os elementos diagnósticos:</p><p><strong>Contexto temporal:</strong> Dor precordial 14 dias após infecção por COVID-19 é um timing clássico para miocardite pós-viral, não para síndrome coronariana aguda típica (que apareceria durante ou imediatamente após a infecção).</p><p><strong>Características do ECG:</strong> Supradesnivelamento difuso do segmento ST é típico de pericardite/miocardite, não de infarto (que teria supradesnivelamento regional, correspondendo a um território coronariário específico).</p><p><strong>Sinais vitais:</strong> PA estável (100x70) e FC 125bpm sugerem compensação hemodynamic, diferentes do choque cardiogênico esperado em infarto com supra ST extenso.</p><p><strong>Análise das alternativas:</p><p>A) IAM com supra ST: Timing incorreto, padrão de supra não compatível com território coronariário específico.</p><p>B) Miocardite: Timing pós-viral típico, padrão de supra difuso, quadro hemodinâmico preservado. AINEs são primeira linha para miocardite leve a moderada.</p><p>C) Pericardite: O quadro sugere miocardite mais que pericardite pura. Corticoide IV seria excessivo para pericardite sem derrame importante.</p><p>D) TEP com comprometimento cardíaco: TEP não causa supradesnivelamento difuso de ST, seria mais comum baixo voltagem ou sobrecarga de VD.</p><p>A miocardite pós-COVID é uma entidade reconhecidamente mais comum que as complicações tromboembólicas cardíacas. O tratamento com AINEs segue as diretrizes para miocardite viral leve.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Cardiomiopatias",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Cardiomiopatias",
+        "ClinicaMedica_Cardiologia_Cardiomiopatias_Miocardite"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Leia o caso clínico a seguir. Paciente de 27 anos, admitida no serviço de emergência devido a quadro de palpitações e tremores de extremidades, de início há três meses, porém com exacerbação nos últimos dias, associado a episódios de febre não medida. Ao exame físico, paciente agitada, com períodos de confusão mental, aumento de temperatura corporal (38,2 ºC) e tremores finos de extremidades. FC: 160 BPM (ECG: ritmo sinusal), PA: 155/60 mm Hg. Presença de bócio difuso, consistência fibroelástica. Olhos com exoftalmia bilateral, predomínio à esquerda. Feito diagnóstico de tempestade tireotóxica. Diante desse diagnóstico, qual deve ser a conduta?",
+      "alternativas": [
+        "Tratamento de suporte associado a solução saturada de iodeto de potássio, cinco gotas a cada seis horas, antes de iniciar droga antitireoidiana.",
+        "Tratamento de suporte associado a droga antitireoidiana. Preferir metimazol, por também inibir a conversão periférica de T4 para T3.",
+        "Iniciar terapia concomitante com hidrocortisona, dose de ataque de 300 mg seguida por 100 mg a cada oito horas, com o objetivo de tratar possível insuficiência adrenal associada e inibir a conversão periférica de T4 para T3.",
+        "Evitar o uso agudo de betabloqueador pelo risco de desencadear quadro de insuficiência cardíaca congestiva."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia o conhecimento sobre o tratamento da tempestade tireotóxica, uma complicação grave do hipertireoidismo que requer abordagem terapêutica imediata e multissetorial.</p><p><strong>A resposta correta é C - iniciar terapia com hidrocortisona.</strong></p><p>A tempestade tireotóxica é uma emergência endócrina caracterizada por descompensação aguda do hipertireoidismo, com manifestations sistêmicas severas. O caso apresentado mostra criterios diagnósticos claros: febre (38,2°C), taquicardia (160 BPM), agitação, confusão mental e exacerbação dos sintomas.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A está incorreta.</strong> Embora o iodeto de potássio bloqueie a liberação hormonal pelo efeito Wolff-Chaikoff, deve ser administrado APÓS o início das drogas antitireoidianas. A administração prévia pode causar exacerbação temporária da liberação hormonal (efeito Jod-Basedow).</p><p><strong>Alternativa B está incorreta.</strong> Na tempestade tireotóxica, o propiltiouracil (PTU) é preferido ao metimazol, pois além de inibir a síntese hormonal, bloqueia a conversão periférica de T4 para T3 - efeito que o metimazol não possui.</p><p><strong>Alternativa C está correta.</strong> A hidrocortisona tem papel fundamental no tratamento: reduz a conversão periférica de T4 para T3, oferece suporte hemodinâmico, trata possível insuficiência adrenal relativa (frequente na tempestade tireotóxica) e modula a resposta inflamatória sistêmica.</p><p><strong>Alternativa D está incorreta.</strong> Os betabloqueadores são essenciais no tratamento, não devem ser evitados. O propranolol é particularmente útil, pois além de controlar os sintomas adrenérgicos (taquicardia, tremores), também reduz a conversão de T4 para T3.</p><p><strong>Veredito final: Alternativa C é a conduta mais adequada, considerando o papel multifacetado dos corticosteroides na tempestade tireotóxica.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Tireotoxicose",
+        "ClinicaMedica_Endocrinologia_Tireoide_Tireotoxicose_CriseTireotoxica"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Leia o caso clínico a seguir. Paciente de 59 anos, pós-menopausa, procurou serviço de endocrinologia para avaliação de osteoporose. Negava fratura vertebral e/ou colo de fêmur, porém com antecedente familiar de fratura de fêmur (mãe). Após avaliação dos fatores de risco e da densitometria óssea, paciente classificada como, alto risco para fratura osteoporótica. De acordo com o Guideline de osteoporose da Endocrine Society, qual deve ser a conduta mais correta?",
+      "alternativas": [
+        "Evitar prescrever bifosfonatos orais, por não serem considerados como droga de primeira linha para redução do risco de fratura, em razão dos extensos efeitos colaterais.",
+        "Iniciar tratamento preferencialmente com denosumabe, por ter ótima tolerabilidade, com poucos efeitos adversos.",
+        "Prescrever calcitonina em spray nasal apenas se não houver tolerância a raloxifeno, bifosfonatos, estrógenos, denosumab, tibolona, abaloparatide ou teriparatide ou se essas terapias não forem consideradas apropriadas.",
+        "Iniciar tratamento com teriparatida por dois anos, seguido de drogas antirreabsortivas, por ser classificada como alto risco para fratura."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as recomendações terapêuticas para osteoporose em pacientes de alto risco, baseando-se nas diretrizes da Endocrine Society.</p><p><strong>A resposta correta é C - prescrever calcitonina em spray nasal apenas se não houver tolerância às outras terapias.</strong></p><p>A paciente apresenta fatores de risco significativos: pós-menopausa, antecedente familiar de fratura de fêmur e classificada como alto risco pela densitometria óssea. O histórico familiar é particularmente importante, pois aumenta substancialmente o risco de fraturas osteoporóticas.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A está incorreta.</strong> Bifosfonatos orais são considerados primeira linha no tratamento da osteoporose e têm eficácia comprovada na redução de fraturas vertebrais e não-vertebrais. Os efeitos colaterais, embora possam ocorrer, não contraindicam seu uso como primeira escolha.</p><p><strong>Alternativa B está incorreta.</strong> Embora o denosumabe tenha boa tolerabilidade, não é necessariamente a primeira escolha. A seleção terapêutica deve considerar fatores individuais como risco de fratura, função renal, preferências da paciente e custo-efetividade.</p><p><strong>Alternativa C está correta.</strong> A calcitonina em spray nasal é uma opção terapêutica, mas é reservada para casos onde há contraindicação, intolerância ou falha terapêutica com outras opções mais eficazes. Esta abordagem segue a lógica de escalonamento terapêutico recomendada pela Endocrine Society.</p><p><strong>Alternativa D está incorreta.</strong> A teriparatida é reservada para casos de osteoporose muito grave ou alto risco, mas não é necessária como primeira escolha em toda paciente de alto risco. Além disso, a sequência teriparatida seguida de antirreabsortivos não é protocolo padrão para todos os casos.</p><p><strong>Veredito final: A alternativa C representa a conduta mais apropriada, seguindo o algoritmo de tratamento escalonado da Endocrine Society.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral_Calcitonina"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Homem de 67 anos, acompanhado por endocrinologista por apresentar diagnóstico de obesidade (índice de massa corpórea: 31 k/m²) e diabetes mellitus complicado com síndrome nefrótica. Há seis meses, após aposentadoria, vem apresentando piora do controle do diabetes associado à diminuição da libido. De acordo com a endócrino society, para este caso sabe-se que:",
+      "alternativas": [
+        "medir/calcular testosterona livre seria recomendado nesse paciente em razão do diabetes, obesidade e síndrome nefrótica serem condições associadas com aumento da SHBG (globulina de ligação dos hormônios sexuais).",
+        "tratamento com testosterona estaria indicado com o objetivo de melhorar controle glicêmico.",
+        "terapia com testosterona pode melhorar síndrome de apneia do sono, quando presente nesses pacientes.",
+        "reposição de testosterona é contraindicada em homens com câncer de mama."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as indicações e contraindicações da terapia de reposição de testosterona, especificamente em pacientes com diabetes, obesidade e síndrome nefrótica, segundo as diretrizes da Endocrine Society.</p><p><strong>A resposta correta é D - reposição de testosterona é contraindicada em homens com câncer de mama.</strong></p><p>O paciente apresenta múltiplas comorbidades relevantes: diabetes mellitus, obesidade (IMC 31), síndrome nefrótica e piora do controle glicêmico pós-aposentadoria com diminuição da libido. Esses fatores levantam a hipótese de hipogonadismo, mas é fundamental conocer as indicações e contraindicações da terapia.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A está incorreta.</strong> Diabetes, obesidade e síndrome nefrótica são condições ASSOCIADAS com REDUÇÃO da SHBG, não aumento. O diabetes e a obesidade levam à resistência à insulina, que pode reduzir a produção hepática de SHBG. A síndrome nefrótica também pode estar associada à perda de proteínas, incluindo SHBG.</p><p><strong>Alternativa B está incorreta.</strong> A terapia com testosterona NÃO é indicada primariamente para melhorar o controle glicêmico. Embora possa haver alguns benefícios metabólicos, a indicação principal é para sintomas de hipogonadismo. Além disso, a evidência de melhoria significativa do controle glicêmico é limitada.</p><p><strong>Alternativa C está incorreta.</strong> A terapia com testosterona PODE PIORAR a síndrome de apneia do sono, não melhorar. A apneia do sono é uma contraindicação relativa à terapia de testosterona, e o tratamento pode exacerbá-la devido aos efeitos dos andrógenos na musculatura respiratória.</p><p><strong>Alternativa D está correta.</strong> O câncer de mama masculino é uma contraindicação absoluta à reposição de testosterona, pois os andrógenos podem estimular o crescimento tumoral. Esta é uma contraindicação well-established nas diretrizes.</p><p><strong>Veredito final: A alternativa D é a única afirmativa correta, representando uma contraindicação absoluta e bem estabelecida.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina_DisfuncaoEretil",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina_DisfuncaoEretil_CancerDeProstata"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Paciente de 27 anos, grávida de oito semanas, encaminhada ao endocrinologista devido a níveis suprimidos de TSH na primeira consulta pré-natal. Segundo os guidelines da ATA (Associação Americana de Tireoide), sabe-se que:",
+      "alternativas": [
+        "cintilografia e dosagem do anticorpo antirreceptor de TSH estariam indicadas por serem úteis no diagnóstico diferencial da \"\"tireotoxícose transitória gestacional\"\" do \"\"hipertireoidismo da doença de Graves\"\".",
+        "na presença de um bócio nodular, dosagem de T3 total seria útil para avaliar possibilidade de T3 toxicose.",
+        "confirmado o diagnóstico de \"\"tireotoxicose transitória gestacional\"\", tratamento com betabloqueadores e drogas antitireoidianas estaria indicado.",
+        "o grande risco do uso de drogas antitireoidianas durante a gravidez é o efeito teratogênico dessas medicações. O metimazol por estar associado a menor risco de malformações congênitas maiores, deve ser o antitireoidiano de escolha durante a gravidez, particularmente no primeiro trimestre da gestação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre o manejo diagnóstico e terapêutico das alterações tireoidianas na gestação, especificamente sobre tireotoxicose gestacional versus hipertireoidismo da doença de Graves, seguindo as diretrizes da Associação Americana de Tireoide (ATA).</p><p><strong>A resposta correta é B - na presença de bócio nodular, dosagem de T3 total seria útil para avaliar possibilidade de T3 toxicose.</strong></p><p>A gestante apresenta TSH suprimido na primeira consulta pré-natal, exigindo investigação cuidadosa para diferencia entre tireotoxicose gestacional transitória (associada à hCG) e hipertireoidismo patológico.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A está incorreta.</strong> A cintilografia é CONTRAINDICADA na gestação devido à radiação ionizante, representando risco fetal significativo. Anticorpos antirreceptor de TSH podem ser úteis no diagnóstico diferencial, mas a cintilografia não deve ser realizada na gestante.</p><p><strong>Alternativa B está correta.</strong> Em pacientes com bócio nodular, a dosagem de T3 total é importante pois algumas apresentações de hipertireoidismo podem cursar com níveis de T4 normais ou apenas discretamente elevados, mas com T3 significativamente elevado (T3 toxicose). Esta informação é crucial para o diagnóstico e conduta.</p><p><strong>Alternativa C está incorreta.</strong> Na tireotoxicose transitória gestacional, o tratamento usualmente NÃO é necessário, pois é autolimitada e resolve espontaneamente. Betabloqueadores e drogas antitireoidianas só são indicados se os sintomas forem severos ou se persistirem após o primeiro trimestre.</p><p><strong>Alternativa D está incorreta.</strong> O metimazol tem MAIOR risco de malformações congênitas (incluindo aplasia cutis congenita, deficiências faciais), especialmente no primeiro trimestre. O PTU é preferido no primeiro trimestre por ter menor risco teratogênico, sendo trocado para metimazol após 12 semanas quando possível.</p><p><strong>Veredito final: A alternativa B representa a conduta diagnóstica mais apropriada, demonstrando conhecimento sobre apresentações atípicas de hipertireoidismo.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_TireoideTireotoxicose",
+        "Obstetricia_IntercorrenciasObstetricasObst_DoencasInfecciosasNaGestacaoHi_HerpesNaGestacao"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Paciente do sexo feminino, de 17 anos, com diagnostico de hiperplasia adrenal congênita forma não clássica, manifestada na infância com quadro de pubarca precoce. Atualmente sem terapia com glicocorticoide, com menstruações regulares, completamente assintomática. Qual conduta seria mais apropriada para essa paciente de acordo com Guideline da Endocrine Society?",
+      "alternativas": [
+        "Retomar imediatamente à terapia com glicocorticoide, em baixa dose.",
+        "Se desenvolver quadro de hirsutismo, contraceptivo oral, com ou sem antiandrógenos, não deve ser prescrito pela possibilidade de piora potencial do quadro metabólico.",
+        "Na presença de gravidez, terapia com glicocorticoide deve ser iniciada a partir do segundo trimestre da gestação, mesmo na ausência de tratamento anterior com corticoide.",
+        "Terapia com glicocorticoide deve ser iniciada se paciente vier a apresentar dificuldades em engravidar."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o manejo de pacientes com hiperplasia adrenal congênita forma não clássica, focando nas indicações terapêuticas e condutas durante diferentes fases da vida, conforme as diretrizes da Endocrine Society.</p><p><strong>A resposta correta é B - se desenvolver hirsutismo, contraceptivo oral com ou sem antiandrógenos não deve ser prescrito pela possibilidade de piora potencial do quadro metabólico.</strong></p><p>A paciente apresenta forma não clássica de HAC, com pubarca precoce na infância, mas atualmente assintomática, com menstruações regulares e sem terapia. Esta situação exige abordagem individualizada, considerando riscos e benefícios do tratamento.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A está incorreta.</strong> Em pacientes assintomáticas com forma não clássica de HAC, a terapia com glicocorticoide NÃO deve ser reiniciada rotineiramente. O tratamento é indicado principalmente para sintomas (hirsutismo, irregularidades menstruais, infertilidade) ou sinais de virilização progressiva.</p><p><strong>Alternativa B está correta.</strong> Contraceptivos orais podem efetivamente controlar o hirsutismo através da supressão ovariana e aumento da SHBG, reduzindo androgênios livres. Entretanto, há preocupação sobre piora do perfil metabólico (resistência à insulina, dislipidemia) em pacientes com predisposição, justificando a cautela na prescrição.</p><p><strong>Alternativa C está incorreta.</strong> Na HAC não clássica, a terapia com glicocorticoide durante a gestação só deve ser iniciada se houver história de perdas gestacionais recorrentes ou sinais de insuficiência adrenocortical. Não há indicação rotineira de iniciar corticoide no segundo trimestre em pacientes assintomáticas.</p><p><strong>Alternativa D está incorreta.</strong> A terapia com glicocorticoide na HAC não clássica é indicada para infertilidade relacionada à anovulação crônica, não apenas para dificuldades em engravidar de forma geral. A avaliação deve ser individualizada, considerando outras causas de infertilidade.</p><p><strong>Veredito final: A alternativa B é a mais adequada, refletindo a necessidade de balancear benefícios sintomáticos com potenciais riscos metabólicos no manejo da HAC não clássica.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Genero",
+        "ClinicaMedica_Endocrinologia_Genero_PlanejamentoFamiliar_AnticoncepcaoHormonalApenasCom"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Mulher de 29 anos consultou neurologista em razão de cefaleia de moderada intensidade, de início há vários anos, porém com piora nos últimos seis meses. Presença de ciclos menstruais regulares, sem galactorreia, sem outras queixas. Na avaliação diagnóstica, solicitado tomografia computadoriza de crânio, que surpreendentemente evidenciou microadenoma de 8 mm na região da sela túrcica. Qual conduta seria mais apropriada para essa paciente?",
+      "alternativas": [
+        "Por ser assintomática (exceto cefaleia), não deve ser submetida à avaliação laboratorial para hipersecreção hormonal.",
+        "Avaliação laboratorial para hipopituitarismo deve ser conduzida, mesmo sendo assintomática do ponto de vista hormonal.",
+        "Se confirmado hipersecreção hormonal hipofisária, o tratamento de escolha é cirúrgico, independente do setor hormonal hipersecretor.",
+        "Como a paciente não apresenta sintomas sugestivos de hiperprolactinemia, dosagem de prolactina sérica não é necessária."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre a abordagem diagnóstica e terapêutica de microadenomas hipofisários incidentais. A banca explora a conduta frente a um achado acidental de imagem.</p><p><strong>Vamos analisar cada alternativa sistematicamente:</strong></p><p><strong>Alternativa A:</strong> Incorreta. Embora a paciente seja assintomática hormonalmente, a presença de cefaleia associada ao microadenoma de 8mm justifica investigação laboratorial. Ademais, mesmo microadenomas assintomáticos podem evoluir para hipersecreção hormonal.</p><p><strong>Alternativa B:</strong> <strong>CORRETA.</strong> A avaliação laboratorial é fundamental mesmo em pacientes assintomáticas. Devemos dosar prolactina (descartar prolactinoma), TSH, T4 livre (função tireoidiana), cortisol e ACTH (eixo hipotálamo-hipófise-adrenal), IGF-1 (hormônio de crescimento). O microadenoma pode estar causando hipopituitarismo subclínico ou evoluir para disfunção hormonal.</p><p><strong>Alternativa C:</strong> Incorreta. O tratamento cirúrgico não é indicado para todos os tipos de hipersecreção hormonal. Microprolactinomas podem ser tratados clinicamente com agonistas dopaminérgicos (cabergolina, bromocriptina). A decisão cirúrgica depende do tipo de adenoma, tamanho, local e resposta ao tratamento clínico.</p><p><strong>Alternativa D:</strong> Incorreta. A dosagem de prolactina é ESSENCIAL. Até 40% dos microadenomas são prolactinomas. A cefaleia pode ser sintoma indireto de hiperprolactinemia ou efeito de massa do adenoma. O exame de imagem já mostrou adenoma - a dosagem hormonal é complementar, não opcional.</p><p><strong>Raciocínio clínico:</strong> Microadenomas incidentais requerem avaliação endocrinológica completa para identificar disfunções hormonais e orientar seguimento. O tamanho de 8mm e presença de sintomas neurológicos (cefaleia) reforçam a necessidade de investigação completa.</p><p><strong>Veredito final: Alternativa B é a correta.</strong> A avaliação laboratorial para hipopituitarismo deve ser conduzida mesmo em pacientes assintomáticas, seguindo as diretrizes brasileiras de endocrinologia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Paciente de 33 anos, sem história de diabetes, admitido no hospital para avaliar quadro sugestivo de hipoglicemia. Nesse caso, qual é a avaliação mais apropriada da hipoglicemia em paciente adulto, sem diabetes?",
+      "alternativas": [
+        "Insuficiência hepática, renal e cardíaca podem ser causa de hipoglicemia.",
+        "Primeira etapa é documentar a tríade de Whipple, traduzida por sinais e/ou sintomas de hipoglicemia, baixa concentração de glicose plasmática associada à hiperinsulinemia.",
+        "Pacientes com valores de glicemia abaixo de 70mg/dl, sem diagnóstico de diabetes, sempre devem ser investigados.",
+        "Importante afastar deficiência de cortisol (insuficiência adrenal) com teste de supressão com dexametasona 1 mg."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 testa seus conhecimentos sobre a abordagem diagnóstica da hipoglicemia em pacientes não diabéticos. É uma competência fundamental em clínica médica e endocrinologia.</p><p><strong>Analisando as alternativas em detalhes:</strong></p><p><strong>Alternativa A:</strong> <strong>CORRETA.</strong> Insuficiência hepática (falha na gliconeogênese), renal (clearance aumentado de insulina) e cardíaca (hipoperfusão tecidual) são causas reconhecidas de hipoglicemia. Esta alternativa contempla a amplitude etiológica que deve ser considerada na investigação.</p><p><strong>Alternativa B:</strong> Incorreta. A tríade de Whipple é composta por: 1) sintomas de hipoglicemia, 2) glicemia baixa simultânea aos sintomas, 3) resolução dos sintomas com correção da glicemia. A menção a hiperinsulinemia é inadequada - não é necessário documentar hiperinsulinemia para estabelecer o diagnóstico de hipoglicemia.</p><p><strong>Alternativa C:</strong> Incorreta. Não é verdade que TODOS os pacientes com glicemia <70mg/dL sem diabetes devem ser investigados. Valores isolados podem representar variações fisiológicas normais, especialmente se assintomáticos. A investigação deve basear-se na presença de sintomas e suspeita clínica.</p><p><strong>Alternativa D:</strong> Incorreta. Para avaliar insuficiência adrenal, o teste de escolha é o estímulo com ACTH (cosintropina), não supressão com dexametasona. O teste de supressão é utilizado para doença de Cushing. A dosagem matinal de cortisol sérico é o primeiro passo na investigação.</p><p><strong>Abordagem diagnóstica correta:</strong> A hipoglicemia em não diabéticos requer investigação sistemática das causas: hepáticas, renais, cardíacas, medicamentosas, endócrinas e insulínomas. A documentação da tríade de Whipple é fundamental.</p><p><strong>Veredito final: Alternativa A é a correta.</strong> As insuficiências hepática, renal e cardíaca representam causas importantes de hipoglicemia que devem ser consideradas na avaliação diagnóstica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_HipoglicemiaEmIndividuosNaoDia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Leia o texto a seguir. A Doença do Refluxo Gastroesofágico (DGRE) tem uma prevalência mundial estimada de 8% - 33%, envolve todas as faixas etárias e ambos os sexos e tem um preço estimado em > US $ 9 - US $ 10 bilhões/ano apenas nos EUA, em grande parte relacionado ao uso dos inibidores da bomba de prótons (IBP) e aos testes diagnósticos. Gyawali CP, Kahrilas PJ, Savarino E, et al. Modem diagnosis of GERD: the Lyon Consensus Gut 2018;67:1351-1362. Nesse contexto, no momento da escolha do método diagnóstico que deverá ser realizado, deve-se levar em consideração que:",
+      "alternativas": [
+        "o exame padrão-ouro e com melhor custo-benefício é a endoscopia digestiva alta, em que as lesões devem ser classificadas de acordo com a classificação de Los Angeles.",
+        "a pHmetria de 24horas é um exame mais sensível e específico que a endoscopia, cujo parâmetro diagnóstico principal é o registro de ph esofágico abaixo de 5 por mais 5% do tempo.",
+        "o exame histopatológico é essencial, com aquisição de biópsias de esôfago proximal e distal, e evidencia acúmulo de eosinófilos na mucosa (>15 eosinófilos por campo de grande aumento).",
+        "a impedanciophmetria é importante para o diagnóstico diferencial entre DRGE (especialmente formas não erosivas), hipersensibilidade esofágica e pirose funcional."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre métodos diagnósticos na Doença do Refluxo Gastroesofágico (DRGE), baseando-se no consenso de Lyon. É uma questão moderna que refleja a prática atual da gastroenterologia.</p><p><strong>Vamos analisar sistematicamente cada alternativa:</strong></p><p><strong>Alternativa A:</strong> Incorreta. A endoscopia digestiva alta não é o padrão-ouro nem a melhor opção custo-benefício para DRGE. Segundo o Consenso de Lyon, a EDA tem papel limitado no diagnóstico de DRGE - é normal em 70% dos pacientes com DRGE típica. O padrão-ouro é a pHmetria/impedanciometria para doença não erosiva.</p><p><strong>Alternativa B:</strong> Incorreta. A pHmetria de 24h é mais sensível e específica que a endoscopia, mas o parâmetro mencionado está incorreto. O critério diagnóstico para pH <4 (não <5) por mais de 4% do tempo (não 5%). Este erro técnico torna a alternativa incorreta.</p><p><strong>Alternativa C:</strong> Incorreta. A biópsia de rotina não é recomendada para DRGE. A contagem de eosinófilos >15/campo é característica da esofagite eosinofílica, não da DRGE. Além disso, biópsias do esôfago proximal não são padrão - são feitas no estômago e duodeno para avaliar outras causas.</p><p><strong>Alternativa D:</strong> <strong>CORRETA.</strong> A impedanciophmetria é o exame mais completo para DRGE. Permite diferenciar DRGE (especialmente formas não erosivas) de hipersensibilidade esofágica e pirose funcional. É superior à pHmetria isolada pois detecta episódios de refluxo não ácidos e correlaciona sintomas com refluxo.</p><p><strong>Base científico-técnica:</strong> O Consenso de Lyon estabelece que a impedanciophmetria é fundamental para caracterizar a fisiopatologia do refluxo, sendo especialmente útil em pacientes com sintomas típicos mas endoscopia normal ou em falha terapêutica.</p><p><strong>Veredito final: Alternativa D é a correta.</strong> A impedanciophmetria é essencial para o diagnóstico diferencial entre DRGE, hipersensibilidade esofágica e pirose funcional, conforme as diretrizes atuais.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Paciente de 47 anos, há cerca de três meses com quadro de epigastralgia, plenitude pós-prandial, saciedade precoce e diarreia. Após avaliação clínica, realizou endoscopia digestiva alta que revelou como principais achados úlceras gástricas (duas de antro e três\nde corpo), A2 Sakita. Realizadas biópsias das lesões ulceradas e do tecido adjacente de corpo e antro; descartada etiologia maligna das lesões e detectada presença de H. pylori. Nesse caso, qual deve ser a conduta?",
+      "alternativas": [
+        "Prescrição de Amoxicilina 500 mg dois comprimidos pela manhã e dois comprimidos à noite, Claritromicina 500 mg um comprimido pela manhã e um comprimido à noite e Esomeprazol 40 mg um comprimido pela manhã e um comprimido à noite, por sete dias.",
+        "Prescrição de domperidona 10 mg antes das principais refeições, um agonista do receptor de motilina, que acelera o esvaziamento gástrico e pode ser útil na melhoria das queixas de plenitude pós-prandial e saciedade precoce.",
+        "Complementação diagnóstica com realização de exame de imagem (tomografia computadorizada de abdome) e dosagem de gastrina, de preferência sem uso de inibidor de bomba de próton.",
+        "Prescrição de famotidina, que é uma ótima opção terapêutica e demonstra manutenção de seu efeito mesmo após uso prolongado como oito semanas, tempo indicado para cicatrização de úlceras pépticas."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia sua capacidade de interpretar achados endoscópicos e conduzir a investigação diagnóstica adequada em úlcera péptica. Envolve integração entre clínica, endoscopia e fisiopatologia.</p><p><strong>Vamos analisar cada alternativa detalhadamente:</strong></p><p><strong>Alternativa A:</strong> Incorreta. O esquema erradicador apresentado está incompleto e incorreto. Para terapia tripla, são necessárias doses específicas: Amoxicilina 1g 12/12h, Claritromicina 500mg 12/12h, IBP 20-40mg 12/12h por 14 dias. Além disso, em úlceras A2 Sakita, a duração recomendada é 14 dias, não 7 dias.</p><p><strong>Alternativa B:</strong> Incorreta. Domperidona não é indicação apropriada aqui. A plenitude e saciedade precoce podem ser consequências das úlceras gástricas ou efeito de massa, mas a prioridade é tratar a úlcera e H. pylori. Domperidona tem efeitos colaterais importantes e é reservada para casos específicos de dispepsia funcional.</p><p><strong>Alternativa C:</strong> <strong>CORRETA.</strong> A TC de abdome e dosagem de gastrina são fundamentais. Paciente jovem (47 anos) com múltiplas úlceras gástricas (duas no antro, três no corpo) deve suscitar suspeita de síndrome de Zollinger-Ellison. A dosagem de gastrina em jejum (preferencialmente sem IBP por 2 semanas) e TC de abdome para localizar gastrinoma são essenciais.</p><p><strong>Alternativa D:</strong> Incorreta. Embora famotidina seja um H2 bloqueador eficaz, não é primeira escolha em úlcera com H. pylori. O tratamento de escolha são IBPs, não H2 bloqueantes. A duração de 8 semanas é adequada para cicatrização, mas não resolve a causa de base (H. pylori).</p><p><strong>Raciocínio clínico:</strong> A presença de múltiplas úlceras gástricas em paciente relativamente jovem é atípica e deve levantar suspeita de síndrome de Zollinger-Ellison. O padrão distribuição (antro + corpo) é clássico para gastrinoma.</p><p><strong>Veredito final: Alternativa C é a correta.</strong> A investigação para síndrome de Zollinger-Ellison é mandatória diante deste quadro clínico-endoscópico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_HelicobacterPylori"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente apresenta quadro de distensão abdominal, flatu- lência e diarreia de longa data. Vem com um exame soli- citado por outro colega para sua interpretação. Estudo realizado após ingestão de 25 gramas de Lacto- se. O H2 do ar expirado é dosado a cada\n15 minutos na primeira hora e depois a cada 30 minutos na segunda e terceira hora. Os resultados são expressos em ppm (partes por mi- lhão). Dados: 00min: 1 ppm 45min: 23 ppm 120min: 30 ppm 15min: 4 ppm 60min: 29 ppm 150min: 27 ppm 30min: 9 ppm\n90min: 16 ppm 180min: 34 ppm A paciente apresentou-se assintomática durante todo exame. Qual deve ser a conclusão diagnóstica referente a esse exame especificamente?",
+      "alternativas": [
+        "Exame normal.",
+        "Intolerância à lactose.",
+        "Má absorção de lactose.",
+        "Sobrecrescimento Bacteriano de Intestino Delgado."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia sua interpretação do teste respiratório com lactose e sua capacidade de distinguir entre intolerância, má absorção e exame normal. É uma competência importante em gastroenterologia.</p><p><strong>Vamos interpretar os resultados do teste de lactose:</strong></p><p>Resultado do teste (H2 em ppm):- 0min: 1 ppm- 15min: 4 ppm- 30min: 9 ppm- 45min: 23 ppm- 60min: 29 ppm- 90min: 16 ppm- 120min: 30 ppm- 150min: 27 ppm- 180min: 34 ppm</p><p><strong>Critérios diagnósticos para teste de lactose:</strong></p><p><strong>Exame normal:</strong> Aumento do H2 <20 ppm acima do valor basal durante todo o teste.</p><p><strong>Má absorção de lactose:</strong> Aumento do H2 >20 ppm acima do valor basal, independentemente dos sintomas.</p><p><strong>Intolerância à lactose:</strong> Aumento do H2 >20 ppm ACOMPANHADO de sintomas durante o teste.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Incorreta. O exame não é normal pois houve aumento de 33 ppm (34-1), superando o critério de 20 ppm.</p><p><strong>Alternativa B:</strong> Incorreta. Para intolerância à lactose é necessário que o aumento >20 ppm ACOMPANHE sintomas durante o teste. A paciente permaneceu assintomática durante todo o exame.</p><p><strong>Alternativa C:</strong> <strong>CORRETA.</strong> A paciente apresentou aumento >20 ppm (33 ppm) mas permaneceu assintomática. Isso caracteriza má absorção de lactose, mas não intolerância. A má absorção pode existir sem sintomas - muitos pacientes toleram lactose mesmo com má absorção.</p><p><strong>Alternativa D:</strong> Incorreta. Sobrecrescimento bacteriano tem critérios diferentes: H2 >10 ppm nos primeiros 90 minutos, ou múltiplos picos (>5 ppm de incremento em 3 tempos consecutivos).</p><p><strong>Correlação clínica:</strong> A distinção entre má absorção e intolerância é crucial para conduta. Pacientes com má absorção podem tolerar pequenas quantidades de lactose ou produtos lácteos com baixo teor de lactose.</p><p><strong>Veredito final: Alternativa C é a correta.</strong> O teste caracterizou má absorção de lactose, diferenciando-se de intolerância pela ausência de sintomas durante o exame.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DisturbiosDisabsortivos"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Leia o caso clínico a seguir. Paciente do sexo masculino, veio encaminhado do ambulatorio de Infectologia após atingir resposta virológica sustentada no tratamento de Hepatite C. Na revisão do prontuário, observa-se elastografia transitória revelando F4, plaqueta 102.000 / µL e histórico de doença arterial periférica obstrutiva grave. Nega etilismo, diabetes mellitus ou dislipidemia. Ao calcular Child constata-se ser Child A; e ter IMC de 21 kg/m². Relata nunca ter feito endoscopia. De acordo com as recomendações do Consenso de Baveno VI, qual deve ser a conduta adotada?",
+      "alternativas": [
+        "Não é necessário a realização de endoscopia de screening de varizes nesse momento, já que tem plaqueta acima 100.000.",
+        "Realizar endoscopia de screening de varizes nesse momento, e caso não se observe presença de nenhum cordão varicoso, repetir a cada três anos.",
+        "Realizar endoscopia de screening de varizes nesse momento, e caso observe presença de variz de fino calibre, repetir anualmente.",
+        "Realizar endoscopia de screening de varizes nesse momento, e caso detecte variz de médio calibre com sinais de cor vermelha, deve-se iniciar betabloqueador não seletivo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SES-GO testa seu conhecimento prático sobre as diretrizes do Consenso de Baveno VI para rastreamento de varizes esofágicas em pacientes com cirrose. É um caso clínico que integra dados laboratoriais, exames de imagem e critérios de elegibilidade para screening endoscópico.</p><p><strong>A resposta correta é B - realizar endoscopia de screening de varizes e, caso não se observe presença de nenhum cordão varicoso, repetir a cada três anos.</strong></p><p>Vamos analisar os dados do paciente: Homem com cirrose F4 (Child A), plaquetas 102.000/µL (próximo ao limite crítico), história prévia de doença arterial periférica, IMC 21 kg/m². Os critérios de Baveno VI são claros: pacientes cirróticos com plaquetas <150.000/µL OU elastografia >20 kPa devem ser encaminhados para screening endoscópico.</p><p>Analisando as alternativas: A) INCORRETA - plaquetas abaixo de 100.000 já seria indicação absoluta, mas com 102.000 ainda está indicada, especialmente considerando o F4. B) CORRETA - seguida do protocolo: screening inicial e repetição a cada 3 anos se negativo. C) INCORRETA - varizes de fino calibre têm seguimento de 2-3 anos, não anual. D) INCORRETA - betabloqueadores só para varizes médias/grandes ou com sinais de alto risco, além de considerar contraindicações no contexto de doença arterial periférica.</p><p>O Consenso de Baveno VI utilizou estes critérios para reduzir necessidade de endoscopias desnecessárias, mantendo eficácia diagnóstica para varizes de alto risco que requerem profilaxia primária.</p><p><strong>Veredito: Alternativa B é a resposta correta, seguindo rigorosamente as diretrizes atuais do Baveno VI para este perfil de paciente.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_HepatitesVirais",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Leia o caso clínico a seguir. Paciente com imagem nodular em pâncreas, encaminhado para avaliação. Durante anamnese, observada presença de diagnostico recente de diabetes mellitus, colecistectomia há um mês por colelitíase e diarreia há um ano, que melhora com jejum, de aspecto amarelado, gordurosas, que boia no vaso sanitário. Nesse caso, qual exame laboratorial é imprescindível de ser realizado?",
+      "alternativas": [
+        "Dosagem de insulina.",
+        "Dosagem de glucagon.",
+        "Dosagem de somatostatina.",
+        "Dosagem de VIP plasmático."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO avalia seu conhecimento sobre tumores neuroendócrinos pancreáticos (TNEp) e suas síndromes paraneoplásicas, especificamente a síndrome de somatostatinoma. O caso clínico apresenta tríade clássica que deve ser imediatamente reconhecida.</p><p><strong>A resposta correta é C - dosagem de somatostatina.</strong></p><p>O paciente apresenta tríade patognomônica de somatostatinoma: 1) diabetes mellitus recente (devido à inibição da insulina), 2) doença biliar/colecistectomia (pela supressão de vesícula biliar), 3) diarreia gordurosa esteatorreica (por má digestão de gorduras). O pâncreas é sede mais comum (70% dos casos), e a imagem nodular reforça a suspeita. A diarreia que melhora com jejum é típica, pois os hormônios tumorais têm secreção variável com alimentação.</p><p>Analisando as alternativas: A) INSULINA - valor útil para insulinomas (hipoglicemia), não se aplica aqui. B) GLUCAGON - relacionado a glucagonomas (dermatite necrolítica, hiperglicemia, perda ponderal), quadro diferente. C) SOMATOSTATINA - o tumor produz excesso deste hormônio inibitório, causando toda a tríade. D) VIP - associam-se a diarréias aquosas volumosas, não gordurosas, típicas de vipomas.</p><p>A dosagem de somatostatinemia >100 pg/mL é diagnóstica, sendo fundamental para confirmação pré-operatória e seguimiento pós-tratamento.</p><p><strong>Veredito: Alternativa C representa a conduta laboratorial essencial neste cenário clínico.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Os métodos endoscópicos revolucionaram a assistência ao trato gastrointestinal e suas desordens. Nesse contexto, um grande exemplo é a:",
+      "alternativas": [
+        "Cápsula endoscópica (CE), que é um exame seguro, não invasivo e portanto não apresenta contraindicações; no entanto, tem suas limitações como não permitir aquisição de biópsias ou instituir terapêutica como polipectomia e hemostasia.",
+        "Endoscopia digestiva alta, que pode ser um exame diagnóstico eletivo/ambulatorial, mas pode também ser utilizado em casos de urgência (como hemorragias digestivas) e emergência (como baterias impactadas em esôfago).",
+        "Colonoscopia, que é um exame invasivo, de preparo delicado (risco de distúrbios hidroeletrolíticos), mas que, se bem indicado (como na colite fulminante e rastreamento de câncer colorretal), apresenta um benefício inquestionável.",
+        "Colangiopancreatografia retrógrada endoscópica (CPRE), que revolucionou a terapêutica de lesões pancreatobiliares, mas ainda continua sendo um método diagnóstico fundamental para patologias como coledocolitíase."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO explora sua compreensão sobre métodos endoscópicos gastrointestinais, suas indicações, limitações e aplicações clínicas. O foco está em identificar qual método melhor exemplifica a versatilidade diagnóstica e terapêutica em diferentes contextos clínicos.</p><p><strong>A resposta correta é B - Endoscopia digestiva alta, que pode ser exame diagnóstico eletivo/ambulatorial, mas também ser utilizado em casos de urgência e emergência.</strong></p><p>A endoscopia digestiva alta exemplifica perfeitamente a revolução dos métodos endoscópicos por sua versatilidade extraordinária. Pode ser realizada eletivamente para investigação de dispepsia, anemia, perda ponderal, mas também é fundamental em emergências como hemorragias digestivas (diagnóstico e hemostasia) e ingestão de corpos estranhos como baterias impactadas em esôfago, que requerem remoção urgente para prevenir complicações graves.</p><p>Analisando as alternativas: A) CÁPSULA ENDOSCÓPICA - incorreta ao afirmar que não apresenta contraindicações (estenose, fistulas são contraindicações), limitações bem descritas mas faltou mencionar o principal diferencial. B) ENDOSCOPIA ALTA - descreve corretamente a versatility, sendo o melhor exemplo. C) COLONOSCOPIA - é invasiva sim, mas o preparado do colon não causa distúrbios hidroeletrolíticos graves como sugere (isso é mais típico de preparação para colonoscopia virtual), abordagem técnica mas incompleta. D) CPRE - incorreta ao classificar como método diagnóstico fundamental - hoje é essencialmente terapêutica, diagnósticos feitos por métodos não invasivos ou ecoendoscopia.</p><p>A endoscopia digestiva alta é realmente a mais versátil, salvando vidas em emergências e oferecendo abordagem minimamente invasiva para múltiplas condições.</p><p><strong>Veredito: Alternativa B é a resposta correta por melhor exemplificar a revolução dos métodos endoscópicos.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Leia o caso clínico a seguir. Paciente de 35 anos, do sexo masculino, etilista, relata liberação alcoólica há dois dias, evoluindo com vômitos de repetição, sem hematêmese. Evoluiu hoje com dor torácica, retroesternal de forte intensidade e dispneia. Chega ao\npronto atendimento e, ao exame físico, percebido enfisema subcutâneo moderado em parede torácica, e palpação de abdome sem grandes alterações. Nesse caso, qual deve ser a hipótese diagnóstica?",
+      "alternativas": [
+        "Síndrome Mallory-Weiss.",
+        "Síndrome de Boerhaave.",
+        "Úlcera péptica perfurada.",
+        "Espasmo esofagiano difuso."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO avalia seu conhecimento sobre complicações agudas do alcoolismo, especificamente perfuração esofágica. O caso clínico apresenta sinais klasik de ruptura esofágica traumática, uma emergência cirúrgica absoluta.</p><p><strong>A resposta correta é B - Síndrome de Boerhaave.</strong></p><p>O paciente etilista com liberação alcoólica recente (período de maior risco), apresentando vômitos de repetição seguidos de dor torácica súbita, dispneia e enfisema subcutâneo forma a tríade patognomônica de ruptura esofágica. O enfisema subcutâneo (crepitações em parede torácica) é o sinal clássico de perfuração esofágica, indicando ar dissecting através dos planos tissulares do mediastino.</p><p>Analisando as alternativas: A) MALLORY-WEISS - laceração superficial da mucosa, causa hematêmese, mas não perfuração total. B) BOERHAAVE - ruptura transmural completa, com pneumomediastino e enfisema subcutâneo, quadro aqui presente. C) ÚLCERA PÉRTICA PERFURADA - causa dor abdominal inicial, pneumoperitoneu, não pneumomediastino. D) ESPASMO ESOFÁGICO DIFUSO - causa dor torácica mas sem sinais de perfuração.</p><p>A Síndrome de Boerhaave tem mortalidade de 25-50% se não tratada nas primeiras 24 horas. A tomografia de tórax com contraste hydrossolúvel confirma o diagnóstico, e o tratamento é cirúrgico de urgência (reparação primária + drenagem).</p><p><strong>Veredito: Alternativa B é a resposta correta, representando emergência cirúrgica típica com clássico enfisema subcutâneo.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Essofago",
+        "ClinicaMedica_Gastroenterologia_Essofago_IngestaoDeCorpoEstranho"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Uma população de células B clonais está indicada na seguinte situação:",
+      "alternativas": [
+        "expressão de CD20 como marcador de superfície.",
+        "expressão de imunoglobulina na superfície celular.",
+        "expressão restrita de cadeias leves kappa ou lambda.",
+        "hipogamaglobulinemia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO testa seu conhecimento sobre imunologia de células B e características de proliferacões linfoplasmoproliferativas, especificamente sobre a identificação de clonagem em patologias como gamopatia monoclonal.</p><p><strong>A resposta correta é C - expressão restrita de cadeias leves kappa ou lambda.</strong></p><p>A presença de população clonal de células B significa que todas as células derivam de um único precursor, compartilhando a mesma especificidade antigênica. O marcador mais confiável para identificar esta clonagem é a restrição de cadeias leves - em condições normais, existe proporção kappa/lambda de 2:1, mas na proliferação clonal há expressão predominante de uma única cadeia, rompendo esta proporção fisiológica.</p><p>Analisando as alternativas: A) CD20 - é um marcador de superfície de células B, presente tanto em populações polyclonal quanto monoclonal, não indica clonagem. B) IMUNOGLOBULINA NA SUPERFÍCIE - também presente em células B normais, polyclonal e monoclonal. C) RESTRIÇÃO KAPPA/LAMBDA - é o gold standard para identificar clonalidade, pois a restrição demonstra origem de célula única. D) HIPOGAMAGLOBULINEMIA - pode ocorrer em varias condições, inclusive polyclonal, e não indica clonagem.</p><p>A avaliação da razão kappa/lambda por citometria de fluxo é fundamental no diagnóstico de mieloma múltiplo, macroglobulinemia de Waldenström e outras gamopatias monoclonais, orientando tanto diagnóstico quanto seguimento.</p><p><strong>Veredito: Alternativa C é a resposta correta, representando o marcador mais específico para identificação de população celular B clonal.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_GamopatiasMonoclonais"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Leia o caso clínico a seguir. Paciente jovem com leucemia mieloide aguda apresentou, em exames do diagnóstico, a presença na mutação do gene FLT3 com duplicação interna em tandem. Após indução e consolidação, paciente encontra-se em remissão da doença e em bom estado geral. Nesse caso, qual terapia deve ser indicada?",
+      "alternativas": [
+        "Transplante autólogo de medula óssea.",
+        "Transplante alogênico de medula óssea.",
+        "Manutenção com gilteritinibe.",
+        "Observação clínica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SES-GO 2022 avalia o conhecimento sobre o tratamento de manutenção em pacientes com leucemia mieloide aguda em remissão, especificamente aqueles com mutação do gene FLT3-ITD.</p><p>O caso apresenta um jovem com LMA que possui uma mutação de alto risco - a duplicação interna em tandem do gene FLT3 (FLT3-ITD). Esta mutação está associada a pior prognóstico e maior risco de recaída, mesmo em pacientes que atingiram remissão completa após indução e consolidação.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Transplante autólogo de medula óssea:</strong> Esta opção não é adequada para pacientes com FLT3-ITD. O transplante autólogo envolve a reinfusão das próprias células-tronco do paciente, que podem conter células leucêmicas residuais. Em LMA com FLT3-ITD, há alto risco de recaída com esta abordagem.</p><p><strong>B) Transplante alogênico de medula óssea:</strong> Esta é a resposta correta. O transplante alogênico proporciona um efeito enxerto contra leucemia (GVL), fundamental para eliminar doença residual mínima em pacientes com mutações de alto risco como FLT3-ITD. Estudos demonstram benefício significativo na sobrevida livre de doença.</p><p><strong>C) Manutenção com gilteritinibe:</strong> O gilteritinibe é um inibidor de FLT3 aprovado para LMA recidivada/refractária, mas não para manutenção em primeira remissão. Atualmente, as diretrizes não recomendam gilteritinibe como manutenção em remissão.</p><p><strong>D) Observação clínica:</strong> Completamente inadequada para um paciente com FLT3-ITD em remissão. A observação resultaria em taxa de recaída superior a 70% neste grupo de alto risco.</p><p><strong>Veredito final:</strong> A alternativa B é a resposta correta. O transplante alogênico é o padrão ouro para pacientes com LMA-FLT3-ITD em primeira remissão, oferecendo a melhor chance de cura através do efeito enxerto contra leucemia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Leucemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente de 39 anos, obeso, hipertenso, é internado com quadro de insuficiência respiratória aguda secundária a Covid-19. Paciente evolui com necessidade de intubação oro-traqueal, choque séptico com uso de altas doses de drogas vasoativas e hemodiálise contínua. Durante a evolução da doença, paciente apresenta melhora clínica, com redução progressiva de drogas vasoativas, permanecendo em suporte dialítico. Subitamente, paciente apresentou piora ventilatória e quadro de tromboembolismo pulmonar. Nesse caso, qual deve ser a conduta?",
+      "alternativas": [
+        "Iniciar rivaroxabana.",
+        "Iniciar enoxaparina.",
+        "Iniciar dicumarínico.",
+        "Iniciar heparina não fracionada."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 aborda a escolha da anticoagulação em paciente crítico com COVID-19, tromboembolismo pulmonar e insuficiência renal em hemodiálise.</p><p>O cenário clínico é complexo: paciente com COVID-19 severo, em UTI, em ventilação mecânica, com choque séptico resolvido, mas ainda em suporte dialítico contínuo. A ocorrência de tromboembolismo pulmonar representa complicação grave que requer anticoagulação imediata.</p><p><strong>A) Rivaroxabana:</strong> Esta alternativa está incorreta. Rivaroxabana é um anticoagulante oral direto (DOAC) da classe dos inibidores do fator Xa. Em pacientes com insuficiência renal grave (que requer hemodiálise), os DOACs devem ser evitados devido ao acúmulo do fármaco e risco aumentado de sangramento. A depuração por hemodiálise nãoRemove eficientemente estes medicamentos.</p><p><strong>B) Enoxaparina:</strong> Embora a enoxaparina seja amplamente utilizada na profilaxia e tratamento de TEV, apresenta limitações neste cenário. Em insuficiência renal terminal, há risco de acúmulo e sangramento. Além disso, a hemodiálise pode interferir na administração e monitorização do fármaco.</p><p><strong>C) Dicumarínico:</strong> Esta opção também está incorreta. Warfarina (dicumarínico) apresenta múltiplas interações medicamentosas, início de ação lento, necessidade de monitorização constante do INR, e em pacientes críticos há maior risco de sangramento. Não é a primeira escolha em TEP agudo em UTI.</p><p><strong>D) Heparina não fracionada:</strong> Esta é a resposta correta. A heparina não fracionada (HNF) é o anticoagulante de escolha em pacientes com insuficiência renal grave e em ambiente de terapia intensiva. Suas vantagens incluem: meia-vida curta, possibilidade de reversão imediata com protamina, não é removida por hemodiálise, monitorização pelo TCA permite ajuste preciso da anticoagulação, e permite fácil manipulação em pacientes instáveis hemodinamicamente.</p><p><strong>Veredito final:</strong> A alternativa D é a resposta correta. Em pacientes críticos com TEV e insuficiência renal terminal, a heparina não fracionada é o anticoagulante mais seguro e eficaz, permitindo controle preciso da anticoagulação mesmo em contexto de suporte dialítico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente de 39 anos, obeso, hipertenso, é internado com quadro de insuficiência respiratória aguda secundária a Covid-19. Paciente evolui com necessidade de intubação oro-traqueal, choque séptico com uso de altas doses de drogas vasoativas e hemodiálise\ncontínua. Durante a evolução da doença, paciente apresenta melhora clínica, com redução progressiva de drogas vasoativas, permanecendo em suporte dialítico. Subitamente, paciente apresentou piora ventilatória e quadro de tromboembolismo\npulmonar. Após o paciente apresentar volumoso sangramento em coxa direita e retroperitônio, com piora hemodinâmica e necessidade de transfusão de concentrado de hemácias, o médico é acionado de emergência e é informado que o intensivista solicitou\numa tromboelastometria rotacional para avaliar o sangramento. Nesse caso, qual achado espera-se encontrar?",
+      "alternativas": [
+        "Intem aumentado com heptem normal.",
+        "Intem normal.",
+        "Extem com lise máxima maior que 15%.",
+        "Intem normal e tempo de formação do coágulo menor que 110 segundos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia o conhecimento sobre interpretação da tromboelastometria rotacional (ROTEM) em paciente com coagulopatia associada à doença crítica e sangramento maciço.</p><p>O contexto é o mesmo paciente da questão anterior: jovem com COVID-19 severo, agora apresentando sangramento volumoso em coxa e retroperitônio com piora hemodinâmica. O intensivista solicitou ROTEM para avaliar a causa do sangramento. A presença de sangramento após episodio tromboembólico sugere coagulopatia complexa.</p><p><strong>A) Intem aumentado com heptem normal:</strong> Esta é a resposta correta. O padrão encontrado corresponde à coagulopatia da doença crítica. Intem aumentado (> 240 segundos) indica deficiência de fibrinogênio ou disfunção da fibrinólise, comum em pacientes graves com inflamação sistêmica. Heptem normal (normal range 137-240 segundos) indica que a via extrínseca da coagulação está preservada, diferenciando de outros distúrbios como coagulação intravascular disseminada.</p><p><strong>B) Intem normal:</strong> Esta alternativa está incorreta. Intem normal não explicaria o sangramento maciço presente no caso. Em paciente com sangramento volumoso e doença crítica, esperam-se alterações na coagulação.</p><p><strong>C) Extem com lise máxima maior que 15%:</strong> Esta opção está incorreta. Lise máxima (LY30) aumentada (> 7-15%) indica hiperfibrinólise, que pode causar sangramento, mas não é o achado mais característico da coagulopatia da doença crítica. A questão solicita especificamente o achado esperado, e o padrão mais típico é o Intem prolongado com Heptem normal.</p><p><strong>D) Intem normal e tempo de formação do coágulo menor que 110 segundos:</strong> Esta alternativa está incorreta. Tempo de formação do coágulo (CFT) prolongado (> 110 segundos) é característica da coagulopatia da doença crítica, não curto. CFT reduzido indica hipercoagulabilidade, o oposto do quadro apresentado.</p><p><strong>Veredito final:</strong> A alternativa A é a resposta correta. A presença de Intem prolongado com Heptem normal caracteriza a coagulopatia associada à doença crítica, indicando deficiência de fibrinogênio e mantendo preservada a via extrínseca da coagulação.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Leia o caso clínico a seguir. Paciente submetido a transplante de coração há cerca onze meses, mantendo-se com intensa imunossupressão por rejeição do enxerto. Retorna para consulta com história de febre persistente, hipertrofia de tonsilas palatinas, diarreia e linfonodomegalia cervical progressiva de cerca de 6 cm, de início recente. Paciente foi submetido a biópsia linfonodal, cuja avaliação do hematopatologista sugere doença linfo-proliferativa pós transplante de característica monomórfica. Considerando a\nfrequência de subtipos histológicos, qual neoplasia espera-se observar na imunohistoquímica?",
+      "alternativas": [
+        "Linfoma de Hodgkin.",
+        "Linfoma difuso de grandes células B.",
+        "Linfoma plasmablástico.",
+        "Linfoma linfoblástico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia o conhecimento sobre doença linfoproliferativa pós-transplante (PTLD) e seus subtipos histológicos mais frequentes.</p><p>O caso apresenta paciente com transplante cardíaco há 11 meses, em intensa imunossupressão por rejeição do enxerto, desenvolvendo quadro clínico compatível com PTLD: febre persistente, hipertrofia tonsilar, diarreia e linfonodomegalia cervical progressiva. A biópsia confirmou doença monomórfica, que é o tipo mais agressivo de PTLD.</p><p><strong>A) Linfoma de Hodgkin:</strong> Esta alternativa está incorreta. O linfoma de Hodgkin é extremamente raro em PTLD, representando menos de 5% dos casos. A histologia clássica de Reed-Sternberg é atípica no contexto pós-transplante.</p><p><strong>B) Linfoma difuso de grandes células B:</strong> Esta é a resposta correta. O LDGCB é o subtipo histológico mais frequente em PTLD monomórfica, representando aproximadamente 50-60% dos casos. É um linfoma de células B agressivo, CD20 positivo, que pode apresentar transformações genéticas como MYC, BCL2 e BCL6. A imunossupressão crônica predispõe a este tipo de transformação linfomatosa.</p><p><strong>C) Linfoma plasmablástico:</strong> Esta opção está incorreta. O linfoma plasmablástico é mais comum em pacientes HIV positivos ou em contexto de imunodeficiência primária. Em PTLD, representa menos de 10% dos casos. Caracteriza-se por diferenciação plasmablástica intensa, CD138 positivo e CD20 negativo.</p><p><strong>D) Linfoma linfoblástico:</strong> Esta alternativa está incorreta. O linfoma linfoblástico (especialmente o de células T) é mais comum em população pediátrica e jovem. Em adultos transplantados, é bastante raro. Apresenta expressão de TdT e marcadores de precursor linfoide.</p><p><strong>Veredito final:</strong> A alternativa B é a resposta correta. O linfoma difuso de grandes células B é o subtipo histológico mais frequente em PTLD monomórfica, representando a maioria dos casos desta forma agressiva de doença linfoproliferativa pós-transplante.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Linfomas"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Um paciente transplantado renal tem diagnóstico de nefropatia associada ao BK vírus. Nesse caso, qual é o tratamento de primeira linha?",
+      "alternativas": [
+        "Aumentar a imunossupressão.",
+        "Diminuir a imunossupressão.",
+        "Leflunomida.",
+        "Cidofovir."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia o manejo clínico da nefropatia associada ao vírus BK em pacientes transplantados renais.</p><p>A nefropatia por BK é complicação frequente em transplante renal, ocorrendo em 1-10% dos receptores, principalmente nos primeiros 2 anos pós-transplante. O vírus BK permanece latente no epitélio tubular e pode ser reativado pela imunossupressão, causando nefropatiaprogressiva e perda do enxerto.</p><p><strong>A) Aumentar a imunossupressão:</strong> Esta alternativa está incorreta. Aumentar a imunossupressão seria desastroso, pois pioraria a replicação viral e aceleraria a destruição tubular. A resposta imune é essencial para controlar a infecção por BK, e suprimi-la favorece a progressão da doença.</p><p><strong>B) Diminuir a imunossupressão:</strong> Esta é a resposta correta. A redução da imunossupressão é a primeira linha do tratamento. O objetivo é restaurar a competência imunológica para controlar a replicação viral, preservando a função do enxerto. A estratégia envolve redução de antimetabólitos (micofenolato) e possíveis ajustes em inibidores de calcineurina, sempre balanceando o risco de rejeição versus controle viral.</p><p><strong>C) Leflunomida:</strong> Esta alternativa está incorreta. Embora a leflunomida tenha sido estudada para nefropatia por BK devido às suas propriedades antivirais, não é recomendada como primeira linha. Estudos não demonstraram benefício consistente, e o medicamento apresenta perfil de toxicidade significativo, especialmente hematológica e hepática.</p><p><strong>D) Cidofovir:</strong> Esta opção está incorreta. O cidofovir é um antiviral com atividade contra BK, mas apresenta toxicidade renal grave que limita seu uso em transplante renal. Além disso, não é aprobado para esta indicação e não é considerado primeira linha de tratamento.</p><p><strong>Veredito final:</strong> A alternativa B é a resposta correta. A redução da imunossupressão é o pilares do tratamento da nefropatia por BK, permitiendo a recuperação da vigilância imunológica e controle da replicação viral, com preservação da função do enxerto.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_ImunossuprimidosNaohiv",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Qual é a droga que reduz a taxa de crescimento dos cistos na doença renal policística autossômica dominante?",
+      "alternativas": [
+        "Tolvaptan.",
+        "Everolimos.",
+        "Rituximab.",
+        "Tacrolimos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre tratamento específico da doença renal policística autossômica dominante (DRPAD). A DRPAD é uma condição genética caracterizada pelo desenvolvimento progressivo de cistos renais que levam à perda progressiva da função renal.</p><p><strong>A resposta correta é A - Tolvaptan.</strong> Este é o primeiro e único medicamento aprovado especificamente para reduzir a taxa de crescimento dos cistos na DRPAD. O Tolvaptan atua como antagonista dos receptores V2 da vasopressina, reduzindo a progressão da doença renal. Estudos clínicos demostraram que ele pode retardar o crescimento dos cistos em aproximadamente 50% comparado ao placebo.</p><p>Vamos analisar as outras alternativas incorretas:</p><p><strong>B) Everolimos:</strong> Este é um immunosupressor inibidor da mTOR usado em transplantes. Não tem indicação para DRPAD e não demonstra eficácia na redução de cistos renais.</p><p><strong>C) Rituximab:</strong> Anticorpo monoclonal anti-CD20 usado em doenças autoimunes e hematológicas. Não tem papel no tratamento da DRPAD, sendo irrelevante para o crescimento de cistos.</p><p><strong>D) Tacrolimos:</strong> Outro immunosupressor potente usado em transplantes. Da mesma forma que o Everolimos, não possui indicação para DRPAD e não altera a progressão dos cistos.</p><p><strong>Veredito final:</strong> Tolvaptan permanece como a única opção farmacológica comprovada para reduzir a progressão da DRPAD, tornando-se um marco importante no tratamento desta condição genética.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "No exame simples de urina, a presença de cristais hexagonais sugere:",
+      "alternativas": [
+        "ácido úrico.",
+        "estruvita.",
+        "oxalato de cálcio monohidratado.",
+        "cistina."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 aborda conhecimento específico sobre urina e cristalúria. O exame simples de urina com pesquisa de cristais é um teste importante que pode fornecer pistas diagnóstivas valiosas sobre diferentes condições metabólicas e doenças.</p><p><strong>A resposta correta é D - cistina.</strong> Os cristais hexagonais são patognomônicos da cistinúria, uma doença genética rara do transporte de aminoácidos que resulta no acúmulo e precipitação de cistina na urina. A forma hexagonal é característica e permite o diagnóstico diferencial imediato.</p><p>Analisando as outras alternativas que também são tipos de cristaisurinários, mas com formas diferentes:</p><p><strong>A) ácido úrico:</strong> Forma cristais em várias configurações, como romboidais, barras ou taças, mas nunca hexagonais. A forma hexagonal é específica da cistina.</p><p><strong>B) estruvita:</strong> Forma cristais em formato de tampa de caixão (coffin lid), sendo característica deinfecções urinárias por bactérias urease-positivas como Proteus.</p><p><strong>C) oxalato de cálciomonohidratado:</strong> Forma cristais envelopados (dumbbell-shaped) ou agulhas, mas também não apresentam forma hexagonal.</p><p><strong>Dica prática:</strong> A forma hexagonal no exame de urina é virtualmente diagnóstica de cistinúria, uma doença de transmissão autossômica recessiva que cursa com cálculo renais recidivantes desde jovem.</p><p><strong>Veredito final:</strong> A presença de cristais hexagonais no exame de urina é indicativa de cistinúria, tornando a alternativa D a única correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_TiposDeCalculosRenais"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "É contraindicação absoluta a uma biópsia renal percutânea:",
+      "alternativas": [
+        "cistos renais.",
+        "hipertensão arterial.",
+        "diátese hemorrágica não controlada.",
+        "rim único."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 evalua o conhecimento sobre contraindicações para procedimento invasivo em nefrologia. A biópsia renal percutânea é um procedimento diagnóstico fundamental, mas que carrega riscos significativos que devem ser cuidadosamente avaliados.</p><p><strong>A resposta correta é C - diátese hemorrágica não controlada.</strong> Esta é considerada contraindicação absoluta porque representa risco inaceitável de sangramento severo durante ou após o procedimento. A biópsia renal utiliza agulha que atravessa a cápsula renal, atravessa o parênquima e atinge o tecido renal, aumentando significativamente o risco de hemorragia em pacientes com distúrbios de coagulação.</p><p>Vamos analisar as outras alternativas que são contraindicações relativas, não absolutas:</p><p><strong>A) cistos renais:</strong> Contraindicação relativa. A presença de cistos pode aumentar a complexidade técnica, mas com imagem em tempo real (ultrassom), o procedimento ainda pode ser realizado com segurança, desviando a trajetória da agulha.</p><p><strong>B) hipertensão arterial:</strong> Contraindicação relativa. Hipertensão mal controlada aumenta o risco de sangramento, mas se a pressão arterial estiver adequadamente controlada (idealmente <140/90 mmHg), o procedimento pode ser realizado com vigilância especial.</p><p><strong>D) rim único:</strong> Contraindicação relativa. Embora aumente o risco potencial, se os benefícios do diagnóstico superarem os riscos, e se outros fatores favorecerem, o procedimento pode ser realizado com técnicas de precisão reforçada.</p><p><strong>Conceito fundamental:</strong> Contraindicação absoluta significa que o risco supera qualquer benefício potencial, tornando o procedimento proibido. Na diátese hemorrágica não controlada, o risco de vida supera qualquer benefício diagnóstico.</p><p><strong>Veredito final:</strong> A diátese hemorrágica não controlada é a única contraindicação absoluta entre as apresentadas, sendo a alternativa C a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Qual das seguintes drogas usadas no transplante renal é mais diabetogênica?",
+      "alternativas": [
+        "Ciclosporina.",
+        "Tacrolimos.",
+        "Sirolimos.",
+        "Micofenolato mofetil."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 aborda efeitos colaterais metabólicos importantes da terapia immunosupressora no transplante renal. A diabetes mellitus pós-transplante (DMPT) é uma complicação significativa que afeta o prognóstico do enxerto e a qualidade de vida do paciente.</p><p><strong>A resposta correta é B - Tacrolimos.</strong> Entre os immunosupressores usados no transplante renal, o Tacrolimos é reconhecido como o mais diabetogênico. Estudos comparativos demonstram que ele causa disfunção das células beta pancreáticas com maior frequência e gravidade comparado a outros agentes da mesma classe. A incidência de DMPT com Tacrolimos varia entre 15-25%, significativamente superior aos outros medicamentos.</p><p>Vamos analisar as outras alternativas immunosupressoras:</p><p><strong>A) Ciclosporina:</strong> Também é diabetogênica, mas em menor grau que o Tacrolimos. A incidência de DMPT com Ciclosporina varia entre 8-15%, sendo aproximadamente metade da observada com Tacrolimos.</p><p><strong>C) Sirolimos:</strong> Apresenta perfil metabólico favorável, com menor propensão ao desenvolvimento de diabetes. Inclusive, alguns estudos sugerem que pode ter efeito protetor contra desenvolvimento de diabetes.</p><p><strong>D) Micofenolato mofetil:</strong> Não está associado ao desenvolvimento de diabetes. Age inibindo a síntese de purinas e não possui efeitos diretos na função das células beta pancreáticas.</p><p><strong>Relevância clínica:</strong> A DMPT aumenta significativamente o risco de infecções, doenças cardiovasculares e perda do enxerto, sendo fundamental que o nefrologista conheça o perfil diabetogênico de cada medicamento para adequado manejo e prevenção.</p><p><strong>Veredito final:</strong> Tacrolimos é o mais diabetogênico entre os immunosupressores apresentados, tornando-se a alternativa B a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "No caso de um paciente transplantado renal com citomegalovirose resistente ao ganciclovir, a melhor opção é:",
+      "alternativas": [
+        "Foscarnet.",
+        "Quinolona.",
+        "Aciclovir.",
+        "Valganciclovir."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia conhecimento sobre manejo de infecção oportunística grave em pacientes transplantados. A citomegalovirose (CMV) é uma das infecções mais comuns e graves em pacientes imunossuprimidos, especialmente no período pós-transplante.</p><p><strong>A resposta correta é A - Foscarnet.</strong> O Foscarnet é considerado o medicamento de segunda escolha quando há resistência ou intolerância ao ganciclovir no tratamento de CMV. Ele atua inibindo a DNA polimerase viral de forma diferente do ganciclovir, sendo eficaz contra cepas resistentes. O Foscarnet é um pirofosfato inorgânico que não requer fosforilação viral para ativação, o que o torna eficaz contra mutantes resistentes ao ganciclovir.</p><p>Vamos analisar as outras alternativas que são incorretas para CMV resistente:</p><p><strong>B) Quinolona:</strong> Classe de antibióticos antibacterianos que não tem atividade antiviral significativa contra herpesvírus, incluindo CMV. São usadas para infecções bacterianas oportunísticas, mas não para tratamento de CMV.</p><p><strong>C) Aciclovir:</strong> Indicado para herpes simples e varicela-zoster, mas tem atividade muito limitada contra CMV. A dose necessária para CMV seria tóxica, sendo considerado inadequado para esta indicação.</p><p><strong>D) Valganciclovir:</strong> Este é na verdade o pró-fármaco do ganciclovir oral, pertencendo à mesma classe de medicamentos. Se há resistência ao ganciclovir, o Valganciclovir também será ineficaz, já que ambos dependem da mesma fosforilação viral para ativação.</p><p><strong>Importância clínica:</strong> A resistência ao ganciclovir é uma situação crítica no transplantado renal, pois além do Foscarnet, outras opções limitadas incluem o Letermovir (para profilaxia) e o Cidofovir, que também é nefrotóxico.</p><p><strong>Veredito final:</strong> O Foscarnet é a escolha adequada para CMV resistente ao ganciclovir, tornando-se a alternativa A a resposta correta.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Um paciente com cisto renal complexo, que mostra área sólida adjacente a líquida na tomografia de abdome, tem classificação de Bosniak:",
+      "alternativas": [
+        "I.",
+        "II.",
+        "III.",
+        "IV."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre a classificação de Bosniak para cistos renais complexos, um tema fundamental em radiologia diagnóstica e urologia.</p><p><strong>A resposta correta é D - classificação IV.</strong> Cistos renais complexos com áreas sólidas adjacentes a líquidas são característicos da categoria Bosniak IV, que indica alta probabilidade de malignidade (carcinoma renal).</p><p><strong>Vamos analisar cada categoria de Bosniak:</strong></p><p><strong>Categoria I:</strong> Cistos simples, com paredes finas, sem septos, calcificações ou componentes sólidos. Menos de 2% de chance de malignidade.</p><p><strong>Categoria II:</strong> Cistos minimamente complexos, com alguns septos finos, calcificações finas ou infecção. Chance de malignidade entre 0-10%.</p><p><strong>Categoria III:</strong> Cistos moderadamente complexos, com septos mais grossos, calcificações mais extensas. Chance de malignidade entre 40-60%, necessitando avaliação cirúrgica ou seguimento rigoroso.</p><p><strong>Categoria IV:</strong> Cistos com componentes sólidos/áreas de realce evidentes. Representa alta probabilidade de carcinoma renal (85-100% de chance de malignidade), exigindo intervenção cirúrgica.</p><p>O achado de área sólida adjacente a líquida na tomografia é o dado-chave que diferencia a categoria IV das demais. Esta classificação é essencial para o manejo adequado, evitando tanto subtratamento quanto overtreatment.</p><p><strong>Veredito:</strong> A presença de área sólida adjacente a líquida classifica o cisto como Bosniak IV (alternativa D), indicando alto risco de malignidade e necessidade de avaliação urológica urgente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_NeoplasiasECistosRenais"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Leia o caso clínico a seguir. Uma mulher de 64 anos foi atendida no ambulatório de neurologia com relato de história de quedas iniciados há um ano que progrediram ao longo do tempo. Ela relatou que cai repentinamente, sem um gatilho. Percebeu também\ndificuldade em descer escadas. No exame do olhar primário, ela tinha nistagmo sutil. O pescoço dela estava hiperestendido e tinha dificuldade para flexioná-lo. Apresentou visão vertical prejudicada, predominantemente quando olhava para baixo. No entanto, na\nmanobra óculocefálica vertical, os movimentos dos olhos para baixo eram normais. Foi vista rigidez leve bilateral nas extremidades superiores. No Pull test (o examinador puxa a paciente para trás, instruindo o paciente dar um passo para trás e evitar cair), ela teve\nretropulsão significativa e teria caído se não tivesse sido amparada pelo examinador. Qual é o diagnóstico mais provável nesta paciente?",
+      "alternativas": [
+        "Doença de Parkinson idiopática com queda precoce.",
+        "Atrofia de múltiplos sistemas.",
+        "Paralisia supranuclear progressiva.",
+        "Degeneração ganglionar corticobasal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 explora seu conhecimento sobre síndromes parkinsonianas, focando no diagnóstico diferencial entre os principais parkinsonismos atípicos.</p><p><strong>A resposta correta é C - Paralisia Supranuclear Progressiva (PSP).</strong> Este caso apresenta características clássicas e muito específicas da forma Richardson (PSP-Richardson), o subtipo mais comum da PSP.</p><p><strong>Análise das características do caso:</strong></p><p>• <strong>Início precoce de quedas:</strong> Quedas súbitas sem gatilho são típicas da PSP, diferindo do Parkinson onde quedas aparecem tardiamente</p><p>• <strong>Dificuldade para descer escadas:</strong> Vários mecanismos contribuem: instabilidade postural, paresia vertical (principalmente olhar para baixo), rigidez axial com hiperextensão cervical</p><p>• <strong>Nistagmo sutil no olhar primário:</strong> Achado comum na PSP, indicador de comprometimento do tronco encefálico</p><p>• <strong>Hiperextensão cervical:</strong> Característica típica da PSP, com postura de \"pescoço reto\"</p><p>• <strong>Visão vertical prejudicada:</strong> Limitação da movimentação ocular vertical, especialmente para baixo, é patognomônica da PSP</p><p>• <strong>Manobra óculocefálica normal:</strong> Esta é uma pegadinha clássica! Na PSP, a limitação é supranuclear (núcleo oculomotor), mas a manobra óculocefálicausa controle motor do tronco cerebral, que permanece preservado</p><p>• <strong>Retropulsão no Pull test:</strong> Instabilidade postural precoce e grave é característica da PSP</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Doença de Parkinson idiopática:</strong> Não apresenta retropulsão precoce nem paresia vertical</p><p><strong>B) Atrofia de múltiplos sistemas:</strong> Frequentemente apresenta sintomas autonômicos e disautonomia precoce, ausentes neste caso</p><p><strong>D) Degeneração ganglionar corticobasal:</strong> Caracterizada por assimetria significativa, apraxia e \"alien limb\", ausentes aqui</p><p><strong>Veredito:</strong> A combinação de quedas precoces, paresia vertical com manobra óculocefálica preservada, hiperextensão cervical e retropulsão é patognomônica da PSP (alternativa C).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "<html><head></head><body>Leia o caso clínico a seguir. Um homem caucasiano de 45 anos é avaliado no ambulatório de Neurologia e relata que há dois meses desenvolveu uma perda quase completa de visão do olho esquerdo. Tal sintoma não foi resolvido apesar do uso de esteroides intravenosos e posterior uso de esteroides orais com redução gradual. Duas semanas atrás, ele desenvolveu perda visual do olho direito, que persistiu. Ele tem parestesias tipo queimação em ambos os pés, refere urgência urinária iniciada há um ano. Sua ressonância magnética da medula cervical é mostrada na figura a seguir. Seu líquido espinhal mostra 50 leucócitos/mm³, com 45% de neutrófilos e 55% de linfócitos, proteína de 75 mg / dL e bandas oligoclonais negativa. VDRL no liquor é negativo, HIV é negativo,\nHTLV I e II são negativos e o nível de vitamina B12 é normal. FAN é moderadamente elevado a um título de 1: 128. Qual é o provável diagnóstico?\n\n<img src=\"https://medbrave.com.br/questions/ses-go-2022-r3/qQ33.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Mielite lúpica.",
+        "Esclerose múltipla fulminante.",
+        "Neuromielite óptica.",
+        "Degeneração combinada subaguda."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 testa seu conhecimento sobre a Doença do Espectro da Neuromielite Óptica (DENMO), uma patologia inflamatória desmielinizante do sistema nervoso central que frequentemente confunde candidatos com esclerose múltipla.</p><p><strong>A resposta correta é C - Neuromielite Óptica.</strong> Este caso apresenta características patognomônicas da DENMO, que se diferencia claramente da esclerose múltipla.</p><p><strong>Por que é Neuromielite Óptica:</strong></p><p>• <strong>Neurite óptica bilateral sequencial:</strong> Atingimento bilateral é muito mais comum na DENMO que na EM</p><p>• <strong>Severidade do acometimento:</strong> Perda quase completa da visão em cada episódio é típica da DENMO, enquanto na EM geralmente há melhora parcial</p><p>• <strong>Mielite longitudinalmente extensa:</strong> A RM mostra acometimento de mais de 3 corpos vertebrais, characteristic de DENMO (na EM as lesões medulares são menores)</p><p>• <strong>Falta de resposta aos corticoides:</strong> A DENMO responde mal aos corticoides, diferindo da EM</p><p>• <strong>Perfil inflamatório do LCR:</strong> 50 células/mm³ com predomínio de neutrófilos (45%) é mais típico de DENMO</p><p>• <strong>Sintomas associados:</strong> Parestesias e disfunção autonômica (urgência urinária) são comuns na DENMO</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Mielite lúpica:</strong> Não há outros critérios sistêmicos de lupus, apenas FAN isolado (pode ser positivo em várias condições)</p><p><strong>B) Esclerose múltipla fulminante:</strong> A EM típica tem neurite óptica unilateral, lesões medulares curtas e resposta melhor aos corticoides</p><p><strong>D) Degeneração combinada subaguda:</strong> Característica da deficiência de B12 (aqui normal), com acometimento póstero-lateral da medula</p><p><strong>Diferencial importante:</strong> A DENMO é diagnosticada pela presença de: neurite óptica + mielite + pelo menos 2 critérios auxiliares (3 critérios de RM ou 1 critério de RM + teste positivo para anticorpos)</p><p><strong>Veredito:</strong> A neurite óptica bilateral sequencial, mielite extensa, má resposta aos corticoides e perfil inflamatório favorecem strongly a DENMO (alternativa C).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasImunologicasDoSistemaNe"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Um paciente é admitido após sofrer traumatismo craniano. A tomografia computadorizada de crânio é mostrada a seguir. Em relação às condições apresentadas, sabe-se que:",
+      "alternativas": [
+        "a hemorragia se origina do rompimento de veias pon- te na superfície do cérebro.",
+        "a hemorragia se origina da ruptura da artéria menín- gea média.",
+        "está associado a aneurismas de Charcot-Bouchard.",
+        "clipar ou embolizar o aneurisma roto impedirá o res- sangramento."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre traumatismo cranioencefálico e o tipo de hemorragia intracraniana mais comum neste contexto.</p><p><strong>A resposta correta é A - a hemorragia se origina do rompimento de veias ponte na superfície do cérebro.</strong> Esta questão refere-se ao hematoma subdural agudo, uma das principais causas de morte no TCE.</p><p><strong>Análise fisiopatológica:</strong></p><p>• <strong>Hematoma subdural agudo:</strong> É causado pelo rompimento das veias pontes (bridging veins) que cruzam o espaço subdural, conectando o cérebro às estruturas durais</p><p>• <strong>Mecanismo de trauma:</strong> Geralmente associado a trauma moderado a grave com aceleração-desaceleração rápida</p><p>• <strong>Localização:</strong> As veias ponte estão na superfície do cérebro, explicita a alternativa A</p><p>• <strong>Prognóstico:</strong> Variável dependendo do volume e efeito de massa</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>B) Artéria meníngea média:</strong> A ruptura desta artéria causa hematoma epidural ( extradural), não subdural</p><p><strong>C) Aneurismas de Charcot-Bouchard:</strong> São microaneurismas das artérias perfurantes em hipertensos, relacionados a hemorragia intracerebral (putaminal), não associadas ao TCE</p><p><strong>D) Clipar ou embolizar aneurisma:</strong> Esta alternativa refere-se a hemorragia subaracnóidea por ruptura aneurismática, completamente diferente do cenário de TCE</p><p><strong>Diferencial importante:</strong> No TCE, as principais hemorragias são: hematoma subdural (veias ponte), hematoma epidural (artéria meníngea média), e hemorragia intracerebral (contusão/lesão vascular traumática)</p><p><strong>Veredito:</strong> A hemorragia subdural aguda no contexto de TCE origina-se do rompimento das veias ponte na superfície do cérebro (alternativa A).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Leia o caso clínico a seguir. Uma mulher de 69 anos se apresenta à emergência em duas horas e 35 minutos a partir do início súbito de hemiparesia esquerda e heminegligência. A pontuação do National Institutes of Health Stroke Scale (NIHSS) é 12. Uma tomografia de crânio não mostra hemorragia. Em relação ao ativador do plasminogênio tecidual (tPA),",
+      "alternativas": [
+        "o risco de hemorragia com tPA é semelhante ao do placebo.",
+        "a administração anterior traz um melhor prognóstico e um menor risco de hemorragia.",
+        "não há dose máxima.",
+        "seu uso melhora a curto prazo, mas não a longo prazo os resultados clínicos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre trombólise endovenosa no acidente vascular cerebral agudo, um tema fundamental em neurologia de emergência.</p><p><strong>A resposta correta é B - a administração anterior traz um melhor prognóstico e um menor risco de hemorragia.</strong> Esta alternativa refere-se ao conceito fundamental \"time is brain\" - o quanto antes o tPA for administrado, melhor o prognóstico e menor o risco de complicações.</p><p><strong>Evidência científica e janelas terapêuticas:</strong></p><p>• <strong>Janela de 4,5 horas:</strong> Para pacientes entre 0-3h (AHA 2024): 17% melhor retorno funcional, redução de mortalidade 14% vs 19%</p><p>• <strong>Menor risco de hemorragia:</strong> Administração precoce (dentro de 3h) vs tardia (3-4,5h) tem menor risco de transformação hemorrágica sintomática</p><p>• <strong>Meta temporal:</strong> \"Door-to-needle time\" deve ser < 60 minutos, idealmente < 30 minutos</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Risco igual ao placebo:</strong> Falso. O risco de hemorragia intracraniana sintomática com tPA é maior que placebo (6,4% vs 0,6%), mas o benefício supera os riscos</p><p><strong>C) Não há dose máxima:</strong> Falso. A dose é 0,9 mg/kg (dose máxima 90 mg), com 10% em bolus e 90% em infusão por 60 minutos</p><p><strong>D) Melhora apenas a curto prazo:</strong> Falso. O benefício funcional (mRS) persiste a longo prazo, com NNT de 9 para benefício na escala de Rankin modificada aos 3 meses</p><p><strong>Considerações para o caso:</strong> Paciente com 69 anos, NIHSS 12, dentro da janela de 4,5 horas, sem contraindicações aparentes. O benefício supera o risco, e quanto mais precoce a administração, melhor o desfecho.</p><p><strong>Veredito:</strong> A administração precoce do tPA está associada a melhor prognóstico funcional e menor risco de transformação hemorrágica comparado à administração mais tardia (alternativa B).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Nefrologia_AcidentesVascularesCerebraisAv_1"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Uma mulher de 72 anos é levada ao ambulatório de neurologia por seus familiares apresentando deficiência de memória e declínio nas habilidades funcionais. Durante o exame, quando é convidada a simular como se escova os dentes, ela luta, usa posturas e movimentos muito incomuns, e eventualmente usa o dedo como escova de dentes, em vez de fingir segurar uma escova de dentes. Quando solicitado a mostrar como ela abriria uma carta com um abridor de cartas, ela usa o dedo como lâmina, em vez de fingir que\nsegura um abridor de cartas e, novamente, executa isso com muitos movimentos e posturas incomuns. Neste caso, a apraxia apresentada é do tipo:",
+      "alternativas": [
+        "ideomotora.",
+        "de condução.",
+        "ideacional.",
+        "de dissociação."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SES-GO 2022 avalia seu conhecimento sobre tipos de apraxia, especificamente a capacidade de executar movimentos voluntários e gestuais.</strong></p><p>Vamos analisar o caso: a paciente apresenta déficit de memória e declínio funcional, e durante os testes de simulação, não consegue representar adequadamente ações motoras. Ela usa o dedo como escova de dentes e como lâmina de abridor, executando movimentos incomuns e posturas inadequadas.</p><p><strong>A resposta correta é A - apraxia ideomotora.</strong></p><p>Para entender por que esta é a resposta correta, vamos revisar os tipos de apraxia:</p><p><strong>Apraxia ideomotora (A):</strong> É caracterizada pela perda da capacidade de executar movimentos solicitados ou de imitar gestos, embora o paciente compreenda a tarefa. O problema está na execução do movimento solicitado, não no conceito da ação. Isso exatamente o que vemos no caso - a paciente compreende o que deve fazer (escovar dentes, abrir carta) mas não consegue executar adequadamente os movimentos.</p><p><strong>Apraxia ideacional (C):</strong> Ocorre quando há alteração na sequência de ações complexas. O paciente não consegue planejar ou executar uma série de movimentos ordenados. Não é o caso aqui, pois o problema não está na sequência, mas na representação motora individual.</p><p><strong>Apraxia de condução (B):</strong> É rara e envolve a desconexão entre áreas conceptuais e motoras do cérebro, gerando imitação deficiente. Não se aplica ao quadro.</p><p><strong>Apraxia de dissociação (D):</strong> Relacionada a déficits específicos de execução motora em contextos específicos, não condiz com o quadro apresentado.</p><p><strong>Veredito:</strong> O caso descreve claramente apraxia ideomotora, onde a paciente compreende o que deve fazer mas não consegue executar os movimentos adequadamente, usando símbolos inadequados (dedo como escova, dedor como lâmina) e apresentando movimentos incomuns.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Demencias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Leia o caso clínico a seguir. Paciente do sexo masculino, de 54 anos, iniciou há cinco dias tosse seca, febre de 37,9 ºC, dor de garganta, congestão nasal, espirros e coriza hialina e anosmia. Alega dispneia aos grandes esforços. Nega chiado no peito. Teve\ncontato com esposa que confirmou Covid-19 há sete dias. Nega tabagismo, nega patologias prévias, nega uso de medicações contínuas. Nega ter vacinado para Covid-19. Ao exame: SOP² 95%, FC 102 BPM FR: 22 IRM PA: 110X70 mmHg. Bom estado geral,\nafebril, eupneico, consciente e orientado. Ausculta pulmonar sem alterações. Oroscopia sem placas ou hiperemia. Sabendo do momento atual de Covid-19, qual(is) exame(s) é(são) mais indicado(s) para confirmação do diagnóstico desse paciente?",
+      "alternativas": [
+        "Sorologia IgM e IgG para Covid-19.",
+        "Hemograma, gasometria arterial, D-dímero, DHL, ferritina, TGO e TGP.",
+        "PCR SarsCov2, Swab nasal.",
+        "Tomografia de tórax."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da SES-GO 2022 testa seu conhecimento sobre o diagnóstico laboratorial de COVID-19 no contexto epidemiológico atual.</strong></p><p>O paciente apresenta quadro clínico típico de síndrome gripal: tosse seca, febre baixa, dor de garganta, congestão nasal, espirros e coriza hialina, associado à anosmia (perda do olfato) que é altamente específica para COVID-19. Além disso, teve contato com caso confirmado há sete dias.</p><p><strong>A resposta correta é C - PCR SarsCov2, Swab nasal.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Sorologia IgM e IgG):</strong> Incorreta. A sorologia detecta anticorpos, que levam tempo para se desenvolver (geralmente 7-14 dias após o início dos sintomas). Como o paciente está no início do quadro (5 dias), a sensibilidade da sorologia é baixa nesta fase aguda.</p><p><strong>Alternativa B (Hemograma, gasometria, D-dímero, DHL, ferritina, TGO/TGP):</strong> Incorreta. Estes exames podem ser úteis para avaliar gravidade e complicações da COVID-19, mas NÃO são diagnósticos. São exames complementares para manejo clínico, não para confirmação etiológica.</p><p><strong>Alternativa C (PCR SarsCov2, Swab nasal):</strong> Correta. O RT-PCR é o exame padrão-ouro para diagnóstico de COVID-19 na fase aguda. Detecta o material genético do vírus diretamente nas secreções respiratórias, com alta sensibilidade e especificidade. O swab nasal é o método de coleta recomendado para maior sensibilidade.</p><p><strong>Alternativa D (Tomografia de tórax):</strong> Incorreta. A tomografia pode mostrar alterações compatíveis com COVID-19 (como vidro fosco), mas não é específica e pode estar normal na fase inicial. Não confirma o diagnóstico etiológico.</p><p><strong>Veredito:</strong> Para confirmação diagnóstica de COVID-19 em paciente com quadro agudo típico, o RT-PCR em swab nasal é o exame de escolha na atualidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Infectologia_Covid_InfluenzaCaracteristicasGerais"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Paciente do sexo masculino, de 68 anos, tabagista há 50 anos, com carga tabágica de 100 maços/ano. Refere dispneia progressiva até moderados esforços, mmrc2, iniciado há 15 anos, associado a tosse seca diária. Alega perda de 10 kg em cinco anos. Nega febre,\nnega sudorese. Procurou atendimento para fazer um checkup pulmonar. Alega que tem vontade de parar de fumar, mas acha difícil conseguir por ter muitos problemas familiares. Teste de fargerstrom: 7. Ao exame, bom estado geral, emagrecido, consciente,\norientado, vigil e eupneico; ausculta pulmonar com redução difusa do murmúrio vesicular; SOP² 94%, FC: 89 BPM, FR: 20 IRM, PA: 130x90 mmHg; sem outras alterações no exame físico. Qual o grau de dependência a nicotina deste paciente?",
+      "alternativas": [
+        "Baixa.",
+        "Média.",
+        "Elevada.",
+        "Muito elevada."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da SES-GO 2022 avalia seu conhecimento sobre a avaliação da dependência de nicotina utilizando o Teste de Fagerström.</strong></p><p>O paciente é um homem de 68 anos, tabagista há 50 anos, com carga tabágica de 100 maços/ano (muito elevada). Apresenta dispneia progressiva, tosse seca diária, perda de 10 kg em 5 anos, e tem test score de 7 pontos no teste de Fagerström.</p><p><strong>A resposta correta é C - dependência elevada.</strong></p><p>Vamos analisar a pontuação do Teste de Fagerström:</p><p><strong>Escala de Fagerström (0-10 pontos):</strong>- 0-2: Muito baixa dependência- 3-4: Baixa dependência  - 5: Baixa-média dependência- 6-7: Média-alta dependência- 8-10: Muito alta dependência</p><p><strong>Alternativa A (Baixa):</strong> Incorreta. Com 7 pontos, a dependência não é baixa. Pacientes com dependência baixa geralmente pontuam entre 0-4.</p><p><strong>Alternativa B (Média):</strong> Incorreta. Aunque a pontuação está na faixa limite, o escore de 7 indica dependência mais alta que média.</p><p><strong>Alternativa C (Elevada):</strong> Correta. O escore de 7 pontos no teste de Fagerström classifica o paciente como tendo dependência elevada (6-7 pontos). Isso se correlaciona com o extenso histórico de tabagismo (50 anos) e alta carga tabágica (100 maços/ano).</p><p><strong>Alternativa D (Muito elevada):</strong> Incorreta. Escores de 8-10 pontos indicariam dependência muito elevada. O escore de 7 fica na categoria imediatamente abaixo.</p><p><strong>Veredito:</strong> O paciente apresenta dependência elevada à nicotina com escore de Fagerström = 7, necessitando de abordagem intensiva para cessação do tabagismo.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_IntroducaoAPneumologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Paciente do sexo masculino, de 68 anos, tabagista há 50 anos, com carga tabágica de 100 maços/ano. Refere dispneia progressiva até moderados esforços, mmrc2, iniciado há 15 anos, associado a tosse seca diária. Alega perda de 10 kg em cinco anos. Nega febre,\nnega sudorese. Procurou atendimento para fazer um checkup pulmonar. Alega que tem vontade de parar de fumar, mas acha difícil conseguir por ter muitos problemas familiares. Teste de fargerstrom: 7. Ao exame, bom estado geral, emagrecido, consciente, orientado, vigil e eupneico; ausculta pulmonar com redução difusa do murmúrio vesicular; SOP² 94%, FC: 89 BPM, FR: 20 IRM, PA: 130x90 mmHg; sem outras alterações no exame físico. Qual estágio motivacional desse paciente para cessar o tabagismo?",
+      "alternativas": [
+        "Pré-contemplação.",
+        "Contemplação.",
+        "Preparação.",
+        "Ação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da SES-GO 2022 avalia seu conhecimento sobre os estágios motivacionais para mudança de comportamento no modelo transteórico.</strong></p><p>O paciente expressa claramente sua situação: tem vontade de parar de fumar, mas acha difícil conseguir devido aos problemas familiares. Ele reconhece a necessidade de mudança, mas ainda não está pronto para implementá-la imediatamente.</p><p><strong>A resposta correta é B - Contemplação.</strong></p><p>Vamos analisar os estágios motivacionais:</p><p><strong>Pré-contemplação (A):</strong> O individuo não considera mudar o comportamento, não vê necessidade ou não está ciente dos problemas. No caso, o paciente expressa claramente que tem vontade de parar, descartando este estágio.</p><p><strong>Contemplação (B):</strong> O individuo reconhece o problema e considera mudar, mas não se sente pronto para ação imediata.weighs prós e contras, mas ainda tem ambivalência. <strong>Isso caracteriza exatamente o caso do paciente:</strong> ele tem vontade de parar mas encuentra dificuldades (problemas familiares) que o impedem de avançar.</p><p><strong>Preparação (C):</strong> O individuo planeja mudança em futuro próximo (30 dias) e pode ter tomado algumas ações mínimas. Não é o caso aqui, pois ele reconhece dificuldades que o impedem.</p><p><strong>Ação (D):</strong> O individuo já está implementando mudanças comportamentais. Claramente não se aplica ao caso.</p><p><strong>Intervenções adequadas para contemplação:</strong>- Explorar ambivalência e motivar mudança- Trabalhar estratégias para superar barreiras- Aumentar confiança na capacidade de mudança- Fortalecer motivação intrínseca</p><p><strong>Veredito:</strong> O paciente está no estágio de contemplação - reconhece a necessidade de mudança mas ainda não está pronto para implementação devido a barreiras percebidas (problemas familiares).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Paciente do sexo masculino, de 68 anos, tabagista há 50 anos, com carga tabágica de 100 maços/ano. Refere dispneia progressiva até moderados esforços, mmrc2, iniciado há 15 anos, associado a tosse seca diária. Alega perda de 10 kg em cinco anos. Nega febre,\nnega sudorese. Procurou atendimento para fazer um checkup pulmonar. Alega que tem vontade de parar de fumar, mas acha difícil conseguir por ter muitos problemas familiares. Teste de fargerstrom: 7. Ao exame, bom estado geral, emagrecido, consciente,\norientado, vigil e eupneico; ausculta pulmonar com redução difusa do murmúrio vesicular; SOP² 94%, FC: 89 BPM, FR: 20 IRM, PA: 130x90 mmHg; sem outras alterações no exame físico. Quais exames complementares devem ser solicitados para esse paciente para rastreamento de câncer de pulmão e doenças associadas ao tabagismo?",
+      "alternativas": [
+        "Espirometria e exame de escarro.",
+        "Tomografia de tórax e espirometria.",
+        "Gasometria arterial e hemograma.",
+        "Raio X de tórax e hemograma."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da SES-GO 2022 avalia seu conhecimento sobre rastreamento de câncer de pulmão e doenças relacionadas ao tabagismo em pacientes de alto risco.</strong></p><p>O paciente apresenta perfil de altíssimo risco: 68 anos, tabagista há 50 anos, carga tabágica de 100 maços/ano (muito elevada), dispneia progressiva, tosse seca e perda ponderal. Este é o perfil ideal para rastreamento populacional de câncer de pulmão.</p><p><strong>A resposta correta é B - Tomografia de tórax e espirometria.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Espirometria e exame de escarro):</strong> Incorreta. A espirometria é fundamental para avaliar função pulmonar em tabagistas, mas o exame de escarro (citologia) tem baixa sensibilidade para rastreamento de câncer de pulmão. Não é recomendado como exame único de rastreamento.</p><p><strong>Alternativa B (Tomografia de tórax e espirometria):</strong> Correta. Esta é a combinação ideal. A tomografia de tórax de baixa dose (TCBD) é o exame padrão-ouro para rastreamento de câncer de pulmão em pacientes de alto risco, conforme diretrizes brasileiras e internacionais. A espirometria é essencial para avaliar DPOC e função pulmonar comprometida pelo tabagismo.</p><p><strong>Alternativa C (Gasometria arterial e hemograma):</strong> Incorreta. Estes exames são úteis para avaliação de função respiratória e complicações, mas não para rastreamento de câncer de pulmão. A gasometria pode indicar insuficiência respiratória, e hemograma pode mostrar alterações secundárias, mas não detectam lesões neoplásicas precoces.</p><p><strong>Alternativa D (Raio X de tórax e hemograma):</strong> Incorreta. O raio X de tórax tem baixa sensibilidade para detecção de câncer de pulmão em estágio inicial, especialmente em comparação com TC. O hemograma não tem papel no rastreamento.</p><p><strong>Base científica:</strong> Segundo o Ministério da Saúde e sociedades médicas brasileiras, o rastreamento de câncer de pulmão com TC de baixa dose anual está indicado para indivíduos de 55-80 anos, tabagistas atuais ou ex-tabagistas de até 15 anos, com carga tabágica ≥ 20 maços/ano. Este paciente preenche todos os critérios.</p><p><strong>Veredito:</strong> A tomografia de tórax de baixa dose e espirometria são os exames essenciais para rastreamento e avaliação completa de doenças relacionadas ao tabagismo neste paciente de alto risco.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_IntroducaoAPneumologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Além dos dados mencionados, o paciente levou para consulta uma prova de função pulmonar: pré-broncodilatador: cvf 2,93(67%), vef1 1,86(55%), vef1/cvf 63%; pósbroncodilatador: 3,26 (80%), vef1 2,17 (64%), vef1/cvf 67%. Nesse caso, qual é o diagnóstico do paciente?",
+      "alternativas": [
+        "Pneumonia.",
+        "Asma.",
+        "DPOC.",
+        "Fibrose pulmonar."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre interpretação de espirometria para diagnóstico de doenças respiratórias obstrutivas. O foco está na diferenciação entre DPOC e asma através do teste de reversibilidade ao broncodilatador.</p><p><strong>A resposta correta é C - DPOC.</strong> A chave diagnóstica está na análise da variação pós-broncodilatador.</p><p>Vamos analisar os dados espirométricos:</p><p><strong>Padrão obstrutivo pré-broncodilatador:</strong><br>- VEF1/CVF = 63% (normal > 70%, confirmando obstrução)<br>- VEF1 = 55% do previsto (obstrução acentuada)<br>- CVF = 67% do previsto (alguma restrição associada)</p><p><strong>Análise da reversibilidade:</strong><br>- A resposta ao broncodilatador foi MÍNIMA:<br>- VEF1 aumentou de 1,86 para 2,17 (apenas 16,7% de melhora)<br>- VEF1/CVF permaneceu em 63% (sem normalização)<br>- Este é o padrão clássico da DPOC: obstrução FIXA com pouca reversibilidade</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Pneumonia:</strong> Causa aguda com padrão restritivo ou misto, não obstrutivo crônico como apresentado.</p><p><strong>B) Asma:</strong> A asma apresenta reversibilidade SIGNIFICATIVA ao broncodilatador (geralmente > 12% e > 200mL no VEF1). Aqui a melhora foi mínima.</p><p><strong>D) Fibrose pulmonar:</strong> Causa padrão RESTRITIVO (VEF1/CVF normal ou elevado), não obstrutivo como vemos aqui.</p><p>O diagnóstico de DPOC é confirmado pela combinação de: 1) exposição a fatores de risco, 2) obstrução ao fluxo aéreo com pouca reversibilidade, 3) progressão gradual dos sintomas. A ausência de reversibilidade significativa ao broncodilatador é o diferencial crucial para distinguir DPOC de asma.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumoniaAdquiridaNaComunidade",
+        "ClinicaMedica_Pneumologia_PneumoniaAdquiridaNaComunidade_Tratamento"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "<html><head></head><body>Paciente do sexo feminino, de 25 anos, refere, desde o nascimento, tosse recorrente associada com escarro às vezes claro, às vezes amarelado. Associado com chiado no peito esporádico e obstrução nasal. Refere piora dos sintomas com tempo seco. Nega\npiora com outros alérgenos. Queixa de diarreia recorrente desde a infância. Alega dificuldade em ganhar peso. Teve diagnóstico de asma na infância e faz uso de medicação inalatória contínua de formoterol/budesonida 12/400mcg de seis em seis horas, há vários anos. Mantém-se com tosse com escarro diário principalmente pela manhã, dispneia aos moderados esforços. Alega pneumonia e sinusite de repetição desde criança. Nega tabagismo, nega contato com fogão a lenha. Espirometria: distúrbio ventilatório obstrutivo acentuado, sem variação significativa ao broncodilatador. Teste de gordura nas fezes (sudam III) positivo. Exame de escarro: Baar negativo, cultura positiva com presença de pseudomonas aeruginosa mucoide. Teste do suor 95 mmol/l, repetido em intervalo de seis semanas, com mesmo valor. Traz exame de imagem e função pulmonar. Qual é o diagnóstico dessa paciente?\n\n<img src=\"https://medbrave.com.br/questions/ses-go-2022-r3/qQ42.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Asma grave de difícil controle.",
+        "Pneumonia bacteriana.",
+        "Bronquiectasia não fibrocística.",
+        "Fibrose cística."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 apresenta um caso clínico complexo que avalia seu conhecimento sobre diagnóstico diferencial entre asma grave e fibrose cística. A banca explora múltiplas pistas clínicas e laboratoriais para guiar o diagnóstico correto.</p><p><strong>A resposta correta é D - Fibrose cística.</strong> O conjunto de achados clínicos e laboratoriais é patognomônico para FC.</p><p><strong>Análise do caso - Elementos-chave para FC:</strong></p><p><strong>1. História clínica clássica desde o nascimento:</strong><br>- Tosse crônica com escarro desde a infância<br>- Pneumonia e sinusite de repetição<br>- Chiado no peito e obstrução nasal<br>- Dificuldade para ganhar peso (má absorção)</p><p><strong>2. Achados laboratoriais diagnósticos:</strong><br>- Teste do suor positivo: 95 mmol/L (patognomônico, valor > 60 mmol/L)<br>- Teste de gordura nas fezes (Sudam III) positivo: indica má absorção de gorduras<br>- Cultura de escarro com Pseudomonas aeruginosa mucoide: patógeno típico em FC<br>- Espirometria: obstrução fixa sem reversibilidade significativa</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Asma grave de difícil controle:</strong> Embora o paciente tenha histórico de asma, os achados laboratoriais (teste do suor positivo, Sudam III positivo, Pseudomonas) são incompatíveis com asma isolada. A asma não causa alterações no teste do suor nem má absorção de gorduras.</p><p><strong>B) Pneumonia bacteriana:</strong> As pneumonias são episódicas, não crônicas desde o nascimento como descrito. Além disso, a presença de Pseudomonas crônica sugere colonization, não infecção aguda isolada.</p><p><strong>C) Bronquiectasia não fibrocística:</strong> Embora possa haver bronquiectasias na FC, o teste do suor positivo e a má absorção são específicos para FC. A bronquiectasia idiopática não apresenta essas alterações sistêmicas.</p><p><strong>Diferencial-chave:</strong> O teste do suor positivo em valores elevados é PATOGNOMÔNICO para fibrose cística. Nenhuma outra doença respiratória causa elevação tão significativa no cloreto do suor.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_FibroseCistica",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "<html><head></head><body>Paciente do sexo feminino, de 25 anos, refere, desde o nascimento, tosse recorrente associada com escarro às vezes claro, às vezes amarelado. Associado com chiado no peito esporádico e obstrução nasal. Refere piora dos sintomas com tempo seco. Nega\npiora com outros alérgenos. Queixa de diarreia recorrente desde a infância. Alega dificuldade em ganhar peso. Teve diagnóstico de asma na infância e faz uso de medicação inalatória contínua de formoterol/budesonida 12/400mcg de seis em seis horas, há vários anos. Mantém-se com tosse com escarro diário principalmente pela manhã, dispneia aos moderados esforços. Alega pneumonia e sinusite de repetição desde criança. Nega tabagismo, nega contato com fogão a lenha. Espirometria: distúrbio ventilatório obstrutivo acentuado, sem variação significativa ao broncodilatador. Teste de gordura nas fezes (sudam III) positivo. Exame de escarro: Baar negativo, cultura positiva com presença de pseudomonas aeruginosa mucoide. Teste do suor 95 mmol/l, repetido em intervalo de seis semanas, com mesmo valor. Traz exame de imagem e função pulmonar. Qual é o tratamento indicado nesse caso?\n\n<img src=\"https://medbrave.com.br/questions/ses-go-2022-r3/qQ43.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Aumentar dose de corticoide inalatório.",
+        "Iniciar corticoide oral.",
+        "Iniciar antibiótico antipseudomonas.",
+        "Aumentar dose de broncodilatador."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 testa seu conhecimento sobre o tratamento da fibrose cística complicada por infecção bacteriana crônica. A banca avalia se você reconhece quando instituir antibioticoterapia específica em pacientes com FC.</p><p><strong>A resposta correta é C - Iniciar antibiótico antipseudomonas.</strong> O tratamento deve ser direcionado ao patógeno identificado na cultura.</p><p><strong>Fundamentação para antibiótico antipseudomonas:</strong></p><p><strong>1. Evidência microbiológica clara:</strong><br>- Cultura de escarro positiva para Pseudomonas aeruginosa mucoide<br>- Este é um patógeno típico e preocupante na fibrose cística<br>- A presença de forma mucoide indica colonization crônica e produção de biofilme</p><p><strong>2. Impacto clínico da infecção por Pseudomonas:</strong><br>- Accelerates decline na função pulmonar em FC<br>- Associado a exacerbações pulmonares frequentes<br>- Requer tratamento aggressive para prevenir progressão da doença</p><p><strong>Protocolo de tratamento para Pseudomonas em FC:</strong><br>- Terapia combinada (geralmente ciprofloxacino + aminoglicosídeo)<br>- Pode ser oral para infecções crônicas ou IV para exacerbações<br>- Duração usually 2-3 semanas para tratamento de colonization</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Aumentar dose de corticoide inalatório:</strong> Corticosteroides inalatórios são úteis para controle da inflamação brônquica, mas não tratam infecção bacteriana ativa. Além disso, a dose atual já é maxima (budesonida 400mcg 6/6h).</p><p><strong>B) Iniciar corticoide oral:</strong> Corticosteroides orais podem ser considerados em exacerbações ou em casos específicos, mas não são primeira escolha para tratar infecção por Pseudomonas. Podem até mascarar sinais de infecção.</p><p><strong>D) Aumentar dose de broncodilatador:</strong> Broncodilatadores melhoram sintomas, mas não tratam infecção. A dose atual de formoterol já é máxima (12mcg 6/6h = 48mcg/dia, próxima ao máximo de 72mcg/dia).</p><p><strong>Princípio terapêutico:</strong> Em fibrose cística, o tratamento deve ser direcionado ao patógeno específico identificado. A Pseudomonas aeruginosa requer antibioticoterapia antipseudomonas para controlar a colonization e prevenir progressão da doença pulmonar.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "O tratamento de indução da nefrite lúpica grave consiste na associação de corticosteroides com ciclofosfamida ou micofenolato mofetil. O uso da ciclofosfamida pode ser feito de acordo com o protocolo NIH ou de acordo com o protocolo EuroLúpus. Este último consiste no uso do seguinte esquema:",
+      "alternativas": [
+        "0,5 a 1 g de ciclofosfamida/m² de superfície corporal, EV, por mês, durante seis meses.",
+        "0,5 a 1 g de ciclofosfamida/m² de superfície corporal, EV, por mês, durante 12 meses.",
+        "500 mg de ciclofosfamida, EV, a cada duas semanas, no total de seis doses.",
+        "500 mg de ciclofosfamida, EV, a cada semana, no total de 12 doses."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre protocolos de tratamento para nefrite lúpica grave, especificamente os esquemas de ciclofosfamida. A banca testa se você conhece as diferenças entre o protocolo NIH e o EuroLúpus.</p><p><strong>A resposta correta é C - 500 mg de ciclofosfamida, EV, a cada duas semanas, no total de seis doses.</strong> Este é exatamente o protocolo EuroLúpus.</p><p><strong>Protocolo EuroLúpus - Características distintivas:</strong></p><p><strong>1. Dose fixa menor:</strong><br>- 500 mg independente da superfície corporal<br>- Diferente do NIH que usa dose de 0,5-1 g/m²<br>- Menor dose total accumulated, reduciendo toxicidade</p><p><strong>2. Esquema de administration:</strong><br>- Intervalo de 2 semanas entre doses (q2sem)<br>- Total de 6 doses (3 meses de tratamento)<br>- Mais conveniente que o protocolo NIH (mensal por 6-12 meses)</p><p><strong>3. Vantagens do protocolo EuroLúpus:</strong><br>- Menor toxicidade (menos cistite, menor risco de malignidade)<br>- Maior adesão por ser mais curto<br>- Eficácia similar ao NIH em muitos casos<br>- Preferido em mulheres em idade reprodutiva</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) 0,5 a 1 g/m², mensal, 6 meses:</strong> Este é o protocolo NIH, não EuroLúpus. Usa dose baseada em superfície corporal e interval monthly.</p><p><strong>B) 0,5 a 1 g/m², mensal, 12 meses:</strong> Também protocolo NIH, mas ainda mais prolongado (1 ano completo).</p><p><strong>D) 500 mg semanal, 12 doses:</strong> Esquema mais intensificado que o EuroLúpus. O EuroLúpus usa interval de 2 semanas, não semanal.</p><p><strong>Indicações para cada protocolo:</strong><br>- <strong>EuroLúpus:</strong> Preferido em casos de nefrite lúpica classe III ou IV com boa função renal, especialmente em mulheres jovens<br>- <strong>NIH:</strong> Considerado em casos mais graves ou quando há falha ao EuroLúpus</p><p><strong>Mnemonic para lembrar:</strong> <em>EuroLúpus = 500mg x 6 doses q2sem</em> (seis por duas semanas)</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_NefriteLupica"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "A poliarterite nodosa (PAN) é uma vasculite necrosante sistêmica que acomete vasos de médio calibre. Dentre os critérios classificatórios propostos pelo Colégio Americano de Reumatologia (1990), inclui-se a infecção pelo vírus da",
+      "alternativas": [
+        "mononucleose.",
+        "hepatite B.",
+        "imunodeficiência humana.",
+        "hepatite C."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-GO 2022 avalia seu conhecimento sobre a classificação da Poliarterite Nodosa (PAN) e suas associações etiológicas. A banca explora um dos critérios classificatórios propostos pelo ACR em 1990.</p><p><strong>A resposta correta é B - Hepatite B.</strong> A infecção pelo vírus da hepatite B está fortemente associada ao desenvolvimento de PAN.</p><p><strong>Relação PAN-Hepatite B:</strong></p><p><strong>1. Patogenia:</strong><br>- A PAN pode ser desencadeada por depósitos de complexos imunes<br>- Antígenos do HBV (HBsAg, HBeAg) formam complexos com anticorpos<br>- Esses complexos se depositam nas paredes dos vasos de médio calibre<br>- Desencadeiam resposta inflamatória necrosante característica</p><p><strong>2. Prevalência histórica:</strong><br>- Antes da era da vacinação, até 50% dos casos de PAN estavam associados ao HBV<br>- Com a redução da hepatite B, a forma \"idiopática\" tornou-se mais comum<br>- Ainda hoje, PAN é uma das principais vasculites associadas a hepatite viral</p><p><strong>Por que as outras alternativas estão incorretas:</strong></p><p><strong>A) Mononucleose (EBV):</strong> A mononucleose infecciosa não está associada ao desenvolvimento de PAN. O EBV pode causar outras complicações, mas não vasculite necrosante de médio calibre.</p><p><strong>C) Imunodeficiência humana (HIV):</strong> O HIV está mais associado a outras vasculites como a arterite de células gigantes, vasculite leucocitoclástica ou síndrome de recreated immune activation. PAN não é característica de infecção por HIV.</p><p><strong>D) Hepatite C:</strong> A hepatite C está mais fortemente associada à crioglobulinemia mista (vasculite de pequenos vasos) e à artrite reumatoide. A associação com PAN é muito menos frequente que com HBV.</p><p><strong>Critérios ACR 1990 para PAN:</strong><br>1) Perda de peso > 4kg<br>2) livedo reticularis<br>3) Dor testicular<br>4) Miopatia<br>5) Mononeuropatia<br>6) PA diastólica > 90 mmHg<br>7) Uréia ou creatinina elevadas<br>8) Hepatite B (infecção viral)<br>9) Arteriografia aneurismas/oclusões<br>10) Biópsia mostrando PMN em parede arterial</p><p>Presença de 3 de 10 critérios: sensibilidade 82%, especificidade 87%.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasPolimi",
+        "ClinicaMedica_Infectologia_Hepatites"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Em uma criança do sexo feminino, com idade menor de seis anos, diagnosticada com artrite idiopática juvenil oligoarticular, que apresenta pesquisa do FAN positiva, uma complicação extra-articular especialmente comum é a",
+      "alternativas": [
+        "iridociclite.",
+        "conjuntivite.",
+        "uveíte aguda.",
+        "isquemia do nervo óptico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-GO avalia seu conhecimento sobre as complicações extra-articulares da artrite idiopática juvenil oligoarticular, especificamente em pacientes com FAN positivo.</p><p><strong>A resposta correta é A - iridociclite.</strong></p><p>Vamos analisar a fundo essa questão: a artrite idiopática juvenil oligoarticular (AIJ) é o subtipo mais comum de AIJ, representando cerca de 50% dos casos. O que torna esta questão especialmente relevante é o FAN positivo, que é um marcador importante para complicações oculares.</p><p><strong>Por que a iridociclite é a resposta?</strong></p><p>A iridociclite (também conhecida como uveíte anterior crônica) é a principal complicação extra-articular da AIJ oligoarticular. Esta complicação é particularmente comum em pacientes FAN positivos, especialmente meninas em idade pré-escolar. O que torna essa condição perigosa é que ela é frequentemente assintomática nas fases iniciais, podendo evoluir silenciosamente para cegueira se não diagnosticada precocemente.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>B) Conjuntivite:</strong> Não é uma complicação específica da AIJ oligoarticular. Conjuntivites geralmente estão associadas a outras condições, como ар têm nas síndromes de Sjogren ou reativa, mas não é a complicação característica desta forma de AIJ.</p><p><strong>C) Uveíte aguda:</strong> Esta alternativa pode parecer tentadora, mas a uveíte associada à AIJ oligoarticular é tipicamente <em>crônica</em> e anterior, não aguda. A uveíte aguda é mais comum em outras condições como espondilite anquilosante ou artrite reativa.</p><p><strong>D) Isquemia do nervo óptico:</strong> Esta é uma complicação extremamente rara e não característica da AIJ oligoarticular. A isquemia do nervo óptico pode ocorrer em condições como arterite de células gigantes ou outras vasculites, mas não é uma complicação típica da AIJ.</p><p><strong>Por que o FAN positivo é importante?</strong></p><p>Em pacientes com AIJ oligoarticular e FAN positivo, o risco de desenvolver uveíte é significativamente maior (cerca de 70-90%). Isso torna o rastreamento oftalmológico regular essencial, mesmo na ausência de sintomas oculares.</p><p><strong>Colocação em prova:</strong> Esta é uma questão clássica de reumatologia pediátrica. A banca SES-GO frequentemente explora as particularidades da AIJ oligoarticular, especialmente suas complicações oculares, que são potencialmente devastadoras mas preveníveis com diagnóstico precoce.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_ReumatologiaPediatrica",
+        "Pediatria_ReumatologiaPediatrica_AIJArtriteIdiopaticaJuvenil",
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "De acordo com os critérios de Sidney (2006), para se classificar um paciente com síndrome antifosfolípide é necessária a presença de um critério clínico e de um critério laboratorial. Para preenchimento do critério laboratorial, este paciente deve apresentar anticorpos antifosfolípides positivos",
+      "alternativas": [
+        "pelo menos duas vezes com intervalo = seis semanas.",
+        "pelo menos duas vezes com intervalo > 12 semanas.",
+        "em três vezes dentro de um intervalo de cinco anos.",
+        "em uma única vez, correspondente à época do diagnóstico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre os critérios diagnósticos de Sidney (2006) para síndrome antifosfolípide, especificamente sobre os requisitos laboratoriais para confirmação diagnóstica.</p><p><strong>A resposta correta é B - pelo menos duas vezes com intervalo > 12 semanas.</strong></p><p><strong>Contexto dos critérios de Sidney:</strong></p><p>Os critérios de Sidney, estabelecidos em 2006, são atualmente os mais aceitos mundialmente para classificação de síndrome antifosfolípide (SAF). Esses critérios demandam obrigatoriamente a presença de pelo menos um critério clínico e um critério laboratorial para o diagnóstico.</p><p><strong>Análise dos critérios laboratoriais:</strong></p><p>O critério laboratorial especifica que os anticorpos antifosfolípides (anticoagulante lúpico, anticardiolipina e anti-β2-glicoproteína I) devem estar positivos em <strong>duas ou mais ocasiões</strong> com um <strong>intervalo mínimo de 12 semanas</strong>.</p><p><strong>Por que esta exigência temporal?</strong></p><p>Esta janela de tempo de pelo menos 12 semanas é fundamental porque:</p><p>1. <strong>Exclui resultados transientemente positivos:</strong> Anticorpos antifosfolípides podem estar positivos temporariamente durante infecções agudas, uso de medicamentos ou outras condições transienticas</p><p>2. <strong>Confirma persistência:</strong> A SAF é uma condição crônica, e os anticorpos devem ser persistentemente positivos para caracterizar a síndrome</p><p>3. <strong>Reduz falsos positivos:</strong> O intervalo prolongado minimiza a chance de um resultado falsamente positivo isolado</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Intervalo de 6 semanas:</strong> Muito curto. Não atende ao requisito mínimo de 12 semanas estabelecido nos critérios de Sidney. Um intervalo de 6 semanas é insuficiente para excluir resultados transientemente positivos.</p><p><strong>C) Três vezes em cinco anos:</strong> Embora envolva múltiplas dosagens, não especifica o intervalo mínimo necessário e permite um período muito longo (até 5 anos), o que não reflete a prática clínica adequada para confirmação diagnóstica.</p><p><strong>D) Uma única vez:</strong> Completamente inadequado. Os critérios de Sidney são categóricos em relação à necessidade de confirmação com dosagem repetida. Uma única dosagem positiva não é suficiente para diagnóstico de SAF.</p><p><strong>Importância clínica:</strong></p><p>O cumprimento rigoroso destes critérios é essencial para evitar o sobrediagnóstico de SAF, uma condição com implicações terapêuticas significativas (anticoagulação crônica) e potencial para complicações graves como trombose e perdas gestacionais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Em cerca de 10% dos casos, um paciente com artrite reumatoide apresenta curso clínico persistente, podendo evoluir para um quadro de extrema incapacitação. Dentre os fatores considerados como de mau prognóstico na evolução da doença, inclui-se:",
+      "alternativas": [
+        "sexo masculino.",
+        "proliferação sinovial de início tardio.",
+        "acometimento de mais de 10 articulações.",
+        "presença de manifestações extra-articulares."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda fatores de mau prognóstico na artrite reumatoide (AR), um tema fundamental para o entendimento da evolução e manejo adequado da doença.</p><p><strong>A resposta correta é D - presença de manifestações extra-articulares.</strong></p><p><strong>Conceito de mau prognóstico na AR:</strong></p><p>A artrite reumatoide é uma doença heterogênea com evolução variável. Cerca de 10% dos pacientes desenvolvem curso clínico persistente e incapacitante. Identificar fatores de mau prognóstico é crucial para orientar tratamento mais agressivo e monitoramento adequado.</p><p><strong>Por que manifestações extra-articulares são fator de mau prognóstico?</strong></p><p>As manifestações extra-articulares (MEE) da AR indicam uma forma mais sistêmica e agressiva da doença. Estas manifestações incluem:</p><p>• Nódulos reumatóides<br>• Vasculite reumatóide<br>• Síndrome de Felty (esplenomegalia + neutropenia)<br>• Sjögren secundário<br>• Pleurite e pericardite<br>• Esclerite e episclerite</p><p>A presença de MEE está associada a:</p><p>1. <strong>Atividade inflamatória sistêmica mais intensa</strong><br>2. <strong>Maior produção de citocinas pro-inflamatórias</strong><br>3. <strong>Progressão radiológica mais acelerada</strong><br>4. <strong>Mayor taxa de morbimortalidade</strong></p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Sexo masculino:</strong> Na verdade, o sexo feminino tem maior incidência de AR (proporção de 3:1). Paradoxalmente, quando homens desenvolvem AR, frequentemente têm doença mais severa com maior progressão radiológica, mas as MEE são mais comuns em mulheres.</p><p><strong>B) Proliferação sinovial de início tardio:</strong> A proliferação sinovial (pannus) é característica da AR, mas seu início precoce, não tardio, está associado a pior prognóstico. O desenvolvimento temprano de proliferação sinovial agressiva está correlacionado com maior destruição articular.</p><p><strong>C) Acometimento de mais de 10 articulações:</strong> Embora o número elevado de articulações acometidas seja um indicador de doença mais extensa, isoladamente não é o mais forte preditor de mau prognóstico. Pacientes com poliartrite podem ter boa resposta ao tratamento adequado.</p><p><strong>Fatores verdadeiramente de mau prognóstico:</strong></p><p>• Presença de manifestações extra-articulares<br>• Fator reumatóide positivo e em altos títulos<br>• Anticorpos anti-CCP positivos<br>• Início em idade jovem<br>• Tempo até início do tratamento > 6 meses<br>• Erosões radiológicas precoces<br>• Indicação precoce de methotrexate ou biológicos</p><p><strong>Implicações terapêuticas:</strong></p><p>Em pacientes com fatores de mau prognóstico, especialmente MEE, é recomendado:</p><p>• Início precoce de DMARDs sintéticos ou biológicos<br>• Tratamento mais agressivo e combinação de medicamentos<br>• Monitoramento mais frequente<br>• Abordagem multidisciplinar</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Homem de 38 anos, com antecedente de espondilite anquilosante, em uso de etanercepte 50 mg SC semanal, queixa-se de dor na região toracolombar, mal-estar generalizado, febre baixa, perda de peso e sudorese noturna, de início há dois meses. A radiografia da coluna mostra colapso vertebral de T11. Nesse caso, a principal hipótese diagnóstica é:",
+      "alternativas": [
+        "osteoporose secundária à espondilite anquilosante.",
+        "doença de Poncet.",
+        "mal de Pott.",
+        "atividade da doença inflamatória autoimune."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico complexo que integra reumatologia e infecciologia, testando sua capacidade de integrar dados clínicos, radiológicos e contextuais para formular diagnóstico diferencial.</p><p><strong>A resposta correta é C - mal de Pott.</strong></p><p><strong>Contextualização do caso:</strong></p><p>O paciente apresenta um conjunto de sintomas sistêmicos (dor toracolombar, mal-estar, febre baixa, perda de peso, sudorese noturna) associados a um achado radiológico específico (colapso vertebral de T11) em contexto de espondilite anquilosante em uso de etanercept.</p><p><strong>Por que mal de Pott é a hipótese mais provável?</strong></p><p>O <strong>mal de Pott</strong> (espondilite tuberculosa) é acometimento da coluna pela <em>Mycobacterium tuberculosis</em>. Os elementos que sustentam este diagnóstico:</p><p>• <strong>Sintomas sistêmicos:</strong> Febre baixa, perda de peso, sudorese noturna são clássicos da tuberculose<br>• <strong>Colapso vertebral:</strong> Significa destruição óssea, típico da tuberculose espinhal<br>• <strong>Contexto epidemiológico:</strong> Brasil é país com alta prevalência de tuberculose<br>• <strong>Imunossupressão:</strong> Etanercept (anti-TNF) aumenta risco de tuberculose reativação</p><p><strong>Mechanismo fisiopatológico:</strong></p><p>A tuberculose espinhal usualmente se propaga hematogênicamente de focos pulmonares ou geniturinários. O colapso vertebral ocorre devido à:</p><p>1. Destruição do corpo vertebral pelo granuloma caseoso<br>2. Perda da integridade estructural óssea<br>3. Deformidade progressiva (giba)</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>A) Osteoporose secundária à espondilite anquilosante:</strong> Embora pacientes com espondilite anquilosante tenham maior risco de osteoporose, o colapso vertebral na osteoporose é geralmente compression fractures sem sintomas sistêmicos. A febre baixa, perda de peso e sudorese noturna não são características da osteoporose simples.</p><p><strong>B) Doença de Poncet:</strong> A doença de Poncet é uma tuberculose articular reativa que cursa com artrite não supurativa em pacientes com tuberculose pulmonar. Ela não causa colapso vertebral e não apresenta os sintomas sistêmicos intensos descritos.</p><p><strong>D) Atividade da doença inflamatória autoimune:</strong> Embora o etanercept possa não controlar completamente a espondilite anquilosante, a atividade da doença não causa colapso vertebral ou sintomas sistêmicos específicos (febre, sudorese noturna). Além disso, a atividade da EA não justifica um quadro de 2 meses de sintomas sistêmicos progressivos.</p><p><strong>Importância do uso de etanercept:</strong></p><p>Os anti-TNF (etanercept, infliximab, adalimumab) são fatores de risco estabelecidos para reativação de tuberculose latente. O etanercept especificamente:</p><p>• Reduz a resposta imune celular<br>• Facilita a reativação de focos tuberculosos latentes<br>• Aumenta o risco de tuberculose extrapulmonar</p><p><strong>Conduta diagnóstica esperada:</strong></p><p>Em caso de suspeita de mal de Pott, devem ser realizados:</p><p>• RX de tórax e TC de coluna<br>• PPD/IGRA para tuberculose<br>• Biópsia vertebral guiada por TC<br>• Pesquisa de BAAR e cultura no material<br>• PCR para <em>Mycobacterium tuberculosis</em></p><p><strong>Tratamento:</strong></p><p>O esquema anti-tuberculose deve ser iniciado imediatamente, típicamente Rifampicina, Isoniazida, Pirazinamida e Etambutol por 2 meses, seguido de Rifampicina e Isoniazida por mais 7-10 meses.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Observe a imagem a seguir, extraída de Reumatologia Diagnóstico e Tratamento, Carvalho MAP e cols., 5ª edição, que demonstra um teste de avaliação da integridade dos tendões do ombro. Qual teste está representado nesta imagem?",
+      "alternativas": [
+        "Jobe.",
+        "Yergason.",
+        "Hawkins.",
+        "Gerber."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão apresenta um teste clínico de avaliação musculoesquelética, tema recorrente em provas de reumatologia e ortopedia. Infelizmente, não tenho acesso à imagem específica, mas posso orientar sobre como identificar cada teste baseado nas características descritas na literatura médica.</p><p><strong>A resposta correta é A - Jobe.</strong></p><p><strong>Contexto dos testes do ombro:</strong></p><p>Os testes de avaliação do ombro são fundamentais para diagnosticar lesões do manguito rotador, instabilidade e outras patologias. Cada teste tem um objetivo específico e técnica particular de execução.</p><p><strong>Teste de Jobe (Lift-off test modificado):</strong></p><p>O teste de Jobe é especificamente designado para avaliar a integridade do músculo <strong>supraespinhal</strong>, que é frequentemente acometido em lesões do manguito rotador. Este teste é executado com:</p><p>• Paciente em pé ou sentado<br>• Braço em abdução de 90° no plano da escápula<br>• Cotovelo estendido<br>• Antebraço em rotação interna (polegar para baixo)<br>• Examinador aplica resistência no sentido de adução e rotação interna<br>• Teste positivo se houver dor ou fraqueza</p><p><strong>Características distintivas do teste de Jobe:</strong></p><p>• <strong>Posição específica:</strong> Abdução de 90° no plano da escápula<br>• <strong>Músculo-alvo:</strong> Supraespinhal especificamente<br>• <strong>Movimento:</strong> Resistência à adução com o braço abduzido<br>• <strong>Patologia associada:</strong> Tendinopatia ou ruptura do supraespinhal</p><p><strong>Importância clínica do supraespinhal:</strong></p><p>O supraespinhal é frequentemente o primeiro músculo do manguito rotador a ser acometido devido à sua localização anatômica vulnerável no espaço subacromial. É responsável pela iniciação da abdução do ombro (primeiros 15-30°).</p><p><strong>Análise das alternativas incorretas (baseado nas características clássicas):</strong></p><p><strong>B) Yergason:</strong> Teste para avaliar a estabilidade da articulação esternoclavicular e a integridade do tendão da cabeça longa do bíceps. Execução: flexão do cotovelo a 90°, paciente flexiona o antebraço contra resistência do examinador.</p><p><strong>C) Hawkins:</strong> Teste para síndrome do impacto subacromial. Execução: flexão do ombro a 90°, cotovelo flexionado a 90°, o examinador força a rotação interna do braço, causando impacto do grande tubérculo contra o ligamento coracoacromial.</p><p><strong>D) Gerber (Lift-off):</strong> Teste para avaliar a integridade do músculo subescapular. Execução: mão atrás das costas, palm up, o paciente tenta elevar a mão do dorso contra resistência do examinador.</p><p><strong>Estratégia para questões com imagem:</strong></p><p>Quando uma questão apresenta imagem de teste clínico:</p><p>1. Observe a posição do braço (abdução, flexão, rotação)<br>2. Identifique o movimento ativo/passivo sendo testado<br>3. Correlacione com a patologia mais comumente avaliada<br>4. Lembre-se: teste de Jobe é o único que combina abdução de 90° no plano da escápula com resistência à adução</p><p><strong>Dica de memorização:</strong></p><p>Para lembrar do teste de Jobe: <strong>\"J</strong>obe <strong>A</strong>bduz, <strong>J</strong>á o <strong>G</strong>erber <strong>L</strong>eva <strong>J</strong>unto <strong>D</strong>orso\" - facilita memorizar que Jobe é para supraespinhal (abdução) e Gerber para subescapular (lift-off).</p><p><strong>Relevância em reumatologia:</strong></p><p>Lesões do manguito rotador são comuns em:</p><p>• Artrite reumatóide (sinovite crônica)<br>• Espondilite anquilosante (tendinopatia)<br>• Polimialgia reumática<br>• Gota (deposição de cristais)</p><p>O reconhecimento 这些 padrões de testagem é essencial para diferenciá-las de patologias reumáticas sistêmicas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "SESGO2022R3CM",
+        "SES-GO",
+        "R3CM",
+        "GO",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762696761529-49"
+    }
+  ]
+}

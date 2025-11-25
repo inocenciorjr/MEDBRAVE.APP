@@ -8,11 +8,11 @@ export class CreateFilterUseCase {
     if (!data.name) {
       throw new Error("O nome do filtro é obrigatório");
     }
-    
+
     if (!data.category) {
       throw new Error("A categoria do filtro é obrigatória");
     }
-    
+
     return this.filterRepository.create(data);
   }
-} 
+}

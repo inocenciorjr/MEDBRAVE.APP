@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase dependency - using ISO string dates
 
 /**
  * FASE 3: Sistema de Caderno de Erros - Types
@@ -8,90 +8,93 @@ import { Timestamp } from 'firebase-admin/firestore';
 // Adicionar ReviewQuality enum para compatibilidade
 export enum ReviewQuality {
   AGAIN = 'AGAIN',
-  HARD = 'HARD', 
+  HARD = 'HARD',
   GOOD = 'GOOD',
-  EASY = 'EASY'
+  EASY = 'EASY',
 }
 
 export interface ErrorNotebookEntry {
   id: string;
-  userId: string;
-  questionId: string;
-  
+  user_id: string;
+  question_id: string;
+
   // Conteúdo da anotação
-  userNote: string;
-  userExplanation: string;
-  keyPoints: string[];
+  user_note: string;
+  user_explanation: string;
+  key_points: string[];
   tags: string[];
-  
+
   // Contexto da questão original
-  questionStatement: string;
-  correctAnswer: string;
-  userOriginalAnswer: string;
-  questionSubject: string;
-  
+  question_statement: string;
+  correct_answer: string;
+  user_original_answer: string;
+  question_subject: string;
+
   // Status de revisão
-  isInReviewSystem: boolean;
-  fsrsCardId?: string;
-  lastReviewedAt?: Timestamp;
-  
+  is_in_review_system: boolean;
+  last_reviewed_at?: string;
+
   // Metadados
   difficulty: ErrorNoteDifficulty;
   confidence: number; // 1-5, quão confiante está na explicação
-  
-  // Adicionar notebookId para compatibilidade
-  notebookId?: string;
-  
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+
+  // Adicionar notebook_id para compatibilidade
+  notebook_id?: string;
+  alternative_comments?: Record<string, string>;
+
+  created_at: string;
+  updated_at: string;
 }
 
 export enum ErrorNoteDifficulty {
   EASY = 'EASY',
-  MEDIUM = 'MEDIUM', 
+  MEDIUM = 'MEDIUM',
   HARD = 'HARD',
-  VERY_HARD = 'VERY_HARD'
+  VERY_HARD = 'VERY_HARD',
 }
 
 export interface CreateErrorNoteDTO {
-  userId: string;
-  questionId: string;
-  userNote: string;
-  userExplanation: string;
-  keyPoints?: string[];
+  user_id: string;
+  question_id: string;
+  user_note: string;
+  user_explanation: string;
+  key_points?: string[];
   tags?: string[];
   difficulty?: ErrorNoteDifficulty;
   confidence?: number;
+  alternative_comments?: Record<string, string>;
+  folder_id?: string;
 }
 
 // Adicionar aliases para compatibilidade com use-cases
 export interface CreateErrorEntryPayload extends CreateErrorNoteDTO {}
 
 export interface UpdateErrorNoteDTO {
-  userNote?: string;
-  userExplanation?: string;
-  keyPoints?: string[];
+  user_note?: string;
+  user_explanation?: string;
+  key_points?: string[];
   tags?: string[];
   difficulty?: ErrorNoteDifficulty;
   confidence?: number;
+  alternative_comments?: Record<string, string>;
 }
 
 // Adicionar alias para compatibilidade com use-cases
 export interface UpdateErrorEntryPayload extends UpdateErrorNoteDTO {}
 
 export interface ErrorNoteReviewData {
-  entryId: string;
-  questionContext: {
+  entry_id: string;
+  question_context: {
     statement: string;
-    correctAnswer: string;
+    correct_answer: string;
     subject: string;
   };
-  userContent: {
+  user_content: {
     note: string;
     explanation: string;
-    keyPoints: string[];
+    key_points: string[];
   };
-  reviewPrompt: string;
+  review_prompt: string;
 }
 
 /**
@@ -102,7 +105,7 @@ export interface GetUserErrorNotesOptions {
   page?: number;
   tags?: string[];
   difficulty?: ErrorNoteDifficulty;
-  isInReviewSystem?: boolean;
+  is_in_review_system?: boolean;
 }
 
 /**
@@ -111,19 +114,19 @@ export interface GetUserErrorNotesOptions {
 export interface GetUserErrorNotesResult {
   entries: ErrorNotebookEntry[];
   total: number;
-  hasMore: boolean;
+  has_more: boolean;
 }
 
 /**
  * Estatísticas de anotações de erro do usuário
  */
 export interface ErrorNotesStats {
-  totalEntries: number;
-  entriesInReviewSystem: number;
-  entriesByDifficulty: Record<ErrorNoteDifficulty, number>;
-  entriesBySubject: Record<string, number>;
-  averageConfidence: number;
-  lastEntryAt?: Timestamp;
+  total_entries: number;
+  entries_in_review_system: number;
+  entries_by_difficulty: Record<ErrorNoteDifficulty, number>;
+  entries_by_subject: Record<string, number>;
+  average_confidence: number;
+  last_entry_at?: string;
 }
 
 // Re-exportar tipos necessários para compatibilidade
@@ -136,66 +139,66 @@ export enum ErrorSourceType {
 // Manter tipos antigos para compatibilidade (deprecated)
 export interface ErrorNotebook {
   id: string;
-  userId: string;
+  user_id: string;
   title: string;
   description: string;
-  isPublic: boolean;
-  entryCount: number;
-  lastEntryAt: Timestamp | null;
+  is_public: boolean;
+  entry_count: number;
+  last_entry_at: string | null;
   tags: string[];
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface ErrorNotebookStats {
-  totalEntries: number;
-  resolvedEntries: number;
-  unresolvedEntries: number;
-  entriesByCategory: Record<string, number>;
-  lastUpdatedAt: Timestamp;
-  averageResolutionTime: number;
+  total_entries: number;
+  resolved_entries: number;
+  unresolved_entries: number;
+  entries_by_category: Record<string, number>;
+  last_updated_at: string;
+  average_resolution_time: number;
 }
 
 export interface CreateErrorNotebookPayload {
-  userId: string;
+  user_id: string;
   title: string;
   description?: string;
-  isPublic?: boolean;
+  is_public?: boolean;
   tags?: string[];
 }
 
 export interface UpdateErrorNotebookPayload {
   title?: string;
   description?: string;
-  isPublic?: boolean;
+  is_public?: boolean;
   tags?: string[];
 }
 
 export interface ListErrorNotebooksOptions {
   limit?: number;
   page?: number;
-  lastDocId?: string;
+  last_doc_id?: string;
   search?: string;
   tags?: string[];
-  sortBy?: string;
-  sortOrder?: 'asc' | 'desc';
+  sort_by?: string;
+  sort_order?: 'asc' | 'desc';
 }
 
 export interface PaginatedErrorNotebooksResult {
   items: ErrorNotebook[];
   total: number;
-  hasMore: boolean;
-  lastDocId?: string;
+  has_more: boolean;
+  last_doc_id?: string;
 }
 
 export interface ListErrorEntriesOptions {
   limit?: number;
-  page?: number
-  isResolved?: boolean;
+  page?: number;
+  is_resolved?: boolean;
   category?: string;
   tags?: string[];
   importance?: number;
-  sourceType?: ErrorSourceType;
+  source_type?: ErrorSourceType;
 }
 
 export interface PaginatedErrorEntriesResult {

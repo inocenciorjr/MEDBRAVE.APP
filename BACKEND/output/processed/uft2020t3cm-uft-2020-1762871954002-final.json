@@ -1,0 +1,1388 @@
+{
+  "metadata": {
+    "examName": "UFT2020T3CM (UFT 2020)",
+    "examYear": 2020,
+    "url": "source://1117",
+    "totalQuestions": 40,
+    "categorizedQuestions": 40,
+    "rewrittenComments": 40,
+    "processedAt": "2025-11-11T14:39:14.002Z",
+    "jobId": "batch-1762861546457-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "fa5abe52-7837-4d2f-8066-e1efd8ee2a89"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "De acordo com a Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose de 2017, qual a meta de LDL-colesterol para um paciente de 42 anos, portador de Doença Arterial Coronariana, que apresentou um quadro de Infarto Agudo do Miocárdio, há 6 meses?",
+      "alternativas": [
+        "< 50",
+        "< 70",
+        "< 100",
+        "< 130",
+        "< 150"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFT 2020 avalia seu conhecimento sobre as metas lipídicas em pacientes de alto risco cardiovascular, especificamente na diretriz brasileira de dislipidemias de 2017.</p><p><strong>O paciente apresentado tem perfil de risco muito alto:</strong> 42 anos, portador de Doença Arterial Coronariana (DAC) confirmada e histórico de Infarto Agudo do Miocárdio (IAM) recente (há 6 meses). Estes fatores o colocam na categoria de \"paciente de risco muito alto\" para eventos cardiovasculares.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) < 50 mg/dL</strong> - CORRETA. Na Diretriz Brasileira de Dislipidemias 2017, pacientes com DAC estabelecida (especialmente com IAM recente) pertencem ao grupo de \"risco muito alto\", devendo atingir meta de LDL-colesterol inferior a 50 mg/dL.</p><p><strong>B) < 70 mg/dL</strong> - INCORRETA. Esta meta é aplicável a pacientes de alto risco (como diabéticos sem DAC), mas não ao nível de risco apresentado pelo paciente.</p><p><strong>C) < 100 mg/dL</strong> - INCORRETA. Meta conservadora, aplicável a pacientes de risco intermediário.</p><p><strong>D) < 130 mg/dL</strong> - INCORRETA. Meta muito elevada, aplicável apenas a pacientes de risco baixo.</p><p><strong>E) < 150 mg/dL</strong> - INCORRETA. Meta inadequada para qualquer paciente de risco, incluindo risco baixo na atual diretriz.</p><p><strong>Conclusão:</strong> A resposta correta é <strong>alternativa A</strong>, baseada na categorização de risco cardiovascular muito alto do paciente e nas metas rígidas da diretriz brasileira de 2017 para redução de eventos cardiovasculares futuros.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_AbordagemDasDislipidemiasEEstr",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_AbordagemDasDislipidemiasEEstr",
+        "ClinicaMedica_EstratificacaoDoRiscoCardiovas"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Homem de 53 anos de idade, previamente hígido, é atendido, no setor de emergência, com queixa de dor torácica, localizada à esquerda, iniciada há 2 horas. Nega dispnéia ou tosse. A dor alivia quando o paciente senta com o corpo inclinado para frente. A radiografia de tórax é inocente. O ECG, realizado na sala de emergência é mostrado a seguir. Qual das seguintes afirmativas, a respeito da condição desse paciente, é VERDADEIRA?\n\n<img src=\"https://medbrave.com.br/questions/uft-2020/qQ2.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "A terapia com trombolíticos está indicada, caso não seja possível realização imediata de cateterismo cardíaco.",
+        "Nitratos irão aliviar significativamente a dor torácica.",
+        "Deve ser administrada aspirina, como tratamento inicial, ou outros anti-inflamatórios não esteroidais.",
+        "Deve ser iniciada, imediatamente, a terapia com glicocorticóides.",
+        "A dosagem de biomarcadores cardíacos séricos pode fazer rapidamente o diagnóstico diferencial da dor torácica desse paciente e fechar, com certeza, o diagnóstico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFT 2020 explora o diagnóstico diferencial de síndromes coronarianas versus pericardite, através de características clínicas específicas e condutas terapêuticas.</p><p><strong>O quadro clínico é clássico para pericardite:</strong> homem de 53 anos, dor torácica iniciado há 2 horas, dor localizada à esquerda, com alívio significativo ao sentar com o corpo inclinado para frente. Este sinal é patognomônico de pericardite, pois reduz a tensão sobre o pericárdio inflamado.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Terapia trombolítica está indicada</strong> - INCORRETA. Trombolíticos são para síndromes coronarianas agudas com supradesnivelamento do segmento ST, não para pericardite.</p><p><strong>B) Nitratos aliviarão significativamente a dor</strong> - INCORRETA. Nitratos são eficazes na angina, mas têm efeito limitado na dor pericárdica.</p><p><strong>C) Deve ser administrada aspirina ou AINEs</strong> - CORRETA. Aspirina (750-1000mg 8/8h por 1-2 semanas) ou outros AINEs são a base do tratamento da pericardite idiopática/viral.</p><p><strong>D) Terapia imediata com glicocorticoides</strong> - INCORRETA. Corticoides são indicados apenas em casos específicos (pericardite autoimune, refratária), não como primeira escolha.</p><p><strong>E) Biomarcadores cardíacos farão diagnóstico diferencial rapidamente</strong> - INCORRETA. Enzimas cardíacas podem estar elevadas em ambas as condições inicialmente, não permitindo diagnóstico diferencial rápido.</p><p><strong>Veredito:</strong> A resposta correta é <strong>alternativa C</strong>, seguindo o protocolo padrão para tratamento da pericardite aguda.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup_CondutasIniciais",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Uma mulher de 50 anos de idade dá entrada na emergência com quadro de hemiplegia à direita e afasia de expressão. Seu esposo informa que ela vinha apresentando episódios intermitentes de febre com calafrios, nas últimas 3 semanas, e que ela é portadora de \"\"problema na válvula aórtica\"\". O exame cardíaco mostra sopro sistólico ejetivo grau 3/6, na borda esternal superior direita. Houve crescimento de Staphylococcus aureus em 3 amostras de hemoculturas. Foi realizado um ecocardiograma transtorácico que mostrou função contrátil do ventrículo esquerdo preservada e válvula aórtica bicúspide com estenose leve. Não foram observadas vegetações. A tomografia computadorizada do crânio mostra área de acidente vascular cerebral agudo em território da artéria cerebral média esquerda. Qual das seguintes afirmativas é CORRETA?",
+      "alternativas": [
+        "Nos pacientes com endocardite infecciosa, a presença de vegetação > 9 mm de diâmetro é uma indicação absoluta e imediata de cirurgia.",
+        "A probabilidade de eventos embólicos subsequentes diminuirá com a terapia antibiótica apropriada.",
+        "Não há presença de endocardite infecciosa, pois não são observadas vegetações valvulares ao ecocardiograma.",
+        "Deve-se iniciar tratamento empírico para endocardite infecciosa com hemocultura negativa, pois a presença de Staphylococcus aureus trata-se de contaminação.",
+        "Deve-se realizar um ecocardiograma transesofágico, antes de iniciar qualquer tratamento, para definição diagnóstica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda aspectos críticos da endocardite infecciosa, especificamente o risco embólico e sua evolução com o tratamento antibiótico adequado.</p><p><strong>O caso apresenta perfil clássico de endocardite em válvula aórtica bicúspide:</strong> mulher de 50 anos, história de sopro cardíaco conocido, episódios febris, hemoculturas positivas para Staphylococcus aureus, e complicação neurológica (AVC em território da artéria cerebral média esquerda).</p><p><strong>Pontos importantes do caso:</strong> Válvula aórtica bicúspide (fator predisponente), Staphylococcus aureus (patógeno virulento de alto risco), ausência de vegetações no ETT (não exclui endocardite), AVC como complicação embólica.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Vegetação > 9 mm = indicação absoluta de cirurgia</strong> - INCORRETA. Tamanho > 10 mm é apenas um dos critérios, não indicação absoluta isoladamente.</p><p><strong>B) Probabilidade de eventos embólicos diminuirá com antibiótico</strong> - CORRETA. A terapia antibiótica apropriada reduz significativamente o risco de novos eventos embólicos nas primeiras 2-3 semanas.</p><p><strong>C) Não há endocardite sem vegetações no ETT</strong> - INCORRETA. A ausência de vegetações visíveis no ETT não exclui endocardite (pode haver vegetações pequenas ou o ETT pode não detectá-las).</p><p><strong>D) Staph aureus = contaminação</strong> - INCORRETA. Staph aureus é causa comum de endocardite, especialmente em válvulas nativas.</p><p><strong>E) Fazer ETE antes do tratamento</strong> - INCORRETA. O tratamento deve ser iniciado imediatamente após coleta de hemoculturas, sem aguardar ETE se o diagnóstico clínico for provável.</p><p><strong>Conclusão:</strong> A resposta correta é <strong>alternativa B</strong>, fundamentada na evidência de que a terapia antibiótica adequada é a principal medida para reduzir o risco de complicações embólicas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_Endocardite",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_Endocardite",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_Endocardite_QuadroClinico",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "O carcinoma basocelular é o mais frequente dos cânceres de pele. Com relação a sua epidemiologia e suas manifestações clínicas, é INCORRETO afirmar:",
+      "alternativas": [
+        "Tem predomínio em pessoas de pele clara, com exposição crônica à radiação ultravioleta, durante suas vidas, e sem proteção adequada.",
+        "A manifestação clínica clássica é uma pápula de superfície lisa e brilhante, de bordos perolados, com finas telangiectasias, de crescimento lento e, durante sua evolução, exulceram-se.",
+        "Localmente localizado, raramente provoca metástases.",
+        "Ocorre com frequência, nas regiões labial e palmoplantares.",
+        "O diagnóstico é feito pela suspeita clínica, no entanto, é importante o histopatológico para confirmação diagnóstica e determinação tipo histológico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre epidemiologia e características clínicas do carcinoma basocelular, testando se o candidato reconhece a distribuição topográfica típica desta neoplasia cutânea.</p><p><strong>O carcinoma basocelular (CBC) tem características epidemiológicas bem definidas:</strong> é o câncer de pele mais frequente, com predomínio em pessoas de pele clara, relacionado à exposição solar crônica sem proteção adequada. É um tumor de comportamento localmente invasivo, raramente metastático.</p><p><strong>Manifestações clínicas típicas:</strong> Pápula de superfície lisa e brilhante, bordos perolados, telangiectasias finas, crescimento lento, com ulceração central em estágios avançados. O diagnóstico é clínico, mas confirmado por histopatologia para determinar o tipo histológico e orientar tratamento.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Predomínio em pele clara com exposição UV crônica</strong> - CORRETA. Perfil epidemiológico clássico do CBC.</p><p><strong>B) Manifestação clínica clássica descrita</strong> - CORRETA. Descrição clássica do aspecto \"perolado\" com telangiectasias.</p><p><strong>C) Localmente invasivo, raramente metastático</strong> - CORRETA. Comportamento biológico característico.</p><p><strong>D) Ocorre com frequência nas regiões labial e palmoplantares</strong> - INCORRETA. Esta é a alternativa FALSA. O CBC NÃO ocorre com frequência nas regiões labial e palmoplantares. Estas regiões são mais frequentemente acometidas por carcinoma espinocelular. O CBC tem predomínio em face, couro cabeludo, pescoço e regiões fotoexpostas.</p><p><strong>E) Diagnóstico clínico, confirmação histopatológica</strong> - CORRETA. Algoritmo diagnóstico padrão.</p><p><strong>Veredito:</strong> A resposta correta é <strong>alternativa D</strong>, por conter a afirmativa incorreta sobre a localização preferencial do carcinoma basocelular.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesPapuloescamosasPsori"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Hanseníase é doença com quadro clínico polimorfo, com classificação de 4 formas clínicas. Importante a diferenciação da forma clínica, pois vai orientar a terapêutica e investigação epidemiológica. Paciente masculino, cor parda, 25 anos, mãe realizou tratamento para hanseníase há 5 anos, apresentando 2 manchas, localizadas no antebraço e na perna esquerda, de cerca de 3 cm e 2 cm respectivamente, manchas eritemato-acobreadas, bordos definidos, perda de sensibilidade térmica e dolorosa, nervo ulnar esquerdo dolorido e espessado. Assinale o diagnóstico provável do paciente.",
+      "alternativas": [
+        "Hanseníase Indeterminada.",
+        "Hanseníase tuberculoide.",
+        "Hanseníase Dimorfa.",
+        "Hanseníase Virchowiana.",
+        "Hanseníase neural pura."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFT 2020 avalia seu conhecimento sobre classificação clínica da hanseníase, focando no reconhecimento de padrões típicos através de achados clínicos e epidemiológicos.</p><p><strong>O caso apresenta características marcantes:</strong> homem jovem de 25 anos, exposição doméstica (mãe com hanseníase - fator de risco), lesões cutâneas bem definidas, comprometimento neurológico específico (nervo ulnar).</p><p><strong>Análise das lesões:</strong> Manchas eritemato-acobreadas, bordos definidos, perda de sensibilidade térmica e dolorosa. Estas características sugerem hanseníase tuberculoide, forma polar com boa resposta imunológica celular.</p><p><strong>Compromisso neurológico:</strong> Nervo ulnar dolorido e espessado é típico da forma tuberculoide, com predomínio de comprometimento neural em poucos nervos.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Hanseníase Indeterminada</strong> - INCORRETA. Forma inicial e instável, com lesões menos bem definidas e menos de 2 nervos comprometidos.</p><p><strong>B) Hanseníase Tuberculoide</strong> - CORRETA. Lesões bem definidas, perda de sensibilidade clara, poucos nervos acometidos (padrão tuberculoide).</p><p><strong>C) Hanseníase Dimorfa</strong> - INCORRETA. Forma intermediária, com características mistas e classificação instável.</p><p><strong>D) Hanseníase Virchowiana</strong> - INCORRETA. Forma multibacilar, lesões múltiplas mal definidas, múltiplos nervos comprometidos.</p><p><strong>E) Hanseníase neural pura</strong> - INCORRETA. Forma onde há apenas comprometimento neural sem lesões cutâneas evidentes.</p><p><strong>Conclusão:</strong> A resposta correta é <strong>alternativa B</strong>, baseada na apresentação clínica clássica de hanseníase tuberculoide: lesões bem definidas, perda de sensibilidade organizada, comprometimento limitado de nervos periféricos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Hanseniase",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Dermatologia_DoencasInfecciosas"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "<html><head></head><body>O uso de toxina botulínica, em Dermatologia, nos pacientes com quadro clínico de hiperhidroses, tornou suas vidas social, laborativa e de lazer com melhor qualidade de vida. Quanto ao uso da toxina botulínica, no tratamento das hiperhidroses palmo- plantares e axilares, podemos considerar correta, EXCETO.\n\n<img src=\"https://medbrave.com.br/questions/uft-2020/qQ6.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "A toxina botulínica atua impedindo a liberação de acetilcolina das fibras nervosas colinérgicas, inibindo-se, consequentemente, a sudorese.",
+        "A toxina botulínica é aplicada, através de injeções subcutâneas, por multipunturas, distribuídas a cada 20 a 25 mm de distância entre si.",
+        "Nas regiões palmo-plantares, indica-se anestesia por bloqueio dos nervos da área a ser tratada, enquanto, nas regiões axilares, poder ser feita anestesia com cremes tópicos.",
+        "O efeito anidrótico é obtido em 24 a 72 horas e pode durar de 4 a 5 meses quando novo tratamento deve ser realizado.",
+        "A aplicação incorreta da toxina botulínica, nas regiões palmo-plantares, pode levar à fraqueza ou paralisia muscular reversíveis por difusão da toxina botulínica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>QUESTÃO UFT 2020 - TOXINA BOTULÍNICA EM HIPERHIDROSES</strong></p><p><strong>O que a banca avaliou:</strong> Esta questão testa o conhecimento sobre indicações, técnicas e complicações do uso da toxina botulínica no tratamento das hiperhidroses palmo-plantares e axilares. É uma questão prática e aplicada da dermatologia funcional.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - CORRETA:</strong> A toxina botulínica realmente atua impedindo a liberação de acetilcolina das fibras nervosas colinérgicas, bloqueando a sudorese. Este é o mecanismo de ação básico da toxina botulínica.</p><p><strong>Alternativa B - ERRADA (GABARITO):</strong> Esta é a alternativa incorreta que a banca busca. A técnica correta de aplicação deve ter as injeções distribuídas a cada 1-2 cm (10-20 mm), não 20 a 25 mm como stated. Espaçamentos maiores podem deixar áreas sem tratamento adequado.</p><p><strong>Alternativa C - CORRETA:</strong> A técnica anestésica está adequada. Nas palmas e plantas, usa-se bloqueio nervoso devido à sensibilidade dessas regiões, enquanto nas axilas, cremes tópicos são suficientes.</p><p><strong>Alternativa D - CORRETA:</strong> Os tempos estão corretos - efeito inicia em 24-72 horas e dura 4-6 meses em média, exigindo nova aplicação.</p><p><strong>Alternativa E - CORRETA:</strong> A difusão da toxina para estruturas musculares profundas pode causar fraqueza ou paralisia transitória, reversível em alguns meses.</p><p><strong>RESPOSTA FINAL:</strong> <strong>Alternativa B</strong> - É a única incorreta, pois o espaçamento entre as injeções deve ser menor (1-2 cm) para garantir eficácia em toda a área tratada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Miscelanea",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_TerapiaClinica",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_ModalidadesDeTratamentoFisico"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "O estado hiperglicêmico hiperosmolar é uma complicação aguda do diabetes mellitus que apresenta mortalidade de aproximadamente 15%. Em relação a essa complicação, assinale a alternativa correta:",
+      "alternativas": [
+        "Os sintomas de letargia e desorientação são comuns e estão relacionados ao aumento da osmolalidade sérica que está igual ou acima de 350mOSm/kg.",
+        "No estado hiperglicêmico hiperosmolar, existe deficiência relativa de insulina e esses níveis são suficientes para evitar a llipólise e a cetogênese.",
+        "As principais alterações, encontradas no estado hiperglicêmico hiperosmolar são glicemia >600 mg/dL, hiperosmolalidade (osmolalidade sérica efetiva \"maior ou igual a\" 380 mOsm/kg e depleção de volume na ausência de cetoacidose significativa (pH >7.3 e HCO3 >15 mmol/L)).",
+        "O coma é raro e, se observado, é geralmente associado a uma osmolalidade sérica >380 mOsm/kg.",
+        "Os critérios de resolução são a normalização da glicemia (<150mg/dl), redução gradual da consciência e osmolalidade plasmática abaixo de 300mOsm/kg."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>QUESTÃO UFT 2020 - ESTADO HIPERGLICÊMICO HIPEROSMOLAR</strong></p><p><strong>O que a banca avaliou:</strong> Esta questão testa o conhecimento sobre critérios diagnósticos, fisiopatologia e características clínicas do estado hiperglicêmico hiperosmolar (EHH), uma complicação grave do diabetes mellitus.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> Embora os sintomas de letargia e desorientação sejam comuns, eles estão relacionados à hiperosmolalidade, mas não necessariamente igual ou acima de 350 mOsm/kg. Os valores são diferentes do stated.</p><p><strong>Alternativa B - ERRADA (GABARITO):</strong> Esta é a alternativa incorreta. No EHH, há deficiência relativa de insulina, mas ESTES NÍVEIS de insulina SÃO INSUFICIENTES para evitar a lipólise e cetogênese, não suficientes como stated. Isso diferencia o EHH da cetoacidose diabética.</p><p><strong>Alternativa C - CORRETA:</strong> Os critérios estão corretos: glicemia >600 mg/dL, hiperosmolalidade ≥380 mOsm/kg, pH >7.3 e HCO3 >15 mmol/L na ausência de cetoacidose significativa.</p><p><strong>Alternativa D - CORRETA:</strong> O coma realmente é raro no EHH e, quando presente, geralmente está associado à hiperosmolalidade severa (>380 mOsm/kg).</p><p><strong>Alternativa E - CORRETA:</strong> Os critérios de resolução estão adequados: normalização da glicemia, redução gradual da consciência e osmolalidade <300 mOsm/kg.</p><p><strong>RESPOSTA FINAL:</strong> <strong>Alternativa B</strong> - É a única incorreta. A deficiência relativa de insulina no EHH é exatamente INSUFICIENTE para prevenir lipólise e cetogênese, não suficiente como afirma a alternativa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_EstadoHiperglicemicoHi",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_DiabetesFisiopatogenia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Paciente feminino, 42 anos, refere irregularidade menstrual, há um ano, associada a ganho ponderal de 20 kg (de 45 kg para 65,7 kg), picos hipertensivos, fraqueza muscular (dificuldade para levantar-se da cadeira), cãibras, equimoses espontâneas, acne, irritabilidade, insônia, estrias violáceas em abdome e axilas (> 1 cm). Diante deste quadro clínico, para se chegar ao diagnóstico dessa doença, é importante seguir uma sequência de investigação, sem a qual, o risco de erros aumenta substancialmente. Qual seria a sequência? 1. Dosar ACTH. 2. Solicitar RNM da hipófise. 3. Solicitar a dosagem de cortisol salivar noturno, do CLU (Cortisol Urinário de 24 h), e do cortisol sérico, após supressão com 1 mg de dexametasona. 4. Afastar Cushing exógeno. Assinale a alternativa que apresenta a sequência CORRETA.",
+      "alternativas": [
+        "3 - 2 - 1 - 4",
+        "1 - 2 - 3 - 4",
+        "4 - 3 - 1 - 2",
+        "4 - 3 - 2 - 1",
+        "3 - 1 - 4 - 2"
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>QUESTÃO UFT 2020 - ALGORITMO DIAGNÓSTICO DA SÍNDROME DE CUSHING</strong></p><p><strong>O que a banca avaliou:</strong> Esta questão testa o conhecimento sobre a sequência diagnóstica adequada na investigação da síndrome de Cushing, seguindo os protocolos estabelecidos para evitar falsos positivos e diagnósticos incorretos.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> A sequência 3-2-1-4 está incorreta. Não se deve solicitar imagem antes de confirmar o diagnóstico funcional.</p><p><strong>Alternativa B - INCORRETA:</strong> A sequência 1-2-3-4 também está incorreta. Dosar ACTH isoladamente sem testes funcionais não é adequado como primeira etapa.</p><p><strong>Alternativa C - CORRETA (GABARITO):</strong> A sequência 4-3-1-2 é a correta: primeiro afastar causas exógenas (corticoides), depois realizar testes funcionais (cortisol salivar, CLU, teste de supressão), dosar ACTH e por fim solicitar imagem se necessário.</p><p><strong>Alternativa D - INCORRETA:</strong> A sequência 4-3-2-1 está incorreta. Não se deve solicitar RMN da hipófise antes de dosar o ACTH para orientar a investigação.</p><p><strong>Alternativa E - INCORRETA:</strong> A sequência 3-1-4-2 está incorreta. Os testes funcionais devem vir após afastar causas exógenas.</p><p><strong>SEQUÊNCIA CORRETA EXPLICAÇÃO:</strong> 4. Afastar Cushing exógeno → 3. Testes funcionais (cortisol salivar, CLU, supressão) → 1. Dosar ACTH → 2. Solicitar RMN da hipófise se necessário</p><p><strong>RESPOSTA FINAL:</strong> <strong>Alternativa C</strong> - Segue exatamente o protocolo diagnóstico estabelecido, priorizando a exclusão de causas exógenas antes dos testes funcionais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "A síndrome do eutireoidiano doente, também conhecida por sindrome do T3 baixo, está classicamente presente em pacientes com doenças agudas e graves. Assinale a alternativa CORRETA.",
+      "alternativas": [
+        "A elevação do TSH ocorre em muitos pacientes, principalmente, na fase aguda da doença.",
+        "Os níveis de TSH e T4, assim como o T3, apresentam-se com níveis muito diminuídos, sendo as características mais marcantes da síndrome.",
+        "O jejum prolongado, mais especificamente a privação dos carboidratos, tem efeito rápido na diminuição do T3, por inibir a desiodação de T4 em T3, pela enzima seleno- desiodase 2(D2).",
+        "Existe diminuição da concentração sérica do T3 e aumento de sua forma inativa T3 reverso.",
+        "Na insuficiência renal e no HIV, o T3 reverso se apresenta diminuído."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>QUESTÃO UFT 2020 - SÍNDROME DO EUTIREOIDIANO DOENTE</strong></p><p><strong>O que a banca avaliou:</strong> Esta questão testa o conhecimento sobre os mecanismos fisiopatológicos e alterações laboratoriais da síndrome do eutireoidiano doente (SED), também conhecida como síndrome do T3 baixo.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - INCORRETA:</strong> A elevação do TSH não é característica da SED. Na fase aguda, o TSH costuma estar normal ou baixo, e na recuperação pode estar elevado transitoriamente.</p><p><strong>Alternativa B - INCORRETA:</strong> Os níveis de TSH e T4 não estão diminuídos na SED clássica. O TSH é normal/baixo e o T4 pode estar normal ou ligeiramente diminuído, mas não muito diminuído como stated.</p><p><strong>Alternativa C - CORRETA:</strong> O jejum prolongado e privação de carboidratos realmente causa rápida diminuição do T3 por inibir a desiodação de T4 em T3 pela enzima seleno-desiodase 2 (D2).</p><p><strong>Alternativa D - CORRETA (GABARITO):</strong> Esta é a alternativa correta. Na SED, há diminuição da concentração sérica do T3 e aumento do T3 reverso (rT3), que é a forma inativa.</p><p><strong>Alternativa E - INCORRETA:</strong> Na insuficiência renal e no HIV, o T3 reverso se apresenta AUMENTADO, não diminuído como stated.</p><p><strong>RESPOSTA FINAL:</strong> <strong>Alternativa D</strong> - É a única completamente correta. A SED caracteriza-se por T3 baixo e T3 reverso elevado, representando uma adaptação metabólica do organismo em situações de estresse.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_TireotoxicoseGer",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_EndocrinologiaTireotoxicoseGer"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Com relação às manifestações clínicas da pancreatite crônica, analise as questões abaixo e assinale a alternativa INCORRETA.",
+      "alternativas": [
+        "A hiperlipidemia, representada, principalmente, pela hipertrigliceridemia, apresenta relação direta entre seus níveis e a ocorrência de pancreatite crônica.",
+        "O hiperparatireoidismo causa pancreatite crônica, pelo efeito deletério da precipitação do cálcio intraductal.",
+        "A pancreatite tropical é uma doença que acomete crianças e adultos jovens e está relacionada à desnutrição, caracterizada por dor abdominal, na infância, diabetes, na puberdade e morte, no adulto jovem.",
+        "A deficiência de vitaminas lipossolúveis é marcante nos casos avançados de pancreatite crônica, sendo frequentes a presença de cegueira noturna (deficiência de vitamina A) e de sangramentos (deficiência de vitamina K) nesses pacientes.",
+        "Existe risco aumentado de hipoglicemia, durante o tratamento do diabetes, nos pacientes portadores de pancreatite crônica, em comparação com os pacientes com diabetes por outras causas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>QUESTÃO UFT 2020 - MANIFESTAÇÕES CLÍNICAS DA PANCREATITE CRÔNICA</strong></p><p><strong>O que a banca avaliou:</strong> Esta questão testa o conhecimento sobre as diferentes etiologias, manifestações clínicas e complicações da pancreatite crônica, incluindo aspectos nutricionais e metabólicos.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - CORRETA:</strong> A hiperlipidemia, principalmente hipertrigliceridemia, realmente apresenta relação direta entre seus níveis e a ocorrência de pancreatite crônica. Triglicerídeos >1000 mg/dL são fatores de risco.</p><p><strong>Alternativa B - CORRETA:</strong> O hiperparatireoidismo pode causar pancreatite crônica devido à precipitação do cálcio intraductal, formando cálculos que obstruem os ductos pancreáticos.</p><p><strong>Alternativa C - CORRETA:</strong> A pancreatite tropical é descrita corretamente: acomete jovens, relacionada à desnutrição, com dor abdominal na infância, diabetes na puberdade e morte no adulto jovem.</p><p><strong>Alternativa D - INCORRETA (GABARITO):</strong> Esta é a alternativa incorreta. Na pancreatite crônica, a deficiência de vitaminas lipossolúveis (A, D, E, K) é comum, mas a cegueira noturna é causada por deficiência de VITAMINA A e os sangramentos por deficiência de VITAMINA K. A alternativa inverte as vitaminas!</p><p><strong>Alternativa E - CORRETA:</strong> Existe risco aumentado de hipoglicemia no tratamento do diabetes secundário à pancreatite crônica, devido à perda de células alfa (glucagon) junto com as células beta.</p><p><strong>RESPOSTA FINAL:</strong> <strong>Alternativa D</strong> - É a única incorreta. A cegueira noturna é causada por deficiência de vitamina A e sangramentos por deficiência de vitamina K, não o contrário como stated na alternativa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Hepatite é qualquer inflamação causada no fígado, porém, algumas podem ser evitadas através da vacinação. Em relação à vacinação contra hepatites A e B, assinale a alternativa CORRETA.",
+      "alternativas": [
+        "A vacina para hepatite A está indicada para portadores de hepatopatia crônica, causada pelos vírus das hepatites B e C.",
+        "A soroconversão da vacina, para o vírus da hepatite B, é de cerca de 95%, devendo ser confirmadas por teste sorológico apenas em grupos determinados, com trabalhadores da área de saúde e hepatopatas.",
+        "A vacina contra hepatite A é feita de vírus inativado e deverão ser feitas duas doses, conforme o calendário vacinal vigente, no adulto e na criança, com intervalo de dois meses.",
+        "O RN, cuja mãe é portadora do vírus da hepatite B, deverá receber imunoglobulina, nas primeiras 6 horas após o nascimento, ou, no máximo, 12 horas, podendo ser dispensado da primeira dose da vacina da hepatite B.",
+        "O nível esperado de AntiHBc, para que uma pessoa vacinada seja considerada imunizada, é acima de 10mu/ml."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre vacinação contra hepatites A e B, tema fundamental em saúde pública. A banca busca testar se você domina as indicações, características técnicas e protocolos de vacinação.</p><p><strong>A resposta correta é B - A soroconversão da vacina para hepatite B é de cerca de 95%, devendo ser confirmadas por teste sorológico apenas em grupos determinados.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A: INCORRETA.</strong> A vacina contra hepatite A está indicada para grupos específicos como viajantes para áreas endêmicas, profissionais de saúde, usuários de drogas injetáveis e pessoas com hepatopatia crônica. Porém, a indicação não se limita apenas a portadores de hepatite B e C.</p><p><strong>Alternativa B: CORRETA.</strong> A taxa de soroconversão para hepatite B é realmente de aproximadamente 95% em indivíduos saudáveis. O teste sorológico (Anti-HBs) não é rotineiramente recomendado para toda a população vacinada, sendo reservado para grupos específicos como trabalhadores de saúde e pessoas imunossuprimidas.</p><p><strong>Alternativa C: INCORRETA.</strong> A vacuna da hepatite A é feita de vírus inativado, mas o intervalo entre as doses é de 6 meses, não 2 meses.</p><p><strong>Alternativa D: INCORRETA.</strong> RNs filhos de mães HBsAg positivas devem receber tanto a primeira dose da vaccine quanto a imunoglobulina, preferencialmente nas primeiras 12 horas de vida (não 6 horas).</p><p><strong>Alternativa E: INCORRETA.</strong> Para ser considerado imune, o nível de Anti-HBs deve ser > 10 mUI/ml, não o AntiHBc.</p><p><strong>Veredito:</strong> A alternativa B é a única que apresenta informações precisas sobre soroconversão e indicações de teste sorológico para hepatite B.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "ClinicaMedica_Infectologia_HepatitesVirais"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Cuidados paliativos é um conceito de cuidado que visa amenizar o sofrimento do paciente e de sua família. De acordo com o assunto, assinale a alternativa CORRETA.",
+      "alternativas": [
+        "É uma modalidade de assistência que busca melhorar a qualidade de vida, sem utilização de biotecnologia.",
+        "Idosos em cuidados paliativos costumam apresentar processos infecciosos, com manifestações atípicas, como inapetência, inversão do ciclo sono-vigília e alteração comportamental.",
+        "Em pacientes com doença de Alzheimer em fase avançada, portadores de síndrome de imobilidade e dores articulares crônicas, o uso de opióides está contraindicado para o controle de dor, devido ao risco de constipação intestinal.",
+        "Nos cuidados de fins de vida, o paciente já não apresenta benefício do cuidado multiprofissional, como fonoterapia e fisioterapia.",
+        "Nos cuidados de fins de vida, as vias de administração medicamentosa preferências são: 1º oral; 2º endovenosa; 3º subcutânea; 4º intramuscular."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFT 2020 avalia seu conhecimento sobre cuidados paliativos, competência essencial para o médico generalista. O foco está nas particularidades clínicas do paciente idoso em cuidados paliativos.</p><p><strong>A resposta correta é B - Idosos em cuidados paliativos costumam apresentar processos infecciosos com manifestações atípicas.</strong></p><p>Analisando cada alternativa:</p><p><strong>Alternativa A: INCORRETA.</strong> Cuidados paliativos podem utilizar biotecnologia quando necessária para controle de sintomas, como bombas de infusão para analgesia ou antibioticoterapia para controle de infecções sintomáticas.</p><p><strong>Alternativa B: CORRETA.</strong> Em pacientes idosos, especialmente em cuidados paliativos, os sinais típicos de infecção (febre, dor, hiperemia) podem estar ausentes. Manifestações atípicas como inapetência, inversão do ciclo sono-vigília, agitação, confusão mental ou prostração são comuns.</p><p><strong>Alternativa C: INCORRETA.</strong> O uso de opioides não é contraindicado em pacientes com Alzheimer avançado. A dor deve ser adequadamente controlada, mesmo considerando o risco de constipação, que pode ser PREVENIDA com medidas profiláticas (fibras, hidratação, laxantes).</p><p><strong>Alternativa D: INCORRETA.</strong> Os cuidados multiprofissionais podem proporcionar benefícios significativos em cuidados de fim de vida, como fonoterapia para facilitar deglutição ou fisioterapia para conforto e prevenção de úlceras por pressão.</p><p><strong>Alternativa E: INCORRETA.</strong> A ordem de preferência nas vias de administração é: 1º oral, 2º subcutânea, 3º endovenosa, 4º intramuscular.</p><p><strong>Veredito:</strong> A alternativa B é a única que reflete corretamente a apresentação atípica de infecções em pacientes idosos em cuidados paliativos.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_SaudeDoIdosoGeriatria",
+        "ClinicaMedica_SaudeDoIdosoGeriatria",
+        "ClinicaMedica_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Idosa de 70 anos comparece à consulta médica com queixa de insônia. Refere ter dificuldade em pegar no sono, conseguindo dormir por volta da meia-noite e acordando às cinco horas da manhã. Nega prejuízo em suas atividades diárias. Qual o diagnóstico e melhor conduta terapêutica?",
+      "alternativas": [
+        "Insônia inicial. Zolpidem.",
+        "Insônia inicial e de manutenção. Benzodiazepínico de curta duração.",
+        "Sono normal. Zolpidem.",
+        "Sono normal. Orientações e higiene do sono.",
+        "Insônia inicial e de manutenção. Trazodona."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o diagnóstico e manejo da insônia em pacientes idosos, tema cada vez mais relevante com o envelhecimento populacional. A UFT quer avaliar sua capacidade de distinguir insônia patológica de alterações fisiológicas do sono relacionadas à idade.</p><p><strong>A resposta correta é D - Sono normal. Orientações e higiene do sono.</strong></p><p>Vamos analisar o caso: Paciente de 70 anos com dificuldade para pegar no sono (dorme às 0h, acorda às 5h) mas nega prejuízo nas atividades diárias.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> Não há insônia inicial estabelecida, pois a paciente consegue dormir (às 0h) e não queixa de prejuízo funcional.</p><p><strong>Alternativa B: INCORRETA.</strong> A paciente não apresenta queixas compatíveis com insônia de manutenção (acordos noturnos frequentes).</p><p><strong>Alternativa C: INCORRETA.</strong> Se o sono é normal, não há indicação para hipnóticos.</p><p><strong>Alternativa D: CORRETA.</strong> Este é um padrão de sono normal para a idade. Com o envelhecimento, há avanço da fase do sono (dormir mais cedo, acordar mais cedo). Como não há prejuízo funcional, as intervenções devem ser não-farmacológicas com foco em higiene do sono.</p><p><strong>Alternativa E: INCORRETA.</strong> Não há insônia estabelecida para justificar uso de fármacos.</p><p><strong>Veredito:</strong> O padrão descrito é compatível com alterações fisiológicas do sono no envelhecimento. O tratamento deve ser conservador com orientações sobre higiene do sono.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoSono",
+        "ClinicaMedica_SaudeDoIdosoGeriatria"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Paciente feminina, 75 anos, portadora de HAS, DMII e osteoporose, sofreu duas quedas da própria altura, no último ano, sendo a última há 1 mês, em casa, após tropeçar no tapete, levando ao trauma em região frontal. Na avaliação geriátrica, apresenta Teste get up and go de 10 seg, escala de avaliação de equilíbrio e marcha (Tinetti) = 27, MEEM=29, EDG=7. Nesse caso, qual o fator que é o maior PREDITOR de futuras quedas para essa idosa?",
+      "alternativas": [
+        "Osteoporose.",
+        "Escala de Tinetti.",
+        "História de uma queda recente.",
+        "Depressão.",
+        "Teste get up and go."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre prevenção de quedas em idosos, competência fundamental em geriatria. O foco está na identificação do principal preditor de futuras quedas em pacientes com múltiplos fatores de risco.</p><p><strong>A resposta correta é C - História de uma queda recente.</strong></p><p>Vamos analisar os fatores de risco e escalas:</p><p><strong>Alternativa A: INCORRETA.</strong> Osteoporose é fator de risco para fraturas após quedas, mas não para as quedas em si.</p><p><strong>Alternativa B: INCORRETA.</strong> A escala de Tinetti tem pontuação máxima de 28. Com score de 27, há risco mínimo de queda (escala considera 19-23: risco moderado).</p><p><strong>Alternativa C: CORRETA.</strong> A história de quedas recentes é o maior preditor de futuras quedas. Paciente com duas quedas no último ano (sendo uma há 1 mês) apresenta risco muito elevado.</p><p><strong>Alternativa D: INCORRETA.</strong> Com EDG=7, não há evidência de depressão (escala não foi completada).</p><p><strong>Alternativa E: INCORRETA.</strong> Teste get up and go < 10 segundos indica baixo risco de queda.</p><p><strong>Veredito:</strong> Despite having good performance on functional tests (Tinetti 27, get up and go <10s), o histórico de quedas recentes é o fator mais preditivo para quedas futuras.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_SaudeDoIdosoGeriatria",
+        "ClinicaMedica_SaudeDoIdosoGeriatria"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Paciente adulta, encaminhada para atendimento médico, com história de astenia, palidez cutânea, parestesias em mãos e pés. Nega sangramentos ou cirurgias prévias. Em tratamento por vitiligo e hipotiroidismo. Foram solicitados exames laboratoriais: Hemograma: Hb: 7,3 g/dl (12-16g/dl), Ht 22% (37-47%), VCM106 fL (80-100fL), HCM:36pg (26-34pg), Leucócitos: 4100/mm³ (4500-10000/mm³), plaquetas 143000/mm³ (145000 - 450000/mm³) Creatinina: 0,8mg/dl (0,5-1,2mg/dl) TGP:26U/L (10-40U/L) TGO:25U/L (10- 40U/L). Bilirrubina total: 1,22mg/dl (0,20 - 1,00 mg/dl), Bilirrubina direta: 0,22mg/dl (até 0,3mg/dl), Bilirrubina indireta 1,0mg/dl (0,10 - 0,80mg/dl) DHL: 1270 U/L (225-450U/L) Qual a hipótese diagnóstica mais provável para essa paciente?",
+      "alternativas": [
+        "Anemia de doença crônica.",
+        "Neuropatia infecciosa.",
+        "Anemia megaloblástica.",
+        "Talassemia.",
+        "Deficiência de G6PD."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFT 2020 avalia sua capacidade de diagnosticar anemias através de análise laboratorial, tema essencial em clínica médica. O foco está em identificar padrões específicos que levem ao diagnóstico correto.</p><p><strong>A resposta correta é C - Anemia megaloblástica.</strong></p><p>Vamos analisar os achados laboratoriais:</p><p><strong>Dados relevantes:</strong></p><p>• Anemia severa: Hb 7,3 g/dl, Ht 22%</p><p>• VCM elevado: 106 fL (normocítica: 80-100)</p><p>• HCM elevado: 36 pg</p><p>• Leucopenia leve: 4100/mm³</p><p>• Plaquetas normais</p><p>• DHL muito elevada: 1270 U/L</p><p>• Contexto: vitiligo + hipotiroidismo (associações autoimunes)</p><p><strong>Alternativa A: INCORRETA.</strong> Anemia de doença crônica geralmente apresenta VCM normal ou baixo, não elevado.</p><p><strong>Alternativa B: INCORRETA.</strong> Não há sinais de processo infeccioso ativo que justifique neuropatia infecciosa.</p><p><strong>Alternativa C: CORRETA.</strong> O VCM elevado (106 fL) associado à DHL muito elevada (1270) sugere hemólise. O contexto de comorbidades autoimunes (vitiligo + hipotiroidismo) é clássico para anemia megaloblástica por deficiência de B12 ou folato.</p><p><strong>Alternativa D: INCORRETA.</strong> Talassemia apresenta anemia normocítica, não macrocítica.</p><p><strong>Alternativa E: INCORRETA.</strong> Deficiência de G6PD não explica o VCM elevado.</p><p><strong>Veredito:</strong> O VCM elevado associado ao perfil clínico sugere anemia megaloblástica, provavelmente por deficiência de vitamina B12 ou folato no contexto autoimune.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasMacrociticas",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Reação transfusional é definida como qualquer intercorrência que ocorra em consequência de transfusão sanguínea durante ou após sua administração. Pode ser classificada como imediata ou tardia, imune ou não imune. TRALI (transfusional related acute lung injury) ou lesão pulmonar aguda, relacionada à transfusão, é classificada como:",
+      "alternativas": [
+        "Imediata, imune.",
+        "Tardia, imune.",
+        "Imediata, não imune.",
+        "Tardia, não imune.",
+        "Não se enquadra nessa classificação."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFT avaliou o conhecimento sobre classificação das reações transfusionais, especificamente sobre TRALI (Transfusion-Related Acute Lung Injury). O ponto central está em compreender os mecanismos fisiopatológicos das reações adversas à transfusão.</p><p><strong>A resposta correta é a alternativa A - Imediata, imune.</strong></p><p>O TRALI é uma reação transfusional que ocorre em duas a seis horas após a transfusão, sendo classificada como imediata. O mecanismo é predominantemente imune, envolvendo anticorpos anti-HLA ou anti-neutrófilos do doador que reagem com antígenos do receptor, causando ativação de neutrófilos pulmonares e aumento da permeabilidade capilar, resultando em edema pulmonar não cardiogênico.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Correta. TRALI é efeito imediato (2-6h) e mediado por resposta imune (anticorpos anti-HLA/neutrófilos).</p><p><strong>Alternativa B:</strong> Incorreta. Não é reação tardia, pois manifesta-se rapidamente após a transfusão.</p><p><strong>Alternativa C:</strong> Incorreta. Embora seja imediata, o mecanismo é imune, não não-imune.</p><p><strong>Alternativa D:</strong> Incorreta. Não é nem tardia nem não-imune.</p><p><strong>Alternativa E:</strong> Incorreta. TRALI se enquadra perfeitamente nesta classificação.</p><p>Esta classificação é fundamental para o manejo adequado das reações transfusionais, pois orienta tanto a prevenção quanto o tratamento específico para cada tipo de reação adversa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Baseado no protocolo clínico e nas diretrizes terapêuticas para manejo da infecção por HIV em adultos, assinale a alternativa CORRETA.",
+      "alternativas": [
+        "O esquema inicial preferencial para todos os adultos é a associação de Tenofovir, Lamivudina e Dolutegravir.",
+        "Adultos coinfectados com tuberculose não devem receber esquema com Efavirenz.",
+        "Tenofovir é contraindicado como terapia inicial em pacientes com disfunção renal pré- existente.",
+        "Mulheres em idade fértil devem ter preferencialmente Dolutegravir no esquema terapêutico.",
+        "Pacientes com teste para HLA-B*5701 negativo não devem receber Abacavir"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testou o conhecimento sobre as diretrizes brasileiras para tratamento antirretroviral em adultos com HIV, um tópico atual e de grande relevância clínica. A UFT buscou avaliar se o candidato conhece as particularidades do tratamento inicial e as contraindicações específicas de cada medicamento.</p><p><strong>A resposta correta é a alternativa C - Tenofovir é contraindicado como terapia inicial em pacientes com disfunção renal pré-existente.</strong></p><p>O tenofovir é um antirretroviral da classe dos análogos nucleosídeos que pode causar Nefrotoxicidade. Em pacientes com disfunção renal pré-existente (clearance de creatinina < 50 mL/min), o tenofovir deve ser evitado como terapia inicial devido ao risco de agravamento da função renal. Nestes casos, outras opções como abacavir ou regimes baseados em inibidores da integrase podem ser considerados.</p><p>Analisando as outras alternativas:</p><p><strong>Alternativa A:</strong> Incorreta. O esquema preferencial atual varia conforme o perfil do paciente, sendo o dolutegravir + tenofovir + lamivudina uma opção, mas não universal para todos os adultos.</p><p><strong>Alternativa B:</strong> Incorreta. Adultos coinfectados com tuberculose PODEM receber efavirenz, sendo este inclusive um dos esquemas recomendados para esta situação, considerando interações medicamentosas específicas.</p><p><strong>Alternativa D:</strong> Incorreta. Mulheres em idade fértil devem evitar o dolutegravir como primeira escolha devido ao risco de defeitos do tubo neural no embrião.</p><p><strong>Alternativa E:</strong> Incorreta. Pacientes com HLA-B*5701 negativo podem receber abacavir com segurança, sendo o teste positivo que contraindica o uso.</p><p>Esta questão é essencial pois o tratamento antirretroviral requer individualização baseada no perfil clínico de cada paciente, especialmente considerando comorbidades e interações medicamentosas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_HIVAids",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_MicrobiologiaEAntimicrobianos"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "As arboviroses são, atualmente, um desafio de saúde pública global. Sobre arboviroses é correto afirmar:",
+      "alternativas": [
+        "A família Flaviviridea inclui os vírus causadores da Dengue, Zika e Chikungunya.",
+        "A maioria das infecções por Chikungunya são sintomáticas.",
+        "Os sintomas de infecção por Chikungunya costumam, em sua maioria, durar até um ano.",
+        "Mulher com suspeita de infecção pelo Zika deve esperar, ao menos, 1 ano para engravidar.",
+        "Atualmente, é preconizado reforço de vacina da febre amarela a cada 10 anos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avaliou o conhecimento sobre arboviroses, tema de extrema importância na saúde pública brasileira. A UFT abordou aspectos taxonomicamente, clínicos e preventivos dessas infecções virais transmitidas por artrópodes.</p><p><strong>A resposta correta é a alternativa E - Atualmente, é preconizado reforço de vacina da febre amarela a cada 10 anos.</strong></p><p>Segundo o calendário vacinal brasileiro atualizado em 2016 pelo Ministério da Saúde, a vacina contra febre amarela confere imunidade duradoura com apenas uma dose. O reforço a cada 10 anos foi abandonado baseado em evidências científicas de proteção lifelong após a vacinação primária. Esta mudança é fundamental para otimizar campanhas de vacinação e reduzir custos em saúde pública.</p><p>Vamos avaliar as demais alternativas:</p><p><strong>Alternativa A:</strong> Incorreta. A família Flaviviridae inclui dengue e zika, mas chikungunya pertence à família Togaviridae, gênero Alphavirus.</p><p><strong>Alternativa B:</strong> Incorreta. A maioria das infecções por chikungunya são ASSINTOMÁTICAS (cerca de 70-80%), com apenas 20-30% desenvolvendo sintomas.</p><p><strong>Alternativa C:</strong> Incorreta. Os sintomas de chikungunya normalmente duram 7-10 dias, podendo persistir por até 3 meses em alguns casos, mas raramente atingem um ano completo.</p><p><strong>Alternativa D:</strong> Incorreta. Mulheres com suspeita de infecção por zika devem esperar apenas 6 meses para engravidar, não um ano.</p><p>Esta questão evidencia a importância de conhecimento atualizado sobre arboviroses, especialmente no contexto brasileiro onde essas doenças são endêmicas e representam desafios significativos para o sistema de saúde.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Chikungunya",
+        "MedicinaPreventiva_Epidemiologia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "A diarreia aguda, na AIDS, pode ser causada por diversos agentes etiológicos, como vírus, bactérias, fungos, protozoários e helmintos. O próprio HIV pode causar diarreias (enteropatia da AIDS). Muitas espécies de enteroparasitas têm importância como agentes potencialmente patogênicos para os pacientes infectados com o HIV, principalmente, nos pacientes imunossuprimidos e com número de linfócitos T CD4+ abaixo de 200 células/mm³. Quais são os principais parasitas intestinais, envolvidos na etiologia da diarreia, nos pacientes portadores da AIDS?",
+      "alternativas": [
+        "Giardia lamblia, Cryptosporidium parvum e Isospora belli.",
+        "Entamoeba histolytica, Giardia lamblia e Microsporidium spp.",
+        "Cryptosporidium parvum, Microsporidium spp. e Isospora belli.",
+        "Isospora belli, Ascaris lumbricoides e Taenia saginata.",
+        "Entamoeba histolytica, Ancylostoma duodenale e Cryptosporidium parvum."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFT evaluou o conhecimento sobre enteroparasitoses em pacientes com AIDS, especificamente os principais agentes causadores de diarreia em imunossuprimidos. O foco está na correlação entre o grau de imunossupressão (CD4+ < 200) e a suscetibilidade a certos parasitas intestinais.</p><p><strong>A resposta correta é a alternativa C - Cryptosporidium parvum, Microsporidium spp. e Isospora belli.</strong></p><p>Estes três parasitas são os principais agentes de diarreia em pacientes AIDS com contagem de CD4+ < 200 células/mm³. Eles são caracterizados por causarem doença oportunista em pacientes imunocomprometidos e serem classificados como coccídios ou microsporídeos intracelulares obrigatórios.</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> Giardia lamblia não é um agente típico de AIDS avançado. Embora possa causar diarreia, não é oportunista específico como os coccídios.</p><p><strong>Alternativa B:</strong> Entamoeba histolytica pode causar diarreia em AIDS, mas não é um dos principais agentes oportunistas como coccídios e microsporídeos.</p><p><strong>Alternativa D:</strong> Ascaris lumbricoides e Taenia saginata são helmintos que não causam diarreia significativa em pacientes AIDS, sendo mais comuns em imunocompetentes.</p><p><strong>Alternativa E:</strong> Ancylostoma duodenale é um helminto causador de anemia, não diarreia, e não é agente opportunista específico para AIDS.</p><p>A importância clínica desta questão radica no fato de que o reconhecimento destes parasitas orienta tanto o diagnóstico quanto o tratamento específico, sendo necessário conhecimento sobre o estado imunológico do paciente para suspeitar adequadamente destes agentes oportunistas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_HIVAids",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_ImunossuprimidosNaohiv"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "A perfusão tecidual é determinada pelo fluxo sanguíneo. Este, dividido em 3 níveis: central (débito cardíaco), regional (fluxo entre os órgãos) e microcirculação. A hipoperfusão tecidual é o principal fator responsável pelo desenvolvimento e pela manutenção da disfunção de múltiplos órgãos. A medida da oxigenação tecidual, portanto, é crucial para o intensivista, com objetivo de evitar a disóxia celular. Baseado no texto acima, costuma-se dividir o comprometimento da oxigenação tecidual em 4 tipos, EXCETO:",
+      "alternativas": [
+        "Hipoxemia hipóxica: quando o comprometimento da oxigenação pulmonar é o principal responsável pela oferta de O2.",
+        "Hipoxemia circulatória: quando qualquer comprometimento da circulação limita a oferta de O2.",
+        "Hipoxemia anêmica: quando o comprometimento da oxigenação tecidual é secundária à queda da taxa de hemoglobina.",
+        "Hipoxemia citopática: quando o metabolismo aeróbio, para a produção de ATP, é limitada por alterações celulares para a fosforilação oxidativa, sendo esta um caminho final dos outros 3 tipos de hipoxemia acima citados, se não tratados e revertidos a tempo.",
+        "Encefalopatia hipóxia isquêmica, resultando em parada cardiorrespiratória."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avaliou conceitos fundamentais de oxigenação tecidual e os tipos de comprometimento da oferta de oxigênio aos tecidos. O texto introdutório estabeleceu que a oxigenação é crucial para evitar disóxia celular, e a questão busca testar o conhecimento sobre a classificação dos diferentes tipos de hipoxemia.</p><p><strong>A resposta correta é a alternativa E - Encefalopatia hipóxia isquêmica, resultando em parada cardiorrespiratória.</strong></p><p>A alternativa E está incorreta porque a encefalopatia hipóxia isquêmica e parada cardiorrespiratória são CONSEQUÊNCIAS da hipóxia tecidual, não tipos de comprometimento da oxigenação. As quatro classificações mencionadas nas outras alternativas (hipoxemia hipóxica, circulatória, anêmica e citopática) são os mecanismos fundamentais pelos quais a oferta de oxigênio pode ser comprometida.</p><p>Vamos revisar os tipos corretos:</p><p><strong>Alternativa A:</strong> Correta. Hipoxemia hipóxica refere-se ao comprometimento da oxigenação pulmonar, onde há problema primário na troca gasosa.</p><p><strong>Alternativa B:</strong> Correta. Hipoxemia circulatória envolve problemas de perfusão, limitando o fluxo sanguíneo aos tecidos.</p><p><strong>Alternativa C:</strong> Correta. Hipoxemia anêmica é relacionada à redução da capacidade de transporte de oxigênio pela hemoglobina.</p><p><strong>Alternativa D:</strong> Correta. Hipoxemia citopática refere-se ao comprometimento da utilização do oxigênio pelos mitocôndrios, representando o endpoint comum dos outros três tipos se não tratados.</p><p>Esta classificação é fundamental para a prática clínica, pois cada tipo de hipoxemia requer estratégias terapêuticas específicas. O intensivista deve identificar corretamente o mecanismo predominante para instituir o tratamento mais adequado e prevenir a progressão para falência de múltiplos órgãos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Neurologia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "A perda completa e irreversível das funções encefálicas, definida pela cessação das atividades corticais e de tronco encefálico, caracteriza a morte encefálica (ME) e, portanto, a morte da pessoa (Resol. CFM 2173/2017). O diagnóstico de ME é obrigatório e a notificação compulsória para a Central de Notificação, Captação e distribuição de órgãos (CNCDO), independentemente da possibilidade de doação ou não de órgãos e/ou tecidos (Lei 9.434/1997). Todas a opções abaixo fazem parte do protocolo para o diagnóstico de morte encefálica (ME), EXCETO:",
+      "alternativas": [
+        "Definir sempre a causa da ME.",
+        "Afastar os fatores de confusão de diagnóstico de ME, condições que podem abolir reflexos do tronco cerebral.",
+        "Realizar dois testes clínicos de ME por médicos diferentes e devidamente capacitados, separados por intervalo de tempo adequado, conforme a faixa etária do paciente.",
+        "Verificar ausência de movimentos respiratórios pelo teste de apnéia.",
+        "Realizar exame complementar para confirmação de diagnóstico, com o Doppler cardíaco, e, se possível, o transcraniano."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFT avaliou o conhecimento sobre os protocolos obrigatórios para o diagnóstico de morte encefálica, conforme a Resolução CFM 2173/2017. O foco foi identificar qual dos procedimentos listados NÃO faz parte do protocolo oficial.</p><p><strong>A resposta correta é E - Realizar exame complementar para confirmação de diagnóstico, com o Doppler cardíaco, e, se possível, o transcraniano.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) CORRETA:</strong> A Resolução CFM 2173/2017 estabelece que é obrigatório definir sempre a causa da morte encefálica. Isso é essencial para garantir que não há possibilidade de reversão do quadro.</p><p><strong>B) CORRETA:</strong> É fundamental afastar fatores de confusão como hipotermia, distúrbios metabólicos, efeito de sedativos ou outras condições que possam abolir reflexos do tronco cerebral.</p><p><strong>C) CORRETA:</strong> O protocolo exige dois testes clínicos realizados por médicos diferentes, separados por intervalos de tempo adequados conforme a idade do paciente (6h para >1 ano, 24h para <1 ano).</p><p><strong>D) CORRETA:</strong> O teste de apnéia é obrigatório para confirmar ausência de movimentos respiratórios espontâneos.</p><p><strong>E) INCORRETA:</strong> <em>O exame complementar (Doppler ou transcraniano) é OBRIGATÓRIO, não opcional!</em> A resolução estabelece que estes exames devem ser realizados para confirmação do diagnóstico, nunca como opção. Esta é a única alternativa incorreta.</p><p><strong>Veredito:</strong> A questão explora um ponto crítico do protocolo brasileiro de morte encefálica - o caráter obrigatório dos exames complementares para confirmação diagnóstica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaLegal"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "A sepse é, atualmente, definida como uma disfunção orgânica com risco de morte, causada por uma resposta inapropriada do hospedeiro à infeção. Sabemos que o diagnóstico precoce e o atendimento sistematizado ao paciente séptico têm grande impacto na sua sobrevida. No tocante ao atendimento médico das primeiras horas da sepse, todas as opções abaixo estão corretas, EXCETO:",
+      "alternativas": [
+        "Coleta de duas hemoculturas de sítios distintos, em até uma hora, conforme rotina específica do hospital, e culturas de todos os outros sítios pertinentes (aspirado traqueal, líquor, urocultura), antes da administração do antimicrobiano.",
+        "Coleta de exames laboratoriais para a pesquisa de disfunções orgânicas: gasometria e lactato arterial, hemograma completo, creatinina, bilirrubina e coagulograma, o mais rapidamente possível.",
+        "Para pacientes hipotensos (PAS< 90mmHg, PAM <65mmHg ou, eventualmente, redução da PAS em 40mmHg da pressão habitual) ou com sinais de hipoperfusão, entre eles níveis de lactato, acima de duas vezes o valor de referência institucional (hiperlactatemia inicial), deve ser iniciada ressuscitação volêmica com infusão imediata de 30 mL/kg de cristaloides, dentro da 1ª hora do diagnóstico da detecção dos sinais de hipoperfusão.",
+        "Prescrição e administração de antimicrobianos empírico de amplo espectro para a situação clínica, por via endovenosa, visando ao foco suspeito, dentro da primeira hora da identificação da sepse.",
+        "Uso de vasopressores para pacientes que permaneçam com pressão arterial média (PAM) abaixo de 65 (após a infusão de volume inicial), sendo a noradrenalina a droga de primeira escolha, podendo tolerar pressões abaixo de 65 mmHg, por período acima das 6h."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFT testou o conhecimento sobre a abordagem sistematizada das primeiras horas da sepse, seguindo as diretrizes internacionais de manejo. O objetivo foi identificar qual alternativa apresenta uma conduta incorreta.</p><p><strong>A resposta correta é E - Uso de vasopressores para pacientes que permaneçam com pressão arterial média (PAM) abaixo de 65 (após a infusão de volume inicial), sendo a noradrenalina a droga de primeira escolha, podendo tolerar pressões abaixo de 65 mmHg, por período acima das 6h.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) CORRETA:</strong> A coleta de culturas ANTES da antibioticoterapia é fundamental para identificar o patógeno causador. O intervalo de 1 hora está correto.</p><p><strong>B) CORRETA:</strong> Estes exames são essenciais para avaliar a disfunção orgânica. A gasometria e lactato são marcadores importantes de perfusão tecidual.</p><p><strong>C) CORRETA:</strong> A ressuscitação volêmica agressiva com 30 mL/kg de cristaloides na primeira hora é mandatória segundo as diretrizes atuais da Surviving Sepsis Campaign.</p><p><strong>D) CORRETA:</strong> A antibioticoterapia de amplo espectro deve ser iniciada na primeira hora para reduzir mortalidade na sepse.</p><p><strong>E) INCORRETA:</strong> <em>A alternativa está correta até mencionar que se pode \"tolerar pressões abaixo de 65 mmHg por período acima de 6h\".</em> A meta é manter PAM ≥ 65 mmHg o mais rapidamente possível. Não se deve \"tolerar\" pressões baixas por longos períodos - isso agrava a hipoperfusão tecidual. A noradrenalina é realmente a primeira escolha.</p><p><strong>Veredito:</strong> Esta questão enfatiza que, ao contrário do que a alternativa E sugere, não devemos tolerar hipotensão sustentada. O objetivo é restaurar a perfusão tecidual rapidamente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Doença Renal Policística Autossômica Dominante é uma doença multissistêmica, caracterizada por cistos renais múltiplos, associados a cistos em outros órgãos, como fígado, pâncreas e membranas aracnoides. Sobre os critérios ultrassonográficos, para diagnóstico de Doença Renal Policística Autossômica Dominante (DRPAD), marque a alternativa INCORRETA:",
+      "alternativas": [
+        "Presença de 3 ou mais cistos, unilateral ou bilateral, em pacientes com idade entre 15- 29 anos.",
+        "Presença de 2 ou mais cistos, unilateral ou bilateral, em pacientes com idade entre 15- 39 anos.",
+        "Presença de 2 ou mais cistos em cada rim, em pacientes com idade entre 40-59 anos.",
+        "Presença de 4 ou mais cistos em cada rim, em pacientes com mais de 60 anos.",
+        "Presença de 3 ou mais cistos, unilateral ou bilateral, em pacientes com idade entre 30- 39 anos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFT avaliou o conhecimento sobre os critérios ultrassonográficos padronizados para diagnóstico da Doença Renal Policística Autossômica Dominante (DRPAD), testando a memorização dos parâmetros específicos por faixa etária.</p><p><strong>A resposta correta é B - Presença de 2 ou mais cistos, unilateral ou bilateral, em pacientes com idade entre 15- 39 anos.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) CORRETA:</strong> Para pacientes entre 15-29 anos, a presença de 3 ou mais cistos (unilateral ou bilateral) é suficiente para o diagnóstico.</p><p><strong>B) INCORRETA:</strong> <em>A faixa etária está incorreta!</em> Para pacientes entre 30-39 anos, o critério é 3 ou mais cistos, não 2 ou mais. O critério de \"2 ou mais cistos\" se aplica à faixa de 15-29 anos.</p><p><strong>C) CORRETA:</strong> Para pacientes de 40-59 anos, são necessários 2 ou mais cistos em cada rim.</p><p><strong>D) CORRETA:</strong> Para pacientes acima de 60 anos, são necessários 4 ou mais cistos em cada rim.</p><p><strong>E) CORRETA:</strong> Para pacientes de 30-39 anos, são necessários 3 ou mais cistos (unilateral ou bilateral).</p><p><strong>Veredito:</strong> Esta questão classifica corretamente os critérios, destacando que a alternativa B confundiu a faixa etária. O critério de \"2 ou mais cistos\" vale para 15-29 anos, enquanto para 30-39 anos são necessários 3 ou mais cistos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_InvestigacaoDiagnostica"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "J.S.P., sexo masculino, 26 anos, dá entrada no PS com queixa de cefaléia intensa, febre, náuseas, vômitos e dor abdominal. Após 24h de internação, evoluiu com fraqueza muscular e rigidez de nuca. Realizada a coleta do líquor, mas, após o resultado, mostrou- se sem evidências da presença de micro-organismos. Realizada TC de crânio, evidenciou- se ventriculomegalia importante. Diurese 24h = 650 ml. Os exames laboratoriais mostraram uma discreta anemia, leucócitos normais; potássioo = 4,7; sódio = 128; magnésio = 2,9; cálcio = 11,5, gasometria arterial sem alterações. Visto o quadro clínico descrito acima, marque a alternativa que melhor reflete essa condição:",
+      "alternativas": [
+        "Trata-se de uma infecção viral, levando à síndrome meníngea, sendo necessário o uso de um antiviral.",
+        "Trata-se de uma meningite bacteriana, levando à síndrome meníngea, sendo necessário iniciar antibiótico endovenoso imediatamente e isolamento de contato e respiratório.",
+        "Trata-se de um quadro de hidrocefalia, levando a SIADH, com hiponatremia, aumento de Vasopressina e osmolaridade urinária >300 mOsm/kg, devendo-se realizar DVE.",
+        "Trata-se de uma SIADH, com hipernatremia, aumento de vasopressina e osmolaridade urinária > 300 mOsm/kg, devendo-se realizar a infusão de conivaptan endovenoso.",
+        "Trata-se de uma síndrome meníngea, com hidrocefalia, associada à hiponatremia importante, devendo-se realizar a infusão lenta de solução salina e DVE para redução da hidrocefalia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFT apresentou um caso clínico complexo com múltiplas alterações neurológicas e laboratoriais, exigindo análise integrada para identificar a condição predominante e o manejo adequado.</p><p><strong>A resposta correta é C - Trata-se de um quadro de hidrocefalia, levando a SIADH, com hiponatremia, aumento de Vasopressina e osmolaridade urinária >300 mOsm/kg, devendo-se realizar DVE.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) INCORRETA:</strong> O líquor sem evidências de micro-organismos e a ventriculomegalia na TC não sustentam infecção viral como diagnóstico principal. A hiponatremia com osmolaridade urinária >300 mOsm/kg sugere SIADH.</p><p><strong>B) INCORRETA:</strong> O líquor normal e a ausência de microorganismos descartam meningite bacteriana. Além disso, o isolamento de contato e respiratório não seria necessário.</p><p><strong>C) CORRETA:</strong> <em>Apresenta diagnóstico e tratamento corretos:</em> A ventriculomegalia na TC confirma hidrocefalia, a hiponatremia (Na=128) com osmolaridade urinária >300 mOsm/kg caracteriza SIADH, e a DVE (derivação ventricular externa) é o tratamento adequado para reduzir pressão intracraniana.</p><p><strong>D) INCORRETA:</strong> Há confusão quanto ao tipo de disnatremia. O paciente apresenta hiponatremia (128 mEq/L), não hipernatremia. Além disso, conivaptan não é primeira escolha no SIADH agudo com hidrocefalia.</p><p><strong>E) INCORRETA:</strong> Embora mencione hidrocefalia e hiponatremia, não especifica o diagnóstico correto de SIADH. A solução salina poderia piorar o quadro de SIADH, e o foco principal é o controle da pressão intracraniana com DVE.</p><p><strong>Veredito:</strong> O caso ilustra a importância de correlacionar achados neurológicos (ventriculomegalia) com alterações hidroeletrolíticas (SIADH secundário à hidrocefalia).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TumoresDoSistemaNervosoCentral",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Hiponatremia"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "LFC, sexo feminino, 31 anos, vai à consulta com Obstetra, apresentando-se com 12 semanas de gestação, e queixando- se de disúria, dor lombar, febre de 38,4°C e urina com odor forte. Após a propedêutica, o médico suspeitou de Pielonefrite Aguda. De acordo com o diagnóstico em questão, marque a alternativa CORRETA, em relação aos exames e ao tratamento a serem realizados:",
+      "alternativas": [
+        "Realizar Radiografia de abdome, coletar EAS e Urocultura e iniciar Antibióticoterapia via Oral empírica.",
+        "Realizar TC de abdome com contraste, coletar EAS e Urocultura e iniciar Antibióticoterapia via Oral empírica.",
+        "Realizar Ultrassonografia de Rins e vias urinárias, coletar EAS e Urocultura, e aguardar resultado para iniciar antibióticos.",
+        "Realizar Ultrassonografia de Rins e vias urinárias, coletar EAS e Urocultura e iniciar Antibióticoterapia Endovenosa empírica.",
+        "Nenhuma das alternativas anteriores."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFT avaliou o manejo adequado de pielonefrite aguda em gestantes, enfatizando a necessidade de antibióticoterapia endovenosa em casos de ITU complicada durante a gravidez.</p><p><strong>A resposta correta é D - Realizar Ultrassonografia de Rins e vias urinárias, coletar EAS e Urocultura e iniciar Antibióticoterapia Endovenosa empírica.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) INCORRETA:</strong> A radiografia de abdome está contraindicada na gestação devido à radiação ionizante. Além disso, pielonefrite em gestantes requer sempre tratamento endovenoso, não oral.</p><p><strong>B) INCORRETA:</strong> TC com contraste deve ser evitada na gestação, especialmente no primeiro trimestre, salvo em situações absolutely necessárias. O tratamento também deveria ser endovenoso.</p><p><strong>C) INCORRETA:</strong> Aguardar resultado da urocultura para iniciar antibiótico pode levar a atraso terapêutico e complicações maternas/fetais. O tratamento deve ser empírico imediato.</p><p><strong>D) CORRETA:</strong> <em>Apresenta todos os elementos corretos:</em> Ultrassonografia é o exame de imagem de escolha na gestação para avaliar vias urinárias; EAS e urocultura são obrigatórios para confirmação diagnóstica; e antibióticoterapia endovenosa empírica é mandatória em pielonefrite de gestantes.</p><p><strong>E) INCORRETA:</strong> A alternativa D está correta, então esta opção não se aplica.</p><p><strong>Veredito:</strong> Pielonefrite na gestação é uma emergência obstétrica que exige diagnóstico rápido e tratamento antibiótico endovenoso imediato para prevenir complicações como pielonefritis necrotizante, choque séptico e trabalho de parto prematuro.</p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_InfeccaoUrinariaEBacteriuriaAs",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_Pielonefrite"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Paciente 56 anos, deu entrada com déficit motor em dimidio à esquerda, com início aproximadamente, há 2 horas. A AngioTomografia evidenciou trombo em segmento proximal de artéria cerebral média direita. Apresentou NIHSS 12 e ASPECT 8. Qual a melhor conduta?",
+      "alternativas": [
+        "Trombólise EV + Trombectomia.",
+        "Trombólise intrarterial.",
+        "Craniectomia descompressiva.",
+        "Conduta expectante. Prognóstico reservado.",
+        "AAS + Heparina de Baixo Peso Molecular."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFT 2020 avalia o manejo do AVC agudo com indicação de reperfusão.</strong></p><p>O caso apresenta um paciente de 56 anos com déficit neurológico agudo iniciado há 2 horas. Os dados fundamentais incluem: <strong>NIHSS 12</strong> (déficit neurológico moderado), <strong>ASPECT 8</strong> (sugerindo tecido cerebral viável) e confirmação tomográfica de <strong>trombo em artéria cerebral média direita proximal</strong>.</p><p><strong>COMPREENDENDO O PROTOCOLO DE AVC AGUDO:</strong></p><p>A janela terapêutica é crucial: até 4,5h para trombólise endovenosa e até 6h para trombectomia mecânica. Com 2h de sintomas, este paciente encontra-se dentro do período ideal para intervenção.</p><p><strong>ANALISANDO AS ALTERNATIVAS:</strong></p><p><strong>A) Trombólise EV + Trombectomia - CORRETA.</strong> A combinação representa o protocolo atual gold standard para oclusão de grande vaso em casos selecionados. A trombólise endovenosa dissolve o trombo sistematicamente, enquanto a trombectomia remove mecanicamente o êmbolo em artéria proximal de grande calibre.</p><p><strong>B) Trombólise intrarterial - INCORRETA.</strong> Técnica invasiva com eficácia inferior à trombectomia mecânica, reservada para casos especiais onde a trombectomia não é viável.</p><p><strong>C) Craniectomia descompressiva - INCORRETA.</strong> Indicada para edema cerebral maligno com efeito de massa, não para reperfusão de AVC agudo.</p><p><strong>D) Conduta expectante - INCORRETA.</strong> Contradiz completamente os princípios do AVC agudo, onde 'time is brain' - cada minuto perdido resulta em morte neuronal irreversível.</p><p><strong>E) AAS + Heparina de Baixo Peso Molecular - INCORRETA.</strong> Não constituem intervenção de reperfusão. A heparina pode até aumentar o risco hemorrágico sem benefícios comprovados no AVC agudo.</p><p><strong>VEREDITO:</strong> A resposta correta é <strong>A - Trombólise EV + Trombectomia</strong>, representando a abordagem mais eficaz para otimizar o desfecho neurológico neste cenário de AVC agudo com oclusão de grande vaso.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_AcidenteVascularCerebralIsquemico"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Dentre os distúrbios do movimento, temos, como exemplo, a Paralisia Supranuclear Progressiva. O sinal inicial da Paralisia Supranuclear Progressiva é:",
+      "alternativas": [
+        "Disartria.",
+        "Disfagia.",
+        "Nistagmo vertical.",
+        "Dificuldades para andar.",
+        "Demência."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão explora o conhecimento sobre a apresentação clínica inicial da Paralisia Supranuclear Progressiva (PSP).</strong></p><p>A PSP é uma tauopatia neurodegenerativa que integra o espectro dos distúrbios do movimento, caracterizada pela degeneração dos núcleos oculomotores superiores e vias de equilíbrio.</p><p><strong>FISIOPATOLOGIA DA PSP:</strong></p><p>A doença resulta do acúmulo de proteína tau anormal, afetando principalmente: núcleos oculomotores superiores, núcleos vestibulares, núcleos subtalâmicos, núcleos pedunculopontinos e córtex frontal. A degeneração progressiva desses circuitos explica a tríade diagnóstica: instabilidade postural, paresias oculomotoras e rigidez axial.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Disartria - INCORRETA.</strong> Embora comum na PSP, geralmente surge em fases intermediárias da doença, não representando o sinal inaugural característico.</p><p><strong>B) Disfagia - INCORRETA.</strong> Manifestação tardia, resultante da progressão da disfunção dos núcleos bulbares e faz parte do padrão típico de evolução.</p><p><strong>C) Nistagmo vertical - INCORRETA.</strong> O nistagmo verdadeiro é raramente observado na PSP; o que ocorre é a limitação do olhar vertical, especialmente para baixo, sem componente nistágmico característico.</p><p><strong>D) Dificuldades para andar - CORRETA.</strong> Este é o sinal inicial mais frequente da PSP. A instabilidade postural, quedas precoces e alterações da marcha resultam da degeneração dos núcleos vestibulares e vias de equilíbrio, precedendo significativamente outros sintomas neurológicos.</p><p><strong>E) Demência - INCORRETA.</strong> A disfunção cognitiva frontal aparece em fases avançadas, com padrão de lentidão do pensamento (bradifrenia) e alterações comportamentais, não como manifestation inicial.</p><p><strong>DIAGNÓSTICO DIFERENCIAL:</strong></p><p>É fundamental distinguir a PSP de outras parkinsonisms. O início precoce das alterações de equilíbrio e a ausência de tremor de repouso significativo ajudam a diferenciá-la da Doença de Parkinson.</p><p><strong>VEREDITO:</strong> A resposta correta é <strong>D - Dificuldades para andar</strong>, representando o apresentação inicial típica da Paralisia Supranuclear Progressiva.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Uma paciente de 33 anos, após queda de cavalo, manifestou dor no períneo e clítoris, assim como incontinência fecal. A localização anatômica mais provável da lesão é:",
+      "alternativas": [
+        "Nervo obturador.",
+        "Nervo pudendo.",
+        "Plexo sacral.",
+        "Nervo ciático.",
+        "Nervo femoral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFT 2020 avalia o conhecimento sobre anatomia neuroanatômica, especificamente a inervação do períneo.</strong></p><p>O caso clínicos apresentado após trauma por queda de cavalo com sintomas específicos de dor perineal e clitoriana associadas à incontinência fecal constitui um padrão típico de lesão do nervo pudendo.</p><p><strong>COMPREENDENDO A ANATOMIA DO NERVO PUDENDO:</strong></p><p>O nervo pudendo origina-se do <strong>plexo sacral (S2-S4)</strong> e representa a principal via neural para a inervação do períneo. Seu trajeto passa pelo forame isquiático maior, contorna a espinha isquiática e penetra no períneo através do forame isquiático menor.</p><p><strong>FUNÇÕES DO NERVO PUDENDO:</strong></p><p>• <strong>Sensorial:</strong> Períneo, clítoris, vagina, pênis, face medial da coxa</p><p>• <strong>Motora:</strong> Músculos do assoalho pélvico, esfíncter uretral externo, esfíncter anal externo</p><p>• <strong>Autonômica:</strong> Controles simpáticos e parassimpáticos das estruturas genitais</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Nervo obturador - INCORRETA.</strong> Responsável pela inervação motora da face medial da coxa e sensitiva da face interna da coxa, não apresentando relação com o períneo.</p><p><strong>B) Nervo pudendo - CORRETA.</strong> Apresenta distribuição anatômica que explica todos os sintomas: dor perineal e clitoriana (componente sensorial), incontinência fecal (disfunção do esfíncter anal externo).</p><p><strong>C) Plexo sacral - INCORRETA.</strong> Embora origine o nervo pudendo, o plexo sacral não apresenta distribuição perineal direta, siendo um termo muito inespecífico.</p><p><strong>D) Nervo ciático - INCORRETA.</strong> Inerva região glútea e membros inferiores, sem relação com inervação perineal direta.</p><p><strong>E) Nervo femoral - INCORRETA.</strong> Responsável pela inervação da face anterior da coxa e região crural anterior, não presentando distribuição perineal.</p><p><strong>CORRELAÇÃO CLÍNICA:</strong></p><p>A queda de cavalo caracteriza-se por trauma direto sobre a região perineal, especialmente em posicionamento específico. Esta modalidade traumática é conhecida por produzir lesões específicas do nervo pudendo devido ao seu trajeto superficial nesta região.</p><p><strong>VEREDITO:</strong> A resposta correta é <strong>B - Nervo pudendo</strong>, única alternativa que explica adequadamente o conjunto sintomático observado.",
+      "filterIds": [
+        "Outros",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Anatomia",
+        "Cirurgia_Trauma"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "O câncer de bexiga é uma das neoplasias mais comuns do trato urinário, correspondendo ao nono tipo mais incidente, com cerca de 430 mil casos novos, em 2012, em todo o mundo. Quando comparado por sexo, nos homens, ocupa a sexta posição (330.380 casos novos, no mundo, em 2012), em seguida, aos de pulmão, próstata e colorretal. Nas mulheres, é o 19° mais frequente (99.413 casos novos, no mundo, em 2012), mais comumente em países desenvolvidos. No Brasil, segundo o Instituto Nacional de Câncer (INCA), a estimativa de novos casos, em 2018, é de 9.480 casos, sendo 6.690, em homens, e 2.790, em mulheres. Dentre as alternativas, qual não é considerada fator de risco para o câncer de bexiga?",
+      "alternativas": [
+        "Tabagismo.",
+        "Tabagismo passivo.",
+        "Exposição ao benzeno.",
+        "Idade avançada.",
+        "Uso de contraceptivo hormonal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da UFT 2020 avalia o conhecimento sobre epidemiologia e fatores de risco do câncer de bexiga.</strong></p><p>A questão apresenta dados epidemiológicos atuais e solicita a identificação do fator de risco NÃO associado ao câncer de bexiga.</p><p><strong>EPIDEMIOLOGIA DO CÂNCER DE BEXIGA:</strong></p><p>Dados apresentados confirmam a maior incidência masculina (6ª posição vs 19ª feminina) e a predominância em países desenvolvidos. A estimativa brasileira de 9.480 casos em 2018 reflete a importância crescente desta neoplasia no contexto oncológico nacional.</p><p><strong>FATORES DE RISCO RECONHECIDOS:</strong></p><p>• <strong>Tabagismo ativo:</strong> Fator de risco mais importante, contribuindo para 50-65% dos casos em homens</p><p>• <strong>Tabagismo passivo:</strong> Aumenta o risco proporcionalmente à exposição</p><p>• <strong>Exposição ocupacional:</strong> Benzeno, aminas aromáticas, hidrocarbonetos</p><p>• <strong>Idade avançada:</strong> Incidência aumenta exponencialmente após os 50 anos</p><p>• <strong>Fatores genéticos:</strong> Polimorfismos de enzimas metabolizadoras</p><p>• <strong>Exposições ambientais:</strong> Arsênico, cloretos</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>A) Tabagismo - INCORRETA como resposta (mas é fator de risco).</strong> O tabagismo é responsável por aproximadamente 50% dos casos de câncer de bexiga, com risco proporcional ao número de cigarros diários e anos de consumo.</p><p><strong>B) Tabagismo passivo - INCORRETA como resposta (mas é fator de risco).</strong> Estudos mostram aumento de 20-30% no risco de câncer de bexiga em não-fumantes expostos ao fumo passivo.</p><strong>C) Exposição ao benzeno - INCORRETA como resposta (mas é fator de risco).</strong> Benzeno é reconhecido agente carcinogênico para câncer de bexiga, especialmente em trabalhadores da indústria química, pigmentos e borracha.</p><p><strong>D) Idade avançada - INCORRETA como resposta (mas é fator de risco).</strong> A incidência aumenta significativamente após os 65 anos, com pico na 8ª década de vida.</p><p><strong>E) Uso de contraceptivo hormonal - CORRETA.</strong> <strong>Não existe associação comprovada</strong> entre uso de contraceptivos hormonais e aumento do risco de câncer de bexiga. Esta modalidade hormonal está mais associada a alterações do risco em cânceres de mama, endométrio e colo uterino.</p><p><strong>CORRELAÇÃO COM DADOS EPIDEMIOLÓGICOS:</strong></p><p>A predominância masculina explica parcialmente a associação com o tabagismo, dado que historicamente os homens apresentam maior exposiçãotabagica.</p><p><strong>VEREDITO:</strong> A resposta correta é <strong>E - Uso de contraceptivo hormonal</strong>, única alternativa que não constitui fator de risco estabelecido para o câncer de bexiga.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_CancerDeBexiga"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "O sistema TNM é mundialmente usado para o estadiamento de neoplasias. A categoria T fornece informações sobre aspectos do tumor primário, como seu tamanho, quão profundamente se desenvolveu no órgão em que se originou e quanto invadiu os tecidos adjacentes. No câncer de esôfago, qual melhor exame para avaliar a categoria T?",
+      "alternativas": [
+        "Tomografia de tórax com contraste.",
+        "PET-SCAN.",
+        "Endoscopia Digestiva Alta.",
+        "Ultrassom Endoscópico.",
+        "Ressonância magnética de tórax."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFT 2020 avalia o conhecimento sobre métodos diagnósticos para estadiamento do câncer de esôfago, especificamente para avaliação da categoria T do sistema TNM.</strong></p><p>O sistema TNM proporciona informações cruciais para planejamento terapêutico, onde a categoria T refere-se ao tumor primário e sua profundidade de invasão na parede esofágica.</p><p><strong>COMPREENDENDO A CATEGORIA T NO CÂNCER DE ESÔFAGO:</strong></p><p>A classificação baseia-se na profundidade de invasão tumoral na parede esofágica: mucosa (T1a), submucosa (T1b), muscular própria (T2), adventícia (T3) e estruturas adjacentes (T4). Esta determinação é fundamental para definir ressecabilidade e necessidade de terapia neoadjuvante.</p><p><strong>ANÁLISE DOS MÉTODOS DIAGNÓSTICOS:</strong></p><p><strong>A) Tomografia de tórax com contraste - INCORRETA.</strong> Avalia extensão extraluminal, massas, linfonodos e metástases, mas não consegue determinar a profundidade de invasão tumoral dentro da parede esofágica.</p><p><strong>B) PET-SCAN - INCORRETA.</strong> Fornece informações sobre atividade metabólica e metástases à distância, sendo excelente para estadiamento sistêmico, mas inadequado para avaliação da categoria T.</p><p><strong>C) Endoscopia Digestiva Alta - INCORRETA.</strong> Permite visualização direta da lesão e obtenção de biópsias, mas não avalia adequadamente a profundidade de invasão, mostrando apenas o aspecto intraluminal.</p><p><strong>D) Ultrassom Endoscópico - CORRETA.</strong> <strong>Método gold standard</strong> para avaliação da categoria T no câncer de esôfago. O USE permite visualização em camadas da parede esofágica, distinguindo mucosa, submucosa, muscular própria e adventícia com precisão superior a 90%.</p><p><strong>E) Ressonância magnética de tórax - INCORRETA.</strong> Embora forneça boa resolução de contraste para tecidos moles, é menos precisa que o USE para avaliação da camada específica da parede esofágica e apresenta maior custo e menor disponibilidade.</p><p><strong>VANTAGENS DO ULTRASSOM ENDOSCÓPICO:</strong></p><p>• Avaliação em camadas da parede esofágica</p><p>• Determinação precisa da profundidade de invasão</p><p>• Avaliação simultânea de linfonodos regionais</p><p>• Capacidade de realizar punção aspirativa dirigida</p><p>• Correlação com achados histopatológicos</p><p><strong>LIMITAÇÕES DOS OUTROS MÉTODOS:</strong></p><p>TC e RM são limitadas pela resolução para distinguir camadas específicas da parede esofágica. PET-scan foca em aspectos metabólicos. Endoscopia convencional avalia apenas superfície intraluminal.</p><p><strong>CORRELAÇÃO CLÍNICA:</strong></p><p>A determinação precisa da categoria T influencia diretamente a conduta: tumores T1a podem ser ressecados endoscopicamente, enquanto T3-T4 frequentemente requerem terapia neoadjuvante.</p><p><strong>VEREDITO:</strong> A resposta correta é <strong>D - Ultrassom Endoscópico</strong>, único método capaz de determinar adequadamente a profundidade de invasão tumoral para classificação da categoria T.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEsofago"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Considerando um paciente com câncer de próstata metastático que se apresente com quadro de lombalgia intensa, com irradiação para membros inferiores, parestesia em MMII, constipação intestinal e retenção urinária. Qual a conduta inicial a ser adotada?",
+      "alternativas": [
+        "Solicitar exames de imagem (tomografia computadorizada ou ressonância magnética da coluna) e aguardar resultado para confirmação diagnóstica.",
+        "Solicitar exames de imagem (radiografia da coluna) e iniciar medicação com antiinflamatórios não esteroidais (AINES).",
+        "Solicitar exames de imagem (tomografia computadorizada ou ressonância magnética) da coluna. Em seguida, iniciar corticoterapia (dexametasona) e analgesia.",
+        "Realizar analgesia e liberar o paciente para alta hospitalar, em caso de melhora clínica",
+        "Solicitar exames de imagem (Radiografia da coluna) e, caso não seja evidenciada nenhuma alteração, dar alta hospitalar com orientações."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFT avaliou o conhecimento sobre manejo de emergência em oncologia, especificamente a síndrome de compressão medular em pacientes oncológicos.</strong> O caso clássico apresenta sinais neurológicos sugestivos de compressão medular secundária a metástases vertebrais em paciente com câncer de próstata.</p><p><strong>A resposta correta é C - solicitar exames de imagem (TC ou RM) da coluna, iniciar corticoterapia (dexametasona) e analgesia.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Aguardar resultado dos exames antes de iniciar tratamento significa perda de tempo Precious em uma emergência neurológica. A compressão medular é uma urgência que requer ação imediata.</p><p><strong>B) INCORRETA:</strong> Radiografia simples não é suficiente para diagnosticar compressão medular, pois pode ser normal mesmo na presença de metástases. Além disso, AINEs são inadequados para analgesia em dor oncológica intensa.</p><p><strong>C) CORRETA:</strong> A tríade essencial: 1) exames de imagem urgentes (TC ou RM), 2) corticoterapia (reduz edema medular e sintomas), 3) analgesia agressiva (dor oncológica requer opioides, não AINEs).</p><p><strong>D) INCORRETA:</strong> Liberar paciente sem investigação detalhada em quadro neurológico grave é negligente. Síndrome de compressão medular pode evoluir para paraplegia permanente se não tratada rapidamente.</p><p><strong>E) INCORRETA:</strong> Radiografia é inadequada e dar alta em caso normal ignora a possibilidade de compressão medular sem alterações radiográficas evidentes.</p><p><strong>Raciocínio clínico:</strong> A síndrome de compressão medular é emergência neurológica em oncologia. O tratamento deve ser iniciado simultaneamente à investigação diagnóstica, não após confirmação. A dexametasona reduz edema medular e pode prevenir danos neurológicos permanentes.</p><p><strong>Veredito:</strong> Gabarito C está correto. O manejo exige simultaneidade entre investigação diagnóstica e tratamento, com corticoterapia sendo fundamental para reduzir edema medular.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia_CancerDeProstata_TratamentoDaDoencaLocalizada"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Paciente de 20 anos asmático, deu entrada no Pronto Socorro com quadro de dispneia e sibilância. Feita a classificação da gravidade da crise asmática e iniciadas as medidas cabíveis para quadro de broncoespasmo. Qual dos exames abaixo é o mais indicado a ser realizado, em pronto-socorro, para avaliar a resposta de reversibilidade do quadro de broncoespasmo?",
+      "alternativas": [
+        "Gasometria Arterial.",
+        "Hemograma com contagem de eosinófilos.",
+        "Espirometria com prova broncodilatadora.",
+        "Pico de fluxo expiratório.",
+        "Dosagem de IgE."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFT avaliou o conhecimento sobre avaliação funcional respiratória em serviço de emergência, especificamente em pacientes asmáticos em crise aguda.</strong> A capacidade de escolha do exame mais adequado para monitorar resposta terapêutica é fundamental na prática clínica.</p><p><strong>A resposta correta é D - Pico de fluxo expiratório (PFE).</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Gasometria arterial é importante para avaliar trocas gasosas e acidose, mas não mensura diretamente a reversibilidade do broncoespasmo. É indicada em casos graves, não para avaliação de rotina da resposta.</p><p><strong>B) INCORRETA:</strong> Hemograma com eosinófilos ajuda no diagnóstico de base (asma eosinofílica), mas não avalia resposta ao broncodilatador. É exame estático, não funcional.</p><p><strong>C) INCORRETA:</strong> Espirometria com prova broncodilatadora é o padrão ouro para avaliação de reversibilidade, mas é inaplicável em pronto-socorro durante crise aguda (requer cooperação, tempo, equipamentos específicos).</p><p><strong>D) CORRETA:</strong> PFE é o método ideal: rápido, simples, portável, pode ser repetido seriado, correlaciona-se bem com VEF1, permite monitoramento objetivo da resposta terapêutica em emergência.</p><p><strong>E) INCORRETA:</strong> Dosagem de IgE confirma componente alérgico, mas não avalia reversibilidade do broncoespasmo. É exame diagnóstico, não de seguimento terapêutico.</p><p><strong>Raciocínio clínico:</strong> Em ambiente de emergência, precisamos de exames práticos, rápidos e reprodutíveis. PFE preenche esses critérios, permitindo avaliações seriadas para monitorar eficácia do tratamento bronchodilatador e orientar conduta.</p><p><strong>Veredito:</strong> Gabarito D está correto. PFE é o exame de escolha para monitorar reversibilidade do broncoespasmo em serviço de emergência, pela sua praticidade e correlação clínica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma_ClassificacaoETratamentoDaCris"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "<html><head></head><body>Paciente 56 anos, tabagista (35 anos/maços), refere dispneia e tosse seca, há 9 meses, de caráter progressivo, associado à perda ponderal de 3 kg. Relata ser hipertenso, em uso de captopril 25 mg, 3x ao dia, e fazer tratamento para doença do refluxo gastroesofágico, há 2 anos. Tem histórico de trabalhar na lavoura, por 15 anos, e exposição prévia a mofo, em sua residência. Ao exame físico, apresenta baqueteamento digital e, na ausculta, tem crepitações em terço médio bilateral. Diante do quadro clinico e associado às imagens da tomografia de tórax, qual o diagnóstico mais provável?\n\n<img src=\"https://medbrave.com.br/questions/uft-2020/qQ33.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Neoplasia Pulmonar.",
+        "Fibrose Pulmonar.",
+        "Tuberculose Pulmonar.",
+        "Doença Pulmonar Obstrutiva Crônica.",
+        "Pneumonia de hipersensibilidade."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFT avaliou a capacidade de correlação clínico-radiológica em pneumologia, especificamente no diagnóstico diferencial de doenças pulmonares difusas.</strong> A análise da tomografia de tórax結合 com quadro clínico é essencial para diagnóstico preciso.</p><p><strong>A resposta correta é B - Fibrose Pulmonar.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Neoplasia pulmonar pode causar sintomas similares, mas baqueteamento digital é mais típico de fibrose. Além disso, tomografia mostraria massa ou nódulos, não padrão reticular difuso característico de fibrose.</p><p><strong>B) CORRETA:</strong> O conjunto clínico-radiológico é clássico para fibrose pulmonar: dispneia progressiva, tosse seca, baqueteamento digital, crepitações em terço médio, história de exposição (pesticidas na lavoura), padrão em \"vidro moído\" na tomografia.</p><p><strong>C) INCORRETA:</strong> Tuberculose geralmente causa sintomas sistêmicos mais evidentes (febre, sudorese noturna), perda ponderal mais acentuada, e tomografia mostraria cavernas, linfonodos, ou opacidades apicais, não padrão reticular difuso.</p><p><strong>D) INCORRETA:</strong> DPOC causaria sibilância, hipersonoridade à percussão, hiperinsuflação na tomografia. Baqueteamento digital pode ocorrer, mas crepitações em terço médio bilateral são típicas de fibrose, não DPOC.</p><p><strong>E) INCORRETA:</strong> Pneumonite por hipersensibilidade teria história mais aguda, resolução com afastamento do antígeno, e padrão tomográfico de vidro moído com房子的 centrolobulares, não o padrão fibrótico crônico observado.</p><p><strong>Raciocínio clínico:</strong> O padrão clínico típico de fibrose pulmonar inclui: dispneia progressiva, tosse seca, baqueteamento digital (dedos em baqueta de tambor), crepitações bibasais inspiratórias, e história de exposição a agentes pneumotóxicos (pesticidas, poeira orgânica). A tomografia mostra padrão reticular com vidro moído, característico de doença pulmonar intersticial fibrótica.</p><p><strong>Veredito:</strong> Gabarito B está correto. A correlação clínica-radiológica é típica de fibrose pulmonar idiopática ou secundária a exposição ocupacional a pneumotóxicos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "O Brasil está entre os 30 países de alta carga para TB e TB-HIV. O Ministério da Saúde elaborou um Plano Nacional pelo Fim da Tuberculose, cujos os pilares são: diagnóstico precoce, tratamento adequado e prevenção. Sobre o tratamento da TB/HIV, podemos afirmar:",
+      "alternativas": [
+        "O tratamento da TB, em pessoas vivendo com HIV (PVHIV), possui recomendações diferentes dos não infectados, tanto na utilização dos fármacos, quanto na duração total do tratamento.",
+        "As reações adversas aos medicamentos antiTB são mais frequentes e graves entre PVHIV, com necessidade de interrupção do tratamento para TB, como no caso de hepatotoxicidade e neuropatia periférica.",
+        "A tuberculose, nessa população, não possui cura na quase totalidade dos casos.",
+        "Em pacientes PVHIV, as falhas ou intercorrências, ao longo do tratamento, são raras, não implicando em maior risco de abandonos e óbitos.",
+        "A utilização concomitante do TARV não altera a sobrevida ou qualidade de vida."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFT avaliou o conhecimento sobre manejo da tuberculose em coinfecção HIV/TB, tema relevante considerando a alta carga de TB no Brasil e a importância de protocolos específicos para essa população.</strong> O tratamento de TB em pacientes HIV+ possui particularidades que o candidato deve conhecer.</p><p><strong>A resposta correta é B - As reações adversas aos medicamentos antiTB são mais frequentes e graves entre PVHIV, com necessidade de interrupção do tratamento para TB, como no caso de hepatotoxicidade e neuropatia periférica.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> O tratamento da TB em PVHIV segue as mesmas diretrizes nacionais: mesmos fármacos (isoniazida, rifampicina, pirazinamida, etambutol), mesma duração (6 meses), mesmas dosagens. O que muda é o manejo do TARV simultâneo.</p><p><strong>B) CORRETA:</strong> PVHIV têm maior risco de efeitos adversos: hepatotoxicidade por isoniazida/rifampicina é mais frequente, neuropatia periférica por isoniazida é mais comum, e falhas no tratamento são mais frequentes devido a interações medicamentosas e comprometimento imunológico.</p><p><strong>C) INCORRETA:</strong> TB tem cura na maioria dos casos, mesmo em PVHIV, desde que o tratamento seja adequado e completo. A taxa de cura é menor que em não infectados, mas ainda é alta com tratamento adequado.</p><p><strong>D) INCORRETA:</strong> Falhas e intercorrências são MAIS frequentes em PVHIV devido a: interações TARV-rifampicina, maior toxicidade medicamentosa, adesão dificultada, e comprometimento imunológico. Isso aumenta significativamente risco de abandonos e óbitos.</p><p><strong>E) INCORRETA:</strong> TARV sim altera sobrevida e qualidade de vida: redução dramática da mortalidade por HIV, melhoria da resposta ao tratamento de TB, redução de coinfeções oportunistas. É fundamental no manejo da coinfecção.</p><p><strong>Raciocínio clínico:</strong> A coinfecção TB-HIV requer manejo especializado. PVHIV têm maior risco de TB ativa, progressão mais rápida, maior carga bacteriana, maior risco de toxicidade medicamentosa e maior taxa de falha terapêutica. O sucesso depende de tratamento conjunto simultâneo com boa adesão.</p><p><strong>Veredito:</strong> Gabarito B está correto. PVHIV apresentam maior frequência e gravidade de efeitos adversos aos medicamentos antiTB, sendo fundamental monitorização cuidadosa durante o tratamento.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Os sintomas de síndrome de abstinência do álcool (SAA), geralmente, iniciam em 4 a 12 horas, após a interrupção ou diminuição do uso do álcool. Seu quadro clínico está relacionado ao aumento da atividade autonômica, podendo incluir tremores de extremidades e da língua, ansiedade, sudorese, taquicardia, aumento da pressão arterial, insônia, alteração do humor, cefaleia, vômitos, náuseas, inquietação, aumento da sensibilidade ao som e cãibras musculares. É possível classificar a gravidade da SAA, nos níveis leve/moderado e grave. De forma mais objetiva, qual instrumento pode ser utilizado para classificar a síndrome de abstinência alcoólica?",
+      "alternativas": [
+        "CIWA-Ar",
+        "ASSIST",
+        "AUDIT",
+        "CAGE",
+        "BPRS"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFT avaliou o conhecimento sobre instrumentos de triagem e classificação de abstinência alcoólica, especificamente ferramentas padronizadas utilizadas na prática clínica para estratificação de risco.</strong> O reconhecimento de instrumentos validados é fundamental para manejo adequado da SAA.</p><p><strong>A resposta correta é A - CIWA-Ar (Clinical Institute Withdrawal Assessment for Alcohol).</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> CIWA-Ar é instrumento padronizado especificamente para avaliar e classificar a gravidade da síndrome de abstinência alcoólica. Inclui avaliação de sintomas autonômicos (sudorese, tremores), neurológicos (convulsões, alucinações), gastrointestinais (náuseas, vômitos) e ansiedade. Permite classificação em leve, moderado ou grave.</p><p><strong>B) INCORRETA:</strong> ASSIST (Alcohol, Smoking and Substance Involvement Screening Test) é instrumento de triagem para uso de substâncias, não para classificação de abstinência. Avalia padrão de consumo, não sintomas de abstinência.</p><p><strong>C) INCORRETA:</strong> AUDIT (Alcohol Use Disorders Identification Test) é questionnaire para triagem de uso excessivo de álcool, identificação de dependência, e avaliação de problemas relacionados ao álcool. Não classifica gravidade de abstinência.</p><p><strong>D) INCORRETA:</strong> CAGE é instrumento muito simples (4 perguntas) para triagem rápida de problemas com álcool. Não avalia sintomas de abstinência nem classifica sua gravidade.</p><p><strong>E) INCORRETA:</strong> BPRS (Brief Psychiatric Rating Scale) é escala para avaliação de sintomas psiquiátricos em geral, principalmente psicóticos. Não é específica para abstinência alcoólica.</p><p><strong>Raciocínio clínico:</strong> A classificação da SAA é essencial para orientar tratamento: casos leves podem ser manejados ambulatorialmente, casos graves requerem internação e benzodiazepínicos. CIWA-Ar foi desenvolvido especificamente para esta finalidade, sendo amplamente validado na prática clínica.</p><p><strong>Veredito:</strong> Gabarito A está correto. CIWA-Ar é o instrumento de escolha para classificação objetiva da gravidade da síndrome de abstinência alcoólica, permitindo estratificação adequada de risco e tratamento apropriado.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_DependenciaQuimica",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_DependenciaQuimica",
+        "Outros_Psiquiatria_DependenciaQuimica_Alcool"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "No que concerne à avaliação de paciente potencialmente suicida, pelo clínico, NÃO é adequado.",
+      "alternativas": [
+        "Dar prioridade ao manejo do paciente autocida, em detrimento do tratamento.",
+        "Questionar diretamente o paciente quanto à existência de ideação de autoextermínio ou mesmo planejamento suicida.",
+        "Em caso de solicitação do paciente ao clínico, deixar claro que não é aceitável que ele compareça ao seu consultório, todos os dias da semana, para ser reavaliado.",
+        "Aceitar que a contratransferência, despertada pelo paciente suicida, no médico assistente, representa um potencial obstáculo ao tratamento.",
+        "Fazer a distinção entre a responsabilidade do paciente e a incumbência do clínico que o assiste."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong> QUESTÃO ANULADA PELA BANCA EXAMINADORA</strong></p><p>Esta questão foi anulada porque apresenta uma ambiguidade técnica fundamental. O enunciado pergunta sobre o que <strong>NÃO</strong> é adequado na avaliação de paciente potencialmente suicida, mas três das alternativas propostas são tecnicamente CORRETAS na abordagem clínica.</p><p>Alternativa B: Questionar diretamente sobre ideação suicida é não apenas adequado, mas ESSENCIAL segundo os protocolos atuais de prevenção do suicídio. Diretrizes brasileiras e internacionais recomendam questionamento direto como parte fundamental da avaliação de risco.</p><p>Alternativa D: Reconhecer contratransferência é aspecto importante da dinâmica terapêutica com pacientes suicidas e representa conhecimento técnico adequado.</p><p>Alternativa E: Estabelecer limites claros de responsabilidade é prática clínica recomendada e eticamente apropriada.</p><p>Isso torna impossível determinar uma única alternativa que responda adequadamente à pergunta. Por este motivo técnico, a banca optou pela anulação.</p>",
+      "filterIds": [
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_PsicopatologiaEExameDoEstadoMe",
+        "ClinicaMedica_MedicinaPreventiva",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Qual o segmento de coluna mais acometido por pacientes com Artrite Reumatoide?",
+      "alternativas": [
+        "C1-C2",
+        "C6-C7",
+        "T9-T10",
+        "L4-L5",
+        "Sacroilíacas"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFT 2020 avalia seu conhecimento sobre as manifestações reumatológicas específicas da artrite reumatoide, particularmente sua afinidade por segmentos vertebrais específicos.</p><p><strong>A resposta correta é A - C1-C2</strong>. A artrite reumatoide tem particular predileção pela região cervical alta, especialmente a articulação atlantoaxial (C1-C2). Isso se deve à presença da membrana sinovial ricas em estruturas reumáticas nesta região.</p><p>Vamos analisar cada alternativa:</p><p><strong>B - C6-C7:</strong> Incorreto. Embora possa ocorrer alguma limitação global da mobilidade cervical na AR, não é o segmento mais acometido. Lesões nesta região são mais associadas a espondilite anquilosante.</p><p><strong>C - T9-T10:</strong> Incorreto. Este segmento não é tipicamente afetado na artrite reumatoide. É mais característico de outras doenças como espondilite anquilosante.</p><p><strong>D - L4-L5:</strong> Incorreto. A artrite reumatoide raramente afeta a região lombar de forma significativa. Dor lombar na AR é mais comumente secundária a sobrecarga ou outras patologias.</p><p><strong>E - Sacroilíacas:</strong> Incorreto. As articulações sacroilíacas são classicamente afetadas na espondilite anquilosante, não na artrite reumatoide.</p><p><strong>Veredito final: A alternativa A é a correta</strong> - a artrite reumatoide acomete preferencialmente o segmento C1-C2 da coluna vertebral.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit_1",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasEspond"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Manifestações de doença renal, em pacientes com Lúpus Eritematoso Sistêmico, ocorrem em cerca de 50% dos pacientes, sendo hematúria e proteinúria, persistentes os achados mais observados. Nefrite lúpica pode cursar com síndrome nefrítica ou nefrótica, consumo de complementos e positivação de qual exame, dos apresentados abaixo?",
+      "alternativas": [
+        "ANCA",
+        "anti-DNA nativo",
+        "Anti-ccp",
+        "Anti-SCL70",
+        "Anti-peroxidase"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um dos aspectos mais importantes do lúpus eritematoso sistêmico: suas manifestações renais e os marcadores sorológicos específicos associados à nefrite lúpica.</p><p><strong>A resposta correta é B - anti-DNA nativo</strong>. Este é o anticorpo mais característico e específico para o diagnóstico e monitoramento da atividade da nefrite lúpica. Sua positividade está intimamente correlacionada com a presença e severidade das lesões renais.</p><p>Vamos analisar cada alternativa:</p><p><strong>A - ANCA:</strong> Incorreto. ANCA (anticorpo anti-citoplasma de neutrófilos) é marcador característico das vasculites sistêmicas, como granulomatose com poliangiíte ou poliangiíte microscópica. Não está relacionado ao lúpus eritematoso sistêmico.</p><p><strong>B - anti-DNA nativo:</strong> Correto. É o anticorpo mais importante na nefrite lúpica, correlacionando-se diretamente com a atividade da doença e a presença de glomerulonefrite lúpica.</p><p><strong>C - Anti-CCP:</strong> Incorreto. Anticorpo anti-peptídeo cítrico citrulinado é marcador específico para artrite reumatoide, não para lúpus.</p><p><strong>D - Anti-SCL70:</strong> Incorreto. Anticorpo anti-topoisomerase I é marcador específico para esclerose sistêmica (esclerodermia), não para lúpus.</p><p><strong>E - Anti-peroxidase:</strong> Incorreto. Anticorpo anti-peroxidase tireoidiana é marcador de tireoidite autoimune de Hashimoto, não relacionado ao lúpus.</p><p>É importante lembrar que na nefrite lúpica também ocorre consumo de complemento (C3 e C4) devido à ativação do sistema complemento pelas imunoglobulinas depositadas nos glomérulos.</p><p><strong>Veredito final: A alternativa B é a correta</strong> - o anti-DNA nativo é o exame positivação característico na nefrite lúpica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_NefriteLupica"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Uma mulher de 55 anos de idade, previamente hígida, relata que, há 3 meses, iniciou quadro de fadiga, dificuldade para sentar-se e levantar-se da cama e do vaso sanitário. No exame físico dessa paciente, qual a alteração mais provável?",
+      "alternativas": [
+        "Teste de Patrick-Fabere positivo.",
+        "Fraqueza muscular proximal.",
+        "Marcha com inclinação anterior lenta e arrastada.",
+        "Fraqueza muscular distal.",
+        "Disdiadococinesia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão descreve um quadro clínico característico de uma das miopatias inflamatórias mais comuns, testando seu conhecimento sobre padrões de distribuição de fraqueza muscular.</p><p><strong>A resposta correta é B - Fraqueza muscular proximal</strong>. O quadro descrito é típico de polimiosite ou dermatomiosite, condições caracterizadas por fraqueza muscular proximal simétrica.</p><p>Vamos analisar cada alternativa:</p><p><strong>A - Teste de Patrick-Fabere positivo:</strong> Incorreto. O teste de Patrick-Fabere avalia a articulação sacroilíaca e não é característico das miopatias inflamatórias.</p><p><strong>B - Fraqueza muscular proximal:</strong> Correto. A descrição clínica (dificuldade para sentar-se e levantar-se) é clássica de miopatia inflamatória. A fraqueza proximal é o padrão mais característico das polimiosites e dermatomiosites.</p><p><strong>C - Marcha com inclinação anterior lenta e arrastada:</strong> Incorreto. Este padrão é mais característico de doença de Parkinson, não de miopatia inflamatória.</p><p><strong>D - Fraqueza muscular distal:</strong> Incorreto. A fraqueza distal é típica de neuropatias periféricas ou miopatias distroficas específicas, não de polimiosite/dermatomiosite.</p><p><strong>E - Disdiadococinesia:</strong> Incorreto. A disdiadococinesia (incapacidade de realizar movimentos alternados rápidos) é característica de lesões cerebelares, não de miopatia inflamatória.</p><p>O quadro clínico apresentado (fadiga, dificuldade para levantar-se da cama e do vaso, início há 3 meses) em uma mulher de 55 anos é muito sugestivo de polimiosite. O aparecimento insidioso dos sintomas, a progressão ao longo de 3 meses e o comprometimento especificamente proximal são pontos-chave para o diagnóstico.</p><p><strong>Veredito final: A alternativa B é a correta</strong> - a alteração mais provável é a fraqueza muscular proximal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_Miopatias"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Homem de 50 anos de idade apresenta-se com emagrecimento de 6Kg, em 4 meses, artralgia, mialgia, febre vespertina diária, parestesias em membros inferiores, livedo reticular, elevação de pressão arterial, além de dor e edema em testículo direito. Foi realizada ampla investigação para neoplasia que se mostrou negativa. Os exames complementares demonstraram Hb 11, leuco 7000, plaq 250.000, ferritina 250, TGO 44, TGP 38, VHS 98mm, Creatinina 1,5, ANCA: não reagente e HBsAg positivo. Qual o diagnóstico mais provável?",
+      "alternativas": [
+        "Granulomatose com poliangiíte.",
+        "Granulomatose eosinofílica com poliangiíte.",
+        "Arterite de Takayassu.",
+        "Poliarterite Nodosa.",
+        "Doença de Still do adulto."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão apresenta um quadro clínico complexo que testa seu conhecimento sobre vasculites sistêmicas e suas características distintivas. A análise cuidadosa dos achados clínicos e laboratoriais é fundamental para o diagnóstico correto.</p><p><strong>A resposta correta é D - Poliarterite Nodosa</strong>. O quadro clínico descrito é clássico para PAN, especialmente a presença de orquite (dor e edema testicular), que é um achado muito característico desta vasculite.</p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>A - Granulomatose com poliangiíte:</strong> Incorreto. Esta vasculite tem forte predileção por vias aéreas superiores e rins, cursa com ANCA positivo (geralmente c-ANCA), e não costuma apresentar orquite como manifestação típica.</p><p><strong>B - Granulomatose eosinofílica com poliangiíte:</strong> Incorreto. Esta vasculite tem eosinofilia marcada, asma e granulares pulmonares, além de frequentemente cursar com ANCA positivo (p-ANCA).</p><p><strong>C - Arterite de Takayassu:</strong> Incorreto. Esta vasculite de grandes vasos afeta principalmente mulheres jovens (não se adequa ao perfil de um homem de 50 anos) e cursa com ausência de pulsos, claudicação de membros e pulsações radiais diminuídas.</p><p><strong>D - Poliarterite Nodosa:</strong> Correto. Este homem de 50 anos com emagrecimento, artralgias, mialgias, febre vespertina, parestesias em MMII, livedo reticular, hipertensão arterial, orquite e VHS muito elevado é o quadro clássico de PAN. A investigação negativa para neoplasia e o ANCA não reagente ajudam a excluir outras vasculites.</p><p><strong>E - Doença de Still do adulto:</strong> Incorreto. Embora cause febre, artralgia e emagrecimento, esta doença não cursa com orquite, livedo reticular ou vasculite. Não está entre as vasculites sistêmicas.</p><p>O achado da HBsAg positiva é particularmente relevante, pois cerca de 30-50% dos casos de PAN estão associados ao vírus da hepatite B.</p><p><strong>Veredito final: A alternativa D é a correta</strong> - o diagnóstico mais provável é Poliarterite Nodosa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol",
+        "ClinicaMedica_Dermatologia_REProvaDeTitulo_TituloDeEspecialistaEmDermatol_DisturbiosVasculares"
+      ],
+      "tags": [
+        "UFT2020T3CM",
+        "UFT",
+        "R3CM",
+        "TO",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762871645057-39"
+    }
+  ]
+}

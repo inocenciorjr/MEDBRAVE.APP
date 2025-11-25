@@ -1,4 +1,8 @@
-import { ContentCategory, CreateCategoryDTO, UpdateCategoryDTO } from '../types';
+import {
+  ContentCategory,
+  CreateCategoryDTO,
+  UpdateCategoryDTO,
+} from '../types';
 
 /**
  * Interface para o serviço de categorias de conteúdo
@@ -24,7 +28,10 @@ export interface ICategoryService {
    * @param data Dados para atualização
    * @returns Categoria atualizada ou null se não existir
    */
-  updateCategory(id: string, data: UpdateCategoryDTO): Promise<ContentCategory | null>;
+  updateCategory(
+    id: string,
+    data: UpdateCategoryDTO,
+  ): Promise<ContentCategory | null>;
 
   /**
    * Exclui uma categoria

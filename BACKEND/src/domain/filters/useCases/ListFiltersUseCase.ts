@@ -7,4 +7,4 @@ export class ListFiltersUseCase {
   async execute(options?: FilterListOptions): Promise<Filter[]> {
     return this.filterRepository.list(options);
   }
-} 
+}

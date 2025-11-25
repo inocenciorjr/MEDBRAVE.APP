@@ -42,5 +42,7 @@ declare module 'apkg-reader.js' {
     [key: string]: any;
   }
 
-  export function readDatabaseFrom(zipHandler: ZipHandler): Promise<AnkiDatabase>;
-} 
+  export function readDatabaseFrom(
+    zipHandler: ZipHandler,
+  ): Promise<AnkiDatabase>;
+}

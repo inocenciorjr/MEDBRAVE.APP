@@ -22,7 +22,7 @@ export class DeleteErrorNotebookUseCase {
     }
 
     // Verificar se o caderno de erros pertence ao usuário
-    if (existingNotebook.userId !== userId) {
+    if (existingNotebook.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook', 403);
     }
 

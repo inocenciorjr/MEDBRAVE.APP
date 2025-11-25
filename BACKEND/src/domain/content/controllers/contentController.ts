@@ -1,8 +1,11 @@
 // Controller de Conteúdo (Artigos)
 // Implementação inicial - esqueleto
 import { Request, Response, NextFunction } from 'express';
-import { ContentService } from '../services/contentService';
-import { createContentSchema, updateContentSchema } from '../validation/contentSchemas';
+import { ContentService } from '../../../infra/content/supabase/contentService';
+import {
+  createContentSchema,
+  updateContentSchema,
+} from '../validation/contentSchemas';
 
 const contentService = new ContentService();
 
@@ -10,17 +13,21 @@ export class ContentController {
   async createContent(req: Request, res: Response, next: NextFunction) {
     try {
       const parsed = createContentSchema.parse(req.body);
-      // Garantir que status e isPublic sempre sejam definidos
+      // Garantir que status e is_public sempre sejam definidos
       const data = {
         ...parsed,
         status: parsed.status ?? 'DRAFT',
-        isPublic: parsed.isPublic ?? true,
+        is_public: parsed.is_public ?? true,
+        author_id: parsed.author_id,
+        category_id: parsed.category_id,
       };
       const content = await contentService.createContent(data);
       res.status(201).json(content);
     } catch (error) {
       if (error instanceof Error && 'issues' in error) {
-        res.status(400).json({ error: 'Dados inválidos', details: error.issues });
+        res
+          .status(400)
+          .json({ error: 'Dados inválidos', details: error.issues });
       } else {
         next(error);
       }
@@ -51,7 +58,9 @@ export class ContentController {
       return res.json(updated);
     } catch (error) {
       if (error instanceof Error && 'issues' in error) {
-        return res.status(400).json({ error: 'Dados inválidos', details: error.issues });
+        return res
+          .status(400)
+          .json({ error: 'Dados inválidos', details: error.issues });
       } else {
         return next(error);
       }

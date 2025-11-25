@@ -1,4 +1,8 @@
-import { CreateMentorProfilePayload, MentorProfile, UpdateMentorProfilePayload } from '../types';
+import {
+  CreateMentorProfilePayload,
+  MentorProfile,
+  UpdateMentorProfilePayload,
+} from '../types';
 
 /**
  * Interface para o serviço de perfis de mentores
@@ -8,7 +12,9 @@ export interface IMentorProfileService {
    * Cria um novo perfil de mentor
    * @param profileData Dados do perfil de mentor
    */
-  createMentorProfile(profileData: CreateMentorProfilePayload): Promise<MentorProfile>;
+  createMentorProfile(
+    profileData: CreateMentorProfilePayload,
+  ): Promise<MentorProfile>;
 
   /**
    * Obtém um perfil de mentor pelo ID do usuário
@@ -69,7 +75,10 @@ export interface IMentorProfileService {
    * @param userId ID do usuário (mentor)
    * @param rating Nova avaliação
    */
-  updateMentorRating(userId: string, rating: number): Promise<MentorProfile | null>;
+  updateMentorRating(
+    userId: string,
+    rating: number,
+  ): Promise<MentorProfile | null>;
 
   /**
    * Incrementa o contador de sessões do mentor

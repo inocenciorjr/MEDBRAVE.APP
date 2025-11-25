@@ -33,12 +33,16 @@ export class GetUserFlashcardsUseCase {
     }
 
     // Obter flashcards do usuário com filtros e paginação
-    const paginatedFlashcards = await this.flashcardRepository.findByUser(userId, filters, {
-      page,
-      limit,
-      sortBy: pagination.sortBy,
-      sortOrder: pagination.sortOrder,
-    });
+    const paginatedFlashcards = await this.flashcardRepository.findByUser(
+      userId,
+      filters,
+      {
+        page,
+        limit,
+        sort_by: pagination.sort_by,
+        sort_order: pagination.sort_order,
+      },
+    );
 
     return paginatedFlashcards;
   }

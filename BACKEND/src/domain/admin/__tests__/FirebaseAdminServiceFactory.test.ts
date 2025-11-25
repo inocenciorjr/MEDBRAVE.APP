@@ -22,8 +22,12 @@ describe('FirebaseAdminServiceFactory', () => {
       logAction: jest.fn(),
     } as any;
 
-    (FirebaseAdminService as any).getInstance = jest.fn().mockReturnValue(mockAdminService);
-    (FirebaseAuditLogService as any).getInstance = jest.fn().mockReturnValue(mockAuditService);
+    (FirebaseAdminService as any).getInstance = jest
+      .fn()
+      .mockReturnValue(mockAdminService);
+    (FirebaseAuditLogService as any).getInstance = jest
+      .fn()
+      .mockReturnValue(mockAuditService);
   });
 
   describe('createAdminWithAudit', () => {
@@ -55,7 +59,10 @@ describe('FirebaseAdminServiceFactory', () => {
 
   describe('deleteAdminWithAudit', () => {
     it('deve deletar um admin e registrar a ação', async () => {
-      await FirebaseAdminServiceFactory.deleteAdminWithAudit('admin-123', 'performer-123');
+      await FirebaseAdminServiceFactory.deleteAdminWithAudit(
+        'admin-123',
+        'performer-123',
+      );
 
       expect(mockAdminService.deleteAdmin).toHaveBeenCalledWith('admin-123');
       expect(mockAuditService.logAction).toHaveBeenCalled();

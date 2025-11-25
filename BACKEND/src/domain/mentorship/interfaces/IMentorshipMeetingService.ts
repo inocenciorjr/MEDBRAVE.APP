@@ -14,7 +14,9 @@ export interface IMentorshipMeetingService {
    * Cria uma nova reunião de mentoria
    * @param meetingData Dados da reunião
    */
-  createMeeting(meetingData: CreateMentorshipMeetingPayload): Promise<MentorshipMeeting>;
+  createMeeting(
+    meetingData: CreateMentorshipMeetingPayload,
+  ): Promise<MentorshipMeeting>;
 
   /**
    * Obtém uma reunião pelo ID
@@ -42,7 +44,9 @@ export interface IMentorshipMeetingService {
    * Lista reuniões com filtros e paginação
    * @param options Opções de listagem e filtros
    */
-  listMeetings(options: ListMentorshipMeetingsOptions): Promise<PaginatedMentorshipMeetingsResult>;
+  listMeetings(
+    options: ListMentorshipMeetingsOptions,
+  ): Promise<PaginatedMentorshipMeetingsResult>;
 
   /**
    * Lista reuniões de uma mentoria
@@ -79,7 +83,10 @@ export interface IMentorshipMeetingService {
    * @param id ID da reunião
    * @param reason Motivo do cancelamento
    */
-  cancelMeeting(id: string, reason?: string | null): Promise<MentorshipMeeting | null>;
+  cancelMeeting(
+    id: string,
+    reason?: string | null,
+  ): Promise<MentorshipMeeting | null>;
 
   /**
    * Reagenda uma reunião
@@ -115,14 +122,20 @@ export interface IMentorshipMeetingService {
    * @param id ID da reunião
    * @param feedback Feedback a ser adicionado
    */
-  addMentorFeedback(id: string, feedback: string): Promise<MentorshipMeeting | null>;
+  addMentorFeedback(
+    id: string,
+    feedback: string,
+  ): Promise<MentorshipMeeting | null>;
 
   /**
    * Adiciona feedback do aluno a uma reunião
    * @param id ID da reunião
    * @param feedback Feedback a ser adicionado
    */
-  addStudentFeedback(id: string, feedback: string): Promise<MentorshipMeeting | null>;
+  addStudentFeedback(
+    id: string,
+    feedback: string,
+  ): Promise<MentorshipMeeting | null>;
 
   /**
    * Verifica se uma reunião é futura

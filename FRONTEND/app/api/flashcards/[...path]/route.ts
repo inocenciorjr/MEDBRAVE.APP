@@ -1,0 +1,117 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL?.replace('localhost', '127.0.0.1') || 'http://127.0.0.1:5000';
+
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ path: string[] }> }
+) {
+  const { path } = await params;
+  return handleRequest(request, path, 'GET');
+}
+
+export async function POST(
+  request: NextRequest,
+  { params }: { params: Promise<{ path: string[] }> }
+) {
+  const { path } = await params;
+  return handleRequest(request, path, 'POST');
+}
+
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: Promise<{ path: string[] }> }
+) {
+  const { path } = await params;
+  return handleRequest(request, path, 'PUT');
+}
+
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ path: string[] }> }
+) {
+  const { path } = await params;
+  return handleRequest(request, path, 'DELETE');
+}
+
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: Promise<{ path: string[] }> }
+) {
+  const { path } = await params;
+  return handleRequest(request, path, 'PATCH');
+}
+
+async function handleRequest(
+  request: NextRequest,
+  pathSegments: string[],
+  method: string
+) {
+  try {
+    const authHeader = request.headers.get('authorization');
+    const path = pathSegments.join('/');
+    const searchParams = request.nextUrl.searchParams.toString();
+    const url = `${BACKEND_URL}/api/flashcards/${path}${searchParams ? `?${searchParams}` : ''}`;
+
+
+
+    const contentType = request.headers.get('content-type');
+
+    const headers: HeadersInit = {};
+
+    if (authHeader) {
+      // Garantir que é string
+      headers['Authorization'] = String(authHeader);
+    }
+    
+    // Para FormData (upload de arquivos), não definir Content-Type
+    if (contentType && !contentType.includes('multipart/form-data')) {
+      headers['Content-Type'] = contentType;
+    }
+
+    const options: RequestInit = {
+      method,
+      headers,
+    };
+
+    // Adicionar body para métodos que suportam
+    if (method !== 'GET' && method !== 'HEAD') {
+      // Para FormData (upload de arquivos), passar o FormData diretamente
+      if (contentType?.includes('multipart/form-data')) {
+        const formData = await request.formData();
+        options.body = formData as any;
+        // Não definir Content-Type, deixar o fetch definir automaticamente com boundary
+        delete headers['Content-Type'];
+      } else {
+        const body = await request.text();
+        if (body) {
+          options.body = body;
+        }
+      }
+    }
+
+    const response = await fetch(url, options);
+
+    // Tentar parsear como JSON
+    const contentTypeResponse = response.headers.get('content-type');
+    if (contentTypeResponse?.includes('application/json')) {
+      const data = await response.json();
+      return NextResponse.json(data, { status: response.status });
+    }
+
+    // Se não for JSON, retornar como texto
+    const text = await response.text();
+    return new NextResponse(text, {
+      status: response.status,
+      headers: {
+        'Content-Type': contentTypeResponse || 'text/plain',
+      },
+    });
+  } catch (error) {
+    console.error('[Proxy /api/flashcards] Error:', error);
+    return NextResponse.json(
+      { error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 500 }
+    );
+  }
+}

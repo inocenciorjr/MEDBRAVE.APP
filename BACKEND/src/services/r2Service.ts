@@ -1,4 +1,12 @@
-import { S3Client, PutObjectCommand, DeleteObjectCommand, ListObjectsV2Command, GetObjectCommand } from '@aws-sdk/client-s3';
+import {
+  S3Client,
+  PutObjectCommand,
+  DeleteObjectCommand,
+  DeleteObjectsCommand,
+  ListObjectsV2Command,
+  GetObjectCommand,
+  ListObjectsV2CommandOutput,
+} from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { logger } from '../utils/logger';
 import * as https from 'https';
@@ -10,15 +18,26 @@ import * as https from 'https';
 const R2_CONFIG = {
   accountId: process.env.R2_ACCOUNT_ID || '16fc5a72ff773d4925e9e5a1b0136737',
   bucketName: process.env.R2_BUCKET_NAME || 'medbrave',
-  accessKeyId: process.env.R2_ACCESS_KEY_ID || '41c779389c2f6cd8039d2537cced5a69',
-  secretAccessKey: process.env.R2_SECRET_ACCESS_KEY || 'f99e3b6cc38730d0a8ccb266a8adedb9a677ed5308a8a39b18edd8b43dbb2a78',
-  endpoint: process.env.R2_ENDPOINT || 'https://16fc5a72ff773d4925e9e5a1b0136737.r2.cloudflarestorage.com',
-  publicUrl: process.env.R2_PUBLIC_URL || 'https://medbrave.com.br'
+  accessKeyId:
+    process.env.R2_ACCESS_KEY_ID || '41c779389c2f6cd8039d2537cced5a69',
+  secretAccessKey:
+    process.env.R2_SECRET_ACCESS_KEY ||
+    'f99e3b6cc38730d0a8ccb266a8adedb9a677ed5308a8a39b18edd8b43dbb2a78',
+  endpoint:
+    process.env.R2_ENDPOINT ||
+    'https://16fc5a72ff773d4925e9e5a1b0136737.r2.cloudflarestorage.com',
+  publicUrl: process.env.R2_PUBLIC_URL || 'https://medbrave.com.br',
 };
 
 // Verificar se todas as variáveis estão configuradas
-if (!R2_CONFIG.accountId || !R2_CONFIG.accessKeyId || !R2_CONFIG.secretAccessKey) {
-  logger.warn('⚠️ Configurações R2 incompletas. Verificar variáveis de ambiente.');
+if (
+  !R2_CONFIG.accountId ||
+  !R2_CONFIG.accessKeyId ||
+  !R2_CONFIG.secretAccessKey
+) {
+  logger.warn(
+    '⚠️ Configurações R2 incompletas. Verificar variáveis de ambiente.',
+  );
 }
 
 // Configurar Node.js para aceitar certificados SSL com problemas (temporário - comentado por segurança)
@@ -31,9 +50,10 @@ const httpsAgent = new https.Agent({
   timeout: 60000, // 60 segundos timeout
   // Configurações SSL mais tolerantes
   secureProtocol: 'TLS_method',
-  ciphers: 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384',
+  ciphers:
+    'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384',
   honorCipherOrder: true,
-  rejectUnauthorized: false // Mais tolerante com problemas de certificado
+  rejectUnauthorized: false, // Mais tolerante com problemas de certificado
 });
 
 // Cliente S3 compatível para R2 com configurações SSL melhoradas
@@ -49,9 +69,9 @@ const r2Client = new S3Client({
   requestHandler: {
     httpsAgent,
     connectionTimeout: 30000, // 30s para estabelecer conexão
-    socketTimeout: 60000,     // 60s para transferência de dados
+    socketTimeout: 60000, // 60s para transferência de dados
   },
-  retryMode: 'adaptive'
+  retryMode: 'adaptive',
 });
 
 export class R2Service {
@@ -63,12 +83,6 @@ export class R2Service {
     this.client = r2Client;
     this.bucketName = R2_CONFIG.bucketName;
     this.publicUrl = R2_CONFIG.publicUrl;
-
-    logger.info('R2Service inicializado', {
-      endpoint: R2_CONFIG.endpoint,
-      bucket: this.bucketName,
-      publicUrl: this.publicUrl
-    });
   }
 
   // Gerar presigned URL para upload
@@ -77,16 +91,18 @@ export class R2Service {
     contentType: string,
     folder: string = 'uploads',
     expiresIn: number = 3600,
-    metadata: Record<string, string> = {}
+    metadata: Record<string, string> = {},
   ): Promise<{ uploadUrl: string; fileKey: string; publicUrl: string }> {
     try {
       // Sanitizar filename
       const sanitizedFilename = this.sanitizeFilename(filename);
-      
-      // Gerar chave única do arquivo
-      const timestamp = Date.now();
-      const randomId = Math.random().toString(36).substring(2, 15);
-      const fileKey = `${folder}/${timestamp}_${randomId}_${sanitizedFilename}`;
+
+      // Gerar chave do arquivo
+      // Se o filename já tem formato customizado (ex: q01.png, qQ5.png), não adicionar timestamp
+      const isCustomFilename = /^q[a-zA-Z]?\d+(_\d+)?\.\w+$/i.test(sanitizedFilename);
+      const fileKey = isCustomFilename
+        ? `${folder}/${sanitizedFilename}`
+        : `${folder}/${Date.now()}_${Math.random().toString(36).substring(2, 15)}_${sanitizedFilename}`;
 
       // Comando para upload
       const command = new PutObjectCommand({
@@ -96,30 +112,35 @@ export class R2Service {
         Metadata: {
           ...metadata,
           uploadedAt: new Date().toISOString(),
-          originalName: filename
-        }
+          originalName: filename,
+        },
       });
 
       // Gerar URL assinada
       const uploadUrl = await getSignedUrl(this.client, command, { expiresIn });
-      
+
       // URL pública para acesso
       const publicUrl = `${this.publicUrl}/${fileKey}`;
 
-      logger.info('Presigned upload URL gerada', { 
-        fileKey, 
-        folder, 
+      // Silencioso - não loga para evitar poluição
+      logger.debug('Presigned upload URL gerada', {
+        fileKey,
+        folder,
         contentType,
-        expiresIn 
+        expiresIn,
       });
 
       return {
         uploadUrl,
         fileKey,
-        publicUrl
+        publicUrl,
       };
     } catch (error: any) {
-      logger.error('Erro ao gerar presigned URL para upload', { error, filename, folder });
+      logger.error('Erro ao gerar presigned URL para upload', {
+        error,
+        filename,
+        folder,
+      });
       throw new Error(`Falha ao gerar URL de upload: ${error.message}`);
     }
   }
@@ -127,21 +148,26 @@ export class R2Service {
   // Gerar presigned URL para download
   async generatePresignedDownloadUrl(
     fileKey: string,
-    expiresIn: number = 3600
+    expiresIn: number = 3600,
   ): Promise<string> {
     try {
       const command = new GetObjectCommand({
         Bucket: this.bucketName,
-        Key: fileKey
+        Key: fileKey,
       });
 
-      const downloadUrl = await getSignedUrl(this.client, command, { expiresIn });
+      const downloadUrl = await getSignedUrl(this.client, command, {
+        expiresIn,
+      });
 
       logger.info('Presigned download URL gerada', { fileKey, expiresIn });
 
       return downloadUrl;
     } catch (error: any) {
-      logger.error('Erro ao gerar presigned URL para download', { error, fileKey });
+      logger.error('Erro ao gerar presigned URL para download', {
+        error,
+        fileKey,
+      });
       throw new Error(`Falha ao gerar URL de download: ${error.message}`);
     }
   }
@@ -149,27 +175,36 @@ export class R2Service {
   // Listar arquivos
   async listFiles(
     folder: string = '',
-    maxKeys: number = 50
-  ): Promise<Array<{
-    key: string;
-    size: number;
-    lastModified: Date;
-    url: string;
-  }>> {
+    maxKeys: number = 50,
+  ): Promise<
+    Array<{
+      key: string;
+      size: number;
+      lastModified: Date;
+      url: string;
+    }>
+  > {
     // Primeira tentativa com configuração SSL padrão
     try {
       return await this.tryListFiles(folder, maxKeys, false);
     } catch (error: any) {
-      if (error.message.includes('SSL') || error.message.includes('EPROTO') || error.message.includes('handshake')) {
-        logger.warn('🔄 Tentativa SSL falhou, tentando com configuração alternativa', { error: error.message });
-        
+      if (
+        error.message.includes('SSL') ||
+        error.message.includes('EPROTO') ||
+        error.message.includes('handshake')
+      ) {
+        logger.warn(
+          '🔄 Tentativa SSL falhou, tentando com configuração alternativa',
+          { error: error.message },
+        );
+
         // Segunda tentativa com configuração SSL alternativa
         try {
           return await this.tryListFiles(folder, maxKeys, true);
         } catch (fallbackError: any) {
-          logger.error('❌ Ambas as tentativas de conexão R2 falharam', { 
+          logger.error('❌ Ambas as tentativas de conexão R2 falharam', {
             originalError: error.message,
-            fallbackError: fallbackError.message 
+            fallbackError: fallbackError.message,
           });
           throw fallbackError;
         }
@@ -183,28 +218,30 @@ export class R2Service {
   private async tryListFiles(
     folder: string,
     maxKeys: number,
-    useAlternativeConfig: boolean = false
-  ): Promise<Array<{
-    key: string;
-    size: number;
-    lastModified: Date;
-    url: string;
-  }>> {
+    useAlternativeConfig: boolean = false,
+  ): Promise<
+    Array<{
+      key: string;
+      size: number;
+      lastModified: Date;
+      url: string;
+    }>
+  > {
     try {
-      logger.info('🔍 Iniciando listFiles', { 
-        folder, 
-        maxKeys, 
+      logger.info('🔍 Iniciando listFiles', {
+        folder,
+        maxKeys,
         bucket: this.bucketName,
         endpoint: R2_CONFIG.endpoint,
-        useAlternativeConfig
+        useAlternativeConfig,
       });
 
       // Se for configuração alternativa, criar cliente temporário com configurações diferentes
       let clientToUse = this.client;
-      
+
       if (useAlternativeConfig) {
         logger.info('🔧 Usando configuração SSL alternativa');
-        
+
         // Configuração SSL ainda mais permissiva
         const altHttpsAgent = new https.Agent({
           keepAlive: false,
@@ -213,7 +250,7 @@ export class R2Service {
           maxSockets: 10,
           timeout: 30000,
           servername: undefined,
-          checkServerIdentity: () => undefined
+          checkServerIdentity: () => undefined,
         });
 
         clientToUse = new S3Client({
@@ -228,48 +265,48 @@ export class R2Service {
           requestHandler: {
             httpsAgent: altHttpsAgent,
             requestTimeout: 30000,
-            connectionTimeout: 5000
-          }
+            connectionTimeout: 5000,
+          },
         });
       }
 
       const command = new ListObjectsV2Command({
         Bucket: this.bucketName,
         Prefix: folder,
-        MaxKeys: maxKeys
+        MaxKeys: maxKeys,
       });
 
-      logger.info('📡 Enviando comando para R2', { 
+      logger.info('📡 Enviando comando para R2', {
         bucket: this.bucketName,
         prefix: folder,
-        maxKeys 
+        maxKeys,
       });
 
       const response = await clientToUse.send(command);
-      
-      logger.info('📥 Resposta recebida do R2', { 
+
+      logger.info('📥 Resposta recebida do R2', {
         contentsLength: response.Contents?.length || 0,
         isTruncated: response.IsTruncated,
-        keyCount: response.KeyCount
+        keyCount: response.KeyCount,
       });
-      
-      const files = (response.Contents || []).map(object => ({
+
+      const files = (response.Contents || []).map((object) => ({
         key: object.Key!,
         size: object.Size || 0,
         lastModified: object.LastModified || new Date(),
-        url: `${this.publicUrl}/${object.Key}`
+        url: `${this.publicUrl}/${object.Key}`,
       }));
 
-      logger.info('✅ Arquivos listados com sucesso', { 
-        folder, 
-        count: files.length, 
+      logger.info('✅ Arquivos listados com sucesso', {
+        folder,
+        count: files.length,
         maxKeys,
-        useAlternativeConfig
+        useAlternativeConfig,
       });
 
       return files;
     } catch (error: any) {
-      logger.error('❌ Erro detalhado ao listar arquivos', { 
+      logger.error('❌ Erro detalhado ao listar arquivos', {
         error: error.message,
         code: error.code,
         name: error.name,
@@ -279,22 +316,88 @@ export class R2Service {
         bucket: this.bucketName,
         endpoint: R2_CONFIG.endpoint,
         hasCredentials: !!(R2_CONFIG.accessKeyId && R2_CONFIG.secretAccessKey),
-        useAlternativeConfig
+        useAlternativeConfig,
       });
-      
+
       // Fornecer erro mais específico baseado no tipo
       if (error.name === 'CredentialsProviderError') {
         throw new Error('Credenciais R2 inválidas ou ausentes');
-      } else if (error.name === 'NetworkingError' || error.code === 'ENOTFOUND') {
-        throw new Error('Erro de conectividade com R2. Verifique a configuração do endpoint');
-      } else if (error.name === 'AccessDenied' || error.code === 'AccessDenied') {
+      } else if (
+        error.name === 'NetworkingError' ||
+        error.code === 'ENOTFOUND'
+      ) {
+        throw new Error(
+          'Erro de conectividade com R2. Verifique a configuração do endpoint',
+        );
+      } else if (
+        error.name === 'AccessDenied' ||
+        error.code === 'AccessDenied'
+      ) {
         throw new Error('Acesso negado ao bucket R2. Verifique as permissões');
       } else if (error.name === 'NoSuchBucket') {
         throw new Error(`Bucket '${this.bucketName}' não existe`);
       }
-      
+
       throw new Error(`Falha ao listar arquivos: ${error.message}`);
     }
+  }
+
+  // Listar TODOS os arquivos de uma pasta (com paginação automática)
+  async listAllFiles(
+    folder: string = '',
+  ): Promise<
+    Array<{
+      key: string;
+      size: number;
+      lastModified: Date;
+      url: string;
+    }>
+  > {
+    const allFiles: Array<{
+      key: string;
+      size: number;
+      lastModified: Date;
+      url: string;
+    }> = [];
+    
+    let continuationToken: string | undefined = undefined;
+    let pageCount = 0;
+
+    do {
+      pageCount++;
+      
+      try {
+        const command = new ListObjectsV2Command({
+          Bucket: this.bucketName,
+          Prefix: folder,
+          MaxKeys: 1000,
+          ContinuationToken: continuationToken,
+        });
+
+        const response: ListObjectsV2CommandOutput = await this.client.send(command);
+
+        const files = (response.Contents || []).map((object) => ({
+          key: object.Key!,
+          size: object.Size || 0,
+          lastModified: object.LastModified || new Date(),
+          url: `${this.publicUrl}/${object.Key}`,
+        }));
+
+        allFiles.push(...files);
+        
+        logger.info(`📄 Página ${pageCount}: ${files.length} arquivos (total: ${allFiles.length})`);
+
+        // Verificar se tem mais páginas
+        continuationToken = response.NextContinuationToken;
+      } catch (error: any) {
+        logger.error('Erro ao listar arquivos (paginação)', { error, folder, pageCount });
+        throw new Error(`Falha ao listar arquivos: ${error.message}`);
+      }
+    } while (continuationToken);
+
+    logger.info(`✅ Total de ${allFiles.length} arquivos listados de ${folder}`);
+    
+    return allFiles;
   }
 
   // Deletar arquivo
@@ -302,7 +405,7 @@ export class R2Service {
     try {
       const command = new DeleteObjectCommand({
         Bucket: this.bucketName,
-        Key: fileKey
+        Key: fileKey,
       });
 
       await this.client.send(command);
@@ -314,12 +417,54 @@ export class R2Service {
     }
   }
 
+  // Deletar múltiplos arquivos de uma vez (até 1000 por requisição)
+  async deleteFiles(fileKeys: string[]): Promise<{
+    deleted: number;
+    errors: Array<{ key: string; message: string }>;
+  }> {
+    try {
+      if (fileKeys.length === 0) {
+        return { deleted: 0, errors: [] };
+      }
+
+      // Limitar a 1000 arquivos (limite do S3/R2)
+      const keysToDelete = fileKeys.slice(0, 1000);
+
+      const command = new DeleteObjectsCommand({
+        Bucket: this.bucketName,
+        Delete: {
+          Objects: keysToDelete.map((key) => ({ Key: key })),
+          Quiet: false, // Retornar lista de arquivos deletados
+        },
+      });
+
+      const response = await this.client.send(command);
+
+      const deleted = response.Deleted?.length || 0;
+      const errors = (response.Errors || []).map((err) => ({
+        key: err.Key || 'unknown',
+        message: err.Message || 'unknown error',
+      }));
+
+      logger.info(`${deleted} arquivos deletados em lote`, {
+        total: keysToDelete.length,
+        deleted,
+        errors: errors.length,
+      });
+
+      return { deleted, errors };
+    } catch (error: any) {
+      logger.error('Erro ao deletar arquivos em lote', { error, count: fileKeys.length });
+      throw new Error(`Falha ao deletar arquivos em lote: ${error.message}`);
+    }
+  }
+
   // Verificar se arquivo existe
   async fileExists(fileKey: string): Promise<boolean> {
     try {
       const command = new GetObjectCommand({
         Bucket: this.bucketName,
-        Key: fileKey
+        Key: fileKey,
       });
 
       await this.client.send(command);
@@ -342,12 +487,12 @@ export class R2Service {
     contentType: string,
     allowedTypes: string[] = [
       'image/jpeg',
-      'image/png', 
+      'image/png',
       'image/gif',
       'image/webp',
       'application/pdf',
-      'text/plain'
-    ]
+      'text/plain',
+    ],
   ): boolean {
     return allowedTypes.includes(contentType);
   }
@@ -368,7 +513,7 @@ export class R2Service {
       // Tentar listar objetos para verificar conectividade
       const command = new ListObjectsV2Command({
         Bucket: this.bucketName,
-        MaxKeys: 1
+        MaxKeys: 1,
       });
 
       await this.client.send(command);
@@ -379,16 +524,16 @@ export class R2Service {
         bucketName: this.bucketName,
         endpoint: R2_CONFIG.endpoint,
         publicUrl: this.publicUrl,
-        status: 'connected'
+        status: 'connected',
       };
     } catch (error: any) {
       logger.error('Erro ao verificar bucket R2', { error });
-      
+
       return {
         bucketName: this.bucketName,
         endpoint: R2_CONFIG.endpoint,
         publicUrl: this.publicUrl,
-        status: 'error'
+        status: 'error',
       };
     }
   }
@@ -399,9 +544,18 @@ export class R2Service {
     filename: string,
     contentType: string,
     folder: string = 'uploads',
-    metadata: Record<string, string> = {}
+    metadata: Record<string, string> = {},
+    useExactFilename: boolean = false,
   ): Promise<{ fileKey: string; publicUrl: string; size: number }> {
-    return this.uploadFileWithRetry(fileData, filename, contentType, folder, metadata);
+    return this.uploadFileWithRetry(
+      fileData,
+      filename,
+      contentType,
+      folder,
+      metadata,
+      0,
+      useExactFilename,
+    );
   }
 
   // Método auxiliar para upload com retry
@@ -411,16 +565,24 @@ export class R2Service {
     contentType: string,
     folder: string = 'uploads',
     metadata: Record<string, string> = {},
-    retryCount = 0
+    retryCount = 0,
+    useExactFilename: boolean = false,
   ): Promise<{ fileKey: string; publicUrl: string; size: number }> {
     try {
       // Sanitizar filename
       const sanitizedFilename = this.sanitizeFilename(filename);
-      
-      // Gerar chave única do arquivo
-      const timestamp = Date.now();
-      const randomId = Math.random().toString(36).substring(2, 15);
-      const fileKey = `${folder}/${timestamp}_${randomId}_${sanitizedFilename}`;
+
+      // Gerar chave do arquivo
+      let fileKey: string;
+      if (useExactFilename) {
+        // Usar nome exato sem timestamp/randomId
+        fileKey = `${folder}/${sanitizedFilename}`;
+      } else {
+        // Gerar chave única do arquivo
+        const timestamp = Date.now();
+        const randomId = Math.random().toString(36).substring(2, 15);
+        fileKey = `${folder}/${timestamp}_${randomId}_${sanitizedFilename}`;
+      }
 
       // Comando para upload direto
       const command = new PutObjectCommand({
@@ -431,13 +593,13 @@ export class R2Service {
         Metadata: {
           ...metadata,
           uploadedAt: new Date().toISOString(),
-          originalName: filename
-        }
+          originalName: filename,
+        },
       });
 
       // Enviar arquivo para R2
       await this.client.send(command);
-      
+
       // URL pública para acesso
       const publicUrl = `${this.publicUrl}/${fileKey}`;
 
@@ -446,27 +608,43 @@ export class R2Service {
       return {
         fileKey,
         publicUrl,
-        size: fileData.length
+        size: fileData.length,
       };
     } catch (error: any) {
       // Se for erro de SSL e ainda não excedeu o número máximo de tentativas
       const maxRetries = 3;
-      const isSSLError = error.code?.includes('SSL') || 
-                         error.code?.includes('TLS') || 
-                         error.library === 'SSL routines' ||
-                         error.message?.includes('SSL');
-      
+      const isSSLError =
+        error.code?.includes('SSL') ||
+        error.code?.includes('TLS') ||
+        error.library === 'SSL routines' ||
+        error.message?.includes('SSL');
+
       if (isSSLError && retryCount < maxRetries) {
         // Backoff exponencial: espera 2^retryCount * 100ms antes de tentar novamente
         const delayMs = Math.pow(2, retryCount) * 100;
-        logger.warn(`Erro SSL ao fazer upload de ${filename}, tentando novamente em ${delayMs}ms (tentativa ${retryCount + 1}/${maxRetries})`, { error: error.message });
-        
-        await new Promise(resolve => setTimeout(resolve, delayMs));
-        return this.uploadFileWithRetry(fileData, filename, contentType, folder, metadata, retryCount + 1);
+        logger.warn(
+          `Erro SSL ao fazer upload de ${filename}, tentando novamente em ${delayMs}ms (tentativa ${retryCount + 1}/${maxRetries})`,
+          { error: error.message },
+        );
+
+        await new Promise((resolve) => setTimeout(resolve, delayMs));
+        return this.uploadFileWithRetry(
+          fileData,
+          filename,
+          contentType,
+          folder,
+          metadata,
+          retryCount + 1,
+          useExactFilename,
+        );
       }
-      
+
       // Se não for erro SSL ou já excedeu as tentativas, registra o erro
-      logger.error('Erro no upload direto para R2', { error, filename, folder });
+      logger.error('Erro no upload direto para R2', {
+        error,
+        filename,
+        folder,
+      });
       throw new Error(`Falha no upload direto: ${error.message}`);
     }
   }
@@ -479,25 +657,32 @@ export class R2Service {
       contentType: string;
     }>,
     folder: string = 'uploads',
-    metadata: Record<string, string> = {}
-  ): Promise<Array<{
-    filename: string;
-    fileKey: string;
-    publicUrl: string;
-    size: number;
-  }>> {
+    metadata: Record<string, string> = {},
+  ): Promise<
+    Array<{
+      filename: string;
+      fileKey: string;
+      publicUrl: string;
+      size: number;
+    }>
+  > {
     try {
       if (files.length === 0) {
         return [];
       }
 
       // Iniciando upload em lote silenciosamente
-      
+
       // Usar um timestamp comum para todos os arquivos do lote
       const timestamp = Date.now();
-      
+
       // Função auxiliar para fazer upload com retry
-      const uploadWithRetry = async (fileData: Buffer | Uint8Array, filename: string, contentType: string, retryCount = 0): Promise<{
+      const uploadWithRetry = async (
+        fileData: Buffer | Uint8Array,
+        filename: string,
+        contentType: string,
+        retryCount = 0,
+      ): Promise<{
         filename: string;
         fileKey: string;
         publicUrl: string;
@@ -506,7 +691,7 @@ export class R2Service {
         try {
           // Sanitizar filename
           const sanitizedFilename = this.sanitizeFilename(filename);
-          
+
           // Gerar chave única do arquivo com timestamp compartilhado
           const randomId = Math.random().toString(36).substring(2, 15);
           const fileKey = `${folder}/${timestamp}_${randomId}_${sanitizedFilename}`;
@@ -521,13 +706,13 @@ export class R2Service {
               ...metadata,
               uploadedAt: new Date().toISOString(),
               originalName: filename,
-              batchId: `batch-${timestamp}`
-            }
+              batchId: `batch-${timestamp}`,
+            },
           });
 
           // Enviar arquivo para R2
           await this.client.send(command);
-          
+
           // URL pública para acesso
           const publicUrl = `${this.publicUrl}/${fileKey}`;
 
@@ -535,52 +720,67 @@ export class R2Service {
             filename,
             fileKey,
             publicUrl,
-            size: fileData.length
+            size: fileData.length,
           };
         } catch (error: any) {
           // Se for erro de SSL e ainda não excedeu o número máximo de tentativas
           const maxRetries = 3;
-          const isSSLError = error.code?.includes('SSL') || 
-                            error.code?.includes('TLS') || 
-                            error.library === 'SSL routines' ||
-                            error.message?.includes('SSL');
-          
+          const isSSLError =
+            error.code?.includes('SSL') ||
+            error.code?.includes('TLS') ||
+            error.library === 'SSL routines' ||
+            error.message?.includes('SSL');
+
           if (isSSLError && retryCount < maxRetries) {
             // Backoff exponencial: espera 2^retryCount * 100ms antes de tentar novamente
             const delayMs = Math.pow(2, retryCount) * 100;
-            logger.warn(`Erro SSL ao fazer upload de ${filename}, tentando novamente em ${delayMs}ms (tentativa ${retryCount + 1}/${maxRetries})`, { error: error.message });
-            
-            await new Promise(resolve => setTimeout(resolve, delayMs));
-            return uploadWithRetry(fileData, filename, contentType, retryCount + 1);
+            logger.warn(
+              `Erro SSL ao fazer upload de ${filename}, tentando novamente em ${delayMs}ms (tentativa ${retryCount + 1}/${maxRetries})`,
+              { error: error.message },
+            );
+
+            await new Promise((resolve) => setTimeout(resolve, delayMs));
+            return uploadWithRetry(
+              fileData,
+              filename,
+              contentType,
+              retryCount + 1,
+            );
           }
-          
+
           // Se não for erro SSL ou já excedeu as tentativas, registra o erro
-          logger.error(`Erro no upload do arquivo ${filename} no lote${retryCount > 0 ? ` após ${retryCount} tentativas` : ''}`, { error });
+          logger.error(
+            `Erro no upload do arquivo ${filename} no lote${retryCount > 0 ? ` após ${retryCount} tentativas` : ''}`,
+            { error },
+          );
           return {
             filename,
             fileKey: '',
             publicUrl: '',
-            size: 0
+            size: 0,
           };
         }
       };
-      
+
       // Executar todos os uploads em paralelo (método anterior mais rápido)
       const results = await Promise.all(
-        files.map(({ fileData, filename, contentType }) => 
-          uploadWithRetry(fileData, filename, contentType)
-        )
+        files.map(({ fileData, filename, contentType }) =>
+          uploadWithRetry(fileData, filename, contentType),
+        ),
       );
-      
+
       // Filtrar resultados falharam
-      const failedUploads = results.filter(result => !result.publicUrl);
-      
+      const failedUploads = results.filter((result) => !result.publicUrl);
+
       // Upload em lote concluído silenciosamente
 
       if (failedUploads.length > 0) {
-        logger.warn(`Falha no upload de ${failedUploads.length} arquivos no lote`, {
-          failedFiles: failedUploads.map(f => f.filename).slice(0, 10)
-        });
+        logger.warn(
+          `Falha no upload de ${failedUploads.length} arquivos no lote`,
+          {
+            failedFiles: failedUploads.map((f) => f.filename).slice(0, 10),
+          },
+        );
       }
 
       return results;
@@ -594,7 +794,7 @@ export class R2Service {
   async generateImageUploadUrls(
     filename: string,
     folder: string = 'images',
-    metadata: Record<string, string> = {}
+    metadata: Record<string, string> = {},
   ): Promise<{
     original: { uploadUrl: string; fileKey: string; publicUrl: string };
     thumbnail?: { uploadUrl: string; fileKey: string; publicUrl: string };
@@ -602,14 +802,14 @@ export class R2Service {
   }> {
     try {
       const contentType = this.getContentTypeFromFilename(filename);
-      
+
       // URL para imagem original
       const original = await this.generatePresignedUploadUrl(
         filename,
         contentType,
         `${folder}/original`,
         3600,
-        { ...metadata, version: 'original' }
+        { ...metadata, version: 'original' },
       );
 
       // URLs para versões redimensionadas (opcional)
@@ -621,7 +821,7 @@ export class R2Service {
           contentType,
           `${folder}/thumbnails`,
           3600,
-          { ...metadata, version: 'thumbnail' }
+          { ...metadata, version: 'thumbnail' },
         );
 
         medium = await this.generatePresignedUploadUrl(
@@ -629,29 +829,34 @@ export class R2Service {
           contentType,
           `${folder}/medium`,
           3600,
-          { ...metadata, version: 'medium' }
+          { ...metadata, version: 'medium' },
         );
       }
 
       return { original, thumbnail, medium };
     } catch (error: any) {
-      logger.error('Erro ao gerar URLs de upload de imagem', { error, filename });
-      throw new Error(`Falha ao gerar URLs de upload de imagem: ${error.message}`);
+      logger.error('Erro ao gerar URLs de upload de imagem', {
+        error,
+        filename,
+      });
+      throw new Error(
+        `Falha ao gerar URLs de upload de imagem: ${error.message}`,
+      );
     }
   }
 
   // Inferir content type a partir do filename
   private getContentTypeFromFilename(filename: string): string {
     const extension = filename.toLowerCase().split('.').pop();
-    
+
     const mimeTypes: Record<string, string> = {
-      'jpg': 'image/jpeg',
-      'jpeg': 'image/jpeg',
-      'png': 'image/png',
-      'gif': 'image/gif',
-      'webp': 'image/webp',
-      'pdf': 'application/pdf',
-      'txt': 'text/plain'
+      jpg: 'image/jpeg',
+      jpeg: 'image/jpeg',
+      png: 'image/png',
+      gif: 'image/gif',
+      webp: 'image/webp',
+      pdf: 'application/pdf',
+      txt: 'text/plain',
     };
 
     return mimeTypes[extension || ''] || 'application/octet-stream';
@@ -659,4 +864,4 @@ export class R2Service {
 }
 
 // Instância singleton
-export const r2Service = new R2Service(); 
+export const r2Service = new R2Service();

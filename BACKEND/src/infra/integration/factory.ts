@@ -1,5 +1,5 @@
 import { IDataImportExportService } from './interfaces/IDataImportExportService';
-import { FirebaseDataImportExportService } from './firebase/FirebaseDataImportExportService';
+import { SupabaseDataImportExportService } from './supabase/SupabaseDataImportExportService';
 
 // Instância singleton
 let dataImportExportService: IDataImportExportService;
@@ -10,7 +10,7 @@ let dataImportExportService: IDataImportExportService;
  */
 export function getDataImportExportService(): IDataImportExportService {
   if (!dataImportExportService) {
-    dataImportExportService = new FirebaseDataImportExportService();
+    dataImportExportService = new SupabaseDataImportExportService();
   }
   return dataImportExportService;
 }

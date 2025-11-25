@@ -1,5 +1,12 @@
 import { IAuthRepository } from '../repositories/IAuthRepository';
-import { AuthUser, LoginRequest, LoginResponse, MFAType, MFAVerifyRequest, RefreshTokenRequest } from '../types/auth.types';
+import {
+  AuthUser,
+  LoginRequest,
+  LoginResponse,
+  MFAType,
+  MFAVerifyRequest,
+  RefreshTokenRequest,
+} from '../types/auth.types';
 import * as jwt from 'jsonwebtoken';
 import { env } from '../../../config/env';
 import { logger } from '../../../utils/logger';
@@ -34,13 +41,13 @@ export class AuthService {
       const user = await this.authRepository.getUserByEmail(email);
 
       // Verificar se o usuário tem MFA habilitado
-      if (user.mfaSettings?.enabled) {
+      if (user.mfa_settings?.enabled) {
         // Se o código MFA não foi fornecido, solicitar
         if (!mfaCode) {
           return {
             user,
             mfaRequired: true,
-            mfaType: user.mfaSettings.preferredMethod,
+            mfaType: user.mfa_settings.preferredMethod,
             token: '',
             refreshToken: '',
           };
@@ -49,8 +56,8 @@ export class AuthService {
         // Verificar o código MFA
         const isValidMfa = await this.authRepository.verifyMFA(
           user.uid,
-          mfaType || user.mfaSettings.preferredMethod,
-          mfaCode
+          mfaType || user.mfa_settings.preferredMethod,
+          mfaCode,
         );
 
         if (!isValidMfa) {
@@ -84,7 +91,7 @@ export class AuthService {
       return await this.authRepository.verifyMFA(
         verifyData.userId,
         verifyData.mfaType,
-        verifyData.code
+        verifyData.code,
       );
     } catch (error) {
       logger.error('Erro ao verificar MFA:', error);
@@ -95,11 +102,17 @@ export class AuthService {
   /**
    * Configura o MFA para um usuário
    */
-  async setupMfa(userId: string, mfaType: MFAType): Promise<{ secret: string; qrCode?: string }> {
+  async setupMfa(
+    userId: string,
+    mfaType: MFAType,
+  ): Promise<{ secret: string; qrCode?: string }> {
     try {
       // Habilitar MFA e gerar segredo
       await this.authRepository.enableMFA(userId, mfaType);
-      const secret = await this.authRepository.generateMFASecret(userId, mfaType);
+      const secret = await this.authRepository.generateMFASecret(
+        userId,
+        mfaType,
+      );
 
       // Gerar QR code para autenticador (quando aplicável)
       let qrCode;
@@ -134,7 +147,11 @@ export class AuthService {
   /**
    * Atualiza a senha do usuário
    */
-  async changePassword(_userId: string, _currentPassword: string, _newPassword: string): Promise<boolean> {
+  async changePassword(
+    _userId: string,
+    _currentPassword: string,
+    _newPassword: string,
+  ): Promise<boolean> {
     try {
       // Não existe propriedade 'password' em AuthUser, então não atualizar diretamente
       return true;
@@ -159,24 +176,28 @@ export class AuthService {
   /**
    * Gera novos tokens a partir de um refresh token
    */
-  async refreshTokens(refreshData: RefreshTokenRequest): Promise<{ token: string; refreshToken: string }> {
+  async refreshTokens(
+    refreshData: RefreshTokenRequest,
+  ): Promise<{ token: string; refreshToken: string }> {
     try {
       const { refreshToken } = refreshData;
-      
+
       // Verificar o refresh token
       let decoded;
       try {
-        decoded = jwt.verify(refreshToken, env.JWT_SECRET) as { userId: string };
+        decoded = jwt.verify(refreshToken, env.JWT_SECRET) as {
+          userId: string;
+        };
       } catch (error) {
         logger.error('Refresh token inválido:', error);
         throw new Error('Refresh token inválido ou expirado');
       }
-      
+
       // Gerar novos tokens
       const userId = decoded.userId;
       const newToken = await this.authRepository.createCustomToken(userId);
       const newRefreshToken = await this.generateRefreshToken(userId);
-      
+
       return {
         token: newToken,
         refreshToken: newRefreshToken,
@@ -247,25 +268,28 @@ export class AuthService {
   /**
    * Sincroniza usuário com backend (criação/atualização segura)
    */
-  async syncUser(userId: string, firebaseUser: any): Promise<AuthUser> {
+  async syncUser(userId: string, authUser: any): Promise<AuthUser> {
     try {
       // Buscar usuário existente ou criar novo
       let user;
       try {
         user = await this.authRepository.getUserById(userId);
-        
+
         // Atualizar último login
         await this.authRepository.updateLastLogin(userId);
-        
+
         // Usuário sincronizado - log removido
       } catch (error) {
-        // Usuário não existe, criar novo usando dados do Firebase
+        // Usuário não existe, criar novo usando dados do auth provider
         // O auth middleware já deve ter criado o usuário, mas como fallback:
-        user = await this.authRepository.createUser(firebaseUser.email, 'firebase-auth');
-        
+        user = await this.authRepository.createUser(
+          authUser.email,
+          'supabase-auth',
+        );
+
         logger.info(`Novo usuário ${userId} criado via sincronização`);
       }
-      
+
       return user;
     } catch (error) {
       logger.error('Erro ao sincronizar usuário:', error);

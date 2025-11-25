@@ -1,17 +1,11 @@
-import { Timestamp } from 'firebase/firestore';
-import { EnhancedQuestionResponse } from './enhanced';
-import { PerformanceTrend, TimeEfficiencyPattern, FatigueEffect } from './common';
+// Removed Firebase dependency - using ISO string dates
+import {
+  PerformanceTrend,
+  TimeEfficiencyPattern,
+  FatigueEffect,
+} from './common';
 
 // TimeEfficiencyPattern e FatigueEffect movidos para common.ts
-
-/**
- * Tipos de recomendação para FSRS
- */
-export enum FSRSRecommendationReason {
-  CONSISTENTLY_INCORRECT = 'CONSISTENTLY_INCORRECT', // Sempre erra
-  REGRESSION = 'REGRESSION',                         // Regrediu
-  HIGH_VALUE_TOPIC = 'HIGH_VALUE_TOPIC'             // Tópico importante
-}
 
 // PerformanceTrend movido para prediction.ts para evitar dependência circular
 
@@ -85,23 +79,11 @@ export interface SessionPatterns {
 }
 
 /**
- * Recomendação para adicionar ao FSRS
- */
-export interface FSRSRecommendation {
-  questionId: string;
-  reason: FSRSRecommendationReason;
-  priority: 'HIGH' | 'MEDIUM' | 'LOW';
-  explanation: string;
-  confidence: number; // 0-1
-}
-
-/**
  * Recomendações automáticas inteligentes
  */
 export interface IntelligentRecommendations {
-  shouldAddToFSRS: FSRSRecommendation[];
   focusAreas: string[]; // Tópicos que precisam atenção
-  nextStudyTime: Timestamp; // Quando estudar novamente
+  nextStudyTime: string; // Quando estudar novamente
   timeManagement: string; // "Tente ser mais decisivo em questões difíceis"
   studyStrategy: string; // Estratégia recomendada
 }
@@ -113,35 +95,35 @@ export interface ListCompletionStatistics {
   listId: string;
   userId: string;
   sessionId: string;
-  
+
   // Métricas básicas
   basic: BasicMetrics;
-  
+
   // Análise de eficiência temporal (ATUALIZADA)
   timeEfficiency: TimeEfficiencyAnalysis;
-  
+
   // Retenção e histórico (baseado em dados existentes)
   retention: RetentionAnalysis;
-  
+
   // Padrões temporais
   patterns: SessionPatterns;
-  
+
   // Recomendações automáticas inteligentes
   recommendations: IntelligentRecommendations;
-  
+
   // Metadados
-  completedAt: Timestamp;
-  createdAt: Timestamp;
+  completedAt: string;
+  createdAt: string;
 }
 
 /**
- * Payload para criação de estatísticas
+ * Payload para criar estatísticas
  */
 export interface CreateStatisticsPayload {
   listId: string;
   userId: string;
   sessionId: string;
-  responses: EnhancedQuestionResponse[];
+  responses: any[]; // Simplified to avoid FSRS dependencies
 }
 
 /**
@@ -168,23 +150,23 @@ export interface SessionComparison {
 export interface StatisticsAggregation {
   userId: string;
   period: 'DAILY' | 'WEEKLY' | 'MONTHLY';
-  periodStart: Timestamp;
-  periodEnd: Timestamp;
-  
+  periodStart: string;
+  periodEnd: string;
+
   totalSessions: number;
   totalQuestions: number;
   averageAccuracy: number;
   averageTimePerQuestion: number;
-  
+
   // Tendências
   accuracyTrend: PerformanceTrend;
   speedTrend: PerformanceTrend;
   consistencyTrend: PerformanceTrend;
-  
+
   // Padrões identificados
   dominantTimePattern: TimeEfficiencyPattern;
   commonFatigueLevel: FatigueEffect;
-  
+
   // Top questões problemáticas
   problematicQuestions: Array<{
     questionId: string;
@@ -200,8 +182,8 @@ export interface StatisticsAggregation {
 export interface StatisticsSearchFilters {
   userId: string;
   listIds?: string[];
-  dateFrom?: Timestamp;
-  dateTo?: Timestamp;
+  dateFrom?: string;
+  dateTo?: string;
   minAccuracy?: number;
   maxAccuracy?: number;
   timePattern?: TimeEfficiencyPattern;
@@ -221,4 +203,4 @@ export interface StatisticsSearchResult {
     patternDistribution: Record<TimeEfficiencyPattern, number>;
     fatigueDistribution: Record<FatigueEffect, number>;
   };
-} 
+}

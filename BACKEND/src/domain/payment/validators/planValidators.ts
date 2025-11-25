@@ -33,9 +33,18 @@ export const planValidators = {
     body('durationDays')
       .isInt({ min: 1 })
       .withMessage('Duração em dias deve ser um número inteiro maior que zero'),
-    body('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
-    body('isPublic').optional().isBoolean().withMessage('isPublic deve ser um valor booleano'),
-    body('features').optional().isArray().withMessage('Features deve ser um array'),
+    body('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
+    body('isPublic')
+      .optional()
+      .isBoolean()
+      .withMessage('isPublic deve ser um valor booleano'),
+    body('features')
+      .optional()
+      .isArray()
+      .withMessage('Features deve ser um array'),
     body('interval')
       .optional()
       .isIn(Object.values(PlanInterval))
@@ -51,14 +60,22 @@ export const planValidators = {
   /**
    * Validador para obter plano por ID
    */
-  getPlanById: [param('planId').notEmpty().withMessage('ID do plano é obrigatório')],
+  getPlanById: [
+    param('planId').notEmpty().withMessage('ID do plano é obrigatório'),
+  ],
 
   /**
    * Validador para listar planos
    */
   listPlans: [
-    query('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
-    query('isPublic').optional().isBoolean().withMessage('isPublic deve ser um valor booleano'),
+    query('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
+    query('isPublic')
+      .optional()
+      .isBoolean()
+      .withMessage('isPublic deve ser um valor booleano'),
     query('limit')
       .optional()
       .isInt({ min: 1, max: 100 })
@@ -98,9 +115,18 @@ export const planValidators = {
       .optional()
       .isInt({ min: 1 })
       .withMessage('Duração em dias deve ser um número inteiro maior que zero'),
-    body('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
-    body('isPublic').optional().isBoolean().withMessage('isPublic deve ser um valor booleano'),
-    body('features').optional().isArray().withMessage('Features deve ser um array'),
+    body('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
+    body('isPublic')
+      .optional()
+      .isBoolean()
+      .withMessage('isPublic deve ser um valor booleano'),
+    body('features')
+      .optional()
+      .isArray()
+      .withMessage('Features deve ser um array'),
     body('interval')
       .optional()
       .isIn(Object.values(PlanInterval))
@@ -116,5 +142,7 @@ export const planValidators = {
   /**
    * Validador para remover plano
    */
-  deletePlan: [param('planId').notEmpty().withMessage('ID do plano é obrigatório')],
+  deletePlan: [
+    param('planId').notEmpty().withMessage('ID do plano é obrigatório'),
+  ],
 };

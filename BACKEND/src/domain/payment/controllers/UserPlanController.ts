@@ -3,7 +3,7 @@ import { IUserPlanService } from '../interfaces/IUserPlanService';
 import { IPlanService } from '../interfaces/IPlanService';
 import { CreateUserPlanPayload, UserPlanStatus, PaymentMethod } from '../types';
 import { AppError, ErrorCodes, ErrorStatusCodes } from '../../../utils/errors';
-import { AuthenticatedRequest } from '../../auth/middleware/auth.middleware';
+import { AuthenticatedRequest } from '../../auth/middleware/supabaseAuth.middleware';
 
 /**
  * Controlador responsável por gerenciar os planos dos usuários
@@ -28,12 +28,12 @@ export class UserPlanController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: AuthenticatedRequest): void {
-    const role = req.user?.role;
-    if (role !== 'admin') {
+    const role = (req.user?.user_role || '').toUpperCase();
+    if (role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Acesso negado. Apenas administradores podem realizar esta operação.',
-        ErrorCodes.FORBIDDEN
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -47,7 +47,11 @@ export class UserPlanController {
   private getAuthenticatedUserId(req: AuthenticatedRequest): string {
     const userId = req.user?.id;
     if (!userId) {
-      throw new AppError(ErrorStatusCodes[ErrorCodes.UNAUTHORIZED], 'Usuário não autenticado', ErrorCodes.UNAUTHORIZED);
+      throw new AppError(
+        ErrorStatusCodes[ErrorCodes.UNAUTHORIZED],
+        'Usuário não autenticado',
+        ErrorCodes.UNAUTHORIZED,
+      );
     }
     return userId;
   }
@@ -59,12 +63,16 @@ export class UserPlanController {
    * @param role Role do usuário
    * @throws {AppError} Erro se o usuário não tiver permissão
    */
-  private checkUserPlanAccess(userId: string, userPlanUserId: string, role: string): void {
+  private checkUserPlanAccess(
+    userId: string,
+    userPlanUserId: string,
+    role: string,
+  ): void {
     if (userId !== userPlanUserId && role !== 'admin') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Você não tem permissão para acessar este plano',
-        ErrorCodes.FORBIDDEN
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -75,16 +83,32 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  createUserPlan = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  createUserPlan = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
-      const { userId, planId, startDate, endDate, paymentMethod, autoRenew, metadata } = req.body;
+      const {
+        userId,
+        planId,
+        startDate,
+        endDate,
+        paymentMethod,
+        autoRenew,
+        metadata,
+      } = req.body;
 
       // Validar se o plano existe
       const plan = await this.planService.getPlanById(planId);
       if (!plan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       const userPlanData: CreateUserPlanPayload = {
@@ -98,7 +122,8 @@ export class UserPlanController {
         metadata,
       };
 
-      const newUserPlan = await this.userPlanService.createUserPlan(userPlanData);
+      const newUserPlan =
+        await this.userPlanService.createUserPlan(userPlanData);
 
       res.status(201).json({
         success: true,
@@ -115,18 +140,26 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  getUserPlanById = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  getUserPlanById = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userPlanId = req.params.userPlanId;
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
 
       if (!userPlan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano de usuário não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão de acesso
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
       this.checkUserPlanAccess(userId, userPlan.userId, role || '');
 
       res.status(200).json({
@@ -144,20 +177,24 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listUserPlans = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  listUserPlans = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Permitir que um usuário veja apenas seus próprios planos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
 
       if (!userId) {
         userId = authenticatedUserId;
-      } else if (userId !== authenticatedUserId && role !== 'admin') {
+      } else if (userId !== authenticatedUserId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar planos de outros usuários',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -178,12 +215,16 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listActiveUserPlans = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  listActiveUserPlans = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Permitir que um usuário veja apenas seus próprios planos ativos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
 
       if (!userId) {
         userId = authenticatedUserId;
@@ -191,7 +232,7 @@ export class UserPlanController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar planos de outros usuários',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -212,7 +253,11 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listAllUserPlans = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  listAllUserPlans = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -226,8 +271,12 @@ export class UserPlanController {
 
       const result = await this.userPlanService.listUserPlans(options);
 
-      const page = result.limit ? Math.floor(result.offset / result.limit) + 1 : 1;
-      const totalPages = result.limit ? Math.ceil(result.total / result.limit) : 1;
+      const page = result.limit
+        ? Math.floor(result.offset / result.limit) + 1
+        : 1;
+      const totalPages = result.limit
+        ? Math.ceil(result.total / result.limit)
+        : 1;
       res.status(200).json({
         success: true,
         data: result.items,
@@ -248,7 +297,11 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  cancelUserPlan = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  cancelUserPlan = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userPlanId = req.params.userPlanId;
       const { reason } = req.body;
@@ -256,15 +309,22 @@ export class UserPlanController {
       // Verificar se o plano existe
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
       if (!userPlan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano de usuário não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão de acesso
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = (req.user?.user_role || '').toUpperCase();
       this.checkUserPlanAccess(userId, userPlan.userId, role || '');
 
-      const cancelledPlan = await this.userPlanService.cancelUserPlan(userPlanId, reason);
+      const cancelledPlan = await this.userPlanService.cancelUserPlan(
+        userPlanId,
+        reason,
+      );
 
       res.status(200).json({
         success: true,
@@ -282,7 +342,11 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  renewUserPlan = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  renewUserPlan = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -292,7 +356,11 @@ export class UserPlanController {
       // Verificar se o plano existe
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
       if (!userPlan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano de usuário não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       const renewedPlan = await this.userPlanService.renewUserPlan(
@@ -318,7 +386,11 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  updateUserPlanStatus = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  updateUserPlanStatus = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -326,13 +398,21 @@ export class UserPlanController {
       const { status, reason } = req.body;
 
       if (!Object.values(UserPlanStatus).includes(status)) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Status inválido', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Status inválido',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       // Verificar se o plano existe
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
       if (!userPlan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano de usuário não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       const updatedPlan = await this.userPlanService.updateUserPlanStatus(
@@ -369,16 +449,27 @@ export class UserPlanController {
       const { metadata } = req.body;
 
       if (!metadata || typeof metadata !== 'object') {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Metadata inválido', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Metadata inválido',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       // Verificar se o plano existe
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
       if (!userPlan) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Plano de usuário não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
-      const updatedPlan = await this.userPlanService.updateUserPlanMetadata(userPlanId, metadata);
+      const updatedPlan = await this.userPlanService.updateUserPlanMetadata(
+        userPlanId,
+        metadata,
+      );
 
       res.status(200).json({
         success: true,
@@ -396,7 +487,11 @@ export class UserPlanController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  checkExpiredPlans = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  checkExpiredPlans = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 

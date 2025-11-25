@@ -1,4 +1,4 @@
-import { Timestamp } from "firebase-admin/firestore";
+// Removed Firebase Timestamp import - using native Date instead
 
 /**
  * Tipos de eventos para analytics
@@ -44,7 +44,7 @@ export interface AnalyticsEvent {
     latitude?: number;
     longitude?: number;
   } | null;
-  timestamp: Timestamp;
+  timestamp: Date;
 }
 
 /**
@@ -183,4 +183,4 @@ export interface IAnalyticsService {
    * Remove eventos de analytics antigos
    */
   cleanupOldAnalyticsEvents(olderThan: Date): Promise<number>;
-} 
+}

@@ -2,11 +2,10 @@ import { Router } from 'express';
 import { MentorshipController } from '../controllers/MentorshipController';
 import { MentorshipServiceFactory } from '../factories';
 import { authenticate, isMentorOrMentee } from '../middlewares/authMiddleware';
-import { getFirestore } from 'firebase-admin/firestore';
+//
 
 const router = Router();
-const db = getFirestore();
-const factory = new MentorshipServiceFactory(db);
+const factory = new MentorshipServiceFactory();
 const controller = new MentorshipController(factory);
 const mentorshipService = factory.getMentorshipService();
 
@@ -36,7 +35,11 @@ router.get('/', authenticate, controller.listMentorships);
  * @desc    Lista mentorias onde o usuário é mentor
  * @access  Private (mentor)
  */
-router.get('/mentor/:mentorId', authenticate, controller.listMentorshipsByMentor);
+router.get(
+  '/mentor/:mentorId',
+  authenticate,
+  controller.listMentorshipsByMentor,
+);
 
 /**
  * @route   GET /mentorships/me/mentor
@@ -50,7 +53,11 @@ router.get('/me/mentor', authenticate, controller.listMentorshipsByMentor);
  * @desc    Lista mentorias onde o usuário é mentorado
  * @access  Private (mentorado)
  */
-router.get('/mentee/:menteeId', authenticate, controller.listMentorshipsByMentee);
+router.get(
+  '/mentee/:menteeId',
+  authenticate,
+  controller.listMentorshipsByMentee,
+);
 
 /**
  * @route   GET /mentorships/me/mentee

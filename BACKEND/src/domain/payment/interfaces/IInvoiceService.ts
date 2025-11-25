@@ -38,7 +38,10 @@ export interface IInvoiceService {
    * @param paymentStatus Novo status de pagamento
    * @returns Fatura atualizada
    */
-  updateInvoiceStatus(invoiceId: string, paymentStatus: string): Promise<Invoice>;
+  updateInvoiceStatus(
+    invoiceId: string,
+    paymentStatus: string,
+  ): Promise<Invoice>;
 
   /**
    * Gera um PDF da fatura

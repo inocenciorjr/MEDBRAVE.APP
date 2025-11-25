@@ -1,0 +1,365 @@
+[
+  {
+    "id": "hardworq-283990",
+    "statement": "Homem, 72 anos de idade, procura o Serviço de Urgência devido à dor no flanco e na fossa ilíaca esquerdos há 2 dias. Fez uso de analgésico sem melhora. Refere ser constipado e está sem evacuar há três dias. Nega febre e relata perda de apetite. Tem diabete melito e hipertensão arterial controlados. Ao exame clínico, encontra-se em bom estado geral; IMC 30,2 kg/m2; FC 80 bpm; PA 130x80 mmHg; sem alterações da ausculta torácica; abdome globoso, flácido, doloroso à palpação do flanco e da fossa ilíaca esquerdos, com sinal de irritação peritoneal neste local; ruídos hidroaéreos presentes; e toque retal com fezes na ampola. Exames laboratoriais: Hb 13,1 g/dL; Ht 38%; Leucócitos 15.693/mm3; PCR 138 mg/L. Tomografia apresentada. \nQual é a melhor conduta neste momento?\n\n<img src=\"/api/temp-images/img-4d3d058b265643d97cc58208710782b4.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-283990-alt-0",
+        "text": "Laparoscopia diagnóstica.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283990-alt-1",
+        "text": "Drenagem percutânea da coleção.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283990-alt-2",
+        "text": "Tratamento clínico.",
+        "isCorrect": true,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283990-alt-3",
+        "text": "Colectomia esquerda com anastomose.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-283990-alt-2",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "USP2023R1",
+      "USP",
+      "R1",
+      "SP",
+      "2023"
+    ],
+    "source": "USP",
+    "year": 2023,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-06T00:12:47.761Z",
+    "updated_at": "2025-11-06T00:12:47.762Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-4d3d058b265643d97cc58208710782b4.png"
+    ],
+    "metadata": {
+      "hardworq_id": 283990,
+      "hardworq_codigo": "USP2023R1-1",
+      "prova_id": 2610,
+      "prova_codigo": "USP2023R1",
+      "estado": "SP",
+      "grupo": "R1",
+      "professor_comment": "Questão bem elaborada, com caso clínico florido e bem descrito.\n\nEstamos diante de um paciente idoso,72 anos, com dor em flanco e fossa ilíaca esquerdos, contipação intestinal. Além disso, apresenta sinais de irritação peritoneal localizada. Exames laboratoriais mostram leucocitose e elevação de pcr, ou seja, quadro de diverticulite aguda.\n\nNesse caso, precisamos de imagem para classificar a doença na classificação de Hinchey, que vai definir a conduta\n\nAo analisar a tomografia, temos um exame sem contraste, com cortes axial e coronal, apresentando um espessamento parietal do cólon descendente associado à densificação dos planos adiposos adjacentes, caracterizando um quadro de diverticulite aguda no cólon descendente. Como não há coleções ou pneumoperitônio, o quadro é classificado com Hinchey I.\n\nClassificação de Hinchey\n\nI - Abscesso pericólico --> Tratamento clínico + colonoscopia após 4 a 6 semanas\n\nII - Abscesso pélvico --> Tratamento clínico + colonoscopia após 4 a 6 semanas \n\nObs: se abscesso > ou = 4 cm é nescessário drenagem guiada e cirurgia eletiva posteriormente\n\nIII - Peritonite purulenta ---> Cirurgia de urgência (colectomia à hartmann) ou lavagem laparoscópica\n\nIV - Peritonite fecal --> Cirurgia de urgência ou lavagem laparoscópica \n\nPodemos perceber então que a melhor conduta no caso é o tratamento clínico",
+      "scraped_at": "2025-11-06T00:12:47.762Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-283991",
+    "statement": "Mulher, 65 anos de idade, está internada na enfermaria, no sexto dia de pós-operatório de colectomia direita por câncer de cólon. Evoluiu com dor abdominal, vômitos e febre. Ao exame clínico, encontra-se em bom estado geral, FC de 100 bpm e PA de 110x70 mmHg; dor abdominal à palpação difusa com irritação peritoneal. Realizada a tomografia de abdome total com imagem compatível com deiscência da anastomose intestinal. Foi indicada laparotomia exploradora com presença de peritonite purulenta e deiscência da anastomose. Dentre as alternativas abaixo, qual é o esquema de antibioticoterapia mais adequado?",
+    "alternatives": [
+      {
+        "id": "hardworq-283991-alt-0",
+        "text": "Ceftriaxone + metronidazol; 10 dias.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283991-alt-1",
+        "text": "Piperacilina + tazobactan; 10 dias.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283991-alt-2",
+        "text": "Ceftriaxone + metronidazol; 5 dias.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283991-alt-3",
+        "text": "Piperacilina + tazobactan; 5 dias.",
+        "isCorrect": true,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-283991-alt-3",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "USP2023R1",
+      "USP",
+      "R1",
+      "SP",
+      "2023"
+    ],
+    "source": "USP",
+    "year": 2023,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-06T00:12:47.762Z",
+    "updated_at": "2025-11-06T00:12:47.762Z",
+    "image_urls": [],
+    "metadata": {
+      "hardworq_id": 283991,
+      "hardworq_codigo": "USP2023R1-2",
+      "prova_id": 2610,
+      "prova_codigo": "USP2023R1",
+      "estado": "SP",
+      "grupo": "R1",
+      "professor_comment": "Neste caso, é importante escolher um esquema de antibioticoterapia que seja eficaz contra bactérias gram-negativas, gram-positivas e anaeróbias, que são comumente encontradas em infecções intra-abdominais, e que ainda é capaz de atingir germes nosocomiais. A piperacilina-tazobactan é uma combinação de antibiótico beta-lactâmico e inibidor de beta-lactamase que possui atividade contra uma ampla gama de bactérias gram-positivas, gram-negativas e anaeróbias, incluindo bactérias resistentes (hospitalares) que não são cobertas por ceftriaxone + metronidazol (lembre que a paciente já está internada há vários dias e por isso pode ter este tipo de bactéria).\n\nEm geral, considerando peritonites secundárias, a duração ideal da antibioticoterapia deve ser individualizada e depende da doença subjacente, gravidade da infecção, velocidade e eficácia do controle do foco e resposta do paciente à terapia. Na peritonite não complicada, na qual há controle precoce e adequado do foco, que parece ser o caso aqui, um curso de 5 a 7 dias de antibioticoterapia é adequado na maioria dos casos. Nos casos em que a terapia inicial é inadequada, ou em que a intervenção é muito tardia, há piores resultados; nestes casos, a terapia antimicrobiana deve continuar até que os sinais de infecção (por exemplo, febre, taquicardia, leucocitose) tenham desaparecido.",
+      "scraped_at": "2025-11-06T00:12:47.762Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-283992",
+    "statement": "Mulher, 63 anos de idade, refere dor abdominal de forte intensidade, difusa e de início súbito há 2 horas. Nega vômitos. Última evacuação há 1 dia. Tem artrite reumatoide. Faz uso de um imunossupressor e corticoide. Na última semana, tomou cetoprofeno devido à dor nas mãos. Ao exame clínico, encontra-se em regular estado geral; FC 110 bpm; PA 100x60 mmHg; abdome plano, doloroso à palpação; e sinal de irritação peritoneal difusa. Exames laboratoriais: Hb 11,9 g/dL; Ht 32%; leucócitos 18.318/mm3; PCR 84 mg/L; amilase 251 U/L; lipase 101 U/L. Foi realizada tomografia de abdome. \nAssinale a alternativa que contém imagens que correspondem à principal hipótese diagnóstica?\n\n<img src=\"/api/temp-images/img-cf3135d6a965e519e3e0d5141e57b00b.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-283992-alt-0",
+        "text": "Ver imagens.",
+        "isCorrect": true,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283992-alt-1",
+        "text": "Ver imagens.",
+        "isCorrect": false,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283992-alt-2",
+        "text": "Ver imagens.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283992-alt-3",
+        "text": "Ver imagens.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-283992-alt-0",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "USP2023R1",
+      "USP",
+      "R1",
+      "SP",
+      "2023"
+    ],
+    "source": "USP",
+    "year": 2023,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-06T00:12:47.762Z",
+    "updated_at": "2025-11-06T00:12:47.762Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-cf3135d6a965e519e3e0d5141e57b00b.png"
+    ],
+    "metadata": {
+      "hardworq_id": 283992,
+      "hardworq_codigo": "USP2023R1-3",
+      "prova_id": 2610,
+      "prova_codigo": "USP2023R1",
+      "estado": "SP",
+      "grupo": "R1",
+      "professor_comment": "A questão nos mostra uma paciente com abdome agudo súbito, idosa, com história de artrite reumatoide e uso de cetoprofeno. Além disso, exame fisico mostrou irritação peritoneal difusa e exames laboratoriais com leucocitose e pcr elevado.\n\nDiante desse contexto nossa principal hipótese diagnóstica é úlcera péptica perfurada, nesse contexto o primeiro exame de imagem a ser realizado poderia ser radiografia de abdome agudo, onde seria possível visualizar o pneumoperitônio. A realização de tomografia não está incorreta e foi solicitada de cara no caso acima.\n\nVamos avaliar então cada alternativa:\n\nA) Os cortes axial e coronal da tomografia nos mostram pneumoperitônio. Achado compatível com o quadro clínico\n\nB) Apêndice cecal na fossa ilíaca direita com calibre aumentado com espessamento e hiperrealce parietais. Aqui vimos um quadro de apendicite aguda\n\nC) Distensão de alças intestinais com ponto de transição abrupto no flanco direito. Imagem compativel com abdome agudo obstrutivo\n\nD) Vesícula bilar distendida com paredes espessadas e com hiperrealce, alem de calculos no interior. Imagem de um quadro sugestivo de colecistite aguda\n\nPortanto, alternativa correta letra A",
+      "scraped_at": "2025-11-06T00:12:47.762Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-283993",
+    "statement": "Homem, 23 anos de idade, refere dor na região perianal há 3 dias com piora progressiva e exacerbação ao sentar e evacuar. Relata febre há 12 horas. Teve a última evacuação há 2 dias e tem hábito intestinal diário normal. Sem queixas urinárias. Nega comorbidades. Tem vida sexual ativa com relação anal, sem parceiro fixo. Ao exame clínico, encontra-se em bom estado geral; abdome sem alterações. Inspeção anal com abaulamento em posição equivalente a \"3 horas\", dor à palpação local e saída de secreção purulenta em pequena quantidade, em posição equivalente a \"7 horas\", em orifício fistuloso (imagem a seguir). Toque retal muito doloroso, sem sangue ou lesão tumoral. Exames laboratorias Hb de 13,5 g/dL; Leucograma 16.274 mm3; PCR 129 mg/L. Realizada tomografia de pelve (imagens a seguir) \nQual é a etiologia mais comum desta doença?\n\n<img src=\"/api/temp-images/img-d3d87c6ea33d0f9ea57dfe92f6fedbfd.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-283993-alt-0",
+        "text": "Doença de Crohn.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283993-alt-1",
+        "text": "Inflamação das glândulas do canal anal.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283993-alt-2",
+        "text": "Retocolite ulcerativa.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283993-alt-3",
+        "text": "Infecção sexualmente transmissível.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-283993-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "USP2023R1",
+      "USP",
+      "R1",
+      "SP",
+      "2023"
+    ],
+    "source": "USP",
+    "year": 2023,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-06T00:12:47.762Z",
+    "updated_at": "2025-11-06T00:12:47.762Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-d3d87c6ea33d0f9ea57dfe92f6fedbfd.png"
+    ],
+    "metadata": {
+      "hardworq_id": 283993,
+      "hardworq_codigo": "USP2023R1-4",
+      "prova_id": 2610,
+      "prova_codigo": "USP2023R1",
+      "estado": "SP",
+      "grupo": "R1",
+      "professor_comment": "O quadro clínico, o exame físico e a imagem tomográfica descrevem um quadro de abscesso perianal ou abscesso criptoglandular que geralmente resultam de infecção das glândulas anais localizadas no nível da linha dentada e são atribuídas à obstrução do ducto de drenagem por detritos fecais. Aproximadamente 10% dos casos ocorrem por outras etiologias, como doença de Crohn, trauma, HIV, DSTs, radioterapia ou corpo estranho. Opção correta letra B.",
+      "scraped_at": "2025-11-06T00:12:47.762Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  },
+  {
+    "id": "hardworq-283994",
+    "statement": "Homem, 19 anos de idade, procurou o Serviço de Emergência devido à dor abdominal há 1 dia. Não apresenta comorbidades. O paciente foi submetido a tratamento operatório com os achados apresentados. \nO procedimento evoluiu sem intercorrências. Qual deve ser a dieta no primeiro pós-operatório e quando deve receber alta hospitalar?\n\n<img src=\"/api/temp-images/img-1ced6fd35f3f064321c8b79f912904cd.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\" />",
+    "alternatives": [
+      {
+        "id": "hardworq-283994-alt-0",
+        "text": "dieta leve; terceiro pós-operatório.",
+        "isCorrect": false,
+        "order": 0,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283994-alt-1",
+        "text": "dieta leve; primeiro pós-operatório.",
+        "isCorrect": true,
+        "order": 1,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283994-alt-2",
+        "text": "jejum; primeiro pós-operatório.",
+        "isCorrect": false,
+        "order": 2,
+        "explanation": null
+      },
+      {
+        "id": "hardworq-283994-alt-3",
+        "text": "jejum; terceiro pós-operatório.",
+        "isCorrect": false,
+        "order": 3,
+        "explanation": null
+      }
+    ],
+    "correct_alternative_id": "hardworq-283994-alt-1",
+    "explanation": null,
+    "difficulty": "MEDIUM",
+    "difficulty_level": 3,
+    "filter_ids": [],
+    "sub_filter_ids": [],
+    "tags": [
+      "USP2023R1",
+      "USP",
+      "R1",
+      "SP",
+      "2023"
+    ],
+    "source": "USP",
+    "year": 2023,
+    "status": "DRAFT",
+    "is_annulled": false,
+    "is_active": false,
+    "review_count": 0,
+    "average_rating": 0,
+    "rating": 0,
+    "created_by": "scraper-hardworq",
+    "created_at": "2025-11-06T00:12:47.762Z",
+    "updated_at": "2025-11-06T00:12:47.762Z",
+    "image_urls": [
+      "C:\\MEDBRAVE.APP\\MEDBRAVE.APP\\BACKEND\\output\\scraped\\images\\img-1ced6fd35f3f064321c8b79f912904cd.png"
+    ],
+    "metadata": {
+      "hardworq_id": 283994,
+      "hardworq_codigo": "USP2023R1-5",
+      "prova_id": 2610,
+      "prova_codigo": "USP2023R1",
+      "estado": "SP",
+      "grupo": "R1",
+      "professor_comment": "Estamos diante de um paciente jovem com dor abdominal há 1 dia. A questão não nos da maiores informações , mas mostra duas fotos do intraoperatório. Para acertar a questão deveríamos identificar que estamos em uma apendicectomia videolaparoscópica de uma apendicite fase II/III. Agora, a questão deseja saber qual deve ser a dieta no primeiro pós-operatório e quando deve receber alta hospitalar.\n\nEm relação a dieta, temos que levar em consideração o protocolo ERAS/ACERTO, baseado em evidências para reduzir o trauma cirúrgico e o estresse pós operatório. Em relação à realimentação precoce no pós-operatório, o projeto ERAS preconiza que em cirurgias não complicadas, oferecer dieta oral líquida no mesmo dia da operação, o mais rápido possível, dependendo da tolerância.\n\nAlém disso, o enunciado fala que a cirurgia ocorreu sem complicações e foi uma cirurgia minimamente invasica, em um paciente jovem, hígido. Por isso, não há necessidade de mantermos uma internação prolongada e estamos autorizados a dar alta hospitalar já no primeiro dia de pós-operatório.\n\nResposta letra B",
+      "scraped_at": "2025-11-06T00:12:47.762Z",
+      "scraper_version": "1.0.0",
+      "scraper_source": "hardworq"
+    }
+  }
+]

@@ -2,7 +2,12 @@
 // Baseado no projeto original e documentação
 
 export type MediaType = 'image' | 'video' | 'audio' | 'document' | 'other';
-export type MediaStatus = 'pending' | 'processing' | 'active' | 'inactive' | 'deleted';
+export type MediaStatus =
+  | 'pending'
+  | 'processing'
+  | 'active'
+  | 'inactive'
+  | 'deleted';
 
 export interface MediaFile {
   id: string;

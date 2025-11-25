@@ -1,12 +1,11 @@
-import { Firestore } from 'firebase-admin/firestore';
 import {
-  FirebaseMentorProfileService,
-  FirebaseMentorshipService,
-  FirebaseMentorshipMeetingService,
-  FirebaseMentorshipObjectiveService,
-  FirebaseMentorshipFeedbackService,
-  FirebaseMentorshipResourceService,
-  FirebaseMentorshipSimulatedExamService,
+  SupabaseMentorProfileService,
+  SupabaseMentorshipService,
+  SupabaseMentorshipMeetingService,
+  SupabaseMentorshipObjectiveService,
+  SupabaseMentorshipFeedbackService,
+  SupabaseMentorshipResourceService,
+  SupabaseMentorshipSimulatedExamService,
 } from '../services';
 import {
   IMentorProfileService,
@@ -30,32 +29,16 @@ export class MentorshipServiceFactory {
   private mentorshipResourceService: IMentorshipResourceService;
   private mentorshipSimulatedExamService: IMentorshipSimulatedExamService;
 
-  constructor(db: Firestore) {
-    // Instanciar serviços na ordem correta de dependência
-    this.mentorProfileService = new FirebaseMentorProfileService(db);
-    this.mentorshipService = new FirebaseMentorshipService(db);
-
-    // Serviços que dependem do mentorshipService
-    this.mentorshipMeetingService = new FirebaseMentorshipMeetingService(
-      db,
-      this.mentorshipService,
-    );
-    this.mentorshipObjectiveService = new FirebaseMentorshipObjectiveService(
-      db,
-      this.mentorshipService,
-    );
-    this.mentorshipFeedbackService = new FirebaseMentorshipFeedbackService(
-      db,
-      this.mentorshipService,
-    );
-    this.mentorshipResourceService = new FirebaseMentorshipResourceService(
-      db,
-      this.mentorshipService,
-    );
-    this.mentorshipSimulatedExamService = new FirebaseMentorshipSimulatedExamService(
-      db,
-      this.mentorshipService,
-    );
+  constructor() {
+    // Instanciar serviços Supabase
+    this.mentorProfileService = new SupabaseMentorProfileService();
+    this.mentorshipService = new SupabaseMentorshipService();
+    this.mentorshipMeetingService = new SupabaseMentorshipMeetingService();
+    this.mentorshipObjectiveService = new SupabaseMentorshipObjectiveService();
+    this.mentorshipFeedbackService = new SupabaseMentorshipFeedbackService();
+    this.mentorshipResourceService = new SupabaseMentorshipResourceService();
+    this.mentorshipSimulatedExamService =
+      new SupabaseMentorshipSimulatedExamService();
   }
 
   /**

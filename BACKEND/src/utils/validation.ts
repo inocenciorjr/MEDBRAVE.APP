@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import * as Joi from 'joi';
 
 /**
  * Valida dados com base em um esquema Joi
@@ -23,7 +23,7 @@ export const validateSchema = <T>(
   if (validation.error) {
     const errorDetails: Record<string, string> = {};
 
-    validation.error.details.forEach(detail => {
+    validation.error.details.forEach((detail) => {
       const path = detail.path.join('.');
       errorDetails[path] = detail.message;
     });

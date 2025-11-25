@@ -1,30 +1,72 @@
 import { Router } from 'express';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
-import { adminMiddleware } from '../../auth/middleware/admin.middleware';
 import { FilterController } from '../controllers/FilterController';
 import { SubFilterController } from '../controllers/SubFilterController';
-import { validateCreateFilter, validateUpdateFilter, validateCreateSubFilter, validateUpdateSubFilter } from '../validators/filterValidators';
+import {
+  validateCreateFilter,
+  validateUpdateFilter,
+  validateCreateSubFilter,
+  validateUpdateSubFilter,
+} from '../validators/filterValidators';
 
 export function createFilterRoutes(
   filterController: FilterController,
-  subFilterController: SubFilterController
+  subFilterController: SubFilterController,
 ): Router {
   const router = Router();
-  
-  // Rotas públicas (sem autenticação)
+
+  // NÃO aplicar middlewares aqui - eles já são aplicados no nível /admin
+  // router.use(authMiddleware);
+  // router.use(adminMiddleware);
+
+  // Rotas de filtros
   router.get('/', filterController.list.bind(filterController));
   router.get('/:id', filterController.getById.bind(filterController));
-  router.get('/:filterId/subfilters', subFilterController.listByFilterId.bind(subFilterController));
-  router.get('/subfilters/:id', subFilterController.getById.bind(subFilterController));
-  router.get('/subfilters/:id/category', subFilterController.getParentFilterCategory.bind(subFilterController));
-  
-  // Rotas administrativas (com autenticação)
-  router.post('/', authMiddleware, adminMiddleware, validateCreateFilter, filterController.create.bind(filterController));
-  router.put('/:id', authMiddleware, adminMiddleware, validateUpdateFilter, filterController.update.bind(filterController));
-  router.delete('/:id', authMiddleware, adminMiddleware, filterController.delete.bind(filterController));
-  router.post('/:filterId/subfilters', authMiddleware, adminMiddleware, validateCreateSubFilter, subFilterController.create.bind(subFilterController));
-  router.put('/subfilters/:id', authMiddleware, adminMiddleware, validateUpdateSubFilter, subFilterController.update.bind(subFilterController));
-  router.delete('/subfilters/:id', authMiddleware, adminMiddleware, subFilterController.delete.bind(subFilterController));
-  
+  router.post(
+    '/',
+    validateCreateFilter,
+    filterController.create.bind(filterController),
+  );
+  router.put(
+    '/:id',
+    validateUpdateFilter,
+    filterController.update.bind(filterController),
+  );
+  router.delete(
+    '/:id',
+    filterController.delete.bind(filterController),
+  );
+
+  // Rotas de subfiltros
+  router.get(
+    '/subfilters/all',
+    subFilterController.listAll.bind(subFilterController),
+  );
+  router.get(
+    '/:filterId/subfilters',
+    subFilterController.listByFilterId.bind(subFilterController),
+  );
+  router.get(
+    '/subfilters/:id',
+    subFilterController.getById.bind(subFilterController),
+  );
+  router.get(
+    '/subfilters/:id/category',
+    subFilterController.getParentFilterCategory.bind(subFilterController),
+  );
+  router.post(
+    '/:filter_id/subfilters',
+    validateCreateSubFilter,
+    subFilterController.create.bind(subFilterController),
+  );
+  router.put(
+    '/subfilters/:id',
+    validateUpdateSubFilter,
+    subFilterController.update.bind(subFilterController),
+  );
+  router.delete(
+    '/subfilters/:id',
+    subFilterController.delete.bind(subFilterController),
+  );
+
   return router;
 }

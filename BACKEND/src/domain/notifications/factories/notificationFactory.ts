@@ -6,8 +6,10 @@ import { NotificationController } from '../controllers/NotificationController';
 import { NotificationPreferencesController } from '../controllers/NotificationPreferencesController';
 
 // Services
-import { FirebaseNotificationService } from '../services/FirebaseNotificationService';
-import { FirebasePaymentNotificationService } from '../services/FirebasePaymentNotificationService';
+import {
+  SupabaseNotificationService,
+  SupabasePaymentNotificationService,
+} from '../services';
 
 // Use cases
 import { CreateNotificationUseCase } from '../use-cases/CreateNotificationUseCase';
@@ -17,8 +19,10 @@ import { UpdateNotificationPreferencesUseCase } from '../use-cases/UpdateNotific
 import { GetNotificationPreferencesUseCase } from '../use-cases/GetNotificationPreferencesUseCase';
 
 // Repositories
-import { FirebaseNotificationRepository } from '../repositories/FirebaseNotificationRepository';
-import { FirebaseNotificationPreferencesRepository } from '../repositories/FirebaseNotificationPreferencesRepository';
+import {
+  SupabaseNotificationRepository,
+  SupabaseNotificationPreferencesRepository,
+} from '../repositories';
 
 // Types e interfaces
 import { INotificationRepository } from '../interfaces/INotificationRepository';
@@ -30,21 +34,21 @@ import { IPaymentNotificationService } from '../interfaces/IPaymentNotificationS
  * Cria e configura o módulo de notificações
  * @returns Objeto com as rotas e serviços de notificações
  */
-export const createNotificationModule = () => {
+function createNotificationModule() {
   // Registrar dependências no container
   container.registerSingleton<INotificationRepository>(
     'NotificationRepository',
-    FirebaseNotificationRepository,
+    SupabaseNotificationRepository,
   );
 
   container.registerSingleton<INotificationPreferencesRepository>(
     'NotificationPreferencesRepository',
-    FirebaseNotificationPreferencesRepository,
+    SupabaseNotificationPreferencesRepository,
   );
 
   container.registerSingleton<INotificationService>(
     'NotificationService',
-    FirebaseNotificationService,
+    SupabaseNotificationService,
   );
 
   // Registrar PaymentNotificationService depois do NotificationService
@@ -52,10 +56,12 @@ export const createNotificationModule = () => {
     'PaymentNotificationService',
     {
       useFactory: (container) => {
-        const notificationService = container.resolve<INotificationService>('NotificationService');
-        return new FirebasePaymentNotificationService(notificationService);
-      }
-    }
+        const notificationService = container.resolve<INotificationService>(
+          'NotificationService',
+        );
+        return new SupabasePaymentNotificationService(notificationService);
+      },
+    },
   );
 
   // Registrar casos de uso
@@ -84,9 +90,11 @@ export const createNotificationModule = () => {
     GetNotificationPreferencesUseCase,
   );
 
-  // Criar controllers
+  // Criar controllers – garantir que todas as dependências já estão registradas
   const notificationController = container.resolve(NotificationController);
-  const preferencesController = container.resolve(NotificationPreferencesController);
+  const preferencesController = container.resolve(
+    NotificationPreferencesController,
+  );
 
   // Configurar rotas
   const router = Router();
@@ -102,9 +110,13 @@ export const createNotificationModule = () => {
 
   return {
     notificationRoutes: router,
-    notificationService: container.resolve<INotificationService>('NotificationService'),
+    notificationService: container.resolve<INotificationService>(
+      'NotificationService',
+    ),
     paymentNotificationService: container.resolve<IPaymentNotificationService>(
       'PaymentNotificationService',
     ),
   };
 };
+
+module.exports = { createNotificationModule };

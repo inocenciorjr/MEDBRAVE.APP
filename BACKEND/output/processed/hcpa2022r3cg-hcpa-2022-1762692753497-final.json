@@ -1,0 +1,1662 @@
+{
+  "metadata": {
+    "examName": "HCPA2022R3CG (HCPA 2022)",
+    "examYear": 2022,
+    "url": "source://553",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T12:52:33.497Z",
+    "jobId": "batch-1762686305829-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "2a368aa3-22fd-4d0c-a3b0-b16626d042b6"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Paciente de 76 anos, com hipertensão arterial e fibrilação atrial, em uso de anticoagulante oral, é candidata à cirurgia de catarata. Na consulta, referiu episódio de acidente vascular cerebral isquêmico transitório há 2 anos, pelo que vinha fazendo uso de atenolol, losartana e varfarina. Ao exame, a pressão arterial era de 140/90 mmHg, a frequência cardíaca de 58 bpm e o ritmo irregular. Assintomática, apresentava boa capacidade funcional. Os exames pré-operatórios incluíram hemograma completo, perfil de coagulação (INR de 2,2) e eletrocardiograma mostrando fibrilação atrial e frequência cardíaca de 56 bpm. Diante desse quadro, qual das condutas abaixo é a mais adequada?",
+      "alternativas": [
+        "Suspender a varfarina 5 dias antes da cirurgia, sem necessidade de ponte com heparina.",
+        "Suspender a cirurgia e solicitar cintilografia miocárdica.",
+        "Solicitar ecocardiografia para avaliação cardiológica complementar.",
+        "Liberar a paciente para cirurgia na vigência da anticoagulação oral, devido ao baixo risco de sangramento."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCPA aborda um tema fundamental na medicina perioperatória: o manejo de pacientes anticoagulados em cirurgias de baixo risco de sangramento. A competência avaliada é a capacidade de aplicar diretrizes atuais de manejo de anticoagulação oral em procedimentos cirúrgicos.</p><p><strong>A resposta correta é D - liberar a paciente para cirurgia na vigência da anticoagulação oral, devido ao baixo risco de sangramento.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Suspender varfarina sem ponte com heparina em paciente com histórico de AVC isquêmico e fibrilação atrial é extremamente arriscado. A suspensiona sem proteção pode expor a paciente ao risco tromboembólico durante o período de hipocoagulação.</p><p><strong>B) INCORRETA:</strong> A cintilografia miocárdica não é indicada para este caso. A paciente é assintomática, com boa capacidade funcional, e o único dado relevante é a FA crônica controlada. Não há indicação para investigação cardiológica adicional.</p><p><strong>C) INCORRETA:</strong> A ecocardiografia não é necessária. A paciente tem FA crônica com frequência controlada, assintomática, sem sinais de insuficiência cardíaca. A ecocardiografia não influenciará a conduta perioperatória em cirurgia de catarata.</p><p><strong>D) CORRETA:</strong> Cirurgia de catarata é classificada como procedimento de baixo risco de sangramento. Segundo diretrizes atuais do ACCP (American College of Chest Physicians) e sociedades brasileiras de anestesiologia, procedimentos oftalmológicos de superfície (catarata) podem ser realizados com anticoagulação oral mantida, desde que o INR esteja em faixa terapêutica (2,0-3,0 para FA). O risco de sangramento intraocular é mínimo e não justifica interrupção do anticoagulante.</p><p><strong>Raciocínio clínico:</strong> A decisão baseia-se na classificação do risco cirúrgico. Catarata é procedimento de baixo risco, realizado com anestesia local/topical, com mínima penetração tecidual. O benefício de manter anticoagulação (prevenção de AVC) supera o risco teórico de sangramento ocular. O INR de 2,2 está em faixa adequada para a cirurgia.</p><p><strong>Veredito final:</strong> A alternativa D é a única que respeita as evidências científicas e diretrizes atuais para manejo perioperatório de pacientes anticoagulados em cirurgias de baixo risco hemorrágico.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_ManejoPerioperatorioDoPaciente",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Assinale a assertiva correta sobre o uso de anti-inflamatórios não esteroidais no perioperatório",
+      "alternativas": [
+        "Os inibidores seletivos da COX-2 não são nefrotóxicos.",
+        "Esses fármacos apresentam efeito poupador de opioide embora não sejam capazes de reduzir eventos colaterais, como náuseas e vômitos.",
+        "Todos os anti-inflamatórios podem aumentar o risco de infarto e de acidente vascular encefálico.",
+        "Não há necessidade de interrupção desses fármacos por pacientes que fazem uso regular deles."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre pharmacology e clínica dos anti-inflamatórios não esteroidais (AINEs) no contexto perioperatório. A banca busca testar compreensão sobre efeitos adversos, indicações e contraindicações destes medicamentos.</p><p><strong>A resposta correta deve ser analisada com cuidado, pois múltiplas alternativas têm elementos corretos e incorretos.</strong></p><p><strong>Análise detalhada das alternativas:</strong></p><p><strong>A) PARCIALMENTE CORRETA:</strong> Os inibidores seletivos da COX-2 (como celecoxibe) têm menor toxicidade renal comparados aos AINEs não seletivos, mas ainda podem causar nefrotoxicidade, especialmente em pacientes com comprometimento renal preexistente, desidratação ou uso concomitante de medicamentos nefrotóxicos.</p><p><strong>B) INCORRETA:</strong> A afirmação é contraditória. AINEs realmente apresentam efeito poupador de opioide, reduzindo necessidade de analgésicos opioides. Contudo, eles reduzem significantemente eventos adversos como náuseas e vômitos associados aos opioides. O texto afirma incorretamente que 'não são capazes de reduzir' esses eventos.</p><p><strong>C) PARCIALMENTE CORRETA:</strong> Estudos mostram que AINEs aumentam risco cardiovascular, especialmente em pacientes com fatores de risco preexistentes. Entretanto, a generalização 'todos os anti-inflamatórios' é excessiva, pois o risco varia entre diferentes classes e doses.</p><p><strong>D) INCORRETA:</strong> Esta é claramente falsa. Pacientes em uso regular de AINEs devem interromper a medicação antes de cirurgias, especialmente procedimentos com risco de sangramento. A suspensão deve ser feita conforme half-life do fármaco (5-7 dias para maioria dos AINEs).</p><p><strong>Raciocínio clínico:</strong> A resposta mais apropriada seria a alternativa A, considerando que os seletivos da COX-2 têm menor toxicidade renal comparada aos não seletivos, embora não sejam completamente isentos de risco. As outras alternativas contêm afirmações incorretas ou contraditórias.</p><p><strong>Veredito final:</strong> Após análise criteriosa, a alternativa A é a menos incorreta, ainda que não seja totalmente precisa. Esta é uma questão que exemplifica a importância de ler cuidadosamente cada afirmação em provas de residência.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Assinale a assertiva correta sobre intoxicação por anestésico local.",
+      "alternativas": [
+        "A mesma quantidade de anestésico local administrada no bloqueio intercostal apresenta maior pico plasmático do que a administrada no epidural.",
+        "A toxicidade sistêmica relaciona-se diretamente com a concentração e a velocidade de injeção do anestésico local, mas independe da dose administrada.",
+        "A toxicidade cardiovascular ocorre em concentrações plasmáticas menores do que as necessárias para a toxicidade do sistema nervoso central.",
+        "O principal mecanismo de ação da cardiotoxicidade dos anestésicos locais é o bloqueio dos canais de cálcio cardíacos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa conhecimento fundamental sobre farmacologia e toxicologia de anestésicos locais. A banca avalia compreensão sobre fatores que influenciam a toxicidade sistêmica, mecanismos de ação e características farmacocinéticas destes medicamentos.</p><p><strong>A resposta correta é A - A mesma quantidade de anestésico local administrada no bloqueio intercostal apresenta maior pico plasmático do que a administrada no epidural.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> Esta é a única afirmação inteiramente correta. O bloqueio intercostal (anestesia para procedimientos torácicos) permite absorção mais rápida pela rica vascularização pulmonar, resultando em pico plasmático mais elevado. O espaço epidural possui veias menos numerosas, resultando em absorção mais lenta e picos plasmáticos menores.</p><p><strong>B) INCORRETA:</strong> A toxicidade sistêmica depende DIRETAMENTE da dose total administrada. Concentração, velocidade de injeção E dose são fatores determinantes. A afirmação de que 'independe da dose' está cientificamente incorreta.</p><p><strong>C) INCORRETA:</strong> A toxicidade do sistema nervoso central (SNC) ocorre em concentrações plasmáticas menores que a cardiovascular. Os primeiros sinais de toxicidade são neurológicos (dormência peribucal, gosto metálico, tinido), seguidos de sintomas cardiovasculares em concentrações mais altas.</p><p><strong>D) INCORRETA:</strong> O principal mecanismo de cardiotoxicidade é o BLOQUEIO DOS CANAIS DE SÓDIO cardíacos, não de cálcio. O bloqueio de canais de cálcio pode ocorrer, mas não é o mecanismo primário da cardiotoxicidade dos anestésicos locais.</p><p><strong>Raciocínio farmacológico:</strong> A toxicidade depende de múltiplos fatores: dose total, concentração da solução, velocidade de injeção, vascularização do local de aplicação, e protein binding do fármaco. Locais mais vascularizados (como região intercostal) promovem absorção mais rápida e picos plasmáticos mais altos.</p><p><strong>Veredito final:</strong> A alternativa A é a única fisiologicamente correta, baseada em princípios farmacológicos bem estabelecidos sobre a velocidade de absorção sistêmica de anestésicos locais.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AnestesicosLocais"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "<html><head></head><body>Paciente de 39 anos foi internada para tratamento de complicações relacionadas a um linfoma. No prontuário, havia registro do peso da paciente (60 kg), da prescrição de soro fisiológico intravenoso a 0,9% (30 ml/hora) e fluconazol para tratamento de candidíase\nsistêmica, além de um episódio de vômitos e câimbras no dia de hoje. Fez uso de filgrastima recentemente após o nadir da quimioterapia. Considerando o caso e os resultados dos exames abaixo, qual a principal causa para a hipopotassemia?\n\n<img src=\"https://medbrave.com.br/questions/hcpa-2022-r3/qQ4.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Hiper-hidratação e diurese excessiva.",
+        "Recuperação medular.",
+        "Uso de fluconazol.",
+        "Perda de secreções pelo trato gastrointestinal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda elektrolitic disorders em paciente oncológica, avaliando capacidade de interpretação de exames laboratoriais e correlação clínica. A banca testa conhecimento sobre hipopotassemia em contexto de tratamentos oncológicos e suas múltiplas etiologias.</p><p><strong>A resposta correta é B - Recuperação medular.</strong></p><p><strong>Análise das alternativas e exames laboratoriais:</strong></p><p>Antes de analisar as alternativas, vejamos os dados: <strong>Potássio: 2,9 mEq/L (reduzido)</strong>. Outros eletrólitos citados incluem hipomagnesemia e hipofosfatemia.</p><p><strong>A) INCORRETA:</strong> A hidratação foi mínima (30 ml/h de soro fisiológico) e não caracterizou hiper-hidratação. A diurese excessiva não foi documentada. O volume de soro administrado é insuficiente para causar sobrecarga hídrica.</p><p><strong>B) CORRETA:</strong> A recuperação medular pós-quimioterapia com uso de filgrastima é a causa mais provável. Após nadir da quimioterapia, a reposição com fatores de crescimento estimula proliferation celular massiva, consumindo grandes quantidades de potássio, fósforo e magnésio intracelular. Esta 'fome' de eletrólitos é conhecida como 'refeeding syndrome' de recuperação medular.</p><p><strong>C) INCORRETA:</strong> Fluconazol pode causar hipopotassemia, mas é incomum como efeito isolado. O fluconazol raramente é a causa primária de hipopotassemia significativa. A gravidade da hipopotassemia sugere etiologia mais robusta.</p><p><strong>D) INCORRETA:</strong>虽然 vômitos podem causar perda de potássio, são descrita como 'episódio' (singular) hoje, não um quadro arrastado. A gravidade da hipopotassemia sugere causa mais significativa que episódios isolados de vômitos.</p><p><strong>Raciocínio clínico:</strong> O contexto é fundamental: paciente jovem com linfoma, pós-quimioterapia, em recuperação medular com filgrastima. A triade hipopotassemia + hipomagnesemia + hipofosfatemia é clássica de 'síndrome de reconstituição medular', onde proliferation celular consome eletrólitos intracelularmente.</p><p><strong>Veredito final:</strong> A alternativa B é a mais fisiologicamente plausível, considerando o timing pós-quimioterapia e uso de filgrastima para recuperação medular.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoPotassio"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente masculino, de 35 anos, com leucemia mieloide aguda com indicação de transplante alogênico de medula óssea, necessita de um cateter para o procedimento terapêutico. Qual dos cateteres abaixo é o mais indicado?",
+      "alternativas": [
+        "Cateter não tunelizado de 2 vias.",
+        "Cateter semi-implantável de 3 vias.",
+        "Cateter totalmente implantável.",
+        "Cateter venoso central de inserção periférica (PICC)."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCPA avalia conhecimento sobre dispositivos vasculares em transplantologia, especificamente a escolha do cateter mais adequado para transplante alogênico de medula óssea. A competência testada é a aplicação de protocolos de acesso vascular em procedimentos de alta complexidade.</p><p><strong>A resposta correta é B - Cateter semi-implantável de 3 vias.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA:</strong> Cateteres não tunelizados de 2 vias são inadequados para transplante. Possuem maior risco de infecção (cerca de 15-20% em 30 dias), maior risco de deslocamento e duração limitada (2-4 semanas). Transplante requer acesso vascular por 4-6 semanas ou mais.</p><p><strong>B) CORRETA:</strong> O cateter semi-implantável de 3 vias é o padrão ouro para transplante alogênico. Combina as vantagens: tunelização (reduz risco de infecção), múltiplas vias (permite infusão simultânea de medicamentos, coleta de sangue, nutrição parenteral), e possibilidade de manutenção prolongada (até 6 meses).</p><p><strong>C) INCORRETA:</strong> Cateteres totalmente implantáveis ('port') são inadequados para transplante. Although reduzem infecção, possuem limitação de fluxo (não suportam altas vazões necessárias para coleta de stem cells) e são difíceis de manipular durante o procedimento de transplante.</p><p><strong>D) INCORRETA:</strong> PICC (cateter periférico) é inadequado para transplante. Possui calibre pequeno, não suporta altas vazões, maior risco de trombose e duracão limitada. A coleta de stem cells e infusões de altas doses requer acesso de grosso calibre.</p><p><strong>Raciocínio clínico:</strong> O transplante alogênico requer: (1) acesso vascular prolongado (4-6 semanas mínimo), (2) múltiplas vias para infusão simultânea (quimioterapia, suporte, medicamentos), (3) baixas taxas de infecção, (4) capacidade de suportar altas vazões para coleta de células-tronco. O cateter semi-implantável de 3 vias atende todos esses critérios.</p><p><strong>Veredito final:</strong> A alternativa B é a única que atende aos requisitos técnicos e de segurança para transplante alogênico de medula óssea, conforme protocolos internacionais e brasileiros de transplantação.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Assinale a alternativa que contempla uma recomendação compartilhada por todas as diretrizes (guidelines) das principais sociedades de especialidades médicas sobre a doença carotídea extracraniana.",
+      "alternativas": [
+        "Para pacientes com estenose < 50%, tratamento clínico está indicado.",
+        "Para pacientes sintomáticos com estenose > 50%, angioplastia com stent é o método de escolha.",
+        "Para pacientes sintomáticos com estenose > 50%, tratamento intervencionista deve ser realizado após 2 semanas do evento agudo devido ao risco de hemorragia intracraniana.",
+        "Para pacientes sintomáticos com oclusão da artéria carótida interna, endarterectomia de carótida é o tratamento de escolha."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do HCPA avalia o conhecimento sobre diretrizes consensus das principais sociedades médicas para o tratamento da doença carotídea extracraniana, especialmente endarterectomia carotídea e manejo clínico.</p><p><strong>A resposta correta é A - Para pacientes com estenose < 50%, tratamento clínico está indicado.</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Esta é realmente uma recomendação universal entre todas as diretrizes (AHA/ASA, ESC, SBACV). Para estenoses < 50%, a endarterectomia não oferece benefício comprovado e o risco cirúrgico supera os ganhos. O tratamento clínico otimizado com antiagregantes, controle pressórico e estatinas é o padrão ouro.</p><p><strong>Alternativa B (INCORRETA):</strong> Angioplastia com stent NÃO é o método de escolha para sintomáticos com estenose > 50%. As diretrizes atuais favorecem a endarterectomia como gold standard, reservando stent para casos de alto risco cirúrgico ou anatomia desfavorável.</p><p><strong>Alternativa C (INCORRETA):</strong> O tempo ideal para intervenção em sintomáticos é controverso, mas as diretrizes RECOMENDAM intervenção urgente (24-48h) quando possível, não tardia. O risco de hemorragia intracraniana não justifica postergar 2 semanas - pelo contrário, o benefício da endarterectomia diminui significativamente após 2 semanas.</p><p><strong>Alternativa D (INCORRETA):</strong> Em oclusão completa da carótida interna, a endarterectomia não é recomendada. O consenso atual é tratamento clínico otimizado, já que a recanalização em oclusão crônica tem alta taxa de complicações sem benefício comprovado.</p><p><strong>Veredito:</strong> A alternativa A reflete a única recomendação verdadeiramente compartilhada por todas as diretrizes, sendo fundamental para a prática clínica adequada.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_TratamentoEndovascular"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341043-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Paciente de 60 anos, com história de hipertensão arterial sistêmica, dislipidemia e tabagismo, foi encaminhada para avaliação vascular por ter sido constatado fluxo reverso na artéria vertebral esquerda em eco-Doppler de carótidas e vertebrais realizado durante check-up de rotina. Diante desse quadro, a conduta mais indicada é realizar",
+      "alternativas": [
+        "otimização do tratamento clínico com controle dos fatores de risco.",
+        "angioplastia e implante de stent na artéria vertebral esquerda pelo risco de acidente vascular cerebral posterior por baixo fluxo.",
+        "by-pass carotídeo-subclávio pelo risco potencial de isquemia do membro superior esquerdo.",
+        "angiotomografia computadorizada de tórax para planejamento da intervenção terapêutica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda a interpretação de achados em eco-Doppler vascular e a conduta frente ao fluxo reverso na artéria vertebral, tema frequentemente negligenciado mas crucial na prática vascular.</p><p><strong>A resposta correta é A - otimização do tratamento clínico com controle dos fatores de risco.</strong></p><p><strong>Análise do caso:</strong></p><p>O paciente apresenta fatores de risco clássicos (HAS, dislipidemia, tabagismo) e foi identificada reversão do fluxo na artéria vertebral esquerda em exame de rotina. A reversão do fluxo vertebral geralmente indica obstrução proximal significativa, mais comumente na subclávia (síndrome do roubo da subclávia).</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Frente a um achado incidental de fluxo vertebral reverso, especialmente em paciente assintomático, o tratamento clínico otimizado é a primeira linha. Isso inclui controle rigoroso da HAS, suspensão do tabaco, estatinas para dislipidemia e antiagregação. A intervenção deve ser reservada para sintomas ou progressão documentada.</p><p><strong>Alternativa B (INCORRETA):</strong> A angioplastia com stent na vertebral não é indicada para fluxo reverso isolado, mesmo com risco teórico de AV posterior. O procedimento tem maior risco-benefício desfavorável em território vertebrobasilar, especialmente sem sintomas neurológicos ativos.</p><p><strong>Alternativa C (INCORRETA):</strong> O by-pass carotídeo-subclávio é excesso de intervenção para fluxo vertebral reverso isolado. Além de ser procedimento complexo, não há indicação sem sintomas de isquemia do membro superior ou claudicação intermitente.</p><p><strong>Alternativa D (INCORRETA):</strong> A angiotomografia de tórax sem indicação clínica clara apenas aumenta custos e exposição à radiação. A tomografia não mudaria a conduta inicial em paciente assintomático com fluxo reverso incidental.</p><p><strong>Veredito:</strong> A conduta conservadora com otimização clínica é adequada, reservando-se intervenção invasiva para casos sintomáticos ou progressão documentada.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaVascularDeExtremidades"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Paciente de 55 anos, hipertenso de longa data, foi internado por quadro de dor torácica interescapular com irradiação para a região lombar. Angiotomografia de tórax confirmou dissecção de aorta tipo B não complicada. Transcorrida 1 semana do quadro inicial, com adequados controles pressórico e de frequência cardíaca, foi transferido para hospital terciário. No momento, encontrava-se assintomático. Considerando que nova angiotomografia de tórax evidenciou trombose da falsa luz, diâmetro da aorta torácica descendente de 3 cm e da aorta abdominal de 2 cm, qual a conduta mais adequada?",
+      "alternativas": [
+        "Tratamento cirúrgico.",
+        "Tratamento endovascular.",
+        "Tratamento híbrido (cirúrgico + endovascular).",
+        "Tratamento clínico conservador."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre o manejo das dissecções de aorta tipo B, especificamente quando há evidências de trombose espontânea da falsa luz e estabilidade clínica, exigindo aplicação das diretrizes mais atuais de 2024-2025.</p><p><strong>A resposta correta é D - Tratamento clínico conservador.</strong></p><p><strong>Contexto da dissecção tipo B:</strong></p><p>As dissecções de aorta descendente (Stanford B) são classificadas em complicadas (com ruptura, mal perfusão, dor refratária, hipertensão não controlada) e não complicadas. O manejo difere completamente entre essas categorias.</p><p><strong>Análise do caso:</strong></p><p>O paciente apresenta critérios favoráveis: dissecção inicialmente não complicada, 1 semana transcorrida com controle adequado, assintomático, e novos achados favoráveis (trombose da falsa luz, diâmetros < 4 cm). A trombose da falsa luz indica remodelamento positivo e baixo risco de complicações.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (INCORRETA):</strong> Cirurgia aberta para dissecção tipo B não complicada é excessivamente invasiva e não é recomendada. O risco de mortalidade perioperatória supera qualquer benefício potencial em pacientes estáveis.</p><p><strong>Alternativa B (INCORRETA):</strong> O tratamento endovascular (TEVAR) é indicado apenas em dissecções complicadas. Em casos não complicados com trombose da falsa luz, não há benefício comprovado e aumenta desnecessariamente o risco de complicações.</p><p><strong>Alternativa C (INCORRETA):</strong> A abordagem híbrida não é padrão para dissecções tipo B. Seria apropriada apenas em casos complexos específicos, como dissecções que se estendem ao arco aórtico.</p><p><strong>Alternativa D (CORRETA):</strong> O tratamento clínico conservador é o gold standard para dissecções tipo B não complicadas. Inclui controle rigoroso da pressão arterial (PAS < 120 mmHg), betabloqueadores, seguimento tomográfico seriado e manejo de fatores de risco. As diretrizes AHA/ACC 2022 recomendam esta abordagem como primeira escolha.</p><p><strong>Veredito:</strong> A resposta D reflete o consenso atual: tratar clinicamente dissecções tipo B não complicadas, com intervenção apenas se desenvolverem complicações.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "<html><head></head><body>As imagens tomográficas abaixo pertencem a um paciente de 65 anos com histórico de hipertensão arterial sistêmica e tabagismo. Com base na análise das imagens, assinale a assertiva correta\n\n<img src=\"https://medbrave.com.br/questions/hcpa-2022-r3/qQ9.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O exame físico não sugeria o diagnóstico presumido.",
+        "O tratamento realizado foi de urgência devido ao hematoma retroperitoneal constatado à tomografia computadorizada inicial.",
+        "O tratamento realizado envolveu a utilização de uma prótese aórtica através de procedimento endovascular",
+        "Não foi utilizado contraste no estudo de imagem pós-operatório."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa a interpretação de imagens tomográficas e o conhecimento sobre aneurismas aórticos toracoabdominais, exigindo correlação clínico-radiológica cuidadosa.</p><p><strong>A resposta correta é C - O tratamento realizado envolveu a utilização de uma prótese aórtica através de procedimento endovascular.</strong></p><p><strong>Interpretação das imagens:</strong></p><p>As tomografias mostram um aneurisma de aorta toracoabdominal extenso, caracterizado por dilatação fusiforme significativa da aorta descendente. O aspecto das imagens sugere tratamento endovascular com implante de endoprótese, evidenciado pela presença de material metálico radiopaco na luz aórtica compatível com stents da endoprótese.</p><p><strong>Análise das alternativas:</p><p><strong>Alternativa A (INCORRETA):</strong> O exame físico em aneurismas grandes tipicamente apresenta massa pulsátil abdominal, dor abdominal vaga e eventualmente sopros. O fato de ter diagnosticado por imagem não significa ausência de sinais físicos - pelo contrário, aneurismos extensos como o mostrado geralmente são palpáveis.</p><p><strong>Alternativa B (INCORRETA):</strong> O tratamento de urgência não é indicado para aneurismas sem ruptura ou sintomas agudos. A conduta eletiva é padrão para aneurismas assintomáticos, permitindo preparo adequado e programação da intervenção.</p><p><strong>Alternativa C (CORRETA):</strong> As imagens evidenciam claramente uma endoprótese aórtica implantada via abordagem endovascular. O padrão dos stents metálicos e a ausência de sternotomia ou incisões extensas confirmam o tratamento endovascular, que é a técnica preferencial para aneurismos toracoabdominais em pacientes de alto risco.</p><p><strong>Alternativa D (INCORRETA):</strong> O estudo de imagem pós-operatório claramente utilizou contraste endovenoso, evidenciado pelo realce vascular adequado e distinção clara entre a luz da endoprótese e o thrombus periprotético. Sem contraste, seria impossível avaliar adequadamente a integridade da endoprótese e presença de endoleaks.</p><p><strong>Veredito:</strong> A análise das imagens confirma tratamento endovascular com endoprótese aórtica, método menos invasivo com recuperação mais rápida comparado à cirurgia aberta.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_TemasGeraisEmCirurgia"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "<html><head></head><body>Paciente de 65 anos, com história de doença arterial obstrutiva periférica, hipertensão arterial sistêmica, dislipidemia e fibrilação atrial crônica, foi internado por quadro de dor abdominal de início súbito desproporcional ao exame físico. Pela presença de leucocitose\ne elevação dos níveis de lactato, submeteu-se a laparotomia exploradora que identificou necrose transmural de duodeno distal, jejuno, íleo e cólon transverso até a flexura esplênica. Imagens do exame realizado há 2 meses para planejamento de intervenção por estenose de artéria ilíaca encontram-se reproduzidas abaixo. Considerando o quadro clínico, os achados cirúrgicos e as imagens, o diagnóstico clínico foi\n\n<img src=\"https://medbrave.com.br/questions/hcpa-2022-r3/qQ10.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "isquemia mesentérica aguda com etiologia embólica.",
+        "isquemia mesentérica aguda com etiologia trombótica.",
+        "trombose venosa mesentérica aguda com etiologia trombótica.",
+        "trombose venosa mesentérica aguda com etiologia embólica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão complexa avalia a diferenciação entre isquemia mesentérica arterial e venosa, estabelecendo correlação entre achados clínicos, cirúrgicos e de imagem para determinar a etiologia da isquemia mesentérica aguda.</p><p><strong>A resposta correta é A - isquemia mesentérica aguda com etiologia embólica.</strong></p><p><strong>Análise clínico-laboratorial:</strong></p><p>O paciente apresenta quadro típico de isquemia mesentérica aguda: dor abdominal desproporcional ao exame físico, início súbito, leucocitose e elevação de lactato. A presença de fibrilação atrial crônica é um fator de risco crucial para embolia, especialmente no contexto de múltiplos territórios extensos (duodeno a flexura esplênica).</p><p><strong>Análise das imagens:</strong></p><p>As imagens de angiotomografia realizadas 2 meses antes mostram estenose crítica da artéria ilíaca. Este achado demonstra doença arterial sistêmica significativa, predispondo à formação de trombos e ÊMBOLOS que podem migrar para o territory mesentérico.</p><p><strong>Análise das alternativas:</p><p><strong>Alternativa A (CORRETA):</strong> A etiologia embólica é mais provável considerando: 1) início súbito da dor, 2) fibrilação atrial como fonte de êmbolos, 3) múltiplos territórios intestinais afetados simultaneamente (padrão típico de embolia), 4) doença arterial prévia documentada, 5) necrose transmural extensa caracterizando evento agudo severo.</p><p><strong>Alternativa B (INCORRETA):</strong> A trombose em mesentérica costuma afetar território mais restrito, tem início mais insidioso e geralmente ocorre em pacientes com estenose mesentérica prévia documentada. A extensão massiva e início súbito são menos característicos.</p><p><strong>Alternativa C (INCORRETA):</strong> A trombose venosa mesentérica geralmente tem início subagudo, com dor progressiva e não costuma causar necrose transmural tão extensa rapidamente. Além disso, não haveria correlação com a fibrilação atrial.</p><p><strong>Alternativa D (INCORRETA):</strong> A embolia venosa mesentérica é raríssima. As condições para embolia venosa (tumor, coagulopatia) não estão presentes no caso, e a distribuição anatômica dos achados não sugere origem venosa.</p><p><strong>Veredito:</strong> O conjunto clínico-radiológico é característico de embolia mesentérica em paciente com fibrilação atrial e doença arterial documentada, requerendo abordagem cirúrgica urgente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoVascular",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Assinale a assertiva correta sobre vasculites e arteriopatias incomuns.",
+      "alternativas": [
+        "Artrite de células gigantes ocorre predominantemente em mulheres antes dos 50 anos e afeta preferencialmente a artéria temporal superficial.",
+        "Poliarterite nodosa é uma vasculite que afeta vasos de grande calibre e pode estar associada a infecções virais, tais como hepatite B e HIV.",
+        "Tromboangeite obliterante é uma vasculite inflamatória ateromatosa provocada, na maioria dos casos, pelo tabagismo",
+        "Na fibrose retroperitoneal idiopática, identifica-se um espessamento dos tecidos periaórticos à tomografia computadorizada, e os sintomas principais são dor lombar ou no flanco, febre e anorexia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia seu conhecimento sobre vasculites e arteriopatias incomuns, um tema frequentemente explorado em provas de residência médica.</p><p><strong>A resposta correta é D - fibrose retroperitoneal idiopática.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Artrite de células gigantes:</strong> INCORRETA. Esta vasculite ocorre predominantemente em <strong>mulheres após os 50 anos</strong> (não antes), e afeta principalmente a artéria temporal superficial, mas também outras artérias de médio calibre. É uma doença de idosos, não jovens.</p><p><strong>B) Poliarterite nodosa:</strong> INCORRETA. Esta é uma vasculite de <strong>pequeno e médio calibre</strong> (não grande), e está frequentemente associada à hepatite B e, menos comumente, ao HIV. A alternativa inverte o calibre dos vasos afetados.</p><p><strong>C) Tromboangeite obliterante (Doença de Buerger):</strong> INCORRETA. Embora esteja relacionada ao tabagismo, esta <strong>não é uma vasculite inflamatória</strong> tradicional. É uma doença inflamatória não-ateromatosa que afeta vasos pequenos e médios, caracterizada por inflamação segmentar e trombose, não por processo ateromatoso.</p><p><strong>D) Fibrose retroperitoneal idiopática:</strong> <strong>CORRETA</strong>. Esta condição se caracteriza por um processo inflamatório fibroso que envolve a aorta abdominal e estruturas retroperitoneais adjacentes. À tomografia, observa-se o espessamento periaórtico característico. Os sintomas principais são dor lombar ou no flanco, febre, anorexia e, eventualmente, sintomas obstrutivos urinários.</p><p>Esta questão testa seu conhecimento sobre as características específicas de cada vasculite/arteriopatia, sendo fundamental reconhecer os detalhes epidemiológicos e fisiopatológicos que diferenciam essas condições.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Reumatologia_SindromeSapho",
+        "Cirurgia_CirurgiaVascular"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Assinale a assertiva incorreta sobre trombose venosa profunda de membro inferior.",
+      "alternativas": [
+        "Presença de trombo flutuante indica maior risco de embolização, sugerindo implante de filtro de veia cava mesmo em paciente anticoagulado.",
+        "Valor das dosagens de D-dímeros isoladamente não é critério para exclusão de trombose venosa profunda.",
+        "Incompressibilidade venosa é o principal critério ultrassonográfico para a presença de trombos no sistema venoso.",
+        "Paciente em uso de inibidor direto do fator Xa não necessita de acompanhamento seriado de tempo de protrombina e INR."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda trombose venosa profunda (TVP) de membro inferior, um tema fundamental na prática vascular e frequentemente cobrado em provas de residência.</p><p><strong>A resposta incorreta é A - presença de trombo flutuante.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Trombo flutuante e filtro de veia cava:</strong> <strong>INCORRETA</strong>. Embora a presença de trombo flutuante indique maior risco de embolização, o implante de filtro de veia cava em paciente anticoagulado é <strong>controverso e geralmente não indicado</strong>. A anticoagulação adequada é tratamento suficiente, e filtros devem ser reservados para contraindicações reais à anticoagulação ou falha terapêutica.</p><p><strong>B) D-dímeros isoladamente:</strong> <strong>CORRETA</strong>. Dosagens elevadas de D-dímero não são específicas para TVP e podem estar elevadas em diversas situações (infecção, inflamação, pós-operatório, gravidez). A combinação com probabilidade clínica e outros exames é necessária para exclusão diagnóstica.</p><p><strong>C) Incompressibilidade venosa:</strong> <strong>CORRETA</strong>. Este é o principal critério ultrassonográfico para diagnóstico de TVP. A compressibilidade venosa é uma manobra fundamental, e a falta de compressibilidade indica presença de trombo.</p><p><strong>D) Inibidores diretos do fator Xa:</strong> <strong>CORRETA</strong>. Medicamentos como rivaroxabana e apixabana não necessitam de monitoramento de INR ou tempo de protrombina, uma das principais vantagens desta classe de anticoagulantes.</p><p>O erro da alternativa A está na indicação routine de filtro de veia cava em paciente anticoagulado com trombo flutuante, conceito desatualizado e não recomendado pelas diretrizes atuais.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "Cirurgia_CirurgiaVascular"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Que situação, dentre as abaixo, não está associada a risco de síndrome compartimental de membro inferior?",
+      "alternativas": [
+        "Tromboembolectomia femoral devido a oclusão arterial aguda",
+        "Cirurgia ginecológica ou urológica prolongada em posição de litotomia.",
+        "Trauma contuso de perna com fratura fechada de platô tibial.",
+        "Termoablação (endolaser) de veia safena magna."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre síndrome compartimental, uma complicação grave que requer reconhecimento e tratamento imediato.</p><p><strong>A resposta correta é D - termoablação (endolaser) de veia safena magna.</strong></p><p>Vamos analisar cada situação quanto ao risco de síndrome compartimental:</p><p><strong>A) Tromboembolectomia femoral:</strong> <strong>ASSOCIADA ao risco</strong>. Procedimentos vasculares complexos em extremidade podem causar isquemia-reperfusão, edema muscular e aumento da pressão compartimental.</p><p><strong>B) Cirurgia prolongada em litotomia:</strong> <strong>ASSOCIADA ao risco</strong>. Posições prolongadas com compressão neurovascular podem comprometer a perfusão tecidual e predispor à síndrome compartimental, especialmente em cirurgias longas.</p><p><strong>C) Trauma com fratura de platô tibial:</strong> <strong>ASSOCIADA ao risco</strong>. Fraturas tibiais, especialmente com hematoma e edema, são uma das principais causas de síndrome compartimental, necessitando vigilância constante.</p><p><strong>D) Termoablação de veia safena:</strong> <strong>NÃO ASSOCIADA</strong>. Este procedimento minimamente invasivo para tratamento de varizes não causa aumento significativo de pressão compartimental. É realizado com anestesia local, com mínima manipulação tecidual e sem significativa destruição muscular ou formação de hematoma.</p><p>A síndrome compartimental resulta de aumento da pressão em compartimento fascial fechado, comprometendo a perfusão tecidual. Procedimentos minimamente invasivos como termoablação venosa não geram este tipo de insulto tecidual significativo.</p><p>Esta questão destaca a importância de reconhecer os cenários de alto risco para uma condição potencialmente devastadora se não tratada precocemente.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico",
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_TraumaVascularDeExtremidades",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_PolitraumaOrtopedico"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Os aneurismas que envolvem a artéria esplênica são normalmente achados casuais em estudos de imagem realizados para investigação de outras patologias abdominais. Em que situação, dentre as abaixo, há maior risco de ruptura de um aneurisma de artéria esplênica, sendo indicada intervenção endovascular ou cirúrgica, independentemente de seu diâmetro?",
+      "alternativas": [
+        "Homem tabagista (+2 maços/dia) com aneurisma calcificado.",
+        "Homem > 50 anos com história de aneurisma periférico.",
+        "Mulher em idade reprodutiva ou grávida.",
+        "Mulher pós-menopáusica (> 60 anos)."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda aneurismas de artéria esplênica, uma condição importante na prática vascular, especialmente considerando suas complicações potencialmente fatais.</p><p><strong>A resposta correta é C - mulher em idade reprodutiva ou grávida.</strong></p><p>Vamos analisar cada alternativa quanto ao risco de ruptura:</p><p><strong>A) Homem tabagista com aneurisma calcificado:</strong> <strong>NÃO indica intervenção urgent</strong>e. O tabagismo é fator de risco, mas aneurismas calcificados tendem a ser mais estáveis. O risco de ruptura é mais relacionado a diâmetro e morfologia do que ao tabagismo isolado.</p><p><strong>B) Homem >50 anos com aneurisma periférico:</strong> <strong>NÃO indica intervenção específica</strong>. Embora homens tenham maior prevalência de aneurismas abdominais, não há indicação de intervenção baseada apenas nesta associação, sem considerar diâmetro ou crescimento.</p><p><strong>C) Mulher em idade reprodutiva ou grávida:</strong> <strong>INDICA INTERVENÇÃO</strong>. Esta é a situação de maior risco. A gestação causa alterações hormonais e hemodinâmicas significativas que aumentam drasticamente o risco de ruptura. A mortalidade materna em caso de ruptura pode chegar a 70%.</p><p><strong>D) Mulher pós-menopáusica (>60 anos):</strong> <strong>NÃO indica intervenção automática</strong>. Embora a idade seja fator de risco, não há indicação específica baseada apenas no sexo e idade, sem considerar diâmetro (>2cm) ou crescimento.</p><p>As diretrizes atuais recomendam intervenção em mulheres em idade reprodutiva ou grávida independentemente do diâmetro do aneurisma, devido ao alto risco de ruptura durante as mudanças fisiológicas da gestação.</p><p>Esta questão destaca a importância de considerar fatores específicos de risco, não apenas critérios dimensionais padrão.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica",
+        "Ginecologia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "Obstetricia_DoencasAssociadasAGestacao"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "As opções de tratamento da doença de Graves contemplam cirurgia, ablação com iodo radioativo e medicamentos antitireoidianos. Todas as situações clínicas abaixo favorecem a opção por tratamento cirúrgico em detrimento do tratamento com l131, exceto uma. Assinale-a.",
+      "alternativas": [
+        "Gravidez ou desejo de engravidar em 6 meses.",
+        "Oftalmopatia de Graves severa.",
+        "Necessidade de rápido controle do hipertireoidismo.",
+        "Alta captação tireoidiana do l131."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda as opções terapêuticas para doença de Graves, uma condição que requer abordagem terapêutica individualizada considerando múltiplos fatores clínicos.</p><p><strong>A resposta correta é D - alta captação tireoidiana do I131.</strong></p><p>Vamos analisar quais situações favorecem cirurgia em detrimento do I131:</p><p><strong>A) Gravidez ou desejo de engravidar:</strong> <strong>FAVORECE CIRURGIA</strong>. O I131 é contraindicado na gravidez e deve ser evitado em mulheres que planejam engravidar nos próximos 6-12 meses devido ao risco de má-formação fetal e efeitos teratogênicos.</p><p><strong>B) Oftalmopatia severa de Graves:</strong> <strong>FAVORECE CIRURGIA</strong>. O I131 pode agravá-la devido à liberação de antígenos tireoidianos. Cirurgia ou medicamentos antitireoidianos são preferíveis nesta situação.</p><p><strong>C) Necessidade de rápido controle:</strong> <strong>FAVORECE CIRURGIA</strong>. A cirurgia (tireoidectomia) oferece controle mais rápido do hipertireoidismo comparado ao I131, que pode levar semanas a meses para efetividade completa.</p><p><strong>D) Alta captação tireoidiana do I131:</strong> <strong>NÃO favorece cirurgia - favorece I131</strong>. Alta captação indica boa responsividade ao I131, tornando este tratamento mais eficaz. Seria a única situação listada que <strong>NÃO</strong> favorece a cirurgia.</p><p>A lógica é clara: quando há alta captação, o I131 será mais eficaz, sendo preferível à cirurgia. As outras três alternativas representam situações onde a cirurgia é clinicamente superior ao I131.</p><p>Esta questão avalia sua capacidade de integrar múltiplos fatores clínicos para tomada de decisão terapêutica em endocrinologia.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Tireotoxicose",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_EndocrinologiaTireotoxicoseGer",
+        "Cirurgia_CirurgiaDeCabecaEPescoco",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Tireoidectomia"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do caso abaixo. Paciente de 25 anos veio à consulta queixando-se de disfagia, regurgitação e dor torácica. Endoscopia digestiva alta revelou discreta dilatação esofágica e presença de\nresíduos alimentares no interior do esôfago. Para confirmar o diagnóstico, deve-se realizar .......... . O tratamento indicado é .........., associada a .......... .",
+      "alternativas": [
+        "manometria esofágica - injeção de toxina botulínica - dilatação pneumática endoscópica.",
+        "manometria esofágica - miotomia cirúrgica - fundoplicatura parcial.",
+        "raio X contrastado de esôfago - miotomia cirúrgica - fundoplicatura completa.",
+        "raio X contrastado de esôfago - dilatação pneumática endoscópica - uso de bloqueador de canal do cálcio"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia o conhecimento sobre acalasia esofágica, um distúrbio motor do esôfago caracterizado pela falha no relaxamento do esfíncter inferior. O caso clínico apresenta sintomas clássicos: disfagia progressiva, regurgitação de alimentos não digeridos e dor torácica em paciente jovem.</p><p><strong>A resposta correta é B - manometria esofágica, miotomia cirúrgica e fundoplicatura parcial.</strong></p><p>Analisando as alternativas: A manometria esofágica é o exame gold standard para diagnóstico de acalasia, não o raio X contrastado (opções C e D). O raio X pode sugerir dilatação esofágica, mas não confirma o diagnóstico nem caracteriza o tipo manométrico.</p><p>O tratamento definitivo é a miotomia cirúrgica de Heller, que corta as fibras musculares do esfíncter inferior. A fundoplicatura parcial (como Nissen parcial) é obrigatória para prevenir refluxo gastroesofágico. A toxina botulínica e dilatação pneumática são apenas temporárias.</p><p>Esta questão requer conhecimento dos pilares diagnósticos e terapêuticos da acalasia, diferenciando métodos de acalasia verdadeira de outras causas de disfagia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Paciente de 46 anos, com IMC de 31 kg/m², submetido a uma gastrectomia vertical por obesidade grave há 4 anos, consultou por pirose e regurgitação, mesmo na vigência de doses crescentes de inibidor da bomba de prótons. Atualmente faz uso de esomeprazol (40 mg, 2 vezes/dia). Endoscopia digestiva alta revelou hérnia hiatal de 3 cm, esofagite péptica grau B de Los Angeles, projeção de mucosa colunar no esôfago distal com 2 cm de extensão circunferencial e 3 cm de extensão máxima cranial, com células caliciformes identificadas à biópsia, sem displasia. A alternativa cirúrgica mais adequada para o paciente é correção da hérnia hiatal e",
+      "alternativas": [
+        "ablação por radiofrequência do epitélio de Barrett.",
+        "conversão para by-pass gástrico em Y de Roux.",
+        "reversão da cirurgia prévia.",
+        "confecção de uma fundoplicatura utilizando o estômago excluso."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão explora as complicações da gastrectomia vertical, especialmente o desenvolvimento de doença do refluxo gastroesofágico grave. O paciente submetido a sleeve gastrectomy há 4 anos evoluiu com esofagite moderada e metaplasia intestinal (Barrett).</p><p><strong>A resposta correta é B - conversão para bypass gástrico em Y de Roux.</strong></p><p>Explicação das alternativas: A ablação por radiofrequência (A) não é indicada em Barrett sem displasia, apenas em casos de displasia confirmada. A reversão (C) é tecnicamente complexa e pode não resolver o problema. A fundoplicatura utilizando estômago excluso (D) é anatômicamente impossível após gastrectomia vertical.</p><p>O bypass gástrico em Y de Roux é a melhor opção pois: 1) reduz a pressão intragástrica que causa refluxo, 2) proporciona acid suppression, 3) trata simultaneamente a obesidade (IMC ainda elevado), 4) corrige a hérnia hiatal.</p><p>Esta questão exige conhecimento das técnicas bariátricas e suas complicações, bem como indicações para revisão cirúrgica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_CirurgiaBariatricaEMetabolica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente de 61 anos foi trazido à Emergência por dor forte e contínua no abdômen superior e transição toracoabdominal e dispneia acentuada. Familiares relataram que, após uma refeição abundante 4 horas antes, tivera náuseas intensas e várias tentativas de vômitos, momento em que o quadro clínico iniciou. À admissão, a pressão arterial era de 95/70 mmHg, e a frequência cardíaca, de 112 bpm. Apresentava dor e defesa à palpação do abdômen superior. Material para exames laboratoriais foi coletado, e a análise\nencontrava-se em execução. O raio X de abdômen agudo demonstrou alargamento do mediastino, pneumomediastino e pequeno derrame pleural à esquerda. Que diagnóstico, dentre os abaixo, é o mais provável?",
+      "alternativas": [
+        "Síndrome de Mallory-Weiss.",
+        "Volvo gástrico agudo.",
+        "Hérnia diafragmática aguda.",
+        "Síndrome de Boerhaave."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre síndrome de Boerhaave, uma complicação rara mas grave da laceração esofágica. O quadro clínico é típico: vômitos forçados após refeição abundante, seguido de dor torácica intensa e sinais de choque.</p><p><strong>A resposta correta é D - Síndrome de Boerhaave.</strong></p><p>Análise das alternativas: A síndrome de Mallory-Weiss (A) cursa apenas com laceração superficial, sem pneumomediastino significativo. O volvo gástrico agudo (B) apresenta alterações diferentes no RX, como dilatação gástrica. A hérnia diafragmática aguda (C) não se relaciona com vômitos forçados e não causa pneumomediastino.</p><p>O pneumomediastino e derrame pleural à esquerda são patognomônicos da rotura esofágica. Este é um caso de emergência cirúrgica, com mortalidade alta se não tratado prontamente, exigindo reparo cirúrgico da perfuração.</p><p>A questão testa a capacidade de correlacionar história clínica típica com achados radiológicos característicos de uma síndrome específica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_LesaoTraumaticaDoEsofago",
+        "Cirurgia_UrgenciasAbdominais"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Assinale a assertiva correta sobre o tratamento cirúrgico de câncer gástrico.",
+      "alternativas": [
+        "A laparoscopia diagnóstica está indicada nos tumores precoces.",
+        "A reconstrução em Y de Roux deve ser realizada apenas na gastrectomia total.",
+        "As margens cirúrgicas devem ser maiores nos tumores do tipo difuso.",
+        "O benefício da gastrectomia por laparoscopia é evidente, principalmente nos tumores mais avançados."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda aspectos técnicos da cirurgia oncológica gástrica, focando nas particularidades dos diferentes tipos histológicos de adenocarcinoma gástrico. O carcinoma tipo difuso (tipo Lauren) possui padrão infiltrativo, diferindo do tipo intestinal.</p><p><strong>A resposta correta é C - As margens cirúrgicas devem ser maiores nos tumores do tipo difuso.</strong></p><p>Justificativa: O carcinoma gástrico difuso tem crescimento infiltrativo, com limites difusos e células isoladas, exigindo margens de ressecção mais amplas (pelo menos 5-6 cm) para garantir segurança oncológica. O tipo intestinal cresce de forma circunscrita, permitindo margens menores.</p><p>As outras alternativas estão incorretas: A) Laparoscopia diagnóstica não é específica para tumores precoces. B) Y de Roux pode ser usado em gastrectomias parciais também. D) Laparoscopia tem benefícios principalmente em tumores precoces, não avançados.</p><p>Esta questão requer conhecimento dos princípios oncológicos da gastrectomia e das diferenças biológicas entre tipos histológicos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "Cirurgia_Estomago",
+        "Cirurgia_NeoplasiasDoSistemaDigestivo",
+        "Cirurgia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Paciente feminina, de 52 anos, apresentou quadro de pancreatite aguda biliar com coleção necrótica de 10 cm. Considerando as possíveis evoluções para o quadro clínico, assinale assertiva correta sobre o tratamento.",
+      "alternativas": [
+        "Segundo dados do PANTER study (PAncreatitis, Necrosectomy versus sTEp up appRoach), a utilização de técnicas minimamente invasivas de abordagem progressiva (step up approach) comparada à de cirurgia aberta diminui a frequência de falência orgânica sem impacto na mortalidade.",
+        "A administração de octreotida (200 µg, a cada 8 horas, por via subcutânea) reduz a secreção de enzimas pancreáticas, acelerando a regressão da necrose pancreática",
+        "Na vigência de sangramento digestivo, deve-se suspeitar de aneurisma de artéria esplênica; se confirmado por angiotomografia, está indicada, em primeiro lugar, a ligadura do colo do aneurisma.",
+        "A ausência de uma parede de coleção bem formada, num contexto de sepse, favorece a drenagem da coleção por endoscopia, com posteriores debridamentos sequenciais."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o manejo atual de pancreatite aguda com necrose pancreática, tema de extrema relevância na prática clínica. O estudo PANTER foi landmark no estabelecimento da abordagem minimamente invasiva como padrão.</p><p><strong>A resposta correta é A - step up approach comparada à cirurgia aberta diminui frequência de falência orgânica sem impacto na mortalidade.</strong></p><p>O estudo PANTER demonstrou que a estratégia progressiva (primeiro drenagem guiada por imagem, depois necrosectomia se necessário) reduz complicações sérias em 50%, sem aumentar mortalidade. Este achado revolucionou a prática clínica.</p><p>As alternativas incorretas: B) Octreotida não acelera resolução de necrose. C) Aneurisma de artéria esplênica requer intervenção vascular, não ligadura do colo. D) Coleções não organizadas devem ser tratadas primeiramente com abordagem cirúrgica ou percutânea.</p><p>A questão exige conhecimento das evidências atuais em pancreatite grave, mostrando a evolução do tratamento cirúrgico tradicional para a abordagem menos invasiva.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_LesoesCisticasDoPancreas_Tratamento",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_ComplicacoesPosoperatorias"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Durante uma colecistectomia por videolaparoscopia para tratamento de colecistite aguda, ocorreu uma lesão da via biliar. Associe os tipos de lesão (coluna da esquerda) às correções mais indicadas (coluna da direita). 1 - Lesão do ducto segmentar aberrante; 2 -\nSecção completa da via biliar com perda de substância; 3 - Secção parcial da via biliar; 4 - Avulsão do ducto cístico; 5 - Secção completa da via biliar sem perda de substância; ( ) Hepaticojejunostomia; ( ) Colocação de dreno de Kehr; ( ) Sutura da via biliar; A sequência numérica correta, de cima para baixo, da coluna da direita, é",
+      "alternativas": [
+        "1 - 4 - 3.",
+        "2 - 1 - 5.",
+        "2 - 3 - 1.",
+        "5 - 2 - 3."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do HCPA 2022 avalia seu conhecimento sobre complicações cirúrgicas e suas correções específicas, tema fundamental na cirurgia digestiva.</p><p><strong>A resposta correta é C (2-3-1).</strong> Vamos analisar a sequência correta:</p><p><strong>Primeira posição (2):</strong> Secção completa da via biliar com perda de substância → Hepaticojejunostomia. Esta é a correção padrão para lesões complexas onde há perda de tecido biliar, criando uma comunicação entre o ducto hepático e jejuno.</p><p><strong>Segunda posição (3):</strong> Secção parcial da via biliar → Colocação de dreno de Kehr. Para lesões parciais, o dreno de Kehr permite drenagem temporária e observação da evolução, facilitando a cicatrização controlada.</p><p><strong>Terceira posição (1):</strong> Lesão do ducto segmentar aberrante → Sutura da via biliar. Ductos segmentares aberrantes podem ser simplesmente suturados, pois representam tributários menores.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p>A) 1-4-3: A avulsão do ducto cístico (4) não requer dreno de Kehr, mas sim controle vascular e eventual ligadura.</p><p>B) 2-1-5: A secção sem perda de substância (5) permite anastomose primária, não ducto segmentar aberrante.</p><p>D) 5-2-3: A secção sem perda de substância (5) permite anastomose direta, não hepáticojejunostomia.</p><p>Esta classificação baseia-se na classificação de Strasberg para lesões da via biliar, padrão internacional adoptado pelos serviços de cirurgia do Brasil.</p><p><strong>Veredito: A sequência 2-3-1 é a correta, correspondendo à alternativa C.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_LesaoDaViaBiliar"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Assinale a assertiva correta sobre exames de imagem na investigação de abdômen agudo em gestantes.",
+      "alternativas": [
+        "Ultrassonografia, apesar de ser o exame de escolha na maioria dos casos, não fornece informações relevantes sobre as doenças das vias biliares.",
+        "Tomografia computadorizada pode ser indicada em situações específicas, avaliando os riscos e benefícios para o feto e para a mãe, caso outras opções de exames não estejam disponíveis ou não conduzam a um diagnóstico conclusivo",
+        "Colangiopancreatografia retrógrada endoscópica demanda o uso de fluoroscopia, não devendo ser realizada durante a gestação.",
+        "Ressonância magnética é o exame com melhor definição de imagem e menor risco para o binômio mãe-feto, devendo ser utilizada como exame de escolha para avaliação inicial de todas as mulheres grávidas"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um tema crítico: a investigação diagnóstica em gestantes com abdômen agudo, que representa um desafio terapêutico único, considerando a segurança materno-fetal.</p><p><strong>A resposta correta é B.</strong> Esta alternativa está alinhada com as diretrizes do Ministério da Saúde 2024 e da Federated Society of Radiology para gestação.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) INCORRETA:</strong> A ultrassonografia é precisamente o exame de escolha e fornece informações EXCELENTES sobre as vias biliares, sendo fundamental no diagnóstico de coledocolitíase e colecistite na gestação.</p><p><strong>B) CORRETA:</strong> A tomografia pode ser indicada em situações específicas, sempre pesando riscos/benefícios. Com proteções adequadas (protetor fetal), pode ser realizada quando outras modalidades não forem diagnósticas.</p><p><strong>C) INCORRETA:</strong> A colangiopancreatografia pode ser realizada durante a gestação com proteções radioativas rigorosas e apenas quando absolutamente necessária para coledocolitíase com icterícia grave.</p><p><strong>D) INCORRETA:</strong> A RMN, embora segura (sem radiação ionizante), NÃO é o exame de primeira linha. A ultrassonografia permanece como exame inicial preferencial por ser acessível, segura e diagnóstica na maioria dos casos.</p><p><strong>Raciocínio clínico:</strong> O princípio fundamental é utilizar o exame mais seguro e eficaz para cada situação. A ultrassonografia permanece como primeira escolha por sua segurança e eficácia diagnóstica.</p><p><strong>Veredito: A alternativa B é a correta, respeitando a indicação de TC em casos selecionados.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_MedicinaFetal"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente feminina, de 33 anos, veio à Emergência com quadro de abdômen agudo, tendo sido realizada apendicectomia videolaparoscópica. O laudo anatomopatológico indicou apêndice íntegro, com neoplasia mucinosa in situ do apêndice cecal de baixo\ngrau. A margem de secção junto ao ceco estava comprometida. Qual o tratamento complementar mais indicado?",
+      "alternativas": [
+        "Quimioterapia.",
+        "Ileocolectomia direita e quimioterapia subsequente.",
+        "Ampliação de margem cirúrgica com ressecção da base de implantação no ceco.",
+        "Imunoterapia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre manejo de tumores de baixo grau do apêndice, uma situação complexa que demanda compreensão da biologia tumoral e princípios de ressecção oncológica.</p><p><strong>A resposta correta é C.</strong> O tratamento de primeira linha para margens comprometidas em tumores mucinosos de baixo grau é a ressecção de amplificação.</p><p><strong>Contexto do caso:</strong> Neoplasia mucinosa in situ de baixo grau com margem de secção comprometida representa situação de risco para recidiva local e pseudomixoma peritoneal se não adequadamente tratada.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Quimioterapia:</strong> INCORRETA. Tumores mucinosos de baixo grau são indolentes e pouco responsivos à quimioterapia. A margem comprometida não é indicação para QT sistêmica.</p><p><strong>B) Ileocolectomia + Quimioterapia:</strong> INCORRETA. Mais agressivo que o necessário. Tumores de baixo grau não requerem ressecções extensas além da margem comprometida, e a quimioterapia não está indicada.</p><p><strong>C) Ampliação da margem:</strong> CORRETA. Racional cirúrgico correto: ressecção apenas da área com margem comprometida, preservando intestino e evitando morbidade desnecessária.</p><p><strong>D) Imunoterapia:</strong> INCORRETA. Não é padrão para este tipo tumoral, que tem baixa resposta a imunoterápicos.</p><p><strong>Princípio terapêutico:</strong> Tumores de baixo grau exigem ressecção completa, mas conservadorismo em relação ao tecido viável. A ampliação focal da margem é o gold standard.</p><p><strong>Veredito: A alternativa C é a correta, representando o tratamento padrão-ouro para esta situação.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_Proctologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoApendiceCecal"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Paciente masculino, de 52 anos, apresenta lesão de 2,5 cm na transição do corpo com a cauda do pâncreas. Suspeita-se de adenocarcinoma. A tomografia computadorizada abdominal não demonstrou invasão do sistema esplenoportal ou dos ramos do tronco celíaco e artéria mesentérica superior. Nesse contexto, é correto afirmar que",
+      "alternativas": [
+        "o estadiamento clínico completo necessita de um PET/CT.",
+        "o baço deve ser removido em bloco juntamente com a lesão.",
+        "laparoscopia de estadiamento deve ser realizada antes do início da neoadjuvância.",
+        "o diagnóstico histológico por ecoendoscopia é necessário para o início do tratamento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda o estadiamento e princípios cirúrgicos do adenocarcinoma de pâncreas, um dos tumores mais desafiadores da cirurgia oncológica moderna.</p><p><strong>A resposta correta é B.</strong> A esplenectomia em bloco com a cauda pancreática é procedimento standard quando há ressecção corporal/caudal.</p><p><strong>Princípios do caso:</strong> Lesão de 2,5 cm na transição corpo-cauda sem invasão de estruturas vasculares principais. Esta é uma indicação clássica para pancreatectomia distal com esplenectomia.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) PET/CT obrigatório:</strong> INCORRETA. O PET/CT não é mandatory para estadiamento. TC com contraste phaseado é exame principal para avaliação vascular e de metastasis.</p><p><strong>B) Esplenectomia em bloco:</strong> CORRETA. A esplenectomia é mandatória na pancreatectomia distal por motivos técnicos (preservação de irrigação esplênica) e oncológicos (ressecção completa do sistema linfático).</p><p><strong>C) Laparoscopia de estadiamento:</strong> INCORRETA. A laparoscopia exploratória pode ser útil em casos específicos, mas não é mandatória antes da neoadjuvância, especialmente quando a TC já demonstrou ressecabilidade.</p><p><strong>D) Histologia por ecoendoscopia:</strong> INCORRETA. Em caso de lesão ressecável pela TC, a confirmação histológica pode ser obtida durante a cirurgia. A ecoendoscopia pré-operatória não é indispensável.</p><p><strong>Fundamento técnico:</strong> A esplenectomia é necessária porque a artéria esplênica perfundirá a cauda pancreática residual, comprometendo a radicalidade oncológica.</p><p><strong>Veredito: A alternativa B é correta, representando o standard técnico para este procedimento.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoPancreas_NeoplasiaMalignaSolidaDoPancre"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Em relação à coledocolitíase, que exame de imagem, dentre os abaixo, apresenta a maior sensibilidade para a detecção de cálculos na via biliar?",
+      "alternativas": [
+        "Ultrassonografia abdominal.",
+        "Tomografia computadorizada de abdômen.",
+        "Colangiorressonância magnética de abdômen.",
+        "Ecoendoscopia digestiva alta."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre métodos diagnósticos para coledocolitíase, tema fundamental na cirurgia hepatobiliar com implicações diretivas para o tratamento.</p><p><strong>A resposta correta é D - Ecoendoscopia digestiva alta.</strong> Este método tem sensibilidade de 95-98% para cálculos ductais, superior a todas as outras modalidades.</p><p><strong>Comparativo de sensibilidades diagnósticas:</strong></p><p><strong>A) Ultrassonografia abdominal:</strong> Sensibilidade 50-70%. boa para dilatação ductal, mas limitada para cálculos pequenos ou na porção distal do colédoco.</p><p><strong>B) Tomografia computadorizada:</strong> Sensibilidade 70-85%. melhores detalhes anatômicos, mas ainda inferior à ecoendoscopia para cálculos < 5mm.</p><p><strong>C) Colangiorressonância:</strong> Sensibilidade 85-92%. excelente para anatomia, mas limitada para cálculos pequenos (<3mm) e pode ter artefatos de movimento.</p><p><strong>D) Ecoendoscopia digestiva:</strong> Sensibilidade 95-98%. muito superior por proximidade anatômica e alta resolução, sobretudo para cálculos pequenos e na região periampular.</p><p><strong>Indicações clínicas:</strong> A ecoendoscopia é especialmente valiosa quando há suspeita clínica forte mas outros métodos inconclusivos, ou como método de escolha em pacientes de alto risco cirúrgico.</p><p><strong>Consideração econômica:</strong> Embora a ecoendoscopia seja mais sensível, a ultrassonografia continua como primeira linha por sua disponibilidade e baixo custo, segundo diretrizes do MS 2024.</p><p><strong>Veredito: A alternativa D é a correta, representando o método com maior sensibilidade diagnóstica para coledocolitíase.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Em adultos, linfomas do intestino delgado são mais comumente associados a",
+      "alternativas": [
+        "retocolite ulcerativa.",
+        "doença celíaca.",
+        "lúpus eritematoso sistêmico.",
+        "hepatite autoimune."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia seu conhecimento sobre as principais associações etiológicas dos linfomas do intestino delgado, testando se você conhece os fatores de risco mais relevantes para esse tipo de neoplasia.</p><p><strong>A resposta correta é B - doença celíaca.</strong> A associação entre doença celíaca e linfoma do intestino delgado é bem estabelecida na literatura médica. Pacientes com doença celíaca, especialmente aqueles com doença refratária, apresentam risco significativamente aumentado para desenvolver linfoma de células T associada à enteropatia (EATL).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Retocolite ulcerativa:</strong> Incorreta. A retocolite ulcerativa está associada principalmente ao carcinoma colorretal, não aos linfomas do intestino delgado. O risco aumentado de câncer na retocolite é principalmente para adenocarcinoma colônico.</p><p><strong>B) Doença celíaca:</strong> Correta. A doença celíaca é a associação mais forte e melhor documentada com linfomas do intestino delgado, particularmente o linfoma de células T associado à enteropatia (EATL). O risco é 30-40 vezes maior que na população geral.</p><p><strong>C) Lúpus eritematoso sistêmico:</strong> Incorreta. O lúpus está associado principalmente a linfomas de células B (especialmente linfoma não-Hodgkin), mas não tem associação específica com linfomas do intestino delgado. O tratamento imunossupressor prolongado pode aumentar o risco de linfomas em geral.</p><p><strong>D) Hepatite autoimune:</strong> Incorreta. A hepatite autoimune está associada principalmente a carcinoma hepatocelular e, eventualmente, a linfomas hepáticos primários, mas não a linfomas do intestino delgado.</p><p>O mecanismo da associação entre doença celíaca e linfoma intestinal envolve a inflamação crônica da mucosa, atrofia das vilosidades e displasia epitelial prolongada, criando um ambiente favorável para transformação maligna.</p><p><strong>Veredito: Alternativa B é a correta, avaliando o conhecimento sobre oncologia gastrointestinal e doenças autoimunes.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Linfomas",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DisturbiosDisabsortivos"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Considere as assertivas abaixo sobre transplante de fígado. I - A técnica clássica é mais vantajosa, pois necessita de menor número de anastomoses. II - A trombose do tronco da veia porta não constitui contraindicação ao transplante quando não tumoral. III - A técnica de Piggy-back não pode ser utilizada no retransplante. Quais são corretas?",
+      "alternativas": [
+        "Apenas I.",
+        "Apenas II.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 aborda aspectos técnicos importantes do transplante hepático, especificamente sobre técnicas cirúrgicas e critérios de seleção de pacientes, testando conhecimento sobre hepatologia transplantada.</p><p><strong>A resposta correta é B - apenas a assertiva II.</strong></p><p><strong>Vamos analisar cada assertiva:</strong></p><p><strong>I - A técnica clássica é mais vantajosa, pois necessita de menor número de anastomoses:</strong> <strong>INCORRETA.</strong> Na verdade, é o oposto! A técnica clássica (piggy-back) necessita de MAIOR número de anastomoses (cava supra-hepática, cava infra-hepática e veia porta). A técnica de piggy-back necessita apenas de anastomose da veia supra-hepática do receptor com a veia cava do doador, resultando em menor número de anastomoses.</p><p><strong>II - A trombose do tronco da veia porta não constitui contraindicação ao transplante quando não tumoral:</strong> <strong>CORRETA.</strong> A trombose portal não é contraindicação absoluta para transplante hepático quando é de origem não tumoral. Pode ser tratada durante o procedimento cirúrgico através de trombectomia, ressecção de veia e interposição de enxerto, ou outras técnicas. Contraindicações verdadeiras incluem malignidade extra-hepática ativa e infecção sistêmica não controlada.</p><p><strong>III - A técnica de Piggy-back não pode ser utilizada no retransplante:</strong> <strong>INCORRETA.</strong> A técnica de piggy-back pode ser utilizada tanto no transplante primário quanto no retransplante. A decisão sobre a técnica depende da anatomia vascular do receptor e das condições técnicas específicas, não sendo contraindicada no retransplante por si só.</p><p><strong>Raciocínio clínico:</strong> O transplante hepático possui múltiplas técnicas cirúrgicas, cada uma com suas indicações específicas. A técnica clássica (técnica padrão com veia cava) e a técnica piggy-back são as principais abordagens, sendo a escolha baseada em fatores anatômicos e técnicos específicos.</p><p><strong>Veredito: Apenas a assertiva II está correta, avaliando conhecimento sobre técnicas de transplante hepático.</strong></p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Hepatologia",
+        "Cirurgia_Hepatologia_TransplanteHepaticoEHepatectom",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_TransplanteHepaticoEHepatectom"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "A cirurgia poupadora de néfrons (nefrectomia parcial) tem sido cada vez mais indicada para adultos e também, recentemente, para crianças com tumor de Wilms unilateral associado a síndromes genéticas. Que condição, dentre as abaixo, não tem indicação para tratamento cirúrgico de crianças com essa patologia?",
+      "alternativas": [
+        "Lesão renal única em polos ou na região central do rim.",
+        "Ausência de tumor no sistema coletor.",
+        "Ausência de trombo na veia renal ou na veia cava.",
+        "Volume total da lesão renal < 500 ml."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 aborda critérios específicos para indicação de nefrectomia parcial em crianças com tumor de Wilms, focando nas indicações de preservação nefrônica e fatores que determinam a viabilidade cirúrgica.</p><p><strong>A resposta correta é D - volume total da lesão renal < 500 ml.</strong> Esta é a única alternativa que NÃO tem indicação para nefrectomia parcial, ou seja, a questão está perguntando qual condição torna a cirurgia poupadora de néfrons DESINDICADA.</p><p><strong>Análise de cada alternativa como CRITÉRIO DE INDICAÇÃO (não de contraindicação):</strong></p><p><strong>A) Lesão renal única em polos ou na região central do rim:</strong> <strong>INDICAÇÃO CORRETA</strong> para nefrectomia parcial. Lesões em polo superior ou inferior são mais adequadas para preservação, assim como lesões centrais quando não comprometem o hilo vascular e o sistema coletor de forma significativa.</p><p><strong>B) Ausência de tumor no sistema coletor:</strong> <strong>INDICAÇÃO CORRETA</strong> para nefrectomia parcial. Quando não há infiltração do sistema coletor (pelve renal e cálices), a cirurgia preservadora é mais segura tecnicamente e apresenta melhores resultados funcionais.</p><p><strong>C) Ausência de trombo na veia renal ou na veia cava:</strong> <strong>INDICAÇÃO CORRETA</strong> para nefrectomia parcial. A ausência de trombose vascular facilita a técnica cirúrgica e reduz complicações, sendo fator favorável para preservação nefrônica.</p><p><strong>D) Volume total da lesão renal < 500 ml:</strong> <strong>NÃO É CRITÉRIO DE INDICAÇÃO - é critério de CONTRAINDICAÇÃO</strong>. Volume < 500 ml na verdade representa uma CONDIÇÃO FAVORÁVEL para a nefrectomia parcial, não desfavorável. Lesões menores facilitam a preservação do parênquima renal restante. O que torna a cirurgia DESINDICADA seria o CONTRÁRIO - volume muito grande (>50% do parênquima renal). Portanto, esta opção está incorreta como alternativa que NÃO tem indicação.</p><p><strong>Princípios da nefrectomia parcial em tumor de Wilms:</strong> A preservação nefrônica é fundamental em crianças, especialmente em casos de síndromes genéticas onde o rim contralateral pode estar em risco. A técnica depende de fatores como localização do tumor, ausência de infiltração vascular e колeccção, e extensão da doença.</p><p><strong>Veredito: A alternativa D está incorreta como resposta, já que volume < 500 ml favorece a nefrectomia parcial, não a contraindicá-la.</strong></p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_NefrologiaPediatrica",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasECistosRenais",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_PrincipaisSindromesGeneticasEN"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Assinale a assertiva incorreta sobre a aspiração com impactação de corpo estranho na via aérea, principal causa de morte não intencional de crianças com até 1 ano.",
+      "alternativas": [
+        "Ocorre mais comumente em meninas.",
+        "Resíduos alimentares são os materiais mais comumente aspirados para a via aérea.",
+        "Crianças vítimas de abuso têm maior risco de apresentar aspiração de corpo estranho.",
+        "Crianças sem dificuldade ventilatória após a aspiração devem ser encaminhadas imediatamente ao hospital, estando contraindicada a exploração da boca à procura do corpo estranho."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 aborda aspectos epidemiológicos e clínicos importantes da aspiração de corpo estranho em pediatria, testando conhecimento sobre a principal causa de morte acidental em lactentes.</p><p><strong>A resposta correta é A - ocorre mais comumente em meninas.</strong> Esta é a assertiva INCORRETA sobre aspiração de corpo estranho.</p><p><strong>Por que a alternativa A está incorreta:</strong> Na verdade, a aspiração de corpo estranho é mais comum em MENINOS, não meninas. Estudos epidemiológicos mostram proporção de 2:1 (meninos:meninas). Os meninos tendem a ter comportamento mais exploratório e inserir objetos na boca com maior frequência, além de algumas diferenças comportamentais entre os sexos.</p><p><strong>Análise das alternativas corretas:</strong></p><p><strong>B) Resíduos alimentares são os materiais mais comumente aspirados para a via aérea:</strong> <strong>CORRETA.</strong> Alimentos como sementes, nozes, feijão, milho e pedaços de carne são os objetos mais frequentemente aspirados. Isso se deve à combinação de tamanho adequado para aspiração e consistência que facilita a passagem para a via aérea.</p><p><strong>C) Crianças vítimas de abuso têm maior risco de apresentar aspiração de corpo estranho:</strong> <strong>CORRETA.</strong> Crianças em situação de violência têm maior risco devido a possíveis neglects, supervisão inadequada, oferecimento inadequado de alimentos (mastigação inadequada), e outros fatores socioambientais associados ao abuso.</p><p><strong>D) Crianças sem dificuldade ventilatória após a aspiração devem ser encaminhadas imediatamente ao hospital, estando contraindicada a exploração da boca à procura do corpo estranho:</strong> <strong>CORRETA.</strong> Mesmo sem sintomas imediatos, a criança deve ser hospitalizada para observação e investigação (radiografia de tórax, possível broncoscopia). A exploração manual pode empurrar o objeto mais profundamente e causar maior trauma.</p><p><strong>Contexto epidemiológico:</strong> A aspiração de corpo estranho representa cerca de 70% das mortes acidentais em lactentes menores de 1 ano. O pico de incidência ocorre entre 6 meses e 2 anos, quando crianças começam a explorar o ambiente e colocar objetos na boca. O hambúrguer é o alimento mais frequentemente envolvido em fatalidades.</p><p><strong>Veredito: A alternativa A está incorreta por inversão epidemiológica - a aspiração é mais comum em meninos, avaliando conhecimento sobre prevenção de acidentes pediátricos.</strong></p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas_CorpoEstranhoengasgo",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_CuidadosNeonatais"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Traqueomalacia é definida como o colapso anormal da traqueia durante a ventilação, com graus variáveis de obstrução do lúmen e de manifestações respiratórias. A respeito da traqueomalacia na criança, assinale a assertiva correta.",
+      "alternativas": [
+        "A traqueomalacia adquirida é mais comum do que a congênita.",
+        "A traqueomalacia primária é mais comum do que a secundária.",
+        "A maioria das crianças com traqueomalacia precisará de cirurgia corretiva.",
+        "As pneumonias de repetição, quando decorrentes de traqueomalacia, têm indicação de tratamento cirúrgico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 aborda aspectos da traqueomalacia em pediatria, focando na diferenciação entre formas congênita e adquirida, bem como nos critérios para tratamento cirúrgico.</p><p><strong>A resposta correta é D - as pneumonias de repetição, quando decorrentes de traqueomalacia, têm indicação de tratamento cirúrgico.</strong></p><p><strong>Análise de cada alternativa:</strong></p><p><strong>A) A traqueomalacia adquirida é mais comum do que a congênita:</strong> <strong>INCORRETA.</strong> Na verdade, a forma congênita é mais comum em crianças. A traqueomalacia congênita pode estar associada a atresia esofágica, insuficiência vascular, miorredondos anômalos e prematuridade. A forma adquirida, geralmente secundária a intubação prolongada ou traumatismo, é menos frequente.</p><p><strong>B) A traqueomalacia primária é mais comum do que a secundária:</strong> <strong>INCORRETA.</strong> A traqueomalacia secundária é mais comum. A secundária pode ser causada por compressão vascular, massas mediastinais, ou doenças de дугаaórtica. A forma primária (isolada) é mais rara e pode estar associada a heranças genéticas ou sindrômicas.</p><p><strong>C) A maioria das crianças com traqueomalacia precisará de cirurgia corretiva:</strong> <strong>INCORRETA.</strong> A maioria das crianças com traqueomalacia se resolve espontaneamente até os 2-3 anos de idade com o crescimento e desenvolvimento do sistema respiratório. O tratamento é principalmente conservador, incluindo manejo de infecções respiratórias, fisioterapia respiratória e suporte nutricional.</p><p><strong>D) As pneumonias de repetição, quando decorrentes de traqueomalacia, têm indicação de tratamento cirúrgico:</strong> <strong>CORRETA.</strong> Pneumonias de repetição causadas por aspiração secundária à traqueomalacia, especialmente se houver comprometimento nutricional grave ou falência respiratória, constituem indicação para intervenção cirúrgica. Técnicas incluem aortopexia, traqueopexia ou reconstrução traqueal.</p><p><strong>Contexto clínico da traqueomalacia:</strong> A traqueomalacia é caracterizada por colapso da traqueia durante a expiração ou tosse, causando sintomas como estridor, tosse crônica, apneia do sono e pneumonias de repetição. O diagnóstico é confirmado por broncoscopia dinâmica, que demonstra o colapso traqueal durante manobras expiratórias.</p><p><strong>Veredito: A alternativa D está correta, avaliando conhecimento sobre indicação cirúrgica em traqueomalacia pediátrica.</strong></p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_DoencasDaInfanica",
+        "Pediatria_EmergenciasPediatricas",
+        "Cirurgia_CirurgiaInfantil"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Sequestro broncopulmonar é uma malformação congênita caracterizada pela presença de um tecido pulmonar que não se comunica com a via aérea traqueobrônquica normal. Todas as assertivas abaixo estão corretas sobre essa malformação, exceto uma.\nAssinale-a.",
+      "alternativas": [
+        "Sequestro broncopulmonar é uma malformação congênita caracterizada pela presença de um tecido pulmonar que não se comunica com a via aérea traqueobrônquica normal. Todas as assertivas abaixo estão corretas sobre essa malformação, exceto uma. Assinale-a.",
+        "O sequestro extrapulmonar pode conter componentes histológicos semelhantes aos da malformação congênita de via aérea e pulmão (antigamente denominada de malformação adenomatoide cística).",
+        "O sequestro extrapulmonar ocorre mais comumente na porção inferior do hemitórax direito.",
+        "O sequestro intrapulmonar possui drenagem venosa pulmonar e ocorre geralmente nos lobos inferiores."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da banca HCPA explora seu conhecimento sobre malformações congênitas do sistema respiratório, especificamente sequestro broncopulmonar.</strong> O objetivo é identificar qual afirmação está INCORRETA entre as características desta condição.</p><p><strong>O sequestro broncopulmonar</strong> é uma malformação em que tecido pulmonar funciona de forma independente da via aérea normal, recebendo aporte sanguíneo sistêmico em vez de pulmonar. Existem dois tipos: intrapulmonar (dentro do pulmão) e extrapulmonar (separado do pulmão).</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> Define adequadamente o sequestro como tecido pulmonar desconectado da via aérea normal - esta é a definição clássica da condição.</p><p><strong>B) CORRETA:</strong> O sequestro extrapulmonar pode conter componentes similares à malformação adenomatoide cística, pois ambos resultam de anormalidades no desenvolvimento pulmonar primitivo.</p><p><strong>C) INCORRETA:</strong> O sequestro extrapulmonar ocorre mais frequentemente no hemitórax <em>esquerdo</em> (região posterioresuperior), não direito. Esta é a localização mais comum descrita na literatura médica.</p><p><strong>D) CORRETA:</strong> O sequestro intrapulmonar realmente apresenta drenagem venosa pulmonar e localização preferencial nos lobos inferiores, sendo mais comum que o extrapulmonar.</p><p><strong>Veredito:</strong> A alternativa <strong>C</strong> está incorreta por swapear a lateralidade (deve ser hemitórax ESQUERDO).</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_CirurgiaToracica_SequebroBroncopulmonar"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Assinale a assertiva correta sobre expansores teciduais em cirurgia plástica.",
+      "alternativas": [
+        "Não promovem apenas estiramento, mas também crescimento tecidual.",
+        "São uma técnica útil em áreas irradiadas.",
+        "A epiderme atrofia, e a derme hipertrofia.",
+        "O expansor não pode ser reutilizado, mesmo se o retalho expandido não cobrir toda a área a ser reconstruída."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>A banca HCPA avaliou aqui seu conhecimento sobre biomecânica e fisiologia dos expansores teciduais</strong> em cirurgia plástica, uma técnica fundamental para reconstruções que exigem mais tecido do que o disponível localmente.</p><p><strong>A expansão tecidual</strong> funciona através de dois mecanismos: estiramento mecânico (efeito imediato) e crescimento tecidual ativo (efetivo a longo prazo), envolvendo neoangiogênese e proliferação celular.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) CORRETA:</strong> <em>Não apenas estiramento, mas crescimento tecidual real.</em> O tecido expandido apresenta aumento real de células (neocrescimento), vascularização e area total - não é apenas deformação elástica.</p><p><strong>B) INCORTA:</strong> Áreas irradiadas são <em>contraindicação relativa</em> para expansão por alterações vasculares e risco aumentado de complicações (exposição, infecção, falha de expansão).</p><p><strong>C) INCORTA:</strong> Ocorre o <em>oposto</em>: epiderme hipertrofia e derme atrofia durante expansão. A epiderme responde com hiperplasia compensatória, enquanto a derme se adelgaça.</p><p><strong>D) INCORTA:</strong> O expansor <em>pode ser reutilizado</em> se retirado sem perdas, permitindo nova expansão ou uso diferente do retalho expandido restante.</p><p><strong>Conceito-chave:</strong> A expansão é crescimento ativo com neoangiogênese, não apenas deformação mecânica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica",
+        "Cirurgia_CirurgiaPlastica_ExpansoresTeciduais"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Que critério, dentre os abaixo, deve ser considerado no planejamento de cirurgia plástica após cirurgia bariátrica?",
+      "alternativas": [
+        "O paciente deve aguardar pelo menos 6 meses após a cirurgia bariátrica para submeter-se a cirurgia plástica.",
+        "O peso do paciente deve permanecer estável por 1 mês.",
+        "O índice de massa corporal do paciente deve ser <35kg/m².",
+        "O paciente deve estar bem nutrido, sem deficiências proteicas e de vitaminas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão testa seu conhecimento sobre timing e critérios para cirurgia plástica após perda ponderal maciça.</strong> A banca busca avaliar se você compreende os fatores determinantes para sucesso das reconstruções pós-bariátricas.</p><p><strong>Após cirurgia bariátrica</strong>, o paciente passa por mudanças metabólicas complexas. O tecido, por ter sido previamente esticado e apresentar alterações vasculares, precisa estar em condições ideais para cicatrização adequada.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORTA:</strong> 6 meses é <em>insuficiente</em> para estabilização do peso e resolução das deficiências nutricionais. O tempo mínimo recomendado é 12-18 meses.</p><p><strong>B) INCORTA:</strong> 1 mês de estabilidade ponderal é <em>muito pouco</em> para assegurar peso final estável. O padrão é 3-6 meses de peso estável.</p><p><strong>C) INCORTA:</strong> IMC <35kg/m² é guideline antiga. Atualmbdica brasileira (2024) indica IMC idealmente <30kg/m² para melhores resultados e menor risco de complicações.</p><p><strong>D) CORRETA:</strong> <em>Status nutricional otimizado é o principal fator de sucesso.</em> Proteínas adequadas (albumina >3.0g/dL), vitaminas (A, C, complexo B, ferro, zinco) e micronutrientes são essenciais para cicatrização, neovascularização e prevenção de complicações.</p><p><strong>Princípio fundamental:</strong> Nutrição adequada > timing específico > IMC alvo.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaBariatricaEMetabolica",
+        "Cirurgia_CirurgiaBariatricaEMetabolica_PlanejamentoPosCirurgico",
+        "Cirurgia_CirurgiaPlastica",
+        "Cirurgia_CirurgiaPlastica_CirurgiaPosBariatrica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Assinale a assertiva correta sobre enxertos e retalhos, técnicas fundamentais em cirurgia plástica.",
+      "alternativas": [
+        "A transferência de tecido livre microvascular (também denominado retalho livre ou autotransplante) constitui uma técnica de complexidade menor do que a de retalhos pediculados.",
+        "As linhas de expressão facial de pele têm importância na tensão e localizam-se paralelas ao músculo subjacente.",
+        "Um enxerto de pele pode ser colocado sobre o periósteo íntegro.",
+        "Não se realiza enxerto em malha sobre áreas irregulares."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A banca HCPA buscou avaliar seu conhecimento sobre técnicas básicas em cirurgia plástica:</strong> diferença entre enxertos e retalhos, princípios de vascularização e indicações clínicas.</p><p><strong>Conceitos fundamentais:</strong> Enxertos dependem de vascularização do leito receptor, enquanto retalhos mantêm seu próprio suprimento sanguíneo (pediculado ou livre).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORTA:</strong> A técnica de <em>transferência livre microvascular é MAJOR mais complexa</em> que retalhos pediculados. Requer domínio de microcirurgia, anastomoses vasculares e apresentação de спазмов.</p><p><strong>B) INCORTA:</strong> As linhas de expressão facial são <em>PERPENDICULARES</em> ao músculo subjacente, não paralelas. Por exemplo: rugas frontais são horizontais (perpendiculares ao músculo frontal vertical).</p><p><strong>C) CORRETA:</strong> <em>Enxertos podem sim ser colocados sobre periósteo íntegro.</em> O periósteo é uma base vascularizada adequada para enraizamento de enxertos cutâneos, fornecendo nutrientes para incorporação.</p><p><strong>D) INCORTA:</strong> Enxertos em malha (mesh) são <em>especialmente indicados para áreas irregulares</em>. A malha permite expansão do enxerto, adaptando-se melhor a superfícies irregulares e aumentando a área de cobertura.</p><p><strong>Conceito-chave:</strong> Leitos vascularizados não são requisito absoluto para enxertos - periósteo é uma base aceitável.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica",
+        "Cirurgia_CirurgiaPlastica_EnxertosERetalhos"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "<html><head></head><body>Paciente masculino, de 56 anos, consultou por lesão de pele no dorso (imagem abaixo) que já vinha sendo observada há muitos anos, mas que, nos últimos meses, apresentou crescimento e mudança de cor. Negou prurido ou sangramento. Não tinha histórico pessoal ou familiar de melanoma. O maior diâmetro da lesão é de 8mm. Diante desse quadro clínico, qual a conduta mais adequada?\n\n<img src=\"https://medbrave.com.br/questions/hcpa-2022-r3/qQ35.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Biópsia excisional da lesão com margem mínima de pele aparentemente normal (1- 2mm).",
+        "Biópsia incisional com navete cirúrgica, incluindo borda aparentemente mais ativa.",
+        "Biópsias incisionais com punch em pelo menos 3 áreas mais suspeitas (borda e transição de cor).",
+        "Exérese da lesão com margem mínima de pele aparentemente normal (1-2cm)."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avaliou sua capacidade de conduta frente a lesão cutânea suspeita</strong>, aplicando algoritmos de diagnóstico e tratamento do melanoma. A presença da imagem é crucial para análise visual da lesão.</p><p><strong>Análise da imagem:</strong> A lesão apresenta características suspeitas para melanoma: assimetria, bordas irregulares, coloração heterogênea (tons de castanho, preto e áreas mais claras), e crescimento recente (mudança de cor e tamanho). O paciente apresenta fatores de risco: sexo masculino, idade >50 anos, localização em área exposta ao sol (dorso).</p><p><strong>Critérios para biópsia em lesões suspeitas:</strong> Lesões >6mm com modificação recente são indicação forte para avaliação histopatológica. Biópsia deve ser excisional quando tecnicamente factível.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA:</strong> <em>Biópsia excisional com margens de 1-2mm é a conduta padrão</em> para lesões suspeitas de melanoma. Permite avaliação histopatológica completa (espessura de Breslow, nível de Clark) e mantém margens adequadas.</p><p><strong>B) INCORTA:</strong> Biópsia incisional com navete pode <em>fragmentar o tumor</em>, dificultar avaliação de margens e aumentar risco de disseminação.</p><p><strong>C) INCORTA:</strong> Múltiplas biópsias com punch <em>aumentam fragmentação e o risco</em> sem vantagem diagnóstica. Se punção, uma única biópsia é suficiente.</p><p><strong>D) INCORTA:</strong> Margens de 1-2cm são <em>excessivas para fase diagnóstica</em>. Marginectomia adequada será baseada no resultado anatomopatológico (1cm para melanoma in situ, 1-2cm para melanoma invasivo).</p><p><strong>Princípio fundamental:</strong> Em suspeita de melanoma, sempre preferir biópsia excisional diagnóstica antes de qualquer margem terapêutica.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaPlastica",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele",
+        "Cirurgia_CirurgiaPlastica_BiopsiaExcisional"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Assinale a assertiva correta sobre neoplasias malignas do tipo não melanoma.",
+      "alternativas": [
+        "A incidência de carcinoma de células escamosas vem diminuindo",
+        "A taxa de mortalidade é maior no carcinoma basocelular do que no carcinoma de células escamosas.",
+        "Não existe lesão cutânea precursora de carcinomas basocelulares, ao contrário do que se verifica nos carcinomas de células escamosas.",
+        "Carcinomas basocelulares não apresentam pigmentação marrom ou preta."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia seu conhecimento sobre neoplasias cutâneas não melanoma, especificamente as características distintivas entre carcinoma basocelular e carcinoma de células escamosas.</p><p><strong>A resposta correta é C.</strong> Esta é a única assertiva verdadeira sobre neoplasias malignas não melanoma.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. A incidência de carcinoma de células escamosas tem <strong>aumentado</strong> significativamente nas últimas décadas, especialmente em populações expostas à radiação UV,变得越来越 relevante em dermatologia. Dados do MS 2025 mostram crescimento de aproximadamente 3-5% ao ano.</p><p><strong>Alternativa B:</strong> INCORRETA. Na verdade, o carcinoma de células escamosas apresenta <strong>menor</strong> taxa de mortalidade (1-3%) comparado ao carcinoma basocelular. O BCC tem mortalidade próxima de zero, enquanto o CEC pode ter metástases em casos avançados.</p><p><strong>Alternativa C:</strong> CORRETA. Esta é a assertiva verdadeira. O carcinoma basocelular <strong>não possui</strong> lesões cutâneas precursoraswell definidas, ao contrário do carcinoma de células escamosas que pode desenvolver a partir de queratoses actínicas, ceratoses seborréicas displásicas ou doença de Bowen.</p><p><strong>Alternativa D:</strong> INCORRETA. Os carcinomas basocelulares <strong>podem apresentar</strong> pigmentação marrom ou preta, especialmente na variante nodular pigmentada. Esta apresentação pode simular melanoma, exigindo diagnóstico diferencial cuidadoso.</p><p><strong>Veredito:</strong> A alternativa C representa o conhecimento atualizado sobre a fisiopatologia das neoplasias cutâneas, destacando que enquanto o CEC tem um espectro de lesões precursoras bem estabelecido, o BCC surge diretamente da epiderme normal ou danificada pela radiação UV.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Assinale a alternativa que contempla critérios que definem corretamente o derrame pleural parapneumônico como complicado.",
+      "alternativas": [
+        "LDH do derrame/LDH sérica > 0,6, pH do derrame <7,1 e glicose do derrame < 40 mg/dl.",
+        "Loculações à tomografia computadorizada de tórax, relação proteína total do derrame/proteína total sérica > 0,5 e LDH > 1.000 U/I",
+        "Loculações ao raio X de tórax, pH do derrame < 7,4 e glicose do derrame < 40 mg/dl.",
+        "Loculações ao raio X de tórax, LDH > 1.000 U/I e glicose do derrame < 40 mg/dl."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu domínio dos critérios diagnósticos para classificação de derrames pleurais parapneumônicos, especificamente na definição de derrame <em>complicado</em> versus <em>não complicado</em>.</p><p><strong>A resposta correta é D.</strong> Esta é a única alternativa que contempla corretamente os três critérios principais para derrame pleural parapneumônico complicado.</p><p>Analisando sistematicamente cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. Embora LDH > 0,6 e pH < 7,1 sejam importantes, o ponto problemático é que <strong>não inclui</strong> a presença de loculações, que é critério fundamental. Além disso, o valor de pH < 7,1 é muito restritivo.</p><p><strong>Alternativa B:</strong> INCORRETA. Esta alternativa apresenta problemas significativos: não menciona <strong>pH do derrame</strong> (crucial na classificação), usa valores de LDH incorretos (deveria ser LDH > 1000 U/L, não apenas loculações), e a relação proteína > 0,5 é mais indicativa de exsudato do que de complicação.</p><p><strong>Alternativa C:</strong> INCORRETA. O problema principal é que o pH < 7,4 é <strong>muito pouco específico</strong> - valores abaixo de 7,2 são mais adequados para definir complicação. Além disso, não menciona LDH elevada, que é marcador importante.</p><p><strong>Alternativa D:</strong> CORRETA. Esta alternativa contempla os três critérios gold standard para derrame complicado: <strong>loculações</strong> (evidência de septação), <strong>LDH > 1000 U/L</strong> (indicativo de inflamação intensa e necrose), e <strong>glicose < 40 mg/dL</strong> (marcador de metabolismo celular elevado). Estes parâmetros, segundo diretrizes do Ministério da Saúde 2025, definem a necessidade de intervenção mais agressiva.</p><p><strong>Veredito:</strong> O reconhecimento destes critérios é fundamental para a conduta clínica adequada, pois derrames complicados requerem abordagens terapêuticas mais invasivas, incluindo drenagem e possivelmente fibrinolíticos ou cirurgia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Assinale a assertiva correta sobre timomas.",
+      "alternativas": [
+        "Por seu comportamento benigno, os timomas não serão ressecados quando tiverem < 3 cm.",
+        "O tratamento cirúrgico deve ser evitado na crise miastênica.",
+        "O tratamento cirúrgico tem como principal objetivo tratar ou evitar a miastenia gravis subsequente.",
+        "O tratamento cirúrgico é sempre videotoracoscópico para evitar desenvolvimento de crise miastênica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda aspectos cruciais do tratamento cirúrgico de timomas, incluindo suas indicações, timing e relação com miastenia gravis.</p><p><strong>A resposta correta é B.</strong> Esta é a única assertiva que descreve corretamente o manejo de timomas em pacientes com crise miastênica.</p><p>Análise detalhada de cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. A indicação cirúrgica para timomas <strong>não se baseia</strong> apenas no tamanho. Timomas de qualquer tamanho com características de malignidade (massa > 3 cm, crescimento rápido, sintomas compressivos) devem ser considerados para ressecção. Além disso, mesmo timomas pequenos podem causar miastenia gravis.</p><p><strong>Alternativa B:</strong> CORRETA. Durante <strong>crise miastênica ativa</strong>, a cirurgia deve ser evitada devido ao alto risco de exacerbação pós-operatória, necessidade de ventilação mecânica prolongada e mortalidade aumentada. A preferência é estabilizar a miastenia gravis primeiro (plasmapherese, imunoglobulina) antes de proceder com timectomia.</p><p><strong>Alternativa C:</strong> INCORRETA. O objetivo principal do tratamento cirúrgico de timomas é a <strong>ressecção completa do tumor</strong> para prevenir progressão local e metástases. Embora possa melhorar sintomas de miastenia gravis em alguns casos, este não é o objetivo primário, especialmente em timomas de alto grau de malignidade.</p><p><strong>Alternativa D:</strong> INCORRETA. A abordagem videotoracoscópica <strong>não é sempre preferida</strong> e não previne o desenvolvimento de crise miastênica. A escolha da via cirúrgica depende do tamanho do tumor, invasão de estruturas adjacentes e experiência do cirujão. Abordagens abertas podem ser necessárias para ressecção completa.</p><p><strong>Veredito:</strong> O timing da cirurgia em pacientes com miastenia gravis é crucial - priorizar estabilização clínica antes de qualquer intervenção cirúrgica eletiva é mandatório para reduzir morbimortalidade.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Paciente feminina, de 64 anos, com histórico de hipertensão arterial sistêmica, diabetes melito e tabagismo (desde os 14 anos), consultou por apresentar massa pulmonar de 5,5 cm no lobo superior esquerdo em íntimo contato com o mediastino, determinando atelectasia desse lobo, com linfonodos mediastinais formando conglomerado subcarinal de 4 cm. Broncoscopia flexível revelou lesão endobrônquica originária do lobo superior que comprometia a carina secundária, cuja biópsia indicou carcinoma epidermoide. Diante desse quadro, que alternativa, dentre as abaixo, contempla um critério absoluto para contraindicação cirúrgica?",
+      "alternativas": [
+        "Atelectasia lobar.",
+        "Conglomerado subcarinal.",
+        "Comprometimento da carina secundária.",
+        "Íntima relação com o mediastino."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre critérios para operabilidade em carcinoma broncogênico, especificamente critérios <em>absolutos</em> para contraindicação cirúrgica.</p><p><strong>A resposta correta é B.</strong> O conglomerado subcarinal representa um critério absoluto para contraindicação cirúrgica.</p><p>Vamos analisar a apresentação clínica: paciente com carcinoma epidermoide de 5,5 cm no lobo superior esquerdo, em íntimo contato com mediastino, com atelectasia lobar e <strong>conglomerado subcarinal de 4 cm</strong> em linfonodos mediastinais.</p><p>Análise de cada alternativa:</p><p><strong>Alternativa A - Atelectasia lobar:</strong> INCORRETA. Atelectasia isolada <strong>não contraindica</strong> cirurgia. Na verdade, a ressecção do tumor pode resolver a atelectasia se a obstrução for tratada adequadamente. Este é um achado comum em tumores centrais e não implica irresecabilidade.</p><p><strong>Alternativa B - Conglomerado subcarinal:</strong> CORRETA. Linfonodos subcarinais de <strong>4 cm</strong> (especialmente quando em conglomerado) representam <strong>doença N3</strong> (estadiamento IIIB), que é critério absoluto para contraindicação de cirurgia. Estes linfonodos não são ressecáveis por toracotomia convencional e indicam doença sistêmica.</p><p><strong>Alternativa C - Comprometimento da carina secundária:</strong> INCORRETA. Envolvimento de carina secundária <strong>não é contraindicação absoluta</strong> para cirurgia, especialmente se a ressecção com pneumonectomia e broncoplastia for tecnicamente possível. Tumores centrais podem requerer procedimentos mais complexos, mas não são automaticamente irresecáveis.</p><p><strong>Alternativa D - Íntima relação com mediastino:</strong> INCORRETA. Proximidade ao mediastino <strong>não contraindica</strong> automaticamente a cirurgia. A ressecção completa pode ser possível mesmo com invasión da pleura mediastinal, desde que a margem de ressecção seja alcançada. A operabilidade depende mais de critérios de estadiamento que de localização anatômica.</p><p><strong>Veredito:</strong> A doença N3 (linfonodos contralaterais ou subcarinais) representa contraindicação absoluta para cirurgia em carcinoma broncogênico. Segundo diretrizes do INCA 2025, estes pacientes devem ser direcionados para tratamento sistêmico com possibilidade de radioterapia para controle local.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Paciente de 59 anos foi submetida a hemicolectomia esquerda devido a adenocarcinoma de cólon. Tinha história de hipertensão arterial sistêmica, diabetes melito tipo 2 e tabagismo (ex-tabagista). Durante o pós-operatório, teve início quadro de dispneia, febre moderada e dor pleurítica à esquerda. Raio X de tórax evidenciou velamento do terço inferior do hemitórax esquerdo compatível com derrame pleural. A toracocentese diagnóstica mostrou derrame exsudativo com predomínio neutrofílico, pH de 6,9, glicose do líquido pleural de 36 mg/dl e cocos Grampositivos à bacterioscopia. Levando em conta o diagnóstico de empiema pleural, assinale a assertiva correta.",
+      "alternativas": [
+        "Para a realização da drenagem pleural, drenos considerados finos (< 15 Fr) estão contraindicados em virtude da viscosidade do líquido infeccioso; devem ser utilizados, para esse fim, drenos calibrosos (> 28 Fr).",
+        "A instilação de agentes fibrinolíticos intrapleurais tem demonstrado grande eficácia no tratamento de derrames pleurais parapneumônicos loculados; o uso de estreptoquinase se mostrou superior às abordagens cirúrgicas para esse fim.",
+        "Tomografia computadorizada de tórax evidenciando derrame pleural multiloculado e septado é fator de risco para o insucesso da drenagem pleural isolada; deve-se, nesse caso, considerar a necessidade de abordagem cirúrgica ampliada.",
+        "Debridamentos e deloculações por via toracoscópica (VATS) estão associados a altos índices de recidiva; a via toracotômica convencional sempre deve ser preferida."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo de empiema pleural, especificamente estratégias terapêuticas e fatores que determinam falha da drenagem pleural simples.</p><p><strong>A resposta correta é C.</strong> Esta é a única assertiva que descreve corretamente a relação entre características tomográficas e necessidade de abordagem cirúrgica ampliada.</p><p>Contexto clínico: paciente pós-hemicolectomia com quadro sugestivo de empiema pleural (febre, dispneia, dor pleurítica, derrame com pH 6,9, glicose 36 mg/dL e cocos Gram-positivos).</p><p>Análise detalhada das alternativas:</p><p><strong>Alternativa A:</strong> INCORRETA. Drenos finos (15-24 Fr) <strong>podem ser utilizados</strong> em empiemas, mesmo com líquidos viscosos. Estudos mostram eficácia comparável aos drenos calibrosos, com menor desconforto. A escolha do calibre depende mais da experiência do operador que da viscosidade do líquido.</p><p><strong>Alternativa B:</strong> INCORRETA. Fibrinolíticos intrapleurais <strong>não são superiores</strong> à cirurgia para empiemas loculados. Embora possam ajudar em casos selecionados, a evidência não sustenta sua superioridade sobre abordagens cirúrgicas. A estreptoquinase também tem risco de complicações (sangramento).</p><p><strong>Alternativa C:</strong> CORRETA. Derrame pleural <strong>multiloculado e septado</strong> à TC é fator de alto risco para falha da drenagem pleural isolada. A presença de septações indica organização do derrame, exigindo técnicas mais invasivas (VATS, fibrinolíticos intrapleurais) ou até toracotomia para debridamento completo.</p><p><strong>Alternativa D:</strong> INCORRETA. VATS <strong>não está associado a altos índices de recidiva</strong> - na verdade, oferece vantagens sobre toracotomia: menor trauma cirúrgico, recuperação mais rápida, menor morbidade. Para empiemas em estágio fibrinopurulento (presente no caso), VATS é primeira escolha em muitos centros.</p><p><strong>Veredito:</strong> O padrão tomográfico multiloculado evidencia empiema organizado, que requer abordagem terapêutica escalonada. A TC é essencial para planejamento cirúrgico, mostrando extensão e septações que orientam a decisão entre drenagem simples, VATS ou toracotomia.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Assinale a assertiva correta sobre doença hemorroidária.",
+      "alternativas": [
+        "Assinale a assertiva correta sobre doença hemorroidária.",
+        "Os procedimentos realizados em Ambulatório, como ligadura elástica, escleroterapia e coagulação com infravermelho, estão indicados para pacientes com hemorroidas externas não trombosadas.",
+        "Pacientes com crise hemorroidária, caracterizada por hemorroidas estranguladas e necróticas, requerem tratamento cirúrgico, inclusive gestantes.",
+        "O procedimento de ligadura elástica é efetivo para hemorroidas internas de 1º - 4º graus."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia o conhecimento sobre tratamento de doença hemorroidária, especificamente as indicações dos procedimentos ambulatoriais versus cirúrgicos.</p><p><strong>Analisando cada alternativa:</strong></p><p>A alternativa A repete o enunciado, sendo incorreta por não adicionar informação.</p><p>A alternativa B está INCORRETA. Os procedimentos ambulatoriais (ligadura elástica, escleroterapia, coagulação infravermelha) são indicados para hemorroidas INTERNAS de 1º a 3º graus, não para hemorroidas externas não trombosadas. Hemorroidas externas geralmente são tratadas com medidas conservadoras ou, se trombosadas, podem requerir excisão.</p><p>A alternativa C está INCORRETA. Pacientes gestantes com hemorroidas estranguladas e necróticas podem sim requerer tratamento cirúrgico de urgência, MAS a afirmativa está incorreta ao generalizar que \"inclusive gestantes\" - é necessário avaliar cada caso individualmente, considerando riscos obstétricos.</p><p><strong>A alternativa D é a CORRETA.</strong> A ligadura elástica é efetiva para hemorroidas internas de 1º a 4º graus, sendo o tratamento gold standard para graus I-III. Para grau IV, pode ser utilizada como complementação após outros procedimentos.</p><p><strong>Veredito: D é a resposta correta.</strong> A questão testa o conhecimento sobre a correta indicação de procedimentos ambulatoriais para hemorroidas internas, sendo a ligadura elástica o método mais eficaz dentro das indicações apropriadas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_Proctologia_DoencaHemorrhoidaria",
+        "Cirurgia_Proctologia_DoencaHemorrhoidaria_Tratamento"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Qual o tratamento primário do carcinoma epidermoide do canal anal com invasão esfincteriana para paciente sem outras comorbidades?",
+      "alternativas": [
+        "Ressecção local do tumor.",
+        "Ressecção abdominoperineal do reto.",
+        "Radioterapia exclusiva.",
+        "Radioterapia combinada com quimioterapia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda o tratamento do carcinoma epidermoide do canal anal com invasão esfincteriana, exigindo conhecimento sobre os protocolos atuais de tratamento oncológico para esta localização específica.</p><p><strong>Competência avaliada:</strong> Manejo terapêutico do câncer anal e aplicação de protocolos combinados.</p><p><strong>Análise das alternativas:</strong></p><p>A - INCORRETA. A ressecção local não é adequada para tumores com invasão esfincteriana, pois não garante margens de segurança oncológicas adequadas e apresenta alta taxa de recidiva.</p><p>B - INCORRETA. A ressecção abdominoperineal está indicada em casos avançados ou falhados de tratamento conservador, mas não é o tratamento primário de primeira escolha para esta apresentação.</p><p>C - INCORRETA. A radioterapia exclusiva não é suficiente para carcinomas epidermoides do canal anal, especialmente quando há invasão esfincteriana, pois o tumor requer tratamento combinado para melhor controle local.</p><p><strong>D - CORRETA.</strong> Radioterapia combinada com quimioterapia é o tratamento primário de escolha para carcinoma epidermoide do canal anal com invasão esfincteriana. O protocolo de Nigro (5-FU + mitomicina C + radioterapia) oferece taxas de cura de 80-85% com preservação esfincteriana, sendo considerado o padrão ouro atual.</p><p><strong>Veredito: D é a resposta correta.</strong> O tratamento combinado permite preservação esfincteriana com excelente controle oncológico, representando o avanço mais significativo no manejo do câncer anal nas últimas décadas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Proctologia",
+        "Cirurgia_Proctologia_CancerDeCanalAnal",
+        "Cirurgia_Proctologia_CancerDeCanalAnal_Tratamento",
+        "Cirurgia_Proctologia_CancerDeCanalAnal_Tratamento_CarcinomaEpidermoide"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Assinale a assertiva correta sobre polipose adenomatosa familiar clássica.",
+      "alternativas": [
+        "Carcinomas periampulares e de duodeno representam importante causa de mortalidade nos pacientes acometidos",
+        "Se não tratados, os pacientes desenvolvem adenocarcinoma colorretal por volta dos 50 anos de idade",
+        "Está associada a colangite esclerosante determinada pela mutação no gene APC.",
+        "Hiperpigmentação oral é uma manifestação extraintestinal característica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia o conhecimento sobre polipose adenomatosa familiar clássica (PAFC), especialmente suas complicações e morbimortalidade,cendo na superpopulação do manejo da síndrome.</p><p><strong>Competência avaliada:</strong> Complicações e mortalidade na PAF, conhecimento sobre a história natural da doença.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A - CORRETA.</strong> Carcinomas periampulares e de duodeno representam importante causa de mortalidade na PAF. Após colectomia profilática, o câncer duodenal periampular torna-se a principal causa de morte, com risco de 4-12% ao longo da vida. A vigilância endoscópica é fundamental para detectar displasias e cânceres precoces.</p><p>B - INCORRETA. Se não tratados, os pacientes desenvolvem adenocarcinoma colorretal por volta dos 40 anos (não 50), com praticamente 100% de probabilidade de desenvolver câncer colorretal até os 40-45 anos.</p><p>C - INCORRETA. A PAF não está associada a colangite esclerosante. Esta associação é mais típica da retocolite ulcerativa e doença de Crohn, sendo a PAF associada principalmente a manifestações desmoides, osteomas, anomalias dentárias e outras manifestações extraintestinais.</p><p>D - INCORRETA. Hiperpigmentação oral é característica da síndrome de Peutz-Jeghers, não da PAF. Na PAF, as manifestações extraintestinais incluem osteomas, epidermoid cysts, fibromas, anomalias dentárias, mas não hiperpigmentação oral.</p><p><strong>Veredito: A é a resposta correta.</strong> A questão destaca um ponto crucial do manejo da PAF: após a colectomia, a vigilância do trato gastrointestinal superior é fundamental, pois os tumores periampulares tornam-se a principal causa de mortalidade.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Gastroenterologia",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_PoliposeIntestinal"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Paciente de 63 anos, casada, veio à consulta queixando-se de sangramento às evacuações, quadro iniciado há 6 meses. Ao toque retal, identificou-se lesão vegetante endurecida, com 1,5 cm de diâmetro, localizada na parede anterior do reto, a 5 cm da margem anal. Após colonoscopia com biópsia, diagnosticou-se um adenocarcinoma bem diferenciado. Exames complementares de imagem não evidenciaram metástases à distância, porém a dosagem sérica do antígeno carcinoembriônico estava aumentada. Em relação ao caso, assinale a assertiva correta",
+      "alternativas": [
+        "Ressonância magnética é o principal exame para definição do tratamento a ser adotado.",
+        "Por ser um tumor pequeno e bem diferenciado, ressecção local (per anus) é o tratamento de escolha.",
+        "Em caso de tratamento cirúrgico, a localização baixa do tumor determina a necessidade da realização de colostomia definitiva.",
+        ") Tendo em vista o tamanho do tumor, está descartada terapia neoadjuvante com quimioterapia e radioterapia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 apresenta um caso clínico de adenocarcinoma de reto, avaliando o conhecimento sobre estadiamento local e planejamento terapêutico para câncer retal em estágio inicial.</p><p><strong>Competência avaliada:</strong> Estadiamento e tratamento do câncer retal, indicações para terapia neoadjuvante.</p><p><strong>Analisando o caso:</strong> Homem de 63 anos, adenocarcinoma bem diferenciado, 1,5 cm, 5 cm da margem anal, sem metástases à distância, mas com CEA elevado. Tumor localizado na parede anterior do reto.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A - CORRETA.</strong> A ressonância magnética é o principal exame para definição do tratamento em câncer retal. A RM permite avaliar profundidade da infiltração (T), comprometimento de linfonodos (N), relação com estruturas vizinhas (mesorrectal), e distância da margem anal. Para tumores a 5 cm, a RM é fundamental para determinar se há necessidade de terapia neoadjuvante.</p><p>B - INCORRETA. Embora seja um tumor pequeno, a ressecção local (per anus) só é indicada para tumores T1sm1, bem diferenciados, sem comprometimento linfovascular, em pacientes selecionados. O CEA elevado sugere agressividade e o local (parede anterior) pode ter implicações prognósticas.</p><p>C - INCORRETA. Localização baixa (até 3-5 cm) pode determinar colostomia temporária, mas não definitiva. Para tumores a 5 cm, técnicas de preservação esfincteriana são possíveis, especialmente com terapia neoadjuvante.</p><p>D - INCORRETA. O tamanho não é o único fator para descartar terapia neoadjuvante. A localização, histologia (bien diferencionado é favorável, mas CEA elevado é desfavorável) e avaliação RM definem a indicação. Para tumores T2-3N0 ou T1-2N+, a terapia neoadjuvante pode ser indicada.</p><p><strong>Veredito: A é a resposta correta.</strong> A RM é fundamental para o estadiamento local preciso e definição do plano terapêutico, sendo o exame mais importante para determinar a necessidade de terapia neoadjuvante e tipo de abordagem cirúrgica.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Gastroenterologia",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "Cirurgia_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "A hiperplasia nodular estromal (hiperplasia prostática benigna) se desenvolve na",
+      "alternativas": [
+        "zona anterior (área fibromuscular).",
+        "zona periférica (70% do volume da próstata normal).",
+        "zona central (25% do volume da próstata normal).",
+        "zona de transição (5% do volume da próstata normal)."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca HCPA 2022 avalia o conhecimento sobre anatomia prostática e a localização onde se desenvolve a hiperplasia nodular estromal (HPB), tema clássico de urologia e anatomia.</p><p><strong>Competência avaliada:</strong> Anatomia prostática zonal e localização da HBP.</p><p><strong>Conceito fundamental:</strong> A próstata normal é dividida em zonas anatômicas com proporções e características distintas, sendo a HBP uma condição específica da zona de transição.</p><p><strong>Análise das alternativas:</strong></p><p>A - INCORRETA. A zona anterior (área fibromuscular) corresponde à porção anterior da próstata, sendo principalmente constituída por tecido fibromuscular. Esta zona não desenvolve HBP.</p><p>B - INCORRETA. A zona periférica corresponde a 70% do volume prostático normal e é a região mais comumente acometida por câncer de próstata, não por HBP. É a zona mais periférica da glândula.</p><p>C - INCORRETA. A zona central corresponde a 25% do volume prostático normal e é a região que circunda os ductos ejaculadores. Não é o local de desenvolvimento da HBP.</p><p><strong>D - CORRETA.</strong> A zona de transição corresponde apenas a 5% do volume da próstata normal no jovem, MAS é exatamente onde se desenvolve a hiperplasia prostática benigna (HBP). Com o envelhecimento, esta zona pode crescer significativamente e comprimir a zona periférica, causando sintomas obstrutivos urinários.</p><p><strong>Veredito: D é a resposta correta.</strong> A questão destaca um ponto anatômico fundamental: embora a zona de transição seja pequena na próstata jovem, é ela que desenvolve a HBP, crescendo com a idade e sendo a responsável pelos sintomas da HPB. Este conhecimento é essencial para entender a fisiopatologia e abordagem da hiperplasia prostática.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp_AnatomiaDaProstata"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Assinale a assertiva correta sobre neoplasias germinativas testiculares.",
+      "alternativas": [
+        "O tipo espermatocítico representa 50% de todos os seminomas.",
+        "Metástases retroperitoneais pouco volumosas de seminoma puro podem ser tratadas com radioterapia externa.",
+        "Em aproximadamente 90% dos casos, o seminoma espermatocítico ocorre em pacientes com 20-30 anos de idade.",
+        "Seminoma espermatocítico é uma das mais agressivas neoplasias malignas germinativas testiculares."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca HCPA avalia conhecimentos sobre neoplasias germinativas testiculares, especificamente sobre seminoma e suas modalidades terapêuticas. O foco está em conceitos de oncologia urológica muito importantes para a prática clínica.</p><p><strong>A resposta correta é B - Metástases retroperitoneais pouco volumosas de seminoma puro podem ser tratadas com radioterapia externa.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. O seminoma espermatocítico representa apenas cerca de 5-10% dos seminomas, não 50%. A grande maioria dos seminomas (90-95%) são do tipo clássico.</p><p><strong>Alternativa B:</strong> CORRETA. Metástases retroperitoneais de pequeno volume (≤ 5 cm) de seminoma puro podem ser efetivamente tratadas com radioterapia externa, que tem taxas de cura superiores a 95% neste cenário.</p><p><strong>Alternativa C:</strong> INCORRETA. O seminoma espermatocítico tem pico de incidência em homens mais velhos, geralmente após os 50 anos, não entre 20-30 anos. O seminoma clássico é que ocorre tipicamente entre 20-40 anos.</p><p><strong>Alternativa D:</strong> INCORRETA. O seminoma espermatocítico é considerado uma neoplasia de comportamento menos agressivo, com excelente prognóstico. Na verdade, é menos agressivo que o seminoma clássico.</p><p>A chave para esta questão está em conhecer as características específicas do seminoma espermatocítico versus o seminoma clássico, bem como as opções terapêuticas para metástases de seminoma puro.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasTesticulares",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasTesticulares_Seminoma",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasTesticulares_Tratamento"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Para pacientes com quadro clínico de hipertensão intracraniana pós-traumática, está indicada monitorização isolada da pressão intracraniana, com registro contínuo. Essa monitorização poderá ser realizada",
+      "alternativas": [
+        "nos pacientes que se encontrem com 8 pontos ou menos pela Escala de Coma de Glasgow, independentemente da presença de hematoma ou contusão hemorrágica.",
+        "nos pacientes que se encontrem com 8 pontos ou menos pela Escala de Coma de Glasgow na ausência de hematoma com indicação cirúrgica",
+        "somente nos pacientes portadores de um hematoma intracraniano.",
+        "em todos os pacientes, independentemente do quadro clínico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um tema crucial da neurocirurgia e medicina intensiva: a monitorização da pressão intracraniana (PIC) em pacientes com traumatismo cranioencefálico. A banca HCPA quer avaliar seu conhecimento sobre os critérios atuais para indicação de PIC.</p><p><strong>A resposta correta é B - nos pacientes que se encontrem com 8 pontos ou menos pela Escala de Coma de Glasgow na ausência de hematoma com indicação cirúrgica.</strong></p><p>Vamos entender a lógica por trás de cada alternativa:</p><p><strong>Alternativa A:</strong> INCORRETA. Pacientes com GCS ≤ 8 que têm hematomas com indicação cirúrgica necessitam 우선 de intervenção neurocirúrgica, não apenas monitorização de PIC.</p><p><strong>Alternativa B:</strong> CORRETA. A Diretriz Brasileira de Trauma Cranioencefálico (2023) estabelece que pacientes com GCS ≤ 8 e sem indicação cirúrgica imediata devem ter PIC monitorizada para otimizar o tratamento.</p><p><strong>Alternativa C:</strong> INCORRETA. A monitorização de PIC não é restrita apenas a pacientes com hematomas. É indicada em diversos cenários de TCE grave.</p><p><strong>Alternativa D:</strong> INCORRETA. A monitorização de PIC é uma procedimento invasivo com riscos, devendo ser indicado de forma criteriosa, não universal.</p><p>O conceito fundamental é que a PIC deve ser monitorizada em pacientes de alto risco que podem se beneficiar das informações obtained pela monitorização para guiar o tratamento.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico_HipertensaoIntracraniana",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico_Monitorizacao",
+        "Cirurgia_Trauma_TraumatismoCranioencefalico_EscalaComaGlasgow"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Paciente masculino, de 18 anos, vítima de acidente de motocicleta, com trauma contuso de coxa e fratura de fêmur, foi atendido na Emergência com imobilização inicial da fratura e reposição volêmica com cristaloides. Na sondagem vesical, apresentou urina escurecida. Os exames laboratoriais evidenciaram níveis séricos de CPK total de 16.000 U/I. Qual das situações abaixo não está associada ao quadro clínico?",
+      "alternativas": [
+        "Rabdomiólise.",
+        "Hiperpotassemia.",
+        "Síndrome compartimental aguda.",
+        "Hipercalcemia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão do HCPA aborda um cenário clássico de medicina de emergência: rabdomiólise pós-traumática. O caso apresenta elementos típicos que nos permitem fazer o diagnóstico e analisar as complicações associadas.</p><p><strong>A resposta correta é D - Hipercalcemia.</strong></p><p>Vamos analisar este caso: jovem de 18 anos, trauma de alta energia com fratura de fêmur, urina escurecida (mioglobinúria) e CPK de 16.000 U/L (marcadamente elevada). O diagnóstico é rabdomiólise por esmagamento muscular.</p><p><strong>Complicações características da rabdomiólise:</strong></p><p><strong>Alternativa A (Rabdomiólise):</strong> CORRETA. Este é exatamente o diagnóstico do caso - destruição muscular com liberação de CPK e mioglobina.</p><p><strong>Alternativa B (Hiperpotassemia):</strong> CORRETA. A destruição muscular libera potássio intracelular, causando hiperpotassemia que pode levar a arritmias cardíacas.</p><p><strong>Alternativa C (Síndrome compartimental aguda):</strong> CORRETA. Fraturas de fêmur podem causar sangramento e edema nos compartimentos musculares, aumentando a pressão e comprometendo a perfusão.</p><p><strong>Alternativa D (Hipercalcemia):</strong> INCORRETA. Na rabdomiólise ocorre HIPOCALCEMIA, não hipercalcemia, devido à precipitação de cálcio nos tecidos muscularmente danificados e à hipoalbuminemia.</p><p>A questão avalia seu conhecimento sobre as complicações metabólicas da rabdomiólise, sendo a hipocalcemia uma característica importante, não a hipercalcemia.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico_FraturaFmur",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico_Rabdomiolise",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedico",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturaFmur",
+        "Outros_Ortopedia_TraumaOrtopedico_ComplicacoesVa"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Criança de 13 anos foi trazida ao Pronto-Socorro com múltiplas lesões devido à queda de altura, incluindo fratura de 3 arcos costais à direita, da diáfise do fêmur esquerdo e da tíbia esquerda. À admissão, apresentava pressão arterial de 95/60 mmHg e frequência cardíaca de 104 bpm. Encontrava-se dispneica, com confusão mental e com petéquias espalhadas difusamente pelo corpo. O diagnóstico mais provável é",
+      "alternativas": [
+        "embolia gordurosa",
+        "embolia pulmonar.",
+        "embolia gasosa.",
+        "pneumotórax hipertensivo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do HCPA apresenta um caso complexo de trauma múltiplo com uma apresentação clínica sutil mas característica. A banca avalia sua capacidade de identificar síndromes pós-traumáticas específicas baseando-se na tríade clínica apresentada.</p><p><strong>A resposta correta é A - embolia gordurosa.</strong></p><p>O caso descreve: adolescente de 13 anos, trauma de alta energia (queda), múltiplas fraturas (costelas, fêmur, tíbia), hipotensão leve, taquicardia, dispneia, confusão mental e petéquias difusas.</p><p><strong>Análise do diagnóstico:</strong></p><p><strong>Tríade clássica da embolia gordurosa:</strong> 1) Dispneia/hipoxemia, 2) Alteração do estado mental, 3) Petéquias cutâneas. Presente neste caso!</p><p><strong>Por que não as outras alternativas?</strong></p><p><strong>Alternativa B (Embolia pulmonar):</strong> Provocaria dor pleurítica e, se maciça, hipotensão acentuada. As petéquias não são características.</p><p><strong>Alternativa C (Embolia gasosa):</strong> Tipicamente associada a procedimentos invasivos ou trauma de grande vaso. Petéquias não são características.</p><p><strong>Alternativa D (Pneumotórax hipertensivo):</strong> Causaria assimetria torácica, desvio de traqueia e hipotensão grave. Petéquias não são características.</p><p>A embolia gordurosa é mais comum em jovens com fraturas de ossos longos, especialmente fêmur, e a presença da tríade clínica é diagnóstica. O tratamento é suporte com oxigênio e ventilação adequada.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico",
+        "Cirurgia_Trauma_TraumaMusculoesqueletico_EmboliaGorduro",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_PolitraumaOrtopedico",
+        "Outros_Ortopedia",
+        "Outros_Ortopedia_TraumaOrtopedico",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturasELuxac",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturaFmur",
+        "Outros_Ortopedia_TraumaOrtopedico_FraturasDaColu"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Assinale a assertiva incorreta relativa a condutas médicas segundo o Código de Ética Médica.",
+      "alternativas": [
+        "A decisão compartilhada com a família de que não serão mais adotadas medidas de suporte vital ao paciente que esteja em estado terminal de doença incurável, para o qual se tenham esgotado os recursos de tratamento curativo, é eticamente aceitável, mesmo que isso possa apressar a morte.",
+        "O não fornecimento de atestado de óbito a idoso que tenha falecido no Centro de Tratamento Intensivo (CTI) por complicações infecciosas após vários dias de internação em decorrência de fraturas múltiplas não esclarecidas tem amparo no Código de Ética Médica.",
+        "A não abertura de protocolo de morte encefálica em paciente admitido no CTI com quadro clínico sugestivo e compatível com morte encefálica está justificada se o paciente for sabidamente portador de covid-19, não podendo, portanto, ser potencial doador de órgãos para transplante.",
+        "A revelação de gravidez aos pais de adolescente incapaz não fere o sigilo médico e o direito à privacidade da mesma, pelo risco de envolver potencial dano ao feto."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do HCPA aborda situações específicas do Código de Ética Médica, avaliando seu conhecimento sobre as nuances éticas na prática médica diária. A banca apresenta cenários complexos que testam sua capacidade de interpretar corretamente o CEM.</p><p><strong>A resposta incorreta é C - A não abertura de protocolo de morte encefálica em paciente admitido no CTI com quadro clínico sugestivo e compatível com morte encefálica está justificada se o paciente for sabidamente portador de covid-19, não podendo, portanto, ser potencial doador de órgãos para transplante.</strong></p><p>Vamos analisar cada situação:</p><p><strong>Alternativa A:</strong> CORRETA. A suspensão de medidas fúteis em terminalidade é eticamente justificável segundo o CEM, seguindo os princípios de não maleficência e autonomia.</p><p><strong>Alternativa B:</strong> CORRETA. O médico pode se recusar a fornecer atestado que possa ser usado para fins escusos ou fraudulentos, desde que justificado clinicamente.</p><p><strong>Alternativa C:</strong> INCORRETA. A presença de COVID-19 NÃO é contraindicação absoluta para o protocolo de morte encefálica. Atualmente, com medidas de segurança adequadas, pacientes recuperados de COVID-19 podem ser potenciais doadores. O protocolo deve ser aberto quando clinicamente indicado.</p><p><strong>Alternativa D:</strong> CORRETA. A revelação de gravidez em menor é justificada quando há risco ao feto, prevalecendo o princípio da beneficência.</p><p>Esta questão testa seu conhecimento sobre as mudanças no contexto da doação de órgãos durante a pandemia e a importância de não excluir potenciais doadores baseando-se apenas no diagnóstico de COVID-19, desde que medidas de segurança sejam observadas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "MedicinaPreventiva_EticaMedica_SigiloMedico",
+        "MedicinaPreventiva_EticaMedica_MorteEncefalica",
+        "MedicinaPreventiva_EticaMedica_TransplanteOrgaos",
+        "MedicinaPreventiva_EticaMedica_DireitosReproducao",
+        "MedicinaPreventiva_EticaMedica_CuidadosPaliativos"
+      ],
+      "tags": [
+        "HCPA2022R3CG",
+        "HCPA",
+        "R3CG",
+        "PA",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762692341044-49"
+    }
+  ]
+}

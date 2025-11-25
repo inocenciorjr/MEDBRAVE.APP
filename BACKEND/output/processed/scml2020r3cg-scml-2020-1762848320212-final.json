@@ -1,0 +1,985 @@
+{
+  "metadata": {
+    "examName": "SCML2020R3CG (SCML 2020)",
+    "examYear": 2020,
+    "url": "source://1047",
+    "totalQuestions": 30,
+    "categorizedQuestions": 30,
+    "rewrittenComments": 30,
+    "processedAt": "2025-11-11T08:05:20.212Z",
+    "jobId": "batch-1762832845816-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "67d36cf8-56c4-4afc-a02b-4c7c432404dd"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Qual o exame mais apropriado para investigação e avaliação das hematúrias ureterais?",
+      "alternativas": [
+        "Ultrassonografia.",
+        "Urografia excretora.",
+        "Urotomografia.",
+        "Cistoscopia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SCML avalia o conhecimento sobre métodos diagnósticos em urologia, especificamente para investigação de hematúria de origem ureteral.</p><p>A hematúria ureteral origina-se do ureter, geralmente por causas como cálculos, tumores ureterais ou traumas. Para avaliar adequadamente essas estruturas, precisamos de um exame que visualize todo o sistema urinário com boa resolução.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Ultrassonografia:</strong> Permite avaliação do rim e bexiga, mas tem limitações na visualização do ureter médio e distal devido à presença de gás intestinal. Não é ideal para hematúria ureteral.</p><p><strong>B) Urografia excretora:</strong> Exame radiográfico com contraste que visualiza o sistema urinário, mas tem menor resolução que métodos mais modernos e pode não detectar lesões pequenas do ureter.</p><p><strong>C) Urotomografia:</strong> Combina tomografia computadorizada com fases sem contraste e contrastada, oferecendo excelente resolução anatômica de todo o sistema urinário, incluindo o ureter. É atualmente o exame de escolha para hematúria de origem ureteral.</p><p><strong>D) Cistoscopia:</strong> Avalia apenas a bexiga e a porção distal dos ureteres, não permitindo investigação completa do ureter proximal.</p><p><strong>Veredito:</strong> A resposta correta é C - Urotomografia, por ser o exame com melhor sensibilidade e especificidade para diagnóstico de lesões ureterais, oferecendo avaliação completa do sistema urinário com alta resolução de imagem.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "ClinicaMedica_Nefrologia",
+        "Cirurgia_Urologia_Nefrolitiase",
+        "Cirurgia_Urologia_Nefrolitiase_InvestigacaoDiagnostica"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "O mecanismo envolvido na fisiopatogenia do tamponamento cardíaco traumático inclui:",
+      "alternativas": [
+        "restrição diastólica do ventrículo.",
+        "aumento do volume minuto.",
+        "ativação do sistema nervoso autonômico.",
+        "diminuição do retorno venoso."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML avalia o conhecimento sobre fisiopatologia do tamponamento cardíaco traumático, testando a compreensão dos mecanismos hemodinâmicos envolvidos nesta condição de emergência.</p><p>O tamponamento cardíaco traumático ocorre quando há acúmulo de sangue ou líquido no espaço pericárdico, comprimindo o coração e interferindo no enchimento diastólico.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Restrição diastólica do ventrículo:</strong> Correto. O tamponamento causa restrição ao enchimento diastólico devido à pressão pericárdica elevada, limitando a capacidade de enchimento do ventrículo durante a diástole.</p><p><strong>B) Aumento do volume minuto:</strong> Incorreto. Na verdade, o tamponamento causa DIMINuição do volume minuto, não aumento.</p><p><strong>C) Ativação do sistema nervoso autonômico:</strong> Parcialmente correto, mas não é o mecanismo primário. A ativação autonômica é uma resposta compensatória, não o mecanismo fisiopatológico central.</p><p><strong>D) Diminuição do retorno venoso:</strong> Parcialmente correto como consequência, mas é resultado da restrição diastólica, não o mecanismo primário.</p><p><strong>Veredito:</strong> A resposta correta é A - restrição diastólica do ventrículo, que representa o mecanismo fisiopatológico central do tamponamento cardíaco, sendo a limitação do enchimento diastólico o processo que desencadeia todas as alterações hemodinâmicas secundárias.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaToracico",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio",
+        "Cirurgia_Trauma_TraumaToracico_TraumaToracico"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Mulher, 38 anos de idade, é admitida em pronto socorro por acidente motociclístico.Encontra-se consciente, referindo dispneia. Ao exame físico, evidencia-se FR 32 irpm, FC 120 bpm, PA 100x60 mmHg, estase jugular, murmúrio vesicular abolido em hemitórax direito com hipertimpanismo à percussão. Qual é a conduta adequada?",
+      "alternativas": [
+        "Drenagem pleural direita.",
+        "Drenagem pericárdica.",
+        "Tomografia de tórax.",
+        "Radiografia de tórax."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML avalia o conhecimento sobre reconhecimento e manejo de pneumotórax de tensão, uma situação de emergência que exige diagnóstico e tratamento imediatos.</p><p>O caso apresenta: mulher jovem com trauma torácico, dispneia, taquipneia, taquicardia, hipotensão, estase jugular, murmúrio vesicular abolido à direita e hipertimpanismo. Estes sinais clássicos indicam pneumotórax de tensão.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Drenagem pleural direita:</strong> Correto. O pneumotórax de tensão é emergência absoluta que requer descompressão imediata com drenagem pleural por agulha seguida de dreno de tórax.</p><p><strong>B) Drenagem pericárdica:</strong> Incorreto. O quadro não sugere tamponamento cardíaco. A ausência de bulhas abafadas e a presença de achados pulmonares direcionam para pneumotórax.</p><p><strong>C) Tomografia de tórax:</strong> Incorreto. O paciente está instável e necessita intervenção imediata, não tempo para exames de imagem.</p><p><strong>D) Radiografia de tórax:</strong> Incorreto. Embora o pneumotórax possa ser confirmado com radiografia, o quadro sugere tensão e não permite espera por exames. A drenagem deve ser imediata.</p><p><strong>Veredito:</strong> A resposta correta é A - Drenagem pleural direita, sendo este o procedimento de emergência que salva vidas no pneumotórax de tensão,devendo ser realizado antes mesmo de confirmação radiológica quando os sinais clínicos são evidentes.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaToracico",
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_Trauma_TraumaToracico_RespiracaoEVentilacao"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Com relação à hemoptise, podemos afirmar que:",
+      "alternativas": [
+        "o procedimento de escolha na hemoptise maciça é a broncoscopia flexível.",
+        "as causas mais comuns em crianças são iatrogênicas e aspergiloma.",
+        "a principal causa de óbito na hemoptise maciça é o choque hemorrágico.",
+        "a maioria dos sangramentos é proveniente das artérias brônquicas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SCML avalia o conhecimento sobre hemoptise, abordando aspectos de fisiopatologia, epidemiologia e tratamento, sendo um tema clássico em pneumologia e medicina de emergência.</p><p>A hemoptise é a expectoração de sangue originada do sistema respiratório, abaixo das cordas vocais, sendo um sintoma que pode variar desdeoligamente significativo até potencialmente fatal.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) O procedimento de escolha na hemoptise maciça é a broncoscopia flexível:</strong> Incorreto. A broncoscopia rígida é o procedimento de escolha na hemoptise maciça por permitir melhor controle da via aérea, aspiração eficiente e acesso a métodos hemostáticos.</p><p><strong>B) As causas mais comuns em crianças são iatrogênicas e aspergiloma:</strong> Incorreto. Em crianças, as causas mais comuns são corpo estranho, malformações vasculares e infecções. Aspergiloma é mais frequente em adultos com fibrose pulmonar.</p><p><strong>C) A principal causa de óbito na hemoptise maciça é o choque hemorrágico:</strong> Incorreto. A principal causa de óbito é asfixia por aspiração de sangue, não hemorragia propriamente dita.</p><p><strong>D) A maioria dos sangramentos é proveniente das artérias brônquicas:</strong> Correto. Aproximadamente 90% das hemoptises têm origem nas artérias brônquicas, que são sistema de alta pressão e de maior calibre, explicando a intensidade do sangramento.</p><p><strong>Veredito:</strong> A resposta correta é D - A maioria dos sangramentos é proveniente das artérias brônquicas, sendo este conhecimento fundamental para o entendimento da fisiopatologia e abordagem terapêutica da hemoptise.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Homem, 42 anos de idade, encontra-se internado em Unidade de Terapia Intensiva por acidente automobilístico. Foi submetido à drenagem pleural direita por hemotórax traumático há 3 horas. O débito do dreno foi de 350 mL na primeira hora, 300 mL na segunda hora e 350 mL na terceira hora. Qual é a conduta mais apropriada?",
+      "alternativas": [
+        "Ultrassonografia de tórax.",
+        "Tomografia de tórax.",
+        "Toracotomia lateral direita.",
+        "Arteriografia seletiva."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SCML avalia o conhecimento sobre manejo de hemotórax traumático persistente, testando a capacidade de reconhecer critérios para intervenção cirúrgica em traumatologia torácica.</p><p>O caso apresenta: homem jovem com hemotórax traumático, dreno torácico com débito persistentemente alto (350-300-350 mL nas primeiras três horas), caracterizando sangramento ativo significativo.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Ultrassonografia de tórax:</strong> Incorreto. O ultrassom de tórax temlimitação na avaliação de coletas pleurais e não é útil para determinar fonte de sangramento ativo. A drenagem já foi realizada e o problema é o débito persistente.</p><p><strong>B) Tomografia de tórax:</strong> Incorreto. Tomografia computadorizada não é apropriada em paciente instável com sangramento ativo e não ajuda na determinação da fonte hemorrágica que necessita intervenção.</p><p><strong>C) Toracotomia lateral direita:</strong> Correto. O débito de dreno > 200 mL/hora por 3 horas consecutivas indica indicação absoluta para toracotomia de emergência para controle de hemorragia.</p><p><strong>D) Arteriografia seletiva:</strong> Incorreto. A arteriografia é útil em sangramento de artérias intercostais ou mamária interna, mas a toracotomia permite controle direto da hemorragia e evacuation de coágulos.</p><p><strong>Veredito:</strong> A resposta correta é C - Toracotomia lateral direita, sendo esta a conduta adequada para controle de hemorragia ativa em hemotórax traumático com critérios de sangramento maciço, oferecendo controle direto da fonte hemorrágica e evacuation completa do sangue e coágulos da cavidade pleural.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaToracico",
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_Trauma_TraumaToracico_TraumaToracico"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Mulher, 38 anos de idade, portadora de Síndrome de Ehler-Danlos, é admitida em pronto-socorro com queixa de dor precordial de forte intensidade, com irradiação para dorso e abdômen, acompanhada de sudorese e dispneia há 2 horas. Ao exame físico, encontra-se com FC 110 bpm (ritmo regular), PA 160x90 mmHg, FR 20 ipm, presença de sopro diastólico 4+/6+ em foco aórtico, com pulsos periféricos presentes, normais e simétricos. Qual é o diagnóstico mais provável?",
+      "alternativas": [
+        "Dissecção de aorta tipo B.",
+        "Dissecção de aorta tipo A.",
+        "Aneurisma de aorta ascendente.",
+        "Aneurisma de aorta toracoabdominal."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da banca SCML evalua seu conhecimento sobre dissecção aórtica aguda, uma emergência cardiovascular com presentation clássica em pacientes de risco.</strong></p><p>A paciente apresenta elementos clínicos altamente sugestivos de dissecção aórtica tipo A: a Síndrome de Ehler-Danlos é um fator de risco significativo para dissecção devido à fragilidade da parede vascular. O quadro clínico é típico - dor precordial súbita e intensa com irradiação para dorso e abdômen, associado a sudorese e dispneia. Os sinais vitais mostram hipertensão e taquicardia, ambos comuns em dissecções agudas.</p><p>O achado físico mais importante é o <strong>sopro diastólico 4+/6+ em foco aórtico</strong>. Este sopro indica insuficiência aórtica aguda, que é a marca registrada das dissecções que comprometem a raiz aórtica - característica das dissecções tipo A (aorta ascendente).</p><p><strong>Analisando as alternativas:</strong></p><p>Alternativa A (Dissecção tipo B) está incorreta porque as dissecções tipo B envolvem a aorta descendente distal ao ligamento arterial e <em>não</em> causam sopro aórtico. Além disso, são menos frequentemente associadas a Síndrome de Ehler-Danlos.</p><p>Alternativa B (Dissecção tipo A) está <strong>correta</strong> pela presença de sopro diastólico aórtico, indicando comprometimento da aorta ascendente, região mais proximal onde as válvulas aórticas podem ser afetadas.</p><p>Alternativa C (Aneurisma de aorta ascendente) e D (Aneurisma toracoabdominal) estão incorretas porque descrevem dilatações crônicas, não dissecções agudas. A apresentação é de dor súbita e intensa, típica de dissecção aguda.</p><p><strong>Veredito: A resposta correta é B - Dissecção de aorta tipo A.</strong> O sopro aórtico diastólico é o chave diagnóstica que diferencia o tipo A (aorta ascendente) do tipo B (aorta descendente).",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas",
+        "ClinicaMedica_Cardiologia_SindromesAorticasAgudas_DisseccaoAorticaAguda",
+        "Cirurgia_CirurgiaVascular"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Quais são as repercussões clínicas de síndrome metabólica mionefropática, como decorrência de isquemia arterial periférica aguda?",
+      "alternativas": [
+        "Acidose metabólica e mioglobinúria",
+        "Hipocalemia e oligúria",
+        "Rabdomiólise e alcalose metabólica",
+        "Lesão renal aguda e hematúria"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda um conceito fundamental da isquemia arterial periférica aguda: a síndrome metabólica mionefropática e suas repercussões sistêmicas.</strong></p><p>A síndrome metabólica mionefropática é uma complicação grave da isquemia arterial periférica aguda severa, caracterizada por alterações metabólicas e mioglobinúria. Quando a perfusão tecidual é drasticamente reduzida, ocorre necrose muscular massiva com liberação de conteúdo intracelular na circulação.</p><p>O mecanismo fisiopatológico envolve três processos principais: 1) necrose isquêmica dos músculos esqueléticos, 2) liberação de mioglobina e enzimas musculares, 3) acúmulo de metabólitos anaeróbios como lactato. A mioglobinúria é diagnosticada pela presença de mioglobina na urina, que pode assumir coloração escura característica.</p><p><strong>Analisando as alternativas:</strong></p><p>Alternativa A (Acidose metabólica e mioglobinúria) está <strong>correta</strong>. A acidose ocorre devido ao acúmulo de lactato resultante do metabolismo anaeróbico em tecidos hipoperfundidos. A mioglobinúria decorre da liberação de mioglobina pelos músculos necrosados.</p><p>Alternativa B (Hipocalemia e oligúria) está incorreta. Embora possa ocorrer hipercalemia (não hipocalemia) pela liberação de potássio dos músculos necróticos. A oligúria não é característica principal desta síndrome.</p><p>Alternativa C (Rabdomiólise e alcalose metabólica) está incorreta. A rabdomiólise está correta (faz parte), mas a alcalose metabólica não ocorre - o que se observa é acidose.</p><p>Alternativa D (Lesão renal aguda e hematúria) está parcialmente correta quanto à lesão renal (pode ocorrer por mioglobinúria), mas hematúria não é característica desta síndrome específica.</p><p><strong>Veredito: A resposta correta é A - Acidose metabólica e mioglobinúria.</strong> Estes são os achados laboratoriais e clínicos mais característicos da síndrome metabólica mionefropática.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia_Choque_ChoqueFisiopatologiaDoChoque"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Com relação ao trauma vascular, podemos afirmar que:",
+      "alternativas": [
+        "deve-se garantir via aérea definitiva em traumas cervicais com suspeita de lesão carotídea e presença de hematoma.",
+        "a principal complicação deste nos casos de lesões abdominais é a isquemia celíaca e/ou mesentérica.",
+        "nas rupturas traumáticas de aorta, o tamponamento cardíaco apresenta-se como a complicação mais frequente.",
+        "um índice de pressão de oclusão maior que 1,0 no membro acometido indica lesão vascular na maioria dos pacientes."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SCML testa seu conhecimento sobre o manejo do trauma vascular, especificamente sobre as prioridades no atendimento de traumas com suspeita de lesão carotídea.</strong></p><p>O trauma vascular cervical com suspeita de lesão carotídea e presença de hematoma representa uma situação de extrema gravidade, com risco de aspiração de sangue e obstrução da via aérea. A presença de hematoma em região cervical pode evoluir rapidamente para obstrução das vias aéreas superiores, especialmente em pacientes hemodinamicamente instáveis.</p><p>A <strong>garantia de via aérea definitiva</strong> é a prioridade absoluta nestas situações, mesmo antes de intervenções vasculares definitivas. A intubação orotraqueal ou, em casos mais complexos, traqueostomia de emergência, deve ser realizada de forma profilática para prevenir perda da via aérea.</p><p><strong>Analisando as alternativas:</strong></p><p>Alternativa A (deve-se garantir via aérea definitiva em traumas cervicais com suspeita de lesão carotídea e presença de hematoma) está <strong>correta</strong>. Esta é a conduta padrão recomendada em protocolos de trauma vascular, priorizando a segurança da via aérea antes de qualquer intervenção vascular.</p><p>Alternativa B está incorreta. A principal complicação das lesões abdominais vasculares é o choque hipovolêmico, não necessariamente isquemia celíaca/mesentérica.</p><p>Alternativa C está incorreta. Em rupturas traumáticas de aorta, a complicação mais frequente é a hemorragia maciça, não tamponamento cardíaco.</p><p>Alternativa D está incorreta. Índice de pressão de oclusão > 1,0 indica alta probabilidade de lesão vascular, não < 1,0.</p><p><strong>Veredito: A resposta correta é A.</strong> A via aérea sempre vem primeiro no trauma, especialmente em suspeita de hematoma cervical expansivo que pode obstruir a traqueia.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaCervical",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaVascularDeExtremidades",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Qual é a característica dos aneurismas verdadeiros da aorta abdominal?",
+      "alternativas": [
+        "A localização mais prevalente é a aorta abdominal suprarrenal.",
+        "Decorrem da necrose cística do endotélio da aorta.",
+        "A maioria dos pacientes apresentam sintomas como dor abdominal.",
+        "O risco de rotura em aneurismas menores que 59 mm é ao redor de 1% ao ano."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da banca SCML aborda o conhecimento sobre aneurismas da aorta abdominal, especificamente sobre o risco de rotura em aneurismas menores.</strong></p><p>Os aneurismas da aorta abdominal (AAA) são dilatações патológicas com diâmetro >50% maior que o diâmetro normal. O risco de rotura é diretamente relacionado ao diâmetro do aneurisma, sendo baixo em aneurismas pequenos e aumentando exponencialmente em aneurismas grandes.</p><p>Estudos como o ADAM e UK Small Aneurysm Trial estabeleceram que aneurismas com diâmetro < 55-60 mm apresentam risco anual de rotura muito baixo, geralmente < 1% ao ano. Acima desse limiar, o risco aumenta progressivamente, chegando a 10-20% ao ano em aneurismas > 70 mm.</p><p><strong>Analisando as alternativas:</strong></p><p>Alternativa A (localização suprarrenal) está incorreta. A localização mais prevalente é infrarrenal, abaixo da artéria renal inferior.</p><p>Alternativa B (necrose cística do endotélio) está incorreta. A necrose cística da média é mais comum em aneurismas torácicos, não abdominais.</p><p>Alternativa C (maioria dos pacientes apresenta sintomas) está incorreta. A maioria dos AAA são assintomáticos, descobertos incidentalmente.</p><p>Alternativa D (risco de rotura 1% ao ano em aneurismas < 59 mm) está <strong>correta</strong>. Este valor está alinhado com a literatura médica, onde aneurismas com 50-59 mm apresentam risco anual de rotura de aproximadamente 1-3%.</p><p><strong>Veredito: A resposta correta é D - O risco de rotura em aneurismas menores que 59 mm é ao redor de 1% ao ano.</strong> Este dado é fundamental para o acompanhamento e decisão terapêutica em AAA.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_Aneurismas"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Mulher, 49 anos de idade, apresenta quadro de insuficiência venosa periférica, tendo sido recentemente classificado como CEAP C6. Isto quer dizer:",
+      "alternativas": [
+        "úlcera venosa ativa.",
+        "Lipodermato esclerose.",
+        "atrofia branca.",
+        "eczema."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da SCML avalia seu conhecimento sobre a classificação CEAP, sistema universalmente aceito para insuficiência venosa crônica, onde C6 representa o estágio mais avançado.</strong></p><p>A classificação CEAP (Clinical, Etiology, Anatomy, Pathophysiology) é dividida em classes clínicas (C0-C6), com C0 sendo assintomático e C6 representando o estágio mais severo da doença. A insuficiência venosa crônica decorre da incompetência do sistema valvular venoso, levando a hipertensão venosa e alterações tróficas.</p><p>O <strong>CEAP C6</strong> é caracterizado por úlcera venosa ativa, a forma mais grave de insuficiência venosa crônica. Estas úlceras são tipicamente localizadas em região supramaleolar medial, têm fundo fibrinoso ou necrótico, bordas irregulares e são acompanhadas de sinais inflamatórios.</p><p><strong>Analisando as alternativas:</strong></p><p>Alternativa A (úlcera venosa ativa) está <strong>correta</strong>. C6 é definido especificamente como úlcera venosa ativa com resolução da inflamação aguda.</p><p>Alternativa B (Lipodermatoesclerose) corresponde ao CEAP C4b, caracterizado por endurecimento e fibrose da pele e tecido subcutâneo em região pré-tibial.</p><p>Alternativa C (Atrofia branca) corresponde ao CEAP C4a,manifestação de atrofia cutânea com padrões reticulares ou em \"champagne\".</p><p>Alternativa D (Eczema) corresponde ao CEAP C4a, caracterizando dermatite estasiática com prurido e descamação.</p><p><strong>Veredito: A resposta correta é A - úlcera venosa ativa.</strong> O CEAP C6 representa a forma mais avançada e grave da insuficiência venosa crônica, com presença de úlcera ativa.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_InsuficienciaVenosa",
+        "Cirurgia_CirurgiaVascular_InsuficienciaVenosa_ClassificacaoCeap"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Com relação à trombectomia venosa nos quadros de trombose venosa profunda, podemos afirmar que:",
+      "alternativas": [
+        "apresenta diminuição significativa na ocorrência de embolia pulmonar.",
+        "possui melhor indicação em jovens com quadro de flegmasea cerulea dolens.",
+        "apresenta maiores benefícios em quadros de trombose com duração maior que 30 dias.",
+        "possui a vantagem de dispensar o uso de anticoagulação após o procedimento."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A competência avaliada nesta questão envolve indicações para trombectomia venosa em casos de trombose venosa profunda.</strong> A banca SCML 2020 busca testar seu conhecimento sobre critérios de seleção de pacientes para este procedimento invasivo.</p><p><strong>A resposta correta é a alternativa B.</strong> A flegmasea cerulea dolens representa uma forma severa de TVP que cursa com isquemia por comprometimento arterial, geralmente em pacientes jovens. Nestes casos, a trombectomia tem indicação clara para restaurar o fluxo venoso e arterial, prevenindo complicações como gangrena e perda do membro.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa A:</strong> Embora a trombectomia possa reduzir temporariamente o risco de embolia pulmonar, o tratamento anticoagulante isolado é igualmente eficaz na prevenção de EP, sem os riscos do procedimento invasivo.</p><p><strong>Alternativa C:</strong> A eficácia da trombectomia é inversamente proporcional à duração da trombose. Após 30 dias, o trombo está organizado e aderido à parede venosa, tornando a trombectomia técnica e clinicamente ineficaz.</p><p><strong>Alternativa D:</strong> <em>Fundamental:</em> A anticoagulação NUNCA é dispensada após trombectomia venosa. O procedimento remove o trombo atual, mas não trata a causa subjacente (estado pró-trombótico). Sem anticoagulação, a recorrência é praticamente inevitável.</p><p>Portanto, a flegmasea cerulea dolens em paciente jovem é a indicação clássica para trombectomia venosa, oferecendo benefícios superiores às outras opções apresentadas.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaVascular",
+        "Cirurgia_CirurgiaVascular_ProcedimentosVasculares",
+        "Cirurgia_CirurgiaVascular_TromboseVenosaProfunda",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Qual exame diagnóstico consegue diferenciar a obstrução infra vesical da hipocontratilidade do músculo detrusor, em um paciente com suspeita de hiperplasia prostática benigna?",
+      "alternativas": [
+        "Estudo urodinâmico.",
+        "Uretrocistoscopia.",
+        "Ultrassonografia transretal.",
+        "Urofluxometria."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre métodos diagnósticos na hiperplasia prostática benigna.</strong> O cenário clínico envolve a necessidade de diferenciar entre obstrução infravesical verdadeira (obstrução mecânica) e hipocontratilidade do detrusor (problema contrátil), duas entidades com apresentações similares mas tratamentos distintos.</p><p><strong>A resposta correta é A - Estudo urodinâmico.</strong> Este exame é o único capaz de medir objetivamente tanto a pressão intravesical quanto o fluxo urinário, permitindo diagnóstico diferencial preciso entre obstrução e disfunção contrátil. Durante a cistomanometria, observa-se padrão obstructivo (alta pressão, baixo fluxo) versus hipocontratilidade (baixa pressão, baixo fluxo).</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa B (Uretrocistoscopia):</strong> Avalia apenas a anatomia uretral e vesical, visualizando estrechamentos ou lesões, mas não quantifica a função dinâmica do detrusor.</p><p><strong>Alternativa C (Ultrassonografia transretal):</strong> Útil para avaliação de volume prostático e rastreamento de câncer, mas não avalia a dinâmica miccional.</p><p><strong>Alternativa D (Urofluxometria):</strong> Mede apenas o fluxo urinário. Baixo fluxo pode indicar tanto obstrução quanto hipocontratilidade - não diferencia entre elas. É um exame de triagem, não diagnóstico definitivo.</p><p>O estudo urodinâmico permanece como padrão-ouro para diferenciação entre estas duas condições, sendo essencial para planejamento terapêutico adequado em pacientes com sintomas obstrutivos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp_ExamesComplementaresEDiagnosti"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Qual é o melhor tratamento para pacientes portadores de hiperplasia prostática benigna com próstata maior que 80 gramas?",
+      "alternativas": [
+        "Vaporização fotosseletiva.",
+        "Ressecção transuretral da próstata.",
+        "Prostatectomia aberta.",
+        "Incisão transuretral da próstata."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão testa seu conhecimento sobre seleção de tratamento cirúrgico para hiperplasia prostática benigna.</strong> O tamanho prostático é crucial na decisão terapêutica, sendo determinante na escolha entre técnicas minimamente invasivas e cirurgia aberta.</p><p><strong>A resposta correta é C - Prostatectomia aberta.</strong> Próstatas maiores que 80g representam um desafio técnico para procedimentos transuretrais. A prostatectomia aberta (retropúbica ou transvesical) oferece acesso direto ao adenoma, permitindo enucleação completa mesmo em próstatas volumosas, com menor risco de perfuração capsular e melhor controle hemostático.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa A (Vaporização fotosseletiva):</strong> Técnica minimamente invasiva eficiente para próstatas de 30-80g. Acima deste volume, o tempo cirúrgico torna-se excessivo e a eficácia diminuída, não sendo recomendada para volumes >80g.</p><p><strong>Alternativa B (Ressecção transuretral da próstata):</strong> <em>Limitação técnica crucial:</em> A RTU tem limite de segurança em torno de 60-80g. Próstatas maiores aumentam significativamente riscos de síndrome TURP, perfuração e ressecção incompleta.</p><p><strong>Alternativa D (Incisão transuretral da próstata):</strong> Técnica utilizada em próstatas pequenas (<30g), independentemente do grau obstrutivo. Não se aplica a volumes superiores.</p><p><strong>Critério atual:</strong> ProPró >80g = Prostatectomia aberta; 30-80g = técnicas minimamente invasivas (HoLEP, GreenLight); <30g = TUIP ou RTU.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp",
+        "Cirurgia_Urologia_HiperplasiaProstaticaBenignaHp_TratamentoDaDoencaLocalizada"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "O ligamento lacunar de Gimbernat é ponto anatômico de referência para correção de qual hérnia da parede abdominal:",
+      "alternativas": [
+        "Femoral.",
+        "Umbilical.",
+        "De Spieghel.",
+        "Inguinal direta."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia conhecimento em anatomia cirúrgica da parede abdominal.</strong> O ligamento lacunar de Gimbernat é uma estrutura anatômica específica com aplicação clínica em Repair de hérnias, sendo fundamental no arsenal do cirurgião.</p><p><strong>A resposta correta é A - Hérnia femoral.</strong> O ligamento lacunar de Gimbernat forma o limite medial do anel femoral. Durante a corretação de hérnias femorais, este ligamento serve como ponto de referência anatômico crucial para identificação e isolamento do saco herniário, bem como para fechamento adequado do defeito femoral.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa B (Hérnia umbilical):</strong> Localizada no anel umbilical, sem relação anatômica com o ligamento lacunar, situado na região inguinal-femoral.</p><p><strong>Alternativa C (Hérnia de Spieghel):</strong> Ocorre na linha semilunar de Spieghel, lateral aos músculos retos abdominais, região completamente diferente da localização do ligamento lacunar.</p><p><strong>Alternativa D (Hérnia inguinal direta):</strong> Passa pelo triângulo de Hesselbach, medial aos vasos epigástricos inferiores, não envolvendo o anel femoral onde se localiza o ligamento lacunar.</p><p><strong>Relevância cirúrgica:</strong> O conhecimento preciso da anatomia do ligamento lacunar é essencial na técnica de McVay para correção de hérnias femorais, sendo considerado passo fundamental para evitar complicações como lesão de vasos femorais ou fechamento inadequado.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal",
+        "Cirurgia_HerniasDaParedeAbdominal_AnatomiaCirurgicaDasHernias",
+        "Cirurgia_HerniasDaParedeAbdominal_HerniaFemoral"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Homem, 62 anos de idade, em consulta urológica de rotina que evidenciou toque retal sem alterações, trouxe os resultados dos seguintes exames: PSA 6 ng/mL, relação entre PSA livre e total 5%. Qual é a conduta mais apropriada?",
+      "alternativas": [
+        "Realização de biópsia prostática.",
+        "Seguimento anual com PSA livre e total.",
+        "Realização de ultrassonografia transretal.",
+        "Medição da densidade de PSA."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão aborda critérios para biópsia prostática baseado em alterações do PSA.</strong> O caso apresenta um homem de 62 anos com PSA borderline (6 ng/mL) mas com relação PSA livre/total significativamente reduzida (5%), configurando cenário de alto risco que exige conduta agressiva.</p><p><strong>A resposta correta é A - Realização de biópsia prostática.</strong> A relação PSA livre/total <10% indica alta probabilidade de câncer de próstata, mesmo com PSA dentro da zona cinza (4-10 ng/mL). A baixa fração livre sugere que o PSA está predominantemente ligado, padrão típico em processos malignos onde há superprodução de protease que liga o PSA.</p><p><strong>Análise das alternativas incorretas:</strong></p><p><strong>Alternativa B (Seguimento anual):</strong> <em>Subtratamento perigoso:</em> A relação livre/total de 5% representa alto risco. Aguardar um ano para novo exames pode permitir progressão tumoral em câncer potencialmente curável.</p><p><strong>Alternativa C (Ultrassonografia transretal):</strong> Exame de imagem com baixa sensibilidade para detecção de câncer em estágios iniciais. Não substitute a biópsia quando há indicação clara baseada em biomarcadores.</p><p><strong>Alternativa D (Densidade de PSA):</strong> <em>Desnecessário no contexto atual:</em> A densidade seria calculada se houvesse hiperplasia benigna volumosa. Aqui, a relação livre/total já fornece informação diagnóstica suficiente para indicação de biópsia.</p><p><strong>Critério atual:</strong> Relação PSA livre/total <10% + PSA 4-10 ng/mL = indicação de biópsia prostática independente de outros fatores.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia_CancerDeProstata_RastreamentoDoCancerDeProstata",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia_CancerDeProstata_ExamesComplementaresEDiagnosti"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Com relação ao câncer de testículo, podemos afirmar que:",
+      "alternativas": [
+        "os tumores de células germinativas representam mais de 90% dos casos.",
+        "a elevação da alfafetoproteína correlaciona-se a tumor seminoma.",
+        "o antecedente de criptorquidia não aumenta sua incidência.",
+        "as metástases hematogênicas ocorrem precocemente; e as linfáticas, mais tardias."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SCML 2020 avalia conhecimentos fundamentais sobre oncologia urológica, especificamente sobre tumores testiculares. O foco é o conhecimento epidemiológico e das características patológicas dos tumores de testículo.</p><p><strong>Vamos analisar cada alternativa em detalhes:</strong></p><p><strong>Alternativa A (CORRETA):</strong> Os tumores de células germinativas realmente representam mais de 90% dos casos de câncer de testículo. Estes incluem principalmente seminomas e tumores não-seminomatosos (carcinoma embrionário, teratoma, tumor do saco vitelínico, coriocarcinoma). Esta é uma informação epidemiológicamente consolidada na literatura médica brasileira e mundial.</p><p><strong>Alternativa B (INCORRETA):</strong> A elevação de alfafetoproteína (AFP) está associada aos tumores não-seminomatosos, especialmente ao tumor do saco vitelínico e carcinoma embrionário. O seminoma puro não produz AFP, embora possa produzir Beta-HCG em alguns casos. portanto, é incorreto correlacionar AFP especificamente ao seminoma.</p><p><strong>Alternativa C (INCORRETA):</strong> A criptorquidia é um fator de risco significativo para câncer testicular, aumentando a incidência em até 40 vezes quando comparada aos testículos em posição normal. Mesmo após correção cirúrgica, o risco permanece elevado.</p><p><strong>Alternativa D (INCORRETA):</strong> Em tumores testiculares, as metástases linfáticas são mais precoces, seguindo o padrão de drenagem do sistema lombar-aórtico. As metástases hematogênicas, para pulmão, fígado e ossos, são mais tardias e costumam ocorrer após extensão linfática.</p><p><strong>Conclusão:</strong> A alternativa A é a única tecnicamente correta, representando dados epidemiológicos consolidados sobre tumores testiculares. Esta é uma questão clássica que testa conhecimento básico mas fundamental em urologia oncológica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasTesticulares"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Paciente de 78 anos, masculino, em quadro séptico internado em UTI devido à infecção respiratória grave e insuficiência renal aguda. Apresenta piora do quadro séptico com dor abdominal em hipocôndrio direito. Realizada tomografia computadorizada com achado de espessamento de vesícula biliar com líquido livre perivesicular, discreta ascite e derrame pleural bilateral. Realizado USG com achados semelhantes. Em um paciente grave com esse quadro qual o diagnóstico que justifica a dor abdominal e piora do quadro?",
+      "alternativas": [
+        "Colecistite aguda alitiásica.",
+        "Síndrome hepatorrenal.",
+        "Perfuração espontânea da vesícula (síndrome de Boerhaave).",
+        "Síndrome de Budd-Chiari."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão complexa da SCML 2020 avalia a capacidade de reconhecimento de complicações em pacientes sépticos graves. O caso apresenta um paciente de 78 anos em UTI com quadro séptico, insuficiência renal aguda, e desenvolvimento de dor abdominal em hipocôndrio direito com piora clínica.</p><p><strong>Vamos analisar os achados de imagem e correlacionar com o quadro clínico:</strong></p><p>A tomografia computadorizada e ultrassom revelaram: espessamento de vesícula biliar, líquido livre perivesicular, ascite discreta e derrame pleural bilateral. Estes achados são altamente sugestivos de inflamação vesicular aguda.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA - Colecistite aguda alitiásica):</strong> Esta é a resposta correta. Em pacientes críticos, especialmente em UTI, a colecistite acalculosa (alitiásica) é uma complicação conhecida. O paciente séptico com fatores de risco (idade avançado, doença crítica,可能是 insuficiência renal) desenvolveu inflamação vesicular sem cálculos. O espessamento da parede vesicular, líquido perivesicular e piora clínica são patognomônicos desta condição.</p><p><strong>Alternativa B (INCORRETA - Síndrome hepatorrenal):</strong> Embora seja uma complicação em pacientes sépticos, caracteriza-se por insuficiência hepática aguda associada a insuficiência renal, sem correlação direta com os achados vesiculares. O quadro de dor em hipocôndrio direito e alterações de imagem vesicular não se encaixam nesta síndrome.</p><p><strong>Alternativa C (INCORRETA - Perfuração espontânea da vesícula):</strong> A síndrome de Boerhaave refere-se à perfuração esofágica espontânea, não vesicular. Além disso, os achados de imagem não sugerem perfuração (que apresentaria pneumoperitônio e líquido abundante).</p><p><strong>Alternativa D (INCORRETA - Síndrome de Budd-Chiari):</strong> Esta síndrome caracteriza-se por trombose das veias hepáticas, causando dor abdominal, ascite e derrame pleural, MAS não apresentaria os achados específicos de espessamento vesicular e líquido perivesicular.</p><p><strong>Conclusão:</strong> A colecistite aguda alitiásica é a explicação mais lógica para todos os achados clínicos e de imagem, representando uma complicação importante em pacientes sépticos graves. Esta questão destaca a importância de reconhecer complicações abdominais em pacientes críticos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente apresenta-se ao serviço de emergência com queimadura química de 25% da superfície corporal provocada por álcali. Qual a conduta frente à substância causadora da queimadura?",
+      "alternativas": [
+        "Irrigação copiosa com água.",
+        "Neutralização com ácido fraco.",
+        "Ao tempo de chegada, o dano já está consumado não sendo necessária remoção ou neutralização.",
+        "Hidratação cutânea com \"\"cold cream\"\"."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia conhecimento fundamental sobre manejo inicial de queimaduras químicas, especificamente com substances alcalinas. É um tema crítico em medicina de emergência e cirurgia de urgência.</p><p><strong>Vamos entender a fisiopatologia das queimaduras por álcali:</strong></p><p>Os álcalis (como soda cáustica, amônia, cal hidratada) causam dano tecidual através de saponificação das gorduras, creando uma reação química que continua progressivamente, penetrando profundamente nos tecidos. Diferentemente de queimaduras por ácidos, que formam uma crosta protetora, os álcalis não param de causar dano automaticamente.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (CORRETA - Irrigação copiosa com água):</strong> Esta é a conduta padrão recomendada mundialmente. A irrigação abundante com água deve ser iniciada imediatamente, mesmo durante o transporte ao hospital, e continuar por pelo menos 20-30 minutos. O objetivo é diluir e remover a substância química, interrompendo o processo de saponificação. A quantidade de água é mais importante que sua temperatura.</p><p><strong>Alternativa B (INCORRETA - Neutralização com ácido fraco):</strong> Esta conduta é perigosa e contraindicada. A neutralização pode gerar uma reação exotérmica adicional, causando mais dano térmico. Além disso, pode ser difícil controlar adequadamente a quantidade de ácido necessária, podendo resultar em queimadura por ácido se aplicada em excesso.</p><p><strong>Alternativa C (INCORRETA - Dano já consumado):</strong> Embora algumas queimaduras químicas já tenham causado dano significativo, a remoção e neutralização DA SUBSTÂNCIA ainda são cruciais para PREVENIR dano adicional. O processo de saponificação continua enquanto o álcali estiver em contato com os tecidos.</p><p><strong>Alternativa D (INCORRETA - Hidratação com cold cream):</strong> Esta abordagem é inadequada e pode até aprisionar a substância química na pele, exacerbando o dano. O 'cold cream' não remove a substância causadora e pode interferir com a irrigação adequada.</p><p><strong>Conclusão:</strong> A irrigação copiosa com água é a conduta baseada em evidências para queimaduras químicas por álcali. Esta questão reforça a importância do conhecimento em medicina de emergência e das condutas padronizadas para maximizar as chances de recuperação do paciente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_AtendimentoInicialAsVitimasDeQ",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_ClassificacaoDeProfundidadeDas"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Paciente com quadro de diverticulite aguda, no primeiro episódio, apresenta à tomografia espessamento de sigmoide com divertículos em todo o cólon e abscesso pericólico. Qual a classificação de gravidade de Hinchey para o caso?",
+      "alternativas": [
+        "IV",
+        "II",
+        "III",
+        "I"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia conhecimento sobre classificação de gravidade de diverticulite aguda, especificamente o sistema de Hinchey. Este é um tema fundamental em cirurgia gastroenterológica que influencia diretamente as decisões terapêuticas.</p><p><strong>Vamos recordar a classificação de Hinchey:</strong></p><p>O sistema de Hinchey classifica a diverticulite aguda em quatro estágios, baseado em achados clínicos e de imagem:</p><p><strong>Estadio I:</strong> Abscesso pericólico ou flegmão <br><strong>Estadio II:</strong> Abscesso pélvico, intra-abdominal ou retroperitoneal <br><strong>Estadio III:</strong> Peritonite purulenta generalizada <br><strong>Estadio IV:</strong> Peritonite fecal generalizada</p><p><strong>Análise do caso apresentado:</strong></p><p>O paciente apresenta no primeiro episódio de diverticulite: espessamento de sigmoide com divertículos em todo o cólon e abscesso pericólico à tomografia computadorizada. Estes achados são característicos do Estadio I de Hinchey.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa D (CORRETA - Estadio I):</strong> Corresponde exatamente aos achados descritos: abscesso pericólico, que é característico deste estadio. O tratamento geralmente é clínico com antibióticos, podendo haver drenagem percutânea guiada por imagem se necessário.</p><p><strong>Alternativa A (INCORRETA - Estadio IV):</strong> Representa a forma mais grave, com peritonite fecal generalizada. Os achados de imagem não mostram coleção distante ou sinais de perfuração livre.</p><p><strong>Alternativa B (INCORRETA - Estadio II):</strong> Caracteriza-se por abscessos pélvicos ou intra-abdominais mais extensos, não limitados ao espaço pericólico. O caso descreve especificamente abscesso pericólico.</p><p><strong>Alternativa C (INCORRETA - Estadio III):</strong> Apresenta peritonite purulenta generalizada, que se manifestaria clinicamente com dor abdominal difusa, defesa muscular importante e sinais de irritação peritoneal. O caso não apresenta estes achados.</p><p><strong>Conclusão:</strong> A classificação correta é Estadio I de Hinchey, baseada especificamente no achado de abscesso pericólico limitado. Esta questão demonstra a importância do sistema de classificação para determinar a conduta adequada no tratamento da diverticulite aguda complicated.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Qual a região anatômica com maior probabilidade de fechamento de uma fístula digestiva?",
+      "alternativas": [
+        "Reto.",
+        "Esôfago.",
+        "Íleo.",
+        "Flexura Esplênica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia conhecimento sobre cicatrização e fechamento de fístulas digestivas baseado na localização anatômica. É um tema importante em cirurgia gastroenterológica que envolve compreensão da anatomia, vascularização e características dos diferentes segmentos do trato digestivo.</p><p><strong>Vamos analisar os fatores que influenciam o fechamento de fístulas:</strong></p><p>O fechamento espontâneo de fístulas digestivas depende de vários fatores: <br>• Fluxo sanguíneo local (perfusão tecidual) <br>• Tensão na linha de fechamento <br>• Ausência de obstrução distal <br>• Estado nutricional do paciente <br>• Localização anatômica (alguns segmentos têm maior propensão ao fechamento)</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa B (CORRETA - Esôfago):</strong> O esôfago é a região anatômica com maior probabilidade de fechamento espontâneo de fístulas por vários motivos: <br>• Rica vascularização cervical e torácica <br>• Tecido muscular bem vascularizado <br>• Capacidade de contração e aproximação das bordas <br>• Menor tensão na maioria das localizações <br>• Melhores condições de cicatrização comparada a outros segmentos</p><p><strong>Alternativa A (INCORRETA - Reto):</strong> O reto apresenta condições menos favoráveis ao fechamento: <br>• Tecido friável e menos vascularizado <br>• Maior tensão devido à proximidade do assoalho pélvico <br>• Maior contaminação bacteriana <br>• Dificuldade técnica para aproximação das bordas</p><p><strong>Alternativa C (INCORRETA - Íleo):</strong> O íleo, especialmente o delgado, tem fechamento mais difícil: <br>• Vascularização mais limitada <br>• Paredes mais finas <br>• Maior mobilidade intestinal <br>• Risco maior de complicações como obstrução</p><p><strong>Alternativa D (INCORRETA - Flexura Esplênica):</strong> Esta região também apresenta desafios para fechamento: <br>• Vascularização menos robusta <br>• Maior tensão devido à fixação anatômica <br>• Proximidade do baço (risco de complicações) <br>• Dificuldade técnica cirúrgica</p><p><strong>Conclusão:</strong> O esôfago é anatomicamente a região mais favorável ao fechamento espontâneo de fístulas digestivas devido à sua vascularização rica e características histológicas. Esta questão destaca a importância do conhecimento anatômico na previsão de resultados clínicos e no planejamento terapêutico.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_ProcedimentosABeiraLeito",
+        "Cirurgia_NutricaoEmCirurgiaERecuperacao",
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Paciente alcoolizado apresenta hemorragia digestiva alta auto-limitada após múltiplos episódios de vômitos. Chamado serviço de endoscopia que realiza endoscopia digestiva alta com laudo descrevendo síndrome de Mallory-Weiss. Qual achado correspondente?",
+      "alternativas": [
+        "Vaso submucoso visível",
+        "Descontinuidade a nível da cárdia (perfuração espontânea)",
+        "Lacerações na região da cárdia",
+        "Varizes de fundo gástrico"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia o conhecimento sobre a síndrome de Mallory-Weiss, uma complicação importante da hemorragia digestiva alta em pacientes alcoolizados.</p><p><strong>A resposta correta é C - lacerações na região da cárdia.</strong> A síndrome de Mallory-Weiss caracteriza-se por lacerações longitudinais na junção gastroesofágica, especificamente na região da cárdia, geralmente causadas por vômitos repetidos em pacientes com uso excessivo de álcool.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Vaso submucoso visível):</strong> Esta descrição é típica de um vaso visível em varizes esofágicas, não da síndrome de Mallory-Weiss. As lacerações não envolvem vasos prominentes visíveis macroscopicamente.</p><p><strong>Alternativa B (Descontinuidade a nível da cárdia):</strong> Incorreta. A síndrome de Mallory-Weiss não causa perfuração espontânea, apenas lacerações superficiais da mucosa. Perfuração é uma complicação mais grave e não característica desta síndrome.</p><p><strong>Alternativa C (Lacerações na região da cárdia):</strong> CORRETA. Como mencionado, a síndrome de Mallory-Weiss é definida por lacerações lineares na mucosa da região da cárdia, resultantes do trauma mecânico dos vômitos repetidos.</p><p><strong>Alternativa D (Varizes de fundo gástrico):</strong> Esta é uma condição completamente diferente, relacionada à hipertensão portal e cirrose. Não se correlaciona com a história clínica de vômitos e uso de álcool desta questão.</p><p><strong>Veredito:</strong> A alternativa C é a resposta correta, descrevendo fielmente o achado endoscópico da síndrome de Mallory-Weiss - lacerações na região da cárdia,Resultantes do trauma dos vômitos repetidos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_Gastrites"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "A cirurgia metabólica em paciente com diabetes pode ser realizada a partir de qual índice de massa corpórea de acordo com o Conselho Federal de Medicina?",
+      "alternativas": [
+        "30 kg/m2.",
+        "35 kg/m2.",
+        "Qualquer desde que de difícil controle clínico.",
+        "35 kg/m2 se houver outra comorbidade associada."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML 2020 testa o conhecimento sobre as diretrizes atuais do Conselho Federal de Medicina para cirurgia metabólica em pacientes diabéticos.</p><p><strong>A resposta correta é A - 30 kg/m².</strong> O CFM estabeleceu em suas resoluções que a cirurgia metabólica pode ser indicada em pacientes diabéticos com IMC a partir de 30 kg/m², desvinculando-se dos critérios tradicionais de obesidade severa.</p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A (30 kg/m²):</strong> CORRETA. De acordo com a Resolução CFM nº 2.172/2017, a cirurgia metabólica está indicada em pacientes diabéticos tipo 2 com IMC ≥ 30 kg/m², independentemente de outras comorbidades, desde que outras medidas terapêuticas tenham falhado.</p><p><strong>Alternativa B (35 kg/m²):</strong> Esta era a indicação tradicional para cirurgia bariátrica em casos de obesidade mórbida, mas não se aplica especificamente à cirurgia metabólica para diabetes. O CFM reduziu o critério para 30 kg/m² quando o objetivo primário é o controle do diabetes.</p><p><strong>Alternativa C (Qualquer desde que de difícil controle clínico):</strong> Incorreta. Embora o controle clínico seja um fator importante para indicação, o CFM estabelece critérios objetivos de IMC. A indicação não é subjetiva - precisa haver o IMC mínimo de 30 kg/m².</p><p><strong>Alternativa D (35 kg/m² se houver outra comorbidade associada):</strong> Também incorreta. A indicação para cirurgia metabólica em diabéticos independe de outras comorbidades quando o IMC é ≥ 30 kg/m². Não há exigência de comorbidades adicionais.</p><p><strong>Veredito:</strong> A alternativa A é a resposta correta. O CFM estabeleceu o IMC de 30 kg/m² como critério mínimo para cirurgia metabólica em pacientes diabéticos, representando uma mudança importante na abordagem terapêutica do diabetes tipo 2.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_CirurgiaMetabolicaNoTratamento",
+        "Cirurgia_CirurgiaBariatricaEMetabolica"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Paciente de 88 anos, masculino, apresenta tumor de reto bem diferenciado, invadindo até submucosa 1, de 3 cm de tamanho, ocupando 75% da circunferência do órgão, a 6 cm da borda anal. Qual critério impede a ressecção local do tumor?",
+      "alternativas": [
+        "Circunferencialidade superior a 50%.",
+        "Idade superior a 75 anos.",
+        "Distância da borda anal maior que 5 cm.",
+        "Tamanho maior que 2 cm."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia os critérios para ressecção local de tumores retais, especificamente sobre os fatores que contraindicam esta abordagem cirúrgica conservadora.</p><p><strong>A resposta correta é A - circunferencialidade superior a 50%.</strong> A extensão circumferencial do tumor é um fator limitante fundamental para a ressecção local, pois compromete a função intestinal e aumenta o risco de complicações.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (Circunferencialidade superior a 50%):</strong> CORRETA. Tumores que ocupam mais de 50% da circunferência intestinal contraindicam a ressecção local por comprometer significativamente a função evacuatória e aumentar substancialmente o risco de estenose pós-operatória e recidiva local.</p><p><strong>Alternativa B (Idade superior a 75 anos):</strong> A idade em si não é critério absoluto contra a ressecção local. Pacientes idosos podem se beneficiar de procedimentos menos invasivos. A decisão deve basear-se no estado geral e comorbidades, não na idade cronológica isoladamente.</p><p><strong>Alternativa C (Distância da borda anal maior que 5 cm):</strong> Na verdade, a ressecção local é mais facilmente realizada em tumores localizados a mais de 5 cm da borda anal (região do reto médio e superior), onde há melhor acesso cirúrgico e preservação da função esfincteriana.</p><p><strong>Alternativa D (Tamanho maior que 2 cm):</strong> Tamanho por si só não é contraindicante. Tumores maiores podem ser ressecados localmente se outras condições estiverem favoráveis. O tamanho deve ser considerado em conjunto com outros fatores como profundidade de invasão e localização.</p><p><strong>Veredito:</strong> A alternativa A é a resposta correta. A circunferencialidade superior a 50% constitui o principal fator limitante para ressecção local de tumores retais,pois compromete a função intestinal e aumenta significativamente os riscos de complicações e recidiva.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "No estadiamento dos cânceres de cólon, a classificação de Dukes concorre em importância e uso com a TNM da União Internacional de Combate ao Câncer. Um paciente com tumor de sigmoide invadindo até a submucosa, com 3 linfonodos adjacentes comprometidos, sem metástases classifica-se como Dukes:",
+      "alternativas": [
+        "A.",
+        "B.",
+        "C.",
+        "D."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>QUESTÃO ANULADA PELA BANCA EXAMINADORA</strong></p><p>Esta questão da SCML 2020 apresenta problema técnico na classificação de Dukes para estadiamento de câncer colorretal. A classificação de Dukes tradicional tem especificidades que tornam impossível determinar uma única resposta correta.</p><p><strong>Análise técnica do problema:</strong></p><p>A classificação de Dukes original tem as seguintes características:</p><p>- Dukes A: Tumor limitado à parede intestinal (atingindo até submucosa ou muscular própria)<br>- Dukes B: Tumor atravessa toda a parede intestinal, sem metástases em linfonodos<br>- Dukes C: Tumor com metástases em linfonodos regionais<br>- Dukes D: Metástases à distância</p><p><strong>Alternativa C seria teoricamente correta</strong> porque pacientes com comprometimento de linfonodos (3 linfonodos positivos) se classificam como Dukes C, independentemente da profundidade de invasão do tumor primário.</p><p><strong>Porém, existe ambiguidade técnica:</strong> A questão menciona tumor de sigmoide invadindo \"até a submucosa\". Em algumas versões da classificação de Dukes, tumores que não atravessam completamente a muscular própria ainda se classificam como Dukes A, mesmo havendo metástases em linfonodos.</p><p><strong>Conclusão técnica:</strong> Devido às diferentes interpretações das classificações de Dukes nas suas múltiplas versões (original, modificada, Astler-Coller), torna-se tecnicamente impossível determinar uma única resposta correta com base apenas nas informações fornecidas. Por este motivo técnico, a questão foi anulada pela banca.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Na lida de pacientes oncológicos, há várias escalas de avaliação da capacidade funcional e de independência dos doentes. Essas escalas podem ajudar na decisão de tomadas de condutas como paliação. As escalas mais utilizadas são as de Karnofsky e ECOG (Eastern Cooperative Oncology Group). Qual o significado de um paciente com grau de Karnofsky 100 ou ECOG 0?",
+      "alternativas": [
+        "Totalmente ativo e independente.",
+        "Atividade normal com certo esforço.",
+        "Necessita de assistência para cuidados pessoais básicos.",
+        "Moribundo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SCML 2020 avalia o conhecimento sobre as escalas de avaliação funcional em oncologia, especificamente sobre os escores de Karnofsky e ECOG para determinar a capacidade funcional do paciente.</p><p><strong>A resposta correta é A - totalmente ativo e independente.</strong> Tanto o escore de Karnofsky 100 quanto o ECOG 0 representam o nível máximo de capacidade funcional, indicando que o paciente está totalmente ativo e independente para suas atividades diárias.</p><p>Vamos analisar as alternativas:</p><p><strong>Alternativa A (Totalmente ativo e independente):</strong> CORRETA. No escore de Karnofsky, 100% significa normal, sem queixas ou evidências de doença. No ECOG, grau 0 significa totalmente ativo, capaz de realizar todas as atividades sem restrição. Ambas as escalas indicam capacidade funcional preservada.</p><p><strong>Alternativa B (Atividade normal com certo esforço):</strong> Esta descrição seria mais próxima do Karnofsky 90% ou ECOG grau 1. O grau 0/ECOG e 100%/Karnofsky não envolvem esforço - o paciente realiza todas as atividades normalmente.</p><p><strong>Alternativa C (Necessita de assistência para cuidados pessoais básicos):</strong> Esta seria a situação de pacientes com ECOG grau 3 (incapaz para trabalho, cuidados pessoais limitados) ou Karnofsky 50% (requer assistência e cuidados médicos especiais). Longe da situação descrita na alternativa correta.</p><p><strong>Alternativa D (Moribundo):</strong> Extremamente incorreta. O escore ECOG grau 4 significa completamente incapacitado, confinado à cama ou cadeira, incapacitado para autocuidado. Karnofsky 10% refere-se a extremamente doente, hospitalization necessária. Nada a ver com o grau 0/100%.</p><p><strong>Veredito:</strong> A alternativa A é a resposta correta. Um paciente com Karnofsky 100% ou ECOG 0 apresenta capacidade funcional máxima, estando totalmente ativo e independente para todas as suas atividades diárias, sem limitações relacionadas à doença oncológica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "No diagnóstico do melanoma cutâneo, utiliza-se de forma didática o acrônimo ABCDE. O que significa?",
+      "alternativas": [
+        "Assimetria, Bordas, cor, diâmetro, evolução.",
+        "Avaliar, Biópsia incisional, biópsia por fragmento (Core biopsy), raspagem (Debridment), Exérese.",
+        "Avaliar, Biopsiar, Congelar, Diagnóstico, Exérese.",
+        "Antecedentes, Borda, Cútis, Dor, Exposição ao sol."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SCML 2020 avalia seu conhecimento sobre a metodologia diagnóstica do melanoma cutâneo, especificamente sobre o acrônimo ABCDE, que é uma ferramenta fundamental em dermatologia para auxiliar na identificação precoce de lesões suspeitas.</p><p><strong>A resposta correta é a alternativa A - Assimetria, Bordas, cor, diâmetro, evolução.</strong></p><p>Vamos analisar cada alternativa:</p><p>A) <strong>CORRETA</strong> - O acrônimo ABCDE para melanoma inclui exatamente: <strong>A</strong>ssimetria (uma metade da lesão não é a imagem espelhada da outra), <strong>B</strong>ordas (irregulares, recortadas, não bem definidas), <strong>C</strong>or (variação de cor, múltiplas cores), <strong>D</strong>iâmetro (maior que 6mm) e <strong>E</strong>volução (mudança ao longo do tempo).</p><p>B) <strong>INCORRETA</strong> - Esta alternativa descreve tipos de biópsia (avaliação, biópsia incisional, core biopsy, debridamento, exérese), não o acrônimo ABCDE para melanoma.</p><p>C) <strong>INCORRETA</strong> - Também confunde com procedimentos diagnósticos (avaliar, biopsiar, congelar, diagnosticar, exérese), não sendo o acrônimo correto para melanoma.</p><p>D) <strong>INCORRETA</strong> - Mistura conceitos de anamnese (antecedentes, exposição ao sol) com características físicas (borda, cútis, dor), não correspondendo ao acrônimo ABCDE.</p><p><strong>Veredito: A alternativa A é a única que apresenta corretamente o acrônimo ABCDE utilizado no diagnóstico do melanoma cutâneo.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Há deposição de tipos diferentes de colágeno nas diversas fases de cicatrização de uma ferida. Qual o tipo de colágeno que aumenta na segunda fase (proliferação ou granulação)?",
+      "alternativas": [
+        "Tipo III.",
+        "Tipo I.",
+        "Tipo II.",
+        "Tipo IV."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as fases da cicatrização de feridas e os diferentes tipos de colágeno envolvidos em cada etapa. A cicatrização é um processo complexo dividido em três fases distintas, cada uma com características e componentes específicos.</p><p><strong>A resposta correta é a alternativa A - Tipo III.</strong></p><p>Vamos analisar cada alternativa e entender a fisiologia da cicatrização:</p><p>A) <strong>CORRETA</strong> - O colágeno tipo III é predominante na segunda fase da cicatrização (proliferação ou granulação). Esta fase ocorre entre 3-21 dias após a lesão e é caracterizada pela formação de tecido de granulação, angiogênese e síntese de matriz extracelular. O colágeno tipo III forma fibras frágeis que fornecem suporte inicial à nova estrutura tecidual.</p><p>B) <strong>INCORRETA</strong> - O colágeno tipo I é predominante na terceira fase (remodelamento ou maturação). A partir da terceira semana, há substituição gradual do colágeno III pelo colágeno I, que é mais resistente e dá força definitiva à cicatriz.</p><p>C) <strong>INCORRETA</strong> - O colágeno tipo II é encontrado principalmente na cartilagem hialina e cartilagem elástica, não estando envolvido significativamente na cicatrização de feridas cutâneas.</p><p>D) <strong>INCORRETA</strong> - O colágeno tipo IV é um componente da membrana basal, importante para a aderência entre эпидеerme e derme, mas não aumenta significativamente na fase de proliferação/granulação.</p><p><strong>Veredito: A alternativa A é correta pois o colágeno tipo III é indeed o que aumenta predominantemente na segunda fase (proliferação/granulação) da cicatrização.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Em um paciente queimado, a correta restituição hídrica é importante. Há fórmulas utilizadas para calcular a infusão de líquidos endovenoso para ressuscitação, porém, para seguimento é mais adequado o controle de infusão baseado no débito urinário. Qual o débito urinário adequado para um adulto que garante que a perfusão tecidual está adequada?",
+      "alternativas": [
+        "4 ml/kg/h.",
+        "2 ml/kg/h.",
+        "0,5 ml/kg/h.",
+        "6 ml/kg/h."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o manejo de pacientes queimados, especificamente sobre os parâmetros de monitorização da ressuscitação hídrica. O controle adequado da perfusão tecidual é fundamental para o prognóstico desses pacientes.</p><p><strong>A resposta correta é a alternativa C - 0,5 ml/kg/h.</strong></p><p>Vamos analisar cada alternativa e entender a fisiologia da ressuscitação em queimados:</p><p>A) <strong>INCORRETA</strong> - 4 ml/kg/h representa um débito urinário muito elevado, que pode indicar sobrecarga hídrica. Este valor está próximo do limite superior aceitável e pode levar a complicações como edema pulmonar e síndrome do compartimento.</p><p>B) <strong>INCORRETA</strong> - 2 ml/kg/h é considerado um débito urinário adequado em outras condições, mas em pacientes queimados é considerado um pouco elevado. O objetivo é manter um débito mais conservador para evitar sobrecarga hídrica.</p><p>C) <strong>CORRETA</strong> - 0,5 ml/kg/h é o débito urinário ideal para adultos queimados que garante perfusão tecidual adequada sem risco de sobrecarga hídrica. Este parâmetro é utilizado como meta de ressuscitação pois indica que os rins estão sendo adequadamente perfundidos, sem excessos que possam causar complicações.</p><p>D) <strong>INCORRETA</strong> - 6 ml/kg/h representa um débito urinário muito alto, indicando possível sobrecarga hídrica. Este valor pode levar a edema pulmonar, ascite e outras complicações da ressuscitação excessiva.</p><p><strong>Veredito: A alternativa C é correta pois 0,5 ml/kg/h é o débito urinário alvo que indica perfusão tecidual adequada sem sobrecarga hídrica em pacientes queimados adultos.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_AtendimentoInicialAsVitimasDeQ"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Quais são as fases de cicatrização de uma ferida?",
+      "alternativas": [
+        "Inflamatória, granulação e remodelamento.",
+        "Tamponamento, proliferação, maturação.",
+        "Inflamatória, granulação, angiogênese.",
+        "Coagulativa, reparativa, reconstrutiva."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as fases da cicatrização de feridas, um processo complexo e organizado que é fundamental para a compreensão da cirurgia e do cuidado de feridas. O entendimento dessas fases é essencial para adequado manejo clínico.</p><p><strong>A resposta correta é a alternativa A - Inflamatória, granulação e remodelamento.</strong></p><p>Vamos analisar cada alternativa e entender a sequência fisiológica da cicatrização:</p><p>A) <strong>CORRETA</strong> - As três fases da cicatrização são: 1) <strong>Fase Inflamatória</strong> (0-3 dias): hemostasia e resposta inflamatória com recrutamento de leucócitos; 2) <strong>Fase de Proliferação/Granulação</strong> (3-21 dias): formação de tecido de granulação, angiogênese, síntese de colágeno; 3) <strong>Fase de Remodelamento/Maturação</strong> (21 dias-1 ano): reorganização do colágeno, aumento da força tensional.</p><p>B) <strong>INCORRETA</strong> - Tamponamento não é uma fase da cicatrização. Esta terminologia confunde com procedimentos hemostáticos ou com o tamponamento de feridas, não representando uma fase fisiológica do processo de cicatrização.</p><p>C) <strong>INCORRETA</strong> - Angiogênese é um processo que ocorre dentro da fase de proliferação/granulação, mas não constitui uma fase独立的. É um componente da fase proliferativa, não uma fase separados da cicatrização.</p><p>D) <strong>INCORRETA</strong> - As terminologias coagulativa, reparativa e reconstrutiva não correspondem à nomenclatura padrão das fases da cicatrização. Embora possam ter algum significado no contexto, não são as denominações tradicionalmente aceitas na literatura médica.</p><p><strong>Veredito: A alternativa A é correta pois apresenta as três fases clássicas e universalmente aceitas da cicatrização de feridas: inflamatória, de granulação/proliferação e remodelamento/maturação.</strong></p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "A eritroplasia de Queyrat é uma forma especial de carcinoma espinocelular cutâneo geralmente limitado à epiderme. Onde é encontrada?",
+      "alternativas": [
+        "Genitais.",
+        "Pálpebra.",
+        "Áreas queratinizadas como planta do pé.",
+        "Articulações."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre patologia dermatológica, especificamente sobre a eritroplasia de Queyrat, uma lesão pré-maligna importante que requer reconhecimento clínico adequado para intervenção precoce.</p><p><strong>A resposta correta é a alternativa A - Genitais.</strong></p><p>Vamos analisar cada alternativa e entender as características desta lesão:</p><p>A) <strong>CORRETA</strong> - A eritroplasia de Queyrat é encontrada exclusivamente em áreas genitais, especialmente no pênis (especificamente na glande e prepúcio) e na vulva. É uma forma especial de carcinoma espinocelular in situ (limitado à epiderme) que se apresenta como uma placa eritematosa, bem delimitada, com aspecto aveludado ou brilhante.</p><p>B) <strong>INCORRETA</strong> - As pálpebras não são localizações típicas da eritroplasia de Queyrat. Lesões precursoras de carcinoma espinocelular em pálpebras recebem outras denominações e têm características diferentes.</p><p>C) <strong>INCORRETA</strong> - Áreas queratinizadas como a planta do pé não são o local de apresentação da eritroplasia de Queyrat. Estas regiões estão mais sujeitas a outras lesões dermatológicas, como calosidades, verrugas ou carcinomas basocelulares.</p><p>D) <strong>INCORRETA</strong> - Articulações não são localizações onde se desenvolve eritroplasia de Queyrat. As articulações podem apresentar outras lesões dermatológicas relacionadas ao atrito ou condições específicas, mas não esta forma particular de carcinoma espinocelular in situ.</p><p><strong>Veredito: A alternativa A é correta pois a eritroplasia de Queyrat é especificamente encontrada em áreas genitais, sendo uma forma especial de carcinoma espinocelular cutâneo limitado à epiderme nesta localização.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_CancerDePele"
+      ],
+      "tags": [
+        "SCML2020R3CG",
+        "SCML",
+        "R3CG",
+        "SP",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762848048643-29"
+    }
+  ]
+}

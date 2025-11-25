@@ -1,20 +1,20 @@
-import { FirebaseAdminService } from '../services/FirebaseAdminService';
+import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdminService';
 import { AdminStats } from '../types/AdminTypes';
-import { FirebaseCacheService } from '../../../infra/cache/firebase/FirebaseCacheService';
-import { FirebaseQuestionService } from '../../questions/services/FirebaseQuestionService';
-import { firestore as firestoreClient } from '../../../config/firebaseAdmin';
+import { SupabaseCacheService } from '../../../infra/cache/supabase/SupabaseCacheService';
+import { SupabaseQuestionService } from '../../../infra/questions/supabase/SupabaseQuestionService';
+import { supabase } from '../../../config/supabaseAdmin';
 import { QuestionStatus } from '../../questions/types';
 
 export class AdminDashboardService {
   private static instance: AdminDashboardService;
-  private adminService: FirebaseAdminService;
-  private questionService: FirebaseQuestionService;
-  private cacheService: FirebaseCacheService;
+  private adminService: SupabaseAdminService;
+  private questionService: SupabaseQuestionService;
+  private cacheService: SupabaseCacheService;
 
   private constructor() {
-    this.adminService = FirebaseAdminService.getInstance();
-    this.questionService = new FirebaseQuestionService(firestoreClient);
-    this.cacheService = new FirebaseCacheService();
+    this.adminService = SupabaseAdminService.getInstance();
+    this.questionService = new SupabaseQuestionService(supabase);
+    this.cacheService = new SupabaseCacheService('cache', supabase);
   }
 
   public static getInstance(): AdminDashboardService {
@@ -38,12 +38,13 @@ export class AdminDashboardService {
   }
 
   private async calculateStats(): Promise<AdminStats> {
-    const [totalUsers, activeUsers, reportedContent, totalQuestions] = await Promise.all([
-      this.adminService.getTotalUsers(),
-      this.adminService.getActiveUsers(),
-      this.adminService.getReportedContentCount(),
-      this.getTotalQuestions(),
-    ]);
+    const [totalUsers, activeUsers, reportedContent, totalQuestions] =
+      await Promise.all([
+        this.adminService.getTotalUsers(),
+        this.adminService.getActiveUsers(),
+        this.adminService.getReportedContentCount(),
+        this.getTotalQuestions(),
+      ]);
 
     return {
       totalUsers,
@@ -55,12 +56,20 @@ export class AdminDashboardService {
 
   private async getTotalQuestions(): Promise<number> {
     // Usa listQuestions com status PUBLISHED e pega o total
-    const result = await this.questionService.listQuestions({ status: QuestionStatus.PUBLISHED, limit: 1 });
+    const result = await this.questionService.listQuestions({
+      status: QuestionStatus.PUBLISHED,
+      limit: 1,
+    });
     return result.total;
   }
 
   async getRecentQuestions(limit: number = 10) {
-    const result = await this.questionService.listQuestions({ status: QuestionStatus.PUBLISHED, limit, orderBy: 'createdAt', orderDirection: 'desc' });
+    const result = await this.questionService.listQuestions({
+      status: QuestionStatus.PUBLISHED,
+      limit,
+      order_by: 'createdAt',
+      order_direction: 'desc',
+    });
     return result.items;
   }
 
@@ -73,19 +82,30 @@ export class AdminDashboardService {
       return cachedQuestions;
     }
 
-    const result = await this.questionService.listQuestions({ status: QuestionStatus.DRAFT, limit: 50, orderBy: 'createdAt', orderDirection: 'desc' });
+    const result = await this.questionService.listQuestions({
+      status: QuestionStatus.DRAFT,
+      limit: 50,
+      order_by: 'createdAt',
+      order_direction: 'desc',
+    });
     await this.cacheService.set(cacheKey, result.items, 60); // Cache por 1 minuto
     return result.items;
   }
 
   async approveQuestion(questionId: string, adminId: string) {
-    await this.questionService.changeStatus(questionId, QuestionStatus.PUBLISHED);
+    await this.questionService.changeStatus(
+      questionId,
+      QuestionStatus.PUBLISHED,
+    );
     await this.invalidateQuestionCache();
     await this.logQuestionAction(questionId, 'APPROVE', adminId);
   }
 
   async rejectQuestion(questionId: string, adminId: string, reason: string) {
-    await this.questionService.changeStatus(questionId, QuestionStatus.ARCHIVED);
+    await this.questionService.changeStatus(
+      questionId,
+      QuestionStatus.ARCHIVED,
+    );
     await this.invalidateQuestionCache();
     await this.logQuestionAction(questionId, 'REJECT', adminId, { reason });
   }

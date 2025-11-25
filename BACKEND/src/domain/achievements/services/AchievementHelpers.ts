@@ -1,43 +1,60 @@
-import { Firestore, Timestamp } from 'firebase-admin/firestore';
-import {
-  AchievementEvent,
-  AchievementCheckResult,
-} from '../types';
+import { SupabaseClient } from '@supabase/supabase-js';
+import { AchievementEvent, AchievementCheckResult } from '../types';
 import { logger } from '../../../utils/logger';
+import supabase from '../../../config/supabaseAdmin';
 
 /**
  * Helpers para operações de conquistas
  */
 export class AchievementHelpers {
-  constructor(private readonly firestore: Firestore) {}
+  constructor(private readonly client: SupabaseClient = supabase) {}
 
   // === HISTÓRICO DE EVENTOS ===
 
-  async getUserEventHistory(userId: string, limit = 100): Promise<AchievementEvent[]> {
-    const snapshot = await this.firestore
-      .collection('achievementEvents')
-      .where('userId', '==', userId)
-      .orderBy('timestamp', 'desc')
-      .limit(limit)
-      .get();
+  async getUserEventHistory(
+    userId: string,
+    limit = 100,
+  ): Promise<AchievementEvent[]> {
+    const { data, error } = await this.client
+      .from('achievement_events')
+      .select('*')
+      .eq('userId', userId)
+      .order('createdAt', { ascending: false })
+      .limit(limit);
 
-    return snapshot.docs.map((doc: any) => doc.data() as AchievementEvent);
+    if (error) {
+      logger.error('Erro ao buscar histórico de eventos do usuário:', error);
+      return [];
+    }
+
+    return data || [];
   }
 
-  async getAchievementEventHistory(achievementId: string, limit = 50): Promise<AchievementEvent[]> {
-    const snapshot = await this.firestore
-      .collection('achievementEvents')
-      .where('achievementId', '==', achievementId)
-      .orderBy('timestamp', 'desc')
-      .limit(limit)
-      .get();
+  async getAchievementEventHistory(
+    achievementId: string,
+    limit = 50,
+  ): Promise<AchievementEvent[]> {
+    const { data, error } = await this.client
+      .from('achievement_events')
+      .select('*')
+      .eq('achievementId', achievementId)
+      .order('createdAt', { ascending: false })
+      .limit(limit);
 
-    return snapshot.docs.map((doc: any) => doc.data() as AchievementEvent);
+    if (error) {
+      logger.error('Erro ao buscar histórico de eventos da conquista:', error);
+      return [];
+    }
+
+    return data || [];
   }
 
   // === SINCRONIZAÇÃO COM SISTEMAS ===
 
-  async syncWithUserStatistics(userId: string, userStatsService: any): Promise<AchievementCheckResult> {
+  async syncWithUserStatistics(
+    userId: string,
+    userStatsService: any,
+  ): Promise<AchievementCheckResult> {
     if (!userStatsService) {
       throw new Error('User statistics service is required');
     }
@@ -45,7 +62,7 @@ export class AchievementHelpers {
     try {
       // User stats are processed but not used in this helper method
       await userStatsService.getOrCreateUserStatistics(userId);
-      
+
       const result: AchievementCheckResult = {
         userId,
         checksPerformed: 0,
@@ -55,16 +72,23 @@ export class AchievementHelpers {
         notifications: [],
         updatedStats: null as any,
         processingTime: 0,
-        timestamp: Timestamp.now()
+        timestamp: new Date().toISOString(),
       };
 
-      logger.info('AchievementHelpers', 'syncWithUserStatistics', 
-        `Sincronização completada para ${userId}`);
+      logger.info(
+        'AchievementHelpers',
+        'syncWithUserStatistics',
+        `Sincronização completada para ${userId}`,
+      );
 
       return result;
     } catch (error) {
-      logger.error('AchievementHelpers', 'syncWithUserStatistics', 
-        `Erro na sincronização para ${userId}`, error);
+      logger.error(
+        'AchievementHelpers',
+        'syncWithUserStatistics',
+        `Erro na sincronização para ${userId}`,
+        error,
+      );
       throw error;
     }
   }
@@ -72,4 +96,4 @@ export class AchievementHelpers {
   // === LOG DE EVENTOS ===
 
   // TODO: Implementar mais helpers conforme necessário...
-} 
+}

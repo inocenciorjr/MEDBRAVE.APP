@@ -1,6 +1,10 @@
 import { Request, Response, NextFunction } from 'express';
 import { MentorshipServiceFactory } from '../factories';
-import { CreateMentorshipMeetingPayload, MeetingType, MentorshipStatus } from '../types';
+import {
+  CreateMentorshipMeetingPayload,
+  MeetingType,
+  MentorshipStatus,
+} from '../types';
 import AppError from '../../../utils/AppError';
 import { mentorshipLogger } from '../utils/loggerAdapter';
 
@@ -38,7 +42,8 @@ export class MentorshipMeetingController {
       } = req.body;
 
       // Verificar se a mentoria existe
-      const mentorship = await this.mentorshipService.getMentorshipById(mentorshipId);
+      const mentorship =
+        await this.mentorshipService.getMentorshipById(mentorshipId);
 
       if (!mentorship) {
         throw new AppError('Mentoria não encontrada', 404);
@@ -46,12 +51,18 @@ export class MentorshipMeetingController {
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria
       if (mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
-        throw new AppError('Apenas mentor ou mentorado podem criar reuniões', 403);
+        throw new AppError(
+          'Apenas mentor ou mentorado podem criar reuniões',
+          403,
+        );
       }
 
       // Verificar se a mentoria está ativa
       if (mentorship.status !== MentorshipStatus.ACTIVE) {
-        throw new AppError('Só é possível criar reuniões para mentorias ativas', 400);
+        throw new AppError(
+          'Só é possível criar reuniões para mentorias ativas',
+          400,
+        );
       }
 
       const meetingData: CreateMentorshipMeetingPayload = {
@@ -61,7 +72,9 @@ export class MentorshipMeetingController {
         meetingType: meetingType as MeetingType,
         meetingLink,
         meetingLocation,
-        agenda: Array.isArray(agenda) ? agenda.join('; ') : String(agenda ?? ''),
+        agenda: Array.isArray(agenda)
+          ? agenda.join('; ')
+          : String(agenda ?? ''),
       };
 
       const meeting = await this.meetingService.createMeeting(meetingData);
@@ -95,14 +108,20 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria associada
-      const mentorship = await this.mentorshipService.getMentorshipById(meeting.mentorshipId);
+      const mentorship = await this.mentorshipService.getMentorshipById(
+        meeting.mentorshipId,
+      );
 
       if (!mentorship) {
         throw new AppError('Mentoria associada não encontrada', 404);
       }
 
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         throw new AppError('Acesso não autorizado a esta reunião', 403);
       }
 
@@ -120,7 +139,11 @@ export class MentorshipMeetingController {
   /**
    * Lista reuniões de uma mentoria
    */
-  getMeetingsByMentorship = async (req: Request, res: Response, next: NextFunction) => {
+  getMeetingsByMentorship = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { mentorshipId } = req.params;
 
@@ -129,7 +152,8 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se a mentoria existe
-      const mentorship = await this.mentorshipService.getMentorshipById(mentorshipId);
+      const mentorship =
+        await this.mentorshipService.getMentorshipById(mentorshipId);
 
       if (!mentorship) {
         throw new AppError('Mentoria não encontrada', 404);
@@ -137,11 +161,19 @@ export class MentorshipMeetingController {
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
-        throw new AppError('Acesso não autorizado às reuniões desta mentoria', 403);
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
+        throw new AppError(
+          'Acesso não autorizado às reuniões desta mentoria',
+          403,
+        );
       }
 
-      const meetings = await this.meetingService.getMeetingsByMentorship(mentorshipId);
+      const meetings =
+        await this.meetingService.getMeetingsByMentorship(mentorshipId);
 
       return res.status(200).json({
         success: true,
@@ -157,7 +189,11 @@ export class MentorshipMeetingController {
   /**
    * Lista próximas reuniões de uma mentoria
    */
-  getUpcomingMeetings = async (req: Request, res: Response, next: NextFunction) => {
+  getUpcomingMeetings = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { mentorshipId } = req.params;
 
@@ -166,7 +202,8 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se a mentoria existe
-      const mentorship = await this.mentorshipService.getMentorshipById(mentorshipId);
+      const mentorship =
+        await this.mentorshipService.getMentorshipById(mentorshipId);
 
       if (!mentorship) {
         throw new AppError('Mentoria não encontrada', 404);
@@ -174,11 +211,19 @@ export class MentorshipMeetingController {
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
-        throw new AppError('Acesso não autorizado às reuniões desta mentoria', 403);
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
+        throw new AppError(
+          'Acesso não autorizado às reuniões desta mentoria',
+          403,
+        );
       }
 
-      const meetings = await this.meetingService.getUpcomingMeetings(mentorshipId);
+      const meetings =
+        await this.meetingService.getUpcomingMeetings(mentorshipId);
 
       return res.status(200).json({
         success: true,
@@ -197,14 +242,23 @@ export class MentorshipMeetingController {
   completeMeeting = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
-      const { actualDate, actualDuration, notes, mentorFeedback, studentFeedback } = req.body;
+      const {
+        actualDate,
+        actualDuration,
+        notes,
+        mentorFeedback,
+        studentFeedback,
+      } = req.body;
 
       if (!id) {
         throw new AppError('ID da reunião é obrigatório', 400);
       }
 
       if (!actualDate || !actualDuration) {
-        throw new AppError('Data e duração real da reunião são obrigatórios', 400);
+        throw new AppError(
+          'Data e duração real da reunião são obrigatórios',
+          400,
+        );
       }
 
       // Verificar se a reunião existe
@@ -215,14 +269,20 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria associada
-      const mentorship = await this.mentorshipService.getMentorshipById(meeting.mentorshipId);
+      const mentorship = await this.mentorshipService.getMentorshipById(
+        meeting.mentorshipId,
+      );
 
       if (!mentorship) {
         throw new AppError('Mentoria associada não encontrada', 404);
       }
 
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         throw new AppError('Acesso não autorizado a esta reunião', 403);
       }
 
@@ -266,18 +326,27 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria associada
-      const mentorship = await this.mentorshipService.getMentorshipById(meeting.mentorshipId);
+      const mentorship = await this.mentorshipService.getMentorshipById(
+        meeting.mentorshipId,
+      );
 
       if (!mentorship) {
         throw new AppError('Mentoria associada não encontrada', 404);
       }
 
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         throw new AppError('Acesso não autorizado a esta reunião', 403);
       }
 
-      const updatedMeeting = await this.meetingService.cancelMeeting(id, reason);
+      const updatedMeeting = await this.meetingService.cancelMeeting(
+        id,
+        reason,
+      );
 
       return res.status(200).json({
         success: true,
@@ -293,7 +362,11 @@ export class MentorshipMeetingController {
   /**
    * Reagenda uma reunião
    */
-  rescheduleMeeting = async (req: Request, res: Response, next: NextFunction) => {
+  rescheduleMeeting = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) => {
     try {
       const { id } = req.params;
       const {
@@ -318,14 +391,20 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria associada
-      const mentorship = await this.mentorshipService.getMentorshipById(meeting.mentorshipId);
+      const mentorship = await this.mentorshipService.getMentorshipById(
+        meeting.mentorshipId,
+      );
 
       if (!mentorship) {
         throw new AppError('Mentoria associada não encontrada', 404);
       }
 
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         throw new AppError('Acesso não autorizado a esta reunião', 403);
       }
 
@@ -371,14 +450,20 @@ export class MentorshipMeetingController {
       }
 
       // Verificar se o usuário é o mentor ou mentorado da mentoria associada
-      const mentorship = await this.mentorshipService.getMentorshipById(meeting.mentorshipId);
+      const mentorship = await this.mentorshipService.getMentorshipById(
+        meeting.mentorshipId,
+      );
 
       if (!mentorship) {
         throw new AppError('Mentoria associada não encontrada', 404);
       }
 
       const userId = req.user?.id;
-      if (userId && mentorship.mentorId !== userId && mentorship.menteeId !== userId) {
+      if (
+        userId &&
+        mentorship.mentorId !== userId &&
+        mentorship.menteeId !== userId
+      ) {
         throw new AppError('Acesso não autorizado a esta reunião', 403);
       }
 

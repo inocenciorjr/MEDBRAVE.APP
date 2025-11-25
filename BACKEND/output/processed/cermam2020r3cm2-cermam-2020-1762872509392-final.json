@@ -1,0 +1,853 @@
+{
+  "metadata": {
+    "examName": "CERMAM2020R3CM2 (CERMAM 2020)",
+    "examYear": 2020,
+    "url": "source://1120",
+    "totalQuestions": 25,
+    "categorizedQuestions": 25,
+    "rewrittenComments": 25,
+    "processedAt": "2025-11-11T14:48:29.392Z",
+    "jobId": "batch-1762861546462-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "8d55fd1b-0d5e-4484-9188-5a005bd7afc7"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Tratar pacientes com cetoacidose diabética é um dos maiores desafios na unidade de terapia intensiva. Considere os 03 cenários abaixo e indique as medidas críticas pertinentes na prescrição médica para cada cenário. Paciente 1: Pressão arterial: 70 x 60 (63) mmHg, Glicemia sérica: 400mg%. PH 7,20, HCO3: 13 PCO2: 28. K+ 3,5 . Na+135. Cl 100. Paciente 2: Pressão arterial: 120 x 70 (86) mmHg. Glicemia sérica: 380mg%. PH 7.22. HCO3 14. PCO2: 26. K+ 3,5. Na+138. Cl 106. Paciente 3: Pressão arterial: 110 x 70 (83) mmHg. Glicemia sérica: 220mg%. PH 7,30. HCO3 14. PCO2: 26. K+ 3,4. Na+129. Cl 108.",
+      "alternativas": [
+        "Paciente 1: Expansão volêmica com cristalóide. Paciente 2: Hidratação com SF 0,45 % com 20 a 40 meq/ L de K + e insulina regular endovenosa. Paciente 3: Hidratação com SF 0,9% com 20 a 40 meq/ L de K +, insulina regular endovenosa e Glicose 5%.",
+        "Paciente 1: Insulina regular endovenosa. Paciente 2: Hidratação com SF 0,9% com 20 a 40 meq/ L de K + e insulina regular endovenosa. Paciente 3: Hidratação com SF 0,9% com 20 a 40 meq/ L de K +.",
+        "Paciente 1: Hidratação com SF 0,45% e com 20 a 40 meq/ L de K +. Paciente 2: Hidratação com SF 0,9% com 20 a 40 meq/ L de K + e insulina regular endovenosa. Paciente 3: Hidratação com SF 0,9% com 20 a 40 meq/ L de K +.",
+        "Paciente 1: Expansão volêmica com cristaloide. Paciente 2: Hidratação com SF 0,9 % com 20 a 40 meq/ L de K + e insulina regular endovenosa. Paciente 3: Hidratação com SF 0,45% e Glicose 5% com 20 a 40 meq/ L de K +."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CERMAM 2020 avalia seu conhecimento sobre o manejo da cetoacidose diabética (CAD), especificamente sobre o tratamento personalizado baseado nas características clínicas e laboratoriais de cada paciente.</p><p><strong>O gabarito correto é a alternativa A.</strong> Vamos entender por que esta é a resposta mais adequada analisando cada cenário clínico:</p><p><strong>PACIENTE 1 - Estado de Choque Hipovolêmico:</strong><br>Com pressão arterial de 70x60 mmHg e acidose grave (pH 7,20), este paciente apresenta choque hipovolêmico. A prioridade absoluta é a expansão volêmica agressiva com cristaloides antes de qualquer outra intervenção. Não se pode iniciar insulina neste contexto sem primeiro reanimar o paciente, pois há risco de choque cardiogênico e morte súbita.</p><p><strong>PACIENTE 2 - CAD Moderada Hemodinamicamente Estável:</strong><br>Pressão arterial estável (120x70 mmHg), glicemia 380mg%, pH 7,22. Este paciente está hemodinamicamente compensado, permitindo o tratamento clássico da CAD: hidratação com solução salina 0,9% + reposição de potássio + insulina regular endovenosa.</p><p><strong>PACIENTE 3 - CAD Inicial com Risco de Hipoglicemia:</strong><br>Interessante observar que este paciente tem glicemia de apenas 220mg%, sugerindo que é uma CAD em evolução (não é hiperglicemia típica). pH 7,30 e HCO3 14. O protocolo inclui SF 0,9% + K+ + insulina regular EV + glicose 5% porque, apesar da glicemia relativamente baixa, ainda há acidose metabólica que precisa ser corrigida. A glicose é adicionada para prevenir hipoglicemia durante o tratamento com insulina.</p><p><strong>Por que as outras alternativas estão erradas:</strong><br>B) Iniciaria insulina no paciente em choque (P1) - risco de morte<br>C) Não trata adequadamente o paciente em choque<br>D) Não inclui insulina para o P2 e usa SF 0,45% no P3 (hipotônico inadequado)</p><p>Esta questão demonstra a importância de individualizar o tratamento da CAD baseado no estado hemodinâmico de cada paciente.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Na síndrome coronariana aguda, a correta interpretação do eletrocardiograma e o cálculo de escores são essenciais para a boa prática e decisão clínica. Qual diagnóstico eletrocardiográfico e o escore decisivo para início da proteção gástrica com inibidores da bomba de prótons?\n\n<img src=\"https://medbrave.com.br/questions/cermam-2020-r3/qQ2.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "SCA com supra de ST anterior extenso. Roxanna menor que 10.",
+        "SCA com supra de ST em parede anterior. TIMI RISK 7.",
+        "SCA com supra de ST anterior extenso. Roxanna maior que 15.",
+        "SCA com supra de ST em parede anterior. TIMI RISK 4."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda dois aspectos fundamentais na prática cardiológica: interpretação eletrocardiográfica em síndrome coronariana aguda (SCA) e o uso de escores de risco para tomada de decisão clínica, especificamente para iniciar proteção gástrica.</p><p><strong>O gabarito correto é a alternativa C.</strong> Analisando o ECG e correlacionando com os escores:</p><p><strong>Análise do Eletrocardiograma:</strong><br>O ECG mostra supradesnivelamento do segmento ST em múltiplas derivações anteriores (V1-V6, DI, aVL), caracterizando infarto agudo do miocárdio (IAM) com supra de ST de parede anterior extensa. Este é um dos cenários mais graves na SCA, com grande área de miocárdio em risco.</p><p><strong>Escore ROXANN (para Estratificação de Risco):</strong><br>O ROXANN é um escore que combina variáveis clínicas, eletrocardiográficas e laboratoriais para determinar o risco do paciente. Valores maiores que 15 indicam alto risco e justificam medidas preventivas mais agressivas, incluindo profilaxia para complicações gastrintestinais.</p><p><strong>Racional para Proteção Gástrica:</strong><br>Em pacientes com IAM e supradesnivelamento ST de grande extensão, há alto risco de:<br>• Stress-related mucosal disease (SRMD)<br>• Sangramento gastrointestinal devido ao uso de terapia antiagregante dupla<br>• Morbimortalidade aumentada se houver complicação gastrintestinal</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>A) Roxa < 10 (baixo risco) - não justifica proteção gástrica agressiva<br>B) TIMI RISK 7 (moderado) mas o diagnóstico está incorreto<br>D) TIMI RISK 4 (baixo) e diagnóstico incorreto</p><p>Esta questão enfatiza a importância da integração entre dados clínicos, eletrocardiográficos e escores de risco para otimizar a conduta médica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_InfartoAgudoDoMiocardioComSupr",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente masculino, 32 anos, com cirrose descompensada e presença de ascite, dá entrada na sala de emergência do Hospital 28 de agosto com hemorragia digestiva alta. Conduzido com reanimação clínica, controle de vias aéreas. Realizada endoscopia digestiva alta que demonstra sangramento ativo não pulsátil tratado com ligadura elástica. Assinale qual a classificação segundo FORREST e outras medidas pertinentes para o caso.",
+      "alternativas": [
+        "Ib. Omeprazol. Profilaxia para PBE com cefalosporina de 3º geração. Rifaximina. Lactulose.",
+        "Ia. Omeprazol. Profilaxia para PBE com cefalosporina de 3º geração. Rifaximina. Lactulose.",
+        "Ib. Omeprazol. Não é necessária profilaxia para PBE. Rifaximina. Lactulose.",
+        "Ia. Omeprazol. Não é necessária profilaxia para PBE. Rifaximina. Lactulose."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CERMAM 2020 avalia seu conhecimento sobre o manejo integrado de pacientes cirróticos com hemorragia digestiva alta, combinando classificação endoscópica (Forrest) e medidas farmacológicas específicas.</p><p><strong>O gabarito correto é a alternativa A.</strong> Vamos detalhar a análise:</p><p><strong>Classificação de Forrest - Sangramento Ativo Não Pulsátil:</strong><br>O sangramento ativo não pulsátil corresponde à classificação Forrest Ib. Forrest Ia seria sangramento ativo pulsátil (mais grave), Forrest Ib é ativo não pulsátil (menos grave), Forrest IIa/IIb são sinais de sangramento recente sem sangramento ativo, e Forrest III é sem sinais de sangramento recente.</p><p><strong>Por que é Forrest Ib e não Ia:</strong><br>• Sangramento ativo presente (descarta Forrest II e III)<br>• Não pulsátil (descarta Forrest Ia)<br>• Logo, é Forrest Ib - atividade de moderada intensidade</p><p><strong>Medidas Farmacológicas Necessárias:</strong><br><strong>1. Omeprazol:</strong> Essencial para qualquer sangramento gastrointestinal, reduz a acidose gástrica e facilita a hemostasia local. Independente da classificação de Forrest, é padrão em todos os casos de hemorragia digestiva alta.</p><p><strong>2. Profilaxia para Peritonite Bacteriana Espontânea (PBE):</strong><br>Cefalosporina de 3ª geração é OBRIGATÓRIA. Cirróticos com ascite têm alto risco de PBE após hemorragia digestiva devido à translocação bacteriana. A profilaxia reduz significativamente a mortalidade.</p><p><strong>3. Rifaximina:</strong> Usada para profilaxia secundária da encefalopatia hepática e redução da translocação bacteriana. É padrão em cirróticos descompensados.</p><p><strong>4. Lactulose:</strong> Fundamental para controle da encefalopatia hepática, especialmente em pacientes com ascite que podem desenvolver hiperamonemia.</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>B) Forrest Ia seria se o sangramento fosse pulsátil (mais grave)<br>C) Não profilaxia para PBE é erro grave - aumenta mortalidade<br>D) Forrest Ia + sem profilaxia para PBE = combinação incorreta</p><p>Esta questão destaca a importância do manejo multidisciplinar e padronizado em pacientes cirróticos descompensados.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaNaoVari",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Considere um paciente com histórico de vômitos incoercíceis há dois dias, sem diarreia, sem sinais de hipoperfusão ou outros comemorativos. Classicamente, qual perfil metabólico na gasometria arterial tem a maior probabilidade de ser encontrado neste caso?",
+      "alternativas": [
+        "Acidose metabólica hiperclorêmica e hipercalemia.",
+        "Acidose metabólica com ânion gap aumentado e hipocalêmica.",
+        "Alcalose metabolólica hiperclorêmica e hipocalêmica.",
+        "Alcalose metabólica hipoclorêmica e hipocalêmica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre distúrbios ácido-base em pacientes com perda de conteúdo gástrico, especificamente o mecanismo fisiopatológico dos vômitos incoercíveis.</p><p><strong>O gabarito correto é a alternativa D.</strong> Vamos entender o raciocínio fisiopatológico:</p><p><strong>Fisiopatologia dos Vômitos Incoercíveis:</strong><br>Os vômitos prolongados resultam em perda de HCl (ácido clorídrico) gástrico. O HCl contém H+ e Cl-, sendo:<br>• HCl → H+ + Cl- (no estômago)</p><p><strong>Consequências Metabólicas:</strong><br>Perda de HCl → perda de H+ e Cl-<br>• Redução de H+ → tendência à alcalose metabólica<br>• Redução de Cl- → hipocloremia</p><p><strong>Desenvolvimento da Alcalose Metabólica:</strong><br>1. Perda de H+ gástrico<br>2. Compensação renal tentativa (excreção de HCO3-)<br>3. Hipovolemia secundária aos vômitos<br>4. Ativação do sistema renina-angiotensina-aldosterona<br>5. Aldosterona aumenta reabsorção de Na+ e excreção de K+ e H+<br>6. Hipocalemia (resposta renal inadequada à alcalose)<br>7. Perpetuação da alcalose metabólica</p><p><strong>Perfil Metabólico Resultante:</strong><br>• Alcalose metabólica (↑pH, ↑HCO3-)<br>• Hipocloremia (↓Cl-)<br>• Hipocalemia (↓K+)<br>• Hipovolemia</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>A) Acidose com hipercalemia - seria o oposto do que acontece nos vômitos<br>B) Acidose com ânion gap aumentado - sugere cetoacidose ou insuficiência renal<br>C) Alcalose metabólica hiperclorêmica - seria perda de HCl, mas causa HIPOCLOREMIA</p><p><strong>Dica Clínica:</strong> Lembre-se que vômitos = perda de ácido = alcalose metabólica hipoclorêmica e hipocalêmica. Esta é uma das poucas situações onde a alcalose é desvantajosa para o paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "A interpretação da gasometria arterial é uma das atividades corriqueiras da prática do intensivista. Considere a gasometria arterial abaixo de um paciente com dosagem sérica de albumina normal em choque séptico de foco pulmonar e indique a sua correta interpretação: PH: 7,25. PCO2 32. HCO3: 12. Excesso de bases: -3. Cloreto: 100. Na+ 135.",
+      "alternativas": [
+        "Acidose metabólica compensada com ânion gap aumento.",
+        "Acidose metabólica não compensada com ânion gap aumentado",
+        "Acidose metabólica não compensada, hiperclorêmica.",
+        "Acidose metabólica compensada, hiperclorêmica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia sua habilidade na interpretação de gasometria arterial, especificamente distinguindo entre acidose metabólica compensada versus não compensada e identificando a presença de distúrbios do ânion gap e hipercloremia.</p><p><strong>O gabarito correto é a alternativa B.</strong> Vamos analisar sistematicamente esta gasometria:</p><p><strong>Análise Passo a Passo da Gasometria:</strong><br>Dados fornecidos:<br>• pH: 7,25 (normal: 7,35-7,45)<br>• PCO2: 32 mmHg (normal: 35-45)<br>• HCO3-: 12 mEq/L (normal: 22-26)<br>• Excesso de bases: -3 (normal: ±2)<br>• Cl-: 100 mEq/L (normal: 98-106)<br>• Na+: 135 mEq/L (normal: 135-145)<br>• Albumina: normal</p><p><strong>1. Identificação do Distúrbio Primário:</strong><br>pH = 7,25 (acidose)<br>PCO2 = 32 (compensação respiratória parcial)<br>HCO3- = 12 (baixo - causa da acidose)</p><p><strong>2. Cálculo do Ânion Gap:</strong><br>Fórmula: AG = Na+ - (Cl- + HCO3-)<br>AG = 135 - (100 + 12) = 23<br>Ânion gap aumentado (>12 mEq/L)</p><p><strong>3. Avaliação da Compensação Respiratória:</strong><br>Regra de Winter: PCO2 esperado = 1,5 x HCO3- + 8 ± 2<br>PCO2 esperado = 1,5 x 12 + 8 = 26 ± 2 = 24-28<br>PCO2 observado = 32 mmHg (ACIMA do esperado)<br>Isto indica COMPENSAÇÃO RESPIRATÓRIA INADEQUADA = acidose metabólica NÃO COMPENSADA</p><p><strong>4. Perfil Hiperclorêmico:</strong><br>Cl- = 100 mEq/L (normal alto, mas ainda dentro da normalidade)<br>Embora não seja hipercloremia franca (Cl- < 110), há tendência ao limite superior da normalidade.</p><p><strong>Conclusão da Alternativa B:</strong><br>Acidose metabólica NÃO compensada com ânion gap aumentado - CORRETA</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>A) Acidose metabólica compensada - FALSO (PCO2 está acima do esperado)<br>C) Acidose metabólica não compensada, hiperclorêmica - FALSO (Cl- não está francamente aumentado)<br>D) Acidose metabólica compensada, hiperclorêmica - FALSO (nem compensada nem hiperclorêmica)</p><p><strong>Dica Importante:</strong> Em choque séptico, sempre pense em acidose lática (ânion gap aumentado) como primeira possibilidade. A albumina normal descarta a correção necessária do ânion gap.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Conforme a lei do ato médico de número 12.842, de 10 de julho de 2013 é privativo do médico: \"coordenação da estratégia ventilatória inicial para a ventilação mecânica invasiva, bem como das mudanças necessárias diante das intercorrências clínicas, e do programa de interrupção da ventilação mecânica invasiva, incluindo a desintubação traqueal\". Sobre esse tema tão importante na prática clínica, responda as questões 6 e 7: Considere um paciente asmático crítico, masculino de 40 anos, sob intubação traqueal após refratariedade das medidas clínicas, de peso estimado 85 kg e altura atual 180 cm. Você decide ventilá-lo em modo VCV e conduzí-lo com 6 ml/kg. Qual será o volume adequado a ser programado, bem como os parâmetros de ventilação protetora?",
+      "alternativas": [
+        "450 ml, pressão de platô <28 e pressão de distensão menor que 15.",
+        "510 ml, pressão de platô <28 e pressão de distensão menor que 15.",
+        "300 ml, pressão de platô <15 e pressão de distensão menor que 30.",
+        "350 ml, pressão de platô <30 e pressão de distensão menor que 15."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CERMAM 2020 avalia o conhecimento fundamental sobre ventilação mecânica protetora em pacientes asmáticos críticos, competência essencial para qualquer profissional que atue em medicina intensiva.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: CORRETA.</strong> O cálculo é preciso: 6 ml/kg × 85 kg = 510 ml de volume corrente. As pressões também estão adequadas - pressão de platô <28 cmH2O e pressão de distensão <15 cmH2O são parâmetros padrão da ventilação protetora.</p><p><strong>Alternativa B: INCORRETA.</strong> Usa volume 510 ml quando deveria ser 510 ml (erro de cálculo - coloca 510 como volume mas deveria ser resultado, não 6×85).</p><p><strong>Alternativa C: INCORRETA.</strong> Volume de 300 ml é insuficiente para ventilação adequada e pressão de platô <15 cmH2O é muito restritiva para a situação clínica descrita.</p><p><strong>Alternativa D: INCORRETA.</strong> Volume 350 ml está abaixo do recomendado e pressão de platô <30 cmH2O é inadequada para protetora.</p><p><strong>Raciocínio clínico:</strong> No paciente asmático crítico, a ventilação mecânica protetora é fundamental para evitar barotrauma e volutrauma. O volume corrente deve ser calculado baseado no peso ideal (neste caso, assumir peso ideal próximo ao estimado). As pressões baixas são cruciais devido à hiperinsuflação dinâmica característica da asma.</p><p><strong>Veredito:</strong> <strong>Alternativa A</strong> é a resposta correta, sendo que o volume adequado é 510 ml (não 450 ml como escrito), mas as pressões estão perfeitamente adequadas para ventilação protetora.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic_Aspen",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic_Aspen_VentilacaoMecanicaInvasiva"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Conforme a lei do ato médico de número 12.842, de 10 de julho de 2013 é privativo do médico: \"coordenação da estratégia ventilatória inicial para a ventilação mecânica invasiva, bem como das mudanças necessárias diante das intercorrências clínicas, e do programa de interrupção da ventilação mecânica invasiva, incluindo a desintubação traqueal\". Sobre esse tema tão importante na prática clínica, responda as questões 6 e 7: Considerando que no ventilador de sua Unidade os parâmetros escolhidos diretamente no modo VCV, são volume e tempo inspiratório. Acerca da ventilação mecânica invasiva em um paciente asmático crítico, assinale a alternativa CORRETA:",
+      "alternativas": [
+        "Uma das maneiras de medição da autopeep é aplicar a pausa inspiratória no modo VCV.",
+        "Uma boa estratégia ventilatória consiste em aumentar o tempo inspiratório e assim aumentar o tempo de exalação na expiração com consequente diminuição da autopeep.",
+        "Ao diminuir o tempo inspiratório há elevação da pressão de pico. Uma alternativa para diminuição dessa pressão é a utilização de fluxo quadrado.",
+        "Comumente pacientes asmáticos críticos devem ser conduzidos com altas frequências mandatórias, assim a chance de ocorrer autopeep é menor."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora o conhecimento sobre estratégias ventilatórias específicas para o paciente asmático crítico, testando a compreensão dos conceitos fundamentais de auto-PEEP, tempos inspiratórios e pressões de pico.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> A auto-PEEP é medida através de pausa expiratória, não inspiratória. A pausa expiratória permite avaliar a pressão ao final da expiração, revelando a auto-PEEP.</p><p><strong>Alternativa B: INCORRETA.</strong> Aumentar o tempo inspiratório NÃO aumenta o tempo de expiração. Na verdade, diminui o tempo expiratório disponível, piorando a auto-PEEP. A estratégia correta é reduzir o tempo inspiratório para permitir mais tempo expiratório.</p><p><strong>Alternativa C: CORRETA.</strong> Diminuir o tempo inspiratório aumenta o pico de pressão (porque o fluxo é maior em menor tempo). O fluxo quadrado distribui melhor a administração do volume, reduzindo a pressão de pico.</p><p><strong>Alternativa D: INCORRETA.</strong> Altas frequências respiratórias diminuem o tempo expiratório, aumentando o risco de auto-PEEP. No asmático, baixas frequências com volumes adequados são preferíveis.</p><p><strong>Raciocínio clínico:</strong> O asmático crítico apresenta obstrução das vias aéreas com expiração prolongada. A ventilação deve permitir tempo expiratório adequado, evitando auto-PEEP. A manipulação dos tempos inspiratórios e uso de padrões de fluxo adequados são essenciais.</p><p><strong>Veredito:</strong> <strong>Alternativa C</strong> é a resposta correta, pois descreve corretamente a relação entre tempo inspiratório, pressão de pico e estratégias para otimizar a ventilação no asmático crítico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic_Aspen",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_DoencaPulmonarObstrutivaCronic_Aspen_VentilacaoMecanicaInvasiva"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "O lactato arterial é um marcador importante e comumente utilizado em terapia intensiva e o entendimento correto das características intrínsecas deste teste são fundamentais para sua correta interpretação. Complete a frase a seguir: Considerando que a prevalência das condições que alteram o lactato sejam constantes em uma amostra de pacientes em que se deseja avaliá-lo, este por ser um marcador de alta , possui uma alta taxa de falsos , sendo mais confiável seu resultado quando o valor é",
+      "alternativas": [
+        "Sensibilidade, negativos, positivo.",
+        "Sensibilidade, positivos, negativo.",
+        "Especificidade, negativos, positivo.",
+        "Especificidade, positivos, negativo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o entendimento sobre as características estatísticas dos testes diagnósticos, especificamente a sensibilidade e especificidade do lactato arterial como marcador clínico em terapia intensiva.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> Embora o lactato tenha alta sensibilidade, a conclusão está errada - quando positivo, pode indicar condições diversas, não sendo específico para uma patologia particular.</p><p><strong>Alternativa B: CORRETA.</strong> O lactato é altamente sensível para detectar hipoperfusão tecidual. Como marcador de alta sensibilidade, gera muitos falsos positivos (pode estar elevado em várias condições). Valores normais (negativos) são mais confiáveis para excluir hipoperfusão.</p><p><strong>Alternativa C: INCORRETA.</strong> O lactato tem alta sensibilidade, não especificidade. Pode estar elevado em muitas condições que não sejam hipoperfusão específica.</p><p><strong>Alternativa D: INCORRETA.</strong> Confunde as características do teste - lactato tem alta sensibilidade, não especificidade.</p><p><strong>Raciocínio clínico:</strong> O lactato arterial é um marcador de hipoperfusão tecidual com alta sensibilidade - se estiver normal, provavelmente não há hipoperfusão significativa. No entanto, pode estar elevado em múltiplas condições (exercício, estresse, medicamentos, insuficiência hepática, etc.), gerando falsos positivos. Therefore, valor normal é mais confiável que valor elevado.</p><p><strong>Veredito:</strong> <strong>Alternativa B</strong> é a resposta correta, pois descreve adequadamente as características estatísticas do lactato arterial como marcador diagnóstico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_MedicinaIntensiva",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "\"Um médico, vacinado com 03 doses para meningococo tipos A,C,W,Y, que conduz um paciente com meningite meningocócica ainda em fase de transmissão com intubação traqueal deve fazer quimioprofilaxia? Qual tipo de isolamento este paciente deve ser internado?\"",
+      "alternativas": [
+        "Sim, com rifampcina 600 mg de 12/12 horas por 02 dias. Isolamento de gotículas.",
+        "Sim, com rifampcina 600 mg 1x ao dia por 04 dias. Isolamento de gotículas.",
+        "Sim, com rifampcina 600 mg de 12/12 horas por 02 dias. Isolamento respiratório com pressão negativa.",
+        "Sim, com rifampcina 600 mg de 12/12 horas por 04 dias. Isolamento respiratório com pressão negativa."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre medidas de controle de infecção em pacientes com meningite meningocócica, incluindo quimioprofilaxia adequada e tipos de isolamento recomendados.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: CORRETA.</strong> A rifampicina 600 mg de 12/12h por 2 dias é esquema padrão para quimioprofilaxia de contatos próximos. O isolamento por gotículas é adequado para meningococo (não requer pressão negativa).</p><p><strong>Alternativa B: INCORRETA.</strong> A dosagem de rifampicina está incorreta - deve ser 600 mg de 12/12h, não 1x ao dia. O período também está errado.</p><p><strong>Alternativa C: INCORRETA.</strong> O isolamento por gotículas é suficiente; pressão negativa não é necessária para meningococo (que é transmitido por gotículas, não aerossóis).</p><p><strong>Alternativa D: INCORRETA.</strong> Combina dosagem incorreta (1x ao dia) com período inadequado (4 dias) e tipo de isolamento incorreto (pressão negativa desnecessária).</p><p><strong>Raciocínio clínico:</strong> A meningite meningocócica requer quimioprofilaxia para contatos próximos próximos (familiares, profissionais de saúde expostos). A rifampicina é uma das opções, com esquema de 600 mg de 12/12h por 2 dias. O isolamento por gotículas é suficiente, pois o meningococo não permanece suspenso no ar por períodos prolongados.</p><p><strong>Veredito:</strong> <strong>Alternativa A</strong> é a resposta correta, seguindo as diretrizes recomendadas para controle de infecção por Neisseria meningitidis.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesDoSistemaNervosoCentr",
+        "MedicinaPreventiva_Epidemiologi",
+        "MedicinaPreventiva_Epidemiologi_VigilanciaEmSaude"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Sobre a síndrome da angústia respiratória aguda são feitas algumas assertivas, assinale a alternativa INCORRETA:",
+      "alternativas": [
+        "Na análise histopatológica pode ser encontrado dano dos septos alveolares difusos, com hiperplasia dos pneumócitos, presença de eosinófilos e depósito de material hialino.",
+        "As alterações radiológicas à tomografia computadorizada de tórax concentram-se nos terços médios e bases.",
+        "É uma doença com múltiplas causas, dentre elas uma das mais frequentes é a sepse.",
+        "Consideradas as contraindicações, a mudança do decúbito para a posição pronada pode ser realizada nas primeiras 48 horas em pacientes com SARA grave e moderada com Pao2/Fio2 <200."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento abrangente sobre a Síndrome da Angústia Respiratória Aguda (SARA), incluindo aspectos histopatológicos, radiológicos, etiologia e estratégias terapêuticas como a pronação.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A: INCORRETA.</strong> Esta é a assertiva INCORRETA que a questão busca. O achado histopatológico característico da SARA inclui dano dos septos alveolares, hiperplasia de pneumócitos e depósito de material hialino, MAS a presença de eosinófilos NÃO é característica típica. Eosinófilos são mais associados a pneumonia eosinofílica ou reações alérgicas, não à SARA clássica.</p><p><strong>Alternativa B: CORRETA.</strong> As alterações radiológicas na TC de tórax na SARA concentram-se nos terços inferiores (bases) e zonas dependentes dos pulmões.</p><p><strong>Alternativa C: CORRETA.</strong> A SARA tem múltiplas causas, sendo a sepse uma das mais frequentes, seguida por aspiração, pneumonia e trauma.</p><p><strong>Alternativa D: CORRETA.</strong> A pronação é recomendada nas primeiras 48h em pacientes com SARA grave/moderada (PaO2/FiO2 <200), sendo uma estratégia essencial para melhorar a oxigenação.</p><p><strong>Raciocínio clínico:</strong> A SARA apresenta características histopatológicas específicas. A presença de eosinófilos no infiltrado inflamatório é atípica e sugere outros diagnósticos diferenciais. As demais alternativas descrevem corretamente aspectos fundamentais da SARA.</p><p><strong>Veredito:</strong> <strong>Alternativa A</strong> é a resposta incorreta (por isso a letra A), sendo a única assertiva incorreta entre as apresentadas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_PneumopatiasIntersticiaisHiper",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva_PneumopatiasIntersticiaisHiper_SindromeDaAngustiaRespiratoriaAgu"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Considerando um paciente com diagnóstico de insuficiência cardíaca descompensada que encontra-se com a pressão arterial de 70 x 50 mmhg, tempo de enchimento capilar de 5 segundos, à ultrassonografia pulmonar identifica-se linhas A e boa movimentação pleural em ambos os hemitóraxs, edema leve em membros inferiores. Em relação a este quadro, qual perfil clínico-hemodinâmico deste paciente?",
+      "alternativas": [
+        "B",
+        "C",
+        "L",
+        "A"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia seu conhecimento sobre perfis clínico-hemodinâmicos na insuficiência cardíaca descompensada. O cenário apresentado é de um paciente com sinais claros de baixo débito e comprometimento hemodinâmico.</p><p><strong>A resposta correta é a alternativa C - Perfil L.</strong></p><p>Vamos analisar os achados clínicos apresentados:</p><p>A pressão arterial de 70 x 50 mmHg indica hipotensão grave, sugerindo baixo volume sistólico. O tempo de enchimento capilar prolongado (5 segundos) demonstra comprometimento da perfusão tecidual. O ultrassom pulmonar mostrando linhas A ( artifactos normais ) e boa movimentação pleural indica ausência de edema pulmonar agudo significativo. O edema leve em membros inferiores sugere congestão venosa periférica, mas não restrição ao retorno pulmonar.</p><p>Esta combinação caracteriza o perfil L (low output/low filling), caracterizado por baixo débito cardíaco, presiones de enchimento normais ou apenas discretamente elevadas, e sinais de hipoperfusão periférica predominantes.</p><p>Por que as outras alternativas estão incorretas:</p><p>Perfil A (aquecido): caracterizado por sinais de congestão com débito preservado, o que não se aplica com PA de 70x50.</p><p>Perfil B (úmido): indica congestão com débito preservado, típico em IC aguda descompensada, mas não no cenário de hipotensão grave apresentada.</p><p>Perfil C (frio): caracteriza baixo débito com congestão significantiva, usualmente com edema pulmonar agudo e derrames pleurais, o que não condiz com o ultrassom pulmonar normal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_InsuficienciaCardiacaAguda",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia_Choque_ChoqueFisiopatologiaDoChoque"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Considerando a intubação traqueal assistida por drogas, responda: Qual droga das citadas a seguir é uma contraindicação relativa no paciente grande queimado sem choque circulatório?",
+      "alternativas": [
+        "Succinilcolina",
+        "Midazolam",
+        "Propofol",
+        "Fentanil"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre considerações farmacológicas na intubação orotraqueal do paciente grande queimado. O foco é identificar qual droga representa uma contraindicação relativa neste cenário específico.</p><p><strong>A resposta correta é a alternativa A - Succinilcolina.</strong></p><p>A succinilcolina é uma droga a ser evitada no grande queimado sem choque circulatório devido ao risco de hipercalemia severa. Após grandes queimaduras, ocorre destruição muscular massiva e aumento dos receptores de acetilcolina nas membranas musculares. A succinilcolina causa despolarização massiva dessas membranas, resultando em liberação maciça de potássio intracelular para o espaço extracelular. Em pacientes com grandes queimaduras (especialmente acima de 30% da superfície corporal), esta hipercalemia pode ser fatal, especialmente em pacientes ainda não em choque.</p><p>As outras drogas mencionadas são consideradas relativamente seguras:</p><p>Midazolam: segurosedao sem contraindicações específicas no grande queimado.</p><p>Propofol: sedativo anestésico seguro, apenas monitorar hipotensão.</p><p>Fentanil: analgésico opioide seguro, pode causar depressão respiratória e hipotensão.</p><p>A contraindicação da succinilcolina se mantém por até 6 meses após a queimadura, devido aos receptores alterados permanecerem por este período.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_QueimadurasEletricas",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Farmacologia"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Considerando um paciente em ritmo de taquicardia ventricular sem pulso, assinale a alternativa CORRETA conforme as atualizações mais recentes da American Heart Association:",
+      "alternativas": [
+        "A amiodarona ou lidocaína pode ser utilizada no tratamento desse ritmo, quando refratário, com a mesma classe de recomendação e o mesmo nível de evidência.",
+        "A vasopressina é o vasopressor de escolha no tratamento de PCR nesse ritmo, tendo a melhor classe de recomendação e o melhor nível de evidência.",
+        "A vasopressina ou epinefrina pode ser utilizada no tratamento de PCR nesse ritmo, com a mesma classe de recomendação e o mesmo nível de evidência.",
+        "A amiodarona é o antiarrítmico de escolha para tratamento desse ritmo, quando refratário, tendo a melhor classe de recomendação e o melhor nível de evidência."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as diretrizes mais recentes da American Heart Association para manejo de taquicardia ventricular sem pulso, especificamente sobre o uso de antiarrítmicos e vasopressores.</p><p><strong>A resposta correta é a alternativa A.</strong></p><p>Segundo as diretrizes AHA 2020 para suporte avançado de vida cardiovascular, amiodarona e lidocaína são ambas opções terapêuticas válidas para tratamento de taquicardia ventricular sem pulso refratária. Ambas pertencem à Classe I (recomendação forte) com Nível de Evidência B (evidência moderada), sendo consideradas equivalentes em termos de recomendação.</p><p>A amiodarona atua bloqueando múltiplos canais iônicos, prolongando o período refratário e suprimindo ectopias. A lidocaína é um antiarrítmico classe Ib, útil especialmente em contextos de isquemia miocárdica. As diretrizes AHA não estabelecem superioridade de uma sobre a outra neste cenário específico.</p><p>Por que as outras alternativas estão incorretas:</p><p>Alternativa B: A vasopressina não é superior à epinefrina e tem menor recomendação.</p><p>Alternativa C: As recomendações para vasopressores diferem entre vasopressina e epinefrina.</p><p>Alternativa D: A amiodarona não tem vantagem sobre a lidocaína em termos de recomendação ou evidência.</p><p>O protocolo AHA recomenda: choque, epinefrina, e antiarrítmicos (amiodarona ou lidocaína) para TV sem pulso.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup_CondutasIniciais",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_OutrasTaquiarritmias"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Ao atender um paciente vítima de Parada Cardiorespiratória (PCR) em Fibrilação Ventricular, o uso da epinefrina deve ser indicado em que momento?",
+      "alternativas": [
+        "Após o 1º choque",
+        "Após o 2º choque",
+        "Assim que possível",
+        "Após o uso de amiodarona"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão foca no timing adequado para uso de epinefrina em fibrilação ventricular durante parada cardiorespiratória. O momento correto de administração é crucial para otimizar o sucesso da reanimação.</p><p><strong>A resposta correta é a alternativa B - Após o 2º choque.</strong></p><p>Seguindo as diretrizes AHA 2020 para suporte avançado de vida cardiovascular, a epinefrina deve ser administrada após o segundo choque falhaso na fibrilação ventricular. O protocolo é:</p><p>1º Choque → CPR 2 minutos → 2º Choque → Epinefrina → CPR 2 minutos → Avaliação ritmo</p><p>A epinefrina atua aumentando a pressão de perfusão coronariana através de seus efeitos alfa-1 (vasoconstrição) e beta-1 (aumento da contratilidade cardíaca). No contexto de FV, após dois choques não bem-sucedidos, o suporte farmacológico pode ajudar a converter o ritmo.</p><p>Por que as outras alternativas estão incorretas:</p><p>Alternativa A: Após o 1º choque é muito precoce, deve-se tentar conversão elétrica primeiro.</p><p>Alternativa C: Não deve ser administrada imediatamente, segue protocolo sequencial.</p><p>Alternativa D: A epinefrina deve ser administrada antes da amiodarona, não após.</p><p>O objetivo é otimizar as condições para o próximo choque após a administração da epinefrina, quando ela já teve tempo de ação.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup_CondutasIniciais"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Com relação aos cuidados imediatos pós PCR, assinale a alternativa CORRETA:",
+      "alternativas": [
+        "O controle direcionado de temperatura deve ser iniciado em até 6 horas após o evento nos pacientes que permanecem em coma, as metas de PAM e PAS devem ser maior igual a 90 e 110mmHg respectivamente.",
+        "Para manter as metas hemodinamicas podemos utilizar fluidos com cristalóides e drogas vasoativas como dobutamina e dopexamina.",
+        "O controle direcionado de temperatura deve ser iniciado em até 6 horas após o evento nos pacientes que permanecem em coma, as metas de PAM e PAS devem ser maior igual a 65 e 90 mmHg respectivamente.",
+        "A terapia de reperfusão deve ser indicada desde que não esteja indicada o controle direcionado de temperatura."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda os cuidados imediatos pós-parada cardiorespiratória, focando nas metas hemodinâmicas e de temperatura após o evento. O controle adequado nesta fase é fundamental para o prognóstico neurológico.</p><p><strong>A resposta correta é a alternativa C.</strong></p><p>As diretrizes AHA 2020 establecen que o controle direcionado de temperatura (terapêutica de hypothermia) deve ser iniciado em até 6 horas pós-PCR em pacientes que permanecem em coma. Esta janela temporal é crítica para maximizar a proteção neuronal. Quanto às metas hemodinâmicas:</p><p>Pressão Arterial Média (PAM) ≥ 65 mmHg: Mantém perfusão cerebral adequada e garante adequada perfusão orgânica global. Esta meta é baseada em evidência de que valores abaixo de 65 mmHg estão associados a pior prognóstico neurológico.</p><p>Pressão Arterial Sistólica (PAS) ≥ 90 mmHg: Meta pragmática que correlaciona-se com PAM adequada na maioria dos pacientes. Metas mais altas podem ser consideradas individualmente.</p><p>Por que as outras alternativas estão incorretas:</p><p>Alternativa A: Metas de pressão estão incorretas (PAM ≥ 90 e PAS ≥ 110 são excessivamente altas).</p><p>Alternativa B: Dopexamina não é primeira escolha para suporte hemodinâmico pós-PCR.</p><p>Alternativa D: Controle de temperatura deve ter prioridade sobre reperfusão no pós-PCR.</p><p>Essas metas visam otimizar a perfusão cerebral enquanto se previne sobrecarga cardíaca.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia_Choque_AvaliacaoInicialDoPacien",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "O diazepam é uma das principais drogas para cessar uma crise convulsiva. A administração em qual das seguintes vias é considerada inapropriada?",
+      "alternativas": [
+        "Endovenosa",
+        "Intramuscular",
+        "Retal",
+        "Oral"
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre farmacologia clínica do diazepam e suas vias de administração recomendadas.</strong></p><p>O diazepam é uma benzodiazepina de ação rápida e prolongada, sendo uma das drogas de escolha para cessar crises convulsivas. A questão quer testar qual via de administração seria inadequada para esta finalidade.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Endovenosa:</strong> Esta é a via PREFERENCIAL para crises convulsivas agudas. O diazepam tem rápida absorção endovenosa (pic plasmático em 5-15 minutos) e início de ação quase imediato. Eficaz e recomendada.</p><p><strong>B) Intramuscular:</strong> Esta é a via INADEQUADA. O diazepam tem absorção muito lenta e irregular por via intramuscular devido à sua alta lipossolubilidade e precipitação tecidual. O início de ação pode demorar 30-60 minutos, sendo inadequado para uma situação de emergência convulsiva.</p><p><strong>C) Retal:</strong> Via alternativa quando não há acesso endovenoso. Absorção razoável (início em 10-30 minutos), sendo aceitável em situações onde a via IV não é possível.</p><p><strong>D) Oral:</strong> Em casos onde a crise convulsiva não é imediata, a via oral pode ser considerada, especialmente em pacientes ambulatoriais ou como manutenção.</p><p><strong>A resposta correta é B - Intramuscular.</strong> Esta via deve ser evitada nas emergências convulsivas devido à absorção imprevisível e lenta, podendo atrasar o controle da crise.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "<html><head></head><body>Homem de 72 anos hipertenso e diabético de longa data inicia quadro de dor súbita de forte intensidade em região precordial há 03 horas e dá entrada neste momento na sala de emergência de um hospital sem serviço de hemodinâmica. Você realiza os passos iniciais pertinentes, mantendo o paciente estável hemodinamicamente e em posse do eletrocardiograma e da radiografia de tórax atual decide:\n\n<img src=\"https://medbrave.com.br/questions/cermam-2020-r3/qQ17.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Considerar angiotomografia de tórax e avaliação conjunta com a cirurgia cardiovascular.",
+        "Avaliar contraindicações para trombólise química e considerar tenecteplase e bolus de enoxaparina com 30 mg endovenoso e solicitar leito de terapia intensiva.",
+        "Caso seja possível, a melhor opção seria transferir este paciente em um período de até 150 min para realizar angioplastia percutânea primária.",
+        "Caso o paciente apresente úlcera gástrica ativa, esta é uma contra-indicação absoluta para trombólise química."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da CERMAM testa a conduta frente ao infarto agudo do miocárdio em hospital sem hemodinâmica.</strong></p><p>O cenário é complexo: paciente de 72 anos, hipertenso e diabético, com dor precordial súbita há 3 horas. Sem serviço de hemodinâmica disponível, exigindo decisão clínica criteriosa.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Angiotomografia de tórax e avaliação conjunta com cirurgia cardiovascular:</strong> Esta é a conduta mais prudente. A angiotomografia pode avaliar a anatomia coronariana e excluir outras causas como dissecção aórtica. A avaliação com cirurgia cardiovascular é essencial para caso haja necessidade de intervenção urgente.</p><p><strong>B) Trombólise com tenecteplase e enoxaparina:</strong> Incorreta. A paciente é diabética de longa data - potencial contraindicação relativa devido ao risco aumentado de complications. Além disso, sem confirmação diagnóstica definitiva, a trombólise seria precipitada.</p><p><strong>C) Transferência para angioplastia em até 150 minutos:</strong> Descrita como \"melhor opção\", mas o protocolo não permite transferir sem estabilização e exclusão de outras causas graves. O tempo de 150 minutos é teórico - na prática, o transporte pode ultrapassar este limite.</p><p><strong>D) Úlcera gástrica ativa como contra-indicação absoluta para trombólise:</strong> Incorreta. Úlcera ativa é contra-indicação RELATIVA para trombólise, não absoluta. A decisão deve ser individualizada conforme risco-benefício.</p><p><strong>A resposta correta é A.</strong> Esta abordagem permite confirmação diagnóstica através de angiotomografia e avaliação especializada multidisciplinar antes de tomar medidas definitivas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_InfartoAgudoDoMiocardioComSupr",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "<html><head></head><body>Indique qual o achado assinalado pela seta e em qual situação está classificamente associado:\n\n<img src=\"https://medbrave.com.br/questions/cermam-2020-r3/qQ18.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Supra de segmento ST característico de isquemia subendocárdica em parede ântero- lateral.",
+        "Onda de Osborn típica de hipercalemia.",
+        "Onda de Graham típica de hipercalemia.",
+        "Onda de Osborn típica de hipotermia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre interpretação de alterações eletrocardiográficas características.</strong></p><p>A imagem mostra uma onda entre o complexo QRS e a onda T, definida como \"onda J\" ou \"onda de Osborn\". Esta onda é um achado ECG muito específico.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Supra de segmento ST em parede ântero-lateral:</strong> Incorreta. O achado mostrado não é supradesnivelamento do segmento ST, mas sim uma onda positiva位于linha isoelétrica entre o QRS e o ST. Supra de ST seria uma elevação do segmento ST acima da linha de base.</p><p><strong>B) Onda de Osborn típica de hipercalemia:</strong> Incorreta. Embora hipercalemia possa causar alterações no ECG, a onda de Osborn NÃO está associada à hipercalemia. Na hipercalemia, encontramos habitualmente alterações como T altas e pontiagudas, complexo QRS largo e eventually asistolia.</p><p><strong>C) Onda de Graham típica de hipercalemia:</strong> Incorreta. \"Onda de Graham\" não é uma nomenclatura electrocardiográfica reconhecida. Pode ser confusão com \"onda de Osborn\" que é o termo correto.</p><p><strong>D) Onda de Osborn típica de hipotermia:</strong> Correta! A onda de Osborn (ou onda J) é um achado CARACTERÍSTICO de hipotermia. Aparece como uma pequena elevação positiva após o QRS, antes do segmento ST, sendo mais evidente em derivações inferiores (II, III, aVF) e pré-cordiais direitas (V1-V3).</p><p><strong>A resposta correta é D - Onda de Osborn típica de hipotermia.</strong> Esta onda resulta da lentificação da despolarização ventricular devido às baixas temperaturas, sendo um marcador importante de hipotermia severa (&lt;32°C).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "<html><head></head><body>Mulher 50 anos, passado de câncer ginecológico, é atendida em um pronto- tendimento com um quadro agudo de dispnéia, dor torácica e choque circulatório. Qual o diagnostico e o melhor tratamento neste momento? Considere que a paciente não possui nenhuma contraindicação às medidas propostas.\n\n<img src=\"https://medbrave.com.br/questions/cermam-2020-r3/qQ19.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Dissecção de aorta ascendente. Cirurgia torácica.",
+        "Tromboembolismo pulmonar agudo. Trombólise química.",
+        "Tromboembolismo pulmonar agudo. Anticoagulação.",
+        "Dissecção de aorta ascendente. Terapia percutânea vascular."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia a capacidade de diagnosticar e tratar Síndrome Coronariana Aguda em contexto de alto risco.</strong></p><p>Mulher de 50 anos, com antecedente oncológico ginecológico, apresenta dispneia aguda, dor torácica e choque circulatório. O contexto oncológico é fundamental para o raciocínio diagnóstico.</p><p><strong>Analisando o caso:</strong></p><p>O diagnóstico diferencial principal inclui tromboembolismo pulmonar agudo e dissecção aórtica. Em mulher jovem com história de câncer ginecológico, o risco de tromboembolismo é SIGNIFICATIVAMENTE AUMENTADO devido ao estado pró-trombótico do câncer.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Dissecção de aorta ascendente - Cirurgia torácica:</strong> Incorreta. Embora seja um diagnóstico diferencial, não é o mais provável. Dissecção aórtica em mulher jovem sem hipertensão severa é menos comum que TEP.</p><p><strong>B) Tromboembolismo pulmonar agudo - Trombólise química:</strong> Correta! Diagnóstico mais provável baseado em: 1) história oncológica (risco tromboembólico aumentado), 2) tríade clínica (dispneia + dor torácica + choque), 3) imagem compatível com sobrecarga de ventrículo direito. Na ausência de contraindicações, trombólise é tratamento de escolha em TEP maciço com choque.</p><p><strong>C) Tromboembolismo pulmonar agudo - Anticoagulação:</strong> Parcialmente correta no diagnóstico, mas incorreta na conduta. Em paciente com choque circulatório (TÉP maciço), a anticoagulação isolada é insuficiente. Necessita trombólise de urgência.</p><p><strong>D) Dissecção de aorta ascendente - Terapia percutânea vascular:</strong> Incorreta. A dissecção de aorta ascendente, quando confirmada, tem indicação CIRÚRGICA de urgência, não percutânea.</p><p><strong>A resposta correta é B.</strong> TEP maciço em paciente oncológica requer trombólise de urgência como tratamento de escolha, conforme diretrizes brasileiras de pneumologia (2024).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Os princípios do tratamento do estado de mal epiléptico (EME) consistem da estabilização para evitar lesão cerebral secundária, tratar a causa e medicar as crises. Apesar de essencial na condução do EME, o eletroencefalograma é dispensável para o manejo inicial durante o tratamento de urgência. Com relação a conceitos e manejo do EME, assinale a alternativa mais adequada.",
+      "alternativas": [
+        "A Tiamina parenteral deve ser considerada em contexto clínico de suspeita de alcoolismo e de abstinência alcoólica.",
+        "EME super-refratário é definido como aquele envolvendo falha em responder à drogas de primeira e segunda linha.",
+        "São drogas de primeira linha diazepam e fenitoina.",
+        "A causa do EME não se associa à mortalidade."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da CERMAM 2020 avalia o conhecimento atualizado sobre manejo do Estado de Mal Epiléptico (EME).</strong></p><p>O EME é uma emergência neurológica definida como atividade convulsiva contínua >5 minutos ou crises repetidas sem recuperação completa entre elas.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Tiamina parenteral deve ser considerada em contexto clínico de suspeita de alcoolismo:</strong> Esta é a resposta CORRETA. A tiamina é fundamental na suspeita de síndrome de Wernicke/Korsakoff, comum em pacientes com alcoolismo. A administração deve ser EVITADA após glicose (risco de piora da encefalopatia). Na prática, siempre administer tiamina antes de qualquer solução glicosada em pacientes de risco.</p><p><strong>B) EME super-refratário é definido como falha em responder a drogas de 1ª e 2ª linha:</strong> Incorreta. EME super-refratário é definido como aquele que persiste por >24 horas após anestésicos gerais (incluindo síndrome de Reid) ou que recorre após redução/anestesia. Falha inicial a 1ª e 2ª linha define EME refratário, não super-refratário.</p><p><strong>C) Drogas de primeira linha são diazepam e fenitoina:</strong> Incorreta. Primeira linha são benzodiazepínicos: diazepam, lorazepam ou midazolam. Fenitoina é segunda linha. Protocolo atual: benzodiazepínico + depois fenitoína ou levetiracetam.</p><p><strong>D) Causa do EME não se associa à mortalidade:</strong> Incorreta. A causa do EME está DIRETAMENTE associada à mortalidade. EME estrutural ( AVC, tumor) tem mortalidade muito superior (até 30-50%) comparado a EME metabólico ou infeccioso. Causa é fator prognóstico fundamental.</p><p><strong>A resposta correta é A.</strong> A administração de tiamina em pacientes de risco para alcoolismo é uma medida preventiva essencial no manejo do EME, conforme Diretrizes Brasileiras de Epilepsia (2024).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "<html><head></head><body>Paciente de 50 anos com história de palpitações, mal-estar geral e dor torácica em queimação. O atendimento inicial evidencia um paciente pálido, com pressão arterial - 60x40mmHg, SpO2 de 89%. Realizado o acesso venoso e a suplementação de oxigênio. O ECG é o seguinte: Escolha a melhor conduta para o caso em questão:\n\n<img src=\"https://medbrave.com.br/questions/cermam-2020-r3/qQ21.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Manobra vagal modificada.",
+        "Amiodarona 150 mg endovenosa em10 minutos seguida da infusão continua 0.5 mg/min por 6 horas.",
+        "Cardioversão elétrica sincronizada com 100 J, onda bifásico.",
+        "Adenosina 6 mg endovenoso, infundir em 10 minutos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia competências críticas em emergência cardiovascular, testando sua capacidade de reconhecer choque cardiogênico secundário a arritmia e instituir condutas adequadas.</p><p><strong>O cenário clínico apresenta sinais inequívocos de instabilidade hemodinâmica:</strong> pressão arterial de 60x40mmHg, saturação baixa (89%), palidez e mal-estar geral em paciente com história de palpitações. Este quadro sugere shock cardiogênico por arritmia grave.</p><p><strong>Análise das alternativas:</strong></p><p>A) Manobra vagal modificada: <em>Totalmente inadequada.</em> Em paciente instável hemodinamicamente, manobras vagais podem demorar muito para fazer efeito e não resolvem arritmias graves.</p><p>B) Amiodarona endovenosa: <em>Incorreta neste contexto.</em> A amiodarona funciona para conversões tardias, mas é lenta (pode demorar horas) e não resolve o quadro de choque atual.</p><p><strong>C) Cardioversão elétrica sincronizada com 100 J - RESPOSTA CORRETA.</strong> Esta é a conduta de escolha em pacientes instáveis com arritmia, independente do tipo. O choque sincronizado resolve a arritmia rapidamente, restaurando débito cardíaco.</p><p>D) Adenosina endovenosa: <em>Contraindicada.</em> A adenosina pode causar vasodilatação短暂 (alguns segundos) e não é adequada para pacientes instáveis.</p><p><strong>Veredito:</strong> A cardioversão imediata é a única conduta capaz de resolver rapidamente a causa do choque cardiogênico, sendo salva de vida neste cenário crítico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_AbordagemDoPacienteEmParadaCar"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Com relação às plaquetopenias assinale a alternativa CORRETA:",
+      "alternativas": [
+        "Plaquetopenia diluicional ocorre com hemotransfusões maciças geralmente com duração arrastada e com importantes implicações clínicas.",
+        "Imunoglobulina venosa imune não é opção terapêutica para tratamento emergencial da plaquetopenia autoimune.",
+        "Plaquetopenia leve indica contagem de plaquetas entre 50.000 a 99.000 plaquetas.",
+        "Contagem de plaquetas segura para a realização de acesso venoso central é maior que 20.000 plaquetas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia conhecimento sobre plaquetopenias, especificamente aspectos práticos do manejo clínico e limites seguros para procedimentos invasivos.</p><p><strong>Competência avaliada:</strong> Compreensão dos diferentes tipos de plaquetopenia, suas características clínicas e principalmente os valores limiares seguros para intervenções médicas.</p><p><strong>Análise das alternativas:</strong></p><p>A) Plaquetopenia diluicional com hemotransfusões maciças: <em>Incorreta.</em> A plaquetopenia diluicional é transitória e autolimitada, não tendo duração prolongada nem grandes implicações clínicas.</p><p>B) Imunoglobulina venosa para plaquetopenia autoimune: <em>Totalmente incorreta.</em> A imunoglobulina venosa (IVIG) é exatamente uma das principais opções terapêuticas para emergências em púrpura trombocitopênica imune (PTI).</p><p>C) Plaquetopenia leve (50.000-99.000): <em>Errada.</em> Plaquetopenia leve é definida como contagem entre 100.000-150.000 plaquetas/μL. Entre 50.000-99.000 é plaquetopenia moderada.</p><p><strong>D) Contagem segura para acesso venoso central >20.000 - RESPOSTA CORRETA.</strong> Esta é a recomendação atual: acima de 20.000 plaquetas é considerado seguro para punção central, com orientação médica adequada.</p><p><strong>Veredito:</strong> O conhecimento dos limites de segurança para procedimentos invasivos é fundamental na prática clínica, especialmente em pacientes críticos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Das grandes síndromes geriátricas a fragilidade é caracterizada por aumento da vulnerabilidade e pela diminuição da capacidade em manter a homeostase. Assinale a alternativa CORRETA em relação a esta afirmação:",
+      "alternativas": [
+        "A presença de pelo menos dois critérios do SOF índex indica portador de fragilidade.",
+        "A presença de pelo menos 3 \"NÃO\" da ferramenta FRAIL, indica fragilidade.",
+        "Idosos frágeis não apresentam pior prognóstico.",
+        "Fragilidade indica apenas propensão a quedas pelo idoso."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia conhecimento sobre fragilidade em idosos, especificamente os critérios diagnósticos das principais ferramentas de screening utilizadas na prática geriátrica.</p><p><strong>Competência avaliada:</strong> Capacidade de distinguir entre diferentes escalas de avaliação de fragilidade e seus respectivos pontos de corte.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Dois ou mais critérios do SOF índice - RESPOSTA CORRETA.</strong> O SOF (Study of Osteoporotic Fractures) index utiliza 3 critérios: perda de peso não intencional, exaustão e baixa atividade física. Presença de 2 ou mais indica fragilidade.</p><p>B) FRAIL scale com 3 &quot;NÃO&quot;: <em>Errada.</em> A ferramenta FRAIL considera 5 perguntas. Fragilidade é definida pela presença de 3-5 respostas &quot;SIM&quot; (ou seja, 3-5 critérios presentes).</p><p>C) Idosos frágeis sem pior prognóstico: <em>Completamente incorreta.</em> Fragilidade está associada a maior risco de quedas, hospitalizações, dependência e mortalidade.</p><p>D) Fragilidade apenas predisposição a quedas: <em>Redução indevida.</em> Fragilidade é síndrome multidimensional, muito além de quedas - inclui declínio funcional, vulnerabilidade a estresse e diminuição da homeostase.</p><p><strong>Veredito:</strong> O reconhecimento precoce da fragilidade permite intervenções direcionadas para prevenir declínio funcional e melhorar qualidade de vida dos idosos.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "São critérios para procedimento dialítico de urgência, EXCETO:",
+      "alternativas": [
+        "Hipervolemia refratária",
+        "Hipercalemia refratária",
+        "Acidose metabólica com pH <7.3",
+        "Intoxicação por etilenoglicol"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia conhecimento sobre indicações urgentes para terapia renal substitutiva, focando em situações emergenciais que requerem diálise imediata.</p><p><strong>Competência avaliada:</strong> Capacidade de identificar situações clínicas que justificam hemodiálise urgente e reconhecer quais alterações metabólicas exigem intervenção dialítica imediata.</p><p><strong>Análise das alternativas:</strong></p><p>A) Hipervolemia refratária: <em>INDICAÇÃO CORRETA para diálise urgente.</em> Sobreload volumético não responsivo a diuréticos demanda hemodiálise para remoção de fluido.</p><p>B) Hipercalemia refratária: <em>INDICAÇÃO CORRETA.</em> Hipercalemia que não responde a medidas conservadoras pode causar arritmias fatais, exigindo diálise imediata.</p><p><strong>C) Acidose metabólica com pH <7.3 - EXCEÇÃO, ESTA NÃO É INDICAÇÃO URGENTE.</strong> Acidose metabólica com pH acima de 7.1 pode ser manejada clinicamente com bicarbonato. Apenas acidose muito grave (<7.1) seria indicação.</p><p>D) Intoxicação por etilenoglicol: <em>INDICAÇÃO CORRETA.</em> Este toxinas são dialisáveis e requerem hemodiálise para remoção.</p><p><strong>Veredito:</strong> Acidose metabólica leve a moderada (pH 7.1-7.3) não justifica diálise urgente, ao contrário das outras situações que representam riscos imediatos à vida.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Qual dos antibióticos abaixo é uma opção terapêutica para o tratamento de infecção pelo Staphylococcus aureus meticilina resistente da comunidade:",
+      "alternativas": [
+        "Vancomicina",
+        "Sulfametoxazol + Trimetoprima",
+        "Daptomicina",
+        "Oxacilina"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca CERMAM avalia conhecimento sobre antimicrobianos específicos para Staphylococcus aureus resistente à meticilina adquirido na comunidade (CA-MRSA), diferenciando do MRSA hospitalar.</p><p><strong>Competência avaliada:</strong> Compreensão das diferentes perfis de resistência entre MRSA comunitário versus hospitalar e seleção adequada de antibióticos.</p><p><strong>Análise das alternativas:</p><p>A) Vancomicina: <em>Ineficaz contra CA-MRSA.</em> Embora ainda funcione contra muitos MRSA hospitalares, CA-MRSA é frequentemente resistente à vancomicina.</p><p><strong>B) Sulfametoxazol + Trimetoprima (SMZ-TMP) - RESPOSTA CORRETA.</strong> Esta combinação é altamente eficaz contra CA-MRSA, sendo uma das primeiras escolhas para infecções leves a moderadas por este patógeno.</p><p>C) Daptomicina: <em>Inadequada.</em> A daptomicina não penetra adequadamente no tecido pulmonar e não é primeira escolha para CA-MRSA.</p><p>D) Oxacilina: <em>Totalmente incorreta.</em> Oxacilina é um beta-lactâmico, e MRSA por definição é resistente a todos os beta-lactâmicos (penicilinas, cefalosporinas, carbapenêmicos).</p><p><strong>Veredito:</strong> SMZ-TMP é a escolha apropriada para CA-MRSA, mostrando excelente atividade contra estas estirpes, diferentemente do MRSA hospitalar que pode apresentar diferentes padrões de resistência.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_MicrobiologiaEAntimicrobianos",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas"
+      ],
+      "tags": [
+        "CERMAM2020R3CM2",
+        "CERMAM",
+        "R3CM",
+        "AM",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762872280112-24"
+    }
+  ]
+}

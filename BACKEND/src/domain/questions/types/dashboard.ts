@@ -1,16 +1,23 @@
-import { Timestamp } from 'firebase-admin/firestore';
-// import { QuestionRetentionRecord, LearningPhase } from './retention';
-import { LearningPhase } from './retention';
-// import { ListCompletionStatistics, PerformancePrediction } from './statistics';
+// Removed Firebase dependency - using ISO string dates
+
+/**
+ * Fases de aprendizado de uma questão
+ */
+export enum LearningPhase {
+  LEARNING = 'LEARNING', // Ainda aprendendo
+  MASTERED = 'MASTERED', // Dominou a questão
+  REGRESSION = 'REGRESSION', // Regrediu após dominar
+  INCONSISTENT = 'INCONSISTENT', // Padrão inconsistente
+}
 
 /**
  * Pontos de acesso ao dashboard de retenção
  */
 export enum DashboardAccessPoint {
-  MAIN_MENU = 'MAIN_MENU',                    // Menu principal: "Meu Desempenho"
-  POST_LIST = 'POST_LIST',                    // Pós-lista: versão resumida
-  FSRS_VIEW = 'FSRS_VIEW',                    // FSRS: focada em revisões
-  QUESTION_DETAIL = 'QUESTION_DETAIL'        // Por questão: histórico individual
+  MAIN_MENU = 'MAIN_MENU', // Menu principal: "Meu Desempenho"
+  POST_LIST = 'POST_LIST', // Pós-lista: versão resumida
+
+  QUESTION_DETAIL = 'QUESTION_DETAIL', // Por questão: histórico individual
 }
 
 /**
@@ -35,14 +42,14 @@ export interface MainRetentionDashboard {
     learningQuestions: number;
     inconsistentQuestions: number;
   };
-  
+
   // Gráfico de retenção ao longo do tempo
   retentionTrend: Array<{
-    date: string;                             // "2025-01-15"
-    retentionRate: number;                    // 0.75
+    date: string; // "2025-01-15"
+    retentionRate: number; // 0.75
     questionsAnswered: number;
   }>;
-  
+
   // Lista de questões em declínio (alertas)
   decliningQuestions: Array<{
     questionId: string;
@@ -52,18 +59,18 @@ export interface MainRetentionDashboard {
       patternMessage: string;
       recommendation: string;
     };
-    lastAttempt: Timestamp;
+    lastAttempt: string;
     retentionRate: number;
   }>;
-  
+
   // Questões dominadas recentemente
   recentlyMastered: Array<{
     questionId: string;
     questionTitle: string;
-    masteredAt: Timestamp;
+    masteredAt: string;
     attemptsToMaster: number;
   }>;
-  
+
   // Padrões de estudo identificados
   studyPatterns: {
     bestTimeOfDay: string;
@@ -71,7 +78,7 @@ export interface MainRetentionDashboard {
     averageSessionLength: number;
     optimalBreakInterval: number;
   };
-  
+
   // Alertas de regressão
   regressionAlerts: Array<{
     questionId: string;
@@ -79,7 +86,7 @@ export interface MainRetentionDashboard {
     message: string;
     severity: 'HIGH' | 'MEDIUM' | 'LOW';
   }>;
-  
+
   // Recomendações de foco
   focusRecommendations: Array<{
     area: string;
@@ -94,7 +101,7 @@ export interface MainRetentionDashboard {
  */
 export interface PostListRetentionSummary {
   listId: string;
-  
+
   // Retenção específica desta lista
   listRetention: {
     questionsSeenBefore: number;
@@ -102,7 +109,7 @@ export interface PostListRetentionSummary {
     questionsRegressed: number;
     newQuestionsLearned: number;
   };
-  
+
   // Questões que regrediu
   regressionHighlights: Array<{
     questionId: string;
@@ -110,7 +117,7 @@ export interface PostListRetentionSummary {
     currentCorrect: boolean;
     message: string;
   }>;
-  
+
   // Questões que melhorou
   improvementHighlights: Array<{
     questionId: string;
@@ -118,47 +125,12 @@ export interface PostListRetentionSummary {
     currentCorrect: boolean;
     message: string;
   }>;
-  
+
   // Link para dashboard completo
   fullDashboardUrl: string;
 }
 
-/**
- * Dashboard focado em revisões FSRS
- */
-export interface FSRSRetentionView {
-  // Histórico de revisões FSRS
-  reviewHistory: Array<{
-    date: Timestamp;
-    totalReviews: number;
-    averageGrade: number;
-    retentionRate: number;
-  }>;
-  
-  // Performance por tipo de conteúdo
-  contentTypePerformance: Array<{
-    contentType: string;                      // "Cardiologia", "Neurologia"
-    totalCards: number;
-    averageRetention: number;
-    averageInterval: number;
-  }>;
-  
-  // Tendências de retenção no FSRS
-  fsrsTrends: {
-    retentionTrend: 'IMPROVING' | 'STABLE' | 'DECLINING';
-    intervalTrend: 'INCREASING' | 'STABLE' | 'DECREASING';
-    difficultyTrend: 'EASIER' | 'STABLE' | 'HARDER';
-  };
-  
-  // Cards com problemas
-  problematicCards: Array<{
-    questionId: string;
-    difficulty: number;
-    stability: number;
-    lastGrade: number;
-    issue: 'LOW_RETENTION' | 'FREQUENT_LAPSES' | 'DIFFICULTY_SPIKE';
-  }>;
-}
+
 
 /**
  * Histórico individual de questão
@@ -166,31 +138,31 @@ export interface FSRSRetentionView {
 export interface QuestionRetentionHistory {
   questionId: string;
   questionTitle: string;
-  
+
   // Timeline de tentativas
   timeline: Array<{
-    date: Timestamp;
+    date: string;
     correct: boolean;
     context: string;
     responseTime: number;
     confidence?: string;
   }>;
-  
+
   // Análise de padrão específico
   patternAnalysis: {
     phase: LearningPhase;
-    turningPoint?: Timestamp;
+    turningPoint?: string;
     consistencyScore: number;
     improvementRate: number;
   };
-  
+
   // Recomendações individuais
   individualRecommendations: Array<{
     type: 'STUDY_TIMING' | 'REVIEW_FREQUENCY' | 'FOCUS_AREA';
     message: string;
     actionable: boolean;
   }>;
-  
+
   // Comparação com média do usuário
   comparison: {
     userAverageRetention: number;
@@ -209,28 +181,28 @@ export interface PerformancePredictionWidget {
     confidenceLevel: 'HIGH' | 'MEDIUM' | 'LOW';
     basedOnSessions: number;
   };
-  
+
   // Explicação da metodologia
   methodology: {
     factorsConsidered: string[];
     dataPoints: number;
     algorithm: string;
   };
-  
+
   // Tendências identificadas
   identifiedTrends: Array<{
     trend: string;
     direction: 'POSITIVE' | 'NEGATIVE' | 'NEUTRAL';
     impact: 'HIGH' | 'MEDIUM' | 'LOW';
   }>;
-  
+
   // Recomendações de timing
   timingRecommendations: {
     bestStudyTime: string;
     optimalSessionLength: number;
     recommendedBreaks: number;
   };
-  
+
   // Áreas de foco sugeridas
   suggestedFocusAreas: Array<{
     area: string;
@@ -244,7 +216,7 @@ export interface PerformancePredictionWidget {
  */
 export interface DashboardSettings {
   userId: string;
-  
+
   // Preferências de visualização
   viewPreferences: {
     defaultTimeframe: 'WEEK' | 'MONTH' | 'QUARTER' | 'ALL';
@@ -252,15 +224,15 @@ export interface DashboardSettings {
     showDetailedAnalysis: boolean;
     compactMode: boolean;
   };
-  
+
   // Alertas e notificações
   alertSettings: {
     enableRegressionAlerts: boolean;
     enableMasteryNotifications: boolean;
     enableStudyReminders: boolean;
-    alertThreshold: number;               // 0-1 (limite de retenção para alertar)
+    alertThreshold: number; // 0-1 (limite de retenção para alertar)
   };
-  
+
   // Personalização
   customization: {
     favoriteMetrics: string[];
@@ -270,8 +242,8 @@ export interface DashboardSettings {
       days: number;
     }>;
   };
-  
-  updatedAt: Timestamp;
+
+  updatedAt: string;
 }
 
 /**
@@ -285,8 +257,8 @@ export interface DashboardDataRequest {
     questionIds?: string[];
     learningPhases?: LearningPhase[];
     dateRange?: {
-      start: Timestamp;
-      end: Timestamp;
+      start: string;
+      end: string;
     };
   };
 }
@@ -296,21 +268,20 @@ export interface DashboardDataRequest {
  */
 export interface DashboardResponse {
   accessPoint: DashboardAccessPoint;
-  generatedAt: Timestamp;
-  
+  generatedAt: string;
+
   // Dados específicos baseado no ponto de acesso
   mainDashboard?: MainRetentionDashboard;
   postListSummary?: PostListRetentionSummary;
-  fsrsView?: FSRSRetentionView;
   questionHistory?: QuestionRetentionHistory;
-  
+
   // Widgets opcionais
   predictionWidget?: PerformancePredictionWidget;
-  
+
   // Metadados
   dataFreshness: {
-    lastCalculated: Timestamp;
-    nextUpdate: Timestamp;
+    lastCalculated: string;
+    nextUpdate: string;
     cacheHit: boolean;
   };
-} 
+}

@@ -1,0 +1,692 @@
+{
+  "metadata": {
+    "examName": "UFPA2021R3CM (UFPA 2021)",
+    "examYear": 2021,
+    "url": "source://681",
+    "totalQuestions": 20,
+    "categorizedQuestions": 20,
+    "rewrittenComments": 20,
+    "processedAt": "2025-11-09T23:17:02.136Z",
+    "jobId": "batch-1762721414677-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "fcb91c2a-8bfe-42ad-af8e-3260b2300541"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Mulher de 82 anos, que reside só, desenvolve quadro febril, calafrios e falta de ar. Na urgência, o médico observa que ela está confusa, FR=24 ipm, na ausculta observam-se crepitações e murmúrio vesicular diminuído em base esquerda, PA 100/70mmHg e saturação de O2 de 92% em ar ambiente. Radiografia do tórax revela infiltrado heterogêneo em base pulmonar esquerda. Considerando o CURB-65 de 2 pontos, a conduta adequada é",
+      "alternativas": [
+        "tratamento ambulatorial com azitromicina oral.",
+        "tratamento ambulatorial com amoxicilina-clavulanato oral.",
+        "tratamento hospitalar com ciprofloxacino venoso.",
+        "tratamento hospitalar com ceftriaxona + claritromicina venosa.",
+        "tratamento em unidade de terapia intensiva com ceftriaxona."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o domínio do candidato sobre o escore CURB-65 e a estratificação de gravidade na pneumonia adquirida na comunidade, especificamente para pacientes idosos. O CURB-65 é uma ferramenta fundamental para determinar se o tratamento deve ser ambulatorial ou hospitalar.</p><p><strong>A paciente apresenta 2 pontos no CURB-65:</strong> Confusão (1 ponto) e FR ≥ 30 rpm (1 ponto). Os outros critérios (Uréia > 19 mg/dL, PA sistólica < 90 ou diastólica ≤ 60) não são mencionados, sugerindo não estar presente.</p><p>Com 2 pontos no CURB-65, a conduta é <strong>hospitalização obrigatória</strong>, conforme diretrizes brasileiras atuais (SBPT 2025). Pacientes idosos (82 anos) com pneumonia e alterações hemodinâmicas (PA 100/70) e hipoxemia (SatO2 92%) corroboram essa decisão.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p>A) Azitromicina oral ambulatorial: <em>INCORRETA</em>. Com 2 pontos no CURB-65, o tratamento hospitalar é obrigatório, não ambulatorial.</p><p>B) Amoxicilina-clavulanato oral ambulatorial: <em>INCORRETA</em>. Mesmo problema da alternativa A - não se trata pneumonia de forma ambulatorial com 2 pontos no CURB-65.</p><p>C) Ciprofloxacino venoso hospitalar: <em>INCORRETA</em>. Embora correta a hospitalização, o ciprofloxacino não é primeira escolha para pneumonia comunitária. É reservado para situações específicas como alergia a beta-lactâmicos ou Legionella.</p><p>D) Ceftriaxona + claritromicina venosa: <em>CORRETA</em>. Combinação de beta-lactamico com macrolídeo é padrão-ouro para pneumonia grave sem fatores de risco para P. aeruginosa, oferecendo cobertura de S. pneumoniae, H. influenzae e patógenos atípicos.</p><p>E) UTI com ceftriaxona: <em>INCORRETA</em>. Embora a paciente seja idosa e grave, não apresenta critérios de UTI (hipotensão refratária, choque séptico, insuficiência respiratória grave). O CURB-65 = 2 indica internação em enfermaria, não UTI.</p><p><strong>VEREDITO FINAL:</strong> A resposta correta é D, pois permite o tratamento hospitalar adequado com cobertura antimicrobiana apropriada para pneumonia comunitária grave. A estratificação pelo CURB-65 é essencial para otimizar recursos e melhorar prognóstico em pacientes idosos com pneumonia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_Pneumonia",
+        "ClinicaMedica_Pneumologia_PneumoniaAdquiridaNaComunidade"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Homem de 86 anos, portador de diabetes mellitus e hipertensão arterial, é internado com quadro de pneumonia e medicado com ceftriaxona e clindamicina por 7 dias. Recebe alta hospitalar melhor do quadro infeccioso, compensado do ponto de vista cardiovascular e com glicemia controlada. Menos de 24 horas depois da alta, começa a apresentar dor em cólica no flanco esquerdo e diarreia líquida pastosa intensa e sem sangue. O exame do abdome mostra dor à palpação profunda no hipocôndrio e flanco esquerdos, com ruídos hidroaéreos normais. Não tem febre ou sinais de irritação peritoneal, mas o hemograma mostra 22.700 leucócitos com 4% de bastões e 78% de segmentados. Ele deve ser tratado com",
+      "alternativas": [
+        "hidratação oral e loperamida.",
+        "hidratação oral e mesalazina supositório.",
+        "hidratação e ciprofloxacina venosas.",
+        "hidratação e metronidazol oral.",
+        "hidratação venosa, apenas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento do candidato sobre complicações pós-antibioticoterapia, especificamente a colite por Clostridium difficile. O cenário é clássico: paciente idoso, diabético, internação recente com uso de ceftriaxona e clindamicina, que evolui com diarreia aquosa intensa menos de 24h após a alta.</p><p><strong>O quadro clínico é típico de colite por C. difficile:</strong> exposição recente a antibiótico de amplo espectro (ceftriaxona + clindamicina), diarreia aquosa abundante sem sangue, dor abdominal em flanco esquerdo, leucocitose com desvio à esquerda (22.700 leucócitos, 4% bastões), ausência de febre e sinais de irritação peritoneal. A resolução do quadro infeccioso pulmonar e compensação cardiovascular após a alta Hospitalar sugere que a diarreia é nova e relacionada ao antibiótico.</p><p>As diretrizes brasileiras de infectologia (SBI 2024) estabelecem que pacientes com quadro moderado a grave de C. difficile devem ser tratados com metronidazol oral ou vancomicina oral.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p>A) Hidratação oral + loperamida: <em>INCORRETA</em>. Loperamida está contra-indicada em colite por C. difficile, pois pode prolongar a exposição à toxina bacteriana. Além disso, a hidratação oral pode ser insuficiente em paciente idoso desidratado.</p><p>B) Hidratação oral + mesalazina supositório: <em>INCORRETA</em>. Mesalazina é utilizada em doenças inflamatórias intestinais (retocolite ulcerativa, doença de Crohn), não em colite infecciosa por C. difficile.</p><p>C) Hidratação + ciprofloxacino venoso: <em>INCORRETA</em>. Ciprofloxacino não é eficaz contra C. difficile e pode até perpetuar o quadro, já que é um antibiótico de amplo espectro. A administração venosa em paciente não grave é desnecessária.</p><p>D) Hidratação + metronidazol oral: <em>CORRETA</em>. Metronidazol oral é primeira escolha para casos moderados de C. difficile, oferece boa penetração intestinal, baixo custo e eficácia comparável à vancomicina. A hidratação pode ser oral em casos menos graves.</p><p>E) Hidratação venosa apenas: <em>INCORRETA</em>. A hidratação resolve a desidratação, mas não trata a causa subjacente (C. difficile). O tratamento antimicrobiano específico é obrigatório.</p><p><strong>VEREDITO FINAL:</strong> A resposta correta é D, seguindo as diretrizes brasileiras atualizadas para o tratamento de colite por C. difficile. O reconhecimento precoce deste quadro é crucial, especialmente em pacientes idosos com uso recente de antibióticos de amplo espectro.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten_InfeccaoPorCDifficile"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Mulher de 74 anos refere há 6 meses dor lombar contínua, astenia e fraqueza. Nega febre. Para tratamento da dor, faz uso diário de anti-inflamatórios não esteroides com pouco alívio. A radiografia da coluna lombar mostrou grave osteopenia com colapso vertebral de L1. Além disso, apresentava anemia, hipercalcemia, hiperuricemia e elevação das escórias. Assinale a alternativa que indica o(s)\nexame(s) que poderia(m) ser solicitado(s) para diagnóstico.",
+      "alternativas": [
+        "Densitometria óssea de coluna lombar e fêmur proximal.",
+        "Ressonância magnética da coluna lombar.",
+        "Eletroforese de proteínas séricas e mielograma.",
+        "Calciúria, fósforo e dosagem sérica do PTH.",
+        "Dosagem de 25 hidroxivitamina D e calciúria."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia a capacidade de reconhecimento de mieloma múltiplo através de uma apresentação clínica típica. O perfil descrito - mulher idosa com dor lombar crônica, osteopenia com colapso vertebral, anemia, hipercalcemia, hiperuricemia e elevação das escórias - é clássico para gamopatia monoclonal.</p><p><strong>O quadro clínico sugere fortemente mieloma múltiplo pelos seguintes motivos:</strong> síndrome de lise óssea (dor lombar, colapso vertebral, osteopenia grave), anemia normocítica normocrômica, hipercalcemia (comum em mieloma devido à reabsorção óssea), insuficiência renal com elevação de creatinina e ureia, e faixa etária típica (idosos). O uso crônico de AINEs para dor lombar pode ter mascarado ou exacerbado a situação.</p><p>O Protocolo Brasileiro de Diagnóstico e Tratamento de Mieloma Múltiplo (SBH 2024) estabelece que o diagnóstico requer: evidências de plasma celular monoclonal no sangue ou urina, evidências de órgão-alvo (lesões líticas, anemia, hipercalcemia, insuficiência renal).</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p>A) Densitometria óssea + ressonância magnética: <em>INCORRETA</em>. Embora possam mostrar alterações (osteopenia, colapso vertebral), não são específicas para diagnóstico de mieloma. A densitometria é útil para osteoporose, mas não distingue mieloma de outras causas de perda óssea.</p><p>B) Ressonância magnética da coluna lombar: <em>INCORRETA</em>. Pode mostrar lesões focais ou difusas, mas é complementar, não diagnóstica. Não avalia componente hematológico da doença.</p><p>C) Eletroforese de proteínas séricas + mielograma: <em>CORRETA</em>. Eletroforese identifica a paraproteína monoclonal (假-globulina) no sangue, e mielograma confirma a infiltração plasmocitária (>10% de plasmócitos). Esses são os exames fundamentais para diagnóstico de mieloma múltiplo.</p><p>D) PTH, fósforo, calciúria e 25-OH vitamina D: <em>INCORRETA</em>. Esses exames investigam hipercalcemia por outras causas (hiperparatireoidismo, deficiência de vitamina D), mas não abordam o componente hematológico essencial para o diagnóstico de mieloma.</p><p>E) Vitamina D + calciúria: <em>INCORRETA</em>. Exames úteis para avaliação de metabolismo ósseo, mas não específicos para diagnóstico de mieloma múltiplo. Não avaliam componente monoclonal.</p><p><strong>VEREDITO FINAL:</strong> A resposta correta é C, pois a eletroforese de proteínas séricas e mielograma são os exames essenciais e complementares para estabelecer o diagnóstico definitivo de mieloma múltiplo, avaliação crucial para o manejo adequado desta neoplasia hematológica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "A manifestação psiquiátrica mais comum em consequência de doença cerebrovascular é",
+      "alternativas": [
+        "Transtorno depressivo.",
+        "Psicose.",
+        "Transtorno de personalidade.",
+        "Mania.",
+        "Transtorno do estresse pós-traumático."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia o conhecimento do candidato sobre as repercussões neuropsiquiátricas das doenças cerebrovasculares. As sequelas psiquiátricas pós-AVC são frequentes e impactam significativamente a qualidade de vida e reabilitação dos pacientes.</p><p>As diretrizes brasileiras de saúde mental e AVC (ABM 2024) documentam que transtornos psiquiátricos são comuns após eventos cerebrovasculares, com prevalência de até 30-50% nos primeiros meses pós-AVC. A compreensão dessas manifestações é fundamental para abordagem multidisciplinar adequada.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p>A) Transtorno depressivo: <em>CORRETA</em>. É a manifestação psiquiátrica mais comum pós-AVC, presente em até 30-40% dos casos. A depressão pós-AVC está relacionada a múltiplos fatores: localização da lesão (áreas frontais e subcorticais), restrição funcional, mudanças no estilo de vida, e alterações neuroquímicas. Pode ser subclassificada como depressão maior ou distimia, e interfere significativamente na reabilitação.</p><p>B) Psicose: <em>INCORRETA</em>. Muito menos comum que depressão, presente em cerca de 5-10% dos casos. Geralmente associada a lesões em áreas específicas (temporal, parietal) ou delirium subjacente. Sintomas psicóticos verdadeiros pós-AVC são raros.</p><p>C) Transtorno de personalidade: <em>INCORRETA</em>. Personalidades pré-existentes podem se acentuar, mas não são consideradas novas manifestações psiquiátricas pós-AVC. Alterações de personalidade podem ocorrer (apatia, irritabilidade), mas não se caracterizam como transtorno de personalidade verdadeiro.</p><p>D) Mania: <em>INCORRETA</em>. Extremamente rara após AVC (<1% dos casos). Geralmente associada a lesões em áreas específicas (córtex pré-frontal direito, sistema límbico) ou uso de medicações. Muito menos frequente que depressão ou ansiedade.</p><p>E) Transtorno do estresse pós-traumático (TEPT): <em>INCORRETA</em>. TEPT é mais relacionado a eventos traumáticos intencionais (violência, acidentes), não a doenças cerebrovasculares. Embora alguns pacientes possam desenvolver sintomas ansiosos relacionados ao evento do AVC, não é classificado como TEPT.</p><p><strong>VEREDITO FINAL:</strong> A resposta correta é A. O transtorno depressivo é a manifestação psiquiátrica mais frequente e significativa após AVC, requerendo detecção precoce e tratamento adequado para otimizar a reabilitação e qualidade de vida dos pacientes. O reconhecimento desta comorbidade é essencial na prática clínica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_1",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv_AcidenteVascularCerebralIsquemico"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente de 85 anos com quadro de dispepsia de início há cerca de dois meses, em uso de omeprazol 20mg em jejum, apresentando redução do apetite, emagrecimento e anemia. Sobre a investigação do quadro, é correto afirmar:",
+      "alternativas": [
+        "A hipocloridria pelo uso crônico de inibidores de bomba de prótons pode aumentar a absorção de ferro.",
+        "A investigação da bactéria Helicobacter pylori para tratamento teria pouco impacto pela idade da paciente.",
+        "A endoscopia digestiva alta é indicada pela presença de sinais de alerta para doenças graves.",
+        "A anemia microcítica deve-se à redução da produção de fator intrínseco de absorção da vitamina B12.",
+        "Deve-se investigar outros aparelhos, pois há redução das neoplasias do trato digestório após os 80 anos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento do candidato sobre a abordagem diagnóstica de dispepsia em pacientes idosos, especialmente na presença de sinais de alerta. A presença de emagrecimento, anemia e redução do apetite em paciente idosa com dispepsia requer investigação específica e endoscopia digestiva alta.</p><p>As diretrizes brasileiras de gastrenterologia (SBG 2024) estabelecem critérios claros para indicação de endoscopia em pacientes idosos com dispepsia. Sinais de alerta como perda de peso, anemia, sangramento gastrointestinal e início tardio dos sintomas (>60 anos) são indicações absolutas para endoscopia, independentemente da idade.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p>A) Hipocloridria aumenta absorção de ferro: <em>INCORRETA</em>. O uso crônico de omeprazol pode reduzir a absorção de ferro e vitamina B12, contribuindo para anemia. A afirmação está incorreta - a hipocloridria REDUZ a absorção de ferro.</p><p>B) Helicobacter pylori tem pouco impacto na idade: <em>INCORRETA</em>. O diagnóstico e tratamento de H. pylori permanece importante em qualquer idade, incluindo idosos. A Guidelines brasileiras (SBG 2024) recomendam investigação e tratamento independentemente da idade, especialmente em presença de sintomas ou anemia.</p><p>C) Endoscopia é indicada por sinais de alerta: <em>CORRETA</em>. A presença de emagrecimento, anemia, redução do apetite em paciente idosa com dispepsia são sinais de alerta mandatórios para endoscopia digestiva alta. Esses sintomas podem indicar desde gastrite atrófica até neoplasia gástrica.</p><p>D) Anemia microcítica por déficit de fator intrínseco: <em>INCORRETA</em>. O déficit de fator intrínseco causa deficiência de vitamina B12, resultando em anemia megaloblástica, não microcítica. A anemia microcítica em idosa com dispepsia sugere mais provavelmente sangramento crônico ou deficiência de ferro.</p><p>E) Redução de neoplasias após 80 anos: <em>INCORRETA</em>. A incidência de câncer gástrico na verdade aumenta com a idade, com pico após 70 anos. O idade avançada é fator de risco, não protetor. A investigação deve ser intensificada, não reduzida.</p><p><strong>VEREDITO FINAL:</strong> A resposta correta é C. A endoscopia digestiva alta é obrigatória em pacientes idosos com dispepsia associada a sinais de alerta como emagrecimento e anemia. O diagnóstico precoce de condições graves, incluindo câncer gástrico, é fundamental na população geriátrica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_SindromeDispeptica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiasDoEstomago"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Mulher de 79 anos, tem artrite reumatoide com bom controle, em uso de 10mg de prednisona. Procura atendimento médico com relato de dor de forte intensidade em região lombar de início súbito, após ter se inclinado repentinamente para frente para pegar um objeto caído ao chão. Foi prescrito analgésico, mas, ainda assim, a dor manteve-se persistente durante toda a semana e com piora aos movimentos. A hipótese diagnóstica adequada é",
+      "alternativas": [
+        "Osteomielite.",
+        "Lombociatalgia crônica agudizada.",
+        "Polimialgia reumática.",
+        "Estenose de canal medular.",
+        "Fratura vertebral por osteoporose."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da banca UFPA aborda fraturas vertebrais por fragilidade em pacientes geriátricos.</strong></p><p>A paciente apresenta perfil de alto risco: mulher de 79 anos com artrite reumatoide em uso de prednisona crônica. Esta combinação é clássica para osteoporose secundária. O mecanismo de trauma mínimo (inclinação para frente) com dor súbita e persistente indica fratura por fragilidade.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Osteomielite</strong> - Incorreta. A dor é de início súbito após trauma mínimo, com história de osteoporose. A osteomielite cursaria com sintomas sistêmicos (febre, mal-estar) e evolução insidiosa.</p><p><strong>B) Lombociatalgia crônica agudizada</strong> - Incorreta. A lombociatalgia típica tem irradiação para membro inferior, formigamento e alterações neurológicas. Aqui temos dor lombar pura sem sintomas radiculares.</p><p><strong>C) Polimialgia reumática</strong> - Incorreta. Caracteriza-se por dor em cintura escapular e pélvica bilateral, rigidez matinal prolongada e sintomas sistêmicos. A dor é lombar isolada.</p><p><strong>D) Estenose de canal medular</strong> - Incorreta. Cursa com claudicação neurogênica (dor ao caminhar que melhora com flexão) e alterações neurológicas progressivas. A dor é súbita pós-trauma.</p><p><strong>E) Fratura vertebral por osteoporose</strong> - <strong>CORRETA.</strong> Perfil epidemiológico (mulher idosa), fator de risco (corticoide crônico), mecanismo típico (trauma mínimo) e apresentação clínica compatível.</p><p><strong>Veredito: Alternativa E é a resposta correta.</strong> Esta questão exige reconhecimento de fratura por fragilidade em paciente com fatores de risco clássicos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Sobre o Acidente Vascular Encefálico (AVE), é correto afirmar:",
+      "alternativas": [
+        "É a terceira maior causa de perda de capacidade funcional entre os idosos, devido a sequelas motoras e cognitivas.",
+        "O Holter de 24h é um exame complementar indicado na suspeita de arritmias como causa de AVE. A ausência de episódios de fibrilação atrial em 24h exclui este diagnóstico, não sendo necessário prosseguir investigação.",
+        "Para os pacientes não candidatos à trombólise, a pressão arterial deve ser reduzida nas primeiras 8h para níveis abaixo de 210x110mmHg.",
+        "A presença de hipodensidade precoce > 1/3 do território da artéria cerebral média em tomografia de crânio contraindica trombólise com rt-PA.",
+        "Ao se avaliar o impacto da implantação de Unidades de AVC, observou-se que estas não conseguiram reduzir riscos relativos de morte e de dependência funcional."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia conhecimento sobre critérios de contraindicação para trombólise no AVC.</strong></p><p>O AVC é emergência médica com janela terapêutica limitada. A tomografia de crânio inicial é fundamental para excluir hemorragia e avaliar critérios de contraindicação para trombólise com rt-PA.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) AVE como terceira causa de incapacidade</strong> - Incorreta. O AVC é a <strong>segunda</strong> causa de morte mundial e principal causa de incapacidade em idosos.</p><p><strong>B) Holter 24h e FA</strong> - Incorreta. A ausência de FA em 24h <strong>não exclui</strong> o diagnóstico. Episode de FA paroxística podem ser intermitentes. A investigação deve ser mais prolongada (7-30 dias).</p><p><strong>C) Pressão arterial em não candidatos à trombólise</strong> - Incorreta. O manejo conservador mantém PA < 220/120mmHg. Redução agressiva pode comprometer perfusão cerebral.</p><p><strong>D) Hipodensidade > 1/3 ACM contraindica trombólise</strong> - <strong>CORRETA.</strong> A hipodensidade precoce > 1/3 do território da ACM indica infarto extenso com risco aumentado de transformação hemorrágica. É contraindicação absoluta para trombólise.</p><p><strong>E) Unidades de AVC não reduzem mortalidade</strong> - Incorreta. Unidades de AVC reduzem significativamente mortalidade (odds ratio 0.84) e dependência funcional (odds ratio 0.81).</p><p><strong>Veredito: Alternativa D é a resposta correta.</strong> Conhecimento essencial para decisão terapêutica em pacientes com AVC agudo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Nefrologia_AcidentesVascularesCerebraisAv_1"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "P.N.S, feminino, 34 anos, tabagista, sem comorbidades, ingere anticoncepcional oral há mais de 10 anos, deu entrada no PS com quadro de dor torácica à direita, de início súbito há 8 horas; nega tosse, afebril, sinais vitais estáveis. Radiograma de tórax evidencia opacidade em segmento basal posterior esquerdo. A conduta imediata seria",
+      "alternativas": [
+        "iniciar amoxicilina com clavulanato via oral.",
+        "prescrever levofloxacino EV, após internação.",
+        "solicitar ECG e enzimas cardíacas.",
+        "solicitar Tomografia de tórax sem contraste.",
+        "solicitar Angiotomografia de tórax."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão aborda tromboembolismo pulmonar (TEP) em paciente com fatores de risco.</strong></p><p>A paciente apresenta Triade de Virchow completa: estase venosa (sedentarismo), dano endotelial (tabagismo) e estado hipercoagulável (anticoncepcional oral). A dor torácica súbita em paciente jovem com fatores de risco sugere TEP.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Amoxicilina-clavulanato</strong> - Incorreta. Tratamento de pneumonia bacteriana. O quadro clínico não sugere infecção (sem febre, tosse, expectoração).</p><p><strong>B) Levofloxacino EV</strong> - Incorreta. Antibiótico de amplo espectro. Novamente, não há evidência de infecção bacteriana.</p><p><strong>C) ECG e enzimas cardíacas</strong> - Incorreta. Avalia IAM, mas a dor é pleurítica (típica de TEP) e há radiografia com opacidade que pode ser infarto pulmonar.</p><p><strong>D) TC tórax sem contraste</strong> - Incorreta. A TC de tórax sem contraste pode mostrar opacidade, mas não avalia circulação pulmonar. Para TEP, precisamos de estudo angiográfico.</p><p><strong>E) Angiotomografia de tórax</strong> - <strong>CORRETA.</strong> Método gold standard para diagnóstico de TEP. Avalia diretamente os vasos pulmonares. A angiotomografia permite visualizar defeitos de enchimento na circulação pulmonar.</p><p><strong>Veredito: Alternativa E é a resposta correta.</strong> Em pacientes com probabilidade clínica intermediária/alta para TEP, a angiotomografia é o exame de escolha inicial.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Paciente internado há mais de 96 horas em UTI, desenvolve pneumonia. Assinale o agente etiológico para o qual deve ser planejada a cobertura antibiótica e o antibiótico empírico a ser iniciado",
+      "alternativas": [
+        "Streptococcus pneumoniae - Cefepima.",
+        "Acinetobacter baumannii - Cefepima.",
+        "Streptococcus pneumoniae - Levofloxacino.",
+        "Acinetobacter baumannii - Ampicilina-sulbactan.",
+        "Acinetobacter baumannii - Amoxicilina-clavulanato."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão avalia pneumonia nosocomial (Pneumonia Associada à Assistência à Saúde - PAAS) em UTI.</strong></p><p>Pneumonia em pacientes hospitalizados há > 48-96h tem perfil microbiológico distinto: foco em germes multirresistentes como Acinetobacter baumannii, Pseudomonas aeruginosa, MRSA e Enterobacteriaceae ESBL+.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) S. pneumoniae + Cefepima</strong> - Incorreta. S. pneumoniae é causador típico de pneumonia comunitária, não nosocomial. Na UTI, agentes multirresistentes prevalecem.</p><p><strong>B) A. baumannii + Cefepima</strong> - Incorreta. A. baumannii é importante agente de pneumonia nosocomial, mas a Cefepima é<strong>inadequada</strong>. A. baumannii frequentemente produz MBL (metalo-beta-lactamases) e é multirresistente, requerendo carbapenêmicos (imipenem/meropenem) ou colistina.</p><p><strong>C) S. pneumoniae + Levofloxacino</strong> - Incorreta. Mesma falha da alternativa A: S. pneumoniae não é agente típico de pneumonia nosocomial em UTI.</p><p><strong>D) A. baumannii + Ampicilina-sulbactam</strong> - Incorreta. Embora a ampicilina-sulbactam tenha atividade contra algumas cepas de A. baumannii, não é ideal para UTI. A cobertura é inadequada contra cepas multirresistentes.</p><p><strong>E) A. baumannii + Amoxicilina-clavulanato</strong> - Incorreta. Falhas similares às alternativas B e D. A amoxicilina-clavulanato tem espectro insuficiente para A. baumannii resistente.</p><p><strong>NOTA IMPORTANTE:</strong> Esta questão foi <strong>ANULADA</strong> pelo gabarito oficial (@). Analisando as alternativas, todas estão incorretas pois nenhuma apresenta a cobertura adequada para A. baumannii em UTI. O antibiótico correto seria Meropenem/Imipenem ou Colistina, não constantes nas opções.</p><p><strong>Veredito: Questão anulada por não ter alternativa correta.</strong> A banca provavelmente intendia avaliar a necessidade de cobertura para A. baumannii, mas nenhum antibiótico adequado foi oferecido nas opções.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "RCP, sexo masculino, tabagista de 40 AXM, em processo de cessação de tabagismo. Estaria indicada a TRN (terapia de reposição de nicotina) no caso de",
+      "alternativas": [
+        "dependência psicológica.",
+        "esquizofrenia.",
+        "dependência química elevada - teste de fagerström > 5.",
+        "contraindicação a outros fármacos.",
+        "estar de acordo com a preferência do paciente."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia critérios para indicação de Terapia de Reposição de Nicotina (TRN).</strong></p><p>A TRN é fundamental ferramenta para cessação do tabagismo, mas deve ser indicada baseando-se em evidências objetivas e não em preferências ou conceitos subjetivos.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Dependência psicológica</strong> - Incorreta. A TRN é indicada para dependência física/nicotínica, demonstrada objetivamente pelo Teste de Fagerström. A dependência psicológica é abordada com suporte comportamental.</p><p><strong>B) Esquizofrenia</strong> - Incorreta. Na verdade, pacientes psiquiátricos têm <strong>maior risco</strong> de efeitos adversos da TRN (delirium, psicose). TRN é relativa/contraindicação em doença psiquiátrica grave descompensada.</p><p><strong>C) Teste de Fagerström > 5</strong> - <strong>CORRETA.</strong> Teste de Fagerström é ferramenta validada que avalia grau de dependência nicotínica. Escore > 6 indica dependência moderada/alta, onde TRN tem maior benefício comprovado.</p><p><strong>D) Contraindicação a outros fármacos</strong> - Incorreta. Esta é <strong>indicação relativa</strong>, não absoluta. Quando há contraindicação a bupropiona/varenicilina, a TRN pode ser opção, mas ainda precisa atender aos critérios de dependência.</p><p><strong>E) Preferência do paciente</strong> - Incorreta. A decisão deve ser baseada em <strong>evidência científica</strong>, não apenas preferência. Pode ser fator considerável, mas não isoladamente.</p><p><strong>Veredito: Alternativa C é a resposta correta.</strong> A TRN deve ser indicada em pacientes com dependência moderada/alta (Fagerström > 5) associada a apoio comportamental para maximizar sucesso na cessação.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_DependenciaQuimica"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "O mecanismo de ação dos aparelhos intraorais para o tratamento da Apneia Obstrutiva do Sono inclui:",
+      "alternativas": [
+        "Dormir de boca aberta.",
+        "Manter pressão positiva na via aérea.",
+        "Proceder ao avanço mandibular para posicionar a língua anteriormente e abrir a orofaringe.",
+        "Abrir o palato para aumentar a faringe.",
+        "Aumentar a Capacidade Vital Forçada (CVF)."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFPA explora o conhecimento sobre tratamento da apneia obstrutiva do sono com dispositivos intraorais.</strong> A banca busca avaliar se o candidato compreende o mecanismo fisiológico específico destes aparelhos.</p><p><strong>A resposta correta é C - Avanço mandibular.</strong></p><p>Vamos analisar cada alternativa: <strong>A) Dormir de boca aberta:</strong> Esta não é uma estratégia de tratamento, mas sim um hábito que pode piorar a apneia. <strong>B) Pressão positiva:</strong> É o mecanismo do CPAP/BiPAP, não dos dispositivos intraorais. <strong>C) Avanço mandibular:</strong> Correto! O avanço da mandíbula traciona a língua anteriormente, aumentando o espaço da orofaringe e reduzindo o colapso das vias aéreas superiores. <strong>D) Abrir o palato:</strong> Não é o objetivo do tratamento. <strong>E) Aumentar CVF:</strong> A capacidade vital forçada não é diretamente modificada por estes dispositivos.</p><p><strong>Veredito final:</strong> A alternativa C descreve corretamente o mecanismo de ação dos aparelhos intraorais para apneia do sono.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper",
+        "ClinicaMedica_Pneumologia_ApneiaObstrutivaDoSonoNaInfancia"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Com relação à Doença Pulmonar Obstrutiva Crônica (DPOC), é correto afirmar:",
+      "alternativas": [
+        "O número de exacerbações anuais não se correlaciona com a gravidade.",
+        "A espirometria é necessária para seu diagnóstico, evidenciando-se relação VEF1/CVF< 0,7 pré-broncodilatador.",
+        "A gasometria arterial é essencial para avaliação de hipercapnia e do estado ácido básico, pCO2>45mmHg com bicarbonato elevado sugere insuficiência respiratória crônica.",
+        "O declínio da VEF1 independe da gravidade do quadro.",
+        "Todo paciente com suspeita de DPOC deve realizar pletismografia e DLCO."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFPA aborda conceitos fundamentais sobre DPOC, especialmente relacionados ao diagnóstico e progressão da doença.</strong> A banca busca avaliar conhecimento sobre critérios diagnósticos e características fisiopatológicas.</p><p><strong>A resposta correta é C - Gasometria arterial e acidose respiratória.</strong></p><p>Analisando as alternativas: <strong>A) Número de exacerbações:</strong> Errado! O número de exacerbações está diretamente correlacionado com a gravidade e progressão da DPOC. <strong>B) Espirometria:</strong> Parcialmente correto sobre VEF1/CVF < 0,7, mas não é pré-broncodilatador - é pós-broncodilatador que confirma o diagnóstico. <strong>C) Gasometria arterial:</strong> Correto! A gasometria é essencial para avaliar insuficiência respiratória, hipercapnia (pCO2 > 45 mmHg) e acidose com bicarbonato elevado indica compensação crônica. <strong>D) Declínio da VEF1:</strong> Errado! O declínio da VEF1 é proporcional à gravidade e está relacionado ao tabagismo e outros fatores de risco. <strong>E) Pletismografia e DLCO:</strong> Não são obrigatórios para todos os casos - são úteis em casos selecionados para avaliar componente enfisema vs. bronquite crônica.</p><p><strong>Veredito final:</strong> A alternativa C descreve corretamente a importância da gasometria arterial no diagnóstico de insuficiência respiratória em DPOC.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Sobre Bronquiectasias, é correto afirmar:",
+      "alternativas": [
+        "A suscetibilidade mais frequente é um comprometimento dos mecanismos de defesa pulmonares, taiscomo transporte mucociliar e disponibilidade de IgE e antiproteases nos espaços aéreos distais.",
+        "Em situações nas quais o transporte mucociliar é ineficaz, todos os contaminantes inalados tendem apermanecer nas vias aéreas de pequeno calibre.",
+        "Há evidências suficientes para o uso rotineiro de corticoides inalatórios em adultos com Bronquiectasias.",
+        "Pacientes com VEF1 < 40% têm indicação de transplante pulmonar.",
+        "Em pacientes infectados com micobactérias não tuberculosas, o tratamento de escolha é ummacrolídeo (Azitromicina 3x por semana)."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFPA aborda aspectos fisiopatológicos e tratamento das bronquiectasias.</strong> A banca busca avaliar o conhecimento sobre a fisiologia da depuração mucociliar e suas implicações clínicas.</p><p><strong>A resposta correta é B - Ineficácia do transporte mucociliar.</strong></p><p>Análise das alternativas: <strong>A) Suscetibilidade por IgE e antiproteases:</strong> Errado! O problema principal não é IgE ou antiproteases, mas sim os mecanismos de defesa como o transporte mucociliar, produção de muco e clearance bacteriano. <strong>B) Transporte mucociliar ineficaz:</strong> Correto! Quando o transporte mucociliar não funciona adequadamente, partículas e contaminantes permanecem nas vias aéreas de pequeno calibre, predispondo à infecção crônica e inflamação. <strong>C) Corticoides inalatórios:</strong> Errado! Não há evidências suficientes para uso rotineiro - apenas em casos específicos com indicação. <strong>D) VEF1 < 40% e transplante:</strong> Errado! A indicação de transplante é mais complexa, baseada em múltiplos critérios incluindo dispneia refratária, exacerbações frequentes e hipoxemia crônica, não apenas VEF1. <strong>E) Tratamento com macrolídeos:</strong> Errado! A azitromicina pode ser usada profilaticamente em alguns casos, mas não é o tratamento de escolha para micobactérias não tuberculosas, que requerem esquemas específicos com múltiplos medicamentos.</p><p><strong>Veredito final:</strong> A alternativa B descreve corretamente as consequências da insuficiência do transporte mucociliar nas bronquiectasias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Assinale a alternativa correta.",
+      "alternativas": [
+        "Dilatações brônquicas transitórias podem ocorrer durante quadro de infecção pulmonar, sendochamadas, nestes casos, de pseudobronquiectasias.",
+        "As pseudobronquiectasias têm de ser reavaliadas em 60 dias após recuperação do quadroinfeccioso. Se persistirem, já são consideradas Bronquiectasias.",
+        "A presença de febre é comum nas Bronquiectasias infectadas, sendo parâmetro mais importante que a característica da secreção pulmonar.",
+        "O diagnóstico por imagem da Bronquiectasia é feito pela radiografia de tórax em duas incidências.",
+        "Os pacientes que realizam reabilitação pulmonar apresentam redução da mortalidade."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFPA explora a diferenciação entre bronquiectasias verdadeiras e pseudobronquiectasias.</strong> A banca busca avaliar o conhecimento sobre a reversibilidade das alterações radiológicas e a definição correta da doença.</p><p><strong>A resposta correta é A - Dilatações brônquicas transitórias durante infecção.</strong></p><p>Análise das alternativas: <strong>A) Dilatações transitórias durante infecção:</strong> Correto! As pseudobronquiectasias são dilatações brônquicas que ocorrem durante quadros infecciosos agudos e são reversíveis com o tratamento. <strong>B) Reavaliação em 60 dias:</strong> Errado! O tempo de reavaliação não é específico de 60 dias, e a persistência não define automaticamente bronquiectasias verdadeiras. <strong>C) Febre como parâmetro principal:</strong> Errado! A febre pode estar presente, mas não é mais importante que a análise da secreção pulmonar para avaliação de infecção. <strong>D) Diagnóstico por radiografia:</strong> Errado! O diagnóstico definitivo é feito por tomografia computadorizada de alta resolução - a radiografia pode sugerir, mas não confirma. <strong>E) Reabilitação pulmonar e mortalidade:</strong> Errado! A reabilitação pulmonar melhora qualidade de vida e capacidade funcional, mas não reduz mortalidade.</p><p><strong>Veredito final:</strong> A alternativa A descreve corretamente o conceito de pseudobronquiectasias como dilatações transitórias durante infecção pulmonar.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Mulher, 21 anos, portadora de diabetes mellitus tipo 1 desde os 10 anos de idade, apresentou quadro de febre e disúria há 2 dias e não realizou nenhum tratamento. Interrompeu por conta própria a insulinoterapia no último dia, procura o serviço de urgência mantendo febre e disúria, somadas ao quadro de dispneia, dor abdominal e vômitos com evolução há cerca de 12 horas. Evacuação \npresente e sem alterações. Ao exame físico: regular estado geral; anictérica; afebril; pressão arterial: 100x70mmhg; desidratada; ausculta cardiopulmonar: murmúrios vesiculares presentes bilateralmente, bulhas cardíacas normofonéticas, em dois tempos, ritmo cardíaco regular; frequência cardíaca: 102bpm; frequência respiratória: 22 irpm; abdome flácido, doloroso à palpação difusamente com descompressão brusca negativa, ruídos hidroaéreos presentes. Foram solicitados exames, havendo já o resultado da glicemia plasmática: 452mg/dl. Aguardava demais exames solicitados. Considerando esse quadro clínico acima descrito, assinale a alternativa que apresenta o provável diagnóstico e a conduta mais adequada",
+      "alternativas": [
+        "Diagnóstico provável: estado hiperglicêmico hiperosmolar com provável fator precipitante à infecção urinária. Conduta: prescrever insulina subcutânea, antibiótico e alta para seguimento ambulatorial.",
+        "Diagnóstico provável: cetoacidose diabética com provável fator precipitante à infecção urinária. Conduta: prescrever insulina subcutânea, antibiótico e alta para seguimento ambulatorial.",
+        "Diagnóstico provável: cetoacidose diabética com provável fator precipitante à infecção urinária. Conduta: internação e monitorização da paciente; reposição de fluídos, de eletrólitos (se necessário); correção da hiperglicemia e da acidose; detecção e tratamento das causas precipitantes e complicações.",
+        "Diagnóstico provável: estado hiperglicêmico hiperosmolar com provável fator precipitante à infecçãourinária. Conduta: internar e monitorizar a paciente; realizar reposição de fluídos, de eletrólitos (senecessário); correção da hiperglicemia; detecção e tratamento das causas precipitantes e complicações.",
+        "Diagnóstico provável: infecção urinária sem outras complicações. Conduta: prescreverantibioticoterapia e seguimento ambulatorial."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFPA apresenta um caso clínico complexo de cetoacidose diabética e busca avaliar a capacidade de diagnóstico diferencial e conduta adequada.</strong> A banca explora o raciocínio clínico para distinguir entre diferentes estados hiperglicêmicos e determinar a conduta apropriada.</p><p><strong>A resposta correta é C - Cetoacidose diabética com internação e manejo completo.</strong></p><p>Vamos analisar sistematicamente: <strong>História clínica:</strong> Diabetes tipo 1 desde 10 anos, interrompeu insulina, quadro de infecção urinária, sintomas de cetoacidose (dispneia, dor abdominal, vômitos), glicemia 452 mg/dL. <strong>Diagnóstico diferencial:</strong> Entre cetoacidose diabética e estado hiperosmolar. <strong>Sinais de cetoacidose:</strong> Dispneia (para compensar acidose), dor abdominal, vômitos, desidratação - todos presentes no caso. <strong>Estado hiperosmolar:</strong> Mais comum em DM tipo 2, geralmente sem acidose significativa.</p><p><strong>Análise das alternativas:</strong> <strong>A) Estado hiperosmolar:</strong> Errado! Não se enquadra no perfil clínico (DM tipo 1, sintomas de acidose). <strong>B) Cetoacidose com alta ambulatorial:</strong> Errado! Cetoacidose requer internação obrigatória. <strong>C) Cetoacidose com internação:</strong> Correto! Diagnóstico clínico apropriado e conduta de internação. <strong>D) Estado hiperosmolar:</strong> Errado pelo mesmo motivo da alternativa A. <strong>E) Infecção simples:</strong> Errado! Ignora completamente a apresentação de cetoacidose.</p><p><strong>Veredito final:</strong> A alternativa C estabelece corretamente o diagnóstico de cetoacidose diabética e indica a conduta de internação para manejo completo da paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo1Dm1",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica",
+        "Pediatria_EndocrinologiaPediatrica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Mulher, 64 anos, apresenta quadro de astenia, queda de cabelo e constipação e foi diagnosticada com depressão há cerca de 4 meses. Paciente sedentária e tabagista. Sem histórico de doenças prévias ou infecções prévias ou uso de medicamentos. Comparece à consulta. Ao exame, encontra-se: em bom estado geral; consciente e orientada em tempo e espaço; acianótica; anictérica; afebril; ausculta cardiopulmonar e palpação abdominal sem alterações; pressão arterial: 125x85mmHg; palpação da tireoide: de consistência fibroelástica, móvel, indolor e sem nodulações. Traz os seguintes exames: hemograma sem alterações, transaminases sem alterações, creatinina: 0,6mg/dl (valor de referência: 0,4-1,1mg/dl); glicemia: 92mg/dl; TSH: 12,20 mUI/L (valor de referência: 0,35 a 5,5 mUI/L), repetido em outra data: TSH 10,2 mUI/L (valor de referência: 0,35 a 5,5 mUI/L), tiroxina livre (T4 livre): 0,89 ng/dl (valor de referência: 0,70 - 1,8 ng/dl, colesterol total: 270mg/dl, HDL: 37mg/dl e LDL: 180mg/dl. A conduta adequada para o caso é",
+      "alternativas": [
+        "iniciar reposição com levotiroxina, orientações sobre modificação do estilo de vida, reavaliação com TSH e T4livre em 8 semanas.",
+        "iniciar tratamento com sinvastatina 40mg, orientações sobre modificação do estilo de vida. Não háindicação no momento de reposição com levotiroxina.",
+        "não iniciar terapia medicamentosa no momento, orientações sobre modificação do estilo de vida, reavaliação com TSH e T4livre em 8 semanas.",
+        "solicitar ultrassom de tireoide e avaliar indicação da reposição de levotiroxina somente após resultado do exame.",
+        "não iniciar terapia medicamentosa no momento, orientações sobre modificação do estilo de vida. Nãohá necessidade de seguimento com TSH e T4 livre."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFPA 2021 avalia o reconhecimento e manejo do hipotireoidismo primário em pacientes com sintomas clássicos.</strong></p><p>Vamos analisar o caso apresentado: mulher de 64 anos com quadro de astenia, queda de cabelo, constipação e diagnóstico recente de depressão. Clinicamente, apresenta TSH persistentemente elevado (12,2 mUI/L e 10,2 mUI/L em repetição) e T4 livre no limite inferior da normalidade (0,89 ng/dl), configurando claramente hipotireoidismo primário.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA.</strong> Iniciar levotiroxina é a conduta apropriada. A paciente apresenta sintomas sugestivos de hipotireoidismo com confirmação laboratorial em duas dosagens. A levotiroxina é o padrão-ouro para reposição tireoidiana, com reavaliação em 8 semanas para ajuste posológico.</p><p><strong>B) INCORRETA.</strong> Priorizar sinvastatina para dislipidemia (colesterol 270mg/dl)ignora o problema principal - hipotireoidismo não tratado pode piorar o perfil lipídico.</p><p><strong>C) INCORTA.</strong> Adiar tratamento em paciente sintomático com TSH >10 mUI/L contraria diretrizes. Quando há sintomas e TSH persistentemente elevado, indica-se tratamento.</p><p><strong>D) INCORTA.</strong> Ultrassom de tireoide não é necessário inicialmente. A palpação revelou tireoide sem nodulações, e não há história pessoal/familiar de irradiação cervical.</p><p><strong>E) INCORRETA.</strong> Ausência de seguimento é inadequada. Pacientes em reposição tireoidiana necessitam monitorização laboratorial para ajuste posológico.</p><p><strong>Veredito:</strong> Alternativa A é a resposta correta, representando o manejo padrão do hipotireoidismo primário sintomático.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Hipotireoidismo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Homem, 59 anos, apresenta diagnóstico de diabetes mellitus tipo 2 há dez anos e hipertensão arterial sistêmica há cerca de cinco anos. História médica de infarto há dois anos. Refere nictúria duas vezes à noite e dispneia aos grandes esforços, sem outras queixas clínicas. Não faz automonitorização glicêmica, pois está sem aparelho. Faz uso de metformina 850 mg: três comprimidos ao dia, atorvastatina 40mg/dia, AAS 100mg/ dia, losartana 50mg de 12/12 horas. Refere seguir plano alimentar conforme orientação da nutricionista. Ao exame: IMC: 31kg/m2², PA: 150x100mmHg, ausculta cardiopulmonar e palpação abdominal sem alteração. Traz à consulta os seguintes exames: hemoglobina glicada: 8,1% (método HPLC); glicemia de jejum: 160mg/dl; colesterol total: 250mg/dl; HDL: 35mg/dl; LDL:89mg/dl; triglicerídeo: 150mg/dl; creatinina 0,7mg/dl (VR: 0,6-1,2mg/dl); transaminases dentro da normalidade; índice albumina-creatinina (3 amostras em 3 meses): 55 mg/g; 70mg/g e 80mg/g (valor de referência <30mg/g). Ecocardiograma com fração de ejeção do ventrículo esquerdo de 52% (valor de referência >59%). Considerando as características globais do paciente, a\nconduta adequada no tratamento para o diabetes e da dislipidemia seria",
+      "alternativas": [
+        "acrescentar uma glitazona para tratamento do diabetes e manter a terapêutica para dislipidemia.",
+        "acrescentar um inibidor da SGLT2 (inibidor do cotransportador de sódio/glicose 2) para tratamento do diabetes e adicionar um fibrato para tratar dislipidemia.",
+        "acrescentar um inibidor da SGLT2 (inibidor do cotransportador de sódio/glicose 2) para tratamento dodiabetes e adicionar ezetimiba para tratar dislipidemia.",
+        "acrescentar uma gliptina para tratamento do diabetes e modificar tratamento da dislipidemia parasinvastatina 40mg/dia.",
+        "acrescentar um inibidor da SGLT2 (inibidor do cotransportador de sódio/glicose 2) para tratamento dodiabetes e modificar tratamento da dislipidemia para sinvastatina 40mg/dia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre tratamento do diabetes mellitus tipo 2 em paciente com doença cardiovascular e doença renal crônica.</strong></p><p>O caso apresenta homem de 59 anos com DM2 há 10 anos, HAS, IAM há 2 anos, Hba1c 8,1% (descontrolado), microalbuminúria (55-80mg/g) e FEVE 52% (disfunção ventricular leve). O perfil lipídico está adequado com atual terapêutica.</p><p><strong>Raciocínio clínico:</strong> O paciente apresenta doença macrovascular establecida (IAM) e microvascular (nefropatia diabética inicial). O controle glicêmico está inadequado. Medicamentos com benefício cardiovascular e nefroprotetor são prioritários.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA.</strong> Glitazona (pioglitazona) pode piorar retenção hídrica e insuficiência cardíaca. FEVE baixa contraindica seu uso.</p><p><strong>B) PARCIALMENTE INCORRETA.</strong> SGLT2 é adequado, mas fibrato não é necessário. HDL 35mg/dl e TG 150mg/dl não indicam dislipidemia mista que justifique fibrato.</p><p><strong>C) CORRETA.</strong> SGLT2 oferece benefícios cardiovasculares, nefroprotetores e redução de Hba1c. Ezetimiba reduz adicionalmente LDL, importante em paciente de alto risco cardiovascular.</p><p><strong>D) INCORRETA.</strong> Glitazona contraindicada por FEVE baixa. DPP-4 (gliptina) não oferece benefício cardiovascular em pacientes com doença cardiovascular establecida.</p><p><strong>E) INCORRETA.</strong> SGLT2 é adequado, mas LDL 89mg/dl já está na meta. Sinvastatina 40mg mantida, sem necessidade de ajuste.</p><p><strong>Veredito:</strong> Alternativa C é a resposta correta, representando a melhor estratégia terapêutica para DM2 com doença cardiovascular e renal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo2Dm2",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Considerando a avaliação de uma mulher com 62 anos, menopausada, assinale a alternativa com os critérios densitométricos para diagnóstico de osteoporose e osteopenia pela Organização Mundial de Saúde, com base no resultado da densitometria mineral óssea de coluna lombar, colo do fêmur ou terço médio do rádio.",
+      "alternativas": [
+        "Osteoporose: T score (em desvio padrão) menor ou igual a -2,5 e osteopenia: T score (em desviopadrão) entre -1 e -2,5.",
+        "Osteoporose: Z score (em desvio padrão) menor ou igual a -2,5 e osteopenia: Z Score (em desviopadrão) entre -1 e -2,5.",
+        "Osteoporose: Z score (em desvio padrão) menor ou igual a -1,5 e osteopenia: Z score (em desviopadrão) entre -1 e -1,5.",
+        "Osteoporose: T score (em desvio padrão) menor ou igual a -1,5 e osteopenia: T Score (em desviopadrão) entre -1 e -1,5.",
+        "Osteoporose: T score (em desvio padrão) menor ou igual a -1,7 e osteopenia: T Score (em desviopadrão) entre -1 e -1,7."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão testa o conhecimento dos critérios diagnósticos da Organização Mundial de Saúde para osteoporose e osteopenia.</strong></p><p>Os critérios da OMS são padrão-ouro mundial para classificação densitométrica. Esta questão avalia se o candidato conhece a diferença entre T-score e Z-score, e os valores de corte corretos.</p><p><strong>Diferença entre T-score e Z-score:</strong></p><p>- T-score: Compara com população adulta jovem de referência (pico de massa óssea). Usado para diagnóstico de osteoporose e osteopenia em mulheres pós-menopáusicas e homens >50 anos.</p><p>- Z-score: Compara com população da mesma idade e sexo. Usado para investigação de causas secundárias em pré-menopáusicas, homens <50 anos e crianças.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) CORRETA.</strong> Critérios OMS: Osteoporose T-score ≤-2,5 e Osteopenia T-score entre -1 e -2,5. Referência é sempre com adultos jovens, não com mesma idade.</p><p><strong>B) INCORRETA.</strong> Usa Z-score em vez de T-score. Z-score não é usado para diagnóstico de osteoporose/osteopenia em mulheres pós-menopáusicas.</p><p><strong>C) INCORRETA.</strong> Usa Z-score e valores incorretos (-1,5). Critérios OMS sempre usam T-score e limiar -2,5 para osteoporose.</p><p><strong>D) INCORRETA.</strong> Valores incorretos (-1,5). Osteoporose é T-score ≤-2,5, não -1,5.</p><p><strong>E) INCORRETA.</strong> Valor incorreto (-1,7). Critérios OMS são padronizados: -2,5 para osteoporose.</p><p><strong>Veredito:</strong> Alternativa A é a resposta correta, representando os critérios diagnósticos oficiais da OMS para osteoporose e osteopenia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Mulher, 46 anos, procura atendimento devido a ter notado nodulação no pescoço, negava outros sintomas, menopausada, com funções de eliminação sem alteração. Ao exame: bom estado geral; consciente e orientada em tempo e espaço; acianótica; anictérica e afebril, ausculta cardiopulmonar sem alteração; tireoide de consistência fibroelástica, móvel, indolor à palpação, nódulo palpável com \ncerca de 2cm em lobo direito. Trouxe ultrassonografia de tireoide: nódulo hipoecogênico, regular, sem calcificações, localizado em lobo direito medindo 1,8x1,5x0,7cm, sem outras alterações. Marque a alternativa que contém a conduta inicial mais adequada.",
+      "alternativas": [
+        "Solicitar punção aspirativa do nódulo de tireoide guiada por ultrassom.",
+        "Solicitar TSH e T4 Livre e, de acordo com o resultado, avaliar a realização de punção aspirativa donódulo de tireoide guiada por ultrassom.",
+        "Dar seguimento com ultrassonografia de tireoide anual.",
+        "Proceder à tomografia cervical.",
+        "Solicitar cintilografia da tireoide."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia o protocolo de investigação inicial de nódulo tireoidiano em pacientes assintomáticos.</strong></p><p>Mulher de 46 anos com nódulo palpável de 2cm em lobo tireoidiano direito, hipoecogênico na ultrassonografia. A conduta inicial deve seguir o protocolo estabelecido para avaliação de nódulos tireoidianos.</p><p><strong>Protocolo de investigação:</strong> A primeira etapa sempre é avaliar função tireoidiana (TSH e T4 livre) antes de proceder com métodos invasivos. Nódulos podem ser funcionais (quente, morno) ou não funcionais (frio).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA.</strong> Punção aspirativa direta sem avaliação da função tireoidiana não segue protocolo. Se o nódulo for funcionante, punção não é indicada.</p><p><strong>B) CORRETA.</strong> Solicitar TSH e T4 livre primeiro é a conduta apropriada. Se TSH suprimido, solicitar cintilografia antes de punção. Se TSH normal/elevado, proceder com punção conforme características ultrassonográficas.</p><p><strong>C) INCORRETA.</strong> Seguimento anual é inadequado para nódulo >1cm. Nódulo de 2cm requer investigação ativa, não observação passiva.</p><p><strong>D) INCORRETA.</strong> Tomografia cervical não é método inicial para nódulo tireoidiano. Ultrassonografia já foi realizada e é suficiente para avaliação inicial.</p><p><strong>E) INCORRETA.</strong> Cintilografia é solicitada apenas se TSH suprimido. Não é exame inicial rotineiro.</p><p><strong>Veredito:</strong> Alternativa B é a resposta correta, representando o protocolo padrão para investigação inicial de nódulos tireoidianos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Homem, 45 anos, procura atendimento, pois realizou exame de glicemia plasmática em jejum com resultado de 105mg/dl, que repetiu em outra data com resultado de 106mg/dl. Foi solicitado teste oral de tolerância à glicose com 75 gramas de glicose e resultado de glicemia após duas horas de 141mg/dl. Nega doenças prévias. Refere pai e mãe com diagnóstico de diabetes mellitus tipo 2. Apresenta-se no exame físico com IMC: 32kg/m2, sem outras alterações. Considerando a Diretriz da Sociedade Brasileira de Diabetes, é correto afirmar que o paciente apresenta",
+      "alternativas": [
+        "exame glicemia normal, e precisa repetir glicemia de jejum anualmente.",
+        "diagnóstico de pré-diabetes.",
+        "exames normais e precisa repetir glicemia de jejum anualmente pelo seu histórico familiar.",
+        "diagnóstico de diabetes mellitus tipo 2.",
+        "diagnóstico de diabetes mellitus tipo 1."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento dos critérios diagnósticos para diabetes mellitus e pré-diabetes segundo diretrizes da Sociedade Brasileira de Diabetes.</strong></p><p>Homem de 45 anos com glicemia de jejum de 105-106mg/dl (duas vezes) e TTOG de 141mg/dl após 2 horas. Apresenta fatores de risco: histórico familiar positivo, IMC 32kg/m².</p><p><strong>Critérios diagnósticos da SBD:</strong></p><p>- Glicemia normal: <100mg/dl (jejum) e <140mg/dl (2h TTOG)</p><p>- Pré-diabetes: Glicemia jejum 100-125mg/dl OU 2h TTOG 140-199mg/dl</p><p>- Diabetes: Glicemia jejum ≥126mg/dl OU 2h TTOG ≥200mg/dl</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) INCORRETA.</strong> Glicemia não é normal (105-106mg/dl). Está na faixa de pré-diabetes.</p><p><strong>B) CORRETA.</strong> Pré-diabetes é o diagnóstico correto. Glicemia jejum 105-106mg/dl e TTOG 141mg/dl confirmam estado intermediário.</p><p><strong>C) INCORRETA.</strong> Exames não são normais. Glicemia de jejum está alterada, necessitando intervenção, não apenas repetição anual.</p><p><strong>D) INCORRETA.</strong> Não preenche critérios para diabetes. Glicemia jejum <126mg/dl e TTOG <200mg/dl.</p><p><strong>E) INCORRETA.</strong> Diabetes tipo 1 não tem relação com o caso. Presença de fatores de risco para DM2, início em adulto jovem com overweight.</p><p><strong>Veredito:</strong> Alternativa B é a resposta correta, classificando adequadamente o estado pré-diabético segundo critérios nacionais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_IntroducaoAoDiabetesMellitus",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UFPA2021R3CM",
+        "UFPA",
+        "R3CM",
+        "PA",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762730001652-19"
+    }
+  ]
+}

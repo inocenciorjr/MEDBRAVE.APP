@@ -2,11 +2,9 @@ import { Router } from 'express';
 import { MentorProfileController } from '../controllers/MentorProfileController';
 import { MentorshipServiceFactory } from '../factories';
 import { authenticate, isMentor } from '../middlewares/authMiddleware';
-import { getFirestore } from 'firebase-admin/firestore';
 
 const router = Router();
-const db = getFirestore();
-const factory = new MentorshipServiceFactory(db);
+const factory = new MentorshipServiceFactory();
 const controller = new MentorProfileController(factory);
 
 /**

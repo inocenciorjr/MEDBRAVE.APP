@@ -2,6 +2,7 @@ import {
   Flashcard,
   FlashcardStatus,
   ReviewQuality,
+  CreateFlashcardDTO,
 } from '../types/flashcard.types';
 
 /**
@@ -10,10 +11,10 @@ import {
 export interface PaginationOptions {
   page: number;
   limit: number;
-  sortBy?: string;
-  sortOrder?: 'asc' | 'desc';
-  startAfter?: string;
-  lastDocId?: string;
+  sort_by?: string;
+  sort_order?: 'asc' | 'desc';
+  start_after?: string;
+  last_doc_id?: string;
 }
 
 /**
@@ -30,29 +31,33 @@ export interface PaginatedResult<T> {
  * Filtros para busca de flashcards
  */
 export interface FlashcardFilters {
-  deckId?: string;
+  deck_id?: string;
   status?: FlashcardStatus;
   tags?: string[];
-  readyForReview?: boolean;
-  searchTerm?: string;
-  reviewedAfter?: Date;
-  reviewedBefore?: Date;
+  ready_for_review?: boolean;
+  search_term?: string;
+  reviewed_after?: Date;
+  reviewed_before?: Date;
 }
 
 /**
  * Interface para metadados de coleção
  */
 export interface CollectionMetadata {
+  id: string; // ID único da coleção
   name: string;
-  deckCount: number;
-  cardCount: number;
-  lastUpdated: string;
+  deck_count: number;
+  card_count: number;
+  updated_at: string;
+  hierarchy?: string;
   downloads?: number;
   likes?: number;
-  avgRating?: number;
-  totalCards?: number;
-  isPublic?: boolean;
-  userId?: string;
+  avg_rating?: number;
+  total_cards?: number;
+  is_public?: boolean;
+  user_id?: string;
+  owner_id?: string;
+  thumbnail_url?: string;
 }
 
 /**
@@ -63,15 +68,18 @@ export interface DeckWithCards {
   name: string;
   description?: string;
   hierarchy?: string;
-  isPublic: boolean;
-  cardCount: number;
-  lastReviewed?: string;
-  dueCards?: number;
+  is_public: boolean;
+  card_count: number;
+  last_reviewed?: string;
+  due_cards?: number;
   tags?: string[];
-  userId: string;
-  createdAt: string;
-  updatedAt: string;
+  user_id: string;
+  created_at: string;
+  updated_at: string;
+  image_url?: string;
+  status?: string;
   cards?: Flashcard[];
+  collection_name?: string;
 }
 
 /**
@@ -80,8 +88,8 @@ export interface DeckWithCards {
 export interface CollectionStats {
   likes: number;
   downloads: number;
-  avgRating: number;
-  totalRatings: number;
+  avg_rating: number;
+  total_ratings: number;
 }
 
 /**
@@ -97,86 +105,102 @@ export interface CollectionRating {
  */
 export interface ImportSession {
   id: string;
-  userId: string;
-  status: 'PENDING' | 'PARSING' | 'PROCESSING' | 'INSERTING' | 'OPTIMIZING' | 'COMPLETED' | 'ERROR';
-  progress: any; // Pode ser number ou object complexo
+  user_id: string;
+  status:
+    | 'PENDING'
+    | 'PROCESSING'
+    | 'COMPLETED'
+    | 'FAILED'
+    | 'CANCELLED';
+  progress: number;
   total: number;
-  errors?: string[];
-  metadata?: any;
-  config?: any;
-  startedAt?: string;
-  completedAt?: string;
-  estimatedDuration?: number;
-  resultDeckId?: string;
+  errors: string[];
+  metadata: any;
+  config: any;
+  started_at: string;
+  completed_at?: string;
+  estimated_duration?: number;
+  result_deck_id?: string;
 }
 
 export interface IFlashcardRepository {
   /**
+   * Retorna o cliente Supabase (para operações diretas quando necessário)
+   */
+  getSupabaseClient(): any;
+  /**
    * Cria um novo flashcard
    */
-  create(flashcard: Omit<Flashcard, 'id' | 'createdAt' | 'updatedAt'>): Promise<Flashcard>;
-  
+  create(
+    flashcard: Omit<Flashcard, 'id' | 'created_at' | 'updated_at'>,
+  ): Promise<Flashcard>;
+
   /**
    * Busca um flashcard pelo ID
    */
   findById(id: string): Promise<Flashcard | null>;
-  
+
+  /**
+   * Busca múltiplos flashcards por IDs
+   */
+  findByIds(ids: string[]): Promise<Flashcard[]>;
+
   /**
    * Atualiza um flashcard
    */
   update(id: string, data: Partial<Flashcard>): Promise<Flashcard>;
-  
+
   /**
    * Remove um flashcard
    */
   delete(id: string): Promise<void>;
-  
+
   /**
    * Lista flashcards com paginação e filtros
    */
   findByUser(
-    userId: string, 
-    filters?: FlashcardFilters, 
-    pagination?: PaginationOptions
+    user_id: string,
+    filters?: FlashcardFilters,
+    pagination?: PaginationOptions,
   ): Promise<PaginatedResult<Flashcard>>;
-  
+
   /**
    * Busca por termo de pesquisa
    */
   search(
-    query: string, 
-    userId: string, 
-    pagination?: PaginationOptions
+    query: string,
+    user_id: string,
+    pagination?: PaginationOptions,
   ): Promise<PaginatedResult<Flashcard>>;
-  
+
   /**
    * Atualiza o status de um flashcard
    */
   updateStatus(id: string, status: FlashcardStatus): Promise<Flashcard>;
-  
+
   /**
    * Registra uma revisão de flashcard e atualiza dados de SRS
    */
-  recordReview(id: string, reviewQuality: ReviewQuality): Promise<Flashcard>;
-  
+  recordReview(id: string, review_quality: ReviewQuality, reviewTimeMs?: number): Promise<Flashcard>;
+
   /**
    * Busca flashcards prontos para revisão
    */
   findDueForReview(
-    userId: string,
-    deckId?: string,
-    pagination?: PaginationOptions
+    user_id: string,
+    deck_id?: string,
+    pagination?: PaginationOptions,
   ): Promise<PaginatedResult<Flashcard>>;
-  
+
   /**
    * Busca flashcards por tags
    */
   findByTags(
-    userId: string,
+    user_id: string,
     tags: string[],
-    pagination?: PaginationOptions
+    pagination?: PaginationOptions,
   ): Promise<PaginatedResult<Flashcard>>;
-  
+
   /**
    * Alterna o status de arquivamento de um flashcard
    */
@@ -185,37 +209,88 @@ export interface IFlashcardRepository {
   /**
    * Busca metadados das coleções do usuário para carregamento lazy
    */
-  getCollectionsMetadata(userId: string, filters?: any, pagination?: PaginationOptions): Promise<CollectionMetadata[]>;
+  getCollectionsMetadata(
+    user_id: string,
+    filters?: any,
+    pagination?: PaginationOptions,
+  ): Promise<CollectionMetadata[]>;
 
   /**
-   * Busca decks de uma coleção específica
+   * Busca decks de uma coleção específica (por ID)
    */
-  getCollectionDecks(userId: string, collectionName: string): Promise<DeckWithCards[]>;
+  getCollectionDecks(
+    user_id: string,
+    collectionId: string,
+  ): Promise<DeckWithCards[]>;
+  
+
+  /**
+   * Busca uma coleção por ID
+   */
+  getCollectionById(
+    collection_id: string,
+    user_id?: string,
+  ): Promise<any>;
+  
+  /**
+   * Atualiza uma coleção
+   */
+  updateCollection(
+    collection_id: string,
+    user_id: string,
+    updates: {
+      name?: string;
+      description?: string;
+      is_public?: boolean;
+      thumbnail_url?: string;
+    },
+  ): Promise<any>;
+  
+  /**
+   * Deleta uma coleção
+   */
+  deleteCollection(
+    collection_id: string,
+    user_id: string,
+  ): Promise<void>;
 
   /**
    * Atualiza o status público de um deck
    */
-  updateDeckPublicStatus(deckId: string, userId: string, isPublic: boolean): Promise<DeckWithCards>;
+  updateDeckPublicStatus(
+    deck_id: string,
+    user_id: string,
+    is_public: boolean,
+  ): Promise<DeckWithCards>;
 
   /**
    * Exclui um deck do usuário
    */
-  deleteDeck(deckId: string, userId: string): Promise<void>;
+  deleteDeck(deck_id: string, user_id: string): Promise<void>;
 
   /**
    * Busca um deck específico com seus cards
    */
-  getDeckById(deckId: string, userId: string): Promise<DeckWithCards>;
+  getDeckById(deck_id: string, user_id: string): Promise<DeckWithCards>;
+
+  /**
+   * Verifica se o usuário pode editar o deck (deve ser o dono)
+   */
+  canEditDeck(deck_id: string, user_id: string): Promise<boolean>;
 
   /**
    * Busca todos os decks do usuário
    */
-  getAllUserDecks(userId: string, limit?: number): Promise<DeckWithCards[]>;
+  getAllUserDecks(user_id: string, limit?: number): Promise<DeckWithCards[]>;
 
   /**
    * Busca biblioteca do usuário
    */
-  getUserLibrary(userId: string, filters?: any, pagination?: PaginationOptions): Promise<CollectionMetadata[]>;
+  getUserLibrary(
+    user_id: string,
+    filters?: any,
+    pagination?: PaginationOptions,
+  ): Promise<CollectionMetadata[]>;
 
   /**
    * Busca coleção por ID
@@ -225,37 +300,37 @@ export interface IFlashcardRepository {
   /**
    * Verifica se coleção está na biblioteca do usuário
    */
-  isInUserLibrary(userId: string, collectionId: string): Promise<boolean>;
+  isInUserLibrary(user_id: string, collectionId: string): Promise<boolean>;
 
   /**
-   * Adiciona coleção à biblioteca do usuário
+   * Adiciona coleção à biblioteca do usuário (por referência, não cópia)
    */
-  addToLibrary(userId: string, collectionId: string): Promise<void>;
+  addToLibrary(user_id: string, collectionName: string): Promise<void>;
 
   /**
-   * Incrementa contador de downloads
+   * Incrementa contador de downloads (deprecated - usar collection_imports)
    */
   incrementDownloads(collectionId: string): Promise<void>;
 
   /**
    * Remove coleção da biblioteca do usuário
    */
-  removeFromLibrary(userId: string, collectionId: string): Promise<void>;
+  removeFromLibrary(user_id: string, collectionName: string): Promise<void>;
 
   /**
    * Verifica se usuário curtiu a coleção
    */
-  isCollectionLiked(userId: string, collectionId: string): Promise<boolean>;
+  isCollectionLiked(user_id: string, collectionId: string): Promise<boolean>;
 
   /**
    * Remove curtida da coleção
    */
-  unlikeCollection(userId: string, collectionId: string): Promise<void>;
+  unlikeCollection(user_id: string, collectionId: string): Promise<void>;
 
   /**
    * Adiciona curtida à coleção
    */
-  likeCollection(userId: string, collectionId: string): Promise<void>;
+  likeCollection(user_id: string, collectionId: string): Promise<void>;
 
   /**
    * Busca estatísticas da coleção
@@ -265,20 +340,127 @@ export interface IFlashcardRepository {
   /**
    * Avalia uma coleção
    */
-  rateCollection(userId: string, collectionId: string, rating: CollectionRating): Promise<void>;
+  rateCollection(
+    user_id: string,
+    collectionId: string,
+    rating: CollectionRating,
+  ): Promise<void>;
 
   /**
    * Cria sessão de importação
    */
-  createImportSession(importData: any): Promise<ImportSession>;
+  createImportSession(
+    user_id: string,
+    config: any,
+    metadata: any,
+  ): Promise<ImportSession>;
 
   /**
    * Busca sessão de importação
    */
-  getImportSession(importId: string): Promise<ImportSession | null>;
+  getImportSession(sessionId: string): Promise<ImportSession>;
 
   /**
    * Atualiza status da importação
    */
-  updateImportStatus(importId: string, update: Partial<ImportSession>): Promise<void>;
+  updateImportStatus(
+    sessionId: string,
+    status: ImportSession['status'],
+    progress?: number,
+    errors?: string[],
+    result_deck_id?: string,
+  ): Promise<ImportSession>;
+
+  /**
+   * Processa lote de importação
+   */
+  processImportBatch(
+    sessionId: string,
+    flashcards: CreateFlashcardDTO[],
+    deck_id: string,
+  ): Promise<void>;
+
+  /**
+   * Busca coleções públicas da comunidade
+   */
+  getPublicCollections(params: {
+    search?: string;
+    sortBy?: string;
+    limit: number;
+    offset: number;
+  }): Promise<{ data: CollectionMetadata[]; total: number }>;
+
+  /**
+   * Busca detalhes de uma coleção pública específica
+   */
+  getPublicCollectionDetails(collectionName: string): Promise<any | null>;
+
+  // ==================== MÉTODOS PARA COLLECTIONS COM ID ÚNICO ====================
+
+  /**
+   * Cria uma nova coleção com ID único
+   */
+  createCollection(data: {
+    id: string;
+    name: string;
+    description?: string;
+    user_id: string;
+    is_public?: boolean;
+    is_imported?: boolean;
+    thumbnail_url?: string;
+  }): Promise<any>;
+
+  /**
+   * Busca uma coleção por ID único
+   */
+  getCollectionByUniqueId(collectionId: string): Promise<any | null>;
+
+  /**
+   * Verifica se usuário tem acesso à coleção
+   */
+  canAccessCollection(collectionId: string, userId: string): Promise<boolean>;
+
+  /**
+   * Busca decks de uma coleção por ID único
+   */
+  getDecksByCollectionId(collectionId: string, userId: string): Promise<DeckWithCards[]>;
+
+  /**
+   * Adiciona coleção à biblioteca do usuário
+   */
+  addCollectionToLibrary(userId: string, collectionId: string): Promise<void>;
+
+  /**
+   * Remove coleção da biblioteca do usuário
+   */
+  removeCollectionFromLibrary(userId: string, collectionId: string): Promise<void>;
+
+  /**
+   * Verifica se coleção está na biblioteca do usuário
+   */
+  isCollectionInLibrary(userId: string, collectionId: string): Promise<boolean>;
+
+  /**
+   * Atualiza contadores de uma coleção
+   */
+  updateCollectionCounts(collectionId: string): Promise<void>;
+
+  /**
+   * Atualiza informações de uma coleção
+   */
+  updateCollection(
+    collectionId: string,
+    userId: string,
+    data: {
+      name?: string;
+      description?: string;
+      is_public?: boolean;
+      thumbnail_url?: string;
+    }
+  ): Promise<any>;
+
+  /**
+   * Deleta uma coleção e todos os seus decks e flashcards
+   */
+  deleteCollection(collectionId: string, userId: string): Promise<void>;
 }

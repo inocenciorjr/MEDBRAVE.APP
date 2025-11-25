@@ -1,4 +1,4 @@
-import { IDatabaseMigration } from './index';
+import { IDatabaseMigration } from '../supabase/SupabaseMigrationManager';
 import logger from '../../../utils/logger';
 
 /**
@@ -30,7 +30,9 @@ export const CreateIndexesMigration: IDatabaseMigration = {
     ];
 
     for (const index of requiredIndexes) {
-      logger.info(`Validating index for ${index.collection} on fields: ${index.fields.join(', ')}`);
+      logger.info(
+        `Validating index for ${index.collection} on fields: ${index.fields.join(', ')}`,
+      );
 
       // Aqui poderíamos verificar se o índice existe via API Admin do Firestore
       // Como esta é uma migração de documentação/validação, não faz alterações reais

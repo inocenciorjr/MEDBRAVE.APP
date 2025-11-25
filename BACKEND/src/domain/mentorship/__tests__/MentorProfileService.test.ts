@@ -1,71 +1,70 @@
-import { FirebaseMentorProfileService } from '../services';
-import { MentorProfile, CreateMentorProfilePayload, UpdateMentorProfilePayload } from '../types';
-import { Timestamp } from 'firebase-admin/firestore';
+import { SupabaseMentorProfileService } from '../services';
+import {
+  MentorProfile,
+  CreateMentorProfilePayload,
+  UpdateMentorProfilePayload,
+} from '../types';
 
-// Mock do Firestore
-jest.mock('firebase-admin/firestore', () => {
-  const mockTimestamp = {
-    now: jest.fn().mockReturnValue({
-      toMillis: () => Date.now(),
-    }),
-  };
+// Mock do Supabase
+jest.mock('@supabase/supabase-js', () => ({
+  createClient: jest.fn().mockReturnValue({
+    from: jest.fn().mockReturnThis(),
+    select: jest.fn().mockReturnThis(),
+    insert: jest.fn().mockReturnThis(),
+    update: jest.fn().mockReturnThis(),
+    delete: jest.fn().mockReturnThis(),
+    eq: jest.fn().mockReturnThis(),
+    neq: jest.fn().mockReturnThis(),
+    gte: jest.fn().mockReturnThis(),
+    lte: jest.fn().mockReturnThis(),
+    order: jest.fn().mockReturnThis(),
+    limit: jest.fn().mockReturnThis(),
+    range: jest.fn().mockReturnThis(),
+    single: jest.fn(),
+    or: jest.fn().mockReturnThis(),
+    ilike: jest.fn().mockReturnThis(),
+    in: jest.fn().mockReturnThis(),
+  }),
+}));
 
-  return {
-    Timestamp: mockTimestamp,
-  };
-});
+// Mock do uuid
+jest.mock('uuid', () => ({
+  v4: jest.fn().mockReturnValue('mocked-uuid'),
+}));
+
+// Configuração das variáveis de ambiente para o Supabase
+process.env.SUPABASE_URL = 'https://test.supabase.co';
+process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-key';
 
 describe('MentorProfileService', () => {
-  let service: FirebaseMentorProfileService;
-  let mockFirestore: any;
-  let mockCollection: jest.Mock;
-  let mockDoc: jest.Mock;
-  let mockGet: jest.Mock;
-  let mockSet: jest.Mock;
-  let mockUpdate: jest.Mock;
-  let mockDelete: jest.Mock;
-  let mockWhere: jest.Mock;
-  let mockOrderBy: jest.Mock;
-  let mockLimit: jest.Mock;
-  let mockOffset: jest.Mock;
+  let service: SupabaseMentorProfileService;
+  let mockSupabase: any;
 
   // Configuração inicial para os testes
   beforeEach(() => {
-    // Reset dos mocks
-    mockGet = jest.fn();
-    mockSet = jest.fn();
-    mockUpdate = jest.fn();
-    mockDelete = jest.fn();
-    mockWhere = jest.fn();
-    mockOrderBy = jest.fn();
-    mockLimit = jest.fn();
-    mockOffset = jest.fn();
-
-    // Configuração do mock do documento
-    mockDoc = jest.fn().mockReturnValue({
-      get: mockGet,
-      set: mockSet,
-      update: mockUpdate,
-      delete: mockDelete,
-    });
-
-    // Configuração do mock da collection
-    mockCollection = jest.fn().mockReturnValue({
-      doc: mockDoc,
-      where: mockWhere,
-      orderBy: mockOrderBy,
-      limit: mockLimit,
-      offset: mockOffset,
-      get: mockGet,
-    });
-
-    // Configuração do mock do Firestore
-    mockFirestore = {
-      collection: mockCollection,
+    // Configuração do mock do Supabase
+    mockSupabase = {
+      from: jest.fn().mockReturnThis(),
+      select: jest.fn().mockReturnThis(),
+      insert: jest.fn().mockReturnThis(),
+      update: jest.fn().mockReturnThis(),
+      delete: jest.fn().mockReturnThis(),
+      eq: jest.fn().mockReturnThis(),
+      neq: jest.fn().mockReturnThis(),
+      gte: jest.fn().mockReturnThis(),
+      lte: jest.fn().mockReturnThis(),
+      order: jest.fn().mockReturnThis(),
+      limit: jest.fn().mockReturnThis(),
+      range: jest.fn().mockReturnThis(),
+      single: jest.fn(),
+      or: jest.fn().mockReturnThis(),
+      ilike: jest.fn().mockReturnThis(),
+      in: jest.fn().mockReturnThis(),
     };
 
     // Injetar o mock no serviço
-    service = new FirebaseMentorProfileService(mockFirestore);
+    service = new SupabaseMentorProfileService();
+    (service as any).supabase = mockSupabase;
   });
 
   describe('createMentorProfile', () => {
@@ -76,17 +75,35 @@ describe('MentorProfileService', () => {
       const mockProfileExists = false;
 
       // Configuração dos mocks para verificação do usuário
-      mockGet.mockImplementation((path: string) => {
-        if (path === 'users/user123') {
-          return Promise.resolve({
-            exists: mockUserExists,
-            data: () => mockUserData,
-          });
+      mockSupabase.select.mockImplementation(() => {
+        if (
+          mockSupabase.from.mock.calls[
+            mockSupabase.from.mock.calls.length - 1
+          ][0] === 'users'
+        ) {
+          return {
+            eq: jest.fn().mockReturnValue({
+              single: jest.fn().mockResolvedValue({
+                data: mockUserExists ? mockUserData : null,
+                error: null,
+              }),
+            }),
+          };
         }
-        return Promise.resolve({
-          exists: mockProfileExists,
-          data: () => null,
-        });
+        return {
+          eq: jest.fn().mockReturnValue({
+            single: jest.fn().mockResolvedValue({
+              data: mockProfileExists ? {} : null,
+              error: null,
+            }),
+          }),
+        };
+      });
+
+      // Mock para inserção
+      mockSupabase.insert.mockResolvedValue({
+        data: [{ id: 'mocked-uuid' }],
+        error: null,
       });
 
       // Payload de teste
@@ -106,11 +123,9 @@ describe('MentorProfileService', () => {
       const result = await service.createMentorProfile(profileData);
 
       // Assert
-      expect(mockCollection).toHaveBeenCalledWith('users');
-      expect(mockDoc).toHaveBeenCalledWith('user123');
-      expect(mockGet).toHaveBeenCalled();
-      expect(mockCollection).toHaveBeenCalledWith('mentor_profiles');
-      expect(mockSet).toHaveBeenCalled();
+      expect(mockSupabase.from).toHaveBeenCalledWith('users');
+      expect(mockSupabase.from).toHaveBeenCalledWith('mentor_profiles');
+      expect(mockSupabase.insert).toHaveBeenCalled();
       expect(result).toMatchObject({
         userId: 'user123',
         specialties: ['Cardiologia'],
@@ -128,7 +143,14 @@ describe('MentorProfileService', () => {
 
     it('deve lançar erro se o usuário não existir', async () => {
       // Arrange
-      mockGet.mockResolvedValue({ exists: false });
+      mockSupabase.select.mockReturnValue({
+        eq: jest.fn().mockReturnValue({
+          single: jest.fn().mockResolvedValue({
+            data: null,
+            error: null,
+          }),
+        }),
+      });
 
       const profileData: CreateMentorProfilePayload = {
         userId: 'nonexistent',
@@ -136,9 +158,7 @@ describe('MentorProfileService', () => {
         biography: 'bio',
         experience: ['exp'],
         education: ['edu'],
-        availability: [
-          { days: [1], startTime: '08:00', endTime: '12:00' },
-        ],
+        availability: [{ days: [1], startTime: '08:00', endTime: '12:00' }],
       };
 
       // Act & Assert
@@ -160,9 +180,7 @@ describe('MentorProfileService', () => {
         biography: 'bio',
         experience: ['exp'],
         education: ['edu'],
-        availability: [
-          { days: [1], startTime: '08:00', endTime: '12:00' },
-        ],
+        availability: [{ days: [1], startTime: '08:00', endTime: '12:00' }],
       };
 
       // Act & Assert
@@ -188,8 +206,8 @@ describe('MentorProfileService', () => {
         ],
         rating: 4.5,
         totalSessions: 10,
-        createdAt: Timestamp.now(),
-        updatedAt: Timestamp.now(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
 
       mockGet.mockResolvedValue({
@@ -234,8 +252,8 @@ describe('MentorProfileService', () => {
         ],
         rating: 4.5,
         totalSessions: 10,
-        createdAt: Timestamp.now(),
-        updatedAt: Timestamp.now(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       };
 
       mockGet.mockImplementation(() => {
@@ -267,7 +285,9 @@ describe('MentorProfileService', () => {
       mockGet.mockResolvedValue({ exists: false });
 
       // Act
-      const result = await service.updateMentorProfile('nonexistent', { biography: 'test' });
+      const result = await service.updateMentorProfile('nonexistent', {
+        biography: 'test',
+      });
 
       // Assert
       expect(result).toBeNull();

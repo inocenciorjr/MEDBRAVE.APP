@@ -5,15 +5,14 @@ export * from './types';
 export { IQuestionService } from './interfaces/IQuestionService';
 
 // Exportar serviços que existem após refatoração
-export { FirebaseQuestionService } from './services/FirebaseQuestionService';
-export { QuestionFSRSService } from './services/QuestionFSRSService';
-export { QuestionRetentionService } from './services/QuestionRetentionService';
-export { UnifiedQuestionResponseService } from './services/UnifiedQuestionResponseService';
+// Firebase services removed - using Supabase services from infra layer
+// export { FirebaseQuestionService } from './services/FirebaseQuestionService';
+export {
+  SupabaseQuestionService,
+} from '../../infra/questions/supabase';
 
 // Exportar controladores que existem após refatoração
-export { RetentionController } from './controllers/RetentionController';
 export { UnifiedQuestionController } from './controllers/UnifiedQuestionController';
 
 // Exportar rotas que existem após refatoração
-export { default as retentionRoutes } from './routes/retentionRoutes';
 export { default as unifiedQuestionRoutes } from './routes/unifiedQuestionRoutes';

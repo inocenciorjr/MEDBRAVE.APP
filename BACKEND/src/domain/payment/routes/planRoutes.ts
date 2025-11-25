@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { PlanController } from '../controllers/PlanController';
 import { planValidators } from '../validators/planValidators';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 
 /**
  * Cria as rotas de planos
@@ -21,7 +21,12 @@ export const createPlanRoutes = (controller: PlanController): Router => {
   );
 
   // Rota para obter um plano pelo ID
-  router.get('/:planId', planValidators.getPlanById, validateRequest, controller.getPlanById);
+  router.get(
+    '/:planId',
+    planValidators.getPlanById,
+    validateRequest,
+    controller.getPlanById,
+  );
 
   // Rota para listar planos públicos ativos
   router.get('/public', controller.listPublicPlans);
@@ -57,7 +62,11 @@ export const createPlanRoutes = (controller: PlanController): Router => {
 };
 
 // Middleware para tratar erros de validação do express-validator
-function validateRequest(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
+function validateRequest(
+  req: import('express').Request,
+  res: import('express').Response,
+  next: import('express').NextFunction,
+) {
   const { validationResult } = require('express-validator');
   const errors = validationResult(req);
   if (!errors.isEmpty()) {

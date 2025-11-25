@@ -34,7 +34,10 @@ export interface IQuestionService {
    * @param id ID da questão
    * @param updateData Dados para atualização
    */
-  updateQuestion(id: string, updateData: UpdateQuestionPayload): Promise<Question | null>;
+  updateQuestion(
+    id: string,
+    updateData: UpdateQuestionPayload,
+  ): Promise<Question | null>;
 
   /**
    * Exclui uma questão (soft delete - muda status para ARCHIVED e desativa)
@@ -46,13 +49,17 @@ export interface IQuestionService {
    * Lista questões com filtros e paginação
    * @param options Opções de listagem e filtros
    */
-  listQuestions(options?: ListQuestionsOptions): Promise<PaginatedQuestionsResult>;
+  listQuestions(
+    options?: ListQuestionsOptions,
+  ): Promise<PaginatedQuestionsResult>;
 
   /**
    * Busca questões por termo de pesquisa
    * @param options Opções de busca e filtros
    */
-  searchQuestions(options: ListQuestionsOptions): Promise<PaginatedQuestionsResult>;
+  searchQuestions(
+    options: ListQuestionsOptions,
+  ): Promise<PaginatedQuestionsResult>;
 
   /**
    * Atualiza a classificação da questão
@@ -97,13 +104,13 @@ export interface IQuestionService {
 
   /**
    * Lista questões por filtros ou subfiltros
-   * @param filterIds IDs dos filtros
-   * @param subFilterIds IDs dos subfiltros
+   * @param filter_ids IDs dos filtros
+   * @param sub_filter_ids IDs dos subfiltros
    * @param options Opções adicionais de listagem
    */
   listQuestionsByFilters(
-    filterIds: string[] | null,
-    subFilterIds: string[] | null,
+    filter_ids: string[] | null,
+    sub_filter_ids: string[] | null,
     options?: ListQuestionsOptions,
   ): Promise<PaginatedQuestionsResult>;
 
@@ -121,6 +128,14 @@ export interface IQuestionService {
   getQuestionsFromList(listId: string): Promise<any[]>;
 
   /**
+   * Obtém um batch de questões de uma lista
+   * @param listId ID da lista
+   * @param offset Índice inicial
+   * @param limit Quantidade de questões
+   */
+  getQuestionsFromListBatch(listId: string, offset: number, limit: number): Promise<{ questions: any[], total: number }>;
+
+  /**
    * Conta questões com filtros
    * @param options Opções de listagem e filtros
    */
@@ -131,17 +146,32 @@ export interface IQuestionService {
    * Considera apenas filtros com category: MEDICAL_SPECIALTY
    * @param userId ID do usuário
    */
-  getUserPerformanceBySpecialty(userId: string): Promise<UserPerformanceBySpecialty>;
+  getUserPerformanceBySpecialty(
+    userId: string,
+  ): Promise<UserPerformanceBySpecialty>;
 
   /**
    * Conta questões em lote para múltiplos filtros/subfiltros
    * Otimização para reduzir número de requisições em ambientes multi-usuário
    * @param requests Array de requisições de contagem
    */
-  batchCountQuestions(requests: Array<{
-    id: string;
-    isSubFilter: boolean;
-    excludeAnuladas: boolean;
-    excludeDesatualizadas: boolean;
-  }>): Promise<Record<string, number>>;
-} 
+  batchCountQuestions(
+    requests: Array<{
+      id: string;
+      isSubFilter: boolean;
+      exclude_anuladas: boolean;
+      exclude_desatualizadas: boolean;
+    }>,
+  ): Promise<Record<string, number>>;
+
+  /**
+   * Obtém estatísticas gerais das questões
+   * @returns Estatísticas com total, publicadas, rascunhos e arquivadas
+   */
+  getQuestionStats(): Promise<{
+    total: number;
+    published: number;
+    draft: number;
+    archived: number;
+  }>;
+}

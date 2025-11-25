@@ -1,6 +1,6 @@
 /**
  * 📊 CONTROLADOR DE MONITORAMENTO
- * 
+ *
  * Expõe endpoints para visualizar estatísticas de monitoramento:
  * - GET /api/monitoring/stats - Estatísticas gerais
  * - GET /api/monitoring/requests - Requisições recentes
@@ -13,7 +13,7 @@
 
 import { Request, Response, NextFunction } from 'express';
 import { requestMonitor } from '../middleware/requestMonitor';
-import { logger } from '../utils/logger';
+import logger from '../utils/logger';
 
 export class MonitoringController {
   /**
@@ -23,34 +23,34 @@ export class MonitoringController {
   async getStatistics(req: Request, res: Response, next: NextFunction) {
     try {
       // Verificar se é admin
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver estatísticas de monitoramento.'
+          error:
+            'Acesso negado. Apenas administradores podem ver estatísticas de monitoramento.',
         });
       }
 
       const { startDate, endDate } = req.query;
-      
+
       let timeRange;
       if (startDate && endDate) {
         timeRange = {
           start: new Date(startDate as string),
-          end: new Date(endDate as string)
+          end: new Date(endDate as string),
         };
       }
 
       const statistics = requestMonitor.getStatistics(timeRange);
 
-      res.json({
+      return res.json({
         success: true,
         data: statistics,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter estatísticas de monitoramento:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -60,26 +60,25 @@ export class MonitoringController {
    */
   async getRecentRequests(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver requisições.'
+          error: 'Acesso negado. Apenas administradores podem ver requisições.',
         });
       }
 
       const limit = parseInt(req.query.limit as string) || 100;
       const requests = requestMonitor.getRecentRequests(limit);
 
-      res.json({
+      return res.json({
         success: true,
         data: requests,
         count: requests.length,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter requisições recentes:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -89,26 +88,25 @@ export class MonitoringController {
    */
   async getErrorRequests(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver erros.'
+          error: 'Acesso negado. Apenas administradores podem ver erros.',
         });
       }
 
       const limit = parseInt(req.query.limit as string) || 100;
       const errors = requestMonitor.getErrorRequests(limit);
 
-      res.json({
+      return res.json({
         success: true,
         data: errors,
         count: errors.length,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter requisições com erro:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -118,10 +116,11 @@ export class MonitoringController {
    */
   async getSlowRequests(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver requisições lentas.'
+          error:
+            'Acesso negado. Apenas administradores podem ver requisições lentas.',
         });
       }
 
@@ -129,17 +128,16 @@ export class MonitoringController {
       const limit = parseInt(req.query.limit as string) || 100;
       const slowRequests = requestMonitor.getSlowRequests(threshold, limit);
 
-      res.json({
+      return res.json({
         success: true,
         data: slowRequests,
         count: slowRequests.length,
         threshold,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter requisições lentas:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -149,10 +147,11 @@ export class MonitoringController {
    */
   async getUserRequests(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver requisições de usuários.'
+          error:
+            'Acesso negado. Apenas administradores podem ver requisições de usuários.',
         });
       }
 
@@ -160,17 +159,16 @@ export class MonitoringController {
       const limit = parseInt(req.query.limit as string) || 100;
       const userRequests = requestMonitor.getRequestsByUser(userId, limit);
 
-      res.json({
+      return res.json({
         success: true,
         data: userRequests,
         count: userRequests.length,
         userId,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter requisições do usuário:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -180,34 +178,34 @@ export class MonitoringController {
    */
   async exportReport(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem exportar relatórios.'
+          error:
+            'Acesso negado. Apenas administradores podem exportar relatórios.',
         });
       }
 
       const { format = 'json', filename } = req.body;
-      
+
       let filepath: string;
-      
+
       if (format === 'csv') {
         filepath = requestMonitor.exportStatsToCsv(filename);
       } else {
         filepath = requestMonitor.exportToFile(filename);
       }
 
-      res.json({
+      return res.json({
         success: true,
         message: 'Relatório exportado com sucesso',
         filepath,
         format,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao exportar relatório:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -217,24 +215,23 @@ export class MonitoringController {
    */
   async clearData(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem limpar dados.'
+          error: 'Acesso negado. Apenas administradores podem limpar dados.',
         });
       }
 
       requestMonitor.clearData();
 
-      res.json({
+      return res.json({
         success: true,
         message: 'Dados de monitoramento limpos com sucesso',
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao limpar dados de monitoramento:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -244,31 +241,31 @@ export class MonitoringController {
    */
   async toggleMonitoring(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem controlar o monitoramento.'
+          error:
+            'Acesso negado. Apenas administradores podem controlar o monitoramento.',
         });
       }
 
       const { enabled } = req.body;
-      
+
       if (enabled) {
         requestMonitor.enable();
       } else {
         requestMonitor.disable();
       }
 
-      res.json({
+      return res.json({
         success: true,
         message: `Monitoramento ${enabled ? 'habilitado' : 'desabilitado'} com sucesso`,
         enabled,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao alterar estado do monitoramento:', error);
-      next(error);
+      return next(error);
     }
   }
 
@@ -278,8 +275,9 @@ export class MonitoringController {
    */
   async receiveFrontendData(req: Request, res: Response, next: NextFunction) {
     try {
-      const { sessionId, userId, userRole, requests, pageViews, userActions } = req.body;
-      
+      const { sessionId, userId, userRole, requests, pageViews, userActions } =
+        req.body;
+
       // Processar requisições do frontend
       if (requests && requests.length > 0) {
         requests.forEach((request: any) => {
@@ -288,11 +286,11 @@ export class MonitoringController {
             source: 'frontend',
             sessionId,
             userId,
-            userRole
+            userRole,
           });
         });
       }
-      
+
       // Processar visualizações de página
       if (pageViews && pageViews.length > 0) {
         pageViews.forEach((pageView: any) => {
@@ -300,11 +298,11 @@ export class MonitoringController {
             ...pageView,
             sessionId,
             userId,
-            userRole
+            userRole,
           });
         });
       }
-      
+
       // Processar ações do usuário
       if (userActions && userActions.length > 0) {
         userActions.forEach((action: any) => {
@@ -312,28 +310,34 @@ export class MonitoringController {
             ...action,
             sessionId,
             userId,
-            userRole
+            userRole,
           });
         });
       }
-      
+
       // Log detalhado para debug - mostrar quais endpoints estão sendo chamados
       if (requests && requests.length > 0) {
-        const endpoints = requests.map(req => `${req.method} ${req.url}`).join(', ');
-        logger.info(`📥 [Monitoring] ${requests.length} requests: [${endpoints}]`);
+        const endpoints = requests
+          .map((r: any) => `${r.method} ${r.url}`)
+          .join(', ');
+        logger.info(
+          `📥 [Monitoring] ${requests.length} requests: [${endpoints}]`,
+        );
       }
-      
-      logger.info(`📥 [Monitoring] Dados recebidos do frontend: ${requests?.length || 0} requests, ${pageViews?.length || 0} page views, ${userActions?.length || 0} actions`);
-      
-      res.json({ 
-        success: true, 
+
+      logger.info(
+        `📥 [Monitoring] Dados recebidos do frontend: ${requests?.length || 0} requests, ${pageViews?.length || 0} page views, ${userActions?.length || 0} actions`,
+      );
+
+      res.json({
+        success: true,
         message: 'Dados recebidos com sucesso',
         processed: {
           requests: requests?.length || 0,
           pageViews: pageViews?.length || 0,
-          userActions: userActions?.length || 0
+          userActions: userActions?.length || 0,
         },
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     } catch (error: any) {
       logger.error('Erro ao processar dados do frontend:', error);
@@ -347,20 +351,20 @@ export class MonitoringController {
    */
   async getDashboardData(req: Request, res: Response, next: NextFunction) {
     try {
-      if ((req as any).user?.role !== 'ADMIN') {
+      if ((req.user?.user_role || '').toUpperCase() !== 'ADMIN') {
         return res.status(403).json({
           success: false,
-          error: 'Acesso negado. Apenas administradores podem ver o dashboard.'
+          error: 'Acesso negado. Apenas administradores podem ver o dashboard.',
         });
       }
 
       // Estatísticas dos últimos 30 minutos
       const thirtyMinutesAgo = new Date(Date.now() - 30 * 60 * 1000);
       const now = new Date();
-      
+
       const recentStats = requestMonitor.getStatistics({
         start: thirtyMinutesAgo,
-        end: now
+        end: now,
       });
 
       // Estatísticas gerais
@@ -375,7 +379,7 @@ export class MonitoringController {
       // Requisições lentas
       const slowRequests = requestMonitor.getSlowRequests(1000, 10);
 
-      res.json({
+      return res.json({
         success: true,
         data: {
           recent: recentStats,
@@ -383,14 +387,13 @@ export class MonitoringController {
           recentRequests,
           recentErrors,
           slowRequests,
-          lastUpdated: new Date().toISOString()
+          lastUpdated: new Date().toISOString(),
         },
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
-
     } catch (error: any) {
       logger.error('Erro ao obter dados do dashboard:', error);
-      next(error);
+      return next(error);
     }
   }
 }

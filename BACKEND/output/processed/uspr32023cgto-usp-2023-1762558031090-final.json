@@ -1,0 +1,646 @@
+{
+  "metadata": {
+    "examName": "USPR32023CGTO (USP 2023)",
+    "examYear": 2023,
+    "url": "source://179",
+    "totalQuestions": 20,
+    "categorizedQuestions": 20,
+    "rewrittenComments": 20,
+    "processedAt": "2025-11-07T23:27:11.090Z",
+    "jobId": "batch-1762553311316-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "eaf01253-8b9f-4e5a-ac22-24f004bc6847"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Homem de 28 anos, previamente hígido, queixa-se de dor torácica persistente, às vezes com irradiação para o ombro direito, não relacionada à respiração e com piora ao final do dia. Nega qualquer sintoma respiratório, comorbidades, alergias ou cirurgias\n prévias. Os exames clínico e especial do tórax não identificaram alterações (imagens apresentadas) Em qual compartimento mediastinal está localizada a lesão?\n\n<img src=\"https://medbrave.com.br/questions/usp-2023-r32023/qQ1.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Mediastino anterior ou pré-vascular.",
+        "Mediastino posterior ou goteira paravertebral.",
+        "Mediastino superior.",
+        "Mediastino médio ou visceral."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da USP avalia seu conhecimento de anatomia torácica, especificamente sobre os compartimentos mediastinais. O paciente jovem com dor torácica sem alterações no exame físico precisa que você identifique a localização precisa da lesão vista na tomografia.</p><p><strong>A resposta correta é B - Mediastino posterior ou goteira paravertebral.</strong> Analisando a imagem tomográfica, observamos uma lesão bem delimitada que se encontra em contato direto com a coluna vertebral, característica do mediastino posterior.</p><p>Para sistematizar o conhecimento sobre mediastino, é fundamental dominar a divisão mais aceita:</p><p><strong>Mediastino Superior:</strong> Da abertura torácica superior até o ângulo do esterno. Contém estruturas da transição cervicotorácica.</p><p><strong>Mediastino Inferior (dividido em três compartimentos):</strong><br><br><strong>Anterior:</strong> Entre a borda posterior do esterno e borda anterior do pericárdio. Contém timo e linfonodos.<br><br><strong>Médio:</strong> Entre borda anterior e posterior do pericárdio. Contém coração, grandes vasos, traqueia e carina.<br><br><strong>Posterior:</strong> Da borda posterior do pericárdio até a coluna vertebral. Contém esôfago, cadeia simpática, veia ázigos, ducto torácico e nervos paravertebrais.</p><p>A principal pegadinha é confundir a localização anatômica apenas com a radiografia. A tomografia é fundamental para determinar a posição exata, especialmente em lesões paravertebrais como esta. A dor torácica com irradiação para ombro direito sugere origem neurogênica, coerente com a localização posterior.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "Cirurgia_CirurgiaToracica_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Homem de 28 anos, previamente hígido, queixa-se de dor torácica persistente, às vezes com irradiação para o ombro direito, não relacionada à respiração e com piora ao final do dia. Nega qualquer sintoma respiratório, comorbidades, alergias ou cirurgias\n prévias. Os exames clínico e especial do tórax não identificaram alterações (imagens apresentadas) Com base no quadro clínico e radiológico, a principal hipótese diagnóstica se origina em qual tecido?\n\n<img src=\"https://medbrave.com.br/questions/usp-2023-r32023/qQ2.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Tecido nervoso.",
+        "Tecido linfático.",
+        "Tecido vascular.",
+        "Tecido tímico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão explora a correlação clínica-anatômica dos tumores mediastinais. Após ter identificado a localização posterior na questão anterior, agora você deve inferir a origem tecidual mais provável baseada na topografia e epidemiologia.</p><p><strong>A resposta correta é A - Tecido nervoso.</strong></p><p>Os tumores do mediastino posterior apresentam características epidemiológicas e anatômicas específicas que orientam o diagnóstico diferencial:</p><p><strong>Epidemiologia dos tumores de mediastino posterior:</strong> Mais de 60% são de origem neurogênica, tornando-os os mais frequentes neste compartimento.</p><p><strong>Origem anatômica:</strong> Desenvolvem-se das estruturas neurais presentes na goteira paravertebral, incluindo:<br>• Bainha dos nervos intercostais<br>• Cadeia simpática paravertebral<br>• Gânglios autonômicos<br>• Raízes nervosas paravertebrais</p><p><strong>Spectro histológico:</strong><br>• Lesões benignas (>90%): Schwannomas e neurofibromas<br>• Lesões malignas (raras em adultos): Neuroblastomas (mais em crianças)<br>• Lesões mistas: Ganglioneuromas</p><p>O padrão de dor irradiada para o ombro direito confirma a origem neurogênica, pois reflete compressão ou irritação de estruturas nervosas. A ausência de sintomas sistêmicos e a idade jovem (28 anos) são consistentes com tumores benignos de crescimento lento.</p><p>Outras opções são menos prováveis: tecido linfático (mais frequente em mediastino anterior e médio), vascular (rara localização paravertebral) e tímico (localizado exclusivamente no mediastino anterior superior).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "Cirurgia_CirurgiaToracica_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "<html><head></head><body>Homem de 28 anos, previamente hígido, queixa-se de dor torácica persistente, às vezes com irradiação para o ombro direito, não relacionada à respiração e com piora ao final do dia. Nega qualquer sintoma respiratório, comorbidades, alergias ou cirurgias\n prévias. Os exames clínico e especial do tórax não identificaram alterações (imagens apresentadas) Qual é o tratamento recomendado para essa lesão?\n\n<img src=\"https://medbrave.com.br/questions/usp-2023-r32023/qQ3.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Quimioterapia.",
+        "Radioterapia.",
+        "Embolização.",
+        "Ressecção cirúrgica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia a conduta terapêutica para tumores neurogênicos de mediastino posterior. Após correlacionar localização e origem tecidual, você deve aplicar os princípios de tratamento cirúrgico para essas lesões.</p><p><strong>A resposta correta é D - Ressecção cirúrgica.</strong></p><p>O tratamento cirúrgico é padrão-ouro para tumores neurogênicos de mediastino posterior pelos seguintes motivos:</p><p><strong>Indicações Cirúrgicas:</strong><br>• Lesões sintomáticas (dor, compressão)<br>• Crescimento progressivo<br>• Impossibilidade de exclusão diagnóstica de malignidade<br>• Prevenção de complicações (deiscência neural, transformação maligna)</p><p><strong>Vantagens da abordagem cirúrgica:</strong><br>• Permite confirmação histológica definitiva<br>• Ressecção completa com baixíssimas taxas de recidiva<br>• Risco cirúrgico aceitável em centros especializados<br>• Alívio sintomático imediato</p><p><strong>Por que outras opções estão incorretas:</strong><br>• <strong>Quimioterapia:</strong> Reservada para tumores malignos comprovados, o que não é o caso aqui<br>• <strong>Radioterapia:</strong> Evitada pela proximidade com medula espinhal e menor eficácia em tumores benignos<br>• <strong>Embolização:</strong> Indicada para tumores hipervasculares, não aplicável a schwannomas/neurofibromas</p><p>O procedimento pode incluir videotoracoscopia para lesões menores ou toracotomia para tumores mais extensos. A RM pré-operatória é valiosa para planejar a abordagem e avaliar extensão para forame vertebral.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_CirurgiaToracica_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "<html><head></head><body>Homem de 20 anos dá entrada no Pronto Atendimento com queixa de dor torácica súbita há 3 dias, que evoluiu com tosse e dispneia progressiva. Ao exame clínico, dispneico 2+/4+, redução do murmúrio vesicular e timpanismo à percussão do hemitórax direito. A radiografia de tórax do atendimento é apresentada. Caso o paciente refira ser este o terceiro episódio desta afecção, qual a abordagem recomendada?\n\n<img src=\"https://medbrave.com.br/questions/usp-2023-r32023/qQ4.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Videotoracoscopia direita para ressecção de blebs e pleurodese.",
+        "Drenagem torácica com dreno tubular calibroso (40F).",
+        "Toracotomia direita para lobectomia pulmonar.",
+        "Videotoracoscopia direita para lobectomia pulmonar."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da USP aborda o manejo do pneumotórax espontâneo recidivante, tema frequentemente cobrado em provas de residência. O caso apresenta um homem jovem com terceiro episódio, exigindo conduta definitiva.</p><p><strong>A resposta correta é A - Videotoracoscopia direita para ressecção de blebs e pleurodese.</strong></p><p>Analisando a radiografia: observamos hipertransparência completa do hemitórax esquerdo com colapso pulmonar total, caracterizando pneumotórax completo com repercussão clínica.</p><p><strong>Classificação do pneumotórax:</strong><br>• <strong>Espontâneo primário:</strong> Paciente jovem, sem pneumopatia subjacente (como neste caso)<br>• <strong>Espontâneo secundário:</strong> Associação com DPOC, fibrose, etc.<br>• <strong>Catamenial:</strong> Relacionado ao ciclo menstrual<br>• <strong>Traumático/iatrogênico:</strong> Pós-procedimento</p><p><strong>Epidemiologia da recidiva:</strong><br>• 1º episódio: 30-50% de recidiva<br>• 2º episódio: 80% de recidiva<br>• 3º episódio: Quase 100% de recidiva</p><p><strong>Indicações cirúrgicas imediatas (mesmo no 1º episódio):</strong><br>• Pneumotórax hipertensivo<br>• Bilateral no primeiro episódio<br>• Profissionais de risco (pilotos, mergulhadores)<br>• Falha de drenagem por >5-7 dias</p><p><strong>Procedimento cirúrgico:</strong> Videotoracoscopia com ressecção das blebs apicais e pleurodese (adesão pleuras visceral e parietal por abrasão mecânica ou talco). Previne recidivas futuras ao eliminar o espaço pleural.</p><p><strong>Conduta imediata vs definitiva:</strong> Na emergência, drenagem pleural (PigTail 14F) seria necessária devido ao pneumotórax completo, mas a questão questiona a abordagem definitiva para prevenir nova recidiva.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_CirurgiaToracica_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Qual alternativa apresenta informações corretas sobre as recentes incidência e mortalidade do câncer de pulmão no Brasil?",
+      "alternativas": [
+        "É o mais mortal em homens e mulheres.",
+        "É o segundo mais comum e o mais mortal entre mulheres.",
+        "É o segundo mais comum e o segundo mais mortal entre homens.",
+        "É o terceiro mais comum entre os homens e o quarto mais comum entre as mulheres."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre epidemiologia oncológica brasileira atual, especificamente dados de incidência e mortalidade do câncer de pulmão. É fundamental conhecer as estatísticas nacionais mais recentes do INCA/MS 2025.</p><p><strong>A resposta correta é D - É o terceiro mais comum entre os homens e o quarto mais comum entre as mulheres.</strong></p><p><strong>Dados epidemiológicos atuais (INCA/MS 2025):</strong></p><p><strong>Entre homens (incidência):</strong><br>1º - Próstata<br>2º - Cólon e reto<br>3º - Pulmão<br>4º - Estômago</p><p><strong>Entre mulheres (incidência):</strong><br>1º - Mama<br>2º - Cólon e reto<br>3º - Colo do útero<br>4º - Pulmão<br>5º - Glândula tireoide</p><p><strong>Sobre mortalidade:</strong> O câncer de pulmão é o mais mortal entre homens, superando próstata e colorretal. Entre mulheres, mama e colo do útero mantêm mortalidade significativa, mas pulmão também é altamente letal devido ao diagnóstico tardio.</p><p><strong>Por que as outras alternativas estão incorretas:</strong><br>• <strong>A:</strong> Não é o mais mortal entre mulheres<br>• <strong>B:</strong> Não é o segundo mais comum entre mulheres<br>• <strong>C:</strong> É o terceiro (não segundo) mais comum entre homens</p><p><strong>Contexto epidemiológico:</strong> O aumento da incidência de câncer de pulmão em mulheres brasileiras reflete mudanças no perfil tabágico. A mortalidade permanece elevada devido ao diagnóstico em estágios avançados, highlighting a importância da prevenção primária e detecção precoce.</p><p>Esta questão demanda conhecimento atualizado das estatísticas brasileiras, não apenas dados globais. O INCA atualiza anualmente esses dados, fundamentais para a prática oncológica nacional.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedicinaPreventivaEpidemiologi"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Qual alternativa apresenta diagnósticos diferenciais de um nódulo pulmonar subsólido?",
+      "alternativas": [
+        "Adenocarcinoma do pulmão, granuloma e hamartoma.",
+        "Granuloma, linfonodo intrapulmonar e pneumonia redonda.",
+        "Adenocarcinoma do pulmão, doenças linfoproliferativas e pneumonia em organização.",
+        "Adenocarcinoma do pulmão, nódulo reumatoide e pneumonia em organização."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da USP avalia o conhecimento sobre nódulos pulmonares subsólidos e seus principais diagnósticos diferenciais. Vamos analisar sistematicamente cada alternativa.</p><p><strong>Alternativa A:</strong> Adenocarcinoma do pulmão, granuloma e hamartoma</p><p>O hamartoma é um nódulo sólido (não subsólido), sendo composto por cartilagem, tecido gorduroso e osso em proporções variáveis. Logo, esta alternativa está incorreta.</p><p><strong>Alternativa B:</strong> Granuloma, linfonodo intrapulmonar e pneumonia redonda</p><p>Todas essas lesões podem apresentar características de subsólido, mas requerem análise mais detalhada dos componentes. O granuloma pode ser sólido ou ter componente subsólido em casos específicos, o linfonodo intrapulmonar pode apresentar características similares, e a pneumonia redonda é classicamente subsólida.</p><p><strong>Alternativa C:</strong> Adenocarcinoma do pulmão, doenças linfoproliferativas e pneumonia em organização</p><p>Esta é a alternativa correta. O adenocarcinoma in situ (antigo carcinoma bronquioloalveolar) é o exemplo clássico de nódulo subsólido puro. As doenças linfoproliferativas, como o linfoma primário do pulmão, podem apresentar padrões subsólidos. A pneumonia em organização pode formar massas que aparecem como nódulos subsólidos.</p><p><strong>Alternativa D:</strong> Adenocarcinoma do pulmão, nódulo reumatoide e pneumonia em organização</p><p>Embora o adenocarcinoma e a pneumonia em organização sejam diagnósticos diferenciais corretos, o nódulo reumatoide é tipicamente sólido, não subsólido.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>C</strong>, pois contempla os principais diagnósticos diferenciais para nódulos pulmonares subsólidos. O adenocarcinoma (especialmente in situ), as doenças linfoproliferativas e a pneumonia em organização são as principais causas a serem consideradas neste contexto.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia_PneumoniasbroncopneumoniasBcpN"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Em relação a um paciente com hemoptise maciça, é correto afirmar:",
+      "alternativas": [
+        "a prioridade é a reposição volêmica, sendo o choque hemorrágico a principal causa deóbito nesta situação.",
+        "a broncoscopia rígida não deve ser empregada por não permitir uma adequadaretirada dos coágulos.",
+        "se houver risco de asfixia, é necessária a entubação orotraqueal.",
+        "A ressecção pulmonar de emergência é a melhor opção para o controle dosangramento."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da USP aborda uma situação de emergência respiratória: a hemoptise maciça. O conhecimento correto da sequência de prioridades é fundamental para o manejo adequado.</p><p><strong>Alternativa A:</strong> A reposição volêmica como prioridade está incorreta. Embora a perda sanguínea seja preocupante, o principal risco não é o choque hipovolêmico, mas sim a asfixia. O volume de sangue necessário para causar choque hipovolêmico é muito maior que o que pode causar morte por inundação das vias aéreas.</p><p><strong>Alternativa B:</strong> A broncoscopia rígida é, na verdade, o procedimento de escolha em casos selecionados, permitindo aspiração de grandes coágulos e controle de sangramento. Esta afirmação está incorreta.</p><p><strong>Alternativa C:</strong> Esta é a resposta correta. Em pacientes com risco iminente de asfixia, a intubação orotraqueal é mandatória para proteger a via aérea e permitir ventilação adequada. O procedimento não deve ser postergado.</p><p><strong>Alternativa D:</strong> A ressecção pulmonar de emergência nunca é a primeira opção, pois não se conhece inicialmente a origem exata do sangramento. Métodos menos invasivos, como embolização arterial ou broncoscopia com controle local, são preferíveis inicialmente.</p><p><strong>Ponto-chave:</strong> Na hemoptise maciça, seguimos a regra do ABC (via aérea, respiração, circulação), sendo a proteção da via aérea a primeira prioridade.</p><p><strong>Veredito final:</strong> A alternativa <strong>C</strong> é a correta, pois a entubação orotraqueal em casos de risco de asfixia é fundamental para prevenir morte por inundação da via aérea.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Cardiologia",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Assinale a alternativa correta quanto às características bioquímicas do líquido pleural no quilotórax.",
+      "alternativas": [
+        "DHL abaixo de 2/3 do valor normal do plasma.",
+        "Triglicérides acima de 110 mg/dL.",
+        "pH abaixo de 7,2.",
+        "Colesterol acima de 200 mg/dL."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da USP avalia o conhecimento sobre as características bioquímicas específicas do quilotórax, um tipo de derrame pleural com características distintas devido ao seu conteúdo rico em lipídios.</p><p><strong>Alternativa A:</strong> A desidrogenase lática (DHL) no quilotórax geralmente está elevada, frequentemente acima de 2/3 do valor normal do plasma. Logo, esta alternativa está incorreta.</p><p><strong>Alternativa B:</strong> Esta é a resposta correta. No quilotórax, os triglicérides estão caracteristicamente elevados, geralmente acima de 110 mg/dL. Valores acima de 200 mg/dL são praticamente diagnósticos. Este é o parâmetro mais confiável para o diagnóstico.</p><p><strong>Alternativa C:</strong> O pH do quilotórax é geralmente normal ou ligeiramente alcalino, não ácido. Valores abaixo de 7,2 são típicos de empiemas ou derrames paraneumônicos complicados.</p><p><strong>Alternativa D:</strong> O colesterol no quilotórax é geralmente baixo ou normal, não elevado. Níveis elevados de colesterol são mais característicos do quilotórax (contrariamente ao que se poderia pensar) ou derrames colesterolos.</p><p><strong>Diagnóstico diferencial:</strong> O diagnóstico de quilotórax baseia-se em três critérios: triglicérides > 110 mg/dL, presença de quilomícrons ao exame microscópico com luz polarizada, e relação colesterol/triglicérides < 1.</p><p><strong>Veredito final:</strong> A alternativa <strong>B</strong> é a correta, pois triglicérides acima de 110 mg/dL é a principal característica bioquímica do quilotórax, sendo este o parâmetro mais utilizado para o diagnóstico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Todos os pacientes considerados para o transplante pulmonar devem preencher os seguintes critérios:",
+      "alternativas": [
+        "Alto (>50%) risco de morte devido à doença pulmonar em dois anos, caso otransplante não seja realizado; alta (>80%) chance de sobrevida em noventa dias após otransplante; e alta (>80%) chance de sobrevida após 5 anos de transplante, considerando se que tenha uma boa função do enxerto.",
+        "Elevado (>70%) risco de morte devido à doença pulmonar em dois anos, caso otransplante não seja realizado; moderada (>50%) chance de sobrevida em noventa diasapós o transplante; e alta (>80%) chance de sobrevida após 5 anos de transplante,considerando-se que tenha uma boa função do enxerto.",
+        "Alto (>50%) risco de morte devido à doença pulmonar em dois anos, caso otransplante não seja realizado; moderada (>50%) chance de sobrevida em noventa diasapós o transplante; e moderada (>50%) chance de sobrevida após 5 anos de transplante,considerando- se que tenha uma boa função do enxerto.",
+        "Elevado (>70%) risco de morte devido à doença pulmonar em dois anos, caso otransplante não seja realizado; alta (>80%) chance de sobrevida em noventa dias após otransplante; e moderada (>50%) chance de sobrevida após 5 anos de transplante,considerando-se que tenha uma boa função do enxerto."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da USP aborda os critérios fundamentais para seleção de candidatos ao transplante pulmonar. É um conhecimento essencial para o manejo de pacientes com pneumopatias avançadas.</p><p><strong>Critérios de seleção:</strong> O transplante pulmonar é indicado quando o risco de morte sem o procedimento supera o risco da cirurgia, considerando tanto a sobrevida precoce quanto tardia.</p><p><strong>Alternativa A:</strong> Esta é a resposta correta. Os critérios incluem: risco de morte > 50% em 2 anos sem transplante, chance de sobrevida > 80-90% em 90 dias pós-transplante, e chance de sobrevida > 80% em 5 anos com boa função do enxerto.</p><p><strong>Alternativa B:</strong> Esta alternativa está incorreta porque estabelece 70% como risco mínimo de morte, quando o critério é 50%. Também erra ao estabelecer apenas 50% de chance de sobrevida em 90 dias, quando deve ser > 80%.</p><p><strong>Alternativa C:</strong> Esta alternativa erra ao estabelecer critérios mais baixos para sobrevida: apenas 50% de chance de sobrevida em 90 dias e 50% em 5 anos, quando os critérios verdadeiros são > 80% para ambos os períodos.</p><p><strong>Alternativa D:</strong> Esta alternativa combina critérios incorretos: 70% de risco de morte (deveria ser 50%) e 50% de chance de sobrevida em 5 anos (deveria ser > 80%).</p><p><strong>Pegadinha comum:</strong> A banca pode variar entre 80% e 90% para sobrevida em 90 dias, mas os outros critérios (> 50% risco de morte e > 80% sobrevida em 5 anos) são固定的.</p><p><strong>Veredito final:</strong> A alternativa <strong>A</strong> é a correta, estabelecendo os critérios clássicos de seleção: > 50% risco de morte, > 80-90% sobrevida em 90 dias, e > 80% sobrevida em 5 anos.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_CancerDePulmao"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "As principais indicações para a traqueostomia percutânea são:",
+      "alternativas": [
+        "entubação prolongada, acesso à via aérea de emergência e falha de extubação.",
+        "entubação prolongada, falha de extubação e proteção de via aérea no TCE.",
+        "entubação prolongada, acesso à via aérea de emergência e proteção de via aérea no TCE.",
+        "acesso à via aérea de emergência, falha de extubação e proteção de via aérea no TCE"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da USP avalia o conhecimento sobre as indicações da traqueostomia percutânea, procedimento cada vez mais utilizado na prática clínica devido às suas vantagens sobre a técnica cirúrgica tradicional.</p><p><strong>Princípio fundamental:</strong> A traqueostomia percutânea NÃO é um procedimento de emergência. Para acesso cirúrgico de emergência à via aérea, utiliza-se a cricotireoidostomia.</p><p><strong>Alternativa A:</strong> Esta alternativa está incorreta porque inclui \"acesso à via aérea de emergência\", que não é indicação de traqueostomia. A cricotireoidostomia é o procedimento de escolha em emergências.</p><p><strong>Alternativa B:</strong> Esta é a resposta correta. As três indicações principais são: entubação prolongada (geralmente > 14 dias), falha de extubação (por debilidade muscular ou necessidade de reabilitação), e proteção de via aérea no TCE (para evitar lesão laríngea por intubação prolongada).</p><p><strong>Alternativa C:</strong> Esta alternativa está incorreta por incluir \"acesso à via aérea de emergência\", que não é indicação de traqueostomia.</p><p><strong>Alternativa D:</strong> Esta alternativa também está incorreta por incluir \"acesso à via aérea de emergência\" e por não incluir a \"entubação prolongada\".</p><p><strong>Outras indicações relevantes:</strong> Além das mencionadas na resposta correta, incluem-se: edema de vias aéreas (queimaduras, infecções, anafilaxia), obstrução de vias aéreas superiores, e como procedimento complementar a cirurgias de cabeça e pescoço.</p><p><strong>Vantagem da técnica percutânea:</strong> Pode ser realizada à beira do leito, sem necessidade de centro cirúrgico, reduzindo custos e riscos.</p><p><strong>Veredito final:</strong> A alternativa <strong>B</strong> é a correta, contemplando as três principais indicações: entubação prolongada, falha de extubação e proteção de via aérea no TCE.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Neurologia",
+        "Cirurgia_Trauma"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "O limite máximo considerado para ressecção e anastomose da traqueia por estenose traqueal em um paciente adulto é:",
+      "alternativas": [
+        "2 cm, independentemente do tamanho da traqueia.",
+        "6 cm, independentemente do tamanho da traqueia.",
+        "20 a 30% do comprimento total da traqueia.",
+        "40 a 50% do comprimento total da traqueia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Resposta correta: D - 40 a 50% do comprimento total da traqueia</strong></p><p>Esta questão aborda um dos conceitos fundamentais em cirurgia traqueal: os limites seguros para ressecção. O princípio base é simples: a anastomose deve ficar completamente livre de tensão para cicatrizar adequadamente.</p><p>Vamos entender por que a resposta D está correta. A traqueia adulta tem comprimento variável entre 8-13 cm, dependendo do sexo e estatura. O limite de 40-50% representa até 4-6 cm em mulheres e 5-6,5 cm em homens - uma quantidade considerável, mas segura quando bem executada.</p><p>Por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A (2 cm):</strong> Muito conservadora. Embora 2 cm seja seguro, este limite seria desnecessariamente restritivo e limitaria demais as indicações cirúrgicas.</p><p><strong>Alternativa B (6 cm):</strong> Incorreta por ser uma medida fixa independente do tamanho do paciente. Uma ressecção de 6 cm em uma mulher com traqueia de 8 cm representaria 75% do órgão - claramente além do seguro.</p><p><strong>Alternativa C (20-30%):</strong> Muito conservadora. Embora seja tecnicamente possível ressecar 20-30%, este limite subestima a capacidade de ressecção segura da traqueia.</p><p>Lembre-se: em cirurgia torácica, a percentagem relativa ao tamanho do órgão é mais importante que medidas absolutas em centímetros.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Sobre as endopróteses de traqueia, é correto afirmar:",
+      "alternativas": [
+        "somente são indicadas para estenoses malignas.",
+        "as endopróteses de silicone não deveriam ser usadas devido ao alto grau de migração.",
+        "os modelos mais comuns são de silicone rígido ou metálicas autoexpansíveis.",
+        "as endopróteses metálicas somente são utilizadas no pós-operatório de pacientes jásubmetidos à ressecção e à anastomose traqueal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Resposta correta: C - os modelos mais comuns são de silicone rígido ou metálicas autoexpansíveis</strong></p><p>Esta questão avalia seu conhecimento sobre as modalidades de endopróteses traqueais disponíveis na prática clínica. As endopróteses são dispositivos essenciais para manter a patência da via aérea em pacientes com estenoses ou fistulas.</p><p>A alternativa C está correta porque representa exatamente as duas principais categorias de endopróteses utilizadas atualmente: as de silicone (geralmente rígidas) e as metálicas autoexpansíveis (SEMS - Self-Expandable Metal Stent).</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Falsa. As endopróteses são utilizadas tanto em estenoses malignas quanto benignas, embora haja preferência por evitar corpos estranhos em doenças benignas quando possível.</p><p><strong>Alternativa B:</strong> Falsa. Embora a migração seja uma complicação das próteses de silicone, elas continuam sendo amplamente utilizadas pelo fato de serem menos traumáticas para a mucosa e mais facilmente removíveis quando necessário.</p><p><strong>Alternativa D:</strong> Falsa. As endopróteses metálicas são utilizadas principalmente em estenoses malignas inoperáveis, não especificamente no pós-operatório de ressecção-anastomose. Na verdade, evita-se o uso de próteses no pós-operatório de anastomose devido ao risco de lesar a mucosa em cicatrização.</p><p>É importante entender que a escolha do tipo de endoprótese depende da etiologia, localização e características do paciente.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "A fístula traqueoesofágica é uma condição clínica de elevada gravidade. Assinale a alternativa correta quanto à fístula traqueoesofágica.",
+      "alternativas": [
+        "O planejamento terapêutico requer avaliação nutricional.",
+        "A presença ou ausência de estenose traqueal não muda a técnica operatóriapreconizada.",
+        "A oclusão da fístula por aplicação de próteses autoexpansíveis está contraindicada pelorisco de aumento do orifício.",
+        "A endoscopia digestiva não deve ser realizada quando há suspeita de fistulatraqueoesofágica, devido ao risco de insuficiência respiratória."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Resposta correta: A - O planejamento terapêutico requer avaliação nutricional</strong></p><p>Esta questão aborda um aspecto fundamental no manejo da fístula traqueoesofágica: a necessidade de abordagem multidisciplinar com foco na condição nutricional do paciente.</p><p>A alternativa A está correta porque pacientes com fístula traqueoesofágica frequentemente desenvolvem desnutrição devido à impossibilidade de se alimentar adequadamente, além do estado catabólico relacionado à doença de base (geralmente neoplásica). A avaliação nutricional é mandatória antes de qualquer intervenção cirúrgica.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa B:</strong> Falsa. A presença de estenose traqueal associada pode modificar completamente a estratégia cirúrgica, pois idealmente ambas as patologias devem ser tratadas na mesma operação para evitar múltiplas intervenções.</p><p><strong>Alternativa C:</strong> Falsa. Na verdade, as endopróteses autoexpansíveis são uma opção terapêutica valiosa para pacientes inoperáveis, sendo colocadas preferencialmente no esôfago para evitar contaminação contínua da via aérea.</p><p><strong>Alternativa D:</strong> Falsa. A endoscopia digestiva alta é fundamental para o diagnóstico e planejamento cirúrgico da fístula traqueoesofágica. O risco de insuficiência respiratória não contraindica o procedimento quando realizado adequadamente.</p><p>Lembre-se: a fístula traqueoesofágica é uma condição grave que requer abordagem multidisciplinar, sendo a avaliação nutricional apenas o primeiro passo de um processo complexo.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Gastroenterologia",
+        "Cirurgia_CirurgiaToracica_FistulaTraqueoesofagica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Durante a avaliação de massas de mediastino anterior, é correto afirmar:",
+      "alternativas": [
+        "as massas maiores de 5 cm com suspeita clínica de tumor germinativo, quandocursarem com elevação de betaHCG, DHL e alfafetoproteína, devem ser necessariamentebiopsiadas por cirurgia.",
+        "as lesões menores de 5 cm com limites bem definidos, sem suspeita de tumorgerminativo, podem ir diretamente para ressecção completa, sem a necessidade debiópsia prévia.",
+        "a ressecção deve ser indicada sem a necessidade de biópsia, independentemente dotamanho, desde que a lesão tenha limites bem definidos na tomografia de tórax comcontrataste.",
+        "caso a lesão seja inferior a 5 cm, a ressecção sem biópsia prévia é a melhor conduta,mesmo que a ressonância sugira invasão de estruturas adjacentes."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Resposta correta: B - as lesões menores de 5 cm com limites bem definidos, sem suspeita de tumor germinativo, podem ir diretamente para ressecção completa, sem a necessidade de biópsia prévia</strong></p><p>Esta questão testa seu conhecimento sobre a conduta em massas de mediastino anterior. O princípio geral é balancear a necessidade de diagnóstico histológico versus o risco de atraso terapêutico e disseminção tumoral.</p><p>A alternativa B está correta porque em lesões pequenas (<5 cm), bem delimitadas, sem sinais de invasão e sem características sugestivas de tumores germinativos, a probabilidade de ser um timoma é alta, e a ressecção primária sem biópsia está indicada.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Falsa. Massas suspeitas de tumor germinativo com marcadores tumorais elevados devem ser biopsiadas, mas não necessariamente por cirurgia. A biópsia transtorácica guiada por tomografia é suficiente e menos invasiva.</p><p><strong>Alternativa C:</strong> Falsa. O tamanho não é o único fator. Lesões grandes, mesmo com limites definidos, podem requerer biópsia prévia se houver suspeita de linfoma ou tumor germinativo.</p><p><strong>Alternativa D:</strong> Falsa. Mesmo lesões pequenas devem ter sua ressecção reavaliada se houver evidência de invasão de estruturas adjacentes em exames de imagem.</p><p>Para massesas de mediastino anterior, use a regra: <5cm + bem delimitada + sem sintomas sistêmicos = ressecção direta. Lesões maiores ou com sinais de agressividade = biópsia primeiro.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "Cirurgia_CirurgiaToracica_MassasMediastinais"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Sobre a miastenia gravis, é correto afirmar:",
+      "alternativas": [
+        "a timectomia somente está indicada para pacientes com miastenia que tenhamevidência radiológica de timoma.",
+        "10 a 15% dos pacientes com miastenia apresentam timoma associado.",
+        "na presença de timoma, o tratamento cirúrgico deve ser necessariamente realizado poresternotomia.",
+        "dentre as vias de acesso para a timectomia sem timoma, a cirurgia robótica pareceestar associada a piores resultados quando comparada a outras vias minimamenteinvasivas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Resposta correta: B - 10 a 15% dos pacientes com miastenia apresentam timoma associado</strong></p><p>Esta questão aborda a relação entre miastenia gravis e timoma, um clássico em cirurgia torácica. A miastenia gravis é uma doença autoimune caracterizada por fraqueza muscular devido ao bloqueio dos receptores de acetilcolina na placa motora.</p><p>A alternativa B está correta porque estabelece a prevalência de timoma em pacientes com miastenia gravis. É importante notar a inversão: enquanto 30% dos pacientes com timoma desenvolvem miastenia, apenas 10-15% dos pacientes com miastenia têm timoma.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> Falsa. A timectomia tem indicação em pacientes com miastenia sem timoma, especialmente em pacientes jovens (<50 anos), com anticorpos anti-AChR positivos e com menos de 5 anos de sintomas, pois melhora a qualidade de vida e reduz o uso de corticoides.</p><p><strong>Alternativa C:</strong> Falsa. A ressecção de timoma pode ser realizada por diferentes abordagens, incluindo videotoracoscopia e cirurgia robótica, não sendo necessária a esternotomia em todos os casos.</p><p><strong>Alternativa D:</strong> Falsa. Na verdade, a cirurgia robótica para timectomia sem timoma apresenta resultados similares ou superiores às outras abordagens minimamente invasivas.</p><p>Mnemônico útil: 30-10-15. 30% dos timomas têm miastenia, 10-15% dos miastênicos têm timoma.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica",
+        "ClinicaMedica_Neurologia",
+        "Cirurgia_CirurgiaToracica_Timectomia",
+        "ClinicaMedica_Neurologia_MiasteniaGravis"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Em relação aos derrames pericárdicos, assinale a alternativa correta.",
+      "alternativas": [
+        "Para derrames volumosos, a pericardiocentese não apresenta nenhuma vantagem emser guiada pelo ultrassom, pois não reduz o risco nem facilita o procedimento.",
+        "A pericardiotomia subxifoidea não permite a realização de biópsia, por isso nunca érealizada em derrames que precisam de esclarecimento diagnóstico.",
+        "A pericardiectomia total por esternotomia é um procedimento de baixamorbimortalidade, sendo indicado principalmente para evitar a recidiva de derramesneoplásicos.",
+        "A janela pleuropericárdica consiste na comunicação entre os espaços pericárdico epleural com o intuito de reduzir a chance de recidiva."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da USP 2023 avalia conhecimentos sobre condutas terapêuticas em derrames pericárdicos, um tema importante na cirurgia torácica.</p><p><strong>A resposta correta é D - a janela pleuropericárdica.</strong> Este procedimento estabelece comunicação entre os espaços pericárdico e pleural, criando uma via de drenagem contínua que previne o acúmulo de líquido e reduz significativamente as chances de recidiva.</p><p>Vamos analisar as outras alternativas: A alternativa A está incorreta - a pericardiocentese guiada por ultrassom reduz substancialmente os riscos de perfuração cardíaca e facilita o procedimento, sendo atualmente o padrão ouro. B está errada - a pericardiotomia subxifoidea permite biópsia e é frequentemente realizada justamente quando há necessidade de esclarecimento diagnóstico. C apresenta informação incorreta - a pericardiectomia total tem alta morbimortalidade e é reservada para casos refratários, não sendo primeira escolha para derrames neoplásicos.</p><p>Esta questão destaca a importância de conhecer as diferentes abordagens cirúrgicas para derrames pericárdicos e suas indicações específicas.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Em relação à simpatectomia torácica e à hiperidrose, assinale a alternativa correta.",
+      "alternativas": [
+        "A hiperidrose compensatória é uma complicação rara e somente ocorre em pacientesque foram operados de forma errônea com o uso de clipes de titânio.",
+        "O tratamento com toxina botulínica tem como principal desvantagem ser definitivo eestar associado ao aparecimento de hiperidrose compensatória.",
+        "A simpatectomia torácica é 100% eficaz no tratamento da hiperidrose plantar, maspouco efetiva no tratamento da hiperidrose axilar.",
+        "O nível de secção da cadeia simpática deve variar conforme o local de acometimentodo suor."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão explora aspectos da cirurgia para hiperidrose, testando conhecimento sobre técnicas cirúrgicas e complicações.</p><p><strong>A alternativa correta é D.</strong> O nível de secção da cadeia simpática deve ser individualizado conforme a região anatômica acometida pela sudorese excessiva, já que cada gânglio simpático inerva áreas específicas do corpo.</p><p>Para entender a hiperidrose: esta condição resulta de superprodução de suor além das necessidades termorreguladoras, commonly affecting mãos, axilas, pés e face. A simpatectomia torácica atua secionando gânglios simpáticos específicos, reduzindo o estímulo adrenérgico responsável pela sudorese.</p><p>Analisando as incorretas: A alternativa A está errada - a hiperidrose compensatória é comum (até 60% dos casos) e independe do tipo de procedimento. B está incorreta - a toxina botulínica tem duração temporária (6 meses) e baixo risco de hiperidrose compensatória. C apresenta informação falsa - a cirurgia é mais eficaz para hiperidrose axilar que plantar.</p><p>Vale lembrar: a técnica com clipes permite reversão se necessário, e a toxina botulínica não é definitiva, sendo opção para casos selecionados.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Em relação às doenças infecciosas pulmonares, assinale a alternativa correta.",
+      "alternativas": [
+        "A drenagem percutânea do abcesso pulmonar é um tratamento adequado para osabcessos persistentes com falha do tratamento clinico.",
+        "A cirurgia está sempre indicada no abcesso pulmonar caso ele seja maior que 3 cm etenha parede espessa.",
+        "Em todos os casos, a neoplasia pulmonar que evolui com necrose pode serdiferenciada de um abcesso pulmonar não neoplásico através da tomografia de tórax.",
+        "O alcoolismo, o uso de drogas ilícitas e as alterações de deglutição passaram, após oadvento da antibioticoterapia, a não ser considerados fatores de risco para o surgimentodo abscesso pulmonar."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da USP 2023 aborda condutas terapêuticas em abscessos pulmonares, tema fundamental na cirurgia torácica e infectologia.</p><p><strong>A resposta correta é A - drenagem percutânea para abscessos persistentes com falha do tratamento clínico.</strong> Esta abordagem é hoje considerada padrão ouro para abscessos que não respondem ao tratamento medicamentoso, oferecendo boa eficácia com menor morbimortalidade comparado à cirurgia aberta.</p><p>Analisando as alternativas incorretas: B está errada - o tamanho e características da parede não são indicações absolutas para cirurgia; muitos abscessos respondem ao tratamento clínico ou percutâneo. C está incorreta - a diferenciação entre abscesso neoplásico e não-neoplásico pode ser desafiadora mesmo com tomografia, sendo necessária confirmação histológica em muitos casos. D apresenta informação falsa - mesmo com antibioticoterapia, alcoolismo, uso de drogas e alterações de deglutição continuam sendo importantes fatores de risco para abscessos pulmonares.</p><p>Esta questão destaca a importância de conhecer as indicações adequadas para intervenção cirúrgica versus tratamento conservador em infecções pulmonares.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia",
+        "ClinicaMedica_Pneumologia",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Em relação às doenças congênitas pulmonares, assinale a alternativa correta.",
+      "alternativas": [
+        "A hipoplasia pulmonar é caracterizada pela hiperinsuflação de um lobo ou de umpulmão devido ao aprisionamento aéreo.",
+        "O enfisema lobar congênito é caraterizado pela presença de um tecido pulmonar deaspecto glandular e pode ser dividido em tipo I (macrocísto), Tipo II (microcísto) e Tipo III(lesão sólida).",
+        "O sequestro pulmonar é caracterizado pela presença de um suprimento arterial que seorigina na circulação sistêmica e dirige-se para um tecido pulmonar não funcionante.",
+        "A malformação adenomatoide cística é caraterizada pela redução tanto do número dealvéolos quanto da geração de vias respiratórias."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda malformações pulmonares congênitas, exigindo conhecimento detalhado sobre essas alterações raras mas importantes.</p><p><strong>A alternativa correta é C - sequestro pulmonar.</strong> Esta malformação caracteriza-se pela presença de suprimento arterial sistêmico (geralmente da aorta) direcionado para tecido pulmonar não funcional, representando 6% das malformações pulmonares congênitas.</p><p>Conceitos-chave sobre sequestro pulmonar: é uma malformação vascular-brônquica onde parte do pulmão permanece desconectada do parênquima normal. Recebe sangue já oxigenado da circulação sistêmica, não contribuindo para hematose - por isso o nome \"sequestro\". Divide-se em intra-lobar (mais comum, lobo inferior esquerdo) e extra-lobar (totalmente isolado da pleura). O tratamento é cirúrgico devido ao risco de infecção recorrente e hemoptise.</p><p>As outras alternativas estão incorretas: A confunde hipoplasia (desenvolvimento incompleto) com hiperinsuflação. B descreve malformação adenomatoide cística ao invés de enfisema lobar. D inverte as características da hipoplasia com as da MAC.</p><p>Esta questão demonstra a importância de conhecer as diferenças entre essas malformações raras.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "Pediatria_PneumologiaPediatrica",
+        "Cirurgia_CirurgiaToracica"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Quais resultados da análise do líquido pleural sugerem derrame pleural complicado?",
+      "alternativas": [
+        "Proteína pleural/proteína plasmática > 0,5; DHL pleural/DHL plasmático > 0,6; e DHLpleural > 2/3 do valor normal no plasma.",
+        "pH < 7,2; glicose < 40 mg/dL; e proteína pleural/proteína plasmática > 0,5.",
+        "pH < 7,2; glicose < 40 mg/dL; e DHL > 1000 U/L.",
+        "pH < 7,2; glicose > 40 mg/dL; e DHL > 1000 U/L."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da USP 2023 avalia conhecimento sobre critérios laboratoriais para identificar derrames pleurais complicados, tema essencial na medicina intensiva e pneumologia.</p><p><strong>A resposta correta é C - pH < 7,2; glicose < 40 mg/dL; e DHL > 1000 U/L.</strong> Estes parâmetros indicam processo inflamatório/infeccioso ativo no espaço pleural que requer drenagem urgente.</p><p>O raciocínio clínico: derrames complicados характериizam-se por processo inflamatório intenso com metabolismo celular elevado, resultando em baixo pH (acidose local), consumo de glicose pelas bactérias e células inflamatórias, e liberação massiva de DHL pelas células lesadas.</p><p>Analisando as alternativas incorretas: A e B incluem relação proteína pleural/plasmática, que é mais útil para classificar transudato vs exsudato, não complicação. D está errada ao indicar glicose > 40 mg/dL, pois derrames complicateds cursam com hipoglicopenia.</p><p>Estes critérios auxiliam na decisão entre observação versus drenagem pleural em estágios iniciais do derrame.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural"
+      ],
+      "tags": [
+        "USPR32023CGTO",
+        "USP",
+        "R3CG",
+        "SP",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762557898206-19"
+    }
+  ]
+}

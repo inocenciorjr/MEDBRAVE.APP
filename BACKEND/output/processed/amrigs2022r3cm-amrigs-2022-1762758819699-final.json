@@ -1,0 +1,1001 @@
+{
+  "metadata": {
+    "examName": "AMRIGS2022R3CM (AMRIGS 2022)",
+    "examYear": 2022,
+    "url": "source://603",
+    "totalQuestions": 30,
+    "categorizedQuestions": 30,
+    "rewrittenComments": 30,
+    "processedAt": "2025-11-10T07:13:39.699Z",
+    "jobId": "batch-1762745089163-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "363f3f98-2d2c-4bdf-9d3c-80d6595f2f11"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Sobre hipercalemia, analise as assertivas abaixo: I. Ingestão crônica e excessiva de alimentos ricos em potássio pouco interfere nos seus níveis séricos em pacientes com a função renal preservada. II. Na leucemia linfocítica crônica, leucocitose expressiva é causa de valores falsamente elevados do potássio sérico. III. Hipercalemia secundária à acidose respiratória é comum e, quanto mais grave for a acidemia, mais altos serão os níveis séricos de potássio. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da AMRIGS 2022 avalia conhecimentos fundamentais sobre hipercalemia, abordando três aspectos específicos: ingestão de potássio em rins normais, pseudohipercalemia em leucemias e relação entre acidose respiratória e potássio sérico.</p><p><strong>A resposta correta é A - Apenas I e II.</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>I. Ingestão crônica de alimentos ricos em potássio em função renal preservada:</strong><br>CORRETA. Em pacientes com função renal normal, os néfrons mantêm eficiente homeostase do potássio. O rim excretará o excesso através do túbulo distal, mantendo os níveis séricos normais mesmo com ingestão aumentada.</p><p><strong>II. Leucemia linfocítica crônica e pseudohipercalemia:</strong><br>CORRETA. Na leucemia com contagem muito alta de leucócitos (>100.000/mm³), pode ocorrer liberação de potássio intracelular durante a coleta, centrifugação ou armazenamento do sangue, resultando em valores falsamente elevados. Este é um exemplo clássico de pseudohipercalemia laboratorial.</p><p><strong>III. Hipercalemia na acidose respiratória:</strong><br>INCORRETA. Embora a acidose respiratória possa causar pequenas elevações no potássio sérico devido ao deslocamento de K+ do intracelular para o extracelular (troca por H+), esta elevação é muito menos pronunciada que na acidose metabólica. A hipercalemia significativa é mais característica da acidose metabólica, não da respiratória.</p><p><strong>Veredito final:</strong> A alternativa A está correta, pois as assertivas I e II são verdadeiras, enquanto a III é falsa.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoPotassio",
+        "ClinicaMedica_Nefrologia_Hipercalemia"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Homem, 75 anos, Diabetes Mellitus tipo 2, em uso de metformina, interna por pneumonia. Apresenta hemoglobina glicada de 12,4%, coletada na última semana. Para o manejo da hiperglicemia, na internação hospitalar, a conduta mais correta é:",
+      "alternativas": [
+        "Manter metformina, iniciar insulina NPH e regular em doses fixas.",
+        "Suspender metformina e iniciar insulina regular conforme esquema de glicemia capilar.",
+        "Suspender metformina e iniciar insulina NPH e regular em doses fixas, com esquema de resgate.",
+        "Manter metformina, iniciar glibenclamida e avaliar controle glicêmico antes de prescrever insulina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS aborda um cenário clínico muito frequente: o controle glicêmico em paciente diabético hospitalizado com infecção. O foco está na transição de hipoglicemiantes orais para insulina durante a internação.</p><p><strong>A resposta correta é C - Suspender metformina e iniciar insulina NPH e regular em doses fixas, com esquema de resgate.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Manter metformina + insulina NPH em doses fixas:</strong><br>PARCIALMENTE CORRETA a parte da insulina, mas INCORRETA ao manter metformina durante internação com infecção. Metformina deve ser suspensa em situações de estresse, hipoxemia ou risco de comprometimento renal (comum em infecções).</p><p><strong>B) Suspender metformina + insulina regular conforme glicemia capilar:</strong><br>ESTRUTURA GERAL CORRETA (suspensão da metformina), mas INCORRETA ao indicar apenas insulina regular em esquema de correção. Em internação, principalmente em idosos, há benefício em combinar insulina basal (NPH) com de ação rápida para melhor controle.</p><p><strong>C) Suspender metformina + insulina NPH/regular em doses fixas + resgate:</strong><br>CORRETA. Suspende metformina por segurança, usa esquema basal-bolus com NPH (basal) e regular (bolus) em doses fixas, mais insulina de resgate para hiperglicemia. Este é o padrão atual para manejo hospitalar.</p><p><strong>D) Manter metformina + glibenclamida:</strong><br>INCORRETA. Além de manter metformina inappropriately, glibenclamida é sulfonilureia de longa ação com risco de hipoglicemia em idosos e durante jejum. Não é primeira escolha em hospital.</p><p><strong>Contextualização:</strong> Com HbA1c de 12,4%, este paciente tem controle glicêmico muito ruim, justificando insulinoterapia intensificada durante a internação.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_HiperglicemiaNoPacienteHospita",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Homem de 53 anos procura atendimento por hipertensão arterial de diagnóstico recente, associada a paroxismos de cefaleia holocraniana, palpitações e sudorese facial. Sobre a principal hipótese diagnóstica, é correto afirmar que:",
+      "alternativas": [
+        "A maioria dos tumores tem comportamento maligno.",
+        "Mais da metade dos casos tem lesão extra-adrenal.",
+        "Apresentação bilateral é infrequente nas formas esporádicas.",
+        "As formas esporádicas são mais comuns em pacientes pediátricos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora o conhecimento sobre feocromocitoma, um tumor de células cromafins conhecido pela tríade clínica clássica que este paciente apresenta: hipertensão arterial paroxística, cefaleia holocraniana, palpitações e sudorese facial.</p><p><strong>A resposta correta é C - Apresentação bilateral é infrequente nas formas esporádicas.</strong></p><p>Vamos analisar as alternativas sobre feocromocitoma:</p><p><strong>A) A maioria dos tumores tem comportamento maligno:</strong><br>INCORRETA. Cerca de 85-90% dos feocromocitomas são benignos. A malignidade ocorre em apenas 10-15% dos casos, sendo mais comum em tumores extra-adrenais.</p><p><strong>B) Mais da metade dos casos tem lesão extra-adrenal:</strong><br>INCORRETA. A grande maioria (85-90%) é adrenal. Feocromocitomas extra-adrenais (paragangliomas) representam apenas 10-15% dos casos.</p><p><strong>C) Apresentação bilateral é infrequente nas formas esporádicas:</strong><br>CORRETA. Nas formas esporádicas (não-sindrômicas), o feocromocitoma é unilateral em >95% dos casos. A bilateralidade é característica das formas familiares/sindrômicas (como MEN2, neurofibromatose, doença de von Hippel-Lindau).</p><p><strong>D) As formas esporádicas são mais comuns em pacientes pediátricos:</strong><br>INCORRETA. As formas esporádicas são mais comuns em ADULTOS (pico 40-50 anos). Em pacientes pediátricos, predomina as formas familiares/sindrômicas.</p><p><strong>Dica para memorização:</strong> Lembre-se que feocromocitomas podem ser lembrados por \"3P\": Produção de catecolaminas, Paroxismos hipertensivos, Parcialmente (85-90%) benignos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia_Adrenal_Feocromocitoma"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Mulher de 35 anos procura atendimento por adinamia, cabelos fracos e quebradiços, frio excessivo, déficit de memória e amenorreia há 1 ano. Sem usar contraceptivos hormonais. Não mantém relações sexuais frequentes. Relata parto vaginal há 1 ano com muito sangramento e hipotensão, necessitando receber transfusão sanguínea. Não conseguiu amamentar o bebê. Sobre a principal hipótese diagnóstica, espera-se encontrar:",
+      "alternativas": [
+        "T4 livre baixo e TSH normal ou baixo.",
+        "Prolactina elevada.",
+        "Cortisol baixo e ACTH elevado.",
+        "LH baixo e FSH elevado."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da AMRIGS avalia o conhecimento sobre hipopituitarismo, especificamente na forma de insuficiência hipofisária anterior pós-parto. O histórico clínico sugere strongly Síndrome de Sheehan.</p><p><strong>A resposta correta é A - T4 livre baixo e TSH normal ou baixo.</strong></p><p>Analisando o caso: Mulher de 35 anos com sintomas de hipotireoidismo (adinamia, cabelos fracos, frio excessivo, déficit de memória, amenorreia) após parto complicado com hemorragia maciça e hipotensão, sem lactação posterior. Este é o quadro clássico de necrose hipofisária pós-parto.</p><p>Vamos analisar as alternativas laboratoriais:</p><p><strong>A) T4 livre baixo e TSH normal ou baixo:</strong><br>CORRETA. No hipopituitarismo, há insuficiência secundária de TSH hipotalâmico-hipofisário, resultando em TSH baixo/normal com T4 livre baixo. Diferencia-se do hipotireoidismo primário (TSH elevado).</p><p><strong>B) Prolactina elevada:</strong><br>INCORRETA. Na Síndrome de Sheehan, a prolactina geralmente está baixa ou normal, não elevada. Hiperprolactinemia está mais associada a prolactinomas ou drogas.</p><p><strong>C) Cortisol baixo e ACTH elevado:</strong><br>INCORRETA. No hipopituitarismo, tanto cortisol quanto ACTH estão baixos (insuficiência secundária). Em insuficiência primária das suprarrenais, ACTH estaria elevado.</p><p><strong>D) LH baixo e FSH elevado:</strong><br>INCORRETA. No hipopituitarismo, LH e FSH estão ambos baixos (hipogonadismo hipogonadotropo). FSH elevado sugere insuficiência ovariana primária.</p><p><strong>Contexto fisiopatológico:</strong> A necrose hipofisária por choque hipovolêmico na hemorragia pós-parto leva à perda de múltiplos hormônios hipofisários, justificando o quadro clínico completo.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia_Hipofise_Hipopituitarismo",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_Obstetricia"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Sobre o manejo da pancreatite aguda, é correto afirmar que:",
+      "alternativas": [
+        "Jejum deve ser mantido por pelo menos 48h do inicio do quadro, independentemente da evolução clínica.",
+        "Opiáceos são contraindicados pelo aumento da pressão no Esfíncter de Oddi.",
+        "Antibioticoterapia empírica está indicada apenas para os casos em que há evidência de infecção sobreposta.",
+        "Colecistectomia está indicada precocemente em casos de pancreatite grave ou com necrose retroperitoneal."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS aborda o manejo baseado em evidências da pancreatite aguda, um dos temas mais frequentes em provas de residência médica. O foco está nas condutas principais durante o tratamento.</p><p><strong>A resposta correta é C - Antibioticoterapia empírica está indicada apenas para os casos em que há evidência de infecção sobreposta.</strong></p><p>Vamos analisar cada alternativa sobre o manejo da pancreatite aguda:</p><p><strong>A) Jejum por pelo menos 48h independentemente da evolução:</strong><br>INCORRETA. O jejum prolongado não é mais recomendado. As diretrizes atuais sugerem reintrodução precoce da alimentação oral (24-48h) se houver melhora da dor e ausência de náuseas/vômitos. Jejum prolongado aumenta risco de complicações.</p><p><strong>B) Opiáceos contraindicados por aumento da pressão no esfíncter de Oddi:</strong><br>INCORRETA. Esta era uma crença antiga, mas estudos modernos demonstraram que opiáceos (morfina, fentanil) não causam aumento clinicamente significativo da pressão do esfíncter. São frequentemente usados para controle da dor.</p><p><strong>C) Antibioticoterapia apenas com evidência de infecção:</strong><br>CORRETA. A profilaxia antibiótica em pancreatite aguda sem infecção documentada não reduz complicações ou mortalidade e pode aumentar resistência bacteriana. Antibióticos só devem ser iniciados se houver evidência clínica/radiológica de infecção (febre, coleção infectada, sepse).</p><p><strong>D) Colecistectomia precoce em casos graves ou com necrose:</strong><br>INCORRETA. Em pancreatite aguda biliária, a colecistectomia deve ser realizada durante a mesma internação, mas APÓS a resolução do processo inflamatório agudo (geralmente após 4-6 semanas), não precocemente durante a fase aguda.</p><p><strong>Atualizações importantes:</strong> O tratamento moderno da pancreatite aguda enfatiza suporte nutricional precoce, controle da dor e abordagem escalonada para colecistectomia em casos biliares.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Gastroenterologia_Pancreas_PancreatiteAguda",
+        "ClinicaMedica_Gastroenterologia_Pancreas_PancreatiteAguda_Tratamento"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "São características do Delirium, EXCETO:",
+      "alternativas": [
+        "Evolução flutuante.",
+        "Atenção reduzida.",
+        "Instalação lenta.",
+        "Pensamento desorganizado."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>QUESTÃO 1 - DELIRIUM: IDENTIFICANDO CARACTERÍSTICAS INCONSISTENTES</strong></p><p>Esta questão da banca AMRIGS 2022 avalia seu conhecimento sobre as características clínicas fundamentais do Delirium, especificamente capacidade de reconhecer qual característica NÃO se enquadra no perfil típico desta síndrome neuropsiquiátrica.</p><p><strong>RESPOSTA CORRETA: C - Instalação lenta</strong></p><p>A instalação lenta é a característica que NÃO pertence ao Delirium. Esta síndrome se caracteriza por <strong>instalação aguda</strong> (horas a dias), sendo exatamente esse início rápido um dos critérios diagnósticos essenciais que diferencia o Delirium de outras condições mentais como demência.</p><p>Vamos analisar as características <em>reais</em> do Delirium:</p><p><strong>A) Evolução flutuante:</strong> CORRETA - Os sintomas variam significativamente ao longo do dia, com períodos de melhora e piora.</p><p><strong>B) Atenção reduzida:</strong> CORRETA - É a característica central e obrigatória para o diagnóstico. O comprometimento atencional é tão fundamental que sua presença distingue Delirium de outros quadros mentais.</p><p><strong>C) Instalação lenta:</strong> INCORRETA - Como mencionado, o Delirium tem início agudo, não lento ou insidioso.</p><p><strong>D) Pensamento desorganizado:</strong> CORRETA - Alteração cognitiva frequente, com incoerências e comprometimento do raciocínio lógico sequencial.</p><p>Mnemônico para lembrar: <strong>\"ATENÇÃO AGUDA, PENSAMENTO ORGANIZADO\"</strong> - onde atenção e instalação aguda são características obrigatórias.</p><p>Em resumo, o Delirium é uma síndrome aguda, potencialmente reversível, com curso flutuante e comprometimento atencional predominante.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_PsicopatologiaEExameDoEstadoMe"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Cefaleia de leve a moderada intensidade, bilateral ou holocraniana, não pulsátil, sem outros sintomas associados. Eventualmente pode ser acompanhada de foto ou fonofobia. Raramente associa náuseas. Não piora com exercícios físico e geralmente não limita as atividades usuais do indivíduo. Essa descrição é de qual tipo de cefaleia primária?",
+      "alternativas": [
+        "Enxaqueca sem aura.",
+        "Enxaqueca com aura.",
+        "Tensional.",
+        "Em salvas."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>QUESTÃO 2 - CEFALEIA TIPO TENSÃO: PADRÃO CLÍNICO CARACTERÍSTICO</strong></p><p>Esta questão aborda o diagnóstico diferencial das cefaleias primárias, especificamente testando seu conhecimento sobre o padrão clínico característico da cefaleia tensional versus outros tipos primários.</p><p><strong>RESPOSTA CORRETA: C - Tensional</strong></p><p>A descrição apresentada corresponde perfeitamente às características clássicas da <strong>cefaleia tipo tensão</strong>. Vamos analisar por que as outras alternativas não se aplicam:</p><p><strong>A) Enxaqueca sem aura:</strong> INCORRETA - A enxaqueca caracteriza-se por cefaleia unilateral, pulsátil, de intensidade moderada a forte, que <em>piora com atividade física</em> e frequentemente acompanha-se de náuseas/vômitos.</p><p><strong>B) Enxaqueca com aura:</strong> INCORRETA - Além das características da enxaqueca sem aura, apresenta sintomas neurológicos transitórios (aura) que precedem ou acompanham a cefaleia.</p><p><strong>C) Tensional:</strong> CORRETA - A descrição é típica: bilateral/holocraniana, não pulsátil, intensidade leve a moderada, <em>não piora com exercícios</em>, geralmente sem náuseas (apenas raramente), pode ter fotofobia/fonofobia leve.</p><p><strong>D) Em salvas:</strong> INCORRETA - Cefaleia em salvas é caracterizada por dor unilateral intensa, periódica, que aparece em \"salvas\" ou agrupamentos, frequentemente com sintomas autonômicos (lacrimejamento, congestão nasal).</p><p>Chave diagnóstica para provas: <strong>\"TENSÃO = TUDO LEVE E BILATERAL\"</strong> - intensidade leve, localização bilateral, sem limitação de atividades.</p><p>Lembre-se: o exame físico é normal na cefaleia tensional, mas pode haver sensibilidade na musculatura pericraniana ou cervical posterior.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia_Cefaleias_CefaleiasPrimarias"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Sobre Tromboembolismo Pulmonar (TEP), analise as assertivas abaixo: I. Tabagismo, neoplasias malignas e obesidade são fatores de risco para TEP. II. A tríade que associa dispneia, dor torácica pleurítica e hemoptise ocorre na maioria dos casos. III. O escore de Wells define a probabilidade pré-teste de realmente ser TEP. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>QUESTÃO 3 - TROMBOEMBOLISMO PULMONAR: ANÁLISE DE ASSERTIVAS DIAGNÓSTICAS</strong></p><p>Esta questão avalia conhecimento sobre fatores de risco, apresentação clínica e ferramentas de estratificação para Tromboembolismo Pulmonar (TEP), competindo com três assertivas que abordam aspectos fundamentais desta condição.</p><p><strong>RESPOSTA CORRETA: B - Apenas I e III</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>I. Tabagismo, neoplasias malignas e obesidade são fatores de risco para TEP.</strong> - <strong>CORRETA</strong></p><p>Estes são fatores de risco consagrados para TEP:</p><p>• <strong>Tabagismo:</strong> causa disfunção endotelial e hipercoagulabilidade</p><p>• <strong>Neoplasias malignas:</strong> aumentam o risco de trombose por múltiplos mecanismos (cachêxia, inflamação, compressão)</p><p>• <strong>Obesidade:</strong> promove estase venosa e inflamação sistêmica</p><p>Outros fatores clássicos incluem: trombofilias, imobilização prolongada, uso de anticoncepcional, cirurgia recente.</p><p><strong>II. A tríade que associa dispneia, dor torácica pleurítica e hemoptise ocorre na maioria dos casos.</strong> - <strong>INCORRETA</strong></p><p>Esta tríade é классическа para TEP, mas <em>não ocorre na maioria dos casos</em>. Estudos mostram que apenas 20-30% dos pacientes apresentam todos os três sintomas. A apresentação mais comum é dispneia isolada ou associada a outros sintomas variáveis.</p><p><strong>III. O escore de Wells define a probabilidade pré-teste de realmente ser TEP.</strong> - <strong>CORRETA</strong></p><p>O escore de Wells é uma ferramenta de estratificação clínica que classifica a probabilidade pré-teste de TEP em baixa, intermediária ou alta, baseando-se em critérios clínicos, históricos e epidemiológicos. É fundamental para orientar a investigação diagnóstica.</p><p>Portanto, apenas as assertivas I e III estão corretas, tornando a alternativa B a resposta adequada.</p><p>Lembre-se: a apresentação clínica do TEP é frequentemente <em>atípica</em>, e o índice de alta suspicion clínica é fundamental para o diagnóstico.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessoSaudedoenca"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Em relação à infecção por SARS-CoV2 (Covid-19), é correto afirmar que:",
+      "alternativas": [
+        "Livedo reticular, lesões perniose-like e acrocianose são achados dermatológicos da Covid-19.",
+        "Incidência de diarreia não é maior em comparação a outras infecções virais.",
+        "Há lesão renal direta pelo vírus, causando hematúria e espoliação eletrolítica.",
+        "Linfopenia, leucopenia e plaquetopenia são encontrados, sem ter relação com a gravidade do caso."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>QUESTÃO 4 - COVID-19: MANIFESTAÇÕES CLÍNICAS MULTISSISTÊMICAS</strong></p><p>Esta questão aborda o conhecimento sobre manifestações clínicas diversas da COVID-19, incluindo aspectos dermatológicos, gastrointestinais, renais e hematológicos, testando a compreensão das múltiplas formas de apresentação desta doença viral.</p><p><strong>RESPOSTA CORRETA: A - Livedo reticular, lesões perniose-like e acrocianose são achados dermatológicos da Covid-19</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Achados dermatológicos da COVID-19:</strong> <strong>CORRETA</strong></p><p>Estas manifestações cutâneas são well documentadas na literatura:</p><p>• <strong>Livedo reticular:</strong> padrão de rede arroxeada na pele, relacionado a distúrbios vasculares</p><p>• <strong>Lesões perniose-like:</strong> lesões similares a frieiras, especialmente em toes (chamadas de \"COVID toes\")</p><p>• <strong>Acrocianose:</strong> coloração azulada das extremidades por má perfusão</p><p>Estas manifestations são particularly comuns em pacientes jovens e podem ser a única apresentação da doença.</p><p><strong>B) Incidência de diarreia:</strong> <strong>INCORRETA</strong></p><p>A diarreia é significativamente <em>mais comum</em> na COVID-19 comparado a outras infecções virais respiratórias, ocorrendo em aproximadamente 10-20% dos casos, podendo ser o sintoma inicial em alguns pacientes.</p><p><strong>C) Lesão renal direta:</strong> <strong>INCORRETA</strong></p><p>Embora a disfunção renal seja comum na COVID-19, especialmente em casos graves, <em>não há evidência de lesão viral direta</em> aos rins. A insuficiência renal é principalmente secundária a hipóxia, inflamação sistêmica ou uso de medicamentos.</p><p><strong>D) Alterações hematológicas:</strong> <strong>INCORRETA</strong></p><p>Linfopenia, leucopenia e plaquetopenia são <em>fortemente correlacionadas</em> com a gravidade da doença. Estas alterações são biomarcadores de pior prognóstico e refletem a resposta inflamatória e imunológica à infecção.</p><p>Esta questão evidencia a natureza multissistêmica da COVID-19 e a importância de reconhecer suas manifestações cutâneas como indicadores diagnósticos importantes.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_LesoesElementares",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Sobre a anemia falciforme, analise as assertivas a seguir: I. A anemia falciforme causa lesão endotelial e estado inflamatório crônico dos vasos. II. O quadro clínico geralmente começa na puberdade. III. A frequência de complicações agudas aumenta a morbidade, mas não interfere na mortalidade da doença. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>QUESTÃO 5 - ANEMIA FALCIFORME: FISIOPATOLOGIA E COMPLICAÇÕES</strong></p><p>Esta questão avalia conhecimento sobre anemia falciforme, especificamente abordando aspectos fisiopatológicos, apresentação clínica e impacto das complicações agudas na morbimortalidade desta doença hereditária.</p><p><strong>RESPOSTA CORRETA: A - Apenas I</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>I. A anemia falciforme causa lesão endotelial e estado inflamatório crônico dos vasos.</strong> - <strong>CORRETA</strong></p><p>A falcização causa <strong>hemólise crônica</strong> e interação com o endotélio vascular, resultando em:</p><p>• Lesão endotelial direta pela rigidez dos eritrócitos falcizados</p><p>• Inflamação vascular crônica com aumento de citocinas pró-inflamatórias</p><p>• Disfunção endotelial com redução do óxido nítrico</p><p>• Vasocclusão crônica em múltiplos territórios</p><p>Esta é a base fisiopatológica fundamental da doença.</p><p><strong>II. O quadro clínico geralmente começa na puberdade.</strong> - <strong>INCORRETA</strong></p><p>O quadro clínico da anemia falciforme <em>geralmente se manifesta após os 6 meses de idade</em>, quando há declínio da hemoglobina fetal (HbF). A apresentação pode incluir crises vaso-oclusivas, síndrome torácica aguda, sequestração esplênica. A puberdade pode associada a complicações específicas, mas não marca o início típico da doença.</p><p><strong>III. A frequência de complicações agudas aumenta a morbidade, mas não interfere na mortalidade da doença.</strong> - <strong>INCORRETA</strong></p><p>Esta afirmativa é <em>completamente incorreta</em>. As complicações agudas (crises vaso-oclusivas, síndrome torácica aguda, acidente vascular cerebral, sequestração esplênica, priapismo) são as <strong>principais causas de mortalidade</strong> na anemia falciforme, especialmente em crianças e adultos jovens.</p><p>Portanto, apenas a assertiva I está correta, tornando a alternativa A a resposta adequada.</p><p>Mnemônico: <strong>\"FALCIFORME = FALHA ENDOTELIAL\"</strong> - a lesão endotelial é o pilares fisiopatológico da doença.</p><p>Esta questão destaca a importância de compreender que a anemia falciforme é fundamentalmente uma <em>doença vascular</em>, não apenas hematológica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemoglobinopatias",
+        "ClinicaMedica_Pediatria",
+        "ClinicaMedica_Pediatria_HematologiaPediatrica"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Paciente do interior do Rio Grande do Sul com relato de mordedura de cobra, com intensa dor e edema no local da lesão, evoluindo com gengivorragia e epistaxe. O acidente ofídico mais provável é:",
+      "alternativas": [
+        "Botrópico.",
+        "Crotálico.",
+        "Laquético.",
+        "Elapídico."
+      ],
+      "correta": -1,
+      "professor_comment": "<p> QUESTÃO ANULADA PELA BANCA EXAMINADORA</p><p>Esta questão foi anulada porque apresenta múltiplas alternativas tecnicamente corretas segundo o conhecimento médico atual sobre acidentes ofídicos.</p><p>A sintomatologia descrita (dor e edema intensos no local da mordedura, gengivorragia e epistaxe) é consistente com envenenamento botrópico, mas também pode ser observada em outros tipos de acidentes.</p><p><strong>Alternativa A (Botrópico):</strong> Correta, pois o sinal de gulfão (edema, dor local e coagulopatia hemorrágica) é altamente característico das serpentes do gênero Bothrops. A gengivorragia e epistaxe indicam distúrbio da coagulação típico dos botropídeos.</p><p><strong>Alternativa B (Crotálico):</strong> Parcialmente correta, pois embora as crotalinas causem principalmente miastenia e mioglobinúria, podem apresentar alterações da coagulação em estágios avançados.</p><p><strong>Alternativa C (Laquético):</strong> Incorreto, pois as laquéticas (jararaca) causam principalmente edema local e dor, mas sem as características hemorrágicas descritas.</p><p><strong>Alternativa D (Elapídico):</strong> Incorreto, pois as elapídicas (corais) causan neurotoxicidade precoce sem alterações hemorrágicas significativas.</p><p>Por apresentar ambiguidade na distinção entre as causas dos sintomas, a questão foi anulada pela banca.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos_AcidenteOfidico"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Relacione a Coluna 1 à Coluna 2, associando os medicamentos usados no tratamento da tuberculose aos seus respectivos efeitos adversos. Coluna 1; 1. Etambutol; 2. Etionamida; 3. Isoniazida; 4. Pirazinamida. Coluna 2; ( ) Sialorreia e alterações olfatórias. ( ) Neurite óptica e prurido. ( ) Trombocitopenia e agranulocitose. ( ) Hiperuricemia e hepatotoxicidade. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+      "alternativas": [
+        "1 - 2 - 3 - 4.",
+        "2 - 1 - 3 - 4.",
+        "3 - 1 - 4 - 2.",
+        "3 - 2 - 4 - 1."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca AMRIGS 2022 avalia seu conhecimento sobre os efeitos adversos dos medicamentos usados no tratamento da tuberculose, um tema clássico em provas de Residência Médica.</p><p><strong>Competência avaliada:</strong> Reconhecimento das toxicidades específicas de cada droga tuberculostática para manejo adequado e monitoramento dos pacientes.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Resposta correta: B (2-1-3-4)</strong></p><p><strong>Associações corretas:</strong></p><p>• <strong>Etionamida (2) - Sialorreia e alterações olfatórias:</strong> Efeito anti-colinérgico que causa hipersalivação e distorção do olfato, efeitos característicos desta droga.</p><p>• <strong>Etambutol (1) - Neurite óptica e prurido:</strong> Efeito colateral mais importante é a neurite óptica, que pode ser reversível com a suspensão. O prurido também pode ocorrer.</p><p>• <strong>Isoniazida (3) - Trombocitopenia e agranulocitose:</strong> Toxicidade hematológica rara mas grave, que requer monitoramento hematológico regular.</p><p>• <strong>Pirazinamida (4) - Hiperuricemia e hepatotoxicidade:</strong> Efeitos dose-dependentes: aumenta o ácido úrico (risco de gota) e pode causar hepatite medicamentosa.</p><p><strong>Por que as outras alternativas estão erradas:</strong></p><p>A alternativa A (1-2-3-4) confunde etambutol com etionamida e suas respectivas toxicidades. A alternativa C e D invertem a ordem das associações incorretas.</p><p><strong>Dica de estudo:</strong> Lembre-se de que o etambutol é o único tuberculostático que causa neurite óptica, enquanto a isoniazida é conhecida principalmente por sua hepatotoxicidade e neuropatia periférica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Infectologia_TuberculoseTb_TratamentoDaTuberculose",
+        "ClinicaMedica_Infectologia_TuberculoseTb_MedicamentosAntituberculose"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Paciente com história de três doses de vacina antitetânica, sendo a última há mais de 10 anos, procura atendimento após lesão profunda e extensa em máquina agrícola. Qual esquema profilático para tétano está indicado?",
+      "alternativas": [
+        "Vacina antitetânica apenas.",
+        "Imunoglobulina antitetânica apenas.",
+        "Vacina e imunoglobulina antitetânicas.",
+        "Vacina e imunoglobulina antitetânicas não são necessárias."
+      ],
+      "correta": -1,
+      "professor_comment": "<p> QUESTÃO ANULADA PELA BANCA EXAMINADORA</p><p>Esta questão foi anulada porque apresenta múltiplas alternativas tecnicamente corretas segundo o Protocolo do Ministério da Saúde (2024) para profilaxia de tétano.</p><p>Patient: 3 doses de vacina antitetânica, última há mais de 10 anos, lesão profunda e extensa em máquina agrícola.</p><p><strong>Alternativa A (Vacina antitetânica apenas):</strong> Correta para indivíduos com esquema básico completo, mas que necessitam reforço.</p><p><strong>Alternativa B (Imunoglobulina antitetânica apenas):</strong> Correta para feridos não vacinados adequadamente ou com esquema incompleto.</p><p><strong>Alternativa C (Vacina e imunoglobulina antitetânicas):</strong> Correta segundo diretrizes do MS 2024 para ferimentos graves em pacientes com esquema básico completo, mas sem reforço há mais de 5 anos.</p><p>Segundo o Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde (2024), todos os três esquemas são aceitáveis dependendo da interpretação das diretrizes específicas. A ferida profunda e extensa, somada ao tempo superior a 10 anos desde a última dose, poderia justificar tanto a opção C (más frequente) quanto outras alternativas.</p><p>Por apresentar múltiplas respostas tecnicamente corretas conforme diferentes interpretações das diretrizes, a questão foi anulada.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "ClinicaMedica_Infectologia_Vacinas_Antitetanico",
+        "ClinicaMedica_Infectologia_Vacinas_Antitetanico_ProphilaxiaDoTetano"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "São achados típicos da pneumocistose em pacientes vivendo com HIV, EXCETO:",
+      "alternativas": [
+        "Candidíase oral.",
+        "Desidrogenase lática (DHL) sérica baixa.",
+        "Hipoxemia em repouso ou após esforço.",
+        "Infiltrado intersticial peri-hilar simétrico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre as manifestações clínicas da pneumocistose em pacientes com AIDS, uma infecção oportunística clássica que ainda é relevante na prática médica.</p><p><strong>Competência avaliada:</strong> Identificação dos achados típicos de Pneumocystis jirovecii e diferenciação de achados que não são característicos desta condição.</p><p><strong>Resposta correta: B (DHL baixa)</strong></p><p><strong>Achados típicos da pneumocistose em HIV:</strong></p><p><strong>Alternativa A (Candidíase oral):</strong> Incorreta como EXCEÇÃO, pois a candidíase oral é achado comum em HIV e frequentemente associada à pneumocistose como infecção oportunística simultânea.</p><p><strong>Alternativa B (DHL sérica baixa):</strong> CORRETA como EXCEÇÃO. A DHL (desidrogenase lática) NORMALMENTE ESTÁ ELEVADA na pneumocistose devido à destruição tecidual pulmonar. Níveis baixos de DHL não são característicos desta condição e podem indicar outras patologias.</p><p><strong>Alternativa C (Hipoxemia em repouso ou após esforço):</strong> Incorreta como EXCEÇÃO. Hipoxemia é achado típico na pneumocistose, especialmente após exercício, devido à insuficiência respiratória ventilatória.</p><p><strong>Alternativa D (Infiltrado intersticial peri-hilar simétrico):</strong> Incorreta como EXCEÇÃO. O padrão radiológico mais comum é precisamente este: infiltrado intersticial simétrico, difuso, com predomínio hilar, descritos como 'pavimentação em vidro' em TC de tórax.</p><p><strong>Fisiopatologia:</strong> A pneumocistose causa inflamação alveolar difusa com preenchimento de alvéolos por debris e organismos, resultando em hipoxemia e elevação da DHL (marcador de destruição tecidual).</p><p><strong>Pegadinha clássica:</strong> A banca usa a estratégia de colocar como \"exceto\" o achado que NÃO é típico, no caso a DHL baixa, quando o esperado é elevação. É um clássico de provas!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Infectologia_Hivaids_InfeccoesOpportunistas",
+        "ClinicaMedica_Infectologia_Hivaids_InfeccoesOpportunistas_Pneumocistose"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Relacione a Coluna 1 à Coluna 2, associando as causas de dor lombar e os achados sugestivos. Coluna 1; 1. Espondilite anquilosante. 2. Aneurisma de aorta. 3. Metástase óssea vertebral. 4. Mieloma múltiplo. Coluna 2; ( ) Hipercalcemia e disfunção renal. ( ) Emagrecimento e hematoquezia. ( ) Sexo masculino, HLA B27 positivo. ( ) Hipertensão e doença vascular periférica. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+      "alternativas": [
+        "4 - 2 - 3 - 1.",
+        "1 - 3 - 2 - 4.",
+        "3 - 2 - 1 - 4.",
+        "4 - 3 - 1 - 2."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o diagnóstico diferencial das causas de dor lombar, uma queixa extremamente comum na prática médica e tema frequente em provas de Residência.</p><p><strong>Competência avaliada:</strong> Correlação clínica entre características de apresentação e etiologias específicas de lombalgia.</p><p><strong>Resposta correta: D (4-3-1-2)</strong></p><p><strong>Análise das associações:</strong></p><p>• <strong>Mieloma múltiplo (4) - Hipercalcemia e disfunção renal:</strong> Lembre-se de que o mieloma causa destruição óssea lítica, liberando cálcio e proteínas. A hipercalcemia é diagnóstica (hipercalcemia + proteinúria = mieloma até prova em contrário). A insuficiência renal decorre da proteinúria e cadeia pesada.</p><p>• <strong>Metástase óssea vertebral (3) - Emagrecimento e hematoquezia:</strong> A perda de peso rápida é característica de neoplasia maligna, enquanto a hematoquezia sugere origem digestiva (frequentemente adenocarcinoma de cólon), uma das principais fontes de metástases vertebrais.</p><p>• <strong>Espondilite anquilosante (1) - Sexo masculino, HLA B27 positivo:</strong> Esta é uma das poucas doenças reumatológicas com nítida predominância masculina (relação 9:1). O HLA B27 positivo está presente em 90-95% dos pacientes de raça caucasiana, sendo o biomarcador mais importante.</p><p>• <strong>Aneurisma de aorta (2) - Hipertensão e doença vascular periférica:</strong> A association é obvious: aneurismas são complicações clássicas da hipertensão arterial sistêmica e da aterosclerose, que causam doença vascular periférica.</p><p><strong>Dicas de estudo para prova:</strong> Em questões de dor lombar com 'sinais de alarme' (idade avançada, perda de peso, antecedentes oncológicos, ausência de trauma), sempre pense em causas secundárias como as analisadas nesta questão.</p><p><strong>Pegadinha comum:</strong> O aneurisma de aorta pode inicialmente cursar apenas com dor lombar, mas tende a evoluir com sinais vasculares periféricos e hipertensão prévias, conforme descrito na questão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Reumatologia_Espondiloartrites",
+        "ClinicaMedica_Reumatologia_Espondiloartrites_EspondiliteAnquilosante",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Sobre o tratamento da neutropenia febril, é correto afirmar que:",
+      "alternativas": [
+        "Betalactâmico antipseudomonas está indicado apenas para pacientes com instabilidade hemodinâmica.",
+        "Vancomicina está indicada na suspeita de infecção relacionada a cateter ou pneumonia.",
+        "Terapia antifúngica é recomendada no manejo inicial, se febre persistente.",
+        "Internação hospitalar é mandatória mesmo em pacientes de baixo risco."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre o manejo antimicrobiano da neutropenia febril, um tema crítico em clínica médica.</strong></p><p>A banca quer testar se você conhece as indicações específicas para diferentes classes de antimicrobianos nestas situações de alto risco. Vamos analisar cada alternativa.</p><p><strong>Alternativa A:</strong> FALSA. Betalactâmicos antipseudomonas não são indicados apenas em instabilidade hemodinâmica. Na verdade, estas drogas (como piperacilina-tazobactam, cefalosporina antipseudomonas ou meropenem) são a primeira escolha para terapia empírica em neutropenia febril, independentemente do estado hemodinâmico, devido ao alto risco de infecções por Pseudomonas aeruginosa.</p><p><strong>Alternativa B:</strong> VERDADEIRA. Vancomicina é indicada especificamente quando há suspeita de infecção relacionada a cateter (bacteremia por Staphylococcus coagulase-negativo, S. aureus) ou pneumonia nosocomial, onde enterococos e MRSA são preocupações. É uma terapia de adição, não de primeira linha universal.</p><p><strong>Alternativa C:</strong> FALSA. Terapia antifúngica NÃO é recomendada rotineiramente no manejo inicial. Só se instala após 4-7 dias de febre persistente sem resolução com antibióticos, ou se há evidência clínica de infecção fúngica (pneumonia cavitária, mucosite grave, lesões características).</p><p><strong>Alternativa D:</strong> FALSA. Internação não é mandatória para todos os pacientes. Pacientes de baixo risco, segundo escores como o MASCC (Multinational Association for Supportive Care in Cancer), podem ser tratados ambulatorialmente com antibiótico oral.</p><p><strong>Resposta correta: B.</strong> O racional está na indicação específica de vancomicina para ambientes onde Gram-positivos multirresistentes são frequentes, como infecções de cateteres e pneumonias hospitalares.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia_SindromesFebris_NeutropeniaFebril"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Mulher apresenta história de úlceras orais e genitais recorrentes, eritema nodoso e uveíte anterior. Esses achados sugerem:",
+      "alternativas": [
+        "Vasculite de hipersensibilidade.",
+        "Doença de Behçet.",
+        "Púrpura de Henoch-Schönlein.",
+        "Síndrome de Churg-Strauss."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2022 explora o diagnóstico de uma vasculite sistêmica complexa que frequentemente confunde candidatos em provas.</strong></p><p>O quadro clínico descrito é clássico para uma síndrome que apresenta um conjunto específico de manifestações mucocutâneas, oculares e cutâneas. Vamos analisar as alternativas.</p><p><strong>Alternativa A - Vasculite de hipersensibilidade:</strong> INCORRETA. Esta condição geralmente se apresenta com púrpura palpável em membros inferiores, artralgias e pode ter acometimento renal. No entanto, não cursa tipicamente com ulcerações orais e genitais recorrentes, uveíte anterior e eritema nodoso simultaneamente.</p><p><strong>Alternativa B - Doença de Behçet:</strong> CORRETA. Este é o diagnóstico clássico para a tríade: ulcerações orais + genitais + uveíte anterior, quando associada a eritema nodoso. A doença de Behçet é uma vasculite sistêmica que afeta vasos de todos os calibres, sendo mais prevalente na Rota da Seda (bacia mediterrânea ao leste asiático).</p><p><strong>Alternativa C - Púrpura de Henoch-Schönlein:</strong> INCORRETA. Caracteriza-se por púrpura palpable, artrite, dor abdominal e glomerulonefrite. Não apresenta ulcerações orais/genitais e a uveíte é extremamente rara. É mais comum em crianças.</p><p><strong>Alternativa D - Síndrome de Churg-Strauss (atualmente EGPA):</strong> INCORRETA. Esta vasculite eosinofílica se caracteriza por asma, eosinofilia tisular, neuropatia periférica e frequentemente acometimento pulmonar e cardíaco. Uveíte anterior não é característica e ulcerações mucosas são incomuns.</p><p><strong>Resposta correta: B.</strong> O diagnóstico de Behçet requer pelo menos três episódios de ulcerações orais recorrentes em 12 meses, mais dois critérios entre: ulcerações genitais, lesões oculares, lesões cutâneas ou teste de pathergy positivo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "No manejo das arritmias, são fatores que favorecem a probabilidade de sucesso da cardioversão ou a manutenção do ritmo sinusal após cardioversão, EXCETO:",
+      "alternativas": [
+        "Paciente jovem.",
+        "Doença valvar mitral.",
+        "Taquicardiomiopatia.",
+        "Doença aguda cursando com fibrilação atrial."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2022 testa seu conhecimento sobre fatores prognósticos na cardioversão de arritmias, especialmente fibrilação atrial.</strong></p><p>O examinador quer avaliar se você reconhece quais características do paciente e da cardiopatia aumentam ou diminuem as chances de sucesso na cardioversão. A questão pede EXCETO - ou seja, qual factor NÃO favorece o sucesso.</p><p><strong>Alternativa A - Paciente jovem:</strong> FAVORÁVEL. Idade jovem é um fator que favorece o sucesso da cardioversão. Pacientes jovens têm menor fibrose atrial, menos hipertensão, menos comorbidades, resultando em melhor função atrial e maior taxa de manutenção do ritmo sinusal.</p><p><strong>Alternativa B - Doença valvar mitral:</strong> FAVORÁVEL para o sucesso inicial, MAS desfavorável para manutenção. A estenose mitral causa dilatação atrial esquerda e fibrose, reduzindo a eficácia a longo prazo. No entanto, após correção cirúrgica da valva, as chances melhoram significativamente.</p><p><strong>Alternativa C - Taquicardiomiopatia:</strong> FAVORÁVEL. A taquicardiomiopatia é uma excelente indicação para cardioversão, pois a arritmia É a causa da disfunção miocárdica. Ao restaurar o ritmo sinusal, a função ventricular frequentemente se normaliza, tornando esta a melhor situação clínica para cardioversão.</p><p><strong>Alternativa D - Doença aguda cursando com fibrilação atrial:</strong> CORRETA como EXCEÇÃO. Em doenças agudas (pneumonia, cirurgia, infarto, tireotoxicose), a fibrilação atrial é uma resposta reativa. Nestes casos, o controle da doença de base é prioritário, e a cardioversão é menos eficaz. O faktor que NÃO favorece o sucesso é quando a arritmia é secundária a processo agudo.</p><p><strong>Resposta correta: B.</strong> A doença valvar mitral é a alternativa que NÃO favorece o sucesso, pois causa alterações estruturais permanentes no átrio esquerdo que prejudicam a manutenção do ritmo sinusal, especialmente se não houver correção da valva.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Mulher de 36 anos procura atendimento por dor na tireoide irradiada para orelha direita e febre há 1 semana. Ao exame físico, apresenta tremores finos nas mãos, taquicardia e tireóide dolorosa no lobo direito à palpação. Exames confirmaram Velocidade de Hemossedimentação (VHS) elevada e hormônio tireotrófico (TSH) suprimido. Qual é o tratamento inicial para esse caso?",
+      "alternativas": [
+        "Propranolol, metimazol e prednisona.",
+        "Propiltiouracil e prednisona.",
+        "Propranolol e nimesulida.",
+        "Metimazol e nimesulida."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre o manejo da tireoidite subaguda de De Quervain, uma condição inflamatória dolorosa da tireoide.</strong></p><p>O caso clínico é típico: dor cervical irradiada para orelha, sintomas de tireotoxicose (taquicardia, tremores), sinais inflamatórios (VHS elevada), tireoide dolorosa e TSH suprimido. Vamos analisar as alternativas terapêuticas.</p><p><strong>Alternativa A - Propranolol, metimazol e prednisona:</strong> INCORRETA. Metimazol não deve ser usado na tireoidite subaguda, pois a causa da tireotoxicose é destruição folicular com liberação de hormônios pré-formados, não síntese aumentada. O problema é 'vazamento' hormonal, não hiperprodução.</p><p><strong>Alternativa B - Propiltiouracil e prednisona:</strong> INCORRETA. Propiltiouracil tem a mesma limitação que metimazol - bloqueia a síntese hormonal, mas não resolve o problema da liberação. Além disso, PTU tem mais efeitos adversos hepáticos e não oferece vantagens sobre betabloqueadores para controle dos sintomas.</p><p><strong>Alternativa C - Propranolol e nimesulida:</strong> CORRETA. Propranolol controla os sintomas tireotóxicos (taquicardia, tremores, ansiedade) bloqueando os receptores beta-adrenérgicos. Nimesulida (AINE) controla a inflamação e dor, sendo preferida a corticóide nesta fase inicial. A inflamação é autolimitada e responde bem aos anti-inflamatórios.</p><p><strong>Alternativa D - Metimazol e nimesulida:</strong> INCORRETA. Metimazol não tem indicação nesta condição, como explicado acima. Só aumentaria a carga de medicação sem benefício terapêutico real.</p><p><strong>Resposta correta: C.</strong> A abordagem inicial deve ser conservadora: propranolol para sintomas e AINE para inflamação. Corticóides podem ser considerados se não houver resposta aos AINE após 1-2 semanas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Tireotoxicose"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Homem de 65 anos é trazido para atendimento por febre, tosse produtiva e dor ventilatório-dependente há 3 dias. Na avaliação inicial, está lúcido e orientado, com mucosas hidratadas, pórem taquipneico, com Saturação de 92% em ar ambiente, pressão arterial de 136/88 mmHg e temperatura axilar de 38,8°C. Nos exames iniciais, revelou-se creatina 0,9 mg/dl, bilirrubinas totais 1,4 mg/dl, hemograma com 15 mil leucócitos, 12% de bastões e 90 mil plaquetas/mm³. A melhor hipótese diagnóstica é:",
+      "alternativas": [
+        "Tromboembolismo pulmonar.",
+        "Pneumonia sem sepse.",
+        "Choque séptico de foco respiratório.",
+        "Sepse de foco respiratório."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS 2022 avalia seu domínio dos critérios diagnósticos para sepse e choque séptico, seguindo as definições mais atuais (Sepsis-3, 2016).</strong></p><p>O cenário clínico é clássico de pneumonia com sinais sistêmicos. Vou aplicar os critérios para determinar o estagiamento correto da sepse.</p><p><strong>Analisando o caso:</strong> Paciente com pneumonia (foco respiratório), febre (38,8°C), taquipnea, hipoxemia (Saturação 92%). Laboratorial: leucocitose com desviamento esquerdo (15.000 com 12% bastões), o que indica processo infeccioso bacteriano grave.</p><p><strong>Alternativa A - Tromboembolismo pulmonar:</strong> INCORRETA. Aunque cause dispneia e hipoxemia, não cursa com febre persistente, leucocitose importante com bastões ou sinais de foco infeccioso. O cuadro é mais compatível com infecção ativa.</p><p><strong>Alternativa B - Pneumonia sem sepse:</strong> INCORRETA. A presença de taquipneia, hipoxemia, febre, leucocitose com bastões e comprometimento do estado geral configura síndrome de resposta inflamatória sistêmica (SRIS), que somada ao foco infeccioso caracteriza sepse.</p><p><strong>Alternativa C - Choque séptico de foco respiratório:</strong> INCORRETA. Choque séptico requer hipotensão refratária à reposição volêmica OU necessidade de vasopressores para manter PAM ≥65 mmHg, associada a lactato >2 mmol/L. O paciente mantém PA 136/88 mmHg (normotenso), sem necessidade de suporte vasopressor.</p><p><strong>Alternativa D - Sepse de foco respiratório:</strong> CORRETA. Critérios atendidos: 1) foco infeccioso comprovado (pneumonia com produção purulenta); 2) disfunção de órgãos (hipoxemia com saturação 92%, taquipneia); 3) resposta inflamatória sistêmica (febre, leucocitose com bastões). A pressão arterial normal afasta choque séptico.</p><p><strong>Resposta correta: D.</strong> A distinção entre sepse e choque séptico é fundamental para estratificação de gravidade e direcionamento terapêutico, com implicações diretas na mortalidade.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_SepsedefocoRespiratorio"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "São encontrados de Mieloma Múltiplo, EXCETO:",
+      "alternativas": [
+        "Anemia.",
+        "Lesões osteoblásticas.",
+        "Hipercalcemia.",
+        "Injúria renal aguda."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS testa conhecimento sobre as principais manifestações do mieloma múltiplo, uma neoplasia de plasma cells com grande relevância clínica.</strong></p><p>O mieloma múltiplo apresenta uma tríade clássica de alterações que são fundamentais para seu diagnóstico e manejo. Vamos analisar cada alternativa presented.</p><p><strong>Alternativa A - Anemia:</strong> Correta. A anemia é extremamente comum no mieloma múltiplo, resultado da infiltração da medula óssea por células plasmáticas neoplásicas, suprimindo a hematopoiese. Além disso, há deficiência de eritropoietina e competição por nutrientes no microambiente medular.</p><p><strong>Alternativa B - Lesões osteolíticas:</strong> Correta. As lesões osteolíticas são características do mieloma múltiplo, resultantes da atividade osteoclástica aumentada mediada pelo RANKL (Receptor Activator of Nuclear Factor Kappa-B Ligand) produzido pelas células do mieloma. Importante: são LÍTICAS, não osteoblásticas como em outras condições.</p><p><strong>Alternativa C - Hipercalcemia:</strong> Correta. A hipercalcemia ocorre em até 30% dos pacientes, resultado da destruição óssea massiva e liberação de cálcio. É um fator de risco para injúria renal aguda e deve ser monitoradaclosamente.</p><p><strong>Alternativa D - Lesões osteoblásticas:</strong> INCORRETA. Esta é a resposta certa para a questão! As lesões osteoblásticas NÃO são características do mieloma múltiplo. O mieloma causa destruíção óssea (lesões líticas), mas não formação óssea aumentada. Lesões osteoblásticas são típicas de câncer de próstata metastático, osteíte deformante (Doença de Paget) ou osteoblastomas.</p><p><strong>Raciocínio final:</strong> A banca quis avaliar se o candidato conhece que o mieloma múltiplo cursa com anemia, hipercalcemia e injúria renal aguda, mas NÃO com lesões osteoblásticas. O gabarito B está correto por apresentar a única alternativa que NÃO é encontrada no mieloma múltiplo.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_GamopatiasMonoclonais",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Homem de 75 anos, com Diabetes Mellitus tipo 2 há 25 anos, é trazido para atendimento após quadro de síncope. Familiar aferiu a glicemia capilar no momento, medindo 45mg/dl. Paciente recuperou os sentidos após colocação de mel na mucosa oral. Há relatos de hipoglicemias frequentes há 2 anos, mesmo sem sintomas adrenérgicos. Faz uso de insulina NPH e Regular, além de metformina. Ao exame físico, apresentava taquicardia em repouso e hipotensão postural. Os diagnósticos mais prováveis são:",
+      "alternativas": [
+        "Insulinoma e fibrilação atrial.",
+        "Insulinoma e insuficiência adrenal.",
+        "Dose excessiva de insulina e insuficiência adrenal.",
+        "Dose excessiva de insulina e neuropatia diabética."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS aborda um cenário clínico complexo envolvendo diabetes de longa evolução, hipoglicemias e complicações autonômicas.</strong></p><p>O caso apresenta um idoso de 75 anos com diabetes tipo 2 há 25 anos, apresentando síncope por hipoglicemia grave (45mg/dl) e episódios frequentes sem sintomas adrenérgicos. Vejo dois problemas distintos aqui.</p><p><strong>Primeiro problema - Hipoglicemias frequentes:</strong> O uso de insulina NPH e regular, especialmente em idoso, facilmente leva a hipoglicemias. A diabetes de 25 anos indica fragilidade e necessidade de controle menos agressivo. O PSSI (Personalized Safety Strategy for Insulin) sugere metas mais flexíveis em idosos.</p><p><strong>Segundo problema - Ausência de sintomas adrenérgicos:</strong> Isso é MUITO característico de neuropatia autonômica diabética! A neuropatia autonômica cardiovascular é responsável pela perda da resposta simpática às hipoglicemias, tornando-as &quot;silenciosas&quot;.</p><p><strong>Análise das alternativas:</strong></p><p>A) <em>Insulinoma e fibrilação atrial:</em> Insulinoma é tumor pancreático RARO em diabéticos, especialmente tipo 2. A taquicardia pode ser compensatória pela hipoglicemia.</p><p>B) <em>Insulinoma e insuficiência adrenal:</em> Mesmo erro - insulinoma improvável. Insuficiência adrenal não explica o quadro.</p><p>C) <em>Dose excessiva de insulina e insuficiência adrenal:</em> Primeira parte correta, mas insuficiência adrenal não justifica ausência de sintomas autonômicos.</p><p>D) <em>Dose excessiva de insulina e neuropatia diabética:</em> <strong>CORRETA!</strong> Explica tanto as hipoglicemias (dose alta) quanto a ausência de sintomas (neuropatia autonômica).</p><p><strong>Veredito:</strong> A resposta D é a mais provável. A neuropatia autonômica diabética é complicação clássica de diabetes longa duração e explica perfeitamente a apresentação clínica do caso.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Hipoglicemia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Homem de 50 anos com história de fraturas de baixo impacto, nefrolitíase de repetição e hipercalcemia detectada em exames laboratoriais. Além do paratormônio elevado, também se espera encontrar no hiperparatireoidismo primário:",
+      "alternativas": [
+        "Hipercalciúria.",
+        "Hiperfosfatemia.",
+        "Hipofosfatúria.",
+        "Hipervitaminose D."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS testa conhecimento sobre a fisiopatologia do hiperparatireoidismo primário, um distúrbio endócrino com repercussões sistêmicas importantes.</strong></p><p>O paciente apresenta a tríade clássica: fraturas de baixo impacto, nefrolitíase recorrente e hipercalcemia com PTH elevado. Isso é PATOGNOMÔNICO de hiperparatireoidismo primário!</p><p><strong>Entendendo a fisiopatologia:</strong> No hiperparatireoidismo primário há produção autônoma de PTH (em geral por adenoma). O PTH tem três ações principais que explicam todas as manifestações clínicas.</p><p><strong>1. Efeito ósseo:</strong> PTH estimula osteoclastos → reabsorção óssea → liberação de cálcio → hipercalcemia + fraturas</p><p><strong>2. Efeito renal:</strong> Aumenta reabsorção de cálcio e aumenta excreção de fósforo → hipercalciúria (excesso de cálcio na urina) + hipofosfatemia</p><p><strong>3. Efeito intestinal:</strong> PTH estimula conversão de vitamina D em sua forma ativa → aumenta absorção intestinal de cálcio</p><p><strong>Análise das alternativas:</strong></p><p>A) <em>Hipercalciúria:</em> CORRETA! O PTH aumenta a reabsorção renal de cálcio, mas quando a carga sérica está muito alta, há &quot;vazamento&quot; de cálcio na urina. A hipercalciúria é responsável pela nefrolitíase.</p><p>B) <em>Hiperfosfatemia:</em> ERRADA! O PTH REDUZ a reabsorção renal de fósforo, causando hipofosfatemia.</p><p>C) <em>Hipofosfatúria:</em> ERRADA! Ocorrevu o contrário: hiperfosfatúria (excreção aumentada de fósforo).</p><p>D) <em>Hipervitaminose D:</em> ERRADA! Na verdade, os níveis de 25-OH vitamina D podem estar reduzidos porque há maior conversão para 1,25-diOH vitamina D (forma ativa).</p><p><strong>Mnemônico útil:</strong> Hiperparatireoidismo = <strong>CHIP</strong> - Calcemia elevada, Hipercalciúria, Hipofosfatemia, PTH elevado</p><p><strong>Veredito:</strong> Alternativa A é correta. A hipercalciúria é achado esperado e explica a nefrolitíase de repetição do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_AvaliacaoMetabolicaDaUrina"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Sobre a Doença Renal Crônica, analise as assertivas a seguir: I. Hipertrigliceridemia é a alteração lipídica mais frequente. II. Risco de sangramento se deve à plaquetopenia, independentemente da função plaquetária. III. Hiperparatireodismo secundário ocorre pela retenção renal de fósforo. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas II e III.",
+        "Apenas I e III.",
+        "I, II e III."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS avalia conhecimento sobre complicações metabólicas da doença renal crônica (DRC), testando três assertivas específicas sobre alterações lipídicas, hemostasia e metabolismo mineral.</strong></p><p>A DRC progride através de estágios e cada fase apresenta alterações metabólicas características. Vamos analisar cada assertiva.</p><p><strong>Assertiva I - Hipertrigliceridemia:</strong> CORRETA! A hipertrigliceridemia é realmente a alteração lipídica MAIS FREQUENTE na DRC. Isso ocorre por múltiplos mecanismos: resistência à insulina, diminíção da lipase lipoproteica, retenção de fatores inibidores e distúrbios no metabolismo de lipoproteínas. É encontrada em 40-70% dos pacientes com DRC.</p><p><strong>Assertiva II - Plaquetopenia e risco de sangramento:</strong> ERRADA! A questao confunde. O risco de sangramento na DRC NÃO se deve principalmente à plaquetopenia (que pode ou não estar presente), mas sim à disfunção plaquetária. Uremia altera a função das plaquinas, interferindo na agregação e adesão, independentemente do número de plaquinas. Esta é uma pegadinha clássica!</p><p><strong>Assertativa III - Hiperparatireodismo secundário:</strong> CORRETA! Com a progresão da DRC, há redução da função renal e diminuíção da excreção de fósforo. O fósforo acumulado estimula a liberação de FGF-23 (Fibroblast Growth Factor-23) e suprime a produção de calcitriol, levando a hipocalcemia. Essa hipocalcemia estimula a secreção de PTH, caracterizando o hiperparatireodismo secundário.</p><p><strong>Raciocínio clínico:</strong> As assertivas I e III são corretas, enquanto a II está incorreta devido ao erro conceitual sobre plaquetopenia versus disfunção plaquetária.</p><p><strong>Veredito:</strong> Alternativa C (apenas I e III) está correta conforme análise técnica das assertivas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ComplicacoesDaDrc",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ManejoDaDrc",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_AbordagemDasDislipidemiasEEstr"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Em relação às manifestações musculoesqueléticas das doenças reumatológicas, qual achado é mais frequente em pacientes com Lúpus Eritematoso Sistêmico (LES) em comparação aos portadores de Artrite Reumatoide (AR)?",
+      "alternativas": [
+        "Artrite deformante.",
+        "Erosões cartilaginosas.",
+        "Osteoporose.",
+        "Necrose avascular."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da AMRIGS compara manifestações musculoesqueléticas entre duas doenças reumatológicas importantes: LES e Artrite Reumatoide, testando conhecimento sobre complicações específicas do tratamento.</strong></p><p>O foco aqui está em entender por que certain complicação é MAIS FREQUENTE no LES comparado à AR. A chave está no tratamento: os esquemas terapêuticos são diferentes!</p><p><strong>Analisando as alternativas:</strong></p><p>A) <em>Artrite deformante:</em> ERRADA! A artrite do LES é classicamente <strong>não-erosiva</strong> e <strong>não-deformante</strong>, ao contrário da AR que causa erosões e deformidades. Esta é uma diferença fundamental entre as duas doenças.</p><p>B) <em>Erosões cartilaginosas:</em> ERRADA! A artrite do LES não causa erosões. As erosões são típicas da AR e de outras artrites inflamatórias, mas não do lúpus.</p><p>C) <em>Osteoporose:</em> ERRADA! A osteoporose é comum em ambas as doenças, seja pelo próprio processo inflamatório (AR) ou pelo uso de corticoides (ambas). Não há diferença significativa na frequência.</p><p>D) <em>Necrose avascular:</em> CORRETA! <strong>A necrose avascular (osteonecrose) é significativamente MAIS FREQUENTE no LES!</strong> Por quê? Porque:</p><p><strong>1. Dose de corticoides:</strong> O LES requer doses maiores e mais prolongadas de corticoides comparado à AR. Protocolos de tratamento do LES incluem pulsos com metilprednisolona e doses altas de prednisona.</p><p><strong>2. Vasculopatia:</strong> O LES tem componente vascular próprio que compromete a perfusão óssea.</p><p><strong>3. Fatores de risco adicionais:</strong> LES afeta mais mulheres (relação 9:1) e frequentemente em idade mais jovem, quando o osso é mais susceptível.</p><p><strong>Localização típica:</strong> Cabeça do fêmur, úmero proximal, e o diagnóstico precoce é feito por RM (ressonância magnética) - a radiografia pode ser normal inicialmente.</p><p><strong>Veredito:</strong> A alternativa D está correta. A necrose avascular é a complicação musculoesquelética MAIS FREQUENTE no LES comparado à AR, principalmente devido à maior exposição a corticoides e à fisiopatologia específica do lúpus.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasArtrit",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasSistemicasComManifestac"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Na doença de Parkinson, é correto afirmar que:",
+      "alternativas": [
+        "Tremores, instabilidade postural e rigidez são os primeiros sinais da doença.",
+        "A bradicinesia tem início proximal, com dificuldade de elevar os braços.",
+        "A rigidez é bilateral e precoce desde a suspeita clínica.",
+        "Quedas frequentes no início da doença devem alertar para outras causas de parkinsonismo."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre a apresentação clínica típica da doença de Parkinson, um dos distúrbios neurodegenerativos mais comuns na prática médica.</p><p><strong>A resposta correta é a alternativa D - Quedas frequentes no início da doença devem alertar para outras causas de parkinsonismo.</strong></p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>Alternativa A:</strong> Errada. Os primeiros sinais da doença de Parkinson tipicamente incluem bradicinesia (lentidão dos movimentos) e/ou rigidez. Tremores e instabilidade postural geralmente aparecem mais tardiamente.</p><p><strong>Alternativa B:</strong> Errada. A bradicinesia no Parkinson se manifesta inicialmente de forma distal, afetando primeiro movimentos finos como escrita e botões de roupas. A dificuldade de elevar os braços (início proximal) é mais característica de miopatias ou distúrbios musculares.</p><p><strong>Alternativa C:</strong> Errada. A rigidez no Parkinson geralmente é unilateral ou assimétrica no início. A rigidez bilateral precoce é mais sugestiva de outros tipos de parkinsonismo, como parkinsonismo induzido por medicamentos ou parkinsonismo vascular.</p><p>O ponto-chave desta questão é reconhecer que quedas precoces são um sinal de alarme que não se encaixa no curso típico da doença de Parkinson idiopática, devendo levantar suspeita de outros diagnósticos como demência por corpúsculos de Lewy, atrofia de múltiplos sistemas ou parkinsonismo farmacológico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento",
+        "ClinicaMedica_Neurologia_DisturbiosDoMovimento_AcidenteVascularCerebralAv"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Mulher de 32 anos, com Diabetes Mellitus tipo 1 desde os 14 anos, chega em prontosocorro com sonolência, sinais de desidratação e hálito cetônico. É realizada ressuscitação volêmica em bolus com solução salina a 0,9% e coletados exames. Apresenta glicemia de 550 mg/dl, cetonemia e cetenúria, e gasometria arterial com pH 7,0 (VR 7,35-7,45) e bicarbonato de 4 mEq/l (VR 22-28), potássio 4,2 mEq/l (VR 3,5-5,5), sódio 128 mEq/l (VR 135-145). Assinale a alternativa correta em relação ao manejo.",
+      "alternativas": [
+        "Hidratação parenteral com solução salina a 0,9%.",
+        "Reposição de bicarbonato em bolus.",
+        "Insulina NRH em bomba de infusão contínua.",
+        "Solução de potássio em infusão contínua."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o manejo adequado da cetoacidose diabética (CAD), uma complicação grave do diabetes mellitus que requer intervenções precisas e sequenciadas adequadamente.</p><p><strong>A resposta correta é a alternativa D - Solução de potássio em infusão contínua.</strong></p><p>Vamos analisar as alternativas de manejo:</p><p><strong>Alternativa A:</strong> Parcialmente correta, mas incompleta. A hidratação com solução salina 0,9% é realmente o primeiro passo no manejo da CAD, mas esta alternativa não contempla as outras intervenções essenciais necessárias simultaneamente.</p><p><strong>Alternativa B:</strong> Incorreta. O uso de bicarbonato na cetoacidose é controverso e atualmente não é recomendado de rotina. O pH de 7,0, embora baixo, não justifica reposição de bicarbonato isoladamente, pois o foco deve ser no tratamento da causa - insulinoterapia e reposição hidroeletrolítica adequada.</p><p><strong>Alternativa C:</strong> Incorreta. A insulina é essencial no tratamento da CAD, mas a sigla NRH (insulina de Ação Rápida Humanizada) não é standard na literatura médica. Além disso, a questão é sobre a conduta mais adequada immediate e o potássio requer atenção mais urgente.</p><p><strong>Alternativa D:</strong> Correta. O paciente apresenta hiponatremia (sódio 128 mEq/l) e pode desenvolver hipocalemia durante o tratamento com insulina, que promove entrada de potássio intracelular. A reposição profilática de potássio é fundamental e deve ser feita precocemente.</p><p>A sequência correta no manejo da CAD inclui: 1) Hidratação agressiva, 2) Reposição de potássio, 3) Insulinoterapia, 4) Investigação da causa desencadeante.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_CetoacidoseDiabetica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Paciente asmático apresenta sintomas diários, com despertares noturno por sintomas pelo menos 2 vezes na semana, porém sem limitação para as atividades diárias. Durante o atendimento, está assintomático. A melhor conduta é:",
+      "alternativas": [
+        "Beta-agonista inalatório de curta ação nas crises apenas.",
+        "Corticoide inalatório e beta-agonista inalatório de longa ação.",
+        "Corticoide inalatório e beta-agonista inalatório de curta ação.",
+        "Corticoide via oral e beta-agonista inalatório de curta ação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre a classificação e tratamento da asma conforme as diretrizes atuais do GINA (Global Initiative for Asthma) e da SBPT (Sociedade Brasileira de Pneumologia e Tisiologia).</p><p><strong>A resposta correta é a alternativa B - Corticoide inalatório e beta-agonista inalatório de longa ação.</strong></p><p>Vamos analisar o caso: paciente com sintomas diários, despertares noturnos pelo menos 2 vezes por semana, mas sem limitação das atividades. Isso corresponde a asma moderada persistente.</p><p><strong>Alternativa A:</strong> Incorreta. O uso exclusivo de beta-agonista de curta ação nas crises é insuficiente para asma persistente, pois não controla a inflamação subjacente.</p><p><strong>Alternativa B:</strong> Correta. Para asma moderada persistente, a terapia combinada com corticoide inalatório (anti-inflamatório) e beta-agonista de longa ação (broncodilatador) é o padrão ouro atual, proporcionando melhor controle e reduzindo exacerbações.</p><p><strong>Alternativa C:</strong> Incorreta. A combinação de corticoide inalatório com beta-agonista de curta ação não é standard para manutenção. Beta-agonistas de curta ação devem ser reservados para alívio de sintomas agudos.</p><p><strong>Alternativa D:</strong> Incorreta. Corticoides orais são reservados para exacerbações graves ou asma refratária. Para asma persistente, a via inalatória é preferível devido ao melhor perfil de segurança.</p><p>O objetivo do tratamento na asma é sempre alcançar controle completo dos sintomas, permitindo vida normal sem limitações das atividades diárias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma_TratamentoDeManutencao"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Sobre o tratamento do tabagismo, analise as assertivas abaixo: I. Terapias não farmacológicas isoladas não se mostraram eficazes em cessar tabagismo. II. Vareniclina é superior a bupropiona no tratamento farmacológico. III. Nicotina em gomas de mascar ou adesivo tem benefício comprovado para parar de fumar. Quais estão corretas?",
+      "alternativas": [
+        "Apenas I e II.",
+        "Apenas I e III.",
+        "Apenas II e III.",
+        "I, II e III."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre as evidências científicas no tratamento farmacológico e não farmacológico do tabagismo, baseando-se nas diretrizes do INCA (Instituto Nacional de Câncer) e Cochrane Review.</p><p><strong>A resposta correta é a alternativa C - Apenas II e III estão corretas.</strong></p><p>Vamos analisar cada assertiva:</p><p><strong>Assertiva I:</strong> Falsa. As terapias não farmacológicas isoladas (aconselhamento, terapia cognitivo-comportamental, suporte telefónico) têm eficácia comprovada para cessação do tabagismo, especialmente quando combinadas com suporte profissional estruturado.</p><p><strong>Assertiva II:</strong> Verdadeira. Múltiplos estudos clínicos randomizados, incluindo meta-análises da Cochrane, demonstraram que a vareniciclina é superior à bupropiona em taxas de cessação, com OR (odds ratio) de 1,57 IC 95% (1,29-1,91) comparada ao placebo.</p><p><strong>Assertiva III:</strong> Verdadeira. A terapia de reposição nicotínica (TRN) incluindo gomas, adesivos, pastilhas e spray nasal tem benefício comprovado, aumentando a taxa de cessação em aproximadamente 50-70% comparado ao placebo, com NNT (Number Needed to Treat) de 20-25.</p><p>É importante lembrar que a abordagem mais eficaz combina intervenções farmacológicas com não farmacológicas, oferecendo suporte integral ao paciente. O tabagismo é uma doença crônica que requer tratamento multifatorial e acompanhamento prolongado.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_DependenciaQuimica",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_DependenciaQuimica",
+        "Outros_Psiquiatria_DependenciaQuimica_Tabaco"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Mulher de 28 anos procura atendimento por emagrecimento não intencional e tonturas. Ao exame físico, apresenta hipotensão postural, mucosas e regiões palmoplantares escurecidas. Está em tratamento para hipotireoidismo há 4 anos. A alternativa mais correta é:",
+      "alternativas": [
+        "A principal hipótese é insuficiência adrenal de origem infecciosa.",
+        "O cortisol matinal menor que 3 mcg/dl confirma o diagnóstico de insuficiência adrenal.",
+        "A dosagem do ACTH é o primeiro exame a ser solicitado.",
+        "A presença de hipercalemia sugere insuficiência adrenal secundária."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da AMRIGS 2022 avalia seu conhecimento sobre insuficiência adrenal, particularmente os aspectos diagnósticos e diferenciadores entre forma primária e secundária.</p><p><strong>A resposta correta é a alternativa B - O cortisol matinal menor que 3 mcg/dl confirma o diagnóstico de insuficiência adrenal.</strong></p><p>O caso apresentado é clássico para insuficiência adrenal primária (doença de Addison): mulher jovem com emagrecimento não intencional, hipotensão postural, hiperpigmentação de mucosas e áreas palmoplantares, associada a hipotireoidismo (sugestiva de síndrome poliglandular autoimune).</p><p><strong>Alternativa A:</strong> Incorreta. A principal hipótese é insuficiência adrenal de origem autoimune, não infecciosa. Em mulheres jovens, a causa mais comum é a adrenalite autoimune, especialmente quando associada a outras endocrinopatias autoimunes como hipotireoidismo.</p><p><strong>Alternativa B:</strong> Correta. Um cortisol matinal menor que 3 mcg/dL é altamente diagnóstico de insuficiência adrenal. Valores abaixo de 5 mcg/dL são sugestivos, mas valores menores que 3 mcg/dL praticamente confirmam o diagnóstico quando associados ao quadro clínico.</p><p><strong>Alternativa C:</strong> Incorreta. O primeiro exame deve ser o cortisol sérico matinal. A dosagem de ACTH é importante para classificar se é primária ou secundária, mas não como primeiro passo diagnóstico.</p><p><strong>Alternativa D:</strong> Incorreta. A presença de hipercalemia sugere insuficiência adrenal primária, não secundária. Na forma primária há deficiência de aldosterona, causando perda de potássio. Na secundária, a produção de aldosterona se mantém preservada.</p><p>Lembre-se: hiperpigmentação + hipotensão + emagrecimento = pensar em Addison!</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "AMRIGS2022R3CM",
+        "AMRIGS",
+        "R3CM",
+        "RS",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762758597958-29"
+    }
+  ]
+}

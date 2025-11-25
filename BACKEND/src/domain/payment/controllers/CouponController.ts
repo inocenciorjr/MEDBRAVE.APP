@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { AuthenticatedRequest } from '../../auth/middleware/auth.middleware';
+import { AuthenticatedRequest } from '../../auth/middleware/supabaseAuth.middleware';
 import { ICouponService } from '../interfaces/ICouponService';
 import { CreateCouponPayload } from '../types';
 import { AppError, ErrorCodes, ErrorStatusCodes } from '../../../utils/errors';
@@ -24,12 +24,12 @@ export class CouponController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: AuthenticatedRequest): void {
-    const role = req.user?.role;
+    const role = (req.user?.user_role || '').toUpperCase();
     if (role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Acesso negado. Apenas administradores podem realizar esta operação.',
-        ErrorCodes.FORBIDDEN
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -40,7 +40,11 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  createCoupon = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  createCoupon = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -61,7 +65,7 @@ export class CouponController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Código, tipo de desconto e valor são obrigatórios',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
@@ -70,22 +74,25 @@ export class CouponController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
       // Validar valor do desconto
-      if (discountType === 'percentage' && (discountValue <= 0 || discountValue > 100)) {
+      if (
+        discountType === 'percentage' &&
+        (discountValue <= 0 || discountValue > 100)
+      ) {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Para descontos percentuais, o valor deve ser maior que 0 e menor ou igual a 100',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       } else if (discountType === 'fixed_amount' && discountValue <= 0) {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Para descontos de valor fixo, o valor deve ser maior que 0',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
@@ -118,7 +125,11 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  getCouponById = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  getCouponById = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -126,7 +137,11 @@ export class CouponController {
       const coupon = await this.couponService.getCouponById(couponId);
 
       if (!coupon) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Cupom não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Cupom não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       res.status(200).json({
@@ -144,7 +159,11 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listCoupons = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  listCoupons = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -172,7 +191,11 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  updateCoupon = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  updateCoupon = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -195,7 +218,7 @@ export class CouponController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
@@ -203,7 +226,11 @@ export class CouponController {
       if (updates.discountValue !== undefined) {
         const coupon = await this.couponService.getCouponById(couponId);
         if (!coupon) {
-          throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Cupom não encontrado', ErrorCodes.NOT_FOUND);
+          throw new AppError(
+            ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+            'Cupom não encontrado',
+            ErrorCodes.NOT_FOUND,
+          );
         }
 
         const discountType = updates.discountType || coupon.discountType;
@@ -215,13 +242,16 @@ export class CouponController {
           throw new AppError(
             ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
             'Para descontos percentuais, o valor deve ser maior que 0 e menor ou igual a 100',
-            ErrorCodes.VALIDATION_ERROR
+            ErrorCodes.VALIDATION_ERROR,
           );
-        } else if (discountType === 'fixed_amount' && updates.discountValue <= 0) {
+        } else if (
+          discountType === 'fixed_amount' &&
+          updates.discountValue <= 0
+        ) {
           throw new AppError(
             ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
             'Para descontos de valor fixo, o valor deve ser maior que 0',
-            ErrorCodes.VALIDATION_ERROR
+            ErrorCodes.VALIDATION_ERROR,
           );
         }
       }
@@ -231,10 +261,17 @@ export class CouponController {
         updates.expirationDate = new Date(updates.expirationDate);
       }
 
-      const updatedCoupon = await this.couponService.updateCoupon(couponId, updates);
+      const updatedCoupon = await this.couponService.updateCoupon(
+        couponId,
+        updates,
+      );
 
       if (!updatedCoupon) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Cupom não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Cupom não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       res.status(200).json({
@@ -252,7 +289,11 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  deleteCoupon = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  deleteCoupon = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -274,15 +315,26 @@ export class CouponController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  validateCoupon = async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
+  validateCoupon = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const { code, planId } = req.body;
 
       if (!code) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Código do cupom é obrigatório', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Código do cupom é obrigatório',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
-      const result = await this.couponService.validateCoupon(code.toUpperCase().trim(), planId);
+      const result = await this.couponService.validateCoupon(
+        code.toUpperCase().trim(),
+        planId,
+      );
 
       res.status(200).json({
         success: true,

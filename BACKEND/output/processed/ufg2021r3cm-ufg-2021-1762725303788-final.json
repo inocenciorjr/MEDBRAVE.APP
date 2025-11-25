@@ -1,0 +1,1615 @@
+{
+  "metadata": {
+    "examName": "UFG2021R3CM (UFG 2021)",
+    "examYear": 2021,
+    "url": "source://653",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T21:55:03.788Z",
+    "jobId": "batch-1762721414656-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "2a2e0f25-4c2d-4ce0-a264-32742e30b7ec"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "É um critério maior de Framingham para o diagnóstico clínico de insuficiência cardíaca:",
+      "alternativas": [
+        "dispneia aos mínimos esforços.",
+        "derrame pleural.",
+        "edema de tornozelo bilateral.",
+        "refluxo hepatojugular."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre os critérios de Framingham, um sistema классический para diagnóstico clínico de insuficiência cardíaca desenvolvido na década de 1990. Os critérios de Framingham são divididos em maiores e menores, sendo os maiores mais específicos para o diagnóstico.</p><p><strong>A resposta correta é D - refluxo hepatojugular.</strong> Este é um dos critérios maiores de Framingham, representando congestão sistêmica importante que indica disfunção ventricular direita significativa.</p><p>Analisando as alternativas incorretas:</p><p>A) Dispneia aos mínimos esforços é um critério <em>menor</em> de Framingham, não maior. Embora seja muito sensível para IC, tem menor especificidade.</p><p>B) Derrame pleural, apesar de estar presente em muitos pacientes com IC, não é um critério específico de Framingham. Pode ter múltiplas causas.</p><p>C) Edema de tornozelo bilateral é um critério <em>menor</em> de Framingham. É inespecífico e pode ocorrer em outras condições como insuficiência venosa, hipoalbuminemia, ou efeitos medicamentosos.</p><p>O refluxo hepatojugular é o sinal mais específico entre os apresentados, indicando que a pressão do átrio direito aumenta quando há compressão hepática, demonstrando a integridade da resposta cardíaca à sobrecarga venosa sistêmica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_Classificacao"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Qual dos fármacos abaixo não têm potencial para aumentar o intervalo QT?",
+      "alternativas": [
+        "Ivermectina.",
+        "Escitalopram.",
+        "Amiodarona.",
+        "Levofloxacina."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão testa o conhecimento sobre farmacologia cardiovascular, especificamente sobre fármacos que podem causar prolongamento do intervalo QT, um efeito adversos potencialmente grave que pode evoluir para torsades de pointes.</p><p><strong>A resposta correta é A - Ivermectina.</strong> A ivermectina não possui efeitos significativos sobre a repolarização cardíaca e não prolonga o intervalo QT.</p><p>Analisando as alternativas incorretas e seus efeitos no QT:</p><p>B) Escitalopram é um antidepressivo inibidor seletivo da recaptação de serotonina (SSRI) que pode prolongar o intervalo QT, especialmente em doses altas ou em pacientes com fatores de risco. Pertence ao grupo de fármacos que exigem monitoramento em idosos ou cardiopatas.</p><p>C) Amiodarona é um antiarrítmico classe III que prolonga significantemente o intervalo QT como mecanismo terapêutico. É conhecida por ser uma das principais causas de torsades de pointes, especialmente em casos de superdosagem ou distúrbios eletrolíticos.</p><p>D) Levofloxacina é uma fluoroquinolona que prolonga o intervalo QT e está associada a casos relatados de arritmias ventriculares, especialmente em pacientes com fatores predisponentes como hipocalemia, hipomagnesemia ou uso concomitante de outros fármacos que prolongam QT.</p><p>A distinção entre estos fármacos é fundamental para o manejo seguro de pacientes, especialmente em UTI onde polifarmácia é comum.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Qual o CHA2DS2-VASc Score de uma mulher de 65 anos, hipertensa, fumante e obesa?",
+      "alternativas": [
+        "1.",
+        "2.",
+        "3.",
+        "6."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento prático do escore CHA2DS2-VASc, uma ferramenta essencial para estratificação de risco tromboembólico em pacientes com fibrilação atrial. Este escore é fundamental para decidir sobre anticoagulação oral.</p><p><strong>A resposta correta é C - 3 pontos.</strong> Vamos calcular detalhadamente:</p><p>Para a paciente de 65 anos, hipertensa, fumante e obesa:</p><p><strong>C</strong> (Insuficiência Cardíaca Congestiva/Disfunção Ventricular Esquerda): 0 pontos - não mencionado</p><p><strong>H</strong> (Hipertensão): 1 ponto - confirmado no enunciado</p><p><strong>A</strong> (Idade ≥ 75 anos): 0 pontos - tem 65 anos</p><p><strong>D</strong> (Diabetes Mellitus): 0 pontos - não mencionado</p><p><strong>S</strong> (Acidente Vascular Cerebral/TIA/Tromboembolismo): 0 pontos - não mencionado</p><p><strong>V</strong> (Doença Vascular): 0 pontos - não mencionado</p><p><strong>A</strong> (Idade 65-74 anos): 1 ponto - tem 65 anos</p><p><strong>Sc</strong> (Sexo feminino): 1 ponto - mulher</p><p>Total: H (1) + A (1) + Sc (1) = 3 pontos</p><p>Analisando as alternativas:</p><p>A) 1 ponto está incorreto - ignora a idade 65-74 anos e o sexo feminino</p><p>B) 2 pontos não contempla adequadamente todos os fatores presentes</p><p>D) 6 pontos está totalmente superestimado - não há elementos para esse valor</p><p>Com CHA2DS2-VASc de 3 pontos, a paciente apresenta risco moderado-alto, recomendando anticoagulação oral para prevenção de eventos tromboembólicos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "No tratamento da pericardite, o principal responsável pela recorrência dos quadros é:",
+      "alternativas": [
+        "o uso de corticoesteroides.",
+        "o uso de 3 a 5 gramas diários de ácido acetilsalicílico.",
+        "o uso prolongado de colchicina.",
+        "a demora na normalização dos níveis de PCR sérico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda um aspecto controverso no tratamento da pericardite, especificamente sobre os fatores que contribuem para a recorrência dos episódios. O entendimento deste conceito é fundamental para a abordagem terapêutica adequada.</p><p><strong>A resposta correta é A - o uso de corticoesteroides.</strong> Os corticoesteroides, embora sejam eficazes no controle dos sintomas, são paradoxalmente associados a maior taxa de recorrência da pericardite.</p><p>O mecanismo pelo qual os corticoesteroides promovem recorrência inclui:</p><p>• Redução da resposta inflamatória local e fibrose</p><p>• Supressão do sistema imunológico que pode permitir persistência do agente causador</p><p>• Interferência na resolução natural do processo inflamatório</p><p>Analisando as alternativas incorretas:</p><p>B) AAS em altas doses (3-5g/dia) é tratamento padrão recomendado para pericardite aguda e não está associado a recorrência. Na verdade, é primeira linha junto com colchicina.</p><p>C) Colchicina é um medicamento que REDUZ a recorrência significativamente quando usado adequadamente (profilaxia). Não causa recorrência, mas previne.</p><p>D) A normalização da PCR é um marcador de resposta ao tratamento, não uma causa de recorrência. É resultado da resposta terapêutica adequada.</p><p>Por isso, as diretrizes atuais recomendam usar corticoesteroides apenas em casos específicos, priorizando AAS + colchicina como primeira linha. A evidência científica é clara: apesar do alívio sintomático, os corticoesteroides aumentam substancialmente as chances de recorrência.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "São preditores de um mau prognóstico em pacientes portadores de pericardite:",
+      "alternativas": [
+        "febre > 38 ºC, dor que não alivia com decúbito ventral, volume de derrame moderado.",
+        "falta de responsividade aos analgésicos após 24 horas de tratamento, febre > 37,5 ºC, qualquer volume de derrame pericárdico.",
+        "febre > 38 ºC, falta de responsividade ao anti-inflamatório depois de uma semana de tratamento, derrame pericárdico de volume grande.",
+        "início subagudo, dor que não alivia no decúbito ventral, qualquer volume de derrame pericárdico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre prognóstico em pericardite, especificamente sobre sinais clínicos e laboratoriais que indicam maior gravidade e potencial para complicações. O reconhecimento destes preditores é crucial para estratificação de risco.</p><p><strong>A resposta correta é C - febre > 38°C, falta de responsividade ao anti-inflamatório depois de uma semana de tratamento, derrame pericárdico de volume grande.</strong> Esta combinação representa os fatores mais associados a mau prognóstico.</p><p>Analisando cada componente da resposta correta:</p><p>• <strong>Febre > 38°C:</strong> Indica processo inflamatório intenso e possivelmente etiologia infecciosa mais agressiva</p><p>• <strong>Falta de responsividade ao anti-inflamatório após 1 semana:</strong> Sugere etiologia refratária ou complicação</p><p>• <strong>Derrame de volume grande:</strong> Indica inflamação mais severa e risco de tamponamento</p><p>Comparando com as alternativas incorretas:</p><p>A) Inclui volume moderado, que tem menor significado prognóstico que volume grande</p><p>B) Usa qualquer volume de derrame (mesmo pequeno), que não é preditor significativo, e febre de 37,5°C (limite baixo)</p><p>D) Início subagudo e dor que não alivia no decúbito ventral são características menos específicas para prognóstico que as três condições da alternativa C</p><p>Estes preditores guiam a conduta: pacientes com múltiplos fatores adversos requerem monitoramento mais estreito, investigação etiológica mais agressiva e possivelmente tratamento mais prolongado. A presença destes sinais deve elevar o índice de suspeição para etiologias mais graves como tuberculose, neoplasia ou doença autoimune.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Leia o caso clínico a seguir.\n\nHomem de 35 anos teve traumatismo cranioencefálico há um ano, admitido com múltiplos hematomas durais e suburais, Glasgow 3, tendo necessitado de internação prolongada em UTI. Desde a alta, tem tido diminuição de libido, astenia, fadigabilidade, dificuldade de ganho de peso, além de tonturas e lipotimia após ortostatismo prolongado que melhoram com o decúbito. Refere sudorese, tremores e mal-estar inespecífico após algumas horas em jejum, melhorando com a ingesta de carboidratos. Tem ainda perda de pelos pubianos, axilares e impotência. Atualmente, não está em uso de medicações.\n\nNesse caso, qual a sequência de resultado de exames esperada?",
+      "alternativas": [
+        "ACTH baixo, cortisol basal < 18 mcg/dL, FSH e LH elevados, testosterona total baixa.",
+        "ACTH alto, cortisol basal < 3 mcg/dL, FSH e LH baixos, testosterona total baixa.",
+        "ACTH normal, cortisol basal < 18 mcg/dL, FSH e LH normais, testosterona total baixa.",
+        "ACTH baixo, cortisol basal < 3 mcg/dL, FSH e LH elevados, testosterona total baixa."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFG 2021 avalia seu conhecimento sobre endocrinopatias secundárias a traumatismo cranioencefálico. O caso apresenta um homem com TCE grave há um ano, evoluindo com quadro clínico clássico de insuficiência adrenal secundária.</p><p><strong>Competência avaliada:</strong> Diagnóstico diferencial entre insuficiência adrenal primária e secundária, correlacionando clínica e exames laboratoriais.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A:</strong> ACTH baixo, cortisol basal < 18 mcg/dL, FSH e LH elevados, testosterona total baixa.<br>✗ <strong>INCORRETA.</strong> FSH e LH elevados contradizem insuficiência secundária. Na forma secundária, todos os hormônios hipofisários estão baixos ou inadequados.</p><p><strong>Alternativa B:</strong> ACTH alto, cortisol basal < 3 mcg/dL, FSH e LH baixos, testosterona total baixa.<br>✗ <strong>INCORRETA.</strong> ACTH alto sugere insuficiência primária (doença de Addison), não secundária. Na insuficiência secundária, ACTH está baixo.</p><p><strong>Alternativa C:</strong> ACTH normal, cortisol basal < 18 mcg/dL, FSH e LH normais, testosterona total baixa.<br>✓ <strong>CORRETA.</strong> Em insuficiência secundária, ACTH pode estar normal ou baixo (mas não alto), cortisol baixo, e outros hormônios hipofisários também baixos ou inadequados para estímulo.</p><p><strong>Alternativa D:</strong> ACTH baixo, cortisol basal < 3 mcg/dL, FSH e LH elevados, testosterona total baixa.<br>✗ <strong>INCORRETA.</strong> A mesma contradição da alternativa A: FSH e LH elevados não ocorre na insuficiência hipofisária.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> O TCE com hematomas durais e suburais pode terlesado a hipófise ou hipotálamo, causando hipopituitarismo. Os sintomas (fadiga, hipoglicemia, hipotensão ortostática, perda de pelos, impotência) são típicos de insuficiência adrenal secundária. A hipoglicemia e sudorese após jejum indicam deficiência de cortisol e hormônio do crescimento.</p><p><strong>VEREDITO FINAL:</strong> Gabarito C está correto. A insuficiência adrenal secundária caracteriza-se por ACTH baixo/normal, cortisol baixo, e Hipogonadismo hipogonadotropo (FSH e LH baixos ou inadequados). A testosterona baixa é esperada pelo hipogonadismo central.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia_Hipofise_NeoplasiasEndocrinasMultiplas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Leia o caso clínico a seguir.\n\nMulher de 29 anos procura atendimento com queixa de amenorreia há seis meses após a suspensão de contraceptivo oral, desejando engravidar no próximo ano. Não faz uso de medicações. Refere galactorreia à expressão bilateral, há dois meses. Funções renal, hepática e tireoidiana normais. Teste para gravidez negativo. Prolactina 1215 ng/mL. Ressonância magnética de hipófise mostrou lesão nodular intrasselar com hipossinal em T1 e hipocaptante em relação ao restante do parênquima hipofisário, medindo 0,9 cm no seu maior diâmetro.\n\nNesse caso, qual a conduta mais adequada?",
+      "alternativas": [
+        "Iniciar Cabergolina, um comprimido por semana.",
+        "Iniciar Bromocriptina, um comprimido por semana.",
+        "Iniciar Octreotide intramuscular, uma vez por mês.",
+        "Indicar cirurgia transesfenoidal e, com desaparecimento da lesão na ressonância, liberar a paciente para engravidar."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda a conduta terapêutica em prolactinomas, especialmente em mulheres jovens em idade reprodutiva. A UFG 2021 quer avaliar seu conhecimento sobre primeira linha no tratamento dessas lesões.</p><p><strong>Competência avaliada:</strong> Conduta em prolactinomas: indicações de agonistas dopaminérgicos versus cirurgia.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A:</strong> Iniciar Cabergolina, um comprimido por semana.<br>✓ <strong>CORRETA.</strong> Cabergolina é o medicamento de primeira escolha para prolactinomas, com dose inicial de 0,25-0,5mg duas vezes por semana. É mais eficaz e com menos efeitos colaterais que bromocriptina.</p><p><strong>Alternativa B:</strong> Iniciar Bromocriptina, um comprimido por semana.<br>✗ <strong>INCORRETA.</strong> Bromocriptina é menos eficaz, requer doses maiores e diárias, e tem maior incidência de efeitos colaterais (náusea, hipotensão).</p><p><strong>Alternativa C:</strong> Iniciar Octreotide intramuscular, uma vez por mês.<br>✗ <strong>INCORRETA.</strong> Octreotide é usado para tumores hipofisários que secreta GH ou TSH, não para prolactinomas. Não tem indicação em prolactinomas.</p><p><strong>Alternativa D:</strong> Indicar cirurgia transesfenoidal e, com desaparecimento da lesão na ressonância, liberar a paciente para engravidar.<br>✗ <strong>INCORRETA.</strong> Com prolactina de 1215 ng/mL e microprolactinoma (0,9 cm), a primeira linha é tratamento medicamentoso. A cirurgia é reservada para casos refratários ou intolerantes aos medicamentos.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> Prolactina > 200 ng/mL com lesão em RM confirma prolactinoma. Microprolactinomas (<1cm) raramente requerem cirurgia. Agonistas dopaminérgicos normalizam prolactina, reduzem tumor e normalizam ciclo menstrual. Cabergolina é superior a bromocriptina em eficácia e tolerabilidade.</p><p><strong>VEREDITO FINAL:</strong> Gabarito A está correto. Cabergolina é primeira linha em prolactinomas, com melhor perfil de eficácia e tolerabilidade. Permite normalização hormonal e conservação da fertilidade.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Hipofise",
+        "ClinicaMedica_Endocrinologia_Hipofise_NeoplasiasEndocrinasMultiplas",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_NeoplasiasEndocrinasMultiplas"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Ao longo do envelhecimento masculino humano saudável, qual alteração é verificada fisiologicamente, não constituindo doença ou necessidade imperativa de tratamento?",
+      "alternativas": [
+        "Diminuição dos níveis LH e FSH.",
+        "Elevação de SHBG.",
+        "Elevação dos níveis de DHEAS.",
+        "Aumento da pulsatilidade do GnRH."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão explora conhecimentos sobre endocrinologia do envelhecimento masculino. A UFG quer testar se você distingue mudanças fisiológicas normais de patologias que requerem tratamento.</p><p><strong>Competência avaliada:</strong> Alterações hormonais fisiológicas do envelhecimento masculino, diferenciando-as de doença.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A:</strong> Diminuição dos níveis LH e FSH.<br>✗ <strong>INCORRETA.</strong> LH e FSH AUMENTAM no envelhecimento masculino devido à perda da função testicular. É um mecanismo compensatório para manter a produção de testosterona.</p><p><strong>Alternativa B:</strong> Elevação de SHBG.<br>✓ <strong>CORRETA.</strong> A SHBG (globulina transportadora de hormônios sexuais) aumenta progressivamente com a idade. Isso diminui a fração livre de testosterona, contribuindo para os sintomas do aging male.</p><p><strong>Alternativa C:</strong> Elevação dos níveis de DHEAS.<br>✗ <strong>INCORRETA.</strong> DHEAS DIMINUI com a idade, como outros hormônios adrenais. É um marcador de envelhecimento adrenal e não aumenta fisiologicamente.</p><p><strong>Alternativa D:</strong> Aumento da pulsatilidade do GnRH.<br>✗ <strong>INCORRETA.</strong> A pulsatilidade do GnRH DIMINUI com a idade, resultando em menor estimulação da hipófise e subsequentemente dos testículos.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> No envelhecimento masculino saudável, observamos: 1) Diminuição da testosterona total e livre; 2) Aumento compensatório de LH e FSH; 3) Aumento de SHBG; 4) Diminuição de DHEAS; 5) Alteração do padrão de secreção do GnRH. A elevação de SHBG é fisiológica e pode contribuir para sintomas como fadiga e diminuição da libido, mas não constitui doença por si só.</p><p><strong>VEREDITO FINAL:</strong> Gabarito B está correto. A elevação de SHBG é uma mudança fisiológica normal do envelhecimento masculino, que reduz a testosterona biodisponível mas não requer tratamento rotineiro.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_DisfuncaoSexualMasculina",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "<html><head></head><body>Leia o caso clínico a seguir.\n\nHomem de 27 anos com diabetes tipo 1 há dez anos, em uso de insulina glargina 20 unidades ao deitar e insulina lispro nove unidades antes do café da manhã, oito unidades antes do almoço e cinco unidades antes do jantar. Vem em consulta assintomático, referindo fazer apenas as três refeições principais citadas, sem atividade física. Traz exame de hemoglobina glicada A1c = 7,9 %, e anotações do controle glicêmico do último mês, com glicemias médias de cada período de aferições representadas na tabela a seguir:\n\nNesse caso, o melhor ajuste da insulinoterapia para este paciente deve ser:\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ9.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "aumentar a insulina lispro do almoço.",
+        "acrescentar NPH no almoço.",
+        "aumentar insulina glargina ao deitar.",
+        "fracionar insulina glargina em duas doses diárias."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar perfil glicêmico e ajustar insulinoterapia. A UFG 2021 testou conhecimentos sobre adequação de doses de insulina basais versus prandiais.</p><p><strong>Competência avaliada:</strong> Interpretação de glicemias e ajuste racional de insulinoterapia em DM1.</p><p>Analisando o perfil glicêmico: Jejum 178 mg/dL, pré-almoço 156 mg/dL, pós-almoço 220 mg/dL, pré-jantar 180 mg/dL, pós-jantar 240 mg/dL. HBA1C 7,9% indica controle subótimo.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A:</strong> aumentar a insulina lispro do almoço.<br>✗ <strong>INCORRETA.</strong> As glicemias pré-prandiais já estão elevadas, indicando déficit de insulina basal, não apenas prandial. Aumentar apenas lispro do almoço não resolve o problema de base.</p><p><strong>Alternativa B:</strong> acrescentar NPH no almoço.<br>✗ <strong>INCORRETA.</strong> NPH é insulina basal de ação intermediária. O paciente já usa glargina (basal). Substituir glargina por NPH é menos conveniente (2-3x/dia vs 1x/dia) e não necessariamente mais eficaz.</p><p><strong>Alternativa C:</strong> aumentar insulina glargina ao deitar.<br>✗ <strong>INCORRETA.</strong> Jejum 178 mg/dL indica hiperglicemia de jejum persistente, mas o problema é global (todas as glicemias elevadas). Aumento isolado da glargina pode corrigir o jejum mas não resolve as hiperglicemias pós-prandiais.</p><p><strong>Alternativa D:</strong> fracionar insulina glargina em duas doses diárias.<br>✓ <strong>CORRETA.</strong> Com glicemias persistentemente elevadas ao longo do dia, fracionar a glargina (metade deitar, metade ao acordar) proporciona cobertura basal mais uniforme, melhorando tanto jejum quanto pré-prandiais.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> Hiperglicemias persistentes em todos os períodos sugerem déficit de insulina basal. Jejum 178 mg/dL confirma. A melhor estratégia é otimizar a insulina basal com fracionamento da glargina, que proporciona pico de ação mais previsível e melhor cobertura 24h.</p><p><strong>VEREDITO FINAL:</strong> Gabarito D está correto. Fracionar glargina em 2 doses melhora a cobertura basal, corrige hiperglicemia de jejum e pré-prandiais, oferecendo controle mais uniforme ao longo do dia.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo1Dm1",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Insulinoterapia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_HiperglicemiaNoPacienteHospita"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Com relação à fisiopatologia do diabetes mellitus tipo 2, é uma alteração que contribui para a elevação da glicemia em indivíduos com síndrome metabólica:",
+      "alternativas": [
+        "diminuição da gliconeogênese hepática.",
+        "diminuição da reabsorção renal de glicose pelo transportador SGLT-2.",
+        "diminuição da secreção de incretinas, como GLP-1 e GIP.",
+        "aumento na produção de adipocitocinas, como a adiponectina."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda mecanismos moleculares do diabetes tipo 2, especificamente a fisiopatologia da hiperglicemia na síndrome metabólica. A UFG 2021 quer testar seu conhecimento sobre incretinas e sua importância no metabolismo da glicose.</p><p><strong>Competência avaliada:</strong> Fisiopatologia do DM2, com foco no papel das incretinas (GLP-1 e GIP) no controle glicêmico.</p><p><strong>ANÁLISE DAS ALTERNATIVAS:</strong></p><p><strong>Alternativa A:</strong> diminuição da gliconeogênese hepática.<br>✗ <strong>INCORRETA.</strong> No DM2 há AUMENTO da gliconeogênese hepática, não diminuição. A produção hepática de glicose está aumentada na resistência insulínica.</p><p><strong>Alternativa B:</strong> diminuição da reabsorção renal de glicose pelo transportador SGLT-2.<br>✗ <strong>INCORRETA.</strong> A reabsorção renal de glicose pelo SGLT-2 está AUMENTADA, não diminuída. Os inibidores de SGLT-2 justamente bloqueiam essa reabsorção para reduzir a glicemia.</p><p><strong>Alternativa C:</strong> diminuição da secreção de incretinas, como GLP-1 e GIP.<br>✓ <strong>CORRETA.</strong> No DM2 há redução da secreção e ação das incretinas (especialmente GLP-1), que são responsáveis por 50-70% da resposta insulínica pós-prandial. A deficiência de incretinas contribui para hiperglicemia pós-prandial.</p><p><strong>Alternativa D:</strong> aumento na produção de adipocitocinas, como a adiponectina.<br>✗ <strong>INCORRETA.</strong> A adiponectina está DIMINUída na síndrome metabólica, não aumentada. Baixa adiponectina está associada à resistência insulínica e inflamação.</p><p><strong>RACIOCÍNIO CLÍNICO:</strong> Incretinas (GLP-1 e GIP) são hormônios liberados pelo intestino após ingestão alimentar, potencializando a secreção de insulina de forma glicose-dependente. No DM2, há deficiência de incretinas, reduzindo a resposta insulínica pós-prandial em até 50%. Isso explica por que inibidores de DPP-4 (que aumentam GLP-1) e agonistas de GLP-1 são eficazes no tratamento do DM2.</p><p><strong>VEREDITO FINAL:</strong> Gabarito C está correto. A diminuição da secreção de incretinas (GLP-1 e GIP) é um mecanismo fisiopatológico importante no DM2, contribuindo para a hiperglicemia pós-prandial e justificando o uso de terapias baseadas no eixo incretínico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo2Dm2",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_DiabetesFisiopatogenia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Homem de 56 anos, diabético há dois anos, obeso, hipertenso, em tratamento para dislipidemia com estatina, procura atendimento e, de acordo com as novas evidências sobre as medicações para tratamento do diabetes e que mostrou reduzir eventos cardiovasculares em adultos com ou sem doença cardiovascular estabelecida, é a",
+      "alternativas": [
+        "dulaglutida.",
+        "dapaglifozina.",
+        "empaglifozina.",
+        "liraglutida."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFG avalia seu conhecimento sobre os novos antidiabéticos com benefícios cardiovasculares comprovados. A banca deseja que você reconheça qual medicação demonstrou reduzir eventos cardiovasculares em diabéticos, independentemente de já terem ou não doença cardiovascular estabelecida.</p><p><strong>A resposta correta é A - dulaglutida.</strong> Este agonista GLP-1 demonstrou benefícios cardiovasculares significativos em estudos como REWIND, que mostrou redução de 15% em eventos cardiovasculares maiores em pacientes com diabetes tipo 2.</p><p>Analisando as alternativas incorretas: Dapaglifozina e empaglifozina (letras B e C) são inibidores SGLT-2 com benefícios cardiovasculares comprovados, mas principalmente em pacientes com doença cardiovascular estabelecida ou insuficiência cardíaca. Já liraglutida (letra D), apesar de também ser um agonista GLP-1 com benefícios cardiovasculares, não foi a medicação especificamente citada nas evidências mais recentes mencionadas pela banca.</p><p>O raciocínio clínico envolve reconhecer que estamos na era dos antidiabéticos com benefícios cardiovasculares, e que a dulaglutida se destaca por ter evidências em população de menor risco cardiovascular, differenciando-se das outras opções.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_Insulinoterapia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente do sexo masculino, de 52 anos, com diagnóstico recente de linfoma, durante avaliação pré-tratamento com Rituximab, recebe os seguintes exames: HBsAg não reagente; Anti-HBc total reagente; Anti-HBs reagente (> 1000); Anti-HCV não reagente; PCR-HBV DNA\nnão detectado.\n\nNesse caso, qual deverá ser a conduta em relação ao tratamento?",
+      "alternativas": [
+        "Iniciar o tratamento com Rituximab e monitorizar o HBV-DNA a cada três meses, iniciando Tenofovir caso se torne detectado em qualquer momento.",
+        "Iniciar o tratamento com Rituximab sem se preocupar com o vírus da hepatite B (VHB), visto que o paciente apresenta sorologia compatível com imunidade por vacina.",
+        "Iniciar profilaxia com Entecavir antes do início do tratamento com Rituximab devido ao alto risco de reativação do VHB.",
+        "Solicitar elastografia ou biópsia hepática e iniciar tratamento com Tenofovir ou Entecavir, caso apresente fibrose hepática igual ou superior a F2."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre profilaxia de reativação de hepatite B em pacientes imunossuprimidos. A UFG busca avaliar se você reconhece o perfil sorológico que indica risco de reativação e a conduta adequada.</p><p><strong>A resposta correta é C - iniciar profilaxia com Entecavir antes do início do tratamento com Rituximab devido ao alto risco de reativação do VHB.</strong></p><p>O perfil sorológico deste paciente é clássico para infecção resolved: HBsAg negativo, anti-HBc total positivo (indicando exposição prévia), anti-HBs positivo (>1000 - imunidadevacinal ou resolved), DNA-HBV indetectável. Pacientes com este padrão sorológico estão em ALTO RISCO de reativação quando expostos a imunossupressores como rituximab.</p><p>Analisando as alternativas incorretas: A (monitorização) é insuficiente para alto risco. B (não se preocupar) ignora completamente o risco de reativação. D (elastografia/biópsia) não é necessária para o diagnóstico, já que a sorologia é diagnóstica de infecção resolved com risco de reativação.</p><p>As diretrizes brasileiras (SBH 2024) e internacionais recomendam profilaxia com entecavir ou tenofovir para todos os pacientes com anti-HBc total positivo antes de iniciar rituximab.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Hepatologia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente do sexo feminino, de 60 anos, com antecedente de dispepsia e usuária de omeprazol há 10 anos, queixa-se de diarreia\nhá 45 dias, sem sangue ou muco, acompanhada de distensão abdominal e flatulência. Nega perda de peso. Já usou antiparasitários, sem melhora. Exames fecais mostram pH fecal normal, leucócitos fecais negativos e gordura fecal positiva.\n\nSobre o quadro clínico, qual a principal hipótese diagnóstica e recomendação?",
+      "alternativas": [
+        "Intolerância à lactose ou frutose, devendo solicitar teste respiratório para intolerâncias alimentares.",
+        "Síndrome do intestino irritável, devendo ser tratada com anti espasmódico.",
+        "Supercrescimento bacteriano do intestino delgado, devendo solicitar teste respiratório com lactulose para melhor avaliação.",
+        "Neoplasia ou doença inflamatória intestinal, devendo solicitar ileocolonoscopia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFG avalia sua capacidade de diagnosticar supercrescimento bacteriano do intestino delgado (SIBO) em paciente usuária crônica de inibidor de bomba de prótons. O caso clássico de diarreia crônica em paciente em uso prolongado de omeprazol deve levantar suspeita para SIBO.</p><p><strong>A resposta correta é C - Supercrescimento bacteriano do intestino delgado, devendo solicitar teste respiratório com lactulose para melhor avaliação.</strong></p><p>Analisando o perfil clínico: mulher de 60 anos, 10 anos de uso de omeprazol, diarreia há 45 dias sem sangue, distensão, flatulência. Os exames mostram pH fecal normal, ausência de leucócitos, MAS GORDURA FECAL POSITIVA. Este último achado é crucial - esteatorreia em SIBO ocorre por desconjugação de sais biliares pela flora bacteriana.</p><p>Alternativas incorretas: A (intolerância à lactose/frutose) seria possível, mas a esteatorreia aponta para má absorção de gorduras mais sugestiva de SIBO. B (sínrome do intestino irritável) não explica a esteatorreia. D (neoplasia/DII) seria pouco provável sem perda de peso e com exames fecais normais.</p><p>O teste respiratório com lactulose é o padrão-ouro para diagnóstico de SIBO no Brasil.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_Diarreia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente do sexo masculino, de 75 anos, tabagista, vem ao consultório médico devido a esclera amarelada. Nega qualquer outro sintoma. Ao exame físico, nota-se icterícia 3+/4, e sinal de Courvoisier positivo. Sem outras alterações.\n\nConsiderando a principal hipótese diagnóstica para este paciente, quais seriam os achados laboratoriais e em exames de imagem encontrados?",
+      "alternativas": [
+        "Elevação de bilirrubina indireta, anemia, reticulocitose e USG de abdome normal.",
+        "Elevação de bilirrubina direta, FA e gama GT e USG abdome com dilatação de vias biliares intra e extrahepáticas.",
+        "Elevação de bilirrubina indireta, presença de esquizócitos, haptoglobina baixa e USG com esplenomegalia discreta.",
+        "Elevação de bilirrubina direta, FA e gama GT e USG abdome com colelitíase e coledocolitíase."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre icterícia obstrutiva. A UFG avaliará se você correlaciona corretamente os achados clínicos (sinal de Courvoisier positivo em idoso tabagista) com o perfil laboratorial e radiológico esperado.</p><p><strong>A resposta correta é B - Elevação de bilirrubina direta, FA e gama GT e USG abdome com dilatação de vias biliares intra e extrahepáticas.</strong></p><p>O sinal de Courvoisier positivo (vesícula palpável com icterícia) em idoso tabagista sugere fortemente colangiocarcinoma ou adenocarcinoma de pâncreas - causas obstrutivas de icterícia. Nestas condições, esperamos colestase com elevação predominante de bilirrubina direta, Fosfatase Alcalina e gama-GT, e dilatação das vias biliares ao ultrassom.</p><p>Alternativas incorretas: A (bilirrubina indireta) sugere hemólise ou defeito de conjugação, não obstrução. C (esquizócitos, haptoglobina baixa) sugere microangiopatia hemolítica. D (colelitíase) pode causar icterícia, mas não explica o sinal de Courvoisier positivo que indica obstáculo distal e distensão da vesícula.</p><p>A correlação clínica-radiológica é fundamental para o diagnóstico de icterícia obstrutiva.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_IctericiaNaoObstrutiva",
+        "ClinicaMedica_VesiculaEViasBiliares"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente do sexo feminino, de 50 anos, etilista e tabagista, é internada com quadro de aumento progressivo do volume abdominal\ne perda de peso. Ao exame físico, detectada ascite volumosa. Foi realizada a paracentese, sendo que a análise do líquido ascítico revelou: albumina 0,6 mg/dL, glicose 40 mg/dL, colesterol 20 mg/dL, amilase 50 mg/dL e proteínas totais 2,0 mg/dL. A dosagem sérica de albumina foi 2,8 mg/dL, de amilase 80 mg/dL e de glicemia 80 mg/dL.\n\nDiante destes dados, pode-se considerar que a causa provável do surgimento da ascite é:",
+      "alternativas": [
+        "neoplasia peritoneal.",
+        "tuberculose peritoneal.",
+        "pancreatite crônica.",
+        "hipertensão portal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFG avalia seu domínio na interpretação do líquido ascítico para determinar a etiologia da ascite. A análise de múltiplos parâmetros laboratoriais é fundamental para diferenciação diagnóstica.</p><p><strong>A resposta correta é D - hipertensão portal.</strong> Esta é uma ascite do tipo transudativa, típica de hipertensão portal em cirrose.</p><p>Para interpretação, usamos o gradiente albumina soro-ascite (GASA): GASA = albumina sérica - albumina ascítica. Neste caso: 2,8 - 0,6 = 2,2 g/dL. GASA ≥ 1,1 g/dL indica ascite por hipertensão portal (transudativa), enquanto GASA < 1,1 g/dL indica ascite exsudativa (neoplasia, tuberculose, peritonite bacteriana espontânea).</p><p>Parâmetros que confirmam transudato: proteínas totais baixas (2,0 g/dL), amilase baixa (50 mg/dL), glicose normal (40 mg/dL no ascítico, 80 mg/dL no soro). Neoplasia/peritonite (A e B) seriam exsudatos com GASA baixo. Pancreatite crônica (C) apresentaria amilase elevada no ascítico.</p><p>A interpretação sistemática do líquido ascítico é essencial na prática clínica brasileira, onde a cirrose é causa frequente de ascite.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente do sexo masculino, de 45 anos, com antecedente de pirose retroesternal há vários anos, em tratamento com inibidor de bomba de prótons, foi submetido a endoscopia digestiva alta que demonstrou a presença de hérnia hiatal e de área de mucosa em esôfago distal de coloração róseo-salmão. A biópsia desta área revelou presença de epitélio colunar com presença de células intestinalizadas, com displasia de baixo grau.\n\nNesse caso, a conduta a ser recomendada é:",
+      "alternativas": [
+        "repetir nova endoscopia e biópsia após seis meses.",
+        "realizar fundoplicatura.",
+        "realizar ressecção endoscópica.",
+        "repetir nova endoscopia e biópsia após um ano."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre manejo do esôfago de Barrett com displasia.</strong> A UFG explora aqui um cenário clínico frequente na prática gastroenterológica, exigindo que você reconheça a conduta adequada baseada em evidências atuais.</p><p><strong>O caso apresentado caracteriza esôfago de Barrett confirmado por histopatologia</strong>, com evidência de displasia de baixo grau. Essa condição representa um risco aumentado para adenocarcinoma esofágico, exigindo vigilância endoscópica rigorosa.</p><p>Analisando as alternativas:</p><p><strong>A) Repetir endoscopia e biópsia após seis meses - CORRETA.</strong> Esta é a conduta padrão para Barrett com displasia de baixo grau, seguindo as diretrizes da Sociedade Brasileira de Endoscopia Digestiva. A vigilância em 6 meses permite monitorar a progressão displásica e detectar possíveis áreas de displasia de alto grau que requereriam intervenção mais agressiva.</p><p><strong>B) Realizar fundoplicatura - INCORRETA.</strong> A fundoplicatura é procedimento cirúrgico indicado para doença do refluxo gastroesofágico refratária ou complicações como estenose. Não é tratamento para displasia em Barrett.</p><p><strong>C) Realizar ressecção endoscópica - INCORRETA.</strong> A ressecção endoscópica está indicada em Barrett com displasia de alto grau ou carcinoma superficial inicial. Na displasia de baixo grau, a abordagem preferencial é vigilância endoscópica.</p><p><strong>D) Repetir endoscopia e biópsia após um ano - INCORRETA.</strong> O intervalo de 6 meses é fundamental para displasia de baixo grau. Aguardar 12 meses poderia permitir progressão não detectada para displasia de alto grau.</p><p><strong>Veredito: A alternativa A é a conduta correta, seguindo protocolos de vigilância endoscópica para Barrett com displasia de baixo grau.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente de 35 anos, assintomático, utiliza candesartana cilexetila com hidroclorotiazida para controle de hipertensão arterial. Em hemograma de rotina, foram encontrados: Hb: 13,0 g/dL, GB: 5400/uL, neutrófilos: 3100/uL, plaquetas: 87.000/uL. Após avaliação do hematologista, foram encontrados: reticulócitos: 1,8%, DHL: 130,0, FAN: pontilhado fino 1:80, fator reumatoide: normal, proteína c\nreativa: 0,5 mg/dL, TP: 87% atividade, TTPA: relação p/n: 1,2, contagem de plaquetas pelo citrato: 175.000/uL.\n\nNesse caso, o diagnóstico é:",
+      "alternativas": [
+        "plaquetopenia Induzida por medicamento.",
+        "plaquetopenia autoimune.",
+        "pseudo-plaquetopenia.",
+        "colagenose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão testa seu conhecimento sobre investigação laboratorial de plaquetopenias.</strong> A UFG apresenta um caso típico que avalia sua capacidade de interpretar resultados aparentemente contraditórios e chegar ao diagnóstico correto.</p><p><strong>O achado fundamental é a discrepância entre contagens plaquetárias:</strong> 87.000/uL no hemograma inicial versus 175.000/uL na contagem por citrato. Essa diferença sugere fortemente pseudo-plaquetopenia por agregação plaquetária in vitro.</p><p>Analisando as alternativas:</p><p><strong>A) Plaquetopenia induzida por medicamento - INCORRETA.</strong> Embora o paciente use hidroclorotiazida (medicamento conhecido por causar plaquetopenia), a normalização da contagem no citrato descarta esse mecanismo. A plaquetopenia induzida por fármaco persistiria independente do anticoagulante utilizado.</p><p><strong>B) Plaquetopenia autoimune - INCORRETA.</strong> A plaquetopenia autoimune caracteristicamente mostra FAN negativo e não apresenta normalização com citrato. A diferença entre as contagens descarta processo imune verdadeiro.</p><p><strong>C) Pseudo-plaquetopenia - CORRETA.</strong> A diferença significativa entre contagens (87.000 vs 175.000/uL) é patognomônica de agregação plaquetária dependente de EDTA. O EDTA é o anticoagulante do hemograma, enquanto o citrato impede a agregação. Esse fenômeno afeta cerca de 1-2% da população e é benigno.</p><p><strong>D) Colagenose - INCORRETA.</strong> O FAN com padrão pontilhado fino 1:80 é frequentemente inespecífico e não indica doença do colágeno ativa. A normalização com citrato confirma que não há processo hematológico real.</p><p><strong>Veredito: A alternativa C é o diagnóstico correto, identificando pseudo-plaquetopenia por agregação plaquetária dependente de EDTA.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Qual destes fatores da hemostasia vitamina-K dependentes tem sua meia-vida sérica mais curta?",
+      "alternativas": [
+        "Fator II.",
+        "Fator IX.",
+        "Fator X.",
+        "Fator VII."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre farmacologia dos fatores de coagulação vitamina-K dependentes.</strong> A UFG explora um aspecto técnico importante da hemostasia, exigindo que você conhecimento das características biológicas de cada fator.</p><p><strong>A meia-vida dos fatores de coagulação varia significativamente</strong> e é crucial para entender o monitoramento de anticoagulação com varfarina e a correção de deficiências de vitamina K.</p><p>Analisando as alternativas:</p><p><strong>A) Fator II (protrombina) - INCORRETA.</strong> O Fator II possui meia-vida de aproximadamente 60-72 horas, sendo o fator vitamina-K dependente com meia-vida mais longa.</p><p><strong>B) Fator IX - INCORRETA.</strong> O Fator IX apresenta meia-vida de cerca de 18-24 horas, intermediaria entre os fatores vitamina-K dependentes.</p><p><strong>C) Fator X - INCORRETA.</strong> O Fator X tem meia-vida de aproximadamente 24-40 horas, também intermediaria.</p><p><strong>D) Fator VII - CORRETA.</strong> O Fator VII possui a meia-vida mais curta entre os fatores vitamina-K dependentes, variando de 3-6 horas. Esta característica explica por que a atividade do Fator VII é o primeiro parâmetro a se alterar quando há deficiência de vitamina K ou uso de anticoagulantes antagonistas da vitamina K.</p><p><strong>Esta questão é fundamental para entender o monitoramento laboratorial em pacientes anticoagulados e explica por que o INR se normaliza rapidamente quando a varfarina é suspensa.</strong></p><p><strong>Veredito: A alternativa D é correta, pois o Fator VII tem a meia-vida mais curta entre os fatores vitamina-K dependentes.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Na mielofibrose primária, qual dos fatores é considerado como fator adverso no cálculo do DIPPS-plus?",
+      "alternativas": [
+        "Grau de fibrose medular.",
+        "Necessidade transfusional.",
+        "Baço 5 cm ou mais abaixo do rebordo costal esquerdo.",
+        "Leucócitos abaixo de 3.500/uL."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre prognóstico na mielofibrose primária usando o escore DIPSS-plus.</strong> A UFG explora critérios prognósticos específicos em neoplasia hematológica, exigindo que você conheça os fatores adversos validados em estudos clínicos.</p><p><strong>O escore DIPSS-plus é a versão atualizada do DIPSS</strong> que incorpora três fatores prognósticos adicionais para estratificar o risco em mielofibrose primária.</p><p>Analisando as alternativas:</p><p><strong>A) Grau de fibrose medular - INCORRETA.</strong> O grau de fibrose, por si só, não é um fator prognóstico independente no DIPSS-plus. A fibrose é característica definidora da doença, mas sua gradação não impacta o prognóstico da mesma forma que os fatores clínicos.</p><p><strong>B) Necessidade transfusional - CORRETA.</strong> A dependência transfusional é um dos três fatores prognósticos adicionais do DIPSS-plus. Pacientes que requerem transfusões regulares de concentrado de hemácias têm pior prognóstico, refletindo falência medular avançada.</p><p><strong>C) Baço 5 cm ou mais abaixo do rebordo costal esquerdo - INCORRETA.</strong> Embora a esplenomegalia seja um achado comum na mielofibrose, o ponto de corte para prognóstico no DIPSS-plus é de 10 cm abaixo do rebordo costal, não 5 cm.</p><p><strong>D) Leucócitos abaixo de 3.500/uL - INCORRETA.</strong> A leucopenia (< 3.500/uL) não é um fator prognóstico definido no DIPSS-plus. A contagem leucocitária elevada (> 25.000/uL) é um fator de pior prognóstico, mas leucopenia não tem valor prognóstico estabelecido.</p><p><strong>Os três fatores adicionais do DIPSS-plus são: necessidade transfusional, plaquetas < 100.000/uL e grupos citogenéticos desfavoráveis.</strong></p><p><strong>Veredito: A alternativa B é correta, pois a necessidade transfusional é um dos fatores prognósticos adversos no DIPSS-plus.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MielodisplasiasEMieloprolifera"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "No mieloma múltiplo, a presença de lesão de órgãos-alvo (anemia, hipercalcemia, lesões ósseas ou insuficiência renal) é indicativo de tratamento. Segundo o International Myeloma Working Group (IMWG), qual seria outra possível indicação?",
+      "alternativas": [
+        "Relação de cadeias leves livres Kappa/Lambda no sangue > 100,0.",
+        "Infiltração medular por plasmócitos maior que 45%.",
+        "Contagem plaquetária < 150.000/uL.",
+        "Beta-2 microglobulina maior que 3,5 g/dL."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre critérios de tratamento no mieloma múltiplo segundo o IMWG 2025.</strong> A UFG explora as indicações terapêuticas baseadas em biomarcadores específicos, exigindo que você conheça os critérios atualizados para início de tratamento.</p><p><strong>O International Myeloma Working Group estabelece critérios claros</strong> para diferenciar pacientes que requerem tratamento imediato daqueles que podem ser apenas observados (gama monoclonal de significado incerto).</p><p>Analisando as alternativas:</p><p><strong>A) Relação de cadeias leves livres Kappa/Lambda no sangue > 100,0 - CORRETA.</strong> Esta é uma das indicações para tratamento no mieloma múltiplo. A proporção > 100:1 indica produção monoclonal exuberante de uma cadeia leve específica, refletindo doença ativa. Segundo as diretrizes IMWG 2025, relação Kappa/Lambda > 100 (ou < 0,01 para Lambda) é critério de mieloma múltiplo sintomático independente da presença de lesões de órgãos-alvo.</p><p><strong>B) Infiltracao medular por plasmócitos maior que 45% - INCORRETA.</strong> Este era um critério antigo do IMWG, mas foi removido nas atualizações mais recentes. A presença de > 60% de plasmócitos medulares, associada a outros fatores, pode indicar mieloma múltiplo, mas 45% isoladamente não é critério atual.</p><p><strong>C) Contagem plaquetária < 150.000/uL - INCORRETA.</strong> Trombocitopenia pode ocorrer no mieloma múltiplo por substituição medular, mas não é um critério isolado para início de tratamento. A plaquetopenia sem outras evidências de doença ativa não justifica terapia.</p><p><strong>D) Beta-2 microglobulina maior que 3,5 g/dL - INCORRETA.</strong> A beta-2 microglobulina elevada (> 3,5 mg/dL) é um fator prognóstico, mas não é critério isolado para tratamento. Ela é incorporada no estadiamento ISS (International Staging System), mas por si só não indica necessidade terapêutica.</p><p><strong>Veredito: A alternativa A é correta, pois a relação Kappa/Lambda > 100 é uma das indicações para tratamento no mieloma múltiplo segundo o IMWG 2025.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_FundamentosDeOncohematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_GamopatiasMonoclonais"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Na síndrome hipereosinofílica clonal, o rearranjo de qual gene pode dar origem à doença?",
+      "alternativas": [
+        "CALR.",
+        "BCR-ABL.",
+        "PDGFRA.",
+        "TET2."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFG 2021 aborda um tema específico de hematoonco: os rearranjos genéticos associados à síndrome hipereosinofílica clonal. O examinador busca avaliar se você conhece os biomarcadores moleculares desta condição.</p><p><strong>A resposta correta é C - PDGFRA.</strong> O rearranjo do gene PDGFRA (platelet-derived growth factor receptor alpha) é um dos principais achados genéticos na síndrome hipereosinofílica clonal. Este rearranjo resulta na formação de um produto de fusão FIP1L1-PDGFRA, que confere atividade tirosina quinase constitutiva aos eosinófilos, promovendo sua proliferação descontrolada.</p><p>Analisando as outras alternativas:</p><p><strong>A) CALR:</strong> O gene CALR (calreticulina) está envolvido nas neoplasias mieloproliferativas, particularmente na trombocitemia essencial e na mielofibrose primária, mas não na síndrome hipereosinofílica clonal.</p><p><strong>B) BCR-ABL:</strong> Este é o gene de fusão característico da leucemia mieloide crônica (LMC) e da leucemia linfoblástica aguda positiva para Ph, não estando relacionado à síndrome hipereosinofílica clonal.</p><p><strong>D) TET2:</strong> As mutações no gene TET2 são encontradas em diversas neoplasias hematológicas, incluindo síndromes mielodisplásicas, leucemia mieloide aguda e síndromes mieloproliferativas, mas não são o rearranjo característico da síndrome hipereosinofílica clonal.</p><p>O conhecimento dos rearranjos genéticos específicos é fundamental para o diagnóstico e tratamento direcionado desta síndrome, pois permite o uso de inibidores de tirosina quinase como o imatinibe, que demonstrou eficácia significativa em casos com rearranjo PDGFRA.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Leucemias",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MielodisplasiasEMieloprolifera"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Qual fator tem pouca influência na má resposta da administração de eritropoetina recombinante para correção da anemia na doença renal crônica?",
+      "alternativas": [
+        "Deficiência de ferro.",
+        "Infecção.",
+        "Subdiálise.",
+        "Hiperhomocisteinemia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFG avalia seu conhecimento sobre os fatores que influenciam a resposta ao tratamento com eritropoetina recombinante (EPO) na doença renal crônica. O objetivo é identificar qual fator tem menor impacto na resistência ao tratamento.</p><p><strong>A resposta correta é D - hiperhomocisteinemia.</strong> Embora a hiperhomocisteinemia seja comum na doença renal crônica e esteja associada ao aumento do risco cardiovascular, ela não exerce influência significativa na má resposta à eritropoetina recombinante para correção da anemia.</p><p>Analisando os outros fatores que realmente influenciam a resposta à EPO:</p><p><strong>A) Deficiência de ferro:</strong> É uma das principais causas de resistência à EPO. Sem ferro adequado disponível para a eritropoiese, a EPO não consegue стимулировать a produção adequada de hemácias, mesmo em altas doses.</p><p><strong>B) Infecção:</strong> O estado inflamatório e infeccioso suprime a produção de EPO endógena e cria resistência aos efeitos da EPO exógena, sendo uma causa importante de falha terapêutica.</p><p><strong>C) Subdiálise:</strong> O inadequado clearance de toxinas urêmicas prejudica a resposta à EPO. Uma diálise adequada remove essas substâncias que interferem na eritropoiese e na sensibilidade à EPO.</p><p>É importante que você entenda que o manejo da anemia na DRC requer abordagem multifatorial, tratando ativamente as causas de resistência à EPO. A hiperhomocisteinemia, apesar de sua importância epidemiológica, não está entre os principais determinantes da resposta eritropoiética.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_ManejoDaDrc"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Qual é a principal causa de síndrome de Fanconi em adultos?",
+      "alternativas": [
+        "Mieloma múltiplo.",
+        "Medicação.",
+        "Síndrome nefrótica.",
+        "Cistinose."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFG explora o conhecimento sobre as etiologias da síndrome de Fanconi em adultos, diferenciando das causas pediátricas mais comuns. O foco está na epidemiologia e nas causas mais prevalentes em cada faixa etária.</p><p><strong>A resposta correta é B - medicação.</strong> Em adultos, os medicamentos são a principal causa da síndrome de Fanconi, destacando-se especialmente o tenofovir, medicamentos citotóxicos (comoifosfamida, carboplatina), anti-inflamatórios não esteroidais (AINEs) e anticonvulsivantes como o topiramato e zonisamida.</p><p>Analisando as outras alternativas:</p><p><strong>A) Mieloma múltiplo:</strong> Embora possa causar disfunção tubularproximal em alguns casos, não é a principal causa de síndrome de Fanconi em adultos. O mieloma mais frequentemente causa síndrome de Fanconi quando associado à amiloidose AL ou a gamapatia monoclonal de significado incerto.</p><p><strong>C) Síndrome nefrótica:</strong> A síndrome nefrótica cursa com proteinúria de padrão não seletivo, edema, hipercolesterolemia e hipoalbuminemia, mas não cursa tipicamente com disfunção tubular proximal característica da síndrome de Fanconi.</p><p><strong>D) Cistinose:</strong> Esta é uma causa importante de síndrome de Fanconi, mas é uma doença genética rara que se manifesta na infância, não sendo a principal causa em adultos. A forma adulta é ainda mais rara.</p><p>É fundamental reconhecer que as causas de Fanconi variam significativamente com a idade. Em crianças, as causas genéticas (como cistinose, síndrome de Lowe, galactosemia) predominam, enquanto em adultos, a iatrogenia medicamentosa é a etiologia mais frequente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Tubulointersticio"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Na nefropatia pela anemia falciforme, a",
+      "alternativas": [
+        "alteração glomerular mais frequente observada é a glomerulopatia membranosa.",
+        "necrose papilar renal, decorrente da oclusão dos capilares glomerulares, apesar de bastante frequente, costuma ser assintomática.",
+        "disfunção tubular renal manifesta-se tipicamente pelo defeito na produção de anidrase carbônica.",
+        "alteração da capacidade de concentração urinária que manifesta-se com poliúria, noctúria, e susceptibilidade à desidratação é uma manifestação típica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFG 2021 aborda as manifestações renais específicas da anemia falciforme. A nefropatia falciforme apresenta características únicas que se desenvolvem devido àoclusão vascular crônica e às crises vaso-oclusivas características da doença.</p><p><strong>A resposta correta é D - alteração da capacidade de concentração urinária que manifesta-se com poliúria, noctúria, e susceptibilidade à desidratação é uma manifestation típica.</strong> Esta é realmente uma manifestação clássica e precoce da nefropatia falciforme, decorrente do comprometimento da função do ducto coletor medular, onde a alta concentração de hemoglobina S promove vaso-oclusão crônica e isquemia medular.</p><p>Analisando as outras alternativas:</p><p><strong>A) alteração glomerular mais frequente observada é a glomerulopatia membranosa:</strong> Incorreto. Na nefropatia falciforme, a lesão glomerular mais frequente é a glomerulosclerose segmentar e focal (GESF), seguida pela glomerulopatia mesangial proliferativa, não a glomerulopatia membranosa.</p><p><strong>B) necrose papilar renal...assintomática:</strong> Incorreto. A necrose papilar renal na anemia falciforme, embora frequente, costuma ser SINTOMÁTICA, apresentando-se com dor lombar, hematúria e piúria. O diagnóstico é frequentemente feito através de ultrassom que mostraeccentricidade papilar.</p><p><strong>C) disfunção tubular...defeito na produção de anidrase carbônica:</strong> Incorreto. A disfunção tubular da anemia falciforme manifesta-se tipicamente pelo defeito na concentração urinária e na acidificação distal, não na produção de anidrase carbônica. A acidificação é comprometida pelo dano às células intercalares do ducto coletor.</p><p>O diagnóstico de nefropatia falciforme deve ser suspeitado em qualquer paciente com doença falciforme que apresente alterações renais. A compreensão dessas manifestações é crucial para o manejo adequado e prevenção de complicações.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Tubulointersticio",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_ControleDaAguaCorporalTotal"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente de 55 anos, com diabetes há quinze anos, relata edema progressivo de membros inferiores há três meses. Os primeiros exames laboratoriais evidenciaram: creatinina: 1,2 mg/dL; EAS: proteinúria +3/+4; proteinúria: 8,0 g/24h, além de hipercolesterolemia e hipoalbuminemia. A biópsia renal mostrou glomérulos com discreto aumento de matriz e mesangial e membrana basal glomerular difusamente espessada com formação de pequenas espículas. A avaliação imuno-histoquímicas revelou positividade de padrão granular ao longo da membrana basal para IgG, C3, e anti-PLA2R.\n\nNesse caso, o diagnóstico mais provável é:",
+      "alternativas": [
+        "glomeruloesclerose segmentar e focal.",
+        "glomerulopatia membranosa primária.",
+        "nefropatia diabética.",
+        "glomerulonefrite mesangial."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFG apresenta um caso clínico complexo de glomerulopatia que exige análise cuidadosa dos dados clínicos, laboratoriais e histopatológicos. O objetivo é testar sua capacidade de integrar diferentes informações para chegar ao diagnóstico correto.</p><p><strong>A resposta correta é B - glomerulopatia membranosa primária.</strong> Este diagnóstico é confirmado pelos achados da biópsia renal: espessamento difuso da membrana basal glomerular com formação de espículas (patognomônico), e principalmente pela positividade imuno-histoquímica de padrão granular para IgG, C3 e anti-PLA2R.</p><p>A positividade para anti-PLA2R (phospholipase A2 receptor) é marcadora específica da glomerulopatia membranosa primária, confirmando que se trata da forma idiopática e não secundária. O padrão granular de deposição de IgG e C3 ao longo da membrana basal é característico.</p><p>Analisando as outras alternativas:</p><p><strong>A) glomeruloesclerose segmentar e focal (GESF):</strong> A GESF cursa com proteinúria seletiva (albumina) e não apresenta os achados histopatológicos descritos: a biópsia deveria mostrar esclerose segmental dos glomérulos, não espessamento difuso da MBG com espículas. Além disso, não haveria positividade para anti-PLA2R.</p><p><strong>C) nefropatia diabética:</strong> Embora o paciente seja diabético há 15 anos, a presença de anti-PLA2R e o padrão granular de IgG e C3 descartam a nefropatia diabética. Na nefropatia diabética, a imunofluorescência é negativa ou mostra apenas deposição fraca de albumina, sem o padrão granular característico.</p><p><strong>D) glomerulonefrite mesangial:</strong> Esta classificação é imprecisa e inadequada para este caso. A glomerulonefrite mesangial cursaria com proliferação mesangial proeminente e deposição de imunocomplexos no mesângio, não com o espessamento difuso da MBG e espículas descritos. Além disso, não haveria positividade para anti-PLA2R.</p><p>A proteinúria de 8g/24h e a positividade para anti-PLA2R confirmam que se trata de uma glomerulopatia membranosa primária ativa, que requer imunossupressão específica para controle da proteinúria e prevenção de progressão para insuficiência renal.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_AsGrandesSindromesGlomerulares"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Na patogênese da nefrolitíase, considera-se que exista um desequilíbrio entre os fatores que promovem a precipitação de sais na urina e a solubilidade destes. Uma característica desse processo é que:",
+      "alternativas": [
+        "o Pirofosfato é um inibidor da cristalização urinária de baixo peso molecular.",
+        "o PH urinário alcalino diminui a solubilidade e predispões a formação de cálculos de cistina.",
+        "na hiperuricosúria recomenda-se acidificar a urina para aumentar a solubilidade do ácido úrico.",
+        "a restrição de cálcio na dieta reduz a absorção intestinal de oxalato, predispondo à precipitação de oxalato de cálcio."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>A resposta correta é A - o Pirofosfato é um inibidor da cristalização urinária de baixo peso molecular.</strong></p><p>Esta questão avalia seu conhecimento sobre os mecanismos de formação de cálculos renais, especificamente sobre os fatores inibidores da cristalização. A banca UFG quer verificar se você conhece os inibidores naturais da litogênese.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p>A <strong>alternativa A está CORRETA</strong>. O pirofosfato é realmente um inibidor de cristalização de baixo peso molecular que atua na urina, prevenindo a formação de cristais de fosfato de cálcio. Funciona adsorvendo-se à superfície dos cristais, impedindo seu crescimento e agregação.</p><p>A <strong>alternativa B está INCORRETA</strong>. O pH urinário alcalino na verdade AUMENTA a solubilidade da cistina, não diminui. A cistina é pouco solúvel em pH ácido e mais solúvel em pH alcalino. A restrição aqui é que em pH muito alto (>7,5) pode haver precipitação de fosfato.</p><p>A <strong>alternativa C está INCORRETA</strong>. Para aumentar a solubilidade do ácido úrico, o pH urinário deve ser ALCALINIZADO (pH>6,0), não acidificado. Em pH ácido (pH<5,5), o ácido úrico está na forma menos solúvel e precipita mais facilmente.</p><p>A <strong>alternativa D está INCORRETA</strong>. A restrição de cálcio na dieta PARADOXALMENTE aumenta a absorção de oxalato no intestino, já que o cálcio dietary se liga ao oxalato formando complexo não absorvível. Com menos cálcio, mais oxalato livre é absorvido, aumentando a excreção urinária de oxalato e predispondo a cálculos de oxalato de cálcio.</p><p>O entendimento dos inibidores e facilitadores da cristalização é fundamental para o manejo clínico da nefrolitíase, incluindo recomendações dietéticas e tratamento farmacológico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "ClinicaMedica_Nefrologia_Nefrolitiase_IntroducaoANefrolitiase"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Na glomerulonefrite rapidamente progressiva (GNRP),",
+      "alternativas": [
+        "a nefropatia por IgA é mediada por imunocomplexos, caracterizada pelo achado na imunofluorescência de IgG, IgA, IgM, C1q em glomérulo, também chamado de \"full house\".",
+        "a glomerulonefrite crescêntica pauci-imune se caracteriza por poucos ou ausência de depósitos na imunofluorescência ou microscopia eletrônica.",
+        "associada à doença de Goodpasture, a plasmaferese está contraindicada se houver hemorragia pulmonar.",
+        "a microscopia de luz é o padrão-ouro para o diagnóstico."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A resposta correta é B - a glomerulonefrite crescêntica pauci-imune se caracteriza por poucos ou ausência de depósitos na imunofluorescência ou microscopia eletrônica.</strong></p><p>Esta questão da banca UFG testa seu conhecimento sobre as diferentes formas de glomerulonefrite rapidamente progressiva, especificamente sobre os padrões de deposição imune característicos de cada tipo.</p><p>Vamos analisar sistematicamente cada alternativa:</p><p>A <strong>alternativa A está INCORRETA</strong>. A nefropatia por IgA NÃO apresenta o padrão \"full house\". O padrão \"full house\" (deposição de IgG, IgA, IgM, C1q, C3) é característico da glomerulonefrite membranoproliferativa e lúpus eritematoso sistêmico. A nefropatia por IgA mostra predominantemente deposição de IgA na mesangial, sem o padrão completo do \"full house\".</p><p>A <strong>alternativa B está CORRETA</strong>. A glomerulonefrite crescêntica pauci-imune (associada a ANCA) realmente apresenta pouquíssimos ou nenhum depósito imune na imunofluorescência e microscopia eletrônica. É chamada de \"pauci-imune\" exatamente por essa característica. Os casos positivos para ANCA anti-MPO ou anti-PR3 pertencem a este grupo.</p><p>A <strong>alternativa C está INCORRETA</strong>. A plasmaferese NO GOODPASTURE está indicada exatamente quando há hemorragia pulmonar. Ogoodpasture clássico cursa com glomerulonefrite e hemorragia alveolar. A plasmaferese é uma emergência terapêutica indicada para remover anticorpos anti-membrana basal e é mandatória na presença de sangramento pulmonar.</p><p>A <strong>alternativa D está INCORRETA</strong>. A microscopia eletrônica NÃO é o padrão-ouro para diagnóstico de GNRP. O padrão-ouro é a biopsia renal com microscopia de luz, que demonstra formação de crescentes em >50% dos glomérulos. A imunofluorescência é fundamental para classificar o tipo (pauci-imune, imune complex-mediated, ou anti-GBM).</p><p>O diagnóstico diferencial entre os tipos de GNRP é crucial para o tratamento, que varia significativamente entre as formas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_AsGrandesSindromesGlomerulares"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "O mecanismo pelo qual o Sars-CoV-2 produz anosmia e pode invadir o sistema nervoso central é:",
+      "alternativas": [
+        "via hematogência, por passagem nos capilares e invasão nos vasos-nervorum do bulbo olfatório.",
+        "tropismo da proteína S (Spike) viral para os receptores da angiotensina, abundantes no bulbo olfatório.",
+        "pela invasão direta do vírus nas células nervosas do bulbo olfatório através dos poros das membranas celulares.",
+        "pela atração dos linfócitos e monócitos, gerando um processo inflamatório, que lesam as células neuronais do bulbo olfatório."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A resposta correta é B - tropismo da proteína S (Spike) viral para os receptores da angiotensina, abundantes no bulbo olfatório.</strong></p><p>Esta questão avalia seu conhecimento sobre a fisiopatologia da anosmia na COVID-19 e o neurotropismo do SARS-CoV-2. A banca UFG quer verificar se você conhece os mecanismos moleculares específicos de invasão viral.</p><p>Vamos analisar cada mecanismo proposto:</p><p>A <strong>alternativa A está INCORRETA</strong>. A via hematogênica com invasão pelos vasos-nervorum não é o mecanismo principal do SARS-CoV-2. Embora alguns vírus possam usar essa rota, o SARS-CoV-2 tem tropismo específico e não usa predominantemente essa via para atingir o sistema nervoso central.</p><p>A <strong>alternativa B está CORRETA</strong>. O SARS-CoV-2 utiliza a proteína spike (S) para se ligar ao receptor ECA2 (enzima conversora da angiotensina 2). O bulbo olfatório é rico em receptores ECA2, o que explica a alta frequência de anosmia como sintoma precoce. O vírus infecta as células sustentaculares do epitélio olfatório que expressam ECA2, causando disfunção olfatória e potencialmente invasão neural secundária.</p><p>A <strong>alternativa C está INCORRETA</strong>. A invasão direta através de poros das membranas celulares não é o mecanismo do SARS-CoV-2. O vírus não tem capacidade de formar poros ou atravessar diretamente as membranas. A entrada viral ocorre exclusivamente via receptor-específico (ECA2) com necessidade de co-receptores (como TMPRSS2).</p><p>A <strong>alternativa D está INCORRETA</strong>. Embora a inflamação seja importante na patogênese da COVID-19, a anosmia não é causada primariamente por atração de linfócitos/monócitos lesando neurônios. O mecanismo principal é a infecção direta das células sustentaculares com disfunção dos neurônios olfatórios secundariamente.</p><p>O conhecimento deste mecanismo é fundamental para entender a patogênese neurológica da COVID-19 e o predomínio de sintomas olfatórios precoces.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasImunologicasDoSistemaNe"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Uma das complicações frequentes da Covid-19 é o AVC. Quais dos exames a seguir são preditores de um quadro de tromboembolismo?",
+      "alternativas": [
+        "TGO, TGP e fosfatase alcalina.",
+        "Ácido lático, coagulograma e ferritina.",
+        "Contagem de plaquetas e linfócitos e treponina.",
+        "D-dímero, proteína c reativa (PCR) e TP -TTPA."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>A resposta correta é D - D-dímero, proteína C reativa (PCR) e TP -TTPA.</strong></p><p>Esta questão da UFG avalia seu conhecimento sobre biomarcadores que indicam estado pró-coagulante e inflamatório na COVID-19, especialmente relacionados ao risco de tromboembolismo. O AVC é uma complicação frequente na COVID-19 devido ao estado de hipercoagulabilidade.</p><p>Vamos analisar sistematicamente cada grupo de marcadores:</p><p>A <strong>alternativa A está INCORRETA</strong>. TGO, TGP e fosfatase alcalina são marcadores de função hepática e lesão hepatocelular. Aunque alterações hepáticas possam ocorrer na COVID-19, estes não são marcadores específicos para predizer tromboembolismo.</p><p>A <strong>alternativa B está INCORRETA</strong>. O ácido lático pode estar elevado na COVID-19 grave por hipoperfusão tecidual, mas não é preditor específico de tromboembolismo. Ferritina elevado indica inflamação sistêmica (citocínica), mas não diretamente risco tromboembólico específico.</p><p>A <strong>alternativa C está INCORRETA</strong>. A contagem de plaquetas pode estar aumentada ou normal na COVID-19, mas não é preditor específico de tromboembolismo. Linfócitos baixos são marcador de gravidade, mas não de trombose. Troponina elevada indica lesão miocárdica, não diretamente risco tromboembólico.</p><p>A <strong>alternativa D está CORRETA</strong>. Estes são os principais marcadores de risco tromboembólico na COVID-19:</p><p>• <strong>D-dímero elevado</strong> indica ativação da coagulação e fibrinólise, correlacionando-se fortemente com risco de trombose venosa, embolia pulmonar e trombose arterial.</p><p>• <strong>PCR elevada</strong> reflete inflamação sistêmica, que contribui para o estado pró-coagulante através de ativação endotelial.</p><p>• <strong>TP e TTPA prolongados</strong> indicam alterações na via intrínseca e extrínseca da coagulação, sugerindo consumo de fatores de coagulação e direcionando para o uso de anticoagulação.</p><p>A elevação destes marcadores em pacientes com COVID-19 indica necessidade de anticoagulação profilática ou terapêutica para prevenir eventos tromboembólicos.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AcidentesVascularesCerebraisAv",
+        "ClinicaMedica_Nefrologia_AcidentesVascularesCerebraisAv"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Leia o caso clínico a seguir.\n\nUma jovem de 22 anos apresenta quadro subagudo de perda visual bilateral e, após 12 horas, só consegue visualizar vultos e inicia vômitos seguidos, sendo levada ao prontosocorro mais próximo. Avaliada pelo neurologista, sua visão apresenta comprometimento bilateral, conseguindo apenas identificar luzes. Faz uma ressonância que demonstra comprometimento do nervo óptico bilateral com envolvimento quiasmático e lesão em área prostema do tronco encefálico.\n\nNesse caso, qual o diagnóstico?",
+      "alternativas": [
+        "ADEM.",
+        "Esclerose múltipla.",
+        "Neuromielite óptica.",
+        "MONEM (anti-MOG)."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>A resposta correta é C - Neuromielite óptica.</strong></p><p>Esta questão da UFG apresenta um caso clínico clássico que testa seu conhecimento sobre o diagnóstico diferencial entre condições desmielinizantes do sistema nervoso central. A apresentação bilateral, rápida progressão e envolvimento do quiasma são características distintivas importantes.</p><p>Vamos analisar o caso e cada diagnóstico diferencial:</p><p>O caso apresenta: <strong>jovem de 22 anos, perda visual bilateral subaguda (12 horas), comprometimento quiasmático bilateral, e lesão em área prosterna do tronco encefálico</strong>. Esta tríade é altamente sugestiva de neuromielite óptica.</p><p>A <strong>alternativa A (ADEM) está INCORRETA</strong>. A encefalomielite aguda disseminada (ADEM) tipicamente ocorre pós-infecciosa, apresenta múltiplas lesões assimétricas na substância branca, mas raramente cursa com envolvimento simultâneo bilateral do nervo óptico e quiasma de forma tão simétrica e rápida.</p><p>A <strong>alternativa B (Esclerose múltipla) está INCORRETA</strong>. A esclerose múltipla em geral tem curso crônico-recorrente, com lesões assimétricas e espaçadas temporalmente. É rara a apresentação simultânea bilateral do nervo óptico com quiasma e tronco encefálico em questão de horas. As lesões típicas de EM são periventriculares e ovaladas, não prosternas.</p><p>A <strong>alternativa C (Neuromielite óptica) está CORRETA</strong>. A neuromielite óptica (NMO) é caracterizada por:</p><p>• <strong>Neuropatia óptica bilateral simultânea</strong> - diferencia-se da EM que é usually unilateral inicialmente</p><p>• <strong>Involvement do quiasma</strong> - altamente característico da NMO</p><p>• <strong>Lesões prosternas</strong> - típicas da NMO, ao contrário das lesões periventriculares da EM</p><p>• <strong>Progressão rápida em horas/dias</strong> - diferentemente da EM que se desenvolve em dias/semanas</p><p>• <strong>Idade jovem e sexo feminino predominante</strong></p><p>A <strong>alternativa D (anti-MOG) está INCORRETA</strong>. A doença associada a anticorpos anti-MOG (MOGAD) pode cursar com neurite óptica, mas tem características diferentes: usually unilateral, menos frequentemente envolve o quiasma, e as lesões medulares são extensas longitudinalmente, não prosternas focalmente.</p><p>O reconhecimento destes padrões radiológicos e clínicos é fundamental para o diagnóstico correto e tratamento adequado das doenças desmielinizantes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasImunologicasDoSistemaNe"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Leia o caso clínico a seguir.\n\nUma jovem de 15 anos, após ter ficado estudando por vários dias até tarde em decorrência de uma prova, acorda pela manhã e, ao ir ao banheiro para fazer a higiene bucal, tem abalos com os dois braços de forma síncrona e rápida. É levada ao pronto-socorro e os exames neurológico e clínico não mostraram nenhuma anormalidade. Exames bioquímicos, contendo glicemia, enzimas hepáticas, hormônios tireoidianos, ureia e creatinina, foram todos normais. Ressonância de crânio, normal. EEG mostrou a presença de poliespícula onda lenta generalizada.\n\nNesse caso, qual o diagnóstico da síndrome epiléptica?",
+      "alternativas": [
+        "Ausência típica benigna.",
+        "Mioclonia juvenil benigna.",
+        "Lennox-Gastaut.",
+        "Mioclonia astática."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>A banca UFG avaliará seu domínio dos tipos de epilepsia juvenil através desta questão diagnóstica.</strong></p><p>Vamos analisar os achados fundamentais deste caso clínico. Uma jovem de 15 anos apresentou abalos síncronos e rápidos nos dois braços após um período de privação de sono prolongada durante os estudos. Este detalhe é crucial: a mioclonia juvenil benigna tipicamente se manifesta pela manhã ou após situações de estresse e privação de sono.</p><p>Os exames complementares excluem outras causas metabólicas ou estruturais. A glicemia, função hepática, renal e tireoidiana normais descartam descompensações metabólicas. A ressonância normal exclui lesões estruturais cerebrais.</p><p><strong>O achado determinante está no EEG: poliespícula onda lenta generalizada.</strong> Este padrão é característico da mioclonia juvenil benigna, distinguindo-a de outras síndromes epilépticas.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Ausência típica benigna:</strong> Incorreta. A ausência típica apresenta complexo spike-and-wave de 3 Hz no EEG, não poliespícula. Os abalos não são síncronos e rápidos como neste caso.</p><p><strong>B) Mioclonia juvenil benigna:</strong> Correta. Apresenta-se na adolescência, associada a privação de sono, com mioclonias simétricas e rápidas, e EEG com poliespícula onda lenta.</p><p><strong>C) Lennox-Gastaut:</strong> Incorreta. Síndrome epiléptica grave da infância com retardo mental, múltiplos tipos de crise, e EEG com complexo spike-and-wave lento.</p><p><strong>D) Mioclonia astática:</strong> Incorreta. Forma rara de epilepsia mioclônica com queda por perda do tônus postural, típica dos primeiros anos de vida.</p><p><strong>Resposta final: B</strong> - A clínica + EEG com poliespícula caracteriza mioclonia juvenil benigna, síndrome epiléptica de bom prognóstico e fácil controle medicamentoso.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias",
+        "ClinicaMedica_Neurologia_Epilepsias_SindromesEpilepticas"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Leia o caso clínico a seguir.\n\nHomem de 34 anos inicia quadro de febre baixa, tosse seca, anosmia e perda do paladar e procura a UPA mais próxima de sua residência e faz o teste de PCR para Covid-19. Enquanto espera o resultado sair, usando apenas dipirona e hidratação, desenvolve quadro de cefaleia, confusão mental e crises convulsivas generalizadas tônico-clônicas e é levado ao Hospital de Urgências de Goiânia. Ao chegar está comatoso, com pupilas isocóricas e fotoreagentes, reação de localização, respiração espontânea regular, abertura\nocular com estímulo doloroso e resposta verbal com sons incompreensíveis.\n\nNesse caso, a classificação de coma de Glasgow é:",
+      "alternativas": [
+        "3.",
+        "6.",
+        "9.",
+        "12."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFG testa seu conhecimento prático da escala de coma de Glasgow em um contexto de emergência neurológica.</strong></p><p>Homem de 34 anos com COVID-19 evoluiu com complicação neurológica grave, apresentando-se comatoso no hospital. A escala de Glasgow avalia três parâmetros: abertura ocular, resposta verbal e resposta motora.</p><p>Vamos interpretar cada componente:</p><p><strong>1. Abertura ocular:</strong> O paciente tem \"abertura ocular com estímulo doloroso\". Isso corresponde a 2 pontos na escala.</p><p><strong>2. Resposta verbal:</strong> O paciente apresenta \"resposta verbal com sons incompreensíveis\". Isso corresponde a 2 pontos na escala.</p><p><strong>3. Resposta motora:</strong> O paciente apresenta \"reação de localização\". Isso corresponde a 5 pontos na escala.</p><p>Somando: 2 + 2 + 5 = <strong>9 pontos</strong></p><p><strong>Análise das alternativas:</strong></p><p><strong>A) 3:</strong> Incorreta. Este seria o escore mais grave (ausência total de resposta).</p><p><strong>B) 6:</strong> Incorreta. Este escore indicaria abertura ocular por estímulo, resposta verbal inintelível, e resposta motora em flexão anormal.</p><p><strong>C) 9:</strong> Correta. Corresponde exatamente aos achados: abertura ocular por estímulo (2) + resposta verbal inintelível (2) + resposta motora de localização (5).</p><p><strong>D) 12:</strong> Incorreta. Este seria um escore de paciente menos comprometido, com abertura ocular espontânea e resposta verbal confusa.</p><p><strong>Resposta final: C</strong> - A soma correta dos três componentes da escala resulta em 9 pontos, indicando coma moderado neste paciente com complicações neurológicas do COVID-19.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "<html><head></head><body>Paciente do sexo masculino, de 56 anos, ex-tabagista com uso de 32 maços/ano parou há seis meses. Alega que, há cinco anos, tem dispneia progressiva ao andar rápido em terreno plano ou ao andar mais de 100 metros ou subir escadas ou ladeiras; associado com tosse seca recorrente e chiado no peito. Esteve internado recentemente com pneumonia. Refere há 10 dias piora da tosse\ncom escarro amarelado e piora da dispneia. Refere ter HAS, em uso irregular das medicações. Refere bronquite na infância. Mãe tem diagnóstico de asma. Ao exame: saturação periférica de oxigênio a 92% em ambiente, pressão arterial: 150x100 mmHg, regular estado geral, dispneico, frequência respiratória: 28 IRM, frequência cardíaca: 90 BPM, ausculta pulmonar: murmúrio vesicular reduzido difusamente, sem ruídos adventícios, membros: edema em membros inferiores bilateral e simétricos (2+/4+) e hemograma (eosinófilo 1% 89). Traz na consulta um raio X de tórax conforme imagem a seguir.\n\nQual diagnóstico mais provável para esse paciente?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ33.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Tuberculose pulmonar.",
+        "Pneumonia comunitária.",
+        "Asma exacerbada.",
+        "DPOC descompensado."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>A UFG presentingou um caso complexo de doença respiratória crônica com exacerbação para testar seu raciocínio diagnóstico integrado.</strong></p><p>Este paciente de 56 anos apresenta múltiplos fatores de risco importantes: ex-tabagista com 32 maços/ano, dispneia progressiva há 5 anos, histórico de bronquite na infância e internação recente por pneumonia.</p><p>Os sintomas atuais incluem piora da tosse com escarro amarelado e aumento da dispneia há 10 dias, caracterizando uma exacerbação. O exame físico revela saturação reduzida (92%), murmúrio vesicular reduzido difusamente e edema de membros inferiores.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Tuberculose pulmonar:</strong> Incorreta. Tuberculose cursa com sintomas crônicos (perda ponderal, febre vespertina, sudorese noturna) não descritos no caso. O raio-X mostraria alterações típicas (cavitação apical) ausentes no padrão apresentado.</p><p><strong>B) Pneumonia comunitária:</strong> Incorreta. Embora o paciente tenha escarro purulento e piora recente, pneumonia comunitária aguda não explicaria a dispneia progressiva de 5 anos, o histórico tabágico e o murmúrio vesicular reduzido difusamente.</p><p><strong>C) Asma exacerbada:</strong> Incorreta. Embora tenha história familiar de asma e chiado no peito, o padrão obstrutivo crônico, história tabágica importante e redução difusa do murmúrio vesicular são mais sugestivos de DPOC do que asma.</p><p><strong>D) DPOC descompensado:</strong> Correta. O conjunto clínico é característico: dispneia progressiva há 5 anos, história tabágica significativa, murmúrio vesicular reduzido difusamente, exacerbação atual com mudança no escarro, e saturação reduzida. O padrão radiológico também é compatível com hiperinsuflação e aprisionamento aéreo.</p><p><strong>Resposta final: D</strong> - A clínica + epidemiologia + radiologia são típicas de DPOC com descompensação atual.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "<html><head></head><body>Paciente do sexo masculino, de 56 anos, ex-tabagista com uso de 32 maços/ano parou há seis meses. Alega que, há cinco anos, tem dispneia progressiva ao andar rápido em terreno plano ou ao andar mais de 100 metros ou subir escadas ou ladeiras; associado com tosse seca recorrente e chiado no peito. Esteve internado recentemente com pneumonia. Refere há 10 dias piora da tosse\ncom escarro amarelado e piora da dispneia. Refere ter HAS, em uso irregular das medicações. Refere bronquite na infância. Mãe tem diagnóstico de asma. Ao exame: saturação periférica de oxigênio a 92% em ambiente, pressão arterial: 150x100 mmHg, regular estado geral, dispneico, frequência respiratória: 28 IRM, frequência cardíaca: 90 BPM, ausculta pulmonar: murmúrio vesicular reduzido difusamente, sem ruídos adventícios, membros: edema em membros inferiores bilateral e simétricos (2+/4+) e hemograma (eosinófilo 1% 89). Traz na consulta um raio X de tórax conforme imagem a seguir.\n\nDurante a consulta, além dos exames solicitados, o paciente traz uma espirometria feita seis meses antes da consulta, com os seguintes achados:\n\nPré broncodilatador: CVF 1,25 (66%), VEF1 0,57 (41%), VEF1/ CVF 48%\nPós broncodilatador: CVF 1,43 (76%), VEF1 0,60 (50%), VEF1/ CVF 41%\n\nDe acordo com os achados da espirometria, qual o laudo adequado?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ34.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Distúrbio ventilatório obstrutivo leve, com redução da CVF por restrição, sem variação significativa ao broncodilatador.",
+        "Distúrbio ventilatório obstrutivo grave, sem variação significativa ao broncodilatador.",
+        "Distúrbio ventilatório restritivo moderado, sem variação significativa ao broncodilatador.",
+        "Distúrbio ventilatório obstrutivo moderado, com redução da CVF por aprisionamento aéreo, sem variação significativa ao broncodilatador."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFG avalia sua capacidade de interpretar espirometria em pacientes com doença pulmonar obstrutiva crônica.</strong></p><p>Vamos analisar sistematicamente os parâmetros espirométricos pré e pós-broncodilatador:</p><p><strong>Análise pré-broncodilatador:</strong></p><p>• CVF: 1,25L (66%) - reduzida</p><p>• VEF1: 0,57L (41%) - reduzida</p><p>• VEF1/CVF: 48% - indica obstrução (normal >70%)</p><p><strong>Padrão encontrado:</strong> Redução proporcional de VEF1 e CVF, com VEF1/CVF <70% = <strong>distúrbio ventilatório obstrutivo</strong></p><p><strong>Classificação da gravidade:</strong></p><p>VEF1 41% (pré) = <strong>obstrução moderada</strong></p><p>• Leve: VEF1 ≥80%</p><p>• Moderado: VEF1 50-79%</p><p>• Grave: VEF1 30-49%</p><p>• Muito grave: VEF1 <30%</p><p><strong>Variação pós-broncodilatador:</strong></p><p>• CVF: 1,43L (76%) - melhora leve</p><p>• VEF1: 0,60L (50%) - melhora mínima</p><p>• VEF1/CVF: 41% - sem variação significativa</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Obstrutivo leve:</strong> Incorreta. VEF1 41% (pré) e 50% (pós) indicam obstrução moderada, não leve.</p><p><strong>B) Obstrutivo grave:</strong> Incorreta. VEF1 41-50% corresponde à obstrução moderada, não grave.</p><p><strong>C) Restritivo moderado:</strong> Incorreta. O VEF1/CVF reduzido (48%) indica obstrução, não restrição.</p><p><strong>D) Obstrutivo moderado, com redução da CVF por aprisionamento aéreo:</strong> Correta. A redução desproporcional da CVF em relação ao VEF1 sugere aprisionamento aéreo, e VEF1 41-50% confirma obstrução moderada.</p><p><strong>Resposta final: D</strong> - A interpretação correta dos parâmetros espirométricos confirma distúrbio obstrutivo moderado com aprisionamento aéreo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "<html><head></head><body>Paciente do sexo masculino, de 56 anos, ex-tabagista com uso de 32 maços/ano parou há seis meses. Alega que, há cinco anos, tem dispneia progressiva ao andar rápido em terreno plano ou ao andar mais de 100 metros ou subir escadas ou ladeiras; associado com tosse seca recorrente e chiado no peito. Esteve internado recentemente com pneumonia. Refere há 10 dias piora da tosse\ncom escarro amarelado e piora da dispneia. Refere ter HAS, em uso irregular das medicações. Refere bronquite na infância. Mãe tem diagnóstico de asma. Ao exame: saturação periférica de oxigênio a 92% em ambiente, pressão arterial: 150x100 mmHg, regular estado geral, dispneico, frequência respiratória: 28 IRM, frequência cardíaca: 90 BPM, ausculta pulmonar: murmúrio vesicular reduzido difusamente, sem ruídos adventícios, membros: edema em membros inferiores bilateral e simétricos (2+/4+) e hemograma (eosinófilo 1% 89). Traz na consulta um raio X de tórax conforme imagem a seguir.\n\nQual tratamento adequado para esse paciente?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ35.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Salbutamol inalatório, 100 mcg de quatro em quatro horas.",
+        "Formoterol 12 mcg inalatório duas vezes ao dia.",
+        "Beclometasona 200 mcg inalatório duas vezes ao dia.",
+        "Azitromicina 500 mg três vezes na semana."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFG testa seu conhecimento sobre o tratamento medicamentoso ideal para DPOC estável e exacerbado.</strong></p><p>O paciente apresenta DPOC descompensado com evidência de obstrução moderada persistente à espirometria. O objetivo terapêutico é controlar os sintomas, prevenir exacerbações e melhorar a qualidade de vida.</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Salbutamol inalatório, 100 mcg de quatro em quatro horas:</strong> Incorreta. Broncodilatador de ação rápida para uso apenas em resgate de sintomas. Não é indicado como tratamento de manutenção diário, que é o caso deste paciente com DPOC estabelecido.</p><p><strong>B) Formoterol 12 mcg inalatório duas vezes ao dia:</strong> Correta. Broncodilatador de ação prolongada (LABA) indicado como tratamento de manutenção em DPOC estável. Atua por 12 horas, permitindo controle sustentado da dispneia e prevenção de exacerbações. A dose de 12 mcg é apropriada para obstrução moderada.</p><p><strong>C) Beclometasona 200 mcg inalatório duas vezes ao dia:</strong> Incorreta. Corticóide inalatório indicado em DPOC com fenótipo asmático ou eosinofílico. Este paciente tem eosinófilos de 1%, indicando baixa probabilidade de resposta aos corticóides inhalados.</p><p><strong>D) Azitromicina 500 mg três vezes na semana:</strong> Incorreta. Antibiótico macrolídeo usado em casos selecionados de DPOC com exacerbações frequentes e fenótipo inflamatório específico. Não há indicação para uso rotineiro, especialmente sem evidência de infecção atual.</p><p><strong>Diretrizes atuais (2024-2025):</strong> Para DPOC estável com obstrução moderada e sintomas persistentes, a combinação de broncodilatadores de ação prolongada é recomendada como primeira linha de tratamento.</p><p><strong>Resposta final: B</strong> - O formoterol é a escolha adequada para tratamento de manutenção em DPOC com obstrução moderada e sintomas persistentes.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "<html><head></head><body>Paciente do sexo feminino, 28 anos, refere há cerca de dois anos dispneia progressiva até moderados esforços e tosse seca esporádica. Nega tabagismo. Nega patologias prévias. Nega uso de medicações contínuas. Trouxe resultados de exames já realizados, conforme apresentados a seguir. Dosagem VEGF-D: maior que 800pg/ml FAN NÃO REAGENTE. Espirometria: distúrbio ventilatório restritivo leve, sem variação significativa ao broncodilatador. Tomografia de abdômen: angiolipoma renal direito Tomografia de tórax:\n\nQual é o diagnóstico dessa paciente?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ36.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Linfangiomiomatose pulmonar.",
+        "Síndrome de Birt-Hogg-Dubé.",
+        "Pneumonia intersticial linfocítica.",
+        "Histiocitose pulmonar de células de Langerhans."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFG 2021 avalia seu conhecimento sobre pneumopatias intersticiais raras, especificamente na interpretação de dados clínicos, laboratoriais e radiológicos para diagnóstico diferencial.</p><p><strong>A resposta correta é A - Linfangiomiomatose pulmonar.</strong></p><p>Vamos analisar os achados fundamentais:</p><p><strong>Dados clínicos:</strong> Mulher jovem (28 anos) com dispneia progressiva há 2 anos e tosse seca esporádica. O sexo feminino e a faixa etária são cruciais para o diagnóstico.</p><p><strong>Marcador específico:</strong> VEGF-D > 800 pg/ml é altamente específico para linfangiomiomatose. Este fator de crescimento vascular tipo D está elevado devido à proliferação de musculatura lisa anômala nos vasos linfáticos pulmonares.</p><p><strong>Função pulmonar:</strong> O padrão restritivo leve é típico da doença, resultando da substituição do parênquima pulmonar por cistos.</p><p><strong>Dado adicional importante:</strong> Angiolipoma renal direito. Embora possa parecer um achado isolado, deve fazer pensar em síndromes genéticas como Birt-Hogg-Dubé.</p><p>Vamos avaliar as alternativas incorretas:</p><p><strong>B) Síndrome de Birt-Hogg-Dubé:</strong> Caracterizada por hamartomas fibrifoliculares, pneumotórax e cistos pulmonares, mas o VEGF-D não está elevado. Associada a mutações no gene FLCN.</p><p><strong>C) Pneumonia intersticial linfocítica:</strong> Raramente cursa com VEGF-D elevado. Mais comum em pacientes com síndrome de Sjögren ou outras doenças autoimunes.</p><p><strong>D) Histiocitose pulmonar de células de Langerhans:</strong> Caracterizada por nódulos centrolobulares e cistos de paredes espessas, predominantemente em lobos superiores. forte associação com tabagismo, que foi negado pela paciente.</p><p>A combinação de mulher jovem, VEGF-D elevado, padrão restritivo e angiolipoma renal aponta definitivamente para linfangiomiomatose pulmonar.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "<html><head></head><body>Paciente do sexo feminino, 28 anos, refere há cerca de dois anos dispneia progressiva até moderados esforços e tosse seca esporádica. Nega tabagismo. Nega patologias prévias. Nega uso de medicações contínuas. Trouxe resultados de exames já realizados, conforme apresentados a seguir. Dosagem VEGF-D: maior que 800pg/ml FAN NÃO REAGENTE. Espirometria: distúrbio ventilatório restritivo leve, sem variação significativa ao broncodilatador. Tomografia de abdômen: angiolipoma renal direito Tomografia de tórax:\n\nQual a opção de tratamento mais adequada para essa paciente?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ37.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Corticóide oral.",
+        "Sirolimus.",
+        "Azatioprina.",
+        "Nintedanibe."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre tratamento específico da linfangiomiomatose pulmonar, avaliando se você conhece as terapias direcionadas para esta doença rara.</p><p><strong>A resposta correta é B - Sirolimus.</strong></p><p>O sirolimus (rapamicina) é um inibidor mTOR que atua na via de sinalização dysregulada na linfangiomiomatose. A doença resulta de mutações no gene TSC1/TSC2, levando à hiperativação da via mTOR e proliferação excessiva de células musculares lisas.</p><p>O sirolimus reduz a progressão da doença, melhora a função pulmonar e reduz sintomas. O estudo MILES (Management of LAM with sirolimus) demonstrou eficácia significativa. A dose usual é de 2mg/dia, ajustada para manter níveis séricos de 5-15 ng/mL.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Corticóide oral:</strong> Não é recomendado para linfangiomiomatose. Corticoides podem até piorar a doença a longo prazo e não têm ação na fisiopatologia específica da LAM.</p><p><strong>C) Azatioprina:</strong> Imunossupressor que não atua na via mTOR. Não tem papel no tratamento da linfangiomiomatose e pode aumentar o risco de infecções.</p><p><strong>D) Nintedanibe:</strong> Inibidor de múltiplas quinases aprovado para fibrose pulmonar idiopática, mas não para linfangiomiomatose. O mecanismo de ação não é apropriado para esta doença.</p><p>É importante lembrar que o transplante pulmonar pode ser considerado em casos avançados, mas primeiro tentamos sirolimus. A paciente jovem se beneficiaria muito deste tratamento específico, com potencial para estabilizar ou até melhorar sua função pulmonar.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "<html><head></head><body>Paciente do sexo feminino, 28 anos, refere há cerca de dois anos dispneia progressiva até moderados esforços e tosse seca esporádica. Nega tabagismo. Nega patologias prévias. Nega uso de medicações contínuas. Trouxe resultados de exames já realizados, conforme apresentados a seguir. Dosagem VEGF-D: maior que 800pg/ml FAN NÃO REAGENTE. Espirometria: distúrbio ventilatório restritivo leve, sem variação significativa ao broncodilatador. Tomografia de abdômen: angiolipoma renal direito Tomografia de tórax: \n\nQual a característica relacionada à doença diagnosticada na paciente?\n\n<img src=\"https://medbrave.com.br/questions/ufg-2021-r3/qQ38.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Doença rara, mais frequente em mulheres jovens no período fértil.",
+        "Doença relacionada ao tabagismo frequente.",
+        "Predomínio dos cistos nos logos superiores.",
+        "Cistos irregulares associados com nódulos centrolobulares."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFG 2021 avalia seu conhecimento sobre as características epidemiológicas e clínicas da linfangiomiomatose pulmonar, doença rara mas importante no diagnóstico diferencial de pneumopatias intersticiais.</p><p><strong>A resposta correta é A - Doença rara, mais frequente em mulheres jovens no período fértil.</strong></p><p>A linfangiomiomatose é uma doença extremamamente rara, com incidência estimada de 1-2 casos por milhão de mulheres. O pico de incidência ocorre entre 20-40 anos, no período reprodutivo. Esta distribuição etária e sexual sugere influência hormonal, possivelmente relacionada aos estrogenios.</p><p>Esta characteristic é fundamental para o diagnóstico. A doença é tão rara que muitos pneumologistas podem passar a vida inteira sem ver um caso. Mulheres grávidas podem ter piora da doença devido às alterações hormonais da gestação.</p><p>Vamos analisar por que as outras alternativas estão incorretas:</p><p><strong>B) Doença relacionada ao tabagismo frequente:</strong> Totalmente incorreto. A linfangiomiomatose NÃO tem relação com tabagismo. Na verdade, a histiocitose de células de Langerhans é que tem forte associação com tabagismo.</p><p><strong>C) Predomínio dos cistos nos lobos superiores:</strong> Incorreto. Na linfangiomiomatose, os cistos são difusos e homogêneos, acometendo igualmente todos os campos pulmonares. O predomínio em lobos superiores é característico da histiocitose de células de Langerhans.</p><p><strong>D) Cistos irregulares associados com nódulos centrolobulares:</strong> Esta descrição corresponde à histiocitose de células de Langerhans. Na linfangiomiomatose, os cistos são redondos, de paredes finas, sem nódulos centrolobulares.</p><p>Compreender estas características epidemiológicas é crucial, pois direciona o raciocínio diagnóstico em casos de pneumopatia intersticial em mulheres jovens.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "A artrite reumatoide (AR) é uma enfermidade reumática crônica, de causa desconhecida e natureza essencialmente autoimune. É caracterizada por uma poliartrite erosiva, representando importante causa de incapacidade física e invalidez. Em casos de AR, qual a melhor opção de tratamento, considerando as particularidades de cada paciente?",
+      "alternativas": [
+        "Em pacientes com fator reumatoide positivo, em alto título, recomenda-se o uso do tofacitinibe, em monoterapia, como tratamento inicial.",
+        "Em casos de falha ao metotrexato em associação com a leflunomida, o certolizumabe é considerado seguro e eficaz.",
+        "Quando houver refratariedade ao uso dos anti-TNF, deve-se utilizar preferencialmente o Rituximabe, evitando o emprego do abatacepte.",
+        "O tocilizumabe, anticorpo monoclonal anti-interleucina 17 (anti-IL 17) é seguro e eficaz em monoterapia e em associação ao metotrexato."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento atualizado sobre tratamento da artrite reumatoide, especificamente sobre o uso de biológico em casos de falha à terapia convencional combinada.</p><p><strong>A resposta correta é B - Em casos de falha ao metotrexato em associação com a leflunomida, o certolizumabe é considerado seguro e eficaz.</strong></p><p>O certolizumabe é um anti-TNF depegylated (pegilado) que pode ser usado em combinação com metotrexato ou como monoterapia. Após falha de DMARDs sintéticos convencionais (como metotrexato + leflunomida), biológico são indicados. O certolizumabe tem a vantagem de poder ser usado em combinação com metotrexato sem aumentar significativamente o risco de infecções.</p><p>As evidências suportam seu uso nesta situação, com boa resposta clínica e radiográfica. A leflunomida tem meia longa e pode permanecer no organismo por meses após suspensão, mas não há contraindicação absoluta para uso concomitante.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Tofacitinibe em monoterapia como tratamento inicial:</strong> Incorreto. Tofacitinibe é um inibidor JAK indicado para pacientes que falharam a pelo menos um DMARD sintético. Não é primeira linha e raramente é usado em monoterapia inicial.</p><p><strong>C) Preferir rituximabe ao abatacepte após falha a anti-TNF:</strong> Incorreto. Após falha a anti-TNF, o rituximabe pode ser usado, mas o abatacepte também é uma opção válida. A escolha depende do perfil do paciente. Na verdade, abatacepte pode ser preferível em algumas situações.</p><p><strong>D) Tocilizumabe como anti-IL 17:</strong> Totalmente incorreto. Tocilizumade é anti-IL6, não anti-IL17. Anti-IL17 inclui secukinumabe e ixekizumab, aprovados para espondiloartrites, não para artrite reumatoide.</p><p>O tratamento da artrite reumatoide evoluiu significativamente, e conhecer as indicações específicas de cada biológico é fundamental para a prática clínica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasArtrit"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "O lúpus eritematoso sistêmico é uma doença inflamatória crônica, multissistêmica, que acomete principalmente mulheres na faixa etária reprodutiva. Em pacientes com nefrite lúpica, com biópsia renal compatível com glomerulonefrite proliferativa difusa (Classe IV - G/A), o tratamento indicado é:",
+      "alternativas": [
+        "utilizar monoterapia com hidroxicloroquina em pacientes sem perda de função renal, anti-DNA negativo e valores reduzidos do complemento.",
+        "utilizar a ciclofosfamida, exceto nos pacientes com proteinúria e função renal normal, sobretudo se o anti-DNA for positivo.",
+        "prescrever a pulsoterapia mensal com metilprednisolona durante pelo menos seis meses, associada ao belimumabe, se houver insuficiência renal.",
+        "prescrever o micofenolato de mofetila, pois ele é considerado eficaz na indução da remissão e pode ser utilizado em pacientes com intolerância ou falha da ciclofosfamida."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre o tratamento da nefrite lúpica classe IV, forma mais grave de comprometimento renal no lúpus eritematoso sistêmico.</p><p><strong>A resposta correta é D - prescrever o micofenolato de mofetila, pois ele é considerado eficaz na indução da remissão e pode ser utilizado em pacientes com intolerância ou falha da ciclofosfamida.</strong></p><p>O micofenolato de mofetila (MMF) é considerado primeiro-line para nefrite lúpica classe IV-G (proliferativa difusa) em muitos protocolos atuais, incluindo diretrizes brasileiras. O estudo ALMS (Aspreva Lupus Management Study) demonstrou não inferioridade do MMF comparado à ciclofosfamida para indução de remissão.</p><p>As vantagens do MMF incluem: melhor perfil de efeitos adversos, menor toxicidade gonadal (importante em mulheres jovens), facilidade de administração oral e boa eficácia na indução de remissão. A dose usual é 2-3g/dia, dividida em duas tomadas.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>A) Monoterapia com hidroxicloroquina em pacientes sem perda de função renal:</strong> Incorreto. Hidroxicloroquina é importante como terapia de base em todos os pacientes com lúpus, mas é insuficiente para indução de remissão em nefrite lúpica classe IV. É sempre combinada com imunossupressores mais potentes.</p><p><strong>B) Utilizar ciclofosfamida, exceto nos pacientes com proteinúria e função renal normal:</strong> Esta lógica está incorreta. Pacientes com função renal preservada mas proteinúria significativa se beneficiam de tratamento agressivo. A ciclofosfamida é indicada justamente para prevenir progressão para insuficiência renal.</p><p><strong>C) Pulsoterapia mensal com metilprednisolona por 6 meses associada ao belimumabe:</strong> Incorreto. Metilprednisolona é sempre usada como pulsoterapia inicial (3 doses), mas não mensal por 6 meses. Belimumabe é aprovado para lúpus sistêmico, mas não é primeira linha para nefrite lúpica classe IV.</p><p>O MMF revolutionou o tratamento da nefrite lúpica, oferecendo uma alternativa eficaz e mais segura que ciclofosfamida, especialmente em pacientes jóvenes que desejam preservar fertilidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Glomerulopatias",
+        "ClinicaMedica_Nefrologia_Glomerulopatias_NefriteLupica",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Leia o caso clínico a seguir.\n\nJ.C.A., do sexo masculino, de 23 anos, procurou o médico com queixa de lombalgia, há cerca de quatro meses. Referiu, concomitantemente a dor lombar, rigidez matinal de uma hora de duração, com melhora durante o dia após atividade física. Relatou também dois episódios de hiperemia e dor ocular neste período. Trazia exames: VHS elevada, proteína C reativa positiva, hemograma normal e radiografia de sacroilíacas normais.\n\nPara a confirmação da principal hipótese diagnóstica, deve-se solicitar:",
+      "alternativas": [
+        "tomografia computadorizada de sacroilíacas e HLA B27.",
+        "tomografia computadorizada de sacroilíacas e HLA B51.",
+        "ressonância magnética de sacroilíacas e HLA B27.",
+        "ressonância magnética de sacroilíacas e HLA B51."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFG 2021 avalia seu conhecimento sobre espondiloartrites, especificamente sobre o diagnóstico de espondiloartrite axial não-radiográfica.</p><p><strong>A resposta correta é C - ressonância magnética de sacroilíacas e HLA B27.</strong></p><p>Analisando o caso: homem de 23 anos com lombalgia inflamatória há 4 meses, rigidez matinal que melhora com atividade, dois episódios de uveíte e exames inflamatórios alterados (VHS e PCR elevados). A radiografia normal não exclui espondiloartrite - muitas vezes as alterações radiográficas só aparecem anos após o início dos sintomas.</p><p>Por que cada alternativa está certa ou errada:</p><p><strong>A) Tomografia computadorizada de sacroilíacas e HLA B27:</strong> A TC pode mostrar erosões, mas não detecta edema ósseo precocemente que a RM visualiza. A TC tem radiação desnecessária neste contexto.</p><p><strong>B) Tomografia computadorizada de sacroilíacas e HLA B51:</strong> O HLA B51 está associado à síndrome de Behçet, não à espondiloartrite. O HLA correto é o B27.</p><p><strong>C) Ressonância magnética de sacroilíacas e HLA B27:</strong> Correta! A RM é o exame de escolha para detectar alterações inflamatórias precoces (edema ósseo) antes que apareçam alterações radiográficas. O HLA B27 está presente em 80-90% dos casos de espondiloartrite axial.</p><p><strong>D) Ressonância magnética de sacroilíacas e HLA B51:</strong> A RM está correta, mas o HLA B51 é da Behçet, não da espondiloartrite axial.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_Espondiloartrites"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Leia o caso clínico a seguir.\n\nV.S.B., de 68 anos, do sexo feminino, comparece a consulta médica de rotina, com densitometria óssea revelando osteoporose\nde coluna e colo do fêmur. O médico assistente solicitou exames laboratoriais, radiografia da coluna dorsal e lombar, e prescreveu um bifosfonato oral, o Alendronato, para uso em dose única semanal.\n\nEm relação à medicação,",
+      "alternativas": [
+        "deve-se alertar a paciente quanto a efeitos colaterais como a osteonecrose de mandíbula e a limitação para a realização de implantes dentários.",
+        "na refratariedade ao alendronato, pode-se utilizar o denosumabe, um bifosfonato de uso endovenoso, apropriado para uso em pacientes com doença renal crônica.",
+        "deve ser tomado preferencialmente 15 minutos após o almoço, uma vez que o PH levemente ácido colabora para a maior absorção e eficácia da medicação.",
+        "trata-se de medicação de ação anabólica, atuando através do estímulo a diferenciação e atividade do osteoblasto, resultando em aumento da síntese da matriz mineral óssea."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda o tratamento da osteoporose com bifosfonatos, testando conhecimento sobre alendronato e suas peculiaridades.</p><p><strong>A resposta correta é A - deve-se alertar a paciente quanto a efeitos colaterais como a osteonecrose de mandíbula e a limitação para a realização de implantes dentários.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Osteonecrose de mandíbula e limitação para implantes dentários:</strong> Correta! Bifosfonatos podem causar osteonecrose de mandíbula, especialmente após extrações dentárias ou implantes. É fundamental orientar sobre higiene oral rigorosa e evitar procedimentos dentários invasivos se possível.</p><p><strong>B) Denosumabe como bifosfonato endovenoso para DRC:</strong> Incorreta! O denosumabe é um anticorpo monoclonal, não um bifosfonado. É usado subcutâneo, não endovenoso, e deve ser evitado em insuficiência renal severa.</p><p><strong>C) Tomar após almoço com pH ácido:</strong> Incorreta! O alendronato deve ser tomado em jejum, com 200ml de água, 30 minutos antes do café da manhã. A absorção é prejudicada se tomado com alimentos.</p><p><strong>D) Ação anabólica estimando osteoblastos:</strong> Incorreta! Bifosfonatos têm ação anti-reabsortiva (antirresortiva), inibindo osteoclastos. Medicamentos anabólicos incluem teriparatida e romosozumabe.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "A tendinite de De Quervain é um reumatismo de partes moles comum em mulheres de 30 a 50 anos de idade, caracterizado pelo acometimento dos tendões do abdutor longo e extensor curto do polegar. O desvio forçado da mão fechada para o lado ulnar, utilizado para reproduzir a dor no processo estiloide do rádio, é denominado teste de:",
+      "alternativas": [
+        "Thompson.",
+        "Jobe.",
+        "Finkelstein.",
+        "Yegarson."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre exames físicos ortopédicos, especificamente sobre a tendinite de De Quervain.</p><p><strong>A resposta correta é C - Finkelstein.</strong></p><p>O teste de Finkelstein é realizado segurando o polegar em adução e flexão, depois desviar rapidamente a mão para o lado ulnar. A dor no processo estiloide do rádio indica tendinite de De Quervain (tenossinovite dos tendões abdutor longo e extensor curto do polegar).</p><p>Analisando as alternativas:</p><p><strong>A) Thompson:</strong> Usado para avaliar rotura do tendão de Aquiles. O paciente fica de bruços e o médico aperta a panturrilha - ausência de flexão plantar indica rotura.</p><p><strong>B) Jobe:</strong> Teste para avalição do manguito rotador (especificamente supraespinoso). O braço é elevado a 90° em abdução e o médico faz resistência - dor ou fraqueza indica lesão.</p><p><strong>C) Finkelstein:</strong> Correta! Teste específico para tendinite de De Quervain, reprodutor da dor com o desvio ulnar forçado.</p><p><strong>D) Yergason:</strong> Outro teste para o manguito rotador (especificamente tendão bicipital). A resistência com o braço em abdução de 90° causa dor no sulco bicipital se houver lesão.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "O fator antinuclear (FAN) é o principal teste de triagem na suspeita de doenças difusa do tecido conjuntivo. Pacientes com lúpus eritematoso sistêmico, do sexo feminino, em atividade cutânea, com fotossensibilidade e risco de lúpus neonatal em uma eventual gestação, apresentam caracteristicamente o FAN reagente, com o seguinte padrão de imunofluorescência:",
+      "alternativas": [
+        "nucleolar homogêneo, sugerindo a presença do anti- DNA.",
+        "nuclear pontilhado fino, sugerindo a presença do anti-Ro.",
+        "nuclear homogêneo, sugerindo a presença do Anti-Sm.",
+        "nuclear pontilhado grosso, sugerindo a presença do anti-nucleossoma."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre FAN (Fator Antinuclear) no contexto específico do lúpus eritematoso sistêmico, focando nos padrões de imunofluorescência e sua correlação clínica.</p><p><strong>A resposta correta é B - nuclear pontilhado fino, sugerindo a presença do anti-Ro.</strong></p><p>O padrão nuclear pontilhado fino é característico do anti-Ro/SSA, que está presente em pacientes com LES, especialmente mulheres em idade fértil. O anti-Ro é crucial pois cruza a placenta e pode causar lúpus neonatal (bloqueio cardíacocongênito).</p><p>Analisando as alternativas:</p><p><strong>A) Nucleolar homogêneo (anti-DNA):</strong> O padrão nucleolar é mais típico da esclerodermia. O anti-DNA está associado ao padrão nuclear homogêneo, não nucleolar.</p><p><strong>B) Nuclear pontilhado fino (anti-Ro):</strong> Correta! O padrão pontilhado fino corresponde aos anticorpos anti-Ro/SSA, comuns no LES e fortemente associados ao risco de lúpus neonatal.</p><p><strong>C) Nuclear homogêneo (anti-Sm):</strong> O anti-Sm (específico do LES) também apresenta padrão nuclear homogêneo, mas o anti-Ro é mais comum e tem implicações obstétricas importantes.</p><p><strong>D) Nuclear pontilhado grosso (anti-nucleossoma):</strong> O padrão pontilhado grosso corresponde ao anti-RNP, não ao anti-nucleossoma que é menos específico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Os tumores mais incidentes nas mulheres brasileiras ocorrem, respectivamente,",
+      "alternativas": [
+        "no pulmão e na mama.",
+        "na mama e no colo do útero.",
+        "no pulmão e no colo do útero.",
+        "na mama e no colo e reto."
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão aborda epidemiologia do câncer no Brasil, testando conhecimento sobre os tumores mais incidentes na população feminina brasileira.</p><p><strong>A resposta correta é B - na mama e no colo do útero.</strong></p><p>No Brasil, segundo dados do INCA 2021, o câncer de mama é o mais incidente em mulheres, seguido pelo câncer do colo do útero. Essa realidade difere de países desenvolvidos onde o câncer de pulmão é mais comum.</p><p>Analisando as alternativas:</p><p><strong>A) Pulmão e mama:</strong> O câncer de pulmão não é o segundo mais incidente em mulheres brasileiras, ficando atrás do câncer de colo do útero.</p><p><strong>B) Mama e colo do útero:</strong> Correta! Esses são realmente os dois tumores mais incidentes na população feminina brasileira.</p><p><strong>C) Pulmão e colo do útero:</strong> O câncer de pulmão não é o mais incidente, e a mama deveria aparecer antes do colo do útero.</p><p><strong>D) Mama e colo e reto:</strong> O câncer colorretal não é o segundo mais incidente - o colo do útero tem maior incidência单独.</p><p>Essa epidemiologia reflete diferenças culturais e socioeconômicas: enquanto países desenvolvidos têm maior incidência de câncer relacionado ao tabaco (pulmão), no Brasil persistem altas taxas de cânceres relacionados a infecções (colo do útero por HPV) e mudanças de estilo de vida (mama).</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TransicaoDemograficaEEpidemiol"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Mulher de 52 anos chega para consulta preventiva. Sem doenças prévias, apresenta nódulo endurecido no quadrante súpero-\nlateral da mama esquerda, medindo 2 x 2 centímetros.\n\nNesse caso, qual o exame indicado para a elucidação diagnóstica?",
+      "alternativas": [
+        "Mamografia.",
+        "Ultrassonografia das mamas.",
+        "Ressonância nuclear magnética das mamas.",
+        "Cintilografia mamária."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>A banca UFG 2021 avaliou seu conhecimento sobre o protocolo diagnóstico inicial para nódulos mamários. Esta questão exige o domínio das diretrizes de propedêutica oncológica.</p><p>A paciente de 52 anos com nódulo endurecido de 2cm exige investigação imediata. A <strong>alternativa A (Mamografia)</strong> é a resposta correta. Segundo as diretrizes do MS 2025, a mamografia é o exame de primeira escolha para investigação de alterações mamárias em mulheres a partir dos 50 anos, sendo essencial para avaliação de densidade, microcalcificações e descarte de lesões suspeitas.</p><p>Analisando as alternativas incorretas: A ultrassonografia (alternativa B) é complementar,主要用于 diferenciação entre lesões sólidas e císticas em mulheres jovens ou para caracterização adicional após mamografia. A RM das mamas (alternativa C) é reservada para casos complexos, como Mujeres de alto risco ou avaliação de próteses. A cintilografia mamária (alternativa D) não é utilizada no diagnóstico inicial, sendo recurso de pesquisa.</p><p>O algoritmo diagnóstico brasileiro prioriza a mamografia como exame inicial, seguindo-se de ultrassonografia complementar quando necessário.</p><p><strong>Resposta certa: A</strong> - A mamografia é o exame padrão para investigação diagnóstica inicial de nódulos mamários em mulheres com 52 anos, conforme diretrizes nacionais atualizadas.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_IntroducaoEDoencasBenignasDaMa",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_RastreamentoDoCancerDeMama"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Mulher de 52 anos chega para consulta preventiva. Sem doenças prévias, apresenta nódulo endurecido no quadrante súpero-\nlateral da mama esquerda, medindo 2 x 2 centímetros.\n\nCaso o exame radiológico evidencie um resultado classe IV de BIRADS, qual a conduta adequada?",
+      "alternativas": [
+        "Punção por agulha fina.",
+        "Biópsia por agulha grossa.",
+        "Cirurgia conservadora.",
+        "Mastectomia."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFG explorou o manejo de lesões mamárias com alto grau de suspeição. O candidato deve conhecer as condutas baseadas na classificação BIRADS e protocolos oncológicos brasileiros.</p><p>Com resultado BIRADS IV, suspeitamos malignidade com probabilidade significativa. A <strong>alternativa B (Biópsia por agulha grossa)</strong> é a conduta adequada. Este método fornece amostra histológica suficiente para diagnóstico definitivo, permitindo avaliação de receptores hormonais e outros marcadores prognósticos.</p><p>As alternativas incorretas merecem análise: A punção por agulha fina (alternativa A) pode ser insuficiente para diagnóstico, fornecendo apenas material citológico. A cirurgia conservadora (alternativa C) só deve ser considerada após confirmação histológica. A mastectomia (alternativa D) é tratamento, não diagnóstico.</p><p>O protocolo brasileiro de diagnóstico de câncer de mama estabelece a biópsia por agulha grossa como padrão-ouro para lesões BIRADS IV, permitindo estadiamento preciso e planejamento terapêutico.</p><p><strong>Resposta certa: B</strong> - A biópsia por agulha grossa é indicada para confirmação diagnóstica de lesões BIRADS IV, conforme diretrizes nacionais de mastologia.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_Mastologia_CancerDeMama_ExamesComplementar"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "Para mulheres com idade de 50 anos, não tabagista e sem história familiar de câncer, os exames de rastreamento de câncer solicitados devem ser a mamografia, o exame colpocitológico e",
+      "alternativas": [
+        "marcadores tumorais séricos.",
+        "radiografia simples de tórax.",
+        "colonoscopia.",
+        "ultrassonografia de abdome total."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>A UFG avaliou seu conhecimento sobre rastreamento oncológico preventivo em mulheres saudáveis. Esta questão exige familiaridade com os programas nacionais de detecção precoce do câncer.</p><p>Para uma mulher de 50 anos, não tabagista, sem história familiar, os rastreamentos padrão são: mamografia bienal e citologia cervical. A <strong>alternativa C (Colonoscopia)</strong> completa o protocolo. O MS 2025 recomenda colonoscopia de 10 em 10 anos a partir dos 50 anos para rastreamento de câncer colorretal na população de risco médio.</p><p>As alternativas incorretas não são indicadas: Marcadores tumorais (alternativa A) não têm papel no rastreamento assintomático. Radiografia de tórax (alternativa B) não detecta câncer de mama ou colo uterino. Ultrassonografia de abdome (alternativa D) não é exame de rastreamento para essas neoplasias.</p><p>O rastreamento brasileiro prioriza mamografia e citologia para mulheres nesta faixa etária, complementados pela colonoscopia para prevenção de câncer colorretal, conforme diretrizes do INCA e sociedades médicas nacionais.</p><p><strong>Resposta certa: C</strong> - A colonoscopia é o exame complementar ao rastreamento de mama e colo uterino em mulheres de 50 anos de risco médio, conforme protocolos nacionais atualizados.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Quais os tumores mais frequentes ocorrem nas glândulas adrenais?",
+      "alternativas": [
+        "Carcinomas.",
+        "Sarcomas.",
+        "Feocromocitoma",
+        "Incidentalomas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFG abordou patologia de glândulas endócrinas, especificamente tumores adrenais. É uma questão conceitual que testa conhecimentos de endocrinologia e oncologia.</p><p>Os <strong>incidentalomas (alternativa D)</strong> são os tumores mais frequentes nas adrenais. Incidentaloma refere-se a uma massa adrenal descoberta случайно (incidentalmente) durante exames por outras razões, sem sintomas relacionados. A maioria são adenomas não funcionantes benignos, hallazgo frequente em exames de imagem modernos.</p><p>As alternativas incorretas merecem detalhamento: Carcinomas (alternativa A) são raros, representando menos de 5% dos tumores adrenais. Sarcomas (alternativa B) são ainda mais incomuns. O feocromocitoma (alternativa C) tem incidência estimada de 2-8 casos por milhão ao ano, sendo tumor funcionante que cursa com hipertensão sustentada.</p><p>Estudos anatomopatológicos mostram que incidentalomas correspondem a 80-85% das lesões adrenais, sendo achado frequente em TC e RM. O diagnóstico diferencial inclui adenomas, cistos e, raramente, neoplasias malignas.</p><p><strong>Resposta certa: D</strong> - Incidentalomas são as lesões adrenais mais comuns, sendo descobertas incidentalmente em exames de imagem, geralmente correspondendo a adenomas benignos não funcionantes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Endocrinologia_Adrenal_NeoplasiasEndocrinasMultiplas"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Leia o caso clínico a seguir.\n\nPaciente de 58 anos, do sexo masculino, sem comorbidades, com PSA = 2,1 ng/mL, em consulta de rotina com o urologista, ao toque retal foi palpada área endurecida no lobo esquerdo da próstata.\n\nNesse caso, qual é a conduta adequada?",
+      "alternativas": [
+        "Ultrassonografia da próstata.",
+        "Ressonância magnética da próstata.",
+        "Biópsia da próstata.",
+        "Antibioticoterapia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>A UFG avaliou o manejo clínico do câncer de próstata, explorando a integração entre PSA e toque retal. Esta questão exige conhecimento dos algoritmos diagnósticos da urologia brasileira.</p><p>O paciente de 58 anos tem PSA discretamente elevado (2,1 ng/mL) associado à alteração no lobo esquerdo prostático. Esta combinação sugere possibilidade de câncer apesar do PSA limítrofe. A <strong>alternativa C (Biópsia da próstata)</strong> é a conduta correta. Diretrizes nacionais (SBU 2025) orientam investigação histológica quando há achado clínico suspeito no toque retal, independentemente do PSA.</p><p>As alternativas incorretas: Ultrassonografia (alternativa A) pode auxiliar na biopsia, mas não é diagnóstico. RM da próstata (alternativa B) é complementar para mapeamento, após confirmação diagnóstica. Antibióticos (alternativa D) não têm indicação sem sinais de infecção.</p><p>O algoritmo diagnóstico brasileiro prioriza a biópsia transretal como padrão para confirmação de suspeita clínica, permitindo diagnóstico histológico definitivo e graduação histológica (Gleason).</p><p><strong>Resposta certa: C</strong> - A biópsia prostática é indicada diante de achado clínico suspeito no toque retal, independentemente do PSA, conforme diretrizes da Sociedade Brasileira de Urologia.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_CancerDeProstata",
+        "Cirurgia_Urologia_CancerDeProstata_ExamesComplementaresEDiagnosti",
+        "Cirurgia_Urologia_CancerDeProstata_QuadroClinico"
+      ],
+      "tags": [
+        "UFG2021R3CM",
+        "UFG",
+        "R3CM",
+        "GO",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762724763883-49"
+    }
+  ]
+}

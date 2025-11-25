@@ -3,7 +3,9 @@ import { ErrorNotebookEntry, UpdateErrorEntryPayload } from '../types';
 import { AppError } from '../../../../shared/errors/AppError';
 
 export class UpdateErrorEntryUseCase {
-  constructor(private errorNotebookEntryRepository: IErrorNotebookEntryRepository) {}
+  constructor(
+    private errorNotebookEntryRepository: IErrorNotebookEntryRepository,
+  ) {}
 
   async execute(
     id: string,
@@ -32,21 +34,25 @@ export class UpdateErrorEntryUseCase {
     }
 
     // Verificar se a entrada pertence ao usuário
-    if (existingEntry.userId !== userId) {
+    if (existingEntry.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook entry', 403);
     }
 
     // Preparar dados para atualização, fazendo trim dos campos de texto
     const updateData: UpdateErrorEntryPayload = { ...data };
-    if (data.userNote) {
-      updateData.userNote = data.userNote.trim();
+    if (data.user_note) {
+      updateData.user_note = data.user_note.trim();
     }
-    if (data.userExplanation) {
-      updateData.userExplanation = data.userExplanation.trim();
+    if (data.user_explanation) {
+      updateData.user_explanation = data.user_explanation.trim();
     }
 
     // Atualizar entrada
-    const updatedEntry = await this.errorNotebookEntryRepository.update(id, userId, updateData);
+    const updatedEntry = await this.errorNotebookEntryRepository.update(
+      id,
+      userId,
+      updateData,
+    );
 
     if (!updatedEntry) {
       throw new AppError('Failed to update error notebook entry', 500);

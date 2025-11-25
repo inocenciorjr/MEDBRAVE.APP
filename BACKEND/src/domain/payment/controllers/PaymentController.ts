@@ -45,7 +45,11 @@ export class PaymentController {
   private getAuthenticatedUserId(req: Request): string {
     const userId = req.user?.id;
     if (!userId) {
-      throw new AppError(ErrorStatusCodes[ErrorCodes.UNAUTHORIZED], 'Usuário não autenticado', ErrorCodes.UNAUTHORIZED);
+      throw new AppError(
+        ErrorStatusCodes[ErrorCodes.UNAUTHORIZED],
+        'Usuário não autenticado',
+        ErrorCodes.UNAUTHORIZED,
+      );
     }
     return userId;
   }
@@ -56,12 +60,12 @@ export class PaymentController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: Request): void {
-    const role = req.user?.role;
-    if (role !== 'admin') {
+    const role = (req.user?.user_role || '').toUpperCase();
+    if (role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Acesso negado. Apenas administradores podem realizar esta operação.',
-        ErrorCodes.FORBIDDEN
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -72,7 +76,11 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  createPayment = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  createPayment = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const userId = this.getAuthenticatedUserId(req);
 
@@ -80,12 +88,12 @@ export class PaymentController {
       const requestUserId = req.body.userId || userId;
 
       if (requestUserId !== userId) {
-        const role = req.user?.role;
-        if (role !== 'admin') {
+        const role = (req.user?.user_role || '').toUpperCase();
+        if (role !== 'ADMIN') {
           throw new AppError(
             ErrorStatusCodes[ErrorCodes.FORBIDDEN],
             'Você não pode criar pagamentos para outros usuários',
-            ErrorCodes.FORBIDDEN
+            ErrorCodes.FORBIDDEN,
           );
         }
       }
@@ -105,22 +113,29 @@ export class PaymentController {
 
       // Validação básica
       if (!planId) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'ID do plano é obrigatório', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'ID do plano é obrigatório',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       if (!amount || amount <= 0) {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           'Valor do pagamento deve ser maior que zero',
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
-      if (!paymentMethod || !Object.values(PaymentMethod).includes(paymentMethod)) {
+      if (
+        !paymentMethod ||
+        !Object.values(PaymentMethod).includes(paymentMethod)
+      ) {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
           `Método de pagamento inválido. Valores permitidos: ${Object.values(PaymentMethod).join(', ')}`,
-          ErrorCodes.VALIDATION_ERROR
+          ErrorCodes.VALIDATION_ERROR,
         );
       }
 
@@ -155,13 +170,21 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  getPaymentById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getPaymentById = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const paymentId = req.params.paymentId;
       const payment = await this.paymentService.getPaymentById(paymentId);
 
       if (!payment) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Pagamento não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Pagamento não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem acessar
@@ -172,17 +195,20 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para acessar este pagamento',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
       // Buscar detalhes adicionais do pagamento com base no método
       let paymentDetails = null;
       if (payment.paymentMethod === PaymentMethod.PIX) {
-        paymentDetails = await this.pixPaymentService.getPixPaymentByPaymentId(paymentId);
+        paymentDetails =
+          await this.pixPaymentService.getPixPaymentByPaymentId(paymentId);
       } else if (payment.paymentMethod === PaymentMethod.CREDIT_CARD) {
         paymentDetails =
-          await this.creditCardPaymentService.getCreditCardPaymentByPaymentId(paymentId);
+          await this.creditCardPaymentService.getCreditCardPaymentByPaymentId(
+            paymentId,
+          );
       }
 
       res.status(200).json({
@@ -203,7 +229,11 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  listUserPayments = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  listUserPayments = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Permitir que um usuário veja apenas seus próprios pagamentos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
@@ -216,7 +246,7 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar pagamentos de outros usuários',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -225,8 +255,12 @@ export class PaymentController {
         planId: req.query.planId as string,
         status: req.query.status as PaymentStatus,
         paymentMethod: req.query.paymentMethod as PaymentMethod,
-        startDate: req.query.startDate ? new Date(req.query.startDate as string) : undefined,
-        endDate: req.query.endDate ? new Date(req.query.endDate as string) : undefined,
+        startDate: req.query.startDate
+          ? new Date(req.query.startDate as string)
+          : undefined,
+        endDate: req.query.endDate
+          ? new Date(req.query.endDate as string)
+          : undefined,
         limit: req.query.limit ? parseInt(req.query.limit as string) : 100,
         page: req.query.page ? parseInt(req.query.page as string) : 1,
         startAfter: req.query.startAfter as string,
@@ -256,7 +290,11 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  processPayment = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  processPayment = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const paymentId = req.params.paymentId;
 
@@ -264,7 +302,11 @@ export class PaymentController {
       const payment = await this.paymentService.getPaymentById(paymentId);
 
       if (!payment) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Pagamento não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Pagamento não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem processar
@@ -275,7 +317,7 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para processar este pagamento',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -284,7 +326,7 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.CONFLICT],
           `Não é possível processar um pagamento com status ${payment.status}`,
-          ErrorCodes.CONFLICT
+          ErrorCodes.CONFLICT,
         );
       }
 
@@ -305,20 +347,32 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  cancelPayment = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  cancelPayment = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       const paymentId = req.params.paymentId;
       const { reason } = req.body;
 
       if (!reason) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Motivo do cancelamento é obrigatório', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Motivo do cancelamento é obrigatório',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       // Verificar se o pagamento existe
       const payment = await this.paymentService.getPaymentById(paymentId);
 
       if (!payment) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Pagamento não encontrado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Pagamento não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       // Verificar permissão: apenas o próprio usuário (se o pagamento estiver pendente)
@@ -330,7 +384,7 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para cancelar este pagamento',
-          ErrorCodes.FORBIDDEN
+          ErrorCodes.FORBIDDEN,
         );
       }
 
@@ -343,11 +397,14 @@ export class PaymentController {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.CONFLICT],
           'Você só pode cancelar pagamentos pendentes. Entre em contato com o suporte para outros casos.',
-          ErrorCodes.CONFLICT
+          ErrorCodes.CONFLICT,
         );
       }
 
-      const cancelledPayment = await this.paymentService.cancelPayment(paymentId, reason);
+      const cancelledPayment = await this.paymentService.cancelPayment(
+        paymentId,
+        reason,
+      );
 
       res.status(200).json({
         success: true,
@@ -365,7 +422,11 @@ export class PaymentController {
    * @param res Objeto de resposta
    * @param next Função para passar para o próximo middleware
    */
-  refundPayment = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  refundPayment = async (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       this.ensureAdmin(req);
 
@@ -373,7 +434,11 @@ export class PaymentController {
       const { reason, gatewayTransactionId } = req.body;
 
       if (!reason) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Motivo do reembolso é obrigatório', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Motivo do reembolso é obrigatório',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       const adminId = this.getAuthenticatedUserId(req);
@@ -386,7 +451,11 @@ export class PaymentController {
       );
 
       if (!refundedPayment) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.NOT_FOUND], 'Pagamento não encontrado ou não pode ser reembolsado', ErrorCodes.NOT_FOUND);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Pagamento não encontrado ou não pode ser reembolsado',
+          ErrorCodes.NOT_FOUND,
+        );
       }
 
       res.status(200).json({
@@ -409,7 +478,11 @@ export class PaymentController {
       const { gateway, event, data } = req.body;
 
       if (!gateway || !event || !data) {
-        throw new AppError(ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR], 'Informações incompletas de webhook', ErrorCodes.VALIDATION_ERROR);
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Informações incompletas de webhook',
+          ErrorCodes.VALIDATION_ERROR,
+        );
       }
 
       logger.info(`Webhook recebido: gateway=${gateway}, event=${event}`);
@@ -463,10 +536,13 @@ export class PaymentController {
         event.toLowerCase() === 'payment_confirmed'
       ) {
         // Obter o pagamento PIX específico
-        const pixPayment = await this.pixPaymentService.getPixPaymentByPaymentId(paymentId);
+        const pixPayment =
+          await this.pixPaymentService.getPixPaymentByPaymentId(paymentId);
 
         if (!pixPayment) {
-          logger.error(`Pagamento PIX não encontrado para webhook: ${paymentId}`);
+          logger.error(
+            `Pagamento PIX não encontrado para webhook: ${paymentId}`,
+          );
           return;
         }
 
@@ -487,14 +563,18 @@ export class PaymentController {
         };
 
         // Aprovar o pagamento principal
-        await this.paymentService.approvePayment(paymentId, transactionId, transactionData);
+        await this.paymentService.approvePayment(
+          paymentId,
+          transactionId,
+          transactionData,
+        );
 
         // Notificar o usuário
         await this.paymentNotificationService.notifyPaymentReceived(
           payment.userId,
           paymentId,
           payment.amount,
-          payment.planId // ou nome do plano se disponível
+          payment.planId, // ou nome do plano se disponível
         );
       }
     } catch (error) {
@@ -507,12 +587,24 @@ export class PaymentController {
    * @param event Evento do webhook
    * @param data Dados do webhook
    */
-  private async handleCreditCardWebhook(event: string, data: any): Promise<void> {
+  private async handleCreditCardWebhook(
+    event: string,
+    data: any,
+  ): Promise<void> {
     try {
-      const { paymentId, transactionId, authorizationCode, status, errorCode, errorMessage } = data;
+      const {
+        paymentId,
+        transactionId,
+        authorizationCode,
+        status,
+        errorCode,
+        errorMessage,
+      } = data;
 
       if (!paymentId) {
-        logger.error(`Webhook de cartão sem paymentId: ${JSON.stringify(data)}`);
+        logger.error(
+          `Webhook de cartão sem paymentId: ${JSON.stringify(data)}`,
+        );
         return;
       }
 
@@ -520,16 +612,22 @@ export class PaymentController {
       const payment = await this.paymentService.getPaymentById(paymentId);
 
       if (!payment) {
-        logger.error(`Pagamento não encontrado para webhook de cartão: ${paymentId}`);
+        logger.error(
+          `Pagamento não encontrado para webhook de cartão: ${paymentId}`,
+        );
         return;
       }
 
       // Obter o pagamento de cartão específico
       const ccPayment =
-        await this.creditCardPaymentService.getCreditCardPaymentByPaymentId(paymentId);
+        await this.creditCardPaymentService.getCreditCardPaymentByPaymentId(
+          paymentId,
+        );
 
       if (!ccPayment) {
-        logger.error(`Pagamento de cartão não encontrado para webhook: ${paymentId}`);
+        logger.error(
+          `Pagamento de cartão não encontrado para webhook: ${paymentId}`,
+        );
         return;
       }
 
@@ -552,17 +650,24 @@ export class PaymentController {
         );
       } else if (event.toLowerCase() === 'payment_captured') {
         // Capturar o pagamento de cartão
-        await this.creditCardPaymentService.captureCreditCardPayment(ccPayment.id, transactionId);
+        await this.creditCardPaymentService.captureCreditCardPayment(
+          ccPayment.id,
+          transactionId,
+        );
 
         // Aprovar o pagamento principal
-        await this.paymentService.approvePayment(paymentId, transactionId, transactionData);
+        await this.paymentService.approvePayment(
+          paymentId,
+          transactionId,
+          transactionData,
+        );
 
         // Notificar o usuário
         await this.paymentNotificationService.notifyPaymentReceived(
           payment.userId,
           paymentId,
           payment.amount,
-          payment.planId // ou nome do plano se disponível
+          payment.planId, // ou nome do plano se disponível
         );
       } else if (
         event.toLowerCase() === 'payment_failed' ||
@@ -587,7 +692,8 @@ export class PaymentController {
           payment.userId,
           paymentId,
           payment.amount,
-          errorMessage || 'Seu pagamento com cartão de crédito foi rejeitado pelo banco emissor.'
+          errorMessage ||
+            'Seu pagamento com cartão de crédito foi rejeitado pelo banco emissor.',
         );
       }
     } catch (error) {

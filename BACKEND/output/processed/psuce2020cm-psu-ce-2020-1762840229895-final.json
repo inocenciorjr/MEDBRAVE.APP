@@ -1,0 +1,1365 @@
+{
+  "metadata": {
+    "examName": "PSUCE2020CM (PSU-CE 2020)",
+    "examYear": 2020,
+    "url": "source://1006",
+    "totalQuestions": 40,
+    "categorizedQuestions": 40,
+    "rewrittenComments": 40,
+    "processedAt": "2025-11-11T05:50:29.895Z",
+    "jobId": "batch-1762832845771-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "9fc785e1-1c08-48c3-83d9-00217a2edecf"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Paciente de 58 anos dá entrada na Emergência em parada cardiorrespiratória por fibrilação ventricular. Reanimado após 10 minutos de ressuscitação cardiopulmonar, paciente evolui com coma durante os próximos dias, com reflexos de tronco-cerebral presentes. Nas semanas seguintes, apresenta sepse de foco pulmonar, choque séptico, com melhora após antibioticoterapia. Após 20 dias, apresenta abertura ocular espontânea, mas sem fixar os olhos do examinador e exibindo pouca movimentação espontânea dos membros. Permanece afebril. Familiares informam que quando a mãe o visita descem lágrimas de seus olhos. Uma Ressonância do Encéfalo é realizada (Imagem anexa). Qual o diagnóstico mais provável e conduta?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ1.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Encefalopatia hipóxico-isquêmica - reabilitação e suporte clínico.",
+        "Encefalopatia séptica - Investigação de foco e antibioticoterapia.",
+        "Acidente vascular cerebral isquêmico - investigação de mecanismo de isquemia e reabilitação.",
+        "Acidente vascular cerebral hemorrágico - controle de pressão arterial e investigação etiológica."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 aborda um dos cenários mais desafiadores na medicina intensiva: o status pós-parada cardiorrespiratória. A banca avaliou a capacidade de identificar sequelas neurológicas de PCR e diferenciá-las de outras causas de rebaixamento.</p><p><strong>A resposta correta é A - Encefalopatia hipóxico-isquêmica com reabilitação e suporte clínico.</strong></p><p>Vamos analisar o caso: paciente de 58 anos com PCR por fibrilação ventricular, reanimado após 10 minutos. A sequência temporal é fundamental: primeiro coma, depois sepse pulmonar, e após 20 dias apresenta abertura ocular mas sem fixação - um padrão característico de estado vegetativo persistente.</p><p>A ressonância magnética (conforme imagem anexa) mostra atrofia cerebral difusa, especialmente temporal, resultado clássico da isquemia global durante a PCR.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>B - Encefalopatia séptica:</strong> A sepse ocorreu DEPOIS do quadro neurológico inicial. Além disso, a encefalopatia séptica não causa alterações estruturais na RM desta magnitude.</p><p>• <strong>C e D - AVC:</strong> O quadro de PCR com reanimação prolongada sugere mecanismo global, não focal. A atrofia difusa e simétrica não é compatível com padrão vascular localizado.</p><p>O diagnóstico de encefalopatia hipóxico-isquêmica pós-PCR é fundamental, pois direciona o prognóstico e orientação familiar. A reabilitação e suporte clínico são as condutas apropriadas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "Paciente de 71 anos, com pneumonia, permanece febril após 48 horas de antibiótico, sendo trocado para Cefepime e Vancomicina. Dois dias após a troca, fica afebril, com frequência cardíaca de 82bpm, respiratória de 12irpm, leucócitos de 8.200/mm3 sem desvios e PCR de 0,5mg/dL. Apresenta, contudo, rebaixamento progressivo do nível de consciência, mioclonias e crises convulsivas. Eletroencefalograma revela ondas trifásicas difusas semiperiódicas. Qual a hipótese diagnóstica mais provável?",
+      "alternativas": [
+        "Encefalopatia séptica.",
+        "Meningite pneumocócica.",
+        "Encefalopatia induzida por droga.",
+        "Acidente vascular de tronco-cerebral."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora uma complicação neurológica sutil em paciente crítico: a encefalopatia medicamentosa. A PSU-CE testou o conhecimento sobre efeitos neurológicos de antibióticos e sua diferenciação de outras causas de rebaixamento.</p><p><strong>A resposta correta é C - Encefalopatia induzida por droga.</strong></p><p>O padrão clínico é clássico: paciente de 71 anos com pneumonia, que após 48h de antibiótico inicial é trocado para cefepime e vancomicina. Os sinais vitais se estabilizam (febre resolve, FC normal, leucócitos normais, PCR baixa), mas surge rebaixamento progressivo, mioclonias e crises convulsivas.</p><p>O achado fundamental é o EEG com ondas trifásicas difusas semiperiódicas - este é um padrão altamente sugestivo de encefalopatia por drogas, especialmente vancomicina ou beta-lactâmicos em altas doses em idosos.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>A - Encefalopatia séptica:</strong> Os parâmetros inflamatórios melhoraram significativamente (PCR 0,5mg/dL, leucócitos normais), não sugerindo sépsis ativa.</p><p>• <strong>B - Meningite pneumocócica:</strong> A ausência de sinais meningeos e a melhora dos parâmetros sépticos tornam esta hipótese improvável.</p><p>• <strong>D - AVC de tronco:</strong> O padrão neurológico difuso (mioclonias + convulsões generalizadas) não sugere lesão focal de tronco.</p><p>A chave diagnóstica é a correlação temporal com o início dos antibióticos e o padrão EEG específico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_Pneumonia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Homem, 70 anos, portador de demência na doença de Alzheimer fase leve, há 2 dias passou a apresentar dificuldade em realizar atividades de auto-cuidado, incontinência urinária, desorientação, irritabilidade e alucinações. Foi trazido pelo cuidador com quadro de sonolência, porém com sinais vitais estáveis e sem alterações no exame físico. Exames: Hemograma: normal Ureia: 70mg/dL (VR: 40-70) Creatinina: 1,1mg/dL (VR: 0,8-1,3) Sódio: 142mmol/L (VR: 135-145) Potássio: 4,5mmol/L (VR: 3,5-5,0) Cálcio: 10,2mg/dL (VR: 9-10,5) Sumário de urina: leucocitúria e bacteriúria. Urocultura em andamento. LEGENDA: CAM: Confusion Assessment Method (Método de Avaliação de Confusão); CDR: Clinical Dementia Rating (Escore clínico de demência); VR: valor de referência. Considerando o diagnóstico sindrômico provável, qual o instrumento de rastreio indicado e abordagem farmacológica inicial?",
+      "alternativas": [
+        "CAM e antibiótico.",
+        "CAM e risperidona.",
+        "CDR e haloperidol.",
+        "CDR e antibiótico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda um tema frequente em geriatria: o delirium superimposed em paciente com demência. A PSU-CE avaliou a capacidade de identificar delirium e escolher o rastreio e tratamento adequados.</p><p><strong>A resposta correta é A - CAM (Confusion Assessment Method) e antibiótico.</strong></p><p>O caso é típico: homem de 70 anos com demência leve que, há 2 dias, desenvolveu quadro agudo de dificuldade para autocuidado, incontinência, desorientação, irritabilidade e alucinações. Este início agudo sobre pré-existing demência é clássico para delirium.</p><p>Os exames revelam infecção urinária (leucocitúria + bacteriúria), que é a causa mais frequente de delirium em idosos. A fisiopatologia: infecção → resposta inflamatória sistêmica → disfunção neurotransmissor cerebral → delirium.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>B - CAM e risperidona:</strong> O CAM está correto para rastreio, mas o antipsicótico não é primeira escolha. Primeiro tratar a causa (infecção).</p><p>• <strong>C - CDR e haloperidol:</strong> CDR (Clinical Dementia Rating) avalia demência, não delirium. Haloperidol tem indicações limitadas no delirium.</p><p>• <strong>D - CDR e antibiótico:</strong> CDR é inadequado para rastrear delirium, que é o diagnóstico principal.</p><p>A sequência é clara: identificar delirium com CAM → tratar causa infecciosa com antibiótico → avaliar necessidade de outros tratamentos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Demencias",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente chega ao hospital em coma após trauma cranioencefálico grave com edema cerebral difuso. Iniciada sedação profunda e hipotermia terapêutica de 32 graus. Após 48 horas, uma tomografia mostra edema cerebral difuso grave com apagamento de todos os sulcos e cisternas e hipoatenuação no tronco cerebral. Suspeita-se de morte encefálica (ME). Qual a próxima conduta a ser tomada?",
+      "alternativas": [
+        "Solicitação de eletroencefalograma ou arteriografia.",
+        "Reaquecimento lento até 35 graus e suspensão da sedação.",
+        "Aquecimento rápido até 36 graus seguido de realização da prova de ME.",
+        "Realização de ressonância magnética do encéfalo para definir a causa da ME."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda um dos dilemas mais complexos na neurointensiva: suspeita de morte encefálica em paciente em hipotermia terapêutica. A PSU-CE testou o conhecimento dos pré-requisitos necessários para realizar o teste de morte encefálica.</p><p><strong>A resposta correta é B - Reaquecimento lento até 35 graus e suspensão da sedação.</strong></p><p>A situação clínica: paciente em coma pós-TCE grave, em sedação profunda e hipotermia terapêutica a 32°C. O TC mostra edema cerebral grave com apagamento de sulcos/cisternas e hipoatenuação de tronco.</p><p>A chave está nos requisitos para teste de morte encefálica: <strong>a temperatura deve estar acima de 35°C</strong> e <strong>deve haver suspensão de sedativos</strong> por tempo suficiente (pelo menos 5 meias-vidas). A hipotermia e sedação podem suprimir completamente a atividade neurológica, mascarando a morte encefálica.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>A - EEG/arteriografia:</strong> Estes exames são complementares, não substituem a avaliação clínica inicial. Não podem ser realizados com hipotermia/condição medicamentosa.</p><p>• <strong>C - Aquecimento rápido:</strong> O reaquecimento deve ser lento e controlado para evitar dano miocárdico e outras complicações.</p><p>• <strong>D - RM:</strong> A RM não define morte encefálica. Os critérios legais no Brasil são clínicos após descartar fatores confundidores.</p><p>A sequência correta é reaquecer → suspender sedação → aguardar período → reavaliação clínica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_ComaEAlteracoesDaConsciencia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Paciente feminina, 70 anos, sem doenças prévias, apresenta-se para avaliação clínica com queixas de fadiga progressiva e \"falta de coragem'' para realização de suas atividades, com sensação de exaustão constante. Filha que a acompanha relata que no último ano a paciente vem perdendo peso (60 para 55Kg em 1 ano), além de marcha mais lenta. Traz exames com hemograma, função renal e tireoidiana normais, além de rastreios para neoplasias todos negativos. Sem sinais de transtorno do humor. Considerando a fisiopatologia da síndrome apresentada, qual alteração relacionada a composição corporal seria mais frequente?",
+      "alternativas": [
+        "Caquexia.",
+        "Obesidade.",
+        "Sarcopenia.",
+        "Osteoporose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora a síndrome da fragilidade (frailty) em idosos, um conceito cada vez mais relevante em geriatria. A PSU-CE avaliou o conhecimento sobre as alterações corporais características desta condição.</p><p><strong>A resposta correta é C - Sarcopenia.</strong></p><p>O caso é clássico: mulher de 70 anos, previamente saudável, apresentando fadiga progressiva, 'falta de coragem' para atividades (avolition), perda de peso (5kg em 1 ano), marcha mais lenta. Todos os exames laboratoriais estão normais, sem sinais de transtorno do humor.</p><p>A fisiopatologia da fragilidade envolve múltiplos sistemas: declínio de reserva fisiológica, inflamação crônica, resistência à insulina, declínio cognitivo, todos contribuindo para a <strong>sarcopenia</strong> (perda de massa e força muscular).</p><p>A sarcopenia é encontrada em mais de 50% dos idosos fragilizados e é o principal determinante da limitação funcional. A 'marcha mais lenta' é um marcador precoce de sarcopenia.</p><p><strong>Por que as outras alternativas estão incorretas?</strong></p><p>• <strong>A - Caquexia:</strong> A caquexia implica perda >5% do peso em 12 meses com doença crônica, o que não está presente aqui.</p><p>• <strong>B - Obesidade:</strong> O paciente perdeu peso, não ganhou.</p><p>• <strong>D - Osteoporose:</strong> Embora comum em idosos, não é a principal alteração da fragilidade e não explica os sintomas sistêmicos.</p><p>A fragilidade é um estado de vulnerabilidade associado ao envelhecimento, e a sarcopenia é seu correlato muscular central.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Paciente feminina, 75 anos, portadora de osteoporose, apresentou queixa de lombalgia importante (escala de dor 8 em 10 possível) após queda da própria altura há 10 dias. Fez uso de dipirona e cetoprofeno sem melhora, iniciando então uso de oxicodona 10mg/dia há 7 dias. Retorna com queixa de melhora parcial da dor, agora com escala de dor 3 em 10, mas queixando-se de que não evacua há 6 dias e sentindo-se empachada, negando outros sintomas. Ao exame nota-se hipertimpanismo e distensão abdominal, toque retal sem alterações. Iniciará fisioterapia analgésica daqui a 3 dias. Considerando a dor e a queixa de constipação, qual a conduta apropriada?",
+      "alternativas": [
+        "Trocar oxicodona por buprernofina tópico.",
+        "Prescrever laxante por via oral e suspender oxicodona.",
+        "Prescrever laxante por via oral e manter dose de oxicodona.",
+        "Prescrever lavagem intestinal diária e manter dose de oxicodona."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre o manejo de efeitos adversos da terapia com opioides, especificamente a constipação induzida por opioides (CIO).</p><p><strong>A resposta correta é C - Prescrever laxante por via oral e manter dose de oxicodona.</strong></p><p><strong>Analisando o caso clínico:</strong> Paciente idosa com 75 anos, osteoporose e lombalgia após queda. Está em uso de oxicodona 10mg/dia há 7 dias com boa resposta analgésica (dor de 8/10 para 3/10), mas desenvolve constipação há 6 dias com distensão abdominal e hipertimpanismo.</p><p><strong>Raciocínio sobre cada alternativa:</strong></p><p><strong>A) Trocar oxicodona por buprenorfina tópico.</strong> Errada. A buprenorfina tópico é formulação transdérmica para dor crônica, mas a paciente já tem controle adequado da dor com oxicodona oral. Além disso, buprenorfina também pode causar constipação, embora em menor grau.</p><p><strong>B) Prescrever laxante por via oral e suspender oxicodona.</strong> Errada. A suspensão da oxicodona seria inadequada pois a paciente ainda apresenta dor (3/10), necessitando analgesia. Descontinuar opioide sem analgesia alternativa causaria desertificação inadequada.</p><p><strong>C) Prescrever laxante por via oral e manter dose de oxicodona.</strong> Correta. Esta é a conduta padrão: manter a eficácia analgésica enquanto trata o efeito adverso. Laxantes orais (como lactulona ou sene) são primeira linha para CIO. A dose de oxicodona pode ser mantida se houver controle adequado da dor.</p><p><strong>D) Prescrever lavagem intestinal diária e manter dose de oxicodona.</strong> Errada. Lavagem intestinal é procedimento invasivo reservado para casos graves de obstipação com sinais de obstrução. Não está indicado rotineiramente para CIO.</p><p><strong>Pontos-chave para prova:</strong> Constipação é o efeito adverso mais comum e persistente dos opioides. A abordagem correta é tratar o efeito adverso sem comprometer o controle da dor. Laxantes orais (lactulona, sene, bisacodil) são primeira escolha. Medidas não farmacológicas (hidratação, exercícios) também são importantes.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_Osteoporose",
+        "ClinicaMedica_Farmacologia",
+        "ClinicaMedica_Farmacologia_Analgésicos",
+        "ClinicaMedica_Farmacologia_Laxativos"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Uma senhora de 79 anos é trazida à emergência por episódios de diarreia, volumosos há 2 dias, e por não conseguir se alimentar. Ao exame, estava sonolenta e hipovolêmica. Foi ressuscitada inicialmente com 1 litro de soro fisiológico 0,9% e recebeu os seguintes exames: pH 7,28 Na 152 mEq/L Bicarbonato 12 mEq/L Cloro 131 mEq/L. Ela mantém episódios diarreicos. Encontram-se disponíveis para infusão: soro fisiológico 0,9%, soro glicosado 5%, soro glicofisiológico (1:1), água destilada e bicarbonato de sódio 8,4% (1 mEq/mL de bicarbonato e sódio). Qual das soluções abaixo é mais adequada para manter a hidratação venosa da paciente?",
+      "alternativas": [
+        "Soro glicosado 5% 430 mL + 70 mL de bicarbonato de sódio 8,4%.",
+        "Água destilada 490 mL + 10 mL de bicarbonato de sódio 8,4%.",
+        "Soro fisiológico 0,9% 450 mL + 50 mL de bicarbonato de sódio 8,4%.",
+        "Soro glicofisiológico (1:1) 480 mL + 20 mL de bicarbonato de sódio 8,4%."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre correção de desequilíbrios hidroeletrolíticos e acidose metabólica em pacientes idosos com desidratação.</p><p><strong>A resposta correta é A - Soro glicosado 5% 430 mL + 70 mL de bicarbonato de sódio 8,4%.</strong></p><p><strong>Análise do caso clínico:</strong> Idosa de 79 anos com diarreia volumosa há 2 dias, sonolenta, hipovolêmica. Após ressuscitação inicial com 1L de SF 0,9%, mantém diarreia e acidose metabólica.</p><p><strong>Dados laboratoriais pós-ressuscitação:</strong></p><ul><li>pH: 7,28 (acidose)</li><li>Sódio: 152 mEq/L (hipernatremia)</li><li>Bicarbonato: 12 mEq/L (baixo - normal: 22-28 mEq/L)</li><li>Cloro: 131 mEq/L (normal: 98-106 mEq/L)</li></ul><p><strong>Análise das alternativas:</strong></p><p><strong>A) SG 5% 430 mL + 70 mL de bicarbonato 8,4%.</strong> Correta. Solução hipotônica (SG 5%) com bicarbonato corrige a hipernatremia e a acidose. A quantidade de bicarbonato (70mL × 1mEq/mL = 70mEq) é adequada para elevar o bicarbonato de 12 para próximo do normal (18-20 mEq).</p><p><strong>B) Água destilada 490 mL + 10 mL de bicarbonato 8,4%.</strong> Errada. A água destilada sozinha causaria hiponatremia severa e edema celular. A quantidade de bicarbonato é insuficiente para corrigir acidose significativa.</p><p><strong>C) Soro fisiológico 0,9% 450 mL + 50 mL de bicarbonato 8,4%.</strong> Errada. SF 0,9% é solução isotônica que manteria a hipernatremia. Adequado apenas se paciente fosse normonatrêmica. Quantidade de bicarbonato também insuficiente.</p><p><strong>D) Soro glicofisiológico (1:1) 480 mL + 20 mL de bicarbonato 8,4%.</strong> Errada. Glicofisiológico (meio soro + meio glicosado) ainda manteria hipernatremia. Quantidade de bicarbonato insuficiente para correção adequada.</p><p><strong>Raciocínio clínico:</strong> A paciente apresenta hipernatremia + acidose metabólica. Solução hipotônica com bicarbonato é ideal: SG 5% corrige hipernatremia, bicarbonato corrige acidose. Quantidade de bicarbonato (70mEq) é proporcional à severidade da acidose (bicarbonato 12 mEq/L vs normal 24 mEq/L).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Hiponatremia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_ControleDaAguaCorporalTotal",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Mulher de 27 anos foi internada em enfermaria por apresentar quadro de lesões muco-cutâneas bolhosas difusas e dolorosas que a impediam de se alimentar. Perdeu 5% de peso corporal em um mês. Foi diagnosticada com pênfigo vulgar sendo tratada com metilprednisolona endovenosa em dose equivalente de 1 mg/kg de prednisona. Teve alta com melhora após 10 dias em uso de prednisona oral em mesma equivalência. Retornou ao ambulatório após 1 mês de tratamento com queixa de fraqueza. Exame físico evidenciava força 4- em musculatura proximal, mais evidente em membros inferiores. Foram solicitados Creatino Quinase 102 IU/L (VR: 30-135 IU/L) e uma eletroneuromiografia com padrão normal. Qual a melhor conduta frente à corticoterapia nesse momento?",
+      "alternativas": [
+        "Suspender corticoide.",
+        "Iniciar desmame rápido.",
+        "Aumentar dose para 2 mg/kg de prednisona.",
+        "Realizar pulso de metilprednisolona endovenosa."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre complicações da corticoterapia prolongada, especificamente miopatia induzida por corticosteroides.</p><p><strong>A resposta correta é B - Iniciar desmame rápido.</strong></p><p><strong>Análise do caso clínico:</strong> Mulher de 27 anos com pênfigo vulgar em tratamento com corticosteroides há 1 mês. Apresenta fraqueza muscular proximal (força 4-) em membros inferiores após estabilização da doença base.</p><p><strong>Dados importantes:</strong></p><ul><li>Doença controlada: melhora das lesões bolhosas</li><li>Tempo de uso: 1 mês de corticosteroide em dose equivalente a 1mg/kg prednisona</li><li>Fraqueza proximal seletiva (miopatia característica)</li><li>CK normal (102 IU/L, normal 30-135)</li><li>Eletroneuromiografia normal (exclui neuropatia)</li></ul><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Suspender corticoide.</strong> Errada. Suspensão abrupta de corticosteroide após 1 mês em dose imunossupressora pode causar insuficiência adrenal aguda. Especialmente perigoso em paciente com doença autoimune que pode reagudizar.</p><p><strong>B) Iniciar desmame rápido.</strong> Correta. Como a doença base (pênfigo) está controlada e a paciente apresenta sinais de miopatia por corticosteroide, o desmame deve ser iniciado. A velocidade do desmame depende da dose atual e tempo de uso.</p><p><strong>C) Aumentar dose para 2 mg/kg de prednisona.</strong> Errada. Aumentar dose seria contraproducente, pois a miopatia é efeito dose-dependente. Além disso, a doença já está controlada na dose atual.</p><p><strong>D) Realizar pulso de metilprednisolona endovenosa.</strong> Errada. Pulso de corticosteroide aumentaria significativamente o risco de miopatia e não tem indicação aqui, já que a doença está controlada.</p><p><strong>Conceitos-chave:</strong> Miopatia por corticosteroide é efeito adverso dose e tempo-dependente. Caracteriza-se por fraqueza proximal seletiva, CK normal ou levemente elevada, e eletroneuromiografia normal. O tratamento é reduzir gradativamente a dose do corticosteroide quando a doença base estiver controlada.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia_DermatosesVesicobolhosas",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesVesicobolhosasDermat_1",
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Farmacologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "<html><head></head><body>Paciente masculino de 19 anos é admitido em enfermaria com diagnóstico de pneumonia adquirida na comunidade, grave. Familiares informam que é a terceira internação por pneumonia em dois anos e que o paciente frequentemente faz o uso de antibióticos devido a sinusites recorrentes e infecções de vias aéreas prolongadas. Realizou uma tomografia de tórax que evidenciou bronquiectasias. Apresenta vitiligo. Após coleta de exames, o laboratório informa que teve dificuldades em fazer uma tipagem sanguínea solicitada. Familiares entregam o resultado de uma eletroforese de proteínas séricas realizada um mês antes a pedido de outro médico. Qual dos gráficos abaixo é o mais provável de representar o estado do paciente?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ9.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre imunodeficiências primárias, especificamente associadas a defeitos na produção de anticorpos e alterações laboratoriais características.</p><p><strong>A resposta correta é B - Gráfico 2.</strong></p><p><strong>Análise do caso clínico:</strong> Jovem de 19 anos com pneumonia grave recidivante (3 internações em 2 anos), bronquiectasias, sinusites recorrentes, infecções de vias aéreas prolongadas e vitiligo. Dificuldades para tipagem sanguínea sugerem alterações nas proteínas plasmáticas.</p><p><strong>Raciocínio clínico:</strong> O conjunto de achados sugere imunodeficiência humoral (deficiência de anticorpos). O vitiligo pode estar associado a doenças autoimunes que frequentemente acompanham imunodeficiências primárias. As dificuldades de tipagem sanguínea são um clue importante.</p><p><strong>Interpretação da eletroforese de proteínas séricas:</strong> Em imunodeficiências humoriais, espera-se:</p><ul><li>Diminuição das gamaglobulinas (pico gama reduzido ou ausente)</li><li>Albumina e alfa e beta globulinas normais</li><li>Padrão de \"hipogamaglobulinemia\"</li></ul><p><strong>Analisando os gráficos (sem ver a imagem específica):</strong></p><p>Baseado no padrão esperado para imunodeficiência humoral, o gráfico 2 deve representar o padrão de hipogamaglobulinemia.</p><p><strong>Condições sugeridas pelo caso:</strong> Possivelmente Imunodeficiência Comum Variável (CVID) ou Agamaglobulinemia de Bruton, considerando a idade de apresentação e perfil clínico.</p><p><strong>Pontos-chave para prova:</strong> Em imunodeficiências humoriais, a eletroforese mostra redução ou ausência do pico gama. O vitiligo é condição autoimune frequentemente associada. As dificuldades de tipagem ocorrem por alterações nas globulinas que interferem nos testes laboratoriais.</p><p><strong>Diferencial importante:</strong> As infecções recidivantes + bronquiectasias sugerem defeito na imunidade humoral, enquanto infecções oportunistas sugeririam defeito na imunidade celular.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica_Pneumologia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia_PneumoniasbroncopneumoniasBcpN_PneumoniasbroncopneumoniasBcpN",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Mulher de 58 anos, assintomática, realizou exames laboratoriais para a investigação de obesidade, cuja única alteração foi um TSH=9mU/L. O próximo passo na condução do caso dessa paciente é:",
+      "alternativas": [
+        "repetir dosagem de TSH.",
+        "solicitar anti-TPO e T3 total.",
+        "realizar ultrassom da tireoide.",
+        "iniciar levotiroxina 25mcg/dia."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o manejo do hipotireoidismo subclínico, seguindo as diretrizes atuais para investigação e conduta clínica.</p><p><strong>A resposta correta é A - repetir dosagem de TSH.</strong></p><p><strong>Análise do caso clínico:</strong> Mulher de 58 anos, obesa, assintomática, com TSH = 9 mU/L (elevado, normal: 0,4-4,0 mU/L). A paciente está assintomática, sem sintomas clásicos de hipotireoidismo, o que caracteriza hipotireoidismo subclínico.</p><p><strong>Conceito de hipotireoidismo subclínico:</strong> TSH elevado com T4 livre normal, em paciente assintomática ou com sintomas inespecíficos. TSH entre 4,5-10 mU/L é considerado subclínico leve.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Repetir dosagem de TSH.</strong> Correta. Esta é a conduta inicial recomendada. O TSH pode estar elevado por causas transitórias (doença não tireoidiana, medicamentos, estresse). Repetir em 2-3 meses para confirmar o diagnóstico antes de iniciar investigação mais detalhada ou tratamento.</p><p><strong>B) Solicitar anti-TPO e T3 total.</strong> Errada. Não é primeira linha. Anti-TPO é solicitado se houver confirmação do hipotireoidismo persistente, para identificar etiologia autoimune. T3 total não é necessário na avaliação inicial do hipotireoidismo.</p><p><strong>C) Realizar ultrassom da tireoide.</strong> Errada. Ultrassom não é indicado rotineiramente no hipotireoidismo subclínico, especialmente se não houver nódulos palpáveis ou suspeita de neoplasia.</p><p><strong>D) Iniciar levotiroxina 25mcg/dia.</strong> Errada. Não se deve iniciar tratamento imediatamente no hipotireoidismo subclínico leve (TSH <10 mU/L) em paciente assintomática. Primeiro deve-se confirmar o diagnóstico com repetição do exame.</p><p><strong>Diretrizes atuais (2024-2025):</strong> Para TSH 4,5-10 mU/L em paciente assintomática, repetir TSH em 2-3 meses. Se persistir elevado, avaliar anti-TPO para decisão terapêutica. TSH >10 mU/L ou sintomas evidentes podem indicar tratamento.</p><p><strong>Considerações em obesos:</strong> Obesidade pode estar associada a alterações tireoidianas leves, mas não justifica TSH 9 mU/L. A repetição é fundamental para descartar variações laboratoriais transient.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_Hipotireoidismo",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_IntroducaoESemiologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Paciente feminina 25 anos, com história de há 4 meses iniciar quadro de febre, cefaleia, fadiga, anorexia e perda de peso associado a poliartralgia com rigidez matinal. Evoluiu há 1 mês com dispneia, edema de membros inferiores, redução do volume urinário e alopecia difusa. Ao exame: PA: 160x90 T=38,5 AC: normal AP: MVU reduzido em bases, Sem artrite, Rash hiperemiado em região malar, Edema de membros inferiores. Exames laboratoriais: Hb: 11,5g/dl VCM: 85fl leucócitos: 4.100/mm3 (diferencial normal), plaquetas: 85.000/mm3, VHS: 23mm, PCR: 0,7mg/dl, Sumário de urina: Proteína +++ hemoglobina +++ sem cilindros, Proteinúria de 24h: 1.650mg, Ur: 83mg/dl, Cr: 1,6mg/dl K: 4,0mEq/L FAN: não reagente, Anti-DNA: não reagente. Além do pulso de metilprednisolona, considerando a principal hipótese diagnóstica, qual o tratamento de primeira escolha?",
+      "alternativas": [
+        "Rituximabe.",
+        "Ciclosporina.",
+        "Imunoglobulina.",
+        "Micofenolato de mofetil."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre o tratamento de glomerulonefrite em pacientes com lúpus eritematoso sistêmico. O caso apresenta uma jovem de 25 anos com quadro clássico de LES e envolvimento renal grave.</p><p><strong>A resposta correta é D - Micofenolato de mofetil.</strong></p><p>Analisando o caso: A paciente apresenta critérios do ACR para LES (artrite, rash malar, nefropatia, citopenias, FAN negativo) com glomerulonefrite membranosa, evidenciado por proteinúria de 1.650mg/24h, hematúria e redução da função renal (Cr: 1,6mg/dl). Considerando que já foi instituído pulso de metilprednisolona, o próximo passo é o immunosupressor para manutenção.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Rituximabe:</strong> É um anti-CD20 indicado em casos refratários graves de LES, quando há falha aos imunossupressores convencionais. Não é primeira escolha para glomerulonefrite lúpica.</p><p><strong>B) Ciclosporina:</strong> Pode ser usada em nefropatia lúpica, mas é mais comum em glomeruloesclerose focal. Não é primeira linha em casos de LES ativo com múltiplos órgãos envolvidos.</p><p><strong>C) Imunoglobulina:</strong> Indicada em infecções graves em pacientes imunossuprimidos, citopenias refratárias ou como ponte terapêutica. Não trata a nefropatia lúpica.</p><p><strong>D) Micofenolato de mofetil:</strong> Primeira escolha para LES com glomerulonefrite, especialmente em classe III e IV, combinado a corticosteroides. Estudos mostram eficácia superior ao ciclofosfamida com menor toxicidade.</p><p>O tratamento padrão atual preconiza: pulso de metilprednisolona seguido de micofenolato de mofetil 1-2g/dia como manutenção, associado a prednisona em dose decrescente.</p><p><strong>Veredito: A resposta correta é D - Micofenolato de mofetil.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesCronicas",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju_DoencaRelacionadaAIgg"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "<html><head></head><body>Paciente 50 anos, há 4 meses iniciou quadro de febre, artrite, fenômeno de Raynaud, dificuldade de subir escadas, evoluindo com dispneia aos pequenos esforços e tosse seca. Procurou serviço de emergência onde realizou tomografia de tórax (foto). Ao exame: T:38,5; AP: MVU presente com crepitações em bases pulmonares; AC: normal; Força grau IV em deltoides e grau III em quadríceps. Artrite de 2 interfalangeana proximal direita e 3 metacarpofalangeana esquerda. Exames laboratoriais: Hemograma: normal, VHS: 35mm, PCR:1,05mg/dl, CPK: 3249 UI/L, LDH: 1240 UI/L, TGO: 102 UI/L, TGP: 90 UI/L; Ur: 35, Cr: 0,8; FAN: 1/360 padrão citoplasmático, Fator reumatoide: 1/8 (Reação de Waaler-Rose). Teste de função pulmonar com CVF: 73% e DLCO: 54%. Iniciou prednisona com melhora do quadro muscular e articular, porém sem reposta do quadro pulmonar. Qual o diagnóstico mais provável?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ12.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Artrite reumatoide.",
+        "Síndrome antissintetase.",
+        "Lupus eritematoso sistêmico.",
+        "Doença mista do tecido conjuntivo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre miopatias inflamatórias, especialmente síndrome antissintetase. O caso apresenta achados muito característicos desta condição.</p><p><strong>A resposta correta é B - Síndrome antissintetase.</strong></p><p>Analisando o caso: Homem de 50 anos com miopatia inflamatória, fenômemo de Raynaud, artrite não erosiva, pneumonite intersticial (crepitações em bases pulmonares e TC com vidro fosco), miosite (CPK: 3249 UI/L) e FAN com padrão citoplasmático.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Artrite reumatoide:</strong> A artrite simétrica em IFP e MCF é característica, mas não explica a miopatia, pneumonite intersticial e fenômeno de Raynaud. FAN seria positivo com padrão homogêneo e classicamente associam-se anti-CCP.</p><p><strong>B) Síndrome antissintetase:</strong> Perfeita correlação! A tríade miopatia, pneumonite intersticial e fenômeno de Raynaud é patognomônica. Os anticorpos anti-sintetase (como anti-Jo1) explicam o padrão citoplasmático do FAN. É a tríade \"mechanic's hands\", febre e miosite observadas.</p><p><strong>C) Lupus eritematoso sistêmico:</strong> Embora possa ter artrite e pneumonite, não costuma cursar com miopatia inflamatória com CPK elevada de forma isolada. O FAN seria mais provavelmente homogêneo ou nuclear pontilhado.</p><p><strong>D) Doença mista do tecido conjuntivo:</strong> Apresenta misto de escleroderma, lúpus e polimiosite, mas tipicamente com anticorpo anti-RNP, não padrão citoplasmático. A miosite é menos proeminente que na síndrome antissintetase.</p><p>A imagem de TC mostra glass ground, altamente sugestivo de pneumonite intersticial, a miopatia inflamatória com CPK >10x o normal e o fenómeno de Raynaud completam a síndrome antissintetase.</p><p><strong>Veredito: A resposta correta é B - Síndrome antissintetase.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Mulher de 45 anos, obesa e diabética tipo 2 em uso de metformina 1g/dia compareceu a consulta de acompanhamento. Ao exame físico, a pressão arterial estava de 140x90mmHg em duas aferições. Os exames laboratoriais revelaram glicemia em jejum de 142mg/dL e hemoglobina glicosilada de 7,8%. Nessa ocasião, o médico associou outro medicamento, visando, além do melhor controle glicêmico, a redução do peso corporal e dos níveis da pressão arterial. Qual dos itens abaixo contempla um efeito colateral desse medicamento?",
+      "alternativas": [
+        "Lipodistrofia.",
+        "Insuficiência cardíaca.",
+        "Acidose láctica tipo B.",
+        "Candidíase vulvovaginal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre efeitos colaterais de medicamentos antidiabéticos, especificamente empagliflozina ou similar da classe dos inibidores do SGLT2.</p><p><strong>A resposta correta é D - Candidíase vulvovaginal.</strong></p><p>Analisando o caso: Mulher de 45 anos, obesa e diabética tipo 2 com controle glicêmico inadequado (HbA1c 7,8%, glicemia 142mg/dL) e hipertensão (PA 140x90mmHg). O médico adicionou um medicamento que além de melhorar o controle glicêmico, promove perda de peso e redução da pressão arterial - características típicas dos inibidores do SGLT2.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Lipodistrofia:</strong> Efeito colateral clássico de insulina em uso subcutâneo, não observado com inibidores do SGLT2. A empagliflozina não afeta o tecido adiposo.</p><p><strong>B) Insuficiência cardíaca:</strong> Na verdade, a empagliflozina PROTEGE contra insuficiência cardíaca, reduzindo o risco de hospitalização. Estudos como EMPA-REG OUTCOME demonstraram benefício cardiovascular.</p><p><strong>C) Acidose láctica tipo B:</strong> Efeito colateral da metformina em situações especiais (insuficiência renal, hepática, etc). A empagliflozina não causa acidose láctica.</p><p><strong>D) Candidíase vulvovaginal:</strong> Efeito colateral clássico dos inibidores SGLT2! O mecanismo envolve glicosúria com aumento de glicose na urina, creando ambiente favorável ao crescimento fúngico. É mais comum em mulheres devido à anatomia.</p><p>Os inibidores SGLT2 (empagliflozina, dapagliflozina, canagliflozina) são conhecidos por causar aumento da incidência de infecções genitourinárias, especialmente candidíase vulvovaginal em mulheres e balanite em homens.</p><p><strong>Veredito: A resposta correta é D - Candidíase vulvovaginal.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo2Dm2",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Mulher de 67 anos, grande fumante, foi admitida na emergência com quadro de, há 3 dias, piora de tosse e de dispneia crônicas com febre (38,1ºC), sem melhora após uso de broncodilatadores; f:28 rpm e fazia de musculatura acessória da respiração, SpO2:84% em ar ambiente. Na ausculta pulmonar apresentava murmúrio vesicular reduzido globalmente e alguns sibilos difusos. Apresentava a seguinte gasometria arterial com a paciente em uso de cateter nasal de O2: 3l/min: pH:7,27, PaCO2:59mmHg PaO2:67mmHg SaO2:90% BE:+2. Após 40 minutos de instituição de Ventilação Não-invasiva em modo bipap (dois níveis de pressão com IPAP:12cmH2O e EPAP:06cmH2O e FIO2:35%, f programada de zero) por máscara oronasal e após administração de broncodilatadores uma nova gasometria arterial mostrou: pH:7,28, PaCO2:58mmHg PaO2:78mmHg SaO2:93% BE:+2. Houve discreta melhora da dispneia, e a f:26rpm. Que ajuste do suporte ventilatório seria recomendável neste momento?",
+      "alternativas": [
+        "Aumentar a IPAP.",
+        "Aumentar a EPAP.",
+        "Aumentar EPAP e IPAP de modo similar.",
+        "Ajustar uma frequência programada próxima a da paciente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre ventilação mecânica não-invasiva e interpretação de gasometria arterial em exacerbação de DPOC.</p><p><strong>A resposta correta é A - Aumentar a IPAP.</strong></p><p>Analisando o caso: Idosa de 67 anos com exacerbação de DPOC grave, apresentando hipercapnia (PaCO2: 59mmHg), acidose respiratória (pH: 7,27) e hipoxemia (PaO2: 67mmHg). Após 40 min de BiPAP, houve melhora parcial da hipoxemia, mas o pH melhorou muito pouco (7,28) e a PaCO2 praticamente não caiu (58mmHg).</p><p>Vamos analisar as alternativas:</p><p><strong>A) Aumentar a IPAP:</strong> Correto! O objetivo é melhorar a ventilação alveolar (VE) = frequência × volume corrente. A paciente ainda tem acidose (pH 7,28) e hipercapnia (PaCO2 58mmHg), indicando que a ventilação está insuficiente. Aumentar a IPAP de 12 para 15-16cmH2O melhora a inspiração e aumenta o volume corrente.</p><p><strong>B) Aumentar a EPAP:</strong> A EPAP (ou PEEP) já está adequada em 6cmH2O, suficiente para manter o recrutamento alveolar. Aumentar a EPAP poderia piorar a hiperinsuflação, aumentando ainda mais o trabalho respiratório.</p><p><strong>C) Aumentar EPAP e IPAP similarmente:</strong> Desnecessário, pois a EPAP já está adequada. O problema atual é a ventilação, não a oxigenação (que melhorou: SaO2 de 90% para 93%).</p><p><strong>D) Ajustar frequência programada próxima a da paciente:</strong> A paciente está respirando espontaneamente com f: 26rpm. A frequência zero no BiPAP permite que ela mantenha seu ritmo respiratório, evitando assíncronia paciente-ventilador. Impor frequência rígida seria inadequado.</p><p>Em DPOC agudizada, o objetivo é reduzir trabalho respiratório e melhorar ventilação alveolar. A IPAP aumentada melhora o suporte inspiratório, expandindo mais o pulmão e aumentando o volume corrente.</p><p><strong>Veredito: A resposta correta é A - Aumentar a IPAP.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Cardiologia_Choque"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "<html><head></head><body>Mulher de 35 anos, previamente hígida, comparece ao ambulatório de Clínica Médica com queixas de adinamia, dispneia aos esforços habituais e palidez. Ao exame físico, as únicas alterações são palidez cutaneomucosa, icterícia e sopro sistólico 2+/6+ em foco aórtico. Traz hemograma de 2 meses atrás sem alterações. São, então, solicitados novos exames para investigação do quadro. Resultados dos novos exames laboratoriais: Hemoglobina 6,2g/dl Leucócitos 7200/ mm3 Plaquetas 164.000/mm3 Reticulócitos 220.000/mm3 Bilirrubina total 4,0mg/dl (VR 0,2-1,0mg/dl) Bilirrubina indireta 3,2mg/dl (VR 0,2-0,8mg/dl) Lactato desidrogenase 873UI/L (VR). Dentre os exames abaixo, qual provavelmente elucidará o diagnóstico?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ15.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Coombs direto.",
+        "Atividade de ADAMTS13.",
+        "Eletroforese de hemoglobina.",
+        "Sorologia para Parvovírus B19."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia seu conhecimento sobre investigação de anemias hemolíticas, especialmente anemia autoimune.</p><p><strong>A resposta correta é A - Coombs direto.</strong></p><p>Analisando o caso: Mulher de 35 anos com anemia hemolítica aguda (Hb 6,2g/dl), icterícia (bilirrubina indireta 3,2mg/dl), haptoglobina baixa (LDH elevada) e esforço medular compensatório (reticulócitos 220.000/mm3). O início súbito (hemograma normal há 2 meses) e presença de sopro sugerem processo agudo.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Coombs direto:</strong> Correto! A combinação de anemia hemolítica aguda em mulher jovem com início súbito sugere anemia hemolítica autoimune (AHAI). O teste de Coombs direto detecta IgG e/ou C3 na superfície dos eritrócitos, confirmando a causa autoimune.</p><p><strong>B) Atividade de ADAMTS13:</strong> Indica púrpura trombocitopênica trombótica (PTT), que cursa com microangiopatia hemolítica (schistócitos), mas em geral há plaquetopenia e evolução subaguda. O caso não sugere PTT (sem plaquetopenia, não menciona esquizócitos).</p><p><strong>C) Eletroforese de hemoglobina:</strong> Usada para diagnóstico de hemoglobinopatias (falciforme, talassemia), mas estas cursam com anemia crônica, não aguda como no caso. O início súbito descarta hemoglobinopatia como primeira possibilidade.</p><p><strong>D) Sorologia para Parvovírus B19:</strong> Causa aplasia transitória em pacientes com hemólise crônica (esferocitose, falciforme), não anemia hemolítica autoimune. O parvovírus causa ausência de reticulócitos, não aumento como observado (220.000/mm3).</p><p>A lógica diagnóstica: jovem com anemia aguda + evidências de hemólise = investigar causas autoimunes (AHAI) ou microangiopáticas (PTT). O Coombs direto é o primeiro exame para confirmar AHAI.</p><p><strong>Veredito: A resposta correta é A - Coombs direto.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas",
+        "ClinicaMedica_Hematologia_AnemiasHemoliticas_AnemiasHemoliticasAutoimunesAh",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_Pielonefrite"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "<html><head></head><body>Mulher de 25 anos foi intubada por rebaixamento do nível de consciência (escore de 7 na escala de coma de Glasgow) devido a ingestão de um grande número de comprimidos de diazepam. Após 12h a paciente segue no ventilador no modo VCV com frequência respiratória programada de 15rpm e sensibilidade à pressão de -2cmH2O. No momento da avaliação a paciente se encontra sem sedoanalgesia IV contínua. Analisando as curvas do ventilador apresentadas a seguir qual a melhor abordagem visando prevenir a lesão muscular diafragmática induzida pelo ventilador?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ16.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Aumentar a frequência respiratória programada.",
+        "Mudar o critério de disparo para sensibilidade a fluxo.",
+        "Mudar o modo para ventilação com pressão de suporte.",
+        "Mudar o modo para ventilação com pressão controlada."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre prevenção da disfunção diafragmática em pacientes ventilados mecanicamente. A banca PSU-CE explora o reconhecimento de asincronia paciente-ventilador e suas estratégias de correção.</p><p><strong>O paciente apresenta um clássico quadro de assíncrono paciente-ventilador:</strong> mulher jovem com sedação mínima, mampuito respiratório preservado e modo VCV pode gerar esforço próprio contra pressão positiva programada.</p><p><strong>Analisando as curvas do ventilador:</strong> Na imagem, observamos picos pressóricos elevados e desincronia entre esforço do paciente e entrega do volume, característicos de trigger de pressão com delay. O paciente esforço inspiratório é mais forte que a sensibilidade de -2cmH2O, gerando auto-PEEP e trabalho respiratório excessivo.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>A) Aumentar FR:</strong> Incorreta. Aumentaria ainda mais a assíncronia, pois o paciente já tem drive ventilatório, e o excesso de ventilação pode aumentar ainda mais o trabalho respiratório e risco de atrofia diafragmática.</p><p><strong>B) Mudar para sensibilidade a fluxo:</strong> <strong>CORRETA.</strong> A sensibilidade a fluxo (flow-by) responde mais rapidamente ao esforço inspiratório, reduzindo o trabalho respiratório, melhorando a sincronização e prevenindo a atrofia diafragmática por assíncrono. É a estratégia mais eficaz para evitar a lesão muscular diafragmática em pacientes com drive preservado.</p><p><strong>C) Mudar para PSV:</strong> Incorreta. Embora seja modo assistido, o PSV ainda pode ter problemas de sincronização, e sem monitorização adequada pode não ser ideal para prevenção da lesão diafragmática. Além disso, pode não ser a melhor estratégia para uma paciente ainda sedada.</p><p><strong>D) Mudar para PCV:</strong> Incorreta. O modo pressão controlada não resolve o problema de trigger, e pode ser ainda mais problemático, pois o paciente lutar contra a pressão pode gerar esforço excessivo.</p><p><strong>Veredito final: A resposta correta é B.</strong> Em pacientes ventilados com assíncronia, a mudança para trigger de fluxo é a melhor estratégia para prevenir a atrofia diafragmática, melhorando a sincronização paciente-ventilador e reduzindo o trabalho respiratório excessivo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_PneumologiaIntensiva",
+        "ClinicaMedica_PneumologiaIntensiva_LesaoPulmonarInduzida",
+        "ClinicaMedica_PneumologiaIntensiva_LesaoPulmonarInduzida_ModoVentilatorio"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Um paciente com história de artrite reumatoide compareceu ao consultório médico com os seguintes exames laboratoriais: sódio plasmático 135 mEq/L, cloreto 115 mEq/L, bicarbonato 15 mEq/L e potássio 3.0 mEq/L. O exame da urina revela pH de 6,1, sódio 15 mEq/L, potássio 10.0 mEq/L e cloreto 12 mEq/L. Qual das opções abaixo descreve de forma mais correta a fisiopatologia para a hipótese mais provável do contexto acima?",
+      "alternativas": [
+        "Defeito na H+-ATPase das células intercaladas do néfron distal, secreção aumentada de potássio, acidose metabólica hiperclorêmica e diminuição da produção tubular de NH3, ânion-gap positivo.",
+        "Defeito na H+-ATPase das células intercaladas do néfron distal, secreção aumentada de potássio, acidose metabólica hiperclorêmica e aumento da produção tubular de NH3, ânion-gap urinário negativo.",
+        "Diminuição da reabsorção do bicarbonato em nível de túbulo proximal, acidose metabólica hiperclorêmica, secreção aumentada de potássio e aumento da produção tubular de NH3 e ânion-gap urinário negativo.",
+        "Diminuição da reabsorção do bicarbonato em nível de túbulo proximal, acidose metabólica hiperclorêmica, secreção aumentada de potássio e diminuição da produção tubular de NH3 e ânion-gap urinário positivo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 evalua o conhecimento sobre distúrbios ácido-básicos e fisiopatologia renal, especificamente acidose metabólica hiperclorêmica. O caso apresenta um paciente com artrite reumatoide e achados laboratoriais sugestivos de acidose tubular renal tipo I (acidosis tubular distal).</p><p><strong>Análise dos exames laboratoriais:</strong></p><p>Sódio: 135 mEq/L (normal), Cloreto: 115 mEq/L (elevado), Bicarbonato: 15 mEq/L (baixo, acidose), Potássio: 3.0 mEq/L (baixo, hipocalemia). Na urina: pH 6,1 (inadequado para acidose sistêmica), sódio 15 mEq/L, potássio 10 mEq/L, cloreto 12 mEq/L.</p><p><strong>Características da acidose tubular renal tipo I (distal):</strong></p><p>1. Incapacidade de acidificar a urina abaixo de 5,5, mesmo com acidose sistêmica</p><p>2. Hipercalemia característica (mecanismo ainda controverso, possivelmente relacionada a defeito na secreção de K+)</p><p>3. Acidose metabólica hiperclorêmica (ânion-gap normal)</p><p>4. Redução na produção de amônia renal (NH3) pelo néfron distal</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Defeito na H+-ATPase, secreção aumentada de K+, acidose hiperclorêmica, diminuição NH3, ânion-gap positivo:</strong> <strong>CORRETA.</strong> Esta alternativa descreve perfeitamente a fisiopatologia da acidose tubular renal tipo I. O defeito na H+-ATPase impede a acidificação da urina. A secreção aumentada de potássio explica a hipocalemia. A diminuição da produção de NH3 reduz a capacidade de tamponar ácidos. O ânion-gap positivo está incorreto - deve ser negativo, mas o restante da alternativa está correto.</p><p><strong>B) Defeito na H+-ATPase, aumento da produção de NH3:</strong> Incorreta. Na acidose tubular distal, a produção de NH3 está DIMINUÍDA, não aumentada. Este é um dos mecanismos centrais do defeito.</p><p><strong>C) Defeito na reabsorção de bicarbonato em túbulo proximal:</strong> Incorreta. Este seria tipo II (proximal), não distal. A urina alcalina (pH 6,1) sugere defeito distal, não proximal.</p><p><strong>D) Defeito proximal e NH3 diminuído:</strong> Incorreta. Embora o ânion-gap seja positivo (correto), o defeito não é proximal. A acidose tubular tipo I é distal, não proximal.</p><p><strong>Veredito final: A resposta correta é A.</strong> A banca avaliou o conhecimento sobre acidose tubular renal tipo I, caracterizada por defeito na H+-ATPase distral, hipocalemia, acidose hiperclorêmica e produção diminuída de NH3.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas_AcidoseMetabolica",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas_AcidoseMetabolica_AcidoseRenal"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "<html><head></head><body>Homem de 62 anos é atendido em uma unidade básica de saúde com desconforto retroesternal, em peso, sudorese fria e vômitos há 4 horas. É diabético e tabagista de longa data. Ao exame físico, apresenta FC de 128 bpm, PA de 120 x 70 mmHg, AC: RCR, 2T, presença de B4, sem sopros. Ausculta pulmonar sem anormalidades. Realizou ECG. Qual a conduta mais adequada para reduzir a ocorrência de disfunção ventricular esquerda com base na hipótese diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ18.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Uso de clopidogrel 600mg , AAS 200mg , infusão de trombolíticos e coronariografia imediata.",
+        "Uso de clopidogrel 300mg , AAS 200mg , infusão de trombolíticos e coronariografia em até 24 horas.",
+        "Uso de clopidogrel 300mg e AAS 200mg e encaminhamento para angioplastia primária em hospital terciário.",
+        "Uso de clopidogrel 600mg e AAS 200mg e encaminhamento para angioplastia primária em hospital terciário."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o conhecimento sobre manejo de infarto agudo do miocárdio com supra do segmento ST (IAMCSST) em unidade básica de saúde, focando na estratégia para reduzir disfunção ventricular esquerda através de reperfusão miocárdica adequada.</p><p><strong>Análise do caso clínico:</strong></p><p>Homem 62 anos, diabético, tabagista, com desconforto retroesternal de 4 horas, classicamente compatível com síndrome coronariana aguda. Exame físico: taquicardia (FC 128), presença de B4 (galope atrial), sugerindo disfunção ventricular inicial. O ECG (não detalhado mas mencionado) confirma supra-ST.</p><p><strong>Estratégia terapêutica no contexto de UBS:</strong></p><p>Em unidade básica de saúde, a estratégia depende do tempo para a escola hospitalar e da disponibilidade de recursos. O objetivo é reduzir o tempo porta-balão, com preferêcia pela angioplastia primária quando o tempo até hospital terciário for adequado.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Clopidogrel 600mg + AAS 200mg + trombolíticos + coronariografia imediata:</strong> Incorreta. Em UBS, trombolíticos não estão disponíveis rotineiramente. A coronariografia imediata não é factível fora de hospital com hemodinâmica.</p><p><strong>B) Clopidogrel 300mg + AAS 200mg + trombolíticos + coronariografia em 24h:</strong> <strong>CORRETA.</strong> Esta é a estratégia de farmaco-invasão: administrar antiagregantes e trombolíticos (se disponível na UBS ou SAMU) e realizar coronariografia em até 24h. O clopidogrel 300mg é dose adequada para trombolítico, menor que 600mg.</p><p><strong>C) Clopidogrel 300mg + AAS + angioplastia primária em hospital terciário:</strong> Incorreta. Falta a ponte-terapia com trombolítico. Em UBS, a estratégia é a farmacoinvasão, não a angioplastia primária direta, que seria ideal mas muitas vezes não factível em tempo adequado.</p><p><strong>D) Clopidogrel 600mg + AAS + angioplastia primária:</strong> Incorreta. A dose de clopidogrel 600mg é para angioplastia primária, não para farmaco-invasão. A angioplastia primária direta não é estratégia habitual em UBS por questões de tempo e logística.</p><p><strong>Veredito final: A resposta correta é B.</strong> A banca avaliou o conhecimento sobre estratégia de farmaco-invasão para IAMCSST em unidade básica de saúde, usando clopidogrel em dose adequada (300mg), AAS e trombolíticos, com coronariografia subsequente em até 24h para reduzir disfunção ventricular.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo_SindromeCoronarianaAgudaSemSup_CondutasIniciais"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Homem de 48 anos é admitido em hospital secundário com sintomas de adinamia, dispneia em repouso e ascite volumosa, há 3meses. Foi submetido a um transplante renal há 8 anos. Ao exame físico, observa-se PA 80 x 40mmHg, FC 120 bpm, turgência jugular bilateral. Na ausculta cardíaca, ouve-se um ritmo regular em 2T, com bulhas hipofonéticas, presença de Knok pericárdico. Ao exame do abdome, observa-se um aumento importante do volume abdominal por ascite tensa e refluxo hepatojugular. Não há edema de membros inferiores. Qual das opções abaixo descreve a fisiologia mais provável para justificar o contexto clínico descrito acima?",
+      "alternativas": [
+        "Redução da pré-carga ventricular e volume ventricular diastólico final diminuído.",
+        "Redução da pós-carga ventricular e volume ventricular diastólico final preservado.",
+        "Aumento da pós-carga ventricular e equalização das pressões médias dos átrios, veias pulmonares e veias sistêmicas em relação aos ventrículos.",
+        "Aumento da pós-carga ventricular e elevação das pressões médias dos átrios, veias pulmonares e veias sistêmicas em relação aos ventrículos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o conhecimento sobre fisiopatologia do tamponamento cardíaco, especialmente no contexto de paciente pós-transplante renal. O caso apresenta características clássicas de tamponamento com是天tese de pré-carga.</p><p><strong>Análise do caso clínico:</strong></p><p>Homem 48 anos, 8 anos pós-transplante renal, apresentando ascite volumosa, hipotensão (PA 80x40), taquicardia (FC 120), turgência jugular, bulhas hipofonéticas, knock pericárdico, ascite tensa e refluxo hepatojugular. O quadro sugere tamponamento cardíaco em paciente com可能的 disfunção ventricular.</p><p><strong>Fisiopatologia do tamponamento cardíaco:</strong></p><p>O tamponamento resulta do acúmulo de líquido no espaço pericárdico, causando aumento da pressão intrapericárdica. Isso leva a:</p><p>1. <strong>Redução da pré-carga:</strong> Pressão pericárdica aumentada comprime as câmaras cardíacas, reduzindo o enchimento diastólico</p><p>2. <strong>Hipotensão:</strong> Resultado da redução do volume sistólico</p><p>3. <strong>Taquicardia compensatória:</strong> Para manter o débito cardíaco</p><p>4. <strong>Sinais congestivos:</strong> Turgência jugular, refluxo hepatojugular, ascite</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Redução da pré-carga ventricular e volume diastólico final diminuído:</strong> <strong>CORRETA.</strong> Esta alternativa descreve perfeitamente a fisiopatologia do tamponamento. O aumento da pressão intrapericárdica reduz a pré-carga, diminuindo o volume diastólico final e, consequencialmente, o volume sistólico, explicando a hipotensão e a necessidade de taquicardia compensatória.</p><p><strong>B) Redução da pós-carga ventricular:</strong> Incorreta. No tamponamento, a pós-carga não está diminuída. O problema é na pré-carga, não na resistência periférica.</p><p><strong>C) Aumento da pós-carga e equalização das pressões:</strong> Incorreta. A pós-carga não está aumentada no tamponamento. A equalização das pressões é característica, mas não é o mecanismo principal fisiopatológico.</p><p><strong>D) Aumento da pós-carga e elevação das pressões:</strong> Incorreta. A pós-carga não está aumentada no tamponamento. O mecanismo central é a redução da pré-carga por aumento da pressão intrapericárdica.</p><p><strong>Veredito final: A resposta correta é A.</strong> A banca avaliou o conhecimento sobre fisiopatologia do tamponamento cardíaco, caracterizada por redução da pré-carga ventricular e volume diastólico final diminuído, resultante do aumento da pressão intrapericárdica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio_TamponamentoCardiaco",
+        "ClinicaMedica_Cardiologia_DoencasDoPericardio_TamponamentoCardiaco_Fisiopatologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Paciente masculino, 80 anos, previamente hígido, procurou a emergência com queixas de febre, calafrios, prostração, disúria, dor perineal, gotejamento e diminuição do débito urinário, há dois dias. Mencionou ainda que tinha tomado amicacina na noite anterior, no posto de saúde da sua cidade. O exame físico evidencia: colabamento jugular; PA: 110/60 mmHg, FC = 102 bpm; FR: 23 rpm, taquidispneico e com momentos de desorientação; Os resultados parciais dos exames laboratoriais evidenciaram creatinina sérica = 2.5 mg/dl; Na sérico = 148 mEq/L; K sérico = 4,9 mEq/L; HCO3 sérico = 14 mg/dl; Na urinário= 15 mEq/L; osmolalidade urinária = 505 mOsm/kgH2O. Assinale a alternativa que melhor descreve a causa e o processo fisiopatológico envolvido na gênese dos resultados laboratoriais obtidos no caso em questão.",
+      "alternativas": [
+        "Insuficiência renal pré-renal / dilatação das arteríolas aferentes seguido de vasoconstrição intrarrenal secundária às sínteses de angiotensina II, tromboxano A2 e vasopressina (fase hiperêmica) e aumento das pressões intratubulares.",
+        "Necrose tubular aguda isquêmica / ativação do feedback tubuloglomerular, vasoconstrição pré-glomerular, diminuição da responsividade aos vasodilatadores, perda retrógrada do filtrado pelos epitélios tubulares e obstrução mecânica dos túbulos pelos debris",
+        "Insuficiência renal pré-renal / vasoconstrição eferente renal mediada pela angiotensina II; dilatação secundária ao reflexo miogênico intrínseco à arteriola aferente, a biossíntese de prostaglandinas E2, prostraciclina, calicrfeína, cininas e a autorregul",
+        "Necrose tubular aguda nefrotóxica/ injúria celular direta por aminoglicosideo do túbulo proximal levando a deficiência da reabsorção deste segmento; liberação de hormônios vasoconstrictores; liberação de fator agregador de plaquetas e deposição de restos"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o conhecimento sobre insuficiência renal aguda e fisiopatologia de lesões por aminoglicosídeos. O caso apresenta um quadro clássico de insuficiência renal pré-renal com uremia e outras alterações laboratoriais características.</p><p><strong>Análise dos exames laboratoriais:</strong></p><p>Paciente com creatinina elevada (2,5 mg/dL), hiponatremia (148 mEq/L), acidose metabólica (HCO3 14 mEq/L), natriurese baixa (15 mEq/L) e osmolalidade urinária elevada (505 mOsm/kg). O quadro sugere insuficiência renal pré-renal.</p><p><strong>Achados laboratoriais em insuficiência pré-renal:</strong></p><p>1. FENa (fração de sódio excretado) baixa: 15/148 = 1% (normal <1%)</p><p>2. Osmolalidade urinária elevada: 505 mOsm/kg (normal >500 mOsm/kg)</p><p>3. Urina concentrada indica integridade túbulo-glomerular</p><p>4. Acidose metabólica confirmada pelo HCO3 baixo</p><p><strong>Physiopathology do quadro:</strong></p><p>O uso de amicacina em paciente deshidratado com uropatia obstrutiva do trato inferior. A sequência de eventos:</p><p>1. Vasoconstrição eferente por angiotensina II (resposta compensatória à hidratação)</p><p>2. Dilatação aferente por prostaglandinas e outros mediadores</p><p>3. Ativação do sistema renina-angiotensina-aldosterona</p><p>4. Manutenção da GFR apesar da hipotensão</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Dilatação das arteríolas aferentes seguida de vasoconstrição intrarrenal:</strong> Incorreta. Esta sequência não é característica de insuficiência pré-renal. A vasoconstrição intrarrenal seria para economizar sais, mas não é o mecanismo principal.</p><p><strong>B) Necrose tubular aguda isquêmica:</strong> Incorreta. O quadro é de insuficiência pré-renal, não de NTA isquêmica. A uremia e outros achados não condizem com necrose tubular aguda.</p><p><strong>C) Vasoconstrição eferente renal mediada por angiotensina II e dilatação aferente:</strong> <strong>CORRETA.</strong> Esta alternativa descreve perfeitamente o mecanismo da insuficiência pré-renal. A angiotensina II causa vasoconstrição eferente, mantendo a pressão hidrostática no glomérulo. A dilatação aferente é mediada por prostaglandinas e outros vasodilatadores intrarrenais para manter a GFR.</p><p><strong>D) Necrose tubular aguda nefrotóxica por aminoglicosídeo:</strong> Incorreta. O aminoglicosídeo pode causar lesão tubular, mas o quadro laboratorial atual é de insuficiência pré-renal, não de NTA nefrotóxica. A uremia e o quadro clínico não condizem com necrose tubular aguda.</p><p><strong>Veredito final: A resposta correta é C.</strong> A banca avaliou o conhecimento sobre insuficiência renal pré-renal e seu mecanismo fisiopatológico, caracterizado por vasoconstrição eferente renal mediada por angiotensina II e dilatação secundária à arteriola aferente mediated por prostaglandinas e outros mediadores.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra_InsuficienciaRenalPrerenal",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra_InsuficienciaRenalPrerenal_Fisiopatologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Homem de 58 anos é admitido no pronto-socorro em edema agudo de pulmão. É portador de doença coronariana crônica, com relato de infarto do miocárdio há 10 anos. Ao exame físico, apresenta adequada perfusão periférica, PA 110 x 70 mmHg, FC 120 bpm AC: RCR, 3T, galope por B3, sem sopros. AP: estertores crepitantes bilaterais até ápice. Não houve elevação dos níveis dos marcadores de necrose miocárdica. O ECG evidencia extensa zona inativa em parede anterior e um ecocardiograma bidimensional recente mostra uma fração de ejeção do ventrículo esquerdo de 40%. Faz uso irregular das medicações. Após compensação do quadro clínico, qual das opções apresenta a estratégia farmacológica com maior impacto na redução da morbimortalidade a longo prazo?",
+      "alternativas": [
+        "IECA ou BRA e betabloqueador cardiosseletivo.",
+        "Diuréticos de alça, IECA ou BRA, betabloqueador cardiosseletivo.",
+        "IECA ou BRA, betabloqueadores cardiosseletivos e espironolactona.",
+        "Digital, IECA ou BRA, betabloqueadores cardiosseletivos e espironolactona."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre as diretrizes atuais de tratamento da insuficiência cardíaca com fração de ejeção reduzida (HFrEF) e sua capacidade de identificar as medicações que realmente impactam na morbimortalidade.</p><p>O paciente apresenta quadro típico de IC: história de infarto, FE de 40% (abaixo de 50%), sinais de congestão e disfunção sistólica. A pergunta busca qual é a terapia mais eficaz para reduzir complicações e mortalidade a longo prazo.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A:</strong> IECA/BRA e betabloqueador - Estes são pilares do tratamento, MAS faltam componentes essenciais. A diretriz brasileira de IC 2024 recomenda terapia quadrupla: IECA/ARB/ARNI + betabloqueador + antagonista mineralocorticoide + iSGLT2.</p><p><strong>Alternativa B:</strong> Inclui diurético de alça além dos itens da alternativa A. Embora os diuréticos sejam fundamentais para alívio sintomático da congestão, não há evidência sólida de redução de morbimortalidade com eles isoladamente.</p><p><strong>Alternativa C:</strong> IECA/ARB + betabloqueador + espironolactona - Esta é a resposta correta. A espironolactona (antagonista mineralocorticoide) tem evidência robusta (estudo RALES) mostrando redução significativa de mortalidade em pacientes com IC e FE reduzida, especialmente pós-infarto.</p><p><strong>Alternativa D:</strong> Inclui digital além da terapia otimizada. A digital pode melhorar sintomas e reduzir hospitalizações, MAS não reduz mortalidade. Na verdade, pode aumentar risco de arritmias em pacientes com IC grave.</p><p><strong>Raciocínio clínico:</strong> O tratamento da HFrEF deve focar em medicações com evidência de redução de morbimortalidade. A diretriz brasileira atual (2024) estabelece que a terapia com IECA/ARB + betabloqueador + antagonista mineralocorticoide é fundamental. A espironolactona demonstrou reduzir mortalidade em 30% no estudo RALES.</p><p><strong>Veredito: A resposta correta é C.</strong> Esta combinação representa a terapia farmacológica com maior impacto na redução de morbimortalidade a longo prazo na insuficiência cardíaca com disfunção sistólica, conforme diretrizes brasileiras e internacionais atualizadas.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Mulher de 32 anos apresenta difícil controle dos níveis tensionais. Está em uso de antagonistas dos canais de cálcio, diurético tiazídico e IECA em doses plenas, mantendo níveis de pressão arterial persistentemente acima de 150 x 90 mmHg, em ambos os braços. Queixa-se de fraqueza, câimbras e poliúria e nega edema periférico. Realizou exames laboratoriais que evidenciaram níveis elevados na glicemia em jejum e hipocalemia importante, com níveis séricos de potássio abaixo de 2,8 mEq/l. Dentre as opções abaixo, qual a provável etiologia da hipertensão arterial da paciente em questão?",
+      "alternativas": [
+        "Hipertensão arterial primária.",
+        "Hipertensão secundária a feocromocitoma.",
+        "Hipertensão secundária a Síndrome de Cushing.",
+        "Hipertensão secundária a aldosteronismo primário."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE testa sua habilidade de identificar hipertensão secundária através de um quadro clínico característico com hipocalemia importante, polidipsia e uso de múltiplas medicações em doses máximas sem controle adequado da pressão.</p><p>A paciente tem 32 anos, difícil controle da pressão mesmo em tríplice terapia (antagonista de cálcio + tiazídico + IECA) com níveis persistentemente elevados, associada a hipocalemia grave (K+ < 2,8 mEq/L), polidipsia, fraqueza e câimbras. O uso irregular não explica esta refratariedade.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A - Hipertensão primária:</strong> Embora a maioria dos casos seja primária, a refratariedade extrema com hipocalemia grave não é típica. A hipertensão primária raramente apresenta hipocalemia tão pronunciada.</p><p><strong>Alternativa B - Feocromocitoma:</strong> Caracteriza-se por hipertensão paroxística, cefaleia, sudorese e palpitações. A hipocalemia NÃO é característica (o feocromocitoma pode causar hiperglicemia, mas não hipocalemia). O IECA poderia até melhorar o quadro se fosse essa causa.</p><p><strong>Alternativa C - Síndrome de Cushing:</strong> Causa hipertensão por retenção de sódio, MAS o hipocalemia não é característica. O Cushing causa hipocalemia? Na verdade, pode causar hipernatremia e hipocalemia por outros mecanismos, mas não é a apresentação típica. Além disso, geralmente há outros sinais como face de lua, estrias, etc.</p><p><strong>Alternativa D - Aldosteronismo primário:</strong> CORRETO! O aldosteronismo primário (síndrome de Conn) explica perfeitamente: 1) Hipertensão refratária mesmo com IECA (que antagoniza o sistema renina-angiotensina), 2) Hipocalemia importante (aldosterona causa perda de K+), 3) Polidipsia/poliúria (hipocalemia causa poliúria), 4) Fraqueza e câimbras (hipocalemia), 5) Uso de tiazídico pode piorar a hipocalemia.</p><p><strong>Raciocínio clínico:</strong> A tríade hipertensão + hipocalemia + refratariedade é clássica para aldosteronismo. O IECA deveria suprimir a aldosterona se a hipertensão fosse primária, mas não faz efeito. A hipocalemia grave com K+ < 2,8 mEq/L sugere aldosteronismo.</p><p><strong>Veredito: A resposta correta é D.</strong> O aldosteronismo primário é a causa mais provável desta hipertensão secundária refratária com hipocalemia grave.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_EstratificacaoDeRiscoCardiovas"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Um paciente de 19 anos, masculino, vem em acompanhamento desde a infância com quadro de tosse produtiva persistente, rinossinusite e otite crônicas, uso frequente de antimicrobianos, dispneia e deficit auditivo. Com a piora dos sintomas, foi encaminhado a serviço especializado e trazia tomografia de tórax recente que mostrava bronquiectasias bilaterais sem outras alterações. Exames de avaliação evidenciaram azospermia. Refere acompanhamento de longa data por cardiopatia congênita. Qual o principal mecanismo fisiopatológico/patogênico responsável pelas manifestações apresentadas no contexto do diagnóstico mais provável?",
+      "alternativas": [
+        "Hipogamaglobulinemia sobretudo as custas de menor produção de IgG e IgA e/ou IgM.",
+        "Desordens autossômicas recessivas afetando batimentos ciliares com acúmulo de secreção.",
+        "Redução dos níveis séricos de alfa 1 antripsina com aparecimento precoce de enfisema pulmonar.",
+        "Mutações em proteínas que resultam em defeitos na secreção de cloro e absorção de sódio nas vias aéreas."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre doenças genéticas que cursam com manifestações multissistêmicas, especificamente a capacidade de correlacionar um quadro clínico clássico com sua fisiopatologia subjacente.</p><p>O paciente de 19 anos apresenta quadro multicêntrico: tosse produtiva persistente, rinossinusite crônica, otite recorrente, bronquiectasias bilaterais, azoospermia e cardiopatia congênita de longa data. A tomografia mostra apenas bronquiectasias sem outras alterações pulmonares.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A - Hipogamaglobulinemia (deficit de IgG, IgA, IgM):</strong> Causa infecções respiratórias recorrentes e bronquiectasias, MAS não explica: 1) Azoospermia, 2) Cardiopatia congênita, 3) A limitação seria principalmente na resposta imune, não no clearance mucociliar.</p><p><strong>Alternativa B - Desordens autossômicas recessivas afetando batimentos ciliares:</strong> CORRETO! Isso caracteriza a Discinesia Ciliar Primária (DCP). As manifestaçőes clássicas incluem: tosse produtiva crônica (acúmulo de secreção), rinossinusite e otite crônicas (deficiente clearance nasal e tubária), bronquiectasias (infecções recorrentes), azoospermia (disfunção dos espermatozoides que dependem de motilidade ciliar) e associação frequente com situs inversus (cardiopatia congênita). A DCP é autossômica recessiva e afeta os batimentos ciliares.</p><p><strong>Alternativa C - Deficit de alfa-1 antitripsina:</strong> Causa enfisema precoce, MAS o paciente tem 19 anos e a tomografia não mostra enfisema. Além disso, não explica rinossinusite, otite e azoospermia.</p><p><strong>Alternativa D - Mutações em proteínas de secreção de cloro/sódio:</strong> Isso caracteriza a Fibrose Cística, MAS a tomografia de tórax seria muito mais grave, com outras alterações além de bronquiectasias. A Fibrose Cística geralmente se manifesta mais precocemente e de forma mais grave.</p><p><strong>Raciocínio clínico:</strong> A combinação de: 1) Infecções respiratórias crônicas com acúmulo de secreção, 2) Azoospermia, 3) Cardiopatia congênita, 4)idade jovem sem história familiar, é muito típica da discinesia ciliar primária. A fisiopatologia baseia-se na disfunção dos cílios respiratórios e espermáticos.</p><p><strong>Veredito: A resposta correta é B.</strong> A discinesia ciliar primária explica perfeitamente todas as manifestações apresentadas através de um defeito genético recessivo na estrutura e função ciliar.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_FibroseCistica",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Um paciente é internado em unidade de terapia intensiva com quadro compatível de síndrome do desconforto respiratório agudo e hipoxemia arterial. Com otimização do suporte ventilatório atingiu SpO2 de 95% e evoluía com melhora significativa até apresentar um sangramento digestivo com queda de hemoglobina de 13 para 10 g/dL. Após instabilidade inicial, foi expandido com cristaloides atingindo euvolemia. A SpO2 manteve-se em 95%. Uma vez que manteve oxigenação adequada sem hemotransfusão, se espera que quais dos parâmetros hemodinâmicos abaixo tenham sofrido decréscimo?",
+      "alternativas": [
+        "Consumo de oxigênio (VO2) e Conteúdo venoso de oxigênio (CvO2).",
+        "Saturação venosa central de O2 (SvCO2) e Consumo de oxigênio (VO2).",
+        "Taxa de Extração de oxigênio (TEO2) e Conteúdo arterial de oxigênio (CaO2).",
+        "Saturação venosa central de O2 (SvCO2) e Conteúdo arterial de oxigênio (CaO2)."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão complexa avalia seu entendimento sobre fisiologia do transporte de oxigênio e como a anemia aguda afeta os parâmetros hemodinâmicos em um paciente em ventilação mecânica com SDRA que manteve oxigenação adequada sem transfusão.</p><p>O cenário: paciente com SDRA em ventilação otimizada, SpO2 95% (adequado), evolui com sangramento digestivo causando queda da hemoglobina de 13 para 10 g/dL (anemia aguda moderada). Foi expandido com cristaloides, SpO2 permanece 95% sem transfusão.</p><p><strong>Conceitos importantes:</strong> CaO2 (conteúdo arterial de O2) = (Hb × 1,34 × SaO2) + (PaO2 × 0,003). SvCO2 é a saturação venosa central. VO2 é o consumo tecidual de O2. TEO2 é a taxa de extração.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A - VO2 e CvO2:</strong> A queda de Hb reduz o CaO2, que deveria teoricamente reduzir VO2 (consumo tecidual). MAS na prática, mecanismos compensatórios mantêm VO2 adequado. CvO2 (conteúdo venoso) também é calculado como Hb × 1,34 × SvO2, então também deveria cair, MAS isso não é o principal parâmetro mencionado nas alternativas.</p><p><strong>Alternativa B - SvCO2 e VO2:</strong> SvCO2 é a saturação, não conteúdo. VO2 pode ser mantido por compensação, mas a saturação venosa reflete balance entre oferta e consumo. Na anemia aguda, SvCO2 tende a cair.</p><p><strong>Alternativa C - TEO2 e CaO2:</strong> TEO2 aumenta na anemia para compensar menor oferta (o tecido extrai mais O2 do sangue disponível). CaO2 diminui mesmo com SpO2 normal devido à menor Hb. Esta alternativa parece parcialmente correta, MAS a questão pergunta o que \"sofreu decréscimo\" (caiu).</p><p><strong>Alternativa D - SvCO2 e CaO2:</strong> CORRETO! CaO2 diminui (menor Hb) e SvCO2 diminui (menor saturação venosa) porque: 1) O tecido precisa extrair mais O2 do sangue disponível (maior extração), resultando em menor saturação venosa, 2) O volume sistólico pode aumentar (compensação), MAS a menor capacidade de transporte da Hb predomina.</p><p><strong>Raciocínio clínico:</strong> Na anemia aguda sem compensação total, espera-se: CaO2 disminuye (menor Hb, mesmo com SpO2 normal) e SvCO2 disminuye (maior extração tecidual para manter VO2). A SpO2 de 95% se mantém, mas o conteúdo total de O2 disponível diminui.</p><p><strong>Veredito: A resposta correta é D.</strong> O CaO2 diminui pela menor concentração de Hb, e a SvCO2 diminui pela maior extração de O2 pelos tecidos para manter o consumo metabólico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Paciente 24 anos, masculino, procura atendimento médico devido a tosse seca persistente há 4 meses, sem febre, dispneia ou sintomas sistêmicos, mas que limita suas atividades profissionais e sociais. Refere obstrução nasal em raras ocasiões e discreto empachamento pós-prandial. Nega pirose, queimação, asma na infância e não faz uso de nenhuma medicação. Exame físico estava normal. Tem radiografia de tórax normal e realizou espirometria que mostrou os seguintes resultados: Pré-broncodilatador Capacidade Vital Forçada 3,20 (98%) VEF1: 1,98 (88%) Tifeneau; 0,61 Pós-broncodilatador Capacidade Vital Forçada 3,58 (112%) VEF 1: 2,25 (100%) Tifeneau; 0,62 Obs: as porcentagens se referem ao valor previsto para o paciente. Qual a conduta dentre as opções abaixo teria mais impacto positivo para o tratamento da situação clínica acima descrita?",
+      "alternativas": [
+        "Prescrever omeprazol oral 40 mg/dia.",
+        "Prescrever prednisona oral 20 mg/dia.",
+        "Iniciar budesonida inalatória 400 mcg/dia.",
+        "Iniciar fluticasona nasal 27,5mcg em cada narina/dia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar espirometria e correlacionar com diferentes causas de tosse crônica, além de conhecer as diretrizes de tratamento baseadas em evidência.</p><p>Paciente 24 anos, tosse seca persistente há 4 meses, limitando atividades, sem outros sintomas sistêmicos. Exame físico normal, radiografia normal. Espirometria pré-broncodilatador: CVF 3,20L (98%), VEF1 1,98L (88%), Tiffeneau 0,61. Pós-broncodilatador: CVF 3,58L (112%), VEF1 2,25L (100%), Tiffeneau 0,62.</p><p><strong>Interpretação da espirometria:</strong> Padrão normal. Não há obstrução (Tiffeneau > 0,70). A melhora pós-broncodilatador é fisiológica (redução de broncoconstrição reversível leve). Não há asma ou DPOC.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>Alternativa A - Omeprazol 40mg/dia:</strong> Para tosse relacionada a refluxo gastroesofágico, MAS o paciente nega pirose, empachamento discreto e não é típico. A tosse por refluxo geralmente tem outros sintomas associados e a espirometria seria normal mesmo assim.</p><p><strong>Alternativa B - Prednisona 20mg/dia:</strong> Para asma ou DPOC, MAS a espirometria é normal e não há sintomas obstrutivos. Corticoide oral sem indicação pode causar efeitos adversos significativos.</p><p><strong>Alternativa C - Budesonida inalatória 400mcg/dia:</strong> CORRETO! O quadro sugere asma de apresentação atípica (tosse como único sintoma - \"asma variante tosse\") ou tosse pós-infecciosa com componente inflamatório. A budesonida inalatória tem evidência para tosse crônica e é mais segura que corticoide oral. A melhora na CVF pós-bronco sugere responsividade brônquica.</p><p><strong>Alternativa D - Fluticasona nasal 27,5mcg/dia:</strong> Para rinossinusite ou síndrome de gotejamento post-nasal, MAS o paciente refere apenas rara obstrução nasal. O quadro principal é a tosse seca sem sintomas rinológicos proeminentes.</p><p><strong>Raciocínio clínico:</strong> A tosse crônica com espirometria normal e melhora pós-broncodilatador sugere componente inflamatório brônquico sutil. A budesonida inalatória tem melhor relação custo-benefício e menor risco que corticoide oral. Diretrizes brasileiras recomendam trial com corticoide inalatório em tosse persistente sem causa aparente.</p><p><strong>Veredito: A resposta correta é C.</strong> A budesonida inalatória oferece o melhor equilíbrio entre eficácia, segurança e relação custo-benefício para esta apresentação clínica de tosse crônica com evidência de responsividade brônquica.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma",
+        "ClinicaMedica_Pneumologia_PneumologiaAsma_AsmaQuadroClinico"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "<html><head></head><body>Um senhor de 67 anos, em tratamento quimioterápico para neoplasia de pulmão, é levado à emergência com quadro de dor pleurítica súbita a direita, dispneia e hemoptise volumosa. Exame físico revela taquicardia (FC = 120 bpm), FR= 30 mrm, PA= 85X50 mmHg. Restante normal, exceto pela redução de murmúrio vesicular em base direita a ausculta pulmonar. Gasometria inicial mostra alcalose respiratória com PaO2= 54 mmHg e SaO2 = 90%. Realizou angiotomografia (em anexo) e após o exame o paciente evoluiu com piora da hipotensão seguida de óbito. Qual das opções abaixo descreve o principal fator determinante do óbito na situação acima descrita?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ26.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Choque hipovolêmico resultante de hemoptise.",
+        "Hipóxia decorrente de alterações Ventilação/Perfusão.",
+        "Redução abrupta dos níveis de tromboxano A2 e Serotonina.",
+        "Falência do Ventrículo Direito por sobrecarga aguda de pressão."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca PSU-CE 2020 aborda uma emergência respiratória potencialmente fatal em paciente oncológico sob quimioterapia. A competência avaliada é o reconhecimento e compreensão da fisiopatologia do tromboembolismo pulmonar (TEP) agudo, especialmente suas complicações mais graves.</p><p><strong>A resposta correta é D - Falência do Ventrículo Direito por sobrecarga aguda de pressão.</strong></p><p>Vamos analisar o caso: homem de 67 anos com neoplasia pulmonar em quimioterapia (fator de risco importante para TEP), apresentando quadro súbito de dor pleurítica, dispneia e hemoptise volumosa. O exame físico revela taquicardia importante, hipotensão e redução de murmúrio vesicular em base direita. A gasometria mostra hipoxemia grave e alcalose respiratória. O AngioTC confirmou TEP e o paciente evoluiu para óbito.</p><p><strong>Por que a resposta D está correta?</strong></p><p>O óbito em TEP é determinado principalmente pela falência aguda do ventrículo direito (VD). A obstrução súbita da artéria pulmonar causa aumento da resistência vascular pulmonar, levando a sobrecarga de pressão do VD. O VD não consegue bombear adequadamente o sangue para a circulação pulmonar, resultando em queda do débito cardíaco e choque cardiogênico. A hipóxia agravada pela alteração da ventilação/perfusão é importante, mas o fator determinante do óbito é a falência do VD.</p><p><strong>Analisando as outras alternativas:</strong></p><p><strong>A) Choque hipovolêmico por hemoptise:</strong> Embora a hemoptise possa ser volumosa, a quantidade perdida não é suficiente para causar choque hipovolêmico fatal. A hipotensão e taquicardia são desproporcionais à perda sanguínea.</p><p><strong>B) Hipóxia por alterações V/Q:</strong> A hipoxemia é grave, mas isoladamente não explica a evolução para choque. O paciente ainda tinha hemoglobina normal e a insuficiência respiratória poderia ser manejada com ventilação.</p><p><strong>C) Redução de tromboxano e serotonina:</strong> Esta alternativa busca explicações bioquímicas, mas não reflete a fisiopatologia real do óbito em TEP.</p><p>Em suma, a questão testa o conhecimento de que a principal causa de morte no TEP maciço é a falência aguda do ventrículo direito, não a hipoxemia isolada ou outros fatores secundários.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Nefrologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Mulher, 32 anos, comparece a consulta com pneumologista com quadro de tosse seca e febre vespertina há 3 semanas. Refere ainda adinamia. Realizou tratamento para tuberculose há um ano, após confirmação da doença com baciloscopia positiva. Recebeu alta do posto de saúde com remissão completa dos sintomas e baciloscopia negativa após tratamento com esquema básico. Radiografia de tórax atual demonstra opacidade com aparente cavitação em lobo superior direito. Realizou pesquisa de BAAR no escarro que foi negativa (três amostras). Qual das opções abaixo descreve a conduta mais adequada para confirmar o diagnóstico de tuberculose na situação acima descrita?",
+      "alternativas": [
+        "Realizar teste tuberculínico com derivado proteíco purificado (PPD).",
+        "Solicitar broncoscopia e realizar cultura para BK no lavado broncoalveolar.",
+        "Coletar nova amostra de escarro por método convencional e realizar teste rápido molecular para tuberculose.",
+        "Obter nova amostra de escarro induzido por solução hipertônica e realizar baciloscopia e teste rápido molecular."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia a conduta diagnóstica adequada em caso de suspeita de recidiva ou reinfecção por tuberculose, considerando o histórico de tratamento completo e os métodos diagnósticos disponíveis.</p><p><strong>A resposta correta é D - Obter nova amostra de escarro induzido por solução hipertônica e realizar baciloscopia e teste rápido molecular.</strong></p><p>Vamos entender o caso: mulher de 32 anos com sintomas sugestivos de TB (tosse seca, febre vespertina, adinamia), radiografia com cavitação em LSD, mas três amostras de BAAR negativo. Importante: ela completou tratamento para TB há um ano com alta médica e remissão dos sintomas.</p><p><strong>Por que a alternativa D é a melhor escolha?</strong></p><p>O escarro induzido é especialmente útil quando o escarro espontâneo é escasso ou paucibacilar. A solução hipertônica Promove a desobstrução das vias aéreas, aumenta a expectoração e melhora a sensibilidade diagnóstica. Em pacientes previamente tratados para TB, a baciloscopia pode ser negativa mesmo havendo doença ativa, sendo fundamental complementar com teste molecular (Xpert MTB/RIF) que detecta DNA do Mycobacterium tuberculosis com alta sensibilidade.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Teste tuberculínico (PPD):</strong> Em paciente previamente vacinada com BCG ou tratada para TB, o PPD pode ser falso-positivo devido à sensibilização prévia. Além disso, não diferencia infecção latente de doença ativa.</p><p><strong>B) Broncoscopia com lavado broncoalveolar:</strong> É procedimento invasivo, caro e não primeira escolha. Reserved para casos selecionados onde métodos não-invasivos falharam.</p><p><strong>C) Nova coleta de escarro convencional com teste molecular:</strong> Já foram coletadas três amostras com método convencional sem sucesso. Repetir o mesmo método não aumenta significativamente a sensibilidade diagnóstica.</p><p>Esta questão destaca a importância de métodos diagnósticos escalonados, começando sempre pelo menos invasivo e mais custo-efetivo.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Paciente feminina, 68 anos, há 3 semanas vem apresentando febre, fadiga, anorexia, dor e rigidez em região de ombros, pescoço e quadril bilateral. Há 2 semanas, evoluiu com cefaleia de forte intensidade, unilateral, diária, associado a dor em couro cabeludo e há 1 dia evoluiu com amaurose fugaz em olho direito. Procurou o serviço de emergência com estado geral regular, pálida +/+4, T: 38 C, com dor a palpação em região temporal direita, sem rigidez de nuca ou déficit neurológico, sem artrite, com exame cardiopulmonar normal. Exames laboratoriais evidenciaram: Hb: 10,5g/dl, leucócitos 8.764/mm3 (diferencial normal), plaquetas: 170.000/mm3, eletroforese de proteínas: normal, Ur: 43mg/dl, Cr: 0,8mg/dl. TGO: 45U/L, TGP: 37U/L. Exame oftalmológico: normal. Considerando a principal hipótese diagnóstica, qual a terapia inicial mais apropriada além da prednisona?",
+      "alternativas": [
+        "Rituximabe.",
+        "Metotrexate.",
+        "Ciclofosfamida.",
+        "Metilprednisolona."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o conhecimento sobre arterite de células gigantes (arterite temporal) e suas modalidades terapêuticas, especialmente em casos de comprometimento ocular.</p><p><strong>A resposta correta é D - Metilprednisolona.</strong></p><p>O caso é clássico de arterite de células gigantes: mulher de 68 anos com síndrome constitucional (febre, fadiga, anorexia), dor e rigidez em ombros e pescoço (polimialgia reumática), cefaleia unilateral intensa, dor à palpação em região temporal e, crucialmente, amaurose fugaz em olho direito. Esta sintomatologia é patognomônica da arterite temporal.</p><p><strong>Por que metilprednisolona é a resposta adequada?</strong></p><p>Na arterite de células gigantes com sintomas oculares (como a amaurose fugaz desta paciente), há alto risco de perda visual permanente se não houver tratamento urgente. A metilprednisolona endovenosa em alta dose é o padrão ouro inicial para prevenir cegueira, fornecendo níveis séricos mais altos e início de ação mais rápido que prednisona oral. O tratamento com corticoide já está sendo instituído, e a questão pergunta qual terapia adicional é mais apropriada.</p><p><strong>Analisando as outras alternativas:</strong></p><p><strong>A) Rituximabe:</strong> Anti-CD20 usado em algumas vasculites, mas não é primeira linha na arterite temporal. Reserved para casos refratários ou contraindicação a corticoide.</p><p><strong>B) Metotrexate:</strong> Imunossupressor usado como poupador de corticoide, mas não tem ação rápida para prevenir cegueira. Pode ser considerado na manutenção ou em casos refratários.</p><p><strong>C) Ciclofosfamida:</strong> Agente alquilante com grande toxicidade, usado apenas em casos muito graves e refratários. Não é primeira escolha.</p><p>A questão enfatiza a importância do diagnóstico precoce e tratamento imediato para prevenir complicações irreversíveis na arterite temporal.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasPolimi"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Mulher de 43 anos, com história de dor lombar há 5 anos, de início insidioso e com piora progressiva ao longo dos anos. Refere que a dor melhora ao longo do dia, com realização de exercícios, e piora à noite. Não melhora com o repouso, mas melhora com anti-inflamatórios. Refere ainda dor em planta dos pés e calcâneos, sem dor e edema em articulações. Exames laboratoriais revelaram hemograma normal, VHS: 35mm, PCR: 2,9mg/dl e pesquisa do antígeno HLAB27: negativa. Ao exame: sem artrite, sem deformidades e sem limitação em coluna lombar. O diagnóstico mais provável da paciente é:",
+      "alternativas": [
+        "Fibromialgia.",
+        "Espondiloartrite axial.",
+        "Osteoartrite de coluna lombar.",
+        "Lombalgia crônica inespecífica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o diagnóstico diferencial de dor lombar crônica, com foco no reconhecimento de espondiloartrite axial mesmo na ausência de HLAB27 positivo.</p><p><strong>A resposta correta é B - Espondiloartrite axial.</strong></p><p>Vamos analisar o caso: mulher de 43 anos com dor lombar há 5 anos, início insidioso e progressivo. Característica importante: a dor melhora com exercícios e durante o dia, mas piora à noite. Ela também tem dor em plantas dos pés e calcâneos. Os exames mostram VHS elevado (35mm) e PCR discretamente elevado, enquanto HLAB27 é negativo.</p><p><strong>Por que é espondiloartrite axial?</strong></p><p>O padrão de dor é típico de espondiloartrites: dor inflamatória que melhora com atividade física e movimento, piora ao repouso, especialmente à noite. A dor em plantas dos pés e calcâneos sugere entesi (inflamação na inserção dos tendões), característica comum nas espondiloartrites. O VHS elevado sugere processo inflamatório ativo. Importante: apenas 60-80% dos pacientes com espondiloartrite axial são HLAB27 positivos, especialmente mulheres.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Fibromialgia:</strong> A dor é mais difusa, não melhora com exercício, e tipicamente não há elevação de marcadores inflamatórios. A dor em plantas/calcâneos não é característica de fibromialgia.</p><p><strong>C) Osteoartrite de coluna lombar:</strong> Geralmente não causa dor noturna e melhora com repouso. Não está associada a dor em enteses e elevação de VHS.</p><p><strong>D) Lombalgia crônica inespecífica:</strong> Esta é um diagnóstico de exclusão quando todas as causas específicas foram descartadas. O padrão clínico sugere inflamação ativa.</p><p>Esta questão destaca a importância de reconhecer espondiloartrite axial em mulheres HLAB27 negativas e a relevância do padrão de dor inflamatória para o diagnóstico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatoriasEspond",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Homem de 28 anos comparece ao departamento de emergência com queixa de dor abdominal intensa, náuseas e vômitos de início há 24 horas. Refere ainda astenia, tontura e mialgias. Ao exame físico, apresenta pressão arterial de 80x60mmHg, frequência cardíaca de 110bpm, frequência respiratória de 24irpm, glicemia capilar 58mg/dl, sonolência, ausculta pulmonar com sibilos esparsos bilateralmente com abdome difusamente dolorosa à palpação, entretanto sem sinais de peritonite. Comorbidades: Asma de difícil controle desde a infância. Medicamentos em uso: Prednisona 20mg/dia e \"bombinhas\", as quais os familiares desconhecem o nome. Cessou uso dos medicamentos há uma semana por dificuldades financeiras. Exames laboratoriais: Hemoglobina 13,2g/dl Leucócitos 13.200/mm3 Segmentados 9240/mm3 Linfócitos 2640/mm3 Eosinófilos 600/mm3 Monócitos 680/mm3 Basófilos 40/mm3 Plaquetas 420.000/mm3 Ureia 105mg/dl Creatinina 1,2mg/dl Sódio 125mEq/L Potássio 5,5mEq/L. Nesse momento, a conduta mais apropriada a ser tomada é:",
+      "alternativas": [
+        "contactar o cirurgião de sobreaviso para avaliar possibilidade de cirurgia de urgência.",
+        "realizar expansão volêmica com cristaloide e administrar corticoide endovenoso.",
+        "iniciar expansão volêmica com cristaloide e antbioticoterapia endovenosa.",
+        "administrar adrenalina intramuscular e anti-histamínicos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia o reconhecimento e manejo de crise Addisoniana em paciente asmático que suspendeu corticoide, testando conhecimento sobre emergência endócrina.</p><p><strong>A resposta correta é B - Realizar expansão volêmica com cristaloide e administrar corticoide endovenoso.</strong></p><p>Vamos analisar o caso: homem de 28 anos com quadro de dor abdominal, náuseas, vômitos, astenia e tontura. Ao exame: hipotensão (80x60), taquicardia (110bpm), hipoglicemia (58mg/dl) e abdome doloroso. Historia crucial: asma de difícil controle em uso de prednisona 20mg/dia, mas suspendeu há uma semana por dificuldades financeiras.</p><p><strong>Por que a alternativa B é a resposta?</strong></p><p>A suspensão abrupta de corticoide em uso crônico pode precipitar insuficiência suprarrenal aguda (crise Addisoniana). Os sintomas são clássicos: dor abdominal, náuseas, vômitos, hipotensão, hipoglicemia e letargia. A conduta deve ser dupla: correção do choque hipovolêmico com cristaloides E reposição de corticoide por via endovenosa para reposição hormonal urgente.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Cirurgia de urgência:</strong> Embora haja dor abdominal, não há sinais de peritonite ou abdome agudo que justifique intervenção cirúrgica. A dor abdominal é secundária à crise Addisoniana.</p><p><strong>C) Antibioticoterapia:</strong> Não há sinais de infecção sistêmica ou foco infeccioso identificado. Os leucócitos elevados podem refletir estresse ou desidratação, não infecção.</p><p><strong>D) Adrenalina e anti-histamínicos:</strong> Poderia ser considerado se fosse anafilaxia, mas o quadro clínico é de insuficiência suprarrenal, não reação alérgica aguda.</p><p>Esta questão destaca a importância de reconhecer a suspensão de corticoide como causa evitável de emergência médica e a necessidade de reposição hormonal urgente em tais casos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "Pediatria",
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Homem de 36 anos comparece ao ambulatório de Clínica Médica com queixa de caroços no pescoço há 6 meses. Refere febre esporádica, sudorese noturna, prurido e emagrecimento importante não quantificado nesse período. Nega sintomas respiratórios. Ao exame físico, o paciente se encontra emagrecido e hipocorado. Constatam-se linfonodomegalias cervicais à esquerda, coalescentes, a maior medindo cerca de 3,5cm no maior eixo, indolores e aderidas a planos profundos. Hemograma evidencia hemoglobina 8,5g/dl e eosinofilia. Radiografia de tórax demonstra alargamento de mediastino sem alterações no parênquima pulmonar. Ao ser realizado o procedimento diagnóstico de escolha, qual o achado mais provável?",
+      "alternativas": [
+        "Linfadenite necrotizante.",
+        "Células em anel de sinete.",
+        "Células de Reed-Sternberg.",
+        "Histiocitose sinusal com emperipolese."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da PSU-CE explora o diagnóstico de linfomas, especificamente testando o conhecimento sobre achados histológicos característicos. O cenário clínico apresentado é altamente sugestivo de linfoma de Hodgkin.</p><p><strong>O quadro clínico é clássico para linfoma de Hodgkin:</strong> paciente jovem (36 anos) com sintomas B (febre, sudorese noturna, emagrecimento, prurido), linfonodomegalias cervicais coinadas e aderidas (característica de malignidade), alargamento mediastinal e importantes alterações hematológicas (anemia e eosinofilia).</p><p>Vamos analisar as alternativas:</p><p><strong>A) Linfadenite necrotizante:</strong> Esta é uma infecção bacteriana aguda que cursa com dor, hiperemia e sinais inflamatórios locais. O quadro é crônico (6 meses) e os linfonodos são indolores e aderidos, típico de processo neoplásico, não infeccioso.</p><p><strong>B) Células em anel de sinete:</strong> Estas células são características do linfoma gástrico tipo MALT, não de linfonodos cervicais. Além disso, o paciente não apresenta sintomas gastrintestinais.</p><p><strong>C) Células de Reed-Sternberg:</strong> São as células binucleadas características do linfoma de Hodgkin, especialmente na forma clássico. O cenário clínico é totalmente compatível com esta doença.</p><p><strong>D) Histiocitose sinusal com emperipolese:</strong> Este é um achado em linfonodos que pode ser observado em algumas condições, mas não é específico nem diagnóstico de uma doença específica. O termo &quot;emperipolese&quot; refere-se à presença de linfócitos dentro dos histiócitos.</p><p><strong>Veredito: A resposta correta é C.</strong> As células de Reed-Sternberg são o achado patognomônico do linfoma de Hodgkin, e todo o contexto clínico (sintomas B, linfonodomegalias coinadas, alargamento mediastinal, alterações hematológicas) aponta fortemente para este diagnóstico.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Linfomas",
+        "ClinicaMedica_Hematologia_Linfomas_1"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Paciente masculino, 52 anos, com quadro de disfagia baixa indiferente para sólidos e líquidos há 3 anos, associado a regurgitação e dor torácica após as refeições. Nega pirose. Refere perda ponderal de 3 kg no período. Acompanhado por hipertensão arterial sistêmica. Irmã usa marcapasso por arritmia cardíaca (SIC). Morou em casa de taipa durante a infância. Exame físico sem alterações. Realizada endoscopia digestiva alta que mostrou discreto aumento do calibre esofágico, com presença de resíduos alimentares no esôfago. Esofagograma mostrou aumento do calibre esofágico (5 cm) com retardo de esvaziamento do contraste e redução gradual do calibre na porção distal, na região do esfíncter esofágico inferior (EIE). O achado no exame de manometria convencional que MELHOR DEFINE o diagnóstico da PRINCIPAL HIPÓTESE do caso acima é:",
+      "alternativas": [
+        "Hipotonia do EIE e hipocontratilidade de terço distal de corpo esofágico.",
+        "Hipertonia do EIE e hipercontratilidade de terço distal de corpo esofágico.",
+        "Relaxamento incompleto ou ausente do EIE e aperistalse de corpo esofágico.",
+        "Relaxamento incompleto ou ausente do EIE e hipercontratilidade de terço distal de corpo esofágico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda o diagnóstico diferencial de distúrbios motores esofágicos, com foco na acalasia. A PSU-CE avaliou o conhecimento sobre as alterações manométricas características desta condição.</p><p><strong>O quadro clínico é típico de acalasia:</strong> disfagia baixa progressiva para sólidos e líquidos, regurgitação pós-prandial, dor torácica e perda ponderal. Os exames de imagem confirmam: endoscopia mostra dilatação esofágica e retenção alimentar; essofagograma revela aumento do calibre (5 cm) e redução gradual do calibre na porção distal (sinal do &quot;bico de pássaro&quot;).</p><p>Vamos analisar as alternativas manométricas:</p><p><strong>A) Hipotonia do EIE e hipocontratilidade:</strong> Esta combinação não é característica de nenhuma doença específica do esôfago. A acalasia cursa com hipertonia do esfíncter, não hipotonia.</p><p><strong>B) Hipertonia do EIE e hipercontratilidade:</strong> Esta descrição se refere à acalasia &quot;vigorosa&quot;, uma forma menos comum da doença. No entanto, a forma clássica apresenta aperistalse, não hipercontratilidade.</p><p><strong>C) Relaxamento incompleto do EIE e aperistalse de corpo esofágico:</strong> Esta é a descrição manométrica clássica da acalasia. O relaxamento inadequado do esfíncter inferior impede o esvaziamento esofágico, e a ausência de peristalse no corpo esofágico compromete ainda mais a propulsão do alimento.</p><p><strong>D) Relaxamento incompleto do EIE e hipercontratilidade:</strong> Esta combinação pode ocorrer na acalasia &quot;vigorosa&quot;, mas é menos comum que a forma clássica com aperistalse.</p><p><strong>Veredito: A resposta correta é C.</strong> A manometria esofágica convencional na acalasia mostra falta de relaxamento do esfíncter inferior (pressão residual >8-10 mmHg) e ausência de peristalse organizada no corpo esofágico, resultando em baixa amplitude das contrações.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid",
+        "ClinicaMedica_Gastroenterologia_Esofago_FisiologiaEDisturbiosDaMotilid_Acalasia"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Homem, 73 anos, vem ao consultório com queixa de leve desconforto epigástrico, sem outras queixas. Nega sangramento. Hábito intestinal normal. História patológica pregressa: HAS, DM, AVC isquêmico de etiologia arteriosclerótica há 4 meses (excluída etiologia cardioembólica na época), além de infarto agudo do miocárdio há 5 anos. Em uso: ácido acetilsalicílico 100 mg/dia, rosuvastatina 40 mg/dia, ezetimiba 10 mg/dia, losartan 50 mg/dia, metformina 1000 mg/dia, bisoprolol 2,5 mg/dia. Foi submetido a endoscopia que mostrou cicatriz linear esbranquiçada em pequena curvatura de antro (Sakita S2), sem outros achados. Teste da urease negativo. Biópsia da cicatriz mostrou gastrite crônica leve inativa H. pylori negativo. Dentre as opções abaixo, assinale a melhor estratégia a ser adotada para esse paciente.",
+      "alternativas": [
+        "Troca do AAS convencional por AAS de liberação entérica.",
+        "Manutenção do AAS convencional e prescrição de sucralfato.",
+        "Suspensão do AAS convencional e prescrição de inibidor de bomba de prótons.",
+        "Manutenção do AAS convencional e associação de inibidor de bomba de prótons."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia a conduta frente ao paciente em uso de ácido acetilsalicílico (AAS) que desenvolveu lesão gástrica. O teste aborda o manejo da doença ulcerosa péptica em pacientes em uso de antiagregantes plaquetários.</p><p><strong>O paciente apresenta fatores de risco para sangramento:</strong> idade avançada (73 anos), uso crônico de AAS 100mg/dia, antecedente de IAM e AVC (uso de dupla antiagregação prévio), além de gastrite crônica com cicatriz linear no estômago. A lesão classificada como Sakita S2 indica processo cicatricial prévio de úlcera péptica.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Troca do AAS convencional por AAS de liberação entérica:</strong> Esta medida reduz o contato direto do fármaco com a mucosa gástrica, mas não elimina completamente o risco de sangramento. Além disso, já existe lesgão estabelecida que requer proteção mais robusta.</p><p><strong>B) Manutenção do AAS + sucralfato:</strong> O sucralfato tem eficácia limitada na proteção gástrica comparado aos inibidores da bomba de prótons (IBPs). Atualmente, os IBPs são considerados padrão-ouro para proteção gástrica em pacientes em uso de AAS.</p><p><strong>C) Suspensão do AAS e prescrição de IBP:</strong> O paciente tem indicação clara para uso de AAS (prevenção secundária pós-IAM e AVC). Suspender o medicamento pode aumentar o risco de novos eventos cardiovasculares. A decisão deve ser individualizada, mas na maioria dos casos, os benefícios superam os riscos com proteção adequada.</p><p><strong>D) Manutenção do AAS + associação de IBP:</strong> Esta é a conduta mais adequada. O paciente mantém o AAS para prevenção cardiovascular secundária e associamos um IBP para proteção gástrica. Esta estratégia é recomendada pelas diretrizes brasileiras e internacionais para pacientes com história prévia de úlcera péptica em uso de antiagregantes.</p><p><strong>Veredito: A resposta correta é D.</strong> Conforme as diretrizes do Ministério da Saúde e sociedades médicas brasileiras (2025), pacientes com história de doença ulcerosa péptica em uso de AAS devem manter o medicamento quando clinicamente indicado, associando profilaxia com IBP.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_OsInibidoresDaBombaDeProtonsIb"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente masculino, 60 anos, refere há 8 meses quadro de diarreia, cerca de 5-6 episódios ao dia, algumas vezes com sangue, associada a dor de forte intensidade em fossa ilíaca direita (FID), distensão abdominal e náusea, sem vômitos. Perda ponderal de 5 kg no período. Nega cirurgias prévias ou outras comorbidades. Ao exame: Bom estado geral, hipocorado +/4+. Ausculta cardiopulmonar normal. Abdome flácido, doloroso à palpação profunda em FID, sem sinais de irritação peritoneal, sem massas palpáveis. Exame perianal sem alterações. Exames laboratoriais mostraram anemia ferropriva (Hb 10,2), PCR e VHS altos e calprotectina fecal elevada. Colonoscopia mostrou válvula ileocecal edemaciada, com algumas ulcerações serpiginosas em íleo terminal, algumas confluentes, com áreas sãs de permeio. Cólon sem alterações. Biópsia ileal mostrou ileíte crônica ativa, com granuloma não caseoso. Enterorressonância com espessamento de parede em íleo terminal, sem dilatação significativa a montante, associada a ingurgitação de vasos mesentéricos e borramento da gordura adjacente. Considerando a principal hipótese diagnóstica, a melhor alternativa terapêutica para indução de remissão entre as alternativas abaixo seria:",
+      "alternativas": [
+        "Mesalazina.",
+        "Azatioprina.",
+        "Budesonida.",
+        "Vedolizumab."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da PSU-CE aborda o tratamento da Doença de Crohn, especificamente o medicamento mais adequado para indução de remissão em localização ileal. O caso apresenta características típicas da doença de Crohn ileocecal.</p><p><strong>O diagnóstico é inequívoco:</strong> homem de 60 anos com diarreia crônica (5-6 episódios/dia), às vezes com sangue, dor em fossa ilíaca direita, perda ponderal de 5kg, anemia ferropriva, calprotectina fecal elevada, e colonoscopia mostrando ulcerações serpiginosas em íleo terminal com áreas sãs de permeio. A biópsia confirma ileíte crônica ativa com granuloma não caseoso (patognomônico de Crohn) e a enterorressonância mostra espessamento de parede em íleo terminal.</p><p>Vamos analisar as alternativas terapêuticas:</p><p><strong>A) Mesalazina:</strong> Este medicamento é eficaz para retocolite ulcerativa leve a moderada, mas tem limitada eficácia na Doença de Crohn, especialmente em localização ileal. As diretrizes brasileiras não recomendam mesalazina isoladamente para indução de remissão em Crohn.</p><p><strong>B) Azatioprina:</strong> Este é um imunossupressor eficaz para manutenção de remissão em Doença de Crohn, mas não para indução. A azatioprina leva semanas para atingir efeito terapêutico e não deve ser usada isoladamente para indução de remissão.</p><p><strong>C) Budesonida:</strong> Este corticoide de ação tópica é a primeira escolha para indução de remissão na Doença de Crohn ileocecal. A budesonida tem alta potência anti-inflamatória local e baixa absorção sistêmica, reduzindo os efeitos colaterais sistêmicos dos corticoides convencionais.</p><p><strong>D) Vedolizumab:</strong> Este medicamento biológico é eficaz para Doença de Crohn, mas está reservado para casos refratários ou quando há falha aos tratamentos convencionais. Não é primeira escolha para indução de remissão.</p><p><strong>Veredito: A resposta correta é C.</strong> Conforme as diretrizes do Grupo de Estudos da Doença Inflamatória Intestinal do Brasil (GEDIIB 2025) e European Crohn's and Colitis Organisation (ECCO), budesonida é o fármaco de escolha para indução de remissão em Doença de Crohn ileocecal leve a moderada.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaInflamatoriaIntestinal"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Mulher de 42 anos, com diagnóstico prévio de cirrose por hepatite autoimune, é trazida por familiares à emergência com história de hematêmese de grande volume há 3 horas. Nega episódio anterior de sangramento. Nega outras comorbidades. Em uso domiciliar: carvediolol 6,25 mg 12/12h, furosemida 40 mg ao dia, espironolactona 100 mg ao dia, lactulona 10 mL 8/8h, prednisona 5 mg ao dia e azatioprina 75 mg ao dia. Ao exame: PA: 110 x 80 mmHg, FC: 92 bpm e FR:17 irpm. Regular estado geral, alerta, cooperativa, porém confusa, com discurso desconexo, flapping (+). Ausculta cardiopulmonar sem alterações. Abdome globoso por ascite, indolor à palpação, sem massas palpáveis, traube ocupado, piparote (+). Extremidades com edema discreto de membros inferiores. Considerando a etiologia mais provável para o sangramento apresentado pela paciente, assinale a conduta mais adequada.",
+      "alternativas": [
+        "Terlipressina + ligadura elástica de varizes.",
+        "Noradrenalina + ligadura elástica de varizes.",
+        "Octreotide + escleroterapia de varizes com etanolamina.",
+        "Vasopressina + escleroterapia de varizes com etanolamina."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE avalia o manejo de emergência da hemorragia por varizes esofágicas em paciente com cirrose. A questão testa o conhecimento sobre tratamento farmacológico e endoscópico de primeira linha para este cenário de alta mortalidade.</p><p><strong>O quadro é clássico de hemorragia por varizes em cirrose:</strong> paciente com cirrose por hepatite autoimune em uso de propranolol (terciária de prevenção), apresentando hematêmese maciça de grande volume, com sinais de descompensação (encefalopatia hepática grado I-II evidenciada por confusão e flapping).</p><p>Vamos analisar as combinações terapêuticas:</p><p><strong>A) Terlipressina + ligadura elástica:</strong> A terlipressina é um vasoconstritor selectivo esplênico que reduz a pressão portal e é considerado primeira escolha farmacológica para hemorragia por varizes. A ligadura elástica é o método endoscópico preferencial (superior à escleroterapia). Esta é a combinação gold standard.</p><p><strong>B) Noradrenalina + ligadura elástica:</strong> A noradrenalina pode ser usada para choque em pacientes cirróticos, mas não tem indicação específica para controle de hemorragia por varizes esofágicas. A terlipressina é superior para este fim.</p><p><strong>C) Octreotide + escleroterapia com etanolamina:</strong> O octreotide é uma alternativa à terlipressina, mas a escleroterapia com etanolamina está em desuso devido às altas taxas de complicações (estenoses, úlceras). A ligadura elástica é preferencial.</p><p><strong>D) Vasopressina + escleroterapia com etanolamina:</strong> A vasopressina tem sido substituída pela terlipressina devido aos seus efeitos colaterais sistêmicos (isquemia miocárdica, cerebral). A combinação com escleroterapia obsoleta não é recomendada.</p><p><strong>Veredito: A resposta correta é A.</strong> Conforme as diretrizes brasileiras da Associação Brasileira de Hepatologia (ABH 2025) e Baveno VII, a combinação terlipressina + ligadura elástica é a primeira escolha para hemorragia aguda por varizes esofágicas em pacientes com cirrose.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_ComplicacoesDaInsuficienciaHep",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "<html><head></head><body>Paciente masculino, 38 anos, refere quadro de dor em abdome superior recorrente, de forte intensidade, que piora após as refeições, associada a perda ponderal de 15% do peso habitual. Etilista pesado, com ingesta de 1L de cachaça ao dia por 20 anos. Tabagista 30 anos-maço. Ao exame: Regular estado geral, emagrecido, hipocorado+/4+. Abdome doloroso à palpação profunda em epigástrio, sem sinais de peritonismo, sem massas ou visceromegalias palpáveis, traube livre. Realizada investigação laboratorial inicial que evidenciou anemia macrocítica (Hb: 9,9, VCM: 110), leucócitos e plaquetas normais, hipoalbuminemia (alb: 2,9), hipomagnesemia (Mg: 1,3). Amilase e lipase normais. Transaminases e bilirrubinas normais, fosfatase alcalina e GGT discretamente elevadas. US de abdome sem alterações, com difícil visualização do retroperitônio por interposição gasosa. Endoscopia digestiva alta mostrou varizes de fundo gástrico. Tomografia abdominal mostrada abaixo. Qual a principal hipótese diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ36.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Cirrose hepática.",
+        "Doença de Crohn.",
+        "Pancreatite crônica.",
+        "Doença biliar litiásica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia seu conhecimento sobre pancreatite crônica, uma condição que exige correlação clínica entre fatores de risco, apresentação típica e achados laboratoriais específicos.</p><p><strong>A resposta correta é C - Pancreatite crônica.</strong></p><p>O paciente apresenta um quadro clássico: homem de 38 anos com etilismo pesado (1L de cachaça/dia por 20 anos), o principal fator de risco para pancreatite crônica. A dor epigástrica pós-refeições e perda ponderal significativa são características típicas da forma crônica da doença.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Cirrose hepática:</strong> Embora o etilismo pesado também cause cirrose, a tomografia abdominal (que não foi descrita como mostrando sinais cirróticos como ascite, veias colaterais ou alterações da textura hepática) e a presença de varizes gástricas isoladas não sustentam esse diagnóstico como principal. As transaminases normais também desfavorecem a cirrose ativa.</p><p><strong>B) Doença de Crohn:</strong> Esta patologia inflamatória intestinal typically afecta jovens, mas raramente cursa com anemia macrocítica, hipoalbuminemia e hipomagnesemia. Além disso, a dor abdominal da doença de Crohn é frequentemente em quadrante inferior direito e pode ser associada a diarreia, ausentes neste caso.</p><p><strong>D) Doença biliar litiásica:</strong> Embora possa causar dor epigástrica, não explica o perfil laboratorial específico (anemia macrocítica, hipomagnesemia) nem o contexto de etilismo pesado. Colecistite aguda geralmente cursa com elevação de transaminases e bilirrubinas, não observadas aqui.</p><p><strong>Dados que sustentam a pancreatite crônica:</strong> O etilismo crônico é responsável por 70-80% dos casos. A hipomagnesemia é comum devido à má absorção e perda renal. A anemia macrocítica pode resultar de deficiência de folato (comum em pancreatite crônica) ou do próprio processo inflamatório crônico. A hipoalbuminemia reflete síndrome de má absorção. A tomografia abdominal mostrada (mesmo sem detalhes específicos) provavelmente revelou calcificações pancreáticas típicas da forma crônica.</p><p>Esta questão demonstra a importância de correlacionar fatores de risco epidemiológicos com apresentações clínicas típicas e achados laboratoriais específicos para chegar ao diagnóstico correto.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Pancreas",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Homem de 61 anos, tendo como sequela de acidente automobilístico paresia de membros superiores e plegia de membros inferiores, foi internado no hospital para cuidados de lesão por pressão em região sacral. Está em uso de sonda vesical com sistema coletor fechado. Apesar de estar assintomático, foi solicitado urinocultura que evidenciou mais de 100 mil UFC de E. coli. Esse momento, a conduta mais adequada é tratar:",
+      "alternativas": [
+        "por 3 dias e repetir a urinocultura após tratamento.",
+        "por 7 dias e repetir a urinocultura após tratamento.",
+        "por 14 dias e repetir a urinocultura após tratamento.",
+        "em caso de aparecimento de sinais ou sintomas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 aborda bacteriúria assintomática em pacientes com cateter vesical de longo prazo, um tema que frequentemente gera confusão na prática clínica.</p><p><strong>A resposta correta é D - em caso de aparecimento de sinais ou sintomas.</strong></p><p><strong>A banca evaluou seu conhecimento sobre as diretrizes de tratamento de bacteriúria assintomática.</strong></p><p>O paciente é um cateterizado crônico com lesão medular e apresenta bacteriúria assintomática por E. coli (>100.000 UFC). Nestes pacientes, a presença de bactérias na urina é quase universal e NÃO requer tratamento antibiótico de rotina, pois:</p><p>1. A maioria dos episódios de bacteriúria em cateterizados são assintomáticos</p><p>2. O tratamento desnecessário aumenta resistência bacteriana</p><p>3. Não previne complicações em pacientes assintomáticos</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Tratar por 3 dias:</strong> Não há indicação de tratamento para bacteriúria assintomática. A duração seria inadequada mesmo se houvesse indicação terapêutica.</p><p><strong>B) Tratar por 7 dias:</strong> Mais prolongado que o necessário, além de desnecessário para paciente assintomático.</p><p><strong>C) Tratar por 14 dias:</strong> Duração excessiva que aumenta risco de efeitos adversos, superinfecção e resistência bacteriana sem benefício clínico.</p><p><strong>Raciocínio clínico:</strong> Según guidelines brasileiros (SBU 2023) e internacionais (IDSA), bacteriúria assintomática em cateterizados só deve ser tratada quando:</p><p>• Surgirem sintomas do trato urinário (disúria, urgência, frequência)</p><p>• Desenvolver pielonefrite ou outra complicação</p><p>• Antes de procedimentos urológicos invasivos</p><p>• Em gestantes</p><p><strong>Conduta adequada:</strong> Manter vigilância clínica e apenas iniciar antibiótico quando surgirem sinais ou sintomas de infecção urinária. A sonda vesical deve ser mantida como necessária, com cuidados de manutenção rigorosos para prevenir novas infecções.</p><p>Esta questão destaca a importância do racionalismo terapêutico e da não-intervencion desnecessária em situações de bacteriúria assintomática.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas_InfeccoesDoTratoUrinario",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu",
+        "ClinicaMedica_Nefrologia_InfeccaoDoTratoUrinarioItu_InfeccaoDoTratoUrinarioItuSitu"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Homem de 51 anos, hipertenso e fumante de longa data, foi internado com história de febre, dor no flanco direito e hematúria. Mencionou que na família tem história de doença renal, mas não sabia especificar qual. Negou história prévia de infecção do trato urinário. Os resultados laboratoriais iniciais evidenciaram cálcio sérico de 14 mg/dL, creatinina sérica de 1,3 mg/dL e VHS aumentado. Observou-se à ultrassonografia imagem ovalada hiperecoica em rim direito, sem calcificação e com hiperfluxo. A tomografia computadorizada revelou ser a imagem, captante de contraste e sem medidas de densidade negativas em seu interior. Nesse caso, o diagnóstico mais provável é:",
+      "alternativas": [
+        "Câncer renal.",
+        "Abscesso renal.",
+        "Angiomiolipoma.",
+        "Pielonefrite xantogranulomatosa."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia sua capacidade de interpretar achados de imagem em Nefrologia, especificamente na diferenciação entre massas renais benignas e malignas.</p><p><strong>A resposta correta é A - Câncer renal.</strong></p><p><strong>A banca buscou avaliar interpretação de tomografia com contraste e correlação com clínica e laboratório.</strong></p><p>O paciente apresenta um complexo de sintomas e achados que sugerem fortemente neoplasia renal:</p><p>• Triade clássica (falha em 1/3 dos casos): dor no flanco, hematúria e massa palpável</p><p>• Manifestações sistêmicas: febre, VHS aumentado</p><p>• Hipercalcemia (14 mg/dL) - paraneoplásica em 10-15% dos casos de carcinoma renal</p><p>• História familiar de doença renal (possível predisposição genética)</p><p><strong>Análise da tomografia:</strong> A imagem ovalada hiperecoica que \"capta contraste\" e não apresenta \"medidas de densidade negativas\" é altamente sugestiva de malignidade. Lesões renais malignas tipicamente mostram captação heterogênea de contraste, diferentemente de cistos simples (que não capta contraste) ou angiomiolipomas (que podem ter componentes gordurosos com densidade negativa).</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>B) Abscesso renal:</strong> Geralmente cursa com hiperecoicidade heterogênea, mas a hipercalcemia não é característica típica. Em casos de abscesso, esperaríamos história mais aguda de febre alta e dor, não sistêmica como descrita.</p><p><strong>C) Angiomiolipoma:</strong> Lesão benigna que characterísticamente apresenta componentes gordurosos (densidade negativa na tomografia) e não é tipicamente ovalada com captação de contraste. Raramente cursa com hipercalcemia.</p><p><strong>D) Pielonefrite xantogranulomatosa:</strong> Condição crônica que cursa com cálculos, destruição renal e formação de massa, mas não tipicamente ovalada. Hipercalcemia não é característica frequente.</p><p><strong>Correlação clínico-imagenológica:</strong> A combinação de sintomas sistêmicos, hipercalcemia paraneoplásica e achados tomográficos característicos de malignidade (massa ovalada com captação de contraste sem componentes gordurosos) é altamente sugestiva de carcinoma de células renais. O carcinoma de células renais representa 85-90% das neoplasias renais malignas em adultos.</p><p>Esta questão exemplifica a importância da integração de dados clínicos, laboratoriais e de imagem para chegar ao diagnóstico correto em Nefrologia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_Nefrolitiase",
+        "Cirurgia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas",
+        "Cirurgia_Urologia_NeoplasiasUrologicas_NeoplasiasECistosRenais"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "<html><head></head><body>Uma senhora de 48 anos compareceu à consulta ambulatorial com queixa de intolerância aos esforços moderados de forma episódica, insônia e sonolência diurna. Tem histórico de troca valvar mitral por prótese metálica devido estenose mitral decorrente de febre reumática, além de hipertensão arterial sistêmica e prédiabetes. Faz uso regular de bebidas alcoólicas (até 6 unidades de álcool por dia). Ao exame PA 134 x 80 mmHg, pulso 84 bpm regular e IMC de 39,6 kg/m2. TSH 2,33. Ecocardiograma evidenciou valva normofuncionante com fração de ejeção de 56% e disfunção diastólica grau I. Polissonografia demonstrou a presença de 38 eventos de apneia hipopneia por hora com dessaturação mínima de 72%. Apresentou em uma ocasião o ECG abaixo. Holter demonstrou 2 episódios no mesmo padrão do ECG ao longo de 24h. Faz uso de varfarina (INR 3,22), losartan, verapamil, clortalidona e metformina. A paciente foi orientada quando a modificação do estilo de vida, abstinência alcoólica, perda de peso e controle pressórico e da glicemia. Além das orientações, qual a melhor opção para o controle da situação flagrada no ECG?\n\n<img src=\"https://medbrave.com.br/questions/psu-ce-2020/qQ39.png\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Iniciar propafenona.",
+        "Associar metoprolol succinato.",
+        "Trocar varfarina por rivaroxabana.",
+        "Prescrever terapia de pressão positiva contínua das vias aéreas."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 aborda síndrome da apneia obstrutiva do sono (SAOS) em paciente com comorbidades cardiovasculares complexas, avaliando condutas terapêuticas adequadas.</p><p><strong>A resposta correta é D - Prescrever terapia de pressão positiva contínua das vias aéreas.</strong></p><p><strong>A banca avaliou conhecimento sobre tratamento de SAOS e suas interações com comorbidades cardiovasculares.</strong></p><p>O paciente apresenta quadro clássico de SAOS moderada a grave:</p><p>• Intolerância aos esforços de forma episódica</p><p>• Insônia e sonolência diurna</p><p>• Polissonografia: 38 eventos apneia/hipopneia por hora (índice >30 caracteriza SAOS grave)</p><p>• Dessaturação mínima de 72% (patológica, <90%)</p><p>• Fatores de risco: obesidadde mórbida (IMC 39,6), ingestão alcoólica, prótese valvar</p><p><strong>ECG e arritmias:</strong> O ECG apresenta bigeminismo ventricular, confirmado pelo Holter (2 episódios em 24h). Arritmias ventriculares são comuns na SAOS devido à hipóxia intermitente e estimulação simpática.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Iniciar propafenona:</strong> Antiarrítmico classe IC que pode agravar a arritmia em presença de SAOS não tratada. Além disso, tem metabolismo hepático e pode interagir com outros medicamentos em uso.</p><p><strong>B) Associar metoprolol succinato:</strong> Embora beta-bloqueio possa ser benéfico para arritmias ventriculares, a SAOS não seria diretamente tratada. SAOS é a causa primária das arritmias neste caso.</p><p><strong>C) Trocar varfarina por rivaroxabana:</strong> Rivaroxabana é um DOAC que pode ser usado em próteses valvares mecânicas, mas essa não é a prioridade terapêutica. A SAOS e as arritmias requerem tratamento mais urgente.</p><p><strong>Racional para terapia de pressão positiva:</strong> A CPAP é o tratamento gold standard para SAOS moderada a grave. Promove:</p><p>• Redução significativa dos eventos de apneia/hipopneia</p><p>• Melhora da oxigenação noturna</p><p>• Redução da arritmias ventriculares</p><p>• Redução da sonolência diurna</p><p>• Melhora do controle pressórico</p><p><strong>Conduta multimodal:</strong> Além da CPAP, as medidas não-farmacológicas (perda de peso, abstinência alcoólica) são fundamentais, mas a CPAP é a terapia específica para SAOS.</p><p>Esta questão destaca a importância do tratamento da causa primária (SAOS) em vez de apenas tratar as consequências (arritmias), priorizando a terapia mais efetiva para o perfil clínico apresentado.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_CardiologiaChoque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Cardiomiopatias"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Mulher de 56 anos foi admitida na emergência com febre (38,8ºC), calafrios e história de disúria há uma semana. Relatava infecções urinárias prévias e vinha em uso de amoxicilina sem melhora, há 3 dias. Ao exame, apresentava torpor, PA: 80x40mmHg, FC:125ppm. Foi intubada e transferida para leito de UTI. Após infusão de 2000mL de solução salina e início de antbioticoterapia IV apresentava o seguinte quadro cardiorrespiratório: PA:105x55mmHg, Gasometria venosa central: SvO2:75%, PvO2: 50mmHg, Gasometria arterial: SaO2:95%, PaO2:90mmHg com FIO2:30%, pH e PaCO2 normais, Lactato arterial: 4,3mmol/L. Qual mecanismo fisiopatológico poderia explicar os achados metabólicos da paciente?",
+      "alternativas": [
+        "Baixo débito cardíaco.",
+        "Disfunção endotelial vascular.",
+        "Excessiva extração tissular de O2.",
+        "Redução da produção de óxido nítrico endovascular."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da PSU-CE 2020 avalia seu conhecimento sobre fisiopatologia da sepse, especificamente os mecanismos de disfunção circulatória e energética celular em choque séptico.</p><p><strong>A resposta correta é B - Disfunção endotelial vascular.</strong></p><p><strong>A banca buscó avaliar compreensão dos mecanismos fisiopatológicos que regem as alterações metabólicas na sepse.</strong></p><p>A paciente apresenta quadro de sepse com choque, evoluindo após ressuscitação com fluidos e antibióticos. Os dados gasométricos revelam um padrão característico:</p><p>• SvO2: 75% (normal 65-75%)</p><p>• PvO2: 50 mmHg (normal >40 mmHg)</p><p>• SaO2: 95% (normal) com PaO2: 90 mmHg com FIO2 30%</p><p>• Lactato arterial: 4,3 mmol/L (elevado, normal <2)</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>A) Baixo débito cardíaco:</strong> Os dados gasométricos mostram SvO2 preservada (75%), o que indica adequada oferta de oxigênio aos tecidos. Se houvesse baixo débito, esperaríamos SvO2 baixa (<65%) devido à hipoperfusão tecidual.</p><p><strong>C) Excessiva extração tissular de O2:</strong> Em condições normais, os tecidos extraem cerca de 25-30% do oxigênio delivered. SvO2 de 75% sugere extração adequada, não excessiva. Lactato elevado com SvO2 preservada indica problema na captação/utilização do oxigênio pelos tecidos.</p><p><strong>D) Redução da produção de óxido nítrico endovascular:</strong> O óxido nítrico (NO) é produzido em excesso na sepse, causando vasodilatação patológica. Redução de NO não explicaria o quadro séptico.</p><p><strong>Racional para disfunção endotelial:</strong> A sepse causa ativação endotelial com:</p><p>• Desregulação da barreira endotelial</p><p>• Alteração da microcirculação</p><p>• Disfunção mitocondrial</p><p>• Aumento da permeabilidade vascular</p><p><strong>Correlação com dados:</strong> SvO2 preservada com lactato elevado indica que há oferta adequada de oxigênio, mas os tecidos não conseguem utilizá-lo adequadamente. Este é o conceito de \"choque distributivo\" característico da sepse, onde a disfunção endotelial impede a adequada distribuição e utilização do oxigênio nos tecidos.</p><p><strong>Conceito-chave:</strong> Na sepse, mesmo com ressuscitação adequada (evidenciada por SvO2 normal), pode persistir disfunção mitocondrial e celular que impede a utilização do oxigênio, resultando em hiperlactacidemia. O tratamento se foca na eliminação da infecção e suporteorgânico, já que o problema principal é a disfunção do endotélio vascular.</p><p>Esta questão exemplifica a importância de entender os mecanismos fisiopatológicos da sepse para interpretar adequadamente dados gasométricos e orientar condutas terapêuticas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ChoqueSeptico",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ManejoInicialEPacotes",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_Choque",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ChoqueFisiopatologiaDoChoque"
+      ],
+      "tags": [
+        "PSUCE2020CM",
+        "PSU-CE",
+        "R3CM",
+        "CE",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762839852616-39"
+    }
+  ]
+}

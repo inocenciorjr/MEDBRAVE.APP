@@ -1,16 +1,22 @@
 import { Server } from 'http';
 import { WebSocketServer, WebSocket } from 'ws';
 import { parse } from 'url';
-import { auth } from '../config/firebaseAdmin';
+import { supabaseAdmin } from '../../supabase.config';
 import { logger } from '../utils/logger';
 
 interface AuthenticatedWebSocket extends WebSocket {
-  userId?: string;
+  user_id?: string;
   isAlive?: boolean;
 }
 
 interface WebSocketMessage {
-  type: 'notification' | 'badge_update' | 'connection_status' | 'ping' | 'pong' | 'error';
+  type:
+    | 'notification'
+    | 'badge_update'
+    | 'connection_status'
+    | 'ping'
+    | 'pong'
+    | 'error';
   data?: any;
   timestamp: number;
 }
@@ -21,14 +27,14 @@ class WebSocketManager {
   private heartbeatInterval: NodeJS.Timeout;
 
   constructor(server: Server) {
-    this.wss = new WebSocketServer({ 
+    this.wss = new WebSocketServer({
       server,
       path: '/ws',
-      verifyClient: this.verifyClient.bind(this)
+      verifyClient: this.verifyClient.bind(this),
     });
 
     this.wss.on('connection', this.handleConnection.bind(this));
-    
+
     // Heartbeat para detectar conexões mortas
     this.heartbeatInterval = setInterval(this.heartbeat.bind(this), 30000);
 
@@ -45,18 +51,25 @@ class WebSocketManager {
         return false;
       }
 
-      // Verificar token Firebase
-      const decodedToken = await auth.verifyIdToken(decodeURIComponent(token));
-      
-      if (!decodedToken.uid) {
-        logger.warn('🔌 WebSocket: Token inválido');
+      // Verificar token Supabase
+      const {
+        data: { user },
+        error,
+      } = await supabaseAdmin.auth.getUser(decodeURIComponent(token));
+
+      if (error || !user) {
+        logger.warn('🔌 WebSocket: Token inválido', error?.message);
         return false;
       }
 
-      // Adicionar userId à requisição para uso posterior
-      (info.req as any).userId = decodedToken.uid;
-      return true;
+      if (!user.id) {
+        logger.warn('🔌 WebSocket: ID do usuário não encontrado');
+        return false;
+      }
 
+      // Armazenar user_id para uso posterior
+      (info.req as any).user_id = user.id;
+      return true;
     } catch (error) {
       logger.error('🔌 WebSocket: Erro na verificação do token:', error);
       return false;
@@ -64,94 +77,99 @@ class WebSocketManager {
   }
 
   private handleConnection(ws: AuthenticatedWebSocket, req: any) {
-    const userId = req.userId;
-    
-    if (!userId) {
-      logger.warn('🔌 WebSocket: Conexão rejeitada - userId não encontrado');
+    const user_id = req.user_id;
+
+    if (!user_id) {
+      logger.warn('🔌 WebSocket: Conexão rejeitada - user_id não encontrado');
       ws.close(1008, 'Token inválido');
       return;
     }
 
     // Configurar cliente
-    ws.userId = userId;
+    ws.user_id = user_id;
     ws.isAlive = true;
 
     // Adicionar à lista de clientes
-    if (!this.clients.has(userId)) {
-      this.clients.set(userId, new Set());
+    if (!this.clients.has(user_id)) {
+      this.clients.set(user_id, new Set());
     }
-    this.clients.get(userId)!.add(ws);
+    this.clients.get(user_id)!.add(ws);
 
-    logger.info(`🔌 WebSocket: Cliente conectado - userId: ${userId}`);
+    logger.info(`🔌 WebSocket: Cliente conectado - user_id: ${user_id}`);
 
     // Enviar mensagem de boas-vindas
     this.sendToClient(ws, {
       type: 'connection_status',
       data: { status: 'connected', message: 'WebSocket conectado com sucesso' },
-      timestamp: Date.now()
+      timestamp: Date.now(),
     });
 
     // Handlers de eventos
     ws.on('message', (data: Buffer) => this.handleMessage(ws, data));
     ws.on('close', () => this.handleDisconnection(ws));
     ws.on('error', (error: Error) => this.handleError(ws, error));
-    ws.on('pong', () => { ws.isAlive = true; });
+    ws.on('pong', () => {
+      ws.isAlive = true;
+    });
   }
 
   private handleMessage(ws: AuthenticatedWebSocket, data: Buffer) {
     try {
       const message = JSON.parse(data.toString());
-      logger.info(`📨 WebSocket: Mensagem recebida de ${ws.userId}:`, message);
+      logger.info(`📨 WebSocket: Mensagem recebida de ${ws.user_id}:`, message);
 
       switch (message.type) {
         case 'ping':
           this.sendToClient(ws, {
             type: 'pong',
             data: { timestamp: message.timestamp },
-            timestamp: Date.now()
-          });
+            timestamp: Date.now(),
+        });
           break;
 
         case 'subscribe':
           // Implementar sistema de subscriptions futuro
-          logger.info(`🔔 WebSocket: ${ws.userId} inscrito em: ${message.data?.channel}`);
+          logger.info(
+          `🔔 WebSocket: ${ws.user_id} inscrito em: ${message.data?.channel}`,
+        );
           break;
 
         default:
-          logger.warn(`🔌 WebSocket: Tipo de mensagem desconhecido: ${message.type}`);
+          logger.warn(
+          `🔌 WebSocket: Tipo de mensagem desconhecido: ${message.type}`,
+        );
       }
-
     } catch (error) {
       logger.error('🔌 WebSocket: Erro ao processar mensagem:', error);
       this.sendToClient(ws, {
         type: 'error',
         data: { message: 'Erro ao processar mensagem' },
-        timestamp: Date.now()
+        timestamp: Date.now(),
       });
     }
   }
 
   private handleDisconnection(ws: AuthenticatedWebSocket) {
-    if (ws.userId) {
-      const userClients = this.clients.get(ws.userId);
+    if (ws.user_id) {
+      const userClients = this.clients.get(ws.user_id);
       if (userClients) {
         userClients.delete(ws);
         if (userClients.size === 0) {
-          this.clients.delete(ws.userId);
+          this.clients.delete(ws.user_id);
         }
       }
-      logger.info(`🔌 WebSocket: Cliente desconectado - userId: ${ws.userId}`);
+      logger.info(`🔌 WebSocket: Cliente desconectado - user_id: ${ws.user_id}`);
     }
   }
 
   private handleError(ws: AuthenticatedWebSocket, error: Error) {
-    logger.error(`🔌 WebSocket: Erro na conexão ${ws.userId}:`, error);
+    logger.error(`🔌 WebSocket: Erro na conexão ${ws.user_id}:`, error);
   }
 
   private heartbeat() {
     this.wss.clients.forEach((ws: AuthenticatedWebSocket) => {
       if (!ws.isAlive) {
-        logger.info(`💔 WebSocket: Conexão morta detectada - ${ws.userId}`);
+        logger.info(`💔 WebSocket: Conexão morta detectada - ${ws.user_id}`);
         return ws.terminate();
       }
 
@@ -177,10 +195,10 @@ class WebSocketManager {
       const message: WebSocketMessage = {
         type: 'notification',
         data: notification,
-        timestamp: Date.now()
+        timestamp: Date.now(),
       };
 
-      userClients.forEach(ws => {
+      userClients.forEach((ws) => {
         this.sendToClient(ws, message);
       });
 
@@ -198,10 +216,10 @@ class WebSocketManager {
       const message: WebSocketMessage = {
         type: 'badge_update',
         data: stats,
-        timestamp: Date.now()
+        timestamp: Date.now(),
       };
 
-      userClients.forEach(ws => {
+      userClients.forEach((ws) => {
         this.sendToClient(ws, message);
       });
 
@@ -214,7 +232,9 @@ class WebSocketManager {
     this.wss.clients.forEach((ws: AuthenticatedWebSocket) => {
       this.sendToClient(ws, message);
     });
-    logger.info('🔔 WebSocket: Mensagem enviada para todos os clientes conectados');
+    logger.info(
+      '🔔 WebSocket: Mensagem enviada para todos os clientes conectados',
+    );
   }
 
   public getConnectedUsers(): string[] {
@@ -225,10 +245,12 @@ class WebSocketManager {
     return {
       totalConnections: this.wss.clients.size,
       uniqueUsers: this.clients.size,
-      userConnections: Array.from(this.clients.entries()).map(([userId, connections]) => ({
-        userId,
-        connections: connections.size
-      }))
+      userConnections: Array.from(this.clients.entries()).map(
+        ([userId, connections]) => ({
+          userId,
+          connections: connections.size,
+        }),
+      ),
     };
   }
 
@@ -256,7 +278,10 @@ export function getWebSocketManager(): WebSocketManager | null {
 }
 
 // Funções utilitárias para usar em outros módulos
-export function sendNotificationToUser(userId: string, notification: any): boolean {
+export function sendNotificationToUser(
+  userId: string,
+  notification: any,
+): boolean {
   return wsManager?.sendNotificationToUser(userId, notification) || false;
 }
 
@@ -266,4 +291,4 @@ export function sendBadgeUpdate(userId: string, stats: any): boolean {
 
 export function broadcastToAll(message: WebSocketMessage): void {
   wsManager?.broadcastToAll(message);
-} 
+}

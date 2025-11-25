@@ -4,7 +4,9 @@ import { AppError } from '../../../../shared/errors/AppError';
 import { ReviewQuality } from '../../flashcards/types';
 
 export class RecordEntryReviewUseCase {
-  constructor(private errorNotebookEntryRepository: IErrorNotebookEntryRepository) {}
+  constructor(
+    private errorNotebookEntryRepository: IErrorNotebookEntryRepository,
+  ) {}
 
   async execute(
     id: string,
@@ -33,7 +35,7 @@ export class RecordEntryReviewUseCase {
     }
 
     // Verificar se a entrada pertence ao usuário
-    if (existingEntry.userId !== userId) {
+    if (existingEntry.user_id !== userId) {
       throw new AppError('Unauthorized access to error notebook entry', 403);
     }
 

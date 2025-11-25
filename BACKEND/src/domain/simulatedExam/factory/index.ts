@@ -1,19 +1,21 @@
 import { Router } from 'express';
-import { firestore } from 'firebase-admin';
-import { FirebaseSimulatedExamService } from '../services/FirebaseSimulatedExamService';
+import { SupabaseClient } from '@supabase/supabase-js';
+import { SupabaseSimulatedExamService } from '../../../infra/simulatedExam/supabase';
 import { SimulatedExamController } from '../controllers/SimulatedExamController';
-import { createSimulatedExamRoutes } from '../routes/simulatedExamRoutes';
+import { simulatedExamRoutes } from '../routes/simulatedExamRoutes';
 
 /**
- * Cria e configura o módulo de simulados
- * @param db Instância do Firestore
- * @returns Router configurado com as rotas de simulados
+ * Cria o módulo de simulados
+ * @param supabase Instância do Supabase
+ * @returns Router com as rotas configuradas
  */
-export const createSimulatedExamModule = (db: firestore.Firestore): Router => {
-  const simulatedExamService = new FirebaseSimulatedExamService(db);
-  const simulatedExamController = new SimulatedExamController(simulatedExamService);
+export const createSimulatedExamModule = (supabase: SupabaseClient): Router => {
+  const simulatedExamService = new SupabaseSimulatedExamService(supabase);
+  const simulatedExamController = new SimulatedExamController(
+    simulatedExamService,
+  );
 
-  return createSimulatedExamRoutes(simulatedExamController);
+  return simulatedExamRoutes(simulatedExamController);
 };
 
 export default createSimulatedExamModule;

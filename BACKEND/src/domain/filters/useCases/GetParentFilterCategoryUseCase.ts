@@ -8,13 +8,16 @@ export class GetParentFilterCategoryUseCase {
     if (!subFilterId) {
       throw new Error("O ID do subfiltro é obrigatório");
     }
-    
-    const category = await this.subFilterRepository.getParentFilterCategory(subFilterId);
-    
+
+    const category =
+      await this.subFilterRepository.getParentFilterCategory(subFilterId);
+
     if (!category) {
-      throw new Error(`Categoria do filtro pai não encontrada para o subfiltro ${subFilterId}`);
+      throw new Error(
+        `Categoria do filtro pai não encontrada para o subfiltro ${subFilterId}`,
+      );
     }
-    
+
     return category;
   }
-} 
+}

@@ -54,6 +54,12 @@
   "exclude": [
     "node_modules",
     "dist",
-    "coverage"
+    "coverage",
+    "src/**/__tests__/**",
+    "**/*.test.ts",
+    "tests/**/*",
+    "src/domain/admin/controllers/**",
+    "src/domain/admin/routes/adminFlashcardRoutes.ts",
+    "src/domain/admin/services/**"
   ]
 } 

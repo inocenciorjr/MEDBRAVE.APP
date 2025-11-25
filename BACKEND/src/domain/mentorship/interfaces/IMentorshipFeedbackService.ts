@@ -12,7 +12,9 @@ export interface IMentorshipFeedbackService {
    * Cria um novo feedback de mentoria
    * @param feedbackData Dados do feedback
    */
-  createFeedback(feedbackData: CreateMentorshipFeedbackPayload): Promise<MentorshipFeedback>;
+  createFeedback(
+    feedbackData: CreateMentorshipFeedbackPayload,
+  ): Promise<MentorshipFeedback>;
 
   /**
    * Obtém um feedback pelo ID

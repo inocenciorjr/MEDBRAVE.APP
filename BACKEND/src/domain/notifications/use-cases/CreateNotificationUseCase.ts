@@ -1,16 +1,11 @@
-import { inject, injectable } from 'tsyringe';
 import { INotificationService } from '../interfaces/INotificationService';
 import { CreateNotificationPayload, Notification } from '../types';
 
 /**
  * Caso de uso para criar uma nova notificação
  */
-@injectable()
 export class CreateNotificationUseCase {
-  constructor(
-    @inject('NotificationService')
-    private notificationService: INotificationService,
-  ) {}
+  constructor(private notificationService: INotificationService) {}
 
   /**
    * Executa o caso de uso
@@ -19,7 +14,7 @@ export class CreateNotificationUseCase {
    */
   async execute(data: CreateNotificationPayload): Promise<Notification> {
     // Validar dados
-    if (!data.userId) {
+    if (!data.user_id) {
       throw new Error('ID do usuário é obrigatório');
     }
 

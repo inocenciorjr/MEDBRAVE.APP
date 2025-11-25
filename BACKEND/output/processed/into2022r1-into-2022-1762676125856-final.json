@@ -1,0 +1,1700 @@
+{
+  "metadata": {
+    "examName": "INTO2022R1 (INTO 2022)",
+    "examYear": 2022,
+    "url": "source://497",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 50,
+    "processedAt": "2025-11-09T08:15:25.856Z",
+    "jobId": "batch-1762661968307-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "06eea7bc-e54f-4743-a2b8-2812dd4163cc"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Toda vez que um vírus se replica está sujeito a erros que levam a mutações. No caso do SARS-COV-2, o aparecimento de mutações distintas tem recebido o nome de variantes. Visando facilitar a nomenclatura, a identificação de mutações e diminuir estigmas geográficos, a Organização Mundial da Saúde (OMS) decidiu renomear as variantes usando letras do alfabeto grego. A variante P.1, inicialmente oriunda do Amazonas, atualmente denomina-se:",
+      "alternativas": [
+        "Variante Alfa;",
+        "Variante Beta;",
+        "Variante Gama;",
+        "Variante Delta;",
+        "Variante Mu."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do INTO 2022 avaliar o conhecimento sobre a nomenclatura das variantes de SARS-CoV-2 adotada pela OMS.</p><p><strong>A resposta correta é C - Variante Gama.</strong></p><p>A OMS estabeleceu a nomenclatura usando letras do alfabeto grego para evitar discriminação geográfica. Vamos analisar cada alternativa:</p><p><strong>Alternativa A - Variante Alfa:</strong> Corresponde à variante B.1.1.7, identificada inicialmente no Reino Unido. Incorrereta.</p><p><strong>Alternativa B - Variante Beta:</strong> Corresponde à variante B.1.351, identificada inicialmente na África do Sul. Incorrereta.</p><p><strong>Alternativa C - Variante Gama:</strong> Corresponde à variante P.1, identificada inicialmente no Amazonas/Brasil. Esta é a resposta correta.</p><p><strong>Alternativa D - Variante Delta:</strong> Corresponde à variante B.1.617.2, identificada inicialmente na Índia. Incorrereta.</p><p><strong>Alternativa E - Variante Mu:</strong> Corresponde à variante B.1.621, identificada inicialmente na Colômbia. Incorrereta.</p><p>Portanto, a variante P.1, do Amazonas, foi denominada de Variante Gama (γ) pela OMS, conforme a resposta C.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "MedicinaPreventiva_Epidemiologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "O uso indiscriminado de antibióticos, sabidamente, agravou-se durante a pandemia de COVID-19. Dentre o grupo de bactérias multirresistentes selecionadas, podemos destacar as produtoras de carbapenemases, cujo representante mais conhecido é a Klebsiella pneumoniae, produtora de carbapenemase (KPC). Os principais mecanismos de resistência destes germes são a produção de metalo-carbapenemases e serinocarbapenemases. Num paciente séptico, apresentando duas hemoculturas positivas para KPC, cujo teste fenotípico evidenciou uma metalobetalactamase, o antibiótico de escolha é:",
+      "alternativas": [
+        "Cefepima;",
+        "Aztreonam;",
+        "Piperacilina + Tazobactam;",
+        "Imipenem cilastatina;",
+        "Sulfametoxazol + Trimetoprima."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão do INTO 2022 avaliar o conhecimento sobre o tratamento de infecções por KPC com metallocarbapenemases.</p><p><strong>A resposta correta é B - Aztreonam.</strong></p><p>O raciocínio baseia-se na resistência específica das metallocarbapenemases:</p><p><strong>Alternativa A - Cefepima:</strong> Resistida pelas metallocarbapenemases. Incorrereta.</p><p><strong>Alternativa B - Aztreonam:</strong> Monobactam que mantém atividade contra metallocarbapenemases (são hidrolisadas por metalo-β-lactamases, mas não hidrolisam o anel β-lactâmico do aztreonam). Esta é a resposta correta.</p><p><strong>Alternativa C - Piperacilina + Tazobactam:</strong> Resistida pelas metallocarbapenemases. Incorrereta.</p><p><strong>Alternativa D - Imipenem cilastatina:</strong> Carbapenêmico hidrolisado por metallocarbapenemases. Incorrereta.</p><p><strong>Alternativa E - Sulfametoxazol + Trimetoprima:</strong> Poderia ser considered em casos específicos, mas não é o antibiótico de primeira escolha para KPC com metallocarbapenemase. Incorrereta.</p><p>Portanto, o aztreonam é o antimicrobiano de escolha para KPC produtoras de metallocarbapenemases, conforme resposta B.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Um dos sintomas tardios descritos associados à infecção pelo SARS-COV2 é a ocorrência de episódios de intolerância ortostática (resposta autonômica anormal à ortostase), relacionada à taquicardia sem hipotensão postural. Denominou-se essa entidade de síndrome da taquicardia ortostática postural (POTS), cujos critérios diagnósticos são:",
+      "alternativas": [
+        "Queda da pressão sistólica em 20mmHg e/ou pressão diastólica em 10mmHg com mudança para posição ortostática, sem alteração da frequência cardíaca;",
+        "Manutenção da pressão arterial com aumento da frequência cardíaca em pelo menos 50bpm, quando se assume a posição ortostática por 20 minutos;",
+        "Presença de palpitações, cefaleia e pré-síncope quando em ortostase, associado à pressão arterial mantida e aumento na frequência cardíaca em pelo menos 30bpm por 10 minutos;",
+        "Queda da pressão sistólica em 20mmHg e/ou pressão diastólica em 10mmHg com mudança para posição ortostática, e aumento da frequência cardíaca em pelo menos 30bpm por 15 minutos;",
+        "Queda da pressão arterial diastólica em 10mmHg com aumento compensatório da frequência cardíaca em até 45bpm, sem restrição de tempo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do INTO 2022 avaliar o conhecimento sobre os critérios diagnósticos da Síndrome da Taquicardia Ortostática Postural (POTS).</p><p><strong>A resposta correta é C.</strong></p><p>POTS caracteriza-se por resposta autonômica anormal à ortostase, mantendo a pressão arterial com aumento significativo da frequência cardíaca. Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Descreve hipotensão ortostática clássica, não POTS. Incorrereta.</p><p><strong>Alternativa B:</strong> Critério incorreto: requer aumento de 50bpm por 20 minutos (é de 30bpm por 10 minutos). Incorrereta.</p><p><strong>Alternativa C:</strong> Descreve corretamente os critérios: sintomas autonômicos (palpitações, cefaleia, pré-síncope), manutenção da PA e aumento ≥30bpm por 10 minutos. Esta é a resposta correta.</p><p><strong>Alternativa D:</strong> Combina critérios de hipotensão ortostática com aumento da FC, não característico do POTS. Incorrereta.</p><p><strong>Alternativa E:</strong> Critério de tempo e valor de FC não padronizados para POTS. Incorrereta.</p><p>Portanto, a alternativa C descreve corretamente os critérios diagnósticos da POTS, conforme resposta C.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Um paciente no 8º dia de infecção pelo SARS-COV-2 encontra-se em uso de cateter nasal de alto fluxo (CNAF) a 40 litros e saturação de O2 a 97%. Algumas horas depois, o paciente se queixa de intensa dor torácica, apresentando saturação de 65%, apesar do uso de CNAF, além de intenso esforço respiratório, turgência jugular e hipotensão. Em meio ao caos do quadro, a R1 de plantão percebe durante a ausculta cardíaca que o paciente apresentava crepitações em precórdio, sincrônicas aos batimentos cardíacos. A complicação apresentada e o sinal semiológico, respectivamente, são:",
+      "alternativas": [
+        "Embolia pulmonar maciça e sinal de Boerhaave;",
+        "Ruptura de cordoalha e sinal de Kussmaul;",
+        "Embolia gordurosa e sinal de Hollenhorst;",
+        "Embolia gasosa e sinal de Palla;",
+        "Pneumomediastino e sinal de Hamman."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão do INTO 2022 avaliar o conhecimento sobre complicações do COVID-19 e sinais semiológicos específicos.</p><p><strong>A resposta correta é E - Pneumomediastino e sinal de Hamman.</strong></p><p>O quadro clínico sugere pneumomediastino com sinal de Hamman. Vamos analisar:</p><p><strong>Alternativa A - Embolia pulmonar e sinal de Boerhaave:</strong> Embolia pulmonar causaria dor torácica e hipoxemia, mas não crepitações cardíacas. Sinal de Boerhaave refere-se a ruptura esofágica. Incorrereta.</p><p><strong>Alternativa B - Ruptura de cordoalha e sinal de Kussmaul:</strong> Ruptura de cordoalha é complicação de endocardite, não COVID-19. Sinal de Kussmaul é distensão jugular na inspiração. Incorrereta.</p><p><strong>Alternativa C - Embolia gordurosa e sinal de Hollenhorst:</strong> Embolia gordurosa é complicação de fraturas. Sinal de Hollenhorst refere-se a êmbolos de colesterol na retina. Incorrereta.</p><p><strong>Alternativa D - Embolia gasosa e sinal de Palla:</strong> Embolia gasosa é complicação de procedimentos. Sinal de Palla é dilatação da artéria pulmonar direita. Incorrereta.</p><p><strong>Alternativa E - Pneumomediastino e sinal de Hamman:</strong> Pneumomediastino é complicação descrita no COVID-19 devido a barotrauma. Sinal de Hamman são crepitações cardíacas sincrônicas ao batimento, características do pneumomediastino. Esta é a resposta correta.</p><p>Portanto, a complicação é pneumomediastino com sinal de Hamman, conforme resposta E.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "A corrida pelo desenvolvimento de vacinas contra o SARS-COV-2 resultou na rápida aprovação de imunizantes pelas agências regulatórias. Infelizmente, isto aumentou as chances de aparecimento de efeitos colaterais inicialmente não descritos nos estudos. Um dos eventos mais graves foi a Trombocitopenia Trombótica Induzida por Vacina (VITT). Esta complicação lembra muito a fisiopatologia da Trombocitopenia induzida pela Heparina (HIT), cujo principal anticorpo envolvido é:",
+      "alternativas": [
+        "Anti-C5;",
+        "Anti-PF4;",
+        "Anti-glicoproteína IIB/IIIA;",
+        "ADAMTS-13;",
+        "Anti-CD55 e 59."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão do INTO 2022 avaliar o conhecimento sobre Trombocitopenia Trombótica Induzida por Vacina (VITT) e sua relação com Trombocitopenia Induzida por Heparina (HIT).</p><p><strong>A resposta correta é B - Anti-PF4.</strong></p><p>A VITT compartilha mecanismo fisiopatológico similar à HIT. Vamos analisar cada alternativa:</p><p><strong>Alternativa A - Anti-C5:</strong> Refere-se a anticorpos do complemento, envolvidos em outras condições. Incorrereta.</p><p><strong>Alternativa B - Anti-PF4:</strong> Anticorpo contra o fator plaquetário 4, principal anticorpo envolvido na HIT e também na VITT. Esta é a resposta correta.</p><p><strong>Alternativa C - Anti-glicoproteína IIB/IIIA:</strong> Envolvido em púrpura trombocitopênica autoimune. Incorrereta.</p><p><strong>Alternativa D - ADAMTS-13:</strong> Enzima envolvida na púrpura trombocitopênica trombótica. Incorrereta.</p><p><strong>Alternativa E - Anti-CD55 e 59:</strong> Envolvidos em hemoglobinúria paroxística noturna. Incorrereta.</p><p>Portanto, o anticorpo principal envolvido tanto na VITT quanto na HIT é o anti-PF4, conforme resposta B.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Dentre as emergências oncológicas, uma das mais comumente manejadas pelo médico generalista é a hipercalcemia associada à malignidade. O mecanismo fisiopatológico mais comum em tumores sólidos não metastáticos é:",
+      "alternativas": [
+        "Produção excessiva de calcitriol por macrófagos ativados;",
+        "Produção da proteína relacionada ao paratormônio (PTHrp);",
+        "Liberação maciça de fatores ativadores de osteoclastos por células tumorais;",
+        "Diminuição da calciurese por lesão tubular direta mediada por interleucinas tumorais;",
+        "Aumento da absorção intestinal de cálcio pela FGF-23."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>A questão de número 6 da banca INTO 2022 aborda um tema fundamental da medicina interna: as emergências oncológicas, especificamente a hipercalcemia associada à malignidade. O examinador busca avaliar seu conhecimento sobre a fisiopatologia da hipercalcemia paraneoplásica em pacientes com tumores sólidos não metastáticos.</p><p><strong>A resposta correta é a alternativa B - Produção da proteína relacionada ao paratormônio (PTHrp).</strong></p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> A produção excessiva de calcitriol por macrófagos ativados é um mecanismo típico de doenças granulomatosas (como sarcoidose) e algumas neoplasias hematológicas, mas não é o mecanismo mais comum em tumores sólidos não metastáticos.</p><p><strong>Alternativa B:</strong> CORRETA. A PTHrp é producida por diversos tumores sólidos (especialmente carcinoma de pulmão, mama, rim e bexiga) e é o principal mecanismo de hipercalcemia em tumores não metastáticos. A PTHrp mimetiza a ação do PTH, aumentando a reabsorção óssea, reduzindo a excreção renal de cálcio e aumentando a absorção intestinal de cálcio.</p><p><strong>Alternativa C:</strong> Embora os fatores ativadores de osteoclastos (como RANKL) participem da fisiopatologia, não são o mecanismo mais comum em tumores sólidos não metastáticos. Este mecanismo é mais característico de metástases ósseas.</p><p><strong>Alternativa D:</strong> A diminuição da calciurese por lesão tubular é um mecanismo secundário, mas não o mais comum. O PTHrp e outros mediadores causam hipercalcemia principalmente por aumento da reabsorção óssea.</p><p><strong>Alternativa E:</strong> A FGF-23 está envolvida no metabolismo do fósforo, não no do cálcio. Além disso, a FGF-23 é produtada principalmente pelos osteócitos em resposta ao excesso de fósforo.</p><p><strong>Veredito final:</strong> A alternativa B está correta. Em pacientes com tumores sólidos não metastáticos, a produção de PTHrp pelas células tumorais é o mecanismo fisiopatológico mais comum para hipercalcemia paraneoplásica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Diferente do observado no tratamento da insuficiência cardíaca com fração de ejeção reduzida, os estudos envolvendo o tratamento da insuficiência cardíaca com fração de ejeção preservada (ICFEp) têm sido frustrados. Entretanto, o estudo EMPORORPRESERVED demonstrou uma diminuição no número de internações em pacientes com ICFEp, secundário ao uso de:",
+      "alternativas": [
+        "Canagliflozina;",
+        "Furosemida em altas doses;",
+        "Sacubitril-Valsartana;",
+        "Espironolactona;",
+        "Empagliflozina."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>A questão 7 da prova INTO 2022 foca em um dos maiores desafios da cardiologia moderna: o tratamento da insuficiência cardíaca com fração de ejeção preservada (ICFEp). O examinador busca avaliar seu conhecimento sobre evidências científicas recentes, especificamente os resultados do estudo EMPEROR-PRESERVED.</p><p><strong>A resposta correta é a alternativa E - Empagliflozina.</strong></p><p>Vamos analisar cada alternativa sistematicamente:</p><p><strong>Alternativa A:</strong> A canagliflozina é outro inibidor de SGLT-2, mas o estudo EMPEROR-PRESERVED utilizou especificamente a empagliflozina, não a canagliflozina. Embora ambos sejam da mesma classe, a evidência científica específica para ICFEp vem do estudo com empagliflozina.</p><p><strong>Alternativa B:</strong> A furosemida em altas doses é utilizada para controle de sintomas, mas não demonstrou benefício na redução de internações em ICFEp em grandes estudos controlados. Além disso, altas doses podem causar efeitos adversos significativos.</p><p><strong>Alternativa C:</strong> A combinação sacubitrilo-valsartana demonstrou benefício em ICFEr (notadamente no estudo PARADIGM-HF), mas não comprovou benefício significativo em ICFEp nos estudos disponíveis até 2022.</p><p><strong>Alternativa D:</strong> A espironolactona mostrou benefício em ICFEr (estudo RALES), mas os estudos em ICFEp (como TOPCAT) demonstraram resultados inconsistentes e marginais, sem redução significativa de internações.</p><p><strong>Alternativa E:</strong> CORRETA. O estudo EMPEROR-PRESERVED, publicado em 2021, demonstrou que a empagliflozina reduziu significativamente o risco combinado de morte cardiovascular e internação por insuficiência cardíaca em pacientes com ICFEp. Este foi um marco histórico no tratamento da ICFEp.</p><p><strong>Contexto científico atual (2025):</strong> Desde o EMPEROR-PRESERVED, os inibidores de SGLT-2 (empagliflozina e dapagliflozina) tornaram-se a primeira classe medicamentosa com evidência robusta para benefício em ICFEp, revolucionando o tratamento desta condição.</p><p><strong>Veredito final:</strong> A alternativa E está correta. A empagliflozina demonstrou no estudo EMPEROR-PRESERVED a primeira evidência sólida de benefício em pacientes com ICFEp, reduzindo significativamente internações por insuficiência cardíaca.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_InsuficienciaCardiacaAguda"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Um paciente de 55 anos, hipertenso, diabético, dislipidêmico e portador de insuficiência cardíaca com fração de ejeção reduzida (ICFEr), com fração de ejeção de 30%, dá entrada na emergência com queixa de lipotimia. Ao exame físico: Paciente vigil, hipocorado 1+/4+, anictérico, acianótico, eupneico em ambiente, afebril. Sinais vitais: PA: 70x50mmHg, FC 96bpm, SO2 87%. AR: Murmúrio vesicular universalmente audível sem ruídos adventícios, ACV: RCR 2T, sem sopros, bulhas normofonéticas, MMII: sem edema, perfusão capilar periférica lentificada. Segundo a classificação de Stevenson, o perfil deste paciente e a conduta inicial são respectivamente:",
+      "alternativas": [
+        "Perfil A e Furosemida 20-40mg IV;",
+        "Perfil B e Dobutamina 5mcg/kg/min IV;",
+        "Perfil L e Soro fisiológico 250ml IV;",
+        "Perfil D e Nitroglicerina 5 a 10mcg/min IV;",
+        "Perfil C e Oxigenação por membrana extracorpórea (ECMO)."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>A questão 8 da banca INTO 2022 apresenta um caso clínico complexo de insuficiência cardíaca com fração de ejeção reduzida (ICFEr) e avalia seu conhecimento sobre a classificação de Stevenson e condutas emergenciais. Esta é uma questão que testa a capacidade de correlação clínico-fisiopatológica em tempo real.</p><p><strong>A resposta correta é a alternativa C - Perfil L e Soro fisiológico 250ml IV.</strong></p><p>Vamos analisar a classificação de Stevenson para entender o caso:</p><p><strong>Características do paciente apresentado:</strong></p><p>O paciente apresenta PA 70x50mmHg (hipotensão), FC 96bpm (taquicardia), SO2 87% (hipoxemia), perfusão capilar lentificada e sinais de hipoperfusão periférica. Estas características são típicas de um perfil de baixo débito com hipovolemia.</p><p><strong>Alternativa A:</strong> O perfil A caracteriza-se por sinais de congestão sem hipoperfusão. O paciente apresenta hipoperfusão, excluindo o perfil A. A furosemida seria inadequada neste contexto hipotensivo.</p><p><strong>Alternativa B:</strong> O perfil B apresenta congestão com hipoperfusão leve, mas não a hipoperfusão grave observada. A dobutamina é uma opção para baixo débito, mas inicialmente o foco deve ser na restauração da volêmia.</p><p><strong>Alternativa C:</strong> CORRETA. O perfil L (low output/low filling pressures) caracteriza-se por baixo débito com baixas pressões de enchimento, típico de hipovolemia. A conduta inicial é expansão volêmica com soro fisiológico, como apresentado na alternativa.</p><p><strong>Alternativa D:</strong> O perfil D representa baixo débito com congestão e altas pressões. A nitroglicerina reduz a pré-carga e pode ser útil, mas primeiro deve-se tratar a hipovolemia que parece ser o problema primário.</p><p><strong>Alternativa E:</strong> O perfil C é caracterizado por congestão com pressões elevadas e baixo débito grave. O ECMO é uma terapêutica de resgate, não primeira linha para um quadro que pode responder à expansão volêmica simples.</p><p><strong>Importância clínica:</strong> A classificação de Stevenson orienta condutas emergenciais específicas. Em casos de hipoperfusão com hipovolemia, a expansão volêmica é fundamental antes de considerar terapêuticas mais complexas.</p><p><strong>Veredito final:</strong> A alternativa C está correta. O paciente apresenta perfil L (baixo débito com baixas pressões) e a conduta inicial deve ser expansão volêmica com soro fisiológico 250ml IV.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_TratamentoDaInsuficienciaCardi"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Os escores AGES e AMES são os mais empregados para estratificar pacientes com neoplasia de tireoide. Das variáveis listadas abaixo, não faz parte destes escores:",
+      "alternativas": [
+        "Sexo;",
+        "Idade;",
+        "Extensão tumoral;",
+        "Presença de metástase;",
+        "Subtipo histopatológico."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>A questão 9 da prova INTO 2022 aborda ferramentas fundamentais na estratificação prognóstica de neoplasias de tireoide: os escores AGES e AMES. O examinador busca avaliar seu conhecimento sobre quais variáveis são realmente contempladas nestas ferramentas prognósticas amplamente utilizadas na endocrinologia oncológica.</p><p><strong>A resposta correta é a alternativa A - Sexo.</strong></p><p>Vamos analisar cada escore para entender as variáveis contempladas:</p><p><strong>Escore AGES:</strong> (Age, Grade, Extent, Size)</p><p><strong>Escore AMES:</strong> (Age, Metastasis, Extent, Size)</p><p>Analisando cada alternativa:</p><p><strong>Alternativa A:</strong> CORRETA. O sexo NÃO é uma variável contemplada nos escores AGES nem AMES. Tanto a idade (Age) é considerada, mas especificamente a idade do paciente, não o sexo. Esta é uma limitação reconhecida destes escores, pois o sexo pode ter influência prognóstica em alguns tipos de câncer de tireoide.</p><p><strong>Alternativa B:</strong> A idade é fundamental em ambos os escores. Pacientes mais jovens (geralmente <40-50 anos) têm melhor prognóstico, enquanto idosos têm pior prognóstico.</p><p><strong>Alternativa C:</strong> A extensão tumoral (Extent) é um componente central de ambos os escores. Avalia se o tumor é restrito à tireoide (intracapsular) ou se há invasão extracapsular.</p><p><strong>Alternativa D:</strong> A presença de metástases (Metastasis) é o componente central do escore AMES e também é avaliada indiretamente no AGES através da extensão. Metástases distantes indicam pior prognóstico.</p><p><strong>Alternativa E:</strong> O subtipo histopatológico (Grade no AGES) é fundamental. Tumores bem diferenciados (papilífero, folicular) têm melhor prognóstico, enquanto indiferenciados (anaplásico) têm prognóstico muito pior.</p><p><strong>Limitações reconhecidas:</strong> Os escores AGES e AMES, embora úteis, não contemplam todas as variáveis prognósticas importantes. O sexo, por exemplo, não é considerado, embora algumas evidências sugiram que mulheres possam ter melhor prognóstico em alguns subtipos de câncer de tireoide.</p><p><strong>Atualizações (2025):</strong> Atualmente, outros sistemas de estratificação como o TNM (8ª edição) e sistemas moleculares mais refinados são também utilizados, incorporando variáveis não disponíveis nos escores clássicos.</p><p><strong>Veredito final:</strong> A alternativa A está correta. O sexo não faz parte dos escores AGES e AMES, que contemplam idade, extensão, tamanho e metástases (no AMES) e grau histológico (no AGES).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_EstadiamentoEEstratificacaoDeR"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Um erro muito comum na prática clínica é iniciar eritropoetina (EPO) para todo paciente portador de doença renal crônica sem realizar uma checagem prévia das reservas de ferro corporal. Para obtermos uma resposta satisfatória ao uso da EPO em pacientes com doença renal crônica dialítica, a saturação de transferrina (ISAT) e níveis de ferritina devem estar, respectivamente, acima de:",
+      "alternativas": [
+        "ISAT >20% e Ferritina >100ng/ml, repor ferro por via venosa;",
+        "ISAT >10% e Ferritina >150ng/ml, repor ferro por via venosa;",
+        "ISAT >25% e Ferritina >200ng/ml, repor ferro por via oral;",
+        "ISAT >50% e Ferritina >250ng/ml, repor ferro por via oral;",
+        "ISAT >45% e Ferritina >500ng/ml, repor ferro por via venosa;"
+      ],
+      "correta": -1,
+      "professor_comment": "<p>A questão 10 da banca INTO 2022 aborda um tema crítico da nefrologia: o uso criterioso de eritropoetina (EPO) em pacientes com doença renal crônica. O examinador busca avaliar seu conhecimento sobre os critérios necessários para uma resposta satisfatória à EPO, especificamente os valores mínimos de saturação de transferrina e ferritina.</p><p><strong>Veredito sobre a questão:</strong> Esta questão foi <strong>ANULADA</strong> pelo símbolo @ no gabarito oficial, provavelmente devido a inconsistências entre as alternativas ou informações desatualizadas.</p><p>Vamos analisar cada alternativa para compreender as inconsistências:</p><p><strong>Alternativa A:</strong> ISAT >20% e Ferritina >100ng/ml - Os valores estão próximos do recomendado, mas há discordância entre diretrizes sobre a necessidade de reposição venosa vs oral.</p><p><strong>Alternativa B:</strong> ISAT >10% e Ferritina >150ng/ml - O ISAT de 10% está abaixo do recomendado (geralmente >20-30%), o que tornaria a alternativa incorreta.</p><p><strong>Alternativa C:</strong> ISAT >25% e Ferritina >200ng/ml - Os valores estão adequados, mas a reposição oral não é a primeira escolha em pacientes dialíticos.</p><p><strong>Alternativa D:</strong> ISAT >50% e Ferritina >250ng/ml - O ISAT de 50% está muito elevado, indicando excesso de ferro (contra-indicação para reposição).</p><p><strong>Alternativa E:</strong> ISAT >45% e Ferritina >500ng/ml - Ambos valores indicam sobrecarga de ferro, absolutamente contraindicada.</p><p><strong>Critérios atuais para EPO (Diretrizes Brasileiras de Nefrologia 2024-2025):</strong></p><p>Para resposta satisfatória à EPO, recomenda-se:</p><p>- Saturação de transferrina: >30% (algumas diretrizes >20-25%)</p><p>- Ferritina: >200-300ng/ml</p><p>- Ferritina: <500ng/ml (para evitar sobrecarga)</p><p><strong>Forma de reposição:</strong> Em pacientes dialíticos, a reposição venosa é preferencial devido à melhor absorção e menor incidência de efeitos gastrointestinais.</p><p><strong>Motivos prováveis da anulação:</strong></p><p>1. Valores conflitantes entre as alternativas (especialmente os extremos das alternativas D e E)</p><p>2. Discordância entre diretrizes sobre valores exatos</p><p>3. Possível confusão entre critérios para diferentes fases da doença renal crônica</p><p><strong>Conclusão:</strong> Esta questão apresenta inconsistências técnicas que impedem uma resposta definitiva. A anulação foi adequada, pois nenhuma alternativa contempla corretamente todos os parâmetros de forma inequívoca conforme as diretrizes atuais.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica_TerapiaRenalSubstitutiva",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "Um homem de 50 anos, portador de doença ulcerosa péptica refratária ao tratamento clínico (inibidor de bomba protônica há oito semanas) evolui com esteatorreia (seis evacuações/dia). Foi solicitada endoscopia digestiva alta e o exame evidenciou múltiplas úlceras em antro gástrico, primeira porção do duodeno e duas úlceras em porção distal do duodeno. Com base na hipótese mais provável, o marcador que se elevado auxiliaria no diagnóstico seria:",
+      "alternativas": [
+        "Colecistocinina",
+        "Somatostatina",
+        "Glucagon",
+        "Gastrina",
+        "Peptídeo intestinal vasoativo"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia o conhecimento sobre síndrome de Zollinger-Ellison, uma condição importante na gastroenterologia que cursa com úlceras múltiplas refratárias e esteatorreia.</p><p><strong>A resposta correta é D - Gastrina.</strong></p><p>O paciente apresenta características clássicas da síndrome de Zollinger-Ellison: doença ulcerosa múltipla e refratária ao tratamento, localização em antro e duodeno (múltiplas), e esteatorreia. A esteatorreia ocorre devido à acidez gástrica excessiva que inativa as enzimas pancreáticas e precipita sais biliares, impedindo a absorção de gorduras.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Colecistocinina:</strong> Incorreta. Este hormônio estimula a vesícula biliar e o pâncreas, não causa úlceras múltiplas.</p><p><strong>B) Somatostatina:</strong> Incorreta. É um hormônio inibidor da gastrina e outras hormonas gastroenterológicas, seria protetor contra úlceras.</p><p><strong>C) Glucagon:</strong> Incorreta. Hormônio pancreático que aumenta a glicemia, não relacionado com síndrome ulcerosa.</p><p><strong>D) Gastrina:</strong> Correta. A gastrina elevada é característica da síndrome de Zollinger-Ellison, causando hipersecreção ácida e úlceras múltiplas.</p><p><strong>E) Peptídeo intestinal vasoativo (VIP):</strong> Incorreta. Causa síndrome de VIPoma com diarreia aquosa secretória, não úlceras múltiplas.</p><p><strong>Veredito Final:</strong> A síndrome de Zollinger-Ellison deve ser suspeitada em pacientes com úlceras múltiplas, refratárias e em localização incomum. O marcador de escolha é a gastrina sérica elevada.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_DoencaUlcerosaPepticaDup"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Um homem de 35 anos vem à consulta queixando-se de pirose e regurgitação há seis meses. Relata que ganhou muito peso na pandemia (15kg em seis meses) e relaciona o ganho ponderal ao surgimento de sintomas. Paciente nega disfagia, odinofagia ou história familiar de câncer gástrico. Além de orientar sobre a importância de perda ponderal, a conduta subsequente seria:",
+      "alternativas": [
+        "Solicitar esofagomanometria;",
+        "Iniciar inibidor de bomba protônica e solicitar pHmetria;",
+        "Iniciar inibidor de bomba protônica;",
+        "Iniciar inibidor de bomba protônica e solicitar endoscopia digestiva alta;",
+        "Solicitar tomografia de abdome com contraste."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do INTO 2022 aborda o manejo inicial da doença do refluxo gastroesofágico (DRGE), avaliando o conhecimento sobre condutas adequadas no manejo clínico inicial.</p><p><strong>A resposta correta é C - Iniciar inibidor de bomba protônica.</strong></p><p>O paciente apresenta sintomas típicos de DRGE: pirose e regurgitação, sem sinais de alarme (disfagia, odinofagia, história familiar de câncer). O ganho ponderal de 15kg é um fator de risco importante para DRGE, pois aumenta a pressão intra-abdominal e predispõe ao refluxo.</p><p>Vamos analisar as condutas propostas:</p><p><strong>A) Solicitar esofagomanometria:</strong> Incorreta. A manometria não é necessária no manejo inicial da DRGE típica sem sinais de alarme.</p><p><strong>B) Iniciar IBP e solicitar pHmetria:</strong> Incorreta. A pHmetria só é indicada quando há falha terapêutica ou diagnóstico duvidoso, não no início do tratamento.</p><p><strong>C) Iniciar inibidor de bomba protônica:</strong> Correta. Esta é a conduta padrão inicial para DRGE típica sem sinais de alarme.</p><p><strong>D) Iniciar IBP e solicitar endoscopia digestiva alta:</strong> Incorreta. A endoscopia só é necessária se houver sinais de alarme ou falha terapêutica, não como primeira investigação.</p><p><strong>E) Solicitar tomografia de abdome com contraste:</strong> Incorreta. Não há indicação para tomografia em DRGE típica, pois é um exame desnecessário e de alto custo.</p><p><strong>Veredito Final:</strong> O manejo inicial da DRGE com sintomas típicos inclui orientação para perda ponderal e início de IBP. A investigação complementar é reservada para casos com sinais de alarme ou falha terapêutica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Ao presenciar uma colisão de automóvel de passeio x traseira de caminhão numa via movimentada (velocidade máxima 70km/h), um médico socorrista decide parar para ajudar. Ao chegar à cena do acidente, nota que o motorista do automóvel apresenta pulso central, não abre os olhos ao chamado, balbucia palavras inapropriadas e retira o membro ao estímulo doloroso, além de apresentar movimento paradoxal do tórax. A conduta inicial deve ser:",
+      "alternativas": [
+        "Intubar o paciente já que apresenta um Glasgow <8;",
+        "Administrar O2 suplementar pela presença de tórax instável;",
+        "Colocar colar cervical e realizar intubação nasofaríngea;",
+        "Puncionar dois acessos venosos calibrosos periféricos e iniciar cristaloide;",
+        "Sinalizar a via de tráfego."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia o conhecimento em atendimento pré-hospitalar e prioridades na cena de trauma, focando na segurança da cena como primeira prioridade no protocolo de atendimento.</p><p><strong>A resposta correta é E - Sinalizar a via de tráfego.</strong></p><p>O paciente apresenta sinais de trauma grave: Glasgow de 8-9 (não abre olhos, balbucia palavras inapropriadas, localiza dor - GOS 2+2+2=6 na escala de coma), e tórax instável com movimento paradoxal sugerindo fratura de costelas múltiplas. Porém, a primeira prioridade em qualquer atendimento de trauma é a SEGURANÇA DA CENA.</p><p>Vamos analisar as condutas:</p><p><strong>A) Intubar o paciente já que apresenta Glasgow <8:</strong> Incorreta. Embora a intubação possa ser necessária, a segurança da cena vem sempre primeiro. Além disso, o paciente tem GOS 6, não necessarily <8 (a resposta não especifica se abre os olhos ao estímulo).</p><p><strong>B) Administrar O2 suplementar pela presença de tórax instável:</strong> Incorreta. O oxigênio é importante, mas a segurança da cena deve ser a prioridade.</p><p><strong>C) Colocar colar cervical e realizar intubação nasofaríngea:</strong> Incorreta. A segurança da cena deve ser estabelecida antes de qualquer procedimento invasivo.</p><p><strong>D) Puncionar dois acessos venosos calibrosos periféricos e iniciar cristaloide:</strong> Incorreta. Os acessos venosos são importantes no trauma, mas a segurança da cena deve ser estabelecida primeiro.</p><p><strong>E) Sinalizar a via de tráfego:</strong> Correta. A primeira prioridade no ATLS é sempre a segurança da cena. Antes de atender o paciente, deve-se garantir que não há riscos para a equipe de socorro.</p><p><strong>Veredito Final:</strong> A segurança da cena é a primeira prioridade em qualquer atendimento de trauma. Só após estabelecer a segurança é que devemos proceder com o atendimento ao paciente, seguindo o protocolo ABCDE do ATLS.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AtendimentoETriagemEmCenariosD"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Um paciente vítima de acidente automobilístico carro x árvore é trazido pelos bombeiros já com protocolo ATLS iniciado. Ao exame, paciente vigil, abertura ocular ao chamado, discurso orientado e localizando dor no abdome. Sinais vitais: PA:150x90mmHg, FC: 92bpm, FR: 18irpm, Tax: 37ºC, SO2: 97%; Ao exame: Ausculta cardíaca e pulmonar sem alterações dignas de nota. Pulsos presentes e simétricos, bacia estável. Dor a palpação abdominal difusa sem descompressão dolorosa. Realizada ultrassonografia à beira leito (FAST), que evidenciou líquido livre em loja esplenorrenal. Frente ao quadro a conduta correta seria:",
+      "alternativas": [
+        "Tomografia computadorizada com contraste;",
+        "Laparotomia exploradora;",
+        "Lavado peritoneal diagnóstico e, caso positivo, indicar laparotomia;",
+        "Videolaparoscopia diagnóstica;",
+        "Cistoscopia para avaliar possível lesão uretral."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia o conhecimento em trauma abdominal fechado e condutas diante de FAST positivo para líquido livre, considerando a estratificação de risco e a necessidade de investigação complementar.</p><p><strong>A resposta correta é A - Tomografia computadorizada com contraste.</strong></p><p>O paciente está hemodinamicamente estável (PA 150x90, FC 92, sem sinais de choque) e tem FAST positivo para líquido livre na loja esplenorrenal. A presença de líquido livre sugere lesões intra-abdominais, mas o paciente não apresenta sinais de peritonite ou instabilidade hemodinâmica que indiquem necessidade de laparotomia imediata.</p><p>Vamos analisar as condutas:</p><p><strong>A) Tomografia computadorizada com contraste:</strong> Correta. Para pacientes estáveis com FAST positivo, a TC é o exame de escolha para avaliar a extensão das lesões e orientar a conduta.</p><p><strong>B) Laparotomia exploradora:</strong> Incorreta. Não há indicação para laparotomia imediata em paciente estável, sem sinais de peritonite ou instabilidade hemodinâmica.</p><p><strong>C) Lavado peritoneal diagnóstico:</strong> Incorreta. O LPD é um método invasivo que foi substituído pelo FAST e TC em centros que dispõem desses exames. Não é necessário quando temos TC disponível.</p><p><strong>D) Videolaparoscopia diagnóstica:</strong> Incorreta. A videolaparoscopia não é indicada como primeira opção diagnóstica em trauma abdominal fechado estável.</p><p><strong>E) Cistoscopia para avaliar possível lesão uretral:</strong> Incorreta. Não há sinais de lesão uretral (hematúria,impossibilidade de urinar) e a TC pode avaliar o sistema urinário se necessário.</p><p><strong>Veredito Final:</strong> Em pacientes com trauma abdominal fechado estáveis com FAST positivo, a tomografia computadorizada com contraste é a conduta padrão para definir a extensão das lesões e orientar o tratamento.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_TraumaAbdominalEPelvico",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoSecundaria"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Segundo o Colégio Americano de Cirurgiões, os parâmetros compatíveis com a fase II do choque hipovolêmico encontram-se na alternativa:",
+      "alternativas": [
+        "Perda sanguínea >15% e <30%, PA normal, FC >100bpm e <120bpm, Débito urinário 20-30ml/h;",
+        "Perda sanguínea >15% e <30%, PA normal, FC >80bpm e <100bpm, Débito urinário >30ml/h;",
+        "Perda sanguínea >40%, PA diminuída, FC >120bpm e <140bpm, Débito urinário <5-15ml/h;",
+        "Perda sanguínea >30% e <40%, PA diminuída, FC >140bpm, Débito urinário ausente;",
+        "Perda sanguínea <15%, PA normal, FC <100bpm, Débito urinário >30ml/h"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia o conhecimento sobre classificação do choque hipovolêmico segundo o Colégio Americano de Cirurgiões (ACS), especificamente os parâmetros da fase II (choque compensado).</p><p><strong>A resposta correta é A - Perda sanguínea >15% e <30%, PA normal, FC >100bpm e <120bpm, Débito urinário 20-30ml/h.</strong></p><p>A classificação do choque hipovolêmico do ACS divide a perda sanguínea em quatro classes: I (<15%), II (15-30%), III (30-40%) e IV (>40%). Na fase II, o organismo ainda consegue manter a pressão arterial normal através de mecanismos compensatórios, mas começa a apresentar taquicardia leve e redução do débito urinário.</p><p>Vamos analisar as alternativas:</p><p><strong>A) Perda sanguínea >15% e <30%, PA normal, FC >100bpm e <120bpm, Débito urinário 20-30ml/h:</strong> Correta. Esta opção descreve precisamente a fase II do choque hipovolêmico segundo o ACS.</p><p><strong>B) Perda sanguínea >15% e <30%, PA normal, FC >80bpm e <100bpm, Débito urinário >30ml/h:</strong> Incorreta. A FC está abaixo do esperado para fase II (deveria estar >100) e o débito urinário está normal (>30ml/h), quando na fase II já deve estar reduzido (20-30ml/h).</p><p><strong>C) Perda sanguínea >40%, PA diminuída, FC >120bpm e <140bpm, Débito urinário <5-15ml/h:</strong> Incorreta. Esta descrição corresponde à fase III, não fase II, pois tem perda >40% e PA diminuída.</p><p><strong>D) Perda sanguínea >30% e <40%, PA diminuída, FC >140bpm, Débito urinário ausente:</strong> Incorreta. Esta descrição corresponde à fase IV (choque descompensado), com PA diminuída, FC >140 e oligúria importante.</p><p><strong>E) Perda sanguínea <15%, PA normal, FC <100bpm, Débito urinário >30ml/h:</strong> Incorreta. Esta descrição corresponde à fase I, com perda <15% e débito urinário normal.</p><p><strong>Veredito Final:</strong> A fase II do choque hipovolêmico caracteriza-se por perda sanguínea de 15-30%, PA ainda normal (compensada), FC 100-120 bpm (taquicardia leve) e débito urinário reduzido de 20-30ml/h.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent_1"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Dominar a anatomia inguinal é de fundamental importância para a compreensão e manejo das hérnias inguinais. Analisando as afirmativas abaixo: I - Hérnias diretas ocorre no triângulo de Hasselbach; II - Vasos epigástricos superiores, cordão espermático e ligamento inguinal formam os limites do triângulo de Hasselbach; III - O triângulo do desastre (triangle of doom) é limitado medialmente pelo ducto deferente e lateralmente pelos vasos espermáticos; IV - A hérnia mista é a mais comum em ambos os sexos. Estão corretas as alternativas:",
+      "alternativas": [
+        "I e IV;",
+        "I, II, III;",
+        "I, II e IV;",
+        "I e III;",
+        "IV."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da banca INTO 2022 avalia conhecimento fundamental sobre anatomia inguinal, especificamente os triângulos anatômicos e suas relações com as hérnias.</strong> O domínio desta anatomia é essencial para o diagnóstico e tratamento adequado das hérnias inguinais.</p><p>Vamos analisar cada afirmativa sistematicamente:</p><p><strong>Afirmativa I - CORRETA:</strong> Hernias diretas realmente ocorrem no triângulo de Hasselbach (ou triângulo inguinal), que é uma área de fraqueza da parede abdominal anterior. Esta é a localização típica para hernias diretas, que através desta região Anatômica.</p><p><strong>Afirmativa II - INCORRETA:</strong> A composição do triângulo de Hasselbach está incorretamente descrita. Os verdadeiros limites são: medialmente pela borda lateral do músculo reto abdominal, lateralmente pela artéria epigástrica inferior, e inferiormente pelo ligamento inguinal (e não os vasos epigástricos superiores, cordão espermático e ligamento inguinal). Os vasos epigástricos superiores não fazem parte deste triângulo.</p><p><strong>Afirmativa III - CORRETA:</strong> A descrição do triângulo do desastre (triangle of doom) está correta. Este triângulo tem limite medial pelo ducto deferente e lateral pelos vasos espermáticos (veia e artéria espermática). É uma região de alto risco durante cirurgias de hernia devido à presença de estruturas vasculares importantes.</p><p><strong>Afirmativa IV - INCORRETA:</strong> Esta afirmativa está errada em relação à prevalência das hernias mistas. A hernia mais comum em ambos os sexos é a hernia indireta, não a mista. As hernias mistas são menos frequentes e representam apenas uma pequena porcentagem dos casos.</p><p><strong>Raciocínio clínico:</strong> Para chegar à resposta correta, foi necessário identificar quais afirmativas estavam anatomicamente corretas. As afirmativas I e III estavam anatomicamente precisas, tornando a alternativa D a escolha correta.</p><p><strong>Veredito:</strong> A resposta correta é <strong>D) I e III</strong>, conforme o gabarito oficial da banca INTO 2022.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "A presença de um apêndice inflamado no interior de uma hérnia femoral recebe o nome de hérnia de:",
+      "alternativas": [
+        "De Garengeot",
+        "Miles",
+        "Littré",
+        "Spiegel",
+        "Amyand"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão do INTO 2022 avalia o conhecimento sobre classificações específicas de hérnias raras e incomuns, uma área importante da cirurgia geral que pode ser pouco abordada na rotina, mas é frequentemente cobrada em provas de Residência.</strong></p><p>Vamos analisar cada tipo de hernia mencionado:</p><p><strong>Alternativa A - De Garengeot (CORRETA):</strong> Esta é a hernia femoral que contém um apêndice cecal inflamado. É uma condição extremamente rara (menos de 1% das hernias femorais) e representa uma emergência cirúrgica devido ao risco de perfuração do apêndice e consequente peritonite. A combinação hernia femoral + apêndice inflamado é caracteristicamente chamada de hernia de De Garengeot.</p><p><strong>Alternativa B - Miles:</strong> Não corresponde a uma hernia específica. William Ernest Miles foi um cirurgião inglês famoso por suas contribuições à cirurgia de cancer retal, mas não há uma hernia com seu nome.</p><p><strong>Alternativa C - Littré:</strong> Refere-se a uma hernia que contém um divertículo de Meckel. É uma condição rara, mas diferente da situação descrita no enunciado (apêndice em hernia femoral).</p><p><strong>Alternativa D - Spiegel:</strong> Corresponde a uma hernia ventral rara que ocorre na linha semilunar de Spiegel, na transição entre os músculos reto abdominal e transverso do abdome. Não tem relação com apêndice cecal ou localização femoral.</p><p><strong>Alternativa E - Amyand:</strong> Esta é a hernia que contém um apêndice cecal, mas em uma hernia inguinal (não femoral). A hernia de Amyand é uma hernia inguinal com apêndice inflamado, enquanto a questão descreve especificamente uma hernia femoral.</p><p><strong>Raciocínio clínico:</strong> O detalhe crucial foi a localização femoral. Enquanto a hernia de Amyand refere-se ao apêndice em uma hernia inguinal, a hernia de De Garengeot é especificamente quando o apêndice inflamado está presente em uma hernia femoral.</p><p><strong>Veredito:</strong> A resposta correta é <strong>A) De Garengeot</strong>, conforme gabarito oficial da banca INTO 2022.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_HerniasDaParedeAbdominal"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Um homem de 63 anos, hipertenso e diabético não insulinodependente apresenta queixa de hematoquezia há quatro meses e nega tenesmo, perda ponderal ou história familiar para neoplasia. Ao exame: Paciente eutrófico, hipocorado 2+/4+, anictérico, acianótico, eupneico em ar ambiente e afebril. Restante do exame físico sem alterações evolutivas. O prosseguimento da investigação deve ser com:",
+      "alternativas": [
+        "Pesquisa de sangue oculto nas fezes;",
+        "Toque retal e colonoscopia;",
+        "Tomografia computadorizada de abdome e sangue oculto nas fezes;",
+        "Prescrever sulfato ferroso oral e reavaliar em três meses",
+        "Toque retal e enema opaco."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão do INTO 2022 avalia a capacidade de conduzir adequadamente a investigação diagnóstica de hematoquezia em um paciente de risco, seguindo as diretrizes brasileiras atuais para rastreamento e diagnóstico de câncer colorretal.</strong></p><p>O caso apresenta um homem de 63 anos com múltiplos fatores de risco: idade superior a 50 anos, hipertensão, diabetes mellitus tipo 2, e hematoquezia há 4 meses. Estes são sinais de alarme que exigem investigação imediata.</p><p>Vamos analisar as alternativas de conduta:</p><p><strong>Alternativa A - Pesquisa de sangue oculto nas fezes:</strong> Esta é uma estratégia de rastreamento em população assintomática, mas aqui já temos sintomas (hematoquezia). Não é apropriada para um paciente sintomático com fatores de risco. Além disso, neste contexto seria apenas postergar o diagnóstico definitivo.</p><p><strong>Alternativa B - Toque retal e colonoscopia (CORRETA):</strong> Esta é a conduta ideal. O toque retal pode identificar lesões palpáveis (como câncer de reto) e avaliar características das fezes. A colonoscopia é o exame gold standard para investigação de hematochezia, permitindo visualização direta de toda mucosa colônica, biopsies direcionadas e eventualmente ressecção de pólipos. Para pacientes com hematoquezia e fatores de risco, a colonoscopia é mandatória.</p><p><strong>Alternativa C - Tomografia computadorizada de abdome e sangue oculto:</strong> A TC pode ser útil em emergências para avaliação de complicações, mas não substitui a colonoscopia para diagnóstico de lesões mucosas. O sangue oculto nas fezes seria redundante em um paciente já com hematoquezia macroscópica.</p><p><strong>Alternativa D - Prescrever sulfato ferroso e reavaliar:</strong> Esta conduta é completamente inadequada. Tratar apenas a anemia sem investigar a causa da hematoquezia representa uma negligência médica grave, especialmente em paciente de 63 anos com fatores de risco para câncer colorretal.</p><p><strong>Alternativa E - Toque retal e enema opaco:</strong> O toque retal é adequado, mas o enema opaco é um exame menos sensível que a colonoscopia e não permite biopsies. É um exame obsoleto para investigação de hematochezia em pacientes de risco.</p><p><strong>Raciocínio clínico:</strong> Seguindo as diretrizes brasileiras (INCA e SBH), hematoquezia em paciente acima de 50 anos com fatores de risco deve ser investigada com colonoscopia, idealmente após toque retal. A alternativa B representa o protocolo diagnóstico mais seguro e eficaz.</p><p><strong>Veredito:</strong> A resposta correta é <strong>B) Toque retal e colonoscopia</strong>, conforme gabarito oficial da banca INTO 2022.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Dos cenários listados abaixo em qual observaríamos um maior retardo no processo de cicatrização de uma ferida: I- Paciente obeso grau III; II- Paciente com HbA1c de 9,0% em uso de insulina NPH; III- Paciente com doença de Ménétrier e edema de membros inferiores; IV- Tabagista de 80 maços/ano que suspendeu tabagismo há duas semanas; V- Paciente com artrite reumatoide em uso de prednisona 10mg/dia há 5 anos",
+      "alternativas": [
+        "I, II, IV e V;",
+        "II, III e V;",
+        "I, II e V;",
+        "Todas as alternativas estão incorretas;",
+        "I, II, III, IV e V."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão do INTO 2022 avalia o conhecimento sobre fatores que comprometem a cicatrização de feridas, um tema fundamental em cirurgia geral e emergência. A banca explora múltiplas condições que podem interferir no processo de cicatrização normal.</strong></p><p>Vamos analisar cada cenário apresentado:</p><p><strong>I - Paciente obeso grau III (CORRETO):</strong> A obesidade grau III (IMC > 40) compromete significativamente a cicatrização por múltiplos mecanismos: hipoxemia tecidual, redução da perfusão periférica, inflamação crônica de baixo grau, maior risco de infecção, e dificuldades técnicas na abordagem cirúrgica. A adiposidade excessiva reduz a entrega de oxigênio e nutrientes aos tecidos em regeneração.</p><p><strong>II - Paciente com HbA1c de 9,0% em uso de insulina NPH (CORRETO):</strong> HbA1c de 9% indica controle glicêmico inadequado (alvo < 7%). O diabetes mellitus descontrolado compromete a cicatrização através de: microangiopatia, neuropatia, redução da angiogênese, disfunção dos fibroblastos, e maior susceptibilidade a infecções. A hiperglicemia crônica prejudica a síntese de colágeno e a resposta inflamatória.</p><p><strong>III - Paciente com doença de Ménétrier e edema de membros inferiores (CORRETO):</strong> A doença de Ménétrier causa hipoproteinemia severa devido à perda proteica gastric. O edema de membros inferiores é consequência direta da hipoproteinemia. A redução de proteínas plasmáticas compromete a cicatrização por: deficit de albumina (transporte de nutrientes), deficiência de fatores de coagulação, redução da resposta imune, e comprometimento da síntese proteica tecidual.</p><p><strong>IV - Tabagista de 80 maços/ano que suspendeu há duas semanas (CORRETO):</strong> O tabagismo compromete severamente a cicatrização através de: vasoconstrição crônica, redução do transporte de oxigênio, comprometimento da angiogênese, disfunção de neutrófilos e macrófagos. Mesmo com suspensão há 2 semanas, os efeitos adversos persistem significativamente. A melhora completa pode levar semanas a meses após cessação do tabagismo.</p><p><strong>V - Paciente com artrite reumatoide em uso de prednisona 10mg/dia há 5 anos (CORRETO):</strong> O uso crônico de corticóides compromete a cicatrização por: supressão da resposta inflamatória necessária para a cicatrização, redução da síntese de colágeno, comprometimento da função dos fibroblastos, maior susceptibilidade a infecções, e atraso na formação de granulação. Mesmo em dose baixa (10mg/dia), o uso prolongado tem efeitos significativos.</p><p><strong>Raciocínio clínico:</strong> Todos os cenários apresentados são fatores reconhecidamente prejudiciais à cicatrização. A banca incluiu condições metabólicas, nutricionais, vasculares, tóxicas e iatrogênicas, cobrindo os principais mecanismos que interferem na reparação tecidual.</p><p><strong>Veredito:</strong> A resposta correta é <strong>E) I, II, III, IV e V</strong> (todas as alternativas estão corretas), conforme gabarito oficial da banca INTO 2022.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CicatrizacaoDeFeridas"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Considerando a fisiopatologia da diverticulite do cólon esquerdo, o evento mais comumente esperado no primeiro episódio da doença, em comparação a insultos posteriores, é:",
+      "alternativas": [
+        "Perfuração;",
+        "Sangramento;",
+        "Obstrução;",
+        "Estenose;",
+        "Fistulização"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão do INTO 2022 avalia o conhecimento sobre a fisiopatologia da diverticulite do cólon esquerdo, especificamente focando nas diferenças entre a apresentação inicial e os episódios subsequentes da doença. É um tema que exige compreensão dos mecanismos inflamatórios progressivos.</strong></p><p>A diverticulite resulta da inflamação e infecção de divertículos cólicos, geralmente associados à estase fecal e aumento da pressão intraluminal.</p><p>Vamos analisar cada alternativa considerando o primeiro episódio versus insultos posteriores:</p><p><strong>Alternativa A - Perfuração (CORRETA):</strong> No primeiro episódio de diverticulite, a perfuração é o evento mais comum e esperado. O processo inflamatório agudo pode levar à necrose da parede diverticular e consequente perfuração, especialmente em casos de diverticulite aguda simples ou complicada. Esta é a complicação mais frequente no episódio inicial.</p><p><strong>Alternativa B - Sangramento:</strong> Embora o sangramento possa ocorrer na diverticulite, é mais comum em casos sem inflamação ativa (diverticulose com sangramento). No contexto da diverticulite aguda, o sangramento não é o evento mais comum no primeiro episódio.</p><p><strong>Alternativa C - Obstrução:</strong> A obstrução é uma complicação mais tardia da diverticulite, geralmente resultante de fibrose e estenose cicatricial após episódios repetidos. Não é típica do primeiro episódio.</p><p><strong>Alternativa D - Estenose:</strong> Similarmente à obstrução, a estenose resulta do processo cicatricial após múltiplos episódios inflamatórios. É uma complicação de longo prazo, não característica do primeiro episódio.</p><p><strong>Alternativa E - Fistulização:</strong> A fistulização (principalmente colovesical) é uma complicação tardia da diverticulite, quando há processo inflamatório crônico com aderências e necrose progressiva. Não é característica do primeiro episódio.</p><p><strong>Raciocínio clínico:</strong> A fisiopatologia da diverticulite no primeiro episódio envolve processo inflamatório agudo com risco aumentado de perfuração devido à inflamação inicial intensa, hiperemia, edema e possível necrose da parede diverticular. Nos episódios subsequentes, o processo inflamatório crônico leva mais frequentemente a fibrose, aderências e estenoses, com menor frequência de perfuração aguda.</p><p><strong>Veredito:</strong> A resposta correta é <strong>A) Perfuração</strong>, conforme gabarito oficial da banca INTO 2022.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio",
+        "Cirurgia_UrgenciasAbdominais_AbdomeAgudoInflamatorio_DiverticuliteAguda",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Intestinos",
+        "ClinicaMedica_Gastroenterologia_Intestinos_DoencaDiverticular"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Uma mulher de 40 anos com histórico familiar de câncer de mama materno (mãe teve câncer aos 70 anos) realiza mamografia de rastreio. O laudo da mamografia foi BIRADS 2. Segundo as orientações do Ministério da Saúde acerca da realização e resultado do exame, é correto afirmar que:",
+      "alternativas": [
+        "Foi realizado no momento correto / Requer realização de Core biopsy;",
+        "Foi realizado de forma precoce / Deve-se complementar com ultrassonografia;",
+        "Não seguiu as orientações do Ministério da Saúde / Complementar com ressonância;",
+        "Seguiu as orientações do Ministério da Saúde / Repetir o exame em seis meses;",
+        "Não seguiu as orientações do Ministério da Saúde / Repetir o exame aos 50 anos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca INTO avalia seu conhecimento sobre as diretrizes do Ministério da Saúde para rastreamento de câncer de mama e interpretação de resultados mamográficos.</p><p><strong>A resposta correta é E - Não seguiu as orientações do Ministério da Saúde / Repetir o exame aos 50 anos.</strong></p><p>Vamos analisar: segundo o MS 2025, o rastreamento mamográfico no Brasil deve ser realizado a partir dos 50 anos para mulheres de risco habitual. A paciente de 40 anos não estava na idade recomendada para rastreamento. Além disso, o histórico familiar apresentado (mãe com câncer aos 70 anos) não a coloca em grupo de alto risco que justificaria rastreamento antes dos 50 anos.</p><p>BIRADS 2 significa achado benigno, sem necessidade de procedimentos invasivos. O protocolo correto seria repetir a mamografia na faixa etária adequada (aos 50 anos).</p><p>Analisando as alternativas:</p><p><strong>A)</strong> Incorreta - BIRADS 2 não requer core biopsy. Além disso, o exame foi realizado precocemente.</p><p><strong>B)</strong> Incorreta - Exame foi precoce e não deve ser complementado com ultrassonografia (mamografia é o método de rastreamento padrão).</p><p><strong>C)</strong> Incorreta - Embora não tenha seguido orientações (examem precoce), a ressonância não é a conduta adequada.</p><p><strong>D)</strong> Incorreta - Não seguiu orientações (exame precoce) e repetir em 6 meses não é protocolo.</p><p><strong>E)</strong> Correta - Exame precoce + repeat aos 50 anos (idade adequada).</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_RastreamentoDoCancerDeMama",
+        "Ginecologia_Mastologia",
+        "Ginecologia_Mastologia_CancerDeMama",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Uma paciente de 36 anos, G0P0A0, tabagista de 3 maços/dia há 20 anos, refere que \"toda vez que menstruava, achava que ia morrer\". Após extensa investigação para dor pélvica, constatou-se a presença de endometriose. No momento, está em um novo relacionamento e deseja fazer uso de bloqueio hormonal contraceptivo. A melhor opção neste caso seria:",
+      "alternativas": [
+        "Progestagênio oral isolado;",
+        "Pílula combinada oral;",
+        "Anticoncepcional combinado injetável;",
+        "Estrogênio oral isolado;",
+        "Clomifeno oral"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre escolha contraceptiva em paciente com endometriose e fator de risco adicional (tabagismo).</p><p><strong>A resposta correta é A - Progestagênio oral isolado.</strong></p><p>Vamos entender a lógica: a paciente tem endometriose (que causa dor pélvica cíclica) e é tabagista pesada (3 maços/dia há 20 anos). O tratamento da endometriose é hormonal com progestagênios, mas o tabagismo contraindica estrógenos.</p><p>Progestagênios isolados são excelentes para endometriose (controlam crescimento ectópico endometrial) e não há contraindicação em tabagistas. Além disso, são adequados para contraception.</p><p>Analisando cada alternativa:</p><p><strong>A)</strong> Correta - Progestagênio isolado trata endometriose e é seguro em tabagistas.</p><p><strong>B)</strong> Incorreta - Pílula combinada tem estrógeno, contraindicado em tabagistas >35 anos (aumenta risco de tromboembolismo).</p><p><strong>C)</strong> Incorreta - Anticoncepcional combinado injetável contém estrógeno, mesmo problema da alternativa B.</p><p><strong>D)</strong> Incorreta - Estrogênio isolado nunca é usado como contraceptivo, além de contraindicado em tabagistas.</p><p><strong>E)</strong> Incorreta - Clomifeno é indutor de ovulação, usado para fertilidade, não para contraception.</p><p>A questão testa seu conhecimento sobre interação entre патologias ginecológicas e fatores de risco, aplicando as diretrizes do MS 2025 para contraceptive counseling.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_Endometriose",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_MetodosHormonaisCombinados",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar_AnticoncepcaoHormonalApenasCom",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Uma senhora de 67 anos, obesa, diabética, hipertensa e menopausada desde os 50 anos refere que há 15 dias iniciou sangramento uterino de moderada quantidade. Ultrassonografia pélvica evidenciou um endométrio medindo 11mm. A melhor conduta subsequente para diagnóstico é:",
+      "alternativas": [
+        "Histerectomia + anexectomia, pois, além de elucidar o diagnóstico, previne que a paciente tenha neoplasia de ovário no futuro;",
+        "Prescrever progestágeno oral, pois o sangramento provavelmente é auto-limitado;",
+        "Realizar videohisteroscopia com biópsia endometrial;",
+        "Tranquilizar a paciente, já que a espessura do endométrio está normal para esta faixa etária;",
+        "Realizar aspiração manual intrauterina, pois além de ser menos invasiva, é superior à histeroscopia com biópsia."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua conduta diagnóstica diante de sangramento pós-menopausa, cenário que sempre exige investigação devido ao risco de malignidade.</p><p><strong>A resposta correta é C - Realizar videohisteroscopia com biópsia endometrial.</strong></p><p>Vamos analisar: paciente de 67 anos, com fatores de risco (obesidade, diabetes, hipertensão), menopausada há 17 anos, apresentando sangramento uterino há 15 dias. O achado de endométrio espesso (11mm) é preocupante - em pós-menopausa, o endométrio deve ter <4-5mm.</p><p>A videohisteroscopia com biópsia é o gold standard para diagnóstico, pois permite visualização direta da cavidade uterina e coleta dirigida de material para histopatologia.</p><p>Analisando as alternativas:</p><p><strong>A)</strong> Incorreta - Histerectomia é tratamento, não diagnóstico inicial. Não se faz cirurgia sem diagnóstico confirmado.</p><p><strong>B)</strong> Incorreta - Progestágeno não é conduta diagnóstica. Sangramento pós-menopausa com endométrio espessado não é auto-limitado.</p><p><strong>C)</strong> Correta - Videohisteroscopia com biópsia é a conduta diagnóstica padrão.</p><p><strong>D)</strong> Incorreta - 11mm está bem acima do normal (deve ser <4-5mm). Não se tranquiliza paciente nesta situação.</p><p><strong>E)</strong> Incorreta - Aspiração manual é menos invasiva, mas a histeroscopia com biópsia é superior para diagnóstico, permitindo visualização direta e coleta dirigida.</p><p>Esta questão reforça a importância da investigação sistemática do sangramento pós-menopausa, seguindo as diretrizes brasileiras de 2025.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "A causa mais comum de sangramento vaginal em mulheres na pós-menopausa é:",
+      "alternativas": [
+        "Mioma uterino;",
+        "Atrofia endometrial;",
+        "Neoplasia de endométrio;",
+        "Endometrite;",
+        "Pólipo endometrial."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta é uma questão direta que avalia seu conhecimento epidemiológico sobre causas de sangramento vaginal pós-menopausa.</p><p><strong>A resposta correta é B - Atrofia endometrial.</strong></p><p>Vamos entender: na pós-menopausa, a privação estrogênica causa atrofia do endométrio e do trato genital inferior. Esta atrofia resulta em mucosa vaginal fina, frágil e susceptível a microtraumas, que podem causar sangramento vaginal.</p><p>Embora a atrofia seja a causa mais comum, é importante lembrar que TODO sangramento pós-menopausa deve ser investigado, pois pode ser sinal de malignidade endometrial.</p><p>Analisando as alternativas:</p><p><strong>A)</strong> Incorreta - Miomas geralmente diminuem na pós-menopausa devido à queda estrogênica.</p><p><strong>B)</strong> Correta - Atrofia endometrial é realmente a causa mais comum de sangramento vaginal pós-menopausa.</p><p><strong>C)</strong> Incorreta - Neoplasia de endométrio é uma causa importante, mas não a mais comum.</p><p><strong>D)</strong> Incorreta - Endometrite é menos comum na pós-menopausa.</p><p><strong>E)</strong> Incorreta - Pólipos endometriais podem causar sangramento, mas não são a causa mais frequente.</p><p>Esta questão enfatiza que, embora a atrofia seja a causa mais comum, a investigação é mandatória para descartar neoplasia, seguindo as diretrizes do MS 2025 para manejo de sangramento pós-menopausa.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_SangramentoUterinoAnormal",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe",
+        "Ginecologia_GinecologiaGeral"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "O efeito Prozona ocorre com maior frequência em qual das seguintes infecções sexualmente transmissíveis (ISTs):",
+      "alternativas": [
+        "Donovanose;",
+        "Cancro mole;",
+        "Herpes genital;",
+        "Sífilis;",
+        "Linfogranuloma venéreo."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o fenômeno do efeito Prozona (ou zona de prozone) em infecções sexualmente transmissíveis.</p><p><strong>A resposta correta é D - Sífilis.</strong></p><p>O efeito Prozona é um fenômeno imunológico onde altas concentrações de anticorpos interferem na aglutinação, produzindo falso-negativo nos testes sorológicos. Isso ocorre porque os anticorpos em excesso saturam os sítios antigênicos, impedindo a formação de pontes de conexão necessárias para a aglutinação.</p><p>Na sífilis, este fenômeno é mais frequente devido às características da resposta imune específica contra o <em>Treponema pallidum</em>. O teste VDRL (Venereal Disease Research Laboratory) é particularmente suscetível ao efeito Prozona, que pode ocorrer em 1-2% dos casos, especialmente em sífilis secundária onde há altas titulações de anticorpos.</p><p>Para contornar este efeito, o laboratório dilui a amostra e repete o teste, procedimento padrão no diagnóstico de sífilis.</p><p>Analisando as alternativas:</p><p><strong>A)</strong> Incorreta - Donovanose raramente apresenta efeito Prozona.</p><p><strong>B)</strong> Incorreta - Cancro mole não é conhecido por efeito Prozona significativo.</p><p><strong>C)</strong> Incorreta - Herpes genital não apresenta este fenômeno.</p><p><strong>D)</strong> Correta - Sífilis é a IST mais associada ao efeito Prozona.</p><p><strong>E)</strong> Incorreta - Linfogranuloma venéreo não tem este fenômeno como característica.</p><p>Esta questão testa conhecimento sobre fenômenos imunológicos em ISTs, relevante para a prática clínica e interpretação de exames laboratoriais.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua",
+        "Ginecologia_InfeccoesEmGinecologia_UlcerasGenitais_UlcerasInfecciosasDeCausaSexua_Sifilis"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "O diafragma pélvico feminino é formado pelos músculos:",
+      "alternativas": [
+        "Coccígeo e obturador externo;",
+        "Isquiorretal e puborretal;",
+        "Puborretal e obturador interno;",
+        "Levantador do ânus e coccígeo;",
+        "Iliococcígeo e obturador externo."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da INTO 2022 avalia conhecimentos fundamentais de anatomia pélvica feminina, especificamente sobre a composição do diafragma pélvico.</p><p>O diafragma pélvico feminino constitui o assoalho muscular da cavidade pélvica, sendo responsável por sustentar os órgãos pélvicos e permitir o controle voluntário da micção e evacuação. Sua estrutura é composta por dois músculos principais que working em conjunto para formar esta barreira muscular.</p><p><strong>Análise das alternativas:</strong></p><p>A) INCORRETA: O músculo coccígeo participa do diafragma pélvico, porém o obturador externo não faz parte desta estrutura - ele é um músculo do compartimento anterior da coxa.</p><p>B) INCORRETA: O músculo isquiorretal (ou levantador do ânus) compõe o diafragma, mas o puborretal é uma parte do levantador do ânus, não um músculo separado formando o diafragma.</p><p>C) INCORRETA: O puborretal é componente do levantador do ânus, e o obturador interno não participa da formação do diafragma pélvico.</p><p>D) CORRETA: O levantador do ânus e o coccígeo são os dois músculos que formam o diafragma pélvico feminino. O levantador do ânus é o componente principal, enquanto o coccígeo complementa sua ação.</p><p>E) INCORRETA: O iliococcígeo é parte do levantador do ânus, não um músculo isolado, e o obturador externo não integra o diafragma pélvico.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>D</strong>, pois o diafragma pélvico feminino é formado pelos músculos levantador do ânus e coccígeo.",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaBasica",
+        "Ginecologia_GinecologiaBasica_AnatomiaDoTratoGenitalFeminino"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Uma gestante de 26 semanas apresenta um segundo episódio de herpes genital. Visando evitar a transmissão vertical, a conduta correta, segundo o Ministério da Saúde, seria:",
+      "alternativas": [
+        "Tratar episódio atual, somente;",
+        "Realizar profilaxia supressiva a partir de 36 semanas;",
+        "Realizar profilaxia supressiva na semana que antecede a data provável do parto;",
+        "Realizar profilaxia supressiva a partir de 28 semanas somente se houver recorrência do quadro;",
+        "Administrar aciclovir venoso uma hora antes do parto."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da INTO 2022 avalia o manejo de herpes genital em gestantes, especificamente o protocolo de profilaxia para prevenção da transmissão vertical.</p><p>O herpes genital durante a gestação representa risco significativo para o concepto, especialmente na infecção primária ou em episódios recorrentes próximos ao parto. O Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde estabelece diretrizes específicas para o manejo de gestantes com história de herpes genital.</p><p><strong>Análise das alternativas:</strong></p><p>A) INCORRETA: O tratamento apenas do episódio atual é insuficiente, pois não previne episódios recorrentes próximos ao parto, que representam maior risco de transmissão.</p><p>B) CORRETA: Segundo o MS, a profilaxia supressiva com aciclovir deve ser iniciada a partir de 36 semanas de gestação em mulheres com história de herpes genital. Esta estratégia reduz a frequência e intensidade dos episódios recorrentes no final da gestação.</p><p>C) INCORRETA: A profilaxia deve iniciar em 36 semanas, não apenas na semana que antecede o parto, pois precisa de tempo para ser efetiva na prevenção de surtos.</p><p>D) INCORRETA: A profilaxia supressiva deve ser realizada independente da presença de sintomas, não apenas se houver recorrência.</p><p>E) INCORRETA: O aciclovir venoso não é indicado rotineiramente para profilaxia. A via oral é preferida para profilaxia supressiva.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>B</strong>, conforme diretrizes do Ministério da Saúde para profilaxia supressiva de herpes genital em gestantes.",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi",
+        "Obstetricia_DoencasAssociadasAGestacao_DoencasInfecciosasNaGestacaoHi_HerpesNaGestacao",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Sobre as alterações fisiológicas da gravidez, marque a alternativa incorreta:",
+      "alternativas": [
+        "O eritema palmar predomina nas eminências tentares e hipotênares e tende a piorar com a evolução da gravidez;",
+        "Com o intuito de corrigir seu eixo corporal, ocorre um aumento da lordose lombar, aumento da base de sustentação e consequentemente, espasmos da musculatura intervertebral;",
+        "Do ponto de vista respiratório, nota-se um aumento da capacidade residual funcional, assim como da pCO2 arterial;",
+        "A frequência cardíaca materna aumenta cerca de 10 a 15bpm, com o pico do débito cardíaco ocorrendo em torno de 24 semanas;",
+        "O aumento da globulina carreadora de hormônios tireoidianos (TBG), leva a um aumento compensatório dos níveis de T3 e T4."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da INTO 2022 avalia o conhecimento sobre as modificações fisiológicas que ocorrem durante a gestação. O enunciado solicita especificamente a alternativa <em>incorreta</em>, necessitando identificação do dado fisiopatológico que não corresponde à realidade da gravidez.</p><p>Durante a gestação, o organismo materno passa por importantes adaptações para sustentar o desenvolvimento fetal. Estas modificações abrangem sistemas cardiovascular, respiratório, endócrino e musculoesquelético.</p><p><strong>Análise das alternativas:</strong></p><p>A) CORRETA: O eritema palmar realmente predomina nas eminências tenar e hipotenar e tende a piorar durante a evolução da gravidez devido ao aumento do fluxo sanguíneo e alterações hormonais.</p><p>B) CORRETA: O aumento da lordose lombar, ampliação da base de sustentação e espasmos intervertebrais são adaptações posturais esperadas na gravidez.</p><p>C) INCORRETA: A capacidade residual funcional <em>diminui</em> durante a gravidez devido ao crescimento uterino que eleva o diafragma. A pCO2 arterial também diminui (não aumenta) devido à hiperventilação alveolar compensatória para atender as demandas metabólicas aumentadas.</p><p>D) CORRETA: A frequência cardíaca materna realmente aumenta 10-15 bpm, com pico do débito cardíaco em torno de 24 semanas de gestação.</p><p>E) CORRETA: O aumento da globulina carreadora de hormônios tireoidianos (TBG) leva a aumento compensatório dos níveis de T3 e T4 total, embora a fração livre permaneça normal.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>C</strong>, pois representa a única afirmação fisiologicamente incorreta sobre as modificações respiratórias da gravidez.",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_ObstetriciaFisiologica",
+        "Obstetricia_ObstetriciaFisiologica_ModificacoesFisiologicasDaGest"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Uma paciente de 30 anos, GIIIP2A0, está com 12 semanas de gestação e vem para a realização do exame morfológico do primeiro trimestre. Na ultrassonografia, observa-se os seguintes parâmetros: comprimento cabeça nádega = 50mm, 140BPM, translucência nucal = 5mm, osso nasal ausente, ducto venoso com onda A negativa, placenta anterior grau 0. A conduta para o caso é:",
+      "alternativas": [
+        "Encaminhar para realização de biópsia do vilo corial;",
+        "Encaminhar para a realização de amniocentese;",
+        "Solicitar dosagem de BHCG e PAPP-A que confirmam o diagnóstico;",
+        "Informar a paciente que o exame está normal;",
+        "Explicar que a translucência nucal é específica para síndrome de Down, o que praticamente exclui a síndrome de Edwards ou Patau como diagnósticos."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da INTO 2022 avalia a capacidade de interpretação de achados ultrassonográficos do primeiro trimestre e reconhecimento de indicações para procedimentos invasivos de diagnóstico pré-natal.</p><p>O exame morfológico de primeiro trimestre com 12 semanas deve incluir avaliação da translucência nucal, frequência cardíaca fetal, osso nasal e parâmetros bioquímicos. Os achados descritos são altamente sugestivos de trissomia do cromossomo 21 (Síndrome de Down).</p><p><strong>Parâmetros alterados identificados:</strong></p><p>• Translucência nucal: 5mm (normal até 3mm)</p><p>• Osso nasal ausente (marcador major para trissomias)</p><p>• Ducto venoso com onda A negativa (alteração hemodinâmica associada a cromossomopatias)</p><p><strong>Análise das alternativas:</strong></p><p>A) CORRETA: A biópsia do vilo corial está indicada quando há risco aumentado para trissomias, especialmente em gestações de até 14 semanas. É o procedimento de choice para confirmação diagnóstica precoce.</p><p>B) INCORRETA: A amniocentese é indicada preferencialmente após 15 semanas, quando há maior volume de líquido amniótico e menor risco de complicações.</p><p>C) INCORRETA: A dosagem de BHCG e PAPP-A não confirma diagnóstico, apenas estima risco. Com os achados ultrassonográficos sugerivos, a confirmação diagnóstica é necessária.</p><p>D) INCORRETA: O exame apresenta múltiplas alterações sugestivas de cromossomopatia, não pode ser considerado normal.</p><p>E) INCORRETA: A translucência nucal aumentada está associada a múltiplas trissomias, não apenas Síndrome de Down. Não exclui Síndrome de Edwards ou Patau.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>A</strong>, justificando encaminhamento para biópsia do vilo corial para confirmação diagnóstica.",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_UltrassomEmObstetriciaUsg",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_MedicinaFetalInfeccoesCongenit"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "O principal fator de risco associado à gravidez ectópica é:",
+      "alternativas": [
+        "Etnia caucasiana;",
+        "Adenomiose;",
+        "Idade maior que 25 anos;",
+        "Sexarca tardia;",
+        "Doença inflamatória pélvica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da INTO 2022 avalia conhecimento sobre fatores de risco para gravidez ectópica, condição que representa importante causa de morbimortalidade materna e requer identificação de fatores predisponentes para prevenção e diagnóstico precoce.</p><p>A gravidez ectópica ocorre quando o blastocisto implanta-se fora da cavidade uterina, sendo a localização tubária a mais frequente. Múltiplos fatores podem predispor a esta condição, sendo alguns modificáveis e outros não.</p><p><strong>Análise das alternativas:</strong></p><p>A) INCORRETA: Não há evidência de que a etnia caucasiana seja fator de risco para gravidez ectópica. A literatura não demonstra diferença significativa entre grupos étnicos para esta condição.</p><p>B) INCORRETA: A adenomiose, embora seja doença uterina, não está diretamente associada ao aumento do risco de gravidez ectópica. Seus principais riscos são relacionados a alterações na implantação uterina normal.</p><p>C) INCORRETA: A idade superior a 25 anos não constitui fator de risco isolado. Na verdade, mulheres mais jovens podem ter maior risco relacionado a fatores comportamentais e infecções.</p><p>D) INCORRETA: A sexarca tardia não é fator de risco para gravidez ectópica. Pode estar associada a outros aspectos reprodutivos, mas não diretamente à implantação ectópica.</p><p>E) CORRETA: A doença inflamatória pélvica (DIP) representa o principal fator de risco modificável para gravidez ectópica. A inflamação tubária causada por agentes como clamídia e gonococo pode resultar em cicatrizes, obstrução e alterações na motilidade tubária, predispondo à implantação ectópica.</p><p><strong>Veredito final:</strong> A resposta correta é <strong>E</strong>, pois a doença inflamatória pélvica é o principal fator de risco associado à gravidez ectópica devido às alterações estruturais e funcionais que promove nas tubas uterinas.",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoPrimeiraMetade_GestacaoEctopica"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Considerando um recém-nascido de 32 semanas com peso de 1700g, filho de mãe HbsAg negativa, segundo o Programa Nacional de Imunização (PNI), a vacina para Hepatite B deverá ser aplicada da seguinte forma:",
+      "alternativas": [
+        "Primeira dose nas primeiras 12 horas e complementar com mais três doses (2,4 e 6 meses);",
+        "Administrar a primeira dose nas primeiras 12 horas e complementar com mais duas doses (2 e 4 meses);",
+        "Por ter idade gestacional <33 semanas, a vacinação deve ser adiada até que a idade gestacional corrigida seja de 36 semanas;",
+        "Devido ao baixo peso ao nascer (<2000g), o neonato deverá receber uma dose de reforço, totalizando cinco doses;",
+        "O baixo peso e idade gestacional são contraindicações à vacina neste momento, estando indicada a imunoglobulina humana anti-hepatite B."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia seu conhecimento sobre o esquema vacinal contra Hepatite B em recém-nascidos prematuros de baixo peso, seguindo as diretrizes do Programa Nacional de Imunização (PNI).</p><p><strong>A resposta correta é A - Primeira dose nas primeiras 12 horas e complementar com mais três doses (2, 4 e 6 meses).</strong></p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>ALTERNATIVA A (CORRETA):</strong> Para RN prematuros (32 semanas) de baixo peso (1700g), filhos de mães HBsAg negativas, o PNI estabelece que a primeira dose da vaccine Hepatite B deve ser administrada nas primeiras 12 horas de vida, seguida de três doses adicionais aos 2, 4 e 6 meses de idade. Este esquema garante proteção adequada mesmo em recém-nascidos com sistema imunológico menos desenvolvido.</p><p><strong>ALTERNATIVA B (INCORRETA):</strong> A alternativa propõe apenas duas doses complementares (2 e 4 meses), totalizando três doses. No entanto, o esquema recomendado para prematuros de baixo peso inclui quatro doses no total (primeira + três complementares) para garantir soroconversão adequada.</p><p><strong>ALTERNATIVA C (INCORRETA):</strong> A idade gestacional corrigida de 36 semanas não é um critério para adiar a vacinação. O PNI recomenda vaccinar todos os RN prematuros, independentemente da idade gestacional, seguindo o esquema específico para baixo peso.</p><p><strong>ALTERNATIVA D (INCORRETA):</strong> Although o baixo peso requer esquema estendido, não são necessárias cinco doses totais. O esquema correto inclui quatro doses (primeira + três complementares). Doses adicionais não melhoram a resposta imunológica e podem aumentar riscos de eventos adversos.</p><p><strong>ALTERNATIVA E (INCORRETA):</strong> Baixo peso e idade gestacional não são contraindicações à vaccine. A vaccine Hepatite B é segura em RN prematuros. A immunoglobulina anti-HBsAg é indicada apenas para RN filhos de mães HBsAg positivas ou com Hepatite B aguda no terceiro trimestre.</p><p><strong>Veredito final:</strong> A alternativa A é correta pois segue as diretrizes do PNI 2022 para vacinação de RN prematuros de baixo peso contra Hepatite B, garantindo proteção adequada através de esquema vacinal apropriado para essa população de risco.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Um recém-nascido de 40 semanas, parto cesáreo, Apgar 8 no primeiro minuto, apresenta frequência respiratória de 80irpm, gemência, batimento de aletas nasais e uso de musculatura intercostal. A radiografia de tórax evidenciou congestão hilar, aumento da trama vascular, derrame pleural e hiperinsuflação. Após 48 horas de pressão positiva contínua na via aérea (CPAP), o recém-nascido ficou assintomático. O diagnóstico mais provável neste caso é:",
+      "alternativas": [
+        "Aspiração meconial;",
+        "Pneumonia nosocomial;",
+        "Cardiopatia congênita não cianótica;",
+        "Doença da membrana hialina;",
+        "Síndrome do pulmão úmido neonatal."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia seu conhecimento sobre diagnóstico diferencial de desconforto respiratório neonatal, especificamente distinguindo entre síndrome do pulmão úmido e outras causas de insuficiência respiratória em recém-nascidos.</p><p><strong>A resposta correta é E - Síndrome do pulmão úmido neonatal.</strong></p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>ALTERNATIVA A (INCORRETA):</strong> A aspiração meconial usually cursa com documentação de líquido meconial no parto, padrão de hiperinsuflação e atelectasias, mas não se resolve espontaneamente em 48 horas com CPAP. O quadro é mais prolongado e grave.</p><p><strong>ALTERNATIVA B (INCORRETA):</strong> Pneumonia nosocomial occurre após 48-72 horas de internação, geralmente associada a ventilação mecânica prolongada. Neste caso, o RN apresentou sintomas imediatos e resolução rápida, excluindo esta hipótese.</p><p><strong>ALTERNATIVA C (INCORRETA):</strong> Cardiopatias congênitas não cianóticas typically apresentam outros sinais como sopro cardíaco, alterações no ECG e não se resolvem com CPAP isoladamente. Os achados radiológicos não são compatíveis com cardiopatia estrutural.</p><p><strong>ALTERNATIVA D (INCORRETA):</strong> A doença da membrana hialina (DMH) é típica de RN prematuros <32 semanas, apresentando padrão de reticulogranular difuso na radiografia e não se resolve em 48 horas. Além disso, este RN é a termo (40 semanas).</p><p><strong>ALTERNATIVA E (CORRETA):</strong> A síndrome do pulmão úmido (SPU) é caracterizada por: início imediato após o nascimento, uso de musculatura acessória, frequência respiratória elevada, achados radiológicos específicos (congestão hilar, aumento da trama vascular, derrame pleural, hiperinsuflação) e, sobretudo, resolução rápida com suporte respiratório não invasivo (CPAP) em 24-48 horas. Este padrão é clássico da SPU em RN a termo.</p><p><strong>Veredito final:</strong> A alternativa E é correta pois o quadro clínico apresentado é típico da síndrome do pulmão úmido neonatal: RN a termo com desconforto respiratório imediato, achados radiológicos característicos e resolução rápida com CPAP, diferenciando-se das outras causas de insuficiência respiratória neonatal.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_DisturbiosRespiratoriosDoPerio",
+        "Pediatria_PneumologiaPediatrica",
+        "ClinicaMedica_Pneumologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Verificou-se que um recém-nascido a termo se encontrava hipotônico e em apneia. Imediatamente, o recém-nascido foi levado à unidade de calor radiante, onde foi feita secagem, assim como aspiração de vias aéreas e posicionamento correto da cabeça. Após 30 segundos, o recém-nascido se manteve em apneia e com uma frequência cardíaca (FC) de 45bpm. A conduta subsequente é:",
+      "alternativas": [
+        "Massagem cardíaca pela técnica dos dois polegares, já que a FC está abaixo de 60bpm;",
+        "Cateterismo umbilical para administração de adrenalina;",
+        "Ventilação com pressão positiva através de balão auto inflável com FiO2 de 100%;",
+        "Ventilação com máscara facial e balão em ar ambiente;",
+        "Intubação orotraqueal."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia seu conhecimento sobre reanimação neonatal, especificamente o protocolo de atuação em caso de apneia persistente após as medidas iniciais de reanimação em RN.</p><p><strong>A resposta correta é D - Ventilação com máscara facial e balão em ar ambiente.</strong></p><p>Vamos analisar detalhadamente cada alternativa de acordo com o protocolo de reanimação neonatal:</p><p><strong>ALTERNATIVA A (INCORRETA):</strong> A massagem cardíaca está indicated apenas quando a frequência cardíaca (FC) <60bpm após pelo menos 30 segundos de ventilação efetiva com oxigênio a 100%. Nesta situação, o RN ainda não recebeu ventilação adequada, então a massagem está premature.</p><p><strong>ALTERNATIVA B (INCORRETA):</strong> O cateterismo umbilical para administração de medicamentos está indicated apenas após estabelecer ventilação adequada e compressões torácicas. Na ausência de ventilação prévia, esta é uma measure extremadamente premature.</p><p><strong>ALTERNATIVA C (INCORRETA):</strong> A ventilação com FiO2 de 100% é utilizada only after establishing effective ventilation e é indicada primarily para RN <32 semanas ou com sinais de cianose persistente. Em RN a termo com apneia, inicia-se com ar ambiente (FiO2 21%).</p><p><strong>ALTERNATIVA D (CORRETA):</strong> Segundo o protocolo de reanimação neonatal, após 30 segundos de medidas iniciais (secagem, aspiração, posicionamento) mantendo-se apneia e FC <100bpm, a próxima step é ventilar com pressão positiva usando máscara facial e balão em ar ambiente por 30 segundos. Se não houver melhora, então progresses para FiO2 100% e outras medidas.</p><p><strong>ALTERNATIVA E (INCORRETA):</strong> A intubação orotraqueal está indicated quando há falha na ventilação com máscara e balão após 30-60 segundos, ou em casos específicos como previsão de ventilação prolongada. Não é a primeira choice na ausência de tentativa prévia de ventilação por máscara.</p><p><strong>Veredito final:</strong> A alternativa D é correta pois segue rigidamente o algoritmo de reanimação neonatal: após 30 segundos de medidas iniciais com manutenção de apneia e FC baixa, o próximo step obrigatório é a ventilação com pressão positiva usando máscara facial e balão em ar ambiente por 30 segundos antes de progress para measures mais invasivas.</p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia",
+        "Pediatria_Neonatologia_ReanimacaoNeonatal",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Um menino de três anos é trazido pela mãe para consulta. Ela relata ter notado uma massa no flanco direito do filho durante o banho. A criança encontra-se em bom estado geral e interage com o examinador. Chama atenção no exame físico uma pressão arterial de 160x100mmHg e pupilas desproporcionalmente grandes em comparação ao tecido iriano, bilateralmente. O diagnóstico mais provável neste caso é:",
+      "alternativas": [
+        "Linfoma de Burkitt;",
+        "Tumor de Wilms;",
+        "Neuroblastoma;",
+        "Sarcoma de Ewing;",
+        "Doença de Ormond."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia seu conhecimento sobre tumores abdominais pediátricos, especificamente diferenciando entre as principais massas abdominais malignas da infância e suas manifestações sistêmicas características.</p><p><strong>A resposta correta é B - Tumor de Wilms.</strong></p><p>Vamos analisar sistematicamente cada alternativa considerando a apresentação clínica típica de cada tumor:</p><p><strong>ALTERNATIVA A (INCORRETA):</strong> O linfoma de Burkitt typically presenta como massa abdominal rapidamente progressiva, frequentemente com sintomas obstrutivos intestinais e comprometimento de múltiplos sítios. Não cursa com hipertensão arterial importante ou alterações pupilares características.</p><p><strong>ALTERNATIVA B (CORRETA):</strong> O tumor de Wilms (nefroblastoma) é caracterizado por: apresentação em criança jovem (pico 2-3 anos), massa abdominal unilateral (flanco), hipertensão arterial em 50-60% dos casos, pupilas midriáticas desproporcionais (decorrente da produção de catecolaminas pelo tumor), e geralmente bom estado geral inicialmente. Esta apresentação é classic para nefroblastoma.</p><p><strong>ALTERNATIVA C (INCORRETA):</strong> O neuroblastoma typically apresenta-se em crianças mais jovens (pico 18 meses), com massa abdominal que pode ser móvel, mas cursa frequentemente com sintomas sistêmicos como diarrhea (VIP sécreto), hipertensão, e mais comumente com sinais neurológicos (ataxia, opsoclonus) em 2-3% dos casos. A midriase desproporcional não é característica típica.</p><p><strong>ALTERNATIVA D (INCORRETA):</strong> O sarcoma de Ewing typically apresenta-se como massa óssea ou de partes moles, não como massa abdominal primária. Pode cursar com febre e dor, mas não com hipertensão arterial ou alterações pupilares características.</p><p><strong>ALTERNATIVA E (INCORRETA):</strong> A doença de Ormond (fibrose retroperitoneal) é uma condição benigna de fibrose retroperitoneal que pode causar hidronefrose e hipertensão, mas typically apresenta-se em adultos jovens e não cursa com massa abdominal palpável ou alterações pupilares.</p><p><strong>Veredito final:</strong> A alternativa B é correta pois apresenta a tríade típica do tumor de Wilms: criança de 3 anos, massa abdominal em flanco, hipertensão arterial importante, com pupilas midriáticas desproporcionais sugerindo produção de catecolaminas pelo tumor, diferenciando-se das outras opções diagnósticas.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Pediatria_Neonatologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia",
+        "Cirurgia_Urologia_NeoplasiasUrologicas"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Uma menina de 10 anos de idade apresenta classificação de Tanner M3P2. A mãe está preocupada porque sua filha ainda não menstruou, apesar de já ter pelos pubianos. Neste momento, você deve informar à mãe que:",
+      "alternativas": [
+        "Sua filha apresenta atraso puberal, pois a menstruação geralmente coincide com o estágio M2 de Tanner;",
+        "Sua filha apresenta atraso puberal, já que o esperado é que a mama e a pilificação pubiana deveriam estar no mesmo estágio (M3P3);",
+        "Sua filha apresenta puberdade precoce, pois o esperado em meninas é que a puberdade comece entre os 11 e 16 anos;",
+        "Sua filha apresenta puberdade normal;",
+        "Sua filha apresenta puberdade precoce e, por isso, terá baixa estatura no futuro."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca INTO 2022 avalia seu conhecimento sobre desenvolvimento puberal normal, especificamente o timing e sequenciamento dos marcos da puberdade em meninas segundo os estágios de Tanner.</p><p><strong>A resposta correta é D - Sua filha apresenta puberdade normal.</strong></p><p>Vamos analisar detalhadamente cada alternativa considerando a cronologia normal do desenvolvimento puberal:</p><p><strong>ALTERNATIVA A (INCORRETA):</strong> A menstruação typically não coincide com o estágio M2 de Tanner. A menarca usually occurs no final do desenvolvimento mamário (M3-M4), não no início. No estágio M2, há apenas broto mamário inicial sem desenvolvimento significativo.</p><p><strong>ALTERNATIVA B (INCORRETA):</strong> O desenvolvimento mamário e da pilificação pubiana não necessarily precisam estar no mesmo estágio simultaneamente. É normal que haja desassincronia entre diferentes características sexuais secundárias. O estágio M3P2 é completamente compatible com puberdade normal.</p><p><strong>ALTERNATIVA C (INCORRETA):</strong> A puberdade precoce é definida como início antes dos 8 anos em meninas. Uma menina de 10 anos com desenvolvimento puberal em curso não caracteriza puberdade precoce. A puberdade normal inicia-se entre 8-13 anos, com média de 11-12 anos.</p><p><strong>ALTERNATIVA D (CORRETA):</strong> A puberdade é completamente normal aos 10 anos. O estágio M3P2 indica: desenvolvimento mamário moderado (aréola e mama form estruturas distintas, maiores que o estágio M2) e pilificação pubiana escassa (poucos pelos longos, levemente pigmentados, reta). A ausência de menarca é normal, pois a primeira menstruação typically occurs 1-3 anos após o início da puberdade.</p><p><strong>ALTERNATIVA E (INCORRETA):</strong> Não há puberdade precoce aqui, e a puberdade normal não está associada a baixa estatura futura. Pelo contrário, o desenvolvimento puberal normal permite crescimento adequado. Preocupações sobre estatura only would be relevant se houvesse puberdade precoce verdadeira (antes dos 8 anos).</p><p><strong>Veredito final:</strong> A alternativa D é correta pois descreve adequadamente a puberdade normal: menina de 10 anos (idade normal para início puberal), desenvolvimento mamário M3 e pilificação P2, com ausência de менarca sendo normal nesta fase do desenvolvimento.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Puberdade",
+        "Pediatria_EndocrinologiaPediatrica",
+        "ClinicaMedica_Endocrinologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "De acordo com a Organização Mundial de Saúde (OMS), o elemento que está relacionado a uma diminuição na recorrência de diarreia aguda é:",
+      "alternativas": [
+        "Cobre;",
+        "Vitamina E;",
+        "Manganês;",
+        "Vitamina D;",
+        "Zinco."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da banca INTO explora o conhecimento sobre micronutrientes e sua relação com a saúde intestinal, especificamente enfocando a Organização Mundial da Saúde (OMS).</p><p><strong>O que a banca buscou avaliar:</strong> O conhecimento sobre quais micronutrientes estão associados à prevenção de diarreia aguda, um tema fundamental na pediatria e saúde pública.</p><p><strong>Resposta correta: E - Zinco.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) Cobre:</strong> O cobre atua principalmente no sistema hematológico e nervoso. Não tem relação direta com a prevenção de diarreia aguda.</p><p><strong>B) Vitamina E:</strong> É um antioxidante importante, mas não tem eficácia comprovada na redução de recorrência de diarreia aguda.</p><p><strong>C) Manganês:</strong> Participa do metabolismo ósseo e da formação de tecidos conectivos, sem relação comprovada com diarreia.</p><p><strong>D) Vitamina D:</strong> Fundamental para saúde óssea e imunidade inata, mas não é o micronutriente mais associado à prevenção de diarreia.</p><p><strong>E) Zinco:</strong> Conforme diretrizes da OMS, a suplementação de zinco demonstrou eficácia na redução da duração e severidade de episódios de diarreia aguda, além de reduzir a recorrência. O zinco é essencial para a integridade da mucosa intestinal e função imunológica.</p><p><strong>Raciocínio clínico:</strong> O zinco é considerado um dos micronutrientes mais importantes na prevenção de diarreia, sendo recomendado pela OMS em protocolos de manejo de crianças com diarreia aguda.</p><p><strong>Veredito:</strong> A alternativa E está correta conforme diretrizes da OMS 2025 sobre manejo de diarreia aguda em pediatria.</p>",
+      "filterIds": [
+        "Pediatria",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_DiagnosticoNutricional",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral",
+        "Pediatria_Puericultura_PuericulturaGeral_ProfilaxiasFerroVitaminasDEA"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "O diagnóstico de maus tratos e violência contra a criança e adolescente só é feito por médicos com alto grau de suspeição para o caso. Uma das situações mais comuns é a \"síndrome do bebê sacudido\", cujo achado mais sugestivo ao exame físico é:",
+      "alternativas": [
+        "Fratura de ossos longos;",
+        "Equimoses na região da mastoide;",
+        "Hemorragia retiniana;",
+        "Lacerações genitais;",
+        "Hematoma periumbilical"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda um tema extremamente importante da pediatria: a identificação de maus tratos em crianças, especificamente a síndrome do bebê sacudido.</p><p><strong>O que a banca avaliou:</strong> O conhecimento sobre sinais físicos característicos do traumatismo crânio-encefálico não acidental em lactentes.</p><p><strong>Resposta correta: C - Hemorragia retiniana.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Fratura de ossos longos:</strong> Podem ocorrer em síndrome do bebê sacudido, mas não são o achado mais sugestivo. São comuns em traumatismos acidentais também.</p><p><strong>B) Equimoses na região da mastoide:</strong> Podem indicar trauma direto, mas não são patognomônicos da síndrome do bebê sacudido.</p><p><strong>C) Hemorragia retiniana:</strong> Este é o achado mais característico e sugestivo da síndrome do bebê sacudido. As hemorragias retinianas são profundas, múltiplas e extensas, resultantes das forças de aceleração-desaceleração que causam ruptura de vasos retinianos. São encontradas em mais de 85% dos casos confirmados.</p><p><strong>D) Lacerações genitais:</strong> Relacionam-se mais a abuso sexual do que a traumatismo por shakeshake.</p><p><strong>E) Hematoma periumbilical:</strong> Pode indicar trauma abdominal (síndrome do bebê sacudido pode cursar com traumatismo abdominal), mas não é o achado mais sugestivo.</p><p><strong>Raciocínio clínico:</strong> A síndrome do bebê sacudido resulta de movimentos de aceleração-desaceleração do crânio em lactentes, causando lesão axonal difusa, edema cerebral e hemorragias intraoculares. As hemorragias retinianas são fortemente sugestivas e diferenciam de traumatismos acidentais.</p><p><strong>Veredito:</strong> A alternativa C é a resposta correta, sendo um achado fundamental no diagnóstico desta grave forma de violência.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_MausTratosACriancasEAdolescent",
+        "Outros_MedicinaLegal",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Uma criança de seis anos apresenta febre, odinofagia e dor em flanco esquerdo há 15 dias. Ao exame físico, observa-se faringoamigdalite eritemato-pultácea, além de linfonodomegalia cervical, axilar e epitroclear. O exame do abdome não foi possível, pois a criança não cooperou. Com base no enunciado, o diagnóstico mais provável neste caso seria:",
+      "alternativas": [
+        "Faringoamigdalite estreptocócica;",
+        "Sífilis secundária;",
+        "Doença de Still;",
+        "Mononucleose infecciosa;",
+        "Estomatite herpética."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão apresenta um caso clínico complexo que exige conhecimento sobre diagnóstico diferencial em pediatria, especialmente doenças que cursam com linfonodomegalia generalizada.</p><p><strong>O que a banca avaliou:</strong> A capacidade de correlacionar manifestações clínicas para chegar ao diagnóstico mais provável em pediatria.</p><p><strong>Resposta correta: D - Mononucleose infecciosa.</strong></p><p>Analisando o caso: Criança de 6 anos, febre e odinofagia há 15 dias, faringoamigdalite eritemato-pultácea, linfonodomegalia cervical, axilar e epitroclear (padrão generalizado).</p><p><strong>Análise das alternativas:</strong></p><p><strong>A) Faringoamigdalite estreptocócica:</strong> Pode causar odinofagia e adenopatia cervical, mas a duração de 15 dias e linfonodomegalia generalizada (incluindo epitroclear) são atípicas.</p><p><strong>B) Sífilis secundária:</strong> Pode cursar com adenopatia generalizada, mas é rara em crianças e geralmente não causa faringoamigdalite importante.</p><p><strong>C) Doença de Still:</strong> Caracteriza-se por febre alta, artrite e exantema, não se apresentando tipicamente com faringoamigdalite pultácea.</p><p><strong>D) Mononucleose infecciosa:</strong> Causada por EBV em crianças, cursa com febre prolongada, odinofagia, faringoamigdalite (pode ser pultácea), e adenopatia cervical posterior característica. A linfonodomegalia generalizada (incluindo axilar e epitroclear) é comum em crianças com SMD.</p><p><strong>E) Estomatite herpética:</strong> Geralmente de início agudo, com lesões vesiculares e ulcerativas na mucosa oral, não cursando com adenopatia generalizada.</p><p><strong>Raciocínio clínico:</strong> A tríade febre prolongada + odinofagia com faringoamigdalite + adenopatia generalizada em uma criança de 6 anos é altamente sugestiva de mononucleose infecciosa pelo EBV.</p><p><strong>Veredito:</strong> A alternativa D é a resposta correta.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas_Mononucleose",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Numa criança de três anos com quadro de otite média aguda, qual dos achados abaixo não justifica, obrigatoriamente, o uso de antibiótico:",
+      "alternativas": [
+        "Otorreia purulenta;",
+        "Otalgia há mais de 48 horas;",
+        "Otalgia moderada a intensa;",
+        "Febre maior que 39ºC;",
+        "Otite média aguda bilateral."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda um tema atual e controverso da pediatria: a resistência antimicrobiana e critérios para prescrição de antibióticos em otite média aguda.</p><p><strong>O que a banca avaliou:</strong> Conhecimento sobre critérios específicos que indicam necessidade de antibiótico em otite média aguda em crianças.</p><p><strong>Resposta correta: E - Otite média aguda bilateral.</strong></p><p>Analisando cada alternativa conforme diretrizes atuais:</p><p><strong>A) Otorreia purulenta:</strong> Indica perfuração timpânica com processo infeccioso ativo, justificando antibiótico sistêmico.</p><p><strong>B) Otalgia há mais de 48 horas:</strong> Dor persistente indica processo inflamatório significativo, favorecendo uso de antibiótico.</p><p><strong>C) Otalgia moderada a intensa:</strong> Intensidade da dor é um critério que influencia na decisão terapêutica.</p><p><strong>D) Febre maior que 39ºC:</strong> Febre alta indica processo infeccioso significativo, justificando antibiótico.</p><p><strong>E) Otite média aguda bilateral:</strong> Embora seja um fator de risco para evolução desfavorável, isoladamente não justifica obrigatoriamente antibiótico. A conduta atual é individualizar o caso, considerando idade, intensidade dos sintomas e fatores de risco.</p><p><strong>Raciocínio clínico:</strong> As diretrizes atuais de otite média aguda (AAP/AAFP) enfatizam abordagem watchful waiting em muitos casos, mesmo em otite bilateral, especialmente se a criança está em bom estado geral. O diagnóstico não deve basear-se apenas na bilateralidade.</p><p><strong>Contexto atual:</strong> A questão reflete a mudança paradigmática no manejo de otite média aguda, com foco na resistência bacteriana e necessidade de uso criterioso de antibióticos.</p><p><strong>Veredito:</strong> A alternativa E é a resposta correta.</p>",
+      "filterIds": [
+        "Pediatria",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_EmergenciasPediatricas",
+        "Otros_Otorrinolaringologia",
+        "Otros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior",
+        "Otros_Otorrinolaringologia_InfeccoesDasViasAereasSuperior_Otites"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Em relação à profilaxia de pós-exposição ao sarampo, marque a alternativa correta:",
+      "alternativas": [
+        "A vacinação de bloqueio deve ser realizada, preferencialmente, dentro de 24 horas, mas pode ser feita em até 72 horas;",
+        "O uso de vitamina A em altas doses previne o aparecimento da doença, se administrado em até 48 horas após a exposição;",
+        "Menores de seis meses e imunodeprimidos graves devem fazer uso da imunoglobulina em até seis dias após o primeiro contato; o uso em grávidas está contraindicado;",
+        "Para otimizar a eficácia da vacinação de bloqueio pós exposição, gestantes devem fazer uso concomitante de ribavirina;",
+        "O sarampo faz parte das doenças de notificação compulsória, porém não das de notificação imediata."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre profilaxia de pós-exposição ao sarampo, tema fundamental em saúde pública e controle de epidemias.</p><p><strong>O que a banca avaliou:</strong> Conhecimento sobre medidas profiláticas específicas para sarampo e seus protocolos de aplicação.</p><p><strong>Resposta correta: A - A vacinação de bloqueio deve ser realizada, preferencialmente, dentro de 24 horas, mas pode ser feita em até 72 horas.</strong></p><p>Analisando cada alternativa:</p><p><strong>A) Vacinação de bloqueio:</strong> A alternativa está correta. A vacinação pós-exposição é mais eficaz quando administrada nas primeiras 24-72 horas após a exposição, antes do aparecimento dos sintomas. Esta é a conduta padrão recomendada pelo Ministério da Saúde.</p><p><strong>B) Vitamina A em altas doses:</strong> A vitamina A é usada no tratamento do sarampo para reduzir mortalidade e complicações, mas NÃO previne a doença se administrada profilaticamente.</p><p><strong>C) Imunoglobulina:</strong> Está incorreta em relação aos prazos. Para menores de 6 meses e imunodeprimidos, a imunoglobulina deve ser administrada em até 6 dias após a exposição, não apenas após o primeiro contato. Gestantes podem receber imunoglobulina.</p><p><strong>D) Ribavirina em gestantes:</strong> Não existe evidência para uso de ribavirina concomitante à vacinação de bloqueio em gestantes. Esta alternativa apresenta informação incorreta.</p><p><strong>E) Notificação compulsória:</strong> Está incorreta. O sarampo é doença de notificação compulsória IMEDIATA, tanto compulsória quanto imediata.</p><p><strong>Raciocínio clínico:</strong> A profilaxia pós-exposição ao sarampo baseia-se na vacinação de bloqueio nas primeiras 72 horas para pessoas suscetíveis, sendo essa medida fundamental para controle de surtos.</p><p><strong>Veredito:</strong> A alternativa A é a única completamente correta.</p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_Imunizacoesvacinacao",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas_Sarampo",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "MedicinaPreventiva_Epidemiologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Segundo dados do DATASUS 2019, a principal causa de mortalidade nas populações abaixo citadas, são, respectivamente: I - Homens de 50 a 59 anos; II - Mulheres de 30 a 39 anos; III - Menores de um ano.",
+      "alternativas": [
+        "I - Causas externas, II - Causas respiratórias, III - Malformações congênitas;",
+        "I - Aparelho cardiovascular, II - Neoplasias, III - Afecções no período neonatal;",
+        "I - Neoplasias, II - Gravidez, parto e puerpério, III - Aparelho respiratório;",
+        "I - Causas externas, II - Gravidez, parto e puerpério, III - Afecções no período neonatal;",
+        "I - Neoplasias, II - Causas respiratórias, III - Doenças infecto parasitárias."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca INTO avaliaram seu conhecimento sobre epidemiologia e mortalidade no Brasil, especificamente os padrões de causas de óbito por faixa etária conforme dados oficiais do Ministério da Saúde.</p><p>O desafio consiste em associar corretamente os três grupos populacionais às suas respectivas principais causas de morte, baseando-se em dados do DATASUS 2019.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> Incorreta. Para homens de 50-59 anos, causas externas (acidentes, violências) não são a principal causa - as doenças cardiovasculares predominam. Para mulheres de 30-39 anos, causas respiratórias não lideram, e para menores de 1 ano, malformações congênitas são importantes mas não a principal causa de óbito.</p><p><strong>Alternativa B:</strong> CORRETA. Homens de 50-59 anos têm o aparelho cardiovascular como principal causa de mortalidade (infarto, AVC, insuficiência cardíaca). Mulheres de 30-39 anos apresentam neoplasias como causa líder (câncer de mama, colo de útero, pulmão). Menores de 1 ano morrem principalmente por afecções no período neonatal (prematuridade, síndrome do desconforto respiratório, sepse neonatal).</p><p><strong>Alternativa C:</strong> Incorreta. As mulheres de 30-39 anos não têm gravidez/parto como principal causa de morte - isso ocorre principalmente em países em desenvolvimento com maior mortalidade materna. Para menores de 1 ano, doenças respiratórias não são a principal causa.</p><p><strong>Alternativa D:</strong> Incorreta. Replica os mesmos erros da alternativa A, trocando apenas a ordem das causas respiratórias.</p><p><strong>Alternativa E:</strong> Incorreta. Combina incorretamente as três faixas etárias, atribuindo neoplasias para homens (que têm doenças cardiovasculares) e causas respiratórias para mulheres (que têm neoplasias).</p><p><strong>Veredito:</strong> A alternativa B está correta, refletindo a realidade epidemiológica brasileira conforme dados oficiais do MS 2019.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_IntroducaoAEpidemiologia",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedidasDeSaudeColetiva"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Um estudo hipotético num escritório de advocacia avaliou se o hábito de usar máscara diminuiu a incidência da COVID-19. Dos 2000 indivíduos selecionados no escritório, 1000 utilizavam máscara o tempo todo, enquanto o restante (grupo controle) não utilizava máscara durante o expediente. Após um mês de seguimento, observou-se o aparecimento da doença em 50 pessoas do grupo com intervenção e em 50% das pessoas no grupo controle. Com base nos dados, podemos que o uso de máscara reduziu o risco de infecção pelo SARS-COV-2 em:",
+      "alternativas": [
+        "80.00%",
+        "65.00%",
+        "45.00%",
+        "20.00%",
+        "5.00%"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de interpretar dados de estudo clínico e calcular medidas de associação, especificamente redução do risco relativo na prevenção da COVID-19.</p><p>O estudo apresenta um desenho de coorte com grupo intervenção (uso de máscara) versus grupo controle (sem máscara), permitindo calcular a eficácia da intervenção.</p><p><strong>Dados do estudo:</strong></p><p>• Grupo com máscara: 50 casos em 1000 pessoas = 5% de incidência</p><p>• Grupo controle: 50% de 1000 pessoas = 500 casos = 50% de incidência</p><p>• Risco relativo = 0,05/0,50 = 0,10 (o uso de máscara reduz o risco em 90%)</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (80%):</strong> Incorreta. Superestima a eficácia. Um cálculo rápido mostra: se o grupo controle tem 50% e o grupo com máscara tem 5%, a redução é muito maior que 80%.</p><p><strong>Alternativa B (65%):</strong> Incorreta. Ainda superestima a redução do risco. A diferença real entre 50% e 5% é 45 pontos percentuais.</p><p><strong>Alternativa C (45%):</strong> CORRETA. A redução absoluta do risco é: 50% - 5% = 45%. Esta é a redução absoluta do risco, não relativa. O estudo mostra redução absoluta de 45 pontos percentuais.</p><p><strong>Alternativa D (20%):</strong> Incorreta. Subestima significativamente a eficácia da máscara. A diferença é muito maior que 20%.</p><p><strong>Alternativa E (5%):</strong> Incorreta. Representaria apenas a incidência do grupo com máscara, não a redução.</p><p><strong>Veredito:</strong> A redução do risco de infecção foi de 45% (alternativa C), representando uma eficácia substancial das máscaras na prevenção da COVID-19 conforme este estudo hipotético.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos_PesquisaClinica",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ValidadeDosEstudosEpidemiologi"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Utilizando os dados da questão anterior, calcule quantas pessoas, aproximadamente, devem usar máscara para prevenir um caso de infecção pelo SARS-COV-2?",
+      "alternativas": [
+        "50;",
+        "25;",
+        "12;",
+        "4;",
+        "2"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão testa sua compreensão do conceito de Number Needed to Treat (NNT) - uma medida clínica fundamental que quantifica quantas pessoas precisam ser tratadas para prevenir um desfecho adverso.</p><p>Com base nos dados da questão anterior: grupo com máscara teve 5% de incidência, grupo controle teve 50% de incidência.</p><p><strong>Calculando o NNT:</strong></p><p>• Risco de infecção no grupo controle: 50%</p><p>• Risco de infecção no grupo intervenção: 5%</p><p>• Redução do risco absoluto: 50% - 5% = 45% ou 0,45</p><p>• NNT = 1 / Redução do Risco Absoluto = 1 / 0,45 ≈ 2,2</p><p>Arredondando para o inteiro mais próximo: NNT = 2</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A (50):</strong> Incorreta. Seria o inverso da incidência do grupo controle (1/0,02), não o NNT.</p><p><strong>Alternativa B (25):</strong> Incorreta. Não corresponde ao cálculo correto do NNT.</p><p><strong>Alternativa C (12):</strong> Incorreta. Resultaria de um cálculo com risco controle de 8,3% ou risco intervenção de 4,2%, o que não se aplica aos dados.</p><p><strong>Alternativa D (4):</strong> Incorreta. Corresponderia a um NNT de 4 se a redução do risco fosse de 25%.</p><p><strong>Alternativa E (2):</strong> CORRETA. Conforme o cálculo correto: 1/(0,50-0,05) = 1/0,45 = 2,2 ≈ 2.</p><p><strong>Veredito:</strong> Apenas 2 pessoas precisam usar máscara para prevenir um caso de infecção (alternativa E), demonstrando alta eficácia desta intervenção preventiva.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_MedidasDeAssociacaoEMedidasDeI",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_EstudosEpidemiologicos",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TestesDiagnosticos"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "O perfil de saúde no Brasil é de tripla carga de doenças, definida pela presença concomitante de:",
+      "alternativas": [
+        "Manutenção das doenças infecto-parasitárias, aumento da mortalidade por causas externas e doenças crônico degenerativas;",
+        "Aumento das doenças crônicas pelo envelhecimento e doenças cardiovasculares e diminuição das doenças infecto parasitárias;",
+        "Aumento das doenças psiquiátricas, suicídio e morte violenta;",
+        "Diminuição de fatores de risco modificáveis (tabagismo, obesidade, sedentarismo), aumento das doenças infecto parasitárias e neoplasias;",
+        "Diminuição da violência contra a criança, aumento da violência obstétrica e manutenção das doenças crônico degenerativas."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o perfil epidemiológico do Brasil, especificamente o conceito de 'tripla carga de doenças' que caracteriza países em transição demográfica e epidemiológica.</p><p>O Brasil apresenta um padrão único onde coexistem doenças de países desenvolvidos e em desenvolvimento, criando desafios комплексов para o sistema de saúde.</p><p><strong>Análise das alternativas:</strong></p><p><strong>Alternativa A:</strong> CORRETA. A tripla carga brasileira é formada por: 1) Manutenção de doenças infecto-parasitárias (dengue, malária, tuberculose, HIV), 2) Aumento da mortalidade por causas externas (acidentes de trânsito, violência urbana), 3) Crescimento das doenças crônico-degenerativas (diabetes, hipertensão, câncer, doenças cardiovasculares). Este perfil é exclusivo do Brasil entre países latino-americanos.</p><p><strong>Alternativa B:</strong> Incorreta. Mistura elementos corretos com incorretos. A tríade não inclui especificamente 'aumento das doenças crônicas pelo envelhecimento' - o foco é na coexistência de três grupos distintos. Também omite as causas externas.</p><p><strong>Alternativa C:</strong> Incorreta. Foca apenas em aspectos psiquiátricos e violência, não abordando a totalidade da tripla carga que inclui doenças infecto-parasitárias e crônicas.</p><p><strong>Alternativa D:</strong> Incorreta. Apresenta lógica invertida: diz 'diminuição de fatores de risco' quando na verdade há aumento, e 'aumento das doenças infecto-parasitárias' quando o padrão é manutenção/prevalência, não aumento.</p><p><strong>Alternativa E:</strong> Incorreta. Mistura conceitos diferentes (violência obstétrica, violência contra criança) que não compõem a definição de tripla carga, focando apenas em aspectos sociais e não na coexistência das três categorias de doenças.</p><p><strong>Veredito:</strong> A alternativa A descreve corretamente os três componentes da tripla carga de doenças no Brasil (alternativa A), padrão que exige estratégias diferenciadas de prevenção e controle.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessoSaudedoenca",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TransicaoDemograficaEEpidemiol",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_ProcessosEndemicosEEpidemicoEn"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Um médico socorrista estava de plantão quando um paciente da unidade COVID-19 entra em parada cardiorrespiratória (PCR). A enfermagem solicita a presença do médico para socorrer, mas o profissional se recusa a prestar ajuda por \"medo de se contaminar\". Qual o tipo de erro médico descrito no texto acima?",
+      "alternativas": [
+        "Ortotanásia;",
+        "Imperícia;",
+        "Imprudência;",
+        "Negligência;",
+        "Distanásia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre ética médica e tipos de erros profissionais, especificamente durante a pandemia de COVID-19 quando profissionais de saúde enfrentaram dilemas de segurança pessoal versus dever profissional.</p><p>O caso apresenta um médico recusando-se a atender paciente com COVID-19 por medo de contaminação, configurando violação do dever profissional.</p><p><strong>Análise dos tipos de erro médico:</strong></p><p><strong>Alternativa A (Ortotanásia):</strong> Incorreta. Ortotanásia refere-se à morte natural sem prolongamento artificial da vida, não se relacionando com recusa de atendimento.</p><p><strong>Alternativa B (Imperícia):</strong> Incorreta. Imperícia é falta de conhecimento técnico ou habilidade profissional. O médico demonstra conhecimento, mas recusa-se por medo.</p><p><strong>Alternativa C (Imprudência):</strong> Incorreta. Imprudência é agir precipitadamente, sem pensar nas consequências. A recusa por medo não configura imprudência.</p><p><strong>Alternativa D (Negligência):</strong> CORRETA. Negligência caracteriza-se pela omissão, falta de cuidado ou desatenção nos deveres profissionais. O médico tem o dever legal e ético de atender o paciente, mas omite-se por medo pessoal, configurando negligência.</p><p><strong>Alternativa E (Distanasia):</strong> Incorreta. Distanásia refere-se ao prolongamento artificial da vida através de meios extraordinários, não se relacionando com recusa de atendimento.</p><p><strong>Contexto legal:</strong> Conforme o Código de Ética Médica, o médico tem dever de atender em emergências, mesmo em condições adversas. Durante a pandemia, mesmo com riscos, o dever profissional prevalece, exigindo uso adequado de EPIs e protocolos de segurança.</p><p><strong>Veredito:</strong> A conduta configura negligência (alternativa D) - omissão do dever profissional por medo pessoal, violando os princípios éticos da medicina.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "ClinicaMedica_Emergencias",
+        "ClinicaMedica_Emergencias_ParadaCardiorrespiratoria"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "Sobre o preenchimento da declaração de óbito (DO), assinale a alternativa correta:",
+      "alternativas": [
+        "Em caso de morte natural não assistida em local sem serviço de verificação de óbito (SVO), a declaração pode ser emitida por médico de serviço público mais próximo, mediante examinação do corpo;",
+        "No setor privado, é permitido ao médico cobrar um adicional por cada declaração de óbito emitida;",
+        "No momento da passagem de plantão, a DO poderá ser preenchida pelo médico que está assumindo o plantão, caso o profissional anterior que atestou o óbito tenha carimbado a DO;",
+        "Em caso de óbito por acidente de trabalho, a declaração só poderá ser emitida por médico perito do INSS;",
+        "Em caso de morte por causa externa, não é necessária avaliação do médico legista, bastando a declaração do médico assistente."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca INTO avalia seu conhecimento sobre a regulamentação da emissão de Declaração de Óbito (DO), um tema fundamental para todo médico. O examinador quer saber se você conhece as regras estabelecidas pelo Conselho Federal de Medicina para essas situações específicas.</p><p><strong>A resposta correta é A.</strong> Em casos de morte natural não assistida em local sem Serviço de Verificação de Óbito (SVO), a legislação permite que médico de serviço público mais próximo possa emitir a DO mediante exame do corpo. Esta é uma medida necessária para garantir o direito ao atestado de óbito mesmo em localidades mais remotas.</p><p>Vamos analisar cada alternativa:</p><p>A) <strong>CORRETA</strong> - Conforme Resolução CFM nº 1.779/2005, médico de serviço público pode emitir DO em morte natural não assistida em local sem SVO, desde que examine o corpo.</p><p>B) <strong>INCORRETA</strong> - É vedado ao médico cobrar adicional pela emissão de DO, pois trata-se de documento oficial obrigatório. O CFM considera essa prática antiética.</p><p>C) <strong>INCORRETA</strong> - Médico que assume plantão não pode preencher DO que não atestou, mesmo com carimbo do profissional anterior. A DO deve ser preenchida por quem efetivamente atestou o óbito.</p><p>D) <strong>INCORRETA</strong> - Em óbitos por acidente de trabalho, além do médico perito do INSS, também pode ser emitida por médico do serviço público ou assistente do paciente, seguindo critérios estabelecidos.</p><p>E) <strong>INCORRETA</strong> - Para morte por causa externa (acidentes, violências, suicídios), é obrigatória a avaliação médico-legal. A DO nestas situações deve ser emitida pelo IML ou SVO após necropsia.</p><p><strong>Veredito: A</strong> - Esta alternativa representa a única situação em que as regras são corretamente aplicadas, sendo essencial para médicos que trabalham em áreas remotas ou em serviços de emergência.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_EticaMedica",
+        "Outros_MedicinaLegal"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "A portaria Nº 930, de 15 de maio de 2019, instituiu um programa com objetivo de ampliar o funcionamento das Unidades de Saúde da Família e melhorar o acesso à atenção primária. Esse programa é conhecido como:",
+      "alternativas": [
+        "\"Brasil Sorridente\";",
+        "\"Saúde na Hora\";",
+        "\"Melhor em Casa\";",
+        "\"Requalifica UBS\"",
+        "\"Consultório na Rua\"."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia seu conhecimento sobre políticas públicas de saúde específicas, em particular sobre programas governamentais voltados à Atenção Primária. O tema é relevante para médicos que trabalham no Sistema Único de Saúde (SUS).</p><p><strong>A resposta correta é B - \"Saúde na Hora\".</strong></p><p>Esta questão pode parecer simples, mas é importante conhecer cada programa do governo federal. A Portaria nº 930/2019 instituiu especificamente o programa \"Saúde na Hora\", com objetivo de ampliar o funcionamento das Unidades de Saúde da Família e melhorar o acesso à atenção primária através da extensão do horário de funcionamento.</p><p>Vamos analisar as outras alternativas:</p><p>A) <strong>\"Brasil Sorridente\"</strong> - É um programa de saúde bucal, não relacionado à extensão de horário das UBS. Criado em 2004 pelo Ministério da Saúde.</p><p>B) <strong>\"Saúde na Hora\"</strong> - <strong>CORRETO</strong> - Instituído pela Portaria 930/2019, permite que UBS estendam horário de funcionamento para atender demanda da população.</p><p>C) <strong>\"Melhor em Casa\"</strong> - Programa de atenção domiciliar, também conhecido como Home Care, voltado para pacientes que necessitam de cuidados em casa.</p><p>D) <strong>\"Requalifica UBS\"</strong> - Programa de requalificação de Unidades Básicas de Saúde através de obras e reformas.</p><p>E) <strong>\"Consultório na Rua\"</strong> - Programa específico para atenção à saúde da população em situação de rua, com equipes especializadas.</p><p><strong>Veredito: B</strong> - O programa \"Saúde na Hora\" é o único que tem como objetivo específico ampliar o funcionamento das UBS, conforme estabelecido na Portaria 930/2019 mencionada no enunciado.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "O Caderno de Atenção Primária dispõe de alguns procedimentos clínicos e cirúrgicos que podem ser realizados nas Unidades Básicas de Saúde, de forma eletiva ou durante o atendimento à demanda espontânea. Dos procedimentos listados abaixo, o que não deve ser feito na UBS é:",
+      "alternativas": [
+        "Exérese de cistos, lipomas e nevos;",
+        "Remoção de molusco contagioso;",
+        "Lavagem auricular com solução salina em paciente com otite média aguda;",
+        "Remoção de anzol;",
+        "Cantoplastia para onicocriptose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia seu conhecimento sobre as competências e limitações da Atenção Primária, especificamente quais procedimentos podem ser realizados nas Unidades Básicas de Saúde. É um tema prático que todo médico do SUS deve conhecer.</p><p><strong>A resposta correta é C - Lavagem auricular com solução salina em paciente com otite média aguda.</strong></p><p>A banca quer testar se você reconhece que determinados procedimentos podem ser contraindicados em situações específicas, mesmo sendo tecnicamente realizados na UBS.</p><p>Vamos analisar cada alternativa:</p><p>A) <strong>Exérese de cistos, lipomas e nevos</strong> - <strong>CORRETO</strong> - Procedimento permitido na UBS desde que o profissional tenha capacitação adequada e o caso seja eletivo.</p><p>B) <strong>Remoção de molusco contagioso</strong> - <strong>CORRETO</strong> - Procedimento de pequena cirurgia que pode ser realizado na UBS, especialmente em crianças.</p><p>C) <strong>Lavagem auricular com solução salina em paciente com otite média aguda</strong> - <strong>INCORRETA</strong> - Em otite média aguda, a lavagem pode empurrar secreção para o ouvido médio, agravando a infecção. É contraindicada nesta situação.</p><p>D) <strong>Remoção de anzol</strong> - <strong>CORRETO</strong> - Procedimento de pequena cirurgia que pode ser realizado na UBS quando não há complicações.</p><p>E) <strong>Cantoplastia para onicocriptose</strong> - <strong>CORRETO</strong> - Procedimento cirúrgico menor que pode ser realizado na UBS por profissional habilitado.</p><p>O raciocínio clínico aqui é fundamental: mesmo que um procedimento seja tecnicamente possível na UBS, devemos considerar as contraindicações específicas. A lavagem auricular em otite média aguda é um exemplo clássico de procedimento que pode causar complicações.</p><p><strong>Veredito: C</strong> - Esta é a única alternativa que apresenta um procedimento contraindicado na situação clínica específica descrita, representando risco para o paciente.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_AtencaoPrimariaASaudeApsNoBras",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Segundo a Lei Nº 8142, de 1990, \"a representação dos usuários nos Conselhos de Saúde e Conferências será paritária em relação ao conjunto dos demais segmentos\". Num grupo hipotético com 1.000 pessoas, a parcela que compõe prestadores de serviço e gestores deve ter:",
+      "alternativas": [
+        "250 pessoas;",
+        "275 pessoas;",
+        "330 pessoas;",
+        "500 pessoas;",
+        "750 pessoas;"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia seu conhecimento sobre a Lei nº 8.142/1990, que dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde. É um tema importante de Saúde Pública que todo médico deve conhecer.</p><p><strong>A resposta correta é A - 250 pessoas.</strong></p><p>A Lei nº 8.142/1990 estabelece que a representação nos Conselhos de Saúde deve ser paritária, ou seja, 50% para usuários e 50% para os demais segmentos (prestadores de serviço e gestores).</p><p>Vamos fazer o cálculo:<br>Total do grupo: 1.000 pessoas<br>Metade (50%) = usuários: 500 pessoas<br>Outra metade (50%) = prestadores de serviço e gestores: 500 pessoas</p><p>Das 500 pessoas que representam prestadores e gestores,，我们需要 calcular quantas correspondem à parcela que deve estar no conselho:</p><p>Dos 500 prestadores/gestores, eles representam:<br>500 ÷ 2.000 × 1000 = 250 pessoas</p><p>Vamos analisar as alternativas:</p><p>A) <strong>250 pessoas</strong> - <strong>CORRETA</strong> - Representa 25% do total, que corresponde à metade dos 50% destinados aos prestadores e gestores.</p><p>B) <strong>275 pessoas</strong> - <strong>INCORRETA</strong> - Valor incorreto, não segue a proporcionalidade estabelecida na lei.</p><p>C) <strong>330 pessoas</strong> - <strong>INCORRETA</strong> - Valor incorreto, não corresponde ao cálculo correto da representação paritária.</p><p>D) <strong>500 pessoas</strong> - <strong>INCORRETA</strong> - Este valor representaria todos os prestadores/gestores, mas a questão pergunta especificamente sobre a parcela que compõe este segmento no conselho.</p><p>E) <strong>750 pessoas</strong> - <strong>INCORRETA</strong> - Valor incorreto, não segue a lógica da representação paritária.</p><p><strong>Veredito: A</strong> - A representatividade deve ser calculada considerando a proporcionalidade total: 50% usuários (500) + 50% prestadores/gestores (500). Dos prestadores/gestores (500), eles representam 250 pessoas no conselho de 1.000 membros totais.",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PrincipiosEDiretrizesDoSistema_1"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Vacinar-se é um ato necessário para proteção individual e coletiva. Por meio dele, doenças como a varíola e a poliomielite já foram erradicadas. Apesar de nenhuma vacina ser 100% eficaz, hoje a imunização é essencial para prevenir óbitos e casos graves da COVID-19. Dentre as tecnologias disponíveis nas diferentes vacinas atualmente, destacam-se vacinas com vírus inativado, vacina com vetor viral não replicante e vacina com RNA mensageiro (mRNA). As vacinas que utilizam a tecnologia de vetor viral não replicante são:",
+      "alternativas": [
+        "Janssen e AstraZeneca;",
+        "Coronavac e Janssen;",
+        "Pfizer e AstraZeneca;",
+        "Pfizer e Janssen;",
+        "Coronavac e AstraZeneca."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão do INTO 2022 avalia seu conhecimento sobre as diferentes tecnologias de vacinas, especificamente as vacinas de vetor viral não replicante contra COVID-19. É um tema atual e relevante para a prática médica.</p><p><strong>A resposta correta é A - Janssen e AstraZeneca.</strong></p><p>Esta questão testa se você conhece as diferentes plataformas vacinais desenvolvidas para COVID-19. As vacinas de vetor viral não replicante utilizam um vírus modificado (geralmente adenovírus) que não consegue se replicar no corpo humano, servindo apenas como transportador do material genético do SARS-CoV-2.</p><p>Vamos analisar cada alternativa:</p><p>A) <strong>Janssen e AstraZeneca</strong> - <strong>CORRETA</strong> - Ambas utilizam tecnologia de vetor viral não replicante. A Janssen usa vetor de adenovírus sorotipo 26 (Ad26) e a AstraZeneca usa vetor de adenovírus de chimpanzé (ChAdOx1).</p><p>B) <strong>Coronavac e Janssen</strong> - <strong>INCORRETA</strong> - A Coronavac é vírus inativado, não vetor viral. Apenas a Janssen está correta.</p><p>C) <strong>Pfizer e AstraZeneca</strong> - <strong>INCORRETA</strong> - A Pfizer é mRNA, não vetor viral. Apenas a AstraZeneca está correta.</p><p>D) <strong>Pfizer e Janssen</strong> - <strong>INCORRETA</strong> - A Pfizer é mRNA, não vetor viral. Apenas a Janssen está correta.</p><p>E) <strong>Coronavac e AstraZeneca</strong> - <strong>INCORRETA</strong> - A Coronavac é vírus inativado, não vetor viral. Apenas a AstraZeneca está correta.</p><p>As tecnologias disponíveis são:<br><strong>Vírus inativado:</strong> Coronavac (Sinovac)<br><strong>Vetor viral não replicante:</strong> Janssen (Ad26), AstraZeneca (ChAdOx1)<br><strong>mRNA:</strong> Pfizer/BioNTech, Moderna</p><p><strong>Veredito: A</strong> - Janssen e AstraZeneca são as duas únicas vacinas que utilizam tecnologia de vetor viral não replicante entre as opções apresentadas, sendo esta a resposta correta conforme o gabarito oficial.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid",
+        "MedicinaPreventiva_Epidemiologia"
+      ],
+      "tags": [
+        "INTO2022R1",
+        "INTO",
+        "R1",
+        "RJ",
+        "2022",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762675758680-49"
+    }
+  ]
+}

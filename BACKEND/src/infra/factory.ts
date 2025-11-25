@@ -1,5 +1,6 @@
 import { ICacheService } from './cache/interfaces/ICacheService';
-import { FirebaseCacheService } from './cache/firebase/FirebaseCacheService';
+import { SupabaseCacheService } from './cache/supabase/SupabaseCacheService';
+ 
 import logger from '../utils/logger';
 
 // Add the missing NodeJS namespace
@@ -27,17 +28,24 @@ class InfrastructureFactory {
   }
 
   /**
-   * Obtém ou cria uma instância do serviço de cache para uma coleção específica
+   * Obtém ou cria uma instância do serviço de cache Supabase para uma coleção específica
    * @param collectionName Nome da coleção para o cache (opcional)
    * @returns Instância do serviço de cache
    */
   public getCacheService(collectionName: string = 'cache'): ICacheService {
     if (!this.cacheServices.has(collectionName)) {
-      logger.info(`Creating new cache service for collection: ${collectionName}`);
-      this.cacheServices.set(collectionName, new FirebaseCacheService(collectionName));
+      logger.info(
+        `Creating new Supabase cache service for collection: ${collectionName}`,
+      );
+      this.cacheServices.set(
+        collectionName,
+        new SupabaseCacheService(collectionName),
+      );
     }
     return this.cacheServices.get(collectionName)!;
   }
+
+  
 
   /**
    * Configura um serviço de limpeza periódica de cache expirado
@@ -47,7 +55,9 @@ class InfrastructureFactory {
   public setupCacheCleanupJob(intervalMinutes: number = 60): NodeJS.Timeout {
     const intervalMs = intervalMinutes * 60 * 1000;
 
-    logger.info(`Setting up cache cleanup job to run every ${intervalMinutes} minutes`);
+    logger.info(
+      `Setting up cache cleanup job to run every ${intervalMinutes} minutes`,
+    );
 
     // Executar imediatamente uma vez
     this.cleanupExpiredCache();
@@ -69,10 +79,15 @@ class InfrastructureFactory {
         async ([collection, service]) => {
           try {
             const count = await service.cleanupExpired();
-            logger.info(`Cleaned up ${count} expired cache entries from collection ${collection}`);
+            logger.info(
+              `Cleaned up ${count} expired cache entries from collection ${collection}`,
+            );
             return count;
           } catch (error) {
-            logger.error(`Error cleaning up cache in collection ${collection}:`, error);
+            logger.error(
+              `Error cleaning up cache in collection ${collection}:`,
+              error,
+            );
             return 0;
           }
         },
@@ -81,7 +96,9 @@ class InfrastructureFactory {
       const results = await Promise.all(cleanupPromises);
       const totalCleaned = results.reduce((total, count) => total + count, 0);
 
-      logger.info(`Cache cleanup completed. Total entries cleaned: ${totalCleaned}`);
+      logger.info(
+        `Cache cleanup completed. Total entries cleaned: ${totalCleaned}`,
+      );
     } catch (error) {
       logger.error('Error in cache cleanup job:', error);
     }

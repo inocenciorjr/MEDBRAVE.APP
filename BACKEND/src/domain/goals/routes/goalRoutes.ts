@@ -1,12 +1,11 @@
 import { Router } from 'express';
-import { Firestore } from 'firebase-admin/firestore';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
-import { GoalService } from '../services/GoalService';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { GoalService } from '../../../infra/goals/supabase/GoalService';
 import { logger } from '../../../utils/logger';
 
-export const createGoalRoutes = (db: Firestore) => {
+export const createGoalRoutes = () => {
   const router = Router();
-  const service = new GoalService(db);
+  const service = new GoalService();
 
   router.use(authMiddleware);
 
@@ -19,10 +18,10 @@ export const createGoalRoutes = (db: Firestore) => {
       if (!userId) {
         return res.status(401).json({ error: 'Unauthorized' });
       }
-      
+
       // Placeholder implementation
       const goals: any[] = [];
-      
+
       return res.json({ data: goals });
     } catch (error) {
       logger.error('Error getting user goals:', error);
@@ -34,7 +33,9 @@ export const createGoalRoutes = (db: Firestore) => {
   router.post('/', async (req, res) => {
     try {
       const userId = req.user?.id;
-      if (!userId) return res.status(401).json({ error: 'Unauthenticated' });
+      if (!userId) {
+        return res.status(401).json({ error: "Unauthenticated" });
+      }
       const payload = { ...req.body, userId };
       const goal = await service.createGoal(payload as any);
       return res.status(201).json({ success: true, data: goal });
@@ -70,7 +71,9 @@ export const createGoalRoutes = (db: Firestore) => {
   router.get('/progress', async (req, res) => {
     try {
       const userId = req.user?.id;
-      if (!userId) return res.status(401).json({ error: 'Unauthenticated' });
+      if (!userId) {
+        return res.status(401).json({ error: "Unauthenticated" });
+      }
       const result = await service.getGoalsProgress(userId);
       return res.json({ success: true, data: result });
     } catch (e) {
@@ -80,4 +83,4 @@ export const createGoalRoutes = (db: Firestore) => {
   });
 
   return router;
-}; 
+};

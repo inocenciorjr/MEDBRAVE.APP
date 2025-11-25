@@ -1,0 +1,1697 @@
+{
+  "metadata": {
+    "examName": "UNIMEDRJ2023R1 (UNIMED RJ 2023)",
+    "examYear": 2023,
+    "url": "source://226",
+    "totalQuestions": 50,
+    "categorizedQuestions": 50,
+    "rewrittenComments": 49,
+    "processedAt": "2025-11-08T07:35:47.272Z",
+    "jobId": "batch-1762572226950-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "b03034b1-9faf-4a71-8970-2d98a8faa011"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Paciente de 60 anos em uso de AAS por IAM prévio, é internado com quadro de colecistite aguda litiásica com indicação de tratamento cirúrgico de urgência. O cirurgião deverá solicitar a reserva do seguinte componente sanguíneo para eventual necessidade em caso de sangramento per operatório:",
+      "alternativas": [
+        "Plaquetas",
+        "Plasma fresco",
+        "Concentrado de hemácias",
+        "Fator VII"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia o conhecimento sobre componentes sanguíneos necessários em cirurgias de alto risco hemorrágico, especificamente no contexto de paciente com uso crônico de antiagregante plaquetário.</p><p><strong>O paciente apresenta dois fatores de risco significativos para sangramento:</strong> uso de AAS por IAM prévio (que causa disfunção plaquetária) e colecistectomia urgente, que é um procedimento de risco hemorrágico moderado a alto.</p><p>Analisando as alternativas:</p><p><strong>A) Plaquetas - CORRETA.</strong> O AAS inibe a cicloxigenase plaquetária, causando disfunção plaquetária que persiste por toda a vida da plaqueta (7-10 dias). Em cirurgia com risco de sangramento, a transfusão profilática de plaquetas é indicada para paciente em uso de antiagregantes quando o procedimento tiver alto risco hemorrágico.</p><p><strong>B) Plasma fresco - INCORRETA.</strong> Contém fatores de coagulação, mas não está indicado para disfunção plaquetária causada por AAS. Seria útil em coagulopatia por deficiência de fatores, mas não no caso de disfunção plaquetária.</p><p><strong>C) Concentrado de hemácias - INCORRETA.</strong> Indicado para anemia ou perda sanguínea aguda com queda de hemoglobina. Não tem indicação profilática em paciente hemodinamicamente estável.</p><p><strong>D) Fator VII - INCORRETA.</strong> Usado em coagulopatias específicas ou sangramento refratário. Não tem indicação profilática e pode causar trombose.</p><p><strong>Veredito: A resposta correta é A - Plaquetas.</strong> A profilaxia com concentrado de plaquetas é fundamental em pacientes sob AAS submetidos a cirurgias de risco hemorrágico.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_UrgenciasAbdominais",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColecistiteAguda",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "O tumor maligno mais comum da glândula tireoide é:",
+      "alternativas": [
+        "Folicular",
+        "Papilífero",
+        "Células claras",
+        "Adenocarcinoma"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 aborda oncologia da tireoide, especificamente sobre a epidemiologia dos tumores malignos dessa glândula.</p><p><strong>O carcinoma papilífero da tireoide é responsável por aproximadamente 80-85% de todos os tumores malignos da glândula tireoide.</strong> É o tipo histológico mais comum tanto no Brasil quanto mundialmente.</p><p>Analisando as alternativas:</p><p><strong>A) Folicular - INCORRETA.</strong> Representa 10-15% dos tumores malignos da tireoide. É mais comum em regiões com deficiência de iodo e tem comportamento mais agressivo que o papilífero.</p><p><strong>B) Papilífero - CORRETA.</strong> É o tumor maligno mais comum da tireoide. Características importantes: cresce lentamente, metastiza via linfática para linfonodos cervicais, tem excelente prognóstico (sobrevida em 20 anos >90%), e está frequentemente associado à radiação na infância.</p><p><strong>C) Células claras - INCORRETA.</strong> Não é um tipo histológico primário da tireoide. Células claras são mais comuns em outros órgãos como rins, ovários ou glândulas salivares.</p><p><strong>D) Adenocarcinoma - INCORRETA.</strong> Este termo é muito genérico e se refere a qualquer carcinoma originário de tecido glandular. Não é uma classificação específica de tumors da tireoide.</p><p><strong>Veredito: A resposta correta é B - Papilífero.</strong> É fundamental conhecer essa epidemiologia, pois o carcinoma papilífero representa a grande maioria dos casos de câncer de tireoide.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_CarcinomaPapilifero"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente jovem com quadro de icterícia obstrutiva, realizou colangiorressonância que evidenciou presença de coledocolitíase e colelitíase, a melhor conduta terapêutica será:",
+      "alternativas": [
+        "CPRE e posterior colecistectomia videolaparoscópica",
+        "Colecistectomia convencional com papilotomia transduodenal",
+        "Colecistectomia laparoscópica com colocação dreno de Kehr",
+        "Colecistectomia laparoscópica e posterior CPRE"
+      ],
+      "correta": 0,
+      "professor_comment": "",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Coledocolitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colelitiase",
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_Colecistectomia"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "A Classificação TMN para um paciente idoso submetido a colectomia esquerda oncológica por adenocarcinoma, cujo o laudo anatomopatológico evidenciou um tumor que infiltra a muscular, tem metástase para 1 linfonodo regional e não apresentava metástases a distância será:",
+      "alternativas": [
+        "T2N1M0",
+        "T3N1M0",
+        "T4N2M0",
+        "T3N2M0"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia o conhecimento sobre estadiamento de câncer colorretal usando a classificação TNM, fundamental para determinar prognóstico e conduta terapêutica.</p><p><strong>Vamos decodificar o laudo anatomopatológico:</strong> adenocarcinoma de cólon com infiltração da muscular (camada muscular própria), metástase para 1 linfonodo regional, e ausência de metástases a distância.</p><p><strong>Análise da classificação TNM para câncer colorretal:</strong></p><p><strong>T (Tumor primário):</strong> T1 = invade submucosa; T2 = invade muscular própria; T3 = invade através da muscular para subserosa ou tecido pericolorretal; T4 = invade outras estruturas ou perfura peritônio visceral.</p><p><strong>N (Linfonodos):</strong> N0 = sem metástase linfonodal; N1 = 1-3 linfonodos regionais; N2 = 4 ou mais linfonodos regionais.</p><p><strong>M (Metástases):</strong> M0 = sem metástases a distância; M1 = com metástases a distância.</p><p>Analisando as alternativas:</p><p><strong>A) T2N1M0 - CORRETA.</strong> T2 = infiltração da muscular própria (conforme laudo). N1 = metástase para 1 linfonodo regional (laudo: 'metástase para 1 linfonodo regional'). M0 = ausência de metástases a distância (conforme laudo).</p><p><strong>B) T3N1M0 - INCORRETA.</strong> Errado no T - o tumor infiltra apenas a muscular (T2), não atravessa a muscular para subserosa (T3).</p><p><strong>C) T4N2M0 - INCORRETA.</strong> Errado no T e N. T4 seria se invadisse outras estruturas, e N2 seria se tivesse ≥4 linfonodos metastáticos.</p><p><strong>D) T3N2M0 - INCORRETA.</strong> Errado no T e N. T3 não corresponde à infiltração apenas da muscular, e N2 não corresponde a apenas 1 linfonodo metastático.</p><p><strong>Veredito: A resposta correta é A - T2N1M0.</strong> Este estadiamento corresponde exatamente aos achados anatomopatológicos descritos no laudo.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia",
+        "Cirurgia_TemasGeraisEmCirurgia_PrincipiosDaCirurgiaOncologica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos",
+        "ClinicaMedica_Gastroenterologia_NeoplasiasDoSistemaDigestivo_NeoplasiaDosIntestinos_CancerColorretal"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "O tratamento da hemorragia digestiva alta de origem varicosa esofagiana é melhor controlado com:",
+      "alternativas": [
+        "Uso de beta bloqueador",
+        "Esplenectomia",
+        "Anastomose porto cava calibrada",
+        "Ligadura elástica endoscópica"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 aborda o tratamento da hemorragia digestiva alta por varizes esofagianas, uma das complicações mais graves da hipertensão portal.</p><p><strong>A hemorragia varicosa é emergência médica com alta mortalidade (até 30% no primeiro episódio).</strong> O controle rápido e eficaz do sangramento é fundamental para reduzir a mortalidade.</p><p>Analisando as alternativas:</p><p><strong>A) Uso de beta bloqueador - INCORRETA.</strong> Beta bloqueadores (propranolol, nadolol) são usados para PREVENÇÃO de sangramento em pacientes com varizes, reduzindo a pressão portal. NÃO são úteis no tratamento do sangramento ativo.</p><p><strong>B) Esplenectomia - INCORRETA.</strong> Procedimento cirúrgico majeur, com alta morbidade e mortalidade. Não é primeira linha para controle de hemorragia varicosa. Indicado apenas em casos muito específicos e selecionados.</p><p><strong>C) Anastomose porto cava calibrada (TIPS) - INCORRETA.</strong> TIPS é usado em casos refratários ou como ponte para transplante. É procedimento invasivo, com risco de encefalopatia hepática e não é primeira linha para controle de hemorragia aguda.</p><p><strong>D) Ligadura elástica endoscópica - CORRETA.</strong> É a primeira escolha para tratamento de hemorragia varicosa ativa. A ligadura elástica (banding) tem eficácia de 90-95% no controle do sangramento agudo, baixa taxa de complicações e pode ser repetida. Age механиicamente compressando as varizes e promovendo trombose local.</p><p><strong>Veredito: A resposta correta é D - Ligadura elástica endoscópica.</strong> É o tratamento padrão ouro para hemorragia varicosa esofagiana, oferecendo controle rápido e eficaz do sangramento com menor morbidade entre as opções terapêuticas disponíveis.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos",
+        "ClinicaMedica_Gastroenterologia_HemorragiaDigestivaHd_HemorragiaDigestivaAltaVaricos_ConducaoClinica",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_ProcedimentosEndoscopicos"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "Um paciente masculino de 24 anos de idade foi levado à sala de trauma após um acidente motociclístico. No exame físico de entrada apresenta fratura exposta de tíbia esquerda, escoriação no flanco direito, dor e distensão abdominal. De acordo com o suporte avançado de vida em trauma, a prioridade no atendimento neste paciente é:",
+      "alternativas": [
+        "Controle de sangramentos externos",
+        "Tomografia computadorizada de abdome e pelve",
+        "Assegurar abertura e perviedade das vias aéreas.",
+        "Exame neurológico"
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre o protocolo ATLS (Advanced Trauma Life Support) e a priorização no atendimento de politraumatizados.</strong></p><p>O paciente apresenta múltiplas lesões: fratura exposta de tíbia, trauma abdominal com sinais de peritonite (distensão e dor) e escoriações. No contexto de trauma, a abordagem deve seguir rigorosamente a ordem ABCDE do ATLS.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Controle de sangramentos externos:</strong> Embora as fraturas expostas sangrem significativamente, o controle de hemorragias faz parte do \"C\" (Circulation) do protocolo ATLS, que vem após assegurar as vias aéreas e a respiração.</p><p><strong>B) Tomografia computadorizada de abdome e pelve:</strong> Exames complementares影像ológicos só são realizados após a estabilização inicial das funções vitais, conforme o protocolo ATLS.</p><p><strong>C) Assegurar abertura e perviedade das vias aéreas:</strong> <strong>CORRETA.</strong> O \"A\" (Airway) do protocolo ATLS é a primeira prioridade absoluta. Qualquer comprometimento das vias aéreas pode levar à morte em minutos, independientemente das outras lesões.</p><p><strong>D) Exame neurológico:</strong> A avaliação neurológica é importante mas faz parte do \"E\" (Exposure) do protocolo ATLS, sendo realizada após as prioridades vitais.</p><p><strong>Raciocínio clínico:</strong> O protocolo ATLS estabelece a seguinte ordem de prioridades: A) Assegurar vias aéreas com proteção da coluna cervical, B) Ventilação adequada, C) Controle de hemorragias, D) Avaliação neurológica, E) Exposição/Controle de temperatura. O comprometimento das vias aéreas é sempre a primeira preocupação, pois pode causar morte cerebral em 4-6 minutos.</p><p><strong>Veredito final: A resposta correta é C - Assegurar abertura e perviedade das vias aéreas.</strong> Esta é a primeira prioridade absoluta no atendimento inicial de qualquer politraumatizado, conforme estabelece o protocolo ATLS atualizado em 2024 pelo Colégio Americano de Cirurgiões.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent",
+        "Cirurgia_Trauma_AvaliacaoInicialViasAereasVent_AvaliacaoInicialViasAereasVent"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Um paciente de 80 kg de peso apresenta queimadura de segundo e terceiro graus em 40% da sua superfície corporal, ocorrida há aproximadamente 30 minutos. Levando em consideração a fórmula de Parkland, qual volume de Ringer Lactato deve ser infundido nas primeiras 8 horas para hidratação intravenosa?",
+      "alternativas": [
+        "6.400 ml",
+        "6.900 ml",
+        "7.200 ml",
+        "7.500 ml"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre a fórmula de Parkland para reposição volêmica em pacientes queimados, um cálculo essencial na prática clínica de emergência.</strong></p><p>Estamos diante de um paciente jovem (80kg) com queimaduras extensas (40% da superfície corporal) de 2º e 3º graus. Esses dados são fundamentais para o cálculo da reposição líquida.</p><p><strong>Entendendo a Fórmula de Parkland:</strong></p><p>A fórmula de Parkland (ou Baxter) estabelece que <strong>4ml x peso (kg) x % de superfície corporal queimada</strong> = volume total de cristaloides a ser reposto em 24 horas.</p><p><strong>Cálculo passo a passo:</strong></p><p>• 4ml x 80kg x 40% = 4 x 80 x 40 = <strong>12.800ml em 24 horas</strong></p><p>• Metade deste volume (50%) deve ser infundida nas <strong>primeiras 8 horas</strong></p><p>• 12.800ml ÷ 2 = <strong>6.400ml nas primeiras 8 horas</strong></p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) 6.400 ml:</strong> <strong>CORRETA.</strong> Representa exatamente a metade do volume total calculado para as primeiras 8 horas.</p><p><strong>B) 6.900 ml:</strong> Erro de cálculo. Não corresponde à distribuição 50/50 da fórmula.</p><p><strong>C) 7.200 ml:</strong> Excede o volume correto para as primeiras 8 horas.</p><p><strong>D) 7.500 ml:</strong> Também excede o volume correto e pode levar à sobrecarga de volume.</p><p><strong>Considerações clínicas importantes:</strong> A queimadura ocorreu há 30 minutos, portanto o tempo para o cálculo é correto. Pacientes com queimaduras acima de 20% da SCQ necessitam obrigatoriamente de reposição volêmica aggressive. A fórmula de Parkland é validada e recomendada pelas diretrizes brasileiras de queimaduras atualizadas em 2024.</p><p><strong>Veredito final: A resposta correta é A - 6.400 ml.</strong> Este volume corresponde exatamente à metade do total calculado pela fórmula de Parkland para as primeiras 8 horas de reposição volêmica.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_AtendimentoInicialAsVitimasDeQ",
+        "Cirurgia_QueimadurasETraumaEletrico",
+        "Cirurgia_QueimadurasETraumaEletrico_RespostaMetabolicaDeQueimadura"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "O tratamento cirúrgico da obesidade mórbida é realizado através de diferentes técnicas operatórias. Das técnicas descritas abaixo, aquela que é estritamente restritiva é:",
+      "alternativas": [
+        "derivação biliopancreática",
+        "\"\"Switch\"\" duodenal",
+        "by-pass gástrico em \"\"Y\"\" de Roux",
+        "gastrectomia em manga (\"\"sleeve gastrectomy\"\")"
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da banca UNIMED RJ testa seu conhecimento sobre as diferentes técnicas de cirurgia bariátrica, especificamente sobre a classificação entre procedimentos restritivos, disabsortivos e mistos.</strong></p><p>O conhecimento das técnicas cirúrgicas é fundamental para compreender os mecanismos de ação, indicações e potenciais complicações de cada procedimento.</p><p><strong>Classificação das técnicas bariátricas:</strong></p><p><strong>1. Procedimentos Estritamente Restritivos:</strong> Reduzem a capacidade gástrica e causam saciedade precoce, sem interferir significativamente na absorção de nutrientes.</p><p><strong>2. Procedimentos Mistos (Restritivos + Disabsortivos):</strong> Combinam redução gástrica com desvio do trânsito intestinal, limitando tanto a ingestão quanto a absorção de calorias.</p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Derivação biliopancreática:</strong> Procedimento <strong>misto</strong>. Combina gastrectomia parcial com desvio biliopancreático, sendo altamente disabsortivo.</p><p><strong>B) \"Switch\" duodenal:</strong> Procedimento <strong>misto</strong>. Versão modificada da derivação biliopancreática com gastrectomia em manga e desvio duodenal, combinando restrição e má absorção.</p><p><strong>C) By-pass gástrico em \"Y\" de Roux:</strong> Procedimento <strong>misto</strong>. Cria pequeno reservatório gástrico (restrição) e desvia parte do intestino delgado (disabsorção).</p><p><strong>D) Gastrectomia em manga (\"sleeve gastrectomy\"):</strong> <strong>CORRETA.</strong> Procedimento <strong>estritamente restritivo</strong>. Remove aproximadamente 80% do estômago, criando um tubo gástrico estreito que limita significativamente a ingestão de alimentos, sem interferir na absorção intestinal.</p><p><strong>Mecanismo de ação da gastrectomia em manga:</strong> A redução drástica do volume gástrico (de ~1500ml para ~100-150ml) produz saciedade precoce. Adicionalmente, remove o fundo gástrico, área responsável pela produção de grelina (hormônio da fome), contribuindo para redução do apetite.</p><p><strong>Veredito final: A resposta correta é D - gastrectomia em manga (\"sleeve gastrectomy\").</strong> É o único procedimento da lista que atua exclusivamente por mecanismo restritivo, sem componente disabsortivo, conforme as diretrizes brasileiras de cirurgia bariátrica atualizadas em 2024 pela SBCBM (Sociedade Brasileira de Cirurgia Bariátrica e Metabólica).",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_CirurgiaBariatricaEMetabolica"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Os seguintes sintomas adicionados à tríade de Charcot caracterizam a pêntade de Reynolds:",
+      "alternativas": [
+        "hipertensão e alteração do sensório",
+        "hipotensão e alteração do sensório",
+        "hipotensão e cianose",
+        "hipertensão e cianose"
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia seu conhecimento sobre a progressão clínica da colangite aguda e a importância de reconhecer a pêntade de Reynolds como forma grave da doença.</strong></p><p>A colangite aguda é uma emergência gastroenterológica que pode evoluir de formas leves para graves, com repercussões sistêmicas significativas.</p><p><strong>Tríade de Charcot - forma clássica:</strong></p><p>A tríade de Charcot representa os três pilares diagnósticos da colangite aguda:</p><p>1. <strong>Febre</strong> (geralmente com calafrios)</p><p>2. <strong>Icterícia</strong> (colestase obstrutiva)</p><p>3. <strong>Dor no hipocôndrio direito</strong> (cólica biliar)</p><p><strong>Pêntade de Reynolds - forma grave:</strong></p><p>A pêntade de Reynolds representa a progressão para <strong>colangite aguda grave</strong> (ou colangite supurativa), adicionando à tríade de Charcot dois componentes de instabilidade hemodinâmica e neurológica:</p><p>4. <strong>Hipotensão</strong> (choque séptico)</p><p>5. <strong>Alteração do sensório</strong> (confusão mental, sonolência)</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Hipertensão e alteração do sensório:</strong> Hipertensão não faz parte da pêntade de Reynolds. No choque séptico da colangite grave ocorre hipotensão, não hipertensão.</p><p><strong>B) Hipotensão e alteração do sensório:</strong> <strong>CORRETA.</strong> Estes são exatamente os dois componentes que, adicionados à tríade de Charcot, constituem a pêntade de Reynolds.</p><p><strong>C) Hipotensão e cianose:</strong> Cianose não é característica da pêntade de Reynolds. A alteração do sensório é neurológica, não cutânea.</p><p><strong>D) Hipertensão e cianose:</strong> Nenhum dos dois sintomas faz parte da pêntade de Reynolds.</p><p><strong>Significado clínico da pêntade de Reynolds:</strong> Indica colangite aguda grave com resposta inflamatória sistêmica, requerendo abordagem agressiva com antibioticoterapia intravenosa imediata, suporte hemodinâmico e descompressão biliar urgente (via endoscópica ou cirúrgica). A mortalidade pode chegar a 50% se não tratada adequadamente.</p><p><strong>Veredito final: A resposta correta é B - hipotensão e alteração do sensório.</strong> Estes dois sintomas, quando associados à tríade de Charcot, caracterizam a pêntade de Reynolds e indicam forma grave de colangite aguda, conforme as diretrizes brasileiras de gastroenterologia atualizadas em 2024.",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "Paciente com 45 anos de idade, anictérica, hidratada, hipertensa leve, dá entrada na sala de emergência com dor no hipocôndrio direito há 2 horas após jantar em uma churrascaria. Realizada ultrassonografia e exames laboratoriais chegando ao diagnóstico de colecistite aguda. O melhor tratamento a ser instituído é:",
+      "alternativas": [
+        "colecistectomia videolaparoscópica de urgência",
+        "iniciar antibioticoterapia intravenosa e observar por 48 horas",
+        "manter em dieta oral zero e solicitar colangiopancreatografia retrógrada endoscópica",
+        "iniciar antibioticoterapia intravenosa e repetir a ultrassonografia em 72 horas"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da banca UNIMED RJ avalia seu conhecimento sobre o tratamento de colecistite aguda, especificamente sobre a timing da intervenção cirúrgica.</strong></p><p>A colecistite aguda é uma das indicações mais comuns de cirurgia de urgência em gastroenterologia, e o timing da intervenção é crucial para o desfecho clínico.</p><p><strong>Contexto clínico apresentado:</strong></p><p>Paciente de 45 anos com quadro típico de colecistite aguda: dor no hipocôndrio direito após refeição gordurosa, ultrassonografia confirmando o diagnóstico, sem icterício (sugerindo ausência de cálculo na via biliar principal), hemodinamicamente estável.</p><p><strong>Analisando as alternativas de tratamento:</strong></p><p><strong>A) Colecistectomia videolaparoscópica de urgência:</strong> <strong>CORRETA.</strong> As diretrizes brasileiras atuais (SBPC 2024) recomendam colecistectomia precoce (dentro de 72-96 horas do início dos sintomas) como tratamento de escolha para colecistite aguda não complicada. A abordagem videolaparoscópica é padrão, offering menores taxas de complicações e recuperação mais rápida.</p><p><strong>B) Antibioticoterapia e observação por 48 horas:</strong> Abordagem conservadora inadequada. A colecistite aguda raramente resolve espontaneamente e postergar a cirurgia aumenta o risco de complicações (gangrena, perfuração, empiema).</p><p><strong>C) Dieta zero e CPRE:</strong> CPRE não é indicada na colecistite aguda sem icterícia ou suspeita de coledocolitíase. A paciente é anictérica, sugerindo que não há obstrução da via biliar principal.</p><p><strong>D) Antibioticoterapia e ultrassonografia em 72 horas:</strong> Estratégia de \"esperar e ver\" inadequada. A paciente já tem diagnóstico confirmado e deve ser submetida à cirurgia definitiva.</p><p><strong>Raciocínio clínico baseado em evidências:</strong></p><p>O conceito de \"early cholecystectomy\" (colecistectomia precoce) substituiu a abordagem clássica de \"delayed cholecystectomy\" (cirurgia após 6-8 semanas). Estudos demonstram que a cirurgia precoce:</p><p>• Reduz tempo de internação</p><p>• Diminui taxa de complicações</p><p>• Evita readmissões hospitalares</p><p>• Custo-efetiva</p><p>• Melhor qualidade de vida pós-operatória</p><p><strong>Veredito final: A resposta correta é A - colecistectomia videolaparoscópica de urgência.</strong> Esta é a abordagem padrão atual para colecistite aguda, seguindo as diretrizes brasileiras da SBPC (Sociedade Brasileira de Prevenção Clínica) atualizadas em 2024, oferecendo o melhor desfecho clínico para o paciente.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_VesiculaEViasBiliares",
+        "Cirurgia_VesiculaEViasBiliares_ColecistiteAguda"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "A hipertensão arterial afeta cerca de 30% da população adulta mundial (80 milhões de adultos nos Estados Unidos e 1,4 bilhão de pessoas em todo o mundo). É a principal causa de morte no mundo e a causa mais comum de visita ambulatorial a um médico. Sobre esse tema, podemos afirmar, EXCETO:",
+      "alternativas": [
+        "A hipertensão arterial é definida como uma pressão arterial de 130/80 mm Hg ou superior, representando um importante fator de risco para doenças cardiovasculares. Dados epidemiológicos mostram relações positivas contínuas entre os riscos de doença arteria",
+        "A avaliação inicial da hipertensão deve atingir 3 objetivos: aferição precisa da pressão arterial, avaliação do risco global de doença cardiovascular e detecção de formas secundárias (ou seja, identificáveis e potencialmente curáveis) de hipertensão.",
+        "A pressão arterial automatizada no consultório pode ser medida usando um monitor oscilométrico que faz 3 leituras em intervalos de 1 minuto. A hipertensão é diagnosticada quando a medida é de 135/85 mm Hg ou superior. A pressão arterial automatizada do es",
+        "As diretrizes atuais enfatizam a terapia combinada com duas ou três classes de medicamentos anti-hipertensivos de primeira linha: bloqueadores dos canais de cálcio, bloqueadores do sistema renina-angiotensina e diuréticos tiazídicos."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da banca UNIMED RJ avalia o conhecimento sobre diretrizes atuais da hipertensão arterial, especificamente sobre métodos de diagnóstico e valores de referência.</strong> O candidato deve conhecer as mudanças nas definições e critérios diagnósticos estabelecidos pelas principais sociedades médicas.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A:</strong> Esta afirmação está CORRETA. A definição atual da hipertensão arterial é realmente PA ≥ 130/80 mmHg, conforme as diretrizes da American Heart Association (AHA) de 2017 e corroborada pelas diretrizes brasileiras mais recentes. Existe uma relação contínua e positiva entre os níveis pressóricos e o risco cardiovascular, sendo a hipertensão o principal fator de risco modificável para doenças cardiovasculares.</p><p><strong>Alternativa B:</strong> Esta alternativa também está CORRETA. A avaliação inicial da hipertensão deve efetivamente atingir esses três objetivos fundamentais: 1) aferição precisa da pressão arterial, 2) avaliação do risco cardiovascular global (usando escores como Framingham ou SCORE), e 3) detecção de causas secundárias de hipertensão. Esta abordagem sistemática está respaldada pelas diretrizes brasileiras de hipertensão arterial da SBC 2023.</p><p><strong>Alternativa C:</strong> <strong>Esta é a alternativa INCORRETA e representa a resposta esperada.</strong> Embora seja verdade que a pressão arterial automatizada pode ser medida com monitores oscilométricos fazendo 3 leituras em intervalos de 1 minuto, o valor diagnóstico de 135/85 mmHg está INCORRETO. Para a pressão arterial automatizada no consultório, o valor diagnóstico da hipertensão é ≥ 130/80 mmHg, não 135/85 mmHg. O valor de 135/85 mmHg é específico para a pressão arterial medida fora do consultório (MAPA ou MRPA). Esta é uma pegadinha clássica das provas, confundindo os pontos de corte entre diferentes métodos de mensuração.</p><p><strong>Alternativa D:</strong> Esta alternativa está CORRETA. As diretrizes atuais realmente enfatizam o tratamento combinado precocemente, especialmente em pacientes com PA muito elevada ou com alto risco cardiovascular. A combinação de bloqueadores dos canais de cálcio, inibidores da ECA/BRAs e diuréticos tiazídicos representa a tríade terapêutica de primeira linha, conforme recomendado pelas diretrizes brasileiras e internacionais mais atuais.</p><p><strong>Veredito Final:</strong> A resposta correta é <strong>Alternativa C</strong>, pois apresenta um erro conceitual importante ao usar o valor de 135/85 mmHg para o diagnóstico de hipertensão por pressão arterial automatizada no consultório, quando este valor é específico para medidas fora do consultório. Esta questão demonstra a importância de conhecer detalhadamente os diferentes métodos de mensuração pressórica e seus respectivos pontos de corte diagnósticos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_DiagnosticoEClassificacao",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_AvaliacaoClinicaEExamesComplem",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa",
+        "ClinicaMedica_Cardiologia_HipertensaoArterialSistemicaHa_TratamentoDaHipertensaoArteria"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Assinale a alternativa correta: Quais as condições que podem mimetizar no eletrocardiograma o infarto com supradesnivelamento do segmento ST?",
+      "alternativas": [
+        "Repolarização precoce",
+        "Miocardite",
+        "Síndrome de Takotsubo (cardiomiopatia por stress)",
+        "Todas acima"
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre diagnósticos diferenciais do infarto agudo do miocárdio com supradesnivelamento do segmento ST (IAMCSST).</strong> O candidato deve reconhecer que várias condições podem simular as alterações eletrocardiográficas características do IAMCSST, conhecimento fundamental para evitar diagnósticos equivocados e condutas inadequadas.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - Repolarização Precoce:</strong> Esta alternativa está CORRETA. A repolarização precoce pode apresentar supradesnivelamento do segmento ST, especialmente nas derivações inferiores e laterais. Caracteriza-se por concavidade superior do segmento ST, ponto J elevado, ondas T altas e presença de entalhes na parte descendente do QRS. É uma variante normal mais comum em jovens, negros e atletas, mas pode simular IAMCSST.</p><p><strong>Alternativa B - Miocardite:</strong> Esta alternativa também está CORRETA. A miocardite pode apresentar supradesnivelamento do segmento ST difuso, mimetizando IAMCSST. Diferentemente do infarto, o supradesnivelamento na miocardite é mais diffuse e não corresponde ao território de uma artéria coronariana específica. Frequentemente acompanhada de elevação de marcadores de necrose miocárdica (troponina) e sintomas sistêmicos como febre, mialgia e história viral prévia.</p><p><strong>Alternativa C - Síndrome de Takotsubo:</strong> Esta alternativa está CORRETA. A cardiomiopatia por stress (Síndrome de Takotsubo) pode apresentar supradesnivelamento do segmento ST, tipicamente nas derivações anteriores. Caracteriza-se por alterações transitórias da contratilidade miocárdica em padrão de balão apical, frecuentemente precedida por estresse físico ou emocional significativo. Diferentemente do infarto, há recuperação completa da função ventricular em semanas.</p><p><strong>Alternativa D - Todas acima:</strong> <strong>Esta é a alternativa CORRETA.</strong> Como todas as três condições anteriores (repolarização precoce, miocardite e Síndrome de Takotsubo) podem realmente mimetizar o IAMCSST no ECG, esta é a resposta que engloba corretamente todas as possibilidades diagnósticas mencionadas.</p><p><strong>Veredito Final:</strong> A resposta correta é <strong>Alternativa D</strong>, pois todas as condições listadas nas alternativas A, B e C são capazes de simular eletrocardiograficamente o infarto com supradesnivelamento do segmento ST. Este conhecimento é crucial na prática clínica, pois o tratamento do IAMCSST é uma emergência médica, mas o diagnóstico incorreto pode levar a procedimentos desnecessários e iatrogenias. O médico deve sempre correlacionar os achados eletrocardiográficos com a clínica, histórico do paciente e, quando necessário, complementar com outros exames como ecocardiografia ou coronariografia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_Eletrocardiograma",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Em relação ao exame físico do paciente portador de estenose mitral, assinale a opção que NÃO corresponde à doença avançada.",
+      "alternativas": [
+        "Hipofonese de B1.",
+        "B3 de ventrículo esquerdo.",
+        "Hiperfonese de B2 (P2 > A2).",
+        "Sopro de Graham Steell."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da banca UNIMED RJ avalia o conhecimento sobre os achados do exame físico na estenose mitral, especificamente quais sinais indicam doença avançada versus características de estágios menos avançados da patologia.</strong> O candidato deve dominar a semiologia cardiovascular da estenose mitral para reconhecer a progressão da doença.</p><p><strong>Vamos analisar cada alternativa:</strong></p><p><strong>Alternativa A - Hipofonese de B1:</strong> Esta alternativa está CORRETA e representa um sinal de DOENÇA AVANÇADA. Na estenose mitral significativa, o primeiro bulhar (B1) torna-se hipofonético devido à redução da força de fechamento da valva mitral. Com a progressão da estenose, a valva станови-se mais rígida e menos móvel, resultando em fechamento menos eficiente e, consequently, B1 mais fraco. Este é um achado característico da estenose mitral moderada a grave.</p><p><strong>Alternativa B - B3 de ventrículo esquerdo:</strong> <strong>Esta é a alternativa CORRETA e representa a resposta esperada.</strong> O B3 (terceiro bulhar) de ventrículo esquerdo NÃO corresponde à doença avançada de estenose mitral. O B3 é causado pela súbita parada do fluxo sanguíneo durante a fase de enchimento rápido do ventrículo esquerdo e é mais característico de estados de alto débito ou disfunção ventricular esquerda com sobrecarga de volume. Na estenose mitral, o que pode ocorrer é um B3 de ventrículo direito devido à sobrecarga de volume do VD secundária à hipertensão pulmonar. O B3 de VE não é um achado típico de estenose mitral avançada.</p><p><strong>Alternativa C - Hiperfonese de B2 (P2 > A2):</strong> Esta alternativa está CORRETA e representa um sinal de DOENÇA AVANÇADA. Na estenose mitral significativa, desenvolvimento de hipertensão pulmonar resulta em fechamento mais acentuado da valva pulmonar, tornando P2 hiperfonético. O P2 > A2 é um marcador indireto de hipertensão pulmonar, complicação frequente da estenose mitral avançada. Quanto mais grave a estenose, maior a chance de desenvolver hipertensão pulmonar e, consequently, P2 mais intenso.</p><p><strong>Alternativa D - Sopro de Graham Steell:</strong> Esta alternativa está CORRETA e representa um sinal de DOENÇA AVANÇADA. O sopro de Graham Steell é um sopro diastólico pulmonar causado pela insuficiência funcional da valva pulmonar secundária à dilatação do tronco pulmonar devido à hipertensão pulmonar. É um sopro de alta frequência, melhor audível no foco pulmonar, que aumenta com a inspiração (manobra de Rivero-Carvalho). Sua presença indica hipertensão pulmonar significativa, complicação da estenose mitral avançada.</p><p><strong>Veredito Final:</strong> A resposta correta é <strong>Alternativa B</strong>, pois o B3 de ventrículo esquerdo não é um achado característico de estenose mitral avançada. Esta questão destaca a importância de conhecer os sinais físicos específicos de cada cardiopatia e suas implicações na estratificação da gravidade da doença. O candidato deve reconhecer que, na estenose mitral avançada, observamos: hipofonese de B1 (valva mitral rígida), hiperfonese de P2 (hipertensão pulmonar) e sopro de Graham Steell (insuficiência pulmonar secundária à hipertensão pulmonar).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Um indivíduo de 73 anos, pardo, escriturário aposentado, procurou um consultório médico por apresentar tosse produtiva, com escarro mucopurulento nos últimos 6 dias. Informa ainda dispneia aos esforços há vários anos, mas que piorou desde o início das queixas que o levaram a procurar o médico. História pregressa de hipertensão arterial, dislipidemia e cirurgia para correção de hernia inguinal aos 60 anos. Informa carga tabágica de 50 maços/ano. O exame físico mostrou um paciente emagrecido, com frequência respiratória elevada (23 irpm), uso da musculatura acessória. Aumento no diâmetro anteroposterior do tórax. Murmúrio vesicular difusamente diminuído com estertores crepitantes na base do hemitórax direito. Em relação a este paciente os diagnósticos da condição atual e da pré-existente são:",
+      "alternativas": [
+        "Crise de broncoespasmo e enfisema pulmonar.",
+        "Pneumonia e enfisema pulmonar.",
+        "Pneumonia e bronquite crônica.",
+        "Embolia pulmonar e bronquite crônica."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia a capacidade de correlação clínico-radiológica no diagnóstico de pneumopatias, especificamente diferenciando entre as principais doenças pulmonares obstrutivas crônicas e infecções respiratórias agudas.</strong> O candidato deve integrar dados anamnéticos, exame físico e contexto epidemiológico para chegar ao diagnóstico correto.</p><p><strong>Vamos analisar o caso:</strong> Paciente 73 anos, ex-fumante (50 maços/ano), com tosse produtiva há 6 dias, dispneia progressiva, emagrecimento, FR 23 irpm, uso de musculatura acessória, aumento do diâmetro anteroposterior do tórax (tórax em barril), MV diminuído globalmente e estertores crepitantes na base direita.</p><p><strong>Alternativa A - Crise de broncoespasmo e enfisema:</strong> Esta alternativa está INCORRETA. Embora o paciente tenha história de tabagismo e sinais de doença pulmonar obstrutiva crônica (tórax em barril, MV diminuído), a presença de tosse produtiva com escarro mucopurulento há apenas 6 dias e estertores crepitantes em base pulmonar sugere infecção aguda, não apenas broncoespasmo. A crise de broncoespasmo tipicamente cursa com sibilos, que não foram mencionados no exame físico.</p><p><strong>Alternativa B - Pneumonia e enfisema:</strong> <strong>Esta é a alternativa CORRETA.</strong> O quadro clínico é compatível com pneumonia sobreposta a enfisema pulmonar. Os estertores crepitantes na base direita, tosse produtiva recente (6 dias) com escarro mucopurulento e piora da dispneia sugerem infecção respiratória aguda. O contexto de tabagismo pesado (50 maços/ano), emagrecimento, tórax em barril e MV diminuído indicam enfisema pulmonar como doença de base. Esta é a combinação mais provável com base na clínica apresentada.</p><p><strong>Alternativa C - Pneumonia e bronquite crônica:</strong> Esta alternativa está INCORRETA. Embora a pneumonia seja plausível, a bronquite crônica caracteriza-se por tosse e expectoração por pelo menos 3 meses por ano, em 2 anos consecutivos. O paciente apresenta dispneia há vários anos, mas o tabagismo e as características físicas (tórax em barril) são mais sugestivas de enfisema do que de bronquite crônica pura. A bronquite crônica cursa mais comumente com hipersonoridade e sibilos difusos, não mencionados aqui.</p><p><strong>Alternativa D - Embolia pulmonar e bronquite crônica:</strong> Esta alternativa está INCORRETA. Não há dados clínicos compatíveis com embolia pulmonar aguda (dor torácica súbita, hemoptise, sinais de trombose venosa profunda). A tosse produtiva, estertores crepitantes e processo de 6 dias são muito mais sugestivos de infecção respiratória do que de embolia. Além disso, a bronquite crônica é menos provável que o enfisema neste contexto.</p><p><strong>Veredito Final:</strong> A resposta correta é <strong>Alternativa B</strong>. O caso apresenta pneumonia sobreposta a enfisema pulmonar, condições frequentemente associadas em pacientes tabagistas idosos. A pneumonia é sugerida pelos sintomas agudos de 6 dias, produção de escarro mucopurulento e estertores localized, enquanto o enfisema é evidenciado pela história de tabagismo, alterações estruturais do tórax (tórax em barril) e redução difusa do murmúrio vesicular. Este tipo de questão é comum em provas de clínica médica, testando a capacidade de integrar dados clínicos para diagnóstico diferencial de pneumopatias.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Pneumonia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "<html><head></head><body>Paciente negro 33 anos masculino com febre a esclarecer apresenta alteração cutânea, com diagnóstico dermatológico eritema nodoso. Realizada radiografia do tórax demonstrada abaixo. Qual é principal hipótese diagnóstica?\n\n<img src=\"https://medbrave.com.br/questions/unimedrj-2023-r1/qQ15.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Dermatopolimiosite.",
+        "Linfoma.",
+        "Sarcoidose.",
+        "Tuberculose."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da banca UNIMED RJ avalia a correlação entre eritema nodoso e pneumopatias, especificamente testando o conhecimento sobre as principais causas sistêmicas que podem apresentar esta associação e suas características radiológicas típicas.</strong> O candidato deve correlacionar amanifestação cutânea com o padrão radiológico para chegar ao diagnóstico mais provável.</p><p><strong>Vamos analisar o caso:</strong> Paciente jovem (33 anos), masculino, com febre e eritema nodoso. O eritema nodoso é uma paniculite que se manifesta como nódulos eritematosos dolorosos, geralmente nas regiões pré-tibiais, e pode estar associado a diversas patologias sistêmicas, incluindo infecções, doenças autoimunes e neoplasias.</p><p><strong>Alternativa A - Dermatopolimiosite:</strong> Esta alternativa está INCORRETA. A dermatopolimiosite pode cursar com alterações cutâneas, mas caracteristicamente apresenta o sinal de Gottron (pápulas violáceas nas articulações) e heliotropo (eritema periorbitário), não eritema nodoso. Além disso, na dermatopolimiosite, as alterações radiológicas pulmonares, quando presentes, são mais compatíveis com pneumonite intersticial e fibrose pulmonar, com padrão reticular ou em \"vidro despolido\", não o padrão hilar típico da sarcoidose.</p><p><strong>Alternativa B - Linfoma:</strong> Esta alternativa está INCORRETA. Embora linfomas possam cursar com eritema nodoso (forma paraneoplásica) e febre (sintoma B), as alterações radiológicas torácicas no linfoma tipicamente incluem massas mediastinais, linfonodomegalias hilares simétricas e consolidações, não o padrão de adenopatia hilar bilateral simétrica característica da sarcoidose. A radiografia apresentada (não disponível no texto) deve mostrar um padrão hilar típico de sarcoidose.</p><p><strong>Alternativa C - Sarcoidose:</strong> <strong>Esta é a alternativa CORRETA.</strong> A sarcoidose é uma doença sistêmica de etiologia desconhecida, caracterizada pela formação de granulomas não caseificantes. O eritema nodoso é uma das manifestações cutâneas mais comuns da sarcoidose, especialmente na forma aguda (síndrome de Löfgren), que cursa com febre, artralgias, eritema nodoso e adenopatia hilar bilateral. A radiografia torácica na sarcoidose characteristically mostra adenopatia hilar bilateral simétrica, às vezes com Calcificação em \"casca de ovo\". Esta é a associação mais clássica e frequente entre eritema nodoso e alterações radiológicas pulmonares.</p><p><strong>Alternativa D - Tuberculose:</strong> Esta alternativa está INCORRETA. Embora a tuberculose possa cursar com eritema nodoso (hipersensibilidade a complexos de Mycobacterium tuberculosis) e febre, as alterações radiológicas são diferentes. Na tuberculose primária, pode haver adenopatia hilar, mas frequentemente acompanha-se de foco pulmonar primário (opacidade redondeada em campo médio) e a adenopatia é mais assimétrica. Na tuberculose secundária, predominam cavitações, nódulos, infiltrados em lobos superiores e可能的 calcificações. O padrão radiológico de adenopatia hilar bilateral simétrica é mais típico de sarcoidose que de tuberculose.</p><p><strong>Veredito Final:</strong> A resposta correta é <strong>Alternativa C</strong>. A sarcoidose é a causa mais provável considerando a tríade de eritema nodoso, febre e padrão radiológico hilar bilateral simétrico. Esta questão é clássica em provas de clínica médica, testando o conhecimento sobre as principais causas de eritema nodoso e suas características radiológicas distintas. O eritema nodoso na sarcoidose geralmente indica melhor prognóstico e frequentemente apresenta resolução espontânea, diferenciando-se de outras causas mais crônicas da condição.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica_Dermatologia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_ArtropatiasInflamatoriasDoenca",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_Sarcoidose",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasSistemicasComManifestac",
+        "ClinicaMedica_Dermatologia_DisturbiosVasculares",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Homem, 59 anos de idade, procura assistência por dificuldade para caminhar e realizar movimentos finos nas mãos, principalmente para desenhar. Ao exame apresenta atrofia do abdutor do dedo mínimo nas duas mãos, pés cavos e dedos em martelo além de marcha escarvante. Hipoestesia em bota. Hiporreflexia patelar. Qual diagnóstico provável?",
+      "alternativas": [
+        "Miastenia Gravis.",
+        "Distrofia escapulo umeral",
+        "Doença de Charcot-Marie-Tooth",
+        "Distrofia Miotônica"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UNIMED RJ 2023 avalia seu conhecimento sobre neuropatias hereditárias, especificamente a Doença de Charcot-Marie-Tooth. O cenário clínico apresentado é clássico para essa condição.</p><p>O paciente de 59 anos apresenta um quadro neurológico crônico e progressivo com várias características muito específicas. Vamos analisar o que cada achado significa:</p><p><strong>Atrofia do abdutor do dedo mínimo</strong> é um sinal muito característico da Doença de Charcot-Marie-Tooth, indicando comprometimento do nervo ulnar e dos músculos intrínsecos da mão. <strong>Pés cavos e dedos em martelo</strong> são deformidades típicas que resultam da atrofia muscular e do desequilíbrio entre músculos extensores e flexores.</p><p>A <strong>marcha escarvante</strong> (steppage gait) acontece porque o paciente não consegue dorsiflexionar adequadamente os pés, sendo forçado a levantar excessivamente os joelhos para não arrastar os pés no chão. A <strong>hipoestesia em bota</strong> refere-se à perda de sensibilidade em distribuição que sugere comprometimento de nervos periféricos, e a <strong>hiporreflexia patelar</strong> indica reduzida ou ausente resposta reflexa, comum em neuropatias crônicas.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Miastenia Gravis (A)</strong> é uma doença autoimune da placa motora que causa fraqueza muscular flutuante, mas não apresenta atrofia muscular, deformidades estruturais como pés cavos ou hiporreflexia. Os sintomas da miastenia variam durante o dia e são majoritariamente proximais.</p><p><strong>Distrofia escapulo-umeral (B)</strong> afeta principalmente a cintura escapular com fraqueza proximal dos braços, diferente do padrão distal observado aqui. Além disso, não causa as deformidades específicas de pés e mãos.</p><p><strong>Distrofia Miotônica (D)</strong> é uma miopatia que cursa com miotonia (dificuldade de relaxamento muscular), catarata, alopecia e alterações cardíacas. O padrão de fraqueza é mais proximal, e as alterações de sensibilidade não são características.</p><p>O conjunto de achados - atrofia distal, deformidades específicas, marcha escarvante, hipoestesia em bota e hiporreflexia - forma um padrão típico da Doença de Charcot-Marie-Tooth, uma neuropatia hereditáriaautossômica dominante mais comum em adultos jovens, mas que pode se manifestar até a quinta ou sexta década de vida.</p><p><strong>Resposta final: C - Doença de Charcot-Marie-Tooth.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares",
+        "ClinicaMedica_Neurologia_DoencasNeuromusculares_NeuropatiasPerifericas"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Qual das vacinas abaixo é contraindicada em pacientes imunodeprimidos?",
+      "alternativas": [
+        "Hepatite B",
+        "Dupla bacteriana",
+        "Tríplice viral",
+        "Influenza"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da prova UNIMED RJ 2023 avalia seu conhecimento sobre vacinação em pacientes imunodeprimidos, um tema fundamental na medicina preventiva e de grande relevância clínica no dia a dia do médico.</p><p>Para responder corretamente, precisamos entender a classificação das vacinas quanto ao tipo de patógeno utilizado:</p><p><strong>Vacinas com vírus vivos atenuados</strong> são contraindicadas em imunodeprimidos porque, embora atenuados, esses patógenos podem causar doença disseminada em pacientes com sistema imunológico comprometida.</p><p>Analisando cada alternativa:</p><p><strong>Hepatite B (A)</strong> é uma vacina recombinante, produzida a partir de proteína de superfície do vírus. É uma das vacinas mais seguras para imunodeprimidos e inclusive recomendada para esses pacientes.</p><p><strong>Dupla bacteriana (B)</strong> - presumindo que se refere à dupla bacteriana tipo Haemophilus influenzae e Neisseria meningitidis - é uma vacina conjugada de polisacarídeos, sem vírus vivos. É segura em imunodeprimidos.</p><p><strong>Tríplice viral (C)</strong> contém vírus vivos atenuados de sarampo, caxumba e rubéola. Esta é a alternativa correta porque contém vírus vivos que podem causar doença disseminada em pacientes imunodeprimidos, sendo, portanto, contraindicada.</p><p><strong>Influenza (D)</strong> pode ser encontrada em duas versões: inativada (preferida para imunodeprimidos) ou live-attenuated intranasal. A versão inativada é segura e recomendada para imunodeprimidos.</p><p>É importante lembrar que, segundo as diretrizes do Ministério da Saúde 2025, pacientes imunodeprimidos devem receber todas as vacinas inativadas disponíveis, e devem evitar apenas aquelas com vírus vivos. A tríplice viral é uma exceção importante, pois contém vírus vivos atenuados que podem causar complicações graves em pacientes com deficiência imunológica.</p><p><strong>Resposta final: C - Tríplice viral.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Vacinas",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_ImunossuprimidosNaohiv"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Paciente masculino, 52 anos, procura serviço de emergência ortopédica por dor excruciante em tornozelo direito e hálux direito. Refere início dos sintomas por volta de 05:00h, quando se levantou para usar o toilette e percebeu dor intensa ao pisar no chão. Informa ter participado de evento social na véspera, com caminhadas em trilhas, banho de cachoeira, e finalizado com churrasco e bebidas alcoólicas diversas e em grande volume. Nunca apresentou quadro semelhante no passado. Ao exame clínico, franca artrite de tornozelo e halux, que o impedem de apoiar o pé no chão. Afebril, hipertenso (PA: 190 x 90 mmHg). Utiliza regularmente as seguintes medicações: metformina, rosuvastatina, hidroclorotiazida, nifedipina e alopurinol. A hipótese diagnóstica mais provável para o quadro clínico descrito seria:",
+      "alternativas": [
+        "Artrite séptica.",
+        "Espondilite anquilosante.",
+        "Gota.",
+        "Fratura de marcha."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UNIMED RJ 2023 avalia seu conhecimento sobre artrites agudas, especificamente na diferenciação diagnóstica entre gota e outras condições que cursam com artrite monoarticular.</p><p>O cenário clínico apresentado é bastante típico de crise gotosa. Vamos analisar os elementos-chave:</p><p><strong>Demografia e fatores de risco:</strong> Homem de 52 anos, hipertenso, usuário de medicações múltiplas. A hipertensão é frequentemente associada à gota, e algumas medicações podem influenciar o metabolismo do ácido úrico.</p><p><strong>Timing e circumstances:</strong> Início súbito às 05:00h é muito típico de gota - as crises costumam ocorrer no período noturno/matinal, possivelmente devido à acidose que ocorre durante o sono, baixando o pH e favorecendo a precipitação de urato. O evento social com consumo de álcool é um gatilho clássico - álcool aumenta a produção de urato e reduz sua excreção renal.</p><p><strong>Localização:</strong> Tornozelo e hálux são sítios muito típicos de preferência da gota. O hallux (dedão do pé) é o local mais comum de primeira crise gotosa, phenomena conhecido como 'podagra'.</p><p><strong>Características clínicas:</strong> Artrite aguda severa que impede de apoiar o pé no chão é típica de gota. A ausência de febre neste caso não exclui gota, mas torna artrite séptica menos provável na ausência de outros fatores de risco.</p><p><strong>Analisando as alternativas incorretas:</strong></p><p><strong>Artrite séptica (A)</strong> é improvável porque: 1) é geralmente febril, 2) há história clara de fatores precipitantes para gota, 3) localização e timing são típicos de gota, 4) artrite séptica é mais comum em outras articulações e em pacientes diabéticos ou com outros fatores de risco.</p><p><strong>Espondilite anquilosante (B)</strong> é uma espondiloartrite que cursa com dor lombar inflamatória crônica, não artrite monoarticular aguda de grandes articulações. O padrão clínico é completamente diferente.</p><p><strong>Fratura de marcha (D)</strong> é uma fratura por stress que afeta principalmente o metatarso, não cursa com artrite aguda e inflamatória como descrita.</p><p>A presença de alopurinol no tratamento regular pode parecer confusa, mas é possível que o paciente seja um gotoso já conhecido que não estava aderindo adequadamente ao tratamento ou que tenha níveis subótimos de ácido úrico.</p><p><strong>Resposta final: C - Gota.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatorias",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatorias_ArtritesMicrocristalinas",
+        "ClinicaMedica_Reumatologia_ArtropatiasInflamatorias_Gota"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "A cetoacidose diabética é uma urgência médica definida pela presença de acidose metabólica e:",
+      "alternativas": [
+        "Cetonemia, hiperglicemia > 250mg/dL",
+        "Cetonemia, anuria",
+        "Hiperglicemia > 400mg/dL e poliúria",
+        "Bicarbonatúria e ganho ponderal"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da prova UNIMED RJ 2023 avalia seu conhecimento sobre os critérios diagnósticos de cetoacidose diabética (CAD), uma das complicações mais graves do diabetes mellitus.</p><p>Segundo as diretrizes brasileiras mais atuais (SBED 2025), a cetoacidose diabética é definida como uma tríade clássica: <strong>1) hiperglicemia significativa, 2) acidose metabólica, e 3) presença de corpos cetônicos.</strong></p><p>Vamos analisar cada elemento:</p><p><strong>Cetonemia</strong> refere-se à presença de corpos cetônicos no sangue, especificamente acetoacetato e β-hidroxibutirato. Estes são produtos do metabolismo alternativo da glicose, formados quando há falta de insulina e o organismo utiliza lipídeos como fonte de energia.</p><p><strong>Hiperglicemia > 250 mg/dL</strong> é um critério estabelecido porque indica déficit significativo de insulina. Valores menores podem ocorrer em algumas situações, mas 250 mg/dL é um ponto de corte amplamente aceito que distingue cetoacidose de outras formas de distúrbios metabólicos.</p><p>É importante entender que <strong>anuria (B)</strong> é uma complicação possível, mas não definidora da CAD. <strong>Hiperglicemia > 400 mg/dL (C)</strong> é muito alta e pode ser encontrada em estados hiperosmulares, mas não é específica para CAD. <strong>Bicarbonatúria (D)</strong> é associada à alcalose metabólica, não acidose como na CAD.</p><p>A acidose metabólica na CAD é um gap anionico elevado, causada pelo acúmulo de ácidos orgânicos (corpos cetônicos). O sistema tamponé do bicarbonato é primeiramente utilizado, resultando em acidose e consumo de bicarbonato.</p><p>Clinicamente, pacientes com CAD apresentam também desidratação, poliúria, polidipsia, náuseas, vômitos e, em casos graves, alterações de consciência. O tratamento envolve hidratação vigorosa, insulinoterapia, correção hidroeletrolítica e investigação da causa precipitante.</p><p><strong>Resposta final: A - Cetonemia, hiperglicemia > 250mg/dL.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesCetoacidoseDiabetica"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Você trabalha como médico do trabalho de uma grande empresa, quando questionado se o paciente apresenta história de hepatite, o candidato responde que já teve hepatite na infância, mas o médico na época disse que o tipo não causa hepatite crônica. O tipo de hepatite que o paciente está se referindo é:",
+      "alternativas": [
+        "Hepatite B",
+        "Hepatite Gama",
+        "Hepatite C",
+        "Hepatite A"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UNIMED RJ 2023 aborda um tema fundamental em medicina do trabalho: o conhecimento sobre tipos de hepatite e sua evolução clínica, informações essenciais para avaliação ocupacional de pacientes.</p><p>A afirmativa do médico de que \"o tipo não causa hepatite crônica\" é crucial para identificar qual vírus o paciente está descrevendo. Esta informação narra imediatamente para os tipos de hepatite que cursam apenas com infecção aguda e não evoluem para cronicidade.</p><p>Vamos analisar as características de cada tipo de hepatite:</p><p><strong>Hepatite A:</strong> Causada pelo vírus HAV (Hepatitis A virus), é uma infecção fecal-oral que ocorre principalmente na infância. Caracteriza-se por ser <strong>sempre aguda, sem cronificação</strong>. O vírus é eliminado pelo organismo, e o paciente desenvolve imunidade permanente. O quadro clínico é geralmente autolimitado, com icterícia, elevação das transaminases, mas sem evolução para cirrose ou hepatite crônica.</p><p><strong>Hepatite B:</strong> Causada pelo HBV, é transmitted via parenteral e sexual. Pode evoluir para cronificação em até 10% dos casos agudos em adultos (e até 90% em crianças), com possibilidade de evoluir para cirrose e carcinoma hepatocelular.</p><p><strong>Hepatite C:</strong> Causada pelo HCV, transmitted via parenteral, tem uma das maiores taxas de cronificação (cerca de 80% dos casos agudos), evoluindo frequentemente para cirrose e carcinoma hepatocelular.</p><p><strong>Hepatite Gama (B):</strong> Esta nomenclatura não é standard. Provavelmente se refere à hepatite B, que era antigamente chamada de \"hepatite sérica\" ou \"hepatite B\". Regardless, a hepatite B claramente pode evoluir para cronicidade.</p><p>Segundo as diretrizes do Ministério da Saúde 2025, a hepatite A é prevented por vacina, mas a infecção natural também confere imunidade. No contexto ocupacional, é importante conhecer que pacientes com história de hepatite A aguda estão protegidos contra recidiva, o que pode influenciar decisões sobre exposição ocupacional.</p><p>A ausência de cronificação da hepatite A também significa que esses pacientes não desenvolvem portador crônico, não necessitam de seguimento especializado, e podem doar sangue após a recuperação completa.</p><p><strong>Resposta final: D - Hepatite A.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_HepatitesVirais",
+        "MedicinaPreventiva",
+        "MedicinaPreventiva_SaudeDoTrabalhador"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Em 2022 o Brasil comemora 32 anos sem nenhum caso de poliomielite no Brasil. Porém a queda na cobertura vacinal pode gerar risco da introdução da doença no país. Sobre as medidas epidemiológicas para controle da poliomielite, qual das assertivas abaixo é correta?",
+      "alternativas": [
+        "A eliminação da doença no Brasil foi alcançada por meio da administração da vacina do poliovírus inativado (IPV) em campanhas de vacinação em massa e posteriormente da vacina oral contra a pólio (VOP) em rotina das crianças, aliadas à vigilância epidemiol",
+        "Em países com boa cobertura vacinal têm ocorrido surtos de poliomielite causados por poliovírus derivados da vacina (PVDV).",
+        "Nem todo caso de deficiência motora flácida de início súbito em crianças é considerado suspeito.",
+        "A vacinação confere imunidade duradoura para o sorotipo correspondente ao poliovírus responsável pelo estímulo antigênico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre epidemiologia da poliomielite e estratégias de controle utilizadas no Brasil. O enunciado contextualiza uma situação favorável - 32 anos sem casos autóctones - mas alerta para os riscos relacionados à queda na cobertura vacinal.</p><p><strong>A resposta correta é D.</strong> A vacinação confere imunidade duradoura e específica para o sorotipo do poliovírus responsável pelo estímulo antigênico. Essa é uma característica fundamental das vacinas contra a poliomielite.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> Incorreta. A eliminação da poliomielite no Brasil foi alcançada principalmente pela Vacina Oral Poliomielite (VOP) em campanhas de massa, seguida pela incorporação da Vacina Inativada (IPV) na rotina. O texto inverteu a sequência temporal das vacinas.</p><p><strong>Alternativa B:</strong> Incorreta. Em países com BOA cobertura vacinal, OS SURTOS SÃO RAROS. Os surtos por poliovírus derivados da vacina (PVDV) ocorrem principalmente em áreas com cobertura inadequada, onde o vírus vacinal pode circular e mutar.</p><p><strong>Alternativa C:</strong> Incorreta. TODOS os casos de deficiência motora flácida aguda em crianças devem ser considerados suspeitos para poliomielite, independentemente da causa, até que seja afastada por investigação epidemiológica e laboratorial.</p><p><strong>Alternativa D:</strong> Correta. A vacinação confere imunidade duradoura e específica para o sorotipo correspondente ao poliovírus. Se uma pessoa foi vacinada com a cepa do sorotipo 1, desenvolverá imunidade específica para este sorotipo.</p><p>Esta questão testa conceitos fundamentais sobre a epidemiologia da poliomielite e reforça a importância da manutenção da alta cobertura vacinal para o controle efetivo da doença.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "MedicinaPreventiva_Epidemiologia_AspectosEpidemiologicosDasDoencasTransmissiveis",
+        "MedicinaPreventiva_Epidemiologia_ProcessosEndemicosEEpidemicoEn"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Um paciente vai a emergência com ferimento superficial leve na perna, por mordedura de cão sadio e domiciliado. Ele não traz carteira vacinal e só se recorda de ter tomado, nos últimos cinco anos, vacinação contra influenza e COVID-19. Sendo assim, qual a conduta a ser tomada?",
+      "alternativas": [
+        "Observar o animal e reforço da dupla adulto (dT - difteria e tétano)",
+        "Observar o animal e iniciar esquema vacinal de 03 doses de antirrábica com intervalos de 0, 3 e 7 dias",
+        "Administrar soro anti-rábico (SAR) 40 Ul/Kg de peso e iniciar esquema de vacinação antirrábica de 05 doses",
+        "Administrar imunoglobulina antirrábica humana (IGHAR) dose única 20 Ul/Kg"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre profilaxia pós-exposição em raiva, especialmente em situações de exposição a cães domiciliados saudáveis. O caso envolve um paciente com ferimento superficial por mordedura de cão sadio e domiciliado, sem carteira vacinal.</p><p><strong>A resposta correta é A.</strong> Observar o animal por 10 dias e realizar reforço da dupla adulto (dT) é a conduta adequada para este cenário.</p><p>Vamos analisar detalhadamente cada alternativa:</p><p><strong>Alternativa A:</strong> Correta. Para cães SADIOS e DOMICILIADOS, a conduta é observação do animal por 10 dias e reforço da dupla adulto. Não há indicação de profilaxia antirrábica para exposições de baixo risco.</p><p><strong>Alternativa B:</strong> Incorreta. O esquema de 3 doses de antirrábica (0, 3, 7 dias) não é indicado para este caso. Este esquema é reservado para exposição de ALTO RISCO (cães vadios, silvestres, ou quando não é possível observar o animal).</p><p><strong>Alternativa C:</strong> Incorreta. A administração de soro antirrábico (SAR) 40 UI/kg + esquema de 5 doses é excessiva para este caso. O SAR é reservado apenas para casos de ALTO RISCO quando há exposição grave.</p><p><strong>Alternativa D:</strong> Incorreta. A imunoglobulina antirrábica (IGHAR) não é indicada para este caso de baixo risco, especialmente sendo cão domiciliado e saudável.</p><p><strong>Critérios de risco em profilaxia de raiva:</strong></p><p>• <strong>BAIXO RISCO:</strong> Cão/gato sadio, domiciliado, observável (conduta: observação + reforço dT)<br>• <strong>ALTO RISCO:</strong> Cão/gato vadior, silvestre, raivoso, ou observação impossível (conduta: esquema vacinal completo + IGHAR)</p><p>A chave para acertar esta questão é reconhecer que um cão sadio e domiciliado representa baixo risco, e que a observação do animal é a estratégia de manejo recomendada.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_AnimaisPeconhentos",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Qual das alternativas abaixo se trata de uma doença de notificação compulsória em 24h?",
+      "alternativas": [
+        "Acidente de trabalho com exposição de material biológico",
+        "Rubéola",
+        "Doença de Creutzfeldt Jakob",
+        "Hanseníase"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre notificação compulsória de doenças, especificamente sobre quais condições devem ser comunicadas às autoridades sanitárias em 24 horas.</p><p><strong>A resposta correta é B - Rubéola.</strong> A rubéola é uma doença de notificação compulsória imediata (24h) conforme a Lista Nacional de Notificação Compulsória do Ministério da Saúde.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Incorreta. Acidente de trabalho com exposição a material biológico é de notificação compulsória, MAS em 30 DIAS, não em 24h. A notificação imediata (24h) é reservada para doenças e agravos de maior relevância epidemiológica.</p><p><strong>Alternativa B:</strong> Correta. Rubéola é doença de notificação compulsória em 24h. Faz parte do grupo de doenças imunopreveníveis que requerem notificação imediata para permitir ações de controle eficientes, como isolamento de casos e investigação de contactantes.</p><p><strong>Alternativa C:</strong> Incorreta. Doença de Creutzfeldt-Jakob é de notificação compulsória, MAS em 7 DIAS, não em 24h. É uma doença rara com período de incubação longo, que permite notificação em prazo maior.</p><p><strong>Alternativa D:</strong> Incorreta. Hanseníase é de notificação compulsória, MAS em 7 DIAS, não em 24h. A hanseníase tem baixa infectividade e amplo período de incubação, permitindo notificação em prazo maior.</p><p><strong>Grupos de notificação compulsória:</strong></p><p>• <strong>24 horas:</strong> Doenças de alta transmissibilidade e gravidade (febre amarela, dengue grave, rubéola, sarampo, etc.)<br>• <strong>7 dias:</strong> Doenças com menor urgência epidemiológica (hanseníase, tuberculose, etc.)<br>• <strong>30 dias:</strong> Acidentes de trabalho, violência doméstica, etc.</p><p>A estratégia para resolver este tipo de questão é memorizar as principais doenças de notificação imediata e seus respectivos prazos, priorizando aquelas com maior relevância epidemiológica.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Os ensaios clínicos controlados randomizados constituem um dos principais avanços científicos entre os métodos de pesquisa durante o século XX. Marque a afirmação correta sobre o risco de não utilizar a estratégia de mascaramento/cegamento em ensaios clínicos?",
+      "alternativas": [
+        "Este procedimento objetiva neutralizar a influência que os participantes podem ter em decorrência das expectativas sobre eficácia e tolerabilidade do tratamento utilizado, e não tem qualquer influência sobre a atuação da equipe de pesquisa.",
+        "No estudo duplo-cego geralmente é o pesquisador que mede o desfecho e o participante que desconhecem a intervenção sendo administrada. No entanto, ocasionalmente os sujeitos sendo cegos podem mudar e, por isso, não é importante mencionar quem são os cegos",
+        "Com o cegamento (ou mascaramento) objetiva-se minimizar o erro de informação e consequentemente o viés de informação.",
+        "O conhecimento do grupo de tratamento ao qual os indivíduos pertencem não interferem no processo de coleta de dados."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre metodologia de pesquisa clínica, especificamente sobre o cegamento em ensaios clínicos controlados randomizados. O enunciado questiona os riscos de não utilizar o mascaramento/cegamento nos estudos.</p><p><strong>A resposta correta é C.</strong> O cegamento visa minimizar o erro de informação e, consequentemente, o viés de informação, garantindo maior validade interna aos resultados.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> Incorreta. O cegamento não apenas neutraliza expectativas dos participantes, mas também PROTETE A EQUIPE DE PESQUISA de viés na coleta e interpretação de dados. A frase 'não tem qualquer influência sobre a atuação da equipe' está incorreta.</p><p><strong>Alternativa B:</strong> Incorreta. No estudo duplo-cego, TANTO o pesquisador quanto o participante desconhecem a intervenção. A afirmação de que 'geralmente é o pesquisador que mede o desfecho' está incorreta. Além disso, É FUNDAMENTAL mencionar quem são os cegos para avaliar o risco de viés.</p><p><strong>Alternativa C:</strong> Correta. O cegamento/minimização do erro de informação e o consequente viés de informação. Quando todos os envolvidos desconhecem o tratamento, há menor tendência de interpretação tendenciosa dos resultados.</p><p><strong>Alternativa D:</strong> Incorreta. O conhecimento do grupo de tratamento PODE INTERFERIR significativamente no processo de coleta de dados, causando viés de informação. Por exemplo, avaliadores cientes de que o paciente está no grupo placebo podem interpretar sintomas de forma diferente.</p><p><strong>Tipos de cegamento:</strong></p><p>• <strong>Simples cego:</strong> Apenas o participante desconhece<br>• <strong>Duplo cego:</strong> Participante e avaliador desconhecem<br>• <strong>Triplo cego:</strong> Participante, avaliador e analista dos dados desconhecem</p><p><strong>Vantagens do cegamento:</strong></p><p>• Reduz viés de seleção<br>• Minimiza viés de informação<br>• Melhora a validade interna<br>• Facilita a análise por intenção de tratar</p><p>Esta questão testa conceitos fundamentais de metodologia de pesquisa que são essenciais para a prática baseada em evidências.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_PesquisaClinica",
+        "MedicinaPreventiva_Epidemiologia_MedicinaBaseadaEmEvidencias"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Baseado no estudo publicado em 2020 - Fatores associados ao desfecho de morte em pacientes com doença grave pelo coronavírus (COVID-19): um estudo de caso controle. Justificativa: até o momento, a exploração de características clínicas em pacientes graves com COVID-19 era principalmente do mesmo centro em Wuhan, China. Os dados clínicos em outros centros são limitados. Este estudo visa explorar os parâmetros viáveis que podem ser usados na prática clínica para prever o prognóstico em pacientes hospitalizados com doença grave por coronavírus (COVID-19). Com base nos estudos Caso-Controle é correto afirmar:",
+      "alternativas": [
+        "Permite a investigação simultânea de uma maior variedade de possíveis fatores de risco",
+        "Útil para o estudo de doenças comuns, porque apenas uma amostra da coorte subjacente, os controles é necessária para se obter informação sobre a distribuição da exposição com base populacional.",
+        "Tamanho da amostra é geralmente maior do que em estudos de coorte, podendo-se empregar exames e/ou testes caros para determinar a exposição",
+        "É relativamente mais rápido, porém difícil para controlar a consistência das técnicas de mensuração."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre as características metodológicas dos estudos caso-controle, referenciando um estudo sobre COVID-19. O enunciado questiona as vantagens e limitações deste tipo de desenho de estudo.</p><p><strong>A resposta correta é A.</strong> Os estudos caso-controle permitem investigar simultaneamente uma maior variedade de possíveis fatores de risco, sendo particularmente úteis para doenças raras ou quando o tempo de seguimento seria impraticável.</p><p>Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> Correta. Os estudos caso-controle são excelentes para investigar múltiplos fatores de risco simultaneamente. Partindo dos casos (que já desenvolveram o desfecho), pode-se avaliar retrospectivamente diversas exposições, sem necessidade de seguir grandes populações por longo tempo.</p><p><strong>Alternativa B:</strong> Incorreta. Estudos caso-controle são ESPECIALMENTE ÚTEIS para doenças RARAS, não comuns. Para doenças comuns, estudos de coorte podem ser mais adequados, permitindo melhor estimativa de incidência e risco relativo.</p><p><strong>Alternativa C:</strong> Incorreta. O tamanho da amostra em estudos caso-controle é GERALMENTE MENOR que em coorte, não maior. Esta é uma vantagem importante: permite estudar doenças raras sem necessidade de grandes populações. O custo também tende a ser menor.</p><p><strong>Alternativa D:</strong> Incorreta. Estudos caso-controle são RELATIVAMENTE MAIS RÁPIDOS, mas NÃO são necessariamente 'difíceis para controlar a consistência'. Na verdade, essa limitação é mais característica de estudos transversais, onde há dificuldade de estabelecer temporalidade.</p><p><strong>Vantagens dos estudos caso-controle:</strong></p><p>• Ideais para doenças raras ou com longo período de latência<br>• Múltiplos fatores de risco podem ser estudados simultaneamente<br>• Resultados obtidos rapidamente<br>• Requerem menor número de participantes<br>• Menor custo</p><p><strong>Limitações dos estudos caso-controle:</strong></p><p>• Não permitem calcular incidência<br>• Suscetíveis a viés de recall<br>• Dificuldade para estabelecer causalidade<br>• Melhor para um desfecho por vez</p><p>No contexto da COVID-19, os estudos caso-controle foram fundamentais para identificar rapidamente fatores de risco para casos graves, permitindo decisões clínicas em tempo oportuno.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_TiposDeEstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_MedicinaBaseadaEmEvidencias",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Covid"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "As arboviroses transmitidas pelo Aedes aegypti (Dengue, Chikungunya e Zika) têm se constituído em um dos principais problemas de saúde pública no mundo. A dengue é a arbovirose urbana de maior relevância nas Américas. Estima-se que 3 bilhões de pessoas estejam sob o risco de contrair a doença e que ocorram, anualmente, 390 milhões de infecções e 20 mil mortes. Segundo a Portaria GM/MS nº 1.378, de 9 de julho de 2013, entende-se por vigilância em saúde \"um processo contínuo e sistemático de coleta, consolidação, disseminação de dados sobre eventos relacionados à saúde, visando o planejamento e a implementação de medidas de saúde pública para a proteção da saúde da população, a prevenção e controle de riscos, agravos e doenças, bem como para a promoção da saúde\". Nesse contexto, compete à vigilância epidemiológica desempenhar um rol de atividades, entre as quais está CORRETO afirmar:",
+      "alternativas": [
+        "notificar e investigar oportunamente os casos suspeitos de dengue, Chikungunya e Zika, para acompanhar, de forma contínua, a evolução temporal desses agravos, e detectar efetivamente mudanças no padrão de ocorrência, surtos e epidemias;",
+        "não há necessidade de realizar análises epidemiológicas descritivas dos casos, em função de variáveis relacionadas a pessoa, tempo e espaço;",
+        "integrar as informações de vigilância de casos, vigilância entomológica e vigilância laboratorial não se faz necessário no caso de arboviroses;",
+        "promover a integração entre as áreas de controle vetorial, assistência e demais entes que atuam na prevenção e controle das arboviroses, visando à adoção de medidas pertinentes capazes de controlar e/ou impedir a transmissão, quando possível, e de reduzir"
+      ],
+      "correta": -1,
+      "professor_comment": "<p>Esta questão da banca UNIMED RJ 2023 avalia seu conhecimento sobre as competências da vigilância epidemiológica no contexto das arboviroses transmitidas pelo Aedes aegypti. O examinador busca verificar se você compreende a dinâmica integral da vigilância em saúde aplicada às doenças transmitidas por vetores.</p><p><strong>A resposta correta é A - notificar e investigar oportunamente os casos suspeitos de dengue, Chikungunya e Zika, para acompanhar, de forma contínua, a evolução temporal desses agravos, e detectar efetivamente mudanças no padrão de ocorrência, surtos e epidemias.</strong></p><p>Vamos analisar cada alternativa para entender o raciocínio:</p><p><strong>Alternativa A:</strong> Esta é a resposta correta. A vigilância epidemiológica realmente deve notificar e investigar casos suspeitos de arboviroses de forma oportuna. A análise temporal contínua permite detectar mudanças no padrão epidemiológico, identificar surtos e epidemias precocemente - o que é fundamental para o controle dessas doenças em um contexto de mudanças climáticas e urbanização que favorecem a proliferação do Aedes aegypti.</p><p><strong>Alternativa B:</strong> Incorreta. As análises epidemiológicas descritivas utilizando variáveis de pessoa, tempo e espaço são fundamentais para a vigilância epidemiológica. Sem essas análises, não seria possível identificar grupos populacionais de risco, tendências temporais e distribuição espacial dos casos.</p><p><strong>Alternativa C:</strong> Incorreta. A integração entre vigilância de casos, entomológica e laboratorial é essencial para o controle das arboviroses. A vigilância entomológica monitora a densidade vetorial, a laboratorial confirma casos e identifica sorotipos, e a de casos跟踪a a evolução da doença - todas essas informações são complementares e necessárias.</p><p><strong>Alternativa D:</strong> Esta alternativa está incompleta no enunciado (texto cortado), mas mesmo assim é incorreta. A integração entre áreas é fundamental, mas a vigilância epidemiológica vai além de apenas \"promover\" a integração - ela deve também analisar dados, orientar ações e avaliar a efetividade das medidas implementadas.</p><p>Vale destacar que a Portaria GM/MS nº 1.378/2013 enfatiza que a vigilância em saúde é um processo contínuo e sistemático, exatamente como descrito na alternativa A. No contexto das arboviroses, onde a vigilância é fundamental para o controle de surtos, esta competência da vigilância epidemiológica é ainda mais crítica.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Arboviroses",
+        "ClinicaMedica_Infectologia_Arboviroses_Dengue",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus_PoliticasDeSaudeDoSistemaUnico"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "No Brasil, a doença meningocócica é endêmica. O meningococo é a principal causa de meningite bacteriana no país. Os coeficientes de incidência têm sido reduzidos nos últimos anos, com registro de menos de um caso para cada 100.000 habitantes, entre os anos de 2014 e 2016. Acomete indivíduos de todas as faixas etárias, porém aproximadamente 30% dos casos notificados ocorrem em crianças menores de 5 anos de idade. Os maiores coeficientes de incidência da doença são observados em lactentes, no primeiro ano de vida. Nos surtos e epidemias, observam-se mudanças nas faixas etárias afetadas, com aumento de casos entre adolescentes e adultos jovens. Na forma mais grave, a meningococcemia, a letalidade chega a quase 50%. Desde a década de 1990, os sorogrupos circulantes mais frequentes no Brasil foram o C e o B. Após um período de grave, a meningococcemia, a letalidade chega a quase 50%. Desde a década de 1990, os sorogrupos circulantes mais frequentes no Brasil foram o C e o B. Após um período de predomínio do sorogrupo B, observa-se, a partir de 2005, um aumento no número e na proporção de casos atribuídos ao sorogrupo C em diferentes regiões do país. Em meados de 2010, devido ao aumento de circulação do sorogrupo C e à alta incidência da doença observada em crianças, a vacina meningocócica C (conjugada) foi introduzida no calendário de vacinação da criança. A vigilância epidemiológica tem como objetivo:",
+      "alternativas": [
+        "Detectar surtos no momento em que eles ocorrem.",
+        "Orientar a utilização e avaliar a efetividade das medidas de prevenção e controle.",
+        "Monitorar somente sorotipos de N. meningitidis circulantes.",
+        "Dar informações epidemiológicas somente no momento de surtos."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia sua compreensão sobre os objetivos da vigilância epidemiológica aplicada à meningococcica. O contexto apresentado é rico em dados epidemiológicos sobre a doença no Brasil, incluindo informações sobre os diferentes sorogrupos circulantes e a implementação da vacinação.</p><p><strong>A resposta correta é B - orientar a utilização e avaliar a efetividade das medidas de prevenção e controle.</strong></p><p>Vamos analisar sistematicamente cada alternativa:</p><p><strong>Alternativa B:</strong> Esta é a resposta correta. A vigilância epidemiológica tem como objetivo principal não apenas detectar surtos, mas orientar como implementar as medidas de prevenção e controle de forma eficaz. No caso da meningococcica, isso é particularmente importante porque a doença pode evoluir rapidamente para formas graves com alta letalidade. A vigilância deve acompanhar a efetividade da vacinação meningocócica C, monitorar mudanças nos padrões epidemiológicos e orientar ajustes nas estratégias de controle.</p><p><strong>Alternativa A:</strong> Incorreta. Detectar surtos no momento em que ocorrem é importante, mas é uma parte limitada dos objetivos da vigilância. A vigilância epidemiológica deve ir além da detecção - deve ser proativa na prevenção, análise e controle. A detecção tardia pode resultar em atraso nas medidas de controle, o que é crítico em uma doença como a meningococcica que pode causar epidemias rapidamente.</p><p><strong>Alternativa C:</strong> Incorreta. A vigilância não deve se restringir apenas ao monitoramento de sorotipos circulantes. É necessário acompanhar indicadores epidemiológicos mais amplos: incidência, mortalidade, distribuição por idade e região, eficácia das medidas implementadas. O foco nos sorotipos é importante para estratégias vacinais, mas não esgota os objetivos da vigilância.</p><p><strong>Alternativa D:</strong> Incorreta. Dar informações epidemiológicas apenas durante surtos é insuficiente. A vigilância deve ser contínua e sistemática, fornecendo dados regulares para o planejamento de ações de saúde pública. As informações epidemiológicas são essenciais para o monitoramento de tendências, avaliação de políticas de saúde e preparação para possíveis emergências.</p><p>O caso da meningococcica no Brasil ilustra bem a importância da vigilância: desde a década de 1990 houve mudança nos sorogrupos predominantes, e a partir de 2005 aumentou a circulação do sorogrupo C, justificando a introdução da vacina em 2010. Esse exemplo demonstra como a vigilância deve orientar a utilização e avaliar a efetividade das medidas de prevenção e controle, exatamente como descrito na alternativa B.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude",
+        "MedicinaPreventiva_Epidemiologia_VigilanciaEmSaude_VigilanciaEpidemiologica",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_ProcessosEndemicosEEpidemicoEn",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesBacterianas",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_InvestigacaoDeSurtos",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "O estudo DAPA-HF randomizou pacientes com insuficiência cardíaca de fração reduzida (ICFER) sintomática para dapagliflozina ou placebo. O desfecho composto primário de piora da insuficiência cardíaca (hospitalização ou visita urgente resultando em terapia intravenosa para insuficiência cardíaca) ou morte por causas cardiovasculares ocorreu em 386 pacientes (16,3%) no grupo dapagliflozina e em 502 pacientes (21,2%) no grupo placebo (HR 0,74; IC 95% 0,65 a 0,85; P <0,001). O número necessário para tratar foi 21, o que significa que:",
+      "alternativas": [
+        "a dapagliflozina reduziu 21 casos de morte e piora da IC em pacientes com ICFER;",
+        "dapagliflozina evita morte e piora da IC em 1 a cada 21 pacientes tratados;",
+        "o risco de morte e piora da IC foi reduzido em 21%;",
+        "NNT é uma medida relativa de utilidade."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia sua capacidade de interpretar resultados de estudos clínicos, especificamente o conceito de Number Needed to Treat (NNT) no estudo DAPA-HF sobre dapagliflozina em insuficiência cardíaca. O NNT é uma medida fundamental em medicina baseada em evidências que muitas vezes gera confusão entre os candidatos.</p><p><strong>A resposta correta é B - dapagliflozina evita morte e piora da IC em 1 a cada 21 pacientes tratados.</strong></p><p>Vamos analisar o conceito de NNT e as alternativas:</p><p>O Number Needed to Treat (NNT) representa o número de pacientes que precisam ser tratados com uma intervenção para que um paciente adicional se benefite comparado ao controle. No estudo DADA-HF, o NNT de 21 significa que 21 pacientes precisam receber dapagliflozina para que 1 paciente evite o desfecho primário (morte cardiovascular ou hospitalização por insuficiência cardíaca).</p><p><strong>Alternativa B:</strong> Esta é a resposta correta. O NNT de 21 significa que, em média, a cada 21 pacientes tratados com dapagliflozina, 1 paciente evitará o desfecho composto primário comparado ao placebo. É uma interpretação direta e precisa do conceito.</p><p><strong>Alternativa A:</strong> Incorreta. A dapagliflozina não reduziu especificamente 21 casos absolutos. O NNT não é o número absoluto de casos evitados, mas sim o número de pacientes que precisam ser tratados para se obter 1 benefício. A taxa de redução de eventos foi de 21,2% no grupo placebo para 16,3% no grupo dapagliflozina - uma diferença absoluta de 4,9%, que resulta no NNT de 21 (1/0,049 ≈ 21).</p><p><strong>Alternativa C:</strong> Incorreta. O NNT de 21 não significa redução de risco relativa de 21%. A redução de risco relativa foi de 26% (HR 0,74), mas o NNT é uma medida absoluta, não relativa. O valor 21 refere-se ao número de pacientes, não a uma porcentagem de redução.</p><p><strong>Alternativa D:</strong> Incorreta. O NNT é uma medida absoluta de utilidade clínica, não relativa. Medidas relativas como o Hazard Ratio (HR) e redução de risco relativa fornecem informações diferentes. O NNT é particularmente útil na prática clínica porque traduz a eficácia em termos de quantos pacientes precisam ser tratados, o que é mais fácil de compreender e aplicar na tomada de decisão clínica.</p><p>O estudo DAPA-HF foi revolucionário ao demonstrar que a dapagliflozina, uma inibidora do co-transportador de sódio-glicose 2 (SGLT2), reduziu significativamente eventos cardiovasculares em pacientes com insuficiência cardíaca de fração reduzida, independentemente da presença de diabetes. O NNT de 21 é clinicamente significativo e indica que o tratamento tem utilidade prática real.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca_InsuficienciaCardiacaTratamento",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_PesquisaClinica",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_PrincipiosDeEstatisticaBioesta",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_MedidasDeAssociacaoEMedidasDeI"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Sabendo que a prevalência de uma doença na população é de 20%, foi desenvolvido um teste com sensibilidade de 80% e especificidade de 70%. Neste caso hipotético o valor preditivo positivo é de:",
+      "alternativas": [
+        "20%.",
+        "40%.",
+        "60%.",
+        "80%."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia sua compreensão sobre epidemiologia diagnóstica, especificamente o cálculo de valores preditivos. Você deve aplicar os conceitos de sensibilidade, especificidade e prevalência em um cenário hipotético para calcular o valor preditivo positivo.</p><p><strong>A resposta correta é B - 40%.</strong></p><p>Para resolver esta questão, vamos usar o Teorema de Bayes e construir uma tabela 2x2. Primeiro, vamos assumir uma população de 1000 pessoas:</p><p><strong>Dados do problema:</strong>\n- Prevalência = 20% (portanto, 200 pessoas têm a doença, 800 não têm)\n- Sensibilidade = 80% (portanto, 160 verdadeiro-positivos e 40 falso-negativos)\n- Especificidade = 70% (portanto, 560 verdadeiro-negativos e 240 falso-positivos)</p><p><strong>Tabela 2x2:</strong>\n|                | Doença (+) | Doença (-) | Total |\n|Teste (+)       | 160        | 240        | 400   |\n|Teste (-)       | 40         | 560        | 600   |\n|Total           | 200        | 800        | 1000  |</p><p><strong>Alternativa B:</strong> Esta é a resposta correta. O valor preditivo positivo (VPP) é calculado como: VPP = VP/(VP+FP) = 160/(160+240) = 160/400 = 0,4 = 40%.</p><p>Vamos analisar as outras alternativas:</p><p><strong>Alternativa A:</strong> Incorreta. O VPP de 20% seria igual à prevalência, o que ocorreria apenas se o teste tivesse sensibilidade e especificidade de 100% - o que não é o caso aqui.</p><p><strong>Alternativa C:</strong> Incorreta. 60% seria o valor se a especificidade fosse muito mais alta. Esse valor é excessivamente otimista considerando a especificidade de apenas 70%.</p><p><strong>Alternativa D:</strong> Incorreta. 80% seria igual à sensibilidade, o que só ocorreria se a prevalência fosse de 100% (caso em que todos os positivos seriam verdadeiros).</p><p>Esta questão ilustra um conceito importante: o valor preditivo positivo depende não apenas das características intrínsecas do teste (sensibilidade e especificidade), mas também da prevalência da doença na população. Com uma prevalência de 20% e especificidade de 70% (relativamente baixa), mesmo com boa sensibilidade (80%), o VPP fica em 40% - isso significa que apenas 4 em cada 10 pessoas com teste positivo realmente têm a doença.</p><p>Na prática clínica, isso tem implicações importantes: testes de triagem em populações de baixa prevalência podem ter muitos falso-positivos, levando a ansiedade desnecessária, custos com exames confirmatórios e até procedimentos invasivos desnecessários.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TestesDiagnosticos",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_MedidasDeAssociacaoEMedidasDeI"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Um estudo publicado este ano mostrou que a exposição ocupacional a agrotóxicos foi associada a neoplasias hematológicas. O delineamento do estudo epidemiológico e a medida de associação mais apropriada para este tipo de estudo, respectivamente, são:",
+      "alternativas": [
+        "Coorte - razão de prevalência",
+        "Caso-controle - razão de prevalência",
+        "Coorte - odds ratio",
+        "Caso-controle - odds ratio"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre metodologia de pesquisa epidemiológica, especificamente sobre a escolha do delineamento de estudo e medidas de associação apropriadas para diferentes tipos de investigação. O contexto é a relação entre exposição ocupacional a agrotóxicos e neoplasias hematológicas.</p><p><strong>A resposta correta é D - Caso-controle - odds ratio.</strong></p><p>Vamos analisar o raciocínio metodológico para esta questão:</p><p><strong>Alternativa D:</strong> Esta é a resposta correta. O estudo caso-controle é o mais apropriado para investigar a associação entre exposição a agrotóxicos e neoplasias hematológicas por várias razões:\n1. A neoplasia hematológica é uma doença de baixa incidência (raro evento)\n2. O estudo caso-controle é eficiente para doenças raras\n3. Permite identificar exposição prévio ao desenvolvimento da doença\n4. O odds ratio é a medida de associação apropriada para este tipo de delineamento</p><p><strong>Alternativa A:</strong> Incorreta. Embora o odds ratio possa ser calculado em estudos de coorte, o estudo coorte seria inadequado para esta investigação porque:\n- Requeriria acompanhamento de grande número de pessoas expostas por longo período\n- Seria muito caro e demorado\n- Doenças raras como neoplasias hematológicas demandariam amostras enormes\n- Não é eficiente epidemiologicamente para eventos raros</p><p><strong>Alternativa B:</strong> Incorreta. O estudo caso-controle é adequado, mas a razão de prevalência não é a medida de associação correta para este delineamento. A razão de prevalência é usada em estudos transversais, onde se avalia exposição e doença no mesmo momento. No caso-controle, usamos o odds ratio porque comparamos a odds de exposição entre casos e controles.</p><p><strong>Alternativa C:</strong> Incorreta. O estudo de coorte seria metodologicamente inadequado para investigar esta relação, como explicado na alternativa A. Além disso, em estudos de coorte prospectivos, a medida de associação mais apropriada seria o risco relativo, não o odds ratio.</p><p>A escolha do delineamento é fundamental em epidemiologia. Para investigar associações entre exposições potencialmente tóxicas e doenças graves de baixa incidência, o estudo caso-controle é o mais eficiente. Ele permite identificar casos com a doença e selecionar controles comparáveis, investigando se houve diferença na exposição prévia aos agrotóxicos entre os grupos.</p><p>O odds ratio é a medida de associação natural dos estudos caso-controle, expressando quantas vezes é mais provável que casos (pessoas com neoplasia) tenham sido expostos comparado aos controles. No contexto de saúde ocupacional, esse delineamento é frequentemente utilizado para investigar riscos ambientais e ocupacionais associados a doenças graves.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos_TiposDeEstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_MedicinaPreventivaEpidemiologi_MedidasDeAssociacaoEMedidasDeI",
+        "MedicinaPreventiva_Epidemiologia_PrincipiosDeEstatisticaBioesta",
+        "MedicinaPreventiva_Epidemiologia_ClassificacaoDosEstudosEpidemi",
+        "ClinicaMedica_Hematologia",
+        "MedicinaPreventiva_SaudeDoTrabalhador"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "ALS 49 anos, há 01 ano apresentando redução da libido, alteração do sono, acordando 02 a 03 vezes a noite. Há 6 meses surgiram episódios de rubor facial seguido de sensação de calor e após sudorese fria restrita a face e tronco, com episódios diurnos e na madrugada. G3P3. 03 cesarianas e aos 40 anos foi submetida a histerectomia total por miomatose uterina. IMC 33Kg/m², PA110x56mmHg. Hemoglobina glicada 5,8%, Colesterol total 210 mg/dl, HDL 40 mg/dl e triglicerídeos 170 mg/dl. Mãe e Tia materna com osteoporose. Irmã mais velha fez fratura do colo do fêmur ano passado. Mamografia de julho/2022 BIRADS 2. Densitometria óssea: coluna lombar T - score de - 0,5 desvio-padrão e em colo de fêmur T - score de - 0,8 desvio-padrão. Diante deste quadro a melhor conduta é:",
+      "alternativas": [
+        "Iniciar a terapia estrogênica oral, vitamina D",
+        "Iniciar a terapia hormonal estrogênica transdérmico, atividade física aeróbica.",
+        "Iniciar a terapia hormonal estrogênica oral, bifosfonados, atividade física aeróbica",
+        "Iniciar a terapia hormonal estrogênica transdérmico, bifosfonados, citrato de cálcio."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UNIMED RJ avalia seu conhecimento sobre terapia hormonal na menopausa em mulheres histerectomizadas com fatores de risco para osteoporose.</p><p><strong>A resposta correta é B - terapia estrogênica transdérmica associada à atividade física aeróbica.</strong></p><p>Vamos analisar o caso: Paciente de 49 anos com sintomas vasomotores típicos (rubor facial, sudorese), redução da libido e alterações do sono. Histerectomizada aos 40 anos, apresenta osteopenia na densitometria e forte história familiar de osteoporose. O IMC elevado (33 kg/m²) e idade a colocam em grupo de risco elevado para fraturas.</p><p>Analisando as alternativas:</p><p><strong>A está incorreta</strong> - A via oral de estrogênio está associada a maior risco tromboembólico e metabolismo hepático de primeira passagem. Além disso, inclui apenas vitamina D, sem atividade física.</p><p><strong>B está correta</strong> - A via transdérmica tem menor risco tromboembólico, melhor controle dos sintomas e favorece a manutenção da massa óssea. A atividade física aeróbica é fundamental na prevenção da osteoporose em mulheres pós-menopáusicas.</p><p><strong>C está incorreta</strong> - Bifosfonatos não são primeira escolha em mulheres com osteopenia leve, especialmente quando há indicação de terapia hormonal. Além disso, a via oral não é a ideal.</p><p><strong>D está incorreta</strong> - Bifosfonatos estão indicados apenas quando há osteoporose establecida (T-score < -2,5). A paciente apresenta apenas osteopenia.</p><p><strong>Veredito:</strong> Em mulheres histerectomizadas com sintomas vasomotores moderados a severos e fatores de risco para osteoporose, a terapia estrogênica transdérmica é a melhor opção, sempre associada a medidas não farmacológicas como atividade física regular.</p>",
+      "filterIds": [
+        "Ginecologia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_Climaterio",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "VVS, 30 anos, refere prurido vaginal intenso há 5 dias, fluxo vaginal espesso, prurido e ardência miccional. Está no 26º dia do ciclo menstrual, sem uso de método contraceptivo. Exame ginecológico: hiperemia vulvar extensa, com fissuras, hiperemia vaginal com conteúdo aumentado e grumos aderentes às paredes vaginais, teste de aminas negativo e pH 4,4. O melhor diagnóstico e conduta está na alternativa:",
+      "alternativas": [
+        "Dermatose vulvar e vaginose citolítica. Iniciar corticoterapia vulvar com corticoides de alta potência e ácido bórico tópico;",
+        "Dermatite atópica e vaginose bacteriana. Iniciar corticoterapia vulvar com corticoides de alta potência e metronidazol oral e tópico;",
+        "Candidíase vulvar e vaginal, iniciar derivados imidazólicos orais ou tópicos;",
+        "Vaginite atrófica e Tinea cruris. Iniciar corticoterapia vulvar com corticoides de alta potência."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre diagnóstico diferencial e tratamento de vaginites, especialmente candidíase vulvovaginal.</p><p><strong>A resposta correta é C - Candidíase vulvar e vaginal, iniciando derivados imidazólicos orais ou tópicos.</strong></p><p>Vamos analisar o caso clínico: Mulher de 30 anos com prurido vaginal intenso há 5 dias, fluxo espesso eardência miccional. No exame físico observamos hiperemia vulvar com fissuras, conteúdo vaginal aumentado com grumos aderentes às paredes (aspecto típico de candidíase), pH 4,4 (normal para flora lactobacilar) e teste de aminas negativo (exclui vaginose bacteriana).</p><p>Analisando as alternativas:</p><p><strong>A está incorreta</strong> - Dermatose vulvar não justifica o conteúdo vaginal aumentado com grumos. Vaginose citolítica tem pH elevado e falta de lactobacilos, não presente neste caso.</p><p><strong>B está incorreta</strong> - Dermatite atópica não explica os achados ginecológicos. Vaginose bacteriana apresenta teste de aminas positivo e fluxo homogêneo acinzentado, contrariamente aos achados.</p><p><strong>C está correta</strong> - Todos os achados são típicos de candidíase: prurido intenso, conteúdo vaginal espesso com grumos, hiperemia vulvar com fissuras, pH normal e teste de aminas negativo. Derivados imidazólicos (fluconazol, clotrimazol, miconazol) são a primeira escolha terapêutica.</p><p><strong>D está incorreta</strong> - Vaginite atrófica é característica de hipoestrogenismo, não presente em mulher de 30 anos. Tinea cruris é infecção fúngica cutânea, não justificaria o corrimento vaginal.</p><p><strong>Veredito:</strong> A candidíase vulvovaginal é diagnosticada clinicamente quando há pelo menos três dos quatro critérios: prurito, sinais inflamatórios, corrimento típico e ausência de vaginose. O tratamento com imidazólicos é eficaz em 80-90% dos casos.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia",
+        "Ginecologia_InfeccoesEmGinecologia_Vulvovaginites"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Mulher de 34 anos, G3P3, 03 cesarianas por hipertensão, em uso de 17 - Desogestrel continuo e em amenorreia. Foi a consulta de rotina, realizou citologia oncótica cujo resultado foi de células glandulares atípicas endometriais de significado indeterminado, possivelmente não neoplásica/sem outras especificações (ACG-US). A conduta é:",
+      "alternativas": [
+        "Colposcopia",
+        "Captura hibrida e PCR para Clamídia",
+        "Conização",
+        "Repetir a citologia oncótica em seis meses"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia sua conduta frente a alterações citológicas com células glandulares atípicas de significado indeterminado (ACG-US) em pacientes usando progestágeno continuo.</p><p><strong>A resposta correta é A - Colposcopia.</strong></p><p>Vamos analisar o contexto: Mulher de 34 anos, G3P3, em uso continuo de desogestrel (minipílula) com amenorreia. A citologia oncótica revelou células glandulares atípicas endometriais de significado indeterminado, possivelmente não neoplásicas (ACG-US). O uso de progestágeno pode alterar a morfologia celular endometrial, causando atipias reativas.</p><p>Analisando as alternativas:</p><p><strong>A está correta</strong> - A colposcopia permite avaliação detalhada da transformação glandular e identificação de possíveis lesões precursoras. É o próximo passo recomendado em casos de ACG-US, independentemente do método contraceptivo usado.</p><p><strong>B está incorreta</strong> - Captura híbrida e PCR para Clamídia estão indicados quando há suspeita de infecção ou em casos de células glandulares com alterações relacionadas a processos inflamatórios/infecciosos. Não é a conduta inicial para ACG-US.</p><p><strong>C está incorreta</strong> - Conização é procedimento invasivo indicado apenas quando há suspeita de doença invasiva ou quando métodos menos invasivos não esclareceram o diagnóstico. Não é primeira escolha para ACG-US.</p><p><strong>D está incorreta</strong> - Repetir a citologia em 6 meses é conduta para alterações escamosas de baixo grau (ASC-US, LSIL), não para alterações glandulares que sempre necessitam investigação mais invasiva.</p><p><strong>Veredito:</strong> Em casos de ACG-US, a colposcopia com biópsia dirigida é obrigatória para exclusão de lesões precursoras ou invasivas. O uso de progestágeno aumenta a incidência de atipias reativas, mas não dispensa a investigação adequada.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_RastreamentoDoCancerDeColoDoUt"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Paciente de 29 anos, G0P0, entra no pronto atendimento pálida, FC 87bpm, relata está no primeiro dia do ciclo menstrual e com dor pélvica tipo cólica menstrual intensa. PA 110x60 mmHg. Relata menarca aos 12 anos, dismenorreia desde os 14 anos, com piora de intensidade nos últimos 5 anos. Não consegue mais controlar a dor com uso de dipirona ou cetoprofeno, necessitando com frequência de medicação mais forte como opioides ou uso de medicação parenteral. Iniciou atividade sexual aos 20 anos, em uso de condon regular. Colpocitologia oncótica negativo para neoplasia em março de 2022. Hemograma realizado na unidade com hemoglobina de 12g/dl, beta-HCG negativo. O clinico evidencia abdome flácido, sem descompressão dolorosa, peristalse presente, sangramento escuro tipo menstrual, Toque bimanual útero em RVF, fixo, anexos impalpáveis, espessamento fibrótico no fundo de saco posterior. O Diagnóstico provável e a conduta mais adequada estão na opção:",
+      "alternativas": [
+        "Adenomiose, realizar ultrassonografia abdominal, analgésicos e indicar videolaparoscopia para diagnóstico e tratamento.",
+        "Dismenorreia primária grave, fazer ultrassonografia transvaginal e iniciar contracepção cíclica.",
+        "Dismenorreia primária progressiva, realizar ressonância magnética da pelve e iniciar contraceptivo hormonal combinado contínuo.",
+        "Endometriose pélvica, realizar a ressonância magnética da pelve e inserir DIU de cobre."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia sua capacidade de diagnosticar endometriose pélvica em paciente jovem com dismenorreia progressiva e caracteriza a abordagem terapêutica inicial.</p><p><strong>A resposta correta é C - Dismenorreia primária progressiva, realizar ressonância magnética da pelve e iniciar contraceptivo hormonal combinado contínuo.</strong></p><p>Vamos analisar o caso: Paciente de 29 anos, G0P0, com dismenorreia desde os 14 anos com piora progressiva nos últimos 5 anos. Dor cada vez mais intensa, necessitando de opioides. Exame físico revela útero fixo em retroversão, espessamento fibrótico no fundo de saco posterior (classic Sinal de Ph_PROCESS) e anexos impalpáveis, sugerindo endometriose profunda infiltrativa.</p><p>Analisando as alternativas:</p><p><strong>A está incorreta</strong> - Adenomiose é menos provável em paciente G0, geralmente causa útero aumentado e simétrico. Além disso, a ultrassonografia abdominal não é o melhor método para avaliação pélvica.</p><p><strong>B está incorreta</strong> - A dismenorreia é claramente secundária (progressiva, com alterações anatomopatológicas), não primária. Contracepção cíclica não é ideal para endometriose - deve ser contínua.</p><p><strong>C está correta</strong> - O quadro é típico de endometriose com dismenorreia secundária progressiva. RM da pelve é o melhor método para avaliação de endometriose profunda. Contraceptivo hormonal combinado em uso continuo é primeira linha para controle da dor eprogressão da doença.</p><p><strong>D está incorreta</strong> - DIU de cobre pode piorar a dismenorreia em pacientes com endometriose. Além disso, o DIU de cobre não é primeira escolha para tratamento da endometriose.</p><p><strong>Veredito:</strong> A endometriose deve ser suspeitada em toda mulher jovem com dismenorreia progressiva refratária a analgésicos simples. O tratamento inicial deve visar controle da dor e supressão da ovulação, reserving a videolaparoscopia para casos refratários ou quando há desejo gestacional.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_Dismenorreia",
+        "Ginecologia_GinecologiaGeral",
+        "Ginecologia_GinecologiaGeral_Endometriose",
+        "Ginecologia_GinecologiaEndocrina",
+        "Ginecologia_GinecologiaEndocrina_PlanejamentoFamiliar"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Paciente de 63 anos menopausada, com espessamento endometrial e sangramento uterino anormal pós-menopausa. A histeroscopia identificou pólipo atípico, cuja biopsia retornou o resultado de adenocarcinoma do endométrio, tipo endometrioide. G3. É CORRETO afirmar que?",
+      "alternativas": [
+        "A Ultrassonografia transvaginal é o método de escolha para avaliar a invasão miometrial pré-cirúrgica.",
+        "A Tomografia Computadorizada com contraste é o método de escolha para avaliar a invasão miometrial pré-cirúrgica.",
+        "A Ressonância Magnética da Pelve é o método de escolha para avaliar a invasão miometrial pré-cirúrgica.",
+        "A ultrassonografia transretal para avaliação da pelve o método de escolha para avaliar a invasão miometrial pré-cirurgica."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre métodos de imagem para avaliação de invasão miometrial em adenocarcinoma de endométrio pré-operatório.</p><p><strong>A resposta correta é C - Ressonância Magnética da Pelve é o método de escolha para avaliar a invasão miometrial pré-cirúrgica.</strong></p><p>Vamos contextualizar: Paciente de 63 anos com adenocarcinoma de endométrio tipo endometrioide grau 3. A avaliação da profundidade da invasão miometrial é fundamental para planejamento cirúrgico, Determines se será suficiente histerectomia simples ou se necessitará de linfadenectomia.</p><p>Analisando as alternativas:</p><p><strong>A está incorreta</strong> - Ultrassonografia transvaginal pode sugerir invasão miometrial, mas tem limitações na avaliação de lesões pequenas e não é considerada padrão ouro. Sensibilidade e especificidade são inferiores à RM.</p><p><strong>B está incorreta</strong> - Tomografia computadorizada não é adequada para avaliação de invasion miometrial por poorsoft tissue contrast. TC é mais útil para avaliação de metástases à distância.</p><p><strong>C está correta</strong> - Ressonância Magnética da pelve é o método de escolha para avaliação de invasão miometrial em carcinoma de endométrio. Oferece excelente resolução de contraste para diferenciação entre miométrio normal e lesado, permitindo medidas precisas da profundidade de invasão.</p><p><strong>D está incorreta</strong> - Ultrassonografia transretal não é rotina para avaliação de carcinoma endometrial e não oferece vantagens sobre a via transvaginal ou RM para esta indicação.</p><p><strong>Veredito:</strong> A Ressonância Magnética da pelve é considerada padrão ouro para pré-operatório de carcinoma de endométrio, com sensibilidade de 85-95% e especificidade de 80-90% para detecção de invasão miometrial. É fundamental para estratificação de risco e planejamento cirúrgico adequado.</p>",
+      "filterIds": [
+        "Ginecologia"
+      ],
+      "subFilterIds": [
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica",
+        "Ginecologia_OncologiaGinecologica_HiperplasiaEndometrialCancerDe",
+        "Ginecologia_MedicinaFetal",
+        "Ginecologia_MedicinaFetal_UltrassomEmObstetriciaUsg"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Gestante de 27 anos, g-2 p-1 (01 parto a fórceps), cursando a 24ª semana comparece à maternidade com queixa de perda de secreção gelatinosa e desconforto no baixo ventre. Ao exame, ausência de contrações em 10 minutos, colo pérvio para 4,0 centímetros, apresentação cefálica, flutuante. Qual o diagnóstico provável?",
+      "alternativas": [
+        "Amniorrexe prematura",
+        "Abortamento evitável",
+        "Insuficiência cervical",
+        "Abortamento incompleto"
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre insuficiência cervical (incompetência cervical), uma causa importante de trabalho de parto prematuro.</strong></p><p>A gestante apresenta critérios sugestivos de insuficiência cervical: idade gestacional de 24 semanas (fase crítica), antecedente obstétrico de parto a fórceps, perda de secreção gelatinosa (muco cervical) e colo pérvio para 4 centímetros sem contrações.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Amniorrexe prematura:</strong> Incorreta. A bolsa amniótica está íntegra, pois não há referência a saída de líquido amniótico e o exame não sugere rotura de membranas.</p><p><strong>B) Abortamento evitável:</strong> Incorreta. A gestação já está na 24ª semana, período em que o abortamento (perda antes de 20 semanas) não é mais aplicável. A resposta fetal também está presente (apresentação cefálica flutuante).</p><p><strong>C) Insuficiência cervical:</strong> CORRETA. Os achados são típicos: história obstétrica prévia desfavorável, idade gestacional de risco (entre 18-24 semanas), sinais de dilatação cervical sem atividade contrátil, perda de secreção gelatinosa (muco cervical). O colo pérvio para 4 cm indica dilatação progressiva sem contrações efetivas.</p><p><strong>D) Abortamento incompleto:</strong> Incorreta. Não há sinais de abortamento em curso (não há dor, contrações efetivas, dilatação completa ou sinais de trabalho de parto ativo).</p><p><strong>Raciocínio clínico:</strong> A ausência de contrações em presença de colo pérvio sugere incompetência cervical. O histórico de parto a fórceps pode indicar fragilidade cervical prévia. A perda de secreção gelatinosa é o sinal clássico de expulsão do tampão mucoso.</p><p><strong>Veredito: A resposta correta é C - Insuficiência cervical, conforme gabarito oficial.</strong></p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_AbortamentoHabitualAbortamento",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_AbortamentoHabitualAbortamento",
+        "Obstetricia_IntercorrenciasObstetricasObst_AbortamentoHabitualAbortamento_InsuficienciaIstmocervical"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Na incompatibilidade sanguínea materno-fetal, devemos administrar a imunoglobulina anti-D no pós parto em qual condição?",
+      "alternativas": [
+        "Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh negativo, teste de Coombs indireto negativo.",
+        "Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh positivo, teste de Coombs indireto positivo.",
+        "Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh positivo, teste de Coombs indireto negativo.",
+        "Na puérpera Rh positiva, marido Rh negativo, recém-nato Rh negativo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão avalia o conhecimento sobre profilaxia da doença hemolítica do recém-nascido (DHRN) e as indicações precisas para uso de imunoglobulina anti-D.</strong></p><p>A profilaxia com anti-D é fundamental para prevenir a formação de anticorpos anti-Rh em mães Rh negativo que foram expostas a sangue Rh positivo, seja durante a gestação ou no parto.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh negativo, teste de Coombs indireto negativo:</strong> Incorreta. Não há risco de sensibilização porque o RN é Rh negativo, não havendo incompatibilidade ABO ou Rh. O teste de Coombs indireto negativo confirma ausência de anticorpos maternos.</p><p><strong>B) Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh positivo, teste de Coombs indireto positivo:</strong> Incorreta. Embora haja incompatibilidade Rh e o RN seja Rh positivo, quando o teste de Coombs indireto já está positivo (indicando anticorpos circulantes), a profilaxia com anti-D é ineficaz. A sensibilização já ocorreu.</p><p><strong>C) Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh positivo, teste de Coombs indireto negativo:</strong> CORRETA. Esta é a situação ideal para profilaxia: há incompatibilidade Rh (mãe Rh negativo, RN Rh positivo), mas ainda não há anticorpos maternos circulantes (teste de Coombs indireto negativo). A administração de anti-D impedirá a sensibilização materna.</p><p><strong>D) Na puérpera Rh positiva, marido Rh negativo, recém-nato Rh negativo:</strong> Incorreta. Não há incompatibilidade Rh, pois a mãe é Rh positivo e o RN é Rh negativo. A mãe Rh positivo produz anticorpos anti-D? Não, ela é Rh positivo, então não precisa de profilaxia.</p><p><strong>Veredito: A resposta correta é C - Na puérpera Rh negativa, marido Rh positivo, recém-nato Rh positivo, teste de Coombs indireto negativo, conforme gabarito oficial.</strong></p>",
+      "filterIds": [
+        "Obstetricia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_DoencaHemoliticaPerinatalDhpn",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Paciente de 28 anos, primigesta, cursando a 34° semana de gestação, comparece à maternidade com queixa de dor no baixo ventre. Ao exame é constatado quatro contrações em 10 minutos de 45 segundos, colo apagado 80%, dilatado para 4 cm, apresentação cefálica, 1°plano de Hodge, bolsa íntegra, batimentos cardiofetais de 148 bpm. Realizado cardiotocografia que apresentou características compatíveis com desacelerações tardias. Qual a conduta a ser adotada?",
+      "alternativas": [
+        "Tocólise venosa e interrupção da gestação após administração de corticoide por 48 horas.",
+        "Decúbito lateral esquerdo, oxigênio nasal e interrupção imediata da gestação.",
+        "Decúbito lateral esquerdo, oxigênio nasal e aceleração do parto com ocitocina.",
+        "Acelerar o parto com ocitocina e utilizar fórcipes de alívio."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão avalia o manejo do descolamento prematuro de placenta (DPP) com comprometimento fetal, uma emergência obstétrica que requer ação imediata.</strong></p><p>O caso apresenta critérios sugestivos de DPP: trabalho de parto prematuro (34 semanas), sinais de sofrimento fetal (desacelerações tardias na cardiotocografia), dor no baixo ventre e modificações cervicais progressivas (colo apagado 80% e dilatado para 4 cm).</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Tocólise venosa e interrupção da gestação após administração de corticoide por 48 horas:</strong> Incorreta. A tocólise está CONTRAINDICADA no DPP porque pode aumentar a separação placentar e agravar o comprometimento fetal. Além disso, o sofrimento fetal (desacelerações tardias) indica necessidade de interrupção imediata, não a espera de 48 horas para corticoide.</p><p><strong>B) Decúbito lateral esquerdo, oxigênio nasal e interrupção imediata da gestação:</strong> CORRETA. Esta é a conduta padrão no DPP com sofrimento fetal. O decúbito lateral esquerdo melhora o retorno venoso e a perfusão placentar, o oxigênio otimiza a oxigenação fetal, e a cesariana de urgência é indicada quando há sinais de sofrimento fetal com DPP.</p><p><strong>C) Decúbito lateral esquerdo, oxigênio nasal e aceleração do parto com ocitocina:</strong> Incorreta. Embora o decúbito lateral e oxigênio sejam apropriados, a aceleração do parto com ocitocina é PERIGOSA no DPP, pois pode acelerar a separação placentar e aumentar o risco de hipoxemia fetal aguda.</p><p><strong>D) Acelerar o parto com ocitocina e utilizar fórcipes de alívio:</strong> Incorreta. Tal como na alternativa C, a ocitocina é contraindicação absoluta no DPP. Os fórcipes não resolvem o problema da separação placentar e podem agravar a situação clínica.</p><p><strong>Raciocínio clínico:</strong> As desacelerações tardias na cardiotocografia indicam comprometimento significativo do bem-estar fetal, requerendo resolução imediata da gestação. No DPP, a cesariana é a via de escolha, mesmo em gestações pré-termo, quando há sofrimento fetal.</p><p><strong>Veredito: A resposta correta é B - Decúbito lateral esquerdo, oxigênio nasal e interrupção imediata da gestação, conforme gabarito oficial.</strong></p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_TrabalhoDePartoPrematuroTpp",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_AvaliacaoDaVitalidadeFetal"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Gestante na 30ª semana, g-4p-2 (02 cesarianas e 01 aborto) procura a maternidade com queixa de sangramento vermelho vivo moderado e indolor. O exame obstétrico revela altura uterina de 29 cm, tônus uterino normal com ausência de contrações em 10 minutos, bcf-142 bpm e ao exame especular presença de sangramento vermelho vivo fluindo através do colo uterino. Qual é a principal hipótese diagnóstica?",
+      "alternativas": [
+        "Descolamento prematuro de placenta.",
+        "Ruptura de vasa prévia.",
+        "Sangramento do colo uterino.",
+        "Placenta prévia."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão avalia o diagnóstico diferencial das principais causas de sangramento na segunda metade da gestação, focando na placenta prévia como causa de sangramento indolor e indolor.</strong></p><p>Analisando o quadro clínico: gestante de 30 semanas, sangramento vermelho vivo moderado e indolor, altura uterina de 29 cm (adequada para a idade gestacional), tônus uterino normal, ausência de contrações, batimentos cardiofetais normais (142 bpm) e sangramento fluindo ativamente pelo colo uterino.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Descolamento prematuro de placenta:</strong> Incorreta. O DPP caracteriza-se por sangramento doloroso, contrações intensas, irritabilidade uterina e comprometimento fetal. O quadro apresentado é de sangramento indolor e sem alterações do tônus uterino ou da FCF.</p><p><strong>B) Ruptura de vasa prévia:</strong> Incorreta. Embora possa causar sangramento indolor, a ruptura de vasa prévia é rara e geralmente associada a apresentação pélvica. Mais importante, o sangramento é geralmente de menor volume e pode cursar com desaceleraciones fetais súbitas. O sangramento moderado e sem alterações da FCF é menos sugestivo.</p><p><strong>C) Sangramento do colo uterino:</strong> Incorreta. Sangramento de origem cervical é geralmente de pequeno volume e relacionado a traumatismo, infecção ou pólipos. O sangramento ativo fluindo pelo colo em gestação de 30 semanas é mais consistente com placenta prévia.</p><p><strong>D) Placenta prévia:</strong> CORRETA. Os critérios clínicos são típicos: sangramento indolor (ausência de dor), idade gestacional na segunda metade da gestação (30 semanas), sangramento vermelho vivo ativo, colo pérvio permitindo o fluxo sanguíneo, ausência de alterações do tônus uterino e FCF normal. A placenta prévia é a principal causa de sangramento indolor na segunda metade da gestação.</p><p><strong>Raciocínio clínico:</strong> O diagnóstico diferencial de sangramento na segunda metade da gestação baseia-se em características do sangramento e sintomas associados. Sangramento indolor sugere placenta prévia, enquanto sangramento doloroso com irritabilidade uterina sugere DPP.</p><p><strong>Veredito: A resposta correta é D - Placenta prévia, conforme gabarito oficial.</strong></p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_IntercorrenciasObstetricasObst_SangramentoSegundaMetadeDaGest",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal",
+        "Obstetricia_MedicinaFetal_AvaliacaoDaVitalidadeFetal"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Em relação á hiperêmese gravídica, assinale a afirmativa ERRADA;",
+      "alternativas": [
+        "Na gestação, a hiperêmese gravídica é a quarta causa mais frequente de internação hospitalar.",
+        "Na forma grave da hiperêmese gravídica, encontramos perda ponderal de 6 a 8%.",
+        "A Síndrome de Wernicke é caracterizada por ataxia predominantemente da marcha, disfunção vestibular, confusão mental e anormalidades da motilidade ocular.",
+        "O tratamento de primeira linha da êmese gravídica consiste na associação de piridoxina e doxilamina."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão é uma questão inversa (assinale a afirmativa ERRADA) sobre hiperêmese gravídica, uma condição clínica significativa que afeta gestações precoces.</strong></p><p><strong>Analisando cada alternativa:</strong></p><p><strong>A) Na gestação, a hiperêmese gravídica é a quarta causa mais frequente de internação hospitalar:</strong> ERRADA. Esta é a alternativa que deve ser marcada. Dados epidemiológicos mostram que a hiperêmese gravídica é a PRIMEIRA causa de internação hospitalar na gestação, seguida de ameaça de abortamento, trabalho de parto pré-termo e hemorragias. A informação está incorreta epidemiologicamente.</p><p><strong>B) Na forma grave da hiperêmese gravídica, encontramos perda ponderal de 6 a 8%:</strong> CORRETA. Este é um critério diagnóstico importante. A perda ponderal significativa (5-10% do peso corporal) indica gravidade da condição e justifica internação hospitalar para reidratação e suporte nutricional.</p><p><strong>C) A Síndrome de Wernicke é caracterizada por ataxia predominantemente da marcha, disfunção vestibular, confusão mental e anormalidades da motilidade ocular:</strong> CORRETA. A síndrome de Wernicke é uma complicação neurológica da hiperêmese grave por deficiência de tiamina. Os sintomas incluem ataxia (especialmente da marcha), nistagmo, alterações da consciência e confusão mental. Pode evoluir para síndrome de Korsakoff com amnésia permanente.</p><p><strong>D) O tratamento de primeira linha da êmese gravídica consiste na associação de piridoxina e doxilamina:</strong> CORRETA. Esta é a combinação do Diclegis (nos EUA) e produtos similares no Brasil. A piridoxina (vitamina B6) combinada com doxilamina (anti-histamínico) é efetiva e segura no controle de náuseas e vômitos da gestação, sendo recomendada como primeira escolha farmacológica.</p><p><strong>Veredito: A resposta correta é A - Na gestação, a hiperêmese gravídica é a quarta causa mais frequente de internação hospitalar (alternativa ERRADA), conforme gabarito oficial.</strong></p>",
+      "filterIds": [
+        "Obstetricia"
+      ],
+      "subFilterIds": [
+        "Obstetricia_IntercorrenciasObstetricasObst",
+        "Obstetricia_DoencasAssociadasAGestacao",
+        "Obstetricia_Puerperio",
+        "Obstetricia_Puerperio",
+        "Obstetricia_Puerperio_PuerperioFisiologico"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-39"
+    },
+    {
+      "numero": "Q41",
+      "enunciado": "Escolar, 8 anos, sexo masculino, previamente hígido, é levado pela mãe ao posto de saúde com lesões características de verrugas vulgares (total de 6), em dorso da mão direita no terceiro dedo da mesma mão. Demais dados do exame físico sem anormalidades. Relata contato domiciliar com cão. Assim devemos:",
+      "alternativas": [
+        "Indicar o tratamento com aciclovir tópico.",
+        "Orientar sobre a etiologia parasitária e os riscos do contato com fezes de cão ou gato.",
+        "Solicitar estudo imunológico desse paciente.",
+        "Aguardar a involução espontânea das lesões em alguns meses."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre conduta frente a verrugas vulgares em pediatria, especificamente sobre a história natural desta condição.</p><p><strong>A resposta correta é D - Aguardar a involução espontânea das lesões em alguns meses.</strong></p><p>Vamos analisar cada alternativa: <strong>A) Aciclovir tópico:</strong> Esta é uma medicação antiviral utilizada para herpes simples e varicela-zoster, não para verrugas causadas por papilomavíruses humanos (HPV). <strong>B) Etiologia parasitária:</strong> Totalmente incorreta - verrugas são causadas por vírus (HPV), não parasitas. <strong>C) Estudo imunológico:</strong> Desnecessário, pois a criança está hígida e as verrugas são comuns e autolimitadas. <strong>D) Observação:</strong> Correta, pois a maioria das verrugas resolve espontaneamente em 6 meses a 2 anos.</p><p>O contato com cão mencionado no enunciado não tem relação com verrugas, que são transmitidas por contato direto ou indireto com objetos contaminados. Em crianças saudáveis, o tratamento está indicado apenas se houver queixas estéticas, dor ou interference com atividades diárias.</p><p><strong>Veredito: Alternativa D é a resposta correta.</strong></p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_Dermatologia",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-40"
+    },
+    {
+      "numero": "Q42",
+      "enunciado": "Pré-escolar, três anos, sexo feminino, é trazido por seus pais à emergência que relatam que seu filho está menos ativo e mais pálido do que o habitual. Referem que há quatro dias o menino apresentou quadro de febre (38,5°C), vômitos e diarreia com sangue e que desde ontem está urinando pouco, porém tolerando líquidos via oral. Segundo os pais, o paciente era saudável. Ao exame: pálido, hipocorado 3+/4+, irritado, prostrado e com dor à palpação abdominal. FC: 160 bpm, FR: 40 irpm, PA: 100 x 60 mmHg. Exames laboratoriais: Hb:6,6g/dL, Ht:21%, leucometria: 15.900/mm³ (bastões 14%, segmentados 65%); plaquetas: 55.000/mm³, Na+: 133mEq/L, K+: 4,5 mEq/L, creatinina: 2,8 mg/dL, ureia: 127 mg/dL. Exame de urina: hematúria. A principal hipótese diagnóstica é:",
+      "alternativas": [
+        "Insuficiência renal crônica.",
+        "Glomerulonefrite difusa aguda.",
+        "Síndrome hemolítico-urêmica.",
+        "Púrpura de Henoch-Schõnlein."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre Síndromes Hemolítico-Urêmicas (SHU) em pediatria, uma complicação grave da infecção por E. coli produtora de toxina Shiga.</p><p><strong>A resposta correta é C - Síndrome hemolítico-urêmica.</strong></p><p>Vamos analisar o quadro: <strong>A) Insuficiência renal crônica:</strong> Incorreta, pois trata-se de quadro agudo com início há apenas 4 dias. <strong>B) Glomerulonefrite difusa aguda:</strong> Não explica a tríade completa (anemia hemolítica + plaquetopenia + insuficiência renal). <strong>C) SHU:</strong> Perfeita correlação com o quadro - criança de 3 anos com prodrômico de GEAA (febre, vômitos, diarreia sanguinolenta) evoluindo para anemia (Hb 6,6g/dL), plaquetopenia (55.000/mm³) e insuficiência renal (creatinina 2,8 mg/dL, ureia 127 mg/dL). <strong>D) Púrpura de Henoch-Schõnlein:</strong> Não explica anemia e insuficiência renal agudas.</p><p>A tríade clássica da SHU está presente: hemólise + plaquetopenia + insuficiência renal. O quadro completo de 4 dias com história prévia de GEAA e achado de hematúria na urina solidificam este diagnóstico.</p><p><strong>Veredito: Alternativa C é o diagnóstico correto.</strong></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_NefrologiaPediatrica",
+        "Pediatria_HematologiaPediatrica",
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Hematologia"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-41"
+    },
+    {
+      "numero": "Q43",
+      "enunciado": "Lactente de 18 meses é levada pela vizinha ao pronto socorro, às pressas dizendo que a criança estava morrendo. A criança estava muito pálida e com aumento da barriga há quatro horas. Sabe que a criança é portadora de \"anemia de família\", diagnosticada no teste do pezinho. Ao exame físico: regular estado geral, afebril, hipocorada +3/+4, anictérico, taquipneico, hidratado, perfusão periférica lenta. ACV: taquicardia, abdômen: globoso, mas permitindo palpação, fígado no rebordo costal direito e baço a 8cm do rebordo costal esquerdo. Baseado no quadro clínico acima os diagnósticos são:",
+      "alternativas": [
+        "Anemia falciforme e sequestro esplênico.",
+        "Anemia ferropriva e infecção.",
+        "Anemia hemolítica secundária a traço talassêmico.",
+        "Anemia ferropriva e traço falciforme."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 avalia seu conhecimento sobre complicações da anemia falciforme, especificamente sequestro esplênico agudo.</p><p><strong>A resposta correta é A - Anemia falciforme e sequestro esplênico.</strong></p><p>Vamos analisar: A paciente tem 18 meses, portadora de &quot;anemia de família&quot; (provavelmente referring à drepanocitose), apresenta quadro agudo de palidez importante (+3/+4), aumento abdominal (baço 8cm do rebordo costal) e taquipneico. <strong>A) Anemia falciforme + sequestro esplênico:</strong> Perfeita correlação - a criança desenvolve sequestro esplênico agudo, onde o baço sequestra hemácias, causando piora súbita da anemia e aumento do volume esplênico. <strong>B) Anemia ferropriva:</strong> Não explica o baço aumentado e o quadro agudo. <strong>C) Talassemia:</strong> Não apresenta curso clínico típico de sequestro. <strong>D) Ferropriva + traço falciforme:</strong> Incompatível com a gravidade do quadro atual.</p><p>O sequestro esplênico é emergência hematológica típica da anemia falciforme em lactentes e crianças pequenas, caracterizada por piora abrupta da anemia com aumento do baço. O tratamento inclui hidratação, transfusão e avaliação para eventual esplenectomia.</p><p><strong>Veredito: Alternativa A é o diagnóstico mais provável.</strong></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_HematologiaPediatrica",
+        "Pediatria_Neonatologia",
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemoglobinopatias"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-42"
+    },
+    {
+      "numero": "Q44",
+      "enunciado": "Escolar, 9 anos, é levada à emergência apresentando há 10 dias prurido anal diário, na madrugada, que o faz perder o sono. Seu irmão mais novo teve o mesmo sintoma, melhorando após uso de medicação. Exame físico: sem alterações. Os medicamentos que podem ser utilizados no tratamento desta patologia são:",
+      "alternativas": [
+        "Albendazol e pamoato de pirvínio.",
+        "Albendazol e levamisol.",
+        "Levamisol e ivermectina.",
+        "Pamoato de pirantel e secnidazol."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ avalia seu conhecimento sobre enterobíase (oxiuríase) em pediatria, especificamente sobre tratamento farmacológico.</p><p><strong>A resposta correta é A - Albendazol e pamoato de pirvínio.</strong></p><p>O quadro clínico é clássico de enterobíase: criança de 9 anos com prurido anal noturno (principalmente de madrugada), que o faz perder o sono, e história similar no irmão. O exame físico sem alterações é típico, pois a parasitose tem apresentação predominantemente clínica. <strong>A) Albendazol e pamoato de pirvínio:</strong> Correto - ambos são antiparasitários eficazes contra Enterobius vermicularis, sendo considerados primeira linha no tratamento. <strong>B) Albendazol e levamisol:</strong> Incorreto - levamisol não é indicado para enterobíase devido à menor eficácia e maior risco de efeitos adversos. <strong>C) Levamisol e ivermectina:</strong> Incorreta - ivermectina não tem eficácia contra Enterobius. <strong>D) Pamoato de pirantel e secnidazol:</strong> Incorreta - secnidazol é para protozoários e pamoato de pirantel não é primeira escolha.</p><p>O diagnóstico de enterobíase é predominantemente clínico, baseado no prurido anal noturno típico. O tratamento com dose única deve ser repetido após 14 dias para eliminar vermes que possam ter emergido neste período.</p><p><strong>Veredito: Alternativa A é o tratamento de escolha.</strong></p>",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_GastrologiaPediatrica",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Parasitoses"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-43"
+    },
+    {
+      "numero": "Q45",
+      "enunciado": "Criança dois anos e seis meses, masculino, previamente hígido, é levado pela mãe ao pediatra por apresentar quadro de tosse e chiado no peito nos últimos 15 dias. Exame físico: ativo, discreta dispneia, sem sinais de toxemia. AR: roncos e sibilos disseminados, discreta diminuição do murmúrio vesicular em todo hemitórax direito. RX do tórax: hiperinsuflação à direita com discreto desvio das estruturas do mediastino para a esquerda. Hipótese diagnóstica e conduta são:",
+      "alternativas": [
+        "Enfisema lobar congênito / tomografia de tórax.",
+        "Aspiração de corpo estranho / broncoscopia.",
+        "Síndrome do lactente sibilante / prednisolona 1mg/kg/dia por cinco dias.",
+        "Asma / salbutamol 2 jatos, com espaçador, com intervalos de 20 minutos, três vezes."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 testa seu conhecimento sobre aspiração de corpo estranho em pediatria, uma emergência respiratória frequente em crianças pequenas.</p><p><strong>A resposta correta é B - Aspiração de corpo estranho / broncoscopia.</strong></p><p>Vamos analisar: criança de 2,5 anos com quadro de tosse e chiado há 15 dias, sem resposta ao tratamento habitual. O Rx mostra hiperinsuflação à direita com desvio mediastinal para esquerda - achado típico de obstrução parcial de via aérea. <strong>A) Enfisema lobar congênito:</strong> Incorreto - apresenta-se desde o período neonatal, não com evolução subaguda de 15 dias. <strong>B) Aspiração de corpo estranho:</strong> Correta - história típica (criança <3 anos), quadro subagudo com inicio súbito, achado radiológico característico (hiperinsuflação unilateral e desvio mediastinal), sem resposta ao tratamento convencional. <strong>C) Síndrome do lactente sibilante:</strong> Incorreta - para lactentes <2 anos com episódios recorrentes, não explica achado radiológico focal. <strong>D) Asma:</strong> Incorreta - asma não cursa com hiperinsuflação unilateral tão evidente ou desvio mediastinal.</p><p>A aspiração é mais comum em menores de 3 anos. A broncoscopia é padrão-ouro diagnóstico e terapêutico. O diagnóstico deve ser sempre considerado em crianças desta faixa etária com sintomas respiratórios subagudos que não melhoram com terapia padrão.</p><p><strong>Veredito: Alternativa B é a conduta mais adequada.</strong></p>",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_EmergenciasPediatricas",
+        "ClinicaMedica_Pneumologia",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-44"
+    },
+    {
+      "numero": "Q46",
+      "enunciado": "V.A.S.P, 2 anos e 6 meses, sexo feminino, iniciou quadro de crise convulsiva tônico- clônica generalizada em vigência de febre em seu domicílio. Procurou atendimento na emergência mais próxima da sua casa onde recebeu 3 doses de diazepam sem resposta. Prescrito então dose de ataque de fenitoína (15 mg/kg) com resolução do quadro. Duração total do evento estimada em 40 min. Paciente transferida para o CTI pediátrico de referência para seguimento de investigação. Avó paterna com história familiar de epilepsia em tratamento. Ao exame de admissão no CTI: Paciente sonolenta, irritada quando estimulada, sem sinais de rigidez de nuca, afebril. Estável hemodinâmicamente, sem alterações de pele. Baseado no caso clínico em questão, qual o esquema terapêutico empírico inicial indicado para a faixa etária da paciente na suspeita de meningoencefalite infecciosa aguda?",
+      "alternativas": [
+        "Ampicilina + Ceftriaxona.",
+        "Ampicilina + Cefotaxima.",
+        "Ceftriaxona + Aciclovir.",
+        "Ceftriaxona + Vancomicina + Aciclovir."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 aborda o manejo inicial de suspeita de meningoencefalite infecciosa aguda em uma criança pequena, testando conhecimento sobre antibioticoterapia empírica conforme protocolos pediátricos atuais.</p><p>A paciente apresenta 2 anos e 6 meses com crise convulsiva tônico-clônica generalizada em vigência de febre, resistente ao diazepam, resolvida com fenitoína. O quadro clínico sugere fortemente meningoencefalite infecciosa, especialmente considerando a história familiar de epilepsia que pode indicar predisposição genética.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Ampicilina + Ceftriaxona:</strong> Esta combinação não contempla cobertura para patógenos resistentes. A ampicilina cobre apenas Listeria (especialmente importante em neonatos), mas falta vancomicina para Streptococcus pneumoniae resistente a penicilina, que é uma preocupação crescente em nossa realidade epidemiológica brasileira.</p><p><strong>B) Ampicilina + Cefotaxima:</strong> Mesmo problema da alternativa A, sem cobertura adequada para patógenos resistentes. A cefotaxima é menos eficaz que ceftriaxona em meningite pediátrica e não há vancomicina para casos resistentes.</p><p><strong>C) Ceftriaxona + Aciclovir:</strong> Boa cobertura bacteriana com ceftriaxona, mas falta vancomicina para casos de resistência. O aciclovir é apropriado para suspeita de herpes, mas não deve substituir a vancomicina na cobertura de S. pneumoniae resistente.</p><p><strong>D) Ceftriaxona + Vancomicina + Aciclovir:</strong> <strong>Esta é a resposta CORRETA.</strong> A ceftriaxona é a cefalosporina de escolha em meningite pediátrica, oferecendo excelente penetração no LCR. A vancomicina adiciona cobertura para Streptococcus pneumoniae resistente à penicilina, padrão epidemiológico atual no Brasil. O aciclovir cobre possível infecção por herpes vírus, que pode causar meningoencefalite em crianças.</p><p><strong>Importante mencionar:</strong> Em 2025, as diretrizes brasileiras recomendam esta tríade como esquema empírico inicial em crianças de 1 mês a 12 anos com suspeita de meningite bacteriana comunitária, considerando o padrão de resistência atual no país.</p><p><strong>Veredito: Alternativa D é a resposta correta.</strong> Esta questão avalia conhecimento sobre antibioticoterapia empírica racional em pediatria, considerando o panorama epidemiológico brasileiro e a necessidade de cobertura para patógenos multirresistentes.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_EmergenciasPediatricas",
+        "Pediatria_EmergenciasPediatricas_ConvulsaoFebril",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesDoSistemaNervosoCentr"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-45"
+    },
+    {
+      "numero": "Q47",
+      "enunciado": "Lactente de 9 meses, diagnóstico prévio de síndrome de Down, iniciou quadro de febre baixa, tosse seca, coriza hialina, e espirros evoluindo em 72h com taquidispnéia. Procurou atendimento na emergência infantil onde recebeu resgate com broncodilatador com boa resposta. Liberado para casa com medicações de controle e orientações. Retorna a emergência após 24h com piora clínica. Admitido no setor taquidispneico e hipoxêmico. Feito resgate com broncodilatador com resposta parcial. Transferido para Unidade de Terapia Intensiva Pediátrica (UTIP). Sinais vitais de admissão na UTIP: FC 145 bpm; FR: 58 irpm; Sat: 92% (Ar ambiente); Tax: 37°C; PA 95 x 57 mmHg Ausculta pulmonar com sibilos difusos, tempo expiratório prolongado, Tiragem subcostal e retração de fúrcula moderada. Qual a principal hipótese diagnóstica e o tratamento preconizado?",
+      "alternativas": [
+        "Bronquiolite viral aguda: Oxigênio suplementar",
+        "Bronquiolite viral aguda: Corticoide inalatório",
+        "Pneumonia bacteriana aguda: Terapia antimicrobiana",
+        "Asma: Broncodilatador de curta duração"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 foca no diagnóstico diferencial entre bronquiolite viral aguda e outras condições respiratórias em lactentes com fatores de risco, testando conhecimento sobre manejo clínico baseado em evidências.</p><p>O caso apresenta um lactente de 9 meses com síndrome de Down, evoluindo com febre, tosse seca, coriza e taquidispneia. A resposta aos broncodilatadores inicialmente pode confundir, mas o curso clínico e a recidiva precoce sugerem bronquiolite viral aguda.</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Bronquiolite viral aguda: Oxigênio suplementar:</strong> <strong>Esta é a resposta CORRETA.</strong> A bronquiolite viral aguda é caracterizada por inflamação e obstrução das pequenas vias aéreas, mais comum em lactentes menores de 1 ano. A paciente apresenta 9 meses, sinal vitais alterados (FC 145, FR 58, Sat 92%), sibilos difusos e tiragem - critérios de gravidade. O tratamento preconizado é oxigênio suplementar para manter saturação > 94%, conforme diretrizes brasileiras de 2024.</p><p><strong>B) Bronquiolite viral aguda: Corticoide inalatório:</strong> Os corticoides inalatórios NÃO têm indicação em bronquiolite viral aguda. Estudos brasileiros recentes confirmam ausência de benefício, podendo até prolongar a doença. A resposta inicial aos broncodilatadores não indica asma neste contexto.</p><p><strong>C) Pneumonia bacteriana aguda: Terapia antimicrobiana:</strong> A ausência de sinais de consolidação pulmonar, a idade (9 meses) e o padrão clínico sugerem bronquiolite viral. Pneumonia bacteriana em lactentes é menos comum e apresenta padrão clínico diferente.</p><p><strong>D) Asma: Broncodilatador de curta duração:</strong> Asma nesta idade é rara. A resposta parcial aos broncodilatadores é característica da bronquiolite viral aguda, não de asma. A síndrome de Down aumenta risco para bronquiolite, mas não para asma precoce.</p><p><strong>Contextualização importante:</strong> No Brasil, o vírus sincicial respiratório (VSR) é o principal agente causal de bronquiolite em lactentes. As diretrizes nacionais recomendam oxygenoterapia como principal medida terapêutica, monitorando sinais de fadiga, desidratação e dessaturação persistente.</p><p><strong>Veredito: Alternativa A é a resposta correta.</strong> Esta questão avalia capacidade de diagnóstico diferencial em lactentes com quadro respiratório e conhecimento sobre condutas baseadas em evidências brasileiras atuais.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite_BronquioliteDiagnostico",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite_BronquioliteTratamento",
+        "Pediatria_EmergenciasPediatricas"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-46"
+    },
+    {
+      "numero": "Q48",
+      "enunciado": "As imunodeficiências primárias são doenças genéticas que têm como principal característica alterações das funções imunológicas, levando o paciente a maior suscetibilidade às infecções de repetição, doenças autoimunes e neoplasias. Na maioria dos casos, os sintomas clínicos se iniciam na infância, e o pediatra tem seu papel no diagnóstico. Dessa forma, temos sinais de alerta para que o pediatra, na presença desses, possa solicitar a investigação de uma possível imunodeficiência primária. Devemos investigar imunodeficiência em criança de:",
+      "alternativas": [
+        "Quatro anos com estomatites de repetição por um mês.",
+        "Sete anos com história de pneumonia aos três anos e novo quadro atual.",
+        "Três anos com quadro de três otites no último ano.",
+        "Um ano com efeito adverso (abscesso) em local de aplicação da vacina BCG."
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão apresenta ANULAÇÃO MOTIVADA por ausência de gabarito oficial claro.</strong> O sistema indica gabarito '@' o que sugere questionamento ou anulação durante o processo de correção da prova.</p><p>No entanto, analisando o conteúdo, a questão aborda critérios para investigação de imunodeficiência primária em pediatria, tema crucial na prática clínica brasileira.</p><p><strong>Os critérios internacionais para investigação incluem:</strong></p><p><strong>A) 4 anos com estomatites de repetição por um mês:</strong> Estomatites recorrentes são comuns na infância e, por si só, não indicam imunodeficiência. Poderiam ser recorrência viral normal ou deficiências nutricionais.</p><p><strong>B) 7 anos com história de pneumonia aos 3 anos e novo quadro atual:</strong> <strong>Esta seria a alternativa mais forte para investigação.</strong> Pneumonia em lactente é sinal de alerta, especialmente se recorrente. Os critérios brasileiros definem como sinal de alarme 'pneumonia antes dos 12 meses' ou 'pneumonias de repetição'.</p><p><strong>C) 3 anos com quadro de três otites no último ano:</strong> Otites de repetição são frequentes em pré-escolares e não constituem, isoladamente, critério para investigação de imunodeficiência primária. Considera-se patológico acima de 6-8 otites/ano nesta faixa etária.</p><p><strong>D) 1 ano com efeito adverso (abscesso) em local de aplicação da vacina BCG:</strong> Abscesso no local da BCG é reação adversa esperada em cerca de 1-5% dos vacinados e não indica imunodeficiência, especialmente em lactente.</p><p><strong>Conforme Diretrizes Brasileiras 2024:</strong> Devem ser investigados crianças com 'pneumonia antes de 1 ano' ou 'dois ou mais episódios de pneumonia em 1 ano'. A alternativa B, com pneumonia aos 3 anos e novo quadro atual, indica padrão recorrente preocupante.</p><p><strong>Motivo da anulação:</strong> A alternativa B apresenta critérios mais sólidos para investigação que as outras, mas a questão pode ter gerado dúvidas sobre o momento exato de investigação, justificando a anulação ou revisão do gabarito oficial.",
+      "filterIds": [
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_PuericulturaGeral"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-47"
+    },
+    {
+      "numero": "Q49",
+      "enunciado": "Pré-escolar, inicia há 4 dias de febre 38°C, dor de garganta, mal-estar, diminuição do apetite e adenomegalias em região suboccipital e pós auriculares bilaterais, seguido de rash macular róseo claro, irregular, disseminado, iniciado em face e pescoço, distribuindo-se pelo corpo. Sem descamação após desaparecimento do mesmo. No início do quadro, o exame da orofaringe revelava lesões pequenas, de coloração rósea e petéquias em palato mole. A caderneta vacinal da criança não estava em dia. Em relação ao quadro clínico, o agente é:",
+      "alternativas": [
+        "Adenovírus.",
+        "Norovírus.",
+        "Vírus da rubéola.",
+        "Vírus do sarampo."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UNIMED RJ 2023 aborda o diagnóstico diferencial de doenças exantemáticas virais em pediatria, testando conhecimento sobre correlação clinicopatológica e características epidemiológicas.</p><p>O caso descreve um pré-escolar com quadro típico de doença exantemática viral: febre de 4 dias, mal-estar, dor de garganta, followed by linfadenopatias retroauriculares e suboccipitais, culminating in exantema macular róseo iniciado na face e pescoço.</p><p><strong>Elementos diagnósticos-chave presentes:</strong></p><p>• Febre baixa e mal-estar inicial<br>• Adenomegalias retroauriculares e suboccipitais características<br>• Exantema macular róseo claro com padrão craniocaudal<br>• Ausência de descamação pós-eruptiva<br>• Lesões petequiais em palato (manchas de Forchheimer)<br>• Esquema vacinal incompleto</p><p><strong>Analisando as alternativas:</strong></p><p><strong>A) Adenovírus:</strong> Pode causar febre, faringite e exantema, mas NÃO apresenta padrão específico de adenomegalia retroauricular. Geralmente cursa com conjuntivite ou sintomas respiratórios mais evidentes, ausentes neste caso.</p><p><strong>B) Norovírus:</strong> Completamente inadequado. É um enterovírus associado à gastroenterite aguda com vômitos e diarreia. Não há envolvimento cutâneo ou linfonodal como descrito.</p><p><strong>C) Vírus da rubéola:</strong> <strong>Esta é a resposta CORRETA.</strong> O vírus da rubéola apresenta exatamente este padrão clínico: febre baixa, adenomegalias retroauriculares e suboccipitais (característica patognomônica), followed by exantema macular róseo que inicia na face e progride craniocaudalmente. As manchas de Forchheimer são específicas da rubéola. A ausência de descamação e o quadro mais leve diferenciam do sarampo.</p><p><strong>D) Vírus do sarampo:</strong> Apresenta padrão exantemático similar (craniocaudal), mas com quadro clínico mais exuberante. Os pródromos incluem tosse, coriza, conjuntivite e fotofobia intensas. As manchas de Koplik na mucosa jugal são patognomônicas e ausentes aqui. O exantema é mais intenso, confluente e followed by descamação - características não presentes no caso.</p><p><strong>Relevância epidemiológica atual:</strong> A rubéola é considerada eliminada no Brasil desde 2016, mas casos ainda podem ocorrer em populações não vacinadas. O diagnóstico é importante para notificação e medidas de controle.</p><p><strong>Veredito: Alternativa C é a resposta correta.</strong> Esta questão avalia capacidade de correlação clinicopatológica em doenças exantemáticas e conhecimento sobre características diferenciais entre viroses pediatricas.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas",
+        "Pediatria_InfectologiaPediatrica_DoencasExantematicas_Rubeola",
+        "ClinicaMedica_Infectologia"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-48"
+    },
+    {
+      "numero": "Q50",
+      "enunciado": "Qual o principal agente etiológico considerando a faixa etária, dos quadros de Bronquiolite Aguda e de Pneumonia Comunitária Bacteriana Febril Simples, respectivamente?",
+      "alternativas": [
+        "Vírus Sincicial Respiratório (VSR)/Streptococcus Grupo B",
+        "Influenza/Streptococcus Pneumoniae",
+        "Influenza/Streptococcus Grupo B",
+        "Vírus Sincicial Respiratório (VSR)/Streptococcus Pneumoniae"
+      ],
+      "correta": -1,
+      "professor_comment": "<p><strong>Esta questão apresenta ANULAÇÃO MOTIVADA por inconsistência no gabarito oficial.</strong> O sistema indica gabarito '@', sugerindo questionamento durante o processo de correção, provavelmente devido a ambiguidade ou múltiplas interpretações possíveis.</p><p>Abordando o conteúdo técnico, a questão foca nos principais agentes etiológicos de broncquiolite aguda e pneumonia comunitária bacteriana em pediatria, tema central na epidemiologia infecciosa infantil brasileira.</p><p><strong>Para broncquiolite aguda:</strong></p><p>O Vírus Sincicial Respiratório (VSR) é unanimemente reconhecido como o principal agente etiológico, responsável por cerca de 70-80% dos casos em lactentes. Outras causas incluem rinovírus, adenovírus, influenza, entre outros, mas o VSR mantém supremacia epidemiológica.</p><p><strong>Para pneumonia comunitária bacteriana:</strong></p><p>Aqui surge a principal controvérsia que justifica a anulação:</p><p><strong>Alternativa A: VSR / Streptococcus Grupo B:</strong> VSR correto para broncquiolite, mas SGB é principalmente causador de sepse neonatal e menos frequente em pneumonia comunitária pediátrica.</p><p><strong>Alternativa B: Influenza / Streptococcus pneumoniae:</strong> Influenza não é principal agente de broncquiolite aguda. S. pneumoniae é principal causa de pneumonia bacteriana.</p><p><strong>Alternativa C: Influenza / Streptococcus Grupo B:</strong> Vícios duplos: Influenza não é principal de broncquiolite; SGB não é principal de pneumonia.</p><p><strong>Alternativa D: VSR / Streptococcus pneumoniae:</strong> <strong>Esta seria a resposta mais tecnicamente correta.</strong> VSR é unanimidade para broncquiolite. S. pneumoniae é o principal agente de pneumonia comunitária bacteriana em crianças, principalmente em lactentes e pré-escolares.</p><p><strong>Motivo da anulação:</strong> Possível ambiguidade na interpretação da questão pode ter gerado debate sobre o agente de pneumonia bacteriana, justificando a anulação ou revisão do gabarito. A alternativa D apresenta as correções mais tecnicamente aceitas, mas a banca optou pela anulação para evitar interpretações divergentes.",
+      "filterIds": [
+        "Pediatria",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_Bronquiolite",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN",
+        "Pediatria_PneumologiaPediatrica_PneumoniasbroncopneumoniasBcpN_PneumoniasbroncopneumoniasBcpN_1"
+      ],
+      "tags": [
+        "UNIMEDRJ2023R1",
+        "UNIMED RJ",
+        "R1",
+        "RJ",
+        "2023",
+        "anulada",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762586984144-49"
+    }
+  ]
+}

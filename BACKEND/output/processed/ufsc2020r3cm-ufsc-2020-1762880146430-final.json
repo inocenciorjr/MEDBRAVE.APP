@@ -1,0 +1,1386 @@
+{
+  "metadata": {
+    "examName": "UFSC2020R3CM (UFSC 2020)",
+    "examYear": 2020,
+    "url": "source://1154",
+    "totalQuestions": 40,
+    "categorizedQuestions": 40,
+    "rewrittenComments": 40,
+    "processedAt": "2025-11-11T16:55:46.430Z",
+    "jobId": "batch-1762861546527-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "1ea81945-653d-4750-887a-81fada2d9fec"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "<html><head></head><body>Após atender dois pacientes internados com dispneia, você busca estudar a acurácia de testes diagnósticos que possam ajudar no diagnóstico diferencial desses pacientes. Após busca em banco de dados, você encontra um estudo que incluiu 486 pacientes adultos com dispneia de início agudo e avaliou a acurácia do peptídeo natriurético cerebral (BNP) e da Ultrassonografia Pulmonar (USP) no diagnóstico de insuficiência cardíaca aguda. O estudo apresentava as seguintes características metodológicas: 1. Apenas pacientes estáveis foram incluídos, insuficiência respiratória era um critério de exclusão. 2. O diagnóstico de referência da insuficiência cardíaca foi através da avaliação independente de todos os dados clínicos, laboratoriais e radiológicos por um cardiologista e um intensivista. 3. A execução e interpretação dos testes índices foram cegadas para o diagnóstico de referência. 4. O diagnóstico de referência foi cegado para os testes estudados. 5. Os testes índices foram executados na chegada do paciente no setor de emergência. Os resultados estão descritos na tabela abaixo: Abreviações: Sen = sensibilidade; Esp = especificidade; RV(+) = Razão de Verossimilhança ositiva; RV(-) = Razão de Verossimilhança negativa; VPP = Valor Preditivo Positivo; VPN = Valor Preditivo Negativo. O primeiro paciente que você atendeu era um homem de 73 anos, que iniciou há 2 dias com dispneia aos moderados esforços e hoje procurou a emergência devido à dispneia aos mínimos esforços, associada a ortopneia e dispneia paroxística noturna. Em repouso o paciente apresentava respiração confortável, frequência respiratória de 22 irpm; saturação de oxigênio de 95% em ar ambiente, frequência cardíaca de 92 bpm e pressão arterial de 143/84 mmHg. Ausculta pulmonar sem anormalidades, sem edema de membros inferiores e sem turgência jugular. Após avaliar esse paciente você estimou uma probabilidade de 50% para o diagnóstico de insuficiência cardíaca aguda. O segundo paciente era uma mulher de 70 anos, com história de dispneia aos moderados esforços há aproximadamente 2 meses e há 1 dia apresentou piora da dispneia que passou a ocorrer aos mínimos esforços e se associou a tosse com expectoração hialina. Em repouso apresentava respiração confortável, frequência respiratória de 21 irpm; saturação de oxigênio de 94% em ar ambiente, frequência cardíaca de 89 bpm e pressão arterial de 114/71 mmHg. Ausculta pulmonar com sibilos bilaterais, sem edema de membros inferiores e sem turgência jugular. Para esse segundo paciente, você estimou uma probabilidade de 15% para o diagnóstico de insuficiência cardíaca aguda. Considerando os resultados do estudo apresentado acima, assinale a alternativa correta.\n\n<img src=\"https://medbrave.com.br/questions/ufsc-2020-r3/qQ1.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O peptídeo natriurético cerebral é acurado para confirmar insuficiência cardíaca em ambos os pacientes.",
+        "O peptídeo natriurético cerebral é acurado para descartar insuficiência cardíaca em ambos os pacientes.",
+        "A ultrassonografia pulmonar não é acurada o suficiente para descartar insuficiência cardíaca no segundo paciente.",
+        "O peptídeo natriurético cerebral não é acurado para descartar insuficiência cardíaca aguda no segundo paciente.",
+        "A ultrassonografia pulmonar é acurada tanto para confirmar quanto para descartar insuficiência cardíaca aguda no primeiro paciente, mas é útil somente para descartar esse diagnóstico no segundo paciente."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia sua habilidade em aplicar conceitos de acurácia diagnóstica em casos clínicos práticos, especificamente no diagnóstico de insuficiência cardíaca aguda usando BNP e ultrassonografia pulmonar.</p><p><strong>A resposta correta é E.</strong> A ultrassonografia pulmonar é acurada tanto para confirmar quanto para descartar insuficiência cardíaca no primeiro paciente (probabilidade pré-teste 50%), mas é útil somente para descartar esse diagnóstico no segundo paciente (probabilidade pré-teste 15%).</p><p>Para compreender essa resposta, precisamos analisar a tabela de resultados: o BNP apresenta sensibilidade de 85%, especificidade de 58%, RV(+) de 2,02 e RV(-) de 0,26. A ultrassonografia pulmonar apresenta sensibilidade de 95%, especificidade de 81%, RV(+) de 5,0 e RV(-) de 0,06.</p><p><strong>Primeiro paciente (probabilidade pré-teste 50%):</strong> Usando RV(+) do BNP (2,02), a probabilidade pós-teste para resultado positivo seria aproximadamente 66%. Para ultrassonografia, com RV(+) de 5,0, a probabilidade seria cerca de 73%. Ambos são úteis para confirmar IC, mas a USP é superior.</p><p><strong>Segundo paciente (probabilidade pré-teste 15%):</strong> Com BNP, RV(-) de 0,26 reduz a probabilidade pós-teste para cerca de 4,6%. Com USP, RV(-) de 0,06 reduz para cerca de 1%. Ambos são excelentes para descartar IC, mas a USP é superior.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) O BNP não é acurado para confirmar IC em ambos os pacientes - sua especificidade é baixa (58%), gerando muitos falsos positivos.</p><p>B) O BNP é acurado para descartar IC em ambos os pacientes - sua sensibilidade de 85% não é ideal para exclusão em casos de alta probabilidade pré-teste.</p><p>C) A ultrassonografia pulmonar É acurada para descartar IC no segundo paciente - sua sensibilidade de 95% e RV(-) de 0,06 são excelentes para exclusão.</p><p>D) O BNP É acurado para descartar IC aguda no segundo paciente - com RV(-) de 0,26, é eficaz para exclusão em baixa probabilidade pré-teste.</p><p>Esta questão demonstra a importância de interpretar testes diagnósticos considerando sempre a probabilidade pré-teste e as características do teste (sensibilidade, especificidade e razões de verossimilhança).</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Pneumologia",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TestesDiagnosticos"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "<html><head></head><body>Após atender dois pacientes internados com dispneia, você busca estudar a acurácia de testes diagnósticos que possam ajudar no diagnóstico diferencial desses pacientes. Após busca em banco de dados, você encontra um estudo que incluiu 486 pacientes adultos com dispneia de início agudo e avaliou a acurácia do peptídeo natriurético cerebral (BNP) e da ultrassonografia pulmonar (USP) no diagnóstico de insuficiência cardíaca aguda. O estudo apresentava as seguintes características metodológicas: 1. Apenas pacientes estáveis foram incluídos, insuficiência respiratória era um critério de exclusão. 2. O diagnóstico de referência da insuficiência cardíaca foi através da avaliação independente de todos os dados clínicos, laboratoriais e radiológicos por um cardiologista e um intensivista. 3. A execução e interpretação dos testes índices foram cegadas para o diagnóstico de referência. 4. O diagnóstico de referência foi cegado para os testes estudados. 5. Os testes índices foram executados na chegada do paciente no setor de emergência. Os resultados estão descritos na tabela abaixo: Abreviações: Sen = sensibilidade; Esp = especificidade; RV(+) = razão de verossimilhança positiva; RV(-) = razão de verossimilhança negativa; VPP = valor preditivo positivo; VPN = valor preditivo negativo Quanto às características metodológicas do estudo (enunciado 1) e à interpretação de seus resultados assinale a alternativa correta.\n\n<img src=\"https://medbrave.com.br/questions/ufsc-2020-r3/qQ2.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O momento da realização dos testes do estudo, antes ou depois do tratamento inicial, não interfere nos resultados.",
+        "A probabilidade de insuficiência cardíaca aguda após um resultado positivo no ultrassom pulmonar é de 89,3%.",
+        "A probabilidade de o paciente não ter insuficiência cardíaca após um resultado negativo do peptídeo natriurético cerebral é de 85%.",
+        "A sensibilidade de ambos os testes pode estar subestimada, já que foram excluídos os pacientes com o espectro mais grave da doença, que seriam mais facilmente detectados pelos testes.",
+        "A razão de verossimilhança negativa do ultrassom pulmonar é pior do que a do peptídeo natriurético cerebral."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFSC 2020 testa seu conhecimento sobre metodologia de estudos de acurácia diagnóstica e interpretação de medidas estatísticas em testes diagnósticos aplicados ao diagnóstico de insuficiência cardíaca aguda.</p><p><strong>A resposta correta é D.</strong> A sensibilidade de ambos os testes pode estar subestimada, já que foram excluídos os pacientes com o espectro mais grave da doença, que seriam mais facilmente detectados pelos testes.</p><p>O método de seleção de pacientes é crucial na interpretação de estudos diagnósticos. O estudo incluiu apenas pacientes estáveis, excluindo aqueles com insuficiência respiratória - que representam o espectro mais grave da IC aguda.</p><p>Em pacientes mais graves, os testes tendem a ser mais positivados devido ao maior acoplamento da patologia. Quando excluímos esse subgrupo, nossa amostra fica enviesada para casos menos graves, onde a detecção torna-se mais desafiadora. Isso pode levar à subestimação da sensibilidade real do teste.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) O momento da realização dos testes interfere significativamente. Realizar na chegada (antes do tratamento) evita que a terapêutica influencie os resultados, especialmente importante para BNP (que pode ser afetado por diuréticos) e ultrassonografia pulmonar (que pode ser alterada por ventilação mecânica).</p><p>B) A probabilidade pós-teste para resultado positivo da ultrassonografia é calculada usando VPP de 89,3% e a prevalência no estudo de 50% (243 de 486 pacientes). No entanto, a pergunta refere-se ao resultado positivo do teste, então seria 89,3%.</p><p>C) A probabilidade de não ter IC após resultado negativo do BNP é calculada usando VPN de 85% e a prevalência. No entanto, a VPN é uma medida de probabilidade pós-teste que já incorpora a prevalência, então seria 85%.</p><p>E) A RVE(-) da ultrassonografia pulmonar é 0,06, superior à do BNP (0,26), sendo, portanto, melhor para exclusão de diagnóstico.</p><p>Esta questão enfatiza a importância de considerar o espectro de gravidade da doença ao interpretar resultados de estudos de acurácia diagnóstica.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Pneumologia",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_TestesDiagnosticos"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "Paciente masculino, 38 anos, vem à consulta ambulatorial com queixa de pirose frequente. Realizou uma Endoscopia Digestiva Alta há 6 meses com achado de esofagite grau A de Los Angeles. Foi orientado na época a usar omeprazol 40 mg/dia até que o sintoma melhorasse. Após cerca de 1 semana de uso o paciente relatou melhora significativa da pirose, interrompendo a medicação. Hoje veio a consulta pedindo nova endoscopia \"para ver como está o refluxo\". Paciente está com sobrepeso, é sedentário e possui hábito social frequente de ingesta de cerveja. Além de repetir o exame, o paciente gostaria de um remédio que \"resolvesse de vez\" o problema. Assinale a alternativa com a orientação mais adequada para o paciente descrito.",
+      "alternativas": [
+        "Reforçaria a importância da mudança de estilo de vida.",
+        "Solicitaria nova EDA e após reintroduziria o omeprazol.",
+        "Trocaria o inibidor de bomba protônica para sustentar o efeito.",
+        "Encaminharia para o especialista para avaliação cirúrgica.",
+        "Voltaria com omeprazol, orientando uso contínuo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia seu conhecimento sobre o manejo clínico do refluxo gastroesofágico, especificamente o tratamento da esofagite leve e a importância de mudanças no estilo de vida.</p><p><strong>A resposta correta é A.</strong> Reforçaria a importância da mudança de estilo de vida.</p><p>O paciente apresenta esofagite grau A de Los Angeles, considerada forma leve. O tratamento inicial padrão inclui inibidores de bomba protônica (IBP) por 4-8 semanas, associados a mudanças no estilo de vida. O paciente já apresentou boa resposta inicial ao omeprazol, mas interrompeu prematuramente o tratamento.</p><p>O perfil do paciente revela fatores de risco significativos: sobrepeso, sedentarismo e consumo frequente de cerveja. A cerveza aumenta a pressão do esfíncter esofágico inferior, favorece o relaxamento transitório e pode exacerbar o refluxo.</p><p>As diretrizes atuais recomendam uma abordagem escalonada: primeiro, modificar fatores precipitantes e adotar medidas comportamentais; segundo, instituir terapia medicamentosa mínima eficaz por período adequado; terceiro, reavaliação clínica antes de repetir endoscopia.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>B) Repetir endoscopia não é indicada para esofagite grau A que respondeu bem ao tratamento. A melhora clínica é suficiente para avaliar eficácia terapêutica.</p><p>C) Trocar IBP não resolve o problema de base (estilo de vida). Não há diferença significativa na eficácia entre diferentes IBP para esofagite leve.</p><p>D) Cirurgia não está indicada para esofagite grau A que ainda não foi tratada adequadamente com medidas clínicas.</p><p>E) Uso contínuo de IBP sem abordar fatores de risco perpetua a dependência medicamentosa sem tratar a causa subjacente.</p><p>Esta questão destaca que o tratamento da DRGE deve ser комплексный, integrando mudanças comportamentais com terapia medicamentosa, priorizando sempre as medidas não-farmacológicas quando possível.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Esofago",
+        "ClinicaMedica_Gastroenterologia_Esofago_DoencaDoRefluxoGastroesofagico",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Gastroenterologia_Estomago",
+        "ClinicaMedica_Gastroenterologia_Estomago_OsInibidoresDaBombaDeProtonsIb"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "Paciente feminina, 42 anos, vem à consulta ambulatorial em função de alteração em exames do periódico da empresa. De sintomas relata \"barriga inchada há anos\". No histórico de saúde, apenas duas gestações, sem problemas, sendo a última há 10 anos. Usa um fitoterápico para a ansiedade e paracetamol para cefaleias esporádicas. Não há sinais de alarme para a queixa apresentada. Hábito social de consumo de cerveja aos fins de semana. Exame físico, pressão arterial de 150/90 mmHg, frequência cardíaca de 86 bpm, frequência respiratória de 18irpm, temperatura axilar de 36.4°C e índice de massa corpórea de 32 kg/m2, sem outras particularidades. Laboratório com hemoglobina sanguínea de 12,8 g/dL, leucograma com 6.780 céls/mm3, contagem de plaquetas de 245.000/mm3, glicemia de105 mg/dL, creatinina sérica de 0,7 g/dL, desidrogenase láctica de 138 mg/dL, HDL de 40 mg/dL, triglicerídeos de 180 mg/dL, TGO de 42 U/L, TGP de 67 U/L, GGT de 101 U/L, FA de 68 U/L, TSH = 2,1 mU/L. Considerando o caso clínico, qual sua principal hipótese em relação às alterações hepáticas?",
+      "alternativas": [
+        "Hepatite viral",
+        "Hepatite alcoólica",
+        "Hepatite por doença gordurosa não alcoólica",
+        "Hepatite medicamentosa",
+        "Hepatite autoimune"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia sua capacidade de diagnosticar e diferenciar causas de alterações hepáticas em pacientes assintomáticos com exames laboratoriais aumentados.</p><p><strong>A resposta correta é C.</strong> Hepatite por doença gordurosa não alcoólica (DHGNA).</p><p>O paciente apresenta alteração em enzimas hepáticas (TGO/TGP) com predomínio da TGP (67 U/L) em relação à TGO (42 U/L). O padrão TGP > TGO é característico da DHGNA. Outras pistas importantes: sobrepeso (IMC 32 kg/m²), ausência de história de etilismo pesado, função renal normal e ausência de marcadores sugestivos de hepatite viral (TGO/TGP < 100 U/L).</p><p>A DHGNA está intimamente relacionada à síndrome metabólica, presente neste paciente: sobrepeso, alterações lipídicas (HDL baixo, triglicerídeos aumentados) e intolerância à glicose (glicemia 105 mg/dL).</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) Hepatite viral é improvável sem história de exposição de risco, sintomas sistêmicos ou elevação significativa das transaminases (> 10x LSN).</p><p>B) Hepatite alcoólica geralmente cursa com relação TGO/TPG > 2:1 e história de consumo significativo. O paciente refere apenas 'cerveja aos fins de semana', sem padrão de uso crônico.</p><p>D) Hepatite medicamentosa é menos provável, pois o paracetamol em doses baixas e fitoterápicos para ansiedade raramente causam hepatotoxicidade significativa, especialmente sem curso temporal claro.</p><p>E) Hepatite autoimune predomina em mulheres jovens e cursa com elevações mais significativas de transaminases, aumento de gamaglobulinas e presença de autoanticorpos.</p><p>Esta questão exemplifica a importância da correlação clínico-laboratorial no diagnóstico diferencial de hepatopatias, especialmente considerando o perfil epidemiológico atual da DHGNA.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_OutrasHepatopatias",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_ObesidadeESindromeMetabolica"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "Mulher, 60 anos, procura atendimento endocrinológico devido a nódulo tireoidiano identificado há 6 meses. Ultrassonografia de tireoide: nódulo de 2,6 × 1,5 cm, puramente sólido, no polo superior do lobo direito, acentuadamente hipoecogênico, com margens lobuladas, mais alto que largo, sem presença de microcalcificações. Com base na classificação de ACR TI-RADS (thyroid imaging, reporting and data system) de nódulos tireoidianos, assinale a alternativa que não apresenta característica para a suspeição de malignidade.",
+      "alternativas": [
+        "Margens lobuladas",
+        "Formato mais alto que largo",
+        "Composição puramente sólida",
+        "Hipoecogenicidade acentuada",
+        "Localização no polo superior do lobo direito"
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia seu conhecimento sobre a classificação ACR TI-RADS para avaliação de nódulos tireoidianos e fatores que indicam suspeição de malignidade.</p><p><strong>A resposta correta é E.</strong> Localização no polo superior do lobo direito.</p><p>O sistema ACR TI-RADS (Thyroid Imaging Reporting and Data System) classifica nódulos baseado em cinco características ecográficas: composição, ecogenicidade, formato, margens e ecos pontiformes (echogenic foci). Cada categoria recebe pontuação que determina o nível de suspeita e necessidade de biópsia.</p><p>Analisando as características apresentadas: o nódulo é puramente sólido (ponto 2), acentuadamente hipoecogênico (ponto 2), mais alto que largo (ponto 1), com margens lobuladas (ponto 1). Esses achados são sospechosos para malignidade.</p><p>Porém, a localização no polo superior do lobo direito não é um critério de suspeição na classificação ACR TI-RADS. A localização (pólos superior, médio ou inferior) não influencia o risco de malignidade segundo este sistema.</p><p><strong>Análise das alternativas incorretas:</strong></p><p>A) Margens lobuladas são consideradas suspeitas (1 ponto no ACR TI-RADS) e associadas a invasão extracapsular.</p><p>B) Formato mais alto que largo (maior diâmetro anteroposterior que transversal) é um achado suspeito (1 ponto), característico de crescimento infiltrativo.</p><p>C) Composição puramente sólida é a mais sospeitosa (2 pontos) comparada a mistos ou císticos.</p><p>D) Hipoecogenicidade acentuada é altamente sospeitosa (2 pontos) e indica possível substituição glandular por tecido neoplásico.</p><p>Esta questão destaca a importância de conhecer os critérios padronizados de avaliação de nódulos tireoidianos para evitar procedimentos desnecessários e garantir abordagem adequada dos casos suspeitos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_ManejoDosNodulosTireoidianos",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Tireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide",
+        "ClinicaMedica_Endocrinologia_Tireoide_CancerDeTireoide_CarcinomaPapilifero"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "É comum que pacientes com intoxicações agudas por diferentes substâncias necessitem de manejo das vias aéreas. Assinale a alternativa com a(s) substância(s) que acarrete(m) o maior risco de hipoxemia durante a intubação orotraqueal.",
+      "alternativas": [
+        "Lítio",
+        "Antiepilépticos",
+        "Organofosforados",
+        "Benzodiazepínicos",
+        "Tricíclicos"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia seu conhecimento sobre complicações respiratórias em intoxicações agudas, especificamente o risco de hipoxemia durante procedimento de intubação orotraqueal.</p><p><strong>A resposta correta é C - Organofosforados.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>A) Lítio:</strong> Embora possa causar alterações neurológicas, o lítio não causa depressão respiratória significativa ou hipoxemia durante intubação.</p><p><strong>B) Antiepilépticos:</strong> Em geral, os antiepilépticos não causam depressão respiratória grave que aumente o risco de hipoxemia na intubação.</p><p><strong>C) Organofosforados:</strong> <strong>CORRETO.</strong> Os organofosforados inibem a acetilcolinesterase, causando acúmulo de acetilcolina. Isso resulta em fasciculações musculares, fraqueza progressiva incluindo musculatura respiratória, broncoespasmo, hipersecreção brônquica e edema pulmonar, tudo contribuindo para alto risco de hipoxemia durante a intubação.</p><p><strong>D) Benzodiazepínicos:</strong> Podem causar depressão do sistema nervoso central, mas raramente são a causa principal de hipoxemia grave na intubação.</p><p><strong>E) Tricíclicos:</strong> Podem causar arritmias e alterações na condução, mas não são conhecidos por causar hipoxemia específica durante intubação.</p><p><strong>Veredito:</strong> Organofosforados representam o maior risco devido aos efeitos colinérgicos que comprometem diretamente a função respiratória, causando broncoespasmo, hipersecreção e fraqueza da musculatura respiratória, cenários que favorecem a hipoxemia durante procedimentos invasivos das vias aéreas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Neurologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Paciente masculino, 76 anos, internado por 14 dias em UTI em função de uma sepse de foco urinário, complicando com pneumonia associada à ventilação mecânica, recebe alta para a enfermaria. Ex-etilista e ex-tabagista, é portador de hiperplasia prostática benigna, hipertensão arterial sistêmica, insuficiência cardíaca congestiva, fibrilação atrial crônica. Você encontra-se de plantão como hospitalista e avalia o paciente a pedido da enfermeira do turno pois os familiares \"insistem em falar com um médico\". Verifica que naquele momento o paciente está sem antimicrobianos, recebendo haloperidol, morfina, heparina, ácido acetilsalicílico, hidralazina, anlodipino e está em uso de sonda nasoenteral, sonda vesical de demora, acesso venoso central, cateter nasal de oxigênio e contenção mecânica nos antebraços. O familiar questiona que o paciente está agitado desde que saiu da UTI e solicita algo que possa ser feito para \"acalmá-lo\". Qual a melhor conduta diante desta situação clínica?",
+      "alternativas": [
+        "Suspender a prescrição de morfina, pois ela é a provável causa da agitação.",
+        "Ajustar a dose do haloperidol, pois é muito provável que se trate de agitação por delirium hiperativo.",
+        "Acalmar o familiar, dizendo que após a passagem longa por UTI todos os pacientes ficam agitados.",
+        "Retirar todos os dispositivos invasivos, pois o paciente está \"brigando\" com eles e por isso está agitado.",
+        "Prescrever prometazina associada a clorpromazina, pois o paciente tem histórico de etilismo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo de delirium em pacientes pós-UTI, complexidade medicamentosa e decisões clínicas em hospitalismo.</p><p><strong>A resposta correta é B - Ajustar a dose do haloperidol, pois é muito provável que se trate de agitação por delirium hiperativo.</strong></p><p>Analisando as alternativas:</p><p><strong>A) Suspender morfina:</strong> A morfina pode contribuir para delirium, mas suspender apenas ela sem avaliar outros fatores seria simplista demais. O paciente tem múltiplas causas potenciais para agitação.</p><p><strong>B) Ajustar haloperidol:</strong> <strong>CORRETO.</strong> O quadro é típico de delirium hiperativo pós-UTI. O paciente tem múltiplos fatores de risco: idade avançada, sepse, permanência prolongada em UTI, polifarmácia, múltiplos dispositivos invasivos. O haloperidol em dose inadequada pode não estar controlando o quadro. É a conduta mais racional: otimizar o tratamento do delirium.</p><p><strong>C) Acalmar o familiar:</strong> Minimizar a preocupação da família e não investigar a causa da agitação é mau atendimento. Todos os pacientes pós-UTI não ficam agitados.</p><p><strong>D) Retirar todos os dispositivos:</strong> Retirar dispositivos como sonda vesical, CVC sem indicação pode causar iatrogenia. A agitação não é necessariamente por estar 'brigando' com os dispositivos.</p><p><strong>E) Prescrever prometazina + clorpromazina:</strong> Historico de etilismo não justifica associação desses antipsicóticos. A interação medicamentosa e os efeitos colaterais superam os benefícios.</p><p><strong>Veredito:</strong> A melhor conduta é otimizar o tratamento do delirium hiperativo ajustando o haloperidol, considerando que este é o quadro mais provável em paciente pós-UTI com múltiplos fatores de risco.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Psiquiatria",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Geriatria"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "Considere um paciente masculino, 82 anos, portador de hipertensão arterial sistêmica, diabetes mellitus, fibrilação atrial crônica e com antecedente de acidente vascular encefálico há um ano. Vem à emergência do Hospital Universitário relatando fezes escurecidas e com mau cheiro há uma semana. Em uso das seguintes \"medicações de uso contínuo\" (MUC) por sonda de gastrostomia: enalapril 20 mg sinvastatina 40 mg, quetiapina 25 mg, rivaroxabana 20 mg, ácido acetilsalicílico 100 mg, carvedilol 12,5 mg, insulina glargina 20 UI/dia e omeprazol 20 mg. Na admissão apresenta pressão arterial de 100/60 mmHg, frequência cardíaca de 62 bpm, hemoglobina sérica de 7.8 g/dL, hematócrito de 23.1%, creatinina sérica de 1.3 mg/dL e glicemia de 170 mg/dL. Nos últimos 3 meses apresenta um Palliative Performance Scale (PPS) de 30%. A endoscopia digestiva alta mostrou uma úlcera na grande curvatura do corpo gástrica, de 1.5 cm no seu maior diâmetro, Forrest IIa. Qual a alternativa com a melhor avaliação e a melhor conduta terapêutica para o caso nas primeiras 48h?",
+      "alternativas": [
+        "Considerar risco cardiovascular contra o risco de ressangramento: IBP parenteral, suspender MUC e monitorar clínica/laboratorialmente.",
+        "PPS baixo: tratamento conservador com inibidor de bomba protônica (IBP) por gastrostomia; suspender medicações de uso contínuo.",
+        "Alto risco cardiovascular: tratamento pleno para hemorragia digestiva alta com IBP \"dose dobrada\" e manutenção das MUC.",
+        "Alto risco cardiovascular: IBP parenteral, suspender rivaroxabana e dobrar dose de AAS para 200 mg.",
+        "PPS baixo e alto risco cardiovascular: avaliar a opinião da família sobre a manutenção ou não do antiagregante e anticoagulante."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão complexa da UFSC avalia capacidade de integrar múltiplos fatores clínicos: hemorragia digestiva alta, polifarmácia, comorbidades cardiovasculares e dilemas éticos em pacientes com baixa funcionalidade.</p><p><strong>A resposta correta é A - Considerar risco cardiovascular contra o risco de ressangramento: IBP parenteral, suspender MUC e monitorar clínica/laboratorialmente.</strong></p><p>Análise detalhada:</p><p><strong>A) IBP parenteral, suspender MUC:</strong> <strong>CORRETO.</strong> Úlcera Forrest IIa tem risco moderado de ressangramento. Suspender anticoagulantes/antiagregantes reduz risco, mas aumenta risco cardiovascular. IBP parenteral trata a úlcera. Monitoramento rigoroso permite detectar ressangramento precocemente. Equilibra riscos cardiovascular e de hemorragia.</p><p><strong>B) PPS 30% → conservador:</strong> PPS baixo indica prognóstico reservado, mas não justifica abandono do tratamento. Hemorragia digestiva é emergência que pode ser fatal independente do PPS.</p><p><strong>C) Manter MUC + IBP dobrado:</strong> Manter rivaroxabana e AAS em paciente com úlcera Forrest IIa é perigoso - alto risco de ressangramento. IBP dobrado não neutraliza o risco dos anticoagulantes.</p><p><strong>D) Suspender rivaroxabana + dobrar AAS:</strong> Lógica contraditória. Suspende anticoagulante (bom) mas aumenta antiagregante (ruim). Dobra a dose de AAS não tem indicação em hemorragia ativa.</p><p><strong>E) Avaliar família sobre manter anticoagulantes:</strong> Delegar decisão médica complexa para família não é boa prática. O médico deve tomar decisão baseada em evidências, orientando adequadamente a família.</p><p><strong>Veredito:</strong> A alternativa A é a mais equilibrada, considerando todos os aspectos do caso: risco de ressangramento versus risco cardiovascular, com IBP parenteral para tratamento específico e suspensão temporária dos medicamentos de maior risco.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Gastroenterologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Endocrinologia",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "<html><head></head><body>Um estudo prospectivo multice^ntrico avaliou consecutivamente pacientes adultos submetidos a cirurgia na~o cardi´aca quanto a um composto de desfechos que inclui´a: o ´bito por todas as causas, infarto agudo do mioca´rdio e acidente vascular encefa´lico, todos nos 30 dias que seguiram a cirurgia. Os desfechos foram avaliados por um investigador que na~o tinha conhecimento da presenc¸a das varia´veis avaliadas e seguiram crite´rios recomendados por sociedades internacionais. Primeiramente, uma coorte de derivac¸a~o com 3.284 pacientes, selecionados de maneira aleato´ria, foi avaliada e as varia´veis que foram associadas de maneira independente com composto de desfechos esta~o descritas na tabela abaixo: Com esses preditores, os autores construi ´ram um escore em que cada preditor pontua um ponto. Os resultados desse escore na coorte de derivac¸a~o esta~o descritos na tabela abaixo: O escore construi´do na coorte de derivação foi então aplicado em uma coorte de validação com 1.167.414 pacientes. Os resultados da aplicação do escore na coorte de validação estão descritos na tabela abaixo: Apo´s tomar conhecimento do estudo descrito no enunciado 2, voce^ avalia um paciente masculino, 78 anos, internado na enfermaria ciru´rgica aguardando colecistectomia videolaparosco´pica agendada para daqui 3 dias. A equipe ciru´rgica solicita o seu parecer quanto ao risco cardi´aco para a cirurgia. Em sua avaliac¸a~o, o paciente relata histo´ria de hipertensa~o arterial, diabetes melitos tipo 2 e infarto agudo do mioca´rdio ha´ 3 anos. Faz uso de metformina 2 g/dia, atenolol 100 mg/dia, AAS 100 mg/dia, clopidogrel 75 mg/dia, enalapril 20 mg/dia. No momento, o paciente encontra-se assintoma´tico, pore´m relata que ha´ 6 meses apresenta episo´dios de dor retroesternal, em queimac¸a~o, desencadeadas pelos esforc¸os fi´sicos moderados a intensos, aliviados pelo repouso, que duram cerca de 7 minutos. Ao exame apresenta freque^ncia cardi´aca de 56 bpm, freque^ncia respirato´ria de 18 irpm, pressa~o arterial de 126/78 mmHg. Auscultas cardi´aca e pulmonar normais e ause^ncia de edema em membros inferiores. Nos exames complementares apresentava hemoglobina se´rica de 10,5 mg/dL, leucograma com 15.350 ce´ls/mm³, contagem de plaquetas com 160.000/mm3, creatinina se´rica de 0,9 mg/dL e RX de to´rax sem anormalidades. Assinale a alternativa correta quanto ao caso.\n\n<img src=\"https://medbrave.com.br/questions/ufsc-2020-r3/qQ9.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "O estudo não tem validade para que seus resultados sejam aplicados no paciente descrito.",
+        "O paciente apresenta 3 pontos no escore apresentado no estudo, com alto risco de morte, infarto agudo do miocárdio ou acidente vascular encefálico nos 30 dias seguintes à cirurgia.",
+        "O paciente apresenta todos os preditores descritos no estudo e um alto risco de morte, infarto agudo do miocárdio ou acidente vascular encefálico nos 30 dias seguintes à cirurgia.",
+        "O paciente apresenta 4 pontos no escore apresentado no estudo, com alto risco de morte, infarto agudo do miocárdio ou acidente vascular encefálico nos 30 dias seguintes à cirurgia.",
+        "Como não há possibilidade de suspensão da cirurgia, está indicada a internação em unidade de terapia intensiva no pós-operatório imediato."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia aplicação prática de escore de risco cardiovascular perioperatório, interpretando dados clínicos e correlacionando com o escore proposto no estudo.</p><p><strong>A resposta correta é D - O paciente apresenta 4 pontos no escore apresentado no estudo, com alto risco de morte, infarto agudo do miocárdio ou acidente vascular encefálico nos 30 dias seguintes à cirurgia.</strong></p><p>Para aplicar o escore, vamos identificar os preditores no paciente:</p><p><strong>Preditores do escore (1 ponto cada):</strong></p><p>1. <strong>Idade ≥ 70 anos:</strong> Paciente tem 78 anos ✓</p><p>2. <strong>Diabetes mellitus:</strong> Paciente diabético tipo 2 ✓</p><p>3. <strong>Infarto prévio:</strong> IAM há 3 anos ✓</p><p>4. <strong>Angina atual:</strong> Dor torácica aos esforços há 6 meses, típica de angina ✓</p><p>5. <strong>Insuficiência cardíaca:</strong> Não mencionado ✓</p><p>6. <strong>Creatinina elevada:</strong> Creatinina 0,9 mg/dL (normal para idade) ✓</p><p>Analisando as alternativas:</p><p><strong>A) Estudo não válido:</strong> Errado. O estudo tem grande coorte de validação (1,17 milhões), metodologia robusta e o paciente se encaixa no perfil estudado.</p><p><strong>B) 3 pontos:</strong> Errado. O paciente tem 4 preditores (idade, diabetes, IAM prévio, angina atual).</p><p><strong>C) Todos os preditores:</strong> Errado. O estudo tem mais preditores que os citados no paciente (falta insuficiência cardíaca e creatinina elevada).</p><p><strong>D) 4 pontos:</strong> <strong>CORRETO.</strong> Idade 78, diabetes tipo 2, IAM prévio há 3 anos, angina atual = 4 pontos = alto risco.</p><p><strong>E) UTI pós-operatória indicada:</strong> Não está na pergunta. O caso é sobre avaliação pré-operatória, não conduta pós-operatória.</p><p><strong>Veredito:</strong> Paciente tem 4 preditores (idade, diabetes, IAM prévio, angina atual) = 4 pontos = alto risco cardiovascular perioperatório.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_AteroscleroseEDoencaArterialCo",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico",
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "<html><head></head><body>Um estudo prospectivo multice^ntrico avaliou consecutivamente pacientes adultos submetidos a cirurgia na~o cardi´aca quanto a um composto de desfechos que inclui´a: o ´bito por todas as causas, infarto agudo do mioca´rdio e acidente vascular encefa´lico, todos nos 30 dias que seguiram a cirurgia. Os desfechos foram avaliados por um investigador que na~o tinha conhecimento da presenc¸a das varia´veis avaliadas e seguiram crite´rios recomendados por sociedades internacionais. Primeiramente, uma coorte de derivação com 3.284 pacientes, selecionados de maneira aleatória, foi avaliada e as varia´veis que foram associadas de maneira independente com composto de desfechos esta~o descritas na tabela abaixo: Com esses preditores, os autores construi ´ram um escore em que cada preditor pontua um ponto. Os resultados desse escore na coorte de derivação estão descritos na tabela abaixo: O escore construi´do na coorte de derivação foi então aplicado em uma coorte de validação com 1.167.414 pacientes. Os resultados da aplicac¸a~o do escore na coorte de validac¸a~o esta~o descritos na tabela abaixo: Com relac¸a~o a´ avaliac¸a~o da validade e a´ interpretac¸a~o dos resultados desse estudo (Enunciado 2) assinale a alternativa correta.\n\n<img src=\"https://medbrave.com.br/questions/ufsc-2020-r3/qQ10.jpg\" alt=\"Imagem da questão 1\" style=\"max-width: 100%; height: auto;\"></body></html>",
+      "alternativas": [
+        "Os resultados apresentados apontam que pacientes com escore de 3 ou mais pontos deverão ter suas cirurgias suspensas.",
+        "A simplicidade do escore, o baixo risco de viés e o grande tamanho da amostra são os principais pontos fortes do estudo.",
+        "Os resultados apresentados apontam que pacientes com escore de 3 ou mais pontos terão melhores desfechos se internados em unidade de terapia intensiva no pós- operatório.",
+        "Seria metodologicamente mais adequado que a coorte de derivação fosse maior do que a de validação.",
+        "O estudo apresenta alto risco de erro aleatório relacionado ao tamanho da amostra de derivação."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia capacidade de análise crítica metodológica de estudo científico, interpretando características de desenho de pesquisa, qualidade metodológica e aplicabilidade clínica.</p><p><strong>A resposta correta é B - A simplicidade do escore, o baixo risco de viés e o grande tamanho da amostra são os principais pontos fortes do estudo.</strong></p><p>Análise metodológica detalhada:</p><p><strong>Características do estudo:</strong></p><p>• Coorte de derivação: 3.284 pacientes (adequada para derivação de escore)</p><p>• Coorte de validação: 1.167.414 pacientes (extraordinariamente grande)</p><p>• Avaliador cego às variáveis (reduz viés de informação)</p><p>• Critérios padronizados por sociedades internacionais</p><p>• Desfechos duros e relevantes (morte, IAM, AVC)</p><p>Analisando as alternativas:</p><p><strong>A) Cirurgias devem ser suspensas para escore ≥ 3:</strong> Errado. O escore estima risco, não determina suspensão. A decisão deve considerar risco-benefício individualizado.</p><p><strong>B) Simplicidade, baixo viés, grande amostra:</strong> <strong>CORRETO.</strong> O escore é simples (1 ponto por preditor), desenho reduz viés (avaliador cego, critérios padronizados) e amostra gigantesca garante precisão estatística.</p><p><strong>C) Escore ≥ 3 → melhor desfecho em UTI:</strong> Errado. O escore estima risco, mas não indica que UTI melhora desfechos. Não há dados sobre eficácia de intervenções baseadas no escore.</p><p><strong>D) Coorte derivação > validação:</strong> Errado. Metodologicamente correto ter coorte derivação menor para desenvolvimento e coorte validação maior para teste. É o que foi feito.</p><p><strong>E) Alto risco de erro aleatório por amostra pequena:</strong> Errado. Amostra derivação de 3.284 é adequada para desenvolvimento de escore. Erro aleatório é minimizado pela coorte validação gigantesca.</p><p><strong>Veredito:</strong> O estudo tem qualidade metodológica alta: escore simples e prático, desenho reduz viés, amostra validação extraordinariamente grande, garantindo confiabilidade e aplicabilidade dos resultados.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_Epidemiologia",
+        "MedicinaPreventiva_Epidemiologia_EstudosEpidemiologicos",
+        "MedicinaPreventiva_Epidemiologia_ValidadeDosEstudosEpidemiologi",
+        "MedicinaPreventiva_MedicinaBaseadaEmEvidencias",
+        "ClinicaMedica_Cardiologia",
+        "Cirurgia_AvaliacaoPreoperatoria",
+        "Cirurgia_AvaliacaoPreoperatoria_RiscoCirurgico"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "O ciclo respiratório de um paciente em ventilação mecânica invasiva ocorre em quatro etapas: 1. Disparo (deflagração da inspiração); 2. Inspiração; 3. Ciclagem (mudança da inspiração para a expiração); e 4. Expiração. Com relação aos diferentes modos ventilatórios, assinale a alternativa correta.",
+      "alternativas": [
+        "A inspiração ocorre com pressão contínua em todos os modos.",
+        "As pressões de pico e de platô têm o mesmo valor no modo volume controlado com pausa ao final da inspiração.",
+        "O disparo e a ciclagem no modo pressão controlada ocorrem em intervalos pré- estabelecidos em acordo com a frequência respiratória e tempo inspiratório programados, exceto se o paciente interferir no ciclo respiratório.",
+        "A inspiração no modo pressão controlada ocorre com a fluxo inspiratório contínuo e expiração de maneira passiva.",
+        "O disparo no modo pressão de suporte (ventilação assistida) ocorre em intervalos pré- estabelecidos e a ciclagem é deflagrada pela redução de fluxo expiratório."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFSC 2020 avalia o conhecimento sobre os diferentes modos de ventilação mecânica invasiva, focando nas características específicas de cada modalidade.</p><p><strong>A resposta correta é C</strong> - Asserção sobre o disparo e ciclagem no modo pressão controlada está precisa. Vamos analisar cada alternativa detalhadamente:</p><p><strong>Alternativa A:</strong> INCORRETA - Nem todos os modos oferecem inspiração com pressão contínua. No modo volume controlado, por exemplo, temos fluxo inspiratório constante, não pressão contínua.</p><p><strong>Alternativa B:</strong> INCORRETA - Pressão de pico e platô diferem devido à resistência das vias aéreas. O pico é sempre superior ao platô devido ao componente resistivo do sistema respiratório.</p><p><strong>Alternativa C:</strong> CORRETA - No modo pressão controlada, o disparo é assistido (por esforço do paciente) ou assistido/controleado (intervalos pré-estabelecidos), e a ciclagem ocorre pelo tempo inspiratório programado, exceto se houver disparo espontâneo do paciente.</p><p><strong>Alternativa D:</strong> INCORRETA - A inspiração no modo pressão controlada é de fluxo DECRESCENTE (inspiração decelerada), não contínua. O fluxo varia conforme o complacência pulmonar.</p><p><strong>Alternativa E:</strong> INCORRETA - No modo pressão de suporte, o disparo é assistido (por esforço inspiratório) e a ciclagem ocorre por redução do fluxo inspiratório abaixo de um limiar, não por intervalos pré-estabelecidos.</p><p>O essencial é dominar as características que diferenciam cada modo: disparo assistido vs. controlado, tipo de controle (volume ou pressão), e padrão de fluxo inspiratório (constante, decrescente, ou adaptado).</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumologiaIntensiva"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Paciente masculino, 53 anos, portador de cirrose por hepatite C crônica de diagnóstico recente e hiperplasia prostática benigna (HPB) procura a emergência por desconforto e aumento do volume abdominal, associado a edema de membros inferiores nas últimas semanas. Relata também diminuição do volume urinário há cerca de 2 dias. Usa apenas doxazosina 2 mg/dia. Ao exame, apresenta pressão arterial de 100/50mmHg, frequência cardíaca de 78 bpm, frequência respiratória de 24 irpm, temperatura axilar de 36,7°C. Encontra-se alerta, orientado, hipocorado +/4, ictérico +/4, ausculta cardíaca sem alterações, ausculta pulmonar com murmúrio vesicular presente bilateralmente, diminuído em ambos os 1/3 inferiores. Abdome distendido, as custas de ascite moderada, sem sinais de peritonite e edema ++/4 em membros inferiores. Exames laboratoriais: hemoglobina sérica de 10,8 g/dL, hematócrito de 33%, leucograma com 4700 células/mm³, contagem de plaquetas de 81.000, bilirrubina total de 2,3 g/dl, creatinina sérica de 1,9 mg/dL, ureia sérica de 74 mg/dL, albumina sérica de 2,4 mg/dL, potassemia de 4,8 mEq/L, natremia de 129 mEq/L, tempo de protrombina (D/N) de 1,4. Com base nos dados do caso clínico, qual a principal hipótese diagnóstica e o seu planejamento terapêutico nas primeiras 24h?",
+      "alternativas": [
+        "Insuficiência renal crônica (secundária à cirrose): paracentese de alívio e diuréticos.",
+        "Insuficiência renal aguda - \"síndrome hepato-renal I\" (secundária à cirrose): terlipressina e albumina.",
+        "Insuficiência renal aguda \"pós-renal\" (secundária à HPB): sondagem vesical e aumento da doxazosina.",
+        "Insuficiência renal aguda \"pré-renal\" (secundária a peritonite bacteriana espontânea): antibiótico e albumina.",
+        "Insuficiência renal aguda \"pré-renal\" (secundária ao sequestro hídrico pela ascite): expansão com soro fisiológico."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Este caso clínico da UFSC 2020 testa o raciocínio diagnóstico em paciente cirrótico com alterações na função renal, sendo uma situação frequente e desafiadora na prática clínica.</p><p><strong>A resposta correta é D</strong> - Insuficiência renal aguda pré-renal secundária à peritonite bacteriana espontânea. Vamos analisar sistematicamente:</p><p><strong>Análise clínica:</strong> Paciente cirrótico com ascite (distensão abdominal), oligúria recente (2 dias), creatinina elevada (1,9 mg/dL), hipotensão (100/50 mmHg), taquipneia (24 irpm) e redução do murmúrio vesicular em bases pulmonares (compatível com ascite). Laboratório mostra trombocitopenia (81.000), hiponatremia (129 mEq/L), hipoalbuminemia (2,4 g/dL) e aumento do TP (1,4), típicos da doença hepática avançada.</p><p><strong>Por que a alternativa D está correta:</strong> A descrição apresenta sinais compatíveis com peritonite bacteriana espontânea (PBE) - ascítica com dor abdominal, febre ou hipotensão podem estar ausentes em cirróticos. A PBE é a causa mais comum de IRA pré-renal em pacientes cirróticos com ascite. O tratamento deve incluir antibióticos (cefalosporina de 3ª geração) e albumina para prevenir disfunção renal.</p><p><strong>Análise das outras alternativas:</strong></p><p><strong>A:</strong> Não é insuficiência renal crônica - creatinina estava normal antes (HPB diagnosticada recente). Paracentese diagnóstica é fundamental em caso de PBE suspeita.</p><p><strong>B:</strong> Não é síndrome hepato-renal tipo I (creatinina >2,5 mg/dL, aumento >50% em 2 semanas, ausência de choque ou obstrução urinária).</p><p><strong>C:</strong> Não é obstrução pós-renal - paciente usa doxazosina para HPB e não relata retenção urinária aguda.</p><p><strong>E:</strong> Está correto que há pré-renal, mas a causa não é apenas sequestro hídrico pela ascite - sinais apontam para PBE como gatilho.</p><p>O diagnóstico diferencial de IRA em cirróticos deve sempre incluir PBE, especialmente em pacientes com ascite sintomática e instabilidade hemodinâmica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia",
+        "ClinicaMedica_Hepatologia_Cirrose",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Paciente masculino, 78 anos, portador de câncer de pulmão com metástases ósseas, em tratamento oncológico, está internado há uma semana por pneumonia. Restrito ao leito, em cateter de oxigênio contínuo, com baixa aceitação alimentar, recebe ceftriaxona, morfina, enoxaparina, anlodipino e tansulozina. Você encontra-se como hospitalista de plantão e a enfermeira do turno relata que o paciente está constipado desde a admissão. Qual a melhor conduta para esse paciente?",
+      "alternativas": [
+        "Acrescentar bisacodil à prescrição.",
+        "Introduzir probióticos na prescrição.",
+        "Suspender morfina e iniciar lactulona.",
+        "Chamar a nutricionista de plantão para adequar dieta laxativa.",
+        "Disponibilizar óleo mineral e orientar sob demanda."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia o manejo da constipação em pacientes hospitalizados, cenário comum onde múltiplos fatores contribuem para o problema.</p><p><strong>A resposta correta é A</strong> - Acrescentar bisacodil à prescrição. Vamos analisar cada alternativa:</p><p><strong>Contextualização do caso:</strong> Paciente oncológico, restrito ao leito, em cateter de oxigênio contínuo, baixa aceitação alimentar, usando morfina (que causa constipação) e enoxaparina. Constipação desde a admissão requer intervenção farmacológica.</p><p><strong>Por que a alternativa A é correta:</strong> Bisacodil é um laxante estimulante (antracênico) indicado para constipação aguda em pacientes hospitalizados, especialmente quando há fatores de risco múltiplos (imobilidade, uso de opioide). Actua diretamente na mucosa intestinal, estimulando peristalse e secreção.</p><p><strong>Análise das outras alternativas:</strong></p><p><strong>B:</strong> Probióticos não têm indicação para constipação aguda e não são primeira linha em ambiente hospitalar.</p><p><strong>C:</strong> Morphina deve ser mantida para controle da dor oncológica. Suspensão apenas mudaria para outro opioide, não resolve o problema.</p><p><strong>D:</strong> A dietoterapia é importante, mas já estamos na primeira semana de internação e a paciente não consegue adequada aceitação alimentar. Não é suficiente isoladamente.</p><p><strong>E:</strong> Óleo mineral é menos eficaz que estimulantes como bisacodil e está associado a risco de aspiração em pacientes acamados.</p><p><strong>Princípios do manejo:</strong> Em pacientes hospitalizados constipados, especialmente sob opioides, utilizamos laxante estimulante como primeira escolha. O bisacodil tem início de ação em 6-12 horas, adequando-se ao manejo agudo necessário.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Gastroenterologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "Sobre abordagens dos pacientes com diabetes mellitus tipo 2 (DM2) assinale a alternativa correta.",
+      "alternativas": [
+        "Em pacientes com DM2 e insuficiência renal crônica que iniciam diálise e não fazem uso de estatinas devem iniciar prontamente o seu uso por reduzir significativamente os riscos cardiovasculares e casos de AVC hemorrágico.",
+        "Em pacientes com DM2 e alto ou muito alto risco cardiovascular a adição de ezetimiba pode ser considerada para a redução de eventos cardiovasculares.",
+        "Em pacientes com DM2 e hipertrigliceridemia leve a moderada (triglicerídeos < 400 mg/dL) a combinação de estatina e fibrato é recomendada para reduzir o risco cardiovascular.",
+        "A presença de retinopatia diabética contraindica o uso de aspirina para proteção cardíaca devido ao aumento de risco de hemorragia retiniana.",
+        "A infecção pelo HIV, o status inflamatório crônico subclínico e o uso contínuo de terapia antirretroviral propiciam o aparecimento de distúrbios metabólicos, mas apresentam pouca ou nenhuma ação sobre a resistência insulínica do paciente com DM2."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia o conhecimento atualizado sobre tratamento farmacológico em pacientes com diabetes mellitus tipo 2, focando em evidências recentes sobre redução de eventos cardiovasculares.</p><p><strong>A resposta correta é B</strong> - A adição de ezetimiba pode ser considerada em pacientes DM2 com alto ou muito alto risco cardiovascular. Vamos analisar:</p><p><strong>Por que a alternativa B está correta:</strong> Ezetimiba é um inibidor da absorção intestinal de colesterol. Estudos como o IMPROVE-IT demonstraram que, em pacientes de alto risco cardiovascular (incluindo diabéticos), a adição de ezetimiba à sinvastatina reduziu eventos cardiovasculares quando comparado ao uso isolado de estatina.</p><p><strong>Análise das outras alternativas:</strong></p><p><strong>A:</strong> INCORRETA - Redução de AVC hemorrágico com estatinas em pacientes dialíticos não está bem estabelecida. Além disso, o benefício em eventos cardiovasculares em pacientes em diálise ainda é controverso.</p><p><strong>C:</strong> INCORRETA - Para hipertrigliceridemia leve a moderada (<400 mg/dL), a combinação estatina + fibrato não é recomendada rotineiramente devido ao aumento do risco de miopatia. O foco deve estar no controle do LDL-colesterol.</p><p><strong>D:</strong> INCORRETA - Retinopatia diabética não contraindica aspirina para proteção cardiovascular. Aspirina é recomendada em diabéticos de alto risco cardiovascular.</p><p><strong>E:</strong> INCORRETA - HIV e terapia antirretroviral aumentam a resistência insulínica e predispõem à síndrome metabólica em diabéticos. É uma associação importante no manejo.</p><p>Esta questão reflete a evolução das diretrizes, mostrando que ezetimiba tem papel definido na redução de eventos cardiovasculares em diabéticos de alto risco, especialmente quando usado em combinação com estatinas.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Cardiologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "Homem, 38 anos, procura atendimento hospitalar com queixas de parestesias, câimbras, dor e fraqueza muscular. Ao exame físico, são identificadas as presenças dos sinais de Chvostek e de Trousseau. Assinale a alternativa que associa corretamente diagnósticos diferenciais e alterações laboratoriais.",
+      "alternativas": [
+        "Deficiência de vitamina D: cálcio total baixo, cálcio iônico baixo e PTH alto",
+        "Deficiência de cálcio: cálcio total baixo, cálcio iônico baixo e PTH baixo",
+        "Hipoalbuminemia: cálcio total alto, cálcio iônico alto e PTH baixo",
+        "Hipomagnesemia: cálcio total alto, cálcio iônico normal e PTH alto",
+        "Pancreatite aguda: cálcio total baixo, cálcio iônico alto e PTH baixo."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia o conhecimento sobre equilíbrio ácido-básico e metabolismo do cálcio, correlacionando sinais clínicos clássicos com alterações laboratoriais específicas.</p><p><strong>A resposta correta é A</strong> - Deficiência de vitamina D com cálcio total baixo, cálcio iônico baixo e PTH alto. Vamos analisar:</p><p><strong>Contextualização clínica:</strong> Presença de sinais de Chvostek (facilidade para espasmo facial ao palpar região pré-auricular) e Trousseau (espasmo carpo-pedal durante inflar o manguito) indicam hipocalcemia com hiperexcitabilidade neuromuscular.</p><p><strong>Por que a alternativa A está correta:</strong> Na deficiência de vitamina D (raquitismo/osteomalacia em adultos), ocorre:</p><p>1. Redução da absorção intestinal de cálcio (causando hipocalcemia)<br>2. PTH elevado compensatório (hiperparatireoidismo secundário)<br>3. Tanto cálcio total quanto iônico baixos (diferentemente da hipoalbuminemia)</p><p><strong>Análise das outras alternativas:</strong></p><p><strong>B:</strong> INCORRETA - Deficiência de cálcio não é diagnóstico primário. Se houver hipocalcemia verdadeira, o PTH estará alto (compensatório), não baixo.</p><p><strong>C:</strong> INCORRETA - Hipocalcemia da hipoalbuminemia tem cálcio total baixo, mas cálcio iônico e PTH normais (pois é artefacto laboratorial).</p><p><strong>D:</strong> INCORRETA - Hipomagnesemia causa hipocalcemia com PTH baixo (alteração funcional do paratireoide).</p><p><strong>E:</strong> INCORRETA - Pancreatite aguda causa hipocalcemia com PTH alto (provavelmente por saponificação), mas o cálcio iônico não está alto - está baixo.</p><p><strong>Dica prática:</strong> Para interpretar calcio sérico: se há hipoalbuminemia, corrija adding 0,8 mg/dL para cada 1g/dL de albumina abaixo de 4g/dL. Cálcio iônico é o mais fisiologicamente relevante.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_MetabolismoOsseoEMineral",
+        "ClinicaMedica_Neurologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Em relação à atenção médica a pessoa vivendo com HIV preconizada pelo Ministério da Saúde, é correto afirmar:",
+      "alternativas": [
+        "O diagnóstico da síndrome de reconstituição imune deve ser considerado quando sinais e sintomas inflamatórios ocorrem nas duas primeiras semanas do início da terapia antirretroviral.",
+        "A nefropatia associada ao HIV é uma forma de acometimento glomerular que pode ocorrer com qualquer nível de LT-CD4+ e cuja principal abordagem é o uso de inibidores da enzima conversora de angiotensina ou bloqueadores do receptor da angiotensina.",
+        "Pacientes com contagem de LT-CD4+ inferiores a 300 céls/mm3 não devem receber vacinas com vírus vivos atenuados.",
+        "As candidíases orofaríngeas e esofágicas são comuns em pacientes com contagem de LT-CD4+ inferiores a 200 céls/mm3 e devem ser tratadas com fluconazol 100 mg/dia por 7 dias.",
+        "Pacientes com indicação de tratamento para hepatite B devem iniciar a terapia antirretroviral com celeridade, preferencialmente com esquema contendo tenofovir."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da UFSC 2020 avalia seu conhecimento sobre diretrizes do Ministério da Saúde para assistência às pessoas vivendo com HIV.</strong> O examinador busca testar conhecimento específico sobre manejo clínico e tratamento antiretroviral.</p><p><strong>Vamos analisar cada alternativa detalhadamente:</strong></p><p><strong>A alternativa A está incorreta.</strong> A síndrome de reconstituição imune (IRIS) tipicamente ocorre entre 4-12 semanas após o início da terapia antirretroviral, não nas duas primeiras semanas. O período inicial pode apresentar reações adversas, mas a IRIS caracteriza-se por quadro inflamatório paradoxal após reconstituição imunológica.</p><p><strong>A alternativa B está incorreta.</strong> A nefropatia associada ao HIV apresenta distribuição racial importante (mais comum em negros), tende a ocorrer em níveis mais baixos de CD4 (< 200), e a principal abordagem inicial é controle da pressão arterial e otimização da TARV. Inibidores da ECA/BRAs não são primeira linha especificamente para essa condição.</p><p><strong>A alternativa C está incorreta.</strong> Embora pacientes com CD4 < 200 devam evitar vacinas vivas atenuadas, esta formulação está incompleta e imprecisa. A recomendação atual do MS 2024 considera outros fatores além da contagem de CD4.</p><p><strong>A alternativa D está incorreta.</strong> Para candidíase esofágica (mais grave que orofaríngea), o fluconazol deve ser administrado em dose de 200-400 mg/dia por 14-21 dias, não 100 mg/dia por 7 dias como sugerido.</p><p><strong>A alternativa E está CORRETA.</strong> Segundo as diretrizes do Ministério da Saúde (Protocolo Clínico e Diretrizes Terapêuticas 2024), pacientes coinfectados HIV/HBV devem iniciar TARV com celeridade, preferencialmente com esquemas contendo tenofovir, que é ativo contra ambos os vírus e previne resistência e exacerbação da hepatite B.</p><p><strong>GABARITO: E - Resposta correta da banca UFSC 2020.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva",
+        "MedicinaPreventiva_SistemaUnicoDeSaudeSus"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "Considere mulher, 28 anos, com relato de ganho de peso progressivo nos últimos 2 anos associado a elevação da glicemia e diagnóstico de hipertensão arterial. Ao exame físico, índice de massa corpórea de 36,2 kg/m², pressão arterial de 150/95 mmHg, adiposidade abdominal, hirsutismo, estrias abdominais e giba. Com relação ao caso clínico, assinale a alternativa correta.",
+      "alternativas": [
+        "O diagnóstico de Síndrome de Cushing iatrogênica (ACTH-dependente) deve ser descartado por meio de anamnese completa e avaliação de possível uso exógeno crônico de glicocorticoides.",
+        "Na triagem inicial de suspeita de Síndrome de Cushing deve ser solicitado teste de estímulo com 1 mg de dexametasona noturno com dosagem de cortisol sérico na manhã do dia seguinte.",
+        "A adrenalectomia bilateral é recomendada como tratamento emergencial de pacientes com Síndrome de Cushing ACTH-dependente muito grave e que não podem ser prontamente controlados por terapia médica.",
+        "Para o diagnóstico de Doença de Cushing necessita-se confirmação de excesso endógeno de glicocorticoides e identificação de nódulo adrenal hiperfuncionante bilateralmente.",
+        "Recomenda-se como primeira linha de tratamento para o excesso endógeno de glicocorticoide o uso de radioterapia e, caso não houver resposta inicial, sugere-se abordagem cirúrgica complementar."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da UFSC 2020 avalia competências em endocrinologia, especificamente diagnóstico e manejo da Síndrome de Cushing.</strong> O caso clínico apresenta obesividade central, hipertensão, diabetes e sinais de excesso de glicocorticoides - quadro clássico para investigação.</p><p><strong>Vamos analisar cada alternativa metodicamente:</strong></p><p><strong>A alternativa A está incorreta.</strong> Cushing iatrogênica é classificada como ACTH-independente (uso exógeno de glicocorticoides causa supressão do eixo HPA), não ACTH-dependente como a alternativa propõe. Esta confusão conceitual torna a alternativa inválida.</p><p><strong>A alternativa B está incorreta.</strong> Embora o teste de 1 mg de dexametasona seja usado na triagem de Síndrome de Cushing, a técnica está incorretamente descrita. O protocolo estabelece administração às 23h com dosagem de cortisol sérico às 8h no dia seguinte, mas o valor de corte é < 1,8 μg/dL, não apenas a metodologia da coleta.</p><p><strong>A alternativa C está CORRETA.</strong> Em casos de Síndrome de Cushing ACTH-dependente muito grave, com complicações potencialmente fatais (hipertensão maligna, infecções graves, fraturas patológicas), a adrenalectomia bilateral pode ser considerada como emergência. Esta é uma estratégia acceptada na literatura médica quando terapia médica imediata não é possível ou inadequada.</p><p><strong>A alternativa D está incorreta.</strong> Esta alternativa confunde Doença de Cushing (adenoma hipofisário - ACTH-dependente) com adenomas adrenais primários (ACTH-independentes). A Doença de Cushing caracteriza-se por excesso de ACTH hipofisário, não por nódulos adrenais bilaterais.</p><p><strong>A alternativa E está incorreta.</strong> O tratamento de primeira linha para excesso endógeno de glicocorticoide é cirúrgico (ressecção do tumor responsável), não radioterapia. A radioterapia pode ser usada como segunda linha em casos selecionados ou inoperáveis, mas não como primeira opção.</p><p><strong>GABARITO: C - Esta é a resposta correta da banca UFSC 2020.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Adrenal",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesVesicobolhosas"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "Considere um paciente masculino, 50 anos, com aparecimento súbito de lesões vesico-bolhosas disseminadas em pele e mucosa oral. Foi realizada uma biópsia de pele que demonstrou acantólise suprabasal intraepidérmica. Baseado na biópsia, qual o diagnóstico mais provável?",
+      "alternativas": [
+        "Pênfigo vulgar",
+        "Porfiria cutânea",
+        "Pênfigo foliácio",
+        "Pênfigo paraneoplásico",
+        "Dermatite herpetiforme"
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da UFSC 2020 testa conhecimento em dermatopatologia, especificamente o reconhecimento de padrões histológicos em doenças bolhosas.</strong> A descrição histológica \"acantólise suprabasal intraepidérmica\" é um achado patognomônico fundamental.</p><p><strong>Vamos analisar cada alternativa dermatológica:</strong></p><p><strong>A alternativa A está CORRETA.</strong> O pênfigo vulgar caracteriza-se histologicamente pela acantólise suprabasal (separação das células epidérmicas acima da camada basal), formando cavidades intraepidérmicas. Esta é a forma mais comum de pênfigo e apresenta-se com bolhas flácidas que se rompem facilmente, form ando erosões dolorosas.</p><p><strong>A alternativa B está incorreta.</strong> Porfiria cutânea não apresenta acantólise. O padrão histológico das porfirias caracteriza-se por depósitos eosinofílicos na derme papilar, endurecimento vascular e aumento da camada subcutânea, sem alterações da cohesion epidérmica.</p><p><strong>A alternativa C está incorreta.</strong> No pênfigo foliáceo, a acantólise ocorre na camada granulosa (subcórnea), não suprabasal como descrito no enunciado. Esta diferenciação é crucial para o diagnóstico diferencial entre os tipos de pênfigo.</p><p><strong>A alternativa D está incorreta.</strong> O pênfigo paraneoplásico, embora possa apresentar acantólise suprabasal, caracteriza-se adicionalmente por alterações epiteliais necróticas, infiltrado inflamatório misto e pembentukan de complexos imunes. A descrição histológica focada apenas em acantólise não permite este diagnóstico específico.</p><p><strong>A alternativa E está incorreta.</strong> A dermatite herpetiforme não apresenta acantólise. É caracterizada por microabscessos na ponta das papilas dérmicas e depósitos de IgA na derme papilar. As lesões clínicas são pápulas eritematosas intensamente pruriginosas, diferentes das bolhas flácidas do pênfigo.</p><p><strong>GABARITO: A - Esta é a resposta correta da banca UFSC 2020.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DermatosesVesicobolhosas",
+        "ClinicaMedica_Dermatologia_DermatosesVesicobolhosas_Dermat_1"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Paciente masculino, 22 anos, relata aparecimento de lesões nodulares em face, tórax, dorso e região inguinal há 2 semanas; algumas lesões são ulceradas e de coloração enegrecida. Refere também febrícula e mialgias. Ao exame físico evidencia-se esplenomegalia e linfonodomegalia generalizada; as lesões de pele são pápulo- pustulosas e evoluem para ulceração e necrose, algumas com aspecto osteriforme; não foram observadas lesões palmo-plantares. Refere relação sexual desprotegida há cerca de 2 meses. Realizou sorologia para HIV há 9 meses; foi positiva, mas não iniciou tratamento. Qual o diagnóstico provável do quadro cutâneo?",
+      "alternativas": [
+        "Roseola sifilítica",
+        "Sífilis maligna precoce",
+        "Sífilis primária disseminada",
+        "Sifílides papulosas",
+        "Manifestações cutâneas de sífilis terciária"
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da UFSC 2020 avalia conhecimento sobre manifestações cutâneas da sífilis em pacientes imunocomprometidos, especificamente em contexto de AIDS.</strong> O caso apresenta características sugestivas de forma grave e atípica da doença.</p><p><strong>Vamos analisar o contexto clínico:</strong> Paciente HIV+ sem tratamento, com lesões ulceronecróticas, febre, mialgias, esplenomegalia e linfonodomegalia. Esta apresentação em imunocomprometido sugere forma agressiva de sífilis.</p><p><strong>Vamos analisar cada alternativa dermatológica:</strong></p><p><strong>A alternativa A está incorreta.</strong> A roseola sifilítica caracteriza-se por exantema macular rosado, não ulceronecrótico. É uma forma secundária benigna que não cursa com ulceração necrotizante ou febre.</p><p><strong>A alternativa B está CORRETA.</strong> A sífilis maligna precoce é uma forma grave e rara de sífilis secundária, caracterizada por lesões ulceronecróticas (pustuloulcerativas), aspecto osteriforme, febre, mialgias, linfonodomegalia e esplenomegalia. Ocorre mais frequentemente em imunocomprometidos, especialmente HIV+, como neste caso.</p><p><strong>A alternativa C está incorreta.</strong> Sífilis primária disseminada apresenta múltiplos cancros duros, não ulcerações necróticas. Esta forma é precoce e precede o desenvolvimento de lesões secundárias ulceronecróticas.</p><p><strong>A alternativa D está incorreta.</strong> Sifílides papulosas são lesões elevadas, firmes, não ulceradas, sem componente necrotizante importante. Apresentam coloração cobreada e distribuição simétrica, diferente do quadro ulceronecrótico descrito.</p><p><strong>A alternativa E está incorreta.</strong> Sífilis terciária desenvolve-se anos após a infecção primária e caracteriza-se por gomas sifilíticas (lesões granulomatosas), não por ulcerações agudas. Além disso, ausenta de febre e manifestações sistêmicas agudas presentes neste caso.</p><p><strong>GABARITO: B - Esta é a resposta correta da banca UFSC 2020.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesSexualmenteTransmissi",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_DoencasInfecciosas"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Paciente masculino, 58 anos, com diagnóstico de Insuficiência Cardíaca há 3 anos, interna no hospital com quadro de edema de membros inferiores progressivo e dispneia intensa há 2 dias. Foram iniciadas medidas para tratamento da insuficiência cardíaca, porém apresentou pouca resposta. Na evolução observa-se piora da função renal. A creatinina basal era de 0,86 mg/dL; em 2 dias aumentou para 1,8 mg/dL. Mantém pressão arterial em torno de 130/80 mmHg, frequência cardíaca de 90 bpm. Em relação à piora da função renal, qual o diagnóstico provável e o mecanismo fisiopatológico mais importante?",
+      "alternativas": [
+        "Síndrome cardiorrenal crônica agudizada / redução da pressão de perfusão renal.",
+        "Síndrome renocardíaca aguda / redução da pressão de perfusão renal.",
+        "Síndrome cardiorrenal secundária / ativação do sistema renina- angiotensina- aldosterona.",
+        "Síndrome cardiorrenal aguda / aumento da pressão venosa renal.",
+        "Síndrome cardiorrenal aguda / baixo débito cardíaco."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da UFSC 2020 avalia conhecimento sobre síndrome cardiorrenal, especificamente seus mecanismos fisiopatológicos e classificação.</strong> O caso apresenta insuficiência cardíaca com piora aguda da função renal - cenário clínico comum mas complexo.</p><p><strong>Vamos analisar o contexto clínico:</strong> Paciente com IC há 3 anos, internação por descompensação aguda, creatinina aumentou de 0,86 para 1,8 mg/dL em 2 dias. Mantém pressão arterial adequada (130/80 mmHg) e frequência cardíaca relativamente controlada (90 bpm).</p><p><strong>Vamos analisar cada alternativa fisiopatológica:</strong></p><p><strong>A alternativa A está incorreta.</strong> Síndrome cardiorrenal crônica agudizada pressupõe doença renal crônica prévia como base, o que não se evidencia neste caso. A creatinina basal era normal (0,86 mg/dL), sugerindo função renal prévia preservada.</p><p><strong>A alternativa B está incorreta.</strong> Embora descreva síndrome aguda, o mecanismo proposto (redução da pressão de perfusão renal) não é o mais relevante neste cenário. A pressão arterial está mantida em níveis adequados, descartando hipoperfusão como mecanismo primário.</p><p><strong>A alternativa C está incorreta.</strong> Esta alternativa confunde classificação e mecanismo. Síndrome cardiorrenal secundária refere-se a eventos agudos em pacientes com disfunção renal prévia, o que não ocorre aqui. Além disso, embora a ativação do SRAA contribua, não é o mecanismo mais importante.</p><p><strong>A alternativa D está CORRETA.</strong> Síndrome cardiorrenal aguda descreve adequadamente a apresentação clínica (piora aguda da função renal em insuficiência cardíaca). O aumento da pressão venosa renal é o mecanismo fisiopatológico mais importante: a congestão venosa sistêmica eleva a pressão venosa renal, reduzindo o gradiente de filtração glomerular e comprometendo a depuração renal, mesmo com perfusão arterial adequada.</p><p><strong>A alternativa E está incorreta.</strong> Embora baixo débito cardíaco contribua para disfunção renal, neste caso específico o paciente mantém pressão arterial e frequência cardíaca relativamente normais. A ausência de hipotensão e a presença de congestão clínica favorecem o mecanismo de congestionamento venoso como primário.</p><p><strong>GABARITO: D - Esta é a resposta correta da banca UFSC 2020.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_InsuficienciaCardiaca",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DoencaRenalCronica"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Paciente masculino, 48 anos, com antecedentes de hipertensão, dá entrada na emergência com quadro de choque séptico de foco pulmonar. Recebe tratamento inicial para sepse com expansão volêmica, antibioticoterapia e suporte vasopressor. No segundo dia de tratamento o paciente evolui com piora da função renal, a creatinina sérica aumenta de 0,9 mg/dL para 2,4 mg/dL e o débito urinário se mantém em 0,5 ml/kg/h. Em relação ao manejo da insuficiência renal no quadro acima descrito, assinale a alternativa correta.",
+      "alternativas": [
+        "Deve ser associada dopamina em baixa dose, objetivando melhorar a perfusão renal.",
+        "O vasopressor de escolha é a vasopressina pois o uso precoce da mesma melhora o desfecho renal.",
+        "Deve ser realizada expansão volêmica adicional com 30 ml/kg de solução fisiológica, objetivando aumento da pressão venosa central.",
+        "A dose de vasopressor deve ser titulada para manter pressão arterial média em torno de 65-70 mmHg.",
+        "A ressuscitação volêmica deve se basear em critérios de fluidorresponsividade, tentando evitar a sobrecarga volêmica."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre manejo de insuficiência renal aguda em pacientes sépticos na UTI, um tema fundamental em medicina intensiva.</p><p><strong>A resposta correta é E - A ressuscitação volêmica deve se basear em critérios de fluidorresponsividade, tentando evitar a sobrecarga volêmica.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (ERRADA):</strong> A dopamina em baixa dose para \"proteger os rins\" é um conceito abandonado. Estudos demonstraram que não há benefício na prevenção ou tratamento de IRA em sépticos, além de potencialmente causar arritmias.</p><p><strong>Alternativa B (ERRADA):</strong> Embora a vasopressina tenha papel no choque séptico refratário, não há evidência de que seu uso precoce melhore especificamente o desfecho renal. O foco deve ser na otimização da perfusão tecidual.</p><p><strong>Alternativa C (ERRADA):</strong> A expansão volêmica fixada de 30 ml/kg é uma abordagem obsoleta e perigosa. Pode levar à sobrecarga volêmica, piorando a função renal e causando edema pulmonar.</p><p><strong>Alternativa D (PARCIALMENTE CORRETA):</strong> Embora manter PAM 65-70 mmHg seja adequado, esta alternativa foca apenas no aspecto pressórico, ignorando outros parâmetros importantes como índices de fluidorresponsividade.</p><p><strong>Alternativa D (CORRETA):</strong> A abordagem moderna baseia-se em avaliações dinâmicas de fluidorresponsividade (variação de volume sistólico, teste de elevação de pernas) para guiar a ressuscitação volêmica, minimizando riscos de sobrecarga.</p><p>O conceito atual enfatiza individualização da terapia, evitando abordagens padronizadas que podem ser prejudiciais ao paciente séptico.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Sepse",
+        "ClinicaMedica_Infectologia_Sepse_ChoqueSeptico",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_LesaoRenalAgudaLra"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Paciente feminina, 50 anos, dá entrada na emergência com cefaleia súbita seguida de rebaixamento do nível de consciência com pontuação de 7 na Escala de Coma de Glasgow. A tomografia de crânio revela Hemorragia Subaracnoide (HSA) classificada como Fisher III. A arteriografia cerebral demonstra aneurisma roto da artéria comunicante anterior. Quais os preditores de vasoespasmo no caso clínico apresentado?",
+      "alternativas": [
+        "Idade e localização do aneurisma.",
+        "Nível de consciência e HSA Fisher III.",
+        "Nível de consciência e sexo feminino.",
+        "Localização do aneurisma e HSA Fisher III.",
+        "Localização do aneurisma e nível de consciência."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca UFSC avalia conhecimento sobre preditores de vasoespasmo após hemorragia subaracnoidea, tema crucial em neurocirurgia e terapia intensiva.</p><p><strong>A resposta correta é B - Nível de consciência e HSA Fisher III.</strong></p><p>Vamos analisar as alternativas sistematicamente:</p><p><strong>Alternativa A (ERRADA):</strong> Embora a idade seja um fator de risco para worse outcomes em HSA, não é um preditor específico de vasoespasmo. A localização do aneurisma (comunicante anterior) isoladamente também não prediz vasoespasmo.</p><p><strong>Alternativa B (CORRETA):</strong> O nível de consciência rebaixado (Glasgow 7) indica maior gravidade inicial e maior risco de desenvolver vasoespasmo. O Fisher III (sangue presente nos espaços subaracnoideos com diâmetro > 1mm) é um dos principais preditores radiológicos de vasoespasmo.</p><p><strong>Alternativa C (ERRADA):</strong> O sexo feminino é um fator de risco para HSA em geral, mas não especificamente para vasoespasmo.</p><p><strong>Alternativa D (PARCIALMENTE CORRETA):</strong> Embora Fisher III seja correto, a localização isoladamente da artéria comunicante anterior não é preditor significativo de vasoespasmo - aneurismas em artérias comunicantes posteriores têm maior risco.</p><p><strong>Alternativa E (ERRADA):</strong> A combinação nível de consciência + localização do aneurisma ignora o aspecto radiológico crucial (Fisher) na predição de vasoespasmo.</p><p>Os preditores mais aceitos incluem: quantidade de sangue subaracnoideo (Fisher), nível de consciência inicial, idade jovem, e hipertensão arterial prévia.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_TraumatismoCraniencefalico"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Identifique abaixo as afirmativas Verdadeiras (V) e as Falsas (F) em relação ao Estado de Mal Epiléptico Não Convulsivo (EMENC) na Unidade de Terapia Intensiva. ( ) Constitui causa rara de alteração do nível de consciência em pacientes críticos. ( ) O exame neurológico realizado por um especialista pode identificar sinais claros de EMENC na maioria dos pacientes. ( ) Alterações neurológicas sugestivas de EMENC são: desvio conjugado do olhar mantido, nistagmo, automatismos motores (piscamentos, movimentos mastigatórios). ( ) A possibilidade diagnóstica de EMENC deve sempre ser lembrada em pacientes em coma sem uma etiologia definida após uma avaliação médica inicial. ( ) O diagnóstico de EMENC é facilmente realizado através da monitoração por eletroencefalograma durante 1 hora. Assinale a alternativa que indica a sequência CORRETA, de cima para baixo.",
+      "alternativas": [
+        "V - V - F - F - V.",
+        "V - F - F - F - V.",
+        "F - V - V - V - V.",
+        "F - V - V - V - F.",
+        "F - F - V - V - F."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda Estado de Mal Epiléptico Não Convulsivo (EMENC) na UTI, um tema desafiador que testa conhecimento sobre diagnósticos diferenciais em pacientes críticos.</p><p><strong>A resposta correta é E - F - F - V - F.</strong></p><p>Vamos analisar cada afirmativa:</p><p><strong>Afirmativa 1 (FALSA):</strong> \"Constitui causa rara de alteração do nível de consciência\" - Na verdade, o EMENC é uma causa RELATIVAMENTE COMUM de rebaixamento do nível de consciência em pacientes críticos, frequentemente subdiagnosticado. Estudos sugerem incidência de 8-20% em UTI.</p><p><strong>Afirmativa 2 (FALSA):</strong> \"Exame neurológico pode identificar sinais claros na maioria\" - O EMENC tem apresentação sutil e inespecífica. O exame neurológico frequentemente é normal ou mostra alterações mínimas (olhar perdido, automatismos discretos). O diagnóstico depende do EEG.</p><p><strong>Afirmativa 3 (FALSA):</strong> \"Desvio conjugado mantido, nistagmo, automatismos são sugestivos\" - Na verdade, estes sinais são mais característicos de crises PARCIAIS complexas ou estados pós-ictais. O EMENC tipicamente se apresenta com rebaixamento suave, olhar vago, mínimos automatismos.</p><p><strong>Afirmativa 4 (VERDADEIRA):</strong> \"Deve ser sempre lembrada em coma sem etiologia definida\" - CORRETO. O EMENC é um diagnóstico diferencial importante em pacientes em coma sem causa aparente, especialmente após exclude outras causas como trauma, metabolic disorders, intoxications.</p><p><strong>Afirmativa 5 (FALSA):</strong> \"Diagnóstico fácil com EEG de 1 hora\" - O EMENC requer monitoração EEG prolongada (mínimo 24-48h) para capturar padrões típicos. EEG de 1 hora pode ser insuficiente para capturar放电 epilépticas intermitentes.</p><p><strong>Sequência correta: F - F - F - V - F.</strong></p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Epilepsias",
+        "ClinicaMedica_Neurologia_Epilepsias_Epilepsias"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Assinale a alternativa correta em relação à malária grave.",
+      "alternativas": [
+        "A leucocitose é comum na malária grave.",
+        "A infecção por Plasmodium falciparum é a menos relacionada a formas graves.",
+        "O sangramento espontâneo é comum na malária grave.",
+        "Alterações neurológicas (confusão, coma, convulsões) fazem parte dos critérios de malária grave.",
+        "O choque deve ser tratado com reposição volêmica agressiva, não necessitando monitoração hemodinâmica."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre critérios de malária grave, fundamental para médicos que trabalham em regiões endêmicas ou com pacientes travelers.</p><p><strong>A resposta correta é D - Alterações neurológicas (confusão, coma, convulsões) fazem parte dos critérios de malária grave.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (ERRADA):</strong> Na malária grave, ocorre LEUCOPENIA, não leucocitose. A leucocitose pode sugerir infecção bacteriana secundária ou outras complicações, mas não é característica da malária falciparum grave.</p><p><strong>Alternativa B (ERRADA):</strong> O Plasmodium falciparum é EXATAMENTE o mais relacionado a formas graves, devido à sua capacidade de causar sequestro eritrocitário, obstrução microcirculatória e disfunção orgânica múltipla.</p><p><strong>Alternativa C (ERRADA):</strong> Sangramento espontâneo não é comum na malária grave. As principais complicações são anemia severa, insuficiência renal aguda, edema pulmonar, acidose metabólica e disfunção neurológica.</p><p><strong>Alternativa D (CORRETA):</strong> Alterações neurológicas fazem parte dos critérios da OMS para malária grave. Incluem: rebaixamento do nível de consciência (Glasgow < 11), convulsões generalizadas, posturing anormal, anormalidades pupilares.</p><p><strong>Alternativa E (ERRADA):</strong> O choque na malária NÃO deve ser tratado com reposição volêmica agressiva. A reposição deve ser cuidadosa para evitar sobrecarga e edema pulmonar. Monitoração hemodinâmica rigorosa é essencial.</p><p>Os critérios da OMS para malária grave por P. falciparum incluem: alteração da consciência, convulsões, acidose, hipoglicemia, insuficiência renal, edema pulmonar, choque, hemorragias, icterícia e hemoglobinuria.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia_SindromesFebris_Malaria",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia_SindromesFebris_Malaria",
+        "ClinicaMedica_Infectologia_SindromesFebris_Malaria_MalariaCaracteristicasGerais",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_SindromesFebris",
+        "ClinicaMedica_Infectologia_SindromesFebris_Malaria",
+        "ClinicaMedica_Infectologia_SindromesFebris_Malaria_MalariaManifestacoesClinicas"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "Assinale a alternativa correta quanto às Resoluções do Conselho Federal de Medicina 1.658/2002 e 1.851/2008.",
+      "alternativas": [
+        "É obrigatória a inclusão do código CID-10 nos atestados médicos.",
+        "Estas Resoluções desobrigam a exigência de documento de identificação do paciente para o fornecimento do atestado médico.",
+        "O médico perito tem autonomia para acatar ou não o atestado médico fornecido pelo médico-assistente.",
+        "O atestado médico é direito do paciente, exceto em consultas realizadas em unidades de atendimento de emergências.",
+        "É facultativo ao médico cobrar suplementação ao valor da consulta quando houver emissão de atestado médico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca UFSC avalia conhecimento sobre ética médica e normas do Conselho Federal de Medicina regarding atestados médicos, tema obrigatório para todos os médicos.</p><p><strong>A resposta correta é C - O médico perito tem autonomia para acatar ou não o atestado médico fornecido pelo médico-assistente.</strong></p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A (ERRADA):</strong> Segundo a Resolução CFM 1.658/2002, o código CID-10 NÃO é obrigatório no atestado médico. O atestado deve conter diagnóstico, mas não necessariamente o CID. Muitas vezes, por questões éticas, o médico pode relutar em incluir o CID específico.</p><p><strong>Alternativa B (ERRADA):</strong> A Resolução 1.658/2002 mantém a EXIGÊNCIA de documento de identificação do paciente para emissão de atestado médico. Esta exigência permanece válida mesmo nas resoluções mais recentes.</p><p><strong>Alternativa C (CORRETA):</strong> O médico perito tem autonomia técnica para avaliar criticamente o atestado fornecido pelo médico-assistente. Pode concordar, discordar parcialmente ou rejeitar, desde que fundamente sua decisão tecnicamente. Esta autonomia é fundamental para a perícia médica.</p><p><strong>Alternativa D (ERRADA):</strong> O atestado médico É SEMPRE um direito do paciente, independente do local de atendimento. Mesmo em emergências, o paciente tem direito ao atestado, observados os critérios éticos e legais.</p><p><strong>Alternativa E (ERRADA):</strong> Segundo a Resolução 1.851/2008, é VEDADA a cobrança de suplementação pelo atestado médico. O atestado deve ser fornecido sem custos adicionais, como parte do atendimento médico regular.</p><p>Estas resoluções estabelecem direitos e deveres tanto de pacientes quanto de profissionais, mantendo o equilíbrio entre autonomia médica e proteção do paciente.</p>",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Assinale a alternativa correta em relação às recomendações do Ministério da Saúde quanto a co-infecção tuberculose/HIV.",
+      "alternativas": [
+        "A tuberculose deve ser pesquisada em todas as visitas das pessoas vivendo com HIV aos serviços de saúde através da baciloscopia do escarro.",
+        "Em caso de tuberculose meníngea a terapia antiretroviral deve ser iniciada dentro de duas semanas do início do tratamento da tuberculose.",
+        "A tuberculose é a terceira principal causa infecciosa de mortalidade em pessoas vivendo com HIV e o tratamento profilático com rifampicina deve ser oferecido a pacientes com contagem de LT-CD4+ inferiores a 100 céls/mm³",
+        "Pacientes que são diagnosticados concomitantemente com tuberculose e HIV, e cuja contagem de LT-CD4+ esteja acima de 50 céls/mm3, devem iniciar tratamento para a tuberculose imediatamente e a terapia antiretroviral deve ser iniciada na oitava semana.",
+        "A síndrome da reconstituição imune é evento relativamente comum em pacientes coinfectados com tuberculose e HIV que iniciam terapia antiretroviral. O uso de corticoides em pacientes de maior risco deve ser feito nas primeiras duas semanas de tratamento."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da banca UFSC avalia seu conhecimento sobre as diretrizes do Ministério da Saúde para manejo da co-infecção tuberculose/HIV, um tema crítico na prática clínica brasileira.</p><p><strong>A resposta correta é D.</strong> Esta alternativa descreve corretamente o protocolo para pacientes com contagem de LT-CD4+ acima de 50 céls/mm³: iniciar tratamento da tuberculose imediatamente e começar a terapia antirretroviral na oitava semana.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A:</strong> Errada. O protocolo do Ministério da Saúde não especifica baciloscopia do escarro em \"todas as visitas\". O rastreamento deve ser feito de acordo com sintomas clínicos e fatores de risco, utilizando múltiplos métodos diagnósticos.</p><p><strong>Alternativa B:</strong> Errada. Para tuberculose meníngea, a terapia antirretroviral deve ser iniciada mais precocemente (idealmente em até 2 semanas), não apenas \"dentro de duas semanas\".</p><p><strong>Alternativa C:</strong> Errada. A tuberculose é a PRIMEIRA causa infecciosa de mortalidade em pessoas com HIV, não a terceira. Além disso, a profilaxia com rifampicina é indicada para pacientes com LT-CD4+ inferiores a 200 céls/mm³.</p><p><strong>Alternativa D:</strong> Correta, como explicado.</p><p><strong>Alternativa E:</strong> Errada. Embora a síndrome da reconstituição imune seja comum em coinfectados, corticoides NÃO devem ser usados rotineiramente nas primeiras duas semanas. O uso de corticoides é reservado para casos específicos de IRIS severa.</p><p><strong>Veredito:</strong> A alternativa D está correta segundo as diretrizes do Ministério da Saúde para co-infecção TB/HIV.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_TuberculoseTb",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_Hivaids",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "Em relação a infecções hospitalares:",
+      "alternativas": [
+        "As infecções do trato urinário são as infecções hospitalares menos comuns e de menor morbimortalidade.",
+        "O rodízio de regimes antibióticos empíricos pode reduzir a emergência de resistência bacteriana.",
+        "A higiene das mãos com soluções alcoólicas é menos efetiva que a lavagem das mãos com água e sabão antisséptico.",
+        "O tempo de duração da internação hospitalar, e não a idade do paciente, é fator de risco para o desenvolvimento de infeção hospitalar.",
+        "A exposição prévia a antibióticos está associada a emergência de organismos resistentes tanto à mesma quanto a diferentes classes de antibióticos."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda conceitos fundamentais sobre infecções hospitalares, um tema essencial na medicina preventiva e controle de infecção hospitalar.</p><p><strong>A resposta correta é E.</strong> A exposição prévia a antibióticos está associada à emergência de organismos resistentes tanto à mesma quanto a diferentes classes de antibióticos, fenómeno bem documentado na literatura médica.</p><p>Análise das alternativas:</p><p><strong>Alternativa A:</strong> Errada. As infecções do trato urinário são as MAIS COMUNS infecções hospitalares (cerca de 40% dos casos), representando significativa morbimortalidade e custo hospitalar.</p><p><strong>Alternativa B:</strong> Errada. O rodízio de antibióticos pode paradoxalmente aumentar a resistência quando não baseado em vigilância epidemiológica rigorosa. A estratégia recomendada é otimização de antimicrobianos baseada em protocolos e descalonamento quando apropriado.</p><p><strong>Alternativa C:</strong> Errada. A higiene das mãos com soluções alcoólicas é MAIS EFETIVA que água e sabão antisséptico para a maioria dos patógenos, sendo recomendada como primeira opção em situações apropriadas.</p><p><strong>Alternativa D:</strong> Errada. Ambos fatores (tempo de internação E idade) são importantes. Pacientes idosos têm maior risco devido à imunossupressão relacionada à idade e múltiplas comorbidades.</p><p><strong>Alternativa E:</strong> Correta. A pressão seletiva de antibióticos promove resistência cruzada e multirresistência, fenómeno observado em múltiplas classes antimicrobianas.</p><p><strong>Veredito:</strong> A alternativa E é a resposta correta.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia",
+        "ClinicaMedica_Infectologia_InfeccoesRelacionadasAAssisten",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_VigilanciaEmSaude"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Assinale a alternativa correta quanto às recomendações da Sociedade Brasileira de Geriatria e Gerontologia.",
+      "alternativas": [
+        "O rastreio para câncer de mama, próstata ou coloretal não é recomendado para pessoas com expectativa de vida inferior a 10 anos.",
+        "O uso de anti-histamínicos no tratamento da insônia de pacientes idosos não aumenta o risco de quedas e fraturas de quadril, sendo preferível ao uso de benzodiazepínicos.",
+        "O uso de bloqueadores de bomba de prótons de forma contínua em pacientes com queixas de epigastralgia está associado a melhora da absorção de vitamina B12.",
+        "O uso de polivitamínicos e a suplementação de vitaminas e hormônios estão associados ao envelhecimento bem-sucedido.",
+        "Idosos frágeis, portadores de multimorbidades e com declínio funcional devem ter alvo de hemoglobina glicada inferior a 7,5%."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca UFSC avalia seu conhecimento sobre as recomendações da Sociedade Brasileira de Geriatria e Gerontologia, tema cada vez mais relevante com o envelhecimento populacional brasileiro.</p><p><strong>A resposta correta é A.</strong> As diretrizes da SBGG estabelecem que o rastreio para câncer de mama, próstata ou colorretal não é recomendado quando a expectativa de vida é inferior a 10 anos, pois os riscos dos exames superam os benefícios potenciais.</p><p>Análise das alternativas:</p><p><strong>Alternativa A:</strong> Correta, conforme explicação.</p><p><strong>Alternativa B:</strong> Errada. Anti-histamínicos aumentam significativamente o risco de quedas e fraturas em idosos devido aos efeitos anticolinérgicos. Benzodiazepínicos podem ser preferíveis em uso de curto prazo, embora tenham seus próprios riscos.</p><p><strong>Alternativa C:</strong> Errada. Bloqueadores de bomba de prótons são associados à MÁ ABSORÇÃO de vitamina B12, não à melhora. O uso prolongado pode causar hipomagnesemia e aumentar risco de fraturas.</p><p><strong>Alternativa D:</strong> Errada. Não há evidência robusta de que polivitamínicos e suplementação estejam associados ao envelhecimento bem-sucedido. A evidência sugere que dieta equilibrada e atividade física têm papel mais importante.</p><p><strong>Alternativa E:</strong> Errada. Para idosos frágeis com multimorbidades e declínio funcional, o alvo de hemoglobina glicada deve ser mais liberal (8,0-8,5%) para evitar hipoglicemias que podem ser mais perigosas que a hiperglicemia moderada.</p><p><strong>Veredito:</strong> A alternativa A é a única correta segundo as diretrizes da SBGG.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi",
+        "MedicinaPreventiva_MedicinaPreventivaEpidemiologi_TestesDiagnosticos",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria",
+        "MedicinaPreventiva_EticaMedica"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Um paciente de 79 anos é portador de DPOC com volume expiratório forçado no primeiro segundo (VEF1) de 30%. É tabagista ativo, apresenta dispneia em repouso, apresenta redução da ingesta alimentar e emagreceu 10 kg no último ano (o índice de massa corporal atual é de 18 kg/m²). Nos últimos seis meses esteve internado três vezes devido à exacerbação da doença, e atualmente passa a maior parte do dia sentado ou deitado e necessita de auxílio quase completo para cuidados de higiene e de alimentação. É lúcido e há três meses redigiu, conjuntamente com sua médica assistente, um documento de diretiva antecipada de vontade (DAV) onde especifica que não deseja ser entubado ou receber reanimação cardiopulmonar em caso de piora clínica e proximidade da morte. Em relação ao quadro clínico 3, imagine que o paciente foi internado com quadro de desconforto respiratório e confusão mental associadas à exacerbação da doença de base. Assinale a alternativa correta quanto à propriedade do cumprimento das diretrizes avançadas de vontade (DAV).",
+      "alternativas": [
+        "Respeitar a DAV do paciente seria juridicamente equivalente à eutanásia.",
+        "Um parecer jurídico deve ser solicitado antes do cumprimento da DAV.",
+        "Desde que não esteja em desacordo com os ditames do Código de Ética Médica, a DAV deve ser cumprida em respeito à autonomia do paciente.",
+        "A presença de confusão mental invalida a DAV já que não é possível ter certeza de que o paciente mantém a mesma opinião que há três meses.",
+        "Embora regulamentada pelo Conselho Federal de Medicina, as DAV não foram codificadas em lei; portanto, não apresentam qualquer valor jurídico."
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão aborda as Diretivas Antecipadas de Vontade (DAV), um tema fundamental da bioética e medicina paliativa, especialmente relevante em pacientes com doenças crônicas avançadas como o caso apresentado.</p><p><strong>A resposta correta é C.</strong> Desde que não estejam em desacordo com o Código de Ética Médica, as DAV devem ser cumpridas em respeito à autonomia do paciente, conforme a Resolução CFM nº 1.995/2012.</p><p>Análise das alternativas:</p><p><strong>Alternativa A:</strong> Errada. Cumprir uma DAV é respeitar a autonomia do paciente, não eutanásia. A diferença fundamental é que o médico não está causando ativamente a morte, mas sim abstendo de intervenções fúteis que contrariavam a vontade do paciente.</p><p><strong>Alternativa B:</strong> Errada. Embora possa ser útil em casos complexos, não é obrigatório solicitar parecer jurídico antes do cumprimento da DAV, especialmente quando há clareza sobre a vontade do paciente.</p><p><strong>Alternativa C:</strong> Correta, conforme explicação.</p><p><strong>Alternativa D:</strong> Errada. A confusão mental atual não invalida a DAV, pois o documento foi elaborado há três meses quando o paciente estava lúcido e ainda está válido legalmente. A vontade expressa anteriormente deve ser respeitada.</p><p><strong>Alternativa E:</strong> Errada. As DAV têm respaldo legal através da Resolução CFM nº 1.995/2012 e do Código de Ética Médica, apresentando valor jurídico vinculante.</p><p><strong>Veredito:</strong> A alternativa C é correta, representando o princípio da autonomia do paciente em cuidados de fim de vida.",
+      "filterIds": [
+        "MedicinaPreventiva",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_Bioetica",
+        "MedicinaPreventiva_EticaMedica",
+        "MedicinaPreventiva_EticaMedica_CodigoDeEticaMedicaCem",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Um paciente de 79 anos é portador de DPOC com volume expiratório forçado no primeiro segundo (VEF1) de 30%. É tabagista ativo, apresenta dispneia em repouso, apresenta redução da ingesta alimentar e emagreceu 10 kg no último ano (o índice de massa corporal atual é de 18 kg/m²). Nos últimos seis meses esteve internado três vezes devido à exacerbação da doença, e atualmente passa a maior parte do dia sentado ou deitado e necessita de auxílio quase completo para cuidados de higiene e de alimentação. É lúcido e há três meses redigiu, conjuntamente com sua médica assistente, um documento de diretiva antecipada de vontade (DAV) onde especifica que não deseja ser entubado ou receber reanimação cardiopulmonar em caso de piora clínica e proximidade da morte. Assinale a alternativa correta diante do quadro descrito no enunciado 3.",
+      "alternativas": [
+        "A expectativa de sobrevida do paciente em cinco anos é maior que 50%.",
+        "O paciente apresenta uma funcionalidade de 40% de acordo com a Palliative Performance Scale (PPS).",
+        "A recuperação do status nutricional do paciente é o principal fator que pode melhorar a expectativa de sobrevida do paciente.",
+        "O uso de opioides no tratamento da dispneia é contraindicado.",
+        "O VEF1 baixo é fator preditivo isolado de mau prognóstico em seis meses."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre cuidados paliativos e prognóstico em pacientes com DPOC avançado, integrando conceitos de funcionalidade, qualidade de vida e prognóstico em geriatria.</p><p><strong>A resposta correta é B.</strong> O paciente apresenta funcionalidade de aproximadamente 40% segundo a Palliative Performance Scale (PPS), considerando limitaçõesseveras em atividade física, necessidade de assistência quase completa para cuidados pessoais e diagnóstico terminal.</p><p>Análise das alternativas:</p><p><strong>Alternativa A:</strong> Errada. Com VEF1 de 30%, múltiplas internações recentes, perda ponderal significativa e limitação funcional severa, a sobrevida em 5 anos é consideravelmente inferior a 50%.</p><p><strong>Alternativa B:</strong> Correta. A PPS estima funcionalidade em 40%, consistente com quadro clínico: paciente acamado/sedentário, cuidados pessoais com assistência substancial, ingestão alimentar reducida e doença avançada.</p><p><strong>Alternativa C:</strong> Errada. Embora a nutrição seja importante, o principal fator prognóstico é a funcionalidade global e a progressão da doença pulmonar. A perda ponderal pode ser marcador de complexidade da doença.</p><p><strong>Alternativa D:</strong> Errada. Opioides para dispneia em DPOC avançado são recomendados segundo diretrizes internacionais, especialmente em cuidados paliativos, quando usados adequadamente.</p><p><strong>Alternativa E:</strong> Errada. Embora VEF1 baixo seja um fator prognóstico importante, deve ser considerado em conjunto com outros parâmetros (número de exacerbações, funcionalidade, estado nutricional). Isoladamente não prediz prognóstico em 6 meses.</p><p><strong>Veredito:</strong> A alternativa B é a resposta correta, refletindo a avaliação funcional global em cuidados paliativos.",
+      "filterIds": [
+        "ClinicaMedica",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DoencaPulmonarObstrutivaCronic",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_EticaMedica"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-29"
+    },
+    {
+      "numero": "Q31",
+      "enunciado": "Assinale a alternativa correta em relação ao diagnóstico diferencial do Lupus Eritematoso Sistêmico (LES).",
+      "alternativas": [
+        "Úlceras orais e artrite podem estar presentes tanto no LES quanto na Síndrome de Behçet; no entanto, esta última mais comumente cursa com fator antinúcleo negativo.",
+        "A presença do fenômeno de Raynaud e de um fator anti-núcleo positivo na esclerose sistêmica é o que a diferencia do LES.",
+        "O fator antinúcleo é positivo em virtualmente todos os casos de LES e de Polimiosite; no entanto, a polimiosite cursa com fraqueza muscular proximal mais intensa que no LES.",
+        "O fator reumatoide pode estar presente em até dois terços de pacientes com LES, enquanto o fator antinúcleo raramente é positivo em pacientes com Artrite Reumatoide.",
+        "A presença de xerostomia e de anti-SSA/Ro e anti-SSB/La negativos na Síndrome de Sjögren a diferencia do LES."
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da UFSC 2020 explora os diagnósticos diferenciais de doenças reumatológicas autoimunes, uma competência fundamental para a prática clínica. A banca avalia seu conhecimento sobre as características distintivas entre Lupus Eritematoso Sistêmico (LES) e outras condições que podem simular sua apresentação.</p><p><strong>A resposta correta é a alternativa A.</strong> Esta alternativa estabelece corretamente que tanto LES quanto Síndrome de Behçet podem apresentar úlceras orais e artrite, mas diferencia-as pelo fato de que Behçet tipicamente cursa com FAN negativo.</p><p>Vamos analisar cada alternativa:</p><p><strong>Alternativa A - CORRETA:</strong> Realmente, ambas condições podem ter úlceras orais e artrite. A Síndrome de Behçet, caracterizada pela tríade úlceras orais, genitais e uveíte, tipicamente apresenta FAN negativo, contrastando com o LES onde o FAN é praticamente sempre positivo.</p><p><strong>Alternativa B - INCORRETA:</strong> A esclerose sistêmica pode apresentar fenômeno de Raynaud, mas o FAN (fator antinúcleo) é frequentemente positivo, não negativo. Além disso, ambas condições podem ter FAN positivo, então esta não é uma diferenciação válida.</p><p><strong>Alternativa C - INCORRETA:</strong> Embora o FAN seja virtualmente sempre positivo no LES, na polimiosite sua frequência é menor (cerca de 20-30% dos casos). A afirmação de que FAN é positivo em virtualmente todos os casos de polimiosite está incorreta.</p><p><strong>Alternativa D - INCORRETA:</strong> O fator reumatoide pode estar presente em até 30% dos pacientes com LES (não dois terços), mas o FAN é virtualmente sempre positivo em artrite reumatoide, não raramente positivo como stated.</p><p><strong>Alternativa E - INCORRETA:</strong> Na Síndrome de Sjögren, os anticorpos anti-SSA/Ro e anti-SSB/La são tipicamente POSITIVOS, não negativos. Estes anticorpos são marcadores importantes desta síndrome e ajudam a diferenciá-la de outras condições.</p><p>Para o diagnóstico diferencial, é essencial lembrar das características marcantes: FAN sempre positivo no LES, anticorpos específicos para cada condição, e padrões de apresentação clínica distintivos.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Reumatologia",
+        "ClinicaMedica_Reumatologia_DoencasAutoimunesDoTecidoConju",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia",
+        "ClinicaMedica_Dermatologia_IntroducaoAReumatologia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-30"
+    },
+    {
+      "numero": "Q32",
+      "enunciado": "Assinale a alternativa correta quanto à Síndrome de Burnout.",
+      "alternativas": [
+        "Fatores institucionais não estão relacionados a maior risco, ao passo que a personalidade do profissional costuma ser o principal fator associado.",
+        "Trata-se de transtorno psiquiátrico agudo, mais frequentemente de curta duração e de baixa recorrência.",
+        "A primeira linha de tratamento é a redução da carga de trabalho, gozar de férias e em casos refratários, associação de antidepressivos.",
+        "Embora haja impacto negativo na saúde mental do profissional, não há evidência de que haja comprometimento da segurança do paciente ou qualidade do cuidado.",
+        "É caracterizada por exaustão emocional, despersonalização e redução da realização pessoal com o trabalho."
+      ],
+      "correta": 4,
+      "professor_comment": "<p>Esta questão aborda a Síndrome de Burnout, uma condição cada vez mais relevante na área da saúde. A UFSC busca avaliar seu conhecimento sobre as características definidoras desta síndrome, frequentemente confundida com outras condições de saúde mental.</p><p><strong>A resposta correta é a alternativa E.</strong> Esta é a definição clássica e aceita da Síndrome de Burnout, estabelecida por Maslach: caracterizada pelos três componentes principais - exaustão emocional, despersonalização (ou cinismo) e redução da realização pessoal no trabalho.</p><p>Analisando as alternativas incorretas:</p><p><strong>Alternativa A - INCORRETA:</strong> Contradiz completamente as evidências. Fatores institucionais (ambiente de trabalho, carga de trabalho, suporte organizacional) são fatores primários e mais importantes no desenvolvimento do Burnout. A personalidade individual pode ter algum papel, mas não é o principal fator.</p><p><strong>Alternativa B - INCORRETA:</strong> Burnout não é um transtorno psiquiátrico agudo. É uma resposta de estresse crônico no trabalho, de desenvolvimento gradual e que tende a ser persistente se não tratado adequadamente. Não é de curta duração nem de baixa recorrência.</p><p><strong>Alternativa C - INCORRETA:</strong> Embora a redução da carga de trabalho e férias possam ser úteis, a primeira linha de tratamento não é farmacológica. O manejo envolve intervenções organizacionais, psychotherapy, e mudanças no ambiente de trabalho. Antidepressivos podem ser considerados apenas em casos com sintomas depressivos significativos associados.</p><p><strong>Alternativa D - INCORRETA:</strong> Existem evidências robustas de que profissionais com Burnout apresentam maior risco de erros médicos, decreased patient safety, menor qualidade do cuidado, e maior rotatividade profissional. O comprometimento da segurança do paciente é uma consequência bem documentada.</p><p>A compreensão adequada do Burnout é crucial para prevenção e manejo, reconhecendo que é primariamente um problema organizacional que requer intervenções sistêmicas, não apenas individuais.</p>",
+      "filterIds": [
+        "Outros",
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_ReformaPsiquiatricaEPsiquiatri",
+        "MedicinaPreventiva_SaudeDoTrabalhador_TranstornoMentalRelacionadoAoT",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_TranstornosSomaticos"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-31"
+    },
+    {
+      "numero": "Q33",
+      "enunciado": "Assinale a alternativa correta em relação à abordagem de pacientes hospitalizados que apresentam sangramento ativo.",
+      "alternativas": [
+        "A protamina deve ser administrada em todos os pacientes que fazem uso de warfarina.",
+        "É contraindicada a transfusão de plaquetas quando a causa do sangramento for o uso de antiagregantes plaquetários.",
+        "Havendo prolongamento do tempo de protombina ativada e fibrinogênio baixo, a transfusão de crioprecipitado deve ser realizada de maneira a elevar o fibronogênio sérico para acima de 500 mg/dL.",
+        "A transfusão de plaquetas deve ser feita no caso de pacientes portadores de plaquetopenia e que apresentam sangramento de sistema nervoso central de maneira a elevar a contagem de plaquetas para pelo menos 100.000/mm³.",
+        "A desmopressina hemostática sistêmica é a opção terapêutica de escolha em casos de sangramentos provocados pela rivoraxabana e que foram refratários à transfusão de plasma fresco congelado."
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da UFSC 2020 avalia conhecimento sobre manejo de coagulopatias em pacientes com sangramento ativo, uma situação clínica crítica que requer conhecimento preciso das diretrizes transfusionais e hemostáticas.</p><p><strong>A resposta correta é a alternativa D.</strong> Esta alternativa está correta ao estabelecer que em casos de plaquetopenia com sangramento do sistema nervoso central, a transfusão de plaquetas deve elevar a contagem para pelo menos 100.000/mm³, seguindo diretrizes hematológicas para sangramento em sistema crítico.</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A - INCORRETA:</strong> A protamina não deve ser administrada indiscriminadamente em todos os pacientes em warfarina. Seu uso é específico para neutralizar heparina (não warfarina) e apenas quando há indicação precisa baseada em testes de coagulação e avaliação risco-benefício.</p><p><strong>Alternativa B - INCORRETA:</strong> A transfusão de plaquetas pode ser necessária mesmo quando o sangramento é causado por antiagregantes plaquetários. Em casos de sangramento ativo grave ou em locais críticos (como SNC), a transfusão plaquetária é indicada para reverter o efeito do antiagregante.</p><p><strong>Alternativa C - INCORRETA:</strong> O alvo de fibrinogênio com crioprecipitado deve ser de 150-200 mg/dL, não 500 mg/dL. Níveis de 500 mg/dL são excesivamente altos e não são recomendados nas diretrizes atuais para manejo de coagulopatias.</p><p><strong>Alternativa E - INCORRETA:</strong> A desmopressina não é a primeira opção para sangramentos por rivoraxabana. Para sangramentos por anticoagulantes orais diretos, as opções incluem agentes específicos (quando disponíveis), plasma fresco congelado, ou concentrado de complexo protrombínico. A desmopressina tem indicações específicas (como doença de von Willebrand) mas não é primeira escolha para sangramentos por rivoraxabana.</p><p>O manejo de sangramentos ativos requer avaliação individualizada, considerando a gravidade, localização, causas subyacentes e metas transfusionais específicas para cada situação clínica.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_MedicinaTransfusional",
+        "ClinicaMedica_Hematologia",
+        "ClinicaMedica_Hematologia_Hemostasia"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-32"
+    },
+    {
+      "numero": "Q34",
+      "enunciado": "Um paciente de 74 anos, portador de fibrilação atrial crônica e com história de acidente vascular encefálico há dois meses, apresenta quadro de delirium e queda do estado geral devido a abcesso dentário. Além do tratamento antimicrobiano há indicação de extração dentária. O paciente faz uso de warfarina e o RNI atual é de 2,5. Assinale a alternativa correta quanto ao manejo da terapia anticoagulante periprocedimento.",
+      "alternativas": [
+        "Os riscos de eventos tromboembólicos e de sangramento são elevados; recomenda-se a inserção de filtro de veia cava antes do procedimento.",
+        "O risco de evento tromboembólico é alto e o risco de sangramento é baixo; manter o anticoagulante e utilizar agentes hemostáticos tópicos se necessário.",
+        "O risco de eventos tromboembólicos é baixo e o risco de sangramento é alto; a warfarina deve ser suspensa sete dias antes do procedimento e reiniciada 48 horas após.",
+        "Os riscos de eventos tromboembólicos e de sangramentos são baixos; recomenda-se suspender a warfarina e não a reintroduzir devido ao baixo benefício diante da idade avançada do paciente.",
+        "Os riscos de eventos tromboembólicos e de sangramentos são elevados; a warfarina deve ser suspensa sete dias antes do procedimento e reiniciada 12 horas após. Terapia de ponte com heparina de baixo peso molecular após a suspensão da warfarina e até que o"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da UFSC 2020 aborda um cenário clínico complexo: manejo de anticoagulação em paciente de alto risco血栓embólico submetido a procedimento invasivo. É uma situação que exige balanceamento preciso entre risco hemorrágico e tromboembólico.</p><p><strong>A resposta correta é a alternativa B.</strong> Esta alternativa corretamente identifica que, apesar do RNI elevado (2,5), o risco de evento tromboembólico é alto devido à fibrilação atrial com história prévia de AVC há apenas 2 meses, enquanto o risco de sangramento é baixo para extração dentária, um procedimento de baixo risco hemorrágico.</p><p>Para procedimentos odontológicos simples, as diretrizes permitem manutenção da anticoagulação oral com RNI até 3,0, com uso de medidas hemostáticas locais quando necessário.</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A - INCORRETA:</strong> Filtro de veia cava é indicado para prevenção de tromboembolismo venoso em pacientes com contraindicação absoluta para anticoagulação, não para procedimentos odontológicos. Além disso, o filtro não protege contra tromboembolismo arterial (mais relevante em fibrilação atrial).</p><p><strong>Alternativa C - INCORRETA:</strong> Subestima o risco tromboembólico. Com AVC recente há apenas 2 meses e fibrilação atrial, o risco de evento tromboembólico é elevado, especialmente considerando que o período de maior risco é nos primeiros 3 meses pós-AVC.</p><p><strong>Alternativa D - INCORRETA:</strong> Incorreta em múltiplos aspectos: subestima o risco tromboembólico, superestima riscos de procedimento odontológico simples, e a suspensão definitiva da anticoagulação em paciente com indicação clara (fibrilação atrial + AVC prévio) seria inadequada mesmo em idade avançada.</p><p><strong>Alternativa E - INCORRETA:</strong> Embora reconheça riscos elevados, a estratégia proposta é excessiva para um procedimento de baixo risco. Extração dentária não justifica ponte com heparina ou suspensão por 7 dias - medidas reservadas para procedimentos de alto risco hemorrágico.</p><p>A chave está em individualizar a decisão baseada no risco específico de cada procedimento e no perfil de risco tromboembólico do paciente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_FibrilacaoAtrial",
+        "Cirurgia_AvaliacaoPreoperatoria"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-33"
+    },
+    {
+      "numero": "Q35",
+      "enunciado": "Paciente de 33 anos, diabética do tipo 1, tem diagnóstico de depressão. Apresenta queixas de dores em membros inferiores de padrão neuropático e de insônia. Faz uso de insulina e ocasionalmente de sumatriptana. Assinale a alternativa farmacológica mais apropriada para o tratamento da depressão.",
+      "alternativas": [
+        "Sertralina",
+        "Citalopram",
+        "Amitriptilina",
+        "Vortioxetina",
+        "Fenelzina"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da UFSC 2020 apresenta um desafio farmacológico complexo: seleção de antidepressivo em paciente diabética tipo 1 com comorbidades específicas. A banca avalia conhecimento sobre interações medicamentosas, efeitos metabólicos e adequação terapêutica em condições especiais.</p><p><strong>A resposta correta é a alternativa C - Amitriptilina.</strong> Esta escolha se justifica pela presença de dor neuropática e insônia, sintomas que podem ser addressed pela amitriptilina, além de suas propriedades que não interferem significativamente com o controle glicêmico.</p><p>Análise das alternativas incorretas:</p><p><strong>Alternativa A - INCORRETA:</strong> Sertralina, embora seja um ISRS seguro em diabéticos, não addressa especificamente a dor neuropática nem tem propriedades sedativas adequadas para insônia. Seria uma opção válida para depressão isolada, mas não otimiza todos os sintomas presentes.</p><p><strong>Alternativa B - INCORRETA:</strong> Citalopram, similar à sertralina, não possui propriedades analgésicas específicas para dor neuropática. Além disso, pode causar síndrome de QT prolongado, requerendo monitorização ECG em alguns casos.</p><p><strong>Alternativa D - INCORRETA:</strong> Vortioxetina é um antidepressivo moderno e eficaz, mas não tem propriedades analgésicas comprovadas para dor neuropática e pode apresentar interações com sumatriptana (embora geralmente seguras, requerem monitorização).</p><p><strong>Alternativa E - INCORRETA:</strong> Fenelzina é um IMAO com múltiplas interações medicamentosas (incluindo com sumatriptana), restrições dietéticas rigorosas, e perfil de efeitos adversos que a tornam inadequada como primeira escolha, especialmente em paciente com comorbidades metabólicas.</p><p>A amitriptilina, como antidepressivo tricíclico, oferece vantagens: propiedades analgésicas para dor neuropática, efeito sedativo para insônia, ausência de impacto significativo no controle glicêmico, e perfil de interações mais favorável que MAOIs. É importante considerar dose inicial baixa e titulação gradual devido aos potenciais efeitos colaterais.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_DiabetesMellitusTipo1Dm1",
+        "ClinicaMedica_Endocrinologia",
+        "ClinicaMedica_Endocrinologia_Diabetes",
+        "ClinicaMedica_Endocrinologia_Diabetes_ComplicacoesAgudas",
+        "Outros_Psiquiatria",
+        "Outros_Psiquiatria_TranstornosDoHumor",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas_FibrilacaoAtrial"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-34"
+    },
+    {
+      "numero": "Q36",
+      "enunciado": "Considere um paciente masculino, 65 anos, com quadro de dispneia progressiva nos últimos dois anos com piora há 4 meses. Relata pouca tosse predominantemente seca, nega febre ou outros sintomas respiratórios, dores articulares e sintomas gástricos. Nega também tabagismo. Possui uma granja de criação de aves, onde trabalha diariamente. Apresentava ausculta pulmonar com presença de grasnido, queda da Saturação de Oxigênio até 85% ao teste de caminhada de 6 minutos, sem outras alterações ao exame físico. RX tórax evidenciava infiltrado pulmonar, confirmado pela Tomografia Computadorizada de Alta Resolução que mostrava nódulos centro-lobulares em vidro fosco e padrão de atenuação em mosaico, com distribuição difusa em ambos os pulmões. Em relação ao caso do enunciado 4, na análise dos valores obtidos na pletismografia de corpo inteiro esperamos encontrar:",
+      "alternativas": [
+        "Redução da Difusão de CO que se normaliza após administração de broncodilatador.",
+        "Redução da Capacidade Pulmonar Total (CPT), caracterizando presença de distúrbio restritivo, associado a aumento do Volume Residual (VR) e da relação VR/CPT por aprisionamento aéreo.",
+        "Aumento da Capacidade Pulmonar Total (CPT) com aumento do Volume Residual (VR) e da relação VR/CPT, caracterizando presença de distúrbio restritivo.",
+        "Redução de todos os volumes pulmonares incluindo Capacidade Pulmonar Total (CPT), com Difusão de Monóxido de Carbono (DLCO) aumentada.",
+        "Volumes Pulmonares dentro dos limites da normalidade, presença de resposta significativa ao broncodilatador e Difusão de Monóxido de Carbono (DLCO) aumentada, caracterizando distúrbio restritivo."
+      ],
+      "correta": 1,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC avalia seu conhecimento sobre as alterações funcionais respiratórias esperadas na pneumonia de hipersensibilidade.</strong></p><p>Vamos analisar o caso: paciente com exposição ocupacional a aves, dispneia progressiva, infiltrado pulmonar em TCAR com padrão de vidro fosco e nódulos centro-lobulares. Esses achados são característicos de pneumonia de hipersensibilidade, também conhecida como pneumonite por hipersensibilidade.</p><p><strong>A resposta correta é B.</strong> Na pneumonia de hipersensibilidade, encontramos padrão restritivo com redução da Capacidade Pulmonar Total (CPT) e aumento do Volume Residual (VR) por aprisionamento aéreo. A DLCO está reduzida, não aumentada como sugerido em outras alternativas.</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A:</strong> A redução da DLCO na pneumonia de hipersensibilidade é persistente, não se normaliza com broncodilatador. Essa reversibilidade é mais típica de asma.</p><p><strong>Alternativa C:</strong> É incorreta pois um aumento da CPT nunca caracteriza distúrbio restritivo. O aumento da CPT é típico de doenças obstrutivas como enfisema.</p><p><strong>Alternativa D:</strong> Todas as alternativas estão incorretas: DLCO não aumenta (está reduzida), volumes não estão dentro da normalidade, e a tríade de volumes aumentados é incompatível com padrão restritivo.</p><p><strong>Alternativa E:</strong> Está errada porque não há resposta significativa ao broncodilatador na pneumonia de hipersensibilidade, e a DLCO está reduzida, não aumentada.</p><p>A chave para esta questão é reconhecer que a pneumonia de hipersensibilidade causa fibrose intersticial (padrão restritivo) com aprisionamento aéreo periférico (aumento do VR), lembrando que há elevação paradoxal do VR por obliteração dos ductos alveolares e aprisionamento aéreo nos espaços aéreos periféricos.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-35"
+    },
+    {
+      "numero": "Q37",
+      "enunciado": "Considere um paciente masculino, 65 anos, com quadro de dispneia progressiva nos últimos dois anos com piora há 4 meses. Relata pouca tosse predominantemente seca, nega febre ou outros sintomas respiratórios, dores articulares e sintomas gástricos. Nega também tabagismo. Possui uma granja de criação de aves, onde trabalha diariamente. Apresentava ausculta pulmonar com presença de grasnido, queda da Saturação de Oxigênio até 85% ao teste de caminhada de 6 minutos, sem outras alterações ao exame físico. RX tórax evidenciava infiltrado pulmonar, confirmado pela Tomografia Computadorizada de Alta Resolução que mostrava nódulos centro-lobulares em vidro fosco e padrão de atenuação em mosaico, com distribuição difusa em ambos os pulmões. No caso relatado no enunciado 4, a principal hipótese diagnóstica é:",
+      "alternativas": [
+        "Sequela de tuberculose.",
+        "Pneumonia Intersticial Usual.",
+        "Pneumonia de Hipersensibilidade.",
+        "Pneumonia não Específica (PINE) associada a artrite reumatoide.",
+        "Doença Pulmonar Obstrutiva Crônica associada a Fibrose Pulmonar."
+      ],
+      "correta": 2,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC testa sua capacidade de diagnóstico diferencial de pneumopatias intersticiais, integrando história clínica, exposição ocupacional e achados de imagem.</strong></p><p>O paciente apresenta quadro clássico de pneumonia de hipersensibilidade: homem de 65 anos, trabalhador de granja de aves, dispneia progressiva, tosse seca, hipoxemia ao teste de caminhada, TCAR com nódulos centro-lobulares em vidro fosco e padrão de atenuação em mosaico.</p><p><strong>A resposta correta é C - Pneumonia de Hipersensibilidade.</strong></p><p>Vamos analisar os diferenciais:</p><p><strong>Alternativa A (Sequela de tuberculose):</strong> Incorreta, pois não há história prévia de tuberculose, e o padrão tomográfico não sugere sequelas (calcificações, cavitações, fibrose cicatricial). A história ocupacional aponta claramente para outra etiologia.</p><p><strong>Alternativa B (Pneumonia Intersticial Usual):</strong> A PII é caracterizada por fibrose progressiva com perda de volume pulmonar e padrão reticular em TCAR. O padrão em vidro fosco difuso com nódulos centro-lobulares e história de exposição são típicos de hipersensibilidade, não de PII.</p><p><strong>Alternativa D (PINE associada a artrite reumatoide):</strong> Incorreta pois não há história de artrite reumatoide (nega dores articulares). Além disso, a distribuição dos achados (difusa bilateral) e história de exposição são incompativeis.</p><p><strong>Alternativa E (DPOC associada a fibrose pulmonar):</strong> O paciente é não tabagista e o padrão tomográfico não sugere DPOC (não há enfisema ou bronquiectasias). A combinação também é rara e não explicaria a distribuição do vidro fosco.</p><p>A pneumonia de hipersensibilidade é uma reação inflamatória dos alvéolos e interstício pulmonar desencadeada pela exposição a antígenos orgânicos. A exposição a aves é uma das causas mais comuns no Brasil. O padrão em TCAR é característico: vidro fosco com nódulos centrolobulares e atenuação em mosaico.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_PneumopatiasIntersticiaisHiper"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-36"
+    },
+    {
+      "numero": "Q38",
+      "enunciado": "Considere uma paciente feminina, 36 anos, tabagista de 15 cigarros dia há 16 anos, admitida na Emergência com história de dispneia de início súbito, na manhã do mesmo dia, acompanhada por dor torácica à direita. Apresentava aumento do volume e dor à palpação de panturrilha direita. Ao exame físico, apresentava Frequência Respiratória 30 mrpm, Frequência Cardíaca 110 bpm, Pressão Arterial 120 × 85 e SpO² 89% em ar ambiente. Ao exame ultrassonográfico de membro inferior direito identificou-se ausência de compressibilidade de veia poplítea. O raio X de tórax não mostrava alterações. Qual o diagnóstico mais provável e a conduta inicial?",
+      "alternativas": [
+        "Tromboembolismo pulmonar, administração de O² por cateter e anticoagulação.",
+        "Pneumonia adquirida na comunidade, coleta de culturas e antibioticoterapia.",
+        "Asma, corticoide sistêmico e broncodilatadores.",
+        "Doença pulmonar obstrutiva crônica, oxigenoterapia, broncodilatadores e corticoide.",
+        "Pneumotórax, oxigenoterapia e drenagem pleural."
+      ],
+      "correta": 0,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC avalia seu conhecimento sobre tromboembolismo pulmonar agudo, exigindo correlação clínica e reconhecimento de sinais de alarme.</strong></p><p>A paciente apresenta quadro clássico de tromboembolismo pulmonar: dispneia súbita, dor torácica, taquipneia, taquicardia, hipoxemia (SpO2 89%), e fator de risco presente (trombose venosa profunda confirmada por ultrassom).</p><p><strong>A resposta correta é A - Tromboembolismo pulmonar, administração de O² por cateter e anticoagulação.</strong></p><p>Vamos analisar as outras alternativas:</p><p><strong>Alternativa B (Pneumonia):</strong> Incorreta pois não há febre, tosse produtiva ou achados radiológicos de pneumonia. A ausência de consolidação no raio X e início súbito dos sintomas são incompativeis.</p><p><strong>Alternativa C (Asma):</strong> O início súbito, ausência de história prévia de asma, presença de trombose venosa e achados físicos (trombose de panturrilha) tornam esta hipótese improvável.</p><p><strong>Alternativa D (DPOC):</strong> A paciente é jovem (36 anos), sem história de exposição tabágica prolongada e o início súbito são incompativeis com exacerbação de DPOC.</p><p><strong>Alternativa E (Pneumotórax):</strong> O raio X de tórax normal e ausência de assimetria clínica tornam esta hipótese improvável.</p><p>O diagnóstico baseia-se na tríade clínica (dispneia súbita, dor torácica, hipoxemia) somada ao fator de risco trombótico (trombose venosa profunda confirmada). A conduta imediata inclui oxigenoterapia para corrigir hipoxemia e anticoagulação para prevenir expansão do trombo e novos episódios. Este caso representa urgência médica que requer reconhecimento rápido para reduzir morbimortalidade.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_TromboembolismoPulmonarTep"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-37"
+    },
+    {
+      "numero": "Q39",
+      "enunciado": "Assinale a alternativa correta em relação ao cuidado a ser oferecido a pacientes idosos hospitalizados:",
+      "alternativas": [
+        "O uso de antiácidos pode reduzir o risco de pneumonias hospitalares em idosos com déficit de deglutição.",
+        "Pacientes com alto risco de delirium podem se beneficiar de doses profiláticas de antipsicóticos.",
+        "A oferta de alimentação via sonda nasogástrica ou nasoenteral reduz a mortalidade em pacientes com demência avançada.",
+        "O uso de contenções físicas e farmacológicas pode aumentar o risco de quedas.",
+        "Todo paciente com mais de 75 anos deve receber profilaxia para tromboembolismo venoso."
+      ],
+      "correta": 3,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC aborda cuidados especializados em geriatria hospitalar, tema cada vez mais relevante na prática clínica.</strong></p><p>A questão aborda práticas potencialmente prejudiciais em idosos hospitalizados, exigindo conhecimento das evidências atuais sobre segurança do paciente geriátrico.</p><p><strong>A resposta correta é D - O uso de contenções físicas e farmacológicas pode aumentar o risco de quedas.</strong></p><p>Vamos analisar todas as alternativas:</p><p><strong>Alternativa A:</strong> Falsa. Antiácidos aumentam o risco de pneumonia hospitalar por aspiração, não reduzem. A alcalinização gástrica facilita crescimento bacteriano e risco de aspiração em pacientes com déficit de deglutição.</p><p><strong>Alternativa B:</strong> Falsa. Antipsicóticos profiláticos em pacientes de alto risco de delirium aumentam a mortalidade e não previnem delirium. A prevenção deve ser não-farmacológica.</p><p><strong>Alternativa C:</strong> Falsa. Alimentação por sonda em demência avançada não reduz mortalidade e pode aumentar risco de pneumonia aspirativa. A decisão deve ser individualizada, considerando conforto e qualidade de vida.</p><p><strong>Alternativa D:</strong> Verdadeira. Contenções aumentam risco de quedas por imobilização, fraqueza muscular e agitação rebote. Além disso, estão associadas a piores desfechos clínicos.</p><p><strong>Alternativa E:</strong> Falsa. Profilaxia de tromboembolismo deve ser individualizada baseada em fatores de risco, não em idade cronológica isoladamente. Nem todo idoso de 75+ anos precisa de profilaxia.</p><p>Esta questão destaca a importância de aplicar medicina baseada em evidências no cuidado geriátrico, evitando práticas que podem ser prejudiciais em vez de benéficas.</p>",
+      "filterIds": [
+        "MedicinaPreventiva"
+      ],
+      "subFilterIds": [
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade",
+        "MedicinaPreventiva_MedicinaDeFamiliaEComunidade_SaudeDoIdosoGeriatria"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-38"
+    },
+    {
+      "numero": "Q40",
+      "enunciado": "Paciente masculino, 35 anos, não tabagista, chega à consulta ambulatorial com queixa de dor torácica ventilatório dependente à direita e dispneia leve aos esforços, progressiva nos últimos 60 dias. Relata ainda sensação febril e tosse seca. Ao exame apresenta febre, ausência de MV, de ausculta da voz e de frêmito tóracovocal em terço inferior à D, macicez à percussão, assimetria com abaulamento discreto do HTD. O RX tórax confirmou sua suspeita clínica baseada na semiologia descrita. Considerando o quadro, qual a melhor conduta inicial?",
+      "alternativas": [
+        "Drenagem torácica.",
+        "Exame de escarro e PPD.",
+        "Prova de função pulmonar.",
+        "Tomografia computadorizada de tórax.",
+        "Toracocentese diagnóstica guiada por ultrassonografia."
+      ],
+      "correta": 4,
+      "professor_comment": "<p><strong>Esta questão da banca UFSC avalia seu conhecimento sobre investigação diagnóstica de derrame pleural, integrando semiologia e conduta médica adequada.</strong></p><p>O paciente apresenta quadro típico de derrame pleural: dor torácica ventilatório-dependente, dispneia, febre, tosse seca, e achados físicos característicos (ausência de MV, macicez, abaulamento discreto do hemitórax direito).</p><p><strong>A resposta correta é E - Toracocentese diagnóstica guiada por ultrassonografia.</strong></p><p>A toracocentese é o procedimento inicial mais adequado porque:</p><p>1. Permite análise imediata do líquido pleural (exsudato vs transudato, citologia, culturas)</p><p>2. Guia a investigação posterior baseada nos resultados</p><p>3. É procedimento de baixo risco quando realizado com orientação ultrassonográfica</p><p>Vamos analisar as alternativas incorretas:</p><p><strong>Alternativa A (Drenagem torácica):</strong> A drenagem só deve ser realizada após confirmação diagnóstica. Não é conduta inicial sem investigação previa do líquido.</p><p><strong>Alternativa B (Exame de escarro e PPD):</strong> Esses exames podem ser úteis em fases posteriores, mas não substituem a análise do líquido pleural. O PPD não tem sensibilidade suficiente para diagnóstico.</p><p><strong>Alternativa C (Prova de função pulmonar):</strong> Não é útil no contexto agudo de derrame pleural significativo. A PFP seria prejudicada pelo derrame e não alteraria a conduta inicial.</p><p><strong>Alternativa D (TC de tórax):</strong> Pode ser útil em casos selecionados, mas a toracocentese com análise do líquido pleural é mais custo-efetiva como primeira abordagem e fornece informações diagnósticas diretas.</p><p>A ultrassonografia é fundamental para guiar o procedimento com segurança, reduzindo complicações e aumentando a taxa de sucesso. O diagnóstico etiológico baseado no líquido pleural direciona todo o tratamento subsequente.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_DerramePleural"
+      ],
+      "tags": [
+        "UFSC2020R3CM",
+        "UFSC",
+        "R3CM",
+        "SC",
+        "2020",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762879856541-39"
+    }
+  ]
+}

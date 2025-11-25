@@ -8,13 +8,13 @@ export class GetFilterByIdUseCase {
     if (!id) {
       throw new Error("O ID do filtro é obrigatório");
     }
-    
+
     const filter = await this.filterRepository.getById(id);
-    
+
     if (!filter) {
       throw new Error(`Filtro com ID ${id} não encontrado`);
     }
-    
+
     return filter;
   }
-} 
+}

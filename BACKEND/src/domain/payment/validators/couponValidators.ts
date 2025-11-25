@@ -14,7 +14,9 @@ export const couponValidators = {
       .isLength({ min: 3, max: 20 })
       .withMessage('Código deve ter entre 3 e 20 caracteres')
       .matches(/^[A-Z0-9_-]+$/)
-      .withMessage('Código deve conter apenas letras maiúsculas, números, underscore e hífen'),
+      .withMessage(
+        'Código deve conter apenas letras maiúsculas, números, underscore e hífen',
+      ),
     body('description')
       .optional()
       .isLength({ max: 500 })
@@ -23,7 +25,9 @@ export const couponValidators = {
       .notEmpty()
       .withMessage('Tipo de desconto é obrigatório')
       .isIn(['percentage', 'fixed_amount'])
-      .withMessage('Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount'),
+      .withMessage(
+        'Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount',
+      ),
     body('discountValue')
       .notEmpty()
       .withMessage('Valor do desconto é obrigatório')
@@ -36,8 +40,13 @@ export const couponValidators = {
     body('maxUses')
       .optional()
       .isInt({ min: 1 })
-      .withMessage('Número máximo de usos deve ser um número inteiro maior que zero'),
-    body('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
+      .withMessage(
+        'Número máximo de usos deve ser um número inteiro maior que zero',
+      ),
+    body('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
     body('applicablePlanIds')
       .optional()
       .isArray()
@@ -47,14 +56,22 @@ export const couponValidators = {
   /**
    * Validador para obter cupom por ID
    */
-  getCouponById: [param('couponId').notEmpty().withMessage('ID do cupom é obrigatório')],
+  getCouponById: [
+    param('couponId').notEmpty().withMessage('ID do cupom é obrigatório'),
+  ],
 
   /**
    * Validador para listar cupons
    */
   listCoupons: [
-    query('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
-    query('createdBy').optional().isString().withMessage('createdBy deve ser uma string'),
+    query('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
+    query('createdBy')
+      .optional()
+      .isString()
+      .withMessage('createdBy deve ser uma string'),
     query('applicablePlanId')
       .optional()
       .isString()
@@ -73,7 +90,9 @@ export const couponValidators = {
     body('discountType')
       .optional()
       .isIn(['percentage', 'fixed_amount'])
-      .withMessage('Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount'),
+      .withMessage(
+        'Tipo de desconto inválido. Valores permitidos: percentage, fixed_amount',
+      ),
     body('discountValue')
       .optional()
       .isFloat({ min: 0.01 })
@@ -85,8 +104,13 @@ export const couponValidators = {
     body('maxUses')
       .optional()
       .isInt({ min: 1 })
-      .withMessage('Número máximo de usos deve ser um número inteiro maior que zero'),
-    body('isActive').optional().isBoolean().withMessage('isActive deve ser um valor booleano'),
+      .withMessage(
+        'Número máximo de usos deve ser um número inteiro maior que zero',
+      ),
+    body('isActive')
+      .optional()
+      .isBoolean()
+      .withMessage('isActive deve ser um valor booleano'),
     body('applicablePlanIds')
       .optional()
       .isArray()
@@ -96,13 +120,18 @@ export const couponValidators = {
   /**
    * Validador para remover cupom
    */
-  deleteCoupon: [param('couponId').notEmpty().withMessage('ID do cupom é obrigatório')],
+  deleteCoupon: [
+    param('couponId').notEmpty().withMessage('ID do cupom é obrigatório'),
+  ],
 
   /**
    * Validador para validar cupom
    */
   validateCoupon: [
     body('code').notEmpty().withMessage('Código do cupom é obrigatório'),
-    body('planId').optional().isString().withMessage('ID do plano deve ser uma string'),
+    body('planId')
+      .optional()
+      .isString()
+      .withMessage('ID do plano deve ser uma string'),
   ],
 };

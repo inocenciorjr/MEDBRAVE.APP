@@ -35,14 +35,22 @@ export const paymentValidators = {
   /**
    * Validador para obter pagamento por ID
    */
-  getPaymentById: [param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório')],
+  getPaymentById: [
+    param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório'),
+  ],
 
   /**
    * Validador para listar pagamentos
    */
   listPayments: [
-    query('userId').optional().isString().withMessage('ID do usuário deve ser uma string'),
-    query('planId').optional().isString().withMessage('ID do plano deve ser uma string'),
+    query('userId')
+      .optional()
+      .isString()
+      .withMessage('ID do usuário deve ser uma string'),
+    query('planId')
+      .optional()
+      .isString()
+      .withMessage('ID do plano deve ser uma string'),
     query('status')
       .optional()
       .isIn(Object.values(PaymentStatus))
@@ -59,7 +67,10 @@ export const paymentValidators = {
       .optional()
       .isISO8601()
       .withMessage('Data inicial deve estar no formato ISO8601'),
-    query('endDate').optional().isISO8601().withMessage('Data final deve estar no formato ISO8601'),
+    query('endDate')
+      .optional()
+      .isISO8601()
+      .withMessage('Data final deve estar no formato ISO8601'),
     query('limit')
       .optional()
       .isInt({ min: 1, max: 100 })
@@ -73,7 +84,9 @@ export const paymentValidators = {
   /**
    * Validador para processar pagamento
    */
-  processPayment: [param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório')],
+  processPayment: [
+    param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório'),
+  ],
 
   /**
    * Validador para cancelar pagamento

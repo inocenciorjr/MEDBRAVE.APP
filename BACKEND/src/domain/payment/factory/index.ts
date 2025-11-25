@@ -10,16 +10,16 @@ import { createUserPlanRoutes } from '../routes/userPlanRoutes';
 import { createCouponRoutes } from '../routes/couponRoutes';
 import { createInvoiceRoutes } from '../routes/invoiceRoutes';
 
-// Importar serviços
-import { FirebasePaymentService } from '../services/FirebasePaymentService';
-import { FirebasePixPaymentService } from '../services/FirebasePixPaymentService';
-import { FirebaseCreditCardPaymentService } from '../services/FirebaseCreditCardPaymentService';
-import { FirebaseUserPlanService } from '../services/FirebaseUserPlanService';
-import { FirebasePlanService } from '../services/FirebasePlanService';
-import { FirebaseCouponService } from '../services/FirebaseCouponService';
-import { FirebaseInvoiceService } from '../services/FirebaseInvoiceService';
-import { FirebasePaymentNotificationService } from '../../notifications/services/FirebasePaymentNotificationService';
-import { IPaymentNotificationService } from '../../notifications/interfaces/IPaymentNotificationService';
+// Importar serviços Supabase
+import { SupabasePaymentService } from '../../../infra/payment/supabase/SupabasePaymentService';
+import { SupabasePixPaymentService } from '../../../infra/payment/supabase/SupabasePixPaymentService';
+import { SupabaseCreditCardPaymentService } from '../../../infra/payment/supabase/SupabaseCreditCardPaymentService';
+import { SupabaseUserPlanService } from '../../../infra/payment/supabase/SupabaseUserPlanService';
+import { SupabasePlanService } from '../../../infra/payment/supabase/SupabasePlanService';
+import { SupabaseCouponService } from '../../../infra/payment/supabase/SupabaseCouponService';
+import { SupabaseInvoiceService } from '../../../infra/payment/supabase/SupabaseInvoiceService';
+import { SupabasePaymentNotificationService } from '../../../infra/notifications/supabase/SupabasePaymentNotificationService';
+// import { IPaymentNotificationService } from '../../notifications/interfaces/IPaymentNotificationService';
 
 /**
  * Cria o módulo de pagamentos
@@ -29,33 +29,57 @@ export const createPaymentModule = (): Router => {
   const router = Router();
 
   // Inicializar serviços
-  const planService = new FirebasePlanService();
-  const userPlanService = new FirebaseUserPlanService();
-  const pixPaymentService = new FirebasePixPaymentService();
-  const creditCardPaymentService = new FirebaseCreditCardPaymentService();
+  const planService = new SupabasePlanService(supabase);
+  const userPlanService = new SupabaseUserPlanService(supabase, planService);
+  const pixPaymentService = new SupabasePixPaymentService(supabase);
+  const creditCardPaymentService = new SupabaseCreditCardPaymentService(supabase);
   // Mock mínimo para INotificationService, apenas para evitar erro de tipo em tempo de compilação
   const notificationServiceMock = {
-    createNotification: async () => { throw new Error('Not implemented'); },
-    getNotificationById: async () => { throw new Error('Not implemented'); },
-    getUserNotifications: async () => { throw new Error('Not implemented'); },
-    markNotificationAsRead: async () => { throw new Error('Not implemented'); },
-    markAllNotificationsAsRead: async () => { throw new Error('Not implemented'); },
-    updateNotification: async () => { throw new Error('Not implemented'); },
-    deleteNotification: async () => { throw new Error('Not implemented'); },
-    deleteAllUserNotifications: async () => { throw new Error('Not implemented'); },
-    cleanupExpiredNotifications: async () => { throw new Error('Not implemented'); },
-    sendNotificationToMultipleUsers: async () => { throw new Error('Not implemented'); },
-    countUnreadNotifications: async () => { throw new Error('Not implemented'); },
-    getUnreadNotificationsByTypeAndPriority: async () => { throw new Error('Not implemented'); },
+    createNotification: async () => {
+      throw new Error('Not implemented');
+    },
+    getNotificationById: async () => {
+      throw new Error('Not implemented');
+    },
+    getUserNotifications: async () => {
+      throw new Error('Not implemented');
+    },
+    markNotificationAsRead: async () => {
+      throw new Error('Not implemented');
+    },
+    markAllNotificationsAsRead: async () => {
+      throw new Error('Not implemented');
+    },
+    updateNotification: async () => {
+      throw new Error('Not implemented');
+    },
+    deleteNotification: async () => {
+      throw new Error('Not implemented');
+    },
+    deleteAllUserNotifications: async () => {
+      throw new Error('Not implemented');
+    },
+    cleanupExpiredNotifications: async () => {
+      throw new Error('Not implemented');
+    },
+    sendNotificationToMultipleUsers: async () => {
+      throw new Error('Not implemented');
+    },
+    countUnreadNotifications: async () => {
+      throw new Error('Not implemented');
+    },
+    getUnreadNotificationsByTypeAndPriority: async () => {
+      throw new Error('Not implemented');
+    },
   };
-  const paymentNotificationService: IPaymentNotificationService = new FirebasePaymentNotificationService(notificationServiceMock);
-  const paymentService = new FirebasePaymentService(
+  const paymentNotificationService = new SupabasePaymentNotificationService(notificationServiceMock);
+  const paymentService = new SupabasePaymentService(
+    supabase,
     userPlanService,
     pixPaymentService,
-    paymentNotificationService,
   );
-  const couponService = new FirebaseCouponService();
-  const invoiceService = new FirebaseInvoiceService();
+  const couponService = new SupabaseCouponService(supabase);
+  const invoiceService = new SupabaseInvoiceService(paymentService);
 
   // Inicializar controladores
   const paymentController = new PaymentController(
@@ -65,7 +89,10 @@ export const createPaymentModule = (): Router => {
     paymentNotificationService,
   );
   const planController = new PlanController(planService);
-  const userPlanController = new UserPlanController(userPlanService, planService);
+  const userPlanController = new UserPlanController(
+    userPlanService,
+    planService,
+  );
   const couponController = new CouponController(couponService);
   const invoiceController = new InvoiceController(invoiceService);
 
@@ -78,3 +105,4 @@ export const createPaymentModule = (): Router => {
 
   return router;
 };
+import { supabase } from '../../../config';

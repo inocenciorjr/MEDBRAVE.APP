@@ -1,10 +1,10 @@
-import { FirebaseUserStatisticsService } from '../services/FirebaseUserStatisticsService';
+import { UserStatisticsService } from '../../../infra/userStatistics/UserStatisticsService';
 import { IUserStatisticsService } from '../interfaces/IUserStatisticsService';
-import { firestore } from '../../../config/firebaseAdmin';
+import { supabase } from '../../../config/supabaseAdmin';
 
 /**
  * Factory para criar instância do serviço de estatísticas de usuário
  */
 export function createUserStatisticsFactory(): IUserStatisticsService {
-  return new FirebaseUserStatisticsService(firestore);
-} 
+  return new UserStatisticsService(supabase);
+}

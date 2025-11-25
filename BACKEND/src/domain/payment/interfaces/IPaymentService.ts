@@ -4,7 +4,7 @@ import {
   UpdatePaymentPayload,
   PaymentProcessResult,
   ListPaymentsOptions,
-  PaginatedPaymentsResult
+  PaginatedPaymentsResult,
 } from '../types';
 
 /**
@@ -45,7 +45,10 @@ export interface IPaymentService {
    * @param updates Dados de atualização
    * @returns Pagamento atualizado ou null se o pagamento não foi encontrado
    */
-  updatePayment(paymentId: string, updates: UpdatePaymentPayload): Promise<Payment | null>;
+  updatePayment(
+    paymentId: string,
+    updates: UpdatePaymentPayload,
+  ): Promise<Payment | null>;
 
   /**
    * Aprova um pagamento
@@ -56,10 +59,10 @@ export interface IPaymentService {
    * @returns Pagamento aprovado ou null se o pagamento não foi encontrado
    */
   approvePayment(
-    paymentId: string, 
-    externalId?: string, 
-    transactionData?: Record<string, any>, 
-    receiptUrl?: string
+    paymentId: string,
+    externalId?: string,
+    transactionData?: Record<string, any>,
+    receiptUrl?: string,
   ): Promise<Payment | null>;
 
   /**
@@ -70,9 +73,9 @@ export interface IPaymentService {
    * @returns Pagamento rejeitado ou null se o pagamento não foi encontrado
    */
   rejectPayment(
-    paymentId: string, 
-    failureReason: string, 
-    transactionData?: Record<string, any>
+    paymentId: string,
+    failureReason: string,
+    transactionData?: Record<string, any>,
   ): Promise<Payment | null>;
 
   /**
@@ -84,10 +87,10 @@ export interface IPaymentService {
    * @returns Pagamento reembolsado ou null se o pagamento não foi encontrado
    */
   refundPayment(
-    paymentId: string, 
-    refundReason: string, 
-    gatewayTransactionId?: string, 
-    adminUserId?: string
+    paymentId: string,
+    refundReason: string,
+    gatewayTransactionId?: string,
+    adminUserId?: string,
   ): Promise<Payment | null>;
 
   /**
@@ -127,5 +130,9 @@ export interface IPaymentService {
    * @param data Dados do evento
    * @returns Resultado do processamento do webhook
    */
-  handlePaymentWebhook(provider: string, eventType: string, data: any): Promise<any>;
+  handlePaymentWebhook(
+    provider: string,
+    eventType: string,
+    data: any,
+  ): Promise<any>;
 }

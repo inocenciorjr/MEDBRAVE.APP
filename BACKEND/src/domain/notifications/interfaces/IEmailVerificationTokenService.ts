@@ -29,13 +29,17 @@ export interface IEmailVerificationTokenService {
    * Busca um token de verificau00e7u00e3o de email pelo ID
    * @param tokenId ID do token
    */
-  getEmailVerificationTokenById(tokenId: string): Promise<EmailVerificationToken | null>;
+  getEmailVerificationTokenById(
+    tokenId: string,
+  ): Promise<EmailVerificationToken | null>;
 
   /**
    * Busca um token de verificau00e7u00e3o de email pelo valor do token
    * @param token Valor do token
    */
-  getEmailVerificationTokenByValue(token: string): Promise<EmailVerificationToken | null>;
+  getEmailVerificationTokenByValue(
+    token: string,
+  ): Promise<EmailVerificationToken | null>;
 
   /**
    * Busca tokens ativos para um usuu00e1rio e tipo especu00edficos
@@ -59,14 +63,19 @@ export interface IEmailVerificationTokenService {
    * Verifica e utiliza um token de verificau00e7u00e3o de email
    * @param token Valor do token
    */
-  verifyAndUseEmailVerificationToken(token: string): Promise<EmailVerificationToken | null>;
+  verifyAndUseEmailVerificationToken(
+    token: string,
+  ): Promise<EmailVerificationToken | null>;
 
   /**
    * Invalida todos os tokens de um usuu00e1rio
    * @param userId ID do usuu00e1rio
    * @param type Tipo do token
    */
-  invalidateAllUserTokens(userId: string, type: EmailVerificationToken['type']): Promise<number>;
+  invalidateAllUserTokens(
+    userId: string,
+    type: EmailVerificationToken['type'],
+  ): Promise<number>;
 
   /**
    * Exclui um token de verificau00e7u00e3o de email
@@ -78,5 +87,7 @@ export interface IEmailVerificationTokenService {
    * Limpa tokens de verificau00e7u00e3o de email expirados
    * @param olderThanDays Dias de retenu00e7u00e3o
    */
-  cleanupExpiredEmailVerificationTokens(olderThanDays?: number): Promise<number>;
+  cleanupExpiredEmailVerificationTokens(
+    olderThanDays?: number,
+  ): Promise<number>;
 }

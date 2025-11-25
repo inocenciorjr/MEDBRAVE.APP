@@ -23,7 +23,9 @@ export class GetNotificationPreferencesUseCase {
 
     // Verificar se o usuário já tem preferências
     const existingPreferences =
-      await this.notificationPreferencesRepository.getPreferencesByUserId(userId);
+      await this.notificationPreferencesRepository.getPreferencesByUserId(
+        userId,
+      );
 
     if (existingPreferences) {
       return existingPreferences;
@@ -32,12 +34,12 @@ export class GetNotificationPreferencesUseCase {
     // Se não tiver, criar preferências padrão
     const defaultPreferences: NotificationPreferences = {
       id: '',
-      userId,
+      user_id: userId,
       channels: {
         email: true,
         push: true,
         sms: false,
-        inApp: true,
+        in_app: true,
       },
       types: {
         [NotificationType.GENERAL]: { enabled: true },
@@ -50,14 +52,16 @@ export class GetNotificationPreferencesUseCase {
         [NotificationType.REMINDER]: { enabled: true },
         [NotificationType.ALERT]: { enabled: true },
       },
-      doNotDisturb: {
+      do_not_disturb: {
         enabled: false,
       },
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      created_at: new Date(),
+      updated_at: new Date(),
     };
 
     // Persistir e retornar as preferências padrão
-    return this.notificationPreferencesRepository.savePreferences(defaultPreferences);
+    return this.notificationPreferencesRepository.savePreferences(
+      defaultPreferences,
+    );
   }
 }

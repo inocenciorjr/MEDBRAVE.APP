@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
-import { deckService } from '../services/deckService';
-import { FirebaseFlashcardRepository } from '../../../../infra/repositories/firebase/FirebaseFlashcardRepository';
+import { deckService } from '../services';
 import { handleServiceError } from '../../../../utils/errorHandler';
 import { validateSchema } from '../../../../utils/validation';
 import {
@@ -8,12 +7,14 @@ import {
   updateDeckSchema,
   listDecksSchema,
 } from '../validation/deckSchemas';
+import { container } from '../../../../shared/container';
+import { IFlashcardRepository } from '../repositories/IFlashcardRepository';
 
 export class DeckController {
-  private flashcardRepository: FirebaseFlashcardRepository;
+  private flashcardRepository: IFlashcardRepository;
 
   constructor() {
-    this.flashcardRepository = new FirebaseFlashcardRepository();
+    this.flashcardRepository = container.resolve<IFlashcardRepository>('FlashcardRepository');
   }
   async createDeck(req: Request, res: Response): Promise<void> {
     try {
@@ -25,7 +26,7 @@ export class DeckController {
 
       const payload = {
         ...req.body,
-        userId,
+        user_id: userId,
       };
 
       const { isValid, error } = validateSchema(createDeckSchema, payload);
@@ -52,7 +53,10 @@ export class DeckController {
       }
 
       // Usar flashcardRepository.getDeckById que retorna DeckWithCards
-      const deckWithCards = await this.flashcardRepository.getDeckById(id, userId);
+      const deckWithCards = await this.flashcardRepository.getDeckById(
+        id,
+        userId,
+      );
 
       if (!deckWithCards) {
         res.status(404).json({ message: 'Deck não encontrado' });
@@ -60,7 +64,7 @@ export class DeckController {
       }
 
       // Verificar se o usuário tem permissão para acessar o deck
-      if (deckWithCards.userId !== userId && !deckWithCards.isPublic) {
+      if (deckWithCards.user_id !== userId && !deckWithCards.is_public) {
         res.status(403).json({ message: 'Acesso negado ao deck' });
         return;
       }
@@ -126,15 +130,20 @@ export class DeckController {
         return;
       }
 
-      const { isValid, error, value } = validateSchema(listDecksSchema, req.query);
+      const { isValid, error, value } = validateSchema(
+        listDecksSchema,
+        req.query,
+      );
       if (!isValid) {
-        res.status(400).json({ message: 'Parâmetros de consulta inválidos', errors: error });
+        res
+          .status(400)
+          .json({ message: 'Parâmetros de consulta inválidos', errors: error });
         return;
       }
 
       const options = {
         ...(value && typeof value === 'object' ? value : {}),
-        userId,
+        user_id: userId,
       };
 
       const result = await deckService.listDecks(options);
@@ -170,9 +179,14 @@ export class DeckController {
         return;
       }
 
-      const { isValid, error, value } = validateSchema(listDecksSchema, req.query);
+      const { isValid, error, value } = validateSchema(
+        listDecksSchema,
+        req.query,
+      );
       if (!isValid) {
-        res.status(400).json({ message: 'Parâmetros de consulta inválidos', errors: error });
+        res
+          .status(400)
+          .json({ message: 'Parâmetros de consulta inválidos', errors: error });
         return;
       }
 
@@ -185,15 +199,20 @@ export class DeckController {
 
   async listPublicDecks(req: Request, res: Response): Promise<void> {
     try {
-      const { isValid, error, value } = validateSchema(listDecksSchema, req.query);
+      const { isValid, error, value } = validateSchema(
+        listDecksSchema,
+        req.query,
+      );
       if (!isValid) {
-        res.status(400).json({ message: 'Parâmetros de consulta inválidos', errors: error });
+        res
+          .status(400)
+          .json({ message: 'Parâmetros de consulta inválidos', errors: error });
         return;
       }
 
       const options = {
         ...(value && typeof value === 'object' ? value : {}),
-        isPublic: true,
+        is_public: true,
       };
 
       const result = await deckService.listDecks(options);
@@ -214,7 +233,7 @@ export class DeckController {
       }
 
       const result = await deckService.toggleDeckVisibility(id, userId);
-      
+
       if (!result) {
         res.status(404).json({ message: 'Deck não encontrado' });
         return;
@@ -269,7 +288,7 @@ export class DeckController {
 
       const searchParams = {
         ...req.query,
-        userId
+        user_id: userId,
       };
 
       const result = await deckService.searchDecks(searchParams);

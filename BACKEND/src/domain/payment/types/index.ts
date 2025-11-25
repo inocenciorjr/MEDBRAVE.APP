@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase dependency - using native Date type
 
 // --- Payment Enums ---
 
@@ -100,7 +100,7 @@ export interface Payment {
   transactionData: any | null;
   metadata: any | null;
   pixCode: string | null;
-  pixExpirationDate: Timestamp | null;
+  pixExpirationDate: Date | null;
   cardLastFourDigits: string | null;
   cardBrand: string | null;
   installments: number | null;
@@ -109,16 +109,16 @@ export interface Payment {
   refundReason: string | null;
   chargebackReason: string | null;
   cancellationReason: string | null;
-  processedAt: Timestamp | null;
-  paidAt: Timestamp | null;
-  refundedAt: Timestamp | null;
-  cancelledAt: Timestamp | null;
-  chargebackAt: Timestamp | null;
+  processedAt: Date | null;
+  paidAt: Date | null;
+  refundedAt: Date | null;
+  cancelledAt: Date | null;
+  chargebackAt: Date | null;
   processedBy: string | null;
   refundedBy: string | null;
   refundTransactionId: string | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface CreditCardPayment {
@@ -140,8 +140,8 @@ export interface CreditCardPayment {
   refundId: string | null;
   refundAmount: number | null;
   status: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface PixPayment {
@@ -151,10 +151,10 @@ export interface PixPayment {
   qrCode: string;
   qrCodeUrl: string;
   copyPasteText: string;
-  expirationDate: Timestamp;
+  expirationDate: Date;
   status: 'ACTIVE' | 'EXPIRED' | 'COMPLETED' | 'CANCELLED';
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface Coupon {
@@ -163,14 +163,14 @@ export interface Coupon {
   description?: string | null;
   discountType: 'percentage' | 'fixed_amount';
   discountValue: number;
-  expirationDate?: Timestamp | null;
+  expirationDate?: Date | null;
   maxUses?: number | null;
   timesUsed: number;
   isActive: boolean;
   applicablePlanIds?: string[] | null;
   createdBy: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface PaymentNotification {
@@ -181,11 +181,11 @@ export interface PaymentNotification {
   title: string;
   message: string;
   isRead: boolean;
-  readAt?: Timestamp | null;
+  readAt?: Date | null;
   relatedId?: string | null;
   metadata?: Record<string, any> | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface PlanLimits {
@@ -193,20 +193,20 @@ export interface PlanLimits {
   maxQuestionsPerDay: number | null; // null = ilimitado
   maxQuestionListsPerDay: number | null;
   maxSimulatedExamsPerMonth: number | null;
-  
+
   // FSRS/SRS
   maxFSRSCards: number | null;
   maxReviewsPerDay: number | null;
-  
+
   // Flashcards
   maxFlashcardsCreated: number | null;
   maxFlashcardDecks: number | null;
-  
+
   // IA Features
   maxPulseAIQueriesPerDay: number | null;
   maxQuestionExplanationsPerDay: number | null;
   maxContentGenerationPerMonth: number | null;
-  
+
   // Funcionalidades Premium
   canExportData: boolean;
   canCreateCustomLists: boolean;
@@ -215,7 +215,7 @@ export interface PlanLimits {
   canAccessMentorship: boolean;
   canUseOfflineMode: boolean;
   canCustomizeInterface: boolean;
-  
+
   // Suporte
   supportLevel: 'basic' | 'priority' | 'premium';
   maxSupportTicketsPerMonth: number | null;
@@ -233,33 +233,33 @@ export interface Plan {
   interval?: PlanInterval;
   isPublic?: boolean;
   metadata?: Record<string, any> | null;
-  
+
   // Novos campos para limites
   limits: PlanLimits;
   badge?: string; // "POPULAR", "MELHOR CUSTO-BENEFÍCIO", etc.
   highlight?: boolean; // Destacar na interface
-  
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface UserPlan {
   id: string;
   userId: string;
   planId: string;
-  startDate: Timestamp;
-  endDate: Timestamp;
+  startDate: Date;
+  endDate: Date;
   status: UserPlanStatus;
   lastPaymentId: string | null;
   paymentMethod: PaymentMethod;
   autoRenew: boolean;
   metadata?: Record<string, any> | null;
   cancellationReason: string | null;
-  cancelledAt: Timestamp | null;
-  nextBillingDate: Timestamp | null;
-  trialEndsAt: Timestamp | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  cancelledAt: Date | null;
+  nextBillingDate: Date | null;
+  trialEndsAt: Date | null;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface Invoice {
@@ -274,15 +274,15 @@ export interface Invoice {
   discountReason: string | null;
   netAmount: number;
   taxAmount: number;
-  issueDate: Timestamp;
-  dueDate: Timestamp | null;
-  paidAt: Timestamp | null;
+  issueDate: Date;
+  dueDate: Date | null;
+  paidAt: Date | null;
   paidAmount: number;
   paymentId: string | null;
   notes: string | null;
   metadata: any | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface InvoiceItem {
@@ -570,8 +570,8 @@ export interface CreateInvoicePayload {
   discountAmount?: number;
   discountReason?: string;
   taxAmount?: number;
-  issueDate?: Timestamp | Date;
-  dueDate?: Timestamp | Date;
+  issueDate?: Date;
+  dueDate?: Date;
   notes?: string;
   metadata?: any;
 }
@@ -582,9 +582,9 @@ export interface UpdateInvoicePayload {
   discountAmount?: number;
   discountReason?: string;
   taxAmount?: number;
-  issueDate?: Timestamp | Date;
-  dueDate?: Timestamp | Date;
-  paidAt?: Timestamp | Date;
+  issueDate?: Date;
+  dueDate?: Date;
+  paidAt?: Date;
   paidAmount?: number;
   paymentId?: string;
   notes?: string;

@@ -1,6 +1,6 @@
 import { Response, NextFunction } from 'express';
 import { AppError } from '../../../utils/errors';
-import { AuthenticatedRequest } from './auth.middleware';
+import { AuthenticatedRequest } from './supabaseAuth.middleware';
 import { UserRole } from '../../user/types';
 import logger from '../../../utils/logger';
 
@@ -13,27 +13,37 @@ import logger from '../../../utils/logger';
  * @param allowedRoles Array com as roles permitidas para acessar o recurso
  */
 export const roleMiddleware = (allowedRoles: UserRole[]) => {
-  return (req: AuthenticatedRequest, _res: Response, next: NextFunction): void => {
+  return (
+    req: AuthenticatedRequest,
+    _res: Response,
+    next: NextFunction,
+  ): void => {
     try {
       // Verifica se o usuário está autenticado
       if (!req.user) {
-        throw new AppError(401, 'Autenticação necessária para acessar este recurso');
+        throw new AppError(
+          401,
+          'Autenticação necessária para acessar este recurso',
+        );
       }
 
       // Se ADMIN estiver presente nas roles permitidas, verificar se o usuário é admin
-      const isAdmin = req.user.role === UserRole.ADMIN;
+      const isAdmin = req.user.user_role === UserRole.ADMIN;
       if (allowedRoles.includes(UserRole.ADMIN) && isAdmin) {
         return next();
       }
 
       // Verifica se a role do usuário está na lista de roles permitidas
-      const hasAllowedRole = allowedRoles.includes(req.user.role as UserRole);
+      const hasAllowedRole = allowedRoles.includes(req.user.user_role as UserRole);
 
       if (!hasAllowedRole) {
         logger.warn(
-          `Tentativa de acesso não autorizado: usuário ${req.user.id} com role ${req.user.role} tentou acessar recurso restrito a ${allowedRoles.join(', ')}`,
+          `Tentativa de acesso não autorizado: usuário ${req.user.id} com role ${req.user.user_role} tentou acessar recurso restrito a ${allowedRoles.join(', ')}`,
         );
-        throw new AppError(403, 'Você não tem permissão para acessar este recurso');
+        throw new AppError(
+          403,
+          'Você não tem permissão para acessar este recurso',
+        );
       }
 
       next();
@@ -84,15 +94,22 @@ export const teacherMiddleware = (
 export const ownerOrAdminMiddleware = (
   getResourceUserId: (req: AuthenticatedRequest) => string | Promise<string>,
 ) => {
-  return async (req: AuthenticatedRequest, _res: Response, next: NextFunction): Promise<void> => {
+  return async (
+    req: AuthenticatedRequest,
+    _res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
     try {
       // Verifica se o usuário está autenticado
       if (!req.user) {
-        throw new AppError(401, 'Autenticação necessária para acessar este recurso');
+        throw new AppError(
+          401,
+          'Autenticação necessária para acessar este recurso',
+        );
       }
 
       // Se for admin, permite acesso
-      if (req.user.role === UserRole.ADMIN) {
+      if (req.user.user_role === UserRole.ADMIN) {
         return next();
       }
 
@@ -104,7 +121,10 @@ export const ownerOrAdminMiddleware = (
         logger.warn(
           `Tentativa de acesso não autorizado: usuário ${req.user.id} tentou acessar recurso do usuário ${resourceUserId}`,
         );
-        throw new AppError(403, 'Você não tem permissão para acessar este recurso');
+        throw new AppError(
+          403,
+          'Você não tem permissão para acessar este recurso',
+        );
       }
 
       next();

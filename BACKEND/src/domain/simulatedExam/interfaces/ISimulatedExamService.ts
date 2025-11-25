@@ -31,7 +31,10 @@ export interface ISimulatedExamService {
    * @param id ID do simulado
    * @param data Dados para atualização
    */
-  updateSimulatedExam(id: string, data: UpdateSimulatedExamPayload): Promise<SimulatedExam>;
+  updateSimulatedExam(
+    id: string,
+    data: UpdateSimulatedExamPayload,
+  ): Promise<SimulatedExam>;
 
   /**
    * Exclui um simulado
@@ -43,25 +46,43 @@ export interface ISimulatedExamService {
    * Lista simulados com filtros e paginação
    * @param options Opções de listagem e filtros
    */
-  listSimulatedExams(options: ListSimulatedExamsOptions): Promise<PaginatedSimulatedExamsResult>;
+  listSimulatedExams(
+    options: ListSimulatedExamsOptions,
+  ): Promise<PaginatedSimulatedExamsResult>;
 
   /**
    * Inicia um simulado para um usuário
    * @param data Dados para iniciar o simulado
    */
-  startSimulatedExam(data: StartSimulatedExamPayload): Promise<SimulatedExamResult>;
+  startSimulatedExam(
+    data: StartSimulatedExamPayload,
+  ): Promise<SimulatedExamResult>;
 
   /**
    * Submete uma resposta para uma questão do simulado
    * @param data Dados da resposta
    */
-  submitAnswer(data: SubmitSimulatedExamAnswerPayload): Promise<SimulatedExamAnswer>;
+  submitAnswer(
+    data: SubmitSimulatedExamAnswerPayload,
+  ): Promise<SimulatedExamAnswer>;
+
+  /**
+   * Atualiza um resultado de simulado
+   * @param resultId ID do resultado
+   * @param data Dados para atualização
+   */
+  updateSimulatedExamResult(
+    resultId: string,
+    data: { answers?: Record<string, string>; time_taken_seconds?: number }
+  ): Promise<SimulatedExamResult>;
 
   /**
    * Finaliza uma tentativa de simulado
    * @param data Dados para finalizar o simulado
    */
-  finishSimulatedExam(data: FinishSimulatedExamPayload): Promise<SimulatedExamResult>;
+  finishSimulatedExam(
+    data: FinishSimulatedExamPayload,
+  ): Promise<SimulatedExamResult>;
 
   /**
    * Obtém um resultado de simulado pelo ID
@@ -83,5 +104,7 @@ export interface ISimulatedExamService {
    * Obtém estatísticas de simulados de um usuário
    * @param userId ID do usuário
    */
-  getUserSimulatedExamStatistics(userId: string): Promise<SimulatedExamStatistics>;
+  getUserSimulatedExamStatistics(
+    userId: string,
+  ): Promise<SimulatedExamStatistics>;
 }

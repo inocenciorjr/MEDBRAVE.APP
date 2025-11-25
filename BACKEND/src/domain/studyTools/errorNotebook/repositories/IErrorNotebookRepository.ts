@@ -4,7 +4,13 @@ import {
   UpdateErrorNotebookPayload,
   ErrorNotebookStats,
 } from '../types';
-import { PaginationOptions } from '../../studySessions/types';
+// PaginationOptions moved to shared types
+export interface PaginationOptions {
+  page: number;
+  limit: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+}
 
 export interface ErrorNotebookFilters {
   search?: string;
@@ -26,7 +32,11 @@ export interface IErrorNotebookRepository {
     filters: ErrorNotebookFilters,
     pagination: PaginationOptions,
   ): Promise<PaginatedErrorNotebooks>;
-  update(id: string, userId: string, data: UpdateErrorNotebookPayload): Promise<ErrorNotebook | null>;
+  update(
+    id: string,
+    userId: string,
+    data: UpdateErrorNotebookPayload,
+  ): Promise<ErrorNotebook | null>;
   delete(id: string, userId: string): Promise<boolean>;
   getStats(id: string, userId: string): Promise<ErrorNotebookStats | null>;
   incrementEntryCount(id: string): Promise<void>;

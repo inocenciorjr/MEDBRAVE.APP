@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Removed Firebase dependency - using ISO string dates
 
 export enum SimulatedExamStatus {
   DRAFT = 'draft',
@@ -36,9 +36,9 @@ export interface SimulatedExam {
   status: SimulatedExamStatus;
   isPublic: boolean;
   createdBy: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  publishedAt?: Timestamp;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt?: string;
   tags: string[];
   startMessage?: string;
   endMessage?: string;
@@ -49,8 +49,8 @@ export interface SimulatedExamResult {
   id: string;
   examId: string;
   userId: string;
-  startedAt: Timestamp;
-  finishedAt?: Timestamp;
+  startedAt: string;
+  finishedAt?: string;
   score: number;
   totalPoints: number;
   correctAnswers: number;
@@ -70,7 +70,7 @@ export interface SimulatedExamAnswer {
   isCorrect: boolean;
   points: number;
   timeSpent?: number; // em segundos
-  answeredAt: Timestamp;
+  answeredAt: string;
 }
 
 export interface CreateSimulatedExamPayload {
@@ -125,6 +125,11 @@ export interface SubmitSimulatedExamAnswerPayload {
 
 export interface FinishSimulatedExamPayload {
   resultId: string;
+  answers?: Record<string, string>;
+  correctCount?: number;
+  incorrectCount?: number;
+  score?: number;
+  timeSpent?: number;
 }
 
 export interface ListSimulatedExamsOptions {
@@ -171,6 +176,6 @@ export interface SimulatedExamStatistics {
     examId: string;
     examTitle: string;
     score: number;
-    completedAt: Timestamp;
+    completedAt: string;
   };
 }

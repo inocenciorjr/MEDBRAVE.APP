@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { AuditLogController } from '../controllers/AuditLogController';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 import { adminMiddleware } from '../../auth/middleware/role.middleware';
 
 /**

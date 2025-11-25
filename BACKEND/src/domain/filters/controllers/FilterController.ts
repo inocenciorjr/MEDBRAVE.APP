@@ -23,8 +23,8 @@ export class FilterController {
         name,
         description,
         category: category as FilterCategory,
-        isGlobal: isGlobal === true,
-        filterType: (filterType as FilterType) || FilterType.CONTENT,
+        is_global: isGlobal === true,
+        filter_type: (filterType as FilterType) || FilterType.CONTENT,
         status: (status as FilterStatus) || FilterStatus.ACTIVE,
       });
 
@@ -54,11 +54,11 @@ export class FilterController {
 
       const filters = await this.listFiltersUseCase.execute({
         category: category as FilterCategory,
-        isGlobal: isGlobal === "true",
+        is_global: isGlobal === "true",
         status: status as FilterStatus,
         limit: limit ? parseInt(limit as string) : undefined,
-        orderBy: orderBy as keyof Filter,
-        orderDirection: orderDirection as "asc" | "desc",
+        order_by: (orderBy as keyof Filter) || 'created_at',
+        order_direction: (orderDirection as "asc" | "desc") || 'desc',
       });
 
       return res.status(200).json(filters);
@@ -69,8 +69,6 @@ export class FilterController {
     }
   }
 
-
-
   async update(req: Request, res: Response): Promise<Response> {
     try {
       const { id } = req.params;
@@ -79,8 +77,8 @@ export class FilterController {
       const filter = await this.updateFilterUseCase.execute(id, {
         name,
         description,
-        isGlobal: isGlobal === true,
-        filterType: filterType as FilterType,
+        is_global: isGlobal === true,
+        filter_type: filterType as FilterType,
         status: status as FilterStatus,
       });
 
@@ -103,4 +101,4 @@ export class FilterController {
       });
     }
   }
-} 
+}

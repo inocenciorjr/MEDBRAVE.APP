@@ -8,10 +8,14 @@ export class Result<T> {
 
   private constructor(isSuccess: boolean, value?: T, error?: Error) {
     if (isSuccess && error) {
-      throw new Error('InvalidOperation: A result cannot be successful and contain an error');
+      throw new Error(
+        'InvalidOperation: A result cannot be successful and contain an error',
+      );
     }
     if (!isSuccess && !error) {
-      throw new Error('InvalidOperation: A failing result needs to contain an error message');
+      throw new Error(
+        'InvalidOperation: A failing result needs to contain an error message',
+      );
     }
     this.isSuccess = isSuccess;
     this.isFailure = !isSuccess;
@@ -41,4 +45,4 @@ export class Result<T> {
 
 // Aliases para clareza
 export const Success = Result.ok;
-export const Failure = Result.fail; 
+export const Failure = Result.fail;

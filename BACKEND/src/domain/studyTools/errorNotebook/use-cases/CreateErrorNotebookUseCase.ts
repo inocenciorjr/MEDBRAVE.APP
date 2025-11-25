@@ -6,8 +6,8 @@ export class CreateErrorNotebookUseCase {
   constructor(private errorNotebookRepository: IErrorNotebookRepository) {}
 
   async execute(data: CreateErrorNotebookPayload): Promise<ErrorNotebook> {
-    // Validar existência de userId
-    if (!data.userId) {
+    // Validar existência de user_id
+    if (!data.user_id) {
       throw new AppError('User ID is required');
     }
 
@@ -17,16 +17,17 @@ export class CreateErrorNotebookUseCase {
     }
 
     // Valores padrão para campos opcionais
-    const notebookData = {
-      userId: data.userId,
+    const notebookData: CreateErrorNotebookPayload = {
+      user_id: data.user_id,
       title: data.title.trim(),
       description: data.description?.trim() || '',
-      isPublic: data.isPublic || false,
+      is_public: data.is_public || false,
       tags: data.tags || [],
     };
 
     // Criar caderno de erros
-    const errorNotebook = await this.errorNotebookRepository.create(notebookData);
+    const errorNotebook =
+      await this.errorNotebookRepository.create(notebookData);
 
     return errorNotebook;
   }

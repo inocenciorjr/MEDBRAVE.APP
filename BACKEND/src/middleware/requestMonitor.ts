@@ -159,11 +159,8 @@ class RequestMonitor {
   public middleware() {
     return (req: Request, res: Response, next: NextFunction) => {
       if (!this.isEnabled) {
-        console.log('⚠️ [DEBUG] Monitoramento desabilitado, pulando requisição:', req.method, req.url);
         return next();
       }
-      
-      console.log('📊 [DEBUG] Interceptando requisição:', req.method, req.url);
 
       const startTime = performance.now();
       const requestId = this.generateRequestId();
@@ -321,12 +318,6 @@ class RequestMonitor {
   }
 
   public getStatistics(timeRange?: { start: Date; end: Date }): MonitoringStats {
-    // Debug: verificar se há dados
-    console.log('🔍 [DEBUG] Dados no sistema de monitoramento:');
-    console.log('- Total de requests:', this.requests.length);
-    console.log('- Total de page views:', this.pageViews.length);
-    console.log('- Total de user actions:', this.userActions.length);
-    console.log('- Monitoramento habilitado:', this.isEnabled);
     
     let filteredRequests = this.requests;
     let filteredPageViews = this.pageViews;
@@ -474,7 +465,7 @@ class RequestMonitor {
     const defaultFilename = `monitoring-stats-${timestamp}.csv`;
     const filepath = path.join(this.logDirectory, filename || defaultFilename);
     
-    const stats = this.getStatistics();
+    
     
     let csv = 'Timestamp,Method,URL,User ID,User Role,Response Time (ms),Status Code,Success,Error\n';
     

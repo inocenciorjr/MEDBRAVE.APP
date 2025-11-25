@@ -1,4 +1,8 @@
-import { CreatePixPaymentPayload, PaymentProcessResult, PixPayment } from '../types';
+import {
+  CreatePixPaymentPayload,
+  PaymentProcessResult,
+  PixPayment,
+} from '../types';
 
 /**
  * Interface para o serviço de pagamentos PIX

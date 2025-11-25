@@ -1,4 +1,5 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Using string for timestamps in Supabase (ISO 8601 format)
+type Timestamp = string;
 import { createNotificationsModule } from './src/domain/notifications/factories/createNotificationsModule';
 import { createNotificationRoutes } from './src/domain/notifications/routes/notificationRoutes';
 
@@ -168,7 +169,7 @@ export interface PaginatedPaymentNotificationsResult {
  */
 export const registerNotificationModule = (app: any) => {
   const { notificationController, useCases } = createNotificationsModule();
-  const notificationRoutes = createNotificationRoutes(notificationController);
+  const notificationRoutes = createNotificationRoutes(notificationController as any);
   app.use('/api/notifications', notificationRoutes);
   // Se houver rotas de pagamento, adicionar aqui
   return { notificationController, useCases };

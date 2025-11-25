@@ -1,14 +1,16 @@
 import { Router } from 'express';
 import { UserPlanController } from '../controllers/UserPlanController';
 import { userPlanValidators } from '../validators/userPlanValidators';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 
 /**
  * Cria as rotas de planos de usuário
  * @param controller Controlador de planos de usuário
  * @returns Rotas de planos de usuário
  */
-export const createUserPlanRoutes = (controller: UserPlanController): Router => {
+export const createUserPlanRoutes = (
+  controller: UserPlanController,
+): Router => {
   const router = Router();
 
   // Rota para criar um novo plano de usuário (apenas admin)
@@ -99,7 +101,11 @@ export const createUserPlanRoutes = (controller: UserPlanController): Router => 
 };
 
 // Middleware para tratar erros de validação do express-validator
-function validateRequest(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) {
+function validateRequest(
+  req: import('express').Request,
+  res: import('express').Response,
+  next: import('express').NextFunction,
+) {
   const { validationResult } = require('express-validator');
   const errors = validationResult(req);
   if (!errors.isEmpty()) {

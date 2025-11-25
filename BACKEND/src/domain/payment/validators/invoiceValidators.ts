@@ -7,7 +7,9 @@ export const invoiceValidators = {
   /**
    * Validador para obter fatura por ID
    */
-  getInvoiceById: [param('invoiceId').notEmpty().withMessage('ID da fatura é obrigatório')],
+  getInvoiceById: [
+    param('invoiceId').notEmpty().withMessage('ID da fatura é obrigatório'),
+  ],
 
   /**
    * Validador para obter fatura por ID de pagamento
@@ -20,11 +22,16 @@ export const invoiceValidators = {
    * Validador para listar faturas do usuário
    */
   listUserInvoices: [
-    query('userId').optional().isString().withMessage('ID do usuário deve ser uma string'),
+    query('userId')
+      .optional()
+      .isString()
+      .withMessage('ID do usuário deve ser uma string'),
   ],
 
   /**
    * Validador para gerar fatura
    */
-  generateInvoice: [param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório')],
+  generateInvoice: [
+    param('paymentId').notEmpty().withMessage('ID do pagamento é obrigatório'),
+  ],
 };

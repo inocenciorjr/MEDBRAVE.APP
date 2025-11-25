@@ -49,18 +49,18 @@ export interface IUserPreferences {
  * Estatísticas gerais do usuário
  */
 export interface IUserStats {
-  questionsAnswered: number;
-  questionsCorrect: number;
-  questionsFlagged: number;
-  flashcardsReviewed: number;
-  flashcardsMastered: number;
-  errorsRegistered: number;
-  simulatedTestsCompleted: number;
-  studyTime: number; // Em minutos
-  lastStudySession: Date | null;
+  questions_answered: number;
+  questions_correct: number;
+  questions_flagged: number;
+  flashcards_reviewed: number;
+  flashcards_mastered: number;
+  errors_registered: number;
+  simulated_tests_completed: number;
+  study_time: number; // Em minutos
+  last_study_session: Date | null;
   streak: number; // Dias consecutivos de estudo
-  maxStreak: number; // Máximo de dias consecutivos
-  pointsTotal: number;
+  max_streak: number; // Máximo de dias consecutivos
+  points_total: number;
   level: number;
 }
 
@@ -70,22 +70,22 @@ export interface IUserStats {
 export interface IUser {
   id: string;
   email: string;
-  displayName: string;
-  photoURL?: string;
-  phoneNumber?: string;
+  display_name: string;
+  photo_url?: string;
+  phone_number?: string;
   biography?: string;
   role: UserRole;
   status: UserStatus;
-  emailVerified: boolean;
+  email_verified: boolean;
   mfa: IUserMfaConfig;
   preferences: IUserPreferences;
   stats: IUserStats;
   specialties?: string[];
-  mentorshipAvailable?: boolean;
-  createdAt: Date;
-  updatedAt: Date;
-  lastLoginAt?: Date;
-  deletedAt?: Date;
+  mentorship_available?: boolean;
+  created_at: Date;
+  updated_at: Date;
+  last_login_at?: Date;
+  deleted_at?: Date;
 }
 
 /**
@@ -94,22 +94,22 @@ export interface IUser {
 export interface ICreateUserDTO {
   email: string;
   password: string;
-  displayName: string;
+  display_name: string;
   role?: UserRole;
-  phoneNumber?: string;
-  photoURL?: string;
+  phone_number?: string;
+  photo_url?: string;
 }
 
 /**
  * DTO para atualização de usuário
  */
 export interface IUpdateUserDTO {
-  displayName?: string;
-  photoURL?: string;
-  phoneNumber?: string;
+  display_name?: string;
+  photo_url?: string;
+  phone_number?: string;
   biography?: string;
   specialties?: string[];
-  mentorshipAvailable?: boolean;
+  mentorship_available?: boolean;
   preferences?: Partial<IUserPreferences>;
 }
 
@@ -128,9 +128,9 @@ export interface ILoginUserDTO {
 export interface IAuthResponse {
   user: Omit<IUser, 'mfa'>;
   tokens: {
-    accessToken: string;
-    refreshToken: string;
-    expiresIn: number;
+    access_token: string;
+    refresh_token: string;
+    expires_in: number;
   };
-  mfaRequired?: boolean;
+  mfa_required?: boolean;
 }

@@ -1,12 +1,12 @@
 import { Router } from 'express';
-import { firestore } from 'firebase-admin';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+//
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 import { AlertService } from '../services/AlertService';
 import { logger } from '../../../utils/logger';
 
-export function createAlertRoutes(db: firestore.Firestore): Router {
+export function createAlertRoutes(): Router {
   const router = Router();
-  const service = new AlertService(db);
+  const service = new AlertService();
 
   router.use(authMiddleware);
 
@@ -17,7 +17,7 @@ export function createAlertRoutes(db: firestore.Firestore): Router {
       if (!userId) {
         return res.status(401).json({ error: 'Unauthorized' });
       }
-      
+
       const alerts = await service.getUserAlerts(userId);
       return res.json({ data: alerts });
     } catch (error) {
@@ -39,4 +39,4 @@ export function createAlertRoutes(db: firestore.Firestore): Router {
   });
 
   return router;
-} 
+}

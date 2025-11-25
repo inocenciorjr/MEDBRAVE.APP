@@ -8,11 +8,11 @@ export class CreateSubFilterUseCase {
     if (!data.name) {
       throw new Error("O nome do subfiltro é obrigatório");
     }
-    
-    if (!data.filterId) {
+
+    if (!data.filter_id) {
       throw new Error("O ID do filtro pai é obrigatório");
     }
-    
+
     return this.subFilterRepository.create(data);
   }
-} 
+}

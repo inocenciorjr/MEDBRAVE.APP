@@ -23,7 +23,7 @@ O módulo SimulatedExam implementa a funcionalidade de simulados para os usuári
 - `SimulatedExamController`: Gerencia as requisições HTTP para criar, listar, iniciar e finalizar simulados
 
 ### Serviços
-- `FirebaseSimulatedExamService`: Implementa a lógica de negócio para simulados utilizando Firebase como backend
+- `SupabaseSimulatedExamService`: Implementa a lógica de negócio para simulados utilizando Supabase como backend
 
 ### Rotas
 - `/simulatedExams`: Rotas para gerenciamento de simulados
@@ -80,4 +80,4 @@ POST /simulatedExams/answer
   "answerId": "a456",
   "timeSpent": 45
 }
-``` 
+```

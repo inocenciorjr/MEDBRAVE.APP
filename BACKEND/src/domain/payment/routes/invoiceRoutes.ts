@@ -1,11 +1,13 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { InvoiceController } from '../controllers/InvoiceController';
 import { invoiceValidators } from '../validators/invoiceValidators';
-import { authMiddleware } from '../../auth/middleware/auth.middleware';
+import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
 import { validationResult } from 'express-validator';
 
 // Adapta middlewares async para Express
-function asyncHandler(fn: (req: Request, res: Response, next: NextFunction) => Promise<any>) {
+function asyncHandler(
+  fn: (req: Request, res: Response, next: NextFunction) => Promise<any>,
+) {
   return (req: Request, res: Response, next: NextFunction) => {
     Promise.resolve(fn(req, res, next)).catch(next);
   };

@@ -1,0 +1,968 @@
+{
+  "metadata": {
+    "examName": "SESRJ20212R3CM (SES-RJ 2021)",
+    "examYear": 2021,
+    "url": "source://703",
+    "totalQuestions": 30,
+    "categorizedQuestions": 30,
+    "rewrittenComments": 29,
+    "processedAt": "2025-11-10T00:21:05.063Z",
+    "jobId": "batch-1762721414693-2cb83d3e-42a1-46e4-bf7e-d9581a0f57e1",
+    "draftId": "0a1c3f17-7487-4123-b0a9-382675ca11af"
+  },
+  "questions": [
+    {
+      "numero": "Q1",
+      "enunciado": "Segundo a Lei de Poiseuille, a pressão é diretamente proporcional ao fluxo e ao comprimento do tubo e inversamente proporcional à quarta potência do raio. Assim sendo, essa lei é válida para fluxos:",
+      "alternativas": [
+        "turbilhonares",
+        "laminares",
+        "perfeitos",
+        "orificiais"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da banca SES-RJ 2021 aborda conceitos fundamentais de hemodinâmica, especificamente sobre a Lei de Poiseuille e sua aplicação em diferentes tipos de fluxo sanguíneo.</p><p><strong>A resposta correta é B - fluxos laminares.</strong> A Lei de Poiseuille aplica-se exclusivamente a fluxos laminares, onde o fluido se move em camadas paralelas sem turbulência.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Fluxos turbilhonares:</strong> Incorreto. Fluxos turbilhonares (turbulentos) não seguem a Lei de Poiseuille, pois o movimento caótico das partículas gera perda de energia adicional que não é contemplada pela fórmula.</p><p><strong>B) Fluxos laminares:</strong> Correto. A Lei de Poiseuille foi especificamente desenvolvida para fluxos laminares, onde Q = (π × ΔP × r⁴) / (8 × η × L). Nesta condição, a relação de proporcionalidade descrita no enunciado é válida.</p><p><strong>C) Fluxos perfeitos:</strong> Incorreto. Não existe conceito de \"fluxo perfeito\" em hemodinâmica. Esta alternativa parece ser uma distratora, confundindo com conceitos de fluidos ideais em física teórica.</p><p><strong>D) Fluxos orificiais:</strong> Incorreto. Fluxos através de orifícios seguem outras leis físicas (como a equação de Bernoulli) e não a Lei de Poiseuille.</p><p>Em resumo, a Lei de Poiseuille é aplicável apenas a fluxos laminares em tubos cilíndricos, o que a torna fundamental para entender a hemodinâmica vascular em condições fisiológicas.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-0"
+    },
+    {
+      "numero": "Q2",
+      "enunciado": "A adição do corante violeta de etila à composição química da cal sodada permite o(a):",
+      "alternativas": [
+        "acompanhamento do gasto do absorvedor de CO²",
+        "equilíbrio da reação endotérmica no vaporizador",
+        "neutralização do ácido carbônico no sistema",
+        "geração de calor e umidade nas vias aéreas"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SES-RJ 2021 foca em aspectos técnicos da anestesia, especificamente sobre o funcionamento da cal sodada e seus sistemas de monitorização.</p><p><strong>A resposta correta é A - acompanhamento do gasto do absorvedor de CO².</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) Acompanhamento do gasto do absorvedor de CO²:</strong> Correto. O corante violeta de etila é adicionado à cal sodada como indicador visual. Quando a capacidade de absorção de CO₂ se истощи, o corante muda de cor (de branco para violeta), indicando que o absorvedor precisa ser trocado.</p><p><strong>B) Equilíbrio da reação endotérmica no vaporizador:</strong> Incorreto. A cal sodada é usada no sistema de ventilação, não no vaporizador. Além disso, a reação de absorção de CO₂ é exotérmica, não endotérmica.</p><p><strong>C) Neutralização do ácido carbônico no sistema:</strong> Incorreto. A cal sodada neutraliza o CO₂ absorvido, mas o violeta de etila não tem função nessa neutralização química. Sua única função é indicadora visual.</p><p><strong>D) Geração de calor e umidade nas vias aéreas:</strong> Incorreto. A cal sodada pode gerar calor durante a absorção de CO₂, mas o corante não participa desse processo. Além disso, a geração de umidade é um efeito colateral, não a função do corante.</p><p>Esta é uma questão prática importante para anestesiologistas, pois a indicação visual do corante permite monitorização eficiente da capacidade de absorção da cal sodada, prevenindo retenção de CO₂ durante a anestesia.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica_MonitorizacaoVentilatoria"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-1"
+    },
+    {
+      "numero": "Q3",
+      "enunciado": "O valor de índice bispectral (BIS) esperado em um paciente consciente e sem influência de qualquer fármaco hipnótico é de:",
+      "alternativas": [
+        "100",
+        "80",
+        "60",
+        "40"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SES-RJ 2021 avalia conhecimentos sobre monitorização neurofisiológica em anestesia, especificamente sobre o Índice Bispectral (BIS) e seus valores de referência.</p><p><strong>A resposta correta é A - 100.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) 100:</strong> Correto. O BIS varia de 0 a 100, onde 100 representa consciência plena e vigília completa, sem influência de fármacos hipnóticos. É o valor esperado em um paciente acordado e colaborativo.</p><p><strong>B) 80:</strong> Incorreto. Valores entre 80-90 indicam sedação leve a moderada, onde o paciente ainda mantém resposta a comandos verbais, mas já há influência de fármacos hipnóticos em baixas doses.</p><p><strong>C) 60:</strong> Incorreto. Este valor indica sedação moderada a profunda, frequentemente associado a kehilangan de consciência. Está muito abaixo do valor de vigília plena.</p><p><strong>D) 40:</strong> Incorreto. Valores em torno de 40 são típicos de anestesia geral adequada, com supressão de consciência completa. Está relacionado a níveis profundos de anestesia.</p><p>A compreensão dos valores do BIS é essencial para monitorização adequada da profundidade anestésica. Em pacientes conscientes sem fármacos, o BIS deve ser próximo a 100, valor que serve como referência para comparação durante a indução e manutenção anestésica.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica_MonitorizacaoDoSistemaNervosoC"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-2"
+    },
+    {
+      "numero": "Q4",
+      "enunciado": "A monitorização da profundidade anestésica com BIS possui limitações técnicas durante o uso de:",
+      "alternativas": [
+        "propofol",
+        "tiopental",
+        "cetamina",
+        "midazolam"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da banca SES-RJ 2021 aborda limitações importantes da monitorização com Índice Bispectral (BIS) quando utilizada com diferentes fármacos anestésicos.</p><p><strong>A resposta correta é C - cetamina.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) Propofol:</strong> Incorreto. O propofol é um dos fármacos com melhor correlação com o BIS. Sua ação GABAérgica produz padrões eletroencefalográficos previsíveis que são bem interpretados pelo algoritmo BIS.</p><p><strong>B) Tiopental:</strong> Incorreto. Semelhante ao propofol, o tiopental (tiobarbitúrico) também apresenta boa correlação com o BIS, pois seus efeitos no EEG são lineares e previsíveis.</p><p><strong>C) Cetamina:</strong> Correto. A cetamina apresenta limitações significativas com o BIS. Por ser um antagonista NMDA, produz padrões eletroencefalográficos não lineares e atividade beta desincronizada que podem levar a leituras BIS falsamente elevadas, mesmo em profundidades anestésicas adequadas.</p><p><strong>D) Midazolam:</strong> Incorreto. Como benzodiazepínico que atua nos receptores GABA, o midazolam apresenta boa correlação com o BIS, sem limitações técnicas significativas.</p><p>Esta limitação da cetamina é clinicamente importante, pois pode levar o anestesiologista a superestimar a profundidade anestésica. Por isso, durante o uso de cetamina, outros parâmetros de monitorização devem ser utilizados em conjunto com o BIS.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica_MonitorizacaoDoSistemaNervosoC"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-3"
+    },
+    {
+      "numero": "Q5",
+      "enunciado": "O flumazenil possui meia-vida plasmática (em horas), aproximadamente, de:",
+      "alternativas": [
+        "1",
+        "4",
+        "10",
+        "24"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da banca SES-RJ 2021 avalia conhecimentos farmacológicos sobre o flumazenil, um antagonista competitivo dos benzodiazepínicos amplamente utilizado em anestesiologia e medicina de emergência.</p><p><strong>A resposta correta é A - 1 hora.</strong></p><p>Vamos analisar as alternativas:</p><p><strong>A) 1 hora:</strong> Correto. A meia-vida plasmática do flumazenil é de aproximadamente 0,7 a 1,3 horas (arredondando para 1 hora nas alternativas). Esta característica farmacológica é crucial para sua monitorização clínica.</p><p><strong>B) 4 horas:</strong> Incorreto. Este tempo está mais próximo da meia-vida de alguns benzodiazepínicos, como o diazepam, mas não do flumazenil.</p><p><strong>C) 10 horas:</strong> Incorreto. Uma meia-vida de 10 horas seria extremamente longa para um antagonista que precisa ter ação relativamente curta e reversível.</p><p><strong>D) 24 horas:</strong> Incorreto. Este valor não corresponde às propriedades farmacológicas do flumazenil e seria desnecessário para sua função clínica.</p><p>A meia-vida curta do flumazenil tem implicações clínicas importantes: pode haver recorrência da sedação se o benzodiazepínico original tiver meia-vida mais longa. Por isso, a monitorização deve ser contínua e, em alguns casos, doses repetidas podem ser necessárias. Esta questão é fundamental para a prática segura em anestesiologia e medicina de emergência.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-4"
+    },
+    {
+      "numero": "Q6",
+      "enunciado": "A adição de propilenoglicol na formulação do diazepam é responsável pelo(a):",
+      "alternativas": [
+        "redução do limiar convulsivo após dose de indução",
+        "efeito sedativo-hipnótico do benzodiazepínico",
+        "efeito emético associado ao uso da droga",
+        "dor e pelo desconforto durante sua injeção"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 avalia conhecimentos sobre as características farmacológicas dos excipientes utilizados em formulações de benzodiazepínicos. O foco está no propilenoglicol, um solvente orgânico amplamente utilizado em farmácia.</p><p><strong>A resposta correta é D - dor e desconforto durante sua injeção.</strong></p><p>O propilenoglicol atua como solvente veiculante na formulação do diazepam injetável, porém apresenta significativa irritating properties. Durante a administração intravenosa, causa dor local intensa e desconforto ao paciente, sendo considerado um dos principais motivos para a preferência por formulações mais modernas como o midazolam.</p><p>Vamos analisar as alternativas incorretas:</p><p>A) <em>Redução do limiar convulsivo:</em> O diazepam possui atividade anticonvulsivante intrínseca, não reduzida pelo propilenoglicol.</p><p>B) <em>Efeito sedativo-hipnótico:</em> Este é propriedade exclusiva do diazepam, não do excipiente.</p><p>C) <em>Efeito emético:</em> Nenhum dos componentes da formulação possui ação emética significativa.</p><p>Em anestesiologia, o conhecimento sobre excipientes é fundamental para minimizar desconfortos durante a administração de medicamentos.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-5"
+    },
+    {
+      "numero": "Q7",
+      "enunciado": "Entre as diversas propriedades não hipnóticas do propofol, encontra-se a:",
+      "alternativas": [
+        "antipruriginosa",
+        "vasoconstritora",
+        "anticoncepcional",
+        "cardioestimuladora"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão explora as propriedades farmacológicas secundárias do propofol, um dos anestésicos intravenosos mais utilizados em anestesia geral. Embora seja conhecido principalmente por sua ação hipnótica, possui outros efeitos clínicos relevantes.</p><p><strong>A resposta correta é A - antipruriginosa.</strong></p><p>O propofol apresenta significativa atividade antipruriginosa, especialmente eficaz no controle do prurido relacionado a opioides. Esta propriedade é mediada pela modulação de receptores opioides e pela ação central do fármaco. Na prática clínica, o propofol é frequentemente utilizado para tratar prurido induzido por opioides durante anestesia.</p><p>Vamos analisar as outras alternativas:</p><p>B) <em>Vasoconstritora:</em> O propofol causa vasodilatação, não vasoconstrição.</p><p>C) <em>Anticoncepcional:</em> Esta propriedade não está relacionada ao propofol.</p><p>D) <em>Cardioestimuladora:</em> Na verdade, o propofol pode causar depressão cardiovascular.</p><p>O conhecimento dessas propriedades secundárias permite uma utilização mais eficiente e segura do propofol em diferentes situações clínicas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-6"
+    },
+    {
+      "numero": "Q8",
+      "enunciado": "O etomidato inibe de forma reversível a enzima:",
+      "alternativas": [
+        "catecol-metiltransferase",
+        "dopa-descarboxilase",
+        "17a-carboxilase",
+        "11ß-hidroxilase"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão aborda um aspecto crucial da farmacologia do etomidato: sua ação sobre a esteroidogênese. Trata-se de uma propriedade que impacta significativamente o uso clínico deste agente anestésico.</p><p><strong>A resposta correta é D - 11ß-hidroxilase.</strong></p><p>O etomidato inibe reversivelmente a enzima 11ß-hidroxilase, localizada na zona fasciculada do córtex adrenal. Esta enzima é fundamental na síntese de cortisol e corticosterona, catalisando a conversão de 11-desoxicortisol em cortisol e de 11-desoxicorticosterona em corticosterona. A inibição desta enzima resulta em supressão da produção de cortisol por até 24 horas após administração única.</p><p>Esta característica limita o uso do etomidato em pacientes sob estresse, como traumatizados ou sépticos, pois pode precipitar insuficiência adrenal.</p><p>Analisando as alternativas incorretas:</p><p>A) <em>Catecol-metiltransferase:</em> Esta enzima metaboliza catecolaminas, não sendo afetada pelo etomidato.</p><p>B) <em>Dopa-descarboxilase:</em> Enzima envolvida na síntese de catecolaminas, não relacionada ao etomidato.</p><p>C) <em>17a-carboxilase:</em> Esta denominação não corresponde a uma enzima known na esteroidogênese.</p><p>A inibição da 11ß-hidroxilase é uma propriedade farmacológica fundamental que todos os anestesiologistas devem conhecer.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-7"
+    },
+    {
+      "numero": "Q9",
+      "enunciado": "Entre os hipnóticos, aquele com atividade bloqueadora dos receptores N-metil-Daspartato é o(a):",
+      "alternativas": [
+        "midazolam",
+        "etomidato",
+        "cetamina",
+        "propofol"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-RJ foca nos mecanismos de ação dos anestésicos intravenosos, especificamente em relação aos receptores NMDA (N-metil-D-aspartato). O conhecimento dos diferentes mecanismos é essencial para entender as características clínicas de cada agente.</p><p><strong>A resposta correta é C - cetamina.</strong></p><p>A cetamina é o único anestésico entre as opções que age como antagonista não competitivo dos receptores NMDA. Este bloqueio resulta no efeito dissociativo característico da cetamina, com anestesia adequada mantendo reflexos de proteção e atividade autonômica preservada. O mecanismo NMDA é fundamental para a analgesia e para a prevenção de tolerância aguda aos opioides.</p><p>Vamos analisar as outras alternativas:</p><p>A) <em>Midazolam:</em> Potencia a ação do GABA através da modulação positiva dos receptores GABA-A.</p><p>B) <em>Etomidato:</em> Potencia a atividade dos receptores GABA-A, similar aos benzodiazepínicos.</p><p>D) <em>Propofol:</em> Também age principalmente nos receptores GABA-A, com menores efeitos em receptores NMDA.</p><p>Esta questão ilustra a importância de conhecer os mecanismos moleculares para compreender as propriedades clínicas de cada anestésico.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-8"
+    },
+    {
+      "numero": "Q10",
+      "enunciado": "O fármaco que possui ação estimulatória a e ß nos receptores adrenérgicos é o(a):",
+      "alternativas": [
+        "metoxamina",
+        "fentolamina",
+        "prazosin",
+        "efedrina"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimentos sobre farmacologia do sistema nervoso simpático, especificamente sobre os mecanismos de ação de fármacos que afetam os receptores adrenérgicos. É fundamental para compreender o uso de agentes vasopressores em anestesiologia.</p><p><strong>A resposta correta é D - efedrina.</strong></p><p>A efedrina é um simpatomimético indireto que promove a liberação de noradrenalina dos terminais nervosos simpáticos. Possui ação estimulatória tanto nos receptores adrenérgicos alfa quanto beta. Clinicamente, causa aumento da pressão arterial através de aumento do débito cardíaco (efeito beta-1) e vasoconstrição periférica (efeito alfa), além de efeitos cronotrópicos e inotrópicos positivos.</p><p>Vamos analisar as alternativas incorretas:</p><p>A) <em>Metoxamina:</em> É um agonista seletivo dos receptores alfa-1, causando apenas vasoconstrição.</p><p>B) <em>Fentolamina:</em> É um antagonista dos receptores alfa, causando vasodilatação.</p><p>C) <em>Prazosin:</em> É um antagonista seletivo dos receptores alfa-1, usado no tratamento de hipertensão.</p><p>A efedrina é particularmente útil em anestesiologia por sua capacidade de aumentar a pressão arterial sem causar taquicardia excessiva, mantendo adequada perfusão tecidual.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-9"
+    },
+    {
+      "numero": "Q11",
+      "enunciado": "É considerado bloqueador neuromuscular do grupo aminoesteroide o(a):",
+      "alternativas": [
+        "atracúrio",
+        "rocurônio",
+        "galamina",
+        "succinilcolina"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 avalia seu conhecimento sobre a classificação farmacológica dos bloqueadores neuromusculares. Especificamente, você precisa reconhecer as características estruturais que definem os diferentes grupos de relajantes musculares.</p><p><strong>A resposta correta é B - rocurônio.</strong> O rocurônio pertence ao grupo dos aminoesteroides, caracterizado pela presença de uma estrutura estrogênica modificada e um grupo amino livre.</p><p>Vamos analisar cada alternativa:</p><p><strong>A) Atracúrio:</strong> Incorreto. O atracúrio é um bloqueador do grupo benzilisoquinolínico, não aminoesteroide. Apresenta degradação espontânea pela eliminação de Hofmann e é Preferred em pacientes com insuficiência hepática ou renal.</p><p><strong>B) Rocurônio:</strong> Correto. O rocurônio é um aminoesteroide que atua como antagonista competitivo dos receptores nicotínicos. Sua estrutura contém um núcleo esteróide com grupo amino terciário, caracterizando-o dentro do grupo aminoesteroide.</p><p><strong>C) Galamina:</strong> Incorreto. A galamina não é mais utilizada clinicamente e pertence ao grupo dos não-despolarizantes, mas sua estrutura não é de aminoesteroide. Era um composto sintético de amônio quaternário.</p><p><strong>D) Succinilcolina:</strong> Incorreto. A succinilcolina é um bloqueador despolarizante de curta ação, não pertencente ao grupo dos aminoesteroides. Sua estrutura é de um éster de colina duplamente carregado.</p><p>Os bloqueadores do grupo aminoesteroide incluem: rocurônio, vecurônio, pancurônio e rapacurônio. Todos compartilham características estruturais similares, mas com diferenças na potência, início e duração de ação.</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Farmacologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_FisiologiaCardiaca"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-10"
+    },
+    {
+      "numero": "Q12",
+      "enunciado": "Em concentrações clínicas, além da ação em receptores opioides, a metadona possui ação:",
+      "alternativas": [
+        "antagonista ß-adrenérgica",
+        "agonista a-adrenérgica",
+        "antagonista NMDA",
+        "agonista GABA"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão explora o perfil farmacológico da metadona, exigindo conhecimento sobre seus mecanismos de ação além do sistema opioide. É fundamental compreender que a metadona possui múltiplos sítios de ação.</p><p><strong>A resposta correta é C - antagonista NMDA.</strong> A metadona atua como antagonista não-competitivo dos receptores N-metil-D-aspartato (NMDA), além de ser agonista dos receptores mu-opioidreceptores.</p><p>Analisando as alternativas:</p><p><strong>A) Antagonista ß-adrenérgica:</strong> Incorreto. A metadona não apresenta atividade antagonista significativa nos receptores beta-adrenérgicos. Esta característica é mais típica de outros psicofármacos, como alguns neurolépticos.</p><p><strong>B) Agonista α-adrenérgica:</strong> Incorreto. Embora possa ter algumas ações sobre receptores alfa, a metadona não é classificada como agonista significativo destes receptores. Sua ação principal é opioide e NMDA.</p><p><strong>C) Antagonista NMDA:</strong> Correto. Esta é a ação secundária mais importante da metadona. O antagonismo NMDA contribui para seus efeitos na tolerância aos opioides, propriedades analgésicas e efeitos neuropsiquiátricos. A combinação de agonismo mu-opioidreceptores com antagonismo NMDA é única entre os opioides.</p><p><strong>D) Agonista GABA:</strong> Incorreto. A metadona não possui atividade significativa como agonista GABAérgico. A ação GABAérgica é mais característica de benzodiazepínicos, barbituratos e alguns anticonvulsivantes.</p><p>A descoberta do antagonismo NMDA da metadona revolucionou o entendimento de seu uso no tratamento da dependência opioide, explicando seus efeitos benéficos na prevenção de tolerância e síndrome de abstinência.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_Farmacologia",
+        "ClinicaMedica_Cardiologia_CuidadosPalianestesicos_DorEAnalgesia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos_DorEAnalgesia"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-11"
+    },
+    {
+      "numero": "Q13",
+      "enunciado": "Entre as fibras nervosas aferentes periféricas, a responsável pela condução de estímulos nociceptivos é a:",
+      "alternativas": [
+        "C",
+        "B",
+        "A alfa",
+        "A gama"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre a classificação funcional das fibras nervosas periféricas, especificamente seu papel na transmissão de estímulos dolorosos. A categorização das fibras nervosas é fundamental para compreender a fisiologia da dor.</p><p><strong>A resposta correta é A - fibras C.</strong> As fibras C são as principais responsáveis pela condução de estímulos nociceptivos, especialmente dor lenta e crônica.</p><p>Vamos examinar cada tipo de fibra:</p><p><strong>A) Fibras C:</strong> Correto. São fibras não-mielinizadas, de pequeno diâmetro (0,2-1,5 μm) e condução lenta (0,5-2 m/s). Transportam a maioria dos estímulos dolorosos crônicos, temperatura e sensibilidade visceral. Constituem cerca de 60-70% de todas as fibras nervosas periféricas e são essenciais na transmissão da dor difusa e persistente.</p><p><strong>B) Fibras B:</strong> Incorreto. As fibras B são mielinizadas, de diâmetro pequeno (2-3 μm) e condução moderada (3-15 m/s). São principalmente pré-ganglionares do sistema nervoso autônomo simpático, não envolvidas primariamente na nocicepção.</p><p><strong>C) Fibras A alfa:</strong> Incorreto. São fibras mielinizadas de grande diâmetro (12-20 μm) e condução rápida (70-120 m/s). Responsáveis pela propriocepcão consciente, toque gross e força muscular. Não são primariamente nociceptivas.</p><p><strong>D) Fibras A gama:</strong> Incorreto. As fibras A gama são mielinizadas (2-8 μm) com condução de 15-40 m/s. Suas funções principais são motoras (controle do tônus muscular) e sensoriais específicas (tonus muscular, propriocepcão inconsciente), não participando significativamente da nocicepção.</p><p>É importante lembrar que existem também fibras A delta (Aδ) que conduzem dor rápida e aguda, mas elas não estão listadas nas alternativas. A transmissão nociceptiva envolve uma rede complexa de fibras, com as fibras C sendo predominantes na dor crônica e persistente.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AnatomiaFisiologiaESemiologiaN",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_SistemaNervoso",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-12"
+    },
+    {
+      "numero": "Q14",
+      "enunciado": "A principal via de transmissão da informação nociceptiva do corno dorsal da medula para os segmentos cerebrais superiores é o trato:",
+      "alternativas": [
+        "espinomesencefálico",
+        "espinotrigeminal",
+        "espinorreticular",
+        "espinotalâmico"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão testa seu conhecimento sobre as vias de transmissão da informação dolorosa no sistema nervoso central. Compreender as vias de nocicepção é essencial para entender tanto a fisiologia da dor quanto os mecanismos de analgesia.</p><p><strong>A resposta correta é D - trato espinotalâmico.</strong> Esta é a principal via ascendente responsável pela transmissão de informações nociceptivas do corno dorsal da medula para centros superiores no cérebro.</p><p>Analisando cada alternativa:</p><p><strong>A) Trato espinomesencefálico:</strong> Incorreto. Embora seja uma via importante para a dor, ela é principalmente responsável por impulsos de dor cepat e detalhes discriminativos da dor. Projetar-se para o mesencéfalo (região do tegmento mesencefálico), mas não é a principal via de transmissão para centros cerebrais superiores.</p><p><strong>B) Trato espinotrigeminal:</strong> Incorreto. Esta via é específica para estruturas da face e cabeça.Transporta informações dolorosas da região trigeminal (face) para o tronco cerebral. Embora importante para a dor facial, não é a via principal para informação nociceptiva geral do corpo.</p><p><strong>C) Trato espinorreticular:</strong> Incorreto. Esta via é mais relacionada com a resposta emocional e autonômica à dor. Projeta-se para a formação reticular do tronco cerebral, sendo importante para a modulação da dor e resposta autonômica, mas não é a via principal de transmissão para centros cerebrais superiores.</p><p><strong>D) Trato espinotalâmico:</strong> Correto. Esta é a via mais importante para a transmissão de informação nociceptiva. Origina-se no corno dorsal da medula, onde neurónios de segundo ordénio recebem input de neurónios de primeiro ordénio (fibras Aδ e C). O trato espinotalâmico tem duas divisões: neoespinotalâmica (informação sensorial discriminativa) e paleoespinotalâmica (componente emocional da dor). Projetar-se para tálamo, de onde as informações são redistribuídas para o córtex somatossensorial e outras áreas cerebrais.</p><p>O trato espinotalâmico é, portanto, fundamental para a consciência e percepção da dor, sendo o principal caminho pelo qual a informação dolorosa atinge o córtex cerebral.</p>",
+      "filterIds": [
+        "ClinicaMedica",
+        "Outros"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_AnatomiaFisiologiaESemiologiaN",
+        "Otros_CicloBasico_SistemaNervoso",
+        "ClinicaMedica_Neurologia",
+        "ClinicaMedica_Neurologia_Cefaleias",
+        "ClinicaMedica_Neurologia_Cefaleias_SinaisDeAlarme"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-13"
+    },
+    {
+      "numero": "Q15",
+      "enunciado": "\"Essa escala de dor é constituída por uma linha horizontal de 100mm, cuja extremidade esquerda corresponde à ausência de dor e a direita representa a dor mais intensa possível, na qual o paciente assinala o local que acha ser mais representativo da intens",
+      "alternativas": [
+        "de dor McGill",
+        "linear simples",
+        "numérica verbal",
+        "analógica visual"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-RJ avalia seu conhecimento sobre instrumentos de mensuração da dor, especificamente a capacidade de identificar características descritivas de escalas de dor. Compreender esses instrumentos é fundamental para a prática clínica e pesquisa em dor.</p><p><strong>A resposta correta é D - analógica visual.</strong> A descrição apresentada corresponde exatamente à Escala Visual Analógica (EVA), que utiliza uma linha horizontal de 100mm para graduar a intensidade da dor.</p><p>Analisando cada alternativa:</p><p><strong>A) Escala de dor McGill:</strong> Incorreto. A escala McGill é muito mais complexa, consistindo em múltiplos adjetivos organizados em 20 categorias que descrevem diferentes qualidades da dor (sensorial, afetiva e avaliativa). Não é uma simples linha horizontal de 100mm.</p><p><strong>B) Linear simples:</strong> Incorreto. Embora a descrição mencione uma linha, o termo &quot;linear simples&quot; não é o nome específico desta escala. A EVA é uma escala linear, mas possui nomenclatura técnica específica e validação científica.</p><p><strong>C) Numérica verbal:</strong> Incorreto. A escala numérica verbal utiliza números pronunciados oralmente (geralmente 0-10 ou 0-100), sem recorrer a uma linha visual. O paciente responde com um número específico que representa sua dor.</p><p><strong>D) Analógica visual (EVA):</strong> Correto. A Escala Visual Analógica é exatamente uma linha horizontal de 100mm, com 0mm representando ausência de dor e 100mm representando a pior dor imaginável. O paciente marca o ponto que melhor representa sua dor atual. É amplamente utilizada por sua simplicidade, validade e sensibilidade para mudanças na intensidade da dor.</p><p>A EVA é um instrumento padronizado, válido e confiável para avaliação da dor em adultos. Sua principal vantagem é a capacidade de detectar pequenas mudanças na intensidade da dor, sendo especialmente útil em pesquisa e monitoramento clínico. No entanto, requer que o paciente compreenda o conceito de marcar em uma linha contínua, o que pode ser um desafio em algumas populações (crianças muito pequenas, pacientes com déficits cognitivos ou baixa escolaridade).</p>",
+      "filterIds": [
+        "Cirurgia",
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos_DorEAnalgesia",
+        "ClinicaMedica_Cardiologia_CuidadosPalianestesicos_DorEAnalgesia",
+        "Outros_CicloBasico",
+        "Outros_CicloBasico_SemiologiapropedeuticaMedica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-14"
+    },
+    {
+      "numero": "Q16",
+      "enunciado": "Utilizando-se a escada analgésica da Organização Mundial de Saúde, um paciente com dor moderada deverá ser tratado com:",
+      "alternativas": [
+        "Paracetamol associado à morfina.",
+        "Dipirona associada ao tramadol.",
+        "Somente cetoprofeno.",
+        "Somente dipirona."
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia seu conhecimento sobre o manejo da dor segundo a escada analgésica da Organização Mundial da Saúde. A OMS estabeleceu um protocolo escalonado para o tratamento da dor, considerando sua intensidade e características farmacológicas.</p><p><strong>A resposta correta é B - dipirona associada ao tramadol.</strong></p><p>Entendendo a escada analgésica: No primeiro degrau, temos dor leve tratada com analgésicos não-opioides (paracetamol, dipirona, AINEs). No segundo degrau, dor moderada requer associação de analgésicos não-opioides com opioides fracos. No terceiro degrau, dor forte/intensa usa opioides fortes isolados ou associados a não-opioides.</p><p>Analisando as alternativas: <strong>A) Paracetamol + morfina</strong> está errada - morfina é opioide forte, indicado para dor intensa, não moderada. <strong>B) Dipirona + tramadol</strong> é correta - dipirona (não-opioide) + tramadol (opioide fraco) é a combinação padrão para dor moderada. <strong>C) Somente cetoprofeno</strong> é insuficiente para dor moderada - seria adequado apenas para dor leve. <strong>D) Somente dipirona</strong> também é inadequado para dor moderada - requer combinação terapêutica.</p><p><strong>Veredito: B.</strong> A banca SES-RJ testou conhecimento farmacológico básico e aplicação prática da escada analgésica OMS.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-15"
+    },
+    {
+      "numero": "Q17",
+      "enunciado": "O antagonista serotoninérgico com ação predominante sobre os receptores 5-HT3 é o(a):",
+      "alternativas": [
+        "ondansetrona",
+        "sumatriptano",
+        "metissergida",
+        "cetanserina"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre farmacologia dos antagonistas serotoninérgicos, especificamente sobre receptores 5-HT3. Os receptores 5-HT3 estão envolvidos em náuseas e vômitos, especialmente relacionados à quimioterapia.</p><p><strong>A resposta correta é A - ondansetrona.</strong></p><p>Entendendo a classificação: Os antagonistas 5-HT3 são fundamentais no controle de náuseas e vômitos induzidos por quimioterapia. A ondansetrona foi o primeiro desenvolvido e permanece como referência clínica.</p><p>Analisando as alternativas: <strong>A) Ondansetrona</strong> é correta - antagonista seletivo 5-HT3, primeiro da classe, amplamente usado em oncologia. <strong>B) Sumatriptano</strong> está errado - é agonista 5-HT1, usado para enxaqueca. <strong>C) Metissergida</strong> é incorreta - antagonista 5-HT2, usada em profilaxia de enxaqueca. <strong>D) Cetanserina</strong> está errada - antagonista 5-HT2, pouco utilizada atualmente.</p><p>O mecanismo da ondansetrona: Bloqueia seletivamente os receptores 5-HT3 no sistema nervoso central e periférico, inibindo a liberação de neurotransmissores que stimulam o centro do vômito.</p><p><strong>Veredito: A.</strong> Questão classic de farmacologia da SES-RJ sobre mecanismo de ação de medicamentos.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-16"
+    },
+    {
+      "numero": "Q18",
+      "enunciado": "O término do efeito clínico do atracúrio se dá por:",
+      "alternativas": [
+        "metabolismo hepático",
+        "degradação de Hofmann",
+        "eliminação renal in natura",
+        "ação da colinesterase plasmática"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão aborda a farmacologia de bloqueadores neuromusculares, especificamente o metabolismo do atracúrio. A clearance deste fármaco ocorre por mecanismo único e independente de órgãos.</p><p><strong>A resposta correta é B - degradação de Hofmann.</strong></p><p>Contexto farmacológico: O atracúrio é um bloqueador neuromuscular adespolarizante com características especiais. Diferente de outros bloqueadores, não depende de metabolismo hepático ou renal para sua eliminação.</p><p>Entendendo a degradação de Hofmann: É um processo de clivagem espontânea e não-enzimática da molécula que ocorre em pH alcalino e temperatura corporal. Este mecanismo independe da função hepática ou renal, tornando o atracúrio seguro em pacientes com disfunção destes órgãos.</p><p>Analisando as alternativas: <strong>A) Metabolismo hepático</strong> está incorreto - atracúrio não é metabolizado pelo fígado. <strong>B) Degradação de Hofmann</strong> é correta - processo não-enzimático que divide a molécula em fragmentos inativos. <strong>C) Eliminação renal</strong> está errada - os metabólitos são eliminados pelos rins, mas o fármaco ativo não. <strong>D) Colinesterase plasmática</strong> é incorreta - esta enzima metaboliza succinilcolina, não atracúrio.</p><p><strong>Veredito: B.</strong> Questão específica de anestesiologia que testa conhecimento sobre características farmacológicas únicas do atracúrio.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-17"
+    },
+    {
+      "numero": "Q19",
+      "enunciado": "Na reversão do bloqueio neuromuscular, espera-se que a ação da neostigmina inicie em:",
+      "alternativas": [
+        "10 minutos",
+        "20 minutos",
+        "60 segundos",
+        "120 segundos"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão avalia conhecimento prático sobre tempo de ação de inibidores da colinesterase, especificamente a neostigmina. O conhecimento dos tempos é crucial para manejo adequado do bloqueio neuromuscular em anestesiologia.</p><p><strong>A resposta correta é A - 10 minutos.</strong></p><p>Farmacologia da neostigmina: É um inibidor da colinesterase que antagoniza o bloqueio neuromuscular causados por bloqueadores adespolarizantes. Atua aumentando a concentração de acetilcolina na junção neuromuscular.</p><p>Cinética da ação: Após administração IV, a neostigmina apresenta início de ação em aproximadamente 10 minutos. Este tempo é previsível e permite planejamento adequado da reversão anestésica.</p><p>Analisando as alternativas: <strong>A) 10 minutos</strong> é correta - tempo padrão de início de ação para neostigmina IV. <strong>B) 20 minutos</strong> está incorreto - tempo excessivo, não característico da neostigmina. <strong>C) 60 segundos</strong> está errado - início muito rápido, inexiste para este fármaco. <strong>D) 120 segundos</strong> também está incorreto - ainda muito rápido para neostigmina.</p><p>Importância clínica: O conhecimento deste tempo permite ao anestesiista monitorar adequadamente a reversão e determinar se doses adicionais são necessárias.</p><p><strong>Veredito: A.</strong> Questão prática de anestesiologia que avalia conhecimento farmacológico aplicado.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_BloqueadoresNeuromusculares"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-18"
+    },
+    {
+      "numero": "Q20",
+      "enunciado": "Durante a avaliação do grau de bloqueio neuromuscular, o melhor padrão de estimulação para monitorização do bloqueio adespolarizante total profundo é a(o):",
+      "alternativas": [
+        "train-of-four",
+        "estímulo simples",
+        "estimulação tetânica",
+        "contagem pós-tetânica"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia conhecimento sobre monitorização de bloqueio neuromuscular, especificamente os padrões de estimulação elétrica. A escolha do protocolo adequado é fundamental para avaliar diferentes graus de bloqueio.</p><p><strong>A resposta correta é D - contagem pós-tetânica.</strong></p><p>Contexto da monitorização: O bloqueio neuromuscular total profundo (ou intenso) é caracterizado pela ausência de resposta a estímulos nervosos. Nestes casos, a avaliação convencional (train-of-four) pode ser insuficiente.</p><p>Princípio da contagem pós-tetânica: Após estimulação tetânica (50-100 Hz por 5 segundos), a junção neuromuscular pode apresentar resposta a estímulos simples subsequentes, mesmo em bloqueio profundo. Esta resposta pós-tetânica indica recuperação parcial do bloqueio e permite quantificação mais precisa.</p><p>Analisando as alternativas: <strong>A) Train-of-four</strong> é inadequado - com 4 estímulos, não há resposta detectável em bloqueio profundo total. <strong>B) Estímulo simples</strong> também é insuficiente - não distingue graus profundos de bloqueio. <strong>C) Estimulação tetânica</strong> está incorreta - em bloqueio total profundo, também não produz resposta adequada. <strong>D) Contagem pós-tetânica</strong> é a única técnica capaz de detectar atividade residual em bloqueio profundo total.</p><p><strong>Veredito: D.</strong> Questão técnica de anestesiologia que avalia conhecimento especializado sobre monitorização neuromuscular em condições extremas.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica_MonitorizacaoDoBloqueioNeuromu"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-19"
+    },
+    {
+      "numero": "Q21",
+      "enunciado": "Na classificação das drogas antiarrítmicas de Vaugham Willians, a classe II compreende os fármacos bloqueadores:",
+      "alternativas": [
+        "ß-adrenérgicos",
+        "do canal de sódio",
+        "do canal de cálcio",
+        "do canal de potássio"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 avalia seu conhecimento sobre a classificação de Vaugham-Williams das drogas antiarrítmicas. É um tópico fundamental na cardiologia e farmacologia clínica.</p><p><strong>A resposta correta é A - ß-adrenérgicos.</strong></p><p>Vamos revisar a classificação completa de Vaugham-Williams para entender:</p><p><strong>Classe I:</strong> Bloqueadores dos canais de sódio (Ia: quinidina, disopiramida; Ib: lidocaína, mexiletina; Ic: flecainida, propafenona)</p><p><strong>Classe II:</strong> Bloqueadores beta-adrenérgicos (propranolol, metoprolol, atenolol) - são OS bloqueadores ß-adrenérgicos que reduzem a frequência cardíaca e a contratilidade miocárdica</p><p><strong>Classe III:</strong> Bloqueadores dos canais de potássio (amiodarona, sotalol) - prolongam o potencial de ação</p><p><strong>Classe IV:</strong> Bloqueadores dos canais de cálcio (verapamil, diltiazem) - reduzem a condução atrioventricular</p><p>Analisando as alternativas incorretas:<br>• B) Bloqueadores do canal de sódio = Classe I<br>• C) Bloqueadores do canal de cálcio = Classe IV<br>• D) Bloqueadores do canal de potássio = Classe III</p><p>Memorize assim: <strong>I = Ião, II = Beta, III = Três letras (K+), IV = Quatro (Ca++)</strong></p><p><strong>Resposta final: A</strong> - Os fármacos da Classe II são especificamente os bloqueadores beta-adrenérgicos.",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_ArritmiasCardiacas",
+        "Outros_CicloBasico_Farmacologia"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-20"
+    },
+    {
+      "numero": "Q22",
+      "enunciado": "Na anestesia inalatória, a resposta à hipóxia é comprometida (deprimida) a partir de:",
+      "alternativas": [
+        "0,1 CAM",
+        "0,3 CAM",
+        "0,6 CAM",
+        "1,1 CAM"
+      ],
+      "correta": 0,
+      "professor_comment": "<p>Esta questão aborda um aspecto crucial da anestesia inalatória: o efeito dos anestésicos na resposta ventilatória à hipóxia. Este conhecimento é essencial para a segurança anestésica.</p><p><strong>A resposta correta é A - 0,1 CAM.</strong></p><p>Vamos entender o CAM (Concentração Alveolar Mínima): é a concentração alveolar de um anestésico que produz imobilidade em 50% dos pacientes expostos a um estímulo cirúrgico doloroso.</p><p>A resposta ventilatória à hipóxia é controlada pelo quimiorreceptores carotídeos. Estes sensores são extremamente sensíveis e respondem rapidamente a quedas na PaO2, aumentando a ventilação minuto para compensar a hipóxia.</p><p>Quando analisamos os efeitos dos anestésicos:<br>• <strong>0,1 CAM:</strong> já deprime significativamente os quimiorreceptores carotídeos, reduzindo a resposta à hipóxia<br>• <strong>0,3-0,6 CAM:</strong> depressão progressiva adicional (mas não é o limiar)<br>• <strong>1,1 CAM:</strong> representa profundidade anestésica muito alta</p><p>Por que isso é clinicamente importante? Porque durante a anestesia, pacientes podem desenvolver hipóxia silenciosamente - sem a resposta ventilatória compensatória normal, a hipóxia pode progredir sem ser detectada pelos sinais clínicos habituais.</p><p><strong>Veredito: A</strong> - A resposta à hipóxia já está comprometida em 0,1 CAM de anestésico inalatório.",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AgentesAnestesicos",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_MonitorizacaoAnestesica"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-21"
+    },
+    {
+      "numero": "Q23",
+      "enunciado": "Após ressuscitação volêmica com solução salina 0,9% (soro fisiológico), pode ocorrer acidose hiperclorêmica. Isso se deve ao fato dessa solução possuir em sua composição uma concentração de cloro, em mEq/L, de:",
+      "alternativas": [
+        "77",
+        "109",
+        "154",
+        "513"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-RJ explora um conceito fundamental em medicina intensiva: acidose hiperclorêmica iatrogênica. É um efeito colateral importante de reanimação volêmica agressiva.</p><p><strong>A resposta correta é C - 154 mEq/L.</strong></p><p>Vamos analisar a composição da solução salina 0,9% (soro fisiológico):</p><p>Cada litro contém:<br>• 9g de NaCl (peso molecular = 58,44 g/mol)<br>• Cálculo: 9g ÷ 58,44 g/mol = 0,154 mol de NaCl<br>• 0,154 mol = 154 mEq de Na+ e 154 mEq de Cl-</p><p>Portanto, o soro fisiológico possui 154 mEq/L de cloro, exatamente a concentração plasmática normal elevada.</p><p>O problema: ao infundir grandes volumes, adicionamos excesso de cloro ao organismo, superando a capacidade renal de eliminação. Isso resulta em acidose hiperclorêmica por dois mecanismos:</p><p>1. <strong>Efeito de diluição:</strong> o excesso de cloro dilui o bicarbonato plasmático<br>2. <strong>Efeito de substituição:</strong> o cloro suplementar é trocado por bicarbonato nos túbulos renais</p><p>Analisando as alternativas incorretas:<br>• A) 77: seria a metade (incorreto)<br>• B) 109: valor aproximado do plasma normal (8-10 mEq/L de cloro é normal)<br>• D) 513: valor unrealistic alto (seria tóxico)</p><p><strong>Conclusão: C</strong> - A solução salina 0,9% possui 154 mEq/L de cloro.",
+      "filterIds": [
+        "ClinicaMedica",
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "Cirurgia_AvaliacaoPreoperatoria"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-22"
+    },
+    {
+      "numero": "Q24",
+      "enunciado": "Uma das causas de acidose metabólica sem aumento do anion gap é a:",
+      "alternativas": [
+        "cetoacidose",
+        "acidose lática",
+        "ureterosigmoidostomia",
+        "intoxicação por etilenoglicol"
+      ],
+      "correta": 2,
+      "professor_comment": "",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia",
+        "ClinicaMedica_Nefrologia_DisturbiosDoEquilibrioAcidobas",
+        "Cirurgia_Urologia"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-23"
+    },
+    {
+      "numero": "Q25",
+      "enunciado": "O tempo (em horas) de jejum pré-anestésico, indicado para um lactente alimentado exclusivamente com leite materno, é de:",
+      "alternativas": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 aborda um tema essencial em anestesia pediátrica: preparo pré-anestésico adequado. O jejum é fundamental para prevenir aspiração pulmonar, mas deve ser balanceado com as necessidades metabólicas do lactente.</p><p><strong>A resposta correta é B - 4 horas.</strong></p><p>O leite materno possui características únicas que influenciam o esvaziamento gástrico:<br>• Rico em proteínas, gorduras e carboidratos complexos<br>• Digestão relativamente rápida em comparação com fórmulas artificiais<br>• Baixo teor de gordura (3-5%), facilitando o esvaziamento<br>• Proteínas de fácil digestão (principalmente albumina e lactalbumina)</p><p>As diretrizes atuais para lactentes em aleitamento materno:<br>• <strong>Leite materno:</strong> 4 horas de jejum<br>• <strong>Fórmulas artificiais:</strong> 6 horas (são mais densas e demoram mais para esvaziar)<br>• <strong>Líquidos claros:</strong> 2 horas (água, chá sem açúcar)</p><p>Por que essa diferença é importante? Os lactentes dependem nutricionalmente do aleitamento materno, e jejuns prolongados podem causar hipoglicemia e desidratação. Por outro lado, aspiração pulmonar é uma complicação catastrófica.</p><p>Analisando as alternativas incorretas:<br>• A) 2h: insuficiente para segurança<br>• C) 6h: muito prolongado (reservado para fórmulas artificiais)<br>• D) 8h: excessivo e desnecessário</p><p>Memorize: <strong>LEITE MATERNO = 4h (MEMBRAS = 4 letras)</strong></p><p><strong>Veredito final: B</strong> - 4 horas de jejum para lactente em aleitamento materno exclusivo.",
+      "filterIds": [
+        "Cirurgia",
+        "Pediatria"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AvaliacaoAnestesicaPreoperator",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura",
+        "Pediatria_Puericultura_AlimentacaoInfantil"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-24"
+    },
+    {
+      "numero": "Q26",
+      "enunciado": "Entre os anestésicos locais, aquele que pertence à classe dos amino-ésteres é a:",
+      "alternativas": [
+        "bupivacaína",
+        "ropivacaína",
+        "lidocaína",
+        "procaína"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 evalua o conhecimento sobre farmacologia dos anestésicos locais, especificamente a classificação química dessas substâncias. É um tema fundamental em anestesiologia que separa os fármacos por sua estrutura molecular.</p><p>A banca apresentou quatro anestésicos locais e pediu para identificar qual pertence à classe dos amino-ésteres. Vamos analisar cada alternativa:</p><p><strong>A) Bupivacaína:</strong> Pertence à classe dos amino-amidas. É um anestésico de longa duração muito utilizado em bloqueios regionais.</p><p><strong>B) Ropivacaína:</strong> Também é um amino-amida. Similar à bupivacaína, mas com menor potencial de toxicidade cardíaca.</p><p><strong>C) Lidocaína:</strong> Amino-amida de curta ação, muito versátil e amplamente utilizada.</p><p><strong>D) Procaína:</strong> <strong>Este é o único amino-éster da lista.</strong> Pertence à classe dos ésteres e foi o primeiro anestésico local sintetizado.</p><p>A diferença fundamental está na estrutura: os amino-ésteres contêm uma ligação éster (-COO-), enquanto os amino-amidas contêm uma ligação amida (-CONH-). Os ésteres são metabolizados pelas pseudocolinesterases plasmáticas, enquanto as amidas são metabolizadas no fígado.</p><p><strong>GABARITO: D - Procaína.</strong> É a única alternativa que pertence à classe dos amino-ésteres entre as opções apresentadas.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_FarmacologiaBasica",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AnestesicosLocais"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-25"
+    },
+    {
+      "numero": "Q27",
+      "enunciado": "A diferença entre o volume diastólico final e o volume sistólico final, dividida pelo volume diastólico final, corresponde ao(à):",
+      "alternativas": [
+        "gradiente transvalvar aórtico",
+        "fração de ejeção cardíaca",
+        "volume sistólico ejetado",
+        "pré-carga ventricular"
+      ],
+      "correta": 1,
+      "professor_comment": "<p>Esta questão avalia o conhecimento em fisiologia cardiovascular, especificamente sobre parâmetros hemodinâmicos e como calculá-los. É essencial para entender a função cardíaca e está diretamente relacionada ao acompanhamento de pacientes em UTI e centro cirúrgico.</p><p>O enunciado descreve o cálculo que resulta de uma operação matemática específica: (volume diastólico final - volume sistólico final) ÷ volume diastólico final. Vamos analisar o que cada alternativa representa:</p><p><strong>A) Gradiente transvalvar aórtico:</strong> É a diferença de pressão entre o ventrículo esquerdo e a aorta durante a ejeção. Não envolve volumes cardíacos.</p><p><strong>B) Fração de ejeção cardíaca:</strong> <strong>Esta é a resposta correta.</strong> A fração de ejeção é calculado exatamente como descrito: (VDF - VSF) ÷ VDF × 100%, onde VDF é o volume diastólico final e VSF é o volume sistólico final. Representa a porcentagem do volume ventricular que é ejetada a cada contração.</p><p><strong>C) Volume sistólico ejetado:</strong> É simplesmente a diferença VDF - VSF, mas não é dividida pelo VDF como mostrado no enunciado.</p><p><strong>D) Pré-carga ventricular:</strong> Refere-se ao grau de estiramento das fibras miocárdicas ao final da diástole, não é calculada desta forma.</p><p><strong>GABARITO: B - Fração de ejeção cardíaca.</strong> É o único parâmetro que utiliza exatamente esta fórmula matemática.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi",
+        "ClinicaMedica_Cardiologia_FisiologiaCardiacaEEletrocardi_FisiologiaCardiaca"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-26"
+    },
+    {
+      "numero": "Q28",
+      "enunciado": "Quando a saturação de oxigênio da hemoglobina é igual a 90%, o valor aproximado da PaO², em mmHg, deverá ser de:",
+      "alternativas": [
+        "20",
+        "40",
+        "60",
+        "80"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 testa o conhecimento sobre a curva de dissociação da hemoglobina e a relação entre saturação de oxigênio (SpO2) e pressão parcial de oxigênio (PaO2). É fundamental em medicina intensiva e anestesiologia para interpretação de gasometrias arteriais.</p><p>A curva de dissociação da hemoglobina segue uma relação sigmóide, onde pequenas mudanças na PaO2 resultam em grandes variações de saturação nas regiões intermediárias, mas essa relação se aplana nas extremidades.</p><p>Vamos analisar as alternativas:</p><p><strong>A) 20 mmHg:</strong> Corresponde a aproximadamente 35-40% de saturação, muito abaixo dos 90% mencionados.</p><p><strong>B) 40 mmHg:</strong> Corresponde a aproximadamente 75% de saturação, ainda inferior aos 90% solicitados.</p><p><strong>C) 60 mmHg:</strong> <strong>Corresponde a aproximadamente 90% de saturação da hemoglobina.</strong> Esta é a resposta correta.</p><p><strong>D) 80 mmHg:</strong> Corresponde a aproximadamente 95% de saturação, valor superior aos 90% mencionados.</p><p>A curva de dissociação mostra que no ponto de 90% de saturação, a PaO2 está próxima de 60 mmHg. Este é um valor clínico importante pois representa o limite inferior normal da função respiratória eficiente. Acima deste valor, a hemoglobina está altamente saturada, mas pequenas reduções abaixo podem causar queda significativa da saturação.</p><p><strong>GABARITO: C - 60 mmHg.</strong> É o valor aproximado que corresponde a 90% de saturação da hemoglobina.</p>",
+      "filterIds": [
+        "ClinicaMedica"
+      ],
+      "subFilterIds": [
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia",
+        "ClinicaMedica_Pneumologia_IntroducaoAPneumologia"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-27"
+    },
+    {
+      "numero": "Q29",
+      "enunciado": "Paciente em choque cardiogênico após infarto agudo do miocárdio, dependente de aminas vasoativas e ventilado mecanicamente, é classificado pela Sociedade Americana de Anestesiologia (ASA) como estado físico:",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correta": 3,
+      "professor_comment": "<p>Esta questão avalia o conhecimento sobre o sistema de classificação física da Sociedade Americana de Anestesiologia (ASA), que é fundamental para avaliação pré-operatória e stratificação de risco. A classificação ASA é amplamente utilizada mundialmente para padronizar a avaliação do estado geral dos pacientes.</p><p>O cenário apresentado é de um paciente em choque cardiogênico pós-infarto, dependente de aminas vasoativas e ventilado mecanicamente. Vamos analisar cada classe ASA:</p><p><strong>ASA 1:</strong> Paciente saudável normal. Não se aplica a este caso grave.</p><p><strong>ASA 2:</strong> Paciente com doença sistêmica leve. O caso apresentado é muito mais grave.</p><p><strong>ASA 3:</strong> Paciente com doença sistêmica severa. Este paciente tem comprometimento mais grave que a classe 3.</p><p><strong>ASA 4:</strong> <strong>Paciente com doença sistêmica severa que é uma constante ameaça à vida.</strong> <strong>Esta é a resposta correta.</strong></p><p>O paciente em choque cardiogênico representa instabilidade hemodinâmica severa, dependência de suporte farmacológico para manter a perfusão, e necessidade de ventilação mecânica - características típicas de ASA 4. A classificação ASA 4 indica que o paciente tem uma doença sistêmica severa que representa uma ameaça constante à vida, mesmo com tratamento.</p><p>É importante lembrar que pacientes em UTI, em choque, ou dependentes de suporte vital avançado são classificados como ASA 4. Este sistema de classificação é crucial para planejamento anestésico e comunicação entre profissionais de saúde.</p><p><strong>GABARITO: D - 4.</strong> O estado físico ASA 4 corresponde ao perfil clínico apresentado.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_AvaliacaoAnestesicaPreoperator"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-28"
+    },
+    {
+      "numero": "Q30",
+      "enunciado": "Paciente apresenta dispneia na unidade de recuperação pós-anestésica e mantém saturação de oxigênio = 88%, mesmo com oferta de oxigênio suplementar. Apesar de sonolento, desperta aos chamados e é capaz de movimentar os membros. A pressão arterial permanec",
+      "alternativas": [
+        "10",
+        "8",
+        "6",
+        "4"
+      ],
+      "correta": 2,
+      "professor_comment": "<p>Esta questão da SES-RJ 2021 avalia o conhecimento sobre monitoramento de pacientes no período pós-anestésico, especificamente sobre a escala de Aldrete. O cenário descrito é de um paciente com dispneia, saturação baixa (88%) mesmo com oxigênio suplementar, sonolento mas responsivo aos comandos.</p><p>A escala de Aldrete é utilizada para avaliar a prontidão para alta da sala de recuperação pós-anestésica (SRPA). Cada parâmetro é pontuado de 0 a 2, sendo que pontuações menores indicam maior comprometimento.</p><p>Analisando o quadro clínico apresentado:</p><p>O paciente apresenta dispneia e saturação de 88% (hipoxemia) mesmo com oxigênio suplementar, o que é preocupante. Está sonolento mas acorda aos chamados e movimenta os membros - isso indica resposta neurológica parcial.</p><p><strong>A) 10:</strong> Corresponderia a um paciente totalmente desperto, sem queixas respiratórias e com função cardiovascular estável - não é o caso.</p><p><strong>B) 8:</strong> Indica boa recuperação, mas ainda com alguma limitação - o comprometimento respiratório é mais grave.</p><p><strong>C) 6:</strong> <strong>Corresponde ao quadro apresentado.</strong> <strong>Esta é a resposta correta.</strong></p><p><strong>D) 4:</strong> Indica recuperação muito lenta, com maior comprometimento neurológico e respiratório - o paciente ainda está responsivo.</p><p>A pontuação 6 na escala de Aldrete indica que o paciente ainda não está pronto para alta da SRPA, necessitando de observação mais prolongada, investigação da causa da dispneia e otimização da ventilação. É fundamental identificar a causa da hipoxemia (atelectasias, embolia pulmonar, residuo anestésico, etc.) antes da alta.</p><p><strong>GABARITO: C - 6.</strong> É a pontuação que melhor corresponde ao estado clínico descrito.</p>",
+      "filterIds": [
+        "Cirurgia"
+      ],
+      "subFilterIds": [
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia",
+        "Cirurgia_PrincipiosDaAnestesiologia_CuidadosPosanestesicos"
+      ],
+      "tags": [
+        "SESRJ20212R3CM",
+        "SES-RJ",
+        "R3CM",
+        "RJ",
+        "2021",
+        "scraper"
+      ],
+      "dificuldade": "MEDIUM",
+      "tempId": "temp-scraper-1762733824263-29"
+    }
+  ]
+}

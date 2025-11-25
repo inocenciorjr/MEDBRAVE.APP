@@ -1,4 +1,4 @@
-import { Timestamp } from 'firebase-admin/firestore';
+// Tipos para o domínio de mentoria
 
 /**
  * Status da mentoria
@@ -78,8 +78,8 @@ export interface MentorProfile {
   }[];
   rating: number;
   totalSessions: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
@@ -92,11 +92,11 @@ export interface Mentorship {
   title: string;
   description?: string;
   status: MentorshipStatus;
-  startDate: Timestamp;
-  endDate?: Timestamp | null;
+  startDate: Date;
+  endDate?: Date | null;
   meetingFrequency?: MeetingFrequency;
-  nextMeetingDate?: Timestamp | null;
-  lastMeetingDate?: Timestamp | null;
+  nextMeetingDate?: Date | null;
+  lastMeetingDate?: Date | null;
   meetingCount?: number;
   customFrequencyDays?: number;
   totalMeetings?: number;
@@ -105,8 +105,8 @@ export interface Mentorship {
   notes?: string;
   rating: number | null;
   feedback: string | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
@@ -115,8 +115,8 @@ export interface Mentorship {
 export interface MentorshipMeeting {
   id: string;
   mentorshipId: string;
-  scheduledDate: Timestamp;
-  actualDate?: Timestamp | null;
+  scheduledDate: Date;
+  actualDate?: Date | null;
   duration: number;
   actualDuration?: number | null;
   status: MeetingStatus;
@@ -129,12 +129,12 @@ export interface MentorshipMeeting {
   studentFeedback?: string | null;
   rescheduledFromId?: string | null;
   rescheduledToId?: string | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
- * Interface para objetivo da mentoria
+ * Interface para objetivo de mentoria
  */
 export interface MentorshipObjective {
   id: string;
@@ -142,15 +142,15 @@ export interface MentorshipObjective {
   title: string;
   description?: string | null;
   status: ObjectiveStatus;
-  targetDate?: Timestamp | null;
-  completedDate?: Timestamp | null;
+  targetDate?: Date | null;
+  completedDate?: Date | null;
   progress: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
- * Interface para feedback da mentoria
+ * Interface para feedback de mentoria
  */
 export interface MentorshipFeedback {
   id: string;
@@ -161,8 +161,8 @@ export interface MentorshipFeedback {
   rating?: number | null;
   meetingId?: string | null;
   isAnonymous: boolean;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
@@ -176,24 +176,24 @@ export interface MentorshipResource {
   type: ResourceType;
   url: string;
   description?: string | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
- * Interface para simulado da mentoria
+ * Interface para exame simulado de mentoria
  */
 export interface MentorshipSimulatedExam {
   id: string;
   mentorshipId: string;
   simulatedExamId: string;
   assignedByUserId: string;
-  assignedDate: Timestamp;
-  dueDate?: Timestamp | null;
-  completedDate?: Timestamp | null;
+  assignedDate: Date;
+  dueDate?: Date | null;
+  completedDate?: Date | null;
   score?: number | null;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 /**
@@ -216,7 +216,10 @@ export interface CreateMentorProfilePayload {
  * Payload para atualização de perfil de mentor
  */
 export type UpdateMentorProfilePayload = Partial<
-  Omit<MentorProfile, 'id' | 'userId' | 'createdAt' | 'updatedAt' | 'rating' | 'totalSessions'>
+  Omit<
+    MentorProfile,
+    'id' | 'userId' | 'createdAt' | 'updatedAt' | 'rating' | 'totalSessions'
+  >
 >;
 
 /**
@@ -237,14 +240,16 @@ export interface CreateMentorshipPayload {
 /**
  * Payload para atualização de mentoria
  */
-export type UpdateMentorshipPayload = Partial<Omit<Mentorship, 'id' | 'createdAt' | 'updatedAt'>>;
+export type UpdateMentorshipPayload = Partial<
+  Omit<Mentorship, 'id' | 'createdAt' | 'updatedAt'>
+>;
 
 /**
  * Payload para criação de reunião de mentoria
  */
 export interface CreateMentorshipMeetingPayload {
   mentorshipId: string;
-  scheduledDate: Date | Timestamp;
+  scheduledDate: Date;
   duration: number;
   meetingType: MeetingType;
   meetingLink?: string | null;
@@ -267,7 +272,7 @@ export interface CreateMentorshipObjectivePayload {
   mentorshipId: string;
   title: string;
   description?: string | null;
-  targetDate?: Date | Timestamp | null;
+  targetDate?: Date | null;
   status?: ObjectiveStatus;
   progress?: number;
 }
@@ -298,7 +303,12 @@ export interface CreateMentorshipFeedbackPayload {
 export type UpdateMentorshipFeedbackPayload = Partial<
   Omit<
     MentorshipFeedback,
-    'id' | 'mentorshipId' | 'fromUserId' | 'toUserId' | 'createdAt' | 'updatedAt'
+    | 'id'
+    | 'mentorshipId'
+    | 'fromUserId'
+    | 'toUserId'
+    | 'createdAt'
+    | 'updatedAt'
   >
 >;
 
@@ -318,7 +328,10 @@ export interface CreateMentorshipResourcePayload {
  * Payload para atualização de recurso da mentoria
  */
 export type UpdateMentorshipResourcePayload = Partial<
-  Omit<MentorshipResource, 'id' | 'mentorshipId' | 'addedByUserId' | 'createdAt' | 'updatedAt'>
+  Omit<
+    MentorshipResource,
+    'id' | 'mentorshipId' | 'addedByUserId' | 'createdAt' | 'updatedAt'
+  >
 >;
 
 /**
@@ -328,7 +341,7 @@ export interface CreateMentorshipSimulatedExamPayload {
   mentorshipId: string;
   simulatedExamId: string;
   assignedByUserId: string;
-  dueDate?: Date | Timestamp | null;
+  dueDate?: Date | null;
 }
 
 /**

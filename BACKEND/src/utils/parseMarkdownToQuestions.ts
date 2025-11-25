@@ -60,10 +60,14 @@ interface ParsedMarkdownResult {
  */
 export async function parseMarkdownToQuestions(
   markdownContent: string,
-  source: string = 'REVALIDA'
+  source: string = 'REVALIDA',
 ): Promise<ParsedMarkdownResult> {
   console.log('📝 Iniciando parsing de Markdown para questões...');
-  console.log('📊 Tamanho do conteúdo:', markdownContent?.length || 0, 'caracteres');
+  console.log(
+    '📊 Tamanho do conteúdo:',
+    markdownContent?.length || 0,
+    'caracteres',
+  );
 
   const questions: BulkQuestion[] = [];
   const errors: string[] = [];
@@ -84,8 +88,8 @@ export async function parseMarkdownToQuestions(
         averageStatementLength: 0,
         questionsWithImages: 0,
         questionsWithTables: 0,
-        questionsWithExamData: 0
-      }
+        questionsWithExamData: 0,
+      },
     };
   }
 
@@ -102,32 +106,34 @@ export async function parseMarkdownToQuestions(
         averageStatementLength: 0,
         questionsWithImages: 0,
         questionsWithTables: 0,
-        questionsWithExamData: 0
-      }
+        questionsWithExamData: 0,
+      },
     };
   }
 
   try {
     // Dividir por questões usando marcador ## QUESTÃO (múltiplos padrões)
     let questionBlocks: string[] = [];
-    
+
     // Tentar diferentes padrões de divisão
     const patterns = [
       /## QUESTÃO\s+(\d+)/gi,
       /##\s*QUESTÃO\s+(\d+)/gi,
       /## Questão\s+(\d+)/gi,
       /## Q(\d+)/gi,
-      /(\d+)\.\s*(?=\w)/g // Padrão "1. " seguido de palavra
+      /(\d+)\.\s*(?=\w)/g, // Padrão "1. " seguido de palavra
     ];
-    
+
     let bestSplit: string[] = [];
     let usedPattern = '';
-    
+
     for (const [index, pattern] of patterns.entries()) {
       try {
-        const split = markdownContent.split(pattern).filter(block => block?.trim());
+        const split = markdownContent
+          .split(pattern)
+          .filter((block) => block?.trim());
         console.log(`🔍 Padrão ${index + 1}: ${split.length} blocos`);
-        
+
         if (split.length > bestSplit.length) {
           bestSplit = split;
           usedPattern = `Padrão ${index + 1}`;
@@ -136,24 +142,38 @@ export async function parseMarkdownToQuestions(
         console.warn(`⚠️ Erro no padrão ${index + 1}:`, patternError);
       }
     }
-    
+
     questionBlocks = bestSplit;
-    
-    console.log('🔍 Melhor divisão:', questionBlocks.length, 'blocos usando', usedPattern);
-    
+
+    console.log(
+      '🔍 Melhor divisão:',
+      questionBlocks.length,
+      'blocos usando',
+      usedPattern,
+    );
+
     if (questionBlocks.length < 2) {
-      const fallbackError = 'Nenhuma questão encontrada no formato esperado. Verifique se o Markdown contém marcadores "## QUESTÃO X"';
+      const fallbackError =
+        'Nenhuma questão encontrada no formato esperado. Verifique se o Markdown contém marcadores "## QUESTÃO X"';
       console.warn('⚠️', fallbackError);
       errors.push(fallbackError);
-      
+
       // Tentar fallback: dividir por quebras de linha dupla
-      const fallbackBlocks = markdownContent.split(/\n\s*\n/).filter(block => block.trim().length > 50);
-      console.log(`🔄 Fallback: tentando ${fallbackBlocks.length} blocos por quebras de linha`);
-      
+      const fallbackBlocks = markdownContent
+        .split(/\n\s*\n/)
+        .filter((block) => block.trim().length > 50);
+      console.log(
+        `🔄 Fallback: tentando ${fallbackBlocks.length} blocos por quebras de linha`,
+      );
+
       if (fallbackBlocks.length > 0) {
         for (let i = 0; i < Math.min(fallbackBlocks.length, 10); i++) {
           const block = fallbackBlocks[i];
-          const fallbackQuestion = createFallbackQuestion(block, (i + 1).toString(), source);
+          const fallbackQuestion = createFallbackQuestion(
+            block,
+            (i + 1).toString(),
+            source,
+          );
           if (fallbackQuestion) {
             questions.push(fallbackQuestion);
           }
@@ -163,9 +183,10 @@ export async function parseMarkdownToQuestions(
       // Processar blocos normalmente
       for (let i = 1; i < questionBlocks.length; i += 2) {
         try {
-          const questionNumber = questionBlocks[i]?.trim() || ((i + 1) / 2).toString();
+          const questionNumber =
+            questionBlocks[i]?.trim() || ((i + 1) / 2).toString();
           const questionContent = questionBlocks[i + 1];
-          
+
           if (!questionContent || questionContent.trim().length < 10) {
             const error = `Questão ${questionNumber}: Conteúdo insuficiente ou não encontrado`;
             errors.push(error);
@@ -173,14 +194,20 @@ export async function parseMarkdownToQuestions(
             continue;
           }
 
-          console.log(`📖 Processando QUESTÃO ${questionNumber} (${questionContent.length} chars)...`);
-          
+          console.log(
+            `📖 Processando QUESTÃO ${questionNumber} (${questionContent.length} chars)...`,
+          );
+
           // Extrair componentes da questão
-          const parsedQuestion = parseQuestionBlock(questionContent, questionNumber, source);
-          
+          const parsedQuestion = parseQuestionBlock(
+            questionContent,
+            questionNumber,
+            source,
+          );
+
           if (parsedQuestion) {
             questions.push(parsedQuestion);
-            
+
             // Contabilizar estatísticas
             if (parsedQuestion.images && parsedQuestion.images.length > 0) {
               imagesFound += parsedQuestion.images.length;
@@ -188,14 +215,13 @@ export async function parseMarkdownToQuestions(
             if (parsedQuestion.tables && parsedQuestion.tables.length > 0) {
               tablesFound += parsedQuestion.tables.length;
             }
-            
+
             console.log(`✅ Questão ${questionNumber} processada com sucesso`);
           } else {
             const error = `Questão ${questionNumber}: Falha no parsing - componentes insuficientes`;
             errors.push(error);
             console.warn('⚠️', error);
           }
-          
         } catch (questionError: any) {
           const questionNum = questionBlocks[i] || 'desconhecida';
           const error = `Questão ${questionNum}: ${questionError.message}`;
@@ -207,13 +233,13 @@ export async function parseMarkdownToQuestions(
 
     // Calcular estatísticas
     const statistics = calculateStatistics(questions);
-    
+
     console.log('✅ Parsing concluído:', {
       questionsExtracted: questions.length,
       imagesFound,
       tablesFound,
       errorsCount: errors.length,
-      successRate: `${Math.round((questions.length / Math.max(1, questionBlocks.length / 2)) * 100)}%`
+      successRate: `${Math.round((questions.length / Math.max(1, questionBlocks.length / 2)) * 100)}%`,
     });
 
     return {
@@ -222,35 +248,41 @@ export async function parseMarkdownToQuestions(
       imagesFound,
       tablesFound,
       errors,
-      statistics
+      statistics,
     };
-
   } catch (error: any) {
     const criticalError = `Erro crítico no parsing: ${error.message}`;
     console.error('❌', criticalError);
     console.error('Stack trace:', error.stack);
-    
+
     errors.push(criticalError);
-    
+
     // Tentar uma recuperação básica
     try {
       console.log('🔄 Tentando recuperação básica...');
-      const lines = markdownContent.split('\n').filter(line => line.trim().length > 20);
-      
+      const lines = markdownContent
+        .split('\n')
+        .filter((line) => line.trim().length > 20);
+
       for (let i = 0; i < Math.min(lines.length, 5); i++) {
         const line = lines[i];
-        const emergencyQuestion = createFallbackQuestion(line, (i + 1).toString(), source);
+        const emergencyQuestion = createFallbackQuestion(
+          line,
+          (i + 1).toString(),
+          source,
+        );
         if (emergencyQuestion) {
           questions.push(emergencyQuestion);
         }
       }
-      
-      console.log(`🆘 Recuperação básica: ${questions.length} questões criadas`);
-      
+
+      console.log(
+        `🆘 Recuperação básica: ${questions.length} questões criadas`,
+      );
     } catch (recoveryError) {
       console.error('❌ Falha também na recuperação básica:', recoveryError);
     }
-    
+
     return {
       questions,
       totalQuestions: questions.length,
@@ -261,8 +293,8 @@ export async function parseMarkdownToQuestions(
         averageStatementLength: 0,
         questionsWithImages: 0,
         questionsWithTables: 0,
-        questionsWithExamData: 0
-      }
+        questionsWithExamData: 0,
+      },
     };
   }
 }
@@ -270,7 +302,11 @@ export async function parseMarkdownToQuestions(
 /**
  * 📋 Parser de bloco individual de questão
  */
-function parseQuestionBlock(content: string, questionNumber: string, source: string): BulkQuestion | null {
+function parseQuestionBlock(
+  content: string,
+  questionNumber: string,
+  source: string,
+): BulkQuestion | null {
   try {
     if (!content || content.trim().length < 20) {
       console.warn(`⚠️ Questão ${questionNumber}: Conteúdo muito pequeno`);
@@ -279,17 +315,21 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
 
     // Extrair seções usando regex robustas com fallbacks
     let enunciadoMatch = content.match(/### Enunciado\s*([\s\S]*?)(?=###|$)/i);
-    let imagemMatch = content.match(/### Imagem[^#]*\s*(!\[.*?\]\([^)]+\))/i);
-    let tabelaMatch = content.match(/### Tabela[^#]*\s*([\s\S]*?)(?=###|$)/i);
-    let alternativasMatch = content.match(/### Alternativas\s*([\s\S]*?)(?=###|---|\n\n|$)/i);
+    const imagemMatch = content.match(/### Imagem[^#]*\s*(!\[.*?\]\([^)]+\))/i);
+    const tabelaMatch = content.match(/### Tabela[^#]*\s*([\s\S]*?)(?=###|$)/i);
+    let alternativasMatch = content.match(
+      /### Alternativas\s*([\s\S]*?)(?=###|---|\n\n|$)/i,
+    );
 
     // Fallbacks para formatos alternativos
     if (!enunciadoMatch) {
       // Tentar sem "###"
-      enunciadoMatch = content.match(/Enunciado[:\s]*([\s\S]*?)(?=Alternativas|Imagem|Tabela|$)/i);
+      enunciadoMatch = content.match(
+        /Enunciado[:\s]*([\s\S]*?)(?=Alternativas|Imagem|Tabela|$)/i,
+      );
       if (!enunciadoMatch) {
         // Último recurso: usar primeira parte do conteúdo
-        const lines = content.split('\n').filter(line => line.trim());
+        const lines = content.split('\n').filter((line) => line.trim());
         if (lines.length > 0) {
           enunciadoMatch = [content, lines.slice(0, 3).join(' ')]; // Usar primeiras 3 linhas
         }
@@ -298,7 +338,9 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
 
     if (!alternativasMatch) {
       // Tentar sem "###"
-      alternativasMatch = content.match(/Alternativas[:\s]*([\s\S]*?)(?=---|\n\n|$)/i);
+      alternativasMatch = content.match(
+        /Alternativas[:\s]*([\s\S]*?)(?=---|\n\n|$)/i,
+      );
       if (!alternativasMatch) {
         // Tentar buscar diretamente por padrão A), B), C)
         const altPattern = /([A-E])\)\s*.*$/gm;
@@ -311,19 +353,26 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
 
     // Validar componentes obrigatórios com mais flexibilidade
     if (!enunciadoMatch || !alternativasMatch) {
-      console.warn(`⚠️ Questão ${questionNumber}: Componentes obrigatórios não encontrados`);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Componentes obrigatórios não encontrados`,
+      );
       console.warn(`  - Enunciado: ${!!enunciadoMatch}`);
       console.warn(`  - Alternativas: ${!!alternativasMatch}`);
-      
+
       // Tentar criar questão básica mesmo assim
-      const fallbackStatement = enunciadoMatch ? 
-        enunciadoMatch[1].trim() : 
-        `Questão ${questionNumber} - enunciado não extraído corretamente`;
-        
-      const fallbackAlternatives = alternativasMatch ?
-        extractAlternatives(alternativasMatch[1]) :
-        ['A) Alternativa A não extraída', 'B) Alternativa B não extraída', 'C) Alternativa C não extraída', 'D) Alternativa D não extraída'];
-      
+      const fallbackStatement = enunciadoMatch
+        ? enunciadoMatch[1].trim()
+        : `Questão ${questionNumber} - enunciado não extraído corretamente`;
+
+      const fallbackAlternatives = alternativasMatch
+        ? extractAlternatives(alternativasMatch[1])
+        : [
+          'A) Alternativa A não extraída',
+          "B) Alternativa B não extraída",
+          'C) Alternativa C não extraída',
+          "D) Alternativa D não extraída",
+        ];
+
       return {
         id: generateUUID(),
         statement: fallbackStatement,
@@ -333,7 +382,7 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
         source: `${source}-partial`,
         difficulty: 'intermediária',
         specialty: 'medicina_geral',
-        timeEstimate: 120
+        timeEstimate: 120,
       };
     }
 
@@ -342,37 +391,47 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
 
     // Validar e limpar enunciado
     if (statement.length < 10) {
-      console.warn(`⚠️ Questão ${questionNumber}: Enunciado muito curto (${statement.length} chars)`);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Enunciado muito curto (${statement.length} chars)`,
+      );
       statement = `Questão ${questionNumber}: ${statement} [enunciado necessita revisão]`;
     }
 
     // Extrair alternativas com validação robusta
     const alternatives = extractAlternatives(alternativasText);
-    
+
     if (alternatives.length < 2) {
-      console.warn(`⚠️ Questão ${questionNumber}: Poucas alternativas encontradas (${alternatives.length})`);
-      
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Poucas alternativas encontradas (${alternatives.length})`,
+      );
+
       // Tentar recuperar alternativas de forma diferente
-      const lines = alternativasText.split('\n').filter(line => line.trim().length > 5);
+      const lines = alternativasText
+        .split('\n')
+        .filter((line) => line.trim().length > 5);
       const recoveredAlternatives: string[] = [];
-      
+
       for (const line of lines) {
         const cleaned = line.replace(/^[A-E]\)\s*/, '').trim();
         if (cleaned) {
           recoveredAlternatives.push(cleaned);
         }
       }
-      
+
       // Garantir pelo menos 4 alternativas
       while (recoveredAlternatives.length < 4) {
-        recoveredAlternatives.push(`Alternativa ${String.fromCharCode(65 + recoveredAlternatives.length)} não extraída`);
+        recoveredAlternatives.push(
+          `Alternativa ${String.fromCharCode(65 + recoveredAlternatives.length)} não extraída`,
+        );
       }
-      
+
       if (recoveredAlternatives.length < 2) {
-        console.warn(`❌ Questão ${questionNumber}: Impossível extrair alternativas válidas`);
+        console.warn(
+          `❌ Questão ${questionNumber}: Impossível extrair alternativas válidas`,
+        );
         return null;
       }
-      
+
       alternatives.length = 0;
       alternatives.push(...recoveredAlternatives.slice(0, 5)); // Máximo 5 alternativas
     }
@@ -381,12 +440,18 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
     const images: ExtractedImage[] = [];
     if (imagemMatch) {
       try {
-        const imageData = extractImageFromMarkdown(imagemMatch[1], questionNumber);
+        const imageData = extractImageFromMarkdown(
+          imagemMatch[1],
+          questionNumber,
+        );
         if (imageData) {
           images.push(imageData);
         }
       } catch (imageError) {
-        console.warn(`⚠️ Questão ${questionNumber}: Erro na extração de imagem:`, imageError);
+        console.warn(
+          `⚠️ Questão ${questionNumber}: Erro na extração de imagem:`,
+          imageError,
+        );
       }
     }
 
@@ -394,12 +459,18 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
     const tables: ExtractedTable[] = [];
     if (tabelaMatch) {
       try {
-        const tableData = extractTableFromMarkdown(tabelaMatch[1], questionNumber);
+        const tableData = extractTableFromMarkdown(
+          tabelaMatch[1],
+          questionNumber,
+        );
         if (tableData) {
           tables.push(tableData);
         }
       } catch (tableError) {
-        console.warn(`⚠️ Questão ${questionNumber}: Erro na extração de tabela:`, tableError);
+        console.warn(
+          `⚠️ Questão ${questionNumber}: Erro na extração de tabela:`,
+          tableError,
+        );
       }
     }
 
@@ -408,7 +479,10 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
     try {
       examData = extractExamData(statement);
     } catch (examError) {
-      console.warn(`⚠️ Questão ${questionNumber}: Erro na extração de dados de exame:`, examError);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Erro na extração de dados de exame:`,
+        examError,
+      );
     }
 
     // Detectar dificuldade e especialidade com fallbacks
@@ -419,19 +493,28 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
     try {
       difficulty = detectDifficulty(statement, alternatives);
     } catch (difficultyError) {
-      console.warn(`⚠️ Questão ${questionNumber}: Erro na detecção de dificuldade:`, difficultyError);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Erro na detecção de dificuldade:`,
+        difficultyError,
+      );
     }
 
     try {
       specialty = detectSpecialty(statement);
     } catch (specialtyError) {
-      console.warn(`⚠️ Questão ${questionNumber}: Erro na detecção de especialidade:`, specialtyError);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Erro na detecção de especialidade:`,
+        specialtyError,
+      );
     }
 
     try {
       timeEstimate = estimateTimeToSolve(statement, alternatives.length);
     } catch (timeError) {
-      console.warn(`⚠️ Questão ${questionNumber}: Erro na estimativa de tempo:`, timeError);
+      console.warn(
+        `⚠️ Questão ${questionNumber}: Erro na estimativa de tempo:`,
+        timeError,
+      );
     }
 
     // Gerar ID único
@@ -449,17 +532,21 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
       source,
       difficulty,
       specialty,
-      timeEstimate
+      timeEstimate,
     };
 
-    console.log(`✅ Questão ${questionNumber} extraída: ${statement.substring(0, 80)}...`);
-    
-    return question;
+    console.log(
+      `✅ Questão ${questionNumber} extraída: ${statement.substring(0, 80)}...`,
+    );
 
+    return question;
   } catch (error: any) {
-    console.error(`❌ Erro crítico parseando questão ${questionNumber}:`, error.message);
+    console.error(
+      `❌ Erro crítico parseando questão ${questionNumber}:`,
+      error.message,
+    );
     console.error('Stack trace:', error.stack);
-    
+
     // Última tentativa: criar questão de emergência
     try {
       return {
@@ -469,17 +556,20 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
           'A) Erro na extração - revisar manualmente',
           'B) Erro na extração - revisar manualmente',
           'C) Erro na extração - revisar manualmente',
-          'D) Erro na extração - revisar manualmente'
+          'D) Erro na extração - revisar manualmente',
         ],
         correctAnswer: '',
         explanation: `Questão ${questionNumber} teve erro durante extração de ${source}. Erro: ${error.message}`,
         source: `${source}-error`,
         difficulty: 'intermediária',
         specialty: 'medicina_geral',
-        timeEstimate: 120
+        timeEstimate: 120,
       };
     } catch (emergencyError) {
-      console.error(`❌ Falha também na criação de questão de emergência:`, emergencyError);
+      console.error(
+        "❌ Falha também na criação de questão de emergência:",
+        emergencyError,
+      );
       return null;
     }
   }
@@ -490,23 +580,23 @@ function parseQuestionBlock(content: string, questionNumber: string, source: str
  */
 function extractAlternatives(alternativasText: string): string[] {
   const alternatives: string[] = [];
-  
+
   // Regex para capturar alternativas A), B), C), etc.
   const alternativeRegex = /([A-E])\)\s*(.+?)(?=[A-E]\)|$)/gs;
-  
+
   let match;
   while ((match = alternativeRegex.exec(alternativasText)) !== null) {
     const text = match[2].trim();
-    
+
     if (text) {
       alternatives.push(text);
     }
   }
-  
+
   // Se não encontrou pelo regex, tentar divisão por linhas
   if (alternatives.length === 0) {
-    const lines = alternativasText.split('\n').filter(line => line.trim());
-    
+    const lines = alternativasText.split('\n').filter((line) => line.trim());
+
     for (const line of lines) {
       const cleanLine = line.replace(/^[A-E]\)\s*/, '').trim();
       if (cleanLine) {
@@ -514,22 +604,27 @@ function extractAlternatives(alternativasText: string): string[] {
       }
     }
   }
-  
+
   return alternatives;
 }
 
 /**
  * 🖼️ Extrair imagem do Markdown
  */
-function extractImageFromMarkdown(imageMarkdown: string, questionNumber: string): ExtractedImage | null {
+function extractImageFromMarkdown(
+  imageMarkdown: string,
+  questionNumber: string,
+): ExtractedImage | null {
   try {
     const match = imageMarkdown.match(/!\[(.*?)\]\((.*?)\)/);
-    
-    if (!match) return null;
-    
+
+    if (!match) {
+      return null;
+    }
+
     const description = match[1] || `Imagem da questão ${questionNumber}`;
     const src = match[2];
-    
+
     // Se for data URI, extrair dados
     if (src.startsWith('data:image/')) {
       return {
@@ -538,13 +633,16 @@ function extractImageFromMarkdown(imageMarkdown: string, questionNumber: string)
         filename: `questao_${questionNumber}_img.jpg`,
         description,
         dataUri: src,
-        type: 'base64'
+        type: 'base64',
       };
     }
-    
+
     return null;
   } catch (error) {
-    console.warn(`⚠️ Erro extraindo imagem da questão ${questionNumber}:`, error);
+    console.warn(
+      `⚠️ Erro extraindo imagem da questão ${questionNumber}:`,
+      error,
+    );
     return null;
   }
 }
@@ -552,38 +650,51 @@ function extractImageFromMarkdown(imageMarkdown: string, questionNumber: string)
 /**
  * 📊 Extrair tabela do Markdown
  */
-function extractTableFromMarkdown(tableMarkdown: string, questionNumber: string): ExtractedTable | null {
+function extractTableFromMarkdown(
+  tableMarkdown: string,
+  questionNumber: string,
+): ExtractedTable | null {
   try {
-    const lines = tableMarkdown.split('\n').filter(line => line.includes('|'));
-    
-    if (lines.length < 2) return null;
-    
+    const lines = tableMarkdown
+      .split('\n')
+      .filter((line) => line.includes('|'));
+
+    if (lines.length < 2) {
+      return null;
+    }
+
     const rows: string[][] = [];
-    
+
     for (const line of lines) {
       // Pular linha de separação (|---|---|)
-      if (line.includes('---')) continue;
-      
-      const cells = line.split('|')
-        .map(cell => cell.trim())
-        .filter(cell => cell !== '');
-      
+      if (line.includes('---')) {
+        continue;
+      }
+
+      const cells = line
+        .split('|')
+        .map((cell) => cell.trim())
+        .filter((cell) => cell !== '');
+
       if (cells.length > 0) {
         rows.push(cells);
       }
     }
-    
+
     if (rows.length > 0) {
       return {
         id: generateUUID(),
         rows,
-        html: tableMarkdown
+        html: tableMarkdown,
       };
     }
-    
+
     return null;
   } catch (error) {
-    console.warn(`⚠️ Erro extraindo tabela da questão ${questionNumber}:`, error);
+    console.warn(
+      `⚠️ Erro extraindo tabela da questão ${questionNumber}:`,
+      error,
+    );
     return null;
   }
 }
@@ -593,7 +704,7 @@ function extractTableFromMarkdown(tableMarkdown: string, questionNumber: string)
  */
 function extractExamData(statement: string): string[] {
   const examData: string[] = [];
-  
+
   // Padrões comuns de dados de exame médico
   const patterns = [
     /PA:\s*\d+\/\d+\s*mmHg/gi,
@@ -603,38 +714,54 @@ function extractExamData(statement: string): string[] {
     /Hb:\s*\d+[,.]?\d*\s*g\/dL/gi,
     /Glicose:\s*\d+\s*mg\/dL/gi,
     /Creatinina:\s*\d+[,.]?\d*\s*mg\/dL/gi,
-    /Ureia:\s*\d+\s*mg\/dL/gi
+    /Ureia:\s*\d+\s*mg\/dL/gi,
   ];
-  
+
   for (const pattern of patterns) {
     const matches = statement.match(pattern);
     if (matches) {
       examData.push(...matches);
     }
   }
-  
+
   return examData;
 }
 
 /**
  * 🎯 Detectar dificuldade da questão
  */
-function detectDifficulty(statement: string, alternatives: string[]): 'básica' | 'intermediária' | 'avançada' {
+function detectDifficulty(
+  statement: string,
+  alternatives: string[],
+): 'básica' | 'intermediária' | 'avançada' {
   const complexWords = [
-    'fisiopatologia', 'etiopatogenia', 'diagnóstico diferencial',
-    'prognóstico', 'farmacocinética', 'farmacodinâmica'
+    'fisiopatologia',
+    'etiopatogenia',
+    'diagnóstico diferencial',
+    'prognóstico',
+    'farmacocinética',
+    'farmacodinâmica',
   ];
-  
+
   const advancedTerms = [
-    'síndrome', 'protocolo', 'diretrizes', 'consenso',
-    'evidência', 'meta-análise', 'revisão sistemática'
+    'síndrome',
+    'protocolo',
+    'diretrizes',
+    'consenso',
+    'evidência',
+    'meta-análise',
+    'revisão sistemática',
   ];
-  
+
   const fullText = (statement + ' ' + alternatives.join(' ')).toLowerCase();
-  
-  const complexWordCount = complexWords.filter(word => fullText.includes(word)).length;
-  const advancedTermCount = advancedTerms.filter(term => fullText.includes(term)).length;
-  
+
+  const complexWordCount = complexWords.filter((word) =>
+    fullText.includes(word),
+  ).length;
+  const advancedTermCount = advancedTerms.filter((term) =>
+    fullText.includes(term),
+  ).length;
+
   if (advancedTermCount >= 2 || complexWordCount >= 3) {
     return 'avançada';
   } else if (complexWordCount >= 1 || advancedTermCount >= 1) {
@@ -649,40 +776,58 @@ function detectDifficulty(statement: string, alternatives: string[]): 'básica' 
  */
 function detectSpecialty(statement: string): string {
   const specialties = {
-    'cardiologia': ['coração', 'cardíaco', 'ecg', 'eletrocardiograma', 'infarto', 'angina'],
-    'pneumologia': ['pulmão', 'respiratório', 'asma', 'pneumonia', 'tuberculose'],
-    'neurologia': ['cérebro', 'neurológico', 'convulsão', 'epilepsia', 'avc'],
-    'gastroenterologia': ['abdome', 'estômago', 'intestino', 'fígado', 'digestivo'],
-    'ortopedia': ['osso', 'fratura', 'articulação', 'músculo', 'trauma'],
-    'pediatria': ['criança', 'infantil', 'recém-nascido', 'lactente'],
-    'ginecologia': ['útero', 'ovário', 'menstruação', 'gravidez', 'gestação']
+    cardiologia: [
+      'coração',
+      'cardíaco',
+      'ecg',
+      'eletrocardiograma',
+      'infarto',
+      'angina',
+    ],
+    pneumologia: ['pulmão', 'respiratório', 'asma', 'pneumonia', 'tuberculose'],
+    neurologia: ['cérebro', 'neurológico', 'convulsão', 'epilepsia', 'avc'],
+    gastroenterologia: [
+      'abdome',
+      'estômago',
+      'intestino',
+      'fígado',
+      'digestivo',
+    ],
+    ortopedia: ['osso', 'fratura', 'articulação', 'músculo', 'trauma'],
+    pediatria: ['criança', 'infantil', 'recém-nascido', 'lactente'],
+    ginecologia: ['útero', 'ovário', 'menstruação', 'gravidez', 'gestação'],
   };
-  
+
   const lowerStatement = statement.toLowerCase();
-  
+
   for (const [specialty, keywords] of Object.entries(specialties)) {
-    const matches = keywords.filter(keyword => lowerStatement.includes(keyword)).length;
+    const matches = keywords.filter((keyword) =>
+      lowerStatement.includes(keyword),
+    ).length;
     if (matches >= 2) {
       return specialty;
     }
   }
-  
+
   return 'clínica médica';
 }
 
 /**
  * ⏱️ Estimar tempo para resolver
  */
-function estimateTimeToSolve(statement: string, alternativesCount: number): number {
+function estimateTimeToSolve(
+  statement: string,
+  alternativesCount: number,
+): number {
   const baseTime = 120; // 2 minutos base
   const statementLength = statement.length;
-  
+
   // +30s para cada 200 caracteres extras
   const extraTime = Math.floor(statementLength / 200) * 30;
-  
+
   // +15s para cada alternativa extra (além de 4)
   const alternativeTime = Math.max(0, alternativesCount - 4) * 15;
-  
+
   return baseTime + extraTime + alternativeTime;
 }
 
@@ -695,22 +840,28 @@ function calculateStatistics(questions: BulkQuestion[]) {
       averageStatementLength: 0,
       questionsWithImages: 0,
       questionsWithTables: 0,
-      questionsWithExamData: 0
+      questionsWithExamData: 0,
     };
   }
-  
+
   const totalLength = questions.reduce((sum, q) => sum + q.statement.length, 0);
   const averageStatementLength = Math.round(totalLength / questions.length);
-  
-  const questionsWithImages = questions.filter(q => q.images && q.images.length > 0).length;
-  const questionsWithTables = questions.filter(q => q.tables && q.tables.length > 0).length;
-  const questionsWithExamData = questions.filter(q => q.examData && q.examData.length > 0).length;
-  
+
+  const questionsWithImages = questions.filter(
+    (q) => q.images && q.images.length > 0,
+  ).length;
+  const questionsWithTables = questions.filter(
+    (q) => q.tables && q.tables.length > 0,
+  ).length;
+  const questionsWithExamData = questions.filter(
+    (q) => q.examData && q.examData.length > 0,
+  ).length;
+
   return {
     averageStatementLength,
     questionsWithImages,
     questionsWithTables,
-    questionsWithExamData
+    questionsWithExamData,
   };
 }
 
@@ -718,9 +869,9 @@ function calculateStatistics(questions: BulkQuestion[]) {
  * 🆔 Gerar UUID simples
  */
 function generateUUID(): string {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    const r = Math.random() * 16 | 0;
-    const v = c === 'x' ? r : (r & 0x3 | 0x8);
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    const r = (Math.random() * 16) | 0;
+    const v = c === 'x' ? r : (r & 0x3) | 0x8;
     return v.toString(16);
   });
 }
@@ -728,14 +879,18 @@ function generateUUID(): string {
 /**
  * 🔄 Criar questão de fallback quando parsing normal falha
  */
-function createFallbackQuestion(content: string, questionNumber: string, source: string): BulkQuestion | null {
+function createFallbackQuestion(
+  content: string,
+  questionNumber: string,
+  source: string,
+): BulkQuestion | null {
   try {
     if (!content || content.trim().length < 20) {
       return null;
     }
 
     const trimmedContent = content.trim();
-    
+
     return {
       id: generateUUID(),
       statement: `Questão ${questionNumber} (fallback): ${trimmedContent.substring(0, 300)}${trimmedContent.length > 300 ? '...' : ''}`,
@@ -743,14 +898,14 @@ function createFallbackQuestion(content: string, questionNumber: string, source:
         'A) Opção A - revisar manualmente',
         'B) Opção B - revisar manualmente',
         'C) Opção C - revisar manualmente',
-        'D) Opção D - revisar manualmente'
+        'D) Opção D - revisar manualmente',
       ],
       correctAnswer: '',
       explanation: `Questão criada automaticamente de ${source} - requer revisão manual completa`,
       source: `${source}-fallback`,
       difficulty: 'intermediária',
       specialty: 'medicina_geral',
-      timeEstimate: 120
+      timeEstimate: 120,
     };
   } catch (error) {
     console.error('❌ Erro criando questão fallback:', error);
@@ -758,4 +913,9 @@ function createFallbackQuestion(content: string, questionNumber: string, source:
   }
 }
 
-export type { BulkQuestion, ParsedMarkdownResult, ExtractedImage, ExtractedTable }; 
+export type {
+  BulkQuestion,
+  ParsedMarkdownResult,
+  ExtractedImage,
+  ExtractedTable,
+};

@@ -24,7 +24,9 @@ export const AdminAuditLogSchema = z.object({
 /**
  * Schema para validação de requisições de criação de logs
  */
-export const CreateAuditLogSchema = AdminActionSchema.omit({ performedAt: true });
+export const CreateAuditLogSchema = AdminActionSchema.omit({
+  performedAt: true,
+});
 
 /**
  * Schema para validação de parâmetros de consulta de logs
@@ -37,11 +39,11 @@ export const AuditLogQuerySchema = z.object({
   descriptionContains: z.string().optional(),
   page: z
     .string()
-    .transform(val => parseInt(val, 10))
+    .transform((val) => parseInt(val, 10))
     .optional(),
   limit: z
     .string()
-    .transform(val => parseInt(val, 10))
+    .transform((val) => parseInt(val, 10))
     .optional(),
   sortBy: z.enum(['createdAt', 'action.type', 'action.performedBy']).optional(),
   sortDirection: z.enum(['asc', 'desc']).optional(),
@@ -70,6 +72,8 @@ export function validateAdminAuditLog(log: unknown): AdminAuditLog {
  * @param params Parâmetros a serem validados
  * @returns Parâmetros validados ou erro
  */
-export function validateAuditLogQueryParams(params: unknown): z.infer<typeof AuditLogQuerySchema> {
+export function validateAuditLogQueryParams(
+  params: unknown,
+): z.infer<typeof AuditLogQuerySchema> {
   return AuditLogQuerySchema.parse(params);
 }

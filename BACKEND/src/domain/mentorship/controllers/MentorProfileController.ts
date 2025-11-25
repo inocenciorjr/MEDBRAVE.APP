@@ -1,6 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
 import { MentorshipServiceFactory } from '../factories';
-import { CreateMentorProfilePayload, UpdateMentorProfilePayload } from '../types';
+import {
+  CreateMentorProfilePayload,
+  UpdateMentorProfilePayload,
+} from '../types';
 import AppError from '../../../utils/AppError';
 import { mentorshipLogger } from '../utils/loggerAdapter';
 
@@ -30,7 +33,8 @@ export class MentorProfileController {
         ...req.body,
       };
 
-      const profile = await this.mentorProfileService.createMentorProfile(profileData);
+      const profile =
+        await this.mentorProfileService.createMentorProfile(profileData);
 
       return res.status(201).json({
         success: true,
@@ -56,7 +60,10 @@ export class MentorProfileController {
 
       const updateData: UpdateMentorProfilePayload = req.body;
 
-      const profile = await this.mentorProfileService.updateMentorProfile(userId, updateData);
+      const profile = await this.mentorProfileService.updateMentorProfile(
+        userId,
+        updateData,
+      );
 
       if (!profile) {
         throw new AppError('Perfil de mentor não encontrado', 404);
@@ -84,7 +91,8 @@ export class MentorProfileController {
         throw new AppError('ID do usuário não fornecido', 400);
       }
 
-      const profile = await this.mentorProfileService.getMentorProfileByUserId(userId);
+      const profile =
+        await this.mentorProfileService.getMentorProfileByUserId(userId);
 
       if (!profile) {
         throw new AppError('Perfil de mentor não encontrado', 404);

@@ -1,173 +1,232 @@
 import {
-  UserStatistics,
-  StatisticsUpdatePayload,
-  StatisticsQueryOptions,
-  PredictiveAnalysis,
-  DifficultyLevel,
-  StudyPattern
+    UserStatistics,
+    StatisticsUpdatePayload,
+    StatisticsQueryOptions,
+    StatisticsWithComparison,
+    RankingData,
+    RankingFilters,
+    ComparisonData,
 } from '../types';
 
 /**
- * Interface do serviço de estatísticas de usuário com integração SRS avançada
+ * Interface do serviço de estatísticas de usuário
+ * Apenas funcionalidades essenciais e acionáveis
  */
 export interface IUserStatisticsService {
-  /**
-   * Obtém ou cria estatísticas de usuário
-   */
-  getOrCreateUserStatistics(userId: string, options?: StatisticsQueryOptions): Promise<UserStatistics>;
+    /**
+     * Obtém ou cria estatísticas de usuário
+     */
+    getOrCreateUserStatistics(
+        userId: string,
+        options?: StatisticsQueryOptions,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Atualiza estatísticas do usuário
-   */
-  updateUserStatistics(userId: string, payload: StatisticsUpdatePayload): Promise<UserStatistics>;
+    /**
+     * Obtém estatísticas com comparação vs outros usuários
+     */
+    getStatisticsWithComparison(
+        userId: string,
+        options?: StatisticsQueryOptions,
+    ): Promise<StatisticsWithComparison>;
 
-  /**
-   * Registra uma resposta de questão com integração SRS
-   */
-  recordQuestionAnswer(
-    userId: string,
-    questionId: string,
-    isCorrect: boolean,
-    options: {
-      filterId: string;
-      difficulty: DifficultyLevel;
-      timeSpent: number;
-      confidenceLevel?: number;
-      srsQuality?: number; // 0-3 para integração SRS
-      reviewType?: 'first_time' | 'review' | 'spaced_repetition';
-    }
-  ): Promise<UserStatistics>;
+    /**
+     * Atualiza estatísticas do usuário
+     */
+    updateUserStatistics(
+        userId: string,
+        payload: StatisticsUpdatePayload,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Inicia uma sessão de estudo
-   */
-  startStudySession(userId: string, sessionType: string): Promise<UserStatistics>;
+    /**
+     * Registra uma resposta de questão
+     */
+    recordQuestionAnswer(
+        userId: string,
+        questionId: string,
+        isCorrect: boolean,
+        isFirstAttempt: boolean,
+        specialtyId: string,
+        universityId?: string,
+        timeSpent?: number,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Finaliza uma sessão de estudo
-   */
-  endStudySession(
-    userId: string,
-    sessionData: {
-      questionsAnswered: number;
-      timeSpent: number;
-      focusEvents: number;
-      topicsStudied: string[];
-    }
-  ): Promise<UserStatistics>;
+    /**
+     * Registra tempo de estudo
+     */
+    recordStudyTime(
+        userId: string,
+        minutes: number,
+        date?: string,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Registra tempo de estudo adicional
-   */
-  recordStudyTime(
-    userId: string,
-    minutes: number,
-    sessionType: 'questions' | 'flashcards' | 'reading' | 'video'
-  ): Promise<UserStatistics>;
+    /**
+     * Registra flashcard estudado
+     */
+    recordFlashcardStudied(
+        userId: string,
+        flashcardId: string,
+        date?: string,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Registra conclusão de simulado
-   */
-  recordExamCompletion(
-    userId: string,
-    examData: {
-      score: number;
-      totalQuestions: number;
-      timeSpent: number;
-      specialty: string;
-      examType: string;
-      questionsCorrect: number;
-      confidenceMetrics?: {
-        confidentAndCorrect: number;
-        confidentAndWrong: number;
-        unsureAndCorrect: number;
-        unsureAndWrong: number;
-      };
-    }
-  ): Promise<UserStatistics>;
+    /**
+     * Registra revisão completada
+     */
+    recordReviewCompleted(
+        userId: string,
+        type: 'questions' | 'flashcards' | 'errorNotebook',
+        itemsReviewed: number,
+        date?: string,
+    ): Promise<UserStatistics>;
 
-  /**
-   * Atualiza streak do usuário
-   */
-  updateStreak(userId: string, date?: Date): Promise<UserStatistics>;
+    /**
+     * Atualiza streak do usuário
+     */
+    updateStreak(userId: string, date?: Date): Promise<UserStatistics>;
 
-  /**
-   * Recalcula estatísticas avançadas (análise preditiva, comparação com peers)
-   */
-  recalculateAdvancedMetrics(userId: string): Promise<UserStatistics>;
+    /**
+     * Obtém ranking geral de acertos
+     */
+    getAccuracyRanking(
+        userId: string,
+        filters?: RankingFilters,
+    ): Promise<RankingData>;
 
-  /**
-   * Gera análise preditiva personalizada
-   */
-  generatePredictiveAnalysis(userId: string): Promise<PredictiveAnalysis>;
+    /**
+     * Obtém ranking de acertos por especialidade
+     */
+    getSpecialtyAccuracyRanking(
+        userId: string,
+        specialtyId: string,
+        filters?: RankingFilters,
+    ): Promise<RankingData>;
 
-  /**
-   * Calcula recomendações inteligentes baseadas em SRS e performance
-   */
-  generateSmartRecommendations(userId: string): Promise<UserStatistics['recommendations']>;
+    /**
+     * Obtém ranking de questões respondidas
+     */
+    getQuestionsRanking(
+        userId: string,
+        filters?: RankingFilters,
+    ): Promise<RankingData>;
 
-  /**
-   * Identifica padrão de estudo do usuário
-   */
-  identifyStudyPattern(userId: string): Promise<StudyPattern>;
+    /**
+     * Obtém dados de comparação para uma métrica específica
+     */
+    getMetricComparison(
+        userId: string,
+        metric: 'accuracy' | 'questions' | 'studyTime' | 'flashcards' | 'reviews',
+        specialty?: string,
+    ): Promise<ComparisonData>;
 
-  /**
-   * Calcula nível de mastery de um tópico específico
-   */
-  calculateTopicMastery(userId: string, filterId: string): Promise<number>;
+    /**
+     * Recalcula todas as estatísticas do usuário
+     */
+    recalculateStatistics(userId: string): Promise<UserStatistics>;
 
-  /**
-   * Obtém rankings de usuários para comparação
-   */
-  getUserRankings(userId: string, context: 'global' | 'specialty' | 'institution'): Promise<{
-    overall: number;
-    byTopic: Record<string, number>;
-    percentile: number;
-  }>;
+    /**
+     * Atualiza apenas o streak do usuário (mais rápido que recalcular tudo)
+     */
+    updateStreakOnly(userId: string): Promise<{ currentStreak: number; longestStreak: number; lastActivityDate: string | null }>;
 
-  /**
-   * Identifica gaps de conhecimento baseado em SRS
-   */
-  identifyKnowledgeGaps(userId: string): Promise<Array<{
-    filterId: string;
-    severity: number;
-    lastReview: Date;
-    recommendedReview: Date;
-    srsInterval: number;
-  }>>;
+    /**
+     * Deleta estatísticas do usuário
+     */
+    deleteUserStatistics(userId: string): Promise<boolean>;
 
-  /**
-   * Calcula eficiência de estudo
-   */
-  calculateStudyEfficiency(userId: string, timeframe?: string): Promise<{
-    timeEfficiency: number;
-    retentionEfficiency: number;
-    accuracyImprovement: number;
-    overallEfficiency: number;
-  }>;
+    /**
+     * Obtém dados de tempo de estudo por dia
+     */
+    getStudyTimeData(
+        userId: string,
+        days?: number,
+    ): Promise<Array<{ date: string; minutes: number; sessions: number }>>;
 
-  /**
-   * Gera insights personalizados baseados em ML
-   */
-  generatePersonalizedInsights(userId: string): Promise<Array<{
-    type: 'warning' | 'suggestion' | 'congratulation' | 'insight';
-    message: string;
-    actionable: boolean;
-    priority: number;
-    category: 'performance' | 'time_management' | 'retention' | 'motivation';
-  }>>;
+    // === COMPARAÇÕES GLOBAIS ===
 
-  /**
-   * Exporta dados para análise externa
-   */
-  exportUserAnalytics(
-    userId: string,
-    format: 'json' | 'csv',
-    timeRange?: { start: Date; end: Date }
-  ): Promise<string>;
+    /**
+     * Obtém média global de acertos por mês (com filtro de período opcional)
+     */
+    getGlobalAccuracyByMonth(startDate?: Date, endDate?: Date): Promise<Array<{ month: string; averageAccuracy: number }>>;
 
-  /**
-   * Deleta estatísticas de usuário
-   */
-  deleteUserStatistics(userId: string): Promise<boolean>;
-} 
+    /**
+     * Obtém média global de acertos por especialidade (com filtro de período opcional)
+     */
+    getGlobalAccuracyBySpecialty(startDate?: Date, endDate?: Date): Promise<Array<{ 
+        filterId: string; 
+        filterName: string; 
+        averageAccuracy: number; 
+        totalQuestions: number;
+        totalUsers: number;
+    }>>;
+
+    /**
+     * Obtém média global de acertos por universidade (com filtro de período opcional)
+     */
+    getGlobalAccuracyByUniversity(startDate?: Date, endDate?: Date): Promise<Array<{ 
+        subFilterId: string; 
+        universityName: string; 
+        averageAccuracy: number; 
+        totalQuestions: number;
+        totalUsers: number;
+    }>>;
+
+    /**
+     * Obtém média global de questões respondidas por mês (com filtro de período opcional)
+     */
+    getGlobalQuestionsPerMonth(startDate?: Date, endDate?: Date): Promise<Array<{ month: string; averageQuestions: number }>>;
+
+    /**
+     * Obtém quantidade de questões por especialidade do usuário - por período
+     */
+    getUserQuestionsBySpecialty(
+        userId: string,
+        period: 'day' | 'week' | 'month',
+        startDate?: Date,
+        endDate?: Date
+    ): Promise<Array<{ 
+        filterId: string; 
+        filterName: string; 
+        count: number;
+        accuracy: number;
+    }>>;
+
+    /**
+     * Obtém quantidade de questões por universidade do usuário - por período
+     */
+    getUserQuestionsByUniversity(
+        userId: string,
+        period: 'day' | 'week' | 'month',
+        startDate?: Date,
+        endDate?: Date
+    ): Promise<Array<{ 
+        subFilterId: string; 
+        universityName: string; 
+        count: number;
+        accuracy: number;
+    }>>;
+
+    /**
+     * Obtém quantidade de questões por subespecialidade do usuário - por período
+     */
+    getUserQuestionsBySubspecialty(
+        userId: string,
+        period: 'day' | 'week' | 'month',
+        startDate?: Date,
+        endDate?: Date
+    ): Promise<Array<{ 
+        subFilterId: string; 
+        subspecialtyName: string; 
+        count: number;
+        accuracy: number;
+    }>>;
+
+    /**
+     * Obtém média global de acertos por subespecialidade (com filtro de período opcional)
+     */
+    getGlobalAccuracyBySubspecialty(startDate?: Date, endDate?: Date): Promise<Array<{ 
+        subFilterId: string; 
+        subspecialtyName: string; 
+        averageAccuracy: number; 
+        totalQuestions: number;
+        totalUsers: number;
+    }>>;
+}
