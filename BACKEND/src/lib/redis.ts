@@ -1,10 +1,9 @@
 import Redis from 'ioredis';
 
-// Redis connection configuration
-const REDIS_CONFIG = {
-  host: process.env.REDIS_HOST || 'localhost',
-  port: parseInt(process.env.REDIS_PORT || '6379'),
-  password: process.env.REDIS_PASSWORD,
+// Redis connection - use REDIS_URL if available (for Render, Railway, etc)
+const redisUrl = process.env.REDIS_URL;
+
+const baseConfig = {
   maxRetriesPerRequest: 3,
   retryStrategy: (times: number) => {
     const delay = Math.min(times * 50, 2000);
@@ -14,25 +13,30 @@ const REDIS_CONFIG = {
   lazyConnect: false,
 };
 
-// Redis configuration for BullMQ (requires maxRetriesPerRequest: null)
-const REDIS_QUEUE_CONFIG = {
-  host: process.env.REDIS_HOST || 'localhost',
-  port: parseInt(process.env.REDIS_PORT || '6379'),
-  password: process.env.REDIS_PASSWORD,
+const queueConfig = {
+  ...baseConfig,
   maxRetriesPerRequest: null, // Required by BullMQ for blocking operations
-  retryStrategy: (times: number) => {
-    const delay = Math.min(times * 50, 2000);
-    return delay;
-  },
-  enableReadyCheck: true,
-  lazyConnect: false,
 };
 
 // Create Redis client for general use
-export const redis = new Redis(REDIS_CONFIG);
+export const redis = redisUrl 
+  ? new Redis(redisUrl, baseConfig)
+  : new Redis({
+      host: process.env.REDIS_HOST || 'localhost',
+      port: parseInt(process.env.REDIS_PORT || '6379'),
+      password: process.env.REDIS_PASSWORD,
+      ...baseConfig,
+    });
 
 // Create Redis client for BullMQ (separate connection with null maxRetriesPerRequest)
-export const redisForQueue = new Redis(REDIS_QUEUE_CONFIG);
+export const redisForQueue = redisUrl
+  ? new Redis(redisUrl, queueConfig)
+  : new Redis({
+      host: process.env.REDIS_HOST || 'localhost',
+      port: parseInt(process.env.REDIS_PORT || '6379'),
+      password: process.env.REDIS_PASSWORD,
+      ...queueConfig,
+    });
 
 // Handle connection events
 redis.on('connect', () => {
