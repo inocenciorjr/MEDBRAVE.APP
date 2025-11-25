@@ -95,12 +95,34 @@ const hybridStorage = {
   },
 };
 
-export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    persistSession: true,
-    autoRefreshToken: true,
-    detectSessionInUrl: true,
-    storageKey: 'supabase.auth.token',
-    storage: hybridStorage,
-  },
-});
+// Criar cliente apenas no browser
+let _supabaseClient: SupabaseClient | null = null;
+
+function getSupabaseClient(): SupabaseClient {
+  if (typeof window === 'undefined') {
+    // No servidor, retornar um cliente com valores placeholder
+    return createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+        detectSessionInUrl: false,
+      },
+    });
+  }
+
+  if (!_supabaseClient) {
+    _supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        storageKey: 'supabase.auth.token',
+        storage: hybridStorage,
+      },
+    });
+  }
+
+  return _supabaseClient;
+}
+
+export const supabase: SupabaseClient = getSupabaseClient();
