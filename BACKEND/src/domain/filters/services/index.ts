@@ -1,2 +1,2 @@
-export { FilterService } from '../../../infra/filters/supabase/filterService';
+export { FilterService } from './FilterService';
 export { SubFilterService } from '../../../infra/filters/supabase/subFilterService';

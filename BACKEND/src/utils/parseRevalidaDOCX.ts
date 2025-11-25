@@ -106,7 +106,7 @@ export async function extractQuestionsFromDocx(
     const rows = (tableHtml.match(rowRegex) || []).map((rowHtml) => {
       const cellRegex = /<t[dh][^>]*>(.*?)<\/t[dh]>/g;
       const cells: string[] = [];
-      let match;
+      let match: RegExpExecArray | null;
       while ((match = cellRegex.exec(rowHtml)) !== null) {
         cells.push(match[1].replace(/<[^>]+>/g, '').trim());
       }

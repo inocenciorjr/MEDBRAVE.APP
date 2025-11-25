@@ -62,6 +62,9 @@ export class MediaController {
         ...parsed,
         type: (req.body.type as MediaType) || 'image',
         originalFilename: req.file.originalname,
+        filename: req.file.filename || req.file.originalname,
+        size: req.file.size || 0,
+        mimeType: req.file.mimetype,
         status: (req.body.status as MediaStatus) || 'active',
         isPublic:
           req.body.isPublic !== undefined
@@ -180,6 +183,7 @@ export class MediaController {
       const parsed = createMediaFolderSchema.parse(req.body);
       const data = {
         ...parsed,
+        name: parsed.name || 'Unnamed Folder',
         isPublic: parsed.isPublic !== undefined ? parsed.isPublic : true,
         userId: parsed.userId || 'anonymous',
       };
