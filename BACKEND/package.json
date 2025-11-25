@@ -16,7 +16,7 @@
     "lint:fix": "eslint --config eslint.config.js . --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install",
+    "prepare": "echo 'Skipping husky in production'",
     "pre-commit": "lint-staged",
     "docs": "typedoc --out docs src",
     "analyze-indexes": "ts-node scripts/analyze-required-indexes.ts",
