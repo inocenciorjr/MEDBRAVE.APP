@@ -101,9 +101,9 @@ export async function extractQuestionsFromDocx(
   const foundTableHtmls = html.match(tableRegex) || [];
   const foundTables: Array<{ html: string; rows: string[][] }> = [];
 
-  foundTableHtmls.forEach((tableHtml, idx) => {
+  foundTableHtmls.forEach((tableHtml: string, idx) => {
     const rowRegex = /<tr[\s\S]*?<\/tr>/g;
-    const rows = (tableHtml.match(rowRegex) || []).map((rowHtml) => {
+    const rows = ((tableHtml as string).match(rowRegex) || []).map((rowHtml: string) => {
       const cellRegex = /<t[dh][^>]*>(.*?)<\/t[dh]>/g;
       const cells: string[] = [];
       let match: RegExpExecArray | null;
