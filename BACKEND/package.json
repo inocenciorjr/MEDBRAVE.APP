@@ -2,9 +2,9 @@
   "name": "medforum",
   "version": "1.0.0",
   "description": "Plataforma médica moderna e segura para educação médica continuada",
-  "main": "dist/src/server.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/src/server.js",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
     "worker": "cross-env WORKER_MODE=true ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/worker.ts",
     "build": "rimraf dist && tsc",
