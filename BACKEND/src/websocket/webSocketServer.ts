@@ -1,7 +1,7 @@
 import { Server } from 'http';
 import { WebSocketServer, WebSocket } from 'ws';
 import { parse } from 'url';
-import { supabaseAdmin } from '../../supabase.config';
+import { supabaseAdmin } from '../supabase.config';
 import { logger } from '../utils/logger';
 
 interface AuthenticatedWebSocket extends WebSocket {

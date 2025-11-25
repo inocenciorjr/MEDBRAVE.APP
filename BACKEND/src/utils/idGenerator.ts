@@ -1,4 +1,4 @@
-import { supabaseAdmin } from '../../supabase.config';
+import { supabaseAdmin } from '../supabase.config';
 
 interface DeckData {
   collectionName?: string;
