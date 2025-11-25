@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { deckId } = await params;
   
   return {
-    title: 'Estudar Flashcards | MEDBRAVE',
-    description: 'Estude com flashcards e repetição espaçada',
+    title: 'Estudar Flashcards | MedBRAVE',
+    description: 'Seja Corajoso, Seja BRAVE!',
   };
 }
 

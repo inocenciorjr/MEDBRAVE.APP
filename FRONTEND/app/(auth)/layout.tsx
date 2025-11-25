@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Login - MEDBRAVE Admin',
-  description: 'Acesse o painel administrativo do MEDBRAVE',
+  title: 'Login - MedBRAVE',
+  description: 'Seja Corajoso, Seja BRAVE!',
 };
 
 export default function AuthLayout({

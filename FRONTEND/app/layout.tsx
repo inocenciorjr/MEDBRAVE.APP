@@ -21,8 +21,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MEDBRAVE Dashboard",
-  description: "Dashboard para plataforma de estudos médicos MEDBRAVE",
+  title: "MedBRAVE - A Plataforma do Revalidando",
+  description: "Seja Corajoso, Seja BRAVE!",
 };
 
 export default function RootLayout({

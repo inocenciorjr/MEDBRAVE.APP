@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { id } = await params;
   
   return {
-    title: `Coleção Oficial | Admin MEDBRAVE`,
-    description: 'Gerencie os decks desta coleção oficial',
+    title: `Coleção Oficial | Admin MedBRAVE`,
+    description: 'Seja Corajoso, Seja BRAVE!',
   };
 }
 

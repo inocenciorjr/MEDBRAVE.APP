@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { id } = await params;
   
   return {
-    title: `Resolução de Questões | MEDBRAVE`,
-    description: 'Resolva questões e acompanhe seu desempenho',
+    title: `Resolução de Questões | MedBRAVE`,
+    description: 'Seja Corajoso, Seja BRAVE!',
   };
 }
 
