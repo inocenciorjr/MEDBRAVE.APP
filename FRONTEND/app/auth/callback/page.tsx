@@ -15,28 +15,60 @@ function AuthCallbackContent() {
         const code = searchParams.get('code');
         const redirect = searchParams.get('redirect') || '/';
 
+        console.log('[Auth Callback] Iniciando callback com code:', code ? 'presente' : 'ausente');
+        console.log('[Auth Callback] Redirect para:', redirect);
+
         if (code) {
           // Trocar code por sessão (PKCE flow)
+          console.log('[Auth Callback] Tentando trocar código por sessão...');
           const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
 
           if (exchangeError) {
-            console.error('[Auth Callback] Erro ao trocar código:', exchangeError);
+            console.error('[Auth Callback] Erro ao trocar código:', exchangeError.message, exchangeError.status);
             
-            // Verificar se já está logado (código pode ter sido usado)
-            const { data: sessionData } = await supabase.auth.getSession();
-            
-            if (sessionData?.session) {
-              console.log('[Auth Callback] Usuário já está logado, redirecionando...');
-              router.push(redirect);
-              return;
+            // Se erro 400, código pode ter sido usado - aguardar e verificar sessão
+            if (exchangeError.status === 400) {
+              console.log('[Auth Callback] Erro 400 - aguardando sessão ser estabelecida...');
+              
+              // Aguardar um pouco para sessão ser estabelecida
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              
+              // Verificar se já está logado
+              const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
+              console.log('[Auth Callback] Verificação de sessão:', {
+                hasSession: !!sessionData?.session,
+                error: sessionError?.message
+              });
+              
+              if (sessionData?.session) {
+                console.log('[Auth Callback] ✅ Sessão encontrada! Redirecionando para:', redirect);
+                router.push(redirect);
+                return;
+              }
+              
+              // Tentar refresh da sessão
+              console.log('[Auth Callback] Tentando refresh da sessão...');
+              const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
+              
+              if (refreshData?.session) {
+                console.log('[Auth Callback] ✅ Sessão recuperada via refresh! Redirecionando...');
+                router.push(redirect);
+                return;
+              }
+              
+              console.error('[Auth Callback] ❌ Não foi possível recuperar sessão:', refreshError?.message);
             }
             
-            setError('Erro ao autenticar. Tente novamente.');
+            setError('Erro ao autenticar. Tente fazer login novamente.');
+            setTimeout(() => router.push('/login'), 3000);
             return;
           }
 
+          console.log('[Auth Callback] ✅ Código trocado com sucesso!');
+
           // Salvar tokens nos cookies
           if (data?.session) {
+            console.log('[Auth Callback] Salvando tokens nos cookies...');
             document.cookie = `sb-access-token=${data.session.access_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
             document.cookie = `sb-refresh-token=${data.session.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
           }
@@ -45,19 +77,23 @@ function AuthCallbackContent() {
           await new Promise(resolve => setTimeout(resolve, 1000));
 
           if (window.opener) {
+            console.log('[Auth Callback] Popup detectado - enviando mensagem e fechando...');
             window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
             await new Promise(resolve => setTimeout(resolve, 500));
             window.close();
           } else {
+            console.log('[Auth Callback] Redirecionando para:', redirect);
             router.push(redirect);
           }
         } else {
           // Implicit flow - tokens no hash
           if (window.location.hash.includes('access_token')) {
+            console.log('[Auth Callback] Tokens no hash detectados - aguardando processamento...');
             // Aguardar Supabase processar
             await new Promise(resolve => setTimeout(resolve, 1000));
             router.push(redirect);
           } else {
+            console.log('[Auth Callback] Sem código ou tokens - redirecionando para login...');
             // Sem autenticação
             if (window.opener) {
               window.close();
@@ -67,8 +103,9 @@ function AuthCallbackContent() {
           }
         }
       } catch (err) {
-        console.error('[Auth Callback] Erro:', err);
+        console.error('[Auth Callback] Erro não tratado:', err);
         setError('Erro ao processar autenticação.');
+        setTimeout(() => router.push('/login'), 3000);
       }
     };
 
