@@ -16,19 +16,19 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
  * URL do projeto Supabase
  * Deve ser definida na variável de ambiente NEXT_PUBLIC_SUPABASE_URL
  */
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
 
 /**
  * Chave anônima (pública) do Supabase
  * Deve ser definida na variável de ambiente NEXT_PUBLIC_SUPABASE_ANON_KEY
  */
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBsYWNlaG9sZGVyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTI4MDAsImV4cCI6MTk2MDc2ODgwMH0.placeholder';
 
 /**
  * Validação de variáveis de ambiente obrigatórias
  * Exibe aviso no console se alguma variável estiver faltando
  */
-if (!supabaseUrl || !supabaseAnonKey) {
+if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
   console.warn(
     '⚠️ [Supabase Config] Variáveis de ambiente faltando. ' +
     'Verifique se NEXT_PUBLIC_SUPABASE_URL e NEXT_PUBLIC_SUPABASE_ANON_KEY estão definidas.'
