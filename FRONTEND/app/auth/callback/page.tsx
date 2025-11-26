@@ -115,10 +115,12 @@ function AuthCallbackContent() {
             
             // Salvar nos cookies também
             const isProduction = window.location.hostname !== 'localhost';
-            const cookieOptions = `path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax${isProduction ? '; Secure' : ''}`;
+            const domain = isProduction ? '; Domain=.medbrave.com.br' : '';
+            const cookieOptions = `path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax${isProduction ? '; Secure' : ''}${domain}`;
             document.cookie = `sb-access-token=${data.session.access_token}; ${cookieOptions}`;
             document.cookie = `sb-refresh-token=${data.session.refresh_token}; ${cookieOptions}`;
             console.log('[Auth Callback] Cookies salvos com opções:', cookieOptions);
+            console.log('[Auth Callback] Verificando cookies após salvar:', document.cookie);
           }
 
           if (window.opener) {
