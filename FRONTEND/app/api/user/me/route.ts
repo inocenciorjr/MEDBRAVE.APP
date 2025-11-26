@@ -30,13 +30,18 @@ export async function GET(request: NextRequest) {
       );
     }
 
+    console.log('[API Route /api/user/me] Chamando backend:', `${BACKEND_URL}/api/user/me`);
+    
     const response = await fetch(`${BACKEND_URL}/api/user/me`, {
       headers: {
         'Authorization': authHeader,
       },
     });
     
+    console.log('[API Route /api/user/me] Backend response status:', response.status);
+    
     const data = await response.json();
+    console.log('[API Route /api/user/me] Backend response data:', data);
 
     return NextResponse.json(data, { status: response.status });
   } catch (error) {

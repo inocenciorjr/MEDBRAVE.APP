@@ -53,8 +53,13 @@ export const supabaseAuthMiddleware = async (
   _res: Response,
   next: NextFunction,
 ): Promise<void> => {
+  console.log('🔐 [SupabaseAuthMiddleware] Iniciando verificação de autenticação');
+  console.log('🔐 [SupabaseAuthMiddleware] Path:', req.path);
+  console.log('🔐 [SupabaseAuthMiddleware] Method:', req.method);
+  
   try {
     const authHeader = req.headers.authorization;
+    console.log('🔐 [SupabaseAuthMiddleware] Authorization header:', authHeader ? 'presente' : 'ausente');
 
     if (!authHeader) {
       logger.warn(
