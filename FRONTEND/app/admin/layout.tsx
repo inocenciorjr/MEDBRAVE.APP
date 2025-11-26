@@ -1,53 +1,59 @@
-import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { AdminLayout } from '@/components/admin/layout/AdminLayout';
+import { supabase } from '@/config/supabase';
 
 /**
- * Layout Server-Side para área administrativa
- * Verifica autenticação e permissões ANTES de renderizar a UI
+ * Layout Client-Side para área administrativa
+ * Verifica autenticação no cliente
  */
-export default async function AdminServerLayout({
+export default function AdminClientLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const cookieStore = await cookies();
+  const router = useRouter();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Pegar token dos cookies customizados
-  const accessToken = cookieStore.get('sb-access-token')?.value;
+  useEffect(() => {
+    checkAuth();
+  }, []);
 
-  console.log('[Admin Layout SSR] Cookies disponíveis:', cookieStore.getAll().map(c => c.name));
-  console.log('[Admin Layout SSR] Token encontrado:', accessToken ? 'SIM' : 'NÃO');
+  const checkAuth = async () => {
+    try {
+      // Verificar sessão do Supabase
+      const { data: { session } } = await supabase.auth.getSession();
+      
+      if (!session) {
+        console.log('[Admin Layout] Sem sessão, redirecionando para login');
+        router.push('/login?redirect=/admin');
+        return;
+      }
 
-  if (!accessToken) {
-    console.log('[Admin Layout SSR] Sem token, redirecionando para login');
-    redirect('/login?redirect=/admin');
+      console.log('[Admin Layout] Sessão encontrada, usuário autenticado');
+      setIsAuthenticated(true);
+    } catch (error) {
+      console.error('[Admin Layout] Erro ao verificar autenticação:', error);
+      router.push('/login?redirect=/admin');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    );
   }
 
-  // Verificar role chamando o backend
-  try {
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
-    const response = await fetch(`${backendUrl}/api/user/me`, {
-      headers: {
-        'Authorization': `Bearer ${accessToken}`,
-      },
-      cache: 'no-store',
-    });
-
-    if (!response.ok) {
-      redirect('/login?redirect=/admin');
-    }
-
-    const user = await response.json();
-    const role = user.role?.toUpperCase();
-    
-    if (role !== 'ADMIN' && role !== 'SUPERADMIN') {
-      redirect('/login?redirect=/admin');
-    }
-  } catch (error) {
-    redirect('/login?redirect=/admin');
+  if (!isAuthenticated) {
+    return null;
   }
 
-  // Usuário é admin, renderizar a UI
   return <AdminLayout>{children}</AdminLayout>;
 }
