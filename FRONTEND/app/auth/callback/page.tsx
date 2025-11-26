@@ -91,6 +91,8 @@ function AuthCallbackContent() {
           }
 
           console.log('[Auth Callback] ✅ Código trocado com sucesso!');
+          console.log('[Auth Callback] 🔍 data?.session existe?', !!data?.session);
+          console.log('[Auth Callback] 🔍 data completo:', data);
 
           // Salvar tokens e usuário
           if (data?.session) {
