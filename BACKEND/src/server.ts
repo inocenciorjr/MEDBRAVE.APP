@@ -15,7 +15,7 @@ import { apkgProgressService } from './services/apkgProgressService';
 
 // Configuração do servidor
 const PORT = env.PORT;
-const HOST = process.env.HOST || 'localhost';
+const HOST = process.env.HOST || '0.0.0.0';
 
 // Função async para inicializar o servidor
 async function startServer() {
