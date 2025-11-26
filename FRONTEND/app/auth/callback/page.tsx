@@ -65,6 +65,27 @@ function AuthCallbackContent() {
                   }));
                   console.log('[Auth Callback] Token e usuário salvos no localStorage');
                   
+                  // Salvar nos cookies via API route (para SSR)
+                  try {
+                    console.log('[Auth Callback] Salvando cookies via API route...');
+                    const cookieResponse = await fetch('/api/auth/set-cookies', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        accessToken: sessionData.session.access_token,
+                        refreshToken: sessionData.session.refresh_token
+                      })
+                    });
+                    
+                    if (cookieResponse.ok) {
+                      console.log('[Auth Callback] ✅ Cookies salvos com sucesso via API route');
+                    } else {
+                      console.error('[Auth Callback] ❌ Erro ao salvar cookies:', await cookieResponse.text());
+                    }
+                  } catch (cookieError) {
+                    console.error('[Auth Callback] ❌ Erro ao chamar API de cookies:', cookieError);
+                  }
+                  
                   // Usar window.location.href para forçar reload completo
                   console.log('[Auth Callback] Redirecionando com reload completo...');
                   window.location.href = redirect;
