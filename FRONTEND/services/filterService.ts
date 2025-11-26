@@ -1,5 +1,7 @@
 import { fetchWithAuth } from '../lib/utils/fetchWithAuth';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
+
+const supabase = createClient();
 
 const FILTERS_COLLECTION = 'filters';
 const SUBFILTERS_COLLECTION = 'subFilters';

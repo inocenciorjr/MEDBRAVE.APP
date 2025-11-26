@@ -1,5 +1,7 @@
-import { supabase } from '../config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import { supabaseAuthService } from '@/lib/services/supabaseAuthService';
+
+const supabase = createClient();
 
 // Cache para otimização
 const CACHE_TTL = 2 * 60 * 1000; // 2 minutos

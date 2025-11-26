@@ -85,7 +85,8 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
           setIsLoadingPreferences(true);
           console.log('🔄 Carregando preferências do usuário...');
           
-          const { supabase } = await import('@/config/supabase');
+          const { createClient } = await import('@/lib/supabase/client');
+          const supabase = createClient();
           const { data: { session } } = await supabase.auth.getSession();
 
           if (!session) {
@@ -236,7 +237,8 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
         return;
       }
 
-      const { supabase } = await import('@/config/supabase');
+      const { createClient } = await import('@/lib/supabase/client');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
 
       if (!session) return;
@@ -382,7 +384,8 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
     setShowDisableConfirmation(false);
 
     try {
-      const { supabase } = await import('@/config/supabase');
+      const { createClient } = await import('@/lib/supabase/client');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
 
       if (!session) return;

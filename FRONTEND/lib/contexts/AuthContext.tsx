@@ -15,9 +15,11 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import { supabaseAuthService } from '@/lib/services/supabaseAuthService';
 import type { User } from '@/lib/types/auth';
+
+const supabase = createClient();
 
 /**
  * Interface do valor do contexto de autenticação

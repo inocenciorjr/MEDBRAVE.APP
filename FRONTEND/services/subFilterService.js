@@ -1,5 +1,7 @@
-import { supabase } from "../config/supabase";
+import { createClient } from "@/lib/supabase/client";
 import { buildHierarchy } from "../utils/hierarchyUtils";
+
+const supabase = createClient();
 
 // Cache para armazenar subfiltros já carregados por filterId
 const subfiltrosCache = new Map();

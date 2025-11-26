@@ -6,7 +6,9 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { StatsGrid } from '@/components/admin/dashboard/StatsGrid';
 import { QuickActions } from '@/components/admin/dashboard/QuickActions';
 import { getDashboardStats, type DashboardStats } from '@/services/admin/statsService';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
+
+const supabase = createClient();
 
 export default function AdminDashboardPage() {
   const router = useRouter();

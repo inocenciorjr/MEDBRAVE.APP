@@ -1,4 +1,6 @@
-import { supabase } from '../config/supabase';
+import { createClient } from '@/lib/supabase/client';
+
+const supabase = createClient();
 
 // 🔍 MONITOR DE REQUISIÇÕES SUPABASE
 let requestCount = 0;

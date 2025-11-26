@@ -7,6 +7,7 @@ import { io, Socket } from 'socket.io-client';
 import Checkbox from '@/components/ui/Checkbox';
 import Dropdown from '@/components/ui/Dropdown';
 import { ImageCropModal } from './ImageCropModal';
+import { createClient } from '@/lib/supabase/client';
 
 interface ImportAnkiModalProps {
     isOpen: boolean;
@@ -116,7 +117,7 @@ export function ImportAnkiModal({ isOpen, onClose, onSuccess }: ImportAnkiModalP
             const cleanupPreviewFile = async () => {
                 if (fileAnalysis?.tempFileName && !importResult && !isImporting) {
                     try {
-                        const { supabase } = await import('@/config/supabase');
+                        const supabase = createClient();
                         const { data: { session } } = await supabase.auth.getSession();
 
                         if (session) {
@@ -182,7 +183,7 @@ export function ImportAnkiModal({ isOpen, onClose, onSuccess }: ImportAnkiModalP
         setIsImporting(true);
 
         try {
-            const { supabase } = await import('@/config/supabase');
+            const supabase = createClient();
             const { data: { session } } = await supabase.auth.getSession();
 
             if (!session) {
@@ -412,7 +413,7 @@ export function ImportAnkiModal({ isOpen, onClose, onSuccess }: ImportAnkiModalP
         }, 100);
 
         try {
-            const { supabase } = await import('@/config/supabase');
+            const supabase = createClient();
             const { data: { session } } = await supabase.auth.getSession();
 
             if (!session) {

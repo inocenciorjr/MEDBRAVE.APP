@@ -157,7 +157,8 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
   };
 
   const loadWeekData = async (days: Date[], weekKey: string) => {
-    const { supabase } = await import('@/config/supabase');
+    const { createClient } = await import('@/lib/supabase/client');
+    const supabase = createClient();
     const { data: { session } } = await supabase.auth.getSession();
     
     if (!session) return [];

@@ -10,9 +10,11 @@
  * @module lib/services/supabaseAuthService
  */
 
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import type { User, AuthResult, BackendUserData } from '@/lib/types/auth';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
+
+const supabase = createClient();
 
 /**
  * Duração do cache de tokens em milissegundos (50 minutos)

@@ -2,10 +2,12 @@
 
 import { useState, FormEvent, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import { AdminButton } from '@/components/admin/ui/AdminButton';
 import { AdminInput } from '@/components/admin/ui/AdminInput';
 import { AdminCard } from '@/components/admin/ui/AdminCard';
+
+const supabase = createClient();
 
 function LoginContent() {
   const router = useRouter();

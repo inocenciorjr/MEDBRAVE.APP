@@ -3,7 +3,9 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { AdminLayout } from '@/components/admin/layout/AdminLayout';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
+
+const supabase = createClient();
 
 /**
  * Layout Client-Side para área administrativa

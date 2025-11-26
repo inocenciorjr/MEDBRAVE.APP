@@ -12,9 +12,11 @@
  * @module lib/utils/fetchWithAuth
  */
 
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
 import { supabaseAuthService } from '@/lib/services/supabaseAuthService';
 import type { TokenCache, FetchStats } from '@/lib/types/auth';
+
+const supabase = createClient();
 
 /**
  * Duração do cache de tokens em milissegundos (50 minutos)

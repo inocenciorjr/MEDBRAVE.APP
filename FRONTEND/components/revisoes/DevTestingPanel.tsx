@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
 
 export function DevTestingPanel() {
   const [loading, setLoading] = useState(false);
@@ -15,7 +16,7 @@ export function DevTestingPanel() {
   // Verificar status do backend ao montar
   const checkBackend = async () => {
     try {
-      const { supabase } = await import('@/config/supabase');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
       
       if (!session) {
@@ -46,7 +47,7 @@ export function DevTestingPanel() {
       setLoading(true);
       setMessage('Criando cards...');
       
-      const { supabase } = await import('@/config/supabase');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
       
       if (!session) {
@@ -90,7 +91,7 @@ export function DevTestingPanel() {
       setLoading(true);
       setMessage('Simulando atraso...');
       
-      const { supabase } = await import('@/config/supabase');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
       
       if (!session) {
@@ -127,7 +128,7 @@ export function DevTestingPanel() {
       setLoading(true);
       setMessage('Resetando datas...');
       
-      const { supabase } = await import('@/config/supabase');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
       
       if (!session) {
@@ -163,7 +164,7 @@ export function DevTestingPanel() {
       setLoading(true);
       setMessage('Deletando cards de teste...');
       
-      const { supabase } = await import('@/config/supabase');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
       
       if (!session) {

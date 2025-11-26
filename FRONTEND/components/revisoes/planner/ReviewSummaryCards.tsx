@@ -146,7 +146,8 @@ export function ReviewSummaryCards() {
 
   const loadSummary = async () => {
     try {
-      const { supabase } = await import('@/config/supabase');
+      const { createClient } = await import('@/lib/supabase/client');
+      const supabase = createClient();
       const { data: { session } } = await supabase.auth.getSession();
 
       if (!session) return;

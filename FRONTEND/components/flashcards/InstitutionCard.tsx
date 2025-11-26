@@ -25,7 +25,8 @@ export function InstitutionCard({ institution, isImported: importedProp = false,
   useEffect(() => {
     async function getCurrentUser() {
       try {
-        const { supabase } = await import('@/config/supabase');
+        const { createClient } = await import('@/lib/supabase/client');
+        const supabase = createClient();
         const { data: { user } } = await supabase.auth.getUser();
         setCurrentUserId(user?.id || null);
       } catch (error) {
