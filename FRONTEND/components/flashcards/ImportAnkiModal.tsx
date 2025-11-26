@@ -312,7 +312,10 @@ export function ImportAnkiModal({ isOpen, onClose, onSuccess }: ImportAnkiModalP
 
     const connectWebSocket = async (userId: string) => {
         // Usar a URL do backend a partir da variável de ambiente
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+        const isDev = process.env.NODE_ENV === 'development';
+        const backendUrl = isDev 
+          ? 'http://localhost:5000' 
+          : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
 
         const socket = io(backendUrl, {
             path: '/socket.io',

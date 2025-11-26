@@ -2,14 +2,53 @@ import { createBrowserClient } from '@supabase/ssr';
 import type { CookieOptions } from '@supabase/ssr';
 
 /**
+ * Storage adapter que usa cookies para PKCE verifier
+ * Funciona em modo anônimo/privado onde localStorage pode falhar
+ */
+class CookieStorageAdapter {
+  getItem(key: string): string | null {
+    if (typeof document === 'undefined') return null;
+    
+    const value = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${key}=`))
+      ?.split('=')[1];
+    
+    return value ? decodeURIComponent(value) : null;
+  }
+
+  setItem(key: string, value: string): void {
+    if (typeof document === 'undefined') return;
+    
+    // Cookies com 1 hora de expiração para PKCE verifier
+    const maxAge = 3600; // 1 hora
+    document.cookie = `${key}=${encodeURIComponent(value)}; max-age=${maxAge}; path=/; samesite=lax; secure`;
+  }
+
+  removeItem(key: string): void {
+    if (typeof document === 'undefined') return;
+    
+    document.cookie = `${key}=; max-age=0; path=/`;
+  }
+}
+
+/**
  * Cria um cliente Supabase para uso em Client Components
- * Usa cookies e localStorage para persistir a sessão e PKCE verifier
+ * Usa cookies para persistir sessão E PKCE verifier (funciona em modo anônimo)
  */
 export function createClient() {
   return createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      auth: {
+        // Usar cookies em vez de localStorage para PKCE
+        storage: new CookieStorageAdapter() as any,
+        flowType: 'pkce',
+        detectSessionInUrl: true,
+        persistSession: true,
+        autoRefreshToken: true,
+      },
       cookies: {
         get(name: string) {
           // Ler cookie do browser

@@ -1655,7 +1655,11 @@ const BulkCreateQuestionsPage: React.FC = () => {
           const results = await new Promise<CategorizationResult[]>((resolve, reject) => {
             // Criar conexão WebSocket temporária para este job
             const { io } = require('socket.io-client');
-            const socket = io(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000', {
+            const isDev = process.env.NODE_ENV === 'development';
+            const backendUrl = isDev 
+              ? 'http://localhost:5000' 
+              : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
+            const socket = io(backendUrl, {
               path: '/socket.io',
               transports: ['websocket', 'polling'],
             });
@@ -1680,7 +1684,7 @@ const BulkCreateQuestionsPage: React.FC = () => {
               console.log('✅ Categorização completa');
               socket.disconnect();
               // Buscar resultados do backend
-              fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/categorization/results/${jobResult.jobId}`)
+              fetch(`${backendUrl}/api/categorization/results/${jobResult.jobId}`)
                 .then(res => res.json())
                 .then(data => resolve(data.results))
                 .catch(reject);

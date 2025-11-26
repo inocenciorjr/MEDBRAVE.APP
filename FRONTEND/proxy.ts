@@ -33,8 +33,8 @@ export async function proxy(request: NextRequest) {
 
     // Verificar role no backend
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
-      const response = await fetch(`${backendUrl}/api/user/me`, {
+      const { BACKEND_URL } = await import('./lib/config');
+      const response = await fetch(`${BACKEND_URL}/api/user/me`, {
         headers: {
           'Authorization': `Bearer ${accessToken}`,
         },

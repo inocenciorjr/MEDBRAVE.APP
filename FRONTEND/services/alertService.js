@@ -2,7 +2,10 @@
 // Usa fetch API com credenciais e trata erros básicos
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const isDev = process.env.NODE_ENV === 'development';
+const API_URL = isDev 
+  ? 'http://localhost:5000/api' 
+  : (process.env.NEXT_PUBLIC_API_URL || 'https://medbraveapp-production.up.railway.app/api');
 
 async function request(path, opts = {}) {
   const res = await fetchWithAuth(`${API_URL}/alerts${path}`, {

@@ -66,7 +66,7 @@ export function DevTestingPanel() {
       
       if (!response.ok) {
         const text = await response.text();
-        setMessage(`❌ Erro ${response.status}: Backend não respondeu. Verifique se está rodando em localhost:5000`);
+        setMessage(`❌ Erro ${response.status}: Backend não respondeu. Verifique a conexão com o backend`);
         console.error('Response:', text);
         return;
       }

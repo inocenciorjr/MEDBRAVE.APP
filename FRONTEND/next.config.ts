@@ -38,11 +38,14 @@ const nextConfig: NextConfig = {
   },
   
   async rewrites() {
-    // Em desenvolvimento usa localhost, em produção usa a variável de ambiente
+    // Em desenvolvimento usa localhost, em produção usa Railway
     const isDev = process.env.NODE_ENV === 'development';
     const backendUrl = isDev 
       ? 'http://localhost:5000' 
       : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
+    
+    console.log('[next.config.ts] Environment:', process.env.NODE_ENV);
+    console.log('[next.config.ts] Backend URL:', backendUrl);
     
     return [
       {

@@ -70,7 +70,11 @@ export function useScraperWebSocket(options: UseScraperWebSocketOptions = {}) {
     const token = localStorage.getItem('auth_token') || '';
 
     // Criar conexão WebSocket
-    const socket = io(process.env.NEXT_PUBLIC_WS_URL || 'http://localhost:5000', {
+    const isDev = process.env.NODE_ENV === 'development';
+    const wsUrl = process.env.NEXT_PUBLIC_WS_URL || (isDev 
+      ? 'http://localhost:5000' 
+      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app'));
+    const socket = io(wsUrl, {
       auth: {
         token,
       },

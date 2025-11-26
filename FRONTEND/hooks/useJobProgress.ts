@@ -40,7 +40,10 @@ export function useJobProgress(jobId: string | null): UseJobProgressReturn {
     }
 
     // Conectar ao Socket.IO (usa BACKEND_URL, não API_URL que é proxy)
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+    const isDev = process.env.NODE_ENV === 'development';
+    const backendUrl = isDev 
+      ? 'http://localhost:5000' 
+      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
     console.log('🔌 Conectando Socket.IO em:', backendUrl);
     
     const socket = io(backendUrl, {

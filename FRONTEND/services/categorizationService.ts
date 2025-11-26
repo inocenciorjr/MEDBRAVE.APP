@@ -63,9 +63,13 @@ export interface CategorizationProgress {
 
 export class CategorizationService {
   private static instance: CategorizationService;
-  private baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL 
-    ? `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/categorization`
-    : 'http://localhost:5000/api/categorization';
+  private baseUrl = (() => {
+    const isDev = process.env.NODE_ENV === 'development';
+    const backendUrl = isDev 
+      ? 'http://localhost:5000' 
+      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
+    return `${backendUrl}/api/categorization`;
+  })();
 
   public static getInstance(): CategorizationService {
     if (!CategorizationService.instance) {

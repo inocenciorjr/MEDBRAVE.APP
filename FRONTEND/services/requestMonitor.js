@@ -365,7 +365,11 @@ class FrontendRequestMonitor {
     };
     
     try {
-      const url = `${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/monitoring/frontend-data`;
+      const isDev = process.env.NODE_ENV === 'development';
+      const apiUrl = isDev 
+        ? 'http://localhost:5000/api' 
+        : (process.env.NEXT_PUBLIC_API_URL || 'https://medbraveapp-production.up.railway.app/api');
+      const url = `${apiUrl}/monitoring/frontend-data`;
       
       if (sync && navigator.sendBeacon) {
         // Envio síncrono usando sendBeacon

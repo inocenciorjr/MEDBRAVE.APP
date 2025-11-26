@@ -1,6 +1,11 @@
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 
-const API_BASE = 'http://localhost:5000/api';
+const isDev = process.env.NODE_ENV === 'development';
+const API_BASE = isDev 
+  ? 'http://localhost:5000/api' 
+  : (process.env.NEXT_PUBLIC_BACKEND_URL 
+    ? `${process.env.NEXT_PUBLIC_BACKEND_URL}/api` 
+    : 'https://medbraveapp-production.up.railway.app/api');
 
 // ================= TIPOS DE RESPOSTA =================
 

@@ -1,7 +1,10 @@
 import axios from 'axios';
 
-// URL base da API - usa variável de ambiente ou fallback para localhost
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+// URL base da API - usa variável de ambiente ou fallback baseado no ambiente
+const isDev = process.env.NODE_ENV === 'development';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || (isDev 
+  ? 'http://localhost:5000/api' 
+  : 'https://medbraveapp-production.up.railway.app/api');
 
 // Criar instância do axios com configurações padrão
 const api = axios.create({

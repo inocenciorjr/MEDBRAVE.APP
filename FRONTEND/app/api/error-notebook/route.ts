@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+import { BACKEND_URL } from '@/lib/config';
 
 export async function POST(request: NextRequest) {
   try {
