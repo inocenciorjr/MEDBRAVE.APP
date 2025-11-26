@@ -108,7 +108,11 @@ export const createApp = async (
 
 
 
-  // Health check route
+  // Health check routes
+  app.get('/', (_req, res) => {
+    res.status(200).json({ status: 'ok', message: 'MedBrave API is running' });
+  });
+  
   app.get('/health', (_req, res) => {
     res.status(200).json({ status: 'ok' });
   });
