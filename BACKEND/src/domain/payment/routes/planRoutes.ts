@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { PlanController } from '../controllers/PlanController';
 import { planValidators } from '../validators/planValidators';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import {
   publicPlansRateLimiter,
   createPlanRateLimiter,
@@ -16,13 +16,15 @@ import {
 export const createPlanRoutes = (controller: PlanController): Router => {
   const router = Router();
 
-  // Rota para listar planos públicos ativos (com rate limit)
+  // Rota para listar planos públicos ativos (com rate limit) - SEM autenticação
   router.get('/public', publicPlansRateLimiter, controller.listPublicPlans);
+
+  // Aplicar middleware de autenticação + plano nas demais rotas
+  router.use(enhancedAuthMiddleware);
 
   // Rota para criar um novo plano (apenas admin, com rate limit)
   router.post(
     '/',
-    authMiddleware,
     createPlanRateLimiter,
     planValidators.createPlan,
     validateRequest,
@@ -40,7 +42,6 @@ export const createPlanRoutes = (controller: PlanController): Router => {
   // Rota para listar todos os planos (apenas admin)
   router.get(
     '/',
-    authMiddleware,
     planValidators.listPlans,
     validateRequest,
     controller.listAllPlans,
@@ -49,7 +50,6 @@ export const createPlanRoutes = (controller: PlanController): Router => {
   // Rota para atualizar um plano (apenas admin, com rate limit)
   router.put(
     '/:planId',
-    authMiddleware,
     updatePlanRateLimiter,
     planValidators.updatePlan,
     validateRequest,
@@ -59,7 +59,6 @@ export const createPlanRoutes = (controller: PlanController): Router => {
   // Rota para remover um plano (apenas admin)
   router.delete(
     '/:planId',
-    authMiddleware,
     planValidators.deletePlan,
     validateRequest,
     controller.deletePlan,

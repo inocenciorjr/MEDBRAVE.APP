@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { PaymentController } from '../controllers/PaymentController';
 import { paymentValidators } from '../validators/paymentValidators';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 /**
  * Cria as rotas de pagamento
@@ -11,10 +11,20 @@ import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/
 export const createPaymentRoutes = (controller: PaymentController): Router => {
   const router = Router();
 
+  // Rota para receber webhooks de pagamento (sem autenticação) - DEVE VIR PRIMEIRO
+  router.post(
+    '/webhook',
+    paymentValidators.webhookHandler,
+    validateRequest,
+    controller.webhookHandler,
+  );
+
+  // Aplicar middleware de autenticação + plano nas demais rotas
+  router.use(enhancedAuthMiddleware);
+
   // Rota para criar um novo pagamento
   router.post(
     '/',
-    authMiddleware,
     paymentValidators.createPayment,
     validateRequest,
     controller.createPayment,
@@ -23,7 +33,6 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para obter um pagamento pelo ID
   router.get(
     '/:paymentId',
-    authMiddleware,
     paymentValidators.getPaymentById,
     validateRequest,
     controller.getPaymentById,
@@ -32,7 +41,6 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para listar pagamentos do usuário autenticado
   router.get(
     '/',
-    authMiddleware,
     paymentValidators.listPayments,
     validateRequest,
     controller.listUserPayments,
@@ -41,7 +49,6 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para listar pagamentos de um usuário específico (apenas admin)
   router.get(
     '/user/:userId',
-    authMiddleware,
     paymentValidators.listPayments,
     validateRequest,
     controller.listUserPayments,
@@ -50,7 +57,6 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para processar um pagamento
   router.post(
     '/:paymentId/process',
-    authMiddleware,
     paymentValidators.processPayment,
     validateRequest,
     controller.processPayment,
@@ -59,7 +65,6 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para cancelar um pagamento
   router.post(
     '/:paymentId/cancel',
-    authMiddleware,
     paymentValidators.cancelPayment,
     validateRequest,
     controller.cancelPayment,
@@ -68,18 +73,9 @@ export const createPaymentRoutes = (controller: PaymentController): Router => {
   // Rota para reembolsar um pagamento (apenas admin)
   router.post(
     '/:paymentId/refund',
-    authMiddleware,
     paymentValidators.refundPayment,
     validateRequest,
     controller.refundPayment,
-  );
-
-  // Rota para receber webhooks de pagamento (sem autenticação)
-  router.post(
-    '/webhook',
-    paymentValidators.webhookHandler,
-    validateRequest,
-    controller.webhookHandler,
   );
 
   return router;

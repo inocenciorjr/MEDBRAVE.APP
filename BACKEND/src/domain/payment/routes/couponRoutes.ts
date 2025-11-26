@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { CouponController } from '../controllers/CouponController';
 import { couponValidators } from '../validators/couponValidators';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 /**
  * Cria as rotas de cupons
@@ -11,10 +11,12 @@ import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/
 export const createCouponRoutes = (controller: CouponController): Router => {
   const router = Router();
 
+  // Aplicar middleware de autenticação + plano em todas as rotas
+  router.use(enhancedAuthMiddleware);
+
   // Rota para criar um novo cupom (apenas admin)
   router.post(
     '/',
-    authMiddleware,
     couponValidators.createCoupon,
     validateRequest,
     controller.createCoupon,
@@ -23,7 +25,6 @@ export const createCouponRoutes = (controller: CouponController): Router => {
   // Rota para obter um cupom pelo ID (apenas admin)
   router.get(
     '/:couponId',
-    authMiddleware,
     couponValidators.getCouponById,
     validateRequest,
     controller.getCouponById,
@@ -32,7 +33,6 @@ export const createCouponRoutes = (controller: CouponController): Router => {
   // Rota para listar cupons (apenas admin)
   router.get(
     '/',
-    authMiddleware,
     couponValidators.listCoupons,
     validateRequest,
     controller.listCoupons,
@@ -41,7 +41,6 @@ export const createCouponRoutes = (controller: CouponController): Router => {
   // Rota para atualizar um cupom (apenas admin)
   router.put(
     '/:couponId',
-    authMiddleware,
     couponValidators.updateCoupon,
     validateRequest,
     controller.updateCoupon,
@@ -50,7 +49,6 @@ export const createCouponRoutes = (controller: CouponController): Router => {
   // Rota para remover um cupom (apenas admin)
   router.delete(
     '/:couponId',
-    authMiddleware,
     couponValidators.deleteCoupon,
     validateRequest,
     controller.deleteCoupon,
@@ -59,7 +57,6 @@ export const createCouponRoutes = (controller: CouponController): Router => {
   // Rota para validar um cupom (disponível para todos os usuários autenticados)
   router.post(
     '/validate',
-    authMiddleware,
     couponValidators.validateCoupon,
     validateRequest,
     controller.validateCoupon,

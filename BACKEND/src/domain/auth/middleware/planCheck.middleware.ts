@@ -50,11 +50,16 @@ export const planCheckMiddleware = async (
     const userId = req.user.id;
     const now = Date.now();
 
-    // Verificar cache
-    const cached = userPlanCache.get(userId);
-    if (cached && cached.expiresAt > now) {
-      req.userPlan = cached.plan;
-      return next();
+    // Permitir bypass do cache via header (útil para testes/admin)
+    const bypassCache = req.headers['x-bypass-plan-cache'] === 'true';
+
+    // Verificar cache (se não for bypass)
+    if (!bypassCache) {
+      const cached = userPlanCache.get(userId);
+      if (cached && cached.expiresAt > now) {
+        req.userPlan = cached.plan;
+        return next();
+      }
     }
 
     // Buscar plano ativo do usuário

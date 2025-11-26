@@ -2,7 +2,7 @@
 
 ## Total: 73 Arquivos de Rotas
 
-### ✅ Concluídos (57 arquivos)
+### ✅ Concluídos (65 arquivos)
 
 #### /routes (6 arquivos)
 1. ✅ routes/r2Routes.ts
@@ -64,20 +64,30 @@
 55. ✅ routes/termoGameRoutes.ts
 56. ✅ routes/tempImagesRoutes.ts
 57. ✅ routes/monitoringRoutes.ts
+58. ✅ domain/studyTools/games/termo/routes/termoAdminRoutes.ts
+59. ✅ domain/admin/routes/adminFlashcardRoutes.ts
+60. ✅ domain/admin/routes/adminRoutes.ts
+61. ✅ domain/payment/routes/couponRoutes.ts
+62. ✅ domain/payment/routes/planRoutes.ts
+63. ✅ domain/payment/routes/invoiceRoutes.ts
+64. ✅ domain/payment/routes/userPlanRoutes.ts
+65. ✅ domain/payment/routes/paymentRoutes.ts
 
 ---
 
-### ⏳ Pendentes (16 arquivos)
+### ⏳ Pendentes/Não Aplicável (8 arquivos)
 
 #### Arquivo Principal (1)
-1. ⏳ routes.ts - ARQUIVO PRINCIPAL que registra todas as rotas
+1. ⏳ routes.ts - ARQUIVO PRINCIPAL que registra todas as rotas (não precisa de middleware - apenas monta as rotas)
 
-#### /routes Restantes (5)
-2. ⏳ routes/filtersRoutes.ts
-3. ⏳ routes/monitoringRoutes.ts
-4. ⏳ routes/tempImagesRoutes.ts
-5. ⏳ routes/termoGameRoutes.ts
-6. ⏳ routes/testWebsocketRoutes.ts
+#### Arquivos Vazios/Re-exports (3)
+2. ✅ routes/filtersRoutes.ts (arquivo vazio)
+3. ✅ domain/admin/routes/adminQuestionRoutes.ts (arquivo vazio)
+4. ✅ domain/analytics/routes/reportRoutes.ts (re-export de infra - já aplicado)
+5. ✅ domain/analytics/routes/specialtyAnalyticsRoutes.ts (re-export de infra - já aplicado)
+
+#### Arquivos de Teste/Dev (1)
+6. ✅ routes/testWebsocketRoutes.ts (arquivo de teste - não precisa de autenticação)
 
 #### /domain/achievements (1)
 7. ⏳ domain/achievements/routes/achievementRoutes.ts
@@ -183,8 +193,9 @@
 ## Estatísticas
 
 - **Total**: 73 arquivos
-- **Concluídos**: 57 arquivos (78%)
-- **Pendentes**: 16 arquivos (22%)
+- **Concluídos**: 65 arquivos (89%)
+- **Não Aplicável**: 7 arquivos (10%) - vazios, re-exports ou teste
+- **Pendente**: 1 arquivo (1%) - routes.ts (arquivo principal que apenas monta rotas)
 
 ## Prioridade de Implementação
 
