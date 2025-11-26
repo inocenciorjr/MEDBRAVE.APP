@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "BACKEND/Dockerfile"
+buildContext = "BACKEND"
+
+[deploy]
+startCommand = "npm start"
