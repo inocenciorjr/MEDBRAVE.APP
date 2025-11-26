@@ -1,16 +1,15 @@
 import { Router } from "express";
 import { supabase } from "../../../config/supabaseAdmin";
+import { supabaseAuthMiddleware } from "../../auth/middleware/supabaseAuth.middleware";
 import { enhancedAuthMiddleware } from "../../auth/middleware/enhancedAuth.middleware";
 import { selfMiddleware } from "../../auth/middleware/self.middleware";
 
 export function createUserRoutes(): Router {
   const router = Router();
 
-  // Middleware para autenticação + plano
-  router.use(enhancedAuthMiddleware);
-
-  // Rota para obter o perfil do usuário atual
-  router.get("/me", async (req, res) => {
+  // Rota /me usa APENAS autenticação (sem verificação de plano)
+  // Isso permite que o frontend busque a role antes de verificar o plano
+  router.get("/me", supabaseAuthMiddleware, async (req, res) => {
     try {
       // Tentar pegar userId de diferentes lugares onde o middleware pode ter colocado
       const userId = (req as any).userId || (req as any).user?.id;
@@ -44,6 +43,9 @@ export function createUserRoutes(): Router {
       return res.status(500).json({ error: "Internal server error" });
     }
   });
+
+  // Aplicar middleware de autenticação + plano nas demais rotas
+  router.use(enhancedAuthMiddleware);
 
   // Rota para atualizar o perfil do usuário
   router.put("/me", selfMiddleware, async (req, res) => {
