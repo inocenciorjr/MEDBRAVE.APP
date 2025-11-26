@@ -113,14 +113,26 @@ function AuthCallbackContent() {
               window.dispatchEvent(new Event('storage'));
             }
             
-            // Salvar nos cookies também
-            const isProduction = window.location.hostname !== 'localhost';
-            const domain = isProduction ? '; Domain=.medbrave.com.br' : '';
-            const cookieOptions = `path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax${isProduction ? '; Secure' : ''}${domain}`;
-            document.cookie = `sb-access-token=${data.session.access_token}; ${cookieOptions}`;
-            document.cookie = `sb-refresh-token=${data.session.refresh_token}; ${cookieOptions}`;
-            console.log('[Auth Callback] Cookies salvos com opções:', cookieOptions);
-            console.log('[Auth Callback] Verificando cookies após salvar:', document.cookie);
+            // Salvar nos cookies via API route (para SSR)
+            try {
+              console.log('[Auth Callback] Salvando cookies via API route...');
+              const cookieResponse = await fetch('/api/auth/set-cookies', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  accessToken: data.session.access_token,
+                  refreshToken: data.session.refresh_token
+                })
+              });
+              
+              if (cookieResponse.ok) {
+                console.log('[Auth Callback] ✅ Cookies salvos com sucesso via API route');
+              } else {
+                console.error('[Auth Callback] ❌ Erro ao salvar cookies:', await cookieResponse.text());
+              }
+            } catch (cookieError) {
+              console.error('[Auth Callback] ❌ Erro ao chamar API de cookies:', cookieError);
+            }
           }
 
           if (window.opener) {
