@@ -38,10 +38,16 @@ const nextConfig: NextConfig = {
   },
   
   async rewrites() {
+    // Em desenvolvimento usa localhost, em produção usa a variável de ambiente
+    const isDev = process.env.NODE_ENV === 'development';
+    const backendUrl = isDev 
+      ? 'http://localhost:5000' 
+      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbrave-production.up.railway.app');
+    
     return [
       {
-        source: '/api/temp-images/:path*',
-        destination: 'http://localhost:5000/api/temp-images/:path*',
+        source: '/api/:path*',
+        destination: `${backendUrl}/api/:path*`,
       },
     ];
   },
