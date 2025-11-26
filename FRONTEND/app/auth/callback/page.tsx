@@ -2,7 +2,9 @@
 
 import { useEffect, useState, Suspense, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from '@/config/supabase';
+import { createClient } from '@/lib/supabase/client';
+
+const supabase = createClient();
 
 function AuthCallbackContent() {
   const router = useRouter();
