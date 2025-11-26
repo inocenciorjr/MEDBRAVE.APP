@@ -113,6 +113,8 @@ function AuthCallbackContent() {
               window.dispatchEvent(new Event('storage'));
             }
             
+            console.log('[Auth Callback] 🔵 CHECKPOINT: Antes de salvar cookies via API');
+            
             // Salvar nos cookies via API route (para SSR)
             try {
               console.log('[Auth Callback] Salvando cookies via API route...');
