@@ -3,9 +3,9 @@ import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdmi
 import { AdminDashboardService } from '../../../infra/admin/supabase/AdminDashboardService';
 import { SupabaseAuditLogService } from '../../../infra/audit/supabase/SupabaseAuditLogService';
 import { AdminController } from '../controllers/AdminController';
- 
 import { createAdminRoutes } from '../routes/adminRoutes';
- 
+import { createAdminFlashcardRoutes } from '../routes/adminFlashcardRoutes';
+import { createFlashcardModule } from '../../studyTools/flashcards/factories/createFlashcardModule';
 import { SupabaseAdminRepository } from '../../../infra/admin/supabase/SupabaseAdminRepository';
 import { GetAllAdminsUseCase } from '../use-cases/GetAllAdminsUseCase';
 import { CreateAdminUseCase } from '../use-cases/CreateAdminUseCase';
@@ -57,43 +57,16 @@ export class AdminFactory {
       auditService,
     );
 
-    // Criar controlador de flashcards
-    let adminFlashcardController: any = null;
-    try {
-      const mod = require('../controllers/AdminFlashcardController');
-      const Controller = mod.AdminFlashcardController || mod.default;
-      adminFlashcardController = new Controller(supabase);
-    } catch (e) {
-      console.warn('[AdminFactory] Flashcard controller indisponível:', e);
-    }
+    // Criar módulo de flashcards
+    const flashcardModule = createFlashcardModule();
+    const flashcardController = flashcardModule.controllers.flashcardController;
 
     // Criar rotas
     const adminRoutes = createAdminRoutes(adminController);
-    let flashcardRoutes = Router();
-    try {
-      const mod = require('../routes/adminFlashcardRoutes');
-      const createRoutes = mod.createAdminFlashcardRoutes || mod.default;
-      flashcardRoutes = createRoutes(adminFlashcardController);
-    } catch (e) {
-      console.warn('[AdminFactory] Rotas de flashcards indisponíveis:', e);
-    }
-
-    // Criar rotas de filtros
-    let filterRoutes = Router();
-    try {
-      const { createFilterModule } = require('../../filters/factories/FilterFactory');
-      const factoryResult = createFilterModule();
-      if (factoryResult && factoryResult.router) {
-        filterRoutes = factoryResult.router;
-      }
-    } catch (error) {
-      console.error('[AdminFactory] ❌ Erro ao carregar rotas de filtros:', error);
-    }
+    const flashcardRoutes = createAdminFlashcardRoutes(flashcardController);
 
     // Combinar rotas - ORDEM IMPORTA! Rotas mais específicas primeiro
     const routes = Router();
-    routes.use('/filters', filterRoutes);  // Mais específico primeiro
-    routes.use('/subfilters', filterRoutes);  // Alias para subfiltros
     routes.use('/flashcards', flashcardRoutes);
     routes.use('/', adminRoutes);  // Genérico por último
 
@@ -104,7 +77,7 @@ export class AdminFactory {
       dashboardService,
       auditService,
       adminController,
-      adminFlashcardController,
+      flashcardController,
       useCases: {
         getAllAdminsUseCase,
         createAdminUseCase,
