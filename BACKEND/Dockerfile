@@ -11,7 +11,7 @@ RUN apk add --no-cache \
 WORKDIR /app
 
 # Copiar package files
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
 # Instalar TODAS as dependências (incluindo dev para build)
 RUN npm ci --ignore-scripts
