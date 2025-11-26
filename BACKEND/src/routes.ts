@@ -33,10 +33,11 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
   // Rotas de usuários
   try {
     const userRoutes =
-      require("./domain/user/routes/userRoutes").createUserRoutes(supabase);
+      require("./domain/user/routes/userRoutes").createUserRoutes();
     router.use("/user", userRoutes);
+    console.log('✅ Rotas de usuários registradas em /user');
   } catch (error) {
-    console.warn("Erro ao carregar rotas de usuários:", error);
+    console.error("❌ Erro ao carregar rotas de usuários:", error);
   }
   
   // Rotas de questões
