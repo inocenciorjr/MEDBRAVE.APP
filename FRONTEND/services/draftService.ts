@@ -3,6 +3,8 @@
  * Handles draft-related API calls
  */
 
+import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
+
 export interface Draft {
   id: string;
   job_id?: string;
@@ -34,37 +36,10 @@ class DraftService {
   private baseUrl = '/api/admin/scraper';
 
   /**
-   * Get auth token from localStorage
-   */
-  private getAuthToken(): string | null {
-    try {
-      const authData = localStorage.getItem('supabase.auth.token');
-      if (authData) {
-        const parsed = JSON.parse(authData);
-        return parsed.access_token;
-      }
-    } catch (e) {
-      console.error('Erro ao pegar token:', e);
-    }
-    return null;
-  }
-
-  /**
    * Get draft by ID
    */
   async getDraft(id: string): Promise<Draft> {
-    const token = this.getAuthToken();
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-    };
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    const response = await fetch(`${this.baseUrl}/drafts/${id}`, {
-      headers,
-      credentials: 'include',
-    });
+    const response = await fetchWithAuth(`${this.baseUrl}/drafts/${id}`);
 
     if (!response.ok) {
       if (response.status === 404) {
@@ -81,16 +56,8 @@ class DraftService {
    * Delete draft by ID
    */
   async deleteDraft(id: string): Promise<void> {
-    const token = this.getAuthToken();
-    const headers: Record<string, string> = {};
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    const response = await fetch(`${this.baseUrl}/drafts/${id}`, {
+    const response = await fetchWithAuth(`${this.baseUrl}/drafts/${id}`, {
       method: 'DELETE',
-      headers,
-      credentials: 'include',
     });
 
     if (!response.ok && response.status !== 204) {
@@ -106,18 +73,7 @@ class DraftService {
       ? `${this.baseUrl}/drafts?jobId=${jobId}`
       : `${this.baseUrl}/drafts`;
 
-    const token = this.getAuthToken();
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-    };
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    const response = await fetch(url, {
-      headers,
-      credentials: 'include',
-    });
+    const response = await fetchWithAuth(url);
 
     if (!response.ok) {
       throw new Error('Erro ao listar drafts');

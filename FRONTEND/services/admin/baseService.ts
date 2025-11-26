@@ -3,6 +3,7 @@
  */
 
 import type { ApiResponse } from '@/types/admin/common';
+import { fetchWithAuth as fetchWithAuthUtil } from '@/lib/utils/fetchWithAuth';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
 const MAX_RETRIES = 3;
@@ -28,47 +29,8 @@ export class ApiError extends Error {
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 /**
- * Get Supabase auth token from localStorage
- */
-function getSupabaseToken(): string | null {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-  
-  try {
-    // 1. Tentar authToken direto (salvo pelo callback)
-    const directToken = localStorage.getItem('authToken');
-    if (directToken) {
-      console.log('[getSupabaseToken] Token encontrado em authToken');
-      return directToken;
-    }
-    
-    // 2. Tentar formato novo do Supabase: supabase.auth.token
-    let authData = localStorage.getItem('supabase.auth.token');
-    
-    // 3. Se não encontrar, tentar formato antigo: sb-<project-ref>-auth-token
-    if (!authData) {
-      const keys = Object.keys(localStorage);
-      const supabaseKey = keys.find(key => key.startsWith('sb-') && key.endsWith('-auth-token'));
-      if (supabaseKey) {
-        authData = localStorage.getItem(supabaseKey);
-      }
-    }
-    
-    if (authData) {
-      const parsed = JSON.parse(authData);
-      return parsed.access_token || null;
-    }
-  } catch (error) {
-    console.error('[getSupabaseToken] Error getting Supabase token:', error);
-  }
-  
-  console.warn('[getSupabaseToken] Nenhum token encontrado no localStorage');
-  return null;
-}
-
-/**
  * Enhanced fetch with authentication and error handling
+ * Usa o fetchWithAuth centralizado que gerencia tokens automaticamente
  */
 export async function fetchWithAuth(
   endpoint: string,
@@ -76,29 +38,8 @@ export async function fetchWithAuth(
   retries = 0
 ): Promise<Response> {
   try {
-    // Get auth token from Supabase
-    const token = getSupabaseToken();
-
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-      ...(options.headers as Record<string, string>),
-    };
-
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-    }
-
-    // Build URL - if endpoint starts with /, use it as is, otherwise prepend API_BASE_URL
-    const url = endpoint.startsWith('http') 
-      ? endpoint 
-      : endpoint.startsWith('/') 
-        ? endpoint  // Endpoint já tem / no início, use direto
-        : `${API_BASE_URL}/${endpoint}`;
-
-    const response = await fetch(url, {
-      ...options,
-      headers,
-    });
+    // Usar o fetchWithAuth centralizado que já gerencia tokens e retry
+    const response = await fetchWithAuthUtil(endpoint, options);
 
     // Handle authentication errors
     if (response.status === 401) {
