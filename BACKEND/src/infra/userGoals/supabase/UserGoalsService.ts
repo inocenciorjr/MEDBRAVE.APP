@@ -27,7 +27,7 @@ export class UserGoalsService {
    * Busca as metas do usuário
    */
   async getUserGoals(userId: string): Promise<UserGoals | null> {
-    console.log('🔍 [UserGoalsService] Buscando metas para userId:', userId, 'tipo:', typeof userId);
+    console.error('🔍 [UserGoalsService] Buscando metas para userId:', userId, 'tipo:', typeof userId);
     
     const { data, error } = await this.supabase
       .from('user_goals')
@@ -35,12 +35,12 @@ export class UserGoalsService {
       .eq('user_id', userId)
       .single();
 
-    console.log('📊 [UserGoalsService] Resultado:', { data, error });
+    console.error('📊 [UserGoalsService] Resultado:', { data, error });
 
     if (error) {
       if (error.code === 'PGRST116') {
         // Não encontrado
-        console.log('ℹ️ [UserGoalsService] Metas não encontradas, retornando null');
+        console.error('ℹ️ [UserGoalsService] Metas não encontradas, retornando null');
         return null;
       }
       console.error('❌ [UserGoalsService] Erro ao buscar metas:', error);
@@ -85,7 +85,7 @@ export class UserGoalsService {
     const now = new Date();
     const todayStr = now.toLocaleDateString('en-CA', { timeZone: timezone }); // YYYY-MM-DD
 
-    console.log('🔍 [UserGoalsService] Buscando stats para:', { userId, todayStr, timezone, userIdType: typeof userId });
+    console.error('🔍 [UserGoalsService] Buscando stats para:', { userId, todayStr, timezone, userIdType: typeof userId });
 
     // Chamar função RPC (aceita text, faz cast interno para uuid)
     // A função espera TEXT, então converter UUID para string
@@ -94,7 +94,7 @@ export class UserGoalsService {
       p_today: todayStr,
     });
 
-    console.log('📊 [UserGoalsService] Resultado RPC:', { data, error });
+    console.error('📊 [UserGoalsService] Resultado RPC:', { data, error });
 
     if (error) {
       console.error('❌ [UserGoalsService] Erro ao buscar estatísticas do dia:', error);
@@ -113,7 +113,7 @@ export class UserGoalsService {
       accuracy: result?.accuracy || 0,
     };
 
-    console.log('✅ [UserGoalsService] Stats do RPC:', stats);
+    console.error('✅ [UserGoalsService] Stats do RPC:', stats);
 
     return stats;
   }
