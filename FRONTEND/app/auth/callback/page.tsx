@@ -114,8 +114,11 @@ function AuthCallbackContent() {
             }
             
             // Salvar nos cookies também
-            document.cookie = `sb-access-token=${data.session.access_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
-            document.cookie = `sb-refresh-token=${data.session.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
+            const isProduction = window.location.hostname !== 'localhost';
+            const cookieOptions = `path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax${isProduction ? '; Secure' : ''}`;
+            document.cookie = `sb-access-token=${data.session.access_token}; ${cookieOptions}`;
+            document.cookie = `sb-refresh-token=${data.session.refresh_token}; ${cookieOptions}`;
+            console.log('[Auth Callback] Cookies salvos com opções:', cookieOptions);
           }
 
           if (window.opener) {
