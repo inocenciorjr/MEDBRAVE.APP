@@ -27,17 +27,23 @@ export class UserGoalsService {
    * Busca as metas do usuário
    */
   async getUserGoals(userId: string): Promise<UserGoals | null> {
+    console.log('🔍 [UserGoalsService] Buscando metas para userId:', userId, 'tipo:', typeof userId);
+    
     const { data, error } = await this.supabase
       .from('user_goals')
       .select('*')
       .eq('user_id', userId)
       .single();
 
+    console.log('📊 [UserGoalsService] Resultado:', { data, error });
+
     if (error) {
       if (error.code === 'PGRST116') {
         // Não encontrado
+        console.log('ℹ️ [UserGoalsService] Metas não encontradas, retornando null');
         return null;
       }
+      console.error('❌ [UserGoalsService] Erro ao buscar metas:', error);
       throw error;
     }
 
@@ -79,11 +85,12 @@ export class UserGoalsService {
     const now = new Date();
     const todayStr = now.toLocaleDateString('en-CA', { timeZone: timezone }); // YYYY-MM-DD
 
-    console.log('🔍 [UserGoalsService] Buscando stats para:', { userId, todayStr, timezone });
+    console.log('🔍 [UserGoalsService] Buscando stats para:', { userId, todayStr, timezone, userIdType: typeof userId });
 
     // Chamar função RPC (aceita text, faz cast interno para uuid)
+    // A função espera TEXT, então converter UUID para string
     const { data, error } = await this.supabase.rpc('get_today_question_stats', {
-      p_user_id: userId,
+      p_user_id: String(userId), // Garantir que é string
       p_today: todayStr,
     });
 

@@ -65,19 +65,25 @@ export class ReviewPreferencesService {
 
   async getPreferences(userId: string): Promise<ReviewPreferences> {
     try {
+      console.log('🔍 [ReviewPreferencesService] Buscando preferências para userId:', userId, 'tipo:', typeof userId);
+      
       const { data, error } = await this.supabase
         .from('review_preferences')
         .select('*')
         .eq('user_id', userId)
         .single();
 
+      console.log('📊 [ReviewPreferencesService] Resultado:', { data, error });
+
       if (error || !data) {
         // Criar preferências padrão
+        console.log('ℹ️ [ReviewPreferencesService] Preferências não encontradas, criando padrão');
         return this.createDefaultPreferences(userId);
       }
 
       return data as ReviewPreferences;
     } catch (error) {
+      console.error('❌ [ReviewPreferencesService] Erro ao buscar preferências:', error);
       logger.error('Erro ao buscar preferências:', error);
       throw new AppError('Erro ao buscar preferências de revisão', 500);
     }
