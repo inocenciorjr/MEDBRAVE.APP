@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { UserGoalsController } from '../controllers/UserGoalsController';
 import { UserGoalsService } from '../../../infra/userGoals/supabase/UserGoalsService';
-import { supabaseAuthMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { createClient } from '@supabase/supabase-js';
 
 const router = Router();
@@ -16,9 +16,9 @@ const supabase = createClient(
 const userGoalsService = new UserGoalsService(supabase);
 const userGoalsController = new UserGoalsController(userGoalsService);
 
-// Rotas protegidas
-router.get('/', supabaseAuthMiddleware, userGoalsController.getUserGoals);
-router.post('/', supabaseAuthMiddleware, userGoalsController.upsertUserGoals);
-router.get('/today-stats', supabaseAuthMiddleware, userGoalsController.getTodayStats);
+// Rotas protegidas (requerem plano ativo)
+router.get('/', enhancedAuthMiddleware, userGoalsController.getUserGoals);
+router.post('/', enhancedAuthMiddleware, userGoalsController.upsertUserGoals);
+router.get('/today-stats', enhancedAuthMiddleware, userGoalsController.getTodayStats);
 
 export default router;

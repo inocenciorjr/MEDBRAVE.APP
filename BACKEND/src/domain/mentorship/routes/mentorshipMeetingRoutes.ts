@@ -2,10 +2,16 @@ import { Router } from 'express';
 import { authenticate } from '../middlewares/authMiddleware';
 import { MentorshipMeetingController } from '../controllers/MentorshipMeetingController';
 import { MentorshipServiceFactory } from '../factories';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
 const factory = new MentorshipServiceFactory();
 const controller = new MentorshipMeetingController(factory);
+
+// Todas as rotas de reuniões de mentoria requerem plano com acesso à mentoria
+router.use(enhancedAuthMiddleware);
+router.use(requireFeature('canAccessMentorship') as any);
 
 /**
  * @route   POST /meetings

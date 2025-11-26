@@ -1,12 +1,12 @@
 import { Router } from 'express';
 // import { firestore } from 'firebase-admin';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 export function createProfileRoutes(): Router {
   const router = Router();
 
-  // Middleware para autenticação
-  router.use(authMiddleware);
+  // Middleware para autenticação + plano
+  router.use(enhancedAuthMiddleware);
 
   // Rota para obter o perfil do usuário atual
   router.get('/me', (req, res) => {

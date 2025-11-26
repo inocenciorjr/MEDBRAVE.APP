@@ -8,15 +8,16 @@ import {
   validateUpdateSubFilter,
 } from '../validators/filterValidators';
 
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+
 export function createFilterRoutes(
   filterController: FilterController,
   subFilterController: SubFilterController,
 ): Router {
   const router = Router();
 
-  // NÃO aplicar middlewares aqui - eles já são aplicados no nível /admin
-  // router.use(authMiddleware);
-  // router.use(adminMiddleware);
+  // Aplicar middleware de autenticação + plano (admin já é aplicado no nível superior)
+  router.use(enhancedAuthMiddleware);
 
   // Rotas de filtros
   router.get('/', filterController.list.bind(filterController));

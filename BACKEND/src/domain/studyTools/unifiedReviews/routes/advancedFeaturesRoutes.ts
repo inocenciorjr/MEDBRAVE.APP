@@ -3,9 +3,15 @@ import { AdvancedFeaturesController } from '../controllers/AdvancedFeaturesContr
 import { DailyLimitsService } from '../services';
 import { DayCompletionService } from '../services';
 import { supabase } from '../../../../config/supabaseAdmin';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../../auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
+
+// Middleware de autenticação + plano para todas as rotas
+router.use(enhancedAuthMiddleware);
+// Recursos avançados requerem estatísticas avançadas
+router.use(requireFeature('canAccessAdvancedStatistics') as any);
 
 // Instanciar services - removendo ReviewRemovalService que não existe
 const dailyLimitsService = new DailyLimitsService(supabase);
@@ -55,4 +61,3 @@ router.get(
 // Rotas de admin removidas pois dependem de serviços não implementados
 
 export default router;
-router.use(authMiddleware as any);

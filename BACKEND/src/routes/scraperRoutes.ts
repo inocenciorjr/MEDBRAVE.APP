@@ -14,9 +14,11 @@ import { Router } from 'express';
 import { scraperController } from '../controllers/ScraperController';
 import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../domain/auth/middleware/admin.middleware';
-import { scraperRateLimiter } from '../middleware/rateLimiter';
 import logger from '../utils/logger';
 import jobQueueService from '../services/jobQueueService';
+
+// Alias para compatibilidade
+const authMiddleware = enhancedAuthMiddleware;
 
 const router = Router();
 
@@ -26,9 +28,7 @@ console.log('📡 ScraperRoutes loaded');
 router.use(enhancedAuthMiddleware as any);
 router.use(adminMiddleware as any);
 
-// Rate limiting apenas para extração manual (10 requisições por hora)
-router.use('/extract', scraperRateLimiter as any);
-// Batch não tem rate limit para permitir processamento de múltiplas URLs
+// Rate limiting removido - será implementado posteriormente se necessário
 
 /**
  * @swagger

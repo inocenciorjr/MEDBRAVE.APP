@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { AchievementController } from '../controllers/AchievementController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 /**
  * Cria as rotas para o sistema de conquistas
@@ -46,88 +46,88 @@ export const createAchievementRoutes = (
 
   // === ROTAS PROTEGIDAS (com autenticação) ===
 
-  // Conquistas do usuário
+  // Conquistas do usuário (requerem plano ativo)
   router.get(
     '/user/:userId',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getUserAchievements.bind(achievementController),
   );
   router.get(
     '/user/:userId/stats',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getUserAchievementStats.bind(achievementController),
   );
   router.get(
     '/user/:userId/ranking',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getUserRanking.bind(achievementController),
   );
 
-  // Recompensas
+  // Recompensas (requerem plano ativo)
   router.get(
     '/user/:userId/pending-rewards',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getPendingRewards.bind(achievementController),
   );
   router.post(
     '/user/:userId/collect/:achievementId',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.collectRewards.bind(achievementController),
   );
 
-  // Notificações
+  // Notificações (requerem plano ativo)
   router.get(
     '/user/:userId/notifications',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getUserNotifications.bind(achievementController),
   );
   router.put(
     '/notifications/:notificationId/read',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.markNotificationAsRead.bind(achievementController),
   );
   router.put(
     '/user/:userId/notifications/read-all',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.markAllNotificationsAsRead.bind(
       achievementController,
     ),
   );
 
-  // IA e Análises
+  // IA e Análises (requerem plano ativo)
   router.get(
     '/user/:userId/suggestions',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.generateAchievementSuggestions.bind(
       achievementController,
     ),
   );
   router.get(
     '/user/:userId/patterns',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.analyzeUserAchievementPatterns.bind(
       achievementController,
     ),
   );
   router.get(
     '/user/:userId/progress-report',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.generateProgressReport.bind(achievementController),
   );
 
-  // Verificação manual de conquistas
+  // Verificação manual de conquistas (requer plano ativo)
   router.post(
     '/check',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.checkAchievements.bind(achievementController),
   );
 
   // === ROTAS ADMINISTRATIVAS ===
 
-  // Métricas administrativas (requer permissão de admin)
+  // Métricas administrativas (requer permissão de admin + plano)
   router.get(
     '/admin/metrics',
-    authMiddleware,
+    enhancedAuthMiddleware,
     achievementController.getAdminMetrics.bind(achievementController),
   );
 

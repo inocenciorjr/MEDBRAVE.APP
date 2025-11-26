@@ -1,18 +1,18 @@
 import { Router } from 'express';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { PublicFilterController } from '../controllers/PublicFilterController';
 
 /**
  * Cria rotas públicas para o banco de questões
- * Requer autenticação mas não requer admin
+ * Requer autenticação + plano ativo mas não requer admin
  */
 export function createPublicFilterRoutes(
   controller: PublicFilterController,
 ): Router {
   const router = Router();
 
-  // Aplicar middleware de autenticação em todas as rotas
-  router.use(authMiddleware);
+  // Aplicar middleware de autenticação + plano em todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // GET /api/banco-questoes/filters - Lista filtros raiz
   router.get('/filters', controller.getRootFilters.bind(controller));

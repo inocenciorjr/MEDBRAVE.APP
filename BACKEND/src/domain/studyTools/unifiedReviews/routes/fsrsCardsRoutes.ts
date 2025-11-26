@@ -1,15 +1,19 @@
 import { Router } from 'express';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { checkFSRSCardsLimit } from '../../../auth/middleware/usageMiddlewares';
 import { supabase } from '../../../../config/supabase';
 
 export const createFsrsCardsRoutes = (): Router => {
   const router = Router();
 
+  // Middleware de autenticação + plano para todas as rotas
+  router.use(enhancedAuthMiddleware);
+
   /**
    * GET /api/fsrs/cards
    * Buscar cards FSRS por IDs
    */
-  router.get('/cards', authMiddleware, async (req, res) => {
+  router.get('/cards', async (req, res) => {
     try {
       const userId = req.user?.id;
       if (!userId) {

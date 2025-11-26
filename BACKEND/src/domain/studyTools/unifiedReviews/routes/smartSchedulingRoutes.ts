@@ -2,7 +2,8 @@ import { Router } from 'express';
 import { SmartSchedulingController } from '../controllers/SmartSchedulingController';
 import { SmartSchedulingService } from '../services/SmartSchedulingService';
 import { supabase } from '../../../../config/supabaseAdmin';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../../auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
 
@@ -10,8 +11,10 @@ const router = Router();
 const smartSchedulingService = new SmartSchedulingService(supabase);
 const smartSchedulingController = new SmartSchedulingController(smartSchedulingService);
 
-// Aplicar middleware de autenticação em todas as rotas
-router.use(authMiddleware);
+// Aplicar middleware de autenticação + plano em todas as rotas
+router.use(enhancedAuthMiddleware);
+// Agendamento inteligente requer estatísticas avançadas
+router.use(requireFeature('canAccessAdvancedStatistics') as any);
 
 /**
  * GET /api/unified-reviews/backlog-status

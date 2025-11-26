@@ -1,15 +1,15 @@
 import { Router } from 'express';
 import { StudySessionController } from '../controllers/StudySessionController';
 import { StudySessionService } from '../../../infra/studySessions/StudySessionService';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { supabase } from '../../../config/supabase';
 
 const router = Router();
 const studySessionService = new StudySessionService(supabase);
 const controller = new StudySessionController(studySessionService, supabase);
 
-// Todas as rotas requerem autenticação
-router.use(authMiddleware as any);
+// Todas as rotas requerem autenticação + plano ativo
+router.use(enhancedAuthMiddleware);
 
 // POST /api/study-sessions/start - Iniciar sessão de estudo
 router.post('/start', (req, res) => controller.startSession(req, res));

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 //
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { AlertService } from '../services/AlertService';
 import { logger } from '../../../utils/logger';
 
@@ -8,7 +8,8 @@ export function createAlertRoutes(): Router {
   const router = Router();
   const service = new AlertService();
 
-  router.use(authMiddleware);
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   // Listar alertas
   router.get('/', async (req, res) => {

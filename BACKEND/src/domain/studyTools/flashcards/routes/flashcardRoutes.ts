@@ -11,6 +11,9 @@ import collectionRoutes from './collectionRoutes';
 
 import multer from 'multer';
 
+// Alias para compatibilidade
+const authMiddleware = enhancedAuthMiddleware;
+
 // Helper async wrapper para capturar erros e evitar uso de try/catch em cada rota
 // Aceita qualquer assinatura e delega para o controller
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

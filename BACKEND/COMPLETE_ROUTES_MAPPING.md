@@ -2,7 +2,7 @@
 
 ## Total: 73 Arquivos de Rotas
 
-### ✅ Concluídos (17 arquivos)
+### ✅ Concluídos (50 arquivos)
 
 #### /routes (6 arquivos)
 1. ✅ routes/r2Routes.ts
@@ -24,10 +24,43 @@
 15. ✅ domain/userStatistics/routes/userStatisticsRoutes.ts (re-export)
 16. ✅ domain/studyTools/flashcards/routes/apkgImportRoutes.ts (montado em flashcardRoutes)
 17. ✅ domain/studyTools/flashcards/routes/adminCollectionRoutes.ts (admin)
+18. ✅ domain/auth/routes/authRoutes.ts
+19. ✅ domain/user/routes/userRoutes.ts
+20. ✅ domain/questions/routes/commentRoutes.ts
+21. ✅ domain/questions/routes/questionHistoryRoutes.ts
+22. ✅ domain/questions/routes/questionInteractionRoutes.ts
+23. ✅ domain/questions/routes/explanationRatingRoutes.ts
+24. ✅ domain/questions/routes/updateNoteRoutes.ts
+25. ✅ domain/studySessions/routes/studySessionRoutes.ts
+26. ✅ domain/reviewSessions/routes/reviewSessionRoutes.ts
+27. ✅ domain/studyTools/unifiedReviews/routes/advancedFeaturesRoutes.ts
+28. ✅ domain/studyTools/unifiedReviews/routes/fsrsCardsRoutes.ts
+29. ✅ domain/studyTools/unifiedReviews/routes/reviewPreferencesRoutes.ts
+30. ✅ domain/studyTools/unifiedReviews/routes/smartSchedulingRoutes.ts
+31. ✅ domain/officialExam/routes/officialExamRoutes.ts
+32. ✅ domain/goals/routes/goalRoutes.ts
+33. ✅ domain/userGoals/routes/userGoalsRoutes.ts
+34. ✅ domain/medbraveAI/routes/medbraveAIRoutes.ts
+35. ✅ domain/notifications/routes/notificationRoutes.ts
+36. ✅ domain/mentorship/routes/mentorProfileRoutes.ts
+37. ✅ domain/mentorship/routes/mentorshipRoutes.ts
+38. ✅ domain/mentorship/routes/mentorshipMeetingRoutes.ts
+39. ✅ domain/content/routes/contentRoutes.ts
+40. ✅ domain/profile/routes/profileRoutes.ts
+41. ✅ domain/notifications/routes/deviceRoutes.ts
+42. ✅ domain/media/routes/mediaRoutes.ts
+43. ✅ domain/studyTools/unifiedReviews/routes/reviewManageRoutes.ts
+44. ✅ domain/studyTools/unifiedReviews/routes/reviewItemManagementRoutes.ts
+45. ✅ domain/studyTools/unifiedReviews/routes/reviewBulkActionsRoutes.ts
+46. ✅ domain/studyTools/unifiedReviews/routes/devTestingRoutes.ts
+47. ✅ domain/alerts/routes/alertRoutes.ts
+48. ✅ domain/achievements/routes/achievementRoutes.ts
+49. ✅ domain/filters/routes/filterRoutes.ts
+50. ✅ domain/filters/routes/publicFilterRoutes.ts
 
 ---
 
-### ⏳ Pendentes (56 arquivos)
+### ⏳ Pendentes (23 arquivos)
 
 #### Arquivo Principal (1)
 1. ⏳ routes.ts - ARQUIVO PRINCIPAL que registra todas as rotas
@@ -143,8 +176,8 @@
 ## Estatísticas
 
 - **Total**: 73 arquivos
-- **Concluídos**: 17 arquivos (23%)
-- **Pendentes**: 56 arquivos (77%)
+- **Concluídos**: 50 arquivos (68%)
+- **Pendentes**: 23 arquivos (32%)
 
 ## Prioridade de Implementação
 

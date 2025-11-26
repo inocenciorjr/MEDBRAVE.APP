@@ -1,6 +1,6 @@
 import { Router } from 'express';
  
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../../admin/middlewares/adminMiddleware';
 import { selfMiddleware } from '../../auth/middleware/self.middleware';
 
@@ -9,8 +9,8 @@ export function createNotificationRoutes(
 ): Router {
   const router = Router();
 
-  // Middleware de autenticação para todas as rotas
-  router.use(authMiddleware);
+  // Middleware de autenticação + plano para todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // Rotas de notificações para usuários
   router.get('/', controller.getMyNotifications.bind(controller));

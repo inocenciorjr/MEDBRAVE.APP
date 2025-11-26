@@ -13,8 +13,6 @@
 import { Request, Response, NextFunction } from 'express';
 import scraperService from '../services/scraperService';
 import jobQueueService from '../services/jobQueueService';
- 
-import { getRateLimitInfo as getRateLimitInfoUtil } from '../middleware/rateLimiter';
 import logger from '../utils/logger';
 
 export class ScraperController {
@@ -338,25 +336,14 @@ export class ScraperController {
         });
       }
 
-      const rateLimitInfo = await getRateLimitInfoUtil(user.id);
-
-      if (!rateLimitInfo) {
-        return res.status(500).json({
-          success: false,
-          error: {
-            code: 'RATE_LIMIT_ERROR',
-            message: 'Erro ao obter informações de rate limit',
-          },
-        });
-      }
-
+      // Rate limit info temporariamente desabilitado
       return res.json({
         success: true,
         data: {
           limit: 10,
-          used: rateLimitInfo.used,
-          remaining: rateLimitInfo.remaining,
-          resetAt: rateLimitInfo.resetAt,
+          used: 0,
+          remaining: 10,
+          resetAt: new Date(Date.now() + 3600000).toISOString(),
         },
       });
     } catch (error: any) {

@@ -1,14 +1,14 @@
 import { Router } from 'express';
 import { DeviceController } from '../controllers/DeviceController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../../admin/middlewares/adminMiddleware';
 import { selfMiddleware } from '../../auth/middleware/self.middleware';
 
 export function createDeviceRoutes(controller: DeviceController): Router {
   const router = Router();
 
-  // Middleware de autenticação para todas as rotas
-  router.use(authMiddleware);
+  // Middleware de autenticação + plano para todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // Rotas para gerenciamento de dispositivos
   router.post('/', controller.registerDevice.bind(controller));

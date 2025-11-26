@@ -1,7 +1,10 @@
 import { Router } from 'express';
 import { ReviewBulkActionsController } from '../controllers/ReviewBulkActionsController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
 import { createClient } from '@supabase/supabase-js';
+
+// Alias para compatibilidade
+const authMiddleware = enhancedAuthMiddleware;
 
 const supabase = createClient(
   process.env.SUPABASE_URL!,
@@ -12,6 +15,9 @@ const controller = new ReviewBulkActionsController(supabase);
 
 export const createReviewBulkActionsRoutes = (): Router => {
   const router = Router();
+  
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   /**
    * @swagger
@@ -45,7 +51,7 @@ export const createReviewBulkActionsRoutes = (): Router => {
    *       200:
    *         description: Revisões reagendadas com sucesso
    */
-  router.post('/reschedule', authMiddleware, controller.rescheduleReviews);
+  router.post('/reschedule', controller.rescheduleReviews);
 
   /**
    * @swagger
@@ -80,7 +86,7 @@ export const createReviewBulkActionsRoutes = (): Router => {
    *       200:
    *         description: Revisões deletadas com sucesso
    */
-  router.delete('/delete', authMiddleware, controller.deleteReviews);
+  router.delete('/delete', controller.deleteReviews);
 
   /**
    * @swagger
@@ -112,7 +118,7 @@ export const createReviewBulkActionsRoutes = (): Router => {
    *       200:
    *         description: Progresso resetado com sucesso
    */
-  router.post('/reset-progress', authMiddleware, controller.resetProgress);
+  router.post('/reset-progress', controller.resetProgress);
 
   /**
    * @swagger
@@ -144,7 +150,7 @@ export const createReviewBulkActionsRoutes = (): Router => {
    *                     oldest_overdue_days:
    *                       type: integer
    */
-  router.get('/overdue-stats', authMiddleware, controller.getOverdueStats);
+  router.get('/overdue-stats', controller.getOverdueStats);
 
   return router;
 };

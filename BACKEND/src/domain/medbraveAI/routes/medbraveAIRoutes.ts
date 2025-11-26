@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { MedbraveAIController } from '../controllers/MedbraveAIController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { checkLimit } from '../../auth/middleware/enhancedAuth.middleware';
 import { rateLimit } from '../../integration/middleware/rateLimit.middleware';
 
 const router = Router();
@@ -9,12 +10,22 @@ const pulseAIController = new MedbraveAIController();
 /**
  * 🩺 PULSE AI Routes
  *
- * Todas as rotas do PULSE AI requerem autenticação
+ * Todas as rotas do PULSE AI requerem autenticação + plano ativo
  * Rate limiting aplicado para prevenir abuso
  */
 
 // Middleware para todas as rotas
-router.use(authMiddleware);
+router.use(enhancedAuthMiddleware);
+
+// Middleware para verificar limite de consultas AI por dia
+const checkPulseAILimit = checkLimit(
+  'maxPulseAIQueriesPerDay',
+  async (req) => {
+    // TODO: Implementar contagem de consultas AI do dia
+    // Por enquanto retorna 0, mas deve ser implementado
+    return 0;
+  },
+);
 
 /**
  * 🧠 POST /api/pulse-ai/analyze
@@ -22,6 +33,7 @@ router.use(authMiddleware);
  */
 router.post(
   '/analyze',
+  checkPulseAILimit as any,
   rateLimit('pulse-analyze', 10, 60000), // 10 req/min
   pulseAIController.analyzeMedicalCase,
 );
@@ -32,6 +44,7 @@ router.post(
  */
 router.post(
   '/educate',
+  checkPulseAILimit as any,
   rateLimit('pulse-educate', 20, 60000), // 20 req/min
   pulseAIController.educateMedicalTopic,
 );
@@ -42,6 +55,7 @@ router.post(
  */
 router.post(
   '/quick',
+  checkPulseAILimit as any,
   rateLimit('pulse-quick', 30, 60000), // 30 req/min
   pulseAIController.quickMedicalQuery,
 );
@@ -52,6 +66,7 @@ router.post(
  */
 router.post(
   '/explain-question',
+  checkPulseAILimit as any,
   rateLimit('pulse-explain', 25, 60000), // 25 req/min
   pulseAIController.explainQuestionAnswer,
 );

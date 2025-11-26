@@ -3,6 +3,9 @@ import multer from 'multer';
 import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
 import { CollectionController } from '../controllers/CollectionController';
 
+// Alias para compatibilidade
+const authMiddleware = enhancedAuthMiddleware;
+
 const router = Router();
 const controller = new CollectionController();
 

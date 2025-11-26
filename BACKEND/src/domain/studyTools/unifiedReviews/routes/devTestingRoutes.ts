@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { DevTestingController } from '../controllers/DevTestingController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
@@ -14,30 +14,32 @@ export const createDevTestingRoutes = (): Router => {
   const router = Router();
 
   // ⚠️ APENAS DESENVOLVIMENTO - Verificar NODE_ENV em cada endpoint
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   /**
    * POST /api/unified-reviews/dev/simulate-overdue
    * Simula revisões atrasadas alterando datas
    */
-  router.post('/simulate-overdue', authMiddleware, controller.simulateOverdueReviews);
+  router.post('/simulate-overdue', controller.simulateOverdueReviews);
 
   /**
    * POST /api/unified-reviews/dev/reset-dates
    * Reseta datas para hoje
    */
-  router.post('/reset-dates', authMiddleware, controller.resetDates);
+  router.post('/reset-dates', controller.resetDates);
 
   /**
    * POST /api/unified-reviews/dev/create-test-cards
    * Cria cards de teste
    */
-  router.post('/create-test-cards', authMiddleware, controller.createTestCards);
+  router.post('/create-test-cards', controller.createTestCards);
 
   /**
    * DELETE /api/unified-reviews/dev/delete-test-cards
    * Deleta cards de teste
    */
-  router.delete('/delete-test-cards', authMiddleware, controller.deleteTestCards);
+  router.delete('/delete-test-cards', controller.deleteTestCards);
 
   return router;
 };

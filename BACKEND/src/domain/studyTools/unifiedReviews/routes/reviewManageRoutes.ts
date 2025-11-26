@@ -1,11 +1,17 @@
 import { Router } from 'express';
 import { ReviewManageController } from '../controllers/ReviewManageController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+
+// Alias para compatibilidade
+const authMiddleware = enhancedAuthMiddleware;
 
 export const createReviewManageRoutes = (
   controller: ReviewManageController,
 ): Router => {
   const router = Router();
+  
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   /**
    * @swagger
@@ -38,7 +44,7 @@ export const createReviewManageRoutes = (
    *       200:
    *         description: Revisões carregadas com sucesso
    */
-  router.get('/manage', authMiddleware, controller.getAllReviews);
+  router.get('/manage', controller.getAllReviews);
 
   /**
    * @swagger
@@ -50,9 +56,9 @@ export const createReviewManageRoutes = (
    *       - bearerAuth: []
    *     responses:
    *       200:
-   *         description: Metadados carregados com sucesso
+   *         description: Metadados carregadas com sucesso
    */
-  router.get('/manage/metadata', authMiddleware, controller.getReviewsMetadata);
+  router.get('/manage/metadata', controller.getReviewsMetadata);
 
   /**
    * @swagger
@@ -88,7 +94,7 @@ export const createReviewManageRoutes = (
    *       200:
    *         description: Revisões reagendadas com sucesso
    */
-  router.post('/reschedule', authMiddleware, controller.rescheduleSpecificReviews);
+  router.post('/reschedule', controller.rescheduleSpecificReviews);
 
   /**
    * @swagger
@@ -109,7 +115,7 @@ export const createReviewManageRoutes = (
    *       200:
    *         description: Revisão deletada com sucesso
    */
-  router.delete('/:id', authMiddleware, controller.deleteReview);
+  router.delete('/:id', controller.deleteReview);
 
   return router;
 };

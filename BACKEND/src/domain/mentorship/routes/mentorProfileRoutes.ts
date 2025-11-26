@@ -2,10 +2,16 @@ import { Router } from 'express';
 import { MentorProfileController } from '../controllers/MentorProfileController';
 import { MentorshipServiceFactory } from '../factories';
 import { authenticate, isMentor } from '../middlewares/authMiddleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
 const factory = new MentorshipServiceFactory();
 const controller = new MentorProfileController(factory);
+
+// Todas as rotas de perfil de mentor requerem plano com acesso à mentoria
+router.use(enhancedAuthMiddleware);
+router.use(requireFeature('canAccessMentorship') as any);
 
 /**
  * @route   POST /mentor-profiles

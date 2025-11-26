@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { GoalService } from '../../../infra/goals/supabase/GoalService';
 import { logger } from '../../../utils/logger';
 
@@ -7,7 +7,8 @@ export const createGoalRoutes = () => {
   const router = Router();
   const service = new GoalService();
 
-  router.use(authMiddleware);
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   /**
    * Listar objetivos do usuário
