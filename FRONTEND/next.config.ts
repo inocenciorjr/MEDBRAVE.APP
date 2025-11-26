@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
     const isDev = process.env.NODE_ENV === 'development';
     const backendUrl = isDev 
       ? 'http://localhost:5000' 
-      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbrave-production.up.railway.app');
+      : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
     
     return [
       {
