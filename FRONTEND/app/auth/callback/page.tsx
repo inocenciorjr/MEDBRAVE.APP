@@ -64,6 +64,12 @@ function AuthCallbackContent() {
                     role: 'student'
                   }));
                   console.log('[Auth Callback] Token e usuário salvos no localStorage');
+                  
+                  // Disparar evento para o AuthContext detectar a mudança
+                  window.dispatchEvent(new Event('storage'));
+                  
+                  // Aguardar um pouco para garantir que o AuthContext processou
+                  await new Promise(resolve => setTimeout(resolve, 500));
                 }
                 
                 router.push(redirect);
@@ -106,6 +112,9 @@ function AuthCallbackContent() {
                 role: 'student'
               }));
               console.log('[Auth Callback] Token e usuário salvos no localStorage');
+              
+              // Disparar evento para o AuthContext detectar a mudança
+              window.dispatchEvent(new Event('storage'));
             }
             
             // Salvar nos cookies também
@@ -113,7 +122,7 @@ function AuthCallbackContent() {
             document.cookie = `sb-refresh-token=${data.session.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
           }
 
-          // Aguardar storage atualizar
+          // Aguardar storage atualizar e AuthContext processar
           await new Promise(resolve => setTimeout(resolve, 1000));
 
           if (window.opener) {
