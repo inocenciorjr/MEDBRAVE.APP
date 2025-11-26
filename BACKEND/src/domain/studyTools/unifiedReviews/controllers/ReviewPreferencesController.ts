@@ -8,13 +8,21 @@ export class ReviewPreferencesController {
   // GET /api/review-preferences
   getPreferences = async (req: Request, res: Response, next: NextFunction) => {
     try {
+      console.error('🎯 [ReviewPreferencesController] getPreferences chamado');
       const userId = req.user?.id;
+      console.error('🎯 [ReviewPreferencesController] userId:', userId);
+      
       if (!userId) throw AppError.unauthorized("Usuário não autenticado");
 
+      console.error('🎯 [ReviewPreferencesController] Chamando service.getPreferences');
       const prefs = await this.preferencesService.getPreferences(userId);
+      console.error('🎯 [ReviewPreferencesController] Preferências obtidas:', prefs ? 'SIM' : 'NÃO');
       
+      console.error('🎯 [ReviewPreferencesController] Enviando resposta 200');
       res.status(200).json({ success: true, data: prefs });
+      console.error('🎯 [ReviewPreferencesController] Resposta enviada com sucesso');
     } catch (error) {
+      console.error('❌ [ReviewPreferencesController] Erro capturado:', error);
       next(error);
     }
   };
