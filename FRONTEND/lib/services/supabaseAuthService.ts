@@ -10,21 +10,9 @@
  * @module lib/services/supabaseAuthService
  */
 
-import { createClient } from '@/lib/supabase/client';
+import { supabase } from '@/config/supabase';
 import type { User, AuthResult, BackendUserData } from '@/lib/types/auth';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
-
-// Cliente Supabase singleton
-let supabaseClient: ReturnType<typeof createClient> | null = null;
-
-function getSupabase() {
-  if (!supabaseClient) {
-    supabaseClient = createClient();
-  }
-  return supabaseClient;
-}
-
-const supabase = getSupabase();
 
 /**
  * Duração do cache de tokens em milissegundos (50 minutos)

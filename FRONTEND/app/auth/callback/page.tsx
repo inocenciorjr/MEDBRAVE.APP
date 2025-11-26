@@ -1,17 +1,23 @@
 'use client';
 
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useState, Suspense, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { createClient } from '@/lib/supabase/client';
-
-const supabase = createClient();
+import { supabase } from '@/config/supabase';
 
 function AuthCallbackContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [error, setError] = useState<string | null>(null);
+  const hasRun = useRef(false);
 
   useEffect(() => {
+    // Prevenir execução dupla
+    if (hasRun.current) {
+      console.log('[Auth Callback] Execução já iniciada, ignorando...');
+      return;
+    }
+    hasRun.current = true;
+
     const handleCallback = async () => {
       try {
         const code = searchParams.get('code');
