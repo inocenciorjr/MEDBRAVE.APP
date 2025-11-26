@@ -50,6 +50,22 @@ function AuthCallbackContent() {
               
               if (sessionData?.session) {
                 console.log('[Auth Callback] ✅ Sessão encontrada! Redirecionando para:', redirect);
+                console.log('[Auth Callback] Token da sessão:', sessionData.session.access_token.substring(0, 20) + '...');
+                
+                // Salvar token no localStorage para o AuthContext
+                if (typeof window !== 'undefined') {
+                  localStorage.setItem('authToken', sessionData.session.access_token);
+                  localStorage.setItem('user', JSON.stringify({
+                    uid: sessionData.session.user.id,
+                    email: sessionData.session.user.email,
+                    displayName: sessionData.session.user.user_metadata?.display_name || sessionData.session.user.email,
+                    photoURL: sessionData.session.user.user_metadata?.avatar_url || null,
+                    emailVerified: !!sessionData.session.user.email_confirmed_at,
+                    role: 'student'
+                  }));
+                  console.log('[Auth Callback] Token e usuário salvos no localStorage');
+                }
+                
                 router.push(redirect);
                 return;
               }
@@ -74,9 +90,25 @@ function AuthCallbackContent() {
 
           console.log('[Auth Callback] ✅ Código trocado com sucesso!');
 
-          // Salvar tokens nos cookies
+          // Salvar tokens e usuário
           if (data?.session) {
-            console.log('[Auth Callback] Salvando tokens nos cookies...');
+            console.log('[Auth Callback] Salvando tokens e usuário...');
+            
+            // Salvar no localStorage para o AuthContext
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('authToken', data.session.access_token);
+              localStorage.setItem('user', JSON.stringify({
+                uid: data.session.user.id,
+                email: data.session.user.email,
+                displayName: data.session.user.user_metadata?.display_name || data.session.user.email,
+                photoURL: data.session.user.user_metadata?.avatar_url || null,
+                emailVerified: !!data.session.user.email_confirmed_at,
+                role: 'student'
+              }));
+              console.log('[Auth Callback] Token e usuário salvos no localStorage');
+            }
+            
+            // Salvar nos cookies também
             document.cookie = `sb-access-token=${data.session.access_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
             document.cookie = `sb-refresh-token=${data.session.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
           }
