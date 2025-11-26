@@ -7,14 +7,30 @@ import { selfMiddleware } from "../../auth/middleware/self.middleware";
 export function createUserRoutes(): Router {
   const router = Router();
 
+  console.log('🔧 [UserRoutes] Registrando rotas de usuário...');
+
+  // Rota de teste sem middleware para verificar se a rota está sendo registrada
+  router.get("/test", async (req, res) => {
+    console.log('📍 [UserRoutes] GET /test chamado - rota funcionando!');
+    return res.status(200).json({ message: "User routes working!" });
+  });
+
   // Rota /me usa APENAS autenticação (sem verificação de plano)
   // Isso permite que o frontend busque a role antes de verificar o plano
   router.get("/me", supabaseAuthMiddleware, async (req, res) => {
+    console.log('📍 [UserRoutes] GET /me chamado');
+    console.log('📍 [UserRoutes] Headers:', req.headers.authorization ? 'Authorization presente' : 'Authorization ausente');
+    console.log('📍 [UserRoutes] User:', (req as any).user);
+    console.log('📍 [UserRoutes] UserId:', (req as any).userId);
+    
     try {
       // Tentar pegar userId de diferentes lugares onde o middleware pode ter colocado
       const userId = (req as any).userId || (req as any).user?.id;
 
+      console.log('📍 [UserRoutes] UserId final:', userId);
+
       if (!userId) {
+        console.log('❌ [UserRoutes] UserId não encontrado - retornando 401');
         return res.status(401).json({ error: "Unauthorized" });
       }
 
