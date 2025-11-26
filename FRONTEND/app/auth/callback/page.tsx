@@ -169,7 +169,10 @@ function AuthCallbackContent() {
             window.close();
           } else {
             console.log('[Auth Callback] Redirecionando com reload completo...');
-            window.location.href = redirect;
+            // Garantir que usa o origin correto
+            const redirectUrl = redirect.startsWith('http') ? redirect : `${window.location.origin}${redirect}`;
+            console.log('[Auth Callback] URL final de redirect:', redirectUrl);
+            window.location.href = redirectUrl;
           }
         } else {
           // Implicit flow - tokens no hash
