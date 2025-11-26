@@ -23,7 +23,10 @@ export async function ensureAuthenticated(
 ): Promise<void> {
   const authHeader = request.headers.authorization;
 
-  console.log('[ensureAuthenticated] Headers:', {
+  console.log('[ensureAuthenticated] Requisição:', {
+    method: request.method,
+    url: request.url,
+    path: request.path,
     authorization: authHeader ? 'presente' : 'ausente',
     origin: request.headers.origin,
     referer: request.headers.referer,
