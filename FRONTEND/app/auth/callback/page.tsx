@@ -65,14 +65,10 @@ function AuthCallbackContent() {
                   }));
                   console.log('[Auth Callback] Token e usuário salvos no localStorage');
                   
-                  // Disparar evento para o AuthContext detectar a mudança
-                  window.dispatchEvent(new Event('storage'));
-                  
-                  // Aguardar um pouco para garantir que o AuthContext processou
-                  await new Promise(resolve => setTimeout(resolve, 500));
+                  // Usar window.location.href para forçar reload completo
+                  console.log('[Auth Callback] Redirecionando com reload completo...');
+                  window.location.href = redirect;
                 }
-                
-                router.push(redirect);
                 return;
               }
               
@@ -122,17 +118,14 @@ function AuthCallbackContent() {
             document.cookie = `sb-refresh-token=${data.session.refresh_token}; path=/; max-age=${60 * 60 * 24 * 7}; SameSite=Lax`;
           }
 
-          // Aguardar storage atualizar e AuthContext processar
-          await new Promise(resolve => setTimeout(resolve, 1000));
-
           if (window.opener) {
             console.log('[Auth Callback] Popup detectado - enviando mensagem e fechando...');
             window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
             await new Promise(resolve => setTimeout(resolve, 500));
             window.close();
           } else {
-            console.log('[Auth Callback] Redirecionando para:', redirect);
-            router.push(redirect);
+            console.log('[Auth Callback] Redirecionando com reload completo...');
+            window.location.href = redirect;
           }
         } else {
           // Implicit flow - tokens no hash
