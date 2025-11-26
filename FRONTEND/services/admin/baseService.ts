@@ -36,10 +36,17 @@ function getSupabaseToken(): string | null {
   }
   
   try {
-    // Tentar formato novo do Supabase: supabase.auth.token
+    // 1. Tentar authToken direto (salvo pelo callback)
+    const directToken = localStorage.getItem('authToken');
+    if (directToken) {
+      console.log('[getSupabaseToken] Token encontrado em authToken');
+      return directToken;
+    }
+    
+    // 2. Tentar formato novo do Supabase: supabase.auth.token
     let authData = localStorage.getItem('supabase.auth.token');
     
-    // Se não encontrar, tentar formato antigo: sb-<project-ref>-auth-token
+    // 3. Se não encontrar, tentar formato antigo: sb-<project-ref>-auth-token
     if (!authData) {
       const keys = Object.keys(localStorage);
       const supabaseKey = keys.find(key => key.startsWith('sb-') && key.endsWith('-auth-token'));
@@ -56,6 +63,7 @@ function getSupabaseToken(): string | null {
     console.error('[getSupabaseToken] Error getting Supabase token:', error);
   }
   
+  console.warn('[getSupabaseToken] Nenhum token encontrado no localStorage');
   return null;
 }
 
