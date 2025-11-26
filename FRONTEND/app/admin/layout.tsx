@@ -16,7 +16,11 @@ export default async function AdminServerLayout({
   // Pegar token dos cookies customizados
   const accessToken = cookieStore.get('sb-access-token')?.value;
 
+  console.log('[Admin Layout SSR] Cookies disponíveis:', cookieStore.getAll().map(c => c.name));
+  console.log('[Admin Layout SSR] Token encontrado:', accessToken ? 'SIM' : 'NÃO');
+
   if (!accessToken) {
+    console.log('[Admin Layout SSR] Sem token, redirecionando para login');
     redirect('/login?redirect=/admin');
   }
 
