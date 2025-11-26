@@ -1,7 +1,8 @@
 import { Router } from 'express';
 import { DataImportExportController } from '../controller/dataImportExportController';
 import { SupabaseDataImportExportService } from '../../../infra/integration/supabase/SupabaseDataImportExportService';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../auth/middleware/enhancedAuth.middleware';
 import { roleMiddleware } from '../../auth/middleware/role.middleware';
 import { UserRole } from '../../user/types';
 import { rateLimit } from '../middleware/rateLimit.middleware';
@@ -14,6 +15,10 @@ const dataImportExportController = new DataImportExportController(
 
 const router = Router();
 
+// Todas as rotas requerem autenticação + plano ativo + feature de export
+router.use(enhancedAuthMiddleware);
+router.use(requireFeature('canExportData') as any);
+
 /**
  * @route   POST /api/data-jobs
  * @desc    Cria um novo job de importação/exportação
@@ -21,7 +26,6 @@ const router = Router();
  */
 router.post(
   '/',
-  authMiddleware,
   roleMiddleware([UserRole.ADMIN]),
   rateLimit('create_data_job', 10, 60 * 60), // 10 por hora
   dataImportExportController.createDataJob.bind(dataImportExportController),
@@ -34,7 +38,6 @@ router.post(
  */
 router.get(
   '/:jobId',
-  authMiddleware,
   dataImportExportController.getDataJobById.bind(dataImportExportController),
 );
 
@@ -45,7 +48,6 @@ router.get(
  */
 router.get(
   '/',
-  authMiddleware,
   dataImportExportController.getDataJobs.bind(dataImportExportController),
 );
 
@@ -56,7 +58,6 @@ router.get(
  */
 router.delete(
   '/:jobId',
-  authMiddleware,
   dataImportExportController.deleteDataJob.bind(dataImportExportController),
 );
 
@@ -67,7 +68,6 @@ router.delete(
  */
 router.put(
   '/:jobId/cancel',
-  authMiddleware,
   dataImportExportController.cancelDataJob.bind(dataImportExportController),
 );
 
@@ -78,7 +78,6 @@ router.put(
  */
 router.post(
   '/:jobId/execute-import',
-  authMiddleware,
   roleMiddleware([UserRole.ADMIN]),
   rateLimit('execute_import_job', 5, 60 * 60), // 5 por hora
   dataImportExportController.executeImportJob.bind(dataImportExportController),
@@ -91,7 +90,6 @@ router.post(
  */
 router.post(
   '/:jobId/execute-export',
-  authMiddleware,
   roleMiddleware([UserRole.ADMIN]),
   rateLimit('execute_export_job', 5, 60 * 60), // 5 por hora
   dataImportExportController.executeExportJob.bind(dataImportExportController),

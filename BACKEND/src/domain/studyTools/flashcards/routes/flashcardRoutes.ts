@@ -11,9 +11,6 @@ import collectionRoutes from './collectionRoutes';
 
 import multer from 'multer';
 
-// Alias para compatibilidade
-const authMiddleware = enhancedAuthMiddleware;
-
 // Helper async wrapper para capturar erros e evitar uso de try/catch em cada rota
 // Aceita qualquer assinatura e delega para o controller
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -26,29 +23,32 @@ export const createFlashcardRoutes = (
 ): Router => {
   const router = Router();
 
+  // Aplicar middleware de autenticação + plano em TODAS as rotas
+  router.use(enhancedAuthMiddleware);
+
   // ===== ROTAS ESPECÍFICAS PRIMEIRO (antes de /:id) =====
   
   // Biblioteca do usuário
-  router.get('/my-library', enhancedAuthMiddleware, controller.getMyLibrary);
+  router.get('/my-library', controller.getMyLibrary);
   
   // Busca global
-  router.get('/search', enhancedAuthMiddleware, controller.globalSearch);
+  router.get('/search', controller.globalSearch);
   
   // Coleções
-  router.get('/collections/metadata', authMiddleware, controller.getCollectionsMetadata);
-  router.get('/collections/:collectionName/decks', authMiddleware, controller.getCollectionDecks);
+  router.get('/collections/metadata', controller.getCollectionsMetadata);
+  router.get('/collections/:collectionName/decks', controller.getCollectionDecks);
   
   // Comunidade
-  router.get('/official/collections', authMiddleware, controller.getOfficialCollections);
-  router.get('/community/collections', authMiddleware, controller.getCommunityCollections);
-  router.get('/community/collections/:collectionName', authMiddleware, controller.getPublicCollectionDetails);
+  router.get('/official/collections', controller.getOfficialCollections);
+  router.get('/community/collections', controller.getCommunityCollections);
+  router.get('/community/collections/:collectionName', controller.getPublicCollectionDetails);
   
   // Estatísticas em lote
-  router.post('/decks/batch-stats', authMiddleware, controller.getBatchDeckStats);
+  router.post('/decks/batch-stats', controller.getBatchDeckStats);
   
   // Deck específico
-  router.get('/deck/:deckId/cards', authMiddleware, controller.getCardsByDeck);
-  router.get('/deck/:deckId/stats', authMiddleware, controller.getDeckCardStats);
+  router.get('/deck/:deckId/cards', controller.getCardsByDeck);
+  router.get('/deck/:deckId/stats', controller.getDeckCardStats);
   
   // Upload de imagem para flashcards
   const imageUpload = multer({
@@ -62,13 +62,13 @@ export const createFlashcardRoutes = (
       }
     },
   });
-  router.post('/upload-image', authMiddleware, imageUpload.single('file'), controller.uploadFlashcardImage);
+  router.post('/upload-image', imageUpload.single('file'), controller.uploadFlashcardImage);
   
   // ===== ROTAS DE SESSÃO DE ESTUDO =====
-  router.get('/decks/:deckId/session', authMiddleware, controller.getStudySession);
-  router.put('/decks/:deckId/session', authMiddleware, controller.updateStudySession);
-  router.delete('/decks/:deckId/session', authMiddleware, controller.finishStudySession);
-  router.get('/decks/:deckId/stats', authMiddleware, controller.getDeckStatistics);
+  router.get('/decks/:deckId/session', controller.getStudySession);
+  router.put('/decks/:deckId/session', controller.updateStudySession);
+  router.delete('/decks/:deckId/session', controller.finishStudySession);
+  router.get('/decks/:deckId/stats', controller.getDeckStatistics);
   
   // Subrotas para decks (CRUD)
   router.use('/decks', deckRoutes);
@@ -76,7 +76,7 @@ export const createFlashcardRoutes = (
   // ===== ROTAS GENÉRICAS DEPOIS =====
   
   // Criar flashcard (com verificação de limite)
-  router.post('/', enhancedAuthMiddleware, checkFlashcardsCreatedLimit as any, controller.create);
+  router.post('/', checkFlashcardsCreatedLimit as any, controller.create);
 
   /**
    * @swagger
@@ -119,7 +119,7 @@ export const createFlashcardRoutes = (
    *       401:
    *         description: Unauthorized
    */
-  // router.get('/search', authMiddleware, controller.globalSearch); // MOVIDO PARA O TOPO
+  // router.get('/search', controller.globalSearch); // MOVIDO PARA O TOPO
 
   /**
    * @swagger
@@ -146,7 +146,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Flashcards retrieved successfully
    */
-  router.post('/bulk', authMiddleware, controller.getByIds);
+  router.post('/bulk', controller.getByIds);
 
   /**
    * @swagger
@@ -166,7 +166,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Flashcard details
    */
-  router.get('/:id', authMiddleware, controller.getById);
+  router.get('/:id', controller.getById);
 
   /**
    * @swagger
@@ -203,7 +203,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: List of flashcards
    */
-  router.get('/', authMiddleware, controller.getByUser);
+  router.get('/', controller.getByUser);
 
   /**
    * @swagger
@@ -229,7 +229,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Flashcard updated successfully
    */
-  router.put('/:id', authMiddleware, controller.update);
+  router.put('/:id', controller.update);
 
   /**
    * @swagger
@@ -249,7 +249,7 @@ export const createFlashcardRoutes = (
    *       204:
    *         description: Flashcard deleted successfully
    */
-  router.delete('/:id', authMiddleware, controller.delete);
+  router.delete('/:id', controller.delete);
 
   /**
    * @swagger
@@ -269,7 +269,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Flashcard archive status updated
    */
-  router.patch('/:id/archive', authMiddleware, controller.toggleArchive);
+  router.patch('/:id/archive', controller.toggleArchive);
 
   /**
    * @swagger
@@ -302,10 +302,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Review recorded successfully
    */
-  router.post('/:id/review', authMiddleware, controller.recordReview);
-
-  // Require authentication for all subsequent routes
-  router.use(authMiddleware);
+  router.post('/:id/review', controller.recordReview);
 
   // FSRS status endpoint removed - FSRS logic deprecated
 
@@ -323,7 +320,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collections metadata
    */
-  // router.get('/collections/metadata', authMiddleware, controller.getCollectionsMetadata); // MOVIDO PARA O TOPO
+  // router.get('/collections/metadata', controller.getCollectionsMetadata); // MOVIDO PARA O TOPO
 
   /**
    * @swagger
@@ -372,7 +369,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Deck public status updated
    */
-  router.put('/decks/:deckId/public-status', authMiddleware, controller.toggleDeckPublicStatus);
+  router.put('/decks/:deckId/public-status', controller.toggleDeckPublicStatus);
 
   /**
    * @swagger
@@ -392,7 +389,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Deck details with cards
    */
-  router.get('/decks/:deckId', authMiddleware, wrap(controller.getDeckById));
+  router.get('/decks/:deckId', wrap(controller.getDeckById));
 
   /**
    * @swagger
@@ -412,7 +409,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Deck deleted successfully
    */
-  router.delete('/decks/:deckId', authMiddleware, controller.deleteDeck);
+  router.delete('/decks/:deckId', controller.deleteDeck);
 
   /**
    * @swagger
@@ -432,7 +429,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: User decks
    */
-  router.get('/decks/user/:userId', authMiddleware, controller.getUserDecks);
+  router.get('/decks/user/:userId', controller.getUserDecks);
 
   /**
    * @swagger
@@ -470,7 +467,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Filtered flashcards
    */
-  router.get('/flashcards/filtered', authMiddleware, controller.getFlashcardsWithFilters);
+  router.get('/flashcards/filtered', controller.getFlashcardsWithFilters);
 
   /**
    * @swagger
@@ -490,7 +487,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: User decks
    */
-  router.get('/decks', authMiddleware, controller.getAllDecks);
+  router.get('/decks', controller.getAllDecks);
 
   /**
    * @swagger
@@ -538,7 +535,7 @@ export const createFlashcardRoutes = (
    *       404:
    *         description: Original card not found
    */
-  router.post('/:id/duplicate', authMiddleware, controller.duplicateCard);
+  router.post('/:id/duplicate', controller.duplicateCard);
 
   /**
    * @swagger
@@ -571,7 +568,7 @@ export const createFlashcardRoutes = (
    *       401:
    *         description: Unauthorized
    */
-  router.delete('/batch-delete', authMiddleware, controller.deleteBatch);
+  router.delete('/batch-delete', controller.deleteBatch);
 
   /**
    * @swagger
@@ -682,7 +679,7 @@ export const createFlashcardRoutes = (
    *       404:
    *         description: Card not found
    */
-  router.put("/:id/tags", authMiddleware, controller.updateCardTags);
+  router.put("/:id/tags", controller.updateCardTags);
 
   /**
    * @swagger
@@ -795,7 +792,7 @@ export const createFlashcardRoutes = (
    *       401:
    *         description: Unauthorized
    */
-  // router.get("/community/collections", authMiddleware, controller.getCommunityCollections); // MOVIDO PARA O TOPO
+  // router.get("/community/collections", controller.getCommunityCollections); // MOVIDO PARA O TOPO
 
   /**
    * @swagger
@@ -825,7 +822,7 @@ export const createFlashcardRoutes = (
    *       404:
    *         description: Collection not found
    */
-  router.post("/collections/:id/add-to-library", authMiddleware, controller.addToLibrary);
+  router.post("/collections/:id/add-to-library", controller.addToLibrary);
 
   /**
    * @swagger
@@ -853,7 +850,6 @@ export const createFlashcardRoutes = (
    */
   router.delete(
     "/collections/:id/remove-from-library",
-    authMiddleware,
     controller.removeFromLibrary,
   );
 
@@ -886,7 +882,6 @@ export const createFlashcardRoutes = (
    */
   router.delete(
     "/collections/:collectionName",
-    authMiddleware,
     controller.deleteCollection,
   );
 
@@ -914,7 +909,7 @@ export const createFlashcardRoutes = (
    *       404:
    *         description: Collection not found
    */
-  router.post("/collections/:id/like", authMiddleware, controller.toggleLikeCollection);
+  router.post("/collections/:id/like", controller.toggleLikeCollection);
 
   /**
    * @swagger
@@ -959,7 +954,7 @@ export const createFlashcardRoutes = (
    *       404:
    *         description: Collection not found
    */
-  router.post("/collections/:id/rate", authMiddleware, controller.rateCollection);
+  router.post("/collections/:id/rate", controller.rateCollection);
 
   // Montar as rotas de importação APKG
   router.use('/', apkgImportRoutes);
@@ -995,7 +990,7 @@ export const createFlashcardRoutes = (
    *       201:
    *         description: Collection created successfully
    */
-  router.post('/collections', authMiddleware, controller.createCollection);
+  router.post('/collections', controller.createCollection);
 
   /**
    * @swagger
@@ -1015,7 +1010,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection details
    */
-  router.get('/collections/by-id/:collectionId', authMiddleware, controller.getCollectionByUniqueId);
+  router.get('/collections/by-id/:collectionId', controller.getCollectionByUniqueId);
 
   /**
    * @swagger
@@ -1035,7 +1030,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection decks
    */
-  router.get('/collections/by-id/:collectionId/decks', authMiddleware, controller.getDecksByCollectionId);
+  router.get('/collections/by-id/:collectionId/decks', controller.getDecksByCollectionId);
 
   /**
    * @swagger
@@ -1055,7 +1050,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection added to library
    */
-  router.post('/collections/by-id/:collectionId/add', authMiddleware, controller.addCollectionToLibrary);
+  router.post('/collections/by-id/:collectionId/add', controller.addCollectionToLibrary);
 
   /**
    * @swagger
@@ -1075,7 +1070,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection removed from library
    */
-  router.delete('/collections/by-id/:collectionId/remove', authMiddleware, controller.removeCollectionFromLibrary);
+  router.delete('/collections/by-id/:collectionId/remove', controller.removeCollectionFromLibrary);
 
   /**
    * @swagger
@@ -1095,7 +1090,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Library check result
    */
-  router.get('/collections/by-id/:collectionId/check', authMiddleware, controller.checkCollectionInLibrary);
+  router.get('/collections/by-id/:collectionId/check', controller.checkCollectionInLibrary);
 
   /**
    * @swagger
@@ -1129,7 +1124,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection updated successfully
    */
-  router.put('/collections/by-id/:collectionId', authMiddleware, controller.updateCollectionById);
+  router.put('/collections/by-id/:collectionId', controller.updateCollectionById);
 
   /**
    * @swagger
@@ -1149,7 +1144,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Collection deleted successfully
    */
-  router.delete('/collections/by-id/:collectionId', authMiddleware, controller.deleteCollectionById);
+  router.delete('/collections/by-id/:collectionId', controller.deleteCollectionById);
 
   // ==================== ROTAS DE SESSÃO DE ESTUDO ====================
 
@@ -1171,7 +1166,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Study session retrieved successfully
    */
-  router.get('/decks/:deckId/session', authMiddleware, controller.getStudySession);
+  router.get('/decks/:deckId/session', controller.getStudySession);
 
   /**
    * @swagger
@@ -1205,7 +1200,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Session updated successfully
    */
-  router.put('/decks/:deckId/session', authMiddleware, controller.updateStudySession);
+  router.put('/decks/:deckId/session', controller.updateStudySession);
 
   /**
    * @swagger
@@ -1225,7 +1220,7 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Session finished successfully
    */
-  router.delete('/decks/:deckId/session', authMiddleware, controller.finishStudySession);
+  router.delete('/decks/:deckId/session', controller.finishStudySession);
 
   /**
    * @swagger
@@ -1245,10 +1240,11 @@ export const createFlashcardRoutes = (
    *       200:
    *         description: Deck statistics retrieved successfully
    */
-  router.get('/decks/:deckId/stats', authMiddleware, controller.getDeckStatistics);
+  router.get('/decks/:deckId/stats', controller.getDeckStatistics);
 
   return router;
 };
 
 // Exportação padrão da função para uso direto no sistema de roteamento
 export default createFlashcardRoutes;
+

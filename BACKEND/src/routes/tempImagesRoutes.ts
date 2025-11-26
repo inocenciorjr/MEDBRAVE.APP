@@ -1,8 +1,12 @@
 import { Router, Request, Response } from 'express';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 import path from 'path';
 import fs from 'fs';
 
 const router = Router();
+
+// Todas as rotas requerem autenticação + plano ativo
+router.use(enhancedAuthMiddleware);
 
 /**
  * GET /api/temp-images/:filename

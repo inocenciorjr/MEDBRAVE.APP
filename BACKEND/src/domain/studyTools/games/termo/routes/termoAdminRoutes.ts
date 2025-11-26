@@ -1,17 +1,15 @@
 import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { TermoAdminController } from '../controllers/TermoAdminController';
-import { supabaseAuthMiddleware, AuthenticatedRequest } from '../../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../../auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../../../../auth/middleware/admin.middleware';
 
 export const createTermoAdminRoutes = (supabase: SupabaseClient): Router => {
   const router = Router();
   const termoAdminController = new TermoAdminController(supabase);
 
-  // Aplicar middleware de autenticação e admin
-  router.use((req, res, next) => {
-    supabaseAuthMiddleware(req as AuthenticatedRequest, res, next).catch(next);
-  });
+  // Aplicar middleware de autenticação + plano e admin
+  router.use(enhancedAuthMiddleware);
   router.use(adminMiddleware);
 
   // Rotas administrativas para gerenciamento do jogo Termo

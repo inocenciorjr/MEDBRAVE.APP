@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
-import { ensureAuthenticated as authMiddleware } from '../http/middlewares/supabase/ensureAuthenticated';
+import { enhancedAuthMiddleware } from '../../domain/auth/middleware/enhancedAuth.middleware';
 import { SpecialtyAnalyticsService } from './SpecialtyAnalyticsService';
 import { logger } from '../../utils/logger';
 import supabase from '../../config/supabaseAdmin';
@@ -11,7 +11,8 @@ export function createSpecialtyAnalyticsRoutes(
   const router = Router();
   const service = new SpecialtyAnalyticsService(client || supabase);
 
-  router.use(authMiddleware);
+  // Todas as rotas requerem autenticação + plano ativo
+  router.use(enhancedAuthMiddleware);
 
   // Últimas 8 semanas de accuracy por especialidade
   router.get('/:specialtyId/trend', async (req, res) => {

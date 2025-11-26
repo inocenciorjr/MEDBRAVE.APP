@@ -1,16 +1,14 @@
 import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { TermoGameController } from '../controllers/TermoGameController';
-import { supabaseAuthMiddleware, AuthenticatedRequest } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 
 export const createTermoGameRoutes = (supabase: SupabaseClient): Router => {
   const router = Router();
   const termoGameController = new TermoGameController(supabase);
 
-  // Aplicar middleware de autenticação obrigatório a todas as rotas
-  router.use((req, res, next) => {
-    supabaseAuthMiddleware(req as AuthenticatedRequest, res, next).catch(next);
-  });
+  // Aplicar middleware de autenticação + plano obrigatório a todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // Rotas do jogo
   router.get('/today-word', termoGameController.getTodayWord.bind(termoGameController));

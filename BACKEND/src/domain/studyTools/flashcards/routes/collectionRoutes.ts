@@ -29,36 +29,37 @@ router.put('/:collectionName/public-status', enhancedAuthMiddleware, controller.
 router.get('/public', enhancedAuthMiddleware, controller.getPublicCollections.bind(controller));
 
 // Listar coleções da comunidade (oficiais e não-oficiais)
-router.get('/community/collections', authMiddleware, controller.getCommunityCollections.bind(controller));
+router.get('/community/collections', controller.getCommunityCollections.bind(controller));
 
 // Buscar metadados das coleções do usuário
-router.get('/metadata', authMiddleware, controller.getCollectionsMetadata.bind(controller));
+router.get('/metadata', controller.getCollectionsMetadata.bind(controller));
 
 // Obter todas as coleções importadas (apenas nomes) - DEVE VIR ANTES das rotas com :collectionName
-router.get('/imported/all', authMiddleware, controller.getImportedCollectionNames.bind(controller));
+router.get('/imported/all', controller.getImportedCollectionNames.bind(controller));
 
 // Curtir/Descurtir coleção
-router.post('/:collectionName/like', authMiddleware, controller.toggleCollectionLike.bind(controller));
+router.post('/:collectionName/like', controller.toggleCollectionLike.bind(controller));
 
 // Importar coleção (registrar download)
-router.post('/:collectionName/import', authMiddleware, controller.importCollection.bind(controller));
+router.post('/:collectionName/import', controller.importCollection.bind(controller));
 
 // Verificar se curtiu
-router.get('/:collectionName/liked', authMiddleware, controller.checkCollectionLiked.bind(controller));
+router.get('/:collectionName/liked', controller.checkCollectionLiked.bind(controller));
 
 // Verificar se importou
-router.get('/:collectionName/imported', authMiddleware, controller.checkCollectionImported.bind(controller));
+router.get('/:collectionName/imported', controller.checkCollectionImported.bind(controller));
 
 // Clonar coleção pública para biblioteca do usuário
-router.post('/:collectionName/clone', authMiddleware, controller.clonePublicCollection.bind(controller));
+router.post('/:collectionName/clone', controller.clonePublicCollection.bind(controller));
 
 // Obter detalhes de uma coleção pública
-router.get('/public/:collectionName', authMiddleware, controller.getPublicCollectionDetails.bind(controller));
+router.get('/public/:collectionName', controller.getPublicCollectionDetails.bind(controller));
 
 // Atualizar informações de uma coleção (com upload de imagem)
-router.put('/update', authMiddleware, upload.single('coverImage'), controller.updateCollection.bind(controller));
+router.put('/update', upload.single('coverImage'), controller.updateCollection.bind(controller));
 
 // Remover thumbnail de uma coleção
-router.delete('/remove-thumbnail', authMiddleware, controller.removeThumbnail.bind(controller));
+router.delete('/remove-thumbnail', controller.removeThumbnail.bind(controller));
 
 export default router;
+

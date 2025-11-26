@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { AuditLogController } from '../controllers/AuditLogController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../../auth/middleware/role.middleware';
 
 /**
@@ -11,8 +11,8 @@ import { adminMiddleware } from '../../auth/middleware/role.middleware';
 export function createAuditLogRoutes(controller: AuditLogController): Router {
   const router = Router();
 
-  // Aplicar middleware de autenticação em todas as rotas
-  router.use(authMiddleware);
+  // Aplicar middleware de autenticação + plano em todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // Aplicar middleware de administrador em todas as rotas (logs são visíveis apenas para admins)
   router.use(adminMiddleware);

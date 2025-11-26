@@ -2,7 +2,7 @@
 
 ## Total: 73 Arquivos de Rotas
 
-### ✅ Concluídos (50 arquivos)
+### ✅ Concluídos (57 arquivos)
 
 #### /routes (6 arquivos)
 1. ✅ routes/r2Routes.ts
@@ -57,10 +57,17 @@
 48. ✅ domain/achievements/routes/achievementRoutes.ts
 49. ✅ domain/filters/routes/filterRoutes.ts
 50. ✅ domain/filters/routes/publicFilterRoutes.ts
+51. ✅ domain/integration/routes/dataImportExportRoutes.ts
+52. ✅ domain/audit/routes/auditLogRoutes.ts
+53. ✅ infra/analytics/reportRoutes.ts
+54. ✅ infra/analytics/specialtyAnalyticsRoutes.ts
+55. ✅ routes/termoGameRoutes.ts
+56. ✅ routes/tempImagesRoutes.ts
+57. ✅ routes/monitoringRoutes.ts
 
 ---
 
-### ⏳ Pendentes (23 arquivos)
+### ⏳ Pendentes (16 arquivos)
 
 #### Arquivo Principal (1)
 1. ⏳ routes.ts - ARQUIVO PRINCIPAL que registra todas as rotas
@@ -176,8 +183,8 @@
 ## Estatísticas
 
 - **Total**: 73 arquivos
-- **Concluídos**: 50 arquivos (68%)
-- **Pendentes**: 23 arquivos (32%)
+- **Concluídos**: 57 arquivos (78%)
+- **Pendentes**: 16 arquivos (22%)
 
 ## Prioridade de Implementação
 

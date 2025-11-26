@@ -15,7 +15,7 @@
 
 import { Router } from 'express';
 import { monitoringController } from '../controllers/MonitoringController';
-import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../domain/auth/middleware/admin.middleware';
 
 const router = Router();
@@ -23,8 +23,8 @@ const router = Router();
 // Rota pública para receber dados do frontend (sem autenticação)
 router.post('/frontend-data', monitoringController.receiveFrontendData);
 
-// Middleware de autenticação e admin para as demais rotas
-router.use(authMiddleware as any);
+// Middleware de autenticação + plano e admin para as demais rotas
+router.use(enhancedAuthMiddleware);
 router.use(adminMiddleware as any);
 
 /**

@@ -1,13 +1,13 @@
 import { Router } from 'express';
 import { requireAdmin } from '../../../middleware/adminAuth';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { FlashcardController } from '../../studyTools/flashcards/controllers/flashcardController';
 
 export function createAdminFlashcardRoutes(controller: FlashcardController): Router {
   const router = Router();
 
-  // Middleware de autenticação (deve vir ANTES do adminMiddleware)
-  router.use(authMiddleware);
+  // Middleware de autenticação + plano (deve vir ANTES do adminMiddleware)
+  router.use(enhancedAuthMiddleware);
 
   // Middleware para garantir que apenas administradores acessem essas rotas
   router.use(requireAdmin as any);

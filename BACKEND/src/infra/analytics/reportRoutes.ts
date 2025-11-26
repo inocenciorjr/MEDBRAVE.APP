@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
-import { ensureAuthenticated as authMiddleware } from '../http/middlewares/supabase/ensureAuthenticated';
+import { enhancedAuthMiddleware } from '../../domain/auth/middleware/enhancedAuth.middleware';
 import { logger } from '../../utils/logger';
 import { supabase } from '../../config/supabaseAdmin';
 
@@ -8,8 +8,8 @@ export function createReportRoutes(client?: SupabaseClient): Router {
   const router = Router();
   const db = client || supabase;
 
-  // Middleware para autenticação em todas as rotas
-  router.use(authMiddleware);
+  // Middleware para autenticação + plano em todas as rotas
+  router.use(enhancedAuthMiddleware);
 
   // Dashboard principal com resumo de progresso
   router.get('/dashboard', (req, res) => {

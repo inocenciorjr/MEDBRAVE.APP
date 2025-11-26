@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { AdminController } from '../controllers/AdminController';
 import { adminMiddleware } from '../../auth/middleware/admin.middleware';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 // import { firestore } from 'firebase-admin';
 // import { authMiddleware } from '../../../shared/middlewares/authMiddleware';
 // import { adminMiddleware } from '../../../shared/middlewares/adminMiddleware';
@@ -9,8 +9,8 @@ import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/
 export function createAdminRoutes(controller: AdminController): Router {
   const router = Router();
 
-  // Middleware de autenticação (deve vir ANTES do adminMiddleware)
-  router.use(authMiddleware);
+  // Middleware de autenticação + plano (deve vir ANTES do adminMiddleware)
+  router.use(enhancedAuthMiddleware);
 
   // Middleware para garantir que apenas administradores acessem essas rotas
   router.use(adminMiddleware);

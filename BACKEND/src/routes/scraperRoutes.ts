@@ -667,7 +667,7 @@ router.post('/drafts/cleanup', async (_req, res) => {
  * @access Admin
  * @returns {Object} Job ID e status
  */
-router.post('/extract-from-sources', authMiddleware as any, adminMiddleware as any, scraperController.extractFromSources.bind(scraperController));
+router.post('/extract-from-sources' as any, adminMiddleware as any, scraperController.extractFromSources.bind(scraperController));
 
 /**
  * @route GET /api/admin/scraper/exam-sources
@@ -675,7 +675,7 @@ router.post('/extract-from-sources', authMiddleware as any, adminMiddleware as a
  * @access Admin
  * @returns {Object} Lista de exam sources
  */
-router.get('/exam-sources', authMiddleware as any, adminMiddleware as any, async (_req, res) => {
+router.get('/exam-sources' as any, adminMiddleware as any, async (_req, res) => {
   try {
     const { createClient } = require('@supabase/supabase-js');
     const supabase = createClient(
@@ -735,7 +735,7 @@ router.get('/exam-sources', authMiddleware as any, adminMiddleware as any, async
  * @access Admin
  * @returns {Object} Lista detalhada de todos os jobs
  */
-router.get('/jobs/all', authMiddleware as any, adminMiddleware as any, scraperController.getAllJobs);
+router.get('/jobs/all' as any, adminMiddleware as any, scraperController.getAllJobs);
 
 /**
  * @route DELETE /api/admin/scraper/jobs/obliterate
@@ -743,7 +743,7 @@ router.get('/jobs/all', authMiddleware as any, adminMiddleware as any, scraperCo
  * @access Admin
  * @returns {Object} Resultado da remoção
  */
-router.delete('/jobs/obliterate', authMiddleware as any, adminMiddleware as any, scraperController.obliterateAllJobs);
+router.delete('/jobs/obliterate' as any, adminMiddleware as any, scraperController.obliterateAllJobs);
 
 /**
  * @route DELETE /api/admin/scraper/jobs/status/:status
@@ -752,7 +752,7 @@ router.delete('/jobs/obliterate', authMiddleware as any, adminMiddleware as any,
  * @param {string} status - Status dos jobs a remover
  * @returns {Object} Resultado da remoção
  */
-router.delete('/jobs/status/:status', authMiddleware as any, adminMiddleware as any, scraperController.removeJobsByStatus);
+router.delete('/jobs/status/:status' as any, adminMiddleware as any, scraperController.removeJobsByStatus);
 
 /**
  * @route DELETE /api/admin/scraper/jobs/:jobId/force
@@ -761,6 +761,7 @@ router.delete('/jobs/status/:status', authMiddleware as any, adminMiddleware as 
  * @param {string} jobId - ID do job a remover
  * @returns {Object} Resultado da remoção
  */
-router.delete('/jobs/:jobId/force', authMiddleware as any, adminMiddleware as any, scraperController.forceRemoveJob);
+router.delete('/jobs/:jobId/force' as any, adminMiddleware as any, scraperController.forceRemoveJob);
 
 export default router;
+
