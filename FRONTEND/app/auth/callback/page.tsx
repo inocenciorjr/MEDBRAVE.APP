@@ -38,38 +38,53 @@ function AuthCallbackContent() {
         }
 
         if (code) {
+          console.log('🔍 [Callback] Code presente, verificando sessão...');
+          
           // Verificar se a sessão já foi estabelecida automaticamente pelo Supabase
           let { data: { session } } = await supabase.auth.getSession();
+          console.log('🔍 [Callback] Sessão inicial:', session ? 'existe' : 'não existe');
           
           if (!session) {
+            console.log('🔍 [Callback] Tentando exchangeCodeForSession...');
             // Sessão não existe, tentar trocar código
             const result = await supabase.auth.exchangeCodeForSession(code);
             
             if (result.error) {
+              console.error('❌ [Callback] Erro no exchangeCodeForSession:', result.error);
+              
               // Aguardar e tentar pegar sessão novamente
               await new Promise(resolve => setTimeout(resolve, 2000));
               const sessionCheck = await supabase.auth.getSession();
               session = sessionCheck.data.session;
+              console.log('🔍 [Callback] Sessão após retry:', session ? 'existe' : 'não existe');
             } else {
               session = result.data.session;
+              console.log('✅ [Callback] Sessão obtida com sucesso');
             }
           }
 
           // Se temos sessão (de qualquer forma), processar
           if (session) {
+            console.log('✅ [Callback] Processando sessão...');
             // Buscar role do backend
             let userRole = 'student';
             try {
+              console.log('🔍 [Callback] Buscando role do backend...');
               const roleResponse = await fetch('/api/user/me', {
                 headers: {
                   'Authorization': `Bearer ${session.access_token}`
                 }
               });
+              console.log('🔍 [Callback] Response status:', roleResponse.status);
               if (roleResponse.ok) {
                 const userData = await roleResponse.json();
                 userRole = userData.role || 'student';
+                console.log('✅ [Callback] Role obtida:', userRole);
+              } else {
+                console.error('❌ [Callback] Erro ao buscar role:', roleResponse.status);
               }
             } catch (e) {
+              console.error('❌ [Callback] Exceção ao buscar role:', e);
               // Se falhar, usa student como padrão
             }
 
@@ -100,17 +115,20 @@ function AuthCallbackContent() {
               }
 
               // Redirecionar
+              console.log('🔍 [Callback] Redirect final:', redirect);
               if (window.opener) {
                 window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
                 await new Promise(resolve => setTimeout(resolve, 500));
                 window.close();
               } else {
                 const redirectUrl = redirect.startsWith('http') ? redirect : `${window.location.origin}${redirect}`;
+                console.log('🔍 [Callback] Redirecionando para:', redirectUrl);
                 window.location.href = redirectUrl;
               }
             }
           } else {
             // Não conseguiu obter sessão
+            console.error('❌ [Callback] Sessão não obtida');
             setError('Erro ao autenticar. Tente fazer login novamente.');
             setTimeout(() => router.push('/login'), 3000);
           }
