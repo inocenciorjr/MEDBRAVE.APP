@@ -1,13 +1,13 @@
 import { Router } from "express";
 import { supabase } from "../../../config/supabaseAdmin";
-import { ensureAuthenticated as authMiddleware } from "../../../infra/http/middlewares/supabase/ensureAuthenticated";
+import { enhancedAuthMiddleware } from "../../auth/middleware/enhancedAuth.middleware";
 import { selfMiddleware } from "../../auth/middleware/self.middleware";
 
 export function createUserRoutes(): Router {
   const router = Router();
 
-  // Middleware para autenticação
-  router.use(authMiddleware);
+  // Middleware para autenticação + plano
+  router.use(enhancedAuthMiddleware);
 
   // Rota para obter o perfil do usuário atual
   router.get("/me", async (req, res) => {

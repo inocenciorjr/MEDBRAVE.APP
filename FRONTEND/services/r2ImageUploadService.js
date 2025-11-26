@@ -88,9 +88,6 @@ class R2ImageUploadService {
     
     if (token) {
       headers['Authorization'] = `Bearer ${token}`;
-      if (process.env.NODE_ENV === 'development') {
-        console.log('🔐 Token adicionado ao header (prefixo):', token.substring(0, 5) + '...');
-      }
     } else {
       console.warn('⚠️ Token não encontrado - requisição sem autenticação');
     }

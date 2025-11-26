@@ -22,22 +22,18 @@ export interface EndSessionRequest {
 export const studySessionService = {
   async startSession(data: StartSessionRequest): Promise<StudySession> {
     try {
-      console.log('[studySessionService] Chamando startSession com:', data);
       const response = await fetchWithAuth('/study-sessions/start', {
         method: 'POST',
         body: JSON.stringify(data),
       });
-      console.log('[studySessionService] Response status:', response.status);
       if (!response.ok) {
         const errorText = await response.text();
-        console.error('[studySessionService] Erro na resposta:', errorText);
         throw new Error('Erro ao iniciar sessão');
       }
       const result = await response.json();
-      console.log('[studySessionService] Result:', result);
       return result.data || result;
     } catch (error) {
-      console.error('[studySessionService] Erro ao iniciar sessão:', error);
+      console.error('Erro ao iniciar sessão:', error);
       throw error;
     }
   },

@@ -1,11 +1,14 @@
 import { Router, Request, Response } from 'express';
 import errorNotebookFolderService from '../services/errorNotebookFolderService';
-import { supabaseAuthMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../domain/auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
 
-// Aplicar middleware de autenticação em todas as rotas
-router.use(supabaseAuthMiddleware);
+// Aplicar middleware de autenticação + plano em todas as rotas
+router.use(enhancedAuthMiddleware as any);
+// Caderno de erros requer feature específica
+router.use(requireFeature('canUseErrorNotebook') as any);
 
 // GET /api/error-notebook-folders - Listar pastas do usuário
 router.get('/', async (req: Request, res: Response) => {

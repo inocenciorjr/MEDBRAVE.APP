@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { UpdateNoteService } from '../services/UpdateNoteService';
 import { UpdateNoteController } from '../controllers/UpdateNoteController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../../auth/middleware/admin.middleware';
 
 export function createUpdateNoteRoutes(supabase: SupabaseClient): Router {
@@ -16,45 +16,45 @@ export function createUpdateNoteRoutes(supabase: SupabaseClient): Router {
     updateNoteController.getNotesForQuestion
   );
 
-  // Rotas admin (requerem autenticação e permissão de admin)
+  // Rotas admin (requerem autenticação + plano e permissão de admin)
   router.post(
     '/',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.createUpdateNote
   );
 
   router.get(
     '/',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.getAllUpdateNotes
   );
 
   router.get(
     '/:noteId/questions',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.getQuestionsForNote
   );
 
   router.get(
     '/:noteId',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.getUpdateNoteById
   );
 
   router.put(
     '/:noteId',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.updateUpdateNote
   );
 
   router.delete(
     '/:noteId',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     adminMiddleware as any,
     updateNoteController.deleteUpdateNote
   );

@@ -2,6 +2,11 @@ import { Router } from 'express';
 import { PlanController } from '../controllers/PlanController';
 import { planValidators } from '../validators/planValidators';
 import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import {
+  publicPlansRateLimiter,
+  createPlanRateLimiter,
+  updatePlanRateLimiter,
+} from '../../../middleware/rateLimiter';
 
 /**
  * Cria as rotas de planos
@@ -11,10 +16,14 @@ import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/
 export const createPlanRoutes = (controller: PlanController): Router => {
   const router = Router();
 
-  // Rota para criar um novo plano (apenas admin)
+  // Rota para listar planos públicos ativos (com rate limit)
+  router.get('/public', publicPlansRateLimiter, controller.listPublicPlans);
+
+  // Rota para criar um novo plano (apenas admin, com rate limit)
   router.post(
     '/',
     authMiddleware,
+    createPlanRateLimiter,
     planValidators.createPlan,
     validateRequest,
     controller.createPlan,
@@ -28,9 +37,6 @@ export const createPlanRoutes = (controller: PlanController): Router => {
     controller.getPlanById,
   );
 
-  // Rota para listar planos públicos ativos
-  router.get('/public', controller.listPublicPlans);
-
   // Rota para listar todos os planos (apenas admin)
   router.get(
     '/',
@@ -40,10 +46,11 @@ export const createPlanRoutes = (controller: PlanController): Router => {
     controller.listAllPlans,
   );
 
-  // Rota para atualizar um plano (apenas admin)
+  // Rota para atualizar um plano (apenas admin, com rate limit)
   router.put(
     '/:planId',
     authMiddleware,
+    updatePlanRateLimiter,
     planValidators.updatePlan,
     validateRequest,
     controller.updatePlan,

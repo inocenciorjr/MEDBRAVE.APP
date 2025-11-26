@@ -1,7 +1,8 @@
 import express from 'express';
 import { r2Service } from '../services/r2Service';
 import { logger } from '../utils/logger';
-import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../domain/auth/middleware/enhancedAuth.middleware';
 
 const router = express.Router();
 
@@ -43,8 +44,8 @@ router.get('/debug', async (_req, res) => {
   }
 });
 
-// Proteger todas as rotas
-router.use(authMiddleware as any);
+// Proteger todas as rotas com verificação de plano
+router.use(enhancedAuthMiddleware as any);
 
 // Health check
 router.get('/health', async (_req, res) => {
@@ -68,8 +69,8 @@ router.get('/health', async (_req, res) => {
   }
 });
 
-// Gerar presigned URL para upload
-router.post('/presigned-upload', async (req, res) => {
+// Gerar presigned URL para upload (requer feature de export)
+router.post('/presigned-upload', requireFeature('canExportData') as any, async (req, res) => {
   try {
     const { filename, contentType, folder = 'uploads', metadata = {} } = req.body;
 

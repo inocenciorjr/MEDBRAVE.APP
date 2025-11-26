@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "expire-plans": "ts-node src/jobs/expirePlansJob.ts"
+  },
+  "dependencies": {
+    "express-rate-limit": "^7.1.5"
+  }
+}

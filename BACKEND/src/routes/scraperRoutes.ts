@@ -12,7 +12,7 @@
 
 import { Router } from 'express';
 import { scraperController } from '../controllers/ScraperController';
-import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../domain/auth/middleware/admin.middleware';
 import { scraperRateLimiter } from '../middleware/rateLimiter';
 import logger from '../utils/logger';
@@ -22,8 +22,8 @@ const router = Router();
 
 console.log('📡 ScraperRoutes loaded');
 
-// Middleware de autenticação e admin para todas as rotas APÓS SSE
-router.use(authMiddleware as any);
+// Middleware de autenticação + plano e admin para todas as rotas
+router.use(enhancedAuthMiddleware as any);
 router.use(adminMiddleware as any);
 
 // Rate limiting apenas para extração manual (10 requisições por hora)

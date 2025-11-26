@@ -28,7 +28,7 @@ export class UserPlanController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: AuthenticatedRequest): void {
-    const role = (req.user?.user_role || '').toUpperCase();
+    const role = ((req.user as any)?.role || req.user?.user_role || '').toUpperCase();
     if (role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
@@ -157,10 +157,9 @@ export class UserPlanController {
         );
       }
 
-      // Verificar permissão de acesso
       const userId = this.getAuthenticatedUserId(req);
-      const role = (req.user?.user_role || '').toUpperCase();
-      this.checkUserPlanAccess(userId, userPlan.userId, role || '');
+      const role = ((req.user as any)?.role || req.user?.user_role || '').toUpperCase();
+      this.checkUserPlanAccess(userId, userPlan.userId, role);
 
       res.status(200).json({
         success: true,
@@ -183,10 +182,9 @@ export class UserPlanController {
     next: NextFunction,
   ): Promise<void> => {
     try {
-      // Permitir que um usuário veja apenas seus próprios planos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = (req.user?.user_role || '').toUpperCase();
+      const role = ((req.user as any)?.role || req.user?.user_role || '').toUpperCase();
 
       if (!userId) {
         userId = authenticatedUserId;
@@ -221,14 +219,13 @@ export class UserPlanController {
     next: NextFunction,
   ): Promise<void> => {
     try {
-      // Permitir que um usuário veja apenas seus próprios planos ativos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = (req.user?.user_role || '').toUpperCase();
+      const role = ((req.user as any)?.role || req.user?.user_role || '').toUpperCase();
 
       if (!userId) {
         userId = authenticatedUserId;
-      } else if (userId !== authenticatedUserId && role !== 'admin') {
+      } else if (userId !== authenticatedUserId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar planos de outros usuários',
@@ -306,7 +303,6 @@ export class UserPlanController {
       const userPlanId = req.params.userPlanId;
       const { reason } = req.body;
 
-      // Verificar se o plano existe
       const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
       if (!userPlan) {
         throw new AppError(
@@ -316,10 +312,25 @@ export class UserPlanController {
         );
       }
 
-      // Verificar permissão de acesso
+      if (userPlan.status === UserPlanStatus.EXPIRED) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Não é possível cancelar um plano já expirado',
+          ErrorCodes.VALIDATION_ERROR,
+        );
+      }
+
+      if (userPlan.status === UserPlanStatus.CANCELLED) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Este plano já está cancelado',
+          ErrorCodes.VALIDATION_ERROR,
+        );
+      }
+
       const userId = this.getAuthenticatedUserId(req);
-      const role = (req.user?.user_role || '').toUpperCase();
-      this.checkUserPlanAccess(userId, userPlan.userId, role || '');
+      const role = ((req.user as any)?.role || req.user?.user_role || '').toUpperCase();
+      this.checkUserPlanAccess(userId, userPlan.userId, role);
 
       const cancelledPlan = await this.userPlanService.cancelUserPlan(
         userPlanId,

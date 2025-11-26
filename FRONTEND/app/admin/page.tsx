@@ -15,38 +15,15 @@ export default function AdminDashboardPage() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [authChecked, setAuthChecked] = useState(false);
-
+  const loadedRef = React.useRef(false); // Flag para prevenir múltiplas cargas
+  
   useEffect(() => {
-    checkAuth();
+    // Prevenir múltiplas execuções
+    if (loadedRef.current) return;
+    
+    loadedRef.current = true;
+    loadStats();
   }, []);
-
-  const checkAuth = async () => {
-    try {
-      // Aguardar um pouco para o token ser processado
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      const { data: { session } } = await supabase.auth.getSession();
-      
-      if (!session) {
-        console.log('[Admin] Sem sessão, redirecionando para login');
-        router.push('/login?redirect=/admin');
-        return;
-      }
-
-      setAuthChecked(true);
-      loadStats();
-    } catch (err) {
-      console.error('[Admin] Erro ao verificar autenticação:', err);
-      router.push('/login?redirect=/admin');
-    }
-  };
-
-  useEffect(() => {
-    if (authChecked) {
-      loadStats();
-    }
-  }, [authChecked]);
 
   const loadStats = async () => {
     try {

@@ -21,19 +21,14 @@ function LoginContent() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log('[Login] 🚀 Iniciando login...');
     setLoading(true);
     setError(null);
 
     try {
-      console.log('[Login] ⏱️ Chamando Supabase signInWithPassword...');
-      console.time('[Login] signInWithPassword');
       const { data, error: signInError } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
-      console.timeEnd('[Login] signInWithPassword');
-      console.log('[Login] ✅ Supabase respondeu');
 
       if (signInError) {
         setError('Email ou senha incorretos. Verifique suas credenciais.');
@@ -41,13 +36,8 @@ function LoginContent() {
       }
 
       if (data.user) {
-        console.log('[Login] Login bem-sucedido, redirecionando...');
-        console.time('[Login] router.push');
-        
         // Redirecionar para a página solicitada
         router.push(redirect);
-        
-        console.timeEnd('[Login] router.push');
       }
     } catch (err) {
       setError('Erro ao fazer login. Tente novamente.');
@@ -58,27 +48,18 @@ function LoginContent() {
   };
 
   const handleGoogleLogin = async () => {
-    console.log('🚀 handleGoogleLogin CHAMADO!');
-    alert('handleGoogleLogin foi chamado! Origin: ' + window.location.origin);
-    
     setLoading(true);
     setError(null);
 
     try {
+      // Salvar o redirect no localStorage para recuperar depois
+      localStorage.setItem('auth_redirect', redirect);
+
       // Usar NEXT_PUBLIC_SITE_URL se disponível, senão usar window.location.origin
       const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
-      const redirectUrl = `${siteUrl}/auth/callback?redirect=${encodeURIComponent(redirect)}`;
-      
-      console.log('=== LOGIN DEBUG ===');
-      console.log('NEXT_PUBLIC_SITE_URL:', process.env.NEXT_PUBLIC_SITE_URL);
-      console.log('window.location.origin:', window.location.origin);
-      console.log('siteUrl usado:', siteUrl);
-      console.log('redirect param:', redirect);
-      console.log('redirectTo completo:', redirectUrl);
-      console.log('==================');
-      
-      // Abrir em popup
-      const result = await supabase.auth.signInWithOAuth({
+      const redirectUrl = `${siteUrl}/auth/callback`;
+
+      const { error: signInError } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
           redirectTo: redirectUrl,
@@ -89,13 +70,6 @@ function LoginContent() {
           skipBrowserRedirect: false,
         },
       });
-      
-      console.log('=== SUPABASE RESPONSE ===');
-      console.log('result:', result);
-      console.log('result.data?.url:', result.data?.url);
-      console.log('========================');
-      
-      const { error: signInError } = result;
 
       if (signInError) {
         setError('Erro ao fazer login com Google. Tente novamente.');

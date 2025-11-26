@@ -29,6 +29,13 @@ const TOKEN_CACHE_DURATION = 50 * 60 * 1000;
 const SYNC_DEBOUNCE_TIME = 5000;
 
 /**
+ * Cache e debounce para getUserWithRole
+ */
+let getUserWithRolePromise: Promise<User> | null = null;
+let getUserWithRoleCache: { user: User; timestamp: number; userId: string } | null = null;
+const GET_USER_WITH_ROLE_CACHE_DURATION = 60 * 1000; // 1 minuto
+
+/**
  * Classe que gerencia toda a autenticação com Supabase
  * Implementa padrão Singleton
  */
@@ -138,8 +145,6 @@ class SupabaseAuthService {
       }
       
       const redirectUrl = `${window.location.origin}/auth/callback`;
-      console.log('[Auth Service] Origin atual:', window.location.origin);
-      console.log('[Auth Service] Redirect URL:', redirectUrl);
 
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
@@ -157,8 +162,6 @@ class SupabaseAuthService {
         console.error('[Auth Service] Erro no OAuth:', error);
         throw new Error(this.getSupabaseErrorMessage(error.message));
       }
-
-      console.log('[Auth Service] OAuth iniciado com sucesso, URL:', data.url);
     } catch (error) {
       console.error('[Auth Service] Erro ao iniciar login com Google:', error);
       throw error;

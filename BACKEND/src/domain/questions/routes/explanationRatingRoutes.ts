@@ -1,14 +1,14 @@
 import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { ExplanationRatingController } from '../controllers/ExplanationRatingController';
-import { supabaseAuthMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 export function createExplanationRatingRoutes(supabase: SupabaseClient): Router {
   const router = Router();
   const controller = new ExplanationRatingController(supabase);
 
-  // Todas as rotas requerem autenticação
-  router.use(supabaseAuthMiddleware);
+  // Todas as rotas requerem autenticação + plano
+  router.use(enhancedAuthMiddleware);
 
   // Criar ou atualizar avaliação
   router.post('/', controller.rateExplanation.bind(controller));

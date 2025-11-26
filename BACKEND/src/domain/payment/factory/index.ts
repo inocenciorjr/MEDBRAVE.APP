@@ -9,6 +9,7 @@ import { createPlanRoutes } from '../routes/planRoutes';
 import { createUserPlanRoutes } from '../routes/userPlanRoutes';
 import { createCouponRoutes } from '../routes/couponRoutes';
 import { createInvoiceRoutes } from '../routes/invoiceRoutes';
+import { supabase } from '../../../config';
 
 // Importar serviços Supabase
 import { SupabasePaymentService } from '../../../infra/payment/supabase/SupabasePaymentService';
@@ -19,7 +20,7 @@ import { SupabasePlanService } from '../../../infra/payment/supabase/SupabasePla
 import { SupabaseCouponService } from '../../../infra/payment/supabase/SupabaseCouponService';
 import { SupabaseInvoiceService } from '../../../infra/payment/supabase/SupabaseInvoiceService';
 import { SupabasePaymentNotificationService } from '../../../infra/notifications/supabase/SupabasePaymentNotificationService';
-// import { IPaymentNotificationService } from '../../notifications/interfaces/IPaymentNotificationService';
+import { SupabaseNotificationService } from '../../../infra/notifications/supabase/SupabaseNotificationService';
 
 /**
  * Cria o módulo de pagamentos
@@ -33,46 +34,8 @@ export const createPaymentModule = (): Router => {
   const userPlanService = new SupabaseUserPlanService(supabase, planService);
   const pixPaymentService = new SupabasePixPaymentService(supabase);
   const creditCardPaymentService = new SupabaseCreditCardPaymentService(supabase);
-  // Mock mínimo para INotificationService, apenas para evitar erro de tipo em tempo de compilação
-  const notificationServiceMock = {
-    createNotification: async () => {
-      throw new Error('Not implemented');
-    },
-    getNotificationById: async () => {
-      throw new Error('Not implemented');
-    },
-    getUserNotifications: async () => {
-      throw new Error('Not implemented');
-    },
-    markNotificationAsRead: async () => {
-      throw new Error('Not implemented');
-    },
-    markAllNotificationsAsRead: async () => {
-      throw new Error('Not implemented');
-    },
-    updateNotification: async () => {
-      throw new Error('Not implemented');
-    },
-    deleteNotification: async () => {
-      throw new Error('Not implemented');
-    },
-    deleteAllUserNotifications: async () => {
-      throw new Error('Not implemented');
-    },
-    cleanupExpiredNotifications: async () => {
-      throw new Error('Not implemented');
-    },
-    sendNotificationToMultipleUsers: async () => {
-      throw new Error('Not implemented');
-    },
-    countUnreadNotifications: async () => {
-      throw new Error('Not implemented');
-    },
-    getUnreadNotificationsByTypeAndPriority: async () => {
-      throw new Error('Not implemented');
-    },
-  };
-  const paymentNotificationService = new SupabasePaymentNotificationService(notificationServiceMock);
+  const notificationService = new SupabaseNotificationService(supabase);
+  const paymentNotificationService = new SupabasePaymentNotificationService(notificationService);
   const paymentService = new SupabasePaymentService(
     supabase,
     userPlanService,
@@ -105,4 +68,3 @@ export const createPaymentModule = (): Router => {
 
   return router;
 };
-import { supabase } from '../../../config';

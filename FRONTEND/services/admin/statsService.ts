@@ -18,6 +18,9 @@ export interface DashboardStats {
 let statsCache: { data: DashboardStats; timestamp: number } | null = null;
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
+// Debounce: prevenir múltiplas chamadas simultâneas
+let fetchPromise: Promise<DashboardStats> | null = null;
+
 /**
  * Get dashboard statistics with caching
  */
@@ -30,16 +33,30 @@ export async function getDashboardStats(): Promise<DashboardStats> {
     return statsCache.data;
   }
 
-  console.log('🔄 Fetching fresh dashboard stats');
-  const stats = await get<DashboardStats>('/api/admin/dashboard/stats');
-  
-  // Update cache
-  statsCache = {
-    data: stats,
-    timestamp: now,
-  };
+  // Se já tem uma requisição em andamento, aguardar ela
+  if (fetchPromise) {
+    console.log('⏳ Aguardando requisição em andamento...');
+    return fetchPromise;
+  }
 
-  return stats;
+  console.log('🔄 Fetching fresh dashboard stats');
+  
+  // Criar promise de fetch
+  fetchPromise = get<DashboardStats>('/api/admin/dashboard/stats')
+    .then(stats => {
+      // Update cache
+      statsCache = {
+        data: stats,
+        timestamp: now,
+      };
+      return stats;
+    })
+    .finally(() => {
+      // Limpar promise após completar
+      fetchPromise = null;
+    });
+
+  return fetchPromise;
 }
 
 /**

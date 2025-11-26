@@ -11,14 +11,15 @@ import {
 import { IUserPlanService } from '../../../domain/payment/interfaces/IUserPlanService';
 import { IPlanService } from '../../../domain/payment/interfaces/IPlanService';
 import logger from '../../../utils/logger';
-import { AppError } from '../../../utils/errors';
+import { AppError, ErrorCodes, createError } from '../../../utils/errors';
+import { PAYMENT_CONSTANTS } from '../../../domain/payment/constants';
 
 /**
  * Implementação do serviço de planos de usuários utilizando Supabase
  */
 export class SupabaseUserPlanService implements IUserPlanService {
   private planService: IPlanService | null = null;
-  
+
 
   /**
    * Construtor da classe SupabaseUserPlanService
@@ -34,7 +35,7 @@ export class SupabaseUserPlanService implements IUserPlanService {
       this.planService = planService;
     }
 
-    
+
   }
 
   /**
@@ -44,44 +45,46 @@ export class SupabaseUserPlanService implements IUserPlanService {
    */
   async createUserPlan(userPlanData: CreateUserPlanPayload): Promise<UserPlan> {
     try {
-      // Validação básica de dados
-      if (!userPlanData.userId) {
-        throw new AppError(500, 'ID do usuário é obrigatório');
-      }
+      this.validateUserPlanData(userPlanData);
 
-      if (!userPlanData.planId) {
-        throw new AppError(500, 'ID do plano é obrigatório');
-      }
-
-      if (!userPlanData.startDate) {
-        throw new AppError(500, 'Data de início é obrigatória');
-      }
-
-      // Verificar se o plano existe
       if (this.planService) {
         const plan = await this.planService.getPlanById(userPlanData.planId);
         if (!plan) {
-          throw new AppError(
-            500,
+          throw createError(
+            ErrorCodes.NOT_FOUND,
             `Plano (ID: ${userPlanData.planId}) não encontrado`,
+          );
+        }
+        if (!plan.isActive) {
+          throw createError(
+            ErrorCodes.VALIDATION_ERROR,
+            'Não é possível criar plano de usuário para um plano inativo',
           );
         }
       }
 
       const now = new Date();
-
-      // Converter datas
       const startDate =
         userPlanData.startDate instanceof Date
           ? userPlanData.startDate
           : new Date(userPlanData.startDate);
 
-      let endDate = null;
+      let endDate: Date;
       if (userPlanData.endDate) {
         endDate =
           userPlanData.endDate instanceof Date
             ? userPlanData.endDate
             : new Date(userPlanData.endDate);
+      } else {
+        endDate = new Date(startDate);
+        endDate.setDate(endDate.getDate() + 30);
+      }
+
+      if (endDate <= startDate) {
+        throw createError(
+          ErrorCodes.VALIDATION_ERROR,
+          'Data de término deve ser posterior à data de início',
+        );
       }
 
       let trialEndsAt = null;
@@ -92,8 +95,6 @@ export class SupabaseUserPlanService implements IUserPlanService {
             : new Date(userPlanData.trialEndsAt);
       }
 
-      const nextBillingDate = null;
-
       const newUserPlan = {
         user_id: userPlanData.userId,
         plan_id: userPlanData.planId,
@@ -101,11 +102,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
         start_date: startDate,
         end_date: endDate,
         trial_ends_at: trialEndsAt,
-        next_billing_date: nextBillingDate,
+        next_billing_date: null,
         cancelled_at: null,
-        payment_id: null,
+        last_payment_id: userPlanData.lastPaymentId || null,
         payment_method: userPlanData.paymentMethod || null,
+        auto_renew: userPlanData.autoRenew || false,
         metadata: userPlanData.metadata || {},
+        cancellation_reason: null,
         created_at: now,
         updated_at: now,
       };
@@ -117,7 +120,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .single();
 
       if (error) {
-        throw new Error(`Failed to create user plan: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao criar plano de usuário: ${error.message}`,
+        );
       }
 
       const createdUserPlan = this.mapToEntity(data);
@@ -127,7 +133,36 @@ export class SupabaseUserPlanService implements IUserPlanService {
       return createdUserPlan;
     } catch (error) {
       logger.error(`Erro ao criar plano de usuário: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao criar plano de usuário',
+      );
+    }
+  }
+
+  private validateUserPlanData(userPlanData: CreateUserPlanPayload): void {
+    if (!userPlanData.userId || userPlanData.userId.trim().length === 0) {
+      throw createError(
+        ErrorCodes.VALIDATION_ERROR,
+        'ID do usuário é obrigatório',
+      );
+    }
+
+    if (!userPlanData.planId || userPlanData.planId.trim().length === 0) {
+      throw createError(
+        ErrorCodes.VALIDATION_ERROR,
+        'ID do plano é obrigatório',
+      );
+    }
+
+    if (!userPlanData.startDate) {
+      throw createError(
+        ErrorCodes.VALIDATION_ERROR,
+        'Data de início é obrigatória',
+      );
     }
   }
 
@@ -148,13 +183,22 @@ export class SupabaseUserPlanService implements IUserPlanService {
         if (error.code === 'PGRST116') {
           return null;
         }
-        throw new Error(`Failed to get user plan: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao buscar plano de usuário: ${error.message}`,
+        );
       }
 
       return this.mapToEntity(data);
     } catch (error) {
       logger.error(`Erro ao buscar plano de usuário ${userPlanId}: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao buscar plano de usuário',
+      );
     }
   }
 
@@ -172,13 +216,22 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .order('created_at', { ascending: false });
 
       if (error) {
-        throw new Error(`Failed to get user plans: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao buscar planos do usuário: ${error.message}`,
+        );
       }
 
       return data.map((item) => this.mapToEntity(item));
     } catch (error) {
       logger.error(`Erro ao buscar planos do usuário ${userId}: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao buscar planos do usuário',
+      );
     }
   }
 
@@ -197,7 +250,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .order('created_at', { ascending: false });
 
       if (error) {
-        throw new Error(`Failed to get user active plans: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao buscar planos ativos: ${error.message}`,
+        );
       }
 
       return data.map((item) => this.mapToEntity(item));
@@ -205,7 +261,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       logger.error(
         `Erro ao buscar planos ativos do usuário ${userId}: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao buscar planos ativos',
+      );
     }
   }
 
@@ -232,7 +294,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
         if (error.code === 'PGRST116') {
           return null;
         }
-        throw new Error(`Failed to get active user plan: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao buscar plano ativo: ${error.message}`,
+        );
       }
 
       return this.mapToEntity(data);
@@ -240,7 +305,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       logger.error(
         `Erro ao buscar plano ativo do usuário ${userId} para o plano ${planId}: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao buscar plano ativo',
+      );
     }
   }
 
@@ -255,12 +326,23 @@ export class SupabaseUserPlanService implements IUserPlanService {
     updates: UpdateUserPlanPayload,
   ): Promise<UserPlan | null> {
     try {
+      if (updates.startDate && updates.endDate) {
+        const startDate = updates.startDate instanceof Date ? updates.startDate : new Date(updates.startDate);
+        const endDate = updates.endDate instanceof Date ? updates.endDate : new Date(updates.endDate);
+
+        if (endDate <= startDate) {
+          throw createError(
+            ErrorCodes.VALIDATION_ERROR,
+            'Data de término deve ser posterior à data de início',
+          );
+        }
+      }
+
       const updateData = {
         ...this.mapUpdatePayloadToDatabase(updates),
         updated_at: new Date(),
       };
 
-      // Remove campos que não devem ser atualizados
       delete updateData.id;
       delete updateData.created_at;
 
@@ -275,7 +357,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
         if (error.code === 'PGRST116') {
           return null;
         }
-        throw new Error(`Failed to update user plan: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao atualizar plano: ${error.message}`,
+        );
       }
 
       const updatedUserPlan = this.mapToEntity(data);
@@ -285,7 +370,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       logger.error(
         `Erro ao atualizar plano de usuário ${userPlanId}: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao atualizar plano',
+      );
     }
   }
 
@@ -302,6 +393,14 @@ export class SupabaseUserPlanService implements IUserPlanService {
     reason?: string,
   ): Promise<UserPlan> {
     try {
+      const currentPlan = await this.getUserPlanById(userPlanId);
+      if (!currentPlan) {
+        throw createError(
+          ErrorCodes.NOT_FOUND,
+          'Plano de usuário não encontrado',
+        );
+      }
+
       const updateData: any = {
         status,
         updated_at: new Date(),
@@ -309,10 +408,9 @@ export class SupabaseUserPlanService implements IUserPlanService {
 
       if (status === UserPlanStatus.CANCELLED) {
         updateData.cancelled_at = new Date();
-      }
-
-      if (reason) {
-        updateData.metadata = { cancellation_reason: reason };
+        if (reason) {
+          updateData.cancellation_reason = reason;
+        }
       }
 
       const { data, error } = await this.supabase
@@ -323,19 +421,28 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .single();
 
       if (error) {
-        throw new Error(`Failed to update user plan status: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao atualizar status do plano: ${error.message}`,
+        );
       }
 
       const updatedUserPlan = this.mapToEntity(data);
       logger.info(
-        `Status do plano de usuário ${userPlanId} atualizado para ${status}.`,
+        `Status do plano de usuário ${userPlanId} atualizado de ${currentPlan.status} para ${status}.`,
       );
       return updatedUserPlan;
     } catch (error) {
       logger.error(
         `Erro ao atualizar status do plano de usuário ${userPlanId}: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao atualizar status do plano',
+      );
     }
   }
 
@@ -350,10 +457,12 @@ export class SupabaseUserPlanService implements IUserPlanService {
     metadataUpdates: Record<string, any>,
   ): Promise<UserPlan> {
     try {
-      // Buscar metadados atuais
       const currentUserPlan = await this.getUserPlanById(userPlanId);
       if (!currentUserPlan) {
-        throw new AppError(404, 'Plano de usuário não encontrado');
+        throw createError(
+          ErrorCodes.NOT_FOUND,
+          'Plano de usuário não encontrado',
+        );
       }
 
       const updatedMetadata = {
@@ -372,8 +481,9 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .single();
 
       if (error) {
-        throw new Error(
-          `Failed to update user plan metadata: ${error.message}`,
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao atualizar metadados: ${error.message}`,
         );
       }
 
@@ -386,7 +496,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       logger.error(
         `Erro ao atualizar metadados do plano de usuário ${userPlanId}: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao atualizar metadados',
+      );
     }
   }
 
@@ -405,13 +521,24 @@ export class SupabaseUserPlanService implements IUserPlanService {
     paymentMethod?: PaymentMethod,
   ): Promise<UserPlan> {
     try {
+      if (durationDays <= 0) {
+        throw createError(
+          ErrorCodes.VALIDATION_ERROR,
+          'Duração da renovação deve ser maior que zero',
+        );
+      }
+
       const currentUserPlan = await this.getUserPlanById(userPlanId);
       if (!currentUserPlan) {
-        throw new AppError(404, 'Plano de usuário não encontrado');
+        throw createError(
+          ErrorCodes.NOT_FOUND,
+          'Plano de usuário não encontrado',
+        );
       }
 
       const now = new Date();
-      const newEndDate = new Date(now);
+      const baseDate = currentUserPlan.endDate > now ? currentUserPlan.endDate : now;
+      const newEndDate = new Date(baseDate);
       newEndDate.setDate(newEndDate.getDate() + durationDays);
 
       const updateData: any = {
@@ -421,7 +548,7 @@ export class SupabaseUserPlanService implements IUserPlanService {
       };
 
       if (paymentId) {
-        updateData.payment_id = paymentId;
+        updateData.last_payment_id = paymentId;
       }
 
       if (paymentMethod) {
@@ -436,15 +563,26 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .single();
 
       if (error) {
-        throw new Error(`Failed to renew user plan: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao renovar plano: ${error.message}`,
+        );
       }
 
       const renewedUserPlan = this.mapToEntity(data);
-      logger.info(`Plano de usuário ${userPlanId} renovado com sucesso.`);
+      logger.info(
+        `Plano de usuário ${userPlanId} renovado com sucesso até ${newEndDate.toISOString()}.`,
+      );
       return renewedUserPlan;
     } catch (error) {
       logger.error(`Erro ao renovar plano de usuário ${userPlanId}: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao renovar plano',
+      );
     }
   }
 
@@ -489,13 +627,25 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .select();
 
       if (error) {
-        throw new Error(`Failed to expire user plans: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao expirar planos: ${error.message}`,
+        );
       }
 
       const expiredCount = data.length;
-      logger.info(
-        `${expiredCount} planos de usuário expirados foram atualizados.`,
-      );
+
+      if (expiredCount > 0) {
+        logger.info(
+          `${expiredCount} planos de usuário expirados foram atualizados.`,
+        );
+
+        for (const plan of data) {
+          logger.info(
+            `Plano ${plan.id} do usuário ${plan.user_id} expirado em ${plan.end_date}`,
+          );
+        }
+      }
 
       return {
         processedCount: expiredCount,
@@ -503,7 +653,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       };
     } catch (error) {
       logger.error(`Erro ao verificar e expirar planos de usuários: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao verificar planos expirados',
+      );
     }
   }
 
@@ -516,11 +672,12 @@ export class SupabaseUserPlanService implements IUserPlanService {
       const { data, error } = await this.supabase
         .from('user_plans')
         .select('*')
-        .eq('payment_id', paymentId);
+        .eq('last_payment_id', paymentId);
 
       if (error) {
-        throw new Error(
-          `Failed to get user plans by payment ID: ${error.message}`,
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao buscar planos por pagamento: ${error.message}`,
         );
       }
 
@@ -533,13 +690,19 @@ export class SupabaseUserPlanService implements IUserPlanService {
       }
 
       logger.info(
-        `Planos de usuário relacionados ao pagamento ${paymentId} foram cancelados.`,
+        `${data.length} planos de usuário relacionados ao pagamento ${paymentId} foram cancelados.`,
       );
     } catch (error) {
       logger.error(
         `Erro ao manipular mudança de plano após reembolso: ${error}`,
       );
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao processar reembolso',
+      );
     }
   }
 
@@ -556,7 +719,6 @@ export class SupabaseUserPlanService implements IUserPlanService {
         .from('user_plans')
         .select('*', { count: 'exact' });
 
-      // Aplicar filtros
       if (options.userId) {
         query = query.eq('user_id', options.userId);
       }
@@ -569,12 +731,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
         query = query.eq('status', options.status);
       }
 
-      // Paginação
-      const limit = options.limit || 20;
+      const limit = options.limit || PAYMENT_CONSTANTS.DEFAULT_PAGE_SIZE;
       const offset = options.offset || 0;
       query = query.range(offset, offset + limit - 1);
 
-      // Ordenação
       const sortBy = options.sortBy || 'created_at';
       const sortOrder = options.sortOrder || 'desc';
       query = query.order(sortBy, { ascending: sortOrder === 'asc' });
@@ -582,7 +742,10 @@ export class SupabaseUserPlanService implements IUserPlanService {
       const { data, error, count } = await query;
 
       if (error) {
-        throw new Error(`Failed to list user plans: ${error.message}`);
+        throw createError(
+          ErrorCodes.DATABASE_ERROR,
+          `Falha ao listar planos de usuários: ${error.message}`,
+        );
       }
 
       const userPlans = data.map((item) => this.mapToEntity(item));
@@ -596,7 +759,13 @@ export class SupabaseUserPlanService implements IUserPlanService {
       };
     } catch (error) {
       logger.error(`Erro ao listar planos de usuários: ${error}`);
-      throw error;
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw createError(
+        ErrorCodes.INTERNAL_SERVER_ERROR,
+        'Erro interno ao listar planos de usuários',
+      );
     }
   }
 
@@ -640,7 +809,7 @@ export class SupabaseUserPlanService implements IUserPlanService {
     };
   }
 
-  
+
 
   private mapUpdatePayloadToDatabase(updates: UpdateUserPlanPayload): any {
     const data: any = {};

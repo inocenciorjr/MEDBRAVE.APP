@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import multer from 'multer';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
 import { CollectionController } from '../controllers/CollectionController';
 
 const router = Router();
@@ -20,10 +20,10 @@ const upload = multer({
 });
 
 // Tornar coleção pública/privada
-router.put('/:collectionName/public-status', authMiddleware, controller.updateCollectionPublicStatus.bind(controller));
+router.put('/:collectionName/public-status', enhancedAuthMiddleware, controller.updateCollectionPublicStatus.bind(controller));
 
 // Listar coleções públicas da comunidade
-router.get('/public', authMiddleware, controller.getPublicCollections.bind(controller));
+router.get('/public', enhancedAuthMiddleware, controller.getPublicCollections.bind(controller));
 
 // Listar coleções da comunidade (oficiais e não-oficiais)
 router.get('/community/collections', authMiddleware, controller.getCommunityCollections.bind(controller));

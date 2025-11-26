@@ -26,24 +26,16 @@ class HybridStorageAdapter {
   getItem(key: string): string | null {
     if (typeof window === 'undefined') return null;
     
-    console.log('[Storage] Tentando ler:', key);
-    
     // Tentar sessionStorage primeiro (funciona em modo anônimo)
     if (this.storageAvailable('sessionStorage')) {
       const value = sessionStorage.getItem(key);
-      if (value) {
-        console.log('[Storage] ✅ Encontrado em sessionStorage:', key);
-        return value;
-      }
+      if (value) return value;
     }
     
     // Tentar localStorage
     if (this.storageAvailable('localStorage')) {
       const value = localStorage.getItem(key);
-      if (value) {
-        console.log('[Storage] ✅ Encontrado em localStorage:', key);
-        return value;
-      }
+      if (value) return value;
     }
     
     // Tentar cookies como último recurso
@@ -52,27 +44,18 @@ class HybridStorageAdapter {
       .find(row => row.startsWith(`${key}=`))
       ?.split('=')[1];
     
-    if (value) {
-      console.log('[Storage] ✅ Encontrado em cookies:', key);
-      return decodeURIComponent(value);
-    }
-    
-    console.log('[Storage] ❌ Não encontrado:', key);
-    return null;
+    return value ? decodeURIComponent(value) : null;
   }
 
   setItem(key: string, value: string): void {
     if (typeof window === 'undefined') return;
     
-    console.log('[Storage] Salvando:', key, 'valor:', value.substring(0, 50) + '...');
-    
     // Salvar em sessionStorage (prioridade - funciona em modo anônimo)
     if (this.storageAvailable('sessionStorage')) {
       try {
         sessionStorage.setItem(key, value);
-        console.log('[Storage] ✅ Salvo em sessionStorage:', key);
       } catch (e) {
-        console.error('[Storage] ❌ Erro ao salvar em sessionStorage:', e);
+        // Silencioso
       }
     }
     
@@ -80,9 +63,8 @@ class HybridStorageAdapter {
     if (this.storageAvailable('localStorage')) {
       try {
         localStorage.setItem(key, value);
-        console.log('[Storage] ✅ Salvo em localStorage:', key);
       } catch (e) {
-        console.error('[Storage] ❌ Erro ao salvar em localStorage:', e);
+        // Silencioso
       }
     }
     
@@ -90,16 +72,13 @@ class HybridStorageAdapter {
     try {
       const maxAge = 3600; // 1 hora
       document.cookie = `${key}=${encodeURIComponent(value)}; max-age=${maxAge}; path=/; samesite=lax`;
-      console.log('[Storage] ✅ Salvo em cookies:', key);
     } catch (e) {
-      console.error('[Storage] ❌ Erro ao salvar em cookies:', e);
+      // Silencioso
     }
   }
 
   removeItem(key: string): void {
     if (typeof window === 'undefined') return;
-    
-    console.log('[Storage] Removendo:', key);
     
     // Remover de sessionStorage
     if (this.storageAvailable('sessionStorage')) {
@@ -132,7 +111,6 @@ export function createClient() {
         detectSessionInUrl: true,
         persistSession: true,
         autoRefreshToken: true,
-        debug: true, // Habilitar logs do Supabase
       },
       cookies: {
         get(name: string) {

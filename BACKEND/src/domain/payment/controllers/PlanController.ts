@@ -1,8 +1,7 @@
-// Comentário para forçar recarregamento das tipagens globais do Express
 import { Request, Response, NextFunction } from 'express';
 import { IPlanService } from '../interfaces/IPlanService';
 import { CreatePlanPayload, PlanInterval } from '../types';
-import { AppError } from '../../../utils/errors';
+import { AppError, ErrorCodes } from '../../../utils/errors';
 
 /**
  * Controlador responsável por gerenciar os planos do sistema
@@ -24,11 +23,12 @@ export class PlanController {
    * @throws {AppError} Erro se o usuário não for administrador
    */
   private ensureAdmin(req: Request): void {
-    const role = (req.user?.user_role || '').toUpperCase();
+    const role = (req.user?.role || req.user?.user_role || '').toUpperCase();
     if (role !== 'ADMIN') {
       throw new AppError(
         403,
         'Acesso negado. Apenas administradores podem acessar este recurso.',
+        ErrorCodes.FORBIDDEN,
       );
     }
   }
@@ -95,9 +95,13 @@ export class PlanController {
 
       // Se o plano não for público, apenas administradores podem vê-lo
       if (!plan.isPublic) {
-        const role = req.user?.role;
+        const role = (req.user?.role || req.user?.user_role || '').toUpperCase();
         if (role !== 'ADMIN') {
-          throw new AppError(403, 'Acesso negado a este plano');
+          throw new AppError(
+            403,
+            'Acesso negado a este plano',
+            ErrorCodes.FORBIDDEN,
+          );
         }
       }
 

@@ -4,9 +4,11 @@ import { AppError } from '../../../utils/errors';
 import logger from '../../../utils/logger';
 import { SupabaseUserRepository } from '../repositories/SupabaseUserRepository';
 import { User, CreateUserDTO } from '../repositories/IUserRepository';
+import { UserPlanAssignmentService } from '../services/UserPlanAssignmentService';
 
 // Instância do repository
 const userRepository = new SupabaseUserRepository();
+const planAssignmentService = new UserPlanAssignmentService();
 
 /**
  * Interface para estender o objeto Request com informações do usuário
@@ -156,6 +158,15 @@ export const supabaseAuthMiddleware = async (
         try {
           await userRepository.create(newUser);
           logger.info(`✅ Usuário criado: ${newUser.email} (${usernameSlug})`);
+          
+          // Atribuir plano FREE padrão ao novo usuário
+          try {
+            await planAssignmentService.assignDefaultFreePlan(authData.user.id);
+            logger.info(`✅ Plano FREE atribuído ao usuário: ${authData.user.id}`);
+          } catch (planError) {
+            logger.error(`❌ Erro ao atribuir plano padrão: ${planError}`);
+            // Não falhar a autenticação por erro de plano
+          }
         } catch (insertError: any) {
           // Se erro de duplicata, significa que usuário foi criado entre a verificação e agora
           if (insertError.code === '23505') {

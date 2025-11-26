@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { checkFlashcardsCreatedLimit, checkFlashcardDecksLimit } from '../../../auth/middleware/usageMiddlewares';
 import { FlashcardController } from '../controllers/flashcardController';
 import deckRoutes from './deckRoutes';
 import apkgImportRoutes from './apkgImportRoutes';
@@ -25,10 +26,10 @@ export const createFlashcardRoutes = (
   // ===== ROTAS ESPECÍFICAS PRIMEIRO (antes de /:id) =====
   
   // Biblioteca do usuário
-  router.get('/my-library', authMiddleware, controller.getMyLibrary);
+  router.get('/my-library', enhancedAuthMiddleware, controller.getMyLibrary);
   
   // Busca global
-  router.get('/search', authMiddleware, controller.globalSearch);
+  router.get('/search', enhancedAuthMiddleware, controller.globalSearch);
   
   // Coleções
   router.get('/collections/metadata', authMiddleware, controller.getCollectionsMetadata);
@@ -71,8 +72,8 @@ export const createFlashcardRoutes = (
 
   // ===== ROTAS GENÉRICAS DEPOIS =====
   
-  // Criar flashcard
-  router.post('/', authMiddleware, controller.create);
+  // Criar flashcard (com verificação de limite)
+  router.post('/', enhancedAuthMiddleware, checkFlashcardsCreatedLimit as any, controller.create);
 
   /**
    * @swagger

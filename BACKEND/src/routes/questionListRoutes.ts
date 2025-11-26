@@ -1,18 +1,19 @@
 import { Router } from 'express';
 import { QuestionListController } from '../controllers/QuestionListController';
-import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../domain/auth/middleware/enhancedAuth.middleware';
 
 const router = Router();
 const controller = new QuestionListController();
 
-// Todas as rotas requerem autenticação (não requer admin)
-router.use(authMiddleware as any);
+// Todas as rotas requerem autenticação + verificação de plano
+router.use(enhancedAuthMiddleware as any);
 
 // GET /api/question-lists - Listar todas as listas do usuário
 router.get('/', (req, res) => controller.getUserQuestionLists(req as any, res));
 
-// POST /api/question-lists - Criar nova lista
-router.post('/', (req, res) => controller.createQuestionList(req as any, res));
+// POST /api/question-lists - Criar nova lista (requer feature de listas customizadas)
+router.post('/', requireFeature('canCreateCustomLists') as any, (req, res) => controller.createQuestionList(req as any, res));
 
 // GET /api/question-lists/questions/:questionId/alternative-stats - Buscar estatísticas de alternativas (DEVE VIR ANTES DE /:id)
 router.get('/questions/:questionId/alternative-stats', (req, res) => controller.getQuestionAlternativeStats(req as any, res));

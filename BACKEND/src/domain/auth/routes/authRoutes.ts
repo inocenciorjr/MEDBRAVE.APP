@@ -2,7 +2,7 @@ import express, { Router } from 'express';
 import { SupabaseAuthRepository } from '../repositories/SupabaseAuthRepository';
 import { AuthController } from '../controllers/AuthController';
 import { AuthService } from '../services/AuthService';
-import { supabaseAuthMiddleware as authMiddleware } from '../middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../middleware/enhancedAuth.middleware';
 
 /**
  * Cria e configura as rotas de autenticação
@@ -16,7 +16,7 @@ export const createAuthRoutes = (): Router => {
   const authService = new AuthService(authRepository);
   const authController = new AuthController(authService);
 
-  // Rotas públicas
+  // Rotas públicas (não requerem autenticação)
   router.post('/register', authController.register);
   router.post('/login', authController.login);
   router.post('/refresh-token', authController.refreshToken);
@@ -24,8 +24,8 @@ export const createAuthRoutes = (): Router => {
   router.post('/reset-password', authController.resetPassword);
   router.post('/verify-email', authController.verifyEmail);
 
-  // Rotas protegidas (requerem autenticação)
-  router.use(authMiddleware);
+  // Rotas protegidas (requerem autenticação + plano ativo)
+  router.use(enhancedAuthMiddleware);
   router.post('/sync-user', authController.syncUser);
   router.post('/logout', authController.logout);
   router.post('/change-password', authController.changePassword);

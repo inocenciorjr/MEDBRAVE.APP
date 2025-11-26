@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { SimulatedExamController } from '../controllers/SimulatedExamController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { checkSimulatedExamsPerMonthLimit } from '../../auth/middleware/usageMiddlewares';
 
 /**
  * Configura as rotas para o módulo de simulados
@@ -16,17 +17,18 @@ export function simulatedExamRoutes(
   // Criação, edição e exclusão de simulados (qualquer usuário autenticado)
   router.post(
     '/',
-    authMiddleware,
+    enhancedAuthMiddleware,
+    checkSimulatedExamsPerMonthLimit as any,
     controller.createSimulatedExam.bind(controller),
   );
   router.put(
     '/:id',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.updateSimulatedExam.bind(controller),
   );
   router.delete(
     '/:id',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.deleteSimulatedExam.bind(controller),
   );
 
@@ -34,56 +36,56 @@ export function simulatedExamRoutes(
   // Rotas sem userId no path (usa o usuário autenticado)
   router.get(
     '/my',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.listUserSimulatedExams.bind(controller),
   );
   router.get(
     '/my/results',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.listUserSimulatedExamResults.bind(controller),
   );
   router.get(
     '/my/statistics',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.getUserSimulatedExamStatistics.bind(controller),
   );
 
   // Resultados e estatísticas
   router.get(
     '/results/:id',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.getSimulatedExamResult.bind(controller),
   );
   router.get(
     '/user/:userId/results',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.listUserSimulatedExamResults.bind(controller),
   );
   router.get(
     '/user/:userId/statistics',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.getUserSimulatedExamStatistics.bind(controller),
   );
 
   // Funcionalidade de realização de simulado
   router.post(
     '/:id/start',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.startSimulatedExam.bind(controller),
   );
   router.post(
     '/answer',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.submitAnswer.bind(controller),
   );
   router.patch(
     '/results/:id/answers',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.updateSimulatedExamAnswer.bind(controller),
   );
   router.post(
     '/finish',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.finishSimulatedExam.bind(controller),
   );
 
@@ -91,7 +93,7 @@ export function simulatedExamRoutes(
   // Busca e listagem de simulados (DEVE vir por último)
   router.get(
     '/:id',
-    authMiddleware,
+    enhancedAuthMiddleware,
     controller.getSimulatedExamById.bind(controller),
   );
 

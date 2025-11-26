@@ -210,9 +210,6 @@ export async function fetchWithAuth(
       const token = await getOptimizedToken(user, false);
       const tokenEnd = performance.now();
 
-      console.log('[fetchWithAuth] Token obtido:', token ? `${token.substring(0, 20)}...` : 'NULO');
-      console.log('[fetchWithAuth] URL:', url);
-
       const headers: Record<string, string> = {
         'Authorization': `Bearer ${token}`,
         'X-User-Timezone': typeof window !== 'undefined' 
@@ -220,8 +217,6 @@ export async function fetchWithAuth(
           : 'America/Sao_Paulo',
         ...(init.headers as Record<string, string>),
       };
-
-      console.log('[fetchWithAuth] Headers:', headers);
 
       // Adicionar Content-Type se houver body e não for FormData
       if (init.body && !(init.body instanceof FormData)) {

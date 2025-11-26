@@ -14,13 +14,13 @@ import { createFilterHierarchyManager } from '../services/filterHierarchyManager
 import { createCategorizationService, Question } from '../services/categorizationService';
 import { createBatchProcessor } from '../services/batchProcessor';
 import { createFeedbackAnalyzer } from '../services/feedbackAnalyzer';
-import { supabaseAuthMiddleware as authMiddleware } from '../domain/auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../domain/auth/middleware/enhancedAuth.middleware';
 import { adminMiddleware } from '../domain/auth/middleware/admin.middleware';
 
 const router = Router();
 
-// Note: Auth middleware will be applied per route, not globally
-// This allows SSE endpoint to work without auth issues
+// Note: Auth + plan middleware will be applied per route
+// This allows proper verification for each endpoint
 
 // Active jobs tracking removido - usar WebSocket
 
@@ -111,7 +111,7 @@ function initializeServices() {
  * POST /api/categorization/start
  * Start a new categorization job
  */
-router.post('/start', authMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
+router.post('/start', enhancedAuthMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
   try {
     // DEBUG: Log RAW body
     console.log('🔍 RAW req.body keys:', Object.keys(req.body));
@@ -206,7 +206,7 @@ router.post('/start', authMiddleware as any, adminMiddleware as any, async (req:
  * POST /api/categorization/apply
  * Apply categorization to a question
  */
-router.post('/apply', authMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
+router.post('/apply', enhancedAuthMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
   try {
     // Initialize services on first use
     initializeServices();
@@ -247,7 +247,7 @@ router.post('/apply', authMiddleware as any, adminMiddleware as any, async (req:
  * POST /api/categorization/feedback
  * Log feedback for manual correction
  */
-router.post('/feedback', authMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
+router.post('/feedback', enhancedAuthMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
   try {
     // Initialize services on first use
     initializeServices();
@@ -294,7 +294,7 @@ router.post('/feedback', authMiddleware as any, adminMiddleware as any, async (r
  * GET /api/categorization/results/:jobId
  * Get categorization results for a completed job
  */
-router.get('/results/:jobId', authMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
+router.get('/results/:jobId', enhancedAuthMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
   try {
     const { jobId } = req.params;
     const userId = (req as any).user?.id;
@@ -343,7 +343,7 @@ router.get('/results/:jobId', authMiddleware as any, adminMiddleware as any, asy
  * GET /api/categorization/metrics
  * Get categorization metrics
  */
-router.get('/metrics', authMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
+router.get('/metrics', enhancedAuthMiddleware as any, adminMiddleware as any, async (req: Request, res: Response) => {
   try {
     // Initialize services on first use
     initializeServices();

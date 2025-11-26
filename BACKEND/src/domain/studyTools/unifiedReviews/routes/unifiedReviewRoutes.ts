@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { UnifiedReviewController } from '../controllers/UnifiedReviewController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { checkReviewsPerDayLimit } from '../../../auth/middleware/usageMiddlewares';
 
 export const createUnifiedReviewRoutes = (
   controller: UnifiedReviewController,
@@ -61,7 +62,7 @@ export const createUnifiedReviewRoutes = (
    *                     total:
    *                       type: integer
    */
-  router.get('/due', authMiddleware, controller.getDueReviews);
+  router.get('/due', enhancedAuthMiddleware, controller.getDueReviews);
 
   /**
    * @swagger
@@ -100,7 +101,7 @@ export const createUnifiedReviewRoutes = (
    *       400:
    *         description: Dados inválidos
    */
-  router.post('/record', authMiddleware, controller.recordReview);
+  router.post('/record', enhancedAuthMiddleware, checkReviewsPerDayLimit as any, controller.recordReview);
 
   /**
    * @swagger
@@ -144,7 +145,7 @@ export const createUnifiedReviewRoutes = (
    *                       type: string
    *                       format: date
    */
-  router.get('/today', authMiddleware, controller.getTodayReviews);
+  router.get('/today', enhancedAuthMiddleware, controller.getTodayReviews);
 
   /**
    * @swagger
@@ -172,7 +173,7 @@ export const createUnifiedReviewRoutes = (
    *                     summary:
    *                       $ref: '#/components/schemas/DailyReviewSummary'
    */
-  router.get('/summary', authMiddleware, controller.getDailySummary);
+  router.get('/summary', enhancedAuthMiddleware, controller.getDailySummary);
 
   /**
    * @swagger
@@ -223,7 +224,7 @@ export const createUnifiedReviewRoutes = (
    *                     total:
    *                       type: integer
    */
-  router.get('/future', authMiddleware, controller.getFutureReviews);
+  router.get('/future', enhancedAuthMiddleware, controller.getFutureReviews);
 
   /**
    * @swagger
@@ -281,7 +282,7 @@ export const createUnifiedReviewRoutes = (
    *                     total:
    *                       type: integer
    */
-  router.get('/completed', authMiddleware, controller.getCompletedReviews);
+  router.get('/completed', enhancedAuthMiddleware, controller.getCompletedReviews);
 
   /**
    * @swagger
@@ -338,7 +339,7 @@ export const createUnifiedReviewRoutes = (
    *                     total:
    *                       type: integer
    */
-  router.get('/history/:contentId', authMiddleware, controller.getReviewHistory);
+  router.get('/history/:contentId', enhancedAuthMiddleware, controller.getReviewHistory);
 
   /**
    * @swagger
@@ -372,18 +373,18 @@ export const createUnifiedReviewRoutes = (
    *       400:
    *         description: Dados inválidos
    */
-  router.post('/create', authMiddleware, controller.createReviewItem);
+  router.post('/create', enhancedAuthMiddleware, controller.createReviewItem);
 
   // Novas rotas - Sprint 3
-  router.get('/due-prioritized', authMiddleware, controller.getDueReviewsPrioritized);
-  router.get('/due-balanced', authMiddleware, controller.getDueReviewsBalanced);
+  router.get('/due-prioritized', enhancedAuthMiddleware, controller.getDueReviewsPrioritized);
+  router.get('/due-balanced', enhancedAuthMiddleware, controller.getDueReviewsBalanced);
 
   /**
    * GET /api/unified-reviews/planner
    * Endpoint específico para o planner - retorna revisões agrupadas por data e tipo
    * Inclui tanto revisões pendentes quanto completadas
    */
-  router.get('/planner', authMiddleware, controller.getPlannerReviews);
+  router.get('/planner', enhancedAuthMiddleware, controller.getPlannerReviews);
 
   return router;
 };
@@ -401,7 +402,7 @@ export const createReviewPreviewRoutes = (): Router => {
    */
   router.get(
     '/preview/:contentType/:contentId',
-    authMiddleware,
+    enhancedAuthMiddleware,
     previewController.getReviewPreview.bind(previewController)
   );
 
@@ -424,7 +425,7 @@ export const createReviewManagementRoutes = (): Router => {
    */
   router.get(
     '/check-sequence/:contentType/:contentId',
-    authMiddleware,
+    enhancedAuthMiddleware,
     reviewController.checkConsecutiveGoodResponses
   );
 
@@ -434,7 +435,7 @@ export const createReviewManagementRoutes = (): Router => {
    */
   router.delete(
     '/:contentType/:contentId',
-    authMiddleware,
+    enhancedAuthMiddleware,
     reviewController.deleteReview
   );
 

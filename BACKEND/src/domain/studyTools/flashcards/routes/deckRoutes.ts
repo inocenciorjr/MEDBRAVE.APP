@@ -1,12 +1,13 @@
 import { Router } from 'express';
 import { deckController } from '../controllers/deckController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../../auth/middleware/enhancedAuth.middleware';
+import { checkFlashcardDecksLimit } from '../../../auth/middleware/usageMiddlewares';
 // searchIndexMiddleware removed - now uses GIN index directly (auto-updated)
 
 const router = Router();
 
-// Todas as rotas requerem autenticação
-router.use(authMiddleware);
+// Todas as rotas requerem autenticação + plano
+router.use(enhancedAuthMiddleware);
 
 // ROTAS ESPECÍFICAS PRIMEIRO (para evitar conflitos com /:id)
 
@@ -30,6 +31,7 @@ router.get('/favorites', deckController.getFavoriteDecks.bind(deckController));
 // Rotas de baralhos (CRUD básico)
 router.post(
   '/',
+  checkFlashcardDecksLimit as any,
   deckController.createDeck.bind(deckController),
 );
 router.get('/', deckController.listDecks.bind(deckController));

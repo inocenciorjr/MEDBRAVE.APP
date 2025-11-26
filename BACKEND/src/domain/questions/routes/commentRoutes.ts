@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { CommentService } from '../services/CommentService';
 import { CommentController } from '../controllers/CommentController';
-import { supabaseAuthMiddleware as authMiddleware } from '../../auth/middleware/supabaseAuth.middleware';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
 
 export function createCommentRoutes(supabase: SupabaseClient): Router {
   const router = Router();
@@ -17,26 +17,26 @@ export function createCommentRoutes(supabase: SupabaseClient): Router {
 
   router.post(
     '/:commentId/like',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     commentController.likeComment
   );
 
-  // Rotas que requerem autenticação
+  // Rotas que requerem autenticação + plano
   router.post(
     '/',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     commentController.createComment
   );
 
   router.put(
     '/:commentId',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     commentController.updateComment
   );
 
   router.delete(
     '/:commentId',
-    authMiddleware as any,
+    enhancedAuthMiddleware as any,
     commentController.deleteComment
   );
 

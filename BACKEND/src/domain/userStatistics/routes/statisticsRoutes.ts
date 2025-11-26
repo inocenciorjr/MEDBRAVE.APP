@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import { ensureAuthenticated as authMiddleware } from '../../../infra/http/middlewares/supabase/ensureAuthenticated';
+import { enhancedAuthMiddleware } from '../../auth/middleware/enhancedAuth.middleware';
+import { requireFeature } from '../../auth/middleware/enhancedAuth.middleware';
 import { createStatisticsModule } from '../factories/createStatisticsModule';
 
 /**
@@ -10,16 +11,16 @@ const { statisticsController } = createStatisticsModule();
 
 const router = Router();
 
-// Middleware de autenticação para todas as rotas
-router.use(authMiddleware);
+// Middleware de autenticação + plano para todas as rotas
+router.use(enhancedAuthMiddleware);
 
 // === ROTAS PRINCIPAIS ===
 
 // GET /api/statistics - Obter estatísticas do usuário
 router.get('/', statisticsController.getUserStatistics);
 
-// GET /api/statistics/with-comparison - Obter estatísticas com comparação
-router.get('/with-comparison', statisticsController.getStatisticsWithComparison);
+// GET /api/statistics/with-comparison - Obter estatísticas com comparação (requer estatísticas avançadas)
+router.get('/with-comparison', requireFeature('canAccessAdvancedStatistics') as any, statisticsController.getStatisticsWithComparison);
 
 // DELETE /api/statistics - Deletar estatísticas
 router.delete('/', statisticsController.deleteStatistics);
