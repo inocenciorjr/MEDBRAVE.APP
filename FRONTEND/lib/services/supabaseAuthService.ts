@@ -132,14 +132,21 @@ class SupabaseAuthService {
         throw new Error('Login com Google só pode ser feito no browser');
       }
 
+      // NUNCA usar fallback - sempre usar o origin atual
+      if (!window.location.origin) {
+        throw new Error('window.location.origin não está disponível');
+      }
+      
       const redirectUrl = `${window.location.origin}/auth/callback`;
-      console.log('[Auth Service] Iniciando login com Google, redirect:', redirectUrl);
+      console.log('[Auth Service] Origin atual:', window.location.origin);
+      console.log('[Auth Service] Redirect URL:', redirectUrl);
 
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
           redirectTo: redirectUrl,
           skipBrowserRedirect: false,
+          // IMPORTANTE: Não deixar o Supabase usar o Site URL configurado
           ...(userId && {
             queryParams: { user_id: userId }
           })

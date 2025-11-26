@@ -25,154 +25,93 @@ function AuthCallbackContent() {
         const code = searchParams.get('code');
         const redirect = searchParams.get('redirect') || '/';
 
-        console.log('[Auth Callback] Iniciando callback com code:', code ? 'presente' : 'ausente');
-        console.log('[Auth Callback] Redirect para:', redirect);
+        console.log('[Auth Callback] ===== INÍCIO DO CALLBACK =====');
+        console.log('[Auth Callback] Origin atual:', window.location.origin);
+        console.log('[Auth Callback] URL completa:', window.location.href);
+        console.log('[Auth Callback] Code presente:', code ? 'SIM' : 'NÃO');
+        console.log('[Auth Callback] Redirect solicitado:', redirect);
 
         if (code) {
-          // Trocar code por sessão (PKCE flow)
-          console.log('[Auth Callback] Tentando trocar código por sessão...');
-          const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-
-          if (exchangeError) {
-            console.error('[Auth Callback] Erro ao trocar código:', exchangeError.message, exchangeError.status);
-
-            // Se erro 400, código pode ter sido usado - aguardar e verificar sessão
-            if (exchangeError.status === 400) {
-              console.log('[Auth Callback] Erro 400 - aguardando sessão ser estabelecida...');
-
-              // Aguardar um pouco para sessão ser estabelecida
+          // Verificar se a sessão já foi estabelecida automaticamente pelo Supabase
+          console.log('[Auth Callback] Verificando se sessão já existe...');
+          let { data: { session } } = await supabase.auth.getSession();
+          
+          if (!session) {
+            // Sessão não existe, tentar trocar código
+            console.log('[Auth Callback] Tentando trocar código por sessão...');
+            const result = await supabase.auth.exchangeCodeForSession(code);
+            
+            if (result.error) {
+              console.error('[Auth Callback] Erro ao trocar código:', result.error.message, result.error.status);
+              
+              // Aguardar e tentar pegar sessão novamente
               await new Promise(resolve => setTimeout(resolve, 2000));
-
-              // Verificar se já está logado
-              const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
-              console.log('[Auth Callback] Verificação de sessão:', {
-                hasSession: !!sessionData?.session,
-                error: sessionError?.message
-              });
-
-              if (sessionData?.session) {
-                console.log('[Auth Callback] ✅ Sessão encontrada! Redirecionando para:', redirect);
-                console.log('[Auth Callback] Token da sessão:', sessionData.session.access_token.substring(0, 20) + '...');
-
-                // Salvar token no localStorage para o AuthContext
-                if (typeof window !== 'undefined') {
-                  localStorage.setItem('authToken', sessionData.session.access_token);
-                  localStorage.setItem('user', JSON.stringify({
-                    uid: sessionData.session.user.id,
-                    email: sessionData.session.user.email,
-                    displayName: sessionData.session.user.user_metadata?.display_name || sessionData.session.user.email,
-                    photoURL: sessionData.session.user.user_metadata?.avatar_url || null,
-                    emailVerified: !!sessionData.session.user.email_confirmed_at,
-                    role: 'student'
-                  }));
-                  console.log('[Auth Callback] Token e usuário salvos no localStorage');
-
-                  // Salvar nos cookies via API route (para SSR)
-                  try {
-                    console.log('[Auth Callback] Salvando cookies via API route...');
-                    const cookieResponse = await fetch('/api/auth/set-cookies', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({
-                        accessToken: sessionData.session.access_token,
-                        refreshToken: sessionData.session.refresh_token
-                      })
-                    });
-
-                    if (cookieResponse.ok) {
-                      console.log('[Auth Callback] ✅ Cookies salvos com sucesso via API route');
-                    } else {
-                      console.error('[Auth Callback] ❌ Erro ao salvar cookies:', await cookieResponse.text());
-                    }
-                  } catch (cookieError) {
-                    console.error('[Auth Callback] ❌ Erro ao chamar API de cookies:', cookieError);
-                  }
-
-                  // Usar window.location.href para forçar reload completo
-                  console.log('[Auth Callback] Redirecionando com reload completo...');
-                  window.location.href = redirect;
-                }
-                return;
-              }
-
-              // Tentar refresh da sessão
-              console.log('[Auth Callback] Tentando refresh da sessão...');
-              const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
-
-              if (refreshData?.session) {
-                console.log('[Auth Callback] ✅ Sessão recuperada via refresh! Redirecionando...');
-                router.push(redirect);
-                return;
-              }
-
-              console.error('[Auth Callback] ❌ Não foi possível recuperar sessão:', refreshError?.message);
+              const sessionCheck = await supabase.auth.getSession();
+              session = sessionCheck.data.session;
+            } else {
+              session = result.data.session;
             }
-
-            setError('Erro ao autenticar. Tente fazer login novamente.');
-            setTimeout(() => router.push('/login'), 3000);
-            return;
+          } else {
+            console.log('[Auth Callback] ✅ Sessão já estabelecida automaticamente!');
           }
 
-          console.log('[Auth Callback] ✅ Código trocado com sucesso!');
-          console.log('[Auth Callback] 🔍 data?.session existe?', !!data?.session);
-          console.log('[Auth Callback] 🔍 data completo:', data);
+          // Se temos sessão (de qualquer forma), processar
+          if (session) {
+            console.log('[Auth Callback] ✅ Sessão encontrada! Redirecionando para:', redirect);
+            console.log('[Auth Callback] Token da sessão:', session.access_token.substring(0, 20) + '...');
 
-          // Salvar tokens e usuário
-          if (data?.session) {
-            console.log('[Auth Callback] Salvando tokens e usuário...');
-
-            // Salvar no localStorage para o AuthContext
+            // Salvar token no localStorage para o AuthContext
             if (typeof window !== 'undefined') {
-              localStorage.setItem('authToken', data.session.access_token);
+              localStorage.setItem('authToken', session.access_token);
               localStorage.setItem('user', JSON.stringify({
-                uid: data.session.user.id,
-                email: data.session.user.email,
-                displayName: data.session.user.user_metadata?.display_name || data.session.user.email,
-                photoURL: data.session.user.user_metadata?.avatar_url || null,
-                emailVerified: !!data.session.user.email_confirmed_at,
+                uid: session.user.id,
+                email: session.user.email,
+                displayName: session.user.user_metadata?.display_name || session.user.email,
+                photoURL: session.user.user_metadata?.avatar_url || null,
+                emailVerified: !!session.user.email_confirmed_at,
                 role: 'student'
               }));
               console.log('[Auth Callback] Token e usuário salvos no localStorage');
 
-              // Disparar evento para o AuthContext detectar a mudança
-              window.dispatchEvent(new Event('storage'));
-            }
+              // Salvar nos cookies via API route (para SSR)
+              try {
+                console.log('[Auth Callback] Salvando cookies via API route...');
+                const cookieResponse = await fetch('/api/auth/set-cookies', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    accessToken: session.access_token,
+                    refreshToken: session.refresh_token
+                  })
+                });
 
-            console.log('[Auth Callback] 🔵 CHECKPOINT: Antes de salvar cookies via API');
-
-            // Salvar nos cookies via API route (para SSR)
-            try {
-              console.log('[Auth Callback] Salvando cookies via API route...');
-              const cookieResponse = await fetch('/api/auth/set-cookies', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  accessToken: data.session.access_token,
-                  refreshToken: data.session.refresh_token
-                })
-              });
-
-              if (cookieResponse.ok) {
-                console.log('[Auth Callback] ✅ Cookies salvos com sucesso via API route');
-              } else {
-                console.error('[Auth Callback] ❌ Erro ao salvar cookies:', await cookieResponse.text());
+                if (cookieResponse.ok) {
+                  console.log('[Auth Callback] ✅ Cookies salvos com sucesso via API route');
+                } else {
+                  console.error('[Auth Callback] ❌ Erro ao salvar cookies:', await cookieResponse.text());
+                }
+              } catch (cookieError) {
+                console.error('[Auth Callback] ❌ Erro ao chamar API de cookies:', cookieError);
               }
-            } catch (cookieError) {
-              console.error('[Auth Callback] ❌ Erro ao chamar API de cookies:', cookieError);
-            }
-          }
 
-          if (window.opener) {
-            console.log('[Auth Callback] Popup detectado - enviando mensagem e fechando...');
-            window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
-            await new Promise(resolve => setTimeout(resolve, 500));
-            window.close();
+              // Redirecionar
+              if (window.opener) {
+                console.log('[Auth Callback] Popup detectado - enviando mensagem e fechando...');
+                window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
+                await new Promise(resolve => setTimeout(resolve, 500));
+                window.close();
+              } else {
+                console.log('[Auth Callback] Redirecionando com reload completo...');
+                const redirectUrl = redirect.startsWith('http') ? redirect : `${window.location.origin}${redirect}`;
+                console.log('[Auth Callback] URL final de redirect:', redirectUrl);
+                window.location.href = redirectUrl;
+              }
+            }
           } else {
-            console.log('[Auth Callback] Redirecionando com reload completo...');
-            // Garantir que usa o origin correto
-            const redirectUrl = redirect.startsWith('http') ? redirect : `${window.location.origin}${redirect}`;
-            console.log('[Auth Callback] URL final de redirect:', redirectUrl);
-            window.location.href = redirectUrl;
+            // Não conseguiu obter sessão
+            console.error('[Auth Callback] ❌ Não foi possível obter sessão');
+            setError('Erro ao autenticar. Tente fazer login novamente.');
+            setTimeout(() => router.push('/login'), 3000);
           }
         } else {
           // Implicit flow - tokens no hash

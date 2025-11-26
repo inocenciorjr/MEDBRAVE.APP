@@ -58,22 +58,44 @@ function LoginContent() {
   };
 
   const handleGoogleLogin = async () => {
+    console.log('🚀 handleGoogleLogin CHAMADO!');
+    alert('handleGoogleLogin foi chamado! Origin: ' + window.location.origin);
+    
     setLoading(true);
     setError(null);
 
     try {
+      // Usar NEXT_PUBLIC_SITE_URL se disponível, senão usar window.location.origin
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
+      const redirectUrl = `${siteUrl}/auth/callback?redirect=${encodeURIComponent(redirect)}`;
+      
+      console.log('=== LOGIN DEBUG ===');
+      console.log('NEXT_PUBLIC_SITE_URL:', process.env.NEXT_PUBLIC_SITE_URL);
+      console.log('window.location.origin:', window.location.origin);
+      console.log('siteUrl usado:', siteUrl);
+      console.log('redirect param:', redirect);
+      console.log('redirectTo completo:', redirectUrl);
+      console.log('==================');
+      
       // Abrir em popup
-      const { error: signInError } = await supabase.auth.signInWithOAuth({
+      const result = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback?redirect=${encodeURIComponent(redirect)}`,
+          redirectTo: redirectUrl,
           queryParams: {
             access_type: 'offline',
             prompt: 'consent',
           },
-          skipBrowserRedirect: false, // Permite popup
+          skipBrowserRedirect: false,
         },
       });
+      
+      console.log('=== SUPABASE RESPONSE ===');
+      console.log('result:', result);
+      console.log('result.data?.url:', result.data?.url);
+      console.log('========================');
+      
+      const { error: signInError } = result;
 
       if (signInError) {
         setError('Erro ao fazer login com Google. Tente novamente.');
