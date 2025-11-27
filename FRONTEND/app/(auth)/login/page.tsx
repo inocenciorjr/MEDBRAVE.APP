@@ -99,13 +99,15 @@ export default function LoginPage() {
         <div className="bg-white dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden flex flex-col lg:flex-row min-h-[750px] animate-fade-in">
           
           {/* Left Side - Carousel */}
-          <div className="w-full lg:w-1/2 relative bg-gray-900 hidden lg:block">
-             {CAROUSEL_IMAGES.map((src, index) => (
+          <div className="w-full lg:w-1/2 relative bg-gray-900 hidden lg:block overflow-hidden">
+            <div 
+              className="flex h-full transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {CAROUSEL_IMAGES.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    index === currentSlide ? 'opacity-100' : 'opacity-0'
-                  }`}
+                  className="min-w-full h-full relative"
                 >
                    <Image
                       src={src}
@@ -118,7 +120,8 @@ export default function LoginPage() {
                    <div className="absolute inset-0 bg-black/10"></div>
                    <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
                 </div>
-             ))}
+              ))}
+            </div>
 
             {/* Carousel Dots */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex justify-center items-center space-x-2 z-10">
