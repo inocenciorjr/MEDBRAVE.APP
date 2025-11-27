@@ -24,7 +24,7 @@ import type {
 export async function getAllPayments(options?: PaymentListOptions): Promise<PaymentListResult> {
   const queryString = options ? buildQueryString(options) : '';
   const response = await get<{ success: boolean; data: Payment[]; meta: any }>(
-    `/api/payments${queryString}`
+    `/payments${queryString}`
   );
   
   return {
@@ -43,7 +43,7 @@ export async function getAllPayments(options?: PaymentListOptions): Promise<Paym
  */
 export async function getPaymentById(id: string): Promise<PaymentDetails> {
   const response = await get<{ success: boolean; data: PaymentDetails }>(
-    `/api/payments/${id}`
+    `/payments/${id}`
   );
   return response.data;
 }
@@ -72,7 +72,7 @@ export async function refundPayment(
   payload: RefundPaymentPayload
 ): Promise<Payment> {
   const response = await post<{ success: boolean; data: Payment }>(
-    `/api/payments/${id}/refund`,
+    `/payments/${id}/refund`,
     payload
   );
   return response.data;
@@ -89,7 +89,7 @@ export async function cancelPayment(
   payload: CancelPaymentPayload
 ): Promise<Payment> {
   const response = await post<{ success: boolean; data: Payment }>(
-    `/api/payments/${id}/cancel`,
+    `/payments/${id}/cancel`,
     payload
   );
   return response.data;

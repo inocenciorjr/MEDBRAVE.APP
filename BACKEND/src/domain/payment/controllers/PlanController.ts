@@ -149,17 +149,32 @@ export class PlanController {
     next: NextFunction,
   ): Promise<void> => {
     try {
+      console.log('[PlanController] listAllPlans called');
+      console.log('[PlanController] User:', req.user);
+      console.log('[PlanController] Query params:', req.query);
+      
       this.ensureAdmin(req);
 
       // Opções de filtro
-      const options = {
-        isActive: req.query.isActive === 'true',
-        isPublic: req.query.isPublic === 'true',
+      const options: any = {
         limit: req.query.limit ? parseInt(req.query.limit as string) : 100,
         page: req.query.page ? parseInt(req.query.page as string) : 1,
       };
 
+      // Apenas adicionar filtros se forem explicitamente passados
+      if (req.query.isActive !== undefined) {
+        options.isActive = req.query.isActive === 'true';
+      }
+      
+      if (req.query.isPublic !== undefined) {
+        options.isPublic = req.query.isPublic === 'true';
+      }
+
+      console.log('[PlanController] Options:', options);
+
       const result = await this.planService.listPlans(options);
+      
+      console.log('[PlanController] Result:', { total: result.total, items: result.items.length });
 
       res.status(200).json({
         success: true,

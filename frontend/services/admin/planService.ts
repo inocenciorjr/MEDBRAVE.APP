@@ -20,7 +20,7 @@ import type {
 export async function getAllPlans(options?: PlanListOptions): Promise<PlanListResult> {
   const queryString = options ? buildQueryString(options) : '';
   const response = await get<{ success: boolean; data: Plan[]; meta: any }>(
-    `/api/plans${queryString}`
+    `/plans${queryString}`
   );
   
   return {
@@ -37,7 +37,7 @@ export async function getAllPlans(options?: PlanListOptions): Promise<PlanListRe
  */
 export async function getPublicPlans(): Promise<Plan[]> {
   const response = await get<{ success: boolean; data: Plan[] }>(
-    '/api/plans/public'
+    '/plans/public'
   );
   return response.data;
 }
@@ -49,7 +49,7 @@ export async function getPublicPlans(): Promise<Plan[]> {
  */
 export async function getPlanById(id: string): Promise<Plan> {
   const response = await get<{ success: boolean; data: Plan }>(
-    `/api/plans/${id}`
+    `/plans/${id}`
   );
   return response.data;
 }
@@ -61,7 +61,7 @@ export async function getPlanById(id: string): Promise<Plan> {
  */
 export async function createPlan(data: CreatePlanPayload): Promise<Plan> {
   const response = await post<{ success: boolean; data: Plan }>(
-    '/api/plans',
+    '/plans',
     data
   );
   return response.data;
@@ -75,7 +75,7 @@ export async function createPlan(data: CreatePlanPayload): Promise<Plan> {
  */
 export async function updatePlan(id: string, data: UpdatePlanPayload): Promise<Plan> {
   const response = await put<{ success: boolean; data: Plan }>(
-    `/api/plans/${id}`,
+    `/plans/${id}`,
     data
   );
   return response.data;
@@ -86,7 +86,7 @@ export async function updatePlan(id: string, data: UpdatePlanPayload): Promise<P
  * @param id Plan ID
  */
 export async function deletePlan(id: string): Promise<void> {
-  await del<{ success: boolean; message: string }>(`/api/plans/${id}`);
+  await del<{ success: boolean; message: string }>(`/plans/${id}`);
 }
 
 /**

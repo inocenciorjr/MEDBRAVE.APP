@@ -22,6 +22,14 @@ export const createPlanRoutes = (controller: PlanController): Router => {
   // Aplicar middleware de autenticação + plano nas demais rotas
   router.use(enhancedAuthMiddleware);
 
+  // Rota para listar todos os planos (apenas admin) - DEVE VIR ANTES DE /:planId
+  router.get(
+    '/',
+    planValidators.listPlans,
+    validateRequest,
+    controller.listAllPlans,
+  );
+
   // Rota para criar um novo plano (apenas admin, com rate limit)
   router.post(
     '/',
@@ -31,20 +39,12 @@ export const createPlanRoutes = (controller: PlanController): Router => {
     controller.createPlan,
   );
 
-  // Rota para obter um plano pelo ID
+  // Rota para obter um plano pelo ID - DEVE VIR DEPOIS DE /
   router.get(
     '/:planId',
     planValidators.getPlanById,
     validateRequest,
     controller.getPlanById,
-  );
-
-  // Rota para listar todos os planos (apenas admin)
-  router.get(
-    '/',
-    planValidators.listPlans,
-    validateRequest,
-    controller.listAllPlans,
   );
 
   // Rota para atualizar um plano (apenas admin, com rate limit)

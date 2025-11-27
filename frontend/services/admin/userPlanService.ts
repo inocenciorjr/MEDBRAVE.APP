@@ -25,7 +25,7 @@ import type {
 export async function getAllUserPlans(options?: UserPlanListOptions): Promise<UserPlanListResult> {
   const queryString = options ? buildQueryString(options) : '';
   const response = await get<{ success: boolean; data: UserPlan[]; meta: any }>(
-    `/api/user-plans${queryString}`
+    `/user-plans${queryString}`
   );
   
   return {
@@ -43,7 +43,7 @@ export async function getAllUserPlans(options?: UserPlanListOptions): Promise<Us
  */
 export async function getUserPlanById(id: string): Promise<UserPlan> {
   const response = await get<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}`
+    `/user-plans/${id}`
   );
   return response.data;
 }
@@ -55,7 +55,7 @@ export async function getUserPlanById(id: string): Promise<UserPlan> {
  */
 export async function getUserPlansByUserId(userId: string): Promise<UserPlan[]> {
   const response = await get<{ success: boolean; data: UserPlan[] }>(
-    `/api/user-plans/user/${userId}`
+    `/user-plans/user/${userId}`
   );
   return response.data;
 }
@@ -67,7 +67,7 @@ export async function getUserPlansByUserId(userId: string): Promise<UserPlan[]> 
  */
 export async function getActiveUserPlans(userId: string): Promise<UserPlan[]> {
   const response = await get<{ success: boolean; data: UserPlan[] }>(
-    `/api/user-plans/user/${userId}/active`
+    `/user-plans/user/${userId}/active`
   );
   return response.data;
 }
@@ -79,7 +79,7 @@ export async function getActiveUserPlans(userId: string): Promise<UserPlan[]> {
  */
 export async function createUserPlan(data: CreateUserPlanPayload): Promise<UserPlan> {
   const response = await post<{ success: boolean; data: UserPlan }>(
-    '/api/user-plans',
+    '/user-plans',
     data
   );
   return response.data;
@@ -93,7 +93,7 @@ export async function createUserPlan(data: CreateUserPlanPayload): Promise<UserP
  */
 export async function updateUserPlan(id: string, data: UpdateUserPlanPayload): Promise<UserPlan> {
   const response = await put<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}`,
+    `/user-plans/${id}`,
     data
   );
   return response.data;
@@ -110,7 +110,7 @@ export async function cancelUserPlan(
   payload: CancelUserPlanPayload
 ): Promise<UserPlan> {
   const response = await post<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}/cancel`,
+    `/user-plans/${id}/cancel`,
     payload
   );
   return response.data;
@@ -127,7 +127,7 @@ export async function renewUserPlan(
   payload: RenewUserPlanPayload
 ): Promise<UserPlan> {
   const response = await post<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}/renew`,
+    `/user-plans/${id}/renew`,
     payload
   );
   return response.data;
@@ -144,7 +144,7 @@ export async function updateUserPlanStatus(
   payload: UpdateUserPlanStatusPayload
 ): Promise<UserPlan> {
   const response = await put<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}/status`,
+    `/user-plans/${id}/status`,
     payload
   );
   return response.data;
@@ -161,7 +161,7 @@ export async function updateUserPlanMetadata(
   metadata: Record<string, any>
 ): Promise<UserPlan> {
   const response = await put<{ success: boolean; data: UserPlan }>(
-    `/api/user-plans/${id}/metadata`,
+    `/user-plans/${id}/metadata`,
     { metadata }
   );
   return response.data;
@@ -174,7 +174,7 @@ export async function updateUserPlanMetadata(
  */
 export async function checkExpiredPlans(): Promise<ExpiredPlansCheckResult> {
   const response = await post<{ success: boolean; data: ExpiredPlansCheckResult }>(
-    '/api/user-plans/check-expired'
+    '/user-plans/check-expired'
   );
   return response.data;
 }

@@ -53,9 +53,12 @@ export default function PlansPage() {
     setLoading(true);
     setError(null);
     try {
+      console.log('[Plans Page] Carregando planos...');
       const result = await getAllPlans();
+      console.log('[Plans Page] Planos carregados:', result);
       setPlans(result.items);
     } catch (err: any) {
+      console.error('[Plans Page] Erro ao carregar planos:', err);
       setError(err.message || 'Erro ao carregar planos');
     } finally {
       setLoading(false);

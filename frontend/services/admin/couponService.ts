@@ -22,7 +22,7 @@ import type {
 export async function getAllCoupons(options?: CouponListOptions): Promise<Coupon[]> {
   const queryString = options ? buildQueryString(options) : '';
   const response = await get<{ success: boolean; data: Coupon[] }>(
-    `/api/coupons${queryString}`
+    `/coupons${queryString}`
   );
   return response.data;
 }
@@ -34,7 +34,7 @@ export async function getAllCoupons(options?: CouponListOptions): Promise<Coupon
  */
 export async function getCouponById(id: string): Promise<Coupon> {
   const response = await get<{ success: boolean; data: Coupon }>(
-    `/api/coupons/${id}`
+    `/coupons/${id}`
   );
   return response.data;
 }
@@ -59,7 +59,7 @@ export async function getCouponByCode(code: string): Promise<Coupon> {
  */
 export async function createCoupon(data: CreateCouponPayload): Promise<Coupon> {
   const response = await post<{ success: boolean; data: Coupon }>(
-    '/api/coupons',
+    '/coupons',
     data
   );
   return response.data;
@@ -73,7 +73,7 @@ export async function createCoupon(data: CreateCouponPayload): Promise<Coupon> {
  */
 export async function updateCoupon(id: string, data: UpdateCouponPayload): Promise<Coupon> {
   const response = await put<{ success: boolean; data: Coupon }>(
-    `/api/coupons/${id}`,
+    `/coupons/${id}`,
     data
   );
   return response.data;
@@ -84,7 +84,7 @@ export async function updateCoupon(id: string, data: UpdateCouponPayload): Promi
  * @param id Coupon ID
  */
 export async function deleteCoupon(id: string): Promise<void> {
-  await del<{ success: boolean; message: string }>(`/api/coupons/${id}`);
+  await del<{ success: boolean; message: string }>(`/coupons/${id}`);
 }
 
 /**
@@ -104,7 +104,7 @@ export async function toggleCouponStatus(id: string, isActive: boolean): Promise
  */
 export async function validateCoupon(payload: ValidateCouponPayload): Promise<CouponValidationResult> {
   const response = await post<{ success: boolean; data: CouponValidationResult }>(
-    '/api/coupons/validate',
+    '/coupons/validate',
     payload
   );
   return response.data;

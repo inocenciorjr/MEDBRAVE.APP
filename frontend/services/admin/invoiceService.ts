@@ -22,7 +22,7 @@ import type {
 export async function getAllInvoices(options?: InvoiceListOptions): Promise<InvoiceListResult> {
   const queryString = options ? buildQueryString(options) : '';
   const response = await get<{ success: boolean; data: Invoice[]; cursor: string | null; hasMore: boolean }>(
-    `/api/invoices${queryString}`
+    `/invoices${queryString}`
   );
   
   return {
@@ -39,7 +39,7 @@ export async function getAllInvoices(options?: InvoiceListOptions): Promise<Invo
  */
 export async function getInvoiceById(id: string): Promise<Invoice> {
   const response = await get<{ success: boolean; data: Invoice }>(
-    `/api/invoices/${id}`
+    `/invoices/${id}`
   );
   return response.data;
 }
@@ -64,7 +64,7 @@ export async function getInvoicesByUserId(
  */
 export async function createInvoice(data: CreateInvoicePayload): Promise<Invoice> {
   const response = await post<{ success: boolean; data: Invoice }>(
-    '/api/invoices',
+    '/invoices',
     data
   );
   return response.data;
@@ -78,7 +78,7 @@ export async function createInvoice(data: CreateInvoicePayload): Promise<Invoice
  */
 export async function updateInvoice(id: string, data: UpdateInvoicePayload): Promise<Invoice> {
   const response = await put<{ success: boolean; data: Invoice }>(
-    `/api/invoices/${id}`,
+    `/invoices/${id}`,
     data
   );
   return response.data;
@@ -95,7 +95,7 @@ export async function markInvoiceAsPaid(
   payload: MarkInvoiceAsPaidPayload
 ): Promise<Invoice> {
   const response = await post<{ success: boolean; data: Invoice }>(
-    `/api/invoices/${id}/mark-paid`,
+    `/invoices/${id}/mark-paid`,
     payload
   );
   return response.data;
