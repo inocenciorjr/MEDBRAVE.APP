@@ -34,7 +34,6 @@ export default function Error({
             </button>
           </div>
         </div>
-      </div>
     </div>
   );
 }
