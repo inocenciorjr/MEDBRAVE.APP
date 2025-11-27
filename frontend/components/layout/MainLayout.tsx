@@ -15,10 +15,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
   const { isFocusMode } = useFocusMode();
   const [leaveTimeout, setLeaveTimeout] = useState<NodeJS.Timeout | null>(null);
 
-  const mockUser = {
-    name: 'Anna',
-    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD1o3eVma5ckpj1-1Eac5D6fZKEqusRUpzKYUZHAF80Bt0bXVqjxi8fkM66WAWCEsSm8R97008pc9zpMTNvfsRzQp4nSD5ELDwToCX39l7V43LwM9E2ePZN8CDo38trdQ4wYxcsgQ1LGGrCALmlSnYCBIievBMG09aZwcRI1O2ybP4-BWtfe3Z2JFrJ76MMPRufHGSOFiFtwMVXUc2XqsrDqeMibdYQy2X1Ev1gdiBILrH7eDa8O2qIjvAEagtYHaJOS3nif6315EA',
-  };
+  // Removido mockUser - agora o Header busca dados reais do usuário
 
   const handleMouseEnter = () => {
     if (leaveTimeout) {
@@ -62,8 +59,6 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
             isFocusMode ? 'h-0 opacity-0 overflow-hidden' : 'h-auto opacity-100'
           }`}>
             <Header 
-              userName={mockUser.name}
-              userAvatar={mockUser.avatar}
               notificationCount={1}
               showGreeting={showGreeting}
             />

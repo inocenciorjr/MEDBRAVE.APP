@@ -1,11 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { createClient } from '@/lib/supabase/client';
 import ThemeToggle from '../ui/ThemeToggle';
 
 interface HeaderProps {
-  userName: string;
-  userAvatar: string;
+  userName?: string;
+  userAvatar?: string;
   notificationCount?: number;
   showGreeting?: boolean;
 }
@@ -18,21 +19,61 @@ const motivationalQuotes = [
   'Viva com propósito, lute com fé, vença com persistência.',
 ];
 
-export default function Header({ userName, userAvatar, notificationCount = 0, showGreeting = true }: HeaderProps) {
+export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true }: HeaderProps) {
   const [quote, setQuote] = useState('');
+  const [userName, setUserName] = useState(propUserName || 'Usuário');
+  const [userAvatar, setUserAvatar] = useState(propUserAvatar || '');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Seleciona uma frase aleatória quando o componente monta
     const randomQuote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     setQuote(randomQuote);
-  }, []);
+
+    // Busca dados do usuário se não foram fornecidos via props
+    if (!propUserName || !propUserAvatar) {
+      loadUserData();
+    } else {
+      setLoading(false);
+    }
+  }, [propUserName, propUserAvatar]);
+
+  const loadUserData = async () => {
+    try {
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (user) {
+        // Busca perfil do usuário
+        const { data: profile } = await supabase
+          .from('users')
+          .select('full_name, avatar_url')
+          .eq('id', user.id)
+          .single();
+
+        const name = profile?.full_name || user.user_metadata?.full_name || user.email?.split('@')[0] || 'Usuário';
+        const avatar = profile?.avatar_url || user.user_metadata?.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
+
+        setUserName(name);
+        setUserAvatar(avatar);
+      }
+    } catch (error) {
+      console.error('Erro ao carregar dados do usuário:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
       {showGreeting && (
         <div>
           <h1 className="text-2xl md:text-3xl font-semibold text-slate-700 dark:text-slate-200 mb-2">
-            Olá, Dr. Inocêncio Jr.
+            {loading ? (
+              <span className="inline-block w-48 h-8 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></span>
+            ) : (
+              `Olá, ${userName}`
+            )}
           </h1>
           <p className="text-sm md:text-base font-light text-text-light-secondary dark:text-text-dark-secondary italic">
             {quote}
@@ -55,11 +96,19 @@ export default function Header({ userName, userAvatar, notificationCount = 0, sh
         </div>
 
         {/* User Avatar */}
-        <img
-          src={userAvatar}
-          alt="User avatar"
-          className="w-10 h-10 rounded-full cursor-pointer hover:ring-2 hover:ring-primary transition-all"
-        />
+        {loading ? (
+          <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse"></div>
+        ) : (
+          <img
+            src={userAvatar}
+            alt={`Avatar de ${userName}`}
+            className="w-10 h-10 rounded-full cursor-pointer hover:ring-2 hover:ring-primary transition-all"
+            onError={(e) => {
+              // Fallback se a imagem falhar
+              e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`;
+            }}
+          />
+        )}
       </div>
     </header>
   );

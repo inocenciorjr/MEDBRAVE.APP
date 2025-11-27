@@ -4,6 +4,7 @@ import { useState, useEffect, FormEvent } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import Image from 'next/image';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 const supabase = createClient();
 
@@ -139,15 +140,17 @@ export default function LoginPage() {
           </div>
 
           {/* Right Side - Login Form */}
-          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300">
+          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300 relative">
+            {/* Theme Toggle Button */}
+            <div className="absolute top-4 right-4">
+              <ThemeToggle />
+            </div>
+
             <div className="max-w-md w-full mx-auto">
               
               {/* Logo */}
               <div className="flex flex-col items-center justify-center mb-10 animate-slide-in-from-top">
                 <div className="flex items-center gap-4">
-                    <h2 className="text-3xl font-bold tracking-wider text-text-light-primary dark:text-text-dark-primary font-azonix">
-                    MEDBRAVE
-                    </h2>
                     <div className="relative w-16 h-16">
                       <Image
                         src="/login/logomedbravelogin.PNG"
@@ -157,6 +160,9 @@ export default function LoginPage() {
                         priority
                       />
                     </div>
+                    <h2 className="text-3xl font-bold tracking-wider text-text-light-primary dark:text-text-dark-primary font-azonix">
+                    MEDBRAVE
+                    </h2>
                 </div>
                 <p className="mt-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
                   Bem-vindo de volta! Por favor, faça login na sua conta.
