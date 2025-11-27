@@ -6,6 +6,7 @@ export interface AdminInputProps extends React.InputHTMLAttributes<HTMLInputElem
   label?: string;
   error?: string;
   success?: string;
+  helpText?: string;
   icon?: string;
 }
 
@@ -26,6 +27,7 @@ export function AdminInput({
   label,
   error,
   success,
+  helpText,
   icon,
   className = '',
   ...props
@@ -75,6 +77,11 @@ export function AdminInput({
         <p className="mt-1 text-sm text-green-600 dark:text-green-400 flex items-center gap-1">
           <span className="material-symbols-outlined text-base">check_circle</span>
           {success}
+        </p>
+      )}
+      {helpText && !error && !success && (
+        <p className="mt-1 text-sm text-text-light-tertiary dark:text-text-dark-tertiary">
+          {helpText}
         </p>
       )}
     </div>

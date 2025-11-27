@@ -1,30 +1,24 @@
 /**
- * Common types shared across admin features
+ * Common types used across admin components
  */
 
 export type SortDirection = 'asc' | 'desc';
 
-export interface PaginationParams {
-  page: number;
-  limit: number;
-}
-
-export interface PaginationMeta {
-  currentPage: number;
-  totalPages: number;
-  totalItems: number;
-  itemsPerPage: number;
-}
-
-export interface ApiResponse<T> {
+export interface ApiResponse<T = any> {
+  success: boolean;
   data: T;
-  meta?: PaginationMeta;
+  message?: string;
   error?: string;
 }
 
-export interface FilterParams {
-  search?: string;
-  sortBy?: string;
-  sortDirection?: SortDirection;
-  [key: string]: any;
+export interface PaginationMeta {
+  total: number;
+  page: number;
+  limit: number;
+  totalPages: number;
+}
+
+export interface ListResponse<T> {
+  items: T[];
+  meta: PaginationMeta;
 }
