@@ -1,0 +1,237 @@
+/* Admin Panel Custom Animations */
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility Classes */
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.animate-slide-in-top {
+  animation: slideInFromTop 0.3s ease-out;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Loading States */
+.loading-dots::after {
+  content: '';
+  animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+  0%, 20% {
+    content: '.';
+  }
+  40% {
+    content: '..';
+  }
+  60%, 100% {
+    content: '...';
+  }
+}
+
+/* Stagger Animation for Lists */
+.stagger-item {
+  animation: fadeIn 0.3s ease-out backwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.05s; }
+.stagger-item:nth-child(2) { animation-delay: 0.1s; }
+.stagger-item:nth-child(3) { animation-delay: 0.15s; }
+.stagger-item:nth-child(4) { animation-delay: 0.2s; }
+.stagger-item:nth-child(5) { animation-delay: 0.25s; }
+.stagger-item:nth-child(6) { animation-delay: 0.3s; }
+.stagger-item:nth-child(7) { animation-delay: 0.35s; }
+.stagger-item:nth-child(8) { animation-delay: 0.4s; }
+.stagger-item:nth-child(9) { animation-delay: 0.45s; }
+.stagger-item:nth-child(10) { animation-delay: 0.5s; }
+
+/* Smooth Transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient Animations */
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

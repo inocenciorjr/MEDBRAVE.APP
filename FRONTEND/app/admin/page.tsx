@@ -96,7 +96,7 @@ export default function AdminDashboardPage() {
       />
       <div className="space-y-6">
         {/* Welcome message */}
-        <div>
+        <div className="animate-fade-in">
           <h1 className="text-2xl font-display font-bold text-slate-700 dark:text-slate-200 mb-2">
             Bem-vindo ao Painel Administrativo
           </h1>
@@ -106,26 +106,34 @@ export default function AdminDashboardPage() {
         </div>
 
         {/* Stats Grid */}
-        <StatsGrid stats={stats} />
+        <div className="stagger-item">
+          <StatsGrid stats={stats} />
+        </div>
 
         {/* Quick Actions */}
-        <QuickActions />
+        <div className="stagger-item">
+          <QuickActions />
+        </div>
 
         {/* Financial Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Revenue Chart */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 stagger-item">
             <RevenueChart />
           </div>
 
           {/* Top Plans */}
-          <TopPlansCard />
+          <div className="stagger-item">
+            <TopPlansCard />
+          </div>
 
           {/* Recent Payments */}
-          <RecentPaymentsCard />
+          <div className="stagger-item">
+            <RecentPaymentsCard />
+          </div>
 
           {/* Recent Subscriptions */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 stagger-item">
             <RecentSubscriptionsCard />
           </div>
         </div>
