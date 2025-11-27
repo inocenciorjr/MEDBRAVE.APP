@@ -144,11 +144,11 @@ export default function LoginPage() {
               
               {/* Logo */}
               <div className="flex flex-col items-center justify-center mb-10 animate-slide-in-from-top">
-                <div className="flex flex-col items-center gap-3">
+                <div className="flex items-center gap-4">
                     <h2 className="text-3xl font-bold tracking-wider text-text-light-primary dark:text-text-dark-primary font-azonix">
                     MEDBRAVE
                     </h2>
-                    <div className="relative w-32 h-12">
+                    <div className="relative w-16 h-16">
                       <Image
                         src="/login/logomedbravelogin.PNG"
                         alt="MEDBRAVE Logo"
