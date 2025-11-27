@@ -15,48 +15,31 @@ import type { PlanFeature, FeatureAccessResult } from '@/types/plan';
  * ```
  */
 export function useFeatureAccess(feature: PlanFeature) {
-  const { checkFeature, userPlan } = usePlan();
+  const { hasFeature, userPlan, loading: planLoading, getUpgradeMessage } = usePlan();
   const [result, setResult] = useState<FeatureAccessResult>({
     hasAccess: false,
     upgradeRequired: true,
   });
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let mounted = true;
-
-    async function check() {
-      setLoading(true);
-      try {
-        const access = await checkFeature(feature);
-        if (mounted) {
-          setResult(access);
-        }
-      } catch (error) {
-        console.error('Erro ao verificar feature:', error);
-        if (mounted) {
-          setResult({
-            hasAccess: false,
-            reason: 'Erro ao verificar acesso',
-            upgradeRequired: true,
-          });
-        }
-      } finally {
-        if (mounted) {
-          setLoading(false);
-        }
-      }
+    if (planLoading) {
+      setResult({
+        hasAccess: false,
+        upgradeRequired: true,
+      });
+      return;
     }
 
-    check();
-
-    return () => {
-      mounted = false;
-    };
-  }, [feature, checkFeature, userPlan]); // Re-verifica quando o plano mudar
+    const access = hasFeature(feature);
+    setResult({
+      hasAccess: access,
+      upgradeRequired: !access,
+      reason: !access ? getUpgradeMessage(feature) : undefined,
+    });
+  }, [feature, hasFeature, userPlan, planLoading, getUpgradeMessage]);
 
   return {
     ...result,
-    loading,
+    loading: planLoading,
   };
 }

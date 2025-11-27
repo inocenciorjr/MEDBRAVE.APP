@@ -435,7 +435,6 @@ export default function GerenciarRevisoesPage() {
               })}
             </div>
           )}
-        </div>
       </div>
 
       {/* Dropdown Menu Global */}
