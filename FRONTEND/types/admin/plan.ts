@@ -2,6 +2,8 @@
  * Types for Admin Plan Management
  */
 
+import type { PaymentMethod } from './payment';
+
 export interface PlanLimits {
   // Questões
   maxQuestionsPerDay: number | null;
@@ -98,14 +100,6 @@ export type UserPlanStatus =
   | 'CANCELLED'
   | 'SUSPENDED'
   | 'TRIAL';
-
-export type PaymentMethod = 
-  | 'CREDIT_CARD'
-  | 'PIX'
-  | 'ADMIN'
-  | 'FREE'
-  | 'BANK_SLIP'
-  | 'OTHER';
 
 export interface UserPlan {
   id: string;
