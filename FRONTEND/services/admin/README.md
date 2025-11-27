@@ -4,20 +4,24 @@ Este diretório contém todos os serviços de API para o painel administrativo.
 
 ## Estrutura
 
+### Core Services
 - `baseService.ts` - Funções utilitárias base (fetchWithAuth wrapper, error handling)
+- `authService.ts` - Autenticação admin
+- `statsService.ts` - Estatísticas do dashboard
+
+### Content Management
 - `userService.ts` - CRUD de usuários
 - `questionService.ts` - CRUD de questões
 - `filterService.ts` - CRUD de filtros hierárquicos
 - `notificationService.ts` - CRUD de notificações
-- `auditService.ts` - Logs de auditoria
-- `paymentService.ts` - Gestão de pagamentos
-- `taskService.ts` - CRUD de tarefas
-- `flashcardService.ts` - CRUD de flashcards e decks
-- `planService.ts` - CRUD de planos
-- `couponService.ts` - CRUD de cupons
-- `financeService.ts` - Métricas financeiras
-- `aiService.ts` - Insights e monitoramento AI
-- `statsService.ts` - Estatísticas do dashboard
+- `medbraveService.ts` - Serviços MEDBRAVE AI
+
+### Payment & Plans (✅ Implementados)
+- `planService.ts` - CRUD de planos (criar, editar, deletar, duplicar)
+- `userPlanService.ts` - Gestão de planos de usuários (cancelar, renovar, status)
+- `couponService.ts` - CRUD de cupons de desconto
+- `paymentService.ts` - Visualização e gestão de pagamentos (reembolsar, cancelar)
+- `invoiceService.ts` - Gestão de invoices (criar, marcar como pago)
 
 ## Convenções
 
