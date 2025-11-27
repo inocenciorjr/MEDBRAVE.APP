@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AdminButton } from '../ui/AdminButton';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
 
 interface BulkActionsBarProps {
   selectedCount: number;

@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { AdminCard } from '../ui/AdminCard';
-import { AdminInput, AdminTextarea, AdminSelect } from '../ui/AdminInput';
-import { AdminButton } from '../ui/AdminButton';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
+import { AdminInput, AdminTextarea, AdminSelect } from '@/components/admin/ui/AdminInput';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import type { Coupon, CreateCouponPayload } from '@/types/admin/coupon';
 import type { Plan } from '@/types/admin/plan';
 import { getAllPlans } from '@/services/admin/planService';

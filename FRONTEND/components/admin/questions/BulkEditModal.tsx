@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { AdminModal } from '../ui/AdminModal';
-import { AdminButton } from '../ui/AdminButton';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminModal } from '@/components/admin/ui/AdminModal';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import Checkbox from '@/components/ui/Checkbox';
 
 interface Filter {

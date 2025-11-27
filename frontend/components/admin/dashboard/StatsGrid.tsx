@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AdminStats } from '../ui/AdminStats';
+import { AdminStats } from '@/components/admin/ui/AdminStats';
 import type { DashboardStats } from '@/services/admin/statsService';
 
 export interface StatsGridProps {

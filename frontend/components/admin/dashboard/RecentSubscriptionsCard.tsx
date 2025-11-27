@@ -1,16 +1,36 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { AdminCard } from '../ui/AdminCard';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
 import { UserPlanStatusBadge } from '../user-plans/UserPlanStatusBadge';
+import { getAllUserPlans } from '@/services/admin/userPlanService';
 import type { UserPlan } from '@/types/admin/plan';
 
 interface RecentSubscriptionsCardProps {
-  userPlans: UserPlan[];
+  userPlans?: UserPlan[];
 }
 
-export function RecentSubscriptionsCard({ userPlans }: RecentSubscriptionsCardProps) {
+export function RecentSubscriptionsCard({ userPlans: propUserPlans }: RecentSubscriptionsCardProps) {
+  const [userPlans, setUserPlans] = useState<UserPlan[]>(propUserPlans || []);
+  const [loading, setLoading] = useState(!propUserPlans);
+
+  useEffect(() => {
+    if (!propUserPlans) {
+      loadData();
+    }
+  }, [propUserPlans]);
+
+  const loadData = async () => {
+    try {
+      const result = await getAllUserPlans();
+      setUserPlans(result.items.slice(0, 10)); // Get last 10
+    } catch (error) {
+      console.error('Error loading recent subscriptions:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
   const formatDate = (date: string) => {
     return new Date(date).toLocaleString('pt-BR', {
       day: '2-digit',
@@ -19,6 +39,22 @@ export function RecentSubscriptionsCard({ userPlans }: RecentSubscriptionsCardPr
       minute: '2-digit',
     });
   };
+
+  if (loading) {
+    return (
+      <AdminCard
+        header={
+          <h3 className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
+            Assinaturas Recentes
+          </h3>
+        }
+      >
+        <div className="h-64 flex items-center justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      </AdminCard>
+    );
+  }
 
   if (userPlans.length === 0) {
     return (

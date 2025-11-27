@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AdminTable, type ColumnDef } from '../ui/AdminTable';
+import { AdminTable, type ColumnDef } from '@/components/admin/ui/AdminTable';
 import { CouponStatusBadge } from './CouponStatusBadge';
 import { CouponTypeBadge } from './CouponTypeBadge';
 import type { Coupon } from '@/types/admin/coupon';

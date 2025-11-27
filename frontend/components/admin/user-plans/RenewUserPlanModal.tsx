@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { AdminModal } from '../ui/AdminModal';
-import { AdminButton } from '../ui/AdminButton';
-import { AdminInput, AdminSelect } from '../ui/AdminInput';
+import { AdminModal } from '@/components/admin/ui/AdminModal';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminInput, AdminSelect } from '@/components/admin/ui/AdminInput';
 import type { UserPlan, PaymentMethod } from '@/types/admin/plan';
 
 interface RenewUserPlanModalProps {

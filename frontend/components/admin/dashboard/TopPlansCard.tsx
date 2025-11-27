@@ -1,20 +1,55 @@
 'use client';
 
-import React from 'react';
-import { AdminCard } from '../ui/AdminCard';
-import type { TopPlan } from '@/services/admin/statsService';
+import React, { useEffect, useState } from 'react';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
+import { getTopPlans, type TopPlan } from '@/services/admin/statsService';
 
 interface TopPlansCardProps {
-  plans: TopPlan[];
+  plans?: TopPlan[];
 }
 
-export function TopPlansCard({ plans }: TopPlansCardProps) {
+export function TopPlansCard({ plans: propPlans }: TopPlansCardProps) {
+  const [plans, setPlans] = useState<TopPlan[]>(propPlans || []);
+  const [loading, setLoading] = useState(!propPlans);
+
+  useEffect(() => {
+    if (!propPlans) {
+      loadData();
+    }
+  }, [propPlans]);
+
+  const loadData = async () => {
+    try {
+      const data = await getTopPlans();
+      setPlans(data);
+    } catch (error) {
+      console.error('Error loading top plans:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('pt-BR', {
       style: 'currency',
       currency: 'BRL',
     }).format(amount);
   };
+
+  if (loading) {
+    return (
+      <AdminCard
+        header={
+          <h3 className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
+            Top 5 Planos
+          </h3>
+        }
+      >
+        <div className="h-64 flex items-center justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      </AdminCard>
+    );
+  }
 
   if (plans.length === 0) {
     return (

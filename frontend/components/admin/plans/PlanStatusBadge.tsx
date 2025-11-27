@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import type { Plan } from '@/types/admin/plan';
 
 interface PlanStatusBadgeProps {

@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { AdminCard } from '../ui/AdminCard';
-import { AdminInput } from '../ui/AdminInput';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
+import { AdminInput } from '@/components/admin/ui/AdminInput';
 import type { PlanLimits } from '@/types/admin/plan';
 
 interface PlanLimitsFormProps {

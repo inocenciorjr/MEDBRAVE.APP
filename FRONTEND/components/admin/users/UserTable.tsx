@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { AdminTable, ColumnDef } from '../ui/AdminTable';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminTable, ColumnDef } from '@/components/admin/ui/AdminTable';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import { User } from '@/types/admin/user';
 
 interface UserTableProps {

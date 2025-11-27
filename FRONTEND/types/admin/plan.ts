@@ -4,6 +4,9 @@
 
 import type { PaymentMethod } from './payment';
 
+// Re-export PaymentMethod for convenience
+export type { PaymentMethod };
+
 export interface PlanLimits {
   // Questões
   maxQuestionsPerDay: number | null;

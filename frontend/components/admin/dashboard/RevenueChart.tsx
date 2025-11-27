@@ -1,14 +1,49 @@
 'use client';
 
-import React from 'react';
-import { AdminCard } from '../ui/AdminCard';
-import type { RevenueChartData } from '@/services/admin/statsService';
+import React, { useEffect, useState } from 'react';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
+import { getRevenueChartData, type RevenueChartData } from '@/services/admin/statsService';
 
 interface RevenueChartProps {
-  data: RevenueChartData[];
+  data?: RevenueChartData[];
 }
 
-export function RevenueChart({ data }: RevenueChartProps) {
+export function RevenueChart({ data: propData }: RevenueChartProps) {
+  const [data, setData] = useState<RevenueChartData[]>(propData || []);
+  const [loading, setLoading] = useState(!propData);
+
+  useEffect(() => {
+    if (!propData) {
+      loadData();
+    }
+  }, [propData]);
+
+  const loadData = async () => {
+    try {
+      const stats = await getRevenueChartData();
+      setData(stats);
+    } catch (error) {
+      console.error('Error loading revenue stats:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <AdminCard
+        header={
+          <h3 className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
+            Receita dos Últimos 30 Dias
+          </h3>
+        }
+      >
+        <div className="h-64 flex items-center justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      </AdminCard>
+    );
+  }
   if (data.length === 0) {
     return (
       <AdminCard
@@ -67,7 +102,7 @@ export function RevenueChart({ data }: RevenueChartProps) {
               <div
                 key={index}
                 className="flex-1 flex flex-col items-center gap-1 group"
-                title={`${formatDate(item.dateStr)}: ${formatCurrency(item.revenue)} (${item.payments} pagamentos)`}
+                title={`${formatDate(item.date)}: ${formatCurrency(item.revenue)} (${item.payments} pagamentos)`}
               >
                 <div className="w-full flex items-end justify-center h-full">
                   <div

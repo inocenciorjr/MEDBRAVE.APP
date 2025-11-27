@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { AdminCard } from '../ui/AdminCard';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
 
 interface QuickAction {
   id: string;

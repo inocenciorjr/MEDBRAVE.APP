@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { AdminCard } from '../ui/AdminCard';
-import { AdminInput, AdminTextarea, AdminSelect } from '../ui/AdminInput';
-import { AdminButton } from '../ui/AdminButton';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
+import { AdminInput, AdminTextarea, AdminSelect } from '@/components/admin/ui/AdminInput';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
 import { PlanLimitsForm } from './PlanLimitsForm';
 import type { Plan, CreatePlanPayload, PlanLimits } from '@/types/admin/plan';
 
@@ -283,7 +283,7 @@ export function PlanForm({ plan, onSubmit, onCancel }: PlanFormProps) {
 
       {/* Limites */}
       <PlanLimitsForm
-        limits={formData.limits || getDefaultLimits()}
+        limits={{ ...getDefaultLimits(), ...formData.limits }}
         onChange={(limits) => setFormData({ ...formData, limits })}
       />
 

@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { AdminModal } from '../ui/AdminModal';
-import { AdminButton } from '../ui/AdminButton';
-import { AdminSelect } from '../ui/AdminInput';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminModal } from '@/components/admin/ui/AdminModal';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminSelect } from '@/components/admin/ui/AdminInput';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import { User } from '@/types/admin/user';
 
 interface UserModalProps {

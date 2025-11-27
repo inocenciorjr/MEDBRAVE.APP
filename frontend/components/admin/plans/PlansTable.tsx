@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { AdminTable, type ColumnDef } from '../ui/AdminTable';
-import { AdminButton } from '../ui/AdminButton';
-import { AdminBadge } from '../ui/AdminBadge';
+import { AdminTable, type ColumnDef } from '@/components/admin/ui/AdminTable';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminBadge } from '@/components/admin/ui/AdminBadge';
 import { PlanStatusBadge } from './PlanStatusBadge';
 import { PlanIntervalBadge } from './PlanIntervalBadge';
 import type { Plan } from '@/types/admin/plan';

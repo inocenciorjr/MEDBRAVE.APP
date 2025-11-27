@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { AdminInput, AdminSelect } from '../ui/AdminInput';
-import { AdminButton } from '../ui/AdminButton';
+import { AdminInput, AdminSelect } from '@/components/admin/ui/AdminInput';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
 import { SearchInput } from '@/components/flashcards/SearchInput';
 
 interface QuestionFiltersProps {

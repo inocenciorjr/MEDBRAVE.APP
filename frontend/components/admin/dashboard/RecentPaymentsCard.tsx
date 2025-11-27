@@ -1,17 +1,37 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { AdminCard } from '../ui/AdminCard';
+import { AdminCard } from '@/components/admin/ui/AdminCard';
 import { PaymentStatusBadge } from '../payments/PaymentStatusBadge';
 import { PaymentMethodBadge } from '../payments/PaymentMethodBadge';
+import { getAllPayments } from '@/services/admin/paymentService';
 import type { Payment } from '@/types/admin/payment';
 
 interface RecentPaymentsCardProps {
-  payments: Payment[];
+  payments?: Payment[];
 }
 
-export function RecentPaymentsCard({ payments }: RecentPaymentsCardProps) {
+export function RecentPaymentsCard({ payments: propPayments }: RecentPaymentsCardProps) {
+  const [payments, setPayments] = useState<Payment[]>(propPayments || []);
+  const [loading, setLoading] = useState(!propPayments);
+
+  useEffect(() => {
+    if (!propPayments) {
+      loadData();
+    }
+  }, [propPayments]);
+
+  const loadData = async () => {
+    try {
+      const result = await getAllPayments();
+      setPayments(result.items.slice(0, 10)); // Get last 10
+    } catch (error) {
+      console.error('Error loading recent payments:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
   const formatCurrency = (amount: number, currency: string) => {
     return new Intl.NumberFormat('pt-BR', {
       style: 'currency',
@@ -27,6 +47,22 @@ export function RecentPaymentsCard({ payments }: RecentPaymentsCardProps) {
       minute: '2-digit',
     });
   };
+
+  if (loading) {
+    return (
+      <AdminCard
+        header={
+          <h3 className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
+            Pagamentos Recentes
+          </h3>
+        }
+      >
+        <div className="h-64 flex items-center justify-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        </div>
+      </AdminCard>
+    );
+  }
 
   if (payments.length === 0) {
     return (
