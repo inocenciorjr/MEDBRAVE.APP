@@ -5,6 +5,10 @@ import { useRouter } from 'next/navigation';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { StatsGrid } from '@/components/admin/dashboard/StatsGrid';
 import { QuickActions } from '@/components/admin/dashboard/QuickActions';
+import { RevenueChart } from '@/components/admin/dashboard/RevenueChart';
+import { TopPlansCard } from '@/components/admin/dashboard/TopPlansCard';
+import { RecentPaymentsCard } from '@/components/admin/dashboard/RecentPaymentsCard';
+import { RecentSubscriptionsCard } from '@/components/admin/dashboard/RecentSubscriptionsCard';
 import { getDashboardStats, type DashboardStats } from '@/services/admin/statsService';
 import { createClient } from '@/lib/supabase/client';
 
@@ -106,6 +110,25 @@ export default function AdminDashboardPage() {
 
         {/* Quick Actions */}
         <QuickActions />
+
+        {/* Financial Overview */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Revenue Chart */}
+          <div className="lg:col-span-2">
+            <RevenueChart />
+          </div>
+
+          {/* Top Plans */}
+          <TopPlansCard />
+
+          {/* Recent Payments */}
+          <RecentPaymentsCard />
+
+          {/* Recent Subscriptions */}
+          <div className="lg:col-span-2">
+            <RecentSubscriptionsCard />
+          </div>
+        </div>
       </div>
     </>
   );
