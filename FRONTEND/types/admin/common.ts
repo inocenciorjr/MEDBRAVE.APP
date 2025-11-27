@@ -22,3 +22,10 @@ export interface ListResponse<T> {
   items: T[];
   meta: PaginationMeta;
 }
+
+export interface PaginationParams {
+  page?: number;
+  limit?: number;
+  sortBy?: string;
+  sortDirection?: SortDirection;
+}
