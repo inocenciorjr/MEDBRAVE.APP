@@ -2,6 +2,7 @@
 
 import { use, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { simulatedExamService, SimulatedExam } from '@/services/simulatedExamService';
 import api from '@/services/api';
@@ -110,23 +111,25 @@ export default function ResolverSimuladoPage({ params }: ResolverSimuladoPagePro
   }
 
   return (
-    <MainLayout showGreeting={false}>
-      {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Breadcrumb
-          items={[
-            { label: 'Listas de Questões', icon: 'list_alt', href: '/lista-questoes/minhas-listas' },
-            { label: simulado.title, icon: 'schedule' } // Último item sem href (página atual)
-          ]}
-        />
-      </div>
+    <PagePlanGuard>
+      <MainLayout showGreeting={false}>
+        {/* Breadcrumb */}
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <Breadcrumb
+            items={[
+              { label: 'Listas de Questões', icon: 'list_alt', href: '/lista-questoes/minhas-listas' },
+              { label: simulado.title, icon: 'schedule' } // Último item sem href (página atual)
+            ]}
+          />
+        </div>
 
-      <SimuladoResolverClient
-        simuladoId={id}
-        resultId={resultId!}
-        questions={questions}
-        timeLimit={simulado.time_limit_minutes}
-      />
-    </MainLayout>
+        <SimuladoResolverClient
+          simuladoId={id}
+          resultId={resultId!}
+          questions={questions}
+          timeLimit={simulado.time_limit_minutes}
+        />
+      </MainLayout>
+    </PagePlanGuard>
   );
 }

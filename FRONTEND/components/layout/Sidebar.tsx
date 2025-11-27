@@ -39,10 +39,8 @@ const secondaryMenuItems: MenuItem[] = [
 export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: SidebarProps) {
   const pathname = usePathname();
 
-  // Start with false to match server render
-  const [isPinned, setIsPinned] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  // Usar o estado controlado do pai (MainLayout)
+  const isExpanded = !controlledCollapsed;
 
   // Função para verificar se o item está ativo
   const isItemActive = (href: string) => {
@@ -52,44 +50,10 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
     return pathname?.startsWith(href);
   };
 
-  // Load pinned state from localStorage after mount
-  useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem('sidebarPinned');
-    if (stored === 'true') {
-      setIsPinned(true);
-    }
-  }, []);
-
-  // Sidebar is expanded if pinned OR hovered
-  const isExpanded = isPinned || isHovered;
-
-  // Debounce hover para evitar travamentos
-  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
-
-  const handleMouseEnter = useCallback(() => {
-    if (hoverTimeout) clearTimeout(hoverTimeout);
-    const timeout = setTimeout(() => setIsHovered(true), 50); // 50ms delay
-    setHoverTimeout(timeout);
-  }, [hoverTimeout]);
-
-  const handleMouseLeave = useCallback(() => {
-    if (hoverTimeout) clearTimeout(hoverTimeout);
-    setIsHovered(false);
-  }, [hoverTimeout]);
-
-  const handlePin = useCallback(() => {
-    const newState = !isPinned;
-    setIsPinned(newState);
-    localStorage.setItem('sidebarPinned', String(newState));
-  }, [isPinned]);
-
   return (
     <aside
-      className={`relative bg-sidebar-light dark:bg-sidebar-dark p-4 ml-2 mr-4 my-4 rounded-2xl flex flex-col justify-between h-[calc(100vh-2rem)] transition-all duration-300 ease-out shadow-xl dark:shadow-dark-xl will-change-[width] ${isExpanded ? 'w-72' : 'w-20'
+      className={`relative bg-sidebar-light dark:bg-sidebar-dark p-4 rounded-r-2xl flex flex-col justify-between h-screen transition-[width] duration-200 ease-in-out shadow-xl dark:shadow-dark-xl ${isExpanded ? 'w-72' : 'w-20'
         }`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       {/* Top Section */}
       <div>
@@ -126,19 +90,6 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
               MEDBRAVE
             </span>
           </div>
-
-          {/* Pin Button - only show when expanded */}
-          <button
-            onClick={handlePin}
-            className={`text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-primary transition-all duration-300 absolute top-0 right-0 ${isExpanded ? 'opacity-100' : 'opacity-0 pointer-events-none'
-              } ${isPinned ? 'text-primary' : ''}`}
-            aria-label={isPinned ? 'Desafixar sidebar' : 'Fixar sidebar'}
-            title={isPinned ? 'Desafixar sidebar' : 'Fixar sidebar'}
-          >
-            <span className="material-symbols-outlined text-lg">
-              {isPinned ? 'push_pin' : 'push_pin'}
-            </span>
-          </button>
         </div>
 
         {/* Main Navigation */}

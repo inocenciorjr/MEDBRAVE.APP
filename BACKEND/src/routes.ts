@@ -4,7 +4,7 @@ import contentRoutes from "./domain/content/routes/contentRoutes";
 // Error notebook routes serão importadas dinamicamente com configuração da Fase 3
 
 import dataImportExportRoutes from "./domain/integration/routes/dataImportExportRoutes";
- 
+
 // ETAPA 1: Importar createStudyToolsModule para centralizar todas as ferramentas de estudo
 import { createStudyToolsModule } from "./domain/studyTools/factories/createStudyToolsModule";
 import unifiedQuestionRoutes from "./domain/questions/routes/unifiedQuestionRoutes";
@@ -39,7 +39,7 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
   } catch (error) {
     console.error("❌ Erro ao carregar rotas de usuários:", error);
   }
-  
+
   // Rotas de questões
   router.use("/questions", unifiedQuestionRoutes);
 
@@ -178,17 +178,17 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
       const { ReviewDashboardService } = require("./domain/studyTools/unifiedReviews/services/ReviewDashboardService");
       const { ReviewDashboardController } = require("./domain/studyTools/unifiedReviews/controllers/ReviewDashboardController");
       const { ReviewPreferencesService } = require("./domain/studyTools/unifiedReviews/services/ReviewPreferencesService");
-      
+
       const prefsService = new ReviewPreferencesService(supabase);
       const dashboardService = new ReviewDashboardService(supabase, studyToolsModule.unifiedReviewService, prefsService);
       const dashboardController = new ReviewDashboardController(dashboardService);
-      
+
       const dashboardRouter = require("express").Router();
       dashboardRouter.get('/dashboard', authMiddleware, dashboardController.getDashboard.bind(dashboardController));
       dashboardRouter.post('/activate-cramming', authMiddleware, dashboardController.activateCramming.bind(dashboardController));
-      
+
       router.use("/unified-reviews", dashboardRouter);
-      
+
       // Rotas de preview de revisões
       const { createReviewPreviewRoutes, createReviewManagementRoutes } = require('./domain/studyTools/unifiedReviews/routes/unifiedReviewRoutes');
       const previewRouter = createReviewPreviewRoutes();
@@ -223,7 +223,7 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     try {
       const { createReviewManageRoutes } = require("./domain/studyTools/unifiedReviews/routes/reviewManageRoutes");
       const { ReviewManageController } = require("./domain/studyTools/unifiedReviews/controllers/ReviewManageController");
-      
+
       const reviewManageController = new ReviewManageController(studyToolsModule.unifiedReviewService);
       const reviewManageRoutes = createReviewManageRoutes(reviewManageController);
       router.use("/reviews", reviewManageRoutes);
@@ -256,7 +256,7 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
 
     // Registrar rotas de flashcards para compatibilidade com frontend (REMOVIDO: duplicava as rotas e causava dupla execução)
     // router.use("/flashcards", studyToolsModule.studyToolsRoutes.flashcards);
-    
+
   } catch (error) {
     console.warn("Erro ao carregar módulo de ferramentas de estudo:", error);
     // Fallback removido para evitar conflito de rotas
@@ -410,13 +410,13 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     const { createOfficialExamModule } = require("./domain/officialExam/factory/createOfficialExamModule");
     const { SupabaseQuestionService } = require("./infra/questions/supabase/SupabaseQuestionService");
     const { SupabaseSimulatedExamService } = require("./infra/simulatedExam/supabase");
-    
+
     // Create question service
     const questionService = new SupabaseQuestionService(supabase);
-    
+
     // Create simulated exam service
     const simulatedExamService = new SupabaseSimulatedExamService(supabase);
-    
+
     const officialExamRoutes = createOfficialExamModule({
       supabaseClient: supabase,
       questionService: questionService,
@@ -473,7 +473,7 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     const { supabaseAuthMiddleware } = require("./domain/auth/middleware/supabaseAuth.middleware");
     const { QuestionListController } = require("./controllers/QuestionListController");
     const responseController = new QuestionListController();
-    
+
     router.post("/question-responses", supabaseAuthMiddleware, responseController.saveQuestionResponse.bind(responseController));
     console.log('✅ Rota de respostas de questões registrada em /question-responses');
   } catch (error) {
@@ -492,7 +492,7 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
   // Endpoint específico para dashboard stats - usando sistema avançado
   router.get("/dashboard/stats", authMiddleware as any, async (req: any, res: any) => {
     try {
-      
+
       const userId = req.user?.id;
 
       if (!userId) {
@@ -796,11 +796,11 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
             .select("*")
             .eq("user_id", userId)
             .order("timestamp", { ascending: false });
-           
+
           const responsesSnapshot = { data: responsesData || [] };
 
           if (responsesSnapshot.data && responsesSnapshot.data.length > 0) {
-            
+
 
             // Analisar padrões temporais das respostas para estimar sessões
             const sessionGroups: { [key: string]: number } = {};
@@ -926,6 +926,18 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
       }
     },
   );
+
+  // ===== ROTAS DE PAYMENT (PLANOS E PAGAMENTOS) =====
+  try {
+    const { createPaymentModule } = require("./domain/payment/factory");
+    const paymentRoutes = createPaymentModule();
+    
+    // A factory já retorna um Router com todas as rotas configuradas
+    router.use("/", paymentRoutes);
+    console.log('✅ Rotas de payment registradas: /api/plans, /api/user-plans, /api/payments, /api/invoices, /api/coupons');
+  } catch (error) {
+    console.error("❌ Erro ao carregar rotas de payment:", error);
+  }
 
   return router;
 };

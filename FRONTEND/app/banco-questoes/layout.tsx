@@ -1,4 +1,5 @@
 import MainLayout from '@/components/layout/MainLayout';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { ReactNode } from 'react';
 
 interface BancoQuestoesLayoutProps {
@@ -6,5 +7,9 @@ interface BancoQuestoesLayoutProps {
 }
 
 export default function BancoQuestoesLayout({ children }: BancoQuestoesLayoutProps) {
-  return <MainLayout showGreeting={false}>{children}</MainLayout>;
+  return (
+    <PagePlanGuard>
+      <MainLayout showGreeting={false}>{children}</MainLayout>
+    </PagePlanGuard>
+  );
 }

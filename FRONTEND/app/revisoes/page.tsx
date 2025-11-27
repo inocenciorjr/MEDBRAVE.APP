@@ -57,7 +57,7 @@ export default function RevisoesPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Revisões', icon: 'history', href: '/revisoes' }
@@ -65,9 +65,8 @@ export default function RevisoesPage() {
         />
       </div>
 
-      {/* Background Wrapper */}
-      <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Content */}
+      <div className="w-full py-8">
           <div className="space-y-8">
             {/* Header com botão de configuração */}
             <div className="flex items-center justify-between">
@@ -171,7 +170,7 @@ export default function RevisoesPage() {
                     </div>
                   </div>
 
-                  <div className="space-y-3 max-w-2xl">
+                  <div className="space-y-3">
                     <h2 className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary">
                       Configure seu Sistema de Revisões
                     </h2>
@@ -402,7 +401,6 @@ export default function RevisoesPage() {
             )}
           </div>
         </div>
-      </div>
 
       {showWizard && (
         <ReviewConfigurationWizard

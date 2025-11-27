@@ -159,7 +159,7 @@ export default function EspecialidadePage() {
   if (!collection) {
     return (
       <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center py-12">
             <h1 className="text-2xl font-semibold text-slate-700 dark:text-slate-200 mb-4">
               Coleção não encontrada
@@ -182,7 +182,7 @@ export default function EspecialidadePage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Flashcards', icon: 'layers', href: '/flashcards/colecoes' },
@@ -193,7 +193,7 @@ export default function EspecialidadePage() {
       </div>
 
       <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
           {/* Header com navegação */}
           <div className="flex items-center gap-4 mb-6">
           <button

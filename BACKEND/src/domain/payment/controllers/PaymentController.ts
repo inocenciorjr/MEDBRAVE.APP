@@ -6,7 +6,6 @@ import { IPaymentNotificationService } from '../../notifications/interfaces/IPay
 import { PaymentMethod, PaymentStatus } from '../types';
 import { AppError, ErrorCodes, ErrorStatusCodes } from '../../../utils/errors';
 import logger from '../../../utils/logger';
-import '../../../@types/express';
 
 /**
  * Controlador responsável por gerenciar os pagamentos

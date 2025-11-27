@@ -1,6 +1,7 @@
 'use client';
 
 import { Suspense } from 'react';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import MainLayout from '@/components/layout/MainLayout';
 import SimuladosGrid from '@/components/dashboard/SimuladosGrid';
 import ActivityChart from '@/components/dashboard/ActivityChart';
@@ -127,8 +128,9 @@ export default function Home() {
   };
 
   return (
-    <MainLayout>
-      <div className="grid grid-cols-12 gap-8">
+    <PagePlanGuard>
+      <MainLayout>
+        <div className="grid grid-cols-12 gap-8">
         {/* Left Column */}
         <div className="col-span-12 lg:col-span-8 space-y-8">
           {/* Simulados Grid */}
@@ -149,6 +151,7 @@ export default function Home() {
           <RightSidebar tasks={tasks} />
         </div>
       </div>
-    </MainLayout>
+      </MainLayout>
+    </PagePlanGuard>
   );
 }

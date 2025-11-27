@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo, lazy, Suspense } from 'react';
 import { useRouter } from 'next/navigation';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { TabGroup } from '@/components/ui/TabGroup';
@@ -184,17 +185,16 @@ export default function StatisticsPage() {
   }
 
   return (
-    <>
+    <PagePlanGuard>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[{ label: 'Estatísticas', icon: 'analytics', href: '/statistics' }]}
         />
       </div>
 
-      {/* Background Wrapper */}
-      <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Content */}
+      <div className="w-full py-8">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -419,8 +419,7 @@ export default function StatisticsPage() {
           </div>
         </Suspense>
       )}
-        </div>
       </div>
-    </>
+    </PagePlanGuard>
   );
 }

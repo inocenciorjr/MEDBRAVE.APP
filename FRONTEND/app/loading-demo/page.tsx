@@ -10,7 +10,7 @@ export default function LoadingDemoPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black p-8">
-            <div className="max-w-7xl mx-auto space-y-12">
+            <div className="space-y-12">
                 {/* Header */}
                 <div className="text-center">
                     <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2">

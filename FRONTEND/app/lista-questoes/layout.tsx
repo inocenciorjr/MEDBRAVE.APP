@@ -1,4 +1,5 @@
 import MainLayout from '@/components/layout/MainLayout';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { ReactNode } from 'react';
 
 interface ListaQuestoesLayoutProps {
@@ -6,5 +7,9 @@ interface ListaQuestoesLayoutProps {
 }
 
 export default function ListaQuestoesLayout({ children }: ListaQuestoesLayoutProps) {
-  return <MainLayout showGreeting={false}>{children}</MainLayout>;
+  return (
+    <PagePlanGuard>
+      <MainLayout showGreeting={false}>{children}</MainLayout>
+    </PagePlanGuard>
+  );
 }

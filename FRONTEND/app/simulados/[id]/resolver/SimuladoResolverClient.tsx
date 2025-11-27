@@ -242,7 +242,7 @@ export default function SimuladoResolverClient({
     <>
       {/* Timer fixo no topo - z-index menor que sidebar (40) */}
       <div className="fixed top-0 left-0 right-0 z-30 bg-primary shadow-lg">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center justify-between text-white">
             <div className="flex items-center gap-4">
               <button
@@ -313,7 +313,7 @@ export default function SimuladoResolverClient({
 
       {/* Conteúdo da questão - MESMA estrutura da resolução normal */}
       <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
           <QuestionView 
             key={`${listId}-${currentQuestion.id}-${questions.length}`}
             question={currentQuestion} 

@@ -1,23 +1,38 @@
 'use client';
 
-import { useState, FormEvent, Suspense } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
-import { AdminButton } from '@/components/admin/ui/AdminButton';
-import { AdminInput } from '@/components/admin/ui/AdminInput';
-import { AdminCard } from '@/components/admin/ui/AdminCard';
+import Image from 'next/image';
 
 const supabase = createClient();
 
-function LoginContent() {
+const CAROUSEL_IMAGES = [
+  '/login/login-1.png',
+  '/login/login-2.png',
+  '/login/login-3.png',
+];
+
+export default function LoginPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirect = searchParams.get('redirect') || '/admin';
+  const redirect = searchParams.get('redirect') || '/';
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  // Carousel State
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-transition for carousel
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
+    }, 5000); // 5 seconds
+    return () => clearInterval(timer);
+  }, [currentSlide]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -36,7 +51,6 @@ function LoginContent() {
       }
 
       if (data.user) {
-        // Redirecionar para a página solicitada
         router.push(redirect);
       }
     } catch (err) {
@@ -52,10 +66,7 @@ function LoginContent() {
     setError(null);
 
     try {
-      // Salvar o redirect no localStorage para recuperar depois
       localStorage.setItem('auth_redirect', redirect);
-
-      // Usar NEXT_PUBLIC_SITE_URL se disponível, senão usar window.location.origin
       const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
       const redirectUrl = `${siteUrl}/auth/callback`;
 
@@ -75,7 +86,6 @@ function LoginContent() {
         setError('Erro ao fazer login com Google. Tente novamente.');
         setLoading(false);
       }
-      // Vai redirecionar automaticamente
     } catch (err) {
       setError('Erro ao fazer login com Google. Tente novamente.');
       console.error('Erro no login com Google:', err);
@@ -84,138 +94,145 @@ function LoginContent() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background-light dark:bg-background-dark px-4 py-12">
-      <div className="w-full max-w-md">
-        {/* Logo e Título */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-4 shadow-lg">
-            <span className="material-symbols-outlined text-white text-4xl">
-              admin_panel_settings
-            </span>
-          </div>
-          <h1 className="text-3xl font-bold text-slate-700 dark:text-slate-200 mb-2 font-inter">
-            MEDBRAVE Admin
-          </h1>
-          <p className="text-text-light-secondary dark:text-text-dark-secondary font-inter">
-            Acesse o painel administrativo
-          </p>
-        </div>
+    <div className="bg-background-light dark:bg-background-dark font-display flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8 transition-colors duration-300">
+      <div className="w-full max-w-6xl mx-auto">
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden flex flex-col lg:flex-row min-h-[750px] animate-fade-in">
+          
+          {/* Left Side - Carousel */}
+          <div className="w-full lg:w-1/2 relative bg-gray-900 hidden lg:block">
+             {CAROUSEL_IMAGES.map((src, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    index === currentSlide ? 'opacity-100' : 'opacity-0'
+                  }`}
+                >
+                   <Image
+                      src={src}
+                      alt={`Slide ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                      sizes="50vw"
+                   />
+                   <div className="absolute inset-0 bg-black/10"></div>
+                   <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
+                </div>
+             ))}
 
-        {/* Card de Login */}
-        <AdminCard padding="lg">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Mensagem de Erro */}
-            {error && (
-              <div className="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-900/20 border-2 border-red-200 dark:border-red-800 rounded-xl">
-                <span className="material-symbols-outlined text-red-600 dark:text-red-400 text-xl mt-0.5">
-                  error
-                </span>
-                <p className="text-sm text-red-600 dark:text-red-400 font-inter">
-                  {error}
+            {/* Carousel Dots */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex justify-center items-center space-x-2 z-10">
+              {CAROUSEL_IMAGES.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    index === currentSlide ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/80'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Right Side - Login Form */}
+          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300">
+            <div className="max-w-md w-full mx-auto">
+              
+              {/* Logo */}
+              <div className="flex flex-col items-center justify-center mb-10 animate-slide-in-from-top">
+                <div className="flex items-center">
+                    <h2 className="text-3xl font-bold tracking-wider text-text-light-primary dark:text-text-dark-primary font-azonix">
+                    MEDBRAVE
+                    </h2>
+                </div>
+                <p className="mt-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                  Bem-vindo de volta! Por favor, faça login na sua conta.
                 </p>
               </div>
-            )}
 
-            {/* Campo Email */}
-            <AdminInput
-              label="Email"
-              type="email"
-              icon="mail"
-              placeholder="admin@medbrave.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              disabled={loading}
-            />
+              {/* Error Message */}
+              {error && (
+                <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-600 dark:text-red-400 text-sm animate-fade-in">
+                  {error}
+                </div>
+              )}
 
-            {/* Campo Senha */}
-            <AdminInput
-              label="Senha"
-              type="password"
-              icon="lock"
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              disabled={loading}
-            />
+              <form onSubmit={handleSubmit} className="space-y-6 animate-slide-in-from-bottom">
+                <div className="group">
+                  <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2 group-focus-within:text-primary transition-colors" htmlFor="email">
+                    E-mail
+                  </label>
+                  <input
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none shadow-inner dark:shadow-none focus:shadow-lg"
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="seu@email.com"
+                    required
+                  />
+                </div>
+                <div className="group">
+                  <div className="flex justify-between items-center mb-2">
+                    <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary group-focus-within:text-primary transition-colors" htmlFor="password">
+                        Senha
+                    </label>
+                    <a className="text-sm font-medium text-primary hover:text-primary/80 transition-colors" href="#">
+                        Esqueceu a senha?
+                    </a>
+                  </div>
+                  <input
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none shadow-inner dark:shadow-none focus:shadow-lg"
+                    id="password"
+                    name="password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
 
-            {/* Botão de Login */}
-            <AdminButton
-              type="submit"
-              variant="primary"
-              size="lg"
-              loading={loading}
-              icon={loading ? undefined : 'login'}
-              className="w-full"
-            >
-              {loading ? 'Entrando...' : 'Entrar'}
-            </AdminButton>
+                <button
+                  className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed transform active:scale-95"
+                  type="submit"
+                  disabled={loading}
+                >
+                  {loading ? 'Entrando...' : 'Entrar'}
+                </button>
+              </form>
 
-            {/* Divisor */}
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-border-light dark:border-border-dark"></div>
+              <div className="flex items-center my-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                <hr className="flex-grow border-border-light dark:border-border-dark" />
+                <span className="mx-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">ou</span>
+                <hr className="flex-grow border-border-light dark:border-border-dark" />
               </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-surface-light dark:bg-surface-dark text-text-light-secondary dark:text-text-dark-secondary font-inter">
-                  ou
-                </span>
-              </div>
+
+              <button
+                onClick={handleGoogleLogin}
+                disabled={loading}
+                className="w-full flex items-center justify-center py-3 px-4 border border-border-light dark:border-border-dark rounded-lg text-text-light-primary dark:text-text-dark-primary bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 animate-slide-in-from-bottom"
+                style={{ animationDelay: '0.3s' }}
+              >
+                <svg className="w-5 h-5 mr-3" viewBox="0 0 48 48">
+                  <path d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l8.35 6.53C12.91 13.46 18.06 9.5 24 9.5z" fill="#4285F4"></path>
+                  <path d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6.02C43.91 39.53 46.98 32.68 46.98 24.55z" fill="#34A853"></path>
+                  <path d="M10.91 28.75c-.22-.66-.35-1.36-.35-2.08s.13-1.42.35-2.08l-8.35-6.53C.73 19.25 0 21.55 0 24s.73 4.75 2.56 6.53l8.35-6.53z" fill="#FBBC05"></path>
+                  <path d="M24 48c6.48 0 11.93-2.13 15.89-5.82l-7.73-6.02c-2.11 1.42-4.78 2.27-7.66 2.27-5.94 0-11.09-3.96-12.91-9.35L2.56 34.78C6.51 42.62 14.62 48 24 48z" fill="#EA4335"></path>
+                  <path d="M0 0h48v48H0z" fill="none"></path>
+                </svg>
+                Entrar com Google
+              </button>
+
+              <p className="text-center text-sm text-text-light-secondary dark:text-text-dark-secondary mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                Não tem uma conta? <a className="font-semibold text-primary hover:text-primary/80 transition-colors" href="#">Criar conta</a>
+              </p>
             </div>
-
-            {/* Botão Google */}
-            <AdminButton
-              type="button"
-              variant="outline"
-              size="lg"
-              onClick={handleGoogleLogin}
-              disabled={loading}
-              className="w-full"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-                />
-              </svg>
-              Continuar com Google
-            </AdminButton>
-          </form>
-        </AdminCard>
-
-        {/* Informação Adicional */}
-        <div className="mt-6 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl">
-            <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-xl">
-              info
-            </span>
-            <p className="text-sm text-blue-800 dark:text-blue-300 font-inter">
-              Apenas administradores podem acessar
-            </p>
           </div>
         </div>
       </div>
     </div>
-  );
-}
-
-export default function LoginPage() {
-  return (
-    <Suspense fallback={null}>
-      <LoginContent />
-    </Suspense>
   );
 }

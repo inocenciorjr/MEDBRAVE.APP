@@ -30,11 +30,11 @@ function AuthCallbackContent() {
         // 3. Padrão /admin
         let redirect = searchParams.get('redirect');
         if (!redirect && typeof window !== 'undefined') {
-          redirect = localStorage.getItem('auth_redirect') || '/admin';
+          redirect = localStorage.getItem('auth_redirect') || '/';
           localStorage.removeItem('auth_redirect'); // Limpar após usar
         }
         if (!redirect) {
-          redirect = '/admin';
+          redirect = '/';
         }
 
         if (code) {

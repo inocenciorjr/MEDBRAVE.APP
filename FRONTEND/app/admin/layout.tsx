@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { AdminLayout } from '@/components/admin/layout/AdminLayout';
 import { createClient } from '@/lib/supabase/client';
 
@@ -57,5 +58,9 @@ export default function AdminClientLayout({
     return null;
   }
 
-  return <AdminLayout>{children}</AdminLayout>;
+  return (
+    <PagePlanGuard>
+      <AdminLayout>{children}</AdminLayout>
+    </PagePlanGuard>
+  );
 }

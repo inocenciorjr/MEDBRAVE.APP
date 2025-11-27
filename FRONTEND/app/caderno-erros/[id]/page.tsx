@@ -147,7 +147,7 @@ export default function ReviewErrorNotebookPage() {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Caderno de Erros', icon: 'book', href: '/caderno-erros' },
@@ -157,7 +157,7 @@ export default function ReviewErrorNotebookPage() {
       </div>
 
       <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black pb-48">
-        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8 space-y-6">
 
           {/* Question Header */}
           {fullQuestion && (
@@ -425,7 +425,7 @@ export default function ReviewErrorNotebookPage() {
 
       {/* Botões de Revisão */}
       <div className="fixed bottom-0 left-0 right-0 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-lg border-t border-border-light dark:border-border-dark shadow-2xl z-40">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="px-4 sm:px-6 lg:px-8 py-6">
           <DifficultyButtons
             onSelect={handleReview}
             contentType="ERROR_NOTEBOOK"

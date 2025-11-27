@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import MainLayout from '@/components/layout/MainLayout';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import ResolucaoQuestoesClient from './ResolucaoQuestoesClient';
 
 interface PageProps {
@@ -19,8 +20,10 @@ export default async function ResolucaoQuestoesPage({ params }: PageProps) {
   const { id } = await params;
 
   return (
-    <MainLayout showGreeting={false}>
-      <ResolucaoQuestoesClient id={id} />
-    </MainLayout>
+    <PagePlanGuard>
+      <MainLayout showGreeting={false}>
+        <ResolucaoQuestoesClient id={id} />
+      </MainLayout>
+    </PagePlanGuard>
   );
 }

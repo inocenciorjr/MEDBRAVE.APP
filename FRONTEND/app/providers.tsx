@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { Theme, getInitialTheme, setStoredTheme, applyTheme } from '@/lib/theme';
 import { FocusModeProvider } from '@/lib/contexts/FocusModeContext';
+import { PlanProvider } from '@/contexts/PlanContext';
 
 interface ThemeContextType {
   theme: Theme;
@@ -42,7 +43,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <FocusModeProvider>
-        {children}
+        <PlanProvider>
+          {children}
+        </PlanProvider>
       </FocusModeProvider>
     </ThemeContext.Provider>
   );

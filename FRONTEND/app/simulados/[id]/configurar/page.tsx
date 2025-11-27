@@ -2,6 +2,7 @@
 
 import { use, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { simulatedExamService, SimulatedExam } from '@/services/simulatedExamService';
 import { useToast } from '@/lib/contexts/ToastContext';
@@ -73,9 +74,9 @@ export default function ConfigurarSimuladoPage({ params }: ConfigurarSimuladoPag
   }
 
   return (
-    <>
+    <PagePlanGuard>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Listas de Questões', icon: 'list_alt', href: '/lista-questoes/minhas-listas' },
@@ -85,7 +86,7 @@ export default function ConfigurarSimuladoPage({ params }: ConfigurarSimuladoPag
       </div>
 
       <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="px-4 py-12">
           {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
@@ -95,7 +96,7 @@ export default function ConfigurarSimuladoPage({ params }: ConfigurarSimuladoPag
               {simulado.title}
             </h1>
             {simulado.description && (
-              <p className="text-lg text-text-light-secondary dark:text-text-dark-secondary max-w-2xl mx-auto">
+              <p className="text-lg text-text-light-secondary dark:text-text-dark-secondary">
                 {simulado.description}
               </p>
             )}
@@ -257,6 +258,6 @@ export default function ConfigurarSimuladoPage({ params }: ConfigurarSimuladoPag
           </div>
         </div>
       </div>
-    </>
+    </PagePlanGuard>
   );
 }

@@ -256,7 +256,65 @@ export class SupabaseUserPlanService implements IUserPlanService {
         );
       }
 
-      return data.map((item) => this.mapToEntity(item));
+      // Buscar o nome do plano para cada user_plan e mapear para camelCase
+      const userPlansWithNames = await Promise.all(
+        data.map(async (item: any) => {
+          try {
+            const { data: planData } = await this.supabase
+              .from('plans')
+              .select('name')
+              .eq('id', item.plan_id)
+              .single();
+
+            return {
+              id: item.id,
+              userId: item.user_id,
+              planId: item.plan_id,
+              planName: planData?.name || item.plan_id,
+              status: item.status,
+              startDate: item.start_date,
+              endDate: item.end_date,
+              lastPaymentId: item.last_payment_id,
+              paymentMethod: item.payment_method,
+              autoRenew: item.auto_renew,
+              metadata: item.metadata || {},
+              cancellationReason: item.cancellation_reason,
+              cancelledAt: item.cancelled_at,
+              nextBillingDate: item.next_billing_date,
+              trialEndsAt: item.trial_ends_at,
+              createdAt: item.created_at,
+              updatedAt: item.updated_at,
+              limits: item.limits || {},
+              features: item.features || [],
+            };
+          } catch (err) {
+            logger.warn(`Erro ao buscar nome do plano ${item.plan_id}: ${err}`);
+            return {
+              id: item.id,
+              userId: item.user_id,
+              planId: item.plan_id,
+              planName: item.plan_id,
+              status: item.status,
+              startDate: item.start_date,
+              endDate: item.end_date,
+              lastPaymentId: item.last_payment_id,
+              paymentMethod: item.payment_method,
+              autoRenew: item.auto_renew,
+              metadata: item.metadata || {},
+              cancellationReason: item.cancellation_reason,
+              cancelledAt: item.cancelled_at,
+              nextBillingDate: item.next_billing_date,
+              trialEndsAt: item.trial_ends_at,
+              createdAt: item.created_at,
+              updatedAt: item.updated_at,
+              limits: item.limits || {},
+              features: item.features || [],
+            };
+          }
+        })
+      );
+
+      return userPlansWithNames;
     } catch (error) {
       logger.error(
         `Erro ao buscar planos ativos do usuário ${userId}: ${error}`,

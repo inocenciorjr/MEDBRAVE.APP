@@ -11,8 +11,8 @@ export default function ReviewPlannerPage() {
   const [showScheduleSettings, setShowScheduleSettings] = useState(false);
 
   return (
-    <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <>
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
         <div className="space-y-8">
           {/* Header */}
           <div className="flex items-center justify-between">
@@ -62,6 +62,6 @@ export default function ReviewPlannerPage() {
           window.location.reload();
         }}
       />
-    </div>
+    </>
   );
 }

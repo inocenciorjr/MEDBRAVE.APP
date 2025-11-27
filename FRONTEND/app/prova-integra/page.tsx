@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
+import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import MainLayout from '@/components/layout/MainLayout';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import ExamFilters from '@/components/prova-integra/ExamFilters';
@@ -157,9 +158,10 @@ export default function ProvaIntegraPage() {
   }, [filters, institutions, filterMap]);
 
   return (
-    <MainLayout showGreeting={false}>
+    <PagePlanGuard>
+      <MainLayout showGreeting={false}>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Provas na Íntegra', icon: 'description', href: '/prova-integra' }
@@ -167,9 +169,8 @@ export default function ProvaIntegraPage() {
         />
       </div>
 
-      {/* Background Wrapper */}
-      <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Content */}
+      <div className="w-full py-8">
           {/* Title */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-slate-700 dark:text-slate-200">
@@ -208,7 +209,6 @@ export default function ProvaIntegraPage() {
             </div>
           )}
         </div>
-      </div>
 
       {/* Dropdown Menu Global - Estilo igual aos filtros */}
       {openMenuExamId && selectedExam && typeof window !== 'undefined' && createPortal(
@@ -320,5 +320,6 @@ export default function ProvaIntegraPage() {
         </>
       )}
     </MainLayout>
+    </PagePlanGuard>
   );
 }

@@ -567,10 +567,8 @@ export default function MinhasListasPage() {
 
   if (loadingFolders) {
     return (
-      <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <MinhasListasSkeleton />
-        </div>
+      <div className="w-full py-8">
+        <MinhasListasSkeleton />
       </div>
     );
   }
@@ -609,14 +607,13 @@ export default function MinhasListasPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* Header */}
-          <header className="mb-6">
+      <div className="w-full py-8">
+        {/* Header */}
+        <header className="mb-6">
             <h1 className="text-3xl font-semibold text-slate-700 dark:text-slate-200">
               Listas de Questões
             </h1>
@@ -989,7 +986,6 @@ export default function MinhasListasPage() {
           onClose={() => setSimulatedModal({ isOpen: false, item: null })}
         />
       )}
-      </div>
     </>
   );
 }
