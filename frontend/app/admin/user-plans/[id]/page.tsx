@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { AdminCard } from '@/components/admin/ui/AdminCard';
-import { AdminButton } from '../../../components/admin/ui/AdminButton';
+import { AdminButton } from '@/components/admin/ui/AdminButton';
 import { UserPlanStatusBadge } from '@/components/admin/user-plans/UserPlanStatusBadge';
 import { PaymentMethodBadge } from '@/components/admin/user-plans/PaymentMethodBadge';
 import { CancelUserPlanModal } from '@/components/admin/user-plans/CancelUserPlanModal';
