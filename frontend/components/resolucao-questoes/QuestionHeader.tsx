@@ -144,29 +144,58 @@ export function QuestionHeader({
   };
 
   return (
-    <div className="mb-6">
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-3">
-          <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">
-            Questão {question.questionNumber}
-          </span>
+    <div className="mb-4 md:mb-6">
+      {/* Mobile: Single Row - Question + Institution + Year */}
+      <div className="md:hidden flex items-center justify-between mb-3 gap-2">
+        <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary whitespace-nowrap">
+          Questão {question.questionNumber}
+        </span>
+        
+        <div className="flex items-center gap-1.5 flex-shrink-0">
+          <button
+            className="flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs"
+            aria-label={`Instituição: ${getInstitution()}`}
+          >
+            <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
+            <span className="font-medium truncate max-w-[100px]">{getInstitution()}</span>
+          </button>
           
-          {/* ID da Questão - Discreto (últimos 6 caracteres) */}
-          {question.id && (
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText(question.id);
-                toast.success('ID completo copiado!');
-              }}
-              className="group flex items-center gap-1 px-2 py-0.5 text-xs text-text-light-tertiary dark:text-text-dark-tertiary hover:text-text-light-secondary dark:hover:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark rounded transition-all"
-              title={`ID: ${question.id}\nClique para copiar`}
-            >
-              <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>tag</span>
-              <span className="font-mono">{question.id.slice(-6)}</span>
-              <span className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style={{ fontSize: '12px' }}>content_copy</span>
-            </button>
-          )}
-          
+          <button
+            className="flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs"
+            aria-label={`Ano: ${getYear()}`}
+          >
+            <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>calendar_today</span>
+            <span className="font-medium">{getYear()}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Desktop: Two Rows */}
+      <div className="hidden md:block">
+        {/* First Row: Question Number + ID + Institution + Year */}
+        <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <div className="flex items-center gap-3">
+            <span className="text-base font-medium text-text-light-secondary dark:text-text-dark-secondary">
+              Questão {question.questionNumber}
+            </span>
+            
+            {/* ID da Questão - Desktop only */}
+            {question.id && (
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(question.id);
+                  toast.success('ID completo copiado!');
+                }}
+                className="group flex items-center gap-1 px-2 py-0.5 text-xs text-text-light-tertiary dark:text-text-dark-tertiary hover:text-text-light-secondary dark:hover:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark rounded transition-all"
+                title={`ID: ${question.id}\nClique para copiar`}
+              >
+                <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>tag</span>
+                <span className="font-mono">{question.id.slice(-6)}</span>
+                <span className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style={{ fontSize: '12px' }}>content_copy</span>
+              </button>
+            )}
+          </div>
+            
           <div className="flex items-center gap-2">
             <button
               className="flex items-center gap-2 px-3 py-1.5 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark/20 transition-colors shadow-sm"
@@ -185,27 +214,25 @@ export function QuestionHeader({
             </button>
           </div>
         </div>
-        
-        {!hideFilters && (
-          <div className="flex items-center gap-4">
-            {/* Botão para expandir/recolher filtros */}
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary hover:text-text-light-primary dark:hover:text-text-dark-primary hover:bg-background-light dark:hover:bg-background-dark rounded-md transition-colors"
-              disabled={filterPaths.length === 0}
-            >
-              <span>Filtros {filterPaths.length > 0 ? `(${filterPaths.reduce((total, path) => total + path.length, 0)})` : '(0)'}</span>
-              <span className={`material-symbols-outlined text-base transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
-                expand_more
-              </span>
-            </button>
-            
-            {/* Like/Dislike Counters - Removidos, serão implementados no QuestionView */}
-          </div>
-        )}
       </div>
       
-      {/* Caminhos hierárquicos dos filtros (recolhível) */}
+      {/* Filters Button - Separate Row (Both Mobile and Desktop) */}
+      {!hideFilters && (
+        <div className="flex items-center justify-start mb-2">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary hover:text-text-light-primary dark:hover:text-text-dark-primary hover:bg-background-light dark:hover:bg-background-dark rounded-md transition-colors"
+            disabled={filterPaths.length === 0}
+          >
+            <span>Filtros {filterPaths.length > 0 ? `(${filterPaths.reduce((total, path) => total + path.length, 0)})` : '(0)'}</span>
+            <span className={`material-symbols-outlined text-base transition-transform ${isExpanded ? 'rotate-180' : ''}`}>
+              expand_more
+            </span>
+          </button>
+        </div>
+      )}
+      
+      {/* Caminhos hierárquicos dos filtros (recolhível) com scroll horizontal */}
       {!hideFilters && (
         <>
           <div 
@@ -214,27 +241,30 @@ export function QuestionHeader({
             }`}
           >
             {filterPaths.length > 0 && (
-              <div className="flex flex-col gap-2 ml-4 mb-3 pb-3 border-b border-border-light dark:border-border-dark">
+              <div className="flex flex-col gap-2 mb-3 pb-3 border-b border-border-light dark:border-border-dark">
                 {filterPaths.map((path, pathIndex) => (
                   <div 
                     key={pathIndex} 
-                    className={`flex items-center gap-1.5 text-xs text-text-light-secondary dark:text-text-dark-secondary transition-all duration-300 ease-out overflow-x-auto ${
+                    className={`flex items-center gap-1.5 text-xs text-text-light-secondary dark:text-text-dark-secondary transition-all duration-300 ease-out ${
                       isExpanded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'
                     }`}
                     style={{ 
                       transitionDelay: isExpanded ? `${pathIndex * 50}ms` : '0ms'
                     }}
                   >
-                    {path.map((name, nameIndex) => (
-                      <div key={nameIndex} className="flex items-center gap-1.5 flex-shrink-0">
-                        {nameIndex > 0 && (
-                          <span className="text-text-light-tertiary dark:text-text-dark-tertiary flex-shrink-0">→</span>
-                        )}
-                        <span className="px-2 py-1 bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-text-dark-secondary rounded-md border border-border-light dark:border-border-dark whitespace-nowrap flex-shrink-0">
-                          {name}
-                        </span>
-                      </div>
-                    ))}
+                    {/* Scroll horizontal container */}
+                    <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-hide pb-1 w-full">
+                      {path.map((name, nameIndex) => (
+                        <div key={nameIndex} className="flex items-center gap-1.5 flex-shrink-0">
+                          {nameIndex > 0 && (
+                            <span className="text-text-light-tertiary dark:text-text-dark-tertiary flex-shrink-0">→</span>
+                          )}
+                          <span className="px-2 py-1 bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-text-dark-secondary rounded-md border border-border-light dark:border-border-dark whitespace-nowrap flex-shrink-0 text-xs">
+                            {name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>

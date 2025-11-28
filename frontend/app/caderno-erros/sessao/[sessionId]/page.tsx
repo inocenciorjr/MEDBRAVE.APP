@@ -33,6 +33,7 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [studiedEntries, setStudiedEntries] = useState<Map<string, 'again' | 'hard' | 'good' | 'easy'>>(new Map());
   const [entryStates, setEntryStates] = useState<Map<string, 'again' | 'hard' | 'good' | 'easy'>>(new Map());
+  const [isProcessing, setIsProcessing] = useState(false);
 
   // Iniciar sessão de revisão ao montar
   useEffect(() => {
@@ -163,6 +164,13 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
   };
 
   const handleStudy = async (difficulty: 'again' | 'hard' | 'good' | 'easy') => {
+    // Prevenir cliques múltiplos
+    if (isProcessing) {
+      return;
+    }
+    
+    setIsProcessing(true);
+    
     try {
       const entryId = entryIds[currentIndex];
       
@@ -175,6 +183,7 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       // Navegar IMEDIATAMENTE para próxima entrada ou voltar à lista
       if (currentIndex < entryIds.length - 1) {
         setCurrentIndex(currentIndex + 1);
+        setIsProcessing(false); // Reset para próximo card
       } else {
         toast.success('Todos os itens foram estudados!');
         router.push('/caderno-erros');
@@ -182,6 +191,7 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
     } catch (error) {
       console.error('Erro ao navegar:', error);
       toast.error('Erro ao navegar. Tente novamente.');
+      setIsProcessing(false);
     }
   };
 
@@ -213,10 +223,10 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       </div>
 
       <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="flex gap-6 w-full px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col lg:flex-row gap-6 w-full px-4 sm:px-6 lg:px-8 py-8">
           
           {/* Main Content */}
-          <div className="flex-1 min-w-0 space-y-6">
+          <div className="flex-1 min-w-0 space-y-6 pb-20 lg:pb-0">
 
           {/* Question Header */}
           {fullQuestion && (
@@ -518,6 +528,124 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
             />
           </aside>
 
+        </div>
+      </div>
+
+      {/* Mobile Bottom Navigation */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
+        <div className="flex items-center justify-between px-4 py-3">
+          {/* Previous Button */}
+          <button
+            onClick={() => handleNavigate(currentIndex - 1)}
+            disabled={currentIndex === 0}
+            className="p-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+            aria-label="Entrada anterior"
+          >
+            <span className="material-symbols-outlined text-2xl">chevron_left</span>
+          </button>
+
+          {/* Center: Current Entry + View All Button */}
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-semibold text-text-light-primary dark:text-text-dark-primary">
+              {currentIndex + 1} de {entryIds.length}
+            </span>
+            
+            <button
+              onClick={() => {
+                const modal = document.getElementById('mobile-navigation-modal');
+                if (modal) modal.classList.remove('hidden');
+              }}
+              className="flex items-center gap-2 px-3 py-2 bg-primary text-white rounded-lg font-medium text-sm shadow-lg active:scale-95 transition-all"
+            >
+              <span className="material-symbols-outlined text-lg">apps</span>
+              Ver todas
+            </button>
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={() => handleNavigate(currentIndex + 1)}
+            disabled={currentIndex === entryIds.length - 1}
+            className="p-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+            aria-label="Próxima entrada"
+          >
+            <span className="material-symbols-outlined text-2xl">chevron_right</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation Modal */}
+      <div id="mobile-navigation-modal" className="hidden lg:hidden fixed inset-0 z-50 bg-black/50">
+        <div 
+          className="absolute inset-0" 
+          onClick={() => {
+            const modal = document.getElementById('mobile-navigation-modal');
+            if (modal) modal.classList.add('hidden');
+          }}
+        />
+        <div className="absolute bottom-0 left-0 right-0 bg-surface-light dark:bg-surface-dark rounded-t-2xl max-h-[80vh] overflow-y-auto animate-slide-up">
+          {/* Modal Header */}
+          <div className="sticky top-0 bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark px-4 py-3 flex items-center justify-between z-10">
+            <h3 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary">
+              Navegação
+            </h3>
+            <button
+              onClick={() => {
+                const modal = document.getElementById('mobile-navigation-modal');
+                if (modal) modal.classList.add('hidden');
+              }}
+              className="p-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors"
+            >
+              <span className="material-symbols-outlined">close</span>
+            </button>
+          </div>
+
+          {/* Navigation Grid */}
+          <div className="p-4">
+            <div className="mb-4 flex items-center justify-between p-3 bg-background-light dark:bg-background-dark rounded-lg border border-border-light dark:border-border-dark">
+              <div className="flex items-center gap-2">
+                {entryStates.size > 0 && (
+                  <div className="flex items-center gap-1">
+                    <div className="w-3 h-3 rounded-sm bg-green-500"></div>
+                    <span className="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary">
+                      {entryStates.size}
+                    </span>
+                  </div>
+                )}
+              </div>
+              <span className="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary">
+                {entryStates.size}/{entryIds.length}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-5 gap-3">
+              {entryIds.map((id, index) => {
+                const isStudied = entryStates.has(id);
+                const isActive = index === currentIndex;
+                
+                return (
+                  <button
+                    key={id}
+                    onClick={() => {
+                      handleNavigate(index);
+                      const modal = document.getElementById('mobile-navigation-modal');
+                      if (modal) modal.classList.add('hidden');
+                    }}
+                    className={`flex items-center justify-center w-full h-10 rounded-md font-semibold transition-all border-2 ${
+                      isStudied
+                        ? 'border-green-500 text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-950/20'
+                        : 'border-border-light dark:border-border-dark text-text-light-secondary dark:text-text-dark-secondary bg-background-light dark:bg-background-dark'
+                    } ${
+                      isActive ? 'ring-2 ring-primary ring-offset-2 dark:ring-offset-surface-dark scale-105' : ''
+                    }`}
+                    aria-label={`Entrada ${index + 1}`}
+                  >
+                    {index + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
 

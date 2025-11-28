@@ -18,6 +18,7 @@ interface FlashcardReviewViewProps {
 
 export function FlashcardReviewView({ flashcards, reviewIds, onComplete }: FlashcardReviewViewProps) {
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
   
   const {
     currentCard,
@@ -40,9 +41,17 @@ export function FlashcardReviewView({ flashcards, reviewIds, onComplete }: Flash
   // Reset card to front when moving to next/previous card
   useEffect(() => {
     resetCard();
+    setIsProcessing(false); // Reset processing state
   }, [currentIndex, resetCard]);
 
   const handleDifficultySelect = async (difficulty: Difficulty) => {
+    // Prevenir cliques múltiplos
+    if (isProcessing) {
+      return;
+    }
+    
+    setIsProcessing(true);
+    
     // Submeter review em background sem bloquear a UI
     submitReview(currentCard.id, difficulty).catch((error) => {
       console.error('Erro ao submeter review:', error);

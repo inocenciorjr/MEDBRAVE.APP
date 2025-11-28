@@ -126,13 +126,13 @@ export function QuestionBody({
             <span className="material-symbols-outlined text-xl">flag</span>
           </button>
 
-          {/* Focus Mode Toggle */}
+          {/* Focus Mode Toggle - Hidden on mobile */}
           {onToggleFocusMode && (
             <>
-              <div className="w-px h-6 bg-border-light dark:bg-border-dark" />
+              <div className="hidden md:block w-px h-6 bg-border-light dark:bg-border-dark" />
               <button
                 onClick={onToggleFocusMode}
-                className={`p-2 rounded-lg transition-colors ${
+                className={`hidden md:block p-2 rounded-lg transition-colors ${
                   isFocusMode
                     ? 'bg-primary text-white'
                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark/20'

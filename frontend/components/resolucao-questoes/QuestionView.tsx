@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Question, ToolMode } from '@/types/resolucao-questoes';
 import { useQuestionState } from '@/lib/hooks/useQuestionState';
 import { useFocusMode } from '@/lib/contexts/FocusModeContext';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 import { QuestionHeader } from './QuestionHeader';
 import { QuestionBody } from './QuestionBody';
 import { Alternatives } from './Alternatives';
@@ -13,6 +14,7 @@ import { NavigationPanel } from './NavigationPanel';
 import { StylesPanel } from './StylesPanel';
 import { QuestionStylesPanel } from './QuestionStylesPanel';
 import { ActionBar } from './ActionBar';
+import { MobileBottomNav } from './MobileBottomNav';
 import { SummaryModal } from './modals/SummaryModal';
 import { CommentsModal } from './modals/CommentsModal';
 import { ReportModal } from './modals/ReportModal';
@@ -33,6 +35,7 @@ interface QuestionViewProps {
 }
 
 export function QuestionView({ question, questionList, listId, onNavigate, isSimulatedMode = false, isActiveReview = false, reviewSessionId }: QuestionViewProps) {
+  const isMobile = useIsMobile();
 
   const {
     state,
@@ -342,7 +345,8 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
               </div>
             )}
 
-            {!isFocusMode && (
+            {/* Desktop Navigation Buttons */}
+            {!isFocusMode && !isMobile && (
               <div className="mt-12 pt-6 border-t border-border-light dark:border-border-dark">
                 <NavigationButtons
                   onPrevious={goToPrevious}
@@ -352,33 +356,39 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
                 />
               </div>
             )}
+            
+            {/* Mobile: Add padding for bottom nav */}
+            {isMobile && <div className="h-20" />}
           </div>
 
+          {/* Desktop ActionBar - Hidden on mobile */}
           {!isSimulatedMode && (
-            <ActionBar
-              key={`actionbar-${question.id}-${notebookRefreshTrigger}`}
-              onSummary={() => setShowSummaryModal(true)}
-              onErrorNotebook={async () => {
-                // Buscar entry existente antes de abrir o modal
-                try {
-                  const data = await errorNotebookService.getUserEntries({});
-                  const existing = data.entries.find(entry => entry.question_id === question.id);
-                  setExistingNotebookEntry(existing || null);
-                } catch (error) {
-                  console.error('Erro ao buscar entry:', error);
-                  setExistingNotebookEntry(null);
-                }
-                setShowErrorNotebookModal(true);
-              }}
-              onComments={() => setShowCommentsModal(true)}
-              isAnswered={state.isAnswered}
-              questionId={question.id}
-            />
+            <div className="hidden md:block">
+              <ActionBar
+                key={`actionbar-${question.id}-${notebookRefreshTrigger}`}
+                onSummary={() => setShowSummaryModal(true)}
+                onErrorNotebook={async () => {
+                  // Buscar entry existente antes de abrir o modal
+                  try {
+                    const data = await errorNotebookService.getUserEntries({});
+                    const existing = data.entries.find(entry => entry.question_id === question.id);
+                    setExistingNotebookEntry(existing || null);
+                  } catch (error) {
+                    console.error('Erro ao buscar entry:', error);
+                    setExistingNotebookEntry(null);
+                  }
+                  setShowErrorNotebookModal(true);
+                }}
+                onComments={() => setShowCommentsModal(true)}
+                isAnswered={state.isAnswered}
+                questionId={question.id}
+              />
+            </div>
           )}
         </main>
 
-        {/* Focus Mode Navigation Buttons - Floating outside card */}
-        {isFocusMode && (
+        {/* Focus Mode Navigation Buttons - Floating outside card (Desktop only) */}
+        {isFocusMode && !isMobile && (
           <>
             {canGoPrevious && (
               <button
@@ -402,8 +412,8 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
         )}
       </div>
 
-      {/* Sidebar - Hidden in Focus Mode with animation */}
-      <aside className={`flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
+      {/* Sidebar - Hidden in Focus Mode and Mobile */}
+      <aside className={`hidden lg:block flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
         }`}>
         <NavigationPanel
           questions={questionList}
@@ -419,6 +429,36 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
           isAnswered={state.isAnswered}
         />
       </aside>
+
+      {/* Mobile Bottom Navigation */}
+      {isMobile && !isFocusMode && (
+        <MobileBottomNav
+          onPrevious={goToPrevious}
+          onNext={goToNext}
+          canGoPrevious={canGoPrevious}
+          canGoNext={canGoNext}
+          currentIndex={currentIndex}
+          totalQuestions={questionList.length}
+          questionList={questionList}
+          questionStates={questionStates}
+          onNavigate={goToQuestion}
+          onSummary={!isSimulatedMode ? () => setShowSummaryModal(true) : undefined}
+          onErrorNotebook={!isSimulatedMode ? async () => {
+            try {
+              const data = await errorNotebookService.getUserEntries({});
+              const existing = data.entries.find(entry => entry.question_id === question.id);
+              setExistingNotebookEntry(existing || null);
+            } catch (error) {
+              console.error('Erro ao buscar entry:', error);
+              setExistingNotebookEntry(null);
+            }
+            setShowErrorNotebookModal(true);
+          } : undefined}
+          onComments={!isSimulatedMode ? () => setShowCommentsModal(true) : undefined}
+          isAnswered={state.isAnswered}
+          isSimulatedMode={isSimulatedMode}
+        />
+      )}
 
       {/* Modals */}
       <SummaryModal

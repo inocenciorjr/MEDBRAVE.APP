@@ -31,7 +31,6 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
     canGoPrevious,
     canGoNext,
     submitReview,
-    reviews,
     isCurrentCardAnswered,
     currentCardAnswer,
   } = useFlashcardSession(flashcards, deck.id, sessionId);
@@ -48,12 +47,15 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
   }, [currentIndex, resetCard]);
 
   const handleDifficultySelect = async (difficulty: Difficulty) => {
-    // Submeter review em background sem bloquear a UI
-    submitReview(currentCard.id, difficulty).catch((error) => {
-      console.error('Erro ao submeter review:', error);
-    });
+    // Prevenir cliques múltiplos - se já está processando, ignorar
+    if (isCurrentCardAnswered) {
+      return;
+    }
     
-    // Ir para o próximo card IMEDIATAMENTE sem esperar o submit
+    // Submeter review (o hook já marca como respondido internamente)
+    await submitReview(currentCard.id, difficulty);
+    
+    // Ir para o próximo card
     if (currentIndex < totalCards - 1) {
       await goToNext();
     } else {

@@ -157,15 +157,16 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
 
   return (
     <div className="w-full space-y-3">
-      {/* Preview text - só mostra quando hover */}
+      {/* Preview text - mostra no hover (desktop) ou sempre (mobile) */}
       <div className="text-center min-h-[24px] flex items-center justify-center">
         {hoveredDifficulty && !loadingPreviews ? (
-          <p className="text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary">
+          <p className="text-xs md:text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary">
             Próxima revisão: {getPreviewText(hoveredDifficulty)}
           </p>
         ) : (
-          <p className="text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary text-center">
-            Passe o mouse para ver o tempo estimado
+          <p className="text-xs md:text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary text-center">
+            <span className="hidden md:inline">Passe o mouse para ver o tempo estimado</span>
+            <span className="md:hidden">Toque em um botão para ver o tempo estimado</span>
           </p>
         )}
       </div>
@@ -176,6 +177,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onClick={() => handleSelect('again')}
           onMouseEnter={() => !disabled && setHoveredDifficulty('again')}
           onMouseLeave={() => setHoveredDifficulty(null)}
+          onTouchStart={() => !disabled && setHoveredDifficulty('again')}
           disabled={disabled}
           className={`bg-red-600 dark:bg-red-600 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
@@ -200,6 +202,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onClick={() => handleSelect('hard')}
           onMouseEnter={() => !disabled && setHoveredDifficulty('hard')}
           onMouseLeave={() => setHoveredDifficulty(null)}
+          onTouchStart={() => !disabled && setHoveredDifficulty('hard')}
           disabled={disabled}
           className={`bg-gray-600 dark:bg-gray-700 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
@@ -224,6 +227,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onClick={() => handleSelect('good')}
           onMouseEnter={() => !disabled && setHoveredDifficulty('good')}
           onMouseLeave={() => setHoveredDifficulty(null)}
+          onTouchStart={() => !disabled && setHoveredDifficulty('good')}
           disabled={disabled}
           className={`bg-purple-500 dark:bg-purple-500 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
@@ -248,6 +252,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onClick={() => handleSelect('easy')}
           onMouseEnter={() => !disabled && setHoveredDifficulty('easy')}
           onMouseLeave={() => setHoveredDifficulty(null)}
+          onTouchStart={() => !disabled && setHoveredDifficulty('easy')}
           disabled={disabled}
           className={`bg-purple-800 dark:bg-purple-900 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2

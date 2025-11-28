@@ -32,6 +32,7 @@ export default function ReviewErrorNotebookPage() {
   const [showProfessorComment, setShowProfessorComment] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [reviewStartTime] = useState(Date.now());
+  const [isProcessing, setIsProcessing] = useState(false);
 
   // Inicializar IDs da URL ou usar apenas o ID atual
   useEffect(() => {
@@ -109,6 +110,13 @@ export default function ReviewErrorNotebookPage() {
   };
 
   const handleReview = async (difficulty: Difficulty) => {
+    // Prevenir cliques múltiplos
+    if (isProcessing) {
+      return;
+    }
+    
+    setIsProcessing(true);
+    
     try {
       const reviewTimeMs = Date.now() - reviewStartTime;
       
@@ -134,6 +142,7 @@ export default function ReviewErrorNotebookPage() {
     } catch (error) {
       console.error('Erro ao registrar revisão:', error);
       toast.error('Erro ao registrar revisão. Tente novamente.');
+      setIsProcessing(false);
     }
   };
 
@@ -158,8 +167,8 @@ export default function ReviewErrorNotebookPage() {
         />
       </div>
 
-      <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black pb-48">
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+      <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8 space-y-6 pb-20 lg:pb-8">
 
           {/* Question Header */}
           {fullQuestion && (
@@ -439,6 +448,127 @@ export default function ReviewErrorNotebookPage() {
           />
         </div>
       </div>
+
+      {/* Mobile Bottom Navigation - Only show if multiple entries */}
+      {entryIds.length > 1 && (
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
+          <div className="flex items-center justify-between px-4 py-3">
+            {/* Previous Button */}
+            <button
+              onClick={() => {
+                if (currentIndex > 0) {
+                  const newIndex = currentIndex - 1;
+                  const newId = entryIds[newIndex];
+                  router.push(`/caderno-erros/${newId}?ids=${entryIds.join(',')}&current=${newIndex}`);
+                }
+              }}
+              disabled={currentIndex === 0}
+              className="p-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+              aria-label="Entrada anterior"
+            >
+              <span className="material-symbols-outlined text-2xl">chevron_left</span>
+            </button>
+
+            {/* Center: Current Entry + View All Button */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-semibold text-text-light-primary dark:text-text-dark-primary">
+                {currentIndex + 1} de {entryIds.length}
+              </span>
+              
+              <button
+                onClick={() => {
+                  const modal = document.getElementById('mobile-navigation-modal');
+                  if (modal) modal.classList.remove('hidden');
+                }}
+                className="flex items-center gap-2 px-3 py-2 bg-primary text-white rounded-lg font-medium text-sm shadow-lg active:scale-95 transition-all"
+              >
+                <span className="material-symbols-outlined text-lg">apps</span>
+                Ver todas
+              </button>
+            </div>
+
+            {/* Next Button */}
+            <button
+              onClick={() => {
+                if (currentIndex < entryIds.length - 1) {
+                  const newIndex = currentIndex + 1;
+                  const newId = entryIds[newIndex];
+                  router.push(`/caderno-erros/${newId}?ids=${entryIds.join(',')}&current=${newIndex}`);
+                }
+              }}
+              disabled={currentIndex === entryIds.length - 1}
+              className="p-2 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+              aria-label="Próxima entrada"
+            >
+              <span className="material-symbols-outlined text-2xl">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Navigation Modal */}
+      {entryIds.length > 1 && (
+        <div id="mobile-navigation-modal" className="hidden lg:hidden fixed inset-0 z-50 bg-black/50">
+          <div 
+            className="absolute inset-0" 
+            onClick={() => {
+              const modal = document.getElementById('mobile-navigation-modal');
+              if (modal) modal.classList.add('hidden');
+            }}
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-surface-light dark:bg-surface-dark rounded-t-2xl max-h-[80vh] overflow-y-auto animate-slide-up">
+            {/* Modal Header */}
+            <div className="sticky top-0 bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark px-4 py-3 flex items-center justify-between z-10">
+              <h3 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary">
+                Navegação
+              </h3>
+              <button
+                onClick={() => {
+                  const modal = document.getElementById('mobile-navigation-modal');
+                  if (modal) modal.classList.add('hidden');
+                }}
+                className="p-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors"
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            </div>
+
+            {/* Navigation Grid */}
+            <div className="p-4">
+              <div className="mb-4 flex items-center justify-between p-3 bg-background-light dark:bg-background-dark rounded-lg border border-border-light dark:border-border-dark">
+                <span className="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary">
+                  Total: {entryIds.length}
+                </span>
+              </div>
+
+              <div className="grid grid-cols-5 gap-3">
+                {entryIds.map((id, index) => {
+                  const isActive = index === currentIndex;
+                  
+                  return (
+                    <button
+                      key={id}
+                      onClick={() => {
+                        router.push(`/caderno-erros/${id}?ids=${entryIds.join(',')}&current=${index}`);
+                        const modal = document.getElementById('mobile-navigation-modal');
+                        if (modal) modal.classList.add('hidden');
+                      }}
+                      className={`flex items-center justify-center w-full h-10 rounded-md font-semibold transition-all border-2 ${
+                        isActive 
+                          ? 'border-primary bg-primary/10 text-primary ring-2 ring-primary ring-offset-2 dark:ring-offset-surface-dark scale-105'
+                          : 'border-border-light dark:border-border-dark text-text-light-secondary dark:text-text-dark-secondary bg-background-light dark:bg-background-dark'
+                      }`}
+                      aria-label={`Entrada ${index + 1}`}
+                    >
+                      {index + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Modal de Edição */}
       {fullQuestion && isEditModalOpen && (

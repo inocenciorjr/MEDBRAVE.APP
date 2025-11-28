@@ -12,21 +12,40 @@ interface MainLayoutProps {
 }
 
 export default function MainLayout({ children, showGreeting = true }: MainLayoutProps) {
+  const { isFocusMode } = useFocusMode();
+  const isMobile = useIsMobile();
+  const [isInitialized, setIsInitialized] = useState(false);
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
-  const { isFocusMode } = useFocusMode();
   const [leaveTimeout, setLeaveTimeout] = useState<NodeJS.Timeout | null>(null);
-  const isMobile = useIsMobile();
+
+  // Initialize after mount to prevent flash
+  useEffect(() => {
+    // Pequeno delay para garantir que tudo está montado
+    const timer = setTimeout(() => {
+      setIsInitialized(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Close mobile sidebar when switching to desktop
   useEffect(() => {
-    if (!isMobile) {
+    if (!isMobile && isInitialized) {
       setIsMobileSidebarOpen(false);
     }
-  }, [isMobile]);
+  }, [isMobile, isInitialized]);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (leaveTimeout) {
+        clearTimeout(leaveTimeout);
+      }
+    };
+  }, [leaveTimeout]);
 
   const handleMouseEnter = () => {
-    if (isMobile) return; // Disable hover on mobile
+    if (!isInitialized || isMobile) return;
     if (leaveTimeout) {
       clearTimeout(leaveTimeout);
       setLeaveTimeout(null);
@@ -35,7 +54,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
   };
 
   const handleMouseLeave = () => {
-    if (isMobile) return; // Disable hover on mobile
+    if (!isInitialized || isMobile) return;
     const timeout = setTimeout(() => {
       setIsSidebarExpanded(false);
     }, 300);
@@ -57,7 +76,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
       )}
 
       {/* Sidebar */}
-      {!isFocusMode && (
+      {!isFocusMode && isInitialized && (
         <>
           {isMobile ? (
             // Mobile Sidebar - Slide from left
