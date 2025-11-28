@@ -37,7 +37,7 @@ export default function MobileSummaryButton({
       {/* Botão Flutuante */}
       <button
         onClick={() => setShowModal(true)}
-        className="lg:hidden fixed bottom-4 right-4 z-40 flex items-center gap-2 px-4 py-3 bg-primary text-white rounded-full shadow-2xl hover:scale-105 transition-transform"
+        className="xl:hidden fixed bottom-4 right-4 z-40 flex items-center gap-2 px-4 py-3 bg-primary text-white rounded-full shadow-2xl hover:scale-105 transition-transform"
       >
         <span className="material-symbols-outlined">summarize</span>
         <span className="font-semibold">Resumo</span>
@@ -50,7 +50,7 @@ export default function MobileSummaryButton({
 
       {/* Modal */}
       {showModal && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
+        <div className="xl:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
           <div 
             className="absolute inset-0" 
             onClick={() => setShowModal(false)}

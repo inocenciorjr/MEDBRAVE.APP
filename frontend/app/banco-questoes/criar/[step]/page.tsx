@@ -101,13 +101,13 @@ function GeralStep() {
   }, [institutionHierarchy, state.selectedInstitutions]);
 
   return (
-    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
+    <div className="space-y-4 md:space-y-6 pb-20 xl:pb-0">
       <StepperProgress currentStep="geral" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
-        <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200 mb-6 md:mb-8">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-8 items-start">
+        <div className="xl:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 xl:p-10">
+            <h1 className="text-xl md:text-2xl xl:text-3xl font-medium text-slate-700 dark:text-slate-200 mb-6 md:mb-8">
               Criar Lista de Questões
             </h1>
 
@@ -148,7 +148,7 @@ function GeralStep() {
         </div>
 
         {/* Desktop: Summary Panel */}
-        <div className="hidden lg:block lg:col-span-2">
+        <div className="hidden xl:block xl:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
@@ -167,7 +167,7 @@ function GeralStep() {
         </div>
       </div>
 
-      {/* Mobile: Botão Flutuante */}
+      {/* Mobile + Tablet: Botão Flutuante */}
       <MobileSummaryButton
         data={{
           listName: state.listName,
@@ -263,14 +263,14 @@ function AssuntosStep() {
   }, [institutionHierarchy, state.selectedInstitutions]);
 
   return (
-    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
+    <div className="space-y-4 md:space-y-6 pb-20 xl:pb-0">
       <StepperProgress currentStep="assuntos" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
-        <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-8 items-start">
+        <div className="xl:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 xl:p-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
+              <h1 className="text-xl md:text-2xl xl:text-3xl font-medium text-slate-700 dark:text-slate-200">
                 Assuntos
               </h1>
               <div className="flex items-center gap-2 md:gap-3">
@@ -317,7 +317,7 @@ function AssuntosStep() {
         </div>
 
         {/* Desktop: Summary Panel */}
-        <div className="hidden lg:block lg:col-span-2">
+        <div className="hidden xl:block xl:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
@@ -336,7 +336,7 @@ function AssuntosStep() {
         </div>
       </div>
 
-      {/* Mobile: Botão Flutuante */}
+      {/* Mobile + Tablet: Botão Flutuante */}
       <MobileSummaryButton
         data={{
           listName: state.listName,
@@ -402,14 +402,14 @@ function AnosStep() {
   );
 
   return (
-    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
+    <div className="space-y-4 md:space-y-6 pb-20 xl:pb-0">
       <StepperProgress currentStep="anos" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
-        <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-8 items-start">
+        <div className="xl:col-span-3">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 xl:p-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
+              <h1 className="text-xl md:text-2xl xl:text-3xl font-medium text-slate-700 dark:text-slate-200">
                 Anos
               </h1>
               <div className="flex items-center gap-2 md:gap-3">
@@ -489,7 +489,7 @@ function AnosStep() {
         </div>
 
         {/* Desktop: Summary Panel */}
-        <div className="hidden lg:block lg:col-span-2">
+        <div className="hidden xl:block xl:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
@@ -508,7 +508,7 @@ function AnosStep() {
         </div>
       </div>
 
-      {/* Mobile: Botão Flutuante */}
+      {/* Mobile + Tablet: Botão Flutuante */}
       <MobileSummaryButton
         data={{
           listName: state.listName,
@@ -774,14 +774,14 @@ function InstituicoesStep() {
 
   return (
     <>
-      <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
+      <div className="space-y-4 md:space-y-6 pb-20 xl:pb-0">
         <StepperProgress currentStep="instituicoes" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
-          <div className="lg:col-span-3">
-            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+        <div className="grid grid-cols-1 xl:grid-cols-5 gap-4 md:gap-8 items-start">
+          <div className="xl:col-span-3">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 xl:p-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
+                <h1 className="text-xl md:text-2xl xl:text-3xl font-medium text-slate-700 dark:text-slate-200">
                   Instituições
                 </h1>
                 <div className="flex items-center gap-2 md:gap-3">
@@ -927,7 +927,7 @@ function InstituicoesStep() {
           </div>
 
           {/* Desktop: Summary Panel */}
-          <div className="hidden lg:block lg:col-span-2">
+          <div className="hidden xl:block xl:col-span-2">
             <SummaryPanel
               data={{
                 listName: state.listName,
@@ -947,7 +947,7 @@ function InstituicoesStep() {
           </div>
         </div>
 
-        {/* Mobile: Botão Flutuante */}
+        {/* Mobile + Tablet: Botão Flutuante */}
         <MobileSummaryButton
           data={{
             listName: state.listName,

@@ -24,7 +24,7 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  // Mobile: Indicador compacto com dots
+  // Mobile + Tablet: Indicador compacto com dots
   if (isMobile) {
     return (
       <div className="w-full mb-6">
