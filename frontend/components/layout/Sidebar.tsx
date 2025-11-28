@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import PremiumBanner from '@/components/ui/PremiumBanner';
+import UserPlanCard from '@/components/ui/UserPlanCard';
 
 interface MenuItem {
   id: string;
@@ -16,6 +16,8 @@ interface MenuItem {
 interface SidebarProps {
   isCollapsed?: boolean;
   onToggle?: () => void;
+  isMobile?: boolean;
+  onClose?: () => void;
 }
 
 const mainMenuItems: MenuItem[] = [
@@ -36,11 +38,11 @@ const secondaryMenuItems: MenuItem[] = [
   { id: 'sair', label: 'Sair', icon: 'logout', href: '/sair' },
 ];
 
-export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: SidebarProps) {
+export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle, isMobile = false, onClose }: SidebarProps) {
   const pathname = usePathname();
 
-  // Usar o estado controlado do pai (MainLayout)
-  const isExpanded = !controlledCollapsed;
+  // Mobile sempre expandido, desktop usa o estado controlado
+  const isExpanded = isMobile ? true : !controlledCollapsed;
 
   // Função para verificar se o item está ativo
   const isItemActive = (href: string) => {
@@ -50,13 +52,32 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
     return pathname?.startsWith(href);
   };
 
+  // Handle link click on mobile - close sidebar
+  const handleLinkClick = () => {
+    if (isMobile && onClose) {
+      onClose();
+    }
+  };
+
   return (
     <aside
-      className={`relative bg-sidebar-light dark:bg-sidebar-dark p-4 rounded-r-2xl flex flex-col justify-between h-screen transition-[width] duration-200 ease-in-out shadow-xl dark:shadow-dark-xl ${isExpanded ? 'w-72' : 'w-20'
-        }`}
+      className={`relative bg-sidebar-light dark:bg-sidebar-dark p-4 flex flex-col justify-between h-screen transition-[width] duration-200 ease-in-out shadow-xl dark:shadow-dark-xl ${
+        isMobile ? 'w-72 rounded-r-2xl' : isExpanded ? 'w-72 rounded-r-2xl' : 'w-20 rounded-r-2xl'
+      }`}
     >
       {/* Top Section */}
       <div>
+        {/* Mobile Close Button */}
+        {isMobile && (
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 p-2 rounded-lg hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark text-text-light-secondary dark:text-text-dark-secondary transition-colors z-10"
+            aria-label="Fechar menu"
+          >
+            <span className="material-symbols-outlined text-2xl">close</span>
+          </button>
+        )}
+
         {/* Logo and Pin Button */}
         <div className="flex flex-col items-center mb-10 relative">
           {/* Logo Image - sempre visível */}
@@ -99,6 +120,7 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
               <li key={item.id}>
                 <Link
                   href={item.href}
+                  onClick={handleLinkClick}
                   className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${isExpanded ? 'gap-3' : 'gap-0 justify-center'
                     } ${isItemActive(item.href)
                       ? 'bg-sidebar-active-light dark:bg-sidebar-active-dark text-primary dark:text-white font-semibold'
@@ -127,6 +149,7 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
               <li key={item.id}>
                 <Link
                   href={item.href}
+                  onClick={handleLinkClick}
                   className={`flex items-center px-4 py-2 rounded-lg transition-all duration-200 ${isExpanded ? 'gap-3' : 'gap-0 justify-center'
                     } text-text-light-secondary dark:text-text-dark-secondary hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark hover:text-primary dark:hover:text-white`}
                   title={!isExpanded ? item.label : undefined}
@@ -145,7 +168,7 @@ export default function Sidebar({ isCollapsed: controlledCollapsed, onToggle }: 
         {/* Premium Banner */}
         {isExpanded && (
           <div className="mt-6">
-            <PremiumBanner />
+            <UserPlanCard />
           </div>
         )}
       </div>

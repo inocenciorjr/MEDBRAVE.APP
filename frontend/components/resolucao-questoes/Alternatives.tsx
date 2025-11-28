@@ -28,7 +28,7 @@ export function Alternatives({
   };
 
   return (
-    <div className="mt-8 space-y-4">
+    <div className="mt-6 md:mt-8 space-y-3 md:space-y-4">
       {alternatives.map((alternative) => (
         <AlternativeItem
           key={alternative.id}
@@ -124,7 +124,7 @@ const AlternativeItem = memo(function AlternativeItem({
     <div className="relative group" suppressHydrationWarning>
       <div
         onClick={!isAnswered ? onSelect : undefined}
-        className={`flex items-center justify-between w-full p-4 rounded-lg shadow-sm transition-all ${getAlternativeClass()} ${
+        className={`flex flex-col sm:flex-row sm:items-center sm:justify-between w-full p-3 md:p-4 rounded-lg shadow-sm transition-all ${getAlternativeClass()} ${
           !isAnswered ? 'cursor-pointer' : 'cursor-default'
         }`}
         role="button"
@@ -138,28 +138,28 @@ const AlternativeItem = memo(function AlternativeItem({
         aria-label={`Alternativa ${alternative.letter}: ${alternative.text}`}
         suppressHydrationWarning
       >
-        <div className="flex items-center gap-4 flex-1">
+        <div className="flex items-start sm:items-center gap-3 md:gap-4 flex-1 min-w-0">
           {/* Letter Badge */}
           <div
-            className={`flex items-center justify-center w-8 h-8 rounded-full font-bold transition-colors flex-shrink-0 ${getLetterClass()}`}
+            className={`flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full font-bold transition-colors flex-shrink-0 text-sm md:text-base ${getLetterClass()}`}
           >
             {isAnswered && isCorrect ? (
-              <span className="material-symbols-outlined text-lg">check</span>
+              <span className="material-symbols-outlined text-base md:text-lg">check</span>
             ) : isAnswered && isSelected && !isCorrect ? (
-              <span className="material-symbols-outlined text-lg">close</span>
+              <span className="material-symbols-outlined text-base md:text-lg">close</span>
             ) : (
               alternative.letter
             )}
           </div>
 
           {/* Alternative Text */}
-          <p className={`text-left flex-1 ${getTextClass()} ${isStrikethrough ? 'line-through opacity-50' : ''}`}>
+          <p className={`text-left flex-1 text-sm md:text-base ${getTextClass()} ${isStrikethrough ? 'line-through opacity-50' : ''}`}>
             {alternative.text}
           </p>
         </div>
 
         {/* Icons Container - Scissors and Percentage */}
-        <div className="flex items-center gap-2 ml-4 flex-shrink-0">
+        <div className="flex items-center gap-2 mt-2 sm:mt-0 sm:ml-4 flex-shrink-0 justify-end sm:justify-start">
           {/* Scissors Button */}
           {!isAnswered && (
             <button
@@ -167,7 +167,7 @@ const AlternativeItem = memo(function AlternativeItem({
                 e.stopPropagation();
                 onToggleStrikethrough();
               }}
-              className={`p-2 rounded-lg transition-all ${
+              className={`p-1.5 md:p-2 rounded-lg transition-all ${
                 isStrikethrough
                   ? 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400'
                   : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/10'
@@ -175,7 +175,7 @@ const AlternativeItem = memo(function AlternativeItem({
               aria-label={isStrikethrough ? 'Remover risco' : 'Riscar alternativa'}
               title={isStrikethrough ? 'Remover risco' : 'Riscar alternativa'}
             >
-              <span className="material-symbols-outlined text-lg" style={{ transform: 'scaleX(-1)' }}>
+              <span className="material-symbols-outlined text-base md:text-lg" style={{ transform: 'scaleX(-1)' }}>
                 cut
               </span>
             </button>
@@ -184,7 +184,7 @@ const AlternativeItem = memo(function AlternativeItem({
           {/* Percentage Badge - Only show after answered */}
           {isAnswered && alternative.percentage !== undefined && (
             <span 
-              className="text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary bg-border-light dark:bg-border-dark px-3 py-1 rounded-full cursor-help"
+              className="text-xs md:text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary bg-border-light dark:bg-border-dark px-2 md:px-3 py-1 rounded-full cursor-help whitespace-nowrap"
               title="Porcentagem de respostas nesta alternativa"
               suppressHydrationWarning
             >

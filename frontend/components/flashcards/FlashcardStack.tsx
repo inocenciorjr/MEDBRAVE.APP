@@ -41,18 +41,18 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
             }}
           >
             {/* Front Header - Estilo igual ao header de DECK */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-6 py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-3">
-              <span className="material-symbols-outlined text-primary text-3xl">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 py-3 md:py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
+              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
                 style
               </span>
-              <span className="text-lg font-semibold text-primary uppercase tracking-wide">
+              <span className="text-base md:text-lg font-semibold text-primary uppercase tracking-wide">
                 Pergunta
               </span>
             </div>
 
             {/* Front Content */}
-            <div className="flex-grow flex flex-col justify-start p-8 min-h-[400px] max-h-[600px] overflow-y-auto">
-              <div className="text-center text-text-light-primary dark:text-text-dark-primary text-lg font-inter w-full max-w-full my-auto">
+            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 min-h-[300px] md:min-h-[400px] max-h-[500px] md:max-h-[600px] overflow-y-auto">
+              <div className="text-center text-text-light-primary dark:text-text-dark-primary text-base md:text-lg font-inter w-full max-w-full my-auto">
                 {card.isHtml ? (
                   <div 
                     dangerouslySetInnerHTML={{ __html: card.front }} 
@@ -67,18 +67,18 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
             {/* Front Breadcrumb */}
             {card.breadcrumb && card.breadcrumb.length > 0 && (
               <div 
-                className="p-4 border-t border-border-light dark:border-border-dark flex justify-between items-center text-sm"
+                className="p-3 md:p-4 border-t border-border-light dark:border-border-dark flex justify-between items-center text-xs md:text-sm"
                 style={{ visibility: showBreadcrumbOnFront ? 'visible' : 'hidden' }}
               >
-                <nav className="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary overflow-hidden whitespace-nowrap">
+                <nav className="flex items-center gap-1 md:gap-2 text-text-light-secondary dark:text-text-dark-secondary overflow-x-auto whitespace-nowrap scrollbar-hide">
                   {card.breadcrumb.map((item, index) => (
-                    <span key={index} className="flex items-center gap-2">
+                    <span key={index} className="flex items-center gap-1 md:gap-2 flex-shrink-0">
                       {index > 0 && (
-                        <span className="material-symbols-outlined text-base flex-shrink-0">
+                        <span className="material-symbols-outlined text-sm md:text-base flex-shrink-0">
                           chevron_right
                         </span>
                       )}
-                      <span className={`truncate ${index === card.breadcrumb.length - 1
+                      <span className={`truncate max-w-[100px] md:max-w-none ${index === card.breadcrumb.length - 1
                         ? 'text-text-light-primary dark:text-text-dark-primary font-medium'
                         : ''
                         }`}>
@@ -102,18 +102,18 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
             }}
           >
             {/* Back Header - Estilo igual ao header de DECK */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-6 py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-3">
-              <span className="material-symbols-outlined text-primary text-3xl">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 py-3 md:py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
+              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
                 style
               </span>
-              <span className="text-lg font-semibold text-primary uppercase tracking-wide">
+              <span className="text-base md:text-lg font-semibold text-primary uppercase tracking-wide">
                 Resposta
               </span>
             </div>
 
             {/* Back Content */}
-            <div className="flex-grow flex flex-col justify-start p-8 min-h-[400px] max-h-[600px] overflow-y-auto">
-              <div className="text-center text-text-light-primary dark:text-text-dark-primary text-lg font-inter w-full max-w-full my-auto">
+            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 min-h-[300px] md:min-h-[400px] max-h-[500px] md:max-h-[600px] overflow-y-auto">
+              <div className="text-center text-text-light-primary dark:text-text-dark-primary text-base md:text-lg font-inter w-full max-w-full my-auto">
                 {card.isHtml ? (
                   <div 
                     dangerouslySetInnerHTML={{ __html: card.back }} 
@@ -127,16 +127,16 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
 
             {/* Back Breadcrumb */}
             {card.breadcrumb && card.breadcrumb.length > 0 && (
-              <div className="p-4 border-t border-border-light dark:border-border-dark flex justify-between items-center text-sm">
-                <nav className="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary overflow-hidden whitespace-nowrap">
+              <div className="p-3 md:p-4 border-t border-border-light dark:border-border-dark flex justify-between items-center text-xs md:text-sm">
+                <nav className="flex items-center gap-1 md:gap-2 text-text-light-secondary dark:text-text-dark-secondary overflow-x-auto whitespace-nowrap scrollbar-hide">
                   {card.breadcrumb.map((item, index) => (
-                    <span key={index} className="flex items-center gap-2">
+                    <span key={index} className="flex items-center gap-1 md:gap-2 flex-shrink-0">
                       {index > 0 && (
-                        <span className="material-symbols-outlined text-base flex-shrink-0">
+                        <span className="material-symbols-outlined text-sm md:text-base flex-shrink-0">
                           chevron_right
                         </span>
                       )}
-                      <span className={`truncate ${index === card.breadcrumb.length - 1
+                      <span className={`truncate max-w-[100px] md:max-w-none ${index === card.breadcrumb.length - 1
                         ? 'text-text-light-primary dark:text-text-dark-primary font-medium'
                         : ''
                         }`}>

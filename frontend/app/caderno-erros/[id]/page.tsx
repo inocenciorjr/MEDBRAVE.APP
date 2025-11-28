@@ -121,14 +121,16 @@ export default function ReviewErrorNotebookPage() {
       };
       
       const grade = gradeMap[difficulty];
-      await errorNotebookService.recordReview(entryId, grade, reviewTimeMs);
       
-      toast.success('Revisão registrada com sucesso!');
+      // Registrar review em background sem bloquear a UI
+      errorNotebookService.recordReview(entryId, grade, reviewTimeMs).catch((error) => {
+        console.error('Erro ao registrar revisão:', error);
+        toast.error('Erro ao registrar revisão.');
+      });
       
-      // Redirecionar de volta para o caderno de erros
-      setTimeout(() => {
-        router.push('/caderno-erros');
-      }, 1000);
+      // Redirecionar IMEDIATAMENTE sem esperar o registro
+      toast.success('Revisão registrada!');
+      router.push('/caderno-erros');
     } catch (error) {
       console.error('Erro ao registrar revisão:', error);
       toast.error('Erro ao registrar revisão. Tente novamente.');

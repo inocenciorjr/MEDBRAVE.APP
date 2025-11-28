@@ -43,9 +43,12 @@ export function FlashcardReviewView({ flashcards, reviewIds, onComplete }: Flash
   }, [currentIndex, resetCard]);
 
   const handleDifficultySelect = async (difficulty: Difficulty) => {
-    await submitReview(currentCard.id, difficulty);
+    // Submeter review em background sem bloquear a UI
+    submitReview(currentCard.id, difficulty).catch((error) => {
+      console.error('Erro ao submeter review:', error);
+    });
     
-    // Se não for o último card, ir para o próximo
+    // Ir para o próximo card IMEDIATAMENTE sem esperar o submit
     if (currentIndex < totalCards - 1) {
       await goToNext();
     } else {

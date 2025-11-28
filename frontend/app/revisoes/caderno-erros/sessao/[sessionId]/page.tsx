@@ -241,42 +241,50 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       setReviewedEntries(prev => new Map(prev).set(entryId, difficulty));
       setEntryStates(prev => new Map(prev).set(entryId, difficulty));
       
-      // Usar endpoint unificado de revisões (igual flashcards)
-      await fetchWithAuth('/unified-reviews/record', {
-        method: 'POST',
-        body: JSON.stringify({
-          content_type: 'ERROR_NOTEBOOK',
-          content_id: entryId,
-          grade: grade,
-          review_time_ms: reviewTimeMs,
+      // Registrar revisão e atualizar progresso em background sem bloquear a UI
+      Promise.all([
+        fetchWithAuth('/unified-reviews/record', {
+          method: 'POST',
+          body: JSON.stringify({
+            content_type: 'ERROR_NOTEBOOK',
+            content_id: entryId,
+            grade: grade,
+            review_time_ms: reviewTimeMs,
+          }),
         }),
+        fetchWithAuth(`/api/review-sessions/${sessionId}/progress`, {
+          method: 'PUT',
+          body: JSON.stringify({
+            current_index: currentIndex + 1,
+            completed_ids: [...Array.from(reviewedEntries.keys()), entryId],
+          }),
+        })
+      ]).catch((error) => {
+        console.error('Erro ao registrar revisão:', error);
+        // Remover da lista de revisados em caso de erro
+        setReviewedEntries(prev => {
+          const newMap = new Map(prev);
+          newMap.delete(entryId);
+          return newMap;
+        });
+        setEntryStates(prev => {
+          const newMap = new Map(prev);
+          newMap.delete(entryId);
+          return newMap;
+        });
       });
       
-      // Atualizar progresso da sessão
-      await fetchWithAuth(`/api/review-sessions/${sessionId}/progress`, {
-        method: 'PUT',
-        body: JSON.stringify({
-          current_index: currentIndex + 1,
-          completed_ids: [...Array.from(reviewedEntries.keys()), entryId],
-        }),
-      });
+      toast.success('Revisão registrada!');
       
-      toast.success('Revisão registrada com sucesso!');
-      
-      // Aguardar um pouco para o usuário ver o feedback visual
-      setTimeout(() => {
-        // Navegar para próxima entrada ou voltar ao planner
-        if (currentIndex < entryIds.length - 1) {
-          setCurrentIndex(currentIndex + 1);
-          // Resetar o timer para a próxima entrada
-          reviewStartTime.current = Date.now();
-        } else {
-          toast.success('Todas as revisões foram concluídas!');
-          setTimeout(() => {
-            router.push('/revisoes');
-          }, 1000);
-        }
-      }, 500);
+      // Navegar IMEDIATAMENTE para próxima entrada ou voltar ao planner
+      if (currentIndex < entryIds.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+        // Resetar o timer para a próxima entrada
+        reviewStartTime.current = Date.now();
+      } else {
+        toast.success('Todas as revisões foram concluídas!');
+        router.push('/revisoes');
+      }
     } catch (error) {
       console.error('Erro ao registrar revisão:', error);
       toast.error('Erro ao registrar revisão. Tente novamente.');

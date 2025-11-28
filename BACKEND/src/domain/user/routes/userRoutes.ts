@@ -44,6 +44,39 @@ export function createUserRoutes(): Router {
         return res.status(404).json({ error: "User not found" });
       }
 
+      // Buscar plano ativo do usuário
+      let activePlan = null;
+      const { data: userPlans, error: planError } = await supabase
+        .from("user_plans")
+        .select(`
+          id,
+          plan_id,
+          status,
+          start_date,
+          end_date,
+          plans (
+            id,
+            name
+          )
+        `)
+        .eq("user_id", userId)
+        .ilike("status", "active")
+        .order("created_at", { ascending: false })
+        .limit(1);
+
+      if (!planError && userPlans && userPlans.length > 0) {
+        const plan = userPlans[0];
+        activePlan = {
+          id: plan.id,
+          planId: plan.plan_id,
+          planName: (plan.plans as any)?.name || 'Plano Desconhecido',
+          status: plan.status,
+          startDate: plan.start_date,
+          endDate: plan.end_date,
+          isTrial: (plan.plans as any)?.name?.includes('TRIAL') || false,
+        };
+      }
+
       // Formatar resposta no formato esperado pelo frontend
       const formattedUser = {
         id: userData.id,
@@ -51,6 +84,7 @@ export function createUserRoutes(): Router {
         role: userData.role || "STUDENT",
         displayName: userData.display_name || userData.displayName || userData.email || "Usuário sem nome",
         photoURL: userData.photo_url || userData.photoURL || null,
+        activePlan,
       };
 
       return res.status(200).json(formattedUser);

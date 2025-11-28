@@ -9,6 +9,8 @@ interface HeaderProps {
   userAvatar?: string;
   notificationCount?: number;
   showGreeting?: boolean;
+  onMenuClick?: () => void;
+  showMenuButton?: boolean;
 }
 
 const motivationalQuotes = [
@@ -19,7 +21,7 @@ const motivationalQuotes = [
   'Viva com propósito, lute com fé, vença com persistência.',
 ];
 
-export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true }: HeaderProps) {
+export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true, onMenuClick, showMenuButton = false }: HeaderProps) {
   const [quote, setQuote] = useState('');
   const [userName, setUserName] = useState(propUserName || 'Usuário');
   const [userAvatar, setUserAvatar] = useState(propUserAvatar || '');
@@ -65,23 +67,36 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
   };
 
   return (
-    <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-      {showGreeting && (
-        <div>
-          <h1 className="text-2xl md:text-3xl font-semibold text-slate-700 dark:text-slate-200 mb-2">
+    <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 md:mb-8 gap-4">
+      <div className="flex items-center gap-4 w-full md:w-auto">
+        {/* Mobile Menu Button */}
+        {showMenuButton && onMenuClick && (
+          <button
+            onClick={onMenuClick}
+            className="p-2 rounded-lg hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark text-text-light-secondary dark:text-text-dark-secondary transition-colors"
+            aria-label="Abrir menu"
+          >
+            <span className="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        )}
+
+        {showGreeting && (
+          <div className="flex-1">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-700 dark:text-slate-200 mb-1 md:mb-2">
             {loading ? (
               <span className="inline-block w-48 h-8 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></span>
             ) : (
               `Olá, ${userName}`
             )}
           </h1>
-          <p className="text-sm md:text-base font-light text-text-light-secondary dark:text-text-dark-secondary italic">
-            {quote}
-          </p>
-        </div>
-      )}
+            <p className="text-xs md:text-sm lg:text-base font-light text-text-light-secondary dark:text-text-dark-secondary italic line-clamp-2 md:line-clamp-none">
+              {quote}
+            </p>
+          </div>
+        )}
+      </div>
       
-      <div className={`flex items-center gap-3 md:gap-6 ${!showGreeting ? 'ml-auto' : ''}`}>
+      <div className={`flex items-center gap-3 md:gap-6 ${!showGreeting && !showMenuButton ? 'ml-auto' : 'ml-auto md:ml-0'}`}>
         {/* Theme Toggle Button */}
         <ThemeToggle />
 

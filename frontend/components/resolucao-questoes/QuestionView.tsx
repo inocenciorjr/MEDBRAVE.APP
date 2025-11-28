@@ -50,11 +50,11 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   const loadQuestionStates = useCallback(() => {
     const states = new Map<string, 'correct' | 'incorrect' | 'unanswered' | 'answered'>();
     const storageKeyPrefix = listId ? `question_state_${listId}_` : 'question_state_';
-    
+
     // Carregar estados de TODAS as questões, INCLUINDO placeholders
     questionList.forEach(q => {
       if (!q?.id) return;
-      
+
       // NÃO ignorar placeholders - tentar carregar o estado mesmo assim
       try {
         const saved = localStorage.getItem(`${storageKeyPrefix}${q.id}`);
@@ -77,16 +77,16 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
         states.set(q.id, 'unanswered');
       }
     });
-    
+
     setQuestionStates(states);
   }, [questionList, listId]);
 
   useEffect(() => {
     loadQuestionStates();
-    
+
     // Listener para mudanças no localStorage (quando usuário seleciona alternativa)
     window.addEventListener('storage', loadQuestionStates);
-    
+
     return () => {
       window.removeEventListener('storage', loadQuestionStates);
     };
@@ -110,7 +110,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
 
   const goToQuestion = (indexOrId: number | string) => {
     if (!onNavigate) return;
-    
+
     // Se for string (ID), encontrar o índice
     if (typeof indexOrId === 'string') {
       const index = questionList.findIndex(q => q?.id === indexOrId);
@@ -131,7 +131,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   const [existingNotebookEntry, setExistingNotebookEntry] = useState<any>(null);
   const [updateNotes, setUpdateNotes] = useState<any[]>([]);
   const [notebookRefreshTrigger, setNotebookRefreshTrigger] = useState(0);
-  
+
   const { isFocusMode, setIsFocusMode } = useFocusMode();
 
   // Carregar estatísticas de alternativas após responder
@@ -175,7 +175,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
 
   const handleConfirmAnswer = async () => {
     const isCorrect = state.selectedAlternative === question.correctAlternative;
-    
+
     // Salvar resposta no backend
     if (listId && state.selectedAlternative) {
       try {
@@ -194,14 +194,14 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
           try {
             const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
             const currentQuestionIndex = questionList.findIndex(q => q.id === question.id);
-            
+
             await fetchWithAuth(`/api/review-sessions/${reviewSessionId}/progress`, {
               method: 'PATCH',
-              body: JSON.stringify({ 
-                current_index: currentQuestionIndex + 1 
+              body: JSON.stringify({
+                current_index: currentQuestionIndex + 1
               }),
             });
-            
+
             console.log('✅ Progresso da sessão de revisão atualizado');
           } catch (error) {
             console.error('❌ Erro ao atualizar progresso da sessão:', error);
@@ -211,9 +211,9 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
         console.error('Erro ao salvar resposta:', error);
       }
     }
-    
+
     confirmAnswer();
-    
+
     // Recarregar estados após confirmar resposta (para atualizar NavigationPanel)
     setTimeout(() => {
       loadQuestionStates();
@@ -225,194 +225,191 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   };
 
   return (
-    <div className={`flex gap-6 transition-all duration-500 ease-in-out ${
-      !isFocusMode ? 'w-full max-w-[1600px] mx-auto' : 'w-full justify-center'
-    }`}>
-      {/* Main Content Wrapper with Buttons */}
-      <div className={`relative transition-all duration-500 ease-in-out ${
-        !isFocusMode ? 'flex-1 min-w-0' : 'max-w-7xl'
+    <div className={`flex flex-col lg:flex-row gap-4 md:gap-6 transition-all duration-500 ease-in-out ${!isFocusMode ? 'w-full max-w-[1600px] mx-auto' : 'w-full justify-center'
       }`}>
-        <main className="relative w-full min-w-[280px] sm:min-w-[600px] bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl flex flex-col overflow-y-auto transition-all duration-500 ease-in-out">
-        <div className="p-8 flex-grow">
-          <QuestionHeader
-            question={question}
-            likes={question.likes}
-            dislikes={question.dislikes}
-            hideFilters={isSimulatedMode}
-          />
+      {/* Main Content Wrapper with Buttons */}
+      <div className={`relative transition-all duration-500 ease-in-out ${!isFocusMode ? 'flex-1 min-w-0' : 'max-w-7xl w-full'
+        }`}>
+        <main className="relative w-full bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl flex flex-col overflow-y-auto transition-all duration-500 ease-in-out">
+          <div className="p-4 md:p-6 lg:p-8 flex-grow">
+            <QuestionHeader
+              question={question}
+              likes={question.likes}
+              dislikes={question.dislikes}
+              hideFilters={isSimulatedMode}
+            />
 
-          <QuestionBody
-            question={question}
-            toolMode={toolMode}
-            onToolModeChange={setToolMode}
-            highlights={state.highlights}
-            onAddHighlight={addHighlight}
-            onRemoveHighlight={removeHighlight}
-            isFocusMode={isFocusMode}
-            onToggleFocusMode={toggleFocusMode}
-          />
+            <QuestionBody
+              question={question}
+              toolMode={toolMode}
+              onToolModeChange={setToolMode}
+              highlights={state.highlights}
+              onAddHighlight={addHighlight}
+              onRemoveHighlight={removeHighlight}
+              isFocusMode={isFocusMode}
+              onToggleFocusMode={toggleFocusMode}
+            />
 
-          {/* Aviso de questão não respondida */}
-          {state.isAnswered && state.selectedAlternative === '__NOT_ANSWERED__' && (
-            <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-300 dark:border-yellow-600 rounded-lg">
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-yellow-600 dark:text-yellow-400 text-2xl">
-                  info
-                </span>
-                <div>
-                  <p className="font-semibold text-yellow-800 dark:text-yellow-200">
-                    Questão não respondida
-                  </p>
-                  <p className="text-sm text-yellow-700 dark:text-yellow-300">
-                    Você não marcou nenhuma alternativa nesta questão durante o simulado.
-                  </p>
+            {/* Aviso de questão não respondida */}
+            {state.isAnswered && state.selectedAlternative === '__NOT_ANSWERED__' && (
+              <div className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-300 dark:border-yellow-600 rounded-lg">
+                <div className="flex items-center gap-3">
+                  <span className="material-symbols-outlined text-yellow-600 dark:text-yellow-400 text-2xl">
+                    info
+                  </span>
+                  <div>
+                    <p className="font-semibold text-yellow-800 dark:text-yellow-200">
+                      Questão não respondida
+                    </p>
+                    <p className="text-sm text-yellow-700 dark:text-yellow-300">
+                      Você não marcou nenhuma alternativa nesta questão durante o simulado.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
+            <Alternatives
+              alternatives={question.alternatives.map(alt => ({
+                ...alt,
+                percentage: isSimulatedMode ? undefined : alternativeStats[alt.id]
+              }))}
+              selectedAlternative={state.selectedAlternative === '__NOT_ANSWERED__' ? null : state.selectedAlternative}
+              isAnswered={isSimulatedMode ? false : state.isAnswered}
+              correctAlternative={question.correctAlternative}
+              onSelect={selectAlternative}
+            />
+
+            {/* Confirm Button - Oculto no modo simulado */}
+            {!isSimulatedMode && !state.isAnswered && state.selectedAlternative && (
+              <div className="mt-6 md:mt-8 flex justify-end">
+                <button
+                  onClick={handleConfirmAnswer}
+                  className="w-full md:w-auto bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-primary/90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-surface-dark"
+                >
+                  Confirmar Resposta
+                </button>
+              </div>
+            )}
+
+            {/* Alertas de Questão Anulada/Desatualizada */}
+            {state.isAnswered && (question.isAnnulled || question.isOutdated) && (
+              <div className="mt-6 md:mt-8 space-y-3">
+                {question.isAnnulled && (
+                  <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 dark:border-red-400 rounded-lg p-3 md:p-4 shadow-md">
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <span className="material-symbols-outlined text-red-600 dark:text-red-400 text-xl md:text-2xl flex-shrink-0">
+                        cancel
+                      </span>
+                      <h4 className="text-base md:text-lg font-bold text-red-800 dark:text-red-300">
+                        Questão Anulada
+                      </h4>
+                    </div>
+                  </div>
+                )}
+
+                {question.isOutdated && (
+                  <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 dark:border-purple-400 rounded-lg p-3 md:p-4 shadow-md">
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <span className="material-symbols-outlined text-purple-600 dark:text-purple-400 text-xl md:text-2xl flex-shrink-0">
+                        schedule
+                      </span>
+                      <h4 className="text-base md:text-lg font-bold text-purple-800 dark:text-purple-300">
+                        Questão Desatualizada
+                      </h4>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Notas de Atualização */}
+            {state.isAnswered && updateNotes.length > 0 && (
+              <div className="mt-8">
+                {updateNotes.map((note) => (
+                  <UpdateNoteAlert key={note.id} note={note} />
+                ))}
+              </div>
+            )}
+
+            {/* Card de histórico - aparece após responder */}
+            {state.isAnswered && !isSimulatedMode && (
+              <div className="mt-8">
+                <QuestionHistoryCard
+                  questionId={question.id}
+                  isAnswered={state.isAnswered}
+                />
+              </div>
+            )}
+
+            {!isFocusMode && (
+              <div className="mt-12 pt-6 border-t border-border-light dark:border-border-dark">
+                <NavigationButtons
+                  onPrevious={goToPrevious}
+                  onNext={goToNext}
+                  canGoPrevious={canGoPrevious}
+                  canGoNext={canGoNext}
+                />
+              </div>
+            )}
+          </div>
+
+          {!isSimulatedMode && (
+            <ActionBar
+              key={`actionbar-${question.id}-${notebookRefreshTrigger}`}
+              onSummary={() => setShowSummaryModal(true)}
+              onErrorNotebook={async () => {
+                // Buscar entry existente antes de abrir o modal
+                try {
+                  const data = await errorNotebookService.getUserEntries({});
+                  const existing = data.entries.find(entry => entry.question_id === question.id);
+                  setExistingNotebookEntry(existing || null);
+                } catch (error) {
+                  console.error('Erro ao buscar entry:', error);
+                  setExistingNotebookEntry(null);
+                }
+                setShowErrorNotebookModal(true);
+              }}
+              onComments={() => setShowCommentsModal(true)}
+              isAnswered={state.isAnswered}
+              questionId={question.id}
+            />
           )}
+        </main>
 
-          <Alternatives
-            alternatives={question.alternatives.map(alt => ({
-              ...alt,
-              percentage: isSimulatedMode ? undefined : alternativeStats[alt.id]
-            }))}
-            selectedAlternative={state.selectedAlternative === '__NOT_ANSWERED__' ? null : state.selectedAlternative}
-            isAnswered={isSimulatedMode ? false : state.isAnswered}
-            correctAlternative={question.correctAlternative}
-            onSelect={selectAlternative}
-          />
-
-          {/* Confirm Button - Oculto no modo simulado */}
-          {!isSimulatedMode && !state.isAnswered && state.selectedAlternative && (
-            <div className="mt-8 flex justify-end">
+        {/* Focus Mode Navigation Buttons - Floating outside card */}
+        {isFocusMode && (
+          <>
+            {canGoPrevious && (
               <button
-                onClick={handleConfirmAnswer}
-                className="bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-primary/90 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-surface-dark"
+                onClick={goToPrevious}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all flex items-center justify-center z-50"
+                aria-label="Questão anterior"
               >
-                Confirmar Resposta
+                <span className="material-symbols-outlined text-2xl">chevron_left</span>
               </button>
-            </div>
-          )}
-
-          {/* Alertas de Questão Anulada/Desatualizada */}
-          {state.isAnswered && (question.isAnnulled || question.isOutdated) && (
-            <div className="mt-8 space-y-3">
-              {question.isAnnulled && (
-                <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 dark:border-red-400 rounded-lg p-4 shadow-md">
-                  <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-red-600 dark:text-red-400 text-2xl flex-shrink-0">
-                      cancel
-                    </span>
-                    <h4 className="text-lg font-bold text-red-800 dark:text-red-300">
-                      Questão Anulada
-                    </h4>
-                  </div>
-                </div>
-              )}
-              
-              {question.isOutdated && (
-                <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 dark:border-purple-400 rounded-lg p-4 shadow-md">
-                  <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-purple-600 dark:text-purple-400 text-2xl flex-shrink-0">
-                      schedule
-                    </span>
-                    <h4 className="text-lg font-bold text-purple-800 dark:text-purple-300">
-                      Questão Desatualizada
-                    </h4>
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Notas de Atualização */}
-          {state.isAnswered && updateNotes.length > 0 && (
-            <div className="mt-8">
-              {updateNotes.map((note) => (
-                <UpdateNoteAlert key={note.id} note={note} />
-              ))}
-            </div>
-          )}
-
-          {/* Card de histórico - aparece após responder */}
-          {state.isAnswered && !isSimulatedMode && (
-            <div className="mt-8">
-              <QuestionHistoryCard 
-                questionId={question.id} 
-                isAnswered={state.isAnswered}
-              />
-            </div>
-          )}
-
-          {!isFocusMode && (
-            <div className="mt-12 pt-6 border-t border-border-light dark:border-border-dark">
-              <NavigationButtons
-                onPrevious={goToPrevious}
-                onNext={goToNext}
-                canGoPrevious={canGoPrevious}
-                canGoNext={canGoNext}
-              />
-            </div>
-          )}
-        </div>
-
-        {!isSimulatedMode && (
-          <ActionBar
-            key={`actionbar-${question.id}-${notebookRefreshTrigger}`}
-            onSummary={() => setShowSummaryModal(true)}
-            onErrorNotebook={async () => {
-              // Buscar entry existente antes de abrir o modal
-              try {
-                const data = await errorNotebookService.getUserEntries({});
-                const existing = data.entries.find(entry => entry.question_id === question.id);
-                setExistingNotebookEntry(existing || null);
-              } catch (error) {
-                console.error('Erro ao buscar entry:', error);
-                setExistingNotebookEntry(null);
-              }
-              setShowErrorNotebookModal(true);
-            }}
-            onComments={() => setShowCommentsModal(true)}
-            isAnswered={state.isAnswered}
-            questionId={question.id}
-          />
+            )}
+            {canGoNext && (
+              <button
+                onClick={goToNext}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all flex items-center justify-center z-50"
+                aria-label="Próxima questão"
+              >
+                <span className="material-symbols-outlined text-2xl">chevron_right</span>
+              </button>
+            )}
+          </>
         )}
-      </main>
-
-      {/* Focus Mode Navigation Buttons - Floating outside card */}
-      {isFocusMode && (
-        <>
-          {canGoPrevious && (
-            <button
-              onClick={goToPrevious}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all flex items-center justify-center z-50"
-              aria-label="Questão anterior"
-            >
-              <span className="material-symbols-outlined text-2xl">chevron_left</span>
-            </button>
-          )}
-          {canGoNext && (
-            <button
-              onClick={goToNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all flex items-center justify-center z-50"
-              aria-label="Próxima questão"
-            >
-              <span className="material-symbols-outlined text-2xl">chevron_right</span>
-            </button>
-          )}
-        </>
-      )}
       </div>
 
       {/* Sidebar - Hidden in Focus Mode with animation */}
-      <aside className={`flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${
-        isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
-      }`}>
+      <aside className={`flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
+        }`}>
         <NavigationPanel
           questions={questionList}
           currentQuestionId={question.id}
           showEnunciado={true}
-          onToggleEnunciado={() => {}}
+          onToggleEnunciado={() => { }}
           onQuestionClick={goToQuestion}
           questionStates={questionStates}
         />

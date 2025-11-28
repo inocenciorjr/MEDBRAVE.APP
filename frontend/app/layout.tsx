@@ -5,6 +5,7 @@ import { ThemeProvider, QueryProvider } from "./providers";
 import { AuthProvider } from "@/lib/contexts/AuthContext";
 import { ToastProvider } from "@/lib/contexts/ToastContext";
 import { ToastContainer } from "@/components/ui/ToastContainer";
+import { UserProvider } from "@/contexts/UserContext";
 
 const ibmPlexSans = IBM_Plex_Sans({
   weight: ['400', '500', '600', '700'],
@@ -57,10 +58,12 @@ export default function RootLayout({
         <QueryProvider>
           <ToastProvider>
             <AuthProvider>
-              <ThemeProvider>
-                {children}
-                <ToastContainer />
-              </ThemeProvider>
+              <UserProvider>
+                <ThemeProvider>
+                  {children}
+                  <ToastContainer />
+                </ThemeProvider>
+              </UserProvider>
             </AuthProvider>
           </ToastProvider>
         </QueryProvider>

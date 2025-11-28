@@ -97,36 +97,34 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
   };
 
   const handleSelect = async (difficulty: Difficulty) => {
-    // Se foi GOOD ou EASY, verificar sequência ANTES de registrar
-    if (difficulty === 'good' || difficulty === 'easy') {
-      try {
-        const response = await fetchWithAuth(
-          `/api/unified-reviews/check-sequence/FLASHCARD/${flashcardId}`
-        );
+    // Registrar resposta IMEDIATAMENTE para não bloquear a UI
+    onSelect(difficulty);
 
-        if (response.ok) {
-          const data = await response.json();
+    // Verificar sequência em background (sem await) apenas para GOOD ou EASY
+    if ((difficulty === 'good' || difficulty === 'easy') && flashcardId) {
+      // Fazer verificação em background sem bloquear
+      fetchWithAuth(
+        `/api/unified-reviews/check-sequence/FLASHCARD/${flashcardId}`
+      )
+        .then(async (response) => {
+          if (response.ok) {
+            const data = await response.json();
 
-          if (data.data.shouldSuggestDelete) {
-            setPendingDifficulty(difficulty);
-            setDeleteInfo({
-              consecutiveCount: data.data.consecutiveCount,
-              grade: data.data.grade,
-              scheduledDays: data.data.scheduledDays || 0,
-            });
-            setShowDeleteModal(true);
-            // Não registrar ainda - esperar decisão do usuário
-            return;
+            if (data.data.shouldSuggestDelete) {
+              setPendingDifficulty(difficulty);
+              setDeleteInfo({
+                consecutiveCount: data.data.consecutiveCount,
+                grade: data.data.grade,
+                scheduledDays: data.data.scheduledDays || 0,
+              });
+              setShowDeleteModal(true);
+            }
           }
-        }
-      } catch (error) {
-        console.error('Erro ao verificar sequência:', error);
-        // Em caso de erro, continuar normalmente
-      }
+        })
+        .catch((error) => {
+          console.error('Erro ao verificar sequência:', error);
+        });
     }
-
-    // Registrar resposta
-    await onSelect(difficulty);
   };
 
   const handleDelete = async () => {
@@ -172,14 +170,14 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
         )}
       </div>
 
-      <footer className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <footer className="w-full grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4">
         {/* Não lembrei - Vermelho */}
         <button
           onClick={() => handleSelect('again')}
           onMouseEnter={() => !disabled && setHoveredDifficulty('again')}
           onMouseLeave={() => setHoveredDifficulty(null)}
           disabled={disabled}
-          className={`bg-red-600 dark:bg-red-600 text-white font-semibold py-4 px-4 rounded-2xl 
+          className={`bg-red-600 dark:bg-red-600 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'again' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -191,9 +189,9 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
                      }`}
           aria-label="Não lembrei - revisar novamente em breve"
         >
-          <div className="flex flex-col items-center justify-center gap-2">
-            <span className="material-symbols-outlined text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>refresh</span>
-            <span className="text-sm font-bold leading-tight text-center">Não lembrei!</span>
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
+            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>refresh</span>
+            <span className="text-xs md:text-sm font-bold leading-tight text-center">Não lembrei!</span>
           </div>
         </button>
 
@@ -203,7 +201,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseEnter={() => !disabled && setHoveredDifficulty('hard')}
           onMouseLeave={() => setHoveredDifficulty(null)}
           disabled={disabled}
-          className={`bg-gray-600 dark:bg-gray-700 text-white font-semibold py-4 px-4 rounded-2xl 
+          className={`bg-gray-600 dark:bg-gray-700 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'hard' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -215,9 +213,9 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
                      }`}
           aria-label="Lembrei, mas achei difícil - revisar em alguns dias"
         >
-          <div className="flex flex-col items-center justify-center gap-2">
-            <span className="material-symbols-outlined text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_flat</span>
-            <span className="text-sm font-bold leading-tight text-center">Lembrei, mas achei difícil!</span>
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
+            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_flat</span>
+            <span className="text-xs md:text-sm font-bold leading-tight text-center">Lembrei, mas achei difícil!</span>
           </div>
         </button>
 
@@ -227,7 +225,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseEnter={() => !disabled && setHoveredDifficulty('good')}
           onMouseLeave={() => setHoveredDifficulty(null)}
           disabled={disabled}
-          className={`bg-purple-500 dark:bg-purple-500 text-white font-semibold py-4 px-4 rounded-2xl 
+          className={`bg-purple-500 dark:bg-purple-500 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'good' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -239,9 +237,9 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
                      }`}
           aria-label="Quase consolidado na mente - revisar em uma semana"
         >
-          <div className="flex flex-col items-center justify-center gap-2">
-            <span className="material-symbols-outlined text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_up</span>
-            <span className="text-sm font-bold leading-tight text-center">Quase consolidado na mente...</span>
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
+            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_up</span>
+            <span className="text-xs md:text-sm font-bold leading-tight text-center">Quase consolidado na mente...</span>
           </div>
         </button>
 
@@ -251,7 +249,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseEnter={() => !disabled && setHoveredDifficulty('easy')}
           onMouseLeave={() => setHoveredDifficulty(null)}
           disabled={disabled}
-          className={`bg-purple-800 dark:bg-purple-900 text-white font-semibold py-4 px-4 rounded-2xl 
+          className={`bg-purple-800 dark:bg-purple-900 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'easy' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -263,9 +261,9 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
                      }`}
           aria-label="Acertei com confiança - revisar em várias semanas"
         >
-          <div className="flex flex-col items-center justify-center gap-2">
-            <span className="material-symbols-outlined text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>check_circle</span>
-            <span className="text-sm font-bold leading-tight text-center">Acertei com confiança!</span>
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
+            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>check_circle</span>
+            <span className="text-xs md:text-sm font-bold leading-tight text-center">Acertei com confiança!</span>
           </div>
         </button>
       </footer>

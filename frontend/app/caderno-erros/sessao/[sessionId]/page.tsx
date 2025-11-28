@@ -172,18 +172,13 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       
       toast.success('Estudado!');
       
-      // Aguardar um pouco para o usuário ver o feedback visual
-      setTimeout(() => {
-        // Navegar para próxima entrada ou voltar à lista
-        if (currentIndex < entryIds.length - 1) {
-          setCurrentIndex(currentIndex + 1);
-        } else {
-          toast.success('Todos os itens foram estudados!');
-          setTimeout(() => {
-            router.push('/caderno-erros');
-          }, 1000);
-        }
-      }, 500);
+      // Navegar IMEDIATAMENTE para próxima entrada ou voltar à lista
+      if (currentIndex < entryIds.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        toast.success('Todos os itens foram estudados!');
+        router.push('/caderno-erros');
+      }
     } catch (error) {
       console.error('Erro ao navegar:', error);
       toast.error('Erro ao navegar. Tente novamente.');
