@@ -488,7 +488,8 @@ function AnosStep() {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
+        {/* Desktop: Summary Panel */}
+        <div className="hidden lg:block lg:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
