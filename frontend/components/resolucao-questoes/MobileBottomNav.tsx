@@ -41,8 +41,8 @@ export function MobileBottomNav({
 
   return (
     <>
-      {/* Fixed Bottom Navigation Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
+      {/* Fixed Bottom Navigation Bar - Mobile + Tablet */}
+      <div className="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
         <div className="flex items-center justify-between px-4 py-3">
           {/* Previous Button */}
           <button
@@ -94,7 +94,7 @@ export function MobileBottomNav({
 
       {/* Navigation Modal */}
       {showNavigationModal && (
-        <div className="md:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
+        <div className="xl:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
           <div 
             className="absolute inset-0" 
             onClick={() => setShowNavigationModal(false)}
@@ -138,7 +138,7 @@ export function MobileBottomNav({
 
       {/* Actions Modal */}
       {showActionsModal && (
-        <div className="md:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
+        <div className="xl:hidden fixed inset-0 z-50 bg-black/50 flex items-end">
           <div 
             className="absolute inset-0" 
             onClick={() => setShowActionsModal(false)}

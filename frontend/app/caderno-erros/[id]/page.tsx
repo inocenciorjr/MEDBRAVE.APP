@@ -449,9 +449,9 @@ export default function ReviewErrorNotebookPage() {
         </div>
       </div>
 
-      {/* Mobile Bottom Navigation - Only show if multiple entries */}
+      {/* Mobile + Tablet Bottom Navigation - Only show if multiple entries */}
       {entryIds.length > 1 && (
-        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
+        <div className="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
           <div className="flex items-center justify-between px-4 py-3">
             {/* Previous Button */}
             <button
@@ -506,9 +506,9 @@ export default function ReviewErrorNotebookPage() {
         </div>
       )}
 
-      {/* Mobile Navigation Modal */}
+      {/* Mobile + Tablet Navigation Modal */}
       {entryIds.length > 1 && (
-        <div id="mobile-navigation-modal" className="hidden lg:hidden fixed inset-0 z-50 bg-black/50">
+        <div id="mobile-navigation-modal" className="hidden xl:hidden fixed inset-0 z-50 bg-black/50">
           <div 
             className="absolute inset-0" 
             onClick={() => {

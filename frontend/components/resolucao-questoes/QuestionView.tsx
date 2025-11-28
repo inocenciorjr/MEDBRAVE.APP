@@ -189,13 +189,14 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
 
     // Salvar resposta no backend em BACKGROUND sem bloquear UI
     if (listId && state.selectedAlternative) {
+      const selectedAltId = state.selectedAlternative; // Captura o valor não-null
       (async () => {
         try {
           const { saveQuestionResponse } = await import('@/lib/api/questions');
           await saveQuestionResponse({
             questionId: question.id,
             questionListId: listId,
-            selectedAlternativeId: state.selectedAlternative,
+            selectedAlternativeId: selectedAltId,
             isCorrect,
             responseTimeSeconds: 0, // TODO: Implementar timer
             isActiveReview, // Passa se é revisão ativa para usar study_mode correto
@@ -366,7 +367,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
 
           {/* Desktop ActionBar - Hidden on mobile */}
           {!isSimulatedMode && (
-            <div className="hidden md:block">
+            <div className="hidden xl:block">
               <ActionBar
                 key={`actionbar-${question.id}-${notebookRefreshTrigger}`}
                 onSummary={() => setShowSummaryModal(true)}
@@ -415,8 +416,8 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
         )}
       </div>
 
-      {/* Sidebar - Hidden in Focus Mode and Mobile */}
-      <aside className={`hidden lg:block flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
+      {/* Sidebar - Hidden in Focus Mode, Mobile and Tablet */}
+      <aside className={`hidden xl:block flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
         }`}>
         <NavigationPanel
           questions={questionList}

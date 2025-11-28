@@ -129,10 +129,10 @@ export function QuestionBody({
           {/* Focus Mode Toggle - Hidden on mobile */}
           {onToggleFocusMode && (
             <>
-              <div className="hidden md:block w-px h-6 bg-border-light dark:bg-border-dark" />
+              <div className="hidden xl:block w-px h-6 bg-border-light dark:bg-border-dark" />
               <button
                 onClick={onToggleFocusMode}
-                className={`hidden md:block p-2 rounded-lg transition-colors ${
+                className={`hidden xl:block p-2 rounded-lg transition-colors ${
                   isFocusMode
                     ? 'bg-primary text-white'
                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark/20'

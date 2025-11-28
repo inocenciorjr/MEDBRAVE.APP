@@ -531,8 +531,8 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Mobile Bottom Navigation */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
+      {/* Mobile + Tablet Bottom Navigation */}
+      <div className="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-light dark:bg-surface-dark border-t-2 border-border-light dark:border-border-dark shadow-2xl">
         <div className="flex items-center justify-between px-4 py-3">
           {/* Previous Button */}
           <button
@@ -574,8 +574,8 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* Mobile Navigation Modal */}
-      <div id="mobile-navigation-modal" className="hidden lg:hidden fixed inset-0 z-50 bg-black/50">
+      {/* Mobile + Tablet Navigation Modal */}
+      <div id="mobile-navigation-modal" className="hidden xl:hidden fixed inset-0 z-50 bg-black/50">
         <div 
           className="absolute inset-0" 
           onClick={() => {

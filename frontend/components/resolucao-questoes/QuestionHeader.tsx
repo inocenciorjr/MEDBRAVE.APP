@@ -145,8 +145,8 @@ export function QuestionHeader({
 
   return (
     <div className="mb-4 md:mb-6">
-      {/* Mobile: Single Row - Question + Institution + Year */}
-      <div className="md:hidden flex items-center justify-between mb-3 gap-2">
+      {/* Mobile + Tablet: Single Row - Question + Institution + Year */}
+      <div className="xl:hidden flex items-center justify-between mb-3 gap-2">
         <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary whitespace-nowrap">
           Questão {question.questionNumber}
         </span>
@@ -171,7 +171,7 @@ export function QuestionHeader({
       </div>
 
       {/* Desktop: Two Rows */}
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         {/* First Row: Question Number + ID + Institution + Year */}
         <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
           <div className="flex items-center gap-3">
