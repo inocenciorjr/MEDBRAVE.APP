@@ -241,7 +241,8 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         const endMinute = savedEvent?.end_minute ?? 0;
         
         // Verificar se a tarefa está atrasada (data anterior a hoje e não completada)
-        const taskDate = days[dayIndex];
+        const taskDate = new Date(weekDays[dayIndex]);
+        taskDate.setHours(0, 0, 0, 0);
         const today = new Date();
         today.setHours(0, 0, 0, 0);
         const isOverdue = taskDate < today && savedEvent?.status !== 'completed';
@@ -250,10 +251,9 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         const taskColor = isOverdue ? 'red' : getColorByContentType(contentType);
         
         // SEMPRE usar reviews.length como fonte de verdade (FSRS)
-        // O total_count do banco pode estar desatualizado
-        // Somar pendentes + completados para ter o total real
+        // Mostrar apenas revisões PENDENTES, não somar com completadas
         const completedCount = typeData?.completed_count || savedEvent?.completed_count || 0;
-        const totalCount = reviews.length + completedCount;
+        const totalCount = reviews.length; // Apenas pendentes!
         
 
         // Combinar IDs de revisões pendentes e completadas
@@ -266,7 +266,11 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         newEvents.push({
           id: savedEvent?.id || `grouped-${dayIndex}-${contentType}`,
           title: getGroupedTitle(contentType),
-          subtitle: savedEvent?.status === 'completed' ? 'Concluído' : `${totalCount} itens`,
+          subtitle: savedEvent?.status === 'completed' 
+            ? 'Concluído' 
+            : totalCount > 0 
+              ? `${totalCount} ${totalCount === 1 ? 'item' : 'itens'}` 
+              : 'Sem revisões',
           start_hour: startHour,
           start_minute: startMinute,
           end_hour: endHour,
@@ -317,9 +321,11 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         
         if (!alreadyAdded) {
           // Adicionar evento sem revisões pendentes (completado ou sem revisões)
+          const eventDateCopy = new Date(eventDate);
+          eventDateCopy.setHours(0, 0, 0, 0);
           const today = new Date();
           today.setHours(0, 0, 0, 0);
-          const isOverdue = eventDate < today && event.status !== 'completed';
+          const isOverdue = eventDateCopy < today && event.status !== 'completed';
           const taskColor = isOverdue ? 'red' : getColorByContentType(contentType);
           
           console.log(`[Planner] Adicionando evento salvo sem revisões pendentes: ${contentType} em ${event.date} (status: ${event.status})`);

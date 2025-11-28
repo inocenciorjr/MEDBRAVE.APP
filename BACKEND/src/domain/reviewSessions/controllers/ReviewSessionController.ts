@@ -191,30 +191,30 @@ export class ReviewSessionController {
       const { supabase } = await import('../../../config/supabaseAdmin');
       
       // Buscar os cards da sessão para obter suas datas de due
+      // IMPORTANTE: session.review_ids contém IDs de fsrs_cards, não content_id
+      // Usando supabaseAdmin (service role) que bypassa RLS
       const { data: cards, error } = await supabase
         .from('fsrs_cards')
-        .select('content_id, due')
-        .eq('user_id', userId)
-        .eq('content_type', session.content_type)
-        .in('content_id', session.review_ids);
+        .select('id, content_id, due')
+        .in('id', session.review_ids);
 
       if (error || !cards) {
         console.error('Erro ao buscar cards da sessão:', error);
         return;
       }
 
-      // Agrupar cards por data de due
+      // Agrupar cards por data de due (usando ID do fsrs_card)
       const cardsByDate: Record<string, string[]> = {};
       cards.forEach(card => {
         const dueDate = new Date(card.due).toISOString().split('T')[0];
         if (!cardsByDate[dueDate]) {
           cardsByDate[dueDate] = [];
         }
-        cardsByDate[dueDate].push(card.content_id);
+        cardsByDate[dueDate].push(card.id); // Usar ID do fsrs_card, não content_id
       });
 
       // Atualizar progresso para cada data
-      for (const [date, cardIds] of Object.entries(cardsByDate)) {
+      for (const [date, fsrsCardIds] of Object.entries(cardsByDate)) {
         const plannerEvent = await this.plannerService.getEventByDateAndType(
           userId,
           date,
@@ -223,11 +223,12 @@ export class ReviewSessionController {
 
         if (plannerEvent) {
           // Contar quantos cards desta data foram completados
-          const completedCount = cardIds.filter(id => 
+          // Agora comparando IDs corretos (fsrs_card.id com session.completed_ids)
+          const completedCount = fsrsCardIds.filter(id => 
             session.completed_ids.includes(id)
           ).length;
 
-          const totalCount = cardIds.length;
+          const totalCount = fsrsCardIds.length;
 
           await this.plannerService.updateProgress(
             userId,

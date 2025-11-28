@@ -90,8 +90,31 @@ export default function FlashcardsRevisaoPage({ params }: { params: Promise<{ se
         }
 
         // Os review_ids são os IDs dos cards FSRS, precisamos buscar os content_ids
-        cardIds = reviewSession.review_ids;
-        console.log('🔍 Usando sessão do backend:', cardIds.length);
+        const fsrsCardIds = reviewSession.review_ids;
+        console.log('🔍 IDs dos cards FSRS:', fsrsCardIds.length);
+        
+        // Buscar os content_ids dos cards FSRS via API (evita problemas de RLS)
+        const fsrsResponse = await fetch(`/api/fsrs/cards/content-ids`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ cardIds: fsrsCardIds }),
+        });
+        
+        if (!fsrsResponse.ok) {
+          throw new Error('Erro ao buscar content_ids dos cards FSRS');
+        }
+        
+        const fsrsResult = await fsrsResponse.json();
+        
+        if (!fsrsResult.success || !fsrsResult.data) {
+          throw new Error('Erro ao buscar content_ids');
+        }
+        
+        cardIds = fsrsResult.data.contentIds;
+        console.log('🔍 IDs dos flashcards (content_ids):', cardIds.length);
       } else {
         // Comportamento padrão: buscar revisões de hoje
         const today = new Date().toISOString().split('T')[0];

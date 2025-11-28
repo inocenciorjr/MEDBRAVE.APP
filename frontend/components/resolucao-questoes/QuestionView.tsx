@@ -179,48 +179,51 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   const handleConfirmAnswer = async () => {
     const isCorrect = state.selectedAlternative === question.correctAlternative;
 
-    // Salvar resposta no backend
-    if (listId && state.selectedAlternative) {
-      try {
-        const { saveQuestionResponse } = await import('@/lib/api/questions');
-        await saveQuestionResponse({
-          questionId: question.id,
-          questionListId: listId,
-          selectedAlternativeId: state.selectedAlternative,
-          isCorrect,
-          responseTimeSeconds: 0, // TODO: Implementar timer
-          isActiveReview, // Passa se é revisão ativa para usar study_mode correto
-        });
-
-        // Se for revisão ativa com sessionId, atualizar progresso da sessão
-        if (isActiveReview && reviewSessionId) {
-          try {
-            const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
-            const currentQuestionIndex = questionList.findIndex(q => q.id === question.id);
-
-            await fetchWithAuth(`/api/review-sessions/${reviewSessionId}/progress`, {
-              method: 'PATCH',
-              body: JSON.stringify({
-                current_index: currentQuestionIndex + 1
-              }),
-            });
-
-            console.log('✅ Progresso da sessão de revisão atualizado');
-          } catch (error) {
-            console.error('❌ Erro ao atualizar progresso da sessão:', error);
-          }
-        }
-      } catch (error) {
-        console.error('Erro ao salvar resposta:', error);
-      }
-    }
-
+    // Confirmar resposta IMEDIATAMENTE (atualiza UI)
     confirmAnswer();
 
     // Recarregar estados após confirmar resposta (para atualizar NavigationPanel)
     setTimeout(() => {
       loadQuestionStates();
     }, 100);
+
+    // Salvar resposta no backend em BACKGROUND sem bloquear UI
+    if (listId && state.selectedAlternative) {
+      (async () => {
+        try {
+          const { saveQuestionResponse } = await import('@/lib/api/questions');
+          await saveQuestionResponse({
+            questionId: question.id,
+            questionListId: listId,
+            selectedAlternativeId: state.selectedAlternative,
+            isCorrect,
+            responseTimeSeconds: 0, // TODO: Implementar timer
+            isActiveReview, // Passa se é revisão ativa para usar study_mode correto
+          });
+
+          // Se for revisão ativa com sessionId, atualizar progresso da sessão
+          if (isActiveReview && reviewSessionId) {
+            try {
+              const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
+              const currentQuestionIndex = questionList.findIndex(q => q.id === question.id);
+
+              await fetchWithAuth(`/api/review-sessions/${reviewSessionId}/progress`, {
+                method: 'PATCH',
+                body: JSON.stringify({
+                  current_index: currentQuestionIndex + 1
+                }),
+              });
+
+              console.log('✅ Progresso da sessão de revisão atualizado');
+            } catch (error) {
+              console.error('❌ Erro ao atualizar progresso da sessão:', error);
+            }
+          }
+        } catch (error) {
+          console.error('Erro ao salvar resposta:', error);
+        }
+      })();
+    }
   };
 
   const toggleFocusMode = () => {
@@ -356,7 +359,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
                 />
               </div>
             )}
-            
+
             {/* Mobile: Add padding for bottom nav */}
             {isMobile && <div className="h-20" />}
           </div>

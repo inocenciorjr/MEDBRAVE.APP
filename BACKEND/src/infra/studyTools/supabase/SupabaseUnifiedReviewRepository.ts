@@ -520,7 +520,7 @@ implements IUnifiedReviewRepository {
     const contentType = this.detectContentType(card.deck_id);
 
     const baseItem: UnifiedReviewItem = {
-      id: card.content_id,
+      id: card.id,  // ID do card FSRS, não content_id
       user_id: card.user_id,
       content_type: contentType,
       content_id: card.content_id,

@@ -873,6 +873,7 @@ export class UnifiedReviewController {
           logger.error('Erro ao buscar cards revisados:', cardsError);
         } else {
           reviewedItems = (cards || []).map((card: any) => ({
+            id: card.id,  // ID do card FSRS (correto)
             content_id: card.content_id,
             content_type: card.content_type,
             due: card.due,
@@ -1012,7 +1013,7 @@ export class UnifiedReviewController {
             grouped[dateKey][typeKey].completed_reviews = [];
           }
           grouped[dateKey][typeKey].completed_reviews.push({
-            id: item.content_id,
+            id: item.id,  // Usar ID do card FSRS, não content_id
             content_type: item.content_type,
             last_review: item.last_review,
             due: item.due,
