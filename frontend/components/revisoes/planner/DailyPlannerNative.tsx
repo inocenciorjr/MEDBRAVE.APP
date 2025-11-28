@@ -250,10 +250,9 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         // Se atrasada, usar vermelho; senão, usar cor padrão
         const taskColor = isOverdue ? 'red' : getColorByContentType(contentType);
         
-        // SEMPRE usar reviews.length como fonte de verdade (FSRS)
-        // Mostrar apenas revisões PENDENTES, não somar com completadas
+        // Usar dados do planner_events como fonte de verdade
         const completedCount = typeData?.completed_count || savedEvent?.completed_count || 0;
-        const totalCount = reviews.length; // Apenas pendentes!
+        const totalCount = typeData?.count || savedEvent?.total_count || reviews.length;
         
 
         // Combinar IDs de revisões pendentes e completadas
