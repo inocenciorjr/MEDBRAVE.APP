@@ -52,10 +52,10 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
       return;
     }
     
-    // Submeter review (o hook já marca como respondido internamente)
-    await submitReview(currentCard.id, difficulty);
+    // Submeter review em background (sem await para não bloquear UI)
+    submitReview(currentCard.id, difficulty);
     
-    // Ir para o próximo card
+    // Ir para o próximo card IMEDIATAMENTE
     if (currentIndex < totalCards - 1) {
       await goToNext();
     } else {
