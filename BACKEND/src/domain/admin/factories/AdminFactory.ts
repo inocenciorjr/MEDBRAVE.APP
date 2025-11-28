@@ -3,6 +3,7 @@ import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdmi
 import { AdminDashboardService } from '../../../infra/admin/supabase/AdminDashboardService';
 import { SupabaseAuditLogService } from '../../../infra/audit/supabase/SupabaseAuditLogService';
 import { AdminController } from '../controllers/AdminController';
+import { AdminUserController } from '../controllers/AdminUserController';
 import { createAdminRoutes } from '../routes/adminRoutes';
 import { createAdminFlashcardRoutes } from '../routes/adminFlashcardRoutes';
 import { createFlashcardModule } from '../../studyTools/flashcards/factories/createFlashcardModule';
@@ -50,19 +51,21 @@ export class AdminFactory {
     const dashboardService = AdminDashboardService.getInstance();
     const auditService = SupabaseAuditLogService.getInstance();
 
-    // Criar controlador
+    // Criar controladores
     const adminController = new AdminController(
       adminService,
       dashboardService,
       auditService,
     );
+    
+    const adminUserController = new AdminUserController(adminService);
 
     // Criar módulo de flashcards
     const flashcardModule = createFlashcardModule();
     const flashcardController = flashcardModule.controllers.flashcardController;
 
     // Criar rotas
-    const adminRoutes = createAdminRoutes(adminController);
+    const adminRoutes = createAdminRoutes(adminController, adminUserController);
     const flashcardRoutes = createAdminFlashcardRoutes(flashcardController);
 
     // Combinar rotas - ORDEM IMPORTA! Rotas mais específicas primeiro
@@ -77,6 +80,7 @@ export class AdminFactory {
       dashboardService,
       auditService,
       adminController,
+      adminUserController,
       flashcardController,
       useCases: {
         getAllAdminsUseCase,

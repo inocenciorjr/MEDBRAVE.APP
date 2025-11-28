@@ -95,6 +95,17 @@ export interface IUserPlanService {
   ): Promise<UserPlan>;
 
   /**
+   * Atualiza um plano de usuário
+   * @param userPlanId ID do plano de usuário
+   * @param updates Dados a serem atualizados
+   * @returns Plano de usuário atualizado ou null se não encontrado
+   */
+  updateUserPlan(
+    userPlanId: string,
+    updates: any,
+  ): Promise<UserPlan | null>;
+
+  /**
    * Verifica e atualiza o status de planos expirados
    * @returns Resultado da verificação
    */

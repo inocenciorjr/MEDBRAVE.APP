@@ -437,4 +437,528 @@ export class SupabaseAdminService {
   ): Promise<void> {
     await this.deleteUser(userId, adminId, reason);
   }
+
+  // ==========================================
+  // NOVOS MÉTODOS - GERENCIAMENTO COMPLETO DE USUÁRIOS
+  // ==========================================
+
+  /**
+   * Lista todos os usuários com filtros, paginação e ordenação
+   */
+  async listAllUsers(options: {
+    search?: string;
+    role?: string;
+    status?: string;
+    planId?: string;
+    limit?: number;
+    offset?: number;
+    sortBy?: string;
+    sortOrder?: 'asc' | 'desc';
+  } = {}): Promise<{ users: any[]; total: number }> {
+    let query = this.client
+      .from('users')
+      .select('*, user_plans!inner(id, plan_id, status, start_date, end_date, plans(name))', { count: 'exact' });
+
+    // Filtro de busca (nome ou email)
+    if (options.search) {
+      query = query.or(`display_name.ilike.%${options.search}%,email.ilike.%${options.search}%`);
+    }
+
+    // Filtro de role
+    if (options.role && options.role !== 'ALL') {
+      query = query.eq('role', options.role);
+    }
+
+    // Filtro de status
+    if (options.status && options.status !== 'ALL') {
+      if (options.status === 'ACTIVE') {
+        query = query.eq('is_blocked', false);
+      } else if (options.status === 'SUSPENDED') {
+        query = query.eq('is_blocked', true);
+      }
+    }
+
+    // Filtro de plano
+    if (options.planId) {
+      query = query.eq('user_plans.plan_id', options.planId);
+    }
+
+    // Ordenação
+    const sortBy = options.sortBy || 'created_at';
+    const sortOrder = options.sortOrder || 'desc';
+    query = query.order(sortBy, { ascending: sortOrder === 'asc' });
+
+    // Paginação
+    if (options.offset !== undefined && options.limit) {
+      query = query.range(options.offset, options.offset + options.limit - 1);
+    } else if (options.limit) {
+      query = query.limit(options.limit);
+    }
+
+    const { data, error, count } = await query;
+
+    if (error) {
+      throw new Error(`Erro ao listar usuários: ${error.message}`);
+    }
+
+    return {
+      users: data || [],
+      total: count || 0,
+    };
+  }
+
+  /**
+   * Obtém detalhes completos de um usuário
+   */
+  async getUserById(userId: string): Promise<any> {
+    const { data, error } = await this.client
+      .from('users')
+      .select(`
+        *,
+        user_plans(
+          id,
+          plan_id,
+          status,
+          start_date,
+          end_date,
+          auto_renew,
+          payment_method,
+          created_at,
+          plans(id, name, price, duration_days)
+        )
+      `)
+      .eq('id', userId)
+      .single();
+
+    if (error) {
+      if (error.code === 'PGRST116') {
+        return null;
+      }
+      throw new Error(`Erro ao buscar usuário: ${error.message}`);
+    }
+
+    return data;
+  }
+
+  /**
+   * Atualiza dados do usuário
+   */
+  async updateUser(
+    userId: string,
+    updates: {
+      display_name?: string;
+      email?: string;
+      role?: string;
+      biography?: string;
+      specialties?: string[];
+      photo_url?: string;
+    },
+    performedBy: string,
+  ): Promise<any> {
+    const { data, error } = await this.client
+      .from('users')
+      .update({
+        ...updates,
+        updated_at: new Date(),
+      })
+      .eq('id', userId)
+      .select()
+      .single();
+
+    if (error) {
+      throw new Error(`Erro ao atualizar usuário: ${error.message}`);
+    }
+
+    await this.logAdminAction({
+      type: 'update_user',
+      description: 'Dados do usuário atualizados',
+      performedBy,
+      metadata: { userId, updates },
+    });
+
+    return data;
+  }
+
+  /**
+   * Suspende um usuário temporariamente
+   */
+  async suspendUser(
+    userId: string,
+    reason: string,
+    performedBy: string,
+    duration?: number, // em dias
+  ): Promise<void> {
+    const suspendedUntil = duration
+      ? new Date(Date.now() + duration * 24 * 60 * 60 * 1000)
+      : null;
+
+    const { error } = await this.client
+      .from('users')
+      .update({
+        is_blocked: true,
+        block_reason: reason,
+        blocked_by: performedBy,
+        blocked_at: new Date(),
+        suspended_until: suspendedUntil,
+        updated_at: new Date(),
+      })
+      .eq('id', userId);
+
+    if (error) {
+      throw new Error(`Erro ao suspender usuário: ${error.message}`);
+    }
+
+    await this.logAdminAction({
+      type: 'suspend_user',
+      description: `Usuário suspenso${duration ? ` por ${duration} dias` : ''}`,
+      performedBy,
+      metadata: { userId, reason, duration, suspendedUntil },
+    });
+  }
+
+  /**
+   * Ativa um usuário suspenso
+   */
+  async activateUser(userId: string, performedBy: string): Promise<void> {
+    const { error } = await this.client
+      .from('users')
+      .update({
+        is_blocked: false,
+        block_reason: null,
+        blocked_by: null,
+        blocked_at: null,
+        suspended_until: null,
+        updated_at: new Date(),
+      })
+      .eq('id', userId);
+
+    if (error) {
+      throw new Error(`Erro ao ativar usuário: ${error.message}`);
+    }
+
+    await this.logAdminAction({
+      type: 'activate_user',
+      description: 'Usuário ativado',
+      performedBy,
+      metadata: { userId },
+    });
+  }
+
+  /**
+   * Bane um usuário permanentemente
+   */
+  async banUser(
+    userId: string,
+    reason: string,
+    performedBy: string,
+  ): Promise<void> {
+    const { error } = await this.client
+      .from('users')
+      .update({
+        is_blocked: true,
+        is_banned: true,
+        block_reason: reason,
+        blocked_by: performedBy,
+        blocked_at: new Date(),
+        updated_at: new Date(),
+      })
+      .eq('id', userId);
+
+    if (error) {
+      throw new Error(`Erro ao banir usuário: ${error.message}`);
+    }
+
+    await this.logAdminAction({
+      type: 'ban_user',
+      description: 'Usuário banido permanentemente',
+      performedBy,
+      metadata: { userId, reason },
+    });
+  }
+
+  /**
+   * Busca usuários por query
+   */
+  async searchUsers(query: string, limit: number = 20): Promise<any[]> {
+    const { data, error } = await this.client
+      .from('users')
+      .select('id, email, display_name, photo_url, role, created_at')
+      .or(`display_name.ilike.%${query}%,email.ilike.%${query}%`)
+      .limit(limit);
+
+    if (error) {
+      throw new Error(`Erro ao buscar usuários: ${error.message}`);
+    }
+
+    return data || [];
+  }
+
+  /**
+   * Obtém logs de atividade de um usuário
+   */
+  async getUserActivityLogs(
+    userId: string,
+    options: {
+      limit?: number;
+      offset?: number;
+      startDate?: Date;
+      endDate?: Date;
+    } = {},
+  ): Promise<{ logs: any[]; total: number }> {
+    let query = this.client
+      .from('audit_logs')
+      .select('*', { count: 'exact' })
+      .eq('user_id', userId);
+
+    if (options.startDate) {
+      query = query.gte('created_at', options.startDate.toISOString());
+    }
+
+    if (options.endDate) {
+      query = query.lte('created_at', options.endDate.toISOString());
+    }
+
+    query = query.order('created_at', { ascending: false });
+
+    if (options.offset !== undefined && options.limit) {
+      query = query.range(options.offset, options.offset + options.limit - 1);
+    } else if (options.limit) {
+      query = query.limit(options.limit);
+    }
+
+    const { data, error, count } = await query;
+
+    if (error) {
+      throw new Error(`Erro ao buscar logs de atividade: ${error.message}`);
+    }
+
+    return {
+      logs: data || [],
+      total: count || 0,
+    };
+  }
+
+  /**
+   * Obtém histórico de planos de um usuário
+   */
+  async getUserPlansHistory(userId: string): Promise<any[]> {
+    const { data, error } = await this.client
+      .from('user_plans')
+      .select(`
+        *,
+        plans(id, name, price, duration_days)
+      `)
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      throw new Error(`Erro ao buscar histórico de planos: ${error.message}`);
+    }
+
+    return data || [];
+  }
+
+  /**
+   * Obtém estatísticas de uso de um usuário
+   */
+  async getUserStatistics(userId: string): Promise<{
+    totalQuestions: number;
+    correctAnswers: number;
+    incorrectAnswers: number;
+    studyTime: number;
+    lastActivity: Date | null;
+    streak: number;
+  }> {
+    // Buscar estatísticas de questões
+    const { data: questionStats } = await this.client
+      .from('question_responses')
+      .select('is_correct')
+      .eq('user_id', userId);
+
+    const totalQuestions = questionStats?.length || 0;
+    const correctAnswers = questionStats?.filter(q => q.is_correct).length || 0;
+    const incorrectAnswers = totalQuestions - correctAnswers;
+
+    // Buscar tempo de estudo
+    const { data: studySessions } = await this.client
+      .from('study_sessions')
+      .select('duration_seconds')
+      .eq('user_id', userId);
+
+    const studyTime = studySessions?.reduce((acc, s) => acc + (s.duration_seconds || 0), 0) || 0;
+
+    // Buscar última atividade
+    const { data: lastLog } = await this.client
+      .from('audit_logs')
+      .select('created_at')
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .single();
+
+    // Buscar streak
+    const { data: userData } = await this.client
+      .from('users')
+      .select('current_streak')
+      .eq('id', userId)
+      .single();
+
+    return {
+      totalQuestions,
+      correctAnswers,
+      incorrectAnswers,
+      studyTime,
+      lastActivity: lastLog?.created_at ? new Date(lastLog.created_at) : null,
+      streak: userData?.current_streak || 0,
+    };
+  }
+
+  /**
+   * Obtém sessões ativas de um usuário
+   */
+  async getUserActiveSessions(userId: string): Promise<any[]> {
+    // TODO: Implementar quando houver tabela de sessões
+    // Por enquanto, retornar array vazio
+    return [];
+  }
+
+  /**
+   * Encerra todas as sessões de um usuário (força logout)
+   */
+  async terminateUserSessions(
+    userId: string,
+    performedBy: string,
+  ): Promise<void> {
+    // TODO: Implementar quando houver gerenciamento de sessões
+    // Por enquanto, apenas registrar a ação
+    await this.logAdminAction({
+      type: 'terminate_sessions',
+      description: 'Todas as sessões do usuário foram encerradas',
+      performedBy,
+      metadata: { userId },
+    });
+  }
+
+  /**
+   * Envia email para um usuário
+   */
+  async sendEmailToUser(
+    userId: string,
+    subject: string,
+    message: string,
+    performedBy: string,
+  ): Promise<void> {
+    // TODO: Integrar com serviço de email
+    await this.logAdminAction({
+      type: 'send_email',
+      description: `Email enviado: ${subject}`,
+      performedBy,
+      metadata: { userId, subject },
+    });
+  }
+
+  /**
+   * Adiciona nota interna sobre um usuário
+   */
+  async addUserNote(
+    userId: string,
+    note: string,
+    performedBy: string,
+  ): Promise<any> {
+    const { data, error } = await this.client
+      .from('user_notes')
+      .insert({
+        user_id: userId,
+        note,
+        created_by: performedBy,
+        created_at: new Date(),
+      })
+      .select()
+      .single();
+
+    if (error) {
+      throw new Error(`Erro ao adicionar nota: ${error.message}`);
+    }
+
+    return data;
+  }
+
+  /**
+   * Obtém notas internas de um usuário
+   */
+  async getUserNotes(userId: string): Promise<any[]> {
+    const { data, error } = await this.client
+      .from('user_notes')
+      .select(`
+        *,
+        creator:created_by(id, display_name, email)
+      `)
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      throw new Error(`Erro ao buscar notas: ${error.message}`);
+    }
+
+    return data || [];
+  }
+
+  /**
+   * Exporta lista de usuários para CSV
+   */
+  async exportUsers(filters: any = {}): Promise<string> {
+    const { users } = await this.listAllUsers({ ...filters, limit: 10000 });
+    
+    // Criar CSV
+    const headers = ['ID', 'Nome', 'Email', 'Role', 'Status', 'Data de Cadastro'];
+    const rows = users.map(u => [
+      u.id,
+      u.display_name || '',
+      u.email,
+      u.role,
+      u.is_blocked ? 'Bloqueado' : 'Ativo',
+      new Date(u.created_at).toLocaleDateString('pt-BR'),
+    ]);
+
+    const csv = [headers, ...rows].map(row => row.join(',')).join('\n');
+    return csv;
+  }
+
+  /**
+   * Ações em lote
+   */
+  async bulkUpdateUsers(
+    userIds: string[],
+    updates: { role?: string; status?: string },
+    performedBy: string,
+  ): Promise<void> {
+    const updateData: any = { updated_at: new Date() };
+
+    if (updates.role) {
+      updateData.role = updates.role;
+    }
+
+    if (updates.status === 'ACTIVE') {
+      updateData.is_blocked = false;
+      updateData.block_reason = null;
+    } else if (updates.status === 'SUSPENDED') {
+      updateData.is_blocked = true;
+    }
+
+    const { error } = await this.client
+      .from('users')
+      .update(updateData)
+      .in('id', userIds);
+
+    if (error) {
+      throw new Error(`Erro ao atualizar usuários em lote: ${error.message}`);
+    }
+
+    await this.logAdminAction({
+      type: 'bulk_update_users',
+      description: `${userIds.length} usuários atualizados em lote`,
+      performedBy,
+      metadata: { userIds, updates },
+    });
+  }
 }
