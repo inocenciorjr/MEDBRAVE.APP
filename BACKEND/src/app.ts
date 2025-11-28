@@ -195,6 +195,10 @@ export const createApp = async (
   const notificationRoutes = createNotificationRoutes(notificationController);
   app.use('/api/notifications', notificationRoutes);
 
+  // Session management routes
+  const sessionRoutes = (await import('./domain/auth/routes/sessionRoutes')).default;
+  app.use('/api/auth', sessionRoutes);
+
   // Rotas de monitoramento
   // app.use('/api/monitoring', monitoringRoutes);
 
