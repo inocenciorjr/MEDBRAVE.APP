@@ -115,7 +115,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
         activePlan: planData ? {
           id: planData.id,
           planId: planData.plan_id,
-          planName: planData.plans?.name || 'Plano',
+          planName: (planData.plans as any)?.name || 'Plano',
           status: planData.status,
           startDate: planData.start_date,
           endDate: planData.end_date,
@@ -135,6 +135,30 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     fetchUser();
+    
+    // Adicionar listener para mudanças de autenticação
+    const setupAuthListener = async () => {
+      const { createClient } = await import('@/lib/supabase/client');
+      const supabase = createClient();
+      
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+        console.log('🔔 [UserContext] Auth state changed:', event);
+        if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+          console.log('🔔 [UserContext] Recarregando dados do usuário...');
+          fetchUser();
+        } else if (event === 'SIGNED_OUT') {
+          console.log('🔔 [UserContext] Usuário deslogado');
+          setUser(null);
+          setLoading(false);
+        }
+      });
+      
+      return () => {
+        subscription.unsubscribe();
+      };
+    };
+    
+    setupAuthListener();
   }, []);
 
   const refreshUser = async () => {

@@ -52,10 +52,7 @@ export default function LoginPage() {
       }
 
       if (data.user) {
-        // Aguardar um pouco para garantir que a sessão foi estabelecida
-        await new Promise(resolve => setTimeout(resolve, 500));
         router.push(redirect);
-        router.refresh(); // Forçar refresh para recarregar o UserContext
       }
     } catch (err) {
       setError('Erro ao fazer login. Tente novamente.');
