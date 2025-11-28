@@ -13,6 +13,8 @@ import { CreateSimulatedModal } from '@/components/lista-questoes/CreateSimulate
 import { MinhasListasSkeleton } from '@/components/skeletons/MinhasListasSkeleton';
 import Checkbox from '@/components/ui/Checkbox';
 import { SearchInput } from '@/components/flashcards/SearchInput';
+import { MobileListCard } from '@/components/lista-questoes/MobileListCard';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 interface ListStats {
   answered: number;
@@ -47,6 +49,7 @@ interface ListItem {
 export default function MinhasListasPage() {
   const router = useRouter();
   const toast = useToast();
+  const isMobile = useIsMobile();
   const { folders, loading: loadingFolders, deleteFolder, updateFolder, refetch } = useQuestionListFolders();
   const [searchTerm, setSearchTerm] = useState('');
   const [showFolders, setShowFolders] = useState(true);
@@ -669,9 +672,75 @@ export default function MinhasListasPage() {
           </div>
         </div>
 
-        {/* Table */}
-        <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden">
-          <table className="w-full text-left text-sm table-fixed">
+        {/* Mobile: Cards Grid */}
+        {isMobile ? (
+          <div className="space-y-4">
+            {paginatedItems.length === 0 ? (
+              <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-md p-12 text-center">
+                <span className="material-symbols-outlined text-5xl text-text-light-secondary dark:text-text-dark-secondary mb-4">
+                  inbox
+                </span>
+                <p className="text-text-light-secondary dark:text-text-dark-secondary">
+                  {filteredItems.length === 0 ? 'Nenhum item encontrado' : 'Nenhum item nesta página'}
+                </p>
+              </div>
+            ) : (
+              paginatedItems.map((item) => (
+                <MobileListCard
+                  key={item.id}
+                  id={item.id}
+                  name={item.name}
+                  type={item.type}
+                  created_at={item.created_at}
+                  question_count={item.question_count}
+                  stats={item.stats}
+                  userResult={item.userResult}
+                  onClick={() => handleItemClick(item)}
+                  onEdit={() => handleEdit(item)}
+                  onDelete={() => handleDelete(item)}
+                  onDuplicate={item.type === 'list' ? () => handleDuplicate(item) : undefined}
+                  onDuplicateErrors={item.type === 'list' ? () => handleDuplicateErrors(item) : undefined}
+                  onCreateSimulated={item.type === 'list' ? () => handleCreateSimulated(item) : undefined}
+                />
+              ))
+            )}
+
+            {/* Mobile Pagination */}
+            {filteredItems.length > 0 && (
+              <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-md p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                    {((currentPage - 1) * itemsPerPage) + 1}-{Math.min(currentPage * itemsPerPage, filteredItems.length)} de {filteredItems.length}
+                  </span>
+                  <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                    Pág. {currentPage} de {totalPages}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                    disabled={currentPage === 1}
+                    className="flex-1 px-4 py-2 bg-background-light dark:bg-background-dark rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                  >
+                    <span className="material-symbols-outlined text-base">chevron_left</span>
+                    Anterior
+                  </button>
+                  <button
+                    onClick={() => setCurrentPage(Math.min(totalPages || 1, currentPage + 1))}
+                    disabled={currentPage === totalPages || totalPages === 0}
+                    className="flex-1 px-4 py-2 bg-background-light dark:bg-background-dark rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                  >
+                    Próxima
+                    <span className="material-symbols-outlined text-base">chevron_right</span>
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          /* Desktop + Tablet: Table */
+          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden">
+            <table className="w-full text-left text-sm table-fixed">
               <thead className="text-text-light-secondary dark:text-text-dark-secondary border-b border-border-light dark:border-border-dark">
                 <tr>
                   <th className="py-3 px-4 font-medium w-[28%]">
@@ -953,7 +1022,8 @@ export default function MinhasListasPage() {
               </div>
             </div>
           )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Modais */}

@@ -232,13 +232,13 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   };
 
   return (
-    <div className={`flex flex-col lg:flex-row gap-4 md:gap-6 transition-all duration-500 ease-in-out ${!isFocusMode ? 'w-full max-w-[1600px] mx-auto' : 'w-full justify-center'
+    <div className={`flex flex-col xl:flex-row gap-4 md:gap-6 transition-all duration-500 ease-in-out ${!isFocusMode ? 'w-full max-w-[1600px] mx-auto' : 'w-full justify-center'
       }`}>
       {/* Main Content Wrapper with Buttons */}
       <div className={`relative transition-all duration-500 ease-in-out ${!isFocusMode ? 'flex-1 min-w-0' : 'max-w-7xl w-full'
         }`}>
         <main className="relative w-full bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl flex flex-col overflow-y-auto transition-all duration-500 ease-in-out">
-          <div className="p-4 md:p-6 lg:p-8 flex-grow">
+          <div className="p-4 md:p-6 xl:p-8 flex-grow">
             <QuestionHeader
               question={question}
               likes={question.likes}

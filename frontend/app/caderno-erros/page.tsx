@@ -13,6 +13,8 @@ import { DeleteConfirmModal } from '@/components/error-notebook/DeleteConfirmMod
 import { EditItemModal } from '@/components/error-notebook/EditItemModal';
 import { MoveToFolderModal } from '@/components/error-notebook/MoveToFolderModal';
 import { useCadernoErrosEntries } from '@/hooks/queries';
+import { MobileNotebookCard } from '@/components/error-notebook/MobileNotebookCard';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 interface NotebookItem {
   id: string;
@@ -31,6 +33,7 @@ interface NotebookItem {
 export default function CadernoErrosPage() {
   const router = useRouter();
   const toast = useToast();
+  const isMobile = useIsMobile();
   const { folders, loading: loadingFolders, deleteFolder, updateFolder, refetch } = useErrorNotebookFolders();
   const [searchTerm, setSearchTerm] = useState('');
   const [showFolders, setShowFolders] = useState(true);
@@ -421,7 +424,7 @@ export default function CadernoErrosPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 xl:px-8">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
@@ -477,9 +480,91 @@ export default function CadernoErrosPage() {
             </div>
           </div>
 
-          {/* Table */}
-          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden">
-            <table className="w-full text-left text-sm table-fixed">
+          {/* Mobile: Cards Grid */}
+          {isMobile ? (
+            <div className="space-y-4">
+              {paginatedItems.length === 0 ? (
+                <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-md p-12 text-center">
+                  <span className="material-symbols-outlined text-5xl text-text-light-secondary dark:text-text-dark-secondary mb-4">
+                    inbox
+                  </span>
+                  <p className="text-text-light-secondary dark:text-text-dark-secondary">
+                    {filteredItems.length === 0 ? 'Nenhum caderno encontrado' : 'Nenhum item nesta página'}
+                  </p>
+                </div>
+              ) : (
+                paginatedItems.map((item) => (
+                  <MobileNotebookCard
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    type={item.type}
+                    created_at={item.created_at}
+                    question_subject={item.question_subject}
+                    difficulty={item.difficulty}
+                    year={item.year}
+                    institution={item.institution}
+                    exam_type={item.exam_type}
+                    onClick={() => handleItemClick(item)}
+                    onEdit={() => handleEdit(item)}
+                    onDelete={() => handleDelete(item)}
+                    onMove={() => handleMove(item)}
+                    onReview={item.type === 'entry' ? () => handleReview(item) : undefined}
+                    isSelected={selectedEntries.includes(item.id)}
+                    onToggleSelect={item.type === 'entry' ? () => handleToggleSelect(item.id, item.type) : undefined}
+                  />
+                ))
+              )}
+
+              {/* Mobile Pagination */}
+              {filteredItems.length > 0 && (
+                <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-md p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                      {((currentPage - 1) * itemsPerPage) + 1}-{Math.min(currentPage * itemsPerPage, filteredItems.length)} de {filteredItems.length}
+                    </span>
+                    <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                      Pág. {currentPage} de {totalPages}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                      disabled={currentPage === 1}
+                      className="flex-1 px-4 py-2 bg-background-light dark:bg-background-dark rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                    >
+                      <span className="material-symbols-outlined text-base">chevron_left</span>
+                      Anterior
+                    </button>
+                    <button
+                      onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                      disabled={currentPage === totalPages}
+                      className="flex-1 px-4 py-2 bg-background-light dark:bg-background-dark rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                    >
+                      Próxima
+                      <span className="material-symbols-outlined text-base">chevron_right</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Floating Review Button - Mobile only */}
+              {selectedEntries.length > 0 && (
+                <div className="fixed bottom-6 right-6 z-50">
+                  <button
+                    onClick={handleReviewSelected}
+                    className="flex items-center gap-2 px-6 py-4 bg-primary text-white font-semibold rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transition-all"
+                  >
+                    <span className="material-symbols-outlined text-xl">visibility</span>
+                    <span>Revisar ({selectedEntries.length})</span>
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            /* Desktop + Tablet: Table */
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden">
+              <table className="w-full text-left text-sm table-fixed">
               <thead className="text-text-light-secondary dark:text-text-dark-secondary border-b border-border-light dark:border-border-dark">
                 <tr>
                   <th className="py-3 px-4 font-medium w-[30%]">
@@ -648,7 +733,8 @@ export default function CadernoErrosPage() {
                 </div>
               </div>
             )}
-          </div>
+            </div>
+          )}
         </div>
 
       {/* Modais */}

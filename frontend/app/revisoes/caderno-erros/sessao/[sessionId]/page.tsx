@@ -343,7 +343,7 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
 
   return (
     <div className="flex flex-col h-full relative">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 xl:px-8">
         <Breadcrumb
           items={[
             { label: 'Caderno de Erros', icon: 'book', href: '/caderno-erros' },
@@ -353,10 +353,10 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       </div>
 
       <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="flex flex-col lg:flex-row gap-6 w-full px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col xl:flex-row gap-6 w-full px-4 sm:px-6 xl:px-8 py-8">
           
           {/* Main Content */}
-          <div className="flex-1 min-w-0 space-y-6 pb-20 lg:pb-0">
+          <div className="flex-1 min-w-0 space-y-6 pb-20 xl:pb-0">
 
           {/* Question Header */}
           {fullQuestion && (
