@@ -493,6 +493,78 @@ export class UserPlanController {
   };
 
   /**
+   * Atualiza as datas de um plano de usuário (apenas para administradores)
+   * @param req Objeto de requisição
+   * @param res Objeto de resposta
+   * @param next Função para passar para o próximo middleware
+   */
+  updateUserPlanDates = async (
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> => {
+    try {
+      this.ensureAdmin(req);
+
+      const userPlanId = req.params.userPlanId;
+      const { startDate, endDate } = req.body;
+
+      if (!startDate || !endDate) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Data de início e término são obrigatórias',
+          ErrorCodes.VALIDATION_ERROR,
+        );
+      }
+
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+
+      if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Datas inválidas',
+          ErrorCodes.VALIDATION_ERROR,
+        );
+      }
+
+      if (end <= start) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.VALIDATION_ERROR],
+          'Data de término deve ser posterior à data de início',
+          ErrorCodes.VALIDATION_ERROR,
+        );
+      }
+
+      // Verificar se o plano existe
+      const userPlan = await this.userPlanService.getUserPlanById(userPlanId);
+      if (!userPlan) {
+        throw new AppError(
+          ErrorStatusCodes[ErrorCodes.NOT_FOUND],
+          'Plano de usuário não encontrado',
+          ErrorCodes.NOT_FOUND,
+        );
+      }
+
+      const updatedPlan = await this.userPlanService.updateUserPlan(
+        userPlanId,
+        {
+          startDate: start,
+          endDate: end,
+        },
+      );
+
+      res.status(200).json({
+        success: true,
+        data: updatedPlan,
+        message: 'Datas do plano atualizadas com sucesso',
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  /**
    * Executa a verificação de planos expirados (apenas para administradores ou uso interno)
    * @param req Objeto de requisição
    * @param res Objeto de resposta

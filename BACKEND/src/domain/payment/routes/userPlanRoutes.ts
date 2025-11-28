@@ -88,6 +88,13 @@ export const createUserPlanRoutes = (
     controller.updateUserPlanMetadata,
   );
 
+  // Rota para atualizar as datas de um plano de usuário (apenas admin)
+  router.patch(
+    '/:userPlanId/dates',
+    validateRequest,
+    controller.updateUserPlanDates,
+  );
+
   // Rota para executar a verificação de planos expirados (apenas admin)
   router.post('/check-expired', controller.checkExpiredPlans);
 

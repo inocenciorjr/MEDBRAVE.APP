@@ -168,6 +168,25 @@ export async function updateUserPlanMetadata(
 }
 
 /**
+ * Update user plan dates
+ * @param id User plan ID
+ * @param startDate New start date
+ * @param endDate New end date
+ * @returns Updated user plan
+ */
+export async function updateUserPlanDates(
+  id: string,
+  startDate: Date,
+  endDate: Date
+): Promise<UserPlan> {
+  const response = await put<{ success: boolean; data: UserPlan }>(
+    `/user-plans/${id}/dates`,
+    { startDate: startDate.toISOString(), endDate: endDate.toISOString() }
+  );
+  return response.data;
+}
+
+/**
  * Check and expire user plans
  * Runs the expiration check process
  * @returns Result of the check
