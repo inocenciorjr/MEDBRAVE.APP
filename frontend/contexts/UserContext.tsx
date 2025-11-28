@@ -36,9 +36,66 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   const fetchUser = async () => {
     try {
-      const response = await fetchWithAuth('/user/me');
-      const data = await response.json();
-      setUser(data);
+      // Buscar sessão do Supabase
+      const { createClient } = await import('@/lib/supabase/client');
+      const supabase = createClient();
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+      
+      if (sessionError || !session) {
+        setUser(null);
+        setLoading(false);
+        return;
+      }
+
+      // Buscar dados do usuário do banco
+      const { data: userData, error: userError } = await supabase
+        .from('users')
+        .select('id, email, role, display_name, photo_url')
+        .eq('id', session.user.id)
+        .single();
+
+      if (userError || !userData) {
+        console.error('Erro ao buscar dados do usuário:', userError);
+        setUser(null);
+        setLoading(false);
+        return;
+      }
+
+      // Buscar plano ativo
+      const { data: planData } = await supabase
+        .from('user_plans')
+        .select(`
+          id,
+          plan_id,
+          status,
+          start_date,
+          end_date,
+          is_trial,
+          plans (
+            id,
+            name
+          )
+        `)
+        .eq('user_id', session.user.id)
+        .eq('status', 'active')
+        .single();
+
+      setUser({
+        id: userData.id,
+        email: userData.email,
+        role: userData.role,
+        displayName: userData.display_name || session.user.email?.split('@')[0] || 'Usuário',
+        photoURL: userData.photo_url || session.user.user_metadata?.avatar_url || null,
+        activePlan: planData ? {
+          id: planData.id,
+          planId: planData.plan_id,
+          planName: planData.plans?.name || 'Plano',
+          status: planData.status,
+          startDate: planData.start_date,
+          endDate: planData.end_date,
+          isTrial: planData.is_trial,
+        } : null,
+      });
     } catch (error) {
       console.error('Erro ao buscar usuário:', error);
       setUser(null);
