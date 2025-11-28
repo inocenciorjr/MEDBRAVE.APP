@@ -35,34 +35,56 @@ export function UserProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   const fetchUser = async () => {
+    console.log('🔄 [UserContext] Iniciando fetchUser...');
     try {
       // Buscar sessão do Supabase
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
+      console.log('🔄 [UserContext] Buscando sessão...');
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
       
-      if (sessionError || !session) {
+      if (sessionError) {
+        console.error('❌ [UserContext] Erro na sessão:', sessionError);
         setUser(null);
         setLoading(false);
         return;
       }
+      
+      if (!session) {
+        console.log('⚠️ [UserContext] Sem sessão ativa');
+        setUser(null);
+        setLoading(false);
+        return;
+      }
+      
+      console.log('✅ [UserContext] Sessão encontrada:', session.user.id);
 
       // Buscar dados do usuário do banco
+      console.log('🔄 [UserContext] Buscando dados do usuário...');
       const { data: userData, error: userError } = await supabase
         .from('users')
         .select('id, email, role, display_name, photo_url')
         .eq('id', session.user.id)
         .single();
 
-      if (userError || !userData) {
-        console.error('Erro ao buscar dados do usuário:', userError);
+      if (userError) {
+        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', userError);
         setUser(null);
         setLoading(false);
         return;
       }
+      
+      if (!userData) {
+        console.error('❌ [UserContext] Usuário não encontrado no banco');
+        setUser(null);
+        setLoading(false);
+        return;
+      }
+      
+      console.log('✅ [UserContext] Dados do usuário encontrados:', userData.display_name);
 
-      // Buscar plano ativo
-      const { data: planData } = await supabase
+      // Buscar plano ativo (usar maybeSingle para não dar erro se não encontrar)
+      const { data: planData, error: planError } = await supabase
         .from('user_plans')
         .select(`
           id,
@@ -78,9 +100,13 @@ export function UserProvider({ children }: { children: ReactNode }) {
         `)
         .eq('user_id', session.user.id)
         .eq('status', 'active')
-        .single();
+        .maybeSingle();
+      
+      if (planError) {
+        console.warn('Erro ao buscar plano ativo:', planError);
+      }
 
-      setUser({
+      const user = {
         id: userData.id,
         email: userData.email,
         role: userData.role,
@@ -95,11 +121,14 @@ export function UserProvider({ children }: { children: ReactNode }) {
           endDate: planData.end_date,
           isTrial: planData.is_trial,
         } : null,
-      });
+      };
+      
+      console.log('✅ [UserContext] Usuário carregado com sucesso:', user.displayName);
+      setUser(user);
+      setLoading(false);
     } catch (error) {
-      console.error('Erro ao buscar usuário:', error);
+      console.error('❌ [UserContext] Erro ao buscar usuário:', error);
       setUser(null);
-    } finally {
       setLoading(false);
     }
   };
