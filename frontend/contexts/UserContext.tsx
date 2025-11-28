@@ -2,6 +2,8 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
+import { useSessionMonitor } from '@/lib/hooks/useSessionMonitor';
+import { SessionRevokedModal } from '@/components/auth/SessionRevokedModal';
 
 interface UserPlan {
   id: string;
@@ -33,6 +35,9 @@ const UserContext = createContext<UserContextType | undefined>(undefined);
 export function UserProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+  
+  // Monitorar sessão em tempo real
+  const { showRevokedModal, closeRevokedModal } = useSessionMonitor(user?.id);
 
   const fetchUser = async (retryCount = 0) => {
     console.log(`🔄 [UserContext] Iniciando fetchUser... (tentativa ${retryCount + 1})`);
@@ -190,6 +195,12 @@ export function UserProvider({ children }: { children: ReactNode }) {
   return (
     <UserContext.Provider value={{ user, loading, refreshUser }}>
       {children}
+      
+      {/* Modal de sessão revogada */}
+      <SessionRevokedModal 
+        isOpen={showRevokedModal} 
+        onClose={closeRevokedModal} 
+      />
     </UserContext.Provider>
   );
 }
