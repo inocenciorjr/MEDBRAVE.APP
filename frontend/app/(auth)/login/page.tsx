@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import Image from 'next/image';
 import ThemeToggle from '@/components/ui/ThemeToggle';
+import { useToast } from '@/lib/contexts/ToastContext';
 
 const supabase = createClient();
 
@@ -18,6 +19,7 @@ export default function LoginPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirect = searchParams.get('redirect') || '/';
+  const toast = useToast();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -26,6 +28,15 @@ export default function LoginPage() {
   
   // Carousel State
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Verificar mensagem de timeout no sessionStorage
+  useEffect(() => {
+    const timeoutMessage = sessionStorage.getItem('session_timeout_message');
+    if (timeoutMessage) {
+      toast.warning('Sessão Expirada', timeoutMessage);
+      sessionStorage.removeItem('session_timeout_message');
+    }
+  }, [toast]);
 
   // Auto-transition for carousel
   useEffect(() => {

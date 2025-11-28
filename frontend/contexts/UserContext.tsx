@@ -168,6 +168,18 @@ export function UserProvider({ children }: { children: ReactNode }) {
     };
     
     setupAuthListener();
+    
+    // Configurar tracking de atividade e timeout de sessão
+    const setupSessionTimeout = async () => {
+      const { setupActivityTracking, cleanupActivityTracking } = await import('@/lib/utils/sessionTimeout');
+      setupActivityTracking();
+      
+      return () => {
+        cleanupActivityTracking();
+      };
+    };
+    
+    setupSessionTimeout();
   }, []);
 
   const refreshUser = async () => {

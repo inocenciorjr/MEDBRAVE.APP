@@ -214,6 +214,22 @@ export const supabaseAuthMiddleware = async (
       };
       req.token = token;
 
+      // Limitar sessões simultâneas (máximo 2 dispositivos)
+      try {
+        const { SessionService } = await import('../services/SessionService');
+        const sessionService = new SessionService();
+        const MAX_SESSIONS = 2;
+        
+        const revokedCount = await sessionService.cleanupOldSessions(authData.user.id, MAX_SESSIONS);
+        
+        if (revokedCount > 0) {
+          logger.info(`[SessionLimit] ${revokedCount} sessões antigas revogadas para usuário ${authData.user.id}`);
+        }
+      } catch (sessionError) {
+        // Log do erro mas não bloqueia o fluxo
+        logger.error('[SessionLimit] Erro ao limpar sessões antigas:', sessionError);
+      }
+
       next();
     } catch (error: any) {
       console.error('[Supabase Auth Middleware] Erro detalhado:', {
