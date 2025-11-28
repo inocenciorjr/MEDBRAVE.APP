@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Deck, Flashcard, Difficulty } from '@/types/flashcards';
 import { useFlashcardSession } from '@/lib/hooks/useFlashcardSession';
 import { useCardFlip } from '@/lib/hooks/useCardFlip';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 import { FlashcardStack } from './FlashcardStack';
 import { DifficultyButtons } from './DifficultyButtons';
 import { ProgressBar } from './ProgressBar';
@@ -19,6 +20,7 @@ interface FlashcardViewProps {
 
 export function FlashcardView({ deck, flashcards, isReviewSession = false, sessionId }: FlashcardViewProps) {
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const isMobile = useIsMobile();
   
   const {
     currentCard,
@@ -93,7 +95,7 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
 
   return (
     <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-      <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-4 md:py-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-8rem)]">
           <div className="w-full max-w-5xl mx-auto flex flex-col gap-4 md:gap-8 lg:gap-12">
             {/* Header */}
@@ -188,21 +190,51 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
             )}
 
             {/* Flashcard Stack */}
-            <FlashcardStack
-              card={currentCard}
-              cardSide={cardSide}
-              onFlip={flipCard}
-              showBreadcrumbOnFront={!isReviewSession}
-            />
+            <div className="relative">
+              <FlashcardStack
+                card={currentCard}
+                cardSide={cardSide}
+                onFlip={flipCard}
+                showBreadcrumbOnFront={!isReviewSession}
+              />
+              
+              {/* Mobile Flip Button */}
+              {isMobile && (
+                <div className="mt-4 flex justify-center">
+                  <button
+                    onClick={() => {
+                      flipCard();
+                      // Scroll to buttons after flip on mobile
+                      if (cardSide === 'front') {
+                        setTimeout(() => {
+                          const buttonsElement = document.getElementById('difficulty-buttons');
+                          if (buttonsElement) {
+                            buttonsElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                          }
+                        }, 350);
+                      }
+                    }}
+                    className="bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-primary/90 active:scale-95 transition-all flex items-center gap-2"
+                  >
+                    <span className="material-symbols-outlined">
+                      {cardSide === 'front' ? 'visibility' : 'visibility_off'}
+                    </span>
+                    {cardSide === 'front' ? 'Ver Resposta' : 'Ver Pergunta'}
+                  </button>
+                </div>
+              )}
+            </div>
 
             {/* Difficulty Buttons - Only show when card is flipped to back (answer) */}
             {cardSide === 'back' && (
-              <DifficultyButtons 
-                onSelect={handleDifficultySelect}
-                flashcardId={currentCard.id}
-                disabled={isCurrentCardAnswered}
-                selectedDifficulty={currentCardAnswer}
-              />
+              <div id="difficulty-buttons">
+                <DifficultyButtons 
+                  onSelect={handleDifficultySelect}
+                  flashcardId={currentCard.id}
+                  disabled={isCurrentCardAnswered}
+                  selectedDifficulty={currentCardAnswer}
+                />
+              </div>
             )}
           </div>
         </div>

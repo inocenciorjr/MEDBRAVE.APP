@@ -11,12 +11,31 @@ html.dark {
   color-scheme: dark;
 }
 
+/* Material Symbols - Prevent FOUC */
 .material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+  /* Prevent text showing before font loads */
+  font-display: block;
 }
 
 .material-symbols-outlined.filled {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide icons until font is loaded to prevent FOUC */
+html.fonts-loading .material-symbols-outlined {
+  visibility: hidden;
+}
+
+html.fonts-loaded .material-symbols-outlined {
+  visibility: visible;
 }
 
 /* Custom Scrollbar Styles */

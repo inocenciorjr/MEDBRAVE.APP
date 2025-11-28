@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { Flashcard, CardSide } from '@/types/flashcards';
 
 interface FlashcardStackProps {
@@ -10,6 +11,15 @@ interface FlashcardStackProps {
 }
 
 export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront = true }: FlashcardStackProps) {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <div className="relative w-full" style={{ perspective: '1000px' }}>
       {/* Background Cards - Stacking Effect */}
@@ -33,8 +43,8 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
         >
           {/* FRONT SIDE */}
           <div
-            className="flex flex-col w-full cursor-pointer"
-            onClick={onFlip}
+            className={`flex flex-col w-full ${!isMobile ? 'cursor-pointer' : ''}`}
+            onClick={!isMobile ? onFlip : undefined}
             style={{
               backfaceVisibility: 'hidden',
               WebkitBackfaceVisibility: 'hidden',
@@ -93,8 +103,8 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
 
           {/* BACK SIDE */}
           <div
-            className="absolute inset-0 flex flex-col bg-surface-light dark:bg-surface-dark rounded-lg cursor-pointer"
-            onClick={onFlip}
+            className={`absolute inset-0 flex flex-col bg-surface-light dark:bg-surface-dark rounded-lg ${!isMobile ? 'cursor-pointer' : ''}`}
+            onClick={!isMobile ? onFlip : undefined}
             style={{
               transform: 'rotateY(180deg)',
               backfaceVisibility: 'hidden',
