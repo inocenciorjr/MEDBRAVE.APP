@@ -224,16 +224,20 @@ export class ReviewSessionController {
         if (plannerEvent) {
           // Contar quantos cards desta data foram completados
           // Agora comparando IDs corretos (fsrs_card.id com session.completed_ids)
-          const completedCount = fsrsCardIds.filter(id => 
+          const completedInSession = fsrsCardIds.filter(id => 
             session.completed_ids.includes(id)
           ).length;
 
-          const totalCount = fsrsCardIds.length;
+          // Incrementar completed_count do evento existente
+          const newCompletedCount = (plannerEvent.completed_count || 0) + completedInSession;
+          
+          // Manter total_count existente ou usar o da sessão se for maior
+          const totalCount = Math.max(plannerEvent.total_count || 0, newCompletedCount);
 
           await this.plannerService.updateProgress(
             userId,
             plannerEvent.id!,
-            completedCount,
+            newCompletedCount,
             totalCount
           );
         }

@@ -240,19 +240,23 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
         const endHour = savedEvent?.end_hour ?? (startHour + 1);
         const endMinute = savedEvent?.end_minute ?? 0;
         
+        // Usar dados do planner_events como fonte de verdade
+        const completedCount = typeData?.completed_count || savedEvent?.completed_count || 0;
+        const totalCount = typeData?.count || savedEvent?.total_count || reviews.length;
+        const pendingCount = reviews.length;
+        
+        // Determinar status real: só está completo se não há pendentes
+        const actualStatus = pendingCount === 0 && completedCount > 0 ? 'completed' : 'pending';
+        
         // Verificar se a tarefa está atrasada (data anterior a hoje e não completada)
         const taskDate = new Date(weekDays[dayIndex]);
         taskDate.setHours(0, 0, 0, 0);
         const today = new Date();
         today.setHours(0, 0, 0, 0);
-        const isOverdue = taskDate < today && savedEvent?.status !== 'completed';
+        const isOverdue = taskDate.getTime() < today.getTime() && actualStatus !== 'completed';
         
         // Se atrasada, usar vermelho; senão, usar cor padrão
         const taskColor = isOverdue ? 'red' : getColorByContentType(contentType);
-        
-        // Usar dados do planner_events como fonte de verdade
-        const completedCount = typeData?.completed_count || savedEvent?.completed_count || 0;
-        const totalCount = typeData?.count || savedEvent?.total_count || reviews.length;
         
 
         // Combinar IDs de revisões pendentes e completadas
