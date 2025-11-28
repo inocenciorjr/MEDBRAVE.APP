@@ -25,8 +25,8 @@ export function ResolucaoQuestoesPageSkeleton() {
             </div>
 
             {/* Question Body */}
-            <div className="p-8">
-              <div className="space-y-3 mb-8">
+            <div className="p-4 md:p-6 lg:p-8">
+              <div className="space-y-2 md:space-y-3 mb-4 md:mb-8">
                 <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>
                 <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>
                 <div className="h-4 w-5/6 bg-gray-200 dark:bg-gray-700 rounded"></div>
@@ -34,10 +34,10 @@ export function ResolucaoQuestoesPageSkeleton() {
               </div>
 
               {/* Alternatives */}
-              <div className="space-y-3">
+              <div className="space-y-2 md:space-y-3">
                 {['A', 'B', 'C', 'D', 'E'].map((letter) => (
-                  <div key={letter} className="border-2 border-border-light dark:border-border-dark rounded-xl p-4 hover:border-primary/30 transition-colors">
-                    <div className="flex items-start gap-3">
+                  <div key={letter} className="border-2 border-border-light dark:border-border-dark rounded-xl p-3 md:p-4 hover:border-primary/30 transition-colors">
+                    <div className="flex items-start gap-2 md:gap-3">
                       <div className="h-8 w-8 bg-gray-200 dark:bg-gray-700 rounded-full flex-shrink-0"></div>
                       <div className="flex-1 space-y-2">
                         <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>

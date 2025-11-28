@@ -10,6 +10,7 @@ import YearGridSelector from '@/components/banco-questoes/YearGridSelector';
 import InstitutionSelector from '@/components/banco-questoes/InstitutionSelector';
 import ExamTypeSelector from '@/components/banco-questoes/ExamTypeSelector';
 import SummaryPanel from '@/components/banco-questoes/SummaryPanel';
+import MobileSummaryButton from '@/components/banco-questoes/MobileSummaryButton';
 import QuestionPreviewModal from '@/components/banco-questoes/QuestionPreviewModal';
 import { useFilterHierarchy, useAvailableYears, useInstitutionHierarchy, useQuestionCount } from '@/hooks/useBancoQuestoes';
 import { hierarchyToSubjects } from '@/lib/adapters/bancoQuestoesAdapter';
@@ -100,18 +101,18 @@ function GeralStep() {
   }, [institutionHierarchy, state.selectedInstitutions]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
       <StepperProgress currentStep="geral" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
         <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
-            <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200 mb-8">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200 mb-6 md:mb-8">
               Criar Lista de Questões
             </h1>
 
             <form onSubmit={(e) => { e.preventDefault(); handleNext(); }}>
-              <div className="mb-10">
+              <div className="mb-6 md:mb-10">
                 <FolderSelector
                   selectedFolder={state.folderId}
                   onSelectFolder={updateFolderId}
@@ -133,10 +134,10 @@ function GeralStep() {
                 fullWidth
               />
 
-              <div className="flex justify-end mt-10">
+              <div className="flex justify-end mt-6 md:mt-10">
                 <button
                   type="submit"
-                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                  className="w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
                 >
                   <span>Próximo</span>
                   <span className="material-symbols-outlined">arrow_forward</span>
@@ -146,7 +147,8 @@ function GeralStep() {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
+        {/* Desktop: Summary Panel */}
+        <div className="hidden lg:block lg:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
@@ -164,6 +166,23 @@ function GeralStep() {
           />
         </div>
       </div>
+
+      {/* Mobile: Botão Flutuante */}
+      <MobileSummaryButton
+        data={{
+          listName: state.listName,
+          selectedSubjects,
+          selectedYears: state.selectedYears,
+          selectedInstitutions,
+          selectedExamTypes: state.selectedExamTypes || [],
+          totalQuestions: questionCount,
+        }}
+        onEditStep={handleEditStep}
+        onRemoveSubject={toggleSubject}
+        onRemoveYear={toggleYear}
+        onRemoveInstitution={toggleInstitution}
+        onClearFilters={clearFilters}
+      />
     </div>
   );
 }
@@ -244,27 +263,27 @@ function AssuntosStep() {
   }, [institutionHierarchy, state.selectedInstitutions]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
       <StepperProgress currentStep="assuntos" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
         <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
-            <div className="flex items-center justify-between mb-6">
-              <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
                 Assuntos
               </h1>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 md:gap-3">
                 <button
                   onClick={handleBack}
-                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
                 >
                   <span className="material-symbols-outlined">arrow_back</span>
                   <span>Voltar</span>
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
                 >
                   <span>Próximo</span>
                   <span className="material-symbols-outlined">arrow_forward</span>
@@ -297,7 +316,8 @@ function AssuntosStep() {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
+        {/* Desktop: Summary Panel */}
+        <div className="hidden lg:block lg:col-span-2">
           <SummaryPanel
             data={{
               listName: state.listName,
@@ -315,6 +335,23 @@ function AssuntosStep() {
           />
         </div>
       </div>
+
+      {/* Mobile: Botão Flutuante */}
+      <MobileSummaryButton
+        data={{
+          listName: state.listName,
+          selectedSubjects,
+          selectedYears: state.selectedYears,
+          selectedInstitutions,
+          selectedExamTypes: state.selectedExamTypes || [],
+          totalQuestions: questionCount,
+        }}
+        onEditStep={handleEditStep}
+        onRemoveSubject={toggleSubject}
+        onRemoveYear={toggleYear}
+        onRemoveInstitution={toggleInstitution}
+        onClearFilters={clearFilters}
+      />
     </div>
   );
 }
@@ -365,27 +402,27 @@ function AnosStep() {
   );
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
       <StepperProgress currentStep="anos" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
         <div className="lg:col-span-3">
-          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
-            <div className="flex items-center justify-between mb-8">
-              <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
                 Anos
               </h1>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 md:gap-3">
                 <button
                   onClick={handleBack}
-                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
                 >
                   <span className="material-symbols-outlined">arrow_back</span>
                   <span>Voltar</span>
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40"
                 >
                   <span>Próximo</span>
                   <span className="material-symbols-outlined">arrow_forward</span>
@@ -469,6 +506,23 @@ function AnosStep() {
           />
         </div>
       </div>
+
+      {/* Mobile: Botão Flutuante */}
+      <MobileSummaryButton
+        data={{
+          listName: state.listName,
+          selectedSubjects,
+          selectedYears: state.selectedYears,
+          selectedInstitutions,
+          selectedExamTypes: state.selectedExamTypes || [],
+          totalQuestions: questionCount,
+        }}
+        onEditStep={handleEditStep}
+        onRemoveSubject={toggleSubject}
+        onRemoveYear={toggleYear}
+        onRemoveInstitution={toggleInstitution}
+        onClearFilters={clearFilters}
+      />
     </div>
   );
 }
@@ -719,20 +773,20 @@ function InstituicoesStep() {
 
   return (
     <>
-      <div className="space-y-6">
+      <div className="space-y-4 md:space-y-6 pb-20 lg:pb-0">
         <StepperProgress currentStep="instituicoes" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-8 items-start">
           <div className="lg:col-span-3">
-            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
-              <div className="flex items-center justify-between mb-8">
-                <h1 className="text-2xl sm:text-3xl font-medium text-slate-700 dark:text-slate-200">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 md:p-6 lg:p-10">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-700 dark:text-slate-200">
                   Instituições
                 </h1>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 md:gap-3">
                   <button
                     onClick={handleBack}
-                    className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
+                    className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-text-light-primary dark:text-text-dark-primary bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg hover:border-primary transition-all duration-200"
                   >
                     <span className="material-symbols-outlined">arrow_back</span>
                     <span>Voltar</span>
@@ -740,13 +794,14 @@ function InstituicoesStep() {
                   <button
                     onClick={handleFinish}
                     disabled={isCreating}
-                    className="flex items-center gap-2 px-6 py-3 text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 md:px-6 py-3 text-sm md:text-base font-semibold text-white bg-primary rounded-lg hover:bg-violet-800 transition-transform duration-200 hover:scale-105 shadow-xl hover:shadow-2xl shadow-primary/40 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isCreating ? (
                       <span>Criando...</span>
                     ) : (
                       <>
-                        <span>Finalizar Lista</span>
+                        <span className="hidden sm:inline">Finalizar Lista</span>
+                        <span className="sm:hidden">Finalizar</span>
                         <span className="material-symbols-outlined">done_all</span>
                       </>
                     )}
@@ -870,7 +925,8 @@ function InstituicoesStep() {
             </div>
           </div>
 
-          <div className="lg:col-span-2">
+          {/* Desktop: Summary Panel */}
+          <div className="hidden lg:block lg:col-span-2">
             <SummaryPanel
               data={{
                 listName: state.listName,
@@ -889,6 +945,24 @@ function InstituicoesStep() {
             />
           </div>
         </div>
+
+        {/* Mobile: Botão Flutuante */}
+        <MobileSummaryButton
+          data={{
+            listName: state.listName,
+            selectedSubjects,
+            selectedYears: state.selectedYears,
+            selectedInstitutions,
+            selectedExamTypes: state.selectedExamTypes || [],
+            totalQuestions: questionCount,
+          }}
+          onEditStep={handleEditStep}
+          onRemoveSubject={toggleSubject}
+          onRemoveYear={toggleYear}
+          onRemoveInstitution={toggleInstitution}
+          onClearFilters={clearFilters}
+          onPreviewQuestions={() => setShowPreview(true)}
+        />
       </div>
 
       <QuestionPreviewModal

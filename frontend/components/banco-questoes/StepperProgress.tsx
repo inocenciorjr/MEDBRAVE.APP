@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 interface StepperProgressProps {
   currentStep: 'geral' | 'assuntos' | 'anos' | 'instituicoes';
@@ -15,6 +16,7 @@ const steps = [
 
 export default function StepperProgress({ currentStep }: StepperProgressProps) {
   const router = useRouter();
+  const isMobile = useIsMobile();
   const currentIndex = steps.findIndex(s => s.id === currentStep);
 
   const handleStepClick = (stepId: string) => {
@@ -22,6 +24,49 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
+  // Mobile: Indicador compacto com dots
+  if (isMobile) {
+    return (
+      <div className="w-full mb-6">
+        {/* Current Step Info */}
+        <div className="text-center mb-4">
+          <div className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-1">
+            Passo {currentIndex + 1} de {steps.length}
+          </div>
+          <div className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
+            {steps[currentIndex].label}
+          </div>
+          <div className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+            {steps[currentIndex].description}
+          </div>
+        </div>
+
+        {/* Dots Indicator */}
+        <div className="flex items-center justify-center gap-2">
+          {steps.map((step, index) => {
+            const isCompleted = index < currentIndex;
+            const isCurrent = index === currentIndex;
+
+            return (
+              <button
+                key={step.id}
+                onClick={() => handleStepClick(step.id)}
+                className={`
+                  h-2 rounded-full transition-all duration-300
+                  ${isCurrent ? 'w-8 bg-primary' : 'w-2'}
+                  ${isCompleted ? 'bg-green-500' : ''}
+                  ${!isCompleted && !isCurrent ? 'bg-gray-300 dark:bg-gray-600' : ''}
+                `}
+                aria-label={`Ir para ${step.label}`}
+              />
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // Desktop: Stepper original
   return (
     <div className="w-full mb-8 relative z-10">
       <div className="flex items-center relative">

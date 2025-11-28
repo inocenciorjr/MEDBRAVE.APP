@@ -43,9 +43,9 @@ export function GoalsConfigModal({ isOpen, onClose, onSave, currentGoals }: Goal
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-surface-light dark:bg-surface-dark rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl border border-border-light dark:border-border-dark">
-        <h2 className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+      <div className="bg-surface-light dark:bg-surface-dark rounded-2xl p-4 md:p-8 max-w-md w-full shadow-2xl border border-border-light dark:border-border-dark">
+        <h2 className="text-xl md:text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-4 md:mb-6">
           Configurar Metas Diárias
         </h2>
 
