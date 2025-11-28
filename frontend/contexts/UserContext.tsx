@@ -34,8 +34,8 @@ export function UserProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchUser = async () => {
-    console.log('🔄 [UserContext] Iniciando fetchUser...');
+  const fetchUser = async (retryCount = 0) => {
+    console.log(`🔄 [UserContext] Iniciando fetchUser... (tentativa ${retryCount + 1})`);
     try {
       // Buscar sessão do Supabase
       const { createClient } = await import('@/lib/supabase/client');
@@ -52,6 +52,15 @@ export function UserProvider({ children }: { children: ReactNode }) {
       
       if (!session) {
         console.log('⚠️ [UserContext] Sem sessão ativa');
+        
+        // No mobile, às vezes a sessão demora para ser estabelecida
+        // Tentar novamente após um delay
+        if (retryCount < 2) {
+          console.log('🔄 [UserContext] Tentando novamente em 1s...');
+          setTimeout(() => fetchUser(retryCount + 1), 1000);
+          return;
+        }
+        
         setUser(null);
         setLoading(false);
         return;
