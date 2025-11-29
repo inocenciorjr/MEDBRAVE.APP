@@ -4,9 +4,10 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:50
 
 async function handleRequest(
   request: NextRequest,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
-  const path = params.path.join('/');
+  const resolvedParams = await params;
+  const path = resolvedParams.path.join('/');
   const url = `${API_BASE_URL}/api/activity/${path}`;
 
   try {
@@ -53,22 +54,22 @@ async function handleRequest(
   }
 }
 
-export async function GET(request: NextRequest, context: { params: { path: string[] } }) {
+export async function GET(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   return handleRequest(request, context);
 }
 
-export async function POST(request: NextRequest, context: { params: { path: string[] } }) {
+export async function POST(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   return handleRequest(request, context);
 }
 
-export async function PUT(request: NextRequest, context: { params: { path: string[] } }) {
+export async function PUT(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   return handleRequest(request, context);
 }
 
-export async function DELETE(request: NextRequest, context: { params: { path: string[] } }) {
+export async function DELETE(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   return handleRequest(request, context);
 }
 
-export async function PATCH(request: NextRequest, context: { params: { path: string[] } }) {
+export async function PATCH(request: NextRequest, context: { params: Promise<{ path: string[] }> }) {
   return handleRequest(request, context);
 }

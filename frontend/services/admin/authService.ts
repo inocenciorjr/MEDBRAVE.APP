@@ -1,4 +1,4 @@
-import { fetchWithAuth, parseResponse } from './baseService';
+import { get } from './baseService';
 
 export interface UserProfile {
   id: string;
@@ -14,8 +14,7 @@ export interface UserProfile {
  */
 export async function verifyAdminAccess(): Promise<UserProfile | null> {
   try {
-    const response = await fetchWithAuth('/api/user/me');
-    const user: UserProfile = await parseResponse<UserProfile>(response);
+    const user = await get<UserProfile>('/user/me');
     
     // Verificar se o usuário tem role de admin (case-insensitive)
     const role = user.role?.toUpperCase();
@@ -37,8 +36,7 @@ export async function verifyAdminAccess(): Promise<UserProfile | null> {
  */
 export async function getCurrentUser(): Promise<UserProfile | null> {
   try {
-    const response = await fetchWithAuth('/api/user/me');
-    const user: UserProfile = await parseResponse<UserProfile>(response);
+    const user = await get<UserProfile>('/user/me');
     return user;
   } catch (error) {
     console.error('Erro ao buscar usuário atual:', error);

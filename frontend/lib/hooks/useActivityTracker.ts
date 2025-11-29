@@ -49,7 +49,7 @@ export function useActivityTracker(userId: string | null, sessionId: string | nu
           // Disconnected
         });
 
-        socket.on('connect_error', (error) => {
+        socket.on('connect_error', (error: any) => {
           console.error('❌ [ActivityTracker] Connection error:', {
             message: error.message,
             description: error.description,
