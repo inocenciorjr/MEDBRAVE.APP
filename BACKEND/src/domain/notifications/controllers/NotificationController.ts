@@ -283,7 +283,7 @@ export class NotificationController {
    */
   async sendNotificationToMultipleUsers(req: Request, res: Response) {
     try {
-      if (!req.user?.role || req.user.role !== 'ADMIN') {
+      if (!req.user?.user_role || req.user.user_role !== 'ADMIN') {
         return res.status(403).json({
           success: false,
           error: {

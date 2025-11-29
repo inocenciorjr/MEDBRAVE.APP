@@ -28,7 +28,7 @@ export class CommentController {
       }
 
       // Verificar se é staff reply (apenas admins)
-      const isStaffReply = req.user?.role === 'ADMIN';
+      const isStaffReply = req.user?.user_role === 'ADMIN';
 
       const comment = await this.commentService.createComment(
         userId,

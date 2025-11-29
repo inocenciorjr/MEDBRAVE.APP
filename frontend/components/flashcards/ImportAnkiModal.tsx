@@ -319,7 +319,7 @@ export function ImportAnkiModal({ isOpen, onClose, onSuccess }: ImportAnkiModalP
           : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
 
         const socket = io(backendUrl, {
-            path: '/socket.io',
+            path: '/socket.io/apkg',
             transports: ['polling', 'websocket'],
             withCredentials: true,
         });

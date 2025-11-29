@@ -35,7 +35,7 @@ export interface UpdateSubFilterPayload extends Partial<CreateSubFilterPayload> 
  * Get all filters with hierarchical structure
  */
 export async function getAllFilters(): Promise<Filter[]> {
-  return get<Filter[]>('/api/admin/filters');
+  return get<Filter[]>('/admin/filters');
 }
 
 /**

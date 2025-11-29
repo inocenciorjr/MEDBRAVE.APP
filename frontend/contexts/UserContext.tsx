@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 import { useSessionMonitor } from '@/lib/hooks/useSessionMonitor';
+import { useActivityTracker } from '@/lib/hooks/useActivityTracker';
 import { SessionRevokedModal } from '@/components/auth/SessionRevokedModal';
 
 interface UserPlan {
@@ -35,17 +36,19 @@ const UserContext = createContext<UserContextType | undefined>(undefined);
 export function UserProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+  const [sessionId, setSessionId] = useState<string | null>(null);
   
   // Monitorar sessão em tempo real
   const { showRevokedModal, closeRevokedModal } = useSessionMonitor(user?.id);
+  
+  // Rastrear atividade em tempo real
+  useActivityTracker(user?.id || null, sessionId);
 
   const fetchUser = async (retryCount = 0) => {
-    console.log(`🔄 [UserContext] Iniciando fetchUser... (tentativa ${retryCount + 1})`);
     try {
       // Buscar sessão do Supabase
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
-      console.log('🔄 [UserContext] Buscando sessão...');
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
       
       if (sessionError) {
@@ -56,12 +59,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
       }
       
       if (!session) {
-        console.log('⚠️ [UserContext] Sem sessão ativa');
-        
         // No mobile, às vezes a sessão demora para ser estabelecida
         // Tentar novamente após um delay
         if (retryCount < 2) {
-          console.log('🔄 [UserContext] Tentando novamente em 1s...');
           setTimeout(() => fetchUser(retryCount + 1), 1000);
           return;
         }
@@ -71,22 +71,31 @@ export function UserProvider({ children }: { children: ReactNode }) {
         return;
       }
       
-      console.log('✅ [UserContext] Sessão encontrada:', session.user.id);
+      // Extrair session_id do token JWT (está no payload)
+      try {
+        const payload = JSON.parse(atob(session.access_token.split('.')[1]));
+        setSessionId(payload.session_id || null);
+      } catch (e) {
+        // Silently fail
+      }
 
-      // Buscar dados do usuário do banco
-      console.log('🔄 [UserContext] Buscando dados do usuário...');
-      const { data: userData, error: userError } = await supabase
-        .from('users')
-        .select('id, email, role, display_name, photo_url')
-        .eq('id', session.user.id)
-        .single();
+      // Buscar dados do usuário via API do backend (evita problemas de RLS)
+      
+      const token = session.access_token;
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
 
-      if (userError) {
-        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', userError);
+      if (!response.ok) {
+        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.statusText);
         setUser(null);
         setLoading(false);
         return;
       }
+
+      const userData = await response.json();
       
       if (!userData) {
         console.error('❌ [UserContext] Usuário não encontrado no banco');
@@ -95,49 +104,14 @@ export function UserProvider({ children }: { children: ReactNode }) {
         return;
       }
       
-      console.log('✅ [UserContext] Dados do usuário encontrados:', userData.display_name);
-
-      // Buscar plano ativo (usar maybeSingle para não dar erro se não encontrar)
-      const { data: planData, error: planError } = await supabase
-        .from('user_plans')
-        .select(`
-          id,
-          plan_id,
-          status,
-          start_date,
-          end_date,
-          is_trial,
-          plans (
-            id,
-            name
-          )
-        `)
-        .eq('user_id', session.user.id)
-        .eq('status', 'active')
-        .maybeSingle();
-      
-      if (planError) {
-        console.warn('Erro ao buscar plano ativo:', planError);
-      }
-
       const user = {
         id: userData.id,
         email: userData.email,
         role: userData.role,
-        displayName: userData.display_name || session.user.email?.split('@')[0] || 'Usuário',
-        photoURL: userData.photo_url || session.user.user_metadata?.avatar_url || null,
-        activePlan: planData ? {
-          id: planData.id,
-          planId: planData.plan_id,
-          planName: (planData.plans as any)?.name || 'Plano',
-          status: planData.status,
-          startDate: planData.start_date,
-          endDate: planData.end_date,
-          isTrial: planData.is_trial,
-        } : null,
+        displayName: userData.displayName || session.user.email?.split('@')[0] || 'Usuário',
+        photoURL: userData.photoURL || session.user.user_metadata?.avatar_url || null,
+        activePlan: userData.activePlan || null,
       };
-      
-      console.log('✅ [UserContext] Usuário carregado com sucesso:', user.displayName);
       setUser(user);
       setLoading(false);
     } catch (error) {
@@ -156,12 +130,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
       const supabase = createClient();
       
       const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-        console.log('🔔 [UserContext] Auth state changed:', event);
         if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-          console.log('🔔 [UserContext] Recarregando dados do usuário...');
           fetchUser();
         } else if (event === 'SIGNED_OUT') {
-          console.log('🔔 [UserContext] Usuário deslogado');
           setUser(null);
           setLoading(false);
         }

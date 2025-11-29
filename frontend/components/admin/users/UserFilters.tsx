@@ -1,110 +1,84 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { AdminInput, AdminSelect } from '@/components/admin/ui/AdminInput';
-import { AdminButton } from '@/components/admin/ui/AdminButton';
-import { SearchInput } from '@/components/flashcards/SearchInput';
+import React from 'react';
+import { AdminInput } from '../ui/AdminInput';
+import { AdminButton } from '../ui/AdminButton';
+import type { UserFilters as UserFiltersType } from '@/types/admin/user';
 
 interface UserFiltersProps {
-  onFilterChange: (filters: UserFilterValues) => void;
+  filters: UserFiltersType;
+  onFilterChange: (filters: UserFiltersType) => void;
   onClear: () => void;
 }
 
-export interface UserFilterValues {
-  search: string;
-  role: string;
-  status: string;
-}
-
-const UserFilters: React.FC<UserFiltersProps> = ({ onFilterChange, onClear }) => {
-  const [filters, setFilters] = useState<UserFilterValues>({
-    search: '',
-    role: 'ALL',
-    status: 'ALL'
-  });
-
-  // Debounce search
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      onFilterChange(filters);
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, [filters, onFilterChange]);
-
-  const handleChange = (field: keyof UserFilterValues, value: string) => {
-    setFilters(prev => ({ ...prev, [field]: value }));
+export default function UserFilters({ filters, onFilterChange, onClear }: UserFiltersProps) {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onFilterChange({ ...filters, search: e.target.value });
   };
 
-  const handleClear = () => {
-    setFilters({
-      search: '',
-      role: 'ALL',
-      status: 'ALL'
-    });
-    onClear();
+  const handleRoleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onFilterChange({ ...filters, role: e.target.value as any });
   };
+
+  const handleStatusChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onFilterChange({ ...filters, status: e.target.value as any });
+  };
+
+  const hasActiveFilters = 
+    filters.search !== '' || 
+    filters.role !== 'ALL' || 
+    filters.status !== 'ALL';
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm p-6 border border-border-light dark:border-border-dark">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <SearchInput
-          label="Buscar"
-          placeholder="Nome ou email..."
-          value={filters.search}
-          onChange={(value) => handleChange('search', value)}
-          fullWidth
-        />
+    <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark p-6">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
+          {/* Search */}
+          <div className="flex-1">
+            <AdminInput
+              placeholder="Buscar por nome ou email..."
+              value={filters.search}
+              onChange={handleSearchChange}
+              icon="search"
+            />
+          </div>
 
-        <div>
-          <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2">
-            <span className="material-symbols-outlined text-sm align-middle mr-1">person</span>
-            Filtrar por Role
-          </label>
-          <AdminSelect
+          {/* Role Filter */}
+          <select
             value={filters.role}
-            onChange={(e: React.ChangeEvent<HTMLSelectElement>) => handleChange('role', e.target.value)}
-            options={[
-              { value: 'ALL', label: 'Todos os roles' },
-              { value: 'ADMIN', label: 'Administrador' },
-              { value: 'TEACHER', label: 'Professor' },
-              { value: 'MENTOR', label: 'Mentor' },
-              { value: 'STUDENT', label: 'Estudante' }
-            ]}
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2">
-            <span className="material-symbols-outlined text-sm align-middle mr-1">bar_chart</span>
-            Filtrar por Status
-          </label>
-          <AdminSelect
-            value={filters.status}
-            onChange={(e: React.ChangeEvent<HTMLSelectElement>) => handleChange('status', e.target.value)}
-            options={[
-              { value: 'ALL', label: 'Todos os status' },
-              { value: 'ACTIVE', label: 'Ativo' },
-              { value: 'INACTIVE', label: 'Inativo' },
-              { value: 'SUSPENDED', label: 'Suspenso' },
-              { value: 'PENDING_EMAIL_VERIFICATION', label: 'Aguardando Verificação' }
-            ]}
-          />
-        </div>
-
-        <div className="flex items-end">
-          <AdminButton
-            variant="outline"
-            onClick={handleClear}
-            className="w-full"
+            onChange={handleRoleChange}
+            className="px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary transition-all"
           >
-            <span className="material-symbols-outlined text-sm mr-2">delete</span>
-            Limpar Filtros
-          </AdminButton>
+            <option value="ALL">Todas as Roles</option>
+            <option value="STUDENT">Estudantes</option>
+            <option value="ADMIN">Administradores</option>
+            <option value="MODERATOR">Moderadores</option>
+          </select>
+
+          {/* Status Filter */}
+          <select
+            value={filters.status}
+            onChange={handleStatusChange}
+            className="px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+          >
+            <option value="ALL">Todos os Status</option>
+            <option value="ACTIVE">Ativos</option>
+            <option value="SUSPENDED">Suspensos</option>
+            <option value="BANNED">Banidos</option>
+          </select>
+
+          {/* Clear Button */}
+          {hasActiveFilters && (
+            <AdminButton
+              variant="outline"
+              onClick={onClear}
+              icon="clear"
+            >
+              Limpar
+            </AdminButton>
+          )}
         </div>
       </div>
     </div>
   );
-};
-
-export default UserFilters;
+}

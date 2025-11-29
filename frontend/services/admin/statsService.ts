@@ -79,7 +79,7 @@ export async function getDashboardStats(): Promise<DashboardStats> {
   console.log('🔄 Fetching fresh dashboard stats');
   
   // Criar promise de fetch
-  fetchPromise = get<DashboardStats>('/api/admin/dashboard/stats')
+  fetchPromise = get<DashboardStats>('/admin/dashboard/stats')
     .then(stats => {
       // Update cache
       statsCache = {

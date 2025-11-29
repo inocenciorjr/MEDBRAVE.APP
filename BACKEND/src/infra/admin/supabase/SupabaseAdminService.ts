@@ -56,9 +56,18 @@ export class SupabaseAdminService {
 
     validateAdminAction(actionWithTimestamp);
 
+    // Converter para snake_case para o banco
+    const dbAction = {
+      type: actionWithTimestamp.type,
+      description: actionWithTimestamp.description,
+      performed_by: actionWithTimestamp.performedBy,
+      timestamp: actionWithTimestamp.timestamp,
+      metadata: actionWithTimestamp.metadata,
+    };
+
     const { error } = await this.client
       .from('admin_actions')
-      .insert([actionWithTimestamp]);
+      .insert([dbAction]);
 
     if (error) {
       throw new Error(`Erro ao registrar ação do admin: ${error.message}`);
@@ -303,7 +312,7 @@ export class SupabaseAdminService {
 
     const users = data.users.filter((user: any) => user.user_metadata?.role === role);
     const userIds = users.map((user: any) => user.id);
-    
+
     if (userIds.length === 0) {
       return [];
     }
@@ -402,11 +411,9 @@ export class SupabaseAdminService {
 
   async setUserAsAdmin(userId: string, adminId: string): Promise<void> {
     const adminData = {
-      user_id: userId,
-      role: 'admin' as const,
+      userId: userId,
+      adminRole: 'admin' as const,
       permissions: ['read', 'write'],
-      is_active: true,
-      created_by: adminId,
     };
 
     await this.createAdmin(adminData);
@@ -455,13 +462,18 @@ export class SupabaseAdminService {
     sortBy?: string;
     sortOrder?: 'asc' | 'desc';
   } = {}): Promise<{ users: any[]; total: number }> {
+    // LEFT JOIN para incluir usuários sem plano
     let query = this.client
       .from('users')
-      .select('*, user_plans!inner(id, plan_id, status, start_date, end_date, plans(name))', { count: 'exact' });
+      .select('*, user_plans(id, plan_id, status, start_date, end_date, plans(name))', { count: 'exact' });
 
-    // Filtro de busca (nome ou email)
+    // Filtro de busca usando full-text search (muito mais rápido)
     if (options.search) {
-      query = query.or(`display_name.ilike.%${options.search}%,email.ilike.%${options.search}%`);
+      // Usar textSearch para busca otimizada com índice GIN
+      query = query.textSearch('searchable_text', options.search, {
+        type: 'websearch',
+        config: 'portuguese'
+      });
     }
 
     // Filtro de role
@@ -478,10 +490,8 @@ export class SupabaseAdminService {
       }
     }
 
-    // Filtro de plano
-    if (options.planId) {
-      query = query.eq('user_plans.plan_id', options.planId);
-    }
+    // Filtrar apenas planos ativos no JOIN
+    query = query.eq('user_plans.status', 'active');
 
     // Ordenação
     const sortBy = options.sortBy || 'created_at';
@@ -501,8 +511,16 @@ export class SupabaseAdminService {
       throw new Error(`Erro ao listar usuários: ${error.message}`);
     }
 
+    // Se houver filtro de plano, filtrar após a query
+    let filteredUsers = data || [];
+    if (options.planId && filteredUsers.length > 0) {
+      filteredUsers = filteredUsers.filter(user =>
+        user.user_plans?.some((plan: any) => plan.plan_id === options.planId)
+      );
+    }
+
     return {
-      users: data || [],
+      users: filteredUsers,
       total: count || 0,
     };
   }
@@ -814,12 +832,105 @@ export class SupabaseAdminService {
   }
 
   /**
-   * Obtém sessões ativas de um usuário
+   * Obtém sessões ativas de um usuário com dados de presença em tempo real
    */
   async getUserActiveSessions(userId: string): Promise<any[]> {
-    // TODO: Implementar quando houver tabela de sessões
-    // Por enquanto, retornar array vazio
-    return [];
+    // Usar query SQL raw porque auth.sessions não é acessível via client normal
+    const { data, error } = await this.client.rpc('get_user_sessions', {
+      p_user_id: userId
+    });
+
+    if (error) {
+      // Fallback: tentar query direta
+      try {
+        const { data: sessions } = await this.client
+          .from('sessions')
+          .select('*')
+          .eq('user_id', userId)
+          .order('created_at', { ascending: false });
+        return sessions || [];
+      } catch {
+        return [];
+      }
+    }
+
+    if (!data || data.length === 0) {
+      return [];
+    }
+
+    // Parsear user_agent para extrair device e browser
+    const sessions = data.map((session: any) => {
+      const userAgent = session.user_agent || '';
+
+      // Detectar browser
+      let browser = 'Unknown';
+      if (/edg/i.test(userAgent)) browser = 'Edge';
+      else if (/chrome/i.test(userAgent)) browser = 'Chrome';
+      else if (/firefox/i.test(userAgent)) browser = 'Firefox';
+      else if (/safari/i.test(userAgent)) browser = 'Safari';
+      else if (/opera/i.test(userAgent)) browser = 'Opera';
+
+      // Usar updated_at se refreshed_at for null
+      let lastActivity = session.refreshed_at || session.updated_at || session.created_at;
+
+      return {
+        id: session.id,
+        user_id: userId,
+        device: userAgent, // Enviar user agent completo para o frontend fazer o parsing
+        browser,
+        ip_address: session.ip?.toString() || 'Unknown',
+        last_activity: lastActivity,
+        created_at: session.created_at,
+        is_active: false, // Será atualizado com dados do Redis
+        metadata: {},
+        socket_id: null,
+      };
+    });
+
+    // Enriquecer com dados de presença do Redis
+    try {
+      const { redis } = require('../../../lib/redis');
+      
+      const pattern = `presence:${userId}:*`;
+      const keys = await redis.keys(pattern);
+      
+      if (keys.length > 0) {
+        const pipeline = redis.pipeline();
+        keys.forEach((key: string) => pipeline.get(key));
+        const results = await pipeline.exec();
+        
+        const presences: any[] = [];
+        results?.forEach(([err, data]: [any, any]) => {
+          if (!err && data) {
+            try {
+              const presence = JSON.parse(data);
+              presences.push(presence);
+            } catch (e) {
+              // Silent fail
+            }
+          }
+        });
+        
+        // Atualizar sessões com dados do Redis
+        sessions.forEach((session: any) => {
+          const presence = presences.find(p => p.sessionId === session.id);
+          if (presence) {
+            const now = Date.now();
+            const timeSinceActivity = now - presence.lastActivity;
+            
+            // Considerar online se última atividade foi há menos de 90 segundos
+            session.is_active = timeSinceActivity < 90000;
+            session.last_activity = new Date(presence.lastActivity).toISOString();
+            session.metadata = presence.metadata || {};
+            session.socket_id = presence.socketId;
+          }
+        });
+      }
+    } catch (error) {
+      // Silent fail
+    }
+
+    return sessions;
   }
 
   /**
@@ -829,13 +940,54 @@ export class SupabaseAdminService {
     userId: string,
     performedBy: string,
   ): Promise<void> {
-    // TODO: Implementar quando houver gerenciamento de sessões
-    // Por enquanto, apenas registrar a ação
+    // Buscar todas as sessões do usuário
+    const { data: sessions, error: fetchError } = await this.client
+      .from('auth.sessions')
+      .select('id')
+      .eq('user_id', userId);
+
+    if (fetchError) {
+      throw new Error(`Erro ao buscar sessões: ${fetchError.message}`);
+    }
+
+    // Revogar todas as sessões
+    if (sessions && sessions.length > 0) {
+      const { SessionService } = await import('../../../domain/auth/services/SessionService');
+      const sessionService = new SessionService();
+
+      for (const session of sessions) {
+        await sessionService.revokeSession(session.id);
+      }
+    }
+
+    // Registrar ação no audit log
     await this.logAdminAction({
       type: 'terminate_sessions',
-      description: 'Todas as sessões do usuário foram encerradas',
+      description: `${sessions?.length || 0} sessões encerradas`,
       performedBy,
-      metadata: { userId },
+      metadata: { userId, sessionsCount: sessions?.length || 0 },
+    });
+  }
+
+  /**
+   * Encerra uma sessão específica de um usuário
+   */
+  async terminateUserSession(
+    userId: string,
+    sessionId: string,
+    performedBy: string,
+  ): Promise<void> {
+    // Revogar a sessão específica
+    const { SessionService } = await import('../../../domain/auth/services/SessionService');
+    const sessionService = new SessionService();
+    await sessionService.revokeSession(sessionId);
+
+    // Registrar ação no audit log
+    await this.logAdminAction({
+      type: 'terminate_session',
+      description: `Sessão ${sessionId} encerrada`,
+      performedBy,
+      metadata: { userId, sessionId },
     });
   }
 
@@ -908,7 +1060,7 @@ export class SupabaseAdminService {
    */
   async exportUsers(filters: any = {}): Promise<string> {
     const { users } = await this.listAllUsers({ ...filters, limit: 10000 });
-    
+
     // Criar CSV
     const headers = ['ID', 'Nome', 'Email', 'Role', 'Status', 'Data de Cadastro'];
     const rows = users.map(u => [

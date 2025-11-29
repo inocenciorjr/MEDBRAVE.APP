@@ -1,317 +1,341 @@
 'use client';
 
-import React, { useState } from 'react';
-import { AdminModal } from '@/components/admin/ui/AdminModal';
-import { AdminButton } from '@/components/admin/ui/AdminButton';
-import { AdminSelect } from '@/components/admin/ui/AdminInput';
-import { AdminBadge } from '@/components/admin/ui/AdminBadge';
-import { User } from '@/types/admin/user';
+import React, { useState, useEffect } from 'react';
+import { AdminModal } from '../ui/AdminModal';
+import { AdminButton } from '../ui/AdminButton';
+import { UserStatsCard } from './UserStatsCard';
+import { UserLogsTable } from './UserLogsTable';
+import { UserSessionsTable } from './UserSessionsTable';
+import { UserSecurityAnalysis } from './UserSecurityAnalysis';
+import { UserNotesPanel } from './UserNotesPanel';
+import { SuspendUserModal } from './SuspendUserModal';
+import { BanUserModal } from './BanUserModal';
+import { SendEmailModal } from './SendEmailModal';
+import type { User } from '@/types/admin/user';
+import { getUserById, getUserStatistics, getUserPlans } from '@/services/admin/userService';
 
 interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
   user: User | null;
-  onSave: (userId: string, updates: Partial<User>) => Promise<void>;
+  onSave: (userId: string, updates: any) => Promise<void>;
   onDelete: (userId: string) => Promise<void>;
+  onSuspend: (userId: string, reason: string, duration?: number) => Promise<void>;
+  onActivate: (userId: string) => Promise<void>;
+  onBan: (userId: string, reason: string) => Promise<void>;
+  onSendEmail: (userId: string, subject: string, message: string) => Promise<void>;
+  onAddPlan: (userId: string) => void;
 }
 
-const UserModal: React.FC<UserModalProps> = ({
+export default function UserModal({
   isOpen,
   onClose,
   user,
   onSave,
-  onDelete
-}) => {
-  const [editMode, setEditMode] = useState(false);
-  const [saving, setSaving] = useState(false);
-  const [formData, setFormData] = useState<Partial<User>>({});
+  onDelete,
+  onSuspend,
+  onActivate,
+  onBan,
+  onSendEmail,
+  onAddPlan,
+}: UserModalProps) {
+  const [activeTab, setActiveTab] = useState<'info' | 'plans' | 'stats' | 'logs' | 'sessions' | 'security' | 'notes'>('info');
+  const [loading, setLoading] = useState(false);
+  const [stats, setStats] = useState<any>(null);
+  const [plans, setPlans] = useState<any[]>([]);
+  const [editing, setEditing] = useState(false);
+  const [formData, setFormData] = useState({
+    display_name: '',
+    email: '',
+    role: '',
+  });
+  
+  // Modal states
+  const [showSuspendModal, setShowSuspendModal] = useState(false);
+  const [showBanModal, setShowBanModal] = useState(false);
+  const [showEmailModal, setShowEmailModal] = useState(false);
 
-  React.useEffect(() => {
-    if (user) {
+  useEffect(() => {
+    if (user && isOpen) {
       setFormData({
+        display_name: user.display_name,
+        email: user.email,
         role: user.role,
-        status: user.status
       });
+      loadUserData();
     }
-  }, [user]);
+  }, [user, isOpen]);
+
+  const loadUserData = async () => {
+    if (!user) return;
+    setLoading(true);
+    try {
+      const [statsData, plansData] = await Promise.all([
+        getUserStatistics(user.id),
+        getUserPlans(user.id),
+      ]);
+      setStats(statsData);
+      setPlans(plansData);
+    } catch (error) {
+      console.error('Error loading user data:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSave = async () => {
+    if (!user) return;
+    await onSave(user.id, formData);
+    setEditing(false);
+  };
 
   if (!user) return null;
 
-  const handleSave = async () => {
-    setSaving(true);
-    try {
-      await onSave(user.id, formData);
-      setEditMode(false);
-      onClose();
-    } catch (error) {
-      console.error('Error saving user:', error);
-    } finally {
-      setSaving(false);
-    }
+  const getStatusColor = () => {
+    if (user.is_banned) return 'text-red-600 dark:text-red-400';
+    if (user.is_blocked) return 'text-orange-600 dark:text-orange-400';
+    return 'text-green-600 dark:text-green-400';
   };
 
-  const handleDelete = async () => {
-    if (!confirm('Tem certeza que deseja deletar este usuário? Esta ação não pode ser desfeita.')) {
-      return;
-    }
-
-    setSaving(true);
-    try {
-      await onDelete(user.id);
-      onClose();
-    } catch (error) {
-      console.error('Error deleting user:', error);
-    } finally {
-      setSaving(false);
-    }
+  const getStatusText = () => {
+    if (user.is_banned) return 'Banido';
+    if (user.is_blocked) return 'Suspenso';
+    return 'Ativo';
   };
-
-  const footer = (
-    <div className="flex justify-between items-center w-full">
-      <div>
-        {editMode ? (
-          <AdminButton
-            variant="outline"
-            onClick={() => setEditMode(false)}
-            disabled={saving}
-          >
-            Cancelar Edição
-          </AdminButton>
-        ) : (
-          <AdminButton
-            variant="danger"
-            onClick={handleDelete}
-            disabled={saving}
-          >
-            <span className="material-symbols-outlined text-sm mr-2">delete</span>
-            Deletar Usuário
-          </AdminButton>
-        )}
-      </div>
-      <div className="flex gap-3">
-        <AdminButton
-          variant="outline"
-          onClick={onClose}
-          disabled={saving}
-        >
-          Fechar
-        </AdminButton>
-        {editMode ? (
-          <AdminButton
-            onClick={handleSave}
-            disabled={saving}
-          >
-            {saving ? 'Salvando...' : 'Salvar Alterações'}
-          </AdminButton>
-        ) : (
-          <AdminButton
-            onClick={() => setEditMode(true)}
-          >
-            <span className="material-symbols-outlined text-sm mr-2">edit</span>
-            Editar
-          </AdminButton>
-        )}
-      </div>
-    </div>
-  );
 
   return (
     <AdminModal
       isOpen={isOpen}
       onClose={onClose}
-      title="Detalhes do Usuário"
-      subtitle={user.email}
-      size="lg"
-      footer={footer}
+      title={`Usuário: ${user.display_name}`}
+      size="xl"
     >
       <div className="space-y-6">
-        {/* Informações Básicas */}
-        <div className="bg-background-light dark:bg-background-dark rounded-lg p-4">
-          <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary mb-3 flex items-center gap-2">
-            <span className="material-symbols-outlined text-primary">person</span>
-            Informações Básicas
-          </h4>
-          <div className="grid grid-cols-2 gap-4">
+        {/* Header com Status */}
+        <div className="flex items-center justify-between pb-4 border-b border-border-light dark:border-border-dark">
+          <div className="flex items-center gap-4">
+            {user.photo_url ? (
+              <img src={user.photo_url} alt={user.display_name} className="w-16 h-16 rounded-full" />
+            ) : (
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-primary font-bold text-2xl">{user.display_name?.[0]?.toUpperCase()}</span>
+              </div>
+            )}
             <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Nome</label>
-              <p className="font-medium text-text-light-primary dark:text-text-dark-primary">
-                {user.displayName}
-              </p>
+              <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">{user.display_name}</h3>
+              <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">{user.email}</p>
+              <p className={`text-sm font-medium ${getStatusColor()}`}>{getStatusText()}</p>
             </div>
-            <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Email</label>
-              <p className="font-medium text-text-light-primary dark:text-text-dark-primary">
-                {user.email}
-              </p>
-            </div>
-            <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Telefone</label>
-              <p className="font-medium text-text-light-primary dark:text-text-dark-primary">
-                {user.phoneNumber || 'Não informado'}
-              </p>
-            </div>
-            <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Data de Criação</label>
-              <p className="font-medium text-text-light-primary dark:text-text-dark-primary">
-                {new Date(user.createdAt).toLocaleDateString('pt-BR')}
-              </p>
-            </div>
+          </div>
+          <div className="flex gap-2">
+            {!user.is_blocked && !user.is_banned && (
+              <AdminButton size="sm" variant="outline" onClick={() => setShowSuspendModal(true)} icon="block">
+                Suspender
+              </AdminButton>
+            )}
+            {user.is_blocked && !user.is_banned && (
+              <AdminButton size="sm" variant="outline" onClick={() => onActivate(user.id)} icon="check_circle">
+                Ativar
+              </AdminButton>
+            )}
+            {!user.is_banned && (
+              <AdminButton size="sm" variant="danger" onClick={() => setShowBanModal(true)} icon="gavel">
+                Banir
+              </AdminButton>
+            )}
+            <AdminButton size="sm" variant="outline" onClick={() => setShowEmailModal(true)} icon="mail">
+              Enviar Email
+            </AdminButton>
           </div>
         </div>
 
-        {/* Role e Status */}
-        <div className="bg-background-light dark:bg-background-dark rounded-lg p-4">
-          <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary mb-3 flex items-center gap-2">
-            <span className="material-symbols-outlined text-primary">badge</span>
-            Role e Status
-          </h4>
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-2 block">
-                Role
-              </label>
-              {editMode ? (
-                <AdminSelect
-                  value={formData.role || user.role}
-                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setFormData({ ...formData, role: e.target.value as any })}
-                  options={[
-                    { value: 'STUDENT', label: 'Estudante' },
-                    { value: 'TEACHER', label: 'Professor' },
-                    { value: 'MENTOR', label: 'Mentor' },
-                    { value: 'ADMIN', label: 'Administrador' }
-                  ]}
-                />
-              ) : (
-                <AdminBadge 
-                  label={user.role}
-                  variant={user.role === 'ADMIN' ? 'error' : 'info'}
-                />
-              )}
-            </div>
-            <div>
-              <label className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-2 block">
-                Status
-              </label>
-              {editMode ? (
-                <AdminSelect
-                  value={formData.status || user.status}
-                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setFormData({ ...formData, status: e.target.value as any })}
-                  options={[
-                    { value: 'ACTIVE', label: 'Ativo' },
-                    { value: 'INACTIVE', label: 'Inativo' },
-                    { value: 'SUSPENDED', label: 'Suspenso' },
-                    { value: 'PENDING_EMAIL_VERIFICATION', label: 'Aguardando Verificação' }
-                  ]}
-                />
-              ) : (
-                <AdminBadge 
-                  label={user.status}
-                  variant={user.status === 'ACTIVE' ? 'success' : 'error'}
-                />
-              )}
-            </div>
-          </div>
+        {/* Tabs */}
+        <div className="flex gap-2 border-b border-border-light dark:border-border-dark overflow-x-auto">
+          {[
+            { id: 'info', label: 'Informações', icon: 'person' },
+            { id: 'plans', label: `Planos (${plans.length})`, icon: 'credit_card' },
+            { id: 'stats', label: 'Estatísticas', icon: 'bar_chart' },
+            { id: 'sessions', label: 'Sessões', icon: 'devices' },
+            { id: 'security', label: 'Segurança', icon: 'security' },
+            { id: 'logs', label: 'Logs', icon: 'history' },
+            { id: 'notes', label: 'Notas', icon: 'note' },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id as any)}
+              className={`flex items-center gap-2 px-4 py-2 font-medium transition-all whitespace-nowrap ${
+                activeTab === tab.id
+                  ? 'text-primary border-b-2 border-primary'
+                  : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-text-light-primary dark:hover:text-text-dark-primary'
+              }`}
+            >
+              <span className="material-symbols-outlined text-sm">
+                {tab.icon}
+              </span>
+              {tab.label}
+            </button>
+          ))}
         </div>
 
-        {/* Estatísticas de Estudo */}
-        {user.stats && (
-          <div className="bg-primary/5 rounded-lg p-4">
-            <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
-              <span className="material-symbols-outlined">analytics</span>
-              Estatísticas de Estudo
-            </h4>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center">
-                <p className="text-2xl font-bold text-primary">
-                  {user.stats.questionsAnswered}
-                </p>
-                <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                  Questões Respondidas
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold text-green-600">
-                  {user.stats.questionsAnswered > 0
-                    ? Math.round((user.stats.questionsCorrect / user.stats.questionsAnswered) * 100)
-                    : 0}%
-                </p>
-                <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                  Taxa de Acerto
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold text-orange-600">
-                  {user.stats.streak}
-                </p>
-                <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                  Dias de Streak
-                </p>
-              </div>
+        {/* Tab Content */}
+        <div className="min-h-[300px]">
+          {activeTab === 'info' && (
+            <div className="space-y-4">
+              {editing ? (
+                <>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Nome</label>
+                    <input
+                      type="text"
+                      value={formData.display_name}
+                      onChange={(e) => setFormData({ ...formData, display_name: e.target.value })}
+                      className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Email</label>
+                    <input
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Role</label>
+                    <select
+                      value={formData.role}
+                      onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                      className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark"
+                    >
+                      <option value="STUDENT">Estudante</option>
+                      <option value="ADMIN">Admin</option>
+                      <option value="MODERATOR">Moderador</option>
+                    </select>
+                  </div>
+                  <div className="flex gap-2">
+                    <AdminButton onClick={handleSave} icon="save">Salvar</AdminButton>
+                    <AdminButton variant="outline" onClick={() => setEditing(false)}>Cancelar</AdminButton>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">ID</p>
+                      <p className="font-mono text-sm">{user.id}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Role</p>
+                      <p className="font-medium">{user.role}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Cadastro</p>
+                      <p>{new Date(user.created_at).toLocaleString('pt-BR')}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Último Login</p>
+                      <p>{user.last_login_at ? new Date(user.last_login_at).toLocaleString('pt-BR') : 'Nunca'}</p>
+                    </div>
+                  </div>
+                  <AdminButton onClick={() => setEditing(true)} icon="edit">Editar</AdminButton>
+                </>
+              )}
             </div>
-            <div className="grid grid-cols-3 gap-4 mt-4">
-              <div className="text-center">
-                <p className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
-                  {user.stats.flashcardsReviewed}
-                </p>
-                <p className="text-xs text-text-light-tertiary dark:text-text-dark-tertiary">
-                  Flashcards Revisados
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
-                  {user.stats.simulatedTestsCompleted}
-                </p>
-                <p className="text-xs text-text-light-tertiary dark:text-text-dark-tertiary">
-                  Simulados Completos
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
-                  {user.stats.level}
-                </p>
-                <p className="text-xs text-text-light-tertiary dark:text-text-dark-tertiary">
-                  Nível
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+          )}
 
-        {/* Biografia */}
-        {user.biography && (
-          <div className="bg-background-light dark:bg-background-dark rounded-lg p-4">
-            <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary mb-2 flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">description</span>
-              Biografia
-            </h4>
-            <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-              {user.biography}
-            </p>
-          </div>
-        )}
-
-        {/* Especialidades (para mentores/professores) */}
-        {user.specialties && user.specialties.length > 0 && (
-          <div className="bg-background-light dark:bg-background-dark rounded-lg p-4">
-            <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary mb-2 flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">school</span>
-              Especialidades
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {user.specialties.map((specialty, index) => (
-                <AdminBadge 
-                  key={index} 
-                  label={specialty}
-                  variant="info" 
-                  size="sm"
-                />
-              ))}
+          {activeTab === 'plans' && (
+            <div className="space-y-4">
+              <AdminButton onClick={() => onAddPlan(user.id)} icon="add">Adicionar Plano</AdminButton>
+              {plans.length === 0 ? (
+                <p className="text-center text-text-light-secondary dark:text-text-dark-secondary py-8">
+                  Nenhum plano encontrado
+                </p>
+              ) : (
+                <div className="space-y-2">
+                  {plans.map((plan) => (
+                    <div key={plan.id} className="p-4 bg-background-light dark:bg-background-dark rounded-xl">
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <p className="font-medium">{plan.plans?.name || 'Plano Desconhecido'}</p>
+                          <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                            {new Date(plan.start_date).toLocaleDateString('pt-BR')} - {new Date(plan.end_date).toLocaleDateString('pt-BR')}
+                          </p>
+                        </div>
+                        <span className={`px-2 py-1 text-xs rounded-full ${
+                          plan.status === 'ACTIVE' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300'
+                        }`}>
+                          {plan.status}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
-        )}
+          )}
+
+          {activeTab === 'stats' && (
+            <div>
+              {stats ? (
+                <UserStatsCard stats={stats} loading={loading} />
+              ) : (
+                <p className="text-center text-text-light-secondary dark:text-text-dark-secondary py-8">
+                  Nenhuma estatística disponível
+                </p>
+              )}
+            </div>
+          )}
+
+          {activeTab === 'logs' && user && (
+            <UserLogsTable userId={user.id} />
+          )}
+
+          {activeTab === 'sessions' && user && (
+            <UserSessionsTable userId={user.id} />
+          )}
+
+          {activeTab === 'security' && user && (
+            <UserSecurityAnalysis userId={user.id} />
+          )}
+
+          {activeTab === 'notes' && user && (
+            <UserNotesPanel userId={user.id} />
+          )}
+        </div>
+
+        {/* Footer Actions */}
+        <div className="flex justify-between pt-4 border-t border-border-light dark:border-border-dark">
+          <AdminButton variant="danger" onClick={() => onDelete(user.id)} icon="delete">
+            Deletar Usuário
+          </AdminButton>
+          <AdminButton variant="outline" onClick={onClose}>
+            Fechar
+          </AdminButton>
+        </div>
       </div>
+
+      {/* Sub-Modals */}
+      <SuspendUserModal
+        isOpen={showSuspendModal}
+        onClose={() => setShowSuspendModal(false)}
+        user={user}
+        onConfirm={onSuspend}
+      />
+
+      <BanUserModal
+        isOpen={showBanModal}
+        onClose={() => setShowBanModal(false)}
+        user={user}
+        onConfirm={onBan}
+      />
+
+      <SendEmailModal
+        isOpen={showEmailModal}
+        onClose={() => setShowEmailModal(false)}
+        user={user}
+        onConfirm={onSendEmail}
+      />
     </AdminModal>
   );
-};
-
-export default UserModal;
+}

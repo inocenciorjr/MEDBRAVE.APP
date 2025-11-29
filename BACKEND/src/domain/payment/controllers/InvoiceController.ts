@@ -159,7 +159,7 @@ export class InvoiceController {
 
       if (!userId) {
         userId = authenticatedUserId;
-      } else if (userId !== authenticatedUserId && role !== 'admin') {
+      } else if (userId !== authenticatedUserId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar faturas de outros usuários',

@@ -1,175 +1,144 @@
 /**
- * Base service with utility functions for admin API calls
+ * Base Service
+ * Provides common HTTP methods for API calls
  */
 
-import type { ApiResponse } from '@/types/admin/common';
-import { fetchWithAuth as fetchWithAuthUtil } from '@/lib/utils/fetchWithAuth';
+const API_BASE_URL = '/api';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 1000; // 1 second
-
-/**
- * Custom error class for API errors
- */
-export class ApiError extends Error {
-  constructor(
-    message: string,
-    public status?: number,
-    public data?: any
-  ) {
-    super(message);
-    this.name = 'ApiError';
-  }
+interface RequestOptions extends RequestInit {
+  params?: Record<string, any>;
 }
 
 /**
- * Sleep utility for retry delays
+ * Get auth token from Supabase
  */
-const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-
-/**
- * Enhanced fetch with authentication and error handling
- * Usa o fetchWithAuth centralizado que gerencia tokens automaticamente
- */
-export async function fetchWithAuth(
-  endpoint: string,
-  options: RequestInit = {},
-  retries = 0
-): Promise<Response> {
-  try {
-    // Usar o fetchWithAuth centralizado que já gerencia tokens e retry
-    const response = await fetchWithAuthUtil(endpoint, options);
-
-    // Handle authentication errors
-    if (response.status === 401) {
-      // Clear auth and redirect to login
-      if (typeof window !== 'undefined') {
-        localStorage.removeItem('auth_token');
-        window.location.href = '/login';
-      }
-      throw new ApiError('Unauthorized', 401);
-    }
-
-    // Handle forbidden errors
-    if (response.status === 403) {
-      throw new ApiError('Forbidden - insufficient permissions', 403);
-    }
-
-    // Handle not found errors
-    if (response.status === 404) {
-      throw new ApiError('Resource not found', 404);
-    }
-
-    // Handle server errors with retry logic
-    if (response.status >= 500 && retries < MAX_RETRIES) {
-      console.warn(`Server error, retrying... (${retries + 1}/${MAX_RETRIES})`);
-      await sleep(RETRY_DELAY * (retries + 1));
-      return fetchWithAuth(endpoint, options, retries + 1);
-    }
-
-    return response;
-  } catch (error) {
-    // Network errors - retry
-    if (retries < MAX_RETRIES && error instanceof TypeError) {
-      console.warn(`Network error, retrying... (${retries + 1}/${MAX_RETRIES})`);
-      await sleep(RETRY_DELAY * (retries + 1));
-      return fetchWithAuth(endpoint, options, retries + 1);
-    }
-
-    throw error;
-  }
-}
-
-/**
- * Parse API response with error handling
- */
-export async function parseResponse<T>(response: Response): Promise<T> {
-  const contentType = response.headers.get('content-type');
+async function getAuthToken(): Promise<string | null> {
+  if (typeof window === 'undefined') return null;
   
-  if (contentType?.includes('application/json')) {
-    const data = await response.json();
-    
-    if (!response.ok) {
-      throw new ApiError(
-        data.message || data.error || 'An error occurred',
-        response.status,
-        data
-      );
-    }
-    
-    return data;
+  try {
+    const { createClient } = await import('@/lib/supabase/client');
+    const supabase = createClient();
+    const { data: { session } } = await supabase.auth.getSession();
+    return session?.access_token || null;
+  } catch (error) {
+    console.error('❌ [BaseService] Erro ao obter token:', error);
+    return null;
   }
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new ApiError(text || 'An error occurred', response.status);
-  }
-
-  return response.text() as any;
-}
-
-/**
- * GET request helper
- */
-export async function get<T>(endpoint: string): Promise<T> {
-  const response = await fetchWithAuth(endpoint, { method: 'GET' });
-  return parseResponse<T>(response);
-}
-
-/**
- * POST request helper
- */
-export async function post<T>(endpoint: string, data?: any): Promise<T> {
-  const response = await fetchWithAuth(endpoint, {
-    method: 'POST',
-    body: data ? JSON.stringify(data) : undefined,
-  });
-  return parseResponse<T>(response);
-}
-
-/**
- * PUT request helper
- */
-export async function put<T>(endpoint: string, data?: any): Promise<T> {
-  const response = await fetchWithAuth(endpoint, {
-    method: 'PUT',
-    body: data ? JSON.stringify(data) : undefined,
-  });
-  return parseResponse<T>(response);
-}
-
-/**
- * PATCH request helper
- */
-export async function patch<T>(endpoint: string, data?: any): Promise<T> {
-  const response = await fetchWithAuth(endpoint, {
-    method: 'PATCH',
-    body: data ? JSON.stringify(data) : undefined,
-  });
-  return parseResponse<T>(response);
-}
-
-/**
- * DELETE request helper
- */
-export async function del<T>(endpoint: string): Promise<T> {
-  const response = await fetchWithAuth(endpoint, { method: 'DELETE' });
-  return parseResponse<T>(response);
 }
 
 /**
  * Build query string from params object
  */
-export function buildQueryString(params: Record<string, any>): string {
-  const searchParams = new URLSearchParams();
+export function buildQueryString(params: Record<string, any> = {}): string {
+  const filtered = Object.entries(params)
+    .filter(([_, value]) => value !== undefined && value !== null && value !== '')
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
   
-  Object.entries(params).forEach(([key, value]) => {
-    if (value !== undefined && value !== null && value !== '') {
-      searchParams.append(key, String(value));
-    }
+  return filtered.length > 0 ? `?${filtered.join('&')}` : '';
+}
+
+/**
+ * Make HTTP request
+ */
+async function request<T>(
+  endpoint: string,
+  options: RequestOptions = {}
+): Promise<T> {
+  const token = await getAuthToken();
+  
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+    ...options.headers,
+  };
+
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+  }
+
+  const url = `${API_BASE_URL}${endpoint}`;
+  
+  const response = await fetch(url, {
+    ...options,
+    headers,
   });
-  
-  const queryString = searchParams.toString();
-  return queryString ? `?${queryString}` : '';
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    let error;
+    try {
+      error = JSON.parse(errorText);
+    } catch {
+      error = { message: errorText || 'Request failed' };
+    }
+    
+    console.error('❌ [BaseService] Request failed:', {
+      url,
+      status: response.status,
+      statusText: response.statusText,
+      error,
+      errorText
+    });
+    throw new Error(error.message || error.error || `HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  return response.json();
+}
+
+/**
+ * GET request
+ */
+export async function get<T>(endpoint: string, options?: RequestOptions): Promise<T> {
+  return request<T>(endpoint, { ...options, method: 'GET' });
+}
+
+/**
+ * POST request
+ */
+export async function post<T>(
+  endpoint: string,
+  data?: any,
+  options?: RequestOptions
+): Promise<T> {
+  return request<T>(endpoint, {
+    ...options,
+    method: 'POST',
+    body: data ? JSON.stringify(data) : undefined,
+  });
+}
+
+/**
+ * PUT request
+ */
+export async function put<T>(
+  endpoint: string,
+  data?: any,
+  options?: RequestOptions
+): Promise<T> {
+  return request<T>(endpoint, {
+    ...options,
+    method: 'PUT',
+    body: data ? JSON.stringify(data) : undefined,
+  });
+}
+
+/**
+ * DELETE request
+ */
+export async function del<T>(endpoint: string, options?: RequestOptions): Promise<T> {
+  return request<T>(endpoint, { ...options, method: 'DELETE' });
+}
+
+/**
+ * PATCH request
+ */
+export async function patch<T>(
+  endpoint: string,
+  data?: any,
+  options?: RequestOptions
+): Promise<T> {
+  return request<T>(endpoint, {
+    ...options,
+    method: 'PATCH',
+    body: data ? JSON.stringify(data) : undefined,
+  });
 }

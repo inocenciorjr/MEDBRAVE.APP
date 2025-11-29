@@ -15,8 +15,6 @@ export function useSessionMonitor(userId: string | undefined) {
   useEffect(() => {
     if (!userId) return;
 
-    console.log('🔔 [SessionMonitor] Iniciando monitoramento de sessão para:', userId);
-
     // Criar canal de realtime
     const channel = supabase
       .channel(`session-monitor-${userId}`)
@@ -43,9 +41,7 @@ export function useSessionMonitor(userId: string | undefined) {
           }
         }
       )
-      .subscribe((status) => {
-        console.log('🔔 [SessionMonitor] Status da inscrição:', status);
-      });
+      .subscribe();
 
     channelRef.current = channel;
 

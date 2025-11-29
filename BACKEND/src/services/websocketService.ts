@@ -16,7 +16,7 @@ class WebSocketService {
         methods: ['GET', 'POST'],
         credentials: false, // Desabilitar credentials quando origin é *
       },
-      path: '/socket.io',
+      path: '/socket.io/jobs',
     });
 
     this.setupEventHandlers();
@@ -143,6 +143,11 @@ class WebSocketService {
         subscribers: clients.size,
       })),
     };
+  }
+
+  // Obter instância do Socket.IO para reutilização
+  public getIO(): SocketIOServer | null {
+    return this.io;
   }
 }
 

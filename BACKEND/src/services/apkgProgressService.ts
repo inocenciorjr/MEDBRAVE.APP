@@ -19,7 +19,7 @@ class ApkgProgressService {
         methods: ['GET', 'POST'],
         credentials: true,
       },
-      path: '/socket.io',
+      path: '/socket.io/apkg',
     });
 
     this.io.on('connection', (socket) => {

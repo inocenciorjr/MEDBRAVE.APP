@@ -9,11 +9,13 @@ import { UserPlanStatusBadge } from '@/components/admin/user-plans/UserPlanStatu
 import { PaymentMethodBadge } from '@/components/admin/user-plans/PaymentMethodBadge';
 import { CancelUserPlanModal } from '@/components/admin/user-plans/CancelUserPlanModal';
 import { RenewUserPlanModal } from '@/components/admin/user-plans/RenewUserPlanModal';
+import { EditUserPlanDatesModal } from '@/components/admin/user-plans/EditUserPlanDatesModal';
 import type { UserPlan, PaymentMethod } from '@/types/admin/plan';
 import {
   getUserPlanById,
   cancelUserPlan,
   renewUserPlan,
+  updateUserPlanDates,
 } from '@/services/admin/userPlanService';
 
 export default function UserPlanDetailsPage() {
@@ -26,6 +28,7 @@ export default function UserPlanDetailsPage() {
   const [error, setError] = useState<string | null>(null);
   const [cancelModal, setCancelModal] = useState(false);
   const [renewModal, setRenewModal] = useState(false);
+  const [editDatesModal, setEditDatesModal] = useState(false);
 
   useEffect(() => {
     loadUserPlan();

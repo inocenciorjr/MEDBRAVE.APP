@@ -68,7 +68,7 @@ export class UserPlanController {
     userPlanUserId: string,
     role: string,
   ): void {
-    if (userId !== userPlanUserId && role !== 'admin') {
+    if (userId !== userPlanUserId && role !== 'ADMIN') {
       throw new AppError(
         ErrorStatusCodes[ErrorCodes.FORBIDDEN],
         'Você não tem permissão para acessar este plano',

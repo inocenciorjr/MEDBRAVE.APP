@@ -66,7 +66,7 @@ export class SupabaseAdminRepository implements IAdminRepository {
    */
   async create(
     userId: string,
-    role: 'admin' | 'superadmin',
+    adminRole: 'admin' | 'superadmin',
     permissions: string[],
   ): Promise<string> {
     try {
@@ -76,7 +76,7 @@ export class SupabaseAdminRepository implements IAdminRepository {
         .from(this.table)
         .insert({
           id: userId,
-          role,
+          admin_role: adminRole,
           permissions,
           created_at: now,
           updated_at: now,
@@ -152,7 +152,7 @@ export class SupabaseAdminRepository implements IAdminRepository {
   private mapToAdminUser(data: any): AdminUser {
     return {
       id: data.id,
-      role: data.role,
+      adminRole: data.admin_role,
       permissions: data.permissions || [],
       createdAt: new Date(data.created_at),
       updatedAt: new Date(data.updated_at),

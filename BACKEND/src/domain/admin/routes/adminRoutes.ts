@@ -46,6 +46,7 @@ export function createAdminRoutes(
   router.post('/users/:id/ban', userController.banUser.bind(userController));
   router.put('/users/:id/role', userController.updateUserRole.bind(userController));
   router.post('/users/:id/terminate-sessions', userController.terminateSessions.bind(userController));
+  router.delete('/users/:id/sessions/:sessionId', userController.terminateSession.bind(userController));
   router.post('/users/:id/send-email', userController.sendEmail.bind(userController));
 
   // Rotas de informações do usuário
@@ -55,6 +56,17 @@ export function createAdminRoutes(
   router.get('/users/:id/sessions', userController.getUserSessions.bind(userController));
   router.get('/users/:id/notes', userController.getUserNotes.bind(userController));
   router.post('/users/:id/notes', userController.addUserNote.bind(userController));
+  
+  // Rotas de segurança e monitoramento
+  router.get('/users/:id/security-analysis', userController.getUserSecurityAnalysis.bind(userController));
+  router.get('/users/:id/ip-location/:ip', userController.getIPLocation.bind(userController));
+  router.get('/security/scan', userController.scanAllUsersForSuspiciousActivity.bind(userController));
+  
+  // Rotas de presença em tempo real (serão adicionadas quando PresenceController for integrado)
+  // router.get('/presence/online', presenceController.getOnlineUsers.bind(presenceController));
+  // router.get('/presence/users/:userId', presenceController.getUserPresence.bind(presenceController));
+  // router.get('/presence/stats', presenceController.getPresenceStats.bind(presenceController));
+  // router.post('/presence/users/:userId/disconnect', presenceController.disconnectUser.bind(presenceController));
 
   // ==========================================
   // ROTAS DE ADMINISTRADORES
@@ -76,7 +88,7 @@ export function createAdminRoutes(
 
   // Rotas de alteração de role (apenas admin pode alterar role de outros usuários)
   router.put('/:id/role', (req, res) => {
-    if (req.user?.role !== 'admin') {
+    if (req.user?.user_role !== 'ADMIN') {
       return res.status(403).json({
         error:
           'Apenas administradores podem alterar a role de outros usuários.',

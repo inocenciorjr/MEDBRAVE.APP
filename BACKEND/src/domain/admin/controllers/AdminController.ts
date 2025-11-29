@@ -100,7 +100,7 @@ export class AdminController {
       const data = validationResult.data;
       // createAdmin espera um objeto Omit<AdminUser, 'id' | 'createdAt' | 'updatedAt'>
       const newAdmin = await this.adminService.createAdmin({
-        role: data.role,
+        adminRole: data.role,
         permissions: data.permissions || [],
         userId: data.userId,
       });

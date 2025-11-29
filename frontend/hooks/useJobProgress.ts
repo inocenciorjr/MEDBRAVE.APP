@@ -47,7 +47,7 @@ export function useJobProgress(jobId: string | null): UseJobProgressReturn {
     console.log('🔌 Conectando Socket.IO em:', backendUrl);
     
     const socket = io(backendUrl, {
-      path: '/socket.io',
+      path: '/socket.io/jobs',
       transports: ['polling'], // Apenas polling por enquanto (mais compatível)
       reconnection: true,
       reconnectionDelay: 1000,

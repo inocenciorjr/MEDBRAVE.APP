@@ -1,6 +1,6 @@
 export interface AdminUser {
   id: string;
-  role: 'admin' | 'superadmin';
+  adminRole: 'admin' | 'superadmin';
   permissions: string[];
   createdAt: Date;
   updatedAt: Date;

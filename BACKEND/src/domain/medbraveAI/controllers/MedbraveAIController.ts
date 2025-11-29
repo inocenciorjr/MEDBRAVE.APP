@@ -395,7 +395,7 @@ export class MedbraveAIController {
 
       // Verificar se é admin
       if ((req.user?.user_role || '').toUpperCase() !== "ADMIN") {
-        console.log("❌ Acesso negado - usuário não é admin:", req.user?.role);
+        console.log("❌ Acesso negado - usuário não é admin:", req.user?.user_role);
         return res.status(403).json({
           success: false,
           error:

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Socket.IO</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Test Socket.IO Connection</h1>
+    <div id="status">Connecting...</div>
+    <div id="logs"></div>
+
+    <script>
+        const logs = document.getElementById('logs');
+        const status = document.getElementById('status');
+        
+        function log(message) {
+            const p = document.createElement('p');
+            p.textContent = new Date().toISOString() + ' - ' + message;
+            logs.appendChild(p);
+            console.log(message);
+        }
+
+        log('Tentando conectar ao Socket.IO...');
+        log('URL: http://localhost:5000');
+        log('Path: /socket.io/presence');
+
+        const socket = io('http://localhost:5000', {
+            path: '/socket.io/presence',
+            transports: ['polling'], // Apenas polling
+            upgrade: false,
+        });
+
+        socket.on('connect', () => {
+            log('✅ CONECTADO! Socket ID: ' + socket.id);
+            status.textContent = '✅ CONECTADO';
+            status.style.color = 'green';
+        });
+
+        socket.on('disconnect', () => {
+            log('⚠️ Desconectado');
+            status.textContent = '⚠️ Desconectado';
+            status.style.color = 'orange';
+        });
+
+        socket.on('connect_error', (error) => {
+            log('❌ Erro de conexão: ' + error.message);
+            log('Tipo: ' + error.type);
+            log('Description: ' + error.description);
+            status.textContent = '❌ Erro: ' + error.message;
+            status.style.color = 'red';
+        });
+    </script>
+</body>
+</html>

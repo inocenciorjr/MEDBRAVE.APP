@@ -188,9 +188,9 @@ export class PaymentController {
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem acessar
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = req.user?.user_role;
 
-      if (payment.userId !== userId && role !== 'admin') {
+      if (payment.userId !== userId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para acessar este pagamento',
@@ -237,11 +237,11 @@ export class PaymentController {
       // Permitir que um usuário veja apenas seus próprios pagamentos ou que um admin veja de qualquer um
       let userId = req.params.userId || (req.query.userId as string);
       const authenticatedUserId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = req.user?.user_role;
 
       if (!userId) {
         userId = authenticatedUserId;
-      } else if (userId !== authenticatedUserId && role !== 'admin') {
+      } else if (userId !== authenticatedUserId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para visualizar pagamentos de outros usuários',
@@ -310,9 +310,9 @@ export class PaymentController {
 
       // Verificar permissão: apenas o próprio usuário ou administradores podem processar
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = req.user?.user_role;
 
-      if (payment.userId !== userId && role !== 'admin') {
+      if (payment.userId !== userId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para processar este pagamento',
@@ -377,9 +377,9 @@ export class PaymentController {
       // Verificar permissão: apenas o próprio usuário (se o pagamento estiver pendente)
       // ou administradores podem cancelar
       const userId = this.getAuthenticatedUserId(req);
-      const role = req.user?.role;
+      const role = req.user?.user_role;
 
-      if (payment.userId !== userId && role !== 'admin') {
+      if (payment.userId !== userId && role !== 'ADMIN') {
         throw new AppError(
           ErrorStatusCodes[ErrorCodes.FORBIDDEN],
           'Você não tem permissão para cancelar este pagamento',
@@ -390,7 +390,7 @@ export class PaymentController {
       // Usuários normais só podem cancelar pagamentos pendentes
       if (
         payment.userId === userId &&
-        role !== 'admin' &&
+        role !== 'ADMIN' &&
         payment.status !== PaymentStatus.PENDING
       ) {
         throw new AppError(

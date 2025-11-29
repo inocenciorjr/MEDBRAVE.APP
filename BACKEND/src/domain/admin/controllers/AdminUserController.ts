@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { SupabaseAdminService } from '../../../infra/admin/supabase/SupabaseAdminService';
+import { SecurityMonitorService } from '../../auth/services/SecurityMonitorService';
 import { z } from 'zod';
 
 /**
@@ -7,9 +8,11 @@ import { z } from 'zod';
  */
 export class AdminUserController {
   private adminService: SupabaseAdminService;
+  private securityMonitor: SecurityMonitorService;
 
   constructor(adminService: SupabaseAdminService) {
     this.adminService = adminService;
+    this.securityMonitor = new SecurityMonitorService();
   }
 
   /**
@@ -369,6 +372,26 @@ export class AdminUserController {
   }
 
   /**
+   * DELETE /api/admin/users/:id/sessions/:sessionId
+   * Encerra uma sessão específica de um usuário
+   */
+  async terminateSession(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { id, sessionId } = req.params;
+      const performedBy = (req as any).user?.id || 'system';
+      
+      await this.adminService.terminateUserSession(id, sessionId, performedBy);
+
+      res.status(200).json({
+        success: true,
+        message: 'Sessão encerrada com sucesso',
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  /**
    * POST /api/admin/users/:id/send-email
    * Envia email para um usuário
    */
@@ -545,6 +568,67 @@ export class AdminUserController {
       res.status(200).json({
         success: true,
         message: `${validationResult.data.userIds.length} usuários atualizados com sucesso`,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  /**
+   * GET /api/admin/users/:id/security-analysis
+   * Analisa atividade de segurança de um usuário
+   */
+  async getUserSecurityAnalysis(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { id } = req.params;
+      
+      const [activity, suspicious] = await Promise.all([
+        this.securityMonitor.analyzeUserSessionActivity(id),
+        this.securityMonitor.detectSuspiciousActivity(id),
+      ]);
+
+      res.status(200).json({
+        success: true,
+        data: {
+          activity,
+          suspicious,
+        },
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  /**
+   * GET /api/admin/security/scan
+   * Escaneia todos os usuários em busca de atividades suspeitas
+   */
+  async scanAllUsersForSuspiciousActivity(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const suspicious = await this.securityMonitor.scanAllUsersForSuspiciousActivity();
+
+      res.status(200).json({
+        success: true,
+        data: suspicious,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  /**
+   * GET /api/admin/users/:id/ip-location/:ip
+   * Obtém localização de um IP
+   */
+  async getIPLocation(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { ip } = req.params;
+      
+      const location = await this.securityMonitor.getIPLocation(ip);
+
+      res.status(200).json({
+        success: true,
+        data: location,
       });
     } catch (error) {
       next(error);

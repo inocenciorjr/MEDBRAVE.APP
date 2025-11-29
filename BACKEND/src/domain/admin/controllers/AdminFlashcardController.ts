@@ -74,7 +74,7 @@ export class AdminFlashcardController {
 
       // Se for admin, buscar todos os decks; se não, buscar apenas os do usuário
       const isAdmin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.isAdmin;
+        user.role === 'ADMIN' || user.isAdmin;
 
       // OTIMIZAÇÃO: Query única para buscar decks e metadados
       let query = this.client.from('decks').select('*');
@@ -401,7 +401,7 @@ export class AdminFlashcardController {
 
       const deck_data = deck;
       const is_admin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.is_admin;
+        user.role === 'ADMIN' || user.is_admin;
 
       console.log("[DELETE_DECK] Dados do deck:", {
         deck_user_id: deck_data?.user_id,
@@ -498,7 +498,7 @@ throw deckError;
       }
 
       const is_admin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.is_admin;
+        user.role === 'ADMIN' || user.is_admin;
       const results: {
         success: Array<{ id: string; name: string; cards_deleted: number }>;
         failed: Array<{ id: string; error: string }>;
@@ -696,7 +696,7 @@ throw deckError;
 
       // Se for admin, buscar estatísticas globais; se não, buscar apenas do usuário
       const is_admin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.is_admin;
+        user.role === 'ADMIN' || user.is_admin;
 
       let total_decks = 0;
       let public_decks = 0;
@@ -1542,7 +1542,7 @@ updateData.notes = notes;
       }
 
       const isAdmin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.isAdmin;
+        user.role === 'ADMIN' || user.isAdmin;
 
       // QUERY SUPER OTIMIZADA: Apenas campos necessários
       let query: any = this.client.from('decks');
@@ -1658,7 +1658,7 @@ return;
       }
 
       const isAdmin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.isAdmin;
+        user.role === 'ADMIN' || user.isAdmin;
 
       // Query para decks da coleção específica
       let query: any = this.client.from('decks');
@@ -1746,7 +1746,7 @@ return;
       }
 
       const isAdmin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.isAdmin;
+        user.role === 'ADMIN' || user.isAdmin;
 
       // 🔍 BUSCA MELHORADA: Buscar todos os decks primeiro, depois filtrar
       let searchQuery: any = this.client.from('decks');
@@ -1967,7 +1967,7 @@ return;
       }
 
       const isAdmin =
-        user.role === 'ADMIN' || user.role === 'admin' || user.isAdmin;
+        user.role === 'ADMIN' || user.isAdmin;
 
       // Buscar todos os decks do usuário
       let decksQuery: any = this.client.from('decks');

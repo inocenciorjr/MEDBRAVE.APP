@@ -12,6 +12,7 @@ import { setupWebSocketServer } from './websocket/webSocketServer';
 import { draftCleanupService } from './services/draftCleanupService';
 import { websocketService } from './services/websocketService';
 import { apkgProgressService } from './services/apkgProgressService';
+import { SocketService } from './services/socketService';
 
 // Configuração do servidor
 const PORT = env.PORT;
@@ -28,10 +29,20 @@ async function startServer() {
   // Configurar WebSocket server (ws nativo)
   setupWebSocketServer(server);
   
-  // Configurar Socket.IO para progresso de jobs
+  // Configurar Socket.IO para presença em tempo real (path: /socket.io/presence) - PRIMEIRO
+  try {
+    logger.info('🔄 Inicializando SocketService para presença...');
+    const socketService = new SocketService(server);
+    logger.info('✅ Socket.IO presence service initialized on /socket.io/presence');
+  } catch (error) {
+    logger.error('❌ Erro ao inicializar SocketService:', error);
+    // Não bloquear o servidor se Socket.IO falhar
+  }
+  
+  // Configurar Socket.IO para progresso de jobs (path: /socket.io/jobs)
   websocketService.initialize(server);
   
-  // Configurar Socket.IO para progresso de importação APKG
+  // Configurar Socket.IO para progresso de importação APKG (path: /socket.io/apkg)
   apkgProgressService.initialize(server);
 
   // Iniciar servidor

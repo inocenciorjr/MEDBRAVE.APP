@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AdminButton } from '@/components/admin/ui/AdminButton';
+import { AdminButton } from '../ui/AdminButton';
 
 interface BulkActionsBarProps {
   selectedCount: number;
@@ -11,63 +11,72 @@ interface BulkActionsBarProps {
   onCancel: () => void;
 }
 
-const BulkActionsBar: React.FC<BulkActionsBarProps> = ({
+export default function BulkActionsBar({
   selectedCount,
   onActivate,
   onSuspend,
   onDelete,
-  onCancel
-}) => {
+  onCancel,
+}: BulkActionsBarProps) {
   if (selectedCount === 0) return null;
 
   return (
-    <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 mb-6 animate-in fade-in slide-in-from-top-2 duration-300">
-      <div className="flex items-center justify-between">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-slide-up">
+      <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl dark:shadow-dark-2xl border-2 border-primary px-6 py-4">
         <div className="flex items-center gap-4">
-          <span className="text-primary font-medium flex items-center gap-2">
-            <span className="material-symbols-outlined">check_circle</span>
-            {selectedCount} usuário{selectedCount > 1 ? 's' : ''} selecionado{selectedCount > 1 ? 's' : ''}
-          </span>
-          <div className="flex gap-2">
+          {/* Counter */}
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">
+              {selectedCount}
+            </div>
+            <span className="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">
+              {selectedCount === 1 ? 'usuário selecionado' : 'usuários selecionados'}
+            </span>
+          </div>
+
+          {/* Divider */}
+          <div className="w-px h-8 bg-border-light dark:bg-border-dark" />
+
+          {/* Actions */}
+          <div className="flex items-center gap-2">
             <AdminButton
               size="sm"
               variant="outline"
               onClick={onActivate}
-              className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/30"
+              icon="check_circle"
             >
-              <span className="material-symbols-outlined text-sm mr-1">check_circle</span>
               Ativar
             </AdminButton>
+
             <AdminButton
               size="sm"
               variant="outline"
               onClick={onSuspend}
-              className="bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-900/30"
+              icon="block"
             >
-              <span className="material-symbols-outlined text-sm mr-1">block</span>
               Suspender
             </AdminButton>
+
             <AdminButton
               size="sm"
-              variant="outline"
+              variant="danger"
               onClick={onDelete}
-              className="bg-gray-50 dark:bg-gray-900/20 text-gray-700 dark:text-gray-400 border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900/30"
+              icon="delete"
             >
-              <span className="material-symbols-outlined text-sm mr-1">delete</span>
               Deletar
             </AdminButton>
+
+            <div className="w-px h-8 bg-border-light dark:bg-border-dark" />
+
+            <button
+              onClick={onCancel}
+              className="px-3 py-2 text-sm text-text-light-secondary dark:text-text-dark-secondary hover:text-text-light-primary dark:hover:text-text-dark-primary transition-colors"
+            >
+              Cancelar
+            </button>
           </div>
         </div>
-        <button
-          onClick={onCancel}
-          className="text-primary hover:text-primary-hover font-medium flex items-center gap-1 transition-colors"
-        >
-          <span className="material-symbols-outlined text-sm">close</span>
-          Cancelar Seleção
-        </button>
       </div>
     </div>
   );
-};
-
-export default BulkActionsBar;
+}

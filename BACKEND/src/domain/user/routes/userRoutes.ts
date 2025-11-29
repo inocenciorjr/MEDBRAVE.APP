@@ -18,23 +18,18 @@ export function createUserRoutes(): Router {
   // Rota /me usa APENAS autenticação (sem verificação de plano)
   // Isso permite que o frontend busque a role antes de verificar o plano
   router.get("/me", supabaseAuthMiddleware, async (req, res) => {
-    console.log('📍 [UserRoutes] GET /me chamado');
-    console.log('📍 [UserRoutes] Headers:', req.headers.authorization ? 'Authorization presente' : 'Authorization ausente');
-    console.log('📍 [UserRoutes] User:', (req as any).user);
-    console.log('📍 [UserRoutes] UserId:', (req as any).userId);
-    
     try {
       // Tentar pegar userId de diferentes lugares onde o middleware pode ter colocado
       const userId = (req as any).userId || (req as any).user?.id;
 
-      console.log('📍 [UserRoutes] UserId final:', userId);
-
       if (!userId) {
-        console.log('❌ [UserRoutes] UserId não encontrado - retornando 401');
         return res.status(401).json({ error: "Unauthorized" });
       }
 
-      const { data: userData, error } = await supabase
+      // Usar supabaseAdmin para evitar problemas de RLS
+      const supabaseAdmin = (await import('../../../config/supabaseAdmin')).default;
+      
+      const { data: userData, error } = await supabaseAdmin
         .from("users")
         .select("*")
         .eq("id", userId)
@@ -46,7 +41,7 @@ export function createUserRoutes(): Router {
 
       // Buscar plano ativo do usuário
       let activePlan = null;
-      const { data: userPlans, error: planError } = await supabase
+      const { data: userPlans, error: planError } = await supabaseAdmin
         .from("user_plans")
         .select(`
           id,

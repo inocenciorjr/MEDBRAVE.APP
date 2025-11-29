@@ -136,7 +136,7 @@ export class SimulatedExamController {
       if (
         examCreator !== userId &&
         !isPublic &&
-        req.user?.role !== 'ADMIN'
+        req.user?.user_role !== 'ADMIN'
       ) {
         throw new AppError(
           'Você não tem permissão para acessar este simulado',
@@ -189,7 +189,7 @@ export class SimulatedExamController {
 
       // Verificar permissão de edição
       const examCreator = (existingExam as any).created_by || (existingExam as any).user_id || existingExam.createdBy;
-      if (examCreator !== userId && req.user?.role !== 'ADMIN') {
+      if (examCreator !== userId && req.user?.user_role !== 'ADMIN') {
         throw new AppError(
           'Você não tem permissão para editar este simulado',
           403,
@@ -260,7 +260,7 @@ export class SimulatedExamController {
 
       // Verificar permissão de exclusão
       const examCreator = (simulatedExam as any).created_by || (simulatedExam as any).user_id || simulatedExam.createdBy;
-      if (examCreator !== userId && req.user?.role !== 'ADMIN') {
+      if (examCreator !== userId && req.user?.user_role !== 'ADMIN') {
         throw new AppError(
           'Você não tem permissão para excluir este simulado',
           403,
@@ -778,7 +778,7 @@ export class SimulatedExamController {
       // Verificar se o usuário é o dono do resultado ou um administrador
       // O banco retorna user_id em snake_case
       const resultUserId = (result as any).user_id || result.userId;
-      if (resultUserId !== userId && req.user?.role !== 'ADMIN') {
+      if (resultUserId !== userId && req.user?.user_role !== 'ADMIN') {
         throw new AppError(
           'Você não tem permissão para acessar este resultado',
           403,

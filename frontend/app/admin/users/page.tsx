@@ -3,21 +3,29 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { AdminStats } from '@/components/admin/ui/AdminStats';
-import UserFilters, { UserFilterValues } from '@/components/admin/users/UserFilters';
+import UserFilters from '@/components/admin/users/UserFilters';
 import UserTable from '@/components/admin/users/UserTable';
 import UserModal from '@/components/admin/users/UserModal';
 import BulkActionsBar from '@/components/admin/users/BulkActionsBar';
 import { AdminButton } from '@/components/admin/ui/AdminButton';
-import { User, UserStatus } from '@/types/admin/user';
+import { AddUserPlanModal } from '@/components/admin/user-plans/AddUserPlanModal';
+import type { User, UserFilters as UserFiltersType, getUserStatus, matchesStatusFilter } from '@/types/admin/user';
+import { getUserStatus as getStatus, matchesStatusFilter as matchesStatus } from '@/types/admin/user';
 import { useToast } from '@/lib/contexts/ToastContext';
 import { 
   getUsers, 
   updateUser, 
   deleteUser, 
-  bulkUpdateUsers 
+  suspendUser,
+  activateUser,
+  banUser,
+  bulkUpdateUsers,
+  getUserStats,
+  sendEmailToUser,
 } from '@/services/admin/userService';
+import { createUserPlan } from '@/services/admin/userPlanService';
 
-type SortField = 'displayName' | 'email' | 'role' | 'status' | 'createdAt' | 'lastLoginAt';
+type SortField = 'display_name' | 'email' | 'role' | 'created_at' | 'last_login_at';
 type SortDirection = 'asc' | 'desc';
 
 export default function UsersPage() {
@@ -27,14 +35,18 @@ export default function UsersPage() {
   const [error, setError] = useState<string | null>(null);
   
   // Estados de filtro
-  const [filters, setFilters] = useState<UserFilterValues>({
+  const [filters, setFilters] = useState<UserFiltersType>({
     search: '',
     role: 'ALL',
     status: 'ALL'
   });
   
+  // Estados de modais
+  const [showAddPlanModal, setShowAddPlanModal] = useState(false);
+  const [selectedUserForPlan, setSelectedUserForPlan] = useState<{ id: string; email: string } | null>(null);
+  
   // Estados de ordenação
-  const [sortField, setSortField] = useState<SortField>('createdAt');
+  const [sortField, setSortField] = useState<SortField>('created_at');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   
   // Estados de seleção
@@ -67,18 +79,18 @@ export default function UsersPage() {
     let filtered = users.filter(user => {
       const matchesSearch = 
         filters.search === '' ||
-        user.displayName.toLowerCase().includes(filters.search.toLowerCase()) ||
+        user.display_name.toLowerCase().includes(filters.search.toLowerCase()) ||
         user.email.toLowerCase().includes(filters.search.toLowerCase());
       
       const matchesRole = filters.role === 'ALL' || user.role === filters.role;
-      const matchesStatus = filters.status === 'ALL' || user.status === filters.status;
+      const matchesStatusValue = matchesStatus(user, filters.status);
       
-      return matchesSearch && matchesRole && matchesStatus;
+      return matchesSearch && matchesRole && matchesStatusValue;
     });
 
     filtered.sort((a, b) => {
-      let aVal: any = a[sortField];
-      let bVal: any = b[sortField];
+      let aVal: any = a[sortField as keyof User];
+      let bVal: any = b[sortField as keyof User];
       
       if (aVal == null && bVal == null) return 0;
       if (aVal == null) return sortDirection === 'asc' ? 1 : -1;
@@ -98,9 +110,9 @@ export default function UsersPage() {
   // Estatísticas
   const stats = useMemo(() => ({
     total: users.length,
-    active: users.filter(u => u.status === 'ACTIVE').length,
+    active: users.filter(u => !u.is_blocked && !u.is_banned).length,
     students: users.filter(u => u.role === 'STUDENT').length,
-    suspended: users.filter(u => u.status === 'SUSPENDED').length
+    suspended: users.filter(u => u.is_blocked && !u.is_banned).length
   }), [users]);
 
   // Handlers
@@ -109,7 +121,7 @@ export default function UsersPage() {
     setSortDirection(direction);
   };
 
-  const handleFilterChange = (newFilters: UserFilterValues) => {
+  const handleFilterChange = (newFilters: UserFiltersType) => {
     setFilters(newFilters);
   };
 
@@ -119,6 +131,65 @@ export default function UsersPage() {
       role: 'ALL',
       status: 'ALL'
     });
+  };
+
+  const handleSuspend = async (userId: string, reason: string, duration?: number) => {
+    try {
+      await suspendUser(userId, { reason, duration });
+      toast.success('Usuário suspenso com sucesso');
+      await loadUsers();
+    } catch (err: any) {
+      toast.error(err.message || 'Erro ao suspender usuário');
+    }
+  };
+
+  const handleActivate = async (userId: string) => {
+    try {
+      await activateUser(userId);
+      toast.success('Usuário ativado com sucesso');
+      await loadUsers();
+    } catch (err: any) {
+      toast.error(err.message || 'Erro ao ativar usuário');
+    }
+  };
+
+  const handleBan = async (userId: string, reason: string) => {
+    try {
+      await banUser(userId, { reason });
+      toast.success('Usuário banido com sucesso');
+      await loadUsers();
+      setShowUserModal(false);
+      setSelectedUser(null);
+    } catch (err: any) {
+      toast.error(err.message || 'Erro ao banir usuário');
+    }
+  };
+
+  const handleSendEmail = async (userId: string, subject: string, message: string) => {
+    try {
+      await sendEmailToUser(userId, { subject, message });
+      toast.success('Email enviado com sucesso');
+    } catch (err: any) {
+      toast.error(err.message || 'Erro ao enviar email');
+    }
+  };
+
+  const handleAddPlan = (userId: string, userEmail: string) => {
+    setSelectedUserForPlan({ id: userId, email: userEmail });
+    setShowAddPlanModal(true);
+  };
+
+  const handleConfirmAddPlan = async (data: any) => {
+    try {
+      await createUserPlan(data);
+      toast.success('Plano adicionado com sucesso!');
+      setShowAddPlanModal(false);
+      setSelectedUserForPlan(null);
+      await loadUsers();
+    } catch (err: any) {
+      toast.error(err.message || 'Erro ao adicionar plano');
+      throw err;
+    }
   };
 
   const handleRowClick = (user: User) => {
@@ -137,9 +208,17 @@ export default function UsersPage() {
   };
 
   const handleDeleteUser = async (userId: string) => {
+    const reason = prompt('Motivo da exclusão:');
+    if (!reason) return;
+    
+    if (!confirm('Tem certeza que deseja deletar este usuário? Esta ação não pode ser desfeita.')) return;
+    
     try {
-      await deleteUser(userId);
+      await deleteUser(userId, reason);
+      toast.success('Usuário deletado com sucesso');
       await loadUsers();
+      setShowUserModal(false);
+      setSelectedUser(null);
     } catch (err: any) {
       toast.error(err.message || 'Erro ao deletar usuário');
       throw err;
@@ -148,12 +227,10 @@ export default function UsersPage() {
 
   const handleUserAction = async (userId: string, action: string) => {
     try {
-      if (action === 'suspend') {
-        await updateUser(userId, { status: UserStatus.SUSPENDED });
-      } else if (action === 'activate') {
-        await updateUser(userId, { status: UserStatus.ACTIVE });
+      if (action === 'activate') {
+        await handleActivate(userId);
       }
-      await loadUsers();
+      // Suspend action now opens modal from UserTable
     } catch (err: any) {
       toast.error(err.message || 'Erro ao executar ação');
     }
@@ -163,8 +240,9 @@ export default function UsersPage() {
     if (!confirm(`Ativar ${selectedUsers.size} usuários?`)) return;
     
     try {
-      await bulkUpdateUsers(Array.from(selectedUsers), { status: UserStatus.ACTIVE });
+      await bulkUpdateUsers({ userIds: Array.from(selectedUsers), updates: { status: 'ACTIVE' } });
       setSelectedUsers(new Set());
+      toast.success('Usuários ativados com sucesso');
       await loadUsers();
     } catch (err: any) {
       toast.error(err.message || 'Erro ao ativar usuários');
@@ -175,8 +253,9 @@ export default function UsersPage() {
     if (!confirm(`Suspender ${selectedUsers.size} usuários?`)) return;
     
     try {
-      await bulkUpdateUsers(Array.from(selectedUsers), { status: UserStatus.SUSPENDED });
+      await bulkUpdateUsers({ userIds: Array.from(selectedUsers), updates: { status: 'SUSPENDED' } });
       setSelectedUsers(new Set());
+      toast.success('Usuários suspensos com sucesso');
       await loadUsers();
     } catch (err: any) {
       toast.error(err.message || 'Erro ao suspender usuários');
@@ -184,11 +263,15 @@ export default function UsersPage() {
   };
 
   const handleBulkDelete = async () => {
+    const reason = prompt('Motivo da exclusão em lote:');
+    if (!reason) return;
+    
     if (!confirm(`Deletar ${selectedUsers.size} usuários? Esta ação não pode ser desfeita.`)) return;
     
     try {
-      await Promise.all(Array.from(selectedUsers).map(id => deleteUser(id)));
+      await Promise.all(Array.from(selectedUsers).map(id => deleteUser(id, reason)));
       setSelectedUsers(new Set());
+      toast.success('Usuários deletados com sucesso');
       await loadUsers();
     } catch (err: any) {
       toast.error(err.message || 'Erro ao deletar usuários');
@@ -250,6 +333,7 @@ export default function UsersPage() {
 
       {/* Filtros */}
       <UserFilters
+        filters={filters}
         onFilterChange={handleFilterChange}
         onClear={handleClearFilters}
       />
@@ -302,7 +386,31 @@ export default function UsersPage() {
         user={selectedUser}
         onSave={handleSaveUser}
         onDelete={handleDeleteUser}
+        onSuspend={handleSuspend}
+        onActivate={handleActivate}
+        onBan={handleBan}
+        onSendEmail={handleSendEmail}
+        onAddPlan={(userId) => {
+          const user = users.find(u => u.id === userId);
+          if (user) {
+            handleAddPlan(userId, user.email);
+          }
+        }}
       />
+
+      {/* Add Plan Modal */}
+      {selectedUserForPlan && (
+        <AddUserPlanModal
+          isOpen={showAddPlanModal}
+          onClose={() => {
+            setShowAddPlanModal(false);
+            setSelectedUserForPlan(null);
+          }}
+          onConfirm={handleConfirmAddPlan}
+          preselectedUserId={selectedUserForPlan.id}
+          preselectedUserEmail={selectedUserForPlan.email}
+        />
+      )}
       </div>
     </>
   );

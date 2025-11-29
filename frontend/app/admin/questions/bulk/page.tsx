@@ -1660,7 +1660,7 @@ const BulkCreateQuestionsPage: React.FC = () => {
               ? 'http://localhost:5000' 
               : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app');
             const socket = io(backendUrl, {
-              path: '/socket.io',
+              path: '/socket.io/jobs',
               transports: ['websocket', 'polling'],
             });
 

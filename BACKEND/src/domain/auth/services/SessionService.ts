@@ -1,10 +1,21 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 const supabaseUrl = process.env.SUPABASE_URL!;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 
+interface UserSession {
+  id: string;
+  user_id: string;
+  created_at: string;
+  updated_at: string;
+  user_agent: string | null;
+  ip: string | null;
+  refreshed_at: string | null;
+  not_after: string | null;
+}
+
 export class SessionService {
-  private supabase;
+  private supabase: SupabaseClient;
 
   constructor() {
     this.supabase = createClient(supabaseUrl, supabaseServiceKey, {
@@ -17,29 +28,42 @@ export class SessionService {
 
   /**
    * Lista todas as sessões de um usuário
+   * Usa função RPC para acessar auth.sessions
    */
-  async listUserSessions(userId: string) {
-    const { data, error } = await this.supabase
-      .from('auth.sessions')
-      .select('id, created_at, updated_at')
-      .eq('user_id', userId)
-      .order('created_at', { ascending: false });
+  async listUserSessions(userId: string): Promise<UserSession[]> {
+    try {
+      const { data, error } = await this.supabase.rpc('get_user_sessions', {
+        p_user_id: userId
+      });
 
-    if (error) {
-      throw new Error(`Erro ao listar sessões: ${error.message}`);
+      if (error) {
+        console.error('[SessionService] Erro ao listar sessões:', error);
+        return [];
+      }
+
+      return data || [];
+    } catch (error: any) {
+      console.error('[SessionService] Erro ao listar sessões:', error);
+      return [];
     }
-
-    return data || [];
   }
 
   /**
    * Revoga uma sessão específica
+   * Usa SQL direto para deletar a sessão do auth.sessions
    */
   async revokeSession(sessionId: string): Promise<void> {
-    const { error } = await this.supabase.auth.admin.deleteSession(sessionId);
+    try {
+      // Deleta a sessão diretamente usando SQL
+      const { error } = await this.supabase.rpc('revoke_session', {
+        p_session_id: sessionId
+      });
 
-    if (error) {
-      throw new Error(`Erro ao revogar sessão: ${error.message}`);
+      if (error) {
+        console.error(`[SessionService] Erro ao revogar sessão:`, error);
+      }
+    } catch (error: any) {
+      console.error(`[SessionService] Erro ao revogar sessão:`, error);
     }
   }
 
@@ -117,6 +141,6 @@ export class SessionService {
       return false;
     }
 
-    return data.role === 'admin';
+    return data.role === 'ADMIN';
   }
 }

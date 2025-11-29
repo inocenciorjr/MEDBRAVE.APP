@@ -40,6 +40,15 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     console.error("❌ Erro ao carregar rotas de usuários:", error);
   }
 
+  // Rotas de rastreamento de atividade
+  try {
+    const activityRoutes = require("./domain/user/routes/activityRoutes").default;
+    router.use("/activity", activityRoutes);
+    console.log('✅ Rotas de atividade registradas em /activity');
+  } catch (error) {
+    console.error("❌ Erro ao carregar rotas de atividade:", error);
+  }
+
   // Rotas de questões
   router.use("/questions", unifiedQuestionRoutes);
 

@@ -75,6 +75,7 @@ export function useScraperWebSocket(options: UseScraperWebSocketOptions = {}) {
       ? 'http://localhost:5000' 
       : (process.env.NEXT_PUBLIC_BACKEND_URL || 'https://medbraveapp-production.up.railway.app'));
     const socket = io(wsUrl, {
+      path: '/socket.io/jobs',
       auth: {
         token,
       },
