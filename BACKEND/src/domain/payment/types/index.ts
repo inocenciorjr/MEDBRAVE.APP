@@ -5,10 +5,10 @@
 export enum PaymentMethod {
   CREDIT_CARD = 'CREDIT_CARD',
   PIX = 'PIX',
-  ADMIN = 'admin',
-  FREE = 'free',
+  ADMIN = 'ADMIN',
+  FREE = 'FREE',
   BANK_SLIP = 'BANK_SLIP',
-  OTHER = 'other',
+  OTHER = 'OTHER',
 }
 
 export enum PaymentStatus {
