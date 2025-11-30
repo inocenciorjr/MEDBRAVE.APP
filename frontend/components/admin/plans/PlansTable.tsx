@@ -12,6 +12,7 @@ import type { SortDirection } from '@/types/admin/common';
 interface PlansTableProps {
   plans: Plan[];
   loading?: boolean;
+  onView?: (plan: Plan) => void;
   onEdit?: (plan: Plan) => void;
   onDelete?: (plan: Plan) => void;
   onToggleStatus?: (plan: Plan) => void;
@@ -24,6 +25,7 @@ interface PlansTableProps {
 export function PlansTable({
   plans,
   loading = false,
+  onView,
   onEdit,
   onDelete,
   onToggleStatus,
@@ -107,6 +109,20 @@ export function PlansTable({
       label: 'Ações',
       render: (_, plan) => (
         <div className="flex gap-1">
+          {onView && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onView(plan);
+              }}
+              className="p-1.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              title="Ver Detalhes"
+            >
+              <span className="material-symbols-outlined text-lg text-green-600 dark:text-green-400">
+                visibility
+              </span>
+            </button>
+          )}
           {onEdit && (
             <button
               onClick={(e) => {

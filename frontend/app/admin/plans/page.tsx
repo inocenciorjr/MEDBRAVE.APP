@@ -325,6 +325,7 @@ export default function PlansPage() {
           <AdminCard>
             <PlansTable
               plans={filteredAndSortedPlans}
+              onView={(plan) => router.push(`/admin/plans/${plan.id}`)}
               onEdit={handleEdit}
               onDelete={handleDelete}
               onToggleStatus={handleToggleStatus}

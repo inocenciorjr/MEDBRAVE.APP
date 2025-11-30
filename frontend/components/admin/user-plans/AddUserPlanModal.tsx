@@ -41,7 +41,7 @@ export function AddUserPlanModal({
   const [planId, setPlanId] = useState('');
   const [startDate, setStartDate] = useState(new Date().toISOString().split('T')[0]);
   const [durationDays, setDurationDays] = useState(30);
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('admin');
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('ADMIN');
   const [autoRenew, setAutoRenew] = useState(false);
 
   useEffect(() => {
