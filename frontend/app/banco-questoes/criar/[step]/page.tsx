@@ -12,11 +12,13 @@ import ExamTypeSelector from '@/components/banco-questoes/ExamTypeSelector';
 import SummaryPanel from '@/components/banco-questoes/SummaryPanel';
 import MobileSummaryButton from '@/components/banco-questoes/MobileSummaryButton';
 import QuestionPreviewModal from '@/components/banco-questoes/QuestionPreviewModal';
+import { ListCreatedSuccessModal } from '@/components/banco-questoes/ListCreatedSuccessModal';
 import { useFilterHierarchy, useAvailableYears, useInstitutionHierarchy, useQuestionCount } from '@/hooks/useBancoQuestoes';
 import { hierarchyToSubjects } from '@/lib/adapters/bancoQuestoesAdapter';
 import api from '@/services/api';
 import TextInput from '@/components/ui/TextInput';
 import StepperProgress from '@/components/banco-questoes/StepperProgress';
+import { useToast } from '@/lib/contexts/ToastContext';
 
 interface StepPageProps {
   params: Promise<{
@@ -48,6 +50,7 @@ export default function StepPage({ params }: StepPageProps) {
 
 function GeralStep() {
   const router = useRouter();
+  const toast = useToast();
   const { state, updateListName, updateFolderId, toggleSubject, toggleYear, toggleInstitution, clearFilters } = useCreateList();
   const [error, setError] = useState('');
 
@@ -68,7 +71,13 @@ function GeralStep() {
   });
 
   const handleNext = () => {
-    // Não validar nome aqui - permitir avançar para configurar filtros
+    // Validar nome antes de avançar
+    if (!state.listName || state.listName.trim() === '') {
+      setError('Por favor, dê um nome para a lista');
+      toast.warning('Nome obrigatório', 'Por favor, dê um nome para a lista antes de continuar');
+      return;
+    }
+    
     setError('');
     router.push('/banco-questoes/criar/assuntos');
   };
@@ -530,10 +539,13 @@ function AnosStep() {
 
 function InstituicoesStep() {
   const router = useRouter();
+  const toast = useToast();
   const { state, cachedQuestions, setCachedQuestions, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit } = useCreateList();
   const [error, setError] = useState('');
   const [isCreating, setIsCreating] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [createdListData, setCreatedListData] = useState<{ id: string; name: string; questionCount: number } | null>(null);
   
   // Estados para segurar botão
   const [isHoldingIncrement, setIsHoldingIncrement] = useState(false);
@@ -684,17 +696,29 @@ function InstituicoesStep() {
     // Validação 1: Nome obrigatório
     if (!state.listName || state.listName.trim() === '') {
       setError('Por favor, dê um nome para a lista antes de salvar');
+      toast.warning('Nome obrigatório', 'Volte ao primeiro passo e dê um nome para a lista');
+      router.push('/banco-questoes/criar/geral');
       return;
     }
 
     // Validação 2: Limite de questões
     if (state.questionLimit === 0) {
       setError('Por favor, defina a quantidade de questões desejada (mínimo 1)');
+      toast.warning('Quantidade obrigatória', 'Defina quantas questões você deseja na lista');
+      // Scroll para o campo de quantidade
+      setTimeout(() => {
+        const quantityInput = document.getElementById('question-limit');
+        if (quantityInput) {
+          quantityInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          quantityInput.focus();
+        }
+      }, 100);
       return;
     }
 
     if (state.questionLimit > 500) {
       setError('O limite máximo é de 500 questões por lista. Que tal delimitar mais a sua busca removendo alguma universidade, ano de prova ou assunto? Você pode criar outra lista para as questões restantes!');
+      toast.warning('Limite excedido', 'O máximo é 500 questões por lista');
       return;
     }
 
@@ -722,6 +746,7 @@ function InstituicoesStep() {
 
       if (!questions || questions.length === 0) {
         setError('Nenhuma questão encontrada com os filtros selecionados');
+        toast.error('Nenhuma questão encontrada', 'Tente ajustar os filtros selecionados');
         setIsCreating(false);
         return;
       }
@@ -745,11 +770,26 @@ function InstituicoesStep() {
       const listData = createListResponse.data;
       console.log('Lista criada com sucesso:', listData);
 
+      // Mostrar toast de sucesso
+      toast.success('Lista criada!', `${limitedQuestions.length} questões adicionadas com sucesso`);
+
+      // Preparar dados para o modal
+      setCreatedListData({
+        id: listData.id,
+        name: state.listName,
+        questionCount: limitedQuestions.length,
+      });
+
+      // Mostrar modal de sucesso
+      setShowSuccessModal(true);
+      
+      // Resetar estado
       resetState();
-      router.push('/banco-questoes');
+      setIsCreating(false);
     } catch (err: any) {
       console.error('Erro ao criar lista:', err);
       setError(err.message || 'Erro ao criar lista. Tente novamente.');
+      toast.error('Erro ao criar lista', err.message || 'Tente novamente');
       setIsCreating(false);
     }
   };
@@ -810,32 +850,28 @@ function InstituicoesStep() {
                 </div>
               </div>
 
-              <ExamTypeSelector
-                selectedExamTypes={state.selectedExamTypes || []}
-                onToggleExamType={toggleExamType}
-              />
-
-              <InstitutionSelector
-                institutions={institutions}
-                selectedInstitutions={state.selectedInstitutions}
-                onToggleInstitution={(id) => {
-                  toggleInstitution(id);
-                  setError('');
-                }}
-              />
-
-              <div className="mt-8 p-6 bg-background-light dark:bg-background-dark rounded-lg border border-border-light dark:border-border-dark">
-                <div className="flex items-center justify-between mb-3">
-                  <label htmlFor="question-limit" className="text-sm font-medium text-slate-700 dark:text-slate-200">
-                    Quantidade de Questões
-                  </label>
-                  <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
-                    {questionCount > 0
-                      ? `${questionCount} disponíveis (máx: ${Math.min(questionCount, 500)})`
-                      : 'Selecione filtros'}
-                  </p>
+              {/* Campo de Quantidade - Movido para cima com destaque */}
+              <div className="mb-8 p-6 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 rounded-xl border-2 border-primary/30 shadow-lg">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-xl">
+                        format_list_numbered
+                      </span>
+                    </div>
+                    <div>
+                      <label htmlFor="question-limit" className="text-base font-semibold text-slate-800 dark:text-slate-100 block">
+                        Quantidade de Questões
+                      </label>
+                      <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                        {questionCount > 0
+                          ? `${questionCount} disponíveis (máx: ${Math.min(questionCount, 500)})`
+                          : 'Selecione filtros para ver questões disponíveis'}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative flex items-center gap-2">
+                <div className="relative flex items-center gap-3">
                   <button
                     type="button"
                     onClick={() => {
@@ -857,14 +893,14 @@ function InstituicoesStep() {
                     }}
                     onTouchEnd={() => setIsHoldingDecrement(false)}
                     disabled={(state.questionLimit ?? 0) <= 0}
-                    className="flex-shrink-0 w-12 h-12 flex items-center justify-center
-                             bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark
-                             rounded-lg hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
-                             transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg
-                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-border-light dark:disabled:hover:border-border-dark
+                    className="flex-shrink-0 w-14 h-14 flex items-center justify-center
+                             bg-white dark:bg-slate-800 border-2 border-primary/30 dark:border-primary/40
+                             rounded-xl hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
+                             transition-all duration-200 hover:scale-110 shadow-md hover:shadow-xl
+                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-primary/30
                              group"
                   >
-                    <span className="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary group-hover:text-primary transition-colors">
+                    <span className="material-symbols-outlined text-2xl text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                       remove
                     </span>
                   </button>
@@ -879,9 +915,9 @@ function InstituicoesStep() {
                       updateQuestionLimit(value);
                       setError('');
                     }}
-                    className="flex-1 px-4 py-3 bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark 
-                             rounded-lg text-text-light-primary dark:text-text-dark-primary text-center text-lg font-bold
-                             focus:ring-2 focus:ring-primary focus:border-primary shadow-md
+                    className="flex-1 px-6 py-4 bg-white dark:bg-slate-800 border-2 border-primary/30 dark:border-primary/40
+                             rounded-xl text-slate-800 dark:text-slate-100 text-center text-2xl font-bold
+                             focus:ring-2 focus:ring-primary focus:border-primary shadow-md hover:shadow-lg transition-all
                              [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     placeholder="0"
                   />
@@ -906,19 +942,39 @@ function InstituicoesStep() {
                     }}
                     onTouchEnd={() => setIsHoldingIncrement(false)}
                     disabled={questionCount <= 0 || (state.questionLimit ?? 0) >= questionCount}
-                    className="flex-shrink-0 w-12 h-12 flex items-center justify-center
-                             bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark
-                             rounded-lg hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
-                             transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg
-                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-border-light dark:disabled:hover:border-border-dark
+                    className="flex-shrink-0 w-14 h-14 flex items-center justify-center
+                             bg-white dark:bg-slate-800 border-2 border-primary/30 dark:border-primary/40
+                             rounded-xl hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
+                             transition-all duration-200 hover:scale-110 shadow-md hover:shadow-xl
+                             disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:border-primary/30
                              group"
                   >
-                    <span className="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary group-hover:text-primary transition-colors">
+                    <span className="material-symbols-outlined text-2xl text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                       add
                     </span>
                   </button>
                 </div>
+                {questionCount > 0 && state.questionLimit > 0 && (
+                  <div className="mt-4 flex items-center justify-center gap-2 text-sm text-primary font-medium">
+                    <span className="material-symbols-outlined text-base">check_circle</span>
+                    <span>{state.questionLimit} de {questionCount} questões selecionadas</span>
+                  </div>
+                )}
               </div>
+
+              <ExamTypeSelector
+                selectedExamTypes={state.selectedExamTypes || []}
+                onToggleExamType={toggleExamType}
+              />
+
+              <InstitutionSelector
+                institutions={institutions}
+                selectedInstitutions={state.selectedInstitutions}
+                onToggleInstitution={(id) => {
+                  toggleInstitution(id);
+                  setError('');
+                }}
+              />
 
               {error && (
                 <p className="mt-4 text-sm text-red-500">{error}</p>
@@ -977,6 +1033,14 @@ function InstituicoesStep() {
         years={state.selectedYears}
         institutions={state.selectedInstitutions}
         onQuestionsLoaded={setCachedQuestions}
+      />
+
+      <ListCreatedSuccessModal
+        isOpen={showSuccessModal}
+        onClose={() => setShowSuccessModal(false)}
+        listId={createdListData?.id || ''}
+        listName={createdListData?.name || ''}
+        questionCount={createdListData?.questionCount || 0}
       />
     </>
   );
