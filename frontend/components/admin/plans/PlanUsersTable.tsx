@@ -86,7 +86,7 @@ export function PlanUsersTable({ planId, userPlans, onRefresh }: PlanUsersTableP
         Array.from(selectedUsers).map(id =>
           renewUserPlan(id, {
             durationDays: parseInt(days),
-            paymentMethod: 'admin',
+            paymentMethod: 'ADMIN',
           })
         )
       );
@@ -117,7 +117,7 @@ export function PlanUsersTable({ planId, userPlans, onRefresh }: PlanUsersTableP
     try {
       await renewUserPlan(userPlanId, {
         durationDays: parseInt(days),
-        paymentMethod: 'admin',
+        paymentMethod: 'ADMIN',
       });
       toast.success('Plano renovado com sucesso');
       onRefresh();
@@ -282,22 +282,21 @@ export function PlanUsersTable({ planId, userPlans, onRefresh }: PlanUsersTableP
                   {/* User Info */}
                   <div className="flex-1 space-y-3">
                     <div className="flex items-center gap-3">
-                      <div className={`p-2 rounded-lg ${statusConfig.bg}`}>
-                        <span className={`material-symbols-outlined ${statusConfig.text}`}>
-                          person
+                      {/* Avatar */}
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <span className="text-primary font-semibold text-lg">
+                          {(userPlan.user?.name || userPlan.user?.email || 'U')[0].toUpperCase()}
                         </span>
                       </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-text-light-primary dark:text-text-dark-primary">
-                          {userPlan.user?.email || userPlan.userId}
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary truncate">
+                          {userPlan.user?.name || userPlan.user?.email || 'Usuário sem nome'}
                         </h4>
-                        {userPlan.user?.name && (
-                          <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                            {userPlan.user.name}
-                          </p>
-                        )}
+                        <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary truncate">
+                          {userPlan.user?.email || `ID: ${userPlan.userId.substring(0, 8)}...`}
+                        </p>
                       </div>
-                      <span className={`px-3 py-1 text-xs font-bold rounded-full ${statusConfig.bg} ${statusConfig.text}`}>
+                      <span className={`px-3 py-1 text-xs font-bold rounded-full ${statusConfig.bg} ${statusConfig.text} flex-shrink-0`}>
                         {statusConfig.label}
                       </span>
                     </div>

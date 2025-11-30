@@ -255,8 +255,10 @@ export async function getExpiringSoonUserPlans(): Promise<UserPlan[]> {
  * @returns List of user plans
  */
 export async function getUserPlansByPlanId(planId: string): Promise<UserPlan[]> {
-  const result = await getAllUserPlans({ planId });
-  return result.items;
+  const response = await get<{ success: boolean; data: UserPlan[] }>(
+    `/user-plans/plan/${planId}`
+  );
+  return response.data;
 }
 
 /**
