@@ -5,8 +5,8 @@ import { AdminModal } from '../ui/AdminModal';
 import { AdminButton } from '../ui/AdminButton';
 import { AdminInput } from '../ui/AdminInput';
 import { useToast } from '@/lib/contexts/ToastContext';
-import { createUserPlan } from '@/services/admin/userPlanService';
-import { searchUsers } from '@/services/admin/userService';
+import { createUserPlan, getAllUserPlans } from '@/services/admin/userPlanService';
+import { searchUsers, getUsers } from '@/services/admin/userService';
 import type { PaymentMethod } from '@/types/admin/plan';
 import type { User } from '@/types/admin/user';
 
@@ -45,8 +45,21 @@ export function AddUsersToPlanModal({
   const loadInitialUsers = async () => {
     setSearching(true);
     try {
-      const results = await searchUsers('', 100); // Busca vazia retorna os primeiros usuários
-      setSearchResults(results);
+      // Buscar todos os usuários
+      const usersResponse = await getUsers({ limit: 1000 });
+      const allUsers = usersResponse.data;
+
+      // Buscar usuários que já têm este plano ativo
+      const userPlansResponse = await getAllUserPlans({ 
+        planId: planId,
+        status: 'ACTIVE'
+      });
+      const usersWithPlan = new Set(userPlansResponse.items.map(up => up.userId));
+
+      // Filtrar usuários que NÃO têm o plano ativo
+      const availableUsers = allUsers.filter(user => !usersWithPlan.has(user.id));
+      
+      setSearchResults(availableUsers);
     } catch (error) {
       console.error('Erro ao carregar usuários:', error);
       setSearchResults([]);
@@ -58,14 +71,26 @@ export function AddUsersToPlanModal({
   // Buscar usuários quando o query mudar
   useEffect(() => {
     if (!searchQuery.trim()) {
-      return; // Não buscar se estiver vazio, já temos a lista inicial
+      loadInitialUsers(); // Recarregar lista inicial se limpar a busca
+      return;
     }
 
     const delaySearch = setTimeout(async () => {
       setSearching(true);
       try {
         const results = await searchUsers(searchQuery, 50);
-        setSearchResults(results);
+        
+        // Buscar usuários que já têm este plano ativo
+        const userPlansResponse = await getAllUserPlans({ 
+          planId: planId,
+          status: 'ACTIVE'
+        });
+        const usersWithPlan = new Set(userPlansResponse.items.map(up => up.userId));
+
+        // Filtrar usuários que NÃO têm o plano ativo
+        const availableUsers = results.filter(user => !usersWithPlan.has(user.id));
+        
+        setSearchResults(availableUsers);
       } catch (error) {
         console.error('Erro ao buscar usuários:', error);
         setSearchResults([]);
@@ -75,7 +100,7 @@ export function AddUsersToPlanModal({
     }, 300);
 
     return () => clearTimeout(delaySearch);
-  }, [searchQuery]);
+  }, [searchQuery, planId]);
 
   const handleToggleUser = (userId: string) => {
     const newSelected = new Set(selectedUsers);
