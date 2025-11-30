@@ -41,7 +41,7 @@ export function AddUserPlanModal({
   const [planId, setPlanId] = useState('');
   const [startDate, setStartDate] = useState(new Date().toISOString().split('T')[0]);
   const [durationDays, setDurationDays] = useState(30);
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('ADMIN');
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('admin');
   const [autoRenew, setAutoRenew] = useState(false);
 
   useEffect(() => {
@@ -113,7 +113,7 @@ export function AddUserPlanModal({
     setPlanId('');
     setStartDate(new Date().toISOString().split('T')[0]);
     setDurationDays(30);
-    setPaymentMethod('ADMIN');
+    setPaymentMethod('admin');
     setAutoRenew(false);
     onClose();
   };
@@ -279,7 +279,7 @@ export function AddUserPlanModal({
               className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary"
               required
             >
-              <option value="ADMIN">Admin (Manual)</option>
+              <option value="admin">Admin (Manual)</option>
               <option value="PIX">PIX</option>
               <option value="CREDIT_CARD">Cartão de Crédito</option>
             </select>

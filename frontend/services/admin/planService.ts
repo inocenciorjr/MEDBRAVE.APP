@@ -78,6 +78,15 @@ export async function updatePlan(id: string, data: UpdatePlanPayload): Promise<P
     `/plans/${id}`,
     data
   );
+  
+  // Limpar cache de planos após atualização
+  try {
+    await post('/admin/cache/clear-all-plans', {});
+    console.log('✅ Cache de planos limpo após atualização');
+  } catch (error) {
+    console.warn('⚠️ Erro ao limpar cache de planos:', error);
+  }
+  
   return response.data;
 }
 

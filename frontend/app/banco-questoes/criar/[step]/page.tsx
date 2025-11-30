@@ -77,7 +77,7 @@ function GeralStep() {
       toast.warning('Nome obrigatório', 'Por favor, dê um nome para a lista antes de continuar');
       return;
     }
-    
+
     setError('');
     router.push('/banco-questoes/criar/assuntos');
   };
@@ -546,7 +546,7 @@ function InstituicoesStep() {
   const [showPreview, setShowPreview] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [createdListData, setCreatedListData] = useState<{ id: string; name: string; questionCount: number } | null>(null);
-  
+
   // Estados para segurar botão
   const [isHoldingIncrement, setIsHoldingIncrement] = useState(false);
   const [isHoldingDecrement, setIsHoldingDecrement] = useState(false);
@@ -585,19 +585,19 @@ function InstituicoesStep() {
       window.removeEventListener('touchend', handleGlobalMouseUp);
     };
   }, []);
-  
+
   // Efeito para incremento contínuo com aceleração progressiva
   useEffect(() => {
     if (isHoldingIncrement) {
       let delay = 40; // Começa com 40ms (2x mais rápido)
       let iterations = 0;
-      
+
       const accelerate = () => {
         const newValue = Math.min(questionCount, (state.questionLimit || 0) + 1);
         updateQuestionLimit(newValue);
-        
+
         iterations++;
-        
+
         // Acelerar progressivamente - reduz o delay
         if (iterations > 5) {
           delay = 20; // Fica mais rápido
@@ -611,16 +611,16 @@ function InstituicoesStep() {
         if (iterations > 25) {
           delay = 2; // Velocidade máxima (2x mais rápido)
         }
-        
+
         incrementIntervalRef.current = setTimeout(accelerate, delay);
       };
-      
+
       // Primeiro incremento após 50ms
       const timeout = setTimeout(() => {
         holdActivatedRef.current = true;
         accelerate();
       }, 50);
-      
+
       return () => {
         clearTimeout(timeout);
         if (incrementIntervalRef.current) {
@@ -629,19 +629,19 @@ function InstituicoesStep() {
       };
     }
   }, [isHoldingIncrement, questionCount, state.questionLimit, updateQuestionLimit]);
-  
+
   // Efeito para decremento contínuo com aceleração progressiva
   useEffect(() => {
     if (isHoldingDecrement) {
       let delay = 40; // Começa com 40ms (2x mais rápido)
       let iterations = 0;
-      
+
       const accelerate = () => {
         const newValue = Math.max(0, (state.questionLimit || 0) - 1);
         updateQuestionLimit(newValue);
-        
+
         iterations++;
-        
+
         // Acelerar progressivamente - reduz o delay
         if (iterations > 5) {
           delay = 20; // Fica mais rápido
@@ -655,16 +655,16 @@ function InstituicoesStep() {
         if (iterations > 25) {
           delay = 2; // Velocidade máxima (2x mais rápido)
         }
-        
+
         decrementIntervalRef.current = setTimeout(accelerate, delay);
       };
-      
+
       // Primeiro decremento após 50ms
       const timeout = setTimeout(() => {
         holdActivatedRef.current = true;
         accelerate();
       }, 50);
-      
+
       return () => {
         clearTimeout(timeout);
         if (decrementIntervalRef.current) {
@@ -782,7 +782,7 @@ function InstituicoesStep() {
 
       // Mostrar modal de sucesso
       setShowSuccessModal(true);
-      
+
       // Resetar estado
       resetState();
       setIsCreating(false);
