@@ -14,8 +14,8 @@ interface AddUserPlanModalProps {
   onConfirm: (data: {
     userId: string;
     planId: string;
-    startDate: Date;
-    endDate: Date;
+    startDate: string;
+    endDate: string;
     paymentMethod: PaymentMethod;
     autoRenew: boolean;
   }) => Promise<void>;
@@ -89,11 +89,12 @@ export function AddUserPlanModal({
 
     setLoading(true);
     try {
+      const endDate = calculateEndDate();
       await onConfirm({
         userId: userId.trim(),
         planId,
-        startDate: new Date(startDate),
-        endDate: calculateEndDate(),
+        startDate: new Date(startDate).toISOString(),
+        endDate: endDate.toISOString(),
         paymentMethod,
         autoRenew,
       });
@@ -113,7 +114,7 @@ export function AddUserPlanModal({
     setPlanId('');
     setStartDate(new Date().toISOString().split('T')[0]);
     setDurationDays(30);
-    setPaymentMethod('admin');
+    setPaymentMethod('ADMIN');
     setAutoRenew(false);
     onClose();
   };

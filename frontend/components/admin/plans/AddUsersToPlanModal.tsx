@@ -54,8 +54,8 @@ export function AddUsersToPlanModal({
           createUserPlan({
             userId,
             planId,
-            startDate,
-            endDate,
+            startDate: startDate.toISOString(),
+            endDate: endDate.toISOString(),
             paymentMethod,
             autoRenew,
           })
