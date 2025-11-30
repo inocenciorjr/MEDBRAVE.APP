@@ -260,6 +260,14 @@ export interface UserPlan {
   trialEndsAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
+  // Populated fields
+  plan?: Plan;
+  user?: {
+    id: string;
+    name: string;
+    email: string;
+    photo_url?: string;
+  };
 }
 
 export interface Invoice {
