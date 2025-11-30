@@ -98,7 +98,7 @@ export function AddUserPlanModal({
         autoRenew,
       });
       
-      toast.success('Plano adicionado com sucesso!');
+      // Toast de sucesso é mostrado pela página que chama o modal
       handleClose();
     } catch (error: any) {
       toast.error(error.message || 'Erro ao adicionar plano');

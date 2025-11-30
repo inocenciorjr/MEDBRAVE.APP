@@ -8,6 +8,7 @@ import { UserLogsTable } from './UserLogsTable';
 import { UserSessionsTable } from './UserSessionsTable';
 import { UserSecurityAnalysis } from './UserSecurityAnalysis';
 import { UserNotesPanel } from './UserNotesPanel';
+import { UserPlansTable } from './UserPlansTable';
 import { SuspendUserModal } from './SuspendUserModal';
 import { BanUserModal } from './BanUserModal';
 import { SendEmailModal } from './SendEmailModal';
@@ -244,35 +245,8 @@ export default function UserModal({
             </div>
           )}
 
-          {activeTab === 'plans' && (
-            <div className="space-y-4">
-              <AdminButton onClick={() => onAddPlan(user.id)} icon="add">Adicionar Plano</AdminButton>
-              {plans.length === 0 ? (
-                <p className="text-center text-text-light-secondary dark:text-text-dark-secondary py-8">
-                  Nenhum plano encontrado
-                </p>
-              ) : (
-                <div className="space-y-2">
-                  {plans.map((plan) => (
-                    <div key={plan.id} className="p-4 bg-background-light dark:bg-background-dark rounded-xl">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <p className="font-medium">{plan.plans?.name || 'Plano Desconhecido'}</p>
-                          <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                            {new Date(plan.start_date).toLocaleDateString('pt-BR')} - {new Date(plan.end_date).toLocaleDateString('pt-BR')}
-                          </p>
-                        </div>
-                        <span className={`px-2 py-1 text-xs rounded-full ${
-                          plan.status === 'ACTIVE' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300'
-                        }`}>
-                          {plan.status}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+          {activeTab === 'plans' && user && (
+            <UserPlansTable userId={user.id} onAddPlan={() => onAddPlan(user.id)} />
           )}
 
           {activeTab === 'stats' && (
