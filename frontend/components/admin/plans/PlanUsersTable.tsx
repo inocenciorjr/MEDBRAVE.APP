@@ -283,7 +283,23 @@ export function PlanUsersTable({ planId, userPlans, onRefresh }: PlanUsersTableP
                   <div className="flex-1 space-y-3">
                     <div className="flex items-center gap-3">
                       {/* Avatar */}
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      {userPlan.user?.photo_url ? (
+                        <img
+                          src={userPlan.user.photo_url}
+                          alt={userPlan.user.name || userPlan.user.email}
+                          className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                          onError={(e) => {
+                            // Fallback se a imagem falhar ao carregar
+                            e.currentTarget.style.display = 'none';
+                            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (fallback) fallback.style.display = 'flex';
+                          }}
+                        />
+                      ) : null}
+                      <div 
+                        className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"
+                        style={{ display: userPlan.user?.photo_url ? 'none' : 'flex' }}
+                      >
                         <span className="text-primary font-semibold text-lg">
                           {(userPlan.user?.name || userPlan.user?.email || 'U')[0].toUpperCase()}
                         </span>

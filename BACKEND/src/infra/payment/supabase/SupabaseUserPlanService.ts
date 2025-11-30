@@ -780,7 +780,8 @@ export class SupabaseUserPlanService implements IUserPlanService {
           users:user_id (
             id,
             email,
-            display_name
+            display_name,
+            photo_url
           )
         `, { count: 'exact' });
 
@@ -879,6 +880,7 @@ export class SupabaseUserPlanService implements IUserPlanService {
         id: data.users.id,
         name: data.users.display_name || data.users.email?.split('@')[0] || 'Usuário',
         email: data.users.email,
+        photo_url: data.users.photo_url,
       };
     }
 

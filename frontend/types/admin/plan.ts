@@ -127,6 +127,7 @@ export interface UserPlan {
     id: string;
     name: string;
     email: string;
+    photo_url?: string;
   };
 }
 
