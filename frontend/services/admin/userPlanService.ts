@@ -255,8 +255,22 @@ export async function getExpiringSoonUserPlans(): Promise<UserPlan[]> {
  * @returns List of user plans
  */
 export async function getUserPlansByPlanId(planId: string): Promise<UserPlan[]> {
-  const result = await getAllUserPlans({ planId, limit: 1000 });
-  return result.items;
+  // Buscar todos os user plans do plano em páginas de 100
+  let allUserPlans: UserPlan[] = [];
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    const result = await getAllUserPlans({ planId, limit: 100, page });
+    allUserPlans = [...allUserPlans, ...result.items];
+    
+    // Verificar se há mais páginas
+    const totalPages = Math.ceil(result.total / result.limit);
+    hasMore = page < totalPages;
+    page++;
+  }
+
+  return allUserPlans;
 }
 
 /**
