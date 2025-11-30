@@ -775,7 +775,14 @@ export class SupabaseUserPlanService implements IUserPlanService {
     try {
       let query = this.supabase
         .from('user_plans')
-        .select('*', { count: 'exact' });
+        .select(`
+          *,
+          users:user_id (
+            id,
+            email,
+            display_name
+          )
+        `, { count: 'exact' });
 
       if (options.userId) {
         query = query.eq('user_id', options.userId);
@@ -845,7 +852,7 @@ export class SupabaseUserPlanService implements IUserPlanService {
   }
 
   private mapToEntity(data: any): UserPlan {
-    return {
+    const userPlan: UserPlan = {
       id: data.id,
       userId: data.user_id,
       planId: data.plan_id,
@@ -865,6 +872,17 @@ export class SupabaseUserPlanService implements IUserPlanService {
       createdAt: new Date(data.created_at),
       updatedAt: new Date(data.updated_at),
     };
+
+    // Adicionar dados do usuário se disponíveis
+    if (data.users) {
+      userPlan.user = {
+        id: data.users.id,
+        name: data.users.display_name || data.users.email?.split('@')[0] || 'Usuário',
+        email: data.users.email,
+      };
+    }
+
+    return userPlan;
   }
 
 
