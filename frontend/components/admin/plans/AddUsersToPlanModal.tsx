@@ -1,12 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AdminModal } from '../ui/AdminModal';
 import { AdminButton } from '../ui/AdminButton';
 import { AdminInput } from '../ui/AdminInput';
 import { useToast } from '@/lib/contexts/ToastContext';
 import { createUserPlan } from '@/services/admin/userPlanService';
+import { searchUsers } from '@/services/admin/userService';
 import type { PaymentMethod } from '@/types/admin/plan';
+import type { User } from '@/types/admin/user';
 
 interface AddUsersToPlanModalProps {
   isOpen: boolean;
@@ -25,21 +27,61 @@ export function AddUsersToPlanModal({
 }: AddUsersToPlanModalProps) {
   const toast = useToast();
   const [loading, setLoading] = useState(false);
-  const [userIds, setUserIds] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<User[]>([]);
+  const [selectedUsers, setSelectedUsers] = useState<Set<string>>(new Set());
   const [durationDays, setDurationDays] = useState(30);
-  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('admin');
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('ADMIN');
   const [autoRenew, setAutoRenew] = useState(false);
+  const [searching, setSearching] = useState(false);
+
+  // Buscar usuários quando o query mudar
+  useEffect(() => {
+    const delaySearch = setTimeout(async () => {
+      if (searchQuery.trim().length >= 2) {
+        setSearching(true);
+        try {
+          const results = await searchUsers(searchQuery, 50);
+          setSearchResults(results);
+        } catch (error) {
+          console.error('Erro ao buscar usuários:', error);
+          setSearchResults([]);
+        } finally {
+          setSearching(false);
+        }
+      } else {
+        setSearchResults([]);
+      }
+    }, 300);
+
+    return () => clearTimeout(delaySearch);
+  }, [searchQuery]);
+
+  const handleToggleUser = (userId: string) => {
+    const newSelected = new Set(selectedUsers);
+    if (newSelected.has(userId)) {
+      newSelected.delete(userId);
+    } else {
+      newSelected.add(userId);
+    }
+    setSelectedUsers(newSelected);
+  };
+
+  const handleSelectAll = () => {
+    const newSelected = new Set(selectedUsers);
+    searchResults.forEach(user => newSelected.add(user.id));
+    setSelectedUsers(newSelected);
+  };
+
+  const handleDeselectAll = () => {
+    setSelectedUsers(new Set());
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const ids = userIds
-      .split('\n')
-      .map(id => id.trim())
-      .filter(id => id.length > 0);
-
-    if (ids.length === 0) {
-      toast.error('Adicione pelo menos um ID de usuário');
+    if (selectedUsers.size === 0) {
+      toast.error('Selecione pelo menos um usuário');
       return;
     }
 
@@ -50,7 +92,7 @@ export function AddUsersToPlanModal({
       endDate.setDate(endDate.getDate() + durationDays);
 
       const results = await Promise.allSettled(
-        ids.map(userId =>
+        Array.from(selectedUsers).map(userId =>
           createUserPlan({
             userId,
             planId,
@@ -84,9 +126,11 @@ export function AddUsersToPlanModal({
   };
 
   const handleClose = () => {
-    setUserIds('');
+    setSearchQuery('');
+    setSearchResults([]);
+    setSelectedUsers(new Set());
     setDurationDays(30);
-    setPaymentMethod('admin');
+    setPaymentMethod('ADMIN');
     setAutoRenew(false);
     onClose();
   };
@@ -100,23 +144,101 @@ export function AddUsersToPlanModal({
     >
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-4">
+          {/* Busca de usuários */}
           <div>
             <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2">
-              IDs dos Usuários *
+              Buscar Usuários *
             </label>
-            <textarea
-              value={userIds}
-              onChange={(e) => setUserIds(e.target.value)}
-              placeholder="Cole os IDs dos usuários, um por linha&#10;exemplo:&#10;uuid-1&#10;uuid-2&#10;uuid-3"
-              rows={8}
-              className="w-full px-4 py-3 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary font-mono text-sm"
-              required
+            <AdminInput
+              placeholder="Digite nome ou email para buscar..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              icon="search"
             />
-            <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary mt-2">
-              {userIds.split('\n').filter(id => id.trim().length > 0).length} usuário(s)
-            </p>
+            {searching && (
+              <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary mt-2">
+                Buscando...
+              </p>
+            )}
           </div>
 
+          {/* Lista de resultados */}
+          {searchResults.length > 0 && (
+            <div className="border border-border-light dark:border-border-dark rounded-xl overflow-hidden">
+              <div className="bg-surface-light dark:bg-surface-dark px-4 py-2 border-b border-border-light dark:border-border-dark flex items-center justify-between">
+                <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">
+                  {searchResults.length} resultado(s)
+                </span>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={handleSelectAll}
+                    className="text-xs text-primary hover:underline"
+                  >
+                    Selecionar todos
+                  </button>
+                  {selectedUsers.size > 0 && (
+                    <button
+                      type="button"
+                      onClick={handleDeselectAll}
+                      className="text-xs text-red-600 dark:text-red-400 hover:underline"
+                    >
+                      Limpar seleção
+                    </button>
+                  )}
+                </div>
+              </div>
+              <div className="max-h-64 overflow-y-auto">
+                {searchResults.map(user => (
+                  <label
+                    key={user.id}
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-sidebar-active-light dark:hover:bg-sidebar-active-dark/20 cursor-pointer border-b border-border-light dark:border-border-dark last:border-b-0"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={selectedUsers.has(user.id)}
+                      onChange={() => handleToggleUser(user.id)}
+                      className="w-4 h-4 rounded border-gray-300 text-primary focus:ring-primary"
+                    />
+                    <div className="flex items-center gap-3 flex-1">
+                      {user.photo_url ? (
+                        <img
+                          src={user.photo_url}
+                          alt={user.display_name}
+                          className="w-8 h-8 rounded-full"
+                        />
+                      ) : (
+                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="text-primary font-semibold text-sm">
+                            {user.display_name?.[0]?.toUpperCase() || 'U'}
+                          </span>
+                        </div>
+                      )}
+                      <div className="flex-1">
+                        <div className="font-medium text-text-light-primary dark:text-text-dark-primary text-sm">
+                          {user.display_name}
+                        </div>
+                        <div className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                          {user.email}
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Usuários selecionados */}
+          {selectedUsers.size > 0 && (
+            <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
+              <p className="text-sm text-blue-700 dark:text-blue-300">
+                <span className="font-semibold">{selectedUsers.size}</span> usuário(s) selecionado(s)
+              </p>
+            </div>
+          )}
+
+          {/* Configurações do plano */}
           <div className="grid grid-cols-2 gap-4">
             <AdminInput
               label="Duração (dias) *"
@@ -137,7 +259,7 @@ export function AddUsersToPlanModal({
                 className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary"
                 required
               >
-                <option value="admin">Admin (Manual)</option>
+                <option value="ADMIN">Admin (Manual)</option>
                 <option value="PIX">PIX</option>
                 <option value="CREDIT_CARD">Cartão de Crédito</option>
               </select>
@@ -170,7 +292,7 @@ export function AddUsersToPlanModal({
                 <ul className="list-disc list-inside space-y-1">
                   <li>Todos os usuários receberão o mesmo plano</li>
                   <li>A data de início será hoje</li>
-                  <li>IDs inválidos serão ignorados</li>
+                  <li>A data de término será calculada automaticamente</li>
                 </ul>
               </div>
             </div>
@@ -190,8 +312,9 @@ export function AddUsersToPlanModal({
             type="submit"
             loading={loading}
             icon="person_add"
+            disabled={selectedUsers.size === 0}
           >
-            Adicionar Usuários
+            Adicionar {selectedUsers.size > 0 ? `${selectedUsers.size} ` : ''}Usuários
           </AdminButton>
         </div>
       </form>
