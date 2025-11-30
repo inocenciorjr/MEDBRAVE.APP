@@ -35,22 +35,42 @@ export function AddUsersToPlanModal({
   const [autoRenew, setAutoRenew] = useState(false);
   const [searching, setSearching] = useState(false);
 
+  // Carregar lista inicial de usuários ao abrir o modal
+  useEffect(() => {
+    if (isOpen) {
+      loadInitialUsers();
+    }
+  }, [isOpen]);
+
+  const loadInitialUsers = async () => {
+    setSearching(true);
+    try {
+      const results = await searchUsers('', 100); // Busca vazia retorna os primeiros usuários
+      setSearchResults(results);
+    } catch (error) {
+      console.error('Erro ao carregar usuários:', error);
+      setSearchResults([]);
+    } finally {
+      setSearching(false);
+    }
+  };
+
   // Buscar usuários quando o query mudar
   useEffect(() => {
+    if (!searchQuery.trim()) {
+      return; // Não buscar se estiver vazio, já temos a lista inicial
+    }
+
     const delaySearch = setTimeout(async () => {
-      if (searchQuery.trim().length >= 2) {
-        setSearching(true);
-        try {
-          const results = await searchUsers(searchQuery, 50);
-          setSearchResults(results);
-        } catch (error) {
-          console.error('Erro ao buscar usuários:', error);
-          setSearchResults([]);
-        } finally {
-          setSearching(false);
-        }
-      } else {
+      setSearching(true);
+      try {
+        const results = await searchUsers(searchQuery, 50);
+        setSearchResults(results);
+      } catch (error) {
+        console.error('Erro ao buscar usuários:', error);
         setSearchResults([]);
+      } finally {
+        setSearching(false);
       }
     }, 300);
 
