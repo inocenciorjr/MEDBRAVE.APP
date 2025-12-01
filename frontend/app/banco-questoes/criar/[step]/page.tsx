@@ -86,10 +86,23 @@ function GeralStep() {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  const selectedSubjects = useMemo(() =>
-    subjects.filter(s => state.selectedSubjects.includes(s.id)),
-    [subjects, state.selectedSubjects]
-  );
+  const selectedSubjects = useMemo(() => {
+    // Criar um mapa de todos os subjects incluindo filhos (subfiltros)
+    const allSubjects = new Map<string, any>();
+    subjects.forEach(subject => {
+      allSubjects.set(subject.id, subject);
+      if (subject.children) {
+        subject.children.forEach((child: any) => {
+          allSubjects.set(child.id, child);
+        });
+      }
+    });
+    
+    // Filtrar apenas os selecionados
+    return state.selectedSubjects
+      .map(id => allSubjects.get(id))
+      .filter(Boolean);
+  }, [subjects, state.selectedSubjects]);
 
   const selectedInstitutions = useMemo(() => {
     const result: any[] = [];
@@ -223,7 +236,7 @@ function AssuntosStep() {
   const subjects = useMemo(() => hierarchyToSubjects(educationalHierarchy), [educationalHierarchy]);
 
   // Contar questões em tempo real
-  const { count: questionCount } = useQuestionCount({
+  const { count: questionCount, isFetching: isCountFetching } = useQuestionCount({
     filterIds: [
       ...state.selectedSubjects.filter(id => !id.includes('_')),
       ...(state.selectedExamTypes || [])
@@ -247,10 +260,23 @@ function AssuntosStep() {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  const selectedSubjects = useMemo(() =>
-    subjects.filter(s => state.selectedSubjects.includes(s.id)),
-    [subjects, state.selectedSubjects]
-  );
+  const selectedSubjects = useMemo(() => {
+    // Criar um mapa de todos os subjects incluindo filhos (subfiltros)
+    const allSubjects = new Map<string, any>();
+    subjects.forEach(subject => {
+      allSubjects.set(subject.id, subject);
+      if (subject.children) {
+        subject.children.forEach((child: any) => {
+          allSubjects.set(child.id, child);
+        });
+      }
+    });
+    
+    // Filtrar apenas os selecionados
+    return state.selectedSubjects
+      .map(id => allSubjects.get(id))
+      .filter(Boolean);
+  }, [subjects, state.selectedSubjects]);
 
   const { hierarchy: institutionHierarchy } = useInstitutionHierarchy();
   const selectedInstitutions = useMemo(() => {
@@ -376,7 +402,7 @@ function AnosStep() {
   const subjects = useMemo(() => hierarchyToSubjects(hierarchy), [hierarchy]);
 
   // Contar questões em tempo real
-  const { count: questionCount } = useQuestionCount({
+  const { count: questionCount, isFetching: isCountFetching } = useQuestionCount({
     filterIds: [
       ...state.selectedSubjects.filter(id => !id.includes('_')),
       ...(state.selectedExamTypes || [])
@@ -400,10 +426,23 @@ function AnosStep() {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  const selectedSubjects = useMemo(() =>
-    subjects.filter(s => state.selectedSubjects.includes(s.id)),
-    [subjects, state.selectedSubjects]
-  );
+  const selectedSubjects = useMemo(() => {
+    // Criar um mapa de todos os subjects incluindo filhos (subfiltros)
+    const allSubjects = new Map<string, any>();
+    subjects.forEach(subject => {
+      allSubjects.set(subject.id, subject);
+      if (subject.children) {
+        subject.children.forEach((child: any) => {
+          allSubjects.set(child.id, child);
+        });
+      }
+    });
+    
+    // Filtrar apenas os selecionados
+    return state.selectedSubjects
+      .map(id => allSubjects.get(id))
+      .filter(Boolean);
+  }, [subjects, state.selectedSubjects]);
 
   const selectedInstitutions = useMemo(() =>
     [] as any[], // TODO: Implementar quando tiver dados de instituições
@@ -458,10 +497,11 @@ function AnosStep() {
                   return `Ano da Prova_${y}`;
                 })}
                 onToggleYear={(yearId) => {
-                  // Extrair o ano do ID (ex: "Ano da Prova_2025" -> 2025)
+                  // Extrair o ano do ID (ex: "Ano da Prova_2025" -> 2025 ou "Ano da Prova_2022_2022.1" -> 2022.1)
                   const parts = yearId.split('_');
                   const yearStr = parts[parts.length - 1];
-                  const yearValue = parseInt(yearStr);
+                  // Usar parseFloat para preservar decimais (2022.1, 2022.2)
+                  const yearValue = parseFloat(yearStr);
                   if (!isNaN(yearValue)) {
                     toggleYear(yearValue);
                     setError('');
@@ -554,13 +594,17 @@ function InstituicoesStep() {
   const decrementIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const holdActivatedRef = useRef(false);
 
+  // Estado para animação de ajuste automático
+  const [limitAdjusted, setLimitAdjusted] = useState(false);
+  const prevQuestionCountRef = useRef(0);
+
   // Buscar dados reais do banco
   const { hierarchy } = useFilterHierarchy();
   const subjects = useMemo(() => hierarchyToSubjects(hierarchy), [hierarchy]);
   const { hierarchy: institutionHierarchy } = useInstitutionHierarchy();
 
   // Contar questões em tempo real - união de tipos de prova + instituições
-  const { count: questionCount } = useQuestionCount({
+  const { count: questionCount, isFetching: isCountFetching } = useQuestionCount({
     filterIds: [
       ...state.selectedSubjects.filter(id => !id.includes('_')),
       ...(state.selectedExamTypes || [])
@@ -569,6 +613,28 @@ function InstituicoesStep() {
     years: state.selectedYears,
     institutions: state.selectedInstitutions,
   });
+
+  // Ajustar questionLimit automaticamente quando a contagem cair abaixo dele
+  useEffect(() => {
+    // Só ajustar se:
+    // 1. A contagem mudou
+    // 2. O limite atual é maior que a nova contagem
+    // 3. A contagem não é zero (para evitar resetar quando está carregando)
+    if (
+      questionCount !== prevQuestionCountRef.current &&
+      state.questionLimit > questionCount &&
+      questionCount > 0
+    ) {
+      console.log(`[InstituicoesStep] Ajustando limite de ${state.questionLimit} para ${questionCount}`);
+      updateQuestionLimit(questionCount);
+      
+      // Ativar animação
+      setLimitAdjusted(true);
+      setTimeout(() => setLimitAdjusted(false), 2000); // Remover após 2s
+    }
+    
+    prevQuestionCountRef.current = questionCount;
+  }, [questionCount, state.questionLimit, updateQuestionLimit]);
 
   // Garantir que os estados de holding sejam resetados se o mouse for solto fora do botão
   useEffect(() => {
@@ -692,6 +758,48 @@ function InstituicoesStep() {
     return result;
   }, [institutionHierarchy]);
 
+  // Função para ordenar questões (mesma lógica do QuestionPreviewModal)
+  const sortQuestions = (questions: any[]) => {
+    return questions.sort((a: any, b: any) => {
+      // Extrair ano dos sub_filter_ids (não das tags)
+      const getYear = (subFilterIds?: string[]) => {
+        const yearSubFilterId = subFilterIds?.find(id => id.startsWith('Ano da Prova_'));
+        if (yearSubFilterId) {
+          const parts = yearSubFilterId.split('_');
+          // parts = ["Ano da Prova", "2026"] ou ["Ano da Prova", "2026", "2026.1"]
+          const yearStr = parts[parts.length - 1]; // Pegar o último elemento
+          return parseInt(yearStr) || 0;
+        }
+        return 0;
+      };
+
+      // Extrair instituição dos sub_filter_ids (qualquer instituição, não apenas selecionadas)
+      const getInstitution = (subFilterIds?: string[]) => {
+        const institutionId = subFilterIds?.find(id => id.startsWith('Universidade_'));
+        return institutionId || '';
+      };
+
+      const yearA = getYear(a.sub_filter_ids);
+      const yearB = getYear(b.sub_filter_ids);
+
+      // Primeiro por ano (decrescente - mais recente primeiro)
+      if (yearA !== yearB) {
+        return yearB - yearA;
+      }
+
+      // Depois por universidade (alfabética)
+      const instA = getInstitution(a.sub_filter_ids);
+      const instB = getInstitution(b.sub_filter_ids);
+
+      if (instA !== instB) {
+        return instA.localeCompare(instB);
+      }
+
+      // Dentro da mesma universidade e ano, manter ordem original
+      return 0;
+    });
+  };
+
   const handleFinish = async () => {
     // Validação 1: Nome obrigatório
     if (!state.listName || state.listName.trim() === '') {
@@ -741,7 +849,10 @@ function InstituicoesStep() {
           limit: 10000,
         });
 
-        questions = searchResponse.data.data?.questions || [];
+        const fetchedQuestions = searchResponse.data.data?.questions || [];
+        
+        // Ordenar questões (mesma lógica do preview)
+        questions = sortQuestions(fetchedQuestions);
       }
 
       if (!questions || questions.length === 0) {
@@ -751,7 +862,7 @@ function InstituicoesStep() {
         return;
       }
 
-      // Limitar questões ao número especificado
+      // Limitar questões ao número especificado (já ordenadas)
       const limitedQuestions = questions.slice(0, state.questionLimit);
 
       // 2. Criar a lista no backend
@@ -768,14 +879,15 @@ function InstituicoesStep() {
       });
 
       const listData = createListResponse.data;
-      console.log('Lista criada com sucesso:', listData);
 
       // Mostrar toast de sucesso
       toast.success('Lista criada!', `${limitedQuestions.length} questões adicionadas com sucesso`);
 
       // Preparar dados para o modal
+      const listId = listData.id || listData.data?.id || listData.list_id;
+      
       setCreatedListData({
-        id: listData.id,
+        id: listId,
         name: state.listName,
         questionCount: limitedQuestions.length,
       });
@@ -802,10 +914,23 @@ function InstituicoesStep() {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  const selectedSubjects = useMemo(() =>
-    subjects.filter(s => state.selectedSubjects.includes(s.id)),
-    [subjects, state.selectedSubjects]
-  );
+  const selectedSubjects = useMemo(() => {
+    // Criar um mapa de todos os subjects incluindo filhos (subfiltros)
+    const allSubjects = new Map<string, any>();
+    subjects.forEach(subject => {
+      allSubjects.set(subject.id, subject);
+      if (subject.children) {
+        subject.children.forEach((child: any) => {
+          allSubjects.set(child.id, child);
+        });
+      }
+    });
+    
+    // Filtrar apenas os selecionados
+    return state.selectedSubjects
+      .map(id => allSubjects.get(id))
+      .filter(Boolean);
+  }, [subjects, state.selectedSubjects]);
 
   const selectedInstitutions = useMemo(() =>
     institutions.filter((i: any) => state.selectedInstitutions.includes(i.id)),
@@ -851,22 +976,44 @@ function InstituicoesStep() {
               </div>
 
               {/* Campo de Quantidade - Movido para cima com destaque */}
-              <div className="mb-8 p-6 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 rounded-xl border-2 border-primary/30 shadow-lg">
+              <div className={`mb-8 p-6 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 rounded-xl border-2 shadow-lg transition-all duration-500 ${
+                limitAdjusted 
+                  ? 'border-amber-500 shadow-amber-500/50 animate-pulse' 
+                  : 'border-primary/30'
+              }`}>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                      <span className="material-symbols-outlined text-primary text-xl">
-                        format_list_numbered
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-500 ${
+                      limitAdjusted 
+                        ? 'bg-amber-500/30 scale-110' 
+                        : 'bg-primary/20'
+                    }`}>
+                      <span className={`material-symbols-outlined text-xl transition-colors duration-500 ${
+                        limitAdjusted 
+                          ? 'text-amber-600 dark:text-amber-400' 
+                          : 'text-primary'
+                      }`}>
+                        {limitAdjusted ? 'sync' : 'format_list_numbered'}
                       </span>
                     </div>
                     <div>
                       <label htmlFor="question-limit" className="text-base font-semibold text-slate-800 dark:text-slate-100 block">
                         Quantidade de Questões
+                        {limitAdjusted && (
+                          <span className="ml-2 text-xs text-amber-600 dark:text-amber-400 font-normal animate-pulse">
+                            (ajustado automaticamente)
+                          </span>
+                        )}
                       </label>
-                      <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                      <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary flex items-center gap-1.5">
                         {questionCount > 0
                           ? `${questionCount} disponíveis (máx: ${Math.min(questionCount, 500)})`
                           : 'Selecione filtros para ver questões disponíveis'}
+                        {isCountFetching && (
+                          <span className="material-symbols-outlined text-sm text-primary animate-spin">
+                            sync
+                          </span>
+                        )}
                       </p>
                     </div>
                   </div>
@@ -915,10 +1062,13 @@ function InstituicoesStep() {
                       updateQuestionLimit(value);
                       setError('');
                     }}
-                    className="flex-1 px-6 py-4 bg-white dark:bg-slate-800 border-2 border-primary/30 dark:border-primary/40
-                             rounded-xl text-slate-800 dark:text-slate-100 text-center text-2xl font-bold
-                             focus:ring-2 focus:ring-primary focus:border-primary shadow-md hover:shadow-lg transition-all
-                             [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    className={`flex-1 px-6 py-4 bg-white dark:bg-slate-800 border-2 rounded-xl text-center text-2xl font-bold
+                             focus:ring-2 focus:ring-primary focus:border-primary shadow-md hover:shadow-lg transition-all duration-500
+                             [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none ${
+                               limitAdjusted
+                                 ? 'border-amber-500 text-amber-600 dark:text-amber-400 scale-105'
+                                 : 'border-primary/30 dark:border-primary/40 text-slate-800 dark:text-slate-100'
+                             }`}
                     placeholder="0"
                   />
                   <button

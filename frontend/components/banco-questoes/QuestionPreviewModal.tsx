@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import api from '@/services/api';
 
 interface Question {
@@ -64,11 +64,31 @@ export default function QuestionPreviewModal({
     });
   };
 
+  // Usar refs para evitar loop infinito com arrays como dependências
+  const prevFiltersRef = useRef<string>('');
+  const hasInitializedRef = useRef(false);
+
   useEffect(() => {
-    if (isOpen) {
+    if (!isOpen) {
+      // Reset quando fecha o modal
+      hasInitializedRef.current = false;
+      return;
+    }
+
+    // Criar uma string única para comparar os filtros
+    const filtersKey = JSON.stringify({
+      filterIds: [...filterIds].sort(),
+      subFilterIds: [...subFilterIds].sort(),
+      years: [...years].sort(),
+      institutions: [...institutions].sort(),
+    });
+
+    // Só executar se os filtros mudaram ou é a primeira vez
+    if (filtersKey !== prevFiltersRef.current) {
+      prevFiltersRef.current = filtersKey;
       initializeModal();
     }
-  }, [isOpen]);
+  }, [isOpen, filterIds, subFilterIds, years, institutions]);
 
   const initializeModal = async () => {
     setLoadingSubFilters(true);
@@ -79,8 +99,6 @@ export default function QuestionPreviewModal({
 
   const fetchSubFilters = async (): Promise<Map<string, SubFilter>> => {
     try {
-      console.log('[QuestionPreview] Buscando hierarquias completas...');
-      
       // Buscar TODAS as hierarquias disponíveis
       const [filterHierarchyResponse, institutionHierarchyResponse, yearsResponse] = await Promise.all([
         api.get('/banco-questoes/filters/hierarchy'),
@@ -114,9 +132,6 @@ export default function QuestionPreviewModal({
       yearsHierarchy.forEach((year: any) => extractSubFilters(year));
       
       setSubFiltersMap(map);
-      console.log('[QuestionPreview] Total de SubFilters carregados:', map.size);
-      console.log('[QuestionPreview] Tem o ID de instituição?', map.has('Universidade_Sp_HospitalIsraelitaAlbertEinstein-Hiae'));
-      console.log('[QuestionPreview] Amostra:', Array.from(map.entries()).slice(0, 3));
       
       return map;
     } catch (err) {
@@ -130,13 +145,6 @@ export default function QuestionPreviewModal({
     setError(null);
 
     try {
-      console.log('[QuestionPreview] Buscando questões com filtros:', {
-        filterIds,
-        subFilterIds,
-        years,
-        institutions,
-      });
-
       // Buscar TODAS as questões para ordenar corretamente usando o mesmo padrão do contador
       const response = await api.post('/banco-questoes/questions/search', {
         filterIds,
@@ -146,29 +154,26 @@ export default function QuestionPreviewModal({
         page: 1,
         limit: 10000, // Buscar todas
       });
-
-      console.log('[QuestionPreview] Resposta da API:', response.data);
       
       // A API retorna { success: true, data: { questions, total, page, limit, totalPages } }
       const result = response.data.data || {};
       const fetchedQuestions = result.questions || [];
-      console.log('[QuestionPreview] Total de questões encontradas:', fetchedQuestions.length);
       
       // Usar o mapa passado como parâmetro ou o do estado
       const mapToUse = subFiltersMapParam || subFiltersMap;
       
       // Ordenar: ano desc > universidade > manter ordem original (aleatória)
       const sorted = fetchedQuestions.sort((a: Question, b: Question) => {
-        // Extrair ano
-        const yearA = getYearFromTags(a.tags);
-        const yearB = getYearFromTags(b.tags);
+        // Extrair ano dos sub_filter_ids (não das tags)
+        const yearA = getYearFromSubFilters(a.sub_filter_ids);
+        const yearB = getYearFromSubFilters(b.sub_filter_ids);
         
-        // Primeiro por ano (decrescente)
+        // Primeiro por ano (decrescente - mais recente primeiro)
         if (yearA !== yearB) {
           return yearB - yearA;
         }
         
-        // Depois por universidade
+        // Depois por universidade (alfabética)
         const instA = getInstitutionFromSubFilters(a.sub_filter_ids);
         const instB = getInstitutionFromSubFilters(b.sub_filter_ids);
         
@@ -205,6 +210,8 @@ export default function QuestionPreviewModal({
   };
 
   const getYearFromTags = (tags?: string[]): number => {
+    // Nota: Esta função usa 'tags' mas o ano pode não estar nas tags
+    // Vamos manter para compatibilidade, mas a ordenação usa sub_filter_ids
     const yearTag = tags?.find(t => t.startsWith('Ano da Prova_'));
     if (yearTag) {
       const parts = yearTag.split('_');
@@ -213,8 +220,21 @@ export default function QuestionPreviewModal({
     return 0;
   };
 
+  const getYearFromSubFilters = (subFilterIds?: string[]): number => {
+    // Buscar ano nos sub_filter_ids (formato: "Ano da Prova_2026")
+    const yearSubFilterId = subFilterIds?.find(id => id.startsWith('Ano da Prova_'));
+    if (yearSubFilterId) {
+      const parts = yearSubFilterId.split('_');
+      // parts = ["Ano da Prova", "2026"] ou ["Ano da Prova", "2026", "2026.1"]
+      const yearStr = parts[parts.length - 1]; // Pegar o último elemento
+      return parseInt(yearStr) || 0;
+    }
+    return 0;
+  };
+
   const getInstitutionFromSubFilters = (subFilterIds?: string[]): string => {
-    const institutionId = subFilterIds?.find(id => institutions.includes(id));
+    // Buscar qualquer instituição (não apenas as selecionadas)
+    const institutionId = subFilterIds?.find(id => id.startsWith('Universidade_'));
     return institutionId || '';
   };
 
@@ -223,15 +243,6 @@ export default function QuestionPreviewModal({
     const yearSubFilterId = question.sub_filter_ids?.find(id => 
       id.startsWith('Ano da Prova_')
     );
-    
-    if (question.id === questions[0]?.id) {
-      console.log('[QuestionPreview] DEBUG Ano - Primeira questão:', {
-        'sub_filter_ids da questão': question.sub_filter_ids,
-        'yearSubFilterId encontrado': yearSubFilterId,
-        'Tamanho do mapa': subFiltersMap.size,
-        'Tem no mapa?': yearSubFilterId ? subFiltersMap.has(yearSubFilterId) : false,
-      });
-    }
     
     if (yearSubFilterId) {
       const subFilter = subFiltersMap.get(yearSubFilterId);
@@ -242,8 +253,9 @@ export default function QuestionPreviewModal({
   };
 
   const getInstitutionFromQuestion = (question: Question): string => {
+    // Buscar qualquer subfiltro que comece com "Universidade_"
     const institutionId = question.sub_filter_ids?.find(id => 
-      institutions.includes(id)
+      id.startsWith('Universidade_')
     );
     
     if (institutionId) {
@@ -511,7 +523,9 @@ export default function QuestionPreviewModal({
 
                   <div className="mb-4">
                     <div 
-                      className="text-text-light-primary dark:text-text-dark-primary prose dark:prose-invert max-w-none"
+                      className="text-text-light-primary dark:text-text-dark-primary prose dark:prose-invert max-w-none font-semibold
+                                 [&_img]:mx-auto [&_img]:block [&_img]:my-4 [&_img]:max-w-full [&_img]:h-auto
+                                 [&_table]:mx-auto [&_table]:my-4"
                       dangerouslySetInnerHTML={{ __html: question.content }}
                     />
                   </div>

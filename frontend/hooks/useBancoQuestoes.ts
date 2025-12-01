@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useQuery } from '@tanstack/react-query';
 import api from '@/services/api';
 import {
   getRootFilters,
@@ -215,11 +216,9 @@ export function useAvailableYears() {
 
 /**
  * Hook para contar questões em tempo real baseado nos filtros selecionados
+ * Usa React Query para cache automático e otimização
  */
 export function useQuestionCount(params: SearchQuestionsParams) {
-  const [count, setCount] = useState(0);
-  const [loading, setLoading] = useState(true); // Iniciar como true para evitar hydration mismatch
-  const [error, setError] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
 
   // Detectar quando o componente está montado no cliente
@@ -227,48 +226,46 @@ export function useQuestionCount(params: SearchQuestionsParams) {
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    // Não executar no servidor
-    if (!mounted) return;
+  // Verificar se tem filtros selecionados
+  const hasFilters = 
+    (params.filterIds && params.filterIds.length > 0) ||
+    (params.subFilterIds && params.subFilterIds.length > 0) ||
+    (params.years && params.years.length > 0) ||
+    (params.institutions && params.institutions.length > 0);
 
-    // Só buscar se tiver PELO MENOS UM filtro selecionado
-    const hasFilters = 
-      (params.filterIds && params.filterIds.length > 0) ||
-      (params.subFilterIds && params.subFilterIds.length > 0) ||
-      (params.years && params.years.length > 0) ||
-      (params.institutions && params.institutions.length > 0);
+  // Criar uma chave única baseada nos filtros
+  const queryKey = [
+    'question-count',
+    params.filterIds?.sort(),
+    params.subFilterIds?.sort(),
+    params.years?.sort(),
+    params.institutions?.sort(),
+  ];
 
-    if (!hasFilters) {
-      setCount(0);
-      setLoading(false);
-      return;
-    }
+  // Usar React Query para buscar e cachear a contagem
+  const { data, isLoading, error, isFetching } = useQuery({
+    queryKey,
+    queryFn: async () => {
+      const response = await api.post('/banco-questoes/questions/count', params);
+      return response.data.data.count as number;
+    },
+    enabled: mounted && hasFilters, // Só executar se montado e tiver filtros
+    staleTime: 2 * 60 * 1000, // Cache por 2 minutos
+    gcTime: 5 * 60 * 1000, // Manter no cache por 5 minutos
+    placeholderData: (previousData) => previousData, // Manter valor anterior enquanto carrega
+  });
 
-    async function fetchCount() {
-      try {
-        setLoading(true);
-        const response = await api.post('/banco-questoes/questions/count', params);
-        setCount(response.data.data.count);
-        setError(null);
-      } catch (err) {
-        setError('Erro ao contar questões');
-        console.error('[useQuestionCount] Erro:', err);
-        setCount(0);
-      } finally {
-        setLoading(false);
-      }
-    }
+  // Se não tem filtros, retornar 0
+  if (!hasFilters) {
+    return { count: 0, loading: false, isFetching: false, error: null };
+  }
 
-    fetchCount();
-  }, [
-    mounted,
-    JSON.stringify(params.filterIds),
-    JSON.stringify(params.subFilterIds),
-    JSON.stringify(params.years),
-    JSON.stringify(params.institutions),
-  ]);
-
-  return { count, loading, error };
+  return {
+    count: data ?? 0,
+    loading: isLoading, // true apenas na primeira carga (sem dados)
+    isFetching, // true sempre que está buscando (mesmo com dados em cache)
+    error: error ? 'Erro ao contar questões' : null,
+  };
 }
 
 /**

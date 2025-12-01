@@ -321,20 +321,12 @@ export class FilterService {
   /**
    * Conta questões baseado nos filtros selecionados
    * Lógica:
-   * - Dentro de cada grupo: OR (união)
-   * - Entre grupos: AND (interseção)
-   * - Exceção: Tipos de prova + Instituições são OR entre si (soma)
+   * - Especialidades: OR entre si, AND com outros grupos
+   * - Anos: OR entre si, AND com outros grupos
+   * - Tipos de prova + Instituições: OR entre TODOS (soma)
    * 
-   * Grupos:
-   * 1. Assuntos (filterIds + subFilterIds): OR dentro, AND com outros grupos
-   * 2. Anos: OR dentro, AND com outros grupos
-   * 3. Tipos de Prova + Instituições: OR entre todos (soma)
-   * 
-   * Exemplo 1: Cardiologia + Trauma + 2025 + 2024
-   * = (Cardiologia OR Trauma) AND (2025 OR 2024)
-   * 
-   * Exemplo 2: Cardiologia + 2025 + Revalida + USP
-   * = Cardiologia AND 2025 AND (Revalida OR USP)
+   * Exemplo 1: Revalida + USP = questões do Revalida OU da USP
+   * Exemplo 2: Cardiologia + 2025 + Revalida + USP = Cardiologia AND 2025 AND (Revalida OR USP)
    */
   async countQuestionsByFilters(params: SearchQuestionsParams): Promise<number> {
     try {
@@ -345,8 +337,16 @@ export class FilterService {
         institutions = [],
       } = params;
 
+      logger.info('[FilterService] countQuestionsByFilters chamado com:', {
+        filterIds,
+        subFilterIds,
+        years,
+        institutions,
+      });
+
       // Se não tem nenhum filtro, retorna 0
       if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
+        logger.info('[FilterService] Nenhum filtro selecionado, retornando 0');
         return 0;
       }
 
@@ -365,105 +365,61 @@ export class FilterService {
       const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
       const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
 
-      // Construir condições SQL usando operador ? para JSONB
-      const andConditions: string[] = ["status = 'published'"];
+      logger.info('[FilterService] Filtros separados para contagem:', {
+        selectedExamTypes,
+        selectedSpecialties,
+        yearIds,
+        institutions,
+      });
 
-      // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro do grupo
-      const subjectConditions: string[] = [];
-      if (selectedSpecialties.length > 0) {
-        selectedSpecialties.forEach(id => {
-          subjectConditions.push(`filter_ids ? '${id}'`);
-        });
-      }
-      if (subFilterIds.length > 0) {
-        subFilterIds.forEach(id => {
-          subjectConditions.push(`sub_filter_ids ? '${id}'`);
-        });
-      }
-      if (subjectConditions.length > 0) {
-        andConditions.push(`(${subjectConditions.join(' OR ')})`);
-      }
-
-      // Grupo 2: Anos - OR dentro do grupo
-      if (yearIds.length > 0) {
-        const safeYearIds = yearIds.map((id) => String(id).replace(/[^a-zA-Z0-9_\- ]/g, '')).filter(Boolean);
-        const yearConditions = safeYearIds.map(id => `sub_filter_ids ? '${id}'`).join(' OR ');
-        andConditions.push(`(${yearConditions})`);
-      }
-
-      // Grupo 3: Tipos de Prova + Instituições - OR entre todos (soma)
-      const examAndInstConditions: string[] = [];
-      if (selectedExamTypes.length > 0) {
-        selectedExamTypes.forEach(id => {
-          const safe = String(id).replace(/[^a-zA-Z0-9_\- ]/g, '');
-          if (safe) examAndInstConditions.push(`filter_ids ? '${safe}'`);
-        });
-      }
-      if (institutions.length > 0) {
-        institutions.forEach(id => {
-          const safe = String(id).replace(/[^a-zA-Z0-9_\- ]/g, '');
-          if (safe) examAndInstConditions.push(`sub_filter_ids ? '${safe}'`);
-        });
-      }
-      if (examAndInstConditions.length > 0) {
-        andConditions.push(`(${examAndInstConditions.join(' OR ')})`);
-      }
-
-      const sqlQuery = `
-        SELECT COUNT(*) as total
-        FROM questions
-        WHERE ${andConditions.join(' AND ')};
-      `;
-
-      // Usar RPC para executar a query
-      const { data, error } = await supabase.rpc('get_question_count', { query_text: sqlQuery });
-
-      if (!error && data && data.length > 0) {
-        return Number(data[0]?.total) || 0;
-      }
-
-      logger.warn('[FilterService] RPC falhou, usando fallback. Erro:', error?.message);
-
+      // Buscar todas as questões publicadas e filtrar no código
       const { data: questions, error: fetchError } = await supabase
         .from('questions')
         .select('filter_ids, sub_filter_ids')
-        .eq('status', 'published')
-        .range(0, 999999); // Range máximo
+        .eq('status', 'published');
 
       if (fetchError) {
         throw new Error(`Erro ao buscar questões: ${fetchError.message}`);
       }
 
-      const filtered = questions.filter((q: any) => {
+      const filtered = (questions || []).filter((q: any) => {
         const qFilterIds = q.filter_ids || [];
         const qSubFilterIds = q.sub_filter_ids || [];
 
-        // Separar tipos de prova de especialidades
-        const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
-        const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
-        const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
-
-        // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro, AND com outros
-        if (selectedSpecialties.length > 0 || subFilterIds.length > 0) {
-          const hasSpecialty = selectedSpecialties.length === 0 || selectedSpecialties.some(id => qFilterIds.includes(id));
-          const hasSubFilter = subFilterIds.length === 0 || subFilterIds.some(id => qSubFilterIds.includes(id));
-          if (!hasSpecialty && !hasSubFilter) return false;
+        // Grupo 1: Especialidades (filterIds que não são tipos de prova) - OR dentro do grupo
+        if (selectedSpecialties.length > 0) {
+          const hasSpecialty = selectedSpecialties.some(id => qFilterIds.includes(id));
+          if (!hasSpecialty) return false;
         }
 
-        // Grupo 2: Anos - OR dentro, AND com outros
+        // Grupo 2: SubFiltros (especialidades mais específicas) - OR dentro do grupo
+        if (subFilterIds.length > 0) {
+          const hasSubFilter = subFilterIds.some(id => qSubFilterIds.includes(id));
+          if (!hasSubFilter) return false;
+        }
+
+        // Grupo 3: Anos - OR dentro do grupo
         if (yearIds.length > 0) {
           const hasYear = yearIds.some(id => qSubFilterIds.includes(id));
           if (!hasYear) return false;
         }
 
-        // Grupo 3: Tipos de Prova + Instituições - OR entre todos
+        // Grupo 4: Tipos de Prova + Instituições - OR entre TODOS (soma)
+        // Se tiver tipos de prova OU instituições selecionados, a questão deve ter pelo menos um deles
         if (selectedExamTypes.length > 0 || institutions.length > 0) {
           const hasExamType = selectedExamTypes.length > 0 && selectedExamTypes.some(id => qFilterIds.includes(id));
           const hasInst = institutions.length > 0 && institutions.some(id => qSubFilterIds.includes(id));
+          
+          // Precisa ter pelo menos um: tipo de prova OU instituição
           if (!hasExamType && !hasInst) return false;
         }
 
         return true;
+      });
+
+      logger.info('[FilterService] countQuestionsByFilters resultado:', {
+        totalQuestionsInDB: questions?.length || 0,
+        filteredCount: filtered.length,
       });
 
       return filtered.length;
@@ -475,6 +431,15 @@ export class FilterService {
 
   /**
    * Busca questões por filtros e subfiltros
+   * 
+   * Lógica de filtragem:
+   * - Se NENHUM filtro selecionado: retorna 0 questões
+   * - Especialidades: OR entre si, AND com outros grupos
+   * - Anos: OR entre si, AND com outros grupos
+   * - Tipos de prova + Instituições: OR entre TODOS (soma)
+   * 
+   * Exemplo 1: Revalida + USP = questões do Revalida OU da USP
+   * Exemplo 2: Cardiologia + 2025 + Revalida + USP = Cardiologia AND 2025 AND (Revalida OR USP)
    */
   async searchQuestions(params: SearchQuestionsParams) {
     try {
@@ -486,6 +451,26 @@ export class FilterService {
         page = 1,
         limit = 20,
       } = params;
+
+      logger.info('[FilterService] searchQuestions chamado com:', {
+        filterIds,
+        subFilterIds,
+        years,
+        institutions,
+        page,
+        limit,
+      });
+
+      // Se não tem nenhum filtro, retorna vazio
+      if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
+        return {
+          questions: [],
+          total: 0,
+          page,
+          limit,
+          totalPages: 0,
+        };
+      }
 
       // Preparar IDs de anos
       const yearIds = years.map(year => {
@@ -509,33 +494,49 @@ export class FilterService {
         throw new Error('Erro ao buscar questões');
       }
 
+      // Separar tipos de prova de especialidades
+      const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
+      const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
+      const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
+
+      logger.info('[FilterService] Filtros separados:', {
+        selectedExamTypes,
+        selectedSpecialties,
+        subFilterIds,
+        yearIds,
+        institutions,
+      });
+
       // Filtrar no código com lógica AND entre grupos, OR dentro de cada grupo
       const filtered = (allQuestions || []).filter((q: any) => {
         const qFilterIds = q.filter_ids || [];
         const qSubFilterIds = q.sub_filter_ids || [];
 
-        // Separar tipos de prova de especialidades
-        const examTypes = ['Revalida', 'R3', 'Residência Médica', 'Provas Irmãs ( Revalida)'];
-        const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
-        const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
-
-        // Grupo 1: Assuntos (especialidades + subfiltros) - OR dentro, AND com outros
-        if (selectedSpecialties.length > 0 || subFilterIds.length > 0) {
-          const hasSpecialty = selectedSpecialties.length === 0 || selectedSpecialties.some(id => qFilterIds.includes(id));
-          const hasSubFilter = subFilterIds.length === 0 || subFilterIds.some(id => qSubFilterIds.includes(id));
-          if (!hasSpecialty && !hasSubFilter) return false;
+        // Grupo 1: Especialidades (filterIds que não são tipos de prova) - OR dentro do grupo
+        if (selectedSpecialties.length > 0) {
+          const hasSpecialty = selectedSpecialties.some(id => qFilterIds.includes(id));
+          if (!hasSpecialty) return false;
         }
 
-        // Grupo 2: Anos - OR dentro, AND com outros
+        // Grupo 2: SubFiltros (especialidades mais específicas) - OR dentro do grupo
+        if (subFilterIds.length > 0) {
+          const hasSubFilter = subFilterIds.some(id => qSubFilterIds.includes(id));
+          if (!hasSubFilter) return false;
+        }
+
+        // Grupo 3: Anos - OR dentro do grupo
         if (yearIds.length > 0) {
           const hasYear = yearIds.some(id => qSubFilterIds.includes(id));
           if (!hasYear) return false;
         }
 
-        // Grupo 3: Tipos de Prova + Instituições - OR entre todos
+        // Grupo 4: Tipos de Prova + Instituições - OR entre TODOS (soma)
+        // Se tiver tipos de prova OU instituições selecionados, a questão deve ter pelo menos um deles
         if (selectedExamTypes.length > 0 || institutions.length > 0) {
           const hasExamType = selectedExamTypes.length > 0 && selectedExamTypes.some(id => qFilterIds.includes(id));
           const hasInst = institutions.length > 0 && institutions.some(id => qSubFilterIds.includes(id));
+          
+          // Precisa ter pelo menos um: tipo de prova OU instituição
           if (!hasExamType && !hasInst) return false;
         }
 
@@ -546,6 +547,12 @@ export class FilterService {
       const total = filtered.length;
       const offset = (page - 1) * limit;
       const paginatedQuestions = filtered.slice(offset, offset + limit);
+
+      logger.info('[FilterService] searchQuestions resultado:', {
+        totalQuestionsInDB: allQuestions?.length || 0,
+        filteredCount: total,
+        returnedCount: paginatedQuestions.length,
+      });
 
       return {
         questions: paginatedQuestions,

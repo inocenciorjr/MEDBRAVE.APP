@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { AdminModal } from '../ui/AdminModal';
 import { AdminButton } from '../ui/AdminButton';
 import { AdminInput } from '../ui/AdminInput';
@@ -35,14 +35,7 @@ export function AddUsersToPlanModal({
   const [autoRenew, setAutoRenew] = useState(false);
   const [searching, setSearching] = useState(false);
 
-  // Carregar lista inicial de usuários ao abrir o modal
-  useEffect(() => {
-    if (isOpen) {
-      loadInitialUsers();
-    }
-  }, [isOpen]);
-
-  const loadInitialUsers = async () => {
+  const loadInitialUsers = useCallback(async () => {
     setSearching(true);
     try {
       // Buscar todos os usuários
@@ -66,7 +59,14 @@ export function AddUsersToPlanModal({
     } finally {
       setSearching(false);
     }
-  };
+  }, [planId]);
+
+  // Carregar lista inicial de usuários ao abrir o modal
+  useEffect(() => {
+    if (isOpen) {
+      loadInitialUsers();
+    }
+  }, [isOpen, loadInitialUsers]);
 
   // Buscar usuários quando o query mudar
   useEffect(() => {
@@ -100,7 +100,7 @@ export function AddUsersToPlanModal({
     }, 300);
 
     return () => clearTimeout(delaySearch);
-  }, [searchQuery, planId]);
+  }, [searchQuery, planId, loadInitialUsers]);
 
   const handleToggleUser = (userId: string) => {
     const newSelected = new Set(selectedUsers);

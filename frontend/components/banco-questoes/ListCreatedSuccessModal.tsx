@@ -42,7 +42,7 @@ export function ListCreatedSuccessModal({
   }, [isOpen]);
 
   const handleAnswerList = () => {
-    router.push(`/lista-questoes/${listId}`);
+    router.push(`/resolucao-questoes/${listId}`);
     onClose();
   };
 
@@ -55,12 +55,11 @@ export function ListCreatedSuccessModal({
 
   return (
     <>
-      {/* Overlay */}
+      {/* Overlay - Não fecha ao clicar fora */}
       <div
         className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[9998] transition-opacity duration-300 ${
           isAnimating ? 'opacity-100' : 'opacity-0'
         }`}
-        onClick={onClose}
       />
 
       {/* Modal */}
