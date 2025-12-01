@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { Subject, Institution } from '@/types/banco-questoes';
 
@@ -36,6 +36,7 @@ export default function SummaryPanel({
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     setMounted(true);
@@ -69,6 +70,49 @@ export default function SummaryPanel({
   const listName = data?.listName || '';
 
   const hasFilters = selectedSubjects.length > 0 || selectedYears.length > 0 || selectedInstitutions.length > 0 || selectedExamTypes.length > 0;
+
+  // Agrupar assuntos por filtro pai
+  const groupedSubjects = useMemo(() => {
+    const groups = new Map<string, { parent: any; children: any[] }>();
+    
+    selectedSubjects.forEach(subject => {
+      // Se o ID não contém '_', é um filtro pai
+      if (!subject.id.includes('_')) {
+        // Se já existe um grupo para este pai, apenas atualizar o parent
+        if (groups.has(subject.id)) {
+          groups.get(subject.id)!.parent = subject;
+        } else {
+          groups.set(subject.id, { parent: subject, children: [] });
+        }
+      } else {
+        // É um subfiltro - extrair o ID do pai
+        const parentId = subject.id.split('_')[0];
+        
+        if (!groups.has(parentId)) {
+          groups.set(parentId, { parent: null, children: [] });
+        }
+        groups.get(parentId)!.children.push(subject);
+      }
+    });
+    
+    return Array.from(groups.entries()).map(([parentId, data]) => ({
+      parentId,
+      parent: data.parent,
+      children: data.children,
+    }));
+  }, [selectedSubjects]);
+
+  const toggleGroup = (parentId: string) => {
+    setExpandedGroups(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(parentId)) {
+        newSet.delete(parentId);
+      } else {
+        newSet.add(parentId);
+      }
+      return newSet;
+    });
+  };
 
   // Não renderizar até estar montado no cliente
   if (!mounted) {
@@ -198,30 +242,88 @@ export default function SummaryPanel({
                 <span className="material-symbols-outlined text-xl">edit</span>
               </button>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="space-y-2">
               {selectedSubjects.length === 0 ? (
                 <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
                   Nenhum assunto selecionado
                 </span>
               ) : (
-                selectedSubjects.map((subject) => (
-                  <div
-                    key={subject.id}
-                    className="flex items-center gap-1.5 bg-background-light dark:bg-background-dark py-1 px-2.5 rounded shadow-sm"
-                  >
-                    <span className="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">
-                      {subject.name}
-                    </span>
-                    {onRemoveSubject && (
-                      <button
-                        onClick={() => onRemoveSubject(subject.id)}
-                        className="text-text-light-secondary dark:text-text-dark-secondary hover:text-red-500 transition-colors"
+                groupedSubjects.map((group) => {
+                  const hasParent = group.parent !== null;
+                  const hasChildren = group.children.length > 0;
+                  const isExpanded = expandedGroups.has(group.parentId);
+                  
+                  // Se o filtro pai está selecionado, mostrar apenas ele
+                  if (hasParent) {
+                    return (
+                      <div
+                        key={group.parentId}
+                        className="flex items-center gap-1.5 bg-background-light dark:bg-background-dark py-1 px-2.5 rounded shadow-sm"
                       >
-                        <span className="material-symbols-outlined text-base">close</span>
-                      </button>
-                    )}
-                  </div>
-                ))
+                        <span className="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">
+                          {group.parent.name}
+                        </span>
+                        {onRemoveSubject && (
+                          <button
+                            onClick={() => onRemoveSubject(group.parent.id)}
+                            className="text-text-light-secondary dark:text-text-dark-secondary hover:text-red-500 transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-base">close</span>
+                          </button>
+                        )}
+                      </div>
+                    );
+                  }
+                  
+                  // Se apenas subfiltros estão selecionados, mostrar com expansão
+                  if (hasChildren) {
+                    return (
+                      <div key={group.parentId} className="space-y-1">
+                        <button
+                          onClick={() => toggleGroup(group.parentId)}
+                          className="w-full flex items-center justify-between gap-2 bg-background-light dark:bg-background-dark py-1.5 px-2.5 rounded shadow-sm hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors"
+                        >
+                          <span className="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">
+                            {group.parentId} ({group.children.length})
+                          </span>
+                          <span className={`material-symbols-outlined text-base text-text-light-secondary dark:text-text-dark-secondary transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}>
+                            expand_more
+                          </span>
+                        </button>
+                        
+                        {/* Subfiltros expandidos */}
+                        <div
+                          className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                            isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                          }`}
+                        >
+                          <div className="pl-4 space-y-1 pt-1">
+                            {group.children.map((child) => (
+                              <div
+                                key={child.id}
+                                className="flex items-center gap-1.5 bg-surface-light dark:bg-surface-dark py-1 px-2.5 rounded shadow-sm"
+                              >
+                                <span className="text-xs font-medium text-text-light-primary dark:text-text-dark-primary">
+                                  {child.name}
+                                </span>
+                                {onRemoveSubject && (
+                                  <button
+                                    onClick={() => onRemoveSubject(child.id)}
+                                    className="text-text-light-secondary dark:text-text-dark-secondary hover:text-red-500 transition-colors"
+                                  >
+                                    <span className="material-symbols-outlined text-sm">close</span>
+                                  </button>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                  
+                  return null;
+                })
               )}
             </div>
           </div>
