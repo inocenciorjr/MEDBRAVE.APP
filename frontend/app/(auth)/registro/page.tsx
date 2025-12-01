@@ -4,6 +4,7 @@ import { useState, useEffect, FormEvent } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import Image from 'next/image';
+import Link from 'next/link';
 import ThemeToggle from '@/components/ui/ThemeToggle';
 import { useToast } from '@/lib/contexts/ToastContext';
 import { CountryPhoneInput } from '@/components/auth/CountryPhoneInput';
@@ -385,7 +386,7 @@ export default function RegistroPage() {
               </button>
 
               <p className="text-center text-sm text-text-light-secondary dark:text-text-dark-secondary mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                Já tem uma conta? <a className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/login">Fazer login</a>
+                Já tem uma conta? <Link className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/login">Fazer login</Link>
               </p>
             </div>
           </div>

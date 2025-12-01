@@ -4,6 +4,7 @@ import { useState, useEffect, FormEvent } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import Image from 'next/image';
+import Link from 'next/link';
 import ThemeToggle from '@/components/ui/ThemeToggle';
 import { useToast } from '@/lib/contexts/ToastContext';
 
@@ -217,9 +218,9 @@ export default function LoginPage() {
                     <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary group-focus-within:text-primary transition-colors" htmlFor="password">
                         Senha
                     </label>
-                    <a className="text-sm font-medium text-primary hover:text-primary/80 transition-colors" href="/esqueci-senha">
+                    <Link className="text-sm font-medium text-primary hover:text-primary/80 transition-colors" href="/esqueci-senha">
                         Esqueceu a senha?
-                    </a>
+                    </Link>
                   </div>
                   <input
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none shadow-inner dark:shadow-none focus:shadow-lg"
@@ -265,7 +266,7 @@ export default function LoginPage() {
               </button>
 
               <p className="text-center text-sm text-text-light-secondary dark:text-text-dark-secondary mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                Não tem uma conta? <a className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/registro">Criar conta</a>
+                Não tem uma conta? <Link className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/registro">Criar conta</Link>
               </p>
             </div>
           </div>

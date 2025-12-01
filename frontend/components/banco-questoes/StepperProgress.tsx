@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useIsMobile } from '@/hooks/useMediaQuery';
+import { useEffect, useRef } from 'react';
 
 interface StepperProgressProps {
   currentStep: 'geral' | 'assuntos' | 'anos' | 'instituicoes';
@@ -18,17 +19,41 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
   const router = useRouter();
   const isMobile = useIsMobile();
   const currentIndex = steps.findIndex(s => s.id === currentStep);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const currentStepRef = useRef<HTMLButtonElement>(null);
+
+  // Scroll automático para o step atual quando mudar
+  useEffect(() => {
+    if (isMobile && scrollContainerRef.current && currentStepRef.current) {
+      // Pequeno delay para garantir que o DOM foi atualizado
+      setTimeout(() => {
+        currentStepRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }, 100);
+    }
+  }, [currentStep, isMobile]);
 
   const handleStepClick = (stepId: string) => {
     // Permite navegar livremente entre todos os steps
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  // Mobile + Tablet: Cards horizontais com scroll
+  // Mobile + Tablet: Cards horizontais com scroll (ajustado para caber 2 cards)
   if (isMobile) {
     return (
-      <div className="w-full mb-6 overflow-x-auto pb-2 -mx-4 px-4">
-        <div className="flex gap-3 min-w-max">
+      <div 
+        ref={scrollContainerRef}
+        className="w-full mb-6 overflow-x-auto pb-2 -mx-4 px-4"
+        style={{
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
+          WebkitOverflowScrolling: 'touch',
+        }}
+      >
+        <div className="flex gap-3">
           {steps.map((step, index) => {
             const isCompleted = index < currentIndex;
             const isCurrent = index === currentIndex;
@@ -37,15 +62,20 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
             return (
               <button
                 key={step.id}
+                ref={isCurrent ? currentStepRef : null}
                 onClick={() => handleStepClick(step.id)}
                 className={`
                   relative flex items-center gap-3 px-4 py-3 rounded-xl
-                  transition-all duration-300 shadow-lg
+                  transition-all duration-300 shadow-lg flex-shrink-0
                   ${isCurrent ? 'bg-primary text-white scale-105 shadow-primary/40' : ''}
                   ${isCompleted ? 'bg-green-500 text-white shadow-green-500/30' : ''}
                   ${isUpcoming ? 'bg-surface-light dark:bg-surface-dark text-text-light-secondary dark:text-text-dark-secondary' : ''}
                   hover:scale-105 active:scale-95
                 `}
+                style={{
+                  width: 'calc(50% - 6px)', // Faz caber exatamente 2 cards (50% - metade do gap)
+                  minWidth: '160px', // Largura mínima para não ficar muito pequeno
+                }}
               >
                 {/* Icon Circle */}
                 <div className={`
@@ -63,11 +93,11 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
                 </div>
 
                 {/* Text Content */}
-                <div className="text-left">
-                  <div className="font-bold text-sm leading-tight whitespace-nowrap">
+                <div className="text-left flex-1 min-w-0">
+                  <div className="font-bold text-sm leading-tight truncate">
                     {step.label}
                   </div>
-                  <div className={`text-xs leading-tight whitespace-nowrap ${
+                  <div className={`text-xs leading-tight truncate ${
                     isCurrent ? 'text-white/80' : ''
                   } ${isCompleted ? 'text-white/80' : ''} ${isUpcoming ? 'text-text-light-secondary dark:text-text-dark-secondary' : ''}`}>
                     {step.description}
@@ -76,7 +106,7 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
 
                 {/* Connector Arrow */}
                 {index < steps.length - 1 && (
-                  <span className={`material-symbols-outlined text-base ml-1 ${
+                  <span className={`material-symbols-outlined text-base flex-shrink-0 ${
                     isCompleted ? 'text-white/60' : 'text-text-light-secondary/40 dark:text-text-dark-secondary/40'
                   }`}>
                     chevron_right
