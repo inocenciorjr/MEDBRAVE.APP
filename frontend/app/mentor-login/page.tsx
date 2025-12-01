@@ -85,6 +85,38 @@ export default function MentorLoginPage() {
     }
   };
 
+  const handleGoogleLogin = async () => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      localStorage.setItem('auth_redirect', '/mentor');
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin;
+      const redirectUrl = `${siteUrl}/auth/callback`;
+
+      const { error: signInError } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: redirectUrl,
+          queryParams: {
+            access_type: 'offline',
+            prompt: 'consent',
+          },
+          skipBrowserRedirect: false,
+        },
+      });
+
+      if (signInError) {
+        setError('Erro ao fazer login com Google. Tente novamente.');
+        setLoading(false);
+      }
+    } catch (err) {
+      setError('Erro ao fazer login com Google. Tente novamente.');
+      console.error('Erro no login com Google:', err);
+      setLoading(false);
+    }
+  };
+
   if (checkingAuth) {
     return (
       <div className="min-h-screen bg-background-light dark:bg-background-dark flex items-center justify-center">
@@ -178,6 +210,27 @@ export default function MentorLoginPage() {
               {loading ? 'Entrando...' : 'Entrar como Mentor'}
             </button>
           </form>
+
+          <div className="flex items-center my-6">
+            <hr className="flex-grow border-border-light dark:border-border-dark" />
+            <span className="mx-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">ou</span>
+            <hr className="flex-grow border-border-light dark:border-border-dark" />
+          </div>
+
+          <button
+            onClick={handleGoogleLogin}
+            disabled={loading}
+            className="w-full flex items-center justify-center py-3 px-4 border border-border-light dark:border-border-dark rounded-lg text-text-light-primary dark:text-text-dark-primary bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <svg className="w-5 h-5 mr-3" viewBox="0 0 48 48">
+              <path d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l8.35 6.53C12.91 13.46 18.06 9.5 24 9.5z" fill="#4285F4"></path>
+              <path d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6.02C43.91 39.53 46.98 32.68 46.98 24.55z" fill="#34A853"></path>
+              <path d="M10.91 28.75c-.22-.66-.35-1.36-.35-2.08s.13-1.42.35-2.08l-8.35-6.53C.73 19.25 0 21.55 0 24s.73 4.75 2.56 6.53l8.35-6.53z" fill="#FBBC05"></path>
+              <path d="M24 48c6.48 0 11.93-2.13 15.89-5.82l-7.73-6.02c-2.11 1.42-4.78 2.27-7.66 2.27-5.94 0-11.09-3.96-12.91-9.35L2.56 34.78C6.51 42.62 14.62 48 24 48z" fill="#EA4335"></path>
+              <path d="M0 0h48v48H0z" fill="none"></path>
+            </svg>
+            Entrar com Google
+          </button>
 
           <div className="mt-6 text-center">
             <Link href="/login" className="text-sm text-primary hover:text-primary/80 transition-colors">
