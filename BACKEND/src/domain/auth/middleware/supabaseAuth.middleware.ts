@@ -159,12 +159,12 @@ export const supabaseAuthMiddleware = async (
           await userRepository.create(newUser);
           logger.info(`✅ Usuário criado: ${newUser.email} (${usernameSlug})`);
           
-          // Atribuir plano FREE padrão ao novo usuário
+          // Atribuir plano TRIAL de 7 dias ao novo usuário
           try {
-            await planAssignmentService.assignDefaultFreePlan(authData.user.id);
-            logger.info(`✅ Plano FREE atribuído ao usuário: ${authData.user.id}`);
+            await planAssignmentService.assignTrialPlan(authData.user.id);
+            logger.info(`✅ Plano TRIAL de 7 dias atribuído ao usuário: ${authData.user.id}`);
           } catch (planError) {
-            logger.error(`❌ Erro ao atribuir plano padrão: ${planError}`);
+            logger.error(`❌ Erro ao atribuir plano trial: ${planError}`);
             // Não falhar a autenticação por erro de plano
           }
         } catch (insertError: any) {

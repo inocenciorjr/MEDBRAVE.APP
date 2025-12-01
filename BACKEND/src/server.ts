@@ -13,6 +13,7 @@ import { draftCleanupService } from './services/draftCleanupService';
 import { websocketService } from './services/websocketService';
 import { apkgProgressService } from './services/apkgProgressService';
 import { SocketService } from './services/socketService';
+import { expirePlansJob } from './domain/payment/jobs/expirePlansJob';
 
 // Configuração do servidor
 const PORT = env.PORT;
@@ -54,6 +55,16 @@ async function startServer() {
     // Iniciar serviço de limpeza de drafts (executa a cada 24 horas)
     draftCleanupService.start(24);
     logger.info('🧹 Serviço de limpeza de drafts iniciado');
+    
+    // Iniciar job de expiração de planos (executa a cada 1 hora)
+    setInterval(async () => {
+      try {
+        await expirePlansJob.execute();
+      } catch (error) {
+        logger.error('Erro ao executar job de expiração de planos:', error);
+      }
+    }, 60 * 60 * 1000); // 1 hora
+    logger.info('⏰ Job de expiração de planos iniciado (executa a cada 1 hora)');
   });
 
   return server;

@@ -242,11 +242,14 @@ export class SupabaseUserPlanService implements IUserPlanService {
    */
   async getUserActivePlans(userId: string): Promise<UserPlan[]> {
     try {
+      const now = new Date();
+      
       const { data, error } = await this.supabase
         .from('user_plans')
         .select('*')
         .eq('user_id', userId)
-        .eq('status', UserPlanStatus.ACTIVE)
+        .in('status', [UserPlanStatus.ACTIVE, UserPlanStatus.TRIAL])
+        .gt('end_date', now.toISOString()) // ✅ Verifica se ainda não expirou
         .order('created_at', { ascending: false });
 
       if (error) {
