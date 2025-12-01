@@ -2,7 +2,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 export function CollectionCardSkeleton() {
   return (
-    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-lg border border-border-light dark:border-border-dark flex-shrink-0 w-[250px] min-h-[380px] flex flex-col items-center relative animate-pulse">
+    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-lg border border-border-light dark:border-border-dark w-full min-h-[380px] flex flex-col items-center relative animate-pulse">
       {/* Badge Oficial - Top Right */}
       <div className="absolute top-3 right-3">
         <Skeleton className="h-5 w-5 rounded-full" />

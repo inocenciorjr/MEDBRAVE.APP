@@ -68,15 +68,18 @@ export const planCheckMiddleware = async (
 
     let activePlans = await userPlanService.getUserActivePlans(userId);
 
-    // Se não encontrou planos, tentar novamente após 500ms (race condition no primeiro carregamento)
-    if (!activePlans || activePlans.length === 0) {
-      logger.warn(`Usuário ${userId} sem plano ativo na primeira tentativa, aguardando...`);
-      await new Promise(resolve => setTimeout(resolve, 500));
+    // Se não encontrou planos, fazer múltiplas tentativas (race condition no primeiro carregamento)
+    const maxRetries = 3;
+    const retryDelay = 300; // 300ms entre tentativas
+    
+    for (let attempt = 1; attempt <= maxRetries && (!activePlans || activePlans.length === 0); attempt++) {
+      logger.warn(`Usuário ${userId} sem plano ativo na tentativa ${attempt}/${maxRetries}, aguardando...`);
+      await new Promise(resolve => setTimeout(resolve, retryDelay));
       activePlans = await userPlanService.getUserActivePlans(userId);
     }
 
     if (!activePlans || activePlans.length === 0) {
-      logger.warn(`Usuário ${userId} sem plano ativo após retry`);
+      logger.warn(`Usuário ${userId} sem plano ativo após ${maxRetries} tentativas`);
       throw new AppError(
         403,
         'Você precisa de um plano ativo para acessar este recurso',

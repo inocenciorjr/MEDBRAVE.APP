@@ -100,6 +100,7 @@ export function PagePlanGuard({
   // Intercepta erros 403 do fetch global
   useEffect(() => {
     const originalFetch = window.fetch;
+    let timeoutId: NodeJS.Timeout | null = null;
 
     window.fetch = async (...args) => {
       try {
@@ -118,11 +119,21 @@ export function PagePlanGuard({
               data.error === 'FEATURE_NOT_AVAILABLE' ||
               data.error === 'QUOTA_EXCEEDED'
             ) {
-              setShow403(true);
-              setErrorMessage(data.message || 'Acesso negado. Plano requerido.');
+              // Aguarda 800ms antes de mostrar o erro para dar tempo do retry do backend
+              // Isso evita o "flash" de 403 no primeiro carregamento
+              timeoutId = setTimeout(() => {
+                setShow403(true);
+                setErrorMessage(data.message || 'Acesso negado. Plano requerido.');
+              }, 800);
             }
           } catch (e) {
             // JSON parse error, ignora
+          }
+        } else {
+          // Se a requisição foi bem-sucedida, cancela qualquer timeout pendente
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
           }
         }
 
@@ -134,6 +145,9 @@ export function PagePlanGuard({
 
     return () => {
       window.fetch = originalFetch;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, []);
 
