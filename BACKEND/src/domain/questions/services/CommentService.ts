@@ -8,7 +8,7 @@ import {
 import logger from '../../../utils/logger';
 
 export class CommentService {
-  constructor(private supabase: SupabaseClient) {}
+  constructor(private supabase: SupabaseClient) { }
 
   /**
    * Criar um novo comentário
@@ -21,7 +21,7 @@ export class CommentService {
     try {
       const now = new Date().toISOString();
       const { v4: uuidv4 } = require('uuid');
-      
+
       const commentData = {
         id: uuidv4(),
         user_id: userId,
@@ -90,12 +90,12 @@ export class CommentService {
           .in('parent_id', comments.map(c => c.id))
           .eq('is_deleted', false)
           .order('created_at', { ascending: true }),
-        
+
         // Buscar TODOS os usuários de uma vez (comentários + replies)
         (async () => {
           const allUserIds = [...new Set(comments.map(c => c.user_id).filter(Boolean))];
           if (allUserIds.length === 0) return { data: [] };
-          
+
           return this.supabase
             .from('users')
             .select('id, display_name, photo_url')
@@ -124,7 +124,7 @@ export class CommentService {
           .from('users')
           .select('id, display_name, photo_url')
           .in('id', replyUserIds);
-        
+
         (replyUsers || []).forEach(u => usersMap.set(u.id, u));
       }
 

@@ -24,6 +24,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "MedBRAVE - A Plataforma do Revalidando",
   description: "Seja Corajoso, Seja BRAVE!",
+  icons: {
+    icon: [
+      { url: '/medbravelogo.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/medbravelogo.png', type: 'image/png' },
+    ],
+  },
 };
 
 export const viewport = {

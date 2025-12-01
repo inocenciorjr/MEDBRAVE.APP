@@ -163,11 +163,20 @@ export default function LoginPage() {
               <div className="flex flex-col items-center justify-center mb-10 animate-slide-in-from-top">
                 <div className="flex items-center gap-4">
                     <div className="relative w-16 h-16">
+                      {/* Light mode logo */}
                       <Image
-                        src="/login/logomedbravelogin.PNG"
+                        src="/medbravelogo.png"
                         alt="MEDBRAVE Logo"
                         fill
-                        className="object-contain"
+                        className="object-contain dark:hidden"
+                        priority
+                      />
+                      {/* Dark mode logo */}
+                      <Image
+                        src="/medbravelogo-dark.png"
+                        alt="MEDBRAVE Logo"
+                        fill
+                        className="object-contain hidden dark:block"
                         priority
                       />
                     </div>
