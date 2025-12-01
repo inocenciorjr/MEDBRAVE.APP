@@ -24,41 +24,65 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
     router.push(`/banco-questoes/criar/${stepId}`);
   };
 
-  // Mobile + Tablet: Indicador compacto com dots
+  // Mobile + Tablet: Cards horizontais com scroll
   if (isMobile) {
     return (
-      <div className="w-full mb-6">
-        {/* Current Step Info */}
-        <div className="text-center mb-4">
-          <div className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-1">
-            Passo {currentIndex + 1} de {steps.length}
-          </div>
-          <div className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">
-            {steps[currentIndex].label}
-          </div>
-          <div className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
-            {steps[currentIndex].description}
-          </div>
-        </div>
-
-        {/* Dots Indicator */}
-        <div className="flex items-center justify-center gap-2">
+      <div className="w-full mb-6 overflow-x-auto pb-2 -mx-4 px-4">
+        <div className="flex gap-3 min-w-max">
           {steps.map((step, index) => {
             const isCompleted = index < currentIndex;
             const isCurrent = index === currentIndex;
+            const isUpcoming = index > currentIndex;
 
             return (
               <button
                 key={step.id}
                 onClick={() => handleStepClick(step.id)}
                 className={`
-                  h-2 rounded-full transition-all duration-300
-                  ${isCurrent ? 'w-8 bg-primary' : 'w-2'}
-                  ${isCompleted ? 'bg-green-500' : ''}
-                  ${!isCompleted && !isCurrent ? 'bg-gray-300 dark:bg-gray-600' : ''}
+                  relative flex items-center gap-3 px-4 py-3 rounded-xl
+                  transition-all duration-300 shadow-lg
+                  ${isCurrent ? 'bg-primary text-white scale-105 shadow-primary/40' : ''}
+                  ${isCompleted ? 'bg-green-500 text-white shadow-green-500/30' : ''}
+                  ${isUpcoming ? 'bg-surface-light dark:bg-surface-dark text-text-light-secondary dark:text-text-dark-secondary' : ''}
+                  hover:scale-105 active:scale-95
                 `}
-                aria-label={`Ir para ${step.label}`}
-              />
+              >
+                {/* Icon Circle */}
+                <div className={`
+                  flex items-center justify-center w-10 h-10 rounded-full flex-shrink-0
+                  transition-all duration-300
+                  ${isCurrent ? 'bg-white/20' : ''}
+                  ${isCompleted ? 'bg-white/20' : ''}
+                  ${isUpcoming ? 'bg-primary/10' : ''}
+                `}>
+                  {isCompleted ? (
+                    <span className="material-symbols-outlined text-xl font-bold">check</span>
+                  ) : (
+                    <span className="font-bold text-lg">{step.order}</span>
+                  )}
+                </div>
+
+                {/* Text Content */}
+                <div className="text-left">
+                  <div className="font-bold text-sm leading-tight whitespace-nowrap">
+                    {step.label}
+                  </div>
+                  <div className={`text-xs leading-tight whitespace-nowrap ${
+                    isCurrent ? 'text-white/80' : ''
+                  } ${isCompleted ? 'text-white/80' : ''} ${isUpcoming ? 'text-text-light-secondary dark:text-text-dark-secondary' : ''}`}>
+                    {step.description}
+                  </div>
+                </div>
+
+                {/* Connector Arrow */}
+                {index < steps.length - 1 && (
+                  <span className={`material-symbols-outlined text-base ml-1 ${
+                    isCompleted ? 'text-white/60' : 'text-text-light-secondary/40 dark:text-text-dark-secondary/40'
+                  }`}>
+                    chevron_right
+                  </span>
+                )}
+              </button>
             );
           })}
         </div>
