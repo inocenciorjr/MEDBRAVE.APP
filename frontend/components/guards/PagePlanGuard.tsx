@@ -40,26 +40,33 @@ export function PagePlanGuard({
 
   // Verifica se tem plano ativo
   useEffect(() => {
-    if (loading) return;
+    // NUNCA mostra 403 enquanto está carregando
+    if (loading) {
+      setShow403(false);
+      return;
+    }
 
-    if (requireActivePlan) {
-      // Verifica se o usuário está autenticado
-      const isAuthenticated = typeof window !== 'undefined' && 
-        (localStorage.getItem('authToken') || document.cookie.includes('sb-access-token'));
+    // Se não requer plano ativo, sempre permite acesso
+    if (!requireActivePlan) {
+      setShow403(false);
+      return;
+    }
 
-      // Se não está autenticado, não mostra 403 (deixa o AuthContext redirecionar para login)
-      if (!isAuthenticated) {
+    // Verifica se o usuário está autenticado
+    const isAuthenticated = typeof window !== 'undefined' &&
+      (localStorage.getItem('authToken') || document.cookie.includes('sb-access-token'));
+
+    // Se não está autenticado, não mostra 403 (deixa o AuthContext redirecionar para login)
+    if (!isAuthenticated) {
+      setShow403(false);
+      return;
+    }
+
+    // Se tem plano, verifica o status
+    if (userPlan) {
+      // Plano ATIVO ou TRIAL - permite acesso
+      if (userPlan.status === 'ACTIVE' || userPlan.status === 'TRIAL') {
         setShow403(false);
-        return;
-      }
-
-      // Usuário autenticado mas sem plano
-      if (!userPlan) {
-        setShow403(true);
-        setErrorMessage(
-          customMessage || 
-          'Não identificamos um plano ativo na sua conta.'
-        );
         return;
       }
 
@@ -67,7 +74,7 @@ export function PagePlanGuard({
       if (isExpired && userPlan.planName !== 'FREE') {
         setShow403(true);
         setErrorMessage(
-          customMessage || 
+          customMessage ||
           'Seu plano expirou. Renove para continuar.'
         );
         return;
@@ -77,7 +84,7 @@ export function PagePlanGuard({
       if (userPlan.status === 'CANCELLED') {
         setShow403(true);
         setErrorMessage(
-          customMessage || 
+          customMessage ||
           'Seu plano foi cancelado. Adquira um novo plano para continuar.'
         );
         return;
@@ -87,69 +94,34 @@ export function PagePlanGuard({
       if (userPlan.status === 'SUSPENDED') {
         setShow403(true);
         setErrorMessage(
-          customMessage || 
+          customMessage ||
           'Seu plano está suspenso. Entre em contato com o suporte.'
         );
         return;
       }
+
+      // Qualquer outro status, permite acesso
+      setShow403(false);
+      return;
     }
 
-    setShow403(false);
+    // Se chegou aqui: loading=false, authenticated=true, mas userPlan=null
+    // Aguarda 2 segundos antes de mostrar erro (tempo para o plano carregar)
+    // Se após 2s ainda não tem plano, mostra 403
+    const timer = setTimeout(() => {
+      if (!userPlan && !loading) {
+        setShow403(true);
+        setErrorMessage(
+          customMessage ||
+          'Não identificamos um plano ativo na sua conta.'
+        );
+      }
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, [userPlan, loading, isExpired, requireActivePlan, customMessage]);
 
-  // Intercepta erros 403 do fetch global
-  useEffect(() => {
-    const originalFetch = window.fetch;
-    let timeoutId: NodeJS.Timeout | null = null;
-
-    window.fetch = async (...args) => {
-      try {
-        const response = await originalFetch(...args);
-
-        // Detecta 403
-        if (response.status === 403) {
-          const clonedResponse = response.clone();
-          
-          try {
-            const data = await clonedResponse.json();
-            
-            // Verifica se é erro de plano
-            if (
-              data.error === 'SUBSCRIPTION_REQUIRED' ||
-              data.error === 'FEATURE_NOT_AVAILABLE' ||
-              data.error === 'QUOTA_EXCEEDED'
-            ) {
-              // Aguarda 800ms antes de mostrar o erro para dar tempo do retry do backend
-              // Isso evita o "flash" de 403 no primeiro carregamento
-              timeoutId = setTimeout(() => {
-                setShow403(true);
-                setErrorMessage(data.message || 'Acesso negado. Plano requerido.');
-              }, 800);
-            }
-          } catch (e) {
-            // JSON parse error, ignora
-          }
-        } else {
-          // Se a requisição foi bem-sucedida, cancela qualquer timeout pendente
-          if (timeoutId) {
-            clearTimeout(timeoutId);
-            timeoutId = null;
-          }
-        }
-
-        return response;
-      } catch (error) {
-        throw error;
-      }
-    };
-
-    return () => {
-      window.fetch = originalFetch;
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-    };
-  }, []);
+  // Removido interceptor de fetch que causava o "piscar" do 403
 
   // Enquanto carrega, mostra loading
   if (loading) {
