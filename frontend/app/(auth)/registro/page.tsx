@@ -6,6 +6,8 @@ import { createClient } from '@/lib/supabase/client';
 import Image from 'next/image';
 import ThemeToggle from '@/components/ui/ThemeToggle';
 import { useToast } from '@/lib/contexts/ToastContext';
+import { CountryPhoneInput } from '@/components/auth/CountryPhoneInput';
+import { PasswordStrengthInput } from '@/components/auth/PasswordStrengthInput';
 
 const supabase = createClient();
 
@@ -15,67 +17,142 @@ const CAROUSEL_IMAGES = [
   '/login/login-3.png',
 ];
 
-export default function LoginPage() {
+export default function RegistroPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirect = searchParams.get('redirect') || '/';
   const toast = useToast();
 
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [countryCode, setCountryCode] = useState('BR');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [errors, setErrors] = useState<Record<string, string>>({});
   
   // Carousel State
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Verificar mensagem de timeout no sessionStorage
-  useEffect(() => {
-    const timeoutMessage = sessionStorage.getItem('session_timeout_message');
-    if (timeoutMessage) {
-      toast.warning('Sessão Expirada', timeoutMessage);
-      sessionStorage.removeItem('session_timeout_message');
-    }
-  }, [toast]);
 
   // Auto-transition for carousel
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
-    }, 5000); // 5 seconds
+    }, 5000);
     return () => clearInterval(timer);
   }, [currentSlide]);
 
+  const validateForm = (): boolean => {
+    const newErrors: Record<string, string> = {};
+
+    if (!fullName.trim()) {
+      newErrors.fullName = 'Nome completo é obrigatório';
+    }
+
+    if (!email.trim()) {
+      newErrors.email = 'E-mail é obrigatório';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = 'E-mail inválido';
+    }
+
+    if (!phone.trim()) {
+      newErrors.phone = 'Telefone é obrigatório';
+    }
+
+    if (!password) {
+      newErrors.password = 'Senha é obrigatória';
+    } else if (password.length < 8) {
+      newErrors.password = 'Senha deve ter no mínimo 8 caracteres';
+    } else if (!/[A-Z]/.test(password)) {
+      newErrors.password = 'Senha deve conter pelo menos uma letra maiúscula';
+    } else if (!/[a-z]/.test(password)) {
+      newErrors.password = 'Senha deve conter pelo menos uma letra minúscula';
+    } else if (!/\d/.test(password)) {
+      newErrors.password = 'Senha deve conter pelo menos um número';
+    } else if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      newErrors.password = 'Senha deve conter pelo menos um caractere especial';
+    }
+
+    if (password !== confirmPassword) {
+      newErrors.confirmPassword = 'As senhas não coincidem';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     setLoading(true);
-    setError(null);
+    setErrors({});
 
     try {
-      const { data, error: signInError } = await supabase.auth.signInWithPassword({
+      // Registrar usuário no Supabase Auth
+      const { data: authData, error: signUpError } = await supabase.auth.signUp({
         email,
         password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
+          data: {
+            display_name: fullName,
+            phone: phone,
+            country_code: countryCode,
+          },
+        },
       });
 
-      if (signInError) {
-        setError('Email ou senha incorretos. Verifique suas credenciais.');
+      if (signUpError) {
+        if (signUpError.message.includes('already registered')) {
+          setErrors({ email: 'Este e-mail já está cadastrado' });
+        } else {
+          setErrors({ general: signUpError.message });
+        }
         return;
       }
 
-      if (data.user) {
-        router.push(redirect);
+      if (authData.user) {
+        // Criar registro na tabela users
+        const { error: userError } = await supabase
+          .from('users')
+          .insert({
+            id: authData.user.id,
+            email: email,
+            display_name: fullName,
+            phone: phone,
+            country_code: countryCode,
+            role: 'user',
+            created_at: new Date().toISOString(),
+          });
+
+        if (userError) {
+          console.error('Erro ao criar usuário:', userError);
+        }
+
+        toast.success(
+          'Conta criada com sucesso!',
+          'Enviamos um e-mail de confirmação. Por favor, verifique sua caixa de entrada.'
+        );
+
+        // Redirecionar para página de confirmação
+        router.push('/auth/confirmar-email');
       }
     } catch (err) {
-      setError('Erro ao fazer login. Tente novamente.');
-      console.error('Erro no login:', err);
+      console.error('Erro no registro:', err);
+      setErrors({ general: 'Erro ao criar conta. Tente novamente.' });
     } finally {
       setLoading(false);
     }
   };
 
-  const handleGoogleLogin = async () => {
+  const handleGoogleSignUp = async () => {
     setLoading(true);
-    setError(null);
+    setErrors({});
 
     try {
       localStorage.setItem('auth_redirect', redirect);
@@ -95,12 +172,12 @@ export default function LoginPage() {
       });
 
       if (signInError) {
-        setError('Erro ao fazer login com Google. Tente novamente.');
+        setErrors({ general: 'Erro ao registrar com Google. Tente novamente.' });
         setLoading(false);
       }
     } catch (err) {
-      setError('Erro ao fazer login com Google. Tente novamente.');
-      console.error('Erro no login com Google:', err);
+      console.error('Erro no registro com Google:', err);
+      setErrors({ general: 'Erro ao registrar com Google. Tente novamente.' });
       setLoading(false);
     }
   };
@@ -150,8 +227,8 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Right Side - Login Form */}
-          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300 relative">
+          {/* Right Side - Register Form */}
+          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300 relative overflow-y-auto max-h-screen">
             {/* Theme Toggle Button */}
             <div className="absolute top-4 right-4">
               <ThemeToggle />
@@ -160,7 +237,7 @@ export default function LoginPage() {
             <div className="max-w-md w-full mx-auto">
               
               {/* Logo */}
-              <div className="flex flex-col items-center justify-center mb-10 animate-slide-in-from-top">
+              <div className="flex flex-col items-center justify-center mb-8 animate-slide-in-from-top">
                 <div className="flex items-center gap-4">
                     <div className="relative w-16 h-16">
                       {/* Light mode logo */}
@@ -184,53 +261,96 @@ export default function LoginPage() {
                     MEDBRAVE
                     </h2>
                 </div>
-                <p className="mt-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                  Bem-vindo de volta! Por favor, faça login na sua conta.
+                <p className="mt-4 text-sm text-text-light-secondary dark:text-text-dark-secondary text-center">
+                  Crie sua conta e comece sua jornada de estudos!
                 </p>
               </div>
 
               {/* Error Message */}
-              {error && (
+              {errors.general && (
                 <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-600 dark:text-red-400 text-sm animate-fade-in">
-                  {error}
+                  {errors.general}
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6 animate-slide-in-from-bottom">
+              <form onSubmit={handleSubmit} className="space-y-4 animate-slide-in-from-bottom">
+                {/* Nome Completo */}
+                <div className="group">
+                  <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2 group-focus-within:text-primary transition-colors" htmlFor="fullName">
+                    Nome Completo
+                  </label>
+                  <input
+                    className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border ${
+                      errors.fullName ? 'border-red-500' : 'border-border-light dark:border-border-dark'
+                    } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none`}
+                    id="fullName"
+                    type="text"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    placeholder="João da Silva"
+                  />
+                  {errors.fullName && (
+                    <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.fullName}</p>
+                  )}
+                </div>
+
+                {/* E-mail */}
                 <div className="group">
                   <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2 group-focus-within:text-primary transition-colors" htmlFor="email">
                     E-mail
                   </label>
                   <input
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none shadow-inner dark:shadow-none focus:shadow-lg"
+                    className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border ${
+                      errors.email ? 'border-red-500' : 'border-border-light dark:border-border-dark'
+                    } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none`}
                     id="email"
-                    name="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="seu@email.com"
-                    required
                   />
+                  {errors.email && (
+                    <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.email}</p>
+                  )}
                 </div>
+
+                {/* Telefone */}
+                <CountryPhoneInput
+                  value={phone}
+                  onChange={(phone, country) => {
+                    setPhone(phone);
+                    setCountryCode(country);
+                  }}
+                  error={errors.phone}
+                />
+
+                {/* Senha */}
+                <PasswordStrengthInput
+                  value={password}
+                  onChange={setPassword}
+                  label="Senha"
+                  placeholder="••••••••"
+                  error={errors.password}
+                />
+
+                {/* Confirmar Senha */}
                 <div className="group">
-                  <div className="flex justify-between items-center mb-2">
-                    <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary group-focus-within:text-primary transition-colors" htmlFor="password">
-                        Senha
-                    </label>
-                    <a className="text-sm font-medium text-primary hover:text-primary/80 transition-colors" href="/esqueci-senha">
-                        Esqueceu a senha?
-                    </a>
-                  </div>
+                  <label className="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-2 group-focus-within:text-primary transition-colors" htmlFor="confirmPassword">
+                    Confirmar Senha
+                  </label>
                   <input
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none shadow-inner dark:shadow-none focus:shadow-lg"
-                    id="password"
-                    name="password"
+                    className={`w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border ${
+                      errors.confirmPassword ? 'border-red-500' : 'border-border-light dark:border-border-dark'
+                    } rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-text-light-primary dark:text-text-dark-primary placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none`}
+                    id="confirmPassword"
                     type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
                     placeholder="••••••••"
-                    required
                   />
+                  {errors.confirmPassword && (
+                    <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.confirmPassword}</p>
+                  )}
                 </div>
 
                 <button
@@ -238,7 +358,7 @@ export default function LoginPage() {
                   type="submit"
                   disabled={loading}
                 >
-                  {loading ? 'Entrando...' : 'Entrar'}
+                  {loading ? 'Criando conta...' : 'Criar Conta'}
                 </button>
               </form>
 
@@ -249,7 +369,7 @@ export default function LoginPage() {
               </div>
 
               <button
-                onClick={handleGoogleLogin}
+                onClick={handleGoogleSignUp}
                 disabled={loading}
                 className="w-full flex items-center justify-center py-3 px-4 border border-border-light dark:border-border-dark rounded-lg text-text-light-primary dark:text-text-dark-primary bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 animate-slide-in-from-bottom"
                 style={{ animationDelay: '0.3s' }}
@@ -261,11 +381,11 @@ export default function LoginPage() {
                   <path d="M24 48c6.48 0 11.93-2.13 15.89-5.82l-7.73-6.02c-2.11 1.42-4.78 2.27-7.66 2.27-5.94 0-11.09-3.96-12.91-9.35L2.56 34.78C6.51 42.62 14.62 48 24 48z" fill="#EA4335"></path>
                   <path d="M0 0h48v48H0z" fill="none"></path>
                 </svg>
-                Entrar com Google
+                Registrar com Google
               </button>
 
               <p className="text-center text-sm text-text-light-secondary dark:text-text-dark-secondary mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                Não tem uma conta? <a className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/registro">Criar conta</a>
+                Já tem uma conta? <a className="font-semibold text-primary hover:text-primary/80 transition-colors" href="/login">Fazer login</a>
               </p>
             </div>
           </div>
