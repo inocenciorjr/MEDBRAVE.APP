@@ -79,41 +79,74 @@ export class CommentService {
 
       if (error) throw error;
 
-      // Buscar respostas para cada comentário
-      const commentsWithReplies = await Promise.all(
-        (comments || []).map(async (comment) => {
-          const replies = await this.getCommentReplies(comment.id);
+      if (!comments || comments.length === 0) return [];
+
+      // OTIMIZAÇÃO: Buscar TODOS os dados necessários em paralelo
+      const [repliesData, usersData] = await Promise.all([
+        // Buscar TODAS as replies de uma vez
+        this.supabase
+          .from('comments')
+          .select('*')
+          .in('parent_id', comments.map(c => c.id))
+          .eq('is_deleted', false)
+          .order('created_at', { ascending: true }),
+        
+        // Buscar TODOS os usuários de uma vez (comentários + replies)
+        (async () => {
+          const allUserIds = [...new Set(comments.map(c => c.user_id).filter(Boolean))];
+          if (allUserIds.length === 0) return { data: [] };
           
-          // Buscar dados do usuário separadamente se necessário
-          let userName = 'Usuário Anônimo';
-          let userPhoto = null;
-          
-          if (comment.user_id) {
-            try {
-              const { data: userData } = await this.supabase
-                .from('users')
-                .select('display_name, photo_url')
-                .eq('id', comment.user_id)
-                .single();
-              
-              if (userData) {
-                userName = userData.display_name || 'Usuário Anônimo';
-                userPhoto = userData.photo_url || null;
-              }
-            } catch (userError) {
-              // Ignorar erro ao buscar usuário
-              console.log('Usuário não encontrado:', comment.user_id);
-            }
-          }
-          
-          return {
-            ...this.formatComment(comment),
-            user_name: userName,
-            user_photo: userPhoto,
-            replies,
-          };
-        })
+          return this.supabase
+            .from('users')
+            .select('id, display_name, photo_url')
+            .in('id', allUserIds);
+        })()
+      ]);
+
+      // Criar mapa de usuários para lookup rápido
+      const usersMap = new Map(
+        (usersData.data || []).map(u => [u.id, u])
       );
+
+      // Agrupar replies por parent_id
+      const repliesByParent = new Map<string, any[]>();
+      (repliesData.data || []).forEach(reply => {
+        if (!repliesByParent.has(reply.parent_id)) {
+          repliesByParent.set(reply.parent_id, []);
+        }
+        repliesByParent.get(reply.parent_id)!.push(reply);
+      });
+
+      // Buscar usuários das replies (se houver)
+      const replyUserIds = [...new Set((repliesData.data || []).map(r => r.user_id).filter(Boolean))];
+      if (replyUserIds.length > 0) {
+        const { data: replyUsers } = await this.supabase
+          .from('users')
+          .select('id, display_name, photo_url')
+          .in('id', replyUserIds);
+        
+        (replyUsers || []).forEach(u => usersMap.set(u.id, u));
+      }
+
+      // Montar comentários com replies e dados de usuários
+      const commentsWithReplies = comments.map(comment => {
+        const user = usersMap.get(comment.user_id);
+        const replies = (repliesByParent.get(comment.id) || []).map(reply => {
+          const replyUser = usersMap.get(reply.user_id);
+          return {
+            ...this.formatComment(reply),
+            user_name: replyUser?.display_name || 'Usuário Anônimo',
+            user_photo: replyUser?.photo_url || null,
+          };
+        });
+
+        return {
+          ...this.formatComment(comment),
+          user_name: user?.display_name || 'Usuário Anônimo',
+          user_photo: user?.photo_url || null,
+          replies,
+        };
+      });
 
       return commentsWithReplies;
     } catch (error) {
@@ -122,63 +155,7 @@ export class CommentService {
     }
   }
 
-  /**
-   * Buscar respostas de um comentário
-   */
-  async getCommentReplies(
-    parentId: string
-  ): Promise<Comment[]> {
-    try {
-      // Todos os comentários são aprovados automaticamente, então não precisa filtrar
-      const query = this.supabase
-        .from('comments')
-        .select('*')
-        .eq('parent_id', parentId)
-        .eq('is_deleted', false)
-        .order('created_at', { ascending: true });
 
-      const { data: replies, error } = await query;
-
-      if (error) throw error;
-
-      // Buscar dados dos usuários para cada reply
-      const repliesWithUsers = await Promise.all(
-        (replies || []).map(async (reply) => {
-          let userName = 'Usuário Anônimo';
-          let userPhoto = null;
-          
-          if (reply.user_id) {
-            try {
-              const { data: userData } = await this.supabase
-                .from('users')
-                .select('display_name, photo_url')
-                .eq('id', reply.user_id)
-                .single();
-              
-              if (userData) {
-                userName = userData.display_name || 'Usuário Anônimo';
-                userPhoto = userData.photo_url || null;
-              }
-            } catch (userError) {
-              // Ignorar erro ao buscar usuário
-              console.log('Usuário não encontrado:', reply.user_id);
-            }
-          }
-          
-          return {
-            ...this.formatComment(reply),
-            user_name: userName,
-            user_photo: userPhoto,
-          };
-        })
-      );
-
-      return repliesWithUsers;
-    } catch (error) {
-      logger.error('[CommentService] Erro ao buscar respostas:', error);
-      throw error;
-    }
-  }
 
   /**
    * Atualizar um comentário
