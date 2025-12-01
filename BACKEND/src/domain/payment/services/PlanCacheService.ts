@@ -34,11 +34,9 @@ export class PlanCacheService {
       this.publicPlansCache.data &&
       now - this.publicPlansCache.timestamp < ttl
     ) {
-      logger.debug('Cache hit: public plans');
       return this.publicPlansCache.data;
     }
 
-    logger.debug('Cache miss: public plans');
     return null;
   }
 
@@ -50,7 +48,6 @@ export class PlanCacheService {
       data: plans,
       timestamp: Date.now(),
     };
-    logger.debug(`Cached ${plans.length} public plans`);
   }
 
   /**
@@ -59,7 +56,6 @@ export class PlanCacheService {
   getPlanById(planId: string): Plan | null | undefined {
     const cached = this.planByIdCache.get(planId);
     if (!cached) {
-      logger.debug(`Cache miss: plan ${planId}`);
       return undefined;
     }
 
@@ -67,11 +63,9 @@ export class PlanCacheService {
     const ttl = PAYMENT_CONSTANTS.CACHE_TTL_SECONDS.PLAN_BY_ID * 1000;
 
     if (now - cached.timestamp < ttl) {
-      logger.debug(`Cache hit: plan ${planId}`);
       return cached.data;
     }
 
-    logger.debug(`Cache expired: plan ${planId}`);
     this.planByIdCache.delete(planId);
     return undefined;
   }
@@ -84,7 +78,6 @@ export class PlanCacheService {
       data: plan,
       timestamp: Date.now(),
     });
-    logger.debug(`Cached plan ${planId}`);
   }
 
   /**
@@ -93,7 +86,6 @@ export class PlanCacheService {
   invalidatePlan(planId: string): void {
     this.planByIdCache.delete(planId);
     this.invalidatePublicPlans();
-    logger.debug(`Invalidated cache for plan ${planId}`);
   }
 
   /**
@@ -104,7 +96,6 @@ export class PlanCacheService {
       data: null,
       timestamp: 0,
     };
-    logger.debug('Invalidated public plans cache');
   }
 
   /**

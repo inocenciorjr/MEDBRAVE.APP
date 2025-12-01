@@ -185,6 +185,7 @@ function GeralStep() {
             onRemoveYear={toggleYear}
             onRemoveInstitution={toggleInstitution}
             onClearFilters={clearFilters}
+            onUpdateListName={updateListName}
           />
         </div>
       </div>
@@ -204,6 +205,7 @@ function GeralStep() {
         onRemoveYear={toggleYear}
         onRemoveInstitution={toggleInstitution}
         onClearFilters={clearFilters}
+        onUpdateListName={updateListName}
       />
     </div>
   );
@@ -211,7 +213,7 @@ function GeralStep() {
 
 function AssuntosStep() {
   const router = useRouter();
-  const { state, toggleSubject, toggleYear, toggleInstitution, clearFilters } = useCreateList();
+  const { state, updateListName, toggleSubject, toggleYear, toggleInstitution, clearFilters } = useCreateList();
   const [searchTerm, setSearchTerm] = useState('');
   const [error, setError] = useState('');
 
@@ -367,6 +369,7 @@ function AssuntosStep() {
             onRemoveYear={toggleYear}
             onRemoveInstitution={toggleInstitution}
             onClearFilters={clearFilters}
+            onUpdateListName={updateListName}
           />
         </div>
       </div>
@@ -386,6 +389,7 @@ function AssuntosStep() {
         onRemoveYear={toggleYear}
         onRemoveInstitution={toggleInstitution}
         onClearFilters={clearFilters}
+        onUpdateListName={updateListName}
       />
     </div>
   );
@@ -393,7 +397,7 @@ function AssuntosStep() {
 
 function AnosStep() {
   const router = useRouter();
-  const { state, toggleYear, toggleAllYears, toggleSubject, toggleInstitution, clearFilters } = useCreateList();
+  const { state, updateListName, toggleYear, toggleAllYears, toggleSubject, toggleInstitution, clearFilters } = useCreateList();
   const [error, setError] = useState('');
 
   // Buscar dados reais do banco
@@ -553,6 +557,7 @@ function AnosStep() {
             onRemoveYear={toggleYear}
             onRemoveInstitution={toggleInstitution}
             onClearFilters={clearFilters}
+            onUpdateListName={updateListName}
           />
         </div>
       </div>
@@ -572,6 +577,7 @@ function AnosStep() {
         onRemoveYear={toggleYear}
         onRemoveInstitution={toggleInstitution}
         onClearFilters={clearFilters}
+        onUpdateListName={updateListName}
       />
     </div>
   );
@@ -580,7 +586,7 @@ function AnosStep() {
 function InstituicoesStep() {
   const router = useRouter();
   const toast = useToast();
-  const { state, cachedQuestions, setCachedQuestions, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit } = useCreateList();
+  const { state, cachedQuestions, setCachedQuestions, updateListName, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit } = useCreateList();
   const [error, setError] = useState('');
   const [isCreating, setIsCreating] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
@@ -1149,6 +1155,7 @@ function InstituicoesStep() {
               onRemoveInstitution={toggleInstitution}
               onClearFilters={clearFilters}
               onPreviewQuestions={() => setShowPreview(true)}
+              onUpdateListName={updateListName}
             />
           </div>
         </div>
@@ -1169,6 +1176,7 @@ function InstituicoesStep() {
           onRemoveInstitution={toggleInstitution}
           onClearFilters={clearFilters}
           onPreviewQuestions={() => setShowPreview(true)}
+          onUpdateListName={updateListName}
         />
       </div>
 

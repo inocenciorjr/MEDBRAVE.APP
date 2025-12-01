@@ -21,6 +21,7 @@ interface SummaryPanelProps {
   onRemoveInstitution?: (institutionId: string) => void;
   onClearFilters?: () => void;
   onPreviewQuestions?: () => void;
+  onUpdateListName?: (name: string) => void;
 }
 
 export default function SummaryPanel({ 
@@ -31,12 +32,15 @@ export default function SummaryPanel({
   onRemoveInstitution,
   onClearFilters,
   onPreviewQuestions,
+  onUpdateListName,
 }: SummaryPanelProps) {
   const [mounted, setMounted] = useState(false);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
+  const [isEditingName, setIsEditingName] = useState(false);
+  const [editedName, setEditedName] = useState('');
 
   useEffect(() => {
     setMounted(true);
@@ -207,15 +211,54 @@ export default function SummaryPanel({
               <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
                 Nome da Lista
               </h3>
-              <button
-                onClick={() => onEditStep('geral')}
-                className="text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-white transition-colors"
-              >
-                <span className="material-symbols-outlined text-xl">edit</span>
-              </button>
+              {!isEditingName && onUpdateListName && (
+                <button
+                  onClick={() => {
+                    setIsEditingName(true);
+                    setEditedName(listName);
+                  }}
+                  className="text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-white transition-colors"
+                >
+                  <span className="material-symbols-outlined text-xl">edit</span>
+                </button>
+              )}
             </div>
             <div className="flex flex-wrap gap-2">
-              {listName ? (
+              {isEditingName && onUpdateListName ? (
+                <div className="w-full flex gap-2">
+                  <input
+                    type="text"
+                    value={editedName}
+                    onChange={(e) => setEditedName(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        onUpdateListName(editedName);
+                        setIsEditingName(false);
+                      } else if (e.key === 'Escape') {
+                        setIsEditingName(false);
+                      }
+                    }}
+                    autoFocus
+                    className="flex-1 px-3 py-2 bg-background-light dark:bg-background-dark border-2 border-primary rounded-lg text-sm font-medium text-text-light-primary dark:text-text-dark-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Nome da lista"
+                  />
+                  <button
+                    onClick={() => {
+                      onUpdateListName(editedName);
+                      setIsEditingName(false);
+                    }}
+                    className="px-3 py-2 bg-primary text-white rounded-lg hover:bg-violet-800 transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-base">check</span>
+                  </button>
+                  <button
+                    onClick={() => setIsEditingName(false)}
+                    className="px-3 py-2 bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-text-dark-secondary rounded-lg hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-base">close</span>
+                  </button>
+                </div>
+              ) : listName ? (
                 <div className="bg-background-light dark:bg-background-dark py-1 px-2.5 rounded shadow-sm">
                   <span className="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">
                     {listName}
@@ -294,14 +337,14 @@ export default function SummaryPanel({
                         {/* Subfiltros expandidos */}
                         <div
                           className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                            isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                            isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                           }`}
                         >
-                          <div className="pl-4 space-y-1 pt-1">
+                          <div className="pl-4 pt-2 flex flex-wrap gap-2">
                             {group.children.map((child) => (
                               <div
                                 key={child.id}
-                                className="flex items-center gap-1.5 bg-surface-light dark:bg-surface-dark py-1 px-2.5 rounded shadow-sm"
+                                className="flex items-center gap-1.5 bg-background-light dark:bg-background-dark py-1 px-2.5 rounded shadow-sm"
                               >
                                 <span className="text-xs font-medium text-text-light-primary dark:text-text-dark-primary">
                                   {child.name}

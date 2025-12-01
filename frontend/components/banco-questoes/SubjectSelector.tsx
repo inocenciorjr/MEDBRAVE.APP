@@ -40,6 +40,29 @@ export default function SubjectSelector({
     return ids;
   }, []);
 
+  // Função para coletar todos os IDs ancestrais (pais, avós, etc.)
+  const getAllAncestorIds = useCallback((subjectId: string, allSubjects: Subject[]): string[] => {
+    const ancestorIds: string[] = [];
+    
+    const findAncestors = (subjects: Subject[], targetId: string, ancestors: string[] = []): boolean => {
+      for (const subject of subjects) {
+        if (subject.id === targetId) {
+          ancestorIds.push(...ancestors);
+          return true;
+        }
+        if (subject.children) {
+          if (findAncestors(subject.children, targetId, [...ancestors, subject.id])) {
+            return true;
+          }
+        }
+      }
+      return false;
+    };
+    
+    findAncestors(allSubjects, subjectId);
+    return ancestorIds;
+  }, []);
+
   // Função para verificar se todos os filhos estão selecionados
   const areAllChildrenSelected = useCallback((subject: Subject): boolean => {
     if (!subject.children || subject.children.length === 0) return false;
@@ -232,6 +255,17 @@ export default function SubjectSelector({
                 onChange={() => {
                   const allIds = getAllDescendantIds(subject);
                   const isCurrentlySelected = selectedSubjects.includes(subject.id);
+                  
+                  // Se está desmarcando, remover todos os ancestrais também
+                  if (isCurrentlySelected) {
+                    const ancestorIds = getAllAncestorIds(subject.id, subjects);
+                    ancestorIds.forEach(ancestorId => {
+                      if (selectedSubjects.includes(ancestorId)) {
+                        onToggleSubject(ancestorId);
+                      }
+                    });
+                  }
+                  
                   allIds.forEach(id => {
                     if (isCurrentlySelected) {
                       if (selectedSubjects.includes(id)) {
@@ -296,6 +330,16 @@ export default function SubjectSelector({
                     checked={isChildSelected}
                     onChange={(e) => {
                       e.stopPropagation();
+                      
+                      // Remover todos os ancestrais (pai, avô, etc.)
+                      const ancestorIds = getAllAncestorIds(child.id, subjects);
+                      ancestorIds.forEach(ancestorId => {
+                        if (selectedSubjects.includes(ancestorId)) {
+                          onToggleSubject(ancestorId);
+                        }
+                      });
+                      
+                      // Toggle do filho
                       onToggleSubject(child.id);
                     }}
                   />
@@ -305,6 +349,16 @@ export default function SubjectSelector({
                     onClick={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
+                      
+                      // Remover todos os ancestrais (pai, avô, etc.)
+                      const ancestorIds = getAllAncestorIds(child.id, subjects);
+                      ancestorIds.forEach(ancestorId => {
+                        if (selectedSubjects.includes(ancestorId)) {
+                          onToggleSubject(ancestorId);
+                        }
+                      });
+                      
+                      // Toggle do filho
                       onToggleSubject(child.id);
                     }}
                   >

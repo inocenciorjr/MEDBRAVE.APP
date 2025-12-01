@@ -337,12 +337,7 @@ export class FilterService {
         institutions = [],
       } = params;
 
-      logger.info('[FilterService] countQuestionsByFilters chamado com:', {
-        filterIds,
-        subFilterIds,
-        years,
-        institutions,
-      });
+
 
       // Se não tem nenhum filtro, retorna 0
       if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
@@ -365,12 +360,7 @@ export class FilterService {
       const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
       const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
 
-      logger.info('[FilterService] Filtros separados para contagem:', {
-        selectedExamTypes,
-        selectedSpecialties,
-        yearIds,
-        institutions,
-      });
+
 
       // Buscar todas as questões publicadas e filtrar no código
       const { data: questions, error: fetchError } = await supabase
@@ -417,10 +407,7 @@ export class FilterService {
         return true;
       });
 
-      logger.info('[FilterService] countQuestionsByFilters resultado:', {
-        totalQuestionsInDB: questions?.length || 0,
-        filteredCount: filtered.length,
-      });
+
 
       return filtered.length;
     } catch (error: any) {

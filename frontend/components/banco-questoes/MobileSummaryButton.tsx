@@ -19,6 +19,7 @@ interface MobileSummaryButtonProps {
   onRemoveInstitution?: (institutionId: string) => void;
   onClearFilters?: () => void;
   onPreviewQuestions?: () => void;
+  onUpdateListName?: (name: string) => void;
 }
 
 export default function MobileSummaryButton({
@@ -29,6 +30,7 @@ export default function MobileSummaryButton({
   onRemoveInstitution,
   onClearFilters,
   onPreviewQuestions,
+  onUpdateListName,
 }: MobileSummaryButtonProps) {
   const [showModal, setShowModal] = useState(false);
 
@@ -84,6 +86,7 @@ export default function MobileSummaryButton({
                 onRemoveInstitution={onRemoveInstitution}
                 onClearFilters={onClearFilters}
                 onPreviewQuestions={onPreviewQuestions}
+                onUpdateListName={onUpdateListName}
               />
             </div>
           </div>
