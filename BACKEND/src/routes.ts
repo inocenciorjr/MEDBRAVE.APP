@@ -948,5 +948,43 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     console.error("❌ Erro ao carregar rotas de payment:", error);
   }
 
+  // ===== ROTAS DE MENTORSHIP (MENTORIA) =====
+  try {
+    const {
+      mentorProfileRoutes,
+      mentorshipRoutes,
+      mentorshipMeetingRoutes,
+      mentorshipObjectiveRoutes,
+      mentorshipFeedbackRoutes,
+      mentorshipResourceRoutes,
+      mentorshipSimulatedExamRoutes,
+    } = require("./domain/mentorship/routes");
+
+    // Rotas de perfis de mentores
+    router.use("/mentorship/profiles", mentorProfileRoutes);
+    
+    // Rotas de mentorias
+    router.use("/mentorship", mentorshipRoutes);
+    
+    // Rotas de reuniões de mentoria
+    router.use("/mentorship/meetings", mentorshipMeetingRoutes);
+    
+    // Rotas de objetivos de mentoria
+    router.use("/mentorship/objectives", mentorshipObjectiveRoutes);
+    
+    // Rotas de feedbacks de mentoria
+    router.use("/mentorship/feedbacks", mentorshipFeedbackRoutes);
+    
+    // Rotas de recursos de mentoria
+    router.use("/mentorship/resources", mentorshipResourceRoutes);
+    
+    // Rotas de simulados de mentoria
+    router.use("/mentorship/simulated-exams", mentorshipSimulatedExamRoutes);
+
+    console.log('✅ Rotas de mentorship registradas em /api/mentorship/*');
+  } catch (error) {
+    console.error("❌ Erro ao carregar rotas de mentorship:", error);
+  }
+
   return router;
 };

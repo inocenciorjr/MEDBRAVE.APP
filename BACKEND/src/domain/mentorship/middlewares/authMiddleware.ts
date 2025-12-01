@@ -1,10 +1,10 @@
 import { Request, Response, NextFunction } from 'express';
-//
 import AppError from '../../../utils/AppError';
 import { mentorshipLogger } from '../utils/loggerAdapter';
+import { supabase } from '../../../config/supabase';
 
 /**
- * Middleware para verificar se o usuário está autenticado
+ * Middleware para verificar se o usuário está autenticado usando Supabase
  */
 export const authenticate = async (
   req: Request,
@@ -25,18 +25,34 @@ export const authenticate = async (
     }
 
     try {
-      const decodedToken: any = { uid: 'unknown', email: '', role: 'STUDENT', email_verified: false };
+      // Verificar token com Supabase
+      const { data: { user }, error } = await supabase.auth.getUser(token);
+
+      if (error || !user) {
+        mentorshipLogger.error('Erro ao verificar token Supabase', error);
+        throw new AppError('Token inválido ou expirado', 401);
+      }
+
+      // Buscar role do usuário na tabela profiles
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', user.id)
+        .single();
 
       // Adicionar o usuário decodificado ao request
       req.user = {
-        id: decodedToken.uid,
-        email: decodedToken.email || '',
-        user_role: (decodedToken.role ? String(decodedToken.role).toUpperCase() : 'STUDENT'),
-        emailVerified: decodedToken.email_verified ?? false,
+        id: user.id,
+        email: user.email || '',
+        user_role: profile?.role?.toUpperCase() || 'STUDENT',
+        emailVerified: user.email_confirmed_at !== null,
       };
 
       next();
     } catch (error) {
+      if (error instanceof AppError) {
+        throw error;
+      }
       mentorshipLogger.error('Erro ao verificar token', error);
       throw new AppError('Token inválido ou expirado', 401);
     }
