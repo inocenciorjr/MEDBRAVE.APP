@@ -389,8 +389,41 @@ export default function CadernoErrosPage() {
     }
   };
 
-  if (loadingFolders || loadingEntries) {
-    return null;
+  // Mostrar skeleton enquanto está carregando
+  const isLoading = loadingFolders || loadingEntries || (items.length === 0 && entries.length === 0 && !loadingFolders && !loadingEntries);
+  
+  if (isLoading && items.length === 0) {
+    return (
+      <div className="w-full py-8">
+        <div className="animate-pulse space-y-6">
+          {/* Header Skeleton */}
+          <div className="h-10 w-64 bg-border-light dark:bg-border-dark rounded-lg" />
+          
+          {/* Search Bar Skeleton */}
+          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-4">
+            <div className="h-10 bg-border-light dark:bg-border-dark rounded-lg" />
+          </div>
+          
+          {/* Filters Skeleton */}
+          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-4">
+            <div className="flex items-center gap-6">
+              <div className="h-4 w-16 bg-border-light dark:bg-border-dark rounded" />
+              <div className="flex items-center gap-6">
+                <div className="h-4 w-20 bg-border-light dark:bg-border-dark rounded" />
+                <div className="h-4 w-24 bg-border-light dark:bg-border-dark rounded" />
+              </div>
+            </div>
+          </div>
+          
+          {/* Table Skeleton */}
+          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl p-6 space-y-4">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="h-16 bg-border-light dark:bg-border-dark rounded-lg" />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   }
 
   // Construir breadcrumb
