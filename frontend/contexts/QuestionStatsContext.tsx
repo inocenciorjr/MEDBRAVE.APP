@@ -10,9 +10,10 @@ interface QuestionStats {
 interface QuestionStatsContextType {
   stats: QuestionStats;
   loadingStats: Set<string>;
-  preloadStats: (questionIds: string[]) => Promise<void>;
+  preloadStats: (questionIds: string[], answeredQuestionIds?: string[]) => Promise<void>;
   getStats: (questionId: string) => any;
   isLoading: (questionId: string) => boolean;
+  invalidateStats: (questionId: string) => void;
 }
 
 const QuestionStatsContext = createContext<QuestionStatsContextType | undefined>(undefined);
@@ -21,9 +22,17 @@ export function QuestionStatsProvider({ children }: { children: ReactNode }) {
   const [stats, setStats] = useState<QuestionStats>({});
   const [loadingStats, setLoadingStats] = useState<Set<string>>(new Set());
 
-  const preloadStats = useCallback(async (questionIds: string[]) => {
+  const preloadStats = useCallback(async (questionIds: string[], answeredQuestionIds?: string[]) => {
+    // Se answeredQuestionIds foi fornecido, só carregar stats das questões já respondidas
+    // Isso evita carregar stats de questões que o usuário ainda não respondeu
+    let idsToConsider = questionIds;
+    if (answeredQuestionIds) {
+      const answeredSet = new Set(answeredQuestionIds);
+      idsToConsider = questionIds.filter(id => answeredSet.has(id));
+    }
+    
     // Filtrar apenas IDs que ainda não foram carregados
-    const idsToLoad = questionIds.filter(id => !stats[id] && !loadingStats.has(id));
+    const idsToLoad = idsToConsider.filter(id => !stats[id] && !loadingStats.has(id));
     
     if (idsToLoad.length === 0) {
       return;
@@ -92,8 +101,17 @@ export function QuestionStatsProvider({ children }: { children: ReactNode }) {
     return loadingStats.has(questionId);
   }, [loadingStats]);
 
+  // Invalidar stats de uma questão (força recarregar na próxima vez)
+  const invalidateStats = useCallback((questionId: string) => {
+    setStats(prev => {
+      const newStats = { ...prev };
+      delete newStats[questionId];
+      return newStats;
+    });
+  }, []);
+
   return (
-    <QuestionStatsContext.Provider value={{ stats, loadingStats, preloadStats, getStats, isLoading }}>
+    <QuestionStatsContext.Provider value={{ stats, loadingStats, preloadStats, getStats, isLoading, invalidateStats }}>
       {children}
     </QuestionStatsContext.Provider>
   );

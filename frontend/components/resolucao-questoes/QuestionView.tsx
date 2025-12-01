@@ -183,9 +183,6 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
     // Confirmar resposta IMEDIATAMENTE (atualiza UI)
     confirmAnswer();
 
-    // Trigger para recarregar histórico
-    setHistoryRefreshTrigger(prev => prev + 1);
-
     // Recarregar estados após confirmar resposta (para atualizar NavigationPanel)
     setTimeout(() => {
       loadQuestionStates();
@@ -205,6 +202,10 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
             responseTimeSeconds: 0, // TODO: Implementar timer
             isActiveReview, // Passa se é revisão ativa para usar study_mode correto
           });
+
+          // Trigger para recarregar histórico APÓS salvar no backend
+          // Isso garante que a nova resposta já está no banco quando o histórico for carregado
+          setHistoryRefreshTrigger(prev => prev + 1);
 
           // Se for revisão ativa com sessionId, atualizar progresso da sessão
           if (isActiveReview && reviewSessionId) {

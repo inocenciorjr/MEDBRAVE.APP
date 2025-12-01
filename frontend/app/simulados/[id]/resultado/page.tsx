@@ -96,19 +96,22 @@ function ResultadoSimuladoContent({ params }: ResultadoSimuladoPageProps) {
           })
         );
         
-        // Pré-carregar stats das questões ANTES de setar as questões
+        // Popular o localStorage com as respostas do usuário
+        const listId = `simulado_review_${id}_${resultId}`;
+        const answers = (data as any).answers || {};
+        
+        // Identificar questões que foram realmente respondidas (não em branco)
+        const answeredQuestionIds = Object.keys(answers).filter(qId => answers[qId]);
+        
+        // Pré-carregar stats APENAS das questões respondidas
         const questionIdsInExam = questionsData.map(q => q.id);
         console.log('[Resultado] Total de questões:', questionIdsInExam.length);
-        console.log('[Resultado] IDs das questões:', questionIdsInExam);
-        await preloadStats(questionIdsInExam);
+        console.log('[Resultado] Questões respondidas:', answeredQuestionIds.length);
+        await preloadStats(questionIdsInExam, answeredQuestionIds);
         console.log('[Resultado] Stats pré-carregadas concluído');
         
         // Agora sim, setar as questões (após stats carregadas)
         setQuestions(questionsData);
-        
-        // Popular o localStorage com as respostas do usuário
-        const listId = `simulado_review_${id}_${resultId}`;
-        const answers = (data as any).answers || {};
         
         questionsData.forEach((question) => {
           const userAnswer = answers[question.id];

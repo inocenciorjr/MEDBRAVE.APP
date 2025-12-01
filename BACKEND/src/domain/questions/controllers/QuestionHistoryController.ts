@@ -64,23 +64,8 @@ export class QuestionHistoryController {
         throw AppError.badRequest("Máximo de 50 questões por requisição");
       }
       
-      const statsPromises = questionIds.map(questionId => 
-        this.historyService.getQuestionStats(userId, questionId, true) // Incluir comparação global
-          .catch(error => {
-            console.error(`Erro ao buscar stats da questão ${questionId}:`, error);
-            return null; // Retorna null em caso de erro individual
-          })
-      );
-      
-      const statsArray = await Promise.all(statsPromises);
-      
-      // Criar objeto com questionId como chave
-      const statsMap: Record<string, any> = {};
-      questionIds.forEach((id, index) => {
-        if (statsArray[index]) {
-          statsMap[id] = statsArray[index];
-        }
-      });
+      // Usar método otimizado que faz apenas 2 queries ao invés de 4*N
+      const statsMap = await this.historyService.getBatchQuestionStats(userId, questionIds);
       
       res.status(200).json({ success: true, data: statsMap });
     } catch (error) {

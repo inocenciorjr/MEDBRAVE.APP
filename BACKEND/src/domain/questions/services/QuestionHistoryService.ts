@@ -661,4 +661,124 @@ export class QuestionHistoryService {
     // Se for string direta
     return new Date(dateValue);
   }
+
+  /**
+   * Método otimizado para buscar stats de múltiplas questões em batch
+   * Faz apenas 2 queries ao invés de 4 * N queries
+   */
+  async getBatchQuestionStats(
+    userId: string,
+    questionIds: string[]
+  ): Promise<Record<string, QuestionHistoryStats>> {
+    if (questionIds.length === 0) {
+      return {};
+    }
+
+    try {
+      // Query 1: Buscar todas as respostas do usuário para as questões
+      const { data: allResponses, error: responsesError } = await this.supabase
+        .from('question_responses')
+        .select('*')
+        .eq('user_id', userId)
+        .in('question_id', questionIds)
+        .order('answered_at', { ascending: false });
+
+      if (responsesError) {
+        logger.error('Erro ao buscar respostas em batch:', responsesError);
+        throw new AppError('Erro ao buscar respostas', 500);
+      }
+
+      // Se não há respostas, retornar objeto vazio
+      if (!allResponses || allResponses.length === 0) {
+        return {};
+      }
+
+      // Query 2: Buscar dados das questões (correct_answer, options)
+      const uniqueQuestionIds = [...new Set(allResponses.map(r => r.question_id))];
+      const { data: questions, error: questionsError } = await this.supabase
+        .from('questions')
+        .select('id, correct_answer, options')
+        .in('id', uniqueQuestionIds);
+
+      if (questionsError) {
+        logger.error('Erro ao buscar questões em batch:', questionsError);
+        throw new AppError('Erro ao buscar questões', 500);
+      }
+
+      // Criar mapa de questões
+      const questionsMap: Record<string, { correct_answer: string, options: any[] }> = {};
+      (questions || []).forEach(q => {
+        questionsMap[q.id] = { correct_answer: q.correct_answer, options: q.options || [] };
+      });
+
+      // Agrupar respostas por questão e calcular is_correct
+      const responsesByQuestion: Record<string, QuestionAttempt[]> = {};
+      
+      allResponses.forEach(item => {
+        const question = questionsMap[item.question_id];
+        if (!question) return;
+
+        const selectedOption = question.options.find((opt: any) => opt.id === item.selected_alternative_id);
+        const isCorrect = selectedOption ? selectedOption.text === question.correct_answer : false;
+        const alternativeLetter = selectedOption ? String.fromCharCode(65 + (selectedOption.order || 0)) : undefined;
+
+        const attempt: QuestionAttempt = {
+          ...item,
+          is_correct: isCorrect,
+          selected_alternative_letter: alternativeLetter,
+          answered_at: this.extractDate(item.answered_at).toISOString(),
+          created_at: item.created_at ? this.extractDate(item.created_at).toISOString() : new Date().toISOString(),
+        };
+
+        if (!responsesByQuestion[item.question_id]) {
+          responsesByQuestion[item.question_id] = [];
+        }
+        responsesByQuestion[item.question_id].push(attempt);
+      });
+
+      // Calcular stats para cada questão
+      const statsMap: Record<string, QuestionHistoryStats> = {};
+
+      for (const questionId of Object.keys(responsesByQuestion)) {
+        const attempts = responsesByQuestion[questionId];
+        
+        if (attempts.length === 0) continue;
+
+        const correctAttempts = attempts.filter(a => a.is_correct).length;
+        const accuracyRate = (correctAttempts / attempts.length) * 100;
+
+        const attemptsByMode = {
+          normal_list: attempts.filter(a => a.study_mode === 'normal_list').length,
+          simulated_exam: attempts.filter(a => a.study_mode === 'simulated_exam').length,
+          unified_review: attempts.filter(a => a.study_mode === 'unified_review').length,
+        };
+
+        const attemptsInFocusMode = attempts.filter(a => a.was_focus_mode).length;
+        const currentStreak = this.calculateCurrentStreak(attempts);
+        const mostSelectedWrongAlternative = this.getMostSelectedWrongAlternative(attempts);
+        const evolution = this.calculateEvolution(attempts);
+
+        statsMap[questionId] = {
+          total_attempts: attempts.length,
+          correct_attempts: correctAttempts,
+          accuracy_rate: Math.round(accuracyRate * 100) / 100,
+          first_attempt_date: this.extractDate(attempts[attempts.length - 1].answered_at).toISOString(),
+          last_attempt_date: this.extractDate(attempts[0].answered_at).toISOString(),
+          attempts_by_mode: attemptsByMode,
+          attempts_in_focus_mode: attemptsInFocusMode,
+          current_streak: currentStreak,
+          most_selected_wrong_alternative: mostSelectedWrongAlternative,
+          evolution,
+          temporal_data: this.prepareTemporalData(attempts),
+          error_pattern: this.detectErrorPattern(attempts),
+        };
+      }
+
+      logger.info(`[BatchStats] Processadas ${Object.keys(statsMap).length} questões com stats em 2 queries`);
+      return statsMap;
+    } catch (error) {
+      logger.error('Erro ao buscar stats em batch:', error);
+      throw error;
+    }
+  }
 }

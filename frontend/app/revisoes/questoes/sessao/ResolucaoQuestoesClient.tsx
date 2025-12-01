@@ -28,6 +28,7 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [loadedBatches, setLoadedBatches] = useState<Set<number>>(new Set());
+  const [answeredIds, setAnsweredIds] = useState<string[]>([]);
 
   // Iniciar sessão de revisão ao montar
   useEffect(() => {
@@ -98,9 +99,9 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
         return newList;
       });
 
-      // Pré-carregar stats das questões do batch
+      // Pré-carregar stats APENAS das questões já respondidas do batch
       const questionIdsInBatch = batchQuestions.map(q => q.id);
-      await preloadStats(questionIdsInBatch);
+      await preloadStats(questionIdsInBatch, answeredIds);
 
       // Atualizar batches carregados e gerenciar cache
       setLoadedBatches(prev => {
@@ -142,7 +143,7 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
     } catch (err) {
       console.error('[Client] Erro ao carregar batch:', err);
     }
-  }, [loadedBatches, totalQuestions, preloadStats]);
+  }, [loadedBatches, totalQuestions, preloadStats, answeredIds]);
 
   // Carregar inicial
   useEffect(() => {
@@ -179,7 +180,9 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
 
         // Primeiro: sincronizar respostas com localStorage
         const storageKeyPrefix = `question_state_${extractedListId}_`;
+        const answeredQuestionIds: string[] = [];
         responsesMap.forEach((response, questionId) => {
+          answeredQuestionIds.push(questionId);
           const state = {
             selectedAlternative: response.selectedAlternative,
             isAnswered: true,
@@ -190,6 +193,9 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
           localStorage.setItem(`${storageKeyPrefix}${questionId}`, JSON.stringify(state));
         });
 
+        // Salvar IDs das questões respondidas para uso no loadBatch
+        setAnsweredIds(answeredQuestionIds);
+
         // Depois: processar questões
         if (!response || !response.questions || response.questions.length === 0) {
           setError('Nenhuma questão encontrada.');
@@ -199,9 +205,9 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
         const { questions: firstBatch, total } = response;
         setTotalQuestions(total);
 
-        // Pré-carregar stats das questões do primeiro batch
+        // Pré-carregar stats APENAS das questões já respondidas do primeiro batch
         const questionIdsInBatch = firstBatch.map(q => q.id);
-        await preloadStats(questionIdsInBatch);
+        await preloadStats(questionIdsInBatch, answeredQuestionIds);
 
         // Inicializar array com tamanho correto (preencher com null para evitar array esparso)
         const emptyArray: (Question | null)[] = Array.from({ length: total }, () => null);

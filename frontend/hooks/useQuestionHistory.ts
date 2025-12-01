@@ -98,10 +98,10 @@ export function useQuestionHistory(questionId: string, statsOnly: boolean = fals
 
   useEffect(() => {
     if (questionId) {
-      // Sempre carrega stats
-      fetchStats();
-      // Só carrega histórico se não for statsOnly
+      // Se statsOnly, não carrega automaticamente (stats vêm do contexto pré-carregado)
+      // Só carrega se não for statsOnly (modo completo)
       if (!statsOnly) {
+        fetchStats();
         fetchHistory();
       }
     }

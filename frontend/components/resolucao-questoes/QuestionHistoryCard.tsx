@@ -67,7 +67,7 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
     }
   }, [isAnswered, history]);
 
-  // Quando responde a questão, recarrega e expande automaticamente
+  // Quando responde a questão, recarrega stats e histórico (mas NÃO expande automaticamente)
   useEffect(() => {
     if (isAnswered && refreshTrigger) {
       setLoadingHistory(true);
@@ -78,10 +78,7 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
       ]).then(() => {
         setHistoryLoaded(true);
         setLoadingHistory(false);
-        // Expande automaticamente após carregar
-        setTimeout(() => {
-          setIsExpanded(true);
-        }, 100);
+        // NÃO expande automaticamente - usuário decide se quer ver
       });
     }
   }, [refreshTrigger]);
@@ -171,12 +168,10 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
       await refetchHistory();
       setHistoryLoaded(true);
       setLoadingHistory(false);
-      // Expande após carregar
-      setIsExpanded(true);
-    } else {
-      // Se já tem histórico ou vai fechar, apenas toggle
-      setIsExpanded(willExpand);
     }
+    
+    // Sempre faz toggle após carregar (ou se já tinha carregado)
+    setIsExpanded(willExpand);
   };
 
   return (
