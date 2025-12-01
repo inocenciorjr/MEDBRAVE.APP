@@ -66,10 +66,17 @@ export const planCheckMiddleware = async (
     const planService = new SupabasePlanService(supabase);
     const userPlanService = new SupabaseUserPlanService(supabase, planService);
 
-    const activePlans = await userPlanService.getUserActivePlans(userId);
+    let activePlans = await userPlanService.getUserActivePlans(userId);
+
+    // Se não encontrou planos, tentar novamente após 500ms (race condition no primeiro carregamento)
+    if (!activePlans || activePlans.length === 0) {
+      logger.warn(`Usuário ${userId} sem plano ativo na primeira tentativa, aguardando...`);
+      await new Promise(resolve => setTimeout(resolve, 500));
+      activePlans = await userPlanService.getUserActivePlans(userId);
+    }
 
     if (!activePlans || activePlans.length === 0) {
-      logger.warn(`Usuário ${userId} sem plano ativo`);
+      logger.warn(`Usuário ${userId} sem plano ativo após retry`);
       throw new AppError(
         403,
         'Você precisa de um plano ativo para acessar este recurso',
