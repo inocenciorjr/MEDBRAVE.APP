@@ -18,7 +18,7 @@ export function PaymentMethodBadge({ method }: PaymentMethodBadgeProps) {
     OTHER: { label: 'Outro', variant: 'neutral', icon: 'payments' },
   };
 
-  const config = methodConfig[method];
+  const config = methodConfig[method] || { label: 'Não definido', variant: 'neutral' as const, icon: 'help' };
 
   return (
     <AdminBadge

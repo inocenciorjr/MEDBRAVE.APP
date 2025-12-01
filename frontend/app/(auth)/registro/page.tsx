@@ -186,7 +186,7 @@ export default function RegistroPage() {
   return (
     <div className="bg-background-light dark:bg-background-dark font-display flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8 transition-colors duration-300">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden flex flex-col lg:flex-row min-h-[750px] animate-fade-in">
+        <div className="bg-white dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden flex flex-col lg:flex-row animate-fade-in">
           
           {/* Left Side - Carousel */}
           <div className="w-full lg:w-1/2 relative bg-gray-900 hidden lg:block overflow-hidden">
@@ -229,7 +229,7 @@ export default function RegistroPage() {
           </div>
 
           {/* Right Side - Register Form */}
-          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300 relative overflow-y-auto max-h-screen">
+          <div className="w-full lg:w-1/2 bg-white dark:bg-surface-dark p-8 sm:p-12 lg:p-16 flex flex-col justify-center transition-colors duration-300 relative">
             {/* Theme Toggle Button */}
             <div className="absolute top-4 right-4">
               <ThemeToggle />

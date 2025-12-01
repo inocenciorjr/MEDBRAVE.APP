@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Suporte para Emojis de Bandeiras */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+}
+
 /* Otimização de performance para transição de tema */
 html {
   color-scheme: light dark;
