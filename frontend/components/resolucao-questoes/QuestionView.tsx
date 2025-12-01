@@ -191,44 +191,38 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
     // Salvar resposta no backend em BACKGROUND sem bloquear UI
     if (listId && state.selectedAlternative) {
       const selectedAltId = state.selectedAlternative; // Captura o valor não-null
-      (async () => {
-        try {
-          const { saveQuestionResponse } = await import('@/lib/api/questions');
-          await saveQuestionResponse({
-            questionId: question.id,
-            questionListId: listId,
-            selectedAlternativeId: selectedAltId,
-            isCorrect,
-            responseTimeSeconds: 0, // TODO: Implementar timer
-            isActiveReview, // Passa se é revisão ativa para usar study_mode correto
+      
+      // Importar a função de salvar (pré-carregar para não bloquear)
+      const { saveQuestionResponse } = await import('@/lib/api/questions');
+      
+      // Salvar no backend e disparar refresh do histórico em paralelo
+      // O refresh vai mostrar loading enquanto espera o backend salvar
+      saveQuestionResponse({
+        questionId: question.id,
+        questionListId: listId,
+        selectedAlternativeId: selectedAltId,
+        isCorrect,
+        responseTimeSeconds: 0,
+        isActiveReview,
+      }).then(() => {
+        // Após salvar, disparar refresh para carregar dados atualizados
+        setHistoryRefreshTrigger(prev => prev + 1);
+        
+        // Se for revisão ativa com sessionId, atualizar progresso da sessão
+        if (isActiveReview && reviewSessionId) {
+          import('@/lib/utils/fetchWithAuth').then(({ fetchWithAuth }) => {
+            const currentQuestionIndex = questionList.findIndex(q => q.id === question.id);
+            fetchWithAuth(`/api/review-sessions/${reviewSessionId}/progress`, {
+              method: 'PATCH',
+              body: JSON.stringify({ current_index: currentQuestionIndex + 1 }),
+            }).catch(err => console.error('❌ Erro ao atualizar progresso:', err));
           });
-
-          // Trigger para recarregar histórico APÓS salvar no backend
-          // Isso garante que a nova resposta já está no banco quando o histórico for carregado
-          setHistoryRefreshTrigger(prev => prev + 1);
-
-          // Se for revisão ativa com sessionId, atualizar progresso da sessão
-          if (isActiveReview && reviewSessionId) {
-            try {
-              const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
-              const currentQuestionIndex = questionList.findIndex(q => q.id === question.id);
-
-              await fetchWithAuth(`/api/review-sessions/${reviewSessionId}/progress`, {
-                method: 'PATCH',
-                body: JSON.stringify({
-                  current_index: currentQuestionIndex + 1
-                }),
-              });
-
-              console.log('✅ Progresso da sessão de revisão atualizado');
-            } catch (error) {
-              console.error('❌ Erro ao atualizar progresso da sessão:', error);
-            }
-          }
-        } catch (error) {
-          console.error('Erro ao salvar resposta:', error);
         }
-      })();
+      }).catch(err => {
+        console.error('Erro ao salvar resposta:', err);
+        // Mesmo com erro, tentar carregar histórico (pode ter dados anteriores)
+        setHistoryRefreshTrigger(prev => prev + 1);
+      });
     }
   };
 

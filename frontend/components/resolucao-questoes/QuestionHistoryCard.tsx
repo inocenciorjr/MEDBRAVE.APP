@@ -68,7 +68,26 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
     }
   }, [isAnswered, history]);
 
-  // Quando responde a questão (refreshTrigger muda), carregar stats atualizadas
+  // Quando isAnswered muda para true (usuário acabou de responder), carregar stats imediatamente
+  useEffect(() => {
+    if (isAnswered && !stats && !loadingHistory) {
+      setLoadingHistory(true);
+      
+      // Carregar stats e histórico do backend
+      Promise.all([
+        refetchStats(),
+        refetchHistory()
+      ]).then(() => {
+        setHistoryLoaded(true);
+        setLoadingHistory(false);
+      }).catch(() => {
+        setLoadingHistory(false);
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAnswered]);
+
+  // Quando refreshTrigger muda (após salvar no backend), recarregar stats
   useEffect(() => {
     if (isAnswered && refreshTrigger && refreshTrigger > 0) {
       setLoadingHistory(true);
@@ -90,17 +109,28 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
   // Mostrar loading no header se está carregando
   const isLoading = loading || loadingHistory;
 
-  // Não mostrar nada se não tem tentativas (após carregar completamente)
-  if (!loading && !loadingHistory && (!stats || stats.total_attempts === 0)) {
+  // Se a questão foi respondida mas ainda não tem stats, mostrar skeleton
+  // Isso acontece quando o usuário acabou de responder e o refresh ainda não completou
+  const showSkeleton = isAnswered && !stats && !loading && !loadingHistory;
+
+  // Não mostrar nada se:
+  // 1. Não está respondida E não está carregando
+  // 2. Está respondida, carregou, mas não tem tentativas (stats.total_attempts === 0)
+  if (!isAnswered && !loading && !loadingHistory) {
+    return null;
+  }
+  
+  if (!isAnswered && showOnlyIfAnsweredInSession && !loading) {
+    return null;
+  }
+  
+  // Se carregou completamente e não tem tentativas, não mostrar
+  if (stats && stats.total_attempts === 0 && !loading && !loadingHistory) {
     return null;
   }
 
-  if (showOnlyIfAnsweredInSession && !isAnswered && !loading) {
-    return null;
-  }
-
-  // Skeleton enquanto carrega - SEMPRE mostra para evitar layout shift
-  if ((loading || loadingHistory) && !stats) {
+  // Skeleton enquanto carrega ou quando acabou de responder e ainda não tem stats
+  if ((loading || loadingHistory || showSkeleton) && !stats) {
     return (
       <div className="bg-gradient-to-br from-surface-light to-background-light dark:from-surface-dark dark:to-background-dark 
                       rounded-xl shadow-lg border-2 border-border-light dark:border-border-dark animate-pulse">

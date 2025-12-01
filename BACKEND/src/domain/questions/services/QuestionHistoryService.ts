@@ -97,14 +97,14 @@ export class QuestionHistoryService {
 
       // Buscar questões para verificar alternativas corretas
       const questionIds = [...new Set((data || []).map(item => item.question_id))];
-      
+
       let questionsMap: Record<string, { correct_answer: string, options: any[] }> = {};
       if (questionIds.length > 0) {
         const { data: questions } = await this.supabase
           .from('questions')
           .select('id, correct_answer, options')
           .in('id', questionIds);
-        
+
         questionsMap = (questions || []).reduce((acc, q) => {
           acc[q.id] = { correct_answer: q.correct_answer, options: q.options || [] };
           return acc;
@@ -118,8 +118,8 @@ export class QuestionHistoryService {
         const createdAtStr = item.created_at ? this.extractDate(item.created_at).toISOString() : new Date().toISOString();
 
         if (!item.selected_alternative_id || !item.question_id) {
-          return { 
-            ...item, 
+          return {
+            ...item,
             is_correct: false,
             answered_at: answeredAtStr,
             created_at: createdAtStr
@@ -128,8 +128,8 @@ export class QuestionHistoryService {
 
         const question = questionsMap[item.question_id];
         if (!question) {
-          return { 
-            ...item, 
+          return {
+            ...item,
             is_correct: false,
             answered_at: answeredAtStr,
             created_at: createdAtStr
@@ -139,8 +139,8 @@ export class QuestionHistoryService {
         // Encontrar a alternativa selecionada
         const selectedOption = question.options.find((opt: any) => opt.id === item.selected_alternative_id);
         if (!selectedOption) {
-          return { 
-            ...item, 
+          return {
+            ...item,
             is_correct: false,
             answered_at: answeredAtStr,
             created_at: createdAtStr
@@ -149,12 +149,12 @@ export class QuestionHistoryService {
 
         // Verificar se o texto da alternativa selecionada é igual ao correct_answer
         const isCorrect = selectedOption.text === question.correct_answer;
-        
+
         // Calcular a letra da alternativa baseada no order (A, B, C, D, E)
         const alternativeLetter = String.fromCharCode(65 + (selectedOption.order || 0));
-        
-        return { 
-          ...item, 
+
+        return {
+          ...item,
           is_correct: isCorrect,
           selected_alternative_letter: alternativeLetter,
           answered_at: answeredAtStr,
@@ -304,35 +304,29 @@ export class QuestionHistoryService {
 
       logger.info(`Tentativa ${attemptNumber} registrada para questão ${data.question_id}`);
 
-      // ✅ INTEGRAÇÃO COM SISTEMA DE REVISÃO FSRS
-      try {
-        const prefs = await this.preferencesService.getPreferences(data.user_id);
-        
-        if (prefs && prefs.auto_add_questions) {
-          logger.info(`Integrando questão ${data.question_id} com sistema de revisão FSRS`);
-          
-          // ✅ Atualizar card FSRS (muda próxima revisão)
-          // Se study_mode é 'unified_review', é revisão ativa (sempre recalcula, sem threshold)
-          // Se é 'normal_list' ou 'simulated_exam', é estudo (usa threshold)
-          const isActiveReview = data.study_mode === 'unified_review';
-          const reviewType = isActiveReview ? 'revisão ativa' : 'estudo (lista/simulado)';
-          
-          logger.info(`Atualizando card FSRS para questão ${data.question_id} (${reviewType})`);
-          await this.unifiedReviewService.updateQuestionCardOnly(
-            data.user_id,
-            data.question_id,
-            data.is_correct,
-            isActiveReview
-          );
-          
-          logger.info(`Integração FSRS concluída para questão ${data.question_id}`);
-        } else {
-          logger.info(`auto_add_questions desabilitado para usuário ${data.user_id}`);
+      // ✅ INTEGRAÇÃO COM SISTEMA DE REVISÃO FSRS (executar em background, não bloquear resposta)
+      // Usar setImmediate para não bloquear o event loop
+      setImmediate(async () => {
+        try {
+          const prefs = await this.preferencesService.getPreferences(data.user_id);
+
+          if (prefs && prefs.auto_add_questions) {
+            logger.info(`[FSRS Background] Integrando questão ${data.question_id}`);
+
+            const isActiveReview = data.study_mode === 'unified_review';
+            await this.unifiedReviewService.updateQuestionCardOnly(
+              data.user_id,
+              data.question_id,
+              data.is_correct,
+              isActiveReview
+            );
+
+            logger.info(`[FSRS Background] Integração concluída para questão ${data.question_id}`);
+          }
+        } catch (fsrsError) {
+          logger.error('[FSRS Background] Erro na integração (não crítico):', fsrsError);
         }
-      } catch (fsrsError) {
-        // Não falhar se integração FSRS der erro
-        logger.error('Erro na integração FSRS (não crítico):', fsrsError);
-      }
+      });
 
       return response as QuestionAttempt;
     } catch (error) {
@@ -369,7 +363,7 @@ export class QuestionHistoryService {
 
   private getMostSelectedWrongAlternative(attempts: QuestionAttempt[]): { alternative_id: string; count: number; percentage: number } | undefined {
     const wrongAttempts = attempts.filter(a => !a.is_correct);
-    
+
     if (wrongAttempts.length === 0) {
       return undefined;
     }
@@ -381,7 +375,7 @@ export class QuestionHistoryService {
 
     const mostSelected = Object.entries(alternativeCounts).sort((a, b) => b[1] - a[1])[0];
     const percentage = (mostSelected[1] / wrongAttempts.length) * 100;
-    
+
     return {
       alternative_id: mostSelected[0],
       count: mostSelected[1],
@@ -405,22 +399,22 @@ export class QuestionHistoryService {
 
     if (attempts.length === 2) {
       const [first, second] = sortedAttempts;
-      
+
       // Melhorou (errou → acertou)
       if (!first.is_correct && second.is_correct) {
         return 'improving';
       }
-      
+
       // Piorou (acertou → errou)
       if (first.is_correct && !second.is_correct) {
         return 'declining';
       }
-      
+
       // Ambas corretas = estável (mantendo o bom desempenho)
       if (first.is_correct && second.is_correct) {
         return 'stable';
       }
-      
+
       // Ambas erradas = piorando (não está conseguindo acertar)
       return 'declining';
     }
@@ -430,19 +424,19 @@ export class QuestionHistoryService {
     const recentCount = Math.min(3, sortedAttempts.length);
     const recentAttempts = sortedAttempts.slice(-recentCount);
     const olderAttempts = sortedAttempts.slice(0, -recentCount);
-    
+
     // Se não há tentativas antigas suficientes, usar todas
     if (olderAttempts.length === 0) {
       // Apenas 3 tentativas, analisar a sequência
       const results = recentAttempts.map(a => a.is_correct);
       const correctCount = results.filter(r => r).length;
-      
+
       // Se está errando tudo ou quase tudo
       if (correctCount === 0) return 'declining';
-      
+
       // Se está acertando tudo
       if (correctCount === recentCount) return 'stable';
-      
+
       // Verificar se está melhorando ou piorando
       // Dar mais peso para as tentativas mais recentes
       if (results[results.length - 1]) {
@@ -453,30 +447,30 @@ export class QuestionHistoryService {
         return 'declining';
       }
     }
-    
+
     // Comparar desempenho recente vs antigo
     const recentAccuracy = recentAttempts.filter(a => a.is_correct).length / recentAttempts.length;
     const olderAccuracy = olderAttempts.filter(a => a.is_correct).length / olderAttempts.length;
-    
+
     const diff = recentAccuracy - olderAccuracy;
-    
+
     // Melhora significativa (mais de 30% de diferença)
     if (diff >= 0.3) return 'improving';
-    
+
     // Piora significativa (mais de 30% de diferença)
     if (diff <= -0.3) return 'declining';
-    
+
     // Verificar desempenho recente
     // Se está errando muito recentemente (menos de 40%), é declining
     if (recentAccuracy < 0.4) return 'declining';
-    
+
     // Se está acertando bem recentemente (mais de 70%), verificar tendência
     if (recentAccuracy >= 0.7) {
       if (diff > 0.1) return 'improving';
       if (diff < -0.1) return 'declining';
       return 'stable';
     }
-    
+
     // Desempenho mediano recente (40-70%), verificar tendência
     if (diff > 0.15) return 'improving';
     if (diff < -0.15) return 'declining';
@@ -531,7 +525,7 @@ export class QuestionHistoryService {
       // Taxa de acerto global (todas as tentativas)
       const correctAttempts = attemptsWithCorrect.filter(a => a.is_correct).length;
       const globalAccuracyRate = (correctAttempts / totalAttempts) * 100;
-      
+
       // console.log(`[GlobalStats] Questão ${questionId}:`, {
       //   totalAttempts,
       //   correctAttempts,
@@ -542,8 +536,8 @@ export class QuestionHistoryService {
       // Porcentagem de usuários que acertaram na primeira tentativa
       const firstAttempts = attemptsWithCorrect.filter(a => a.attempt_number === 1);
       const usersCorrectFirstAttempt = firstAttempts.filter(a => a.is_correct).length;
-      const usersCorrectFirstAttemptPercentage = firstAttempts.length > 0 
-        ? (usersCorrectFirstAttempt / firstAttempts.length) * 100 
+      const usersCorrectFirstAttemptPercentage = firstAttempts.length > 0
+        ? (usersCorrectFirstAttempt / firstAttempts.length) * 100
         : 0;
 
       // Porcentagem de usuários que acertaram em qualquer tentativa
@@ -556,7 +550,7 @@ export class QuestionHistoryService {
       const alternativeDistribution: Record<string, number> = {};
       allAttempts.forEach(a => {
         if (a.selected_alternative_id) {
-          alternativeDistribution[a.selected_alternative_id] = 
+          alternativeDistribution[a.selected_alternative_id] =
             (alternativeDistribution[a.selected_alternative_id] || 0) + 1;
         }
       });
@@ -590,7 +584,7 @@ export class QuestionHistoryService {
     description: string;
   } | undefined {
     const wrongAttempts = attempts.filter(a => !a.is_correct);
-    
+
     if (wrongAttempts.length === 0) {
       return undefined;
     }
@@ -598,7 +592,7 @@ export class QuestionHistoryService {
     // Verificar se sempre erra a mesma alternativa
     const alternatives = wrongAttempts.map(a => a.selected_alternative_id);
     const uniqueAlternatives = new Set(alternatives);
-    
+
     if (uniqueAlternatives.size === 1 && wrongAttempts.length >= 2) {
       return {
         type: 'same_alternative',
@@ -610,11 +604,11 @@ export class QuestionHistoryService {
     if (attempts.length >= 3) {
       const recent = attempts.slice(0, 2);
       const older = attempts.slice(2);
-      
+
       const recentCorrect = recent.filter(a => a.is_correct).length;
       const olderCorrect = older.filter(a => a.is_correct).length;
       const olderTotal = older.length;
-      
+
       if (olderCorrect / olderTotal >= 0.8 && recentCorrect === 0) {
         return {
           type: 'regression',
@@ -713,7 +707,7 @@ export class QuestionHistoryService {
 
       // Agrupar respostas por questão e calcular is_correct
       const responsesByQuestion: Record<string, QuestionAttempt[]> = {};
-      
+
       allResponses.forEach(item => {
         const question = questionsMap[item.question_id];
         if (!question) return;
@@ -741,7 +735,7 @@ export class QuestionHistoryService {
 
       for (const questionId of Object.keys(responsesByQuestion)) {
         const attempts = responsesByQuestion[questionId];
-        
+
         if (attempts.length === 0) continue;
 
         const correctAttempts = attempts.filter(a => a.is_correct).length;
