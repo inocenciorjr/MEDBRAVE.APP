@@ -113,11 +113,15 @@ export default function MinhasListasPage() {
 
 
 
-  // Buscar estatísticas das listas
+  // Buscar estatísticas das listas - OTIMIZADO: todas em paralelo
   const fetchListStats = async (listIds: string[]) => {
     if (listIds.length === 0) return {};
     
     try {
+      console.log(`📊 Buscando stats para ${listIds.length} listas em paralelo...`);
+      const startTime = Date.now();
+      
+      // Fazer TODAS as requisições em paralelo (não sequencial)
       const statsPromises = listIds.map(async (listId) => {
         try {
           const response = await api.get(`/question-lists/${listId}/stats`);
@@ -142,6 +146,8 @@ export default function MinhasListasPage() {
         }
       });
 
+      const endTime = Date.now();
+      console.log(`✅ Stats carregadas em ${endTime - startTime}ms`);
       return statsMap;
     } catch (error) {
       console.error('Error fetching list stats:', error);
@@ -568,7 +574,10 @@ export default function MinhasListasPage() {
     return `${Math.round((stats.answered / stats.total) * 100)}% concluída`;
   };
 
-  if (loadingFolders) {
+  // Mostrar skeleton enquanto está carregando folders OU simulados OU items ainda não foram organizados
+  const isLoading = loadingFolders || loadingSimulados || (items.length === 0 && allItems.length === 0 && !loadingFolders);
+  
+  if (isLoading && allItems.length === 0) {
     return (
       <div className="w-full py-8">
         <MinhasListasSkeleton />

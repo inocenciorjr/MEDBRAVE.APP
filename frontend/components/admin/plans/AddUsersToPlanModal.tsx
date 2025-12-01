@@ -43,7 +43,7 @@ export function AddUsersToPlanModal({
       const allUsers = usersResponse.data;
 
       // Buscar usuários que já têm este plano ativo
-      const userPlansResponse = await getAllUserPlans({ 
+      const userPlansResponse = await getAllUserPlans({
         planId: planId,
         status: 'ACTIVE'
       });
@@ -51,7 +51,7 @@ export function AddUsersToPlanModal({
 
       // Filtrar usuários que NÃO têm o plano ativo
       const availableUsers = allUsers.filter(user => !usersWithPlan.has(user.id));
-      
+
       setSearchResults(availableUsers);
     } catch (error) {
       console.error('Erro ao carregar usuários:', error);
@@ -79,9 +79,9 @@ export function AddUsersToPlanModal({
       setSearching(true);
       try {
         const results = await searchUsers(searchQuery, 50);
-        
+
         // Buscar usuários que já têm este plano ativo
-        const userPlansResponse = await getAllUserPlans({ 
+        const userPlansResponse = await getAllUserPlans({
           planId: planId,
           status: 'ACTIVE'
         });
@@ -89,7 +89,7 @@ export function AddUsersToPlanModal({
 
         // Filtrar usuários que NÃO têm o plano ativo
         const availableUsers = results.filter(user => !usersWithPlan.has(user.id));
-        
+
         setSearchResults(availableUsers);
       } catch (error) {
         console.error('Erro ao buscar usuários:', error);

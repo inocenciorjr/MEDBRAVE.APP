@@ -146,23 +146,37 @@ export function QuestionHeader({
   return (
     <div className="mb-4 md:mb-6">
       {/* Mobile + Tablet: Single Row - Question + Institution + Year */}
-      <div className="xl:hidden flex items-center justify-between mb-3 gap-2">
+      <div className="xl:hidden flex items-center justify-between mb-3 gap-1.5">
         <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary whitespace-nowrap">
           Questão {question.questionNumber}
         </span>
         
-        <div className="flex items-center gap-1.5 flex-shrink-0">
+        <div className="flex items-center gap-1.5 flex-shrink min-w-0">
           <button
-            className="flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs"
+            className="group relative flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs min-w-0"
             aria-label={`Instituição: ${getInstitution()}`}
           >
-            <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
-            <span className="font-medium truncate max-w-[100px]">{getInstitution()}</span>
+            <span className="material-symbols-outlined text-sm flex-shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
+            <span className="font-medium truncate max-w-[120px]">{getInstitution()}</span>
+            
+            {/* Tooltip customizado */}
+            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 
+                         bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 
+                         text-xs font-semibold rounded-lg whitespace-nowrap 
+                         opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-200 
+                         pointer-events-none z-[9999] shadow-xl border-2 border-slate-700 dark:border-slate-300">
+              {getInstitution()}
+              <span className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-[2px]
+                           w-0 h-0 border-l-[6px] border-l-transparent 
+                           border-r-[6px] border-r-transparent 
+                           border-t-[6px] border-t-slate-900 dark:border-t-slate-100"></span>
+            </span>
           </button>
           
           <button
-            className="flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs"
+            className="flex items-center gap-1 px-2 py-1 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary transition-colors shadow-sm text-xs flex-shrink-0"
             aria-label={`Ano: ${getYear()}`}
+            title={`Ano: ${getYear()}`}
           >
             <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>calendar_today</span>
             <span className="font-medium">{getYear()}</span>

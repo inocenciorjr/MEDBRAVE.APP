@@ -134,6 +134,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   const [existingNotebookEntry, setExistingNotebookEntry] = useState<any>(null);
   const [updateNotes, setUpdateNotes] = useState<any[]>([]);
   const [notebookRefreshTrigger, setNotebookRefreshTrigger] = useState(0);
+  const [historyRefreshTrigger, setHistoryRefreshTrigger] = useState(0);
 
   const { isFocusMode, setIsFocusMode } = useFocusMode();
 
@@ -181,6 +182,9 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
 
     // Confirmar resposta IMEDIATAMENTE (atualiza UI)
     confirmAnswer();
+
+    // Trigger para recarregar histórico
+    setHistoryRefreshTrigger(prev => prev + 1);
 
     // Recarregar estados após confirmar resposta (para atualizar NavigationPanel)
     setTimeout(() => {
@@ -345,6 +349,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
                 <QuestionHistoryCard
                   questionId={question.id}
                   isAnswered={state.isAnswered}
+                  refreshTrigger={historyRefreshTrigger}
                 />
               </div>
             )}
