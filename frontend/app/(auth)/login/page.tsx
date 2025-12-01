@@ -30,6 +30,17 @@ export default function LoginPage() {
   // Carousel State
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Verificar se já está autenticado e redirecionar
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        router.push(redirect);
+      }
+    };
+    checkAuth();
+  }, [router, redirect]);
+
   // Verificar mensagem de timeout no sessionStorage
   useEffect(() => {
     const timeoutMessage = sessionStorage.getItem('session_timeout_message');
