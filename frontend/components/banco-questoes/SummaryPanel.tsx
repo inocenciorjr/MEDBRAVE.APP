@@ -239,7 +239,7 @@ export default function SummaryPanel({
                       }
                     }}
                     autoFocus
-                    className="flex-1 px-3 py-2 bg-background-light dark:bg-background-dark border-2 border-primary rounded-lg text-sm font-medium text-text-light-primary dark:text-text-dark-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="flex-1 px-3 py-2 bg-background-light dark:bg-background-dark border-2 border-primary rounded-lg text-base font-medium text-text-light-primary dark:text-text-dark-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="Nome da lista"
                   />
                   <button
