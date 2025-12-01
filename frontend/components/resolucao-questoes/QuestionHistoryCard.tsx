@@ -17,9 +17,10 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
   const [showComparison, setShowComparison] = useState(false);
   const [historyLoaded, setHistoryLoaded] = useState(false);
   const [loadingHistory, setLoadingHistory] = useState(false);
+  const [waitingForFreshStats, setWaitingForFreshStats] = useState(false);
   
   // Usar stats do contexto (já pré-carregados)
-  const { getStats, isLoading: isLoadingFromContext } = useQuestionStats();
+  const { getStats, isLoading: isLoadingFromContext, invalidateStats } = useQuestionStats();
   const statsFromContext = getStats(questionId);
   const loadingFromContext = isLoadingFromContext(questionId);
   
@@ -29,9 +30,10 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
   const cardRef = useRef<HTMLDivElement>(null);
   const comparisonRef = useRef<HTMLDivElement>(null);
   
-  // Usar stats do contexto OU do hook (priorizar hook se disponível)
-  const stats = statsFromHook || statsFromContext;
-  const loading = loadingFromContext;
+  // Usar stats do hook quando disponível (são as mais atualizadas após responder)
+  // Só usar do contexto se não estamos esperando stats frescas
+  const stats = statsFromHook || (waitingForFreshStats ? null : statsFromContext);
+  const loading = loadingFromContext || waitingForFreshStats;
 
   // Detectar regressão (quebrou sequência de acertos)
   const hasRegression = () => {
@@ -67,35 +69,37 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
     }
   }, [isAnswered, history]);
 
-  // Quando responde a questão, recarrega stats e histórico (mas NÃO expande automaticamente)
+  // Quando responde a questão (refreshTrigger muda), invalidar stats antigas e carregar novas
   useEffect(() => {
     if (isAnswered && refreshTrigger) {
+      // Marcar que estamos esperando stats frescas (ignora stats do contexto)
+      setWaitingForFreshStats(true);
       setLoadingHistory(true);
       
+      // Invalidar stats antigas do contexto
+      invalidateStats(questionId);
+      
+      // Carregar stats e histórico atualizados do backend
       Promise.all([
         refetchStats(),
         refetchHistory()
       ]).then(() => {
         setHistoryLoaded(true);
         setLoadingHistory(false);
+        setWaitingForFreshStats(false);
         // NÃO expande automaticamente - usuário decide se quer ver
       });
     }
-  }, [refreshTrigger]);
+  }, [refreshTrigger, questionId, invalidateStats, refetchStats, refetchHistory]);
   
-  // Quando isAnswered muda para true (primeira vez que responde), buscar stats
+  // Quando isAnswered muda para true pela primeira vez (questão já respondida anteriormente)
+  // Só carrega se tem stats do contexto (pré-carregadas) - não precisa buscar novamente
   useEffect(() => {
-    if (isAnswered && !stats && !loading) {
-      setLoadingHistory(true);
-      Promise.all([
-        refetchStats(),
-        refetchHistory()
-      ]).then(() => {
-        setHistoryLoaded(true);
-        setLoadingHistory(false);
-      });
+    if (isAnswered && statsFromContext && !statsFromHook && !waitingForFreshStats) {
+      // Já tem stats do contexto, não precisa fazer nada
+      // O histórico será carregado lazy quando expandir
     }
-  }, [isAnswered, stats, loading]);
+  }, [isAnswered, statsFromContext, statsFromHook, waitingForFreshStats]);
 
   // Mostrar loading no header se está carregando
   const isLoading = loading || loadingHistory;
