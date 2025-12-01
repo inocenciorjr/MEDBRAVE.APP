@@ -16,6 +16,7 @@ export interface MenuItem {
 const menuItems: MenuItem[] = [
   { id: 'dashboard', label: 'Dashboard', icon: 'dashboard', href: '/admin' },
   { id: 'users', label: 'Usuários', icon: 'people', href: '/admin/users' },
+  { id: 'mentorships', label: 'Mentorias', icon: 'school', href: '/admin/mentorships' },
   { id: 'questions', label: 'Questões', icon: 'quiz', href: '/admin/questions' },
   { id: 'official-exams', label: 'Provas Oficiais', icon: 'assignment', href: '/official-exams' },
   { id: 'filters', label: 'Filtros', icon: 'filter_alt', href: '/admin/filters' },

@@ -128,7 +128,37 @@ export default function UserModal({
               <p className={`text-sm font-medium ${getStatusColor()}`}>{getStatusText()}</p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
+            {user.role !== 'MENTOR' && (
+              <AdminButton 
+                size="sm" 
+                variant="outline" 
+                onClick={async () => {
+                  if (confirm('Tornar este usuário um Mentor?')) {
+                    await onSave(user.id, { role: 'MENTOR' });
+                    window.location.reload();
+                  }
+                }} 
+                icon="school"
+              >
+                Tornar Mentor
+              </AdminButton>
+            )}
+            {user.role === 'MENTOR' && (
+              <AdminButton 
+                size="sm" 
+                variant="outline" 
+                onClick={async () => {
+                  if (confirm('Remover role de Mentor deste usuário?')) {
+                    await onSave(user.id, { role: 'USER' });
+                    window.location.reload();
+                  }
+                }} 
+                icon="person_remove"
+              >
+                Remover Mentor
+              </AdminButton>
+            )}
             {!user.is_blocked && !user.is_banned && (
               <AdminButton size="sm" variant="outline" onClick={() => setShowSuspendModal(true)} icon="block">
                 Suspender
@@ -209,7 +239,9 @@ export default function UserModal({
                       onChange={(e) => setFormData({ ...formData, role: e.target.value })}
                       className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark"
                     >
+                      <option value="USER">Usuário</option>
                       <option value="STUDENT">Estudante</option>
+                      <option value="MENTOR">Mentor</option>
                       <option value="ADMIN">Admin</option>
                       <option value="MODERATOR">Moderador</option>
                     </select>

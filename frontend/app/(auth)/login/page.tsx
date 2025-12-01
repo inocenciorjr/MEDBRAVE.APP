@@ -75,7 +75,19 @@ export default function LoginPage() {
       }
 
       if (data.user) {
-        router.push(redirect);
+        // Verificar role do usuário para redirecionamento
+        const { data: userData } = await supabase
+          .from('users')
+          .select('role')
+          .eq('id', data.user.id)
+          .single();
+
+        // Se for mentor e não tiver redirect específico, vai pro painel de mentor
+        if (userData?.role === 'MENTOR' && redirect === '/') {
+          router.push('/mentor');
+        } else {
+          router.push(redirect);
+        }
       }
     } catch (err) {
       setError('Erro ao fazer login. Tente novamente.');

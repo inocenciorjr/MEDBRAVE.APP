@@ -114,14 +114,20 @@ function AuthCallbackContent() {
                 console.error('Erro ao salvar cookies:', cookieError);
               }
 
+              // Se for mentor e redirect padrão, redirecionar para painel de mentor
+              let finalRedirect = redirect;
+              if (userRole === 'MENTOR' && (redirect === '/' || !redirect)) {
+                finalRedirect = '/mentor';
+              }
+
               // Redirecionar
-              console.log('🔍 [Callback] Redirect final:', redirect);
+              console.log('🔍 [Callback] Redirect final:', finalRedirect);
               if (window.opener) {
                 window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
                 await new Promise(resolve => setTimeout(resolve, 500));
                 window.close();
               } else {
-                const redirectUrl = redirect.startsWith('http') ? redirect : `${window.location.origin}${redirect}`;
+                const redirectUrl = finalRedirect.startsWith('http') ? finalRedirect : `${window.location.origin}${finalRedirect}`;
                 console.log('🔍 [Callback] Redirecionando para:', redirectUrl);
                 window.location.href = redirectUrl;
               }
