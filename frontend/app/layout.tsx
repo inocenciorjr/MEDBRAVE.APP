@@ -22,7 +22,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MedBRAVE - A Plataforma do Revalidando",
+  title: "MedBRAVE - O Portal do Revalidando",
   description: "Seja Corajoso, Seja BRAVE!",
   icons: {
     icon: [
