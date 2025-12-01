@@ -13,6 +13,9 @@ const controller = new ReviewSessionController(reviewSessionService, plannerServ
 // Criar sessão (com limite de revisões por dia)
 router.post('/', enhancedAuthMiddleware, checkReviewsPerDayLimit as any, controller.createSession);
 
+// Buscar ou criar sessão por data (para o planner)
+router.post('/for-date', enhancedAuthMiddleware, controller.getOrCreateSessionForDate);
+
 // Buscar sessão ativa
 router.get('/active', enhancedAuthMiddleware, controller.getActiveSession);
 

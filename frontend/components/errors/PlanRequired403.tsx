@@ -56,7 +56,7 @@ export function PlanRequired403({
       {/* Background com nuvens */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Nuvem 1 */}
-        <div className="absolute top-[15%] left-[10%] opacity-80">
+        <div className="absolute top-[15%] left-[10%] opacity-80" aria-hidden="true">
           <div className="relative">
             <div className="absolute w-[100px] h-[100px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg" />
             <div className="absolute w-[60px] h-[60px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg top-5 -left-10" />
@@ -65,7 +65,7 @@ export function PlanRequired403({
         </div>
 
         {/* Nuvem 2 */}
-        <div className="absolute top-[25%] right-[12%] opacity-80">
+        <div className="absolute top-[25%] right-[12%] opacity-80" aria-hidden="true">
           <div className="relative">
             <div className="absolute w-[120px] h-[120px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg" />
             <div className="absolute w-[70px] h-[70px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg top-[30px] -left-[50px]" />
@@ -74,7 +74,7 @@ export function PlanRequired403({
         </div>
 
         {/* Nuvem 3 - apenas desktop */}
-        <div className="absolute hidden md:block top-[40%] left-[25%] opacity-80">
+        <div className="absolute hidden md:block top-[40%] left-[25%] opacity-80" aria-hidden="true">
           <div className="relative">
             <div className="absolute w-[80px] h-[80px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg" />
             <div className="absolute w-[50px] h-[50px] bg-surface-light dark:bg-surface-dark rounded-full shadow-lg dark:shadow-dark-lg top-[15px] -left-[30px]" />
@@ -83,7 +83,7 @@ export function PlanRequired403({
         </div>
 
         {/* Chão com tijolos */}
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-border-light dark:bg-border-dark">
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-border-light dark:bg-border-dark" aria-hidden="true">
           <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black/5 dark:to-white/5">
             <div className="absolute bottom-0 w-full h-full" style={{ perspective: '300px' }}>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px]" style={{ transform: 'rotateX(60deg) translateY(100px)' }}>
@@ -114,6 +114,7 @@ export function PlanRequired403({
                         bottom: `${brick.b}px`,
                         left: `${brick.l}px`,
                       }}
+                      tabIndex={-1}
                     />
                   ))}
                 </div>
@@ -144,7 +145,7 @@ export function PlanRequired403({
           </div>
 
           {/* Leão com barreira */}
-          <div className="flex items-end justify-center h-full">
+          <div className="flex items-end justify-center h-full" aria-hidden="true">
             <div className="relative w-full max-w-sm drop-shadow-2xl">
               {/* Linha do chão */}
               <div className="absolute bottom-10 left-0 right-0 h-0.5 bg-border-light dark:bg-border-dark w-full" />

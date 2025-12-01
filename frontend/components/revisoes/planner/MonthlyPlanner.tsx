@@ -706,17 +706,29 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                     const task = selectedTask as GroupedReview;
                     const contentIds = task.reviewIds || [];
                     
-                    if (contentIds.length === 0) {
-                      alert('Não há itens para revisar');
-                      return;
+                    // Encontrar a data do evento selecionado
+                    // O ID do task contém a data no formato "grouped-YYYY-MM-DD-CONTENT_TYPE"
+                    let eventDate = '';
+                    if (task.id.startsWith('grouped-')) {
+                      const parts = task.id.split('-');
+                      // Formato: grouped-YYYY-MM-DD-CONTENT_TYPE
+                      eventDate = `${parts[1]}-${parts[2]}-${parts[3]}`;
+                    } else if (selectedDate) {
+                      eventDate = format(selectedDate, 'yyyy-MM-dd');
+                    } else {
+                      // Fallback para hoje
+                      eventDate = format(new Date(), 'yyyy-MM-dd');
                     }
                     
                     try {
                       const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
-                      const response = await fetchWithAuth('/api/review-sessions', {
+                      
+                      // Usar o novo endpoint que busca/cria sessão para data específica
+                      const response = await fetchWithAuth('/api/review-sessions/for-date', {
                         method: 'POST',
                         body: JSON.stringify({
                           content_type: task.content_type,
+                          date: eventDate,
                           review_ids: contentIds,
                         }),
                       });

@@ -141,44 +141,35 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
     try {
       const { fetchWithAuth } = await import('@/lib/utils/fetchWithAuth');
       
-      // Verificar se já existe uma sessão ativa para hoje
+      // Usar data LOCAL (não UTC) para garantir consistência
       const today = new Date();
-      const dateStr = today.toISOString().split('T')[0]; // YYYY-MM-DD
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, '0');
+      const day = String(today.getDate()).padStart(2, '0');
+      const dateStr = `${year}-${month}-${day}`;
       
-      const listResponse = await fetchWithAuth(
-        `/api/review-sessions?contentType=${contentType}&date=${dateStr}&status=active`
-      );
+      console.log(`[ReviewProgressCard] Iniciando revisão de ${contentType} para ${dateStr}`);
       
-      let sessionId: string;
-      
-      if (listResponse.ok) {
-        const listResult = await listResponse.json();
-        const existingSessions = listResult.data?.sessions || [];
-        
-        if (existingSessions.length > 0) {
-          // Usar sessão existente
-          sessionId = existingSessions[0].id;
-        } else {
-          // Criar nova sessão
-          const response = await fetchWithAuth('/api/review-sessions', {
-            method: 'POST',
-            body: JSON.stringify({
-              content_type: contentType,
-              review_ids: reviewIds,
-              date: dateStr,
-            }),
-          });
+      // O backend agora verifica automaticamente se já existe sessão
+      // e retorna a existente ou cria uma nova
+      const response = await fetchWithAuth('/api/review-sessions', {
+        method: 'POST',
+        body: JSON.stringify({
+          content_type: contentType,
+          review_ids: reviewIds,
+          date: dateStr,
+        }),
+      });
 
-          if (!response.ok) {
-            throw new Error('Erro ao criar sessão');
-          }
-
-          const result = await response.json();
-          sessionId = result.data.session.id;
-        }
-      } else {
-        throw new Error('Erro ao verificar sessões existentes');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Erro ao criar sessão');
       }
+
+      const result = await response.json();
+      const sessionId = result.data.session.id;
+      
+      console.log(`[ReviewProgressCard] Sessão obtida: ${sessionId}`);
       
       // Navegar para a página da sessão
       let url = '';
@@ -207,6 +198,15 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
                  cursor-pointer hover:scale-[1.02]"
       style={{ minHeight: '400px' }}
       onClick={handleStartReview}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleStartReview();
+        }
+      }}
+      aria-label={`Iniciar revisão de ${config[contentType].title} - ${remaining} pendentes`}
     >
       {/* Header */}
       <div className="bg-background-light dark:bg-background-dark px-6 py-4 border-b border-border-light dark:border-border-dark">
@@ -230,7 +230,7 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
       <div className="p-6 md:p-8" style={{ minHeight: '320px' }}>
 
         {/* Circular Chart Centralizado */}
-        <div className="flex justify-center mb-6" style={{ height: '192px', minHeight: '192px' }}>
+        <div className="flex justify-center mb-6" style={{ height: '192px', minHeight: '192px' }} aria-hidden="true">
           <div className="relative w-48 h-48" style={{ minWidth: '192px', minHeight: '192px' }}>
             {remaining === 0 && total > 0 && showCheckIcon ? (
               // Apenas ícone grande quando completado

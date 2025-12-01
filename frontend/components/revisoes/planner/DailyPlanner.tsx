@@ -80,7 +80,7 @@ function DraggableEvent({ event, style, onResize, onClick, isResizing, dragOffse
       style={dragStyle}
     >
       {/* Ícone em círculo */}
-      <div className="w-9 h-9 rounded-full bg-white/40 dark:bg-white/20 flex items-center justify-center flex-shrink-0">
+      <div className="w-9 h-9 rounded-full bg-white/40 dark:bg-white/20 flex items-center justify-center flex-shrink-0" aria-hidden="true">
         <span className="material-symbols-outlined !text-[20px]">{event.icon}</span>
       </div>
       
@@ -109,7 +109,7 @@ function DraggableEvent({ event, style, onResize, onClick, isResizing, dragOffse
       </div>
       
       {/* Badge */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0" aria-hidden="true">
         {getSourceBadge()}
       </div>
       
@@ -122,8 +122,10 @@ function DraggableEvent({ event, style, onResize, onClick, isResizing, dragOffse
             onResize(e, event.id);
           }}
           className="absolute bottom-0 left-0 right-0 h-3 cursor-ns-resize hover:bg-black/20 dark:hover:bg-white/20 rounded-b-xl flex items-center justify-center group"
+          tabIndex={-1}
+          aria-label="Redimensionar evento"
         >
-          <div className="w-10 h-1 bg-current opacity-30 group-hover:opacity-60 rounded-full transition-opacity"></div>
+          <div className="w-10 h-1 bg-current opacity-30 group-hover:opacity-60 rounded-full transition-opacity" aria-hidden="true"></div>
         </div>
       )}
     </div>
@@ -558,6 +560,7 @@ export function DailyPlanner({ currentDate }: DailyPlannerProps) {
                 <div 
                   className="absolute left-[4.5rem] right-0 h-px bg-red-500 flex items-center z-20 pointer-events-none"
                   style={{ top: `${topPosition}px` }}
+                  aria-hidden="true"
                 >
                   <div className="w-2 h-2 bg-red-500 rounded-full -ml-1"></div>
                   <span className="text-xs bg-red-500 text-white font-semibold px-2 py-0.5 rounded-md ml-2">
@@ -572,17 +575,79 @@ export function DailyPlanner({ currentDate }: DailyPlannerProps) {
       </div>
 
       {selectedEvent && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => setSelectedEvent(null)}>
+        <div 
+          className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" 
+          onClick={() => setSelectedEvent(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="event-modal-title"
+        >
           <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl p-6 w-96" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold">{selectedEvent.title}</h3>
-              <button onClick={() => setSelectedEvent(null)}>
+              <h3 id="event-modal-title" className="text-lg font-bold">{selectedEvent.title}</h3>
+              <button 
+                onClick={() => setSelectedEvent(null)}
+                aria-label="Fechar modal"
+                className="p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              >
                 <span className="material-symbols-outlined">close</span>
               </button>
             </div>
+            <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-4">
+              {selectedEvent.metadata?.count || 0} itens para revisar
+            </p>
             <button
-              onClick={() => setSelectedEvent(null)}
-              className="w-full bg-primary text-white py-2 px-4 rounded-lg"
+              onClick={async () => {
+                try {
+                  const { createClient } = await import('@/lib/supabase/client');
+                  const supabase = createClient();
+                  const { data: { session } } = await supabase.auth.getSession();
+                  
+                  if (!session) return;
+                  
+                  // Calcular a data do evento
+                  const eventDate = format(addDays(weekStart, selectedEvent.day_index), 'yyyy-MM-dd');
+                  
+                  // Usar endpoint que busca/cria sessão para data específica
+                  const response = await fetch('/api/review-sessions/for-date', {
+                    method: 'POST',
+                    headers: { 
+                      'Authorization': `Bearer ${session.access_token}`,
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                      content_type: selectedEvent.content_type,
+                      date: eventDate,
+                      review_ids: selectedEvent.metadata?.reviewIds || [],
+                    }),
+                  });
+                  
+                  const result = await response.json();
+                  
+                  if (result.success && result.data.session) {
+                    const sessionId = result.data.session.id;
+                    
+                    // Navegar para a página da sessão
+                    let url = '';
+                    if (selectedEvent.content_type === 'FLASHCARD') {
+                      url = `/revisoes/flashcards/sessao/${sessionId}`;
+                    } else if (selectedEvent.content_type === 'QUESTION') {
+                      url = `/revisoes/questoes/sessao/${sessionId}`;
+                    } else if (selectedEvent.content_type === 'ERROR_NOTEBOOK') {
+                      url = `/revisoes/caderno-erros/sessao/${sessionId}`;
+                    }
+                    
+                    if (url) {
+                      window.location.href = url;
+                    }
+                  }
+                } catch (error) {
+                  console.error('Erro ao iniciar revisão:', error);
+                  alert('Erro ao iniciar revisão. Tente novamente.');
+                }
+                setSelectedEvent(null);
+              }}
+              className="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors"
             >
               Iniciar Revisão
             </button>

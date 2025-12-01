@@ -152,96 +152,81 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
 
   /**
    * Sincroniza evento do planner quando um card FSRS é criado/atualizado
-   * Este é o método CENTRAL que garante que eventos existam para todas as revisões agendadas
+  /**
+   * Sincroniza evento do planner usando UPSERT para evitar duplicações
+   * Usa função do banco de dados para garantir atomicidade
    */
   private async syncPlannerEvent(userId: string, card: FSRSCard): Promise<void> {
     try {
-      // Extrair data do due (sem hora)
+      // Extrair data do due considerando timezone do usuário
+      const timezone = await this.timezoneService.getUserTimezone(userId);
       const dueDate = new Date(card.due);
-      const dateStr = dueDate.toISOString().split('T')[0];
+      
+      // Converter para data local do usuário
+      const { toZonedTime, format } = await import('date-fns-tz');
+      const zonedDate = toZonedTime(dueDate, timezone);
+      const dateStr = format(zonedDate, 'yyyy-MM-dd', { timeZone: timezone });
 
-      logger.info(`[syncPlannerEvent] Sincronizando evento para ${card.content_type} em ${dateStr}`);
+      logger.info(`[syncPlannerEvent] Sincronizando evento para ${card.content_type} em ${dateStr} (timezone: ${timezone})`);
 
-      // Buscar evento existente para aquela data e tipo
-      let plannerEvent = await this.plannerService.getEventByDateAndType(userId, dateStr, card.content_type);
+      // Buscar preferências do usuário para horários personalizados
+      const prefs = await this.preferencesService.getPreferences(userId);
 
-      // Se não existe evento, criar um novo
-      if (!plannerEvent || !plannerEvent.id) {
-        logger.info(`[syncPlannerEvent] Criando novo evento para ${card.content_type} em ${dateStr}`);
+      // Definir horários baseado nas preferências do usuário
+      const defaultHours: Record<string, { start: number; end: number }> = {
+        'FLASHCARD': {
+          start: prefs?.flashcard_start_hour || 10,
+          end: prefs?.flashcard_end_hour || 14
+        },
+        'QUESTION': {
+          start: prefs?.question_start_hour || 15,
+          end: prefs?.question_end_hour || 17
+        },
+        'ERROR_NOTEBOOK': {
+          start: prefs?.error_notebook_start_hour || 18,
+          end: prefs?.error_notebook_end_hour || 20
+        },
+      };
 
-        // Buscar preferências do usuário para horários personalizados
-        const prefs = await this.preferencesService.getPreferences(userId);
+      const hours = defaultHours[card.content_type] || { start: 8, end: 9 };
 
-        // Definir horários baseado nas preferências do usuário
-        const defaultHours: Record<string, { start: number; end: number }> = {
-          'FLASHCARD': {
-            start: prefs.flashcard_start_hour || 10,
-            end: prefs.flashcard_end_hour || 14
-          },
-          'QUESTION': {
-            start: prefs.question_start_hour || 15,
-            end: prefs.question_end_hour || 17
-          },
-          'ERROR_NOTEBOOK': {
-            start: prefs.error_notebook_start_hour || 18,
-            end: prefs.error_notebook_end_hour || 20
-          },
-        };
+      // Definir título, ícone e cor baseado no tipo
+      const titles: Record<string, string> = {
+        'FLASHCARD': 'Flashcards',
+        'QUESTION': 'Questões',
+        'ERROR_NOTEBOOK': 'Caderno de Erros',
+      };
 
-        const hours = defaultHours[card.content_type] || { start: 8, end: 9 };
+      const icons: Record<string, string> = {
+        'FLASHCARD': 'layers',
+        'QUESTION': 'list_alt',
+        'ERROR_NOTEBOOK': 'book',
+      };
 
-        // Definir título, ícone e cor baseado no tipo
-        const titles: Record<string, string> = {
-          'FLASHCARD': 'Flashcards',
-          'QUESTION': 'Questões',
-          'ERROR_NOTEBOOK': 'Caderno de Erros',
-        };
+      const colors: Record<string, string> = {
+        'FLASHCARD': 'purple',
+        'QUESTION': 'cyan',
+        'ERROR_NOTEBOOK': 'green',
+      };
 
-        const icons: Record<string, string> = {
-          'FLASHCARD': 'layers',
-          'QUESTION': 'list_alt',
-          'ERROR_NOTEBOOK': 'book',
-        };
+      // Usar função do banco para UPSERT atômico (evita race conditions)
+      const { data, error } = await this.supabase.rpc('upsert_planner_event', {
+        p_user_id: userId,
+        p_date: dateStr,
+        p_content_type: card.content_type,
+        p_title: titles[card.content_type] || 'Revisão',
+        p_start_hour: hours.start,
+        p_end_hour: hours.end,
+        p_color: colors[card.content_type] || 'gray',
+        p_icon: icons[card.content_type] || 'event',
+      });
 
-        const colors: Record<string, string> = {
-          'FLASHCARD': 'purple',
-          'QUESTION': 'cyan',
-          'ERROR_NOTEBOOK': 'green',
-        };
-
-        // Criar o evento
-        plannerEvent = await this.plannerService.createEvent(userId, {
-          event_type: 'system_review',
-          content_type: card.content_type,
-          title: titles[card.content_type] || 'Revisão',
-          date: dateStr,
-          start_hour: hours.start,
-          start_minute: 0,
-          end_hour: hours.end,
-          end_minute: 0,
-          color: colors[card.content_type] || 'gray',
-          icon: icons[card.content_type] || 'event',
-          status: 'pending',
-          completed_count: 0,
-          total_count: 0,
-        });
-
-        logger.info(`[syncPlannerEvent] ✅ Evento criado: id=${plannerEvent.id}`);
-
-        // Atualizar total_count apenas para eventos NOVOS
-        if (plannerEvent.id) {
-          await this.updateEventTotalCount(userId, dateStr, card.content_type, plannerEvent.id);
-        }
-      } else {
-        // Evento já existe - apenas incrementar o total_count em +1
-        logger.info(`[syncPlannerEvent] Evento já existe para ${card.content_type} em ${dateStr}, incrementando total_count`);
-        const newTotalCount = (plannerEvent.total_count || 0) + 1;
-        if (plannerEvent.id) {
-          await this.plannerService.updateEvent(userId, plannerEvent.id, {
-            total_count: newTotalCount,
-          });
-        }
+      if (error) {
+        logger.error('[syncPlannerEvent] ❌ Erro no upsert:', error);
+        return;
       }
+
+      logger.info(`[syncPlannerEvent] ✅ Evento sincronizado: ${data}`);
 
     } catch (error) {
       logger.error('[syncPlannerEvent] ❌ Erro ao sincronizar evento do planner:', error);
@@ -251,44 +236,23 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
 
   /**
    * Atualiza o total_count de um evento baseado nos cards FSRS
+   * Usa função do banco para garantir consistência
    */
-  private async updateEventTotalCount(userId: string, dateStr: string, contentType: UnifiedContentType, eventId: string): Promise<void> {
+  private async updateEventTotalCount(userId: string, dateStr: string, contentType: UnifiedContentType, eventId?: string): Promise<void> {
     try {
-      // Buscar timezone do usuário
-      const timezone = await this.timezoneService.getUserTimezone(userId);
-      const startOfDay = this.timezoneService.getStartOfDayInTimezone(new Date(dateStr), timezone);
-      const endOfDay = this.timezoneService.getEndOfDayInTimezone(new Date(dateStr), timezone);
+      // Usar função do banco que já considera timezone
+      const { error } = await this.supabase.rpc('recalculate_event_total_count', {
+        p_user_id: userId,
+        p_date: dateStr,
+        p_content_type: contentType,
+      });
 
-      // Contar quantos cards têm due para aquela data (pendentes)
-      const { data: pendingCards, error: pendingError } = await this.supabase
-        .from('fsrs_cards')
-        .select('id', { count: 'exact', head: false })
-        .eq('user_id', userId)
-        .eq('content_type', contentType.toLowerCase())
-        .gte('due', startOfDay.toISOString())
-        .lte('due', endOfDay.toISOString())
-        .neq('state', 'NEW');
-
-      if (pendingError) {
-        logger.error('[updateEventTotalCount] Erro ao buscar cards pendentes:', pendingError);
+      if (error) {
+        logger.error('[updateEventTotalCount] Erro ao recalcular:', error);
         return;
       }
 
-      const pendingCount = pendingCards?.length || 0;
-
-      // Buscar evento atual para pegar completed_count
-      const currentEvent = await this.plannerService.getEventByDateAndType(userId, dateStr, contentType);
-      const completedCount = currentEvent?.completed_count || 0;
-
-      // Total = pendentes + completados
-      const totalCount = pendingCount + completedCount;
-
-      logger.info(`[updateEventTotalCount] Atualizando evento ${eventId}: pending=${pendingCount}, completed=${completedCount}, total=${totalCount}`);
-
-      // Atualizar apenas o total_count (não mexer no completed_count)
-      await this.plannerService.updateEvent(userId, eventId, {
-        total_count: totalCount,
-      });
+      logger.info(`[updateEventTotalCount] ✅ Recalculado total_count para ${contentType} em ${dateStr}`);
 
     } catch (error) {
       logger.error('[updateEventTotalCount] ❌ Erro ao atualizar total_count:', error);
@@ -1127,10 +1091,14 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         return [];
       }
 
-      const dueOnly = true;
-      const now = new Date().toISOString();
+      // CORREÇÃO: Usar timezone do usuário para calcular fim do dia de HOJE
+      const timezone = await this.timezoneService.getUserTimezone(userId);
+      const endOfToday = this.timezoneService.getEndOfDayInTimezone(new Date(), timezone);
+      const endOfTodayISO = endOfToday.toISOString();
+      
+      logger.info(`[getDueReviews] Buscando cards com due <= ${endOfTodayISO} (timezone: ${timezone})`);
 
-      // Buscar cards FSRS
+      // Buscar cards FSRS com due até o fim do dia de hoje no timezone do usuário
       let query = this.supabase
         .from('fsrs_cards')
         .select('*')
@@ -1138,11 +1106,8 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         .in('content_type', enabledTypes)
         .order('due', { ascending: true });
 
-      // Aplicar filtro de data apenas se dueOnly for true
-      // Cards NEW (state = 0) sempre devem aparecer, independente da data due
-      if (dueOnly) {
-        query = query.or(`due.lte.${now},state.eq.0`);
-      }
+      // Cards com due até fim de hoje OU cards NEW (state = 0)
+      query = query.or(`due.lte.${endOfTodayISO},state.eq.NEW`);
 
       const { data: allDueCards, error: cardsError } = await query;
 
@@ -1154,6 +1119,8 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       if (!allDueCards || allDueCards.length === 0) {
         return [];
       }
+
+      logger.info(`[getDueReviews] Encontrados ${allDueCards.length} cards devidos`);
 
       // Aplicar limite baseado no modo
       let filteredCards = allDueCards;

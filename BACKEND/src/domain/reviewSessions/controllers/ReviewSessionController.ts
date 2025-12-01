@@ -67,6 +67,40 @@ export class ReviewSessionController {
     }
   };
 
+  /**
+   * Busca ou cria sessão para uma data específica
+   * Usado pelo planner para retomar sessões antigas
+   */
+  getOrCreateSessionForDate = async (req: Request, res: Response) => {
+    try {
+      const userId = req.user?.id;
+      if (!userId) {
+        return res.status(401).json({ success: false, message: 'Não autenticado' });
+      }
+
+      const { content_type, date, review_ids } = req.body;
+
+      if (!content_type || !date) {
+        return res.status(400).json({ 
+          success: false, 
+          message: 'content_type e date são obrigatórios' 
+        });
+      }
+
+      const session = await this.reviewSessionService.getOrCreateSessionForDate(
+        userId, 
+        content_type, 
+        date, 
+        review_ids || []
+      );
+
+      return res.json({ success: true, data: { session } });
+    } catch (error: any) {
+      console.error('Erro ao buscar/criar sessão por data:', error);
+      return res.status(500).json({ success: false, message: error.message });
+    }
+  };
+
   markItemCompleted = async (req: Request, res: Response) => {
     try {
       const userId = req.user?.id;
