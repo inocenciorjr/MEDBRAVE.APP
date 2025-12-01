@@ -3,7 +3,7 @@
  * Handles all user plan management operations for administrators
  */
 
-import { get, post, put, buildQueryString } from './baseService';
+import { get, post, put, patch, buildQueryString } from './baseService';
 import type {
   UserPlan,
   CreateUserPlanPayload,
@@ -179,7 +179,7 @@ export async function updateUserPlanDates(
   startDate: Date,
   endDate: Date
 ): Promise<UserPlan> {
-  const response = await put<{ success: boolean; data: UserPlan }>(
+  const response = await patch<{ success: boolean; data: UserPlan }>(
     `/user-plans/${id}/dates`,
     { startDate: startDate.toISOString(), endDate: endDate.toISOString() }
   );

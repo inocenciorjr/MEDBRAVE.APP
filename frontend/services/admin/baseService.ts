@@ -71,13 +71,12 @@ async function request<T>(
       error = { message: errorText || 'Request failed' };
     }
     
-    console.error('❌ [BaseService] Request failed:', {
-      url,
-      status: response.status,
-      statusText: response.statusText,
-      error,
-      errorText
-    });
+    console.error('❌ [BaseService] Request failed:');
+    console.error('URL:', url);
+    console.error('Status:', response.status);
+    console.error('Status Text:', response.statusText);
+    console.error('Error:', error);
+    console.error('Error Text:', errorText);
     throw new Error(error.message || error.error || `HTTP ${response.status}: ${response.statusText}`);
   }
 
