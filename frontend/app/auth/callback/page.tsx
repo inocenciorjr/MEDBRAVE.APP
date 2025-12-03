@@ -109,12 +109,19 @@ function AuthCallbackContent() {
             // Edge Mobile: usar API route server-side para evitar problemas do SDK
             addDebug('Edge: usando API...');
             
-            // Buscar code_verifier do cookie
+            // Buscar code_verifier do cookie - cuidado com base64 que pode ter '='
             const cookies = document.cookie.split(';');
-            const verifierCookie = cookies.find(c => c.includes('code-verifier'));
-            const codeVerifier = verifierCookie?.split('=')[1]?.trim();
+            const verifierCookie = cookies.find(c => c.trim().startsWith('sb-') && c.includes('code-verifier'));
+            let codeVerifier = '';
+            if (verifierCookie) {
+              // Pegar tudo após o primeiro '=' para não cortar base64
+              const eqIndex = verifierCookie.indexOf('=');
+              if (eqIndex !== -1) {
+                codeVerifier = verifierCookie.substring(eqIndex + 1).trim();
+              }
+            }
             
-            addDebug(`Verifier: ${codeVerifier ? 'SIM' : 'NAO'}`);
+            addDebug(`Verifier: ${codeVerifier ? codeVerifier.substring(0, 20) + '...' : 'NAO'}`);
             
             if (!codeVerifier) {
               setError('Code verifier não encontrado. Tente novamente.');
@@ -122,10 +129,20 @@ function AuthCallbackContent() {
             }
             
             try {
+              // Tentar decodificar se estiver URL-encoded
+              let decodedVerifier = codeVerifier;
+              try {
+                decodedVerifier = decodeURIComponent(codeVerifier);
+              } catch {
+                // Já está decodificado
+              }
+              
+              addDebug(`Decoded: ${decodedVerifier.substring(0, 20)}...`);
+              
               const res = await fetch('/api/auth/exchange-code', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ code, codeVerifier: decodeURIComponent(codeVerifier) }),
+                body: JSON.stringify({ code, codeVerifier: decodedVerifier }),
               });
               
               const data = await res.json();
