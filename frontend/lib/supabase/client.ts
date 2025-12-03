@@ -2,13 +2,13 @@ import { createBrowserClient } from '@supabase/ssr';
 import type { CookieOptions } from '@supabase/ssr';
 
 /**
- * Storage adapter híbrido que tenta múltiplas estratégias
- * Funciona em modo anônimo/privado onde localStorage pode falhar
+ * Storage adapter que PRIORIZA COOKIES para PKCE
  * 
- * Ordem de prioridade:
- * 1. sessionStorage (funciona em modo anônimo)
- * 2. localStorage (fallback)
- * 3. cookies (último recurso)
+ * PROBLEMA: Edge Mobile perde sessionStorage/localStorage entre redirects OAuth
+ * SOLUÇÃO: Cookies persistem entre redirects em TODOS os navegadores
+ * 
+ * Para chaves PKCE (code_verifier): Cookie PRIMEIRO
+ * Para outras chaves: sessionStorage/localStorage primeiro
  */
 class HybridStorageAdapter {
   private storageAvailable(type: 'localStorage' | 'sessionStorage'): boolean {
@@ -23,10 +23,42 @@ class HybridStorageAdapter {
     }
   }
 
+  private isPkceKey(key: string): boolean {
+    // Chaves PKCE do Supabase contêm "code-verifier" ou "code_verifier"
+    return key.includes('code-verifier') || key.includes('code_verifier');
+  }
+
+  private getCookie(key: string): string | null {
+    if (typeof document === 'undefined') return null;
+    const match = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${key}=`));
+    if (!match) return null;
+    const value = match.split('=')[1];
+    return value ? decodeURIComponent(value) : null;
+  }
+
+  private setCookie(key: string, value: string): void {
+    if (typeof document === 'undefined') return;
+    // SameSite=Lax permite cookies em redirects OAuth
+    document.cookie = `${key}=${encodeURIComponent(value)}; max-age=3600; path=/; samesite=lax`;
+  }
+
+  private removeCookie(key: string): void {
+    if (typeof document === 'undefined') return;
+    document.cookie = `${key}=; max-age=0; path=/`;
+  }
+
   getItem(key: string): string | null {
     if (typeof window === 'undefined') return null;
     
-    // Tentar sessionStorage primeiro (funciona em modo anônimo)
+    // Para PKCE: verificar cookie PRIMEIRO (mais confiável entre redirects)
+    if (this.isPkceKey(key)) {
+      const cookieValue = this.getCookie(key);
+      if (cookieValue) return cookieValue;
+    }
+    
+    // Tentar sessionStorage
     if (this.storageAvailable('sessionStorage')) {
       const value = sessionStorage.getItem(key);
       if (value) return value;
@@ -38,19 +70,23 @@ class HybridStorageAdapter {
       if (value) return value;
     }
     
-    // Tentar cookies como último recurso
-    const value = document.cookie
-      .split('; ')
-      .find(row => row.startsWith(`${key}=`))
-      ?.split('=')[1];
+    // Fallback para cookie (para chaves não-PKCE)
+    if (!this.isPkceKey(key)) {
+      return this.getCookie(key);
+    }
     
-    return value ? decodeURIComponent(value) : null;
+    return null;
   }
 
   setItem(key: string, value: string): void {
     if (typeof window === 'undefined') return;
     
-    // Salvar em sessionStorage (prioridade - funciona em modo anônimo)
+    // Para PKCE: SEMPRE salvar em cookie (mais confiável entre redirects)
+    if (this.isPkceKey(key)) {
+      this.setCookie(key, value);
+    }
+    
+    // Salvar em sessionStorage
     if (this.storageAvailable('sessionStorage')) {
       try {
         sessionStorage.setItem(key, value);
@@ -59,7 +95,7 @@ class HybridStorageAdapter {
       }
     }
     
-    // Salvar em localStorage também (fallback)
+    // Salvar em localStorage
     if (this.storageAvailable('localStorage')) {
       try {
         localStorage.setItem(key, value);
@@ -68,30 +104,29 @@ class HybridStorageAdapter {
       }
     }
     
-    // Salvar em cookies também (último recurso)
-    try {
-      const maxAge = 3600; // 1 hora
-      document.cookie = `${key}=${encodeURIComponent(value)}; max-age=${maxAge}; path=/; samesite=lax`;
-    } catch (e) {
-      // Silencioso
+    // Para não-PKCE: também salvar em cookie como backup
+    if (!this.isPkceKey(key)) {
+      try {
+        this.setCookie(key, value);
+      } catch (e) {
+        // Silencioso
+      }
     }
   }
 
   removeItem(key: string): void {
     if (typeof window === 'undefined') return;
     
-    // Remover de sessionStorage
+    // Remover de todos os storages
     if (this.storageAvailable('sessionStorage')) {
       sessionStorage.removeItem(key);
     }
     
-    // Remover de localStorage
     if (this.storageAvailable('localStorage')) {
       localStorage.removeItem(key);
     }
     
-    // Remover de cookies
-    document.cookie = `${key}=; max-age=0; path=/`;
+    this.removeCookie(key);
   }
 }
 
