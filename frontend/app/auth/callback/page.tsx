@@ -104,16 +104,57 @@ function AuthCallbackContent() {
 
         if (!session) {
           setLoadingMessage('Autenticando...');
-          addDebug('exchange...');
-
-          // Para Edge Mobile: tentar com timeout
-          const exchangePromise = supabase.auth.exchangeCodeForSession(code);
-          const timeoutPromise = new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Exchange timeout 10s')), 10000)
-          );
-
-          try {
-            const result = await Promise.race([exchangePromise, timeoutPromise]) as any;
+          
+          if (isEdgeMobile) {
+            // Edge Mobile: usar API route server-side para evitar problemas do SDK
+            addDebug('Edge: usando API...');
+            
+            // Buscar code_verifier do cookie
+            const cookies = document.cookie.split(';');
+            const verifierCookie = cookies.find(c => c.includes('code-verifier'));
+            const codeVerifier = verifierCookie?.split('=')[1]?.trim();
+            
+            addDebug(`Verifier: ${codeVerifier ? 'SIM' : 'NAO'}`);
+            
+            if (!codeVerifier) {
+              setError('Code verifier não encontrado. Tente novamente.');
+              return;
+            }
+            
+            try {
+              const res = await fetch('/api/auth/exchange-code', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code, codeVerifier: decodeURIComponent(codeVerifier) }),
+              });
+              
+              const data = await res.json();
+              addDebug(`API: ${res.status}`);
+              
+              if (!res.ok) {
+                addDebug(`API ERR: ${data.error}`);
+                setError(data.error || 'Erro na autenticação');
+                return;
+              }
+              
+              // Criar objeto session manualmente
+              session = {
+                access_token: data.access_token,
+                refresh_token: data.refresh_token,
+                user: data.user,
+                expires_in: data.expires_in,
+              } as any;
+              
+              addDebug('API OK!');
+            } catch (apiErr: any) {
+              addDebug(`API CATCH: ${apiErr.message}`);
+              setError(apiErr.message);
+              return;
+            }
+          } else {
+            // Outros navegadores: usar SDK normalmente
+            addDebug('SDK exchange...');
+            const result = await supabase.auth.exchangeCodeForSession(code);
             
             if (result.error) {
               addDebug(`ERR: ${result.error.message}`);
@@ -123,19 +164,6 @@ function AuthCallbackContent() {
             
             session = result.data.session;
             addDebug('OK!');
-          } catch (timeoutErr: any) {
-            addDebug(`Timeout: ${timeoutErr.message}`);
-            
-            // Fallback: tentar getSession após timeout
-            addDebug('Tentando getSession...');
-            const { data } = await supabase.auth.getSession();
-            if (data.session) {
-              session = data.session;
-              addDebug('getSession OK!');
-            } else {
-              setError('Timeout na autenticação. Tente novamente.');
-              return;
-            }
           }
         }
 
