@@ -109,19 +109,39 @@ function AuthCallbackContent() {
             // Edge Mobile: usar API route server-side para evitar problemas do SDK
             addDebug('Edge: usando API...');
             
-            // Buscar code_verifier do cookie - cuidado com base64 que pode ter '='
+            // Buscar code_verifier - o SDK salva como JSON stringified
             const cookies = document.cookie.split(';');
             const verifierCookie = cookies.find(c => c.trim().startsWith('sb-') && c.includes('code-verifier'));
             let codeVerifier = '';
             if (verifierCookie) {
-              // Pegar tudo após o primeiro '=' para não cortar base64
               const eqIndex = verifierCookie.indexOf('=');
               if (eqIndex !== -1) {
-                codeVerifier = verifierCookie.substring(eqIndex + 1).trim();
+                let rawValue = verifierCookie.substring(eqIndex + 1).trim();
+                // Decodificar URL encoding
+                try { rawValue = decodeURIComponent(rawValue); } catch {}
+                
+                addDebug(`Raw: ${rawValue.substring(0, 30)}...`);
+                
+                // O SDK salva como "base64-<json>" onde json é o verifier stringified
+                // Precisamos extrair o valor real
+                if (rawValue.startsWith('base64-')) {
+                  const base64Part = rawValue.substring(7); // Remove "base64-"
+                  try {
+                    const decoded = atob(base64Part);
+                    // O decoded é um JSON string, ex: "\"abc123...\""
+                    codeVerifier = JSON.parse(decoded);
+                    addDebug(`Parsed: ${codeVerifier.substring(0, 20)}...`);
+                  } catch (e: any) {
+                    addDebug(`Parse err: ${e.message}`);
+                    codeVerifier = rawValue; // Fallback
+                  }
+                } else {
+                  codeVerifier = rawValue;
+                }
               }
             }
             
-            addDebug(`Verifier: ${codeVerifier ? codeVerifier.substring(0, 20) + '...' : 'NAO'}`);
+            addDebug(`Final: ${codeVerifier ? codeVerifier.substring(0, 20) + '...' : 'NAO'}`);
             
             if (!codeVerifier) {
               setError('Code verifier não encontrado. Tente novamente.');
@@ -129,20 +149,10 @@ function AuthCallbackContent() {
             }
             
             try {
-              // Tentar decodificar se estiver URL-encoded
-              let decodedVerifier = codeVerifier;
-              try {
-                decodedVerifier = decodeURIComponent(codeVerifier);
-              } catch {
-                // Já está decodificado
-              }
-              
-              addDebug(`Decoded: ${decodedVerifier.substring(0, 20)}...`);
-              
               const res = await fetch('/api/auth/exchange-code', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ code, codeVerifier: decodedVerifier }),
+                body: JSON.stringify({ code, codeVerifier }),
               });
               
               const data = await res.json();
