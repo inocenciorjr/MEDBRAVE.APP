@@ -167,15 +167,26 @@ function AuthCallbackContent() {
                 return;
               }
               
-              // Criar objeto session manualmente
-              session = {
+              // Configurar sessão no Supabase SDK
+              addDebug('API OK! Setando sessão...');
+              
+              const { data: sessionData, error: setSessionError } = await supabase.auth.setSession({
+                access_token: data.access_token,
+                refresh_token: data.refresh_token,
+              });
+              
+              if (setSessionError) {
+                addDebug(`setSession ERR: ${setSessionError.message}`);
+              }
+              
+              session = sessionData?.session || {
                 access_token: data.access_token,
                 refresh_token: data.refresh_token,
                 user: data.user,
                 expires_in: data.expires_in,
               } as any;
               
-              addDebug('API OK!');
+              addDebug('Sessão configurada!');
             } catch (apiErr: any) {
               addDebug(`API CATCH: ${apiErr.message}`);
               setError(apiErr.message);
