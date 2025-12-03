@@ -1,15 +1,10 @@
-import { createClient } from '@supabase/supabase-js';
 import { NextRequest, NextResponse } from 'next/server';
-
-// Cliente Supabase server-side (sem storage customizado)
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 export async function POST(request: NextRequest) {
   try {
     const { code, codeVerifier } = await request.json();
+
+    console.log('[exchange-code] Recebido:', { code: code?.substring(0, 10) + '...', codeVerifier: codeVerifier?.substring(0, 10) + '...' });
 
     if (!code || !codeVerifier) {
       return NextResponse.json(
@@ -18,7 +13,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Fazer a troca do código por sessão diretamente via API do Supabase
+    // Formato correto para PKCE exchange no Supabase
+    // Ref: https://supabase.com/docs/guides/auth/sessions/pkce-flow
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/token?grant_type=pkce`,
       {
@@ -26,6 +22,7 @@ export async function POST(request: NextRequest) {
         headers: {
           'Content-Type': 'application/json',
           'apikey': process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!}`,
         },
         body: JSON.stringify({
           auth_code: code,
@@ -35,10 +32,13 @@ export async function POST(request: NextRequest) {
     );
 
     const data = await response.json();
+    console.log('[exchange-code] Supabase response:', response.status, JSON.stringify(data).substring(0, 200));
 
     if (!response.ok) {
+      const errorMsg = data.error_description || data.msg || data.error || 'Erro na autenticação';
+      console.error('[exchange-code] Erro Supabase:', errorMsg);
       return NextResponse.json(
-        { error: data.error_description || data.error || 'Erro na autenticação' },
+        { error: errorMsg, details: data },
         { status: response.status }
       );
     }

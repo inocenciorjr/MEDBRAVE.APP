@@ -133,6 +133,9 @@ function AuthCallbackContent() {
               
               if (!res.ok) {
                 addDebug(`API ERR: ${data.error}`);
+                if (data.details) {
+                  addDebug(`Details: ${JSON.stringify(data.details).substring(0, 100)}`);
+                }
                 setError(data.error || 'Erro na autenticação');
                 return;
               }
