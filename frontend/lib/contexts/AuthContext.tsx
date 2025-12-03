@@ -133,6 +133,45 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
     
     // Verificar sessão atual imediatamente
+    // Edge Mobile fix: verificar localStorage primeiro pois o SDK pode travar
+    const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+    
+    if (isEdgeMobile) {
+      // Edge Mobile: verificar localStorage diretamente (SDK pode travar)
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+      const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
+      const storageKey = `sb-${projectRef}-auth-token`;
+      
+      const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+      if (storedSession) {
+        try {
+          const sessionData = JSON.parse(storedSession);
+          if (sessionData.access_token && sessionData.user) {
+            console.log('[Auth] Edge Mobile: sessão encontrada no storage');
+            const basicUser = supabaseAuthService.mapSupabaseUser(sessionData.user);
+            setUser(basicUser);
+            setLoading(false);
+            clearTimeout(safetyTimeout);
+            
+            localStorage.setItem('user', JSON.stringify(basicUser));
+            localStorage.setItem('user_id', basicUser.uid);
+            localStorage.setItem('authToken', sessionData.access_token);
+            
+            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+              detail: { token: sessionData.access_token } 
+            }));
+            return; // Não chamar SDK no Edge Mobile
+          }
+        } catch (e) {
+          console.error('[Auth] Edge Mobile: erro ao parsear sessão:', e);
+        }
+      }
+      setLoading(false);
+      clearTimeout(safetyTimeout);
+      return; // Não chamar SDK no Edge Mobile
+    }
+    
+    // Outros navegadores: usar SDK normalmente
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user && !user) {
         const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
@@ -156,6 +195,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
     });
     
     // Listener de mudanças de estado de autenticação
+    // Edge Mobile: não usar listener pois pode travar
+    if (isEdgeMobile) {
+      return () => {}; // Cleanup vazio
+    }
+    
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
       // ✅ Para TOKEN_REFRESHED, apenas atualizar o token no localStorage (não reprocessar usuário)
       if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
