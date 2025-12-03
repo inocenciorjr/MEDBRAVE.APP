@@ -138,18 +138,29 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     if (isEdgeMobile) {
       // Edge Mobile: verificar localStorage diretamente (SDK pode travar)
-      console.log('[Auth] Edge Mobile detectado, verificando storage...');
-      
       const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
       const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
       const storageKey = `sb-${projectRef}-auth-token`;
       
-      console.log('[Auth] Storage key:', storageKey);
-      console.log('[Auth] localStorage keys:', Object.keys(localStorage));
-      
+      const localKeys = Object.keys(localStorage);
+      const sessionKeys = Object.keys(sessionStorage);
       const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
-      console.log('[Auth] Stored session found:', !!storedSession);
       
+      // Enviar log para API (aparece no Vercel)
+      fetch('/api/debug-log', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          event: 'AuthContext-EdgeMobile',
+          storageKey,
+          localKeys,
+          sessionKeys,
+          hasSession: !!storedSession,
+          storedUser: !!localStorage.getItem('user'),
+          storedToken: !!localStorage.getItem('authToken'),
+        })
+      }).catch(() => {});
+
       if (storedSession) {
         try {
           const sessionData = JSON.parse(storedSession);
