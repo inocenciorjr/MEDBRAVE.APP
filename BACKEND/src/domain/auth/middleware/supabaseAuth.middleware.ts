@@ -54,11 +54,14 @@ async function getUserFromCacheOrRepository(userId: string): Promise<User | null
 
 /**
  * Verifica token com cache para evitar chamadas repetidas ao Supabase Auth
+ * 
+ * IMPORTANTE: O cache é por token específico, então tokens renovados
+ * serão verificados novamente (não usam cache do token antigo)
  */
 async function verifyTokenWithCache(token: string): Promise<{ userId: string; email: string; emailVerified: boolean; metadata: any } | null> {
   const now = Date.now();
   
-  // Verificar cache primeiro
+  // Verificar cache primeiro (cache é por token específico)
   const cached = tokenCache.get(token);
   if (cached && cached.expiresAt > now) {
     return cached;
@@ -68,6 +71,10 @@ async function verifyTokenWithCache(token: string): Promise<{ userId: string; em
   const { data: authData, error: authError } = await supabase.auth.getUser(token);
 
   if (authError || !authData.user) {
+    // Se o token estava em cache mas agora é inválido, remover do cache
+    if (cached) {
+      tokenCache.delete(token);
+    }
     return null;
   }
 
@@ -80,6 +87,18 @@ async function verifyTokenWithCache(token: string): Promise<{ userId: string; em
   };
 
   tokenCache.set(token, result);
+  
+  // Limpar cache de tokens antigos periodicamente (evita memory leak)
+  if (tokenCache.size > 1000) {
+    const keysToDelete: string[] = [];
+    tokenCache.forEach((value, key) => {
+      if (value.expiresAt < now) {
+        keysToDelete.push(key);
+      }
+    });
+    keysToDelete.forEach(key => tokenCache.delete(key));
+  }
+  
   return result;
 }
 
