@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import ThemeToggle from '../ui/ThemeToggle';
+import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 
 interface HeaderProps {
   userName?: string;
@@ -40,39 +41,58 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
     const randomQuote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     setQuote(randomQuote);
 
-    // Busca dados do usuário se não foram fornecidos via props
-    if (!propUserName || !propUserAvatar) {
-      loadUserData();
-    } else {
+    // Se props foram fornecidas, não precisa buscar
+    if (propUserName && propUserAvatar) {
       setLoading(false);
+      return;
     }
-  }, [propUserName, propUserAvatar]);
 
-  const loadUserData = async () => {
-    try {
-      const supabase = createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      
-      if (user) {
-        // Busca perfil do usuário
-        const { data: profile } = await supabase
-          .from('users')
-          .select('display_name, photo_url')
-          .eq('id', user.id)
-          .single();
+    const supabase = createClient();
 
-        const name = profile?.display_name || user.user_metadata?.full_name || user.email?.split('@')[0] || 'Usuário';
-        const avatar = profile?.photo_url || user.user_metadata?.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
-
-        setUserName(name);
-        setUserAvatar(avatar);
+    // Função para buscar dados do perfil via backend (evita problemas de RLS)
+    const fetchProfile = async () => {
+      console.log('[Header] Iniciando fetchProfile...');
+      try {
+        const response = await fetchWithAuth('/user/me');
+        console.log('[Header] Response status:', response.status);
+        
+        if (response.ok) {
+          const data = await response.json();
+          console.log('[Header] Dados recebidos:', { displayName: data.displayName, hasPhoto: !!data.photoURL });
+          const name = data.displayName || 'Usuário';
+          const avatar = data.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
+          setUserName(name);
+          setUserAvatar(avatar);
+        } else {
+          const errorText = await response.text();
+          console.error('[Header] Erro na resposta:', response.status, errorText);
+        }
+      } catch (error) {
+        console.error('[Header] Erro ao carregar perfil:', error);
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      console.error('Erro ao carregar dados do usuário:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+    };
+
+    // Carregar perfil imediatamente
+    fetchProfile();
+
+    // Listener para mudanças de autenticação
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event: string) => {
+      if (event === 'SIGNED_OUT') {
+        setUserName('Usuário');
+        setUserAvatar('');
+        setLoading(false);
+      } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+        // Recarregar perfil quando fizer login ou renovar token
+        fetchProfile();
+      }
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [propUserName, propUserAvatar]);
 
   return (
     <header className="mb-4 md:mb-8">
@@ -101,7 +121,7 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
             </h1>
           )}
         </div>
-        
+
         {/* Right: Icons */}
         <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
           {/* Theme Toggle Button */}

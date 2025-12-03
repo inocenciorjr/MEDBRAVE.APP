@@ -50,25 +50,35 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
     if (typeof window === 'undefined') return;
 
     // Função para verificar e atualizar token (com fallback para sessionStorage - Edge Mobile fix)
-    const checkToken = () => {
+    const checkToken = async () => {
       // ✅ EDGE MOBILE FIX: Verificar localStorage e sessionStorage
       let storedToken = localStorage.getItem('authToken');
       if (!storedToken) {
         storedToken = sessionStorage.getItem('authToken');
-        if (storedToken) {
-          console.log('[PlanContext] Token encontrado no sessionStorage (Edge Mobile fallback)');
-        }
       }
 
       // Só atualiza se o token mudou
       if (storedToken !== lastTokenRef.current) {
-        console.log('[PlanContext] Token mudou:', storedToken ? 'presente' : 'ausente');
+        const hadToken = lastTokenRef.current;
         lastTokenRef.current = storedToken;
         setToken(storedToken);
 
-        // Se o token apareceu, limpar cache e forçar reload
-        if (storedToken && !lastTokenRef.current) {
+        // Se o token apareceu, carregar plano diretamente
+        if (storedToken && !hadToken) {
           planService.clearCache();
+          setLoading(true);
+          try {
+            const plan = await planService.getUserPlan(storedToken);
+            setUserPlan(plan);
+          } catch (err: any) {
+            console.error('[PlanContext] Erro ao carregar plano:', err);
+            setUserPlan(null);
+          } finally {
+            setLoading(false);
+          }
+        } else if (!storedToken) {
+          setUserPlan(null);
+          setLoading(false);
         }
       }
     };
@@ -82,30 +92,40 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
     // Também escutar evento de storage (funciona entre abas)
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === 'authToken') {
-        console.log('[PlanContext] Storage event - token mudou');
         checkToken();
       }
     };
     window.addEventListener('storage', handleStorageChange);
 
     // Escutar evento customizado de atualização de token (disparado pelo callback de auth)
-    const handleAuthTokenUpdated = (e: CustomEvent) => {
-      console.log('[PlanContext] Auth token updated event recebido');
+    const handleAuthTokenUpdated = async (e: CustomEvent) => {
       const newToken = e.detail?.token || localStorage.getItem('authToken');
       if (newToken && newToken !== lastTokenRef.current) {
         lastTokenRef.current = newToken;
         setToken(newToken);
         planService.clearCache();
+
+        // Carregar plano diretamente com o novo token
+        setLoading(true);
+        try {
+          const plan = await planService.getUserPlan(newToken);
+          setUserPlan(plan);
+        } catch (err: any) {
+          console.error('[PlanContext] Erro ao carregar plano:', err);
+          setUserPlan(null);
+        } finally {
+          setLoading(false);
+        }
       }
     };
-    window.addEventListener('auth-token-updated', handleAuthTokenUpdated as EventListener);
+    window.addEventListener('auth-token-updated', handleAuthTokenUpdated as unknown as EventListener);
 
     return () => {
       if (tokenCheckIntervalRef.current) {
         clearInterval(tokenCheckIntervalRef.current);
       }
       window.removeEventListener('storage', handleStorageChange);
-      window.removeEventListener('auth-token-updated', handleAuthTokenUpdated as EventListener);
+      window.removeEventListener('auth-token-updated', handleAuthTokenUpdated as unknown as EventListener);
     };
   }, [tokenProp]);
 
@@ -251,10 +271,15 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
     return planService.isExpired(userPlan);
   }, [userPlan]);
 
-  // Carrega plano ao montar ou quando token mudar
+  // Carrega plano quando token muda (apenas se já tiver token no state)
+  // O carregamento inicial é feito pelo checkToken() ou handleAuthTokenUpdated()
   useEffect(() => {
-    loadUserPlan();
-  }, [loadUserPlan]);
+    // Se já tem token no state e corresponde ao ref, carrega
+    // Isso cobre o caso de refresh da página com token já existente
+    if (token && token === lastTokenRef.current && !userPlan && !loading) {
+      loadUserPlan();
+    }
+  }, [token, loadUserPlan, userPlan, loading]);
 
   // Polling desabilitado - plano só é carregado ao montar ou quando refreshPlan() é chamado
   // Se precisar de polling, descomente o código abaixo:

@@ -9,7 +9,7 @@ import TasksChart from '@/components/dashboard/TasksChart';
 import NextDelivery from '@/components/dashboard/NextDelivery';
 import RightSidebar from '@/components/dashboard/RightSidebar';
 import { DashboardSkeleton } from '@/components/skeletons';
-import { Simulado, ActivityData, TaskCategory, Task, Delivery } from '@/types';
+import { Simulado, ActivityData, TaskCategory, Delivery } from '@/types';
 
 export default function Home() {
   // Mock data
@@ -89,37 +89,6 @@ export default function Home() {
     { name: 'Cirurgia', count: 10, color: 'text-indigo-500' },
   ];
 
-  const tasks: Task[] = [
-    {
-      id: '1',
-      title: 'Selecione um app ou site e conduza uma auditoria de acessibilidade.',
-      time: 'Hoje • 11:30',
-      priority: 'high',
-      completed: false,
-    },
-    {
-      id: '2',
-      title: 'Assistir a uma palestra sobre cardiologia e fazer o dever de casa',
-      time: 'Hoje • 17:00',
-      priority: 'high',
-      completed: false,
-    },
-    {
-      id: '3',
-      title: 'Escolha um caso clínico do mundo real que você estuda regularmente e redesenhe o plano de tratamento.',
-      time: 'Hoje • 10:00',
-      priority: 'normal',
-      completed: false,
-    },
-    {
-      id: '4',
-      title: 'Abordar questões de diagnóstico, melhorar a interface de exames e aprimorar a experiência geral do paciente.',
-      time: 'Hoje • 12:00',
-      priority: 'normal',
-      completed: false,
-    },
-  ];
-
   const nextDelivery: Delivery = {
     id: '1',
     title: 'Teste de Usabilidade e Feedback',
@@ -148,7 +117,7 @@ export default function Home() {
 
           {/* Right Column */}
           <div className="lg:col-span-4">
-            <RightSidebar tasks={tasks} />
+            <RightSidebar />
           </div>
         </div>
       </MainLayout>

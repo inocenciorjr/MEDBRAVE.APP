@@ -19,6 +19,44 @@ import type { TokenCache, FetchStats } from '@/lib/types/auth';
 const supabase = createClient();
 
 /**
+ * Flag para evitar múltiplos redirecionamentos
+ */
+let isRedirecting = false;
+
+/**
+ * Redireciona para a página de login quando a sessão expira
+ * Limpa os caches e o estado de autenticação antes de redirecionar
+ */
+function redirectToLogin(): void {
+  if (typeof window === 'undefined' || isRedirecting) return;
+  
+  isRedirecting = true;
+  
+  // Limpar caches
+  tokenCache.clear();
+  requestPool.clear();
+  cachedUser = null;
+  cachedUserTimestamp = 0;
+  
+  // Limpar localStorage
+  try {
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('user');
+    localStorage.removeItem('user_id');
+  } catch (e) {
+    // Silencioso
+  }
+  
+  // Fazer signOut no Supabase (não esperar)
+  supabase.auth.signOut().catch(() => {});
+  
+  // Redirecionar para login com mensagem
+  const currentPath = window.location.pathname;
+  const returnUrl = encodeURIComponent(currentPath);
+  window.location.href = `/login?expired=true&returnUrl=${returnUrl}`;
+}
+
+/**
  * Duração do cache de tokens em milissegundos (4 minutos)
  * Reduzido para garantir que tokens sejam renovados antes de expirar
  */
@@ -71,6 +109,23 @@ const USER_CACHE_DURATION = 5000; // 5 segundos para getSession()
 const USER_REVALIDATION_INTERVAL = 5 * 60 * 1000; // 5 minutos para revalidação com getUser()
 let lastRevalidationTimestamp = 0;
 
+// Resetar cache quando o módulo é recarregado (HMR)
+if (typeof window !== 'undefined') {
+  // Listener para detectar mudanças de autenticação e limpar cache
+  supabase.auth.onAuthStateChange((event: string) => {
+    if (event === 'SIGNED_OUT') {
+      cachedUser = null;
+      cachedUserTimestamp = 0;
+      tokenCache.clear();
+      isRedirecting = false; // Resetar flag de redirecionamento
+    } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+      // Invalidar cache para forçar nova busca
+      cachedUserTimestamp = 0;
+      isRedirecting = false; // Resetar flag de redirecionamento
+    }
+  });
+}
+
 /**
  * Garante que o estado de autenticação do Supabase está inicializado
  * 
@@ -93,11 +148,24 @@ function ensureAuthReady(): Promise<void> {
   
   // Criar nova promise de inicialização OTIMIZADA
   authReadyPromise = new Promise((resolve) => {
+    // Timeout de segurança - não bloquear por mais de 3 segundos
+    const timeout = setTimeout(() => {
+      authReady = true;
+      resolve();
+    }, 3000);
+    
     // Verificar se já tem sessão imediatamente (síncrono se possível)
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    supabase.auth.getSession().then(({ data: { session } }: { data: { session: any } }) => {
+      clearTimeout(timeout);
       authReady = true; // Marcar como pronto
+      // Pré-popular cache se tiver sessão
+      if (session?.user) {
+        cachedUser = session.user;
+        cachedUserTimestamp = Date.now();
+      }
       resolve();
     }).catch(() => {
+      clearTimeout(timeout);
       // Em caso de erro, marcar como pronto mesmo assim
       authReady = true;
       resolve();
@@ -237,6 +305,13 @@ export async function fetchWithAuth(
         try {
           const newToken = await getOptimizedToken(user, true);
           
+          if (!newToken) {
+            // Não conseguiu renovar o token - redirecionar para login
+            console.error('❌ [fetchWithAuth] Token expirado e não foi possível renovar - redirecionando para login');
+            redirectToLogin();
+            throw new Error('Sessão expirada. Redirecionando para login...');
+          }
+          
           const retryResponse = await fetch(url, {
             ...init,
             headers: {
@@ -246,6 +321,13 @@ export async function fetchWithAuth(
             },
             signal: init.signal || AbortSignal.timeout(30000),
           });
+          
+          // Se ainda deu 401 após renovar, redirecionar para login
+          if (retryResponse.status === 401) {
+            console.error('❌ [fetchWithAuth] Token renovado mas ainda inválido - redirecionando para login');
+            redirectToLogin();
+            throw new Error('Sessão expirada. Redirecionando para login...');
+          }
           
           // 204 No Content é sucesso no retry também
           if (retryResponse.status === 204) {
@@ -258,30 +340,10 @@ export async function fetchWithAuth(
         } catch (refreshError) {
           stats.errors++;
           
-          // Fallback: tentar usar token em cache
-          const cached = tokenCache.get(user.id);
-          if (cached) {
-            const fallbackResponse = await fetch(url, {
-              ...init,
-              headers: {
-                'Authorization': `Bearer ${cached.token}`,
-                ...init.headers,
-                ...(init.body && !(init.body instanceof FormData) && { 'Content-Type': 'application/json' }),
-              },
-              signal: init.signal || AbortSignal.timeout(30000),
-            });
-            
-            // 204 No Content é sucesso no fallback também
-            if (fallbackResponse.status === 204) {
-              updateStats(performance.now() - startTime);
-              return fallbackResponse;
-            }
-            
-            updateStats(performance.now() - startTime);
-            return fallbackResponse;
-          }
-          
-          throw refreshError;
+          // Se o erro é de refresh, redirecionar para login
+          console.error('❌ [fetchWithAuth] Erro ao renovar token - redirecionando para login:', refreshError);
+          redirectToLogin();
+          throw new Error('Sessão expirada. Redirecionando para login...');
         }
       }
 

@@ -35,21 +35,15 @@ export function useQuestionListFolders() {
       setLoading(true);
       setError(null);
       
-      console.log('🔄 Buscando pastas e listas...');
       const [foldersResponse, listsResponse] = await Promise.all([
         api.get('/banco-questoes/folders'),
         api.get('/question-lists')
       ]);
       
-      console.log('📦 Resposta de pastas:', foldersResponse.data);
-      console.log('📄 Resposta de listas:', listsResponse.data);
-      
       if (foldersResponse.data.success) {
         // Organizar em hierarquia
         const folderMap = new Map<string, QuestionListFolder>();
         const rootFolders: QuestionListFolder[] = [];
-
-        console.log('📁 Total de pastas recebidas:', foldersResponse.data.data.length);
 
         // Primeiro, criar o mapa de todas as pastas
         foldersResponse.data.data.forEach((folder: QuestionListFolder) => {
@@ -58,12 +52,9 @@ export function useQuestionListFolders() {
 
         // Adicionar listas às pastas
         if (listsResponse.data.success) {
-          console.log('📄 Total de listas recebidas:', listsResponse.data.data.length);
-          
           listsResponse.data.data.forEach((list: any) => {
             // Ignorar listas sem ID (dados corrompidos)
             if (!list.id) {
-              console.warn('⚠️ Lista sem ID encontrada:', list);
               return;
             }
 
@@ -79,11 +70,7 @@ export function useQuestionListFolders() {
                     ? list.created_at.value 
                     : list.created_at,
                 });
-              } else {
-                console.warn('⚠️ Pasta não encontrada para lista:', list.name, 'folder_id:', list.folder_id);
               }
-            } else {
-              console.log('📄 Lista sem pasta:', list.name);
             }
           });
         }
@@ -99,16 +86,12 @@ export function useQuestionListFolders() {
               parent.children.push(folderWithChildren);
             } else {
               // Se o pai não existe, adicionar como raiz
-              console.warn('⚠️ Pasta pai não encontrada, adicionando como raiz:', folder.name);
               rootFolders.push(folderWithChildren);
             }
           } else {
             rootFolders.push(folderWithChildren);
           }
         });
-
-        console.log('✅ Pastas raiz organizadas:', rootFolders.length);
-        console.log('📊 Estrutura final:', rootFolders);
 
         setFolders(rootFolders);
       }

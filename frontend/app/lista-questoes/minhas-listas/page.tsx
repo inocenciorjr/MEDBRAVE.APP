@@ -83,14 +83,7 @@ export default function MinhasListasPage() {
     item: null
   });
 
-  // Debug: Log quando folders mudar
-  useEffect(() => {
-    console.log('📦 Folders atualizados:', { 
-      count: folders.length, 
-      loading: loadingFolders,
-      folders: folders 
-    });
-  }, [folders, loadingFolders]);
+
 
   // Carregar simulados do usuário
   useEffect(() => {
@@ -99,7 +92,6 @@ export default function MinhasListasPage() {
         setLoadingSimulados(true);
         const { simulatedExamService } = await import('@/services/simulatedExamService');
         const data = await simulatedExamService.getUserSimulatedExams();
-        console.log('📊 Simulados carregados:', data);
         setSimulados(data || []);
       } catch (error) {
         console.error('Erro ao carregar simulados:', error);
@@ -118,8 +110,6 @@ export default function MinhasListasPage() {
     if (listIds.length === 0) return {};
     
     try {
-      console.log(`📊 Buscando stats para ${listIds.length} listas em paralelo...`);
-      const startTime = Date.now();
       
       // Fazer TODAS as requisições em paralelo (não sequencial)
       const statsPromises = listIds.map(async (listId) => {
@@ -146,8 +136,6 @@ export default function MinhasListasPage() {
         }
       });
 
-      const endTime = Date.now();
-      console.log(`✅ Stats carregadas em ${endTime - startTime}ms`);
       return statsMap;
     } catch (error) {
       console.error('Error fetching list stats:', error);
@@ -158,26 +146,17 @@ export default function MinhasListasPage() {
   // Organizar itens (pastas e listas) baseado na pasta atual
   useEffect(() => {
     const organizeItems = async () => {
-      console.log('🔍 Organizando itens...', { 
-        foldersCount: folders.length, 
-        currentFolder, 
-        loadingFolders 
-      });
-
       const allItems: ListItem[] = [];
 
       // Função recursiva para encontrar pasta e seus filhos
       const findFolderAndChildren = (folderList: any[], targetId: string | null): any[] => {
         if (targetId === null) {
           // Retornar pastas raiz
-          const rootFolders = folderList.filter(f => !f.parent_id);
-          console.log('📁 Pastas raiz encontradas:', rootFolders.length);
-          return rootFolders;
+          return folderList.filter(f => !f.parent_id);
         }
 
         for (const folder of folderList) {
           if (folder.id === targetId) {
-            console.log('📁 Subpastas encontradas:', folder.children?.length || 0);
             return folder.children || [];
           }
           if (folder.children && folder.children.length > 0) {
@@ -198,7 +177,6 @@ export default function MinhasListasPage() {
 
         for (const folder of folderList) {
           if (folder.id === targetId) {
-            console.log('📄 Listas na pasta encontradas:', folder.lists?.length || 0);
             return folder.lists || [];
           }
           if (folder.children && folder.children.length > 0) {
@@ -219,7 +197,6 @@ export default function MinhasListasPage() {
             const orphanLists = response.data.data.filter((list: any) => 
               list.id && !list.folder_id
             );
-            console.log('📄 Listas sem pasta encontradas:', orphanLists.length);
             return orphanLists;
           }
         } catch (error) {
@@ -268,11 +245,6 @@ export default function MinhasListasPage() {
         });
       });
 
-      console.log('✅ Total de itens organizados:', allItems.length, { 
-        folders: allItems.filter(i => i.type === 'folder').length,
-        lists: allItems.filter(i => i.type === 'list').length
-      });
-
       setItems(allItems);
     };
 
@@ -286,7 +258,6 @@ export default function MinhasListasPage() {
     const combined: ListItem[] = [...items];
     
     // Adicionar simulados como items
-    console.log('🔄 Combinando items:', { items: items.length, simulados: simulados.length });
     simulados.forEach(sim => {
       combined.push({
         id: sim.id,
@@ -299,7 +270,6 @@ export default function MinhasListasPage() {
       });
     });
     
-    console.log('✅ Items combinados:', combined.length);
     return combined;
   }, [items, simulados]);
 

@@ -19,7 +19,8 @@ const CAROUSEL_IMAGES = [
 export default function LoginPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirect = searchParams.get('redirect') || '/';
+  const redirect = searchParams.get('redirect') || searchParams.get('returnUrl') || '/';
+  const isExpired = searchParams.get('expired') === 'true';
   const toast = useToast();
 
   const [email, setEmail] = useState('');
@@ -33,13 +34,23 @@ export default function LoginPage() {
   // Verificar se já está autenticado e redirecionar
   useEffect(() => {
     const checkAuth = async () => {
+      // Se veio de sessão expirada, não redirecionar automaticamente
+      if (isExpired) return;
+      
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
         router.push(redirect);
       }
     };
     checkAuth();
-  }, [router, redirect]);
+  }, [router, redirect, isExpired]);
+
+  // Mostrar mensagem de sessão expirada
+  useEffect(() => {
+    if (isExpired) {
+      toast.warning('Sessão Expirada', 'Sua sessão expirou. Por favor, faça login novamente.');
+    }
+  }, [isExpired, toast]);
 
   // Verificar mensagem de timeout no sessionStorage
   useEffect(() => {

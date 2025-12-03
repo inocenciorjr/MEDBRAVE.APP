@@ -145,7 +145,7 @@ export function PagePlanGuard({
       // Tentar recarregar o plano após um delay progressivo
       const delay = Math.min(1000 * (retryCount + 1), 3000); // 1s, 2s, 3s, 3s, 3s
       
-      console.log(`[PagePlanGuard] Plano não encontrado, tentativa ${retryCount + 1}/${maxRetries} em ${delay}ms`);
+
       
       retryTimeoutRef.current = setTimeout(() => {
         // Verificar novamente se tem token (pode ter aparecido) - com fallback para sessionStorage

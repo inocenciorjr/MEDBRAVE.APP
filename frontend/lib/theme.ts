@@ -33,8 +33,6 @@ export const applyTheme = (theme: Theme): void => {
   
   // Add the new theme class
   root.classList.add(theme);
-  
-  console.log('Theme applied:', theme, 'Classes:', root.className);
 };
 
 export const getInitialTheme = (): Theme => {

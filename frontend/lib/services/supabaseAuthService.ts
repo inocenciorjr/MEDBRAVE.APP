@@ -376,19 +376,26 @@ class SupabaseAuthService {
       }
       
       if (session) {
-        // Verificar se o token está próximo de expirar (menos de 5 minutos)
+        // Verificar se o token está próximo de expirar ou já expirou
         const expiresAt = session.expires_at;
         const now = Math.floor(Date.now() / 1000);
-        const timeUntilExpiry = expiresAt ? expiresAt - now : 0;
+        const timeUntilExpiry = expiresAt ? expiresAt - now : -1; // -1 se não tiver expires_at
         
-        // Se expira em menos de 5 minutos, forçar refresh
+        // Se já expirou ou expira em menos de 5 minutos, forçar refresh
         if (timeUntilExpiry < 300) {
-          console.log('🔄 [Auth] Token expirando em breve, forçando refresh...');
+          const isExpired = timeUntilExpiry <= 0;
+          console.log(`🔄 [Auth] Token ${isExpired ? 'EXPIRADO' : 'expirando em breve'} (${timeUntilExpiry}s), forçando refresh...`);
+          
           const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
           
           if (refreshError) {
             console.error('Erro ao renovar sessão:', refreshError);
-            // Se falhar o refresh, tentar usar o token atual mesmo assim
+            // Se o token já expirou E falhou o refresh, não usar o token antigo
+            if (isExpired) {
+              console.error('❌ [Auth] Token expirado e refresh falhou');
+              return null;
+            }
+            // Se ainda não expirou, tentar usar o token atual
             if (session.access_token) {
               this.setToken(session.access_token);
               return session.access_token;

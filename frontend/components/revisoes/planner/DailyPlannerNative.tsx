@@ -703,8 +703,11 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
           const dateStr = format(weekDays[finalEvent.day_index], 'yyyy-MM-dd');
           const dbId = finalEvent.metadata?.dbId;
           
+          // Determinar o event_type baseado no content_type
+          const isUserTask = finalEvent.content_type === 'USER_TASK';
+          
           const eventData = {
-            event_type: 'system_review' as const,
+            event_type: isUserTask ? 'user_task' as const : 'system_review' as const,
             content_type: finalEvent.content_type,
             title: finalEvent.title,
             date: dateStr,

@@ -95,12 +95,25 @@ class HybridStorageAdapter {
   }
 }
 
+// Singleton para garantir uma única instância do cliente
+let supabaseClient: ReturnType<typeof createBrowserClient> | null = null;
+
+// Intervalo de refresh proativo
+let refreshInterval: NodeJS.Timeout | null = null;
+
 /**
  * Cria um cliente Supabase para uso em Client Components
  * Usa cookies para persistir sessão E PKCE verifier (funciona em modo anônimo)
+ * 
+ * IMPORTANTE: Retorna sempre a mesma instância (singleton) para evitar
+ * problemas de sincronização de estado entre componentes
  */
 export function createClient() {
-  return createBrowserClient(
+  if (supabaseClient) {
+    return supabaseClient;
+  }
+  
+  supabaseClient = createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
@@ -166,4 +179,34 @@ export function createClient() {
       }
     }
   );
+  
+  // Iniciar refresh proativo em background (a cada 50 minutos)
+  // Isso garante que o token seja renovado mesmo se o usuário não fizer chamadas diretas ao Supabase
+  if (typeof window !== 'undefined' && !refreshInterval) {
+    refreshInterval = setInterval(async () => {
+      try {
+        const { data: { session } } = await supabaseClient!.auth.getSession();
+        if (session) {
+          const expiresAt = session.expires_at;
+          const now = Math.floor(Date.now() / 1000);
+          const timeUntilExpiry = expiresAt ? expiresAt - now : 0;
+          
+          // Se expira em menos de 10 minutos, renovar
+          if (timeUntilExpiry < 600) {
+            console.log('🔄 [Supabase] Refresh proativo do token...');
+            const { error } = await supabaseClient!.auth.refreshSession();
+            if (error) {
+              console.error('❌ [Supabase] Erro no refresh proativo:', error);
+            } else {
+              console.log('✅ [Supabase] Token renovado proativamente');
+            }
+          }
+        }
+      } catch (e) {
+        console.error('❌ [Supabase] Erro no refresh proativo:', e);
+      }
+    }, 50 * 60 * 1000); // A cada 50 minutos
+  }
+  
+  return supabaseClient;
 }
