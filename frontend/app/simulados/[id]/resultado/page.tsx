@@ -2,7 +2,6 @@
 
 import { use, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { simulatedExamService, SimulatedExamResult } from '@/services/simulatedExamService';
 import { useToast } from '@/lib/contexts/ToastContext';
@@ -10,7 +9,6 @@ import { SimuladoResultadoSkeleton } from '@/components/skeletons/SimuladoResult
 import { QuestionView } from '@/components/resolucao-questoes/QuestionView';
 import { Question } from '@/types/resolucao-questoes';
 import api from '@/services/api';
-import MainLayout from '@/components/layout/MainLayout';
 import { QuestionStatsProvider, useQuestionStats } from '@/contexts/QuestionStatsContext';
 
 interface ResultadoSimuladoPageProps {
@@ -157,13 +155,13 @@ function ResultadoSimuladoContent({ params }: ResultadoSimuladoPageProps) {
   }
 
   return (
-    <MainLayout showGreeting={false}>
+    <>
       {/* Breadcrumb */}
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: 'Listas de Questões', icon: 'list_alt', href: '/lista-questoes/minhas-listas' },
-            { label: simuladoTitle || 'Resultado', icon: 'schedule' } // Último item sem href (página atual)
+            { label: simuladoTitle || 'Resultado', icon: 'schedule' }
           ]}
         />
       </div>
@@ -182,16 +180,14 @@ function ResultadoSimuladoContent({ params }: ResultadoSimuladoPageProps) {
           )}
         </div>
       </div>
-    </MainLayout>
+    </>
   );
 }
 
 export default function ResultadoSimuladoPage({ params }: ResultadoSimuladoPageProps) {
   return (
-    <PagePlanGuard>
-      <QuestionStatsProvider>
-        <ResultadoSimuladoContent params={params} />
-      </QuestionStatsProvider>
-    </PagePlanGuard>
+    <QuestionStatsProvider>
+      <ResultadoSimuladoContent params={params} />
+    </QuestionStatsProvider>
   );
 }

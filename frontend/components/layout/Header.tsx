@@ -47,49 +47,57 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
       return;
     }
 
+    // Flag para evitar atualizar estado em componente desmontado
+    let isMounted = true;
+
     const supabase = createClient();
 
     // Função para buscar dados do perfil via backend (evita problemas de RLS)
     const fetchProfile = async () => {
-      console.log('[Header] Iniciando fetchProfile...');
       try {
         const response = await fetchWithAuth('/user/me');
-        console.log('[Header] Response status:', response.status);
-        
+
+        if (!isMounted) return; // Componente desmontado, não atualizar estado
+
         if (response.ok) {
           const data = await response.json();
-          console.log('[Header] Dados recebidos:', { displayName: data.displayName, hasPhoto: !!data.photoURL });
           const name = data.displayName || 'Usuário';
           const avatar = data.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
-          setUserName(name);
-          setUserAvatar(avatar);
+
+          if (isMounted) {
+            setUserName(name);
+            setUserAvatar(avatar);
+            setLoading(false);
+          }
         } else {
-          const errorText = await response.text();
-          console.error('[Header] Erro na resposta:', response.status, errorText);
+          console.error('[Header] Erro na resposta:', response.status);
+          if (isMounted) setLoading(false);
         }
       } catch (error) {
         console.error('[Header] Erro ao carregar perfil:', error);
-      } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
 
     // Carregar perfil imediatamente
     fetchProfile();
 
-    // Listener para mudanças de autenticação
+    // Listener para mudanças de autenticação (não recarregar em TOKEN_REFRESHED para evitar chamadas duplicadas)
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event: string) => {
+      if (!isMounted) return;
+
       if (event === 'SIGNED_OUT') {
         setUserName('Usuário');
         setUserAvatar('');
         setLoading(false);
-      } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-        // Recarregar perfil quando fizer login ou renovar token
+      } else if (event === 'SIGNED_IN') {
+        // Só recarregar em SIGNED_IN, não em TOKEN_REFRESHED
         fetchProfile();
       }
     });
 
     return () => {
+      isMounted = false;
       subscription.unsubscribe();
     };
   }, [propUserName, propUserAvatar]);

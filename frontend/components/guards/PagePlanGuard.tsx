@@ -184,10 +184,10 @@ export function PagePlanGuard({
     };
   }, []);
 
-  // Enquanto carrega ou está tentando, mostra loading
+  // Enquanto carrega ou está tentando, mostra loading (sem min-h-screen para não quebrar layout)
   if (loading || (retryCount > 0 && retryCount < maxRetries && !userPlan)) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center py-20">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />
       </div>
     );

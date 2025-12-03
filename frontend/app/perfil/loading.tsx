@@ -2,8 +2,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export default function PerfilLoading() {
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark p-6 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto space-y-6 animate-pulse">
+    <div className="w-full py-6 animate-pulse">
+      <div className="max-w-4xl mx-auto space-y-6">
         {/* Header Skeleton */}
         <div className="flex items-center justify-between">
           <Skeleton className="h-9 w-32" />
