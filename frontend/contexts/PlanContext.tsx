@@ -49,9 +49,16 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
     if (typeof window === 'undefined') return;
 
-    // Função para verificar e atualizar token
+    // Função para verificar e atualizar token (com fallback para sessionStorage - Edge Mobile fix)
     const checkToken = () => {
-      const storedToken = localStorage.getItem('authToken');
+      // ✅ EDGE MOBILE FIX: Verificar localStorage e sessionStorage
+      let storedToken = localStorage.getItem('authToken');
+      if (!storedToken) {
+        storedToken = sessionStorage.getItem('authToken');
+        if (storedToken) {
+          console.log('[PlanContext] Token encontrado no sessionStorage (Edge Mobile fallback)');
+        }
+      }
 
       // Só atualiza se o token mudou
       if (storedToken !== lastTokenRef.current) {

@@ -12,123 +12,37 @@ const supabase = createClient();
 function AuthLoadingScreen({ message = 'Validando acesso...' }: { message?: string }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Nuvens decorativas */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Nuvem 1 */}
-        <div className="absolute top-[10%] left-[5%] opacity-20">
-          <div className="relative">
-            <div className="absolute w-[80px] h-[80px] bg-white rounded-full" />
-            <div className="absolute w-[50px] h-[50px] bg-white rounded-full top-4 -left-8" />
-            <div className="absolute w-[60px] h-[60px] bg-white rounded-full top-2 left-[40px]" />
-          </div>
-        </div>
-        
-        {/* Nuvem 2 */}
-        <div className="absolute top-[20%] right-[10%] opacity-20">
-          <div className="relative">
-            <div className="absolute w-[100px] h-[100px] bg-white rounded-full" />
-            <div className="absolute w-[60px] h-[60px] bg-white rounded-full top-6 -left-10" />
-            <div className="absolute w-[70px] h-[70px] bg-white rounded-full top-4 left-[50px]" />
-          </div>
-        </div>
-
-        {/* Nuvem 3 */}
-        <div className="absolute bottom-[30%] left-[15%] opacity-15">
-          <div className="relative">
-            <div className="absolute w-[70px] h-[70px] bg-white rounded-full" />
-            <div className="absolute w-[45px] h-[45px] bg-white rounded-full top-3 -left-7" />
-            <div className="absolute w-[55px] h-[55px] bg-white rounded-full top-2 left-[35px]" />
-          </div>
-        </div>
-      </div>
-
-      {/* Logo MedBrave */}
+      {/* Logo MedBrave no canto superior esquerdo */}
       <div className="absolute top-8 left-8">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-            <span className="text-2xl">🦁</span>
-          </div>
+          <img 
+            src="/medbravelogo-dark.png" 
+            alt="MedBrave" 
+            className="w-10 h-10 object-contain"
+          />
           <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>
             MEDBRAVE
           </span>
         </div>
       </div>
 
-      {/* Conteúdo central */}
-      <div className="relative z-10 flex flex-col items-center">
-        {/* Leão animado */}
-        <div className="relative mb-8">
-          {/* Corpo do leão */}
-          <div className="w-32 h-40 bg-gradient-to-b from-amber-400 to-amber-500 rounded-t-full relative shadow-2xl animate-bounce" style={{ animationDuration: '2s' }}>
-            {/* Juba */}
-            <div className="absolute -top-4 -left-4 -right-4 h-20 bg-gradient-to-b from-amber-600 to-amber-500 rounded-t-full" />
-            
-            {/* Orelhas */}
-            <div className="absolute -top-2 left-2 w-6 h-6 bg-amber-500 rounded-full" />
-            <div className="absolute -top-2 right-2 w-6 h-6 bg-amber-500 rounded-full" />
-            
-            {/* Rosto */}
-            <div className="absolute top-8 left-1/2 -translate-x-1/2 w-20 h-16">
-              {/* Olhos */}
-              <div className="flex justify-center gap-4 mt-2">
-                <div className="w-4 h-4 bg-white rounded-full relative">
-                  <div className="absolute top-1 left-1 w-2 h-2 bg-gray-800 rounded-full animate-pulse" />
-                </div>
-                <div className="w-4 h-4 bg-white rounded-full relative">
-                  <div className="absolute top-1 left-1 w-2 h-2 bg-gray-800 rounded-full animate-pulse" />
-                </div>
-              </div>
-              
-              {/* Focinho */}
-              <div className="mt-2 mx-auto w-8 h-6 bg-amber-300 rounded-full flex items-center justify-center">
-                <div className="w-3 h-2 bg-amber-700 rounded-full" />
-              </div>
-            </div>
-          </div>
-          
-          {/* Patas */}
-          <div className="flex justify-center gap-4 -mt-2">
-            <div className="w-6 h-8 bg-amber-400 rounded-b-lg" />
-            <div className="w-6 h-8 bg-amber-400 rounded-b-lg" />
-          </div>
-        </div>
+      {/* Leão decorativo no canto inferior direito */}
+      <img 
+        src="/icons8-lion-48.png" 
+        alt="" 
+        className="absolute bottom-8 right-8 w-24 h-24 opacity-60"
+      />
 
+      {/* Conteúdo central */}
+      <div className="flex flex-col items-center">
         {/* Texto de loading */}
-        <h1 className="text-white text-2xl md:text-3xl font-semibold mb-4">
+        <h1 className="text-white text-xl md:text-2xl font-semibold mb-4">
           {message}
         </h1>
 
-        {/* Barra de progresso animada */}
-        <div className="w-64 h-2 bg-white/20 rounded-full overflow-hidden">
-          <div className="h-full bg-gradient-to-r from-amber-400 to-amber-500 rounded-full animate-loading-bar" />
-        </div>
-
-        {/* Texto secundário */}
-        <p className="text-white/60 text-sm mt-4">
-          Preparando sua experiência...
-        </p>
+        {/* Spinner simples */}
+        <div className="w-10 h-10 border-4 border-white/20 border-t-amber-400 rounded-full animate-spin" />
       </div>
-
-      {/* Estilos de animação */}
-      <style jsx>{`
-        @keyframes loading-bar {
-          0% {
-            width: 0%;
-            margin-left: 0%;
-          }
-          50% {
-            width: 60%;
-            margin-left: 20%;
-          }
-          100% {
-            width: 0%;
-            margin-left: 100%;
-          }
-        }
-        .animate-loading-bar {
-          animation: loading-bar 1.5s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 }
@@ -139,6 +53,19 @@ function AuthCallbackContent() {
   const [error, setError] = useState<string | null>(null);
   const [loadingMessage, setLoadingMessage] = useState('Validando acesso...');
   const hasRun = useRef(false);
+  
+  // ✅ EDGE MOBILE FIX: Detectar Edge Mobile
+  const isEdgeMobile = typeof navigator !== 'undefined' && 
+    /Edg|Edge/i.test(navigator.userAgent) && 
+    /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+  
+  // Log para debug
+  useEffect(() => {
+    if (typeof navigator !== 'undefined') {
+      console.log('🔍 [Callback] User Agent:', navigator.userAgent);
+      console.log('🔍 [Callback] Is Edge Mobile:', isEdgeMobile);
+    }
+  }, [isEdgeMobile]);
 
   useEffect(() => {
     // Prevenir execução dupla
@@ -148,9 +75,21 @@ function AuthCallbackContent() {
     }
     hasRun.current = true;
 
+    // ✅ EDGE MOBILE FIX: Timeout para evitar travamento
+    const timeoutId = setTimeout(() => {
+      console.error('❌ [Callback] Timeout - processo demorou demais');
+      if (isEdgeMobile) {
+        setError('O processo de login demorou demais. No Edge Mobile, tente usar Chrome ou Safari para melhor compatibilidade.');
+      } else {
+        setError('O processo de login demorou demais. Tente novamente.');
+      }
+    }, isEdgeMobile ? 30000 : 15000); // 30s para Edge Mobile, 15s para outros
+    
     const handleCallback = async () => {
       try {
+        console.log('🔍 [Callback] Iniciando handleCallback...');
         const code = searchParams.get('code');
+        console.log('🔍 [Callback] Code:', code ? 'presente' : 'ausente');
         
         // Tentar pegar redirect de 3 lugares (em ordem de prioridade):
         // 1. Query string (se vier do Supabase)
@@ -222,15 +161,34 @@ function AuthCallbackContent() {
 
             // Salvar token no localStorage para o AuthContext
             if (typeof window !== 'undefined') {
-              localStorage.setItem('authToken', session.access_token);
-              localStorage.setItem('user', JSON.stringify({
+              const userData = {
                 uid: session.user.id,
                 email: session.user.email,
                 displayName: session.user.user_metadata?.display_name || session.user.email,
                 photoURL: session.user.user_metadata?.avatar_url || null,
                 emailVerified: !!session.user.email_confirmed_at,
                 role: userRole
-              }));
+              };
+              
+              // ✅ EDGE MOBILE FIX: Salvar com fallback para sessionStorage
+              const saveToStorage = (key: string, value: string) => {
+                try {
+                  localStorage.setItem(key, value);
+                  // Verificar se realmente salvou
+                  if (isEdgeMobile && !localStorage.getItem(key)) {
+                    throw new Error('localStorage não persistiu');
+                  }
+                } catch (e) {
+                  console.warn(`⚠️ [Callback] localStorage falhou para ${key}, usando sessionStorage:`, e);
+                  sessionStorage.setItem(key, value);
+                }
+              };
+              
+              saveToStorage('authToken', session.access_token);
+              saveToStorage('user', JSON.stringify(userData));
+              saveToStorage('user_id', session.user.id);
+              
+              console.log('✅ [Callback] Dados salvos no storage');
 
               // Salvar nos cookies via API route (para SSR)
               try {
@@ -252,26 +210,57 @@ function AuthCallbackContent() {
                 finalRedirect = '/mentor';
               }
 
-              // Aguardar um pouco para garantir que a sessão foi persistida
+              // ✅ EDGE MOBILE FIX: Aguardar mais tempo para garantir persistência
               setLoadingMessage('Preparando sua experiência...');
-              await new Promise(resolve => setTimeout(resolve, 500));
+              const waitTime = isEdgeMobile ? 2000 : 500;
+              console.log(`🔍 [Callback] Aguardando ${waitTime}ms para persistência...`);
+              await new Promise(resolve => setTimeout(resolve, waitTime));
+
+              // ✅ EDGE MOBILE FIX: Verificar se dados foram salvos
+              if (isEdgeMobile) {
+                const tokenCheck = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+                console.log('🔍 [Callback] Edge Mobile - Token verificado:', tokenCheck ? 'presente' : 'ausente');
+                
+                if (!tokenCheck) {
+                  console.warn('⚠️ [Callback] Edge Mobile: Token não encontrado, tentando salvar novamente...');
+                  try {
+                    sessionStorage.setItem('authToken', session.access_token);
+                    sessionStorage.setItem('user', JSON.stringify(userData));
+                    sessionStorage.setItem('user_id', session.user.id);
+                  } catch (e) {
+                    console.error('❌ [Callback] Falha crítica ao salvar:', e);
+                  }
+                  await new Promise(resolve => setTimeout(resolve, 500));
+                }
+              }
 
               // Disparar evento customizado para notificar outros componentes (como PlanContext)
               window.dispatchEvent(new CustomEvent('auth-token-updated', { 
                 detail: { token: session.access_token } 
               }));
+              
+              // ✅ EDGE MOBILE FIX: Aguardar evento ser processado
+              if (isEdgeMobile) {
+                await new Promise(resolve => setTimeout(resolve, 500));
+              }
 
               // Redirecionar
               setLoadingMessage('Redirecionando...');
               console.log('🔍 [Callback] Redirect final:', finalRedirect);
+              
               if (window.opener) {
                 window.opener.postMessage({ type: 'auth-success' }, window.location.origin);
                 await new Promise(resolve => setTimeout(resolve, 500));
                 window.close();
               } else {
-                // Usar router.push ao invés de window.location.href para evitar reload completo
-                console.log('🔍 [Callback] Redirecionando para:', finalRedirect);
-                router.push(finalRedirect);
+                // ✅ EDGE MOBILE FIX: Usar window.location.href para Edge Mobile (mais compatível)
+                if (isEdgeMobile) {
+                  console.log('🔍 [Callback] Edge Mobile: Usando window.location.href');
+                  window.location.href = finalRedirect;
+                } else {
+                  console.log('🔍 [Callback] Redirecionando via router.push');
+                  router.push(finalRedirect);
+                }
               }
             }
           } else {
@@ -296,34 +285,47 @@ function AuthCallbackContent() {
           }
         }
       } catch (err) {
-        console.error('Erro ao processar autenticação:', err);
-        setError('Erro ao processar autenticação.');
+        console.error('❌ [Callback] Erro ao processar autenticação:', err);
+        clearTimeout(timeoutId);
+        if (isEdgeMobile) {
+          setError('Erro ao processar autenticação no Edge Mobile. Tente usar Chrome ou Safari.');
+        } else {
+          setError('Erro ao processar autenticação. Tente novamente.');
+        }
         setTimeout(() => router.push('/login'), 3000);
       }
     };
 
-    handleCallback();
+    handleCallback().finally(() => {
+      clearTimeout(timeoutId);
+    });
   }, [searchParams, router]);
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 flex flex-col items-center justify-center">
-        {/* Logo */}
+      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+        {/* Logo MedBrave no canto superior esquerdo */}
         <div className="absolute top-8 left-8">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-              <span className="text-2xl">🦁</span>
-            </div>
+            <img 
+              src="/medbravelogo-dark.png" 
+              alt="MedBrave" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>
               MEDBRAVE
             </span>
           </div>
         </div>
 
-        <div className="text-center p-8 bg-white/10 backdrop-blur-sm rounded-2xl max-w-md mx-4">
-          <div className="w-16 h-16 mx-auto mb-4 bg-red-500/20 rounded-full flex items-center justify-center">
-            <span className="text-3xl">😿</span>
-          </div>
+        {/* Leão decorativo no canto inferior direito */}
+        <img 
+          src="/icons8-lion-48.png" 
+          alt="" 
+          className="absolute bottom-8 right-8 w-24 h-24 opacity-60"
+        />
+
+        <div className="text-center p-8 bg-white/10 backdrop-blur-sm rounded-2xl max-w-md">
           <h2 className="text-white text-xl font-semibold mb-2">Ops! Algo deu errado</h2>
           <p className="text-white/70 mb-6">{error}</p>
           <button

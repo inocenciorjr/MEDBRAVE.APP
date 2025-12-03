@@ -14,11 +14,19 @@ interface HeaderProps {
 }
 
 const motivationalQuotes = [
-  'Quem tem coragem de aprender tem o poder de mudar o próprio destino.',
-  'Estudar com coragem é plantar hoje o que o futuro colherá com orgulho.',
-  'Ouse aprender, mude a história. Estude firme, floresça o futuro.',
-  'Coragem é virar a página mesmo quando o capítulo é difícil.',
-  'Viva com propósito, lute com fé, vença com persistência.',
+  'Não pare agora! Sua resiliência vai te levar ao topo. Estude e brilhe!',
+  'Que bom te ver de volta! Cada vez que você retorna, você prova pra si mesmo que tá realmente comprometido. Continue, seu progresso tá acontecendo bem na sua frente.',
+  'Quando você se dedica de verdade, o conteúdo começa a fazer sentido, a mente engrena e o caminho fica mais leve. Mantém essa vibração, ela puxa você adiante.',
+  'Tem dias que o estudo flui, tem dias que exige força mental. Nos dois casos, você cresce. Essa capacidade de seguir independente do humor é o que constrói excelência.',
+  'A jornada fica bem mais clara quando você lembra do porquê começou. Cada sessão focada entrega uma versão mais preparada de você mesmo.',
+  'Nada supera a sua vontade de vencer. Com essa mentalidade, você vai entregar tudo o que precisa.',
+  'Aperta o ritmo. Essa prova não vai ter chance contra você.',
+  'Tem muita coisa boa te esperando lá na frente. Continua com esse cuidado e essa dedicação.',
+  'Você se cobra muito, mas olha quanta coisa já superou. Usa essa força a seu favor hoje.',
+  'Hoje é dia de treinar o cérebro no máximo: repete, ajusta, corrige e evolui. É assim que se fica forte.',
+  'Quando o dia estiver pesado, lembra: já teve dias assim e venceu todos eles.',
+  'Descansar faz parte do plano. Quem recupera bem, rende melhor.',
+  'Hidrata, respira, organiza! Pequenas atitudes que deixam o estudo muito mais leve.',
 ];
 
 export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true, onMenuClick, showMenuButton = false }: HeaderProps) {

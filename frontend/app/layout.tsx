@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   description: "Seja Corajoso, Seja BRAVE!",
   icons: {
     icon: [
-      { url: '/medbravelogo.png', type: 'image/png' },
+      { url: '/medbravelogo-dark.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/medbravelogo.png', type: 'image/png' },
+      { url: '/medbravelogo-dark.png', type: 'image/png' },
     ],
   },
 };

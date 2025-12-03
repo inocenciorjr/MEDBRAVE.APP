@@ -75,8 +75,11 @@ export function PagePlanGuard({
       return;
     }
 
-    // Verifica se o usuário está autenticado
-    const authToken = typeof window !== 'undefined' ? localStorage.getItem('authToken') : null;
+    // Verifica se o usuário está autenticado (com fallback para sessionStorage - Edge Mobile fix)
+    let authToken = null;
+    if (typeof window !== 'undefined') {
+      authToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+    }
     const hasCookie = typeof document !== 'undefined' && document.cookie.includes('sb-access-token');
     const isAuthenticated = !!(authToken || hasCookie);
 
@@ -145,8 +148,8 @@ export function PagePlanGuard({
       console.log(`[PagePlanGuard] Plano não encontrado, tentativa ${retryCount + 1}/${maxRetries} em ${delay}ms`);
       
       retryTimeoutRef.current = setTimeout(() => {
-        // Verificar novamente se tem token (pode ter aparecido)
-        const currentToken = localStorage.getItem('authToken');
+        // Verificar novamente se tem token (pode ter aparecido) - com fallback para sessionStorage
+        const currentToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
         if (currentToken) {
           tryRefreshPlan();
         }
