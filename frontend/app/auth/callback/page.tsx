@@ -282,7 +282,9 @@ function AuthCallbackContent() {
         window.dispatchEvent(new CustomEvent('auth-token-updated', { detail: { token: session.access_token } }));
 
         if (isEdgeMobile) {
-          window.location.href = finalRedirect;
+          // Adicionar parâmetro para indicar que veio do login
+          const separator = finalRedirect.includes('?') ? '&' : '?';
+          window.location.href = `${finalRedirect}${separator}_auth=1`;
         } else {
           router.push(finalRedirect);
         }

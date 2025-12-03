@@ -142,50 +142,85 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
       const storageKey = `sb-${projectRef}-auth-token`;
       
-      const localKeys = Object.keys(localStorage);
-      const sessionKeys = Object.keys(sessionStorage);
-      const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+      // Verificar se veio do callback de auth (parâmetro _auth=1)
+      const urlParams = new URLSearchParams(window.location.search);
+      const fromAuth = urlParams.get('_auth') === '1';
       
-      // Enviar log para API (aparece no Vercel)
-      fetch('/api/debug-log', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          event: 'AuthContext-EdgeMobile',
-          storageKey,
-          localKeys,
-          sessionKeys,
-          hasSession: !!storedSession,
-          storedUser: !!localStorage.getItem('user'),
-          storedToken: !!localStorage.getItem('authToken'),
-        })
-      }).catch(() => {});
+      const checkSession = (attempt: number) => {
+        const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+        
+        // Log para debug
+        fetch('/api/debug-log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            event: 'AuthContext-EdgeMobile',
+            attempt,
+            fromAuth,
+            storageKey,
+            hasSession: !!storedSession,
+            storedUser: !!localStorage.getItem('user'),
+            storedToken: !!localStorage.getItem('authToken'),
+          })
+        }).catch(() => { });
 
-      if (storedSession) {
-        try {
-          const sessionData = JSON.parse(storedSession);
-          if (sessionData.access_token && sessionData.user) {
-            console.log('[Auth] Edge Mobile: sessão válida encontrada!');
-            const basicUser = supabaseAuthService.mapSupabaseUser(sessionData.user);
-            setUser(basicUser);
+        if (storedSession) {
+          try {
+            const sessionData = JSON.parse(storedSession);
+            if (sessionData.access_token && sessionData.user) {
+              const basicUser = supabaseAuthService.mapSupabaseUser(sessionData.user);
+              setUser(basicUser);
+              setLoading(false);
+              clearTimeout(safetyTimeout);
+
+              localStorage.setItem('user', JSON.stringify(basicUser));
+              localStorage.setItem('user_id', basicUser.uid);
+              localStorage.setItem('authToken', sessionData.access_token);
+
+              window.dispatchEvent(new CustomEvent('auth-token-updated', {
+                detail: { token: sessionData.access_token }
+              }));
+              
+              // Limpar parâmetro _auth da URL
+              if (fromAuth) {
+                urlParams.delete('_auth');
+                const newUrl = urlParams.toString() 
+                  ? `${window.location.pathname}?${urlParams.toString()}`
+                  : window.location.pathname;
+                window.history.replaceState({}, '', newUrl);
+              }
+              return true;
+            }
+          } catch (e) {
+            console.error('[Auth] Edge Mobile: erro ao parsear sessão:', e);
+          }
+        }
+        return false;
+      };
+      
+      // Se veio do auth, tentar múltiplas vezes com delay
+      if (fromAuth) {
+        let attempts = 0;
+        const maxAttempts = 5;
+        const tryCheck = () => {
+          attempts++;
+          if (checkSession(attempts)) return;
+          
+          if (attempts < maxAttempts) {
+            setTimeout(tryCheck, 500); // Tentar novamente em 500ms
+          } else {
             setLoading(false);
             clearTimeout(safetyTimeout);
-
-            localStorage.setItem('user', JSON.stringify(basicUser));
-            localStorage.setItem('user_id', basicUser.uid);
-            localStorage.setItem('authToken', sessionData.access_token);
-
-            window.dispatchEvent(new CustomEvent('auth-token-updated', {
-              detail: { token: sessionData.access_token }
-            }));
-            return; // Não chamar SDK no Edge Mobile
           }
-        } catch (e) {
-          console.error('[Auth] Edge Mobile: erro ao parsear sessão:', e);
+        };
+        tryCheck();
+      } else {
+        // Não veio do auth, verificar uma vez
+        if (!checkSession(1)) {
+          setLoading(false);
+          clearTimeout(safetyTimeout);
         }
       }
-      setLoading(false);
-      clearTimeout(safetyTimeout);
       return; // Não chamar SDK no Edge Mobile
     }
 
