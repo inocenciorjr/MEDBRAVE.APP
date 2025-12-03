@@ -167,26 +167,17 @@ function AuthCallbackContent() {
                 return;
               }
               
-              // Configurar sessão no Supabase SDK
-              addDebug('API OK! Setando sessão...');
+              // Edge Mobile: NÃO usar supabase.auth.setSession() pois trava
+              // Apenas salvar tokens manualmente
+              addDebug('API OK!');
               
-              const { data: sessionData, error: setSessionError } = await supabase.auth.setSession({
-                access_token: data.access_token,
-                refresh_token: data.refresh_token,
-              });
-              
-              if (setSessionError) {
-                addDebug(`setSession ERR: ${setSessionError.message}`);
-              }
-              
-              session = sessionData?.session || {
+              // Criar objeto session manualmente
+              session = {
                 access_token: data.access_token,
                 refresh_token: data.refresh_token,
                 user: data.user,
                 expires_in: data.expires_in,
               } as any;
-              
-              addDebug('Sessão configurada!');
             } catch (apiErr: any) {
               addDebug(`API CATCH: ${apiErr.message}`);
               setError(apiErr.message);
