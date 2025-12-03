@@ -27,34 +27,34 @@ const supabase = createClient();
 interface AuthContextValue {
   /** Usuário atualmente autenticado (null se não autenticado) */
   user: User | null;
-  
+
   /** Indica se o estado de autenticação está sendo carregado */
   loading: boolean;
-  
+
   /** Mensagem de erro de autenticação (null se não houver erro) */
   error: string | null;
-  
+
   /** Token JWT atual (null se não autenticado) */
   token: string | null;
-  
+
   /** Indica se há um usuário autenticado */
   isAuthenticated: boolean;
-  
+
   /** Realiza login com email e senha */
   login: (email: string, password: string) => Promise<void>;
-  
+
   /** Realiza login com Google OAuth */
   loginWithGoogle: () => Promise<void>;
-  
+
   /** Registra um novo usuário */
   register: (email: string, password: string, displayName: string) => Promise<void>;
-  
+
   /** Realiza logout do usuário */
   logout: () => Promise<void>;
-  
+
   /** Envia email de recuperação de senha */
   forgotPassword: (email: string) => Promise<void>;
-  
+
   /** Atualiza dados do usuário */
   updateUser: (userData: User) => void;
 }
@@ -114,11 +114,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
         setLoading(false);
       }
     }, 2000);
-    
+
     // Tentar restaurar usuário do localStorage primeiro (cache inicial)
     const storedUser = localStorage.getItem('user');
     const token = localStorage.getItem('authToken');
-    
+
     if (storedUser && token) {
       try {
         const parsedUser = JSON.parse(storedUser) as User;
@@ -131,34 +131,41 @@ export function AuthProvider({ children }: AuthProviderProps) {
         localStorage.removeItem('authToken');
       }
     }
-    
+
     // Verificar sessão atual imediatamente
     // Edge Mobile fix: verificar localStorage primeiro pois o SDK pode travar
     const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
-    
+
     if (isEdgeMobile) {
       // Edge Mobile: verificar localStorage diretamente (SDK pode travar)
+      console.log('[Auth] Edge Mobile detectado, verificando storage...');
+      
       const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
       const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
       const storageKey = `sb-${projectRef}-auth-token`;
       
+      console.log('[Auth] Storage key:', storageKey);
+      console.log('[Auth] localStorage keys:', Object.keys(localStorage));
+      
       const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+      console.log('[Auth] Stored session found:', !!storedSession);
+      
       if (storedSession) {
         try {
           const sessionData = JSON.parse(storedSession);
           if (sessionData.access_token && sessionData.user) {
-            console.log('[Auth] Edge Mobile: sessão encontrada no storage');
+            console.log('[Auth] Edge Mobile: sessão válida encontrada!');
             const basicUser = supabaseAuthService.mapSupabaseUser(sessionData.user);
             setUser(basicUser);
             setLoading(false);
             clearTimeout(safetyTimeout);
-            
+
             localStorage.setItem('user', JSON.stringify(basicUser));
             localStorage.setItem('user_id', basicUser.uid);
             localStorage.setItem('authToken', sessionData.access_token);
-            
-            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-              detail: { token: sessionData.access_token } 
+
+            window.dispatchEvent(new CustomEvent('auth-token-updated', {
+              detail: { token: sessionData.access_token }
             }));
             return; // Não chamar SDK no Edge Mobile
           }
@@ -170,7 +177,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       clearTimeout(safetyTimeout);
       return; // Não chamar SDK no Edge Mobile
     }
-    
+
     // Outros navegadores: usar SDK normalmente
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user && !user) {
@@ -178,14 +185,14 @@ export function AuthProvider({ children }: AuthProviderProps) {
         setUser(basicUser);
         setLoading(false);
         clearTimeout(safetyTimeout);
-        
+
         localStorage.setItem('user', JSON.stringify(basicUser));
         localStorage.setItem('user_id', basicUser.uid);
         if (session.access_token) {
           localStorage.setItem('authToken', session.access_token);
           // Notificar outros componentes sobre a atualização do token
-          window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-            detail: { token: session.access_token } 
+          window.dispatchEvent(new CustomEvent('auth-token-updated', {
+            detail: { token: session.access_token }
           }));
         }
       } else if (!session) {
@@ -193,61 +200,61 @@ export function AuthProvider({ children }: AuthProviderProps) {
         clearTimeout(safetyTimeout);
       }
     });
-    
+
     // Listener de mudanças de estado de autenticação
     // Edge Mobile: não usar listener pois pode travar
     if (isEdgeMobile) {
-      return () => {}; // Cleanup vazio
+      return () => { }; // Cleanup vazio
     }
-    
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
       // ✅ Para TOKEN_REFRESHED, apenas atualizar o token no localStorage (não reprocessar usuário)
       if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
         console.log('🔄 [Auth] Token renovado automaticamente');
         localStorage.setItem('authToken', session.access_token);
         // Notificar outros componentes sobre a atualização do token
-        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-          detail: { token: session.access_token } 
+        window.dispatchEvent(new CustomEvent('auth-token-updated', {
+          detail: { token: session.access_token }
         }));
         return;
       }
-      
+
       if (session?.user) {
         // Prevenir processamento duplicado
         if (processingRef.current) {
           return;
         }
-        
+
         // Debounce: ignorar se processou o mesmo usuário há menos de 2 segundos
         const now = Date.now();
         if (lastProcessedRef.current === session.user.id && now - lastProcessedTimeRef.current < 2000) {
           return;
         }
-        
+
         processingRef.current = true;
         lastProcessedRef.current = session.user.id;
         lastProcessedTimeRef.current = now;
-        
+
         try {
-          
+
           // Usar mapeamento básico imediatamente para não bloquear a UI
           const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
           setUser(basicUser);
           setLoading(false); // Liberar UI imediatamente
-          
+
           // Salvar no localStorage
           localStorage.setItem('user', JSON.stringify(basicUser));
           localStorage.setItem('user_id', basicUser.uid);
-          
+
           // Salvar token
           if (session.access_token) {
             localStorage.setItem('authToken', session.access_token);
             // Notificar outros componentes sobre a atualização do token
-            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-              detail: { token: session.access_token } 
+            window.dispatchEvent(new CustomEvent('auth-token-updated', {
+              detail: { token: session.access_token }
             }));
           }
-          
+
           // Buscar role do backend em background (não bloqueia UI)
           supabaseAuthService.getUserWithRole(session.user)
             .then((mappedUser) => {
@@ -259,22 +266,22 @@ export function AuthProvider({ children }: AuthProviderProps) {
             });
         } catch (error) {
           processingRef.current = false; // Liberar flag em caso de erro
-          
+
           // Fallback: usar mapeamento básico
           const fallbackUser = supabaseAuthService.mapSupabaseUser(session.user);
           setUser(fallbackUser);
           localStorage.setItem('user', JSON.stringify(fallbackUser));
           localStorage.setItem('user_id', fallbackUser.uid);
-          
+
           // Salvar token mesmo com fallback
           if (session.access_token) {
             localStorage.setItem('authToken', session.access_token);
             // Notificar outros componentes sobre a atualização do token
-            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-              detail: { token: session.access_token } 
+            window.dispatchEvent(new CustomEvent('auth-token-updated', {
+              detail: { token: session.access_token }
             }));
           }
-          
+
           setLoading(false);
         }
       } else {
@@ -285,12 +292,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
         localStorage.removeItem('authToken');
         localStorage.removeItem('userData');
         sessionStorage.removeItem('authToken');
-        
+
         // Garantir que loading seja false
         setLoading(false);
       }
     });
-    
+
     // Cleanup: cancelar inscrição ao desmontar
     return () => {
       subscription.unsubscribe();
@@ -305,18 +312,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-      
+
       const result = await supabaseAuthService.login(email, password);
       setUser(result.user);
-      
+
       localStorage.setItem('user', JSON.stringify(result.user));
       localStorage.setItem('user_id', result.user.uid);
-      
+
       if (result.token) {
         localStorage.setItem('authToken', result.token);
         // Notificar outros componentes sobre a atualização do token
-        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-          detail: { token: result.token } 
+        window.dispatchEvent(new CustomEvent('auth-token-updated', {
+          detail: { token: result.token }
         }));
       }
     } catch (err) {
@@ -336,7 +343,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-      
+
       await supabaseAuthService.loginWithGoogle();
       // O resultado será processado pelo onAuthStateChange
     } catch (err) {
@@ -356,18 +363,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-      
+
       const result = await supabaseAuthService.register(email, password, displayName);
       setUser(result.user);
-      
+
       localStorage.setItem('user', JSON.stringify(result.user));
       localStorage.setItem('user_id', result.user.uid);
-      
+
       if (result.token) {
         localStorage.setItem('authToken', result.token);
         // Notificar outros componentes sobre a atualização do token
-        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
-          detail: { token: result.token } 
+        window.dispatchEvent(new CustomEvent('auth-token-updated', {
+          detail: { token: result.token }
         }));
       }
     } catch (err) {
@@ -386,10 +393,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const logout = async (): Promise<void> => {
     try {
       setLoading(true);
-      
+
       await supabaseAuthService.logout();
       setUser(null);
-      
+
       localStorage.removeItem('user');
       localStorage.removeItem('user_id');
       localStorage.removeItem('authToken');
@@ -409,7 +416,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-      
+
       await supabaseAuthService.forgotPassword(email);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao recuperar senha';
@@ -429,7 +436,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     localStorage.setItem('user', JSON.stringify(userData));
     localStorage.setItem('user_id', userData.uid);
   };
-  
+
   const value: AuthContextValue = {
     user,
     loading,
@@ -473,10 +480,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
  */
 export function useAuth(): AuthContextValue {
   const context = useContext(AuthContext);
-  
+
   if (context === undefined) {
     throw new Error('useAuth deve ser usado dentro de um AuthProvider');
   }
-  
+
   return context;
 }
