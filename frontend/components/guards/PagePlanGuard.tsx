@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { PlanRequired403 } from '../errors/PlanRequired403';
 import { usePlan } from '@/hooks/usePlan';
 
@@ -34,12 +34,35 @@ export function PagePlanGuard({
   requireActivePlan = true,
   customMessage,
 }: PagePlanGuardProps) {
-  const { userPlan, loading, isExpired } = usePlan();
+  const { userPlan, loading, isExpired, refreshPlan } = usePlan();
   const [show403, setShow403] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>(customMessage);
+  const [retryCount, setRetryCount] = useState(0);
+  const maxRetries = 5; // Máximo de tentativas antes de mostrar 403
+  const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const hasTriedRefreshRef = useRef(false);
+
+  // Função para tentar recarregar o plano
+  const tryRefreshPlan = useCallback(async () => {
+    if (hasTriedRefreshRef.current) return;
+    hasTriedRefreshRef.current = true;
+    
+    console.log('[PagePlanGuard] Tentando recarregar plano...');
+    try {
+      await refreshPlan();
+    } catch (err) {
+      console.error('[PagePlanGuard] Erro ao recarregar plano:', err);
+    }
+  }, [refreshPlan]);
 
   // Verifica se tem plano ativo
   useEffect(() => {
+    // Limpar timeout anterior
+    if (retryTimeoutRef.current) {
+      clearTimeout(retryTimeoutRef.current);
+      retryTimeoutRef.current = null;
+    }
+
     // NUNCA mostra 403 enquanto está carregando
     if (loading) {
       setShow403(false);
@@ -53,17 +76,24 @@ export function PagePlanGuard({
     }
 
     // Verifica se o usuário está autenticado
-    const isAuthenticated = typeof window !== 'undefined' &&
-      (localStorage.getItem('authToken') || document.cookie.includes('sb-access-token'));
+    const authToken = typeof window !== 'undefined' ? localStorage.getItem('authToken') : null;
+    const hasCookie = typeof document !== 'undefined' && document.cookie.includes('sb-access-token');
+    const isAuthenticated = !!(authToken || hasCookie);
 
     // Se não está autenticado, não mostra 403 (deixa o AuthContext redirecionar para login)
     if (!isAuthenticated) {
       setShow403(false);
+      setRetryCount(0);
+      hasTriedRefreshRef.current = false;
       return;
     }
 
     // Se tem plano, verifica o status
     if (userPlan) {
+      // Reset retry count quando tem plano
+      setRetryCount(0);
+      hasTriedRefreshRef.current = false;
+
       // Plano ATIVO ou TRIAL - permite acesso
       if (userPlan.status === 'ACTIVE' || userPlan.status === 'TRIAL') {
         setShow403(false);
@@ -106,25 +136,53 @@ export function PagePlanGuard({
     }
 
     // Se chegou aqui: loading=false, authenticated=true, mas userPlan=null
-    // Aguarda 2 segundos antes de mostrar erro (tempo para o plano carregar)
-    // Se após 2s ainda não tem plano, mostra 403
-    const timer = setTimeout(() => {
-      if (!userPlan && !loading) {
-        setShow403(true);
-        setErrorMessage(
-          customMessage ||
-          'Não identificamos um plano ativo na sua conta.'
-        );
+    // Implementar retry progressivo antes de mostrar 403
+    
+    if (retryCount < maxRetries) {
+      // Tentar recarregar o plano após um delay progressivo
+      const delay = Math.min(1000 * (retryCount + 1), 3000); // 1s, 2s, 3s, 3s, 3s
+      
+      console.log(`[PagePlanGuard] Plano não encontrado, tentativa ${retryCount + 1}/${maxRetries} em ${delay}ms`);
+      
+      retryTimeoutRef.current = setTimeout(() => {
+        // Verificar novamente se tem token (pode ter aparecido)
+        const currentToken = localStorage.getItem('authToken');
+        if (currentToken) {
+          tryRefreshPlan();
+        }
+        setRetryCount(prev => prev + 1);
+      }, delay);
+      
+      return;
+    }
+
+    // Após todas as tentativas, mostrar 403
+    console.log('[PagePlanGuard] Todas as tentativas esgotadas, mostrando 403');
+    setShow403(true);
+    setErrorMessage(
+      customMessage ||
+      'Não identificamos um plano ativo na sua conta.'
+    );
+
+    return () => {
+      if (retryTimeoutRef.current) {
+        clearTimeout(retryTimeoutRef.current);
       }
-    }, 2000);
+    };
+  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan]);
 
-    return () => clearTimeout(timer);
-  }, [userPlan, loading, isExpired, requireActivePlan, customMessage]);
+  // Reset quando o componente é desmontado e remontado
+  useEffect(() => {
+    return () => {
+      hasTriedRefreshRef.current = false;
+      if (retryTimeoutRef.current) {
+        clearTimeout(retryTimeoutRef.current);
+      }
+    };
+  }, []);
 
-  // Removido interceptor de fetch que causava o "piscar" do 403
-
-  // Enquanto carrega, mostra loading
-  if (loading) {
+  // Enquanto carrega ou está tentando, mostra loading
+  if (loading || (retryCount > 0 && retryCount < maxRetries && !userPlan)) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />

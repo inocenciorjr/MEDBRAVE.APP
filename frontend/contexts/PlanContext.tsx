@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import type { UserPlan, FeatureAccessResult, LimitUsageResult, PlanFeature, PlanLimit } from '@/types/plan';
 import { planService } from '@/services/planService';
 
@@ -8,14 +8,14 @@ interface PlanContextValue {
   userPlan: UserPlan | null;
   loading: boolean;
   error: string | null;
-  
+
   // Métodos
   refreshPlan: () => Promise<void>;
   checkFeature: (feature: PlanFeature) => Promise<FeatureAccessResult>;
   checkLimit: (limit: PlanLimit, currentUsage: number) => Promise<LimitUsageResult>;
   upgradePlan: (planId: string) => Promise<void>;
   cancelPlan: (reason?: string) => Promise<void>;
-  
+
   // Helpers
   isExpiringSoon: boolean;
   isExpired: boolean;
@@ -33,15 +33,73 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
   const [userPlan, setUserPlan] = useState<UserPlan | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   // Buscar token do localStorage se não for passado como prop
   const [token, setToken] = useState<string | null>(tokenProp || null);
-  
+  const tokenCheckIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const lastTokenRef = useRef<string | null>(null);
+
+  // Efeito para sincronizar token com localStorage
+  // Usa polling para detectar mudanças (storage event não funciona na mesma aba)
   useEffect(() => {
-    if (!tokenProp && typeof window !== 'undefined') {
-      const storedToken = localStorage.getItem('authToken');
-      setToken(storedToken);
+    if (tokenProp) {
+      setToken(tokenProp);
+      return;
     }
+
+    if (typeof window === 'undefined') return;
+
+    // Função para verificar e atualizar token
+    const checkToken = () => {
+      const storedToken = localStorage.getItem('authToken');
+
+      // Só atualiza se o token mudou
+      if (storedToken !== lastTokenRef.current) {
+        console.log('[PlanContext] Token mudou:', storedToken ? 'presente' : 'ausente');
+        lastTokenRef.current = storedToken;
+        setToken(storedToken);
+
+        // Se o token apareceu, limpar cache e forçar reload
+        if (storedToken && !lastTokenRef.current) {
+          planService.clearCache();
+        }
+      }
+    };
+
+    // Verificar imediatamente
+    checkToken();
+
+    // ✅ OTIMIZAÇÃO: Polling reduzido para 2s (evento customizado é o principal mecanismo)
+    tokenCheckIntervalRef.current = setInterval(checkToken, 2000);
+
+    // Também escutar evento de storage (funciona entre abas)
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'authToken') {
+        console.log('[PlanContext] Storage event - token mudou');
+        checkToken();
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+
+    // Escutar evento customizado de atualização de token (disparado pelo callback de auth)
+    const handleAuthTokenUpdated = (e: CustomEvent) => {
+      console.log('[PlanContext] Auth token updated event recebido');
+      const newToken = e.detail?.token || localStorage.getItem('authToken');
+      if (newToken && newToken !== lastTokenRef.current) {
+        lastTokenRef.current = newToken;
+        setToken(newToken);
+        planService.clearCache();
+      }
+    };
+    window.addEventListener('auth-token-updated', handleAuthTokenUpdated as EventListener);
+
+    return () => {
+      if (tokenCheckIntervalRef.current) {
+        clearInterval(tokenCheckIntervalRef.current);
+      }
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('auth-token-updated', handleAuthTokenUpdated as EventListener);
+    };
   }, [tokenProp]);
 
   /**

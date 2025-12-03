@@ -244,12 +244,20 @@ export class SupabaseUserPlanService implements IUserPlanService {
     try {
       const now = new Date();
       
+      // ✅ OTIMIZAÇÃO: Usar JOIN para buscar plano junto com user_plan (evita N+1)
       const { data, error } = await this.supabase
         .from('user_plans')
-        .select('*')
+        .select(`
+          *,
+          plans:plan_id (
+            name,
+            limits,
+            features
+          )
+        `)
         .eq('user_id', userId)
         .in('status', [UserPlanStatus.ACTIVE, UserPlanStatus.TRIAL])
-        .gt('end_date', now.toISOString()) // ✅ Verifica se ainda não expirou
+        .gt('end_date', now.toISOString())
         .order('created_at', { ascending: false });
 
       if (error) {
@@ -259,63 +267,29 @@ export class SupabaseUserPlanService implements IUserPlanService {
         );
       }
 
-      // Buscar o nome do plano para cada user_plan e mapear para camelCase
-      const userPlansWithNames = await Promise.all(
-        data.map(async (item: any) => {
-          try {
-            const { data: planData } = await this.supabase
-              .from('plans')
-              .select('name')
-              .eq('id', item.plan_id)
-              .single();
-
-            return {
-              id: item.id,
-              userId: item.user_id,
-              planId: item.plan_id,
-              planName: planData?.name || item.plan_id,
-              status: item.status,
-              startDate: item.start_date,
-              endDate: item.end_date,
-              lastPaymentId: item.last_payment_id,
-              paymentMethod: item.payment_method,
-              autoRenew: item.auto_renew,
-              metadata: item.metadata || {},
-              cancellationReason: item.cancellation_reason,
-              cancelledAt: item.cancelled_at,
-              nextBillingDate: item.next_billing_date,
-              trialEndsAt: item.trial_ends_at,
-              createdAt: item.created_at,
-              updatedAt: item.updated_at,
-              limits: item.limits || {},
-              features: item.features || [],
-            };
-          } catch (err) {
-            logger.warn(`Erro ao buscar nome do plano ${item.plan_id}: ${err}`);
-            return {
-              id: item.id,
-              userId: item.user_id,
-              planId: item.plan_id,
-              planName: item.plan_id,
-              status: item.status,
-              startDate: item.start_date,
-              endDate: item.end_date,
-              lastPaymentId: item.last_payment_id,
-              paymentMethod: item.payment_method,
-              autoRenew: item.auto_renew,
-              metadata: item.metadata || {},
-              cancellationReason: item.cancellation_reason,
-              cancelledAt: item.cancelled_at,
-              nextBillingDate: item.next_billing_date,
-              trialEndsAt: item.trial_ends_at,
-              createdAt: item.created_at,
-              updatedAt: item.updated_at,
-              limits: item.limits || {},
-              features: item.features || [],
-            };
-          }
-        })
-      );
+      // Mapear para camelCase (agora sem queries adicionais)
+      const userPlansWithNames = data.map((item: any) => ({
+        id: item.id,
+        userId: item.user_id,
+        planId: item.plan_id,
+        planName: item.plans?.name || item.plan_id,
+        status: item.status,
+        startDate: item.start_date,
+        endDate: item.end_date,
+        lastPaymentId: item.last_payment_id,
+        paymentMethod: item.payment_method,
+        autoRenew: item.auto_renew,
+        metadata: item.metadata || {},
+        cancellationReason: item.cancellation_reason,
+        cancelledAt: item.cancelled_at,
+        nextBillingDate: item.next_billing_date,
+        trialEndsAt: item.trial_ends_at,
+        createdAt: item.created_at,
+        updatedAt: item.updated_at,
+        // ✅ Usar limits/features do plano se disponível
+        limits: item.plans?.limits || item.limits || {},
+        features: item.plans?.features || item.features || [],
+      }));
 
       return userPlansWithNames;
     } catch (error) {

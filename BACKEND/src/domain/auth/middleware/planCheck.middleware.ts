@@ -14,6 +14,10 @@ const userPlanCache = new Map<
 >();
 const CACHE_TTL_MS = 30 * 1000;
 
+// ✅ OTIMIZAÇÃO: Instâncias singleton dos serviços (evita criar a cada requisição)
+const planService = new SupabasePlanService(supabase);
+const userPlanService = new SupabaseUserPlanService(supabase, planService);
+
 /**
  * Estende o Request com informações do plano do usuário
  */
@@ -62,24 +66,19 @@ export const planCheckMiddleware = async (
       }
     }
 
-    // Buscar plano ativo do usuário
-    const planService = new SupabasePlanService(supabase);
-    const userPlanService = new SupabaseUserPlanService(supabase, planService);
-
+    // Buscar plano ativo do usuário (usando instâncias singleton)
     let activePlans = await userPlanService.getUserActivePlans(userId);
 
-    // Se não encontrou planos, fazer múltiplas tentativas (race condition no primeiro carregamento)
-    const maxRetries = 3;
-    const retryDelay = 300; // 300ms entre tentativas
-    
-    for (let attempt = 1; attempt <= maxRetries && (!activePlans || activePlans.length === 0); attempt++) {
-      logger.warn(`Usuário ${userId} sem plano ativo na tentativa ${attempt}/${maxRetries}, aguardando...`);
-      await new Promise(resolve => setTimeout(resolve, retryDelay));
+    // Se não encontrou planos, fazer uma única tentativa extra (race condition no primeiro carregamento)
+    // ✅ OTIMIZAÇÃO: Reduzido de 3 tentativas para 1, já que a query agora é mais rápida
+    if (!activePlans || activePlans.length === 0) {
+      logger.warn(`Usuário ${userId} sem plano ativo, aguardando 200ms para retry...`);
+      await new Promise(resolve => setTimeout(resolve, 200));
       activePlans = await userPlanService.getUserActivePlans(userId);
     }
 
     if (!activePlans || activePlans.length === 0) {
-      logger.warn(`Usuário ${userId} sem plano ativo após ${maxRetries} tentativas`);
+      logger.warn(`Usuário ${userId} sem plano ativo após retry`);
       throw new AppError(
         403,
         'Você precisa de um plano ativo para acessar este recurso',
@@ -88,28 +87,17 @@ export const planCheckMiddleware = async (
     }
 
     // Pegar o primeiro plano ativo (usuário pode ter múltiplos)
+    // ✅ OTIMIZAÇÃO: getUserActivePlans agora já traz os dados do plano via JOIN
     const userPlan = activePlans[0];
-
-    // Buscar detalhes do plano
-    const plan = await planService.getPlanById(userPlan.planId);
-
-    if (!plan) {
-      logger.error(`Plano ${userPlan.planId} não encontrado`);
-      throw new AppError(
-        500,
-        'Erro ao verificar plano do usuário',
-        ErrorCodes.INTERNAL_SERVER_ERROR,
-      );
-    }
 
     const userPlanData = {
       id: userPlan.id,
-      planId: plan.id,
-      planName: plan.name,
+      planId: userPlan.planId,
+      planName: userPlan.planName,
       status: userPlan.status,
-      limits: plan.limits,
-      endDate: userPlan.endDate,
-      isActive: userPlan.status === UserPlanStatus.ACTIVE,
+      limits: userPlan.limits,
+      endDate: new Date(userPlan.endDate),
+      isActive: userPlan.status === UserPlanStatus.ACTIVE || userPlan.status === UserPlanStatus.TRIAL,
     };
 
     // Adicionar ao request
@@ -118,7 +106,7 @@ export const planCheckMiddleware = async (
     // Adicionar ao cache
     userPlanCache.set(userId, {
       plan: userPlanData,
-      limits: plan.limits,
+      limits: userPlanData.limits,
       expiresAt: now + CACHE_TTL_MS,
     });
 

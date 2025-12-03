@@ -144,6 +144,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
         localStorage.setItem('user_id', basicUser.uid);
         if (session.access_token) {
           localStorage.setItem('authToken', session.access_token);
+          // Notificar outros componentes sobre a atualização do token
+          window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+            detail: { token: session.access_token } 
+          }));
         }
       } else if (!session) {
         setLoading(false);
@@ -157,6 +161,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
       if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
         console.log('🔄 [Auth] Token renovado automaticamente');
         localStorage.setItem('authToken', session.access_token);
+        // Notificar outros componentes sobre a atualização do token
+        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+          detail: { token: session.access_token } 
+        }));
         return;
       }
       
@@ -190,6 +198,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
           // Salvar token
           if (session.access_token) {
             localStorage.setItem('authToken', session.access_token);
+            // Notificar outros componentes sobre a atualização do token
+            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+              detail: { token: session.access_token } 
+            }));
           }
           
           // Buscar role do backend em background (não bloqueia UI)
@@ -213,6 +225,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
           // Salvar token mesmo com fallback
           if (session.access_token) {
             localStorage.setItem('authToken', session.access_token);
+            // Notificar outros componentes sobre a atualização do token
+            window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+              detail: { token: session.access_token } 
+            }));
           }
           
           setLoading(false);
@@ -254,6 +270,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
       
       if (result.token) {
         localStorage.setItem('authToken', result.token);
+        // Notificar outros componentes sobre a atualização do token
+        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+          detail: { token: result.token } 
+        }));
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao fazer login';
@@ -301,6 +321,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
       
       if (result.token) {
         localStorage.setItem('authToken', result.token);
+        // Notificar outros componentes sobre a atualização do token
+        window.dispatchEvent(new CustomEvent('auth-token-updated', { 
+          detail: { token: result.token } 
+        }));
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao registrar';

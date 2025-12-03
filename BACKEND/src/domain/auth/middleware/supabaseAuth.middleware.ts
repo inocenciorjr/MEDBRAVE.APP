@@ -6,7 +6,7 @@ import { SupabaseUserRepository } from '../repositories/SupabaseUserRepository';
 import { User, CreateUserDTO } from '../repositories/IUserRepository';
 import { UserPlanAssignmentService } from '../services/UserPlanAssignmentService';
 
-// Instância do repository
+// ✅ OTIMIZAÇÃO: Instâncias singleton (evita criar a cada requisição)
 const userRepository = new SupabaseUserRepository();
 const planAssignmentService = new UserPlanAssignmentService();
 
@@ -26,7 +26,17 @@ export interface AuthenticatedRequest extends Request {
 
 // --- CACHE DE USUÁRIO ---
 const userCache = new Map<string, { data: User | null; expiresAt: number }>();
-const CACHE_TTL_MS = 30 * 1000; // 30 segundos
+const CACHE_TTL_MS = 60 * 1000; // ✅ OTIMIZAÇÃO: Aumentado para 60 segundos
+
+// --- CACHE DE TOKEN VERIFICADO ---
+// ✅ OTIMIZAÇÃO: Cache de tokens já verificados para evitar chamadas repetidas ao Supabase Auth
+const tokenCache = new Map<string, { userId: string; email: string; emailVerified: boolean; metadata: any; expiresAt: number }>();
+const TOKEN_CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutos (tokens JWT têm validade maior)
+
+// --- CONTROLE DE CLEANUP DE SESSÕES ---
+// ✅ OTIMIZAÇÃO: Executar cleanup apenas a cada 5 minutos por usuário
+const lastSessionCleanup = new Map<string, number>();
+const SESSION_CLEANUP_INTERVAL_MS = 5 * 60 * 1000; // 5 minutos
 
 async function getUserFromCacheOrRepository(userId: string): Promise<User | null> {
   const now = Date.now();
@@ -40,6 +50,37 @@ async function getUserFromCacheOrRepository(userId: string): Promise<User | null
 
   userCache.set(userId, { data: user, expiresAt: now + CACHE_TTL_MS });
   return user;
+}
+
+/**
+ * Verifica token com cache para evitar chamadas repetidas ao Supabase Auth
+ */
+async function verifyTokenWithCache(token: string): Promise<{ userId: string; email: string; emailVerified: boolean; metadata: any } | null> {
+  const now = Date.now();
+  
+  // Verificar cache primeiro
+  const cached = tokenCache.get(token);
+  if (cached && cached.expiresAt > now) {
+    return cached;
+  }
+
+  // Verificar com Supabase Auth
+  const { data: authData, error: authError } = await supabase.auth.getUser(token);
+
+  if (authError || !authData.user) {
+    return null;
+  }
+
+  const result = {
+    userId: authData.user.id,
+    email: authData.user.email || '',
+    emailVerified: authData.user.email_confirmed_at !== null,
+    metadata: authData.user.user_metadata || {},
+    expiresAt: now + TOKEN_CACHE_TTL_MS,
+  };
+
+  tokenCache.set(token, result);
+  return result;
 }
 
 /**
@@ -79,18 +120,17 @@ export const supabaseAuthMiddleware = async (
     }
 
     try {
-      // Verificar token com Supabase
-      const { data: authData, error: authError } =
-        await supabase.auth.getUser(token);
+      // ✅ OTIMIZAÇÃO: Verificar token com cache (evita chamadas repetidas ao Supabase Auth)
+      const authResult = await verifyTokenWithCache(token);
 
-      if (authError || !authData.user) {
+      if (!authResult) {
         throw new AppError(401, 'Token inválido');
       }
 
-      const userData = await getUserFromCacheOrRepository(authData.user.id);
+      const userData = await getUserFromCacheOrRepository(authResult.userId);
 
       // Obter role diretamente do raw_user_meta_data do Supabase Auth
-      const userRoleFromMetadata = authData.user.user_metadata?.role;
+      const userRoleFromMetadata = authResult.metadata?.role;
       let user_role = 'STUDENT'; // Default em maiúsculo
 
       if (userRoleFromMetadata) {
@@ -133,7 +173,7 @@ export const supabaseAuthMiddleware = async (
 
       // Se usuário não existe OU existe mas não tem slug
       if (!userData || !usernameSlug) {
-        const displayName = userData?.display_name || authData.user.user_metadata?.name || (authData.user.email || '').split('@')[0];
+        const displayName = userData?.display_name || authResult.metadata?.name || authResult.email.split('@')[0];
         const base = sanitize(displayName);
         const rand = Math.random().toString(36).substring(2, 6); // 4 chars
         usernameSlug = `${base}-${rand}`;
@@ -142,10 +182,10 @@ export const supabaseAuthMiddleware = async (
       // Se usuário não existe, criar completo
       if (!userData) {
         const newUser: CreateUserDTO = {
-          id: authData.user.id,
-          email: authData.user.email || '',
-          display_name: authData.user.user_metadata?.name || authData.user.user_metadata?.display_name || authData.user.user_metadata?.full_name || (authData.user.email || '').split('@')[0],
-          photo_url: authData.user.user_metadata?.photoURL || authData.user.user_metadata?.avatar_url || undefined,
+          id: authResult.userId,
+          email: authResult.email,
+          display_name: authResult.metadata?.name || authResult.metadata?.display_name || authResult.metadata?.full_name || authResult.email.split('@')[0],
+          photo_url: authResult.metadata?.photoURL || authResult.metadata?.avatar_url || undefined,
           role: 'student',
           username_slug: usernameSlug,
           mastered_flashcards: 0,
@@ -159,70 +199,77 @@ export const supabaseAuthMiddleware = async (
           await userRepository.create(newUser);
           logger.info(`✅ Usuário criado: ${newUser.email} (${usernameSlug})`);
           
-          // Atribuir plano TRIAL de 7 dias ao novo usuário
-          try {
-            await planAssignmentService.assignTrialPlan(authData.user.id);
-            logger.info(`✅ Plano TRIAL de 7 dias atribuído ao usuário: ${authData.user.id}`);
-          } catch (planError) {
-            logger.error(`❌ Erro ao atribuir plano trial: ${planError}`);
-            // Não falhar a autenticação por erro de plano
-          }
+          // ✅ OTIMIZAÇÃO: Atribuir plano TRIAL em background (não bloqueia resposta)
+          setImmediate(async () => {
+            try {
+              await planAssignmentService.assignTrialPlan(authResult.userId);
+              logger.info(`✅ Plano TRIAL de 7 dias atribuído ao usuário: ${authResult.userId}`);
+            } catch (planError) {
+              logger.error(`❌ Erro ao atribuir plano trial: ${planError}`);
+            }
+          });
         } catch (insertError: any) {
           // Se erro de duplicata, significa que usuário foi criado entre a verificação e agora
           if (insertError.code === '23505') {
             logger.info(`ℹ️ Usuário já existe (criado concorrentemente): ${newUser.email}`);
             // Limpar cache e buscar usuário novamente
-            userCache.delete(authData.user.id);
-            let userData = await getUserFromCacheOrRepository(authData.user.id);
-            if (userData && !userData.username_slug) {
-              usernameSlug = usernameSlug; // Manter o slug gerado
-            } else if (userData) {
-              usernameSlug = userData.username_slug;
+            userCache.delete(authResult.userId);
+            const refreshedUserData = await getUserFromCacheOrRepository(authResult.userId);
+            if (refreshedUserData?.username_slug) {
+              usernameSlug = refreshedUserData.username_slug;
             }
           } else {
             logger.error('Erro ao criar usuário na tabela users:', {
               error: insertError,
               code: insertError.code,
               message: insertError.message,
-              details: insertError.details,
-              hint: insertError.hint,
-              newUser: { id: newUser.id, email: newUser.email, username_slug: newUser.username_slug }
             });
             throw new AppError(500, `Erro ao criar usuário: ${insertError.message}`);
           }
         }
-      } else {
-        // Se usuário existe mas não tem slug, só adicionar slug
-        try {
-          await userRepository.update(authData.user.id, { username_slug: usernameSlug });
-        } catch (updateError: any) {
-          logger.error('Erro ao atualizar username_slug:', updateError);
-        }
+      } else if (!userData.username_slug) {
+        // ✅ OTIMIZAÇÃO: Se usuário existe mas não tem slug, atualizar em background
+        setImmediate(async () => {
+          try {
+            await userRepository.update(authResult.userId, { username_slug: usernameSlug });
+          } catch (updateError: any) {
+            logger.error('Erro ao atualizar username_slug:', updateError);
+          }
+        });
       }
 
       req.user = {
-        id: authData.user.id,
-        email: authData.user.email || '',
+        id: authResult.userId,
+        email: authResult.email,
         user_role: user_role,
-        emailVerified: authData.user.email_confirmed_at !== null,
+        emailVerified: authResult.emailVerified,
         username_slug: usernameSlug,
       };
       req.token = token;
 
-      // Limitar sessões simultâneas (máximo 2 dispositivos)
-      try {
-        const { SessionService } = await import('../services/SessionService');
-        const sessionService = new SessionService();
-        const MAX_SESSIONS = 2;
+      // ✅ OTIMIZAÇÃO: Limitar sessões apenas a cada 5 minutos por usuário
+      const now = Date.now();
+      const lastCleanup = lastSessionCleanup.get(authResult.userId) || 0;
+      
+      if (now - lastCleanup > SESSION_CLEANUP_INTERVAL_MS) {
+        lastSessionCleanup.set(authResult.userId, now);
         
-        const revokedCount = await sessionService.cleanupOldSessions(authData.user.id, MAX_SESSIONS);
-        
-        if (revokedCount > 0) {
-          logger.info(`[SessionLimit] ${revokedCount} sessões antigas revogadas para usuário ${authData.user.id}`);
-        }
-      } catch (sessionError) {
-        // Log do erro mas não bloqueia o fluxo
-        logger.error('[SessionLimit] Erro ao limpar sessões antigas:', sessionError);
+        // Executar cleanup em background (não bloqueia resposta)
+        setImmediate(async () => {
+          try {
+            const { SessionService } = await import('../services/SessionService');
+            const sessionService = new SessionService();
+            const MAX_SESSIONS = 2;
+            
+            const revokedCount = await sessionService.cleanupOldSessions(authResult.userId, MAX_SESSIONS);
+            
+            if (revokedCount > 0) {
+              logger.info(`[SessionLimit] ${revokedCount} sessões antigas revogadas para usuário ${authResult.userId}`);
+            }
+          } catch (sessionError) {
+            logger.error('[SessionLimit] Erro ao limpar sessões antigas:', sessionError);
+          }
+        });
       }
 
       next();
@@ -265,38 +312,34 @@ export const optionalSupabaseAuthMiddleware = async (
     }
 
     try {
-      // Verificar token com Supabase
-      const { data: authData, error: authError } =
-        await supabase.auth.getUser(token);
+      // ✅ OTIMIZAÇÃO: Verificar token com cache
+      const authResult = await verifyTokenWithCache(token);
 
-      if (authError || !authData.user) {
+      if (!authResult) {
         return next();
       }
 
       // Busca o documento do usuário no repository
-      const userData = await getUserFromCacheOrRepository(authData.user.id);
+      const userData = await getUserFromCacheOrRepository(authResult.userId);
 
       // Obter role diretamente do raw_user_meta_data do Supabase Auth
-      const userRoleFromMetadata = authData.user.user_metadata?.role;
+      const userRoleFromMetadata = authResult.metadata?.role;
       let user_role = 'STUDENT'; // Default em maiúsculo
 
       if (userRoleFromMetadata) {
-        // Normalizar: Converter role para maiúsculo para consistência com enum UserRole
         user_role = String(userRoleFromMetadata).toUpperCase();
       } else if (userData && userData.role) {
-        // Fallback para compatibilidade com usuários existentes
         user_role = String(userData.role).toUpperCase();
       }
 
       req.user = {
-        id: authData.user.id,
-        email: authData.user.email || '',
+        id: authResult.userId,
+        email: authResult.email,
         user_role: user_role,
-        emailVerified: authData.user.email_confirmed_at !== null,
+        emailVerified: authResult.emailVerified,
       };
       req.token = token;
     } catch (error) {
-      // Log do erro, mas continua o fluxo
       logger.warn('Erro ao verificar token opcional:', error);
     }
 
