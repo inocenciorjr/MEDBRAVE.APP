@@ -117,10 +117,12 @@ export class QuestionHistoryService {
         const answeredAtStr = this.extractDate(item.answered_at).toISOString();
         const createdAtStr = item.created_at ? this.extractDate(item.created_at).toISOString() : new Date().toISOString();
 
-        if (!item.selected_alternative_id || !item.question_id) {
+        // Se não tem selected_alternative_id ou é string vazia, é questão não respondida
+        if (!item.selected_alternative_id || item.selected_alternative_id === '' || !item.question_id) {
           return {
             ...item,
             is_correct: false,
+            selected_alternative_letter: undefined, // undefined indica não respondida
             answered_at: answeredAtStr,
             created_at: createdAtStr
           } as QuestionAttempt;

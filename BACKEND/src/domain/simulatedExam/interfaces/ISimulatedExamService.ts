@@ -107,4 +107,24 @@ export interface ISimulatedExamService {
   getUserSimulatedExamStatistics(
     userId: string,
   ): Promise<SimulatedExamStatistics>;
+
+  /**
+   * Atualiza o status de uma atribuição de simulado do mentor
+   * @param mentorExamId ID do simulado do mentor
+   * @param userId ID do usuário
+   * @param data Dados para atualização
+   */
+  updateMentorExamAssignment(
+    mentorExamId: string,
+    userId: string,
+    data: {
+      status: string;
+      completed_at?: string;
+      started_at?: string;
+      score?: number;
+      correct_count?: number;
+      incorrect_count?: number;
+      time_spent_seconds?: number;
+    }
+  ): Promise<void>;
 }

@@ -16,6 +16,7 @@ export async function proxy(request: NextRequest) {
   // 3. Define Public Paths (Global Auth Guard)
   const isPublicPath = 
     pathname === '/login' || 
+    pathname === '/mentor-login' ||
     pathname === '/registro' ||
     pathname === '/esqueci-senha' ||
     pathname === '/redefinir-senha' ||

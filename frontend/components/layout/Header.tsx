@@ -49,12 +49,12 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
         // Busca perfil do usuário
         const { data: profile } = await supabase
           .from('users')
-          .select('full_name, avatar_url')
+          .select('display_name, photo_url')
           .eq('id', user.id)
           .single();
 
-        const name = profile?.full_name || user.user_metadata?.full_name || user.email?.split('@')[0] || 'Usuário';
-        const avatar = profile?.avatar_url || user.user_metadata?.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
+        const name = profile?.display_name || user.user_metadata?.full_name || user.email?.split('@')[0] || 'Usuário';
+        const avatar = profile?.photo_url || user.user_metadata?.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
 
         setUserName(name);
         setUserAvatar(avatar);

@@ -14,17 +14,13 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BACKEND_URL: process.env.NEXT_PUBLIC_BACKEND_URL,
   },
   
-  // Otimizar preload de recursos
-  experimental: {
-    optimizeCss: true,
-  },
+
   
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
-        pathname: '/aida-public/**',
       },
       {
         protocol: 'https',

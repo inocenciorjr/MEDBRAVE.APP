@@ -41,5 +41,16 @@ export function createPublicFilterRoutes(
   // POST /api/banco-questoes/questions/by-ids - Busca questões por IDs
   router.post('/questions/by-ids', controller.getQuestionsByIds.bind(controller));
 
+  // POST /api/banco-questoes/questions/search-unified - Busca unificada (detecta ID ou texto automaticamente)
+  router.post('/questions/search-unified', controller.searchQuestionsUnified.bind(controller));
+
+  // POST /api/banco-questoes/questions/search-by-text - Busca questões por texto (full-text search)
+  // @deprecated - Use search-unified
+  router.post('/questions/search-by-text', controller.searchQuestionsByText.bind(controller));
+
+  // POST /api/banco-questoes/questions/search-by-id - Busca questões por ID (parcial ou completo)
+  // @deprecated - Use search-unified
+  router.post('/questions/search-by-id', controller.searchQuestionsById.bind(controller));
+
   return router;
 }

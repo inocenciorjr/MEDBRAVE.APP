@@ -580,4 +580,482 @@ export class FilterService {
       throw error;
     }
   }
+
+  /**
+   * Busca unificada de questões - detecta automaticamente se é ID ou texto
+   * - Se parece UUID (contém hífens e hex) → busca por ID
+   * - Senão → busca por texto com detecção de ano/instituição
+   * Suporta paginação com page e limit
+   */
+  async searchQuestionsUnified(
+    query: string,
+    limit: number = 20,
+    page: number = 1
+  ): Promise<{
+    questions: any[];
+    total: number;
+    page: number;
+    totalPages: number;
+    searchType: 'id' | 'text';
+  }> {
+    try {
+      if (!query || query.trim().length < 2) {
+        return { questions: [], total: 0, page: 1, totalPages: 0, searchType: 'text' };
+      }
+
+      const trimmedQuery = query.trim();
+
+      // Detectar se parece um ID:
+      // Apenas slug completo com hífens (ex: mulher-de-58-anos-com-diagnostico-MVYXAD)
+      // Deve ter pelo menos 2 hífens e terminar com sufixo alfanumérico
+      const looksLikeId = trimmedQuery.includes('-') && 
+                          (trimmedQuery.match(/-/g) || []).length >= 2 &&
+                          /^[a-z0-9-]+-[A-Za-z0-9]{4,}$/i.test(trimmedQuery);
+
+      if (looksLikeId) {
+        const result = await this.searchQuestionsById(trimmedQuery, limit);
+        return { ...result, page: 1, totalPages: Math.ceil(result.total / limit), searchType: 'id' };
+      }
+
+      // Busca por texto com detecção de filtros
+      const result = await this.searchQuestionsByText(trimmedQuery, limit, page);
+      return { ...result, searchType: 'text' };
+    } catch (error) {
+      logger.error('[FilterService] Erro na busca unificada:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões por texto (full-text search no enunciado)
+   * Usa a coluna searchable_text com índice GIN para busca eficiente
+   * Também detecta padrões de ano (ex: 2020) e instituição (ex: USP, SURCE) para filtrar por sub_filter_ids
+   * Instituições são detectadas dinamicamente do banco de dados
+   * Suporta paginação com page e limit
+   */
+  async searchQuestionsByText(
+    textQuery: string,
+    limit: number = 20,
+    page: number = 1
+  ): Promise<{
+    questions: any[];
+    total: number;
+    page: number;
+    totalPages: number;
+  }> {
+    try {
+      if (!textQuery || textQuery.trim().length < 2) {
+        return { questions: [], total: 0, page: 1, totalPages: 0 };
+      }
+
+      const originalQuery = textQuery.trim();
+      const offset = (page - 1) * limit;
+      
+      // Separar termos da busca (por espaço ou +)
+      const terms = originalQuery.toLowerCase().split(/[\s+]+/).filter(t => t.length > 0);
+      
+      const yearFilters: string[] = [];
+      const institutionFilters: string[] = [];
+      const specialtyFilters: string[] = [];
+      const textTerms: string[] = [];
+
+      // Buscar instituições e especialidades disponíveis no banco
+      const [availableInstitutions, availableSpecialties] = await Promise.all([
+        this.getAvailableInstitutions(),
+        this.getAvailableSpecialties(),
+      ]);
+
+      for (const term of terms) {
+        // Detectar anos (4 dígitos entre 2000-2030)
+        if (/^(20[0-3]\d)$/.test(term)) {
+          yearFilters.push(`Ano da Prova_${term}`);
+          continue;
+        }
+        
+        // Detectar instituições dinamicamente
+        const matchedInstitution = availableInstitutions.find(inst => 
+          inst.toLowerCase().includes(term) || 
+          inst.split('_').some(part => part.toLowerCase() === term)
+        );
+        
+        if (matchedInstitution) {
+          institutionFilters.push(matchedInstitution);
+          continue;
+        }
+
+        // Detectar especialidades dinamicamente (ex: cardiologia, pediatria, trauma)
+        const matchedSpecialties = availableSpecialties.filter(spec => {
+          const specLower = spec.toLowerCase();
+          const termLower = term.toLowerCase();
+          // Match se o termo está em alguma parte do filtro (separado por _)
+          return spec.split('_').some(part => 
+            part.toLowerCase().includes(termLower) && termLower.length >= 3
+          );
+        });
+        
+        if (matchedSpecialties.length > 0) {
+          // Pegar o filtro mais específico (mais longo) que faz match
+          const bestMatch = matchedSpecialties.sort((a, b) => {
+            // Priorizar matches exatos em partes do filtro
+            const aExact = a.split('_').some(p => p.toLowerCase() === term);
+            const bExact = b.split('_').some(p => p.toLowerCase() === term);
+            if (aExact && !bExact) return -1;
+            if (!aExact && bExact) return 1;
+            // Depois priorizar filtros mais curtos (mais genéricos = mais resultados)
+            return a.length - b.length;
+          })[0];
+          specialtyFilters.push(bestMatch);
+          continue;
+        }
+
+        // Termo de texto normal (não é filtro)
+        textTerms.push(term);
+      }
+
+      const hasFilters = yearFilters.length > 0 || institutionFilters.length > 0 || specialtyFilters.length > 0;
+      const hasTextSearch = textTerms.length > 0;
+
+      // Se só tem filtros (ano/instituição/especialidade), buscar diretamente por sub_filter_ids
+      if (hasFilters && !hasTextSearch) {
+        return this.searchByFiltersOnly(yearFilters, institutionFilters, limit, page, specialtyFilters);
+      }
+
+      // Se tem filtros + texto, combinar ambos
+      if (hasFilters && hasTextSearch) {
+        return this.searchByFiltersAndText(yearFilters, institutionFilters, textTerms.join(' '), limit, page, specialtyFilters);
+      }
+
+      // Busca normal por texto (sem filtros detectados)
+      const searchTerms = originalQuery.toLowerCase();
+      
+      const { data, error, count } = await supabase
+        .from('questions')
+        .select('id, content, title, filter_ids, sub_filter_ids, tags, difficulty, options, correct_answer, explanation, professor_comment, is_annulled, is_outdated', { count: 'exact' })
+        .eq('status', 'published')
+        .textSearch('searchable_text', searchTerms, {
+          type: 'websearch',
+          config: 'portuguese'
+        })
+        .range(offset, offset + limit - 1);
+
+      if (error) {
+        logger.warn('[FilterService] Full-text search falhou, usando fallback ILIKE:', error);
+        
+        const { data: fallbackData, error: fallbackError, count: fallbackCount } = await supabase
+          .from('questions')
+          .select('id, content, title, filter_ids, sub_filter_ids, tags, difficulty, options, correct_answer, explanation, professor_comment, is_annulled, is_outdated', { count: 'exact' })
+          .eq('status', 'published')
+          .ilike('content', `%${searchTerms}%`)
+          .range(offset, offset + limit - 1);
+
+        if (fallbackError) {
+          logger.error('[FilterService] Erro no fallback de busca por texto:', fallbackError);
+          throw new Error('Erro ao buscar questões por texto');
+        }
+
+        const total = fallbackCount || 0;
+        return {
+          questions: fallbackData || [],
+          total,
+          page,
+          totalPages: Math.ceil(total / limit),
+        };
+      }
+
+      const total = count || 0;
+      return {
+        questions: data || [],
+        total,
+        page,
+        totalPages: Math.ceil(total / limit),
+      };
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar questões por texto:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões apenas por filtros de ano, instituição e especialidade
+   */
+  private async searchByFiltersOnly(
+    yearFilters: string[],
+    institutionFilters: string[],
+    limit: number,
+    page: number = 1,
+    specialtyFilters: string[] = []
+  ): Promise<{ questions: any[]; total: number; page: number; totalPages: number }> {
+    try {
+      const offset = (page - 1) * limit;
+      
+      // Buscar todas as questões e filtrar em memória para combinar AND/OR corretamente
+      const { data: allData, error } = await supabase
+        .from('questions')
+        .select('id, content, title, filter_ids, sub_filter_ids, tags, difficulty, options, correct_answer, explanation, professor_comment, is_annulled, is_outdated')
+        .eq('status', 'published')
+        .limit(2000);
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar por filtros:', error);
+        throw new Error('Erro ao buscar questões por filtros');
+      }
+
+      // Filtrar em memória: AND entre grupos (ano, instituição, especialidade), OR dentro de cada grupo
+      const filtered = (allData || []).filter(q => {
+        const subFilters = q.sub_filter_ids || [];
+        
+        // Ano: deve ter pelo menos um dos anos (se especificado)
+        const matchesYear = yearFilters.length === 0 || 
+          yearFilters.some(y => subFilters.includes(y));
+        
+        // Instituição: deve ter pelo menos uma das instituições (se especificado)
+        const matchesInstitution = institutionFilters.length === 0 || 
+          institutionFilters.some(i => subFilters.some((sf: string) => sf.includes(i)));
+        
+        // Especialidade: deve ter pelo menos uma das especialidades (se especificado)
+        const matchesSpecialty = specialtyFilters.length === 0 || 
+          specialtyFilters.some(s => subFilters.some((sf: string) => sf.startsWith(s) || sf === s));
+        
+        return matchesYear && matchesInstitution && matchesSpecialty;
+      });
+
+      const total = filtered.length;
+      return {
+        questions: filtered.slice(offset, offset + limit),
+        total,
+        page,
+        totalPages: Math.ceil(total / limit),
+      };
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar por filtros:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões combinando filtros de ano/instituição/especialidade com busca de texto
+   */
+  private async searchByFiltersAndText(
+    yearFilters: string[],
+    institutionFilters: string[],
+    textQuery: string,
+    limit: number,
+    page: number = 1,
+    specialtyFilters: string[] = []
+  ): Promise<{ questions: any[]; total: number; page: number; totalPages: number }> {
+    try {
+      // Primeiro buscar por texto (buscar todos para filtrar depois)
+      const { data: textResults, error: textError } = await supabase
+        .from('questions')
+        .select('id, content, title, filter_ids, sub_filter_ids, tags, difficulty, options, correct_answer, explanation, professor_comment, is_annulled, is_outdated')
+        .eq('status', 'published')
+        .textSearch('searchable_text', textQuery, {
+          type: 'websearch',
+          config: 'portuguese'
+        })
+        .limit(1000); // Buscar mais para depois filtrar
+
+      if (textError) {
+        logger.error('[FilterService] Erro na busca por texto:', textError);
+        throw new Error('Erro ao buscar questões');
+      }
+
+      if (!textResults || textResults.length === 0) {
+        return { questions: [], total: 0, page: 1, totalPages: 0 };
+      }
+
+      // Filtrar resultados pelos filtros de ano, instituição e especialidade
+      const filtered = textResults.filter(q => {
+        const subFilters = q.sub_filter_ids || [];
+        
+        // Verificar se tem pelo menos um dos anos (se especificado)
+        const matchesYear = yearFilters.length === 0 || 
+          yearFilters.some(y => subFilters.includes(y));
+        
+        // Verificar se tem pelo menos uma das instituições (se especificado)
+        const matchesInstitution = institutionFilters.length === 0 || 
+          institutionFilters.some(i => subFilters.some((sf: string) => sf.includes(i)));
+        
+        // Verificar se tem pelo menos uma das especialidades (se especificado)
+        const matchesSpecialty = specialtyFilters.length === 0 || 
+          specialtyFilters.some(s => subFilters.some((sf: string) => sf.startsWith(s) || sf === s));
+        
+        return matchesYear && matchesInstitution && matchesSpecialty;
+      });
+
+      const total = filtered.length;
+      const offset = (page - 1) * limit;
+      
+      return {
+        questions: filtered.slice(offset, offset + limit),
+        total,
+        page,
+        totalPages: Math.ceil(total / limit),
+      };
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar por filtros e texto:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Busca questões por ID (parcial ou completo)
+   * Permite buscar pelo ID completo ou pelos últimos caracteres (sufixo)
+   */
+  async searchQuestionsById(idQuery: string, limit: number = 20): Promise<{
+    questions: any[];
+    total: number;
+  }> {
+    try {
+      if (!idQuery || idQuery.trim().length < 2) {
+        return { questions: [], total: 0 };
+      }
+
+      const searchId = idQuery.trim();
+      
+      // Buscar questões cujo ID contém o termo de busca (case-insensitive)
+      const { data, error, count } = await supabase
+        .from('questions')
+        .select('id, content, title, filter_ids, sub_filter_ids, tags, difficulty, options, correct_answer, explanation, professor_comment, is_annulled, is_outdated', { count: 'exact' })
+        .eq('status', 'published')
+        .ilike('id', `%${searchId}%`)
+        .limit(limit);
+
+      if (error) {
+        logger.error('[FilterService] Erro ao buscar questões por ID:', error);
+        throw new Error('Erro ao buscar questões por ID');
+      }
+
+      return {
+        questions: data || [],
+        total: count || 0,
+      };
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar questões por ID:', error);
+      throw error;
+    }
+  }
+
+  // Cache para instituições disponíveis
+  private institutionsCache: string[] | null = null;
+  private institutionsCacheTime: number = 0;
+  private readonly CACHE_TTL = 5 * 60 * 1000; // 5 minutos
+
+  /**
+   * Busca instituições disponíveis no banco de dados
+   * Retorna lista de sub_filter_ids que começam com "Universidade_"
+   * Usa cache de 5 minutos para evitar queries repetidas
+   */
+  private async getAvailableInstitutions(): Promise<string[]> {
+    // Usar fallback direto (mais confiável que RPC)
+    return this.getAvailableInstitutionsFallback();
+  }
+
+  /**
+   * Fallback para buscar instituições sem RPC
+   */
+  private async getAvailableInstitutionsFallback(): Promise<string[]> {
+    try {
+      // Verificar cache
+      if (this.institutionsCache && Date.now() - this.institutionsCacheTime < this.CACHE_TTL) {
+        return this.institutionsCache;
+      }
+
+      // Buscar uma amostra de questões e extrair instituições únicas
+      const { data, error } = await supabase
+        .from('questions')
+        .select('sub_filter_ids')
+        .not('sub_filter_ids', 'is', null)
+        .limit(1000);
+
+      if (error) {
+        logger.error('[FilterService] Erro no fallback de instituições:', error);
+        return [];
+      }
+
+      const institutionsSet = new Set<string>();
+      
+      for (const row of data || []) {
+        const subFilters = row.sub_filter_ids || [];
+        for (const sf of subFilters) {
+          if (typeof sf === 'string' && sf.startsWith('Universidade_')) {
+            institutionsSet.add(sf);
+          }
+        }
+      }
+
+      const institutions = Array.from(institutionsSet);
+      
+      // Atualizar cache
+      this.institutionsCache = institutions;
+      this.institutionsCacheTime = Date.now();
+
+      return institutions;
+    } catch (error) {
+      logger.error('[FilterService] Erro no fallback de instituições:', error);
+      return [];
+    }
+  }
+
+  // Cache para especialidades disponíveis
+  private specialtiesCache: string[] | null = null;
+  private specialtiesCacheTime: number = 0;
+
+  /**
+   * Busca especialidades disponíveis no banco de dados
+   * Retorna lista de sub_filter_ids que são especialidades (não são Universidade_ nem Ano da Prova_)
+   * Usa cache de 5 minutos para evitar queries repetidas
+   */
+  private async getAvailableSpecialties(): Promise<string[]> {
+    // Usar fallback direto (mais confiável que RPC)
+    return this.getAvailableSpecialtiesFallback();
+  }
+
+  /**
+   * Fallback para buscar especialidades sem RPC
+   */
+  private async getAvailableSpecialtiesFallback(): Promise<string[]> {
+    try {
+      // Verificar cache
+      if (this.specialtiesCache && Date.now() - this.specialtiesCacheTime < this.CACHE_TTL) {
+        return this.specialtiesCache;
+      }
+
+      // Buscar uma amostra de questões e extrair especialidades únicas
+      const { data, error } = await supabase
+        .from('questions')
+        .select('sub_filter_ids')
+        .not('sub_filter_ids', 'is', null)
+        .limit(1000);
+
+      if (error) {
+        logger.error('[FilterService] Erro no fallback de especialidades:', error);
+        return [];
+      }
+
+      const specialtiesSet = new Set<string>();
+      
+      for (const row of data || []) {
+        const subFilters = row.sub_filter_ids || [];
+        for (const sf of subFilters) {
+          if (typeof sf === 'string' && 
+              !sf.startsWith('Universidade_') && 
+              !sf.startsWith('Ano da Prova_')) {
+            specialtiesSet.add(sf);
+          }
+        }
+      }
+
+      const specialties = Array.from(specialtiesSet);
+      
+      // Atualizar cache
+      this.specialtiesCache = specialties;
+      this.specialtiesCacheTime = Date.now();
+
+      return specialties;
+    } catch (error) {
+      logger.error('[FilterService] Erro no fallback de especialidades:', error);
+      return [];
+    }
+  }
 }

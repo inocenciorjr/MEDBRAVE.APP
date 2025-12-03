@@ -197,4 +197,92 @@ export class PublicFilterController {
       next(error);
     }
   }
+
+  /**
+   * POST /api/banco-questoes/questions/search
+   * Busca unificada - detecta automaticamente se é ID ou texto
+   * Suporta paginação com page e limit
+   */
+  async searchQuestionsUnified(
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
+    try {
+      const { query, limit = 20, page = 1 } = req.body;
+
+      if (!query || typeof query !== 'string') {
+        res.status(400).json({
+          success: false,
+          error: 'query é obrigatório e deve ser uma string',
+        });
+        return;
+      }
+
+      const result = await this.filterService.searchQuestionsUnified(query, limit, page);
+      res.json({ success: true, data: result });
+    } catch (error) {
+      logger.error('[PublicFilterController] Erro na busca unificada:', error);
+      next(error);
+    }
+  }
+
+  /**
+   * POST /api/banco-questoes/questions/search-by-text
+   * Busca questões por texto (full-text search no enunciado)
+   * Suporta paginação com page e limit
+   * @deprecated Use searchQuestionsUnified instead
+   */
+  async searchQuestionsByText(
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
+    try {
+      const { textQuery, limit = 20, page = 1 } = req.body;
+
+      if (!textQuery || typeof textQuery !== 'string') {
+        res.status(400).json({
+          success: false,
+          error: 'textQuery é obrigatório e deve ser uma string',
+        });
+        return;
+      }
+
+      const result = await this.filterService.searchQuestionsByText(textQuery, limit, page);
+      res.json({ success: true, data: result });
+    } catch (error) {
+      logger.error('[PublicFilterController] Erro ao buscar questões por texto:', error);
+      next(error);
+    }
+  }
+
+  /**
+   * POST /api/banco-questoes/questions/search-by-id
+   * Busca questões por ID (parcial ou completo)
+   * @deprecated Use searchQuestionsUnified instead
+   */
+  async searchQuestionsById(
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {
+    try {
+      const { idQuery, limit = 20 } = req.body;
+
+      if (!idQuery || typeof idQuery !== 'string') {
+        res.status(400).json({
+          success: false,
+          error: 'idQuery é obrigatório e deve ser uma string',
+        });
+        return;
+      }
+
+      const result = await this.filterService.searchQuestionsById(idQuery, limit);
+      res.json({ success: true, data: result });
+    } catch (error) {
+      logger.error('[PublicFilterController] Erro ao buscar questões por ID:', error);
+      next(error);
+    }
+  }
 }

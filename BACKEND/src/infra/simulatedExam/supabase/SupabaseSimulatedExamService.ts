@@ -178,16 +178,29 @@ export class SupabaseSimulatedExamService {
     const userId = options.createdBy!;
     console.log('🔍 listSimulatedExams chamado com userId:', userId);
     
-    // Buscar simulados do usuário
-    const { data: userExams, error: userError } = await this.supabase
+    // Buscar simulados criados pelo usuário
+    const { data: createdExams, error: createdError } = await this.supabase
       .from('simulated_exams')
       .select('*')
       .eq('created_by', userId)
       .order('created_at', { ascending: false });
 
-    if (userError) {
-      console.error('❌ Erro ao buscar simulados do usuário:', userError);
-      throw new Error(`Erro ao buscar simulados: ${userError.message}`);
+    if (createdError) {
+      console.error('❌ Erro ao buscar simulados criados:', createdError);
+      throw new Error(`Erro ao buscar simulados: ${createdError.message}`);
+    }
+
+    // Buscar simulados atribuídos ao usuário (por mentor)
+    const { data: assignedExams, error: assignedError } = await this.supabase
+      .from('simulated_exams')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('assigned_by_mentor', true)
+      .order('created_at', { ascending: false });
+
+    if (assignedError) {
+      console.error('❌ Erro ao buscar simulados atribuídos:', assignedError);
+      // Não lançar erro, apenas logar (campo pode não existir em DBs antigos)
     }
 
     // Buscar simulados públicos
@@ -203,22 +216,48 @@ export class SupabaseSimulatedExamService {
       throw new Error(`Erro ao buscar simulados públicos: ${publicError.message}`);
     }
 
-    // Combinar resultados
-    let allExams = [...(userExams || []), ...(publicExams || [])];
+    // Combinar resultados (evitando duplicatas)
+    const seenExamIds = new Set<string>();
+    const allExams: any[] = [];
+    
+    // Adicionar simulados criados pelo usuário
+    (createdExams || []).forEach(exam => {
+      if (!seenExamIds.has(exam.id)) {
+        seenExamIds.add(exam.id);
+        allExams.push(exam);
+      }
+    });
+    
+    // Adicionar simulados atribuídos pelo mentor
+    (assignedExams || []).forEach(exam => {
+      if (!seenExamIds.has(exam.id)) {
+        seenExamIds.add(exam.id);
+        allExams.push({ ...exam, assignedByMentor: true });
+      }
+    });
+    
+    // Adicionar simulados públicos
+    (publicExams || []).forEach(exam => {
+      if (!seenExamIds.has(exam.id)) {
+        seenExamIds.add(exam.id);
+        allExams.push(exam);
+      }
+    });
     
     console.log('✅ Simulados encontrados:', {
-      user: userExams?.length || 0,
+      created: createdExams?.length || 0,
+      assigned: assignedExams?.length || 0,
       public: publicExams?.length || 0,
       total: allExams.length
     });
 
     // Buscar resultados do usuário para cada simulado
-    const examIds = allExams.map(exam => exam.id);
+    const examIdsForResults = allExams.map(exam => exam.id);
     const { data: results, error: resultsError } = await this.supabase
       .from('simulated_exam_results')
       .select('*')
       .eq('user_id', userId)
-      .in('simulated_exam_id', examIds)
+      .in('simulated_exam_id', examIdsForResults)
       .order('created_at', { ascending: false });
 
     if (resultsError) {
@@ -715,5 +754,82 @@ export class SupabaseSimulatedExamService {
     }
 
     return exams || [];
+  }
+
+  async updateMentorExamAssignment(
+    mentorExamId: string,
+    userId: string,
+    data: {
+      status: string;
+      completed_at?: string;
+      started_at?: string;
+      score?: number;
+      correct_count?: number;
+      incorrect_count?: number;
+      time_spent_seconds?: number;
+    }
+  ): Promise<void> {
+    console.log('[SupabaseSimulatedExamService] Atualizando mentor_exam_assignments:', {
+      mentorExamId,
+      userId,
+      data
+    });
+
+    const { error } = await this.supabase
+      .from('mentor_exam_assignments')
+      .update({
+        status: data.status,
+        completed_at: data.completed_at,
+        started_at: data.started_at,
+        score: data.score,
+        correct_count: data.correct_count,
+        incorrect_count: data.incorrect_count,
+        time_spent_seconds: data.time_spent_seconds,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('mentor_exam_id', mentorExamId)
+      .eq('user_id', userId);
+
+    if (error) {
+      console.error('[SupabaseSimulatedExamService] Erro ao atualizar mentor_exam_assignments:', error);
+      throw new Error(`Erro ao atualizar atribuição do mentor: ${error.message}`);
+    }
+
+    // Se o status é 'completed', atualizar a média do mentor_simulated_exams
+    if (data.status === 'completed') {
+      try {
+        // Buscar todas as atribuições completadas para calcular a média
+        const { data: completedAssignments } = await this.supabase
+          .from('mentor_exam_assignments')
+          .select('score, correct_count, incorrect_count')
+          .eq('mentor_exam_id', mentorExamId)
+          .eq('status', 'completed');
+
+        if (completedAssignments && completedAssignments.length > 0) {
+          // Calcular média de acertos (score / total * 100)
+          const avgScore = completedAssignments.reduce((sum, a) => {
+            const total = (a.correct_count || 0) + (a.incorrect_count || 0);
+            if (total === 0) return sum;
+            return sum + ((a.correct_count || 0) / total * 100);
+          }, 0) / completedAssignments.length;
+
+          // Atualizar mentor_simulated_exams com a nova média
+          await this.supabase
+            .from('mentor_simulated_exams')
+            .update({ 
+              average_score: Math.round(avgScore * 100) / 100,
+              updated_at: new Date().toISOString()
+            })
+            .eq('id', mentorExamId);
+
+          console.log('[SupabaseSimulatedExamService] average_score atualizado:', avgScore);
+        }
+      } catch (avgError) {
+        console.error('[SupabaseSimulatedExamService] Erro ao atualizar average_score:', avgError);
+        // Não falhar a operação principal
+      }
+    }
+
+    console.log('[SupabaseSimulatedExamService] mentor_exam_assignments atualizado com sucesso');
   }
 }

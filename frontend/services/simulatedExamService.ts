@@ -21,6 +21,11 @@ export interface SimulatedExam {
     randomizeQuestions: boolean;
     allowReview: boolean;
   };
+  // Campos para simulados de mentor
+  assigned_by_mentor?: boolean;
+  creator_name?: string;
+  available_at?: string;
+  mentor_exam_id?: string;
 }
 
 export interface SimulatedExamResult {
@@ -144,10 +149,11 @@ class SimulatedExamService {
   /**
    * Iniciar um simulado
    */
-  async startSimulatedExam(examId: string): Promise<StartSimulatedExamResponse> {
+  async startSimulatedExam(examId: string, customTimeLimitMinutes?: number): Promise<StartSimulatedExamResponse> {
     const response = await api.post(`/simulated-exams/${examId}/start`, {
       device: navigator.userAgent,
       browser: navigator.userAgent,
+      customTimeLimitMinutes,
     });
     return response.data.data;
   }

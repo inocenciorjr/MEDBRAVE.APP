@@ -120,6 +120,9 @@ function AuthCallbackContent() {
                 finalRedirect = '/mentor';
               }
 
+              // Aguardar um pouco para garantir que a sessão foi persistida
+              await new Promise(resolve => setTimeout(resolve, 500));
+
               // Redirecionar
               console.log('🔍 [Callback] Redirect final:', finalRedirect);
               if (window.opener) {
@@ -127,9 +130,9 @@ function AuthCallbackContent() {
                 await new Promise(resolve => setTimeout(resolve, 500));
                 window.close();
               } else {
-                const redirectUrl = finalRedirect.startsWith('http') ? finalRedirect : `${window.location.origin}${finalRedirect}`;
-                console.log('🔍 [Callback] Redirecionando para:', redirectUrl);
-                window.location.href = redirectUrl;
+                // Usar router.push ao invés de window.location.href para evitar reload completo
+                console.log('🔍 [Callback] Redirecionando para:', finalRedirect);
+                router.push(finalRedirect);
               }
             }
           } else {

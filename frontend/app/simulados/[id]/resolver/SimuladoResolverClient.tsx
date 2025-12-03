@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback, useMemo } from 'react';
+import { useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { QuestionView } from '@/components/resolucao-questoes/QuestionView';
 import { Question } from '@/types/resolucao-questoes';
@@ -11,7 +11,7 @@ interface SimuladoResolverClientProps {
   simuladoId: string;
   resultId: string;
   questions: Question[];
-  timeLimit: number;
+  timeLimit: number | null;
 }
 
 export default function SimuladoResolverClient({ 
@@ -45,7 +45,14 @@ export default function SimuladoResolverClient({
   const startTimeKey = `simulado_start_time_${resultId}`;
   
   // Inicializar ou recuperar o timer
+  // Se timeLimit é 0, null ou undefined, significa tempo ilimitado
   const [timeRemaining, setTimeRemaining] = useState(() => {
+    // Se não há limite de tempo, retornar um valor alto (não será usado)
+    if (!timeLimit || timeLimit <= 0) {
+      console.log('[Simulado] Sem limite de tempo definido');
+      return 0; // Valor não importa pois hasTimeLimit será false
+    }
+    
     const savedTime = localStorage.getItem(timerKey);
     const savedStartTime = localStorage.getItem(startTimeKey);
     
@@ -122,9 +129,22 @@ export default function SimuladoResolverClient({
   }, [questions]);
 
   // Timer do simulado com persistência
+  // Se timeLimit é 0 ou não definido, significa tempo ilimitado
+  const hasTimeLimit = timeLimit !== null && timeLimit > 0;
+  
+  // Ref para controlar se já iniciou a finalização (evita chamadas duplas do useEffect)
+  const finishingRef = useRef(false);
+  
   useEffect(() => {
-    if (timeRemaining <= 0) {
+    // Se não tem limite de tempo, não fazer nada com o timer
+    if (!hasTimeLimit) {
+      console.log('[Simulado] Sem limite de tempo definido');
+      return;
+    }
+    
+    if (timeRemaining <= 0 && !finishingRef.current) {
       console.log('[Simulado] Tempo esgotado, finalizando automaticamente');
+      finishingRef.current = true;
       handleFinishSimulado();
       return;
     }
@@ -146,7 +166,7 @@ export default function SimuladoResolverClient({
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeRemaining, timerKey, startTimeKey]);
+  }, [timeRemaining, timerKey, startTimeKey, hasTimeLimit]);
 
   const handleFinishSimulado = async () => {
     if (isFinishing) return; // Evitar cliques duplos
@@ -175,7 +195,7 @@ export default function SimuladoResolverClient({
       console.log('[Simulado] Respostas coletadas:', Object.keys(answers).length);
       
       // Calcular tempo gasto
-      const timeSpent = (timeLimit * 60) - timeRemaining;
+      const timeSpent = hasTimeLimit ? ((timeLimit || 0) * 60) - timeRemaining : 0;
       
       // Enviar respostas e finalizar simulado no backend
       const { simulatedExamService } = await import('@/services/simulatedExamService');
@@ -187,12 +207,8 @@ export default function SimuladoResolverClient({
       
       console.log('[Simulado] Simulado finalizado com sucesso');
       
-      // Aguardar um pouco para garantir que o backend processou todas as tentativas
-      // (as tentativas são registradas em paralelo no backend)
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Redirecionar para resultados com timestamp para forçar reload
-      router.push(`/simulados/${simuladoId}/resultado?resultId=${resultId}&t=${Date.now()}`);
+      // Redirecionar imediatamente para resultados
+      router.push(`/simulados/${simuladoId}/resultado?resultId=${resultId}`);
     } catch (error: any) {
       console.error('Erro ao finalizar simulado:', error);
       toast.error(error.message || 'Erro ao finalizar simulado');
@@ -267,13 +283,13 @@ export default function SimuladoResolverClient({
             
             {/* Timer */}
             <div className={`flex items-center gap-3 px-6 py-3 rounded-xl shadow-xl ${
-              timeRemaining < 300 
+              hasTimeLimit && timeRemaining < 300 
                 ? 'bg-red-500 animate-pulse' 
                 : 'bg-white/20 backdrop-blur-sm'
             }`}>
               <span className="material-symbols-outlined text-2xl">timer</span>
               <span className="text-2xl font-mono font-bold">
-                {formatTime(timeRemaining)}
+                {hasTimeLimit ? formatTime(timeRemaining) : 'Sem limite'}
               </span>
             </div>
 
@@ -299,9 +315,17 @@ export default function SimuladoResolverClient({
 
               <button
                 onClick={() => setShowFinishModal(true)}
-                className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+                disabled={isFinishing}
+                className="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
               >
-                Finalizar Simulado
+                {isFinishing ? (
+                  <>
+                    <span className="material-symbols-outlined animate-spin text-lg">progress_activity</span>
+                    Finalizando...
+                  </>
+                ) : (
+                  'Finalizar Simulado'
+                )}
               </button>
             </div>
           </div>
@@ -364,7 +388,7 @@ export default function SimuladoResolverClient({
                   </span>
                 </div>
                 <div className="text-sm font-bold text-text-light-primary dark:text-text-dark-primary">
-                  {formatTime(timeLimit * 60 - timeRemaining)}
+                  {hasTimeLimit ? formatTime((timeLimit || 0) * 60 - timeRemaining) : 'Sem limite'}
                 </div>
                 <div className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
                   tempo do simulado
@@ -429,7 +453,14 @@ export default function SimuladoResolverClient({
                 disabled={isFinishing}
                 className="px-6 py-2.5 rounded-md font-semibold text-sm bg-red-500 hover:bg-red-600 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               >
-                {isFinishing ? 'Finalizando...' : 'Finalizar simulado'}
+                {isFinishing ? (
+                  <>
+                    <span className="material-symbols-outlined animate-spin text-lg">progress_activity</span>
+                    Finalizando...
+                  </>
+                ) : (
+                  'Finalizar simulado'
+                )}
               </button>
             </div>
           </div>

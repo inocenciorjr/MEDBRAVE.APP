@@ -421,6 +421,82 @@ router.get('/bucket-info', async (_req, res) => {
   }
 });
 
+// Upload direto via proxy (recebe base64, faz upload no servidor)
+// Isso evita problemas de CORS ao fazer upload direto do browser para o R2
+router.post('/upload-base64', async (req, res) => {
+  try {
+    const { dataUri, filename, folder = 'uploads', metadata = {} } = req.body;
+
+    if (!dataUri) {
+      return res.status(400).json({
+        success: false,
+        error: 'dataUri é obrigatório',
+      });
+    }
+
+    // Validar data URI
+    const matches = dataUri.match(/^data:(.+);base64,(.+)$/);
+    if (!matches) {
+      return res.status(400).json({
+        success: false,
+        error: 'Data URI inválido',
+      });
+    }
+
+    const mimeType = matches[1];
+    const base64Data = matches[2];
+    const buffer = Buffer.from(base64Data, 'base64');
+
+    // Validar tipo de arquivo
+    if (!r2Service.validateFileType(mimeType)) {
+      return res.status(400).json({
+        success: false,
+        error: 'Tipo de arquivo não permitido',
+        allowedTypes: ['image/jpeg', 'image/png', 'image/gif', 'image/webp'],
+      });
+    }
+
+    // Sanitizar inputs
+    const safeFolder = String(folder).replace(/[^a-zA-Z0-9_\-/]/g, '');
+    
+    // Gerar nome do arquivo
+    let safeFilename: string;
+    if (filename) {
+      safeFilename = String(filename).replace(/[^a-zA-Z0-9_\-.]/g, '');
+    } else {
+      const timestamp = Date.now();
+      const randomId = Math.random().toString(36).substring(2, 15);
+      const extension = mimeType.split('/')[1] || 'jpg';
+      safeFilename = `img_${timestamp}_${randomId}.${extension}`;
+    }
+
+    // Gerar chave do arquivo
+    const fileKey = `${safeFolder}/${Date.now()}_${Math.random().toString(36).substring(2, 15)}_${safeFilename}`;
+
+    // Fazer upload direto para o R2
+    const uploadResult = await r2Service.uploadBuffer(buffer, fileKey, mimeType, metadata);
+
+    logger.info('Upload base64 concluído via API', {
+      fileKey,
+      folder: safeFolder,
+      size: buffer.length,
+    });
+
+    return res.json({
+      success: true,
+      url: uploadResult.publicUrl,
+      fileKey: uploadResult.fileKey,
+      size: buffer.length,
+    });
+  } catch (error: any) {
+    logger.error('Erro no upload base64 via API', { error });
+    return res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
+});
+
 // Helper function
 function getContentTypeFromFilename(filename: string): string {
   const extension = filename.toLowerCase().split('.').pop();

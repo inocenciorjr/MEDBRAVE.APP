@@ -66,7 +66,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
   };
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex min-h-screen">
       {/* Mobile Overlay */}
       {isMobile && isMobileSidebarOpen && !isFocusMode && (
         <div
@@ -105,7 +105,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
       )}
 
       {/* Main Content */}
-      <main className={`w-full overflow-y-auto h-screen bg-background-light dark:bg-background-dark transition-all duration-300 ${
+      <main className={`w-full min-h-screen bg-background-light dark:bg-background-dark transition-all duration-300 ${
         isFocusMode ? '' : isMobile ? '' : 'pl-24'
       }`}>
         <div className={`transition-all duration-500 ease-in-out ${isFocusMode ? 'p-0 h-full' : 'p-4 md:p-8'}`}>

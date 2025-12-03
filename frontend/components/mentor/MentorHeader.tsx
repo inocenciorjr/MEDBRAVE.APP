@@ -69,7 +69,7 @@ export default function MentorHeader({ mentorProfile, onMenuClick }: MentorHeade
             <div className="flex items-center gap-3 pl-3 border-l border-border-light dark:border-border-dark">
               <div className="relative w-10 h-10 rounded-full overflow-hidden bg-primary/10 ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-200 cursor-pointer">
                 {mentorProfile?.avatar ? (
-                  <Image src={mentorProfile.avatar} alt={mentorProfile.name || 'Mentor'} fill className="object-cover" />
+                  <Image src={mentorProfile.avatar} alt={mentorProfile.name || 'Mentor'} fill sizes="40px" className="object-cover" />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <span className="material-symbols-outlined text-primary">person</span>

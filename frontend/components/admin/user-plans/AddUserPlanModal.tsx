@@ -280,7 +280,7 @@ export function AddUserPlanModal({
               className="w-full px-4 py-2 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary focus:ring-2 focus:ring-primary focus:border-primary"
               required
             >
-              <option value="admin">Admin (Manual)</option>
+              <option value="ADMIN">Admin (Manual)</option>
               <option value="PIX">PIX</option>
               <option value="CREDIT_CARD">Cartão de Crédito</option>
             </select>

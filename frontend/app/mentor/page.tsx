@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
+import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import MentorDashboardStats from '@/components/mentor/MentorDashboardStats';
-import MentorRecentActivity from '@/components/mentor/MentorRecentActivity';
+
 import MentorQuickActions from '@/components/mentor/MentorQuickActions';
-import MentorMenteesOverview from '@/components/mentor/MentorMenteesOverview';
+import MentorProgramsOverview from '@/components/mentor/MentorProgramsOverview';
 import { MentorDashboardSkeleton } from '@/components/mentor/skeletons/MentorDashboardSkeleton';
 
 export default function MentorDashboardPage() {
@@ -16,16 +17,28 @@ export default function MentorDashboardPage() {
     const loadDashboardData = async () => {
       try {
         const supabase = createClient();
-        const { data: { user } } = await supabase.auth.getUser();
+        const { data: { session } } = await supabase.auth.getSession();
 
-        if (!user) return;
+        if (!session) return;
 
-        // Buscar dados do dashboard
-        // TODO: Implementar chamadas reais à API
+        // Buscar estatísticas de programas
+        const programsResponse = await fetch('/api/mentorship/programs', {
+          headers: { Authorization: `Bearer ${session.access_token}` }
+        });
+        const programsData = await programsResponse.json();
+        const programs = programsData.data || [];
+
+        // Buscar mentorados
+        const menteesResponse = await fetch('/api/mentorship/mentor/mentees', {
+          headers: { Authorization: `Bearer ${session.access_token}` }
+        });
+        const menteesData = await menteesResponse.json();
+        const mentees = menteesData.data || [];
+
         setDashboardData({
-          totalMentees: 0,
-          activeMentorships: 0,
-          pendingRequests: 0,
+          totalMentees: mentees.length,
+          activePrograms: programs.filter((p: any) => ['active', 'approved'].includes(p.status)).length,
+          pendingPrograms: programs.filter((p: any) => p.status === 'pending_approval').length,
           completedSessions: 0,
           upcomingMeetings: [],
           recentActivity: [],
@@ -46,6 +59,13 @@ export default function MentorDashboardPage() {
 
   return (
     <div className="space-y-6 lg:space-y-8">
+      {/* Breadcrumb */}
+      <Breadcrumb
+        items={[
+          { label: 'Mentor', icon: 'school', href: '/mentor' },
+        ]}
+      />
+
       {/* Header da Página */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
@@ -64,18 +84,8 @@ export default function MentorDashboardPage() {
       {/* Quick Actions */}
       <MentorQuickActions />
 
-      {/* Grid Principal */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Mentorados Overview - 2 colunas */}
-        <div className="lg:col-span-2">
-          <MentorMenteesOverview />
-        </div>
-
-        {/* Atividade Recente - 1 coluna */}
-        <div className="lg:col-span-1">
-          <MentorRecentActivity activities={dashboardData?.recentActivity || []} />
-        </div>
-      </div>
+      {/* Programas Overview - largura total */}
+      <MentorProgramsOverview />
     </div>
   );
 }

@@ -79,8 +79,8 @@ function StatCard({ title, value, icon, trend, color }: StatCardProps) {
 interface MentorDashboardStatsProps {
   data: {
     totalMentees: number;
-    activeMentorships: number;
-    pendingRequests: number;
+    activePrograms: number;
+    pendingPrograms: number;
     completedSessions: number;
   } | null;
 }
@@ -96,13 +96,13 @@ export default function MentorDashboardStats({ data }: MentorDashboardStatsProps
     },
     {
       title: 'Mentorias Ativas',
-      value: data?.activeMentorships || 0,
-      icon: 'handshake',
+      value: data?.activePrograms || 0,
+      icon: 'folder_special',
       color: 'cyan',
     },
     {
-      title: 'Solicitações Pendentes',
-      value: data?.pendingRequests || 0,
+      title: 'Mentorias Pendentes',
+      value: data?.pendingPrograms || 0,
       icon: 'pending_actions',
       color: 'amber',
     },

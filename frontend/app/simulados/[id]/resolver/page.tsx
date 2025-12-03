@@ -79,7 +79,7 @@ export default function ResolverSimuladoPage({ params }: ResolverSimuladoPagePro
               letter: String.fromCharCode(65 + idx) as 'A' | 'B' | 'C' | 'D' | 'E',
               text: alt.text || '',
             })),
-            correctAlternative: q.correct_alternative_id || q.alternatives?.find((a: any) => a.isCorrect)?.id || '',
+            correctAlternative: q.correct_alternative_id || q.correct_answer || q.alternatives?.find((a: any) => a.isCorrect)?.id || '',
             likes: 0,
             dislikes: 0,
             tags: q.tags || [],

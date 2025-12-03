@@ -84,7 +84,7 @@ export class AdminUserController {
       const schema = z.object({
         display_name: z.string().optional(),
         email: z.string().email().optional(),
-        role: z.enum(['STUDENT', 'ADMIN', 'MODERATOR']).optional(),
+        role: z.enum(['USER', 'STUDENT', 'MENTOR', 'ADMIN', 'MODERATOR']).optional(),
         biography: z.string().optional(),
         specialties: z.array(z.string()).optional(),
         photo_url: z.string().url().optional(),

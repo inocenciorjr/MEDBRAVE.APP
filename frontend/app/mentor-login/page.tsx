@@ -24,7 +24,10 @@ export default function MentorLoginPage() {
   useEffect(() => {
     const checkAuth = async () => {
       try {
+        console.log('[Mentor Login] Verificando autenticação...');
         const { data: { session } } = await supabase.auth.getSession();
+        console.log('[Mentor Login] Sessão:', session ? 'existe' : 'não existe');
+        
         if (session) {
           // Verificar se é mentor
           const { data: userData } = await supabase
@@ -33,13 +36,20 @@ export default function MentorLoginPage() {
             .eq('id', session.user.id)
             .single();
 
+          console.log('[Mentor Login] Role do usuário:', userData?.role);
+
           if (userData?.role === 'MENTOR') {
+            console.log('[Mentor Login] É mentor, redirecionando para /mentor');
             router.push('/mentor');
             return;
+          } else {
+            console.log('[Mentor Login] Não é mentor, permanecendo na página');
           }
+        } else {
+          console.log('[Mentor Login] Sem sessão, mostrando formulário de login');
         }
       } catch (err) {
-        console.error('Erro ao verificar auth:', err);
+        console.error('[Mentor Login] Erro ao verificar auth:', err);
       } finally {
         setCheckingAuth(false);
       }

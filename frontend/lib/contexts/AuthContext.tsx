@@ -153,8 +153,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
     
     // Listener de mudanças de estado de autenticação
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
-      // ✅ Ignorar eventos TOKEN_REFRESHED para evitar loops
-      if (_event === 'TOKEN_REFRESHED') {
+      // ✅ Para TOKEN_REFRESHED, apenas atualizar o token no localStorage (não reprocessar usuário)
+      if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
+        console.log('🔄 [Auth] Token renovado automaticamente');
+        localStorage.setItem('authToken', session.access_token);
         return;
       }
       

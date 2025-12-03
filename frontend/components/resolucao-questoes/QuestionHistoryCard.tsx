@@ -437,21 +437,24 @@ export function QuestionHistoryCard({ questionId, isAnswered, refreshTrigger, sh
                               });
                             })()}
                           </span>
-                          {attempt.selected_alternative_letter && (
-                            <>
-                              <span className="text-text-light-secondary dark:text-text-dark-secondary">•</span>
-                              <div className="flex items-center gap-1.5">
-                                <div className="w-5 h-5 rounded-full bg-text-light-secondary/10 dark:bg-text-dark-secondary/10 
-                                              flex items-center justify-center border border-text-light-secondary/20 dark:border-text-dark-secondary/20">
-                                  <span className="text-[10px] font-bold text-text-light-secondary dark:text-text-dark-secondary">
-                                    {attempt.selected_alternative_letter}
-                                  </span>
-                                </div>
-                                <span className="text-text-light-secondary dark:text-text-dark-secondary text-[11px]">
-                                  marcada
+                          <span className="text-text-light-secondary dark:text-text-dark-secondary">•</span>
+                          {attempt.selected_alternative_letter ? (
+                            <div className="flex items-center gap-1.5">
+                              <div className="w-5 h-5 rounded-full bg-text-light-secondary/10 dark:bg-text-dark-secondary/10 
+                                            flex items-center justify-center border border-text-light-secondary/20 dark:border-text-dark-secondary/20">
+                                <span className="text-[10px] font-bold text-text-light-secondary dark:text-text-dark-secondary">
+                                  {attempt.selected_alternative_letter}
                                 </span>
                               </div>
-                            </>
+                              <span className="text-text-light-secondary dark:text-text-dark-secondary text-[11px]">
+                                marcada
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="px-2 py-1 bg-warning/10 text-warning rounded-md font-medium text-[11px] 
+                                           border border-warning/20">
+                              Não respondida
+                            </span>
                           )}
                           {attempt.study_mode && (
                             <>

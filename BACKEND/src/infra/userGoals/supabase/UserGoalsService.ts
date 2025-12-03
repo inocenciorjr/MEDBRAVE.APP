@@ -27,20 +27,15 @@ export class UserGoalsService {
    * Busca as metas do usuário
    */
   async getUserGoals(userId: string): Promise<UserGoals | null> {
-    console.error('🔍 [UserGoalsService] Buscando metas para userId:', userId, 'tipo:', typeof userId);
-    
     const { data, error } = await this.supabase
       .from('user_goals')
       .select('*')
       .eq('user_id', userId)
       .single();
 
-    console.error('📊 [UserGoalsService] Resultado:', { data, error });
-
     if (error) {
       if (error.code === 'PGRST116') {
-        // Não encontrado
-        console.error('ℹ️ [UserGoalsService] Metas não encontradas, retornando null');
+        // Não encontrado - comportamento esperado para usuários sem metas
         return null;
       }
       console.error('❌ [UserGoalsService] Erro ao buscar metas:', error);

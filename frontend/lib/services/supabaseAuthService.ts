@@ -17,10 +17,10 @@ import type { User as SupabaseUser } from '@supabase/supabase-js';
 const supabase = createClient();
 
 /**
- * Duração do cache de tokens em milissegundos (50 minutos)
- * Tokens do Supabase expiram em 60 minutos, então renovamos 10 minutos antes
+ * Duração do cache de tokens em milissegundos (4 minutos)
+ * Reduzido para garantir renovação proativa antes da expiração
  */
-const TOKEN_CACHE_DURATION = 50 * 60 * 1000;
+const TOKEN_CACHE_DURATION = 4 * 60 * 1000;
 
 /**
  * Tempo de debounce para sincronização com backend (5 segundos)
@@ -352,8 +352,8 @@ class SupabaseAuthService {
    * Obtém um token válido, renovando se necessário
    * 
    * Esta função verifica se há uma sessão ativa no Supabase e retorna
-   * o token de acesso. Se o token estiver próximo de expirar, o Supabase
-   * automaticamente o renova.
+   * o token de acesso. Se o token estiver próximo de expirar ou expirado,
+   * força o refresh da sessão.
    * 
    * @returns Promise com token válido ou null se não autenticado
    * 
@@ -367,6 +367,7 @@ class SupabaseAuthService {
    */
   async getValidToken(): Promise<string | null> {
     try {
+      // Primeiro, tentar obter sessão do cache
       const { data: { session }, error } = await supabase.auth.getSession();
       
       if (error) {
@@ -375,11 +376,52 @@ class SupabaseAuthService {
       }
       
       if (session) {
+        // Verificar se o token está próximo de expirar (menos de 5 minutos)
+        const expiresAt = session.expires_at;
+        const now = Math.floor(Date.now() / 1000);
+        const timeUntilExpiry = expiresAt ? expiresAt - now : 0;
+        
+        // Se expira em menos de 5 minutos, forçar refresh
+        if (timeUntilExpiry < 300) {
+          console.log('🔄 [Auth] Token expirando em breve, forçando refresh...');
+          const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
+          
+          if (refreshError) {
+            console.error('Erro ao renovar sessão:', refreshError);
+            // Se falhar o refresh, tentar usar o token atual mesmo assim
+            if (session.access_token) {
+              this.setToken(session.access_token);
+              return session.access_token;
+            }
+            throw refreshError;
+          }
+          
+          if (refreshData.session) {
+            console.log('✅ [Auth] Token renovado com sucesso');
+            this.setToken(refreshData.session.access_token);
+            // Atualizar localStorage também
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('authToken', refreshData.session.access_token);
+            }
+            return refreshData.session.access_token;
+          }
+        }
+        
         this.setToken(session.access_token);
         return session.access_token;
       }
       
-      return null;
+      // Se não tem sessão no cache, tentar refresh
+      console.log('🔄 [Auth] Sem sessão no cache, tentando refresh...');
+      const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
+      
+      if (refreshError || !refreshData.session) {
+        console.warn('Não foi possível obter sessão válida');
+        return null;
+      }
+      
+      this.setToken(refreshData.session.access_token);
+      return refreshData.session.access_token;
     } catch (error) {
       console.error('Erro ao obter token válido:', error);
       return null;

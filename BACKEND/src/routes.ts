@@ -958,13 +958,31 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
       mentorshipFeedbackRoutes,
       mentorshipResourceRoutes,
       mentorshipSimulatedExamRoutes,
+      mentorshipAdminRoutes,
+      mentorMenteeRoutes,
+      menteeFinancialRoutes,
+      mentorAnalyticsRoutes,
+      mentorProgramRoutes,
+      mentorSimuladoRoutes,
     } = require("./domain/mentorship/routes");
 
+    // IMPORTANTE: Rotas mais específicas devem ser registradas ANTES das mais genéricas
+    // para evitar conflitos de roteamento
+    
     // Rotas de perfis de mentores
     router.use("/mentorship/profiles", mentorProfileRoutes);
     
-    // Rotas de mentorias
-    router.use("/mentorship", mentorshipRoutes);
+    // Rotas de programas de mentoria (Intensivão, Extensivo, etc.)
+    router.use("/mentorship/programs", mentorProgramRoutes);
+    
+    // Rotas de gerenciamento de mentorados pelo mentor (ANTES de /mentorship para evitar conflito com /mentor/:mentorId)
+    router.use("/mentorship/mentor", mentorMenteeRoutes);
+    
+    // Rotas de gestão financeira de mentorados (lembretes, pagamentos, expiração)
+    router.use("/mentorship/financial", menteeFinancialRoutes);
+    
+    // Rotas de analytics de mentoria (métricas, desempenho, comparativos)
+    router.use("/mentorship/analytics", mentorAnalyticsRoutes);
     
     // Rotas de reuniões de mentoria
     router.use("/mentorship/meetings", mentorshipMeetingRoutes);
@@ -978,8 +996,17 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     // Rotas de recursos de mentoria
     router.use("/mentorship/resources", mentorshipResourceRoutes);
     
-    // Rotas de simulados de mentoria
+    // Rotas de simulados de mentoria (atribuição de simulados existentes)
     router.use("/mentorship/simulated-exams", mentorshipSimulatedExamRoutes);
+    
+    // Rotas de simulados personalizados do mentor (criação de questões e simulados)
+    router.use("/mentorship/mentor-simulados", mentorSimuladoRoutes);
+    
+    // Rotas de admin de mentorship (protegidas com adminMiddleware)
+    router.use("/mentorship/admin", mentorshipAdminRoutes);
+    
+    // Rotas de mentorias (DEPOIS das rotas mais específicas)
+    router.use("/mentorship", mentorshipRoutes);
 
     console.log('✅ Rotas de mentorship registradas em /api/mentorship/*');
   } catch (error) {

@@ -48,7 +48,6 @@ html.fonts-loaded .material-symbols-outlined {
 /* Custom Scrollbar Styles */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #4B5563 #1F2937;
 }
 
 *::-webkit-scrollbar {
@@ -57,35 +56,52 @@ html.fonts-loaded .material-symbols-outlined {
 }
 
 *::-webkit-scrollbar-track {
-  background: #1F2937;
   border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #4B5563;
   border-radius: 4px;
   transition: background 0.2s;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: #6B7280;
+/* Light mode scrollbar */
+:root {
+  scrollbar-color: #D1D5DB #F3F4F6;
 }
 
-/* Light mode scrollbar */
-.light *::-webkit-scrollbar-track {
+:root::-webkit-scrollbar-track,
+:root *::-webkit-scrollbar-track {
   background: #F3F4F6;
 }
 
-.light *::-webkit-scrollbar-thumb {
+:root::-webkit-scrollbar-thumb,
+:root *::-webkit-scrollbar-thumb {
   background: #D1D5DB;
 }
 
-.light *::-webkit-scrollbar-thumb:hover {
+:root::-webkit-scrollbar-thumb:hover,
+:root *::-webkit-scrollbar-thumb:hover {
   background: #9CA3AF;
 }
 
-.light * {
-  scrollbar-color: #D1D5DB #F3F4F6;
+/* Dark mode scrollbar */
+:root.dark {
+  scrollbar-color: #4B5563 #1F2937;
+}
+
+:root.dark::-webkit-scrollbar-track,
+:root.dark *::-webkit-scrollbar-track {
+  background: #1F2937;
+}
+
+:root.dark::-webkit-scrollbar-thumb,
+:root.dark *::-webkit-scrollbar-thumb {
+  background: #4B5563;
+}
+
+:root.dark::-webkit-scrollbar-thumb:hover,
+:root.dark *::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
 }
 
 /* Flashcard 3D Flip Animation */
@@ -408,6 +424,33 @@ html.fonts-loaded .material-symbols-outlined {
   animation: slide-up 0.3s ease-out;
 }
 
+/* Slide animations for side modals - optimized with GPU acceleration */
+@keyframes slide-in-right {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-out-right {
+  animation: slide-out-right 0.2s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
 /* Mobile bottom navigation spacing */
 .pb-mobile-nav {
   padding-bottom: 80px;
@@ -417,4 +460,42 @@ html.fonts-loaded .material-symbols-outlined {
   .pb-mobile-nav {
     padding-bottom: 0;
   }
+}
+
+/* Fade in animation for cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+/* Countdown Flip Animation */
+@keyframes flip-down {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+.animate-flip-down {
+  animation: flip-down 0.3s ease-out;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
 }

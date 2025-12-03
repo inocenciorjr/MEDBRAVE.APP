@@ -172,13 +172,13 @@ class R2ImageUploadService {
       // Determinar pasta
       const folder = metadata.customFolder || 'questions/images';
       
-      // Solicitar presigned URL do backend
-      const presignedResponse = await this.fetchWithRetry(`${this.backendUrl}/r2/presigned-upload`, {
+      // Upload via proxy do backend (evita problemas de CORS)
+      const uploadResponse = await this.fetchWithRetry(`${this.backendUrl}/r2/upload-base64`, {
         method: 'POST',
         headers: this.getRequestHeaders(),
         body: JSON.stringify({
+          dataUri: dataURI,
           filename,
-          contentType: mimeType,
           folder: folder,
           metadata: {
             ...metadata,
@@ -188,40 +188,23 @@ class R2ImageUploadService {
         })
       });
 
-      if (!presignedResponse.ok) {
-        throw new Error(`Falha ao obter presigned URL: ${presignedResponse.statusText}`);
-      }
-
-      const { uploadUrl, publicUrl, fileKey } = await presignedResponse.json();
-      
-      // Upload direto para R2 usando presigned URL
-      const uploadResponse = await this.fetchWithRetry(uploadUrl, {
-        method: 'PUT',
-        body: blob,
-        headers: {
-          'Content-Type': mimeType
-        }
-      });
-
       if (!uploadResponse.ok) {
-        throw new Error(`Falha no upload para R2: ${uploadResponse.statusText}`);
+        const errorData = await uploadResponse.json().catch(() => ({}));
+        throw new Error(errorData.error || `Falha no upload: ${uploadResponse.statusText}`);
       }
 
-      // Notificar backend sobre conclusão do upload
-      await this.notifyUploadComplete(fileKey, {
-        originalName: filename,
-        size: blob.size,
-        type: mimeType,
-        ...metadata
-      });
+      const { url: publicUrl, fileKey, size } = await uploadResponse.json();
 
       console.log('✅ Upload para R2 concluído:', publicUrl);
+      
+      // Registrar sucesso no circuit breaker
+      this.registerSuccess();
       
       return {
         success: true,
         url: publicUrl,
         fileKey,
-        size: blob.size
+        size: size || blob.size
       };
 
     } catch (error) {

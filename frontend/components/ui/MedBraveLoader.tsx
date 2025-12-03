@@ -45,6 +45,7 @@ export function MedBraveLoader({
                 alt="MedBrave"
                 width={logoSize}
                 height={logoSize}
+                style={{ width: 'auto', height: 'auto' }}
                 className="object-contain"
                 priority
               />
@@ -86,6 +87,7 @@ export function MedBraveLoader({
                 alt="MedBrave"
                 width={logoSize}
                 height={logoSize}
+                style={{ width: 'auto', height: 'auto' }}
                 className="object-contain"
                 priority
               />
@@ -130,6 +132,7 @@ export function MedBraveLoader({
                 alt="MedBrave"
                 width={logoSize}
                 height={logoSize}
+                style={{ width: 'auto', height: 'auto' }}
                 className="object-contain drop-shadow-[0_0_15px_rgba(var(--primary-rgb),0.4)]"
                 priority
               />

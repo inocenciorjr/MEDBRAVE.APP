@@ -19,9 +19,10 @@ import type { TokenCache, FetchStats } from '@/lib/types/auth';
 const supabase = createClient();
 
 /**
- * Duração do cache de tokens em milissegundos (50 minutos)
+ * Duração do cache de tokens em milissegundos (4 minutos)
+ * Reduzido para garantir que tokens sejam renovados antes de expirar
  */
-const TOKEN_CACHE_DURATION = 50 * 60 * 1000;
+const TOKEN_CACHE_DURATION = 4 * 60 * 1000;
 
 /**
  * Cache global de tokens com timestamp e promise de refresh

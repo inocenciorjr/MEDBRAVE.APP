@@ -19,7 +19,7 @@ export class SimulatedExamController {
   private questionHistoryService: any; // IQuestionHistoryService
 
   constructor(
-    simulatedExamService: ISimulatedExamService, 
+    simulatedExamService: ISimulatedExamService,
     questionService?: any,
     questionHistoryService?: any
   ) {
@@ -130,14 +130,20 @@ export class SimulatedExamController {
 
       // Verificar permissão de acesso
       // Supabase retorna em snake_case, então verificamos ambos os campos
-      const examCreator = (simulatedExam as any).created_by || (simulatedExam as any).user_id || simulatedExam.createdBy;
+      const examCreator = (simulatedExam as any).created_by || simulatedExam.createdBy;
+      const examUserId = (simulatedExam as any).user_id;
       const isPublic = (simulatedExam as any).is_public !== undefined ? (simulatedExam as any).is_public : simulatedExam.isPublic;
-      
-      if (
-        examCreator !== userId &&
-        !isPublic &&
-        req.user?.user_role !== 'ADMIN'
-      ) {
+      const isAssignedByMentor = (simulatedExam as any).assigned_by_mentor === true;
+
+      // Usuário tem acesso se:
+      // 1. É o criador do simulado
+      // 2. O simulado é público
+      // 3. É admin
+      // 4. O simulado foi atribuído a ele por um mentor (user_id = userId e assigned_by_mentor = true)
+      const isCreator = examCreator === userId;
+      const isAssignedToUser = examUserId === userId && isAssignedByMentor;
+
+      if (!isCreator && !isPublic && !isAssignedToUser && req.user?.user_role !== 'ADMIN') {
         throw new AppError(
           'Você não tem permissão para acessar este simulado',
           403,
@@ -414,7 +420,7 @@ export class SimulatedExamController {
     try {
       const userId = this.getAuthenticatedUserId(req);
       const { id: examId } = req.params;
-      const { ipAddress, device, browser } = req.body;
+      const { ipAddress, device, browser, customTimeLimitMinutes } = req.body;
 
       // Verificar se o simulado existe
       const simulatedExam =
@@ -424,9 +430,19 @@ export class SimulatedExamController {
       }
 
       // Verificar se o usuário tem permissão para acessar o simulado
-      const examCreator = (simulatedExam as any).created_by || (simulatedExam as any).user_id || simulatedExam.createdBy;
+      const examCreator = (simulatedExam as any).created_by || simulatedExam.createdBy;
+      const examUserId = (simulatedExam as any).user_id;
       const isPublic = (simulatedExam as any).is_public !== undefined ? (simulatedExam as any).is_public : simulatedExam.isPublic;
-      if (examCreator !== userId && !isPublic) {
+      const isAssignedByMentor = (simulatedExam as any).assigned_by_mentor === true;
+
+      // Usuário tem acesso se:
+      // 1. É o criador do simulado
+      // 2. O simulado é público
+      // 3. O simulado foi atribuído a ele por um mentor
+      const isCreator = examCreator === userId;
+      const isAssignedToUser = examUserId === userId && isAssignedByMentor;
+
+      if (!isCreator && !isPublic && !isAssignedToUser) {
         throw new AppError(
           'Você não tem permissão para acessar este simulado',
           403,
@@ -439,6 +455,38 @@ export class SimulatedExamController {
           'Este simulado não está disponível para realização',
           400,
         );
+      }
+
+      // Verificar se o simulado está disponível (agendamento)
+      const availableAt = (simulatedExam as any).available_at;
+      if (availableAt) {
+        const availableDate = new Date(availableAt);
+        const now = new Date();
+        if (availableDate > now) {
+          const formattedDate = availableDate.toLocaleString('pt-BR', {
+            timeZone: 'America/Sao_Paulo',
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+          });
+          throw new AppError(
+            `Este simulado estará disponível a partir de ${formattedDate}`,
+            400,
+          );
+        }
+      }
+
+      // Se o simulado não tem tempo definido e o usuário passou um tempo customizado, atualizar
+      const currentTimeLimit = (simulatedExam as any).time_limit_minutes;
+      if ((!currentTimeLimit || currentTimeLimit === 0) && customTimeLimitMinutes && customTimeLimitMinutes > 0) {
+        // Validar tempo máximo de 10 horas (600 minutos)
+        const validTimeLimit = Math.min(customTimeLimitMinutes, 600);
+        await this.simulatedExamService.updateSimulatedExam(examId, {
+          time_limit_minutes: validTimeLimit
+        } as any);
+        console.log(`⏱️ Tempo customizado aplicado: ${validTimeLimit} minutos`);
       }
 
       const startData: StartSimulatedExamPayload = {
@@ -556,7 +604,7 @@ export class SimulatedExamController {
 
       // Atualizar a resposta no objeto answers
       const currentAnswers = (result as any).answers || {};
-      
+
       if (answerId === null || answerId === undefined) {
         // Remover resposta
         delete currentAnswers[questionId];
@@ -614,76 +662,97 @@ export class SimulatedExamController {
         );
       }
 
+      // Verificar se o simulado já foi finalizado (evitar duplicação)
+      if ((result as any).status === 'completed') {
+        console.log('[FinishSimulatedExam] Simulado já finalizado, retornando resultado existente');
+        res.status(200).json({
+          message: 'Simulado já finalizado',
+          data: result,
+        });
+        return;
+      }
+
       // Buscar o simulado para saber o total de questões
       const examId = (result as any).simulated_exam_id;
       const exam = await this.simulatedExamService.getSimulatedExamById(examId);
       const totalQuestions = exam?.questions?.length || 0;
-      
+
       // Se respostas foram enviadas, usar elas; senão usar as já salvas
-      const answersData = (answers && Object.keys(answers).length > 0) 
-        ? answers 
+      const answersData = (answers && Object.keys(answers).length > 0)
+        ? answers
         : ((result as any).answers || {});
-      
+
       // Calcular score baseado nas respostas
       let correctCount = 0;
       let incorrectCount = 0;
-      
-      // Buscar todas as questões do simulado para verificar respostas corretas
+
+      // Buscar todas as questões do simulado EM PARALELO para verificar respostas corretas
       if (this.questionService) {
-      for (const q of exam?.questions || []) {
-          const questionId = (typeof q === 'string') ? (q as string) : ((q as any).questionId || (q as any).id);
+        const questionIds = (exam?.questions || []).map((q: any) => 
+          (typeof q === 'string') ? q : (q.questionId || q.id)
+        );
+
+        // Buscar todas as questões em paralelo
+        const questionsPromises = questionIds.map((qId: string) => 
+          this.questionService!.getQuestionById(qId).catch(() => null)
+        );
+        const questions = await Promise.all(questionsPromises);
+
+        // Criar mapa de questões para acesso rápido
+        const questionsMap = new Map<string, any>();
+        questions.forEach((q, idx) => {
+          if (q) questionsMap.set(questionIds[idx], q);
+        });
+
+        // Calcular score
+        for (const questionId of questionIds) {
           const userAnswer = (answersData as Record<string, string>)[questionId];
-          
-          if (userAnswer) {
-            try {
-              // Buscar a questão para verificar se a resposta está correta
-              const question = await this.questionService.getQuestionById(questionId);
-              if (question && userAnswer === question.correct_alternative_id) {
-                correctCount++;
-              } else {
-                incorrectCount++;
-              }
-            } catch (error) {
-              console.error(`Erro ao buscar questão ${questionId}:`, error);
+          const question = questionsMap.get(questionId);
+
+          if (userAnswer && question) {
+            if (userAnswer === question.correct_alternative_id) {
+              correctCount++;
+            } else {
               incorrectCount++;
             }
           } else {
-            // Se não respondeu, conta como erro
+            // Se não respondeu ou questão não encontrada, conta como erro
             incorrectCount++;
           }
         }
       }
-      
-      const score = correctCount;
-      
+
+      // Score como porcentagem (0-100)
+      const score = totalQuestions > 0 ? (correctCount / totalQuestions) * 100 : 0;
+
       console.log('[FinishSimulatedExam] Resultado calculado:', {
         correctCount,
         incorrectCount,
         totalQuestions,
-        score
+        score: `${score.toFixed(1)}%`
       });
-      
+
       // Registrar tentativas no histórico de questões EM PARALELO
       if (this.questionHistoryService && exam?.questions) {
         console.log('[FinishSimulatedExam] Registrando tentativas no histórico...');
-        
+
         // Criar array de promises para processar em paralelo
         const attemptPromises = exam.questions.map(async (q) => {
           const questionId = (typeof q === 'string') ? (q as string) : ((q as any).questionId || (q as any).id);
           const userAnswer = (answersData as Record<string, string>)[questionId];
-          
+
           try {
             if (userAnswer) {
               // Questão respondida - verificar se está correta
               const question = await this.questionService?.getQuestionById(questionId);
               const isCorrect = question && userAnswer === question.correct_alternative_id;
-              
+
               console.log(`[FinishSimulatedExam] Questão ${questionId}:`, {
                 userAnswer,
                 correctAnswer: question?.correct_alternative_id,
                 isCorrect
               });
-              
+
               // Registrar tentativa
               await this.questionHistoryService.recordQuestionAttempt({
                 user_id: userId,
@@ -694,41 +763,31 @@ export class SimulatedExamController {
                 was_focus_mode: false,
                 simulated_exam_id: examId,
               });
-              
+
               return { questionId, success: true, isCorrect, answered: true };
             } else {
-              // Questão NÃO respondida - registrar como erro com a primeira alternativa
-              const question = await this.questionService?.getQuestionById(questionId);
-              
-              if (question && question.alternatives && question.alternatives.length > 0) {
-                // Pegar a primeira alternativa que NÃO é a correta
-                const wrongAlternative = question.alternatives.find(
-                  (alt: any) => alt.id !== question.correct_alternative_id
-                );
-                const selectedAlt = wrongAlternative?.id || question.alternatives[0]?.id;
-                
-                // Registrar como tentativa incorreta
-                await this.questionHistoryService.recordQuestionAttempt({
-                  user_id: userId,
-                  question_id: questionId,
-                  selected_alternative_id: selectedAlt,
-                  is_correct: false,
-                  study_mode: 'simulated_exam',
-                  was_focus_mode: false,
-                  simulated_exam_id: examId,
-                });
-                
-                return { questionId, success: true, isCorrect: false, answered: false };
-              }
-              
-              return { questionId, success: false, error: 'Questão sem alternativas', answered: false };
+              // Questão NÃO respondida - registrar no histórico com selected_alternative_id = null
+              // Isso permite mostrar "Não respondida" no histórico
+              console.log(`[FinishSimulatedExam] Questão ${questionId} não respondida - registrando como não respondida`);
+
+              await this.questionHistoryService.recordQuestionAttempt({
+                user_id: userId,
+                question_id: questionId,
+                selected_alternative_id: '', // String vazia indica não respondida
+                is_correct: false,
+                study_mode: 'simulated_exam',
+                was_focus_mode: false,
+                simulated_exam_id: examId,
+              });
+
+              return { questionId, success: true, isCorrect: false, answered: false };
             }
           } catch (error) {
             console.error(`[FinishSimulatedExam] Erro ao registrar tentativa da questão ${questionId}:`, error);
             return { questionId, success: false, error, answered: !!userAnswer };
           }
         });
-        
+
         // Aguardar todas as tentativas serem registradas em paralelo
         const results = await Promise.all(attemptPromises);
         const successCount = results.filter(r => r?.success).length;
@@ -747,6 +806,29 @@ export class SimulatedExamController {
           score,
           timeSpent,
         });
+
+      // Atualizar mentor_exam_assignments se o simulado foi atribuído por um mentor
+      if (exam && (exam as any).mentor_exam_id && (exam as any).assigned_by_mentor) {
+        try {
+          console.log('[FinishSimulatedExam] Atualizando mentor_exam_assignments...');
+          await this.simulatedExamService.updateMentorExamAssignment(
+            (exam as any).mentor_exam_id,
+            userId,
+            {
+              status: 'completed',
+              completed_at: new Date().toISOString(),
+              score: score,
+              correct_count: correctCount,
+              incorrect_count: incorrectCount,
+              time_spent_seconds: timeSpent || 0,
+            }
+          );
+          console.log('[FinishSimulatedExam] mentor_exam_assignments atualizado com sucesso');
+        } catch (error) {
+          console.error('[FinishSimulatedExam] Erro ao atualizar mentor_exam_assignments:', error);
+          // Não falhar a operação principal
+        }
+      }
 
       res.status(200).json({
         message: 'Simulado finalizado com sucesso',

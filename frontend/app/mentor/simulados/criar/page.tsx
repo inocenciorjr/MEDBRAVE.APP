@@ -16,7 +16,17 @@ export interface SelectedQuestion {
   specialty?: string;
   university?: string;
   year?: number;
+  subFilterIds?: string[]; // Filtros completos da questão
   alternatives?: { id: string; text: string; isCorrect: boolean }[];
+  // Dados temporários para questões autorais (serão criadas no banco ao salvar)
+  tempData?: {
+    content: string;
+    alternatives: { id: string; text: string; isCorrect: boolean }[];
+    correctAnswer: string;
+    explanation?: string;
+    subFilterIds?: string[];
+    difficulty?: number;
+  };
 }
 
 export type SimuladoVisibility = 'public' | 'private' | 'selected';
@@ -25,10 +35,14 @@ export interface SimuladoSettings {
   name: string;
   description: string;
   visibility: SimuladoVisibility;
-  selectedMentees: string[];
+  selectedMentorshipIds: string[];
+  selectedUserIds: string[];
+  selectedProgramIds: string[];
   timeLimit?: number;
   shuffleQuestions: boolean;
   showResults: boolean;
+  scheduledDate: string;
+  scheduledTime: string;
 }
 
 type Step = 'questions' | 'settings' | 'review';
@@ -42,21 +56,25 @@ export default function CriarSimuladoPage() {
     name: '',
     description: '',
     visibility: 'private',
-    selectedMentees: [],
+    selectedMentorshipIds: [],
+    selectedUserIds: [],
+    selectedProgramIds: [],
     shuffleQuestions: true,
     showResults: true,
+    scheduledDate: '',
+    scheduledTime: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const addQuestion = useCallback((question: SelectedQuestion) => {
     setSelectedQuestions(prev => {
       if (prev.some(q => q.id === question.id)) {
-        toast.warning('Questão já adicionada');
+        // Não mostrar toast aqui - será tratado no componente
         return prev;
       }
       return [...prev, question];
     });
-  }, [toast]);
+  }, []);
 
   const removeQuestion = useCallback((questionId: string) => {
     setSelectedQuestions(prev => prev.filter(q => q.id !== questionId));
@@ -89,28 +107,101 @@ export default function CriarSimuladoPage() {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) return;
 
-      // TODO: Implementar chamada real à API
-      // const response = await fetch('/api/mentorship/simulated-exams', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Authorization': `Bearer ${session.access_token}`,
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     ...settings,
-      //     questions: selectedQuestions.map((q, i) => ({
-      //       questionId: q.id,
-      //       type: q.type,
-      //       order: i,
-      //     })),
-      //   }),
-      // });
+      // 1. Primeiro, criar questões autorais pendentes no banco (via backend)
+      const customQuestions = selectedQuestions.filter(q => q.type === 'custom' && q.tempData);
+      const createdQuestionIds: Map<string, string> = new Map();
 
-      toast.success('Simulado criado com sucesso!');
+      for (const customQ of customQuestions) {
+        try {
+          const response = await fetch('/api/mentorship/mentor-simulados/questions', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${session.access_token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              content: customQ.tempData!.content,
+              alternatives: customQ.tempData!.alternatives,
+              correctAnswer: customQ.tempData!.correctAnswer,
+              explanation: customQ.tempData!.explanation,
+              subFilterIds: customQ.tempData!.subFilterIds,
+              difficulty: customQ.tempData!.difficulty,
+            }),
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            createdQuestionIds.set(customQ.id, data.data.id);
+            console.log(`✅ Questão autoral criada: ${customQ.id} -> ${data.data.id}`);
+          } else {
+            const error = await response.json();
+            console.error(`❌ Erro ao criar questão autoral:`, error);
+            toast.warning(`Erro ao criar uma questão autoral: ${error.error}`);
+          }
+        } catch (error) {
+          console.error('Erro ao criar questão autoral:', error);
+        }
+      }
+
+      // 2. Mapear questões com IDs atualizados
+      const questionsForSimulado = selectedQuestions.map((q, index) => {
+        // Se é questão autoral e foi criada, usar o novo ID
+        if (q.type === 'custom' && createdQuestionIds.has(q.id)) {
+          return {
+            questionId: createdQuestionIds.get(q.id)!,
+            type: 'bank', // Agora é uma questão do banco
+            order: index,
+          };
+        }
+        return {
+          questionId: q.id,
+          type: q.type,
+          order: index,
+        };
+      });
+
+      // 3. Preparar data de agendamento
+      let scheduledAt = null;
+      if (settings.scheduledDate && settings.scheduledTime) {
+        scheduledAt = `${settings.scheduledDate}T${settings.scheduledTime}:00`;
+      }
+
+      // 4. Criar o simulado (via backend)
+      const response = await fetch('/api/mentorship/mentor-simulados', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${session.access_token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: settings.name,
+          description: settings.description,
+          visibility: settings.visibility,
+          selectedMentorshipIds: settings.selectedMentorshipIds,
+          selectedUserIds: settings.selectedUserIds,
+          questions: questionsForSimulado,
+          timeLimit: settings.timeLimit,
+          shuffleQuestions: settings.shuffleQuestions,
+          showResults: settings.showResults,
+          scheduledAt,
+        }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || 'Erro ao criar simulado');
+      }
+
+      const createdCount = createdQuestionIds.size;
+      toast.success(
+        createdCount > 0 
+          ? `Simulado criado! ${createdCount} questão(ões) autoral(is) foram adicionadas ao banco.`
+          : 'Simulado criado com sucesso!'
+      );
       router.push('/mentor/simulados');
     } catch (error) {
       console.error('Erro ao criar simulado:', error);
-      toast.error('Erro ao criar simulado');
+      toast.error(error instanceof Error ? error.message : 'Erro ao criar simulado');
     } finally {
       setIsSubmitting(false);
     }
@@ -182,10 +273,13 @@ export default function CriarSimuladoPage() {
         </div>
       </div>
 
-      {/* Content */}
+      {/* Content - Layout em coluna: busca em cima, selecionadas embaixo */}
       {currentStep === 'questions' && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <QuestionSearchPanel onAddQuestion={addQuestion} />
+        <div className="flex flex-col gap-6">
+          <QuestionSearchPanel 
+            onAddQuestion={addQuestion}
+            selectedQuestionIds={selectedQuestions.map(q => q.id)}
+          />
           <SelectedQuestionsPanel
             questions={selectedQuestions}
             onRemove={removeQuestion}
@@ -226,11 +320,19 @@ export default function CriarSimuladoPage() {
                 <div>
                   <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Visibilidade</p>
                   <p className="font-medium text-text-light-primary dark:text-text-dark-primary capitalize">
-                    {settings.visibility === 'public' ? 'Público' : 
-                     settings.visibility === 'private' ? 'Privado (mentorados)' : 
-                     `Selecionados (${settings.selectedMentees.length})`}
+                    {settings.visibility === 'public' ? 'Público (todos + inscrição aberta)' : 
+                     settings.visibility === 'private' ? 'Privado (rascunho)' : 
+                     `Selecionados (${settings.selectedMentorshipIds.length} mentorias, ${settings.selectedUserIds.length} usuários)`}
                   </p>
                 </div>
+                {(settings.scheduledDate && settings.scheduledTime) && (
+                  <div>
+                    <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">Agendamento</p>
+                    <p className="font-medium text-text-light-primary dark:text-text-dark-primary">
+                      {new Date(`${settings.scheduledDate}T${settings.scheduledTime}`).toLocaleString('pt-BR')}
+                    </p>
+                  </div>
+                )}
               </div>
               <div className="space-y-4">
                 <div>
@@ -281,9 +383,12 @@ export default function CriarSimuladoPage() {
                     {index + 1}
                   </span>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm text-text-light-primary dark:text-text-dark-primary line-clamp-2">
-                      {question.enunciado}
-                    </p>
+                    <div 
+                      className="text-sm text-text-light-primary dark:text-text-dark-primary line-clamp-2
+                        prose prose-sm dark:prose-invert max-w-none
+                        [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:inline [&_img]:max-h-12"
+                      dangerouslySetInnerHTML={{ __html: question.enunciado }}
+                    />
                     <div className="flex items-center gap-2 mt-1">
                       <span className={`px-2 py-0.5 rounded text-xs font-medium
                         ${question.type === 'bank' 

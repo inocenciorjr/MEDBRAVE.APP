@@ -38,7 +38,7 @@ export async function getUserDashboardData(): Promise<UserDashboardData> {
   // Get user profile
   const { data: profile } = await supabase
     .from('users')
-    .select('full_name, avatar_url')
+    .select('display_name, photo_url')
     .eq('id', user.id)
     .single();
 
@@ -99,8 +99,8 @@ export async function getUserDashboardData(): Promise<UserDashboardData> {
     user: {
       id: user.id,
       email: user.email || '',
-      name: profile?.full_name || user.email?.split('@')[0] || 'Usuário',
-      avatar_url: profile?.avatar_url || user.user_metadata?.avatar_url
+      name: profile?.display_name || user.email?.split('@')[0] || 'Usuário',
+      avatar_url: profile?.photo_url || user.user_metadata?.avatar_url
     },
     stats: {
       totalQuestions: stats?.total_questions || 0,

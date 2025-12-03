@@ -40,11 +40,24 @@ interface Mentorship {
   mentee?: { display_name: string; email: string };
 }
 
+interface MentorProgram {
+  id: string;
+  mentorId: string;
+  title: string;
+  description?: string;
+  status: string;
+  isPublic: boolean;
+  participantsCount: number;
+  createdAt: string;
+  mentor?: { id: string; email: string; displayName: string };
+}
+
 export default function MentorshipsAdminPage() {
   const toast = useToast();
-  const [activeTab, setActiveTab] = useState<'mentors' | 'mentorships'>('mentors');
+  const [activeTab, setActiveTab] = useState<'mentors' | 'programs' | 'mentorships'>('mentors');
   const [mentors, setMentors] = useState<Mentor[]>([]);
   const [mentorships, setMentorships] = useState<Mentorship[]>([]);
+  const [programs, setPrograms] = useState<MentorProgram[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
@@ -52,6 +65,9 @@ export default function MentorshipsAdminPage() {
   // Modal states
   const [showMentorModal, setShowMentorModal] = useState(false);
   const [selectedMentor, setSelectedMentor] = useState<Mentor | null>(null);
+  const [rejectReason, setRejectReason] = useState('');
+  const [showRejectModal, setShowRejectModal] = useState(false);
+  const [selectedProgramId, setSelectedProgramId] = useState<string | null>(null);
 
 
   useEffect(() => {
@@ -61,57 +77,55 @@ export default function MentorshipsAdminPage() {
   const loadData = async () => {
     setLoading(true);
     try {
-      // Carregar mentores (usuários com role MENTOR)
-      const { data: mentorsData, error: mentorsError } = await supabase
-        .from('users')
-        .select('id, display_name, email, photo_url, role, created_at')
-        .eq('role', 'MENTOR');
+      // Buscar token de autenticação
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
 
-      if (mentorsError) throw mentorsError;
+      if (!token) {
+        toast.error('Sessão expirada. Faça login novamente.');
+        return;
+      }
 
-      // Carregar perfis de mentor
-      const { data: profilesData } = await supabase
-        .from('mentor_profiles')
-        .select('*');
+      // Carregar mentores via API do backend
+      const mentorsResponse = await fetch('/api/mentorship/admin/mentors', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
 
-      // Combinar dados
-      const mentorsWithProfiles = (mentorsData || []).map(mentor => ({
-        ...mentor,
-        mentorProfile: profilesData?.find(p => p.userId === mentor.id)
-      }));
+      if (!mentorsResponse.ok) {
+        throw new Error('Erro ao carregar mentores');
+      }
 
-      setMentors(mentorsWithProfiles);
+      const mentorsData = await mentorsResponse.json();
+      setMentors(mentorsData);
 
-      // Carregar mentorias
-      const { data: mentorshipsData, error: mentorshipsError } = await supabase
-        .from('mentorships')
-        .select('*')
-        .order('createdAt', { ascending: false });
+      // Carregar mentorias via API do backend
+      const mentorshipsResponse = await fetch('/api/mentorship/admin/mentorships', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
 
-      if (mentorshipsError) throw mentorshipsError;
+      if (!mentorshipsResponse.ok) {
+        throw new Error('Erro ao carregar mentorias');
+      }
 
-      // Buscar nomes dos mentores e mentorados
-      const mentorIds = [...new Set((mentorshipsData || []).map(m => m.mentorId))];
-      const menteeIds = [...new Set((mentorshipsData || []).map(m => m.menteeId))];
-      const allUserIds = [...new Set([...mentorIds, ...menteeIds])];
+      const mentorshipsData = await mentorshipsResponse.json();
+      setMentorships(mentorshipsData);
 
-      const { data: usersData } = await supabase
-        .from('users')
-        .select('id, display_name, email')
-        .in('id', allUserIds);
+      // Carregar programas de mentoria pendentes
+      const programsResponse = await fetch('/api/mentorship/admin/programs', {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      if (programsResponse.ok) {
+        const programsData = await programsResponse.json();
+        setPrograms(programsData.data || programsData || []);
+      }
 
-      const usersMap = new Map((usersData || []).map(u => [u.id, u]));
-
-      const mentorshipsWithUsers = (mentorshipsData || []).map(m => ({
-        ...m,
-        mentor: usersMap.get(m.mentorId),
-        mentee: usersMap.get(m.menteeId)
-      }));
-
-      setMentorships(mentorshipsWithUsers);
     } catch (error: any) {
       console.error('Erro ao carregar dados:', error);
-      toast.error('Erro ao carregar dados');
+      toast.error(`Erro ao carregar dados: ${error.message || 'Erro desconhecido'}`);
     } finally {
       setLoading(false);
     }
@@ -119,38 +133,28 @@ export default function MentorshipsAdminPage() {
 
   const handleToggleMentorApproval = async (mentor: Mentor) => {
     try {
-      const isApproved = !mentor.mentorProfile?.isApproved;
-      
-      if (mentor.mentorProfile) {
-        const { error } = await supabase
-          .from('mentor_profiles')
-          .update({ 
-            isApproved, 
-            approvedAt: isApproved ? new Date().toISOString() : null 
-          })
-          .eq('userId', mentor.id);
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
 
-        if (error) throw error;
-      } else {
-        // Criar perfil se não existir
-        const { error } = await supabase
-          .from('mentor_profiles')
-          .insert({
-            id: crypto.randomUUID(),
-            userId: mentor.id,
-            isActive: true,
-            isApproved,
-            approvedAt: isApproved ? new Date().toISOString() : null,
-            totalMentees: 0,
-            activeMentees: 0,
-            rating: 0,
-            ratingCount: 0
-          });
-
-        if (error) throw error;
+      if (!token) {
+        toast.error('Sessão expirada');
+        return;
       }
 
-      toast.success(isApproved ? 'Mentor aprovado!' : 'Aprovação removida');
+      const response = await fetch(`/api/mentorship/admin/mentors/${mentor.id}/toggle-approval`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao atualizar mentor');
+      }
+
+      const result = await response.json();
+      toast.success(result.isApproved ? 'Mentor aprovado!' : 'Aprovação removida');
       loadData();
     } catch (error: any) {
       toast.error('Erro ao atualizar mentor');
@@ -161,12 +165,28 @@ export default function MentorshipsAdminPage() {
     if (!confirm('Remover role de mentor deste usuário?')) return;
     
     try {
-      const { error } = await supabase
-        .from('users')
-        .update({ role: 'USER' })
-        .eq('id', userId);
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
 
-      if (error) throw error;
+      if (!token) {
+        toast.error('Sessão expirada');
+        return;
+      }
+
+      // Usar API do admin de usuários
+      const response = await fetch(`/api/admin/users/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ role: 'USER' })
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao remover role');
+      }
+
       toast.success('Role de mentor removida');
       loadData();
     } catch (error: any) {
@@ -176,12 +196,27 @@ export default function MentorshipsAdminPage() {
 
   const handleUpdateMentorshipStatus = async (mentorshipId: string, newStatus: string) => {
     try {
-      const { error } = await supabase
-        .from('mentorships')
-        .update({ status: newStatus, updatedAt: new Date().toISOString() })
-        .eq('id', mentorshipId);
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
 
-      if (error) throw error;
+      if (!token) {
+        toast.error('Sessão expirada');
+        return;
+      }
+
+      const response = await fetch(`/api/mentorship/admin/mentorships/${mentorshipId}/status`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ status: newStatus })
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao atualizar status');
+      }
+
       toast.success('Status atualizado');
       loadData();
     } catch (error: any) {
@@ -190,13 +225,54 @@ export default function MentorshipsAdminPage() {
   };
 
 
+  // Handlers para programas
+  const handleApproveProgram = async (programId: string) => {
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const response = await fetch(`/api/mentorship/admin/programs/${programId}/approve`, {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${session?.access_token}` }
+      });
+      if (!response.ok) throw new Error('Erro ao aprovar');
+      toast.success('Programa aprovado com sucesso!');
+      loadData();
+    } catch (error) {
+      toast.error('Erro ao aprovar programa');
+    }
+  };
+
+  const handleRejectProgram = async () => {
+    if (!selectedProgramId || !rejectReason.trim()) {
+      toast.error('Informe o motivo da rejeição');
+      return;
+    }
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const response = await fetch(`/api/mentorship/admin/programs/${selectedProgramId}/reject`, {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${session?.access_token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reason: rejectReason })
+      });
+      if (!response.ok) throw new Error('Erro ao rejeitar');
+      toast.success('Programa rejeitado');
+      setShowRejectModal(false);
+      setRejectReason('');
+      setSelectedProgramId(null);
+      loadData();
+    } catch (error) {
+      toast.error('Erro ao rejeitar programa');
+    }
+  };
+
   // Estatísticas
   const stats = useMemo(() => ({
     totalMentors: mentors.length,
     approvedMentors: mentors.filter(m => m.mentorProfile?.isApproved).length,
     totalMentorships: mentorships.length,
-    activeMentorships: mentorships.filter(m => m.status === 'active').length
-  }), [mentors, mentorships]);
+    activeMentorships: mentorships.filter(m => m.status === 'active').length,
+    pendingPrograms: programs.filter(p => p.status === 'pending_approval').length,
+    totalPrograms: programs.length
+  }), [mentors, mentorships, programs]);
 
   // Filtros
   const filteredMentors = useMemo(() => {
@@ -274,6 +350,22 @@ export default function MentorshipsAdminPage() {
             Mentores ({mentors.length})
           </button>
           <button
+            onClick={() => { setActiveTab('programs'); setStatusFilter('ALL'); }}
+            className={`px-4 py-2 font-medium transition-all relative ${
+              activeTab === 'programs'
+                ? 'text-primary border-b-2 border-primary'
+                : 'text-text-light-secondary dark:text-text-dark-secondary'
+            }`}
+          >
+            <span className="material-symbols-outlined text-sm mr-2 align-middle">folder_special</span>
+            Programas ({programs.length})
+            {stats.pendingPrograms > 0 && (
+              <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
+                {stats.pendingPrograms}
+              </span>
+            )}
+          </button>
+          <button
             onClick={() => { setActiveTab('mentorships'); setStatusFilter('ALL'); }}
             className={`px-4 py-2 font-medium transition-all ${
               activeTab === 'mentorships'
@@ -323,6 +415,82 @@ export default function MentorshipsAdminPage() {
         {loading ? (
           <div className="flex items-center justify-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+          </div>
+        ) : activeTab === 'programs' ? (
+          /* Lista de Programas */
+          <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark overflow-hidden">
+            <div className="px-6 py-4 border-b border-border-light dark:border-border-dark">
+              <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+                Programas de Mentoria ({programs.length})
+              </h2>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-gray-50 dark:bg-gray-800">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Programa</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Mentor</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Participantes</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Ações</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border-light dark:divide-border-dark">
+                  {programs.map((program) => (
+                    <tr key={program.id} className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                      <td className="px-6 py-4">
+                        <p className="font-medium text-text-light-primary dark:text-text-dark-primary">{program.title}</p>
+                        {program.description && (
+                          <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary line-clamp-1">{program.description}</p>
+                        )}
+                      </td>
+                      <td className="px-6 py-4">
+                        <p className="text-text-light-primary dark:text-text-dark-primary">{program.mentor?.displayName || program.mentor?.email || 'N/A'}</p>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                          program.status === 'pending_approval' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400' :
+                          program.status === 'approved' || program.status === 'active' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' :
+                          program.status === 'rejected' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400' :
+                          'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-400'
+                        }`}>
+                          {program.status === 'pending_approval' ? 'Aguardando' :
+                           program.status === 'approved' ? 'Aprovado' :
+                           program.status === 'active' ? 'Ativo' :
+                           program.status === 'rejected' ? 'Rejeitado' :
+                           program.status === 'draft' ? 'Rascunho' : program.status}
+                        </span>
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="text-text-light-primary dark:text-text-dark-primary">{program.participantsCount || 0}</span>
+                      </td>
+                      <td className="px-6 py-4">
+                        {program.status === 'pending_approval' && (
+                          <div className="flex gap-2">
+                            <AdminButton size="sm" variant="primary" onClick={() => handleApproveProgram(program.id)}>
+                              Aprovar
+                            </AdminButton>
+                            <AdminButton size="sm" variant="danger" onClick={() => { setSelectedProgramId(program.id); setShowRejectModal(true); }}>
+                              Rejeitar
+                            </AdminButton>
+                          </div>
+                        )}
+                        {program.status !== 'pending_approval' && (
+                          <span className="text-sm text-text-light-secondary">-</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                  {programs.length === 0 && (
+                    <tr>
+                      <td colSpan={5} className="px-6 py-12 text-center text-text-light-secondary dark:text-text-dark-secondary">
+                        Nenhum programa encontrado
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         ) : activeTab === 'mentors' ? (
           /* Lista de Mentores */
@@ -499,6 +667,36 @@ export default function MentorshipsAdminPage() {
           </div>
         )}
       </div>
+
+      {/* Modal de Rejeição de Programa */}
+      <AdminModal
+        isOpen={showRejectModal}
+        onClose={() => { setShowRejectModal(false); setRejectReason(''); setSelectedProgramId(null); }}
+        title="Rejeitar Programa"
+      >
+        <div className="space-y-4">
+          <p className="text-text-light-secondary dark:text-text-dark-secondary">
+            Informe o motivo da rejeição para que o mentor possa corrigir e reenviar.
+          </p>
+          <textarea
+            value={rejectReason}
+            onChange={(e) => setRejectReason(e.target.value)}
+            placeholder="Motivo da rejeição..."
+            rows={4}
+            className="w-full px-4 py-3 rounded-xl border border-border-light dark:border-border-dark 
+              bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary
+              focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary resize-none"
+          />
+          <div className="flex gap-3 justify-end">
+            <AdminButton variant="outline" onClick={() => { setShowRejectModal(false); setRejectReason(''); }}>
+              Cancelar
+            </AdminButton>
+            <AdminButton variant="danger" onClick={handleRejectProgram} disabled={!rejectReason.trim()}>
+              Confirmar Rejeição
+            </AdminButton>
+          </div>
+        </div>
+      </AdminModal>
     </>
   );
 }

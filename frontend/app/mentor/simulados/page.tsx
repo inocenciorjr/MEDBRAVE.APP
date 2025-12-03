@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { TabGroup } from '@/components/ui/TabGroup';
 import { formatDistanceToNow } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { formatPercentSimple } from '@/lib/utils/formatPercent';
 
 interface Simulado {
   id: string;
@@ -36,8 +37,31 @@ export default function SimuladosPage() {
         const { data: { session } } = await supabase.auth.getSession();
         if (!session) return;
 
-        // TODO: Implementar chamada real à API
-        setSimulados([]);
+        const response = await fetch('/api/mentorship/mentor-simulados', {
+          headers: {
+            'Authorization': `Bearer ${session.access_token}`,
+          },
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const simuladosData = data.data?.simulados || [];
+          
+          // Mapear para o formato esperado pelo componente
+          const mappedSimulados: Simulado[] = simuladosData.map((s: any) => ({
+            id: s.id,
+            name: s.name,
+            description: s.description,
+            questionsCount: s.question_count || 0,
+            visibility: s.visibility,
+            status: s.status,
+            createdAt: s.created_at,
+            respondentsCount: s.respondents_count || 0,
+            averageScore: s.average_score,
+          }));
+          
+          setSimulados(mappedSimulados);
+        }
       } catch (error) {
         console.error('Erro ao carregar simulados:', error);
       } finally {
@@ -118,17 +142,30 @@ export default function SimuladosPage() {
             Crie e gerencie simulados personalizados para seus mentorados
           </p>
         </div>
-        <button
-          onClick={() => router.push('/mentor/simulados/criar')}
-          className="px-5 py-2.5 bg-primary text-white rounded-xl font-semibold
-            hover:bg-primary/90 transition-all duration-200
-            shadow-lg hover:shadow-xl shadow-primary/30
-            hover:scale-105 active:scale-[0.98]
-            flex items-center gap-2"
-        >
-          <span className="material-symbols-outlined">add</span>
-          Criar Simulado
-        </button>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => router.push('/mentor/simulados/analytics')}
+            className="px-5 py-2.5 bg-gradient-to-r from-violet-500 to-purple-500 text-white rounded-xl font-semibold
+              hover:from-violet-600 hover:to-purple-600 transition-all duration-200
+              shadow-lg hover:shadow-xl shadow-violet-500/30
+              hover:scale-105 active:scale-[0.98]
+              flex items-center gap-2"
+          >
+            <span className="material-symbols-outlined">analytics</span>
+            Analytics Globais
+          </button>
+          <button
+            onClick={() => router.push('/mentor/simulados/criar')}
+            className="px-5 py-2.5 bg-primary text-white rounded-xl font-semibold
+              hover:bg-primary/90 transition-all duration-200
+              shadow-lg hover:shadow-xl shadow-primary/30
+              hover:scale-105 active:scale-[0.98]
+              flex items-center gap-2"
+          >
+            <span className="material-symbols-outlined">add</span>
+            Criar Simulado
+          </button>
+        </div>
       </div>
 
       {/* Tabs e Filtros */}
@@ -260,9 +297,9 @@ export default function SimuladosPage() {
                     {simulado.respondentsCount} respostas
                   </span>
                 </div>
-                {simulado.averageScore !== undefined && (
+                {simulado.averageScore != null && (
                   <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-                    {simulado.averageScore.toFixed(1)}%
+                    {formatPercentSimple(simulado.averageScore)}
                   </span>
                 )}
               </div>

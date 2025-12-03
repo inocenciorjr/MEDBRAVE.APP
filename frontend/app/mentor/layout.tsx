@@ -34,12 +34,24 @@ export default function MentorLayout({ children }: MentorLayoutProps) {
     const checkMentorAccess = async () => {
       try {
         const supabase = createClient();
-        const { data: { user } } = await supabase.auth.getUser();
+        
+        // Primeiro tentar getSession (mais rápido e funciona logo após callback)
+        let { data: { session } } = await supabase.auth.getSession();
+        
+        // Se não tiver sessão, aguardar um pouco e tentar novamente
+        // (pode estar no meio de um redirect do OAuth)
+        if (!session) {
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          const retry = await supabase.auth.getSession();
+          session = retry.data.session;
+        }
 
-        if (!user) {
-          router.push('/login?redirect=/mentor');
+        if (!session?.user) {
+          router.push('/mentor-login');
           return;
         }
+
+        const user = session.user;
 
         // Verificar se o usuário tem role de mentor na tabela users
         const { data: userData } = await supabase
@@ -69,7 +81,7 @@ export default function MentorLayout({ children }: MentorLayoutProps) {
         setIsMentor(true);
       } catch (error) {
         console.error('Erro ao verificar acesso de mentor:', error);
-        router.push('/login?redirect=/mentor');
+        router.push('/mentor-login');
       } finally {
         setIsLoading(false);
       }
@@ -91,7 +103,7 @@ export default function MentorLayout({ children }: MentorLayoutProps) {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background-light dark:bg-background-dark">
+    <div className="flex min-h-screen bg-background-light dark:bg-background-dark">
       {/* Mobile Overlay */}
       {isMobileSidebarOpen && (
         <div
@@ -100,14 +112,13 @@ export default function MentorLayout({ children }: MentorLayoutProps) {
         />
       )}
 
-      {/* Sidebar */}
+      {/* Sidebar - Fixed para sobrepor o conteúdo */}
       <div
         className={`fixed inset-y-0 left-0 z-50 transform transition-all duration-300 ease-out
-          lg:relative lg:translate-x-0
           ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
-        onMouseEnter={() => setIsSidebarExpanded(true)}
-        onMouseLeave={() => setIsSidebarExpanded(false)}
+        onMouseEnter={() => !isMobileSidebarOpen && setIsSidebarExpanded(true)}
+        onMouseLeave={() => !isMobileSidebarOpen && setIsSidebarExpanded(false)}
       >
         <MentorSidebar
           isExpanded={isSidebarExpanded}
@@ -117,10 +128,8 @@ export default function MentorLayout({ children }: MentorLayoutProps) {
         />
       </div>
 
-      {/* Main Content */}
-      <main className={`flex-1 overflow-y-auto transition-all duration-300 ${
-        isSidebarExpanded ? 'lg:ml-0' : 'lg:ml-0'
-      }`}>
+      {/* Main Content - Com margem para a sidebar colapsada */}
+      <main className="flex-1 lg:ml-20">
         <div className="min-h-screen">
           {/* Header */}
           <MentorHeader

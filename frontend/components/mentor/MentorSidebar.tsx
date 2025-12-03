@@ -13,6 +13,8 @@ interface MentorSidebarProps {
 const menuItems = [
   { id: 'dashboard', label: 'Dashboard', icon: 'dashboard', href: '/mentor' },
   { id: 'mentees', label: 'Mentorados', icon: 'groups', href: '/mentor/mentorados' },
+  { id: 'billing', label: 'Cobranças', icon: 'payments', href: '/mentor/cobrancas' },
+  { id: 'report', label: 'Relatório Financeiro', icon: 'monitoring', href: '/mentor/relatorio-financeiro' },
   { id: 'simulados', label: 'Simulados', icon: 'quiz', href: '/mentor/simulados' },
   { id: 'messages', label: 'Recados', icon: 'mail', href: '/mentor/recados' },
   { id: 'meetings', label: 'Reuniões', icon: 'event', href: '/mentor/reunioes' },
@@ -50,12 +52,14 @@ export default function MentorSidebar({ isExpanded, isMobile, onClose, mentorPro
               src="/medbravelogo.png"
               alt="MedBrave"
               fill
+              sizes="40px"
               className="object-contain dark:hidden"
             />
             <Image
               src="/medbravelogo-dark.png"
               alt="MedBrave"
               fill
+              sizes="40px"
               className="object-contain hidden dark:block"
             />
           </div>
@@ -70,7 +74,7 @@ export default function MentorSidebar({ isExpanded, isMobile, onClose, mentorPro
         <div className="flex items-center gap-3">
           <div className="relative w-10 h-10 rounded-full overflow-hidden bg-primary/10 flex-shrink-0 ring-2 ring-primary/20">
             {mentorProfile?.avatar ? (
-              <Image src={mentorProfile.avatar} alt={mentorProfile.name || 'Mentor'} fill className="object-cover" />
+              <Image src={mentorProfile.avatar} alt={mentorProfile.name || 'Mentor'} fill sizes="40px" className="object-cover" />
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <span className="material-symbols-outlined text-primary text-xl">person</span>

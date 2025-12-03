@@ -33,18 +33,41 @@ export const authenticate = async (
         throw new AppError('Token inválido ou expirado', 401);
       }
 
-      // Buscar role do usuário na tabela profiles
+      // Buscar role do usuário - tentar profiles primeiro, depois users
+      let userRole = 'STUDENT';
+      
+      // Tentar buscar na tabela profiles
       const { data: profile } = await supabase
         .from('profiles')
         .select('role')
         .eq('id', user.id)
         .single();
 
+      if (profile?.role) {
+        userRole = profile.role.toUpperCase();
+      } else {
+        // Fallback: buscar na tabela users
+        const { data: userData } = await supabase
+          .from('users')
+          .select('role')
+          .eq('id', user.id)
+          .single();
+        
+        if (userData?.role) {
+          userRole = userData.role.toUpperCase();
+        }
+      }
+
+      // Também verificar user_metadata do Supabase Auth
+      if (user.user_metadata?.role) {
+        userRole = String(user.user_metadata.role).toUpperCase();
+      }
+
       // Adicionar o usuário decodificado ao request
       req.user = {
         id: user.id,
         email: user.email || '',
-        user_role: profile?.role?.toUpperCase() || 'STUDENT',
+        user_role: userRole,
         emailVerified: user.email_confirmed_at !== null,
       };
 

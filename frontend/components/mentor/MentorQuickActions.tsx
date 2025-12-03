@@ -76,10 +76,10 @@ function QuickActionCard({ title, description, icon, href, color }: QuickActionP
 export default function MentorQuickActions() {
   const actions: QuickActionProps[] = [
     {
-      title: 'Adicionar Mentorado',
-      description: 'Inclua novos alunos na sua lista de mentorados',
-      icon: 'person_add',
-      href: '/mentor/mentorados?action=add',
+      title: 'Criar Mentoria',
+      description: 'Crie uma nova mentoria (Intensivão, Extensivo, etc.)',
+      icon: 'folder_special',
+      href: '/mentor/mentorias/novo',
       color: 'primary',
     },
     {

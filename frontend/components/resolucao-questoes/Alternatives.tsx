@@ -153,9 +153,12 @@ const AlternativeItem = memo(function AlternativeItem({
           </div>
 
           {/* Alternative Text */}
-          <p className={`text-left flex-1 text-sm md:text-base ${getTextClass()} ${isStrikethrough ? 'line-through opacity-50' : ''}`}>
-            {alternative.text}
-          </p>
+          <div 
+            className={`text-left flex-1 text-sm md:text-base ${getTextClass()} ${isStrikethrough ? 'line-through opacity-50' : ''}
+              prose prose-sm dark:prose-invert max-w-none
+              [&_p]:m-0 [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:inline [&_img]:max-h-20`}
+            dangerouslySetInnerHTML={{ __html: alternative.text }}
+          />
         </div>
 
         {/* Icons Container - Scissors and Percentage */}

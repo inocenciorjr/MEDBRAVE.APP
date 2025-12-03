@@ -84,7 +84,7 @@ function ResultadoSimuladoContent({ params }: ResultadoSimuladoPageProps) {
                 letter: String.fromCharCode(65 + idx) as 'A' | 'B' | 'C' | 'D' | 'E',
                 text: alt.text || '',
               })),
-              correctAlternative: q.correct_alternative_id || q.alternatives?.find((a: { isCorrect?: boolean }) => a.isCorrect)?.id || '',
+              correctAlternative: q.correct_alternative_id || q.correct_answer || q.alternatives?.find((a: { isCorrect?: boolean }) => a.isCorrect)?.id || '',
               likes: 0,
               dislikes: 0,
               tags: q.tags || [],

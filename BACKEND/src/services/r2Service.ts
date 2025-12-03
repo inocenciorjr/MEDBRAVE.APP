@@ -861,6 +861,42 @@ export class R2Service {
 
     return mimeTypes[extension || ''] || 'application/octet-stream';
   }
+
+  // Upload de buffer direto para R2 (usado pelo endpoint upload-base64)
+  async uploadBuffer(
+    buffer: Buffer,
+    fileKey: string,
+    contentType: string,
+    metadata: Record<string, string> = {},
+  ): Promise<{ fileKey: string; publicUrl: string; size: number }> {
+    try {
+      const command = new PutObjectCommand({
+        Bucket: this.bucketName,
+        Key: fileKey,
+        Body: buffer,
+        ContentType: contentType,
+        Metadata: {
+          ...metadata,
+          uploadedAt: new Date().toISOString(),
+        },
+      });
+
+      await this.client.send(command);
+
+      const publicUrl = `${this.publicUrl}/${fileKey}`;
+
+      logger.info('Upload de buffer concluído', { fileKey, size: buffer.length });
+
+      return {
+        fileKey,
+        publicUrl,
+        size: buffer.length,
+      };
+    } catch (error: any) {
+      logger.error('Erro no upload de buffer para R2', { error, fileKey });
+      throw new Error(`Falha no upload de buffer: ${error.message}`);
+    }
+  }
 }
 
 // Instância singleton
