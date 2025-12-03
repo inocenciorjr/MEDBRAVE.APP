@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState, Suspense, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -12,16 +12,22 @@ function AuthLoadingScreen({ message = 'Validando acesso...', debugLogs = [] }: 
       <div className="absolute top-8 left-8">
         <div className="flex items-center gap-2">
           <img src="/medbravelogo-dark.png" alt="MedBrave" className="w-10 h-10 object-contain" />
-          <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>MEDBRAVE</span>
+          <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>
+            MEDBRAVE
+          </span>
         </div>
       </div>
       <img src="/icons8-lion-48.png" alt="" className="absolute bottom-8 right-8 w-24 h-24 opacity-60" />
       <div className="flex flex-col items-center">
         <h1 className="text-white text-xl md:text-2xl font-semibold mb-4">{message}</h1>
         <div className="w-10 h-10 border-4 border-white/20 border-t-amber-400 rounded-full animate-spin" />
+        
+        {/* Debug logs visíveis durante loading */}
         {debugLogs.length > 0 && (
           <div className="mt-6 text-left bg-black/30 rounded p-3 max-w-sm max-h-32 overflow-y-auto">
-            {debugLogs.map((log, i) => (<p key={i} className="text-xs text-white/60 font-mono">{log}</p>))}
+            {debugLogs.map((log, i) => (
+              <p key={i} className="text-xs text-white/60 font-mono">{log}</p>
+            ))}
           </div>
         )}
       </div>
@@ -37,8 +43,11 @@ function AuthCallbackContent() {
   const [loadingMessage, setLoadingMessage] = useState('Validando acesso...');
   const hasRun = useRef(false);
 
-  const isEdgeMobile = typeof navigator !== 'undefined' && /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+  const isEdgeMobile = typeof navigator !== 'undefined' &&
+    /Edg|Edge/i.test(navigator.userAgent) &&
+    /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
 
+  // Função para adicionar log visível na tela
   const addDebug = (msg: string) => {
     console.log(msg);
     setDebugInfo(prev => [...prev, `${new Date().toISOString().slice(11, 19)} ${msg}`]);
@@ -50,19 +59,24 @@ function AuthCallbackContent() {
 
     const timeoutId = setTimeout(() => {
       addDebug('TIMEOUT!');
-      setError(isEdgeMobile ? 'Timeout no Edge Mobile.' : 'Timeout.');
+      setError(isEdgeMobile
+        ? 'Timeout no Edge Mobile. Use Chrome ou Safari.'
+        : 'O processo demorou demais. Tente novamente.');
     }, isEdgeMobile ? 30000 : 15000);
 
     const handleCallback = async () => {
       try {
         addDebug(`Edge=${isEdgeMobile}`);
+
         const code = searchParams.get('code');
         addDebug(`Code=${code ? 'SIM' : 'NAO'}`);
 
+        // Debug PKCE
         const pkceInCookies = document.cookie.split(';').filter(c => c.includes('code-verifier')).length;
         const pkceInLocal = Object.keys(localStorage).filter(k => k.includes('code-verifier')).length;
         const pkceInSession = Object.keys(sessionStorage).filter(k => k.includes('code-verifier')).length;
-        addDebug(`PKCE: c=${pkceInCookies} l=${pkceInLocal} s=${pkceInSession}`);
+
+        addDebug(`PKCE: cookie=${pkceInCookies} local=${pkceInLocal} session=${pkceInSession}`);
 
         const redirect = searchParams.get('redirect') || localStorage.getItem('auth_redirect') || '/';
         localStorage.removeItem('auth_redirect');
@@ -81,61 +95,118 @@ function AuthCallbackContent() {
         addDebug('Verificando...');
 
         let session = null;
+
         if (!isEdgeMobile) {
           const { data } = await supabase.auth.getSession();
           session = data.session;
-          addDebug(`Sessao=${session ? 'SIM' : 'NAO'}`);
+          addDebug(`Sessao existente=${session ? 'SIM' : 'NAO'}`);
         }
 
         if (!session) {
           setLoadingMessage('Autenticando...');
           addDebug('exchange...');
-          const result = await supabase.auth.exchangeCodeForSession(code);
-          if (result.error) {
-            addDebug(`ERR: ${result.error.message}`);
-            setError(result.error.message);
-            return;
+
+          // Para Edge Mobile: tentar com timeout
+          const exchangePromise = supabase.auth.exchangeCodeForSession(code);
+          const timeoutPromise = new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Exchange timeout 10s')), 10000)
+          );
+
+          try {
+            const result = await Promise.race([exchangePromise, timeoutPromise]) as any;
+            
+            if (result.error) {
+              addDebug(`ERR: ${result.error.message}`);
+              setError(result.error.message);
+              return;
+            }
+            
+            session = result.data.session;
+            addDebug('OK!');
+          } catch (timeoutErr: any) {
+            addDebug(`Timeout: ${timeoutErr.message}`);
+            
+            // Fallback: tentar getSession após timeout
+            addDebug('Tentando getSession...');
+            const { data } = await supabase.auth.getSession();
+            if (data.session) {
+              session = data.session;
+              addDebug('getSession OK!');
+            } else {
+              setError('Timeout na autenticação. Tente novamente.');
+              return;
+            }
           }
-          session = result.data.session;
-          addDebug('OK!');
         }
 
         if (!session) {
-          addDebug('Sem sessao');
-          setError('Erro ao autenticar.');
+          addDebug('Sem sessao final');
+          setError('Erro ao autenticar. Tente novamente.');
+          setTimeout(() => router.push('/login'), 3000);
           return;
         }
 
         setLoadingMessage('Carregando perfil...');
+        addDebug('Buscando role...');
+
         let userRole = 'student';
         try {
-          const res = await fetch('/api/user/me', { headers: { 'Authorization': `Bearer ${session.access_token}` } });
-          if (res.ok) { const data = await res.json(); userRole = data.role || 'student'; }
-        } catch {}
+          const res = await fetch('/api/user/me', {
+            headers: { 'Authorization': `Bearer ${session.access_token}` }
+          });
+          if (res.ok) {
+            const data = await res.json();
+            userRole = data.role || 'student';
+          }
+        } catch (e) {
+          addDebug('Erro role');
+        }
 
-        const userData = { uid: session.user.id, email: session.user.email, displayName: session.user.user_metadata?.display_name || session.user.email, photoURL: session.user.user_metadata?.avatar_url || null, emailVerified: !!session.user.email_confirmed_at, role: userRole };
+        const userData = {
+          uid: session.user.id,
+          email: session.user.email,
+          displayName: session.user.user_metadata?.display_name || session.user.email,
+          photoURL: session.user.user_metadata?.avatar_url || null,
+          emailVerified: !!session.user.email_confirmed_at,
+          role: userRole
+        };
+
         try { localStorage.setItem('authToken', session.access_token); } catch { sessionStorage.setItem('authToken', session.access_token); }
         try { localStorage.setItem('user', JSON.stringify(userData)); } catch { sessionStorage.setItem('user', JSON.stringify(userData)); }
         try { localStorage.setItem('user_id', session.user.id); } catch { sessionStorage.setItem('user_id', session.user.id); }
 
-        try { await fetch('/api/auth/set-cookies', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ accessToken: session.access_token, refreshToken: session.refresh_token }) }); } catch {}
+        try {
+          await fetch('/api/auth/set-cookies', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ accessToken: session.access_token, refreshToken: session.refresh_token })
+          });
+        } catch { }
 
         let finalRedirect = redirect;
         if (userRole === 'MENTOR' && redirect === '/') finalRedirect = '/mentor';
 
         setLoadingMessage('Redirecionando...');
+        addDebug('Redirect...');
         await new Promise(r => setTimeout(r, isEdgeMobile ? 1500 : 500));
+
         window.dispatchEvent(new CustomEvent('auth-token-updated', { detail: { token: session.access_token } }));
 
-        if (isEdgeMobile) { window.location.href = finalRedirect; } else { router.push(finalRedirect); }
+        if (isEdgeMobile) {
+          window.location.href = finalRedirect;
+        } else {
+          router.push(finalRedirect);
+        }
+
       } catch (err: any) {
-        addDebug(`CATCH: ${err?.message}`);
-        setError(err?.message || 'Erro');
+        addDebug(`CATCH: ${err?.message || err}`);
+        setError(err?.message || 'Erro desconhecido');
       }
     };
 
     handleCallback().finally(() => clearTimeout(timeoutId));
   }, [searchParams, router, isEdgeMobile]);
+
 
   if (error) {
     return (
@@ -143,18 +214,30 @@ function AuthCallbackContent() {
         <div className="absolute top-8 left-8">
           <div className="flex items-center gap-2">
             <img src="/medbravelogo-dark.png" alt="MedBrave" className="w-10 h-10 object-contain" />
-            <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>MEDBRAVE</span>
+            <span className="text-white font-bold text-xl tracking-wide" style={{ fontFamily: 'Azonix, sans-serif' }}>
+              MEDBRAVE
+            </span>
           </div>
         </div>
         <img src="/icons8-lion-48.png" alt="" className="absolute bottom-8 right-8 w-24 h-24 opacity-60" />
         <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl max-w-md w-full">
           <h2 className="text-white text-xl font-semibold mb-2">Ops! Algo deu errado</h2>
           <p className="text-white/70 mb-4 text-sm">{error}</p>
+
+          {/* Debug info */}
           <div className="text-left bg-black/40 rounded p-3 mb-4 max-h-48 overflow-y-auto">
-            <p className="text-xs text-amber-400 mb-2">Debug:</p>
-            {debugInfo.map((log, i) => (<p key={i} className="text-xs text-white/70 font-mono">{log}</p>))}
+            <p className="text-xs text-amber-400 mb-2">Debug Log:</p>
+            {debugInfo.map((log, i) => (
+              <p key={i} className="text-xs text-white/70 font-mono leading-relaxed">{log}</p>
+            ))}
           </div>
-          <button onClick={() => router.push('/login')} className="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-white font-medium rounded-lg transition-colors">Tentar novamente</button>
+
+          <button
+            onClick={() => router.push('/login')}
+            className="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-white font-medium rounded-lg transition-colors"
+          >
+            Tentar novamente
+          </button>
         </div>
       </div>
     );
