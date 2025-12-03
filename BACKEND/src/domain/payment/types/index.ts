@@ -260,7 +260,10 @@ export interface UserPlan {
   trialEndsAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
-  // Populated fields
+  // Populated fields (from JOIN with plans table)
+  planName?: string;
+  limits?: PlanLimits;
+  features?: string[];
   plan?: Plan;
   user?: {
     id: string;
