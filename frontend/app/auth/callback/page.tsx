@@ -167,17 +167,46 @@ function AuthCallbackContent() {
                 return;
               }
               
-              // Edge Mobile: NÃO usar supabase.auth.setSession() pois trava
-              // Apenas salvar tokens manualmente
+              // Edge Mobile: salvar sessão no formato que o SDK espera
               addDebug('API OK!');
               
-              // Criar objeto session manualmente
+              // Criar objeto session no formato Supabase
+              const expiresAt = Math.floor(Date.now() / 1000) + (data.expires_in || 3600);
               session = {
                 access_token: data.access_token,
                 refresh_token: data.refresh_token,
                 user: data.user,
                 expires_in: data.expires_in,
+                expires_at: expiresAt,
+                token_type: 'bearer',
               } as any;
+              
+              // Salvar no formato que o Supabase SDK espera
+              // A chave é: sb-<project_ref>-auth-token
+              const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+              const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
+              const storageKey = `sb-${projectRef}-auth-token`;
+              
+              const sessionData = {
+                access_token: data.access_token,
+                refresh_token: data.refresh_token,
+                expires_in: data.expires_in,
+                expires_at: expiresAt,
+                token_type: 'bearer',
+                user: data.user,
+              };
+              
+              // Salvar em todos os storages possíveis
+              const sessionJson = JSON.stringify(sessionData);
+              try { localStorage.setItem(storageKey, sessionJson); } catch {}
+              try { sessionStorage.setItem(storageKey, sessionJson); } catch {}
+              // Também em cookie no formato base64
+              try {
+                const base64Session = btoa(sessionJson);
+                document.cookie = `${storageKey}=base64-${base64Session}; max-age=3600; path=/; samesite=lax`;
+              } catch {}
+              
+              addDebug(`Saved: ${storageKey.substring(0, 15)}...`);
             } catch (apiErr: any) {
               addDebug(`API CATCH: ${apiErr.message}`);
               setError(apiErr.message);
