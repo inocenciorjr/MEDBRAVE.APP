@@ -30,13 +30,6 @@ let isRedirecting = false;
 function redirectToLogin(): void {
   if (typeof window === 'undefined' || isRedirecting) return;
   
-  // Edge Mobile fix: não redirecionar se veio do auth (ainda está carregando sessão)
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('_auth') === '1') {
-    console.log('[fetchWithAuth] Ignorando redirect - veio do auth callback');
-    return;
-  }
-  
   isRedirecting = true;
   
   // Limpar caches
@@ -261,33 +254,6 @@ export async function fetchWithAuth(
   const getUserEnd = performance.now();
 
   if (!user) {
-    // Edge Mobile fix: se veio do auth, tentar ler do localStorage diretamente
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('_auth') === '1') {
-      const token = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
-      if (token) {
-        console.log('[fetchWithAuth] Edge Mobile: usando token do localStorage');
-        // Continuar com o token do localStorage
-        const headers: Record<string, string> = {
-          'Authorization': `Bearer ${token}`,
-          'X-User-Timezone': typeof window !== 'undefined' 
-            ? Intl.DateTimeFormat().resolvedOptions().timeZone 
-            : 'America/Sao_Paulo',
-          ...(init.headers as Record<string, string>),
-        };
-        if (init.body && !(init.body instanceof FormData)) {
-          headers['Content-Type'] = 'application/json';
-        }
-        const response = await fetch(url, {
-          ...init,
-          headers,
-          signal: init.signal || AbortSignal.timeout(30000),
-        });
-        updateStats(performance.now() - startTime);
-        return response;
-      }
-    }
-    
     console.error('❌ [fetchWithAuth] Usuário não autenticado');
     stats.errors++;
     throw new Error('Usuário não autenticado');
