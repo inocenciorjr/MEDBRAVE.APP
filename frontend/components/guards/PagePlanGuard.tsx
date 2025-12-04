@@ -5,6 +5,8 @@ import { PlanRequired403 } from '../errors/PlanRequired403';
 import { usePlan } from '@/hooks/usePlan';
 import { useAuth } from '@/lib/contexts/AuthContext';
 
+import { useUser } from '@/contexts/UserContext';
+
 interface PagePlanGuardProps {
   children: React.ReactNode;
   requireActivePlan?: boolean;
@@ -37,6 +39,7 @@ export function PagePlanGuard({
 }: PagePlanGuardProps) {
   const { userPlan, loading: planLoading, isExpired, refreshPlan } = usePlan();
   const { loading: authLoading, isAuthenticated: authIsAuthenticated } = useAuth();
+  const { authFailed } = useUser();
   
   // Combinar loading states
   const loading = planLoading || authLoading;
@@ -93,6 +96,15 @@ export function PagePlanGuard({
         // Evitar loop de redirecionamento se já estiver no login
         if (!currentPath.startsWith('/auth/')) {
           
+          // Se o UserContext já desistiu (authFailed), redirecionar IMEDIATAMENTE
+          // Isso corrige o problema de ficar "preso" na Home sem redirecionar
+          if (authFailed) {
+             console.log('[PagePlanGuard] UserContext falhou definitivamente, forçando login...');
+             const returnUrl = encodeURIComponent(currentPath);
+             window.location.href = `/login?returnUrl=${returnUrl}`;
+             return;
+          }
+
           // FIX EDGE MOBILE: Verificar se acabamos de logar (cookie de sessão)
           const justLoggedIn = document.cookie.includes('sb-access-token') || localStorage.getItem('authToken');
           
@@ -201,7 +213,7 @@ export function PagePlanGuard({
         clearTimeout(retryTimeoutRef.current);
       }
     };
-  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan, authIsAuthenticated]);
+  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan, authIsAuthenticated, authFailed]);
 
   // Reset quando o componente é desmontado e remontado
   useEffect(() => {

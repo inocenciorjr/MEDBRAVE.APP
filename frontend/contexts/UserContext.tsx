@@ -28,6 +28,7 @@ interface UserContextType {
   user: User | null;
   loading: boolean;
   refreshUser: () => Promise<void>;
+  authFailed: boolean; // Novo estado para indicar falha definitiva
 }
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -36,6 +37,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [sessionId, setSessionId] = useState<string | null>(null);
+  const [authFailed, setAuthFailed] = useState(false);
   
   // Monitorar sessão em tempo real
   const { showRevokedModal, closeRevokedModal } = useSessionMonitor(user?.id);
@@ -89,7 +91,35 @@ export function UserProvider({ children }: { children: ReactNode }) {
         console.log('[UserContext] Token não encontrado após tentativas. Usuário não autenticado.');
         setUser(null);
         setLoading(false);
+        setAuthFailed(true);
         return;
+      }
+
+      // Se temos token, tentar restaurar a sessão do SDK se estiver vazia
+      // Isso garante que realtime e storage funcionem
+      if (typeof window !== 'undefined') {
+        const { createClient } = await import('@/lib/supabase/client');
+        const supabase = createClient();
+        const { data: { session: currentSession } } = await supabase.auth.getSession();
+        
+        if (!currentSession && token) {
+           console.log('[UserContext] Restaurando sessão do SDK com token encontrado...');
+           // Tenta restaurar sem refresh token primeiro (só access_token)
+           // Se tiver refresh token no storage, melhor ainda
+           const storedSessionStr = localStorage.getItem(`sb-${process.env.NEXT_PUBLIC_SUPABASE_URL?.match(/https:\/\/([^.]+)\./)?.[1]}-auth-token`);
+           
+           if (storedSessionStr) {
+              try {
+                const storedSession = JSON.parse(storedSessionStr);
+                if (storedSession.refresh_token) {
+                   await supabase.auth.setSession({
+                      access_token: token,
+                      refresh_token: storedSession.refresh_token
+                   });
+                }
+              } catch(e) {}
+           }
+        }
       }
 
       // Se temos token, buscar dados completos do usuário
@@ -197,7 +227,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <UserContext.Provider value={{ user, loading, refreshUser }}>
+    <UserContext.Provider value={{ user, loading, refreshUser, authFailed }}>
       {children}
       
       {/* Modal de sessão revogada */}
