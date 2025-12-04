@@ -54,14 +54,17 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
     // Função para verificar e atualizar token (com fallback para sessionStorage - Edge Mobile fix)
     const checkToken = async (isInitial = false) => {
+      // No Edge Mobile, NÃO fazer requisições na página de callback
+      // A página de destino vai carregar os dados
+      if (isEdgeMobile && window.location.pathname.includes('/auth/callback')) {
+        console.log('[PlanContext] Edge Mobile: ignorando na página de callback');
+        return;
+      }
+      
       // No Edge Mobile, delay inicial para evitar requisições durante navegação
       if (isEdgeMobile && isInitial) {
-        const navEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
-        const isRecentNavigation = navEntries.length > 0 && (performance.now() < 2000);
-        if (isRecentNavigation) {
-          console.log('[PlanContext] Edge Mobile: aguardando navegação estabilizar...');
-          await new Promise(r => setTimeout(r, 500));
-        }
+        console.log('[PlanContext] Edge Mobile: aguardando navegação estabilizar...');
+        await new Promise(r => setTimeout(r, 1000)); // Aumentado para 1 segundo
       }
 
       // ✅ EDGE MOBILE FIX: Verificar localStorage e sessionStorage

@@ -52,15 +52,16 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
       // No Edge Mobile, adicionar delay inicial para evitar requisições durante navegação
       const isEdgeMobileCheck = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+      
+      // No Edge Mobile, NÃO fazer requisições na página de callback
+      if (isEdgeMobileCheck && window.location.pathname.includes('/auth/callback')) {
+        console.log('[UserContext] Edge Mobile: ignorando na página de callback');
+        return;
+      }
+      
       if (isEdgeMobileCheck && retryCount === 0 && !skipInitialDelay) {
-        // Verificar se acabamos de vir do callback (navegação recente)
-        const navEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
-        const isRecentNavigation = navEntries.length > 0 && (performance.now() < 2000);
-        
-        if (isRecentNavigation) {
-          console.log('[UserContext] Edge Mobile: aguardando navegação estabilizar...');
-          await new Promise(r => setTimeout(r, 500));
-        }
+        console.log('[UserContext] Edge Mobile: aguardando navegação estabilizar...');
+        await new Promise(r => setTimeout(r, 1000)); // Aumentado para 1 segundo
       }
 
       // 1. Tentar obter token do localStorage (que pode ter sido colocado pelo AuthContext)
