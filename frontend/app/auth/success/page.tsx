@@ -31,16 +31,9 @@ function AuthSuccessContent() {
         const separator = redirect.includes('?') ? '&' : '?';
         const finalUrl = `${redirect}${separator}_auth=1`;
         
-        // Log para debug
-        fetch('/api/debug-log', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ event: 'auth-success-redirect', redirect, finalUrl })
-        }).catch(() => {});
-        
-        setTimeout(() => {
-          window.location.replace(finalUrl);
-        }, 300);
+        // IMPORTANTE: Fazer redirect IMEDIATAMENTE, sem delay
+        // O delay estava causando race condition com prefetch do Next.js
+        window.location.replace(finalUrl);
         return;
       }
       
