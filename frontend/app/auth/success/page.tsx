@@ -26,9 +26,12 @@ function AuthSuccessContent() {
       
       if (hasSession && hasUser && hasToken) {
         setStatus('Sessão confirmada! Redirecionando...');
+        // Usar replace para não adicionar ao histórico
+        // E adicionar _auth=1 para o AuthContext saber que veio do login
         setTimeout(() => {
-          window.location.href = redirect;
-        }, 500);
+          const separator = redirect.includes('?') ? '&' : '?';
+          window.location.replace(`${redirect}${separator}_auth=1`);
+        }, 300);
         return;
       }
       
