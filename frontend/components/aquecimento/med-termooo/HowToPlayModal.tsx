@@ -137,7 +137,7 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-4 border border-primary/20">
               <h3 className="font-bold text-base mb-2 text-text-light-primary dark:text-text-dark-primary">Um jogo por dia</h3>
               <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                Um novo termo médico é liberado diariamente à meia-noite. Por isso, só é possível jogar uma vez por dia. Volte amanhã para um novo desafio!
+                Um novo termo médico é liberado diariamente à meia-noite.
               </p>
             </div>
 

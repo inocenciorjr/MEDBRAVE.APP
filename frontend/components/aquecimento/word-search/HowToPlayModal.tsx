@@ -114,12 +114,10 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
               <div className="space-y-4">
                 {/* Grid exemplo */}
                 <div className="flex gap-1">
-                  {['H', 'E', 'M', 'O', 'S'].map((letter, i) => (
+                  {['A', 'T', 'L', 'S'].map((letter, i) => (
                     <div
                       key={i}
-                      className={`w-9 h-9 flex items-center justify-center text-sm font-bold rounded-md ${
-                        i < 5 ? 'bg-emerald-500 text-white' : 'bg-slate-100 dark:bg-slate-800 text-text-light-primary dark:text-text-dark-primary'
-                      }`}
+                      className="w-9 h-9 flex items-center justify-center text-sm font-bold rounded-md bg-emerald-500 text-white"
                     >
                       {letter}
                     </div>
@@ -128,7 +126,7 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 bg-emerald-500 rounded-sm"></div>
                   <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                    Palavra <strong className="text-emerald-500">HEMOS</strong> encontrada corretamente!
+                    Palavra <strong className="text-emerald-500">ATLS</strong> encontrada corretamente!
                   </p>
                 </div>
               </div>
@@ -141,7 +139,7 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
                 Aprenda jogando
               </h3>
               <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                Cada puzzle traz uma atualização importante de protocolos médicos. Enquanto encontra as palavras, você absorve o conteúdo!
+                Cada caça-palavras traz uma atualização importante de protocolos médicos. Enquanto encontra as palavras, você absorve o conteúdo!
               </p>
             </div>
 
@@ -149,7 +147,7 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
             <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-4 border border-border-light dark:border-border-dark">
               <h3 className="font-bold text-base mb-2 text-text-light-primary dark:text-text-dark-primary">Um jogo por dia</h3>
               <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-                Um novo puzzle é liberado diariamente à meia-noite. Volte amanhã para aprender sobre outra atualização!
+                Um novo caça-palavras é liberado diariamente à meia-noite.
               </p>
             </div>
 

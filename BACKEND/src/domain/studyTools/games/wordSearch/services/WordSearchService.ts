@@ -258,21 +258,35 @@ export class WordSearchService {
   async getDailyRanking(): Promise<{ stats: any; ranking: any[] }> {
     const today = new Date().toISOString().split('T')[0];
 
-    // Buscar jogos completados do dia
+    // Buscar jogos completados do dia (sem limite para ordenar corretamente)
     const { data: games } = await this.supabase
       .from('word_search_games')
       .select('id, user_id, found_words, created_at, completed_at')
       .eq('date', today)
-      .eq('is_completed', true)
-      .order('completed_at', { ascending: true })
-      .limit(10);
+      .eq('is_completed', true);
 
     if (!games || games.length === 0) {
       return { stats: { totalPlayers: 0, totalWinners: 0 }, ranking: [] };
     }
 
+    // Calcular tempo de cada jogo e ordenar pelo menor tempo
+    const gamesWithTime = games.map(game => {
+      const completedAt = game.completed_at ? new Date(game.completed_at) : null;
+      const createdAt = new Date(game.created_at);
+      const timeInSeconds = completedAt
+        ? Math.floor((completedAt.getTime() - createdAt.getTime()) / 1000)
+        : Infinity;
+      return { ...game, timeInSeconds };
+    });
+
+    // Ordenar pelo menor tempo
+    gamesWithTime.sort((a, b) => a.timeInSeconds - b.timeInSeconds);
+
+    // Pegar top 10
+    const top10 = gamesWithTime.slice(0, 10);
+
     // Buscar dados dos usuários
-    const userIds = games.map(g => g.user_id);
+    const userIds = top10.map(g => g.user_id);
     const { data: users } = await this.supabase
       .from('users')
       .select('id, display_name, photo_url')
@@ -280,13 +294,8 @@ export class WordSearchService {
 
     const usersMap = new Map((users || []).map(u => [u.id, u]));
 
-    const ranking = games.map((game, index) => {
+    const ranking = top10.map((game, index) => {
       const user = usersMap.get(game.user_id);
-      const completedAt = game.completed_at ? new Date(game.completed_at) : null;
-      const createdAt = new Date(game.created_at);
-      const timeInSeconds = completedAt
-        ? Math.floor((completedAt.getTime() - createdAt.getTime()) / 1000)
-        : 0;
 
       return {
         position: index + 1,
@@ -294,7 +303,7 @@ export class WordSearchService {
         displayName: user?.display_name || 'Jogador Anônimo',
         photoUrl: user?.photo_url || null,
         wordsFound: game.found_words?.length || 0,
-        timeInSeconds,
+        timeInSeconds: game.timeInSeconds,
         completedAt: game.completed_at,
       };
     });

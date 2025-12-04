@@ -15,11 +15,14 @@ const getStorageKey = () => {
 interface PuzzleInfo {
   title: string;
   totalWords: number;
+  contextText: string;
+  words: string[];
 }
 
 function WordSearchContent() {
   const [showGame, setShowGame] = useState(false);
   const [showHowToPlay, setShowHowToPlay] = useState(false);
+  const [showContext, setShowContext] = useState(false);
   const [hasPlayedToday, setHasPlayedToday] = useState(false);
   const [puzzleInfo, setPuzzleInfo] = useState<PuzzleInfo | null>(null);
   const [loading, setLoading] = useState(true);
@@ -38,6 +41,8 @@ function WordSearchContent() {
           setPuzzleInfo({
             title: data.data.title,
             totalWords: data.data.totalWords,
+            contextText: data.data.contextText,
+            words: data.data.words,
           });
         }
       } catch (error) {
@@ -194,6 +199,16 @@ function WordSearchContent() {
               {hasPlayedToday ? 'Continuar' : 'Jogar'}
             </button>
             
+            {puzzleInfo && (
+              <button
+                onClick={() => setShowContext(true)}
+                className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors font-medium"
+              >
+                <span className="material-symbols-outlined text-xl">article</span>
+                <span>Ver nota de atualização</span>
+              </button>
+            )}
+            
             <button
               onClick={() => setShowHowToPlay(true)}
               className="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary hover:text-emerald-500 transition-colors"
@@ -214,6 +229,73 @@ function WordSearchContent() {
       </footer>
 
       <HowToPlayModal isOpen={showHowToPlay} onClose={() => setShowHowToPlay(false)} />
+      
+      {/* Modal de Contexto/Nota de Atualização */}
+      {showContext && puzzleInfo && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[9999]"
+            onClick={() => setShowContext(false)}
+          />
+          <div className="fixed right-0 top-0 h-full w-full md:w-[500px] bg-surface-light dark:bg-surface-dark shadow-2xl z-[10000] flex flex-col">
+            {/* Header */}
+            <div className="flex items-center justify-between p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-2xl text-emerald-500">article</span>
+                <h2 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">{puzzleInfo.title}</h2>
+              </div>
+              <button
+                onClick={() => setShowContext(false)}
+                className="p-2.5 hover:bg-surface-light dark:hover:bg-surface-dark rounded-xl transition-all"
+              >
+                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">close</span>
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 overflow-y-auto p-6">
+              <div
+                className="text-sm leading-relaxed text-text-light-secondary dark:text-text-dark-secondary"
+                dangerouslySetInnerHTML={{ 
+                  __html: puzzleInfo.contextText
+                    .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-bold text-text-light-primary dark:text-text-dark-primary">$1</strong>')
+                    .replace(/\n/g, '<br/>')
+                }}
+              />
+              
+              {/* Palavras a encontrar */}
+              <div className="mt-6 pt-4 border-t border-border-light dark:border-border-dark">
+                <h3 className="text-sm font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wide mb-3">
+                  Palavras para encontrar ({puzzleInfo.words.length})
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {puzzleInfo.words.map((word) => (
+                    <span
+                      key={word}
+                      className="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20"
+                    >
+                      {word}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="p-6 border-t border-border-light dark:border-border-dark">
+              <button
+                onClick={() => {
+                  setShowContext(false);
+                  setShowGame(true);
+                }}
+                className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+              >
+                Iniciar Jogo
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
