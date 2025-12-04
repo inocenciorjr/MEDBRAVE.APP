@@ -282,9 +282,9 @@ function AuthCallbackContent() {
         window.dispatchEvent(new CustomEvent('auth-token-updated', { detail: { token: session.access_token } }));
 
         if (isEdgeMobile) {
-          // Adicionar parâmetro para indicar que veio do login
-          const separator = finalRedirect.includes('?') ? '&' : '?';
-          window.location.href = `${finalRedirect}${separator}_auth=1`;
+          // Edge Mobile: usar página intermediária que aguarda a sessão
+          const encodedRedirect = encodeURIComponent(finalRedirect);
+          window.location.href = `/auth/success?redirect=${encodedRedirect}`;
         } else {
           router.push(finalRedirect);
         }

@@ -141,14 +141,14 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
       const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
       const storageKey = `sb-${projectRef}-auth-token`;
-      
+
       // Verificar se veio do callback de auth (parâmetro _auth=1)
       const urlParams = new URLSearchParams(window.location.search);
       const fromAuth = urlParams.get('_auth') === '1';
-      
+
       const checkSession = (attempt: number) => {
         const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
-        
+
         // Log para debug
         fetch('/api/debug-log', {
           method: 'POST',
@@ -180,11 +180,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
               window.dispatchEvent(new CustomEvent('auth-token-updated', {
                 detail: { token: sessionData.access_token }
               }));
-              
+
               // Limpar parâmetro _auth da URL
               if (fromAuth) {
                 urlParams.delete('_auth');
-                const newUrl = urlParams.toString() 
+                const newUrl = urlParams.toString()
                   ? `${window.location.pathname}?${urlParams.toString()}`
                   : window.location.pathname;
                 window.history.replaceState({}, '', newUrl);
@@ -197,7 +197,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
         return false;
       };
-      
+
       // Se veio do auth, tentar múltiplas vezes com delay
       if (fromAuth) {
         let attempts = 0;
@@ -205,7 +205,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         const tryCheck = () => {
           attempts++;
           if (checkSession(attempts)) return;
-          
+
           if (attempts < maxAttempts) {
             setTimeout(tryCheck, 500); // Tentar novamente em 500ms
           } else {

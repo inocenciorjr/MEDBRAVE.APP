@@ -46,7 +46,53 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   const fetchUser = async (retryCount = 0) => {
     try {
-      // Buscar sessão do Supabase
+      // Edge Mobile fix: verificar localStorage diretamente
+      const isEdgeMobile = typeof navigator !== 'undefined' &&
+        /Edg|Edge/i.test(navigator.userAgent) &&
+        /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+      
+      if (isEdgeMobile) {
+        // Ler sessão do localStorage diretamente
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+        const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
+        const storageKey = `sb-${projectRef}-auth-token`;
+        const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+        
+        if (storedSession) {
+          try {
+            const sessionData = JSON.parse(storedSession);
+            if (sessionData.access_token && sessionData.user) {
+              // Buscar dados do usuário via API
+              const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
+                headers: { 'Authorization': `Bearer ${sessionData.access_token}` },
+              });
+              
+              if (response.ok) {
+                const userData = await response.json();
+                const user = {
+                  id: userData.id,
+                  email: userData.email,
+                  role: userData.role,
+                  displayName: userData.displayName || sessionData.user.email?.split('@')[0] || 'Usuário',
+                  photoURL: userData.photoURL || sessionData.user.user_metadata?.avatar_url || null,
+                  activePlan: userData.activePlan || null,
+                };
+                setUser(user);
+                setLoading(false);
+                return;
+              }
+            }
+          } catch (e) {
+            console.error('[UserContext] Edge Mobile: erro ao ler sessão:', e);
+          }
+        }
+        
+        setUser(null);
+        setLoading(false);
+        return;
+      }
+      
+      // Outros navegadores: usar SDK normalmente
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
