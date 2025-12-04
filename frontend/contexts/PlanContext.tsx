@@ -64,7 +64,7 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
       // No Edge Mobile, delay inicial para evitar requisições durante navegação
       if (isEdgeMobile && isInitial) {
         console.log('[PlanContext] Edge Mobile: aguardando navegação estabilizar...');
-        await new Promise(r => setTimeout(r, 1000)); // Aumentado para 1 segundo
+        await new Promise(r => setTimeout(r, 1000));
       }
 
       // ✅ EDGE MOBILE FIX: Verificar localStorage e sessionStorage
@@ -73,18 +73,24 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
         storedToken = sessionStorage.getItem('authToken');
       }
 
-      // Só atualiza se o token mudou
-      if (storedToken !== lastTokenRef.current) {
+      // No Edge Mobile com isInitial, SEMPRE carregar o plano se tiver token
+      // (não depender do lastTokenRef que pode estar desatualizado)
+      const shouldForceLoad = isEdgeMobile && isInitial && storedToken && !userPlan;
+      
+      // Só atualiza se o token mudou OU se é Edge Mobile inicial
+      if (storedToken !== lastTokenRef.current || shouldForceLoad) {
         const hadToken = lastTokenRef.current;
         lastTokenRef.current = storedToken;
         setToken(storedToken);
 
-        // Se o token apareceu, carregar plano diretamente
-        if (storedToken && !hadToken) {
+        // Se o token apareceu OU é Edge Mobile inicial, carregar plano
+        if (storedToken && (!hadToken || shouldForceLoad)) {
+          console.log('[PlanContext] Carregando plano...', shouldForceLoad ? '(forçado Edge Mobile)' : '');
           planService.clearCache();
           setLoading(true);
           try {
             const plan = await planService.getUserPlan(storedToken);
+            console.log('[PlanContext] Plano carregado:', plan?.planName || 'nenhum');
             setUserPlan(plan);
           } catch (err: any) {
             console.error('[PlanContext] Erro ao carregar plano:', err);
