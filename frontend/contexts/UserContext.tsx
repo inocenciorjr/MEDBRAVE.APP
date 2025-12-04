@@ -212,8 +212,18 @@ export function UserProvider({ children }: { children: ReactNode }) {
       const supabase = createClient();
       
       const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+        // No Edge Mobile, ignorar eventos durante navegação recente para evitar requisições canceladas
+        const isEdgeMobileNav = /Edg|Edge/i.test(navigator.userAgent) && 
+          /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent) &&
+          performance.now() < 3000; // Primeiros 3 segundos após carregar a página
+        
+        if (isEdgeMobileNav) {
+          console.log('[UserContext] Edge Mobile: ignorando evento SDK durante navegação');
+          return;
+        }
+        
         if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-          fetchUser();
+          fetchUser(0, true); // skipInitialDelay = true pois já passou pelo delay inicial
         } else if (event === 'SIGNED_OUT') {
           setUser(null);
           setLoading(false);
