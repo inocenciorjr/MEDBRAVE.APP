@@ -190,10 +190,17 @@ function AuthCallbackContent() {
           role: userRole
         };
 
+        // Salvar em localStorage E sessionStorage (backup para Edge Mobile)
         localStorage.setItem('authToken', session.access_token);
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('user_id', session.user.id);
-        console.log('[Callback] Dados salvos no localStorage');
+        
+        // Backup no sessionStorage (Edge Mobile às vezes limpa localStorage na navegação)
+        sessionStorage.setItem('authToken', session.access_token);
+        sessionStorage.setItem('user', JSON.stringify(userData));
+        sessionStorage.setItem('user_id', session.user.id);
+        
+        console.log('[Callback] Dados salvos no localStorage e sessionStorage');
 
         // Setar cookies para SSR
         console.log('[Callback] Setando cookies...');

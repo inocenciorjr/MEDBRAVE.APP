@@ -23,9 +23,15 @@ export class SocketService {
     this.io = new SocketIOServer(httpServer, {
       path: '/socket.io/presence',
       cors: {
-        origin: '*', // Permitir todas as origens (igual ao websocketService)
+        origin: [
+          '*', // Em produção, é melhor listar explicitamente
+          'https://www.medbrave.com.br',
+          'https://medbrave.com.br',
+          'http://localhost:3000',
+          'http://localhost:3001'
+        ],
         methods: ['GET', 'POST'],
-        credentials: false, // Desabilitar credentials quando origin é *
+        credentials: true, // Habilitar credentials para cookies se necessário
       },
       transports: ['websocket', 'polling'],
     });

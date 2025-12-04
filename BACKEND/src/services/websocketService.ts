@@ -12,9 +12,15 @@ class WebSocketService {
   initialize(server: HTTPServer) {
     this.io = new SocketIOServer(server, {
       cors: {
-        origin: '*', // Permitir todas as origens (desenvolvimento)
+        origin: [
+          '*', // Em produção, é melhor listar explicitamente
+          'https://www.medbrave.com.br',
+          'https://medbrave.com.br',
+          'http://localhost:3000',
+          'http://localhost:3001'
+        ],
         methods: ['GET', 'POST'],
-        credentials: false, // Desabilitar credentials quando origin é *
+        credentials: true, // Habilitar credentials para cookies se necessário
       },
       path: '/socket.io/jobs',
     });

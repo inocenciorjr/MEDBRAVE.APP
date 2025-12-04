@@ -19,6 +19,7 @@ interface AuthContextValue {
   error: string | null;
   token: string | null;
   isAuthenticated: boolean;
+  authFailed: boolean; // Indica falha definitiva na autenticação
   login: (email: string, password: string) => Promise<void>;
   loginWithGoogle: () => Promise<void>;
   register: (email: string, password: string, displayName: string) => Promise<void>;
@@ -37,6 +38,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [authFailed, setAuthFailed] = useState(false);
   
   // Refs para controle de concorrência e estado
   const processingRef = useRef(false);
@@ -61,18 +63,35 @@ export function AuthProvider({ children }: AuthProviderProps) {
       initAttemptedRef.current = true;
 
       try {
-        // 1. Verificar localStorage primeiro (mais rápido)
-        const storedUser = localStorage.getItem('user');
-        const storedToken = localStorage.getItem('authToken');
+        // 1. Verificar localStorage primeiro (mais rápido), com fallback para sessionStorage (Edge Mobile fix)
+        let storedUser = localStorage.getItem('user');
+        let storedToken = localStorage.getItem('authToken');
         
-        console.log('[AuthContext] localStorage - user:', storedUser ? 'presente' : 'ausente', 'token:', storedToken ? 'presente' : 'ausente');
+        // Fallback para sessionStorage (Edge Mobile às vezes limpa localStorage na navegação)
+        if (!storedUser || !storedToken) {
+          const sessionUser = sessionStorage.getItem('user');
+          const sessionToken = sessionStorage.getItem('authToken');
+          if (sessionUser && sessionToken) {
+            console.log('[AuthContext] Recuperando do sessionStorage (Edge Mobile fallback)');
+            storedUser = sessionUser;
+            storedToken = sessionToken;
+            // Restaurar no localStorage
+            localStorage.setItem('user', sessionUser);
+            localStorage.setItem('authToken', sessionToken);
+            const userId = sessionStorage.getItem('user_id');
+            if (userId) localStorage.setItem('user_id', userId);
+          }
+        }
+        
+        console.log('[AuthContext] storage - user:', storedUser ? 'presente' : 'ausente', 'token:', storedToken ? 'presente' : 'ausente');
 
         if (storedUser && storedToken) {
           try {
             const parsedUser = JSON.parse(storedUser) as User;
             setUser(parsedUser);
+            setAuthFailed(false);
             setLoading(false);
-            console.log('[AuthContext] Usuário restaurado do localStorage');
+            console.log('[AuthContext] Usuário restaurado do storage');
             
             // Ainda assim, verificamos a sessão em background para garantir validade
             validateSessionInBackground();
@@ -94,6 +113,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
       } catch (error) {
         console.error('[AuthContext] Erro fatal na inicialização:', error);
+        setAuthFailed(true);
         setLoading(false);
       }
     };
@@ -156,12 +176,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
         
         console.log('[AuthContext] Não foi possível recuperar sessão dos cookies (401 ou sem dados)');
-        // Se falhou recuperação e não tínhamos localStorage, estamos deslogados
-        if (!localStorage.getItem('user')) {
-           clearSession();
-        }
+        // Falhou recuperação - marcar como falha definitiva
+        clearSession();
       } catch (error) {
         console.error('[AuthContext] Erro na recuperação:', error);
+        clearSession();
       } finally {
         setLoading(false);
         isRecoveringRef.current = false;
@@ -193,6 +212,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       localStorage.setItem('user', JSON.stringify(user));
       localStorage.setItem('user_id', user.uid);
       localStorage.setItem('authToken', token);
+      setAuthFailed(false);
       window.dispatchEvent(new CustomEvent('auth-token-updated', {
         detail: { token }
       }));
@@ -201,12 +221,38 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const clearSession = () => {
       console.log('[AuthContext] Limpando sessão');
       setUser(null);
+      setAuthFailed(true);
       localStorage.removeItem('user');
       localStorage.removeItem('user_id');
       localStorage.removeItem('authToken');
       localStorage.removeItem('userData');
       sessionStorage.removeItem('authToken');
     };
+    
+    // Listener para evento de token atualizado (vindo do callback ou outros lugares)
+    const handleTokenUpdated = async (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const token = customEvent.detail?.token;
+      console.log('[AuthContext] Evento auth-token-updated recebido');
+      
+      if (token) {
+        // Tentar restaurar usuário do localStorage
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+          try {
+            const parsedUser = JSON.parse(storedUser) as User;
+            setUser(parsedUser);
+            setAuthFailed(false);
+            setLoading(false);
+            console.log('[AuthContext] Usuário restaurado via evento');
+          } catch (e) {
+            console.error('[AuthContext] Erro ao parsear usuário do evento');
+          }
+        }
+      }
+    };
+    
+    window.addEventListener('auth-token-updated', handleTokenUpdated);
 
     // Inicializar
     initializeAuth();
@@ -239,6 +285,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     return () => {
       subscription.unsubscribe();
+      window.removeEventListener('auth-token-updated', handleTokenUpdated);
     };
   }, []);
 
@@ -342,6 +389,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       error,
       token: user ? localStorage.getItem('authToken') : null,
       isAuthenticated: !!user,
+      authFailed,
       login,
       loginWithGoogle,
       register,
