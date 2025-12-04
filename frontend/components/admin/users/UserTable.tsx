@@ -114,13 +114,18 @@ export default function UserTable({
               </td>
               <td className="px-4 py-4">
                 <div className="flex items-center gap-3">
-                  {user.photo_url ? (
-                    <img src={user.photo_url} alt={user.display_name} className="w-10 h-10 rounded-full" />
-                  ) : (
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-semibold">{user.display_name?.[0]?.toUpperCase() || 'U'}</span>
-                    </div>
-                  )}
+                  <img 
+                    src={user.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.display_name || 'U')}&background=6366f1&color=fff`} 
+                    alt={user.display_name} 
+                    className="w-10 h-10 rounded-full object-cover"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.fallback) {
+                        target.dataset.fallback = 'true';
+                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(user.display_name || 'U')}&background=6366f1&color=fff`;
+                      }
+                    }}
+                  />
                   <div>
                     <div className="font-medium text-text-light-primary dark:text-text-dark-primary">{user.display_name}</div>
                     <div className="text-sm text-text-light-secondary dark:text-text-dark-secondary">{user.email}</div>

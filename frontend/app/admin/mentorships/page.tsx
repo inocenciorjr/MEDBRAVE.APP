@@ -516,13 +516,18 @@ export default function MentorshipsAdminPage() {
                     <tr key={mentor.id} className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
-                          {mentor.photo_url ? (
-                            <img src={mentor.photo_url} alt="" className="w-10 h-10 rounded-full" />
-                          ) : (
-                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                              <span className="text-primary font-bold">{mentor.display_name?.[0]?.toUpperCase()}</span>
-                            </div>
-                          )}
+                          <img 
+                            src={mentor.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(mentor.display_name || 'M')}&background=6366f1&color=fff`} 
+                            alt="" 
+                            className="w-10 h-10 rounded-full object-cover"
+                            onError={(e) => {
+                              const target = e.currentTarget;
+                              if (!target.dataset.fallback) {
+                                target.dataset.fallback = 'true';
+                                target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(mentor.display_name || 'M')}&background=6366f1&color=fff`;
+                              }
+                            }}
+                          />
                           <div>
                             <p className="font-medium text-text-light-primary dark:text-text-dark-primary">{mentor.display_name}</p>
                             <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">{mentor.email}</p>

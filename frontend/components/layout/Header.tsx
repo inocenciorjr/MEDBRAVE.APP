@@ -124,11 +124,15 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse"></div>
           ) : (
             <img
-              src={userAvatar}
+              src={userAvatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`}
               alt={`Avatar de ${userName}`}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointer hover:ring-2 hover:ring-primary transition-all"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointer hover:ring-2 hover:ring-primary transition-all object-cover"
               onError={(e) => {
-                e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`;
+                // Evitar loop infinito de erro
+                if (!e.currentTarget.dataset.fallback) {
+                  e.currentTarget.dataset.fallback = 'true';
+                  e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`;
+                }
               }}
             />
           )}

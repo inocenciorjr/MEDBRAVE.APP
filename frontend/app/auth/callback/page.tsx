@@ -137,6 +137,23 @@ function AuthCallbackContent() {
             user: data.user,
           } as any;
 
+          // IMPORTANTE: Sincronizar sessão com o SDK do Supabase ANTES de continuar
+          // Isso evita que o AuthContext tente recuperar sessão desnecessariamente no Edge Mobile
+          console.log('[Callback] Sincronizando sessão com SDK do Supabase...');
+          try {
+            const { error: setSessionError } = await supabase.auth.setSession({
+              access_token: data.access_token,
+              refresh_token: data.refresh_token,
+            });
+            if (setSessionError) {
+              console.log('[Callback] Erro ao sincronizar com SDK (não crítico):', setSessionError.message);
+            } else {
+              console.log('[Callback] Sessão sincronizada com SDK do Supabase');
+            }
+          } catch (e) {
+            console.log('[Callback] Erro ao sincronizar com SDK:', e);
+          }
+
           // Salvar sessão no localStorage para o SDK
           const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
           const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
@@ -263,8 +280,8 @@ function AuthCallbackContent() {
         if (isEdgeMobile) {
           console.log('[Callback] Edge Mobile detectado, usando estratégia especial');
 
-          // Delay maior para garantir que tudo foi salvo
-          await new Promise(r => setTimeout(r, 1500));
+          // Delay reduzido - agora que sincronizamos com SDK, não precisa tanto tempo
+          await new Promise(r => setTimeout(r, 500));
 
           // Verificar se os dados persistiram
           const checkToken = localStorage.getItem('authToken');

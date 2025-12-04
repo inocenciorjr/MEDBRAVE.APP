@@ -76,17 +76,18 @@ export function AdminHeader({ userName, userAvatar, onMenuClick }: AdminHeaderPr
                   Administrador
                 </p>
               </div>
-              {userAvatar ? (
-                <img
-                  src={userAvatar}
-                  alt={userName}
-                  className="w-10 h-10 rounded-full border-2 border-primary"
-                />
-              ) : (
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold">
-                  {userName.charAt(0).toUpperCase()}
-                </div>
-              )}
+              <img
+                src={userAvatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`}
+                alt={userName}
+                className="w-10 h-10 rounded-full border-2 border-primary object-cover"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.fallback) {
+                    target.dataset.fallback = 'true';
+                    target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`;
+                  }
+                }}
+              />
             </div>
           )}
         </div>

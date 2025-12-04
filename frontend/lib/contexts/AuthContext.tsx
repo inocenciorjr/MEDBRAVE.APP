@@ -162,8 +162,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
             setLoading(false);
             console.log('[AuthContext] Usuário restaurado do storage');
             
-            // Ainda assim, verificamos a sessão em background para garantir validade
-            validateSessionInBackground();
+            // Verificar se é Edge Mobile - se for, NÃO fazer validação em background imediatamente
+            // pois isso causa loops e delays desnecessários
+            const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+            
+            if (isEdgeMobile) {
+              console.log('[AuthContext] Edge Mobile detectado, pulando validação em background');
+              // No Edge Mobile, confiar no storage e só validar se houver erro em alguma operação
+              return;
+            }
+            
+            // Em outros navegadores, verificar em background (não bloqueia UI)
+            setTimeout(() => validateSessionInBackground(), 2000);
             return;
           } catch (e) {
             console.error('[AuthContext] Erro ao parsear usuário do storage');

@@ -204,11 +204,20 @@ export function PagePlanGuard({
     };
   }, []);
 
-  // Loading state - só mostra loading se está autenticado e carregando plano
-  // Se não está autenticado, o redirect já está sendo tratado
-  const isLoading = authLoading || (authIsAuthenticated && (planLoading || (retryCount > 0 && retryCount < maxRetries && !userPlan)));
+  // Se não está autenticado, mostrar loading (não o conteúdo!)
+  // O redirect será feito pelo useEffect
+  if (!authIsAuthenticated) {
+    return (
+      <div className="flex items-center justify-center py-20 min-h-[50vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />
+      </div>
+    );
+  }
+
+  // Loading state para plano (só se autenticado)
+  const isLoadingPlan = planLoading || (retryCount > 0 && retryCount < maxRetries && !userPlan);
   
-  if (isLoading) {
+  if (isLoadingPlan) {
     return (
       <div className="flex items-center justify-center py-20">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />

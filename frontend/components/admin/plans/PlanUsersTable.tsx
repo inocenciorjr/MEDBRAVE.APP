@@ -283,27 +283,18 @@ export function PlanUsersTable({ planId, userPlans, onRefresh }: PlanUsersTableP
                   <div className="flex-1 space-y-3">
                     <div className="flex items-center gap-3">
                       {/* Avatar */}
-                      {userPlan.user?.photo_url ? (
-                        <img
-                          src={userPlan.user.photo_url}
-                          alt={userPlan.user.name || userPlan.user.email}
-                          className="w-10 h-10 rounded-full object-cover flex-shrink-0"
-                          onError={(e) => {
-                            // Fallback se a imagem falhar ao carregar
-                            e.currentTarget.style.display = 'none';
-                            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                            if (fallback) fallback.style.display = 'flex';
-                          }}
-                        />
-                      ) : null}
-                      <div 
-                        className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0"
-                        style={{ display: userPlan.user?.photo_url ? 'none' : 'flex' }}
-                      >
-                        <span className="text-primary font-semibold text-lg">
-                          {(userPlan.user?.name || userPlan.user?.email || 'U')[0].toUpperCase()}
-                        </span>
-                      </div>
+                      <img
+                        src={userPlan.user?.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(userPlan.user?.name || userPlan.user?.email || 'U')}&background=6366f1&color=fff`}
+                        alt={userPlan.user?.name || userPlan.user?.email}
+                        className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (!target.dataset.fallback) {
+                            target.dataset.fallback = 'true';
+                            target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userPlan.user?.name || userPlan.user?.email || 'U')}&background=6366f1&color=fff`;
+                          }
+                        }}
+                      />
                       <div className="flex-1 min-w-0">
                         <h4 className="font-semibold text-text-light-primary dark:text-text-dark-primary truncate">
                           {userPlan.user?.name || userPlan.user?.email || 'Usuário sem nome'}

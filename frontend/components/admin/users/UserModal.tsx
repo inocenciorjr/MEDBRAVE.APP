@@ -115,13 +115,18 @@ export default function UserModal({
         {/* Header com Status */}
         <div className="flex items-center justify-between pb-4 border-b border-border-light dark:border-border-dark">
           <div className="flex items-center gap-4">
-            {user.photo_url ? (
-              <img src={user.photo_url} alt={user.display_name} className="w-16 h-16 rounded-full" />
-            ) : (
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-primary font-bold text-2xl">{user.display_name?.[0]?.toUpperCase()}</span>
-              </div>
-            )}
+            <img 
+              src={user.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.display_name || 'U')}&background=6366f1&color=fff`} 
+              alt={user.display_name} 
+              className="w-16 h-16 rounded-full object-cover"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.dataset.fallback) {
+                  target.dataset.fallback = 'true';
+                  target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(user.display_name || 'U')}&background=6366f1&color=fff`;
+                }
+              }}
+            />
             <div>
               <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">{user.display_name}</h3>
               <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">{user.email}</p>
