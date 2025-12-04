@@ -5,51 +5,104 @@ import { PlanRequired403 } from '../errors/PlanRequired403';
 import { usePlan } from '@/hooks/usePlan';
 import { useAuth } from '@/lib/contexts/AuthContext';
 
-import { useUser } from '@/contexts/UserContext';
-
 interface PagePlanGuardProps {
   children: React.ReactNode;
   requireActivePlan?: boolean;
   customMessage?: string;
 }
 
-/**
- * Guard que envolve páginas inteiras
- * 
- * Detecta automaticamente:
- * - Usuário sem plano ativo
- * - Erros 403 do backend
- * - Plano expirado
- * 
- * Mostra componente 403 com leão piscando
- * 
- * @example
- * export default function MyPage() {
- *   return (
- *     <PagePlanGuard>
- *       <MyPageContent />
- *     </PagePlanGuard>
- *   );
- * }
- */
 export function PagePlanGuard({
   children,
   requireActivePlan = true,
   customMessage,
 }: PagePlanGuardProps) {
   const { userPlan, loading: planLoading, isExpired, refreshPlan } = usePlan();
-  const { loading: authLoading, isAuthenticated: authIsAuthenticated } = useAuth();
-  const { authFailed } = useUser();
-  
-  // Combinar loading states
-  const loading = planLoading || authLoading;
+  const { loading: authLoading, isAuthenticated: authIsAuthenticated, authFailed } = useAuth();
   
   const [show403, setShow403] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>(customMessage);
   const [retryCount, setRetryCount] = useState(0);
-  const maxRetries = 5; // Máximo de tentativas antes de mostrar 403
+  const [shouldRedirect, setShouldRedirect] = useState(false);
+  const maxRetries = 5;
   const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const redirectTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const hasTriedRefreshRef = useRef(false);
+
+  // Efeito separado para controlar redirecionamento para login
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    const currentPath = window.location.pathname;
+    
+    // Ignorar páginas de auth
+    if (currentPath.startsWith('/auth/') || currentPath === '/login') {
+      return;
+    }
+
+    // Limpar timeout anterior
+    if (redirectTimeoutRef.current) {
+      clearTimeout(redirectTimeoutRef.current);
+      redirectTimeoutRef.current = null;
+    }
+
+    // Se authFailed é true, redirecionar IMEDIATAMENTE
+    if (authFailed) {
+      console.log('[PagePlanGuard] authFailed=true, redirecionando para login...');
+      const returnUrl = encodeURIComponent(currentPath);
+      window.location.href = `/login?returnUrl=${returnUrl}`;
+      return;
+    }
+
+    // Se já está autenticado, não precisa redirecionar
+    if (authIsAuthenticated) {
+      return;
+    }
+
+    // Se ainda está carregando, aguardar
+    if (authLoading) {
+      return;
+    }
+
+    // Não autenticado e não está carregando - verificar credenciais
+    const hasToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+    const hasCookie = document.cookie.includes('sb-access-token');
+
+    if (hasToken || hasCookie) {
+      // Tem credenciais mas não autenticou ainda - dar mais tempo, mas com limite
+      console.log('[PagePlanGuard] Credenciais encontradas, aguardando autenticação (max 5s)...');
+      redirectTimeoutRef.current = setTimeout(() => {
+        // Verificar novamente
+        const stillHasToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+        if (!stillHasToken) {
+          console.log('[PagePlanGuard] Timeout - credenciais perdidas, redirecionando...');
+          const returnUrl = encodeURIComponent(window.location.pathname);
+          window.location.href = `/login?returnUrl=${returnUrl}`;
+        } else {
+          // Ainda tem token mas não autenticou - forçar reload para tentar novamente
+          console.log('[PagePlanGuard] Timeout - forçando reload...');
+          window.location.reload();
+        }
+      }, 5000);
+    } else {
+      // Sem credenciais - redirecionar após pequeno delay
+      console.log('[PagePlanGuard] Sem credenciais, redirecionando em 1.5s...');
+      redirectTimeoutRef.current = setTimeout(() => {
+        const nowHasToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+        const nowHasCookie = document.cookie.includes('sb-access-token');
+        if (!nowHasToken && !nowHasCookie) {
+          console.log('[PagePlanGuard] Confirmado sem credenciais, redirecionando...');
+          const returnUrl = encodeURIComponent(window.location.pathname);
+          window.location.href = `/login?returnUrl=${returnUrl}`;
+        }
+      }, 1500);
+    }
+
+    return () => {
+      if (redirectTimeoutRef.current) {
+        clearTimeout(redirectTimeoutRef.current);
+      }
+    };
+  }, [authFailed, authIsAuthenticated, authLoading]);
 
   // Função para tentar recarregar o plano
   const tryRefreshPlan = useCallback(async () => {
@@ -64,169 +117,98 @@ export function PagePlanGuard({
     }
   }, [refreshPlan]);
 
-  // Verifica se tem plano ativo
+  // Efeito para verificar plano
   useEffect(() => {
-    // Limpar timeout anterior
     if (retryTimeoutRef.current) {
       clearTimeout(retryTimeoutRef.current);
       retryTimeoutRef.current = null;
     }
 
-    // NUNCA mostra 403 enquanto está carregando
-    if (loading) {
-      setShow403(false);
-      return;
-    }
-
-    // Se não requer plano ativo, sempre permite acesso
+    // Se não requer plano, permite acesso
     if (!requireActivePlan) {
       setShow403(false);
       return;
     }
 
-    // Se não está autenticado após o loading, redirecionar para login
+    // Se não está autenticado, o outro useEffect cuida do redirect
     if (!authIsAuthenticated) {
       setShow403(false);
-      setRetryCount(0);
-      hasTriedRefreshRef.current = false;
-      
-      // Redirecionar para login com um pequeno delay para evitar falsos negativos (Edge Mobile)
-      if (typeof window !== 'undefined') {
-        const currentPath = window.location.pathname;
-        // Evitar loop de redirecionamento se já estiver no login
-        if (!currentPath.startsWith('/auth/')) {
-          
-          // Se o UserContext já desistiu (authFailed), redirecionar IMEDIATAMENTE
-          // Isso corrige o problema de ficar "preso" na Home sem redirecionar
-          if (authFailed) {
-             console.log('[PagePlanGuard] UserContext falhou definitivamente, forçando login...');
-             const returnUrl = encodeURIComponent(currentPath);
-             window.location.href = `/login?returnUrl=${returnUrl}`;
-             return;
-          }
-
-          // FIX EDGE MOBILE: Verificar se acabamos de logar (cookie de sessão)
-          const justLoggedIn = document.cookie.includes('sb-access-token') || localStorage.getItem('authToken');
-          
-          if (justLoggedIn) {
-             // Se tem indícios de login, não redirecionar ainda, esperar mais um pouco
-             console.log('[PagePlanGuard] Indícios de login encontrados, aguardando AuthContext...');
-             return;
-          }
-
-          console.log('[PagePlanGuard] Usuário não autenticado, redirecionando para login...');
-          
-          // Adicionar delay de segurança antes de redirecionar
-          const redirectTimeout = setTimeout(() => {
-             // Verificar novamente antes de ir
-             const stillNotAuth = !localStorage.getItem('authToken');
-             if (stillNotAuth) {
-                const returnUrl = encodeURIComponent(currentPath);
-                window.location.href = `/login?returnUrl=${returnUrl}`;
-             }
-          }, 500); // 500ms de tolerância
-          
-          return () => clearTimeout(redirectTimeout);
-        }
-      }
       return;
     }
 
-    // Se tem plano, verifica o status
+    // Se tem plano, verifica status
     if (userPlan) {
-      // Reset retry count quando tem plano
       setRetryCount(0);
       hasTriedRefreshRef.current = false;
 
-      // Plano ATIVO ou TRIAL - permite acesso
       if (userPlan.status === 'ACTIVE' || userPlan.status === 'TRIAL') {
         setShow403(false);
         return;
       }
 
-      // Plano expirado (mas FREE nunca expira)
       if (isExpired && userPlan.planName !== 'FREE') {
         setShow403(true);
-        setErrorMessage(
-          customMessage ||
-          'Seu plano expirou. Renove para continuar.'
-        );
+        setErrorMessage(customMessage || 'Seu plano expirou. Renove para continuar.');
         return;
       }
 
-      // Plano cancelado
       if (userPlan.status === 'CANCELLED') {
         setShow403(true);
-        setErrorMessage(
-          customMessage ||
-          'Seu plano foi cancelado. Adquira um novo plano para continuar.'
-        );
+        setErrorMessage(customMessage || 'Seu plano foi cancelado. Adquira um novo plano para continuar.');
         return;
       }
 
-      // Plano suspenso
       if (userPlan.status === 'SUSPENDED') {
         setShow403(true);
-        setErrorMessage(
-          customMessage ||
-          'Seu plano está suspenso. Entre em contato com o suporte.'
-        );
+        setErrorMessage(customMessage || 'Seu plano está suspenso. Entre em contato com o suporte.');
         return;
       }
 
-      // Qualquer outro status, permite acesso
       setShow403(false);
       return;
     }
 
-    // Se chegou aqui: loading=false, authenticated=true, mas userPlan=null
-    // Implementar retry progressivo antes de mostrar 403
-    
-    if (retryCount < maxRetries) {
-      // Tentar recarregar o plano após um delay progressivo
-      const delay = Math.min(1000 * (retryCount + 1), 3000); // 1s, 2s, 3s, 3s, 3s
-      
-
-      
+    // Autenticado mas sem plano - retry
+    if (!planLoading && retryCount < maxRetries) {
+      const delay = Math.min(1000 * (retryCount + 1), 3000);
       retryTimeoutRef.current = setTimeout(() => {
-        // Verificar novamente se tem token (pode ter aparecido) - com fallback para sessionStorage
         const currentToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
         if (currentToken) {
           tryRefreshPlan();
         }
         setRetryCount(prev => prev + 1);
       }, delay);
-      
       return;
     }
 
-    // Após todas as tentativas, mostrar 403
-    console.log('[PagePlanGuard] Todas as tentativas esgotadas, mostrando 403');
-    setShow403(true);
-    setErrorMessage(
-      customMessage ||
-      'Não identificamos um plano ativo na sua conta.'
-    );
+    // Esgotou tentativas
+    if (retryCount >= maxRetries) {
+      console.log('[PagePlanGuard] Tentativas esgotadas, mostrando 403');
+      setShow403(true);
+      setErrorMessage(customMessage || 'Não identificamos um plano ativo na sua conta.');
+    }
 
     return () => {
       if (retryTimeoutRef.current) {
         clearTimeout(retryTimeoutRef.current);
       }
     };
-  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan, authIsAuthenticated, authFailed]);
+  }, [userPlan, planLoading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan, authIsAuthenticated]);
 
-  // Reset quando o componente é desmontado e remontado
+  // Cleanup
   useEffect(() => {
     return () => {
       hasTriedRefreshRef.current = false;
-      if (retryTimeoutRef.current) {
-        clearTimeout(retryTimeoutRef.current);
-      }
+      if (retryTimeoutRef.current) clearTimeout(retryTimeoutRef.current);
+      if (redirectTimeoutRef.current) clearTimeout(redirectTimeoutRef.current);
     };
   }, []);
 
-  // Enquanto carrega ou está tentando, mostra loading (sem min-h-screen para não quebrar layout)
-  if (loading || (retryCount > 0 && retryCount < maxRetries && !userPlan)) {
+  // Loading state - só mostra loading se está autenticado e carregando plano
+  // Se não está autenticado, o redirect já está sendo tratado
+  const isLoading = authLoading || (authIsAuthenticated && (planLoading || (retryCount > 0 && retryCount < maxRetries && !userPlan)));
+  
+  if (isLoading) {
     return (
       <div className="flex items-center justify-center py-20">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />
@@ -234,11 +216,9 @@ export function PagePlanGuard({
     );
   }
 
-  // Mostra 403 se necessário
   if (show403) {
     return <PlanRequired403 message={errorMessage} />;
   }
 
-  // Mostra conteúdo normal
   return <>{children}</>;
 }
