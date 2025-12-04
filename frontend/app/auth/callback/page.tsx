@@ -190,20 +190,22 @@ function AuthCallbackContent() {
           role: userRole
         };
 
-        // Salvar em localStorage E sessionStorage (backup para Edge Mobile)
+        // 1. Salvar em localStorage E sessionStorage
         localStorage.setItem('authToken', session.access_token);
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('user_id', session.user.id);
-        
-        // Backup no sessionStorage (Edge Mobile às vezes limpa localStorage na navegação)
         sessionStorage.setItem('authToken', session.access_token);
         sessionStorage.setItem('user', JSON.stringify(userData));
         sessionStorage.setItem('user_id', session.user.id);
-        
         console.log('[Callback] Dados salvos no localStorage e sessionStorage');
 
-        // Setar cookies para SSR
-        console.log('[Callback] Setando cookies...');
+        // 2. Setar cookies DIRETAMENTE no cliente (mais confiável que via API para Edge Mobile)
+        const cookieExpiry = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toUTCString(); // 7 dias
+        document.cookie = `sb-access-token=${session.access_token}; path=/; expires=${cookieExpiry}; SameSite=Lax`;
+        document.cookie = `sb-refresh-token=${session.refresh_token}; path=/; expires=${cookieExpiry}; SameSite=Lax`;
+        console.log('[Callback] Cookies setados diretamente no cliente');
+
+        // 3. Também setar via API para SSR (backup)
         try {
           await fetch('/api/auth/set-cookies', {
             method: 'POST',
@@ -213,9 +215,32 @@ function AuthCallbackContent() {
               refreshToken: session.refresh_token
             })
           });
-          console.log('[Callback] Cookies setados');
+          console.log('[Callback] Cookies setados via API também');
         } catch (e) {
-          console.log('[Callback] Erro ao setar cookies:', e);
+          console.log('[Callback] Erro ao setar cookies via API (não crítico):', e);
+        }
+        
+        // 4. Salvar em IndexedDB (mais robusto para Edge Mobile)
+        try {
+          const dbRequest = indexedDB.open('medbrave-auth', 1);
+          dbRequest.onupgradeneeded = (event) => {
+            const db = (event.target as IDBOpenDBRequest).result;
+            if (!db.objectStoreNames.contains('session')) {
+              db.createObjectStore('session', { keyPath: 'key' });
+            }
+          };
+          dbRequest.onsuccess = (event) => {
+            const db = (event.target as IDBOpenDBRequest).result;
+            const tx = db.transaction('session', 'readwrite');
+            const store = tx.objectStore('session');
+            store.put({ key: 'authToken', value: session.access_token });
+            store.put({ key: 'user', value: JSON.stringify(userData) });
+            store.put({ key: 'user_id', value: session.user.id });
+            store.put({ key: 'refresh_token', value: session.refresh_token });
+            console.log('[Callback] Dados salvos no IndexedDB');
+          };
+        } catch (e) {
+          console.log('[Callback] IndexedDB não disponível:', e);
         }
 
         // Determinar redirect final
@@ -236,28 +261,32 @@ function AuthCallbackContent() {
         const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
 
         if (isEdgeMobile) {
-          console.log('[Callback] Edge Mobile detectado, usando router.push com delay');
-          // Edge Mobile: usar router.push com delay para garantir persistência
-          await new Promise(r => setTimeout(r, 1000));
+          console.log('[Callback] Edge Mobile detectado, usando estratégia especial');
+          
+          // Delay maior para garantir que tudo foi salvo
+          await new Promise(r => setTimeout(r, 1500));
 
           // Verificar se os dados persistiram
           const checkToken = localStorage.getItem('authToken');
-          console.log('[Callback] Verificação pós-delay - token:', checkToken ? 'presente' : 'AUSENTE');
+          const checkCookie = document.cookie.includes('sb-access-token');
+          console.log('[Callback] Verificação pós-delay - localStorage:', checkToken ? 'OK' : 'VAZIO', 'cookie:', checkCookie ? 'OK' : 'VAZIO');
 
           if (!checkToken) {
             // Tentar salvar novamente
-            console.log('[Callback] Token perdido, salvando novamente...');
+            console.log('[Callback] Token perdido no localStorage, salvando novamente...');
             localStorage.setItem('authToken', session.access_token);
             localStorage.setItem('user', JSON.stringify(userData));
             localStorage.setItem('user_id', session.user.id);
             await new Promise(r => setTimeout(r, 500));
           }
 
-          router.push(finalRedirect);
+          // Usar location.replace para evitar problemas de histórico
+          console.log('[Callback] Usando location.replace para redirect');
+          window.location.replace(finalRedirect);
         } else {
-          // Outros navegadores: usar window.location
-          console.log('[Callback] Executando redirect com window.location...');
-          window.location.href = finalRedirect;
+          // Outros navegadores: usar window.location.replace (mais limpo que href)
+          console.log('[Callback] Executando redirect com location.replace...');
+          window.location.replace(finalRedirect);
         }
 
       } catch (err: any) {

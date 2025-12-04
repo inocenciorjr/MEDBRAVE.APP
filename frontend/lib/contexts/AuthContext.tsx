@@ -13,6 +13,52 @@ import type { User } from '@/lib/types/auth';
 
 const supabase = createClient();
 
+// Helper para ler cookie
+function getCookieValue(name: string): string | null {
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? match[2] : null;
+}
+
+// Helper para ler do IndexedDB
+async function getFromIndexedDB(): Promise<{ token: string | null; user: string | null; userId: string | null }> {
+  return new Promise((resolve) => {
+    try {
+      const request = indexedDB.open('medbrave-auth', 1);
+      request.onerror = () => resolve({ token: null, user: null, userId: null });
+      request.onsuccess = (event) => {
+        const db = (event.target as IDBOpenDBRequest).result;
+        if (!db.objectStoreNames.contains('session')) {
+          resolve({ token: null, user: null, userId: null });
+          return;
+        }
+        const tx = db.transaction('session', 'readonly');
+        const store = tx.objectStore('session');
+        const results: { token: string | null; user: string | null; userId: string | null } = { token: null, user: null, userId: null };
+        
+        const tokenReq = store.get('authToken');
+        tokenReq.onsuccess = () => { results.token = tokenReq.result?.value || null; };
+        
+        const userReq = store.get('user');
+        userReq.onsuccess = () => { results.user = userReq.result?.value || null; };
+        
+        const userIdReq = store.get('user_id');
+        userIdReq.onsuccess = () => { results.userId = userIdReq.result?.value || null; };
+        
+        tx.oncomplete = () => resolve(results);
+        tx.onerror = () => resolve({ token: null, user: null, userId: null });
+      };
+      request.onupgradeneeded = (event) => {
+        const db = (event.target as IDBOpenDBRequest).result;
+        if (!db.objectStoreNames.contains('session')) {
+          db.createObjectStore('session', { keyPath: 'key' });
+        }
+      };
+    } catch {
+      resolve({ token: null, user: null, userId: null });
+    }
+  });
+}
+
 interface AuthContextValue {
   user: User | null;
   loading: boolean;
@@ -67,19 +113,44 @@ export function AuthProvider({ children }: AuthProviderProps) {
         let storedUser = localStorage.getItem('user');
         let storedToken = localStorage.getItem('authToken');
         
-        // Fallback para sessionStorage (Edge Mobile às vezes limpa localStorage na navegação)
+        // Fallback 1: sessionStorage
         if (!storedUser || !storedToken) {
           const sessionUser = sessionStorage.getItem('user');
           const sessionToken = sessionStorage.getItem('authToken');
           if (sessionUser && sessionToken) {
-            console.log('[AuthContext] Recuperando do sessionStorage (Edge Mobile fallback)');
+            console.log('[AuthContext] Recuperando do sessionStorage');
             storedUser = sessionUser;
             storedToken = sessionToken;
-            // Restaurar no localStorage
             localStorage.setItem('user', sessionUser);
             localStorage.setItem('authToken', sessionToken);
             const userId = sessionStorage.getItem('user_id');
             if (userId) localStorage.setItem('user_id', userId);
+          }
+        }
+        
+        // Fallback 2: IndexedDB (mais robusto para Edge Mobile)
+        if (!storedUser || !storedToken) {
+          try {
+            const idbData = await getFromIndexedDB();
+            if (idbData.token && idbData.user) {
+              console.log('[AuthContext] Recuperando do IndexedDB');
+              storedUser = idbData.user;
+              storedToken = idbData.token;
+              localStorage.setItem('user', idbData.user);
+              localStorage.setItem('authToken', idbData.token);
+              if (idbData.userId) localStorage.setItem('user_id', idbData.userId);
+            }
+          } catch (e) {
+            console.log('[AuthContext] IndexedDB não disponível');
+          }
+        }
+        
+        // Fallback 3: Cookies no cliente
+        if (!storedUser || !storedToken) {
+          const cookieToken = getCookieValue('sb-access-token');
+          if (cookieToken) {
+            console.log('[AuthContext] Token encontrado em cookie, tentando recuperar sessão...');
+            storedToken = cookieToken;
           }
         }
         
