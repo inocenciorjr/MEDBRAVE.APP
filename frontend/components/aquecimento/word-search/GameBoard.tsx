@@ -294,7 +294,7 @@ export function GameBoard({ onGameData }: GameBoardProps) {
       </div>
 
       {/* Painel mobile - só aparece em telas pequenas */}
-      <div className="lg:hidden flex-shrink-0 border-t border-border-light dark:border-border-dark max-h-[40vh] overflow-y-auto">
+      <div className="lg:hidden flex-shrink-0 border-t border-border-light dark:border-border-dark">
         <ContextPanel
           title={puzzle.title}
           contextText={puzzle.contextText}

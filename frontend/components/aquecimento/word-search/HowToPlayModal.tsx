@@ -66,11 +66,11 @@ export function HowToPlayModal({ isOpen, onClose }: HowToPlayModalProps) {
             <ul className="space-y-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 mt-0.5">•</span>
-                <span>Leia o texto ao lado do grid - ele explica uma <strong>atualização importante</strong> em protocolos médicos.</span>
+                <span>Leia o texto ao lado do caça-palavras - ele explica uma <strong>atualização importante</strong> em protocolos médicos.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 mt-0.5">•</span>
-                <span>As palavras destacadas no texto são as que você precisa encontrar no grid.</span>
+                <span>As palavras destacadas no texto são as que você precisa encontrar no caça-palavras.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 mt-0.5">•</span>

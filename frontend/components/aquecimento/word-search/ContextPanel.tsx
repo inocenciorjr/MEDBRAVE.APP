@@ -38,9 +38,9 @@ export function ContextPanel({ title, contextText, words, foundWords }: ContextP
   };
 
   return (
-    <div className="h-full w-full flex flex-col bg-background-light dark:bg-background-dark">
+    <div className="w-full bg-background-light dark:bg-background-dark">
       {/* Header */}
-      <div className="px-5 py-4 border-b border-border-light dark:border-border-dark flex-shrink-0">
+      <div className="px-5 py-4 border-b border-border-light dark:border-border-dark">
         <div className="flex items-center justify-between">
           <h3 className="text-base font-bold text-text-light-primary dark:text-text-dark-primary">
             {title}
@@ -51,8 +51,8 @@ export function ContextPanel({ title, contextText, words, foundWords }: ContextP
         </div>
       </div>
 
-      {/* Conteúdo com scroll - texto + palavras */}
-      <div className="flex-1 overflow-y-auto px-5 py-4">
+      {/* Conteúdo - texto + palavras */}
+      <div className="px-5 py-4">
         {/* Texto da atualização */}
         <div
           className="text-sm leading-relaxed text-text-light-secondary dark:text-text-dark-secondary mb-6"
