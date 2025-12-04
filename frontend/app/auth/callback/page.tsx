@@ -43,9 +43,11 @@ function AuthCallbackContent() {
 
     const handleCallback = async () => {
       try {
+        console.log('[Callback] Iniciando...');
         const code = searchParams.get('code');
         const redirect = searchParams.get('redirect') || localStorage.getItem('auth_redirect') || '/';
         localStorage.removeItem('auth_redirect');
+        console.log('[Callback] Code:', code ? 'presente' : 'ausente', 'Redirect:', redirect);
 
         if (!code) {
           if (window.location.hash.includes('access_token')) {
@@ -58,25 +60,39 @@ function AuthCallbackContent() {
         }
 
         setLoadingMessage('Verificando credenciais...');
+        console.log('[Callback] Verificando sessão existente...');
 
-        // Verificar se já tem sessão
-        const { data: existingSession } = await supabase.auth.getSession();
-        let session = existingSession.session;
+        // Verificar se já tem sessão - com timeout para não travar
+        let session = null;
+        try {
+          const sessionPromise = supabase.auth.getSession();
+          const timeoutPromise = new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('getSession timeout')), 3000)
+          );
+          const { data: existingSession } = await Promise.race([sessionPromise, timeoutPromise]) as any;
+          session = existingSession?.session;
+          console.log('[Callback] Sessão existente:', session ? 'sim' : 'não');
+        } catch (e) {
+          console.log('[Callback] getSession falhou ou timeout, continuando sem sessão');
+        }
 
         if (!session) {
           setLoadingMessage('Autenticando...');
-          
+          console.log('[Callback] Buscando code_verifier do cookie...');
+
           // Buscar code_verifier do cookie
           const cookies = document.cookie.split(';');
+          console.log('[Callback] Cookies encontrados:', cookies.length);
           const verifierCookie = cookies.find(c => c.trim().startsWith('sb-') && c.includes('code-verifier'));
           let codeVerifier = '';
-          
+
           if (verifierCookie) {
+            console.log('[Callback] Cookie verifier encontrado');
             const eqIndex = verifierCookie.indexOf('=');
             if (eqIndex !== -1) {
               let rawValue = verifierCookie.substring(eqIndex + 1).trim();
-              try { rawValue = decodeURIComponent(rawValue); } catch {}
-              
+              try { rawValue = decodeURIComponent(rawValue); } catch { }
+
               if (rawValue.startsWith('base64-')) {
                 try {
                   const decoded = atob(rawValue.substring(7));
@@ -89,37 +105,43 @@ function AuthCallbackContent() {
               }
             }
           }
-          
+
+          console.log('[Callback] codeVerifier:', codeVerifier ? 'presente' : 'ausente');
+
           if (!codeVerifier) {
             setError('Sessão expirada. Tente fazer login novamente.');
             return;
           }
-          
+
           // Usar API route server-side para evitar problemas do SDK
+          console.log('[Callback] Chamando /api/auth/exchange-code...');
           const res = await fetch('/api/auth/exchange-code', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ code, codeVerifier }),
           });
-          
+
+          console.log('[Callback] exchange-code response:', res.status);
+
           if (!res.ok) {
             const data = await res.json();
             setError(data.error || 'Erro na autenticação');
             return;
           }
-          
+
           const data = await res.json();
+          console.log('[Callback] exchange-code sucesso, user:', data.user?.email);
           session = {
             access_token: data.access_token,
             refresh_token: data.refresh_token,
             user: data.user,
           } as any;
-          
+
           // Salvar sessão no localStorage para o SDK
           const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
           const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
           const storageKey = `sb-${projectRef}-auth-token`;
-          
+
           const sessionData = {
             access_token: data.access_token,
             refresh_token: data.refresh_token,
@@ -128,8 +150,9 @@ function AuthCallbackContent() {
             token_type: 'bearer',
             user: data.user,
           };
-          
+
           localStorage.setItem(storageKey, JSON.stringify(sessionData));
+          console.log('[Callback] Sessão salva no localStorage');
         }
 
         if (!session) {
@@ -139,6 +162,7 @@ function AuthCallbackContent() {
         }
 
         setLoadingMessage('Carregando perfil...');
+        console.log('[Callback] Buscando role do usuário...');
 
         // Buscar role do usuário
         let userRole = 'student';
@@ -146,12 +170,14 @@ function AuthCallbackContent() {
           const res = await fetch('/api/user/me', {
             headers: { 'Authorization': `Bearer ${session.access_token}` }
           });
+          console.log('[Callback] /api/user/me response:', res.status);
           if (res.ok) {
             const data = await res.json();
             userRole = data.role || 'student';
+            console.log('[Callback] Role:', userRole);
           }
-        } catch {
-          // Ignorar erro de role
+        } catch (e) {
+          console.log('[Callback] Erro ao buscar role:', e);
         }
 
         // Salvar dados do usuário
@@ -167,8 +193,10 @@ function AuthCallbackContent() {
         localStorage.setItem('authToken', session.access_token);
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('user_id', session.user.id);
+        console.log('[Callback] Dados salvos no localStorage');
 
         // Setar cookies para SSR
+        console.log('[Callback] Setando cookies...');
         try {
           await fetch('/api/auth/set-cookies', {
             method: 'POST',
@@ -178,8 +206,9 @@ function AuthCallbackContent() {
               refreshToken: session.refresh_token
             })
           });
-        } catch {
-          // Ignorar erro de cookies
+          console.log('[Callback] Cookies setados');
+        } catch (e) {
+          console.log('[Callback] Erro ao setar cookies:', e);
         }
 
         // Determinar redirect final
@@ -189,16 +218,16 @@ function AuthCallbackContent() {
         }
 
         setLoadingMessage('Redirecionando...');
+        console.log('[Callback] Redirecionando para:', finalRedirect);
 
         // Notificar outros componentes
         window.dispatchEvent(new CustomEvent('auth-token-updated', {
           detail: { token: session.access_token }
         }));
 
-        // Pequeno delay para garantir que tudo foi salvo
-        await new Promise(r => setTimeout(r, 500));
-
-        router.push(finalRedirect);
+        // Usar window.location para garantir redirect
+        console.log('[Callback] Executando redirect...');
+        window.location.href = finalRedirect;
 
       } catch (err: any) {
         setError(err?.message || 'Erro desconhecido');
