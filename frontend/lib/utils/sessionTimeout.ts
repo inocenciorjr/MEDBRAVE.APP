@@ -62,6 +62,10 @@ export async function checkAndClearExpiredSession() {
 export function setupActivityTracking() {
   if (typeof window === 'undefined') return;
   
+  // IMPORTANTE: Verificar IMEDIATAMENTE se a sessão expirou ao carregar a página
+  // Isso garante que mesmo após fechar e abrir o navegador, a sessão seja verificada
+  checkAndClearExpiredSession();
+  
   const events = ['mousedown', 'keydown', 'scroll', 'touchstart', 'click'];
   
   const updateActivity = () => {
@@ -72,8 +76,10 @@ export function setupActivityTracking() {
     window.addEventListener(event, updateActivity, { passive: true });
   });
   
-  // Atualizar imediatamente
-  updateLastActivity();
+  // Atualizar imediatamente (só se não expirou)
+  if (!isSessionExpired()) {
+    updateLastActivity();
+  }
   
   // Verificar periodicamente se a sessão expirou
   if (checkIntervalId) {

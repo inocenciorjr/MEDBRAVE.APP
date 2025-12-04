@@ -107,6 +107,15 @@ export function AuthProvider({ children }: AuthProviderProps) {
       initAttemptedRef.current = true;
 
       try {
+        // IMPORTANTE: Verificar se a sessão expirou por inatividade ANTES de tudo
+        const { isSessionExpired, checkAndClearExpiredSession } = await import('@/lib/utils/sessionTimeout');
+        if (isSessionExpired()) {
+          console.log('[AuthContext] Sessão expirada por inatividade, limpando...');
+          await checkAndClearExpiredSession();
+          setLoading(false);
+          return;
+        }
+        
         // 1. Verificar localStorage primeiro (mais rápido), com fallback para sessionStorage (Edge Mobile fix)
         let storedUser = localStorage.getItem('user');
         let storedToken = localStorage.getItem('authToken');
@@ -216,6 +225,16 @@ export function AuthProvider({ children }: AuthProviderProps) {
       // Evitar loop de recuperação
       if (isRecoveringRef.current) return;
       isRecoveringRef.current = true;
+      
+      // IMPORTANTE: Verificar se a sessão expirou por inatividade ANTES de tentar recuperar
+      const { isSessionExpired } = await import('@/lib/utils/sessionTimeout');
+      if (isSessionExpired()) {
+        console.log('[AuthContext] Sessão expirada por inatividade, não recuperando');
+        clearSession();
+        setLoading(false);
+        isRecoveringRef.current = false;
+        return;
+      }
       
       console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
       
