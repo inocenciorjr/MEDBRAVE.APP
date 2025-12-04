@@ -307,9 +307,20 @@ export function AuthProvider({ children }: AuthProviderProps) {
       localStorage.setItem('authToken', token);
       setAuthFailed(false);
       recoveryAttemptsRef.current = 0; // Reset contador de tentativas
-      window.dispatchEvent(new CustomEvent('auth-token-updated', {
-        detail: { token }
-      }));
+      
+      // No Edge Mobile, NÃO disparar evento durante navegação recente
+      // Isso evita requisições que serão canceladas durante redirect
+      const isEdgeMobileNav = /Edg|Edge/i.test(navigator.userAgent) && 
+        /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent) &&
+        performance.now() < 5000; // Primeiros 5 segundos
+      
+      if (!isEdgeMobileNav) {
+        window.dispatchEvent(new CustomEvent('auth-token-updated', {
+          detail: { token }
+        }));
+      } else {
+        console.log('[AuthContext] Edge Mobile: pulando evento durante navegação');
+      }
     };
 
     const clearSession = () => {
