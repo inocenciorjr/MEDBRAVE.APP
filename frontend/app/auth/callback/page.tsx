@@ -219,7 +219,7 @@ function AuthCallbackContent() {
         } catch (e) {
           console.log('[Callback] Erro ao setar cookies via API (não crítico):', e);
         }
-        
+
         // 4. Salvar em IndexedDB (mais robusto para Edge Mobile)
         try {
           const dbRequest = indexedDB.open('medbrave-auth', 1);
@@ -262,7 +262,7 @@ function AuthCallbackContent() {
 
         if (isEdgeMobile) {
           console.log('[Callback] Edge Mobile detectado, usando estratégia especial');
-          
+
           // Delay maior para garantir que tudo foi salvo
           await new Promise(r => setTimeout(r, 1500));
 

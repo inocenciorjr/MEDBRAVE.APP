@@ -87,11 +87,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const [authFailed, setAuthFailed] = useState(false);
   
   // Refs para controle de concorrência e estado
-  const processingRef = useRef(false);
-  const lastProcessedRef = useRef<string | null>(null);
-  const lastProcessedTimeRef = useRef<number>(0);
   const isRecoveringRef = useRef(false);
   const initAttemptedRef = useRef(false);
+  const recoveryAttemptsRef = useRef(0); // Contador para evitar loop infinito
 
   useEffect(() => {
     // Ignorar páginas de auth
@@ -298,6 +296,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       localStorage.setItem('user_id', user.uid);
       localStorage.setItem('authToken', token);
       setAuthFailed(false);
+      recoveryAttemptsRef.current = 0; // Reset contador de tentativas
       window.dispatchEvent(new CustomEvent('auth-token-updated', {
         detail: { token }
       }));
@@ -351,17 +350,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
            handleSessionFound(session);
         }
       } else if (event === 'SIGNED_OUT') {
-        // Só limpar se não estivermos tentando recuperar
-        if (!isRecoveringRef.current) {
-           // Se temos localStorage, vamos tentar recuperar antes de aceitar o SIGNED_OUT
-           // (exceto se foi um logout explícito, mas aqui não sabemos. 
-           // Assumimos que se o usuário clicou em logout, o app chamou logout() que limpa tudo)
-           
+        // Só processar se não estivermos tentando recuperar E se não já falhamos
+        if (!isRecoveringRef.current && !authFailed) {
            // Verificar se o localStorage ainda existe (pode ter sido limpo pelo logout)
-           if (localStorage.getItem('authToken')) {
-             console.log('[AuthContext] SIGNED_OUT detectado mas temos token local. Tentando recuperar...');
+           const hasLocalToken = localStorage.getItem('authToken');
+           
+           if (hasLocalToken && recoveryAttemptsRef.current < 2) {
+             recoveryAttemptsRef.current++;
+             console.log(`[AuthContext] SIGNED_OUT detectado, tentativa de recuperação ${recoveryAttemptsRef.current}/2...`);
              tryRecoverSession();
            } else {
+             // Sem token ou já tentamos demais - limpar e parar
+             console.log('[AuthContext] SIGNED_OUT - limpando sessão (sem token ou tentativas esgotadas)');
              clearSession();
            }
         }
