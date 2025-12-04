@@ -10,6 +10,14 @@ export async function GET(request: NextRequest) {
     const accessToken = cookieStore.get('sb-access-token')?.value;
     const refreshToken = cookieStore.get('sb-refresh-token')?.value;
 
+    // Log de diagnóstico (sem expor tokens completos)
+    console.log('[Recover Session] Cookies encontrados:', {
+      hasAccessToken: !!accessToken,
+      accessTokenLength: accessToken?.length,
+      hasRefreshToken: !!refreshToken,
+      allCookies: cookieStore.getAll().map(c => c.name)
+    });
+
     if (!accessToken || !refreshToken) {
       console.log('[Recover Session] Cookies não encontrados');
       return NextResponse.json(

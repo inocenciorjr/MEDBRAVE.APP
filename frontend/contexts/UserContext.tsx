@@ -1,7 +1,6 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 import { useSessionMonitor } from '@/lib/hooks/useSessionMonitor';
 import { useActivityTracker } from '@/lib/hooks/useActivityTracker';
 import { SessionRevokedModal } from '@/components/auth/SessionRevokedModal';
@@ -46,143 +45,54 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   const fetchUser = async (retryCount = 0) => {
     try {
-      // Edge Mobile fix: verificar localStorage diretamente
-      const isEdgeMobile = typeof navigator !== 'undefined' &&
-        /Edg|Edge/i.test(navigator.userAgent) &&
-        /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+      // Verificar se estamos no client-side
+      if (typeof window === 'undefined') return;
+
+      // 1. Tentar obter token do localStorage (que pode ter sido colocado pelo AuthContext)
+      const storedToken = localStorage.getItem('authToken');
+      const storedUser = localStorage.getItem('user');
       
-      if (isEdgeMobile) {
-        // Ler sessão do localStorage diretamente
-        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-        const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
-        const storageKey = `sb-${projectRef}-auth-token`;
-        const storedSession = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
-        
-        if (storedSession) {
-          try {
-            const sessionData = JSON.parse(storedSession);
-            if (sessionData.access_token && sessionData.user) {
-              // Buscar dados do usuário via API
-              const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
-                headers: { 'Authorization': `Bearer ${sessionData.access_token}` },
-              });
-              
-              if (response.ok) {
-                const userData = await response.json();
-                const user = {
-                  id: userData.id,
-                  email: userData.email,
-                  role: userData.role,
-                  displayName: userData.displayName || sessionData.user.email?.split('@')[0] || 'Usuário',
-                  photoURL: userData.photoURL || sessionData.user.user_metadata?.avatar_url || null,
-                  activePlan: userData.activePlan || null,
-                };
-                setUser(user);
-                setLoading(false);
-                return;
-              }
-            }
-          } catch (e) {
-            console.error('[UserContext] Edge Mobile: erro ao ler sessão:', e);
-          }
-        }
-
-        // Tentar recuperar sessão via cookies (Edge Mobile/Safari fix)
-        try {
-          console.log('[UserContext] Edge Mobile: Tentando recuperar sessão via cookies...');
-          const res = await fetch('/api/auth/recover-session');
-          if (res.ok) {
-            const data = await res.json();
-            if (data.access_token) {
-               // Se recuperou, buscar dados do usuário
-               const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
-                headers: { 'Authorization': `Bearer ${data.access_token}` },
-              });
-
-              if (response.ok) {
-                const userData = await response.json();
-                const user = {
-                  id: userData.id,
-                  email: userData.email,
-                  role: userData.role,
-                  displayName: userData.displayName || userData.email?.split('@')[0] || 'Usuário',
-                  photoURL: userData.photoURL || null,
-                  activePlan: userData.activePlan || null,
-                };
-                setUser(user);
-                setLoading(false);
-                
-                // Restaurar sessão no localStorage para evitar calls futuros
-                const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-                const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
-                const storageKey = `sb-${projectRef}-auth-token`;
-                
-                // Recriar estrutura básica do Supabase session
-                const sessionData = {
-                  access_token: data.access_token,
-                  refresh_token: data.refresh_token,
-                  token_type: 'bearer',
-                  user: data.user || { id: userData.id, email: userData.email },
-                  expires_in: 3600
-                };
-                
-                localStorage.setItem(storageKey, JSON.stringify(sessionData));
-                 
-                 // Sincronizar token para o PlanContext/AuthContext
-                 localStorage.setItem('authToken', data.access_token);
-                 window.dispatchEvent(new CustomEvent('auth-token-updated', {
-                    detail: { token: data.access_token }
-                 }));
-
-                 return;
-               }
-            }
-          }
-        } catch (err) {
-          console.error('[UserContext] Falha na recuperação via cookies:', err);
-        }
-        
-        setUser(null);
-        setLoading(false);
-        return;
+      // Se tiver token e user no localStorage, usar dados básicos enquanto busca atualizados
+      if (storedToken && storedUser && !user) {
+         try {
+            const parsedUser = JSON.parse(storedUser);
+            // Não setamos loading false aqui para não piscar, mas poderíamos
+         } catch (e) {}
       }
-      
-      // Outros navegadores: usar SDK normalmente
-      const { createClient } = await import('@/lib/supabase/client');
-      const supabase = createClient();
-      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-      
-      if (sessionError) {
-        console.error('❌ [UserContext] Erro na sessão:', sessionError);
-        setUser(null);
-        setLoading(false);
-        return;
+
+      let token = storedToken;
+      let sessionUser = null;
+
+      // Se não tem token no storage, tentar pegar do Supabase SDK
+      if (!token) {
+        const { createClient } = await import('@/lib/supabase/client');
+        const supabase = createClient();
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (session?.access_token) {
+          token = session.access_token;
+          sessionUser = session.user;
+        }
       }
-      
-      if (!session) {
-        // No mobile, às vezes a sessão demora para ser estabelecida
-        // Tentar novamente após um delay
-        if (retryCount < 2) {
-          setTimeout(() => fetchUser(retryCount + 1), 1000);
+
+      if (!token) {
+        // Se ainda não tem token, pode ser que o AuthContext esteja recuperando via cookies (Edge Mobile)
+        // Tentar novamente após um delay maior
+        if (retryCount < 3) {
+          // Aumentar o tempo de espera progressivamente: 1s, 2s, 3s
+          const delay = 1000 * (retryCount + 1);
+          console.log(`[UserContext] Token não encontrado, tentando novamente em ${delay}ms (tentativa ${retryCount + 1}/3)`);
+          setTimeout(() => fetchUser(retryCount + 1), delay);
           return;
         }
         
+        console.log('[UserContext] Token não encontrado após tentativas. Usuário não autenticado.');
         setUser(null);
         setLoading(false);
         return;
       }
-      
-      // Extrair session_id do token JWT (está no payload)
-      try {
-        const payload = JSON.parse(atob(session.access_token.split('.')[1]));
-        setSessionId(payload.session_id || null);
-      } catch (e) {
-        // Silently fail
-      }
 
-      // Buscar dados do usuário via API do backend (evita problemas de RLS)
-      
-      const token = session.access_token;
+      // Se temos token, buscar dados completos do usuário
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -190,8 +100,11 @@ export function UserProvider({ children }: { children: ReactNode }) {
       });
 
       if (!response.ok) {
-        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.statusText);
-        setUser(null);
+        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.status, response.statusText);
+        // Se der 401, talvez o token expirou. O AuthContext deve lidar com isso, mas aqui limpamos.
+        if (response.status === 401) {
+           setUser(null);
+        }
         setLoading(false);
         return;
       }
@@ -205,16 +118,27 @@ export function UserProvider({ children }: { children: ReactNode }) {
         return;
       }
       
-      const user = {
+      // Construir objeto de usuário final
+      const finalUser = {
         id: userData.id,
         email: userData.email,
         role: userData.role,
-        displayName: userData.displayName || session.user.email?.split('@')[0] || 'Usuário',
-        photoURL: userData.photoURL || session.user.user_metadata?.avatar_url || null,
+        displayName: userData.displayName || sessionUser?.email?.split('@')[0] || userData.email?.split('@')[0] || 'Usuário',
+        photoURL: userData.photoURL || sessionUser?.user_metadata?.avatar_url || null,
         activePlan: userData.activePlan || null,
       };
-      setUser(user);
+
+      setUser(finalUser);
       setLoading(false);
+
+      // Extrair session_id se disponível (para tracking)
+      if (token.includes('.')) {
+        try {
+          const payload = JSON.parse(atob(token.split('.')[1]));
+          setSessionId(payload.session_id || null);
+        } catch (e) { }
+      }
+
     } catch (error) {
       console.error('❌ [UserContext] Erro ao buscar usuário:', error);
       setUser(null);
@@ -238,9 +162,17 @@ export function UserProvider({ children }: { children: ReactNode }) {
           setLoading(false);
         }
       });
+
+      // Escutar evento customizado do AuthContext (útil para Edge Mobile recovery)
+      const handleTokenUpdate = (e: Event) => {
+         console.log('[UserContext] Token atualizado via evento, recarregando user...');
+         fetchUser();
+      };
+      window.addEventListener('auth-token-updated', handleTokenUpdate);
       
       return () => {
         subscription.unsubscribe();
+        window.removeEventListener('auth-token-updated', handleTokenUpdate);
       };
     };
     

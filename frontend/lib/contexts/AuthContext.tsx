@@ -6,7 +6,7 @@
  * Gerencia o estado de autenticação em toda a aplicação React.
  */
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode, useRef } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { supabaseAuthService } from '@/lib/services/supabaseAuthService';
 import type { User } from '@/lib/types/auth';
@@ -37,9 +37,13 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const processingRef = React.useRef(false);
-  const lastProcessedRef = React.useRef<string | null>(null);
-  const lastProcessedTimeRef = React.useRef<number>(0);
+  
+  // Refs para controle de concorrência e estado
+  const processingRef = useRef(false);
+  const lastProcessedRef = useRef<string | null>(null);
+  const lastProcessedTimeRef = useRef<number>(0);
+  const isRecoveringRef = useRef(false);
+  const initAttemptedRef = useRef(false);
 
   useEffect(() => {
     // Ignorar páginas de auth
@@ -52,187 +56,184 @@ export function AuthProvider({ children }: AuthProviderProps) {
       return;
     }
 
-    // Timeout de segurança
-    const safetyTimeout = setTimeout(() => {
-      if (loading) {
-        console.warn('⚠️ Timeout de segurança: forçando loading = false');
-        setLoading(false);
-      }
-    }, 2000);
+    const initializeAuth = async () => {
+      if (initAttemptedRef.current) return;
+      initAttemptedRef.current = true;
 
-    // Restaurar usuário do localStorage
-    const storedUser = localStorage.getItem('user');
-    const token = localStorage.getItem('authToken');
-    console.log('[AuthContext] localStorage - user:', storedUser ? 'presente' : 'ausente', 'token:', token ? 'presente' : 'ausente');
-
-    if (storedUser && token) {
       try {
-        const parsedUser = JSON.parse(storedUser) as User;
-        console.log('[AuthContext] Usuário restaurado do localStorage:', parsedUser.email);
-        setUser(parsedUser);
-        setLoading(false);
-        clearTimeout(safetyTimeout);
-      } catch (error) {
-        console.error('Erro ao recuperar usuário do localStorage:', error);
-        localStorage.removeItem('user');
-        localStorage.removeItem('authToken');
-      }
-    } else {
-      console.log('[AuthContext] Sem usuário no localStorage');
-    }
+        // 1. Verificar localStorage primeiro (mais rápido)
+        const storedUser = localStorage.getItem('user');
+        const storedToken = localStorage.getItem('authToken');
+        
+        console.log('[AuthContext] localStorage - user:', storedUser ? 'presente' : 'ausente', 'token:', storedToken ? 'presente' : 'ausente');
 
-    // Verificar sessão atual
-    supabase.auth.getSession().then(async ({ data: { session } }) => {
-      if (session?.user && !user) {
-        const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
-        setUser(basicUser);
-        setLoading(false);
-        clearTimeout(safetyTimeout);
-
-        localStorage.setItem('user', JSON.stringify(basicUser));
-        localStorage.setItem('user_id', basicUser.uid);
-        if (session.access_token) {
-          localStorage.setItem('authToken', session.access_token);
-          window.dispatchEvent(new CustomEvent('auth-token-updated', {
-            detail: { token: session.access_token }
-          }));
-        }
-      } else if (!session) {
-        // Tentar recuperar sessão dos cookies (fallback para Edge Mobile)
-        if (!localStorage.getItem('user')) {
+        if (storedUser && storedToken) {
           try {
-            console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
-            const res = await fetch('/api/auth/recover-session');
-            if (res.ok) {
-              const data = await res.json();
-              console.log('[AuthContext] Sessão recuperada dos cookies!');
-              
-              // Restaurar sessão no Supabase
-              const { data: { session: newSession } } = await supabase.auth.setSession({
-                access_token: data.access_token,
-                refresh_token: data.refresh_token,
-              });
-
-              if (newSession?.user) {
-                const basicUser = supabaseAuthService.mapSupabaseUser(newSession.user);
-                setUser(basicUser);
-                
-                localStorage.setItem('user', JSON.stringify(basicUser));
-                localStorage.setItem('user_id', basicUser.uid);
-                localStorage.setItem('authToken', data.access_token);
-                
-                window.dispatchEvent(new CustomEvent('auth-token-updated', {
-                  detail: { token: data.access_token }
-                }));
-
-                // Buscar role em background
-                supabaseAuthService.getUserWithRole(newSession.user)
-                  .then((mappedUser) => {
-                    setUser(mappedUser);
-                    localStorage.setItem('user', JSON.stringify(mappedUser));
-                  });
-              }
-            } else {
-              console.log('[AuthContext] Não foi possível recuperar sessão dos cookies');
-            }
+            const parsedUser = JSON.parse(storedUser) as User;
+            setUser(parsedUser);
+            setLoading(false);
+            console.log('[AuthContext] Usuário restaurado do localStorage');
+            
+            // Ainda assim, verificamos a sessão em background para garantir validade
+            validateSessionInBackground();
+            return;
           } catch (e) {
-            console.error('[AuthContext] Falha ao recuperar sessão:', e);
+            console.error('[AuthContext] Erro ao parsear usuário do storage');
           }
         }
 
-        setLoading(false);
-        clearTimeout(safetyTimeout);
-      }
-    });
+        // 2. Se não tem localStorage, verificar sessão do Supabase SDK
+        console.log('[AuthContext] Verificando sessão do Supabase...');
+        const { data: { session } } = await supabase.auth.getSession();
 
-    // Listener de mudanças de autenticação
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
-      console.log('[AuthContext] onAuthStateChange:', _event, session ? 'com sessão' : 'sem sessão');
-      
-      if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
-        console.log('🔄 [Auth] Token renovado automaticamente');
-        localStorage.setItem('authToken', session.access_token);
-        window.dispatchEvent(new CustomEvent('auth-token-updated', {
-          detail: { token: session.access_token }
-        }));
-        return;
-      }
-
-      // IMPORTANTE: Se já temos usuário no localStorage, não limpar por causa do SDK
-      const hasLocalUser = localStorage.getItem('user') && localStorage.getItem('authToken');
-      
-      if (session?.user) {
-        if (processingRef.current) return;
-
-        const now = Date.now();
-        if (lastProcessedRef.current === session.user.id && now - lastProcessedTimeRef.current < 2000) {
-          return;
-        }
-
-        processingRef.current = true;
-        lastProcessedRef.current = session.user.id;
-        lastProcessedTimeRef.current = now;
-
-        try {
-          const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
-          setUser(basicUser);
-          setLoading(false);
-
-          localStorage.setItem('user', JSON.stringify(basicUser));
-          localStorage.setItem('user_id', basicUser.uid);
-
-          if (session.access_token) {
-            localStorage.setItem('authToken', session.access_token);
-            window.dispatchEvent(new CustomEvent('auth-token-updated', {
-              detail: { token: session.access_token }
-            }));
-          }
-
-          // Buscar role em background
-          supabaseAuthService.getUserWithRole(session.user)
-            .then((mappedUser) => {
-              setUser(mappedUser);
-              localStorage.setItem('user', JSON.stringify(mappedUser));
-            })
-            .finally(() => {
-              processingRef.current = false;
-            });
-        } catch (error) {
-          processingRef.current = false;
-          const fallbackUser = supabaseAuthService.mapSupabaseUser(session.user);
-          setUser(fallbackUser);
-          localStorage.setItem('user', JSON.stringify(fallbackUser));
-          localStorage.setItem('user_id', fallbackUser.uid);
-
-          if (session.access_token) {
-            localStorage.setItem('authToken', session.access_token);
-            window.dispatchEvent(new CustomEvent('auth-token-updated', {
-              detail: { token: session.access_token }
-            }));
-          }
-          setLoading(false);
-        }
-      } else {
-        // Só limpar se não temos usuário no localStorage
-        // O SDK pode não ter a sessão mas nós salvamos manualmente
-        if (!hasLocalUser) {
-          console.log('[AuthContext] Limpando sessão (sem usuário local)');
-          setUser(null);
-          localStorage.removeItem('user');
-          localStorage.removeItem('user_id');
-          localStorage.removeItem('authToken');
-          localStorage.removeItem('userData');
-          sessionStorage.removeItem('authToken');
+        if (session?.user) {
+          await handleSessionFound(session);
         } else {
-          console.log('[AuthContext] Mantendo sessão local (SDK sem sessão mas localStorage tem)');
+          // 3. Se não tem sessão no SDK, tentar recuperação via Cookies (Edge Mobile fix)
+          await tryRecoverSession();
         }
+      } catch (error) {
+        console.error('[AuthContext] Erro fatal na inicialização:', error);
         setLoading(false);
+      }
+    };
+
+    const validateSessionInBackground = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        // Se localStorage diz que tem user, mas SDK diz que não...
+        // Talvez o token expirou ou é um caso de Edge Mobile
+        console.log('[AuthContext] Validação falhou (sem sessão SDK), tentando recuperar...');
+        await tryRecoverSession();
+      } else {
+        // Sessão válida, atualizar dados se necessário
+        if (session.access_token !== localStorage.getItem('authToken')) {
+           handleSessionFound(session);
+        }
+      }
+    };
+
+    const tryRecoverSession = async () => {
+      // Evitar loop de recuperação
+      if (isRecoveringRef.current) return;
+      isRecoveringRef.current = true;
+      
+      console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
+      
+      try {
+        const res = await fetch('/api/auth/recover-session');
+        
+        if (res.ok) {
+          const data = await res.json();
+          if (data.access_token && data.user) {
+            console.log('[AuthContext] Sessão recuperada com sucesso!');
+            
+            // Restaurar sessão no Supabase SDK
+            await supabase.auth.setSession({
+              access_token: data.access_token,
+              refresh_token: data.refresh_token,
+            });
+
+            // Configurar usuário
+            const basicUser = supabaseAuthService.mapSupabaseUser(data.user);
+            
+            // Salvar tudo
+            saveSessionToStorage(basicUser, data.access_token);
+            setUser(basicUser);
+            
+            // Buscar role atualizada
+            updateUserRole(data.user);
+            
+            setLoading(false);
+            isRecoveringRef.current = false;
+            return;
+          }
+        }
+        
+        console.log('[AuthContext] Não foi possível recuperar sessão dos cookies (401 ou sem dados)');
+        // Se falhou recuperação e não tínhamos localStorage, estamos deslogados
+        if (!localStorage.getItem('user')) {
+           clearSession();
+        }
+      } catch (error) {
+        console.error('[AuthContext] Erro na recuperação:', error);
+      } finally {
+        setLoading(false);
+        isRecoveringRef.current = false;
+      }
+    };
+
+    const handleSessionFound = async (session: any) => {
+      console.log('[AuthContext] Sessão encontrada via SDK');
+      const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
+      setUser(basicUser);
+      saveSessionToStorage(basicUser, session.access_token);
+      setLoading(false);
+      
+      // Buscar role
+      updateUserRole(session.user);
+    };
+
+    const updateUserRole = async (supabaseUser: any) => {
+       try {
+         const mappedUser = await supabaseAuthService.getUserWithRole(supabaseUser);
+         setUser(mappedUser);
+         localStorage.setItem('user', JSON.stringify(mappedUser));
+       } catch (e) {
+         console.error('[AuthContext] Erro ao atualizar role:', e);
+       }
+    };
+
+    const saveSessionToStorage = (user: User, token: string) => {
+      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('user_id', user.uid);
+      localStorage.setItem('authToken', token);
+      window.dispatchEvent(new CustomEvent('auth-token-updated', {
+        detail: { token }
+      }));
+    };
+
+    const clearSession = () => {
+      console.log('[AuthContext] Limpando sessão');
+      setUser(null);
+      localStorage.removeItem('user');
+      localStorage.removeItem('user_id');
+      localStorage.removeItem('authToken');
+      localStorage.removeItem('userData');
+      sessionStorage.removeItem('authToken');
+    };
+
+    // Inicializar
+    initializeAuth();
+
+    // Listener de eventos do Supabase
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      console.log(`[AuthContext] Evento: ${event}`, session ? 'com sessão' : 'sem sessão');
+
+      if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+        if (session) {
+           handleSessionFound(session);
+        }
+      } else if (event === 'SIGNED_OUT') {
+        // Só limpar se não estivermos tentando recuperar
+        if (!isRecoveringRef.current) {
+           // Se temos localStorage, vamos tentar recuperar antes de aceitar o SIGNED_OUT
+           // (exceto se foi um logout explícito, mas aqui não sabemos. 
+           // Assumimos que se o usuário clicou em logout, o app chamou logout() que limpa tudo)
+           
+           // Verificar se o localStorage ainda existe (pode ter sido limpo pelo logout)
+           if (localStorage.getItem('authToken')) {
+             console.log('[AuthContext] SIGNED_OUT detectado mas temos token local. Tentando recuperar...');
+             tryRecoverSession();
+           } else {
+             clearSession();
+           }
+        }
       }
     });
 
     return () => {
       subscription.unsubscribe();
-      clearTimeout(safetyTimeout);
     };
   }, []);
 
@@ -240,18 +241,13 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-
       const result = await supabaseAuthService.login(email, password);
       setUser(result.user);
-
       localStorage.setItem('user', JSON.stringify(result.user));
       localStorage.setItem('user_id', result.user.uid);
-
       if (result.token) {
         localStorage.setItem('authToken', result.token);
-        window.dispatchEvent(new CustomEvent('auth-token-updated', {
-          detail: { token: result.token }
-        }));
+        window.dispatchEvent(new CustomEvent('auth-token-updated', { detail: { token: result.token } }));
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao fazer login';
@@ -280,18 +276,13 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       setError(null);
-
       const result = await supabaseAuthService.register(email, password, displayName);
       setUser(result.user);
-
       localStorage.setItem('user', JSON.stringify(result.user));
       localStorage.setItem('user_id', result.user.uid);
-
       if (result.token) {
         localStorage.setItem('authToken', result.token);
-        window.dispatchEvent(new CustomEvent('auth-token-updated', {
-          detail: { token: result.token }
-        }));
+        window.dispatchEvent(new CustomEvent('auth-token-updated', { detail: { token: result.token } }));
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao registrar';
@@ -306,27 +297,27 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setLoading(true);
       await supabaseAuthService.logout();
+    } catch (error) {
+      console.error('Erro ao fazer logout:', error);
+    } finally {
       setUser(null);
-
       localStorage.removeItem('user');
       localStorage.removeItem('user_id');
       localStorage.removeItem('authToken');
       localStorage.removeItem('userData');
       sessionStorage.removeItem('authToken');
-    } catch (err) {
-      console.error('Erro ao fazer logout:', err);
-    } finally {
       setLoading(false);
+      // Forçar refresh da página para limpar estados globais
+      window.location.href = '/login';
     }
   };
 
   const forgotPassword = async (email: string): Promise<void> => {
     try {
       setLoading(true);
-      setError(null);
-      await supabaseAuthService.forgotPassword(email);
+      await supabaseAuthService.resetPassword(email);
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Erro ao recuperar senha';
+      const errorMessage = err instanceof Error ? err.message : 'Erro ao enviar email de recuperação';
       setError(errorMessage);
       throw err;
     } finally {
@@ -334,35 +325,34 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   };
 
-  const updateUser = (userData: User): void => {
+  const updateUser = (userData: User) => {
     setUser(userData);
     localStorage.setItem('user', JSON.stringify(userData));
-    localStorage.setItem('user_id', userData.uid);
   };
 
-  const value: AuthContextValue = {
-    user,
-    loading,
-    error,
-    token: typeof window !== 'undefined' ? localStorage.getItem('authToken') : null,
-    isAuthenticated: !!user,
-    login,
-    loginWithGoogle,
-    register,
-    logout,
-    forgotPassword,
-    updateUser,
-  };
-
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{
+      user,
+      loading,
+      error,
+      token: user ? localStorage.getItem('authToken') : null,
+      isAuthenticated: !!user,
+      login,
+      loginWithGoogle,
+      register,
+      logout,
+      forgotPassword,
+      updateUser
+    }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
-export function useAuth(): AuthContextValue {
+export function useAuth() {
   const context = useContext(AuthContext);
-
   if (context === undefined) {
-    throw new Error('useAuth deve ser usado dentro de um AuthProvider');
+    throw new Error('useAuth must be used within an AuthProvider');
   }
-
   return context;
 }

@@ -21,7 +21,8 @@ export async function POST(request: NextRequest) {
       maxAge: 60 * 60 * 24 * 7, // 7 dias
       sameSite: 'lax' as const,
       secure: isProduction,
-      ...(isProduction && { domain: '.medbrave.com.br' })
+      // Remover domínio explícito para evitar problemas com subdomínios/www no Edge Mobile
+      // ...(isProduction && { domain: '.medbrave.com.br' })
     };
 
     cookieStore.set('sb-access-token', accessToken, cookieOptions);
