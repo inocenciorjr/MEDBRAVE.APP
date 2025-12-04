@@ -65,14 +65,71 @@ function AuthCallbackContent() {
 
         if (!session) {
           setLoadingMessage('Autenticando...');
-          const result = await supabase.auth.exchangeCodeForSession(code);
-
-          if (result.error) {
-            setError(result.error.message);
+          
+          // Buscar code_verifier do cookie
+          const cookies = document.cookie.split(';');
+          const verifierCookie = cookies.find(c => c.trim().startsWith('sb-') && c.includes('code-verifier'));
+          let codeVerifier = '';
+          
+          if (verifierCookie) {
+            const eqIndex = verifierCookie.indexOf('=');
+            if (eqIndex !== -1) {
+              let rawValue = verifierCookie.substring(eqIndex + 1).trim();
+              try { rawValue = decodeURIComponent(rawValue); } catch {}
+              
+              if (rawValue.startsWith('base64-')) {
+                try {
+                  const decoded = atob(rawValue.substring(7));
+                  codeVerifier = JSON.parse(decoded);
+                } catch {
+                  codeVerifier = rawValue;
+                }
+              } else {
+                codeVerifier = rawValue;
+              }
+            }
+          }
+          
+          if (!codeVerifier) {
+            setError('Sessão expirada. Tente fazer login novamente.');
             return;
           }
-
-          session = result.data.session;
+          
+          // Usar API route server-side para evitar problemas do SDK
+          const res = await fetch('/api/auth/exchange-code', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ code, codeVerifier }),
+          });
+          
+          if (!res.ok) {
+            const data = await res.json();
+            setError(data.error || 'Erro na autenticação');
+            return;
+          }
+          
+          const data = await res.json();
+          session = {
+            access_token: data.access_token,
+            refresh_token: data.refresh_token,
+            user: data.user,
+          } as any;
+          
+          // Salvar sessão no localStorage para o SDK
+          const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+          const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
+          const storageKey = `sb-${projectRef}-auth-token`;
+          
+          const sessionData = {
+            access_token: data.access_token,
+            refresh_token: data.refresh_token,
+            expires_in: data.expires_in,
+            expires_at: Math.floor(Date.now() / 1000) + (data.expires_in || 3600),
+            token_type: 'bearer',
+            user: data.user,
+          };
+          
+          localStorage.setItem(storageKey, JSON.stringify(sessionData));
         }
 
         if (!session) {
