@@ -137,21 +137,28 @@ function AuthCallbackContent() {
             user: data.user,
           } as any;
 
-          // IMPORTANTE: Sincronizar sessão com o SDK do Supabase ANTES de continuar
-          // Isso evita que o AuthContext tente recuperar sessão desnecessariamente no Edge Mobile
-          console.log('[Callback] Sincronizando sessão com SDK do Supabase...');
-          try {
-            const { error: setSessionError } = await supabase.auth.setSession({
-              access_token: data.access_token,
-              refresh_token: data.refresh_token,
-            });
-            if (setSessionError) {
-              console.log('[Callback] Erro ao sincronizar com SDK (não crítico):', setSessionError.message);
-            } else {
-              console.log('[Callback] Sessão sincronizada com SDK do Supabase');
+          // Detectar Edge Mobile
+          const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+          
+          // No Edge Mobile, PULAR setSession completamente - o SDK trava e não é confiável
+          // Vamos confiar apenas no localStorage/cookies
+          if (!isEdgeMobile) {
+            console.log('[Callback] Sincronizando sessão com SDK do Supabase...');
+            try {
+              const { error: setSessionError } = await supabase.auth.setSession({
+                access_token: data.access_token,
+                refresh_token: data.refresh_token,
+              });
+              if (setSessionError) {
+                console.log('[Callback] Erro ao sincronizar com SDK (não crítico):', setSessionError.message);
+              } else {
+                console.log('[Callback] Sessão sincronizada com SDK do Supabase');
+              }
+            } catch (e) {
+              console.log('[Callback] Erro ao sincronizar com SDK:', e);
             }
-          } catch (e) {
-            console.log('[Callback] Erro ao sincronizar com SDK:', e);
+          } else {
+            console.log('[Callback] Edge Mobile detectado, pulando setSession (SDK não confiável)');
           }
 
           // Salvar sessão no localStorage para o SDK
