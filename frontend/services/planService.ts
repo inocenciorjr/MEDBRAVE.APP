@@ -8,6 +8,115 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
 // Remove /api do final se existir para evitar duplicação
 const BASE_URL = API_URL.replace(/\/api$/, '');
 
+// Detectar Edge Mobile
+const isEdgeMobile = typeof navigator !== 'undefined' && 
+  /Edg|Edge/i.test(navigator.userAgent) && 
+  /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+
+/**
+ * Wrapper para fazer requisições HTTP
+ * No Edge Mobile, usa fetch nativo pois Axios/XMLHttpRequest pode falhar
+ */
+async function httpGet<T>(url: string, token?: string): Promise<T> {
+  if (isEdgeMobile) {
+    // Edge Mobile: usar fetch nativo
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    
+    const response = await fetch(url, { 
+      method: 'GET',
+      headers,
+      credentials: 'include',
+    });
+    
+    if (!response.ok) {
+      const error: any = new Error(`HTTP ${response.status}`);
+      error.response = { status: response.status };
+      throw error;
+    }
+    
+    return response.json();
+  } else {
+    // Outros navegadores: usar Axios
+    const config: any = {};
+    if (token) {
+      config.headers = { Authorization: `Bearer ${token}` };
+    }
+    const response = await axios.get(url, config);
+    return response.data;
+  }
+}
+
+async function httpPost<T>(url: string, data: any, token?: string): Promise<T> {
+  if (isEdgeMobile) {
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    
+    const response = await fetch(url, { 
+      method: 'POST',
+      headers,
+      credentials: 'include',
+      body: JSON.stringify(data),
+    });
+    
+    if (!response.ok) {
+      const error: any = new Error(`HTTP ${response.status}`);
+      error.response = { status: response.status };
+      throw error;
+    }
+    
+    return response.json();
+  } else {
+    const config: any = {};
+    if (token) {
+      config.headers = { Authorization: `Bearer ${token}` };
+    }
+    const response = await axios.post(url, data, config);
+    return response.data;
+  }
+}
+
+async function httpPatch<T>(url: string, data: any, token?: string): Promise<T> {
+  if (isEdgeMobile) {
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    
+    const response = await fetch(url, { 
+      method: 'PATCH',
+      headers,
+      credentials: 'include',
+      body: JSON.stringify(data),
+    });
+    
+    if (!response.ok) {
+      const error: any = new Error(`HTTP ${response.status}`);
+      error.response = { status: response.status };
+      throw error;
+    }
+    
+    return response.json();
+  } else {
+    const config: any = {};
+    if (token) {
+      config.headers = { Authorization: `Bearer ${token}` };
+    }
+    const response = await axios.patch(url, data, config);
+    return response.data;
+  }
+}
+
 class PlanService {
   private cache: Map<string, { data: any; timestamp: number }> = new Map();
   private readonly CACHE_TTL = 30000; // 30 segundos (sincronizado com backend)
@@ -57,9 +166,9 @@ class PlanService {
     const cached = this.getFromCache<Plan[]>(cacheKey);
     if (cached) return cached;
 
-    const response = await axios.get(`${BASE_URL}/api/plans/public`);
-    this.setCache(cacheKey, response.data);
-    return response.data;
+    const data = await httpGet<Plan[]>(`${BASE_URL}/api/plans/public`);
+    this.setCache(cacheKey, data);
+    return data;
   }
 
   /**
@@ -77,12 +186,10 @@ class PlanService {
       const payload = JSON.parse(atob(token.split('.')[1]));
       const userId = payload.sub || payload.user_id;
 
-      const response = await axios.get(`${BASE_URL}/api/user-plans/user/${userId}/active`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const data = await httpGet<any>(`${BASE_URL}/api/user-plans/user/${userId}/active`, token);
 
       // A rota retorna { success: true, data: [...] }
-      const plans = response.data?.data || response.data;
+      const plans = data?.data || data;
       const activePlan = Array.isArray(plans) && plans.length > 0 ? plans[0] : null;
 
       this.setCache(cacheKey, activePlan);
@@ -176,16 +283,12 @@ class PlanService {
    * Faz upgrade do plano
    */
   async upgradePlan(token: string, planId: string): Promise<UserPlan> {
-    const response = await axios.post(
-      `${BASE_URL}/api/user-plans`,
-      { planId },
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
+    const data = await httpPost<UserPlan>(`${BASE_URL}/api/user-plans`, { planId }, token);
 
     // Limpa cache após upgrade
     this.clearCache();
 
-    return response.data;
+    return data;
   }
 
   /**
@@ -195,11 +298,7 @@ class PlanService {
     const userPlan = await this.getUserPlan(token);
     if (!userPlan) throw new Error('Nenhum plano ativo para cancelar');
 
-    await axios.patch(
-      `${BASE_URL}/api/user-plans/${userPlan.id}/cancel`,
-      { reason },
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
+    await httpPatch<void>(`${BASE_URL}/api/user-plans/${userPlan.id}/cancel`, { reason }, token);
 
     // Limpa cache após cancelamento
     this.clearCache();
@@ -209,10 +308,7 @@ class PlanService {
    * Obtém histórico de mudanças de status do plano
    */
   async getPlanHistory(token: string): Promise<any[]> {
-    const response = await axios.get(`${BASE_URL}/api/user-plans/history`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    return response.data;
+    return httpGet<any[]>(`${BASE_URL}/api/user-plans/history`, token);
   }
 
   /**

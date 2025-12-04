@@ -97,15 +97,16 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
       // Se temos token, tentar restaurar a sessão do SDK se estiver vazia
       // Isso garante que realtime e storage funcionem
-      if (typeof window !== 'undefined') {
+      // NOTA: No Edge Mobile, PULAR isso pois setSession trava
+      const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+      
+      if (typeof window !== 'undefined' && !isEdgeMobile) {
         const { createClient } = await import('@/lib/supabase/client');
         const supabase = createClient();
         const { data: { session: currentSession } } = await supabase.auth.getSession();
         
         if (!currentSession && token) {
            console.log('[UserContext] Restaurando sessão do SDK com token encontrado...');
-           // Tenta restaurar sem refresh token primeiro (só access_token)
-           // Se tiver refresh token no storage, melhor ainda
            const storedSessionStr = localStorage.getItem(`sb-${process.env.NEXT_PUBLIC_SUPABASE_URL?.match(/https:\/\/([^.]+)\./)?.[1]}-auth-token`);
            
            if (storedSessionStr) {
@@ -120,13 +121,18 @@ export function UserProvider({ children }: { children: ReactNode }) {
               } catch(e) {}
            }
         }
+      } else if (isEdgeMobile) {
+        console.log('[UserContext] Edge Mobile detectado, pulando restauração do SDK');
       }
 
       // Se temos token, buscar dados completos do usuário
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
+        method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
         },
+        credentials: 'include', // Importante para Edge Mobile
       });
 
       if (!response.ok) {
