@@ -427,47 +427,11 @@ export class SupabaseSimulatedExamService {
           created_at: { value: new Date().toISOString() },
         });
 
-      // ✅ INTEGRAÇÃO COM SISTEMA DE REVISÃO FSRS
-      // Importar serviços necessários
-      const { SupabaseUnifiedReviewService } = await import('../../studyTools/supabase/SupabaseUnifiedReviewService');
-      const { ReviewPreferencesService } = await import('../../../domain/studyTools/unifiedReviews/services/ReviewPreferencesService');
-      
-      const unifiedReviewService = new SupabaseUnifiedReviewService(this.supabase);
-      const preferencesService = new ReviewPreferencesService(this.supabase);
-      
-      const prefs = await preferencesService.getPreferences(result.user_id);
-      
-      if (prefs && prefs.auto_add_questions) {
-        // Verificar se já existe card FSRS
-        const { data: existingCard } = await this.supabase
-          .from('fsrs_cards')
-          .select('id')
-          .eq('content_id', data.questionId)
-          .eq('user_id', result.user_id)
-          .eq('content_type', 'QUESTION')
-          .single();
-
-        if (existingCard) {
-          // Atualizar card existente
-          await unifiedReviewService.recordQuestionResponse(
-            result.user_id,
-            data.questionId,
-            answerData.isCorrect,
-            0
-          );
-        } else {
-          // Criar novo card e registrar resposta
-          await unifiedReviewService.addQuestionToReviews(data.questionId, result.user_id);
-          await unifiedReviewService.recordQuestionResponse(
-            result.user_id,
-            data.questionId,
-            answerData.isCorrect,
-            0
-          );
-        }
-      }
+      // ⚠️ NÃO integrar simulados com FSRS - simulados são para avaliação, não para revisão espaçada
+      // Se o usuário abandona ou finaliza sem responder, não deve afetar o sistema de revisões
+      console.log(`[Simulado] Resposta registrada para questão ${data.questionId} - NÃO integra com FSRS`);
     } catch (error) {
-      console.error('Erro ao salvar resposta em question_responses ou integrar FSRS:', error);
+      console.error('Erro ao salvar resposta em question_responses:', error);
       // Não falhar a operação principal se isso der erro
     }
 

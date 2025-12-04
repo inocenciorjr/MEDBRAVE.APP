@@ -23,12 +23,22 @@ export function getLastActivity(): number | null {
 
 export function isSessionExpired(): boolean {
   const lastActivity = getLastActivity();
-  if (!lastActivity) return false;
+  
+  // Se não tem registro de última atividade, não está expirado (é um novo login)
+  if (!lastActivity) {
+    console.log('[SessionTimeout] Sem registro de última atividade, sessão válida');
+    return false;
+  }
   
   const now = Date.now();
   const timeSinceLastActivity = now - lastActivity;
+  const isExpired = timeSinceLastActivity > INACTIVITY_TIMEOUT;
   
-  return timeSinceLastActivity > INACTIVITY_TIMEOUT;
+  if (isExpired) {
+    console.log(`[SessionTimeout] Sessão expirada: ${Math.round(timeSinceLastActivity / 60000)} minutos de inatividade`);
+  }
+  
+  return isExpired;
 }
 
 export async function checkAndClearExpiredSession() {

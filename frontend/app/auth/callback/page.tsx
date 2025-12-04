@@ -218,6 +218,7 @@ function AuthCallbackContent() {
         localStorage.setItem('authToken', session.access_token);
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('user_id', session.user.id);
+        localStorage.setItem('auth_last_activity', Date.now().toString()); // Importante para timeout de sessão
         sessionStorage.setItem('authToken', session.access_token);
         sessionStorage.setItem('user', JSON.stringify(userData));
         sessionStorage.setItem('user_id', session.user.id);

@@ -307,28 +307,33 @@ export class QuestionHistoryService {
       logger.info(`Tentativa ${attemptNumber} registrada para questão ${data.question_id}`);
 
       // ✅ INTEGRAÇÃO COM SISTEMA DE REVISÃO FSRS (executar em background, não bloquear resposta)
-      // Usar setImmediate para não bloquear o event loop
-      setImmediate(async () => {
-        try {
-          const prefs = await this.preferencesService.getPreferences(data.user_id);
+      // ⚠️ NÃO integrar simulados com FSRS - simulados são para avaliação, não para revisão espaçada
+      // Se o usuário abandona ou finaliza sem responder, não deve afetar o sistema de revisões
+      if (data.study_mode !== 'simulated_exam') {
+        setImmediate(async () => {
+          try {
+            const prefs = await this.preferencesService.getPreferences(data.user_id);
 
-          if (prefs && prefs.auto_add_questions) {
-            logger.info(`[FSRS Background] Integrando questão ${data.question_id}`);
+            if (prefs && prefs.auto_add_questions) {
+              logger.info(`[FSRS Background] Integrando questão ${data.question_id}`);
 
-            const isActiveReview = data.study_mode === 'unified_review';
-            await this.unifiedReviewService.updateQuestionCardOnly(
-              data.user_id,
-              data.question_id,
-              data.is_correct,
-              isActiveReview
-            );
+              const isActiveReview = data.study_mode === 'unified_review';
+              await this.unifiedReviewService.updateQuestionCardOnly(
+                data.user_id,
+                data.question_id,
+                data.is_correct,
+                isActiveReview
+              );
 
-            logger.info(`[FSRS Background] Integração concluída para questão ${data.question_id}`);
+              logger.info(`[FSRS Background] Integração concluída para questão ${data.question_id}`);
+            }
+          } catch (fsrsError) {
+            logger.error('[FSRS Background] Erro na integração (não crítico):', fsrsError);
           }
-        } catch (fsrsError) {
-          logger.error('[FSRS Background] Erro na integração (não crítico):', fsrsError);
-        }
-      });
+        });
+      } else {
+        logger.info(`[FSRS] Simulado ignorado - não integra com sistema de revisões: ${data.question_id}`);
+      }
 
       return response as QuestionAttempt;
     } catch (error) {
