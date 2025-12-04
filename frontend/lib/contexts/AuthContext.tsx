@@ -98,6 +98,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     // Listener de mudanças de autenticação
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      console.log('[AuthContext] onAuthStateChange:', _event, session ? 'com sessão' : 'sem sessão');
+      
       if (_event === 'TOKEN_REFRESHED' && session?.access_token) {
         console.log('🔄 [Auth] Token renovado automaticamente');
         localStorage.setItem('authToken', session.access_token);
@@ -107,6 +109,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
         return;
       }
 
+      // IMPORTANTE: Se já temos usuário no localStorage, não limpar por causa do SDK
+      const hasLocalUser = localStorage.getItem('user') && localStorage.getItem('authToken');
+      
       if (session?.user) {
         if (processingRef.current) return;
 
@@ -159,12 +164,19 @@ export function AuthProvider({ children }: AuthProviderProps) {
           setLoading(false);
         }
       } else {
-        setUser(null);
-        localStorage.removeItem('user');
-        localStorage.removeItem('user_id');
-        localStorage.removeItem('authToken');
-        localStorage.removeItem('userData');
-        sessionStorage.removeItem('authToken');
+        // Só limpar se não temos usuário no localStorage
+        // O SDK pode não ter a sessão mas nós salvamos manualmente
+        if (!hasLocalUser) {
+          console.log('[AuthContext] Limpando sessão (sem usuário local)');
+          setUser(null);
+          localStorage.removeItem('user');
+          localStorage.removeItem('user_id');
+          localStorage.removeItem('authToken');
+          localStorage.removeItem('userData');
+          sessionStorage.removeItem('authToken');
+        } else {
+          console.log('[AuthContext] Mantendo sessão local (SDK sem sessão mas localStorage tem)');
+        }
         setLoading(false);
       }
     });

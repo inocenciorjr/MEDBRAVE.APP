@@ -66,7 +66,7 @@ function AuthCallbackContent() {
         let session = null;
         try {
           const sessionPromise = supabase.auth.getSession();
-          const timeoutPromise = new Promise((_, reject) => 
+          const timeoutPromise = new Promise((_, reject) =>
             setTimeout(() => reject(new Error('getSession timeout')), 3000)
           );
           const { data: existingSession } = await Promise.race([sessionPromise, timeoutPromise]) as any;
