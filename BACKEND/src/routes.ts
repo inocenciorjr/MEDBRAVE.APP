@@ -357,30 +357,41 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     console.warn("Erro ao carregar rotas de mídia:", error);
   }
 
-  // Termo Game Routes
-  try {
-    const { createTermoGameRoutes } = await import('./routes/termoGameRoutes');
-    const termoGameRoutes = createTermoGameRoutes(supabase);
-    router.use('/games/termo', termoGameRoutes);
-  } catch (error) {
-    console.error('Erro ao carregar rotas do jogo Termo:', error);
-  }
-
-  // Termo Game Admin Routes
-  try {
-    const { createTermoAdminRoutes } = await import('./domain/studyTools/games/termo/routes/termoAdminRoutes');
-    const termoAdminRoutes = createTermoAdminRoutes(supabase);
-    router.use('/admin/games/termo', termoAdminRoutes);
-  } catch (error) {
-    console.error('Erro ao carregar rotas administrativas do jogo Termo:', error);
-  }
-
   // Schulte Game Routes
   try {
     const { default: schulteGameRouter } = await import('./domain/studyTools/games/schulte/controllers/SchulteGameController');
     router.use('/games/schulte', authMiddleware as any, schulteGameRouter);
   } catch (error) {
     console.error('Erro ao carregar rotas do jogo Schulte:', error);
+  }
+
+  // MED TERMOOOO Game Routes
+  try {
+    const { createMedTermoooRoutes } = await import('./domain/studyTools/games/medTermooo/controllers/MedTermoooController');
+    const medTermoooRoutes = createMedTermoooRoutes(supabase);
+    router.use('/games/med-termooo', authMiddleware as any, medTermoooRoutes);
+    console.log('✅ Rotas do MED TERMOOOO registradas em /games/med-termooo');
+  } catch (error) {
+    console.error('Erro ao carregar rotas do MED TERMOOOO:', error);
+  }
+
+  // CAÇA-PALAVRAS Game Routes
+  try {
+    const { createWordSearchRoutes } = await import('./domain/studyTools/games/wordSearch/controllers/WordSearchController');
+    const wordSearchRoutes = createWordSearchRoutes(supabase);
+    router.use('/games/word-search', authMiddleware as any, wordSearchRoutes);
+    console.log('✅ Rotas do Caça-Palavras registradas em /games/word-search');
+  } catch (error) {
+    console.error('Erro ao carregar rotas do Caça-Palavras:', error);
+  }
+
+  // JOB CENTRALIZADO - Gera conteúdo diário de todos os jogos à meia-noite
+  try {
+    const { DailyGamesJob } = await import('./domain/studyTools/games/jobs/DailyGamesJob');
+    const dailyGamesJob = new DailyGamesJob(supabase);
+    dailyGamesJob.start();
+  } catch (error) {
+    console.error('Erro ao iniciar job de jogos diários:', error);
   }
 
   // Rotas de estatísticas do usuário (REMOVIDO - agora usa statisticsRoutes em app.ts)

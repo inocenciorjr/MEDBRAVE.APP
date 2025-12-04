@@ -51,8 +51,9 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
     }
 
     if (user) {
+       const avatarUrl = user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.displayName || 'User')}&background=6366f1&color=fff`;
        setUserName(user.displayName || 'Usuário');
-       setUserAvatar(user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.displayName || 'User')}&background=6366f1&color=fff`);
+       setUserAvatar(avatarUrl);
        setLoading(false);
     } else if (!userLoading) {
        setLoading(false);
@@ -127,8 +128,8 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
               src={userAvatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`}
               alt={`Avatar de ${userName}`}
               className="w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointer hover:ring-2 hover:ring-primary transition-all object-cover"
+              referrerPolicy="no-referrer"
               onError={(e) => {
-                // Evitar loop infinito de erro
                 if (!e.currentTarget.dataset.fallback) {
                   e.currentTarget.dataset.fallback = 'true';
                   e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(userName)}&background=6366f1&color=fff`;

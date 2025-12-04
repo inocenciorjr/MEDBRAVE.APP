@@ -87,6 +87,10 @@ const config: Config = {
           '0%': { transform: 'translateY(10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        'slide-down': {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
         'zoom-in': {
           '0%': { transform: 'scale(0.95)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
@@ -96,6 +100,7 @@ const config: Config = {
         'fade-in': 'fade-in 0.3s ease-out',
         'slide-in-from-top': 'slide-in-from-top 0.3s ease-out',
         'slide-in-from-bottom': 'slide-in-from-bottom 0.3s ease-out',
+        'slide-down': 'slide-down 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
         'zoom-in': 'zoom-in 0.2s ease-out',
       },
     },

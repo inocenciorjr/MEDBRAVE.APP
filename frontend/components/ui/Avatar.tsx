@@ -36,6 +36,7 @@ export function Avatar({ src, name = 'User', size = 'md', className = '', onClic
       alt={`Avatar de ${name}`}
       className={`${sizeClasses[size]} rounded-full object-cover ${onClick ? 'cursor-pointer hover:ring-2 hover:ring-primary' : ''} ${className}`}
       onClick={onClick}
+      referrerPolicy="no-referrer"
       onError={() => {
         if (!hasError) {
           setHasError(true);

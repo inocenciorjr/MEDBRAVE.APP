@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dito Game Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#dc2626", // Red for the 'g1' logo dot
+            "background-light": "#d4e68e",
+            "background-dark": "#7f8955",
+          },
+          fontFamily: {
+            display: ["Roboto", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 antialiased font-display">
+<div class="flex flex-col min-h-screen" id="root">
+<header class="w-full p-4">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<span class="text-4xl font-bold tracking-tighter text-gray-700 dark:text-gray-100">g</span>
+<span class="w-4 h-4 rounded-full bg-primary -ml-1 mt-1"></span>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+<span class="material-icons-outlined">share</span>
+</button>
+<button class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+<span class="material-icons-outlined">help_outline</span>
+</button>
+<button class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+<span class="material-icons-outlined">settings</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col justify-center items-center px-4">
+<div class="text-center">
+<div class="grid grid-cols-3 gap-1.5 mb-6 mx-auto w-24">
+<div class="w-full h-8 bg-gray-700 dark:bg-gray-300 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-700 dark:bg-gray-300 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-700 dark:bg-gray-300 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+<div class="w-full h-8 bg-gray-300 dark:bg-gray-600 rounded-sm"></div>
+</div>
+<h1 class="text-6xl font-bold text-gray-800 dark:text-gray-100">Dito</h1>
+<div class="mt-12 flex flex-col items-center space-y-6">
+<button class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-bold py-3 px-16 rounded shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300">
+            Iniciar
+          </button>
+<a class="flex items-center space-x-2 text-gray-700 dark:text-gray-200 hover:underline" href="#">
+<span class="material-icons-outlined text-xl">help_outline</span>
+<span>Como jogar?</span>
+</a>
+</div>
+</div>
+</main>
+<footer class="w-full p-4">
+<div class="max-w-7xl mx-auto flex justify-end items-center">
+<button class="text-xs font-semibold text-gray-600 dark:text-gray-300 bg-white/50 dark:bg-black/20 px-3 py-1 rounded-full shadow-sm">
+          POR PTB2
+        </button>
+</div>
+</footer>
+</div>
+
+</body></html>
