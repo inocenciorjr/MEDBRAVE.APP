@@ -140,6 +140,20 @@ export function AuthProvider({ children }: AuthProviderProps) {
       
       console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
       
+      // Verificar se os cookies existem no cliente primeiro
+      const clientCookies = document.cookie;
+      const hasAccessToken = clientCookies.includes('sb-access-token');
+      const hasRefreshToken = clientCookies.includes('sb-refresh-token');
+      console.log('[AuthContext] Cookies no cliente - access:', hasAccessToken, 'refresh:', hasRefreshToken);
+      
+      if (!hasAccessToken && !hasRefreshToken) {
+        console.log('[AuthContext] Nenhum cookie de sessão encontrado no cliente');
+        clearSession();
+        setLoading(false);
+        isRecoveringRef.current = false;
+        return;
+      }
+      
       try {
         const res = await fetch('/api/auth/recover-session');
         
