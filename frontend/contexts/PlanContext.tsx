@@ -112,6 +112,12 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
     // Escutar evento customizado de atualização de token (disparado pelo callback de auth)
     const handleAuthTokenUpdated = async (e: CustomEvent) => {
+      // No Edge Mobile, ignorar evento durante navegação recente para evitar requisições canceladas
+      if (isEdgeMobile && performance.now() < 5000) {
+        console.log('[PlanContext] Edge Mobile: ignorando evento durante navegação');
+        return;
+      }
+      
       const newToken = e.detail?.token || localStorage.getItem('authToken');
       if (newToken && newToken !== lastTokenRef.current) {
         lastTokenRef.current = newToken;
