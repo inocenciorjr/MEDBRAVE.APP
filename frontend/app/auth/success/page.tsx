@@ -28,9 +28,18 @@ function AuthSuccessContent() {
         setStatus('Sessão confirmada! Redirecionando...');
         // Usar replace para não adicionar ao histórico
         // E adicionar _auth=1 para o AuthContext saber que veio do login
+        const separator = redirect.includes('?') ? '&' : '?';
+        const finalUrl = `${redirect}${separator}_auth=1`;
+        
+        // Log para debug
+        fetch('/api/debug-log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ event: 'auth-success-redirect', redirect, finalUrl })
+        }).catch(() => {});
+        
         setTimeout(() => {
-          const separator = redirect.includes('?') ? '&' : '?';
-          window.location.replace(`${redirect}${separator}_auth=1`);
+          window.location.replace(finalUrl);
         }, 300);
         return;
       }
