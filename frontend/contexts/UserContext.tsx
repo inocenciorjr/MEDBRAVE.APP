@@ -45,10 +45,23 @@ export function UserProvider({ children }: { children: ReactNode }) {
   // Rastrear atividade em tempo real
   useActivityTracker(user?.id || null, sessionId);
 
-  const fetchUser = async (retryCount = 0) => {
+  const fetchUser = async (retryCount = 0, skipInitialDelay = false) => {
     try {
       // Verificar se estamos no client-side
       if (typeof window === 'undefined') return;
+
+      // No Edge Mobile, adicionar delay inicial para evitar requisições durante navegação
+      const isEdgeMobileCheck = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+      if (isEdgeMobileCheck && retryCount === 0 && !skipInitialDelay) {
+        // Verificar se acabamos de vir do callback (navegação recente)
+        const navEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
+        const isRecentNavigation = navEntries.length > 0 && (performance.now() < 2000);
+        
+        if (isRecentNavigation) {
+          console.log('[UserContext] Edge Mobile: aguardando navegação estabilizar...');
+          await new Promise(r => setTimeout(r, 500));
+        }
+      }
 
       // 1. Tentar obter token do localStorage (que pode ter sido colocado pelo AuthContext)
       const storedToken = localStorage.getItem('authToken');

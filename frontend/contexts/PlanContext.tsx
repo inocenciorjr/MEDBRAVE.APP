@@ -49,8 +49,21 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
     if (typeof window === 'undefined') return;
 
+    // Detectar Edge Mobile
+    const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+
     // Função para verificar e atualizar token (com fallback para sessionStorage - Edge Mobile fix)
-    const checkToken = async () => {
+    const checkToken = async (isInitial = false) => {
+      // No Edge Mobile, delay inicial para evitar requisições durante navegação
+      if (isEdgeMobile && isInitial) {
+        const navEntries = performance.getEntriesByType('navigation') as PerformanceNavigationTiming[];
+        const isRecentNavigation = navEntries.length > 0 && (performance.now() < 2000);
+        if (isRecentNavigation) {
+          console.log('[PlanContext] Edge Mobile: aguardando navegação estabilizar...');
+          await new Promise(r => setTimeout(r, 500));
+        }
+      }
+
       // ✅ EDGE MOBILE FIX: Verificar localStorage e sessionStorage
       let storedToken = localStorage.getItem('authToken');
       if (!storedToken) {
@@ -83,8 +96,8 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
       }
     };
 
-    // Verificar imediatamente
-    checkToken();
+    // Verificar imediatamente (com flag de inicial para delay no Edge Mobile)
+    checkToken(true);
 
     // ✅ OTIMIZAÇÃO: Polling reduzido para 2s (evento customizado é o principal mecanismo)
     tokenCheckIntervalRef.current = setInterval(checkToken, 2000);
