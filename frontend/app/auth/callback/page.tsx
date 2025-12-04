@@ -139,7 +139,7 @@ function AuthCallbackContent() {
 
           // Detectar Edge Mobile
           const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
-          
+
           // No Edge Mobile, PULAR setSession completamente - o SDK trava e não é confiável
           // Vamos confiar apenas no localStorage/cookies
           if (!isEdgeMobile) {
@@ -276,19 +276,18 @@ function AuthCallbackContent() {
         setLoadingMessage('Redirecionando...');
         console.log('[Callback] Redirecionando para:', finalRedirect);
 
-        // Notificar outros componentes
-        window.dispatchEvent(new CustomEvent('auth-token-updated', {
-          detail: { token: session.access_token }
-        }));
-
         // Verificar se é Edge Mobile
         const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
 
         if (isEdgeMobile) {
           console.log('[Callback] Edge Mobile detectado, usando estratégia especial');
 
-          // Delay reduzido - agora que sincronizamos com SDK, não precisa tanto tempo
-          await new Promise(r => setTimeout(r, 500));
+          // NO EDGE MOBILE: NÃO disparar evento antes do redirect
+          // Isso evita que UserContext/PlanContext façam requisições que serão canceladas
+          // A página de destino vai carregar os dados do localStorage naturalmente
+
+          // Pequeno delay para garantir que localStorage foi salvo
+          await new Promise(r => setTimeout(r, 300));
 
           // Verificar se os dados persistiram
           const checkToken = localStorage.getItem('authToken');
@@ -296,19 +295,22 @@ function AuthCallbackContent() {
           console.log('[Callback] Verificação pós-delay - localStorage:', checkToken ? 'OK' : 'VAZIO', 'cookie:', checkCookie ? 'OK' : 'VAZIO');
 
           if (!checkToken) {
-            // Tentar salvar novamente
             console.log('[Callback] Token perdido no localStorage, salvando novamente...');
             localStorage.setItem('authToken', session.access_token);
             localStorage.setItem('user', JSON.stringify(userData));
             localStorage.setItem('user_id', session.user.id);
-            await new Promise(r => setTimeout(r, 500));
+            await new Promise(r => setTimeout(r, 200));
           }
 
-          // Usar location.replace para evitar problemas de histórico
+          // Redirect imediato - a página de destino vai carregar os dados
           console.log('[Callback] Usando location.replace para redirect');
           window.location.replace(finalRedirect);
         } else {
-          // Outros navegadores: usar window.location.replace (mais limpo que href)
+          // Outros navegadores: notificar e redirecionar
+          window.dispatchEvent(new CustomEvent('auth-token-updated', {
+            detail: { token: session.access_token }
+          }));
+
           console.log('[Callback] Executando redirect com location.replace...');
           window.location.replace(finalRedirect);
         }
