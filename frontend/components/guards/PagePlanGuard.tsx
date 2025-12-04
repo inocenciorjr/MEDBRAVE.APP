@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { PlanRequired403 } from '../errors/PlanRequired403';
 import { usePlan } from '@/hooks/usePlan';
+import { useAuth } from '@/lib/contexts/AuthContext';
 
 interface PagePlanGuardProps {
   children: React.ReactNode;
@@ -34,7 +35,12 @@ export function PagePlanGuard({
   requireActivePlan = true,
   customMessage,
 }: PagePlanGuardProps) {
-  const { userPlan, loading, isExpired, refreshPlan } = usePlan();
+  const { userPlan, loading: planLoading, isExpired, refreshPlan } = usePlan();
+  const { loading: authLoading, isAuthenticated: authIsAuthenticated } = useAuth();
+  
+  // Combinar loading states
+  const loading = planLoading || authLoading;
+  
   const [show403, setShow403] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>(customMessage);
   const [retryCount, setRetryCount] = useState(0);
@@ -75,19 +81,22 @@ export function PagePlanGuard({
       return;
     }
 
-    // Verifica se o usuário está autenticado (com fallback para sessionStorage - Edge Mobile fix)
-    let authToken = null;
-    if (typeof window !== 'undefined') {
-      authToken = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
-    }
-    const hasCookie = typeof document !== 'undefined' && document.cookie.includes('sb-access-token');
-    const isAuthenticated = !!(authToken || hasCookie);
-
-    // Se não está autenticado, não mostra 403 (deixa o AuthContext redirecionar para login)
-    if (!isAuthenticated) {
+    // Se não está autenticado após o loading, redirecionar para login
+    if (!authIsAuthenticated) {
       setShow403(false);
       setRetryCount(0);
       hasTriedRefreshRef.current = false;
+      
+      // Redirecionar para login
+      if (typeof window !== 'undefined') {
+        const currentPath = window.location.pathname;
+        // Evitar loop de redirecionamento se já estiver no login
+        if (!currentPath.startsWith('/auth/')) {
+          console.log('[PagePlanGuard] Usuário não autenticado, redirecionando para login...');
+          const returnUrl = encodeURIComponent(currentPath);
+          window.location.href = `/login?returnUrl=${returnUrl}`;
+        }
+      }
       return;
     }
 
@@ -172,7 +181,7 @@ export function PagePlanGuard({
         clearTimeout(retryTimeoutRef.current);
       }
     };
-  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan]);
+  }, [userPlan, loading, isExpired, requireActivePlan, customMessage, retryCount, tryRefreshPlan, authIsAuthenticated]);
 
   // Reset quando o componente é desmontado e remontado
   useEffect(() => {

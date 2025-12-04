@@ -126,13 +126,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
         if (res.ok) {
           const data = await res.json();
           if (data.access_token && data.user) {
-            console.log('[AuthContext] Sessão recuperada com sucesso!');
+            console.log('[AuthContext] Sessão recuperada dos cookies!');
             
             // Restaurar sessão no Supabase SDK
-            await supabase.auth.setSession({
+            const { error: sessionError } = await supabase.auth.setSession({
               access_token: data.access_token,
               refresh_token: data.refresh_token,
             });
+
+            if (sessionError) {
+              console.error('[AuthContext] Erro ao restaurar sessão no SDK:', sessionError);
+              throw sessionError;
+            }
 
             // Configurar usuário
             const basicUser = supabaseAuthService.mapSupabaseUser(data.user);
@@ -315,7 +320,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const forgotPassword = async (email: string): Promise<void> => {
     try {
       setLoading(true);
-      await supabaseAuthService.resetPassword(email);
+      await supabaseAuthService.forgotPassword(email);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao enviar email de recuperação';
       setError(errorMessage);
