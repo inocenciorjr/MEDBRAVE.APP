@@ -227,16 +227,16 @@ function AuthCallbackContent() {
 
         // Verificar se é Edge Mobile
         const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
-        
+
         if (isEdgeMobile) {
           console.log('[Callback] Edge Mobile detectado, usando router.push com delay');
           // Edge Mobile: usar router.push com delay para garantir persistência
           await new Promise(r => setTimeout(r, 1000));
-          
+
           // Verificar se os dados persistiram
           const checkToken = localStorage.getItem('authToken');
           console.log('[Callback] Verificação pós-delay - token:', checkToken ? 'presente' : 'AUSENTE');
-          
+
           if (!checkToken) {
             // Tentar salvar novamente
             console.log('[Callback] Token perdido, salvando novamente...');
@@ -245,7 +245,7 @@ function AuthCallbackContent() {
             localStorage.setItem('user_id', session.user.id);
             await new Promise(r => setTimeout(r, 500));
           }
-          
+
           router.push(finalRedirect);
         } else {
           // Outros navegadores: usar window.location

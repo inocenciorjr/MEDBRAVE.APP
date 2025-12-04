@@ -1,12 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import { AdminLayout } from '@/components/admin/layout/AdminLayout';
-import { createClient } from '@/lib/supabase/client';
-
-const supabase = createClient();
+import { useAuth } from '@/lib/contexts/AuthContext';
 
 /**
  * Layout Client-Side para área administrativa
@@ -18,35 +16,16 @@ export default function AdminClientLayout({
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const { isAuthenticated, loading } = useAuth();
 
   useEffect(() => {
-    checkAuth();
-  }, []);
-
-  const checkAuth = async () => {
-    try {
-      // Verificar sessão do Supabase
-      const { data: { session } } = await supabase.auth.getSession();
-      
-      if (!session) {
-        console.log('[Admin Layout] Sem sessão, redirecionando para login');
-        router.push('/login?redirect=/admin');
-        return;
-      }
-
-      console.log('[Admin Layout] Sessão encontrada, usuário autenticado');
-      setIsAuthenticated(true);
-    } catch (error) {
-      console.error('[Admin Layout] Erro ao verificar autenticação:', error);
+    if (!loading && !isAuthenticated) {
+      console.log('[Admin Layout] Não autenticado, redirecionando para login');
       router.push('/login?redirect=/admin');
-    } finally {
-      setIsLoading(false);
     }
-  };
+  }, [isAuthenticated, loading, router]);
 
-  if (isLoading) {
+  if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>

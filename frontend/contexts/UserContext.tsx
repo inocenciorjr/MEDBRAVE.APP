@@ -86,6 +86,61 @@ export function UserProvider({ children }: { children: ReactNode }) {
             console.error('[UserContext] Edge Mobile: erro ao ler sessão:', e);
           }
         }
+
+        // Tentar recuperar sessão via cookies (Edge Mobile/Safari fix)
+        try {
+          console.log('[UserContext] Edge Mobile: Tentando recuperar sessão via cookies...');
+          const res = await fetch('/api/auth/recover-session');
+          if (res.ok) {
+            const data = await res.json();
+            if (data.access_token) {
+               // Se recuperou, buscar dados do usuário
+               const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
+                headers: { 'Authorization': `Bearer ${data.access_token}` },
+              });
+
+              if (response.ok) {
+                const userData = await response.json();
+                const user = {
+                  id: userData.id,
+                  email: userData.email,
+                  role: userData.role,
+                  displayName: userData.displayName || userData.email?.split('@')[0] || 'Usuário',
+                  photoURL: userData.photoURL || null,
+                  activePlan: userData.activePlan || null,
+                };
+                setUser(user);
+                setLoading(false);
+                
+                // Restaurar sessão no localStorage para evitar calls futuros
+                const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+                const projectRef = supabaseUrl.match(/https:\/\/([^.]+)\./)?.[1] || '';
+                const storageKey = `sb-${projectRef}-auth-token`;
+                
+                // Recriar estrutura básica do Supabase session
+                const sessionData = {
+                  access_token: data.access_token,
+                  refresh_token: data.refresh_token,
+                  token_type: 'bearer',
+                  user: data.user || { id: userData.id, email: userData.email },
+                  expires_in: 3600
+                };
+                
+                localStorage.setItem(storageKey, JSON.stringify(sessionData));
+                 
+                 // Sincronizar token para o PlanContext/AuthContext
+                 localStorage.setItem('authToken', data.access_token);
+                 window.dispatchEvent(new CustomEvent('auth-token-updated', {
+                    detail: { token: data.access_token }
+                 }));
+
+                 return;
+               }
+            }
+          }
+        } catch (err) {
+          console.error('[UserContext] Falha na recuperação via cookies:', err);
+        }
         
         setUser(null);
         setLoading(false);

@@ -4,60 +4,31 @@ import { createClient } from '@/lib/supabase/middleware';
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  
-  // 1. Create supabase client and get response object
-  const { supabase, response: supabaseResponse } = createClient(request);
 
-  // 2. Refresh session/Get User
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  // 3. Define Public Paths (Global Auth Guard)
-  const isPublicPath = 
-    pathname === '/login' || 
-    pathname === '/mentor-login' ||
-    pathname === '/registro' ||
-    pathname === '/esqueci-senha' ||
-    pathname === '/redefinir-senha' ||
-    pathname === '/confirmar-email' ||
-    pathname.startsWith('/auth/') || 
-    pathname.startsWith('/_next/') || 
-    pathname.startsWith('/static/') ||
-    pathname.startsWith('/api/') || 
-    pathname.includes('.'); 
-
-  // --- Lógica de Proteção Global (Copiada do middleware.ts) ---
-  
-  // Se não estiver logado e tentar acessar rota protegida
-  if (!user && !isPublicPath) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/login';
-    if (pathname !== '/') {
-        url.searchParams.set('redirect', pathname);
-    }
-    return NextResponse.redirect(url);
-  }
-
-  // Se estiver logado e tentar acessar login
-  if (user && pathname === '/login') {
-    const url = request.nextUrl.clone();
-    url.pathname = '/';
-    return NextResponse.redirect(url);
-  }
-
-  // --- Lógica de Proteção do Admin (Existente) ---
+  // Proteger rotas /admin/*
   if (pathname.startsWith('/admin')) {
-    // Note: user is already fetched above
+    const { supabase, response: supabaseResponse } = createClient(request);
+
     const accessToken = request.cookies.get('sb-access-token')?.value;
     
-    // Verificação redundante de segurança para garantir user atualizado
-    if (!user) {
-        // Should be caught by global check, but double safety
-        const url = request.nextUrl.clone();
-        url.pathname = '/login';
-        url.searchParams.set('redirect', pathname);
-        return NextResponse.redirect(url);
+    let authUser = null;
+    let authError = null;
+    
+    if (accessToken) {
+      const { data, error } = await supabase.auth.getUser(accessToken);
+      authUser = data.user;
+      authError = error;
+    } else {
+      const { data, error } = await supabase.auth.getUser();
+      authUser = data.user;
+      authError = error;
+    }
+
+    if (authError || !authUser) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/login';
+      url.searchParams.set('redirect', pathname);
+      return NextResponse.redirect(url);
     }
 
     // Verificar role no backend
@@ -76,8 +47,8 @@ export async function proxy(request: NextRequest) {
         return NextResponse.redirect(url);
       }
 
-      const userData = await response.json();
-      const role = userData.role?.toUpperCase();
+      const user = await response.json();
+      const role = user.role?.toUpperCase();
       
       if (role !== 'ADMIN' && role !== 'SUPERADMIN') {
         const url = request.nextUrl.clone();
@@ -96,18 +67,12 @@ export async function proxy(request: NextRequest) {
   }
 
   // Outras rotas, permitir acesso
-  return supabaseResponse;
+  return NextResponse.next();
 }
 
 // Configurar quais rotas o middleware deve processar
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/admin/:path*',
   ],
 };

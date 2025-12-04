@@ -82,7 +82,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
 
     // Verificar sessão atual
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    supabase.auth.getSession().then(async ({ data: { session } }) => {
       if (session?.user && !user) {
         const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
         setUser(basicUser);
@@ -98,6 +98,48 @@ export function AuthProvider({ children }: AuthProviderProps) {
           }));
         }
       } else if (!session) {
+        // Tentar recuperar sessão dos cookies (fallback para Edge Mobile)
+        if (!localStorage.getItem('user')) {
+          try {
+            console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
+            const res = await fetch('/api/auth/recover-session');
+            if (res.ok) {
+              const data = await res.json();
+              console.log('[AuthContext] Sessão recuperada dos cookies!');
+              
+              // Restaurar sessão no Supabase
+              const { data: { session: newSession } } = await supabase.auth.setSession({
+                access_token: data.access_token,
+                refresh_token: data.refresh_token,
+              });
+
+              if (newSession?.user) {
+                const basicUser = supabaseAuthService.mapSupabaseUser(newSession.user);
+                setUser(basicUser);
+                
+                localStorage.setItem('user', JSON.stringify(basicUser));
+                localStorage.setItem('user_id', basicUser.uid);
+                localStorage.setItem('authToken', data.access_token);
+                
+                window.dispatchEvent(new CustomEvent('auth-token-updated', {
+                  detail: { token: data.access_token }
+                }));
+
+                // Buscar role em background
+                supabaseAuthService.getUserWithRole(newSession.user)
+                  .then((mappedUser) => {
+                    setUser(mappedUser);
+                    localStorage.setItem('user', JSON.stringify(mappedUser));
+                  });
+              }
+            } else {
+              console.log('[AuthContext] Não foi possível recuperar sessão dos cookies');
+            }
+          } catch (e) {
+            console.error('[AuthContext] Falha ao recuperar sessão:', e);
+          }
+        }
+
         setLoading(false);
         clearTimeout(safetyTimeout);
       }

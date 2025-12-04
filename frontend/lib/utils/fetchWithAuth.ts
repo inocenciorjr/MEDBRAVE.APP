@@ -253,6 +253,36 @@ export async function fetchWithAuth(
   
   const getUserEnd = performance.now();
 
+  // Tentar recuperar sessão se não encontrou usuário (Fix para Edge Mobile/Safari)
+  if (!user) {
+    try {
+      // Evitar loop infinito se a própria requisição for para recover-session
+      if (!url.includes('/api/auth/recover-session')) {
+        console.log('[fetchWithAuth] Usuário não encontrado, tentando recuperar sessão...');
+        const res = await fetch('/api/auth/recover-session');
+        
+        if (res.ok) {
+          const data = await res.json();
+          if (data.access_token && data.refresh_token) {
+            const { data: { session }, error } = await supabase.auth.setSession({
+              access_token: data.access_token,
+              refresh_token: data.refresh_token,
+            });
+            
+            if (session?.user) {
+              console.log('[fetchWithAuth] Sessão recuperada com sucesso!');
+              user = session.user;
+              cachedUser = user;
+              cachedUserTimestamp = Date.now();
+            }
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('[fetchWithAuth] Falha ao tentar recuperar sessão:', err);
+    }
+  }
+
   if (!user) {
     console.error('❌ [fetchWithAuth] Usuário não autenticado');
     stats.errors++;
