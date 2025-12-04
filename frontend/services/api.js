@@ -1,15 +1,23 @@
 import axios from 'axios';
 
-// URL base da API - usa variável de ambiente ou fallback baseado no ambiente
-const isDev = process.env.NODE_ENV === 'development';
-const API_URL = process.env.NEXT_PUBLIC_API_URL || (isDev 
-  ? 'http://localhost:5000/api' 
-  : 'https://medbraveapp-production.up.railway.app/api');
-
 // Detectar Edge Mobile
 const isEdgeMobile = typeof navigator !== 'undefined' && 
   /Edg|Edge/i.test(navigator.userAgent) && 
   /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+
+// URL base da API
+// No Edge Mobile, SEMPRE usar proxy local (/api) para evitar problemas de CORS
+const isDev = process.env.NODE_ENV === 'development';
+const API_URL = isEdgeMobile 
+  ? '/api'  // Proxy local - mesmo domínio, sem CORS
+  : (process.env.NEXT_PUBLIC_API_URL || (isDev 
+      ? 'http://localhost:5000/api' 
+      : 'https://medbraveapp-production.up.railway.app/api'));
+
+// Log para debug
+if (typeof window !== 'undefined') {
+  console.log('[API] Edge Mobile:', isEdgeMobile, 'API_URL:', API_URL);
+}
 
 // Criar instância do axios com configurações padrão
 const axiosInstance = axios.create({

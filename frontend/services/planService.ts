@@ -2,16 +2,22 @@
 import axios from 'axios';
 import type { Plan, UserPlan, FeatureAccessResult, LimitUsageResult, PlanFeature, PlanLimit } from '@/types/plan';
 
-// Usa o proxy do Next.js (frontend/app/api/plans e frontend/app/api/user-plans)
-const API_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
-
-// Remove /api do final se existir para evitar duplicação
-const BASE_URL = API_URL.replace(/\/api$/, '');
-
 // Detectar Edge Mobile
 const isEdgeMobile = typeof navigator !== 'undefined' && 
   /Edg|Edge/i.test(navigator.userAgent) && 
   /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+
+// No Edge Mobile, SEMPRE usar proxy local para evitar problemas de CORS
+// Em outros navegadores, usar API externa diretamente
+const API_URL = isEdgeMobile ? '/api' : (process.env.NEXT_PUBLIC_API_URL || '/api');
+
+// Remove /api do final se existir para evitar duplicação
+const BASE_URL = API_URL.replace(/\/api$/, '');
+
+// Log para debug
+if (typeof window !== 'undefined') {
+  console.log('[PlanService] Edge Mobile:', isEdgeMobile, 'BASE_URL:', BASE_URL);
+}
 
 /**
  * Wrapper para fazer requisições HTTP

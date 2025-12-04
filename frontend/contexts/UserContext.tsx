@@ -126,14 +126,22 @@ export function UserProvider({ children }: { children: ReactNode }) {
       }
 
       // Se temos token, buscar dados completos do usuário
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/me`, {
+      // No Edge Mobile, usar proxy do Next.js para evitar problemas de CORS
+      const apiUrl = isEdgeMobile 
+        ? '/api/user/me'  // Proxy local - mesmo domínio
+        : `${process.env.NEXT_PUBLIC_API_URL}/user/me`;  // API externa
+      
+      console.log('[UserContext] Buscando usuário de:', apiUrl, isEdgeMobile ? '(via proxy)' : '(direto)');
+      
+      const response = await fetch(apiUrl, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
-        credentials: 'include', // Importante para Edge Mobile
+        credentials: 'include',
       });
+      console.log('[UserContext] Resposta recebida:', response.status);
 
       if (!response.ok) {
         console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.status, response.statusText);
