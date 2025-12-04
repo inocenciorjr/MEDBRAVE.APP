@@ -87,14 +87,34 @@ export function PagePlanGuard({
       setRetryCount(0);
       hasTriedRefreshRef.current = false;
       
-      // Redirecionar para login
+      // Redirecionar para login com um pequeno delay para evitar falsos negativos (Edge Mobile)
       if (typeof window !== 'undefined') {
         const currentPath = window.location.pathname;
         // Evitar loop de redirecionamento se já estiver no login
         if (!currentPath.startsWith('/auth/')) {
+          
+          // FIX EDGE MOBILE: Verificar se acabamos de logar (cookie de sessão)
+          const justLoggedIn = document.cookie.includes('sb-access-token') || localStorage.getItem('authToken');
+          
+          if (justLoggedIn) {
+             // Se tem indícios de login, não redirecionar ainda, esperar mais um pouco
+             console.log('[PagePlanGuard] Indícios de login encontrados, aguardando AuthContext...');
+             return;
+          }
+
           console.log('[PagePlanGuard] Usuário não autenticado, redirecionando para login...');
-          const returnUrl = encodeURIComponent(currentPath);
-          window.location.href = `/login?returnUrl=${returnUrl}`;
+          
+          // Adicionar delay de segurança antes de redirecionar
+          const redirectTimeout = setTimeout(() => {
+             // Verificar novamente antes de ir
+             const stillNotAuth = !localStorage.getItem('authToken');
+             if (stillNotAuth) {
+                const returnUrl = encodeURIComponent(currentPath);
+                window.location.href = `/login?returnUrl=${returnUrl}`;
+             }
+          }, 500); // 500ms de tolerância
+          
+          return () => clearTimeout(redirectTimeout);
         }
       }
       return;
