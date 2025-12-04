@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import ThemeToggle from '../ui/ThemeToggle';
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
+import { useUser } from '@/contexts/UserContext';
 
 interface HeaderProps {
   userName?: string;
@@ -31,6 +32,7 @@ const motivationalQuotes = [
 ];
 
 export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true, onMenuClick, showMenuButton = false }: HeaderProps) {
+  const { user, loading: userLoading } = useUser();
   const [quote, setQuote] = useState('');
   const [userName, setUserName] = useState(propUserName || 'Usuário');
   const [userAvatar, setUserAvatar] = useState(propUserAvatar || '');
@@ -40,67 +42,39 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
     // Seleciona uma frase aleatória quando o componente monta
     const randomQuote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     setQuote(randomQuote);
-
-    // Se props foram fornecidas, não precisa buscar
+    
     if (propUserName && propUserAvatar) {
-      setLoading(false);
-      return;
+       setUserName(propUserName);
+       setUserAvatar(propUserAvatar);
+       setLoading(false);
+       return;
     }
 
-    // Flag para evitar atualizar estado em componente desmontado
-    let isMounted = true;
+    if (user) {
+       setUserName(user.displayName || 'Usuário');
+       setUserAvatar(user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.displayName || 'User')}&background=6366f1&color=fff`);
+       setLoading(false);
+    } else if (!userLoading) {
+       setLoading(false);
+    }
+  }, [propUserName, propUserAvatar, user, userLoading]);
 
-    const supabase = createClient();
-
-    // Função para buscar dados do perfil via backend (evita problemas de RLS)
-    const fetchProfile = async () => {
-      try {
-        const response = await fetchWithAuth('/user/me');
-
-        if (!isMounted) return; // Componente desmontado, não atualizar estado
-
-        if (response.ok) {
-          const data = await response.json();
-          const name = data.displayName || 'Usuário';
-          const avatar = data.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=6366f1&color=fff`;
-
-          if (isMounted) {
-            setUserName(name);
-            setUserAvatar(avatar);
-            setLoading(false);
-          }
-        } else {
-          console.error('[Header] Erro na resposta:', response.status);
-          if (isMounted) setLoading(false);
-        }
-      } catch (error) {
-        console.error('[Header] Erro ao carregar perfil:', error);
-        if (isMounted) setLoading(false);
-      }
-    };
-
-    // Carregar perfil imediatamente
-    fetchProfile();
-
-    // Listener para mudanças de autenticação (não recarregar em TOKEN_REFRESHED para evitar chamadas duplicadas)
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event: string) => {
-      if (!isMounted) return;
-
-      if (event === 'SIGNED_OUT') {
-        setUserName('Usuário');
-        setUserAvatar('');
-        setLoading(false);
-      } else if (event === 'SIGNED_IN') {
-        // Só recarregar em SIGNED_IN, não em TOKEN_REFRESHED
+  // Fallback de segurança: se user estiver null mas temos token no localStorage, tentar buscar (redundância)
+  useEffect(() => {
+     if (!user && !loading && typeof window !== 'undefined' && localStorage.getItem('authToken')) {
+        const fetchProfile = async () => {
+           try {
+             const response = await fetchWithAuth('/user/me');
+             if (response.ok) {
+               const data = await response.json();
+               setUserName(data.displayName || 'Usuário');
+               setUserAvatar(data.photoURL || '');
+             }
+           } catch(e) {}
+        };
         fetchProfile();
-      }
-    });
-
-    return () => {
-      isMounted = false;
-      subscription.unsubscribe();
-    };
-  }, [propUserName, propUserAvatar]);
+     }
+  }, [user, loading]);
 
   return (
     <header className="mb-4 md:mb-8">
