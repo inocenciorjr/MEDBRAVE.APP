@@ -225,9 +225,33 @@ function AuthCallbackContent() {
           detail: { token: session.access_token }
         }));
 
-        // Usar window.location para garantir redirect
-        console.log('[Callback] Executando redirect...');
-        window.location.href = finalRedirect;
+        // Verificar se é Edge Mobile
+        const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+        
+        if (isEdgeMobile) {
+          console.log('[Callback] Edge Mobile detectado, usando router.push com delay');
+          // Edge Mobile: usar router.push com delay para garantir persistência
+          await new Promise(r => setTimeout(r, 1000));
+          
+          // Verificar se os dados persistiram
+          const checkToken = localStorage.getItem('authToken');
+          console.log('[Callback] Verificação pós-delay - token:', checkToken ? 'presente' : 'AUSENTE');
+          
+          if (!checkToken) {
+            // Tentar salvar novamente
+            console.log('[Callback] Token perdido, salvando novamente...');
+            localStorage.setItem('authToken', session.access_token);
+            localStorage.setItem('user', JSON.stringify(userData));
+            localStorage.setItem('user_id', session.user.id);
+            await new Promise(r => setTimeout(r, 500));
+          }
+          
+          router.push(finalRedirect);
+        } else {
+          // Outros navegadores: usar window.location
+          console.log('[Callback] Executando redirect com window.location...');
+          window.location.href = finalRedirect;
+        }
 
       } catch (err: any) {
         setError(err?.message || 'Erro desconhecido');

@@ -44,7 +44,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
   useEffect(() => {
     // Ignorar páginas de auth
     const currentPath = window.location.pathname;
+    console.log('[AuthContext] Iniciando, path:', currentPath);
+    
     if (currentPath.startsWith('/auth/')) {
+      console.log('[AuthContext] Página de auth, ignorando');
       setLoading(false);
       return;
     }
@@ -60,10 +63,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
     // Restaurar usuário do localStorage
     const storedUser = localStorage.getItem('user');
     const token = localStorage.getItem('authToken');
+    console.log('[AuthContext] localStorage - user:', storedUser ? 'presente' : 'ausente', 'token:', token ? 'presente' : 'ausente');
 
     if (storedUser && token) {
       try {
         const parsedUser = JSON.parse(storedUser) as User;
+        console.log('[AuthContext] Usuário restaurado do localStorage:', parsedUser.email);
         setUser(parsedUser);
         setLoading(false);
         clearTimeout(safetyTimeout);
@@ -72,6 +77,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
         localStorage.removeItem('user');
         localStorage.removeItem('authToken');
       }
+    } else {
+      console.log('[AuthContext] Sem usuário no localStorage');
     }
 
     // Verificar sessão atual
