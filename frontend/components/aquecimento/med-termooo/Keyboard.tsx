@@ -36,9 +36,9 @@ export function Keyboard({ onKeyPress, letterStates, disabled }: KeyboardProps) 
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto space-y-1.5 sm:space-y-2 px-2">
+    <div className="w-full max-w-2xl mx-auto space-y-1 sm:space-y-2 px-1 select-none">
       {KEYBOARD_ROWS.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex justify-center gap-[3px] sm:gap-1.5">
+        <div key={rowIndex} className="flex justify-center gap-[4px] sm:gap-1.5">
           {row.map((key) => {
             const state = letterStates[key];
             const isSpecialKey = key === 'ENTER' || key === 'BACKSPACE';
@@ -47,13 +47,17 @@ export function Keyboard({ onKeyPress, letterStates, disabled }: KeyboardProps) 
               <button
                 key={key}
                 onClick={() => handleClick(key)}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  handleClick(key);
+                }}
                 disabled={disabled}
-                className={`h-11 sm:h-14 md:h-16 flex-1 ${isSpecialKey ? 'min-w-[50px] max-w-[70px] sm:max-w-[80px]' : 'min-w-[28px] max-w-[36px] sm:max-w-[50px]'} text-sm sm:text-lg md:text-xl ${getKeyStyle(state)}`}
+                className={`h-12 sm:h-14 md:h-16 flex-1 ${isSpecialKey ? 'min-w-[52px] max-w-[72px] sm:max-w-[80px]' : 'min-w-[30px] max-w-[38px] sm:max-w-[50px]'} text-base sm:text-lg md:text-xl touch-manipulation ${getKeyStyle(state)}`}
               >
                 {key === 'BACKSPACE' ? (
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">backspace</span>
+                  <span className="material-symbols-outlined text-lg sm:text-2xl">backspace</span>
                 ) : key === 'ENTER' ? (
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">keyboard_return</span>
+                  <span className="material-symbols-outlined text-lg sm:text-2xl">keyboard_return</span>
                 ) : (
                   key
                 )}
