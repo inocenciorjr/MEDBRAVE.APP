@@ -242,11 +242,11 @@ export function GameBoard({ onGameData }: GameBoardProps) {
   }
 
   return (
-    <div className="h-full flex flex-col relative overflow-hidden">
+    <div className="h-full flex flex-col lg:flex-row relative overflow-y-auto lg:overflow-hidden">
       {/* Banner de Vitória */}
       {showVictoryBanner && (
         <div className="absolute inset-x-0 top-0 z-40 animate-slide-down mx-4">
-          <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 backdrop-blur-sm text-white py-5 px-6 rounded-2xl shadow-2xl border border-emerald-400/30">
+          <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 backdrop-blur-sm text-white py-5 px-6 rounded-2xl border border-emerald-400/30">
             <div className="flex flex-col items-center gap-3">
               <h3 className="text-xl font-bold">Parabéns!</h3>
               <p className="text-white/90 text-center text-base">
@@ -264,37 +264,24 @@ export function GameBoard({ onGameData }: GameBoardProps) {
         </div>
       )}
 
-      {/* Layout: Grid + Painel lado a lado */}
-      <div className={`flex-1 flex overflow-hidden ${showVictoryBanner ? 'pt-32' : ''}`}>
-        {/* Grid de letras - centralizado */}
-        <div className="flex-1 flex justify-center items-center p-4">
-          <div className="w-full max-w-[90vw] sm:max-w-[400px] lg:max-w-[500px]">
-            <WordGrid
-              grid={puzzle.grid}
-              gridSize={puzzle.gridSize}
-              selectedCells={selectedCells}
-              foundPositions={getFoundPositions()}
-              onSelectionStart={handleSelectionStart}
-              onSelectionMove={handleSelectionMove}
-              onSelectionEnd={handleSelectionEnd}
-              disabled={game.isCompleted}
-            />
-          </div>
-        </div>
-
-        {/* Painel de contexto - à direita (desktop) */}
-        <div className="hidden lg:block w-[420px] flex-shrink-0 border-l border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
-          <ContextPanel
-            title={puzzle.title}
-            contextText={puzzle.contextText}
-            words={puzzle.words}
-            foundWords={game.foundWords}
+      {/* Grid de letras - centralizado */}
+      <div className={`flex-shrink-0 lg:flex-1 flex justify-center items-center p-4 ${showVictoryBanner ? 'pt-36' : ''}`}>
+        <div className="w-full max-w-[85vw] sm:max-w-[400px] lg:max-w-[500px]">
+          <WordGrid
+            grid={puzzle.grid}
+            gridSize={puzzle.gridSize}
+            selectedCells={selectedCells}
+            foundPositions={getFoundPositions()}
+            onSelectionStart={handleSelectionStart}
+            onSelectionMove={handleSelectionMove}
+            onSelectionEnd={handleSelectionEnd}
+            disabled={game.isCompleted}
           />
         </div>
       </div>
 
-      {/* Painel mobile - só aparece em telas pequenas */}
-      <div className="lg:hidden flex-shrink-0 border-t border-border-light dark:border-border-dark">
+      {/* Painel de contexto - abaixo no mobile, à direita no desktop */}
+      <div className="flex-shrink-0 lg:w-[420px] border-t lg:border-t-0 lg:border-l border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
         <ContextPanel
           title={puzzle.title}
           contextText={puzzle.contextText}
