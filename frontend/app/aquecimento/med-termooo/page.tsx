@@ -51,45 +51,47 @@ function MedTermoooContent() {
     return (
       <div className="h-screen bg-background-light dark:bg-background-dark flex flex-col overflow-hidden">
         {/* Header */}
-        <header className="bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark px-3 sm:px-4 py-2 sm:py-3 flex-shrink-0">
-          <div className="flex items-center justify-between gap-2 sm:gap-4">
-            <div className="flex items-center gap-2 sm:gap-3">
-              <button
-                onClick={() => setShowGame(false)}
-                className="p-1.5 sm:p-2 rounded-lg hover:bg-primary/10 transition-colors"
-              >
-                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl sm:text-2xl">arrow_back</span>
-              </button>
-              <h1 className="text-base sm:text-xl font-bold text-primary hidden sm:block">MED TERMOOO</h1>
-            </div>
+        <header className="bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark px-3 sm:px-4 py-2 flex-shrink-0">
+          {/* Linha principal */}
+          <div className="flex items-center justify-between">
+            <button
+              onClick={() => setShowGame(false)}
+              className="p-1.5 rounded-lg hover:bg-primary/10 transition-colors"
+            >
+              <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl">arrow_back</span>
+            </button>
 
-            {/* Timer e info no centro */}
-            <div className="flex items-center gap-2 sm:gap-4">
+            {/* Timer e letras */}
+            <div className="flex items-center gap-2">
               <span className="text-lg sm:text-2xl font-bold text-primary font-mono" id="med-termooo-timer">
                 00:00
               </span>
-              <span className="hidden sm:inline-block px-3 py-1.5 rounded-lg text-xs font-semibold bg-primary/10 text-primary border border-primary/20" id="med-termooo-category">
-                Carregando...
-              </span>
-              <span className="px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20" id="med-termooo-length">
+              <span className="px-2 py-1 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20" id="med-termooo-length">
                 0 letras
               </span>
             </div>
 
-            <div className="flex items-center gap-1 sm:gap-2">
+            <div className="flex items-center gap-1">
               <button
                 onClick={() => setShowHowToPlay(true)}
-                className="p-1.5 sm:p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-primary/10 transition-colors"
               >
-                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl sm:text-2xl">help_outline</span>
+                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl">help_outline</span>
               </button>
               <Link
                 href="/aquecimento/med-termooo/ranking"
-                className="p-1.5 sm:p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                className="p-1.5 rounded-lg hover:bg-primary/10 transition-colors"
               >
-                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl sm:text-2xl">leaderboard</span>
+                <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-xl">leaderboard</span>
               </Link>
             </div>
+          </div>
+          
+          {/* Categoria - linha separada */}
+          <div className="flex justify-center mt-1">
+            <span className="px-3 py-1 rounded-lg text-xs font-semibold bg-primary/10 text-primary border border-primary/20" id="med-termooo-category">
+              ...
+            </span>
           </div>
         </header>
 

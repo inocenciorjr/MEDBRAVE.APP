@@ -410,7 +410,7 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
       )}
 
       {/* Conteúdo principal */}
-      <div className={`flex-1 flex flex-col items-center justify-center gap-6 p-4 ${showVictoryBanner || showDefeatBanner ? 'pt-36' : ''}`}>
+      <div className={`flex-1 flex flex-col items-center justify-evenly gap-2 sm:gap-4 p-2 sm:p-4 ${showVictoryBanner || showDefeatBanner ? 'pt-24 sm:pt-32' : ''}`}>
         {/* Timer e info - só mostra se showBadges for true */}
         {showBadges && (
           <div className="flex flex-col items-center gap-3">

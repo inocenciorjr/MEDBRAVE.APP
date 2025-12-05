@@ -1,6 +1,8 @@
 import { SupabaseClient } from '@supabase/supabase-js';
 import { MedicalWord, MEDICAL_WORDS } from '../data/words';
 import { IMedTermoooGame, IMedTermoooStats, IGuessResult, LetterResult } from '../interfaces/IMedTermooo';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const MAX_ATTEMPTS = 6;
 
@@ -11,49 +13,37 @@ const getTodayBrasilia = (): string => {
   return brasiliaDate.toISOString().split('T')[0];
 };
 
-// Cache de palavras válidas para evitar requisições repetidas
-const validWordsCache = new Set<string>();
-const invalidWordsCache = new Set<string>();
+// Carregar lista de palavras brasileiras (96k palavras de 5-8 letras)
+let brazilianWords: Set<string> | null = null;
 
-// Validar palavra usando API do Dicionário Aberto
-async function isValidPortugueseWord(word: string): Promise<boolean> {
-  const normalizedWord = word.toLowerCase().trim();
-
-  // Verificar cache primeiro
-  if (validWordsCache.has(normalizedWord)) return true;
-  if (invalidWordsCache.has(normalizedWord)) return false;
-
-  // Verificar se é um termo médico da nossa lista (sempre válido)
-  if (MEDICAL_WORDS.some(w => w.word.toLowerCase() === normalizedWord)) {
-    validWordsCache.add(normalizedWord);
-    return true;
-  }
-
+function loadBrazilianWords(): Set<string> {
+  if (brazilianWords) return brazilianWords;
+  
   try {
-    // Usar API do Dicionário Aberto
-    const response = await fetch(`https://api.dicionario-aberto.net/word/${encodeURIComponent(normalizedWord)}`, {
-      method: 'GET',
-      headers: { 'Accept': 'application/json' },
-      signal: AbortSignal.timeout(3000), // Timeout de 3 segundos
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      // Se retornou dados, a palavra existe
-      if (data && (Array.isArray(data) ? data.length > 0 : true)) {
-        validWordsCache.add(normalizedWord);
-        return true;
-      }
-    }
-
-    // Se não encontrou, marcar como inválida
-    invalidWordsCache.add(normalizedWord);
-    return false;
+    const filePath = path.join(__dirname, '../data/palavras-br.txt');
+    const content = fs.readFileSync(filePath, 'utf-8');
+    brazilianWords = new Set(content.split('\n').map(w => w.trim().toUpperCase()).filter(w => w.length > 0));
+    console.log(`[MedTermooo] Carregadas ${brazilianWords.size} palavras brasileiras`);
   } catch (error) {
-    // Em caso de erro de rede, aceitar a palavra para não bloquear o jogo
-    console.warn('[MedTermooo] Erro ao validar palavra, aceitando por padrão:', error);
+    console.error('[MedTermooo] Erro ao carregar palavras:', error);
+    brazilianWords = new Set();
+  }
+  
+  return brazilianWords;
+}
+
+// Validar palavra usando lista local de palavras brasileiras
+function isValidPortugueseWord(word: string): boolean {
+  const normalizedWord = word.toUpperCase().trim();
+  const words = loadBrazilianWords();
+  
+  // Verificar se é um termo médico da nossa lista (sempre válido)
+  if (MEDICAL_WORDS.some(w => w.word.toUpperCase() === normalizedWord)) {
     return true;
   }
+  
+  // Verificar na lista de palavras brasileiras
+  return words.has(normalizedWord);
 }
 
 export class MedTermoooService {
@@ -185,7 +175,7 @@ export class MedTermoooService {
     }
 
     // Validar se é uma palavra válida em português
-    const isValidWord = await isValidPortugueseWord(normalizedGuess);
+    const isValidWord = isValidPortugueseWord(normalizedGuess);
     if (!isValidWord) {
       throw new Error('Palavra não encontrada no dicionário');
     }
