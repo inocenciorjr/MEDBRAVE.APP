@@ -9,12 +9,19 @@ import {
 
 const GRID_SIZE = 12;
 
+// Helper para obter data de hoje no horário de Brasília
+const getTodayBrasilia = (): string => {
+  const now = new Date();
+  const brasiliaDate = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+  return brasiliaDate.toISOString().split('T')[0];
+};
+
 export class WordSearchService {
   constructor(private supabase: SupabaseClient) {}
 
   // Obter puzzle do dia
   async getTodayPuzzle(): Promise<IWordSearchPuzzle> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     const { data: puzzle, error } = await this.supabase
       .from('word_search_daily_puzzles')
@@ -31,7 +38,7 @@ export class WordSearchService {
 
   // Iniciar ou continuar jogo
   async startGame(userId: string): Promise<{ game: IWordSearchGame; puzzle: IWordSearchPuzzle }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Buscar puzzle do dia
     const puzzle = await this.getTodayPuzzle();
@@ -90,7 +97,7 @@ export class WordSearchService {
     endCol: number
   ): Promise<IFoundWordResult> {
     const normalizedWord = word.toUpperCase().trim();
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Buscar jogo atual
     const { data: game, error } = await this.supabase
@@ -199,8 +206,12 @@ export class WordSearchService {
       .eq('user_id', userId)
       .single();
 
-    const today = new Date().toISOString().split('T')[0];
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    const today = getTodayBrasilia();
+    // Calcular ontem no horário de Brasília
+    const now = new Date();
+    const brasiliaYesterday = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+    brasiliaYesterday.setDate(brasiliaYesterday.getDate() - 1);
+    const yesterday = brasiliaYesterday.toISOString().split('T')[0];
 
     if (stats) {
       const currentStreak = stats.last_played_date === yesterday
@@ -256,7 +267,7 @@ export class WordSearchService {
 
   // Obter ranking diário
   async getDailyRanking(): Promise<{ stats: any; ranking: any[] }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Buscar jogos completados do dia (sem limite para ordenar corretamente)
     const { data: games } = await this.supabase

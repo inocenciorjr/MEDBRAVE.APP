@@ -58,6 +58,7 @@ export function createMedTermoooRoutes(supabase: SupabaseClient): Router {
           id: game.id,
           wordLength: game.wordLength,
           guesses: game.guesses,
+          guessResults: game.guessResults, // Resultados de cada tentativa para mostrar cores
           isCompleted: game.isCompleted,
           isWon: game.isWon,
           attempts: game.attempts,

@@ -225,7 +225,10 @@ export class DailyGamesJob {
   }
 
   async generateToday(): Promise<void> {
-    await this.generateAllForDate(new Date());
+    // Usar horário de Brasília para determinar "hoje"
+    const now = new Date();
+    const brasiliaDate = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+    await this.generateAllForDate(brasiliaDate);
   }
 
   start(): void {

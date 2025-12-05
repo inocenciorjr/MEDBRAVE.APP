@@ -145,7 +145,7 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
 
         // Usar guessResults da API (já vem calculado do backend)
         const guessResults: GuessResult[][] = game.guessResults || [];
-        
+
         // Reconstruir letterStates a partir dos guessResults (para o teclado)
         let letterStates: Record<string, LetterState> = {};
         for (const result of guessResults) {

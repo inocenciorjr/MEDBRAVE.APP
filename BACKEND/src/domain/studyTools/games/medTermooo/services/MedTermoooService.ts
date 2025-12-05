@@ -4,6 +4,13 @@ import { IMedTermoooGame, IMedTermoooStats, IGuessResult, LetterResult } from '.
 
 const MAX_ATTEMPTS = 6;
 
+// Helper para obter data de hoje no horário de Brasília
+const getTodayBrasilia = (): string => {
+  const now = new Date();
+  const brasiliaDate = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+  return brasiliaDate.toISOString().split('T')[0];
+};
+
 // Cache de palavras válidas para evitar requisições repetidas
 const validWordsCache = new Set<string>();
 const invalidWordsCache = new Set<string>();
@@ -54,7 +61,7 @@ export class MedTermoooService {
 
   // Obter palavra do dia do banco de dados
   async getTodayWord(): Promise<MedicalWord & { date: string; length: number }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     const { data: dailyWord, error } = await this.supabase
       .from('med_termooo_daily_words')
@@ -77,7 +84,7 @@ export class MedTermoooService {
 
   // Verificar se usuário já jogou hoje
   async canPlayToday(userId: string): Promise<{ canPlay: boolean; game?: IMedTermoooGame }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     const { data: existingGame } = await this.supabase
       .from('med_termooo_games')
@@ -98,7 +105,7 @@ export class MedTermoooService {
 
   // Iniciar ou continuar jogo
   async startGame(userId: string): Promise<IMedTermoooGame> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Verificar se já existe jogo hoje
     const { data: existingGame, error: selectError } = await this.supabase
@@ -154,7 +161,7 @@ export class MedTermoooService {
     const normalizedGuess = guess.toUpperCase().trim();
 
     // Buscar jogo atual
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
     const { data: game, error } = await this.supabase
       .from('med_termooo_games')
       .select('*')
@@ -266,8 +273,12 @@ export class MedTermoooService {
       .eq('user_id', userId)
       .single();
 
-    const today = new Date().toISOString().split('T')[0];
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    const today = getTodayBrasilia();
+    // Calcular ontem no horário de Brasília
+    const now = new Date();
+    const brasiliaYesterday = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+    brasiliaYesterday.setDate(brasiliaYesterday.getDate() - 1);
+    const yesterday = brasiliaYesterday.toISOString().split('T')[0];
 
     if (stats) {
       const currentStreak = stats.last_played_date === yesterday
@@ -338,7 +349,7 @@ export class MedTermoooService {
     bestTime: number | null;
     averageAttempts: number;
   }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Buscar todos os jogos do dia
     const { data: allGames, error: allError } = await this.supabase
@@ -379,7 +390,7 @@ export class MedTermoooService {
 
   // Obter ranking diário (top 10 vencedores do dia)
   async getDailyRanking(): Promise<{ stats: any; ranking: any[] }> {
-    const today = new Date().toISOString().split('T')[0];
+    const today = getTodayBrasilia();
 
     // Buscar estatísticas
     const stats = await this.getDailyStats();
