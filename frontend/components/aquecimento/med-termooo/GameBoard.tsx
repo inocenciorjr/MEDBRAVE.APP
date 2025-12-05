@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { LetterGrid } from './LetterGrid';
 import { Keyboard } from './Keyboard';
-import { GameState, LetterState, DailyWord } from './types';
+import { GameState, LetterState, DailyWord, GuessResult } from './types';
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 import confetti from 'canvas-confetti';
 
@@ -143,18 +143,20 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
         const now = Date.now();
         const savedStartTime = game.createdAt ? new Date(game.createdAt).getTime() : now;
 
-        // Reconstruir letterStates do cache local se existir
-        const cached = localStorage.getItem(storageKey);
+        // Usar guessResults da API (já vem calculado do backend)
+        const guessResults: GuessResult[][] = game.guessResults || [];
+        
+        // Reconstruir letterStates a partir dos guessResults (para o teclado)
         let letterStates: Record<string, LetterState> = {};
-        if (cached) {
-          const parsed = JSON.parse(cached);
-          letterStates = parsed.letterStates || {};
+        for (const result of guessResults) {
+          letterStates = updateLetterStatesFromResult('', result, letterStates);
         }
 
         const newState: GameState = {
-          targetWord: game.word || game.targetWord || '',
+          targetWord: game.word || '',
           wordLength: game.wordLength,
           guesses: game.guesses || [],
+          guessResults,
           currentGuess: '',
           gameStatus,
           letterStates,
@@ -261,6 +263,7 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
 
         const result = data.data;
         const newGuesses = [...gameState.guesses, guess];
+        const newGuessResults = [...gameState.guessResults, result.result as GuessResult[]];
         const newLetterStates = updateLetterStatesFromResult(guess, result.result, gameState.letterStates);
 
         const newStatus: 'playing' | 'won' | 'lost' = result.isCorrect
@@ -278,6 +281,7 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
           ...gameState,
           targetWord,
           guesses: newGuesses,
+          guessResults: newGuessResults,
           currentGuess: '',
           gameStatus: newStatus,
           letterStates: newLetterStates,
@@ -427,6 +431,7 @@ export function GameBoard({ showBadges = true, onGameData }: GameBoardProps) {
         {/* Grid de letras */}
         <LetterGrid
           guesses={gameState.guesses}
+          guessResults={gameState.guessResults}
           currentGuess={gameState.currentGuess}
           targetWord={gameState.targetWord}
           wordLength={gameState.wordLength}

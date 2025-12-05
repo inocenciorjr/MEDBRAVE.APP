@@ -432,12 +432,21 @@ export class MedTermoooService {
   }
 
   private mapGameFromDb(data: any): IMedTermoooGame {
+    const targetWord = data.word.toUpperCase();
+    const guesses = data.guesses || [];
+    
+    // Calcular os resultados de cada tentativa para o frontend poder mostrar as cores
+    const guessResults = guesses.map((guess: string) => 
+      this.evaluateGuess(guess.toUpperCase(), targetWord)
+    );
+
     return {
       id: data.id,
       userId: data.user_id,
-      word: data.word,
+      word: data.is_completed ? data.word : undefined, // Só retorna a palavra se o jogo terminou
       wordLength: data.word_length,
-      guesses: data.guesses || [],
+      guesses,
+      guessResults, // Resultados de cada tentativa
       isCompleted: data.is_completed,
       isWon: data.is_won,
       attempts: data.attempts,

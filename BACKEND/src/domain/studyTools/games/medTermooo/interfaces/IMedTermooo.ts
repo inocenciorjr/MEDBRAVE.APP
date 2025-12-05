@@ -1,9 +1,10 @@
 export interface IMedTermoooGame {
   id: string;
   userId: string;
-  word: string;
+  word?: string; // Só retornado quando o jogo termina
   wordLength: number;
   guesses: string[];
+  guessResults: LetterResult[][]; // Resultados de cada tentativa
   isCompleted: boolean;
   isWon: boolean;
   attempts: number;

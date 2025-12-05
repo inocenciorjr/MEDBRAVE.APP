@@ -1,47 +1,16 @@
 'use client';
 
-import { LetterTile, LetterState, MAX_ATTEMPTS } from './types';
+import { LetterTile, LetterState, GuessResult, MAX_ATTEMPTS } from './types';
 
 interface LetterGridProps {
   guesses: string[];
+  guessResults: GuessResult[][]; // Resultados da API para cada tentativa
   currentGuess: string;
   targetWord: string;
   wordLength: number;
   gameStatus: 'playing' | 'won' | 'lost';
   shakeRow?: number;
 }
-
-const getLetterState = (letter: string, index: number, guess: string, targetWord: string): LetterState => {
-  if (!letter) return 'empty';
-  if (!targetWord) return 'absent'; // Se não tiver targetWord, não pode calcular
-  
-  const target = targetWord.toUpperCase();
-  const guessUpper = guess.toUpperCase();
-  const letterUpper = letter.toUpperCase();
-  
-  if (target[index] === letterUpper) {
-    return 'correct';
-  }
-  
-  const targetLetterCount = target.split('').filter(l => l === letterUpper).length;
-  
-  let usedCount = 0;
-  for (let i = 0; i < guessUpper.length; i++) {
-    if (guessUpper[i] === letterUpper) {
-      if (target[i] === letterUpper) {
-        usedCount++;
-      } else if (i < index && target.includes(letterUpper)) {
-        usedCount++;
-      }
-    }
-  }
-  
-  if (target.includes(letterUpper) && usedCount < targetLetterCount) {
-    return 'present';
-  }
-  
-  return 'absent';
-};
 
 const getTileSize = (wordLength: number) => {
   if (wordLength >= 8) return 'w-9 h-9 sm:w-11 sm:h-11 text-base sm:text-xl';
@@ -68,18 +37,23 @@ const getTileStyle = (state: LetterState, wordLength: number) => {
   }
 };
 
-export function LetterGrid({ guesses, currentGuess, targetWord, wordLength, gameStatus, shakeRow }: LetterGridProps) {
+export function LetterGrid({ guesses, guessResults, currentGuess, wordLength, gameStatus, shakeRow }: LetterGridProps) {
   const rows: LetterTile[][] = [];
   
   for (let i = 0; i < MAX_ATTEMPTS; i++) {
     const row: LetterTile[] = [];
     
     if (i < guesses.length) {
+      // Usa os resultados da API se disponíveis
+      const guessResult = guessResults[i];
       const guess = guesses[i];
+      
       for (let j = 0; j < wordLength; j++) {
+        // Se temos o resultado da API, usa ele; senão mostra como absent
+        const state: LetterState = guessResult?.[j]?.state || 'absent';
         row.push({
           letter: guess[j] || '',
-          state: getLetterState(guess[j], j, guess, targetWord),
+          state,
         });
       }
     } else if (i === guesses.length && gameStatus === 'playing') {

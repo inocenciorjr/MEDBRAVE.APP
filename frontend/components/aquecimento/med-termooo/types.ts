@@ -5,10 +5,16 @@ export interface LetterTile {
   state: LetterState;
 }
 
+export interface GuessResult {
+  letter: string;
+  state: 'correct' | 'present' | 'absent';
+}
+
 export interface GameState {
   targetWord: string;
   wordLength: number;
   guesses: string[];
+  guessResults: GuessResult[][]; // Resultados de cada tentativa
   currentGuess: string;
   gameStatus: 'playing' | 'won' | 'lost';
   letterStates: Record<string, LetterState>;
