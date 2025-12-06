@@ -118,7 +118,6 @@ export function usePresenceSocket(options: UsePresenceSocketOptions = {}) {
 
       socketRef.current = socket;
     } catch (err: any) {
-      console.error('[usePresenceSocket] Erro ao conectar:', err);
       setError(err.message);
     }
   }, [onPresenceUpdate, onPresenceLeave, onPresenceStats]);

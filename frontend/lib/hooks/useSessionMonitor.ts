@@ -26,17 +26,12 @@ export function useSessionMonitor(userId: string | undefined) {
           table: 'sessions',
           filter: `user_id=eq.${userId}`,
         },
-        async (payload) => {
-          console.log('🚨 [SessionMonitor] Sessão deletada detectada:', payload);
-
+        async () => {
           // Verificar se a sessão atual ainda existe
           const { data: { session } } = await supabase.auth.getSession();
           
           if (!session) {
-            // Sessão atual foi revogada!
-            console.log('⚠️ [SessionMonitor] Sua sessão foi revogada');
-            
-            // Mostrar modal
+            // Sessão atual foi revogada - mostrar modal
             setShowRevokedModal(true);
           }
         }
@@ -45,9 +40,7 @@ export function useSessionMonitor(userId: string | undefined) {
 
     channelRef.current = channel;
 
-    // Cleanup ao desmontar
     return () => {
-      console.log('🔕 [SessionMonitor] Parando monitoramento');
       if (channelRef.current) {
         supabase.removeChannel(channelRef.current);
         channelRef.current = null;

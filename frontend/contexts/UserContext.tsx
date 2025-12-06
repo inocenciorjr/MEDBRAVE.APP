@@ -147,7 +147,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
       });
 
       if (!response.ok) {
-        console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.status, response.statusText);
         // Se der 401, talvez o token expirou. O AuthContext deve lidar com isso, mas aqui limpamos.
         if (response.status === 401) {
            setUser(null);
@@ -159,7 +158,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
       const userData = await response.json();
       
       if (!userData) {
-        console.error('❌ [UserContext] Usuário não encontrado no banco');
         setUser(null);
         setLoading(false);
         return;
@@ -187,7 +185,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
       }
 
     } catch (error) {
-      console.error('❌ [UserContext] Erro ao buscar usuário:', error);
+      // Silenciar erros de conexão (backend offline ou rede instável)
       setUser(null);
       setLoading(false);
     }

@@ -625,14 +625,13 @@ class SupabaseAuthService {
           role: userData.role || 'student'
         };
       } else {
-        console.warn('Falha ao obter role do backend, usando role padrão');
         return {
           ...this.mapSupabaseUser(supabaseUser),
           role: 'student'
         };
       }
-    } catch (error) {
-      console.error('Erro ao obter role do usuário:', error);
+    } catch {
+      // Silenciar erros de conexão - usar role padrão
       return {
         ...this.mapSupabaseUser(supabaseUser),
         role: 'student'
