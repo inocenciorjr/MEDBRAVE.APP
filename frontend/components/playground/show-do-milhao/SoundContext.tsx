@@ -82,20 +82,21 @@ export function SoundProvider({ children }: { children: ReactNode }) {
   const pendingPlayRef = useRef<{ soundName: string; loop: boolean; onEnded?: () => void } | null>(null);
 
   // Carregar preferência de mute do localStorage
-  // Em mobile, começar mutado por padrão (a menos que usuário já tenha ativado som conscientemente)
+  // Em mobile, SEMPRE começar mutado para evitar problemas de autoplay
   useEffect(() => {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
-    const mobileSoundEnabled = localStorage.getItem(MOBILE_SOUND_ENABLED_KEY) === 'true';
     
     let muted: boolean;
     
     if (isMobile) {
-      // Em mobile: só ativa som se usuário explicitamente ativou antes
-      muted = !mobileSoundEnabled;
+      // Em mobile: SEMPRE começar mutado - usuário precisa ativar manualmente
+      muted = true;
+      console.log('📱 Mobile detectado - som iniciando mutado');
     } else {
       // Desktop: usa preferência salva ou som ativado por padrão
       const stored = localStorage.getItem(MUTE_STORAGE_KEY);
       muted = stored === 'true';
+      console.log('🖥️ Desktop detectado - som:', muted ? 'mutado' : 'ativado');
     }
     
     setIsMuted(muted);
@@ -254,13 +255,7 @@ export function SoundProvider({ children }: { children: ReactNode }) {
         }
       }).catch(err => {
         console.warn('❌ Erro ao tocar áudio:', err);
-        // Se falhar por política de autoplay, não chamar onEnded para permitir retry
-        if (err.name === 'NotAllowedError') {
-          console.log('🔒 Áudio bloqueado pelo navegador - aguardando interação do usuário');
-          // Não chamar onEnded aqui para não travar o jogo
-          return;
-        }
-        // Se falhar por outro motivo, chamar onEnded para não travar o jogo
+        // Sempre chamar onEnded para não travar o jogo, independente do erro
         if (onEnded) setTimeout(onEnded, 100);
       });
     };

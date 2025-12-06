@@ -103,39 +103,7 @@ function ShowDoMilhaoContent() {
           : 'linear-gradient(180deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%)',
       }}
     >
-      {/* Botão flutuante de som - mais chamativo em mobile quando mutado */}
-      <AnimatePresence>
-        {isMuted && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleMute();
-              // Tocar som após ativar
-              setTimeout(() => playGameStart(true), 100);
-            }}
-            className="fixed bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-5 py-3 rounded-full text-white font-bold shadow-lg md:hidden"
-            style={{
-              background: 'linear-gradient(180deg, #fbbf24 0%, #d97706 100%)',
-              border: '3px solid #fef3c7',
-              boxShadow: '0 0 30px rgba(251,191,36,0.6), 0 4px 20px rgba(0,0,0,0.3)',
-            }}
-          >
-            <motion.span 
-              className="material-symbols-outlined text-2xl"
-              animate={{ scale: [1, 1.3, 1] }}
-              transition={{ duration: 0.8, repeat: Infinity }}
-            >
-              volume_up
-            </motion.span>
-            <span className="text-amber-900">Ativar Som</span>
-          </motion.button>
-        )}
-      </AnimatePresence>
+
       
       {/* ===== CENÁRIO DE ESTÚDIO DE TV ===== */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

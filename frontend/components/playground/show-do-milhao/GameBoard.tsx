@@ -1436,15 +1436,31 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
             </motion.div>
 
             <div className="flex items-center gap-1.5 sm:gap-2">
-              {/* Botão de som - RESPONSIVO */}
+              {/* Botão de som - RESPONSIVO com indicador pulsante em mobile quando mutado */}
               <button
                 onClick={sounds.toggleMute}
-                className={`p-1.5 sm:p-2 rounded-lg transition-colors border ${isFatality ? 'hover:bg-red-500/20 border-red-500/30' : 'hover:bg-purple-500/20 border-purple-500/30'}`}
+                className={`relative p-1.5 sm:p-2 rounded-lg transition-colors border ${isFatality ? 'hover:bg-red-500/20 border-red-500/30' : 'hover:bg-purple-500/20 border-purple-500/30'}`}
                 title={sounds.isMuted ? 'Ativar som' : 'Desativar som'}
               >
                 <span className={`material-symbols-outlined text-xl sm:text-2xl ${isFatality ? 'text-red-300' : 'text-purple-300'}`}>
                   {sounds.isMuted ? 'volume_off' : 'volume_up'}
                 </span>
+                {/* Indicador pulsante quando mutado - apenas mobile */}
+                {sounds.isMuted && (
+                  <motion.span
+                    className="absolute -top-1 -right-1 w-3 h-3 rounded-full md:hidden"
+                    style={{ background: isFatality ? '#ef4444' : '#f59e0b' }}
+                    animate={{ 
+                      scale: [1, 1.3, 1],
+                      opacity: [1, 0.7, 1]
+                    }}
+                    transition={{ 
+                      duration: 1.5, 
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                )}
               </button>
               
               {/* Esconder botão Parar no modo Fatality - RESPONSIVO */}
@@ -2011,45 +2027,7 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
         showNextButton={!isMedbraveMode}
       />
 
-      {/* Botão flutuante de som - mais chamativo em mobile quando mutado */}
-      <AnimatePresence>
-        {sounds.isMuted && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              sounds.toggleMute();
-              // Tocar som da pergunta atual após ativar
-              if (currentQuestion) {
-                const currentPrize = PRIZE_LEVELS[gameState.currentPrizeLevel]?.prize || 1000;
-                setTimeout(() => sounds.playQuestionPrize(currentPrize), 100);
-              }
-            }}
-            className="fixed bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-5 py-3 rounded-full text-white font-bold shadow-lg md:hidden"
-            style={{
-              background: isFatality 
-                ? 'linear-gradient(180deg, #ef4444 0%, #b91c1c 100%)'
-                : 'linear-gradient(180deg, #fbbf24 0%, #d97706 100%)',
-              border: isFatality ? '3px solid #fca5a5' : '3px solid #fef3c7',
-              boxShadow: isFatality 
-                ? '0 0 30px rgba(239,68,68,0.6), 0 4px 20px rgba(0,0,0,0.3)'
-                : '0 0 30px rgba(251,191,36,0.6), 0 4px 20px rgba(0,0,0,0.3)',
-            }}
-          >
-            <motion.span 
-              className="material-symbols-outlined text-2xl"
-              animate={{ scale: [1, 1.3, 1] }}
-              transition={{ duration: 0.8, repeat: Infinity }}
-            >
-              volume_up
-            </motion.span>
-            <span className={isFatality ? 'text-white' : 'text-amber-900'}>Ativar Som</span>
-          </motion.button>
-        )}
-      </AnimatePresence>
+
     </div>
   );
 }
