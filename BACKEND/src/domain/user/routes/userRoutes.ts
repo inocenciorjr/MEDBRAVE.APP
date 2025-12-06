@@ -166,12 +166,7 @@ export function createUserRoutes(): Router {
   // Rota para obter todos os usuários (apenas para admin)
   router.get("/", async (req, res) => {
     try {
-      console.log("👤 User objeto completo:", req.user);
-      console.log("👤 User role:", req.user?.user_role);
-      console.log("👤 User id:", req.user?.id);
-
       if ((req.user?.user_role || '').toUpperCase() !== "ADMIN") {
-        console.log("❌ Acesso negado - usuário não é admin");
         return res.status(403).json({ error: "Forbidden" });
       }
 
@@ -186,27 +181,15 @@ export function createUserRoutes(): Router {
         return res.status(500).json({ error: "Erro ao buscar usuários" });
       }
 
-      console.log(`📊 Total de usuários encontrados: ${users?.length || 0}`);
-
-      // Para manter compatibilidade, vamos obter a role real do raw_user_meta_data
-      // quando possível, mas usar a role da tabela users como fallback
       const formattedUsers =
         users
           ?.filter((userData) => {
-            // Filtrar usuários deletados
             if (userData.deleted_at) {
-              console.log(
-                `⚠️ Usuário ${userData.id} está deletado, pulando...`,
-              );
               return false;
             }
             return true;
           })
           .map((userData) => {
-            console.log(
-              `📄 Processando usuário: ${userData.id}`,
-              userData.email,
-            );
 
             return {
               id: userData.id,

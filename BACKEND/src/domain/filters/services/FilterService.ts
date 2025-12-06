@@ -30,6 +30,13 @@ export interface SearchQuestionsParams {
   institutions?: string[];
   page?: number;
   limit?: number;
+  // Filtro de questões não respondidas
+  unansweredFilter?: 'all' | 'unanswered_game' | 'unanswered_system';
+  userId?: string;
+  gameType?: string; // Ex: 'show_do_milhao', 'banco_questoes', etc.
+  // Filtros opcionais para excluir questões
+  excludeOutdated?: boolean; // Excluir questões desatualizadas
+  excludeAnnulled?: boolean; // Excluir questões anuladas
 }
 
 export class FilterService {
@@ -319,11 +326,85 @@ export class FilterService {
   }
 
   /**
+   * Busca IDs de questões já respondidas pelo usuário
+   * @param userId - ID do usuário
+   * @param gameType - Tipo do jogo (opcional, para filtrar por jogo específico)
+   * @returns Set com IDs das questões respondidas
+   */
+  async getAnsweredQuestionIds(userId: string, gameType?: string): Promise<Set<string>> {
+    try {
+      const answeredIds = new Set<string>();
+
+      if (gameType) {
+        // Buscar questões respondidas em um jogo específico
+        if (gameType === 'show_do_milhao') {
+          // Para Show do Milhão, buscar apenas questões que foram REALMENTE respondidas (no array answers)
+          // Não usar question_ids porque inclui questões que o usuário não chegou a ver
+          const { data, error } = await supabase
+            .from('show_do_milhao_games')
+            .select('answers')
+            .eq('user_id', userId);
+
+          if (error) {
+            logger.error('[FilterService] Erro ao buscar questões do Show do Milhão:', error);
+          } else {
+            (data || []).forEach((game: any) => {
+              const answers = game.answers || [];
+              answers.forEach((answer: any) => {
+                if (answer.questionId) answeredIds.add(answer.questionId);
+              });
+            });
+          }
+        }
+        // Adicionar outros jogos aqui conforme necessário
+      } else {
+        // Buscar TODAS as questões respondidas no sistema
+        // 1. Buscar da tabela question_responses (simulados, banco de questões, etc.)
+        const { data: responses, error: responsesError } = await supabase
+          .from('question_responses')
+          .select('question_id')
+          .eq('user_id', userId);
+
+        if (responsesError) {
+          logger.error('[FilterService] Erro ao buscar question_responses:', responsesError);
+        } else {
+          (responses || []).forEach((r: any) => {
+            if (r.question_id) answeredIds.add(r.question_id);
+          });
+        }
+
+        // 2. Também buscar do Show do Milhão (que não salva em question_responses)
+        // Usar apenas questões REALMENTE respondidas (no array answers), não question_ids
+        const { data: showGames, error: showError } = await supabase
+          .from('show_do_milhao_games')
+          .select('answers')
+          .eq('user_id', userId);
+
+        if (showError) {
+          logger.error('[FilterService] Erro ao buscar show_do_milhao_games:', showError);
+        } else {
+          (showGames || []).forEach((game: any) => {
+            const answers = game.answers || [];
+            answers.forEach((answer: any) => {
+              if (answer.questionId) answeredIds.add(answer.questionId);
+            });
+          });
+        }
+      }
+      return answeredIds;
+    } catch (error) {
+      logger.error('[FilterService] Erro ao buscar questões respondidas:', error);
+      return new Set<string>();
+    }
+  }
+
+  /**
    * Conta questões baseado nos filtros selecionados
    * Lógica:
    * - Especialidades: OR entre si, AND com outros grupos
    * - Anos: OR entre si, AND com outros grupos
    * - Tipos de prova + Instituições: OR entre TODOS (soma)
+   * - unansweredFilter: filtra questões não respondidas
    * 
    * Exemplo 1: Revalida + USP = questões do Revalida OU da USP
    * Exemplo 2: Cardiologia + 2025 + Revalida + USP = Cardiologia AND 2025 AND (Revalida OR USP)
@@ -335,13 +416,14 @@ export class FilterService {
         subFilterIds = [],
         years = [],
         institutions = [],
+        unansweredFilter = 'all',
+        userId,
+        gameType,
       } = params;
 
 
 
-      // Se não tem nenhum filtro, retorna 0
       if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
-        logger.info('[FilterService] Nenhum filtro selecionado, retornando 0');
         return 0;
       }
 
@@ -362,10 +444,21 @@ export class FilterService {
 
 
 
+      // Buscar IDs de questões respondidas se necessário
+      let answeredQuestionIds = new Set<string>();
+      if (unansweredFilter !== 'all' && userId) {
+        if (unansweredFilter === 'unanswered_game') {
+          // Buscar questões respondidas APENAS no jogo específico
+          answeredQuestionIds = await this.getAnsweredQuestionIds(userId, gameType);
+        } else if (unansweredFilter === 'unanswered_system') {
+          answeredQuestionIds = await this.getAnsweredQuestionIds(userId);
+        }
+      }
+
       // Buscar todas as questões publicadas e filtrar no código
       const { data: questions, error: fetchError } = await supabase
         .from('questions')
-        .select('filter_ids, sub_filter_ids')
+        .select('id, filter_ids, sub_filter_ids, is_outdated, is_annulled')
         .eq('status', 'published');
 
       if (fetchError) {
@@ -375,6 +468,21 @@ export class FilterService {
       const filtered = (questions || []).filter((q: any) => {
         const qFilterIds = q.filter_ids || [];
         const qSubFilterIds = q.sub_filter_ids || [];
+
+        // Filtro de questões desatualizadas (opcional)
+        if (params.excludeOutdated && q.is_outdated === true) {
+          return false;
+        }
+
+        // Filtro de questões anuladas (opcional)
+        if (params.excludeAnnulled && q.is_annulled === true) {
+          return false;
+        }
+
+        // Filtro de questões não respondidas
+        if (unansweredFilter !== 'all' && answeredQuestionIds.size > 0) {
+          if (answeredQuestionIds.has(q.id)) return false;
+        }
 
         // Grupo 1: Especialidades (filterIds que não são tipos de prova) - OR dentro do grupo
         if (selectedSpecialties.length > 0) {
@@ -437,16 +545,10 @@ export class FilterService {
         institutions = [],
         page = 1,
         limit = 20,
+        unansweredFilter = 'all',
+        userId,
+        gameType,
       } = params;
-
-      logger.info('[FilterService] searchQuestions chamado com:', {
-        filterIds,
-        subFilterIds,
-        years,
-        institutions,
-        page,
-        limit,
-      });
 
       // Se não tem nenhum filtro, retorna vazio
       if (filterIds.length === 0 && subFilterIds.length === 0 && years.length === 0 && institutions.length === 0) {
@@ -469,6 +571,16 @@ export class FilterService {
         return `Ano da Prova_${year}`;
       });
 
+      // Buscar IDs de questões respondidas se necessário
+      let answeredQuestionIds = new Set<string>();
+      if (unansweredFilter !== 'all' && userId) {
+        if (unansweredFilter === 'unanswered_game') {
+          answeredQuestionIds = await this.getAnsweredQuestionIds(userId, gameType);
+        } else if (unansweredFilter === 'unanswered_system') {
+          answeredQuestionIds = await this.getAnsweredQuestionIds(userId);
+        }
+      }
+
       // Buscar todas as questões publicadas
       const { data: allQuestions, error } = await supabase
         .from('questions')
@@ -486,18 +598,25 @@ export class FilterService {
       const selectedExamTypes = filterIds.filter(id => examTypes.includes(id));
       const selectedSpecialties = filterIds.filter(id => !examTypes.includes(id));
 
-      logger.info('[FilterService] Filtros separados:', {
-        selectedExamTypes,
-        selectedSpecialties,
-        subFilterIds,
-        yearIds,
-        institutions,
-      });
-
       // Filtrar no código com lógica AND entre grupos, OR dentro de cada grupo
       const filtered = (allQuestions || []).filter((q: any) => {
         const qFilterIds = q.filter_ids || [];
         const qSubFilterIds = q.sub_filter_ids || [];
+
+        // Filtro de questões desatualizadas (opcional)
+        if (params.excludeOutdated && q.is_outdated === true) {
+          return false;
+        }
+
+        // Filtro de questões anuladas (opcional)
+        if (params.excludeAnnulled && q.is_annulled === true) {
+          return false;
+        }
+
+        // Filtro de questões não respondidas
+        if (unansweredFilter !== 'all' && answeredQuestionIds.size > 0) {
+          if (answeredQuestionIds.has(q.id)) return false;
+        }
 
         // Grupo 1: Especialidades (filterIds que não são tipos de prova) - OR dentro do grupo
         if (selectedSpecialties.length > 0) {
@@ -530,16 +649,9 @@ export class FilterService {
         return true;
       });
 
-      // Paginar
       const total = filtered.length;
       const offset = (page - 1) * limit;
       const paginatedQuestions = filtered.slice(offset, offset + limit);
-
-      logger.info('[FilterService] searchQuestions resultado:', {
-        totalQuestionsInDB: allQuestions?.length || 0,
-        filteredCount: total,
-        returnedCount: paginatedQuestions.length,
-      });
 
       return {
         questions: paginatedQuestions,

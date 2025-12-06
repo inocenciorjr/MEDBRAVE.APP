@@ -22,6 +22,10 @@ interface CreateListContextType {
   calculateTotalQuestions: () => number;
   clearFilters: () => void;
   resetState: () => void;
+  // Filtros opcionais
+  toggleExcludeOutdated: () => void;
+  toggleExcludeAnnulled: () => void;
+  toggleOnlyUnanswered: () => void;
 }
 
 const CreateListContext = createContext<CreateListContextType | undefined>(undefined);
@@ -36,6 +40,9 @@ const initialState: CreateListState = {
   selectedExamTypes: [],
   totalQuestions: 0,
   questionLimit: 0,
+  excludeOutdated: false,
+  excludeAnnulled: false,
+  onlyUnanswered: false,
 };
 
 export function CreateListProvider({ children }: { children: ReactNode }) {
@@ -171,6 +178,18 @@ export function CreateListProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const toggleExcludeOutdated = () => {
+    setState((prev) => ({ ...prev, excludeOutdated: !prev.excludeOutdated }));
+  };
+
+  const toggleExcludeAnnulled = () => {
+    setState((prev) => ({ ...prev, excludeAnnulled: !prev.excludeAnnulled }));
+  };
+
+  const toggleOnlyUnanswered = () => {
+    setState((prev) => ({ ...prev, onlyUnanswered: !prev.onlyUnanswered }));
+  };
+
   return (
     <CreateListContext.Provider
       value={{
@@ -192,6 +211,9 @@ export function CreateListProvider({ children }: { children: ReactNode }) {
         calculateTotalQuestions,
         clearFilters,
         resetState,
+        toggleExcludeOutdated,
+        toggleExcludeAnnulled,
+        toggleOnlyUnanswered,
       }}
     >
       {children}

@@ -385,6 +385,16 @@ export const createRouter = async (supabase: SupabaseClient): Promise<express.Ro
     console.error('Erro ao carregar rotas do Caça-Palavras:', error);
   }
 
+  // SHOW DO MILHÃO Game Routes
+  try {
+    const { createShowDoMilhaoRoutes } = await import('./domain/studyTools/games/showDoMilhao/controllers/ShowDoMilhaoController');
+    const showDoMilhaoRoutes = createShowDoMilhaoRoutes(supabase);
+    router.use('/games/show-do-milhao', authMiddleware as any, showDoMilhaoRoutes);
+    console.log('✅ Rotas do Show do Milhão registradas em /games/show-do-milhao');
+  } catch (error) {
+    console.error('Erro ao carregar rotas do Show do Milhão:', error);
+  }
+
   // JOB CENTRALIZADO - Gera conteúdo diário de todos os jogos à meia-noite
   try {
     const { DailyGamesJob } = await import('./domain/studyTools/games/jobs/DailyGamesJob');

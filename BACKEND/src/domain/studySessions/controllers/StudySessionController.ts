@@ -17,29 +17,19 @@ export class StudySessionController {
 
   startSession = async (req: Request, res: Response) => {
     try {
-      logger.info('[StudySessionController] startSession chamado');
-      logger.info('[StudySessionController] Body:', req.body);
-
       const userId = req.user?.id;
       if (!userId) {
-        logger.warn('[StudySessionController] Usuário não autenticado');
         return res.status(401).json({ success: false, error: 'Não autenticado' });
       }
-
-      logger.info('[StudySessionController] UserId:', userId);
 
       // Aceitar tanto activity_type (snake_case) quanto activityType (camelCase)
       const activityType = req.body.activityType || req.body.activity_type;
       if (!activityType) {
-        logger.warn('[StudySessionController] activityType não fornecido');
         return res.status(400).json({ success: false, error: 'activityType é obrigatório' });
       }
 
-      logger.info('[StudySessionController] ActivityType:', activityType);
-
       const session = await this.studySessionService.startSession(userId, { activityType });
 
-      logger.info('[StudySessionController] Sessão criada:', session);
       return res.json({ success: true, data: session });
     } catch (error: any) {
       logger.error('[StudySessionController] Erro ao iniciar sessão:', error);
@@ -58,7 +48,6 @@ export class StudySessionController {
       const sessionId = req.params.id || req.params.sessionId;
 
       if (!sessionId) {
-        logger.warn('[StudySessionController] sessionId não fornecido');
         return res.status(400).json({ success: false, error: 'sessionId é obrigatório' });
       }
 
@@ -84,7 +73,6 @@ export class StudySessionController {
       const sessionId = req.params.id || req.params.sessionId;
 
       if (!sessionId) {
-        logger.warn('[StudySessionController] sessionId não fornecido');
         return res.status(400).json({ success: false, error: 'sessionId é obrigatório' });
       }
 

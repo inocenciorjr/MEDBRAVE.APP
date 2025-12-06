@@ -42,6 +42,12 @@ export interface SearchQuestionsParams {
   institutions?: string[];
   page?: number;
   limit?: number;
+  // Filtro de questões não respondidas
+  unansweredFilter?: 'all' | 'unanswered_game' | 'unanswered_system';
+  gameType?: string; // Ex: 'show_do_milhao', 'banco_questoes', etc.
+  // Filtros opcionais
+  excludeOutdated?: boolean; // Excluir questões desatualizadas
+  excludeAnnulled?: boolean; // Excluir questões anuladas
 }
 
 export interface SearchQuestionsResponse {

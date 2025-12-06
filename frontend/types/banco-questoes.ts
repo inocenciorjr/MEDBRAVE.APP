@@ -64,4 +64,8 @@ export interface CreateListState {
   selectedExamTypes?: string[];
   totalQuestions: number;
   questionLimit: number;
+  // Filtros opcionais
+  excludeOutdated?: boolean; // Excluir questões desatualizadas
+  excludeAnnulled?: boolean; // Excluir questões anuladas
+  onlyUnanswered?: boolean; // Apenas questões não respondidas
 }

@@ -4,12 +4,12 @@ import { Suspense } from 'react';
 import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import MainLayout from '@/components/layout/MainLayout';
 import SimuladosGrid from '@/components/dashboard/SimuladosGrid';
-import ActivityChart from '@/components/dashboard/ActivityChart';
-import TasksChart from '@/components/dashboard/TasksChart';
-import NextDelivery from '@/components/dashboard/NextDelivery';
+import StudyTimeChartCompact from '@/components/dashboard/StudyTimeChartCompact';
+import QuestionsGoalCard from '@/components/dashboard/QuestionsGoalCard';
+import PlaygroundSection from '@/components/dashboard/PlaygroundSection';
 import RightSidebar from '@/components/dashboard/RightSidebar';
 import { DashboardSkeleton } from '@/components/skeletons';
-import { Simulado, ActivityData, TaskCategory, Delivery } from '@/types';
+import { Simulado } from '@/types';
 
 export default function Home() {
   // Mock data
@@ -73,28 +73,11 @@ export default function Home() {
     },
   ];
 
-  const activityData: ActivityData[] = [
-    { day: 'Dom', hours: 2, minutes: 30, date: '3 Julho 2022' },
-    { day: 'Seg', hours: 4, minutes: 0, date: '4 Julho 2022' },
-    { day: 'Ter', hours: 2, minutes: 0, date: '5 Julho 2022' },
-    { day: 'Qua', hours: 5, minutes: 0, date: '6 Julho 2022' },
-    { day: 'Qui', hours: 7, minutes: 14, date: '6 Julho 2022' },
-    { day: 'Sex', hours: 4, minutes: 30, date: '8 Julho 2022' },
-    { day: 'Sáb', hours: 3, minutes: 0, date: '9 Julho 2022' },
-  ];
 
-  const taskCategories: TaskCategory[] = [
-    { name: 'Dermatologia', count: 70, color: 'text-primary' },
-    { name: 'Cardiologia', count: 20, color: 'text-fuchsia-500' },
-    { name: 'Cirurgia', count: 10, color: 'text-indigo-500' },
-  ];
 
-  const nextDelivery: Delivery = {
-    id: '1',
-    title: 'Teste de Usabilidade e Feedback',
-    course: 'Cardiologia Avançada',
-    dueDate: 'Seg 18 Julho 2023',
-  };
+
+
+
 
   return (
     <PagePlanGuard>
@@ -107,12 +90,12 @@ export default function Home() {
 
             {/* Charts Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-              <ActivityChart weekData={activityData} weeklyIncrease={2} />
-              <TasksChart tasks={taskCategories} total={100} />
+              <StudyTimeChartCompact />
+              <QuestionsGoalCard />
             </div>
 
-            {/* Next Delivery */}
-            <NextDelivery delivery={nextDelivery} />
+            {/* Playground Section */}
+            <PlaygroundSection />
           </div>
 
           {/* Right Column */}

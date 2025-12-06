@@ -135,7 +135,6 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
             return newList;
           });
 
-          console.log('[Client] Cache cheio, removendo batch:', toRemove);
         }
 
         return newSet;

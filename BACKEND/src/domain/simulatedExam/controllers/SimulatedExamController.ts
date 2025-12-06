@@ -72,13 +72,6 @@ export class SimulatedExamController {
         settings,
       } = req.body;
 
-      console.log('[SimulatedExamController] Dados recebidos:', {
-        timeLimit,
-        time_limit_minutes,
-        title,
-        questionsCount: questions?.length
-      });
-
       const simulatedExamData: CreateSimulatedExamPayload = {
         title,
         description,
@@ -292,11 +285,7 @@ export class SimulatedExamController {
     next: NextFunction,
   ): Promise<void> => {
     try {
-      console.log(
-        '🚀 Received request for listUserSimulatedExams - LATEST VERSION',
-      );
       const userId = this.getAuthenticatedUserId(req);
-      console.log('👤 User ID:', userId);
       const {
         limit,
         page,
@@ -307,8 +296,6 @@ export class SimulatedExamController {
         startAfter,
       } = req.query;
 
-      // Buscar simulados do usuário e públicos
-      console.log('🔍 Buscando simulados do usuário e públicos...');
       const result = await this.simulatedExamService.listSimulatedExams({
         createdBy: userId,
         limit: limit ? parseInt(limit as string) : undefined,
@@ -320,17 +307,10 @@ export class SimulatedExamController {
         startAfter: startAfter as string,
       });
 
-      console.log('📊 Simulados encontrados:', {
-        total: result.exams.length,
-      });
-
-      console.log('🔧 Preparando resultado para resposta...');
-
-      // Adicionar informações de classificação para o frontend
       const simuladosWithType = result.exams.map((simulado: any) => ({
         ...simulado,
         isMedPulse: simulado.is_public || simulado.created_by !== userId,
-        userStatus: 'nao-iniciado', // TODO: Implementar lógica de status do usuário
+        userStatus: 'nao-iniciado',
       }));
 
       const response = {
@@ -340,13 +320,11 @@ export class SimulatedExamController {
         totalPages: 1,
       };
 
-      console.log('✅ Enviando resposta com', response.exams.length, 'simulados');
-
       res.status(200).json({
         data: response,
       });
     } catch (error) {
-      console.error('❌ Erro no listUserSimulatedExams:', error);
+      console.error('Erro no listUserSimulatedExams:', error);
       next(error);
     }
   };
@@ -481,12 +459,10 @@ export class SimulatedExamController {
       // Se o simulado não tem tempo definido e o usuário passou um tempo customizado, atualizar
       const currentTimeLimit = (simulatedExam as any).time_limit_minutes;
       if ((!currentTimeLimit || currentTimeLimit === 0) && customTimeLimitMinutes && customTimeLimitMinutes > 0) {
-        // Validar tempo máximo de 10 horas (600 minutos)
         const validTimeLimit = Math.min(customTimeLimitMinutes, 600);
         await this.simulatedExamService.updateSimulatedExam(examId, {
           time_limit_minutes: validTimeLimit
         } as any);
-        console.log(`⏱️ Tempo customizado aplicado: ${validTimeLimit} minutos`);
       }
 
       const startData: StartSimulatedExamPayload = {
@@ -499,9 +475,6 @@ export class SimulatedExamController {
 
       const result =
         await this.simulatedExamService.startSimulatedExam(startData);
-
-      console.log('✅ Resultado do startSimulatedExam:', result);
-      console.log('✅ ID do resultado:', result?.id);
 
       res.status(200).json({
         message: 'Simulado iniciado com sucesso',
@@ -572,12 +545,6 @@ export class SimulatedExamController {
       const { id: resultId } = req.params;
       const { questionId, answerId } = req.body;
 
-      console.log('[UpdateAnswer] Atualizando resposta:', {
-        resultId,
-        questionId,
-        answerId
-      });
-
       // Verificar se o resultado existe
       const result =
         await this.simulatedExamService.getSimulatedExamResultById(resultId);
@@ -639,12 +606,6 @@ export class SimulatedExamController {
       const userId = this.getAuthenticatedUserId(req);
       const { resultId, answers, timeSpent } = req.body;
 
-      console.log('[FinishSimulatedExam] Recebendo dados:', {
-        resultId,
-        answersCount: answers ? Object.keys(answers).length : 0,
-        timeSpent
-      });
-
       // Verificar se o resultado existe
       const result =
         await this.simulatedExamService.getSimulatedExamResultById(resultId);
@@ -664,7 +625,6 @@ export class SimulatedExamController {
 
       // Verificar se o simulado já foi finalizado (evitar duplicação)
       if ((result as any).status === 'completed') {
-        console.log('[FinishSimulatedExam] Simulado já finalizado, retornando resultado existente');
         res.status(200).json({
           message: 'Simulado já finalizado',
           data: result,
@@ -725,35 +685,17 @@ export class SimulatedExamController {
       // Score como porcentagem (0-100)
       const score = totalQuestions > 0 ? (correctCount / totalQuestions) * 100 : 0;
 
-      console.log('[FinishSimulatedExam] Resultado calculado:', {
-        correctCount,
-        incorrectCount,
-        totalQuestions,
-        score: `${score.toFixed(1)}%`
-      });
-
       // Registrar tentativas no histórico de questões EM PARALELO
       if (this.questionHistoryService && exam?.questions) {
-        console.log('[FinishSimulatedExam] Registrando tentativas no histórico...');
-
-        // Criar array de promises para processar em paralelo
         const attemptPromises = exam.questions.map(async (q) => {
           const questionId = (typeof q === 'string') ? (q as string) : ((q as any).questionId || (q as any).id);
           const userAnswer = (answersData as Record<string, string>)[questionId];
 
           try {
             if (userAnswer) {
-              // Questão respondida - verificar se está correta
               const question = await this.questionService?.getQuestionById(questionId);
               const isCorrect = question && userAnswer === question.correct_alternative_id;
 
-              console.log(`[FinishSimulatedExam] Questão ${questionId}:`, {
-                userAnswer,
-                correctAnswer: question?.correct_alternative_id,
-                isCorrect
-              });
-
-              // Registrar tentativa
               await this.questionHistoryService.recordQuestionAttempt({
                 user_id: userId,
                 question_id: questionId,
@@ -766,14 +708,10 @@ export class SimulatedExamController {
 
               return { questionId, success: true, isCorrect, answered: true };
             } else {
-              // Questão NÃO respondida - registrar no histórico com selected_alternative_id = null
-              // Isso permite mostrar "Não respondida" no histórico
-              console.log(`[FinishSimulatedExam] Questão ${questionId} não respondida - registrando como não respondida`);
-
               await this.questionHistoryService.recordQuestionAttempt({
                 user_id: userId,
                 question_id: questionId,
-                selected_alternative_id: '', // String vazia indica não respondida
+                selected_alternative_id: '',
                 is_correct: false,
                 study_mode: 'simulated_exam',
                 was_focus_mode: false,
@@ -783,18 +721,12 @@ export class SimulatedExamController {
               return { questionId, success: true, isCorrect: false, answered: false };
             }
           } catch (error) {
-            console.error(`[FinishSimulatedExam] Erro ao registrar tentativa da questão ${questionId}:`, error);
+            console.error(`Erro ao registrar tentativa da questão ${questionId}:`, error);
             return { questionId, success: false, error, answered: !!userAnswer };
           }
         });
 
-        // Aguardar todas as tentativas serem registradas em paralelo
-        const results = await Promise.all(attemptPromises);
-        const successCount = results.filter(r => r?.success).length;
-        const answeredCount = results.filter(r => r?.answered).length;
-        const unansweredCount = results.filter(r => r?.success && !r?.answered).length;
-        console.log(`[FinishSimulatedExam] ${successCount}/${results.length} tentativas registradas com sucesso`);
-        console.log(`[FinishSimulatedExam] ${answeredCount} respondidas, ${unansweredCount} não respondidas (marcadas como erro)`);
+        await Promise.all(attemptPromises);
       }
 
       const finalResult =
@@ -810,7 +742,6 @@ export class SimulatedExamController {
       // Atualizar mentor_exam_assignments se o simulado foi atribuído por um mentor
       if (exam && (exam as any).mentor_exam_id && (exam as any).assigned_by_mentor) {
         try {
-          console.log('[FinishSimulatedExam] Atualizando mentor_exam_assignments...');
           await this.simulatedExamService.updateMentorExamAssignment(
             (exam as any).mentor_exam_id,
             userId,
@@ -823,10 +754,8 @@ export class SimulatedExamController {
               time_spent_seconds: timeSpent || 0,
             }
           );
-          console.log('[FinishSimulatedExam] mentor_exam_assignments atualizado com sucesso');
         } catch (error) {
-          console.error('[FinishSimulatedExam] Erro ao atualizar mentor_exam_assignments:', error);
-          // Não falhar a operação principal
+          console.error('Erro ao atualizar mentor_exam_assignments:', error);
         }
       }
 

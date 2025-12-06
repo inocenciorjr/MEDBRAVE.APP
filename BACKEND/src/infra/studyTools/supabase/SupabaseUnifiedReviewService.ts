@@ -167,8 +167,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       const zonedDate = toZonedTime(dueDate, timezone);
       const dateStr = format(zonedDate, 'yyyy-MM-dd', { timeZone: timezone });
 
-      logger.info(`[syncPlannerEvent] Sincronizando evento para ${card.content_type} em ${dateStr} (timezone: ${timezone})`);
-
       // Buscar preferências do usuário para horários personalizados
       const prefs = await this.preferencesService.getPreferences(userId);
 
@@ -222,14 +220,12 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       });
 
       if (error) {
-        logger.error('[syncPlannerEvent] ❌ Erro no upsert:', error);
+        logger.error('[syncPlannerEvent] Erro no upsert:', error);
         return;
       }
 
-      logger.info(`[syncPlannerEvent] ✅ Evento sincronizado: ${data}`);
-
     } catch (error) {
-      logger.error('[syncPlannerEvent] ❌ Erro ao sincronizar evento do planner:', error);
+      logger.error('[syncPlannerEvent] Erro ao sincronizar evento do planner:', error);
       // Não lançar erro para não quebrar o fluxo de revisão
     }
   }
@@ -267,11 +263,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       // Usar a data original do due (antes da revisão) para incrementar o evento correto
       const dateStr = originalDueDate.toISOString().split('T')[0];
 
-      // Log detalhado para rastrear chamadas
-      const stack = new Error().stack;
-      logger.info(`[incrementCompletedCount] 🔥 CHAMADO para ${contentType} em ${dateStr} por userId=${userId}`);
-      logger.info(`[incrementCompletedCount] Stack trace: ${stack?.split('\n').slice(1, 4).join('\n')}`);
-
       // Incrementar completed_count do evento da data original
       const { data, error } = await this.supabase.rpc('increment_planner_event_completed', {
         p_user_id: userId,
@@ -281,9 +272,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
 
       // Ignorar erro PGRST116 (função executou mas não retornou resultado em formato de tabela)
       if (error && error.code !== 'PGRST116') {
-        logger.error('[incrementCompletedCount] ❌ Erro ao incrementar:', error);
-      } else {
-        logger.info(`[incrementCompletedCount] ✅ Incrementado completed_count para ${contentType} em ${dateStr}, linhas afetadas: ${data || 'N/A'}`);
+        logger.error('[incrementCompletedCount] Erro ao incrementar:', error);
       }
     } catch (error) {
       logger.error('[incrementCompletedCount] Erro:', error);
@@ -448,16 +437,12 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         const daysUntilExam = this.preferencesService.calculateDaysUntilExam(new Date(preferences.exam_date));
 
         if (daysUntilExam <= 15) {
-          logger.info(`Auto-ajuste: cramming (${daysUntilExam} dias até prova)`);
           baseParams = this.crammingParameters;
         } else if (daysUntilExam <= 30) {
-          logger.info(`Auto-ajuste: intensive (${daysUntilExam} dias até prova)`);
           baseParams = this.intensiveParameters;
         } else if (daysUntilExam <= 90) {
-          logger.info(`Auto-ajuste: balanced (${daysUntilExam} dias até prova)`);
           baseParams = this.balancedParameters;
         } else {
-          logger.info(`Auto-ajuste: relaxed (${daysUntilExam} dias até prova)`);
           baseParams = this.relaxedParameters;
         }
       } else {
@@ -465,9 +450,8 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         baseParams = this.getModeParameters(preferences.study_mode);
       }
 
-      // ✅ AJUSTAR maximum_interval baseado em max_interval_days das preferências
+      // Ajustar maximum_interval baseado em max_interval_days das preferências
       if (preferences.max_interval_days && preferences.max_interval_days !== baseParams.maximum_interval) {
-        logger.info(`Ajustando maximum_interval de ${baseParams.maximum_interval} para ${preferences.max_interval_days} dias (preferências do usuário)`);
         return {
           ...baseParams,
           maximum_interval: preferences.max_interval_days
@@ -612,7 +596,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
     new_card.last_review = now;
     new_card.updated_at = new Date().toISOString();
 
-    logger.info(`[scheduleAgain] Card agendado para 1 dia (amanhã)`);
+
 
     return { card: new_card };
   }
@@ -638,7 +622,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         Math.round(previousDays * 0.5) // 50% do anterior
       ));
 
-      logger.info(`[scheduleHard] Reduzindo para 50%: ${previousDays} → ${new_card.scheduled_days}`);
+
     }
 
     // Validar scheduled_days
@@ -662,7 +646,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
     // 🔥 Usar scheduled_days como mínimo para evitar penalizar revisões antecipadas
     const elapsed_days = Math.max(real_elapsed_days, card.scheduled_days || 0);
 
-    logger.info(`[scheduleGood] real_elapsed=${real_elapsed_days}, scheduled=${card.scheduled_days}, using=${elapsed_days}`);
+
 
     const new_card = { ...card };
 
@@ -676,11 +660,10 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       new_card.stability = this.calculateStabilityAfterSuccess(card, elapsed_days, FSRSGrade.GOOD, parameters);
       new_card.difficulty = this.calculateDifficultyAfterSuccess(card, FSRSGrade.GOOD, parameters);
 
-      // 🔥 RECOVERY BOOST: Proporcional aos lapses (penaliza quem erra muito)
+      // Recovery boost: Proporcional aos lapses (penaliza quem erra muito)
       if (card.stability < 1.0 && new_card.stability < 2.0) {
         const boostFactor = Math.max(2.0, 4.0 - (card.lapses * 0.5));
         new_card.stability = Math.max(2.0, new_card.stability * boostFactor);
-        logger.info(`[scheduleGood] Recovery boost (${boostFactor}x, lapses=${card.lapses}): ${card.stability} → ${new_card.stability}`);
       }
 
       new_card.scheduled_days = Math.max(3, Math.min(parameters.maximum_interval, Math.round(new_card.stability)));
@@ -699,8 +682,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
     new_card.last_review = now;
     new_card.updated_at = new Date().toISOString();
 
-    logger.info(`[scheduleGood] Card ${card.state} - Old stability: ${card.stability}, New stability: ${new_card.stability}, Scheduled days: ${new_card.scheduled_days}`);
-
     return { card: new_card };
   }
 
@@ -708,7 +689,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
     const real_elapsed_days = this.dateDiff(card.last_review || new Date(card.created_at), now);
     let elapsed_days = real_elapsed_days;
 
-    logger.info(`[scheduleEasy] real_elapsed=${real_elapsed_days}, scheduled=${card.scheduled_days}`);
+
 
     const new_card = { ...card };
 
@@ -723,7 +704,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       // Isso acontece quando o usuário revisa antes do tempo ou no mesmo dia
       if (elapsed_days < card.scheduled_days) {
         elapsed_days = card.scheduled_days;
-        logger.info(`[scheduleEasy] Ajustando elapsed_days: ${this.dateDiff(card.last_review || new Date(card.created_at), now)} → ${elapsed_days}`);
+
       }
 
       new_card.stability = this.calculateStabilityAfterSuccess(card, elapsed_days, FSRSGrade.EASY, parameters);
@@ -733,7 +714,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       if (card.stability < 1.0 && new_card.stability < 3.0) {
         const boostFactor = Math.max(2.0, 5.0 - (card.lapses * 0.5));
         new_card.stability = Math.max(3.0, new_card.stability * boostFactor);
-        logger.info(`[scheduleEasy] Recovery boost (${boostFactor}x, lapses=${card.lapses}): ${card.stability} → ${new_card.stability}`);
+
       }
 
       // EASY: Usa stability calculada pelo FSRS (já inclui w[15])
@@ -871,8 +852,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
     contentType: UnifiedContentType
   ): Promise<Date> {
     try {
-      logger.info(`[applySmartScheduling] idealDate recebido: ${idealDate.toISOString()}, contentType: ${contentType}`);
-
       if (!this.preferencesService || !this.smartSchedulingService) {
         await this.initializePreferencesService();
       }
@@ -881,8 +860,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
 
       // Ajustar para próximo dia de estudo disponível
       let targetDate = this.preferencesService.findNextStudyDay(idealDate, prefs.study_days);
-
-      logger.info(`[applySmartScheduling] targetDate após findNextStudyDay: ${targetDate.toISOString()}`);
 
       // Se modo smart, buscar primeiro dia disponível com vaga
       if (prefs.scheduling_mode === 'smart') {
@@ -1344,15 +1321,15 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
   ): Promise<void> {
     try {
       // Verificar se já existe card FSRS para este entry
-      const { data: existingCard } = await this.supabase
+      const { data: existingCard, error: existingError } = await this.supabase
         .from('fsrs_cards')
         .select('id')
         .eq('user_id', userId)
         .eq('content_id', entryId)
         .eq('content_type', 'ERROR_NOTEBOOK')
-        .single();
+        .maybeSingle();
 
-      if (existingCard) {
+      if (existingCard && !existingError) {
         logger.info(`[addErrorNoteToReview] Card já existe para entry ${entryId}`);
         return;
       }
@@ -1513,18 +1490,19 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       // Salvar o card atualizado
       const { error: updateError } = await this.supabase
         .from('fsrs_cards')
-        .upsert({
+        .update({
           ...schedulingInfo.card,
           due: schedulingInfo.card.due.toISOString(),
           last_review: schedulingInfo.card.last_review ? schedulingInfo.card.last_review.toISOString() : null,
           updated_at: new Date().toISOString(),
-        });
+        })
+        .eq('id', schedulingInfo.card.id);
 
       if (updateError) {
         throw updateError;
       }
 
-      // 🔥 SINCRONIZAR EVENTO DO PLANNER (criar/atualizar evento para a data do due)
+      // Sincronizar evento do planner (criar/atualizar evento para a data do due)
       await this.syncPlannerEvent(userId, schedulingInfo.card);
 
       // 🔥 INCREMENTAR COMPLETED_COUNT DO EVENTO DA DATA ORIGINAL (se for revisão ativa)
@@ -1593,7 +1571,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
           .eq('user_id', user_id)
           .order('reviewed_at', { ascending: false })
           .limit(1)
-          .single();
+          .maybeSingle();
 
         if (logData) {
           reviewItem.last_grade = logData.grade;
@@ -1679,7 +1657,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         .eq('content_id', contentId)
         .eq('user_id', userId)
         .eq('content_type', contentType)
-        .single();
+        .maybeSingle();
 
       if (existingCard) {
         logger.info(`Card FSRS já existe para o conteúdo ${contentId}`);
@@ -1687,7 +1665,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
           .from('fsrs_cards')
           .select('*')
           .eq('id', existingCard.id)
-          .single();
+          .maybeSingle();
         return await this.mapToUnifiedReviewItem(cardData);
       }
 
@@ -1754,7 +1732,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         .eq('content_id', questionId)
         .eq('user_id', userId)
         .eq('content_type', UnifiedContentType.QUESTION)
-        .single();
+        .maybeSingle();
 
       if (existingCard) {
         logger.info(`Card FSRS já existe para a questão ${questionId}`);
@@ -1864,8 +1842,6 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
         isActiveReview
       );
 
-      const reviewType = isActiveReview ? 'revisão ativa' : 'estudo';
-      logger.info(`Card FSRS atualizado para questão ${questionId} (${reviewType})`);
     } catch (error) {
       logger.error('Erro ao atualizar card FSRS:', error);
       // Não lançar erro - não é crítico
@@ -2281,18 +2257,19 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
       // Atualizar o card FSRS
       const { error: updateError } = await this.supabase
         .from('fsrs_cards')
-        .upsert({
+        .update({
           ...schedulingInfo.card,
           due: schedulingInfo.card.due.toISOString(),
           last_review: schedulingInfo.card.last_review ? schedulingInfo.card.last_review.toISOString() : null,
           updated_at: new Date().toISOString(),
-        });
+        })
+        .eq('id', schedulingInfo.card.id);
 
       if (updateError) {
         throw updateError;
       }
 
-      // 🔥 SINCRONIZAR EVENTO DO PLANNER (criar/atualizar evento para a data do due)
+      // Sincronizar evento do planner (criar/atualizar evento para a data do due)
       await this.syncPlannerEvent(userId, schedulingInfo.card);
 
       // Salvar histórico de revisão (isActiveReview = false porque é estudo, não revisão)
@@ -2411,7 +2388,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
           .from('questions')
           .select('*')
           .eq('id', item.content_id)
-          .single();
+          .maybeSingle();
 
         if (!error && question) {
           const { data: card } = await this.supabase
@@ -2420,7 +2397,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
             .eq('content_id', item.content_id)
             .eq('user_id', userId)
             .eq('content_type', UnifiedContentType.QUESTION)
-            .single();
+            .maybeSingle();
 
           if (card) {
             result.push({
@@ -2472,7 +2449,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
           .from('error_notebook_entries')
           .select('*')
           .eq('id', item.content_id)
-          .single();
+          .maybeSingle();
 
         if (!error && entry) {
           const { data: card } = await this.supabase
@@ -2481,7 +2458,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
             .eq('content_id', item.content_id)
             .eq('user_id', userId)
             .eq('content_type', UnifiedContentType.ERROR_NOTEBOOK)
-            .single();
+            .maybeSingle();
 
           if (card) {
             result.push({
@@ -2904,7 +2881,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
                     .from('flashcards')
                     .select('front_content')
                     .eq('id', matchingCard.content_id)
-                    .single();
+                    .maybeSingle();
 
                   logger.info(`[getCompletedReviews] Flashcard query result:`, { flashcard, error: flashcardError });
 
@@ -2925,7 +2902,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
                 .from('questions')
                 .select('question_text')
                 .eq('id', contentUuid)
-                .single();
+                .maybeSingle();
 
               if (question?.question_text) {
                 title = question.question_text;
@@ -2935,7 +2912,7 @@ export class SupabaseUnifiedReviewService implements UnifiedReviewService {
                 .from('error_notebook_entries')
                 .select('error_description')
                 .eq('id', contentUuid)
-                .single();
+                .maybeSingle();
 
               if (entry?.error_description) {
                 title = entry.error_description;

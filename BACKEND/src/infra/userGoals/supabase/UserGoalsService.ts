@@ -76,23 +76,16 @@ export class UserGoalsService {
    * Busca estatísticas do dia atual
    */
   async getTodayStats(userId: string, timezone: string = 'America/Sao_Paulo'): Promise<TodayStats> {
-    // Obter data atual no timezone do usuário
     const now = new Date();
-    const todayStr = now.toLocaleDateString('en-CA', { timeZone: timezone }); // YYYY-MM-DD
+    const todayStr = now.toLocaleDateString('en-CA', { timeZone: timezone });
 
-    console.error('🔍 [UserGoalsService] Buscando stats para:', { userId, todayStr, timezone, userIdType: typeof userId });
-
-    // Chamar função RPC (aceita text, faz cast interno para uuid)
-    // A função espera TEXT, então converter UUID para string
     const { data, error } = await this.supabase.rpc('get_today_question_stats', {
-      p_user_id: String(userId), // Garantir que é string
+      p_user_id: String(userId),
       p_today: todayStr,
     });
 
-    console.error('📊 [UserGoalsService] Resultado RPC:', { data, error });
-
     if (error) {
-      console.error('❌ [UserGoalsService] Erro ao buscar estatísticas do dia:', error);
+      console.error('Erro ao buscar estatísticas do dia:', error);
       return {
         questions_answered: 0,
         correct_answers: 0,
@@ -100,16 +93,11 @@ export class UserGoalsService {
       };
     }
 
-    // Processar resultado
     const result = data?.[0] || data;
-    const stats = {
+    return {
       questions_answered: result?.questions_answered || 0,
       correct_answers: result?.correct_answers || 0,
       accuracy: result?.accuracy || 0,
     };
-
-    console.error('✅ [UserGoalsService] Stats do RPC:', stats);
-
-    return stats;
   }
 }

@@ -34,16 +34,10 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
 
   // Iniciar sessão de estudo ao montar
   useEffect(() => {
-    console.log('[ResolucaoQuestoes] Montando componente, iniciando sessão...');
-    startSession().catch(err => {
-      console.error('[ResolucaoQuestoes] Erro ao iniciar sessão:', err);
-    });
+    startSession().catch(() => {});
     
     return () => {
-      console.log('[ResolucaoQuestoes] Desmontando componente, finalizando sessão...');
-      endSession().catch(err => {
-        console.error('[ResolucaoQuestoes] Erro ao finalizar sessão:', err);
-      });
+      endSession().catch(() => {});
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -155,7 +149,6 @@ function ResolucaoQuestoesContent({ id }: ResolucaoQuestoesClientProps) {
             return newList;
           });
 
-          console.log('[Client] Cache cheio, removendo batch:', toRemove);
         }
 
         return newSet;

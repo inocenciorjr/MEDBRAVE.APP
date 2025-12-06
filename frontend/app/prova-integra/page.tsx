@@ -2,8 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
-import MainLayout from '@/components/layout/MainLayout';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import ExamFilters from '@/components/prova-integra/ExamFilters';
 import InstitutionCard from '@/components/prova-integra/InstitutionCard';
@@ -158,10 +156,9 @@ export default function ProvaIntegraPage() {
   }, [filters, institutions, filterMap]);
 
   return (
-    <PagePlanGuard>
-      <MainLayout showGreeting={false}>
+    <div className="w-full">
       {/* Breadcrumb */}
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full">
         <Breadcrumb
           items={[
             { label: 'Provas na Íntegra', icon: 'description', href: '/prova-integra' }
@@ -319,7 +316,6 @@ export default function ProvaIntegraPage() {
           />
         </>
       )}
-    </MainLayout>
-    </PagePlanGuard>
+    </div>
   );
 }

@@ -98,8 +98,8 @@ export function usePresenceSocket(options: UsePresenceSocketOptions = {}) {
         setIsConnected(false);
       });
 
-      socket.on('connect_error', (err) => {
-        setError(err.message);
+      socket.on('connect_error', () => {
+        // Silenciar erros de conexão - o socket.io já tenta reconectar automaticamente
         setIsConnected(false);
       });
 

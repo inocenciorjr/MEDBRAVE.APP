@@ -217,6 +217,7 @@ export function useAvailableYears() {
 /**
  * Hook para contar questões em tempo real baseado nos filtros selecionados
  * Usa React Query para cache automático e otimização
+ * Suporta filtro de questões não respondidas (unansweredFilter)
  */
 export function useQuestionCount(params: SearchQuestionsParams) {
   const [mounted, setMounted] = useState(false);
@@ -233,13 +234,15 @@ export function useQuestionCount(params: SearchQuestionsParams) {
     (params.years && params.years.length > 0) ||
     (params.institutions && params.institutions.length > 0);
 
-  // Criar uma chave única baseada nos filtros
+  // Criar uma chave única baseada nos filtros (incluindo unansweredFilter e gameType)
   const queryKey = [
     'question-count',
     params.filterIds?.sort(),
     params.subFilterIds?.sort(),
     params.years?.sort(),
     params.institutions?.sort(),
+    params.unansweredFilter || 'all',
+    params.gameType || 'none',
   ];
 
   // Usar React Query para buscar e cachear a contagem
@@ -250,8 +253,8 @@ export function useQuestionCount(params: SearchQuestionsParams) {
       return response.data.data.count as number;
     },
     enabled: mounted && hasFilters, // Só executar se montado e tiver filtros
-    staleTime: 2 * 60 * 1000, // Cache por 2 minutos
-    gcTime: 5 * 60 * 1000, // Manter no cache por 5 minutos
+    staleTime: 30 * 1000, // Cache por 30 segundos (reduzido para refletir mudanças de filtro mais rápido)
+    gcTime: 2 * 60 * 1000, // Manter no cache por 2 minutos
     placeholderData: (previousData) => previousData, // Manter valor anterior enquanto carrega
   });
 

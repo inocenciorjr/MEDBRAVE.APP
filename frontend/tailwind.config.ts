@@ -95,6 +95,30 @@ const config: Config = {
           '0%': { transform: 'scale(0.95)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
+        'shimmer': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        'glow': {
+          '0%, 100%': { 
+            textShadow: '0 0 8px rgba(255,255,255,0.5), 0 0 16px rgba(255,255,255,0.3)',
+          },
+          '50%': { 
+            textShadow: '0 0 16px rgba(255,255,255,0.8), 0 0 32px rgba(255,255,255,0.5)',
+          },
+        },
+        'fadeInOut': {
+          '0%, 100%': { opacity: '0.7' },
+          '50%': { opacity: '1' },
+        },
+        'buttonGlow': {
+          '0%, 100%': { 
+            boxShadow: '0 0 15px rgba(255,255,255,0.5)',
+          },
+          '50%': { 
+            boxShadow: '0 0 25px rgba(255,255,255,0.8), 0 0 35px rgba(139,92,246,0.4)',
+          },
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.3s ease-out',
@@ -102,6 +126,10 @@ const config: Config = {
         'slide-in-from-bottom': 'slide-in-from-bottom 0.3s ease-out',
         'slide-down': 'slide-down 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
         'zoom-in': 'zoom-in 0.2s ease-out',
+        'shimmer': 'shimmer 3s infinite',
+        'glow': 'glow 2s ease-in-out infinite',
+        'fadeInOut': 'fadeInOut 3s ease-in-out infinite',
+        'buttonGlow': 'buttonGlow 2s ease-in-out infinite',
       },
     },
   },

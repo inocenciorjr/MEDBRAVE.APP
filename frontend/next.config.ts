@@ -3,7 +3,7 @@ import './env.mjs';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  reactCompiler: true,
+  // reactCompiler: true, // Desabilitado temporariamente para debug - pode causar recompilações excessivas
   
   // Garantir que variáveis de ambiente sejam expostas no browser
   env: {

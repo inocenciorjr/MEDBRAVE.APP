@@ -10,28 +10,23 @@ export class UserGoalsController {
    */
   getUserGoals = async (req: Request, res: Response) => {
     try {
-      console.error('🎯 [UserGoalsController] getUserGoals chamado');
       const userId = req.user?.id;
-      console.error('🎯 [UserGoalsController] userId:', userId, 'tipo:', typeof userId);
 
       if (!userId) {
-        console.error('❌ [UserGoalsController] Usuário não autenticado');
         return res.status(401).json({
           success: false,
           error: 'Usuário não autenticado',
         });
       }
 
-      console.error('🎯 [UserGoalsController] Chamando service.getUserGoals');
       const goals = await this.userGoalsService.getUserGoals(userId);
-      console.error('🎯 [UserGoalsController] Resultado do service:', goals);
 
       return res.json({
         success: true,
         data: goals,
       });
     } catch (error: any) {
-      console.error('❌ [UserGoalsController] Erro ao buscar metas:', error);
+      console.error('Erro ao buscar metas:', error);
       return res.status(500).json({
         success: false,
         error: error.message || 'Erro ao buscar metas',
@@ -94,32 +89,24 @@ export class UserGoalsController {
    */
   getTodayStats = async (req: Request, res: Response) => {
     try {
-      console.error('🎯 [UserGoalsController] getTodayStats chamado');
       const userId = req.user?.id;
-      console.error('🎯 [UserGoalsController] userId:', userId, 'tipo:', typeof userId);
 
       if (!userId) {
-        console.error('❌ [UserGoalsController] Usuário não autenticado');
         return res.status(401).json({
           success: false,
           error: 'Usuário não autenticado',
         });
       }
 
-      // Obter timezone do header (enviado pelo frontend)
       const timezone = req.headers['x-user-timezone'] as string || 'America/Sao_Paulo';
-      console.error('🎯 [UserGoalsController] timezone:', timezone);
-
-      console.error('🎯 [UserGoalsController] Chamando service.getTodayStats');
       const stats = await this.userGoalsService.getTodayStats(userId, timezone);
-      console.error('🎯 [UserGoalsController] Resultado do service:', stats);
 
       return res.json({
         success: true,
         data: stats,
       });
     } catch (error: any) {
-      console.error('❌ [UserGoalsController] Erro ao buscar estatísticas do dia:', error);
+      console.error('Erro ao buscar estatísticas do dia:', error);
       return res.status(500).json({
         success: false,
         error: error.message || 'Erro ao buscar estatísticas do dia',

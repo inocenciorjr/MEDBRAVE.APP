@@ -586,7 +586,7 @@ function AnosStep() {
 function InstituicoesStep() {
   const router = useRouter();
   const toast = useToast();
-  const { state, cachedQuestions, setCachedQuestions, updateListName, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit } = useCreateList();
+  const { state, cachedQuestions, setCachedQuestions, updateListName, toggleInstitution, toggleExamType, toggleSubject, toggleYear, clearFilters, resetState, updateQuestionLimit, toggleExcludeOutdated, toggleExcludeAnnulled, toggleOnlyUnanswered } = useCreateList();
   const [error, setError] = useState('');
   const [isCreating, setIsCreating] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
@@ -618,6 +618,9 @@ function InstituicoesStep() {
     subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
     years: state.selectedYears,
     institutions: state.selectedInstitutions,
+    excludeOutdated: state.excludeOutdated,
+    excludeAnnulled: state.excludeAnnulled,
+    unansweredFilter: state.onlyUnanswered ? 'unanswered_system' : 'all',
   });
 
   // Ajustar questionLimit automaticamente quando a contagem cair abaixo dele
@@ -852,6 +855,9 @@ function InstituicoesStep() {
           subFilterIds: state.selectedSubjects.filter(id => id.includes('_')),
           years: state.selectedYears,
           institutions: state.selectedInstitutions,
+          excludeOutdated: state.excludeOutdated,
+          excludeAnnulled: state.excludeAnnulled,
+          unansweredFilter: state.onlyUnanswered ? 'unanswered_system' : 'all',
           limit: 10000,
         });
 
@@ -1118,6 +1124,83 @@ function InstituicoesStep() {
                 )}
               </div>
 
+              {/* Filtros Opcionais */}
+              <div className="mb-8 p-6 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-xl text-amber-600 dark:text-amber-400">filter_alt</span>
+                  </div>
+                  <div>
+                    <h3 className="text-base font-semibold text-slate-800 dark:text-slate-100">Filtros Opcionais</h3>
+                    <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                      Refine sua seleção de questões
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  {/* Excluir Desatualizadas */}
+                  <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors">
+                    <div 
+                      onClick={() => toggleExcludeOutdated()}
+                      className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all cursor-pointer ${
+                        state.excludeOutdated 
+                          ? 'bg-primary border-primary' 
+                          : 'border-slate-300 dark:border-slate-600 hover:border-primary'
+                      }`}
+                    >
+                      {state.excludeOutdated && (
+                        <span className="material-symbols-outlined text-white text-sm">check</span>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Excluir Desatualizadas</span>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Remove questões marcadas como desatualizadas</p>
+                    </div>
+                  </label>
+
+                  {/* Excluir Anuladas */}
+                  <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors">
+                    <div 
+                      onClick={() => toggleExcludeAnnulled()}
+                      className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all cursor-pointer ${
+                        state.excludeAnnulled 
+                          ? 'bg-primary border-primary' 
+                          : 'border-slate-300 dark:border-slate-600 hover:border-primary'
+                      }`}
+                    >
+                      {state.excludeAnnulled && (
+                        <span className="material-symbols-outlined text-white text-sm">check</span>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Excluir Anuladas</span>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Remove questões que foram anuladas pela banca</p>
+                    </div>
+                  </label>
+
+                  {/* Apenas Não Respondidas */}
+                  <label className="flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-colors">
+                    <div 
+                      onClick={() => toggleOnlyUnanswered()}
+                      className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all cursor-pointer ${
+                        state.onlyUnanswered 
+                          ? 'bg-primary border-primary' 
+                          : 'border-slate-300 dark:border-slate-600 hover:border-primary'
+                      }`}
+                    >
+                      {state.onlyUnanswered && (
+                        <span className="material-symbols-outlined text-white text-sm">check</span>
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Apenas Não Respondidas</span>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Mostra apenas questões que você nunca respondeu</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
               <ExamTypeSelector
                 selectedExamTypes={state.selectedExamTypes || []}
                 onToggleExamType={toggleExamType}
@@ -1191,6 +1274,9 @@ function InstituicoesStep() {
         years={state.selectedYears}
         institutions={state.selectedInstitutions}
         onQuestionsLoaded={setCachedQuestions}
+        excludeOutdated={state.excludeOutdated}
+        excludeAnnulled={state.excludeAnnulled}
+        onlyUnanswered={state.onlyUnanswered}
       />
 
       <ListCreatedSuccessModal

@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import MainLayout from '@/components/layout/MainLayout';
-import { PagePlanGuard } from '@/components/guards/PagePlanGuard';
 import ResolucaoQuestoesClient from './ResolucaoQuestoesClient';
 
 interface PageProps {
@@ -19,11 +17,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ResolucaoQuestoesPage({ params }: PageProps) {
   const { id } = await params;
 
-  return (
-    <PagePlanGuard>
-      <MainLayout showGreeting={false}>
-        <ResolucaoQuestoesClient id={id} />
-      </MainLayout>
-    </PagePlanGuard>
-  );
+  return <ResolucaoQuestoesClient id={id} />;
 }

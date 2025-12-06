@@ -17,7 +17,6 @@ export class StudySessionService implements IStudySessionService {
     const lockKey = `${userId}:${payload.activityType}`;
     
     if (this.startSessionLocks.has(lockKey)) {
-      logger.info(`[StudySessionService] Aguardando lock para ${lockKey}`);
       return this.startSessionLocks.get(lockKey)!;
     }
 
@@ -39,11 +38,8 @@ export class StudySessionService implements IStudySessionService {
     try {
       // Validar userId
       if (!userId || userId === 'undefined' || userId === 'null') {
-        logger.error(`[StudySessionService] userId inválido ao iniciar sessão: ${userId}`);
         throw new Error('userId inválido');
       }
-
-      logger.info(`Iniciando sessão para usuário ${userId}, tipo: ${payload.activityType}`);
       
       // Finalizar qualquer sessão ativa anterior
       await this.finalizeActiveSessions(userId);
@@ -67,11 +63,9 @@ export class StudySessionService implements IStudySessionService {
       }
 
       if (!data) {
-        logger.error('Nenhum dado retornado após insert');
         throw new Error('Nenhum dado retornado após insert');
       }
 
-      logger.info(`Sessão criada com sucesso: ${data.id}`);
       return this.mapToStudySession(data);
     } catch (error) {
       logger.error('Erro ao iniciar sessão de estudo:', error);
@@ -111,7 +105,6 @@ export class StudySessionService implements IStudySessionService {
 
       if (error) throw error;
 
-      logger.info(`Sessão finalizada: ${sessionId}, duração: ${durationSeconds}s`);
       return this.mapToStudySession(data);
     } catch (error) {
       logger.error('Erro ao finalizar sessão:', error);
@@ -123,11 +116,9 @@ export class StudySessionService implements IStudySessionService {
     try {
       // Validar userId e sessionId
       if (!userId || userId === 'undefined' || userId === 'null') {
-        logger.warn(`[StudySessionService] userId inválido no heartbeat: ${userId}`);
         throw new Error('userId inválido');
       }
       if (!sessionId || sessionId === 'undefined' || sessionId === 'null') {
-        logger.warn(`[StudySessionService] sessionId inválido no heartbeat: ${sessionId}`);
         throw new Error('sessionId inválido');
       }
 
@@ -140,9 +131,25 @@ export class StudySessionService implements IStudySessionService {
         .eq('user_id', userId)
         .eq('is_active', true)
         .select()
-        .single();
+        .maybeSingle();
 
       if (error) throw error;
+
+      // Se a sessão não existe mais (foi finalizada ou expirou), retornar sessão vazia
+      if (!data) {
+        const now = new Date().toISOString();
+        return {
+          id: sessionId,
+          userId,
+          activityType: 'questions',
+          startedAt: now,
+          isActive: false,
+          durationSeconds: 0,
+          itemsCompleted: 0,
+          createdAt: now,
+          updatedAt: now,
+        };
+      }
 
       return this.mapToStudySession(data);
     } catch (error) {
@@ -155,7 +162,6 @@ export class StudySessionService implements IStudySessionService {
     try {
       // Validar userId
       if (!userId || userId === 'undefined' || userId === 'null') {
-        logger.warn(`[StudySessionService] userId inválido: ${userId}`);
         return null;
       }
 
@@ -217,8 +223,6 @@ export class StudySessionService implements IStudySessionService {
       weekEnd.setDate(weekStart.getDate() + 6);
       weekEnd.setHours(23, 59, 59, 999);
 
-      logger.info(`Buscando sessões da semana: ${weekStart.toISOString()} até ${weekEnd.toISOString()}`);
-
       const { data, error } = await this.supabase
         .from('study_sessions')
         .select('duration_seconds')
@@ -235,8 +239,6 @@ export class StudySessionService implements IStudySessionService {
       const totalSeconds = (data || []).reduce((sum, session) => sum + (session.duration_seconds || 0), 0);
       const totalMinutes = Math.round(totalSeconds / 60);
       const totalHours = parseFloat((totalSeconds / 3600).toFixed(1));
-
-      logger.info(`Tempo semanal calculado: ${totalHours}h (${data?.length || 0} sessões)`);
 
       return {
         totalMinutes,
@@ -261,7 +263,6 @@ export class StudySessionService implements IStudySessionService {
     try {
       // Validar userId
       if (!userId || userId === 'undefined' || userId === 'null') {
-        logger.warn(`[StudySessionService] userId inválido ao finalizar sessões: ${userId}`);
         return;
       }
 
@@ -273,17 +274,14 @@ export class StudySessionService implements IStudySessionService {
 
       if (!activeSessions || activeSessions.length === 0) return;
 
-      logger.info(`[StudySessionService] Finalizando ${activeSessions.length} sessões ativas`);
-
       for (const session of activeSessions) {
         const endedAt = new Date();
         const startedAt = new Date(session.started_at);
         let durationSeconds = Math.floor((endedAt.getTime() - startedAt.getTime()) / 1000);
 
-        // 🔧 Limitar duração máxima a 2 horas (7200 segundos)
+        // Limitar duração máxima a 2 horas (7200 segundos)
         const MAX_DURATION = 2 * 60 * 60; // 2 horas
         if (durationSeconds > MAX_DURATION) {
-          logger.warn(`[StudySessionService] Sessão ${session.id} excedeu 2h (${durationSeconds}s), limitando a ${MAX_DURATION}s`);
           durationSeconds = MAX_DURATION;
         }
 
@@ -326,11 +324,8 @@ export class StudySessionService implements IStudySessionService {
       if (error) throw error;
 
       if (!orphanedSessions || orphanedSessions.length === 0) {
-        logger.info('[StudySessionService] Nenhuma sessão órfã encontrada');
         return { cleaned: 0, sessions: [] };
       }
-
-      logger.info(`[StudySessionService] Limpando ${orphanedSessions.length} sessões órfãs`);
 
       const sessionIds: string[] = [];
       const MAX_DURATION = 2 * 60 * 60; // 2 horas
@@ -357,8 +352,6 @@ export class StudySessionService implements IStudySessionService {
 
         sessionIds.push(session.id);
       }
-
-      logger.info(`[StudySessionService] ${sessionIds.length} sessões órfãs finalizadas`);
 
       return {
         cleaned: sessionIds.length,

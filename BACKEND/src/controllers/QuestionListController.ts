@@ -109,14 +109,12 @@ export class QuestionListController {
   async getQuestionListById(req: AuthenticatedRequest, res: Response) {
     try {
       const userId = req.user?.id;
-      console.log('[QuestionListController] getQuestionListById - userId:', userId);
       
       if (!userId) {
         return res.status(401).json({ error: 'Usuário não autenticado' });
       }
 
       const { id } = req.params;
-      console.log('[QuestionListController] Buscando lista:', id);
 
       const { data: list, error } = await supabase
         .from('question_lists')
@@ -126,21 +124,6 @@ export class QuestionListController {
         .single();
 
       if (error) {
-        console.error('[QuestionListController] Error fetching list:', error);
-        console.log('[QuestionListController] Tentando buscar sem filtro de user_id...');
-        
-        // Tentar buscar sem filtro de user_id para debug
-        const { data: listDebug } = await supabase
-          .from('question_lists')
-          .select('*')
-          .eq('id', id)
-          .single();
-        
-        if (listDebug) {
-          console.log('[QuestionListController] Lista existe! user_id da lista:', listDebug.user_id);
-          console.log('[QuestionListController] user_id do request:', userId);
-        }
-        
         return res.status(404).json({ error: 'Lista não encontrada' });
       }
 

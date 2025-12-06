@@ -29,7 +29,7 @@ const mainMenuItems: MenuItem[] = [
   { id: 'caderno-erros', label: 'Caderno de Erros', icon: 'book', href: '/caderno-erros' },
   { id: 'revisoes', label: 'Revisões', icon: 'history', href: '/revisoes' },
   { id: 'planner', label: 'Planner', icon: 'event_available', href: '/planner' },
-  { id: 'aquecimento', label: 'Aquecimento', icon: 'sports_esports', href: '/aquecimento' },
+  { id: 'playground', label: 'Playground', icon: 'sports_esports', href: '/playground' },
   { id: 'statistics', label: 'Painel de Métricas', icon: 'analytics', href: '/statistics' },
 ];
 

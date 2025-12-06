@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { createClient } from '@/lib/supabase/client';
 import ThemeToggle from '../ui/ThemeToggle';
+import TrialBar from '../ui/TrialBar';
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 import { useUser } from '@/contexts/UserContext';
 
@@ -38,11 +38,14 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
   const [userAvatar, setUserAvatar] = useState(propUserAvatar || '');
   const [loading, setLoading] = useState(true);
 
+  // Seleciona uma frase aleatória apenas na montagem inicial
   useEffect(() => {
-    // Seleciona uma frase aleatória quando o componente monta
     const randomQuote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     setQuote(randomQuote);
-    
+  }, []);
+
+  // Atualiza dados do usuário quando disponíveis
+  useEffect(() => {
     if (propUserName && propUserAvatar) {
        setUserName(propUserName);
        setUserAvatar(propUserAvatar);
@@ -106,7 +109,10 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
         </div>
 
         {/* Right: Icons */}
-        <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
+        <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
+          {/* Trial/Plan Bar */}
+          <TrialBar />
+
           {/* Theme Toggle Button */}
           <ThemeToggle />
 

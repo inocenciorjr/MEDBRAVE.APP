@@ -73,12 +73,8 @@ export function QuestionStatsProvider({ children }: { children: ReactNode }) {
         }
       });
       
-      console.log('[QuestionStatsContext] Stats carregadas:', Object.keys(allStats).length, 'questões');
-      console.log('[QuestionStatsContext] IDs carregados:', Object.keys(allStats));
-      
       setStats(prev => {
         const newStats = { ...prev, ...allStats };
-        console.log('[QuestionStatsContext] Total de stats no cache:', Object.keys(newStats).length);
         return newStats;
       });
     } catch (error) {

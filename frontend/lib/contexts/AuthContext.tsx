@@ -94,10 +94,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
   useEffect(() => {
     // Ignorar páginas de auth
     const currentPath = window.location.pathname;
-    console.log('[AuthContext] Iniciando, path:', currentPath);
     
     if (currentPath.startsWith('/auth/')) {
-      console.log('[AuthContext] Página de auth, ignorando');
       setLoading(false);
       return;
     }
@@ -110,7 +108,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
         // IMPORTANTE: Verificar se a sessão expirou por inatividade ANTES de tudo
         const { isSessionExpired, checkAndClearExpiredSession } = await import('@/lib/utils/sessionTimeout');
         if (isSessionExpired()) {
-          console.log('[AuthContext] Sessão expirada por inatividade, limpando...');
           await checkAndClearExpiredSession();
           setLoading(false);
           return;
@@ -125,7 +122,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
           const sessionUser = sessionStorage.getItem('user');
           const sessionToken = sessionStorage.getItem('authToken');
           if (sessionUser && sessionToken) {
-            console.log('[AuthContext] Recuperando do sessionStorage');
             storedUser = sessionUser;
             storedToken = sessionToken;
             localStorage.setItem('user', sessionUser);
@@ -140,7 +136,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
           try {
             const idbData = await getFromIndexedDB();
             if (idbData.token && idbData.user) {
-              console.log('[AuthContext] Recuperando do IndexedDB');
               storedUser = idbData.user;
               storedToken = idbData.token;
               localStorage.setItem('user', idbData.user);
@@ -148,7 +143,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
               if (idbData.userId) localStorage.setItem('user_id', idbData.userId);
             }
           } catch (e) {
-            console.log('[AuthContext] IndexedDB não disponível');
+            // IndexedDB não disponível
           }
         }
         
@@ -156,12 +151,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
         if (!storedUser || !storedToken) {
           const cookieToken = getCookieValue('sb-access-token');
           if (cookieToken) {
-            console.log('[AuthContext] Token encontrado em cookie, tentando recuperar sessão...');
             storedToken = cookieToken;
           }
         }
-        
-        console.log('[AuthContext] storage - user:', storedUser ? 'presente' : 'ausente', 'token:', storedToken ? 'presente' : 'ausente');
 
         if (storedUser && storedToken) {
           try {
@@ -169,14 +161,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
             setUser(parsedUser);
             setAuthFailed(false);
             setLoading(false);
-            console.log('[AuthContext] Usuário restaurado do storage');
             
             // Verificar se é Edge Mobile - se for, NÃO fazer validação em background imediatamente
             // pois isso causa loops e delays desnecessários
             const isEdgeMobile = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
             
             if (isEdgeMobile) {
-              console.log('[AuthContext] Edge Mobile detectado, pulando validação em background');
               // No Edge Mobile, confiar no storage e só validar se houver erro em alguma operação
               return;
             }
@@ -190,7 +180,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
 
         // 2. Se não tem localStorage, verificar sessão do Supabase SDK
-        console.log('[AuthContext] Verificando sessão do Supabase...');
         const { data: { session } } = await supabase.auth.getSession();
 
         if (session?.user) {
@@ -211,7 +200,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
       if (!session) {
         // Se localStorage diz que tem user, mas SDK diz que não...
         // Talvez o token expirou ou é um caso de Edge Mobile
-        console.log('[AuthContext] Validação falhou (sem sessão SDK), tentando recuperar...');
         await tryRecoverSession();
       } else {
         // Sessão válida, atualizar dados se necessário
@@ -229,23 +217,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
       // IMPORTANTE: Verificar se a sessão expirou por inatividade ANTES de tentar recuperar
       const { isSessionExpired } = await import('@/lib/utils/sessionTimeout');
       if (isSessionExpired()) {
-        console.log('[AuthContext] Sessão expirada por inatividade, não recuperando');
         clearSession();
         setLoading(false);
         isRecoveringRef.current = false;
         return;
       }
       
-      console.log('[AuthContext] Tentando recuperar sessão dos cookies...');
-      
       // Verificar se os cookies existem no cliente primeiro
       const clientCookies = document.cookie;
       const hasAccessToken = clientCookies.includes('sb-access-token');
       const hasRefreshToken = clientCookies.includes('sb-refresh-token');
-      console.log('[AuthContext] Cookies no cliente - access:', hasAccessToken, 'refresh:', hasRefreshToken);
       
       if (!hasAccessToken && !hasRefreshToken) {
-        console.log('[AuthContext] Nenhum cookie de sessão encontrado no cliente');
         clearSession();
         setLoading(false);
         isRecoveringRef.current = false;
@@ -258,7 +241,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
         if (res.ok) {
           const data = await res.json();
           if (data.access_token && data.user) {
-            console.log('[AuthContext] Sessão recuperada dos cookies!');
             
             // Restaurar sessão no Supabase SDK
             const { error: sessionError } = await supabase.auth.setSession({
@@ -287,7 +269,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
           }
         }
         
-        console.log('[AuthContext] Não foi possível recuperar sessão dos cookies (401 ou sem dados)');
         // Falhou recuperação - marcar como falha definitiva
         clearSession();
       } catch (error) {
@@ -300,7 +281,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     };
 
     const handleSessionFound = async (session: any) => {
-      console.log('[AuthContext] Sessão encontrada via SDK');
       const basicUser = supabaseAuthService.mapSupabaseUser(session.user);
       setUser(basicUser);
       saveSessionToStorage(basicUser, session.access_token);
@@ -337,13 +317,10 @@ export function AuthProvider({ children }: AuthProviderProps) {
         window.dispatchEvent(new CustomEvent('auth-token-updated', {
           detail: { token }
         }));
-      } else {
-        console.log('[AuthContext] Edge Mobile: pulando evento durante navegação');
       }
     };
 
     const clearSession = () => {
-      console.log('[AuthContext] Limpando sessão');
       setUser(null);
       setAuthFailed(true);
       localStorage.removeItem('user');
@@ -357,7 +334,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const handleTokenUpdated = async (e: Event) => {
       const customEvent = e as CustomEvent;
       const token = customEvent.detail?.token;
-      console.log('[AuthContext] Evento auth-token-updated recebido');
       
       if (token) {
         // Tentar restaurar usuário do localStorage
@@ -368,7 +344,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
             setUser(parsedUser);
             setAuthFailed(false);
             setLoading(false);
-            console.log('[AuthContext] Usuário restaurado via evento');
           } catch (e) {
             console.error('[AuthContext] Erro ao parsear usuário do evento');
           }
@@ -383,7 +358,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     // Listener de eventos do Supabase
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log(`[AuthContext] Evento: ${event}`, session ? 'com sessão' : 'sem sessão');
 
       if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
         if (session) {
@@ -397,11 +371,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
            
            if (hasLocalToken && recoveryAttemptsRef.current < 2) {
              recoveryAttemptsRef.current++;
-             console.log(`[AuthContext] SIGNED_OUT detectado, tentativa de recuperação ${recoveryAttemptsRef.current}/2...`);
              tryRecoverSession();
            } else {
              // Sem token ou já tentamos demais - limpar e parar
-             console.log('[AuthContext] SIGNED_OUT - limpando sessão (sem token ou tentativas esgotadas)');
              clearSession();
            }
         }

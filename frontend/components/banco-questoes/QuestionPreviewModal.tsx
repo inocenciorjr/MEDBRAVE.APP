@@ -29,6 +29,10 @@ interface QuestionPreviewModalProps {
   years: number[];
   institutions: string[];
   onQuestionsLoaded?: (questions: Question[]) => void;
+  // Filtros opcionais
+  excludeOutdated?: boolean;
+  excludeAnnulled?: boolean;
+  onlyUnanswered?: boolean;
 }
 
 export default function QuestionPreviewModal({
@@ -39,6 +43,9 @@ export default function QuestionPreviewModal({
   years,
   institutions,
   onQuestionsLoaded,
+  excludeOutdated,
+  excludeAnnulled,
+  onlyUnanswered,
 }: QuestionPreviewModalProps) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
@@ -81,6 +88,9 @@ export default function QuestionPreviewModal({
       subFilterIds: [...subFilterIds].sort(),
       years: [...years].sort(),
       institutions: [...institutions].sort(),
+      excludeOutdated,
+      excludeAnnulled,
+      onlyUnanswered,
     });
 
     // Só executar se os filtros mudaram ou é a primeira vez
@@ -151,6 +161,9 @@ export default function QuestionPreviewModal({
         subFilterIds,
         years,
         institutions,
+        excludeOutdated,
+        excludeAnnulled,
+        unansweredFilter: onlyUnanswered ? 'unanswered_system' : 'all',
         page: 1,
         limit: 10000, // Buscar todas
       });

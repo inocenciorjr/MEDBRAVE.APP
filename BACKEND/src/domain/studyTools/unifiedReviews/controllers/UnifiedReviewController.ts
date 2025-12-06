@@ -873,14 +873,12 @@ export class UnifiedReviewController {
           logger.error('Erro ao buscar cards revisados:', cardsError);
         } else {
           reviewedItems = (cards || []).map((card: any) => ({
-            id: card.id,  // ID do card FSRS (correto)
+            id: card.id,
             content_id: card.content_id,
             content_type: card.content_type,
             due: card.due,
             last_review: card.last_review,
           }));
-          
-          logger.info(`[Planner] Encontrados ${reviewedItems.length} cards revisados no período`);
         }
       } catch (error) {
         logger.error('Exceção ao buscar cards revisados:', error);

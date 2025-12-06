@@ -23,13 +23,9 @@ export class PlanExpirationService {
    */
   start(intervalHours: number = 1): void {
     if (this.isRunning) {
-      logger.warn('[PlanExpiration] Service is already running');
       return;
     }
 
-    logger.info(`[PlanExpiration] Starting service (interval: ${intervalHours}h)`);
-
-    // Run immediately on start
     this.runExpiration();
 
     // Schedule periodic expiration check
@@ -50,7 +46,6 @@ export class PlanExpirationService {
       this.intervalId = null;
     }
     this.isRunning = false;
-    logger.info('[PlanExpiration] Service stopped');
   }
 
   /**
@@ -58,14 +53,10 @@ export class PlanExpirationService {
    */
   async runExpiration(): Promise<{ processedCount: number; expiredCount: number }> {
     try {
-      logger.info('[PlanExpiration] Checking for expired plans...');
-      
       const result = await this.userPlanService.checkAndExpireUserPlans();
       
       if (result.expiredCount > 0) {
         logger.info(`[PlanExpiration] Expired ${result.expiredCount} plans`);
-      } else {
-        logger.info('[PlanExpiration] No expired plans found');
       }
 
       return result;

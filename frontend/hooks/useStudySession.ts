@@ -17,9 +17,7 @@ export function useStudySession(activityType: ActivityType) {
   // Iniciar sessão
   const startSession = useCallback(async () => {
     try {
-      console.log('[useStudySession] Iniciando sessão:', activityType);
       const newSession = await studySessionService.startSession({ activity_type: activityType });
-      console.log('[useStudySession] Sessão criada:', newSession);
       setSession(newSession);
       setIsActive(true);
       setItemsCompleted(0);
@@ -29,7 +27,6 @@ export function useStudySession(activityType: ActivityType) {
         if (newSession?.id) {
           try {
             await studySessionService.heartbeat(newSession.id);
-            console.log('[useStudySession] Heartbeat enviado');
           } catch (error) {
             console.error('[useStudySession] Erro ao enviar heartbeat:', error);
           }
@@ -55,7 +52,6 @@ export function useStudySession(activityType: ActivityType) {
 
     // Criar novo timer
     inactivityTimeoutRef.current = setTimeout(() => {
-      console.log('[useStudySession] ⏰ Timeout de inatividade (10 min), finalizando sessão...');
       endSession();
     }, INACTIVITY_TIMEOUT);
   }, [isActive]);
@@ -99,9 +95,7 @@ export function useStudySession(activityType: ActivityType) {
   useEffect(() => {
     const fetchActiveSession = async () => {
       try {
-        console.log('[useStudySession] Buscando sessão ativa...');
         const activeSession = await studySessionService.getActiveSession();
-        console.log('[useStudySession] Sessão ativa encontrada:', activeSession);
         if (activeSession && activeSession.activity_type === activityType) {
           setSession(activeSession);
           setIsActive(true);
@@ -112,7 +106,6 @@ export function useStudySession(activityType: ActivityType) {
             if (activeSession.id) {
               try {
                 await studySessionService.heartbeat(activeSession.id);
-                console.log('[useStudySession] Heartbeat enviado (sessão recuperada)');
               } catch (error) {
                 console.error('[useStudySession] Erro ao enviar heartbeat:', error);
               }

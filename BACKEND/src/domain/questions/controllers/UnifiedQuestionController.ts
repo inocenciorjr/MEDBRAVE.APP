@@ -231,9 +231,7 @@ export class UnifiedQuestionController {
   async getQuestionsFromList(req: Request, res: Response, next: NextFunction) {
     try {
       const { id } = req.params;
-      console.log('[UnifiedQuestionController] getQuestionsFromList - listId:', id);
       const result = await this.questionService.getQuestionsFromList(id);
-      console.log('[UnifiedQuestionController] Questões retornadas:', result?.length || 0);
       res.status(200).json({ data: result });
     } catch (error) {
       next(error);
@@ -246,7 +244,6 @@ export class UnifiedQuestionController {
       const offset = parseInt(req.query.offset as string) || 0;
       const limit = parseInt(req.query.limit as string) || 20;
       
-      console.log('[UnifiedQuestionController] getQuestionsFromListBatch:', { id, offset, limit });
       const result = await this.questionService.getQuestionsFromListBatch(id, offset, limit);
       res.status(200).json({ data: result.questions, total: result.total });
     } catch (error) {
@@ -257,10 +254,7 @@ export class UnifiedQuestionController {
   async getBulkQuestions(req: Request, res: Response, next: NextFunction) {
     try {
       const { ids } = req.body;
-      console.log('[UnifiedQuestionController] getBulkQuestions - IDs recebidos:', ids?.length || 0);
-      console.log('[UnifiedQuestionController] Primeiros 3 IDs:', ids?.slice(0, 3));
       const result = await this.questionService.getBulkQuestions(ids);
-      console.log('[UnifiedQuestionController] Questões encontradas:', result?.length || 0);
       res.status(200).json({ data: result });
     } catch (error) {
       next(error);
@@ -301,7 +295,6 @@ export class UnifiedQuestionController {
       const stats = await this.questionService.getQuestionStats();
       res.status(200).json(stats);
     } catch (error) {
-      console.error('[UnifiedQuestionController] Error getting stats:', error);
       next(error);
     }
   }

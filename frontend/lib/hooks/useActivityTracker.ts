@@ -49,14 +49,9 @@ export function useActivityTracker(userId: string | null, sessionId: string | nu
           // Disconnected
         });
 
-        socket.on('connect_error', (error: any) => {
-          console.error('❌ [ActivityTracker] Connection error:', {
-            message: error.message,
-            description: error.description,
-            context: error.context,
-            type: error.type,
-            data: error.data,
-          });
+        socket.on('connect_error', () => {
+          // Silenciar erros de conexão - o socket.io já tenta reconectar automaticamente
+          // Não logar para evitar spam no console quando o backend está offline
         });
 
         socketRef.current = socket;

@@ -1,138 +1,82 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dito Game Play Screen</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<title>Halloween Offers Banner</title>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&amp;family=Roboto:wght@700;900&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<style>
+        .halloween-font {
+            font-family: 'Creepster', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .offer-font {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        .glow {
+             text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+        }
+        .jack-o-lantern-glow {
+            filter: drop-shadow(0 0 15px #f97316) drop-shadow(0 0 5px #f97316);
+        }
+    </style>
 <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#DC2626", // Red from the 'g1' logo
-            "background-light": "#F3F4F6", // Light grey for the background
-            "background-dark": "#111827", // Dark grey for dark mode background
-            "surface-light": "#FFFFFF", // White for cards/keyboard
-            "surface-dark": "#1F2937", // Darker grey for cards/keyboard in dark mode
-            "text-light": "#111827", // Almost black for text
-            "text-dark": "#F9FAFB", // Almost white for text
-            "border-light": "#D1D5DB", // Grey for borders
-            "border-dark": "#4B5563", // Lighter grey for borders in dark mode
-            "tile-border-light": "#B0B0B0",
-            "tile-border-dark": "#555555",
-            "tile-border-bottom-light": "#888888",
-            "tile-border-bottom-dark": "#333333"
-          },
-          fontFamily: {
-            display: ["Roboto", "sans-serif"],
-          },
-          borderRadius: {
-            DEFAULT: "0.5rem", // 8px
-            lg: "0.75rem", // 12px
-            full: "9999px",
-          },
-          boxShadow: {
-            'tile': '0px 4px 0px 0px #888888',
-            'tile-dark': '0px 4px 0px 0px #333333',
-            'tile-active': '0px 2px 0px 0px #888888'
-          }
-        },
-      },
-    };
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#f97316", // Orange for buttons or accents
+                        "background-light": "#f3f4f6", // Light gray
+                        "background-dark": "#111827", // Dark gray
+                    },
+                    fontFamily: {
+                        display: ["Creepster", "cursive"],
+                        body: ["Roboto", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
-<div class="flex flex-col min-h-screen">
-<header class="bg-surface-light dark:bg-surface-dark w-full px-6 py-3 shadow-sm">
-<div class="max-w-7xl mx-auto flex justify-between items-center">
-<span class="material-icons-outlined text-text-light dark:text-text-dark">arrow_back_ios_new</span>
-<div class="flex items-center space-x-2">
-<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.0999 15.688V8.312H8.38791V6H15.6119V8.312H12.8999V15.688H15.6119V18H8.38791V15.688H11.0999Z" fill="#DC2626"></path>
-</svg>
-<span class="font-bold text-2xl text-text-light dark:text-text-dark">g1</span>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4">
+<div class="w-full max-w-7xl mx-auto">
+<div class="relative w-full h-28 md:h-32 bg-gradient-to-r from-sky-500 via-blue-700 to-indigo-900 overflow-hidden flex items-center justify-between px-4 sm:px-6 lg:px-8">
+<div class="absolute inset-0 z-0">
+<img alt="Bat silhouette" class="absolute top-1/2 left-[5%] h-6 w-6 opacity-30 -translate-y-6 transform rotate-[-20deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa_KkFB7HABNrrz83PHFG_Fa_Wnx8WI6sog5FCg-tTM1HcUn1-AlQBgewrhOJyRINDv9Zxpi4IPasDKNkCj3srF-6WPm6k6-ELYTJ8FLzdnaq2NtUjFVHCHItiJigF-x84HZQ9QHZyy0Rk5xOdTHi9M6CF7aAqlhY-Qr0HmC4C0vclum6_cxVHLgTOuKsjXBmevHFYu-6RF8T65L3ZUsvZGIgj_ei8KNGU-3Gn0OrS0k1f1UjYZcNHywuKYjfSBzlWglUGLCqfByE"/>
+<img alt="Bat silhouette" class="absolute top-1/4 left-[10%] h-5 w-5 opacity-40 transform rotate-[15deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF1tTQ7irRSEHQX5Pk88iLGUOuXvjXAqgJBfIxtktWEdpRT1OqC_N76bRXoMFD_ea8ogTH6JXeKW1VmfSaRseeKhvA05PaeKp6H0GV2v2hLkYa35gBRHEdCg_x89v0FD4SyaJs84SxCj5yBH5YPBfd2BzH99WzTF8sjxxclpQzyC_uQf9eBVSC0VcY8rf5TfSFDhghJFYXpaAkGjLbrJGI3FWEUC8auvY1RUpg0HaaeSBXyU6yZVVXjabA-HPDXNd40dWOHFzqCy0"/>
+<img alt="Bat silhouette" class="absolute top-2/3 left-[2%] h-4 w-4 opacity-20 transform -rotate-[10deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEat444b52uCyV8PlXEA4AtKdbxqS_yNS0BbpVOS4t_AHRnFe4SD0lY08ErfQx0cZ0a923fHLlqnJ8KMDHAG5R5W_6naebdN2M3V0TuBrimHgvg7CtH94RwdWvCgby_i1ZIoosLoWAF-3KagT4Kpez4f3ioiLoUTMDYzkY01gNl4aLnFCzvK0OIjCkUCahAdblv5ExTQxU2xJyUpxFEmIkmQgOg3Al-Hw6Wet6Wx39Uo6svXbb9SphD3DxuxhAa9Nw_RK5eAinyKU"/>
+<img alt="Bat silhouette" class="absolute top-1/4 right-[12%] h-5 w-5 opacity-10 transform scale-x-[-1] rotate-[10deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBHZlehX2DcJtRo4QQ8Oe7VApLnjBMFPCD3CZ4wgslpAEdbS7aJ8oedNPPD8XH0gyP0HgqtLsG6AVNnWJdiyhovlKuEG22c5wamch0CqVaDp834u9V49IjtVlB7o6AlnuW9POwGoyCrI8i6wTWLR9MGhngCUG7cIBR2PXC3k_f7JbM9RRrYAItnzxKWWmN3a7wdIULSxLNa0e0jEaVCkk4W8eaDshypBUb0meoOc_NhOCjoLzYrmQLBYa97Kh7-xj9x4tdNeyTsFc"/>
+<img alt="Bat silhouette" class="absolute top-2/3 right-[5%] h-6 w-6 opacity-15 transform scale-x-[-1] -rotate-[15deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYt0vC4aeBOeM0OemlPHzaZ3wwhmXEX3-5qS0aQGD5F-8z2ekMQqbcl-T2pUE9L1rxcc7VKu67jV2HTRaJ5XCyYNkDPHkUaa1sHjbHXP1vLADoBbiYbksHj69-mMePf3TQ8zX1nuzk7xWg1YisSGM9jVBn4JRn4r3eovrv7knX4mkEkt9Jdl22SHQQXhxNQB3BigMXrfVBUZvwOffJOt-m3Juwp9LAqIzVhng2GJqDfk2ecPaS8qUv4DHivV1hpT9aegaGw0dwB30"/>
+<img alt="Bat silhouette" class="absolute top-1/2 right-[15%] h-4 w-4 opacity-20 transform scale-x-[-1] rotate-[25deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3hhN8GHwmCXjluAY38nQD0kweiFlQ8MBj4FTSR2mtQHidGDb5nFF7QvSzZ1nyDl_MNuXs0gfYPbnvU4mhjHNGNl9kebY735CxwlwxbLO5l0wIo_T9-Okit1s0b3ldwKmrcg9-aLIEKyFLyGv8hKqNWjfEzlkgbrxT08sBjVFUFCqveFsI6Yz7B6-4gikN_GMmC4P5sSgGUBuRpoNExdreBxAaFJJVG3q04r-EQdg26HaduOV-ImWvX_5O5ocNsG7NWUyYmebJemc"/>
 </div>
-<div class="flex items-center space-x-4">
-<span class="material-icons-outlined text-text-light dark:text-text-dark">share</span>
-<span class="material-icons-outlined text-text-light dark:text-text-dark">settings</span>
+<div class="relative z-10 w-full flex items-center justify-between space-x-2 md:space-x-4">
+<div class="flex items-end">
+<img alt="Glowing Jack-o'-lantern" class="h-16 w-16 md:h-20 md:w-20 jack-o-lantern-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJCb9lKQMWYpIXrhpZgFiRtC_FhOiHwsxzH0BfBziKGKzHBuJ7cG24uIxUpyJR-C7u3FD_O5B4a01vufK90HvoQcw7ZWx1Xmd7FA2UFJL-Hj-52nhM-k8GtBpKhj0aTsPOOH8vlVkfgRd5cayFGkZ3g4qNPIQ08eRcbWYYIOP4XxG728MUMIDi7ssJ5nRazwLJomqWvBngZdP04EdZiSdMZyQXByrbIPlr_ET4VVdo-ajJEYlarNU-zxNqKUTGMMqsQlZ_cIh6wy8"/>
 </div>
+<div class="flex-grow flex items-center justify-center space-x-2 md:space-x-6 text-center">
+<div class="flex items-center space-x-2 md:space-x-3">
+<span class="text-3xl text-yellow-300 transform -translate-y-2 rotate-12">★</span>
+<span class="text-xl text-yellow-300 transform translate-y-3">★</span>
 </div>
-</header>
-<main class="flex-grow flex flex-col items-center justify-center px-4 py-8">
-<div class="flex flex-col items-center space-y-2 mb-8">
-<h1 class="text-2xl font-bold text-text-light dark:text-text-dark">Dito</h1>
-<p class="text-lg text-text-light dark:text-text-dark">00:32</p>
+<h2 class="halloween-font text-3xl md:text-5xl text-yellow-400 whitespace-nowrap">HALLOWEEN IS HERE</h2>
+<img alt="Cute ghost holding a pumpkin basket" class="h-16 w-16 md:h-20 md:w-20 transform -scale-x-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMuaGE8f7ujA5J2oCJ3GCqI8TDEVDIWiOLB4LQm4AMejt72YxSojT8oLDpxh3KmGVP8D62jV4_70zPz-AJYOLhVpBAXTU6V9wlWMwPpgF3erGwnZdE2c0U_V5uqWYUAMe53f_w_8gdTUobmee31SeRFbXqU2oNxZ0KU1RQZRdrmEhTZSIAu1PO2wSV7OYfmhVFUrSsy5KnvdBCaeFR2TjUgzW0fOrKFoVHj5bk4aG2iPhpsgeF5uZotzCBtW6QczM3uTcIUhfeZac"/>
+<h3 class="offer-font text-xl md:text-4xl text-cyan-300 glow whitespace-nowrap">Special Offers!</h3>
 </div>
-<div class="grid grid-cols-5 gap-2 mb-12">
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">G</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">A</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">G</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">A</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">S</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark">G</div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x-2 border-b-2 border-text-light dark:border-text-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile-active dark:shadow-none translate-y-0.5"></div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 flex items-center justify-center text-3xl font-bold uppercase border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
-<div class="w-16 h-16 border-t border-x border-tile-border-light dark:border-tile-border-dark rounded-md bg-surface-light dark:bg-surface-dark shadow-tile dark:shadow-tile-dark"></div>
+<div class="flex flex-col items-center text-center text-white">
+<span class="offer-font text-3xl md:text-5xl text-cyan-300 glow leading-none">20%</span>
+<span class="font-bold text-sm md:text-base tracking-wide">ON ALL ITEMS</span>
 </div>
-<div class="w-full max-w-2xl mx-auto">
-<div class="flex flex-col space-y-2">
-<div class="flex justify-center space-x-2">
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">Q</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">W</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">E</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">R</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">T</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">Y</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">U</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">I</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">O</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">P</button>
-</div>
-<div class="flex justify-center space-x-2 px-4">
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">A</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">S</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">D</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">F</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">G</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">H</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">J</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">K</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">L</button>
-</div>
-<div class="flex justify-center space-x-2">
-<button class="w-20 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-sm text-text-light dark:text-text-dark">Enter</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">Z</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">X</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">C</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">V</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">B</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">N</button>
-<button class="flex-1 h-14 bg-surface-light dark:bg-surface-dark rounded-md shadow-sm font-semibold uppercase text-lg text-text-light dark:text-text-dark">M</button>
-<button class="w-20 h-14 flex items-center justify-center bg-surface-light dark:bg-surface-dark rounded-md shadow-sm text-text-light dark:text-text-dark">
-<span class="material-icons-outlined">backspace</span>
-</button>
+<div class="absolute right-2 top-2 flex flex-col items-center">
+<span class="text-xl text-yellow-200 opacity-60 transform rotate-[-25deg]">✶</span>
 </div>
 </div>
 </div>
-</main>
 </div>
+
 </body></html>

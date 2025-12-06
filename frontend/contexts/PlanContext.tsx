@@ -57,13 +57,11 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
       // No Edge Mobile, NÃO fazer requisições na página de callback
       // A página de destino vai carregar os dados
       if (isEdgeMobile && window.location.pathname.includes('/auth/callback')) {
-        console.log('[PlanContext] Edge Mobile: ignorando na página de callback');
         return;
       }
       
       // No Edge Mobile, delay inicial para evitar requisições durante navegação
       if (isEdgeMobile && isInitial) {
-        console.log('[PlanContext] Edge Mobile: aguardando navegação estabilizar...');
         await new Promise(r => setTimeout(r, 1000));
       }
 
@@ -85,12 +83,10 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
         // Se o token apareceu OU é Edge Mobile inicial, carregar plano
         if (storedToken && (!hadToken || shouldForceLoad)) {
-          console.log('[PlanContext] Carregando plano...', shouldForceLoad ? '(forçado Edge Mobile)' : '');
           planService.clearCache();
           setLoading(true);
           try {
             const plan = await planService.getUserPlan(storedToken);
-            console.log('[PlanContext] Plano carregado:', plan?.planName || 'nenhum');
             setUserPlan(plan);
           } catch (err: any) {
             console.error('[PlanContext] Erro ao carregar plano:', err);
@@ -123,7 +119,6 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
     const handleAuthTokenUpdated = async (e: CustomEvent) => {
       // No Edge Mobile, ignorar evento durante navegação recente para evitar requisições canceladas
       if (isEdgeMobile && performance.now() < 5000) {
-        console.log('[PlanContext] Edge Mobile: ignorando evento durante navegação');
         return;
       }
       

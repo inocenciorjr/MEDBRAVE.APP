@@ -23,7 +23,7 @@ export class DailyGamesJob {
 
   // ==================== MED TERMOOO ====================
   private async generateMedTermoooWord(date: Date): Promise<void> {
-    const dateStr = date.toISOString().split('T')[0];
+    const dateStr = this.formatDateBrasilia(date);
 
     const { data: existing } = await this.supabase
       .from('med_termooo_daily_words')
@@ -32,7 +32,6 @@ export class DailyGamesJob {
       .single();
 
     if (existing) {
-      console.log(`[MedTermooo] Palavra do dia ${dateStr} já existe`);
       return;
     }
 
@@ -49,11 +48,8 @@ export class DailyGamesJob {
       });
 
     if (error) {
-      console.error(`[MedTermooo] Erro ao criar palavra ${dateStr}:`, error);
       throw error;
     }
-
-    console.log(`[MedTermooo] ✅ Palavra criada: ${word.word} (${word.category})`);
   }
 
   // ==================== CAÇA-PALAVRAS ====================
@@ -152,7 +148,7 @@ export class DailyGamesJob {
   }
 
   private async generateWordSearchPuzzle(date: Date): Promise<void> {
-    const dateStr = date.toISOString().split('T')[0];
+    const dateStr = this.formatDateBrasilia(date);
 
     const { data: existing } = await this.supabase
       .from('word_search_daily_puzzles')
@@ -161,7 +157,6 @@ export class DailyGamesJob {
       .single();
 
     if (existing) {
-      console.log(`[WordSearch] Puzzle do dia ${dateStr} já existe`);
       return;
     }
 
@@ -185,21 +180,22 @@ export class DailyGamesJob {
       });
 
     if (error) {
-      console.error(`[WordSearch] Erro ao criar puzzle ${dateStr}:`, error);
       throw error;
     }
-
-    console.log(`[WordSearch] ✅ Puzzle criado: "${puzzleData.title}" (${normalizedWords.length} palavras)`);
   }
 
   // ==================== EXECUÇÃO ====================
-  async generateAllForDate(date: Date): Promise<void> {
-    const dateStr = date.toISOString().split('T')[0];
-    console.log(`[DailyGames] 🎮 Gerando conteúdo para ${dateStr}...`);
+  private formatDateBrasilia(date: Date): string {
+    // Formatar data no timezone de Brasília (YYYY-MM-DD)
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
 
+  async generateAllForDate(date: Date): Promise<void> {
     const results: { game: string; success: boolean; error?: string }[] = [];
 
-    // MED TERMOOO
     try {
       await this.generateMedTermoooWord(date);
       results.push({ game: 'MedTermooo', success: true });
@@ -207,7 +203,6 @@ export class DailyGamesJob {
       results.push({ game: 'MedTermooo', success: false, error: error.message });
     }
 
-    // CAÇA-PALAVRAS
     try {
       await this.generateWordSearchPuzzle(date);
       results.push({ game: 'WordSearch', success: true });
@@ -215,12 +210,8 @@ export class DailyGamesJob {
       results.push({ game: 'WordSearch', success: false, error: error.message });
     }
 
-    // Resumo
-    const successCount = results.filter(r => r.success).length;
-    console.log(`[DailyGames] ✅ ${successCount}/${results.length} jogos gerados para ${dateStr}`);
-    
     results.filter(r => !r.success).forEach(r => {
-      console.error(`[DailyGames] ❌ ${r.game}: ${r.error}`);
+      console.error(`[DailyGames] Erro ${r.game}: ${r.error}`);
     });
   }
 
@@ -232,19 +223,14 @@ export class DailyGamesJob {
   }
 
   start(): void {
-    // Gerar para hoje ao iniciar
     this.generateToday().catch(console.error);
 
-    // Agendar para meia-noite (Brasília)
     cron.schedule('0 0 * * *', async () => {
-      console.log('[DailyGames] 🕛 Executando job de jogos diários...');
       try {
         await this.generateToday();
       } catch (error) {
-        console.error('[DailyGames] ❌ Erro no job:', error);
+        console.error('[DailyGames] Erro no job:', error);
       }
     }, { timezone: 'America/Sao_Paulo' });
-
-    console.log('[DailyGames] 📅 Job centralizado agendado para 00:00 BRT');
   }
 }

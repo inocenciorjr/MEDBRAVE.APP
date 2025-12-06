@@ -14,10 +14,7 @@ const API_URL = isEdgeMobile
       ? 'http://localhost:5000/api' 
       : 'https://medbraveapp-production.up.railway.app/api'));
 
-// Log para debug
-if (typeof window !== 'undefined') {
-  console.log('[API] Edge Mobile:', isEdgeMobile, 'API_URL:', API_URL);
-}
+
 
 // Criar instância do axios com configurações padrão
 const axiosInstance = axios.create({

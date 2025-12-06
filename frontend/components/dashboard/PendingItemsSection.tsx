@@ -260,7 +260,7 @@ export function PendingItemsSection() {
         <h3 className="font-display font-semibold text-text-light-secondary dark:text-text-dark-secondary mb-3">
           Listas e Simulados
         </h3>
-        <div className="text-center py-6 bg-background-light dark:bg-background-dark rounded-xl border border-border-light dark:border-border-dark">
+        <div className="text-center py-6 bg-surface-light dark:bg-surface-dark rounded-xl border border-border-light dark:border-border-dark">
           <span className="material-symbols-outlined text-3xl mb-2 block opacity-50 text-text-light-secondary dark:text-text-dark-secondary">
             inbox
           </span>
@@ -307,7 +307,7 @@ export function PendingItemsSection() {
             <button
               key={`${item.type}-${item.id}`}
               onClick={() => handleItemClick(item)}
-              className="w-full rounded-xl overflow-hidden bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark hover:border-primary/40 transition-all duration-200 hover:scale-[1.01] hover:shadow-lg dark:hover:shadow-dark-lg text-left group"
+              className="w-full rounded-xl overflow-hidden bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary/40 transition-all duration-200 hover:scale-[1.01] hover:shadow-lg dark:hover:shadow-dark-lg text-left group"
             >
               <div className="p-3 pb-2">
                 <div className="flex items-start gap-3">

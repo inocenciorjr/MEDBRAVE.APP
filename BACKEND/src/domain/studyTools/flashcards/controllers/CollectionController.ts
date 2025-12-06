@@ -795,34 +795,18 @@ export class CollectionController {
    */
   async removeThumbnail(req: AuthenticatedRequest, res: Response) {
     try {
-      console.log('🗑️ [removeThumbnail] ========== INÍCIO ==========');
-      console.log('🗑️ [removeThumbnail] Método HTTP:', req.method);
-      console.log('🗑️ [removeThumbnail] URL:', req.url);
-      console.log('🗑️ [removeThumbnail] Headers:', JSON.stringify(req.headers, null, 2));
-      console.log('🗑️ [removeThumbnail] Body:', JSON.stringify(req.body, null, 2));
-      
       const userId = req.user?.id;
-      console.log('🗑️ [removeThumbnail] User ID:', userId);
-      console.log('🗑️ [removeThumbnail] User completo:', JSON.stringify(req.user, null, 2));
 
       if (!userId) {
-        console.log('❌ [removeThumbnail] Usuário não autenticado');
         return res.status(401).json({ success: false, message: 'Usuário não autenticado' });
       }
 
       const { collectionId } = req.body;
-      console.log('🗑️ [removeThumbnail] collectionId recebido:', collectionId);
-      console.log('🗑️ [removeThumbnail] Tipo do collectionId:', typeof collectionId);
 
       if (!collectionId) {
-        console.log('❌ [removeThumbnail] collectionId não fornecido');
         return res.status(400).json({ success: false, message: 'collectionId é obrigatório' });
       }
 
-      // Buscar a coleção para verificar se pertence ao usuário e obter thumbnail_url e image_url
-      console.log('🔍 [removeThumbnail] Iniciando busca da coleção no Supabase...');
-      console.log('🔍 [removeThumbnail] Query: SELECT id, user_id, thumbnail_url, image_url FROM collections WHERE id =', collectionId, 'AND user_id =', userId);
-      
       const { data: collection, error: fetchError } = await supabase
         .from('collections')
         .select('id, user_id, thumbnail_url, image_url')
@@ -830,80 +814,44 @@ export class CollectionController {
         .eq('user_id', userId)
         .single();
 
-      console.log('🔍 [removeThumbnail] Resultado da busca:');
-      console.log('🔍 [removeThumbnail] - Data:', JSON.stringify(collection, null, 2));
-      console.log('🔍 [removeThumbnail] - Error:', JSON.stringify(fetchError, null, 2));
-
       if (fetchError) {
-        console.error('❌ [removeThumbnail] Erro ao buscar coleção:', fetchError);
-        console.error('❌ [removeThumbnail] Código do erro:', fetchError.code);
-        console.error('❌ [removeThumbnail] Mensagem do erro:', fetchError.message);
-        console.error('❌ [removeThumbnail] Detalhes do erro:', fetchError.details);
-        console.error('❌ [removeThumbnail] Hint do erro:', fetchError.hint);
+        console.error('Erro ao buscar coleção:', fetchError);
         return res.status(500).json({ success: false, message: 'Erro ao buscar coleção', error: fetchError.message });
       }
 
       if (!collection) {
-        console.log('❌ [removeThumbnail] Coleção não encontrada (data é null)');
         return res.status(404).json({ success: false, message: 'Coleção não encontrada' });
       }
 
-      console.log('✅ [removeThumbnail] Coleção encontrada com sucesso!');
-      console.log('✅ [removeThumbnail] Dados da coleção:', JSON.stringify(collection, null, 2));
-
       const thumbnailUrl = collection.thumbnail_url;
       const imageUrl = collection.image_url;
-      console.log('🖼️ [removeThumbnail] Thumbnail URL atual:', thumbnailUrl);
-      console.log('🖼️ [removeThumbnail] Image URL atual:', imageUrl);
 
-      // Remover thumbnail_url do R2 se existir (exceto thumbnail padrão)
       if (thumbnailUrl && thumbnailUrl.includes('medbrave.com.br') && !thumbnailUrl.includes('/medbravethumb.png')) {
-        console.log('🗑️ [removeThumbnail] Iniciando remoção do thumbnail_url do R2...');
         try {
           const { R2Service } = await import('../../../../services/r2Service');
           const r2Service = new R2Service();
-
           const imageKey = thumbnailUrl.split('medbrave.com.br/')[1];
-          console.log('🗑️ [removeThumbnail] Thumbnail key:', imageKey);
-          
           if (imageKey) {
             await r2Service.deleteFile(imageKey);
-            console.log(`✅ [removeThumbnail] Thumbnail removida do R2: ${imageKey}`);
           }
         } catch (deleteError) {
-          console.error('⚠️ [removeThumbnail] Erro ao remover thumbnail do R2:', deleteError);
-          // Continuar mesmo se falhar ao remover do R2
+          console.error('Erro ao remover thumbnail do R2:', deleteError);
         }
       }
 
-      // Remover image_url do R2 se existir (exceto thumbnail padrão)
       if (imageUrl && imageUrl.includes('medbrave.com.br') && !imageUrl.includes('/medbravethumb.png')) {
-        console.log('🗑️ [removeThumbnail] Iniciando remoção do image_url do R2...');
         try {
           const { R2Service } = await import('../../../../services/r2Service');
           const r2Service = new R2Service();
-
           const imageKey = imageUrl.split('medbrave.com.br/')[1];
-          console.log('🗑️ [removeThumbnail] Image key:', imageKey);
-          
           if (imageKey) {
             await r2Service.deleteFile(imageKey);
-            console.log(`✅ [removeThumbnail] Image removida do R2: ${imageKey}`);
           }
         } catch (deleteError) {
-          console.error('⚠️ [removeThumbnail] Erro ao remover image do R2:', deleteError);
-          // Continuar mesmo se falhar ao remover do R2
+          console.error('Erro ao remover image do R2:', deleteError);
         }
       }
 
-      if (!thumbnailUrl && !imageUrl) {
-        console.log('ℹ️ [removeThumbnail] Não há imagens para remover do R2');
-      }
-
-      // Atualizar banco de dados - remover thumbnail da coleção (tanto thumbnail_url quanto image_url)
-      console.log('💾 [removeThumbnail] Iniciando atualização no banco de dados...');
-      console.log('💾 [removeThumbnail] Query: UPDATE collections SET thumbnail_url = null, image_url = null WHERE id =', collectionId, 'AND user_id =', userId);
-      
       const { error: updateError } = await supabase
         .from('collections')
         .update({ 
@@ -913,27 +861,17 @@ export class CollectionController {
         .eq('id', collectionId)
         .eq('user_id', userId);
 
-      console.log('💾 [removeThumbnail] Resultado da atualização:');
-      console.log('💾 [removeThumbnail] - Error:', JSON.stringify(updateError, null, 2));
-
       if (updateError) {
-        console.error('❌ [removeThumbnail] Erro ao atualizar coleção:', updateError);
-        console.error('❌ [removeThumbnail] Código do erro:', updateError.code);
-        console.error('❌ [removeThumbnail] Mensagem do erro:', updateError.message);
+        console.error('Erro ao atualizar coleção:', updateError);
         return res.status(500).json({ success: false, message: 'Erro ao remover thumbnail' });
       }
 
-      console.log('✅ [removeThumbnail] Thumbnail removida com sucesso!');
-      console.log('🗑️ [removeThumbnail] ========== FIM ==========');
-      
       return res.status(200).json({
         success: true,
         message: 'Thumbnail removida com sucesso'
       });
     } catch (error) {
-      console.error('❌ [removeThumbnail] ERRO CRÍTICO:', error);
-      console.error('❌ [removeThumbnail] Stack trace:', error instanceof Error ? error.stack : 'N/A');
-      console.error('🗑️ [removeThumbnail] ========== FIM COM ERRO ==========');
+      console.error('Erro ao remover thumbnail:', error);
       return res.status(500).json({ success: false, message: 'Erro interno do servidor' });
     }
   }

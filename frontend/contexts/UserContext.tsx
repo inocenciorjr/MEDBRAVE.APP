@@ -55,12 +55,10 @@ export function UserProvider({ children }: { children: ReactNode }) {
       
       // No Edge Mobile, NÃO fazer requisições na página de callback
       if (isEdgeMobileCheck && window.location.pathname.includes('/auth/callback')) {
-        console.log('[UserContext] Edge Mobile: ignorando na página de callback');
         return;
       }
       
       if (isEdgeMobileCheck && retryCount === 0 && !skipInitialDelay) {
-        console.log('[UserContext] Edge Mobile: aguardando navegação estabilizar...');
         await new Promise(r => setTimeout(r, 1000)); // Aumentado para 1 segundo
       }
 
@@ -97,12 +95,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
         if (retryCount < 3) {
           // Aumentar o tempo de espera progressivamente: 1s, 2s, 3s
           const delay = 1000 * (retryCount + 1);
-          console.log(`[UserContext] Token não encontrado, tentando novamente em ${delay}ms (tentativa ${retryCount + 1}/3)`);
           setTimeout(() => fetchUser(retryCount + 1), delay);
           return;
         }
-        
-        console.log('[UserContext] Token não encontrado após tentativas. Usuário não autenticado.');
         setUser(null);
         setLoading(false);
         setAuthFailed(true);
@@ -120,7 +115,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
         const { data: { session: currentSession } } = await supabase.auth.getSession();
         
         if (!currentSession && token) {
-           console.log('[UserContext] Restaurando sessão do SDK com token encontrado...');
            const storedSessionStr = localStorage.getItem(`sb-${process.env.NEXT_PUBLIC_SUPABASE_URL?.match(/https:\/\/([^.]+)\./)?.[1]}-auth-token`);
            
            if (storedSessionStr) {
@@ -135,8 +129,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
               } catch(e) {}
            }
         }
-      } else if (isEdgeMobile) {
-        console.log('[UserContext] Edge Mobile detectado, pulando restauração do SDK');
       }
 
       // Se temos token, buscar dados completos do usuário
@@ -144,8 +136,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
       const apiUrl = isEdgeMobile 
         ? '/api/user/me'  // Proxy local - mesmo domínio
         : `${process.env.NEXT_PUBLIC_API_URL}/user/me`;  // API externa
-      
-      console.log('[UserContext] Buscando usuário de:', apiUrl, isEdgeMobile ? '(via proxy)' : '(direto)');
       
       const response = await fetch(apiUrl, {
         method: 'GET',
@@ -155,7 +145,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
         },
         credentials: 'include',
       });
-      console.log('[UserContext] Resposta recebida:', response.status);
 
       if (!response.ok) {
         console.error('❌ [UserContext] Erro ao buscar dados do usuário:', response.status, response.statusText);
@@ -219,7 +208,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
           performance.now() < 3000; // Primeiros 3 segundos após carregar a página
         
         if (isEdgeMobileNav) {
-          console.log('[UserContext] Edge Mobile: ignorando evento SDK durante navegação');
           return;
         }
         
@@ -233,7 +221,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
       // Escutar evento customizado do AuthContext (útil para Edge Mobile recovery)
       const handleTokenUpdate = (e: Event) => {
-         console.log('[UserContext] Token atualizado via evento, recarregando user...');
          fetchUser();
       };
       window.addEventListener('auth-token-updated', handleTokenUpdate);

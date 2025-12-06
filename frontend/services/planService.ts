@@ -14,10 +14,7 @@ const API_URL = isEdgeMobile ? '/api' : (process.env.NEXT_PUBLIC_API_URL || '/ap
 // Remove /api do final se existir para evitar duplicação
 const BASE_URL = API_URL.replace(/\/api$/, '');
 
-// Log para debug
-if (typeof window !== 'undefined') {
-  console.log('[PlanService] Edge Mobile:', isEdgeMobile, 'BASE_URL:', BASE_URL);
-}
+
 
 /**
  * Wrapper para fazer requisições HTTP

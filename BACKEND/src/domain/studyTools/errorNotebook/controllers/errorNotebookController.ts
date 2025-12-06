@@ -144,11 +144,6 @@ export class ErrorNotebookController {
    */
   async getUserErrorNotes(req: Request, res: Response): Promise<void> {
     try {
-      logger.info('Controller: Listar anotações do usuário', {
-        user_id: req.user?.id,
-        query: req.query,
-      });
-
       // Validar autenticação
       if (!req.user?.id) {
         throw AppError.unauthorized('Usuário não autenticado');
@@ -202,12 +197,6 @@ export class ErrorNotebookController {
         req.user.id,
         options,
       );
-
-      logger.info('Anotações listadas com sucesso', {
-        user_id: req.user.id,
-        totalFound: result.entries.length,
-        total: result.total,
-      });
 
       res.json({
         success: true,

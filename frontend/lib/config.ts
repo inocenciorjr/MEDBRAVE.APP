@@ -18,11 +18,4 @@ export const BACKEND_URL = isDevelopment
  */
 export const API_URL = `${BACKEND_URL}/api`;
 
-/**
- * Log da configuração (apenas no servidor para não poluir o console do browser)
- */
-if (isServer) {
-  console.log('[Config] Environment:', process.env.NODE_ENV);
-  console.log('[Config] Backend URL:', BACKEND_URL);
-  console.log('[Config] API URL:', API_URL);
-}
+

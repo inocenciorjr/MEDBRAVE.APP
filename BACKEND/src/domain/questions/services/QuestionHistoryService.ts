@@ -304,19 +304,14 @@ export class QuestionHistoryService {
         throw new AppError('Erro ao registrar tentativa', 500);
       }
 
-      logger.info(`Tentativa ${attemptNumber} registrada para questão ${data.question_id}`);
-
-      // ✅ INTEGRAÇÃO COM SISTEMA DE REVISÃO FSRS (executar em background, não bloquear resposta)
-      // ⚠️ NÃO integrar simulados com FSRS - simulados são para avaliação, não para revisão espaçada
-      // Se o usuário abandona ou finaliza sem responder, não deve afetar o sistema de revisões
+      // Integração com sistema de revisão FSRS (executar em background, não bloquear resposta)
+      // Não integrar simulados com FSRS - simulados são para avaliação, não para revisão espaçada
       if (data.study_mode !== 'simulated_exam') {
         setImmediate(async () => {
           try {
             const prefs = await this.preferencesService.getPreferences(data.user_id);
 
             if (prefs && prefs.auto_add_questions) {
-              logger.info(`[FSRS Background] Integrando questão ${data.question_id}`);
-
               const isActiveReview = data.study_mode === 'unified_review';
               await this.unifiedReviewService.updateQuestionCardOnly(
                 data.user_id,
@@ -324,15 +319,11 @@ export class QuestionHistoryService {
                 data.is_correct,
                 isActiveReview
               );
-
-              logger.info(`[FSRS Background] Integração concluída para questão ${data.question_id}`);
             }
           } catch (fsrsError) {
             logger.error('[FSRS Background] Erro na integração (não crítico):', fsrsError);
           }
         });
-      } else {
-        logger.info(`[FSRS] Simulado ignorado - não integra com sistema de revisões: ${data.question_id}`);
       }
 
       return response as QuestionAttempt;
@@ -775,7 +766,6 @@ export class QuestionHistoryService {
         };
       }
 
-      logger.info(`[BatchStats] Processadas ${Object.keys(statsMap).length} questões com stats em 2 queries`);
       return statsMap;
     } catch (error) {
       logger.error('Erro ao buscar stats em batch:', error);

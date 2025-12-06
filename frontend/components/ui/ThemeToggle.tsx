@@ -16,7 +16,6 @@ export default function ThemeToggle({ className = '' }: ThemeToggleProps) {
   }, []);
 
   const handleClick = () => {
-    console.log('ThemeToggle button clicked');
     toggleTheme();
   };
 

@@ -133,7 +133,10 @@ export class PublicFilterController {
     next: NextFunction,
   ): Promise<void> {
     try {
-      const { filterIds, subFilterIds, years, institutions, page = 1, limit = 20 } = req.body;
+      const { filterIds, subFilterIds, years, institutions, page = 1, limit = 20, excludeOutdated, excludeAnnulled, unansweredFilter } = req.body;
+
+      // Adicionar userId se necessário para filtro de questões não respondidas
+      const userId = req.user?.id && unansweredFilter && unansweredFilter !== 'all' ? req.user.id : undefined;
 
       const result = await this.filterService.searchQuestions({
         filterIds,
@@ -142,6 +145,10 @@ export class PublicFilterController {
         institutions,
         page,
         limit,
+        excludeOutdated,
+        excludeAnnulled,
+        unansweredFilter,
+        userId,
       });
 
       res.json({ success: true, data: result });
@@ -154,6 +161,7 @@ export class PublicFilterController {
   /**
    * POST /api/banco-questoes/questions/count
    * Conta questões baseado nos filtros selecionados
+   * Suporta filtro de questões não respondidas (unansweredFilter)
    */
   async countQuestionsByFilters(
     req: AuthenticatedRequest,
@@ -162,6 +170,10 @@ export class PublicFilterController {
   ): Promise<void> {
     try {
       const params = req.body;
+      // Adicionar userId do usuário autenticado para filtro de questões não respondidas
+      if (req.user?.id && params.unansweredFilter && params.unansweredFilter !== 'all') {
+        params.userId = req.user.id;
+      }
       const count = await this.filterService.countQuestionsByFilters(params);
       res.json({ success: true, data: { count } });
     } catch (error) {

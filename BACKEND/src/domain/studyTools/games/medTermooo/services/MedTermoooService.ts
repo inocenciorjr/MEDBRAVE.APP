@@ -9,8 +9,16 @@ const MAX_ATTEMPTS = 6;
 // Helper para obter data de hoje no horário de Brasília
 const getTodayBrasilia = (): string => {
   const now = new Date();
-  const brasiliaDate = new Date(now.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
-  return brasiliaDate.toISOString().split('T')[0];
+  // Usar Intl.DateTimeFormat para obter a data correta em Brasília
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const result = formatter.format(now); // Formato: YYYY-MM-DD
+  console.log(`[MedTermooo] getTodayBrasilia: ${result} (UTC: ${now.toISOString()})`);
+  return result;
 };
 
 // Carregar lista de palavras brasileiras (96k palavras de 5-8 letras)
@@ -52,6 +60,7 @@ export class MedTermoooService {
   // Obter palavra do dia do banco de dados
   async getTodayWord(): Promise<MedicalWord & { date: string; length: number }> {
     const today = getTodayBrasilia();
+    console.log(`[MedTermooo] Buscando palavra para data: ${today}`);
 
     const { data: dailyWord, error } = await this.supabase
       .from('med_termooo_daily_words')
@@ -59,8 +68,12 @@ export class MedTermoooService {
       .eq('date', today)
       .single();
 
+    if (error) {
+      console.error(`[MedTermooo] Erro ao buscar palavra: ${error.message}`, { code: error.code, details: error.details });
+    }
+
     if (error || !dailyWord) {
-      throw new Error('Palavra do dia não disponível. Tente novamente mais tarde.');
+      throw new Error(`Palavra do dia não disponível para ${today}. Tente novamente mais tarde.`);
     }
 
     return {
