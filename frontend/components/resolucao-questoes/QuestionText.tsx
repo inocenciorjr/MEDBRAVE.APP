@@ -194,6 +194,7 @@ export function QuestionText({
 
   /**
    * Handler para seleção de texto em HTML
+   * Usa busca no texto original para encontrar a posição correta
    */
   const handleHtmlMouseUp = useCallback(() => {
     if (toolMode !== 'highlight' || !onAddHighlight) return;
@@ -202,38 +203,45 @@ export function QuestionText({
     if (!selection || selection.isCollapsed || selection.rangeCount === 0) return;
 
     const selectedText = selection.toString().trim();
-    if (!selectedText) return;
+    if (!selectedText || selectedText.length < 2) return;
 
-    const container = htmlContainerRef.current;
-    if (!container) return;
-
-    const range = selection.getRangeAt(0);
-    if (!container.contains(range.commonAncestorContainer)) return;
-
-    // Calcula offset absoluto no texto
-    const getAbsoluteOffset = (targetNode: Node, targetOffset: number): number => {
-      let offset = 0;
-      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
+    // Extrai texto puro do HTML original
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = text;
+    const originalText = tempDiv.textContent || tempDiv.innerText || '';
+    
+    // Encontra a posição do texto selecionado no texto original
+    let searchStart = 0;
+    let foundStart = -1;
+    
+    while (true) {
+      const index = originalText.indexOf(selectedText, searchStart);
+      if (index === -1) break;
       
-      let node: Node | null = walker.nextNode();
-      while (node) {
-        if (node === targetNode) {
-          return offset + targetOffset;
-        }
-        offset += (node.textContent?.length || 0);
-        node = walker.nextNode();
+      // Verifica se essa posição já está marcada
+      const isAlreadyHighlighted = highlights.some(h => 
+        (index >= h.startOffset && index < h.endOffset) ||
+        (index + selectedText.length > h.startOffset && index + selectedText.length <= h.endOffset) ||
+        (index <= h.startOffset && index + selectedText.length >= h.endOffset)
+      );
+      
+      if (!isAlreadyHighlighted) {
+        foundStart = index;
+        break;
       }
       
-      return offset + targetOffset;
-    };
-
-    const startOffset = getAbsoluteOffset(range.startContainer, range.startOffset);
-    const endOffset = getAbsoluteOffset(range.endContainer, range.endOffset);
+      searchStart = index + 1;
+    }
+    
+    if (foundStart === -1) {
+      selection.removeAllRanges();
+      return;
+    }
 
     const highlight: Omit<TextHighlight, 'color'> = {
       id: crypto.randomUUID(),
-      startOffset,
-      endOffset,
+      startOffset: foundStart,
+      endOffset: foundStart + selectedText.length,
       text: selectedText,
       type: 'highlight',
     };

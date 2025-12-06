@@ -192,6 +192,7 @@ export function AddToErrorNotebookModal({
   }, []);
 
   // Handler para seleção de texto no enunciado
+  // Usa busca no texto original para encontrar a posição correta
   const handleTextSelection = useCallback(() => {
     if (!isHighlightMode) return;
     
@@ -199,38 +200,45 @@ export function AddToErrorNotebookModal({
     if (!selection || selection.isCollapsed || selection.rangeCount === 0) return;
 
     const selectedText = selection.toString().trim();
-    if (!selectedText) return;
+    if (!selectedText || selectedText.length < 2) return;
 
-    const container = questionTextRef.current;
-    if (!container) return;
-
-    const range = selection.getRangeAt(0);
-    if (!container.contains(range.commonAncestorContainer)) return;
-
-    // Calcula offset absoluto no texto
-    const getAbsoluteOffset = (targetNode: Node, targetOffset: number): number => {
-      let offset = 0;
-      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
+    // Usa o texto original da questão, não o DOM renderizado
+    const originalText = question.text || '';
+    
+    // Encontra a posição do texto selecionado no texto original
+    // Busca todas as ocorrências e usa a que ainda não foi marcada
+    let searchStart = 0;
+    let foundStart = -1;
+    
+    while (true) {
+      const index = originalText.indexOf(selectedText, searchStart);
+      if (index === -1) break;
       
-      let node: Node | null = walker.nextNode();
-      while (node) {
-        if (node === targetNode) {
-          return offset + targetOffset;
-        }
-        offset += (node.textContent?.length || 0);
-        node = walker.nextNode();
+      // Verifica se essa posição já está marcada
+      const isAlreadyHighlighted = highlights.some(h => 
+        (index >= h.startOffset && index < h.endOffset) ||
+        (index + selectedText.length > h.startOffset && index + selectedText.length <= h.endOffset) ||
+        (index <= h.startOffset && index + selectedText.length >= h.endOffset)
+      );
+      
+      if (!isAlreadyHighlighted) {
+        foundStart = index;
+        break;
       }
       
-      return offset + targetOffset;
-    };
-
-    const startOffset = getAbsoluteOffset(range.startContainer, range.startOffset);
-    const endOffset = getAbsoluteOffset(range.endContainer, range.endOffset);
+      searchStart = index + 1;
+    }
+    
+    if (foundStart === -1) {
+      // Texto não encontrado ou todas as ocorrências já estão marcadas
+      selection.removeAllRanges();
+      return;
+    }
 
     const highlight: TextHighlight = {
       id: crypto.randomUUID(),
-      startOffset,
-      endOffset,
+      startOffset: foundStart,
+      endOffset: foundStart + selectedText.length,
       text: selectedText,
       type: 'highlight',
       color: selectedHighlightColor,
@@ -238,7 +246,7 @@ export function AddToErrorNotebookModal({
 
     addHighlight(highlight);
     selection.removeAllRanges();
-  }, [isHighlightMode, selectedHighlightColor, addHighlight]);
+  }, [isHighlightMode, selectedHighlightColor, addHighlight, question.text, highlights]);
 
   // Gera segmentos de texto com highlights aplicados
   const getHighlightedSegments = useCallback((text: string) => {
@@ -281,6 +289,97 @@ export function AddToErrorNotebookModal({
     
     return segments.length > 0 ? segments : [{ text, type: 'normal' as const }];
   }, [highlights]);
+
+  // Aplica highlights em conteúdo HTML
+  const applyHtmlHighlights = useCallback((htmlContent: string, highlightsList: TextHighlight[]): string => {
+    if (highlightsList.length === 0) return htmlContent;
+
+    // Cria um elemento temporário para manipular o HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = htmlContent;
+
+    // Extrai todo o texto para calcular posições
+    const textNodes: { node: Text; start: number; end: number }[] = [];
+    let currentOffset = 0;
+
+    const walker = document.createTreeWalker(tempDiv, NodeFilter.SHOW_TEXT, null);
+    let node: Node | null = walker.nextNode();
+    
+    while (node) {
+      const textNode = node as Text;
+      const length = textNode.textContent?.length || 0;
+      textNodes.push({
+        node: textNode,
+        start: currentOffset,
+        end: currentOffset + length,
+      });
+      currentOffset += length;
+      node = walker.nextNode();
+    }
+
+    // Ordena highlights por posição (do fim para o início para não afetar offsets)
+    const sortedHighlights = [...highlightsList]
+      .filter(h => h.startOffset >= 0 && h.endOffset <= currentOffset && h.startOffset < h.endOffset)
+      .sort((a, b) => b.startOffset - a.startOffset);
+
+    // Aplica cada highlight
+    for (const highlight of sortedHighlights) {
+      const { startOffset, endOffset, id, color } = highlight;
+      
+      // Encontra os nós de texto afetados
+      for (const textNodeInfo of textNodes) {
+        const { node: textNode, start, end } = textNodeInfo;
+        
+        // Verifica se este nó de texto é afetado pelo highlight
+        if (startOffset < end && endOffset > start) {
+          const nodeText = textNode.textContent || '';
+          const highlightStart = Math.max(0, startOffset - start);
+          const highlightEnd = Math.min(nodeText.length, endOffset - start);
+          
+          if (highlightStart < highlightEnd) {
+            // Divide o nó de texto e insere o span de highlight
+            const beforeText = nodeText.substring(0, highlightStart);
+            const highlightText = nodeText.substring(highlightStart, highlightEnd);
+            const afterText = nodeText.substring(highlightEnd);
+            
+            const parent = textNode.parentNode;
+            if (parent) {
+              const fragment = document.createDocumentFragment();
+              
+              if (beforeText) {
+                fragment.appendChild(document.createTextNode(beforeText));
+              }
+              
+              const highlightSpan = document.createElement('span');
+              highlightSpan.className = `highlight-mark highlight-${color || 'yellow'}`;
+              highlightSpan.setAttribute('data-highlight-id', id);
+              fragment.appendChild(highlightSpan);
+              highlightSpan.textContent = highlightText;
+              
+              if (afterText) {
+                fragment.appendChild(document.createTextNode(afterText));
+              }
+              
+              parent.replaceChild(fragment, textNode);
+            }
+          }
+        }
+      }
+    }
+
+    return tempDiv.innerHTML;
+  }, []);
+
+  // Estado para HTML com highlights aplicados
+  const [htmlWithHighlights, setHtmlWithHighlights] = useState<string>('');
+
+  // Atualiza HTML com highlights quando mudam
+  useEffect(() => {
+    if (question.isHtml && question.text) {
+      const highlighted = applyHtmlHighlights(question.text, highlights);
+      setHtmlWithHighlights(highlighted);
+    }
+  }, [question.isHtml, question.text, highlights, applyHtmlHighlights]);
 
   // Função para adicionar event listeners em imagens
   const setupImageListeners = (element: HTMLElement) => {
@@ -638,13 +737,26 @@ export function AddToErrorNotebookModal({
                           setupImageListeners(el);
                           // Atribuir ao ref para seleção
                           (questionTextRef as any).current = el;
+                          
+                          // Configura clicks nos highlights
+                          const highlightSpans = el.querySelectorAll('[data-highlight-id]');
+                          highlightSpans.forEach((span) => {
+                            (span as HTMLElement).style.cursor = 'pointer';
+                            span.addEventListener('click', (e) => {
+                              e.stopPropagation();
+                              const highlightId = span.getAttribute('data-highlight-id');
+                              if (highlightId) {
+                                removeHighlight(highlightId);
+                              }
+                            });
+                          });
                         }
                       }}
                       onMouseUp={handleTextSelection}
                       className={`prose prose-sm dark:prose-invert max-w-none text-text-light-secondary dark:text-text-dark-secondary [&_img]:mx-auto [&_img]:block [&_img]:my-4 ${
                         isHighlightMode ? 'cursor-text select-text' : ''
                       }`}
-                      dangerouslySetInnerHTML={{ __html: question.text || '' }}
+                      dangerouslySetInnerHTML={{ __html: htmlWithHighlights || question.text || '' }}
                     />
                   ) : (
                     <div
@@ -670,7 +782,7 @@ export function AddToErrorNotebookModal({
                         return (
                           <span
                             key={segment.id || `segment-${index}`}
-                            className={`${colorClasses[segment.color || 'yellow']} px-0.5 rounded cursor-pointer transition-colors`}
+                            className={`${colorClasses[segment.color || 'yellow']} px-0.5 rounded cursor-pointer transition-all relative group hover:opacity-70 hover:line-through decoration-2 decoration-red-500`}
                             onClick={(e) => {
                               e.stopPropagation();
                               if (segment.id) {
@@ -680,6 +792,7 @@ export function AddToErrorNotebookModal({
                             title="Clique para remover marcação"
                           >
                             {segment.text}
+                            <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full text-white text-[8px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">×</span>
                           </span>
                         );
                       })}
@@ -933,6 +1046,69 @@ export function AddToErrorNotebookModal({
         onClose={() => setSelectedImage(null)}
         zIndex={10003}
       />
+
+      {/* CSS para cores neon de highlight em HTML */}
+      <style jsx global>{`
+        .highlight-mark {
+          padding: 0 2px;
+          border-radius: 2px;
+          cursor: pointer;
+          transition: all 0.2s;
+          position: relative;
+        }
+        .highlight-mark:hover {
+          opacity: 0.7;
+          text-decoration: line-through;
+          text-decoration-color: #ef4444;
+          text-decoration-thickness: 2px;
+        }
+        .highlight-mark:hover::after {
+          content: '×';
+          position: absolute;
+          top: -4px;
+          right: -4px;
+          width: 12px;
+          height: 12px;
+          background: #ef4444;
+          border-radius: 50%;
+          color: white;
+          font-size: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+        }
+        .highlight-yellow {
+          background-color: rgba(255, 255, 0, 0.8);
+        }
+        .highlight-yellow:hover {
+          background-color: rgba(255, 255, 0, 1);
+        }
+        .highlight-pink {
+          background-color: rgba(255, 16, 240, 0.7);
+        }
+        .highlight-pink:hover {
+          background-color: rgba(255, 16, 240, 0.9);
+        }
+        .highlight-green {
+          background-color: rgba(57, 255, 20, 0.7);
+        }
+        .highlight-green:hover {
+          background-color: rgba(57, 255, 20, 0.9);
+        }
+        .highlight-blue {
+          background-color: rgba(0, 255, 255, 0.7);
+        }
+        .highlight-blue:hover {
+          background-color: rgba(0, 255, 255, 0.9);
+        }
+        .highlight-orange {
+          background-color: rgba(255, 102, 0, 0.7);
+        }
+        .highlight-orange:hover {
+          background-color: rgba(255, 102, 0, 0.9);
+        }
+      `}</style>
     </>
   );
 }
