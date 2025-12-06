@@ -876,10 +876,6 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
               <div
                 key={dayIdx}
                 className={`relative border-r sm:border-r-2 border-border-light dark:border-border-dark`}
-                style={!isStudyDay ? {
-                  backgroundImage: 'repeating-linear-gradient(45deg, rgba(168, 85, 247, 0.05), rgba(168, 85, 247, 0.05) 10px, rgba(168, 85, 247, 0.15) 10px, rgba(168, 85, 247, 0.15) 20px)',
-                  backgroundColor: 'rgba(168, 85, 247, 0.03)'
-                } : {}}
               >
                 {/* Células de hora */}
                 {hours.map((hour) => {
@@ -887,22 +883,23 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
                   const cellDate = new Date(day);
                   cellDate.setHours(hour, 0, 0, 0);
                   const isPast = cellDate < now;
+                  const isDisabled = isPast || !isStudyDay;
                   
                   return (
                     <div
                       key={hour}
-                      className={`h-10 sm:h-11 lg:h-12 border-b sm:border-b-2 border-border-light dark:border-border-dark ${
-                        isPast 
-                          ? `cursor-not-allowed opacity-50 ${isStudyDay ? 'bg-background-light dark:bg-background-dark' : ''}` 
-                          : `cursor-pointer hover:bg-primary/10 hover:shadow-inner ${isStudyDay ? 'bg-background-light dark:bg-background-dark' : ''}`
+                      className={`h-10 sm:h-11 lg:h-12 border-b sm:border-b-2 border-border-light dark:border-border-dark transition-colors ${
+                        isDisabled 
+                          ? 'cursor-not-allowed bg-gray-100 dark:bg-gray-900/80' 
+                          : 'cursor-pointer bg-surface-light dark:bg-surface-dark hover:bg-primary/10 dark:hover:bg-primary/20 hover:shadow-inner'
                       } group`}
                       onClick={() => {
-                        if (!isPast) {
+                        if (!isDisabled) {
                           setSelectedCell({ dayIndex: dayIdx, hour });
                           setIsCreateModalOpen(true);
                         }
                       }}
-                      title={isPast ? 'Não é possível criar tarefas no passado' : 'Clique para criar tarefa neste horário'}
+                      title={isPast ? 'Não é possível criar tarefas no passado' : !isStudyDay ? 'Dia não configurado para estudo' : 'Clique para criar tarefa neste horário'}
                     />
                   );
                 })}
