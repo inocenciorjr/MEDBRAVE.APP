@@ -115,7 +115,7 @@ export function NavigationPanel({
   };
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl p-6">
+    <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl p-4 xl:p-5 2xl:p-6">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h3 className="font-semibold text-text-light-primary dark:text-text-dark-primary">
@@ -209,7 +209,7 @@ export function NavigationPanel({
       )}
 
       {/* Question Grid */}
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-2 xl:gap-3">
         {questionItems.map((item) => (
           <QuestionButton
             key={`${item.id}-${item.index}`}
@@ -231,7 +231,7 @@ interface QuestionButtonProps {
 
 function QuestionButton({ item, isActive, onClick }: QuestionButtonProps) {
   const getButtonClass = () => {
-    const baseClass = 'flex items-center justify-center w-10 h-10 rounded-md font-semibold transition-all border-2 bg-background-light dark:bg-background-dark';
+    const baseClass = 'flex items-center justify-center w-9 h-9 xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 rounded-md font-semibold transition-all border-2 bg-background-light dark:bg-background-dark text-sm xl:text-base';
     
     if (item.state === 'correct') {
       return `${baseClass} border-green-500 text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-950/20`;

@@ -68,13 +68,13 @@ export function MoveToFolderModal({
       onClick={!isMoving ? onClose : undefined}
     >
       <div
-        className={`bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl max-w-md w-full transition-all duration-300 ${
+        className={`bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl max-w-md md:max-w-lg w-full transition-all duration-300 ${
           isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="p-6 border-b border-border-light dark:border-border-dark">
+        <div className="p-4 md:p-5 lg:p-6 border-b border-border-light dark:border-border-dark">
           <div className="flex items-center gap-3">
             <div className="p-3 bg-primary/10 rounded-full">
               <span className="material-symbols-outlined text-2xl text-primary">
@@ -93,7 +93,7 @@ export function MoveToFolderModal({
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-4">
+        <div className="p-4 md:p-5 lg:p-6 space-y-4">
           <div>
             <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-2">
               Movendo: <span className="font-semibold text-text-light-primary dark:text-text-dark-primary">{itemName}</span>
@@ -129,7 +129,7 @@ export function MoveToFolderModal({
         </div>
 
         {/* Actions */}
-        <div className="flex items-center justify-end gap-3 p-6 border-t border-border-light dark:border-border-dark">
+        <div className="flex items-center justify-end gap-3 p-4 md:p-5 lg:p-6 border-t border-border-light dark:border-border-dark">
           <button
             onClick={onClose}
             disabled={isMoving}

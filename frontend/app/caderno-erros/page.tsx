@@ -457,20 +457,20 @@ export default function CadernoErrosPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full px-4 sm:px-6 xl:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="w-full py-8">
+      <div className="w-full max-w-[1800px] 2xl:max-w-[2000px] mx-auto py-6 md:py-8 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
           {/* Header */}
-          <header className="mb-6">
-            <h1 className="text-3xl font-semibold text-slate-700 dark:text-slate-200">
+          <header className="mb-4 md:mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-700 dark:text-slate-200">
               Caderno de Erros
             </h1>
           </header>
 
           {/* Search and Actions Bar */}
-          <div className="mb-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-4">
+          <div className="mb-4 md:mb-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-3 md:p-4 lg:p-5">
             <div className="flex items-center gap-3">
               <div className="flex-1">
                 <SearchInput
@@ -493,7 +493,7 @@ export default function CadernoErrosPage() {
           </div>
 
           {/* Filters */}
-          <div className="mb-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-4">
+          <div className="mb-4 md:mb-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md p-3 md:p-4 lg:p-5">
             <div className="flex items-center gap-6">
               <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">
                 Exibir:
@@ -596,8 +596,8 @@ export default function CadernoErrosPage() {
             </div>
           ) : (
             /* Desktop + Tablet: Table */
-            <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden">
-              <table className="w-full text-left text-sm table-fixed">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl dark:shadow-dark-xl overflow-hidden overflow-x-auto">
+              <table className="w-full text-left text-sm table-fixed min-w-[900px] lg:min-w-0">
               <thead className="text-text-light-secondary dark:text-text-dark-secondary border-b border-border-light dark:border-border-dark">
                 <tr>
                   <th className="py-3 px-4 font-medium w-[30%]">

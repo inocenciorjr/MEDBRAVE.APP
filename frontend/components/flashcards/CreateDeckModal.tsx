@@ -95,7 +95,7 @@ export function CreateDeckModal({
       onClick={onClose}
     >
       <div
-        className={`bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl dark:shadow-dark-2xl max-w-md w-full p-8 transition-all duration-300 ${isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+        className={`bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl dark:shadow-dark-2xl max-w-md md:max-w-lg xl:max-w-xl w-full p-6 md:p-8 transition-all duration-300 ${isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
           }`}
         onClick={(e) => e.stopPropagation()}
       >

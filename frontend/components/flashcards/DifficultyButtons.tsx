@@ -171,7 +171,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
         )}
       </div>
 
-      <footer className="w-full grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-4">
+      <footer className="w-full grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-3 lg:gap-4 xl:gap-5">
         {/* Não lembrei - Vermelho */}
         <button
           onClick={() => handleSelect('again')}
@@ -179,7 +179,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseLeave={() => setHoveredDifficulty(null)}
           onTouchStart={() => !disabled && setHoveredDifficulty('again')}
           disabled={disabled}
-          className={`bg-red-600 dark:bg-red-600 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
+          className={`bg-red-600 dark:bg-red-600 text-white font-semibold py-3 md:py-4 lg:py-5 px-2 md:px-4 lg:px-5 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'again' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -192,8 +192,8 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           aria-label="Não lembrei - revisar novamente em breve"
         >
           <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
-            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>refresh</span>
-            <span className="text-xs md:text-sm font-bold leading-tight text-center">Não lembrei!</span>
+            <span className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl font-bold" style={{ display: 'block', lineHeight: 1 }}>refresh</span>
+            <span className="text-xs md:text-sm lg:text-base font-bold leading-tight text-center">Não lembrei!</span>
           </div>
         </button>
 
@@ -204,7 +204,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseLeave={() => setHoveredDifficulty(null)}
           onTouchStart={() => !disabled && setHoveredDifficulty('hard')}
           disabled={disabled}
-          className={`bg-gray-600 dark:bg-gray-700 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
+          className={`bg-gray-600 dark:bg-gray-700 text-white font-semibold py-3 md:py-4 lg:py-5 px-2 md:px-4 lg:px-5 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'hard' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -217,8 +217,8 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           aria-label="Lembrei, mas achei difícil - revisar em alguns dias"
         >
           <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
-            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_flat</span>
-            <span className="text-xs md:text-sm font-bold leading-tight text-center">Lembrei, mas achei difícil!</span>
+            <span className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_flat</span>
+            <span className="text-xs md:text-sm lg:text-base font-bold leading-tight text-center">Lembrei, mas achei difícil!</span>
           </div>
         </button>
 
@@ -229,7 +229,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseLeave={() => setHoveredDifficulty(null)}
           onTouchStart={() => !disabled && setHoveredDifficulty('good')}
           disabled={disabled}
-          className={`bg-purple-500 dark:bg-purple-500 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
+          className={`bg-purple-500 dark:bg-purple-500 text-white font-semibold py-3 md:py-4 lg:py-5 px-2 md:px-4 lg:px-5 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'good' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -242,8 +242,8 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           aria-label="Quase consolidado na mente - revisar em uma semana"
         >
           <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
-            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_up</span>
-            <span className="text-xs md:text-sm font-bold leading-tight text-center">Quase consolidado na mente...</span>
+            <span className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl font-bold" style={{ display: 'block', lineHeight: 1 }}>trending_up</span>
+            <span className="text-xs md:text-sm lg:text-base font-bold leading-tight text-center">Quase consolidado na mente...</span>
           </div>
         </button>
 
@@ -254,7 +254,7 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           onMouseLeave={() => setHoveredDifficulty(null)}
           onTouchStart={() => !disabled && setHoveredDifficulty('easy')}
           disabled={disabled}
-          className={`bg-purple-800 dark:bg-purple-900 text-white font-semibold py-3 md:py-4 px-2 md:px-4 rounded-xl md:rounded-2xl 
+          className={`bg-purple-800 dark:bg-purple-900 text-white font-semibold py-3 md:py-4 lg:py-5 px-2 md:px-4 lg:px-5 rounded-xl md:rounded-2xl 
                      transition-all duration-200 shadow-xl focus:outline-none border-2
                      ${selectedDifficulty === 'easy' 
                        ? 'ring-4 ring-yellow-400 border-yellow-400 scale-105' 
@@ -267,8 +267,8 @@ export function DifficultyButtons({ onSelect, flashcardId, contentType, contentI
           aria-label="Acertei com confiança - revisar em várias semanas"
         >
           <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
-            <span className="material-symbols-outlined text-2xl md:text-3xl font-bold" style={{ display: 'block', lineHeight: 1 }}>check_circle</span>
-            <span className="text-xs md:text-sm font-bold leading-tight text-center">Acertei com confiança!</span>
+            <span className="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl font-bold" style={{ display: 'block', lineHeight: 1 }}>check_circle</span>
+            <span className="text-xs md:text-sm lg:text-base font-bold leading-tight text-center">Acertei com confiança!</span>
           </div>
         </button>
       </footer>

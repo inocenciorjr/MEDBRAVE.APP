@@ -78,13 +78,13 @@ export function PreviewModal({
 
             {/* Modal - Slide from right */}
             <div
-                className={`fixed right-0 top-0 h-full w-full md:w-[90%] lg:w-[80%] xl:w-[70%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[60] transform transition-transform duration-300 ease-out flex flex-col ${
+                className={`fixed right-0 top-0 h-full w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[60] transform transition-transform duration-300 ease-out flex flex-col ${
                     isAnimating ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
                 <div className="flex flex-col h-full">
                 {/* Header */}
-                <div className="flex items-start justify-between p-4 sm:p-6 border-b border-border-light dark:border-border-dark">
+                <div className="flex items-start justify-between p-4 sm:p-6 lg:p-8 border-b border-border-light dark:border-border-dark">
                     <div className="flex-1 min-w-0">
                         <h2 className="text-xl sm:text-2xl font-semibold text-slate-700 dark:text-slate-200 mb-2 truncate">
                             {deckName}
@@ -119,7 +119,7 @@ export function PreviewModal({
                 </div>
 
                 {/* Content - Scrollable List */}
-                <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+                <div className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
                     {flashcards.length === 0 ? (
                         <EmptyDeckState 
                             onCreateFlashcard={() => {
@@ -231,7 +231,7 @@ export function PreviewModal({
                 </div>
 
                 {/* Footer */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-4 sm:p-6 border-t border-border-light dark:border-border-dark gap-3 sm:gap-4 bg-slate-50/50 dark:bg-slate-900/50">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between p-4 sm:p-6 lg:p-8 border-t border-border-light dark:border-border-dark gap-3 sm:gap-4 bg-slate-50/50 dark:bg-slate-900/50">
                     {/* Left side - Edit button (só se pode editar) */}
                     {canEdit && onCreateFlashcard && (
                         <button

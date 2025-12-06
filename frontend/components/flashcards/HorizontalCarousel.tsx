@@ -49,7 +49,7 @@ export function HorizontalCarousel({ children }: HorizontalCarouselProps) {
 
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto pt-4 pb-4 -mt-4 -mb-4 space-x-6 scroll-smooth no-scrollbar"
+        className="flex overflow-x-auto pt-4 pb-4 -mt-4 -mb-4 space-x-4 md:space-x-5 lg:space-x-6 scroll-smooth no-scrollbar"
         style={{ overflowY: 'visible' }}
       >
         {children}

@@ -74,19 +74,19 @@ const ReviewGoalCard: React.FC<ReviewGoalCardProps> = ({
                     shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl
                     transition-all duration-300 border border-border-light dark:border-border-dark">
       {/* Header */}
-      <div className="bg-background-light dark:bg-background-dark px-6 py-4 border-b border-border-light dark:border-border-dark rounded-t-xl flex items-center justify-between">
-        <h2 className="text-base font-display font-bold text-text-light-primary dark:text-text-dark-primary">
+      <div className="bg-background-light dark:bg-background-dark px-4 sm:px-5 md:px-6 py-3 sm:py-4 border-b border-border-light dark:border-border-dark rounded-t-xl flex items-center justify-between">
+        <h2 className="text-sm sm:text-base font-display font-bold text-text-light-primary dark:text-text-dark-primary">
           {title}
         </h2>
         {onConfigClick && (
           <button
             onClick={onConfigClick}
-            className="p-2 rounded-lg hover:bg-primary/10 transition-all duration-200 group/btn
+            className="p-1.5 sm:p-2 rounded-lg hover:bg-primary/10 transition-all duration-200 group/btn
                        hover:scale-110 active:scale-95"
             title="Configurar meta"
           >
             <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary 
-                           group-hover/btn:text-primary group-hover/btn:rotate-90 transition-all duration-300 text-lg">
+                           group-hover/btn:text-primary group-hover/btn:rotate-90 transition-all duration-300 text-base sm:text-lg">
               settings
             </span>
           </button>
@@ -94,9 +94,9 @@ const ReviewGoalCard: React.FC<ReviewGoalCardProps> = ({
       </div>
 
       {/* Chart Section */}
-      <div className="p-6 md:p-8">
+      <div className="p-4 sm:p-5 md:p-6 lg:p-8">
         {/* Chart Container */}
-        <div className="relative w-full" style={{ height: '200px', minHeight: '200px' }}>
+        <div className="relative w-full" style={{ height: '160px', minHeight: '160px' }}>
           {isMounted && (
             <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -169,25 +169,25 @@ const ReviewGoalCard: React.FC<ReviewGoalCardProps> = ({
           )}
 
           {/* Text content inside the arc */}
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap pointer-events-none">
-            <div className="text-4xl font-bold text-text-light-primary dark:text-text-dark-primary">
-              {current} <span className="text-xl font-medium text-text-light-secondary dark:text-text-dark-secondary">{unit}</span>
+          <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap pointer-events-none">
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-light-primary dark:text-text-dark-primary">
+              {current} <span className="text-base sm:text-lg md:text-xl font-medium text-text-light-secondary dark:text-text-dark-secondary">{unit}</span>
             </div>
-            <div className="text-sm text-text-light-secondary dark:text-text-dark-secondary font-medium mt-2">
+            <div className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary font-medium mt-1 sm:mt-2">
               {subtitle || `${percentComplete}% da meta`}
             </div>
           </div>
         </div>
 
         {/* Range Labels */}
-        <div className="flex justify-between mt-1 px-12 md:px-16 lg:px-20">
-          <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-sm">0</span>
-          <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-sm">{goal} {unit}</span>
+        <div className="flex justify-between mt-1 px-8 sm:px-12 md:px-16 lg:px-20">
+          <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-xs sm:text-sm">0</span>
+          <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-xs sm:text-sm">{goal} {unit}</span>
         </div>
 
         {/* Legenda das camadas (apenas se tiver goalMarker) */}
         {goalMarker && (
-          <div className="flex items-center justify-center gap-4 mt-4 text-xs">
+          <div className="flex items-center justify-center gap-2 sm:gap-4 mt-3 sm:mt-4 text-[10px] sm:text-xs">
             <div className="flex items-center gap-1.5">
               <div className="w-3 h-3 rounded-full" 
                    style={{ backgroundColor: progressColor }}></div>

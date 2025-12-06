@@ -51,17 +51,17 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
             }}
           >
             {/* Front Header - Estilo igual ao header de DECK */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 py-3 md:py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
-              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
+              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl lg:text-4xl">
                 style
               </span>
-              <span className="text-base md:text-lg font-semibold text-primary uppercase tracking-wide">
+              <span className="text-base md:text-lg lg:text-xl font-semibold text-primary uppercase tracking-wide">
                 Pergunta
               </span>
             </div>
 
             {/* Front Content */}
-            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 min-h-[300px] md:min-h-[400px] max-h-[500px] md:max-h-[600px] overflow-y-auto">
+            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 xl:p-10 min-h-[300px] md:min-h-[400px] lg:min-h-[450px] xl:min-h-[500px] max-h-[500px] md:max-h-[600px] lg:max-h-[650px] xl:max-h-[700px] overflow-y-auto">
               <div className="text-center text-text-light-primary dark:text-text-dark-primary text-base md:text-lg font-inter w-full max-w-full my-auto">
                 {card.isHtml ? (
                   <div 
@@ -112,17 +112,17 @@ export function FlashcardStack({ card, cardSide, onFlip, showBreadcrumbOnFront =
             }}
           >
             {/* Back Header - Estilo igual ao header de DECK */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 py-3 md:py-4 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
-              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5 border-b border-border-light dark:border-border-dark flex items-center justify-center gap-2 md:gap-3">
+              <span className="material-symbols-outlined text-primary text-2xl md:text-3xl lg:text-4xl">
                 style
               </span>
-              <span className="text-base md:text-lg font-semibold text-primary uppercase tracking-wide">
+              <span className="text-base md:text-lg lg:text-xl font-semibold text-primary uppercase tracking-wide">
                 Resposta
               </span>
             </div>
 
             {/* Back Content */}
-            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 min-h-[300px] md:min-h-[400px] max-h-[500px] md:max-h-[600px] overflow-y-auto">
+            <div className="flex-grow flex flex-col justify-start p-4 md:p-6 lg:p-8 xl:p-10 min-h-[300px] md:min-h-[400px] lg:min-h-[450px] xl:min-h-[500px] max-h-[500px] md:max-h-[600px] lg:max-h-[650px] xl:max-h-[700px] overflow-y-auto">
               <div className="text-center text-text-light-primary dark:text-text-dark-primary text-base md:text-lg font-inter w-full max-w-full my-auto">
                 {card.isHtml ? (
                   <div 

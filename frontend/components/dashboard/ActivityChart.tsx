@@ -11,10 +11,10 @@ export default function ActivityChart({ weekData, weeklyIncrease }: ActivityChar
   const maxHours = Math.max(...weekData.map(d => d.hours + d.minutes / 60));
   
   return (
-    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
+    <div className="bg-surface-light dark:bg-surface-dark p-4 sm:p-5 md:p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mb-3 sm:mb-4">
+        <h2 className="text-base sm:text-lg font-semibold text-slate-700 dark:text-slate-200">
           Atividade por Horas
         </h2>
         <button className="flex items-center gap-1 text-sm text-text-light-secondary dark:text-text-dark-secondary hover:text-primary transition-colors">
@@ -24,22 +24,22 @@ export default function ActivityChart({ weekData, weeklyIncrease }: ActivityChar
       </div>
 
       {/* Weekly Increase Indicator */}
-      <div className="flex items-center gap-4 mb-6">
-        <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-purple-400 dark:text-purple-400">
+      <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-4 sm:mb-6">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <span className="material-symbols-outlined text-purple-400 dark:text-purple-400 text-lg sm:text-xl">
             trending_up
           </span>
-          <span className="font-bold text-purple-400 dark:text-purple-400">
+          <span className="font-bold text-sm sm:text-base text-purple-400 dark:text-purple-400">
             +{weeklyIncrease} horas
           </span>
         </div>
-        <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+        <p className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary">
           a mais que semana passada
         </p>
       </div>
 
       {/* Bar Chart */}
-      <div className="flex items-end justify-between h-40 text-xs text-text-light-secondary dark:text-text-dark-secondary">
+      <div className="flex items-end justify-between h-32 sm:h-36 md:h-40 text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary">
         {weekData.map((data, index) => {
           const totalHours = data.hours + data.minutes / 60;
           const heightPercent = (totalHours / maxHours) * 100;

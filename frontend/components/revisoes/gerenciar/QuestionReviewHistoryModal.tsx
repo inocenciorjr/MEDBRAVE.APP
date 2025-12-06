@@ -444,16 +444,16 @@ function QuestionReviewHistoryModal({
 
             {/* Modal */}
             <div
-                className={`fixed right-0 top-0 h-full w-full md:w-[800px] bg-surface-light dark:bg-surface-dark 
+                className={`fixed right-0 top-0 h-full w-full sm:w-[90vw] md:w-[800px] lg:w-[850px] bg-surface-light dark:bg-surface-dark 
                            shadow-2xl dark:shadow-dark-2xl z-[10000] transform transition-transform duration-300 ease-out ${isAnimating ? 'translate-x-0' : 'translate-x-full'
                     }`}
             >
                 <div className="flex flex-col h-full">
                     {/* Header */}
-                    <div className="p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
-                        <div className="flex items-start justify-between gap-4">
-                            <div className="flex-1 min-w-0 space-y-3">
-                                <h2 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">
+                    <div className="p-4 sm:p-5 md:p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+                        <div className="flex items-start justify-between gap-2 sm:gap-4">
+                            <div className="flex-1 min-w-0 space-y-2 sm:space-y-3">
+                                <h2 className="text-lg sm:text-xl font-bold text-text-light-primary dark:text-text-dark-primary">
                                     {reviewType === 'QUESTION' ? 'Questão' : 'Caderno de Erros'}
                                 </h2>
 
@@ -461,22 +461,22 @@ function QuestionReviewHistoryModal({
                                     <>
                                         {/* Universidade e Ano */}
                                         {(getInstitution() || getYear()) && (
-                                            <div className="flex items-center gap-2">
+                                            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                                                 <button
-                                                    className="flex items-center gap-2 px-3 py-1.5 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary shadow-sm"
+                                                    className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-md sm:rounded-lg text-text-light-secondary dark:text-text-dark-secondary shadow-sm"
                                                     aria-label={`Instituição: ${getInstitution()}`}
                                                 >
-                                                    <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
-                                                    <span className="text-xs font-medium">{getInstitution()}</span>
+                                                    <span className="material-symbols-outlined text-sm sm:text-base" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
+                                                    <span className="text-[10px] sm:text-xs font-medium">{getInstitution()}</span>
                                                 </button>
 
                                                 {getYear() && (
                                                     <button
-                                                        className="flex items-center gap-2 px-3 py-1.5 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg text-text-light-secondary dark:text-text-dark-secondary shadow-sm"
+                                                        className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-md sm:rounded-lg text-text-light-secondary dark:text-text-dark-secondary shadow-sm"
                                                         aria-label={`Ano: ${getYear()}`}
                                                     >
-                                                        <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>calendar_today</span>
-                                                        <span className="text-xs font-medium">{getYear()}</span>
+                                                        <span className="material-symbols-outlined text-sm sm:text-base" style={{ fontVariationSettings: "'FILL' 1" }}>calendar_today</span>
+                                                        <span className="text-[10px] sm:text-xs font-medium">{getYear()}</span>
                                                     </button>
                                                 )}
                                             </div>
@@ -484,18 +484,18 @@ function QuestionReviewHistoryModal({
 
                                         {/* Caminhos hierárquicos dos filtros */}
                                         {filterPaths.length > 0 && (
-                                            <div className="flex flex-col gap-2">
+                                            <div className="flex flex-col gap-1.5 sm:gap-2">
                                                 {filterPaths.map((path, pathIndex) => (
                                                     <div
                                                         key={pathIndex}
-                                                        className="flex items-center gap-1.5 text-xs text-text-light-secondary dark:text-text-dark-secondary overflow-x-auto"
+                                                        className="flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary overflow-x-auto"
                                                     >
                                                         {path.map((name, nameIndex) => (
-                                                            <div key={nameIndex} className="flex items-center gap-1.5 flex-shrink-0">
+                                                            <div key={nameIndex} className="flex items-center gap-1 sm:gap-1.5 flex-shrink-0">
                                                                 {nameIndex > 0 && (
                                                                     <span className="text-text-light-tertiary dark:text-text-dark-tertiary flex-shrink-0">→</span>
                                                                 )}
-                                                                <span className="px-2 py-1 bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-text-dark-secondary rounded-md border border-border-light dark:border-border-dark whitespace-nowrap flex-shrink-0">
+                                                                <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-background-light dark:bg-background-dark text-text-light-secondary dark:text-text-dark-secondary rounded-md border border-border-light dark:border-border-dark whitespace-nowrap flex-shrink-0">
                                                                     {name}
                                                                 </span>
                                                             </div>
@@ -526,15 +526,15 @@ function QuestionReviewHistoryModal({
                     <div className="flex border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
                         <button
                             onClick={() => setActiveTab('question')}
-                            className={`flex-1 px-6 py-4 font-semibold text-sm transition-all duration-200 relative
+                            className={`flex-1 px-2 sm:px-4 md:px-6 py-2.5 sm:py-3 md:py-4 font-semibold text-[10px] sm:text-xs md:text-sm transition-all duration-200 relative
                                      ${activeTab === 'question'
                                     ? 'text-primary'
                                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-primary'
                                 }`}
                         >
-                            <span className="flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-xl">quiz</span>
-                                Questão
+                            <span className="flex items-center justify-center gap-1 sm:gap-2">
+                                <span className="material-symbols-outlined text-base sm:text-lg md:text-xl">quiz</span>
+                                <span className="hidden xs:inline">Questão</span>
                             </span>
                             {activeTab === 'question' && (
                                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -542,15 +542,15 @@ function QuestionReviewHistoryModal({
                         </button>
                         <button
                             onClick={() => setActiveTab('history')}
-                            className={`flex-1 px-6 py-4 font-semibold text-sm transition-all duration-200 relative
+                            className={`flex-1 px-2 sm:px-4 md:px-6 py-2.5 sm:py-3 md:py-4 font-semibold text-[10px] sm:text-xs md:text-sm transition-all duration-200 relative
                                      ${activeTab === 'history'
                                     ? 'text-primary'
                                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-primary'
                                 }`}
                         >
-                            <span className="flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-xl">schedule</span>
-                                Timeline
+                            <span className="flex items-center justify-center gap-1 sm:gap-2">
+                                <span className="material-symbols-outlined text-base sm:text-lg md:text-xl">schedule</span>
+                                <span className="hidden xs:inline">Timeline</span>
                             </span>
                             {activeTab === 'history' && (
                                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -558,15 +558,15 @@ function QuestionReviewHistoryModal({
                         </button>
                         <button
                             onClick={() => setActiveTab('stats')}
-                            className={`flex-1 px-6 py-4 font-semibold text-sm transition-all duration-200 relative
+                            className={`flex-1 px-2 sm:px-4 md:px-6 py-2.5 sm:py-3 md:py-4 font-semibold text-[10px] sm:text-xs md:text-sm transition-all duration-200 relative
                                      ${activeTab === 'stats'
                                     ? 'text-primary'
                                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-primary'
                                 }`}
                         >
-                            <span className="flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-xl">bar_chart</span>
-                                Estatísticas
+                            <span className="flex items-center justify-center gap-1 sm:gap-2">
+                                <span className="material-symbols-outlined text-base sm:text-lg md:text-xl">bar_chart</span>
+                                <span className="hidden xs:inline">Estatísticas</span>
                             </span>
                             {activeTab === 'stats' && (
                                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -575,40 +575,40 @@ function QuestionReviewHistoryModal({
                     </div>
 
                     {/* Content */}
-                    <div ref={modalContentRef} className="flex-1 overflow-y-auto p-6">
+                    <div ref={modalContentRef} className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6">
                         {isLoading ? (
                             <div className="flex items-center justify-center h-full">
                                 <MedBraveLoader />
                             </div>
                         ) : activeTab === 'question' ? (
                             questionData ? (
-                                <div className="space-y-6">
+                                <div className="space-y-4 sm:space-y-6">
                                     {/* Enunciado */}
-                                    <div className="bg-background-light dark:bg-background-dark rounded-xl p-6 border-2 border-border-light dark:border-border-dark shadow-lg">
-                                        <div className="flex items-center gap-2 mb-4">
-                                            <h3 className="text-sm font-bold text-primary uppercase tracking-wider">
+                                    <div className="bg-background-light dark:bg-background-dark rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border-2 border-border-light dark:border-border-dark shadow-lg">
+                                        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                                            <h3 className="text-xs sm:text-sm font-bold text-primary uppercase tracking-wider">
                                                 Enunciado
                                             </h3>
                                             {questionData.is_annulled && (
-                                                <span className="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-xs font-bold rounded-md border border-red-300 dark:border-red-700">
+                                                <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-[10px] sm:text-xs font-bold rounded-md border border-red-300 dark:border-red-700">
                                                     ANULADA
                                                 </span>
                                             )}
                                             {questionData.is_outdated && (
-                                                <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-xs font-bold rounded-md border border-orange-300 dark:border-orange-700">
+                                                <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-[10px] sm:text-xs font-bold rounded-md border border-orange-300 dark:border-orange-700">
                                                     DESATUALIZADA
                                                 </span>
                                             )}
                                         </div>
                                         <div
-                                            className="prose prose-sm dark:prose-invert max-w-none text-text-light-primary dark:text-text-dark-primary"
+                                            className="prose prose-sm dark:prose-invert max-w-none text-text-light-primary dark:text-text-dark-primary text-sm sm:text-base"
                                             dangerouslySetInnerHTML={{ __html: questionData.enunciado }}
                                         />
                                     </div>
 
                                     {/* Alternativas */}
-                                    <div className="bg-background-light dark:bg-background-dark rounded-xl p-6 border-2 border-border-light dark:border-border-dark shadow-lg">
-                                        <h3 className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
+                                    <div className="bg-background-light dark:bg-background-dark rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border-2 border-border-light dark:border-border-dark shadow-lg">
+                                        <h3 className="text-xs sm:text-sm font-bold text-primary uppercase tracking-wider mb-3 sm:mb-4">
                                             Alternativas
                                         </h3>
                                         <div className="space-y-3">

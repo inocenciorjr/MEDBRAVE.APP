@@ -33,8 +33,8 @@ export default function ReviewFilters({ filters, onFilterChange }: ReviewFilters
   ];
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-xl shadow-xl dark:shadow-dark-xl hover:shadow-2xl dark:hover:shadow-dark-2xl border border-border-light dark:border-border-dark mb-6 transition-[box-shadow] duration-300">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="bg-surface-light dark:bg-surface-dark p-4 sm:p-5 md:p-6 rounded-xl shadow-xl dark:shadow-dark-xl hover:shadow-2xl dark:hover:shadow-dark-2xl border border-border-light dark:border-border-dark mb-4 sm:mb-5 md:mb-6 transition-[box-shadow] duration-300">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         <SearchInput
           label="Buscar"
           value={filters.search}

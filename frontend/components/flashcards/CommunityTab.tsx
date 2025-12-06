@@ -164,7 +164,7 @@ export function CommunityTab({ institutions, specialties, loading = false }: Com
   return (
     <div className="space-y-8">
       {/* Coleções MedBRAVE */}
-      <section className="bg-surface-light dark:bg-surface-dark rounded-xl p-6 border border-border-light dark:border-border-dark shadow-sm">
+      <section className="bg-surface-light dark:bg-surface-dark rounded-xl p-4 md:p-5 lg:p-6 xl:p-8 border border-border-light dark:border-border-dark shadow-sm">
         <div className="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-4">
           <div className="flex-1">
             <h2 className="text-xl font-semibold text-slate-700 dark:text-slate-200 mb-2">
@@ -224,7 +224,7 @@ export function CommunityTab({ institutions, specialties, loading = false }: Com
       </section>
 
       {/* Coleções feitas pela comunidade */}
-      <section className="bg-surface-light dark:bg-surface-dark rounded-xl p-6 border border-border-light dark:border-border-dark shadow-sm">
+      <section className="bg-surface-light dark:bg-surface-dark rounded-xl p-4 md:p-5 lg:p-6 xl:p-8 border border-border-light dark:border-border-dark shadow-sm">
         <div className="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-4">
           <div className="flex-1">
             <h2 className="text-xl font-semibold text-slate-700 dark:text-slate-200">

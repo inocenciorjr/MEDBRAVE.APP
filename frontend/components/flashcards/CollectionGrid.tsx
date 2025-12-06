@@ -21,7 +21,7 @@ export function CollectionGrid({ collections, onDeleted, onUpdated }: Collection
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-5 lg:gap-6">
       {collections.map((collection, index) => (
         <CollectionCard 
           key={collection.id || `collection-${index}`} 

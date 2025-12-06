@@ -348,31 +348,32 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
   return (
     <>
       {/* Botão flutuante para criar tarefa */}
-      <div className="fixed bottom-8 right-8 z-40 group">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-40 group">
         <button
           onClick={() => {
             setSelectedDate(new Date());
             setIsCreateModalOpen(true);
           }}
-          className="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-300 ease-out hover:scale-110 hover:rotate-90"
+          className="bg-primary text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex items-center justify-center shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-300 ease-out hover:scale-110 hover:rotate-90"
         >
-          <span className="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">
+          <span className="material-symbols-outlined text-xl sm:text-2xl lg:text-3xl transition-transform duration-300 group-hover:scale-110">
             add
           </span>
         </button>
         <Tooltip text="Criar nova tarefa" position="left" />
       </div>
 
-      <div className="border-2 border-border-light dark:border-border-dark rounded-2xl overflow-hidden shadow-2xl dark:shadow-dark-2xl bg-surface-light dark:bg-surface-dark">
+      <div className="border sm:border-2 border-border-light dark:border-border-dark rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl dark:shadow-dark-xl sm:dark:shadow-dark-2xl bg-surface-light dark:bg-surface-dark">
         {/* Headers dos dias da semana */}
-        <div className="grid grid-cols-7 border-b-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark shadow-lg dark:shadow-dark-lg">
-          {weekDays.map((day) => (
+        <div className="grid grid-cols-7 border-b sm:border-b-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark shadow-lg dark:shadow-dark-lg">
+          {weekDays.map((day, idx) => (
             <div
               key={day}
-              className="text-center py-3 border-r-2 last:border-r-0 border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 transition-all duration-200 group"
+              className="text-center py-1.5 sm:py-2 lg:py-3 border-r sm:border-r-2 last:border-r-0 border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 transition-all duration-200 group"
             >
-              <span className="font-display font-bold text-sm uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-105 transition-all duration-200">
-                {day}
+              <span className="font-display font-bold text-[10px] sm:text-xs lg:text-sm uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-105 transition-all duration-200">
+                <span className="sm:hidden">{day.charAt(0)}</span>
+                <span className="hidden sm:inline">{day}</span>
               </span>
             </div>
           ))}
@@ -411,13 +412,13 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                   backgroundImage: 'repeating-linear-gradient(45deg, rgba(168, 85, 247, 0.05), rgba(168, 85, 247, 0.05) 10px, rgba(168, 85, 247, 0.15) 10px, rgba(168, 85, 247, 0.15) 20px)',
                   backgroundColor: 'rgba(168, 85, 247, 0.03)'
                 } : {}}
-                className={`relative min-h-[140px] p-3 border-b-2 border-r-2 last:border-r-0 border-border-light dark:border-border-dark transition-all duration-300 ease-out group overflow-hidden ${
+                className={`relative min-h-[80px] sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] p-1 sm:p-1.5 md:p-2 lg:p-3 border-b sm:border-b-2 border-r sm:border-r-2 last:border-r-0 border-border-light dark:border-border-dark transition-all duration-300 ease-out group overflow-hidden ${
                   isPast
                     ? 'cursor-not-allowed opacity-50 bg-background-light/50 dark:bg-background-dark/50'
-                    : 'cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10 hover:shadow-lg dark:hover:shadow-dark-lg hover:scale-[1.02] hover:z-10 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/0 before:via-primary/0 before:to-primary/0 hover:before:from-primary/5 hover:before:via-transparent hover:before:to-transparent before:transition-all before:duration-500 before:pointer-events-none'
+                    : 'cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10 hover:shadow-lg dark:hover:shadow-dark-lg sm:hover:scale-[1.02] hover:z-10 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/0 before:via-primary/0 before:to-primary/0 hover:before:from-primary/5 hover:before:via-transparent hover:before:to-transparent before:transition-all before:duration-500 before:pointer-events-none'
                 } ${
                   isTodayFlag
-                    ? 'bg-gradient-to-br from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 dark:to-transparent ring-2 ring-primary/50 ring-inset shadow-xl dark:shadow-dark-xl animate-pulse-slow'
+                    ? 'bg-gradient-to-br from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 dark:to-transparent ring-1 sm:ring-2 ring-primary/50 ring-inset shadow-xl dark:shadow-dark-xl animate-pulse-slow'
                     : isCurrentMonth
                     ? 'bg-background-light dark:bg-background-dark'
                     : 'bg-background-light/30 dark:bg-background-dark/30'
@@ -426,16 +427,16 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                 }`}
               >
                 {/* Header do dia */}
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mb-1 sm:mb-1.5 lg:mb-2">
                   {isTodayFlag ? (
                     <div className="relative">
                       <div className="absolute inset-0 bg-primary/30 rounded-full blur-md animate-pulse"></div>
-                      <span className="relative text-base font-display font-bold bg-gradient-to-br from-primary to-primary/80 text-white rounded-full w-8 h-8 inline-flex items-center justify-center shadow-xl dark:shadow-dark-xl ring-2 ring-primary/40 animate-pulse">
+                      <span className="relative text-xs sm:text-sm lg:text-base font-display font-bold bg-gradient-to-br from-primary to-primary/80 text-white rounded-full w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 inline-flex items-center justify-center shadow-xl dark:shadow-dark-xl ring-1 sm:ring-2 ring-primary/40 animate-pulse">
                         {format(day, 'd')}
                       </span>
                     </div>
                   ) : (
-                    <span className={`text-base font-inter font-bold transition-all duration-200 ${
+                    <span className={`text-xs sm:text-sm lg:text-base font-inter font-bold transition-all duration-200 ${
                       isCurrentMonth 
                         ? 'text-text-light-primary dark:text-text-dark-primary group-hover:text-primary group-hover:scale-110' 
                         : 'text-text-light-secondary dark:text-text-dark-secondary'
@@ -451,24 +452,30 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                         setIsCreateModalOpen(true);
                       }
                     }}
-                    className="w-6 h-6 bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary-light rounded-full font-bold shadow-sm hover:shadow-md transition-all duration-200 hover:scale-110 hover:bg-primary/30 dark:hover:bg-primary/40 flex items-center justify-center"
+                    className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary-light rounded-full font-bold shadow-sm hover:shadow-md transition-all duration-200 hover:scale-110 hover:bg-primary/30 dark:hover:bg-primary/40 flex items-center justify-center"
                     title="Criar nova tarefa"
                   >
-                    <span className="material-symbols-outlined !text-sm">add</span>
+                    <span className="material-symbols-outlined !text-[10px] sm:!text-xs lg:!text-sm">add</span>
                   </button>
                 </div>
 
                 {/* Items do dia (agrupados) */}
                 {allItems.length > 0 ? (
-                  <div className="space-y-1.5 overflow-hidden">
-                    {allItems.slice(0, 3).map((item) => {
+                  <div className="space-y-0.5 sm:space-y-1 lg:space-y-1.5 overflow-hidden">
+                    {allItems.slice(0, window?.innerWidth < 640 ? 2 : 3).map((item) => {
                       const isReview = 'content_type' in item;
                       const icon = isReview 
                         ? getIconByContentType(item.content_type)
                         : 'menu_book';
                       
-                      // Título simplificado
+                      // Título simplificado - mais curto em mobile
                       const displayTitle = isReview 
+                        ? (item.content_type === 'FLASHCARD' ? 'Flash' :
+                           item.content_type === 'QUESTION' ? 'Quest' :
+                           'Erros')
+                        : item.title;
+                      
+                      const displayTitleFull = isReview 
                         ? (item.content_type === 'FLASHCARD' ? 'Flashcards' :
                            item.content_type === 'QUESTION' ? 'Questões' :
                            'Caderno de Erros')
@@ -485,12 +492,12 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                             e.stopPropagation();
                             setSelectedTask(item);
                           }}
-                          className={`relative flex items-center justify-between text-xs px-2 py-1.5 rounded-lg ${getColorClasses(item.color)} shadow-md hover:shadow-lg dark:shadow-dark-md dark:hover:shadow-dark-lg gap-1.5 transition-all duration-200 hover:scale-[1.02] cursor-pointer group/item overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700 before:pointer-events-none`}
+                          className={`relative flex items-center justify-between text-[9px] sm:text-[10px] lg:text-xs px-1 sm:px-1.5 lg:px-2 py-0.5 sm:py-1 lg:py-1.5 rounded sm:rounded-lg ${getColorClasses(item.color)} shadow-md hover:shadow-lg dark:shadow-dark-md dark:hover:shadow-dark-lg gap-0.5 sm:gap-1 lg:gap-1.5 transition-all duration-200 hover:scale-[1.02] cursor-pointer group/item overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700 before:pointer-events-none`}
                         >
                           {/* Barra de progresso (se houver) */}
                           {hasProgress && progressPercent > 0 && (
                             <div 
-                              className="absolute left-0 top-0 bottom-0 transition-all duration-500 rounded-l-lg overflow-hidden"
+                              className="absolute left-0 top-0 bottom-0 transition-all duration-500 rounded-l sm:rounded-l-lg overflow-hidden"
                               style={{ width: `${progressPercent}%` }}
                             >
                               <div className={`absolute inset-0 ${
@@ -507,42 +514,43 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                             </div>
                           )}
                           
-                          <div className="flex items-center gap-1.5 min-w-0 flex-1 relative z-10">
-                            <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-200 ${
+                          <div className="flex items-center gap-0.5 sm:gap-1 lg:gap-1.5 min-w-0 flex-1 relative z-10">
+                            <div className={`w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm transition-all duration-200 ${
                               isCompleted 
                                 ? 'bg-white/60 dark:bg-white/40' 
                                 : 'bg-white/40 dark:bg-white/20 group-hover/item:scale-110 group-hover/item:bg-white/60 dark:group-hover/item:bg-white/30'
                             }`}>
-                              <span className={`material-symbols-outlined !text-xs ${isCompleted ? 'filled' : ''}`}>
+                              <span className={`material-symbols-outlined !text-[8px] sm:!text-[10px] lg:!text-xs ${isCompleted ? 'filled' : ''}`}>
                                 {isCompleted ? 'check_circle' : icon}
                               </span>
                             </div>
                             <span className={`truncate font-semibold ${isCompleted ? 'line-through' : ''}`}>
-                              {displayTitle}
+                              <span className="sm:hidden">{displayTitle}</span>
+                              <span className="hidden sm:inline">{displayTitleFull}</span>
                             </span>
                           </div>
-                          <div className="flex items-center gap-1 flex-shrink-0 relative z-10">
+                          <div className="flex items-center gap-0.5 sm:gap-1 flex-shrink-0 relative z-10">
                             {isReview && hasProgress && (
-                              <span className="font-bold bg-white/30 dark:bg-black/20 px-1.5 py-0.5 rounded-md text-xs shadow-sm">
+                              <span className="font-bold bg-white/30 dark:bg-black/20 px-0.5 sm:px-1 lg:px-1.5 py-0.5 rounded text-[8px] sm:text-[10px] lg:text-xs shadow-sm hidden xs:inline">
                                 {item.completed_count}/{item.total_count}
                               </span>
                             )}
                             {isReview && !hasProgress && item.count > 0 && (
-                              <span className="font-bold bg-white/30 dark:bg-black/20 px-1.5 py-0.5 rounded-md text-xs shadow-sm">
+                              <span className="font-bold bg-white/30 dark:bg-black/20 px-0.5 sm:px-1 lg:px-1.5 py-0.5 rounded text-[8px] sm:text-[10px] lg:text-xs shadow-sm">
                                 {item.count}
                               </span>
                             )}
                             {isCompleted && (
-                              <span className="font-bold bg-white/40 dark:bg-white/30 px-1.5 py-0.5 rounded-md text-xs shadow-sm">
+                              <span className="font-bold bg-white/40 dark:bg-white/30 px-0.5 sm:px-1 lg:px-1.5 py-0.5 rounded text-[8px] sm:text-[10px] lg:text-xs shadow-sm">
                                 ✓
                               </span>
                             )}
-                            {getSourceBadge(item.source)}
+                            <span className="hidden lg:inline">{getSourceBadge(item.source)}</span>
                           </div>
                         </div>
                       );
                     })}
-                    {allItems.length > 3 && (
+                    {allItems.length > (typeof window !== 'undefined' && window?.innerWidth < 640 ? 2 : 3) && (
                       <div 
                         onClick={(e) => {
                           e.stopPropagation();
@@ -550,7 +558,7 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                           setSelectedDayTasks(allItems);
                           setIsDayTasksModalOpen(true);
                         }}
-                        className="relative text-[10px] text-center font-semibold mt-0.5 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded-md py-1 shadow-sm hover:shadow-md dark:shadow-dark-sm dark:hover:shadow-dark-md transition-all duration-200 hover:scale-105 cursor-pointer group/more border border-primary/20 hover:border-primary/40 overflow-hidden"
+                        className="relative text-[8px] sm:text-[10px] text-center font-semibold mt-0.5 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 rounded py-0.5 sm:py-1 shadow-sm hover:shadow-md dark:shadow-dark-sm dark:hover:shadow-dark-md transition-all duration-200 hover:scale-105 cursor-pointer group/more border border-primary/20 hover:border-primary/40 overflow-hidden"
                       >
                         {/* Shimmer effect */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover/more:translate-x-[200%] transition-transform duration-700 pointer-events-none" />
@@ -558,9 +566,9 @@ export function MonthlyPlanner({ currentDate }: MonthlyPlannerProps) {
                         {/* Content */}
                         <div className="relative flex items-center justify-center gap-0.5">
                           <span className="text-primary font-bold">
-                            +{allItems.length - 3}
+                            +{allItems.length - (typeof window !== 'undefined' && window?.innerWidth < 640 ? 2 : 3)}
                           </span>
-                          <span className="material-symbols-outlined !text-xs text-primary group-hover/more:scale-110 transition-transform duration-200">
+                          <span className="material-symbols-outlined !text-[8px] sm:!text-xs text-primary group-hover/more:scale-110 transition-transform duration-200">
                             arrow_forward
                           </span>
                         </div>

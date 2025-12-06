@@ -86,7 +86,7 @@ export function MyCollectionsTab({ myCollections, importedCollections, loading =
   return (
     <div className="space-y-10">
       {/* Minhas coleções */}
-      <section className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-lg dark:shadow-dark-xl border border-border-light dark:border-border-dark">
+      <section className="bg-surface-light dark:bg-surface-dark p-4 md:p-5 lg:p-6 xl:p-8 rounded-lg shadow-lg dark:shadow-dark-xl border border-border-light dark:border-border-dark">
         <div className="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-4">
           <div>
             <h2 className="text-xl font-semibold text-slate-700 dark:text-slate-200">
@@ -148,7 +148,7 @@ export function MyCollectionsTab({ myCollections, importedCollections, loading =
       </section>
 
       {/* Coleções importadas da comunidade */}
-      <section className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-lg dark:shadow-dark-xl border border-border-light dark:border-border-dark">
+      <section className="bg-surface-light dark:bg-surface-dark p-4 md:p-5 lg:p-6 xl:p-8 rounded-lg shadow-lg dark:shadow-dark-xl border border-border-light dark:border-border-dark">
         <h2 className="text-xl font-semibold text-slate-700 dark:text-slate-200 mb-4">
           Coleções importadas da comunidade
         </h2>
@@ -177,7 +177,7 @@ export function MyCollectionsTab({ myCollections, importedCollections, loading =
         {loading ? (
           <CollectionGridSkeleton count={importedCollections.length || 6} />
         ) : importedPaginatedCollections.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-5 lg:gap-6 mb-6">
             {importedPaginatedCollections.map((collection) => (
               <ImportedCollectionCard 
                 key={collection.id} 

@@ -320,7 +320,7 @@ export function EditDeckModal({
 
       {/* Modal */}
       <div
-        className={`fixed right-0 top-0 h-full w-full md:w-[90%] lg:w-[80%] xl:w-[70%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[60] transform transition-transform duration-300 ease-out flex flex-col ${
+        className={`fixed right-0 top-0 h-full w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[60] transform transition-transform duration-300 ease-out flex flex-col ${
           isAnimating ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

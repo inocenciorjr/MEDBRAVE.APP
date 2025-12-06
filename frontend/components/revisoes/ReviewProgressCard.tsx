@@ -196,7 +196,7 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
                  shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl
                  transition-all duration-300 border border-border-light dark:border-border-dark
                  cursor-pointer hover:scale-[1.02]"
-      style={{ minHeight: '400px' }}
+      style={{ minHeight: '350px' }}
       onClick={handleStartReview}
       role="button"
       tabIndex={0}
@@ -209,17 +209,17 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
       aria-label={`Iniciar revisão de ${config[contentType].title} - ${remaining} pendentes`}
     >
       {/* Header */}
-      <div className="bg-background-light dark:bg-background-dark px-6 py-4 border-b border-border-light dark:border-border-dark">
-        <div className="flex items-center justify-between">
-          <h2 className="text-base font-display font-bold text-text-light-primary dark:text-text-dark-primary">
+      <div className="bg-background-light dark:bg-background-dark px-4 sm:px-5 md:px-6 py-3 sm:py-4 border-b border-border-light dark:border-border-dark">
+        <div className="flex items-center justify-between gap-2">
+          <h2 className="text-sm sm:text-base font-display font-bold text-text-light-primary dark:text-text-dark-primary">
             {currentConfig.title}
           </h2>
           {remaining > 0 ? (
-            <span className="px-3 py-1 bg-primary/10 text-primary rounded-md text-sm font-display font-semibold">
+            <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/10 text-primary rounded-md text-xs sm:text-sm font-display font-semibold whitespace-nowrap">
               {remaining} pendentes
             </span>
           ) : total > 0 && (
-            <span className="px-3 py-1 bg-primary/10 text-primary rounded-md text-sm font-display font-semibold">
+            <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/10 text-primary rounded-md text-xs sm:text-sm font-display font-semibold">
               Concluído
             </span>
           )}
@@ -227,11 +227,11 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
       </div>
 
       {/* Content */}
-      <div className="p-6 md:p-8" style={{ minHeight: '320px' }}>
+      <div className="p-4 sm:p-5 md:p-6 lg:p-8" style={{ minHeight: '280px' }}>
 
         {/* Circular Chart Centralizado */}
-        <div className="flex justify-center mb-6" style={{ height: '192px', minHeight: '192px' }} aria-hidden="true">
-          <div className="relative w-48 h-48" style={{ minWidth: '192px', minHeight: '192px' }}>
+        <div className="flex justify-center mb-4 sm:mb-6" style={{ height: '160px', minHeight: '160px' }} aria-hidden="true">
+          <div className="relative w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48" style={{ minWidth: '160px', minHeight: '160px' }}>
             {remaining === 0 && total > 0 && showCheckIcon ? (
               // Apenas ícone grande quando completado
               <div className="absolute inset-0 flex items-center justify-center animate-zoom-in">
@@ -275,10 +275,10 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
                 {/* Center Content - Progresso numérico */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <div className="text-center">
-                    <div className="text-3xl font-display font-bold text-text-light-primary dark:text-text-dark-primary">
+                    <div className="text-2xl sm:text-3xl font-display font-bold text-text-light-primary dark:text-text-dark-primary">
                       {completed}/{total}
                     </div>
-                    <div className="text-sm font-display font-semibold text-text-light-secondary dark:text-text-dark-secondary mt-1">
+                    <div className="text-xs sm:text-sm font-display font-semibold text-text-light-secondary dark:text-text-dark-secondary mt-0.5 sm:mt-1">
                       {percentCompleted}%
                     </div>
                   </div>
@@ -289,14 +289,14 @@ const ReviewProgressCard: React.FC<ReviewProgressCardProps> = ({ contentType }) 
         </div>
 
         {/* Footer com botão de ação */}
-        <div className="mt-6 pt-4 border-t border-border-light dark:border-border-dark">
+        <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-border-light dark:border-border-dark">
         <button
           onClick={(e) => {
             e.stopPropagation();
             handleStartReview();
           }}
           disabled={remaining === 0}
-          className={`w-full py-3 rounded-xl font-display font-semibold transition-all duration-200
+          className={`w-full py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-display font-semibold text-sm sm:text-base transition-all duration-200
                      ${remaining > 0 
                        ? 'bg-primary text-white hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]' 
                        : 'bg-border-light dark:bg-border-dark text-text-light-secondary dark:text-text-dark-secondary cursor-not-allowed'

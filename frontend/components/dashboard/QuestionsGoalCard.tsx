@@ -36,10 +36,10 @@ export default function QuestionsGoalCard() {
   }
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
+    <div className="bg-surface-light dark:bg-surface-dark p-4 sm:p-5 md:p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
       {/* Header */}
       <div className="flex justify-between items-center mb-2">
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+        <h2 className="text-base sm:text-lg font-semibold text-slate-700 dark:text-slate-200">
           Meta de Questões
         </h2>
         <a
@@ -56,8 +56,8 @@ export default function QuestionsGoalCard() {
         </a>
       </div>
 
-      {/* Chart */}
-      <div className="relative w-full" style={{ height: '200px' }}>
+      {/* Chart - altura responsiva para tablets */}
+      <div className="relative w-full h-[140px] sm:h-[160px] md:h-[180px]">
         {isMounted && (
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -102,20 +102,20 @@ export default function QuestionsGoalCard() {
         )}
 
         {/* Center text */}
-        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center pointer-events-none">
-          <div className="text-4xl font-bold text-text-light-primary dark:text-text-dark-primary">
-            {current} <span className="text-lg font-medium text-text-light-secondary dark:text-text-dark-secondary">questões</span>
+        <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-center pointer-events-none">
+          <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-light-primary dark:text-text-dark-primary">
+            {current} <span className="text-sm sm:text-base md:text-lg font-medium text-text-light-secondary dark:text-text-dark-secondary">questões</span>
           </div>
-          <div className="text-sm text-text-light-secondary dark:text-text-dark-secondary font-medium mt-1">
+          <div className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary font-medium mt-0.5 sm:mt-1">
             {percentComplete}% da meta
           </div>
         </div>
       </div>
 
       {/* Range Labels */}
-      <div className="flex justify-between px-12">
-        <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-sm">0</span>
-        <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-sm">{goal} questões</span>
+      <div className="flex justify-between px-6 sm:px-8 md:px-12">
+        <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-xs sm:text-sm">0</span>
+        <span className="text-text-light-secondary dark:text-text-dark-secondary font-medium text-xs sm:text-sm">{goal} questões</span>
       </div>
     </div>
   );

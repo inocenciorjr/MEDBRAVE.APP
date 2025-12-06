@@ -105,69 +105,113 @@ export function PlannerView({ viewMode, onViewModeChange }: PlannerViewProps) {
   };
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-lg p-6">
+    <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-lg p-3 sm:p-4 md:p-6">
       {/* Header */}
-      <header className="relative flex items-center justify-between mb-8">
-        {/* Botões de navegação */}
-        <div className="flex items-center space-x-2 p-1 bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark rounded-lg shadow-lg dark:shadow-dark-lg flex-shrink-0">
-          <button 
-            onClick={handlePrevious}
-            disabled={!canGoPrevious()}
-            className={`p-2 rounded-lg group relative ${
-              canGoPrevious() 
-                ? 'hover:bg-background-light dark:hover:bg-background-dark cursor-pointer' 
-                : 'opacity-30 cursor-not-allowed'
-            }`}
-          >
-            <span className="material-symbols-outlined text-xl text-primary">
-              chevron_left
-            </span>
-            {!canGoPrevious() && <Tooltip text="Limite de navegação atingido (6 meses atrás)" position="bottom" />}
-          </button>
-          <button 
-            onClick={handleNext}
-            disabled={!canGoNext()}
-            className={`p-2 rounded-lg group relative ${
-              canGoNext() 
-                ? 'hover:bg-background-light dark:hover:bg-background-dark cursor-pointer' 
-                : 'opacity-30 cursor-not-allowed'
-            }`}
-          >
-            <span className="material-symbols-outlined text-xl text-primary">
-              chevron_right
-            </span>
-            {!canGoNext() && <Tooltip text="Limite de navegação atingido (12 meses à frente)" position="bottom" />}
-          </button>
-        </div>
+      <header className="flex flex-col gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8">
+        {/* Linha superior: Navegação + Título (mobile) ou Navegação + Título + Controles (desktop) */}
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
+          {/* Botões de navegação */}
+          <div className="flex items-center space-x-1 sm:space-x-2 p-0.5 sm:p-1 bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark rounded-lg shadow-lg dark:shadow-dark-lg flex-shrink-0">
+            <button 
+              onClick={handlePrevious}
+              disabled={!canGoPrevious()}
+              className={`p-1.5 sm:p-2 rounded-lg group relative ${
+                canGoPrevious() 
+                  ? 'hover:bg-background-light dark:hover:bg-background-dark cursor-pointer' 
+                  : 'opacity-30 cursor-not-allowed'
+              }`}
+            >
+              <span className="material-symbols-outlined text-lg sm:text-xl text-primary">
+                chevron_left
+              </span>
+              {!canGoPrevious() && <Tooltip text="Limite de navegação atingido (6 meses atrás)" position="bottom" />}
+            </button>
+            <button 
+              onClick={handleNext}
+              disabled={!canGoNext()}
+              className={`p-1.5 sm:p-2 rounded-lg group relative ${
+                canGoNext() 
+                  ? 'hover:bg-background-light dark:hover:bg-background-dark cursor-pointer' 
+                  : 'opacity-30 cursor-not-allowed'
+              }`}
+            >
+              <span className="material-symbols-outlined text-lg sm:text-xl text-primary">
+                chevron_right
+              </span>
+              {!canGoNext() && <Tooltip text="Limite de navegação atingido (12 meses à frente)" position="bottom" />}
+            </button>
+          </div>
 
-        {/* Título centralizado */}
-        <div className="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2">
-          <h1 className="text-4xl text-gray-400 dark:text-gray-500">
-            <span className="font-bold">{getDateRangeText().split(' ')[0]}</span>{' '}
-            <span className="font-normal">{getDateRangeText().split(' ')[1]}</span>{' '}
-            <span className="font-normal">-</span>{' '}
-            <span className="font-bold">{getDateRangeText().split(' ')[3]}</span>{' '}
-            <span className="font-normal">{getDateRangeText().split(' ')[4]}</span>{' '}
-            <span className="font-normal">{getDateRangeText().split(' ')[5]}</span>
-          </h1>
-          {getDistanceFromToday() && (
-            <div className={`text-xs mt-1 px-2 py-1 rounded-full ${
-              getDistanceFromToday() === 'passado' 
-                ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400'
-                : 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
-            }`}>
-              {getDistanceFromToday() === 'passado' ? '⏪ Visualizando o passado' : '⏩ Visualizando o futuro'}
+          {/* Título centralizado */}
+          <div className="flex flex-col items-center flex-1 min-w-0">
+            <h1 className="text-sm sm:text-xl md:text-2xl lg:text-4xl text-gray-400 dark:text-gray-500 truncate text-center">
+              <span className="font-bold">{getDateRangeText().split(' ')[0]}</span>{' '}
+              <span className="font-normal hidden xs:inline">{getDateRangeText().split(' ')[1]}</span>{' '}
+              <span className="font-normal">-</span>{' '}
+              <span className="font-bold">{getDateRangeText().split(' ')[3]}</span>{' '}
+              <span className="font-normal hidden xs:inline">{getDateRangeText().split(' ')[4]}</span>{' '}
+              <span className="font-normal hidden sm:inline">{getDateRangeText().split(' ')[5]}</span>
+            </h1>
+            {getDistanceFromToday() && (
+              <div className={`text-[10px] sm:text-xs mt-1 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full ${
+                getDistanceFromToday() === 'passado' 
+                  ? 'bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400'
+                  : 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+              }`}>
+                {getDistanceFromToday() === 'passado' ? '⏪ Passado' : '⏩ Futuro'}
+              </div>
+            )}
+          </div>
+
+          {/* Controles - Desktop */}
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-4 flex-shrink-0">
+            {/* Toggle Semana/Mês */}
+            <div className="flex items-center border-2 border-border-light dark:border-border-dark rounded-lg text-xs lg:text-sm font-semibold shadow-lg dark:shadow-dark-lg bg-surface-light dark:bg-surface-dark">
+              <button 
+                onClick={() => onViewModeChange('daily')}
+                className={`px-2 lg:px-4 py-1.5 lg:py-2 rounded-l-lg ${
+                  viewMode === 'daily' 
+                    ? 'bg-primary text-white' 
+                    : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark'
+                }`}
+              >
+                Semana
+              </button>
+              <button 
+                onClick={() => onViewModeChange('monthly')}
+                className={`px-2 lg:px-4 py-1.5 lg:py-2 rounded-r-lg ${
+                  viewMode === 'monthly' 
+                    ? 'bg-primary text-white' 
+                    : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark'
+                }`}
+              >
+                Mês
+              </button>
             </div>
-          )}
+
+            {/* Botão Hoje */}
+            <button 
+              onClick={handleToday}
+              disabled={isCurrentPeriod()}
+              className={`flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-1.5 lg:py-2 rounded-lg shadow-lg dark:shadow-dark-lg font-semibold border-2 text-xs lg:text-sm ${
+                isCurrentPeriod()
+                  ? 'bg-surface-light dark:bg-surface-dark border-border-light dark:border-border-dark text-text-light-secondary dark:text-text-dark-secondary opacity-50 cursor-not-allowed'
+                  : 'bg-primary text-white border-primary hover:bg-primary/90'
+              }`}
+            >
+              <span className="material-symbols-outlined text-lg lg:text-xl">today</span>
+              <span>Hoje</span>
+            </button>
+          </div>
         </div>
 
-        {/* Controles */}
-        <div className="flex items-center space-x-4 flex-shrink-0">
+        {/* Controles - Mobile */}
+        <div className="flex md:hidden items-center justify-center gap-2">
           {/* Toggle Semana/Mês */}
-          <div className="flex items-center border-2 border-border-light dark:border-border-dark rounded-lg text-sm font-semibold shadow-lg dark:shadow-dark-lg bg-surface-light dark:bg-surface-dark">
+          <div className="flex items-center border-2 border-border-light dark:border-border-dark rounded-lg text-xs font-semibold shadow-lg dark:shadow-dark-lg bg-surface-light dark:bg-surface-dark">
             <button 
               onClick={() => onViewModeChange('daily')}
-              className={`px-4 py-2 rounded-l-lg ${
+              className={`px-3 py-1.5 rounded-l-lg ${
                 viewMode === 'daily' 
                   ? 'bg-primary text-white' 
                   : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark'
@@ -177,7 +221,7 @@ export function PlannerView({ viewMode, onViewModeChange }: PlannerViewProps) {
             </button>
             <button 
               onClick={() => onViewModeChange('monthly')}
-              className={`px-4 py-2 rounded-r-lg ${
+              className={`px-3 py-1.5 rounded-r-lg ${
                 viewMode === 'monthly' 
                   ? 'bg-primary text-white' 
                   : 'text-text-light-secondary dark:text-text-dark-secondary hover:bg-background-light dark:hover:bg-background-dark'
@@ -191,13 +235,13 @@ export function PlannerView({ viewMode, onViewModeChange }: PlannerViewProps) {
           <button 
             onClick={handleToday}
             disabled={isCurrentPeriod()}
-            className={`flex items-center space-x-2 px-4 py-2 rounded-lg shadow-lg dark:shadow-dark-lg font-semibold border-2 ${
+            className={`flex items-center space-x-1 px-3 py-1.5 rounded-lg shadow-lg dark:shadow-dark-lg font-semibold border-2 text-xs ${
               isCurrentPeriod()
                 ? 'bg-surface-light dark:bg-surface-dark border-border-light dark:border-border-dark text-text-light-secondary dark:text-text-dark-secondary opacity-50 cursor-not-allowed'
                 : 'bg-primary text-white border-primary hover:bg-primary/90'
             }`}
           >
-            <span className="material-symbols-outlined text-xl">today</span>
+            <span className="material-symbols-outlined text-base">today</span>
             <span>Hoje</span>
           </button>
         </div>

@@ -57,7 +57,7 @@ export default function RevisoesPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <Breadcrumb
           items={[
             { label: 'Revisões', icon: 'history', href: '/revisoes' }
@@ -66,51 +66,52 @@ export default function RevisoesPage() {
       </div>
 
       {/* Content */}
-      <div className="w-full py-8">
-          <div className="space-y-8">
+      <div className="w-full max-w-[1800px] 2xl:max-w-[2000px] mx-auto py-6 md:py-8 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="space-y-6 md:space-y-8">
             {/* Header com botão de configuração */}
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <h1 className="text-4xl font-display font-semibold text-slate-700 dark:text-slate-200 mb-2 capitalize">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-semibold text-slate-700 dark:text-slate-200 mb-1 sm:mb-2 capitalize">
                   {new Date().toLocaleDateString('pt-BR', { 
                     weekday: 'long', 
                     month: 'long', 
                     day: 'numeric'
                   })}
                 </h1>
-                <p className="text-sm font-display text-text-light-secondary dark:text-text-dark-secondary">
+                <p className="text-xs sm:text-sm font-display text-text-light-secondary dark:text-text-dark-secondary">
                   Confira suas revisões agendadas para hoje
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <button
                   onClick={() => setShowWizard(true)}
-                  className="px-6 py-3 bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary 
-                           rounded-xl font-semibold border-2 border-border-light dark:border-border-dark
+                  className="px-3 sm:px-4 lg:px-6 py-2 sm:py-2.5 lg:py-3 bg-surface-light dark:bg-surface-dark text-text-light-primary dark:text-text-dark-primary 
+                           rounded-lg sm:rounded-xl font-semibold border-2 border-border-light dark:border-border-dark
                            hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10
                            transition-all duration-200 shadow-lg hover:shadow-xl
                            hover:scale-105 active:scale-[0.98]
-                           flex items-center gap-2"
+                           flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base"
                 >
-                  <span className="material-symbols-outlined">tune</span>
-                  <span>Preferências</span>
+                  <span className="material-symbols-outlined text-lg sm:text-xl">tune</span>
+                  <span className="hidden sm:inline">Preferências</span>
                 </button>
                 <button
                   onClick={() => router.push('/revisoes/gerenciar')}
-                  className="px-6 py-3 bg-primary text-white rounded-xl font-semibold 
+                  className="px-3 sm:px-4 lg:px-6 py-2 sm:py-2.5 lg:py-3 bg-primary text-white rounded-lg sm:rounded-xl font-semibold 
                            hover:bg-primary/90 transition-all duration-200 
                            shadow-lg hover:shadow-xl
                            hover:scale-105 active:scale-[0.98]
-                           flex items-center gap-2"
+                           flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base"
                 >
-                  <span className="material-symbols-outlined">settings</span>
-                  <span>Gerenciar Revisões</span>
+                  <span className="material-symbols-outlined text-lg sm:text-xl">settings</span>
+                  <span className="hidden xs:inline">Gerenciar</span>
+                  <span className="hidden sm:inline">Revisões</span>
                 </button>
               </div>
             </div>
 
             {/* Cards de Progresso Detalhado */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
               {!preferencesLoading && (
                 <>
                   <ReviewProgressCard contentType="FLASHCARD" />
@@ -121,11 +122,11 @@ export default function RevisoesPage() {
             </div>
 
             {/* Cards de Metas */}
-            <div className="space-y-4">
-              <h2 className="text-2xl font-display font-semibold text-text-light-primary dark:text-text-dark-primary">
+            <div className="space-y-3 md:space-y-4">
+              <h2 className="text-xl md:text-2xl font-display font-semibold text-text-light-primary dark:text-text-dark-primary">
                 Metas diárias
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:gap-6">
                 <ReviewGoalCard
                 title="Meta de Questões"
                 current={todayStats?.questions_answered || 0}
@@ -217,7 +218,7 @@ export default function RevisoesPage() {
                 </div>
 
                 {/* Cards de Preferências */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 lg:gap-6">
                   {/* Modo e Intervalo de Agendamento */}
                   <div className="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden
                                 shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl

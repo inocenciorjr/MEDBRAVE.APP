@@ -798,51 +798,53 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
   return (
     <>
       {/* Botão flutuante */}
-      <div className="fixed bottom-8 right-8 z-40 group">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 z-40 group">
         <button
           onClick={() => {
             setSelectedCell({ dayIndex: 0, hour: 8 });
             setIsCreateModalOpen(true);
           }}
-          className="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-300 ease-out hover:scale-110 hover:rotate-90"
+          className="bg-primary text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex items-center justify-center shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-300 ease-out hover:scale-110 hover:rotate-90"
         >
-          <span className="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">add</span>
+          <span className="material-symbols-outlined text-xl sm:text-2xl lg:text-3xl transition-transform duration-300 group-hover:scale-110">add</span>
         </button>
         <Tooltip text="Criar nova tarefa" position="left" />
       </div>
 
-      <div ref={gridRef} className="relative select-none">
-        <div className="border-2 border-border-light dark:border-border-dark rounded-2xl overflow-hidden shadow-2xl dark:shadow-dark-2xl bg-surface-light dark:bg-surface-dark">
+      <div ref={gridRef} className="relative select-none overflow-x-auto">
+        <div className="border sm:border-2 border-border-light dark:border-border-dark rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl dark:shadow-dark-xl sm:dark:shadow-dark-2xl bg-surface-light dark:bg-surface-dark min-w-[600px] sm:min-w-0">
           {/* Header Row */}
-          <div className="grid grid-cols-[100px,repeat(7,1fr)] border-b-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark shadow-lg dark:shadow-dark-lg">
+          <div className="grid grid-cols-[50px,repeat(7,1fr)] sm:grid-cols-[70px,repeat(7,1fr)] lg:grid-cols-[100px,repeat(7,1fr)] border-b sm:border-b-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark shadow-lg dark:shadow-dark-lg">
             {/* Canto superior esquerdo */}
-            <div className="h-14 bg-surface-light dark:bg-surface-dark border-r-2 border-border-light dark:border-border-dark flex items-center justify-center">
-              <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-2xl">schedule</span>
+            <div className="h-10 sm:h-12 lg:h-14 bg-surface-light dark:bg-surface-dark border-r sm:border-r-2 border-border-light dark:border-border-dark flex items-center justify-center">
+              <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-lg sm:text-xl lg:text-2xl">schedule</span>
             </div>
             
             {/* Headers dos dias */}
             {weekDays.map((day, i) => {
             const dayName = format(day, 'EEE', { locale: ptBR });
+            const dayNameShort = dayName.charAt(0).toUpperCase();
             const dayNum = format(day, 'd');
             const today = isToday(day);
             
             return (
               <div
                 key={i}
-                className={`h-14 flex flex-col items-center justify-center gap-1 bg-background-light dark:bg-background-dark ${i > 0 ? 'border-l-2' : ''} border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 hover:shadow-lg dark:hover:shadow-dark-lg group cursor-pointer`}
+                className={`h-10 sm:h-12 lg:h-14 flex flex-col items-center justify-center gap-0.5 sm:gap-1 bg-background-light dark:bg-background-dark ${i > 0 ? 'border-l sm:border-l-2' : ''} border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 hover:shadow-lg dark:hover:shadow-dark-lg group cursor-pointer`}
               >
-                <span className="font-display font-bold text-xs uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-105">
-                  {dayName}
+                <span className="font-display font-bold text-[10px] sm:text-xs uppercase tracking-wider text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-105">
+                  <span className="sm:hidden">{dayNameShort}</span>
+                  <span className="hidden sm:inline">{dayName}</span>
                 </span>
                 {today ? (
                   <div className="relative">
                     <div className="absolute inset-0 bg-primary/20 rounded-full blur-md animate-pulse"></div>
-                    <span className="relative text-sm font-display font-bold bg-gradient-to-br from-primary to-primary/80 text-white rounded-full w-8 h-8 inline-flex items-center justify-center shadow-xl dark:shadow-dark-xl ring-2 ring-primary/30 animate-pulse">
+                    <span className="relative text-[10px] sm:text-xs lg:text-sm font-display font-bold bg-gradient-to-br from-primary to-primary/80 text-white rounded-full w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 inline-flex items-center justify-center shadow-xl dark:shadow-dark-xl ring-1 sm:ring-2 ring-primary/30 animate-pulse">
                       {dayNum}
                     </span>
                   </div>
                 ) : (
-                  <span className="text-sm font-inter font-bold text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-110">
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-inter font-bold text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary group-hover:scale-110">
                     {dayNum}
                   </span>
                 )}
@@ -852,11 +854,11 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
           </div>
 
           {/* Grid de conteúdo */}
-          <div className="grid grid-cols-[100px,repeat(7,1fr)]">
+          <div className="grid grid-cols-[50px,repeat(7,1fr)] sm:grid-cols-[70px,repeat(7,1fr)] lg:grid-cols-[100px,repeat(7,1fr)]">
             {/* Coluna de horários */}
-            <div className="sticky left-0 z-20 bg-background-light dark:bg-background-dark border-r-2 border-border-light dark:border-border-dark shadow-lg dark:shadow-dark-lg">
+            <div className="sticky left-0 z-20 bg-background-light dark:bg-background-dark border-r sm:border-r-2 border-border-light dark:border-border-dark shadow-lg dark:shadow-dark-lg">
               {hours.map(hour => (
-                <div key={hour} className="h-12 flex items-center justify-center text-xs font-display font-bold text-text-light-secondary dark:text-text-dark-secondary border-b-2 border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 group">
+                <div key={hour} className="h-10 sm:h-11 lg:h-12 flex items-center justify-center text-[10px] sm:text-xs font-display font-bold text-text-light-secondary dark:text-text-dark-secondary border-b sm:border-b-2 border-border-light dark:border-border-dark hover:bg-primary/5 dark:hover:bg-primary/10 group">
                   <span className="group-hover:text-primary group-hover:scale-110">
                     {hour.toString().padStart(2, '0')}:00
                   </span>
@@ -873,7 +875,7 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
             return (
               <div
                 key={dayIdx}
-                className={`relative border-r-2 border-border-light dark:border-border-dark`}
+                className={`relative border-r sm:border-r-2 border-border-light dark:border-border-dark`}
                 style={!isStudyDay ? {
                   backgroundImage: 'repeating-linear-gradient(45deg, rgba(168, 85, 247, 0.05), rgba(168, 85, 247, 0.05) 10px, rgba(168, 85, 247, 0.15) 10px, rgba(168, 85, 247, 0.15) 20px)',
                   backgroundColor: 'rgba(168, 85, 247, 0.03)'
@@ -889,7 +891,7 @@ export function DailyPlannerNative({ currentDate }: DailyPlannerNativeProps) {
                   return (
                     <div
                       key={hour}
-                      className={`h-12 border-b-2 border-border-light dark:border-border-dark ${
+                      className={`h-10 sm:h-11 lg:h-12 border-b sm:border-b-2 border-border-light dark:border-border-dark ${
                         isPast 
                           ? `cursor-not-allowed opacity-50 ${isStudyDay ? 'bg-background-light dark:bg-background-dark' : ''}` 
                           : `cursor-pointer hover:bg-primary/10 hover:shadow-inner ${isStudyDay ? 'bg-background-light dark:bg-background-dark' : ''}`

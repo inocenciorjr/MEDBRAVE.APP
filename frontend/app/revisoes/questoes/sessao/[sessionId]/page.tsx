@@ -136,7 +136,7 @@ export default function QuestoesRevisaoPage({ params }: { params: Promise<{ sess
   return (
     <QuestionStatsProvider>
       <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[1800px] 2xl:max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-6 md:py-8">
           <QuestionView
             question={questions[currentIndex]}
             questionList={questions}

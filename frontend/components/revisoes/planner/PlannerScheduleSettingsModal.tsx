@@ -163,21 +163,21 @@ export function PlannerScheduleSettingsModal({ isOpen, onClose, onSuccess }: Pla
     const endKey = `${type}_end_hour` as keyof ScheduleSettings;
 
     return (
-      <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-dark rounded-xl p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
+      <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-dark rounded-lg sm:rounded-xl p-4 sm:p-6">
+        <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+          <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center ${
             color === 'purple' ? 'bg-purple-100 dark:bg-purple-900/30' :
             color === 'cyan' ? 'bg-cyan-100 dark:bg-cyan-900/30' : 
             'bg-green-100 dark:bg-green-900/30'
           }`}>
-            {type === 'flashcard' && <RectangleStackIcon className="h-5 w-5 text-purple-600 dark:text-purple-400" />}
-            {type === 'question' && <ListBulletIcon className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />}
-            {type === 'error_notebook' && <BookOpenIcon className="h-5 w-5 text-green-600 dark:text-green-400" />}
+            {type === 'flashcard' && <RectangleStackIcon className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600 dark:text-purple-400" />}
+            {type === 'question' && <ListBulletIcon className="h-4 w-4 sm:h-5 sm:w-5 text-cyan-600 dark:text-cyan-400" />}
+            {type === 'error_notebook' && <BookOpenIcon className="h-4 w-4 sm:h-5 sm:w-5 text-green-600 dark:text-green-400" />}
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+          <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {renderTimeSelect(
             settings[startKey], 
             (value) => setSettings({ ...settings, [startKey]: value }),
@@ -193,7 +193,7 @@ export function PlannerScheduleSettingsModal({ isOpen, onClose, onSuccess }: Pla
           <button
             onClick={() => handleSave(type)}
             disabled={!hasChanges(type) || isSaving}
-            className={`w-full py-2 px-4 rounded-lg font-medium transition-colors ${
+            className={`w-full py-2 px-3 sm:px-4 rounded-lg font-medium text-sm sm:text-base transition-colors ${
               hasChanges(type) && !isSaving
                 ? (color === 'purple' ? 'bg-purple-600 text-white hover:bg-purple-700' :
                    color === 'cyan' ? 'bg-cyan-600 text-white hover:bg-cyan-700' :
@@ -222,33 +222,33 @@ export function PlannerScheduleSettingsModal({ isOpen, onClose, onSuccess }: Pla
 
       {/* Modal */}
       <div
-        className={`fixed top-0 right-0 h-full w-full max-w-2xl bg-white dark:bg-surface-dark shadow-2xl z-[9999] transform transition-transform duration-300 ease-out ${
+        className={`fixed top-0 right-0 h-full w-full sm:max-w-md md:max-w-lg lg:max-w-2xl bg-white dark:bg-surface-dark shadow-2xl z-[9999] transform transition-transform duration-300 ease-out ${
           isAnimating ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/* Header */}
-        <div className="sticky top-0 bg-white dark:bg-surface-dark border-b border-gray-200 dark:border-border-dark px-6 py-4 flex items-center justify-between z-10">
-          <div className="flex items-center gap-3">
-            <ClockIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-              Configurar Horários Padrão
+        <div className="sticky top-0 bg-white dark:bg-surface-dark border-b border-gray-200 dark:border-border-dark px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between z-10">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <ClockIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-700 dark:text-gray-300" />
+            <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100">
+              Configurar Horários
             </h2>
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 dark:hover:bg-background-dark rounded-lg transition-colors"
+            className="p-1.5 sm:p-2 hover:bg-gray-100 dark:hover:bg-background-dark rounded-lg transition-colors"
           >
-            <XMarkIcon className="h-6 w-6 text-gray-600 dark:text-gray-400" />
+            <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600 dark:text-gray-400" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 overflow-y-auto" style={{ height: 'calc(100% - 73px)' }}>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+        <div className="p-4 sm:p-6 overflow-y-auto" style={{ height: 'calc(100% - 60px)' }}>
+          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-6">
             Defina os horários padrão para cada tipo de revisão. Novos eventos serão criados automaticamente com esses horários.
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {renderScheduleCard('flashcard', 'Flashcards', 'purple')}
             {renderScheduleCard('question', 'Questões', 'cyan')}
             {renderScheduleCard('error_notebook', 'Caderno de Erros', 'green')}
@@ -258,26 +258,26 @@ export function PlannerScheduleSettingsModal({ isOpen, onClose, onSuccess }: Pla
 
       {/* Dialog de Aplicação */}
       {showApplyDialog && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000]">
-          <div className="bg-white dark:bg-surface-dark rounded-xl p-6 max-w-md w-full mx-4 shadow-xl">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000] p-4">
+          <div className="bg-white dark:bg-surface-dark rounded-lg sm:rounded-xl p-4 sm:p-6 max-w-md w-full shadow-xl">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 sm:mb-4">
               Aplicar Alterações
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">
+            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-6">
               Deseja aplicar os novos horários apenas para eventos futuros ou também para os existentes?
             </p>
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <button
                 onClick={() => applyChanges(true)}
                 disabled={isSaving}
-                className="flex-1 py-2 px-4 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
+                className="flex-1 py-2 px-3 sm:px-4 bg-primary text-white rounded-lg font-medium text-sm sm:text-base hover:bg-primary/90 transition-colors disabled:opacity-50"
               >
                 Apenas Futuros
               </button>
               <button
                 onClick={() => applyChanges(false)}
                 disabled={isSaving}
-                className="flex-1 py-2 px-4 bg-gray-600 dark:bg-gray-700 text-white rounded-lg font-medium hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors disabled:opacity-50"
+                className="flex-1 py-2 px-3 sm:px-4 bg-gray-600 dark:bg-gray-700 text-white rounded-lg font-medium text-sm sm:text-base hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors disabled:opacity-50"
               >
                 Todos
               </button>
@@ -287,7 +287,7 @@ export function PlannerScheduleSettingsModal({ isOpen, onClose, onSuccess }: Pla
                   setPendingType(null);
                 }}
                 disabled={isSaving}
-                className="py-2 px-4 border border-gray-300 dark:border-border-dark text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-background-dark transition-colors disabled:opacity-50"
+                className="py-2 px-3 sm:px-4 border border-gray-300 dark:border-border-dark text-gray-700 dark:text-gray-300 rounded-lg font-medium text-sm sm:text-base hover:bg-gray-50 dark:hover:bg-background-dark transition-colors disabled:opacity-50"
               >
                 Cancelar
               </button>

@@ -100,10 +100,10 @@ export default function StudyTimeChartCompact() {
   }
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
+    <div className="bg-surface-light dark:bg-surface-dark p-4 sm:p-5 md:p-6 rounded-lg shadow-xl dark:shadow-dark-xl">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mb-3 sm:mb-4">
+        <h2 className="text-base sm:text-lg font-semibold text-slate-700 dark:text-slate-200">
           Tempo de Estudo
         </h2>
         <div className="flex items-center gap-2">
@@ -150,7 +150,7 @@ export default function StudyTimeChartCompact() {
       </div>
 
       {/* Botão Ver Métricas */}
-      <div className="flex justify-end mb-3">
+      <div className="flex justify-end mb-2 sm:mb-3">
         <a
           href="/statistics"
           className="group px-3 py-1.5 rounded-lg text-sm font-display font-medium 
@@ -168,8 +168,8 @@ export default function StudyTimeChartCompact() {
         </a>
       </div>
 
-      {/* Chart */}
-      <ResponsiveContainer width="100%" height={220}>
+      {/* Chart - altura responsiva para tablets */}
+      <ResponsiveContainer width="100%" height={160} className="sm:!h-[180px] md:!h-[200px]">
         <ComposedChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 0 }}>
           <defs>
             <linearGradient id="colorMinutesCompact" x1="0" y1="0" x2="0" y2="1">

@@ -121,9 +121,9 @@ export default function CollectionPageClient({ id }: CollectionPageClientProps) 
       </div>
 
       <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-6 sm:p-8 md:p-10">
+        <div className="w-full max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-6 md:py-8">
+          <div className="max-w-6xl xl:max-w-7xl 2xl:max-w-[1400px] mx-auto">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-xl dark:shadow-dark-xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
               <CollectionHeader collection={collection} />
 
               <div className="mt-8">

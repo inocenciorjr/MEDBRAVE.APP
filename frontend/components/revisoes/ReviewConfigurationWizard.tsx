@@ -431,22 +431,22 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
 
       {/* Modal Slide-in */}
       <div
-        className={`fixed right-0 top-0 h-full w-full md:w-[90%] lg:w-[80%] xl:w-[70%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[10000] transform transition-transform duration-300 ease-out flex flex-col ${isAnimating ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed right-0 top-0 h-full w-full sm:w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] bg-surface-light dark:bg-surface-dark shadow-2xl dark:shadow-dark-2xl z-[10000] transform transition-transform duration-300 ease-out flex flex-col ${isAnimating ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+        <div className="flex items-center justify-between p-4 sm:p-5 md:p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
           <div>
-            <h2 className="text-2xl font-semibold text-text-light-primary dark:text-text-dark-primary">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-text-light-primary dark:text-text-dark-primary">
               Configurações de Revisão
             </h2>
-            <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mt-1">
+            <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary mt-0.5 sm:mt-1">
               Configure suas preferências de estudo
             </p>
           </div>
           <button
             onClick={handleCloseWithAnimation}
-            className="p-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors"
+            className="p-1.5 sm:p-2 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors"
             aria-label="Fechar"
           >
             <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">
@@ -456,8 +456,8 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
         </div>
 
         {/* Stepper Chevron */}
-        <div className="px-6 py-6 bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark">
-          <div className="flex items-center relative">
+        <div className="px-3 sm:px-4 md:px-6 py-3 sm:py-4 md:py-6 bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark overflow-x-auto">
+          <div className="flex items-center relative min-w-max md:min-w-0">
             {STEPS.map((s, index) => {
               const isCompleted = index < currentStepIndex;
               const isCurrent = index === currentStepIndex;
@@ -469,42 +469,42 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
                   className="relative flex-1 first:flex-none first:w-auto"
                   style={{
                     zIndex: STEPS.length - index,
-                    marginLeft: index === 0 ? '0' : '-24px'
+                    marginLeft: index === 0 ? '0' : '-16px'
                   }}
                 >
                   <button
                     onClick={() => handleStepClick(s.id)}
                     className={`
-                      relative w-full h-20 flex items-center justify-center gap-4 px-8
+                      relative w-full h-14 sm:h-16 md:h-20 flex items-center justify-center gap-2 sm:gap-3 md:gap-4 px-4 sm:px-6 md:px-8
                       transition-all duration-300 ease-in-out cursor-pointer
                       ${isCompleted ? 'bg-surface-light dark:bg-surface-dark shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:-translate-y-0.5' : ''}
                       ${isCurrent ? 'bg-primary shadow-2xl shadow-primary/30 dark:shadow-primary/20 scale-[1.02]' : ''}
                       ${isUpcoming ? 'bg-gray-300/90 dark:bg-gray-700/90 shadow-md dark:shadow-dark-md hover:shadow-lg dark:hover:shadow-dark-lg hover:-translate-y-0.5' : ''}
-                      ${index === 0 ? 'rounded-l-xl pl-6' : ''}
-                      ${index === STEPS.length - 1 ? 'rounded-r-xl pr-8' : ''}
+                      ${index === 0 ? 'rounded-l-lg md:rounded-l-xl pl-3 sm:pl-4 md:pl-6' : ''}
+                      ${index === STEPS.length - 1 ? 'rounded-r-lg md:rounded-r-xl pr-4 sm:pr-6 md:pr-8' : ''}
                     `}
                     style={{
                       clipPath: index === STEPS.length - 1
                         ? index === 0
-                          ? 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)'
-                          : 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%)'
+                          ? 'polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%)'
+                          : 'polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%)'
                         : index === 0
-                          ? 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%)'
-                          : 'polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%)',
+                          ? 'polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%)'
+                          : 'polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%)',
                     }}
                   >
                     <div className={`
-                      flex items-center justify-center w-12 h-12 rounded-full flex-shrink-0
+                      flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full flex-shrink-0
                       transition-all duration-300
                       ${isCompleted ? 'bg-green-500 shadow-lg shadow-green-500/30' : ''}
                       ${isCurrent ? 'bg-white shadow-xl shadow-white/30 scale-110' : ''}
                       ${isUpcoming ? 'bg-gray-400 dark:bg-gray-500 shadow-md' : ''}
                     `}>
                       {isCompleted ? (
-                        <span className="material-symbols-outlined text-2xl font-bold text-white">check</span>
+                        <span className="material-symbols-outlined text-lg sm:text-xl md:text-2xl font-bold text-white">check</span>
                       ) : (
                         <span className={`
-                          font-bold text-xl
+                          font-bold text-base sm:text-lg md:text-xl
                           ${isCurrent ? 'text-primary' : 'text-white dark:text-gray-300'}
                         `}>
                           {s.order}
@@ -512,9 +512,9 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
                       )}
                     </div>
 
-                    <div className="flex-1 text-center min-w-0">
+                    <div className="flex-1 text-center min-w-0 hidden sm:block">
                       <div className={`
-                        font-bold text-base leading-tight mb-1
+                        font-bold text-xs sm:text-sm md:text-base leading-tight mb-0.5 sm:mb-1
                         ${isCurrent ? 'text-white' : ''}
                         ${isCompleted ? 'text-text-light-primary dark:text-text-dark-primary' : ''}
                         ${isUpcoming ? 'text-gray-700 dark:text-gray-300' : ''}
@@ -522,7 +522,7 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
                         {s.label}
                       </div>
                       <div className={`
-                        text-xs leading-tight
+                        text-[10px] sm:text-xs leading-tight hidden md:block
                         ${isCurrent ? 'text-white/90' : ''}
                         ${isCompleted ? 'text-text-light-secondary dark:text-text-dark-secondary' : ''}
                         ${isUpcoming ? 'text-gray-600 dark:text-gray-400' : ''}
@@ -538,7 +538,7 @@ export function ReviewConfigurationWizard({ isOpen, onClose }: Props) {
         </div>
 
         {/* Content */}
-        <div ref={modalContentRef} className="flex-1 overflow-y-auto p-6">
+        <div ref={modalContentRef} className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6">
           {isLoadingPreferences ? (
             <div className="flex items-center justify-center h-64">
               <div className="text-center">

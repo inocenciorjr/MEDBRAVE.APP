@@ -122,7 +122,7 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
 
   // Desktop: Stepper original
   return (
-    <div className="w-full mb-8 relative z-10">
+    <div className="w-full mb-6 lg:mb-8 relative z-10">
       <div className="flex items-center relative">
         {steps.map((step, index) => {
           const isCompleted = index < currentIndex;
@@ -142,13 +142,13 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
               <button
                 onClick={() => handleStepClick(step.id)}
                 className={`
-                  relative w-full h-24 flex items-center justify-center gap-5 px-10
+                  relative w-full h-16 md:h-20 lg:h-24 flex items-center justify-center gap-3 md:gap-4 lg:gap-5 px-6 md:px-8 lg:px-10
                   transition-all duration-300 ease-in-out cursor-pointer
                   ${isCompleted ? 'bg-surface-light dark:bg-surface-dark shadow-lg dark:shadow-dark-lg hover:shadow-xl dark:hover:shadow-dark-xl hover:-translate-y-0.5' : ''}
                   ${isCurrent ? 'bg-primary shadow-2xl shadow-primary/30 dark:shadow-primary/20 scale-[1.02]' : ''}
                   ${isUpcoming ? 'bg-gray-300/90 dark:bg-gray-700/90 shadow-md dark:shadow-dark-md hover:shadow-lg dark:hover:shadow-dark-lg hover:-translate-y-0.5' : ''}
-                  ${index === 0 ? 'rounded-l-xl pl-8' : ''}
-                  ${index === steps.length - 1 ? 'rounded-r-xl pr-10' : ''}
+                  ${index === 0 ? 'rounded-l-xl pl-4 md:pl-6 lg:pl-8' : ''}
+                  ${index === steps.length - 1 ? 'rounded-r-xl pr-6 md:pr-8 lg:pr-10' : ''}
                 `}
                 style={{
                   clipPath: index === steps.length - 1
@@ -162,17 +162,17 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
               >
                 {/* Icon Circle */}
                 <div className={`
-                  flex items-center justify-center w-14 h-14 rounded-full flex-shrink-0
+                  flex items-center justify-center w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full flex-shrink-0
                   transition-all duration-300
                   ${isCompleted ? 'bg-green-500 shadow-lg shadow-green-500/30' : ''}
                   ${isCurrent ? 'bg-white shadow-xl shadow-white/30 scale-110' : ''}
                   ${isUpcoming ? 'bg-gray-400 dark:bg-gray-500 shadow-md' : ''}
                 `}>
                   {isCompleted ? (
-                    <span className="material-symbols-outlined text-3xl font-bold text-white">check</span>
+                    <span className="material-symbols-outlined text-xl md:text-2xl lg:text-3xl font-bold text-white">check</span>
                   ) : (
                     <span className={`
-                      font-bold text-2xl
+                      font-bold text-lg md:text-xl lg:text-2xl
                       ${isCurrent ? 'text-primary' : 'text-white dark:text-gray-300'}
                     `}>
                       {step.order}
@@ -183,7 +183,7 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
                 {/* Text Content */}
                 <div className="flex-1 text-center min-w-0">
                   <div className={`
-                    font-bold text-lg leading-tight mb-1.5
+                    font-bold text-sm md:text-base lg:text-lg leading-tight mb-0.5 md:mb-1 lg:mb-1.5
                     ${isCurrent ? 'text-white' : ''}
                     ${isCompleted ? 'text-text-light-primary dark:text-text-dark-primary' : ''}
                     ${isUpcoming ? 'text-gray-700 dark:text-gray-300' : ''}
@@ -191,7 +191,7 @@ export default function StepperProgress({ currentStep }: StepperProgressProps) {
                     {step.label}
                   </div>
                   <div className={`
-                    text-sm leading-tight
+                    text-xs md:text-sm leading-tight hidden md:block
                     ${isCurrent ? 'text-white/90' : ''}
                     ${isCompleted ? 'text-text-light-secondary dark:text-text-dark-secondary' : ''}
                     ${isUpcoming ? 'text-gray-600 dark:text-gray-400' : ''}

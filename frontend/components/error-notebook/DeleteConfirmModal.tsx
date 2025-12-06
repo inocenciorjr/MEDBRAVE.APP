@@ -58,7 +58,7 @@ export function DeleteConfirmModal({
       onClick={!isDeleting ? onClose : undefined}
     >
       <div
-        className={`bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl max-w-md w-full transition-all duration-300 ${
+        className={`bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl max-w-md md:max-w-lg w-full transition-all duration-300 ${
           isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
         }`}
         onClick={(e) => e.stopPropagation()}

@@ -213,7 +213,7 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
 
   return (
     <div className="flex flex-col h-full relative">
-      <div className="w-full px-4 sm:px-6 xl:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <Breadcrumb
           items={[
             { label: 'Caderno de Erros', icon: 'book', href: '/caderno-erros' },
@@ -223,10 +223,10 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
       </div>
 
       <div className="flex-1 overflow-auto -m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-        <div className="flex flex-col xl:flex-row gap-6 w-full px-4 sm:px-6 xl:px-8 py-8">
+        <div className="flex flex-col xl:flex-row gap-4 md:gap-5 lg:gap-6 w-full max-w-[1800px] 2xl:max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-6 md:py-8">
           
           {/* Main Content */}
-          <div className="flex-1 min-w-0 space-y-6 pb-20 xl:pb-0">
+          <div className="flex-1 min-w-0 space-y-4 md:space-y-5 lg:space-y-6 pb-20 xl:pb-0">
 
           {/* Question Header */}
           {fullQuestion && (
@@ -518,8 +518,8 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
 
           </div>
 
-          {/* Sidebar - Navigation Panel */}
-          <aside className="flex-shrink-0 w-80 space-y-6">
+          {/* Sidebar - Navigation Panel - Hidden on mobile and tablet */}
+          <aside className="hidden xl:block flex-shrink-0 w-72 xl:w-80 2xl:w-96 space-y-4 lg:space-y-5 xl:space-y-6">
             <ErrorNotebookNavigationPanel
               entries={entryIds.map(id => ({ id } as ErrorNotebookEntry))}
               currentEntryId={entryIds[currentIndex]}

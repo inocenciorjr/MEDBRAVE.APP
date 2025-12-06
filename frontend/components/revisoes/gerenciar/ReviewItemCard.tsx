@@ -51,16 +51,16 @@ function ReviewItemCard({
       onMouseLeave={() => setShowTooltip(false)}
     >
       {/* Header */}
-      <div className="bg-background-light dark:bg-background-dark px-4 py-2.5 border-b border-border-light dark:border-border-dark">
+      <div className="bg-background-light dark:bg-background-dark px-3 sm:px-4 py-2 sm:py-2.5 border-b border-border-light dark:border-border-dark">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             <div onClick={(e) => e.stopPropagation()}>
               <Checkbox
                 checked={isSelected}
                 onChange={() => onToggleSelection(review.id)}
               />
             </div>
-            <span className="text-xs font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wide">
+            <span className="text-[10px] sm:text-xs font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wide">
               {review.content_type === 'FLASHCARD' ? 'Flashcard' : review.content_type === 'QUESTION' ? 'Questão' : 'Caderno de Erros'}
             </span>
           </div>
@@ -87,7 +87,7 @@ function ReviewItemCard({
       </div>
       
       {/* Content */}
-      <div className="p-4 flex flex-col gap-3">
+      <div className="p-3 sm:p-4 flex flex-col gap-2 sm:gap-3">
         {/* Content */}
         <div className="flex-1 min-w-0">
           {review.content_type === 'FLASHCARD' ? (

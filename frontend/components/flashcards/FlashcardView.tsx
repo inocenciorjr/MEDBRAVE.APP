@@ -97,11 +97,11 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
 
   return (
     <div className="-m-4 md:-m-8 min-h-screen bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-black dark:via-background-dark dark:to-black">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+      <div className="w-full max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-4 md:py-8">
         <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-8rem)]">
-          <div className="w-full max-w-5xl mx-auto flex flex-col gap-4 md:gap-8 lg:gap-12">
+          <div className="w-full max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col gap-4 md:gap-8 lg:gap-10 xl:gap-12">
             {/* Header */}
-            <header className="w-full flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 px-2 md:px-4 py-3 md:py-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 backdrop-blur-sm border border-border-light/30 dark:border-border-dark/30">
+            <header className="w-full flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 px-2 md:px-4 lg:px-6 xl:px-8 py-3 md:py-4 lg:py-5 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 backdrop-blur-sm border border-border-light/30 dark:border-border-dark/30">
               <button
                 onClick={handleFinishSession}
                 className="bg-surface-light dark:bg-surface-dark border-2 border-border-light dark:border-border-dark w-full sm:w-auto 
@@ -176,8 +176,8 @@ export function FlashcardView({ deck, flashcards, isReviewSession = false, sessi
 
             {/* Badge de card já respondido */}
             {isCurrentCardAnswered && (
-              <div className="w-full px-2 md:px-4">
-                <div className="bg-yellow-100 dark:bg-yellow-900/30 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg px-3 md:px-4 py-2 md:py-3 flex items-start md:items-center gap-2 md:gap-3 shadow-md">
+              <div className="w-full px-2 md:px-4 lg:px-6 xl:px-8">
+                <div className="bg-yellow-100 dark:bg-yellow-900/30 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg px-3 md:px-4 lg:px-5 py-2 md:py-3 lg:py-4 flex items-start md:items-center gap-2 md:gap-3 shadow-md">
                   <span className="material-symbols-outlined text-yellow-600 dark:text-yellow-400 text-xl md:text-2xl flex-shrink-0">check_circle</span>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs md:text-sm font-semibold text-yellow-800 dark:text-yellow-200">

@@ -156,30 +156,30 @@ function ReviewTypeCard({
           }
           setIsExpanded(!isExpanded);
         }}
-        className="w-full p-5 flex justify-between items-center hover:bg-background-light/50 dark:hover:bg-surface-dark/50 
+        className="w-full p-3 sm:p-4 md:p-5 flex justify-between items-center hover:bg-background-light/50 dark:hover:bg-surface-dark/50 
                    transition-[background-color] duration-200 text-left group"
       >
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
           {/* Checkbox - Removido pois agora seleção é por data */}
 
           {/* Icon */}
-          <div className={`p-3 rounded-xl bg-background-light dark:bg-background-dark 
+          <div className={`p-2 sm:p-2.5 md:p-3 rounded-lg md:rounded-xl bg-background-light dark:bg-background-dark 
                           shadow-md group-hover:shadow-lg transition-[box-shadow] duration-300`}>
-            <span className={`material-symbols-outlined text-2xl ${getTypeColor()}`}>
+            <span className={`material-symbols-outlined text-xl sm:text-2xl ${getTypeColor()}`}>
               {getTypeIcon()}
             </span>
           </div>
 
           {/* Info */}
           <div>
-            <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wider font-medium">
+            <p className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wider font-medium">
               Tipo de Revisão
             </p>
-            <p className="font-bold text-lg text-text-light-primary dark:text-text-dark-primary 
+            <p className="font-bold text-base sm:text-lg text-text-light-primary dark:text-text-dark-primary 
                           group-hover:text-primary">
               {label}
             </p>
-            <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary font-medium mt-0.5">
+            <p className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary font-medium mt-0.5">
               {totalCount} {totalCount === 1 ? 'item' : 'itens'}
             </p>
           </div>
@@ -187,12 +187,12 @@ function ReviewTypeCard({
 
         {/* Arrow Icon */}
         <div className={`
-          p-2.5 rounded-lg bg-background-light dark:bg-background-dark 
+          p-1.5 sm:p-2 md:p-2.5 rounded-lg bg-background-light dark:bg-background-dark 
           shadow-md group-hover:shadow-lg
           transition-[transform,box-shadow,background-color] duration-300
           ${isExpanded ? 'rotate-180 bg-primary/10 shadow-primary/20' : 'group-hover:bg-primary/5'}
         `}>
-          <span className={`material-symbols-outlined
+          <span className={`material-symbols-outlined text-lg sm:text-xl md:text-2xl
                           ${isExpanded ? 'text-primary' : 'text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary'}`}>
             expand_more
           </span>
@@ -207,8 +207,8 @@ function ReviewTypeCard({
         `}
       >
         <div className="overflow-hidden">
-          <div className="px-4 pb-4">
-            <div className="border-t border-border-light dark:border-border-dark mb-4" />
+          <div className="px-3 sm:px-4 pb-3 sm:pb-4">
+            <div className="border-t border-border-light dark:border-border-dark mb-3 sm:mb-4" />
             
             {/* Loading ou Conteúdo */}
             {isLoading ? (
@@ -230,14 +230,14 @@ function ReviewTypeCard({
                     {/* Header da Data - Clicável inteiro */}
                     <button
                       onClick={() => toggleDateExpansion(dateKey)}
-                      className={`w-full px-4 py-2.5 flex justify-between items-center rounded-lg
+                      className={`w-full px-3 sm:px-4 py-2 sm:py-2.5 flex justify-between items-center rounded-lg
                                  cursor-pointer hover:opacity-90
                                  ${isOverdue 
                                    ? 'bg-red-50 dark:bg-red-950/20' 
                                    : 'bg-background-light/50 dark:bg-background-dark/50'
                                  }`}
                     >
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-2 sm:gap-3">
                         {/* Checkbox para selecionar todos da data */}
                         <div onClick={(e) => e.stopPropagation()}>
                           <Checkbox
@@ -258,22 +258,22 @@ function ReviewTypeCard({
                           />
                         </div>
                         
-                        <div className="flex items-center gap-2 flex-1">
-                          <span className={`material-symbols-outlined text-lg ${isOverdue ? 'text-red-500' : 'text-primary'}`}>
+                        <div className="flex items-center gap-1.5 sm:gap-2 flex-1">
+                          <span className={`material-symbols-outlined text-base sm:text-lg ${isOverdue ? 'text-red-500' : 'text-primary'}`}>
                             {isOverdue ? 'warning' : 'calendar_today'}
                           </span>
                           <div className="text-left">
-                            <p className={`font-semibold text-sm capitalize ${isOverdue ? 'text-red-600 dark:text-red-400' : 'text-text-light-primary dark:text-text-dark-primary'}`}>
+                            <p className={`font-semibold text-xs sm:text-sm capitalize ${isOverdue ? 'text-red-600 dark:text-red-400' : 'text-text-light-primary dark:text-text-dark-primary'}`}>
                               {getDateLabel(date)}
                             </p>
-                            <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary text-left">
+                            <p className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary text-left">
                               {dateReviews.length} {dateReviews.length === 1 ? 'revisão' : 'revisões'}
                             </p>
                           </div>
                         </div>
                       </div>
 
-                      <span className={`material-symbols-outlined transition-transform duration-300
+                      <span className={`material-symbols-outlined text-lg sm:text-xl transition-transform duration-300
                                       ${isDateExpanded ? 'rotate-180' : ''} 
                                       ${isOverdue ? 'text-red-500' : 'text-text-light-secondary dark:text-text-dark-secondary'}`}>
                         expand_more
@@ -288,8 +288,8 @@ function ReviewTypeCard({
                       `}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-2 pt-2 pb-1">
-                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div className="px-1 sm:px-2 pt-2 pb-1">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3">
                             {(() => {
                               // Ordenar reviews de forma inteligente
                               const sortedReviews = [...dateReviews].sort((a, b) => {

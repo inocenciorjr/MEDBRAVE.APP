@@ -73,24 +73,24 @@ export function OverdueReviewsAlert() {
                     transition-all duration-300 overflow-hidden">
       {/* Header com gradiente */}
       <div className="bg-gradient-to-r from-red-500 to-red-600 dark:from-red-600 dark:to-red-700 
-                      px-6 py-4">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-white text-4xl">
+                      px-4 sm:px-6 py-3 sm:py-4">
+        <div className="flex items-center justify-between gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="material-symbols-outlined text-white text-2xl sm:text-3xl md:text-4xl">
               warning
             </span>
             <div>
-              <h2 className="text-xl font-display font-semibold text-white">
+              <h2 className="text-base sm:text-lg md:text-xl font-display font-semibold text-white">
                 Você tem {overdueCount.total} {overdueCount.total === 1 ? 'revisão' : 'revisões'} em atraso!
               </h2>
             </div>
           </div>
           <button
             onClick={handleDismiss}
-            className="p-2 hover:bg-white/20 rounded-lg transition-colors flex-shrink-0"
+            className="p-1.5 sm:p-2 hover:bg-white/20 rounded-lg transition-colors flex-shrink-0"
             title="Ocultar alerta"
           >
-            <span className="material-symbols-outlined text-white text-2xl">
+            <span className="material-symbols-outlined text-white text-xl sm:text-2xl">
               close
             </span>
           </button>
@@ -98,7 +98,7 @@ export function OverdueReviewsAlert() {
       </div>
 
       {/* Content */}
-      <div className="p-6 space-y-4">
+      <div className="p-4 sm:p-5 md:p-6 space-y-3 sm:space-y-4">
         {/* Breakdown por tipo - Grid adaptativo baseado na quantidade de cards */}
         {(() => {
           const visibleCards = [
@@ -193,33 +193,34 @@ export function OverdueReviewsAlert() {
         })()}
 
         {/* Botões de ação */}
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
           <button
             onClick={() => router.push('/revisoes/gerenciar?filter=overdue')}
-            className="flex-1 px-6 py-3 bg-primary hover:bg-primary/90
-                     text-white rounded-xl font-display font-semibold 
+            className="flex-1 px-4 sm:px-6 py-2.5 sm:py-3 bg-primary hover:bg-primary/90
+                     text-white rounded-lg sm:rounded-xl font-display font-semibold text-sm sm:text-base
                      transition-all duration-200 
                      shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]
-                     flex items-center justify-center gap-2"
+                     flex items-center justify-center gap-1.5 sm:gap-2"
           >
-            <span className="material-symbols-outlined">tune</span>
+            <span className="material-symbols-outlined text-lg sm:text-xl">tune</span>
             <span>Gerenciar Revisões</span>
           </button>
           
           <button
             onClick={() => setShowTips(!showTips)}
-            className="px-6 py-3 bg-background-light dark:bg-background-dark 
-                     text-text-light-primary dark:text-text-dark-primary rounded-xl font-display font-semibold 
+            className="px-4 sm:px-6 py-2.5 sm:py-3 bg-background-light dark:bg-background-dark 
+                     text-text-light-primary dark:text-text-dark-primary rounded-lg sm:rounded-xl font-display font-semibold text-sm sm:text-base
                      border-2 border-border-light dark:border-border-dark
                      hover:bg-surface-light dark:hover:bg-surface-dark hover:border-primary
                      transition-all duration-200 
                      shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]
-                     flex items-center justify-center gap-2"
+                     flex items-center justify-center gap-1.5 sm:gap-2"
           >
-            <span className="material-symbols-outlined">
+            <span className="material-symbols-outlined text-lg sm:text-xl">
               {showTips ? 'expand_less' : 'expand_more'}
             </span>
-            <span>Como evitar Acúmulos</span>
+            <span className="hidden xs:inline">Como evitar Acúmulos</span>
+            <span className="xs:hidden">Dicas</span>
           </button>
         </div>
 

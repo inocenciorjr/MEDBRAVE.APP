@@ -231,13 +231,13 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
   };
 
   return (
-    <div className={`flex flex-col xl:flex-row gap-4 md:gap-6 transition-all duration-500 ease-in-out ${!isFocusMode ? 'w-full max-w-[1600px] mx-auto' : 'w-full justify-center'
+    <div className={`flex flex-col xl:flex-row gap-4 md:gap-5 lg:gap-6 transition-all duration-500 ease-in-out ${!isFocusMode ? 'w-full max-w-[1600px] 2xl:max-w-[1800px] mx-auto' : 'w-full justify-center'
       }`}>
       {/* Main Content Wrapper with Buttons */}
       <div className={`relative transition-all duration-500 ease-in-out ${!isFocusMode ? 'flex-1 min-w-0' : 'max-w-7xl w-full'
         }`}>
         <main className="relative w-full bg-surface-light dark:bg-surface-dark rounded-lg shadow-lg dark:shadow-dark-xl flex flex-col overflow-y-auto transition-all duration-500 ease-in-out">
-          <div className="p-4 md:p-6 xl:p-8 flex-grow pb-24 md:pb-6 xl:pb-8">
+          <div className="p-4 md:p-5 lg:p-6 xl:p-8 flex-grow pb-24 md:pb-5 lg:pb-6 xl:pb-8">
             <QuestionHeader
               question={question}
               likes={question.likes}
@@ -417,7 +417,7 @@ export function QuestionView({ question, questionList, listId, onNavigate, isSim
       </div>
 
       {/* Sidebar - Hidden in Focus Mode, Mobile and Tablet */}
-      <aside className={`hidden xl:block flex-shrink-0 space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-80 opacity-100'
+      <aside className={`hidden xl:block flex-shrink-0 space-y-4 lg:space-y-5 xl:space-y-6 transition-all duration-500 ease-in-out overflow-hidden ${isFocusMode ? 'w-0 opacity-0' : 'w-72 xl:w-80 2xl:w-96 opacity-100'
         }`}>
         <NavigationPanel
           questions={questionList}

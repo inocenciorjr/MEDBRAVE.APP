@@ -334,13 +334,13 @@ export function AddToErrorNotebookModal({
 
       {/* Modal - Slide from right */}
       <div
-        className={`fixed right-0 top-0 h-full w-full md:w-[600px] lg:w-[700px] bg-surface-light dark:bg-surface-dark 
+        className={`fixed right-0 top-0 h-full w-full md:w-[600px] lg:w-[700px] xl:w-[750px] 2xl:w-[800px] bg-surface-light dark:bg-surface-dark 
                    shadow-2xl dark:shadow-dark-2xl z-[10000] transform transition-transform duration-300 ease-out ${isAnimating ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+          <div className="flex items-center justify-between p-4 md:p-5 lg:p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
             <div className="flex-1">
               <h2 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary font-display">
                 {isEditMode ? 'Editar Caderno de Erros' : 'Adicionar ao Caderno de Erros'}
@@ -364,7 +364,7 @@ export function AddToErrorNotebookModal({
           </div>
 
           {/* Content */}
-          <div ref={modalContentRef} className="flex-1 overflow-y-auto p-6 space-y-6 font-inter">
+          <div ref={modalContentRef} className="flex-1 overflow-y-auto p-4 md:p-5 lg:p-6 space-y-4 md:space-y-5 lg:space-y-6 font-inter">
             <div className="space-y-3">
               <div className="p-5 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 
                             rounded-lg border border-primary/20 dark:border-primary/30 space-y-4
@@ -581,7 +581,7 @@ export function AddToErrorNotebookModal({
           </div>
 
           {/* Footer */}
-          <div className="border-t border-border-light dark:border-border-dark p-6 bg-background-light dark:bg-background-dark">
+          <div className="border-t border-border-light dark:border-border-dark p-4 md:p-5 lg:p-6 bg-background-light dark:bg-background-dark">
             <div className="flex justify-end gap-3">
               <button
                 onClick={onClose}

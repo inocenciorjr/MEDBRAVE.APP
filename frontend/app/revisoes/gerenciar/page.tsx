@@ -340,7 +340,7 @@ export default function GerenciarRevisoesPage() {
   return (
     <>
       {/* Breadcrumb */}
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <Breadcrumb
           items={[
             { label: 'Revisões', icon: 'layers', href: '/revisoes' },
@@ -350,15 +350,15 @@ export default function GerenciarRevisoesPage() {
       </div>
 
       {/* Content */}
-      <div className="w-full py-8">
-          <div className="mb-8 flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-slate-700 dark:text-slate-200">
+      <div className="w-full max-w-[1800px] 2xl:max-w-[2000px] mx-auto py-6 md:py-8 px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="mb-6 md:mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <h1 className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-200">
               Gerenciar Revisões
             </h1>
 
             {selectedReviews.size > 0 && (
-              <div className="flex items-center gap-3">
-                <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
                   {selectedReviews.size} selecionada{selectedReviews.size > 1 ? 's' : ''}
                 </span>
                 <button
@@ -366,13 +366,13 @@ export default function GerenciarRevisoesPage() {
                     setSelectedReview(null); // Limpar selectedReview para usar os selecionados
                     setIsRescheduleModalOpen(true);
                   }}
-                  className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                  className="px-3 sm:px-4 py-1.5 sm:py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-xs sm:text-sm font-medium"
                 >
                   Reagendar
                 </button>
                 <button
                   onClick={deselectAllReviews}
-                  className="px-4 py-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors text-sm font-medium"
+                  className="px-3 sm:px-4 py-1.5 sm:py-2 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors text-xs sm:text-sm font-medium"
                 >
                   Limpar
                 </button>

@@ -58,13 +58,13 @@ function ReviewCard({ title, subtitle, icon, count, unit, color, onStart }: Revi
   ];
 
   return (
-    <div className="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden flex flex-col 
+    <div className="bg-surface-light dark:bg-surface-dark rounded-lg sm:rounded-xl overflow-hidden flex flex-col 
                     shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl
                     transition-all duration-300 border border-border-light dark:border-border-dark">
       {/* Progresso Circular no topo */}
-      <div className="relative h-40 flex items-center justify-center p-4">
-        <div className="relative w-32 h-32">
-          <div className={`absolute inset-0 rounded-full border-[4px] ${config.border} scale-90`}></div>
+      <div className="relative h-28 sm:h-32 lg:h-40 flex items-center justify-center p-3 sm:p-4">
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32">
+          <div className={`absolute inset-0 rounded-full border-[3px] sm:border-[4px] ${config.border} scale-90`}></div>
           
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -72,8 +72,8 @@ function ReviewCard({ title, subtitle, icon, count, unit, color, onStart }: Revi
                 data={data}
                 cx="50%"
                 cy="50%"
-                innerRadius={50}
-                outerRadius={58}
+                innerRadius="65%"
+                outerRadius="80%"
                 startAngle={90}
                 endAngle={-270}
                 dataKey="value"
@@ -92,13 +92,13 @@ function ReviewCard({ title, subtitle, icon, count, unit, color, onStart }: Revi
           </ResponsiveContainer>
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className={`material-symbols-outlined ${config.text} mb-1 text-3xl`}>
+            <span className={`material-symbols-outlined ${config.text} mb-0.5 sm:mb-1 text-xl sm:text-2xl lg:text-3xl`}>
               {icon}
             </span>
-            <div className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary">
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-text-light-primary dark:text-text-dark-primary">
               {count}
             </div>
-            <div className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+            <div className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary">
               {unit}
             </div>
           </div>
@@ -106,28 +106,28 @@ function ReviewCard({ title, subtitle, icon, count, unit, color, onStart }: Revi
       </div>
 
       {/* Conteúdo */}
-      <div className="p-4 flex-grow">
-        <h4 className="font-bold text-text-light-primary dark:text-text-dark-primary">
+      <div className="p-3 sm:p-4 flex-grow">
+        <h4 className="font-bold text-sm sm:text-base text-text-light-primary dark:text-text-dark-primary">
           {title}
         </h4>
-        <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+        <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
           {subtitle}
         </p>
-        <div className="flex justify-between text-sm text-text-light-secondary dark:text-text-dark-secondary mt-4">
+        <div className="flex justify-between text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary mt-2 sm:mt-4">
           <span>revisão espaçada</span>
         </div>
       </div>
 
       {/* Footer com botões */}
-      <div className="p-4 border-t border-border-light dark:border-border-dark flex justify-end space-x-4">
+      <div className="p-3 sm:p-4 border-t border-border-light dark:border-border-dark flex justify-end space-x-2 sm:space-x-4">
         <button
           onClick={onStart}
-          className="text-primary font-bold hover:underline disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+          className="text-primary font-bold text-xs sm:text-sm hover:underline disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           disabled={!hasItems}
         >
           Iniciar Revisão
         </button>
-        <button className="text-text-light-secondary dark:text-text-dark-secondary font-bold hover:underline transition-all">
+        <button className="text-text-light-secondary dark:text-text-dark-secondary font-bold text-xs sm:text-sm hover:underline transition-all">
           Resumo
         </button>
       </div>
@@ -221,21 +221,21 @@ export function ReviewSummaryCards() {
   const totalItems = (summary?.questions || 0) + (summary?.flashcards || 0) + (summary?.error_notes || 0);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {/* Header */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4">
         <div>
-          <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary capitalize">
+          <h3 className="text-base sm:text-lg lg:text-xl font-bold text-text-light-primary dark:text-text-dark-primary capitalize">
             {today}
           </h3>
-          <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
             Agenda de revisão com questões programadas
           </p>
         </div>
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2">
-            <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
-              omitir títulos dos assuntos
+        <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-4">
+          <div className="hidden sm:flex items-center space-x-2">
+            <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
+              omitir títulos
             </span>
             <div className="relative inline-block w-10 align-middle select-none transition duration-200 ease-in">
               <input
@@ -247,14 +247,14 @@ export function ReviewSummaryCards() {
               <label className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 dark:bg-gray-500 cursor-pointer" />
             </div>
           </div>
-          <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+          <span className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
             {totalItems} atividades
           </span>
         </div>
       </div>
 
       {/* Cards Grid com Progresso Circular */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
         {/* Card de Questões */}
         <ReviewCard
           title="Questões"

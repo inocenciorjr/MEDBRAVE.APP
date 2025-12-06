@@ -204,9 +204,9 @@ export function PagePlanGuard({
     };
   }, []);
 
-  // Se não está autenticado, mostrar loading (não o conteúdo!)
-  // O redirect será feito pelo useEffect
-  if (!authIsAuthenticated) {
+  // Se está carregando auth OU não está autenticado, mostrar loading (não o conteúdo!)
+  // O redirect será feito pelo useEffect quando authLoading=false e !authIsAuthenticated
+  if (authLoading || !authIsAuthenticated) {
     return (
       <div className="flex items-center justify-center py-20 min-h-[50vh]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-700" />

@@ -38,6 +38,9 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
   const [token, setToken] = useState<string | null>(tokenProp || null);
   const tokenCheckIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const lastTokenRef = useRef<string | null>(null);
+  // Flag para evitar retry infinito em caso de erro 401
+  const authErrorRef = useRef<boolean>(false);
+  const hasLoadedRef = useRef<boolean>(false);
 
   // Efeito para sincronizar token com localStorage
   // Usa polling para detectar mudanças (storage event não funciona na mesma aba)
@@ -54,6 +57,11 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
 
     // Função para verificar e atualizar token (com fallback para sessionStorage - Edge Mobile fix)
     const checkToken = async (isInitial = false) => {
+      // Se já teve erro 401, não tentar mais (evita loop infinito)
+      if (authErrorRef.current) {
+        return;
+      }
+      
       // No Edge Mobile, NÃO fazer requisições na página de callback
       // A página de destino vai carregar os dados
       if (isEdgeMobile && window.location.pathname.includes('/auth/callback')) {
@@ -80,16 +88,32 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
         const hadToken = lastTokenRef.current;
         lastTokenRef.current = storedToken;
         setToken(storedToken);
+        
+        // Se token mudou, resetar flag de erro de auth
+        if (storedToken !== hadToken) {
+          authErrorRef.current = false;
+        }
 
         // Se o token apareceu OU é Edge Mobile inicial, carregar plano
-        if (storedToken && (!hadToken || shouldForceLoad)) {
+        // MAS não tentar se já teve erro 401
+        if (storedToken && (!hadToken || shouldForceLoad) && !authErrorRef.current) {
           planService.clearCache();
           setLoading(true);
           try {
             const plan = await planService.getUserPlan(storedToken);
             setUserPlan(plan);
+            hasLoadedRef.current = true;
           } catch (err: any) {
             console.error('[PlanContext] Erro ao carregar plano:', err);
+            // Se for erro 401, marcar para não tentar novamente
+            if (err?.response?.status === 401 || err?.message?.includes('401')) {
+              authErrorRef.current = true;
+              // Limpar token inválido
+              localStorage.removeItem('authToken');
+              sessionStorage.removeItem('authToken');
+              setToken(null);
+              lastTokenRef.current = null;
+            }
             setUserPlan(null);
           } finally {
             setLoading(false);
@@ -126,6 +150,8 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
       if (newToken && newToken !== lastTokenRef.current) {
         lastTokenRef.current = newToken;
         setToken(newToken);
+        // Novo token = resetar flag de erro
+        authErrorRef.current = false;
         planService.clearCache();
 
         // Carregar plano diretamente com o novo token
@@ -133,8 +159,17 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
         try {
           const plan = await planService.getUserPlan(newToken);
           setUserPlan(plan);
+          hasLoadedRef.current = true;
         } catch (err: any) {
           console.error('[PlanContext] Erro ao carregar plano:', err);
+          // Se for erro 401, marcar para não tentar novamente
+          if (err?.response?.status === 401 || err?.message?.includes('401')) {
+            authErrorRef.current = true;
+            localStorage.removeItem('authToken');
+            sessionStorage.removeItem('authToken');
+            setToken(null);
+            lastTokenRef.current = null;
+          }
           setUserPlan(null);
         } finally {
           setLoading(false);
@@ -161,15 +196,30 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
       setLoading(false);
       return;
     }
+    
+    // Não tentar se já teve erro 401
+    if (authErrorRef.current) {
+      setLoading(false);
+      return;
+    }
 
     try {
       setLoading(true);
       setError(null);
       const plan = await planService.getUserPlan(token);
       setUserPlan(plan);
+      hasLoadedRef.current = true;
     } catch (err: any) {
       console.error('[PlanContext] Erro ao carregar plano:', err);
       setError(err.message || 'Erro ao carregar plano');
+      // Se for erro 401, marcar para não tentar novamente
+      if (err?.response?.status === 401 || err?.message?.includes('401')) {
+        authErrorRef.current = true;
+        localStorage.removeItem('authToken');
+        sessionStorage.removeItem('authToken');
+        setToken(null);
+        lastTokenRef.current = null;
+      }
       setUserPlan(null);
     } finally {
       setLoading(false);
@@ -299,7 +349,8 @@ export function PlanProvider({ children, token: tokenProp }: PlanProviderProps) 
   useEffect(() => {
     // Se já tem token no state e corresponde ao ref, carrega
     // Isso cobre o caso de refresh da página com token já existente
-    if (token && token === lastTokenRef.current && !userPlan && !loading) {
+    // MAS não tentar se já teve erro 401 ou já carregou
+    if (token && token === lastTokenRef.current && !userPlan && !loading && !authErrorRef.current && !hasLoadedRef.current) {
       loadUserPlan();
     }
   }, [token, loadUserPlan, userPlan, loading]);

@@ -147,16 +147,16 @@ export default function SummaryPanel({
   }
 
   return (
-    <div className="lg:sticky lg:top-8">
-      <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-6">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">
+    <div className="xl:sticky xl:top-8">
+      <div className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl dark:shadow-dark-xl p-4 lg:p-5 xl:p-6">
+        <div className="flex justify-between items-center mb-4 lg:mb-5 xl:mb-6">
+          <h2 className="text-lg lg:text-xl font-bold text-text-light-primary dark:text-text-dark-primary">
             Resumo
           </h2>
           {onClearFilters && (
             <button
               onClick={onClearFilters}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-xs lg:text-sm font-medium transition-colors ${
                 hasFilters 
                   ? 'text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300' 
                   : 'text-gray-400 cursor-not-allowed'
@@ -169,24 +169,24 @@ export default function SummaryPanel({
         </div>
 
         {/* Questions Counter */}
-        <div className="flex items-center gap-4 p-4 rounded-lg bg-violet-50 dark:bg-violet-900/20 mb-6 shadow-sm">
-          <span className="material-symbols-outlined text-4xl text-primary">
+        <div className="flex items-center gap-3 lg:gap-4 p-3 lg:p-4 rounded-lg bg-violet-50 dark:bg-violet-900/20 mb-4 lg:mb-5 xl:mb-6 shadow-sm">
+          <span className="material-symbols-outlined text-3xl lg:text-4xl text-primary">
             quiz
           </span>
           <div className="flex-1">
-            <div className="flex items-center gap-2">
-              <p className="text-sm text-primary dark:text-violet-300 font-semibold">
+            <div className="flex items-center gap-1.5 lg:gap-2">
+              <p className="text-xs lg:text-sm text-primary dark:text-violet-300 font-semibold">
                 Questões encontradas
               </p>
               <button
                 onClick={() => setShowInfoModal(true)}
-                className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+                className="flex items-center justify-center w-4 h-4 lg:w-5 lg:h-5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
                 aria-label="Como funciona a contagem de questões"
               >
-                <span className="material-symbols-outlined text-sm">help</span>
+                <span className="material-symbols-outlined text-xs lg:text-sm">help</span>
               </button>
             </div>
-            <p className="text-3xl font-bold text-primary dark:text-white">
+            <p className="text-2xl lg:text-3xl font-bold text-primary dark:text-white">
               {totalQuestions.toLocaleString('pt-BR')}
             </p>
           </div>
@@ -196,19 +196,19 @@ export default function SummaryPanel({
         {totalQuestions > 0 && onPreviewQuestions && (
           <button
             onClick={onPreviewQuestions}
-            className="w-full flex items-center justify-center gap-2 px-4 py-3 mb-6 rounded-lg bg-primary text-white hover:bg-violet-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="w-full flex items-center justify-center gap-2 px-3 lg:px-4 py-2.5 lg:py-3 mb-4 lg:mb-5 xl:mb-6 rounded-lg bg-primary text-white hover:bg-violet-800 transition-all duration-200 shadow-lg hover:shadow-xl text-sm lg:text-base"
           >
-            <span className="material-symbols-outlined">visibility</span>
+            <span className="material-symbols-outlined text-lg lg:text-xl">visibility</span>
             <span className="font-semibold">Visualizar Questões</span>
           </button>
         )}
 
         {/* Summary Sections */}
-        <div className="space-y-5">
+        <div className="space-y-4 lg:space-y-5">
           {/* Nome da Lista */}
-          <div className="border-b border-border-light dark:border-border-dark pb-5">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
+          <div className="border-b border-border-light dark:border-border-dark pb-4 lg:pb-5">
+            <div className="flex justify-between items-center mb-2 lg:mb-3">
+              <h3 className="text-sm lg:text-base font-semibold text-text-light-primary dark:text-white">
                 Nome da Lista
               </h3>
               {!isEditingName && onUpdateListName && (
@@ -273,9 +273,9 @@ export default function SummaryPanel({
           </div>
 
           {/* Assuntos Selecionados */}
-          <div className="border-b border-border-light dark:border-border-dark pb-5">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
+          <div className="border-b border-border-light dark:border-border-dark pb-4 lg:pb-5">
+            <div className="flex justify-between items-center mb-2 lg:mb-3">
+              <h3 className="text-sm lg:text-base font-semibold text-text-light-primary dark:text-white">
                 Assuntos ({selectedSubjects.length})
               </h3>
               <button
@@ -372,9 +372,9 @@ export default function SummaryPanel({
           </div>
 
           {/* Anos Selecionados */}
-          <div className="border-b border-border-light dark:border-border-dark pb-5">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
+          <div className="border-b border-border-light dark:border-border-dark pb-4 lg:pb-5">
+            <div className="flex justify-between items-center mb-2 lg:mb-3">
+              <h3 className="text-sm lg:text-base font-semibold text-text-light-primary dark:text-white">
                 Anos ({selectedYears.length})
               </h3>
               <button
@@ -414,9 +414,9 @@ export default function SummaryPanel({
 
           {/* Tipos de Prova Selecionados */}
           {selectedExamTypes.length > 0 && (
-            <div className="border-b border-border-light dark:border-border-dark pb-5">
-              <div className="flex justify-between items-center mb-3">
-                <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
+            <div className="border-b border-border-light dark:border-border-dark pb-4 lg:pb-5">
+              <div className="flex justify-between items-center mb-2 lg:mb-3">
+                <h3 className="text-sm lg:text-base font-semibold text-text-light-primary dark:text-white">
                   Tipos de Prova ({selectedExamTypes.length})
                 </h3>
                 <button
@@ -443,8 +443,8 @@ export default function SummaryPanel({
 
           {/* Instituições Selecionadas */}
           <div>
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-base font-semibold text-text-light-primary dark:text-white">
+            <div className="flex justify-between items-center mb-2 lg:mb-3">
+              <h3 className="text-sm lg:text-base font-semibold text-text-light-primary dark:text-white">
                 Instituições ({selectedInstitutions.length})
               </h3>
               <button

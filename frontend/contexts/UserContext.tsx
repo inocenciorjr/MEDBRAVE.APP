@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode, useRef } from 'react';
 import { useSessionMonitor } from '@/lib/hooks/useSessionMonitor';
 import { useActivityTracker } from '@/lib/hooks/useActivityTracker';
 import { SessionRevokedModal } from '@/components/auth/SessionRevokedModal';
@@ -38,6 +38,10 @@ export function UserProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [authFailed, setAuthFailed] = useState(false);
+  // Flag para evitar retry infinito em caso de erro 401
+  const authErrorRef = useRef<boolean>(false);
+  // Flag para indicar que está em processo de retry (não setar loading=false durante retries)
+  const isRetryingRef = useRef<boolean>(false);
   
   // Monitorar sessão em tempo real
   const { showRevokedModal, closeRevokedModal } = useSessionMonitor(user?.id);
@@ -49,6 +53,12 @@ export function UserProvider({ children }: { children: ReactNode }) {
     try {
       // Verificar se estamos no client-side
       if (typeof window === 'undefined') return;
+      
+      // Se já teve erro 401, não tentar mais (evita loop infinito)
+      if (authErrorRef.current) {
+        setLoading(false);
+        return;
+      }
 
       // No Edge Mobile, adicionar delay inicial para evitar requisições durante navegação
       const isEdgeMobileCheck = /Edg|Edge/i.test(navigator.userAgent) && /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -93,11 +103,15 @@ export function UserProvider({ children }: { children: ReactNode }) {
         // Se ainda não tem token, pode ser que o AuthContext esteja recuperando via cookies (Edge Mobile)
         // Tentar novamente após um delay maior
         if (retryCount < 3) {
+          // Marcar que está em retry - NÃO setar loading=false para evitar piscar
+          isRetryingRef.current = true;
           // Aumentar o tempo de espera progressivamente: 1s, 2s, 3s
           const delay = 1000 * (retryCount + 1);
           setTimeout(() => fetchUser(retryCount + 1), delay);
           return;
         }
+        // Esgotou tentativas - agora sim pode setar loading=false
+        isRetryingRef.current = false;
         setUser(null);
         setLoading(false);
         setAuthFailed(true);
@@ -147,11 +161,22 @@ export function UserProvider({ children }: { children: ReactNode }) {
       });
 
       if (!response.ok) {
-        // Se der 401, talvez o token expirou. O AuthContext deve lidar com isso, mas aqui limpamos.
+        // Se der 401, marcar para não tentar novamente (evita loop infinito)
         if (response.status === 401) {
+           authErrorRef.current = true;
+           isRetryingRef.current = false;
            setUser(null);
+           setAuthFailed(true);
+           setLoading(false);
+           // Limpar token inválido
+           localStorage.removeItem('authToken');
+           sessionStorage.removeItem('authToken');
+        } else {
+           // Outros erros - só setar loading false se não estiver em retry
+           if (!isRetryingRef.current) {
+             setLoading(false);
+           }
         }
-        setLoading(false);
         return;
       }
 
@@ -173,6 +198,8 @@ export function UserProvider({ children }: { children: ReactNode }) {
         activePlan: userData.activePlan || null,
       };
 
+      // Sucesso! Resetar flags e setar usuário
+      isRetryingRef.current = false;
       setUser(finalUser);
       setLoading(false);
 
@@ -186,8 +213,11 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
     } catch (error) {
       // Silenciar erros de conexão (backend offline ou rede instável)
-      setUser(null);
-      setLoading(false);
+      // Só setar loading false se não estiver em retry
+      if (!isRetryingRef.current) {
+        setUser(null);
+        setLoading(false);
+      }
     }
   };
 
@@ -210,6 +240,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
         }
         
         if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+          // Novo login/token = resetar flag de erro
+          authErrorRef.current = false;
+          setAuthFailed(false);
           fetchUser(0, true); // skipInitialDelay = true pois já passou pelo delay inicial
         } else if (event === 'SIGNED_OUT') {
           setUser(null);
@@ -219,6 +252,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
       // Escutar evento customizado do AuthContext (útil para Edge Mobile recovery)
       const handleTokenUpdate = (e: Event) => {
+         // Novo token = resetar flag de erro
+         authErrorRef.current = false;
+         setAuthFailed(false);
          fetchUser();
       };
       window.addEventListener('auth-token-updated', handleTokenUpdate);

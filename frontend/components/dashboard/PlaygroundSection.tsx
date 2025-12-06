@@ -58,8 +58,8 @@ export default function PlaygroundSection() {
         </Link>
       </div>
 
-      {/* Games Grid - 3 colunas */}
-      <div className="grid grid-cols-3 gap-4">
+      {/* Games Grid - responsivo para mobile, tablet e desktop */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
         {games.map((game) => (
           <GameCardCompact
             key={game.id}

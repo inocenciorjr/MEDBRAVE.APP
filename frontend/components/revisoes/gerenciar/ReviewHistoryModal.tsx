@@ -277,15 +277,15 @@ function ReviewHistoryModal({
 
             {/* Modal */}
             <div
-                className={`fixed right-0 top-0 h-full w-full md:w-[700px] bg-surface-light dark:bg-surface-dark 
+                className={`fixed right-0 top-0 h-full w-full sm:w-[85vw] md:w-[700px] lg:w-[750px] bg-surface-light dark:bg-surface-dark 
                            shadow-2xl dark:shadow-dark-2xl z-[10000] transform transition-transform duration-300 ease-out ${isAnimating ? 'translate-x-0' : 'translate-x-full'
                     }`}
             >
                 <div className="flex flex-col h-full">
                     {/* Header */}
-                    <div className="flex items-center justify-between p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+                    <div className="flex items-center justify-between p-4 sm:p-5 md:p-6 border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
                         <div className="flex-1 min-w-0">
-                            <h2 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary truncate">
+                            <h2 className="text-lg sm:text-xl font-bold text-text-light-primary dark:text-text-dark-primary truncate">
                                 Histórico de Revisões
                             </h2>
                             {reviewType === 'FLASHCARD' ? (
@@ -346,8 +346,8 @@ function ReviewHistoryModal({
                         </div>
                         <button
                             onClick={onClose}
-                            className="p-2.5 hover:bg-surface-light dark:hover:bg-surface-dark rounded-xl 
-                                     transition-all duration-200 hover:scale-110 group ml-4"
+                            className="p-2 sm:p-2.5 hover:bg-surface-light dark:hover:bg-surface-dark rounded-lg sm:rounded-xl 
+                                     transition-all duration-200 hover:scale-110 group ml-2 sm:ml-4"
                         >
                             <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary 
                                            group-hover:text-primary transition-colors">
@@ -362,15 +362,15 @@ function ReviewHistoryModal({
                     <div className="flex border-b border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
                         <button
                             onClick={() => setActiveTab('timeline')}
-                            className={`flex-1 px-6 py-4 font-semibold text-sm transition-all duration-200 relative
+                            className={`flex-1 px-3 sm:px-6 py-3 sm:py-4 font-semibold text-xs sm:text-sm transition-all duration-200 relative
                                      ${activeTab === 'timeline'
                                     ? 'text-primary'
                                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-primary'
                                 }`}
                         >
-                            <span className="flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-xl">schedule</span>
-                                Timeline
+                            <span className="flex items-center justify-center gap-1.5 sm:gap-2">
+                                <span className="material-symbols-outlined text-lg sm:text-xl">schedule</span>
+                                <span className="hidden xs:inline">Timeline</span>
                             </span>
                             {activeTab === 'timeline' && (
                                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -378,15 +378,15 @@ function ReviewHistoryModal({
                         </button>
                         <button
                             onClick={() => setActiveTab('stats')}
-                            className={`flex-1 px-6 py-4 font-semibold text-sm transition-all duration-200 relative
+                            className={`flex-1 px-3 sm:px-6 py-3 sm:py-4 font-semibold text-xs sm:text-sm transition-all duration-200 relative
                                      ${activeTab === 'stats'
                                     ? 'text-primary'
                                     : 'text-text-light-secondary dark:text-text-dark-secondary hover:text-primary'
                                 }`}
                         >
-                            <span className="flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-xl">bar_chart</span>
-                                Estatísticas
+                            <span className="flex items-center justify-center gap-1.5 sm:gap-2">
+                                <span className="material-symbols-outlined text-lg sm:text-xl">bar_chart</span>
+                                <span className="hidden xs:inline">Estatísticas</span>
                             </span>
                             {activeTab === 'stats' && (
                                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -395,45 +395,45 @@ function ReviewHistoryModal({
                     </div>
 
                     {/* Content */}
-                    <div ref={modalContentRef} className="flex-1 overflow-y-auto p-6">
+                    <div ref={modalContentRef} className="flex-1 overflow-y-auto p-4 sm:p-5 md:p-6">
                         {isLoading ? (
                             <div className="flex items-center justify-center h-full">
                                 <MedBraveLoader />
                             </div>
                         ) : history.length === 0 ? (
-                            <div className="flex flex-col items-center justify-center h-full text-center p-8">
-                                <div className="w-24 h-24 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                                    <span className="material-symbols-outlined text-primary text-5xl">
+                            <div className="flex flex-col items-center justify-center h-full text-center p-4 sm:p-6 md:p-8">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                                    <span className="material-symbols-outlined text-primary text-3xl sm:text-4xl md:text-5xl">
                                         history
                                     </span>
                                 </div>
-                                <h3 className="text-lg font-bold text-text-light-primary dark:text-text-dark-primary mb-2">
+                                <h3 className="text-base sm:text-lg font-bold text-text-light-primary dark:text-text-dark-primary mb-1.5 sm:mb-2">
                                     Nenhuma revisão ainda
                                 </h3>
-                                <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary max-w-sm">
+                                <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary max-w-sm">
                                     Este item ainda não foi revisado. Comece a estudar para ver seu histórico aqui.
                                 </p>
                             </div>
                         ) : activeTab === 'timeline' ? (
-                            <div className="space-y-4">
+                            <div className="space-y-3 sm:space-y-4">
                                 {history.map((entry, index) => (
                                     <div
                                         key={entry.id}
-                                        className="bg-background-light dark:bg-background-dark rounded-xl border-2 border-border-light dark:border-border-dark
+                                        className="bg-background-light dark:bg-background-dark rounded-lg sm:rounded-xl border-2 border-border-light dark:border-border-dark
                                                  shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl
-                                                 transition-all duration-300 hover:scale-[1.01] p-5"
+                                                 transition-all duration-300 hover:scale-[1.01] p-3 sm:p-4 md:p-5"
                                     >
-                                        <div className="flex items-start justify-between gap-4">
+                                        <div className="flex items-start justify-between gap-2 sm:gap-4">
                                             <div className="flex-1 min-w-0">
-                                                <div className="flex items-center gap-3 mb-2">
-                                                    <span className={`px-3 py-1 rounded-lg text-xs font-bold border-2 ${getGradeColor(entry.grade)}`}>
+                                                <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2">
+                                                    <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-bold border-2 ${getGradeColor(entry.grade)}`}>
                                                         {getGradeLabel(entry.grade)}
                                                     </span>
-                                                    <span className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+                                                    <span className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary">
                                                         {formatRelativeDate(entry.reviewed_at)}
                                                     </span>
                                                 </div>
-                                                <p className="text-sm text-text-light-primary dark:text-text-dark-primary font-medium">
+                                                <p className="text-xs sm:text-sm text-text-light-primary dark:text-text-dark-primary font-medium">
                                                     {formatDate(entry.reviewed_at)}
                                                 </p>
                                             </div>

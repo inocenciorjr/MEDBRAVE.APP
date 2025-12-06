@@ -103,49 +103,49 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
       />
 
       {/* Modal */}
-      <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 pointer-events-none">
+      <div className="fixed inset-0 z-[9999] flex items-center justify-center p-2 sm:p-4 pointer-events-none">
         <div
-          className="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl dark:shadow-dark-2xl w-full max-w-2xl max-h-[80vh] overflow-hidden pointer-events-auto animate-scale-in"
+          className="bg-surface-light dark:bg-surface-dark rounded-xl sm:rounded-2xl shadow-2xl dark:shadow-dark-2xl w-full max-w-2xl max-h-[90vh] sm:max-h-[80vh] overflow-hidden pointer-events-auto animate-scale-in"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b-2 border-border-light dark:border-border-dark bg-gradient-to-br from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 dark:to-transparent">
+          <div className="flex items-center justify-between p-4 sm:p-5 lg:p-6 border-b sm:border-b-2 border-border-light dark:border-border-dark bg-gradient-to-br from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 dark:to-transparent">
             <div className="flex-1">
-              <h2 className="text-2xl font-display font-bold text-text-light-primary dark:text-text-dark-primary">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-display font-bold text-text-light-primary dark:text-text-dark-primary">
                 Tarefas do Dia
               </h2>
-              <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mt-1 font-medium">
+              <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary mt-0.5 sm:mt-1 font-medium">
                 {format(date, "EEEE, d 'de' MMMM", { locale: ptBR })}
               </p>
             </div>
             <button
               onClick={onClose}
-              className="p-2.5 hover:bg-surface-light dark:hover:bg-surface-dark rounded-xl transition-all duration-200 hover:scale-110 group"
+              className="p-2 sm:p-2.5 hover:bg-surface-light dark:hover:bg-surface-dark rounded-lg sm:rounded-xl transition-all duration-200 hover:scale-110 group"
             >
-              <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary group-hover:text-primary transition-colors text-xl sm:text-2xl">
                 close
               </span>
             </button>
           </div>
 
           {/* Content */}
-          <div className="p-6 overflow-y-auto max-h-[calc(80vh-120px)] custom-scrollbar">
+          <div className="p-4 sm:p-5 lg:p-6 overflow-y-auto max-h-[calc(90vh-140px)] sm:max-h-[calc(80vh-120px)] custom-scrollbar">
             {tasks.length === 0 ? (
-              <div className="flex flex-col items-center justify-center py-12 text-center">
-                <div className="w-20 h-20 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-4">
-                  <span className="material-symbols-outlined text-5xl text-primary">
+              <div className="flex flex-col items-center justify-center py-8 sm:py-12 text-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-3 sm:mb-4">
+                  <span className="material-symbols-outlined text-3xl sm:text-4xl lg:text-5xl text-primary">
                     event_available
                   </span>
                 </div>
-                <p className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-2">
+                <p className="text-sm sm:text-base lg:text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-1 sm:mb-2">
                   Nenhuma tarefa para este dia
                 </p>
-                <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+                <p className="text-xs sm:text-sm text-text-light-secondary dark:text-text-dark-secondary">
                   Clique no dia para criar uma nova tarefa
                 </p>
               </div>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 {tasks.map((task, index) => {
                   const isReview = 'content_type' in task && task.content_type;
                   const icon = isReview 
@@ -159,7 +159,7 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
                   return (
                     <div
                       key={task.id}
-                      className={`relative flex items-center justify-between p-4 rounded-xl ${getColorClasses(task.color)} shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl gap-4 transition-all duration-300 hover:scale-[1.02] cursor-pointer group overflow-hidden`}
+                      className={`relative flex items-center justify-between p-3 sm:p-4 rounded-lg sm:rounded-xl ${getColorClasses(task.color)} shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl gap-2 sm:gap-4 transition-all duration-300 hover:scale-[1.02] cursor-pointer group overflow-hidden`}
                       style={{
                         animationDelay: `${index * 50}ms`,
                       }}
@@ -167,7 +167,7 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
                       {/* Barra de progresso (se houver) */}
                       {hasProgress && progressPercent > 0 && (
                         <div 
-                          className="absolute left-0 top-0 bottom-0 transition-all duration-500 rounded-l-xl overflow-hidden"
+                          className="absolute left-0 top-0 bottom-0 transition-all duration-500 rounded-l-lg sm:rounded-l-xl overflow-hidden"
                           style={{ width: `${progressPercent}%` }}
                         >
                           <div className={`absolute inset-0 ${
@@ -187,35 +187,35 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
                       {/* Shimmer effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 pointer-events-none" />
                       
-                      <div className="flex items-center gap-3 min-w-0 flex-1 relative z-10">
+                      <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 relative z-10">
                         {/* Ícone */}
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-md transition-all duration-200 ${
+                        <div className={`w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-md transition-all duration-200 ${
                           isCompleted 
                             ? 'bg-white/60 dark:bg-white/40' 
                             : 'bg-white/40 dark:bg-white/20 group-hover:scale-110 group-hover:bg-white/60 dark:group-hover:bg-white/30'
                         }`}>
-                          <span className={`material-symbols-outlined text-2xl ${isCompleted ? 'filled' : ''}`}>
+                          <span className={`material-symbols-outlined text-lg sm:text-xl lg:text-2xl ${isCompleted ? 'filled' : ''}`}>
                             {isCompleted ? 'check_circle' : icon}
                           </span>
                         </div>
                         
                         {/* Título e descrição */}
                         <div className="min-w-0 flex-1">
-                          <h3 className={`font-bold text-base truncate ${isCompleted ? 'line-through' : ''}`}>
+                          <h3 className={`font-bold text-sm sm:text-base truncate ${isCompleted ? 'line-through' : ''}`}>
                             {displayTitle}
                           </h3>
                           {isReview && task.count && !isCompleted && (
-                            <p className="text-sm opacity-80 mt-0.5">
+                            <p className="text-xs sm:text-sm opacity-80 mt-0.5">
                               {task.count} {task.count === 1 ? 'item' : 'itens'} para revisar
                             </p>
                           )}
                           {isCompleted && (
-                            <p className="text-sm opacity-80 mt-0.5 font-semibold">
+                            <p className="text-xs sm:text-sm opacity-80 mt-0.5 font-semibold">
                               Concluída ✓
                             </p>
                           )}
                           {hasProgress && !isCompleted && (
-                            <p className="text-sm opacity-80 mt-0.5">
+                            <p className="text-xs sm:text-sm opacity-80 mt-0.5">
                               {task.completed_count} de {task.total_count} concluídos ({Math.round(progressPercent)}%)
                             </p>
                           )}
@@ -223,7 +223,7 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
                       </div>
 
                       {/* Botão de ação */}
-                      <div className="flex items-center gap-2 flex-shrink-0 relative z-10">
+                      <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0 relative z-10">
                         {(() => {
                           // Verificar se é data futura para revisões do sistema
                           const today = new Date();
@@ -248,16 +248,16 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
                               }}
                               disabled={isDisabled}
                               title={isDisabled ? 'Revisões futuras não podem ser iniciadas' : ''}
-                              className={`px-4 py-2 rounded-lg font-semibold shadow-md flex items-center gap-1 transition-all duration-200 ${
+                              className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-md sm:rounded-lg font-semibold shadow-md flex items-center gap-0.5 sm:gap-1 transition-all duration-200 text-xs sm:text-sm ${
                                 isDisabled
                                   ? 'bg-gray-400 dark:bg-gray-600 text-gray-200 dark:text-gray-400 cursor-not-allowed opacity-60'
                                   : 'bg-primary text-white hover:shadow-lg hover:bg-primary/90 hover:scale-105'
                               }`}
                             >
-                              <span className="material-symbols-outlined !text-base">
+                              <span className="material-symbols-outlined !text-sm sm:!text-base">
                                 {isSystemReview ? 'play_arrow' : (isCompleted ? 'restart_alt' : 'check_circle')}
                               </span>
-                              <span className="text-sm">
+                              <span className="hidden xs:inline">
                                 {isSystemReview ? (isDisabled ? 'Bloqueado' : 'Revisar') : (isCompleted ? 'Desmarcar' : 'Concluir')}
                               </span>
                             </button>
@@ -272,10 +272,10 @@ export function DayTasksModal({ isOpen, onClose, date, tasks, onTaskAction }: Da
           </div>
 
           {/* Footer */}
-          <div className="flex items-center justify-end p-6 border-t-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+          <div className="flex items-center justify-end p-4 sm:p-5 lg:p-6 border-t sm:border-t-2 border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
             <button
               onClick={onClose}
-              className="px-6 py-2.5 bg-primary text-white rounded-xl font-semibold shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-200 hover:scale-105"
+              className="px-4 sm:px-6 py-2 sm:py-2.5 bg-primary text-white rounded-lg sm:rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl hover:bg-primary/90 transition-all duration-200 hover:scale-105"
             >
               Fechar
             </button>

@@ -48,32 +48,32 @@ export default function ReviewDateGroup({
   const isOverdue = date < new Date() && !isToday(date);
 
   return (
-    <div className="mb-3">
+    <div className="mb-2 sm:mb-3">
       {/* Header da Data */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className={`w-full px-4 py-3 flex justify-between items-center rounded-lg
+        className={`w-full px-3 sm:px-4 py-2 sm:py-3 flex justify-between items-center rounded-lg
                    transition-all duration-200 text-left group
                    ${isOverdue 
                      ? 'bg-red-50 dark:bg-red-950/20 hover:bg-red-100 dark:hover:bg-red-950/30' 
                      : 'bg-background-light/50 dark:bg-background-dark/50 hover:bg-background-light dark:hover:bg-background-dark'
                    }`}
       >
-        <div className="flex items-center gap-3">
-          <span className={`material-symbols-outlined text-xl ${isOverdue ? 'text-red-500' : 'text-primary'}`}>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <span className={`material-symbols-outlined text-lg sm:text-xl ${isOverdue ? 'text-red-500' : 'text-primary'}`}>
             {isOverdue ? 'warning' : 'calendar_today'}
           </span>
           <div>
-            <p className={`font-semibold text-sm capitalize ${isOverdue ? 'text-red-600 dark:text-red-400' : 'text-text-light-primary dark:text-text-dark-primary'}`}>
+            <p className={`font-semibold text-xs sm:text-sm capitalize ${isOverdue ? 'text-red-600 dark:text-red-400' : 'text-text-light-primary dark:text-text-dark-primary'}`}>
               {getDateLabel()}
             </p>
-            <p className="text-xs text-text-light-secondary dark:text-text-dark-secondary">
+            <p className="text-[10px] sm:text-xs text-text-light-secondary dark:text-text-dark-secondary">
               {reviews.length} {reviews.length === 1 ? 'revisão' : 'revisões'}
             </p>
           </div>
         </div>
 
-        <span className={`material-symbols-outlined transition-transform duration-300 
+        <span className={`material-symbols-outlined text-lg sm:text-xl transition-transform duration-300 
                         ${isExpanded ? 'rotate-180' : ''} 
                         ${isOverdue ? 'text-red-500' : 'text-text-light-secondary dark:text-text-dark-secondary'}`}>
           expand_more
@@ -88,7 +88,7 @@ export default function ReviewDateGroup({
         `}
       >
         <div className="overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3 px-1 sm:px-2">
             {reviews.map((review) => (
               <ReviewItemCard
                 key={review.id}
