@@ -49,7 +49,7 @@ export default function TrialBar() {
   return (
     <button
       onClick={handleClick}
-      className="relative flex items-center gap-1 sm:gap-2 px-1.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 overflow-hidden shadow-md sm:shadow-lg shadow-purple-500/25 hover:scale-[1.02] active:scale-[0.98] transition-transform"
+      className="relative flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 overflow-hidden shadow-lg shadow-purple-500/25 hover:scale-[1.02] active:scale-[0.98] transition-transform"
     >
       {/* Glow overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-white/10 pointer-events-none" />
@@ -57,22 +57,23 @@ export default function TrialBar() {
       {/* Animated shimmer */}
       <div className="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none" />
 
-      {/* Badge TRIAL PRO - hidden on mobile */}
-      <div className="relative hidden sm:flex items-center px-1.5 py-0.5 bg-white/20 rounded text-[9px] font-bold text-white tracking-wider animate-pulse">
-        TRIAL PRO
+      {/* Badge TRIAL PRO - mobile mostra TRIAL, desktop mostra TRIAL PRO */}
+      <div className="relative flex items-center px-1 sm:px-1.5 py-0.5 bg-white/20 rounded text-[8px] sm:text-[9px] font-bold text-white tracking-wider animate-pulse">
+        <span className="sm:hidden">TRIAL</span>
+        <span className="hidden sm:inline">TRIAL PRO</span>
       </div>
 
       {/* Dias restantes */}
-      <div className="relative flex items-center gap-0.5 sm:gap-1">
+      <div className="relative flex items-center gap-1">
         {/* Número */}
         <div className={`
-          flex items-center justify-center min-w-[24px] sm:min-w-[36px] h-6 sm:h-8 px-0.5 sm:px-1 
-          bg-white/20 rounded sm:rounded-lg backdrop-blur-sm
+          flex items-center justify-center min-w-[28px] sm:min-w-[36px] h-7 sm:h-8 px-1 
+          bg-white/20 rounded-lg backdrop-blur-sm
           ${isExpired ? 'bg-red-500/40 animate-pulse' : isUrgent ? 'bg-amber-500/30 animate-pulse' : ''}
         `}>
           <span 
             className={`
-              text-sm sm:text-xl font-black text-white 
+              text-base sm:text-xl font-black text-white 
               ${isUrgent || isExpired ? 'animate-bounce' : 'animate-glow'}
             `}
             style={{
@@ -85,36 +86,25 @@ export default function TrialBar() {
           </span>
         </div>
         
-        {/* Texto - versão mobile compacta */}
-        <div className="flex sm:hidden flex-col leading-none">
-          <span className="text-[7px] font-semibold text-white/90 uppercase">
+        {/* Texto - mobile mostra só "dias", desktop mostra "dias restantes" */}
+        <div className="flex flex-col leading-none">
+          <span className="text-[8px] sm:text-[9px] font-semibold text-white/90 uppercase tracking-wide">
             {planInfo.daysRemaining === 1 ? 'dia' : 'dias'}
           </span>
-        </div>
-        
-        {/* Texto - versão desktop */}
-        <div className="hidden sm:flex flex-col leading-none">
-          <span className="text-[9px] font-semibold text-white/90 uppercase tracking-wide animate-fadeInOut">
-            {planInfo.daysRemaining === 1 ? 'dia' : 'dias'}
-          </span>
-          <span className="text-[8px] font-medium text-white/70 uppercase tracking-wide animate-fadeInOut [animation-delay:0.5s]">
+          <span className="hidden sm:block text-[8px] font-medium text-white/70 uppercase tracking-wide">
             {planInfo.daysRemaining === 1 ? 'restante' : 'restantes'}
           </span>
         </div>
       </div>
 
-      {/* Seta indicando clicável - mobile */}
-      <span className="relative sm:hidden material-symbols-outlined text-white/80 text-sm">
-        chevron_right
-      </span>
-
-      {/* Botão visual interno - desktop */}
-      <div className="relative hidden sm:flex ml-1 px-3 py-1.5 bg-white text-purple-700 text-xs font-bold rounded-lg 
+      {/* Botão visual interno - mobile mostra "Comprar", desktop mostra "Comprar plano" */}
+      <div className="relative flex px-2 sm:px-3 py-1 sm:py-1.5 bg-white text-purple-700 text-[10px] sm:text-xs font-bold rounded-lg 
                    shadow-[0_0_15px_rgba(255,255,255,0.5)]
                    uppercase tracking-wide
                    animate-buttonGlow"
       >
-        Comprar plano
+        <span className="sm:hidden">Comprar</span>
+        <span className="hidden sm:inline">Comprar plano</span>
       </div>
     </button>
   );

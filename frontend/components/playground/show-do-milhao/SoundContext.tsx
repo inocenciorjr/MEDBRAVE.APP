@@ -4,6 +4,7 @@ import { createContext, useContext, useRef, useCallback, useEffect, useState, Re
 
 const SOUNDS_PATH = '/sounds/show-do-milhao';
 const MUTE_STORAGE_KEY = 'show-do-milhao-muted';
+const AUDIO_UNLOCKED_KEY = 'show-do-milhao-audio-unlocked';
 
 const PRIZE_AUDIO_MAP: Record<number, string> = {
   1000: 'pergunta_mil_reais',
@@ -36,7 +37,10 @@ function findClosestPrizeAudio(prize: number): string {
 
 interface SoundContextType {
   isMuted: boolean;
+  isAudioUnlocked: boolean;
+  isInitialized: boolean;
   toggleMute: () => void;
+  unlockAudio: () => Promise<boolean>;
   playGameStart: (loop?: boolean) => HTMLAudioElement | null;
   playQuestionPrize: (prizeValue: number, onEnded?: () => void) => HTMLAudioElement | null;
   playSuspense: (onEnded?: () => void) => HTMLAudioElement | null;
@@ -55,18 +59,54 @@ interface SoundContextType {
 
 const SoundContext = createContext<SoundContextType | null>(null);
 
+// Função para obter estado inicial de mute (executada no cliente)
+function getInitialMuteState(): boolean {
+  if (typeof window === 'undefined') return false;
+  const stored = localStorage.getItem(MUTE_STORAGE_KEY);
+  // Se já foi definido pelo usuário, respeitar
+  if (stored !== null) return stored === 'true';
+  // Se nunca foi definido, verificar se é mobile
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+  return isMobile; // Mobile começa mutado, desktop não
+}
+
 export function SoundProvider({ children }: { children: ReactNode }) {
   const audioRefs = useRef<Map<string, HTMLAudioElement>>(new Map());
   const currentAudio = useRef<HTMLAudioElement | null>(null);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(false); // Será atualizado no useEffect
+  const [isAudioUnlocked, setIsAudioUnlocked] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
   const isMutedRef = useRef(false); // Ref para acesso síncrono
+  const isAudioUnlockedRef = useRef(false);
+  const pendingPlayRef = useRef<{ soundName: string; loop: boolean; onEnded?: () => void } | null>(null);
 
   // Carregar preferência de mute do localStorage
+  // Em mobile, começar mutado por padrão (a menos que usuário já tenha ativado antes)
   useEffect(() => {
     const stored = localStorage.getItem(MUTE_STORAGE_KEY);
-    const muted = stored === 'true';
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+    
+    let muted: boolean;
+    // Se já foi definido pelo usuário, respeitar a escolha
+    if (stored !== null) {
+      muted = stored === 'true';
+    } else if (isMobile) {
+      // Se nunca foi definido e é mobile, começar mutado
+      muted = true;
+      localStorage.setItem(MUTE_STORAGE_KEY, 'true');
+    } else {
+      // Desktop sem preferência salva: som ativado
+      muted = false;
+    }
+    
     setIsMuted(muted);
     isMutedRef.current = muted;
+    setIsInitialized(true);
+    
+    // Verificar se áudio já foi desbloqueado nesta sessão
+    const unlocked = sessionStorage.getItem(AUDIO_UNLOCKED_KEY) === 'true';
+    setIsAudioUnlocked(unlocked);
+    isAudioUnlockedRef.current = unlocked;
   }, []);
 
   // Pré-carregar áudios
@@ -93,6 +133,41 @@ export function SoundProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
+  // Função para desbloquear áudio (deve ser chamada em resposta a interação do usuário)
+  const unlockAudio = useCallback(async (): Promise<boolean> => {
+    if (isAudioUnlockedRef.current) return true;
+    
+    try {
+      // Criar um áudio silencioso e tentar tocar para desbloquear
+      const silentAudio = new Audio();
+      silentAudio.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+      silentAudio.volume = 0.01;
+      
+      await silentAudio.play();
+      silentAudio.pause();
+      
+      console.log('🔓 Áudio desbloqueado com sucesso!');
+      setIsAudioUnlocked(true);
+      isAudioUnlockedRef.current = true;
+      sessionStorage.setItem(AUDIO_UNLOCKED_KEY, 'true');
+      
+      // Se tinha um som pendente, tocar agora
+      if (pendingPlayRef.current && !isMutedRef.current) {
+        const { soundName, loop, onEnded } = pendingPlayRef.current;
+        pendingPlayRef.current = null;
+        setTimeout(() => {
+          const audio = playSound(soundName, onEnded);
+          if (audio && loop) audio.loop = true;
+        }, 100);
+      }
+      
+      return true;
+    } catch (err) {
+      console.warn('❌ Falha ao desbloquear áudio:', err);
+      return false;
+    }
+  }, []);
+
   const toggleMute = useCallback(() => {
     setIsMuted(prev => {
       const newValue = !prev;
@@ -105,12 +180,17 @@ export function SoundProvider({ children }: { children: ReactNode }) {
       }
       // Se desmutando e tem áudio pausado, resumir
       else if (!newValue && currentAudio.current && currentAudio.current.paused) {
-        currentAudio.current.play().catch(() => {});
+        // Tentar desbloquear e tocar
+        unlockAudio().then(unlocked => {
+          if (unlocked && currentAudio.current) {
+            currentAudio.current.play().catch(() => {});
+          }
+        });
       }
       
       return newValue;
     });
-  }, []);
+  }, [unlockAudio]);
 
   const stopCurrentAudio = useCallback(() => {
     if (currentAudio.current) {
@@ -121,7 +201,7 @@ export function SoundProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const playSound = useCallback((soundName: string, onEnded?: () => void) => {
-    console.log(`🎵 playSound chamado: ${soundName}, muted: ${isMutedRef.current}`);
+    console.log(`🎵 playSound chamado: ${soundName}, muted: ${isMutedRef.current}, unlocked: ${isAudioUnlockedRef.current}`);
     
     // Usar ref para valor síncrono
     if (isMutedRef.current) {
@@ -158,9 +238,21 @@ export function SoundProvider({ children }: { children: ReactNode }) {
       audio!.currentTime = 0;
       audio!.play().then(() => {
         console.log(`✅ Áudio iniciado: ${soundName}`);
+        // Marcar como desbloqueado se conseguiu tocar
+        if (!isAudioUnlockedRef.current) {
+          setIsAudioUnlocked(true);
+          isAudioUnlockedRef.current = true;
+          sessionStorage.setItem(AUDIO_UNLOCKED_KEY, 'true');
+        }
       }).catch(err => {
         console.warn('❌ Erro ao tocar áudio:', err);
-        // Se falhar ao tocar, chamar onEnded mesmo assim para não travar o jogo
+        // Se falhar por política de autoplay, não chamar onEnded para permitir retry
+        if (err.name === 'NotAllowedError') {
+          console.log('🔒 Áudio bloqueado pelo navegador - aguardando interação do usuário');
+          // Não chamar onEnded aqui para não travar o jogo
+          return;
+        }
+        // Se falhar por outro motivo, chamar onEnded para não travar o jogo
         if (onEnded) setTimeout(onEnded, 100);
       });
     };
@@ -192,6 +284,11 @@ export function SoundProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const playGameStart = useCallback((loop: boolean = false) => {
+    // Se áudio não está desbloqueado, guardar para tocar depois
+    if (!isAudioUnlockedRef.current && !isMutedRef.current) {
+      console.log('🔒 Áudio não desbloqueado, guardando para tocar depois...');
+      pendingPlayRef.current = { soundName: 'game_start', loop, onEnded: undefined };
+    }
     const audio = playSound('game_start');
     if (audio && loop) audio.loop = true;
     return audio;
@@ -215,7 +312,10 @@ export function SoundProvider({ children }: { children: ReactNode }) {
   return (
     <SoundContext.Provider value={{
       isMuted,
+      isAudioUnlocked,
+      isInitialized,
       toggleMute,
+      unlockAudio,
       playGameStart,
       playQuestionPrize,
       playSuspense,

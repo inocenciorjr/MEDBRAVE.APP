@@ -1710,7 +1710,7 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
                 {currentQuestion.options.map((option, index) => (
                   <OptionButton
                     key={`${currentQuestion.id}-${option.id}`}
-                    letter={['A', 'B', 'C', 'D'][index] as 'A' | 'B' | 'C' | 'D'}
+                    letter={String.fromCharCode(65 + index)}
                     text={option.text}
                     index={index}
                     isSelected={selectedOption === option.id}
@@ -1986,7 +1986,6 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
         guaranteedPrize={gameState.guaranteedPrize}
         totalCorrect={gameState.totalCorrect}
         totalQuestions={gameState.currentQuestionIndex + (gameState.status === 'lost' ? 1 : 0)}
-        onPlayAgain={handlePlayAgain}
         onExit={onExit}
         onFatality={handleStartFatality}
         fatalityMode={gameState.fatalityMode}
@@ -2011,6 +2010,46 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
         hideCloseButton={isSkipMode}
         showNextButton={!isMedbraveMode}
       />
+
+      {/* Botão flutuante de som - mais chamativo em mobile quando mutado */}
+      <AnimatePresence>
+        {sounds.isMuted && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              sounds.toggleMute();
+              // Tocar som da pergunta atual após ativar
+              if (currentQuestion) {
+                const currentPrize = PRIZE_LEVELS[gameState.currentPrizeLevel]?.prize || 1000;
+                setTimeout(() => sounds.playQuestionPrize(currentPrize), 100);
+              }
+            }}
+            className="fixed bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-5 py-3 rounded-full text-white font-bold shadow-lg md:hidden"
+            style={{
+              background: isFatality 
+                ? 'linear-gradient(180deg, #ef4444 0%, #b91c1c 100%)'
+                : 'linear-gradient(180deg, #fbbf24 0%, #d97706 100%)',
+              border: isFatality ? '3px solid #fca5a5' : '3px solid #fef3c7',
+              boxShadow: isFatality 
+                ? '0 0 30px rgba(239,68,68,0.6), 0 4px 20px rgba(0,0,0,0.3)'
+                : '0 0 30px rgba(251,191,36,0.6), 0 4px 20px rgba(0,0,0,0.3)',
+            }}
+          >
+            <motion.span 
+              className="material-symbols-outlined text-2xl"
+              animate={{ scale: [1, 1.3, 1] }}
+              transition={{ duration: 0.8, repeat: Infinity }}
+            >
+              volume_up
+            </motion.span>
+            <span className={isFatality ? 'text-white' : 'text-amber-900'}>Ativar Som</span>
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

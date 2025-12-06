@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { optionVariants, suspenseGlowVariants } from './animations';
 
 interface OptionButtonProps {
-  letter: 'A' | 'B' | 'C' | 'D';
+  letter: string; // Letra dinâmica (A, B, C, D, E, F, ...)
   text: string;
   index: number;
   isSelected: boolean;

@@ -10,7 +10,8 @@ interface UniversityPanelProps {
   onClose: () => void;
 }
 
-const optionLetters = ['A', 'B', 'C', 'D'];
+// Função para gerar letra da alternativa baseada no índice (0 = A, 1 = B, etc.)
+const getOptionLetter = (index: number): string => String.fromCharCode(65 + index);
 
 const confidenceLabels = {
   alta: { text: 'Tenho certeza!', color: '#34d399', bg: 'rgba(16,185,129,0.15)', border: 'rgba(16,185,129,0.4)' },
@@ -159,7 +160,7 @@ export function UniversityPanel({ answers, onClose }: UniversityPanelProps) {
                               color: '#c4b5fd',
                             }}
                           >
-                            {optionLetters[student.selectedOption]}
+                            {getOptionLetter(student.selectedOption)}
                           </motion.span>
                         </div>
                         
@@ -207,8 +208,9 @@ export function UniversityPanel({ answers, onClose }: UniversityPanelProps) {
               }}
             >
               <h4 className="text-xs sm:text-sm font-semibold mb-2 sm:mb-3" style={{ color: 'rgba(168,85,247,0.6)' }}>Resumo das respostas:</h4>
-              <div className="flex justify-center gap-2 sm:gap-4">
-                {[0, 1, 2, 3].map((optionIndex) => {
+              <div className="flex justify-center gap-2 sm:gap-4 flex-wrap">
+                {/* Gera índices baseado no maior índice selecionado pelos universitários */}
+                {Array.from({ length: Math.max(4, ...answers.map(a => a.selectedOption + 1)) }, (_, i) => i).map((optionIndex) => {
                   const count = answers.filter(a => a.selectedOption === optionIndex).length;
                   return (
                     <div
@@ -223,7 +225,7 @@ export function UniversityPanel({ answers, onClose }: UniversityPanelProps) {
                         className="text-sm sm:text-lg font-bold"
                         style={{ color: count > 0 ? '#c4b5fd' : 'rgba(168,85,247,0.3)' }}
                       >
-                        {optionLetters[optionIndex]}
+                        {getOptionLetter(optionIndex)}
                       </span>
                       <span 
                         className="text-xl sm:text-2xl font-bold"

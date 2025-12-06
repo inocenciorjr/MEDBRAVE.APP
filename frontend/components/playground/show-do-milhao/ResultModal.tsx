@@ -14,7 +14,6 @@ interface ResultModalProps {
   guaranteedPrize: number;
   totalCorrect: number;
   totalQuestions: number;
-  onPlayAgain: () => void;
   onExit: () => void;
   onFatality?: () => void; // Modo Fatality
   fatalityMode?: boolean;
@@ -29,7 +28,6 @@ export function ResultModal({
   guaranteedPrize,
   totalCorrect,
   totalQuestions,
-  onPlayAgain,
   onExit,
   onFatality,
   fatalityMode = false,
@@ -339,16 +337,15 @@ export function ResultModal({
                   </motion.div>
                 )}
 
-                {/* Botões - RESPONSIVO */}
+                {/* Botão Voltar ao Início - RESPONSIVO */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="flex flex-col sm:flex-row gap-2 sm:gap-3"
                 >
                   <button
-                    onClick={onPlayAgain}
-                    className="flex-1 py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base transition-all hover:scale-105"
+                    onClick={onExit}
+                    className="w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base transition-all hover:scale-105"
                     style={{
                       background: 'linear-gradient(180deg, rgba(168,85,247,0.8) 0%, rgba(88,28,135,1) 100%)',
                       border: '2px solid #a855f7',
@@ -356,18 +353,7 @@ export function ResultModal({
                       boxShadow: '0 0 20px rgba(168,85,247,0.4)',
                     }}
                   >
-                    Jogar Novamente
-                  </button>
-                  <button
-                    onClick={onExit}
-                    className="flex-1 py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base transition-all"
-                    style={{
-                      background: 'rgba(40,20,70,0.5)',
-                      border: '2px solid rgba(168,85,247,0.3)',
-                      color: '#c4b5fd',
-                    }}
-                  >
-                    Sair
+                    Voltar ao Início
                   </button>
                 </motion.div>
               </div>
