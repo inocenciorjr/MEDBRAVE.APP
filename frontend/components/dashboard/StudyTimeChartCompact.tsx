@@ -149,6 +149,25 @@ export default function StudyTimeChartCompact() {
         </div>
       </div>
 
+      {/* Botão Ver Métricas */}
+      <div className="flex justify-end mb-3">
+        <a
+          href="/statistics"
+          className="group px-3 py-1.5 rounded-lg text-sm font-display font-medium 
+                     bg-primary/10 dark:bg-primary/20 text-primary 
+                     hover:bg-primary hover:text-white
+                     border border-primary/20 hover:border-primary
+                     shadow-sm hover:shadow-md hover:shadow-primary/20
+                     transition-all duration-300 flex items-center gap-1.5"
+        >
+          <span className="material-symbols-outlined text-base">analytics</span>
+          Ver métricas
+          <span className="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-0.5">
+            chevron_right
+          </span>
+        </a>
+      </div>
+
       {/* Chart */}
       <ResponsiveContainer width="100%" height={220}>
         <ComposedChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 0 }}>

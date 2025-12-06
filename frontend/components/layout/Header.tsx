@@ -110,8 +110,10 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
 
         {/* Right: Icons */}
         <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-          {/* Trial/Plan Bar */}
-          <TrialBar />
+          {/* Trial/Plan Bar - escondido em mobile na Home (aparece no SimuladosGrid) */}
+          <div className="hidden md:block">
+            <TrialBar />
+          </div>
 
           {/* Theme Toggle Button */}
           <ThemeToggle />

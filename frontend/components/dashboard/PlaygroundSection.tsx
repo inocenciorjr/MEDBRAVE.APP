@@ -43,10 +43,18 @@ export default function PlaygroundSection() {
         </div>
         <Link 
           href="/playground"
-          className="text-xs font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+          className="group px-3 py-1.5 rounded-lg text-sm font-display font-medium 
+                     bg-primary/10 dark:bg-primary/20 text-primary 
+                     hover:bg-primary hover:text-white
+                     border border-primary/20 hover:border-primary
+                     shadow-sm hover:shadow-md hover:shadow-primary/20
+                     transition-all duration-300 flex items-center gap-1.5"
         >
+          <span className="material-symbols-outlined text-base">sports_esports</span>
           Ver todos
-          <span className="material-symbols-outlined text-sm">arrow_forward</span>
+          <span className="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-0.5">
+            chevron_right
+          </span>
         </Link>
       </div>
 

@@ -42,6 +42,18 @@ export default function QuestionsGoalCard() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           Meta de Questões
         </h2>
+        <a
+          href="/revisoes"
+          className="group px-3 py-1.5 rounded-lg text-sm font-display font-medium 
+                     bg-primary/10 dark:bg-primary/20 text-primary 
+                     hover:bg-primary hover:text-white
+                     border border-primary/20 hover:border-primary
+                     shadow-sm hover:shadow-md hover:shadow-primary/20
+                     transition-all duration-300 flex items-center gap-1.5"
+        >
+          <span className="material-symbols-outlined text-base">settings</span>
+          Ajustar
+        </a>
       </div>
 
       {/* Chart */}

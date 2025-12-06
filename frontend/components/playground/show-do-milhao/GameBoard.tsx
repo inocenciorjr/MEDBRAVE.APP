@@ -1649,10 +1649,10 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
               >
                 {/* Badges de Instituição e Ano - RESPONSIVO */}
                 {(currentQuestion.institution || currentQuestion.year) && (
-                  <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3 flex-wrap">
+                  <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                     {currentQuestion.institution && (
                       <span 
-                        className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-medium"
+                        className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-medium min-w-0 flex-1 sm:flex-none"
                         style={{
                           background: isFatality 
                             ? 'rgba(127,29,29,0.4)' 
@@ -1661,16 +1661,16 @@ export function GameBoard({ config, onExit }: GameBoardProps) {
                             ? '1px solid rgba(239,68,68,0.3)' 
                             : '1px solid rgba(168,85,247,0.3)',
                           color: isFatality ? '#fca5a5' : '#c4b5fd',
+                          maxWidth: currentQuestion.year ? 'calc(100% - 70px)' : '100%',
                         }}
                       >
-                        <span className="material-symbols-outlined text-xs sm:text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
-                        <span className="hidden sm:inline">{currentQuestion.institution}</span>
-                        <span className="sm:hidden">{currentQuestion.institution.length > 15 ? currentQuestion.institution.slice(0, 15) + '...' : currentQuestion.institution}</span>
+                        <span className="material-symbols-outlined text-xs sm:text-sm flex-shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
+                        <span className="truncate">{currentQuestion.institution}</span>
                       </span>
                     )}
                     {currentQuestion.year && (
                       <span 
-                        className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-medium"
+                        className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg text-[10px] sm:text-xs font-medium flex-shrink-0"
                         style={{
                           background: isFatality 
                             ? 'rgba(127,29,29,0.4)' 

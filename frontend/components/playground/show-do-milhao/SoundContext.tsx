@@ -4,6 +4,7 @@ import { createContext, useContext, useRef, useCallback, useEffect, useState, Re
 
 const SOUNDS_PATH = '/sounds/show-do-milhao';
 const MUTE_STORAGE_KEY = 'show-do-milhao-muted';
+const MOBILE_SOUND_ENABLED_KEY = 'show-do-milhao-mobile-sound-enabled'; // Indica se usuário ativou som em mobile
 const AUDIO_UNLOCKED_KEY = 'show-do-milhao-audio-unlocked';
 
 const PRIZE_AUDIO_MAP: Record<number, string> = {
@@ -81,26 +82,25 @@ export function SoundProvider({ children }: { children: ReactNode }) {
   const pendingPlayRef = useRef<{ soundName: string; loop: boolean; onEnded?: () => void } | null>(null);
 
   // Carregar preferência de mute do localStorage
-  // Em mobile, começar mutado por padrão (a menos que usuário já tenha ativado antes)
+  // Em mobile, começar mutado por padrão (a menos que usuário já tenha ativado som conscientemente)
   useEffect(() => {
-    const stored = localStorage.getItem(MUTE_STORAGE_KEY);
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+    const mobileSoundEnabled = localStorage.getItem(MOBILE_SOUND_ENABLED_KEY) === 'true';
     
     let muted: boolean;
-    // Se já foi definido pelo usuário, respeitar a escolha
-    if (stored !== null) {
-      muted = stored === 'true';
-    } else if (isMobile) {
-      // Se nunca foi definido e é mobile, começar mutado
-      muted = true;
-      localStorage.setItem(MUTE_STORAGE_KEY, 'true');
+    
+    if (isMobile) {
+      // Em mobile: só ativa som se usuário explicitamente ativou antes
+      muted = !mobileSoundEnabled;
     } else {
-      // Desktop sem preferência salva: som ativado
-      muted = false;
+      // Desktop: usa preferência salva ou som ativado por padrão
+      const stored = localStorage.getItem(MUTE_STORAGE_KEY);
+      muted = stored === 'true';
     }
     
     setIsMuted(muted);
     isMutedRef.current = muted;
+    localStorage.setItem(MUTE_STORAGE_KEY, String(muted));
     setIsInitialized(true);
     
     // Verificar se áudio já foi desbloqueado nesta sessão
@@ -173,6 +173,14 @@ export function SoundProvider({ children }: { children: ReactNode }) {
       const newValue = !prev;
       isMutedRef.current = newValue;
       localStorage.setItem(MUTE_STORAGE_KEY, String(newValue));
+      
+      // Se está ativando o som em mobile, salvar que usuário fez essa escolha
+      if (!newValue) {
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+        if (isMobile) {
+          localStorage.setItem(MOBILE_SOUND_ENABLED_KEY, 'true');
+        }
+      }
       
       // Se mutando, pausar áudio atual
       if (newValue && currentAudio.current) {
