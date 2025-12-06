@@ -13,6 +13,7 @@ interface HeaderProps {
   showGreeting?: boolean;
   onMenuClick?: () => void;
   showMenuButton?: boolean;
+  hideTrialBarMobile?: boolean; // Esconde TrialBar em mobile (usado na Home onde aparece no SimuladosGrid)
 }
 
 const motivationalQuotes = [
@@ -31,7 +32,7 @@ const motivationalQuotes = [
   'Hidrata, respira, organiza! Pequenas atitudes que deixam o estudo muito mais leve.',
 ];
 
-export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true, onMenuClick, showMenuButton = false }: HeaderProps) {
+export default function Header({ userName: propUserName, userAvatar: propUserAvatar, notificationCount = 0, showGreeting = true, onMenuClick, showMenuButton = false, hideTrialBarMobile = false }: HeaderProps) {
   const { user, loading: userLoading } = useUser();
   const [quote, setQuote] = useState('');
   const [userName, setUserName] = useState(propUserName || 'Usuário');
@@ -110,8 +111,8 @@ export default function Header({ userName: propUserName, userAvatar: propUserAva
 
         {/* Right: Icons */}
         <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-          {/* Trial/Plan Bar - escondido em mobile na Home (aparece no SimuladosGrid) */}
-          <div className="hidden md:block">
+          {/* Trial/Plan Bar - escondido em mobile apenas na Home (onde aparece no SimuladosGrid) */}
+          <div className={hideTrialBarMobile ? 'hidden md:block' : ''}>
             <TrialBar />
           </div>
 

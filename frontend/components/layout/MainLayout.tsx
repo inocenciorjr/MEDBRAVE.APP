@@ -9,9 +9,10 @@ import { useIsMobile } from '@/hooks/useMediaQuery';
 interface MainLayoutProps {
   children: ReactNode;
   showGreeting?: boolean;
+  hideTrialBarMobile?: boolean; // Esconde TrialBar em mobile no Header (usado na Home)
 }
 
-export default function MainLayout({ children, showGreeting = true }: MainLayoutProps) {
+export default function MainLayout({ children, showGreeting = true, hideTrialBarMobile = false }: MainLayoutProps) {
   const { isFocusMode } = useFocusMode();
   const isMobile = useIsMobile();
   const [isInitialized, setIsInitialized] = useState(false);
@@ -119,6 +120,7 @@ export default function MainLayout({ children, showGreeting = true }: MainLayout
                 showGreeting={showGreeting}
                 onMenuClick={isMobile ? toggleMobileSidebar : undefined}
                 showMenuButton={isMobile}
+                hideTrialBarMobile={hideTrialBarMobile}
               />
             </div>
           

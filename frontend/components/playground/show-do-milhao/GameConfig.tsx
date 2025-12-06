@@ -200,11 +200,11 @@ export function GameConfigComponent({ onStartGame, onBack, onStartFatalityDebug 
         </motion.div>
 
 
-        {/* Contador de questões - estilo painel holográfico - RESPONSIVO */}
+        {/* Contador de questões - estilo painel holográfico - APENAS DESKTOP/TABLET */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="mb-4 sm:mb-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl text-center relative overflow-hidden"
+          className="hidden sm:block mb-4 sm:mb-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl text-center relative overflow-hidden"
           style={{
             background: canStart 
               ? 'linear-gradient(180deg, rgba(16,185,129,0.1) 0%, rgba(16,185,129,0.05) 100%)'
@@ -649,6 +649,38 @@ export function GameConfigComponent({ onStartGame, onBack, onStartFatalityDebug 
           >
             Voltar
           </button>
+          {/* Contador de questões - APENAS MOBILE - posicionado acima do botão */}
+          <div
+            className="sm:hidden flex-1 p-2.5 rounded-xl text-center relative overflow-hidden"
+            style={{
+              background: canStart 
+                ? 'linear-gradient(180deg, rgba(16,185,129,0.15) 0%, rgba(16,185,129,0.05) 100%)'
+                : 'linear-gradient(180deg, rgba(251,191,36,0.15) 0%, rgba(251,191,36,0.05) 100%)',
+              border: canStart ? '2px solid rgba(16,185,129,0.5)' : '2px solid rgba(251,191,36,0.5)',
+            }}
+          >
+            <div className="flex items-center justify-center gap-2">
+              <span 
+                className="material-symbols-outlined text-lg"
+                style={{ color: canStart ? '#10b981' : '#fbbf24' }}
+              >
+                {isFetching ? 'hourglass_empty' : canStart ? 'check_circle' : 'warning'}
+              </span>
+              <span 
+                className="text-lg font-bold"
+                style={{ color: canStart ? '#10b981' : '#fbbf24' }}
+              >
+                {isFetching ? '...' : questionCount}
+              </span>
+              <span className="text-purple-300/70 text-xs">questões</span>
+            </div>
+            {!canStart && !isFetching && (
+              <p className="text-[10px] mt-1" style={{ color: '#fbbf24' }}>
+                Mínimo 5 questões
+              </p>
+            )}
+          </div>
+
           <motion.button
             onClick={handleStart}
             disabled={!canStart}
