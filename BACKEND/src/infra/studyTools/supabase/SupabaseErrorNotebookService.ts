@@ -133,6 +133,7 @@ export class SupabaseErrorNotebookService {
         difficulty: data.difficulty || ErrorNoteDifficulty.MEDIUM,
         confidence: Math.max(1, Math.min(5, data.confidence || 3)),
         alternative_comments: data.alternative_comments || {},
+        highlights: data.highlights || [],
         question_data: questionData ? {
           institution: this.extractInstitution(questionData),
           year: this.extractYear(questionData),
@@ -417,6 +418,10 @@ export class SupabaseErrorNotebookService {
 
       if (data.alternative_comments !== undefined) {
         updateData.alternative_comments = data.alternative_comments;
+      }
+
+      if (data.highlights !== undefined) {
+        updateData.highlights = data.highlights;
       }
 
       const { data: updatedEntry, error: updateError } = await this.supabase

@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { Question } from '@/types/resolucao-questoes';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Question, TextHighlight, HighlightColor } from '@/types/resolucao-questoes';
 import SimpleRichTextEditor from './SimpleRichTextEditor';
 import { errorNotebookService, ErrorNotebookEntry } from '@/services/errorNotebookService';
 import { useToast } from '@/lib/contexts/ToastContext';
@@ -53,6 +53,12 @@ export function AddToErrorNotebookModal({
   const [showFolderSelector, setShowFolderSelector] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [subFiltersMap, setSubFiltersMap] = useState<Map<string, SubFilter>>(new Map());
+  
+  // Estado para highlights (marca-texto)
+  const [highlights, setHighlights] = useState<TextHighlight[]>(existingEntry?.highlights || []);
+  const [selectedHighlightColor, setSelectedHighlightColor] = useState<HighlightColor>('yellow');
+  const [isHighlightMode, setIsHighlightMode] = useState(false);
+  const questionTextRef = useRef<HTMLDivElement>(null);
   
   const isEditMode = !!existingEntry;
 
@@ -166,6 +172,116 @@ export function AddToErrorNotebookModal({
     return question.topic || 'N/A';
   };
 
+  // Cores neon para highlights
+  const HIGHLIGHT_COLORS: { color: HighlightColor; label: string; class: string }[] = [
+    { color: 'yellow', label: 'Amarelo', class: 'bg-[#FFFF00]' },
+    { color: 'pink', label: 'Rosa', class: 'bg-[#FF10F0]' },
+    { color: 'green', label: 'Verde', class: 'bg-[#39FF14]' },
+    { color: 'blue', label: 'Azul', class: 'bg-[#00FFFF]' },
+    { color: 'orange', label: 'Laranja', class: 'bg-[#FF6600]' },
+  ];
+
+  // Função para adicionar highlight
+  const addHighlight = useCallback((highlight: TextHighlight) => {
+    setHighlights(prev => [...prev, { ...highlight, color: selectedHighlightColor }]);
+  }, [selectedHighlightColor]);
+
+  // Função para remover highlight
+  const removeHighlight = useCallback((highlightId: string) => {
+    setHighlights(prev => prev.filter(h => h.id !== highlightId));
+  }, []);
+
+  // Handler para seleção de texto no enunciado
+  const handleTextSelection = useCallback(() => {
+    if (!isHighlightMode) return;
+    
+    const selection = window.getSelection();
+    if (!selection || selection.isCollapsed || selection.rangeCount === 0) return;
+
+    const selectedText = selection.toString().trim();
+    if (!selectedText) return;
+
+    const container = questionTextRef.current;
+    if (!container) return;
+
+    const range = selection.getRangeAt(0);
+    if (!container.contains(range.commonAncestorContainer)) return;
+
+    // Calcula offset absoluto no texto
+    const getAbsoluteOffset = (targetNode: Node, targetOffset: number): number => {
+      let offset = 0;
+      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null);
+      
+      let node: Node | null = walker.nextNode();
+      while (node) {
+        if (node === targetNode) {
+          return offset + targetOffset;
+        }
+        offset += (node.textContent?.length || 0);
+        node = walker.nextNode();
+      }
+      
+      return offset + targetOffset;
+    };
+
+    const startOffset = getAbsoluteOffset(range.startContainer, range.startOffset);
+    const endOffset = getAbsoluteOffset(range.endContainer, range.endOffset);
+
+    const highlight: TextHighlight = {
+      id: crypto.randomUUID(),
+      startOffset,
+      endOffset,
+      text: selectedText,
+      type: 'highlight',
+      color: selectedHighlightColor,
+    };
+
+    addHighlight(highlight);
+    selection.removeAllRanges();
+  }, [isHighlightMode, selectedHighlightColor, addHighlight]);
+
+  // Gera segmentos de texto com highlights aplicados
+  const getHighlightedSegments = useCallback((text: string) => {
+    if (!text || highlights.length === 0) {
+      return [{ text: text || '', type: 'normal' as const }];
+    }
+
+    // Filtra highlights válidos
+    const validHighlights = highlights.filter(h => 
+      h.startOffset >= 0 && h.endOffset <= text.length && h.startOffset < h.endOffset
+    );
+
+    if (validHighlights.length === 0) {
+      return [{ text, type: 'normal' as const }];
+    }
+
+    // Ordena por posição
+    const sorted = [...validHighlights].sort((a, b) => a.startOffset - b.startOffset);
+    
+    const segments: Array<{
+      text: string;
+      type: 'normal' | 'highlight';
+      id?: string;
+      color?: HighlightColor;
+    }> = [];
+    
+    let lastEnd = 0;
+    
+    for (const h of sorted) {
+      if (h.startOffset > lastEnd) {
+        segments.push({ text: text.substring(lastEnd, h.startOffset), type: 'normal' });
+      }
+      segments.push({ text: text.substring(h.startOffset, h.endOffset), type: 'highlight', id: h.id, color: h.color });
+      lastEnd = h.endOffset;
+    }
+    
+    if (lastEnd < text.length) {
+      segments.push({ text: text.substring(lastEnd), type: 'normal' });
+    }
+    
+    return segments.length > 0 ? segments : [{ text, type: 'normal' as const }];
+  }, [highlights]);
+
   // Função para adicionar event listeners em imagens
   const setupImageListeners = (element: HTMLElement) => {
     const images = element.querySelectorAll('img');
@@ -205,6 +321,31 @@ export function AddToErrorNotebookModal({
       setAlternativeComments(existingEntry?.alternative_comments || {});
       setShowCommentForAlternative(focusedAlternativeId ? { [focusedAlternativeId]: true } : {});
       setSelectedFolder(existingEntry?.folder_id || null);
+      
+      // Carregar highlights: priorizar existingEntry, senão carregar do localStorage
+      if (existingEntry?.highlights && existingEntry.highlights.length > 0) {
+        setHighlights(existingEntry.highlights);
+      } else {
+        // Tentar carregar do localStorage (estado da questão)
+        try {
+          const storageKey = `question_state_${question.id}`;
+          const saved = localStorage.getItem(storageKey);
+          if (saved) {
+            const parsed = JSON.parse(saved);
+            if (parsed.highlights && parsed.highlights.length > 0) {
+              setHighlights(parsed.highlights);
+            } else {
+              setHighlights([]);
+            }
+          } else {
+            setHighlights([]);
+          }
+        } catch (error) {
+          console.error('Erro ao carregar highlights do localStorage:', error);
+          setHighlights([]);
+        }
+      }
+      setIsHighlightMode(false);
     } else {
       setIsAnimating(false);
       const timer = setTimeout(() => {
@@ -217,6 +358,8 @@ export function AddToErrorNotebookModal({
         setShowCommentForAlternative({});
         setShowFolderSelector(false);
         setSelectedFolder(null);
+        setHighlights([]);
+        setIsHighlightMode(false);
       }, 300);
       return () => clearTimeout(timer);
     }
@@ -272,11 +415,12 @@ export function AddToErrorNotebookModal({
           }
         });
         
-        // Modo edição - sempre enviar alternative_comments (mesmo que vazio) para permitir remoção
+        // Modo edição - sempre enviar alternative_comments e highlights (mesmo que vazio) para permitir remoção
         const payload = {
           user_note: keyConcept,
           user_explanation: whyWrong,
           alternative_comments: filteredComments,
+          highlights: highlights.length > 0 ? highlights : [],
         };
         console.log('[Modal] Payload sendo enviado:', payload);
         const updatedEntry = await errorNotebookService.updateEntry(existingEntry.id, payload);
@@ -303,6 +447,7 @@ export function AddToErrorNotebookModal({
           confidence: 3,
           alternative_comments: Object.keys(filteredComments).length > 0 ? filteredComments : undefined,
           folder_id: selectedFolder || undefined,
+          highlights: highlights.length > 0 ? highlights : undefined,
         });
         toast.success('Questão adicionada ao caderno de erros!');
       }
@@ -434,20 +579,119 @@ export function AddToErrorNotebookModal({
                   </div>
                 </div>
 
-                {/* Enunciado */}
+                {/* Enunciado com Marca-Texto */}
                 <div>
-                  <h4 className="text-xs font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wide mb-2">
-                    Enunciado
-                  </h4>
-                  <div
-                    ref={(el) => {
-                      if (el) {
-                        setupImageListeners(el);
-                      }
-                    }}
-                    className="prose prose-sm dark:prose-invert max-w-none text-text-light-secondary dark:text-text-dark-secondary [&_img]:mx-auto [&_img]:block [&_img]:my-4"
-                    dangerouslySetInnerHTML={{ __html: question.text || '' }}
-                  />
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xs font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-wide">
+                      Enunciado
+                    </h4>
+                    
+                    {/* Botão de Marca-Texto */}
+                    <div className="flex items-center gap-2">
+                      <div className="relative">
+                        <button
+                          type="button"
+                          onClick={() => setIsHighlightMode(!isHighlightMode)}
+                          className={`p-1.5 rounded-lg transition-all duration-200 ${
+                            isHighlightMode
+                              ? 'bg-primary text-white'
+                              : 'hover:bg-primary/10 dark:hover:bg-primary/20 text-text-light-secondary dark:text-text-dark-secondary'
+                          }`}
+                          title={isHighlightMode ? 'Desativar marca-texto' : 'Ativar marca-texto'}
+                        >
+                          <span className="material-symbols-outlined text-base">border_color</span>
+                        </button>
+                        
+                        {/* Color Picker */}
+                        {isHighlightMode && (
+                          <div className="absolute top-full mt-1 right-0 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg shadow-lg p-1.5 z-10 flex gap-1">
+                            {HIGHLIGHT_COLORS.map((colorOption) => (
+                              <button
+                                key={colorOption.color}
+                                type="button"
+                                onClick={() => setSelectedHighlightColor(colorOption.color)}
+                                className={`w-6 h-6 rounded ${colorOption.class} border-2 transition-all ${
+                                  selectedHighlightColor === colorOption.color
+                                    ? 'border-primary scale-110'
+                                    : 'border-transparent hover:scale-105'
+                                }`}
+                                title={colorOption.label}
+                              />
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                      
+                      {highlights.length > 0 && (
+                        <span className="text-xs text-primary font-medium">
+                          {highlights.length} marcação(ões)
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  
+                  {/* Texto com highlights */}
+                  {question.isHtml ? (
+                    <div
+                      ref={(el) => {
+                        if (el) {
+                          setupImageListeners(el);
+                          // Atribuir ao ref para seleção
+                          (questionTextRef as any).current = el;
+                        }
+                      }}
+                      onMouseUp={handleTextSelection}
+                      className={`prose prose-sm dark:prose-invert max-w-none text-text-light-secondary dark:text-text-dark-secondary [&_img]:mx-auto [&_img]:block [&_img]:my-4 ${
+                        isHighlightMode ? 'cursor-text select-text' : ''
+                      }`}
+                      dangerouslySetInnerHTML={{ __html: question.text || '' }}
+                    />
+                  ) : (
+                    <div
+                      ref={questionTextRef}
+                      onMouseUp={handleTextSelection}
+                      className={`prose prose-sm dark:prose-invert max-w-none text-text-light-secondary dark:text-text-dark-secondary whitespace-pre-wrap ${
+                        isHighlightMode ? 'cursor-text select-text' : ''
+                      }`}
+                    >
+                      {getHighlightedSegments(question.text || '').map((segment, index) => {
+                        if (segment.type === 'normal') {
+                          return <span key={`normal-${index}`}>{segment.text}</span>;
+                        }
+                        
+                        const colorClasses: Record<HighlightColor, string> = {
+                          yellow: 'bg-[#FFFF00]/80 hover:bg-[#FFFF00]',
+                          pink: 'bg-[#FF10F0]/70 hover:bg-[#FF10F0]/90',
+                          green: 'bg-[#39FF14]/70 hover:bg-[#39FF14]/90',
+                          blue: 'bg-[#00FFFF]/70 hover:bg-[#00FFFF]/90',
+                          orange: 'bg-[#FF6600]/70 hover:bg-[#FF6600]/90',
+                        };
+                        
+                        return (
+                          <span
+                            key={segment.id || `segment-${index}`}
+                            className={`${colorClasses[segment.color || 'yellow']} px-0.5 rounded cursor-pointer transition-colors`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (segment.id) {
+                                removeHighlight(segment.id);
+                              }
+                            }}
+                            title="Clique para remover marcação"
+                          >
+                            {segment.text}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  )}
+                  
+                  {isHighlightMode && (
+                    <p className="text-xs text-primary mt-2 flex items-center gap-1">
+                      <span className="material-symbols-outlined text-sm">info</span>
+                      Selecione o texto para marcar. Clique em uma marcação para removê-la.
+                    </p>
+                  )}
                 </div>
 
                 {/* Alternativas */}

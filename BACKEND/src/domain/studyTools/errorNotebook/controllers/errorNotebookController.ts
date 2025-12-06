@@ -64,6 +64,7 @@ export class ErrorNotebookController {
         confidence,
         folder_id: folderId,
         alternative_comments: alternativeComments,
+        highlights,
       } = req.body;
 
       if (!questionId) {
@@ -101,6 +102,7 @@ export class ErrorNotebookController {
         confidence: confidence || 3,
         folder_id: folderId || undefined,
         alternative_comments: alternativeComments || undefined,
+        highlights: highlights || undefined,
       };
 
       // Criar anotação
@@ -374,6 +376,7 @@ export class ErrorNotebookController {
         difficulty,
         confidence,
         alternative_comments: alternativeComments,
+        highlights,
       } = req.body;
 
       // Validar difficulty se fornecida
@@ -412,6 +415,9 @@ export class ErrorNotebookController {
       }
       if (alternativeComments !== undefined) {
         updateDTO.alternative_comments = alternativeComments;
+      }
+      if (highlights !== undefined) {
+        updateDTO.highlights = highlights;
       }
 
       // Atualizar anotação

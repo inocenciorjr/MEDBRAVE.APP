@@ -13,6 +13,7 @@ import { DifficultyButtons } from '@/components/flashcards/DifficultyButtons';
 import { useToast } from '@/lib/contexts/ToastContext';
 import { ImageModal } from '@/components/resolucao-questoes';
 import { ErrorNotebookNavigationPanel } from '@/components/error-notebook/ErrorNotebookNavigationPanel';
+import { HighlightedQuestionText } from '@/components/error-notebook/HighlightedQuestionText';
 import { useStudySession } from '@/hooks/useStudySession';
 import { useCadernoErrosEntry } from '@/hooks/queries';
 
@@ -404,19 +405,24 @@ export default function ReviewErrorNotebookPage({ params }: { params: Promise<{ 
           {/* Resumo da Questão */}
           <div className="bg-surface-light dark:bg-surface-dark rounded-xl border border-border-light dark:border-border-dark p-6 space-y-6 shadow-lg hover:shadow-xl dark:shadow-dark-lg dark:hover:shadow-dark-xl transition-shadow duration-300">
 
-            {/* Enunciado */}
+            {/* Enunciado com Highlights */}
             <div>
-              <h3 className="text-sm font-semibold text-text-light-primary dark:text-text-dark-primary mb-3 uppercase tracking-wide">
-                Enunciado
-              </h3>
-              <div
-                ref={(el) => {
-                  if (el) {
-                    setupImageListeners(el);
-                  }
-                }}
-                className="prose prose-sm dark:prose-invert max-w-none text-text-light-secondary dark:text-text-dark-secondary [&_img]:mx-auto [&_img]:block [&_img]:my-4"
-                dangerouslySetInnerHTML={{ __html: entry.question_statement }}
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-sm font-semibold text-text-light-primary dark:text-text-dark-primary uppercase tracking-wide">
+                  Enunciado
+                </h3>
+                {entry.highlights && entry.highlights.length > 0 && (
+                  <span className="text-xs text-primary font-medium flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm">border_color</span>
+                    {entry.highlights.length} marcação(ões)
+                  </span>
+                )}
+              </div>
+              <HighlightedQuestionText
+                text={entry.question_statement}
+                isHtml={true}
+                highlights={entry.highlights || []}
+                onImageClick={setSelectedImage}
               />
             </div>
 

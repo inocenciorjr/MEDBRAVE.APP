@@ -71,13 +71,21 @@ export function useQuestionState(question: Question, listId?: string) {
     }
   }, [storageKey]);
 
-  // Save state to localStorage when answered OR when there's a selection (for simulated mode)
+  // Save state to localStorage when there are changes worth persisting
+  // (answered, selection, highlights, or tags)
   useEffect(() => {
-    if (typeof window !== 'undefined' && (state.isAnswered || state.selectedAlternative)) {
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(state));
-      } catch (error) {
-        console.error('Error saving question state:', error);
+    if (typeof window !== 'undefined') {
+      const hasDataToSave = state.isAnswered || 
+                           state.selectedAlternative || 
+                           state.highlights.length > 0 || 
+                           state.userTags.length > 0;
+      
+      if (hasDataToSave) {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(state));
+        } catch (error) {
+          console.error('Error saving question state:', error);
+        }
       }
     }
   }, [state, storageKey]);

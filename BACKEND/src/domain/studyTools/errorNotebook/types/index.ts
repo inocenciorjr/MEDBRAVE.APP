@@ -13,6 +13,18 @@ export enum ReviewQuality {
   EASY = 'EASY',
 }
 
+// Tipo para highlight de texto (marca-texto)
+export type HighlightColor = 'yellow' | 'pink' | 'green' | 'blue' | 'orange';
+
+export interface TextHighlight {
+  id: string;
+  startOffset: number;
+  endOffset: number;
+  text: string;
+  type: 'highlight';
+  color: HighlightColor;
+}
+
 export interface ErrorNotebookEntry {
   id: string;
   user_id: string;
@@ -41,6 +53,9 @@ export interface ErrorNotebookEntry {
   // Adicionar notebook_id para compatibilidade
   notebook_id?: string;
   alternative_comments?: Record<string, string>;
+  
+  // Marcações de texto (highlights/marca-texto)
+  highlights?: TextHighlight[];
 
   created_at: string;
   updated_at: string;
@@ -64,6 +79,7 @@ export interface CreateErrorNoteDTO {
   confidence?: number;
   alternative_comments?: Record<string, string>;
   folder_id?: string;
+  highlights?: TextHighlight[];
 }
 
 // Adicionar aliases para compatibilidade com use-cases
@@ -77,6 +93,7 @@ export interface UpdateErrorNoteDTO {
   difficulty?: ErrorNoteDifficulty;
   confidence?: number;
   alternative_comments?: Record<string, string>;
+  highlights?: TextHighlight[];
 }
 
 // Adicionar alias para compatibilidade com use-cases

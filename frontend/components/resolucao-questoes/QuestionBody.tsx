@@ -17,11 +17,11 @@ interface QuestionBodyProps {
 }
 
 const HIGHLIGHT_COLORS: { color: HighlightColor; label: string; class: string }[] = [
-  { color: 'yellow', label: 'Amarelo', class: 'bg-yellow-300 dark:bg-yellow-400' },
-  { color: 'pink', label: 'Rosa', class: 'bg-pink-400 dark:bg-pink-500' },
-  { color: 'green', label: 'Verde', class: 'bg-green-400 dark:bg-green-500' },
-  { color: 'blue', label: 'Azul', class: 'bg-cyan-400 dark:bg-cyan-500' },
-  { color: 'orange', label: 'Laranja', class: 'bg-orange-400 dark:bg-orange-500' },
+  { color: 'yellow', label: 'Amarelo Neon', class: 'bg-[#FFFF00] dark:bg-[#FFFF00]' },
+  { color: 'pink', label: 'Rosa Neon', class: 'bg-[#FF10F0] dark:bg-[#FF10F0]' },
+  { color: 'green', label: 'Verde Neon', class: 'bg-[#39FF14] dark:bg-[#39FF14]' },
+  { color: 'blue', label: 'Azul Neon', class: 'bg-[#00FFFF] dark:bg-[#00FFFF]' },
+  { color: 'orange', label: 'Laranja Neon', class: 'bg-[#FF6600] dark:bg-[#FF6600]' },
 ];
 
 export function QuestionBody({
@@ -159,6 +159,7 @@ export function QuestionBody({
         toolMode={toolMode}
         getHighlightSegments={getHighlightSegments}
         onHighlightClick={handleHighlightClick}
+        onAddHighlight={handleAddHighlightWithColor}
       />
     </div>
   );

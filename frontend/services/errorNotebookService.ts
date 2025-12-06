@@ -1,5 +1,17 @@
 import { fetchWithAuth } from '@/lib/utils/fetchWithAuth';
 
+// Tipo para highlight de texto (marca-texto)
+export type HighlightColor = 'yellow' | 'pink' | 'green' | 'blue' | 'orange';
+
+export interface TextHighlight {
+  id: string;
+  startOffset: number;
+  endOffset: number;
+  text: string;
+  type: 'highlight';
+  color: HighlightColor;
+}
+
 export interface ErrorNotebookEntry {
   id: string;
   user_id: string;
@@ -33,6 +45,8 @@ export interface ErrorNotebookEntry {
   };
   // Comentários nas alternativas
   alternative_comments?: Record<string, string>;
+  // Marcações de texto (highlights/marca-texto)
+  highlights?: TextHighlight[];
 }
 
 export interface CreateErrorNotebookPayload {
@@ -45,6 +59,7 @@ export interface CreateErrorNotebookPayload {
   confidence?: number;
   alternative_comments?: Record<string, string>;
   folder_id?: string;
+  highlights?: TextHighlight[];
 }
 
 export interface UpdateErrorNotebookPayload {
@@ -56,6 +71,7 @@ export interface UpdateErrorNotebookPayload {
   confidence?: number;
   alternative_comments?: Record<string, string>;
   folder_id?: string | null;
+  highlights?: TextHighlight[];
 }
 
 export interface ErrorNotebookStats {
